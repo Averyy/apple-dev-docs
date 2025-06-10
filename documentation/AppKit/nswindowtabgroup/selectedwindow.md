@@ -20,8 +20,6 @@ This property returns the currently selected window within the tabbed window gro
 
 > ❗ **Important**:  This property raises an exception if set to a window that is not already a member of the tab group.
 
- This property raises an exception if set to a window that is not already a member of the tab group.
-
 You can monitor this property for changes using key-value observing.
 
 ## See Also

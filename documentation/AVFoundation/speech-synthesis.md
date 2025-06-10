@@ -1,6 +1,6 @@
 # Speech synthesis
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Configure voices to speak strings of text.
 
@@ -63,4 +63,4 @@ Optionally, use the speech synthesizer instance to control or respond to ongoing
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/speech-synthesis)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/speech-synthesis)*

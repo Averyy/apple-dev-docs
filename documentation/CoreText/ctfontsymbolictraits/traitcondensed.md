@@ -26,8 +26,6 @@ Additional detail is available via [`kCTFontWidthTrait`](kctfontwidthtrait.md).
 
 > ❗ **Important**:  [`expandedTrait`](ctfontsymbolictraits/expandedtrait.md) and [`condensedTrait`](ctfontsymbolictraits/condensedtrait.md) are mutually exclusive.
 
- [`expandedTrait`](ctfontsymbolictraits/expandedtrait.md) and [`condensedTrait`](ctfontsymbolictraits/condensedtrait.md) are mutually exclusive.
-
 ## See Also
 
 - [let kCTFontWidthTrait: CFString](kctfontwidthtrait.md)

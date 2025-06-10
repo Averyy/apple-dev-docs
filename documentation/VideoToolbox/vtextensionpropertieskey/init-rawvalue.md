@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: init
 
 **Availability**:

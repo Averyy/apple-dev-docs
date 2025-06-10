@@ -1,0 +1,42 @@
+# characterEncoding
+
+**Framework**: Foundation  
+**Kind**: property
+
+Sets the character encoding of the receiver to `encoding`,
+
+**Availability**:
+- Mac Catalyst 13.0+
+- macOS 10.0+
+
+## Declaration
+
+```swift
+var characterEncoding: String? { get set }
+```
+
+#### Discussion
+
+Typically the encoding is specified in the XML declaration of a document that is processed, but it can be set at any time. If the specified encoding does not match the actual encoding, parsing of the document might fail.
+
+## Parameters
+
+- `encoding`: A string that specifies an encoding; it must match the name of an IANA character set. See   for a list of valid encoding specifiers.
+
+## See Also
+
+- [var documentContentKind: XMLDocument.ContentKind](xmldocument/documentcontentkind.md)
+  Sets the kind of output content for the receiver.
+- [var dtd: XMLDTD?](xmldocument/dtd.md)
+  Returns an [`XMLDTD`](xmldtd.md) object representing the internal DTD associated with the receiver.
+- [var isStandalone: Bool](xmldocument/isstandalone.md)
+  Sets a Boolean value that specifies whether the receiver represents a standalone XML document.
+- [var mimeType: String?](xmldocument/mimetype.md)
+  Returns the MIME type for the receiver.
+- [var version: String?](xmldocument/version.md)
+  Sets the version of the receiver’s XML.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/xmldocument/characterencoding)*

@@ -9,7 +9,7 @@ An error that indicates when the ARKit session runs an unsupported configuration
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

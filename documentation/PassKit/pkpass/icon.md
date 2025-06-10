@@ -30,6 +30,7 @@ You can use this property to display a pass’s icon as part of a UI element tha
   The name of the organization that creates the pass.
 - [var relevantDate: Date?](pkpass/relevantdate.md)
   The date when the pass is most likely to be useful or necessary.
+- [class PKPassRelevantDate](pkpassrelevantdate.md)
 
 
 ---

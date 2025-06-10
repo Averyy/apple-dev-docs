@@ -38,6 +38,7 @@ struct DefaultHistoryInsert<Model> where Model : PersistentModel
 ### Conforms To
 - [HistoryInsert](historyinsert.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

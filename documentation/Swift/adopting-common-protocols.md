@@ -132,8 +132,6 @@ If your type contains properties that don’t affect whether two instances are c
 
 > ❗ **Important**: Always use the same properties in both your `==` and `hash(into:)` methods. Using different groups of properties in the two methods can lead to unexpected behavior or performance when using your custom type in sets and dictionaries.
 
-Always use the same properties in both your `==` and `hash(into:)` methods. Using different groups of properties in the two methods can lead to unexpected behavior or performance when using your custom type in sets and dictionaries.
-
 ##### Customize Nsobject Subclass Behavior
 
 `NSObject` subclasses inherit conformance to the `Equatable` and `Hashable` protocols, with equality based on instance identity. If you need to customize this behavior, override the [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) method and [`hash`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/hash) property instead of the `==` operator method and `hashValue` property.

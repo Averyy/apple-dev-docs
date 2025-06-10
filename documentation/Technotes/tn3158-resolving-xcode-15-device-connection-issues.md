@@ -24,8 +24,6 @@ To run your tests, create a fresh installation of macOS 14 on the Mac you will u
 
 > ❗ **Important**: Before running the app for the first time, verify that Xcode’s connection to the device is through USB and not a standard network interface, such as Wi-Fi or Ethernet.
 
-Before running the app for the first time, verify that Xcode’s connection to the device is through USB and not a standard network interface, such as Wi-Fi or Ethernet.
-
 To verify the type of connection Xcode is using with the Apple device, open Window > Devices and Simulators, and locate the device in the sidebar. If the connection to the device is using a standard network interface, Xcode places a globe icon next to the device name. To have Xcode use the USB connection instead, disconnect the Mac from the network, such as by shutting off Wi-Fi or disconnecting Ethernet. Once Xcode has reconnected to the device through USB, the globe icon will disappear. Once you’ve confirmed Xcode is using a USB connection to the test device, run the test app on the device.
 
 Once you’ve successfully run the test app for the first time on the connected device, install or enable the first item from your list of configuration requirements. Rerun the test app from Xcode to verify that Xcode can still communicate with the device. If Xcode cannot run the app after installing or enabling a specific item from your configuration requirements, that software needs an update to avoid blocking Xcode’s device communication. When you find a part of your configuration that blocks Xcode’s device communication, uninstall it, and continue to apply additional items from your list of configuration requirements to test for any other software in your configuration affecting Xcode.
@@ -72,8 +70,6 @@ int isDirectLinkInterface(const char * name) {
 The `SIOCGIFDIRECTLINK` API was added in macOS 14.4, and requires building your software with Xcode 15.3. If you’re using an older version of macOS, you need to upgrade to macOS 14.4.
 
 > ❗ **Important**: If you maintain a VPN product that uses PF rather than a Network Extension provider, make a plan to migrate to a Network Extension provider. See [`TN3165: Packet Filter is not API`](tn3165-packet-filter-is-not-api.md).
-
-If you maintain a VPN product that uses PF rather than a Network Extension provider, make a plan to migrate to a Network Extension provider. See [`TN3165: Packet Filter is not API`](tn3165-packet-filter-is-not-api.md).
 
 #### Review If Your Vpn Requires Sending All Network Traffic Over the Tunnel
 

@@ -32,6 +32,7 @@ final class DataStoreSaveChangesResult<T> where T : DataStoreSnapshot
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

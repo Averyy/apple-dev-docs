@@ -25,8 +25,6 @@ func modifyRecordZones(saving recordZonesToSave: [CKRecordZone], deleting record
 
 > ⚠️ **Warning**:  Deleting a record zone is a permanent action that deletes every record in that zone. You can’t restore a deleted record zone.
 
- Deleting a record zone is a permanent action that deletes every record in that zone. You can’t restore a deleted record zone.
-
 The completion handler takes a single [`Result`](https://developer.apple.com/documentation/Swift/Result) parameter that contains either a tuple, or an error if the request fails. For example, when the network is unavailable or the device doesn’t have an active iCloud account.
 
 When present, the tuple contains the following named elements:

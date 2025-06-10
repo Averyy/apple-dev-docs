@@ -1,6 +1,6 @@
 # Personal VPN
 
-**Framework**: Networkextension
+**Framework**: Network Extension
 
 Create and manage a VPN configuration that uses one of the built-in VPN protocols (IPsec or IKEv2).
 
@@ -52,4 +52,4 @@ Both iOS and macOS also support managed VPN, meaning VPN configurations installe
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/NetworkExtension/personal-vpn)*
+*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/personal-vpn)*

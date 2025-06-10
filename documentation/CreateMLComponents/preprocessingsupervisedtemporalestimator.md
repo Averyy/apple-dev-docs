@@ -62,6 +62,7 @@ struct PreprocessingSupervisedTemporalEstimator<Preprocessor, Estimator> where P
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SupervisedTemporalEstimator](supervisedtemporalestimator.md)
 
 ## See Also

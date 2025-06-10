@@ -61,6 +61,9 @@ When a person chooses a particular suggestion in the [`JournalingSuggestionsPick
   A suggestion that describes a workout that a person completed.
 - [JournalingSuggestion.WorkoutGroup](journalingsuggestion/workoutgroup.md)
   A suggestion that contains multiple workouts that a person chooses in the picker.
+### Structures
+- [JournalingSuggestion.EventPoster](journalingsuggestion/eventposter.md)
+  A suggestion for a poster image of an event.
 ### Instance Properties
 - [var hashValue: Int](journalingsuggestion/hashvalue.md)
   The hash value.
@@ -78,8 +81,12 @@ When a person chooses a particular suggestion in the [`JournalingSuggestionsPick
 
 - [struct JournalingSuggestionsPicker](journalingsuggestionspicker.md)
   A view that lists different types of recent events in a person’s life.
+- [class JournalingSuggestionsConfiguration](journalingsuggestionsconfiguration.md)
+  The scheduled configuration settings for your app.
 - [protocol JournalingSuggestionAsset](journalingsuggestionasset.md)
   An interface for the content that the suggestions picker presents.
+- [struct JournalingSuggestionPresentationToken](journalingsuggestionpresentationtoken.md)
+  A token you use to modify the content of the presentation.
 
 
 ---

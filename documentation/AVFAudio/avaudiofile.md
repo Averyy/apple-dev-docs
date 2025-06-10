@@ -65,6 +65,8 @@ Reads and writes are always sequential. Random access is possible by setting the
   A string that indicates the audio file type.
 - [var isOpen: Bool](avaudiofile/isopen.md)
   A Boolean value that indicates whether the file is open.
+### Initializers
+- [init()](avaudiofile/init.md)
 
 ## Relationships
 
@@ -77,6 +79,8 @@ Reads and writes are always sequential. Random access is possible by setting the
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

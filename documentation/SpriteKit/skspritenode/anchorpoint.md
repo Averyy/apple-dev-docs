@@ -23,8 +23,8 @@ var anchorPoint: CGPoint { get set }
 
 ## Mentions
 
-- [Animating a Sprite by Changing its Texture](animating-a-sprite-by-changing-its-texture.md)
 - [Using the Anchor Point to Move a Sprite](using-the-anchor-point-to-move-a-sprite.md)
+- [Animating a Sprite by Changing its Texture](animating-a-sprite-by-changing-its-texture.md)
 
 #### Discussion
 

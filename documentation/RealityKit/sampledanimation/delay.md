@@ -10,6 +10,7 @@ An amount of time that elapses before the animation plays.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -44,8 +45,6 @@ During the delayed time, the animation doesn’t update. However, to fill the de
   The optional time, in seconds, at which the animation plays.
 - [var trimEnd: TimeInterval?](sampledanimation/trimend.md)
   The optional time, in seconds, at which the animation stops.
-- [func trimmed(start: TimeInterval?, end: TimeInterval?, duration: TimeInterval?) -> Self](sampledanimation/trimmed(start:end:duration:).md)
-  Edits the animation duration according to the specified time.
 
 
 ---

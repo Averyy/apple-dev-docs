@@ -16,8 +16,6 @@ People rely on accessibility features that increase contrast to improve the legi
 
 > 💡 **Tip**: Accessibility Inspector provides a color contrast calculator to help you test the contrast for certain color combinations. To open this tool, choose Window > Show Color Contrast Calculator (⌥⌘C).
 
-Accessibility Inspector provides a color contrast calculator to help you test the contrast for certain color combinations. To open this tool, choose Window > Show Color Contrast Calculator (⌥⌘C).
-
 ###### All Platforms
 
 . This option toggles the Invert Colors setting, which reverses the colors of the display with some behavior differences depending on the platform.

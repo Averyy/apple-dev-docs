@@ -1,6 +1,6 @@
 # plugInsEnabled
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether plug-ins are enabled.

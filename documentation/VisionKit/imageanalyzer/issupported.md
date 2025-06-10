@@ -1,6 +1,6 @@
 # isSupported
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A Boolean value that indicates whether the device supports image analysis.

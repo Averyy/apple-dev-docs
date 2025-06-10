@@ -1,6 +1,6 @@
 # CFNumber
 
-**Framework**: Corefoundation  
+**Framework**: Core Foundation  
 **Kind**: class
 
 **Availability**:
@@ -82,4 +82,4 @@ CFNumber is “toll-free bridged” with its Cocoa Foundation counterpart, [`NSN
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreFoundation/cfnumber)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corefoundation/cfnumber)*

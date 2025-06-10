@@ -5,7 +5,7 @@
 ## Topics
 
 ### Instance Properties
-- [var body: Never](never/body-8li6s.md)
+- [var body: Never](never/body-swift.property.md)
   A builder expression that describes the process of importing and exporting an item.
 ### Instance Methods
 - [func exportingCondition((Self.Item) -> Bool) -> _ConditionalTransferRepresentation<Self>](never/exportingcondition(_:).md)

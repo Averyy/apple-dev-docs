@@ -9,6 +9,8 @@ Passes a single control widget template written as a child view through unmodifi
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
+- macOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 

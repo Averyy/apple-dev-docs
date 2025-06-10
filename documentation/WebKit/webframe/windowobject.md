@@ -1,6 +1,6 @@
 # windowObject
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The JavaScript window object.

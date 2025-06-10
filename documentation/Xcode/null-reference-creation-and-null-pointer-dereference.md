@@ -44,8 +44,6 @@ int x = a->getX(); // Error: member access through null pointer
 
 > ❗ **Important**: Always avoid null checks on the `this` pointer.
 
-Always avoid null checks on the `this` pointer.
-
 ###### Solution
 
 Avoid calling methods on null objects.

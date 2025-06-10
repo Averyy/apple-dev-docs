@@ -1,6 +1,6 @@
 # VTCompressionSessionCreate(allocator:width:height:codecType:encoderSpecification:imageBufferAttributes:compressedDataAllocator:outputCallback:refcon:compressionSessionOut:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Creates an object that compresses video frames.

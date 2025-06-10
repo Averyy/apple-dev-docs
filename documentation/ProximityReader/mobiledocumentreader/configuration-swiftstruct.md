@@ -9,6 +9,7 @@ A type that represents the configuration of the mobile document reader.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -42,6 +43,7 @@ Use the reader’s configuration to generate a reader token on your server.
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -54,6 +54,7 @@ If the `Scene` is explicitly destroyed (e.g. the switcher snapshot is destroyed 
 ### Conforms To
 - [DynamicProperty](dynamicproperty.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

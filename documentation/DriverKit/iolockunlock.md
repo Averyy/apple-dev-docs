@@ -15,6 +15,14 @@
 void IOLockUnlock(struct IOLock * lock);
 ```
 
+#### Discussion
+
+Unlock the mutex and wake any blocked waiters. Results are undefined if the caller has not locked the mutex.
+
+## Parameters
+
+- `lock`: Pointer to the allocated lock.
+
 ## See Also
 
 - [dequeue_head](dequeue_head.md)

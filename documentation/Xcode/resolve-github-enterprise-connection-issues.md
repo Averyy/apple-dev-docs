@@ -46,8 +46,6 @@ As a last resort, you can disconnect Xcode Cloud from your GitHub Enterprise rep
 
 > ❗ **Important**: Make sure you don’t delete your Xcode Cloud data and workflows. If you do this, you will lose access to your workflows and build data, and you’ll have to configure Xcode Cloud workflows for your project again.
 
-Make sure you don’t delete your Xcode Cloud data and workflows. If you do this, you will lose access to your workflows and build data, and you’ll have to configure Xcode Cloud workflows for your project again.
-
 ## See Also
 
 - [Resolving common configuration and build issues](resolving-common-configuration-and-build-issues.md)

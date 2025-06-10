@@ -1,6 +1,6 @@
 # SKAdNetwork
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: class
 
 A class that validates advertisement-driven app installations.
@@ -159,4 +159,4 @@ Apple designs SKAdNetwork APIs to maintain user privacy. Apps don’t need to us
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/skadnetwork)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/skadnetwork)*

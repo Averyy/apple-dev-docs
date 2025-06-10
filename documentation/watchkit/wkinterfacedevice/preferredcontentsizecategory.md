@@ -1,6 +1,6 @@
 # preferredContentSizeCategory
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The preferred font-sizing option.

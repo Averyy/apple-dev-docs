@@ -1,6 +1,6 @@
 # uniform2iv
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 **Availability**:

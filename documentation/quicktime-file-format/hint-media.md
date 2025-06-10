@@ -1,6 +1,6 @@
 # Hint media
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Provide information about data units to stream in hint tracks.
 

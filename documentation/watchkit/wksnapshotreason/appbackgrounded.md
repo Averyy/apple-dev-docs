@@ -1,6 +1,6 @@
 # WKSnapshotReason.appBackgrounded
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The app transitioned from the foreground to the background.

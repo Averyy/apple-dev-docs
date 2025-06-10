@@ -1,6 +1,6 @@
 # XCTExpectedFailure
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An object that represents an expected test failure.

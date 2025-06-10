@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_DataRateLimits
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Zero, one, or two hard limits on data rate.

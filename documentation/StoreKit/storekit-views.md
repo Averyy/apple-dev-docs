@@ -1,6 +1,6 @@
 # StoreKit views
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Display a customizable In-App Purchase store using StoreKit views for SwiftUI.
 
@@ -18,13 +18,14 @@ For more information on configuring your In-App Purchase metadata, see [`Manage 
 
 ## Topics
 
-### Merchandising In-App Purchases and subscriptions
+### Merchandising In-App Purchases, subscriptions, and offers
 - [struct ProductView](productview.md)
   A view that merchandises an individual In-App Purchase product.
 - [struct StoreView](storeview.md)
   A view that merchandises a collection of In-App Purchase products.
 - [struct SubscriptionStoreView](subscriptionstoreview.md)
   A view that merchandises a collection of auto-renewable subscription options that belong to the same subscription group.
+- [struct SubscriptionOfferView](subscriptionofferview.md)
 - [Backyard Birds: Building an app with SwiftData and widgets](../SwiftUI/Backyard-birds-sample.md)
   Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
 ### Styling product views
@@ -51,6 +52,11 @@ For more information on configuring your In-App Purchase metadata, see [`Manage 
   The properties of a subscription store control that includes the list of auto-renewable subscriptions to merchandise.
 - [protocol SubscriptionStoreControlPlacement](subscriptionstorecontrolplacement.md)
   A type that specifies the placement of a subscription control in a subscription store view.
+### Styling subscription offer views
+- [struct AutomaticSubscriptionOfferViewStyle](automaticsubscriptionofferviewstyle.md)
+- [struct CompactSubscriptionOfferViewStyle](compactsubscriptionofferviewstyle.md)
+- [struct SubscriptionOfferViewStyleConfiguration](subscriptionofferviewstyleconfiguration.md)
+- [protocol SubscriptionOfferViewStyle](subscriptionofferviewstyle.md)
 ### Configuring subscription store controls
 - [nonisolated func subscriptionStoreControlIcon(@ViewBuilder icon: @escaping (Product, Product.SubscriptionInfo) -> some View) -> some View
 ](../SwiftUI/View/subscriptionStoreControlIcon(icon:).md)
@@ -119,6 +125,7 @@ For more information on configuring your In-App Purchase metadata, see [`Manage 
   Adds an action to perform when a person uses the sign-in button on a subscription store view within a view.
 - [struct StoreButtonKind](storebuttonkind.md)
   A button to display in a store view or subscription store view.
+- [struct SubscriptionOfferViewButtonKind](subscriptionofferviewbuttonkind.md)
 ### Configuring the subscription store policies
 - [nonisolated func subscriptionStorePolicyDestination(for button: SubscriptionStorePolicyKind, @ViewBuilder destination: () -> some View) -> some View
 ](../SwiftUI/View/subscriptionStorePolicyDestination(for:destination:).md)
@@ -177,7 +184,7 @@ For more information on configuring your In-App Purchase metadata, see [`Manage 
   The state of a task that loads a product in the background.
 - [enum EntitlementTaskState](entitlementtaskstate.md)
   The state of an entitlement task.
-### Refunding a request
+### Requesting a refund
 - [@preconcurrency nonisolated func refundRequestSheet(for transactionID: Transaction.ID, isPresented: Binding<Bool>, onDismiss: (@MainActor (Result<Transaction.RefundRequestStatus, Transaction.RefundRequestError>) -> ())? = nil) -> some View
 ](../SwiftUI/View/refundRequestSheet(for:isPresented:onDismiss:).md)
   Display the refund request sheet for the given transaction.
@@ -185,4 +192,4 @@ For more information on configuring your In-App Purchase metadata, see [`Manage 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/storekit-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/storekit-views)*

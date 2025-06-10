@@ -1,6 +1,6 @@
 # CMAudioClockCreate(allocator:clockOut:)
 
-**Framework**: Coremedia  
+**Framework**: Core Media  
 **Kind**: func
 
 Creates a clock that advances at the same rate as audio output.

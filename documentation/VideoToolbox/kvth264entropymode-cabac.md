@@ -1,6 +1,6 @@
 # kVTH264EntropyMode_CABAC
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

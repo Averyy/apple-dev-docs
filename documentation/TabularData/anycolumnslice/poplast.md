@@ -1,6 +1,6 @@
 # popLast()
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Removes and returns the last element of the collection.

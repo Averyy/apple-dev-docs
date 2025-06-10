@@ -1,6 +1,6 @@
 # webView(_:dragSourceActionMaskFor:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a mask indicating which drag-source actions are allowed for a drag that begins at the specified location.

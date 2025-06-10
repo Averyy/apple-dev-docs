@@ -1,9 +1,9 @@
-# buildBlock()
+# buildBlock(_:)
 
 **Framework**: RealityKit  
 **Kind**: method
 
-Creates an empty attachment content containing no statements.
+Creates a single content result.
 
 **Availability**:
 - visionOS 1.0+
@@ -11,10 +11,10 @@ Creates an empty attachment content containing no statements.
 ## Declaration
 
 ```swift
-static func buildBlock() -> EmptyAttachmentContent
+static func buildBlock<C>(_ content: C) -> C where C : AttachmentContent
 ```
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/attachmentcontentbuilder/buildblock())*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/attachmentcontentbuilder/buildblock(_:))*

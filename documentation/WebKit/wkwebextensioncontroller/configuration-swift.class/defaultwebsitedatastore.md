@@ -1,6 +1,6 @@
 # defaultWebsiteDataStore
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The default data store for website data and cookie access in extension contexts.

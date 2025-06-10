@@ -20,8 +20,6 @@ var calibrationConfidence: ENCalibrationConfidence { get }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.7 and later.
 
- This property is available in iOS 12.5, and in iOS 13.7 and later.
-
 ## See Also
 
 - [var date: Date](enexposurewindow/date.md)

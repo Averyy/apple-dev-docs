@@ -1,6 +1,6 @@
 # resource
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: property
 
 Reference to the resource describing the desired inverse kinematics setup.
@@ -10,6 +10,7 @@ Reference to the resource describing the desired inverse kinematics setup.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

@@ -19,6 +19,10 @@ A control for selecting a value from a bounded linear range of values.
 struct Slider<Label, ValueLabel> where Label : View, ValueLabel : View
 ```
 
+## Mentions
+
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+
 #### Overview
 
 A slider consists of a “thumb” image that the user moves between two extremes of a linear “track”. The ends of the track represent the minimum and maximum possible values. As the user moves the thumb, the slider updates its bound value.

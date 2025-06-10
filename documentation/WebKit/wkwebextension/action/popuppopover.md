@@ -1,6 +1,6 @@
 # popupPopover
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A popover that presents a web view loaded with the pop-up page for this action, or `nil` if no popup is specified.

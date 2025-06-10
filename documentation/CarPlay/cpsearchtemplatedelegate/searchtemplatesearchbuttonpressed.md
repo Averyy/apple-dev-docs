@@ -13,6 +13,7 @@ Tells the delegate that the user tapped the keyboard’s search button.
 ## Declaration
 
 ```swift
+@MainActor
 optional func searchTemplateSearchButtonPressed(_ searchTemplate: CPSearchTemplate)
 ```
 

@@ -1,6 +1,6 @@
 # monospacedDigitSystemFont(ofSize:weight:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Returns the standard system font with all digits of consistent width.

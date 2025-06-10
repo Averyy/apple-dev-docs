@@ -35,11 +35,9 @@ numbers.withUnsafeMutableBufferPointer { buffer in
 }
 print(numbers)
 // Prints "[2, 1, 4, 3, 5]"
-
-Uninitialized memory cannot be initialized to a nontrivial type
-using this subscript. Instead, use an initializing method, such as
-`initializeElement(at:to:)`
 ```
+
+Uninitialized memory cannot be initialized to a nontrivial type using this subscript. Instead, use an initializing method, such as `initializeElement(at:to:)`
 
 > **Note**: Bounds checks for `i` are performed only in debug mode.
 

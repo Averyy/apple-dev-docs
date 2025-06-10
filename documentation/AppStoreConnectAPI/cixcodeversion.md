@@ -28,6 +28,7 @@ object CiXcodeVersion
   A response that contains a single Xcode Versions resource.
 - [object CiXcodeVersionsResponse](cixcodeversionsresponse.md)
   A response that contains a list of Xcode Versions resources.
+- [object CiXcodeVersionMacOsVersionsLinkagesResponse](cixcodeversionmacosversionslinkagesresponse.md)
 
 
 ---

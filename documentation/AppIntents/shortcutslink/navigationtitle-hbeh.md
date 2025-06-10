@@ -6,6 +6,7 @@
 Configures the view’s title for purposes of navigation, using a custom view.
 
 **Availability**:
+- Mac Catalyst ?+
 - watchOS 7.0+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # Notifications
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Add and read information for alternative distribution package notifications.
 
@@ -51,4 +51,4 @@ To learn more about server-side processing of marketplace webhook notifications,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/notifications)*

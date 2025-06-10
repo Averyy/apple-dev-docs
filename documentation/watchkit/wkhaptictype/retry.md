@@ -1,6 +1,6 @@
 # WKHapticType.retry
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Indicates that the user should retry a task that temporarily failed.

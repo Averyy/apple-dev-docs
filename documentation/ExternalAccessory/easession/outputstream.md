@@ -21,7 +21,7 @@ var outputStream: OutputStream? { get }
 
 #### Discussion
 
-This stream is provided for you automatically by the session object but you must configure it if you want to receive any associated stream events. You do this by assigning a delegate object to the stream that implements the [`stream(_:handle:)`](https://developer.apple.com/documentation/foundation/streamdelegate/1410079-stream) delegate method. You must then schedule the stream in a run loop so that it can send data asynchronously from one of your application’s threads.
+This stream is provided for you automatically by the session object but you must configure it if you want to receive any associated stream events. You do this by assigning a delegate object to the stream that implements the [`stream(_:handle:)`](https://developer.apple.com/documentation/Foundation/StreamDelegate/stream(_:handle:)) delegate method. You must then schedule the stream in a run loop so that it can send data asynchronously from one of your application’s threads.
 
 For more information on how to schedule an output stream in a run loop and use it to send data, see [`Stream Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Streams/Streams.html#//apple_ref/doc/uid/10000188i).
 

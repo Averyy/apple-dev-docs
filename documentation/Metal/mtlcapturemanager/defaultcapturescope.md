@@ -29,7 +29,7 @@ The default value is `nil.` When the value is `nil`, the capture scope is define
 
 - [func makeCaptureScope(device: any MTLDevice) -> any MTLCaptureScope](mtlcapturemanager/makecapturescope(device:).md)
   Creates a capture scope for commands submitted to a specific device object.
-- [func makeCaptureScope(commandQueue: any MTLCommandQueue) -> any MTLCaptureScope](mtlcapturemanager/makecapturescope(commandqueue:).md)
+- [func makeCaptureScope(commandQueue: any MTLCommandQueue) -> any MTLCaptureScope](mtlcapturemanager/makecapturescope(commandqueue:)-1rozd.md)
   Creates a capture scope for commands submitted to a specific command queue.
 
 

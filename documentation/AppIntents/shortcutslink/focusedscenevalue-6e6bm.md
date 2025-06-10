@@ -8,10 +8,10 @@ Modifies this view by injecting a value that you provide for use by other views 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 8.0+
 
 ## Declaration

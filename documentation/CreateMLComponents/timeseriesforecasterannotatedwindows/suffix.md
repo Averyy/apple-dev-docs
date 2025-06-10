@@ -1,6 +1,6 @@
 # suffix(_:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns a subsequence, up to the given maximum length, containing the final elements of the sequence.

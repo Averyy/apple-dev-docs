@@ -1,6 +1,6 @@
 # isWatchAppInstalled
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 A Boolean value indicating whether the currently paired and active Apple Watch has installed the app.

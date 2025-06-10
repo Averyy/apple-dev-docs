@@ -30,8 +30,6 @@ If the handle represents a file, this method returns the data obtained by readin
 
 > ❗ **Important**:  This method raises [`fileHandleOperationException`](nsexceptionname/filehandleoperationexception.md) if attempts to determine the file-handle type fail or if attempts to read from the file or channel fail.
 
- This method raises [`fileHandleOperationException`](nsexceptionname/filehandleoperationexception.md) if attempts to determine the file-handle type fail or if attempts to read from the file or channel fail.
-
 ## Parameters
 
 - `length`: The number of bytes to read from the file handle.

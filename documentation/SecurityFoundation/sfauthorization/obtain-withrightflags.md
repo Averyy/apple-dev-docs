@@ -1,6 +1,6 @@
 # obtain(withRight:flags:)
 
-**Framework**: Securityfoundation  
+**Framework**: Security Foundation  
 **Kind**: method
 
 Authorizes and preauthorizes one specific right.

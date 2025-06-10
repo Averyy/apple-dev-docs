@@ -1,6 +1,6 @@
 # init(dataOutputs:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: init
 
 Creates a capture output synchronizer for the specified capture outputs.

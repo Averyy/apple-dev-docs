@@ -1,6 +1,6 @@
 # WatchKitError.Code.downloadFailed
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 A download error.

@@ -1,6 +1,6 @@
 # report(completionHandler:)
 
-**Framework**: Gamekit  
+**Framework**: GameKit  
 **Kind**: method
 
 Reports the player’s progress to Game Center.
@@ -18,7 +18,7 @@ func report() async throws
 
 #### Discussion
 
-When the player makes progress towards completing an achievement, your game communicates the player’s progress to Game Center by calling this method. An achievement object is implicitly tied to the local player that was authenticated when the object was created; your game should only report progress when the same local player is still authenticated on the device.
+When the player makes progress towards completing an achievement, your game communicates the player’s progress to Game Center by calling this method. An achievement object is implicitly tied to the local player that was initialized when the object was created; your game should only report progress when the same local player is still on the device.
 
 > **Note**:  To avoid using network bandwidth unnecessarily, only report an achievement when the player has made more progress towards completing it.
 

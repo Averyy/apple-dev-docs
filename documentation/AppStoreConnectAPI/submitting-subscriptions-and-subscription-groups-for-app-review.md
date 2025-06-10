@@ -25,8 +25,6 @@ For more information, see [`Uploading Assets to App Store Connect`](uploading-as
 
 > ❗ **Important**:  You need to submit your first subscription with an app binary submission. This must be done through [`appstoreconnect.apple.com`](https://developer.apple.comhttps://appstoreconnect.apple.com). For subsequent subscriptions, you can submit using the following API endpoint without an associated app binary submission.
 
- You need to submit your first subscription with an app binary submission. This must be done through [`appstoreconnect.apple.com`](https://developer.apple.comhttps://appstoreconnect.apple.com). For subsequent subscriptions, you can submit using the following API endpoint without an associated app binary submission.
-
 If this isn’t your first subscription, use `POST /v1/subscriptionSubmissions` ([`Create a Review Submission for a Subscription`](post-v1-subscriptionsubmissions.md)).
 
 Here’s an example payload:

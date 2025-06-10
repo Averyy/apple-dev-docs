@@ -1,6 +1,6 @@
 # Optimizing Your Website for Safari
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Improve your website by optimizing it for Safari.
 
@@ -22,8 +22,6 @@ To ensure that your content works great in Safari:
 -  Make use of good web design practices and web standards. Make use of HTML5, CSS3, and the latest web standards supported by the [`W3C`](https://developer.apple.comhttps://www.w3.org).
 
 > 💡 **Tip**:  Use feature detection to make your website browser independent. By detecting the browser, you can not only support multiple browsers but also support multiple WebKit versions.
-
- Use feature detection to make your website browser independent. By detecting the browser, you can not only support multiple browsers but also support multiple WebKit versions.
 
 Additionally, you can customize rules for [`Applebot`](https://developer.apple.comhttps://support.apple.com/en-us/HT204683), the web crawler for Apple.
 

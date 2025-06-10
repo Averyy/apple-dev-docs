@@ -1,6 +1,6 @@
 # presentMediaPlayerController(with:options:completion:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Displays a modal interface for playing the specified media file.

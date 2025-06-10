@@ -1,6 +1,6 @@
 # elements
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: property
 
 The document elements you’re requesting.
@@ -9,6 +9,7 @@ The document elements you’re requesting.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -30,4 +31,4 @@ var elements: [MobileDriversLicenseDisplayRequest.Element]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ProximityReader/mobiledriverslicensedisplayrequest/elements)*
+*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/mobiledriverslicensedisplayrequest/elements)*

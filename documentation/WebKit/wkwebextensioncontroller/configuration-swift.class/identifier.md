@@ -1,6 +1,6 @@
 # identifier
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The unique identifier used for persistent configuration storage, or `nil` when it is the default or not persistent.

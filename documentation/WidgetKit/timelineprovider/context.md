@@ -1,6 +1,6 @@
 # TimelineProvider.Context
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: typealias
 
 An object that contains details about how a widget is rendered, including its size and whether it appears in the widget gallery.
@@ -8,8 +8,9 @@ An object that contains details about how a widget is rendered, including its si
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration

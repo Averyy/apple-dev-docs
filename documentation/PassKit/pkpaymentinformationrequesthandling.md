@@ -21,19 +21,17 @@ protocol PKPaymentInformationRequestHandling
 
 > ❗ **Important**:  Before you can add a QR code purchase extension you need an entitlement from Apple. For more information on requesting an entitlement, contact apple-pay-inquiries@apple.com.
 
- Before you can add a QR code purchase extension you need an entitlement from Apple. For more information on requesting an entitlement, contact apple-pay-inquiries@apple.com.
-
 ## Topics
 
 ### Getting the transaction information
 - [func handle(PKBarcodeEventConfigurationRequest, completion: () -> Void)](pkpaymentinformationrequesthandling/handle(_:completion:)-3cth8.md)
-- [func handleInformationRequest(PKBarcodeEventMetadataRequest, completion: PKInformationRequestCompletionBlock)](pkpaymentinformationrequesthandling/handleinformationrequest(_:completion:).md)
+- [func handleInformationRequest(PKBarcodeEventMetadataRequest, completion: (PKBarcodeEventMetadataResponse) -> Void)](pkpaymentinformationrequesthandling/handleinformationrequest(_:completion:).md)
 - [class PKBarcodeEventConfigurationRequest](pkbarcodeeventconfigurationrequest.md)
 - [class PKBarcodeEventMetadataRequest](pkbarcodeeventmetadatarequest.md)
 - [class PKBarcodeEventMetadataResponse](pkbarcodeeventmetadataresponse.md)
 - [typealias PKInformationRequestCompletionBlock](pkinformationrequestcompletionblock.md)
 ### Signing the transaction
-- [func handle(PKBarcodeEventSignatureRequest, completion: PKSignatureRequestCompletionBlock)](pkpaymentinformationrequesthandling/handle(_:completion:)-18x2y.md)
+- [func handle(PKBarcodeEventSignatureRequest, completion: (PKBarcodeEventSignatureResponse) -> Void)](pkpaymentinformationrequesthandling/handle(_:completion:)-18x2y.md)
 - [class PKBarcodeEventSignatureRequest](pkbarcodeeventsignaturerequest.md)
 - [class PKBarcodeEventSignatureResponse](pkbarcodeeventsignatureresponse.md)
 - [typealias PKSignatureRequestCompletionBlock](pksignaturerequestcompletionblock.md)

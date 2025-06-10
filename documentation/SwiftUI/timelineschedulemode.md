@@ -39,6 +39,7 @@ A [`TimelineView`](timelineview.md) provides a mode when calling its schedule’
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

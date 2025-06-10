@@ -1,6 +1,6 @@
 # read(into:startingAt:length:)
 
-**Framework**: Fskit  
+**Framework**: FSKit  
 **Kind**: method
 
 Synchronously reads data from the resource into a buffer.

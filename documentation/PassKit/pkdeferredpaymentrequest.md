@@ -24,8 +24,6 @@ This request receives a merchant-specific payment token, if the payment network 
 
 > ❗ **Important**:  You must set the [`deferredPaymentRequest`](pkpaymentrequest/deferredpaymentrequest.md) property on a [`PKPaymentRequest`](pkpaymentrequest.md) object to use the `PKDeferredPaymentRequest` class and set up a deferred payment.
 
- You must set the [`deferredPaymentRequest`](pkpaymentrequest/deferredpaymentrequest.md) property on a [`PKPaymentRequest`](pkpaymentrequest.md) object to use the `PKDeferredPaymentRequest` class and set up a deferred payment.
-
 Use a `PKDeferredPaymentRequest` object to provide the user with payment details and a way to manage payment methods for a deferred payment. You can optionally display a billing agreement and set up merchant token life cycle notifications for the request.
 
 For more information about the merchant token life cycle notifications, see [`Apple Pay Merchant Token Management API`](https://developer.apple.com/documentation/MerchantTokenNotificationServices).

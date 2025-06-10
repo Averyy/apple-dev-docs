@@ -1,6 +1,6 @@
 # Visualizing your app’s data
 
-**Framework**: Charts
+**Framework**: Swift Charts
 
 Build complex and interactive charts using Swift Charts.
 

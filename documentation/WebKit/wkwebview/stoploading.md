@@ -1,6 +1,6 @@
 # stopLoading(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Stops loading all resources on the current page.

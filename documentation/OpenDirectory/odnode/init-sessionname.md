@@ -1,6 +1,6 @@
 # init(session:name:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: init
 
 Creates a node object with a specified session and name.

@@ -1,6 +1,6 @@
 # testBundleWillStart(_:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Notifies the observer immediately before any tests in a test bundle begin.

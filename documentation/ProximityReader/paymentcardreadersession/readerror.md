@@ -99,6 +99,7 @@ enum ReadError
 ### Conforms To
 - [Error](../Swift/Error.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

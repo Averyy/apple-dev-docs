@@ -29,8 +29,6 @@ For the purpose of using actions on particles, you can treat the particle as if 
 
 > 💡 **Tip**:  Adding complex actions to particles can severely impact the performance of the particle emitter. Also, because the particles do not exist as an explicit node that you can manipulate, you cannot remove the actions from existing particles.
 
- Adding complex actions to particles can severely impact the performance of the particle emitter. Also, because the particles do not exist as an explicit node that you can manipulate, you cannot remove the actions from existing particles.
-
 ## See Also
 
 - [Animating Particle Properties Across Disparate Values](animating-particle-properties-across-disparate-values.md)

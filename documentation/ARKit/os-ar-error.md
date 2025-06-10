@@ -5,9 +5,6 @@
 
 An error reported by ARKit.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift

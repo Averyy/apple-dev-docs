@@ -1,6 +1,6 @@
 # buildPartialBlock(first:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: method
 
 **Availability**:

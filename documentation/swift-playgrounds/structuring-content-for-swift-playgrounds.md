@@ -19,8 +19,6 @@ Each part of a playground book must include a manifest property list that contai
 
 > ❗ **Important**: Modules are available starting with Swift Playgrounds 3, and version 6 of the Swift Playgrounds book format. For previous versions, place code in the Sources folder of a book, chapter, or page.
 
-Modules are available starting with Swift Playgrounds 3, and version 6 of the Swift Playgrounds book format. For previous versions, place code in the Sources folder of a book, chapter, or page.
-
 ##### Determine Book Level Information
 
 You write key details about a playground book in its `Manifest.plist` file. The [`Swift Playgrounds Author Template`](https://developer.apple.comhttps://developer.apple.com/download/more/?=Swift%20Playgrounds%20Author%20Template) comes with a default manifest that you update with specific details about your book, like its title and the file path for the cover image.

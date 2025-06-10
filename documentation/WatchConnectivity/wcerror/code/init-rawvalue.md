@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: init
 
 **Availability**:

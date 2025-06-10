@@ -25,8 +25,6 @@ Use the doc://com.apple.documentation/documentation/SwiftUI/View/transactionTask
 
 > ⚠️ **Warning**: Don’t import UIKit in any file that imports this type. This causes ambiguity resolving the [`SecureElementCredential`](SecureElementCredential.md) framework’s SwiftUI and UIKit symbols.
 
-Don’t import UIKit in any file that imports this type. This causes ambiguity resolving the [`SecureElementCredential`](SecureElementCredential.md) framework’s SwiftUI and UIKit symbols.
-
 ## Topics
 
 ### Configuring transactions

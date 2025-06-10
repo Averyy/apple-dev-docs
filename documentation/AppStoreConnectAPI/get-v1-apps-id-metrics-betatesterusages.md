@@ -16,8 +16,6 @@ Get usage metrics for beta testers of a specific app.
 
 > 💡 **Tip**:  This endpoint requires either `groupBy` or `filter[betaTesters]` parameter.
 
- This endpoint requires either `groupBy` or `filter[betaTesters]` parameter.
-
 ##### Example Request and Response
 
 ##### Example Request and Response

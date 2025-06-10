@@ -1,6 +1,6 @@
 # WKApplicationRefreshBackgroundTask
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A task that updates your app’s state in the background.
@@ -38,6 +38,7 @@ The system budgets the number of background refresh tasks available to an app. I
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -63,4 +64,4 @@ The system budgets the number of background refresh tasks available to an app. I
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkapplicationrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkapplicationrefreshbackgroundtask)*

@@ -30,8 +30,6 @@ The corresponding value is a [`SecAccessControl`](secaccesscontrol.md) instance,
 
 > ❗ **Important**:  This attribute is mutually exclusive with the [`kSecAttrAccess`](ksecattraccess.md) attribute.
 
- This attribute is mutually exclusive with the [`kSecAttrAccess`](ksecattraccess.md) attribute.
-
 
 ---
 

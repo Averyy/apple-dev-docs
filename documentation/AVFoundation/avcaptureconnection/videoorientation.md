@@ -31,8 +31,6 @@ If the value of [`isVideoOrientationSupported`](avcaptureconnection/isvideoorien
 
 > ❗ **Important**:  Physically rotating buffers comes with a performance cost, so only request rotation when necessary. If you want to write rotated video to a movie file using [`AVAssetWriter`](avassetwriter.md), set the [`transform`](avassetwriterinput/transform.md) property on the [`AVAssetWriterInput`](avassetwriterinput.md) instead.
 
- Physically rotating buffers comes with a performance cost, so only request rotation when necessary. If you want to write rotated video to a movie file using [`AVAssetWriter`](avassetwriter.md), set the [`transform`](avassetwriterinput/transform.md) property on the [`AVAssetWriterInput`](avassetwriterinput.md) instead.
-
 ## See Also
 
 - [var isVideoStabilizationEnabled: Bool](avcaptureconnection/isvideostabilizationenabled.md)

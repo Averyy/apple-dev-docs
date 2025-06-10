@@ -52,8 +52,6 @@ To prevent Xcode from automatically inserting delimiters, follow these steps:
 
 > ❗ **Important**: To use Fix-It, you must build your target with either the LLVM or Swift compiler. Fix-It is compatible with Swift, C, Objective-C, and Objective-C++.
 
-To use Fix-It, you must build your target with either the LLVM or Swift compiler. Fix-It is compatible with Swift, C, Objective-C, and Objective-C++.
-
 To apply a suggested Fix-It correction:
 
 1. Enter code into the source editor, which marks any issues with a red underline and displays a summary of the problem to the right.

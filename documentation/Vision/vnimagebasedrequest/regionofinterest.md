@@ -31,8 +31,6 @@ The default value is `{ { 0, 0 }, { 1, 1 } }`.
 
 > ❗ **Important**:  The request will fail to perform if you set this property to a rectangle outside the normalized coordinate space.
 
- The request will fail to perform if you set this property to a rectangle outside the normalized coordinate space.
-
 
 ---
 

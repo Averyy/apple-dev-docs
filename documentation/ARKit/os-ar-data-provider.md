@@ -5,9 +5,6 @@
 
 A source of live data from ARKit.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift
@@ -19,8 +16,10 @@ protocol OS_ar_data_provider : NSObjectProtocol
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 ### Inherited By
+- [OS_ar_accessory_tracking_provider](os_ar_accessory_tracking_provider.md)
 - [OS_ar_barcode_detection_provider](os_ar_barcode_detection_provider.md)
 - [OS_ar_camera_frame_provider](os_ar_camera_frame_provider.md)
+- [OS_ar_camera_region_provider](os_ar_camera_region_provider.md)
 - [OS_ar_environment_light_estimation_provider](os_ar_environment_light_estimation_provider.md)
 - [OS_ar_hand_tracking_provider](os_ar_hand_tracking_provider.md)
 - [OS_ar_image_tracking_provider](os_ar_image_tracking_provider.md)
@@ -28,6 +27,7 @@ protocol OS_ar_data_provider : NSObjectProtocol
 - [OS_ar_plane_detection_provider](os_ar_plane_detection_provider.md)
 - [OS_ar_room_tracking_provider](os_ar_room_tracking_provider.md)
 - [OS_ar_scene_reconstruction_provider](os_ar_scene_reconstruction_provider.md)
+- [OS_ar_shared_coordinate_space_provider](os_ar_shared_coordinate_space_provider.md)
 - [OS_ar_stereo_properties_provider](os_ar_stereo_properties_provider.md)
 - [OS_ar_world_tracking_provider](os_ar_world_tracking_provider.md)
 

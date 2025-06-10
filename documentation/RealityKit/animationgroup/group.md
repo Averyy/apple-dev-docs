@@ -12,6 +12,7 @@ An optional collection of animations to run.
 - macOS 12.0+
 - visionOS ?+
 - Unknown ?+ - Deprecated
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

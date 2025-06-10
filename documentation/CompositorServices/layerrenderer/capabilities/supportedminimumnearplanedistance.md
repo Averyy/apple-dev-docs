@@ -6,6 +6,7 @@
 The minimum distance in meters to the layer’s near projection plane.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

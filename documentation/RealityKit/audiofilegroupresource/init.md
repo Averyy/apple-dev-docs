@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: init
 
 Creates a group resource from an array of audio file resources.
@@ -10,6 +10,7 @@ Creates a group resource from an array of audio file resources.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

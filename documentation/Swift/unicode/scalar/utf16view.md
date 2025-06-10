@@ -36,6 +36,7 @@ struct UTF16View
 - [Copyable](copyable.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

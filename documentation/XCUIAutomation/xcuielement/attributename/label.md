@@ -1,6 +1,6 @@
 # label
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A string constant that serves as a dictionary key identifying an element’s label.

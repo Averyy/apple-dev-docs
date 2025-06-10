@@ -246,7 +246,7 @@ The total number of render pipelines instances is equal to the product of the ve
 ## See Also
 
 - [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
-  Render a simple 2D triangle.
+  Render a colorful, 2D triangle by running a draw command on the GPU.
 - [Customizing Render Pass Setup](customizing-render-pass-setup.md)
   Render into an offscreen texture by creating a custom render pass.
 - [Setting Load and Store Actions](setting-load-and-store-actions.md)
@@ -255,4 +255,4 @@ The total number of render pipelines instances is equal to the product of the ve
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/improving-rendering-performance-with-vertex-amplification)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/improving-rendering-performance-with-vertex-amplification)*

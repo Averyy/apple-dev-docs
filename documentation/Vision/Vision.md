@@ -44,6 +44,10 @@ To begin using the framework, you create a request for the type of analysis you 
   A type for image-analysis requests.
 - [protocol VisionObservation](visionobservation.md)
   A type for objects produced by image-analysis requests.
+- [struct DetectLensSmudgeRequest](detectlenssmudgerequest.md)
+  A request that detects a smudge on a lens from an image or video frame capture.
+- [struct SmudgeObservation](smudgeobservation.md)
+  An observation that provides an overall score of the presence of a smudge in an image or video frame capture.
 ### Image sequence analysis
 - [class GeneratePersonSegmentationRequest](generatepersonsegmentationrequest.md)
   A request that produces a matte image for a person it finds in the input image.
@@ -96,8 +100,14 @@ To begin using the framework, you create a request for the type of analysis you 
 - [struct Joint3D](joint3d.md)
   An object that represents a body pose joint in 3D space.
 ### Text detection
+- [Recognizing tables within a document](recognize-tables-within-a-document.md)
+  Scan a document containing a contact table and extract the content within the table in a formatted way.
 - [Locating and displaying recognized text](locating-and-displaying-recognized-text.md)
   Perform text recognition on a photo using the Vision framework’s text-recognition request.
+- [struct RecognizeDocumentsRequest](recognizedocumentsrequest.md)
+  An image-analysis request to scan an image of a document and provide information about its structure.
+- [struct DocumentObservation](documentobservation.md)
+  Information about the sections of content that an image-analysis request detects in a document.
 - [struct DetectTextRectanglesRequest](detecttextrectanglesrequest.md)
   An image-analysis request that finds regions of visible text in an image.
 - [struct RecognizeTextRequest](recognizetextrequest.md)
@@ -143,13 +153,21 @@ To begin using the framework, you create a request for the type of analysis you 
   An object that represents classification information that an image-analysis request produces.
 - [struct PixelBufferObservation](pixelbufferobservation.md)
   An object that represents an image that an image-analysis request produces.
-### Coordinate conversion
+### Image locations and regions
 - [struct NormalizedPoint](normalizedpoint.md)
   A point in a 2D coordinate system.
 - [struct NormalizedRect](normalizedrect.md)
   The location and dimensions of a rectangle.
+- [typealias NormalizedRegion](normalizedregion.md)
+  A polygon composed of normalized points.
 - [struct NormalizedCircle](normalizedcircle.md)
   The center point and radius of a 2D circle.
+- [protocol BoundingBoxProviding](boundingboxproviding.md)
+  A protocol for objects that have a bounding box.
+- [protocol BoundingRegionProviding](boundingregionproviding.md)
+  A protocol for objects that have a defined boundary in an image.
+- [protocol QuadrilateralProviding](quadrilateralproviding.md)
+  A protocol for objects that have a bounding quadrilateral.
 - [enum CoordinateOrigin](coordinateorigin.md)
   The origin of a coordinate system relative to an image.
 ### Request Handlers
@@ -167,17 +185,6 @@ To begin using the framework, you create a request for the type of analysis you 
   The errors that the framework produces.
 ### Legacy API
 - [Original Objective-C and Swift API](original-objective-c-and-swift-api.md)
-### Structures
-- [struct ImageCoordinateConversionHelpers](imagecoordinateconversionhelpers.md)
-- [struct ImagePixelDimensions](imagepixeldimensions.md)
-- [struct ResourceVersion](resourceversion.md)
-- [struct VNVideoProcessingOption](vnvideoprocessingoption.md)
-  Options to pass to the video processor when adding requests.
-### Type Aliases
-- [typealias DetectorKey](detectorkey.md)
-- [typealias NamedMultipleObjectDataAccessBlock](namedmultipleobjectdataaccessblock.md)
-- [typealias NamedObjectDataAccessBlock](namedobjectdataaccessblock.md)
-- [typealias NamedObjectsDictionary](namedobjectsdictionary.md)
 
 
 ---

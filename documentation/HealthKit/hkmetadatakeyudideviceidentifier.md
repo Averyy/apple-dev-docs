@@ -1,6 +1,6 @@
 # HKMetadataKeyUDIDeviceIdentifier
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: var
 
 The device identifier portion of a device’s UDI (unique device identifier).
@@ -49,4 +49,4 @@ This key takes a string value.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkmetadatakeyudideviceidentifier)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkmetadatakeyudideviceidentifier)*

@@ -1,6 +1,6 @@
 # shiftKey
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A Boolean value indicating whether the shift key is pressed.

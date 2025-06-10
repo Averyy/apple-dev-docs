@@ -10,8 +10,8 @@ Check the status of the test App Store server notification sent to your server.
 
 ## Mentions
 
-- [Identifying rate limits](identifying-rate-limits.md)
 - [App Store Server API changelog](app-store-server-api-changelog.md)
+- [Identifying rate limits](identifying-rate-limits.md)
 
 #### Discussion
 

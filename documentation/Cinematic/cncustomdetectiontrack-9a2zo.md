@@ -8,6 +8,7 @@ An object representing a discrete detection track composed of individual detecti
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
 
@@ -33,6 +34,8 @@ class CNCustomDetectionTrack
 
 ## See Also
 
+- [Editing Spatial Audio with an audio mix](editing-spatial-audio-with-an-audio-mix.md)
+  Add Spatial Audio editing capabilities with the Audio Mix API in the Cinematic framework.
 - [struct CNDetection](cndetection-swift.struct.md)
   A structure that represents a detected subject, face, torso or pet at a particular time.
 - [struct CNDecision](cndecision-swift.struct.md)

@@ -10,7 +10,7 @@ Tells a view that acts as a cell in a grid to span the specified number of colum
 - iPadOS 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -53,8 +53,6 @@ Grid(alignment: .leadingFirstTextBaseline) {
 The `Toggle` in the example above spans the column that contains the font names and the column that contains the buttons:
 
 > ❗ **Important**: When you tell a cell to span multiple columns, the grid changes the merged cell to use anchor alignment, rather than the usual alignment guides. For information about the behavior of anchor alignment, see `View/gridCellAnchor(_:)`.
-
-When you tell a cell to span multiple columns, the grid changes the merged cell to use anchor alignment, rather than the usual alignment guides. For information about the behavior of anchor alignment, see `View/gridCellAnchor(_:)`.
 
 As a convenience you can cause a view to span all of the `Grid` columns by placing the view directly in the content closure of the `Grid`, outside of a `GridRow`, and omitting the modifier. To do the opposite and include more than one view in a cell, group the views using an appropriate layout container, like an `HStack`, so that they act as a single view.
 

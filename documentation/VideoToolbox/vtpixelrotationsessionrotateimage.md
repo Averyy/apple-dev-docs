@@ -1,6 +1,6 @@
 # VTPixelRotationSessionRotateImage(_:_:_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Rotates a source pixel buffer and writes the output to the destination pixel buffer.

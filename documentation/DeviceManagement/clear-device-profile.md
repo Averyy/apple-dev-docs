@@ -19,9 +19,7 @@ After this call, the devices in the list will have no profiles associated with t
 - [object ClearProfileRequest](clearprofilerequest.md)
   The request used to remove a profile from devices.
 - [object ClearProfileResponse](clearprofileresponse.md)
-  The response after removing a profile from devices.
 - [object ClearProfileResponse.Devices](clearprofileresponse/devices-data.dictionary.md)
-  A dictionary of devices with the status of their profile removal request.
 
 ## Request Body
 

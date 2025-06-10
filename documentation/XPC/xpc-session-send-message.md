@@ -1,6 +1,6 @@
 # xpc_session_send_message(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 **Availability**:

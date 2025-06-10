@@ -1,6 +1,6 @@
 # tableView(_:didAdd:forRow:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Tells the delegate that a row view was added at the specified row.

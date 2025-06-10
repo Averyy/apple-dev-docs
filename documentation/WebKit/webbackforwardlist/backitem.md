@@ -1,6 +1,6 @@
 # backItem
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The item that precedes the current item in the back-forward list.

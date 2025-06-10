@@ -1,19 +1,16 @@
 # SettingsCommand.Command.Settings.ApplicationAttributes
 
-**Framework**: Devicemanagement  
+**Framework**: Device Management  
 **Kind**: dictionary
 
 A dictionary that contains the attributes to apply to the app.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- macOS 10.9+
-- tvOS 9.0+
+- iOS 7.0+
+- iPadOS 7.0+
+- tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,19 +18,9 @@ A dictionary that contains the attributes to apply to the app.
 object SettingsCommand.Command.Settings.ApplicationAttributes
 ```
 
-#### Overview
-
-> **Note**: For a watchOS app, the identifier needs to be the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone to which the watch is paired. Obtain the watch’s bundle identifier for an app with a watch bundle, in the `watchBundleId` key that’s part of the Content Metadata query. For more information on this query, see [`Getting App and Book Information (Legacy)`](getting-app-and-book-information-legacy.md).
-
-- Item: A string that identifies this setting.
-
-#### Discussion
-
-Omit this setting to remove existing attributes. This setting supports User Enrollment, and is available in iOS 7 and later, and tvOS 10.2 and later.
-
 ## Topics
 
-### Commands
+### Objects
 - [object SettingsCommand.Command.Settings.ApplicationAttributes.Attributes](settingscommand/command-data.dictionary/settings-data.dictionary/applicationattributes-data.dictionary/attributes-data.dictionary.md)
   A dictionary that contains the attributes to apply to the app.
 
@@ -49,6 +36,8 @@ Omit this setting to remove existing attributes. This setting supports User Enro
   A dictionary that contains Bluetooth settings.
 - [object SettingsCommand.Command.Settings.DataRoaming](settingscommand/command-data.dictionary/settings-data.dictionary/dataroaming-data.dictionary.md)
   A dictionary that contains data roaming settings.
+- [object SettingsCommand.Command.Settings.DefaultApplications](settingscommand/command-data.dictionary/settings-data.dictionary/defaultapplications-data.dictionary.md)
+  A dictionary that contains default application bundle identifiers for each default application type that can be set.
 - [object SettingsCommand.Command.Settings.DeviceName](settingscommand/command-data.dictionary/settings-data.dictionary/devicename-data.dictionary.md)
   A dictionary that contains device name settings.
 - [object SettingsCommand.Command.Settings.DiagnosticSubmission](settingscommand/command-data.dictionary/settings-data.dictionary/diagnosticsubmission-data.dictionary.md)
@@ -57,18 +46,16 @@ Omit this setting to remove existing attributes. This setting supports User Enro
   A dictionary that contains hostname settings.
 - [object SettingsCommand.Command.Settings.MDMOptions](settingscommand/command-data.dictionary/settings-data.dictionary/mdmoptions-data.dictionary.md)
   A dictionary that contains settings about the organization operating the MDM server.
+- [object SettingsCommand.Command.Settings.MaximumResidentUsers](settingscommand/command-data.dictionary/settings-data.dictionary/maximumresidentusers-data.dictionary.md)
+  A dictionary that contains settings for maximum resident users.
 - [object SettingsCommand.Command.Settings.OrganizationInfo](settingscommand/command-data.dictionary/settings-data.dictionary/organizationinfo-data.dictionary.md)
   A dictionary that contains settings about the organization operating the MDM server.
+- [object SettingsCommand.Command.Settings.PasscodeLockGracePeriod](settingscommand/command-data.dictionary/settings-data.dictionary/passcodelockgraceperiod-data.dictionary.md)
+  A dictionary that contains settings for the password lock grace period.
 - [object SettingsCommand.Command.Settings.PersonalHotspot](settingscommand/command-data.dictionary/settings-data.dictionary/personalhotspot-data.dictionary.md)
   A dictionary that contains Personal Hotspot settings.
 - [object SettingsCommand.Command.Settings.SharedDeviceConfiguration](settingscommand/command-data.dictionary/settings-data.dictionary/shareddeviceconfiguration-data.dictionary.md)
   A dictionary that contains shared device configuration settings.
-- [object SettingsCommand.Command.Settings.SoftwareUpdateSettings](settingscommand/command-data.dictionary/settings-data.dictionary/softwareupdatesettings-data.dictionary.md)
-  A dictionary that contains software update settings.
-- [object SettingsCommand.Command.Settings.TimeZone](settingscommand/command-data.dictionary/settings-data.dictionary/timezone-data.dictionary.md)
-  A dictionary that contains time zone settings.
-- [object SettingsCommand.Command.Settings.Wallpaper](settingscommand/command-data.dictionary/settings-data.dictionary/wallpaper-data.dictionary.md)
-  A dictionary that contains wallpaper settings.
 
 
 ---

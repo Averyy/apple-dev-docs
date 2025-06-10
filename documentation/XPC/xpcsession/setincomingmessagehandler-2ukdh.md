@@ -1,6 +1,6 @@
 # setIncomingMessageHandler(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Sets a closure to receive incoming decodable messages for a session.
@@ -16,14 +16,13 @@ Sets a closure to receive incoming decodable messages for a session.
 ## Declaration
 
 ```swift
+@preconcurrency
 func setIncomingMessageHandler<Message>(_ incomingMessageHandler: @escaping (Message) -> (any Encodable)?) where Message : Decodable
 ```
 
 #### Discussion
 
 > ❗ **Important**:  Only call this method on an inactive session.
-
- Only call this method on an inactive session.
 
 ## Parameters
 

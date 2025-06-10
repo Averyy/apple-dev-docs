@@ -1,6 +1,6 @@
 # contains(_:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns a Boolean value indicating whether the sequence contains the given element.

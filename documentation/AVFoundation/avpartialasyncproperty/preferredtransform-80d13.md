@@ -22,7 +22,7 @@ static var preferredTransform: AVAsyncProperty<Root, CGAffineTransform> { get }
 
 #### Discussion
 
-Use the [`load(_:)`](avasynchronouskeyvalueloading/load(_:).md) method to retrieve the property value.
+Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
 
 This value typically, but not always, equals [`CGAffineTransformIdentity`](https://developer.apple.com/documentation/CoreGraphics/CGAffineTransformIdentity).
 

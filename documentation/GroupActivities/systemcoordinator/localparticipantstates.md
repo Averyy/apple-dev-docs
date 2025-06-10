@@ -17,6 +17,7 @@ final var localParticipantStates: SystemCoordinator.ParticipantStates { get }
 ## Mentions
 
 - [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
+- [Configure your visionOS app for sharing with people nearby](configure-your-app-for-sharing-with-people-nearby.md)
 
 #### Discussion
 
@@ -34,6 +35,7 @@ Task.detached {
 
 ## See Also
 
+- [var remoteParticipantStates: [Participant : SystemCoordinator.ParticipantState]](systemcoordinator/remoteparticipantstates.md)
 - [var localParticipantState: SystemCoordinator.ParticipantState](systemcoordinator/localparticipantstate.md)
   The current participant’s level of support for an activity that takes place in a shared simulation space.
 - [SystemCoordinator.ParticipantStates](systemcoordinator/participantstates.md)

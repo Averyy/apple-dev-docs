@@ -26,8 +26,6 @@ Populate this array with images, videos, URLs, and so on. It’s not meant to be
 
 > ❗ **Important**:  Alternatively, you can set attachments in the [`userInfo`](nsextensionitem/userinfo.md) dictionary using the [`NSExtensionItemAttachmentsKey`](nsextensionitemattachmentskey.md) key. However, setting the [`userInfo`](nsextensionitem/userinfo.md) dictionary after setting [`attachments`](nsextensionitem/attachments.md) will override this property.
 
- Alternatively, you can set attachments in the [`userInfo`](nsextensionitem/userinfo.md) dictionary using the [`NSExtensionItemAttachmentsKey`](nsextensionitemattachmentskey.md) key. However, setting the [`userInfo`](nsextensionitem/userinfo.md) dictionary after setting [`attachments`](nsextensionitem/attachments.md) will override this property.
-
 ## See Also
 
 - [var attributedContentText: NSAttributedString?](nsextensionitem/attributedcontenttext.md)

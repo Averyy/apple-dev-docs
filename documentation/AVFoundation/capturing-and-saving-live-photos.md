@@ -1,6 +1,6 @@
 # Capturing and Saving Live Photos
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Capture Live Photos like those created in the system Camera app and save them to the Photos library.
 
@@ -201,4 +201,4 @@ class LivePhotoCaptureProcessor: NSObject, AVCapturePhotoCaptureDelegate {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/capturing-and-saving-live-photos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/capturing-and-saving-live-photos)*

@@ -19,9 +19,9 @@ let SKStoreProductParameterAdNetworkIdentifier: String
 
 ## Mentions
 
-- [Combining parameters to generate a signature for SKAdNetwork 1](combining-parameters-to-generate-a-signature-for-skadnetwork-1.md)
 - [Identifying the parameters in install-validation postbacks](identifying-the-parameters-in-install-validation-postbacks.md)
 - [Generating the signature to validate StoreKit-rendered ads](generating-the-signature-to-validate-storekit-rendered-ads.md)
+- [Combining parameters to generate a signature for SKAdNetwork 1](combining-parameters-to-generate-a-signature-for-skadnetwork-1.md)
 
 #### Discussion
 

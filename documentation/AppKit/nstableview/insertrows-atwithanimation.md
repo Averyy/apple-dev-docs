@@ -1,6 +1,6 @@
 # insertRows(at:withAnimation:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Inserts the rows using the specified animation.

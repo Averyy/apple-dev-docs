@@ -9,7 +9,7 @@ The element type of the option set.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

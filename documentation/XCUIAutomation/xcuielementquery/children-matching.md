@@ -1,6 +1,6 @@
 # children(matching:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Returns a new query that matches all direct children of the requested type.

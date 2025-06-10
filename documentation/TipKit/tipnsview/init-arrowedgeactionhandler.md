@@ -12,7 +12,7 @@ Creates a tip view with an optional arrow.
 
 ```swift
 @MainActor
-@preconcurrency convenience init(_ tip: any Tip, arrowEdge: Edge? = nil, actionHandler: @escaping (Tips.Action) -> Void = { _ in })
+@preconcurrency convenience init(_ tip: any Tip, arrowEdge: Edge? = nil, actionHandler: @escaping @MainActor (Tips.Action) -> Void = { _ in })
 ```
 
 #### Discussion

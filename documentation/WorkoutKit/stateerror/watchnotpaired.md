@@ -1,6 +1,6 @@
 # StateError.watchNotPaired
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: case
 
 The current device doesn’t have a paired Apple Watch.
@@ -10,6 +10,7 @@ The current device doesn’t have a paired Apple Watch.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

@@ -19,6 +19,10 @@ An object that splits up a single render pass so that it can be simultaneously e
 protocol MTLParallelRenderCommandEncoder : MTLCommandEncoder
 ```
 
+## Mentions
+
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+
 #### Overview
 
 Your app does not define classes that implement this protocol. To create a [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md) object, call the [`makeParallelRenderCommandEncoder(descriptor:)`](mtlcommandbuffer/makeparallelrendercommandencoder(descriptor:).md) method of the [`MTLCommandBuffer`](mtlcommandbuffer.md) object that you want to encode the rendering commands into. Then, call the renderCommandEncoder method on this [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md) object to create one or more [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) objects. The subordinate [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) objects created encode their commands to the same command buffer and target the same [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md) object. The [`MTLParallelRenderCommandEncoder`](mtlparallelrendercommandencoder.md) object ensures the attachment load and store actions only occur at the start and end of the entire rendering pass.

@@ -26,8 +26,6 @@ A reference URL is a human-readable document that describes a type. Most types d
 
 > ⚠️ **Warning**:  The system doesn’t validate the URL, nor does it guarantee its scheme or structure.
 
- The system doesn’t validate the URL, nor does it guarantee its scheme or structure.
-
 ## See Also
 
 - [var isDeclared: Bool](uttype-swift.struct/isdeclared.md)

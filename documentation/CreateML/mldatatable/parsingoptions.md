@@ -62,6 +62,7 @@ Use `ParsingOptions` only when importing a CSV file with [`init(contentsOf:optio
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

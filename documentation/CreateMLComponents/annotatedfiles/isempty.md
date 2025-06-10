@@ -1,6 +1,6 @@
 # isEmpty
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: property
 
 A Boolean value indicating whether the collection is empty.
@@ -39,4 +39,4 @@ if horseName.isEmpty {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/annotatedfiles/isempty)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/annotatedfiles/isempty)*

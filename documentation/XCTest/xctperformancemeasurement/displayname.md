@@ -1,6 +1,6 @@
 # displayName
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A human-readable name for a measurement.

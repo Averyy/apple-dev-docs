@@ -8,8 +8,6 @@ Store QuickTime-compressed still images.
 
 > ❗ **Important**: The QuickTime Image File Format is deprecated in the QuickTime file format. The information that follows documents existing content containing QuickTime image file media and should not be used for new development.
 
-The QuickTime Image File Format is deprecated in the QuickTime file format. The information that follows documents existing content containing QuickTime image file media and should not be used for new development.
-
 This section describes QuickTime image files, which provide a useful container for QuickTime-compressed still images.
 
 Most still image file formats define both how images should be stored and compressed. However, the QuickTime image file format is a container format, which describes a storage mechanism independent of compression. The QuickTime image file format uses the same atom-based structure as a QuickTime movie.

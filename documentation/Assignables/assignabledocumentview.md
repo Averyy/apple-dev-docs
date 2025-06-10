@@ -41,6 +41,7 @@ SwiftUI View to display an `AssignableDocument`.
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

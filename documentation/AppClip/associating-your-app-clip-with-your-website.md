@@ -1,21 +1,23 @@
 # Associating your App Clip with your website
 
-**Framework**: Appclip
+**Framework**: App Clips
 
-Enable the system to verify your App Clip to support invocations in iOS 16.3 or earlier and from your website.
+Enable the system to verify your App Clip to support invocations from your website and devices running iOS 16.3 or earlier.
 
 #### Overview
 
-An App Clip gives people quick access to a particular workflow in your app, even when a person hasn’t installed your app. NFC readers, App Clip Codes, or QR codes define an  that specifies which App Clip, or workflow within your full app, the system needs to run. Unless the invocation URL is a default App Clip link for your default App Clip experience, the system verifies the URL before it launches the App Clip using your associated website. It does this by checking that the App Clip includes the URL in its code signature, an [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains), which cites the invocation URL’s domain. The system also verifies that the server of the domain agrees to launch the App Clip, by citing the App Clip within an Apple App Site Association (AASA) file that it hosts.
+An App Clip gives people quick access to a particular workflow in your app, even when a person hasn’t installed your app. NFC readers, App Clip Codes, or QR codes define an  that specifies which App Clip, or workflow within your full app, the system needs to run. If you want to support invocations from your website or support iOS 16.3 and earlier, enable the system to verify your App Clip. The system’s verification checks that the App Clip includes the URL in its code signature as the [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains), which cites the invocation URL’s domain. The system also verifies that the server of the domain agrees to launch the App Clip, by citing the App Clip within an Apple App Site Association (AASA) file that it hosts.
 
 ![A diagram that depicts the steps in the App Clip validation process. A box on the left shows an icon of a device on which the App Clip invocation occurs, and the Associated Domains Entitlement for your App Clip. A box on the right shows the server of the domain that the entitlement specifies. A line connects the device and the server, and a checkmark indicates that the system approves the App Clip to run by verifying that the server hosts an Apple App Site Association file that specifies the App Clip.](https://docs-assets.developer.apple.com/published/986bd3bece5247c4bcc8b6e47b848d34/media-3706576%402x.png)
+
+> **Note**: If you don’t support iOS 16.3 and earlier, don’t plan to support all invocations, and don’t have a website to associate with your App Clip, you may be able to keep your invocations to the default URL that App Store Connect generates. For more information, refer to [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md).
 
 To associate your app and App Clip with your website:
 
 - Specify your invocation URL’s domain within an [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains) on both your app and App Clip targets in Xcode.
 - Add or modify an AASA file on the domain’s server.
 
-The system verifies that both the entitlement and the configuration in the AASA file match before it permits the invocation of the App Clip. App Store Connect also verifies the match when you create an App Clip experience; for more information, see [`Set up an App Clip experience`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev43c15c696).
+The system verifies that both the entitlement and the configuration in the AASA file match before it permits the invocation of the App Clip. App Store Connect also verifies the match when you create an App Clip experience; for more information, refer to  [`Set up an App Clip experience`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev43c15c696).
 
 > 💡 **Tip**:  You may already be familiar with the `Associated Domains Entitlement` if your app supports [`Handoff`](https://developer.apple.comhttps://developer.apple.com/handoff/) or [`universal links`](https://developer.apple.comhttps://developer.apple.com/ios/universal-links/). If you’re new to using this entitlement and universal links, read [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content) and [`Supporting universal links in your app`](https://developer.apple.com/documentation/Xcode/supporting-universal-links-in-your-app). For additional information about the `Associated Domains Entitlement` — including cache policies — read [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
 
@@ -25,7 +27,7 @@ To associate your App Clip with your website, you must add the [`Associated Doma
 
 First, open your project in Xcode; then, in your project settings, enable the Associated Domains capability to add the [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains).
 
-Second, for each URL that launches your App Clip or full app, add its domain to the Associated Domains capability using the pattern: `appclips:<fully qualified domain>`. For example, add `appclips:example.com` or `appclips:appclip.example.com`. Make sure to only include the desired subdomain and the top-level domain. Don’t include a trailing slash (`/`), wildcard (`*`), or path and query components in the URL. For more information, see [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
+Second, for each URL that launches your App Clip or full app, add its domain to the Associated Domains capability using the pattern: `appclips:<fully qualified domain>`. For example, add `appclips:example.com` or `appclips:appclip.example.com`. Make sure to only include the desired subdomain and the top-level domain. Don’t include a trailing slash (`/`), wildcard (`*`), or path and query components in the URL. For more information, refer to  [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
 
 ##### Make Changes to Your Server
 
@@ -44,7 +46,7 @@ The following code shows the content to add. Note how the value for the `apps` k
 } 
 ```
 
-> ❗ **Important**:  For apps that detect App Clip Codes in AR, add an entry for the parent app identifier. For more information, see [`Interacting with App Clip Codes in AR`](interacting-with-app-clip-codes-in-ar.md).
+> ❗ **Important**:  For apps that detect App Clip Codes in AR, add an entry for the parent app identifier. For more information, refer to  [`Interacting with App Clip Codes in AR`](interacting-with-app-clip-codes-in-ar.md).
 
 Then, add the AASA file to your website’s `.well-known` directory. If you previously added an AASA file to your server, add the entry for the `appclips` key to the existing file.
 
@@ -63,16 +65,14 @@ For example, you could configure the default App Clip experience to use `https:/
 
 The Cache Status column shows the validation status for your App Clip as the system performs the validation on people’s devices. As you develop your App Clip, you may make frequent changes to your AASA file. To check the verification status in real time, click Load Debug Status in the modal view that shows the verification status of your App Clip. If a configuration error occurs, App Store Connect shows information about the error in the Debug Status column.
 
-For more information, see [`WWDC20: What’s New in App Store Connect`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10651/).
+For more information, refer to [`WWDC20: What’s New in App Store Connect`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10651/).
 
 ## See Also
 
-- [Configuring the launch experience of your App Clip](configuring-the-launch-experience-of-your-app-clip.md)
-  Review how people launch your App Clip, identify invocation URLs, make use of default App Clip links, and configure experiences in App Store Connect.
-- [Supporting invocations from your website and the Messages app](supporting-invocations-from-your-website-and-the-messages-app.md)
-  Display a Smart App Banner and the App Clip card on your website that people tap to launch your App Clip, and add support for invocations from the Messages app.
 - [Responding to invocations](responding-to-invocations.md)
   Add code to respond to invocations and offer a focused launch experience.
+- [Supporting invocations from your website and the Messages app](supporting-invocations-from-your-website-and-the-messages-app.md)
+  Display a Smart App Banner and the App Clip card on your website that people tap to launch your App Clip, and add support for invocations from the Messages app.
 - [Confirming a person’s physical location](confirming-a-person-s-physical-location.md)
   Add code to quickly confirm a person’s physical location while respecting their privacy.
 - [Launching another app’s App Clip from your app](launching-another-app-s-app-clip-from-your-app.md)
@@ -85,4 +85,4 @@ For more information, see [`WWDC20: What’s New in App Store Connect`](https://
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/associating-your-app-clip-with-your-website)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appclip/associating-your-app-clip-with-your-website)*

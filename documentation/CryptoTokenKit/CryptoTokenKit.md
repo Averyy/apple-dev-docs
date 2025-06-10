@@ -1,6 +1,6 @@
 # CryptoTokenKit
 
-**Framework**: Cryptotokenkit  
+**Framework**: CryptoTokenKit  
 **Kind**: module
 
 Access security tokens and the cryptographic assets they store.
@@ -62,8 +62,17 @@ Starting in macOS 10.15.4, the CryptoTokenKit framework includes support for alw
   The domain for all CryptoTokenKit framework errors.
 - [TKError.Code](tkerror/code.md)
   Error codes from CryptoTokenKit.
+### Classes
+- [class TKSmartCardSlotNFCSession](tksmartcardslotnfcsession.md)
+  NFC session that’s related to NFC smart card slot which was created.
+- [class TKSmartCardTokenRegistrationManager](tksmartcardtokenregistrationmanager.md)
+  Provides a centralized management system for registering and unregistering smartcards using their token IDs.
 ### Type Aliases
+- [typealias IntermediateKeyAuthenticator](intermediatekeyauthenticator.md)
 - [typealias TKTokenObjectID](tktokenobjectid-8mo7f.md)
+### Enumerations
+- [enum IKeyAuthenticator](ikeyauthenticator.md)
+- [enum IKeyErrorCodes](ikeyerrorcodes.md)
 
 
 ---

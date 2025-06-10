@@ -26,8 +26,6 @@ As of macOS 10.6, the underlying implementation of this method has been changed 
 
 > ❗ **Important**:  You should not use this method. Instead, use [`init(name:)`](nstimezone/init(name:).md) to initialize a time zone object with a given name.
 
- You should not use this method. Instead, use [`init(name:)`](nstimezone/init(name:).md) to initialize a time zone object with a given name.
-
 ## Parameters
 
 - `tzName`: The identifier for the time zone. Providing   for this parameter raises an invalid argument exception.

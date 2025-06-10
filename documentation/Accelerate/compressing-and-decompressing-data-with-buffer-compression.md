@@ -6,7 +6,7 @@ Compress a string, write it to the file system, and decompress the same file usi
 
 #### Overview
 
-The code in this article uses the [`Compression`](https://developer.apple.com/documentation/Compression) framework to encode (compress) and decode (decompress) a string. The code writes the encoded result to the temporary directory that the [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/foundation/1409211-nstemporarydirectory) function returns.
+The code in this article uses the [`Compression`](https://developer.apple.com/documentation/Compression) framework to encode (compress) and decode (decompress) a string. The code writes the encoded result to the temporary directory that the [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/Foundation/NSTemporaryDirectory()) function returns.
 
 The code in this sample is useful in applications that store or transmit text files where saving or sending smaller files can improve performance and reduce storage overhead. This sample app implements , where it reads the contents of a source buffer in a single step to compress or decompress data.
 
@@ -152,8 +152,8 @@ The [`compression_decode_buffer(_:_:_:_:_:_:)`](https://developer.apple.com/docu
 
 ## See Also
 
-- [Compressing and Decompressing Files with Stream Compression](compressing-and-decompressing-files-with-stream-compression.md)
-  Perform compression or the appropriate kind of decompression to a file based on its path extension.
+- [Compressing and decompressing files with stream compression](compressing-and-decompressing-files-with-stream-compression.md)
+  Perform compression for all files and decompression for files with supported extension types.
 - [Compressing and decompressing data with input and output filters](compressing-and-decompressing-data-with-input-and-output-filters.md)
   Compress and decompress streamed or from-memory data, using input and output filters.
 

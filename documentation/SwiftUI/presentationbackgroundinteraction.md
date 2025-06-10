@@ -40,6 +40,7 @@ Use values of this type with the [`presentationBackgroundInteraction(_:)`](view/
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

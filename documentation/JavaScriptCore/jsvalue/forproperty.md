@@ -16,7 +16,7 @@ Returns the value of the named property in the JavaScript object value.
 ## Declaration
 
 ```swift
-func forProperty(_ property: Any!) -> JSValue!
+func forProperty(_ property: String!) -> JSValue!
 ```
 
 #### Return Value

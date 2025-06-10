@@ -1,6 +1,6 @@
 # UISceneSessionRoleImmersiveSpaceApplication
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: dictionary
 
 Configurations for scenes you use to display SwiftUI content in an immersive space.

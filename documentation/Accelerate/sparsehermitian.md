@@ -24,6 +24,17 @@ var SparseHermitian: SparseKind_t { get }
 
 A `SparseMatrixStructure` object can represent several types of matrices:
 
+## See Also
+
+- [var SparseOrdinary: SparseKind_t](sparseordinary.md)
+  An unsymmetric sparse matrix without special structure.
+- [var SparseSymmetric: SparseKind_t](sparsesymmetric.md)
+  A symmetric sparse matrix.
+- [var SparseTriangular: SparseKind_t](sparsetriangular.md)
+  A triangular sparse matrix with a nonunit diagonal.
+- [var SparseUnitTriangular: SparseKind_t](sparseunittriangular.md)
+  A triangular sparse matrix with a unit diagonal.
+
 
 ---
 

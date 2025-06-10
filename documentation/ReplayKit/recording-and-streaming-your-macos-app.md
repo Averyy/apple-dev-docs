@@ -1,6 +1,6 @@
 # Recording and Streaming Your macOS App
 
-**Framework**: Replaykit
+**Framework**: ReplayKit
 
 Share screen recordings, or broadcast live audio and video of your app, by adding ReplayKit to your macOS apps and games.
 
@@ -22,4 +22,4 @@ Share screen recordings, or broadcast live audio and video of your app, by addin
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ReplayKit/recording-and-streaming-your-macos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/replaykit/recording-and-streaming-your-macos-app)*

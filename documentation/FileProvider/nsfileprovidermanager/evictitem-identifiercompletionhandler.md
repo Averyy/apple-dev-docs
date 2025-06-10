@@ -23,21 +23,13 @@ func evictItem(identifier itemIdentifier: NSFileProviderItemIdentifier) async th
 func evictItem(identifier itemIdentifier: NSFileProviderItemIdentifier) async throws
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func evictItem(identifier itemIdentifier: NSFileProviderItemIdentifier) async throws
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 Calling this method turns a materialized item into a dataless item to free up disk space. For more information on materialized and dataless items, see [`Synchronizing the File Provider Extension`](synchronizing-the-file-provider-extension.md).
 
-If the item is a document without local changes, this method deletes the local copy of the item’s content. If the item has local changes, it fails with an [`NSFileWriteNoPermissionError`](https://developer.apple.com/documentation/foundation/nsfilewritenopermissionerror) error.
+If the item is a document without local changes, this method deletes the local copy of the item’s content. If the item has local changes, it fails with an [`NSFileWriteNoPermissionError`](https://developer.apple.com/documentation/Foundation/NSFileWriteNoPermissionError-swift.var) error.
 
 When called on a directory, the system recursively evicts the directory’s content. It deletes the content of any materialized files, and recursively evicts any subdirectories. After it has successfully evicted all the content, it deletes its list of the directory’s content, making the directory dataless. The next time the system accesses the directory, it requests a list of the contents using the [`NSFileProviderEnumerating`](nsfileproviderenumerating.md) protocol.
 
-If the system encounters a nonevictable child, eviction stops immediately, and the system calls the completion handler with a [`NSFileProviderError.Code.nonEvictableChildren`](nsfileprovidererror/code/nonevictablechildren.md) error. The error includes information about the nonevictable child in its [`underlyingErrors`](https://developer.apple.com/documentation/foundation/nserror/3738169-underlyingerrors) property. The system may have evicted other materialized items, based on the traversal order.
+If the system encounters a nonevictable child, eviction stops immediately, and the system calls the completion handler with a [`NSFileProviderError.Code.nonEvictableChildren`](nsfileprovidererror/code/nonevictablechildren.md) error. The error includes information about the nonevictable child in its [`underlyingErrors`](https://developer.apple.com/documentation/Foundation/NSError/underlyingErrors) property. The system may have evicted other materialized items, based on the traversal order.
 
 The system calls the completion handler after it successfully evicts all items, or immediately when an error occurs. Eviction might fail with the following errors:
 

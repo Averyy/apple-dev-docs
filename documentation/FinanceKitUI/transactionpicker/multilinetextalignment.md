@@ -1,6 +1,6 @@
 # multilineTextAlignment(_:)
 
-**Framework**: Financekitui  
+**Framework**: FinanceKitUI  
 **Kind**: method
 
 Sets the alignment of a text view that contains multiple lines of text.

@@ -1,6 +1,6 @@
 # init(node:forRecordTypes:attribute:matchType:queryValues:returnAttributes:maximumResults:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: init
 
 Creates a query object with provided parameters.

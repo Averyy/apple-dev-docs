@@ -1,6 +1,6 @@
 # Drawing content in a group session
 
-**Framework**: Groupactivities
+**Framework**: Group Activities
 
 Invite your friends to draw on a shared canvas while on a FaceTime call.
 

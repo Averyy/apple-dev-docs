@@ -22,7 +22,9 @@ An [`MLJob`](mljob.md) that represents the object-detector training session.
 
 Use this method to start or resume a training session you get from [`makeTrainingSession(trainingData:annotationType:parameters:sessionParameters:)`](mlobjectdetector/maketrainingsession(trainingdata:annotationtype:parameters:sessionparameters:).md) or [`restoreTrainingSession(sessionParameters:)`](mlobjectdetector/restoretrainingsession(sessionparameters:).md).
 
-- session: An [`MLTrainingSession`](mltrainingsession.md) instance that represents the training session.
+## Parameters
+
+- `session`: An   instance that represents the training session.
 
 ## See Also
 

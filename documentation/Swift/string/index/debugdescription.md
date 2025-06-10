@@ -24,8 +24,6 @@ var debugDescription: String { get }
 
 > ❗ **Important**: The contents of the returned string are not guaranteed to remain stable: they may arbitrarily change in any Swift release.
 
-The contents of the returned string are not guaranteed to remain stable: they may arbitrarily change in any Swift release.
-
 
 ---
 

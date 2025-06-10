@@ -23,7 +23,7 @@ class MTRBaseClusterBooleanStateConfiguration
 ### Initializers
 - [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclusterbooleanstateconfiguration/init(device:endpointid:queue:).md)
 ### Instance Methods
-- [func enableDisableAlarm(with: MTRBooleanStateConfigurationClusterEnableDisableAlarmParams, completion: MTRStatusCompletion)](mtrbaseclusterbooleanstateconfiguration/enabledisablealarm(with:completion:).md)
+- [func enableDisableAlarm(with: MTRBooleanStateConfigurationClusterEnableDisableAlarmParams, completion: ((any Error)?) -> Void)](mtrbaseclusterbooleanstateconfiguration/enabledisablealarm(with:completion:).md)
 - [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterbooleanstateconfiguration/readattributeacceptedcommandlist(completion:).md)
 - [func readAttributeAlarmsActive(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbooleanstateconfiguration/readattributealarmsactive(completion:).md)
 - [func readAttributeAlarmsEnabled(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbooleanstateconfiguration/readattributealarmsenabled(completion:).md)
@@ -50,9 +50,9 @@ class MTRBaseClusterBooleanStateConfiguration
 - [func subscribeAttributeGeneratedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterbooleanstateconfiguration/subscribeattributegeneratedcommandlist(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeSensorFault(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbooleanstateconfiguration/subscribeattributesensorfault(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeSupportedSensitivityLevels(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbooleanstateconfiguration/subscribeattributesupportedsensitivitylevels(with:subscriptionestablished:reporthandler:).md)
-- [func suppressAlarm(with: MTRBooleanStateConfigurationClusterSuppressAlarmParams, completion: MTRStatusCompletion)](mtrbaseclusterbooleanstateconfiguration/suppressalarm(with:completion:).md)
-- [func writeAttributeCurrentSensitivityLevel(withValue: NSNumber, completion: MTRStatusCompletion)](mtrbaseclusterbooleanstateconfiguration/writeattributecurrentsensitivitylevel(withvalue:completion:).md)
-- [func writeAttributeCurrentSensitivityLevel(withValue: NSNumber, params: MTRWriteParams?, completion: MTRStatusCompletion)](mtrbaseclusterbooleanstateconfiguration/writeattributecurrentsensitivitylevel(withvalue:params:completion:).md)
+- [func suppressAlarm(with: MTRBooleanStateConfigurationClusterSuppressAlarmParams, completion: ((any Error)?) -> Void)](mtrbaseclusterbooleanstateconfiguration/suppressalarm(with:completion:).md)
+- [func writeAttributeCurrentSensitivityLevel(withValue: NSNumber, completion: ((any Error)?) -> Void)](mtrbaseclusterbooleanstateconfiguration/writeattributecurrentsensitivitylevel(withvalue:completion:).md)
+- [func writeAttributeCurrentSensitivityLevel(withValue: NSNumber, params: MTRWriteParams?, completion: ((any Error)?) -> Void)](mtrbaseclusterbooleanstateconfiguration/writeattributecurrentsensitivitylevel(withvalue:params:completion:).md)
 ### Type Methods
 - [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterbooleanstateconfiguration/readattributeacceptedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
 - [class func readAttributeAlarmsActive(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbooleanstateconfiguration/readattributealarmsactive(withclusterstatecache:endpoint:queue:completion:).md)

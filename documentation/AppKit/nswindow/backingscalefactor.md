@@ -1,6 +1,6 @@
 # backingScaleFactor
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The backing scale factor.
@@ -49,4 +49,4 @@ It is important to note that the value of this property does not represent anyth
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nswindow/backingscalefactor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nswindow/backingscalefactor)*

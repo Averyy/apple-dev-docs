@@ -194,4 +194,4 @@ When defining your own `AtomicRepresentable` conformance, it is critical that yo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Synchronization/atomicrepresentable)*
+*[View on Apple Developer](https://developer.apple.com/documentation/synchronization/atomicrepresentable)*

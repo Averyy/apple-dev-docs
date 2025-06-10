@@ -30,6 +30,8 @@ Display meshes in your scene by creating a [`ModelComponent`](modelcomponent.md)
   A component that provides the suggested pixels per meter necessary to render an object.
 - [struct ModelDebugOptionsComponent](modeldebugoptionscomponent.md)
   A component that changes how RealityKit renders its entity to help with debugging.
+- [struct MeshInstancesComponent](meshinstancescomponent.md)
+  A component that performs GPU instancing on the ModelComponent on the same Entity.
 ### Static meshes
 - [struct MeshDescriptor](meshdescriptor.md)
   Defines a 3D mesh’s structure and data.
@@ -55,27 +57,13 @@ Display meshes in your scene by creating a [`ModelComponent`](modelcomponent.md)
   Designates the intended usage of a vertex attribute.
 - [LowLevelMesh.PartsCollection](lowlevelmesh/partscollection.md)
   An object that holds a mutable collection low-level mesh parts.
+- [class LowLevelBuffer](lowlevelbuffer.md)
+- [class LowLevelInstanceData](lowlevelinstancedata.md)
 ### Bounding box retrieval
 - [struct BoundingBox](boundingbox.md)
   An axis-aligned bounding box (AABB).
 - [struct OrientedBoundingBox](orientedboundingbox.md)
   Representation for an oriented bounding box. Uses a combination of an axis-aligned bounding box and a rotation vector around the centroid of the said axis-aligned bounding box to represent an oriented bounding box.
-### Text generation options
-- [MeshResource.GenerateTextOptions](meshresource/generatetextoptions.md)
-  A type that determines the configuration for rendering text in 2D, before it is extruded.
-- [MeshResource.Font](meshresource/font.md)
-  A platform-specific type that represents a font for use in generating a text mesh.
-### 2D path extrusion for 3D mesh creation
-- [MeshResource.ShapeExtrusionOptions](meshresource/shapeextrusionoptions.md)
-  A type that determines the extrusion, chamfering, and material assignment of an extruded shape.
-- [MeshResource.ShapeExtrusionOptions.MaterialAssignment](meshresource/shapeextrusionoptions/materialassignment-swift.struct.md)
-  A type that determines the material assignments for each part of an extruded shape.
-- [MeshResource.ShapeExtrusionOptions.ChamferMode](meshresource/shapeextrusionoptions/chamfermode-swift.enum.md)
-  Determines which part of the extrusion to chamfer.
-- [MeshResource.ShapeExtrusionOptions.CurveStrokeResolution](meshresource/shapeextrusionoptions/curvestrokeresolution.md)
-  Designates the resolution at which a smooth curve is discretized.
-- [MeshResource.ShapeExtrusionOptions.ExtrusionMethod](meshresource/shapeextrusionoptions/extrusionmethod-swift.enum.md)
-  The options that determine the way in which to extrude a swept shape in 3D.
 ### Mesh description
 - [struct MeshBuffer](meshbuffer.md)
   Mesh buffer containing elements of any type.
@@ -94,27 +82,10 @@ Display meshes in your scene by creating a [`ModelComponent`](modelcomponent.md)
 - [struct MeshPartCollection](meshpartcollection.md)
   An object that holds a collection of mesh parts.
 ### Mesh skeletons
-- [MeshResource.Skeleton](meshresource/skeleton.md)
-  A skeleton consists of a hierarchy of joints. Each joint defines a coordinate space. Portions of a model may be thought of as having a position in a joint’s local space.
-- [MeshResource.Skeleton.Joint](meshresource/skeleton/joint.md)
-  A named joint in a [`MeshResource.Skeleton`](meshresource/skeleton.md).
-- [MeshResource.Skeleton.ID](meshresource/skeleton/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 - [struct MeshSkeletonCollection](meshskeletoncollection.md)
   An object that holds a collection of skeletons used by a mesh resource.
 - [struct MeshJointInfluence](meshjointinfluence.md)
   A binding to a joint, which consists of the joint’s index and the weight of that joint’s influence on a vertex.
-- [MeshResource.JointInfluences](meshresource/jointinfluences.md)
-  A buffer of vertex-joint influences which bind the mesh part’s vertices to a skeleton via a skinning deformation.
-### Mesh resource data
-- [MeshResource.Contents](meshresource/contents-swift.struct.md)
-  Value of the contents of the resource.
-- [MeshResource.Instance](meshresource/instance.md)
-  An object that transforms a model to a location.
-- [MeshResource.Model](meshresource/model.md)
-  A model consists of a list of parts.
-- [MeshResource.Part](meshresource/part.md)
-  A part of a model consisting of a single material.
 ### Blend shape management
 - [struct BlendShapeWeightsComponent](blendshapeweightscomponent.md)
   A component that provides access to the current weights associated with all blend shape meshes on an entity.
@@ -144,6 +115,8 @@ Display meshes in your scene by creating a [`ModelComponent`](modelcomponent.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
+- [Presenting images in RealityKit](presenting-images-in-realitykit.md)
+  Create and display spatial scenes in RealityKit.
 - [Materials, textures, and shaders](scene-content-materials-and-shaders.md)
   Apply textures to the surface of your scene’s 3D objects to give each object a unique appearance.
 - [Anchors](scene-content-anchors.md)

@@ -8,6 +8,7 @@ Source video track IDs required to implement the video composition instruction p
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
 

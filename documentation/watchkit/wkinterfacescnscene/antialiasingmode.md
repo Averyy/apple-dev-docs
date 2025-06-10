@@ -1,6 +1,6 @@
 # antialiasingMode
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The antialiasing mode used for rendering the scene.

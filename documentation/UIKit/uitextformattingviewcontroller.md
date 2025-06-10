@@ -6,6 +6,7 @@
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -78,6 +79,7 @@ class UITextFormattingViewController
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)

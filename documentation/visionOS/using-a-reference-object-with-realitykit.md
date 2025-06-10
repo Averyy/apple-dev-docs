@@ -1,6 +1,6 @@
 # Using a reference object with RealityKit
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Import a reference object file to track a real-world object in your visionOS app.
 
@@ -185,4 +185,4 @@ modelEntity.components.set(HoverEffectComponent())
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/using-a-reference-object-with-realitykit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/using-a-reference-object-with-realitykit)*

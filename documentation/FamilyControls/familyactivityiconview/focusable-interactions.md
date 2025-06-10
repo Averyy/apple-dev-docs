@@ -1,6 +1,6 @@
 # focusable(_:interactions:)
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Specifies if the view is focusable, and if so, what focus-driven interactions it supports.

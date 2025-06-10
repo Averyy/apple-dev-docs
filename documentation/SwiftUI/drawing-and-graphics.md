@@ -53,6 +53,8 @@ For design guidance, see [`Materials`](https://developer.apple.com/design/Human-
   A color gradient.
 - [struct ShadowStyle](shadowstyle.md)
   A style to use when rendering shadows.
+- [struct Glass](glass.md)
+  A structure that defines the configuration of the Liquid Glass material.
 ### Transforming colors
 - [func brightness(Double) -> some View](view/brightness(_:).md)
   Brightens this view by the specified amount.
@@ -86,7 +88,7 @@ For design guidance, see [`Materials`](https://developer.apple.com/design/Human-
 - [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](view/scaleeffect(x:y:anchor:).md)
   Scales this view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](view/scaleeffect(x:y:z:anchor:).md)
-  Scales this view by the specified horizontal, vertical, and depth factors.
+  Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
 - [func aspectRatio(_:contentMode:)](view/aspectratio(_:contentmode:).md)
   Constrains this view’s dimensions to the specified aspect ratio.
 - [func rotationEffect(Angle, anchor: UnitPoint) -> some View](view/rotationeffect(_:anchor:).md)
@@ -102,7 +104,7 @@ For design guidance, see [`Materials`](https://developer.apple.com/design/Human-
 - [func transformEffect(CGAffineTransform) -> some View](view/transformeffect(_:).md)
   Applies an affine transformation to this view’s rendered output.
 - [func transform3DEffect(AffineTransform3D) -> some View](view/transform3deffect(_:).md)
-  Applies a 3D transformation to the receiver.
+  Applies a 3D transformation to this view’s rendered output.
 - [func projectionEffect(ProjectionTransform) -> some View](view/projectioneffect(_:).md)
   Applies a projection transformation to this view’s rendered output.
 - [struct ProjectionTransform](projectiontransform.md)
@@ -142,6 +144,9 @@ For design guidance, see [`Materials`](https://developer.apple.com/design/Human-
   Modes for compositing a view with overlapping content.
 - [enum ColorRenderingMode](colorrenderingmode.md)
   The set of possible working color spaces for color-compositing operations.
+- [protocol CompositorContent](compositorcontent.md)
+- [struct CompositorContentBuilder](compositorcontentbuilder.md)
+  A result builder for composing a collection of [`CompositorContent`](compositorcontent.md) elements.
 ### Measuring a view
 - [struct GeometryReader](geometryreader.md)
   A container view that defines its content as a function of its own size and coordinate space.
@@ -188,6 +193,11 @@ For design guidance, see [`Materials`](https://developer.apple.com/design/Human-
   A normalized 3D point in a view’s coordinate space.
 - [struct Anchor](anchor.md)
   An opaque value derived from an anchor source and a particular view.
+- [protocol DepthAlignmentID](depthalignmentid.md)
+- [struct Alignment3D](alignment3d.md)
+  An alignment in all three axes.
+- [struct GeometryProxyCoordinateSpace3D](geometryproxycoordinatespace3d.md)
+  A representation of a `GeometryProxy3D` which can be used for `CoordinateSpace3D` based conversions.
 
 ## See Also
 

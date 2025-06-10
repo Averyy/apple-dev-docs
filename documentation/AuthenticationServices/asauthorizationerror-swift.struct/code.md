@@ -40,8 +40,12 @@ enum Code
 - [ASAuthorizationError.Code.credentialImport](asauthorizationerror-swift.struct/code/credentialimport.md)
   The credential import request failed.
 ### Enumeration Cases
+- [ASAuthorizationError.Code.deviceNotConfiguredForPasskeyCreation](asauthorizationerror-swift.struct/code/devicenotconfiguredforpasskeycreation.md)
+  This error signals that the device is not currently set up to create passkeys.
 - [ASAuthorizationError.Code.matchedExcludedCredential](asauthorizationerror-swift.struct/code/matchedexcludedcredential.md)
   This error should only be returned when specifying @c excludedCredentials on a public key credential registration request.
+- [ASAuthorizationError.Code.preferSignInWithApple](asauthorizationerror-swift.struct/code/prefersigninwithapple.md)
+  This error signals the user has an existing Sign in with Apple account that they would prefer to use instead of continuing the current request.
 ### Initializers
 - [init?(rawValue: Int)](asauthorizationerror-swift.struct/code/init(rawvalue:).md)
 
@@ -53,6 +57,7 @@ enum Code
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

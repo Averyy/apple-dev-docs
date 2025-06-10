@@ -1,6 +1,6 @@
 # XCTestScopeSelf
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: var
 
 **Availability**:

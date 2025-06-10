@@ -1,6 +1,6 @@
 # categoryIdentifier
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The identifier of the notification’s category.

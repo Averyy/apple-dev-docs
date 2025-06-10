@@ -9,7 +9,7 @@ Container type used for storing and retrieving app specific information that can
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # WebMenuItemTagOpenLinkInNewWindow
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Open the link in a new window.

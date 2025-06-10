@@ -1,6 +1,6 @@
 # saturation(_:)
 
-**Framework**: Financekitui  
+**Framework**: FinanceKitUI  
 **Kind**: method
 
 Adjusts the color saturation of this view.

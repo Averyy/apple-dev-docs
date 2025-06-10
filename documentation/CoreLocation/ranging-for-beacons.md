@@ -1,6 +1,6 @@
 # Ranging for Beacons
 
-**Framework**: Corelocation
+**Framework**: Core Location
 
 Configure a device to act as a beacon and to detect surrounding beacons.
 
@@ -85,4 +85,4 @@ While one or more beacons are in range, the `locationManager(_ manager: CLLocati
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/ranging-for-beacons)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/ranging-for-beacons)*

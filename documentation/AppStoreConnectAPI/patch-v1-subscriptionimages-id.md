@@ -16,6 +16,7 @@ Read details about a specific subscription image.
   Read details about a specific subscription image.
 - [List subscription images](get-v1-subscriptions-_id_-images.md)
   List all images for a specific subscription.
+- [GET /v1/subscriptions/{id}/relationships/images](get-v1-subscriptions-_id_-relationships-images.md)
 - [Delete an subscription image](delete-v1-subscriptionimages-_id_.md)
   Delete the image asset that appears on the App Store listing that represents an subscription.
 

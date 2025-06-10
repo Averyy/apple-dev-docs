@@ -1,6 +1,6 @@
 # xpc_session_t
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: typealias
 
 A C type that sends messages to a server process.

@@ -1,6 +1,6 @@
 # Creating views for widgets, Live Activities, and watch complications
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Implement glanceable views with WidgetKit and SwiftUI.
 
@@ -31,7 +31,7 @@ Widgets and watch complications offer limited space for content — especially o
 
 watchOS 9, iOS 16, iPadOS 16, macOS 13, and earlier use system-defined safe areas to keep content from getting too close to the edge of the widget, complication, or Live Activity. You likely don’t change the safe areas that the system defines. However, you might use the [`ignoresSafeArea(_:edges:)`](https://developer.apple.com/documentation/SwiftUI/View/ignoresSafeArea(_:edges:)) view modifier to extend content farther than the safe area.
 
-Starting with watchOS 10, iOS 17, iPadOS 17, and macOS 14, widgets, WidgetKit complications, and Live Activities use content margins instead of safe areas. As a result, `ignoresSafeArea(_:edges:)` has no effect. Instead, you need to use the [`contentMarginsDisabled()`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/contentMarginsDisabled()) view modifier to define custom content margins.
+WidgetKit complications, and Live Activities use content margins instead of safe areas. As a result, `ignoresSafeArea(_:edges:)` has no effect. Instead, use the [`contentMarginsDisabled()`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/contentMarginsDisabled()) view modifier to define custom content margins.
 
 If you use `ignoresSafeArea(_:edges:)`, follow these steps:
 
@@ -44,10 +44,20 @@ If you use `ignoresSafeArea(_:edges:)`, follow these steps:
 
 - [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
   Create widgets that support additional platforms and adapt to their context.
+- [Displaying the right widget background](displaying-the-right-widget-background.md)
+  Group your widget’s background views and mark them as removable to ensure your widget appears correctly for each context and platform.
+- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
+  Make your widget feel at home on Apple platforms and Liquid Glass by using accented rendering mode.
+- [Adding StandBy and CarPlay support to your widget](adding-standby-and-carplay-support-to-your-widget.md)
+  Ensure that your small system family widget works well in StandBy and CarPlay.
 - [SwiftUI views for widgets](swiftui-views.md)
   Present your app’s content in widgets with SwiftUI views.
 - [Introducing SwiftUI](https://developer.apple.com/tutorials/SwiftUI)
   SwiftUI is a modern way to declare user interfaces for any Apple platform. Create beautiful, dynamic apps faster than ever before.
+- [struct WidgetRenderingMode](widgetrenderingmode.md)
+  Constants that indicate the rendering mode for a widget.
+- [struct WidgetAccentedRenderingMode](widgetaccentedrenderingmode.md)
+  Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](widgetrenderingmode/accented.md) mode.
 - [struct AccessoryWidgetBackground](accessorywidgetbackground.md)
   An adaptive background view that provides a standard appearance based on the the widget’s environment.
 - [struct WidgetLocation](widgetlocation.md)
@@ -56,4 +66,4 @@ If you use `ignoresSafeArea(_:edges:)`, follow these steps:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/creating-views-for-widgets-live-activities-and-watch-complications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/creating-views-for-widgets-live-activities-and-watch-complications)*

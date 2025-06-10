@@ -1,6 +1,6 @@
 # UNAuthorizationStatus
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: enum
 
 Constants indicating whether the app is allowed to schedule notifications.
@@ -44,6 +44,7 @@ enum UNAuthorizationStatus
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

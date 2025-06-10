@@ -19,6 +19,10 @@ Options that modify a store action.
 struct MTLStoreActionOptions
 ```
 
+## Mentions
+
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+
 #### Overview
 
 This property modifies the intended behavior of the store actions in the [`MTLStoreAction`](mtlstoreaction.md) enumeration.
@@ -43,6 +47,7 @@ This property modifies the intended behavior of the store actions in the [`MTLSt
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

@@ -6,6 +6,7 @@
 Queries the predicted pose of the current device at a given time.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

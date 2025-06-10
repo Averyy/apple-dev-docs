@@ -1,6 +1,6 @@
 # removeAllItems()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Removes all items from the queue.

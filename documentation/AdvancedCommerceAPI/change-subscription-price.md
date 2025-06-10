@@ -31,8 +31,6 @@ Determine whether you need to communicate a price change to the customer, as fol
 
 > ❗ **Important**: You need to communicate price increases to your customer, including through email, in-app messaging, and push notifications. To determine whether you need price consent and for information about customer communications and their timing, see [`Handling subscription price changes`](handling-subscription-price-changes.md).
 
-You need to communicate price increases to your customer, including through email, in-app messaging, and push notifications. To determine whether you need price consent and for information about customer communications and their timing, see [`Handling subscription price changes`](handling-subscription-price-changes.md).
-
 ##### Increase Price of a Sku
 
 If you’re increasing the price of any SKU associated with a subscription (such as the subscription itself, a bundle, or an individual item), follow these steps:

@@ -1,6 +1,6 @@
 # UNLocationNotificationTrigger
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 A trigger condition that causes the system to deliver a notification when the user’s device enters or exits a geographic region you specify.
@@ -21,8 +21,6 @@ class UNLocationNotificationTrigger
 Create a [`UNLocationNotificationTrigger`](unlocationnotificationtrigger.md) object when you want to schedule the delivery of a local notification when the device enters or leaves a specific geographic region. The system limits the number of location-based triggers that it schedules at the same time.
 
 > ❗ **Important**:  Before scheduling any notifications using this trigger, your app must have authorization to use Core Location and must have when-in-use permissions. (Because the system actually monitors the regions, you don’t need to request always permissions for your app). For information about how to request authorization, see [`Requesting authorization to use location services`](https://developer.apple.com/documentation/CoreLocation/requesting-authorization-to-use-location-services).
-
- Before scheduling any notifications using this trigger, your app must have authorization to use Core Location and must have when-in-use permissions. (Because the system actually monitors the regions, you don’t need to request always permissions for your app). For information about how to request authorization, see [`Requesting authorization to use location services`](https://developer.apple.com/documentation/CoreLocation/requesting-authorization-to-use-location-services).
 
 When configuring the region, use the [`notifyOnEntry`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnEntry) and [`notifyOnExit`](https://developer.apple.com/documentation/CoreLocation/CLRegion/notifyOnExit) properties to specify whether you want the system to deliver notifications on entry, on exit, or both. Listing 1 shows the creation of a trigger that fires only once when the user’s device enters a circular region with a 2-kilometer radius.
 

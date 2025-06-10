@@ -32,6 +32,8 @@ To prevent the pointer from triggering system gestures, for example, bringing up
   A notification that posts when the value of the locked state for a scene changes.
 - [class let sceneUserInfoKey: String](uipointerlockstate/sceneuserinfokey.md)
   A key that reflects the new locked state.
+### Structures
+- [UIPointerLockState.DidChangeMessage](uipointerlockstate/didchangemessage.md)
 
 ## Relationships
 

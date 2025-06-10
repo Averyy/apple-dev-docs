@@ -1,0 +1,57 @@
+# BluetoothLESecurityManagerCommandCode
+
+**Framework**: Kernel  
+**Kind**: tdef
+
+**Availability**:
+- macOS 10.7+
+
+## Declaration
+
+```swift
+typedef enum BluetoothLESecurityManagerCommandCode BluetoothLESecurityManagerCommandCode;
+```
+
+## Topics
+
+### Constants
+- [kBluetoothLESecurityManagerCommandCodeEncryptionInfo](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodeencryptioninfo.md)
+- [kBluetoothLESecurityManagerCommandCodeIdentityAddressInfo](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodeidentityaddressinfo.md)
+- [kBluetoothLESecurityManagerCommandCodeIdentityInfo](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodeidentityinfo.md)
+- [kBluetoothLESecurityManagerCommandCodeMasterIdentification](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodemasteridentification.md)
+- [kBluetoothLESecurityManagerCommandCodePairingConfirm](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodepairingconfirm.md)
+- [kBluetoothLESecurityManagerCommandCodePairingDHKeyCheck](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodepairingdhkeycheck.md)
+- [kBluetoothLESecurityManagerCommandCodePairingFailed](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodepairingfailed.md)
+- [kBluetoothLESecurityManagerCommandCodePairingKeypressNotification](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodepairingkeypressnotification.md)
+- [kBluetoothLESecurityManagerCommandCodePairingPublicKey](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodepairingpublickey.md)
+- [kBluetoothLESecurityManagerCommandCodePairingRandom](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodepairingrandom.md)
+- [kBluetoothLESecurityManagerCommandCodePairingRequest](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodepairingrequest.md)
+- [kBluetoothLESecurityManagerCommandCodePairingResponse](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodepairingresponse.md)
+- [kBluetoothLESecurityManagerCommandCodeReserved](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodereserved.md)
+- [kBluetoothLESecurityManagerCommandCodeReservedEnd](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodereservedend.md)
+- [kBluetoothLESecurityManagerCommandCodeReservedStart](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodereservedstart.md)
+- [kBluetoothLESecurityManagerCommandCodeSecurityRequest](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodesecurityrequest.md)
+- [kBluetoothLESecurityManagerCommandCodeSigningInfo](bluetoothlesecuritymanagercommandcode/kbluetoothlesecuritymanagercommandcodesigninginfo.md)
+
+## See Also
+
+- [BluetoothLEAddressType](bluetoothleaddresstype.md)
+- [BluetoothLEAdvertisingType](bluetoothleadvertisingtype.md)
+- [BluetoothLEConnectionInterval](bluetoothleconnectioninterval.md)
+- [BluetoothLEFeatureBits](bluetoothlefeaturebits.md)
+- [BluetoothLEScan](bluetoothlescan.md)
+- [BluetoothLEScanDuplicateFilter](bluetoothlescanduplicatefilter.md)
+- [BluetoothLEScanFilter](bluetoothlescanfilter.md)
+- [BluetoothLEScanType](bluetoothlescantype.md)
+- [BluetoothLESecurityManagerIOCapability](bluetoothlesecuritymanageriocapability.md)
+- [BluetoothLESecurityManagerKeyDistributionFormat](bluetoothlesecuritymanagerkeydistributionformat.md)
+- [BluetoothLESecurityManagerKeypressNotificationType](bluetoothlesecuritymanagerkeypressnotificationtype.md)
+- [BluetoothLESecurityManagerOOBData](bluetoothlesecuritymanageroobdata.md)
+- [BluetoothLESecurityManagerPairingFailedReasonCode](bluetoothlesecuritymanagerpairingfailedreasoncode.md)
+- [BluetoothLESecurityManagerUserInputCapability](bluetoothlesecuritymanageruserinputcapability.md)
+- [BluetoothLESecurityManagerUserOutputCapability](bluetoothlesecuritymanageruseroutputcapability.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/bluetoothlesecuritymanagercommandcode)*

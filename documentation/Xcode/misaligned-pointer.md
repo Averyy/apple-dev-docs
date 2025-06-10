@@ -92,4 +92,4 @@ struct A { ... } __attribute__((packed));
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/misaligned-pointer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/misaligned-pointer)*

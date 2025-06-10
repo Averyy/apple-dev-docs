@@ -29,9 +29,9 @@ You can configure your notification observers either before or after calling thi
 
 - [func unregisterForLocalNotifications()](eaaccessorymanager/unregisterforlocalnotifications.md)
   Stops the delivery of accessory-related notifications to the current application.
-- [static let EAAccessoryDidConnect: NSNotification.Name](../foundation/nsnotification/name/1613827-eaaccessorydidconnect.md)
+- [static let EAAccessoryDidConnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/EAAccessoryDidConnect.md)
   A notification that the system sends when an accessory becomes connected and available for your application to use.
-- [static let EAAccessoryDidDisconnect: NSNotification.Name](../foundation/nsnotification/name/1613901-eaaccessorydiddisconnect.md)
+- [static let EAAccessoryDidDisconnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/EAAccessoryDidDisconnect.md)
   A notification that is posted when an accessory is disconnected and no longer available for your application to use.
 - [let EAAccessoryKey: String](eaaccessorykey.md)
   A key that indicates the accessory object whose status changed.

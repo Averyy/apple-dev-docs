@@ -1,6 +1,6 @@
 # SVG_MARKERUNITS_STROKEWIDTH
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

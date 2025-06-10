@@ -26,7 +26,7 @@ func addAction(_ action: HMAction) async throws
 
 - [var actions: Set<HMAction>](hmactionset/actions.md)
   Set of actions in the action set.
-- [func removeAction(HMAction, completionHandler: HMErrorBlock)](hmactionset/removeaction(_:completionhandler:).md)
+- [func removeAction(HMAction, completionHandler: ((any Error)?) -> Void)](hmactionset/removeaction(_:completionhandler:).md)
   Removes an action from the action set.
 - [class HMCharacteristicWriteAction](hmcharacteristicwriteaction.md)
   An action in an action set that writes a value to a characteristic.

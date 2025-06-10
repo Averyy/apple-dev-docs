@@ -16,8 +16,12 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspa
 from scraper.json_scraper import AppleJSONDocumentationScraper
 from framework_list_scraper import AppleFrameworkListScraper
 
-async def scrape_frameworks(framework_list=None, resume_from=None, max_concurrent=3):
-    """Scrape specified frameworks or all frameworks"""
+# Import orphan cleanup functionality
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from check_orphans import cleanup_framework_orphans
+
+async def scrape_frameworks(framework_list=None, resume_from=None, max_concurrent=20, cleanup_orphans=False):
+    """Scrape specified frameworks or all frameworks with proper rolling concurrency"""
     
     # Get list of frameworks to scrape
     if framework_list:
@@ -50,29 +54,40 @@ async def scrape_frameworks(framework_list=None, resume_from=None, max_concurren
     completed = 0
     failed = []
     
-    # Process in batches
-    batch_size = max_concurrent
-    for i in range(0, len(frameworks), batch_size):
-        batch = frameworks[i:i+batch_size]
-        tasks = []
-        
-        for fw in batch:
-            print(f"\n[{completed+1}/{total}] 🚀 Starting: {fw['title']} ({fw['id']})")
+    # Use semaphore for proper rolling concurrency
+    semaphore = asyncio.Semaphore(max_concurrent)
+    
+    async def scrape_with_semaphore(fw, index):
+        async with semaphore:
+            print(f"\n[{index}/{total}] 🚀 Starting: {fw['title']} ({fw['id']})")
             scraper = AppleJSONDocumentationScraper(
                 framework_id=fw['id'],
                 framework_name=fw['title']
             )
-            tasks.append(scrape_single_framework(scraper, fw, completed+1, total))
-            completed += 1
-        
-        # Run batch concurrently
-        results = await asyncio.gather(*tasks, return_exceptions=True)
-        
-        # Check for failures
-        for fw, result in zip(batch, results):
-            if isinstance(result, Exception):
-                failed.append((fw, str(result)))
-                print(f"❌ Failed: {fw['title']} - {result}")
+            try:
+                result = await scrape_single_framework(scraper, fw, index, total, cleanup_orphans)
+                return fw, None
+            except Exception as e:
+                return fw, e
+    
+    # Create all tasks at once
+    tasks = []
+    for i, fw in enumerate(frameworks, 1):
+        task = scrape_with_semaphore(fw, i)
+        tasks.append(task)
+    
+    # Run all tasks with rolling concurrency
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+    
+    # Process results
+    for result in results:
+        if isinstance(result, tuple):
+            fw, error = result
+            if error:
+                failed.append((fw, str(error)))
+                print(f"❌ Failed: {fw['title']} - {error}")
+        elif isinstance(result, Exception):
+            print(f"❌ Unexpected error: {result}")
     
     # Summary
     print("\n" + "="*70)
@@ -85,7 +100,7 @@ async def scrape_frameworks(framework_list=None, resume_from=None, max_concurren
         for fw, error in failed:
             print(f"  - {fw['title']} ({fw['id']}): {error}")
 
-async def scrape_single_framework(scraper, framework, current, total):
+async def scrape_single_framework(scraper, framework, current, total, cleanup_orphans=False):
     """Scrape a single framework"""
     try:
         async with scraper:
@@ -94,6 +109,12 @@ async def scrape_single_framework(scraper, framework, current, total):
             # Use the streaming scrape_framework method
             stats = await scraper.scrape_framework()
             print(f"[{current}/{total}] ✅ Completed: {framework['title']} - {stats['pages_scraped']} scraped, {stats['pages_skipped']} skipped")
+            
+            # Orphan cleanup after successful completion
+            if cleanup_orphans:
+                orphan_count = cleanup_framework_orphans(framework['id'])
+                if orphan_count > 0:
+                    print(f"[{current}/{total}] 🧹 Cleaned up {orphan_count} orphaned pages from {framework['title']}")
                 
     except Exception as e:
         print(f"[{current}/{total}] ❌ Error scraping {framework['title']}: {e}")
@@ -111,7 +132,7 @@ async def scrape_everything():
     
     # Parse command line arguments
     resume_from = None
-    max_concurrent = 3  # Conservative to be nice to Apple's servers
+    max_concurrent = 20
     specific_frameworks = []
     
     if '--resume' in sys.argv:
@@ -134,6 +155,12 @@ async def scrape_everything():
             specific_frameworks.append(sys.argv[idx])
             idx += 1
         print(f"📌 Scraping specific frameworks: {', '.join(specific_frameworks)}")
+    
+    # Check for orphan cleanup flag
+    cleanup_orphans = False
+    if '--cleanup-orphans' in sys.argv:
+        cleanup_orphans = True
+        print("🧹 Orphan cleanup enabled - will remove orphaned pages after each framework")
     
     if '--dry-run' in sys.argv:
         print("🧪 DRY RUN MODE - Will show what would be scraped")
@@ -185,7 +212,8 @@ async def scrape_everything():
         await scrape_frameworks(
             framework_list=framework_list,
             resume_from=resume_from,
-            max_concurrent=max_concurrent
+            max_concurrent=max_concurrent,
+            cleanup_orphans=cleanup_orphans
         )
         
         print("\n🎉 SCRAPING COMPLETED SUCCESSFULLY!")
@@ -205,6 +233,7 @@ if __name__ == "__main__":
     print(f"  python3 {sys.argv[0]} --all --yes                  # Scrape all frameworks")
     print(f"  python3 {sys.argv[0]} --frameworks SwiftUI UIKit   # Scrape specific frameworks")
     print(f"  python3 {sys.argv[0]} --resume SwiftUI             # Resume from SwiftUI")
+    print(f"  python3 {sys.argv[0]} --all --yes --cleanup-orphans # Scrape all with orphan cleanup")
     print(f"  python3 {sys.argv[0]} --concurrent 5               # Use 5 concurrent scrapers")
     print()
     

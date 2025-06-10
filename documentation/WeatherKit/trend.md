@@ -1,6 +1,6 @@
 # Trend
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure describing an observed pattern in the data for weather at a location for a specific condition.
@@ -47,6 +47,8 @@ struct Trend<Dimension> where Dimension : Dimension
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

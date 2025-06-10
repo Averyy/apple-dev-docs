@@ -17,6 +17,13 @@
 struct ImagePixelDimensions
 ```
 
+## See Also
+
+- [struct ImageCoordinateConversionHelpers](imagecoordinateconversionhelpers.md)
+- [struct ResourceVersion](resourceversion.md)
+- [struct VNVideoProcessingOption](vnvideoprocessingoption.md)
+  Options to pass to the video processor when adding requests.
+
 
 ---
 

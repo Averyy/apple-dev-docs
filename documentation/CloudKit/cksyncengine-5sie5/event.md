@@ -24,8 +24,6 @@ enum Event
 
 > ❗ **Important**:  You don’t create instances of this type manually. Instead, the sync engine provides them to your app’s delegate during sync operations.
 
- You don’t create instances of this type manually. Instead, the sync engine provides them to your app’s delegate during sync operations.
-
 ## Topics
 
 ### Account changes
@@ -88,6 +86,7 @@ enum Event
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Handling Resource Representation and Relationships
 
-**Framework**: Applemusicapi
+**Framework**: Apple Music API
 
 Fetch resources with extended attributes and included relationships and relationship views.
 
@@ -122,4 +122,4 @@ GET https://api.music.apple.com/v1/catalog/us/artists/462006/view/featured-playl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleMusicAPI/handling-resource-representation-and-relationships)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applemusicapi/handling-resource-representation-and-relationships)*

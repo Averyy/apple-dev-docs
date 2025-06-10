@@ -14,7 +14,6 @@ Draws the portion of a print formatter’s content for the specified area of the
 ## Declaration
 
 ```swift
-@MainActor
 func draw(in rect: CGRect, forPageAt pageIndex: Int)
 ```
 

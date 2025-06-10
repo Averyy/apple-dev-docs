@@ -21,6 +21,10 @@ A capsule shape aligned inside the frame of the view containing it.
 struct Capsule
 ```
 
+## Mentions
+
+- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
+
 #### Overview
 
 A capsule shape is equivalent to a rounded rectangle where the corner radius is chosen as half the length of the rectangle’s smallest edge.
@@ -40,6 +44,7 @@ A capsule shape is equivalent to a rounded rectangle where the corner radius is 
 - [Copyable](../Swift/Copyable.md)
 - [InsettableShape](insettableshape.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Shape](shape.md)
 - [View](view.md)
 

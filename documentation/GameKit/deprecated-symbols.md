@@ -12,8 +12,16 @@ Review unsupported symbols and their replacements.
 - [class GKChallengeEventHandler](gkchallengeeventhandler.md)
   The `GKChallengeEventHandler` class is used to respond to events related to challenges sent or received by the local player.
 - [class GKChallengesViewController](gkchallengesviewcontroller.md)
+- [class GKChallenge](gkchallenge.md)
+  A challenge issued by the local player to another player.
+- [class GKScoreChallenge](gkscorechallenge.md)
+  A type of challenge where a player must beat the leaderboard score of another player.
+- [class GKAchievementChallenge](gkachievementchallenge.md)
+  A type of challenge where a player must earn another player’s achievement.
 - [class GKCloudPlayer](gkcloudplayer.md)
   The object representing the currently signed-in iCloud user.
+- [class GKGameCenterViewController](gkgamecenterviewcontroller.md)
+  The dashboard that allows players to access their Game Center data in your game.
 - [class GKGameSession](gkgamesession.md)
   A game session you can use to save game data, invite other players, and create turn-based and real-time game apps.
 - [class GKGameSessionSharingViewController](gkgamesessionsharingviewcontroller.md)
@@ -34,12 +42,16 @@ Review unsupported symbols and their replacements.
   A voice channel that allows players to speak with each other in a multiplayer game.
 - [class GKVoiceChatService](gkvoicechatservice.md)
   The [`GKVoiceChatService`](gkvoicechatservice.md) class allows your application to connect two iOS devices into a voice chat.
+- [class GKNotificationBanner](gknotificationbanner.md)
+  A Game Center-style banner that displays a message to the local player.
 ### Deprecated protocols
 - [protocol GKAchievementViewControllerDelegate](gkachievementviewcontrollerdelegate.md)
   An object implementing the [`GKAchievementViewControllerDelegate`](gkachievementviewcontrollerdelegate.md) protocol is called when the user dismisses the achievements view controller. Typically, this protocol is implemented by the object in your game that originally displayed the achievements user interface.
 - [protocol GKChallengeEventHandlerDelegate](gkchallengeeventhandlerdelegate.md)
   You implement the [`GKChallengeEventHandlerDelegate`](gkchallengeeventhandlerdelegate.md) delegate to control how challenges are displayed in your game.
 - [protocol GKChallengesViewControllerDelegate](gkchallengesviewcontrollerdelegate.md)
+- [protocol GKChallengeListener](gkchallengelistener.md)
+  An object that responds to challenge events.
 - [protocol GKFriendRequestComposeViewControllerDelegate](gkfriendrequestcomposeviewcontrollerdelegate.md)
   The [`GKFriendRequestComposeViewControllerDelegate`](gkfriendrequestcomposeviewcontrollerdelegate.md) protocol is implemented by delegates of the [`GKFriendRequestComposeViewController`](gkfriendrequestcomposeviewcontroller.md) class. The delegate is called when the player dismisses the friend request.
 - [protocol GKGameSessionEventListener](gkgamesessioneventlistener.md)

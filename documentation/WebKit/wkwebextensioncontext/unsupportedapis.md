@@ -1,6 +1,6 @@
 # unsupportedAPIs
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Specifies unsupported APIs for this extension, making them `undefined` in JavaScript.

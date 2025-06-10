@@ -94,4 +94,4 @@ For more information about continuous integration and delivery, see [`About cont
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/xcode-cloud)*

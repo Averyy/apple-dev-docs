@@ -1,6 +1,6 @@
 # Keeping your complications up to date
 
-**Framework**: Clockkit
+**Framework**: ClockKit
 
 Replace or extend the data in your complication’s timeline.
 
@@ -30,7 +30,7 @@ config.isDiscretionary = true
 config.sessionSendsLaunchEvents = true
 ```
 
-Setting the [`isDiscretionary`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/1411552-isdiscretionary) property to [`true`](https://developer.apple.com/documentation/swift/true) tells the system to wait for optimal conditions to perform the transfer, such as when the device is plugged in or connected to Wi-Fi. Setting [`sessionSendsLaunchEvents`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/1617174-sessionsendslaunchevents) to [`true`](https://developer.apple.com/documentation/swift/true) tells the system to launch your app when the download task completes. This is the default for background configurations.
+Setting the [`isDiscretionary`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/isDiscretionary) property to [`true`](https://developer.apple.com/documentation/swift/true) tells the system to wait for optimal conditions to perform the transfer, such as when the device is plugged in or connected to Wi-Fi. Setting [`sessionSendsLaunchEvents`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/sessionSendsLaunchEvents) to [`true`](https://developer.apple.com/documentation/swift/true) tells the system to launch your app when the download task completes. This is the default for background configurations.
 
 Next, create the session and use the session to schedule a background download task.
 
@@ -43,11 +43,11 @@ let backgroundTask = urlSession.downloadTask(with: url)
 backgroundTask.earliestBeginDate = Date().addingTimeInterval(15 * 60)
 ```
 
-Be sure to assign a [`URLSessionDownloadDelegate`](https://developer.apple.com/documentation/Foundation/URLSessionDownloadDelegate) to the session. Setting the `delegateQueue` to `nil` causes the system to call the delegate methods on an anonymous background thread. Also, use the tasks’s [`earliestBeginDate`](https://developer.apple.com/documentation/foundation/urlsessiontask/2873413-earliestbegindate) property to schedule the download for the future. If your app’s data isn’t currently up to date, you can schedule the initial download to begin immediately, but subsequent updates should be scheduled for a future date.
+Be sure to assign a [`URLSessionDownloadDelegate`](https://developer.apple.com/documentation/Foundation/URLSessionDownloadDelegate) to the session. Setting the `delegateQueue` to `nil` causes the system to call the delegate methods on an anonymous background thread. Also, use the tasks’s [`earliestBeginDate`](https://developer.apple.com/documentation/Foundation/URLSessionTask/earliestBeginDate) property to schedule the download for the future. If your app’s data isn’t currently up to date, you can schedule the initial download to begin immediately, but subsequent updates should be scheduled for a future date.
 
 The system limits the number of background download tasks you can perform; however, if you have an active complication on the watch face, you can safely schedule four download tasks an hour.
 
-Finally, call [`resume()`](https://developer.apple.com/documentation/foundation/urlsessiontask/1411121-resume) to schedule the download task.
+Finally, call [`resume()`](https://developer.apple.com/documentation/Foundation/URLSessionTask/resume()) to schedule the download task.
 
 ```swift
 backgroundTask.resume()
@@ -55,7 +55,7 @@ backgroundTask.resume()
 
 The download continues, even if your app isn’t active. When the download completes, the system launches your app, if necessary. If your app terminated, you need to reconnect to the URL session to receive the download.
 
-To reconnect, create a new URL session using the same configuration identifier. The system then calls that session delegate’s [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](https://developer.apple.com/documentation/foundation/urlsessiondownloaddelegate/1411575-urlsession) method.
+To reconnect, create a new URL session using the same configuration identifier. The system then calls that session delegate’s [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](https://developer.apple.com/documentation/Foundation/URLSessionDownloadDelegate/urlSession(_:downloadTask:didFinishDownloadingTo:)) method.
 
 If your app is running in the background, the system also calls your [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handle(_:)-92ulv) method, passing a [`WKURLSessionRefreshBackgroundTask`](https://developer.apple.com/documentation/WatchKit/WKURLSessionRefreshBackgroundTask) object.  It gives your app a maximum of 4 seconds of CPU time which you can use over 15 seconds of wall time. In general, your app should request the next background download task before it begins processing the downloaded data—just in case those tasks exceed the time limits.
 
@@ -64,8 +64,8 @@ Use the download delegate method to access the data and update your app and comp
 The system calls the following delegate methods in this order:
 
 1. If your app is running in the background, the system calls your extension delegate’s [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handle(_:)-92ulv) method. Be sure to save the completion handler.
-2. If the download succeeds, the system calls your session delegate’s [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](https://developer.apple.com/documentation/foundation/urlsessiondownloaddelegate/1411575-urlsession) method. Process the downloaded data here.
-3. Regardless, the system calls your URL session delegate’s [`urlSession(_:task:didCompleteWithError:)`](https://developer.apple.com/documentation/foundation/urlsessiontaskdelegate/1411610-urlsession) method. If you are running in the background, be sure to call your background task’s completion handler here.
+2. If the download succeeds, the system calls your session delegate’s [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](https://developer.apple.com/documentation/Foundation/URLSessionDownloadDelegate/urlSession(_:downloadTask:didFinishDownloadingTo:)) method. Process the downloaded data here.
+3. Regardless, the system calls your URL session delegate’s [`urlSession(_:task:didCompleteWithError:)`](https://developer.apple.com/documentation/Foundation/URLSessionTaskDelegate/urlSession(_:task:didCompleteWithError:)) method. If you are running in the background, be sure to call your background task’s completion handler here.
 
 > **Note**:  The system calls the URL session delegate method whether your app is running in the background or the foreground; however, the [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handle(_:)-92ulv) method is only called when your app is running in the background.
 
@@ -79,7 +79,7 @@ Start by enabling the HealthKit capability’s background delivery.
 
 ![A screenshot of the HealthKit capability with Background Delivery enabled.](https://docs-assets.developer.apple.com/published/06d50f729dbf07ecdfa635f3d3fcb557/media-3897474%402x.png)
 
-Next, register to recieve updates in the background by calling the HealthKit store’s [`enableBackgroundDelivery(for:frequency:withCompletion:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/1614175-enablebackgrounddelivery) method.
+Next, register to recieve updates in the background by calling the HealthKit store’s [`enableBackgroundDelivery(for:frequency:withCompletion:)`](https://developer.apple.com/documentation/HealthKit/HKHealthStore/enableBackgroundDelivery(for:frequency:withCompletion:)) method.
 
 ```swift
 // Create the caffeine type.
@@ -159,4 +159,4 @@ For more information on sending updates from the phone, see the [`Watch Connecti
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/keeping-your-complications-up-to-date)*
+*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/keeping-your-complications-up-to-date)*

@@ -1,6 +1,6 @@
 # Loading in-app product identifiers
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Load the unique identifiers for your in-app products to retrieve product information from the App Store.
 
@@ -81,4 +81,4 @@ After loading all in-app product identifiers, pass them into the product informa
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/loading-in-app-product-identifiers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/loading-in-app-product-identifiers)*

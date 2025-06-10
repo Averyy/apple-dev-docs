@@ -1,6 +1,6 @@
 # Drag and drop
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Bring drag and drop to your app by using interaction APIs with your views.
 
@@ -122,4 +122,4 @@ Text views and text fields automatically support drag and drop. Collection views
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/drag-and-drop)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/drag-and-drop)*

@@ -29,7 +29,7 @@ For a given key that defines the name of the relationship from the receiver’s 
 
 returns the string `employees`.
 
-If you have an instance of the class the receiver describes, you can use the `NSObject` instance method [`inverse(forRelationshipKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/inverse(forRelationshipKey:)) instead.
+If you have an instance of the class the receiver describes, you can use the `NSObject` instance method doc://com.apple.documentation/documentation/objectivec/nsobject/1411046-inverse instead.
 
 ## See Also
 

@@ -21,14 +21,6 @@ func decideAction(for message: MEMessage) async -> MEMessageActionDecision?
 func decideAction(for message: MEMessage) async -> MEMessageActionDecision?
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func decideAction(for message: MEMessage) async -> MEMessageActionDecision?
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 As MailKit downloads messages, it invokes this method to determine what action, if any, it should perform on the message. MailKit initially calls this method before downloading the message content. If you can determine the action to take without requiring the entire body, create a [`MEMessageActionDecision`](memessageactiondecision.md) with an [`MEMessageAction`](memessageaction.md) that indicates the action to take. Use the properties of `message` to determine the action to take. For example, if the user chooses to set the color of messages from a particular person, use the message’s [`fromAddress`](memessage/fromaddress.md) property.
 
 If you can’t determine the action without the entire message content and `bodyData` is `nil`, call the completion handler and pass [`invokeAgainWithBody`](memessageactiondecision/invokeagainwithbody.md) as the decision. MailKit invokes this method again later after the `bodyData` in the message is available.
@@ -53,8 +45,6 @@ func decideActionForMessage(for message: MEMessage, completionHandler: @escaping
 ```
 
 > ❗ **Important**:  Always call the completion handler. If you don’t have an action to specify, pass `nil`.
-
- Always call the completion handler. If you don’t have an action to specify, pass `nil`.
 
 The next example shows a different implementation that relies on the message body content to determine if a message is junk. In this case, when `bodyData` is `nil`, the handler calls the completion handler and passes [`invokeAgainWithBody`](memessageactiondecision/invokeagainwithbody.md).
 

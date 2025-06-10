@@ -1,6 +1,6 @@
 # fileURL
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 The URL of the file that was received.

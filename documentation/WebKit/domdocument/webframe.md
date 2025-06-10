@@ -1,6 +1,6 @@
 # webFrame
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The web frame associated with the DOM document.

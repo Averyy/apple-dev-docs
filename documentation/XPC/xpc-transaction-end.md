@@ -1,6 +1,6 @@
 # xpc_transaction_end()
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Informs the XPC runtime when a transaction ends.

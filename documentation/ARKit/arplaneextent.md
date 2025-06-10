@@ -26,8 +26,6 @@ Similarly, as the session runs, the framework may update the plane’s y-rotatio
 
 > ❗ **Important**:  Apps that run on iOS 16 with a deployment target less than iOS 16 preserve the prior y-axis rotation behavior.
 
- Apps that run on iOS 16 with a deployment target less than iOS 16 preserve the prior y-axis rotation behavior.
-
 ##### Size and Rotate an Entity to a Planes Extent
 
 The following code defines a RealityKit entity sized to the plane extent’s width and height. The helper function also applies the extent’s suggested y-axis rotation by setting its transform `yaw` value to [`rotationOnYAxis`](arplaneextent/rotationonyaxis.md).
@@ -77,6 +75,7 @@ func createPlane(for planeAnchor: ARPlaneAnchor, material: Material) -> ModelEnt
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

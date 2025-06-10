@@ -14,7 +14,6 @@ The print formatters for the page renderer.
 ## Declaration
 
 ```swift
-@MainActor
 var printFormatters: [UIPrintFormatter]? { get set }
 ```
 

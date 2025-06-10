@@ -1,6 +1,6 @@
 # BEContextMenuConfiguration
 
-**Framework**: Browserenginekit  
+**Framework**: BrowserEngineKit  
 **Kind**: class
 
 A specialized `UIContextMenuConfiguration` object to defer a context menu presentation when the when the context menu gestures are first recognized and a possible menu presentation is not immediately known.
@@ -50,4 +50,4 @@ Return an instance of this object if you don’t know whether presentation of a 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/becontextmenuconfiguration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/becontextmenuconfiguration)*

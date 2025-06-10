@@ -1,6 +1,6 @@
 # viewControllers
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 An array of the root view controllers displayed by the tab bar interface.

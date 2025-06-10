@@ -35,6 +35,7 @@ struct CXErrorCodeIncomingCallError
 - [static var filteredDuringRestrictedSharingMode: CXErrorCodeIncomingCallError.Code](cxerrorcodeincomingcallerror-swift.struct/filteredduringrestrictedsharingmode.md)
 - [static var callIsProtected: CXErrorCodeIncomingCallError.Code](cxerrorcodeincomingcallerror-swift.struct/callisprotected.md)
 - [static var errorDomain: String](cxerrorcodeincomingcallerror-swift.struct/errordomain.md)
+- [static var filteredBySensitiveParticipants: CXErrorCodeIncomingCallError.Code](cxerrorcodeincomingcallerror-swift.struct/filteredbysensitiveparticipants.md)
 ### Enumerations
 - [CXErrorCodeIncomingCallError.Code](cxerrorcodeincomingcallerror-swift.struct/code.md)
   Codes for errors that occur during incoming calls.
@@ -47,6 +48,7 @@ struct CXErrorCodeIncomingCallError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

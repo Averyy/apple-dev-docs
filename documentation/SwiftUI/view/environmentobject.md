@@ -1,6 +1,6 @@
 # environmentObject(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Supplies an observable object to a view’s hierarchy.

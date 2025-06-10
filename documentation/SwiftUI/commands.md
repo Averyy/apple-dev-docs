@@ -19,6 +19,10 @@ Conforming types represent a group of related commands that can be exposed to th
 @preconcurrency protocol Commands
 ```
 
+## Mentions
+
+- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+
 #### Overview
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:

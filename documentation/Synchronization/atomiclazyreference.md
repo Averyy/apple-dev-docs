@@ -39,6 +39,7 @@ These values can be set (initialized) exactly once, but read many times.
 
 ### Conforms To
 - [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # documentView
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The subview that displays the web content.

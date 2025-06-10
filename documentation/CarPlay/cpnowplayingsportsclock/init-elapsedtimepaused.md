@@ -13,6 +13,7 @@ Represents a duration of time that has elapsed so far in this event, or play per
 ## Declaration
 
 ```swift
+@MainActor
 init(elapsedTime: TimeInterval, paused: Bool)
 ```
 

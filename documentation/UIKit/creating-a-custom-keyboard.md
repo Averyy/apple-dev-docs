@@ -1,6 +1,6 @@
 # Creating a custom keyboard
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Add an extension to your Xcode project to provide systemwide customized text input.
 
@@ -138,4 +138,4 @@ For more information on crash logs related to memory usage limits, see [`Diagnos
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/creating-a-custom-keyboard)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/creating-a-custom-keyboard)*

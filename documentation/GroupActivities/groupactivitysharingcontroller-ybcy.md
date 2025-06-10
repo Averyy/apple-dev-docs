@@ -44,6 +44,7 @@ If your app’s interface includes controls to start SharePlay activities, prese
 ### Instance Properties
 - [var modalPresentationStyle: UIModalPresentationStyle](groupactivitysharingcontroller-ybcy/modalpresentationstyle.md)
   The presentation style for the view controller.
+- [var preferredContainerBackgroundStyle: UIContainerBackgroundStyle](groupactivitysharingcontroller-ybcy/preferredcontainerbackgroundstyle.md)
 
 ## Relationships
 

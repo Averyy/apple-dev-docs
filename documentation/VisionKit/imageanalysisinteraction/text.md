@@ -1,6 +1,6 @@
 # text
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The text contents of the current image analysis.

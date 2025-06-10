@@ -1,6 +1,6 @@
 # Sample data
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: property
 
 An array of one or more byte pairs for data channel 1/field 1 (“CC1”) of a CEA-608 data stream, each byte pair corresponding to a video frame.

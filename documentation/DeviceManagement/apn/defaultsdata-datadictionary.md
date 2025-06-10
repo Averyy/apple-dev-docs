@@ -8,8 +8,6 @@ An array of access point name dictionaries.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,7 +17,7 @@ object APN.DefaultsData
 
 ## Topics
 
-### Profiles
+### Objects
 - [object APN.DefaultsData.ApnsItem](apn/defaultsdata-data.dictionary/apnsitem.md)
   A dictionary that describes an APN configuration.
 

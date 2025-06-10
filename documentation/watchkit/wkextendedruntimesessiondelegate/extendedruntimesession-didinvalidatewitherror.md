@@ -1,6 +1,6 @@
 # extendedRuntimeSession(_:didInvalidateWith:error:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method  
 **Required**: Yes
 
@@ -20,8 +20,6 @@ func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, 
 The system calls this method both when a session fails to start and when a session stops running. Use the invalidation reason to determine why the session became invalid.
 
 > ❗ **Important**:  If your app terminates immediately after the system invalidates the session, you may not receive this delegate call until the user launches your app again. In that case, the system calls your extension delegate’s [`handle(_:)`](wkextensiondelegate/handle(_:)-4qxgv.md) method to resume the session. Then, after you assign the session delegate, the system finally makes this delegate call.
-
- If your app terminates immediately after the system invalidates the session, you may not receive this delegate call until the user launches your app again. In that case, the system calls your extension delegate’s [`handle(_:)`](wkextensiondelegate/handle(_:)-4qxgv.md) method to resume the session. Then, after you assign the session delegate, the system finally makes this delegate call.
 
 ## Parameters
 

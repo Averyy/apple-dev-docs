@@ -25,8 +25,6 @@ The default value is [`false`](https://developer.apple.com/documentation/swift/f
 
 > ❗ **Important**:  Virtual device constituent photo delivery requires a lengthy reconfiguration of the capture render pipeline, so enable this property prior to starting the capture session.
 
- Virtual device constituent photo delivery requires a lengthy reconfiguration of the capture render pipeline, so enable this property prior to starting the capture session.
-
 ## See Also
 
 - [var isVirtualDeviceFusionSupported: Bool](avcapturephotooutput/isvirtualdevicefusionsupported.md)

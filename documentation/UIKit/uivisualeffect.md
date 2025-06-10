@@ -25,6 +25,8 @@ class UIVisualEffect
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Inherited By
 - [UIBlurEffect](uiblureffect.md)
+- [UIGlassContainerEffect](uiglasscontainereffect.md)
+- [UIGlassEffect](uiglasseffect.md)
 - [UIVibrancyEffect](uivibrancyeffect.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)

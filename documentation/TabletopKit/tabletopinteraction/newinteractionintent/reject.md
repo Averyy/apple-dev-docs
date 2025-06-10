@@ -3,8 +3,6 @@
 **Framework**: TabletopKit  
 **Kind**: case
 
-Reject the new interaction.
-
 **Availability**:
 - visionOS 2.2+
 

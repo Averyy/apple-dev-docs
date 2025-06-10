@@ -27,8 +27,6 @@ When you add entities and components to a node in the Xcode SpriteKit scene edit
 
 > 💡 **Tip**:  The [`GKSKNodeComponent`](gksknodecomponent.md) class adopts the [`GKAgentDelegate`](gkagentdelegate.md) protocol. If you use the [`GKAgent2D`](gkagent2d.md) class to drive the movement of game entities, set your [`GKSKNodeComponent`](gksknodecomponent.md) instance as the delegate for the entity’s agent, and GameplayKit will automatically synchronize the agent and its SpriteKit representation.
 
- The [`GKSKNodeComponent`](gksknodecomponent.md) class adopts the [`GKAgentDelegate`](gkagentdelegate.md) protocol. If you use the [`GKAgent2D`](gkagent2d.md) class to drive the movement of game entities, set your [`GKSKNodeComponent`](gksknodecomponent.md) instance as the delegate for the entity’s agent, and GameplayKit will automatically synchronize the agent and its SpriteKit representation.
-
 For more information on Entity-Component architecture, read [`Entities and Components`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/EntityComponent.html#//apple_ref/doc/uid/TP40015172-CH6) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Topics

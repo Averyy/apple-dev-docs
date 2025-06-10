@@ -49,6 +49,7 @@ If you display AR content using [`ARSCNView`](arscnview.md) and the [`automatica
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

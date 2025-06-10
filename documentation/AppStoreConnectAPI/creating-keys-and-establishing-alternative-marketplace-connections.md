@@ -24,8 +24,6 @@ This command creates the file `private_key.pem`, which contains your private key
 
 > ❗ **Important**:  Secure your private keys as you do other credentials, such as passwords. Don’t share your private keys, store keys in a code repository, or include keys in client-side code. Share only your public key.
 
- Secure your private keys as you do other credentials, such as passwords. Don’t share your private keys, store keys in a code repository, or include keys in client-side code. Share only your public key.
-
 ##### Generate Your Public Key
 
 Next, you create a public key from the private key you created in the previous section. The public key is a PEM-encoded PKCS#8 EC key that uses the P-256 curve. In Terminal, enter the following command:
@@ -127,6 +125,9 @@ After you sign the JWT, provide the token to the app developer so they can uploa
   List the alternative distribution key for your account.
 - [Read alternative distribution key information](get-v1-alternativedistributionkeys-_id_.md)
   Read the public key information for a specific alternative distribution key.
+- [GET /v1/apps/{id}/relationships/alternativeDistributionKey](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
+- [Read an app’s alternative distribution key](get-v1-apps-_id_-alternativedistributionkey.md)
+  Get the alternative distribution keys for a specific app.
 - [Remove an alternative distribution key](delete-v1-alternativedistributionkeys-_id_.md)
   Remove an alternative distribution key from your account.
 

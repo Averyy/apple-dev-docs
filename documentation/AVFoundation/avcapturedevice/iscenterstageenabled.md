@@ -1,6 +1,6 @@
 # isCenterStageEnabled
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that indicates whether a user or an app enabled Center Stage on a device.

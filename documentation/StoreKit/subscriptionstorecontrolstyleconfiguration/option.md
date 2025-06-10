@@ -26,7 +26,7 @@ You use `SubscriptionStoreControlStyleConfiguration.Option` very similarly to [`
 
 - The `offer` property indicates the offer that applies to the purchase. Display the terms of the `offer`, and ignore offer properties on [`Product.SubscriptionInfo`](product/subscriptioninfo.md), such as [`introductoryOffer`](product/subscriptioninfo/introductoryoffer.md).
 - If the `offer` is `nil`, no offer applies to the purchase.
-- Call the [`subscribe()`](subscriptionstorecontrolstyleconfiguration/option/subscribe().md) method when a customer activates a control to subscribe to a subscription option, instead of methods on [`Product`](product.md), such as `Product/purchase(confirmIn:options:)`.
+- Call the [`subscribe()`](subscriptionstorecontrolstyleconfiguration/option/subscribe().md) method when a customer activates a control to subscribe to a subscription option, instead of methods on [`Product`](product.md), such as [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-6dj6y.md).
 - Access the decorative icon using the [`icon`](subscriptionstorecontrolstyleconfiguration/option/icon.md) property.
 
 `SubscriptionStoreControlStyleConfiguration.Option` is a dynamic member lookup type, so you don’t need to use [`subscription`](subscriptionstorecontrolstyleconfiguration/option/subscription.md) directly to access the properties of the `Product` value. Instead, access the properties of `Product` or [`Product.SubscriptionInfo`](product/subscriptioninfo.md) directly on the `Option` value. In the example below, the [`displayName`](product/displayname.md) property is available on `Option` to use as the button label:

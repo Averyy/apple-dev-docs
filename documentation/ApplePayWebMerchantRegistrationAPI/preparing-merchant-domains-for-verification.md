@@ -10,8 +10,6 @@ Before making a [`Register Merchant`](register-merchant.md) request, you must pr
 
 > ❗ **Important**:  The domain-verification files you receive when you’re granted access to the API are distinct from the file available in the Apple Merchant ID section of the Apple Developer portal. Only use the verification files you receive.
 
- The domain-verification files you receive when you’re granted access to the API are distinct from the file available in the Apple Merchant ID section of the Apple Developer portal. Only use the verification files you receive.
-
 Host your domain-verification file at the following path for each domain you’re registering:
 
 `https://[DOMAIN_NAME]/.well-known/apple-developer-merchantid-domain-association`

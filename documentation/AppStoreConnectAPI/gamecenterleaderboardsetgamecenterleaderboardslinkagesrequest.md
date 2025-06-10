@@ -18,6 +18,7 @@ object GameCenterLeaderboardSetGameCenterLeaderboardsLinkagesRequest
 
 ### Objects
 - [object GameCenterLeaderboardSetGameCenterLeaderboardsLinkagesRequest.Data](gamecenterleaderboardsetgamecenterleaderboardslinkagesrequest/data-data.dictionary.md)
+  The data structure that represents a leaderboard resource.
 
 ## See Also
 
@@ -37,6 +38,8 @@ object GameCenterLeaderboardSetGameCenterLeaderboardsLinkagesRequest
   The request body you use to update a leaderboard set.
 - [object GameCenterLeaderboardSetsResponse](gamecenterleaderboardsetsresponse.md)
   A response that contains multiple leaderboard set resources.
+- [object GameCenterLeaderboardSetLocalizationGameCenterLeaderboardSetImageLinkageResponse](gamecenterleaderboardsetlocalizationgamecenterleaderboardsetimagelinkageresponse.md)
+- [object GameCenterLeaderboardSetLocalizationsLinkagesResponse](gamecenterleaderboardsetlocalizationslinkagesresponse.md)
 
 
 ---

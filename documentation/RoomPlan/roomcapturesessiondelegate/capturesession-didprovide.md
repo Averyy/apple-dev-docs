@@ -10,7 +10,7 @@ Notifies the delegate of an instruction to display to the user.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

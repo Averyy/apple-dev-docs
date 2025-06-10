@@ -78,6 +78,7 @@ let customFormatted = style.format(count) // "1 kB (1,024 bytes)"
 - [FormatStyle](formatstyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

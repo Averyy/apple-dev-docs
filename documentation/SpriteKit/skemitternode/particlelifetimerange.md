@@ -17,7 +17,6 @@ The range of allowed random values for a particle’s lifetime.
 ## Declaration
 
 ```swift
-@MainActor
 var particleLifetimeRange: CGFloat { get set }
 ```
 

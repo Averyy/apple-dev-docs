@@ -29,8 +29,6 @@ This function creates a cached Core Video Metal texture object mapped to an imag
 
 > ❗ **Important**:  You need to maintain a strong reference to `textureOut` until the GPU finishes execution of commands accessing the texture, because the system doesn’t automatically retain it. Developers typically release these references in a block passed to [`addCompletedHandler(_:)`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer/addCompletedHandler(_:)).
 
- You need to maintain a strong reference to `textureOut` until the GPU finishes execution of commands accessing the texture, because the system doesn’t automatically retain it. Developers typically release these references in a block passed to [`addCompletedHandler(_:)`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer/addCompletedHandler(_:)).
-
 Note that Core Video doesn’t explicitly declare any pixel format types as Metal compatible. Specify [`true`](https://developer.apple.com/documentation/swift/true) for the [`kCVPixelBufferMetalCompatibilityKey`](kcvpixelbuffermetalcompatibilitykey.md) option to create Metal-compatible buffers when creating or requesting Core Video pixel buffers. You’re responsible for ensuring the pixel format is appropriate to the buffer.
 
 The following code snippet demonstrates some example mappings:

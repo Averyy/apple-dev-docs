@@ -94,7 +94,7 @@ In macOS 10.15, the system always displays the Save dialog in a separate process
 - [var currentContentType: UTType?](nssavepanel/currentcontenttype.md)
   `NSSavePanel`:The current type. If set to `nil`, resets to the first allowed content type. Returns `nil` if `allowedContentTypes` is empty. `NSOpenPanel`: Not used.
 - [var showsContentTypes: Bool](nssavepanel/showscontenttypes.md)
-  `NSSavePanel`: Whether or not to show a control for selecting the type of the saved file. The control shows the types in `allowedContentTypes`. Default is `NO`.
+  `NSSavePanel`: Whether or not to show a control for selecting the type of the saved file. The control shows the types in `allowedContentTypes`. Default is `NO`. `NSOpenPanel`: Not used.
 
 ## Relationships
 
@@ -121,6 +121,7 @@ In macOS 10.15, the system always displays the Save dialog in a separate process
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

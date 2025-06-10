@@ -28,8 +28,6 @@ func argumentNames(forFunction function: String? = nil) -> [String]
 
 - [func BNNSGraphGetArgumentNames(bnns_graph_t, UnsafePointer<CChar>?, Int, UnsafeMutablePointer<UnsafePointer<CChar>?>) -> Int32](bnnsgraphgetargumentnames(_:_:_:_:).md)
   Extracts the names of arguments for the given function argument.
-- [func setBatchSize(Int, forFunction: String?) async](bnnsgraph/context/setbatchsize(_:forfunction:).md)
-  Sets the batch size for a graph.
 - [func setDynamicShapes([BNNSGraph.Shape], forFunction: String?) async throws -> [BNNSGraph.Shape]](bnnsgraph/context/setdynamicshapes(_:forfunction:).md)
   Specifies the dynamic shapes for a graph and, if possible, infers the output shapes.
 - [BNNSGraph.Shape](bnnsgraph/shape.md)

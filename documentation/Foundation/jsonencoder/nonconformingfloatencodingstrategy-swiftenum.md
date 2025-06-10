@@ -36,6 +36,7 @@ The IEEE 754 floating-point specification defines exceptional values, which incl
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

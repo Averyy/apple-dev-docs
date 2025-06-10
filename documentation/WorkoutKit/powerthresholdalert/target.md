@@ -1,6 +1,6 @@
 # target
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: property
 
 The target measurement using power units.
@@ -10,6 +10,7 @@ The target measurement using power units.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

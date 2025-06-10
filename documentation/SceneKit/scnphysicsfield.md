@@ -6,13 +6,13 @@
 An object that applies forces, such as gravitation, electromagnetism, and turbulence, to physics bodies within a certain area of effect.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 

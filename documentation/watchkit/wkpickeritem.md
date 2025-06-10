@@ -1,6 +1,6 @@
 # WKPickerItem
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A single item in a picker interface.

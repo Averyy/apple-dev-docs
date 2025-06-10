@@ -1,6 +1,6 @@
 # first(where:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns the first element of the sequence that satisfies the given predicate.

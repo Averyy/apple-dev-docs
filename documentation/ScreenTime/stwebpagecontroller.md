@@ -29,8 +29,6 @@ For example, you can observe `urlIsBlocked` and take action when it changes to [
 
 > ❗ **Important**: Create a webpage controller for each webpage or tab and add it on top of the webpage’s content.
 
-Create a webpage controller for each webpage or tab and add it on top of the webpage’s content.
-
 ## Topics
 
 ### Instance properties

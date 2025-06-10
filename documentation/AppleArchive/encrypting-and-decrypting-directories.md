@@ -1,6 +1,6 @@
 # Encrypting and Decrypting Directories
 
-**Framework**: Applearchive
+**Framework**: Apple Archive
 
 Compress and encrypt the contents of an entire directory or decompress and decrypt an archived directory  using Apple Encrypted Archive.
 
@@ -24,4 +24,4 @@ Compress and encrypt the contents of an entire directory or decompress and decry
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleArchive/encrypting-and-decrypting-directories)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applearchive/encrypting-and-decrypting-directories)*

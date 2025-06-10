@@ -94,6 +94,8 @@ print(String(s1.utf8.prefix(15))!)
 ### Instance Properties
 - [var customPlaygroundQuickLook: _PlaygroundQuickLook](string/utf8view/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
+- [var span: Span<UTF8.CodeUnit>](string/utf8view/span.md)
+  A span over the UTF8 code units that make up this string.
 ### Default Implementations
 - [BidirectionalCollection Implementations](string/utf8view/bidirectionalcollection-implementations.md)
 - [Collection Implementations](string/utf8view/collection-implementations.md)
@@ -112,6 +114,7 @@ print(String(s1.utf8.prefix(15))!)
 - [CustomReflectable](customreflectable.md)
 - [CustomStringConvertible](customstringconvertible.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

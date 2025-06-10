@@ -31,7 +31,7 @@ At the start of the body of a `withTaskGroup(of:returning:body:)` call, the task
 ## See Also
 
 - [func next(isolation: isolated (any Actor)?) async -> ChildTaskResult?](taskgroup/next(isolation:).md)
-  Wait for the next child task to complete, and return the value it returned.
+  Waits for the next child task to complete, and returns the value it returned.
 - [func waitForAll(isolation: isolated (any Actor)?) async](taskgroup/waitforall(isolation:).md)
   Wait for all of the group’s remaining tasks to complete.
 

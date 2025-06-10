@@ -70,13 +70,13 @@ struct ContentView: View {
 
 The old and new `Viewpoint3D` provided to the action are relative to the center of the volume.
 
-Reading this value is only valid inside a `View` that inherits the environment of a `Scene` created with a `VolumetricWindowStyle`. This value will be equivalent to `Viewpoint3D/standard` when read within a standard window.
+Reading this value is only valid inside a `View` that inherits the environment of a `Scene` created with a `VolumetricWindowStyle`.
 
 ## Parameters
 
 - `updateStrategy`: Whether the action should be run for all viewpoint   changes or only for supported viewpoint changes.
 - `initial`: Whether the action should be run when this view initially   appears.
-- `action`: A closure to run when the viewpoint changes. The closure is   also run when the volume is first opened.
+- `action`: A closure to run when the viewpoint changes. The closure is   also run when the volume is first opened if   is  .
 
 
 ---

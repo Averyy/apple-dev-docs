@@ -1,6 +1,6 @@
 # XCUIProtectedResource.keyboardNetwork
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The protected resource case for access to the keyboard network.

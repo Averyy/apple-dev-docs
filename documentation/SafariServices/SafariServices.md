@@ -74,7 +74,7 @@ You can:
   An object for adding items to a user’s Safari Reading List.
 - [let SSReadingListErrorDomain: String](ssreadinglisterrordomain.md)
   The domain for Safari Reading List errors.
-- [SSReadingListError.Code](ssreadinglisterror/code.md)
+- [SSReadingListError.Code](ssreadinglisterrorcode.md)
   Messages that describe a Safari Reading List error.
 - [struct SSReadingListError](ssreadinglisterror.md)
   A Safari Reading List error.
@@ -84,13 +84,15 @@ You can:
 ### Miscellaneous errors
 - [struct SFError](sferror.md)
   A content blocker or Safari app extension error.
-- [SFError.Code](sferror/code.md)
+- [SFError.Code](sferrorcode.md)
   Messages that describe a content blocker or Safari app extension error.
 - [let SFErrorDomain: String](sferrordomain.md)
   The domain for content blocker or Safari app extension errors.
 ### Deprecated
 - [Deprecated symbols](deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Classes
+- [class SFSafariSettings](sfsafarisettings.md)
 
 
 ---

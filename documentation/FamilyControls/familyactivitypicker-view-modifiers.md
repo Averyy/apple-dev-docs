@@ -209,9 +209,6 @@ Every type that conforms to the [`View`](https://developer.apple.com/documentati
 ### Prominence
 - [func headerProminence(Prominence) -> some View](familyactivitypicker/headerprominence(_:).md)
   Sets the header prominence for this view.
-### Control Size and Layout
-- [func controlSize(ControlSize) -> some View](familyactivitypicker/controlsize(_:).md)
-  Sets the size for controls within this view.
 ### Privacy and Redaction
 - [func privacySensitive(Bool) -> some View](familyactivitypicker/privacysensitive(_:).md)
   Marks the view as containing sensitive, private user data.

@@ -1,6 +1,6 @@
 # WebMenuItemTagSpellingGuess
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Suggest spellings for the misspelled word.

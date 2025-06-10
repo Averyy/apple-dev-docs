@@ -9,7 +9,6 @@ An array of additional metadata for the player item to supplement or replace an 
 - iOS 12.2+
 - iPadOS 12.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
 - visionOS 1.0+
 
 ## Declaration

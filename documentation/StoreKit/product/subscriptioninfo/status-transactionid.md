@@ -3,8 +3,6 @@
 **Framework**: StoreKit  
 **Kind**: method
 
-Gets the subscription status for a transaction ID.
-
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+

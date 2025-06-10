@@ -1,6 +1,6 @@
 # matches(_:options:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Matches the receiver pattern against the specified pattern with options.

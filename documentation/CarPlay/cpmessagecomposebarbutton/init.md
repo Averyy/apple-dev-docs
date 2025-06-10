@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: init
 
 Creates a message compose button with a system-provided image.

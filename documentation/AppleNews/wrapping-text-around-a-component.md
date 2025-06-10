@@ -19,8 +19,6 @@ Consider the following figure:
 
 > 💡 **Tip**:  For a step-by-step process for creating an inset pull quote, see [`Advanced Design Tutorial 2: Layout and Positioning`](apple-news-format-tutorials#Advanced-Design-Tutorial-2-Layout-and-Positioning.md). Get started at [`Setting Up the Advanced Tutorials`](setting-up-the-advanced-tutorials.md).
 
- For a step-by-step process for creating an inset pull quote, see [`Advanced Design Tutorial 2: Layout and Positioning`](apple-news-format-tutorials#Advanced-Design-Tutorial-2-Layout-and-Positioning.md). Get started at [`Setting Up the Advanced Tutorials`](setting-up-the-advanced-tutorials.md).
-
 ## See Also
 
 - [Planning the Layout for Your Article](planning-the-layout-for-your-article.md)

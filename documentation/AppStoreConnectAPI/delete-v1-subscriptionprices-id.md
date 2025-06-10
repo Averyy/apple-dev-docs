@@ -1,6 +1,6 @@
 # Delete Subscription Prices
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 Delete a scheduled price change for an auto-renewable subscription.
@@ -18,6 +18,7 @@ Delete a scheduled price change for an auto-renewable subscription.
   Get details about a specific subscription price point.
 - [List All Subscription Price Point Equalizations](get-v1-subscriptionpricepoints-_id_-equalizations.md)
   Get a list of subscription price points and their equivalent in a specified currency.
+- [GET /v1/subscriptionPricePoints/{id}/relationships/equalizations](get-v1-subscriptionpricepoints-_id_-relationships-equalizations.md)
 - [Create a Subscription Price Change](post-v1-subscriptionprices.md)
   Schedule a subscription price change for a specific territory.
 

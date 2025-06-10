@@ -22,8 +22,6 @@ func hv_vmx_vcpu_write_vmcs(_ vcpu: hv_vcpuid_t, _ field: UInt32, _ value: UInt6
 
 > ❗ **Important**:  This function must be called by the owning thread.
 
- This function must be called by the owning thread.
-
 ## Parameters
 
 - `vcpu`: The ID of the vCPU.

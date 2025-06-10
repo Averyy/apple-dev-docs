@@ -6,6 +6,7 @@
 An interface for specifying the texture configurations and rendering behaviors to use with your Metal rendering engine.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -45,6 +46,8 @@ For information on how to specify custom configuration options for your renderin
   Create a fully immersive experience in visionOS using a custom Metal-based rendering engine.
 - [Interacting with virtual content blended with passthrough](interacting-with-virtual-content-blended-with-passthrough.md)
   Present a mixed immersion style space to draw content in a person’s surroundings, and choose how upper limbs appear with respect to rendered content.
+- [Rendering hover effects in Metal immersive apps](rendering_hover_effects_in_metal_immersive_apps.md)
+  Change the appearance of a rendered onscreen element when a player gazes at it.
 - [struct CompositorLayer](compositorlayer.md)
   A type that you use with an immersive space to display fully immersive content using Metal.
 - [struct DefaultCompositorLayerConfiguration](defaultcompositorlayerconfiguration.md)

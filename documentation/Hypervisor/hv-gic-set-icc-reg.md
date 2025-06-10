@@ -22,8 +22,6 @@ func hv_gic_set_icc_reg(_ vcpu: hv_vcpu_t, _ reg: hv_gic_icc_reg_t, _ value: UIn
 
 > ❗ **Important**:  Call this method on the owning thread.
 
- Call this method on the owning thread.
-
 ## Parameters
 
 - `vcpu`: The handle for the vCPU.

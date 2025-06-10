@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to play the Lost Mode sound.
+The command to play the Lost Mode sound on a device that’s in Lost Mode.
 
 **Availability**:
 - iOS 10.3+
 - iPadOS 10.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,14 +17,14 @@ object PlayLostModeSoundCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object PlayLostModeSoundCommand.Command](playlostmodesoundcommand/command-data.dictionary.md)
-  The request dictionary to play the Lost Mode sound.
+  The command to play the Lost Mode sound on a device that’s in Lost Mode.
 
 ## See Also
 
 - [object PlayLostModeSoundResponse](playlostmodesoundresponse.md)
-  A response from the device in Lost Mode after it processes the command to play the Lost Mode sound.
+  A response from the device after it processes the command to play the Lost Mode sound on a device that’s in Lost Mode.
 
 
 ---

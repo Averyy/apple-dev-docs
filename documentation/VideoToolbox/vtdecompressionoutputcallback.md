@@ -1,6 +1,6 @@
 # VTDecompressionOutputCallback
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: typealias
 
 The prototype for the callback invoked when frame decompression is complete.

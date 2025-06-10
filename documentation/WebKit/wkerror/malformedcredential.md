@@ -1,6 +1,6 @@
 # malformedCredential
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An error that indicates the system could not parse passkey data during an import.

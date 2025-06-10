@@ -1,6 +1,6 @@
 # contentMargins(_:_:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: method
 
 Overrides default content margins for the provided edges in the Dynamic Island.
@@ -8,7 +8,6 @@ Overrides default content margins for the provided edges in the Dynamic Island.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

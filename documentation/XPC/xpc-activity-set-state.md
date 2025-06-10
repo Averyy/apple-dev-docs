@@ -1,6 +1,6 @@
 # xpc_activity_set_state(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Updates the current state of an activity.

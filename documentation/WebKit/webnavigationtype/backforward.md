@@ -1,6 +1,6 @@
 # WebNavigationType.backForward
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 The user clicked back or forward button.

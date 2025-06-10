@@ -25,7 +25,7 @@ The underlying `SecTrustRef` instance.
 #### Discussion
 
 ```None
-  Copy a retained reference to the underlying `SecTrustRef` instance.
+ Copy a retained reference to the underlying `SecTrustRef` instance.
 ```
 
 ## Parameters

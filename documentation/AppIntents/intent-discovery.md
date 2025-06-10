@@ -29,7 +29,7 @@ Donate intents only when someone uses your appâ€™s interface directly. You donâ€
   A type that specifies an intent and its relevance to the user.
 - [class RelevantIntentManager](relevantintentmanager.md)
   A type that saves relevant intents.
-- [struct RelevantContext](relevantcontext.md)
+- [struct RelevantContext](../RelevanceKit/RelevantContext.md)
   A type that specifies conditions for relevance.
 
 ## See Also

@@ -26,8 +26,6 @@ The notification’s object is the player item.
 
 > ❗ **Important**:  The system may post this notification on a thread other than the one you use to register the observer.
 
- The system may post this notification on a thread other than the one you use to register the observer.
-
 ## See Also
 
 - [class let didPlayToEndTimeNotification: NSNotification.Name](avplayeritem/didplaytoendtimenotification.md)

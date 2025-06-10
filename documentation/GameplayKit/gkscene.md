@@ -1,6 +1,6 @@
 # GKScene
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: class
 
 A container for associating GameplayKit objects with a SpriteKit scene.
@@ -79,4 +79,4 @@ For more information on Entity-Component architecture and pathfinding graphs, se
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GameplayKit/gkscene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gameplaykit/gkscene)*

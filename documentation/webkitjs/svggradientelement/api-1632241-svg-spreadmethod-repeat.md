@@ -1,6 +1,6 @@
 # SVG_SPREADMETHOD_REPEAT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

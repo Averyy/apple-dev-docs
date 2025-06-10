@@ -46,7 +46,7 @@ Because there’s no search path to find other functions, the source may only im
   Synchronously creates a Metal library instance by compiling the functions in a source string.
 - [func makeLibrary(stitchedDescriptor: MTLStitchedLibraryDescriptor) throws -> any MTLLibrary](mtldevice/makelibrary(stitcheddescriptor:).md)
   Synchronously creates a Metal library from the function stitching graphs in a descriptor.
-- [func makeLibrary(stitchedDescriptor: MTLStitchedLibraryDescriptor, completionHandler: MTLNewLibraryCompletionHandler)](mtldevice/makelibrary(stitcheddescriptor:completionhandler:).md)
+- [func makeLibrary(stitchedDescriptor: MTLStitchedLibraryDescriptor, completionHandler: ((any MTLLibrary)?, (any Error)?) -> Void)](mtldevice/makelibrary(stitcheddescriptor:completionhandler:).md)
   Asynchronously creates a Metal library from the function stitching graphs in a descriptor.
 - [func makeLibrary(data: DispatchData) throws -> any MTLLibrary](mtldevice/makelibrary(data:)-7khmh.md)
   Creates a Metal library instance that contains the functions in a precompiled Metal library.

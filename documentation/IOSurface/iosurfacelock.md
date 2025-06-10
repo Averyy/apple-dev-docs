@@ -1,6 +1,6 @@
 # IOSurfaceLock(_:_:_:)
 
-**Framework**: Iosurface  
+**Framework**: IOSurface  
 **Kind**: func
 
 “Lock” an IOSurface for reading or writing.

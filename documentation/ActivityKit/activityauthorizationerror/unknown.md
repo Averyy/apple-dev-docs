@@ -6,9 +6,8 @@
 Returns a Boolean value indicating whether two values are not equal.
 
 **Availability**:
-- iOS 16.1+
-- iPadOS 16.1+
-- watchOS 11.0+
+- iOS ?+
+- iPadOS ?+
 
 ## Declaration
 

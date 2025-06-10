@@ -1,6 +1,6 @@
 # Customizing axes in Swift Charts
 
-**Framework**: Charts
+**Framework**: Swift Charts
 
 Improve the clarity of your chart by configuring the appearance of its axes.
 
@@ -208,4 +208,4 @@ Compare this chart with the one at the beginning of this article that uses the d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Charts/customizing-axes-in-swift-charts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/charts/customizing-axes-in-swift-charts)*

@@ -1,44 +1,40 @@
-# !=(_:_:)
+# ==(_:_:)
 
 **Framework**: RealityKit  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Indicates whether two shapes are equal.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
+- macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+nonisolated
+static func == (lhs: ShapeResource, rhs: ShapeResource) -> Bool
 ```
 
-#### Discussion
+#### Return Value
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+A Boolean value set to `true` if the two shapes are equal.
 
 ## Parameters
 
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
+- `lhs`: The first shape to compare.
+- `rhs`: The second shape to compare.
 
 ## See Also
 
-- [static func == (ShapeResource, ShapeResource) -> Bool](shaperesource/==(_:_:).md)
-  Indicates whether two shapes are equal.
 - [func hash(into: inout Hasher)](shaperesource/hash(into:).md)
   Hashes the essential components of the shape by feeding them into the given hash function.
-- [var hashValue: Int](shaperesource/hashvalue.md)
-  The hash value.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/shaperesource/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/shaperesource/==(_:_:))*

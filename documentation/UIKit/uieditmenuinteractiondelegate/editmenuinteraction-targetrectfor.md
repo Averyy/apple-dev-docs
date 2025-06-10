@@ -14,7 +14,6 @@ Provides the target rectangle to position the menu relative to when the interact
 ## Declaration
 
 ```swift
-@MainActor
 optional func editMenuInteraction(_ interaction: UIEditMenuInteraction, targetRectFor configuration: UIEditMenuConfiguration) -> CGRect
 ```
 

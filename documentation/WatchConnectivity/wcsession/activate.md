@@ -1,6 +1,6 @@
 # activate()
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method
 
 Activates the session asynchronously.

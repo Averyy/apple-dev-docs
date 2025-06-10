@@ -1,6 +1,6 @@
 # errors
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An array of errors that may have occurred when either calculating or deleting storage.

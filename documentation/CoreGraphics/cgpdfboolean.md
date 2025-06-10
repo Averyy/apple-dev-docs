@@ -22,7 +22,7 @@ typealias CGPDFBoolean = UInt8
 
 ## See Also
 
-- [typealias CGPDFObjectRef](cgpdfobjectref.md)
+- [struct CGPDFObjectRef](cgpdfobjectref.md)
   A type that contains information about a PDF object.
 - [typealias CGPDFInteger](cgpdfinteger.md)
   A PDF integer value.

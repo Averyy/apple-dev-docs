@@ -1,6 +1,6 @@
 # apply(_:)
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: method  
 **Required**: Yes
 

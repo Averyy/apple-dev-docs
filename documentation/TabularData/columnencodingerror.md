@@ -49,6 +49,7 @@ An error bundles an [`EncodingError`](https://developer.apple.com/documentation/
 - [Error](../Swift/Error.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -56,6 +56,7 @@ Use a value of this type with the [`backgroundTask(_:action:)`](scene/background
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

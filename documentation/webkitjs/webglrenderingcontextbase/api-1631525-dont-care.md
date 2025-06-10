@@ -1,6 +1,6 @@
 # DONT_CARE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

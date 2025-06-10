@@ -23,8 +23,6 @@ var computeFunction: (any MTLFunction)? { get set }
 
 > ⚠️ **Warning**:  Ensure that this value is non-`nil` before creating a new [`MTLComputePipelineState`](mtlcomputepipelinestate.md) with the associated pipeline descriptor instance.
 
- Ensure that this value is non-`nil` before creating a new [`MTLComputePipelineState`](mtlcomputepipelinestate.md) with the associated pipeline descriptor instance.
-
 The default value is `nil`.
 
 ## See Also

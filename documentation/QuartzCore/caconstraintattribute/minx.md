@@ -6,7 +6,7 @@
 The left edge of a layer’s frame.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst 13.1+
 - macOS ?+
 
 ## Declaration

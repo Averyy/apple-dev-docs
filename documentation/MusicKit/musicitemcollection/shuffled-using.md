@@ -1,6 +1,6 @@
 # shuffled(using:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Returns the elements of the sequence, shuffled using the given generator as a source for randomness.

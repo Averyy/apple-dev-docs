@@ -1,6 +1,6 @@
 # init
 
-**Framework**: Usbserialdriverkit  
+**Framework**: USBSerialDriverKit  
 **Kind**: method
 
 Handles the basic initialization of the service.

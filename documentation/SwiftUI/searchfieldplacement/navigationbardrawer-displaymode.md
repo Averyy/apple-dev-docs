@@ -31,7 +31,7 @@ The field appears below any navigation bar title. The system can hide the field 
   SwiftUI places the search field automatically.
 - [static let navigationBarDrawer: SearchFieldPlacement](searchfieldplacement/navigationbardrawer.md)
   The search field appears in the navigation bar.
-- [static let sidebar: SearchFieldPlacement](searchfieldplacement/sidebar.md)
+- [static var sidebar: SearchFieldPlacement](searchfieldplacement/sidebar.md)
   The search field appears in the sidebar of a navigation view.
 - [static let toolbar: SearchFieldPlacement](searchfieldplacement/toolbar.md)
   The search field appears in the toolbar.

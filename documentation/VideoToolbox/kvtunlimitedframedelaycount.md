@@ -1,6 +1,6 @@
 # kVTUnlimitedFrameDelayCount
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Indicates that no limit should be set on the compression window.

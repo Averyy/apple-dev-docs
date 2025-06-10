@@ -1,6 +1,6 @@
 # vibrant
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 The system desaturates the widget, making a monochrome version that it uses to create an adaptive, vibrant effect.
@@ -8,8 +8,9 @@ The system desaturates the widget, making a monochrome version that it uses to c
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -22,6 +23,7 @@ static let vibrant: WidgetRenderingMode
 
 - [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
 - [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
+- [Displaying the right widget background](displaying-the-right-widget-background.md)
 
 #### Discussion
 

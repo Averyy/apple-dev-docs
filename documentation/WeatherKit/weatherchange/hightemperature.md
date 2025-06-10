@@ -1,6 +1,6 @@
 # highTemperature
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 How the high temperature for this day compares to that of before.

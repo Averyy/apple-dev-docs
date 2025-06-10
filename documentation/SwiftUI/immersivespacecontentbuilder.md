@@ -6,6 +6,7 @@
 A result builder for composing a collection of immersive space elements.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -30,6 +31,9 @@ struct ImmersiveSpaceContentBuilder
   The styles that an immersive space can have.
 - [var immersiveSpaceDisplacement: Pose3D](environmentvalues/immersivespacedisplacement.md)
   The displacement that the system applies to the immersive space when moving the space away from its default position, in meters.
+- [struct ImmersiveEnvironmentBehavior](immersiveenvironmentbehavior.md)
+  The behavior of the system-provided immersive environments when a scene is opened by your app.
+- [struct ProgressiveImmersionAspectRatio](progressiveimmersionaspectratio.md)
 
 
 ---

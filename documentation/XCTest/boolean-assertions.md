@@ -1,6 +1,6 @@
 # Boolean Assertions
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Test a condition that generates a true or false result.
 

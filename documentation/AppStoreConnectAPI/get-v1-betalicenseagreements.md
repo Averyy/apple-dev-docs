@@ -14,6 +14,7 @@ Find and list beta license agreements for all apps.
   Get a specific beta license agreement.
 - [Read the App Information of a Beta License Agreement](get-v1-betalicenseagreements-_id_-app.md)
   Get the app information for a specific beta license agreement.
+- [GET /v1/betaLicenseAgreements/{id}/relationships/app](get-v1-betalicenseagreements-_id_-relationships-app.md)
 
 
 ---

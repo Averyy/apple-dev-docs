@@ -1,6 +1,6 @@
 # CMAudioFormatDescriptionCopyAsBigEndianSoundDescriptionBlockBuffer(allocator:audioFormatDescription:flavor:blockBufferOut:)
 
-**Framework**: Coremedia  
+**Framework**: Core Media  
 **Kind**: func
 
 Copies the contents of an audio format description to a buffer in big-endian byte ordering.

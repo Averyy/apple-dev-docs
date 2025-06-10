@@ -1,6 +1,6 @@
 # MPVolumeView
 
-**Framework**: Mediaplayer  
+**Framework**: Media Player  
 **Kind**: class
 
 A slider control for setting the system audio output volume, and a button for choosing the audio output route.
@@ -106,6 +106,7 @@ You can also customize the volume thumb image for the slider.
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)
@@ -133,4 +134,4 @@ You can also customize the volume thumb image for the slider.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MediaPlayer/mpvolumeview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mediaplayer/mpvolumeview)*

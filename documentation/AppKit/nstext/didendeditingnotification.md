@@ -1,6 +1,6 @@
 # didEndEditingNotification
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 Posted when focus leaves an `NSText` object, whether or not any operation has changed characters or formatting attributes.

@@ -65,6 +65,7 @@ enum Item
 - [MusicPropertyContainer](musicpropertycontainer.md)
 - [PlayableMusicItem](playablemusicitem.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

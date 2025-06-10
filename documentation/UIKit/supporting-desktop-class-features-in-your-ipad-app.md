@@ -1,6 +1,6 @@
 # Supporting desktop-class features in your iPad app
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Enhance your iPad app by adding desktop-class features and document support.
 
@@ -145,4 +145,4 @@ func collectionView(_ collectionView: UICollectionView, performPrimaryActionForI
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/supporting-desktop-class-features-in-your-ipad-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/supporting-desktop-class-features-in-your-ipad-app)*

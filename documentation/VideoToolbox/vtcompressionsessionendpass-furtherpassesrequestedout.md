@@ -1,6 +1,6 @@
 # VTCompressionSessionEndPass(_:furtherPassesRequestedOut:_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Marks the end of a compression pass.

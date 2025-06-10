@@ -1,6 +1,6 @@
 # extensionURL
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 A dictionary key for the URL of the extension.

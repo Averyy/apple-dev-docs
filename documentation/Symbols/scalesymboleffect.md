@@ -48,6 +48,7 @@ A scale animation draws attention to a symbol by changing the symbol’s scale i
 - [Hashable](../Swift/Hashable.md)
 - [IndefiniteSymbolEffect](indefinitesymboleffect.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SymbolEffect](symboleffect.md)
 
 ## See Also

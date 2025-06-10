@@ -1,6 +1,6 @@
 # toolbar(id:content:)
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Populates the toolbar or navigation bar with the specified items, allowing for user customization.

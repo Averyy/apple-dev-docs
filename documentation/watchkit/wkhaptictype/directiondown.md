@@ -1,6 +1,6 @@
 # WKHapticType.directionDown
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Indicates a decrease in a specific value or when a value has gone below a certain threshold.

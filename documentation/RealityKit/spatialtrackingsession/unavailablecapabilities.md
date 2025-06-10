@@ -31,8 +31,6 @@ struct UnavailableCapabilities
   Whether the person using the device approves the camera authorization or not.
 - [var sceneUnderstanding: Set<SpatialTrackingSession.Configuration.SceneUnderstandingCapability>](spatialtrackingsession/unavailablecapabilities/sceneunderstanding.md)
   A type that contains all unavailable scene-understanding capabilities.
-### Default Implementations
-- [CustomStringConvertible Implementations](spatialtrackingsession/unavailablecapabilities/customstringconvertible-implementations.md)
 
 ## Relationships
 
@@ -40,6 +38,7 @@ struct UnavailableCapabilities
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -50,7 +49,7 @@ struct UnavailableCapabilities
 - [SpatialTrackingSession.Configuration.AnchorCapability](spatialtrackingsession/configuration/anchorcapability.md)
   A type that defines various anchor tracking capabilities.
 - [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](spatialtrackingsession/configuration/sceneunderstandingcapability.md)
-  Defines how system behaviors can use scene unerstanding data for.
+  Defines how system behaviors use scene understanding.
 - [SpatialTrackingSession.Configuration.Camera](spatialtrackingsession/configuration/camera.md)
   Defines the camera feed the RealityView renders.
 

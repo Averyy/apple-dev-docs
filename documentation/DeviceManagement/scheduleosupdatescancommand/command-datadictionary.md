@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to schedule an operating-system update scan.
+The command to schedule a background scan for operating-system updates on a device.
 
 **Availability**:
 - macOS 10.11+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

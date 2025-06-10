@@ -1,6 +1,6 @@
 # TOO_LARGE_ERR
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

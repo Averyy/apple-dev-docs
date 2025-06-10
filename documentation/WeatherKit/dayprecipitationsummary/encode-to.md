@@ -1,6 +1,6 @@
 # encode(to:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Encodes this value into the given encoder.

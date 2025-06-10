@@ -1,6 +1,6 @@
 # shippingType
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property
 
 The type of shipping the request uses.

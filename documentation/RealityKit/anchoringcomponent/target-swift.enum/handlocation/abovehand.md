@@ -6,7 +6,6 @@
 An anchor location above the center of the palm in the world space, regardless how the hand is rotated.
 
 **Availability**:
-- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 ## Declaration

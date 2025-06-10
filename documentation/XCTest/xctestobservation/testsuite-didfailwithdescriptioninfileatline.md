@@ -1,6 +1,6 @@
 # testSuite(_:didFailWithDescription:inFile:atLine:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Notifies the observer when a test suite reports a failure.

@@ -1,6 +1,6 @@
 # pressureTrend
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The kind and amount of atmospheric pressure change over time.

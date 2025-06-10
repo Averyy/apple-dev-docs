@@ -37,8 +37,6 @@ struct MySubView: View {
 
 > ❗ **Important**: A `Binding` created by the projected value must only be read from, or written to by the main actor. Failing to do so may result in undefined behavior, or data loss. When this occurs, SwiftUI will issue a runtime warning. In a future release, a crash will occur instead.
 
-A `Binding` created by the projected value must only be read from, or written to by the main actor. Failing to do so may result in undefined behavior, or data loss. When this occurs, SwiftUI will issue a runtime warning. In a future release, a crash will occur instead.
-
 ## See Also
 
 - [var wrappedValue: ObjectType](observedobject/wrappedvalue.md)

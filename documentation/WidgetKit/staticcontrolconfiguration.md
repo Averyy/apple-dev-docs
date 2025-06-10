@@ -1,6 +1,6 @@
 # StaticControlConfiguration
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 The description of a control widget that has no user-configurable options.
@@ -8,7 +8,9 @@ The description of a control widget that has no user-configurable options.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -62,6 +64,7 @@ The content closure defines the template that WidgetKit needs to render the cont
 ### Conforms To
 - [ControlWidgetConfiguration](../SwiftUI/ControlWidgetConfiguration.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

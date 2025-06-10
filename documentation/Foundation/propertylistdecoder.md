@@ -44,7 +44,9 @@ class PropertyListDecoder
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [NetworkDecoder](../Network/NetworkDecoder.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TopLevelDecoder](../Combine/TopLevelDecoder.md)
 
 ## See Also

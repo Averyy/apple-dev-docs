@@ -1,6 +1,6 @@
 # Diorama
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Design scenes for your visionOS app using Reality Composer Pro.
 
@@ -183,4 +183,4 @@ private func handleMaterial() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/diorama)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/diorama)*

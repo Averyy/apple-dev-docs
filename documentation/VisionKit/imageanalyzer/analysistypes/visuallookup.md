@@ -1,6 +1,6 @@
 # visualLookUp
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 An option that analyzes an image for subjects that the framework can look up for more information.

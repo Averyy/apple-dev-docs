@@ -1,6 +1,6 @@
 # isReachable
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 A Boolean value indicating whether the counterpart app is available for live messaging.

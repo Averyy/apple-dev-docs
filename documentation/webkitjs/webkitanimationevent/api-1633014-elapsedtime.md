@@ -1,6 +1,6 @@
 # elapsedTime
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The duration of the animation, in seconds, since this event was sent, excluding any time the animation is paused. This value is not affected by the value of the CSS -webkit-animation-delay property. If the type of the event is `webkitAnimationStart`, `elapsedTime` is `0`.

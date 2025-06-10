@@ -19,11 +19,6 @@ Returns the activity move mode for the current user.
 func activityMoveMode() throws -> HKActivityMoveModeObject
 ```
 
-## See Also
-
-- [static let HKUserPreferencesDidChange: NSNotification.Name](../foundation/nsnotification/name/1614169-hkuserpreferencesdidchange.md)
-  Notifies observers whenever the user changes his or her preferred units.
-
 
 ---
 

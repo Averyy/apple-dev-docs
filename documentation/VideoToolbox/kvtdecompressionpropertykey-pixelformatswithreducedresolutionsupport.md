@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_PixelFormatsWithReducedResolutionSupport
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Pixel formats that support reduced-resolution decoding (optional).

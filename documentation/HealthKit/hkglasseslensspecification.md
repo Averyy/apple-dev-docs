@@ -131,8 +131,6 @@ do {
 
 > ❗ **Important**:  Many regions require an image of the prescription to manufacture glasses or contacts. Add an image or pdf of the prescription as an attachment. For more information, see [`HKAttachmentStore`](hkattachmentstore.md).
 
- Many regions require an image of the prescription to manufacture glasses or contacts. Add an image or pdf of the prescription as an attachment. For more information, see [`HKAttachmentStore`](hkattachmentstore.md).
-
 ## Topics
 
 ### Creating glasses lens specifications
@@ -163,6 +161,7 @@ do {
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

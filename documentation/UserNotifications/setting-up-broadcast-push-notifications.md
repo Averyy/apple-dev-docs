@@ -1,6 +1,6 @@
 # Setting up broadcast push notifications
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Enable broadcast capability for Apple Push Notifications service (APNs).
 
@@ -57,4 +57,4 @@ The following table describes the metrics for the aggregated broadcast push noti
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/setting-up-broadcast-push-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/setting-up-broadcast-push-notifications)*

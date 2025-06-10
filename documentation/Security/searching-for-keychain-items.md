@@ -69,4 +69,4 @@ Whether or not you need to handle multiple matches at all depends on how your ap
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/searching-for-keychain-items)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/searching-for-keychain-items)*

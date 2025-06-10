@@ -1,6 +1,6 @@
 # fromPoint
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clm
 
 **Availability**:

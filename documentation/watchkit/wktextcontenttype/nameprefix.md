@@ -1,6 +1,6 @@
 # namePrefix
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A title or prefix for a name.

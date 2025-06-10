@@ -1,6 +1,6 @@
 # Finding players with similar skill levels
 
-**Framework**: Gamekit
+**Framework**: GameKit
 
 Add a rule to find players in a range of skill levels to balance competitive gameplay.
 
@@ -192,4 +192,4 @@ For more information, see [`Finding multiple players for a game`](finding-multip
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/finding-players-with-similar-skill-levels)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/finding-players-with-similar-skill-levels)*

@@ -28,7 +28,7 @@ func fileDialogDefaultDirectory(_ defaultDirectory: URL?) -> some View
 - [func fileDialogBrowserOptions(FileDialogBrowserOptions) -> some View](view/filedialogbrowseroptions(_:).md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to provide a refined URL search experience: include or exclude hidden files, allow searching by tag, etc.
 - [func fileDialogConfirmationLabel(_:)](view/filedialogconfirmationlabel(_:).md)
-  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with custom text as a confirmation button label.
+  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
 - [func fileDialogCustomizationID(String) -> some View](view/filedialogcustomizationid(_:).md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to persist and restore the file dialog configuration.
 - [func fileDialogImportsUnresolvedAliases(Bool) -> some View](view/filedialogimportsunresolvedaliases(_:).md)

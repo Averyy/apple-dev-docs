@@ -15,8 +15,6 @@ Play, record, and process audio; configure your app’s system audio behavior.
   Configure an iOS device’s built-in microphones to add stereo recording capabilities to your app.
 - [class AVAudioSession](../AVFAudio/AVAudioSession.md)
   An object that communicates to the system how you intend to use audio in your app.
-- [protocol AVAudioSessionSpatialExperience](avaudiosessionspatialexperience.md)
-  A protocol that defines types of spatial audio experiences that the system supports.
 - [class AVAudioApplication](../AVFAudio/AVAudioApplication.md)
   An object that manages one or more audio sessions that belong to an app.
 - [class AVAudioRoutingArbiter](../AVFAudio/AVAudioRoutingArbiter.md)

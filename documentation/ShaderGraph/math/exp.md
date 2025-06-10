@@ -5,6 +5,14 @@
 
 Outputs ‘e’ to the power of the input.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 ## See Also

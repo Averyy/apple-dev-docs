@@ -1,6 +1,6 @@
 # goForward()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Navigates to the forward item in the back-forward list.

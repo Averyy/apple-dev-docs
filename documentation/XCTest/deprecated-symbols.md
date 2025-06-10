@@ -1,6 +1,6 @@
 # Deprecated Symbols
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 These symbols are deprecated and are no longer recommended.
 

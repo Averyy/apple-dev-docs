@@ -1,6 +1,6 @@
 # TEXTURE0
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

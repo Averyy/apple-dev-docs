@@ -6,9 +6,9 @@
 An indication of whether to use an automatically configured AR session.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

@@ -70,6 +70,8 @@ To learn about the various tools to detect hangs and hitches, and best practices
   Identify responsiveness issues your users encounter, and use the hang and hitch data in Xcode Organizer to determine which issues are most important to fix.
 - [Improving app responsiveness](improving-app-responsiveness.md)
   Create a user experience that feels responsive by removing hangs and hitches from your app.
+- [Understanding and improving SwiftUI performance](understanding-and-improving-swiftui-performance.md)
+  Identify and address long-running view updates, and reduce the frequency of updates.
 - [Understanding hangs in your app](understanding-hangs-in-your-app.md)
   Determine the cause for delays in user interactions by examining the main thread and the main run loop.
 - [Understanding hitches in your app](understanding-hitches-in-your-app.md)

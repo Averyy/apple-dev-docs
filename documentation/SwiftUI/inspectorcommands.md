@@ -20,7 +20,7 @@ struct InspectorCommands
 
 #### Overview
 
-`InspectorCommands` include a command for toggling the presented state of the inspector with a keyboard shortcut of ⌘⌃I.
+`InspectorCommands` include a command for toggling the presented state of the inspector with a keyboard shortcut of Control-Command-I.
 
 These commands are optional and can be explicitly requested by passing a value of this type to the [`commands(content:)`](scene/commands(content:).md) modifier:
 

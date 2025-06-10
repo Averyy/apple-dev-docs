@@ -1,6 +1,6 @@
 # init(options:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: init
 
 Creates a session object directed over proxy to another host.

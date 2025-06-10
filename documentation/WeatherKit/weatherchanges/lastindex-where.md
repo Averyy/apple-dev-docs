@@ -1,6 +1,6 @@
 # lastIndex(where:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns the index of the last element in the collection that matches the given predicate.

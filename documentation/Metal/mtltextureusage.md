@@ -63,6 +63,7 @@ In iOS devices with GPU family 5, Metal doesn’t apply lossless compression to 
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

@@ -8,7 +8,7 @@ Clips this view to its bounding frame, with the specified corner radius.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
+- Mac Catalyst ?+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+

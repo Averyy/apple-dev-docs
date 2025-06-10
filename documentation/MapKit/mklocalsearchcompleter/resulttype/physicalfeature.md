@@ -12,6 +12,7 @@ A value that indicates that the search completer includes physical feature compl
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 11.0+
 
 ## Declaration
 

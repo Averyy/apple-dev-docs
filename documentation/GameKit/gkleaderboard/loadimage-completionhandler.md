@@ -15,7 +15,7 @@ Loads the image for the leaderboard.
 ## Declaration
 
 ```swift
-func loadImage() async throws -> UIImage
+func loadImage() async throws -> NSImage
 ```
 
 ## Mentions

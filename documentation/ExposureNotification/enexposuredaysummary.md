@@ -20,8 +20,6 @@ class ENExposureDaySummary
 
 > ❗ **Important**:  This class is available in iOS 12.5, and in iOS 13.7 and later.
 
- This class is available in iOS 12.5, and in iOS 13.7 and later.
-
 ## Topics
 
 ### Getting Exposure Summary Information

@@ -40,8 +40,6 @@ In assessment mode, macOS automatically limits access to one or more apps and re
 
 > ❗ **Important**:  Consider your app’s assessment security policies to determine what additional capabilities to build into your app.
 
- Consider your app’s assessment security policies to determine what additional capabilities to build into your app.
-
 ##### Restrict Third Party Software Keyboards for Ios and Ipados
 
 AAC doesn’t restrict third-party software keyboards, and some third-party keyboards support searching from within the keyboard. If you don’t want these used in your assessment app, you restrict their use with [`application(_:shouldAllowExtensionPointIdentifier:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:shouldAllowExtensionPointIdentifier:)) as shown in the code below:
@@ -115,8 +113,6 @@ func windowShouldClose(_ sender: NSWindow) -> Bool {
 Even though your app’s menu bar isn’t visible and someone can’t reach it when in assessment mode, people can still type command key equivalents to invoke menu items, such as Command-Q for Quit.  Check which of your app’s menu items have key equivalents and make sure you handle them properly.
 
 > ❗ **Important**:  Test these options carefully. Be careful not to lock your development Mac in assessment mode accidentally, which happens when Xcode pauses at a breakpoint while the Mac is in this mode, potentially leaving you with no option but to restart the Mac to exit assessment mode. To prevent such situations, test these functionalities in a virtual machine, which offers the flexibility to force quit if required.
-
- Test these options carefully. Be careful not to lock your development Mac in assessment mode accidentally, which happens when Xcode pauses at a breakpoint while the Mac is in this mode, potentially leaving you with no option but to restart the Mac to exit assessment mode. To prevent such situations, test these functionalities in a virtual machine, which offers the flexibility to force quit if required.
 
 ##### Consider Interactions with App Based Content Filters and Vpns in Macos
 

@@ -23,8 +23,6 @@ The system calls this method when a media player interface needs to play a media
 
 > ❗ **Important**:  Don’t automatically restart playback when the media item is already playing. In most cases, it’s better for your app to do nothing and continue to play the current media item.
 
- Don’t automatically restart playback when the media item is already playing. In most cases, it’s better for your app to do nothing and continue to play the current media item.
-
 ## Parameters
 
 - `contentManager`: The content manager that initiated the request.

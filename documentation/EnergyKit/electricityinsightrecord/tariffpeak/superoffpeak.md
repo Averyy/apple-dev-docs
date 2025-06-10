@@ -1,0 +1,36 @@
+# superOffPeak
+
+**Framework**: EnergyKit  
+**Kind**: property
+
+The duration of energy or runtime data during super off-peak hours.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+var superOffPeak: Measure?
+```
+
+## See Also
+
+- [var criticalPeak: Measure?](electricityinsightrecord/tariffpeak/criticalpeak.md)
+  The duration of energy or runtime data during critical peak hours.
+- [var offPeak: Measure?](electricityinsightrecord/tariffpeak/offpeak.md)
+  The duration of energy or runtime data during off-peak hours.
+- [var onPeak: Measure?](electricityinsightrecord/tariffpeak/onpeak.md)
+  The duration of energy or runtime data during peak hours.
+- [var partialPeak: Measure?](electricityinsightrecord/tariffpeak/partialpeak.md)
+  The duration of energy or runtime data during partial peak hours.
+- [var unknown: Measure?](electricityinsightrecord/tariffpeak/unknown.md)
+  The unknown duration of energy or runtime data.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/energykit/electricityinsightrecord/tariffpeak/superoffpeak)*

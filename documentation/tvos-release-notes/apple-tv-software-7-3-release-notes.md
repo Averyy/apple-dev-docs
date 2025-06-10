@@ -1,6 +1,6 @@
 # Apple TV Software 7.3 Release Notes
 
-**Framework**: Tvos Release Notes
+**Framework**: tvOS Release Notes
 
 Test AirPlay with your apps and test features for Apple TV (3rd generation).
 

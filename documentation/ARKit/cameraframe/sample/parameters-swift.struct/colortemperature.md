@@ -21,7 +21,7 @@ var colorTemperature: Int { get }
 - [var cameraType: CameraFrameProvider.CameraType](cameraframe/sample/parameters-swift.struct/cameratype.md)
 - [var captureTimestamp: TimeInterval](cameraframe/sample/parameters-swift.struct/capturetimestamp.md)
   The capture timestamp.
-- [var exposureDuration: CFTimeInterval](cameraframe/sample/parameters-swift.struct/exposureduration.md)
+- [var exposureDuration: TimeInterval](cameraframe/sample/parameters-swift.struct/exposureduration.md)
   The camera frame exposure duration in seconds.
 - [var extrinsics: simd_float4x4](cameraframe/sample/parameters-swift.struct/extrinsics.md)
   The camera extrinsics.

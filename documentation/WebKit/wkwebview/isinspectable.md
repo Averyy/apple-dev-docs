@@ -1,6 +1,6 @@
 # isInspectable
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether you can inspect the view with Safari Web Inspector.

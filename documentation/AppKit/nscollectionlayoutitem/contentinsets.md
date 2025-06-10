@@ -1,6 +1,6 @@
 # contentInsets
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The amount of space added around the content of the item to adjust its final size after its position is computed.
@@ -33,4 +33,4 @@ The following diagram shows the result of applying 2 points of content insets to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nscollectionlayoutitem/contentinsets)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nscollectionlayoutitem/contentinsets)*

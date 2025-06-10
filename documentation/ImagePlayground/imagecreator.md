@@ -44,6 +44,7 @@ Create an `ImageCreator` object and use its [`images(for:style:limit:)`](imagecr
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

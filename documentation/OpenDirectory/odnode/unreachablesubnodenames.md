@@ -1,6 +1,6 @@
 # unreachableSubnodeNames()
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Returns an array of the subnodes of a given node that are currently unreachable.

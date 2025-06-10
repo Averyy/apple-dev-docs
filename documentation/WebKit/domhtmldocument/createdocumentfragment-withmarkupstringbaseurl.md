@@ -1,6 +1,6 @@
 # createDocumentFragment(withMarkupString:baseURL:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Creates a document fragment containing the given HTML markup.

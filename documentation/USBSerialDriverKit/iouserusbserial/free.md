@@ -1,6 +1,6 @@
 # free
 
-**Framework**: Usbserialdriverkit  
+**Framework**: USBSerialDriverKit  
 **Kind**: method
 
 Performs any final cleanup for the service.

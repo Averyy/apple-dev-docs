@@ -1,6 +1,6 @@
 # mixGroupName
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: property
 
 An arbitrary name that assigns an audio resource to an audio mix group.
@@ -10,6 +10,7 @@ An arbitrary name that assigns an audio resource to an audio mix group.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS ?+
 - visionOS 2.0+
 
 ## Declaration

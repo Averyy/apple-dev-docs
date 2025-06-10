@@ -1,6 +1,6 @@
 # completionHandler
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: property
 
 A closure that the playback controller executes when it reaches the end of the audio stream.
@@ -10,6 +10,7 @@ A closure that the playback controller executes when it reaches the end of the a
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

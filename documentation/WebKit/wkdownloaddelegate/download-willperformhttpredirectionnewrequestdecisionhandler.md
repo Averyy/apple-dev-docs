@@ -1,6 +1,6 @@
 # download(_:willPerformHTTPRedirection:newRequest:decisionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Asks the delegate to respond to the download’s redirect response.

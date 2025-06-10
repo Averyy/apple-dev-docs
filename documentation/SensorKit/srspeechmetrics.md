@@ -62,6 +62,7 @@ The [`siriSpeechMetrics`](srsensor/sirispeechmetrics.md) sensor provides this cl
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

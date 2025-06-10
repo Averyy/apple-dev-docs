@@ -25,8 +25,6 @@ This is a response that you provide to the [`Get a Signed Web Ad Impression Payl
 
 > ❗ **Important**:  The `attributionSourceNonce` in a web ad link, the `source_nonce` in an [`AdImpressionRequest`](adimpressionrequest.md), and the `nonce` in this response all represent the same UUID, but the encoding varies.
 
- The `attributionSourceNonce` in a web ad link, the `source_nonce` in an [`AdImpressionRequest`](adimpressionrequest.md), and the `nonce` in this response all represent the same UUID, but the encoding varies.
-
 ## See Also
 
 - [Generating a signature for attributable web ads](generating-a-signature-for-attributable-web-ads.md)

@@ -16,7 +16,7 @@ var data2: Int { get }
 
 #### Discussion
 
-The originator of the event defines the data in this property, and the data is dependent on the event type. If the type of this event isn’t  [`NSAppKitDefined`](nsappkitdefined.md), [`NSSystemDefined`](nssystemdefined.md), [`NSApplicationDefined`](nsapplicationdefined.md), or [`NSPeriodic`](nsperiodic.md), accessing this property raises [`internalInconsistencyException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1416220-internalinconsistencyexception).
+The originator of the event defines the data in this property, and the data is dependent on the event type. If the type of this event isn’t  [`NSAppKitDefined`](nsappkitdefined.md), [`NSSystemDefined`](nssystemdefined.md), [`NSApplicationDefined`](nsapplicationdefined.md), or [`NSPeriodic`](nsperiodic.md), accessing this property raises [`internalInconsistencyException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/internalInconsistencyException).
 
 [`NSPeriodic`](nsperiodic.md) events don’t use this property.
 

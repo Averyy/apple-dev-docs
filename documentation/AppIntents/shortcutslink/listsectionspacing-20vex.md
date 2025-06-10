@@ -8,8 +8,8 @@ Sets the spacing between adjacent sections in a `List` to a custom value.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
-- visionOS 1.0+
+- Mac Catalyst ?+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

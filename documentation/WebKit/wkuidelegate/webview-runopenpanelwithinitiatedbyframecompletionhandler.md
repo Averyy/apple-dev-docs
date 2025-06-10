@@ -1,6 +1,6 @@
 # webView(_:runOpenPanelWith:initiatedByFrame:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Displays a file upload panel.
@@ -10,6 +10,7 @@ Displays a file upload panel.
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
 - macOS 10.12+
+- visionOS 2.4+
 
 ## Declaration
 

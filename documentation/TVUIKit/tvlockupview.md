@@ -1,6 +1,6 @@
 # TVLockupView
 
-**Framework**: Tvuikit  
+**Framework**: TVUIKit  
 **Kind**: class
 
 A focusable view that presents main content, like a movie poster, and an optional header and footer.
@@ -60,7 +60,10 @@ The following figure shows a `TVLockupView` object that’s in focus. The yellow
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContextMenuInteractionDelegate](../UIKit/UIContextMenuInteractionDelegate.md)
@@ -69,6 +72,7 @@ The following figure shows a `TVLockupView` object that’s in focus. The yellow
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
 - [UIFocusItem](../UIKit/UIFocusItem.md)
 - [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
+- [UIPopoverPresentationControllerSourceItem](../UIKit/UIPopoverPresentationControllerSourceItem.md)
 - [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
 - [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
 - [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
@@ -92,4 +96,4 @@ The following figure shows a `TVLockupView` object that’s in focus. The yellow
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVUIKit/tvlockupview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvuikit/tvlockupview)*

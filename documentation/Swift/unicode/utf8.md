@@ -26,6 +26,8 @@ enum UTF8
   A type that can be used to parse `CodeUnits` into `EncodedScalar`s.
 - [Unicode.UTF8.ReverseParser](unicode/utf8/reverseparser.md)
   A type that can be used to parse a reversed sequence of `CodeUnits` into `EncodedScalar`s.
+- [Unicode.UTF8.ValidationError](unicode/utf8/validationerror.md)
+  The kind and location of a UTF-8 encoding error.
 ### Type Aliases
 - [Unicode.UTF8.CodeUnit](unicode/utf8/codeunit.md)
   The basic unit of encoding
@@ -56,6 +58,7 @@ enum UTF8
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Copyable](copyable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [UnicodeCodec](unicodecodec.md)
 
 ## See Also

@@ -32,8 +32,6 @@ The default value is [`false`](https://developer.apple.com/documentation/swift/f
 
 > ❗ **Important**:  In addition to setting `isUserInteractionEnabled` to `true`, you must subclass the node and define event callbacks in order to respond to user input.
 
- In addition to setting `isUserInteractionEnabled` to `true`, you must subclass the node and define event callbacks in order to respond to user input.
-
 ## See Also
 
 - [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)

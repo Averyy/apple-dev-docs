@@ -53,6 +53,7 @@ Use these flags with calls to the [`SSLSetSessionOption(_:_:_:)`](sslsetsessiono
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

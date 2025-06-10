@@ -6,6 +6,7 @@
 The distances to the far and near clipping planes from the person viewing the content, in meters.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

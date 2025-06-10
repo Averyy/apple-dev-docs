@@ -1,6 +1,6 @@
 # UITabBar
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A control that displays one or more buttons in a tab bar for selecting between different subtasks, views, or modes in an app.
@@ -129,6 +129,7 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)
@@ -165,6 +166,7 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   An object that describes an item in a tab bar.
 - [class UITab](uitab.md)
   An object that manages a tab in a tab bar.
+- [class UITabAccessory](uitabaccessory.md)
 - [class UISearchTab](uisearchtab.md)
   A tab subclass that represents the system’s search tab.
 - [class UITabGroup](uitabgroup.md)
@@ -175,4 +177,4 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uitabbar)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uitabbar)*

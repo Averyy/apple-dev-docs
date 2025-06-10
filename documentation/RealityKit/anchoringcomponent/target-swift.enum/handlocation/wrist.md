@@ -6,7 +6,6 @@
 An anchor location at the center of the wrist on the back of the hand.
 
 **Availability**:
-- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 ## Declaration

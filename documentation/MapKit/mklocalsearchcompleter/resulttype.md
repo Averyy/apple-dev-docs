@@ -12,6 +12,7 @@ Options that indicate types of search completions.
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 
@@ -51,6 +52,7 @@ struct ResultType
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

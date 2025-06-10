@@ -1,4 +1,4 @@
-# Erase a Device
+# Erase Device
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -12,8 +12,6 @@ Remotely and immediately erase a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -25,33 +23,33 @@ Refer to the following sections to determine supported channels and requirements
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS, watchOS |
-| User Channel | - |
-| Requires Supervision | - |
-| Allowed in User Enrollment | - |
-| Required Access Right | AllowDeviceErase |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| User channel | NA |
+| Requires supervision | macOS |
+| Allowed in user enrollment | NA |
+| Required access right | AllowDeviceErase |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object EraseDeviceCommand](erasedevicecommand.md)
-  The command to erase a device.
+  The command to remotely and immediately erase a device.
 - [object EraseDeviceResponse](erasedeviceresponse.md)
-  A response from the device after it processes the command to erase.
+  A response from the device after it processes the command to remotely and immediately erase a device.
 
 ## Request Body
 
-The command to erase a device.
+The request object the server returns for the Erase Device Command.
 
 ## See Also
 
-- [Lock a Device](device-lock-command.md)
+- [Device Lock](device-lock-command.md)
   Remotely and immediately lock a device.
-- [Restart a Device](restart-device-command.md)
+- [Restart Device](restart-device-command.md)
   Remotely and immediately restart a device.
-- [Shut Down a Device](shut-down-device-command.md)
+- [Shut Down Device](shut-down-device-command.md)
   Remotely and immediately shut down a device.
 
 

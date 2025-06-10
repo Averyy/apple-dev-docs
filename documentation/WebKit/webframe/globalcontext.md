@@ -1,6 +1,6 @@
 # globalContext
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The global JavaScript execution context for bridging between the WebKit and JavaScriptCore C API.

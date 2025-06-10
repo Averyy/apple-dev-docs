@@ -1,6 +1,6 @@
 # WKInterfaceLayoutDirection.leftToRight
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The layout direction is left-to-right.

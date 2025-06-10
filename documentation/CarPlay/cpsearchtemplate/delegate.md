@@ -13,6 +13,7 @@ The object that serves as the search template’s delegate.
 ## Declaration
 
 ```swift
+@MainActor
 weak var delegate: (any CPSearchTemplateDelegate)? { get set }
 ```
 

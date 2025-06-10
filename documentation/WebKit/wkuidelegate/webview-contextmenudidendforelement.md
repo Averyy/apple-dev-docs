@@ -1,6 +1,6 @@
 # webView(_:contextMenuDidEndForElement:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the delegate that the web view dismissed the contextual menu for the specified element.

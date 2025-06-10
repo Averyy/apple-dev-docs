@@ -1,6 +1,6 @@
 # TimelineProvider
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: protocol
 
 A type that advises WidgetKit when to update a widget’s display.
@@ -8,8 +8,9 @@ A type that advises WidgetKit when to update a widget’s display.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -20,6 +21,7 @@ protocol TimelineProvider
 
 ## Mentions
 
+- [Increasing the visibility of widgets in Smart Stacks](widget-suggestions-in-smart-stacks.md)
 - [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
 
 #### Overview
@@ -133,14 +135,16 @@ When your app is in the foreground, has an active media session, or is using the
   A type that specifies the date to display a widget, and, optionally, indicates the current relevance of the widget’s content.
 - [TimelineProvider.Context](timelineprovider/context.md)
   An object that contains details about how a widget is rendered, including its size and whether it appears in the widget gallery.
-### Instance Methods
+### Providing relevance clues
 - [func relevance() async -> WidgetRelevance<Void>](timelineprovider/relevance.md)
-  Provides an object containing attributes that describe when a specific widget could be relevant.
+  Provides an object containing attributes that describe when a specific widget is relevant.
 
 ## See Also
 
 - [Keeping a widget up to date](keeping-a-widget-up-to-date.md)
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
+- [protocol AppIntentTimelineProvider](appintenttimelineprovider.md)
+  A type that advises WidgetKit when to update a user-configurable widget’s display.
 - [protocol IntentTimelineProvider](intenttimelineprovider.md)
   A type that advises WidgetKit when to update a user-configurable widget’s display.
 - [struct TimelineProviderContext](timelineprovidercontext.md)
@@ -151,10 +155,8 @@ When your app is in the foreground, has an active media session, or is using the
   An object that specifies a date for WidgetKit to update a widget’s view.
 - [class WidgetCenter](widgetcenter.md)
   An object that contains a list of user-configured widgets and is used for reloading widget timelines.
-- [protocol AppIntentTimelineProvider](appintenttimelineprovider.md)
-  A type that advises WidgetKit when to update a user-configurable widget’s display.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/timelineprovider)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/timelineprovider)*

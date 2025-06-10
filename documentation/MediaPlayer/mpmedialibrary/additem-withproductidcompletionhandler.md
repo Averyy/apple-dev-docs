@@ -1,6 +1,6 @@
 # addItem(withProductID:completionHandler:)
 
-**Framework**: Mediaplayer  
+**Framework**: Media Player  
 **Kind**: method
 
 Adds the designated item to the user’s music library.

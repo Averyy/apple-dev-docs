@@ -1,6 +1,6 @@
 # formUnion(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Inserts the elements of another set into this option set.

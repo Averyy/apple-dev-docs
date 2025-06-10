@@ -42,6 +42,7 @@ final class RoomTrackingProvider
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [DataProvider](dataprovider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

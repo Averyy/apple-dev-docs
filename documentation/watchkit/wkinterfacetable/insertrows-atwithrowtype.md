@@ -1,6 +1,6 @@
 # insertRows(at:withRowType:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Inserts rows into the table at the specified indexes.
@@ -16,7 +16,7 @@ func insertRows(at rows: IndexSet, withRowType rowType: String)
 
 #### Discussion
 
-This method inserts the new row controllers into the existing array of row controllers using the semantics defined by the [`insert(_:at:)`](https://developer.apple.com/documentation/foundation/nsmutablearray/1416482-insert) method of [`NSMutableArray`](https://developer.apple.com/documentation/Foundation/NSMutableArray).
+This method inserts the new row controllers into the existing array of row controllers using the semantics defined by the [`insert(_:at:)`](https://developer.apple.com/documentation/Foundation/NSMutableArray/insert(_:at:)-73pln) method of [`NSMutableArray`](https://developer.apple.com/documentation/Foundation/NSMutableArray).
 
 ## Parameters
 

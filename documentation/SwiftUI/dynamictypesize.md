@@ -66,6 +66,7 @@ For more information, see [`Typography`](https://developer.apple.com/design/Huma
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

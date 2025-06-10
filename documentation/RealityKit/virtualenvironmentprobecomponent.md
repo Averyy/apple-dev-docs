@@ -1,6 +1,6 @@
 # VirtualEnvironmentProbeComponent
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 A component that provides environment lighting for entities you place within the same virtual world.
@@ -10,6 +10,7 @@ A component that provides environment lighting for entities you place within the
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -46,8 +47,6 @@ environment.components.set(probeComponent)
 ### Enumerations
 - [VirtualEnvironmentProbeComponent.Source](virtualenvironmentprobecomponent/source-swift.enum.md)
   Options that define the source of diffuse and specular lighting for environment lighting calculations.
-### Default Implementations
-- [Component Implementations](virtualenvironmentprobecomponent/component-implementations.md)
 
 ## Relationships
 
@@ -68,4 +67,4 @@ environment.components.set(probeComponent)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/virtualenvironmentprobecomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/virtualenvironmentprobecomponent)*

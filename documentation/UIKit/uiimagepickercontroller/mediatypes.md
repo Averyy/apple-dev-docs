@@ -1,6 +1,6 @@
 # mediaTypes
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 An array that indicates the media types to access by the media picker controller.

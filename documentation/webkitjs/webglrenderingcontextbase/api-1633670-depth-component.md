@@ -1,6 +1,6 @@
 # DEPTH_COMPONENT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

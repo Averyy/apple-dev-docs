@@ -25,6 +25,7 @@ protocol MusicCatalogTopLevelResourceRequesting : MusicItem
 ### Inherits From
 - [MusicItem](musicitem.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [Genre](genre.md)
 

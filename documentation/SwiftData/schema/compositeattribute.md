@@ -34,6 +34,8 @@ final class CompositeAttribute
 ### Debugging
 - [var debugDescription: String](schema/compositeattribute/debugdescription.md)
   A textual representation of this instance, suitable for debugging.
+### Operators
+- [static func == (Schema.CompositeAttribute, Schema.CompositeAttribute) -> Bool](schema/compositeattribute/==(_:_:).md)
 
 ## Relationships
 

@@ -5,9 +5,6 @@
 
 An anchor that can gain and lose its tracking state over the course of a session.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift
@@ -20,6 +17,7 @@ protocol OS_ar_trackable_anchor : OS_ar_anchor
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [OS_ar_anchor](os_ar_anchor.md)
 ### Inherited By
+- [OS_ar_accessory_anchor](os_ar_accessory_anchor.md)
 - [OS_ar_device_anchor](os_ar_device_anchor.md)
 - [OS_ar_hand_anchor](os_ar_hand_anchor.md)
 - [OS_ar_image_anchor](os_ar_image_anchor.md)

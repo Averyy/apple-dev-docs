@@ -22,8 +22,6 @@ func hv_gic_get_redistributor_reg(_ vcpu: hv_vcpu_t, _ reg: hv_gic_redistributor
 
 > ❗ **Important**:  Call this method on the owning thread.
 
- Call this method on the owning thread.
-
 GIC redistributor register enumeration values are equal to the device register offsets that the ARM GIC v3 specification defines. Alternatively, the client can use the offset value while looping through large register arrays.
 
 ## Parameters

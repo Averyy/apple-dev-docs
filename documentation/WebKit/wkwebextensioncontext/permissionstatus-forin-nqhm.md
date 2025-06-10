@@ -1,6 +1,6 @@
 # permissionStatus(for:in:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Checks the specified match pattern against the currently denied, granted, and requested permission match patterns.

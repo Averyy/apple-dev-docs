@@ -180,6 +180,15 @@ struct ContentView: View {
   Returns a Boolean value that indicates whether the current animation should merge with a previous animation.
 - [func velocity<V>(value: V, time: TimeInterval, context: AnimationContext<V>) -> V?](animation/velocity(value:time:context:).md)
   Calculates the current velocity of the animation.
+### Type Properties
+- [static var systemOverlayAppearance: Animation](animation/systemoverlayappearance.md)
+  Animation used when system overlays appear.
+- [static var systemOverlayDelayedDisappearance: Animation](animation/systemoverlaydelayeddisappearance.md)
+  Animation used when system overlays disappear, with a delay equal to `systemOverlayDisappearanceDelay`.
+- [static var systemOverlayDisappearance: Animation](animation/systemoverlaydisappearance.md)
+  Animation used when system overlays disappear.
+- [static var systemOverlayDisappearanceDelay: TimeInterval](animation/systemoverlaydisappearancedelay.md)
+  The length of time system overlays remain visible before disappearing.
 ### Type Methods
 - [static func interactiveSpring(duration: TimeInterval, extraBounce: Double, blendDuration: TimeInterval) -> Animation](animation/interactivespring(duration:extrabounce:blendduration:).md)
   A convenience for a `spring` animation with a lower `response` value, intended for driving interactive animations.
@@ -194,6 +203,7 @@ struct ContentView: View {
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-func AudioComponentCopyIcon(_ comp: AudioComponent) -> NSImage?
+func AudioComponentCopyIcon(_ comp: AudioComponent) -> UIImage?
 ```
 
 ## See Also

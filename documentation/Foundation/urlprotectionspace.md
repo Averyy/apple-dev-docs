@@ -77,6 +77,7 @@ A protection space defines a series of matching constraints that determine which
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -92,4 +93,4 @@ A protection space defines a series of matching constraints that determine which
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlprotectionspace)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlprotectionspace)*

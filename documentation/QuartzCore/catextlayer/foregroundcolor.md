@@ -1,6 +1,6 @@
 # foregroundColor
 
-**Framework**: Quartzcore  
+**Framework**: Core Animation  
 **Kind**: property
 
 The color used to render the receiver’s text. Animatable.
@@ -39,4 +39,4 @@ The `foregroundColor` property is only used when the [`string`](catextlayer/stri
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/catextlayer/foregroundcolor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/catextlayer/foregroundcolor)*

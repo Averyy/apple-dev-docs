@@ -1,6 +1,6 @@
 # write(from:startingAt:length:)
 
-**Framework**: Fskit  
+**Framework**: FSKit  
 **Kind**: method
 
 Synchronously writes data from from a buffer to the resource and executes a block afterwards.

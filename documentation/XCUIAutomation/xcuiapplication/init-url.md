@@ -1,6 +1,6 @@
 # init(url:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: init
 
 Creates a proxy for the application at the specified file system URL.

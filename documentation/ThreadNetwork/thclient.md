@@ -28,8 +28,6 @@ Some methods in [`THClient`](thclient.md) use the , a string that you store in y
 
 > ❗ **Important**: Thread credentials give you the ability to add any device into the Thread network. Use this information responsibly.
 
-Thread credentials give you the ability to add any device into the Thread network. Use this information responsibly.
-
 ## Topics
 
 ### Creating the Client

@@ -38,6 +38,7 @@ Your scene will be provided a `FinancialConnectionExtensionAuthorizationRequest`
 - [AppExtensionScene](../ExtensionKit/AppExtensionScene.md)
 - [FinancialConnectionUIExtensionScene](financialconnectionuiextensionscene.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

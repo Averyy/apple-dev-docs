@@ -1,6 +1,6 @@
 # wait(for:enforceOrder:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Waits on a group of expectations optionally enforcing their order of fulfillment.

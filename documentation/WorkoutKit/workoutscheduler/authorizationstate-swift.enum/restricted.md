@@ -1,6 +1,6 @@
 # WorkoutScheduler.AuthorizationState.restricted
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: case
 
 The system restricted your app from scheduling workouts.
@@ -10,6 +10,7 @@ The system restricted your app from scheduling workouts.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # documentCameraViewController(_:didFailWithError:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Tells the delegate that document scanning failed while the camera view controller was active.

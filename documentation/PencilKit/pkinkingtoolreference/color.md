@@ -15,7 +15,7 @@ The color of the ink.
 ## Declaration
 
 ```swift
-var color: NSColor { get }
+var color: UIColor { get }
 ```
 
 #### Discussion

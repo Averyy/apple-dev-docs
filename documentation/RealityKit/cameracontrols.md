@@ -18,15 +18,6 @@ struct CameraControls
 
 ## Topics
 
-### Operators
-- [static func == (CameraControls, CameraControls) -> Bool](cameracontrols/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](cameracontrols/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](cameracontrols/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static var dolly: CameraControls](cameracontrols/dolly.md)
   Move the camera forward and backward by dragging a trackpad or mouse.
@@ -38,8 +29,6 @@ struct CameraControls
   Move the viewport up, left, right, or down by dragging a trackpad or mouse.
 - [static var tilt: CameraControls](cameracontrols/tilt.md)
   Change the viewing angle by dragging a trackpad or mouse.
-### Default Implementations
-- [Equatable Implementations](cameracontrols/equatable-implementations.md)
 
 ## Relationships
 
@@ -47,6 +36,7 @@ struct CameraControls
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -246,4 +246,4 @@ Finally, the sample calls the `signal:` method to indicate that the frame has be
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/implementing-a-multistage-image-filter-using-heaps-and-events)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/implementing-a-multistage-image-filter-using-heaps-and-events)*

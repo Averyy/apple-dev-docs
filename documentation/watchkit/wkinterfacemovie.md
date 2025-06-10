@@ -1,6 +1,6 @@
 # WKInterfaceMovie
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface element that lets you play video and audio content in your watchOS app.

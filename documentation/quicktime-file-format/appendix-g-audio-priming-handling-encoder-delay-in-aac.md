@@ -1,6 +1,6 @@
 # Audio priming-handling encoder delay in AAC
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Position a source audio signal in a sound track to handle encoder delay.
 

@@ -15,8 +15,6 @@ When your app enters a multitasking mode, this entitlement allows it to continue
 
 > ❗ **Important**: Your app needs to run on iOS 13.5 or later to use this entitlement. Usage of this entitlement is restricted to apps that use `voip` as one of their [`UIBackgroundModes`](information-property-list/uibackgroundmodes.md).
 
-Your app needs to run on iOS 13.5 or later to use this entitlement. Usage of this entitlement is restricted to apps that use `voip` as one of their [`UIBackgroundModes`](information-property-list/uibackgroundmodes.md).
-
 ## See Also
 
 - [Media Device Discovery Extension](entitlements/com.apple.developer.media-device-discovery-extension.md)

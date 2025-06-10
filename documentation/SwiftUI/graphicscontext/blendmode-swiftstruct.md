@@ -99,6 +99,7 @@ Use one of these values to set the [`blendMode`](graphicscontext/blendmode-swift
 - [Equatable](../Swift/Equatable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

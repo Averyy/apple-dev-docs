@@ -1,6 +1,6 @@
 # changedValuesForCurrentEvent()
 
-**Framework**: Coredata  
+**Framework**: Core Data  
 **Kind**: method
 
 Returns a dictionary containing the keys and new values of persistent properties with changes since the last fetching or saving of the managed object.
@@ -22,7 +22,7 @@ func changedValuesForCurrentEvent() -> [String : Any]
 
 #### Return Value
 
-A dictionary with keys that are the names of persistent properties with changes since the last posting of [`NSManagedObjectContextObjectsDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name/1506884-nsmanagedobjectcontextobjectsdid), and with the new values for those properties.
+A dictionary with keys that are the names of persistent properties with changes since the last posting of [`NSManagedObjectContextObjectsDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextObjectsDidChange), and with the new values for those properties.
 
 #### Discussion
 

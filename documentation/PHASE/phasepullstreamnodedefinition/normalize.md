@@ -19,13 +19,7 @@ var normalize: Bool { get set }
 
 #### Discussion
 
-```None
-@property normalize
-@abstract Determines whether or not the engine should normalize the stream. The default value is NO.
-@discussion
-    In general, clients are advised to normalize the input. Normalization is required to properly calibrate the output level.
-    If you set this value to NO, it's advised that you do custom normalization of the audio data prior to passing the buffers to PHASE.
-```
+In general, clients are advised to normalize the input. Normalization is required to properly calibrate the output level. If you set this value to NO, it’s advised that you do custom normalization of the audio data prior to passing the buffers to PHASE.
 
 
 ---

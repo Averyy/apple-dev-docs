@@ -26,8 +26,6 @@ The value of this attribute is an [`NSNumber`](nsnumber.md) object containing a 
 
 > ❗ **Important**:  This attribute is different from [`kCTBaselineOffsetAttributeName`](https://developer.apple.com/documentation/CoreText/kCTBaselineOffsetAttributeName); you need to use [`kCTBaselineOffsetAttributeName`](https://developer.apple.com/documentation/CoreText/kCTBaselineOffsetAttributeName) if you are writing code for [`Core Text`](https://developer.apple.com/documentation/CoreText).
 
- This attribute is different from [`kCTBaselineOffsetAttributeName`](https://developer.apple.com/documentation/CoreText/kCTBaselineOffsetAttributeName); you need to use [`kCTBaselineOffsetAttributeName`](https://developer.apple.com/documentation/CoreText/kCTBaselineOffsetAttributeName) if you are writing code for [`Core Text`](https://developer.apple.com/documentation/CoreText).
-
 ## See Also
 
 - [let kCTBaselineOffsetAttributeName: CFString](../CoreText/kCTBaselineOffsetAttributeName.md)

@@ -1,6 +1,6 @@
 # DECISION_POINT_NEVER
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

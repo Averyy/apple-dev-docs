@@ -1,6 +1,6 @@
 # UIDocumentBrowserTransitionController
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An object that implements the standard loading and transition animations for a document browser.
@@ -61,4 +61,4 @@ You don’t instantiate instances of [`UIDocumentBrowserTransitionController`](u
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uidocumentbrowsertransitioncontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uidocumentbrowsertransitioncontroller)*

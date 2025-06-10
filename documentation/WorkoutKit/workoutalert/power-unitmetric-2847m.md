@@ -1,6 +1,6 @@
 # power(_:unit:metric:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: method
 
 **Availability**:
@@ -8,6 +8,7 @@
 - iPadOS 17.4+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.4+
 
 ## Declaration

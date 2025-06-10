@@ -1,4 +1,4 @@
-# Tips.EmptyDonation
+# EmptyDonation
 
 **Framework**: TipKit  
 **Kind**: struct
@@ -26,11 +26,16 @@ struct EmptyDonation
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [struct Event](tips/event.md)
+  A repeatable user-defined action.
 - [struct DonationTimeRange](tips/donationtimerange.md)
   A duration of time for filtering event donations.
+- [struct DonationLimit](tips/donationlimit.md)
+  Specify the maximum number of donations for an event.
 
 
 ---

@@ -1,6 +1,6 @@
 # initMouseEvent(_:canBubble:cancelable:view:detail:screenX:screenY:clientX:clientY:ctrlKey:altKey:shiftKey:metaKey:button:relatedTarget:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

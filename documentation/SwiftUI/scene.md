@@ -23,6 +23,7 @@ A part of an app’s user interface with a life cycle managed by the system.
 
 ## Mentions
 
+- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
 - [Migrating to the SwiftUI life cycle](migrating-to-the-swiftui-life-cycle.md)
 
 #### Overview
@@ -202,6 +203,8 @@ extension MyCustomType: Transition {
   Adds to a `DocumentGroupLaunchScene` actions that accept a list of selected files as their parameter.
 - [func immersiveContentBrightness(ImmersiveContentBrightness) -> some Scene](scene/immersivecontentbrightness(_:).md)
   Sets the content brightness of an immersive space.
+- [func immersiveEnvironmentBehavior(ImmersiveEnvironmentBehavior) -> some Scene](scene/immersiveenvironmentbehavior(_:).md)
+  Sets the immersive environment behavior that should apply when this scene opens.
 - [func menuBarExtraStyle<S>(S) -> some Scene](scene/menubarextrastyle(_:).md)
   Sets the style for menu bar extra created by this scene.
 
@@ -209,12 +212,14 @@ extension MyCustomType: Transition {
 
 ### Conforming Types
 - [AlertScene](alertscene.md)
+- [AssistiveAccess](assistiveaccess.md)
 - [DocumentGroup](documentgroup.md)
 - [DocumentGroupLaunchScene](documentgrouplaunchscene.md)
 - [Group](group.md)
 - [ImmersiveSpace](immersivespace.md)
 - [MenuBarExtra](menubarextra.md)
 - [ModifiedContent](modifiedcontent.md)
+- [RemoteImmersiveSpace](remoteimmersivespace.md)
 - [Settings](settings.md)
 - [UtilityWindow](utilitywindow.md)
 - [WKNotificationScene](wknotificationscene.md)

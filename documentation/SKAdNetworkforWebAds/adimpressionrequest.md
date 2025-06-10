@@ -24,8 +24,6 @@ The device generates the [`AdImpressionRequest`](adimpressionrequest.md) and sen
 
 > ❗ **Important**:  The `attributionSourceNonce` in a web ad, the `source_nonce` in this request, and the `nonce` in a corresponding [`AdImpressionResponse`](adimpressionresponse.md) all represent the same UUID, but the encoding varies.
 
- The `attributionSourceNonce` in a web ad, the `source_nonce` in this request, and the `nonce` in a corresponding [`AdImpressionResponse`](adimpressionresponse.md) all represent the same UUID, but the encoding varies.
-
 ## See Also
 
 - [Get a Signed Web Ad Impression Payload](get-a-signed-skadnetwork-ad-payload-for-a-web-ad..md)

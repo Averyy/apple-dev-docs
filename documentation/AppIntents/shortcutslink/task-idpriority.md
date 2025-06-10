@@ -8,10 +8,10 @@ Adds a task to perform before this view appears or when a specified value change
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 8.0+
 
 ## Declaration
@@ -46,7 +46,7 @@ Text(status ?? "Signed Out")
     }
 ```
 
-This example uses the [`notifications(named:object:)`](https://developer.apple.com/documentation/foundation/notificationcenter/3813137-notifications) method to create an asynchronous sequence of notifications, given by an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) instance. The example then maps the notification sequence to a sequence of strings that correspond to values stored with each notification.
+This example uses the [`notifications(named:object:)`](https://developer.apple.com/documentation/Foundation/NotificationCenter/notifications(named:object:)) method to create an asynchronous sequence of notifications, given by an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) instance. The example then maps the notification sequence to a sequence of strings that correspond to values stored with each notification.
 
 Elsewhere, the server defines a custom `didUpdateStatus` notification:
 

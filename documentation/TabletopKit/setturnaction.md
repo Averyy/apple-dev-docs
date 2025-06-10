@@ -34,6 +34,7 @@ To create a set turn action, use the [`setTurn(forSeat:context:)`](tabletopactio
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TabletopAction](tabletopaction.md)
 
 ## See Also

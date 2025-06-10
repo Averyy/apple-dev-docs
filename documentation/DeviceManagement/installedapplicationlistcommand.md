@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to get a list of installed apps on a device.
+The command to get a list of the installed apps on a device.
 
 **Availability**:
 - iOS 5.0+
@@ -12,8 +12,6 @@ The command to get a list of installed apps on a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,14 +25,14 @@ object InstalledApplicationListCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object InstalledApplicationListCommand.Command](installedapplicationlistcommand/command-data.dictionary.md)
-  The request dictionary to get a list of installed apps.
+  The command to get a list of the installed apps on a device.
 
 ## See Also
 
 - [object InstalledApplicationListResponse](installedapplicationlistresponse.md)
-  A response from the device after it processes the command to get a list of installed apps.
+  A response from the device after it processes the command to get a list of the installed apps on a device.
 
 
 ---

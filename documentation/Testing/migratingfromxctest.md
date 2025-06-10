@@ -1,6 +1,6 @@
 # Migrating a test from XCTest
 
-**Framework**: Testing
+**Framework**: Swift Testing
 
 Migrate an existing test method or test class written using XCTest.
 
@@ -92,7 +92,7 @@ When using either `continueAfterFailure` or [`require(_:_:sourceLocation:)`](req
 
 XCTest has a class, [`XCTestExpectation`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/xctestexpectation), that represents some asynchronous condition. You create an instance of this class (or a subclass like [`XCTKeyPathExpectation`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/xctkeypathexpectation)) using an initializer or a convenience method on `XCTestCase`. When the condition represented by an expectation occurs, the developer  the expectation. Concurrently, the developer  the expectation to be fulfilled using an instance of [`XCTWaiter`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/xctwaiter) or using a convenience method on `XCTestCase`.
 
-Wherever possible, prefer to use Swift concurrency to validate asynchronous conditions. For example, if it’s necessary to determine the result of an asynchronous Swift function, it can be awaited with `await`. For a function that takes a completion handler but which doesn’t use `await`, a Swift [`continuation`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/withcheckedcontinuation(function:_:)) can be used to convert the call into an `async`-compatible one.
+Wherever possible, prefer to use Swift concurrency to validate asynchronous conditions. For example, if it’s necessary to determine the result of an asynchronous Swift function, it can be awaited with `await`. For a function that takes a completion handler but which doesn’t use `await`, a Swift [`continuation`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/withcheckedcontinuation(isolation:function:_:)) can be used to convert the call into an `async`-compatible one.
 
 Some tests, especially those that test asynchronously-delivered events, cannot be readily converted to use Swift concurrency. The testing library offers functionality called  which can be used to implement these tests. Instances of [`Confirmation`](confirmation.md) are created and used within the scope of the functions [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](confirmation(_:expectedcount:isolation:sourcelocation:_:)-5mqz2.md) and [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](confirmation(_:expectedcount:isolation:sourcelocation:_:)-l3il.md).
 
@@ -141,6 +141,16 @@ Annotate your test suite with [`serialized`](trait/serialized.md) to run tests w
 
 For more information, see [`Running tests serially or in parallel`](parallelization.md).
 
+##### Attach Values
+
+In XCTest, you can create an instance of [`XCTAttachment`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/xctattachment) representing arbitrary data, files, property lists, encodable objects, images, and other types of information that would be useful to have available if a test fails. Swift Testing has an [`Attachment`](attachment.md) type that serves much the same purpose.
+
+To attach a value from a test to the output of a test run, that value must conform to the [`Attachable`](attachable.md) protocol. The testing library provides default conformances for various standard library and Foundation types.
+
+If you want to attach a value of another type, and that type already conforms to [`Encodable`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/encodable) or to [`NSSecureCoding`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/nssecurecoding), the testing library automatically provides a default implementation when you import Foundation:
+
+If you have a type that does not (or cannot) conform to `Encodable` or `NSSecureCoding`, or if you want fine-grained control over how it is serialized when attaching it to a test, you can provide your own implementation of [`withUnsafeBytes(for:_:)`](attachable/withunsafebytes(for:_:).md).
+
 ## See Also
 
 - [Defining test functions](definingtests.md)
@@ -150,7 +160,7 @@ For more information, see [`Running tests serially or in parallel`](parallelizat
 - [Expectations and confirmations](expectations.md)
   Check for expected values, outcomes, and asynchronous events in tests.
 - [Known issues](known-issues.md)
-  Highlight known issues when running tests.
+  Mark issues as known when running tests.
 - [Defining test functions](definingtests.md)
   Define a test function to validate that code is working correctly.
 - [Organizing test functions with suite types](organizingtests.md)
@@ -165,4 +175,4 @@ For more information, see [`Running tests serially or in parallel`](parallelizat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Testing/migratingfromxctest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/testing/migratingfromxctest)*

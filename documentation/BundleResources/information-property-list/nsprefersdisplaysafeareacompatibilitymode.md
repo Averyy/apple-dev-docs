@@ -1,6 +1,6 @@
 # NSPrefersDisplaySafeAreaCompatibilityMode
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 A Boolean value that indicates whether the app prefers to run in compatibility mode when necessary.
@@ -20,6 +20,8 @@ After you audit your app and verify that it runs correctly on Mac computers that
 
 ## See Also
 
+- [UIDesignRequiresCompatibility](information-property-list/uidesignrequirescompatibility.md)
+  A Boolean value that indicates whether the system runs the app using a compatibility mode for UI.
 - [UIUserInterfaceStyle](information-property-list/uiuserinterfacestyle.md)
   The user interface style for the app.
 - [UIViewEdgeAntialiasing](information-property-list/uiviewedgeantialiasing.md)

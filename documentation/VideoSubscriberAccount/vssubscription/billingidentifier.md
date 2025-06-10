@@ -1,6 +1,6 @@
 # billingIdentifier
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The subscriber’s billing group.

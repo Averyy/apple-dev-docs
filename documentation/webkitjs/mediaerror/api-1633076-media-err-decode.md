@@ -1,6 +1,6 @@
 # MEDIA_ERR_DECODE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

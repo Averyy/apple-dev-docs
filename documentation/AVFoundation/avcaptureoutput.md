@@ -31,14 +31,19 @@ A capture output can have multiple connections, one for each stream of media tha
 
 ## Topics
 
-### Accessing Connections
+### Accessing connections
 - [var connections: [AVCaptureConnection]](avcaptureoutput/connections.md)
   The capture output object’s connections.
 - [func connection(with: AVMediaType) -> AVCaptureConnection?](avcaptureoutput/connection(with:).md)
   Returns the first connection with an input port of a specified media type.
 - [AVCaptureOutput.DataDroppedReason](avcaptureoutput/datadroppedreason.md)
   Constants that define reasons for why the system dropped a frame.
-### Converting Between Coordinate Systems
+### Managing deferred start
+- [var isDeferredStartEnabled: Bool](avcaptureoutput/isdeferredstartenabled.md)
+  A Boolean value that indicates whether to defer starting this capture output.
+- [var isDeferredStartSupported: Bool](avcaptureoutput/isdeferredstartsupported.md)
+  A Boolean value that indicates whether the output supports deferred start.
+### Converting between coordinate systems
 - [func transformedMetadataObject(for: AVMetadataObject, connection: AVCaptureConnection) -> AVMetadataObject?](avcaptureoutput/transformedmetadataobject(for:connection:).md)
   Converts a metadata object’s visual properties to layer coordinates.
 - [func metadataOutputRectConverted(fromOutputRect: CGRect) -> CGRect](avcaptureoutput/metadataoutputrectconverted(fromoutputrect:).md)
@@ -75,6 +80,8 @@ A capture output can have multiple connections, one for each stream of media tha
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
 - [AVCam: Building a camera app](avcam-building-a-camera-app.md)
   Capture photos and record video using the front and rear iPhone and iPad cameras.
+- [Capturing cinematic video](capturing-cinematic-video.md)
+  Capture video with an adjustable depth of field and focus points.
 - [AVMultiCamPiP: Capturing from Multiple Cameras](avmulticampip-capturing-from-multiple-cameras.md)
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
 - [AVCamBarcode: Detecting Barcodes and Faces](avcambarcode-detecting-barcodes-and-faces.md)

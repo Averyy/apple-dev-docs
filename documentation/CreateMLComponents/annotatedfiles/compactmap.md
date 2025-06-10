@@ -1,6 +1,6 @@
 # compactMap(_:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns an array containing the non-`nil` results of calling the given transformation with each element of this sequence.

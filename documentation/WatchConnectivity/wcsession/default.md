@@ -1,6 +1,6 @@
 # default
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 Returns the singleton session object for the current device.

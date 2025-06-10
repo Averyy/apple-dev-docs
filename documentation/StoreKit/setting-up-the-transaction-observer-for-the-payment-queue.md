@@ -37,8 +37,6 @@ let iapObserver = StoreObserver()
 
 > 💡 **Tip**:  Consider creating your observer as a shared instance of the class for global reference in any other class. A shared instance also ensures the lifetime of the object, so that the same instance handles callbacks for the [`SKPaymentTransactionObserver`](skpaymenttransactionobserver.md) protocol.
 
- Consider creating your observer as a shared instance of the class for global reference in any other class. A shared instance also ensures the lifetime of the object, so that the same instance handles callbacks for the [`SKPaymentTransactionObserver`](skpaymenttransactionobserver.md) protocol.
-
 After you create the transaction observer, you can add it to the payment queue.
 
 ##### Add an Observer

@@ -16,6 +16,7 @@ enum Preset
 ## Topics
 
 ### Enumeration Cases
+- [SCStreamConfiguration.Preset.captureHDRRecordingPreservedSDRHDR10](scstreamconfiguration/preset/capturehdrrecordingpreservedsdrhdr10.md)
 - [SCStreamConfiguration.Preset.captureHDRScreenshotCanonicalDisplay](scstreamconfiguration/preset/capturehdrscreenshotcanonicaldisplay.md)
 - [SCStreamConfiguration.Preset.captureHDRScreenshotLocalDisplay](scstreamconfiguration/preset/capturehdrscreenshotlocaldisplay.md)
 - [SCStreamConfiguration.Preset.captureHDRStreamCanonicalDisplay](scstreamconfiguration/preset/capturehdrstreamcanonicaldisplay.md)
@@ -31,6 +32,7 @@ enum Preset
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

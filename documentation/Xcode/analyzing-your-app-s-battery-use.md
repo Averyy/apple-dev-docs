@@ -29,6 +29,11 @@ The power use categories are:
 - NFC: Used for NFC within your app
 - Other: A combination of the power in the above categories thatʼs too small to show in the list and any other power use
 
+## See Also
+
+- [Measuring your app’s power use with Power Profiler](measuring-your-app-s-power-use-with-power-profiler.md)
+  Profile your app’s power impact whether or not your device is connected to Xcode.
+
 
 ---
 

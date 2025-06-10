@@ -31,7 +31,9 @@ protocol ASAuthorizationProviderExtensionRegistrationHandler : NSObjectProtocol
 - [func protocolVersion() -> ASAuthorizationProviderExtensionPlatformSSOProtocolVersion](asauthorizationproviderextensionregistrationhandler/protocolversion.md)
 - [func registrationDidCancel()](asauthorizationproviderextensionregistrationhandler/registrationdidcancel.md)
 - [func supportedGrantTypes() -> ASAuthorizationProviderExtensionSupportedGrantTypes](asauthorizationproviderextensionregistrationhandler/supportedgranttypes.md)
+- [func displayNames(forGroups: [String], using: ASAuthorizationProviderExtensionLoginManager, completion: ([String : String]) -> Void)](asauthorizationproviderextensionregistrationhandler/displaynames(forgroups:using:completion:).md)
 - [func keyWillRotate(for: ASAuthorizationProviderExtensionKeyType, newKey: SecKey, loginManager: ASAuthorizationProviderExtensionLoginManager, completion: (Bool) -> Void)](asauthorizationproviderextensionregistrationhandler/keywillrotate(for:newkey:loginmanager:completion:).md)
+- [func profilePictureForUser(using: ASAuthorizationProviderExtensionLoginManager, completion: (Data) -> Void)](asauthorizationproviderextensionregistrationhandler/profilepictureforuser(using:completion:).md)
 ### Instance Properties
 - [var supportedDeviceEncryptionAlgorithms: [ASAuthorizationProviderExtensionEncryptionAlgorithm]](asauthorizationproviderextensionregistrationhandler/supporteddeviceencryptionalgorithms.md)
 - [var supportedDeviceSigningAlgorithms: [ASAuthorizationProviderExtensionSigningAlgorithm]](asauthorizationproviderextensionregistrationhandler/supporteddevicesigningalgorithms.md)

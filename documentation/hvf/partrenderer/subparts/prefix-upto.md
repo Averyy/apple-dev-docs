@@ -1,6 +1,6 @@
 # prefix(upTo:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns a subsequence from the start of the collection up to, but not including, the specified position.

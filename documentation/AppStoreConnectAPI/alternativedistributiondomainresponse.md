@@ -22,14 +22,6 @@ object AlternativeDistributionDomainResponse
   The request body you use to create an alternative distribution domain.
 - [object AlternativeDistributionDomainsResponse](alternativedistributiondomainsresponse.md)
   A response that contains a list of alternative distribution domain resources.
-- [object MarketplaceDomain](marketplacedomain.md)
-  The data structure that represents an alternative marketplace domain resource.
-- [object MarketplaceDomainCreateRequest](marketplacedomaincreaterequest.md)
-  The request body you use to create an alternative marketplace domain.
-- [object MarketplaceDomainResponse](marketplacedomainresponse.md)
-  A response that contains a single alternative marketplace domain resource.
-- [object MarketplaceDomainsResponse](marketplacedomainsresponse.md)
-  A response that contains a list of alternative marketplace domain resources.
 
 
 ---

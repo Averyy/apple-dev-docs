@@ -1,6 +1,6 @@
 # MAX_VIEWPORT_DIMS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

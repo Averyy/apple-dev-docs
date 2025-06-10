@@ -1,6 +1,6 @@
 # addTest(_:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Adds a test to the test suite.

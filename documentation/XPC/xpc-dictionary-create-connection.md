@@ -1,6 +1,6 @@
 # xpc_dictionary_create_connection(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates a connection from a dictionary directly.

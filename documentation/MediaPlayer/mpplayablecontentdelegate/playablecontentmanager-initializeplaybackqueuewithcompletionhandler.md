@@ -1,6 +1,6 @@
 # playableContentManager(_:initializePlaybackQueueWithCompletionHandler:)
 
-**Framework**: Mediaplayer  
+**Framework**: Media Player  
 **Kind**: method
 
 Asks the delegate to prepare suggested content for playback.

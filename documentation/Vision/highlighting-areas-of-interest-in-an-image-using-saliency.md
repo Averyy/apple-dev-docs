@@ -28,4 +28,4 @@ Quantify and visualize where people are likely to look in an image.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/highlighting-areas-of-interest-in-an-image-using-saliency)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/highlighting-areas-of-interest-in-an-image-using-saliency)*

@@ -1,6 +1,6 @@
 # Adding a Video
 
-**Framework**: Applenews
+**Framework**: Apple News
 
 Add a video component inside the header component.
 
@@ -108,4 +108,4 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/adding-a-video)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applenews/adding-a-video)*

@@ -28,8 +28,6 @@ This method executes synchronously.
 
 > ❗ **Important**:  If the Block parameter is `nil` this method will raise an exception.
 
- If the Block parameter is `nil` this method will raise an exception.
-
 ## Parameters
 
 - `range`: The range of items to enumerate. If the range intersects a range of the receiver’s indexes, then that intersection will be passed to the block.

@@ -16,6 +16,7 @@ Get a list of customer reviews for a specific version of your app.
 
 - [List All Customer Reviews for an App](get-v1-apps-_id_-customerreviews.md)
   Get a list of customer reviews for a specific app.
+- [GET /v1/apps/{id}/relationships/customerReviews](get-v1-apps-_id_-relationships-customerreviews.md)
 
 
 ---

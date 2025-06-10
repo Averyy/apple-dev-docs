@@ -1,6 +1,6 @@
 # webViewDidBeginEditing(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sent by the default notification center when the user begins editing the web view.

@@ -1,6 +1,6 @@
 # NSMediaLibraryBrowserController
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An object that configures and displays a Media Library Browser panel.
@@ -31,7 +31,7 @@ The Media Library Browser defines two pasteboard types for decoding the dragged 
 
 There is a third, less specialized, type of media library pasteboard. When the user initiates a drag the pasteboard will contain an array with one more more  [`NSFilenamesPboardType`](nsfilenamespboardtype.md) pasteboard items, one for each of the files within the group dragged from the media-group-organized pane, and one or more items when a media item or items are dragged from the media item pane.
 
-If you do not need access to the associated Media Library metadata, using the `NSFilenamesPboardType` pasteboard data is the simplest means of retrieving the dragged content, although accessing the media in this manner when your app is sandboxed requires that you use the `NSURL` [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/1417051-startaccessingsecurityscopedreso) and [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/1413736-stopaccessingsecurityscopedresou) methods.
+If you do not need access to the associated Media Library metadata, using the `NSFilenamesPboardType` pasteboard data is the simplest means of retrieving the dragged content, although accessing the media in this manner when your app is sandboxed requires that you use the `NSURL` [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/startAccessingSecurityScopedResource()) and [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/stopAccessingSecurityScopedResource()) methods.
 
 ###### The Media Group Pasteboard Type
 
@@ -135,4 +135,4 @@ Listing 2. Retrieving MLMediaObject instances from the pasteboard
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsmedialibrarybrowsercontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsmedialibrarybrowsercontroller)*

@@ -31,6 +31,9 @@ You can use a proxy for anchor resolution.
   Resolves the value of an anchor to the container view.
 - [func transform(in: some CoordinateSpaceProtocol) -> AffineTransform3D?](geometryproxy3d/transform(in:).md)
   The container view’s 3D transform converted to a defined coordinate space.
+### Instance Methods
+- [func coordinateSpace3D(for: any CoordinateSpaceProtocol) -> GeometryProxyCoordinateSpace3D](geometryproxy3d/coordinatespace3d(for:).md)
+  Returns a value that can be used for `CoordinateSpace3D` based coordinate conversions.
 
 ## See Also
 

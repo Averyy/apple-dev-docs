@@ -1,6 +1,6 @@
 # Generating procedural textures
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Display a 3D model that generates procedural textures in a reality view.
 

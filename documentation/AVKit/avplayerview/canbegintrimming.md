@@ -21,7 +21,7 @@ var canBeginTrimming: Bool { get }
 
 #### Discussion
 
-Before calling [`beginTrimming(completionHandler:)`](avplayerview/begintrimming(completionhandler:).md), check the value of this property to determine whether the player view and current media support trimming. This property value is [`false`](https://developer.apple.com/documentation/swift/false) if the current controls style doesn’t support trimming, the media is content protected, or when playing HTTP Live Streaming media.
+Before calling [`beginTrimming(completionHandler:)`](avplayerview/begintrimming(completionhandler:).md), check the value of this property to determine whether the player view and current media support trimming. This property value is `false` if the current controls style doesn’t support trimming, the media is content protected, or when playing HTTP Live Streaming media.
 
 If you’re presenting a menu item to initiate trimming, a good place to perform this check is in the [`validateUserInterfaceItem(_:)`](https://developer.apple.com/documentation/AppKit/NSDocument/validateUserInterfaceItem(_:)) method of [`NSDocument`](https://developer.apple.com/documentation/AppKit/NSDocument):
 

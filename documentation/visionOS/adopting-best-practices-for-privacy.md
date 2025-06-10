@@ -1,6 +1,6 @@
 # Adopting best practices for privacy and user preferences
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Minimize your use of sensitive information and provide a clear statement of what information you do use and how you use it.
 
@@ -13,8 +13,6 @@ In the few cases where you actually need access to hand position or information 
 ![The system displays an alert asking for permission to provide hand data to an app.](https://docs-assets.developer.apple.com/published/15c6ac2e4217d91e7009d7d88ae7f908/tracking-authorization%402x.png)
 
 > ❗ **Important**: It’s your responsibility to protect any data your app collects, and to use it in responsible and privacy-preserving ways. Don’t ask for data that you don’t need, be transparent about how you use the data you acquire, and respect the choices of the person whose data it is.
-
-It’s your responsibility to protect any data your app collects, and to use it in responsible and privacy-preserving ways. Don’t ask for data that you don’t need, be transparent about how you use the data you acquire, and respect the choices of the person whose data it is.
 
 For information about how to specify the privacy data your app uses, see [`Describing data use in privacy manifests`](https://developer.apple.com/documentation/BundleResources/describing-data-use-in-privacy-manifests). For general information about privacy, see [`Protecting the User’s Privacy`](https://developer.apple.com/documentation/UIKit/protecting-the-user-s-privacy).
 

@@ -1,6 +1,6 @@
 # map(_:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns an array containing the results of mapping the given closure over the sequence’s elements.

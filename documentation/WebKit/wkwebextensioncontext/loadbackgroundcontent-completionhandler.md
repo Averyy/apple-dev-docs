@@ -1,6 +1,6 @@
 # loadBackgroundContent(completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Loads the background content if needed for the extension.

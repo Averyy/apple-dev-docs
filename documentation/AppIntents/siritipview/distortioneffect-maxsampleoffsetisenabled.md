@@ -10,7 +10,7 @@ Returns a new view that applies `shader` to `self` as a geometric distortion eff
 - iPadOS 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -34,8 +34,6 @@ For a shader function to act as a distortion effect it must have a function sign
 where `position` is the user-space coordinates of the destination pixel applied to the shader. `args...` should be compatible with the uniform arguments bound to `shader`. The function should return the user-space coordinates of the corresponding source pixel.
 
 > ❗ **Important**: Views backed by AppKit or UIKit views may not render into the filtered layer. Instead, they log a warning and display a placeholder image to highlight the error.
-
-Views backed by AppKit or UIKit views may not render into the filtered layer. Instead, they log a warning and display a placeholder image to highlight the error.
 
 ## Parameters
 

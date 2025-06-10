@@ -36,7 +36,7 @@ The following example demonstrates how to add a map to a `DIV` element using HTM
 The following example demonstrates how to add a map to a `DIV` element using JavaScript:
 
 ```javascript
-var map = new mapkit.Map('mapContainer', { center: new mapkit.Coordinate(37.334883, -122.008977) });
+const map = new mapkit.Map('mapContainer', { center: new mapkit.Coordinate(37.334883, -122.008977) });
 ```
 
 ## Parameters

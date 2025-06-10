@@ -1,6 +1,6 @@
 # WKPreferences
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that encapsulates the standard behaviors to apply to websites.
@@ -56,6 +56,8 @@ Use a [`WKPreferences`](wkpreferences.md) object to specify the preferences for 
   A Boolean value that indicates whether JavaScript is enabled.
 - [var plugInsEnabled: Bool](wkpreferences/pluginsenabled.md)
   A Boolean value that indicates whether plug-ins are enabled.
+### Instance Properties
+- [var isLookToScrollEnabled: Bool](wkpreferences/islooktoscrollenabled.md)
 
 ## Relationships
 

@@ -33,13 +33,9 @@ To request a bracketed capture, follow these steps:
 
 > ❗ **Important**:  Bracketed capture supports only the [`isHighResolutionPhotoEnabled`](avcapturephotosettings/ishighresolutionphotoenabled.md) and [`previewPhotoFormat`](avcapturephotosettings/previewphotoformat.md) settings defined by the [`AVCapturePhotoSettings`](avcapturephotosettings.md) superclass. Bracketed capture does not support flash, auto stabilization, or Live Photos—attempting to set any of the corresponding properties raises an exception.
 
- Bracketed capture supports only the [`isHighResolutionPhotoEnabled`](avcapturephotosettings/ishighresolutionphotoenabled.md) and [`previewPhotoFormat`](avcapturephotosettings/previewphotoformat.md) settings defined by the [`AVCapturePhotoSettings`](avcapturephotosettings.md) superclass. Bracketed capture does not support flash, auto stabilization, or Live Photos—attempting to set any of the corresponding properties raises an exception.
-
 1. Initiate capture by passing the bracketed photo settings object to your photo output’s [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method, along with a delegate object to receive messages about the progress and results of the capture.
 
 > 💡 **Tip**:  Capturing a multiple-image bracket may require allocation of additional resources. See the [`setPreparedPhotoSettingsArray(_:completionHandler:)`](avcapturephotooutput/setpreparedphotosettingsarray(_:completionhandler:).md) method.
-
- Capturing a multiple-image bracket may require allocation of additional resources. See the [`setPreparedPhotoSettingsArray(_:completionHandler:)`](avcapturephotooutput/setpreparedphotosettingsarray(_:completionhandler:).md) method.
 
 1. The photo output calls your delegate’s [`photoOutput(_:didFinishProcessingPhoto:previewPhoto:resolvedSettings:bracketSettings:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:previewphoto:resolvedsettings:bracketsettings:error:).md) or [`photoOutput(_:didFinishProcessingRawPhoto:previewPhoto:resolvedSettings:bracketSettings:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingrawphoto:previewphoto:resolvedsettings:bracketsettings:error:).md) methods many times corresponding to the number of captures in the bracket. Each call provides the [`AVCaptureBracketedStillImageSettings`](avcapturebracketedstillimagesettings.md) object indicating which capture in the bracket the captured image corresponds to.
 

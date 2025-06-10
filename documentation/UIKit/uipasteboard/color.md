@@ -1,6 +1,6 @@
 # color
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The color object of the first pasteboard item.

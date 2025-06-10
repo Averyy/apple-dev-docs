@@ -1,6 +1,6 @@
 # humidity
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The amount of water vapor in the air.

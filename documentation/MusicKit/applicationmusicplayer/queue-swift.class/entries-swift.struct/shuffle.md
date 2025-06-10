@@ -1,6 +1,6 @@
 # shuffle()
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Shuffles the collection in place.

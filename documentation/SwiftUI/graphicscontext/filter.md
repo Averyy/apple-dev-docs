@@ -70,6 +70,7 @@ Create and configure a filter that produces an image processing effect, like add
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # WeatherKit
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: module
 
 Deliver weather conditions and alerts to your users.

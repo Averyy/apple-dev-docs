@@ -1,6 +1,6 @@
 # ALIASED_LINE_WIDTH_RANGE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

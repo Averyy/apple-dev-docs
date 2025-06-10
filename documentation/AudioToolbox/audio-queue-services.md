@@ -1,6 +1,6 @@
 # Audio Queue Services
 
-**Framework**: Audiotoolbox
+**Framework**: Audio Toolbox
 
 Connect to audio hardware and manage the recording or playback process.
 
@@ -262,8 +262,10 @@ Audio Queue Services enables you to record and play audio in linear PCM, in comp
   Play short sounds or trigger a vibration effect on iOS devices with the appropriate hardware.
 - [Music Player](music-player.md)
   Create and play a sequence of tracks, and manage aspects of playback in response to standard events.
+- [Anchoring sound to a window or volume](spatializing-sound-from-a-uiscene.md)
+  Provide unique app experiences by attaching sounds to windows and volumes in 3D space.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AudioToolbox/audio-queue-services)*
+*[View on Apple Developer](https://developer.apple.com/documentation/audiotoolbox/audio-queue-services)*

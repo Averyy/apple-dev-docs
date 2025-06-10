@@ -17,7 +17,7 @@ For this sample app to show a path, it needs to receive a stream of location upd
 
 ##### Configure a Location Manager to Receive Location Updates
 
-Before recording the user’s path, the app asks the user for permission to access location data while the app is running. After the user grants location authorization, a `CLLocationManager` receives a stream of location updates as the user travels. The app also receives location updates while in the background by setting the [`allowsBackgroundLocationUpdates`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager/allowsBackgroundLocationUpdates) property of [`CLLocationManager`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager) to `true`. This combination of when-in-use authorization and background updates allows the app to receive location updates while in the background, and the system displays a location service indicator when the app isn’t in the foreground.
+Before recording the user’s path, the app asks the user for permission to access location data while the app is running. After the user grants location authorization, a `CLLocationManager` receives a stream of location updates as the user travels. The app also receives location updates while in the background by setting the `allowsBackgroundLocationUpdates` property of [`CLLocationManager`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager) to `true`. This combination of when-in-use authorization and background updates allows the app to receive location updates while in the background, and the system displays a location service indicator when the app isn’t in the foreground.
 
 ```swift
 locationManager.requestWhenInUseAuthorization()
@@ -26,9 +26,9 @@ locationManager.requestWhenInUseAuthorization()
 locationManager.allowsBackgroundLocationUpdates = true
 ```
 
-The app sets a default value for the [`desiredAccuracy`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager/desiredAccuracy) property on the location manager. This value is customizable in a menu to demonstrate how the value of this property affects the accuracy of the recorded data. Lower accuracy values allow the device to conserve power and have less impact on the device’s battery life. For example, if this app is for hiking, it needs high-accuracy data to capture a detailed path for the user’s hiking route, requiring [`kCLLocationAccuracyBest`](https://developer.apple.com/documentation/CoreLocation/kCLLocationAccuracyBest) to facilitate the required detail. In contrast, if the app tracks overall progress between a start and end point without needing the exact path taken, using a lower accuracy value, such as [`kCLLocationAccuracyKilometer`](https://developer.apple.com/documentation/CoreLocation/kCLLocationAccuracyKilometer) or [`kCLLocationAccuracyThreeKilometers`](https://developer.apple.com/documentation/CoreLocation/kCLLocationAccuracyThreeKilometers), is a better choice because it conserves power.
+The app sets a default value for the [`desiredAccuracy`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager/desiredAccuracy) property on the location manager. This value is customizable in a menu to demonstrate how the value of this property affects the accuracy of the recorded data. Lower accuracy values allow the device to conserve power and have less impact on the device’s battery life. For example, if this app is for hiking, it needs high-accuracy data to capture a detailed path for the user’s hiking route, requiring `kCLLocationAccuracyBest` to facilitate the required detail. In contrast, if the app tracks overall progress between a start and end point without needing the exact path taken, using a lower accuracy value, such as `kCLLocationAccuracyKilometer` or `kCLLocationAccuracyThreeKilometers`, is a better choice because it conserves power.
 
-The app also sets a default value for the [`activityType`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager/activityType) property, and is configurable in a menu. This property provides a hint to Core Location about the type of travel the device encounters while monitoring location. For example, if someone uses this app often while running, it sets `activityType` to [`CLActivityType.fitness`](https://developer.apple.com/documentation/CoreLocation/CLActivityType/fitness). If they use it for providing driving directions, it sets `activityType` to [`CLActivityType.automotiveNavigation`](https://developer.apple.com/documentation/CoreLocation/CLActivityType/automotiveNavigation) so that Core Location makes small adjustments to the reported location to match known roads.
+The app also sets a default value for the `activityType` property, and is configurable in a menu. This property provides a hint to Core Location about the type of travel the device encounters while monitoring location. For example, if someone uses this app often while running, it sets `activityType` to [`CLActivityType.fitness`](https://developer.apple.com/documentation/CoreLocation/CLActivityType/fitness). If they use it for providing driving directions, it sets `activityType` to [`CLActivityType.automotiveNavigation`](https://developer.apple.com/documentation/CoreLocation/CLActivityType/automotiveNavigation) so that Core Location makes small adjustments to the reported location to match known roads.
 
 ```swift
 locationManager.requestWhenInUseAuthorization()
@@ -37,7 +37,7 @@ locationManager.requestWhenInUseAuthorization()
 locationManager.allowsBackgroundLocationUpdates = true
 ```
 
-After the app calls [`startUpdatingLocation()`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager/startUpdatingLocation()) on the location manager, Core Location provides location updates to the location manager’s delegate. Then the app forwards the location updates to other functions in the app responsible for maintaining the user’s location history.
+After the app calls `startUpdatingLocation` on the location manager, Core Location provides location updates to the location manager’s delegate. Then the app forwards the location updates to other functions in the app responsible for maintaining the user’s location history.
 
 ```swift
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -61,7 +61,7 @@ MapKit treats overlay data as static when using the system-provided overlay clas
 
 When drawing an overlay on the map, MapKit uses the overlay’s [`boundingMapRect`](MKOverlay/boundingMapRect.md) to determine when the overlay is visible. Because this app can’t determine the extent of the path the user might track on the map, `BreadcrumbPath` declares its `boundingMapRect` as [`world`](MKMapRect/world.md). In an app that has well-defined usage patterns, such as a hiking app for use within a national park, the `boundingMapRect` might consist of a large area the path is likely to remain within, such as the bounds of the national park.
 
-When the app adds a new location, `BreadcrumbPath` validates that the information in [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) is usable for its purposes. Each app that maintains a location history needs to define criteria for ensuring a location update is usable based on the app’s specific needs.
+When the app adds a new location, `BreadcrumbPath` validates that the information in `CLLocation` is usable for its purposes. Each app that maintains a location history needs to define criteria for ensuring a location update is usable based on the app’s specific needs.
 
 ```swift
 private func isNewLocationUsable(_ newLocation: CLLocation, breadcrumbData: BreadcrumbData) -> Bool {

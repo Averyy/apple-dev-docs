@@ -1,6 +1,6 @@
 # ConnectQueues
 
-**Framework**: Usbserialdriverkit  
+**Framework**: USBSerialDriverKit  
 **Kind**: method
 
 Creates and configures the buffers that store the data moving to and from the device.

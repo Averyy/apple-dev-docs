@@ -1,6 +1,6 @@
 # initUIEvent(_:canBubble:cancelable:view:detail:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

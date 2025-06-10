@@ -1,6 +1,6 @@
 # windowScene(_:userDidAcceptCloudKitShareWith:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Tells the delegate that the window scene now has access to shared information in CloudKit.

@@ -1,6 +1,6 @@
 # requestAutoLaunchAuthorizationStatus(completion:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 **Availability**:

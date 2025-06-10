@@ -1,6 +1,6 @@
 # inspectionName
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The name shown when inspecting the pop-up web view.

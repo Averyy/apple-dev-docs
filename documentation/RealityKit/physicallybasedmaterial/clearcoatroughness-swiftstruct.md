@@ -10,6 +10,7 @@ An object that defines the degree to which an entity’s clear, shiny coating sc
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -38,8 +39,6 @@ This object specifies clearcoat roughness for entities that have clearcoat enabl
   The intended use of the object’s texture property.
 - [var scale: Float](physicallybasedmaterial/clearcoatroughness-swift.struct/scale.md)
   The clearcoat roughness specified as a single value.
-- [PhysicallyBasedMaterial.ClearcoatRoughness.FloatLiteralType](physicallybasedmaterial/clearcoatroughness-swift.struct/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 ## Relationships
 

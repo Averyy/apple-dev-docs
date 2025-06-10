@@ -1,6 +1,6 @@
 # setTransform
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Sets the transformation matrix.

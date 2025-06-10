@@ -1,6 +1,6 @@
 # defaultVisibility(_:for:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Configures the default visibility of a tab in customizable contexts.

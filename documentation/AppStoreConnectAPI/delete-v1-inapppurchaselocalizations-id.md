@@ -1,6 +1,6 @@
 # Delete an In-App Purchase Localization
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 Delete the metadata for a single in-app purchase localization.

@@ -1,6 +1,6 @@
 # resetBatchState()
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 Resets the current batch state in the store, allowing you to request a new batch.

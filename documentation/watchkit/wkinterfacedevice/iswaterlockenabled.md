@@ -1,6 +1,6 @@
 # isWaterLockEnabled
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A Boolean value that indicates whether the water lock is enabled.

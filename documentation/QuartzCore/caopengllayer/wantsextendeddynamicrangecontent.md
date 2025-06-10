@@ -7,7 +7,7 @@ Tells whether or not the layer supports content with extended dynamic range.
 
 **Availability**:
 - Mac Catalyst 13.1+
-- macOS 10.5+
+- macOS 10.11+
 
 ## Declaration
 

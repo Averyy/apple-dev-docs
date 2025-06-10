@@ -11,18 +11,12 @@ The vendor-specific configuration dictionary.
 - macOS 10.7+
 - tvOS 17.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object VPN.VendorConfig
 ```
-
-#### Discussion
-
-The system only reads this value when `VPNSubType` has a value. Contact your VPN solution vendor for information about what keys you can configure in this dictionary.
 
 ## See Also
 
@@ -40,10 +34,10 @@ The system only reads this value when `VPNSubType` has a value. Contact your VPN
   The dictionary that contains PPP settings.
 - [object VPN.Proxies](vpn/proxies-data.dictionary.md)
   The dictionary that contains the Proxies settings.
-- [object VPN.VPN](vpn/vpn-data.dictionary.md)
-  The dictionary that contains VPN, IPSec, and IKEv2 settings.
 - [object VPN.TransparentProxy](vpn/transparentproxy-data.dictionary.md)
   The dictionary to use for a transparent proxy VPN type.
+- [object VPN.VPN](vpn/vpn-data.dictionary.md)
+  The dictionary that contains VPN, IPSec, and IKEv2 settings.
 
 
 ---

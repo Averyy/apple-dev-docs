@@ -1,6 +1,6 @@
 # Bringing Photos picker to your SwiftUI app
 
-**Framework**: Photokit
+**Framework**: PhotoKit
 
 Select media assets by using a Photos picker view that SwiftUI provides.
 
@@ -126,4 +126,4 @@ When handling many items at the same time, or large assets, use [`FileRepresenta
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PhotoKit/bringing-photos-picker-to-your-swiftui-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/photokit/bringing-photos-picker-to-your-swiftui-app)*

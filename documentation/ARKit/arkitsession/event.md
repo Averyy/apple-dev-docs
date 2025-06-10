@@ -6,6 +6,7 @@
 The kinds of events that can occur in a session.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -30,6 +31,7 @@ enum Event
 ### Conforms To
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -23,8 +23,8 @@ protocol URLSessionTaskDelegate : URLSessionDelegate
 ## Mentions
 
 - [Uploading streams of data](uploading-streams-of-data.md)
-- [Fetching website data into memory](fetching-website-data-into-memory.md)
 - [Downloading files from websites](downloading-files-from-websites.md)
+- [Fetching website data into memory](fetching-website-data-into-memory.md)
 - [Uploading data to a website](uploading-data-to-a-website.md)
 
 #### Overview
@@ -76,6 +76,7 @@ You use this protocol in one of two ways, depending on how you use a [`URLSessio
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [URLSessionDelegate](urlsessiondelegate.md)
 ### Inherited By
 - [URLSessionDataDelegate](urlsessiondatadelegate.md)
@@ -95,4 +96,4 @@ You use this protocol in one of two ways, depending on how you use a [`URLSessio
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessiontaskdelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessiontaskdelegate)*

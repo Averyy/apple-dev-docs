@@ -1,6 +1,6 @@
 # accentColor(_:)
 
-**Framework**: Financekitui  
+**Framework**: FinanceKitUI  
 **Kind**: method
 
 Sets the accent color for this view and the views it contains.

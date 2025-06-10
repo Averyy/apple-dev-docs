@@ -1,6 +1,6 @@
 # WKWebsiteDataTypeDiskCache
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 On-disk caches.

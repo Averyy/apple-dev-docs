@@ -10,6 +10,7 @@ The coordinate space that represents the scene’s active camera.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS ?+
 
 ## Declaration
 
@@ -22,8 +23,6 @@ struct CameraRealityCoordinateSpace
 ### Initializers
 - [init()](camerarealitycoordinatespace/init.md)
   Creates a camera coordinate space.
-### Default Implementations
-- [RealityCoordinateSpace Implementations](camerarealitycoordinatespace/realitycoordinatespace-implementations.md)
 
 ## Relationships
 

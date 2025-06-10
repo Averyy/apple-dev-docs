@@ -9,6 +9,7 @@ The ratio of the total time spent hitching to the total time spent animating dur
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
+- macOS 12.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # kVTDecompressionProperty_OnlyTheseFrames_NonDroppableFrames
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

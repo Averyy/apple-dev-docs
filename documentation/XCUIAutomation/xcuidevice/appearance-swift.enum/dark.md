@@ -1,6 +1,6 @@
 # XCUIDevice.Appearance.dark
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The dark interface style.

@@ -8,10 +8,10 @@ Sets the preferred color scheme for this presentation.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
+- Mac Catalyst ?+
 - macOS 11.0+
 - tvOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 6.0+
 
 ## Declaration

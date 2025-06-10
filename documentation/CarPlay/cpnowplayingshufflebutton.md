@@ -13,6 +13,7 @@ A button for cycling through the available shuffle modes.
 ## Declaration
 
 ```swift
+@MainActor
 class CPNowPlayingShuffleButton
 ```
 
@@ -35,6 +36,8 @@ CarPlay uses `MPRemoteCommandCenter` to observe changes to the shuffle mode and 
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

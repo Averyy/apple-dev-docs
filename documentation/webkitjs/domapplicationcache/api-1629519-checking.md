@@ -1,6 +1,6 @@
 # CHECKING
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 The update has started but the resources are not downloaded yet—for example, this can happen when the manifest file is fetched.

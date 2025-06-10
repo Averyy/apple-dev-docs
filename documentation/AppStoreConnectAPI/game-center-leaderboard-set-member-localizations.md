@@ -2,7 +2,7 @@
 
 **Framework**: App Store Connect API
 
-Mangage Game Center leaderboard set member localizations.
+Manage Game Center leaderboard set member localizations.
 
 #### Overview
 
@@ -17,6 +17,7 @@ Use Game Center leaderboard set member localizations to specify the specific loc
   Get information about a leaderboard for a specific leaderboard set member localization.
 - [Read leaderboard set information for a leaderboard set member localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-gamecenterleaderboardset.md)
   Get information about a leaderboard set for a specific leaderboard set member localization.
+- [GET /v1/gameCenterLeaderboardSetMemberLocalizations/{id}/relationships/gameCenterLeaderboardSet](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-relationships-gamecenterleaderboardset.md)
 - [Create a leaderboard set member localization](post-v1-gamecenterleaderboardsetmemberlocalizations.md)
   Add a new leaderboard set localization.
 - [Modify a leaderboard set member localization](patch-v1-gamecenterleaderboardsetmemberlocalizations-_id_.md)
@@ -34,6 +35,8 @@ Use Game Center leaderboard set member localizations to specify the specific loc
   The request body you use to update a leaderboard localization.
 - [object GameCenterLeaderboardSetMemberLocalizationsResponse](gamecenterleaderboardsetmemberlocalizationsresponse.md)
   A response that contains multiple leaderboard localizations resources.
+- [object GameCenterLeaderboardSetMemberLocalizationGameCenterLeaderboardLinkageResponse](gamecenterleaderboardsetmemberlocalizationgamecenterleaderboardlinkageresponse.md)
+- [object GameCenterLeaderboardSetMemberLocalizationGameCenterLeaderboardSetLinkageResponse](gamecenterleaderboardsetmemberlocalizationgamecenterleaderboardsetlinkageresponse.md)
 
 ## See Also
 
@@ -42,7 +45,7 @@ Use Game Center leaderboard set member localizations to specify the specific loc
 - [Game Center leaderboard set localizations](game-center-leaderboard-set-localizations.md)
   Manage localizations for your Game Center leaderboard sets.
 - [Game Center leaderboard set images](game-center-leaderboard-set-images.md)
-  Mangage image assets for your Game Center leaderboard sets.
+  Manage image assets for your Game Center leaderboard sets.
 - [Game Center leaderboard set releases](game-center-leaderboard-set-releases.md)
   Manage a leaderboard set releases.
 

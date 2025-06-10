@@ -1,6 +1,6 @@
 # VTMultiPassStorageClose(_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Ensures that any pending data is written to the multipass storage file and closes the file.

@@ -18,6 +18,7 @@ Add an achievement to a Game Center detail.
   Modify properties for a specific achievement.
 - [Modify the group for an achievement](patch-v1-gamecenterachievements-_id_-relationships-groupachievement.md)
   Modify the achievement group for a specific achievement.
+- [PATCH /v1/gameCenterAchievements/{id}/relationships/activity](patch-v1-gamecenterachievements-_id_-relationships-activity.md)
 - [Delete an achievement](delete-v1-gamecenterachievements-_id_.md)
   Delete a specific achievement.
 

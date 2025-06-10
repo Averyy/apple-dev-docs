@@ -41,6 +41,7 @@ Use this type in conjunction with modifiers like [`windowToolbarLabelStyle(fixed
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -56,6 +57,8 @@ Use this type in conjunction with modifiers like [`windowToolbarLabelStyle(fixed
   A specification for the appearance and behavior of a window’s toolbar.
 - [var toolbarLabelStyle: ToolbarLabelStyle?](environmentvalues/toolbarlabelstyle.md)
   The label style to apply to controls within a toolbar.
+- [struct SpacerSizing](spacersizing.md)
+  A type which defines how spacers should size themselves.
 
 
 ---

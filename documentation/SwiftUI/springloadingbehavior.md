@@ -40,6 +40,7 @@ Use values of this type with the [`springLoadingBehavior(_:)`](view/springloadin
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

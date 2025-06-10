@@ -1,6 +1,6 @@
 # reverse()
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Reverses the elements of the collection in place.

@@ -239,6 +239,8 @@ Create and play a sequence of tracks, and manage aspects of playback in response
   Connect to audio hardware and manage the recording or playback process.
 - [Audio Services](audio-services.md)
   Play short sounds or trigger a vibration effect on iOS devices with the appropriate hardware.
+- [Anchoring sound to a window or volume](spatializing-sound-from-a-uiscene.md)
+  Provide unique app experiences by attaching sounds to windows and volumes in 3D space.
 
 
 ---

@@ -25,15 +25,15 @@ The following example demonstrates how to create a `mapkit.MapRect` instance fro
 
 ```javascript
 // Defining a MapRect (x, y, width, height):
-var mapRect = new mapkit.MapRect(0.1, 0.2, 0.3, 0.4);
+const mapRect = new mapkit.MapRect(0.1, 0.2, 0.3, 0.4);
 
 // mapRect.origin is a MapPoint:
-var x = mapRect.origin.x; // 0.1
-var y = mapRect.origin.x; // 0.2
+const x = mapRect.origin.x; // 0.1
+const y = mapRect.origin.x; // 0.2
 
 // mapRect.size is a MapSize:
-var width = mapRect.size.width; // 0.3
-var height = mapRect.size.height; // 0.4
+const width = mapRect.size.width; // 0.3
+const height = mapRect.size.height; // 0.4
 ```
 
 ## Parameters

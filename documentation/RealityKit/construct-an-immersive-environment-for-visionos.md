@@ -104,18 +104,9 @@ The three most important metrics to keep an eye on are Entity Count, 3D Mesh Dra
 | 3D Mesh Draw Calls | < 100 |
 | 3D Mesh Vertices | < 100000 |
 
-## See Also
+###### Related Articles
 
-- [Improving the Performance of a RealityKit App](improving-the-performance-of-a-realitykit-app.md)
-  Measure CPU and GPU utilization to find ways to improve your app’s performance.
-- [Reducing GPU Utilization in Your RealityKit App](reducing-gpu-utilization-in-your-realitykit-app.md)
-  Prevent the GPU from limiting your app’s frame rate by reducing the complexity of your render.
-- [Reducing CPU Utilization in Your RealityKit App](reducing-cpu-utilization-in-your-realitykit-app.md)
-  Target specific CPU metrics with adjustments to your app and its content.
-- [Passing Metal command objects around your application](passing-metal-command-objects-around-your-application.md)
-  Build a system that creates and passes Metal command objects to entities dispatching Metal compute shaders.
-- [protocol Resource](resource.md)
-  A shared resource you use to configure a component, like a material, mesh, or texture.
+###### Related Videos
 
 
 ---

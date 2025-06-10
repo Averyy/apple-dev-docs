@@ -1,6 +1,6 @@
 # abbreviation
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A localized short abbreviation of the wind compass direction.

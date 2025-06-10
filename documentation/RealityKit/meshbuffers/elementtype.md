@@ -10,6 +10,7 @@ The data type for each element of the buffer.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -20,9 +21,6 @@ enum ElementType
 
 ## Topics
 
-### Operators
-- [static func == (MeshBuffers.ElementType, MeshBuffers.ElementType) -> Bool](meshbuffers/elementtype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [MeshBuffers.ElementType.double](meshbuffers/elementtype/double.md)
 - [MeshBuffers.ElementType.float](meshbuffers/elementtype/float.md)
@@ -36,14 +34,6 @@ enum ElementType
 - [MeshBuffers.ElementType.uInt16](meshbuffers/elementtype/uint16.md)
 - [MeshBuffers.ElementType.uInt32](meshbuffers/elementtype/uint32.md)
 - [MeshBuffers.ElementType.uInt8](meshbuffers/elementtype/uint8.md)
-### Instance Properties
-- [var hashValue: Int](meshbuffers/elementtype/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](meshbuffers/elementtype/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](meshbuffers/elementtype/equatable-implementations.md)
 
 ## Relationships
 

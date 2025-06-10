@@ -8,7 +8,7 @@ A query designed for only returning a single possible value, provided by `unique
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -35,6 +35,7 @@ protocol UniqueAppEntityQuery : EnumerableEntityQuery where Self.Entity : Unique
 - [EnumerableEntityQuery](enumerableentityquery.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [UniqueAppEntityProvider](uniqueappentityprovider.md)
 

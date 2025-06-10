@@ -11,6 +11,7 @@
 ## Declaration
 
 ```swift
+@MainActor
 optional func contentStyleDidChange(_ contentStyle: UIUserInterfaceStyle)
 ```
 

@@ -10,8 +10,6 @@ The commands these methods encode ensure your shaders can access resources throu
 
 > ❗ **Important**:  The heap-based methods don’t provide a `usage` parameter (see [`MTLResourceUsage`](mtlresourceusage.md)) and set the usage for the resources within each heap to [`read`](mtlresourceusage/read.md).
 
- The heap-based methods don’t provide a `usage` parameter (see [`MTLResourceUsage`](mtlresourceusage.md)) and set the usage for the resources within each heap to [`read`](mtlresourceusage/read.md).
-
 To give shaders write or read/write access to specific resources within a heap, call a resource-based method after the heap-based method. Metal combines usage modes set for a resource through both heap and resource methods.
 
 For more information, see [`Improving CPU Performance by Using Argument Buffers`](improving-cpu-performance-by-using-argument-buffers.md).

@@ -43,6 +43,7 @@ Pass an option key into the [`VNImageRequestHandler`](vnimagerequesthandler.md) 
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

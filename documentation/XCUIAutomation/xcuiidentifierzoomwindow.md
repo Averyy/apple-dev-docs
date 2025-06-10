@@ -1,6 +1,6 @@
 # XCUIIdentifierZoomWindow
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: var
 
 The identifier for a window’s zoom button.

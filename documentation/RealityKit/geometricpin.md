@@ -10,6 +10,7 @@ A structure that identifies a local transform relative to an entity or entity’
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -36,7 +37,7 @@ let entity = Entity()
 entity.components.set(pinsComponent)
 ```
 
-Another way to attach a pin is to add the `GeometricPin` to the [`pins`](entity/pins.md) collection directly.
+Another way to attach a pin is to add the `GeometricPin` to the `Entity/pins` collection directly.
 
 ```swift
 let entity = Entity()
@@ -66,8 +67,6 @@ let retrievedPin = pinsComponent["animatingPin"]
 ### Instance Properties
 - [var entity: Entity?](geometricpin/entity.md)
   The entity where the local frame lives.
-- [var hashValue: Int](geometricpin/hashvalue.md)
-  The hash value.
 - [var name: String](geometricpin/name.md)
   The name of the pin.
 - [var offsetOrientation: simd_quatf](geometricpin/offsetorientation.md)
@@ -85,8 +84,6 @@ let retrievedPin = pinsComponent["animatingPin"]
   Calculates and returns the current orientation of the pin relative to a reference entity, adjusted by the optional offset position.
 - [func position(relativeTo: Entity?) -> SIMD3<Float>?](geometricpin/position(relativeto:).md)
   Calculates and returns the current position of the pin relative to a reference entity, adjusted by the optional offset position.
-### Default Implementations
-- [Equatable Implementations](geometricpin/equatable-implementations.md)
 
 ## Relationships
 
@@ -106,6 +103,8 @@ let retrievedPin = pinsComponent["animatingPin"]
   A component that stores physics joints which RealityKit simulates.
 - [struct EntityGeometricPins](entitygeometricpins.md)
   A structure that wraps all geometric pins an entity owns.
+- [struct AttachedTransformComponent](attachedtransformcomponent.md)
+  A component that stores an optional source pin owned by this entity and a target pin which this entity is attached to
 
 
 ---

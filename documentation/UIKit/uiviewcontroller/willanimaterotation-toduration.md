@@ -1,6 +1,6 @@
 # willAnimateRotation(to:duration:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Sent to the view controller before performing a one-step user interface rotation.

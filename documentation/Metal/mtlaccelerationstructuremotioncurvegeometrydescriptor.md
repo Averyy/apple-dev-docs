@@ -55,8 +55,14 @@ class MTLAccelerationStructureMotionCurveGeometryDescriptor
 
 ## See Also
 
+- [class MTL4AccelerationStructureMotionTriangleGeometryDescriptor](mtl4accelerationstructuremotiontrianglegeometrydescriptor.md)
+  Describes motion triangle geometry, suitable for motion ray tracing.
 - [class MTLAccelerationStructureMotionTriangleGeometryDescriptor](mtlaccelerationstructuremotiontrianglegeometrydescriptor.md)
   A description of a list of triangle primitives, as motion keyframe data, to turn into an acceleration structure.
+- [class MTL4AccelerationStructureMotionCurveGeometryDescriptor](mtl4accelerationstructuremotioncurvegeometrydescriptor.md)
+  Describes motion curve geometry, suitable for motion ray tracing.
+- [class MTL4AccelerationStructureMotionBoundingBoxGeometryDescriptor](mtl4accelerationstructuremotionboundingboxgeometrydescriptor.md)
+  Describes motion bounding box geometry, suitable for motion ray tracing.
 - [class MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor](mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md)
   A description of a list of bounding boxes, as motion keyframe data, to turn into an acceleration structure.
 - [class MTLMotionKeyframeData](mtlmotionkeyframedata.md)

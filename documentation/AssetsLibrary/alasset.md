@@ -8,7 +8,7 @@ An `ALAsset` object represents a photo or a video managed by the Photo applicati
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 14.0+
 
 ## Declaration
 
@@ -19,10 +19,6 @@ class ALAsset
 #### Overview
 
 > ❗ **Important**:  The Assets Library framework is deprecated as of iOS 9.0. Instead, use the Photos framework instead, which in iOS 8.0 and later provides more features and better performance for working with a user’s photo library. For more information, see `Photos`. In the Photos framework, the [`PHAsset`](https://developer.apple.com/documentation/Photos/PHAsset) class provides functionality for fetching and working with photo and video assets.
-
- The Assets Library framework is deprecated as of iOS 9.0. Instead, use the Photos framework instead, which in iOS 8.0 and later provides more features and better performance for working with a user’s photo library. For more information, see `Photos`.
-
-In the Photos framework, the [`PHAsset`](https://developer.apple.com/documentation/Photos/PHAsset) class provides functionality for fetching and working with photo and video assets.
 
 Assets can have multiple representations, for example a photo which was captured in RAW and JPG. Different representations of the same asset may have different dimensions.
 
@@ -45,14 +41,14 @@ Assets can have multiple representations, for example a photo which was captured
 - [func aspectRatioThumbnail() -> Unmanaged<CGImage>!](alasset/aspectratiothumbnail.md)
   Returns an aspect ratio thumbnail of the asset.
 ### Setting New Image and Video Data
-- [func setImageData(Data!, metadata: [AnyHashable : Any]!, completionBlock: ALAssetsLibraryWriteImageCompletionBlock!)](alasset/setimagedata(_:metadata:completionblock:).md)
+- [func setImageData(Data!, metadata: [AnyHashable : Any]!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alasset/setimagedata(_:metadata:completionblock:).md)
   Replaces the image data in the receiver with given image data
-- [func setVideoAtPath(URL!, completionBlock: ALAssetsLibraryWriteVideoCompletionBlock!)](alasset/setvideoatpath(_:completionblock:).md)
+- [func setVideoAtPath(URL!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alasset/setvideoatpath(_:completionblock:).md)
   Replaces the video data in receiver with the video at a given URL.
 ### Saving to the Saved Photos Album
-- [func writeModifiedImageData(toSavedPhotosAlbum: Data!, metadata: [AnyHashable : Any]!, completionBlock: ALAssetsLibraryWriteImageCompletionBlock!)](alasset/writemodifiedimagedata(tosavedphotosalbum:metadata:completionblock:).md)
+- [func writeModifiedImageData(toSavedPhotosAlbum: Data!, metadata: [AnyHashable : Any]!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alasset/writemodifiedimagedata(tosavedphotosalbum:metadata:completionblock:).md)
   Saves image data to the Saved Photos album.
-- [func writeModifiedVideoAtPath(toSavedPhotosAlbum: URL!, completionBlock: ALAssetsLibraryWriteVideoCompletionBlock!)](alasset/writemodifiedvideoatpath(tosavedphotosalbum:completionblock:).md)
+- [func writeModifiedVideoAtPath(toSavedPhotosAlbum: URL!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alasset/writemodifiedvideoatpath(tosavedphotosalbum:completionblock:).md)
   Saves the video at a specified path to the Saved Photos album.
 ### Constants
 - [Property Keys](property-keys.md)

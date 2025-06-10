@@ -1,6 +1,6 @@
 # metaKey
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A Boolean value indicating whether the meta key is pressed.

@@ -25,8 +25,6 @@ Set this flag to indicate placement of the sample bits occupy the entire availab
 
 > ❗ **Important**:  Even if this flag is clear, it’s still implied as set if the description’s fields have this relationship: `((mBitsPerSample / 8) * mChannelsPerFrame) == mBytesPerFrame`.
 
- Even if this flag is clear, it’s still implied as set if the description’s fields have this relationship: `((mBitsPerSample / 8) * mChannelsPerFrame) == mBytesPerFrame`.
-
 ## See Also
 
 - [var kAppleLosslessFormatFlag_16BitSourceData: AudioFormatFlags](kapplelosslessformatflag_16bitsourcedata.md)

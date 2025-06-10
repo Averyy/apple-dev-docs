@@ -6,6 +6,9 @@
 A view controller that allows users to enable and disable extensions.
 
 **Availability**:
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 13.0+
 
 ## Declaration
@@ -19,6 +22,7 @@ class EXAppExtensionBrowserViewController
 
 ### Inherits From
 - [NSViewController](../AppKit/NSViewController.md)
+- [UIViewController](../UIKit/UIViewController.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -34,6 +38,18 @@ class EXAppExtensionBrowserViewController
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
+- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
+- [UIContentContainer](../UIKit/UIContentContainer.md)
+- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
+- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
+- [UIStateRestoring](../UIKit/UIStateRestoring.md)
+- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
+- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
+- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
 
 ## See Also
 

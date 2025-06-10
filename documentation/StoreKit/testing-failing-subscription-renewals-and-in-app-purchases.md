@@ -1,6 +1,6 @@
 # Testing failing subscription renewals and In-App Purchases
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Verify that your app handles failed subscription renewals that are in the billing retry or billing grace period states, as well as failed In-App Purchases.
 
@@ -149,4 +149,4 @@ To test a failed purchase attempt, follow these steps:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/testing-failing-subscription-renewals-and-in-app-purchases)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/testing-failing-subscription-renewals-and-in-app-purchases)*

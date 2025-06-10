@@ -1,6 +1,6 @@
 # NSOpenGLView
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 A view that displays OpenGL content in a view.
@@ -78,6 +78,7 @@ When creating an `NSOpenGLView` object in Interface Builder, you use the inspect
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -99,4 +100,4 @@ When creating an `NSOpenGLView` object in Interface Builder, you use the inspect
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsopenglview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsopenglview)*

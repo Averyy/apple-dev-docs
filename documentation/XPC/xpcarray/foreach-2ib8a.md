@@ -1,6 +1,6 @@
 # forEach(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Calls the given closure with an index and element of the array in the same order as a for-in loop.

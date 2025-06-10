@@ -1,6 +1,6 @@
 # SVG_FECOLORMATRIX_TYPE_SATURATE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

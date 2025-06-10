@@ -13,6 +13,7 @@ Whether the clock should be paused, e.g. due to a stoppage in play.
 ## Declaration
 
 ```swift
+@MainActor
 var isPaused: Bool { get }
 ```
 

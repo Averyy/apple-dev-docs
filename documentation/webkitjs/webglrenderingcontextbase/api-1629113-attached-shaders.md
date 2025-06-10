@@ -1,6 +1,6 @@
 # ATTACHED_SHADERS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

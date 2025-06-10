@@ -9,7 +9,7 @@ Tells the delegate that the app is now in the background.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -27,8 +27,6 @@ optional func applicationDidEnterBackground(_ application: UIApplication)
 #### Discussion
 
 > ❗ **Important**:  If you’re using scenes (see [`Scenes`](scenes.md)), UIKit will not call this method. Use [`sceneDidEnterBackground(_:)`](uiscenedelegate/scenedidenterbackground(_:).md) instead to perform any final tasks. UIKit posts a [`didEnterBackgroundNotification`](uiapplication/didenterbackgroundnotification.md) regardless of whether your app uses scenes.
-
- If you’re using scenes (see [`Scenes`](scenes.md)), UIKit will not call this method. Use [`sceneDidEnterBackground(_:)`](uiscenedelegate/scenedidenterbackground(_:).md) instead to perform any final tasks. UIKit posts a [`didEnterBackgroundNotification`](uiapplication/didenterbackgroundnotification.md) regardless of whether your app uses scenes.
 
 Use this method to release shared resources, invalidate timers, and store enough app state information to restore your app to its current state in case it’s terminated later. Disable updates to your app’s user interface, and avoid using some types of shared system resources (such as the user’s contacts database). Don’t use OpenGL ES in the background.
 

@@ -1,6 +1,6 @@
 # Receive log messages
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: httpRequest
 
 Records log messages on your server.

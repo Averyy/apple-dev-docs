@@ -1,6 +1,6 @@
 # Drawing with PencilKit
 
-**Framework**: Pencilkit
+**Framework**: PencilKit
 
 Add expressive, low-latency drawing to your app using PencilKit.
 
@@ -37,4 +37,4 @@ This sample code project must be run on a physical device with Apple Pencil.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PencilKit/drawing-with-pencilkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/pencilkit/drawing-with-pencilkit)*

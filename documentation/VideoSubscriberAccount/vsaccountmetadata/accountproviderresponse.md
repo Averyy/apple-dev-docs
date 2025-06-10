@@ -1,6 +1,6 @@
 # accountProviderResponse
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The response from the account provider.
@@ -20,7 +20,7 @@ var accountProviderResponse: VSAccountProviderResponse? { get }
 
 #### Discussion
 
-This property is `nil` if you didn’t specify any attributes in your [`VSAccountMetadataRequest`](vsaccountmetadatarequest.md) object or if the user doesn’t have a valid authentication session with the account provider.
+This property is `nil` if you didn’t specify any attributes in your [`VSAccountMetadataRequest`](vsaccountmetadatarequest.md) object or if the person doesn’t have a valid authentication session with the account provider.
 
 ## See Also
 

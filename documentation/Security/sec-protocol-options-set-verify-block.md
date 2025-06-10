@@ -21,15 +21,15 @@ func sec_protocol_options_set_verify_block(_ options: sec_protocol_options_t, _ 
 #### Discussion
 
 ```None
-  Set the verify block.
+ Set the verify block.
 ```
 
 ```None
-  A `sec_protocol_verify_t` block.
+ A `sec_protocol_verify_t` block.
 ```
 
 ```None
-  A `dispatch_queue_t` on which the verify block should be called.
+ A `dispatch_queue_t` on which the verify block should be called.
 ```
 
 ## Parameters

@@ -1,6 +1,6 @@
 # Loading Reality Composer files manually without generated code
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Load Reality Composer files that aren’t part of your Xcode project.
 
@@ -185,4 +185,4 @@ if let theURL = Bundle.main.url(forResource: "myModel", withExtension: "usdz") {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/loading-reality-composer-files-manually-without-generated-code)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/loading-reality-composer-files-manually-without-generated-code)*

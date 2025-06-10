@@ -1,6 +1,6 @@
 # buildExpression(_:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: method
 
 **Availability**:

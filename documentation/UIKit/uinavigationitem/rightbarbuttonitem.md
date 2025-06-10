@@ -37,6 +37,10 @@ In a right-to-left user interface, the position of the right bar button item is 
   The item group to display on the trailing edge of the navigation bar, on the trailing side of the overflow and search items.
 - [var titleView: UIView?](uinavigationitem/titleview.md)
   A custom view that displays in the center of the navigation bar when the receiver is the top item.
+- [var subtitleView: UIView?](uinavigationitem/subtitleview.md)
+  A custom view to display below the title in the navigation bar.
+- [var largeSubtitleView: UIView?](uinavigationitem/largesubtitleview.md)
+  A custom view to display below the large title.
 - [var leftBarButtonItems: [UIBarButtonItem]?](uinavigationitem/leftbarbuttonitems.md)
   An array of custom bar button items to display on the left (or leading) side of the navigation bar when the navigation item is the top item.
 - [var leftBarButtonItem: UIBarButtonItem?](uinavigationitem/leftbarbuttonitem.md)

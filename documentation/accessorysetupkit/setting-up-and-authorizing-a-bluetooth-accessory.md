@@ -1,6 +1,6 @@
 # Setting up and authorizing a Bluetooth accessory
 
-**Framework**: Accessorysetupkit
+**Framework**: AccessorySetupKit
 
 Discover, select, and set up a specific Bluetooth accessory without requesting permission to use Bluetooth.
 

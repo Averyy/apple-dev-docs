@@ -1,6 +1,6 @@
 # webView(_:createWebViewModalDialogWith:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Creates a modal window containing a web view that loads the specified request.

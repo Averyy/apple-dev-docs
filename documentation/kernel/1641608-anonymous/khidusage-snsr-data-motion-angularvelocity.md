@@ -1,0 +1,18 @@
+# kHIDUsage_Snsr_Data_Motion_AngularVelocity
+
+**Framework**: Kernel  
+**Kind**: econst
+
+**Availability**:
+- macOS 10.13.4+
+
+## Declaration
+
+```swift
+kHIDUsage_Snsr_Data_Motion_AngularVelocity = 0x0456
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/1641608-anonymous/khidusage_snsr_data_motion_angularvelocity)*

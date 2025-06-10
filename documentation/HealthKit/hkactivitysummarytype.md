@@ -1,6 +1,6 @@
 # HKActivitySummaryType
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: class
 
 A type that identifies activity summary objects.
@@ -29,7 +29,7 @@ The [`HKActivitySummaryType`](hkactivitysummarytype.md) class is a concrete subc
 
 ##### Access and Modify Activity Summaries
 
-Any workouts that you save to the HealthKit store may affect that day’s summary. For more information, see [`HKWorkout`](hkworkout.md).
+Any workouts that you save to the HealthKit store may affect that day’s summary. For more information, see `Using Workout Samples`.
 
 To query for activity summary objects, use an [`HKActivitySummaryQuery`](hkactivitysummaryquery.md). You can also create your own [`HKActivitySummary`](hkactivitysummary.md) objects (for example, to display in an [`HKActivityRingView`](https://developer.apple.com/documentation/healthkitui/hkactivityringview)), but you can’t save them to the HealthKit store.
 
@@ -48,6 +48,7 @@ To query for activity summary objects, use an [`HKActivitySummaryQuery`](hkactiv
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -83,4 +84,4 @@ To query for activity summary objects, use an [`HKActivitySummaryQuery`](hkactiv
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkactivitysummarytype)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkactivitysummarytype)*

@@ -32,6 +32,7 @@ If a device declares an uncommon transport, the [`HIDDeviceTransport.unknown(_:)
 - [HIDDeviceTransport.fifo](hiddevicetransport/fifo.md)
 - [HIDDeviceTransport.i2c](hiddevicetransport/i2c.md)
 - [HIDDeviceTransport.iap](hiddevicetransport/iap.md)
+- [HIDDeviceTransport.inductiveInBand](hiddevicetransport/inductiveinband.md)
 - [HIDDeviceTransport.serial](hiddevicetransport/serial.md)
 - [HIDDeviceTransport.spi](hiddevicetransport/spi.md)
 - [HIDDeviceTransport.spu](hiddevicetransport/spu.md)
@@ -46,6 +47,7 @@ If a device declares an uncommon transport, the [`HIDDeviceTransport.unknown(_:)
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

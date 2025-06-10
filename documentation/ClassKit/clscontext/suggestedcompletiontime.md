@@ -1,6 +1,6 @@
 # suggestedCompletionTime
 
-**Framework**: Classkit  
+**Framework**: ClassKit  
 **Kind**: property
 
 A suggested time range to complete a task, measured in minutes.
@@ -36,7 +36,7 @@ takeHomeExam.suggestedAge = NSRange(0...Int.max - 1) // No suggestion provided.
 
 By default, new contexts use the extreme values to avoid indicating a suggested time range.
 
-> **Note**:  Because [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange) defines its upper bound as one more than the last value contained in the range, use `Int.max - 1` to indicate the unbounded case and prevent the upper bound from overflowing.
+> **Note**:  Because [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange-c.struct) defines its upper bound as one more than the last value contained in the range, use `Int.max - 1` to indicate the unbounded case and prevent the upper bound from overflowing.
 
 ## See Also
 
@@ -48,4 +48,4 @@ By default, new contexts use the extreme values to avoid indicating a suggested 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/clscontext/suggestedcompletiontime)*
+*[View on Apple Developer](https://developer.apple.com/documentation/classkit/clscontext/suggestedcompletiontime)*

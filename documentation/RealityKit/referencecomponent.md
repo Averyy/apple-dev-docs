@@ -10,6 +10,7 @@ A component that can load another entity from a file.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -76,10 +77,8 @@ Conversely, use [`releaseReference(at:)`](referencecomponent/releasereference(at
 - [var state: ReferenceComponent.ReferenceState](referencecomponent/state.md)
   A variable that indicates the loading state of the referenced entity.
 ### Type Methods
-- [static func loadReference(at: Entity) async throws](referencecomponent/loadreference(at:)-1en8b.md)
+- [static loadReference(at:)](referencecomponent/loadreference(at:).md)
   Asynchronously loads another entity file that an entity depends on.
-- [static func loadReference(at: Entity) throws](referencecomponent/loadreference(at:)-5oukb.md)
-  Synchronously loads another entity file that an entity depends on.
 - [static func releaseReference(at: Entity) throws](referencecomponent/releasereference(at:).md)
   Releases the reference an entity holds.
 ### Enumerations
@@ -87,8 +86,6 @@ Conversely, use [`releaseReference(at:)`](referencecomponent/releasereference(at
   Describes when a referenced entity loads.
 - [ReferenceComponent.ReferenceState](referencecomponent/referencestate.md)
   Defines the current loading state of the referenced entity.
-### Default Implementations
-- [Component Implementations](referencecomponent/component-implementations.md)
 
 ## Relationships
 
@@ -103,9 +100,9 @@ Conversely, use [`releaseReference(at:)`](referencecomponent/releasereference(at
   Manage entities that you store as assets on disk.
 - [Creating USD files for Apple devices](creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
-- [convenience init(contentsOf: URL, withName: String?) async throws](entity/init(contentsof:withname:).md)
+- [convenience(contentsOf:withName:)](entity/init(contentsof:withname:).md)
   Creates an entity by asynchronously loading it from a file URL.
-- [convenience init(named: String, in: Bundle?) async throws](entity/init(named:in:).md)
+- [convenience(named:in:)](entity/init(named:in:).md)
   Creates an entity by asynchronously loading it from a bundle.
 
 

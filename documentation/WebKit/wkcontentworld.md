@@ -1,6 +1,6 @@
 # WKContentWorld
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that defines a scope of execution for JavaScript code, and which you use to prevent conflicts between different scripts.
@@ -75,4 +75,4 @@ Use the methods and properties of this class to fetch the content world you need
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/wkcontentworld)*
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/wkcontentworld)*

@@ -18,7 +18,7 @@ This object is not derived from CFType and therefore there are no functions for 
 - [func CGPDFStreamGetDictionary(CGPDFStreamRef) -> CGPDFDictionaryRef?](cgpdfstreamgetdictionary(_:).md)
   Returns the dictionary associated with a PDF stream.
 ### Data Types
-- [typealias CGPDFStreamRef](cgpdfstreamref.md)
+- [struct CGPDFStreamRef](cgpdfstreamref.md)
   A type that represents a PDF stream.
 ### Constants
 - [enum CGPDFDataFormat](cgpdfdataformat.md)

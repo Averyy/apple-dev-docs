@@ -36,6 +36,12 @@ When [`PhotogrammetrySession`](photogrammetrysession.md) completes a [`Photogram
 - [case poses(PhotogrammetrySession.Poses)](photogrammetrysession/result/poses(_:).md)
   Once initial photogrammetric calculations are complete, a data structure  mapping each sample ID (or index if a folder was used) to the 6DOF algorithmically estimated pose of that sample is returned.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [PhotogrammetrySession.PointCloud](photogrammetrysession/pointcloud.md)

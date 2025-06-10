@@ -1,6 +1,6 @@
 # XCUIAutomation
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: module
 
 Replicate sequences of interactions and make sure that your app’s user interface behaves as intended.

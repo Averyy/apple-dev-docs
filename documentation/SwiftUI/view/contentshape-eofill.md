@@ -1,6 +1,6 @@
 # contentShape(_:_:eoFill:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Sets the content shape for this view.

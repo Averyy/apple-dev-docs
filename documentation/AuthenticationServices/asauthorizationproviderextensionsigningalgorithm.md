@@ -27,6 +27,7 @@ struct ASAuthorizationProviderExtensionSigningAlgorithm
 ### Conforms To
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

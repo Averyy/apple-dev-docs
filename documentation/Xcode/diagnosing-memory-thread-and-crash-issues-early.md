@@ -201,4 +201,4 @@ The performance impact of Undefined Behavior Sanitizer is minimal. The tool adds
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/diagnosing-memory-thread-and-crash-issues-early)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/diagnosing-memory-thread-and-crash-issues-early)*

@@ -1,6 +1,6 @@
 # loadView()
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Creates the view that the controller manages.

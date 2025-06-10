@@ -29,6 +29,15 @@ Factorization of Matrix.
 - Parameter SymbolicFactor A symbolic factorization, as returned by a call of the form `SymbolicFactor = SparseFactor(Matrix.structure)`.
 - Parameter Matrix The matrix to factorize.
 
+## See Also
+
+- [func SparseFactor(SparseFactorization_t, SparseMatrix_Complex_Double) -> SparseOpaqueFactorization_Complex_Double](sparsefactor(_:_:)-1avkp.md)
+  Returns the specified factorization of a sparse matrix of complex double values.
+- [func SparseFactor(SparseFactorization_t, SparseMatrixStructureComplex) -> SparseOpaqueSymbolicFactorization](sparsefactor(_:_:)-55tzk.md)
+  Returns a symbolic factorization of the requested type for a complex matrix with the given structure.
+- [func SparseFactor(SparseFactorization_t, SparseMatrix_Complex_Float) -> SparseOpaqueFactorization_Complex_Float](sparsefactor(_:_:)-73n38.md)
+  Returns the specified factorization of a sparse matrix of complex float values.
+
 
 ---
 

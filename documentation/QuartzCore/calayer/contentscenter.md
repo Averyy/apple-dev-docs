@@ -1,6 +1,6 @@
 # contentsCenter
 
-**Framework**: Quartzcore  
+**Framework**: Core Animation  
 **Kind**: property
 
 The rectangle that defines how the layer contents are scaled if the layer’s contents are resized. Animatable.
@@ -65,4 +65,4 @@ The following figure shows the layer at the same sizes but without explicitly se
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/calayer/contentscenter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/calayer/contentscenter)*

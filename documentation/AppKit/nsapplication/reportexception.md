@@ -25,7 +25,7 @@ This method doesn’t raise `anException`. Use it inside of an exception handler
 
 ## See Also
 
-- [func NSSetUncaughtExceptionHandler(((NSException) -> Void)?)](../foundation/1409609-nssetuncaughtexceptionhandler.md)
+- [func NSSetUncaughtExceptionHandler(_: ((NSException) -> Void)?)](../Foundation/NSSetUncaughtExceptionHandler(_:).md)
   Changes the top-level error handler.
 
 

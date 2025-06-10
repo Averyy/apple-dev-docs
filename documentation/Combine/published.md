@@ -49,8 +49,6 @@ When the property changes, publishing occurs in the property’s `willSet` block
 
 > ❗ **Important**: The `@Published` attribute is class constrained. Use it with properties of classes, not with non-class types like structures.
 
-The `@Published` attribute is class constrained. Use it with properties of classes, not with non-class types like structures.
-
 ##### See Also
 
 - [`assign(to:)`](publisher/assign(to:).md)

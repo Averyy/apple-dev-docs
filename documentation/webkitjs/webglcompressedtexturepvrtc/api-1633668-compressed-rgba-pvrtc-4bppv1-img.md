@@ -1,6 +1,6 @@
 # COMPRESSED_RGBA_PVRTC_4BPPV1_IMG
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

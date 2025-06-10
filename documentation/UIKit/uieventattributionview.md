@@ -1,6 +1,6 @@
 # UIEventAttributionView
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An overlay view that verifies user interaction for Web AdAttributionKit.
@@ -61,6 +61,7 @@ For more information on sending Web AdAttributionKit event attribution data to t
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)
@@ -88,4 +89,4 @@ For more information on sending Web AdAttributionKit event attribution data to t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uieventattributionview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uieventattributionview)*

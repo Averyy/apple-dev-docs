@@ -1,6 +1,6 @@
 # goForward(for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to navigate the tab to the next page in its history.

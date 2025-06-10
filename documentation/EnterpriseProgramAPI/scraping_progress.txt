@@ -1,4 +1,4 @@
 Completed scraping Enterprise Program API!
-Total pages scraped: 1
-Pages skipped (unchanged): 1
+Total pages scraped: 185
+Pages skipped (unchanged): 5
 Pages failed: 0

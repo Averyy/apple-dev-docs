@@ -68,6 +68,7 @@ struct LinearTransformer<Element> where Element : BinaryFloatingPoint, Element :
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transformer](transformer.md)
 
 ## See Also

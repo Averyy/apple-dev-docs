@@ -1,6 +1,6 @@
 # write(to:ofType:for:originalContentsURL:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Saves changes in the document’s managed object context and saves the document’s persistent store to a given URL.

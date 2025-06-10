@@ -1,6 +1,6 @@
 # run(_:)
 
-**Framework**: Nearbyinteraction  
+**Framework**: Nearby Interaction  
 **Kind**: method
 
 Starts a session with a nearby peer.

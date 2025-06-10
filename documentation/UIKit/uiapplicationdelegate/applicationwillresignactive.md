@@ -9,7 +9,7 @@ Tells the delegate that the app is about to become inactive.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -26,8 +26,6 @@ optional func applicationWillResignActive(_ application: UIApplication)
 #### Discussion
 
 > ❗ **Important**:  If you’re using scenes (see [`Scenes`](scenes.md)), UIKit will not call this method. Use [`sceneWillResignActive(_:)`](uiscenedelegate/scenewillresignactive(_:).md) instead to pause any activity or save state. UIKit posts a [`willResignActiveNotification`](uiapplication/willresignactivenotification.md) regardless of whether your app uses scenes.
-
- If you’re using scenes (see [`Scenes`](scenes.md)), UIKit will not call this method. Use [`sceneWillResignActive(_:)`](uiscenedelegate/scenewillresignactive(_:).md) instead to pause any activity or save state. UIKit posts a [`willResignActiveNotification`](uiapplication/willresignactivenotification.md) regardless of whether your app uses scenes.
 
 UIKit calls this method to let your app know that it is about to move from the active to inactive state. The app moves to the inactive state because of temporary interruptions like an incoming phone call or SMS message, or when the user quits the app and it begins the transition to the background state. An app in the inactive state continues to run but doesn’t dispatch incoming events to responders.
 

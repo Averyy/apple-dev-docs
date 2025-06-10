@@ -16,7 +16,7 @@ A depth and stencil state object that specifies the depth and stencil configurat
 ## Declaration
 
 ```swift
-protocol MTLDepthStencilState : NSObjectProtocol
+protocol MTLDepthStencilState : NSObjectProtocol, Sendable
 ```
 
 #### Overview
@@ -42,6 +42,8 @@ Typically, you create [`MTLDepthStencilState`](mtldepthstencilstate.md) objects 
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

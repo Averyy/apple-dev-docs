@@ -1,6 +1,6 @@
 # WKExtension
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 The centralized point of control and coordination for extension-based apps running in watchOS.

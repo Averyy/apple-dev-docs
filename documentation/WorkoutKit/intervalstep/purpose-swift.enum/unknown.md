@@ -1,6 +1,6 @@
 # ==(_:_:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: op
 
 **Availability**:

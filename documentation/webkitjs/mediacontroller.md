@@ -1,6 +1,6 @@
 # MediaController
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 **Availability**:

@@ -1,6 +1,6 @@
 # WKUIDelegate
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 The methods for presenting native user interface elements on behalf of a webpage.

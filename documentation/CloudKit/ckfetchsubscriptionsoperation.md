@@ -26,7 +26,7 @@ A fetch subscriptions operation retrieves subscriptions (with IDs you already kn
 
 You might fetch subscriptions so you can examine or modify their parameters — for example, to adjust the delivery options for push notifications that the subscription generates.
 
-If you assign a handler to the [`completionBlock`](https://developer.apple.com/documentation/foundation/operation/1408085-completionblock) property, the operation calls it after it executes and passes it the results. Use the handler to perform any housekeeping tasks for the operation. The handler you specify should manage any failures, whether due to an error or an explicit cancellation.
+If you assign a handler to the [`completionBlock`](https://developer.apple.com/documentation/Foundation/Operation/completionBlock) property, the operation calls it after it executes and passes it the results. Use the handler to perform any housekeeping tasks for the operation. The handler you specify should manage any failures, whether due to an error or an explicit cancellation.
 
 ## Topics
 
@@ -60,6 +60,7 @@ If you assign a handler to the [`completionBlock`](https://developer.apple.com/d
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

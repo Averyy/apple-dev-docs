@@ -1,6 +1,6 @@
 # webView(_:didFailProvisionalLoadWithError:for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called if an error occurs when starting to load data for a page.

@@ -1,14 +1,14 @@
 # Pass.StoreCard
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that represents groups of fields that show the information for a store card.
 
 **Availability**:
 - iOS 10.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 10.0+
+- watchOS 3.0+
 
 ## Declaration
 

@@ -1,0 +1,18 @@
+# paging_count
+
+**Framework**: Kernel  
+**Kind**: structp
+
+**Availability**:
+- macOS 10.7+
+
+## Declaration
+
+```swift
+uint64_t paging_count;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/task_snapshot/1551665-paging_count)*

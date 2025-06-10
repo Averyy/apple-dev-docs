@@ -28,8 +28,6 @@ To listen for messages you need to create a run loop source with [`CFMachPortCre
 
 > ❗ **Important**:  If you want to tear down the connection, you must invalidate the port (using [`CFMachPortInvalidate(_:)`](cfmachportinvalidate(_:).md)) before releasing the runloop source and the Mach port object.
 
- If you want to tear down the connection, you must invalidate the port (using [`CFMachPortInvalidate(_:)`](cfmachportinvalidate(_:).md)) before releasing the runloop source and the Mach port object.
-
 To send data, you must use the Mach APIs with the native Mach port, which is not described here. Alternatively, you can use a [`CFMessagePort`](cfmessageport.md) object, which can send arbitrary data.
 
 Mach ports only support communication on the local machine. For network communication, you have to use a [`CFSocket`](cfsocket.md) object.

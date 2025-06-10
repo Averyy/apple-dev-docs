@@ -1,6 +1,6 @@
 # HistoryResponse
 
-**Framework**: Appstoreserverapi  
+**Framework**: App Store Server API  
 **Kind**: dictionary
 
 A response that contains the customer’s transaction history for an app.
@@ -50,4 +50,4 @@ If a customer upgrades a subscription or the App Store revokes an in-app purchas
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/historyresponse)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/historyresponse)*

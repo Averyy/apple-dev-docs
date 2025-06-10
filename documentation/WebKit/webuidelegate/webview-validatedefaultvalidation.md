@@ -1,6 +1,6 @@
 # webView(_:validate:defaultValidation:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a Boolean value that indicates whether the specified user interface item is valid.

@@ -21,7 +21,7 @@ var dateInterval: DateInterval { get }
 
 #### Discussion
 
-Most event types support only date intervals with a zero-length duration. These intervals indicate a single point in time, represented by the interval’s [`startDate`](https://developer.apple.com/documentation/foundation/nsdateinterval/1641656-startdate) property. Only [`HKWorkoutEventType.lap`](hkworkouteventtype/lap.md) and [`HKWorkoutEventType.segment`](hkworkouteventtype/segment.md) event types support intervals with nonzero durations.
+Most event types support only date intervals with a zero-length duration. These intervals indicate a single point in time, represented by the interval’s [`startDate`](https://developer.apple.com/documentation/Foundation/NSDateInterval/startDate) property. Only [`HKWorkoutEventType.lap`](hkworkouteventtype/lap.md) and [`HKWorkoutEventType.segment`](hkworkouteventtype/segment.md) event types support intervals with nonzero durations.
 
 ## See Also
 

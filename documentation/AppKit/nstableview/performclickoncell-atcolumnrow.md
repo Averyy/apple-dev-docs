@@ -1,6 +1,6 @@
 # performClickOnCell(atColumn:row:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Performs a click action on the cell at the specified row and column.

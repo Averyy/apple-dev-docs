@@ -20,8 +20,8 @@ protocol AVPlayerViewControllerDelegate : NSObjectProtocol
 
 ## Mentions
 
-- [Working with Interstitial Content](working-with-interstitial-content.md)
 - [Adopting Picture in Picture in a Standard Player](adopting-picture-in-picture-in-a-standard-player.md)
+- [Working with Interstitial Content](working-with-interstitial-content.md)
 - [Presenting Content Proposals in tvOS](presenting-content-proposals-in-tvos.md)
 
 ## Topics
@@ -109,6 +109,10 @@ protocol AVPlayerViewControllerDelegate : NSObjectProtocol
   An object that registers handlers to respond to capture events from system hardware buttons.
 - [class AVCaptureEvent](avcaptureevent.md)
   An object that describes a user interaction with a system hardware button.
+- [class AVCaptureEventSound](avcaptureeventsound.md)
+  A sound object for a capture event.
+- [class AVInputPickerInteraction](avinputpickerinteraction.md)
+  Use `AVInputPickerInteraction` to present an input picker.
 
 
 ---

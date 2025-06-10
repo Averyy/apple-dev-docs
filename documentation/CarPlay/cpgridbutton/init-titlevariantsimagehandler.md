@@ -13,7 +13,7 @@ Creates a grid button with the specified title variants, image, and action handl
 ## Declaration
 
 ```swift
-init(titleVariants: [String], image: UIImage, handler: ((CPGridButton) -> Void)? = nil)
+convenience init(titleVariants: [String], image: UIImage, handler: ((CPGridButton) -> Void)? = nil)
 ```
 
 #### Return Value

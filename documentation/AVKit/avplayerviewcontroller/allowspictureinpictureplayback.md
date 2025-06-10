@@ -21,7 +21,7 @@ var allowsPictureInPicturePlayback: Bool { get set }
 
 #### Discussion
 
-Set this value to [`false`](https://developer.apple.com/documentation/swift/false) to disable Picture in Picture playback. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+Set this value to `false` to disable Picture in Picture playback. The default value is `true`.
 
 ## See Also
 

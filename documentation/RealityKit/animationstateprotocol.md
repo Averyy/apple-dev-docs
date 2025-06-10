@@ -1,6 +1,6 @@
 # AnimationStateProtocol
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: protocol
 
 The protocol representing the current animation state of an action animation.
@@ -10,6 +10,7 @@ The protocol representing the current animation state of an action animation.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -66,4 +67,4 @@ Access the animation state structure from the event structure returned to `.upda
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/animationstateprotocol)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/animationstateprotocol)*

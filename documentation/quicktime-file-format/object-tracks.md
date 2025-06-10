@@ -8,8 +8,6 @@ A track that contains information about the object nodes in a scene.
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
-VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
-
 A movie’s object track is a track that contains information about the object nodes in a scene. The media type of the object track is `'obje'`. Each sample in an object track corresponds to a single object node in the scene. The samples of the object track contain information describing the object images stored in the object image track.
 
 These object information samples parallel the corresponding node samples in the QTVR track and are equal in time and duration to a particular object node’s image samples in the object’s image track as well as the object node’s hot spot samples in the object’s hot spot track.

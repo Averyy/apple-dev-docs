@@ -24,8 +24,6 @@ func warning(_ message: OSLogMessage)
 
 > ❗ **Important**:  Don’t create an instance of [`OSLogMessage`](oslogmessage.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
 
- Don’t create an instance of [`OSLogMessage`](oslogmessage.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
-
 This method is functionally equivalent to the [`error(_:)`](logger/error(_:).md) method.
 
 ## Parameters

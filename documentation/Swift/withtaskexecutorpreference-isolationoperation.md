@@ -112,7 +112,7 @@ Task {
 
       // child tasks execute on default executor (same as case 0):
       async let x = ...
-      await withTaskGroup(of: Int.self) { group in g.addTask { 7 } }
+      await withTaskGroup(of: Int.self) { group in group.addTask { 7 } }
     }
   }
 }

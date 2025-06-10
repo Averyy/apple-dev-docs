@@ -85,11 +85,6 @@ struct MyView: View {
 - [associatedtype Value](environmentkey/value.md)
   The associated type representing the type of the environment key’s value.
 
-## Relationships
-
-### Inherited By
-- [UITraitBridgedEnvironmentKey](uitraitbridgedenvironmentkey.md)
-
 ## See Also
 
 - [macro Entry()](entry().md)

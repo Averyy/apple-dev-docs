@@ -1,6 +1,6 @@
 # WKUserNotificationInterfaceType.custom
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 A constant indicating that the system should display your dynamic notification interface.

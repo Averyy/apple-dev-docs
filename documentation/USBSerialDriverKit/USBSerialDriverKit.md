@@ -1,6 +1,6 @@
 # USBSerialDriverKit
 
-**Framework**: Usbserialdriverkit  
+**Framework**: USBSerialDriverKit  
 **Kind**: module
 
 Develop drivers for serial USB devices connected to your Mac.

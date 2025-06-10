@@ -20,7 +20,7 @@ Returns a a pixel aligned rectangle on the target screen from the given input re
 
 #### Discussion
 
-This method uses [`NSIntegralRectWithOptions(_:_:)`](https://developer.apple.com/documentation/foundation/1391311-nsintegralrectwithoptions) to produce the pixel aligned rectangle.
+This method uses [`NSIntegralRectWithOptions(_:_:)`](https://developer.apple.com/documentation/Foundation/NSIntegralRectWithOptions(_:_:)) to produce the pixel aligned rectangle.
 
 ## Parameters
 

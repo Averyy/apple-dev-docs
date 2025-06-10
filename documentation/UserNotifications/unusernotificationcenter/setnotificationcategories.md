@@ -1,6 +1,6 @@
 # setNotificationCategories(_:)
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: method
 
 Registers the notification categories that your app supports.

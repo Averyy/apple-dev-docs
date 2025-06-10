@@ -1,6 +1,6 @@
 # VTHDRPerFrameMetadataGenerationSession
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: class
 
 An object that generates per-frame HDR metadata.

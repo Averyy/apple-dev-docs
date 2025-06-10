@@ -1,6 +1,6 @@
 # elementArray(withCode:)
 
-**Framework**: Scriptingbridge  
+**Framework**: Scripting Bridge  
 **Kind**: method
 
 Returns an array containing every child of the receiver with the given class-type code.

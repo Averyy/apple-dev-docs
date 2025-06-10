@@ -1,0 +1,18 @@
+# kIOPMBatteryDepleted
+
+**Framework**: Kernel  
+**Kind**: econst
+
+**Availability**:
+- macOS 10.12+
+
+## Declaration
+
+```swift
+kIOPMBatteryDepleted = (1 << 5)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/1645011-anonymous/kiopmbatterydepleted)*

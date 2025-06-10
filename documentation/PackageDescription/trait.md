@@ -20,8 +20,6 @@ Traits can be used for expressing conditional compilation and optional dependenc
 
 > ❗ **Important**: Traits must be strictly additive and enabling a trait  remove API.
 
-Traits must be strictly additive and enabling a trait  remove API.
-
 ## Topics
 
 ### Operators
@@ -69,6 +67,11 @@ Traits must be strictly additive and enabling a trait  remove API.
 - [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
 - [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
 - [Hashable](../Swift/Hashable.md)
+
+## See Also
+
+- [var traits: Set<Trait>](package/traits.md)
+  The set of traits of this package.
 
 
 ---

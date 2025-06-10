@@ -1,6 +1,6 @@
 # webView
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The view object that manages the web frame.

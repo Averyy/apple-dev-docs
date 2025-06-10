@@ -1,6 +1,6 @@
 # image
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The image object of the first pasteboard item.

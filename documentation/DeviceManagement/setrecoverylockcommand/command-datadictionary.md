@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to set the Recovery Lock password.
+The command to set or clear the Recovery Lock password.
 
 **Availability**:
 - macOS 11.5+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # averagePrecipitationProbability
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The average percentage probability of precipitation (0.0 = 0%, 1.0 = 100%) for the day.

@@ -31,6 +31,8 @@ enum CMProjectionType
   Video content displays as a 180 degree equirectangular projection.
 - [CMProjectionType.fisheye](cmprojectiontype/fisheye.md)
   Video content displays as a fisheye projection.
+### Enumeration Cases
+- [CMProjectionType.parametricImmersive](cmprojectiontype/parametricimmersive.md)
 ### Initializers
 - [init?(rawValue: UInt64)](cmprojectiontype/init(rawvalue:).md)
 
@@ -42,6 +44,7 @@ enum CMProjectionType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

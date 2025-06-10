@@ -9,7 +9,7 @@ The identifier of an app entity you set on framework types to make app content a
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
-- Mac Catalyst 18.2+
+- Mac Catalyst ?+
 - macOS 15.2+
 - tvOS 18.2+
 - visionOS 2.2+

@@ -51,7 +51,7 @@ safari.extension.dispatchMessage("passArray", { "key": myArray });
 
 When the app extension receives the message, the system calls the extension handler’s [`messageReceived(withName:from:userInfo:)`](sfsafariextensionhandling/messagereceived(withname:from:userinfo:).md) method. This method’s parameters include the message name, the page that sends the message, and, if part of the message, a user dictionary:
 
-In Safari 17 and later, check whether the user is browsing with a profile if you need to limit any extension logic to the profile, such as fetching or storing data. To do that, implement the [`beginRequest(with:)`](https://developer.apple.com/documentation/foundation/nsextensionrequesthandling/1413395-beginrequest) method.
+In Safari 17 and later, check whether the user is browsing with a profile if you need to limit any extension logic to the profile, such as fetching or storing data. To do that, implement the [`beginRequest(with:)`](https://developer.apple.com/documentation/Foundation/NSExtensionRequestHandling/beginRequest(with:)) method.
 
 ```swift
 - (void)beginRequestWithExtensionContext:(NSExtensionContext *)context {

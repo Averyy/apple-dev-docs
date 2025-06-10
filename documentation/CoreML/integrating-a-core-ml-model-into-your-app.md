@@ -1,6 +1,6 @@
 # Integrating a Core ML Model into Your App
 
-**Framework**: Coreml
+**Framework**: Core ML
 
 Add a simple model to an app, pass input data to the model, and process the model’s predictions.
 
@@ -84,4 +84,4 @@ Xcode compiles the Core ML model into a resource that’s been optimized to run 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/integrating-a-core-ml-model-into-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coreml/integrating-a-core-ml-model-into-your-app)*

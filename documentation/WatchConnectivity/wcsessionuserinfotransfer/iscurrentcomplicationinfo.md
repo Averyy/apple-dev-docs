@@ -1,6 +1,6 @@
 # isCurrentComplicationInfo
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 A Boolean indicating whether the data is related to the app’s complication.

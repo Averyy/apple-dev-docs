@@ -1,6 +1,6 @@
 # WKDataDetectorTypes
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: struct
 
 The data detector types.
@@ -59,6 +59,7 @@ let myDataDetector: WKDataDetectorTypes = []
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

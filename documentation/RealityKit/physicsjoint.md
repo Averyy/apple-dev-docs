@@ -10,6 +10,7 @@ A type that describes physics joints.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -112,6 +113,8 @@ If both are [`PhysicsBodyMode.dynamic`](physicsbodymode/dynamic.md), set the hea
   A component that stores physics joints which RealityKit simulates.
 - [struct EntityGeometricPins](entitygeometricpins.md)
   A structure that wraps all geometric pins an entity owns.
+- [struct AttachedTransformComponent](attachedtransformcomponent.md)
+  A component that stores an optional source pin owned by this entity and a target pin which this entity is attached to
 
 
 ---

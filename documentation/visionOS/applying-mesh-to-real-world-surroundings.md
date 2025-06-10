@@ -1,6 +1,6 @@
 # Applying mesh to real-world surroundings
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
 
@@ -97,8 +97,6 @@ func run(_ sceneRec: SceneReconstructionProvider) async {
 ```
 
 > ❗ **Important**: To use the `SceneReconstructionProvider`, you must add the `NSWorldSensingUsageDescription` property key list entry to the `info.plist`.
-
-To use the `SceneReconstructionProvider`, you must add the `NSWorldSensingUsageDescription` property key list entry to the `info.plist`.
 
 ##### Add Scene Reconstruction to the View
 

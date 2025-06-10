@@ -1,6 +1,6 @@
 # Testing fetching product identifiers
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Verify that your app receives the correct product identifiers by inspecting or replicating your app’s process for retrieving the identifiers.
 
@@ -24,4 +24,4 @@ For more information on fetching product identifiers, see [`Loading in-app produ
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/testing-fetching-product-identifiers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/testing-fetching-product-identifiers)*

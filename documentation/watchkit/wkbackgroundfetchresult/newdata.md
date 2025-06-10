@@ -1,6 +1,6 @@
 # WKBackgroundFetchResult.newData
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The download attempt succeeded.

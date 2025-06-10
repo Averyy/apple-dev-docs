@@ -8,7 +8,6 @@
 - iPadOS 17.4+
 - tvOS ?+
 - visionOS ?+
-- watchOS ?+
 
 ## Declaration
 

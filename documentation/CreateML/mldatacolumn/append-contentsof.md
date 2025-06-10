@@ -1,6 +1,6 @@
 # append(contentsOf:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Appends the elements of the given column to the end of this column.

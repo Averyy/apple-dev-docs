@@ -1,6 +1,6 @@
 # WeatherCondition.blowingSnow
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Blowing or drifting snow.

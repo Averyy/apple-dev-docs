@@ -1,6 +1,6 @@
 # subscriptionPeriod
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: property
 
 An object that defines the period for the product discount.

@@ -26,8 +26,6 @@ The array contains instances of [`AVAudioMixInputParameters`](avaudiomixinputpar
 
 > ⚠️ **Warning**:  Specifying multiple `AVAudioMixInputParameters` for the same track has undefined behavior. Use only one instance per track in an audio mix.
 
- Specifying multiple `AVAudioMixInputParameters` for the same track has undefined behavior. Use only one instance per track in an audio mix.
-
 
 ---
 

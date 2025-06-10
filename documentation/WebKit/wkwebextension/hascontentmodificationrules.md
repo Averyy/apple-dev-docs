@@ -1,6 +1,6 @@
 # hasContentModificationRules
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating whether the extension includes rules used for content modification or blocking.

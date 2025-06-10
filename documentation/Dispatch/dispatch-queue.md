@@ -12,8 +12,6 @@ You schedule work items synchronously or asynchronously. When you schedule a wor
 
 > ❗ **Important**:  Attempting to synchronously execute a work item on the main queue results in deadlock.
 
- Attempting to synchronously execute a work item on the main queue results in deadlock.
-
 Dispatch queues provide minimal support for autoreleased objects by default. System APIs may return autoreleased objects to your code. For example, [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) objects are often autoreleased. If you see memory pressure increase because of autoreleased objects created in your blocks, consider adding autorelease pools to those blocks to relieve the pressure. You can also configure the default autorelease behavior of any custom dispatch queues using the [`dispatch_queue_attr_make_with_autorelease_frequency`](dispatch_queue_attr_make_with_autorelease_frequency.md) function at creation time.
 
 ##### Avoiding Excessive Thread Creation

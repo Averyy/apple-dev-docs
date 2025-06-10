@@ -15,10 +15,7 @@ func destroy(options: IOUSBHostObjectDestroyOptions = [])
 
 #### Discussion
 
-```None
-         <code>IOUSBHostObjectDestroyOptionsDeviceSurrender</code> is defined to support surrendering ownersip of
-         the kernel service.  To be used when accepting the <code>kUSBHostMessageDeviceIsRequestingClose</code> message.
-```
+Extends destroy to take an options to modify the destroy behavior.  Currently only the IOUSBHostObjectDestroyOptionsDeviceSurrender is defined to support surrendering ownersip of the kernel service.  To be used when accepting the kUSBHostMessageDeviceIsRequestingClose message.
 
 
 ---

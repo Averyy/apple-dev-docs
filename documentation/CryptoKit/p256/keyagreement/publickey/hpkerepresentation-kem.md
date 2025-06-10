@@ -1,6 +1,6 @@
 # hpkeRepresentation(kem:)
 
-**Framework**: Cryptokit  
+**Framework**: Apple CryptoKit  
 **Kind**: method
 
 Creates a serialized representation of the public key.

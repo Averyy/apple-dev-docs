@@ -1,6 +1,6 @@
 # SVG_MARKER_ORIENT_UNKNOWN
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

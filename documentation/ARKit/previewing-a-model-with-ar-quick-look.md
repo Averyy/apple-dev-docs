@@ -1,6 +1,6 @@
 # Previewing a Model with AR Quick Look
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Display a model or scene that the user can move, scale, and share with others.
 
@@ -46,7 +46,7 @@ class ViewController: UIViewController, QLPreviewControllerDataSource {
 }
 ```
 
-To prevent the user from scaling your virtual content or to customize the default share sheet behavior, use [`ARQuickLookPreviewItem`](arquicklookpreviewitem.md) instead of [`QLPreviewItem`](https://developer.apple.com/documentation/QuickLook/QLPreviewItem).
+To prevent the user from scaling your virtual content or to customize the default share sheet behavior, use `ARQuickLookPreviewItem` instead of [`QLPreviewItem`](https://developer.apple.com/documentation/QuickLook/QLPreviewItem).
 
 ##### Display an Ar Experience in Your Web Page
 
@@ -68,8 +68,6 @@ When the user clicks the link in Safari or within a web view that’s displayed 
   Balance the appearance and performance of your AR experiences with modeling strategies.
 - [Adding an Apple Pay Button or a Custom Action in AR Quick Look](adding-an-apple-pay-button-or-a-custom-action-in-ar-quick-look.md)
   Provide a banner that users can tap to make a purchase or perform a custom action in an AR experience.
-- [class ARQuickLookPreviewItem](arquicklookpreviewitem.md)
-  An object for customizing the AR Quick Look experience.
 - [USDZ schemas for AR](../RealityKit/usdz-schemas-for-ar.md)
   Add augmented reality functionality to your 3D content using USDZ schemas.
 - [Specifying a lighting environment in AR Quick Look](specifying-a-lighting-environment-in-ar-quick-look.md)
@@ -78,4 +76,4 @@ When the user clicks the link in Safari or within a web view that’s displayed 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/previewing-a-model-with-ar-quick-look)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/previewing-a-model-with-ar-quick-look)*

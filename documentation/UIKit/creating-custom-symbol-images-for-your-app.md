@@ -1,6 +1,6 @@
 # Creating custom symbol images for your app
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Create, organize, and annotate symbol images using SF Symbols.
 
@@ -300,4 +300,4 @@ Open your app’s Xcode project and select its asset catalog. In Xcode’s menu 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/creating-custom-symbol-images-for-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/creating-custom-symbol-images-for-your-app)*

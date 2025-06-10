@@ -1,6 +1,6 @@
 # defaultFixedFontSize
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The default fixed font size of the web view.

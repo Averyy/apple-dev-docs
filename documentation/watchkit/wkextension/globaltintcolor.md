@@ -1,6 +1,6 @@
 # globalTintColor
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The watchOS app’s global tint color.

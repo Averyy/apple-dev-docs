@@ -25,8 +25,6 @@ Use this initializer to create a controller that displays its content in a playe
 
 > ❗ **Important**:  Before attempting to create a controller, verify that the current device supports Picture in Picture by calling the [`isPictureInPictureSupported()`](avpictureinpicturecontroller/ispictureinpicturesupported().md) class method. Attempting to create a Picture in Picture controller on an unsupported device returns `nil`.
 
- Before attempting to create a controller, verify that the current device supports Picture in Picture by calling the [`isPictureInPictureSupported()`](avpictureinpicturecontroller/ispictureinpicturesupported().md) class method. Attempting to create a Picture in Picture controller on an unsupported device returns `nil`.
-
 ## Parameters
 
 - `contentSource`: The source of the content to show in a Picture in Picture window.

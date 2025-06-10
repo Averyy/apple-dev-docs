@@ -24,8 +24,6 @@ struct AccountChange
 
 > ❗ **Important**:  When a sync engine detects a change to the device’s iCloud account, it resets its internal state, including unsaved changes to both records and record zones. Your app needs to handle this scenario gracefully.
 
- When a sync engine detects a change to the device’s iCloud account, it resets its internal state, including unsaved changes to both records and record zones. Your app needs to handle this scenario gracefully.
-
 ## Topics
 
 ### Understanding the change
@@ -42,6 +40,7 @@ struct AccountChange
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

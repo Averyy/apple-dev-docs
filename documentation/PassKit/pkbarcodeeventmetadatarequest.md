@@ -38,7 +38,7 @@ class PKBarcodeEventMetadataRequest
 ## See Also
 
 - [func handle(PKBarcodeEventConfigurationRequest, completion: () -> Void)](pkpaymentinformationrequesthandling/handle(_:completion:)-3cth8.md)
-- [func handleInformationRequest(PKBarcodeEventMetadataRequest, completion: PKInformationRequestCompletionBlock)](pkpaymentinformationrequesthandling/handleinformationrequest(_:completion:).md)
+- [func handleInformationRequest(PKBarcodeEventMetadataRequest, completion: (PKBarcodeEventMetadataResponse) -> Void)](pkpaymentinformationrequesthandling/handleinformationrequest(_:completion:).md)
 - [class PKBarcodeEventConfigurationRequest](pkbarcodeeventconfigurationrequest.md)
 - [class PKBarcodeEventMetadataResponse](pkbarcodeeventmetadataresponse.md)
 - [typealias PKInformationRequestCompletionBlock](pkinformationrequestcompletionblock.md)

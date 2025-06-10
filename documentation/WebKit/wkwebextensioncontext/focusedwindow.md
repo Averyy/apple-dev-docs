@@ -1,6 +1,6 @@
 # focusedWindow
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The window that currently has focus for this extension.

@@ -1,6 +1,6 @@
 # xpc_dictionary_get_uuid(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Gets a UUID value from a dictionary directly.

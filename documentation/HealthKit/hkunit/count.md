@@ -1,6 +1,6 @@
 # count()
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: method
 
 Returns a HealthKit unit for measuring counts.

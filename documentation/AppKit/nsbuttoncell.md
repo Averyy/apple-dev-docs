@@ -131,6 +131,7 @@ Setting the [`font`](nscell/font.md) property does nothing if the button has no 
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

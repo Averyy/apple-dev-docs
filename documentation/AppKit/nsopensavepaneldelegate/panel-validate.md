@@ -1,6 +1,6 @@
 # panel(_:validate:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Asks the delegate to validate the URL for a file that the user selected.

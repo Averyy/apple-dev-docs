@@ -1,6 +1,6 @@
 # Making email actions available to Siri and Apple Intelligence
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Create app intents and entities to integrate your app’s email functionality with Siri and Apple Intelligence.
 
@@ -13,7 +13,7 @@ To integrate your app’s email capabilities with Siri and Apple Intelligence, y
 For example, if your app allows someone to draft an email and send that at a later date and time, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.mail` domain and the [`sendDraft`](assistantschemas/mailintent/senddraft.md) schema:
 
 ```swift
-@AssistantIntent(schema: .mail.sendDraft)
+@AppIntent(schema: .mail.sendDraft)
 struct SendDraftIntent: AppIntent {
     var target: MailDraftEntity
     var sendLaterDate: Date?
@@ -32,7 +32,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 If you use app entities to describe custom data types, annotate the app entity implementation with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `MailDraftEntity`. The following code snippet shows how the `MailDraftEntity` implementation uses the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro:
 
 ```swift
-@AssistantEntity(schema: .mail.draft)
+@AppEntity(schema: .mail.draft)
 struct MailDraftEntity {
 
     static var defaultQuery = Query()
@@ -51,7 +51,7 @@ struct MailDraftEntity {
     var cc: [IntentPerson]
     var bcc: [IntentPerson]
     var subject: String?
-    var body: String?
+    var body: AttributedString?
     var attachments: [IntentFile]
     var account: MailAccountEntity
 }
@@ -71,4 +71,4 @@ For a list of available app entity schemas in the `.mail` domain, see [`Assistan
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-email-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-email-actions-available-to-siri-and-apple-intelligence)*

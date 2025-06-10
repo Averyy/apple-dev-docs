@@ -1,6 +1,6 @@
 # Apple Music Feed
 
-**Framework**: Applemusicfeed  
+**Framework**: Apple Music Feed  
 **Kind**: module
 
 Access the content of the Apple Music Catalog in bulk.

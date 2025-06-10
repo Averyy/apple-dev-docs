@@ -61,6 +61,8 @@ Units that perform conversion using only a scale factor have a [`coefficient`](u
 - [NSCoding](nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

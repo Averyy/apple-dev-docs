@@ -10,6 +10,7 @@ An animation that starts, stops, or increments by a specific value.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -100,19 +101,11 @@ The default source value is the base value of the of animated property. If multi
   The time, in seconds, at which the animation plays.
 - [var trimEnd: TimeInterval?](fromtobyanimation/trimend.md)
   The time, in seconds, at which the animation stops.
-- [func trimmed(start: TimeInterval?, end: TimeInterval?, duration: TimeInterval?) -> Self](fromtobyanimation/trimmed(start:end:duration:).md)
-  Edits the animation duration according to the specified time.
 ### Repeating animation playback
 - [var repeatMode: AnimationRepeatMode](fromtobyanimation/repeatmode.md)
   An option that determines how the animation repeats.
 - [var fillMode: AnimationFillMode](fromtobyanimation/fillmode.md)
   An option that determines which data displays outside of the normal duration.
-- [func repeated(count: TimeInterval) -> Self](fromtobyanimation/repeated(count:)-4f0eh.md)
-  Repeats an animation the number of times specified by an irrational number.
-- [func repeated(count: Int) -> Self](fromtobyanimation/repeated(count:)-1ykci.md)
-  Repeats an animation the number of times specified by a whole number.
-- [func repeatingForever() -> Self](fromtobyanimation/repeatingforever.md)
-  Repeats the animation infinitely.
 ### Initializers
 - [init(weightNames: [String], name: String, from: Value?, to: Value?, by: Value?, duration: TimeInterval, timing: AnimationTimingFunction, isAdditive: Bool, bindTarget: BindTarget?, blendLayer: Int32, repeatMode: AnimationRepeatMode, fillMode: AnimationFillMode, trimStart: TimeInterval?, trimEnd: TimeInterval?, trimDuration: TimeInterval?, offset: TimeInterval, delay: TimeInterval, speed: Float)](fromtobyanimation/init(weightnames:name:from:to:by:duration:timing:isadditive:bindtarget:blendlayer:repeatmode:fillmode:trimstart:trimend:trimduration:offset:delay:speed:).md)
   Creates an animation that blends between a configuration of blend targets.
@@ -122,8 +115,6 @@ The default source value is the base value of the of animated property. If multi
 - [var toValue: BlendShapeWeights?](fromtobyanimation/tovalue-5zgql.md)
 - [var weightNames: [String]](fromtobyanimation/weightnames.md)
   Weight names that define the weights for the blend shape.
-### Default Implementations
-- [AnimationDefinition Implementations](fromtobyanimation/animationdefinition-implementations.md)
 
 ## Relationships
 

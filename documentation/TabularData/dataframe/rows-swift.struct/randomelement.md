@@ -1,6 +1,6 @@
 # randomElement()
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns a random element of the collection.

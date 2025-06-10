@@ -47,6 +47,8 @@ class MTLRenderPassDepthAttachmentDescriptor
 
 ## See Also
 
+- [class MTL4RenderPassDescriptor](mtl4renderpassdescriptor.md)
+  Describes a render pass.
 - [class MTLRenderPassDescriptor](mtlrenderpassdescriptor.md)
   A group of render targets that hold the results of a render pass.
 - [class MTLRenderPassAttachmentDescriptor](mtlrenderpassattachmentdescriptor.md)
@@ -59,6 +61,8 @@ class MTLRenderPassDepthAttachmentDescriptor
   An RGBA value used for a color pixel.
 - [enum MTLMultisampleDepthResolveFilter](mtlmultisampledepthresolvefilter.md)
   Filtering options for controlling an MSAA depth resolve operation.
+- [class MTL4RenderPipelineColorAttachmentDescriptorArray](mtl4renderpipelinecolorattachmentdescriptorarray.md)
+  An array of color attachment descriptions for a render pipeline.
 - [class MTLTileRenderPipelineColorAttachmentDescriptorArray](mtltilerenderpipelinecolorattachmentdescriptorarray.md)
   An array of color attachment descriptors for the tile render pipeline.
 - [class MTLRenderPassStencilAttachmentDescriptor](mtlrenderpassstencilattachmentdescriptor.md)
@@ -69,6 +73,10 @@ class MTLRenderPassDepthAttachmentDescriptor
   An array of sample buffer attachments for a render pass.
 - [class MTLRenderPassSampleBufferAttachmentDescriptor](mtlrenderpasssamplebufferattachmentdescriptor.md)
   A description of where to store GPU counter information at the start and end of a render pass.
+- [class MTLLogicalToPhysicalColorAttachmentMap](mtllogicaltophysicalcolorattachmentmap.md)
+  Allows you to easily specify color attachment remapping from logical to physical indices.
+- [let MTLRenderTargetRemapIndexDiscard: Int](mtlrendertargetremapindexdiscard.md)
+  Constant to specify discarding a color attachment’s index in a remap operation.
 
 
 ---

@@ -33,8 +33,6 @@ If you  include this key in your app’s `Info.plist`:
 
 > ❗ **Important**:  [`UIApplicationSupportsIndirectInputEvents`](information-property-list/uiapplicationsupportsindirectinputevents.md) is a compatibility affordance to ease the adoption of indirect input for a UIKit application. Avoid relying on this property and prepare your app to support indirect gestures on all platforms. For visionOS, the system always supports indirect input events and doesn’t consult this key.
 
- [`UIApplicationSupportsIndirectInputEvents`](information-property-list/uiapplicationsupportsindirectinputevents.md) is a compatibility affordance to ease the adoption of indirect input for a UIKit application. Avoid relying on this property and prepare your app to support indirect gestures on all platforms. For visionOS, the system always supports indirect input events and doesn’t consult this key.
-
 
 ---
 

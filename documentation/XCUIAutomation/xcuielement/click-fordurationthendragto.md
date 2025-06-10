@@ -1,6 +1,6 @@
 # click(forDuration:thenDragTo:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Clicks and holds an element for a duration you specify, and then drags it to another element.

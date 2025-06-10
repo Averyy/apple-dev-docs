@@ -1,6 +1,6 @@
 # Sending MDM Commands to a Device
 
-**Framework**: Devicemanagement
+**Framework**: Device Management
 
 Execute commands on a device and receive responses that contain the results of each operation.
 
@@ -124,4 +124,4 @@ It’s also possible for the device to send the same status twice. Examine the `
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/sending-mdm-commands-to-a-device)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/sending-mdm-commands-to-a-device)*

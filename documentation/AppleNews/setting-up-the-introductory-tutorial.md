@@ -1,6 +1,6 @@
 # Setting Up the Introductory Tutorial
 
-**Framework**: Applenews
+**Framework**: Apple News
 
 Download the tutorial files, and learn about what you’ll create in the introductory tutorial.
 
@@ -119,4 +119,4 @@ It’s recommended that you choose a text editor designed for editing code. Alth
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/setting-up-the-introductory-tutorial)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applenews/setting-up-the-introductory-tutorial)*

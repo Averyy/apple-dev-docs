@@ -1,6 +1,6 @@
 # Displaying an AR Experience with Metal
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Control rendering of your app’s virtual content on top of a camera feed.
 
@@ -190,4 +190,4 @@ uniforms.pointee.ambientLightColor = ambientLightColor * ambientIntensity
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/displaying-an-ar-experience-with-metal)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/displaying-an-ar-experience-with-metal)*

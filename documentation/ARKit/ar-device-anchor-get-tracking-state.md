@@ -6,6 +6,7 @@
 Gets the tracking state of the device anchor.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # DataScannerViewController.TextContentType.telephoneNumber
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: case
 
 The content type for a phone number that appears in text.

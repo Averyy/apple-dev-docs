@@ -1,11 +1,14 @@
 # previousFrame
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 The previous source frame in presentation time order.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
 
 ## Declaration
@@ -22,8 +25,6 @@ This value can be set to nil for the first frame.
 
 - [var sourceFrame: VTFrameProcessorFrame](vtmotionblurparameters/sourceframe.md)
   The current source frame.
-- [var destinationFrame: VTFrameProcessorFrame](vtmotionblurparameters/destinationframe.md)
-  A user-allocated pixel buffer that receives the results.
 - [var nextFrame: VTFrameProcessorFrame?](vtmotionblurparameters/nextframe.md)
   The next source frame in presentation time order.
 - [var motionBlurStrength: Int](vtmotionblurparameters/motionblurstrength.md)

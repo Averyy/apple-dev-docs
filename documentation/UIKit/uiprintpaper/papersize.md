@@ -14,7 +14,6 @@ The size of the sheet to use for printing.
 ## Declaration
 
 ```swift
-@MainActor
 var paperSize: CGSize { get }
 ```
 

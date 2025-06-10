@@ -162,6 +162,7 @@ Valid indices are exactly those indices that are reachable from the collectionâ€
 - [DefaultIndices](defaultindices.md)
 - [DiscontiguousSlice](discontiguousslice.md)
 - [EmptyCollection](emptycollection.md)
+- [EnumeratedSequence](enumeratedsequence.md)
 - [FlattenSequence](flattensequence.md)
 - [Int.Words](int/words-swift.struct.md)
 - [Int16.Words](int16/words-swift.struct.md)

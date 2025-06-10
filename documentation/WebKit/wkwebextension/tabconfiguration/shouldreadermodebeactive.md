@@ -1,6 +1,6 @@
 # shouldReaderModeBeActive
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates whether reader mode in the tab should be active.

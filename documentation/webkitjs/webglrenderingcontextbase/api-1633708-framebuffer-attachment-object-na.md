@@ -1,6 +1,6 @@
 # FRAMEBUFFER_ATTACHMENT_OBJECT_NAME
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # count
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: property
 
 The number of elements in the collection.

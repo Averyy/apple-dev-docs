@@ -1,6 +1,6 @@
 # requestWhenInUseAuthorization()
 
-**Framework**: Corelocation  
+**Framework**: Core Location  
 **Kind**: method
 
 Requests the user’s permission to use location services while the app is in use.

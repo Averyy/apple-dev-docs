@@ -1,6 +1,6 @@
 # width
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The width of the video element in CSS pixels.

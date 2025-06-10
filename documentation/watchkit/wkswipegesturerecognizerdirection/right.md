@@ -1,6 +1,6 @@
 # right
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The touch moves from left to right. This direction is the default.

@@ -38,6 +38,11 @@ struct PayWithApplePayButtonLabel
 - [static let tip: PayWithApplePayButtonLabel](paywithapplepaybuttonlabel/tip.md)
 - [static let topUp: PayWithApplePayButtonLabel](paywithapplepaybuttonlabel/topup.md)
 
+## Relationships
+
+### Conforms To
+- [Equatable](../Swift/Equatable.md)
+
 ## See Also
 
 - [class PKPaymentButton](pkpaymentbutton.md)

@@ -1,6 +1,6 @@
 # add(_:contentWorld:name:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Installs a message handler that you can call from the specified content world in your JavaScript code.

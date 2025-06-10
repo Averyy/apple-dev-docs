@@ -10,10 +10,10 @@ Returns a new reduction layer.
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
+- tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
-- tvOS 14.0+
 
 ## Declaration
 
@@ -24,8 +24,6 @@ convenience init?(function reductionFunction: BNNS.ReductionFunction, input: BNN
 #### Discussion
 
 > ❗ **Important**:  The number of input dimensions must be equal to number of output dimensions, and equal to the number of weights dimensions. The reduction layer only supports `float`, with the exception of [`BNNSReduceFunctionLogicalOr`](bnnsreducefunctionlogicalor.md) and [`BNNSReduceFunctionLogicalAnd`](bnnsreducefunctionlogicaland.md) that support `float` and `BNNSDataTypeBoolean`.
-
- The number of input dimensions must be equal to number of output dimensions, and equal to the number of weights dimensions. The reduction layer only supports `float`, with the exception of [`BNNSReduceFunctionLogicalOr`](bnnsreducefunctionlogicalor.md) and [`BNNSReduceFunctionLogicalAnd`](bnnsreducefunctionlogicaland.md) that support `float` and `BNNSDataTypeBoolean`.
 
 ## Parameters
 

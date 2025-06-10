@@ -1,6 +1,6 @@
 # invalidateUserActivity()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Invalidates the most recent user activity.

@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_AllowFrameReordering
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A Boolean value that indicates whether frame reordering is enabled.

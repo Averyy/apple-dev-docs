@@ -32,6 +32,12 @@ struct HandAnchor
 ### Identifying hand anchors
 - [var id: UUID](handanchor/id.md)
   The unique identifier of this anchor.
+### Instance Properties
+- [var fidelity: HandAnchor.Fidelity](handanchor/fidelity-swift.property.md)
+  The fidelity of this hand.
+### Enumerations
+- [HandAnchor.Fidelity](handanchor/fidelity-swift.enum.md)
+  Enumeration to distinguish hand fidelity
 
 ## Relationships
 
@@ -42,6 +48,7 @@ struct HandAnchor
 - [Equatable](../Swift/Equatable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TrackableAnchor](trackableanchor.md)
 
 ## See Also

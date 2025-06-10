@@ -24,8 +24,6 @@ func withIntervalSignpost<T>(_ name: StaticString, id: OSSignpostID = .exclusive
 
 > ❗ **Important**:  Don’t create an instance of [`SignpostMetadata`](signpostmetadata.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
 
- Don’t create an instance of [`SignpostMetadata`](signpostmetadata.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
-
 The signposter uses a signpost ID to pair the beginning and the end of a signposted interval, which is necessary because multiple intervals with the same configuration and scope can be in-flight simultaneously. If only one interval with a specific configuration can execute at any particular time, pass [`exclusive`](ossignpostid/exclusive.md) as the `id` parameter. Otherwise, use the [`makeSignpostID()`](ossignposter/makesignpostid().md) and [`makeSignpostID(from:)`](ossignposter/makesignpostid(from:).md) methods to generate a signpost identifier, as the following example shows:
 
 ```swift

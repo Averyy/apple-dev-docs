@@ -6,13 +6,13 @@
 A Boolean value that determines whether SceneKit renders particles in black before rendering the particle image.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 
@@ -25,8 +25,6 @@ var isBlackPassEnabled: Bool { get set }
 Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to enhance visual contrast when using additive blending. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 > ❗ **Important**:  Because a black pass requires rendering the entire particle system twice, enabling this option can severely affect rendering performance.
-
- Because a black pass requires rendering the entire particle system twice, enabling this option can severely affect rendering performance.
 
 ## See Also
 

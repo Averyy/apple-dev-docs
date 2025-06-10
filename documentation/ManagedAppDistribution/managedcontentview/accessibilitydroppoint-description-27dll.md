@@ -1,6 +1,6 @@
 # accessibilityDropPoint(_:description:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 The point an assistive technology should use to end a drag interaction.

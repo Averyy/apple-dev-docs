@@ -1,6 +1,6 @@
 # XCTWaiter.Result
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: enum
 
 Result states returned by a waiter when it completes, times out, fails, or is interrupted.
@@ -35,6 +35,7 @@ enum Result
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

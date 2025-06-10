@@ -10,13 +10,14 @@ Hashes the essential components of the controller by feeding them into the given
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func hash(into hasher: inout Hasher)
+nonisolated
+func hash(into hasher: inout Hasher)
 ```
 
 ## Parameters
@@ -27,10 +28,6 @@ Hashes the essential components of the controller by feeding them into the given
 
 - [static func == (AnimationPlaybackController, AnimationPlaybackController) -> Bool](animationplaybackcontroller/==(_:_:).md)
   Indicates whether two animation playback controllers are equal.
-- [static func != (Self, Self) -> Bool](animationplaybackcontroller/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [var hashValue: Int](animationplaybackcontroller/hashvalue.md)
-  The hash value.
 
 
 ---

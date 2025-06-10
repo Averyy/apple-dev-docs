@@ -1,6 +1,6 @@
 # XCTIssue
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: struct
 
 An object that represents a test failure, and includes source code call stacks for test reporting and investigation.
@@ -13,9 +13,6 @@ struct XCTIssue
 
 ## Topics
 
-### Initializers
-- [init(type: XCTIssue.IssueType, compactDescription: String, detailedDescription: String?, sourceCodeContext: XCTSourceCodeContext, associatedError: (any Error)?, attachments: [XCTAttachment])](xctissue-swift.struct/init(type:compactdescription:detaileddescription:sourcecodecontext:associatederror:attachments:).md)
-  Creates an issue for a test failure, with descriptions, source code location, error, and attachments.
 ### Issue Types
 - [typealias IssueType](xctissue-swift.struct/issuetype.md)
   Constants that indicate types of test failures, such as assertion failures, performance regressions, or thrown errors.
@@ -34,6 +31,15 @@ struct XCTIssue
   An array of data that augments an issue, such as files, images, screenshots, data blobs, or ZIP files.
 - [func add(XCTAttachment)](xctissue-swift.struct/add(_:).md)
   Adds supporting data to an issue.
+### Initializers
+- [init(type: XCTIssue.IssueType, compactDescription: String, detailedDescription: String?, sourceCodeContext: XCTSourceCodeContext, associatedError: (any Error)?, attachments: [XCTAttachment], severity: XCTIssue.Severity)](xctissue-swift.struct/init(type:compactdescription:detaileddescription:sourcecodecontext:associatederror:attachments:severity:).md)
+### Instance Properties
+- [var isFailure: Bool](xctissue-swift.struct/isfailure.md)
+  Whether or not this issue should cause the test it’s associated with to be considered a failure.
+- [var severity: XCTIssue.Severity](xctissue-swift.struct/severity-swift.property.md)
+  The severity of the issue.
+### Type Aliases
+- [typealias Severity](xctissue-swift.struct/severity-swift.typealias.md)
 
 ## Relationships
 

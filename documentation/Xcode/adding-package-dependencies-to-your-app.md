@@ -111,4 +111,4 @@ To remove a package dependency from your Xcode project:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/adding-package-dependencies-to-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app)*

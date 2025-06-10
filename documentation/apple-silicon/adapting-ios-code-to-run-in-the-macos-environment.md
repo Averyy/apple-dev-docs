@@ -20,7 +20,7 @@ Before you attempt to use any sensor or feature in your iOS app, always check wh
 - Check for appropriate camera support in ARKit using the [`isSupported`](https://developer.apple.com/documentation/ARKit/ARConfiguration/isSupported) property of the appropriate [`ARConfiguration`](https://developer.apple.com/documentation/ARKit/ARConfiguration) subclass.
 - Identify the available cameras on the device using the [`AVCaptureDevice.DiscoverySession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice/DiscoverySession) class. Don’t assume a device contains a front- or rear-facing camera.
 - Use Core Location to fetch location data as you do in iOS. Core Location doesn’t require GPS hardware to get the current location. However, the locations you receive may not be as precise when GPS is unavailable.
-- Call the [`isHealthDataAvailable()`](https://developer.apple.com/documentation/healthkit/hkhealthstore/1614180-ishealthdataavailable) method of [`HKHealthStore`](https://developer.apple.com/documentation/HealthKit/HKHealthStore) to determine whether health-related data is available.
+- Call the [`isHealthDataAvailable()`](https://developer.apple.com/documentation/HealthKit/HKHealthStore/isHealthDataAvailable()) method of [`HKHealthStore`](https://developer.apple.com/documentation/HealthKit/HKHealthStore) to determine whether health-related data is available.
 - Check the [`authorizationStatus`](https://developer.apple.com/documentation/HomeKit/HMHomeManager/authorizationStatus) property of [`HMHomeManager`](https://developer.apple.com/documentation/HomeKit/HMHomeManager) to see whether your app is able to access HomeKit.
 
 ##### Handle Unknown Device Types Gracefully
@@ -53,8 +53,6 @@ If your app already supports iPad multitasking, you don’t need to do any extra
 
 > ❗ **Important**: An app that you build to deploy only on iPhone always runs in a fixed-size window.
 
-An app that you build to deploy only on iPhone always runs in a fixed-size window.
-
 For more information about iPad multitasking, see [`Multitasking on iPad`](https://developer.apple.com/documentation/UIKit/multitasking-on-ipad).
 
 ##### Support Native Resolution of a Mac Display in Full Screen Mode
@@ -80,7 +78,7 @@ Be aware of differences between the iOS and macOS file systems, and take those d
 - A person using iOS has limited access to files, but a person using macOS has access to all files and directories in the Finder or Terminal. They may directly examine the contents of any directory, including your app’s data container.
 - On a Mac, a person may move apps anywhere.
 
-Don’t assume that your app or data container is always at a specific location. When you write code to access the file system, always use Foundation APIs to get the URL for your app and data directories. The [`url(for:in:appropriateFor:create:)`](https://developer.apple.com/documentation/foundation/filemanager/1407693-url) method of the default [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) object returns a URL that’s appropriate for the current platform.
+Don’t assume that your app or data container is always at a specific location. When you write code to access the file system, always use Foundation APIs to get the URL for your app and data directories. The [`url(for:in:appropriateFor:create:)`](https://developer.apple.com/documentation/Foundation/FileManager/url(for:in:appropriateFor:create:)) method of the default [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) object returns a URL that’s appropriate for the current platform.
 
 ##### Migrate Away From Deprecated Technologies
 

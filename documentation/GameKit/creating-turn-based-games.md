@@ -1,6 +1,6 @@
 # Creating turn-based games
 
-**Framework**: Gamekit
+**Framework**: GameKit
 
 Develop games where multiple players take turns and can exchange data while waiting for their turn.
 
@@ -27,9 +27,9 @@ To configure the sample code project, perform the following steps in Xcode:
 6. Build and run the sample on the two iOS devices.
 7. If the Welcome to Game Center sheet appears, sign in using a different Apple ID on each device.
 
-##### Authenticate the Player and Register for Turn Based Events
+##### Initialize the Player and Register for Turn Based Events
 
-Before using any GameKit APIs, the game needs to authenticate the local player by presenting an interface for them to sign in to Game Center on their device. The `TurnBasedGame.authenticatePlayer()` method handles the authentication flow and, when complete, registers for turn-based game events.
+Before using any GameKit APIs, the game needs to initialize the local player by presenting an interface for them to sign in to Game Center on their device. The `TurnBasedGame.authenticatePlayer()` method handles the initialization flow and, when complete, registers for turn-based game events.
 
 ```swift
 // Register for turn-based invitations and other events.
@@ -283,4 +283,4 @@ Because the match data changes, GameKit invokes the [`player(_:receivedTurnEvent
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/creating-turn-based-games)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/creating-turn-based-games)*

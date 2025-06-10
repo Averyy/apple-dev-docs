@@ -6,13 +6,13 @@
 A container for the node hierarchy and global properties that together form a displayable 3D scene.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.1+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 
@@ -122,6 +122,8 @@ The simplest way to create a scene is through Xcode’s SceneKit Scene Editor. S
 
 - [class SCNView](scnview.md)
   A view for displaying 3D SceneKit content.
+- [struct SceneView](sceneview.md)
+  A SwiftUI view for displaying 3D SceneKit content.
 
 
 ---

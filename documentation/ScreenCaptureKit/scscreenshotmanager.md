@@ -24,6 +24,8 @@ class SCScreenshotManager
   Captures a single frame directly from a stream’s buffer, using a filter.
 ### Type Methods
 - [class func captureImage(in: CGRect, completionHandler: ((CGImage?, (any Error)?) -> Void)?)](scscreenshotmanager/captureimage(in:completionhandler:).md)
+- [class func captureScreenshot(contentFilter: SCContentFilter, configuration: SCScreenshotConfiguration, completionHandler: ((SCScreenshotOutput?, (any Error)?) -> Void)?)](scscreenshotmanager/capturescreenshot(contentfilter:configuration:completionhandler:).md)
+- [class func captureScreenshot(rect: CGRect, configuration: SCScreenshotConfiguration, completionHandler: ((SCScreenshotOutput?, (any Error)?) -> Void)?)](scscreenshotmanager/capturescreenshot(rect:configuration:completionhandler:).md)
 
 ## Relationships
 
@@ -47,6 +49,8 @@ class SCScreenshotManager
   An instance that filters the content a stream captures.
 - [protocol SCStreamDelegate](scstreamdelegate.md)
   A delegate protocol your app implements to respond to stream events.
+- [class SCScreenshotConfiguration](scscreenshotconfiguration.md)
+- [class SCScreenshotOutput](scscreenshotoutput.md)
 
 
 ---

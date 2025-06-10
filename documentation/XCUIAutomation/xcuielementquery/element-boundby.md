@@ -1,6 +1,6 @@
 # element(boundBy:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Uses an index into the query’s results to determine which underlying accessibility element to use.

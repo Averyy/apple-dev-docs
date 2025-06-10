@@ -11,12 +11,17 @@ Register a launch handler for the task with the associated identifier that’s e
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 
 ```swift
 func register(forTaskWithIdentifier identifier: String, using queue: dispatch_queue_t?, launchHandler: @escaping (BGTask) -> Void) -> Bool
 ```
+
+## Mentions
+
+- [Performing long-running tasks on iOS and iPadOS](performing-long-running-tasks-on-ios-and-ipados.md)
 
 #### Return Value
 
@@ -27,8 +32,6 @@ Returns [`true`](https://developer.apple.com/documentation/swift/true) if the la
 Every identifier in the [`BGTaskSchedulerPermittedIdentifiers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/BGTaskSchedulerPermittedIdentifiers) requires a handler. Registration of all launch handlers must be complete before the end of [`applicationDidFinishLaunching(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationDidFinishLaunching(_:)).
 
 > ❗ **Important**: Register each task identifier only once. The system kills the app on the second registration of the same task identifier.
-
-Register each task identifier only once. The system kills the app on the second registration of the same task identifier.
 
 ## Parameters
 

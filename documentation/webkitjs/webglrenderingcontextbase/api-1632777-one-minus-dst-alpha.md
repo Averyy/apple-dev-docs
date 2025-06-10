@@ -1,6 +1,6 @@
 # ONE_MINUS_DST_ALPHA
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

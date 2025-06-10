@@ -2,11 +2,11 @@
 
 **Framework**: AppKit
 
-Additional values to be added to [`NSWritingDirection.leftToRight`](nswritingdirection/lefttoright.md) or [`NSWritingDirection.rightToLeft`](nswritingdirection/righttoleft.md), when used with [`writingDirection`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1524497-writingdirection).
+Additional values to be added to [`NSWritingDirection.leftToRight`](nswritingdirection/lefttoright.md) or [`NSWritingDirection.rightToLeft`](nswritingdirection/righttoleft.md), when used with `NSAttributedString/Key/writingDirection`.
 
 #### Overview
 
-You can use the logical `OR` operator to combine these constants with [`NSWritingDirection.leftToRight`](nswritingdirection/lefttoright.md) or [`NSWritingDirection.rightToLeft`](nswritingdirection/righttoleft.md) when used with [`writingDirection`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1524497-writingdirection) to specify formatting controls defined by the Unicode Bidirectional Algorithm in Unicode Standard Annex #9.
+You can use the logical `OR` operator to combine these constants with [`NSWritingDirection.leftToRight`](nswritingdirection/lefttoright.md) or [`NSWritingDirection.rightToLeft`](nswritingdirection/righttoleft.md) when used with `NSAttributedString/Key/writingDirection` to specify formatting controls defined by the Unicode Bidirectional Algorithm in Unicode Standard Annex #9.
 
 ## Topics
 

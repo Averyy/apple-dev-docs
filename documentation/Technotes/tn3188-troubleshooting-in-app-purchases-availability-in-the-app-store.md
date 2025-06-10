@@ -84,4 +84,4 @@ After Apple approves your In-App Purchases, it may take some time for the In-App
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store)*

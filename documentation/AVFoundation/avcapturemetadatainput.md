@@ -19,7 +19,7 @@ class AVCaptureMetadataInput
 
 #### Overview
 
-This class provides input to an [`AVCaptureSession`](avcapturesession.md). An instance of [`AVCaptureMetadataInput`](avcapturemetadatainput.md) can present one and only one [`AVCaptureInput.Port`](avcaptureinput/port.md) connected to an [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md). Provide metadata through the input port by conforming to a doc://com.apple.documentation/documentation/coremedia/cmformatdescription-u8g and supplying [`AVMetadataItem`](avmetadataitem.md) objects in an [`AVTimedMetadataGroup`](avtimedmetadatagroup.md).
+This class provides input to an [`AVCaptureSession`](avcapturesession.md). An instance of [`AVCaptureMetadataInput`](avcapturemetadatainput.md) can present one and only one [`AVCaptureInput.Port`](avcaptureinput/port.md) connected to an [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md). Provide metadata through the input port by conforming to a [`CMFormatDescription`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription) and supplying [`AVMetadataItem`](avmetadataitem.md) objects in an [`AVTimedMetadataGroup`](avtimedmetadatagroup.md).
 
 ## Topics
 

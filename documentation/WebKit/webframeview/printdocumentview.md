@@ -1,6 +1,6 @@
 # printDocumentView()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Prints the receiver.

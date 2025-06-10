@@ -1,6 +1,6 @@
 # Generating developer tokens
 
-**Framework**: Devicemanagement
+**Framework**: Device Management
 
 Create a JSON Web Token to authorize your requests to the Apps and Books for Organizations API.
 
@@ -66,4 +66,4 @@ The Apps and Books for Organizations API limits the number of requests your app 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/generating-developer-tokens)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/generating-developer-tokens)*

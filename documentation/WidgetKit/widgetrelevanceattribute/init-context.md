@@ -1,6 +1,6 @@
 # init(context:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: init
 
 Creates a new widget relevance that is relevant in a specific context.
@@ -8,8 +8,9 @@ Creates a new widget relevance that is relevant in a specific context.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
+- visionOS 26.0+ (Beta)
 - watchOS 11.0+
 
 ## Declaration

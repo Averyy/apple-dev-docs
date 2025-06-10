@@ -1,6 +1,6 @@
 # isFraudulentWebsiteWarningEnabled
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether the web view shows warnings for suspected fraudulent content, such as malware or phishing attemps.

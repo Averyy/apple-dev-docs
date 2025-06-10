@@ -1,6 +1,6 @@
 # xpc_array_get_bool(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Gets a Boolean primitive value from an array directly.

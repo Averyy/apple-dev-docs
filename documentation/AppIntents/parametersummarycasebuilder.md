@@ -8,10 +8,10 @@ A result builder that allows you to declaratively describe the cases of a switch
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -43,6 +43,14 @@ enum ParameterSummaryCaseBuilder<Intent, Value> where Intent : AppIntent, Value 
   A type that represents a collection of case conditions for a specific switch statement.
 ### Type Methods
 - [static func buildExpression<C0>(C0) -> C0](parametersummarycasebuilder/buildexpression(_:).md)
+
+## See Also
+
+- [init(ParameterSummarySwitchCondition<Intent, Value, CaseCondition>.WidgetFamily, () -> CaseCondition)](parametersummaryswitchcondition/init(_:_:)-4vxvs.md)
+  Initializes a parameter summary Switch statement over widget family.
+- [init(KeyPath<Intent, IntentParameter<Value>>, () -> CaseCondition)](parametersummaryswitchcondition/init(_:_:)-6cdw3.md)
+- [ParameterSummarySwitchCondition.WidgetFamily](parametersummaryswitchcondition/widgetfamily.md)
+  An enum that represents a parameter summary Switch statement over widget family.
 
 
 ---

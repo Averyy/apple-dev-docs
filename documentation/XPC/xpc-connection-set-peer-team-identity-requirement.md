@@ -1,6 +1,6 @@
 # xpc_connection_set_peer_team_identity_requirement(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Sets a requirement that the executable for the peer process has a valid code signature and is signed by the same team identifier as the calling process.
@@ -29,8 +29,6 @@ When you set this requirement on a connection, the operating system checks that 
 - If your process sent a message to its peer expecting a reply, and its executable isn’t signed by the same team, or doesn’t have the correct signing identifier, then you don’t receive a reply and the operating system delivers [`XPC_ERROR_PEER_CODE_SIGNING_REQUIREMENT`](xpc_error_peer_code_signing_requirement-c.macro.md) instead.
 
 > ❗ **Important**:  Don’t call this function multiple times for the same connection, or call multiple functions that set code-signing requirements on the same connection. If you use either of these approaches, the system terminates your process with an error.
-
- Don’t call this function multiple times for the same connection, or call multiple functions that set code-signing requirements on the same connection. If you use either of these approaches, the system terminates your process with an error.
 
 ## Parameters
 

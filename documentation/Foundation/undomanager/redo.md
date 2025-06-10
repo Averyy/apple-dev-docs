@@ -17,6 +17,7 @@ Performs the operations in the last group on the redo stack, if there are any, r
 ## Declaration
 
 ```swift
+@MainActor
 func redo()
 ```
 

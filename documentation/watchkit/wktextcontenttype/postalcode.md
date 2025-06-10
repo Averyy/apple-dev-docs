@@ -1,6 +1,6 @@
 # postalCode
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A postal code.

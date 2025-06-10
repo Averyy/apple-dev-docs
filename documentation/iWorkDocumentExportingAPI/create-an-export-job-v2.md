@@ -1,6 +1,6 @@
 # Export a PDF document from an iWork file
 
-**Framework**: Iworkdocumentexportingapi  
+**Framework**: iWork Document Exporting API  
 **Kind**: httpRequest
 
 Create a PDF preview of an iWork document using JSON Web Token (JWT) authorization.

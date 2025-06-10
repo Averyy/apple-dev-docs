@@ -1,6 +1,6 @@
 # interruptionLevel
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The notification’s importance and required delivery timing.

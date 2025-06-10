@@ -21,8 +21,6 @@ For more information about generating these assets, see [`Create app license del
 
 > ❗ **Important**: Secure your PASK secret as you do other credentials, such as private keys and passwords. Don’t share your PASK secret, store secrets in a code repository, or include secrets in client or server code.
 
-Secure your PASK secret as you do other credentials, such as private keys and passwords. Don’t share your PASK secret, store secrets in a code repository, or include secrets in client or server code.
-
 #### Build the Sdk for Macos
 
 To use the SDK in a Swift project for macOS:
@@ -56,8 +54,6 @@ swift test -c release --triple x86_64-unknown-linux-gnu \
 ```
 
 > 💡 **Tip**: If you’re using Docker Desktop, disable Rosetta after you install the Docker container.
-
-If you’re using Docker Desktop, disable Rosetta after you install the Docker container.
 
 
 ---

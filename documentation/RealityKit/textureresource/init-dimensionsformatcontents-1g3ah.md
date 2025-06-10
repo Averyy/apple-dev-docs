@@ -10,6 +10,7 @@ Synchronously creates a 2D texture resource from a pixel Metal buffer, or data.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -39,8 +40,6 @@ RealityKit efficiently creates a 2D texture from raw pixel bytes, with full cont
   Synchronously creates a texture resource from an in-memory Core Graphics image.
 - [convenience init(dimensions: TextureResource.Dimensions2D, format: TextureResource.Format, contents: TextureResource.Contents) async throws](textureresource/init(dimensions:format:contents:)-5wn8m.md)
   Asynchronously creates a 2D texture resource from a pixel Metal buffer, or data.
-- [TextureResource.Dimensions2D](textureresource/dimensions2d.md)
-  The dimensions of a 2D texture.
 
 
 ---

@@ -1,6 +1,6 @@
 # DataScannerViewController.TextContentType.URL
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: case
 
 The content type for a URL that appears in text.

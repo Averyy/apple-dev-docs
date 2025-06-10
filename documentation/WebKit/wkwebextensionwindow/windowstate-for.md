@@ -1,6 +1,6 @@
 # windowState(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the state of the window is needed.

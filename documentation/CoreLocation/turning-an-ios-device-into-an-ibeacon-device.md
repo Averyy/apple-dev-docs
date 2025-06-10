@@ -69,8 +69,6 @@ When you create a peripheral manager object, it calls the [`peripheralManagerDid
 
 > ❗ **Important**:  After advertising your app as a beacon, your app must continue running in the foreground to broadcast the needed Bluetooth signals. If the user quits the app, the system stops advertising the device as a peripheral over Bluetooth.
 
- After advertising your app as a beacon, your app must continue running in the foreground to broadcast the needed Bluetooth signals. If the user quits the app, the system stops advertising the device as a peripheral over Bluetooth.
-
 During ranging, there may be a brief period in which Core Location creates two [`CLBeacon`](clbeacon.md) objects for the same iOS device. This behavior occurs because iOS changes the device’s Bluetooth identifier periodically to protect the user’s privacy, and one beacon represents the old identifier and one beacon represents the new identifier. Within 2 seconds of the identifier change, the beacon with the old identifier has its proximity property set to [`CLProximity.unknown`](clproximity/unknown.md). Within 10 seconds, the beacon with the old identifier is no longer reported.
 
 ## See Also

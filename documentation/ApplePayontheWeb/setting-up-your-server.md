@@ -23,11 +23,9 @@ These are the requirements for incorporating Apple Pay on your website:
 
 ##### Allow Apple Pay Ip Addresses
 
-To successfully connect with Apple Pay IP addresses and domains, your server needs to allow access over HTTPS (TCP over port 443)  and include the TLS Server Name Indication (SNI) extension. Apple Pay requires SNI on all connections. Your server needs to connect to the Apple Pay IP addresses and domains provided listed in [`Setting Up Your Server`](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server), below.
+To successfully connect with Apple Pay IP addresses and domains, your server needs to allow access over HTTPS (TCP over port 443)  and include the TLS Server Name Indication (SNI) extension. Apple Pay requires SNI on all connections. Your server needs to connect to the Apple Pay IP addresses and domains provided listed in [`Setting Up Your Server`](setting-up-your-server.md), below.
 
-> ❗ **Important**:  Use a strict allow list for Apple IP addresses and domains provided in [`Setting Up Your Server`](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server). Do not allow your server to access any other IP addresses or domains.
-
- Use a strict allow list for Apple IP addresses and domains provided in [`Setting Up Your Server`](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server). Do not allow your server to access any other IP addresses or domains.
+> ❗ **Important**:  Use a strict allow list for Apple IP addresses and domains provided in [`Setting Up Your Server`](setting-up-your-server.md). Do not allow your server to access any other IP addresses or domains.
 
 Listing 1. Apple Pay IP addresses and domain names for production.
 
@@ -51,9 +49,7 @@ This name resolves to the IP addresses / CIDR block below:
 60.29.205.104/32, 60.29.205.106/32, 60.29.205.108/32
 ```
 
-> ❗ **Important**:  Use the IP addresses, in [`Setting Up Your Server`](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server) for development and sandbox testing only. Do not allow your production apps or production servers to use these testing services in production.
-
- Use the IP addresses, in [`Setting Up Your Server`](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server) for development and sandbox testing only. Do not allow your production apps or production servers to use these testing services in production.
+> ❗ **Important**:  Use the IP addresses, in [`Setting Up Your Server`](setting-up-your-server.md) for development and sandbox testing only. Do not allow your production apps or production servers to use these testing services in production.
 
 Listing 2. Apple Pay IP addresses and domain names for testing (development sandbox).
 
@@ -75,7 +71,7 @@ This name resolves to the IP addresses / CIDR block below:
 101.230.204.235/32
 ```
 
-For more information about merchant validation, see [`Providing Merchant Validation`](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/providing_merchant_validation).
+For more information about merchant validation, see [`Providing Merchant Validation`](providing-merchant-validation.md).
 
 ##### Allow Apple Ip Addresses for Domain Verification
 
@@ -93,7 +89,7 @@ Apple uses the following IP addresses when you register or verify your merchant 
 17.253.0.0/16
 ```
 
-See [`Configuring Your Environment`](https://developer.apple.com/documentation/apple_pay_on_the_web/configuring_your_environment) for more information.
+See [`Configuring Your Environment`](configuring-your-environment.md) for more information.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Configuring your app for media playback
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Configure apps to enable standard media playback behavior.
 
@@ -65,4 +65,4 @@ With this mode enabled and your audio session configured, your app is ready to p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/configuring-your-app-for-media-playback)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/configuring-your-app-for-media-playback)*

@@ -1,6 +1,6 @@
 # scene
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The currently presented SpriteKit scene.

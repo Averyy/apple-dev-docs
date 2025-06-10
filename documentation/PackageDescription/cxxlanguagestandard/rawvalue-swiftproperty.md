@@ -28,11 +28,6 @@ print(selectedSize == PaperSize(rawValue: selectedSize.rawValue)!)
 // Prints "true"
 ```
 
-## See Also
-
-- [CXXLanguageStandard.RawValue](cxxlanguagestandard/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-
 
 ---
 

@@ -1,6 +1,6 @@
 # accessibilityDragPoint(_:description:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 The point an assistive technology should use to begin a drag interaction.

@@ -1,6 +1,6 @@
 # Sprite track properties
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Define properties that apply to an entire sprite track.
 

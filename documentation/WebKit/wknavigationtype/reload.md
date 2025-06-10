@@ -1,6 +1,6 @@
 # WKNavigationType.reload
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A request to reload the webpage.

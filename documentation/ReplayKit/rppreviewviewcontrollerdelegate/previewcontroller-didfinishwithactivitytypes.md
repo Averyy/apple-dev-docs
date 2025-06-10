@@ -1,7 +1,8 @@
 # previewController(_:didFinishWithActivityTypes:)
 
 **Framework**: ReplayKit  
-**Kind**: method
+**Kind**: method  
+**Required**: Yes
 
 Indicates that the preview view controller is ready to be dismissed with associated activity types.
 

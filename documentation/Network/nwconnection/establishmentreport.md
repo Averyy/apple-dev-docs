@@ -62,6 +62,7 @@ Connections that aren’t proxied might still use iCloud Private Relay for name 
 ### Conforms To
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

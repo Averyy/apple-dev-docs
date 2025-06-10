@@ -1,6 +1,6 @@
 # POSITION_UNAVAILABLE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -31,8 +31,6 @@ The maximum value must be greater than or equal to the minimum value. If you set
 
 > ❗ **Important**:  [`UIStepper`](uistepper.md) isn’t available when the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md).
 
- [`UIStepper`](uistepper.md) isn’t available when the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md).
-
 ## Topics
 
 ### Configuring the stepper
@@ -84,6 +82,7 @@ The maximum value must be greater than or equal to the minimum value. If you set
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

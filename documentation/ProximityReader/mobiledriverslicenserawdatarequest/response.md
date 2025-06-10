@@ -9,6 +9,7 @@ A type that contains the response information from a successful mobile driver’
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -40,6 +41,7 @@ struct Response
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

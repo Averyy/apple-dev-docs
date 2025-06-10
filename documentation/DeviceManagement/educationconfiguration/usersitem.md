@@ -9,8 +9,6 @@ A user in the organization.
 - iOS 9.3+
 - iPadOS 9.3+
 - macOS 10.14+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

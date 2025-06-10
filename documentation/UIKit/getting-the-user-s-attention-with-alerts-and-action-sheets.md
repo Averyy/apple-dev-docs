@@ -1,6 +1,6 @@
 # Getting the user’s attention with alerts and action sheets
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Present important information to the user or prompt the user about an important choice.
 
@@ -86,4 +86,4 @@ To display your action sheet in a popover, specify your popover’s anchor point
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/getting-the-user-s-attention-with-alerts-and-action-sheets)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/getting-the-user-s-attention-with-alerts-and-action-sheets)*

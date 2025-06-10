@@ -26,8 +26,6 @@ You can only change the threadgroup memory’s size between tile dispatches (see
 
 > ❗ **Important**:  Exceeding the threadgroup memory allocation for the render pass can trigger a debug error.
 
- Exceeding the threadgroup memory allocation for the render pass can trigger a debug error.
-
 ## Parameters
 
 - `length`: The threadgroup memory length, in bytes.

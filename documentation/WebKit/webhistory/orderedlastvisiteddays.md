@@ -1,6 +1,6 @@
 # orderedLastVisitedDays
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An array of all calendar days represented in the web history.

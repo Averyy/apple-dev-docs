@@ -1,6 +1,6 @@
 # xpc_double_create(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates an XPC double object.

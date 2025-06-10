@@ -88,6 +88,8 @@ class CatTracksViewController: NSViewController {
 ### Instance Properties
 - [var backgroundColor: NSColor?](tipnsview/backgroundcolor.md)
   The background color to use for the tip view.
+- [var backgroundStyle: any ShapeStyle](tipnsview/backgroundstyle.md)
+  The background style to use for the tip view.
 - [var cornerRadius: CGFloat](tipnsview/cornerradius.md)
   Corner radius for the tip view.
 - [var imageSize: CGSize](tipnsview/imagesize.md)

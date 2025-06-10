@@ -21,8 +21,6 @@ func detectValues(for patterns: Set<UIPasteboard.DetectionPattern>, inItemSet it
 
 > ❗ **Important**:  Calling this method notifies the user that the app has read the contents of the pasteboard.
 
- Calling this method notifies the user that the app has read the contents of the pasteboard.
-
 For details about the types returned for each pattern, see [`UIPasteboard.DetectionPattern`](uipasteboard/detectionpattern.md).
 
 ## Parameters

@@ -1,6 +1,6 @@
 # CKSyncEngine.Event.FetchedDatabaseChanges
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: struct
 
 A type that provides information about fetched database changes.
@@ -40,6 +40,7 @@ struct FetchedDatabaseChanges
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

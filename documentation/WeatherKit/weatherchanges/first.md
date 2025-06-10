@@ -1,6 +1,6 @@
 # first
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The first element of the collection.

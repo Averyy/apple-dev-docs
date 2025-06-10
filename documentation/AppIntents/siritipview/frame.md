@@ -9,10 +9,10 @@ Positions this view within an invisible frame.
 - iOS 13.0+
 - iPadOS 13.0+
 - macOS 10.15+
-- visionOS 1.0+
+- tvOS 13.0+
+- visionOS ?+
 - watchOS 6.0+
 - Unknown ?+ - Deprecated
-- tvOS 13.0+
 
 ## Declaration
 

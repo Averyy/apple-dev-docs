@@ -17,13 +17,6 @@
 var gainMetaParameter: PHASENumberMetaParameter? { get }
 ```
 
-#### Discussion
-
-```None
-@property gainMetaParameter
-@abstract If specified during construction, the metaparameter for controlling gain will be available here
-```
-
 
 ---
 

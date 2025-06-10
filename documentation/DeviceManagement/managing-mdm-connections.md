@@ -1,6 +1,6 @@
 # Managing MDM Connections
 
-**Framework**: Devicemanagement
+**Framework**: Device Management
 
 Establish or remove a connection between a device and an MDM server.
 
@@ -16,7 +16,7 @@ A connection between your MDM server and a device enables you to send commands t
 
 1. A user or adminstrator installs an MDM enrollment profile on the device. For more information, see [`Deploying MDM Enrollment Profiles`](deploying-mdm-enrollment-profiles.md).
 2. The device checks in and authenticates with the MDM server. For more information, see [`Managing Certificates for MDM Servers and Devices`](managing-certificates-for-mdm-servers-and-devices.md).
-3. The MDM server accepts the device, or for Automated Device Enrollment, it can send an error instead, such as [`ErrorCodeSoftwareUpdateRequired`](errorcodesoftwareupdaterequired.md).
+3. The MDM server accepts the device, or for Automated Device Enrollment, it can send an error instead, such as [`ErrorCodeSoftwareUpdateRequired`](errorcodesoftwareupdaterequired.md) or [`ErrorUnrecognizedDevice`](errorunrecognizeddevice.md).
 4. The device provides its push notification token to the server.
 
 The MDM enrollment profile contains a payload that provides information necessary for a device to connect to an MDM server and authenticate with it. See [`MDM`](mdm.md) for a description of the information to include in the payload.
@@ -43,8 +43,12 @@ Terminate a management relationship with a device by performing one of these act
 ## Topics
 
 ### Enrollment Errors
+- [object ErrorCodePairingTokenMissing](errorcodepairingtokenmissing.md)
+  An error response that indicates a missing pairing token.
 - [object ErrorCodeSoftwareUpdateRequired](errorcodesoftwareupdaterequired.md)
   An error response that indicates the system requires a software update.
+- [object ErrorUnrecognizedDevice](errorunrecognizeddevice.md)
+- [object ErrorWellKnownFailed](errorwellknownfailed.md)
 
 ## See Also
 
@@ -54,4 +58,4 @@ Terminate a management relationship with a device by performing one of these act
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/managing-mdm-connections)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/managing-mdm-connections)*

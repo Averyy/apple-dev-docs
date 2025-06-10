@@ -1,6 +1,6 @@
 # direction
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The permitted directions of the swipe.

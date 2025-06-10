@@ -8,7 +8,7 @@ The average pause duration between words, measured in seconds.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - visionOS 1.0+
 

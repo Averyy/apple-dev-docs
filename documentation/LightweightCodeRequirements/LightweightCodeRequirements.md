@@ -50,7 +50,7 @@ Create an [`OnDiskCodeRequirement`](ondiskcoderequirement.md) using the DSL and 
 
 #### Restrict the Executables You Launch As New Processes
 
-Create a [`LaunchCodeRequirement`](launchcoderequirement.md) using the DSL and set it as the [`launchRequirement`](https://developer.apple.com/documentation/foundation/process/4322522-launchrequirement) on a [`Process`](https://developer.apple.com/documentation/Foundation/Process) instance, before you call [`run()`](https://developer.apple.com/documentation/foundation/process/2890105-run). If the executable specified in the process’s [`executableURL`](https://developer.apple.com/documentation/foundation/process/2890106-executableurl) satisfies the launch requirement, the kernel launches the process; otherwise, `run()` throws an error. You can also encode your requirements as launch constraints in property list files that you embed in your executable’s code signature to restrict which processes can launch your executable and which dynamic libraries your process can load. For more information, see [`Applying launch environment and library constraints`](https://developer.apple.com/documentation/Security/applying-launch-environment-and-library-constraints).
+Create a [`LaunchCodeRequirement`](launchcoderequirement.md) using the DSL and set it as the [`launchRequirement`](https://developer.apple.com/documentation/Foundation/Process/launchRequirement) on a [`Process`](https://developer.apple.com/documentation/Foundation/Process) instance, before you call [`run()`](https://developer.apple.com/documentation/Foundation/Process/run()). If the executable specified in the process’s [`executableURL`](https://developer.apple.com/documentation/Foundation/Process/executableURL) satisfies the launch requirement, the kernel launches the process; otherwise, `run()` throws an error. You can also encode your requirements as launch constraints in property list files that you embed in your executable’s code signature to restrict which processes can launch your executable and which dynamic libraries your process can load. For more information, see [`Applying launch environment and library constraints`](https://developer.apple.com/documentation/Security/applying-launch-environment-and-library-constraints).
 
 ## Topics
 
@@ -74,7 +74,7 @@ Create a [`LaunchCodeRequirement`](launchcoderequirement.md) using the DSL and s
 ### Checking code requirements for launching processes
 - [func SecCodeCheckValidityWithProcessRequirement(code: SecCode, flags: SecCSFlags, requirement: ProcessCodeRequirement) -> ValidationResult](seccodecheckvaliditywithprocessrequirement(code:flags:requirement:).md)
   Checks whether the code associated with a running process satisfies a lightweight code requirement.
-- [var launchRequirement: LaunchCodeRequirement?](../foundation/process/4322522-launchrequirement.md)
+- [var launchRequirement: LaunchCodeRequirement? { get set }](../Foundation/Process/launchRequirement.md)
 - [struct LaunchCodeRequirement](launchcoderequirement.md)
   A lightweight code requirement that you use to evaluate the executable for a launching process.
 - [func allOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](allof(requirement:)-4gf5f.md)

@@ -1,0 +1,18 @@
+# error
+
+**Framework**: Core Audio  
+**Kind**: property
+
+**Availability**:
+- macOS 15.0+
+
+## Declaration
+
+```swift
+let error: OSStatus
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coreaudio/audiohardwareerror/error)*

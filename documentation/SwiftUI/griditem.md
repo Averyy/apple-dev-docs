@@ -72,7 +72,10 @@ However, a lazy horizontal grid doesn’t generally have access to all the views
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
+- [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

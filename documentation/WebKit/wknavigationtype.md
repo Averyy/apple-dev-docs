@@ -1,6 +1,6 @@
 # WKNavigationType
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 The type of action that triggered the navigation.
@@ -44,6 +44,7 @@ enum WKNavigationType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

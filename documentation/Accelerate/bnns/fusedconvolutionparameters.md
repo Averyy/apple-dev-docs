@@ -10,10 +10,10 @@ A structure that contains the parameters for a fused convolution layer.
 - iPadOS 15.0+
 - Mac Catalyst ?+
 - macOS 12.0+
-- visionOS ?+
+- tvOS 15.0+
 - watchOS 8.0+
 - Unknown ?+ - Deprecated
-- tvOS 15.0+
+- visionOS ?+
 
 ## Declaration
 

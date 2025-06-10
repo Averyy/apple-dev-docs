@@ -22,7 +22,7 @@ let CKErrorRetryAfterKey: String
 
 #### Discussion
 
-An [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) that contains the number of seconds until you can retry a request. CloudKit adds this key to the error’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary when the error code is [`CKError.Code.serviceUnavailable`](ckerror/code/serviceunavailable.md) or [`CKError.Code.requestRateLimited`](ckerror/code/requestratelimited.md).
+An [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) that contains the number of seconds until you can retry a request. CloudKit adds this key to the error’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary when the error code is [`CKError.Code.serviceUnavailable`](ckerror/code/serviceunavailable.md) or [`CKError.Code.requestRateLimited`](ckerror/code/requestratelimited.md).
 
 ## See Also
 

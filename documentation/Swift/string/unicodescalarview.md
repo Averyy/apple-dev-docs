@@ -93,6 +93,7 @@ if let i = favemoji.unicodeScalars.firstIndex(where: { $0.value >= 128 }) {
 - [CustomStringConvertible](customstringconvertible.md)
 - [RangeReplaceableCollection](rangereplaceablecollection.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

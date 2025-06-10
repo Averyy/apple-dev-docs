@@ -1,6 +1,6 @@
 # Comment
 
-**Framework**: Testing  
+**Framework**: Swift Testing  
 **Kind**: struct
 
 A type that represents a comment related to a test.
@@ -67,6 +67,7 @@ To add a comment to a test or suite, add a code comment before its `@Test` or `@
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SuiteTrait](suitetrait.md)
 - [TestTrait](testtrait.md)
 - [Trait](trait.md)
@@ -89,4 +90,4 @@ To add a comment to a test or suite, add a code comment before its `@Test` or `@
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Testing/comment)*
+*[View on Apple Developer](https://developer.apple.com/documentation/testing/comment)*

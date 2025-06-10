@@ -33,6 +33,7 @@ A value of this type can be provided to the [`volumeWorldAlignment(_:)`](scene/v
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -58,6 +59,8 @@ A value of this type can be provided to the [`volumeWorldAlignment(_:)`](scene/v
   The current limitations of the device tracking the user’s surroundings.
 - [struct WorldTrackingLimitation](worldtrackinglimitation.md)
   A structure to represent limitations of tracking the user’s surroundings.
+- [struct SurfaceSnappingInfo](surfacesnappinginfo.md)
+  A type representing information about the window scenes snap state.
 
 
 ---

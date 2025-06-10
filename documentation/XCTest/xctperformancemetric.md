@@ -1,6 +1,6 @@
 # XCTPerformanceMetric
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: struct
 
 Performance metrics that the test records.
@@ -29,6 +29,7 @@ struct XCTPerformanceMetric
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

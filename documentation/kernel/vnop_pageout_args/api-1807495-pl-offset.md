@@ -1,0 +1,26 @@
+# pl_offset
+
+**Framework**: Kernel  
+**Kind**: structp
+
+Offset in UPL at which to start placing data.
+
+## See Also
+
+- [vp](vnop_pageout_args/1807482-vp.md)
+  The vnode for which to page in data.
+- [pl](vnop_pageout_args/1807490-pl.md)
+  UPL describing pages needing to be paged in.
+- [f_offset](vnop_pageout_args/1807502-f_offset.md)
+  Offset in file of data needing to be paged in.
+- [size](vnop_pageout_args/1807509-size.md)
+  Amount of data to page in (in bytes).
+- [flags](vnop_pageout_args/1807514-flags.md)
+  UPL-style flags: UPL_IOSYNC, UPL_NOCOMMIT, UPL_NORDAHEAD, UPL_VNODE_PAGER, UPL_MSYNC. Filesystems should generally leave it to the cluster layer to handle these flags. See the memory_object_types.h header in the kernel framework if interested.
+- [ctx](vnop_pageout_args/1807517-ctx.md)
+  Context to authenticate for pagein request.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/vnop_pageout_args/1807495-pl_offset)*

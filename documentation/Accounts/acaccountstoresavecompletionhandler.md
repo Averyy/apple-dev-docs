@@ -23,7 +23,7 @@ The completion handler parameters are:
 
 ## See Also
 
-- [func saveAccount(ACAccount!, withCompletionHandler: ACAccountStoreSaveCompletionHandler!)](acaccountstore/saveaccount(_:withcompletionhandler:).md)
+- [func saveAccount(ACAccount!, withCompletionHandler: ((Bool, (any Error)?) -> Void)!)](acaccountstore/saveaccount(_:withcompletionhandler:).md)
   Saves an account to the Accounts database.
 
 

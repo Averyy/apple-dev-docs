@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: init
 
 Creates an attribute name dictionary key from a string value.

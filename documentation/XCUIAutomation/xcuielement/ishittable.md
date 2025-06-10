@@ -1,6 +1,6 @@
 # isHittable
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 Determines if the system can compute a hit point for the element.

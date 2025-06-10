@@ -1,6 +1,6 @@
 # getBytes(_:fromOffset:length:error:)
 
-**Framework**: Assetslibrary  
+**Framework**: Assets Library  
 **Kind**: method
 
 Copies a specified range of bytes into a given buffer.
@@ -8,7 +8,7 @@ Copies a specified range of bytes into a given buffer.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

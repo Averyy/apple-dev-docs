@@ -26,4 +26,4 @@ In the inspector, under Localization, you can also select or deselect localizati
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/adding-resources-to-localizations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/adding-resources-to-localizations)*

@@ -5,6 +5,13 @@
 
 Returns a Boolean value that indicates whether this set is a strict superset of the given set.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift
@@ -19,7 +26,7 @@ func isStrictSuperset(of other: Self) -> Bool
 
 Set  is a strict superset of another set  if every member of  is also a member of  and  contains at least one element that is  a member of .
 
-```swift
+```None
 let employees: Set = ["Alicia", "Bethany", "Chris", "Diana", "Eric"]
 let attendees: Set = ["Alicia", "Bethany", "Diana"]
 print(employees.isStrictSuperset(of: attendees))

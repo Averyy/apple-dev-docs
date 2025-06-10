@@ -19,8 +19,6 @@ class var shared: SCContentSharingPicker { get }
 
 > ❗ **Important**:  Use this shared instance of the system picker rather than creating your own.
 
- Use this shared instance of the system picker rather than creating your own.
-
 The picker gives a person control over what information on their Mac they wish to let your app view or record such as specific applications, displays, and windows.
 
 

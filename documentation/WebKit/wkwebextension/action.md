@@ -1,6 +1,6 @@
 # WKWebExtension.Action
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that encapsulates the properties for an individual web extension action.

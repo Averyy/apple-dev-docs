@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_Quality
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The desired compression quality.

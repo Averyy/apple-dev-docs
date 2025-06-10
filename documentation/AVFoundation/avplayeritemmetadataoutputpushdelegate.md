@@ -27,7 +27,7 @@ This protocol extends the [`AVPlayerItemOutputPushDelegate`](avplayeritemoutputp
 ## Topics
 
 ### Combining Timed Metadata Groups
-- [func metadataOutput(AVPlayerItemMetadataOutput, didOutputTimedMetadataGroups: [AVTimedMetadataGroup], from: AVPlayerItemTrack?)](avplayeritemmetadataoutputpushdelegate/metadataoutput(_:didoutputtimedmetadatagroups:from:).md)
+- [func metadataOutput(AVPlayerItemMetadataOutput, didOutputTimedMetadataGroups: sending [AVTimedMetadataGroup], from: AVPlayerItemTrack?)](avplayeritemmetadataoutputpushdelegate/metadataoutput(_:didoutputtimedmetadatagroups:from:).md)
   Tells the delegate a new collection of metadata items is available.
 
 ## Relationships
@@ -36,6 +36,7 @@ This protocol extends the [`AVPlayerItemOutputPushDelegate`](avplayeritemoutputp
 - [AVPlayerItemOutputPushDelegate](avplayeritemoutputpushdelegate.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

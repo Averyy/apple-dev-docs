@@ -46,10 +46,14 @@ Whichever mechanism you choose, pay close attention to how your app handles draw
 
 ## See Also
 
+- [Managing your game window for Metal in macOS](managing-your-game-window-for-metal-in-macos.md)
+  Set up a window and view for optimally displaying your Metal content.
+- [Adapting your game interface for smaller screens](adapting-your-game-interface-for-smaller-screens.md)
+  Make text legible on all devices the player chooses to run your game on.
 - [HDR Content](hdr-content.md)
   Take advantage of high dynamic range to present more vibrant colors in your apps and games.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/onscreen-presentation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/onscreen-presentation)*

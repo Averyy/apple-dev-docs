@@ -18,6 +18,10 @@
 var PLATFORM_SUPPORTS_AVKITCORE: Bool { get }
 ```
 
+## See Also
+
+- [struct InterstitialEvent](interstitialevent.md)
+
 
 ---
 

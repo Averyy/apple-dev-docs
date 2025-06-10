@@ -11,7 +11,9 @@ Adds a collection of annotations, overlays, or other item collections to the map
 ## Declaration
 
 ```swift
-(mapkit.Annotation|mapkit.Overlay|ItemCollection)[]|ItemCollection addItems();
+(mapkit.Annotation|mapkit.Overlay|ItemCollection)[]|ItemCollection addItems(
+	mapkit.Annotation|mapkit.Overlay|ItemCollection)[]|ItemCollection items
+);
 ```
 
 ## Mentions

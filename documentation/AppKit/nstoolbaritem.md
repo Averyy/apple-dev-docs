@@ -52,6 +52,7 @@ You can display your toolbar item’s content using a custom view if you prefer,
 ### Getting the item’s visual appearance
 - [var image: UIImage?](nstoolbaritem/image.md)
   The image to display for the toolbar item.
+- [var backgroundTintColor: UIColor?](nstoolbaritem/backgroundtintcolor.md)
 - [var view: NSView?](nstoolbaritem/view.md)
   The custom view you use to draw the toolbar item.
 ### Performing the item’s action
@@ -67,14 +68,16 @@ You can display your toolbar item’s content using a custom view if you prefer,
 ### Getting the item’s configuration
 - [var isVisible: Bool](nstoolbaritem/isvisible.md)
   A Boolean value that indicates whether the item is currently visible in the toolbar, and not in the overflow menu.
+- [var isHidden: Bool](nstoolbaritem/ishidden.md)
 - [var isBordered: Bool](nstoolbaritem/isbordered.md)
   A Boolean value that indicates whether the toolbar item has a bordered style.
 - [var isNavigational: Bool](nstoolbaritem/isnavigational.md)
   A Boolean value that indicates whether the item behaves as a navigation item in the toolbar.
 - [var isEnabled: Bool](nstoolbaritem/isenabled.md)
   A Boolean value that indicates whether the item is enabled.
-- [var allowsDuplicatesInToolbar: Bool](nstoolbaritem/allowsduplicatesintoolbar.md)
-  A Boolean value that indicates whether the toolbar item can appear more than once in a toolbar.
+- [var style: NSToolbarItem.Style](nstoolbaritem/style-swift.property.md)
+  Defines the toolbar item’s appearance. The default style is plain. Prominent style tints the background. If a background tint color is set, it uses it; otherwise, it uses the app’s or system’s accent color. If grouped with other items, it moves to its own to avoid tinting other items’ background.
+- [NSToolbarItem.Style](nstoolbaritem/style-swift.enum.md)
 - [var visibilityPriority: NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.property.md)
   The display priority associated with the toolbar item.
 - [NSToolbarItem.VisibilityPriority](nstoolbaritem/visibilitypriority-swift.struct.md)
@@ -90,12 +93,12 @@ You can display your toolbar item’s content using a custom view if you prefer,
 - [func validate()](nstoolbaritem/validate.md)
   Validates the toolbar item’s menu and its ability to perfrom its action.
 ### Deprecated
+- [var allowsDuplicatesInToolbar: Bool](nstoolbaritem/allowsduplicatesintoolbar.md)
+  A Boolean value that indicates whether the toolbar item can appear more than once in a toolbar.
 - [var minSize: NSSize](nstoolbaritem/minsize.md)
   The toolbar item’s minimum size.
 - [var maxSize: NSSize](nstoolbaritem/maxsize.md)
   The toolbar item’s maximum size.
-### Instance Properties
-- [var isHidden: Bool](nstoolbaritem/ishidden.md)
 
 ## Relationships
 

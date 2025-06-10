@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_STATE_CHECK_IN
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 The activity has completed a check-in with the system.

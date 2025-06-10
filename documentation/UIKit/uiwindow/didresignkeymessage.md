@@ -1,0 +1,37 @@
+# UIWindow.DidResignKeyMessage
+
+**Framework**: UIKit  
+**Kind**: struct
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+struct DidResignKeyMessage
+```
+
+## Topics
+
+### Initializers
+- [init(window: UIWindow)](uiwindow/didresignkeymessage/init(window:).md)
+### Instance Properties
+- [var window: UIWindow](uiwindow/didresignkeymessage/window.md)
+### Type Methods
+- [static func makeNotification(UIWindow.DidResignKeyMessage) -> Notification](uiwindow/didresignkeymessage/makenotification(_:).md)
+
+## Relationships
+
+### Conforms To
+- [NotificationCenter.MainActorMessage](../Foundation/NotificationCenter/MainActorMessage.md)
+- [NotificationCenter.Message](../Foundation/NotificationCenter/Message.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiwindow/didresignkeymessage)*

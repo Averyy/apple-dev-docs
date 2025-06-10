@@ -1,6 +1,6 @@
 # PATHSEG_LINETO_HORIZONTAL_REL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -54,6 +54,10 @@ struct ToolbarContentBuilder
   A structure that defines the placement of a toolbar item.
 - [protocol ToolbarContent](toolbarcontent.md)
   Conforming types represent items that can be placed in various locations in a toolbar.
+- [struct ToolbarSpacer](toolbarspacer.md)
+  A standard space item in toolbars.
+- [struct DefaultToolbarItem](defaulttoolbaritem.md)
+  A toolbar item that represents a system component.
 
 
 ---

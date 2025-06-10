@@ -46,7 +46,7 @@ class MTRClusterBridgedDeviceBasicInformation
 - [func readAttributeVendorName(with: MTRReadParams?) -> [String : Any]?](mtrclusterbridgeddevicebasicinformation/readattributevendorname(with:).md)
 - [func writeAttributeNodeLabel(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterbridgeddevicebasicinformation/writeattributenodelabel(withvalue:expectedvalueinterval:).md)
 - [func writeAttributeNodeLabel(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterbridgeddevicebasicinformation/writeattributenodelabel(withvalue:expectedvalueinterval:params:).md)
-- [func keepActive(with: MTRBridgedDeviceBasicInformationClusterKeepActiveParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterbridgeddevicebasicinformation/keepactive(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func keepActive(with: MTRBridgedDeviceBasicInformationClusterKeepActiveParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterbridgeddevicebasicinformation/keepactive(with:expectedvalues:expectedvalueinterval:completion:).md)
 - [func readAttributeProductID(with: MTRReadParams?) -> [String : Any]?](mtrclusterbridgeddevicebasicinformation/readattributeproductid(with:).md)
 
 ## Relationships

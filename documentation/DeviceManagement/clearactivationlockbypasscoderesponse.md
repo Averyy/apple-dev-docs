@@ -3,15 +3,13 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to clear the Activation Lock bypass code.
+A response from the device after it processes the command to clear the Activation Lock bypass code on a device.
 
 **Availability**:
 - iOS 7.1+
 - iPadOS 7.1+
 - macOS 10.15+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,7 +19,7 @@ object ClearActivationLockBypassCodeResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object ClearActivationLockBypassCodeResponse.ErrorChainItem](clearactivationlockbypasscoderesponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 

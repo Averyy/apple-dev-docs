@@ -140,6 +140,8 @@ In a subclass, you must override all these methods. You must also override the p
 - [NSMutableCopying](nsmutablecopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 

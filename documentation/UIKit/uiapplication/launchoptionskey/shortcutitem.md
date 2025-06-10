@@ -6,8 +6,8 @@
 A key indicating that the app was launched in response to the user selecting a Home screen quick action.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
+- iOS 3.0+
+- iPadOS 3.0+
 - Mac Catalyst 13.1+
 - visionOS 1.0+
 

@@ -1,6 +1,6 @@
 # rangeValue
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The range of UV index values that falls into this category.

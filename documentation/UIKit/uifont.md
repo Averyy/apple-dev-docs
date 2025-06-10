@@ -21,8 +21,8 @@ class UIFont
 
 ## Mentions
 
-- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
 - [Adding a Custom Font to Your App](adding-a-custom-font-to-your-app.md)
+- [Scaling Fonts Automatically](scaling-fonts-automatically.md)
 
 #### Overview
 
@@ -121,6 +121,7 @@ In Objective-C, don’t create font objects using the `alloc` and `init` methods
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

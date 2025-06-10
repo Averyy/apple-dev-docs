@@ -19,6 +19,8 @@ object ReviewSubmissionResponse
 - [object ReviewSubmissionUpdateRequest](reviewsubmissionupdaterequest.md)
 - [object ReviewSubmissionCreateRequest](reviewsubmissioncreaterequest.md)
 - [object ReviewSubmissionsResponse](reviewsubmissionsresponse.md)
+- [object AppReviewSubmissionsLinkagesResponse](appreviewsubmissionslinkagesresponse.md)
+- [object ReviewSubmissionItemsLinkagesResponse](reviewsubmissionitemslinkagesresponse.md)
 
 
 ---

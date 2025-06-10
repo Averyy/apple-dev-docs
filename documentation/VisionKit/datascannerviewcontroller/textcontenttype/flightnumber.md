@@ -1,6 +1,6 @@
 # DataScannerViewController.TextContentType.flightNumber
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: case
 
 The content type for a vendor-specific flight number that appears in text.

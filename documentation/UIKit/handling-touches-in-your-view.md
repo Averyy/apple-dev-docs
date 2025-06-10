@@ -18,8 +18,6 @@ UIKit creates a new [`UITouch`](uitouch.md) object for each new finger that touc
 
 > ❗ **Important**:  In its default configuration, a view receives only the first [`UITouch`](uitouch.md) object associated with an event, even if more than one finger is touching the view. To receive the additional touches, you must set the view’s [`isMultipleTouchEnabled`](uiview/ismultipletouchenabled.md) property to true. You can also configure this property in Interface Builder using the Attributes inspector.
 
- In its default configuration, a view receives only the first [`UITouch`](uitouch.md) object associated with an event, even if more than one finger is touching the view. To receive the additional touches, you must set the view’s [`isMultipleTouchEnabled`](uiview/ismultipletouchenabled.md) property to true. You can also configure this property in Interface Builder using the Attributes inspector.
-
 ## Topics
 
 ### Advanced touch handling

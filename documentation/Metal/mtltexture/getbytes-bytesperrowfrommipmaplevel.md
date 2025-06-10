@@ -24,8 +24,6 @@ func getBytes(_ pixelBytes: UnsafeMutableRawPointer, bytesPerRow: Int, from regi
 
 > ❗ **Important**:  Don’t use this method for textures where [`storageMode`](mtlresource/storagemode.md) is [`MTLStorageMode.private`](mtlstoragemode/private.md). Instead, copy data from the private texture with an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md) to another texture accessible from the CPU, and then call this method on the accessible texture.
 
- Don’t use this method for textures where [`storageMode`](mtlresource/storagemode.md) is [`MTLStorageMode.private`](mtlstoragemode/private.md). Instead, copy data from the private texture with an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md) to another texture accessible from the CPU, and then call this method on the accessible texture.
-
 This method runs on the CPU and immediately copies the pixel data from the texture to system memory but doesn’t synchronize with any GPU texture accesses. Ensure all operations that write or render to the texture complete before reading the texture’s contents, using one of the following methods:
 
 - Synchronize on the GPU with a [`synchronize(resource:)`](mtlblitcommandencoder/synchronize(resource:).md) or [`synchronize(texture:slice:level:)`](mtlblitcommandencoder/synchronize(texture:slice:level:).md) command in an [`MTLBlitCommandEncoder`](mtlblitcommandencoder.md).

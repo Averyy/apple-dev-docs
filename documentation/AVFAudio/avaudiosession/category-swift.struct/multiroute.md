@@ -25,8 +25,6 @@ This category can be used for input, output, or both. For example, use this cate
 
 > ❗ **Important**:  Route changes can invalidate part or all of your multi-route configuration.  When using the [`multiRoute`](avaudiosession/category-swift.struct/multiroute.md) category, it is essential that you register to observe [`routeChangeNotification`](avaudiosession/routechangenotification.md) notifications and update your configuration as necessary.
 
- Route changes can invalidate part or all of your multi-route configuration.  When using the [`multiRoute`](avaudiosession/category-swift.struct/multiroute.md) category, it is essential that you register to observe [`routeChangeNotification`](avaudiosession/routechangenotification.md) notifications and update your configuration as necessary.
-
 ## See Also
 
 - [static let ambient: AVAudioSession.Category](avaudiosession/category-swift.struct/ambient.md)

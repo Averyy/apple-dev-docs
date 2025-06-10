@@ -1,6 +1,6 @@
 # toggleStyle(_:)
 
-**Framework**: Financekitui  
+**Framework**: FinanceKitUI  
 **Kind**: method
 
 Sets the style for toggles in a view hierarchy.

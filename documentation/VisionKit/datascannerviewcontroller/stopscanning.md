@@ -1,6 +1,6 @@
 # stopScanning()
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Stops scanning the camera’s live video for data.

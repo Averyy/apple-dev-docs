@@ -1,6 +1,6 @@
 # Presenting an artist’s scene
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Display a scene from Reality Composer Pro in visionOS.
 
@@ -32,4 +32,4 @@ Display a scene from Reality Composer Pro in visionOS.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/presenting-an-artists-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/presenting-an-artists-scene)*

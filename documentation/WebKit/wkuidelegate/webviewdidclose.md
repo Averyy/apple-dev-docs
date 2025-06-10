@@ -1,6 +1,6 @@
 # webViewDidClose(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Notifies your app that the DOM window closed successfully.

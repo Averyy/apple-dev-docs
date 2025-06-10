@@ -17,8 +17,8 @@ Sets the tip’s view background to a style. Currently this only applies to inli
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func tipBackground(_ style: some ShapeStyle) -> some View
+nonisolated
+func tipBackground<S>(_ style: S) -> some View where S : ShapeStyle
 ```
 
 #### Return Value

@@ -1,6 +1,6 @@
 # nameKey
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The name of the source editor command in its attributes.

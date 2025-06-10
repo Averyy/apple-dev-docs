@@ -1,6 +1,6 @@
 # webkitWirelessVideoPlaybackDisabled
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A Boolean value indicating whether wireless video playback is disabled.

@@ -44,11 +44,11 @@ class MTRClusterTimeSynchronization
 - [func readAttributeTimeZoneListMaxSize(with: MTRReadParams?) -> [String : Any]?](mtrclustertimesynchronization/readattributetimezonelistmaxsize(with:).md)
 - [func readAttributeTrustedTimeSource(with: MTRReadParams?) -> [String : Any]?](mtrclustertimesynchronization/readattributetrustedtimesource(with:).md)
 - [func readAttributeUTCTime(with: MTRReadParams?) -> [String : Any]?](mtrclustertimesynchronization/readattributeutctime(with:).md)
-- [func setDSTOffsetWith(MTRTimeSynchronizationClusterSetDSTOffsetParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustertimesynchronization/setdstoffsetwith(_:expectedvalues:expectedvalueinterval:completion:).md)
-- [func setDefaultNTPWith(MTRTimeSynchronizationClusterSetDefaultNTPParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustertimesynchronization/setdefaultntpwith(_:expectedvalues:expectedvalueinterval:completion:).md)
+- [func setDSTOffsetWith(MTRTimeSynchronizationClusterSetDSTOffsetParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustertimesynchronization/setdstoffsetwith(_:expectedvalues:expectedvalueinterval:completion:).md)
+- [func setDefaultNTPWith(MTRTimeSynchronizationClusterSetDefaultNTPParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustertimesynchronization/setdefaultntpwith(_:expectedvalues:expectedvalueinterval:completion:).md)
 - [func setTimeZoneWith(MTRTimeSynchronizationClusterSetTimeZoneParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRTimeSynchronizationClusterSetTimeZoneResponseParams?, (any Error)?) -> Void)](mtrclustertimesynchronization/settimezonewith(_:expectedvalues:expectedvalueinterval:completion:).md)
-- [func setTrustedTimeSourceWith(MTRTimeSynchronizationClusterSetTrustedTimeSourceParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustertimesynchronization/settrustedtimesourcewith(_:expectedvalues:expectedvalueinterval:completion:).md)
-- [func setUTCTimeWith(MTRTimeSynchronizationClusterSetUTCTimeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustertimesynchronization/setutctimewith(_:expectedvalues:expectedvalueinterval:completion:).md)
+- [func setTrustedTimeSourceWith(MTRTimeSynchronizationClusterSetTrustedTimeSourceParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustertimesynchronization/settrustedtimesourcewith(_:expectedvalues:expectedvalueinterval:completion:).md)
+- [func setUTCTimeWith(MTRTimeSynchronizationClusterSetUTCTimeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustertimesynchronization/setutctimewith(_:expectedvalues:expectedvalueinterval:completion:).md)
 
 ## Relationships
 

@@ -82,6 +82,8 @@ There are two forms of public-private key authentication:  and  With passkeys, t
 
 - [Passkey use in web browsers](passkey-use-in-web-browsers.md)
   Register and authenticate website users by using passkeys.
+- [Performing fast account creation with passkeys](performing-fast-account-creation-with-passkeys.md)
+  Allow people to quickly create an account with passkeys and associated domains.
 - [Connecting to a service with passkeys](connecting-to-a-service-with-passkeys.md)
   Allow users to sign in to a service without typing a password.
 

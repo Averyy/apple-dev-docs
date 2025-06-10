@@ -32,8 +32,9 @@ In Swift, only class instances and metatypes have unique identities. There is no
 ### Initializers
 - [init(AnyObject)](objectidentifier/init(_:)-223xw.md)
   Creates an instance that uniquely identifies the given class instance.
-- [init(any Any.Type)](objectidentifier/init(_:)-86u7l.md)
+- [init(any (~Copyable & ~Escapable).Type)](objectidentifier/init(_:)-52bz1.md)
   Creates an instance that uniquely identifies the given metatype.
+- [init(any Any.Type)](objectidentifier/init(_:)-86u7l.md)
 ### Default Implementations
 - [AtomicOptionalRepresentable Implementations](objectidentifier/atomicoptionalrepresentable-implementations.md)
 - [AtomicRepresentable Implementations](objectidentifier/atomicrepresentable-implementations.md)
@@ -54,17 +55,14 @@ In Swift, only class instances and metatypes have unique identities. There is no
 - [Equatable](equatable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 
 - [struct Mirror](mirror.md)
   A representation of the substructure and display style of an instance of any type.
-- [func type<T, Metatype>(of: T) -> Metatype](type(of:).md)
+- [func type<T, Metatype>(of: borrowing T) -> Metatype](type(of:).md)
   Returns the dynamic type of a value.
-- [func == ((any Any.Type)?, (any Any.Type)?) -> Bool](==(_:_:)-w1qf.md)
-  Returns a Boolean value indicating whether two types are identical.
-- [func != ((any Any.Type)?, (any Any.Type)?) -> Bool](!=(_:_:)-6s4z0.md)
-  Returns a Boolean value indicating whether two types are not identical.
 
 
 ---

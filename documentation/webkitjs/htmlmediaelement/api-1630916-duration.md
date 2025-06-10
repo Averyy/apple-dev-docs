@@ -1,6 +1,6 @@
 # duration
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The length of the media resource in seconds. (read-only)

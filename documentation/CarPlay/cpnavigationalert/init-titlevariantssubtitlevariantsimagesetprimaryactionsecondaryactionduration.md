@@ -13,6 +13,7 @@ Creates a navigation alert.
 ## Declaration
 
 ```swift
+@MainActor
 init(titleVariants: [String], subtitleVariants: [String]?, imageSet: CPImageSet?, primaryAction: CPAlertAction, secondaryAction: CPAlertAction?, duration: TimeInterval)
 ```
 

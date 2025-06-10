@@ -1,6 +1,6 @@
 # MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

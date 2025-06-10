@@ -1,6 +1,6 @@
 # none
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: property
 
 Indicates that the listener uses a default configuration during creation.
@@ -12,12 +12,12 @@ Indicates that the listener uses a default configuration during creation.
 ## Declaration
 
 ```swift
-static var none: XPCListener.InitializationOptions
+static let none: XPCListener.InitializationOptions
 ```
 
 ## See Also
 
-- [static var inactive: XPCListener.InitializationOptions](xpclistener/initializationoptions/inactive.md)
+- [static let inactive: XPCListener.InitializationOptions](xpclistener/initializationoptions/inactive.md)
   Indicates that the listener isn’t activated during its creation.
 
 

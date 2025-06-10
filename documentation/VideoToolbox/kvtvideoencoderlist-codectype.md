@@ -1,6 +1,6 @@
 # kVTVideoEncoderList_CodecType
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The encoder’s codec type key.

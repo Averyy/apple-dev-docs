@@ -1,6 +1,6 @@
 # UNError
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: struct
 
 An object that represents a notification error.
@@ -59,6 +59,7 @@ struct UNError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

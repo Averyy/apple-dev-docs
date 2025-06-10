@@ -1,6 +1,6 @@
 # init(recognizedDataTypes:qualityLevel:recognizesMultipleItems:isHighFrameRateTrackingEnabled:isPinchToZoomEnabled:isGuidanceEnabled:isHighlightingEnabled:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: init
 
 Creates a scanner for finding data, such as text and machine-readable codes, in the camera’s live video.

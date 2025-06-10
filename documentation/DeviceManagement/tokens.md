@@ -17,8 +17,8 @@ The request for sending the device token details.
 
 ## See Also
 
-- [Declarative Management Checkin](declarative-management.md)
-  The checkin protocol for declarative management.
+- [Declarative Management](declarative-management.md)
+  Sends declarative management requests to the server.
 - [Get Server Supported Declarations](declaration-items.md)
   Get a list of the declarations available on the server.
 - [Get the Device Status](status.md)

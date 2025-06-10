@@ -1,6 +1,6 @@
 # read(from:ofType:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Sets the contents of this document by reading from data of a specified type.

@@ -1,6 +1,6 @@
 # Enabling and receiving notifications
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Set up and handle local and remote notifications.
 
@@ -59,4 +59,4 @@ For more information on watchOS app types, see [`Creating independent watchOS ap
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/enabling-and-receiving-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/enabling-and-receiving-notifications)*

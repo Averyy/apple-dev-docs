@@ -98,6 +98,11 @@ Use types conforming to this protocol with the [`scrollTargetBehavior(_:)`](view
   The properties of a scroll behavior
 - [ScrollTargetBehavior.PropertiesContext](scrolltargetbehavior/propertiescontext.md)
   The properties context of a scroll behavior.
+### Type Methods
+- [static func viewAligned(anchor: UnitPoint?) -> Self](scrolltargetbehavior/viewaligned(anchor:).md)
+  The scroll behavior that aligns scroll targets to view-based geometry.
+- [static func viewAligned(limitBehavior: ViewAlignedScrollTargetBehavior.LimitBehavior, anchor: UnitPoint?) -> Self](scrolltargetbehavior/viewaligned(limitbehavior:anchor:).md)
+  The scroll behavior that aligns scroll targets to view-based geometry.
 
 ## Relationships
 
@@ -122,6 +127,10 @@ Use types conforming to this protocol with the [`scrollTargetBehavior(_:)`](view
   The scroll behavior that aligns scroll targets to view-based geometry.
 - [struct AnyScrollTargetBehavior](anyscrolltargetbehavior.md)
   A type-erased scroll target behavior.
+- [struct ScrollTargetBehaviorProperties](scrolltargetbehaviorproperties.md)
+  Properties influencing the scroll view a scroll target behavior applies to.
+- [struct ScrollTargetBehaviorPropertiesContext](scrolltargetbehaviorpropertiescontext.md)
+  The context in which a scroll target behavior can decide its properties.
 
 
 ---

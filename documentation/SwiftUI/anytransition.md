@@ -28,7 +28,7 @@ struct AnyTransition
 ## Topics
 
 ### Getting built-in transitions
-- [static let identity: AnyTransition](anytransition/identity.md)
+- [static var identity: AnyTransition](anytransition/identity.md)
   A transition that returns the input view, unmodified, as the output view.
 - [static func move(edge: Edge) -> AnyTransition](anytransition/move(edge:).md)
   Returns a transition that moves the view away, towards the specified edge of the view.

@@ -1,6 +1,6 @@
 # VTPixelRotationSession
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 An object that rotates source pixel buffers to destination pixel buffers.
 

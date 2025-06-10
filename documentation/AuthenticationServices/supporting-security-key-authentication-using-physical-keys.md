@@ -1,6 +1,6 @@
 # Supporting Security Key Authentication Using Physical Keys
 
-**Framework**: Authenticationservices
+**Framework**: Authentication Services
 
 Allow users to authenticate using NFC, USB, and Lightning security keys in your app or service.
 
@@ -90,4 +90,4 @@ If an error occurs during the authorization, the framework calls [`authorization
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/supporting-security-key-authentication-using-physical-keys)*
+*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/supporting-security-key-authentication-using-physical-keys)*

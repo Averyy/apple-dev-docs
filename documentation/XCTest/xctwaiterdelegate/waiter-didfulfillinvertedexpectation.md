@@ -1,6 +1,6 @@
 # waiter(_:didFulfillInvertedExpectation:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Invoked when an expectation whose `isInverted` property is set to `true` is fulfilled.

@@ -8,7 +8,7 @@ Returns your app’s current authorization to perform speech recognition.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 10.0+
 - macOS 10.15+
 - visionOS 1.0+
 

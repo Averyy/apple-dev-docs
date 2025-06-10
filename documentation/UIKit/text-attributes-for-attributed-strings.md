@@ -7,11 +7,11 @@ Apply attributes to text in an attributed string to convey extra information abo
 ## Topics
 
 ### Constants
-- [static let accessibilityTextCustom: NSAttributedString.Key](../foundation/nsattributedstring/key/2865778-accessibilitytextcustom.md)
+- [nonisolated static let accessibilityTextCustom: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilityTextCustom.md)
   A key for specifying custom attributes to apply to the text.
-- [static let accessibilityTextHeadingLevel: NSAttributedString.Key](../foundation/nsattributedstring/key/2865779-accessibilitytextheadinglevel.md)
+- [nonisolated static let accessibilityTextHeadingLevel: NSAttributedString.Key](../Foundation/NSAttributedString/Key/accessibilityTextHeadingLevel.md)
   A key for specifying the heading level of the text.
-- [static let UIAccessibilityTextAttributeContext: NSAttributedString.Key](../foundation/nsattributedstring/key/3074363-uiaccessibilitytextattributecont.md)
+- [nonisolated static let UIAccessibilityTextAttributeContext: NSAttributedString.Key](../Foundation/NSAttributedString/Key/UIAccessibilityTextAttributeContext.md)
 
 ## See Also
 

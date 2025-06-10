@@ -1,6 +1,6 @@
 # XCUIElement.ElementType.comboBox
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents an element type for combo-box controls.

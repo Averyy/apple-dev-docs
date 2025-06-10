@@ -17,7 +17,6 @@ Creates a shape with a rectangular path that has rounded corners centered on the
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(rectOf size: CGSize, cornerRadius: CGFloat)
 ```
 

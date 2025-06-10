@@ -65,6 +65,7 @@ TabView {
   Specifies the visibility of a bar managed by SwiftUI.
 - [struct ToolbarPlacement](toolbarplacement.md)
   The placement of a toolbar.
+- [struct ContentToolbarPlacement](contenttoolbarplacement.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # nestedWaiter(_:wasInterruptedByTimedOutWaiter:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Invoked when the waiter is interrupted prior to its expectations being fulfilled or timing out.

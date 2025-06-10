@@ -57,8 +57,6 @@ The example drawing app’s custom transfer representation comes first so that a
 
 > 💡 **Tip**: If a type conforms to `Codable`, [`CodableRepresentation`](codablerepresentation.md) might be a more convenient choice than [`DataRepresentation`](datarepresentation.md).
 
-If a type conforms to `Codable`, [`CodableRepresentation`](codablerepresentation.md) might be a more convenient choice than [`DataRepresentation`](datarepresentation.md).
-
 ## Topics
 
 ### Creating a transfer representation
@@ -78,6 +76,7 @@ If a type conforms to `Codable`, [`CodableRepresentation`](codablerepresentation
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TransferRepresentation](transferrepresentation.md)
 
 ## See Also

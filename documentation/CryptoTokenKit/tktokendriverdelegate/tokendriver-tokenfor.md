@@ -1,6 +1,6 @@
 # tokenDriver(_:tokenFor:)
 
-**Framework**: Cryptotokenkit  
+**Framework**: CryptoTokenKit  
 **Kind**: method
 
 Creates a new token for the configuration you specify.

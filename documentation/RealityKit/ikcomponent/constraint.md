@@ -10,6 +10,7 @@ The update stage object that lets you read and update the current settings of a 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -32,7 +33,7 @@ The settings this object exposes are the runtime editable values of the solver c
   The blending weights between the FK demand and the your target per demand type.
 - [var demands: IKComponent.Constraint.DemandOptions](ikcomponent/constraint/demands.md)
   The set of the active demands of the constraint.
-- [let id: IKComponent.Constraint.ID](ikcomponent/constraint/id-swift.property.md)
+- [let id: IKComponent.Constraint.ID](ikcomponent/constraint/id.md)
   ID of the constraint, that is unique within the solver instance.
 - [var jointID: IKComponent.Joint.ID](ikcomponent/constraint/jointid.md)
   The identifier of the constrained rig joint.
@@ -44,9 +45,6 @@ The settings this object exposes are the runtime editable values of the solver c
   The offset applied on top of the target transform before the solve.
 - [var target: Transform](ikcomponent/constraint/target.md)
   The packed targets for the positional and orientational demands in model space.
-### Type Aliases
-- [IKComponent.Constraint.ID](ikcomponent/constraint/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 
@@ -71,8 +69,6 @@ The settings this object exposes are the runtime editable values of the solver c
   A reference counted immutable resource which contains one or more inverse kinematics solver rigs.
 - [struct IKSolverDefinition](iksolverdefinition.md)
   A container describing a solver instance.
-- [IKSolverDefinition.ID](iksolverdefinition/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 
 ---

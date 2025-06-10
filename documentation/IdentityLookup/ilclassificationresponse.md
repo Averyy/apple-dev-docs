@@ -21,7 +21,7 @@ class ILClassificationResponse
 
 To work in areas where Wi-Fi connections and cellular data may be unreliable, the extension sends the response using an SMS message. As long as the action isn’t [`ILClassificationAction.none`](ilclassificationaction/none.md), the extension creates an SMS message to the number provided by the `ILClassificationExtensionSMSReportDestination` key in the extension’s `info.plist` file.
 
-The message’s body contains a JSON string with both the classification action and the contents of the user info dictionary. For more information, see [`NSJSONSerialization`](https://developer.apple.com/documentation/foundation/nsjsonserialization).
+The message’s body contains a JSON string with both the classification action and the contents of the user info dictionary. For more information, see [`JSONSerialization`](https://developer.apple.com/documentation/Foundation/JSONSerialization).
 
 ## Topics
 

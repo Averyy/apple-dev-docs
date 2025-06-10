@@ -1,6 +1,6 @@
 # lastIndex(of:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Returns the last index where the specified value appears in the collection.

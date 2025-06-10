@@ -1,6 +1,6 @@
 # SEQUENCE_OF_NULLABLE_STRINGS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: tdef
 
 **Availability**:

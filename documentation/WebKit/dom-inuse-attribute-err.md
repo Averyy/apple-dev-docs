@@ -1,6 +1,6 @@
 # DOM_INUSE_ATTRIBUTE_ERR
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

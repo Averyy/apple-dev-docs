@@ -1,6 +1,6 @@
 # TrendBaseline.Kind
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: enum
 
 An enum describing what value is being compared between historical and current readings.
@@ -50,6 +50,8 @@ enum Kind
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

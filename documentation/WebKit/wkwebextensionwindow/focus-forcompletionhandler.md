@@ -1,6 +1,6 @@
 # focus(for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to focus the window.

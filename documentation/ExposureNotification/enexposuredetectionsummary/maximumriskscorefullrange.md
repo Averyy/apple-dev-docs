@@ -1,6 +1,6 @@
 # maximumRiskScoreFullRange
 
-**Framework**: Exposurenotification  
+**Framework**: Exposure Notification  
 **Kind**: property
 
 The value that represents the highest, full-range risk score of all the exposures for the user.
@@ -44,4 +44,4 @@ This value is not limited by [`ENRiskScoreMax`](enriskscoremax.md).
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposuredetectionsummary/maximumriskscorefullrange)*
+*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposuredetectionsummary/maximumriskscorefullrange)*

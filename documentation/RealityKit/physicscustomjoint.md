@@ -1,6 +1,6 @@
 # PhysicsCustomJoint
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 A joint with six degrees of freedom that can be individually specified.
@@ -10,6 +10,7 @@ A joint with six degrees of freedom that can be individually specified.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -24,7 +25,7 @@ A custom joint allows you to choose the restraints of all 6 degrees of freedom. 
 
 > **Note**: By default all degrees of freedom are locked, similar to [`PhysicsFixedJoint`](physicsfixedjoint.md).
 
-For example, you can constrain the motion of [`pin1`](physicscustomjoint/pin1.md) in the xy-plane of [`pin0`](physicscustomjoint/pin0.md), set movement along the x-axis to [`PhysicsCustomJoint.MotionLimit.unlimited`](physicscustomjoint/motionlimit/unlimited.md), and leave all rotations as the default value of [`PhysicsCustomJoint.MotionLimit.fixed`](physicscustomjoint/motionlimit/fixed.md).
+For example, you can constrain the motion of `pin1` in the xy-plane of `pin0`, set movement along the x-axis to [`PhysicsCustomJoint.MotionLimit.unlimited`](physicscustomjoint/motionlimit/unlimited.md), and leave all rotations as the default value of [`PhysicsCustomJoint.MotionLimit.fixed`](physicscustomjoint/motionlimit/fixed.md).
 
 > **Note**: The xy-plane is a plane that aligns with the x and y axes.
 
@@ -37,13 +38,10 @@ let joint = PhysicsCustomJoint(
 )
 ```
 
-If [`pin0`](physicscustomjoint/pin0.md) is in a fixed location for the example above, this joint allows [`pin1`](physicscustomjoint/pin1.md) to move anywhere along the x-axis of [`pin0`](physicscustomjoint/pin0.md), and can move up to 5 local meters above or below the y-axis of [`pin0`](physicscustomjoint/pin0.md).
+If `pin0` is in a fixed location for the example above, this joint allows `pin1` to move anywhere along the x-axis of `pin0`, and can move up to 5 local meters above or below the y-axis of `pin0`.
 
 ## Topics
 
-### Operators
-- [static func == (PhysicsCustomJoint, PhysicsCustomJoint) -> Bool](physicscustomjoint/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(pin0: GeometricPin, pin1: GeometricPin, linearMotionAlongX: PhysicsCustomJoint.MotionLimit, linearMotionAlongY: PhysicsCustomJoint.MotionLimit, linearMotionAlongZ: PhysicsCustomJoint.MotionLimit, angularMotionAroundX: PhysicsCustomJoint.MotionLimit, angularMotionAroundY: PhysicsCustomJoint.MotionLimit, angularMotionAroundZ: PhysicsCustomJoint.MotionLimit, checksForInternalCollisions: Bool)](physicscustomjoint/init(pin0:pin1:linearmotionalongx:linearmotionalongy:linearmotionalongz:angularmotionaroundx:angularmotionaroundy:angularmotionaroundz:checksforinternalcollisions:).md)
   Creates a new custom joint.
@@ -54,26 +52,15 @@ If [`pin0`](physicscustomjoint/pin0.md) is in a fixed location for the example a
   The angular motion limits around the y-axis.
 - [var angularMotionAroundZ: PhysicsCustomJoint.MotionLimit](physicscustomjoint/angularmotionaroundz.md)
   The angular motion limits around the z-axis.
-- [var checksForInternalCollisions: Bool](physicscustomjoint/checksforinternalcollisions.md)
-  A Boolean that indicates whether the joint checks and reports collisions between the two entity instances.
-- [var isActive: Bool](physicscustomjoint/isactive.md)
-  A Boolean that indicates whether the joint is active.
 - [var linearMotionAlongX: PhysicsCustomJoint.MotionLimit](physicscustomjoint/linearmotionalongx.md)
   The linear motion limits along the x-axis.
 - [var linearMotionAlongY: PhysicsCustomJoint.MotionLimit](physicscustomjoint/linearmotionalongy.md)
   The linear motion limits along the y-axis.
 - [var linearMotionAlongZ: PhysicsCustomJoint.MotionLimit](physicscustomjoint/linearmotionalongz.md)
   The linear motion limits along the z-axis.
-- [var pin0: GeometricPin](physicscustomjoint/pin0.md)
-  The pin that defines a local position and orientation on the first entity.
-- [var pin1: GeometricPin](physicscustomjoint/pin1.md)
-  The pin that defines a local position and orientation on the second entity.
 ### Enumerations
 - [PhysicsCustomJoint.MotionLimit](physicscustomjoint/motionlimit.md)
   Specifies allowed linear or angular motion.
-### Default Implementations
-- [Equatable Implementations](physicscustomjoint/equatable-implementations.md)
-- [PhysicsJoint Implementations](physicscustomjoint/physicsjoint-implementations.md)
 
 ## Relationships
 
@@ -99,4 +86,4 @@ If [`pin0`](physicscustomjoint/pin0.md) is in a fixed location for the example a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/physicscustomjoint)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/physicscustomjoint)*

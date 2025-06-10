@@ -1,6 +1,6 @@
 # tokenFieldCell(_:representedObjectForEditing:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Allows the delegate to provide a represented object for the string being edited.

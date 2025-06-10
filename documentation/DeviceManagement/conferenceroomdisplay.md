@@ -7,8 +7,6 @@ The payload you use to configure Conference Room Display mode for Apple TV.
 
 **Availability**:
 - tvOS 10.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,17 +24,17 @@ Conference Room Display mode locks Apple TV into that mode, to prevent other typ
 
 |  |  |
 | --- | --- |
-| Device Channel | tvOS |
-| User Channel | - |
-| Allow Manual Install | tvOS |
-| Requires Supervision | tvOS |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | tvOS |
+| User channel | NA |
+| Allow manual install | tvOS |
+| Requires supervision | tvOS |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

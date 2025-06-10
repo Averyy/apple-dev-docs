@@ -1,6 +1,6 @@
 # init(itemIdentifier:barButtonItem:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: init
 
 Creates a toolbar item with property values from the specified bar button item.

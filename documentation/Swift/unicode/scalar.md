@@ -142,6 +142,7 @@ print(airplane)
 - [LosslessStringConvertible](losslessstringconvertible.md)
 - [RegexComponent](regexcomponent.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [TextOutputStreamable](textoutputstreamable.md)
 
 

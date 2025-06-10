@@ -22,8 +22,6 @@ class PKAutomaticReloadPaymentRequest
 
 > ❗ **Important**:  You must set the [`automaticReloadPaymentRequest`](pkpaymentrequest/automaticreloadpaymentrequest.md) property on a [`PKPaymentRequest`](pkpaymentrequest.md) object to use the [`PKAutomaticReloadPaymentRequest`](pkautomaticreloadpaymentrequest.md) class and set up an automatic reload payment.
 
- You must set the [`automaticReloadPaymentRequest`](pkpaymentrequest/automaticreloadpaymentrequest.md) property on a [`PKPaymentRequest`](pkpaymentrequest.md) object to use the [`PKAutomaticReloadPaymentRequest`](pkautomaticreloadpaymentrequest.md) class and set up an automatic reload payment.
-
 Apple Pay issues an Apple Pay Merchant Token if the user’s payment network supports merchant-specific payment tokens. Otherwise, Apple Pay issues a device token for the payment request.
 
 Use a [`PKAutomaticReloadPaymentRequest`](pkautomaticreloadpaymentrequest.md) object to provide the user with payment details and a way to manage payment methods for an automatic reload payment. You can optionally display a billing agreement and set up merchant token life cycle notifications for the request.

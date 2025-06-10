@@ -32,6 +32,7 @@ struct ASAuthorizationProviderExtensionEncryptionAlgorithm
 ### Conforms To
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

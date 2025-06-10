@@ -1,6 +1,6 @@
 # WKSnapshotReason.prelaunch
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The system needs a snapshot for the dock, but the app has not been launched yet.

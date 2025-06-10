@@ -1,6 +1,6 @@
 # setInputMuted(_:)
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: method
 
 Sets a Boolean value that indicates whether the app’s audio input is in a muted state.
@@ -11,7 +11,7 @@ Sets a Boolean value that indicates whether the app’s audio input is in a mute
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS 26.0+ (Beta)
 - watchOS 10.0+
 
 ## Declaration

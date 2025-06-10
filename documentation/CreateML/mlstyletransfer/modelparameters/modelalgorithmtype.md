@@ -20,7 +20,7 @@ enum ModelAlgorithmType
 
 #### Overview
 
-This object uses a convolutional neural network for training the style transfer model, giving more detailed style It’s ideal for cases where latency is not the main concern, such as single images.
+This object uses a convolutional neural network for training the style transfer model, giving more detailed style. It’s ideal for cases where latency is not the main concern, such as single images.
 
 ## Topics
 
@@ -66,6 +66,7 @@ This object uses a convolutional neural network for training the style transfer 
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

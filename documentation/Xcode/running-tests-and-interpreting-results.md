@@ -132,4 +132,4 @@ To repeatedly run tests in Terminal, specify the number of repetitions with the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/running-tests-and-interpreting-results)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/running-tests-and-interpreting-results)*

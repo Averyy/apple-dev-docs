@@ -1,0 +1,18 @@
+# portlabel_id
+
+**Framework**: Kernel  
+**Kind**: structp
+
+**Availability**:
+- macOS 12.3+
+
+## Declaration
+
+```swift
+int16_t portlabel_id;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/thread_waitinfo_v2_t/3917686-portlabel_id)*

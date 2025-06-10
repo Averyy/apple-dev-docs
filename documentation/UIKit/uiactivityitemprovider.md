@@ -25,7 +25,7 @@ When you initialize a [`UIActivityViewController`](uiactivityviewcontroller.md) 
 
 ##### Subclassing Notes
 
-You must subclass `UIActivityItemProvider` and implement its [`item`](uiactivityitemprovider/item.md) method, which is called to generate the item data. You implement this method instead of the normal [`main()`](https://developer.apple.com/documentation/foundation/operation/1407732-main) method you’d implement for an operation object. (The [`main()`](https://developer.apple.com/documentation/foundation/operation/1407732-main) method calls the [`item`](uiactivityitemprovider/item.md) method when the operation object is executed.) Your implementation of the [`item`](uiactivityitemprovider/item.md) method should do whatever work is necessary to create and return the data.
+You must subclass `UIActivityItemProvider` and implement its [`item`](uiactivityitemprovider/item.md) method, which is called to generate the item data. You implement this method instead of the normal [`main()`](https://developer.apple.com/documentation/Foundation/Operation/main()) method you’d implement for an operation object. (The [`main()`](https://developer.apple.com/documentation/Foundation/Operation/main()) method calls the [`item`](uiactivityitemprovider/item.md) method when the operation object is executed.) Your implementation of the [`item`](uiactivityitemprovider/item.md) method should do whatever work is necessary to create and return the data.
 
 ## Topics
 
@@ -52,6 +52,7 @@ You must subclass `UIActivityItemProvider` and implement its [`item`](uiactivity
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemSource](uiactivityitemsource.md)
 
 ## See Also

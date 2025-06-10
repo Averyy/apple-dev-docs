@@ -6,6 +6,7 @@
 An event generated from an indirectly targeted pinching hand.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

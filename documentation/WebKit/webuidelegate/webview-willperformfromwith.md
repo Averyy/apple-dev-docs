@@ -1,6 +1,6 @@
 # webView(_:willPerform:from:with:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the receiver that the sending web view will perform the specified drag-source action.

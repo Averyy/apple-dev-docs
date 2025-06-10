@@ -1,6 +1,6 @@
 # hardwareCost
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A value that indicates the percentage of the session’s available hardware budget in use.

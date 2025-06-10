@@ -108,6 +108,7 @@ emoji.withUTF8Buffer { utf8 in
 - [ExpressibleByStringLiteral](expressiblebystringliteral.md)
 - [ExpressibleByUnicodeScalarLiteral](expressiblebyunicodescalarliteral.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 
 ---

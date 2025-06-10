@@ -3,6 +3,8 @@
 **Framework**: Apple CryptoKit  
 **Kind**: protocol
 
+The public key for a key encapsulation mechanism.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -23,12 +25,24 @@ protocol KEMPublicKey : Sendable
 
 ### Instance Methods
 - [func encapsulate() throws -> KEM.EncapsulationResult](kempublickey/encapsulate.md)
-  Encapsulates the generated shared secret
+  Generates and encapsulates a shared secret.
 
 ## Relationships
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+### Inherited By
+- [HPKEKEMPublicKey](hpkekempublickey.md)
+### Conforming Types
+- [MLKEM1024.PublicKey](mlkem1024/publickey.md)
+- [MLKEM768.PublicKey](mlkem768/publickey.md)
+- [XWingMLKEM768X25519.PublicKey](xwingmlkem768x25519/publickey.md)
+
+## See Also
+
+- [protocol KEMPrivateKey](kemprivatekey.md)
+  The private key for a key encapsulation mechanism.
 
 
 ---

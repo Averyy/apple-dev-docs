@@ -1,6 +1,6 @@
 # launchEnvironment
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The environment variables that pass to the application on launch.

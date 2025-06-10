@@ -1,7 +1,7 @@
 # CIColor
 
 **Framework**: Core Image  
-**Kind**: cl
+**Kind**: class
 
 The component values defining a color in a specific color space.
 
@@ -10,18 +10,22 @@ The component values defining a color in a specific color space.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS 9.0+
+- tvOS ?+
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
-class CIColor : NSObject
+class CIColor
 ```
+
+## Mentions
+
+- [Selectively Focusing on an Image](selectively-focusing-on-an-image.md)
 
 #### Overview
 
-You use [`CIColor`](cicolor.md) objects in conjunction with other Core Image classes, such as  [`CIFilter`](cifilter.md), [`CIContext`](cicontext.md), and [`CIImage`](ciimage.md), to take advantage of the built-in Core Image filters when processing images.
+You use `CIColor` objects in conjunction with other Core Image classes, such as  [`CIFilter`](cifilter-swift.class.md), [`CIContext`](cicontext.md), and [`CIImage`](ciimage.md), to take advantage of the built-in Core Image filters when processing images.
 
 A color space defines a one-, two-, three-, or four-dimensional environment whose color components represent intensity values. A color component is also referred to as a . An RGB color space, for example, is a three-dimensional color space whose stimuli are the red, green, and blue intensities that make up a given color. Regardless of the color space, in Core Image, color values range from `0.0` to `1.0`, with `0.0` representing an absence of that component (0 percent) and `1.0` representing 100 percent.
 
@@ -30,71 +34,80 @@ Colors also have an alpha component, which represents the opacity of the color, 
 ## Topics
 
 ### Initializing Color Objects
-- [init(cgColor: CGColor)](cicolor/1437821-init.md)
+- [init(cgColor: CGColor)](cicolor/init(cgcolor:).md)
   Initializes a Core Image color object with a Core Graphics color.
-- [init(color: UIColor)](cicolor/1528762-init.md)
+- [convenience init(color: UIColor)](cicolor/init(color:).md)
   Initializes a Core Image color object using a UIKit (or AppKit) color object.
-- [init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](cicolor/1438084-init.md)
+- [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](cicolor/init(red:green:blue:alpha:).md)
   Initializes a Core Image color object with the specified red, green, blue, and alpha component values.
-- [init?(red: CGFloat, green: CGFloat, blue: CGFloat, colorSpace: CGColorSpace)](cicolor/1643576-init.md)
+- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, colorSpace: CGColorSpace)](cicolor/init(red:green:blue:colorspace:).md)
   Initializes a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
-- [init?(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat, colorSpace: CGColorSpace)](cicolor/1643572-init.md)
+- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat, colorSpace: CGColorSpace)](cicolor/init(red:green:blue:alpha:colorspace:).md)
   Initializes a Core Image color object with the specified red, green, blue, and alpha component values as measured in the specified color space.
 ### Creating Color Objects
-- [init(red: CGFloat, green: CGFloat, blue: CGFloat)](cicolor/1437941-init.md)
+- [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat)](cicolor/init(red:green:blue:).md)
   Creates a color object using the specified RGB color component values
-- [init(string: String)](cicolor/1438059-init.md)
+- [convenience init(string: String)](cicolor/init(string:).md)
   Creates a color object using the RGBA color component values specified by a string.
 ### Getting Color Components
-- [var colorSpace: CGColorSpace](cicolor/1437917-colorspace.md)
+- [var colorSpace: CGColorSpace](cicolor/colorspace.md)
   The Quartz 2D color space associated with the color.
-- [var components: UnsafePointer<CGFloat>](cicolor/1437862-components.md)
+- [var components: UnsafePointer<CGFloat>](cicolor/components.md)
   The color components of the color.
-- [var numberOfComponents: Int](cicolor/1438151-numberofcomponents.md)
+- [var numberOfComponents: Int](cicolor/numberofcomponents.md)
   Returns the number of color components in the color.
-- [var red: CGFloat](cicolor/1437969-red.md)
+- [var red: CGFloat](cicolor/red-swift.property.md)
   The unpremultiplied red component of the color.
-- [var green: CGFloat](cicolor/1437607-green.md)
+- [var green: CGFloat](cicolor/green-swift.property.md)
   The unpremultiplied green component of the color.
-- [var blue: CGFloat](cicolor/1438033-blue.md)
+- [var blue: CGFloat](cicolor/blue-swift.property.md)
   The unpremultiplied blue component of the color.
-- [var alpha: CGFloat](cicolor/1437981-alpha.md)
+- [var alpha: CGFloat](cicolor/alpha.md)
   The alpha value of the color.
-- [var stringRepresentation: String](cicolor/1437910-stringrepresentation.md)
+- [var stringRepresentation: String](cicolor/stringrepresentation.md)
   A formatted string that specifies the components of the color.
 ### Creating a CIColor Object with Preset Components
-- [class var black: CIColor](cicolor/1643578-black.md)
+- [class var black: CIColor](cicolor/black.md)
   Returns a color object whose RGB values are all `0.0` and whose alpha value is `1.0`.
-- [class var blue: CIColor](cicolor/1643569-blue.md)
+- [class var blue: CIColor](cicolor/blue-swift.type.property.md)
   Returns a color object whose RGB values are `0.0`, `0.0`, and `1.0` and whose alpha value is `1.0`.
-- [class var clear: CIColor](cicolor/1643577-clear.md)
+- [class var clear: CIColor](cicolor/clear.md)
   Returns a color object whose RGB and alpha values are all `0.0`.
-- [class var cyan: CIColor](cicolor/1643581-cyan.md)
+- [class var cyan: CIColor](cicolor/cyan.md)
   Returns a color object whose RGB values are `0.0`, `1.0`, and `1.0` and whose alpha value is `1.0`.
-- [class var gray: CIColor](cicolor/1643573-gray.md)
+- [class var gray: CIColor](cicolor/gray.md)
   Returns a color object whose RGB values are all `0.5` and whose alpha value is `1.0`.
-- [class var green: CIColor](cicolor/1643580-green.md)
+- [class var green: CIColor](cicolor/green-swift.type.property.md)
   Returns a color object whose RGB values are `0.0`, `1.0`, and `0.0` and whose alpha value is `1.0`.
-- [class var magenta: CIColor](cicolor/1643574-magenta.md)
+- [class var magenta: CIColor](cicolor/magenta.md)
   Returns a color object whose RGB values are `1.0`, `0.0`, and `1.0` and whose alpha value is `1.0`.
-- [class var red: CIColor](cicolor/1643570-red.md)
+- [class var red: CIColor](cicolor/red-swift.type.property.md)
   Returns a color object whose RGB values are `1.0`, `0.0`, and `0.0` and whose alpha value is `1.0`.
-- [class var white: CIColor](cicolor/1643571-white.md)
+- [class var white: CIColor](cicolor/white.md)
   Returns a color object whose RGB values are all `1.0` and whose alpha value is `1.0`.
-- [class var yellow: CIColor](cicolor/1643582-yellow.md)
+- [class var yellow: CIColor](cicolor/yellow.md)
   Returns a color object whose RGB values are `1.0`, `1.0`, and `0.0` and whose alpha value is `1.0`.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
-- [NSCopying](../foundation/nscopying.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [class CIFilter](cifilter.md)
+- [class CIFilter](cifilter-swift.class.md)
   An image processor that produces an image by manipulating one or more input images or by generating new image data.
 - [class CIRAWFilter](cirawfilter.md)
   A filter subclass that produces an image by manipulating RAW image sensor data from a digital camera or scanner.

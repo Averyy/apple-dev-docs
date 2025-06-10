@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-weak var multiplayerDelegate: (any TabletopGame.MultiplayerDelegate)? { get set }
+weak final var multiplayerDelegate: (any TabletopGame.MultiplayerDelegate)? { get set }
 ```
 
 ## See Also

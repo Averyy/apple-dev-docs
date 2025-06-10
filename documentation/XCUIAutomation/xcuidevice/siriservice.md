@@ -1,6 +1,6 @@
 # siriService
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 An object that represents the Siri interface on the device.

@@ -16,7 +16,7 @@ struct Notification
 
 ## Topics
 
-### Notification Names
+### Notification names
 - [static let announcementRequested: NSAccessibility.Notification](nsaccessibility-swift.struct/notification/announcementrequested.md)
   This notification is posted whenever an accessibility element needs to make an announcement to the user. This notification requires a `userInfo` dictionary with the key [`announcement`](nsaccessibility-swift.struct/notificationuserinfokey/announcement.md) and a localized string containing the announcement. To help an assistive app determine the importance of the announcement, add the appropriate [`priority`](nsaccessibility-swift.struct/notificationuserinfokey/priority.md) to the `userInfo` dictionary.
 - [static let applicationActivated: NSAccessibility.Notification](nsaccessibility-swift.struct/notification/applicationactivated.md)
@@ -83,6 +83,16 @@ struct Notification
   This notification is posted after a window moves.  Post this notification using the [`post(element:notification:)`](nsaccessibility-swift.struct/post(element:notification:).md) function instead of an `NSNotificationCenter` instance.
 - [static let windowResized: NSAccessibility.Notification](nsaccessibility-swift.struct/notification/windowresized.md)
   This notification is posted after a window’s size changes. Post this notification using the [`post(element:notification:)`](nsaccessibility-swift.struct/post(element:notification:).md) function instead of an `NSNotificationCenter` instance.
+### Accessibility notification names
+- [static let NSAccessibilityAutocorrectionOccurred: NSAccessibility.Notification](nsaccessibility-swift.struct/notification/nsaccessibilityautocorrectionoccurred.md)
+- [static let NSAccessibilityDraggingDestinationDragAccepted: NSAccessibility.Notification](nsaccessibility-swift.struct/notification/nsaccessibilitydraggingdestinationdragaccepted.md)
+- [static let NSAccessibilityDraggingDestinationDragNotAccepted: NSAccessibility.Notification](nsaccessibility-swift.struct/notification/nsaccessibilitydraggingdestinationdragnotaccepted.md)
+- [static let NSAccessibilityDraggingDestinationDropAllowed: NSAccessibility.Notification](nsaccessibility-swift.struct/notification/nsaccessibilitydraggingdestinationdropallowed.md)
+- [static let NSAccessibilityDraggingDestinationDropNotAllowed: NSAccessibility.Notification](nsaccessibility-swift.struct/notification/nsaccessibilitydraggingdestinationdropnotallowed.md)
+- [static let NSAccessibilityDraggingSourceDragBegan: NSAccessibility.Notification](nsaccessibility-swift.struct/notification/nsaccessibilitydraggingsourcedragbegan.md)
+- [static let NSAccessibilityDraggingSourceDragEnded: NSAccessibility.Notification](nsaccessibility-swift.struct/notification/nsaccessibilitydraggingsourcedragended.md)
+- [static let NSAccessibilityTextInputMarkingSessionBegan: NSAccessibility.Notification](nsaccessibility-swift.struct/notification/nsaccessibilitytextinputmarkingsessionbegan.md)
+- [static let NSAccessibilityTextInputMarkingSessionEnded: NSAccessibility.Notification](nsaccessibility-swift.struct/notification/nsaccessibilitytextinputmarkingsessionended.md)
 ### Initializers
 - [init(rawValue: String)](nsaccessibility-swift.struct/notification/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
@@ -94,6 +104,7 @@ struct Notification
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

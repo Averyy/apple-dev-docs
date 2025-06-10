@@ -1,6 +1,6 @@
 # xpc_main(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Starts listening for incoming connections and processes them with the specified event handler.

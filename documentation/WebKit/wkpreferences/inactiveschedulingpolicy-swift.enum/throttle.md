@@ -1,6 +1,6 @@
 # WKPreferences.InactiveSchedulingPolicy.throttle
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A policy where a web view that’s not in a window limits processing, but does not fully suspend tasks.

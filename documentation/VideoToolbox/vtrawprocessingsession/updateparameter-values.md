@@ -1,6 +1,6 @@
 # updateParameter(values:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: method
 
 Sets the value for one or more of the processing parameters.

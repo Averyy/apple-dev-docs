@@ -9,7 +9,7 @@ An instruction that indicates scanning proceeds normally and the user needs no c
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

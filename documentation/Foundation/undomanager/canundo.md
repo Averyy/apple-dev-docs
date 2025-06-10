@@ -17,6 +17,7 @@ A Boolean value that indicates whether the manager has any actions to undo.
 ## Declaration
 
 ```swift
+@MainActor
 var canUndo: Bool { get }
 ```
 

@@ -1,6 +1,6 @@
 # tierIdentifiers
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A list of content from your catalog that the subscriber can access.

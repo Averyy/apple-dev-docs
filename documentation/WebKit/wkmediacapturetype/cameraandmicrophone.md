@@ -1,6 +1,6 @@
 # WKMediaCaptureType.cameraAndMicrophone
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A media device or devices that can capture audio and video.

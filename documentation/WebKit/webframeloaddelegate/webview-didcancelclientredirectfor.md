@@ -1,6 +1,6 @@
 # webView(_:didCancelClientRedirectFor:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when a client redirect is cancelled.

@@ -28,6 +28,9 @@ object GameCenterAchievementResponse
   The request body you use to update a Game Center achievement.
 - [object GameCenterAchievementsResponse](gamecenterachievementsresponse.md)
   A response that contains a list of Game Center achievement resources.
+- [object GameCenterAchievementActivityLinkageRequest](gamecenterachievementactivitylinkagerequest.md)
+- [object GameCenterAchievementLocalizationsLinkagesResponse](gamecenterachievementlocalizationslinkagesresponse.md)
+- [object GameCenterAchievementReleasesLinkagesResponse](gamecenterachievementreleaseslinkagesresponse.md)
 
 
 ---

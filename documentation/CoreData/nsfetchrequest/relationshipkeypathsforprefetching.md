@@ -22,7 +22,7 @@ var relationshipKeyPathsForPrefetching: [String]? { get set }
 
 #### Discussion
 
-This property is an array of relationship key-path strings in NSKeyValueCoding notation (as you typically use with [`value(forKeyPath:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/value(forKeyPath:))). The default value is an empty array (no prefetching).
+This property is an array of relationship key-path strings in NSKeyValueCoding notation (as you typically use with doc://com.apple.documentation/documentation/objectivec/nsobject/1416468-value). The default value is an empty array (no prefetching).
 
 Prefetching allows Core Data to obtain related objects in a single fetch (per entity), rather than incurring subsequent access to the store for each individual record as their faults are tripped. For example, given an Employee entity with a relationship to a Department entity, suppose you fetch all the employees, and then for each print out their name and the name of the department to which they belong. In this case, a fault might be fired for each individual Department object. This can represent a significant overhead. You can avoid this by prefetching the department relationship in the Employee fetch, as illustrated in Listing 1.
 

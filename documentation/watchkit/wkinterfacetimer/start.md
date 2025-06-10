@@ -1,6 +1,6 @@
 # start()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Begins updates to the timer’s display.

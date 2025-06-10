@@ -24,8 +24,8 @@ class UITouch
 - [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
 - [Implementing a Continuous Gesture Recognizer](implementing-a-continuous-gesture-recognizer.md)
 - [Implementing a Discrete Gesture Recognizer](implementing-a-discrete-gesture-recognizer.md)
-- [Implementing a Multi-Touch app](implementing-a-multi-touch-app.md)
 - [Computing the perpendicular force of Apple Pencil](computing-the-perpendicular-force-of-apple-pencil.md)
+- [Implementing a Multi-Touch app](implementing-a-multi-touch-app.md)
 
 #### Overview
 

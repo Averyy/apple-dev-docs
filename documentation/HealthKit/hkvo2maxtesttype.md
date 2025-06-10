@@ -32,6 +32,8 @@ VO2 max represents the maximal oxygen consumption during incremental exercise. V
   A calculation that estimates VO2 max rate based on low-intensity exercise.
 - [HKVO2MaxTestType.predictionNonExercise](hkvo2maxtesttype/predictionnonexercise.md)
   A calculation that estimates VO2 max rate without any exercise.
+### Enumeration Cases
+- [HKVO2MaxTestType.predictionStepTest](hkvo2maxtesttype/predictionsteptest.md)
 ### Initializers
 - [init?(rawValue: Int)](hkvo2maxtesttype/init(rawvalue:).md)
 
@@ -43,6 +45,7 @@ VO2 max represents the maximal oxygen consumption during incremental exercise. V
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

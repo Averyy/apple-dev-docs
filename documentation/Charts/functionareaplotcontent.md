@@ -25,6 +25,7 @@
 - [ChartContent](chartcontent.md)
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

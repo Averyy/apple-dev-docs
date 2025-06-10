@@ -1,4 +1,4 @@
-# Tips.Action
+# Action
 
 **Framework**: TipKit  
 **Kind**: struct
@@ -26,7 +26,7 @@ Use actions to provide additional help and guidance for people looking to get st
 
 You create an action by providing an `id` and a `title`. The `id` is a string that uniquely identifies the action. The `title` is text that displays as the label on the button.
 
-You can pass a function for the system to call when the action triggers by setting the `perform` attribute in the [`init(id:title:perform:)`](tips/action/init(id:title:perform:).md) initializer. Or you can set the action parameter in the [`init(_:arrowEdge:action:)`](tipview/init(_:arrowedge:action:)-ztv8.md) initializer of your [`TipView`](tipview.md).
+You can pass a function for the system to call when the action triggers by setting the `perform` attribute in the [`init(id:title:perform:)`](tips/action/init(id:title:perform:).md) initializer. Or you can set the action parameter in the [`init(_:arrowEdge:action:)`](tipview/init(_:arrowedge:action:).md) initializer of your [`TipView`](tipview.md).
 
 ## Topics
 

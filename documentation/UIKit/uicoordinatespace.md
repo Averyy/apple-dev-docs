@@ -8,9 +8,9 @@ A set of methods for converting between different frames of reference on a scree
 **Availability**:
 - iOS ?+
 - iPadOS ?+
-- Mac Catalyst ?+
 - tvOS ?+
 - visionOS ?+
+- watchOS ?+
 
 ## Declaration
 
@@ -60,6 +60,7 @@ When implementing the methods of this protocol, you must convert coordinate valu
 - [UIActionSheet](uiactionsheet.md)
 - [UIActivityIndicatorView](uiactivityindicatorview.md)
 - [UIAlertView](uialertview.md)
+- [UIBackgroundExtensionView](uibackgroundextensionview.md)
 - [UIButton](uibutton.md)
 - [UICalendarView](uicalendarview.md)
 - [UICollectionReusableView](uicollectionreusableview.md)

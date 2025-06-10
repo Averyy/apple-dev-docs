@@ -1,6 +1,6 @@
 # SVG_LENGTHTYPE_PX
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

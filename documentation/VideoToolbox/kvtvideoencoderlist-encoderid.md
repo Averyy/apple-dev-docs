@@ -1,6 +1,6 @@
 # kVTVideoEncoderList_EncoderID
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A key that identifies the encoder ID.

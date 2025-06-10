@@ -18,7 +18,7 @@ enum Code
 
 ## Topics
 
-### Enumeration Values
+### Error types
 - [APActivationPayloadError.Code.doesNotMatch](apactivationpayloaderror/code/doesnotmatch.md)
   The provided URL doesn’t match the registered App Clip URL.
 - [APActivationPayloadError.Code.disallowed](apactivationpayloaderror/code/disallowed.md)
@@ -34,6 +34,7 @@ enum Code
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

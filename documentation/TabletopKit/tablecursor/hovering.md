@@ -3,7 +3,7 @@
 **Framework**: TabletopKit  
 **Kind**: property
 
-The cursor’s current position, relative to the table or a piece of equipment.
+The current destination for the equipment, if the interaction were to end now. `nil` if no destination is currently available.
 
 **Availability**:
 - visionOS 2.0+
@@ -17,7 +17,7 @@ var hovering: TabletopInteraction.Destination?
 ## See Also
 
 - [let controlledEquipmentPose: EquipmentPose3D](tablecursor/controlledequipmentpose.md)
-  Pose relative to the the table
+  The identifier of the equipment and the pose of the equipment in table space.
 
 
 ---

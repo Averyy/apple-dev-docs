@@ -1,6 +1,6 @@
 # Reducing the rendering cost of your UI on visionOS
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Optimize your 2D user interface rendering on visionOS.
 

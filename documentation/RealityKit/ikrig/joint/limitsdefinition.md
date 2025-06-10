@@ -10,6 +10,7 @@ A definition of joint rotation limits.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -23,8 +24,6 @@ struct LimitsDefinition
 Limit angles are defined as relative to the rest pose.
 
 > ❗ **Important**: The minimum angles need to be less than the maximum angles.
-
-The minimum angles need to be less than the maximum angles.
 
 ## Topics
 

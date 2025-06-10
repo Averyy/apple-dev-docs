@@ -1,6 +1,6 @@
 # labelsHidden()
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Hides the labels of any controls contained within this view.

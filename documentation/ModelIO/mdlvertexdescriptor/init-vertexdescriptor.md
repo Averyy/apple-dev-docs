@@ -25,7 +25,7 @@ A new vertex descriptor that is an indpendent copy of the specified vertex descr
 
 #### Discussion
 
-A vertex descriptor does not own vertex data—vertex data belongs to the [`vertexBuffers`](mdlmesh/vertexbuffers.md) property of the mesh that owns a vertex descriptor—so this method does not copy vertex data. A call to the [`copy()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/copy()) or [`copy(with:)`](https://developer.apple.com/documentation/foundation/nscopying/1410311-copy) method uses this initializer to produce a fully independent copy of the original instance.
+A vertex descriptor does not own vertex data—vertex data belongs to the [`vertexBuffers`](mdlmesh/vertexbuffers.md) property of the mesh that owns a vertex descriptor—so this method does not copy vertex data. A call to the [`copy()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/copy()) or [`copy(with:)`](https://developer.apple.com/documentation/Foundation/NSCopying/copy(with:)) method uses this initializer to produce a fully independent copy of the original instance.
 
 ## Parameters
 

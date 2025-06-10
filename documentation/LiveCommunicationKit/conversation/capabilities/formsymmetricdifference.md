@@ -5,6 +5,13 @@
 
 Replaces this set with a new set containing all elements contained in either this set or the given set, but not in both.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift

@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_INTERVAL
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 An integer property that indicates the desired time interval of the activity in seconds.

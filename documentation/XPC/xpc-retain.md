@@ -1,6 +1,6 @@
 # xpc_retain(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 **Availability**:

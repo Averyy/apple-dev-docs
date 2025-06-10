@@ -49,7 +49,7 @@ static var notSupported: GKError.Code { get }
 - [static var matchRequestInvalid: GKError.Code](gkerror/matchrequestinvalid.md)
   The system can’t complete the requested operation because the match request is invalid.
 - [static var notAuthenticated: GKError.Code](gkerror/notauthenticated.md)
-  The system can’t complete the requested operation because the system hasn’t authenticated the local player.
+  The system can’t complete the requested operation because the system hasn’t initialized the local player.
 - [static var parentalControlsBlocked: GKError.Code](gkerror/parentalcontrolsblocked.md)
   The system can’t complete the requested operation because the user disabled this feature in Restrictions.
 

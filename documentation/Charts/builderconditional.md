@@ -30,6 +30,7 @@ Don’t use this type directly. The result builders defined by the framework, li
 ### Conforms To
 - [AxisContent](axiscontent.md)
 - [AxisMark](axismark.md)
+- [Chart3DContent](chart3dcontent.md)
 - [ChartContent](chartcontent.md)
 - [Copyable](../Swift/Copyable.md)
 

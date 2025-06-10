@@ -1,6 +1,6 @@
 # DOM_END_TO_END
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

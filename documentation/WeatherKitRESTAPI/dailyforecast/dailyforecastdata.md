@@ -1,6 +1,6 @@
 # DailyForecast.DailyForecastData
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 The daily forecast information.

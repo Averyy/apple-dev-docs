@@ -1,6 +1,6 @@
 # index(_:offsetBy:limitedBy:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.

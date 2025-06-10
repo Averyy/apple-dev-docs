@@ -15,7 +15,7 @@ Provide a safer experience in your app by detecting and alerting users to nudity
 
 This framework enables an app to check content for nudity. In iOS and macOS, the Sensitive Content Warning user preference or Communication Safety parental control in Screen Time offer people the option to indicate their desire to guard against unexpected or unwanted exposure to images that contain nudity. Provide people with the experience they request in these settings by using SensitiveContentAnalysis to check for sensitive content before displaying it.
 
-Consider situations in which your app acquires externally-sourced images or video, and use this framework to check if the media is sensitive. For example, a messaging app checks each image it receives from a contact. A classroom app evaluates uploads from personal devices to a shared location for classwork submission or other classroom activities.
+Consider situations in which your app acquires externally-sourced images or video, and use this framework to check if the media is sensitive. For example, a messaging app checks each image it receives from a contact. A classroom app evaluates uploads from personal devices to a shared location for classwork submission or other classroom activities. A video-conferencing app analyzes the video streams of all perticipants, live on a call.
 
 ![A flowchart that progresses from left to right. The chart has three areas. The left area contains the label Third party app, with text that indicates the app receives an image over a network. An arrow flows to the right from this area to a box that contains the label Sensitivity Analyzer, which resides in the center. The overall central area of the flowchart is the labeled Sensitive Content Analysis. An arrow flows from the Sensitivity Analyzer box to two other boxes within the center that contain the labels Yes, and No, respectively. Text on the arrow itself reads Is Sensitive, which represents the condition on which the chart’s flow branches. An arrow flows to the right of the Yes box to the right section of the chart, which contains two boxes. The top box contains text that reads: The app avoids displaying sensitive content. A second arrow flows to the right of the No box to another box that reads: The app displays content that’s not sensitive. ](https://docs-assets.developer.apple.com/published/4cbaecea0bbe206c2ac1f4afb2406bdb/sensitivecontentanalysis-1%402x.png)
 
@@ -36,14 +36,17 @@ If the framework determines that some media contains sensitive content, call the
 ### Authorization
 - [com.apple.developer.sensitivecontentanalysis.client](../BundleResources/Entitlements/com.apple.developer.sensitivecontentanalysis.client.md)
   A code-signing entitlement that enables an app to detect nudity in images and video.
-### Content analysis
+### Image and video file analysis
 - [class SCSensitivityAnalyzer](scsensitivityanalyzer.md)
   An object that analyzes media for sensitive content.
 - [enum SCSensitivityAnalysisPolicy](scsensitivityanalysispolicy.md)
   Configurations that represent the way the framework checks for sensitive content and how the app responds.
+### Video stream analysis
+- [class SCVideoStreamAnalyzer](scvideostreamanalyzer.md)
+  An object that monitors a stream of video by analyzing frames for sensitive content.
 ### Analysis results
 - [class SCSensitivityAnalysis](scsensitivityanalysis.md)
-  An object that determines if checked content contains nudity.
+  An object that indicates whether sensitive content is present and includes intervention guidance.
 ### Testing
 - [Testing your app’s response to sensitive media](testing-your-app-s-response-to-sensitive-media.md)
   Trigger your app’s intervention flow by using a special QR code and profile that Apple provides for testing.

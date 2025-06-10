@@ -21,7 +21,7 @@ Add beta testers to a group through App Store Connect or with this API.
 - [Create a Beta Group](post-v1-betagroups.md)
   Create a beta group associated with an app, optionally enabling TestFlight public links.
 - [Modify a Beta Group](patch-v1-betagroups-_id_.md)
-  Modify a beta group’s metadata, including changing its Testflight public link status.
+  Modify a beta group’s metadata, including changing its TestFlight public link status.
 - [Delete a Beta Group](delete-v1-betagroups-_id_.md)
   Delete a beta group and remove beta tester access to associated builds.
 ### Getting Beta Group Information
@@ -31,12 +31,15 @@ Add beta testers to a group through App Store Connect or with this API.
   Get a specific beta group.
 - [Read the App Information of a Beta Group](get-v1-betagroups-_id_-app.md)
   Get the app information for a specific beta group.
+- [GET /v1/betaGroups/{id}/relationships/app](get-v1-betagroups-_id_-relationships-app.md)
 - [Read metrics for beta testers in a beta group](get-v1-betagroups-_id_-metrics-betatesterusages.md)
   Get beta tester usage metrics for a beta group.
 - [Read recruitment criteria for a beta group](get-v1-betagroups-_id_-betarecruitmentcriteria.md)
   Get the recruitment criteria information for a specific beta group.
+- [GET /v1/betaGroups/{id}/relationships/betaRecruitmentCriteria](get-v1-betagroups-_id_-relationships-betarecruitmentcriteria.md)
 - [Read build compatibilty for a beta group](get-v1-betagroups-_id_-betarecruitmentcriterioncompatiblebuildcheck.md)
   Get the build compatibilty information for a specific beta group.
+- [GET /v1/betaGroups/{id}/relationships/betaRecruitmentCriterionCompatibleBuildCheck](get-v1-betagroups-_id_-relationships-betarecruitmentcriterioncompatiblebuildcheck.md)
 ### Adding and Removing Builds and Testers
 - [Add Beta Testers to a Beta Group](post-v1-betagroups-_id_-relationships-betatesters.md)
   Add a specific beta tester to one or more beta groups for beta testing.
@@ -80,6 +83,9 @@ Add beta testers to a group through App Store Connect or with this API.
 - [object BetaPublicLinkUsagesV1MetricResponse](betapubliclinkusagesv1metricresponse.md)
 - [object BetaGroupsResponse](betagroupsresponse.md)
   A response that contains a list of Beta Group resources.
+- [object BetaGroupAppLinkageResponse](betagroupapplinkageresponse.md)
+- [object BetaGroupBetaRecruitmentCriteriaLinkageResponse](betagroupbetarecruitmentcriterialinkageresponse.md)
+- [object BetaGroupBetaRecruitmentCriterionCompatibleBuildCheckLinkageResponse](betagroupbetarecruitmentcriterioncompatiblebuildchecklinkageresponse.md)
 
 ## See Also
 

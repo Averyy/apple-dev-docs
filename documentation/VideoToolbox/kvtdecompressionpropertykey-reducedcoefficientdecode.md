@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_ReducedCoefficientDecode
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Requests approximation during decoding.

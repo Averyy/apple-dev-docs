@@ -1,6 +1,6 @@
 # difference(from:by:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns the difference needed to produce this collection’s ordered elements from the given collection, using the given predicate as an equivalence test.

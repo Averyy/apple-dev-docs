@@ -1,6 +1,6 @@
 # WKError.Code.attributedStringContentFailedToLoad
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 An error that indicates the failure to navigate to web content from an attributed string.

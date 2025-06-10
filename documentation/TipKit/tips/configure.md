@@ -1,6 +1,6 @@
 # configure(_:)
 
-**Framework**: Tipkit  
+**Framework**: TipKit  
 **Kind**: method
 
 Loads and configures the persistent state of all tips in your app.

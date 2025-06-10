@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A response that contains a list of Ids of related resources.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -16,6 +18,7 @@ object AppPromotedPurchasesLinkagesResponse
 
 ### Objects
 - [object AppPromotedPurchasesLinkagesResponse.Data](apppromotedpurchaseslinkagesresponse/data-data.dictionary.md)
+  The data structure that represents an app promoted purchases linkages response resource.
 
 ## See Also
 
@@ -24,6 +27,7 @@ object AppPromotedPurchasesLinkagesResponse
 - [object PromotedPurchaseCreateRequest](promotedpurchasecreaterequest.md)
 - [object PromotedPurchaseUpdateRequest](promotedpurchaseupdaterequest.md)
 - [object AppPromotedPurchasesLinkagesRequest](apppromotedpurchaseslinkagesrequest.md)
+  The data structure that represents an app promoted purchases linkages request resource.
 
 
 ---

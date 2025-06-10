@@ -1,6 +1,6 @@
 # WKWatchConnectivityRefreshBackgroundTask
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A background task used to receive background updates from the Watch Connectivity framework.
@@ -45,6 +45,7 @@ The background watch connectivity task informs you that your app is given backgr
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -70,4 +71,4 @@ The background watch connectivity task informs you that your app is given backgr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkwatchconnectivityrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkwatchconnectivityrefreshbackgroundtask)*

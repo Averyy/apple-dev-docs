@@ -17,6 +17,7 @@ struct Iterator<TypeOfAnchor> where TypeOfAnchor : Anchor
 ### Conforms To
 - [AsyncIteratorProtocol](../Swift/AsyncIteratorProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # billingContact
 
-**Framework**: Applepayontheweb  
+**Framework**: Apple Pay on the Web  
 **Kind**: property
 
 The billing contact selected by the user for this transaction.
@@ -33,4 +33,4 @@ After the user authorizes the transaction with Touch ID, Face ID, or passcode, `
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaypayment/billingcontact)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaypayment/billingcontact)*

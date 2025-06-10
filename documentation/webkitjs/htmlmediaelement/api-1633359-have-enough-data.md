@@ -1,6 +1,6 @@
 # HAVE_ENOUGH_DATA
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 Enough data is available to play at the default playback rate to the end of the media resource without having to pause to rebuffer.

@@ -1,6 +1,6 @@
 # printOperation(with:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a print operation object to print this frame.

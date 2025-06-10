@@ -1,6 +1,6 @@
 # orderedItemsLastVisited(onDay:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns web history items that were last visited on the specified date.

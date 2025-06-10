@@ -13,6 +13,7 @@ Creates a list item with primary and secondary text.
 ## Declaration
 
 ```swift
+@MainActor
 init(text: String?, detailText: String?)
 ```
 

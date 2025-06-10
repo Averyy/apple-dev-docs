@@ -1,950 +1,1417 @@
 {
   "metadata": {
-    "last_updated": "2025-06-08T17:22:35.166397",
-    "total_pages": 171
+    "last_updated": "2025-06-10T21:47:23.050343",
+    "total_pages": 176,
+    "session_id": "2025-06-10T21:47:10.843325"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/DeveloperToolsSupport.json": {
-      "hash": "63c869f2386f450d65b30ae5a3e76fcd1b2ac7cff55128b5ad4afbd076635ee3",
-      "last_checked": "2025-06-08T17:22:34.942274",
-      "status": "unchanged",
-      "etag": "W/\"adb82d66432932ea306c3981ba810a3a\""
+      "hash": "a98a7cafa6e007409cf2e4b2b2cc01d389969f155a1641b954f396faeef59593",
+      "last_checked": "2025-06-10T21:47:11.370979",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"24805df590b7178b0ca0658ff17c2ee0\"",
+      "file_path": "documentation/DeveloperToolsSupport/DeveloperToolsSupport.md"
     },
     "https://developer.apple.com/documentation/DeveloperToolsSupport": {
-      "hash": "63c869f2386f450d65b30ae5a3e76fcd1b2ac7cff55128b5ad4afbd076635ee3",
-      "last_checked": "2025-06-08T17:22:34.942368",
-      "status": "unchanged",
-      "etag": "W/\"adb82d66432932ea306c3981ba810a3a\""
-    },
-    "https://developer.apple.com/tutorials/data/documentation/developertoolssupport.json": {
-      "hash": "2bfb38e644b4219da2b1d253c64afbe6ab2be7ed0af002c099ab40f7cfdcd8d8",
-      "last_checked": "2025-06-05T21:59:27.113405",
-      "status": "unchanged",
-      "etag": "W/\"adb82d66432932ea306c3981ba810a3a\""
+      "hash": "a98a7cafa6e007409cf2e4b2b2cc01d389969f155a1641b954f396faeef59593",
+      "last_checked": "2025-06-10T21:47:11.138797",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"24805df590b7178b0ca0658ff17c2ee0\"",
+      "file_path": "documentation/DeveloperToolsSupport/DeveloperToolsSupport.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/librarycontentprovider.json": {
-      "hash": "04bd86c31eb677750fb648ede7effce7a99be6697da8ce3df7f46f2b3589e98e",
-      "last_checked": "2025-06-05T21:59:28.029219",
-      "status": "unchanged",
-      "etag": "W/\"7602095a4f2f39f936ed1205e2ade275\""
+      "hash": "5120aa5a9c49c7b67c38f7fe6124de86771493de453761daa3d85fd5d7b6be3f",
+      "last_checked": "2025-06-10T21:47:11.776958",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"1a077feece405dcf679215ad5e0b1944\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider": {
-      "hash": "04bd86c31eb677750fb648ede7effce7a99be6697da8ce3df7f46f2b3589e98e",
-      "last_checked": "2025-06-05T21:59:28.029219",
-      "status": "unchanged"
+      "hash": "5120aa5a9c49c7b67c38f7fe6124de86771493de453761daa3d85fd5d7b6be3f",
+      "last_checked": "2025-06-10T21:47:11.777011",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"1a077feece405dcf679215ad5e0b1944\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/libraryitem.json": {
-      "hash": "b4a01bf23e78ad90ce5f17c772c34a830b570065faec979029391463e15b8180",
-      "last_checked": "2025-06-05T21:59:28.539254",
-      "status": "unchanged",
-      "etag": "W/\"01a11544233df7eaebc5f709f663662e\""
+      "hash": "5eebaa833c20ef6f4d03853e5eee4eb82b036e59af179d2c411a3492a473dbea",
+      "last_checked": "2025-06-10T21:47:11.960582",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"d16c14ca8d1247a8055cd96cd58c8893\"",
+      "file_path": "documentation/DeveloperToolsSupport/libraryitem.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/libraryitem": {
-      "hash": "b4a01bf23e78ad90ce5f17c772c34a830b570065faec979029391463e15b8180",
-      "last_checked": "2025-06-05T21:59:28.539254",
-      "status": "unchanged"
+      "hash": "5eebaa833c20ef6f4d03853e5eee4eb82b036e59af179d2c411a3492a473dbea",
+      "last_checked": "2025-06-10T21:47:11.960629",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"d16c14ca8d1247a8055cd96cd58c8893\"",
+      "file_path": "documentation/DeveloperToolsSupport/libraryitem.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewregistry.json": {
-      "hash": "d80e1335e2129a7ffb0adddbe63223490b64c429efc2dd41c6b076adbb1f6ff4",
-      "last_checked": "2025-06-05T21:59:28.955481",
-      "status": "unchanged",
-      "etag": "W/\"63b98c337d8c95efe20eea5cb7a4d02e\""
+      "hash": "4c30f1c57bd48dbc3904799d2635e0e77c9ec73a2142d8877bb8edabaece6aa2",
+      "last_checked": "2025-06-10T21:47:12.113750",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"c609acc4d9bb86fd06c51ce02d2d7c0b\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewregistry.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewregistry": {
-      "hash": "d80e1335e2129a7ffb0adddbe63223490b64c429efc2dd41c6b076adbb1f6ff4",
-      "last_checked": "2025-06-05T21:59:28.955481",
-      "status": "unchanged"
+      "hash": "4c30f1c57bd48dbc3904799d2635e0e77c9ec73a2142d8877bb8edabaece6aa2",
+      "last_checked": "2025-06-10T21:47:12.113815",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"c609acc4d9bb86fd06c51ce02d2d7c0b\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewregistry.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview.json": {
-      "hash": "1d60204874dc870866023100bc011016daec52e9d39479e671fc54bb8c2b3442",
-      "last_checked": "2025-06-05T21:59:29.328636",
-      "status": "unchanged",
-      "etag": "W/\"f8cfefbfa4d915bf5b993e54da89e25a\""
+      "hash": "c232024a1d25aee02376dd92ccaefb1e929b3cb62caba77ef55f6784edac50eb",
+      "last_checked": "2025-06-10T21:47:12.203491",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"48224982729d07e0a670ac58198e496e\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/preview": {
-      "hash": "1d60204874dc870866023100bc011016daec52e9d39479e671fc54bb8c2b3442",
-      "last_checked": "2025-06-05T21:59:29.328636",
-      "status": "unchanged"
+      "hash": "c232024a1d25aee02376dd92ccaefb1e929b3cb62caba77ef55f6784edac50eb",
+      "last_checked": "2025-06-10T21:47:12.203595",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"48224982729d07e0a670ac58198e496e\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewlayout.json": {
-      "hash": "2947874a846f8b8e28e774c4d909afe020b10d9dddb40875118d6eadabdcbe8c",
-      "last_checked": "2025-06-06T19:40:09.908256",
-      "status": "unchanged",
-      "etag": "W/\"234de0d195434aaca7e47b16b0f01e49\""
+      "hash": "b912f3744a66e5e703d2f4d116942612e25afc5dedb82eada9507963d1a00715",
+      "last_checked": "2025-06-10T21:47:12.390064",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"a073c098068a3e6c0025a79ca87695ca\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewlayout.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewlayout": {
-      "hash": "a6829d2b2849c0bad3dd3b004133ffd16f176cfcd384fb28d73eb0419dfde992",
-      "last_checked": "2025-06-05T21:59:29.687356",
-      "status": "unchanged"
+      "hash": "b912f3744a66e5e703d2f4d116942612e25afc5dedb82eada9507963d1a00715",
+      "last_checked": "2025-06-10T21:47:12.390103",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"a073c098068a3e6c0025a79ca87695ca\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewlayout.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewtrait.json": {
-      "hash": "3742e10476222076f323b60aa180fcc9be15ba7152ba8d33f09a48c4661afe85",
-      "last_checked": "2025-06-05T21:59:30.058091",
-      "status": "unchanged",
-      "etag": "W/\"e08704c775769b9e2c697dc171ea8404\""
+      "hash": "b67e87112b4b0f6223d4688b300f83de668b939a5d2d569c259931d17d6f5ff5",
+      "last_checked": "2025-06-10T21:47:12.495943",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"1361e236d545ff2bae2b7be818cea2be\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewtrait": {
-      "hash": "3742e10476222076f323b60aa180fcc9be15ba7152ba8d33f09a48c4661afe85",
-      "last_checked": "2025-06-05T21:59:30.058091",
-      "status": "unchanged"
+      "hash": "b67e87112b4b0f6223d4688b300f83de668b939a5d2d569c259931d17d6f5ff5",
+      "last_checked": "2025-06-10T21:47:12.495985",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"1361e236d545ff2bae2b7be818cea2be\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/colorresource.json": {
-      "hash": "1cb55e34d4f225ec6a8f800e6805aef977b0401375c1c6cb63085addb31ff63b",
-      "last_checked": "2025-06-05T21:59:30.450742",
-      "status": "unchanged",
-      "etag": "W/\"c9aafac1d9a763e9d6f61adedda2e31d\""
+      "hash": "f3b1c7406d948e600048d0158cf83454bf39eb1cd0bfd9fdfeb221405ff1d34b",
+      "last_checked": "2025-06-10T21:47:12.581178",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"2a624a4c5dd4a8fa3982d2da8dc2079f\"",
+      "file_path": "documentation/DeveloperToolsSupport/colorresource.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/colorresource": {
-      "hash": "1cb55e34d4f225ec6a8f800e6805aef977b0401375c1c6cb63085addb31ff63b",
-      "last_checked": "2025-06-05T21:59:30.450742",
-      "status": "unchanged"
+      "hash": "f3b1c7406d948e600048d0158cf83454bf39eb1cd0bfd9fdfeb221405ff1d34b",
+      "last_checked": "2025-06-10T21:47:12.581212",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"2a624a4c5dd4a8fa3982d2da8dc2079f\"",
+      "file_path": "documentation/DeveloperToolsSupport/colorresource.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/imageresource.json": {
-      "hash": "7f47042197d50c5d58d4665bc400cc17f5c6d05911d92ff198849cb9746e380b",
-      "last_checked": "2025-06-05T21:59:30.853888",
-      "status": "unchanged",
-      "etag": "W/\"1e562e3459295597067e7ed012a0e6e1\""
+      "hash": "34e5700bcbadcaa9f6d3a4dee61d955b7304fce986ac553ef6b34770d5e3dd5f",
+      "last_checked": "2025-06-10T21:47:12.733575",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"b6975a0f775da821f616a9eafa914269\"",
+      "file_path": "documentation/DeveloperToolsSupport/imageresource.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/imageresource": {
-      "hash": "7f47042197d50c5d58d4665bc400cc17f5c6d05911d92ff198849cb9746e380b",
-      "last_checked": "2025-06-05T21:59:30.853888",
-      "status": "unchanged"
+      "hash": "34e5700bcbadcaa9f6d3a4dee61d955b7304fce986ac553ef6b34770d5e3dd5f",
+      "last_checked": "2025-06-10T21:47:12.733703",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"b6975a0f775da821f616a9eafa914269\"",
+      "file_path": "documentation/DeveloperToolsSupport/imageresource.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewcamera.json": {
-      "hash": "ab21fe9705db3d693e59133805e67f59f1e839d7f67edbac3750dc65ec88e818",
-      "last_checked": "2025-06-05T21:59:31.235321",
-      "status": "unchanged",
-      "etag": "W/\"e9d67620fad1d2ae883e9c6f66102421\""
+      "hash": "b4e2a7168c8fd019e11004219a12f5ea5f2d39d15c3e6127a381aba50e6a2c94",
+      "last_checked": "2025-06-10T21:47:12.991168",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"34644a7fb492b81fddd1c0a84b3543be\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamera.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewcamera": {
-      "hash": "ab21fe9705db3d693e59133805e67f59f1e839d7f67edbac3750dc65ec88e818",
-      "last_checked": "2025-06-05T21:59:31.235321",
-      "status": "unchanged"
+      "hash": "b4e2a7168c8fd019e11004219a12f5ea5f2d39d15c3e6127a381aba50e6a2c94",
+      "last_checked": "2025-06-10T21:47:12.991215",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"34644a7fb492b81fddd1c0a84b3543be\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamera.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewcamerabuilder.json": {
-      "hash": "3619ed7616a6f203c478d6b6ece5182b37e7f87be141e775eda3819d202a1bd0",
-      "last_checked": "2025-06-05T21:59:31.611016",
-      "status": "unchanged",
-      "etag": "W/\"e5ba5d8da5c453021370e6b34523acb4\""
+      "hash": "4bda12be23b2580678dcf7495624017b682d990b68a6a7606ea66f94e96d96ee",
+      "last_checked": "2025-06-10T21:47:13.073257",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"dda9abd3825e3db3b595ac5e9e1624c3\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamerabuilder.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewcamerabuilder": {
-      "hash": "3619ed7616a6f203c478d6b6ece5182b37e7f87be141e775eda3819d202a1bd0",
-      "last_checked": "2025-06-05T21:59:31.611016",
-      "status": "unchanged"
+      "hash": "4bda12be23b2580678dcf7495624017b682d990b68a6a7606ea66f94e96d96ee",
+      "last_checked": "2025-06-10T21:47:13.073300",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"dda9abd3825e3db3b595ac5e9e1624c3\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamerabuilder.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewbodybuilder.json": {
-      "hash": "6ec2209b790b6c29e8b9fd10f67bde2adb552712e2e359c5df48b7962ee60e4b",
-      "last_checked": "2025-06-05T21:59:31.996130",
-      "status": "unchanged",
-      "etag": "W/\"431523199b2749290a1c92e7f7e88048\""
+      "hash": "fdd216a490e62984845f6495c4cfe0640d5b40a4add4e8d6abaebc21dadcbd42",
+      "last_checked": "2025-06-10T21:47:13.271137",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"3af419c4a5a124516b9a8658bcc1cdf7\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewbodybuilder.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewbodybuilder": {
-      "hash": "6ec2209b790b6c29e8b9fd10f67bde2adb552712e2e359c5df48b7962ee60e4b",
-      "last_checked": "2025-06-05T21:59:31.996130",
-      "status": "unchanged"
+      "hash": "fdd216a490e62984845f6495c4cfe0640d5b40a4add4e8d6abaebc21dadcbd42",
+      "last_checked": "2025-06-10T21:47:13.271167",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"3af419c4a5a124516b9a8658bcc1cdf7\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewbodybuilder.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewmacrobodybuilder.json": {
-      "hash": "3f086e1cfdec29a169649daf0b0376d3e6a5642a609c6c6b6749ab30cf268009",
-      "last_checked": "2025-06-05T21:59:32.381626",
-      "status": "unchanged",
-      "etag": "W/\"4fecaedf5104ea3892efbd7fec76a53f\""
+      "hash": "bba7bfef6de669408bb1302a94a58e93a8d16f2e37fcc6d908cc395393b41ce6",
+      "last_checked": "2025-06-10T21:47:13.428963",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"1c58372354ca9f68c67c0816a30242e8\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewmacrobodybuilder.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewmacrobodybuilder": {
-      "hash": "3f086e1cfdec29a169649daf0b0376d3e6a5642a609c6c6b6749ab30cf268009",
-      "last_checked": "2025-06-05T21:59:32.381626",
-      "status": "unchanged"
+      "hash": "bba7bfef6de669408bb1302a94a58e93a8d16f2e37fcc6d908cc395393b41ce6",
+      "last_checked": "2025-06-10T21:47:13.429007",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"1c58372354ca9f68c67c0816a30242e8\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewmacrobodybuilder.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewunavailable.json": {
-      "hash": "7d08eaae81eca71e2e427c26d43707171d0e037b79907621080af5e1960c380e",
-      "last_checked": "2025-06-05T21:59:32.796706",
-      "status": "unchanged",
-      "etag": "W/\"41280a9c33f14a5f50a1adf7e4b2270d\""
+      "hash": "1c46f444c2fe985202ec8091899de5e6516de629a05bb00d0ac1427e11a44179",
+      "last_checked": "2025-06-10T21:47:13.588259",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"d5c6a72a4e5a44597103d71ff5c63411\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewunavailable.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewunavailable": {
-      "hash": "7d08eaae81eca71e2e427c26d43707171d0e037b79907621080af5e1960c380e",
-      "last_checked": "2025-06-05T21:59:32.796706",
-      "status": "unchanged"
+      "hash": "1c46f444c2fe985202ec8091899de5e6516de629a05bb00d0ac1427e11a44179",
+      "last_checked": "2025-06-10T21:47:13.588308",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"d5c6a72a4e5a44597103d71ff5c63411\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewunavailable.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/librarycontentprovider/views.json": {
-      "hash": "f4564c3dc95b21540589d9c9fc5694ca30daefff8906ae8ceec2f935cee684dd",
-      "last_checked": "2025-06-05T21:59:33.173338",
-      "status": "unchanged",
-      "etag": "W/\"2b84cee356357097213411b8b86cff48\""
+      "hash": "4bce4e83b4ff11080a068cf2e630d95708cbb5567db24dc0a4ad74158da6ced2",
+      "last_checked": "2025-06-10T21:47:13.681699",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"10eebf0f9295fe69825302dce7894e6d\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider/views.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider/views": {
-      "hash": "f4564c3dc95b21540589d9c9fc5694ca30daefff8906ae8ceec2f935cee684dd",
-      "last_checked": "2025-06-05T21:59:33.173338",
-      "status": "unchanged"
+      "hash": "4bce4e83b4ff11080a068cf2e630d95708cbb5567db24dc0a4ad74158da6ced2",
+      "last_checked": "2025-06-10T21:47:13.681939",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"10eebf0f9295fe69825302dce7894e6d\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider/views.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/librarycontentprovider/modifiers(base:).json": {
-      "hash": "feba42d061503ebf96213169c3a6c563dd500705cb311c9c80e6e76ed6efda3a",
-      "last_checked": "2025-06-05T21:59:33.556757",
-      "status": "unchanged",
-      "etag": "W/\"544ade31db0abb3879fe84080a64365a\""
+      "hash": "f999f33322110dd617576f1e343447e4a3c63c983d904350827dc87d3134484c",
+      "last_checked": "2025-06-10T21:47:13.813204",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"49dad96b85fd831c69d5176be6375111\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider/modifiers-base.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider/modifiers(base:)": {
-      "hash": "feba42d061503ebf96213169c3a6c563dd500705cb311c9c80e6e76ed6efda3a",
-      "last_checked": "2025-06-05T21:59:33.556757",
-      "status": "unchanged"
+      "hash": "f999f33322110dd617576f1e343447e4a3c63c983d904350827dc87d3134484c",
+      "last_checked": "2025-06-10T21:47:13.813254",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"49dad96b85fd831c69d5176be6375111\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider/modifiers-base.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/librarycontentprovider/modifierbase.json": {
-      "hash": "4ea52bf54ec91531fe476a32f111b508a3d45dc78c424b2bbf97b5d82f0527b0",
-      "last_checked": "2025-06-05T21:59:33.936441",
-      "status": "unchanged",
-      "etag": "W/\"120028b23bc5abe4398830f3047e59f6\""
+      "hash": "534d205fddf6285f1208a3fb4aed9ce70b9bae8eb63259e0f0444f35c80d2cda",
+      "last_checked": "2025-06-10T21:47:13.925142",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"a521fa873d68d42cc66a3294ed0251f5\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider/modifierbase.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider/modifierbase": {
-      "hash": "4ea52bf54ec91531fe476a32f111b508a3d45dc78c424b2bbf97b5d82f0527b0",
-      "last_checked": "2025-06-05T21:59:33.936441",
-      "status": "unchanged"
+      "hash": "534d205fddf6285f1208a3fb4aed9ce70b9bae8eb63259e0f0444f35c80d2cda",
+      "last_checked": "2025-06-10T21:47:13.925183",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"a521fa873d68d42cc66a3294ed0251f5\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentprovider/modifierbase.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/librarycontentbuilder.json": {
-      "hash": "d50796a6417a01aad786befe2784f978bb0d8f7e2e879331c4c8b981b631835d",
-      "last_checked": "2025-06-05T21:59:34.310437",
-      "status": "unchanged",
-      "etag": "W/\"7aca41d1f0ff3eda8ef026c716ac6ac7\""
+      "hash": "1d5c0394bb4550392f8fc94f48844755d275f98b21f5089016eb55a8250d3fcb",
+      "last_checked": "2025-06-10T21:47:14.028548",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"4c1deb491bcaedbbdc5ab9c1bcec2f93\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentbuilder.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/librarycontentbuilder": {
-      "hash": "d50796a6417a01aad786befe2784f978bb0d8f7e2e879331c4c8b981b631835d",
-      "last_checked": "2025-06-05T21:59:34.310437",
-      "status": "unchanged"
+      "hash": "1d5c0394bb4550392f8fc94f48844755d275f98b21f5089016eb55a8250d3fcb",
+      "last_checked": "2025-06-10T21:47:14.028590",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"4c1deb491bcaedbbdc5ab9c1bcec2f93\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentbuilder.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/libraryitem/init(_:visible:title:category:matchingsignature:).json": {
-      "hash": "5aba63fab7d1901c5382a3dabfa671339fe3b5d371114dd73b2fdb54a1f98733",
-      "last_checked": "2025-06-05T21:59:34.706470",
-      "status": "unchanged",
-      "etag": "W/\"0a79309f094bc83572cdf4a7c12dce75\""
+      "hash": "a5671d7c0c076b05661698baccef09f423f45738a48b24ce915c139a1a636abf",
+      "last_checked": "2025-06-10T21:47:14.175486",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"71558f79e0e6c08d19c8d1c219ea8289\"",
+      "file_path": "documentation/DeveloperToolsSupport/libraryitem/init-visibletitlecategorymatchingsignature.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/libraryitem/init(_:visible:title:category:matchingsignature:)": {
-      "hash": "5aba63fab7d1901c5382a3dabfa671339fe3b5d371114dd73b2fdb54a1f98733",
-      "last_checked": "2025-06-05T21:59:34.706470",
-      "status": "unchanged"
+      "hash": "a5671d7c0c076b05661698baccef09f423f45738a48b24ce915c139a1a636abf",
+      "last_checked": "2025-06-10T21:47:14.175528",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"71558f79e0e6c08d19c8d1c219ea8289\"",
+      "file_path": "documentation/DeveloperToolsSupport/libraryitem/init-visibletitlecategorymatchingsignature.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/libraryitem/category.json": {
-      "hash": "a2da05f51a043b88a2a9eff1386af75a03f706d0e85e00748d55df4a27f311b5",
-      "last_checked": "2025-06-05T21:59:35.084384",
-      "status": "unchanged",
-      "etag": "W/\"d8240fe3c2a6f491b2d9eb61fdf0d62c\""
+      "hash": "4fa4533b00ab2119d7850d3d3b6a2f6dba59e78a5013c34b60c0707bd2b25281",
+      "last_checked": "2025-06-10T21:47:14.291884",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"f8da79baafa493d572b013b4d04276d3\"",
+      "file_path": "documentation/DeveloperToolsSupport/libraryitem/category.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/libraryitem/category": {
-      "hash": "a2da05f51a043b88a2a9eff1386af75a03f706d0e85e00748d55df4a27f311b5",
-      "last_checked": "2025-06-05T21:59:35.084384",
-      "status": "unchanged"
+      "hash": "4fa4533b00ab2119d7850d3d3b6a2f6dba59e78a5013c34b60c0707bd2b25281",
+      "last_checked": "2025-06-10T21:47:14.291925",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"f8da79baafa493d572b013b4d04276d3\"",
+      "file_path": "documentation/DeveloperToolsSupport/libraryitem/category.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewregistry/column.json": {
-      "hash": "c32e708d29e5633c65b848180437c4a2ec33047ccc7334c5d6c5a73fbbef20d4",
-      "last_checked": "2025-06-05T21:59:35.507255",
-      "status": "unchanged",
-      "etag": "W/\"7df14ee01f1a82526a559e6ceb3c91bc\""
+      "hash": "b3dd4ae51b2bc05013f083c507d89e545147570de2c6c3e0eb3fb6b17a2e3eb8",
+      "last_checked": "2025-06-10T21:47:14.488865",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"f70c1ad618d0369328292a8b77db6a1f\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewregistry/column.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewregistry/column": {
-      "hash": "c32e708d29e5633c65b848180437c4a2ec33047ccc7334c5d6c5a73fbbef20d4",
-      "last_checked": "2025-06-05T21:59:35.507255",
-      "status": "unchanged"
+      "hash": "b3dd4ae51b2bc05013f083c507d89e545147570de2c6c3e0eb3fb6b17a2e3eb8",
+      "last_checked": "2025-06-10T21:47:14.488907",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"f70c1ad618d0369328292a8b77db6a1f\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewregistry/column.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewregistry/fileid.json": {
-      "hash": "88d71104c25e3307949fb103c1fac215e183b9926ac5f0fb3acc65bf6b15f681",
-      "last_checked": "2025-06-05T21:59:35.892339",
-      "status": "unchanged",
-      "etag": "W/\"a5fd58a61b026e27e63ca2e41ec2ae4d\""
+      "hash": "a94dbc44f8310aa1febcedc3a2ea65b5b3e61ce4b105e558a79fc9409ac0984f",
+      "last_checked": "2025-06-10T21:47:14.575805",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"e98564c36571b161543ca1dd868be320\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewregistry/fileid.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewregistry/fileid": {
-      "hash": "88d71104c25e3307949fb103c1fac215e183b9926ac5f0fb3acc65bf6b15f681",
-      "last_checked": "2025-06-05T21:59:35.892339",
-      "status": "unchanged"
+      "hash": "a94dbc44f8310aa1febcedc3a2ea65b5b3e61ce4b105e558a79fc9409ac0984f",
+      "last_checked": "2025-06-10T21:47:14.575842",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"e98564c36571b161543ca1dd868be320\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewregistry/fileid.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewregistry/line.json": {
-      "hash": "796504ed43a771b7fbe820d53b372776fbf4e2123bf8d535ac6f845c223d5306",
-      "last_checked": "2025-06-05T21:59:36.253480",
-      "status": "unchanged",
-      "etag": "W/\"f3baf315628134345e5cc132e8f643da\""
+      "hash": "de1df8d96258f76637b0c5c5181f4e19333f71dab0c54b965c2244aa2dae5a2d",
+      "last_checked": "2025-06-10T21:47:14.690749",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"07a8e66571b8c3701af30bf06d5d4df0\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewregistry/line.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewregistry/line": {
-      "hash": "796504ed43a771b7fbe820d53b372776fbf4e2123bf8d535ac6f845c223d5306",
-      "last_checked": "2025-06-05T21:59:36.253480",
-      "status": "unchanged"
+      "hash": "de1df8d96258f76637b0c5c5181f4e19333f71dab0c54b965c2244aa2dae5a2d",
+      "last_checked": "2025-06-10T21:47:14.690785",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"07a8e66571b8c3701af30bf06d5d4df0\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewregistry/line.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewregistry/preview.json": {
-      "hash": "df7dc356761504652b8ea472422cb98b7fd73ca50faaa2fc5318d79b18162911",
-      "last_checked": "2025-06-05T21:59:36.614877",
-      "status": "unchanged",
-      "etag": "W/\"a463dd5574ce584767c6e1041dd1a531\""
+      "hash": "0ccb0d349b296570395c906f1faa84ceae841cfd9cf23d237e3ccdc9bae2647b",
+      "last_checked": "2025-06-10T21:47:14.832881",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"b677d2cde66a69a8fc02ed52992768ad\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewregistry/preview.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewregistry/preview": {
-      "hash": "df7dc356761504652b8ea472422cb98b7fd73ca50faaa2fc5318d79b18162911",
-      "last_checked": "2025-06-05T21:59:36.614877",
-      "status": "unchanged"
+      "hash": "0ccb0d349b296570395c906f1faa84ceae841cfd9cf23d237e3ccdc9bae2647b",
+      "last_checked": "2025-06-10T21:47:14.832931",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"b677d2cde66a69a8fc02ed52992768ad\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewregistry/preview.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewregistry/makepreview().json": {
-      "hash": "bd1ddad1dc81c361a32d3f783fc9ef6becb14048fedf4a8b595bd88cb6cc93ea",
-      "last_checked": "2025-06-05T21:59:37.042543",
-      "status": "unchanged",
-      "etag": "W/\"cf9ab0fdb456632f9b15441cd3d101b4\""
+      "hash": "1b388db5495e889b7cecab5e3199af1a63b9c0719d1fb96d76dbb9543e8b7565",
+      "last_checked": "2025-06-10T21:47:14.960886",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"482463e1fe9166517d1257c8909b0f8f\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewregistry/makepreview.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewregistry/makepreview()": {
-      "hash": "bd1ddad1dc81c361a32d3f783fc9ef6becb14048fedf4a8b595bd88cb6cc93ea",
-      "last_checked": "2025-06-05T21:59:37.042543",
-      "status": "unchanged"
+      "hash": "1b388db5495e889b7cecab5e3199af1a63b9c0719d1fb96d76dbb9543e8b7565",
+      "last_checked": "2025-06-10T21:47:14.960928",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"482463e1fe9166517d1257c8909b0f8f\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewregistry/makepreview.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:as:using:widget:contentstates:).json": {
-      "hash": "82273a8b4813eb6afa5dd7bd3e06f1a6a05c8f1f0b30746eb5f40b077e6fc7e3",
-      "last_checked": "2025-06-05T21:59:37.406905",
-      "status": "unchanged",
-      "etag": "W/\"564d1c6ccbdfc05ba02972b77e58a752\""
+      "hash": "fb8095f4ee3608566252dd536504aa866a07eb5cc39abcb89688d25f44650982",
+      "last_checked": "2025-06-10T21:47:15.094029",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"760a58709c808d45384808422a328c89\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-asusingwidgetcontentstates.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:as:using:widget:contentstates:)": {
-      "hash": "82273a8b4813eb6afa5dd7bd3e06f1a6a05c8f1f0b30746eb5f40b077e6fc7e3",
-      "last_checked": "2025-06-05T21:59:37.406905",
-      "status": "unchanged"
+      "hash": "fb8095f4ee3608566252dd536504aa866a07eb5cc39abcb89688d25f44650982",
+      "last_checked": "2025-06-10T21:47:15.094072",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"760a58709c808d45384808422a328c89\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-asusingwidgetcontentstates.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:as:using:widget:timelineprovider:)-1if5u.json": {
-      "hash": "ba09fd1d718387305645bafd351241f9051e6af8b1f7e17bc42ccd984430a93d",
-      "last_checked": "2025-06-05T21:59:37.817079",
-      "status": "unchanged",
-      "etag": "W/\"6cb2405f10bc3f5e5f6910c2ae35186c\""
+      "hash": "aa4e5d748973de7413221fa33c22aa14ac5b9c0814e2dde6ef6540c5328856fe",
+      "last_checked": "2025-06-10T21:47:15.240799",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"5d5a7772b8c1f552adeb4e91a42b9c3c\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-asusingwidgettimelineprovider-1if5u.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:as:using:widget:timelineprovider:)-1if5u": {
-      "hash": "ba09fd1d718387305645bafd351241f9051e6af8b1f7e17bc42ccd984430a93d",
-      "last_checked": "2025-06-05T21:59:37.817079",
-      "status": "unchanged"
+      "hash": "aa4e5d748973de7413221fa33c22aa14ac5b9c0814e2dde6ef6540c5328856fe",
+      "last_checked": "2025-06-10T21:47:15.240849",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"5d5a7772b8c1f552adeb4e91a42b9c3c\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-asusingwidgettimelineprovider-1if5u.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:as:using:widget:timelineprovider:)-5335n.json": {
-      "hash": "5bb8cc25eb06ec521c367c2419f5d3e7d4f44fc4a7c2d442a96fe5ead7494708",
-      "last_checked": "2025-06-05T21:59:38.241452",
-      "status": "unchanged",
-      "etag": "W/\"532f7a8b9e94b88a6c7efa65893b3d24\""
+      "hash": "15329664b5f6942e0f1bc183a47ea976f8ff3246d975c01fb293cd5c578ecade",
+      "last_checked": "2025-06-10T21:47:15.350384",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"c118fb94a48ba747565ad389dc1ea1fd\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-asusingwidgettimelineprovider-5335n.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:as:using:widget:timelineprovider:)-5335n": {
-      "hash": "5bb8cc25eb06ec521c367c2419f5d3e7d4f44fc4a7c2d442a96fe5ead7494708",
-      "last_checked": "2025-06-05T21:59:38.241452",
-      "status": "unchanged"
+      "hash": "15329664b5f6942e0f1bc183a47ea976f8ff3246d975c01fb293cd5c578ecade",
+      "last_checked": "2025-06-10T21:47:15.350428",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"c118fb94a48ba747565ad389dc1ea1fd\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-asusingwidgettimelineprovider-5335n.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:as:widget:timeline:).json": {
-      "hash": "d0a0d9c5b1c2a1daa008dc1c70583485937cec9f19c956623cd9cf5aa231228f",
-      "last_checked": "2025-06-05T21:59:38.596056",
-      "status": "unchanged",
-      "etag": "W/\"d957bcb84901d0437ffe2676fc919765\""
+      "hash": "86a4eab77e6709673147c2eca88e104c16124dc0eb024f9aa42c2abd6dae1724",
+      "last_checked": "2025-06-10T21:47:15.479742",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"bbfa77d1aaf7fda6c326930758bedf21\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-aswidgettimeline.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:as:widget:timeline:)": {
-      "hash": "d0a0d9c5b1c2a1daa008dc1c70583485937cec9f19c956623cd9cf5aa231228f",
-      "last_checked": "2025-06-05T21:59:38.596056",
-      "status": "unchanged"
+      "hash": "86a4eab77e6709673147c2eca88e104c16124dc0eb024f9aa42c2abd6dae1724",
+      "last_checked": "2025-06-10T21:47:15.479800",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"bbfa77d1aaf7fda6c326930758bedf21\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-aswidgettimeline.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:as:widget:timelineprovider:).json": {
-      "hash": "7aabd150880c6c76a60f594d9efc6caf6f4db6236fef8e286c38ea19f36f349e",
-      "last_checked": "2025-06-05T21:59:38.962845",
-      "status": "unchanged",
-      "etag": "W/\"6ecfce0e4a873d4ff08a7b9734007142\""
+      "hash": "89c71d58794cc19b4cec61071714c5b1c2722355971537003e00647a9fe61693",
+      "last_checked": "2025-06-10T21:47:15.571674",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"b39da36273c83e4850b42818e0c10c7e\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-aswidgettimelineprovider.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:as:widget:timelineprovider:)": {
-      "hash": "7aabd150880c6c76a60f594d9efc6caf6f4db6236fef8e286c38ea19f36f349e",
-      "last_checked": "2025-06-05T21:59:38.962845",
-      "status": "unchanged"
+      "hash": "89c71d58794cc19b4cec61071714c5b1c2722355971537003e00647a9fe61693",
+      "last_checked": "2025-06-10T21:47:15.571714",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"b39da36273c83e4850b42818e0c10c7e\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-aswidgettimelineprovider.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:immersionstyle:traits:body:cameras:).json": {
-      "hash": "f9915b979466c67de66a468ac96fe490b2100fd44f89bfaece7fe5d39d1a96c6",
-      "last_checked": "2025-06-05T21:59:39.346864",
-      "status": "unchanged",
-      "etag": "W/\"7eeb338033301cabf5d68bc1abdbec3f\""
+      "hash": "b35387872daca232b402418bab1a0b957a4970087d6f4b64497ee5f886415a17",
+      "last_checked": "2025-06-10T21:47:15.757066",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"65a50ebbae64d263834c464935c259fd\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-immersionstyletraitsbodycameras.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:immersionstyle:traits:body:cameras:)": {
-      "hash": "f9915b979466c67de66a468ac96fe490b2100fd44f89bfaece7fe5d39d1a96c6",
-      "last_checked": "2025-06-05T21:59:39.346864",
-      "status": "unchanged"
+      "hash": "b35387872daca232b402418bab1a0b957a4970087d6f4b64497ee5f886415a17",
+      "last_checked": "2025-06-10T21:47:15.757135",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"65a50ebbae64d263834c464935c259fd\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-immersionstyletraitsbodycameras.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:traits:body:)-158mk.json": {
-      "hash": "e4a50db30e801f3307ea1b5faf1de180159e676fea9023236d18877145eb168e",
-      "last_checked": "2025-06-05T21:59:39.720984",
-      "status": "unchanged",
-      "etag": "W/\"fd7bccdb8605497ae4940b3e1c465077\""
+      "hash": "72c5d6f9b5434a9703d08ff6536f4600c9b300fbea0a4123272b12e163ed45c3",
+      "last_checked": "2025-06-10T21:47:15.854418",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"0b67756e128118335932ad40001a24e2\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-traitsbody-158mk.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:traits:body:)-158mk": {
-      "hash": "e4a50db30e801f3307ea1b5faf1de180159e676fea9023236d18877145eb168e",
-      "last_checked": "2025-06-05T21:59:39.720984",
-      "status": "unchanged"
+      "hash": "72c5d6f9b5434a9703d08ff6536f4600c9b300fbea0a4123272b12e163ed45c3",
+      "last_checked": "2025-06-10T21:47:15.854473",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"0b67756e128118335932ad40001a24e2\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-traitsbody-158mk.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:traits:body:)-2viaf.json": {
-      "hash": "9246caa27380a4f73baad2427113764a74cbef7f189ad67f1d5da620ad2e870c",
-      "last_checked": "2025-06-05T21:59:40.138829",
-      "status": "unchanged",
-      "etag": "W/\"6426bc2880d0db7b6f94134e52ab7675\""
+      "hash": "399c028f509e4047f032759ed69a152351f5675b0ae1cca1f51c92bc867a61fe",
+      "last_checked": "2025-06-10T21:47:16.005086",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"4360ac8fc6c6b6994892e4861e93ac66\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-traitsbody-2viaf.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:traits:body:)-2viaf": {
-      "hash": "9246caa27380a4f73baad2427113764a74cbef7f189ad67f1d5da620ad2e870c",
-      "last_checked": "2025-06-05T21:59:40.138829",
-      "status": "unchanged"
+      "hash": "399c028f509e4047f032759ed69a152351f5675b0ae1cca1f51c92bc867a61fe",
+      "last_checked": "2025-06-10T21:47:16.005125",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"4360ac8fc6c6b6994892e4861e93ac66\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-traitsbody-2viaf.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:traits:body:)-3i54d.json": {
-      "hash": "a7996b625dd30fbb72a4f64201a2530bc05e28e2753dd0515be5a3cb95b31ddc",
-      "last_checked": "2025-06-05T21:59:40.545762",
-      "status": "unchanged",
-      "etag": "W/\"4684e1df4a2e2fe794ecf72166ded5e0\""
+      "hash": "b58389dd9fe59ea9b0f447f1b5ea4d35cc5cdb4bd82730803f0e1e5240f87f79",
+      "last_checked": "2025-06-10T21:47:16.217946",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"d19a563f015bf4f09d13be4ae4ec2c78\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-traitsbody-3i54d.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:traits:body:)-3i54d": {
-      "hash": "a7996b625dd30fbb72a4f64201a2530bc05e28e2753dd0515be5a3cb95b31ddc",
-      "last_checked": "2025-06-05T21:59:40.545762",
-      "status": "unchanged"
+      "hash": "b58389dd9fe59ea9b0f447f1b5ea4d35cc5cdb4bd82730803f0e1e5240f87f79",
+      "last_checked": "2025-06-10T21:47:16.217991",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"d19a563f015bf4f09d13be4ae4ec2c78\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-traitsbody-3i54d.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:traits:body:)-8pemr.json": {
-      "hash": "63f876fca32159a3c54c9ca86177b8dc48930a7f77f838a5a184e6f10179a3ca",
-      "last_checked": "2025-06-05T21:59:40.910421",
-      "status": "unchanged",
-      "etag": "W/\"63091b88a50bf633d64c9826ec43a724\""
+      "hash": "08670d762788f43b1a16c17be35bfa9e731d2aa02248412a3c1bf16b92e7f628",
+      "last_checked": "2025-06-10T21:47:16.310974",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"073f1be46ff9dbcf1c795a365d4a34b8\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-traitsbody-8pemr.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:traits:body:)-8pemr": {
-      "hash": "63f876fca32159a3c54c9ca86177b8dc48930a7f77f838a5a184e6f10179a3ca",
-      "last_checked": "2025-06-05T21:59:40.910421",
-      "status": "unchanged"
+      "hash": "08670d762788f43b1a16c17be35bfa9e731d2aa02248412a3c1bf16b92e7f628",
+      "last_checked": "2025-06-10T21:47:16.311016",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"073f1be46ff9dbcf1c795a365d4a34b8\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-traitsbody-8pemr.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:traits:body:)-941vb.json": {
-      "hash": "0c498c6c465c4a9680a43c1fd183ca4a6b56a6e7adb11257fef1417736228bc4",
-      "last_checked": "2025-06-05T21:59:41.292236",
-      "status": "unchanged",
-      "etag": "W/\"6371f06d4fb6a9227d6d8cb05638683a\""
+      "hash": "b024461f0ab8991bd491e42ec295485ce4ce2514bd2144344bac3f5acebb9c11",
+      "last_checked": "2025-06-10T21:47:16.436327",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"5fc096c42751fa675592f99e928340ee\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-traitsbody-941vb.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:traits:body:)-941vb": {
-      "hash": "0c498c6c465c4a9680a43c1fd183ca4a6b56a6e7adb11257fef1417736228bc4",
-      "last_checked": "2025-06-05T21:59:41.292236",
-      "status": "unchanged"
+      "hash": "b024461f0ab8991bd491e42ec295485ce4ce2514bd2144344bac3f5acebb9c11",
+      "last_checked": "2025-06-10T21:47:16.436392",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"5fc096c42751fa675592f99e928340ee\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-traitsbody-941vb.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:traits:body:cameras:).json": {
-      "hash": "4e8c161ada2a9e4fc7c7cf86f079aaebcdd85f59dc4c19d4d6714ddaec90aff2",
-      "last_checked": "2025-06-05T21:59:41.641893",
-      "status": "unchanged",
-      "etag": "W/\"6bae08fa9f8185a0c42fbef210017d1c\""
+      "hash": "c74e692aa3f4e36315c9c1c91cf44137d8f80fd241048715a8b3a91cf8741772",
+      "last_checked": "2025-06-10T21:47:16.560557",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"b35745fb10063b9ea88ae3482a949fb3\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-traitsbodycameras.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:traits:body:cameras:)": {
-      "hash": "4e8c161ada2a9e4fc7c7cf86f079aaebcdd85f59dc4c19d4d6714ddaec90aff2",
-      "last_checked": "2025-06-05T21:59:41.641893",
-      "status": "unchanged"
+      "hash": "c74e692aa3f4e36315c9c1c91cf44137d8f80fd241048715a8b3a91cf8741772",
+      "last_checked": "2025-06-10T21:47:16.560616",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"b35745fb10063b9ea88ae3482a949fb3\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-traitsbodycameras.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:widget:relevanceentries:).json": {
+      "hash": "dfd993c8a784194710f9a2164aa558299cc6c193cd1a8919499a0d1f9e9ec45b",
+      "last_checked": "2025-06-10T21:47:16.684957",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"ee813dacd69c79ed19a236720a91cc36\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-widgetrelevanceentries.md"
+    },
+    "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:widget:relevanceentries:)": {
+      "hash": "dfd993c8a784194710f9a2164aa558299cc6c193cd1a8919499a0d1f9e9ec45b",
+      "last_checked": "2025-06-10T21:47:16.684996",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"ee813dacd69c79ed19a236720a91cc36\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-widgetrelevanceentries.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:widget:relevanceprovider:).json": {
+      "hash": "08722d041b50e005e21d8f96789a64ed35e9760c7fb584d0832ec5447af0d430",
+      "last_checked": "2025-06-10T21:47:16.856811",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"5298113cd18ca1b7e02d2cc916a2d67b\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-widgetrelevanceprovider.md"
+    },
+    "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:widget:relevanceprovider:)": {
+      "hash": "08722d041b50e005e21d8f96789a64ed35e9760c7fb584d0832ec5447af0d430",
+      "last_checked": "2025-06-10T21:47:16.856845",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"5298113cd18ca1b7e02d2cc916a2d67b\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-widgetrelevanceprovider.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:widget:relevanceprovider:relevance:).json": {
+      "hash": "67b67931716e6bc81131d7b7f33050b3e8d1442022ac17158dcdf6cc927d6788",
+      "last_checked": "2025-06-10T21:47:16.995092",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"235367553ba68b62e59dd17a5311a920\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-widgetrelevanceproviderrelevance.md"
+    },
+    "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:widget:relevanceprovider:relevance:)": {
+      "hash": "67b67931716e6bc81131d7b7f33050b3e8d1442022ac17158dcdf6cc927d6788",
+      "last_checked": "2025-06-10T21:47:16.995147",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"235367553ba68b62e59dd17a5311a920\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-widgetrelevanceproviderrelevance.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/init(_:windowstyle:traits:body:cameras:).json": {
-      "hash": "f1a7f9e226a1877331b66619dc5d46b2878d0c40f7707eff82ab63e623b5d9ee",
-      "last_checked": "2025-06-05T21:59:41.998208",
-      "status": "unchanged",
-      "etag": "W/\"4eae3e970026ade748266379d9c28526\""
+      "hash": "d0a1368ed1c4e26e758d83e0009466b3f7f60d179353197dba15c7f55c98a8dc",
+      "last_checked": "2025-06-10T21:47:17.088978",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"2548e5481d565e4ecdae15a87b42ad8d\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-windowstyletraitsbodycameras.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/preview/init(_:windowstyle:traits:body:cameras:)": {
-      "hash": "f1a7f9e226a1877331b66619dc5d46b2878d0c40f7707eff82ab63e623b5d9ee",
-      "last_checked": "2025-06-05T21:59:41.998208",
-      "status": "unchanged"
+      "hash": "d0a1368ed1c4e26e758d83e0009466b3f7f60d179353197dba15c7f55c98a8dc",
+      "last_checked": "2025-06-10T21:47:17.089029",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"2548e5481d565e4ecdae15a87b42ad8d\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/init-windowstyletraitsbodycameras.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/preview/viewtraits.json": {
-      "hash": "1395a8aa7dac1ade39603b31ef2f42a7a05f0a349b6c6aae6bab7f5be839f141",
-      "last_checked": "2025-06-05T21:59:42.382511",
-      "status": "unchanged",
-      "etag": "W/\"3fa1e89ffb5e22d1dcb02c5a09d1218d\""
+      "hash": "a0d18b9117450b412869bbe7c7aa03669c9e54fe91619970f69c0434d5be1c82",
+      "last_checked": "2025-06-10T21:47:17.203806",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"b0f1ab73cfec4dcd28020811341e5a5c\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/viewtraits.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/preview/viewtraits": {
-      "hash": "1395a8aa7dac1ade39603b31ef2f42a7a05f0a349b6c6aae6bab7f5be839f141",
-      "last_checked": "2025-06-05T21:59:42.382511",
-      "status": "unchanged"
+      "hash": "a0d18b9117450b412869bbe7c7aa03669c9e54fe91619970f69c0434d5be1c82",
+      "last_checked": "2025-06-10T21:47:17.203852",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"b0f1ab73cfec4dcd28020811341e5a5c\"",
+      "file_path": "documentation/DeveloperToolsSupport/preview/viewtraits.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewlayout/device.json": {
-      "hash": "b100d2a389a60754b671a8fc36fe64ba9c28d29d77d9ebccb9429420f8974df4",
-      "last_checked": "2025-06-05T21:59:42.756585",
-      "status": "unchanged",
-      "etag": "W/\"a9daa8e124f03d9cc8d5e56277c5ce19\""
+      "hash": "ba4ca644b76d182cb53b6b4a9f4ad1e93ed57366753eaf443f28cee4ede32a62",
+      "last_checked": "2025-06-10T21:47:17.333511",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"b79095caac6d87870ad32c3d09935762\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewlayout/device.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewlayout/device": {
-      "hash": "b100d2a389a60754b671a8fc36fe64ba9c28d29d77d9ebccb9429420f8974df4",
-      "last_checked": "2025-06-05T21:59:42.756585",
-      "status": "unchanged"
+      "hash": "ba4ca644b76d182cb53b6b4a9f4ad1e93ed57366753eaf443f28cee4ede32a62",
+      "last_checked": "2025-06-10T21:47:17.333549",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"b79095caac6d87870ad32c3d09935762\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewlayout/device.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewlayout/fixed(width:height:).json": {
-      "hash": "bf0ba85bcd7a27d39af1003b9698eedd2848218701a53b1022fb6f5f5ce823f8",
-      "last_checked": "2025-06-05T21:59:43.106191",
-      "status": "unchanged",
-      "etag": "W/\"f28b5df49c81a095b818a41a0467f4c0\""
+      "hash": "a6aff990a6c7026f1f1d2dcd7da1910e52cec4b3c145baf86f93e0031164a33e",
+      "last_checked": "2025-06-10T21:47:17.488472",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"646b6c94ec1fc3022eab1c1db7d253f7\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewlayout/fixed-widthheight.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewlayout/fixed(width:height:)": {
-      "hash": "bf0ba85bcd7a27d39af1003b9698eedd2848218701a53b1022fb6f5f5ce823f8",
-      "last_checked": "2025-06-05T21:59:43.106191",
-      "status": "unchanged"
+      "hash": "a6aff990a6c7026f1f1d2dcd7da1910e52cec4b3c145baf86f93e0031164a33e",
+      "last_checked": "2025-06-10T21:47:17.488506",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"646b6c94ec1fc3022eab1c1db7d253f7\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewlayout/fixed-widthheight.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewlayout/fixed3d(width:height:depth:).json": {
-      "hash": "82ae314b404325adfcbd4d7d9d53b30df738b390f634a4f57f6da83bffe810f6",
-      "last_checked": "2025-06-05T21:59:43.476389",
-      "status": "unchanged",
-      "etag": "W/\"9c65bb56430d5074d7a346720e39dc60\""
+      "hash": "684522ab80c6157145a507c146aab5a3790552f66704c18027a1e497163adf2e",
+      "last_checked": "2025-06-10T21:47:17.590078",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"58753c3212f7782d770eddbd1efea829\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewlayout/fixed3d-widthheightdepth.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewlayout/fixed3d(width:height:depth:)": {
-      "hash": "82ae314b404325adfcbd4d7d9d53b30df738b390f634a4f57f6da83bffe810f6",
-      "last_checked": "2025-06-05T21:59:43.476389",
-      "status": "unchanged"
+      "hash": "684522ab80c6157145a507c146aab5a3790552f66704c18027a1e497163adf2e",
+      "last_checked": "2025-06-10T21:47:17.590112",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"58753c3212f7782d770eddbd1efea829\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewlayout/fixed3d-widthheightdepth.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewlayout/sizethatfits.json": {
-      "hash": "e4ed1538d7c3a1df66da4f3c4712ec61f3bef6551549fe2841f60bcba77a95a8",
-      "last_checked": "2025-06-05T21:59:43.789722",
-      "status": "unchanged",
-      "etag": "W/\"ce717f2aad9c6f60f4c6bf454787b6e0\""
+      "hash": "1d8d5e7698ed94a34a68979c51dbb4de8946bddb39cebdfa695d57941f925325",
+      "last_checked": "2025-06-10T21:47:17.732650",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"eb472e476c4ce5cd589d821cc010c967\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewlayout/sizethatfits.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewlayout/sizethatfits": {
-      "hash": "e4ed1538d7c3a1df66da4f3c4712ec61f3bef6551549fe2841f60bcba77a95a8",
-      "last_checked": "2025-06-05T21:59:43.789722",
-      "status": "unchanged"
+      "hash": "1d8d5e7698ed94a34a68979c51dbb4de8946bddb39cebdfa695d57941f925325",
+      "last_checked": "2025-06-10T21:47:17.732698",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"eb472e476c4ce5cd589d821cc010c967\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewlayout/sizethatfits.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewtrait/init(_:).json": {
-      "hash": "f7383fa4166797d90625a0cc15881efd316c6a6c86d26d5e4f40fec29a0a1b3a",
-      "last_checked": "2025-06-05T21:59:44.164395",
-      "status": "unchanged",
-      "etag": "W/\"e49402b39e09787c5889ac4609f79c6e\""
+      "hash": "7aec0767188d7feaba92a6735f584c7889ece27f5d38e7d9d893585bd89fbe00",
+      "last_checked": "2025-06-10T21:47:17.838652",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"ec72569adc62057ed94d6dd327145c8a\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/init.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewtrait/init(_:)": {
-      "hash": "f7383fa4166797d90625a0cc15881efd316c6a6c86d26d5e4f40fec29a0a1b3a",
-      "last_checked": "2025-06-05T21:59:44.164395",
-      "status": "unchanged"
+      "hash": "7aec0767188d7feaba92a6735f584c7889ece27f5d38e7d9d893585bd89fbe00",
+      "last_checked": "2025-06-10T21:47:17.838720",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"ec72569adc62057ed94d6dd327145c8a\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/init.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewtrait/assistiveaccess.json": {
+      "hash": "a0078c47f74c1cbdf706f5f8c0fda3e46d7300a3cd2d9e7c587fee98ebd687ff",
+      "last_checked": "2025-06-10T21:47:18.100880",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"30de89a8c2d2b147e9c5b6222d99767f\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/assistiveaccess.md"
+    },
+    "https://developer.apple.com/documentation/developertoolssupport/previewtrait/assistiveaccess": {
+      "hash": "a0078c47f74c1cbdf706f5f8c0fda3e46d7300a3cd2d9e7c587fee98ebd687ff",
+      "last_checked": "2025-06-10T21:47:18.100923",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"30de89a8c2d2b147e9c5b6222d99767f\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/assistiveaccess.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewtrait/defaultlayout.json": {
-      "hash": "58d116267ec5091a62d83e92ba0e29b8e7f1df975e019c5a25c586a486145166",
-      "last_checked": "2025-06-05T21:59:44.558967",
-      "status": "unchanged",
-      "etag": "W/\"cc0d0181ec695f7304784bc34390e06e\""
+      "hash": "b595bcb58a0e3daebeba2f6beca68cb9240b0207e28443607761026b0e590389",
+      "last_checked": "2025-06-10T21:47:18.232717",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"279340dc3eb36bff6c2a8581d89c63ba\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/defaultlayout.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewtrait/defaultlayout": {
-      "hash": "58d116267ec5091a62d83e92ba0e29b8e7f1df975e019c5a25c586a486145166",
-      "last_checked": "2025-06-05T21:59:44.558967",
-      "status": "unchanged"
+      "hash": "b595bcb58a0e3daebeba2f6beca68cb9240b0207e28443607761026b0e590389",
+      "last_checked": "2025-06-10T21:47:18.232763",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"279340dc3eb36bff6c2a8581d89c63ba\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/defaultlayout.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewtrait/landscapeleft.json": {
-      "hash": "57f38f0147f198fb61ee670cb77ead186a35b2a15947d0d71627f7aab8986d4d",
-      "last_checked": "2025-06-05T21:59:44.971179",
-      "status": "unchanged",
-      "etag": "W/\"66f57d3872329ad95cd7e3dd6e905613\""
+      "hash": "8ceeb1b65f4f1f0e6bc852c36ef30946160ee586ba128a929d9cd3b34c8ed90e",
+      "last_checked": "2025-06-10T21:47:18.330832",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"fd6e045c99a49d3e06dfff477cee88c8\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/landscapeleft.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewtrait/landscapeleft": {
-      "hash": "57f38f0147f198fb61ee670cb77ead186a35b2a15947d0d71627f7aab8986d4d",
-      "last_checked": "2025-06-05T21:59:44.971179",
-      "status": "unchanged"
+      "hash": "8ceeb1b65f4f1f0e6bc852c36ef30946160ee586ba128a929d9cd3b34c8ed90e",
+      "last_checked": "2025-06-10T21:47:18.330879",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"fd6e045c99a49d3e06dfff477cee88c8\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/landscapeleft.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewtrait/landscaperight.json": {
-      "hash": "80e4026a4368f9d670890095c5f3c484bb7ba56ea5fcd64b8bb540900cc99e7a",
-      "last_checked": "2025-06-05T21:59:45.324091",
-      "status": "unchanged",
-      "etag": "W/\"3d40721b02bd84c26445e309b8cf3ddc\""
+      "hash": "7b72547331077008b96a960b41ec9c0a40a782fe1ab64af1b6c448bcedf7234a",
+      "last_checked": "2025-06-10T21:47:18.421744",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"83e05d5e930c35619bed7d9429a6f1bc\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/landscaperight.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewtrait/landscaperight": {
-      "hash": "80e4026a4368f9d670890095c5f3c484bb7ba56ea5fcd64b8bb540900cc99e7a",
-      "last_checked": "2025-06-05T21:59:45.324091",
-      "status": "unchanged"
+      "hash": "7b72547331077008b96a960b41ec9c0a40a782fe1ab64af1b6c448bcedf7234a",
+      "last_checked": "2025-06-10T21:47:18.421784",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"83e05d5e930c35619bed7d9429a6f1bc\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/landscaperight.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewtrait/portrait.json": {
-      "hash": "20ad43b8c800c937e5d5e1c385ddd8adee11897dab6a40d3bce04438a425bb7b",
-      "last_checked": "2025-06-05T21:59:45.659293",
-      "status": "unchanged",
-      "etag": "W/\"d12700d447ae7dd5fcf07c152f2d4855\""
+      "hash": "14874ebf9ac941d30ce7c84ca239b0116ed4b80bb127cad0b18cd3a36b9770a0",
+      "last_checked": "2025-06-10T21:47:18.536887",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"e76c6f9b0ae73e6f5d03fe315eb957e3\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/portrait.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewtrait/portrait": {
-      "hash": "20ad43b8c800c937e5d5e1c385ddd8adee11897dab6a40d3bce04438a425bb7b",
-      "last_checked": "2025-06-05T21:59:45.659293",
-      "status": "unchanged"
+      "hash": "14874ebf9ac941d30ce7c84ca239b0116ed4b80bb127cad0b18cd3a36b9770a0",
+      "last_checked": "2025-06-10T21:47:18.536931",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"e76c6f9b0ae73e6f5d03fe315eb957e3\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/portrait.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewtrait/portraitupsidedown.json": {
-      "hash": "cbdcc9769779d0cbf33113df54cb57695e1f2a09baffdb40de7e9bcdec1c2e10",
-      "last_checked": "2025-06-05T21:59:46.085740",
-      "status": "unchanged",
-      "etag": "W/\"1a2ee5cf41575dad46ef955d548c3776\""
+      "hash": "2d426ba4a99c916ded789f34f7c6b90178fd06ceafd569fc8de84dcc05e0a3a9",
+      "last_checked": "2025-06-10T21:47:18.666371",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"d21ee37bd6f46f4338509fbb9c0c68d7\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/portraitupsidedown.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewtrait/portraitupsidedown": {
-      "hash": "cbdcc9769779d0cbf33113df54cb57695e1f2a09baffdb40de7e9bcdec1c2e10",
-      "last_checked": "2025-06-05T21:59:46.085740",
-      "status": "unchanged"
+      "hash": "2d426ba4a99c916ded789f34f7c6b90178fd06ceafd569fc8de84dcc05e0a3a9",
+      "last_checked": "2025-06-10T21:47:18.666423",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"d21ee37bd6f46f4338509fbb9c0c68d7\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/portraitupsidedown.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewtrait/sizethatfitslayout.json": {
-      "hash": "a77316d675b6c62ad969ac1f7fbbe3b4fe3a8cf24767156a34345d4df0a40a27",
-      "last_checked": "2025-06-05T21:59:46.447914",
-      "status": "unchanged",
-      "etag": "W/\"3b4542160e38db9eba4d8335c3d52614\""
+      "hash": "e11f16107d9154c3a071229619455f0945d3c245ce6ef17bcedbcb2f52c4abe5",
+      "last_checked": "2025-06-10T21:47:18.822084",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"657fab9e61f62985e4a5a2ac10050d18\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/sizethatfitslayout.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewtrait/sizethatfitslayout": {
-      "hash": "a77316d675b6c62ad969ac1f7fbbe3b4fe3a8cf24767156a34345d4df0a40a27",
-      "last_checked": "2025-06-05T21:59:46.447914",
-      "status": "unchanged"
+      "hash": "e11f16107d9154c3a071229619455f0945d3c245ce6ef17bcedbcb2f52c4abe5",
+      "last_checked": "2025-06-10T21:47:18.822128",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"657fab9e61f62985e4a5a2ac10050d18\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/sizethatfitslayout.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewtrait/fixedlayout(width:height:).json": {
-      "hash": "a3b8082e9193db130cebddd24e0a573f2b0360e262383260b74b4de78f19a13a",
-      "last_checked": "2025-06-05T21:59:46.843125",
-      "status": "unchanged",
-      "etag": "W/\"072160be6a26ac036c004676432cc4fe\""
+      "hash": "a0fe54ffa3f1639a597f8500059d49abed34ff840338e6425760d7a3b71abc7b",
+      "last_checked": "2025-06-10T21:47:18.937903",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"84b7fef1eb581ccd43be382df49d9b04\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/fixedlayout-widthheight.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewtrait/fixedlayout(width:height:)": {
-      "hash": "a3b8082e9193db130cebddd24e0a573f2b0360e262383260b74b4de78f19a13a",
-      "last_checked": "2025-06-05T21:59:46.843125",
-      "status": "unchanged"
+      "hash": "a0fe54ffa3f1639a597f8500059d49abed34ff840338e6425760d7a3b71abc7b",
+      "last_checked": "2025-06-10T21:47:18.937940",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"84b7fef1eb581ccd43be382df49d9b04\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/fixedlayout-widthheight.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewtrait/fixedlayout(width:height:depth:).json": {
-      "hash": "dfb64146ab7edd9c671a699a84d97eee824a96e6be024a2e4378406f07abe76f",
-      "last_checked": "2025-06-05T21:59:47.211424",
-      "status": "unchanged",
-      "etag": "W/\"1bd4b4583067861308fa9c6fde46c805\""
+      "hash": "b81baca8b8a88939defbf118e017d0f9e16865ea02dea9896462c1c87933d17a",
+      "last_checked": "2025-06-10T21:47:19.074650",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"199389e80fe74be98367c08f8a2d70de\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/fixedlayout-widthheightdepth.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewtrait/fixedlayout(width:height:depth:)": {
-      "hash": "dfb64146ab7edd9c671a699a84d97eee824a96e6be024a2e4378406f07abe76f",
-      "last_checked": "2025-06-05T21:59:47.211424",
-      "status": "unchanged"
+      "hash": "b81baca8b8a88939defbf118e017d0f9e16865ea02dea9896462c1c87933d17a",
+      "last_checked": "2025-06-10T21:47:19.074699",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"199389e80fe74be98367c08f8a2d70de\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/fixedlayout-widthheightdepth.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewtrait/modifier(_:).json": {
-      "hash": "e3dff5034ac7003b426209f927a5950ca221c1a84af8778565dddd82e840dbf8",
-      "last_checked": "2025-06-05T21:59:47.630548",
-      "status": "unchanged",
-      "etag": "W/\"eb2ac39819e9964e5fd618423445f520\""
+      "hash": "b721d39217e2648abb8a8b05aab5c1b85518d15f35f1e1410242edf3eb3d8b8c",
+      "last_checked": "2025-06-10T21:47:19.176007",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"5dc7b87ac2d23df9ee8a84cbf43d7c66\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/modifier.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewtrait/modifier(_:)": {
-      "hash": "e3dff5034ac7003b426209f927a5950ca221c1a84af8778565dddd82e840dbf8",
-      "last_checked": "2025-06-05T21:59:47.630548",
-      "status": "unchanged"
+      "hash": "b721d39217e2648abb8a8b05aab5c1b85518d15f35f1e1410242edf3eb3d8b8c",
+      "last_checked": "2025-06-10T21:47:19.176048",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"5dc7b87ac2d23df9ee8a84cbf43d7c66\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewtrait/modifier.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/colorresource/==(_:_:).json": {
-      "hash": "12070423fcee49e1e230e15bd7bf5cb34c2878d35eb3fd438fe6dcf043181bc9",
-      "last_checked": "2025-06-05T21:59:48.052213",
-      "status": "unchanged",
-      "etag": "W/\"09cbe86e58f4231d866f0681be5d642e\""
+      "hash": "76f010ef3286f1ce6065eeb291f7834eba9d52531974bf7242d2c62f50624691",
+      "last_checked": "2025-06-10T21:47:19.284407",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"4b7f24a1ad9bc3f027593f12c3153d86\"",
+      "file_path": "documentation/DeveloperToolsSupport/colorresource/unknown.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/colorresource/==(_:_:)": {
-      "hash": "12070423fcee49e1e230e15bd7bf5cb34c2878d35eb3fd438fe6dcf043181bc9",
-      "last_checked": "2025-06-05T21:59:48.052213",
-      "status": "unchanged"
+      "hash": "76f010ef3286f1ce6065eeb291f7834eba9d52531974bf7242d2c62f50624691",
+      "last_checked": "2025-06-10T21:47:19.284450",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"4b7f24a1ad9bc3f027593f12c3153d86\"",
+      "file_path": "documentation/DeveloperToolsSupport/colorresource/unknown.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/colorresource/init(name:bundle:).json": {
-      "hash": "4a823cb1be5071e586af29ac3407baa4e72a177157943aff64fd10dd1b03755f",
-      "last_checked": "2025-06-05T21:59:48.417611",
-      "status": "unchanged",
-      "etag": "W/\"55f79c84b722775c53482dca3a0c2178\""
+      "hash": "f2b3fd665308509e747557d6339172533f9e5ab6b1d89b1cae37d55ab2b8bad1",
+      "last_checked": "2025-06-10T21:47:19.429164",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"1561246c4ab2f6c8c3acf8fc8faca719\"",
+      "file_path": "documentation/DeveloperToolsSupport/colorresource/init-namebundle.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/colorresource/init(name:bundle:)": {
-      "hash": "4a823cb1be5071e586af29ac3407baa4e72a177157943aff64fd10dd1b03755f",
-      "last_checked": "2025-06-05T21:59:48.417611",
-      "status": "unchanged"
+      "hash": "f2b3fd665308509e747557d6339172533f9e5ab6b1d89b1cae37d55ab2b8bad1",
+      "last_checked": "2025-06-10T21:47:19.429207",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"1561246c4ab2f6c8c3acf8fc8faca719\"",
+      "file_path": "documentation/DeveloperToolsSupport/colorresource/init-namebundle.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/colorresource/hashvalue.json": {
-      "hash": "009daa711e1e894ff8c2d75cc148d4aa1619518ba7cbe14620a2cfd3fb9ae71c",
-      "last_checked": "2025-06-05T21:59:48.745902",
-      "status": "unchanged",
-      "etag": "W/\"879800d7f366ba24b6a3cb49f615cbc1\""
+      "hash": "7d50386a98ede42ccd847d72086d40bce4f1a01c15f1dff33f53adbe78fb3109",
+      "last_checked": "2025-06-10T21:47:19.527761",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"67b0e15a768ab5f413d58c91fe255174\"",
+      "file_path": "documentation/DeveloperToolsSupport/colorresource/hashvalue.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/colorresource/hashvalue": {
-      "hash": "009daa711e1e894ff8c2d75cc148d4aa1619518ba7cbe14620a2cfd3fb9ae71c",
-      "last_checked": "2025-06-05T21:59:48.745902",
-      "status": "unchanged"
+      "hash": "7d50386a98ede42ccd847d72086d40bce4f1a01c15f1dff33f53adbe78fb3109",
+      "last_checked": "2025-06-10T21:47:19.527798",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"67b0e15a768ab5f413d58c91fe255174\"",
+      "file_path": "documentation/DeveloperToolsSupport/colorresource/hashvalue.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/colorresource/hash(into:).json": {
-      "hash": "406b7f99e87e5eb477baed80855e302ecc90c11d46c22f44a2628b4667412ccc",
-      "last_checked": "2025-06-05T21:59:49.133772",
-      "status": "unchanged",
-      "etag": "W/\"bca32b16bf8b1c8a10a8b71e0f5c419d\""
+      "hash": "8b5dbb3fe05505bbcdcbfdc3a472d11b674394ed2d1438de4b68c62871c29798",
+      "last_checked": "2025-06-10T21:47:19.678173",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"27ffacfc7c8bda7715cacac2baa14838\"",
+      "file_path": "documentation/DeveloperToolsSupport/colorresource/hash-into.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/colorresource/hash(into:)": {
-      "hash": "406b7f99e87e5eb477baed80855e302ecc90c11d46c22f44a2628b4667412ccc",
-      "last_checked": "2025-06-05T21:59:49.133772",
-      "status": "unchanged"
+      "hash": "8b5dbb3fe05505bbcdcbfdc3a472d11b674394ed2d1438de4b68c62871c29798",
+      "last_checked": "2025-06-10T21:47:19.678227",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"27ffacfc7c8bda7715cacac2baa14838\"",
+      "file_path": "documentation/DeveloperToolsSupport/colorresource/hash-into.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/colorresource/equatable-implementations.json": {
-      "hash": "0994c0cec8a16fcaa91306750e0fdcc35747d870d18f07da67c9de346fb5979c",
-      "last_checked": "2025-06-05T21:59:49.535745",
-      "status": "unchanged",
-      "etag": "W/\"be20be691a555f57c995007e8f4486f4\""
+      "hash": "c5b78e6393a199314829e99deadddb52acd82e1d05ccc162f4c26e4c214478a8",
+      "last_checked": "2025-06-10T21:47:19.767767",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"2f355b49e322e92a27de545496691450\"",
+      "file_path": "documentation/DeveloperToolsSupport/colorresource/equatable-implementations.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/colorresource/equatable-implementations": {
-      "hash": "0994c0cec8a16fcaa91306750e0fdcc35747d870d18f07da67c9de346fb5979c",
-      "last_checked": "2025-06-05T21:59:49.535745",
-      "status": "unchanged"
+      "hash": "c5b78e6393a199314829e99deadddb52acd82e1d05ccc162f4c26e4c214478a8",
+      "last_checked": "2025-06-10T21:47:19.767812",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"2f355b49e322e92a27de545496691450\"",
+      "file_path": "documentation/DeveloperToolsSupport/colorresource/equatable-implementations.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/imageresource/==(_:_:).json": {
-      "hash": "99db7d0bd6df1b89fe26ee35b02c5452a0ecfbe1d74c32bdb51cf0acb3d03d97",
-      "last_checked": "2025-06-05T21:59:49.905409",
-      "status": "unchanged",
-      "etag": "W/\"2ebccc41cb651299fc803455d66ed030\""
+      "hash": "ecdabe8b03b5af4e2ee07be45eef3df50ac92236d570869079b224b2123caf3e",
+      "last_checked": "2025-06-10T21:47:19.884638",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"dee690a423bcc44af48bce8f500d057f\"",
+      "file_path": "documentation/DeveloperToolsSupport/imageresource/unknown.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/imageresource/==(_:_:)": {
-      "hash": "99db7d0bd6df1b89fe26ee35b02c5452a0ecfbe1d74c32bdb51cf0acb3d03d97",
-      "last_checked": "2025-06-05T21:59:49.905409",
-      "status": "unchanged"
+      "hash": "ecdabe8b03b5af4e2ee07be45eef3df50ac92236d570869079b224b2123caf3e",
+      "last_checked": "2025-06-10T21:47:19.884676",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"dee690a423bcc44af48bce8f500d057f\"",
+      "file_path": "documentation/DeveloperToolsSupport/imageresource/unknown.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/imageresource/init(name:bundle:).json": {
-      "hash": "002612729966e14fbda6d54fe9c24ab1f2aa5ce149f0114e8c05becd7b47af4a",
-      "last_checked": "2025-06-05T21:59:50.301016",
-      "status": "unchanged",
-      "etag": "W/\"3cae00578b79c91007c5f33a123b229d\""
+      "hash": "bea882e487d65b7c1771cde7e2398de4606c1adf12b260870f7c34690c5417a4",
+      "last_checked": "2025-06-10T21:47:20.023128",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"a1dc09c6699c05b4c3bcd864e2a4fc9e\"",
+      "file_path": "documentation/DeveloperToolsSupport/imageresource/init-namebundle.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/imageresource/init(name:bundle:)": {
-      "hash": "002612729966e14fbda6d54fe9c24ab1f2aa5ce149f0114e8c05becd7b47af4a",
-      "last_checked": "2025-06-05T21:59:50.301016",
-      "status": "unchanged"
+      "hash": "bea882e487d65b7c1771cde7e2398de4606c1adf12b260870f7c34690c5417a4",
+      "last_checked": "2025-06-10T21:47:20.023171",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"a1dc09c6699c05b4c3bcd864e2a4fc9e\"",
+      "file_path": "documentation/DeveloperToolsSupport/imageresource/init-namebundle.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/imageresource/hashvalue.json": {
-      "hash": "af74de99b815fec8c444bbcf76ee123cbfecb853a431b344f62103dc59fb7b12",
-      "last_checked": "2025-06-05T21:59:50.703925",
-      "status": "unchanged",
-      "etag": "W/\"b9a681803024cf21a04d76ca8028649d\""
+      "hash": "bc955287a6ac3a6198b33018fd3bf82bb0c6b8a990e1cd4100eced0b9b24ad7c",
+      "last_checked": "2025-06-10T21:47:20.144781",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"add54f78510e74de8fe771d71a5a0805\"",
+      "file_path": "documentation/DeveloperToolsSupport/imageresource/hashvalue.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/imageresource/hashvalue": {
-      "hash": "af74de99b815fec8c444bbcf76ee123cbfecb853a431b344f62103dc59fb7b12",
-      "last_checked": "2025-06-05T21:59:50.703925",
-      "status": "unchanged"
+      "hash": "bc955287a6ac3a6198b33018fd3bf82bb0c6b8a990e1cd4100eced0b9b24ad7c",
+      "last_checked": "2025-06-10T21:47:20.144829",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"add54f78510e74de8fe771d71a5a0805\"",
+      "file_path": "documentation/DeveloperToolsSupport/imageresource/hashvalue.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/imageresource/hash(into:).json": {
-      "hash": "a025011d4539ecf3bd23a9830cc2de786d91e0833911ace20485b4db9ea5d3f0",
-      "last_checked": "2025-06-05T21:59:51.076860",
-      "status": "unchanged",
-      "etag": "W/\"c207c42fd01198f8520143c60bb7904b\""
+      "hash": "2e33484fff7c89aa5e65a929c4bc26eed4beb7b964f467cf3645f1064c3c6b98",
+      "last_checked": "2025-06-10T21:47:20.277769",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"3882c099cb1687ea04232b52aef07ed3\"",
+      "file_path": "documentation/DeveloperToolsSupport/imageresource/hash-into.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/imageresource/hash(into:)": {
-      "hash": "a025011d4539ecf3bd23a9830cc2de786d91e0833911ace20485b4db9ea5d3f0",
-      "last_checked": "2025-06-05T21:59:51.076860",
-      "status": "unchanged"
+      "hash": "2e33484fff7c89aa5e65a929c4bc26eed4beb7b964f467cf3645f1064c3c6b98",
+      "last_checked": "2025-06-10T21:47:20.277809",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"3882c099cb1687ea04232b52aef07ed3\"",
+      "file_path": "documentation/DeveloperToolsSupport/imageresource/hash-into.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/imageresource/equatable-implementations.json": {
-      "hash": "db4c62f60b3be3df8179237db462b1c1fe6e34f1c439344715f58258affb6e42",
-      "last_checked": "2025-06-05T21:59:51.446720",
-      "status": "unchanged",
-      "etag": "W/\"cdd8b9fb5f5520c47b1d904580b27dd4\""
+      "hash": "a068aeab0fa78e58829c2dc6317ecf44d1ddc521a6b9e62868bfb076971d74e4",
+      "last_checked": "2025-06-10T21:47:20.374954",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"d9983c13b40db57459ad73aa6096c26b\"",
+      "file_path": "documentation/DeveloperToolsSupport/imageresource/equatable-implementations.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/imageresource/equatable-implementations": {
-      "hash": "db4c62f60b3be3df8179237db462b1c1fe6e34f1c439344715f58258affb6e42",
-      "last_checked": "2025-06-05T21:59:51.446720",
-      "status": "unchanged"
+      "hash": "a068aeab0fa78e58829c2dc6317ecf44d1ddc521a6b9e62868bfb076971d74e4",
+      "last_checked": "2025-06-10T21:47:20.374997",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"d9983c13b40db57459ad73aa6096c26b\"",
+      "file_path": "documentation/DeveloperToolsSupport/imageresource/equatable-implementations.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewcamera/init(from:zoom:name:).json": {
-      "hash": "f2d922225d81efb214118dcb50fa95898b5873531b8efcee57c4c0a60cd4900c",
-      "last_checked": "2025-06-05T21:59:51.809034",
-      "status": "unchanged",
-      "etag": "W/\"eebd353aa586f719f0f1b5718797f9ec\""
+      "hash": "d2d187b17663a63bf0c995bcc4bc0b7f847d250522eac69cc3e2643194fb8feb",
+      "last_checked": "2025-06-10T21:47:20.515256",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"a34b6ae6dd5356ab63e9923ee5936247\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamera/init-fromzoomname.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewcamera/init(from:zoom:name:)": {
-      "hash": "f2d922225d81efb214118dcb50fa95898b5873531b8efcee57c4c0a60cd4900c",
-      "last_checked": "2025-06-05T21:59:51.809034",
-      "status": "unchanged"
+      "hash": "d2d187b17663a63bf0c995bcc4bc0b7f847d250522eac69cc3e2643194fb8feb",
+      "last_checked": "2025-06-10T21:47:20.515331",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"a34b6ae6dd5356ab63e9923ee5936247\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamera/init-fromzoomname.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewcamera/init(lookingat:from:name:).json": {
-      "hash": "93d8d66e61ef3552f8ac449957d8864a0ed40d5c20d19755e6d454cf9804a8d6",
-      "last_checked": "2025-06-05T21:59:52.151606",
-      "status": "unchanged",
-      "etag": "W/\"fba8c33e57090cc3f1f61f0a7b3f14ea\""
+      "hash": "02aca832ea31a1c173989fd68f2f2d11d8191df15e9d1a6f28768e6667dfd1c3",
+      "last_checked": "2025-06-10T21:47:20.672252",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"4e20c6451e1b670755582c85801e144a\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamera/init-lookingatfromname.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewcamera/init(lookingat:from:name:)": {
-      "hash": "93d8d66e61ef3552f8ac449957d8864a0ed40d5c20d19755e6d454cf9804a8d6",
-      "last_checked": "2025-06-05T21:59:52.151606",
-      "status": "unchanged"
+      "hash": "02aca832ea31a1c173989fd68f2f2d11d8191df15e9d1a6f28768e6667dfd1c3",
+      "last_checked": "2025-06-10T21:47:20.672305",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"4e20c6451e1b670755582c85801e144a\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamera/init-lookingatfromname.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewcamerabuilder/buildarray(_:).json": {
-      "hash": "62ceef803f1a733d27ce61750bf6ca097c8ee5cb78194643fd7156f9c4339152",
-      "last_checked": "2025-06-05T21:59:52.489473",
-      "status": "unchanged",
-      "etag": "W/\"c0b25e1867cefc3c2277908291a8e4bc\""
+      "hash": "941a3a4ed8c891c7c55301d54423e5e018b15d15aa9929db92a9e1399740ff14",
+      "last_checked": "2025-06-10T21:47:20.767536",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"58f0649a57a2426e8266364bd09a8439\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamerabuilder/buildarray.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewcamerabuilder/buildarray(_:)": {
-      "hash": "62ceef803f1a733d27ce61750bf6ca097c8ee5cb78194643fd7156f9c4339152",
-      "last_checked": "2025-06-05T21:59:52.489473",
-      "status": "unchanged"
+      "hash": "941a3a4ed8c891c7c55301d54423e5e018b15d15aa9929db92a9e1399740ff14",
+      "last_checked": "2025-06-10T21:47:20.767571",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"58f0649a57a2426e8266364bd09a8439\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamerabuilder/buildarray.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewcamerabuilder/buildexpression(_:)-5okdh.json": {
-      "hash": "d726aba8b4de017d95eadad6652e0a942ccadb2419133a60861c8dd3abdda3af",
-      "last_checked": "2025-06-05T21:59:52.877141",
-      "status": "unchanged",
-      "etag": "W/\"a7d92b634f4ee2358ad883cbcae1b4e2\""
+      "hash": "065134942a3216e50b395b7b88582fe2e549c242973b2697c6dec8e5873a68a9",
+      "last_checked": "2025-06-10T21:47:20.885611",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"5853012fc2b2147611a1f32cd5699d13\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamerabuilder/buildexpression-5okdh.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewcamerabuilder/buildexpression(_:)-5okdh": {
-      "hash": "d726aba8b4de017d95eadad6652e0a942ccadb2419133a60861c8dd3abdda3af",
-      "last_checked": "2025-06-05T21:59:52.877141",
-      "status": "unchanged"
+      "hash": "065134942a3216e50b395b7b88582fe2e549c242973b2697c6dec8e5873a68a9",
+      "last_checked": "2025-06-10T21:47:20.885643",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"5853012fc2b2147611a1f32cd5699d13\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamerabuilder/buildexpression-5okdh.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewcamerabuilder/buildexpression(_:)-5t9d2.json": {
-      "hash": "09ff2bbac8ec3e965789ecda6ee96ad7cf20838e9b5f81adc4e2e8cab78f1ec1",
-      "last_checked": "2025-06-05T21:59:53.236362",
-      "status": "unchanged",
-      "etag": "W/\"e0d7ff1cf86d2833ef725f21ca132f00\""
+      "hash": "331e0aa99ee0d48c42ef02bc7205481ad969b96d1a06f0b4046718f5b1058be2",
+      "last_checked": "2025-06-10T21:47:21.004282",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"227b4a3976a25c771e820773d6c5184f\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamerabuilder/buildexpression-5t9d2.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewcamerabuilder/buildexpression(_:)-5t9d2": {
-      "hash": "09ff2bbac8ec3e965789ecda6ee96ad7cf20838e9b5f81adc4e2e8cab78f1ec1",
-      "last_checked": "2025-06-05T21:59:53.236362",
-      "status": "unchanged"
+      "hash": "331e0aa99ee0d48c42ef02bc7205481ad969b96d1a06f0b4046718f5b1058be2",
+      "last_checked": "2025-06-10T21:47:21.004327",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"227b4a3976a25c771e820773d6c5184f\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamerabuilder/buildexpression-5t9d2.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewcamerabuilder/buildpartialblock(accumulated:next:).json": {
-      "hash": "eff6e06f0855333b7a6add7d783671d61bf6c3f6e825afab15eca3c081ae1eea",
-      "last_checked": "2025-06-05T21:59:53.621230",
-      "status": "unchanged",
-      "etag": "W/\"9771d7db023db2b4996901735225909f\""
+      "hash": "d08de96e6827493f05f82675cd23c79a8a0a7c8b76aaacfb6d45c8e01934ce42",
+      "last_checked": "2025-06-10T21:47:21.129974",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"a7976e279b0850c33f44e4efa4465fcd\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamerabuilder/buildpartialblock-accumulatednext.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewcamerabuilder/buildpartialblock(accumulated:next:)": {
-      "hash": "eff6e06f0855333b7a6add7d783671d61bf6c3f6e825afab15eca3c081ae1eea",
-      "last_checked": "2025-06-05T21:59:53.621230",
-      "status": "unchanged"
+      "hash": "d08de96e6827493f05f82675cd23c79a8a0a7c8b76aaacfb6d45c8e01934ce42",
+      "last_checked": "2025-06-10T21:47:21.130018",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"a7976e279b0850c33f44e4efa4465fcd\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamerabuilder/buildpartialblock-accumulatednext.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewcamerabuilder/buildpartialblock(first:).json": {
-      "hash": "a55bbb5e510f47a2ef3054da40b8cd879486bc6c338f38a50cce8ab1261434f3",
-      "last_checked": "2025-06-05T21:59:54.048723",
-      "status": "unchanged",
-      "etag": "W/\"24f81dd3819d614bd6f4ddd98daa7eab\""
+      "hash": "a6f58bbcc9d0c57030c427a9ce772ca2960d0642e6da173a3cf7b1f392d91a74",
+      "last_checked": "2025-06-10T21:47:21.276069",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"297fd0affc02414bb29f2fdd4c6fd632\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamerabuilder/buildpartialblock-first.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewcamerabuilder/buildpartialblock(first:)": {
-      "hash": "a55bbb5e510f47a2ef3054da40b8cd879486bc6c338f38a50cce8ab1261434f3",
-      "last_checked": "2025-06-05T21:59:54.048723",
-      "status": "unchanged"
+      "hash": "a6f58bbcc9d0c57030c427a9ce772ca2960d0642e6da173a3cf7b1f392d91a74",
+      "last_checked": "2025-06-10T21:47:21.276112",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"297fd0affc02414bb29f2fdd4c6fd632\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewcamerabuilder/buildpartialblock-first.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewbodybuilder/buildblock(_:).json": {
-      "hash": "fd00daa5fff3ea492a830915a2631f8f52f9a416b2f12ac516494a46f632bf6a",
-      "last_checked": "2025-06-05T21:59:54.410442",
-      "status": "unchanged",
-      "etag": "W/\"fc09713e28d05a929edae6918c9c586c\""
+      "hash": "cdd108edf33130521b0d59bab767edeaa2dea20d8587ef467bf36702d528d255",
+      "last_checked": "2025-06-10T21:47:21.432558",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"f377b06e51aec8cc2b4555339bf5cbdb\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewbodybuilder/buildblock.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewbodybuilder/buildblock(_:)": {
-      "hash": "fd00daa5fff3ea492a830915a2631f8f52f9a416b2f12ac516494a46f632bf6a",
-      "last_checked": "2025-06-05T21:59:54.410442",
-      "status": "unchanged"
+      "hash": "cdd108edf33130521b0d59bab767edeaa2dea20d8587ef467bf36702d528d255",
+      "last_checked": "2025-06-10T21:47:21.432598",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"f377b06e51aec8cc2b4555339bf5cbdb\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewbodybuilder/buildblock.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewmacrobodybuilder/buildblock(_:).json": {
-      "hash": "625612c4a78001044d70ebc547a699adb2b43df5941ae306dd068139f4bfc969",
-      "last_checked": "2025-06-05T21:59:54.789097",
-      "status": "unchanged",
-      "etag": "W/\"fb0fa60b7797580e21b8c7bd56215c54\""
+      "hash": "0e2b9601de137057cddeabd005726a4e30334b5a4e6a7eaa8347ee7db9a306f9",
+      "last_checked": "2025-06-10T21:47:21.579567",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"bf6f8abeb9b1ac2654e23b0bc0a26723\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewmacrobodybuilder/buildblock.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewmacrobodybuilder/buildblock(_:)": {
-      "hash": "625612c4a78001044d70ebc547a699adb2b43df5941ae306dd068139f4bfc969",
-      "last_checked": "2025-06-05T21:59:54.789097",
-      "status": "unchanged"
+      "hash": "0e2b9601de137057cddeabd005726a4e30334b5a4e6a7eaa8347ee7db9a306f9",
+      "last_checked": "2025-06-10T21:47:21.579607",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"bf6f8abeb9b1ac2654e23b0bc0a26723\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewmacrobodybuilder/buildblock.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewunavailable/init().json": {
-      "hash": "f5a08601985b899832e88a28ffc21062b849e0e55c871a59ba6b9b168396d322",
-      "last_checked": "2025-06-05T21:59:55.187856",
-      "status": "unchanged",
-      "etag": "W/\"07d61c90a42387a6fecf6d5d4f923ae9\""
+      "hash": "ac3fc1a143a7c4ec11a3682476f5a61e6aab94bcd7eb074441aff44375cfb8b1",
+      "last_checked": "2025-06-10T21:47:21.664524",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"1d7393698f7d2a10ed1b79e8274ef692\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewunavailable/init.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewunavailable/init()": {
-      "hash": "f5a08601985b899832e88a28ffc21062b849e0e55c871a59ba6b9b168396d322",
-      "last_checked": "2025-06-05T21:59:55.187856",
-      "status": "unchanged"
+      "hash": "ac3fc1a143a7c4ec11a3682476f5a61e6aab94bcd7eb074441aff44375cfb8b1",
+      "last_checked": "2025-06-10T21:47:21.664571",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"1d7393698f7d2a10ed1b79e8274ef692\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewunavailable/init.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewunavailable/error-implementations.json": {
-      "hash": "579968935a109363d517c6507c247df54a8c75434d9e64cc9555de052de51a01",
-      "last_checked": "2025-06-05T21:59:55.529178",
-      "status": "unchanged",
-      "etag": "W/\"c38a142ad97b6b761d04f49caa6bbdc2\""
+      "hash": "ff37e4efafd6bfb9a9834da61581c5e273a85e692e0d1f22c691b938ba81ea93",
+      "last_checked": "2025-06-10T21:47:21.790508",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"1b8da681b034763e4121c1fa3d68d6d3\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewunavailable/error-implementations.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewunavailable/error-implementations": {
-      "hash": "579968935a109363d517c6507c247df54a8c75434d9e64cc9555de052de51a01",
-      "last_checked": "2025-06-05T21:59:55.529178",
-      "status": "unchanged"
+      "hash": "ff37e4efafd6bfb9a9834da61581c5e273a85e692e0d1f22c691b938ba81ea93",
+      "last_checked": "2025-06-10T21:47:21.790558",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"1b8da681b034763e4121c1fa3d68d6d3\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewunavailable/error-implementations.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/librarycontentbuilder/buildblock(_:).json": {
-      "hash": "0e89ecdb2b0260575c740428119b5a2fbe98f4d1c14fe256cfe451f8ef04bd9f",
-      "last_checked": "2025-06-05T21:59:55.902794",
-      "status": "unchanged",
-      "etag": "W/\"0894a923172060a0a7ff8f0e99690fb2\""
+      "hash": "15ad6ac6d3c38b8903c35a47a6ed0cc03feff08cdf7ddcb9423d4566ec865f25",
+      "last_checked": "2025-06-10T21:47:21.889201",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"d19520d28e2f4bac31ec9a6de585631a\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentbuilder/buildblock.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/librarycontentbuilder/buildblock(_:)": {
-      "hash": "0e89ecdb2b0260575c740428119b5a2fbe98f4d1c14fe256cfe451f8ef04bd9f",
-      "last_checked": "2025-06-05T21:59:55.902794",
-      "status": "unchanged"
+      "hash": "15ad6ac6d3c38b8903c35a47a6ed0cc03feff08cdf7ddcb9423d4566ec865f25",
+      "last_checked": "2025-06-10T21:47:21.889681",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"d19520d28e2f4bac31ec9a6de585631a\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentbuilder/buildblock.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/librarycontentbuilder/buildexpression(_:)-8x2oz.json": {
-      "hash": "341f2289b284bc7f66b916158b67505c6b3afee260c3234b1f790fa4d20b72d9",
-      "last_checked": "2025-06-05T21:59:56.307731",
-      "status": "unchanged",
-      "etag": "W/\"c2ee2d4a689b7a8543003201a4458a52\""
+      "hash": "d8912506fa79b175b0830a3c4c201f540d338e5bbc008f760b55f42341df8e42",
+      "last_checked": "2025-06-10T21:47:22.015553",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"f12938f3ffa10b8eae02517752a59fc8\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentbuilder/buildexpression-8x2oz.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/librarycontentbuilder/buildexpression(_:)-8x2oz": {
-      "hash": "341f2289b284bc7f66b916158b67505c6b3afee260c3234b1f790fa4d20b72d9",
-      "last_checked": "2025-06-05T21:59:56.307731",
-      "status": "unchanged"
+      "hash": "d8912506fa79b175b0830a3c4c201f540d338e5bbc008f760b55f42341df8e42",
+      "last_checked": "2025-06-10T21:47:22.015604",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"f12938f3ffa10b8eae02517752a59fc8\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentbuilder/buildexpression-8x2oz.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/librarycontentbuilder/buildexpression(_:)-90ip4.json": {
-      "hash": "cad7bb793c18429dbb5757bc66359c41eb15ca00b574b724ef1ec24721c46a14",
-      "last_checked": "2025-06-05T21:59:56.701862",
-      "status": "unchanged",
-      "etag": "W/\"68eccfb835621d269f2ab963e42cafad\""
+      "hash": "9e2b00b6282a3f9338a68fdd7b9491876aafc13028f5736a5b6bb6f980501228",
+      "last_checked": "2025-06-10T21:47:22.178499",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"46c5b84564631a80fa8241e620ccad79\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentbuilder/buildexpression-90ip4.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/librarycontentbuilder/buildexpression(_:)-90ip4": {
-      "hash": "cad7bb793c18429dbb5757bc66359c41eb15ca00b574b724ef1ec24721c46a14",
-      "last_checked": "2025-06-05T21:59:56.701862",
-      "status": "unchanged"
+      "hash": "9e2b00b6282a3f9338a68fdd7b9491876aafc13028f5736a5b6bb6f980501228",
+      "last_checked": "2025-06-10T21:47:22.178539",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"46c5b84564631a80fa8241e620ccad79\"",
+      "file_path": "documentation/DeveloperToolsSupport/librarycontentbuilder/buildexpression-90ip4.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/libraryitem/category/control.json": {
-      "hash": "27e0f79b059f8e5b1b335e735b3b06bedc493351b92a37bfb5cdca265a4c7551",
-      "last_checked": "2025-06-05T21:59:57.037903",
-      "status": "unchanged",
-      "etag": "W/\"be81f9a83d16c33c606012a29a4ddeed\""
+      "hash": "59b83810e57f034c2acca4bbcd504f0ea5c4e6915319755d70f1ab46be9e6ef8",
+      "last_checked": "2025-06-10T21:47:22.332870",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"02884a15abb4dde6555efbc450bb26c9\"",
+      "file_path": "documentation/DeveloperToolsSupport/libraryitem/category/control.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/libraryitem/category/control": {
-      "hash": "27e0f79b059f8e5b1b335e735b3b06bedc493351b92a37bfb5cdca265a4c7551",
-      "last_checked": "2025-06-05T21:59:57.037903",
-      "status": "unchanged"
+      "hash": "59b83810e57f034c2acca4bbcd504f0ea5c4e6915319755d70f1ab46be9e6ef8",
+      "last_checked": "2025-06-10T21:47:22.332948",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"02884a15abb4dde6555efbc450bb26c9\"",
+      "file_path": "documentation/DeveloperToolsSupport/libraryitem/category/control.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/libraryitem/category/effect.json": {
-      "hash": "6cb55c3a8c57a82efca646e7f64bf373ab4bb152bcef8f5782a9a759497254ef",
-      "last_checked": "2025-06-05T21:59:57.398393",
-      "status": "unchanged",
-      "etag": "W/\"e08e055e94eacc2b58151f423b58339f\""
+      "hash": "4b3f5e29038e323c3642e0a4cb49300ae30e6223fe0f9542a25c4686bdcc3551",
+      "last_checked": "2025-06-10T21:47:22.455387",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"4dc77b44bef7ca10768a670b579a4c4b\"",
+      "file_path": "documentation/DeveloperToolsSupport/libraryitem/category/effect.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/libraryitem/category/effect": {
-      "hash": "6cb55c3a8c57a82efca646e7f64bf373ab4bb152bcef8f5782a9a759497254ef",
-      "last_checked": "2025-06-05T21:59:57.398393",
-      "status": "unchanged"
+      "hash": "4b3f5e29038e323c3642e0a4cb49300ae30e6223fe0f9542a25c4686bdcc3551",
+      "last_checked": "2025-06-10T21:47:22.455432",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"4dc77b44bef7ca10768a670b579a4c4b\"",
+      "file_path": "documentation/DeveloperToolsSupport/libraryitem/category/effect.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/libraryitem/category/layout.json": {
-      "hash": "c46317469aa718732e8f4116cf7a14230c55e001f4b3ddeef72196b64bbbbe4d",
-      "last_checked": "2025-06-05T21:59:57.775424",
-      "status": "unchanged",
-      "etag": "W/\"2a40091ae56573223618e4e93137e34c\""
+      "hash": "06349cc976c89941fca62f1fe6c7a265138cb9f72a3de1ef47f5b4b31f3e61e7",
+      "last_checked": "2025-06-10T21:47:22.590026",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"dd40091c6e5b99982dfea767efe7df93\"",
+      "file_path": "documentation/DeveloperToolsSupport/libraryitem/category/layout.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/libraryitem/category/layout": {
-      "hash": "c46317469aa718732e8f4116cf7a14230c55e001f4b3ddeef72196b64bbbbe4d",
-      "last_checked": "2025-06-05T21:59:57.775424",
-      "status": "unchanged"
+      "hash": "06349cc976c89941fca62f1fe6c7a265138cb9f72a3de1ef47f5b4b31f3e61e7",
+      "last_checked": "2025-06-10T21:47:22.590084",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"dd40091c6e5b99982dfea767efe7df93\"",
+      "file_path": "documentation/DeveloperToolsSupport/libraryitem/category/layout.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/libraryitem/category/other.json": {
-      "hash": "198e153d5bbea8097ce45720502647328ec1051cca0df6ba066c311a67bdb681",
-      "last_checked": "2025-06-05T21:59:58.168165",
-      "status": "unchanged",
-      "etag": "W/\"09b9d33a197165d3d961007e46a0f09e\""
+      "hash": "fa03cf8bf4567054abf8b7c7f0519816511e8a013c2a8f38a9f536bf0b8b034c",
+      "last_checked": "2025-06-10T21:47:22.699691",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"d1461503ec32716ca26344109f9a82a4\"",
+      "file_path": "documentation/DeveloperToolsSupport/libraryitem/category/other.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/libraryitem/category/other": {
-      "hash": "198e153d5bbea8097ce45720502647328ec1051cca0df6ba066c311a67bdb681",
-      "last_checked": "2025-06-05T21:59:58.168165",
-      "status": "unchanged"
+      "hash": "fa03cf8bf4567054abf8b7c7f0519816511e8a013c2a8f38a9f536bf0b8b034c",
+      "last_checked": "2025-06-10T21:47:22.699738",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"d1461503ec32716ca26344109f9a82a4\"",
+      "file_path": "documentation/DeveloperToolsSupport/libraryitem/category/other.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/colorresource/!=(_:_:).json": {
-      "hash": "ab2a620d7c562899cfbb7fd90347bdba8759cd5a5c9352faf7be2ad40d024e66",
-      "last_checked": "2025-06-05T21:59:58.616317",
-      "status": "unchanged",
-      "etag": "W/\"879c522659f005457630c26a4fa430d7\""
+      "hash": "0ba47242dafc42ff70e5477a26ff7859d5676029efad4fcb8459a49ed578baac",
+      "last_checked": "2025-06-10T21:47:22.833482",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"b9eeba9364ff6e8b6c51d801f9d078c5\"",
+      "file_path": "documentation/DeveloperToolsSupport/colorresource/unknown.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/colorresource/!=(_:_:)": {
-      "hash": "ab2a620d7c562899cfbb7fd90347bdba8759cd5a5c9352faf7be2ad40d024e66",
-      "last_checked": "2025-06-05T21:59:58.616317",
-      "status": "unchanged"
+      "hash": "0ba47242dafc42ff70e5477a26ff7859d5676029efad4fcb8459a49ed578baac",
+      "last_checked": "2025-06-10T21:47:22.833534",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"b9eeba9364ff6e8b6c51d801f9d078c5\"",
+      "file_path": "documentation/DeveloperToolsSupport/colorresource/unknown.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/imageresource/!=(_:_:).json": {
-      "hash": "5f6d87ad70c9b3705d46fda16ce83b663de46451331211692455ac5a3effc206",
-      "last_checked": "2025-06-05T21:59:59.007315",
-      "status": "unchanged",
-      "etag": "W/\"1fbac12486b650a69e862614ddf7a3c7\""
+      "hash": "7d341937c990c8f9be54cd82daca8435781174bda3823443a1029dc39774e241",
+      "last_checked": "2025-06-10T21:47:22.927955",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"c409fe2fa06df8fc6d150471d8cb2931\"",
+      "file_path": "documentation/DeveloperToolsSupport/imageresource/unknown.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/imageresource/!=(_:_:)": {
-      "hash": "5f6d87ad70c9b3705d46fda16ce83b663de46451331211692455ac5a3effc206",
-      "last_checked": "2025-06-05T21:59:59.007315",
-      "status": "unchanged"
+      "hash": "7d341937c990c8f9be54cd82daca8435781174bda3823443a1029dc39774e241",
+      "last_checked": "2025-06-10T21:47:22.928002",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"c409fe2fa06df8fc6d150471d8cb2931\"",
+      "file_path": "documentation/DeveloperToolsSupport/imageresource/unknown.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/developertoolssupport/previewunavailable/localizeddescription.json": {
-      "hash": "0e5dc10f28c86b603c1d87e6c7a092f8f057f5ebdaa35eb0d2e6a3ea90a09428",
-      "last_checked": "2025-06-05T21:59:59.415592",
-      "status": "unchanged",
-      "etag": "W/\"967261c731c53331723c86fe986f3884\""
+      "hash": "94602f44936975bd0b6c14b909f0f99dc6317c2d53eb9d13e07d6efdd14d8d1e",
+      "last_checked": "2025-06-10T21:47:23.049591",
+      "status": "new",
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"6ec38f66d6e1ce0d2a8bafb83cd4cb62\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewunavailable/localizeddescription.md"
     },
     "https://developer.apple.com/documentation/developertoolssupport/previewunavailable/localizeddescription": {
-      "hash": "0e5dc10f28c86b603c1d87e6c7a092f8f057f5ebdaa35eb0d2e6a3ea90a09428",
-      "last_checked": "2025-06-05T21:59:59.415592",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/DeveloperToolsSupport/previewlayout.json": {
-      "hash": "480b61125c05dc18a30a5d584d9540f91fd7e5ea99c127035a0df85c1664fe4b",
-      "last_checked": "2025-06-06T19:40:09.907732",
+      "hash": "94602f44936975bd0b6c14b909f0f99dc6317c2d53eb9d13e07d6efdd14d8d1e",
+      "last_checked": "2025-06-10T21:47:23.049634",
       "status": "new",
-      "etag": "W/\"234de0d195434aaca7e47b16b0f01e49\""
-    },
-    "https://developer.apple.com/documentation/DeveloperToolsSupport/previewlayout": {
-      "hash": "2947874a846f8b8e28e774c4d909afe020b10d9dddb40875118d6eadabdcbe8c",
-      "last_checked": "2025-06-06T19:40:09.908256",
-      "status": "unchanged"
+      "session_id": "2025-06-10T21:47:10.843325",
+      "etag": "W/\"6ec38f66d6e1ce0d2a8bafb83cd4cb62\"",
+      "file_path": "documentation/DeveloperToolsSupport/previewunavailable/localizeddescription.md"
     }
   }
 }

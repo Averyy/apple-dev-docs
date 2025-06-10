@@ -21,7 +21,7 @@ func sec_protocol_options_add_tls_application_protocol(_ options: sec_protocol_o
 #### Discussion
 
 ```None
-  Add an application protocol supported by clients of this protocol instance.
+ Add an application protocol supported by clients of this protocol instance.
 ```
 
 ## Parameters

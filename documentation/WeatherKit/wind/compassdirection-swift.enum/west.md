@@ -1,6 +1,6 @@
 # Wind.CompassDirection.west
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 **Availability**:

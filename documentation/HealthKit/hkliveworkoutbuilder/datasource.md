@@ -6,6 +6,9 @@
 A data source that provides live data from a workout session automatically.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS ?+
 - watchOS 5.0+
 

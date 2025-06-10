@@ -31,6 +31,7 @@ To create a bookmark action, use the [`createBookmark(_:context:)`](tabletopacti
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TabletopAction](tabletopaction.md)
 
 ## See Also

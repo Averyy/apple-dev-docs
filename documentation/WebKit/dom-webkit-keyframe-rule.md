@@ -1,6 +1,6 @@
 # DOM_WEBKIT_KEYFRAME_RULE
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

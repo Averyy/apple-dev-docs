@@ -1,6 +1,6 @@
 # string
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The string value of the first pasteboard item.

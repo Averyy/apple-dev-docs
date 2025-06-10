@@ -21,6 +21,7 @@ protocol MTLAccelerationStructureCommandEncoder : MTLCommandEncoder
 
 ## Mentions
 
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 - [Sampling GPU Data into Counter Sample Buffers](sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Overview
@@ -78,10 +79,16 @@ Don’t implement this protocol yourself; instead you call methods on an [`MTLCo
   Simplify data access and improve GPU utilization by storing custom primitive data directly in the acceleration structure.
 - [protocol MTLAccelerationStructure](mtlaccelerationstructure.md)
   A collection of model data for GPU-accelerated intersection of rays with the model.
+- [class MTL4AccelerationStructureDescriptor](mtl4accelerationstructuredescriptor.md)
+  Base class for Metal 4 acceleration structure descriptors.
 - [class MTLAccelerationStructureDescriptor](mtlaccelerationstructuredescriptor.md)
   A base class for classes that define the configuration for a new acceleration structure.
+- [class MTL4PrimitiveAccelerationStructureDescriptor](mtl4primitiveaccelerationstructuredescriptor.md)
+  Descriptor for a primitive acceleration structure that directly references geometric shapes, such as triangles and bounding boxes.
 - [class MTLPrimitiveAccelerationStructureDescriptor](mtlprimitiveaccelerationstructuredescriptor.md)
   A description of an acceleration structure that contains geometry primitives.
+- [class MTL4InstanceAccelerationStructureDescriptor](mtl4instanceaccelerationstructuredescriptor.md)
+  Descriptor for an instance acceleration structure.
 - [class MTLInstanceAccelerationStructureDescriptor](mtlinstanceaccelerationstructuredescriptor.md)
   A description of an acceleration structure that derives from instances of primitive acceleration structures.
 - [struct MTLAccelerationStructureUsage](mtlaccelerationstructureusage.md)

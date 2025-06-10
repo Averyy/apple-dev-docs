@@ -1,6 +1,6 @@
 # DOMExceptionCode
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: struct
 
 **Availability**:

@@ -1,6 +1,6 @@
 # Screen Time
 
-**Framework**: Screentime  
+**Framework**: Screen Time  
 **Kind**: module
 
 Share and manage web-usage data, and observe changes made by a parent or guardian.

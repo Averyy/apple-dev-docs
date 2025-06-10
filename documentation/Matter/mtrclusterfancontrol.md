@@ -41,7 +41,7 @@ class MTRClusterFanControl
 - [func readAttributeSpeedSetting(with: MTRReadParams?) -> [String : Any]?](mtrclusterfancontrol/readattributespeedsetting(with:).md)
 - [func readAttributeWindSetting(with: MTRReadParams?) -> [String : Any]?](mtrclusterfancontrol/readattributewindsetting(with:).md)
 - [func readAttributeWindSupport(with: MTRReadParams?) -> [String : Any]?](mtrclusterfancontrol/readattributewindsupport(with:).md)
-- [func step(with: MTRFanControlClusterStepParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterfancontrol/step(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func step(with: MTRFanControlClusterStepParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterfancontrol/step(with:expectedvalues:expectedvalueinterval:completion:).md)
 - [func writeAttributeAirflowDirection(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterfancontrol/writeattributeairflowdirection(withvalue:expectedvalueinterval:).md)
 - [func writeAttributeAirflowDirection(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterfancontrol/writeattributeairflowdirection(withvalue:expectedvalueinterval:params:).md)
 - [func writeAttributeFanMode(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterfancontrol/writeattributefanmode(withvalue:expectedvalueinterval:).md)

@@ -1,6 +1,6 @@
 # AccessoryWidgetGroup
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 A view type that has a label at the top and three content views masked with a circle or rounded square.
@@ -45,12 +45,18 @@ You can change the shape with which the content views are masked using the `.acc
 ### Initializers
 - [init(some StringProtocol, content: () -> Content)](accessorywidgetgroup/init(_:content:)-3ij0e.md)
   Creates an `AccessoryWidgetGroup` that generates its label from a string.
+- [init(LocalizedStringResource, content: () -> Content)](accessorywidgetgroup/init(_:content:)-75rkg.md)
+  Creates an `AccessoryWidgetGroup` that generates its label from a localized string resource.
 - [init(LocalizedStringKey, content: () -> Content)](accessorywidgetgroup/init(_:content:)-nb0.md)
   Creates an `AccessoryWidgetGroup` that generates its label from a localized string key.
+- [init(LocalizedStringResource, image: ImageResource, content: () -> Content)](accessorywidgetgroup/init(_:image:content:)-385rt.md)
+  Creates an `AccessoryWidgetGroup` that generates its label from a localized string resource and image resource.
 - [init(LocalizedStringKey, image: ImageResource, content: () -> Content)](accessorywidgetgroup/init(_:image:content:)-50iyk.md)
   Creates an `AccessoryWidgetGroup` that generates its label from a localized string key and image resource.
 - [init(some StringProtocol, image: ImageResource, content: () -> Content)](accessorywidgetgroup/init(_:image:content:)-66iys.md)
   Creates an `AccessoryWidgetGroup` that generates its label from a string and image resource.
+- [init(LocalizedStringResource, systemImage: String, content: () -> Content)](accessorywidgetgroup/init(_:systemimage:content:)-3mynu.md)
+  Creates an `AccessoryWidgetGroup` that generates its label from a localized string resource and a system image name.
 - [init(LocalizedStringKey, systemImage: String, content: () -> Content)](accessorywidgetgroup/init(_:systemimage:content:)-54h9w.md)
   Creates an `AccessoryWidgetGroup` that generates its label from a localized string key and a system image name.
 - [init(some StringProtocol, systemImage: String, content: () -> Content)](accessorywidgetgroup/init(_:systemimage:content:)-7rnqc.md)
@@ -62,6 +68,13 @@ You can change the shape with which the content views are masked using the `.acc
 
 ### Conforms To
 - [View](../SwiftUI/View.md)
+
+## See Also
+
+- [struct AccessoryWidgetGroupStyle](accessorywidgetgroupstyle.md)
+  The style for an [`AccessoryWidgetGroup`](accessorywidgetgroup.md) view.
+- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+  Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
 
 
 ---

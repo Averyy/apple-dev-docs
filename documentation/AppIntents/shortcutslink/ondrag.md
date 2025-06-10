@@ -8,9 +8,9 @@ Activates this view as the source of a drag and drop operation.
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst 13.4+
+- Mac Catalyst ?+
 - macOS 10.15+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

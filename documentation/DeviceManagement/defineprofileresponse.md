@@ -3,8 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The response to defining a profile.
-
 **Availability**:
 - Device Assignment Services ?+
 - VPP License Management ?+
@@ -17,14 +15,12 @@ object DefineProfileResponse
 
 ## Topics
 
-### Objects
+### Dictionaries
 - [object DefineProfileResponse.Devices](defineprofileresponse/devices-data.dictionary.md)
-  A dictionary containing device information.
 
 ## See Also
 
 - [object DefineProfileResponse.Devices](defineprofileresponse/devices-data.dictionary.md)
-  A dictionary containing device information.
 
 
 ---

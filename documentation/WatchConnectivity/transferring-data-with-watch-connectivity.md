@@ -1,6 +1,6 @@
 # Transferring data with Watch Connectivity
 
-**Framework**: Watchconnectivity
+**Framework**: Watch Connectivity
 
 Transfer data between a watchOS app and its companion iOS app.
 
@@ -15,8 +15,6 @@ Transfer data between a watchOS app and its companion iOS app.
 Some watchOS apps rely on their companion iOS app to perform complicated tasks, and need to exchange data with the companion app even when there’s no internet connection. The [`Watch Connectivity`](WatchConnectivity.md) framework provides APIs for this purpose. This sample demonstrates how to use the APIs, and how to handle Watch Connectivity background tasks.
 
 > ❗ **Important**: Use a physical iPhone and Apple Watch to test this sample code project.
-
-Use a physical iPhone and Apple Watch to test this sample code project.
 
 ##### Configure the Sample Code Project
 

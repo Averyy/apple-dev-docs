@@ -1,6 +1,6 @@
 # Enhancing your app with fluid transitions
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Use the fluid zoom transition to provide a continuously interactive and responsive experience in your app.
 
@@ -109,4 +109,4 @@ When using continuously interactive transitions, your app needs to be ready for 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/enhancing-your-app-with-fluid-transitions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/enhancing-your-app-with-fluid-transitions)*

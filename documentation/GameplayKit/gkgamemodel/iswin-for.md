@@ -1,6 +1,6 @@
 # isWin(for:)
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: method
 
 Returns a Boolean value indicating whether the current state of the game model reflects a win for the specified player.

@@ -16,8 +16,6 @@ After you add the Wallet capability, Xcode updates your target’s entitlements 
 
 > ❗ **Important**: The capability fetches and displays the pass type identifiers you register in your developer account; Xcode doesn’t provide a way to register them locally. For more information, see [`Create Wallet identifiers and certificates`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/create-wallet-identifiers-and-certificates).
 
-The capability fetches and displays the pass type identifiers you register in your developer account; Xcode doesn’t provide a way to register them locally. For more information, see [`Create Wallet identifiers and certificates`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-capabilities/create-wallet-identifiers-and-certificates).
-
 ##### Restrict Your App to a Subset of Pass Types
 
 To minimize potential security risks and help protect the user’s privacy, follow these steps to provide your app with access to only the pass type identifiers it requires to function properly:

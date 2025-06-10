@@ -1,6 +1,6 @@
 # sunrise
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The sunrise time immediately before the solar transit closest to calendar noon.

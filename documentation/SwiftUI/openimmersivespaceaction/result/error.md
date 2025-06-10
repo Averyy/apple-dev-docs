@@ -6,6 +6,7 @@
 The system was unable to open the immersive space.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

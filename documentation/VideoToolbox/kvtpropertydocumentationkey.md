@@ -1,6 +1,6 @@
 # kVTPropertyDocumentationKey
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Dictionary key to access any documentation intended for developers only.

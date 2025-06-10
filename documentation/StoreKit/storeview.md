@@ -72,6 +72,7 @@ You can customize the appearance of the products using product view styles, such
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also
@@ -80,6 +81,7 @@ You can customize the appearance of the products using product view styles, such
   A view that merchandises an individual In-App Purchase product.
 - [struct SubscriptionStoreView](subscriptionstoreview.md)
   A view that merchandises a collection of auto-renewable subscription options that belong to the same subscription group.
+- [struct SubscriptionOfferView](subscriptionofferview.md)
 - [Backyard Birds: Building an app with SwiftData and widgets](../SwiftUI/Backyard-birds-sample.md)
   Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
 

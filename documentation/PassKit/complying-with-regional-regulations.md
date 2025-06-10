@@ -1,6 +1,6 @@
 # Complying with regional regulations
 
-**Framework**: Passkit
+**Framework**: PassKit (Apple Pay and Wallet)
 
 Check regional regulations for possible requirements for your Apple Pay-based implementation.
 
@@ -24,4 +24,4 @@ For more information on PSD2, see [`Strong Customer Authentication Transactions 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/complying-with-regional-regulations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/passkit/complying-with-regional-regulations)*

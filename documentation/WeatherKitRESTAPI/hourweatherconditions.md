@@ -1,6 +1,6 @@
 # HourWeatherConditions
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 The historical or forecasted weather conditions for a specified hour.

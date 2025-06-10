@@ -80,4 +80,4 @@ To see detailed information about a particular setting, select the setting and c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-the-build-settings-of-a-target)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-the-build-settings-of-a-target)*

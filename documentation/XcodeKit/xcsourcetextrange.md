@@ -1,6 +1,6 @@
 # XCSourceTextRange
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: class
 
 A half-open range of text in a buffer you use to select text or specify the insertion point for new text.

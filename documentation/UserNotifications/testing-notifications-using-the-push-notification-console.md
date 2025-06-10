@@ -1,6 +1,6 @@
 # Testing notifications using the Push Notification Console
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Send test notifications and access delivery logs to test your app’s integration with Apple Push Notification service (APNs).
 
@@ -88,4 +88,4 @@ You can generate an authentication token using the JWT generator by providing yo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/testing-notifications-using-the-push-notification-console)*
+*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/testing-notifications-using-the-push-notification-console)*

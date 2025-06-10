@@ -12,6 +12,7 @@ Directions suitable for any transportation option.
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 1.0+
 
 ## Declaration
 
@@ -23,10 +24,12 @@ static var any: MKDirectionsTransportType { get }
 
 - [static var automobile: MKDirectionsTransportType](mkdirectionstransporttype/automobile.md)
   Directions suitable for use while driving.
-- [static var walking: MKDirectionsTransportType](mkdirectionstransporttype/walking.md)
-  Directions suitable for a pedestrian.
+- [static var cycling: MKDirectionsTransportType](mkdirectionstransporttype/cycling.md)
+  Directions suitable for use while cycling.
 - [static var transit: MKDirectionsTransportType](mkdirectionstransporttype/transit.md)
   Directions suitable for public transportation.
+- [static var walking: MKDirectionsTransportType](mkdirectionstransporttype/walking.md)
+  Directions suitable for a pedestrian.
 
 
 ---

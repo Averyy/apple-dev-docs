@@ -28,8 +28,6 @@ An object cannot be deleted if it has a relationship has a “deny” delete rul
 
 > ❗ **Important**:  Subclasses should invoke super’s implementation before performing their own validation, and should combine any error returned by super’s implementation with their own (see Managed Object Validation).
 
- Subclasses should invoke super’s implementation before performing their own validation, and should combine any error returned by super’s implementation with their own (see Managed Object Validation).
-
 ## See Also
 
 - [func validateValue(AutoreleasingUnsafeMutablePointer<AnyObject?>, forKey: String) throws](nsmanagedobject/validatevalue(_:forkey:).md)

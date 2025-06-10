@@ -35,7 +35,7 @@ Any [`doesNotRecognizeSelector(_:)`](nsobject-swift.class/doesnotrecognizeselect
 
 The `_cmd` variable is a hidden argument passed to every method that is the current selector; in this example, it identifies the selector for the `copy` method. This code prevents instances of the subclass from responding to `copy` messages or superclasses from forwarding `copy` messages—although [`responds(to:)`](nsobjectprotocol/responds(to:).md) will still report that the receiver has access to a `copy` method.
 
-If you override this method, you must call `super` or raise an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) exception at the end of your implementation. In other words, this method must not return normally; it must always result in an exception being thrown.
+If you override this method, you must call `super` or raise an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception at the end of your implementation. In other words, this method must not return normally; it must always result in an exception being thrown.
 
 ## Parameters
 

@@ -29,8 +29,6 @@ Only one reader session of any type can be active in the system at a time. The 
 
 > ❗ **Important**:  Core NFC doesn’t support payment-related Application IDs.
 
- Core NFC doesn’t support payment-related Application IDs.
-
 ## Topics
 
 ### Creating a Tag Reader Session
@@ -55,6 +53,8 @@ Only one reader session of any type can be active in the system at a time. The 
 
 ### Inherits From
 - [NFCReaderSession](nfcreadersession-swift.class.md)
+### Inherited By
+- [NFCPaymentTagReaderSession](nfcpaymenttagreadersession.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)

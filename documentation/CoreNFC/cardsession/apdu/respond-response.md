@@ -21,8 +21,6 @@ Your client must respond to each APDU it receives. Failing to respond throws an 
 
 > ⚠️ **Warning**:  Only respond to a given APDU once. Calling this method more than once raises [`fatalError(_:file:line:)`](https://developer.apple.com/documentation/Swift/fatalError(_:file:line:)). The exception to this is if the call throws [`CardSession.Error.transmissionError`](cardsession/error/transmissionerror.md). In this case, you can retry the response by calling [`respond(response:)`](cardsession/apdu/respond(response:).md) again.
 
- Only respond to a given APDU once. Calling this method more than once raises [`fatalError(_:file:line:)`](https://developer.apple.com/documentation/Swift/fatalError(_:file:line:)). The exception to this is if the call throws [`CardSession.Error.transmissionError`](cardsession/error/transmissionerror.md). In this case, you can retry the response by calling [`respond(response:)`](cardsession/apdu/respond(response:).md) again.
-
 ## Parameters
 
 - `response`: The APDU data to send as a response.

@@ -38,8 +38,6 @@ Here are some general guidelines to keep in mind for obtaining valid consent:
 
 > ❗ **Important**:  Don’t use the [`App Tracking Transparency`](https://developer.apple.com/documentation/AppTrackingTransparency) prompt to obtain consent for sharing data with Apple through the [`Send Consumption Information`](send-consumption-information.md) API. Obtaining consent needed to use the [`Send Consumption Information`](send-consumption-information.md) endpoint is unrelated to [`App Tracking Transparency`](https://developer.apple.com/documentation/AppTrackingTransparency). These two features are distinct and unrelated.
 
- Don’t use the [`App Tracking Transparency`](https://developer.apple.com/documentation/AppTrackingTransparency) prompt to obtain consent for sharing data with Apple through the [`Send Consumption Information`](send-consumption-information.md) API. Obtaining consent needed to use the [`Send Consumption Information`](send-consumption-information.md) endpoint is unrelated to [`App Tracking Transparency`](https://developer.apple.com/documentation/AppTrackingTransparency). These two features are distinct and unrelated.
-
 The data you share with Apple through the [`Send Consumption Information`](send-consumption-information.md) API isn’t used for tracking. You must separately obtain consent from users when sharing data with Apple using the [`Send Consumption Information`](send-consumption-information.md) API.
 
 ##### Disclose Data Usage

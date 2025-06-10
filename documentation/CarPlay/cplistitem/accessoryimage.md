@@ -13,6 +13,7 @@ The image that the list item displays in its trailing region.
 ## Declaration
 
 ```swift
+@MainActor
 var accessoryImage: UIImage? { get }
 ```
 

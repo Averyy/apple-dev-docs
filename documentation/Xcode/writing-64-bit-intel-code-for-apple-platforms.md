@@ -70,4 +70,4 @@ The psABI rules only apply to C, C++, and Objective-C calls.  The Swift calling 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/writing-64-bit-intel-code-for-apple-platforms)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/writing-64-bit-intel-code-for-apple-platforms)*

@@ -1,6 +1,6 @@
 # isTextInteractionEnabled
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether to allow people to select or otherwise interact with text.

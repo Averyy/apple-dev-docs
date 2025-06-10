@@ -17,13 +17,6 @@
 var pullStreamNodes: [String : PHASEPullStreamNode] { get }
 ```
 
-#### Discussion
-
-```None
-@property pullStreamNodes
-@abstract A Dictionary containing the pull stream nodes associated with this sound event, for setting renderBlocks on.
-```
-
 
 ---
 

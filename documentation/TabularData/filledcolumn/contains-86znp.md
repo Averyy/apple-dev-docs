@@ -1,6 +1,6 @@
 # contains(_:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns a Boolean value indicating whether the sequence contains the given element.

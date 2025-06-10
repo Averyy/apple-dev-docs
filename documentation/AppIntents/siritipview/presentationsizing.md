@@ -1,6 +1,6 @@
 # presentationSizing(_:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Sets the sizing of the containing presentation.

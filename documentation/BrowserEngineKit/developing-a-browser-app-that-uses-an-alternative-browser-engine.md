@@ -1,6 +1,6 @@
 # Developing a browser app that uses an alternative browser engine
 
-**Framework**: Browserenginekit
+**Framework**: BrowserEngineKit
 
 Create a web browser app and associated extensions.
 
@@ -176,4 +176,4 @@ Finally, the web-content process replies to the browser app, telling the `WebCon
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/developing-a-browser-app-that-uses-an-alternative-browser-engine)*
+*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/developing-a-browser-app-that-uses-an-alternative-browser-engine)*

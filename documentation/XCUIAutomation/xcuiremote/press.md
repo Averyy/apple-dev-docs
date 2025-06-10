@@ -1,6 +1,6 @@
 # press(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a momentary press of a button on a physical remote control.

@@ -1,6 +1,6 @@
 # forwardList
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The array of items that follow the current item.

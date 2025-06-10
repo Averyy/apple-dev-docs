@@ -1,6 +1,6 @@
 # webView(_:previewingViewControllerForElement:defaultActions:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the user performs a peek action.

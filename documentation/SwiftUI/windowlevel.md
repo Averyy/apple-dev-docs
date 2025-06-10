@@ -36,6 +36,7 @@ Use this in conjunction with the `.windowLevel(_:)` modifier to control window l
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

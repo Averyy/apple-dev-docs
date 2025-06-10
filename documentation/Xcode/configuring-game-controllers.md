@@ -52,4 +52,4 @@ For more information, see the video [`Tap into virtual and physical game control
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-game-controllers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-game-controllers)*

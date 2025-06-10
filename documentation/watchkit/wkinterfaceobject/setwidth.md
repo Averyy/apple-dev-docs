@@ -1,6 +1,6 @@
 # setWidth(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the absolute width (in points) of the object.

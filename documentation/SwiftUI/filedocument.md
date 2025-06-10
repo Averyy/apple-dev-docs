@@ -29,8 +29,6 @@ To store a document as a value type — like a structure — create a type that 
 
 > ❗ **Important**: If you store your document as a reference type — like a class — use [`ReferenceFileDocument`](referencefiledocument.md) instead.
 
-If you store your document as a reference type — like a class — use [`ReferenceFileDocument`](referencefiledocument.md) instead.
-
 Ensure that types that conform to this protocol are `Sendable`. In particular, SwiftUI calls the protocol’s methods from different isolation domains. Don’t perform serialization and deserialization on `MainActor`.
 
 ## Topics
@@ -54,6 +52,7 @@ Ensure that types that conform to this protocol are `Sendable`. In particular, S
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

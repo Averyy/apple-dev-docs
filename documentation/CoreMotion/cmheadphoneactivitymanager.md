@@ -26,8 +26,6 @@ This class provides similar information to [`CMMotionActivityManager`](cmmotiona
 
 > ❗ **Important**:  In iOS and macOS, include the [`NSMotionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMotionUsageDescription) key in your app’s `Info.plist` file. If this key is absent, trying to start headphone activity updates terminates your app.
 
- In iOS and macOS, include the [`NSMotionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMotionUsageDescription) key in your app’s `Info.plist` file. If this key is absent, trying to start headphone activity updates terminates your app.
-
 ## Topics
 
 ### Checking Availability

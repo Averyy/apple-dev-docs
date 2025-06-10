@@ -1,6 +1,6 @@
 # Specifying and decoding a configuration
 
-**Framework**: Managedapp
+**Framework**: ManagedApp
 
 Publish a configuration specification and implement a decoder that parses and validates configuration provided by an MDM admin.
 
@@ -265,4 +265,4 @@ After your app receives the configuration, it can adjust to the new information.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ManagedApp/specifying-and-decoding-a-configuration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/managedapp/specifying-and-decoding-a-configuration)*

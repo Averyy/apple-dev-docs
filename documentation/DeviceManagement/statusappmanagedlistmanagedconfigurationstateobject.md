@@ -6,11 +6,9 @@
 A dictionary that contains details about a declarative managed app’s managed configuration.
 
 **Availability**:
-- iOS 17.2+
-- iPadOS 17.2+
+- iOS 18.4+
+- iPadOS 18.4+
 - visionOS 2.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

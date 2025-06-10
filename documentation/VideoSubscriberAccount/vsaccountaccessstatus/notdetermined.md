@@ -1,6 +1,6 @@
 # VSAccountAccessStatus.notDetermined
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 The user hasn’t chosen whether to allow the app to access subscription information.

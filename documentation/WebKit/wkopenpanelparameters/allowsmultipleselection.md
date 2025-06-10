@@ -1,6 +1,6 @@
 # allowsMultipleSelection
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether the file upload control supports multiple files.
@@ -10,6 +10,7 @@ A Boolean value that indicates whether the file upload control supports multiple
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
 - macOS 10.12+
+- visionOS 2.4+
 
 ## Declaration
 

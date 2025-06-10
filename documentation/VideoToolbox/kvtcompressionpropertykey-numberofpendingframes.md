@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_NumberOfPendingFrames
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The number of pending frames in the compression session.

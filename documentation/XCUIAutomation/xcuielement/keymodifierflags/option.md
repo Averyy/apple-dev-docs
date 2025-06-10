@@ -1,6 +1,6 @@
 # option
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The Option key in a combination keystroke.

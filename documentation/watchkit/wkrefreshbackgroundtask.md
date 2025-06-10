@@ -1,6 +1,6 @@
 # WKRefreshBackgroundTask
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 The abstract superclass for WatchKit’s background task classes.
@@ -58,6 +58,7 @@ Don’t subclass or create instances of this class. The system automatically cre
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -83,4 +84,4 @@ Don’t subclass or create instances of this class. The system automatically cre
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkrefreshbackgroundtask)*

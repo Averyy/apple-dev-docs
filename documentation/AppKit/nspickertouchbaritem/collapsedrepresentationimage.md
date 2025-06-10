@@ -13,7 +13,7 @@
 
 ```swift
 @MainActor
-var collapsedRepresentationImage: NSImage? { get set }
+var collapsedRepresentationImage: UIImage? { get set }
 ```
 
 ## See Also

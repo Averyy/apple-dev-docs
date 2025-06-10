@@ -197,7 +197,7 @@ value contains 'nil'
 - The [`os_signpost(_:dso:log:name:signpostID:)`](https://developer.apple.com/documentation/os/os_signpost(_:dso:log:name:signpostID:)-2oz8u) and [`os_log(_:dso:log:type:_:)`](https://developer.apple.com/documentation/os/2320718-os_log) functions have been updated to not have a labeled `type` parameter. (40528229)
 - The [`zero`](https://developer.apple.com/documentation/UIKit/UIEdgeInsets/zero) property on [`UIEdgeInsets`](https://developer.apple.com/documentation/UIKit/UIEdgeInsets) can now be used. (40735990)
 - When a Swift method is exposed to Objective-C with a custom selector beginning with “new”, “copy”, or “mutableCopy”, it will correctly return an owned (+1) value rather than an autoreleased (+0) one when called from Objective-C, as expected by Objective-C ARC. (SR-6065](https://bugs.swift.org/browse/SR-6065) (34834291)
-- The [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) initializer [`init(for:)`](https://developer.apple.com/documentation/foundation/bundle/1417717-init) now returns the correct bundle when used on a class that inherits from a generic class. (40367300)
+- The [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) initializer [`init(for:)`](https://developer.apple.com/documentation/Foundation/Bundle/init(for:)) now returns the correct bundle when used on a class that inherits from a generic class. (40367300)
 - The [`type(of:)`](https://developer.apple.com/documentation/Swift/type(of:)) function now provides the expected result when object is being observed using key-value observing. (37319860)
 
 ##### Swift Language

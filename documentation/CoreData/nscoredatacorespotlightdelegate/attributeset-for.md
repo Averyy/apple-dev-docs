@@ -26,8 +26,6 @@ An instance of [`CSSearchableItemAttributeSet`](https://developer.apple.com/docu
 
 > ❗ **Important**:  If you enable [`isIndexedBySpotlight`](nspropertydescription/isindexedbyspotlight.md) on a property description that describes a relationship, override this method and return the necessary set of attributes. Core Data doesn’t automatically infer indexable information for relationships.
 
- If you enable [`isIndexedBySpotlight`](nspropertydescription/isindexedbyspotlight.md) on a property description that describes a relationship, override this method and return the necessary set of attributes. Core Data doesn’t automatically infer indexable information for relationships.
-
 To prevent Core Spotlight from indexing a specific managed object, override this method and return `nil` for that object.
 
 ## Parameters

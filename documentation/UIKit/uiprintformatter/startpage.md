@@ -14,7 +14,6 @@ The index of the first page that the print formatter lays out.
 ## Declaration
 
 ```swift
-@MainActor
 var startPage: Int { get set }
 ```
 

@@ -1,6 +1,6 @@
 # DOM_CSS_VMAX
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

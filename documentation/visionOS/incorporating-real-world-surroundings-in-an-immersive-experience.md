@@ -1,6 +1,6 @@
 # Incorporating real-world surroundings in an immersive experience
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Create an immersive experience by making your app’s content respond to the local shape of the world.
 
@@ -119,4 +119,4 @@ People using an app that leverages scene reconstruction typically don’t need t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/incorporating-real-world-surroundings-in-an-immersive-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/incorporating-real-world-surroundings-in-an-immersive-experience)*

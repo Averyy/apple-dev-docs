@@ -50,6 +50,7 @@ Use these constants with the [`imagePosition`](nsbutton/imageposition.md) proper
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

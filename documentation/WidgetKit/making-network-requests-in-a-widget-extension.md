@@ -1,6 +1,6 @@
 # Making network requests in a widget extension
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Update your widget with new information you fetch with a network request.
 
@@ -23,11 +23,9 @@ If the system terminates your widget extension before all events complete, use t
 
 > 💡 **Tip**: Consider initializing URLSession objects lazily and caching them in a central location so that your code works regardless of whether your extension remains active, is suspended, or is terminated.
 
-Consider initializing URLSession objects lazily and caching them in a central location so that your code works regardless of whether your extension remains active, is suspended, or is terminated.
-
 ##### Update Your Widget After Background Network Requests Complete
 
-After invoking [`onBackgroundURLSessionEvents(matching:_:)`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/onBackgroundURLSessionEvents(matching:_:)-fw6x), the system calls the [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](https://developer.apple.com/documentation/foundation/urlsessiondownloaddelegate/1411575-urlsession) method of the [`URLSessionDelegate`](https://developer.apple.com/documentation/Foundation/URLSessionDelegate) you supplied to the [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession). When the system has delivered all events, it calls the delegate’s [`urlSessionDidFinishEvents(forBackgroundURLSession:)`](https://developer.apple.com/documentation/foundation/urlsessiondelegate/1617185-urlsessiondidfinishevents) method.
+After invoking [`onBackgroundURLSessionEvents(matching:_:)`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/onBackgroundURLSessionEvents(matching:_:)-fw6x), the system calls the [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](https://developer.apple.com/documentation/Foundation/URLSessionDownloadDelegate/urlSession(_:downloadTask:didFinishDownloadingTo:)) method of the [`URLSessionDelegate`](https://developer.apple.com/documentation/Foundation/URLSessionDelegate) you supplied to the [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession). When the system has delivered all events, it calls the delegate’s [`urlSessionDidFinishEvents(forBackgroundURLSession:)`](https://developer.apple.com/documentation/Foundation/URLSessionDelegate/urlSessionDidFinishEvents(forBackgroundURLSession:)) method.
 
 To refresh your widget’s timeline after the network request completes, call the needed [`WidgetCenter`](widgetcenter.md) methods from your implementation of `SessionDidFinishEvents(forBackgroundURLSession:)`. Once you finish handling the events, call the completion handler of `onBackgroundURLSessionEvents(matching:_:)` that you previously stored.
 

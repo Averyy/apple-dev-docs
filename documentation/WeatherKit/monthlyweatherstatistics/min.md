@@ -1,6 +1,6 @@
 # min()
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns the minimum element in the sequence.

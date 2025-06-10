@@ -26,8 +26,6 @@ You may use this string to include information about the recurring payment amoun
 
 > ❗ **Important**:  You’re responsible to ensure that your use of this framework, including your billing agreement, is compliant with applicable legal requirements.
 
- You’re responsible to ensure that your use of this framework, including your billing agreement, is compliant with applicable legal requirements.
-
 The Apple Pay payment sheet displays the text of the [`billingAgreement`](pkrecurringpaymentrequest/billingagreement.md) string; however, long [`billingAgreement`](pkrecurringpaymentrequest/billingagreement.md) strings that don’t fit on the payment sheet screen appear truncated with an ellipsis. Users can select the Billing Details on the payment sheet to read the full text of the [`billingAgreement`](pkrecurringpaymentrequest/billingagreement.md) string, up to the maximum 500 characters.
 
 ## See Also

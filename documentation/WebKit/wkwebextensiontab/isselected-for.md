@@ -1,6 +1,6 @@
 # isSelected(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the selected state of the tab is needed.

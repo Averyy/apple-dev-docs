@@ -34,4 +34,4 @@ When you add the Group Activities capability, there are additional steps you mus
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-group-activities)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-group-activities)*

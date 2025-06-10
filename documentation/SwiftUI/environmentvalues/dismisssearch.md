@@ -1,6 +1,6 @@
 # dismissSearch
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 An action that ends the current search interaction.
@@ -121,4 +121,4 @@ People can dismiss the sheet by dragging it down, effectively canceling the oper
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/environmentvalues/dismisssearch)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/environmentvalues/dismisssearch)*

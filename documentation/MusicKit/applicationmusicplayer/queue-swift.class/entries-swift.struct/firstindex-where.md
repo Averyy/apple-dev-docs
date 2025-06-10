@@ -1,6 +1,6 @@
 # firstIndex(where:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Returns the first index in which an element of the collection satisfies the given predicate.

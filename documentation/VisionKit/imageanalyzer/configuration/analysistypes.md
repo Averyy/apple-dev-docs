@@ -1,6 +1,6 @@
 # analysisTypes
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The types of items that the image analyzer looks for in the image.

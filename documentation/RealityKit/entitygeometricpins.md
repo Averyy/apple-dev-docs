@@ -10,6 +10,7 @@ A structure that wraps all geometric pins an entity owns.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -21,7 +22,7 @@ struct EntityGeometricPins
 
 #### Overview
 
-Access an instance of this structure through the entity property [`pins`](entity/pins.md).
+Access an instance of this structure through the entity property `Entity/pins`.
 
 ## Topics
 
@@ -52,13 +53,12 @@ Access an instance of this structure through the entity property [`pins`](entity
 ### Type Aliases
 - [EntityGeometricPins.Element](entitygeometricpins/element.md)
   An individual pin in the collection.
-### Default Implementations
-- [Sequence Implementations](entitygeometricpins/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also
@@ -73,6 +73,8 @@ Access an instance of this structure through the entity property [`pins`](entity
   A type that describes physics joints.
 - [struct PhysicsJointsComponent](physicsjointscomponent.md)
   A component that stores physics joints which RealityKit simulates.
+- [struct AttachedTransformComponent](attachedtransformcomponent.md)
+  A component that stores an optional source pin owned by this entity and a target pin which this entity is attached to
 
 
 ---

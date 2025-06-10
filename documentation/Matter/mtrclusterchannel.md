@@ -26,8 +26,8 @@ class MTRClusterChannel
 ### Instance Methods
 - [func change(with: MTRChannelClusterChangeChannelParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRChannelClusterChangeChannelResponseParams?, (any Error)?) -> Void)](mtrclusterchannel/change(with:expectedvalues:expectedvalueinterval:completion:).md)
 - [func change(with: MTRChannelClusterChangeChannelParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: (MTRChannelClusterChangeChannelResponseParams?, (any Error)?) -> Void)](mtrclusterchannel/change(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func changeByNumber(with: MTRChannelClusterChangeChannelByNumberParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterchannel/changebynumber(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func changeByNumber(with: MTRChannelClusterChangeChannelByNumberParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: MTRStatusCompletion)](mtrclusterchannel/changebynumber(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func changeByNumber(with: MTRChannelClusterChangeChannelByNumberParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterchannel/changebynumber(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func changeByNumber(with: MTRChannelClusterChangeChannelByNumberParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterchannel/changebynumber(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
 - [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterchannel/readattributeacceptedcommandlist(with:).md)
 - [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterchannel/readattributeattributelist(with:).md)
 - [func readAttributeChannelList(with: MTRReadParams?) -> [String : Any]?](mtrclusterchannel/readattributechannellist(with:).md)
@@ -36,12 +36,12 @@ class MTRClusterChannel
 - [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterchannel/readattributefeaturemap(with:).md)
 - [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterchannel/readattributegeneratedcommandlist(with:).md)
 - [func readAttributeLineup(with: MTRReadParams?) -> [String : Any]?](mtrclusterchannel/readattributelineup(with:).md)
-- [func skip(with: MTRChannelClusterSkipChannelParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterchannel/skip(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func skip(with: MTRChannelClusterSkipChannelParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: MTRStatusCompletion)](mtrclusterchannel/skip(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func cancelRecordProgram(with: MTRChannelClusterCancelRecordProgramParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterchannel/cancelrecordprogram(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func skip(with: MTRChannelClusterSkipChannelParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterchannel/skip(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func skip(with: MTRChannelClusterSkipChannelParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterchannel/skip(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func cancelRecordProgram(with: MTRChannelClusterCancelRecordProgramParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterchannel/cancelrecordprogram(with:expectedvalues:expectedvalueinterval:completion:).md)
 - [func getProgramGuide(with: MTRChannelClusterGetProgramGuideParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRChannelClusterProgramGuideResponseParams?, (any Error)?) -> Void)](mtrclusterchannel/getprogramguide(with:expectedvalues:expectedvalueinterval:completion:).md)
 - [func getProgramGuide(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRChannelClusterProgramGuideResponseParams?, (any Error)?) -> Void)](mtrclusterchannel/getprogramguide(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func recordProgram(with: MTRChannelClusterRecordProgramParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterchannel/recordprogram(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func recordProgram(with: MTRChannelClusterRecordProgramParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterchannel/recordprogram(with:expectedvalues:expectedvalueinterval:completion:).md)
 
 ## Relationships
 

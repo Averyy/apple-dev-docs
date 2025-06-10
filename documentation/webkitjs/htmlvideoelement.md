@@ -1,6 +1,6 @@
 # HTMLVideoElement
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 A class representing the HTML `video` element that plays a video in a webpage. Use the [`HTMLAudioElement`](htmlaudioelement.md) class for the HTML `audio` element.

@@ -1,6 +1,6 @@
 # acceleration
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The acceleration that the user is giving to the device. 

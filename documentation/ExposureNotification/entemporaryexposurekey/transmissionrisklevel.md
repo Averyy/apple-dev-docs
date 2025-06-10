@@ -20,8 +20,6 @@ var transmissionRiskLevel: ENRiskLevel { get set }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 
- This property is available in iOS 12.5, and in iOS 13.5 and later.
-
 Each app defines its own meaning for each of the risk levels (0-7).
 
 Consistent Transmission Risk Levels across regions facilitate roaming, therefore it’s recommended that the Transmission Risk Levels describe the type of report. The supported report types are determined by the public health authority for each region. Your app must verify the report type with a public health authority before submitting it.

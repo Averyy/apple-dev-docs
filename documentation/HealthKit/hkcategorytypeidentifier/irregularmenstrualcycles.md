@@ -29,8 +29,6 @@ Use a [`HKCategoryValue.notApplicable`](hkcategoryvalue/notapplicable.md) value 
 
 > ❗ **Important**:  These samples are read-only. You can request permission to read the samples using this identifier, but you can’t request authorization to share them. This means you can’t save new infrequent menstrual cycle samples to the HealthKit store.
 
- These samples are read-only. You can request permission to read the samples using this identifier, but you can’t request authorization to share them. This means you can’t save new infrequent menstrual cycle samples to the HealthKit store.
-
 ## See Also
 
 - [static let menstrualFlow: HKCategoryTypeIdentifier](hkcategorytypeidentifier/menstrualflow.md)

@@ -1,6 +1,6 @@
 # tableView(_:didRemove:forRow:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Tells the delegate that a row view was removed from the table at the specified row.

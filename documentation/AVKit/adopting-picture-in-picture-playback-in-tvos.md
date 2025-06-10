@@ -1,6 +1,6 @@
 # Adopting Picture in Picture Playback in tvOS
 
-**Framework**: Avkit
+**Framework**: AVKit
 
 Add advanced multitasking capabilities to your video apps by using Picture in Picture playback in tvOS.
 
@@ -34,4 +34,4 @@ This sample code project must be run on a physical device.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/adopting-picture-in-picture-playback-in-tvos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/adopting-picture-in-picture-playback-in-tvos)*

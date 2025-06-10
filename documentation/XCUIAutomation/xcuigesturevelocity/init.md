@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: init
 
 Creates a gesture velocity, expressed as a float.

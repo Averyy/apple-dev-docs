@@ -1,6 +1,6 @@
 # MPSCNNFullyConnected
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: cl
 
 A fully connected convolution layer, also known as an inner product layer.

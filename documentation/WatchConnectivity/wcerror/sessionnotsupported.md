@@ -1,6 +1,6 @@
 # sessionNotSupported
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An error indicating that the current device doesn’t support the use of session objects.

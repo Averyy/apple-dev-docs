@@ -194,6 +194,8 @@ The operating systems on Apple devices monitor for hangs and hitches for running
   Identify responsiveness issues your users encounter, and use the hang and hitch data in Xcode Organizer to determine which issues are most important to fix.
 - [Understanding user interface responsiveness](understanding-user-interface-responsiveness.md)
   Make your app more responsive by examining the event-handling and rendering loop.
+- [Understanding and improving SwiftUI performance](understanding-and-improving-swiftui-performance.md)
+  Identify and address long-running view updates, and reduce the frequency of updates.
 - [Understanding hangs in your app](understanding-hangs-in-your-app.md)
   Determine the cause for delays in user interactions by examining the main thread and the main run loop.
 - [Understanding hitches in your app](understanding-hitches-in-your-app.md)
@@ -210,4 +212,4 @@ The operating systems on Apple devices monitor for hangs and hitches for running
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/improving-app-responsiveness)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/improving-app-responsiveness)*

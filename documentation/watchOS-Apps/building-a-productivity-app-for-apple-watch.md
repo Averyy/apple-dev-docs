@@ -1,6 +1,6 @@
 # Building a productivity app for Apple Watch
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Create a watch app to manage and share a task list and visualize the status with a chart.
 
@@ -35,4 +35,4 @@ Before you run the sample code project in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/building-a-productivity-app-for-apple-watch)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/building-a-productivity-app-for-apple-watch)*

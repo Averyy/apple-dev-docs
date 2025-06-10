@@ -22,7 +22,7 @@ new mapkit.Coordinate(
 Create a new `mapkit.Coordinate` like this:
 
 ```javascript
-var coordinate = new mapkit.Coordinate(37.415, -122.048333);	// latitude, longitude
+const coordinate = new mapkit.Coordinate(37.415, -122.048333);	// latitude, longitude
 coordinate.equals(otherCoordinate) // Returns true if otherCoordinate is at the same position (within a small margin of error).
 ```
 

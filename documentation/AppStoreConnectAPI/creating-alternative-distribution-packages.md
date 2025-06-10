@@ -1,6 +1,6 @@
 # Creating alternative distribution packages
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Create distribution packages for your apps that you distribute on alternative marketplaces or on the web.
 
@@ -115,4 +115,4 @@ Only one alternative distribution package can exist for an `appStoreVersion.` It
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/creating-alternative-distribution-packages)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/creating-alternative-distribution-packages)*

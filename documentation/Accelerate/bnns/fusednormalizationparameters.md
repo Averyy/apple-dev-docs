@@ -10,10 +10,10 @@ A structure that contains the parameters for a fused normalization layer.
 - iPadOS 15.0+
 - Mac Catalyst ?+
 - macOS 12.0+
+- tvOS 15.0+
 - visionOS ?+
 - watchOS 8.0+
 - Unknown ?+ - Deprecated
-- tvOS 15.0+
 
 ## Declaration
 

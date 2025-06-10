@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: init
 
-Created a new `MergeConversationAction`.
+Creates an action that merges two conversations.
 
 **Availability**:
 - iOS 17.4+
@@ -20,8 +20,8 @@ init(conversationUUID: UUID, conversationUUIDToMergeWith: UUID)
 
 ## Parameters
 
-- `conversationUUID`: The unique identifier of the   to which this action will apply.
-- `conversationUUIDToMergeWith`: The unique identifier of the second   that will be merged.
+- `conversationUUID`: The unique identifier of the first conversation.
+- `conversationUUIDToMergeWith`: The unique identifier of the other conversation.
 
 
 ---

@@ -20,8 +20,6 @@ var durationLevelValues: [NSNumber] { get set }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 
- This property is available in iOS 12.5, and in iOS 13.5 and later.
-
 This property contains eight levels, each defining a range of exposure duration:
 
 - `durationScores[0]` when duration equals 0.

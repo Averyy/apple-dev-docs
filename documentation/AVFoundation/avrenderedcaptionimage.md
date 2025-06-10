@@ -24,6 +24,9 @@ class AVRenderedCaptionImage
   An object that contains pixel data for the rendered caption.
 - [var position: CGPoint](avrenderedcaptionimage/position.md)
   A point that defines the position, in pixels, of the rendered caption image relative to the video frame.
+### Instance Properties
+- [var readOnlyPixelBuffer: CVReadOnlyPixelBuffer](avrenderedcaptionimage/readonlypixelbuffer.md)
+  A CVReadOnlyPixelBuffer that contains pixel data for the rendered caption
 
 ## Relationships
 

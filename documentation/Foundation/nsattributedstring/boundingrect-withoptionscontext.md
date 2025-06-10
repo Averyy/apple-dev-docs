@@ -17,7 +17,7 @@ Returns the bounding rectangle necessary to draw the string.
 ## Declaration
 
 ```swift
-func boundingRect(with size: CGSize, options: NSStringDrawingOptions = [], context: NSStringDrawingContext?) -> CGRect
+func boundingRect(with size: CGSize, options: NSString.DrawingOptions = [], context: NSStringDrawingContext?) -> CGRect
 ```
 
 #### Return Value

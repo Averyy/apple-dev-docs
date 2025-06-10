@@ -1,6 +1,6 @@
 # WKDownload.RedirectPolicy.allow
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Allow a redirect to proceed.

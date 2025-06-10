@@ -1,0 +1,31 @@
+# vertexStride
+
+**Framework**: Metal  
+**Kind**: property
+
+Sets the stride, in bytes, between vertices in the vertex buffer.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+var vertexStride: Int { get set }
+```
+
+#### Discussion
+
+The stride you specify needs to be a multiple of the size of the vertex format you provide in the [`vertexFormat`](mtl4accelerationstructuretrianglegeometrydescriptor/vertexformat.md) property. Similarly, you are responsible for ensuring this stride matches the vertex format data type’s alignment.
+
+Defaults to `0`, which signals the stride matches the size of the [`vertexFormat`](mtl4accelerationstructuretrianglegeometrydescriptor/vertexformat.md) data.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtl4accelerationstructuretrianglegeometrydescriptor/vertexstride)*

@@ -22,7 +22,7 @@ let CBATTErrorDomain: String
 
 #### Discussion
 
-This value identifies Core Bluetooth Attribute Protocol (ATT) errors when used as the [`domain`](https://developer.apple.com/documentation/foundation/nserror/1413924-domain) of an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) instance.
+This value identifies Core Bluetooth Attribute Protocol (ATT) errors when used as the [`domain`](https://developer.apple.com/documentation/Foundation/NSError/domain) of an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) instance.
 
 ## See Also
 

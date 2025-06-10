@@ -49,6 +49,7 @@ These values are ordered from least-fertile (Dry) to most-fertile (EggWhite).
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

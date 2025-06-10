@@ -1,6 +1,6 @@
 # init(compressedContentsOfDirectoryAtURL:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an attachment containing a zipped archive of an existing directory on disk.

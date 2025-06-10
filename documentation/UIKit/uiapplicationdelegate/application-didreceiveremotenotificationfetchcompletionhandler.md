@@ -1,6 +1,6 @@
 # application(_:didReceiveRemoteNotification:fetchCompletionHandler:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Tells the app that a remote notification arrived that indicates there is data to be fetched.

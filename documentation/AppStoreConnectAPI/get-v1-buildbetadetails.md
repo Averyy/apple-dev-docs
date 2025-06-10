@@ -14,6 +14,7 @@ Find and list build beta details for all builds.
   Get a specific build beta details resource.
 - [Read the Build Information of a Build Beta Detail](get-v1-buildbetadetails-_id_-build.md)
   Get the build information for a specific build beta details resource.
+- [GET /v1/buildBetaDetails/{id}/relationships/build](get-v1-buildbetadetails-_id_-relationships-build.md)
 
 
 ---

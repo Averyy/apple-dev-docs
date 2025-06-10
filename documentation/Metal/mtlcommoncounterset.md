@@ -29,8 +29,6 @@ This type defines the constants that let a GPU device declare which counter sets
 
 > ❗ **Important**:  Some GPUs may only support some of the counters within a counter set.
 
- Some GPUs may only support some of the counters within a counter set.
-
 For more information, see [`Confirming which Counters and Counter Sets a GPU Supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md).
 
 ## Topics
@@ -53,6 +51,7 @@ For more information, see [`Confirming which Counters and Counter Sets a GPU Sup
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

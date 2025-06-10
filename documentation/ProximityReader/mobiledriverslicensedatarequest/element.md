@@ -9,6 +9,7 @@ A type that represents an element you can request from a mobile driver’s licen
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -44,16 +45,28 @@ struct Element
   The document’s number, as defined by the document’s issuing authority.
 - [static let drivingPrivileges: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/drivingprivileges.md)
   The mobile driver’s license holder’s driving privileges.
+- [static let eyeColor: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/eyecolor.md)
+  The mobile driver’s license holder’s eye color on record with the issuer.
 - [static let familyName: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/familyname.md)
   The mobile driver’s license holder’s family name or last name.
 - [static let givenName: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/givenname.md)
   The mobile driver’s license holder’s given name or first name.
+- [static let hairColor: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/haircolor.md)
+  The mobile driver’s license holder’s hair color on record with the issuer.
+- [static let height: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/height.md)
+  The mobile driver’s license holder’s height on record with the issuer.
 - [static let issuingAuthority: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/issuingauthority.md)
   The state or government that issued the identity document.
+- [static let organDonorStatus: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/organdonorstatus.md)
+  The mobile driver’s license holder’s organ donor status on record with the issuer.
 - [static let portrait: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/portrait.md)
   The picture of the mobile driver’s license holder on record with the issuer.
 - [static let sex: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/sex.md)
   The mobile driver’s license holder’s sex.
+- [static let veteranStatus: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/veteranstatus.md)
+  The mobile driver’s license holder’s veteran status on record with the issuer.
+- [static let weight: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/weight.md)
+  The mobile driver’s license holder’s weight on record with the issuer.
 ### Type Methods
 - [static func ageAtLeast(Int) -> MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/ageatleast(_:).md)
   A Boolean value that indicates whether the mobile driver’s license holder’s age is at least the given age.
@@ -66,6 +79,7 @@ struct Element
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

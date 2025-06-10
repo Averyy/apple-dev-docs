@@ -1,6 +1,6 @@
 # TimelineReloadPolicy
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 A type that indicates the earliest date WidgetKit requests a new timeline from the widget’s provider.
@@ -8,8 +8,9 @@ A type that indicates the earliest date WidgetKit requests a new timeline from t
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration

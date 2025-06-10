@@ -1,6 +1,6 @@
 # init(forTestCaseWithName:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates a test suite that contains a test case with the specified name.

@@ -1,6 +1,6 @@
 # Showcase App Data in Spotlight
 
-**Framework**: Coredata
+**Framework**: Core Data
 
 Index app data so users can find it by using Spotlight search.
 
@@ -26,4 +26,4 @@ Index app data so users can find it by using Spotlight search.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/showcase-app-data-in-spotlight)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coredata/showcase-app-data-in-spotlight)*

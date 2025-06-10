@@ -1,6 +1,6 @@
 # xpc_activity_handler_t
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: typealias
 
 A block to call when an XPC activity becomes eligible to run.

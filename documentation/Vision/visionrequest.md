@@ -47,6 +47,7 @@ protocol VisionRequest : CustomStringConvertible, Hashable, Sendable
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Inherited By
 - [ImageProcessingRequest](imageprocessingrequest.md)
 - [StatefulRequest](statefulrequest.md)
@@ -67,6 +68,7 @@ protocol VisionRequest : CustomStringConvertible, Hashable, Sendable
 - [DetectHumanBodyPoseRequest](detecthumanbodyposerequest.md)
 - [DetectHumanHandPoseRequest](detecthumanhandposerequest.md)
 - [DetectHumanRectanglesRequest](detecthumanrectanglesrequest.md)
+- [DetectLensSmudgeRequest](detectlenssmudgerequest.md)
 - [DetectRectanglesRequest](detectrectanglesrequest.md)
 - [DetectTextRectanglesRequest](detecttextrectanglesrequest.md)
 - [DetectTrajectoriesRequest](detecttrajectoriesrequest.md)
@@ -77,6 +79,7 @@ protocol VisionRequest : CustomStringConvertible, Hashable, Sendable
 - [GeneratePersonInstanceMaskRequest](generatepersoninstancemaskrequest.md)
 - [GeneratePersonSegmentationRequest](generatepersonsegmentationrequest.md)
 - [RecognizeAnimalsRequest](recognizeanimalsrequest.md)
+- [RecognizeDocumentsRequest](recognizedocumentsrequest.md)
 - [RecognizeTextRequest](recognizetextrequest.md)
 - [TrackHomographicImageRegistrationRequest](trackhomographicimageregistrationrequest.md)
 - [TrackObjectRequest](trackobjectrequest.md)
@@ -96,6 +99,10 @@ protocol VisionRequest : CustomStringConvertible, Hashable, Sendable
   An object that processes one or more image-analysis requests pertaining to a single image.
 - [protocol VisionObservation](visionobservation.md)
   A type for objects produced by image-analysis requests.
+- [struct DetectLensSmudgeRequest](detectlenssmudgerequest.md)
+  A request that detects a smudge on a lens from an image or video frame capture.
+- [struct SmudgeObservation](smudgeobservation.md)
+  An observation that provides an overall score of the presence of a smudge in an image or video frame capture.
 
 
 ---

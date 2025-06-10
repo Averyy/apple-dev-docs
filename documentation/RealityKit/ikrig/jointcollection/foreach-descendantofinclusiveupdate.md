@@ -1,6 +1,6 @@
 # forEach(descendantOf:inclusive:update:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: method
 
 Calls the provided closure on each element in the hierarchy rooted at the named joint.
@@ -10,6 +10,7 @@ Calls the provided closure on each element in the hierarchy rooted at the named 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

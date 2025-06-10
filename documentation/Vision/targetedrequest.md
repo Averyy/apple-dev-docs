@@ -26,6 +26,7 @@ protocol TargetedRequest : VisionRequest
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionRequest](visionrequest.md)
 ### Conforming Types
 - [TrackHomographicImageRegistrationRequest](trackhomographicimageregistrationrequest.md)

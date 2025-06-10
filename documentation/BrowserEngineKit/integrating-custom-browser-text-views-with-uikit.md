@@ -1,6 +1,6 @@
 # Integrating custom browser text views with UIKit
 
-**Framework**: Browserenginekit
+**Framework**: BrowserEngineKit
 
 Process keyboard interactions asynchronously in your iOS browser app’s text view.
 
@@ -112,4 +112,4 @@ On iPad, a person can dismiss the on-screen keyboard from a control on the keybo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/integrating-custom-browser-text-views-with-uikit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/integrating-custom-browser-text-views-with-uikit)*

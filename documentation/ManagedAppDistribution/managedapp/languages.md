@@ -20,8 +20,6 @@ let languages: [Locale.Language]
 
 > 💡 **Tip**: Use `Locale.localizedString(forLanguageCode:)` to obtain a display name for the language, using [`metadataLanguage`](managedapp/metadatalanguage.md)  to create the `Locale`.
 
-Use `Locale.localizedString(forLanguageCode:)` to obtain a display name for the language, using [`metadataLanguage`](managedapp/metadatalanguage.md)  to create the `Locale`.
-
 ## See Also
 
 - [let metadataLanguage: Locale.Language?](managedapp/metadatalanguage.md)

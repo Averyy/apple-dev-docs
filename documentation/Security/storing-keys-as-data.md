@@ -30,8 +30,6 @@ Avoid insecure distribution of cryptographic keys, and pay special attention to 
 
 > ❗ **Important**:  If there’s even a possibility that an untrusted entity has gained access to your private key, it is compromised and you should stop using it.
 
- If there’s even a possibility that an untrusted entity has gained access to your private key, it is compromised and you should stop using it.
-
 ##### Restore a Key From a Data Instance
 
 When you’re ready to restore the data instance back into a key, use the [`SecKeyCreateWithData(_:_:_:)`](seckeycreatewithdata(_:_:_:).md) function:

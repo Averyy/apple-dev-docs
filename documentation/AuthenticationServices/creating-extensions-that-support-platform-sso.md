@@ -28,7 +28,7 @@ The key service registers encryption keys to unlock the Mac at the login window 
 
 ##### Enable Ticket Granting Ticket Tgt with the Kerberos Sso Extension
 
-Set the following values in the [`ExtensibleSingleSignOnKerberos.ExtensionData`](https://developer.apple.com/documentation/devicemanagement/extensiblesinglesignonkerberos/extensiondata) to enable use of the platform SSO TGT with the Kerberos SSO extension:
+Set the following values in the [`ExtensibleSingleSignOnKerberos.ExtensionData`](https://developer.apple.com/documentation/DeviceManagement/ExtensibleSingleSignOnKerberos/ExtensionData-data.dictionary) to enable use of the platform SSO TGT with the Kerberos SSO extension:
 
 ##### Use Diagnostics to Iterate on the Configuration During Development
 

@@ -6,7 +6,8 @@
 Returns the live workout builder associated with the workout session.
 
 **Availability**:
-- macOS ?+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
 - watchOS 5.0+
 
 ## Declaration

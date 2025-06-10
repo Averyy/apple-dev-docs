@@ -1,6 +1,6 @@
 # Creating immersive experiences using a full-screen layout
 
-**Framework**: Tvuikit
+**Framework**: TVUIKit
 
 Display content with a collection view that maximizes the tvOS experience.
 
@@ -26,4 +26,4 @@ Display content with a collection view that maximizes the tvOS experience.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVUIKit/creating-immersive-experiences-using-a-full-screen-layout)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvuikit/creating-immersive-experiences-using-a-full-screen-layout)*

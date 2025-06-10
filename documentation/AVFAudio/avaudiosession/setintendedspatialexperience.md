@@ -21,8 +21,6 @@ func setIntendedSpatialExperience(_ spatialExperience: any AVAudioSessionSpatial
 
 ## See Also
 
-- [var intendedSpatialExperience: any AVAudioSessionSpatialExperience](avaudiosession/intendedspatialexperience-1qwbe.md)
-  The spatial audio experience your app intends to provide the user.
 - [protocol AVAudioSessionSpatialExperience](../AVFoundation/AVAudioSessionSpatialExperience.md)
   A protocol that defines types of spatial audio experiences that the system supports.
 - [AVAudioSession.HeadTrackedSpatialExperience](avaudiosession/headtrackedspatialexperience.md)

@@ -16,6 +16,7 @@ object CertificateCreateRequest.Data.Relationships
 
 ### Dictionaries
 - [object CertificateCreateRequest.Data.Relationships.MerchantId](certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/merchantid-data.dictionary.md)
+- [object CertificateCreateRequest.Data.Relationships.PassTypeId](certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary.md)
 
 
 ---

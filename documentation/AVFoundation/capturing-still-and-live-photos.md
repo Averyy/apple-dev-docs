@@ -1,6 +1,6 @@
 # Capturing Still and Live Photos
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Configure and capture single or multiple still images, Live Photos, and other forms of photography.
 
@@ -128,4 +128,4 @@ When your captured image data is ready for use, the photo output calls your dele
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/capturing-still-and-live-photos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/capturing-still-and-live-photos)*

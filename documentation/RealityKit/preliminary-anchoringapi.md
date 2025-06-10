@@ -1,6 +1,6 @@
 # Preliminary_AnchoringAPI
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 A schema that defines the placement of a prim and its children at a real-world location.
 
@@ -45,4 +45,4 @@ Since the runtime doesn’t observe anchorable prim hierarchies, you need to def
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/preliminary-anchoringapi)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/preliminary-anchoringapi)*

@@ -36,7 +36,15 @@ For more information about specific clocks see `ContinuousClock` and `Suspending
 ### Instance Properties
 - [var minimumResolution: Self.Duration](clock/minimumresolution.md)
 - [var now: Self.Instant](clock/now.md)
+- [var traits: ClockTraits](clock/traits.md)
+  The traits associated with this clock instance.
 ### Instance Methods
+- [func convert(from: Duration) -> Self.Duration?](clock/convert(from:)-37htx.md)
+  Convert a Swift Duration to a Clock-specific Duration
+- [func convert(from: Self.Duration) -> Duration?](clock/convert(from:)-8sz7z.md)
+  Convert a Clock-specific Duration to a Swift Duration
+- [func convert<OtherClock>(instant: OtherClock.Instant, from: OtherClock) -> Self.Instant?](clock/convert(instant:from:).md)
+  Convert an `Instant` from some other clock’s `Instant`
 - [func measure(() throws -> Void) rethrows -> Self.Instant.Duration](clock/measure(_:).md)
   Measure the elapsed time to execute a closure.
 - [func measure(isolation: isolated (any Actor)?, () async throws -> Void) async rethrows -> Self.Instant.Duration](clock/measure(isolation:_:).md)
@@ -54,12 +62,15 @@ For more information about specific clocks see `ContinuousClock` and `Suspending
 
 ### Inherits From
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 ### Conforming Types
 - [ContinuousClock](continuousclock.md)
 - [SuspendingClock](suspendingclock.md)
 
 ## See Also
 
+- [struct ClockTraits](clocktraits.md)
+  Represents traits of a particular Clock implementation.
 - [struct ContinuousClock](continuousclock.md)
   A clock that measures time that always increments and does not stop incrementing while the system is asleep.
 - [struct SuspendingClock](suspendingclock.md)

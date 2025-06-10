@@ -146,4 +146,4 @@ func sumNonOptional(i: Int?, j: Int?, k: Int?) -> Int? {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/improving-build-efficiency-with-good-coding-practices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/improving-build-efficiency-with-good-coding-practices)*

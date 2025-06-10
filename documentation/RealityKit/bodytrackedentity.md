@@ -29,30 +29,13 @@ Like a [`ModelEntity`](modelentity.md), a [`BodyTrackedEntity`](bodytrackedentit
 
 For an example of how to use a body-tracked entity, see [`Capturing Body Motion in 3D`](https://developer.apple.com/documentation/ARKit/capturing-body-motion-in-3d).
 
-## Topics
-
-### Configuring body tracking
-- [var bodyTracking: BodyTrackingComponent](bodytrackedentity/bodytracking.md)
-  The body-tracking component for the body-tracked entity.
-### Configuring the model
-- [var model: ModelComponent?](bodytrackedentity/model.md)
-  The model component for the entity.
-- [var jointNames: [String]](bodytrackedentity/jointnames.md)
-  The names of all the joints in the model entity.
-- [var jointTransforms: [Transform]](bodytrackedentity/jointtransforms.md)
-  The relative joint transforms of the model entity.
-### Setting debug options
-- [var modelDebugOptions: ModelDebugOptionsComponent?](bodytrackedentity/modeldebugoptions.md)
-  Configures the debug visualization of this model.
-### Default Implementations
-- [HasBodyTracking Implementations](bodytrackedentity/hasbodytracking-implementations.md)
-- [HasModel Implementations](bodytrackedentity/hasmodel-implementations.md)
-
 ## Relationships
 
 ### Inherits From
 - [Entity](entity.md)
 ### Conforms To
+- [CoordinateSpace3D](../Spatial/CoordinateSpace3D.md)
+- [CoordinateSpace3DFloat](../Spatial/CoordinateSpace3DFloat.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [EventSource](eventsource.md)
@@ -63,8 +46,10 @@ For an example of how to use a body-tracked entity, see [`Capturing Body Motion 
 - [HasTransform](hastransform.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
+- [Observable](../Observation/Observable.md)
 - [RealityCoordinateSpace](realitycoordinatespace.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

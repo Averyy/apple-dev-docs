@@ -1,6 +1,6 @@
 # icon(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the extension’s icon image for the specified size.

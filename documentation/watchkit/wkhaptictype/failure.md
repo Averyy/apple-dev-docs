@@ -1,6 +1,6 @@
 # WKHapticType.failure
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Indicates the failed completion of a task or answering of a question.

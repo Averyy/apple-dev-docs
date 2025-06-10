@@ -12,8 +12,6 @@ The SCEP dictionary.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,12 +21,7 @@ object SCEP.PayloadContent
 
 ## Topics
 
-### Profiles
-- [object SCEP.PayloadContent.SubjectAltName](scep/payloadcontent-data.dictionary/subjectaltname-data.dictionary.md)
-  An optional dictionary that provides values required by the CA for issuing a certificate.
-
-## See Also
-
+### Objects
 - [object SCEP.PayloadContent.SubjectAltName](scep/payloadcontent-data.dictionary/subjectaltname-data.dictionary.md)
   An optional dictionary that provides values required by the CA for issuing a certificate.
 

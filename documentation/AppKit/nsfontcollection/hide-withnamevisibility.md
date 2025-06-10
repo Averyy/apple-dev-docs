@@ -1,6 +1,6 @@
 # hide(withName:visibility:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Remove from view the named font collection with the specified visibility.

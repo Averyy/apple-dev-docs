@@ -1,6 +1,6 @@
 # recommendedVideoSettingsForAssetWriter(writingTo:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Specifies the recommended settings for use with an AVAssetWriterInput.

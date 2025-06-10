@@ -6,19 +6,19 @@
 Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 8.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
 nonisolated
-func accessibilityRotor<Content>(_ label: Text, @AccessibilityRotorContentBuilder entries: @escaping () -> Content) -> some View where Content : AccessibilityRotorContent
+func accessibilityRotor<Content>(_ label: LocalizedStringResource, @AccessibilityRotorContentBuilder entries: @escaping () -> Content) -> some View where Content : AccessibilityRotorContent
 ```
 
 #### Discussion
@@ -39,8 +39,8 @@ ScrollView {
 }
 .accessibilityElement(children: .contain)
 .accessibilityRotor("VIPs") {
-    // Not all the MessageViews are generated at once, the model knows
-    // about all the messages.
+    // Not all the MessageViews are generated at once, the model
+    // knows about all the messages.
     ForEach(messages) { message in
         // If the Message is from a VIP, make a Rotor entry for it.
         if message.isVIP {

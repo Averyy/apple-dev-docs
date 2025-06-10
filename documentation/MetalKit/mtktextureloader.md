@@ -41,39 +41,39 @@ If you use custom data formats, or change the image data at runtime, use [`MTLTe
 ### Loading Textures from URLs
 - [func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]?) throws -> any MTLTexture](mtktextureloader/newtexture(url:options:).md)
   Synchronously loads image data and creates a new Metal texture from a given URL.
-- [func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]?, completionHandler: MTKTextureLoader.Callback)](mtktextureloader/newtexture(url:options:completionhandler:).md)
+- [func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]?, completionHandler: ((any MTLTexture)?, (any Error)?) -> Void)](mtktextureloader/newtexture(url:options:completionhandler:).md)
   Asynchronously loads image data and creates a new Metal texture from a given URL.
 - [func newTextures(URLs: [URL], options: [MTKTextureLoader.Option : Any]?, error: NSErrorPointer) -> [any MTLTexture]](mtktextureloader/newtextures(urls:options:error:).md)
   Synchronously loads image data and creates new Metal textures from the specified list of URLs.
-- [func newTextures(URLs: [URL], options: [MTKTextureLoader.Option : Any]?, completionHandler: MTKTextureLoader.ArrayCallback)](mtktextureloader/newtextures(urls:options:completionhandler:).md)
+- [func newTextures(URLs: [URL], options: [MTKTextureLoader.Option : Any]?, completionHandler: ([any MTLTexture], (any Error)?) -> Void)](mtktextureloader/newtextures(urls:options:completionhandler:).md)
   Asynchronously loads image data and creates new Metal textures from the specified list of URLs.
 ### Loading Textures from Asset Catalogs
 - [func newTexture(name: String, scaleFactor: CGFloat, bundle: Bundle?, options: [MTKTextureLoader.Option : Any]?) throws -> any MTLTexture](mtktextureloader/newtexture(name:scalefactor:bundle:options:).md)
   Synchronously loads image data and creates a Metal texture from the named texture asset in an asset catalog.
-- [func newTexture(name: String, scaleFactor: CGFloat, bundle: Bundle?, options: [MTKTextureLoader.Option : Any]?, completionHandler: MTKTextureLoader.Callback)](mtktextureloader/newtexture(name:scalefactor:bundle:options:completionhandler:).md)
+- [func newTexture(name: String, scaleFactor: CGFloat, bundle: Bundle?, options: [MTKTextureLoader.Option : Any]?, completionHandler: ((any MTLTexture)?, (any Error)?) -> Void)](mtktextureloader/newtexture(name:scalefactor:bundle:options:completionhandler:).md)
   Asynchronously loads image data and creates a Metal texture from the named texture asset in an asset catalog.
-- [func newTextures(names: [String], scaleFactor: CGFloat, bundle: Bundle?, options: [MTKTextureLoader.Option : Any]?, completionHandler: MTKTextureLoader.ArrayCallback)](mtktextureloader/newtextures(names:scalefactor:bundle:options:completionhandler:).md)
+- [func newTextures(names: [String], scaleFactor: CGFloat, bundle: Bundle?, options: [MTKTextureLoader.Option : Any]?, completionHandler: ([any MTLTexture], (any Error)?) -> Void)](mtktextureloader/newtextures(names:scalefactor:bundle:options:completionhandler:).md)
   Asynchronously loads image data and creates Metal textures from the specified list of named texture assets in an asset catalog.
 - [func newTexture(name: String, scaleFactor: CGFloat, displayGamut: NSDisplayGamut, bundle: Bundle?, options: [MTKTextureLoader.Option : Any]?) throws -> any MTLTexture](mtktextureloader/newtexture(name:scalefactor:displaygamut:bundle:options:).md)
   Synchronously loads image data and creates a Metal texture from the named texture asset in an asset catalog, using a specified display gamut.
-- [func newTexture(name: String, scaleFactor: CGFloat, displayGamut: NSDisplayGamut, bundle: Bundle?, options: [MTKTextureLoader.Option : Any]?, completionHandler: MTKTextureLoader.Callback)](mtktextureloader/newtexture(name:scalefactor:displaygamut:bundle:options:completionhandler:).md)
+- [func newTexture(name: String, scaleFactor: CGFloat, displayGamut: NSDisplayGamut, bundle: Bundle?, options: [MTKTextureLoader.Option : Any]?, completionHandler: ((any MTLTexture)?, (any Error)?) -> Void)](mtktextureloader/newtexture(name:scalefactor:displaygamut:bundle:options:completionhandler:).md)
   Asynchronously loads image data and creates a Metal texture from the named texture asset in an asset catalog.
-- [func newTextures(names: [String], scaleFactor: CGFloat, displayGamut: NSDisplayGamut, bundle: Bundle?, options: [MTKTextureLoader.Option : Any]?, completionHandler: MTKTextureLoader.ArrayCallback)](mtktextureloader/newtextures(names:scalefactor:displaygamut:bundle:options:completionhandler:).md)
+- [func newTextures(names: [String], scaleFactor: CGFloat, displayGamut: NSDisplayGamut, bundle: Bundle?, options: [MTKTextureLoader.Option : Any]?, completionHandler: ([any MTLTexture], (any Error)?) -> Void)](mtktextureloader/newtextures(names:scalefactor:displaygamut:bundle:options:completionhandler:).md)
   Asynchronously loads image data and creates Metal textures from the specified list of named texture assets in an asset catalog.
 ### Loading Textures from Core Graphics Images
 - [func newTexture(cgImage: CGImage, options: [MTKTextureLoader.Option : Any]?) throws -> any MTLTexture](mtktextureloader/newtexture(cgimage:options:).md)
   Synchronously loads image data and creates a new Metal texture from a given bitmap image.
-- [func newTexture(cgImage: CGImage, options: [MTKTextureLoader.Option : Any]?, completionHandler: MTKTextureLoader.Callback)](mtktextureloader/newtexture(cgimage:options:completionhandler:).md)
+- [func newTexture(cgImage: CGImage, options: [MTKTextureLoader.Option : Any]?, completionHandler: ((any MTLTexture)?, (any Error)?) -> Void)](mtktextureloader/newtexture(cgimage:options:completionhandler:).md)
   Asynchronously loads image data and creates a new Metal texture from a given bitmap image.
 ### Loading Textures from In-Memory Data Representations
 - [func newTexture(data: Data, options: [MTKTextureLoader.Option : Any]?) throws -> any MTLTexture](mtktextureloader/newtexture(data:options:).md)
   Synchronously creates a new Metal texture from an in-memory representation of the texture’s data.
-- [func newTexture(data: Data, options: [MTKTextureLoader.Option : Any]?, completionHandler: MTKTextureLoader.Callback)](mtktextureloader/newtexture(data:options:completionhandler:).md)
+- [func newTexture(data: Data, options: [MTKTextureLoader.Option : Any]?, completionHandler: ((any MTLTexture)?, (any Error)?) -> Void)](mtktextureloader/newtexture(data:options:completionhandler:).md)
   Asynchronously creates a new Metal texture from an in-memory representation of the texture’s data.
 ### Loading Textures from Model I/O Representations
 - [func newTexture(texture: MDLTexture, options: [MTKTextureLoader.Option : Any]?) throws -> any MTLTexture](mtktextureloader/newtexture(texture:options:).md)
   Synchronously loads image data and creates a Metal texture from the specified Model I/O texture.
-- [func newTexture(texture: MDLTexture, options: [MTKTextureLoader.Option : Any]?, completionHandler: MTKTextureLoader.Callback)](mtktextureloader/newtexture(texture:options:completionhandler:).md)
+- [func newTexture(texture: MDLTexture, options: [MTKTextureLoader.Option : Any]?, completionHandler: ((any MTLTexture)?, (any Error)?) -> Void)](mtktextureloader/newtexture(texture:options:completionhandler:).md)
   Asynchronously loads image data and creates a Metal texture from the specified Model I/O texture.
 ### Specifying Loading Options
 - [MTKTextureLoader.Option](mtktextureloader/option.md)

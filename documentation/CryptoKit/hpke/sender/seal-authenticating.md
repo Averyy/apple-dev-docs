@@ -1,6 +1,6 @@
 # seal(_:authenticating:)
 
-**Framework**: Cryptokit  
+**Framework**: Apple CryptoKit  
 **Kind**: method
 
 Encrypts the given cleartext message and attaches additional authenticated data.

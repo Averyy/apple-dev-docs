@@ -1,6 +1,6 @@
 # Optimizing your web extension for Safari
 
-**Framework**: Safariservices
+**Framework**: Safari Services
 
 Support Dark Mode, reduce memory and power usage, and ensure feature compatibility to improve your web extension experience in Safari and web apps.
 
@@ -93,4 +93,4 @@ Review your manifest and web extension API usage periodically to see if there ar
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/optimizing-your-web-extension-for-safari)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/optimizing-your-web-extension-for-safari)*

@@ -10,13 +10,11 @@ Some App Clips may need to schedule or receive notifications to provide value. C
 
 > ❗ **Important**:  If a user returns to a previously launched App Clip from a notification, the App Clip launches without an invocation URL. You must handle this scenario in both your App Clip and your full app. For more information on invocations, see [`Responding to invocations`](responding-to-invocations.md).
 
- If a user returns to a previously launched App Clip from a notification, the App Clip launches without an invocation URL. You must handle this scenario in both your App Clip and your full app. For more information on invocations, see [`Responding to invocations`](responding-to-invocations.md).
-
 ##### Schedule or Receive Notifications Temporarily
 
 To enable your App Clip to schedule or receive notifications for up to 8 hours after each launch, first add the [`NSAppClip`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppClip) key to your App Clip’s `Info.plist` file and set its type to `Dictionary`. Then, add an entry to the dictionary with the [`NSAppClipRequestEphemeralUserNotification`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppClip/NSAppClipRequestEphemeralUserNotification) key. Set its type to `Boolean` and its value to `true`.
 
-Alternatively, open the `Info.plist` file in the property list editor and add the entry by selecting App Clip from the list of keys. This adds the `NSAppClip` key and two entries of type `Boolean` to its dictionary: “Requests ephemeral user notifications” and “Requests location confirmation”. Per default, the value for both entries is `NO`. Change the value for “Requests ephemeral user notifications” to `YES`.
+Alternatively, open the `Info.plist` file in the property list editor and add the entry by selecting App Clip from the list of keys. This adds the `NSAppClip` key and two entries of type `Boolean` to its dictionary: “Requests ephemeral user notifications” and “Requests location confirmation”. By default, the value for both entries is `NO`. Change the value for “Requests ephemeral user notifications” to `YES`.
 
 ![An Info.plist file with the entry that allows the App Clip to send notifications for a short time.](https://docs-assets.developer.apple.com/published/7c580f00b68b5bac89e804cea6239883/media-3663318%402x.png)
 
@@ -78,7 +76,7 @@ The invocation URLs and target content identifiers could then be:
 
 In general, use a target content identifier that’s as specific as possible. Similarly, if you enable your App Clip to schedule local notifications, set the target content identifier for the notification payload; for example, using [`targetContentIdentifier`](https://developer.apple.com/documentation/UserNotifications/UNNotificationContent/targetContentIdentifier).
 
-For more information, see [`Configuring the launch experience of your App Clip`](configuring-the-launch-experience-of-your-app-clip.md), [`Generating a remote notification`](https://developer.apple.com/documentation/UserNotifications/generating-a-remote-notification), and [`Scheduling a notification locally from your app`](https://developer.apple.com/documentation/UserNotifications/scheduling-a-notification-locally-from-your-app).
+For more information, see [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md), [`Generating a remote notification`](https://developer.apple.com/documentation/UserNotifications/generating-a-remote-notification), and [`Scheduling a notification locally from your app`](https://developer.apple.com/documentation/UserNotifications/scheduling-a-notification-locally-from-your-app).
 
 
 ---

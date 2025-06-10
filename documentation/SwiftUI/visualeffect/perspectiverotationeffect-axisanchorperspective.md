@@ -39,8 +39,6 @@ Text("Rotation by passing an angle in degrees")
 
 > ❗ **Important**: To truly rotate content in three dimensions, use a 3D rotation effect without a perspective input like [`rotation3DEffect(_:axis:anchor:)`](visualeffect/rotation3deffect(_:axis:anchor:).md).
 
-To truly rotate content in three dimensions, use a 3D rotation effect without a perspective input like [`rotation3DEffect(_:axis:anchor:)`](visualeffect/rotation3deffect(_:axis:anchor:).md).
-
 ## Parameters
 
 - `angle`: The angle by which to rotate the content.

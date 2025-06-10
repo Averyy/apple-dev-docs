@@ -12,7 +12,7 @@ Loads the track info object with the properties of the media asset track.
 ## Declaration
 
 ```swift
-var trackInfo: METrackInfo { get async throws }
+func trackInfo() async throws -> METrackInfo
 ```
 
 #### Discussion

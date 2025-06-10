@@ -41,9 +41,9 @@ See also [`Initializing offsets`](uioffset#Initializing-offsets.md) and [`zero`]
 - [func UIOffsetEqualToOffset(UIOffset, UIOffset) -> Bool](uioffsetequaltooffset(_:_:).md)
   Returns a Boolean value that indicates whether two offsets are equal.
 ### Converting to and from strings
-- [class func string(for: UIOffset) -> String](../foundation/nscoder/1624491-string.md)
+- [class func string(for offset: UIOffset) -> String](../Foundation/NSCoder/string(for:)-454dj.md)
   Returns a string formatted to contain the data from an offset structure.
-- [class func uiOffset(for: String) -> UIOffset](../foundation/nscoder/1624509-uioffset.md)
+- [class func uiOffset(for string: String) -> UIOffset](../Foundation/NSCoder/uiOffset(for:).md)
   Returns a UIKit offset structure corresponding to the data in a given string.
 ### Getting the empty offset value
 - [static let zero: UIOffset](uioffset/zero.md)
@@ -58,6 +58,7 @@ See also [`Initializing offsets`](uioffset#Initializing-offsets.md) and [`zero`]
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

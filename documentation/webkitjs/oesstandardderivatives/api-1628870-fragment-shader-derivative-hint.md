@@ -1,6 +1,6 @@
 # FRAGMENT_SHADER_DERIVATIVE_HINT_OES
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

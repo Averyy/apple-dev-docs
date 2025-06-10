@@ -1,0 +1,18 @@
+# kBluetoothDeviceClassMinorPeripheral2CardReader
+
+**Framework**: Kernel  
+**Kind**: econst
+
+**Availability**:
+- macOS 10.12+
+
+## Declaration
+
+```swift
+kBluetoothDeviceClassMinorPeripheral2CardReader = 0x06
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/1640543-anonymous/kbluetoothdeviceclassminorperipheral2cardreader)*

@@ -73,6 +73,7 @@ struct NumericSummary<Element> where Element : BinaryFloatingPoint
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

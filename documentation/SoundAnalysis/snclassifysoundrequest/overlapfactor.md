@@ -28,8 +28,6 @@ Sound analyses that use a fixed-size audio block typically benefit with an overl
 
 > ❗ **Important**:  Higher overlap factors increase computational complexity, especially for values greater than `0.5`.
 
- Higher overlap factors increase computational complexity, especially for values greater than `0.5`.
-
 ## See Also
 
 - [var windowDuration: CMTime](snclassifysoundrequest/windowduration.md)

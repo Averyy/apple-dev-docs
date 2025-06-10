@@ -14,12 +14,12 @@
 ## Declaration
 
 ```swift
-func attachment(forKey key: String) -> Any?
+func attachment(forKey key: String) -> (any Sendable)?
 ```
 
 ## See Also
 
-- [func allAttachments() -> [String : Any]?](iosurface/allattachments.md)
+- [func allAttachments() -> [String : any Sendable]?](iosurface/allattachments.md)
 - [func baseAddressOfPlane(at: Int) -> UnsafeMutableRawPointer](iosurface/baseaddressofplane(at:).md)
 - [func bytesPerElementOfPlane(at: Int) -> Int](iosurface/bytesperelementofplane(at:).md)
 - [func bytesPerRowOfPlane(at: Int) -> Int](iosurface/bytesperrowofplane(at:).md)
@@ -31,8 +31,8 @@ func attachment(forKey key: String) -> Any?
 - [func lock(options: IOSurfaceLockOptions, seed: UnsafeMutablePointer<UInt32>?) -> kern_return_t](iosurface/lock(options:seed:).md)
 - [func removeAllAttachments()](iosurface/removeallattachments.md)
 - [func removeAttachment(forKey: String)](iosurface/removeattachment(forkey:).md)
-- [func setAllAttachments([String : Any])](iosurface/setallattachments(_:).md)
-- [func setAttachment(Any, forKey: String)](iosurface/setattachment(_:forkey:).md)
+- [func setAllAttachments([String : any Sendable])](iosurface/setallattachments(_:).md)
+- [func setAttachment(any Sendable, forKey: String)](iosurface/setattachment(_:forkey:).md)
 - [func setPurgeable(IOSurfacePurgeabilityState, oldState: UnsafeMutablePointer<IOSurfacePurgeabilityState>?) -> kern_return_t](iosurface/setpurgeable(_:oldstate:).md)
 
 

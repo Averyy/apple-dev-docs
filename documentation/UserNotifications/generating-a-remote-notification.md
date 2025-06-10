@@ -1,6 +1,6 @@
 # Generating a remote notification
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Send notifications to the user’s device with a JSON payload.
 
@@ -59,8 +59,6 @@ For more information about creating sounds for your notifications, see [`UNNotif
 
 > ❗ **Important**:  Don’t include customer information or any sensitive data, like a credit card number, in a notification’s payload. If you must include customer information or sensitive data, encrypt it before adding it to the payload. You can use a notification service app extension to decrypt the data on the user’s device. For more information, see [`Modifying content in newly delivered notifications`](modifying-content-in-newly-delivered-notifications.md).
 
- Don’t include customer information or any sensitive data, like a credit card number, in a notification’s payload. If you must include customer information or sensitive data, encrypt it before adding it to the payload. You can use a notification service app extension to decrypt the data on the user’s device. For more information, see [`Modifying content in newly delivered notifications`](modifying-content-in-newly-delivered-notifications.md).
-
 ##### Localize Your Alert Messages
 
 There are two ways to localize the content of remote notifications:
@@ -68,7 +66,7 @@ There are two ways to localize the content of remote notifications:
 - Include localized strings directly in the payload.
 - Add localized message strings in your app bundle, and let the system choose which strings to display.
 
-Placing localized strings directly into the payload gives you more flexibility, but requires you to track the user’s preferred language on your provider server. Because your provider server supplies the strings, it must know which language to use. On the user’s device, you can retrieve the user’s preferred languages by examining the [`preferredLanguages`](https://developer.apple.com/documentation/foundation/nslocale/1415614-preferredlanguages) property of [`NSLocale`](https://developer.apple.com/documentation/Foundation/NSLocale). Your app can then forward that information to your server.
+Placing localized strings directly into the payload gives you more flexibility, but requires you to track the user’s preferred language on your provider server. Because your provider server supplies the strings, it must know which language to use. On the user’s device, you can retrieve the user’s preferred languages by examining the [`preferredLanguages`](https://developer.apple.com/documentation/Foundation/NSLocale/preferredLanguages) property of [`NSLocale`](https://developer.apple.com/documentation/Foundation/NSLocale). Your app can then forward that information to your server.
 
 If the text of your notification messages is predetermined, you can store your message strings in the `Localizable.strings` file of your app bundle and use the `title-loc-key`, `subtitle-loc-key`, and `loc-key` payload keys to specify which strings you want to display. Your localized strings may contain placeholders so that you can insert content dynamically into the final string. Listing 3 shows an example of a payload with a message derived from an app-provided string. The `loc-args` key contains an array of replacement variables to substitute into the string.
 

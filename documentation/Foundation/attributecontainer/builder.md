@@ -41,6 +41,7 @@ The first part of this expression, `AttributeContainer().link(URL(myURL))`, crea
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

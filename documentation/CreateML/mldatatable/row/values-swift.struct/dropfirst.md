@@ -1,6 +1,6 @@
 # dropFirst(_:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns a subsequence containing all but the given number of initial elements.

@@ -1,6 +1,6 @@
 # RecognizedItem.Barcode
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: struct
 
 An object that represents a machine-readable code that the scanner recognizes.

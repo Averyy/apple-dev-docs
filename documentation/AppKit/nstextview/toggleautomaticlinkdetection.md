@@ -25,7 +25,7 @@ Automatic link detection causes strings representing URLs typed in the view to b
 
 ## See Also
 
-- [func url(at: Int, effectiveRange: NSRangePointer) -> URL?](../foundation/nsattributedstring/1535059-url.md)
+- [func url(at location: Int, effectiveRange: NSRangePointer) -> URL?](../Foundation/NSAttributedString/url(at:effectiveRange:).md)
   Returns a URL, either from a link attribute or from text at the specified location that appears to be a URL string, for use in automatic link detection.
 - [var allowsUndo: Bool](nstextview/allowsundo.md)
   A Boolean value that indicates whether the receiver allows undo.

@@ -1,6 +1,6 @@
 # handleTap()
 
-**Framework**: Adattributionkit  
+**Framework**: AdAttributionKit  
 **Kind**: method
 
 Processes click-through interactions on your custom rendered ad content.

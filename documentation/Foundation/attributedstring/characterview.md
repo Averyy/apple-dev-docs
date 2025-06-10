@@ -28,6 +28,7 @@ struct CharacterView
 - [Copyable](../Swift/Copyable.md)
 - [RangeReplaceableCollection](../Swift/RangeReplaceableCollection.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

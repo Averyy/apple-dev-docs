@@ -1,6 +1,6 @@
 # edit
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Allows editable documents to be changed by the drag operation.

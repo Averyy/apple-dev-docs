@@ -23,7 +23,7 @@ Browse the topics below to find samples relevant to a concept you want to learn 
 - [Using Metal to Draw a View’s Contents](using-metal-to-draw-a-view's-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
 - [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
-  Render a simple 2D triangle.
+  Render a colorful, 2D triangle by running a draw command on the GPU.
 - [Selecting Device Objects for Graphics Rendering](selecting-device-objects-for-graphics-rendering.md)
   Switch dynamically between multiple GPUs to efficiently render to a display.
 - [Customizing Render Pass Setup](customizing-render-pass-setup.md)
@@ -49,8 +49,8 @@ Browse the topics below to find samples relevant to a concept you want to learn 
 - [Achieving smooth frame rates with Metal’s display link](achieving-smooth-frame-rates-with-metal-s-display-link.md)
   Pace rendering with minimal input latency while providing essential information to the operating system for power-efficient rendering, thermal mitigation, and the scheduling of sustainable workloads.
 ### Textures
-- [Processing a Texture in a Compute Function](processing-a-texture-in-a-compute-function.md)
-  Perform parallel calculations on structured data by placing the data in textures.
+- [Processing a texture in a compute function](processing-a-texture-in-a-compute-function.md)
+  Create textures by running copy and dispatch commands in a compute pass on a GPU.
 - [Reading Pixel Data from a Drawable Texture](reading-pixel-data-from-a-drawable-texture.md)
   Access texture data from the CPU by copying it to a buffer.
 - [Creating and Sampling Textures](creating-and-sampling-textures.md)

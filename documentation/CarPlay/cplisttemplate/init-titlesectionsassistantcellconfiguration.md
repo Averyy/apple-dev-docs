@@ -13,6 +13,7 @@ Creates a sectioned list template that optionally displays the assistant cell.
 ## Declaration
 
 ```swift
+@MainActor
 init(title: String?, sections: [CPListSection], assistantCellConfiguration: CPAssistantCellConfiguration?)
 ```
 
@@ -20,7 +21,7 @@ init(title: String?, sections: [CPListSection], assistantCellConfiguration: CPAs
 
 The system provides the text and accessory image for the assistant cell and you can’t change these. Use the [`assistantCellConfiguration`](cplisttemplate/assistantcellconfiguration.md) property to update the cell’s configuration after you initialize the template. CarPlay observes this property and automatically updates your app’s interface in response to any changes.
 
-Your app doesn’t receive a callback when the user selects the assistant cell. Instead, you configure an Intents Extension to handle the type of intent you specify in the cell’s configuration; audio apps must support doc://com.apple.documentation/documentation/sirikit/inplaymediaintent and communication apps must support doc://com.apple.documentation/documentation/sirikit/instartcallintent.
+Your app doesn’t receive a callback when the user selects the assistant cell. Instead, you configure an Intents Extension to handle the type of intent you specify in the cell’s configuration; audio apps must support [`INPlayMediaIntent`](https://developer.apple.com/documentation/Intents/INPlayMediaIntent) and communication apps must support [`INStartCallIntent`](https://developer.apple.com/documentation/Intents/INStartCallIntent).
 
 ## Parameters
 

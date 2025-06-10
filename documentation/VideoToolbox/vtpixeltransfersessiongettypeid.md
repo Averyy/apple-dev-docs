@@ -1,6 +1,6 @@
 # VTPixelTransferSessionGetTypeID()
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Retrieves the Core Foundation type identifier for the pixel transfer session.

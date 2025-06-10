@@ -29,6 +29,7 @@
 ### Conforms To
 - [ProductViewStyle](productviewstyle.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

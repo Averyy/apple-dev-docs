@@ -1,6 +1,6 @@
 # Displaying video from connected devices
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Show video from devices connected with the Developer Strap in your visionOS app.
 

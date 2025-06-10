@@ -30,6 +30,8 @@ Design your browser to support the latest revision to the restricted sandbox in 
   Returns a Boolean value indicating whether two values are equal.
 - [static func < (RestrictedSandboxRevision, RestrictedSandboxRevision) -> Bool](restrictedsandboxrevision/_(_:_:).md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
+### Enumeration Cases
+- [RestrictedSandboxRevision.revision2](restrictedsandboxrevision/revision2.md)
 ### Instance Properties
 - [var hashValue: Int](restrictedsandboxrevision/hashvalue.md)
   The hash value.

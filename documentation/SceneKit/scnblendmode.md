@@ -6,13 +6,13 @@
 Modes that describe how SceneKit blends source colors rendered using a material with destination colors already in a rendering target, used by the [`blendMode`](scnmaterial/blendmode.md) property.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.11+
+- macOS 10.8+
 - tvOS 9.0+
 - visionOS 1.0+
-- watchOS 2.0+
+- watchOS 3.0+
 
 ## Declaration
 
@@ -48,6 +48,7 @@ enum SCNBlendMode
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

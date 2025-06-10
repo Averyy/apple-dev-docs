@@ -99,7 +99,9 @@ Additionally, wherever possible, this class uses a single instance to represent 
 - [func requiresPerObjectAuthorization() -> Bool](hkobjecttype/requiresperobjectauthorization.md)
   Returns a Boolean that indicates whether the data type requires per-object authorization.
 ### Type Methods
+- [class func medicationDoseEventType() -> HKMedicationDoseEventType](hkobjecttype/medicationdoseeventtype.md)
 - [class func stateOfMindType() -> HKStateOfMindType](hkobjecttype/stateofmindtype.md)
+- [class func userAnnotatedMedicationType() -> HKUserAnnotatedMedicationType](hkobjecttype/userannotatedmedicationtype.md)
 
 ## Relationships
 
@@ -109,6 +111,7 @@ Additionally, wherever possible, this class uses a single instance to represent 
 - [HKActivitySummaryType](hkactivitysummarytype.md)
 - [HKCharacteristicType](hkcharacteristictype.md)
 - [HKSampleType](hksampletype.md)
+- [HKUserAnnotatedMedicationType](hkuserannotatedmedicationtype.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -120,6 +123,7 @@ Additionally, wherever possible, this class uses a single instance to represent 
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

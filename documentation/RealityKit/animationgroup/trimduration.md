@@ -10,6 +10,7 @@ An optional duration that overrides the calculated duration.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -40,8 +41,6 @@ A value greater than [`duration`](animationgroup/duration.md) causes the animati
   The time, in seconds, at which the animations play.
 - [var trimEnd: TimeInterval?](animationgroup/trimend.md)
   The time, in seconds, at which the animations stop.
-- [func trimmed(start: TimeInterval?, end: TimeInterval?, duration: TimeInterval?) -> Self](animationgroup/trimmed(start:end:duration:).md)
-  Edits the animation duration according to the specified time.
 
 
 ---

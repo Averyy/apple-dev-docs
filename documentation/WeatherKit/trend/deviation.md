@@ -1,6 +1,6 @@
 # deviation
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 Semantically describes the manner in which the observed trend compares the current value against the baseline value.

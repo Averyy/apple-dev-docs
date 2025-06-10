@@ -1,6 +1,6 @@
 # applicationAccountProviders
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 An array of application-specific providers to add to the list of account providers.

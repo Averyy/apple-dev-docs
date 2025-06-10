@@ -26,8 +26,8 @@ This value causes the scale view to place the value `0` at the leading edge of t
 
 - [MKScaleView.Alignment.trailing](mkscaleview/alignment/trailing.md)
   Scale measurements begin at the trailing edge of the view.
-- [MKScaleView.Alignment.trailing](mkscaleview/alignment/trailing.md)
-  Scale measurements begin at the trailing edge of the view.
+- [MKScaleView.Alignment.center](mkscaleview/alignment/center.md)
+  Scale measurements appear horizontally centered within the view.
 
 
 ---

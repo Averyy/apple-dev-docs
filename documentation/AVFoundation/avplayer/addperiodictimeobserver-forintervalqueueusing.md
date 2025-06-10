@@ -39,8 +39,6 @@ The following example illustrates how you set up a callback the system invokes e
 
 > ❗ **Important**:  Use a `weak` reference to `self` in the callback block to prevent creating a retain cycle.
 
- Use a `weak` reference to `self` in the callback block to prevent creating a retain cycle.
-
 ## Parameters
 
 - `interval`: The time interval at which the system invokes the block during normal playback, according to progress of the player’s current time.

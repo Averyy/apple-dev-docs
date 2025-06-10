@@ -30,8 +30,6 @@ After you’ve appended all media data for the current pass, call the [`markCurr
 
 > ❗ **Important**:  Before calling this method, you must add the input to an asset writer and call the writer’s [`startWriting()`](avassetwriter/startwriting().md) method.
 
- Before calling this method, you must add the input to an asset writer and call the writer’s [`startWriting()`](avassetwriter/startwriting().md) method.
-
 ## Parameters
 
 - `queue`: The queue on which to invoke the callback.

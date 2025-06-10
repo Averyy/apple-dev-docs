@@ -26,14 +26,15 @@ For related documentation, see [`Mac Technology Overview`](https://developer.app
 - [DiskArbitration Functions](diskarbitration-functions.md)
 - [DiskArbitration Data Types](diskarbitration-data-types.md)
 ### Articles
+- [DAReturn](enum_(unnamed)-3ky11.md)
+  A return code.
 - [kDADiskOptionEjectUponLogout](kdadiskoptionejectuponlogout.md)
 - [kDADiskOptionMountAutomatic](kdadiskoptionmountautomatic.md)
 - [kDADiskOptionMountAutomaticNoDefer](kdadiskoptionmountautomaticnodefer.md)
 - [kDADiskOptionPrivate](kdadiskoptionprivate.md)
-- [DAReturn](enum_(unnamed)-3ky11.md)
-  A return code.
 ### Variables
 - [let kDADiskDescriptionFSKitPrefix: CFString](kdadiskdescriptionfskitprefix.md)
+- [let kDADiskDescriptionRepairRunningKey: CFString](kdadiskdescriptionrepairrunningkey.md)
 - [var kDADiskMountOptionNoFollow: Int](kdadiskmountoptionnofollow.md)
 - [var kDAReturnBadArgument: Int](kdareturnbadargument.md)
 - [var kDAReturnBusy: Int](kdareturnbusy.md)

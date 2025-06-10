@@ -1,6 +1,6 @@
 # allowsAirPlayForMediaPlayback
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether the web view allows media playback over AirPlay.

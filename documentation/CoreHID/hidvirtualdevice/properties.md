@@ -59,6 +59,7 @@ Uncommon properties that aren’t available can be specified in the `extraProper
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

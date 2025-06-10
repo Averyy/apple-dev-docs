@@ -51,6 +51,11 @@ The DataDetection framework returns results in objects that are subclasses of `D
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
+## See Also
+
+- [enum DataDetector](datadetector.md)
+  An extension to the string protocol that scans strings for semantic entities, such as email addresses, phone numbers, URLs, and flight information.
+
 
 ---
 

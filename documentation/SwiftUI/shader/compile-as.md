@@ -1,6 +1,6 @@
 # compile(as:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Attempts to asynchronously compile a shader function, to minimize the chance of stalling when it is first used for rendering.

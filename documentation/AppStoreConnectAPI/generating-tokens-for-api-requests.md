@@ -1,6 +1,6 @@
 # Generating Tokens for API Requests
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Create JSON Web Tokens (JWTs) signed with your private key to authorize API requests.
 
@@ -210,4 +210,4 @@ curl -v -H 'Authorization: Bearer [signed token]'
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/generating-tokens-for-api-requests)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/generating-tokens-for-api-requests)*

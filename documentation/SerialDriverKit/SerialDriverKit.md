@@ -1,6 +1,6 @@
 # SerialDriverKit
 
-**Framework**: Serialdriverkit  
+**Framework**: SerialDriverKit  
 **Kind**: module
 
 Develop drivers for serial I/O devices connected to your Mac.

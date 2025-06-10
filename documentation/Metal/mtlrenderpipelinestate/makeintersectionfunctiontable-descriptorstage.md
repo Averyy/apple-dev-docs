@@ -27,7 +27,7 @@ func makeIntersectionFunctionTable(descriptor: MTLIntersectionFunctionTableDescr
 
 ## See Also
 
-- [func functionHandle(function: any MTLFunction, stage: MTLRenderStages) -> (any MTLFunctionHandle)?](mtlrenderpipelinestate/functionhandle(function:stage:).md)
+- [func functionHandle(function: any MTLFunction, stage: MTLRenderStages) -> (any MTLFunctionHandle)?](mtlrenderpipelinestate/functionhandle(function:stage:)-7uvul.md)
   Creates a function handle for a shader.
 - [func makeVisibleFunctionTable(descriptor: MTLVisibleFunctionTableDescriptor, stage: MTLRenderStages) -> (any MTLVisibleFunctionTable)?](mtlrenderpipelinestate/makevisiblefunctiontable(descriptor:stage:).md)
   Creates a new visible function table.

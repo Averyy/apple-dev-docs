@@ -31,6 +31,8 @@ object EndUserLicenseAgreement
 - [object EndUserLicenseAgreementResponse](enduserlicenseagreementresponse.md)
   A response that contains a single End User License Agreements resource.
 - [object EndUserLicenseAgreementWithoutIncludesResponse](enduserlicenseagreementwithoutincludesresponse.md)
+- [object AppEndUserLicenseAgreementLinkageResponse](appenduserlicenseagreementlinkageresponse.md)
+- [object EndUserLicenseAgreementTerritoriesLinkagesResponse](enduserlicenseagreementterritorieslinkagesresponse.md)
 
 
 ---

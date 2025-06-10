@@ -5,6 +5,9 @@
 
 A 2D image the system uses as a reference to find the same image in a person’s surroundings.
 
+**Availability**:
+- visionOS 1.0+
+
 ## Declaration
 
 ```swift

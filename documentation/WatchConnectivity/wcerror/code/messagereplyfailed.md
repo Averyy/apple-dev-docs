@@ -1,6 +1,6 @@
 # WCError.Code.messageReplyFailed
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: case
 
 An error that occurs when the system can’t return the reply.

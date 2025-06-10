@@ -10,6 +10,7 @@ A material that supports animated textures.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -60,25 +61,33 @@ To see an example of using a video texture in RealityKit, see [`Creating a game 
 - [var controller: VideoPlaybackController](videomaterial/controller.md)
   An object that configures framework-specific video options.
 ### Initializers
-- [init(videoRenderer: AVSampleBufferVideoRenderer)](videomaterial/init(videorenderer:).md)
+- [init(videoRenderer:)](videomaterial/init(videorenderer:).md)
   Creates and initializes a video material for a sample buffer video renderer object.
 ### Instance Properties
-- [var faceCulling: VideoMaterial.FaceCulling](videomaterial/faceculling-swift.property.md)
+- [var faceCulling: VideoMaterial.FaceCulling](videomaterial/faceculling-5s93k.md)
   A process in which the system specifies polygons to remove before rendering a mesh using this material.
-- [var readsDepth: Bool](videomaterial/readsdepth.md)
+- [var faceCulling: VideoMaterial.FaceCulling](videomaterial/faceculling-99y9y.md)
+  A process in which the system specifies polygons to remove before rendering a mesh using this material.
+- [var readsDepth: Bool](videomaterial/readsdepth-5xu.md)
+  A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
+- [var readsDepth: Bool](videomaterial/readsdepth-6vq0q.md)
   A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
 - [var triangleFillMode: VideoMaterial.TriangleFillMode](videomaterial/trianglefillmode-swift.property.md)
   The object that controls how RealityKit draws triangles.
-- [var videoRenderer: AVSampleBufferVideoRenderer?](videomaterial/videorenderer.md)
+- [var videoRenderer: AVSampleBufferVideoRenderer?](videomaterial/videorenderer-684nz.md)
   The material’s video renderer.
-- [var writesDepth: Bool](videomaterial/writesdepth.md)
+- [var videoRenderer: AVSampleBufferVideoRenderer?](videomaterial/videorenderer-8h83t.md)
+  The material’s video renderer.
+- [var writesDepth: Bool](videomaterial/writesdepth-6i035.md)
+  A boolean value that determines whether this material writes its depth into RealityKit’s depth buffer.
+- [var writesDepth: Bool](videomaterial/writesdepth-9m2yy.md)
   A boolean value that determines whether this material writes its depth into RealityKit’s depth buffer.
 ### Type Aliases
-- [VideoMaterial.FaceCulling](videomaterial/faceculling-swift.typealias.md)
+- [VideoMaterial.FaceCulling](videomaterial/faceculling-1ndc7.md)
+  An alias for the cull mode object that’s appropriate for this material class.
+- [VideoMaterial.FaceCulling](videomaterial/faceculling-8341u.md)
   An alias for the cull mode object that’s appropriate for this material class.
 - [VideoMaterial.TriangleFillMode](videomaterial/trianglefillmode-swift.typealias.md)
-### Default Implementations
-- [Material Implementations](videomaterial/material-implementations.md)
 
 ## Relationships
 
@@ -87,11 +96,7 @@ To see an example of using a video texture in RealityKit, see [`Creating a game 
 
 ## See Also
 
-- [VideoMaterial.FaceCulling](videomaterial/faceculling-swift.typealias.md)
-  An alias for the cull mode object that’s appropriate for this material class.
 - [VideoMaterial.TriangleFillMode](videomaterial/trianglefillmode-swift.typealias.md)
-- [VideoMaterial.Parameters](videomaterial/parameters.md)
-  The parameter type that custom materials uses for properties the framework passes to shader functions.
 
 
 ---

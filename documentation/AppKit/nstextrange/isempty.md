@@ -17,9 +17,9 @@ var isEmpty: Bool { get }
 ## See Also
 
 - [var location: any NSTextLocation](nstextrange/location.md)
-  Returns the starting location of the text range.
+  The starting location of the text range.
 - [var endLocation: any NSTextLocation](nstextrange/endlocation.md)
-  Returns the ending location of the text range.
+  The ending location of the text range.
 
 
 ---

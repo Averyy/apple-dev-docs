@@ -1,6 +1,6 @@
 # rejected
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The system rejected the request.

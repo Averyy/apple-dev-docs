@@ -30,8 +30,6 @@ You can combine these keywords to form your rule. Duplicate property values, emp
 
 > ⚠️ **Warning**:  The more restrictions you have on a password, the higher the likelihood that it can be guessed. The hardest-to-guess password rule is `allowed: unicode`. No password rule at all creates the second most-difficult-to-guess passwords.
 
- The more restrictions you have on a password, the higher the likelihood that it can be guessed. The hardest-to-guess password rule is `allowed: unicode`. No password rule at all creates the second most-difficult-to-guess passwords.
-
 The specified password length can’t be less than 12, and the allowed characters must consist of at least 2 of the following classes: ASCII uppercase letters, ASCII lowercase letters, and digits. If your password restrictions don’t meet these guidelines after all the properties for your text field have been combined, they will be ignored by the user agent.
 
 ##### Construct a Password Rule

@@ -47,8 +47,6 @@ Some adjustments have a trade-off, such as reducing image quality or mathematica
 
 > 💡 **Tip**: Discover which adjustments yield better performance by experimenting with your app.
 
-Discover which adjustments yield better performance by experimenting with your app.
-
 ##### Reduce the Workload of the Arithmetic Logic Unit
 
 The arithmetic logic unit (ALU) handles your code’s arithmetic, logic, and bitwise operations. If the counters indicate the ALU may be a bottleneck, you can try each of the following adjustments and evaluate any changes:
@@ -125,8 +123,6 @@ During a render pass, a GPU interpolates the vertex stage’s output data before
 The last level cache counters measure how much time the GPU spends processing requests in the highest-level GPU cache. A higher value here may indicate that your shaders are requesting a lot of data that isn’t present in the cache.
 
 > 💡 **Tip**: Check and improve any bottlenecks in the texture and the buffer operations before trying the adjustments below.
-
-Check and improve any bottlenecks in the texture and the buffer operations before trying the adjustments below.
 
 If the counters indicate the last level cache may be a bottleneck, you can try the following adjustments and evaluate any changes in your app’s performance:
 

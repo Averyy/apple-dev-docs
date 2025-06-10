@@ -30,7 +30,7 @@ Action sets can be executed as a result of evaluating a trigger (instances of [`
   The action set’s unique identifier.
 - [var name: String](hmactionset/name.md)
   The name of the action set.
-- [func updateName(String, completionHandler: HMErrorBlock)](hmactionset/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmactionset/updatename(_:completionhandler:).md)
   Updates the name of the action set.
 ### Specifying a type
 - [var actionSetType: String](hmactionset/actionsettype.md)
@@ -40,9 +40,9 @@ Action sets can be executed as a result of evaluating a trigger (instances of [`
 ### Defining the associated actions
 - [var actions: Set<HMAction>](hmactionset/actions.md)
   Set of actions in the action set.
-- [func addAction(HMAction, completionHandler: HMErrorBlock)](hmactionset/addaction(_:completionhandler:).md)
+- [func addAction(HMAction, completionHandler: ((any Error)?) -> Void)](hmactionset/addaction(_:completionhandler:).md)
   Adds an action to the action set.
-- [func removeAction(HMAction, completionHandler: HMErrorBlock)](hmactionset/removeaction(_:completionhandler:).md)
+- [func removeAction(HMAction, completionHandler: ((any Error)?) -> Void)](hmactionset/removeaction(_:completionhandler:).md)
   Removes an action from the action set.
 - [class HMCharacteristicWriteAction](hmcharacteristicwriteaction.md)
   An action in an action set that writes a value to a characteristic.
@@ -66,6 +66,7 @@ Action sets can be executed as a result of evaluating a trigger (instances of [`
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

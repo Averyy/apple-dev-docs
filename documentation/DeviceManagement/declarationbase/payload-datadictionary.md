@@ -3,8 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A dictionary that represents the payload of the declaration.
-
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

@@ -1,6 +1,6 @@
 # Creating a camera extension with Core Media I/O
 
-**Framework**: Coremediaio
+**Framework**: Core Media I/O
 
 Build high-performance camera drivers that are secure and simple to deploy.
 
@@ -135,4 +135,4 @@ let externalDevices = discoverySession.devices
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreMediaIO/creating-a-camera-extension-with-core-media-i-o)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coremediaio/creating-a-camera-extension-with-core-media-i-o)*

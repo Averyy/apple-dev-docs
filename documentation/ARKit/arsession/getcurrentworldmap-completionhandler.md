@@ -31,8 +31,6 @@ World map generation requires a world-tracking AR session. If you call this meth
 
 > ❗ **Important**:  ARKit calls your `completionHandler` on the session’s [`delegateQueue`](arsession/delegatequeue.md) (if set; on the main queue otherwise). If you need to perform expensive work from this handler (such as archiving and saving or sending the world map), do so on an appropriate dispatch queue to avoid disrupting performance.
 
- ARKit calls your `completionHandler` on the session’s [`delegateQueue`](arsession/delegatequeue.md) (if set; on the main queue otherwise). If you need to perform expensive work from this handler (such as archiving and saving or sending the world map), do so on an appropriate dispatch queue to avoid disrupting performance.
-
 ## Parameters
 
 - `completionHandler`: A closure to be invoked asynchronously after ARKit finishes generating the world map. The closure takes two parameters:

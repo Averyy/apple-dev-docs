@@ -1,6 +1,6 @@
 # name
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The name of the device.
@@ -47,4 +47,4 @@ In watchOS, the  is available in the Settings app under General > About > Name. 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkinterfacedevice/name)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkinterfacedevice/name)*

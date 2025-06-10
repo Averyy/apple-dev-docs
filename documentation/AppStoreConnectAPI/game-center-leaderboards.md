@@ -19,10 +19,12 @@ For more information about how to use leaderboards in your app, see [`Configure 
   Read the group leadboard to which a leaderboard belongs.
 - [List all localizations for a leaderboard](get-v1-gamecenterleaderboards-_id_-localizations.md)
   Get a list of localized metadata for a leaderboard.
+- [GET /v1/gameCenterLeaderboards/{id}/relationships/localizations](get-v1-gamecenterleaderboards-_id_-relationships-localizations.md)
 - [List all groups to which a leaderboard belongs ](get-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
   List associated group leaderboards for a specific leaderboard.
 - [List releases for a leaderboard](get-v1-gamecenterleaderboards-_id_-releases.md)
   Read the state of releases for a leaderboard and related information.
+- [GET /v1/gameCenterLeaderboards/{id}/relationships/releases](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
 ### Creating, modifying, and deleting leaderboards
 - [Create a leaderboard](post-v1-gamecenterleaderboards.md)
   Add a new leaderboard to your app.
@@ -30,6 +32,8 @@ For more information about how to use leaderboards in your app, see [`Configure 
   Modify the details of a leaderboard.
 - [Edit the relationship between a leaderboard and a group leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
   Modify the group leadboard to which a leaderboard belongs.
+- [PATCH /v1/gameCenterLeaderboards/{id}/relationships/activity](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md)
+- [PATCH /v1/gameCenterLeaderboards/{id}/relationships/challenge](patch-v1-gamecenterleaderboards-_id_-relationships-challenge.md)
 - [Delete a leaderboard](delete-v1-gamecenterleaderboards-_id_.md)
   Delete a leaderboard from your app.
 ### Objects
@@ -47,6 +51,8 @@ For more information about how to use leaderboards in your app, see [`Configure 
   The request body you use to attach an individual leaderbaord to a group leaderboard.
 - [object GameCenterLeaderboardGroupLeaderboardLinkageResponse](gamecenterleaderboardgroupleaderboardlinkageresponse.md)
   A response confriming a relationship between a leaderboard and group leaderboard.
+- [object GameCenterLeaderboardActivityLinkageRequest](gamecenterleaderboardactivitylinkagerequest.md)
+- [object GameCenterLeaderboardChallengeLinkageRequest](gamecenterleaderboardchallengelinkagerequest.md)
 
 ## See Also
 

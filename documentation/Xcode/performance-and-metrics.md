@@ -22,6 +22,8 @@ Measure, investigate, and address the use of system resources and issues impacti
   Create a user experience that feels responsive by removing hangs and hitches from your app.
 - [Understanding user interface responsiveness](understanding-user-interface-responsiveness.md)
   Make your app more responsive by examining the event-handling and rendering loop.
+- [Understanding and improving SwiftUI performance](understanding-and-improving-swiftui-performance.md)
+  Identify and address long-running view updates, and reduce the frequency of updates.
 - [Understanding hangs in your app](understanding-hangs-in-your-app.md)
   Determine the cause for delays in user interactions by examining the main thread and the main run loop.
 - [Understanding hitches in your app](understanding-hitches-in-your-app.md)
@@ -50,6 +52,8 @@ Measure, investigate, and address the use of system resources and issues impacti
 ### Power
 - [Analyzing your app’s battery use](analyzing-your-app-s-battery-use.md)
   Increase the available use time for your app on a single battery charge by reducing your appʼs power consumption.
+- [Measuring your app’s power use with Power Profiler](measuring-your-app-s-power-use-with-power-profiler.md)
+  Profile your app’s power impact whether or not your device is connected to Xcode.
 ### Network
 - [Analyzing HTTP traffic with Instruments](../Foundation/analyzing-http-traffic-with-instruments.md)
   Measure HTTP-based network performance and usage of your apps.

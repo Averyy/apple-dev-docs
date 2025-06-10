@@ -29,8 +29,6 @@ You add concrete output instances, such as [`AVAssetReaderTrackOutput`](avassetr
 
 > ❗ **Important**:  If you don’t require modifying sample data in-place, set the value of the [`alwaysCopiesSampleData`](avassetreaderoutput/alwayscopiessampledata.md) property to [`false`](https://developer.apple.com/documentation/swift/false) to prevent the output from making unnecessary copies.
 
- If you don’t require modifying sample data in-place, set the value of the [`alwaysCopiesSampleData`](avassetreaderoutput/alwayscopiessampledata.md) property to [`false`](https://developer.apple.com/documentation/swift/false) to prevent the output from making unnecessary copies.
-
 ## Topics
 
 ### Configuring Reading
@@ -48,6 +46,13 @@ You add concrete output instances, such as [`AVAssetReaderTrackOutput`](avassetr
 ### Inspecting the Media Type
 - [var mediaType: AVMediaType](avassetreaderoutput/mediatype.md)
   The media type of samples that the output reads.
+### Classes
+- [AVAssetReaderOutput.Provider](avassetreaderoutput/provider.md)
+  Defines an interface for reading a single collection of smaples of a common media type from an AVAssetReader.
+- [AVAssetReaderOutput.RandomAccessController](avassetreaderoutput/randomaccesscontroller.md)
+  Object used to reset an output provider to read specified time ranges.
+### Protocols
+- [AVAssetReaderOutput.SupportedPayload](avassetreaderoutput/supportedpayload.md)
 
 ## Relationships
 

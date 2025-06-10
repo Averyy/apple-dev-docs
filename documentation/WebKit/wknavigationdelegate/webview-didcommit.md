@@ -1,6 +1,6 @@
 # webView(_:didCommit:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the delegate that the web view has started to receive content for the main frame.

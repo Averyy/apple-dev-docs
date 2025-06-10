@@ -13,6 +13,7 @@ The numeric score string for this team in the current event. Depending on the si
 ## Declaration
 
 ```swift
+@MainActor
 var eventScore: String { get }
 ```
 

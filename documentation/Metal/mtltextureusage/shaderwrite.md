@@ -33,8 +33,6 @@ In iOS devices with GPU family 5, Metal doesn’t apply lossless compression to 
 
 > ❗ **Important**:  Rendering and writing to a texture are different operations, and you don’t need to combine their usage options. Set the [`renderTarget`](mtltextureusage/rendertarget.md) option if you render to a given texture, but don’t set the [`shaderWrite`](mtltextureusage/shaderwrite.md) option if you don’t write to the texture. The [`renderTarget`](mtltextureusage/rendertarget.md) and [`shaderWrite`](mtltextureusage/shaderwrite.md) options aren’t equivalent, and setting [`renderTarget`](mtltextureusage/rendertarget.md) doesn’t require you to also set [`shaderWrite`](mtltextureusage/shaderwrite.md).
 
- Rendering and writing to a texture are different operations, and you don’t need to combine their usage options. Set the [`renderTarget`](mtltextureusage/rendertarget.md) option if you render to a given texture, but don’t set the [`shaderWrite`](mtltextureusage/shaderwrite.md) option if you don’t write to the texture. The [`renderTarget`](mtltextureusage/rendertarget.md) and [`shaderWrite`](mtltextureusage/shaderwrite.md) options aren’t equivalent, and setting [`renderTarget`](mtltextureusage/rendertarget.md) doesn’t require you to also set [`shaderWrite`](mtltextureusage/shaderwrite.md).
-
 ## See Also
 
 - [static var unknown: MTLTextureUsage](mtltextureusage/unknown.md)

@@ -14,7 +14,6 @@ Deprecated.
 ## Declaration
 
 ```swift
-@MainActor
 func printRect() -> CGRect
 ```
 

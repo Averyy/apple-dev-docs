@@ -1,13 +1,17 @@
 # XPCListener.IncomingSessionRequest.Decision
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: struct
 
 An opaque type that indicates whether a listener accepts or rejects an incoming session request.
 
 **Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 17.0+
+- watchOS 10.0+
 
 ## Declaration
 

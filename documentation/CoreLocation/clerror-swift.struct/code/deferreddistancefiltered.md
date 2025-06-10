@@ -22,7 +22,7 @@ case deferredDistanceFiltered
 
 #### Discussion
 
-Set the distance filter to [`kCLDistanceFilterNone`](kcldistancefilternone.md).
+Set the distance filter to `kCLDistanceFilterNone`.
 
 ## See Also
 

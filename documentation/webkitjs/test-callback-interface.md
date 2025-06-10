@@ -1,6 +1,6 @@
 # TEST_CALLBACK_INTERFACE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: tdef
 
 **Availability**:

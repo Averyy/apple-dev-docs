@@ -1,6 +1,6 @@
 # element(matching:identifier:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Matches the provided element type and identifier.

@@ -28,6 +28,9 @@ If the [`prefersLargeTitles`](uinavigationbar/preferslargetitles.md) property of
 
 - [var title: String?](uinavigationitem/title.md)
   The navigation item’s title that displays in the navigation bar.
+- [var attributedTitle: AttributedString?](uinavigationitem/attributedtitle-25fxb.md)
+- [var largeTitle: String?](uinavigationitem/largetitle.md)
+  String to be used as the large title.
 - [UINavigationItem.LargeTitleDisplayMode](uinavigationitem/largetitledisplaymode-swift.enum.md)
   Constants that indicate how to size the title of this item.
 

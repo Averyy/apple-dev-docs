@@ -54,15 +54,20 @@ struct Value
   A structure that provides details specific to a gesture driven interaction.
 ### Instance Properties
 - [var configuration: TabletopInteraction.Configuration](tabletopinteraction/value-swift.struct/configuration.md)
-  The configuration of this interaction
+  The current configuration of this interaction
+- [var constants: TabletopInteraction.Constants](tabletopinteraction/value-swift.struct/constants.md)
+  The constants of this interaction
 - [var gesture: TabletopInteraction.Value.Gesture?](tabletopinteraction/value-swift.struct/gesture-swift.property.md)
   If this is interaction is currently gesture driven, contains gesture specific additional information
+- [var initialPose: Pose3D](tabletopinteraction/value-swift.struct/initialpose.md)
+  The pose of the equipment that the interaction was started with
 
 ## Relationships
 
 ### Conforms To
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

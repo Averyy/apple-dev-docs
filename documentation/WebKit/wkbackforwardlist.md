@@ -1,6 +1,6 @@
 # WKBackForwardList
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that manages the list of previously loaded webpages, which the web view uses for forward and backward navigation.

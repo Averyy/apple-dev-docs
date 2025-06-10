@@ -33,8 +33,6 @@ If the value of [`canPerformMultiplePasses`](avassetwriterinput/canperformmultip
 
 > ❗ **Important**:  Before calling this method, you must add the input to an asset writer and call the writer’s [`startWriting()`](avassetwriter/startwriting().md) method.
 
- Before calling this method, you must add the input to an asset writer and call the writer’s [`startWriting()`](avassetwriter/startwriting().md) method.
-
 ## See Also
 
 - [var canPerformMultiplePasses: Bool](avassetwriterinput/canperformmultiplepasses.md)

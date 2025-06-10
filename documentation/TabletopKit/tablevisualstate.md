@@ -39,7 +39,22 @@ struct TableVisualState
 - [var tableBounds: TableVisualState.OrientedRect3D?](tablevisualstate/tablebounds.md)
 ### Representing seat states
 - [func pose(forSeat: some TableSeat) -> Pose3D?](tablevisualstate/pose(forseat:).md)
-- [func pose(matching: TableSeatIdentifier) -> Pose3D?](tablevisualstate/pose(matching:).md)
+### Instance Methods
+- [func bounds(for: some Equipment) -> TableVisualState.OrientedRect3D?](tablevisualstate/bounds(for:).md)
+  Returns the current pose and extents of the bounding box for the given equipment. Returns `nil` if the equipment is not part of the game.
+- [func goalBounds(for: some Equipment) -> TableVisualState.OrientedRect3D?](tablevisualstate/goalbounds(for:).md)
+  Returns the goal pose and extents of the bounding box for the given equipment. Returns `nil` if the equipment is not part of the game.
+- [func goalPose(for: some Equipment) -> Pose3D?](tablevisualstate/goalpose(for:).md)
+  Returns the goal pose for the given equipment. Returns `nil` if the equipment is not part of the game.
+- [func goalPose(matching: EquipmentIdentifier) -> Pose3D?](tablevisualstate/goalpose(matching:).md)
+  Returns the goal pose for the equipment matching the given ID. Returns `nil` if the equipment is not part of the game.
+- [func pose(for: some Equipment) -> Pose3D?](tablevisualstate/pose(for:)-50h4r.md)
+  Returns the current pose for the given equipment. Returns `nil` if the equipment is not part of the game.
+- [func pose(for: some TableSeat) -> Pose3D?](tablevisualstate/pose(for:)-8pm0h.md)
+  Returns the pose for the given seat. Returns `nil` if the seat is not part of the game.
+- [func pose(matching: TableSeatIdentifier) -> Pose3D?](tablevisualstate/pose(matching:)-6bo29.md)
+- [func pose(matching: EquipmentIdentifier) -> Pose3D?](tablevisualstate/pose(matching:)-8nqm2.md)
+  Returns the current pose for the equipment matching the given ID. Returns `nil` if the equipment is not part of the game.
 
 ## See Also
 
@@ -50,7 +65,7 @@ struct TableVisualState
 - [struct TableSnapshot](tablesnapshot.md)
   A snapshot of the current state of the table.
 - [struct TableCursor](tablecursor.md)
-  A visual indicator that represents the destination of player interactions with equipment.
+  A cursor conveys information about one equipment that is currently being controlled by an interaction.
 - [struct TableCursorIdentifier](tablecursoridentifier.md)
   A unique identifier for cursors.
 

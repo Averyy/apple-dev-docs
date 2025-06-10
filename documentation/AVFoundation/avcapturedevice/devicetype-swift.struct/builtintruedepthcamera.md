@@ -27,8 +27,6 @@ The infrared camera provides high-quality depth information that’s synchronize
 
 > ❗ **Important**:  To obtain a device of this type, use the [`default(_:for:position:)`](avcapturedevice/default(_:for:position:).md) method or the [`AVCaptureDevice.DiscoverySession`](avcapturedevice/discoverysession.md) class. Other methods don’t discover devices of this type.
 
- To obtain a device of this type, use the [`default(_:for:position:)`](avcapturedevice/default(_:for:position:).md) method or the [`AVCaptureDevice.DiscoverySession`](avcapturedevice/discoverysession.md) class. Other methods don’t discover devices of this type.
-
 ## See Also
 
 - [static let builtInLiDARDepthCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtinlidardepthcamera.md)

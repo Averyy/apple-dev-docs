@@ -1,6 +1,6 @@
 # MEDIA_ERR_NETWORK
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

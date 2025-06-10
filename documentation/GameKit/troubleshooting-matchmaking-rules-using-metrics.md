@@ -1,6 +1,6 @@
 # Troubleshooting matchmaking rules using metrics
 
-**Framework**: Gamekit
+**Framework**: GameKit
 
 Investigate issues with Game Center by evaluating your matchmaking rules using metrics endpoints.
 
@@ -91,4 +91,4 @@ To get the queue `id`, use the [`Create a queue`](https://developer.apple.com/do
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/troubleshooting-matchmaking-rules-using-metrics)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/troubleshooting-matchmaking-rules-using-metrics)*

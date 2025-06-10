@@ -10,11 +10,7 @@ Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tv
 
 > ❗ **Important**: Storyboards containing a [`UITextView`](https://developer.apple.com/documentation/UIKit/UITextView) will cause the app to crash on operating system versions earlier than iOS 13.2 and tvOS 13.2 if compiled with Xcode 11.2. (56808566)
 
-Storyboards containing a [`UITextView`](https://developer.apple.com/documentation/UIKit/UITextView) will cause the app to crash on operating system versions earlier than iOS 13.2 and tvOS 13.2 if compiled with Xcode 11.2. (56808566)
-
 > ❗ **Important**: Storyboards containing a [`UITextView`](https://developer.apple.com/documentation/UIKit/UITextView) will cause the app to crash on macOS versions earlier than macOS 10.15.1 if compiled on a Mac running macOS 10.15.1. (56873523)
-
-Storyboards containing a [`UITextView`](https://developer.apple.com/documentation/UIKit/UITextView) will cause the app to crash on macOS versions earlier than macOS 10.15.1 if compiled on a Mac running macOS 10.15.1. (56873523)
 
 ##### Devices
 
@@ -61,7 +57,7 @@ Storyboards containing a [`UITextView`](https://developer.apple.com/documentatio
 
 ###### New Features
 
-- simctl video recording now produces smaller video files, supports HEIC compression, and takes advantage of hardware encoding support where available. In addition, the ability to record video on iOS 13, tvOS 13, and watchOS 6 devices has been restored. (50625716, 54409532, 55207068). > **Note**: The flags and arguments supported by simctl video recording have changed. See `xcrun simctl help io` for more information. The flags and arguments supported by simctl video recording have changed. See `xcrun simctl help io` for more information.
+- simctl video recording now produces smaller video files, supports HEIC compression, and takes advantage of hardware encoding support where available. In addition, the ability to record video on iOS 13, tvOS 13, and watchOS 6 devices has been restored. (50625716, 54409532, 55207068). > **Note**: The flags and arguments supported by simctl video recording have changed. See `xcrun simctl help io` for more information.
 - Simulator now has a menu item and keyboard shortcut to bring up the app switcher in iOS simulators. (54793361)
 - In [`AVAssetExportSession`](https://developer.apple.com/documentation/AVFoundation/AVAssetExportSession), the [`allExportPresets()`](https://developer.apple.com/documentation/AVFoundation/AVAssetExportSession/allExportPresets()) type method now returns presets in iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max simulators. (55659811)
 - `xcrun simctl list --json` now includes more information about devices and runtimes, including the device type used by each device. (55671833)
@@ -74,7 +70,7 @@ Storyboards containing a [`UITextView`](https://developer.apple.com/documentatio
 
 - Fixed a crash loop that could occur on macOS 10.15 Catalina when using iCloud Drive in simulated devices running older versions of iOS. (51392951, 54282967, 54818084)
 - Fixed an issue causing simulated devices running iOS 13 to display a black window instead of enabling an external display or a CarPlay display. (53966664)
-- Resolved an issue that prevented apps from installing on iOS 8.4 simulators. (55646411) > **Note**: iOS 8.4 and 9.x simulators are only supported when running on macOS 10.14 Mojave. iOS 8.4 and 9.x simulators are only supported when running on macOS 10.14 Mojave.
+- Resolved an issue that prevented apps from installing on iOS 8.4 simulators. (55646411) > **Note**: iOS 8.4 and 9.x simulators are only supported when running on macOS 10.14 Mojave.
 - Simulators no longer shut down when a process inside the simulator misuses Metal APIs or attempts to execute an invalid shader. (55725833)
 
 ##### Swift

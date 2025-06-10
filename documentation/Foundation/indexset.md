@@ -145,6 +145,7 @@ The range of valid integer values is `0...Int.max-1`. Anything outside this rang
 - [Hashable](../Swift/Hashable.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 

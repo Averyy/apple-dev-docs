@@ -1,11 +1,14 @@
 # VTFrameRateConversionConfiguration
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: class
 
 An object that enables the frame rate conversion on a frame processing session.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
 
 ## Declaration
@@ -33,8 +36,6 @@ class VTFrameRateConversionConfiguration
   A dictionary of pixel buffer attributes describing requirements for pixel buffers used as source frames and reference frames.
 - [var destinationPixelBufferAttributes: [String : any Sendable]](vtframerateconversionconfiguration/destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
-- [var frameSupportedPixelFormats: [NSNumber]](vtframerateconversionconfiguration/framesupportedpixelformats.md)
-  A list of source frame supported pixel formats for the current configuration.
 - [var qualityPrioritization: VTFrameRateConversionConfiguration.QualityPrioritization](vtframerateconversionconfiguration/qualityprioritization-swift.property.md)
   A value that specifies whether to prioritize quality or performance.
 - [VTFrameRateConversionConfiguration.QualityPrioritization](vtframerateconversionconfiguration/qualityprioritization-swift.enum.md)
@@ -48,6 +49,11 @@ class VTFrameRateConversionConfiguration
   The collection of currently-supported algorithms or configuration revisions for the class of configurations.
 - [VTFrameRateConversionConfiguration.Revision](vtframerateconversionconfiguration/revision-swift.enum.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
+### Instance Properties
+- [var frameSupportedPixelFormats: [NSNumber]](vtframerateconversionconfiguration/framesupportedpixelformats-54soi.md)
+- [var supportedPixelFormats: [OSType]](vtframerateconversionconfiguration/supportedpixelformats.md)
+### Type Properties
+- [class var isSupported: Bool](vtframerateconversionconfiguration/issupported.md)
 
 ## Relationships
 
@@ -61,6 +67,7 @@ class VTFrameRateConversionConfiguration
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)
 
 ## See Also

@@ -21,9 +21,9 @@ struct RenewalInfo
 
 ## Mentions
 
+- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 - [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
 - [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
-- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 
 #### Overview
 
@@ -121,6 +121,7 @@ struct RenewalInfo
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

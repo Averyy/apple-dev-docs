@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: subscript
 
 Accesses a contiguous subrange of the collection’s elements.

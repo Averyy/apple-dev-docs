@@ -1,6 +1,6 @@
 # CPInformationTemplate
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: class
 
 A template that provides information for a point of interest, food order, parking location, or charging location.
@@ -13,6 +13,7 @@ A template that provides information for a point of interest, food order, parkin
 ## Declaration
 
 ```swift
+@MainActor
 class CPInformationTemplate
 ```
 
@@ -66,6 +67,8 @@ To display an information template, call your interface controller’s [`pushTem
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

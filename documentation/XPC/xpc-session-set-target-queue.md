@@ -1,6 +1,6 @@
 # xpc_session_set_target_queue(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 **Availability**:

@@ -5,9 +5,6 @@
 
 The geometry of a plane anchor.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift

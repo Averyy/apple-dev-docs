@@ -1,6 +1,6 @@
 # date
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The day of the observed temperature summary.

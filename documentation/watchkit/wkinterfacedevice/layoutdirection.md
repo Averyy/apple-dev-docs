@@ -1,6 +1,6 @@
 # layoutDirection
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The layout direction of the user interface.

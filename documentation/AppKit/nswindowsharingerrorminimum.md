@@ -22,6 +22,12 @@ var NSWindowSharingErrorMinimum: Int { get }
 - [var NSWindowSharingRequestAlreadyRequested: Int](nswindowsharingrequestalreadyrequested.md)
 - [var NSWindowSharingRequestNoEligibleSession: Int](nswindowsharingrequestnoeligiblesession.md)
 - [var NSWindowSharingRequestUnspecifiedError: Int](nswindowsharingrequestunspecifiederror.md)
+- [var NSPasteboardMiscellaneousError: Int](nspasteboardmiscellaneouserror.md)
+- [var NSPasteboardCommunicationError: Int](nspasteboardcommunicationerror.md)
+- [var NSPasteboardInvalidArgumentError: Int](nspasteboardinvalidargumenterror.md)
+- [var NSPasteboardContentsNotAvailableError: Int](nspasteboardcontentsnotavailableerror.md)
+- [var NSPasteboardErrorMinimum: Int](nspasteboarderrorminimum.md)
+- [var NSPasteboardErrorMaximum: Int](nspasteboarderrormaximum.md)
 
 
 ---

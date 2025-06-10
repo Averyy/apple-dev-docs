@@ -1,6 +1,6 @@
 # VSError.Code.unsupportedProvider
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 The system doesn’t support the user’s subscription provider.

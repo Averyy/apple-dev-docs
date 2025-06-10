@@ -21,8 +21,6 @@ func run(_ operations: [any NSFileProviderTestingOperation]) throws -> [AnyHasha
 
 > ❗ **Important**:  Before calling this method, you must set the domain’s [`testingModes`](nsfileproviderdomain/testingmodes-swift.property.md) property to include the [`interactive`](nsfileproviderdomain/testingmodes-swift.struct/interactive.md) value.
 
- Before calling this method, you must set the domain’s [`testingModes`](nsfileproviderdomain/testingmodes-swift.property.md) property to include the [`interactive`](nsfileproviderdomain/testingmodes-swift.struct/interactive.md) value.
-
 The system waits until all of the specified operations complete and reports an error for any operations that fail.
 
 ## Parameters

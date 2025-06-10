@@ -14,6 +14,7 @@ Find and list beta app review details for all apps.
   Get beta app review details for a specific app.
 - [Read the App Information of a Beta App Review Detail](get-v1-betaappreviewdetails-_id_-app.md)
   Get the app information for a specific beta app review details resource.
+- [GET /v1/betaAppReviewDetails/{id}/relationships/app](get-v1-betaappreviewdetails-_id_-relationships-app.md)
 
 
 ---

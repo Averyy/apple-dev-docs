@@ -1,6 +1,6 @@
 # Building an immersive media viewing experience
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
 
@@ -165,4 +165,4 @@ After adding these buttons to the environment picker, they appear alongside the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/building-an-immersive-media-viewing-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/building-an-immersive-media-viewing-experience)*

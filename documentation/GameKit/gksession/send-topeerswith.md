@@ -1,6 +1,6 @@
 # send(_:toPeers:with:)
 
-**Framework**: Gamekit  
+**Framework**: GameKit  
 **Kind**: method
 
 Transmits a collection of bytes to a list of connected peers.

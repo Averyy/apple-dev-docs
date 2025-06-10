@@ -1,6 +1,6 @@
 # Providing Multiple Complications
 
-**Framework**: Clockkit
+**Framework**: ClockKit
 
 Present multiple complications for a single complication family using descriptors.
 
@@ -160,4 +160,4 @@ private func createCaffeineModularSmallTemplate(forDate date: Date) -> CLKCompli
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/providing-multiple-complications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/providing-multiple-complications)*

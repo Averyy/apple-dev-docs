@@ -1,6 +1,6 @@
 # PACK_ROW_LENGTH
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # Authoring movies with external movie targets
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Specify elements of an external movie in your movie.
 

@@ -1,6 +1,6 @@
 # Registering your app with APNs
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Communicate with Apple Push Notification service (APNs) and receive a unique device token that identifies your app.
 
@@ -74,4 +74,4 @@ For information about how to send payloads and device tokens to APNs, see [`Send
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/registering-your-app-with-apns)*
+*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/registering-your-app-with-apns)*

@@ -68,7 +68,7 @@ Use the [`gamePlayerID`](gkplayer/gameplayerid.md) property as a unique identifi
 - [var guestIdentifier: String?](gkplayer/guestidentifier.md)
   A developer-created string that identifies a guest player.
 ### Observing notifications
-- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name/1520710-gkplayerdidchangenotificationnam.md)
+- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerDidChangeNotificationName.md)
   A notification that posts when a player object’s data changes.
 ### Loading player details
 - [class func loadPlayers(forIdentifiers: [String], withCompletionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](gkplayer/loadplayers(foridentifiers:withcompletionhandler:).md)
@@ -102,9 +102,9 @@ Use the [`gamePlayerID`](gkplayer/gameplayerid.md) property as a unique identifi
   A class that provides common data and methods for the different player objects.
 - [protocol GKLocalPlayerListener](gklocalplayerlistener.md)
   A protocol that handles events for Game Center players.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name/1515396-gkplayerauthenticationdidchangen.md)
-  A notification that posts after GameKit authenticates the local player. 
-- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name/1520710-gkplayerdidchangenotificationnam.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+  A notification that posts after GameKit authenticates the local player.
+- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerDidChangeNotificationName.md)
   A notification that posts when a player object’s data changes.
 
 

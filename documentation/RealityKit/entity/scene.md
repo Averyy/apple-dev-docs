@@ -10,6 +10,7 @@ The scene that owns the entity.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -31,10 +32,6 @@ The value of the property is `nil` if the entity isn’t currently attached to a
   The name of the entity.
 - [func findEntity(named: String) -> Entity?](entity/findentity(named:).md)
   Recursively searches all descendant entities for one with the given name.
-- [var id: UInt64](entity/id-8kxa.md)
-  The stable identity of the entity associated with this instance.
-- [typealias ID](entity/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 - [var debugDescription: String](entity/debugdescription.md)
   A human readable description of the entity.
 

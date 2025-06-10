@@ -26,9 +26,7 @@ The value of this attribute must be a [`CFNumber`](https://developer.apple.com/d
 
 The baseline offset attribute indicates how many points the characters should be shifted perpendicular to their baseline. For horizontal text, a positive baseline value indicates a shift above the text baseline, and a negative baseline value indicates a shift below the text baseline. For vertical text, a positive baseline value indicates a shift to the right of the text baseline, and a negative baseline value indicates a shift to the left of the text baseline. If this value is set to `0.0`, no baseline shift will be performed.
 
-> ❗ **Important**: This attribute is different from [`baselineOffset`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1526427-baselineoffset). If you are writing code for [`TextKit`](https://developer.apple.com/documentation/AppKit/textkit), you need to use [`baselineOffset`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1526427-baselineoffset).
-
-This attribute is different from [`baselineOffset`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1526427-baselineoffset). If you are writing code for [`TextKit`](https://developer.apple.com/documentation/AppKit/textkit), you need to use [`baselineOffset`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1526427-baselineoffset).
+> ❗ **Important**: This attribute is different from [`baselineOffset`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/baselineOffset). If you are writing code for [`TextKit`](https://developer.apple.com/documentation/AppKit/textkit), you need to use [`baselineOffset`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/baselineOffset).
 
 ## See Also
 

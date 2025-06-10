@@ -1,6 +1,6 @@
 # invalidHost
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates that the host component was invalid.

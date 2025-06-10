@@ -1,6 +1,6 @@
 # HIDDriverKit
 
-**Framework**: Hiddriverkit  
+**Framework**: HIDDriverKit  
 **Kind**: module
 
 Develop drivers for human-interface devices, such as keyboards, pointing devices, and digitizers like pens and touch pads.
@@ -70,6 +70,25 @@ Develop your driver with DriverKit and HIDDriverKit, and package it in an app th
   Understand the underlying structures that support HID drivers.
 ### Reference
 - [HIDDriverKit Macros](hiddriverkit-macros.md)
+### Macros
+- [kIOHIDEventServiceSensorControlOptionsKey](kiohideventservicesensorcontroloptionskey.md)
+### Enumeration Cases
+- [kHIDUsage_LED_BlueLEDChannel](khidusage_led_blueledchannel.md)
+- [kHIDUsage_LED_GoodStatus](khidusage_led_goodstatus.md)
+- [kHIDUsage_LED_GreenLEDChannel](khidusage_led_greenledchannel.md)
+- [kHIDUsage_LED_IndicatorBlue](khidusage_led_indicatorblue.md)
+- [kHIDUsage_LED_IndicatorOrange](khidusage_led_indicatororange.md)
+- [kHIDUsage_LED_LEDIntensity](khidusage_led_ledintensity.md)
+- [kHIDUsage_LED_RGB_LED](khidusage_led_rgb_led.md)
+- [kHIDUsage_LED_RedLEDChannel](khidusage_led_redledchannel.md)
+- [kHIDUsage_LED_SystemMicrophoneMute](khidusage_led_systemmicrophonemute.md)
+- [kHIDUsage_LED_WarningStatus](khidusage_led_warningstatus.md)
+- [kHIDUsage_Snsr_Biometric_HeartRate](khidusage_snsr_biometric_heartrate.md)
+- [kHIDUsage_Snsr_Data_Biometric_HeartRate](khidusage_snsr_data_biometric_heartrate.md)
+- [kHIDUsage_Snsr_Motion_GravityVector](khidusage_snsr_motion_gravityvector.md)
+- [kHIDUsage_Snsr_Motion_LinearAccelerometer](khidusage_snsr_motion_linearaccelerometer.md)
+### Enumerations
+- [IOHIDServiceSensorControlOptions](iohidservicesensorcontroloptions.md)
 
 
 ---

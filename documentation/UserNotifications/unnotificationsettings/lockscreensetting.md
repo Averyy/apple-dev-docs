@@ -1,6 +1,6 @@
 # lockScreenSetting
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The setting that indicates whether your app’s notifications appear on a device’s Lock screen.

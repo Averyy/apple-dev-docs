@@ -1,6 +1,6 @@
 # last(where:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns the last element of the sequence that satisfies the given predicate.

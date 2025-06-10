@@ -23,14 +23,6 @@ Your web distribution app needs to be served from this base domain.
   List all the alternative distribution domains for your account.
 - [Delete an alternative distribution domain](delete-v1-alternativedistributiondomains-_id_.md)
   Delete the alternative distribution search domain for an app.
-- [Add a marketplace domain](post-v1-marketplacedomains.md)
-  Add an alternative marketplace domain to your account.
-- [Read marketplace domain information](get-v1-marketplacedomains-_id_.md)
-  Read information for a specific alternative marketplace domain.
-- [List marketplace domains](get-v1-marketplacedomains.md)
-  List all the alternative marketplace domains for your account.
-- [Delete a marketplace domain](delete-v1-marketplacedomains-_id_.md)
-  Delete the alternative marketplace search domain for an app.
 ### Objects
 - [object AlternativeDistributionDomain](alternativedistributiondomain.md)
   The data structure that represents an alternative distribution domain resource.
@@ -40,14 +32,6 @@ Your web distribution app needs to be served from this base domain.
   A response that contains a single alternative distribution domain resource.
 - [object AlternativeDistributionDomainsResponse](alternativedistributiondomainsresponse.md)
   A response that contains a list of alternative distribution domain resources.
-- [object MarketplaceDomain](marketplacedomain.md)
-  The data structure that represents an alternative marketplace domain resource.
-- [object MarketplaceDomainCreateRequest](marketplacedomaincreaterequest.md)
-  The request body you use to create an alternative marketplace domain.
-- [object MarketplaceDomainResponse](marketplacedomainresponse.md)
-  A response that contains a single alternative marketplace domain resource.
-- [object MarketplaceDomainsResponse](marketplacedomainsresponse.md)
-  A response that contains a list of alternative marketplace domain resources.
 
 ## See Also
 

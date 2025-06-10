@@ -1,6 +1,6 @@
 # TEST_EVENT_TARGET
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: tdef
 
 **Availability**:

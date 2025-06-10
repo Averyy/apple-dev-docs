@@ -1,6 +1,6 @@
 # accessibilityInputLabels(_:isEnabled:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Sets alternate input labels with which users identify a view.

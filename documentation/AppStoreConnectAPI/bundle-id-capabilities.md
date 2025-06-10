@@ -49,6 +49,8 @@ The `bundleIdCapabilities` resource represents capabilities that you can enable 
   Create, delete, and download provisioning profiles that enable app installations for development and distribution.
 - [Merchant ID](merchantids.md)
   Manage your merchant ID for Apple Pay.
+- [Pass type Ids](pass-type-id.md)
+  Create, download, and revoke pass type ids for app development and distribution.
 
 
 ---

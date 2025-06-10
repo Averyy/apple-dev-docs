@@ -22,22 +22,11 @@ Depending on the coordinate space that a caller entity is parented under, and wh
 
 ## Topics
 
-### Operators
-- [static func == (Entity.CoordinateSpaceReference, Entity.CoordinateSpaceReference) -> Bool](entity/coordinatespacereference/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [Entity.CoordinateSpaceReference.immersiveSpace](entity/coordinatespacereference/immersivespace.md)
   A reference to an opened immersive space.
 - [Entity.CoordinateSpaceReference.scene](entity/coordinatespacereference/scene.md)
   A reference to an entity’s parent window scene.
-### Instance Properties
-- [var hashValue: Int](entity/coordinatespacereference/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](entity/coordinatespacereference/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](entity/coordinatespacereference/equatable-implementations.md)
 
 ## Relationships
 
@@ -54,8 +43,6 @@ Depending on the coordinate space that a caller entity is parented under, and wh
   A component that defines the scale, rotation, and translation of an entity.
 - [func transformMatrix(relativeTo: Entity.CoordinateSpaceReference) -> float4x4?](entity/transformmatrix(relativeto:).md)
   Returns the 4 x 4 transform matrix of an entity relative to the given coordinate space.
-- [Entity.ForwardDirection](entity/forwarddirection.md)
-  Defines the forward direction for an entity.
 
 
 ---

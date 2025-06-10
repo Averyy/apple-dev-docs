@@ -1,6 +1,6 @@
 # Issues
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Read information about issues that occurred when Xcode Cloud performs a build.
 
@@ -41,4 +41,4 @@ The `ciIssues` resource represents issues that occur when Xcode Cloud performs a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/issues)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/issues)*

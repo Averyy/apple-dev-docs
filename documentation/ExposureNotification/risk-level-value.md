@@ -8,8 +8,6 @@ The minimum and maximum risk level values.
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.6 and later.
 
- This property is available in iOS 12.5, and in iOS 13.6 and later.
-
 ## Topics
 
 ### Constants

@@ -1,6 +1,6 @@
 # invalidateConfigurationRecommendations()
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: method
 
 Invalidates and refreshes the preconfigured intent configurations for user-customizable widgets.
@@ -8,8 +8,9 @@ Invalidates and refreshes the preconfigured intent configurations for user-custo
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration

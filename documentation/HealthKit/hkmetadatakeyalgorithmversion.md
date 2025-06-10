@@ -1,6 +1,6 @@
 # HKMetadataKeyAlgorithmVersion
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: var
 
 A key that indicates the version number of the algorithm used to calculate the sample’s value.
@@ -28,4 +28,4 @@ This key takes an [`NSNumber`](https://developer.apple.com/documentation/Foundat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkmetadatakeyalgorithmversion)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkmetadatakeyalgorithmversion)*

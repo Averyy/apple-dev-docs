@@ -25,8 +25,6 @@ convenience init(for forTypes: any PersistentModel.Type..., migrationPlan: (any 
 
 > ❗ **Important**: A container must have at least one configuration. If you don’t specify any, the framework creates an instance of [`ModelConfiguration`](modelconfiguration.md) for you by combining your app’s entitlements with the type’s default values.
 
-A container must have at least one configuration. If you don’t specify any, the framework creates an instance of [`ModelConfiguration`](modelconfiguration.md) for you by combining your app’s entitlements with the type’s default values.
-
 ## Parameters
 
 - `forTypes`: A list of the persistent model types that comprise your app’s schema.

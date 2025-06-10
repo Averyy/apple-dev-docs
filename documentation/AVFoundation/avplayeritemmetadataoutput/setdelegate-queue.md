@@ -26,8 +26,6 @@ You specify the metadata delegate, and a dispatch queue on which it will be call
 
 > ❗ **Important**:  The values set for the `delegate` and `delegateQueue` arguments can be `nil` , but passing `nil` for one requires you to do the same for the other. Passing a `nil` value for only one argument results in an exception being raised at runtime.
 
- The values set for the `delegate` and `delegateQueue` arguments can be `nil` , but passing `nil` for one requires you to do the same for the other. Passing a `nil` value for only one argument results in an exception being raised at runtime.
-
 ## Parameters
 
 - `delegate`: An object conforming to   protocol.

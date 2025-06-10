@@ -1,6 +1,6 @@
 # markupString
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A string in markup format corresponding to the content in the range.

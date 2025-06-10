@@ -77,8 +77,6 @@ If you use the `custom` URL parameter, the value must be an absolute URL. To com
 
 > ❗ **Important**:  AR Quick Look displays the contents of the HTML only. If you embed actions such as links or events, AR Quick Look ignores them.
 
- AR Quick Look displays the contents of the HTML only. If you embed actions such as links or events, AR Quick Look ignores them.
-
 ##### Define the Custom Banners Height
 
 When you display a custom banner, you can set the banner height using the `customHeight` URL parameter.
@@ -123,7 +121,7 @@ The `message` event follows normal DOM processing rules. Rather than adding a li
 
 Define the actions your website takes in response to a user tap in your event listener. When the user taps the custom action button, you might add the previewed item to a shopping cart or take the user to a checkout page, depending on the banner’s text and custom action.
 
-If your banner displays an Apple Pay button, bring up the Apple Pay prompt using [`Apple Pay JS API`](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api).
+If your banner displays an Apple Pay button, bring up the Apple Pay prompt using [`Apple Pay JS API`](https://developer.apple.com/documentation/ApplePayontheWeb/apple-pay-js-api).
 
 If your banner displays an Apple Messages for Business button, send the user to Messages using your company’s custom Apple Messages for Business URL. For more infomation, see [`Starting a Chat from a URL`](https://developer.apple.comhttps://register.apple.com/resources/messages/messaging-documentation/chat-with-customers#starting-a-chat-from-a-url).
 
@@ -133,8 +131,6 @@ If your banner displays an Apple Messages for Business button, send the user to 
   Display a model or scene that the user can move, scale, and share with others.
 - [Adding Visual Effects in AR Quick Look and RealityKit](adding-visual-effects-in-ar-quick-look-and-realitykit.md)
   Balance the appearance and performance of your AR experiences with modeling strategies.
-- [class ARQuickLookPreviewItem](arquicklookpreviewitem.md)
-  An object for customizing the AR Quick Look experience.
 - [USDZ schemas for AR](../RealityKit/usdz-schemas-for-ar.md)
   Add augmented reality functionality to your 3D content using USDZ schemas.
 - [Specifying a lighting environment in AR Quick Look](specifying-a-lighting-environment-in-ar-quick-look.md)

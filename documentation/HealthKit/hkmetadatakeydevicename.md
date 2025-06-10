@@ -1,6 +1,6 @@
 # HKMetadataKeyDeviceName
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: var
 
 The name of the device that took this reading.
@@ -47,4 +47,4 @@ This key takes a string value.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkmetadatakeydevicename)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkmetadatakeydevicename)*

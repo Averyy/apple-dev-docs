@@ -8,7 +8,7 @@ Whenever the in-app context for this intent changes any process containing this 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # forceAuthentication
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A Boolean value that indicates whether the app ignores cached credentials.

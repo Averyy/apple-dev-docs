@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_MaxOutputPresentationTimeStampOfFramesBeingDecoded
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The maximum output presentation timestamp of the frames currently being decoded.

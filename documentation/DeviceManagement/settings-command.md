@@ -1,4 +1,4 @@
-# Configure Settings
+# Settings
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -12,8 +12,6 @@ Configure settings on a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -25,17 +23,17 @@ Refer to the following sections to determine supported channels and requirements
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS, watchOS |
-| User Channel | macOS, Shared iPad |
-| Requires Supervision | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Required Access Right | AllowSettings |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| User channel | macOS, Shared iPad |
+| Requires supervision | NA |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Required access right | AllowSettings |
 
 ##### Example Request and Response Devicename
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object SettingsCommand](settingscommand.md)
   The command to configure settings on a device.
 - [object SettingsResponse](settingsresponse.md)
@@ -43,7 +41,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
-The command to configure settings on a device.
+The request object the server returns for the Settings Command.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # WKHTTPCookieStore.CookiePolicy.disallow
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A case that indicates the cookie store does not allow cookie storage.

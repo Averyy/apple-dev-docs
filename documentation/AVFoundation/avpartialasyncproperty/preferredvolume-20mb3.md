@@ -22,7 +22,7 @@ static var preferredVolume: AVAsyncProperty<Root, Float> { get }
 
 #### Discussion
 
-Use the [`load(_:)`](avasynchronouskeyvalueloading/load(_:).md) method to retrieve the property value.
+Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
 
 The preferred volume for an audio track is typically, but not always, `1.0`. For nonaudible tracks, the value is `0.0`.
 

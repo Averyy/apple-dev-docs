@@ -1,6 +1,6 @@
 # GetVppUsersRequest
 
-**Framework**: Devicemanagement  
+**Framework**: Device Management  
 **Kind**: dictionary
 
 The request for the users’ details service.
@@ -27,4 +27,4 @@ object GetVppUsersRequest
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/getvppusersrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/getvppusersrequest)*

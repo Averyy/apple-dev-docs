@@ -56,6 +56,7 @@ Within the execution of a Swift program, `Hasher` guarantees that finalizing it 
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Copyable](copyable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 
@@ -65,4 +66,4 @@ Within the execution of a Swift program, `Hasher` guarantees that finalizing it 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/hasher)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/hasher)*

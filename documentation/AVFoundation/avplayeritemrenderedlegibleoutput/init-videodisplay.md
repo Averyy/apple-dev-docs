@@ -23,8 +23,6 @@ You can also choose to reset the [`videoDisplaySize`](avplayeritemrenderedlegibl
 
 > ❗ **Important**:  Attempting to set a video display size of [`zero`](https://developer.apple.com/documentation/CoreFoundation/CGSize/zero) results in the system throwing an exception.
 
- Attempting to set a video display size of [`zero`](https://developer.apple.com/documentation/CoreFoundation/CGSize/zero) results in the system throwing an exception.
-
 ## Parameters
 
 - `videoDisplaySize`: The size of the video display.

@@ -1,6 +1,6 @@
 # liveTextButtonVisible
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A Boolean value that indicates whether the Live Text button appears.

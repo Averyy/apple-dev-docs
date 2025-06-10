@@ -67,8 +67,6 @@ For more information on using the codesign utility, see its [`codesign`](https:/
 
 > ❗ **Important**: Only re-sign apps from the command-line as a last resort to update your code signature to include the DER entitlements. Re-signing apps from the command-line is not supported for iOS, iPadOS, tvOS, visionOS, and watchOS. It’s recommended that you to sign your app using macOS 11 or later as soon as you are able.
 
-Only re-sign apps from the command-line as a last resort to update your code signature to include the DER entitlements. Re-signing apps from the command-line is not supported for iOS, iPadOS, tvOS, visionOS, and watchOS. It’s recommended that you to sign your app using macOS 11 or later as soon as you are able.
-
 If your app contains nested code, such as an app extension, a framework, or a bundled watchOS app, sign each item separately, starting with the most deeply nested executable, and working your way out; then sign your main app last. Don’t include entitlements or profiles when signing frameworks. Including them produces an invalid code signature.
 
 For general information about app distribution, see [`Distributing Your App for Beta Testing and Releases`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases).

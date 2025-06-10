@@ -13,6 +13,7 @@ A template that displays a modal action sheet.
 ## Declaration
 
 ```swift
+@MainActor
 class CPActionSheetTemplate
 ```
 
@@ -46,6 +47,8 @@ You must present action sheets modally by calling the [`presentTemplate(_:animat
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

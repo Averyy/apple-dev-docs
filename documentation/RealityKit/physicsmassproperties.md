@@ -10,6 +10,7 @@ Mass properties of a physics body.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -42,10 +43,6 @@ struct PhysicsMassProperties
 ### Comparing mass properties
 - [static func == (PhysicsMassProperties, PhysicsMassProperties) -> Bool](physicsmassproperties/==(_:_:).md)
   Indicates whether two physics mass properties are equal.
-- [static func != (Self, Self) -> Bool](physicsmassproperties/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Equatable Implementations](physicsmassproperties/equatable-implementations.md)
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 # OptionSet Implementations
 
-**Framework**: Xcuiautomation
+**Framework**: XCUIAutomation
 
 ## Topics
 

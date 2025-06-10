@@ -18,6 +18,7 @@ Resolve to a concrete modifier in the given `environment`.
 ## Declaration
 
 ```swift
+nonisolated
 func resolve(in environment: EnvironmentValues) -> Self.ResolvedModifier
 ```
 

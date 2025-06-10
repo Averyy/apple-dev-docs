@@ -1,6 +1,6 @@
 # setUserTrackingMode(_:animated:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the map’s tracking mode.

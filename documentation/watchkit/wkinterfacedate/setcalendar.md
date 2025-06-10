@@ -1,6 +1,6 @@
 # setCalendar(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the calendar to use when formatting date information.

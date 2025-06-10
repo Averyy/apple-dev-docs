@@ -58,6 +58,7 @@ enum BlendMode
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -69,6 +70,9 @@ enum BlendMode
   Composites this view’s contents into an offscreen image before final display.
 - [enum ColorRenderingMode](colorrenderingmode.md)
   The set of possible working color spaces for color-compositing operations.
+- [protocol CompositorContent](compositorcontent.md)
+- [struct CompositorContentBuilder](compositorcontentbuilder.md)
+  A result builder for composing a collection of [`CompositorContent`](compositorcontent.md) elements.
 
 
 ---

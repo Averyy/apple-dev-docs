@@ -22,7 +22,7 @@ case gnu11
 - [CLanguageStandard.c2x](clanguagestandard/c2x.md)
   The identifier for the ISO C2x draft language standard.
 - [CLanguageStandard.c89](clanguagestandard/c89.md)
-  The identifier for the ISO C 1990 language standard.
+  The identifier for the ISO C 1989 language standard.
 - [CLanguageStandard.c90](clanguagestandard/c90.md)
   The identifier for the ISO C 1990 language standard.
 - [CLanguageStandard.c99](clanguagestandard/c99.md)

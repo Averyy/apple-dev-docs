@@ -1,6 +1,6 @@
 # DOM_SHOW_ALL
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

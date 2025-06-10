@@ -1,6 +1,6 @@
 # MPEG-1 media
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Store MPEG-1 video streams, MPEG-1, layer 2 audio streams, and multiplexed MPEG-1 audio and video streams in QuickTime movies.
 

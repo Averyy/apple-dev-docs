@@ -1,6 +1,6 @@
 # scanForPeripherals(withServices:options:)
 
-**Framework**: Corebluetooth  
+**Framework**: Core Bluetooth  
 **Kind**: method
 
 Scans for peripherals that are advertising services.

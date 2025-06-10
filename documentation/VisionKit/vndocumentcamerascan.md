@@ -1,6 +1,6 @@
 # VNDocumentCameraScan
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: class
 
 A single document scanned in the document camera.

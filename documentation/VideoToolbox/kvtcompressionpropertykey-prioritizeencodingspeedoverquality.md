@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_PrioritizeEncodingSpeedOverQuality
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A hint for the video encoder to maximize its speed during encoding, sacrificing quality if needed.

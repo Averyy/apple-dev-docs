@@ -1,6 +1,6 @@
 # hash(into:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: method
 
 Hashes the essential components of the speed threshold alert by feeding them into the given hash function.

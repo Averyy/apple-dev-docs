@@ -6,11 +6,10 @@
 A dictionary containing details of the beta program.
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- macOS 14.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- iOS 17.5+
+- iPadOS 17.5+
+- macOS 14.5+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 

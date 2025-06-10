@@ -42,12 +42,16 @@ protocol Digest : ContiguousBytes, CustomStringConvertible, Hashable, Sendable, 
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 ### Conforming Types
 - [Insecure.MD5Digest](insecure/md5digest.md)
 - [Insecure.SHA1Digest](insecure/sha1digest.md)
 - [SHA256Digest](sha256digest.md)
 - [SHA384Digest](sha384digest.md)
+- [SHA3_256Digest](sha3_256digest.md)
+- [SHA3_384Digest](sha3_384digest.md)
+- [SHA3_512Digest](sha3_512digest.md)
 - [SHA512Digest](sha512digest.md)
 
 ## See Also

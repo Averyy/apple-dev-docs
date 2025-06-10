@@ -1,6 +1,6 @@
 # dragInteraction(_:sessionIsRestrictedToDraggingApplication:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Asks the delegate whether the system should restrict the drag session to the app that started the session.

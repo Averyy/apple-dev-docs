@@ -116,4 +116,4 @@ func scene(_ scene: UIScene,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/defining-a-custom-url-scheme-for-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app)*

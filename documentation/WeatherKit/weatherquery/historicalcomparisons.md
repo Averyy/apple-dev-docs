@@ -1,6 +1,6 @@
 # historicalComparisons
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The weather historical comparison query.

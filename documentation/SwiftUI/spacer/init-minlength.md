@@ -15,8 +15,7 @@
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init(minLength: CGFloat? = nil)
+init(minLength: CGFloat? = nil)
 ```
 
 ## See Also

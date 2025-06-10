@@ -54,6 +54,8 @@ Symbol image configuration objects include details such as the point size, scale
   Constants that indicate which scale variant of a symbol image to use.
 - [UIImage.SymbolWeight](uiimage/symbolweight.md)
   Constants that indicate which weight variant of a symbol image to use.
+- [UIImage.SymbolColorRenderingMode](uiimage/symbolcolorrenderingmode.md)
+- [UIImage.SymbolVariableValueMode](uiimage/symbolvariablevaluemode.md)
 ### Creating a color configuration
 - [convenience init(hierarchicalColor: UIColor)](uiimage/symbolconfiguration-swift.class/init(hierarchicalcolor:).md)
   Creates a color configuration with a color scheme that originates from one color.
@@ -78,6 +80,11 @@ Symbol image configuration objects include details such as the point size, scale
 ### Comparing symbol image configurations
 - [func isEqual(to: UIImage.SymbolConfiguration?) -> Bool](uiimage/symbolconfiguration-swift.class/isequal(to:).md)
   Returns a Boolean value that indicates whether the configuration objects are equivalent.
+### Initializers
+- [convenience init(colorRenderingMode: UIImage.SymbolColorRenderingMode)](uiimage/symbolconfiguration-swift.class/init(colorrenderingmode:).md)
+  Initializes a symbol configuration with a preferred color rendering mode.
+- [convenience init(variableValueMode: UIImage.SymbolVariableValueMode)](uiimage/symbolconfiguration-swift.class/init(variablevaluemode:).md)
+  Initializes a symbol configuration with a preferred variable value mode.
 
 ## Relationships
 
@@ -94,6 +101,7 @@ Symbol image configuration objects include details such as the point size, scale
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

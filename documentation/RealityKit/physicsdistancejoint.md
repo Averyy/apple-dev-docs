@@ -10,6 +10,7 @@ A joint that maintains a minimum and maximum distance between two entity pins.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -20,34 +21,20 @@ struct PhysicsDistanceJoint
 
 #### Overview
 
-A distance joint restricts the distance between [`pin0`](physicsdistancejoint/pin0.md) and [`pin1`](physicsdistancejoint/pin1.md). The joint determines this closed range according to [`distanceLimit`](physicsdistancejoint/distancelimit.md).
+A distance joint restricts the distance between `pin0` and `pin1`. The joint determines this closed range according to [`distanceLimit`](physicsdistancejoint/distancelimit.md).
 
-This joint allows full rotational freedom between [`pin0`](physicsdistancejoint/pin0.md) and [`pin1`](physicsdistancejoint/pin1.md).
+This joint allows full rotational freedom between `pin0` and `pin1`.
 
 ## Topics
 
-### Operators
-- [static func == (PhysicsDistanceJoint, PhysicsDistanceJoint) -> Bool](physicsdistancejoint/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(pin0: GeometricPin, pin1: GeometricPin, distanceLimit: ClosedRange<Float>, checksForInternalCollisions: Bool)](physicsdistancejoint/init(pin0:pin1:distancelimit:checksforinternalcollisions:).md)
   Creates a new distance joint.
 ### Instance Properties
-- [var checksForInternalCollisions: Bool](physicsdistancejoint/checksforinternalcollisions.md)
-  A Boolean that indicates whether the joint checks and reports collisions between the two entity instances.
 - [var distanceLimit: ClosedRange<Float>](physicsdistancejoint/distancelimit.md)
   Specifies the minimum and maximum allowed distance between the pins.
-- [var isActive: Bool](physicsdistancejoint/isactive.md)
-  A Boolean that indicates whether the joint is active.
-- [var pin0: GeometricPin](physicsdistancejoint/pin0.md)
-  The pin that defines a local position and orientation on the first entity.
-- [var pin1: GeometricPin](physicsdistancejoint/pin1.md)
-  The pin that defines a local position and orientation on the second entity.
 - [var tolerance: Float](physicsdistancejoint/tolerance.md)
   An extension of the distance limit, as a percentage-based error tolerance.
-### Default Implementations
-- [Equatable Implementations](physicsdistancejoint/equatable-implementations.md)
-- [PhysicsJoint Implementations](physicsdistancejoint/physicsjoint-implementations.md)
 
 ## Relationships
 

@@ -22,8 +22,6 @@ class PKRecurringPaymentRequest
 
 > ❗ **Important**:  You must set the [`recurringPaymentRequest`](pkpaymentrequest/recurringpaymentrequest.md) property on a [`PKPaymentRequest`](pkpaymentrequest.md) object to use this class to request a recurring payment.
 
- You must set the [`recurringPaymentRequest`](pkpaymentrequest/recurringpaymentrequest.md) property on a [`PKPaymentRequest`](pkpaymentrequest.md) object to use this class to request a recurring payment.
-
 Use a [`PKRecurringPaymentRequest`](pkrecurringpaymentrequest.md) object to provide the user with payment details and a way to manage payment methods for a recurring payment. You can optionally display a billing agreement and set up merchant token life cycle notifications for the request.
 
 For more information about the merchant token life cycle notifications, see Apple Pay Merchant Token Management API.

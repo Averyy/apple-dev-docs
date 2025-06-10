@@ -1,6 +1,6 @@
 # hasContentPending
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 A Boolean value that indicates whether the session has more content to deliver.

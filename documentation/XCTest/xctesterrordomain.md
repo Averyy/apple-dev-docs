@@ -1,6 +1,6 @@
 # XCTestErrorDomain
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: var
 
 The error domain for errors that can occur while the test is waiting to fulfill expectations.

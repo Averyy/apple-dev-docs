@@ -43,6 +43,10 @@ struct SwiftUIAttributes
 ### Instance Properties
 - [let accessibility: AttributeScopes.AccessibilityAttributes](attributescopes/swiftuiattributes/accessibility.md)
 - [let adaptiveImageGlyph: AttributeScopes.SwiftUIAttributes.AdaptiveImageGlyphAttribute](attributescopes/swiftuiattributes/adaptiveimageglyph.md)
+- [let alignment: AttributeScopes.CoreTextAttributes.TextAlignmentAttribute](attributescopes/swiftuiattributes/alignment.md)
+  The horizontal alignment of a paragraph.
+- [let lineHeight: AttributeScopes.CoreTextAttributes.LineHeightAttribute](attributescopes/swiftuiattributes/lineheight.md)
+  The line height definition of a paragraph.
 - [let strikethroughStyle: AttributeScopes.SwiftUIAttributes.StrikethroughStyleAttribute](attributescopes/swiftuiattributes/strikethroughstyle.md)
 - [let underlineStyle: AttributeScopes.SwiftUIAttributes.UnderlineStyleAttribute](attributescopes/swiftuiattributes/underlinestyle.md)
 ### Enumerations

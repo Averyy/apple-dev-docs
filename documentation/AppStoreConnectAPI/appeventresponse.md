@@ -19,6 +19,7 @@ object AppEventResponse
 - [object AppEventUpdateRequest](appeventupdaterequest.md)
 - [object AppEventsResponse](appeventsresponse.md)
 - [type AppEventAssetType](appeventassettype.md)
+- [object AppEventLocalizationsLinkagesResponse](appeventlocalizationslinkagesresponse.md)
 
 
 ---

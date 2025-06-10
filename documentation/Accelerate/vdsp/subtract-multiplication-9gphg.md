@@ -1,0 +1,94 @@
+# subtract(multiplication:_:)
+
+**Framework**: Accelerate  
+**Kind**: method
+
+Returns the double-precision element-wise difference of a vector and the product of two vectors.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst ?+
+- macOS 10.15+
+- tvOS 13.0+
+- visionOS ?+
+- watchOS 6.0+
+
+## Declaration
+
+```swift
+static func subtract<S, T, U>(multiplication: (a: T, b: U), _ vector: S) -> [Double] where S : AccelerateBuffer, T : AccelerateBuffer, U : AccelerateBuffer, S.Element == Double, T.Element == Double, U.Element == Double
+```
+
+#### Return Value
+
+The output vector `D` in `D = (A * B) - C`.
+
+#### Discussion
+
+This function calculates the products of the first `N` elements of `A` and `B`, subtracts each product from the corresponding value in `C`, and writes the result to `D`.
+
+```swift
+ for (n = 0; n < N; ++n)
+    D[n] = (A[n] * B[n]) - C[n];
+```
+
+![A diagram showing the operation of this function. There are four rows. The top row represents the input vectors, A and B, with three boxes of each. The second row represents the operation that multiplies A and B, as well as the input vector C, with three boxes of each. The third row represents the subtraction operation as three boxes.  The bottom row represents the output vector D as three boxes. The diagram has connecting lines from the input vectors to the operations, and from the operations to the output vectors.  ](https://docs-assets.developer.apple.com/published/9a514717c6dc246e1775caf6b56eec5a/media-4336994%402x.png)
+
+The following code shows an example of using this function:
+
+```swift
+    let a: [Double] = [ 1,  2,  3,  4,  5]
+    let b: [Double] = [10, 20, 30, 40, 50]
+    let c: [Double] = [ 5,  4,  3,  2,  1]
+    
+    let d = vDSP.subtract(multiplication: (a, b),
+                          c)
+    
+    // Prints "[5.0, 36.0, 87.0, 158.0, 249.0]".
+    print(d)
+
+```
+
+## Parameters
+
+- `multiplication`: A tuple that contains the vectors   and   in  .
+- `vector`: The input vector   in  .
+
+## See Also
+
+- [static func subtract<T, U>(U, T) -> [Double]](vdsp/subtract(_:_:)-8o5ai.md)
+  Returns the double-precision element-wise subtraction of two vectors.
+- [static func subtract<T, U>(U, T) -> [Float]](vdsp/subtract(_:_:)-9xmo8.md)
+  Returns the single-precision element-wise subtraction of two vectors.
+- [static func subtract<T, U, V>(U, T, result: inout V)](vdsp/subtract(_:_:result:)-1ianx.md)
+  Calculates the double-precision element-wise subtraction of two vectors.
+- [static func subtract<T, U, V>(U, T, result: inout V)](vdsp/subtract(_:_:result:)-2p3fa.md)
+  Calculates the single-precision element-wise subtraction of two vectors.
+- [static func subtract(DSPSplitComplex, from: DSPSplitComplex, count: Int, result: inout DSPSplitComplex)](vdsp/subtract(_:from:count:result:)-4p5xd.md)
+  Calculates the single-precision elementwise subtraction of a complex vector from a complex vector.
+- [static func subtract(DSPDoubleSplitComplex, from: DSPDoubleSplitComplex, count: Int, result: inout DSPDoubleSplitComplex)](vdsp/subtract(_:from:count:result:)-80zi9.md)
+  Calculates the double-precision elementwise subtraction of a complex vector from a complex vector.
+- [static func subtract<T, U>(multiplication: (a: U, b: Double), T) -> [Double]](vdsp/subtract(multiplication:_:)-2hhme.md)
+  Calculates the double-precision element-wise difference of the product of a vector and a scalar value, and a vector.
+- [static func subtract<T, U>(multiplication: (a: U, b: Float), T) -> [Float]](vdsp/subtract(multiplication:_:)-3zm6l.md)
+  Calculates the single-precision element-wise difference of the product of a vector and a scalar value, and a vector.
+- [static func subtract<S, T, U>(multiplication: (a: T, b: U), S) -> [Float]](vdsp/subtract(multiplication:_:)-6u3sp.md)
+  Returns the single-precision element-wise difference of a vector and the product of two vectors.
+- [static func subtract<T, U, V>(multiplication: (a: U, b: Double), T, result: inout V)](vdsp/subtract(multiplication:_:result:)-9p12h.md)
+  Calculates the double-precision element-wise difference of the product of a vector and a scalar value, and a vector.
+- [static func subtract<T, U, V>(multiplication: (a: U, b: Float), T, result: inout V)](vdsp/subtract(multiplication:_:result:)-86gx3.md)
+  Calculates the single-precision element-wise difference of the product of a vector and a scalar value, and a vector.
+- [static func subtract<S, T, U, V>(multiplication: (a: T, b: U), S, result: inout V)](vdsp/subtract(multiplication:_:result:)-3f2bw.md)
+  Calculates the double-precision element-wise difference of a vector and the product of two vectors.
+- [static func subtract<S, T, U, V>(multiplication: (a: T, b: U), S, result: inout V)](vdsp/subtract(multiplication:_:result:)-6b91s.md)
+  Calculates the single-precision element-wise difference of a vector and the product of two vectors.
+- [static func subtract<R, S, T, U>(multiplication: (a: T, b: U), multiplication: (c: R, d: S)) -> [Double]](vdsp/subtract(multiplication:multiplication:)-22a4b.md)
+  Returns the double-precision element-wise difference of the products of two pairs of vectors.
+- [static func subtract<R, S, T, U>(multiplication: (a: T, b: U), multiplication: (c: R, d: S)) -> [Float]](vdsp/subtract(multiplication:multiplication:)-1ghyu.md)
+  Returns the single-precision element-wise difference of the products of two pairs of vectors.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/vdsp/subtract(multiplication:_:)-9gphg)*

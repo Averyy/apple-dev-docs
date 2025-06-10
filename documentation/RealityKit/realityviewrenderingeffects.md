@@ -10,6 +10,7 @@ A struct for enabling and disabling rendering effects for RealityKit content.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -24,6 +25,7 @@ struct RealityViewRenderingEffects
   Enables or disables an antialiasing effect which smooths the edges of virtual content.
 - [var cameraGrain: RealityViewRenderingEffectMode](realityviewrenderingeffects/cameragrain.md)
   Enables or disables an image noise effect for virtual content.
+- [var customPostProcessing: RealityViewPostProcessEffect](realityviewrenderingeffects/custompostprocessing.md)
 - [var depthOfField: RealityViewRenderingEffectMode](realityviewrenderingeffects/depthoffield.md)
   Enables or disables a depth of field effect for virtual content.
 - [var dynamicRange: RealityViewDynamicRange](realityviewrenderingeffects/dynamicrange.md)
@@ -35,6 +37,7 @@ struct RealityViewRenderingEffects
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -46,6 +49,10 @@ struct RealityViewRenderingEffects
   Options that determine the state of high dynamic range rendering for virtual content.
 - [enum AntialiasingMode](antialiasingmode.md)
   The rendering technique used to smooth edges of virtual content.
+- [struct RealityViewPostProcessEffect](realityviewpostprocesseffect.md)
+  A struct for enabling or disabling post processing effects for all content a reality view contains.
+- [struct PostProcessEffectContext](postprocesseffectcontext.md)
+  An object RealityKit passes data to a post process effect method.
 - [ARView.Environment](arview/environment-swift.struct.md)
   A description of background, lighting, and acoustic properties for a view’s content.
 - [ARView.RenderOptions](arview/renderoptions-swift.struct.md)

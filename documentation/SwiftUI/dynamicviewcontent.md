@@ -17,7 +17,7 @@ A type of view that generates views from an underlying collection of data.
 ## Declaration
 
 ```swift
-protocol DynamicViewContent : View
+protocol DynamicViewContent<Data> : View
 ```
 
 ## Topics

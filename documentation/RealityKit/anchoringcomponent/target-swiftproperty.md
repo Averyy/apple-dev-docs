@@ -10,6 +10,7 @@ The real world anchor target to attach the entity to.
 - iPadOS 13.0+
 - Mac Catalyst 14.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

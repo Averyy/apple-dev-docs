@@ -1,6 +1,6 @@
 # suffix(from:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns a subsequence from the specified position to the end of the collection.

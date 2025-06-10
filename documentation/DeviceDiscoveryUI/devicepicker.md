@@ -6,6 +6,9 @@
 A SwiftUI view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - tvOS 16.0+
 
 ## Declaration
@@ -64,11 +67,14 @@ struct SettingsView: View {
 ### Creating a device picker
 - [init(NWBrowser.Descriptor, onSelect: (NWEndpoint) -> Void, label: () -> Label, fallback: () -> Fallback, parameters: (() -> NWParameters)?)](devicepicker/init(_:onselect:label:fallback:parameters:).md)
   Creates a view that displays the other, available devices on your local network.
+### Initializers
+- [init<Provider>(Provider, access: DDDevicePairingAccess, onSelect: (Provider.Endpoint) -> Void, label: () -> Label, fallback: () -> Fallback, parameters: (() -> NWParameters)?)](devicepicker/init(_:access:onselect:label:fallback:parameters:).md)
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

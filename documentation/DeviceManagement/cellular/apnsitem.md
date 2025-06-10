@@ -9,8 +9,6 @@ A dictionary that contains details about an access point name (APN) configuratio
 - iOS 7.0+
 - iPadOS 7.0+
 - watchOS 3.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

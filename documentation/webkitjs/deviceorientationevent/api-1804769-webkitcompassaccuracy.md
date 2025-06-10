@@ -1,6 +1,6 @@
 # webkitCompassAccuracy
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The accuracy of the compass data in degrees.

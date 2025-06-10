@@ -46,6 +46,7 @@ struct SaliencyImageObservation
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionObservation](visionobservation.md)
 
 ## See Also

@@ -1,6 +1,6 @@
 # Identifying and blocking calls
 
-**Framework**: Callkit
+**Framework**: CallKit
 
 Create a Call Directory app extension to identify and block incoming callers by their phone number.
 
@@ -56,4 +56,4 @@ Like other audio apps, VoIP apps need to handle audio session interruptions. Int
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CallKit/identifying-and-blocking-calls)*
+*[View on Apple Developer](https://developer.apple.com/documentation/callkit/identifying-and-blocking-calls)*

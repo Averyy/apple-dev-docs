@@ -1,6 +1,6 @@
 # NSATSTypesetter
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 A concrete typesetter object that places glyphs during the text layout process.
@@ -98,6 +98,8 @@ An [`NSATSTypesetter`](nsatstypesetter.md) object creates line fragment rectangl
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -111,4 +113,4 @@ An [`NSATSTypesetter`](nsatstypesetter.md) object creates line fragment rectangl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsatstypesetter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsatstypesetter)*

@@ -28,8 +28,6 @@ This is inherently unsafe; UnsafeMutablePointer assumes the referenced memory ha
 
 > ⚠️ **Warning**: Accessing `pointee` as a type that is unrelated to the underlying memory’s bound type is undefined.
 
-Accessing `pointee` as a type that is unrelated to the underlying memory’s bound type is undefined.
-
 ## See Also
 
 - [init<U>(UnsafeMutablePointer<U>)](autoreleasingunsafemutablepointer/init(_:)-4mrz1.md)

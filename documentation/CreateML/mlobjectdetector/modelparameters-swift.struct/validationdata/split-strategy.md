@@ -14,9 +14,9 @@ A validation dataset Create ML derives by randomly selecting a portion of the ob
 case split(strategy: MLSplitStrategy)
 ```
 
-#### Discussion
+## Parameters
 
-- strategy: An [`MLSplitStrategy`](mlsplitstrategy.md) instance the enumeration case uses to select a portion of the object detector’s training dataset as its associated value.
+- `strategy`: An   instance the enumeration case uses to select a portion of the object   detector’s training dataset as its associated value.
 
 ## See Also
 

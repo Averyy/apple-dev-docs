@@ -22,8 +22,6 @@ To provide the user with haptic feedback while using a Force Touch trackpad, cal
 
 > ❗ **Important**:  Haptic feedback is intended to be provided in response to a user action, such as aligning one object to another. Do not use it to provide feedback for events that are not user initiated. Excessive or unnecessary haptic feedback could be interpreted by the user as a malfunction and could encourage the user to disable haptic feedback entirely.
 
- Haptic feedback is intended to be provided in response to a user action, such as aligning one object to another. Do not use it to provide feedback for events that are not user initiated. Excessive or unnecessary haptic feedback could be interpreted by the user as a malfunction and could encourage the user to disable haptic feedback entirely.
-
 ## Topics
 
 ### Performing Haptic Feedback

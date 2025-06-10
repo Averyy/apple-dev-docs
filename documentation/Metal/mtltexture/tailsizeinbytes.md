@@ -1,8 +1,7 @@
 # tailSizeInBytes
 
 **Framework**: Metal  
-**Kind**: property  
-**Required**: Yes
+**Kind**: property
 
 The size of the sparse texture tail, in bytes.
 
@@ -17,7 +16,7 @@ The size of the sparse texture tail, in bytes.
 ## Declaration
 
 ```swift
-var tailSizeInBytes: Int { get }
+optional var tailSizeInBytes: Int { get }
 ```
 
 ## See Also

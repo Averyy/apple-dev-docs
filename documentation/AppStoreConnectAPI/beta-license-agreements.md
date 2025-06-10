@@ -17,6 +17,7 @@ A `betaLicenseAgreements` resource contains the license agreement text for users
   Get a specific beta license agreement.
 - [Read the App Information of a Beta License Agreement](get-v1-betalicenseagreements-_id_-app.md)
   Get the app information for a specific beta license agreement.
+- [GET /v1/betaLicenseAgreements/{id}/relationships/app](get-v1-betalicenseagreements-_id_-relationships-app.md)
 ### Modifying Beta License Agreements
 - [Modify a Beta License Agreement](patch-v1-betalicenseagreements-_id_.md)
   Update the text for your beta license agreement.
@@ -30,6 +31,7 @@ A `betaLicenseAgreements` resource contains the license agreement text for users
   A response that contains a list of Beta License Agreement resources.
 - [object BetaLicenseAgreementResponse](betalicenseagreementresponse.md)
   A response that contains a single Beta License Agreements resource.
+- [object BetaLicenseAgreementAppLinkageResponse](betalicenseagreementapplinkageresponse.md)
 
 ## See Also
 

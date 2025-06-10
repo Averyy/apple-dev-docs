@@ -10,6 +10,7 @@ Unproject a 2D point from the view onto a plane in 3D world coordinates.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

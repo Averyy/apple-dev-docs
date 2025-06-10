@@ -1,6 +1,6 @@
 # identifier
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property  
 **Required**: Yes
 

@@ -1,6 +1,6 @@
 # setLoops(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets a Boolean value indicating whether the movie plays in a continuous loop.

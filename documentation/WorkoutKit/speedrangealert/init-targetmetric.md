@@ -1,6 +1,6 @@
 # init(target:metric:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: init
 
 Creates a new speed alert for the provided range of values.
@@ -10,6 +10,7 @@ Creates a new speed alert for the provided range of values.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

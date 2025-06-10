@@ -35,6 +35,7 @@ struct UnicodeScalarView
 - [Copyable](copyable.md)
 - [RangeReplaceableCollection](rangereplaceablecollection.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 

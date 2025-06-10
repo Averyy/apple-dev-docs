@@ -35,6 +35,7 @@ A view that displays a transaction picker for choosing transactions from Finance
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 

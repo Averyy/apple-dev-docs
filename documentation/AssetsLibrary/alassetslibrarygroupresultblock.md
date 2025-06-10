@@ -6,9 +6,9 @@
 Signature for the block executed if the user grants access to the caller to access the data managed by the framework..
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

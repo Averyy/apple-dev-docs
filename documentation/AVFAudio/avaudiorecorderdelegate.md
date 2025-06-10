@@ -43,6 +43,7 @@ protocol AVAudioRecorderDelegate : NSObjectProtocol, Sendable
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # perform(with:completionHandler:)
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: method  
 **Required**: Yes
 
@@ -25,14 +25,6 @@ func perform(with invocation: XCSourceEditorCommandInvocation) async throws
 > **Note**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func perform(with invocation: XCSourceEditorCommandInvocation) async throws
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func perform(with invocation: XCSourceEditorCommandInvocation) async throws
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
 Xcode passes the code a completion handler that it must invoke to finish performing the command, passing `nil` on success or an error on failure. A canceled command must still call the completion handler, passing `nil`.
 

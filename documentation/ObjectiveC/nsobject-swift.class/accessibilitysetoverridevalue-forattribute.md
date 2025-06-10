@@ -67,10 +67,10 @@ This method works only on an object representing a single user interface element
   Performs the action associated with the specified action.
 - [func accessibilitySetValue(Any?, forAttribute: NSAccessibility.Attribute)](nsobject-swift.class/accessibilitysetvalue(_:forattribute:).md)
   Sets the value of the specified attribute in the receiver to the specified value.
-- [func fileManager(FileManager, shouldProceedAfterError: [AnyHashable : Any]) -> Bool](nsobject-swift.class/filemanager(_:shouldproceedaftererror:).md)
-  An `NSFileManager` object sends this message to its handler for each error it encounters when copying, moving, removing, or linking files or directories.
-- [func fileManager(FileManager, willProcessPath: String)](nsobject-swift.class/filemanager(_:willprocesspath:).md)
-  An `NSFileManager` object sends this message to a handler immediately before attempting to move, copy, rename, or delete, or before attempting to link to a given path.
+- [func finalize()](nsobject-swift.class/finalize.md)
+  The garbage collector invokes this method on the receiver before disposing of the memory it uses.
+- [func fontManager(Any, willIncludeFont: String) -> Bool](nsobject-swift.class/fontmanager(_:willincludefont:).md)
+  Requests permission from the Font panel delegate to display the given font name in the Font panel.
 
 
 ---

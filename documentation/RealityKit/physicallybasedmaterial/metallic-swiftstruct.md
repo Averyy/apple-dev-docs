@@ -10,6 +10,7 @@ An object that defines the reflectiveness of an entity.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -38,8 +39,6 @@ Use this struct to specify an entity’s `metallic` property, which specifies th
   The intended use of the object’s texture property.
 - [var scale: Float](physicallybasedmaterial/metallic-swift.struct/scale.md)
   The reflectiveness for the entire entity.
-- [PhysicallyBasedMaterial.Metallic.FloatLiteralType](physicallybasedmaterial/metallic-swift.struct/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 ## Relationships
 

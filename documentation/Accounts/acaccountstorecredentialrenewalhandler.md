@@ -23,7 +23,7 @@ The renewal handler parameters are:
 
 ## See Also
 
-- [func renewCredentials(for: ACAccount!, completion: ACAccountStoreCredentialRenewalHandler!)](acaccountstore/renewcredentials(for:completion:).md)
+- [func renewCredentials(for: ACAccount!, completion: ((ACAccountCredentialRenewResult, (any Error)?) -> Void)!)](acaccountstore/renewcredentials(for:completion:).md)
   Renews account credentials when the credentials are no longer valid.
 - [enum ACAccountCredentialRenewResult](acaccountcredentialrenewresult.md)
   Status codes of credential renewal requests.

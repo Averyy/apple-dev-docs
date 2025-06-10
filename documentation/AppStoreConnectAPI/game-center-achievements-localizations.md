@@ -9,12 +9,14 @@ Manage localizations for your achievements.
 ### Reading achievements localizations
 - [List all localizations for an achievement](get-v1-gamecenterachievements-_id_-localizations.md)
   Read information about the release for specific achievement.
+- [GET /v1/gameCenterAchievements/{id}/relationships/localizations](get-v1-gamecenterachievements-_id_-relationships-localizations.md)
 - [Read achievement localization information](get-v1-gamecenterachievementlocalizations-_id_.md)
   Read localized information for a specific locale for a specific achievement.
 - [Read the achievement localization information](get-v1-gamecenterachievementlocalizations-_id_-gamecenterachievement.md)
   Read the achievement associated with specific localized information.
 - [Read the image for a specific achievement localization](get-v1-gamecenterachievementlocalizations-_id_-gamecenterachievementimage.md)
   Read the achievement image associated with specific localized information.
+- [GET /v1/gameCenterAchievementLocalizations/{id}/relationships/gameCenterAchievementImage](get-v1-gamecenterachievementlocalizations-_id_-relationships-gamecenterachievementimage.md)
 ### Creating, modifying, and deleting achievements localizations
 - [Create an achievement localization](post-v1-gamecenterachievementlocalizations.md)
   Add Game Center achievement localized information for a new locale.
@@ -28,6 +30,9 @@ Manage localizations for your achievements.
 - [object GameCenterAchievementLocalizationResponse](gamecenterachievementlocalizationresponse.md)
 - [object GameCenterAchievementLocalizationUpdateRequest](gamecenterachievementlocalizationupdaterequest.md)
 - [object GameCenterAchievementLocalizationsResponse](gamecenterachievementlocalizationsresponse.md)
+- [object GameCenterAchievementLocalizationGameCenterAchievementImageLinkageResponse](gamecenterachievementlocalizationgamecenterachievementimagelinkageresponse.md)
+- [object GameCenterAchievementLocalizationGameCenterAchievementLinkageResponse](gamecenterachievementlocalizationgamecenterachievementlinkageresponse.md)
+- [object GameCenterAchievementLocalizationsLinkagesResponse](gamecenterachievementlocalizationslinkagesresponse.md)
 
 ## See Also
 

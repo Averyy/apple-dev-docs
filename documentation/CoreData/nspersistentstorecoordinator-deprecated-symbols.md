@@ -15,7 +15,7 @@ Review unsupported symbols and their replacements.
 - [enum NSPersistentStoreUbiquitousTransitionType](nspersistentstoreubiquitoustransitiontype.md)
   These constants are used as the value corresponding to the [`NSPersistentStoreUbiquitousTransitionTypeKey`](nspersistentstoreubiquitoustransitiontypekey.md) in the user info dictionary of [`NSPersistentStoreCoordinatorStoresWillChangeNotification`](nspersistentstorecoordinatorstoreswillchangenotification.md) and [`NSPersistentStoreCoordinatorStoresDidChangeNotification`](nspersistentstorecoordinatorstoresdidchangenotification.md) notifications to identify the type of event leading to a change.
 ### Deprecated type properties
-- [static let NSPersistentStoreDidImportUbiquitousContentChanges: NSNotification.Name](../foundation/nsnotification/name/1468792-nspersistentstoredidimportubiqui.md)
+- [static let NSPersistentStoreDidImportUbiquitousContentChanges: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSPersistentStoreDidImportUbiquitousContentChanges.md)
   Posted after records are imported from the ubiquitous content store.
 ### Deprecated type methods
 - [class func elementsDerived(fromExternalRecordAt: URL) -> [AnyHashable : Any]](nspersistentstorecoordinator/elementsderived(fromexternalrecordat:).md)

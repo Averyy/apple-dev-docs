@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: class
 
-A programmatic interface for interacting with and observing conversations.
+An interface for managing and observing VoIP conversations.
 
 **Availability**:
 - iOS 17.4+
@@ -18,41 +18,57 @@ A programmatic interface for interacting with and observing conversations.
 final class ConversationManager
 ```
 
+## Mentions
+
+- [Initiating VoIP conversations with LiveCommunicationKit](initiating-voip-conversations-with-livecommunicationkit.md)
+
+#### Overview
+
+Use `ConversationManager` to provide VoIP conversation functionality in your app. For more information, see [`Preparing your app to be the default dialer app`](preparing-your-app-to-be-the-default-dialer-app.md).
+
 ## Topics
 
-### Structures
-- [ConversationManager.Configuration](conversationmanager/configuration-swift.struct.md)
-  An encapsulation of the configuration of a `ConversationManager`.
-### Initializers
+### Creating the manager
 - [convenience init(configuration: ConversationManager.Configuration)](conversationmanager/init(configuration:).md)
-  Creates a new `ConversationManager` with the given `ConversationManager.Configuration`.
-### Instance Properties
+  Creates a new conversation manager with a given conversation.
 - [let configuration: ConversationManager.Configuration](conversationmanager/configuration-swift.property.md)
-  The configuration of the manager.
+  The configuration of a conversation manager.
+- [ConversationManager.Configuration](conversationmanager/configuration-swift.struct.md)
+  Configuration options for a conversation manager.
+### Configuring the manager
 - [var conversations: [Conversation]](conversationmanager/conversations.md)
-- [var delegate: (any ConversationManagerDelegate)?](conversationmanager/delegate.md)
+  Currently active conversations.
 - [var pendingActions: [ConversationAction]](conversationmanager/pendingactions.md)
-  `ConversationAction`s that have not yet been fulfilled.
-### Instance Methods
-- [func invalidate()](conversationmanager/invalidate.md)
-  Invalidates the manager, ends all `Conversation`s, and fails all pending `ConversationAction`s.
-- [func pendingConversationActions(of: ConversationAction.Type, for: Conversation) -> [ConversationAction]](conversationmanager/pendingconversationactions(of:for:).md)
-  Returns all pending `ConversationAction`s of the specified class for the specified call identifier that are incomplete.
+  All unfinished conversation actions.
+- [var delegate: (any ConversationManagerDelegate)?](conversationmanager/delegate.md)
+  The object that acts as the delegate of the conversation manager.
+### Managing conversations
 - [func perform([ConversationAction]) async throws](conversationmanager/perform(_:).md)
-  Instructs the `ConversationManager` to asynchronously perform the given actions.
+  Tells the conversation manager to asynchronously perform actions for a conversation.
+- [func invalidate()](conversationmanager/invalidate.md)
+  Invalidates the conversation manager, ends all conversations, and fails all pending concersation actions.
+### Observing conversations
+- [func pendingConversationActions(of: ConversationAction.Type, for: Conversation) -> [ConversationAction]](conversationmanager/pendingconversationactions(of:for:).md)
+  Queries a conversation for pending actions of a specified type.
 - [func reportConversationEvent(Conversation.Event, for: Conversation)](conversationmanager/reportconversationevent(_:for:).md)
-  Informs the system that some event has occurred and to update the given `Conversation` as needed.
+  Informs the system that an event has occurred and that it needs to update the conversation if necessary.
 - [func reportNewIncomingConversation(uuid: UUID, update: Conversation.Update) async throws](conversationmanager/reportnewincomingconversation(uuid:update:).md)
-  Informs the system that there’s a new incoming Conversation, and the device should begin to ring and present the incoming Conversation UI.
-### Type Methods
+  Informs the system that there’s a new incoming conversation, and the device should begin to ring and present the incoming Conversation UI.
 - [class func reportNewIncomingVoIPPushPayload([AnyHashable : Any]) async throws](conversationmanager/reportnewincomingvoippushpayload(_:).md)
-  Reports a new incoming call after your notification service extension decrypts a VoIP call request.
+  Reports a new incoming conversation after your notification service extension decrypts a VoIP request.
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Observable](../Observation/Observable.md)
+
+## See Also
+
+- [protocol ConversationManagerDelegate](conversationmanagerdelegate.md)
+  Methods for managing conversations and receiving VoIP conversation updates.
+- [class Conversation](conversation.md)
+  A type that describes a video or audio conversation.
 
 
 ---

@@ -21,8 +21,6 @@ In tvOS, this object provides the display criteria that an [`AVDisplayManager`](
 
 > ❗ **Important**:  Most apps don’t create instances of this class, and instead retrieve the preferred display criteria from a media asset. If your app doesn’t use [`AVAsset`](avasset.md), such as a streaming app that renders sample buffers using [`AVSampleBufferDisplayLayer`](avsamplebufferdisplaylayer.md), you can manually create an instance using the [`init(refreshRate:formatDescription:)`](avdisplaycriteria/init(refreshrate:formatdescription:).md) initializer.
 
- Most apps don’t create instances of this class, and instead retrieve the preferred display criteria from a media asset. If your app doesn’t use [`AVAsset`](avasset.md), such as a streaming app that renders sample buffers using [`AVSampleBufferDisplayLayer`](avsamplebufferdisplaylayer.md), you can manually create an instance using the [`init(refreshRate:formatDescription:)`](avdisplaycriteria/init(refreshrate:formatdescription:).md) initializer.
-
 ## Topics
 
 ### Create a display criteria
@@ -42,6 +40,7 @@ In tvOS, this object provides the display criteria that an [`AVDisplayManager`](
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # vmnet_interface_get_ip_port_forwarding_rules_handler_t
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: typealias
 
 **Availability**:

@@ -1,6 +1,6 @@
 # solarNoon
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 Represents solar noon, the time when the sun reaches its highest point in the sky.

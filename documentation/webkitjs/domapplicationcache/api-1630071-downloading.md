@@ -1,6 +1,6 @@
 # DOWNLOADING
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 The resources are being downloaded into the cache.

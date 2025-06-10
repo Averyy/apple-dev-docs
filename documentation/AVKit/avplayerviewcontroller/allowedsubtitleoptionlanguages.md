@@ -17,7 +17,7 @@ var allowedSubtitleOptionLanguages: [String]? { get set }
 
 #### Discussion
 
-When this property value is `nil` (the default), the player view controller UI presents all available subtitle options. The Auto subtitle option is only available when this property value is `nil` and [`requiresFullSubtitles`](avplayerviewcontroller/requiresfullsubtitles.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+When this property value is `nil` (the default), the player view controller UI presents all available subtitle options. The Auto subtitle option is only available when this property value is `nil` and [`requiresFullSubtitles`](avplayerviewcontroller/requiresfullsubtitles.md) is `false`.
 
 To allow only a restricted subset of subtitles, set this property value to an array of BCP 47 language codes. Restricting the set of subtitle languages makes the Auto option unavailable.
 

@@ -62,6 +62,7 @@ enum Unicode
 
 ### Conforms To
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 
 ---

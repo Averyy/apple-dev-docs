@@ -98,6 +98,8 @@ When you apply a configuration to a view, UIKit performs the actual drawing and 
   Generates the resolved background color for the specified tint color, using the background color and color transformer.
 - [var visualEffect: UIVisualEffect?](uibackgroundconfiguration-swift.struct/visualeffect.md)
   The visual effect that the configuration applies to the background.
+- [var shadowProperties: UIShadowProperties](uibackgroundconfiguration-swift.struct/shadowproperties.md)
+- [struct UIShadowProperties](uishadowproperties-swift.struct.md)
 - [var strokeColor: UIColor?](uibackgroundconfiguration-swift.struct/strokecolor.md)
   The color of the stroke.
 - [var strokeColorTransformer: UIConfigurationColorTransformer?](uibackgroundconfiguration-swift.struct/strokecolortransformer.md)
@@ -115,8 +117,6 @@ When you apply a configuration to a view, UIKit performs the actual drawing and 
 ### Updating background configurations
 - [func updated(for: any UIConfigurationState) -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/updated(for:).md)
   Generates a configuration for the specified state by applying the configuration’s default values for that state to any properties that you haven’t customized.
-### Instance Properties
-- [var shadowProperties: UIShadowProperties](uibackgroundconfiguration-swift.struct/shadowproperties.md)
 ### Type Methods
 - [static func listCell() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listcell.md)
 - [static func listFooter() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listfooter.md)

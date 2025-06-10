@@ -24,8 +24,6 @@ Use this method to determine the algorithm used by the movement disorder manager
 
 > ❗ **Important**:  Your app uses the version of the algorithm provided by the current operating system running on the device. This means the algorithm your app uses might change, without requiring you to rebuild and resubmit your app.
 
- Your app uses the version of the algorithm provided by the current operating system running on the device. This means the algorithm your app uses might change, without requiring you to rebuild and resubmit your app.
-
 To set up tests that notify you when the version changes, create a unit test that checks the current version against the expected value. You can then use continuous integration to automatically monitor this value with each new release.
 
 ```swift

@@ -59,6 +59,7 @@ where `position` is the user-space coordinates of the pixel applied to the shade
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 
 ## See Also

@@ -1,6 +1,6 @@
 # Validating a Model for Motion Capture
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Verify that your character model matches ARKit’s Motion Capture requirements.
 
@@ -186,4 +186,4 @@ The structure and naming convention of the joints of the left hand are similar t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/validating-a-model-for-motion-capture)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/validating-a-model-for-motion-capture)*

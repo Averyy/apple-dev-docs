@@ -20,8 +20,6 @@ class ENExposureInfo
 
 > ❗ **Important**:  This class is available in iOS 12.5, and in iOS 13.5 and later. It isn’t supported for apps with [`ENAPIVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ENAPIVersion) set to `2` in the `Info.plist` file. Instead, [`getExposureWindows(summary:completionHandler:)`](enmanager/getexposurewindows(summary:completionhandler:).md) provides an array of [`ENExposureWindow`](enexposurewindow.md) objects.
 
- This class is available in iOS 12.5, and in iOS 13.5 and later. It isn’t supported for apps with [`ENAPIVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ENAPIVersion) set to `2` in the `Info.plist` file. Instead, [`getExposureWindows(summary:completionHandler:)`](enmanager/getexposurewindows(summary:completionhandler:).md) provides an array of [`ENExposureWindow`](enexposurewindow.md) objects.
-
 This class carries information about an exposure incident.
 
 ## Topics

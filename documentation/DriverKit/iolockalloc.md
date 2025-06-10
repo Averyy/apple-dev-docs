@@ -15,6 +15,14 @@
 struct IOLock * IOLockAlloc();
 ```
 
+#### Return Value
+
+Pointer to the allocated lock, or zero on failure.
+
+#### Discussion
+
+Allocates a mutex in general purpose memory, and initializes it.
+
 ## See Also
 
 - [dequeue_head](dequeue_head.md)

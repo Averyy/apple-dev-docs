@@ -45,6 +45,7 @@ If [`componentsPerVector`](geometrysource/componentspervector.md) is greater tha
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

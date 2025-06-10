@@ -10,6 +10,7 @@ An object that describes a range of primitives to display, and their material in
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -35,6 +36,12 @@ struct Part
 - [var bounds: BoundingBox](lowlevelmesh/part/bounds.md)
   The model-space bounding box of this part.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
@@ -53,6 +60,8 @@ struct Part
   Designates the intended usage of a vertex attribute.
 - [LowLevelMesh.PartsCollection](lowlevelmesh/partscollection.md)
   An object that holds a mutable collection low-level mesh parts.
+- [class LowLevelBuffer](lowlevelbuffer.md)
+- [class LowLevelInstanceData](lowlevelinstancedata.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # NSTypesetter
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An abstract class that performs various type layout tasks.
@@ -215,4 +215,4 @@ Override these methods to customize the text layout process, including modifying
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstypesetter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstypesetter)*

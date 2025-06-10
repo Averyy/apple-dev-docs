@@ -1,6 +1,6 @@
 # requestedPermissionMatchPatterns
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The set of websites that the extension requires access to for its base functionality.

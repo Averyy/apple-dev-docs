@@ -6,6 +6,7 @@
 An effect that dims the passthrough video a custom amount.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

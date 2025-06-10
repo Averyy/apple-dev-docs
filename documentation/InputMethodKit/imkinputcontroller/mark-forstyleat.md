@@ -22,7 +22,7 @@ The dictionary of text attributes.
 
 This utility function can be called by input methods to mark each range (i.e. clause ) of marked text. T
 
-The default implementation first calls the method [`compositionAttributes(at:)`](imkinputcontroller/compositionattributes(at:).md) to obtain the additional attributes that an input method wants to include, such as font or glyph information. Then, it adds the appropriate underline and underline color information to the attributes dictionary for the style parameter. Finally it adds the style value as the dictionary value. The key for the style value is [`markedClauseSegment`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1531718-markedclausesegment).
+The default implementation first calls the method [`compositionAttributes(at:)`](imkinputcontroller/compositionattributes(at:).md) to obtain the additional attributes that an input method wants to include, such as font or glyph information. Then, it adds the appropriate underline and underline color information to the attributes dictionary for the style parameter. Finally it adds the style value as the dictionary value. The key for the style value is [`markedClauseSegment`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/markedClauseSegment).
 
 ## Parameters
 

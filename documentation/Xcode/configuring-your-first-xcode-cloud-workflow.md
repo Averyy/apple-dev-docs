@@ -208,4 +208,4 @@ For information on automating Xcode Cloud with the App Store Connect API, see [`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-your-first-xcode-cloud-workflow)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-your-first-xcode-cloud-workflow)*

@@ -5,13 +5,13 @@
 ## Topics
 
 ### Instance Properties
-- [var errorCode: Int](meerror-swift.struct/errorcode-5agv3.md)
+- [var errorCode: Int](meerror-swift.struct/errorcode-77gx6.md)
   The error code within the given domain.
-- [var errorUserInfo: [String : Any]](meerror-swift.struct/erroruserinfo-3x3xe.md)
+- [var errorUserInfo: [String : Any]](meerror-swift.struct/erroruserinfo-4kzuq.md)
   The default user-info dictionary.
 ### Type Properties
-- [static var errorDomain: String](meerror-swift.struct/errordomain-6dfr0.md)
-  The domain of the error.
+- [static var errorDomain: String](meerror-swift.struct/errordomain-4hvi7.md)
+  Default domain of the error.
 
 
 ---

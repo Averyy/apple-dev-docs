@@ -24,8 +24,8 @@ class MTRClusterIdentify
 - [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](mtrclusteridentify/init(device:endpoint:queue:).md)
 - [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusteridentify/init(device:endpointid:queue:).md)
 ### Instance Methods
-- [func identify(with: MTRIdentifyClusterIdentifyParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusteridentify/identify(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func identify(with: MTRIdentifyClusterIdentifyParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: MTRStatusCompletion)](mtrclusteridentify/identify(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func identify(with: MTRIdentifyClusterIdentifyParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusteridentify/identify(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func identify(with: MTRIdentifyClusterIdentifyParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusteridentify/identify(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
 - [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusteridentify/readattributeacceptedcommandlist(with:).md)
 - [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusteridentify/readattributeattributelist(with:).md)
 - [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusteridentify/readattributeclusterrevision(with:).md)
@@ -33,8 +33,8 @@ class MTRClusterIdentify
 - [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusteridentify/readattributegeneratedcommandlist(with:).md)
 - [func readAttributeIdentifyTime(with: MTRReadParams?) -> [String : Any]?](mtrclusteridentify/readattributeidentifytime(with:).md)
 - [func readAttributeIdentifyType(with: MTRReadParams?) -> [String : Any]?](mtrclusteridentify/readattributeidentifytype(with:).md)
-- [func triggerEffect(with: MTRIdentifyClusterTriggerEffectParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusteridentify/triggereffect(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func triggerEffect(with: MTRIdentifyClusterTriggerEffectParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: MTRStatusCompletion)](mtrclusteridentify/triggereffect(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func triggerEffect(with: MTRIdentifyClusterTriggerEffectParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusteridentify/triggereffect(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func triggerEffect(with: MTRIdentifyClusterTriggerEffectParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusteridentify/triggereffect(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
 - [func writeAttributeIdentifyTime(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusteridentify/writeattributeidentifytime(withvalue:expectedvalueinterval:).md)
 - [func writeAttributeIdentifyTime(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusteridentify/writeattributeidentifytime(withvalue:expectedvalueinterval:params:).md)
 

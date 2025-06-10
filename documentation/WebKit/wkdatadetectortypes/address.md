@@ -1,6 +1,6 @@
 # address
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Detect addresses in text and turn them into links to display the location.

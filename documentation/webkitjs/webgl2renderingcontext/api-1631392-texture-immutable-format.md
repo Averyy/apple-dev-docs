@@ -1,6 +1,6 @@
 # TEXTURE_IMMUTABLE_FORMAT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

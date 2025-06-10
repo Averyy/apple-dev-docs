@@ -1,6 +1,6 @@
 # MatterAddDeviceExtensionRequestHandler
 
-**Framework**: Mattersupport  
+**Framework**: MatterSupport  
 **Kind**: class
 
 The object that handles configuration and commissioning of a device into an ecosystem.
@@ -84,4 +84,4 @@ If the [`MatterAddDeviceRequest.Topology`](matteradddevicerequest/topology-swift
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MatterSupport/matteradddeviceextensionrequesthandler)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mattersupport/matteradddeviceextensionrequesthandler)*

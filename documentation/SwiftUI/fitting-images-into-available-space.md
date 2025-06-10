@@ -91,8 +91,6 @@ If you change the interpolation value to [`Image.Interpolation.medium`](image/in
 
 > 💡 **Tip**: You can also specify interpolation behavior when scaling images down, to ensure the highest quality image possible, fastest rendering time, or a behavior in between.
 
-You can also specify interpolation behavior when scaling images down, to ensure the highest quality image possible, fastest rendering time, or a behavior in between.
-
 ##### Fill a Space with a Repeating Image Using Tiling
 
 When you have an image that’s much smaller than the space you want to render it into, another option  to fill the space is : repeating the same image over and over again. To tile an image, pass the [`Image.ResizingMode.tile`](image/resizingmode/tile.md) parameter to the [`resizable(capInsets:resizingMode:)`](image/resizable(capinsets:resizingmode:).md) modifier:

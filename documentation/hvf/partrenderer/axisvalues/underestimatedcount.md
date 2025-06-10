@@ -1,6 +1,6 @@
 # underestimatedCount
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: property
 
 A value less than or equal to the number of elements in the collection.

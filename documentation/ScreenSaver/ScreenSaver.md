@@ -1,6 +1,6 @@
 # Screen Saver
 
-**Framework**: Screensaver  
+**Framework**: Screen Saver  
 **Kind**: module
 
 Animate screen savers, and interact with the screen saver infrastructure.

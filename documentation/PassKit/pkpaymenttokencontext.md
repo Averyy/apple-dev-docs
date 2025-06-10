@@ -22,8 +22,6 @@ class PKPaymentTokenContext
 
 > ❗ **Important**:  You must set the [`multiTokenContexts`](pkpaymentrequest/multitokencontexts.md) property on the [`PKPaymentRequest`](pkpaymentrequest.md) object to use this class to request multimerchant payments.
 
- You must set the [`multiTokenContexts`](pkpaymentrequest/multitokencontexts.md) property on the [`PKPaymentRequest`](pkpaymentrequest.md) object to use this class to request multimerchant payments.
-
 Use [`PKPaymentTokenContext`](pkpaymenttokencontext.md) to authorize a payment amount for each payment token in a multimerchant payment request. To enable multiple merchants for a transaction, use one [`PKPaymentTokenContext`](pkpaymenttokencontext.md) object for each merchant.
 
 You can optionally associate each payment token with the merchant’s top-level domain.

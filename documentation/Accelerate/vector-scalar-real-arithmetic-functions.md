@@ -139,9 +139,9 @@ See [`Using vDSP for vector-based arithmetic`](using-vdsp-for-vector-based-arith
 - [static func add<U>(multiplication: (a: U, b: Double), Double) -> [Double]](vdsp/add(multiplication:_:)-4e3tj.md)
   Returns the double-precision element-wise addition of the product of a vector and a scalar value, and a vector.
 - [static func add<U, V>(multiplication: (a: U, b: Float), Float, result: inout V)](vdsp/add(multiplication:_:result:)-1rob9.md)
-  Calculates the single-precision element-wise addition of the product of a vector and a scalar value, and a vector.
+  Calculates the single-precision element-wise addition of the product of a vector and a scalar value, and a scalar.
 - [static func add<U, V>(multiplication: (a: U, b: Double), Double, result: inout V)](vdsp/add(multiplication:_:result:)-8ixx9.md)
-  Calculates the double-precision element-wise addition of the product of a vector and a scalar value, and a vector.
+  Calculates the double-precision element-wise addition of the product of a vector and a scalar value, and a scalar.
 - [vDSP_vsmsa](vdsp_vsmsa.md)
   Calculates the single-precision element-wise addition of the product of a vector and a scalar value, and a scalar value, using the specified stride.
 - [vDSP_vsmsaD](vdsp_vsmsad.md)

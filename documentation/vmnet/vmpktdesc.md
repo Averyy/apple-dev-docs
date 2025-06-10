@@ -1,6 +1,6 @@
 # vmpktdesc
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: struct
 
 Describes a packet.

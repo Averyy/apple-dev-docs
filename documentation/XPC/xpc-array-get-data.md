@@ -1,6 +1,6 @@
 # xpc_array_get_data(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Gets a pointer to the raw bytes of a data object from an array directly.

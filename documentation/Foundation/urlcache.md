@@ -102,6 +102,7 @@ When overriding methods of this class, be aware that methods that take a `task` 
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -113,4 +114,4 @@ When overriding methods of this class, be aware that methods that take a `task` 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlcache)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlcache)*

@@ -15,7 +15,7 @@ Configures the cell to display an embedded tip view.
 
 ```swift
 @discardableResult
-@MainActor @preconcurrency final func configureTip(_ tip: any Tip, arrowEdge: Edge? = nil, actionHandler: @escaping (Tips.Action) -> Void = { _ in }) -> Self
+@MainActor @preconcurrency final func configureTip(_ tip: any Tip, arrowEdge: Edge? = nil, actionHandler: @escaping @MainActor (Tips.Action) -> Void = { _ in }) -> Self
 ```
 
 #### Return Value

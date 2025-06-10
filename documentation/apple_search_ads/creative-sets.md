@@ -8,8 +8,6 @@ Creative Sets is deprecated.
 
 > ❗ **Important**:  As of January 2022, [`Custom Product Pages`](custom-product-pages.md) replaces Creative Sets functionality. The Apple Search Ads API no longer supports Creative Sets and `AdGroupCreativeSets`. Creative Sets APIs return `200OK` responses with an invalid state. Your Creative Sets data remains available through `Get Creative Set-Level Reports` and through the `AdServices` attribution framework for devices running below iOS 15.2. See [`attributionToken()`](https://developer.apple.com/documentation/AdServices/AAAttribution/attributionToken()).
 
- As of January 2022, [`Custom Product Pages`](custom-product-pages.md) replaces Creative Sets functionality. The Apple Search Ads API no longer supports Creative Sets and `AdGroupCreativeSets`. Creative Sets APIs return `200OK` responses with an invalid state. Your Creative Sets data remains available through `Get Creative Set-Level Reports` and through the `AdServices` attribution framework for devices running below iOS 15.2. See [`attributionToken()`](https://developer.apple.com/documentation/AdServices/AAAttribution/attributionToken()).
-
  are collections of app screenshots and [`app previews`](https://developer.apple.comhttps://developer.apple.com/app-store/app-previews/) that you  upload to [`App Store Connect`](https://developer.apple.comhttps://developer.apple.com/app-store-connect/). After setting up your app and assets in App Store Connect, you can create and link Creative Sets to ad groups through the API or through the Apple Search Ads UI.
 
 Creative Sets enable you to test ad variations in ad groups and optimize for different keywords, devices, and display sizes.

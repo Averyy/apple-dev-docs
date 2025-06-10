@@ -1,6 +1,6 @@
 # cursiveFontFamily
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The cursive font family of the web view.

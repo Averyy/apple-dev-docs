@@ -6,6 +6,9 @@
 A delegate method the view controller calls when a connection succeeds.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 13.0+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # updateApplicationContext(_:)
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method
 
 Sends a dictionary of values that a paired and active device can use to synchronize its state.

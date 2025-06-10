@@ -1,6 +1,6 @@
 # XPC_TYPE_ARRAY
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A type that represents an array of XPC objects.

@@ -1,6 +1,6 @@
 # fetchDataRecords(ofTypes:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Fetches the specified types of records from the data store.

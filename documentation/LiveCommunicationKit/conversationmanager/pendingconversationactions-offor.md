@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: method
 
-Returns all pending `ConversationAction`s of the specified class for the specified call identifier that are incomplete.
+Queries a conversation for pending actions of a specified type.
 
 **Availability**:
 - iOS 17.4+
@@ -20,12 +20,21 @@ final func pendingConversationActions(of conversationActionClass: ConversationAc
 
 #### Return Value
 
-An array of call actions of the specified class for the specified `Conversation`.
+An array of a conversation’s pending conversation actions of the specified type.
 
 ## Parameters
 
-- `conversationActionClass`: The desired   subclass of actions to return.
-- `conversation`: The desired   for returned actions.
+- `conversationActionClass`: The type of action to query.
+- `conversation`: The conversation to query.
+
+## See Also
+
+- [func reportConversationEvent(Conversation.Event, for: Conversation)](conversationmanager/reportconversationevent(_:for:).md)
+  Informs the system that an event has occurred and that it needs to update the conversation if necessary.
+- [func reportNewIncomingConversation(uuid: UUID, update: Conversation.Update) async throws](conversationmanager/reportnewincomingconversation(uuid:update:).md)
+  Informs the system that there’s a new incoming conversation, and the device should begin to ring and present the incoming Conversation UI.
+- [class func reportNewIncomingVoIPPushPayload([AnyHashable : Any]) async throws](conversationmanager/reportnewincomingvoippushpayload(_:).md)
+  Reports a new incoming conversation after your notification service extension decrypts a VoIP request.
 
 
 ---

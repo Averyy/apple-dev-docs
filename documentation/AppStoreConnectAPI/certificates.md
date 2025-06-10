@@ -1,6 +1,6 @@
 # Certificates
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Create, download, and revoke signing certificates for app development and distribution.
 
@@ -22,6 +22,9 @@ The `certificates` resource represents the digital certificates you use to sign 
   Find and list certificates and download their data.
 - [Read and Download Certificate Information](get-v1-certificates-_id_.md)
   Get information about a certificate and download the certificate data.
+- [List PassTypeID Ids for a certificate](get-v1-certificates-_id_-passtypeid.md)
+  List all PassTypeID Ids for a specific certificate.
+- [GET /v1/certificates/{id}/relationships/passTypeId](get-v1-certificates-_id_-relationships-passtypeid.md)
 ### Revoking certificates
 - [Revoke a Certificate](delete-v1-certificates-_id_.md)
   Revoke a lost, stolen, compromised, or expiring signing certificate.
@@ -39,6 +42,8 @@ The `certificates` resource represents the digital certificates you use to sign 
   The request body you use to update a certificate activation status.
 - [type CertificateType](certificatetype.md)
   Literal values that represent types of signing certificates.
+- [object CertificatePassTypeIdLinkageResponse](certificatepasstypeidlinkageresponse.md)
+  A response body that contains the ID of a single related resource.
 
 ## See Also
 
@@ -52,8 +57,10 @@ The `certificates` resource represents the digital certificates you use to sign 
   Create, delete, and download provisioning profiles that enable app installations for development and distribution.
 - [Merchant ID](merchantids.md)
   Manage your merchant ID for Apple Pay.
+- [Pass type Ids](pass-type-id.md)
+  Create, download, and revoke pass type ids for app development and distribution.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/certificates)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/certificates)*

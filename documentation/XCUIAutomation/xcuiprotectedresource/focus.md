@@ -1,6 +1,6 @@
 # XCUIProtectedResource.focus
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The protected resource case to see and share Focus status.

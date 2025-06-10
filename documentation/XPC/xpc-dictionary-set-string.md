@@ -1,6 +1,6 @@
 # xpc_dictionary_set_string(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Inserts a C-string value into a dictionary.

@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_MinOutputPresentationTimeStampOfFramesBeingDecoded
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The minimum output presentation timestamp of the frames currently being decoded.

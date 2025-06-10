@@ -1,6 +1,6 @@
 # Creating an interactive 3D model in visionOS
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Display an interactive car model using gestures in a reality view.
 
@@ -256,4 +256,4 @@ struct MainView: View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/creating-an-interactable-3d-model-in-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/creating-an-interactable-3d-model-in-visionos)*

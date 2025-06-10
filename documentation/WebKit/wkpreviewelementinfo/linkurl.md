@@ -1,6 +1,6 @@
 # linkURL
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The link for the webpage to be previewed.

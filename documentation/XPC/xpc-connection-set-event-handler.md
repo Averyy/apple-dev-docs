@@ -1,6 +1,6 @@
 # xpc_connection_set_event_handler(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Sets the event handler block for the connection.
@@ -14,7 +14,7 @@ Sets the event handler block for the connection.
 ## Declaration
 
 ```swift
-func xpc_connection_set_event_handler(_ connection: xpc_connection_t, _ handler: @escaping xpc_handler_t)
+func xpc_connection_set_event_handler(_ connection: xpc_connection_t, _ handler: @escaping (xpc_object_t) -> Void)
 ```
 
 #### Discussion

@@ -1,6 +1,6 @@
 # fileImporter(isPresented:allowedContentTypes:onCompletion:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Presents a system interface for allowing the user to import an existing file.

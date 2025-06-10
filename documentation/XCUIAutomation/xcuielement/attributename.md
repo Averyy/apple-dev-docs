@@ -1,6 +1,6 @@
 # XCUIElement.AttributeName
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: struct
 
 A set of string constants that serve as keys for storing element attributes in a dictionary.
@@ -63,6 +63,7 @@ struct AttributeName
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

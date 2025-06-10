@@ -26,8 +26,6 @@ CarPlay calls this method when it launches your navigation app and connects the 
 
 > ❗ **Important**:  CarPlay calls this method exclusively for navigation apps. All other categories of apps must implement [`templateApplicationScene(_:didConnect:)`](cptemplateapplicationscenedelegate/templateapplicationscene(_:didconnect:).md) instead.
 
- CarPlay calls this method exclusively for navigation apps. All other categories of apps must implement [`templateApplicationScene(_:didConnect:)`](cptemplateapplicationscenedelegate/templateapplicationscene(_:didconnect:).md) instead.
-
 ## Parameters
 
 - `templateApplicationScene`: The scene connecting to the app.

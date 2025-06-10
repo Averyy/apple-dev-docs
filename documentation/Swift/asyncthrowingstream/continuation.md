@@ -48,11 +48,18 @@ The closure you provide to the `AsyncThrowingStream` in `init(_:bufferingPolicy:
 ### Enumerations
 - [AsyncThrowingStream.Continuation.BufferingPolicy](asyncthrowingstream/continuation/bufferingpolicy.md)
   A strategy that handles exhaustion of a buffer’s capacity.
+### Default Implementations
+- [Equatable Implementations](asyncthrowingstream/continuation/equatable-implementations.md)
+- [Hashable Implementations](asyncthrowingstream/continuation/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [Copyable](copyable.md)
+- [Equatable](equatable.md)
+- [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 
@@ -64,4 +71,4 @@ The closure you provide to the `AsyncThrowingStream` in `init(_:bufferingPolicy:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/asyncthrowingstream/continuation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/asyncthrowingstream/continuation)*

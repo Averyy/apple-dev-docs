@@ -1,6 +1,6 @@
 # Forecast.Index
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: typealias
 
 The forecast index.

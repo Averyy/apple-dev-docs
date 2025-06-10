@@ -8,7 +8,7 @@ The state of the task associated with the recognition request.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 10.0+
 - macOS 10.15+
 - visionOS 1.0+
 
@@ -20,7 +20,7 @@ enum SFSpeechRecognitionTaskState
 
 ## Topics
 
-### Constants
+### Task states
 - [SFSpeechRecognitionTaskState.canceling](sfspeechrecognitiontaskstate/canceling.md)
   Delivery of recognition results has finished, but audio recording may be ongoing.
 - [SFSpeechRecognitionTaskState.completed](sfspeechrecognitiontaskstate/completed.md)
@@ -42,13 +42,14 @@ enum SFSpeechRecognitionTaskState
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [var state: SFSpeechRecognitionTaskState](sfspeechrecognitiontask/state.md)
-  The current state of the speech recognition task.
-- [var error: (any Error)?](sfspeechrecognitiontask/error.md)
-  An error object that specifies the error that occurred during a speech recognition task.
+- [class SFSpeechRecognitionTask](sfspeechrecognitiontask.md)
+  A task object for monitoring the speech recognition progress.
+- [protocol SFSpeechRecognitionTaskDelegate](sfspeechrecognitiontaskdelegate.md)
+  A protocol with methods for managing multi-utterance speech recognition requests.
 
 
 ---

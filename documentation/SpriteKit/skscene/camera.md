@@ -23,8 +23,8 @@ weak var camera: SKCameraNode? { get set }
 
 ## Mentions
 
-- [Positioning a Scene’s Origin Within its View](positioning-a-scene-s-origin-within-its-view.md)
 - [Getting Started with a Camera](getting-started-with-a-camera.md)
+- [Positioning a Scene’s Origin Within its View](positioning-a-scene-s-origin-within-its-view.md)
 
 #### Discussion
 

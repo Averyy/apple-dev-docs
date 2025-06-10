@@ -1,6 +1,6 @@
 # window(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the window containing the tab is needed.

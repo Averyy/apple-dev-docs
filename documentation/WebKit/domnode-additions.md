@@ -1,6 +1,6 @@
 # DOMNode Additions
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Additions to the `DOMNode` class help convert the structured nodes of DOM content into a rich web-viewable form.
 

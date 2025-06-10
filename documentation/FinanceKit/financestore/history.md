@@ -36,6 +36,7 @@ struct History<Model> where Model : Identifiable
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

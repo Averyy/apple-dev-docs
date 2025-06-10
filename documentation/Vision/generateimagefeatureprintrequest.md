@@ -64,6 +64,7 @@ This request generates an [`FeaturePrintObservation`](featureprintobservation.md
 - [Hashable](../Swift/Hashable.md)
 - [ImageProcessingRequest](imageprocessingrequest.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionRequest](visionrequest.md)
 
 ## See Also

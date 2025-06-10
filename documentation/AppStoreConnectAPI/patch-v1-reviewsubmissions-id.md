@@ -16,6 +16,8 @@ Edit the details or contents of a review submission.
   Read information about a specific review submisison.
 - [List the items in a review submission](get-v1-reviewsubmissions-_id_-items.md)
   List all the items in a specific review submission.
+- [GET /v1/reviewSubmissions/{id}/relationships/items](get-v1-reviewsubmissions-_id_-relationships-items.md)
+- [GET /v1/apps/{id}/relationships/reviewSubmissions](get-v1-apps-_id_-relationships-reviewsubmissions.md)
 - [Create a review submission](post-v1-reviewsubmissions.md)
   Create a review submission for a specific app.
 

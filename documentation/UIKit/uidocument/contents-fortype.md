@@ -1,6 +1,6 @@
 # contents(forType:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Returns the document data to be saved.

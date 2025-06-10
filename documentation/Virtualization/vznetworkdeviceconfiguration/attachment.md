@@ -20,8 +20,6 @@ The default value of this property is `nil`. Assign an appropriate value to spec
 
 > ❗ **Important**:  If you assign a [`VZBridgedNetworkDeviceAttachment`](vzbridgednetworkdeviceattachment.md) object to this property, your app must have the [`com.apple.vm.networking`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.vm.networking) entitlement. Without that entitlement, validation of your [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) object fails.
 
- If you assign a [`VZBridgedNetworkDeviceAttachment`](vzbridgednetworkdeviceattachment.md) object to this property, your app must have the [`com.apple.vm.networking`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.vm.networking) entitlement. Without that entitlement, validation of your [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) object fails.
-
 ## See Also
 
 - [var macAddress: VZMACAddress](vznetworkdeviceconfiguration/macaddress.md)

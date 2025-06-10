@@ -1,6 +1,6 @@
 # PressureTrend.falling
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 The pressure is falling.

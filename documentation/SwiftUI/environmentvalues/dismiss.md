@@ -1,6 +1,6 @@
 # dismiss
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 An action that dismisses the current presentation.
@@ -104,4 +104,4 @@ The dismiss action has no effect on a view that isn’t currently presented. If 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/environmentvalues/dismiss)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/environmentvalues/dismiss)*

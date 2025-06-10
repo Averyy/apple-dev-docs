@@ -12,6 +12,7 @@ The shape or shapes associated with the GeoJSON feature.
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 

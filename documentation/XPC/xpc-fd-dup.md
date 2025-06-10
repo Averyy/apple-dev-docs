@@ -1,6 +1,6 @@
 # xpc_fd_dup(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns a file descriptor that is equivalent to the one that the specified file descriptor object boxes.

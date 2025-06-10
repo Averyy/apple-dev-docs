@@ -28,8 +28,6 @@ When making automatic selections, a player item treats principal media character
 
 > ❗ **Important**:  Use principal media characteristics with caution. It’s typical to support accessibility features using a combination of language preferences and preferred characteristics, and not using principal media characteristics.
 
- Use principal media characteristics with caution. It’s typical to support accessibility features using a combination of language preferences and preferred characteristics, and not using principal media characteristics.
-
 ## See Also
 
 - [var preferredLanguages: [String]?](avplayermediaselectioncriteria/preferredlanguages.md)

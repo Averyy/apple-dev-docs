@@ -1,6 +1,6 @@
 # record(_:toCorrection:forWord:language:inSpellDocumentWithTag:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Records the user response to the correction indicator being displayed.

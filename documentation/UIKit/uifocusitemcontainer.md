@@ -41,6 +41,7 @@ Focus item containers are used by the focus engine to find focus items for a foc
 - [UIActionSheet](uiactionsheet.md)
 - [UIActivityIndicatorView](uiactivityindicatorview.md)
 - [UIAlertView](uialertview.md)
+- [UIBackgroundExtensionView](uibackgroundextensionview.md)
 - [UIButton](uibutton.md)
 - [UICalendarView](uicalendarview.md)
 - [UICollectionReusableView](uicollectionreusableview.md)

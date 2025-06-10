@@ -1,6 +1,6 @@
 # counterReset()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

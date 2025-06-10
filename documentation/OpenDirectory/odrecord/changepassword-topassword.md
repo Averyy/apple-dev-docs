@@ -1,6 +1,6 @@
 # changePassword(_:toPassword:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Changes the record’s password.

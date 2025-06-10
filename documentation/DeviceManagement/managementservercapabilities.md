@@ -12,8 +12,6 @@ The declaration to configure the server’s feature set.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,7 +29,7 @@ Specify `com.apple.management.server-capabilities` as the declaration type.
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object ManagementServerCapabilitiesSupportedFeaturesObject](managementservercapabilitiessupportedfeaturesobject.md)
   A dictionary that contains the server’s optional protocol features.
 

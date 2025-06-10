@@ -1,6 +1,6 @@
 # MAX_COMBINED_TEXTURE_IMAGE_UNITS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

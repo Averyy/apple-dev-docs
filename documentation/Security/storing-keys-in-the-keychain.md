@@ -45,4 +45,4 @@ There are several ways to deal with this. For example, you can:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/storing-keys-in-the-keychain)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/storing-keys-in-the-keychain)*

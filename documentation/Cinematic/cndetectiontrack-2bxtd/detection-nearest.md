@@ -8,6 +8,7 @@ Returns the array of detections in the detection track nearest a given time.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
 

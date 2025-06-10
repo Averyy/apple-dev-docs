@@ -1,6 +1,6 @@
 # pageTitle
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The title of the data source’s page.

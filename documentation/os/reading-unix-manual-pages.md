@@ -18,8 +18,6 @@ Because the man page is larger than the window, Terminal displays only the first
 
 > ❗ **Important**:  Developer-oriented man pages are distributed as part of Xcode. The `man` tool searches for man pages within the active developer directory. If you have multiple copies of Xcode installed, you can select your active developer directory using the `xcode-select` command-line tool. See the `xcode-select` man page for details.
 
- Developer-oriented man pages are distributed as part of Xcode. The `man` tool searches for man pages within the active developer directory. If you have multiple copies of Xcode installed, you can select your active developer directory using the `xcode-select` command-line tool. See the `xcode-select` man page for details.
-
 ##### Search a Specific Section
 
 Section 1 of the man pages covers command-line tools, section 2 covers system calls, section 3 covers user-space libraries, and so on. If you don’t specify a section, `man` displays the page from the first section that has a matching entry. For example, the following command displays the man page for the `open` command-line tool.

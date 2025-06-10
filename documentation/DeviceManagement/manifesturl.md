@@ -12,8 +12,6 @@ The URL to the app manifest.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,18 +19,15 @@ The URL to the app manifest.
 object ManifestURL
 ```
 
+#### Discussion
+
+Use SHA-256 hashes instead of MD5 because SHA-256 has stronger security. If both SHA-256 and MD5 hash properties are present, the device uses only the SHA-256 hashes to verify the manifest data.
+
 ## Topics
 
 ### Objects
 - [object ManifestURL.ItemsItem](manifesturl/itemsitem.md)
-
-## See Also
-
-- [object InstallEnterpriseApplicationCommand.Command.Configuration](installenterpriseapplicationcommand/command-data.dictionary/configuration-data.dictionary.md)
-  A dictionary that contains the configuration to install an enterprise app.
-- [object InstallEnterpriseApplicationCommand.Command.Manifest](installenterpriseapplicationcommand/command-data.dictionary/manifest-data.dictionary.md)
-  A dictionary that contains a manifest.
-- [object ManifestURL.ItemsItem.Metadata](manifesturl/itemsitem/metadata-data.dictionary.md)
+  An array of dictionaries representing what the manifest installs.
 
 
 ---

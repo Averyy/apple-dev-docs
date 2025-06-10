@@ -3,11 +3,13 @@
 **Framework**: RoomPlan  
 **Kind**: method
 
+Stops the room-capture session and indicates whether the app pauses the underlying AR session.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -19,14 +21,18 @@ func stop(pauseARSession: Bool = true)
 
 - [Scanning the rooms of a single structure](scanning-the-rooms-of-a-single-structure.md)
 
+## Parameters
+
+- `pauseARSession`: A Boolean value that indicates whether the framework automatically pauses the underlying AR session by calling  . The default value is  . If you pass  , the AR session continues to run.
+
 ## See Also
 
 - [func run(configuration: RoomCaptureSession.Configuration)](roomcapturesession/run(configuration:).md)
   Starts a room-capture session with the specified configuration.
 - [RoomCaptureSession.Configuration](roomcapturesession/configuration.md)
-  An object to configure the capture process
+  Settings that configure the room-scanning process.
 - [func stop()](roomcapturesession/stop.md)
-  Stop capture process
+  Stops the room-capture session.
 
 
 ---

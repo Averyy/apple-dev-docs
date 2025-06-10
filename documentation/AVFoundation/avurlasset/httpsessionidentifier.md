@@ -1,6 +1,6 @@
 # httpSessionIdentifier
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A session identifier that the asset sends in HTTP requests that it makes.

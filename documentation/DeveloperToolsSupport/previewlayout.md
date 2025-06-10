@@ -1,6 +1,6 @@
 # PreviewLayout
 
-**Framework**: Developertoolssupport  
+**Framework**: DeveloperToolsSupport  
 **Kind**: enum
 
 A size constraint for a preview.
@@ -51,6 +51,7 @@ struct CircleImage_Previews: PreviewProvider {
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -64,4 +65,4 @@ struct CircleImage_Previews: PreviewProvider {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeveloperToolsSupport/previewlayout)*
+*[View on Apple Developer](https://developer.apple.com/documentation/developertoolssupport/previewlayout)*

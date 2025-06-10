@@ -1,6 +1,6 @@
 # UNUserNotificationCenter
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 The central object for managing notification-related activities for your app or app extension.

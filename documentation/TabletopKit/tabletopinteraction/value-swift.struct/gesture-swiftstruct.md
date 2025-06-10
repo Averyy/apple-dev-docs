@@ -19,6 +19,10 @@ struct Gesture
 ### Instance Properties
 - [var chirality: TabletopInteraction.Value.Gesture.Chirality?](tabletopinteraction/value-swift.struct/gesture-swift.struct/chirality-swift.property.md)
   The chirality, or handedness, of this gesture, if known.
+- [var initialInputDevicePose: Pose3D](tabletopinteraction/value-swift.struct/gesture-swift.struct/initialinputdevicepose.md)
+  The pose of the input device at the start of the interaction.
+- [var inputDevicePose: Pose3D](tabletopinteraction/value-swift.struct/gesture-swift.struct/inputdevicepose.md)
+  The current pose of the input device.
 - [var kind: TabletopInteraction.Value.Gesture.Kind](tabletopinteraction/value-swift.struct/gesture-swift.struct/kind-swift.property.md)
   The input source or mode which started this gesture.
 - [var phase: TabletopInteraction.Value.Phase](tabletopinteraction/value-swift.struct/gesture-swift.struct/phase.md)
@@ -33,6 +37,7 @@ struct Gesture
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

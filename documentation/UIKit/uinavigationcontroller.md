@@ -1,6 +1,6 @@
 # UINavigationController
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A container view controller that defines a stack-based scheme for navigating hierarchical content.
@@ -21,10 +21,10 @@ class UINavigationController
 
 ## Mentions
 
-- [Managing content in your app’s windows](managing-content-in-your-app-s-windows.md)
 - [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
-- [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
+- [Managing content in your app’s windows](managing-content-in-your-app-s-windows.md)
 - [Customizing the behavior of segue-based presentations](customizing-the-behavior-of-segue-based-presentations.md)
+- [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
 
 #### Overview
 
@@ -184,6 +184,9 @@ For more information about how state preservation and restoration works, see [`P
 ### Displaying view controllers
 - [func show(UIViewController, sender: Any?)](uinavigationcontroller/show(_:sender:).md)
   Presents the specified view controller in the navigation interface.
+### Instance Properties
+- [var interactiveContentPopGestureRecognizer: UIGestureRecognizer?](uinavigationcontroller/interactivecontentpopgesturerecognizer.md)
+  The interactive content pop gesture recognizes on the entire content area of the navigation controller in cases that are not covered by the interactive pop gesture recognizer and initiates an interactive pop. This property should only be used to set up failure requirements with it.
 
 ## Relationships
 
@@ -203,6 +206,7 @@ For more information about how state preservation and restoration works, see [`P
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)
@@ -232,6 +236,7 @@ For more information about how state preservation and restoration works, see [`P
   An object that describes an item in a tab bar.
 - [class UITab](uitab.md)
   An object that manages a tab in a tab bar.
+- [class UITabAccessory](uitabaccessory.md)
 - [class UISearchTab](uisearchtab.md)
   A tab subclass that represents the system’s search tab.
 - [class UITabGroup](uitabgroup.md)
@@ -242,4 +247,4 @@ For more information about how state preservation and restoration works, see [`P
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uinavigationcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uinavigationcontroller)*

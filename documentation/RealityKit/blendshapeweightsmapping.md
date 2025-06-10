@@ -10,6 +10,7 @@ A mapping of blend weights to the target meshes that those weights affect.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -63,6 +64,7 @@ blendShapeEntity.components.set(BlendShapeWeightsComponent(
 ### Conforms To
 - [Resource](resource.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

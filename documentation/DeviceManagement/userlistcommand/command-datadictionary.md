@@ -3,14 +3,12 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to get a list of users with active accounts on a device.
+The command to get a list of users with active accounts on a device.
 
 **Availability**:
 - iOS 9.3+
 - iPadOS 9.3+
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

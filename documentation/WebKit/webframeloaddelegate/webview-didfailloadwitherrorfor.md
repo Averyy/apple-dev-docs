@@ -1,6 +1,6 @@
 # webView(_:didFailLoadWithError:for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when an error occurs loading a committed data source.

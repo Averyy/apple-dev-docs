@@ -16,7 +16,7 @@ class var linkRenderingAttributes: [NSAttributedString.Key : Any] { get }
 
 #### Discussion
 
-The base [`NSTextLayoutManager`](nstextlayoutmanager.md) class returns with [`single`](nsunderlinestyle/single.md) for [`underlineStyle`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1524865-underlinestyle) and the platform link color for [`foregroundColor`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1533563-foregroundcolor). The platform color for macOS is `linkColor`. Other platforms uses `blueColor`.
+The base [`NSTextLayoutManager`](nstextlayoutmanager.md) class returns with [`single`](nsunderlinestyle/single.md) for [`underlineStyle`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/underlineStyle) and the platform link color for [`foregroundColor`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/foregroundColor). The platform color for macOS is `linkColor`. Other platforms uses `blueColor`.
 
 ## See Also
 

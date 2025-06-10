@@ -1,6 +1,6 @@
 # UNSIGNED_INT_10F_11F_11F_REV
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

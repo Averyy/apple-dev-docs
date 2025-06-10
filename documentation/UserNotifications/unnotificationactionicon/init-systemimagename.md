@@ -1,6 +1,6 @@
 # init(systemImageName:)
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: init
 
 Creates an action icon by using a system symbol image.

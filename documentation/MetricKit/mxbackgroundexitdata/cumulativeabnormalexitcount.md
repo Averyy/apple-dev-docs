@@ -9,6 +9,7 @@ The number of times the app exited abnormally from the background.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
+- macOS 11.0+
 - visionOS 1.0+
 
 ## Declaration

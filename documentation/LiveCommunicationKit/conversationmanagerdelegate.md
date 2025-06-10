@@ -3,6 +3,8 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: protocol
 
+Methods for managing conversations and receiving VoIP conversation updates.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -16,23 +18,36 @@
 protocol ConversationManagerDelegate : AnyObject
 ```
 
+## Mentions
+
+- [Initiating VoIP conversations with LiveCommunicationKit](initiating-voip-conversations-with-livecommunicationkit.md)
+
 ## Topics
 
-### Instance Methods
-- [func conversationManager(ConversationManager, conversationChanged: Conversation)](conversationmanagerdelegate/conversationmanager(_:conversationchanged:).md)
-  Invoked when a `Conversation` is changed.
-- [func conversationManager(ConversationManager, didActivate: AVAudioSession)](conversationmanagerdelegate/conversationmanager(_:didactivate:).md)
-  Called when the provider’s audio session is activated.
-- [func conversationManager(ConversationManager, didDeactivate: AVAudioSession)](conversationmanagerdelegate/conversationmanager(_:diddeactivate:).md)
-  Called when the provider’s audio session is deactivated.
-- [func conversationManager(ConversationManager, perform: ConversationAction)](conversationmanagerdelegate/conversationmanager(_:perform:).md)
-  Called when the system requires that some `ConversationAction` is performed.
-- [func conversationManager(ConversationManager, timedOutPerforming: ConversationAction)](conversationmanagerdelegate/conversationmanager(_:timedoutperforming:).md)
-  Called when a `ConversationAction` is not performed before it expires.
+### Observing the conversation manager
 - [func conversationManagerDidBegin(ConversationManager)](conversationmanagerdelegate/conversationmanagerdidbegin(_:).md)
-  Called when the provider begins.
+  Tells the delegate that your app has started a conversation manager.
 - [func conversationManagerDidReset(ConversationManager)](conversationmanagerdelegate/conversationmanagerdidreset(_:).md)
-  Called when the provider resets.
+  Tells the delegate that the app has reset the conversation manager.
+### Receiving status updates
+- [func conversationManager(ConversationManager, conversationChanged: Conversation)](conversationmanagerdelegate/conversationmanager(_:conversationchanged:).md)
+  Tells the delegate that a conversation changed.
+- [func conversationManager(ConversationManager, didActivate: AVAudioSession)](conversationmanagerdelegate/conversationmanager(_:didactivate:).md)
+  Tells the delegate that the app activated the conversation’s audio session.
+- [func conversationManager(ConversationManager, didDeactivate: AVAudioSession)](conversationmanagerdelegate/conversationmanager(_:diddeactivate:).md)
+  Tells the delegate that the app deactivated a conversation’s audio session..
+### Performing actions
+- [func conversationManager(ConversationManager, perform: ConversationAction)](conversationmanagerdelegate/conversationmanager(_:perform:).md)
+  Tells the delegate that the system requires a conversation action.
+- [func conversationManager(ConversationManager, timedOutPerforming: ConversationAction)](conversationmanagerdelegate/conversationmanager(_:timedoutperforming:).md)
+  Tells the delegate that a conversation action wasn’t completed and timed out.
+
+## See Also
+
+- [class ConversationManager](conversationmanager.md)
+  An interface for managing and observing VoIP conversations.
+- [class Conversation](conversation.md)
+  A type that describes a video or audio conversation.
 
 
 ---

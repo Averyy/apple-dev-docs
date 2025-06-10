@@ -35,8 +35,8 @@ You can use EventKit to set up alarms and create recurring events. And if a chan
   Fetch events and reminders from the Calendar database.
 - [Updating with notifications](updating-with-notifications.md)
   Register for notifications about changes and keep your app up to date.
-- [Managing Location-Based Reminders](managing-location-based-reminders.md)
-  Add, fetch, complete, remove, and sort location-based reminders in your app.
+- [Managing location-based reminders](managing-location-based-reminders.md)
+  Access reminders set up with geofence-enabled alarms on a person’s calendars.
 - [class EKEvent](ekevent.md)
   A class that represents an event in a calendar.
 - [class EKReminder](ekreminder.md)

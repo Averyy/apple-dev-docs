@@ -1,6 +1,6 @@
 # builtInLiDARDepthCamera
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A device that consists of two cameras, one LiDAR and one YUV.

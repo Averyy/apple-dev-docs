@@ -38,11 +38,11 @@ Use the graphics-rendering pipeline state to configure a render pass by calling 
 
 - [func makeRenderPipelineState(descriptor: MTLRenderPipelineDescriptor) throws -> any MTLRenderPipelineState](mtldevice/makerenderpipelinestate(descriptor:).md)
   Synchronously creates a render pipeline state.
-- [func makeRenderPipelineState(descriptor: MTLRenderPipelineDescriptor, completionHandler: MTLNewRenderPipelineStateCompletionHandler)](mtldevice/makerenderpipelinestate(descriptor:completionhandler:).md)
+- [func makeRenderPipelineState(descriptor: MTLRenderPipelineDescriptor, completionHandler: ((any MTLRenderPipelineState)?, (any Error)?) -> Void)](mtldevice/makerenderpipelinestate(descriptor:completionhandler:).md)
   Asynchronously creates a render pipeline state.
 - [func makeRenderPipelineState(descriptor: MTLRenderPipelineDescriptor, options: MTLPipelineOption) throws -> (any MTLRenderPipelineState, MTLRenderPipelineReflection?)](mtldevice/makerenderpipelinestate(descriptor:options:)-89vxc.md)
   Synchronously creates a render pipeline state and reflection information in a tuple.
-- [func makeRenderPipelineState(descriptor: MTLRenderPipelineDescriptor, options: MTLPipelineOption, completionHandler: MTLNewRenderPipelineStateWithReflectionCompletionHandler)](mtldevice/makerenderpipelinestate(descriptor:options:completionhandler:)-5gdww.md)
+- [func makeRenderPipelineState(descriptor: MTLRenderPipelineDescriptor, options: MTLPipelineOption, completionHandler: ((any MTLRenderPipelineState)?, MTLRenderPipelineReflection?, (any Error)?) -> Void)](mtldevice/makerenderpipelinestate(descriptor:options:completionhandler:)-5gdww.md)
   Asynchronously creates a render pipeline state and reflection information.
 
 

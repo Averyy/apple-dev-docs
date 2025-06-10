@@ -16,7 +16,7 @@ case replaceFile
 
 #### Discussion
 
-Signifies that the user has granted authorization for [`replaceItem(at:withItemAt:backupItemName:options:resultingItemURL:)`](https://developer.apple.com/documentation/foundation/filemanager/1412432-replaceitem). When you use a [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) with this authorization, the file manager ignores the `backupItemName` and `options` parameters.
+Signifies that the user has granted authorization for [`replaceItem(at:withItemAt:backupItemName:options:resultingItemURL:)`](https://developer.apple.com/documentation/Foundation/FileManager/replaceItem(at:withItemAt:backupItemName:options:resultingItemURL:)). When you use a [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager) with this authorization, the file manager ignores the `backupItemName` and `options` parameters.
 
 ## See Also
 

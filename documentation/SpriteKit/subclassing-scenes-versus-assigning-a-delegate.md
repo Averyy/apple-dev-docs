@@ -16,8 +16,6 @@ An alternative pattern is to assign a [`delegate`](skview/delegate.md) that hand
 
 > ❗ **Important**:  On macOS, you need to set the window’s [`nextResponder`](https://developer.apple.com/documentation/AppKit/NSResponder/nextResponder) to your app’s view controller because by default, the view is the first responder to user input events.
 
- On macOS, you need to set the window’s [`nextResponder`](https://developer.apple.com/documentation/AppKit/NSResponder/nextResponder) to your app’s view controller because by default, the view is the first responder to user input events.
-
 ## See Also
 
 - [var delegate: (any SKSceneDelegate)?](skscene/delegate.md)

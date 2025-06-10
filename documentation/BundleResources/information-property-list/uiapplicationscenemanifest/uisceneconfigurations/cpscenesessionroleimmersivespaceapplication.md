@@ -1,6 +1,6 @@
 # CPSceneSessionRoleImmersiveSpaceApplication
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: dictionary
 
 Configurations for scenes you use to display Compositor Services content in an immersive space.

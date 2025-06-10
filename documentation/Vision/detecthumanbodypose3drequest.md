@@ -64,6 +64,7 @@ This request generates a collection of [`HumanBodyPose3DObservation`](humanbodyp
 - [Hashable](../Swift/Hashable.md)
 - [ImageProcessingRequest](imageprocessingrequest.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StatefulRequest](statefulrequest.md)
 - [VisionRequest](visionrequest.md)
 

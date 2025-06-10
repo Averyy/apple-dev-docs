@@ -1,6 +1,6 @@
 # XCTStorageMetric
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 A metric to record the amount of data that a performance test logically writes to storage.

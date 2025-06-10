@@ -1,0 +1,4 @@
+Completed scraping DeclaredAgeRange!
+Total pages scraped: 71
+Pages skipped (unchanged): 1
+Pages failed: 0

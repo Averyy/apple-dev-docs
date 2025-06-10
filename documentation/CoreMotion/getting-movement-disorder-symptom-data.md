@@ -10,8 +10,6 @@ The [`CMMovementDisorderManager`](cmmovementdisordermanager.md) class provides a
 
 > ❗ **Important**:  Apple doesn’t market the movement disorder monitoring as a regulated medical device. Depending on how your app uses the API, you may need to meet additional regulatory obligations. Seek the relevant regulatory advice as needed for your app.
 
- Apple doesn’t market the movement disorder monitoring as a regulated medical device. Depending on how your app uses the API, you may need to meet additional regulatory obligations. Seek the relevant regulatory advice as needed for your app.
-
 When you begin retrieving data from the movement disorder manager, Apple Watch starts to gather motion data. To preserve battery life, the manager doesn’t perform calculations in real time. Instead, it periodically and opportunistically analyzes the raw data, saving the results on the user’s device. To preserve disk space, the manager only keeps results for seven days. During this time, you can use the manager to query for the results.
 
 For more information about the scientific validation and algorithms behind disorder detection and recording, see [`Smartwatch inertial sensors continuously monitor real-world motor fluctuations in Parkinson’s disease`](https://developer.apple.comhttp://stm.sciencemag.org/cgi/content/full/13/579/eabd7865?ijkey=Md/cIhqXrFvws&keytype=ref&siteid=scitransmed), or download a PDF from [`Science Translational Medicine Magazine`](https://developer.apple.comhttps://stm.sciencemag.org/content/scitransmed/13/579/eabd7865.full.pdf?ijkey=Md/cIhqXrFvws&keytype=ref&siteid=scitransmed).
@@ -23,8 +21,6 @@ Apps that use the `CMMovementDisorderManager` must:
 - Remind the user to wear Apple Watch on their most affected arm in order to collect the most useful data.
 
 > ❗ **Important**:  To use the Movement Disorder API, your app must adhere to the Movement Disorder Program Requirements. For more information, see [`Adhering to the movement disorder data collection requirements`](adhering-to-the-movement-disorder-data-collection-requirements.md). Additionally, your app must follow best practices for handling the user’s health data, as defined by the HealthKit guidelines. For more information, see [`Protecting user privacy`](https://developer.apple.com/documentation/HealthKit/protecting-user-privacy).
-
- To use the Movement Disorder API, your app must adhere to the Movement Disorder Program Requirements. For more information, see [`Adhering to the movement disorder data collection requirements`](adhering-to-the-movement-disorder-data-collection-requirements.md). Additionally, your app must follow best practices for handling the user’s health data, as defined by the HealthKit guidelines. For more information, see [`Protecting user privacy`](https://developer.apple.com/documentation/HealthKit/protecting-user-privacy).
 
 To retrieve Parkinson’s tremors or dyskinetic symptoms data from a watchOS app:
 

@@ -1,6 +1,6 @@
 # orientation
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 Specifies the orientation of the device.

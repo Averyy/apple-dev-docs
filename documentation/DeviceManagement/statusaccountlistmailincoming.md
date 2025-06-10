@@ -10,8 +10,6 @@ A status report of the client’s incoming mail accounts.
 - iPadOS 16.0+
 - macOS 13.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,9 +17,22 @@ A status report of the client’s incoming mail accounts.
 object StatusAccountListMailIncoming
 ```
 
+#### Discussion
+
+##### Status Item Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in device enrollment | iOS, Shared iPad, visionOS |
+| Allowed in user enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in local enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in system scope | iOS, visionOS |
+| Allowed in user scope | macOS, Shared iPad |
+
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object StatusAccountListMailIncomingAccountObject](statusaccountlistmailincomingaccountobject.md)
   A status report of the client’s incoming mail account details.
 

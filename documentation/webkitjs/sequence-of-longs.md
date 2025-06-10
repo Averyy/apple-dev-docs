@@ -1,6 +1,6 @@
 # SEQUENCE_OF_LONGS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: tdef
 
 **Availability**:

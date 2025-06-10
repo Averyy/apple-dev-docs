@@ -13,6 +13,7 @@ The array of title variants.
 ## Declaration
 
 ```swift
+@MainActor
 var titleVariants: [String] { get }
 ```
 

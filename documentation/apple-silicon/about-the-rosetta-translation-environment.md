@@ -6,6 +6,8 @@ Learn how Rosetta translates executables, and understand what Rosetta can’t tr
 
 #### Overview
 
+> ❗ **Important**: macOS Tahoe will be the last release for Intel-based Mac computers. Those systems will continue to receive security updates for 3 years. Rosetta was designed to make the transition to Apple silicon easier, and we plan to make it available for the next two major macOS releases – through macOS 27 – as a general-purpose tool for Intel apps to help developers complete the migration of their apps. Beyond this timeframe, we will keep a subset of Rosetta functionality aimed at supporting older unmaintained gaming titles, that rely on Intel-based frameworks.
+
 Rosetta is a translation process that allows users to run apps that contain `x86_64` instructions on Apple silicon. Rosetta is meant to ease the transition to Apple silicon, giving you time to create a universal binary for your app. It is not a substitute for creating a native version of your app.
 
 To the user, Rosetta is mostly transparent. If an executable contains only Intel instructions, macOS automatically launches Rosetta and begins the translation process. When translation finishes, the system launches the translated executable in place of the original. However, the translation process takes time, so users might perceive that translated apps launch or run more slowly at times.
@@ -15,8 +17,6 @@ The system prefers to execute an app’s `arm64` instructions on Apple silicon. 
 ![A screen that highlights the Open using Rosetta option in the Get Info window for Mail.](https://docs-assets.developer.apple.com/published/3a4da06dd5005d3387eb9526c398f49f/about-the-rosetta-translation-environment-1%402x.png)
 
 > ❗ **Important**: The system prevents you from mixing `arm64` code and `x86_64` code in the same process. Rosetta translation applies to an entire process, including all code modules that the process loads dynamically.
-
-The system prevents you from mixing `arm64` code and `x86_64` code in the same process. Rosetta translation applies to an entire process, including all code modules that the process loads dynamically.
 
 For information on how to determine when your app is running under Rosetta translation, see [`Determine Whether Your App Is Running as a Translated Binary`](about-the-rosetta-translation-environment#Determine-Whether-Your-App-Is-Running-as-a-Translated-Binary.md)..
 

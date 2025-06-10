@@ -1,6 +1,6 @@
 # width
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The requested width of the containing window.

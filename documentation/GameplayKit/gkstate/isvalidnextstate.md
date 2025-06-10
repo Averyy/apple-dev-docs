@@ -1,6 +1,6 @@
 # isValidNextState(_:)
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: method
 
 Returns a Boolean value indicating whether a state machine currently in this state is allowed to transition into the specified state.

@@ -1,6 +1,6 @@
 # allowsScrolling
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean that indicates whether the frame view should allow users to scroll.

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-The default minimum height of a row in a `List`. The default minimum height of a row in a list.
+The default minimum height of a row in a list.
 
 **Availability**:
 - iOS 13.0+

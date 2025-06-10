@@ -10,6 +10,7 @@ Determines when to output custom accessibility content.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

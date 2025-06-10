@@ -41,8 +41,6 @@ Include an icon in your extension’s bundle using the name you specify for [`ME
 
 > 💡 **Tip**:  Include the icon in an asset catalog in your extension’s bundle, and include both light and dark variants.
 
- Include the icon in an asset catalog in your extension’s bundle, and include both light and dark variants.
-
 ## Parameters
 
 - `session`: The session that represents the properties of the message in the compose window.

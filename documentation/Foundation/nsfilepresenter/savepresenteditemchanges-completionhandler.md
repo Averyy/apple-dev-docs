@@ -26,8 +26,6 @@ The file coordinator calls this method to ensure that all objects trying to acce
 
 > ❗ **Important**:  If you implement this method, you must execute the block in the `completionHandler` parameter at the end of your implementation. The system waits for you to execute that block before allowing other objects to operate on the file. Therefore, failure to execute the block could stall threads in your application or other processes.
 
- If you implement this method, you must execute the block in the `completionHandler` parameter at the end of your implementation. The system waits for you to execute that block before allowing other objects to operate on the file. Therefore, failure to execute the block could stall threads in your application or other processes.
-
 ## Parameters
 
 - `completionHandler`: The   to call after you save your changes. If you saved your changes successfully, pass   for the block’s   parameter; otherwise, pass an error object indicating why the changes could not be saved.

@@ -1,6 +1,6 @@
 # WebOpenPanelResultListener
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 `WebView` user interface delegates that implement the webView:runOpenPanelForFileButtonWithResultListener: method use the methods defined in this protocol to communicate with the listener object. The methods allow the delegate to send a cancel message, or set the selected file name.

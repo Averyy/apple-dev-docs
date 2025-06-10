@@ -145,7 +145,7 @@ sudo killall -9 usbmuxd
 
 ###### New Features
 
-- Simulated watchOS 7 devices support 64-bit processes. To verify watchOS projects are 64-bit clean in Simulator, make sure `ARCHS` is set to its default value. (54654060, 66352876) > **Note**: Projects must be 64-bit clean to run in Simulator on Macs with Apple silicon, which doesn’t support 32-bit code. Projects must be 64-bit clean to run in Simulator on Macs with Apple silicon, which doesn’t support 32-bit code.
+- Simulated watchOS 7 devices support 64-bit processes. To verify watchOS projects are 64-bit clean in Simulator, make sure `ARCHS` is set to its default value. (54654060, 66352876) > **Note**: Projects must be 64-bit clean to run in Simulator on Macs with Apple silicon, which doesn’t support 32-bit code.
 
 ###### Resolved Issues
 

@@ -6,6 +6,7 @@
 A drawable that the compositor is currently displaying.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

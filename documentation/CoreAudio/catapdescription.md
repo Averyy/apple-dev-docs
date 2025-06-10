@@ -26,11 +26,13 @@ class CATapDescription
 - [convenience init(stereoGlobalTapButExcludeProcesses: [AudioObjectID])](catapdescription/init(stereoglobaltapbutexcludeprocesses:).md)
 - [convenience init(stereoMixdownOfProcesses: [AudioObjectID])](catapdescription/init(stereomixdownofprocesses:).md)
 ### Instance Properties
+- [var bundleIDs: [String]](catapdescription/bundleids.md)
 - [var deviceUID: String?](catapdescription/deviceuid.md)
 - [var isExclusive: Bool](catapdescription/isexclusive.md)
 - [var isMixdown: Bool](catapdescription/ismixdown.md)
 - [var isMono: Bool](catapdescription/ismono.md)
 - [var isPrivate: Bool](catapdescription/isprivate.md)
+- [var isProcessRestoreEnabled: Bool](catapdescription/isprocessrestoreenabled.md)
 - [var muteBehavior: CATapMuteBehavior](catapdescription/mutebehavior.md)
 - [var name: String](catapdescription/name.md)
 - [var processes: [AudioObjectID]](catapdescription/processes-1m4cr.md)

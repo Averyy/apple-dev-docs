@@ -32,8 +32,6 @@ The Darwin Notify Center has no notion of per-user sessions, all notifications a
 
 > ❗ **Important**:  Several function parameters are ignored by Darwin notification centers. To ensure future compatibility, you should pass `NULL` or `0` for all ignored arguments.
 
- Several function parameters are ignored by Darwin notification centers. To ensure future compatibility, you should pass `NULL` or `0` for all ignored arguments.
-
 ## See Also
 
 - [func CFNotificationCenterGetDistributedCenter() -> CFNotificationCenter!](cfnotificationcentergetdistributedcenter().md)

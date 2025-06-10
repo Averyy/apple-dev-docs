@@ -33,10 +33,10 @@ Use MapKit to give your app a sense of place with maps and location information.
 - [Adopting unified Maps URLs](unified-map-urls.md)
   Access Maps URLs and options for displaying Maps information across Apple platforms.
 ### Articles
-- [Preparing your app to be the default navigation app](preparing-your-app-to-be-the-default-navigation-app.md)
-  Configure your navigation app so people can set it as the default on their devices.
 - [Deprecated Symbols](mapkit_for_appkit_and_uikit-deprecated-symbols.md)
   MapKit classes, protocols, and entitlements that are no longer supported.
+- [Preparing your app to be the default navigation app](preparing-your-app-to-be-the-default-navigation-app.md)
+  Configure your navigation app so people can set it as the default on their devices.
 ### Classes
 - [class MKCircleView](mkcircleview.md)
   Provides the visual representation for an [`MKCircle`](mkcircle.md) annotation object.
@@ -48,6 +48,9 @@ Use MapKit to give your app a sense of place with maps and location information.
   Provides the visual representation for an [`MKPolygon`](mkpolygon.md) annotation object.
 - [class MKPolylineView](mkpolylineview.md)
   Provides the visual representation for an [`MKPolyline`](mkpolyline.md) annotation object.
+### Structures
+- [struct AnyMapContent](anymapcontent.md)
+  A type-erased map content.
 
 ## See Also
 

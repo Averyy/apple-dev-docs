@@ -1,30 +1,48 @@
 # Implementing a store in your app using the StoreKit API
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Offer In-App Purchases and manage entitlements using signed transactions and status information.
 
-**Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Xcode 14.1+
-
 #### Overview
 
-> **Note**:  This sample code project is associated with WWDC22 session [`110404: Implement proactive in-app purchase restore`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110404/). It’s also associated with WWDC21 session [`10114: Meet StoreKit 2`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10114/).
+The sample project demonstrates how to use StoreKit in a SwiftUI-based iOS app with a simulated app server, SKDemoServer. SKDemoServer is a Swift package that acts as the app’s backend by vending product identifiers and persisting consumable purchase entitlements using SwiftData.
 
-##### Configure the Sample Code Project
+To test your implementation of In-App Purchases using StoreKit, you can use StoreKit Testing in Xcode and the sandbox environment. For more information, see [`Testing at all stages of development with Xcode and the sandbox`](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md), [`Testing In-App Purchases with sandbox`](testing-in-app-purchases-with-sandbox.md), and [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
 
-This sample code project uses StoreKit Testing in Xcode so you can build and run the sample app without needing to configure In-App Purchase products in App Store Connect. The project defines the products for the StoreKit testing environment in the `Products.storekit` configuration. The project includes the `Products.plist` as a resource file, which contains product identifiers that map to emoji characters.
+> **Note**: This sample code project is associated with WWDC25 session 241: [`What’s new in StoreKit and In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/241/).
 
-By default, StoreKit Testing in Xcode is in a disabled state. Follow these steps to select the `Products.storekit` configuration file and enable StoreKit Testing in Xcode:
+##### Test the Sample Code Project in Xcode
 
-1. Choose Product > Scheme > Edit Scheme.
-2. In the scheme editor, select the Run action.
-3. Click Options in the action settings.
-4. For the StoreKit Configuration option, select the `Products.storekit` configuration file from the dropdown menu.
+This sample code project implements StoreKit Testing in Xcode to let you test In-App Purchases without completing any product set up in App Store Connect. It defines In-App Purchases in a `Products.storekit` file.
 
-When the app initializes a store, it reads the `Products.plist` resource to get the product identifiers, and requests the products. Because you enable StoreKit Testing in Xcode for this project, the system returns the products from the testing environment instead of from App Store Connect.
+To test the sample in Xcode:
+
+1. Select the sample target, then configure it to use your Developer team for signing. For more information, see Assign the project to a team in [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution).
+2. Edit the SKDemo “Run” scheme, and select `Products.storekit` for StoreKit configuration. For more information, see Enable StoreKit Testing in Xcode in [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
+3. Build and run the sample app on a device or in the Simulator.
+4. The sample app displays a list of products available for sale in `Products.storekit` upon launching. If the sample app fails to display an In-App Purchase, see [`TN3185: Troubleshooting In-App Purchases availability in Xcode`](https://developer.apple.com/documentation/Technotes/tn3185-troubleshooting-in-app-purchases-availability-in-xcode).
+
+##### Test the Sample Code Project in the Sandbox Environment
+
+To test your app in the sandbox environment, sign in to a Sandbox Apple Account. In the sandbox environment, you can test In-App Purchases using real product information from App Store Connect without incurring charges. This sample code project defines In-App Purchases in a `Products.plist` file. Before you can start testing the sample app in the sandbox environment, you need to complete configuration steps in App Store Connect and Xcode. For more information, see Prepare for sandbox testing in [`Testing In-App Purchases with sandbox`](testing-in-app-purchases-with-sandbox.md).
+
+To prepare this sample code project to run in the sandbox, perform the following steps in App Store Connect:
+
+1. Find or create an app that supports In-App Purchases and you can use for testing purposes.
+2. Select the app and make a note of its bundle ID.
+3. Create an In-App Purchase that uses a product identifier from `Products.plist`. Use information from `Products.storekit` to set up the In-App Purchase. Repeat this step for all identifiers in `Products.plist`.
+4. After you create the SKDemo+ subscription group, make note of its Group ID.
+5. Create a [`Sandbox Apple Account`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-in-app-purchases/create-a-sandbox-apple-account/).
+
+To prepare this sample code project to use information from App Store Connect, perform the following steps in Xcode:
+
+1. Select the sample target, then change the bundle ID to your testing app’s bundle ID. For more information, see Set the bundle ID in [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution).
+2. Configure the target to use your Developer team for signing. For more information, see Assign the project to a team in [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution).
+3. Edit the SKDemo “Run” scheme, and remove `Products.storekit` from StoreKit configuration. For more information, see Disable StoreKit Testing in Xcode in [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode).
+4. In the `Server.swift` file, replace 3F19ED53 with your new SKDemo+ subscription Group ID from App Store Connect.
+
+You’re now ready to test this sample in the sandbox environment. Sign in to the device with a Sandbox Apple Account, then build and run this sample in Xcode. The sample app displays a list of products available for sale in the App Store upon launching. If the sample app fails to display an In-App Purchase, see [`TN3186: Troubleshooting In-App Purchases availability in the sandbox`](https://developer.apple.com/documentation/Technotes/tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox).
 
 ## See Also
 

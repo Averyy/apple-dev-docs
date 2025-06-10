@@ -13,6 +13,7 @@ Hides the display of trip previews.
 ## Declaration
 
 ```swift
+@MainActor
 func hideTripPreviews()
 ```
 

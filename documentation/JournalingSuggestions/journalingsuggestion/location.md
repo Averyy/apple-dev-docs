@@ -35,6 +35,11 @@ The system provides an instance of this structure to your app when a person choo
 ### Accessing the visitation date
 - [var date: Date?](journalingsuggestion/location/date.md)
   The date that a person visits the place.
+### Instance Properties
+- [var isWorkLocation: Bool?](journalingsuggestion/location/isworklocation.md)
+  A boolean whether the location is the user’s inferred workplace.
+- [var mapKitItemIdentifier: MKMapItem.Identifier?](journalingsuggestion/location/mapkititemidentifier.md)
+  Identifier of the location MKMapItem.
 ### Type Aliases
 - [JournalingSuggestion.Location.JournalingSuggestionContent](journalingsuggestion/location/journalingsuggestioncontent.md)
   Represents a generic content type for journaling suggestions.

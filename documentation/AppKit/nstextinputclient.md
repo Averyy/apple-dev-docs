@@ -25,8 +25,6 @@ To create another text view class, you can either subclass [`NSTextView`](nstext
 
 > ❗ **Important**:  Methods specific to the [`NSTextInputClient`](nstextinputclient.md) protocol are intended for dealing with text input and generally aren’t suitable for other purposes.
 
- Methods specific to the [`NSTextInputClient`](nstextinputclient.md) protocol are intended for dealing with text input and generally aren’t suitable for other purposes.
-
 ## Topics
 
 ### Handling marked text

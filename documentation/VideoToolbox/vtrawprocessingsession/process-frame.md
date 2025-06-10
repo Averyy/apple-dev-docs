@@ -1,6 +1,6 @@
 # process(frame:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: method
 
 Processes an input pixel buffer.

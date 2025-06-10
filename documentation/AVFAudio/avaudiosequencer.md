@@ -101,8 +101,6 @@ class AVAudioSequencer
   Gets the beat position (timestamp) for the specified time in the track.
 - [var AVMusicTimeStampEndOfTrack: Double](avmusictimestampendoftrack.md)
   A timestamp you use to access all events in a music track through a beat range.
-- [typealias AVBeatRange](avbeatrange.md)
-  A specific time range within a music track.
 ### Setting the User Callback
 - [func setUserCallback(AVAudioSequencerUserCallback?)](avaudiosequencer/setusercallback(_:).md)
   Adds a callback that the sequencer calls each time it encounters a user event during playback.

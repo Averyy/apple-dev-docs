@@ -1,6 +1,6 @@
 # init(mainResource:subresources:subframeArchives:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Initializes the receiver with a resource and optional subresources and subframe archives..

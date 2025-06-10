@@ -1,0 +1,24 @@
+# init(contentsOf:)
+
+**Framework**: RealityKit  
+**Kind**: init
+
+Initializes a spatial 3D image from the contents of an image file.
+
+**Availability**:
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+convenience init(contentsOf url: URL) async throws
+```
+
+#### Discussion
+
+> **Note**: The newly created spatial 3D image is not yet in a generated state.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/imagepresentationcomponent/spatial3dimage/init(contentsof:))*

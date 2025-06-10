@@ -44,8 +44,10 @@ class CTCarrier
 
 ## See Also
 
-- [class CTTelephonyNetworkInfo](cttelephonynetworkinfo.md)
-  An object that provides notifications of changes to the user’s cellular service provider.
+- [class CTCall](ctcall.md)
+  An object used to identify a cellular call and determine its state.
+- [class CTCallCenter](ctcallcenter.md)
+  An object that provides a list of current cellular calls, and provides the ability to respond to state changes for calls.
 
 
 ---

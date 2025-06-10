@@ -59,4 +59,4 @@ You must complete these steps before you can send emails to your users’ hidden
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-sign-in-with-apple)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-sign-in-with-apple)*

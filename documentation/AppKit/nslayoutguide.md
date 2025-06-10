@@ -1,6 +1,6 @@
 # NSLayoutGuide
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 A rectangular area that can interact with Auto Layout.
@@ -93,4 +93,4 @@ A layout guide can also act as an opaque box that contains other views and contr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nslayoutguide)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nslayoutguide)*

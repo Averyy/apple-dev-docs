@@ -64,6 +64,7 @@ class Options
 - [NWProtocolOptions](nwprotocoloptions.md)
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

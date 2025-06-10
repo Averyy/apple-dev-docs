@@ -1,6 +1,6 @@
 # provisionalDataSource
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The provisional data source, or `nil` if either a load request is not in progress or a load request has completed.

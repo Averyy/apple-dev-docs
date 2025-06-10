@@ -1,6 +1,6 @@
 # containedDataTypes
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The set of data types contained in this data record.

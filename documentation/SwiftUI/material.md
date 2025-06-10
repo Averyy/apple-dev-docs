@@ -1,6 +1,6 @@
 # Material
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A background material type.
@@ -101,6 +101,7 @@ When you add a material, foreground elements exhibit vibrancy, a context-specifi
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 
 ## See Also
@@ -139,4 +140,4 @@ When you add a material, foreground elements exhibit vibrancy, a context-specifi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/material)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/material)*

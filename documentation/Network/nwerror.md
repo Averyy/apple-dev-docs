@@ -29,6 +29,12 @@ enum NWError
   A DNS error encountered in resolving, browsing, or advertising.
 - [case tls(OSStatus)](nwerror/tls(_:).md)
   A TLS error reported by a TLS connection or listener.
+### Enumeration Cases
+- [NWError.wifiAware(_:)](nwerror/wifiaware(_:).md)
+  The error code will be a Wi-Fi Aware error as defined in <WifiAware/errors.swift>
+### Instance Properties
+- [var wifiAware: WAError?](nwerror/wifiaware.md)
+  The underlying error that occurred, if applicable.
 
 ## Relationships
 
@@ -39,6 +45,7 @@ enum NWError
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

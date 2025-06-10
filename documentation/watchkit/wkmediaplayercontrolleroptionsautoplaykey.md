@@ -1,6 +1,6 @@
 # WKMediaPlayerControllerOptionsAutoplayKey
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: var
 
 The option to play a media file automatically when it is displayed. The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing a Boolean value indicating whether the media file should begin playing automatically when the interface is displayed. Playback is also contingent upon the file being available and ready to play on Apple Watch. If you do not specify this option, the user must initiate playback.

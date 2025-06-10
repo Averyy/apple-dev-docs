@@ -10,6 +10,7 @@ An animation that represents a variation of another animation.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -85,21 +86,11 @@ The source animation’s timing properties define a  on which the [`trimDuration
   The time, in seconds, at which the source animation plays.
 - [var trimEnd: TimeInterval?](animationview/trimend.md)
   The time, in seconds, at which the source animation stops.
-- [func trimmed(start: TimeInterval?, end: TimeInterval?, duration: TimeInterval?) -> Self](animationview/trimmed(start:end:duration:).md)
-  Edits the animation duration according to the specified time.
 ### Repeating animation playback
 - [var repeatMode: AnimationRepeatMode](animationview/repeatmode.md)
   An option that determines how the animation repeats.
 - [var fillMode: AnimationFillMode](animationview/fillmode.md)
   An option that determines which data displays outside of the normal duration.
-- [func repeated(count: TimeInterval) -> Self](animationview/repeated(count:)-353j4.md)
-  Repeats an animation the number of times specified by an irrational number.
-- [func repeated(count: Int) -> Self](animationview/repeated(count:)-87qbq.md)
-  Repeats an animation the number of times specified by a whole number.
-- [func repeatingForever() -> Self](animationview/repeatingforever.md)
-  Repeats the animation infinitely.
-### Default Implementations
-- [AnimationDefinition Implementations](animationview/animationdefinition-implementations.md)
 
 ## Relationships
 

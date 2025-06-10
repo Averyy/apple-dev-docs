@@ -1,6 +1,6 @@
 # formIndex(_:offsetBy:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Offsets the given index by the specified distance.

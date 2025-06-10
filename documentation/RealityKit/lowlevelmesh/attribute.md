@@ -10,6 +10,7 @@ An object that determines how to store vertex attribute data in memory and map i
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -33,6 +34,12 @@ struct Attribute
 - [var semantic: LowLevelMesh.VertexSemantic](lowlevelmesh/attribute/semantic.md)
   The semantic of the vertex attribute, which describes how you want RealityKit to interpret the attribute.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
@@ -51,6 +58,8 @@ struct Attribute
   Designates the intended usage of a vertex attribute.
 - [LowLevelMesh.PartsCollection](lowlevelmesh/partscollection.md)
   An object that holds a mutable collection low-level mesh parts.
+- [class LowLevelBuffer](lowlevelbuffer.md)
+- [class LowLevelInstanceData](lowlevelinstancedata.md)
 
 
 ---

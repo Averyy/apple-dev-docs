@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-let kCVImageBufferPostDecodeProcessingFrameMetadataKey: CFString!
+let kCVImageBufferPostDecodeProcessingFrameMetadataKey: CFString
 ```
 
 

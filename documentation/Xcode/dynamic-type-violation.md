@@ -74,4 +74,4 @@ Use `reinterpret_cast` sparingly, and only when it’s possible to verify that t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/dynamic-type-violation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/dynamic-type-violation)*

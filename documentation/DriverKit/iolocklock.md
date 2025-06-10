@@ -15,6 +15,14 @@
 void IOLockLock(struct IOLock * lock);
 ```
 
+#### Discussion
+
+Lock the mutex. If the lock is held by any thread, block waiting for its unlock. Locking the mutex recursively from one thread will result in deadlock.
+
+## Parameters
+
+- `lock`: Pointer to the allocated lock.
+
 ## See Also
 
 - [dequeue_head](dequeue_head.md)

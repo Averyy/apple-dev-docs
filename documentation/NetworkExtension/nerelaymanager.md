@@ -59,6 +59,7 @@ When your app starts up, access the shared instance of the relay manager, and lo
   Error codes specific to relay managers.
 ### Instance Properties
 - [var excludedFQDNs: [String]?](nerelaymanager/excludedfqdns.md)
+- [var isDNSFailoverAllowed: Bool](nerelaymanager/isdnsfailoverallowed.md)
 - [var isUIToggleEnabled: Bool](nerelaymanager/isuitoggleenabled.md)
 - [var matchFQDNs: [String]?](nerelaymanager/matchfqdns.md)
 ### Instance Methods

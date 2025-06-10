@@ -1,6 +1,6 @@
 # Creating Accessible Views
 
-**Framework**: Swiftui
+**Framework**: SwiftUI
 
 Make your app accessible to everyone by applying accessibility modifiers to your SwiftUI views.
 

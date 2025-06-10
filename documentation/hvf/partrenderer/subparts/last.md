@@ -1,6 +1,6 @@
 # last
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: property
 
 The last element of the collection.

@@ -8,7 +8,7 @@ A discrete part of an entire transcription, as identified by the speech recogniz
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 10.0+
 - macOS 10.15+
 - visionOS 1.0+
 
@@ -33,17 +33,17 @@ A transcription segment includes the following information:
 
 ## Topics
 
-### Transcribing the Segment
+### Transcribing the segment
 - [var substring: String](sftranscriptionsegment/substring.md)
   The string representation of the utterance in the transcription segment.
 - [var substringRange: NSRange](sftranscriptionsegment/substringrange.md)
   The range information for the transcription segment’s substring, relative to the overall transcription.
 - [var alternativeSubstrings: [String]](sftranscriptionsegment/alternativesubstrings.md)
   An array of alternate interpretations of the utterance in the transcription segment.
-### Assessing the Recognition Confidence Level
+### Assessing the recognition confidence level
 - [var confidence: Float](sftranscriptionsegment/confidence.md)
   The level of confidence the speech recognizer has in its recognition of the speech transcribed for the segment.
-### Getting the Audio Timing Information
+### Getting audio timing information
 - [var timestamp: TimeInterval](sftranscriptionsegment/timestamp.md)
   The start time of the segment in the processed audio stream.
 - [var duration: TimeInterval](sftranscriptionsegment/duration.md)

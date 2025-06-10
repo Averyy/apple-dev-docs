@@ -51,6 +51,8 @@ When creating a custom menu identifier, provide a reverse domain name string val
 - [static let quit: UIMenu.Identifier](uimenu/identifier-swift.struct/quit.md)
   The Quit menu.
 ### File menus
+- [static let newItem: UIMenu.Identifier](uimenu/identifier-swift.struct/newitem.md)
+  New item menu
 - [static let newScene: UIMenu.Identifier](uimenu/identifier-swift.struct/newscene.md)
   The New Scene menu.
 - [static let openRecent: UIMenu.Identifier](uimenu/identifier-swift.struct/openrecent.md)
@@ -70,6 +72,8 @@ When creating a custom menu identifier, provide a reverse domain name string val
   The standard Edit menu.
 - [static let find: UIMenu.Identifier](uimenu/identifier-swift.struct/find.md)
   The Find menu.
+- [static let findPanel: UIMenu.Identifier](uimenu/identifier-swift.struct/findpanel.md)
+  Find panel menu (Find, Find and Replace, Find Next, Find Previous)
 - [static let replace: UIMenu.Identifier](uimenu/identifier-swift.struct/replace.md)
   The Replace menu.
 - [static let share: UIMenu.Identifier](uimenu/identifier-swift.struct/share.md)
@@ -142,6 +146,7 @@ When creating a custom menu identifier, provide a reverse domain name string val
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

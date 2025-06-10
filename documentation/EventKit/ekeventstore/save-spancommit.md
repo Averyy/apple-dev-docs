@@ -1,6 +1,6 @@
 # save(_:span:commit:)
 
-**Framework**: Eventkit  
+**Framework**: EventKit  
 **Kind**: method
 
 Saves an event or recurring events to the event store by either committing or batching the changes.

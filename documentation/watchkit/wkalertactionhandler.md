@@ -1,6 +1,6 @@
 # WKAlertActionHandler
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: typealias
 
 A block to perform in response to an action.

@@ -13,6 +13,8 @@ Enable privacy-preserving discovery and configuration of accessories.
 
 Use AccessorySetupKit to discover and configure Bluetooth or Wi-Fi accessories with images and names provided by the app. Allow seamless, privacy-preserving user consent and control for Bluetooth, Wi-Fi, and Local Network permissions. AccessorySetupKit apps can access enhanced accessory controls including accessory pairing removal and renaming.
 
+To use AccessorySetupKit with [`Wi-Fi Aware`](https://developer.apple.com/documentation/WiFiAware), specify Wi-Fi Aware properties in a [`ASDiscoveryDescriptor`](asdiscoverydescriptor.md) prior to beginning accessory discovery.
+
 > ❗ **Important**: AccessorySetupKit is available for iOS and iPadOS. The accessory’s Bluetooth permission doesn’t sync to a companion watchOS app.
 
 ## Topics

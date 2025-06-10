@@ -67,8 +67,6 @@ layer.layoutManager = CAConstraintLayoutManager()
 
 > ❗ **Important**:  It is possible to specify a set of constraints that will cause layout to fail. For example, layout may fail if your constraints contain a circular dependency. When that happens, the behavior of the layout manager is undefined.
 
- It is possible to specify a set of constraints that will cause layout to fail. For example, layout may fail if your constraints contain a circular dependency. When that happens, the behavior of the layout manager is undefined.
-
 This class is not meant to be subclassed.
 
 ## Relationships

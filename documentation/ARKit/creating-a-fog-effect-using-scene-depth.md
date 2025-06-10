@@ -1,6 +1,6 @@
 # Creating a fog effect using scene depth
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Apply virtual fog to the physical environment.
 
@@ -231,4 +231,4 @@ This sample uses the color red to identify parts of the scene in which depth con
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/creating-a-fog-effect-using-scene-depth)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/creating-a-fog-effect-using-scene-depth)*

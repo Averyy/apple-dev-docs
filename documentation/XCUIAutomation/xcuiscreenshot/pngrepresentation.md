@@ -1,6 +1,6 @@
 # pngRepresentation
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A representation of the screenshot as PNG image data.

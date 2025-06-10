@@ -22,8 +22,6 @@ To accurately recognize the position and orientation of an image in the AR envir
 
 > ❗ **Important**: ARKit preprocesses reference images before using them for image detection. To provide reference images bundled with your app, create AR reference image assets in your Xcode asset catalog, and use the [`referenceImages(inGroupNamed:bundle:)`](arreferenceimage/referenceimages(ingroupnamed:bundle:).md) method to load them.
 
-ARKit preprocesses reference images before using them for image detection. To provide reference images bundled with your app, create AR reference image assets in your Xcode asset catalog, and use the [`referenceImages(inGroupNamed:bundle:)`](arreferenceimage/referenceimages(ingroupnamed:bundle:).md) method to load them.
-
 ## Parameters
 
 - `pixelBuffer`: A Core Video pixel buffer containing the image data for the new image.

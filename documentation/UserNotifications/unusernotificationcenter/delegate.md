@@ -1,6 +1,6 @@
 # delegate
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The notification center’s delegate.

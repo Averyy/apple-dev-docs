@@ -1,6 +1,6 @@
 # IOSurfaceCopyValue(_:_:)
 
-**Framework**: Iosurface  
+**Framework**: IOSurface  
 **Kind**: func
 
 Retrieves a value from the dictionary associated with the buffer.

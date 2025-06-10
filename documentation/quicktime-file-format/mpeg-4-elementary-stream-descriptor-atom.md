@@ -1,6 +1,6 @@
 # MPEG-4 elementary stream descriptor atom ('esds')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 A required extension to the video sample description for MPEG-4 video.

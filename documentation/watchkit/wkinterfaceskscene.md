@@ -1,6 +1,6 @@
 # WKInterfaceSKScene
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A visual WatchKit element that displays a SpriteKit scene.

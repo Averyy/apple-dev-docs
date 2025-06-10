@@ -25,7 +25,7 @@ When users tap the insertion (green plus) control or Delete button associated wi
 
 To enable the swipe-to-delete feature of table views (wherein a user swipes horizontally across a row to display a Delete button), you must implement this method.
 
-You shouldn’t call [`setEditing(_:animated:)`](uitableview/setediting(_:animated:).md) within an implementation of this method. If for some reason you must, invoke it after a delay by using the [`perform(_:with:afterDelay:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/perform(_:with:afterDelay:)) method.
+You shouldn’t call [`setEditing(_:animated:)`](uitableview/setediting(_:animated:).md) within an implementation of this method. If for some reason you must, invoke it after a delay by using the doc://com.apple.documentation/documentation/objectivec/nsobject/1416176-perform method.
 
 ## Parameters
 

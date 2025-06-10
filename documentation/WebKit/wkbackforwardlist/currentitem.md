@@ -1,6 +1,6 @@
 # currentItem
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The current item.

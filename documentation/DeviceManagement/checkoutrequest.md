@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The Check Out Request details.
+The check out request details.
 
 **Availability**:
 - iOS 4.0+
@@ -12,8 +12,6 @@ The Check Out Request details.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

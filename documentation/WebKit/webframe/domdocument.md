@@ -1,6 +1,6 @@
 # domDocument
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The web frame’s DOM document.

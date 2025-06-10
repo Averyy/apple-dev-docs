@@ -1,6 +1,6 @@
 # identifier
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The unique identifier for this notification request.

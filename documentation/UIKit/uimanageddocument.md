@@ -79,6 +79,7 @@ Overriding is required because otherwise, the only information your app receives
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [ProgressReporting](../Foundation/ProgressReporting.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIUserActivityRestoring](uiuseractivityrestoring.md)
 
 ## See Also

@@ -1,6 +1,6 @@
 # swapAt(_:_:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Exchanges the values at the specified indices of the collection.

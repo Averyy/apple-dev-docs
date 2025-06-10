@@ -28,8 +28,6 @@ protocol MTLResource : MTLAllocation
 
 > ❗ **Important**:  Don’t implement this protocol yourself. Create resources by calling methods on [`MTLDevice`](mtldevice.md), [`MTLBuffer`](mtlbuffer.md), or [`MTLTexture`](mtltexture.md).
 
- Don’t implement this protocol yourself. Create resources by calling methods on [`MTLDevice`](mtldevice.md), [`MTLBuffer`](mtlbuffer.md), or [`MTLTexture`](mtltexture.md).
-
 When you execute commands on the GPU, those commands can only affect memory allocated as [`MTLResource`](mtlresource.md) objects. Only the [`MTLDevice`](mtldevice.md) that created these resources can modify them. Different resource types have different uses. The most common resource types are buffers ([`MTLBuffer`](mtlbuffer.md)), which are linear allocations of memory, and textures ([`MTLTexture`](mtltexture.md)), which hold structured image data.
 
 ## Topics
@@ -82,6 +80,7 @@ When you execute commands on the GPU, those commands can only affect memory allo
 - [MTLBuffer](mtlbuffer.md)
 - [MTLIndirectCommandBuffer](mtlindirectcommandbuffer.md)
 - [MTLIntersectionFunctionTable](mtlintersectionfunctiontable.md)
+- [MTLTensor](mtltensor.md)
 - [MTLTexture](mtltexture.md)
 - [MTLVisibleFunctionTable](mtlvisiblefunctiontable.md)
 

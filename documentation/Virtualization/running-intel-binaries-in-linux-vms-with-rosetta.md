@@ -84,4 +84,4 @@ The following example shows how to configure Rosetta’s caching options in a ne
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Virtualization/running-intel-binaries-in-linux-vms-with-rosetta)*
+*[View on Apple Developer](https://developer.apple.com/documentation/virtualization/running-intel-binaries-in-linux-vms-with-rosetta)*

@@ -1,6 +1,6 @@
 # WKInterfaceSemanticContentAttribute
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 A semantic description of the view’s contents, used to determine whether the view should be flipped when switching between left-to-right and right-to-left layouts.
@@ -38,6 +38,7 @@ enum WKInterfaceSemanticContentAttribute
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Creating your first visionOS app
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Build a new visionOS app using SwiftUI and add platform-specific features.
 
@@ -78,4 +78,4 @@ For additional information about how to interact with your app in Simulator, see
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/creating-your-first-visionos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/creating-your-first-visionos-app)*

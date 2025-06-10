@@ -1,6 +1,6 @@
 # doubleValue
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The measured value.

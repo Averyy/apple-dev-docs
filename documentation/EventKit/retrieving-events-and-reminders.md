@@ -1,6 +1,6 @@
 # Retrieving events and reminders
 
-**Framework**: Eventkit
+**Framework**: EventKit
 
 Fetch events and reminders from the Calendar database.
 
@@ -13,7 +13,7 @@ There are two ways to retrieve events and reminders. You can fetch via:
 1. , or , and return zero or more events that match a given query.
 2.  and return a single event that corresponds to the given identifier.
 
-> **Note**:  Retrieving events from the Calendar database does not necessarily return events in chronological order. To sort an array of [`EKEvent`](ekevent.md) objects by date, call [`sortedArray(using:)`](https://developer.apple.com/documentation/foundation/nsarray/1410025-sortedarray) on the array, providing the selector for the [`compareStartDate(with:)`](ekevent/comparestartdate(with:).md) method.
+> **Note**:  Retrieving events from the Calendar database does not necessarily return events in chronological order. To sort an array of [`EKEvent`](ekevent.md) objects by date, call [`sortedArray(using:)`](https://developer.apple.com/documentation/Foundation/NSArray/sortedArray(using:)-9nhh9) on the array, providing the selector for the [`compareStartDate(with:)`](ekevent/comparestartdate(with:).md) method.
 
 ##### Search with Predicates
 
@@ -95,8 +95,8 @@ Similarly, if you know a specific reminder’s unique identifier from previously
   Create and modify events and reminders in a person’s database.
 - [Updating with notifications](updating-with-notifications.md)
   Register for notifications about changes and keep your app up to date.
-- [Managing Location-Based Reminders](managing-location-based-reminders.md)
-  Add, fetch, complete, remove, and sort location-based reminders in your app.
+- [Managing location-based reminders](managing-location-based-reminders.md)
+  Access reminders set up with geofence-enabled alarms on a person’s calendars.
 - [class EKEvent](ekevent.md)
   A class that represents an event in a calendar.
 - [class EKReminder](ekreminder.md)
@@ -105,4 +105,4 @@ Similarly, if you know a specific reminder’s unique identifier from previously
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/EventKit/retrieving-events-and-reminders)*
+*[View on Apple Developer](https://developer.apple.com/documentation/eventkit/retrieving-events-and-reminders)*

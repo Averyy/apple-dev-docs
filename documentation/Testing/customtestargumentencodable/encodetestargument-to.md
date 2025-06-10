@@ -1,6 +1,6 @@
 # encodeTestArgument(to:)
 
-**Framework**: Testing  
+**Framework**: Swift Testing  
 **Kind**: method  
 **Required**: Yes
 

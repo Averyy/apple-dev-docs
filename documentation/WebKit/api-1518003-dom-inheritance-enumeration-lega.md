@@ -1,6 +1,6 @@
 # DOM Inheritance Enumeration (Legacy)
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 ## Topics
 

@@ -1,6 +1,6 @@
 # CKContainer
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: class
 
 A conduit to your app’s databases.
@@ -22,8 +22,8 @@ class CKContainer
 
 ## Mentions
 
-- [Identifying an App’s Containers](identifying-an-app-s-containers.md)
 - [Designing and Creating a CloudKit Database](designing-and-creating-a-cloudkit-database.md)
+- [Identifying an App’s Containers](identifying-an-app-s-containers.md)
 
 #### Overview
 
@@ -138,7 +138,7 @@ Before shipping your app, always test your app’s behavior in the production en
   Fetches the share metadata for the specified share URL.
 - [func accept(CKShare.Metadata, completionHandler: (CKShare?, (any Error)?) -> Void)](ckcontainer/accept(_:completionhandler:)-949ea.md)
   Accepts the specified share metadata.
-- [static let CKAccountChanged: NSNotification.Name](../foundation/nsnotification/name/1399172-ckaccountchanged.md)
+- [static let CKAccountChanged: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/CKAccountChanged.md)
   A notification that a container posts when the status of an iCloud account changes.
 ### Instance Methods
 - [func accept([CKShare.Metadata]) async throws -> [CKShare.Metadata : Result<CKShare, any Error>]](ckcontainer/accept(_:).md)
@@ -154,7 +154,11 @@ Before shipping your app, always test your app’s behavior in the production en
 - [func fetchShareParticipants(forPhoneNumbers: [String], completionHandler: (Result<[String : Result<CKShare.Participant, any Error>], any Error>) -> Void)](ckcontainer/fetchshareparticipants(forphonenumbers:completionhandler:).md)
 - [func fetchShareParticipants(forUserRecordIDs: [CKRecord.ID], completionHandler: (Result<[CKRecord.ID : Result<CKShare.Participant, any Error>], any Error>) -> Void)](ckcontainer/fetchshareparticipants(foruserrecordids:completionhandler:).md)
 - [func longLivedOperation(for: CKOperation.ID) async throws -> CKOperation?](ckcontainer/longlivedoperation(for:).md)
+- [func requestShareAccess(for: [URL]) async throws -> [URL : Result<Void, any Error>]](ckcontainer/requestshareaccess(for:).md)
+  Requests share access for the specified URLs.
 - [func shareMetadatas(for: [URL]) async throws -> [URL : Result<CKShare.Metadata, any Error>]](ckcontainer/sharemetadatas(for:).md)
+- [func shareParticipants(for: [CKUserIdentity.LookupInfo]) async throws -> [CKUserIdentity.LookupInfo : Result<CKShare.Participant, any Error>]](ckcontainer/shareparticipants(for:).md)
+  Fetches share participants matching the provided lookup infos.
 - [func shareParticipants(forEmailAddresses: [String]) async throws -> [String : Result<CKShare.Participant, any Error>]](ckcontainer/shareparticipants(foremailaddresses:).md)
 - [func shareParticipants(forPhoneNumbers: [String]) async throws -> [String : Result<CKShare.Participant, any Error>]](ckcontainer/shareparticipants(forphonenumbers:).md)
 - [func shareParticipants(forUserRecordIDs: [CKRecord.ID]) async throws -> [CKRecord.ID : Result<CKShare.Participant, any Error>]](ckcontainer/shareparticipants(foruserrecordids:).md)
@@ -174,6 +178,7 @@ Before shipping your app, always test your app’s behavior in the production en
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -185,4 +190,4 @@ Before shipping your app, always test your app’s behavior in the production en
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckcontainer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckcontainer)*

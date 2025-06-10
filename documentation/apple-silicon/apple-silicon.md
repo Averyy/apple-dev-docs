@@ -53,6 +53,9 @@ Getting the best performance on Apple silicon sometimes requires making adjustme
   Install kernel extensions using a custom installer package, and help users understand the installation process.
 - [Debugging a custom kernel extension](debugging-a-custom-kernel-extension.md)
   Configure your system to enable the debugging of custom kernel extensions from a second Mac.
+### Security
+- [Improving control flow integrity with pointer authentication](improving-control-flow-integrity-with-pointer-authentication.md)
+  Increase confidence that your code uses pointers correctly.
 
 
 ---

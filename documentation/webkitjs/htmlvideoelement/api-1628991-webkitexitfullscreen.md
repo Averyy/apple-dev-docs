@@ -1,6 +1,6 @@
 # webkitExitFullScreen
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Use [`webkitExitFullscreen`](htmlvideoelement/1629468-webkitexitfullscreen.md).

@@ -1,6 +1,6 @@
 # recognizesMultipleItems
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A Boolean value that indicates whether the scanner should identify all items in the live video.

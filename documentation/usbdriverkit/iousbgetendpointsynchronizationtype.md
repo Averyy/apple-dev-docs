@@ -12,6 +12,18 @@
 uint8_t IOUSBGetEndpointSynchronizationType(const IOUSBEndpointDescriptor * descriptor);
 ```
 
+#### Return Value
+
+tEndpointSynchronizationType indicating the type found.
+
+#### Discussion
+
+This method parses an endpoint descriptor to determine its synchronization type. Only Isochronous endpoints have non-zero synchronization types
+
+## Parameters
+
+- `descriptor`: The descriptor to parse
+
 ## See Also
 
 - [IOUSBGetEndpointUsageType](iousbgetendpointusagetype.md)

@@ -85,6 +85,8 @@ protocol Primitive3D : Decodable, Encodable, Equatable
   A set of methods that defines the interface to translate Spatial entities.
 - [protocol Volumetric](volumetric.md)
   A set of methods for working with Spatial primitives with volume.
+- [protocol ClampableWithinRectProtocol](clampablewithinrectprotocol.md)
+  A set of methods that defines the interface for Spatial entities that can be clamped to a volume.
 
 
 ---

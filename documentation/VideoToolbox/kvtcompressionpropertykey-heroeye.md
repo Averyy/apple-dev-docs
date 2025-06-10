@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_HeroEye
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A value that indicates which eye is the primary eye when rendering in 2D.

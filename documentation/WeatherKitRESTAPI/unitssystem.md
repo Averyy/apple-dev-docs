@@ -1,6 +1,6 @@
 # UnitsSystem
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: typealias
 
 The system of units that the weather data is reported in.

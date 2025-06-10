@@ -1,6 +1,6 @@
 # WKWebExtensionContext.Error
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: struct
 
 Constants used to indicate errors in the web extension context domain.
@@ -44,6 +44,7 @@ struct Error
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

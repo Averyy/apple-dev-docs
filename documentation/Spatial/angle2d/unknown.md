@@ -1,39 +1,30 @@
-# -=(_:_:)
+# <(_:_:)
 
 **Framework**: Spatial  
 **Kind**: op
 
-Subtracts the second angle from the first and stores the difference in the left-hand-side variable.
+Returns `true` if `lhs.degrees` is less than `rhs.degrees`.
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
 - Mac Catalyst ?+
-- macOS 14.0+
-- tvOS 17.0+
-- visionOS ?+
-- watchOS 10.0+
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
-static func -= (lhs: inout Angle2D, rhs: Angle2D)
+static func < (lhs: Angle2D, rhs: Angle2D) -> Bool
 ```
 
-## See Also
+#### Discussion
 
-- [static func + (Angle2D) -> Angle2D](angle2d/+(_:).md)
-  Returns the given angle unchanged.
-- [static func + (Angle2D, Angle2D) -> Angle2D](angle2d/+(_:_:).md)
-  Adds two angles and produces their sum.
-- [static func += (inout Angle2D, Angle2D)](angle2d/+=(_:_:).md)
-  Adds two angles and stores the result in the left-hand-side variable.
-- [static func - (Angle2D) -> Angle2D](angle2d/-(_:).md)
-  Returns the additive inverse of the given angle.
-- [static func - (Angle2D, Angle2D) -> Angle2D](angle2d/-(_:_:).md)
-  Subtracts one angle from another and produces their difference.
+Note that this operator compares the raw value of each angle and doesn’t normalize the values. For example, 360° does  equal 0°.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spatial/angle2d/-=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/angle2d/_(_:_:))*

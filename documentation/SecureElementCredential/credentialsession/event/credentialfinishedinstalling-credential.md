@@ -1,6 +1,6 @@
 # CredentialSession.Event.credentialFinishedInstalling(credential:)
 
-**Framework**: Secureelementcredential  
+**Framework**: SecureElementCredential  
 **Kind**: case
 
 The session finished installing a credential.

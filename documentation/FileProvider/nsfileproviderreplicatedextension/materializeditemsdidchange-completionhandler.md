@@ -1,6 +1,6 @@
 # materializedItemsDidChange(completionHandler:)
 
-**Framework**: Fileprovider  
+**Framework**: File Provider  
 **Kind**: method
 
 Tells the file provider that the set of materialized items changed.

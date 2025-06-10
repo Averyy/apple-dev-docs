@@ -19,7 +19,7 @@ var attributedStringForCandidate: ((CandidateType, Int) -> NSAttributedString)? 
 
 This property is not required if the object type of your candidates is [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString), or [`NSTextCheckingResult`](https://developer.apple.com/documentation/Foundation/NSTextCheckingResult). The default value of this property is `nil`.
 
-If the attributed string you return does not specify [`font`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1528839-font) or [`foregroundColor`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1533563-foregroundcolor) then the candidate is displayed with the standard appearance font and color.
+If the attributed string you return does not specify [`font`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/font) or [`foregroundColor`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/foregroundColor) then the candidate is displayed with the standard appearance font and color.
 
 ## See Also
 

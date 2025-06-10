@@ -1,6 +1,6 @@
 # attributedStringContentFailedToLoad
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An error that indicates the failure to navigate to web content from an attributed string.

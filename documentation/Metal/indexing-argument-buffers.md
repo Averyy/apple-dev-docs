@@ -92,4 +92,4 @@ fragment float4 my_fragment(
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/indexing-argument-buffers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/indexing-argument-buffers)*

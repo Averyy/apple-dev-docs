@@ -225,4 +225,4 @@ For large uploads, try to exclude non-executable data from notarization. For exa
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/customizing-the-notarization-workflow)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/customizing-the-notarization-workflow)*

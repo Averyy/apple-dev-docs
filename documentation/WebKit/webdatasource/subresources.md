@@ -1,6 +1,6 @@
 # subresources
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The data source’s subresources that have finished downloading.

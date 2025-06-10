@@ -1,6 +1,6 @@
 # recognizedItems
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 An asynchronous array of items that the data scanner currently recognizes in the camera’s live video.

@@ -3,7 +3,7 @@
 **Framework**: FinanceKit  
 **Kind**: struct
 
-A structure that describes the financial balance of an account at a specific point in time.
+A structure that describes the financial balance of an account at a specific point in time. The financial balance of an account at a specific point in time.
 
 **Availability**:
 - iOS 17.4+
@@ -53,6 +53,7 @@ struct AccountBalance
 - [Equatable](../Swift/Equatable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

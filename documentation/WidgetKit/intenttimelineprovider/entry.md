@@ -1,6 +1,6 @@
 # Entry
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: associatedtype  
 **Required**: Yes
 
@@ -9,8 +9,9 @@ A type that specifies the date to display a widget, and, optionally, indicates t
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration

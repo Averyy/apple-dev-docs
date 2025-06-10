@@ -34,6 +34,7 @@ The active tracking session emits this state 10 times per second.
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # Modify an Introductory Offer
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 Update a specific introductory offer for an auto-renewable subscription.

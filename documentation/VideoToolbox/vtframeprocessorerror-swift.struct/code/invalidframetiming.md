@@ -1,13 +1,17 @@
 # VTFrameProcessorError.Code.invalidFrameTiming
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: case
 
 A provided frame object has a presentation time stamp which isn’t supported by the processor.
 
 **Availability**:
+- iOS 6.0+
+- iPadOS 6.0+
 - Mac Catalyst 13.0+
 - macOS 10.8+
+- tvOS 10.2+
+- visionOS 1.0+
 
 ## Declaration
 

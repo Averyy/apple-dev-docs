@@ -1,6 +1,6 @@
 # errorDomain
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A string that identifies the error domain.

@@ -1,6 +1,6 @@
 # generateToken(completionHandler:)
 
-**Framework**: Devicecheck  
+**Framework**: DeviceCheck  
 **Kind**: method
 
 Generates a token that identifies the current device.

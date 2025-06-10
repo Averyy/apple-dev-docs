@@ -1,6 +1,6 @@
 # record(withRecordType:name:attributes:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Returns a record from the node with a specified type and name.

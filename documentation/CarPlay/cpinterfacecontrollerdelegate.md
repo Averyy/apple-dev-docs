@@ -13,6 +13,7 @@ The interface that an object implements to serve as a delegate to an interface c
 ## Declaration
 
 ```swift
+@MainActor
 protocol CPInterfaceControllerDelegate : NSObjectProtocol
 ```
 

@@ -1,6 +1,6 @@
 # CSS_CUSTOM
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

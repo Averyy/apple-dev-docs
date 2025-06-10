@@ -23,6 +23,8 @@ Don’t include this key in your `Info.plist` file if your app supports iPad mul
   Implement multitasking APIs to seamlessly integrate your app with iPadOS.
 - [Presenting content on a connected display](../UIKit/presenting-content-on-a-connected-display.md)
   Fill connected displays with additional content from your app.
+- [UIDesignRequiresCompatibility](information-property-list/uidesignrequirescompatibility.md)
+  A Boolean value that indicates whether the system runs the app using a compatibility mode for UI.
 - [UIUserInterfaceStyle](information-property-list/uiuserinterfacestyle.md)
   The user interface style for the app.
 - [UIViewEdgeAntialiasing](information-property-list/uiviewedgeantialiasing.md)

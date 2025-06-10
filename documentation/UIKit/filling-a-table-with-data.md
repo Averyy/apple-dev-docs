@@ -1,6 +1,6 @@
 # Filling a table with data
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Create and configure cells for your table dynamically using a data source object, or provide them statically from your storyboard.
 
@@ -134,4 +134,4 @@ Don’t use static data if there’s a chance you might want to update your tabl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/filling-a-table-with-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/filling-a-table-with-data)*

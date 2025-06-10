@@ -62,7 +62,7 @@ private func observePlayingState() {
 }
 ```
 
-Observe changes to the [`rate`](avplayer/rate.md) property by observing notifications of type [`rateDidChangeNotification`](avplayer/ratedidchangenotification.md). Observing this notification is similar to key-value observing the [`rate`](avplayer/rate.md) property, but provides additional information about the reason for the rate change. Retrieve the reason from the notification’s [`userInfo`](https://developer.apple.com/documentation/foundation/notification/1779652-userinfo) dictionary using the [`rateDidChangeReasonKey`](avplayer/ratedidchangereasonkey.md) constant:
+Observe changes to the [`rate`](avplayer/rate.md) property by observing notifications of type [`rateDidChangeNotification`](avplayer/ratedidchangenotification.md). Observing this notification is similar to key-value observing the [`rate`](avplayer/rate.md) property, but provides additional information about the reason for the rate change. Retrieve the reason from the notification’s [`userInfo`](https://developer.apple.com/documentation/Foundation/Notification/userInfo) dictionary using the [`rateDidChangeReasonKey`](avplayer/ratedidchangereasonkey.md) constant:
 
 ```swift
 // Observe changes to the playback rate asynchronously.
@@ -112,6 +112,10 @@ await avPlayer.seek(to: time, toleranceBefore: .zero, toleranceAfter: .zero)
 
 ## See Also
 
+- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
+  Keep your user interface in sync with state changes from playback objects.
+- [Creating a seamless multiview playback experience](creating-a-seamless-multiview-playback-experience.md)
+  Build advanced multiview playback experiences with the AVFoundation and AVRouting frameworks.
 - [class AVPlayer](avplayer.md)
   An object that provides the interface to control the player’s transport behavior.
 - [class AVPlayerItem](avplayeritem.md)

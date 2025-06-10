@@ -34,20 +34,22 @@ To add this trait to a test, use [`serialized`](trait/serialized.md).
 
 ## Topics
 
-### Instance Properties
-- [var isRecursive: Bool](parallelizationtrait/isrecursive.md)
-  Whether this instance should be applied recursively to child test suites and test functions.
 ### Type Aliases
 - [ParallelizationTrait.TestScopeProvider](parallelizationtrait/testscopeprovider.md)
   The type of the test scope provider for this trait.
 ### Default Implementations
+- [SuiteTrait Implementations](parallelizationtrait/suitetrait-implementations.md)
+- [TestScoping Implementations](parallelizationtrait/testscoping-implementations.md)
 - [Trait Implementations](parallelizationtrait/trait-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SuiteTrait](suitetrait.md)
+- [TestScoping](testscoping.md)
 - [TestTrait](testtrait.md)
 - [Trait](trait.md)
 

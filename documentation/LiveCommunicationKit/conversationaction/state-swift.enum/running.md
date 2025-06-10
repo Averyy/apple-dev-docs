@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: case
 
-The action is currently being executed.
+The action is currently processing.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,15 @@ The action is currently being executed.
 ```swift
 case running
 ```
+
+## See Also
+
+- [ConversationAction.State.complete](conversationaction/state-swift.enum/complete.md)
+  The action finished successfully.
+- [ConversationAction.State.failed(reason:)](conversationaction/state-swift.enum/failed(reason:).md)
+  Indicates that the action failed.
+- [ConversationAction.State.idle](conversationaction/state-swift.enum/idle.md)
+  The action has been created but hasn’t started.
 
 
 ---

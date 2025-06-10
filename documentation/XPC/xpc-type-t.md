@@ -1,6 +1,6 @@
 # xpc_type_t
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: typealias
 
 A type that describes XPC object types.

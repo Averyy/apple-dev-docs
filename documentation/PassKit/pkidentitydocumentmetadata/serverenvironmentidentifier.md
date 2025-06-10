@@ -3,6 +3,8 @@
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property
 
+An identifier that references the target server environment Apple Pay servers need to connect with to provision the pass.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -16,12 +18,9 @@
 var serverEnvironmentIdentifier: String { get set }
 ```
 
-## See Also
+#### Discussion
 
-- [var cardConfigurationIdentifier: String](pkidentitydocumentmetadata/cardconfigurationidentifier.md)
-- [var cardTemplateIdentifier: String](pkidentitydocumentmetadata/cardtemplateidentifier.md)
-- [var credentialIdentifier: String](pkidentitydocumentmetadata/credentialidentifier.md)
-- [var sharingInstanceIdentifier: String](pkidentitydocumentmetadata/sharinginstanceidentifier.md)
+If `serverEnvironmentIdentifier` isn’t present, the system uses the default Apply Pay server and returns an empty string.
 
 
 ---

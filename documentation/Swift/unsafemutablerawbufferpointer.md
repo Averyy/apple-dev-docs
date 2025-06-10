@@ -77,6 +77,7 @@ destBytes[0..<n] = someBytes[n..<(n + n)]
 ### Instance Properties
 - [var baseAddress: UnsafeMutableRawPointer?](unsafemutablerawbufferpointer/baseaddress.md)
   A pointer to the first byte of the buffer.
+- [var bytes: RawSpan](unsafemutablerawbufferpointer/bytes.md)
 ### Instance Methods
 - [func assumingMemoryBound<T>(to: T.Type) -> UnsafeMutableBufferPointer<T>](unsafemutablerawbufferpointer/assumingmemorybound(to:).md)
   Returns a typed buffer to the memory referenced by this buffer, assuming that the memory is already bound to the specified type.
@@ -147,4 +148,4 @@ destBytes[0..<n] = someBytes[n..<(n + n)]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/unsafemutablerawbufferpointer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/unsafemutablerawbufferpointer)*

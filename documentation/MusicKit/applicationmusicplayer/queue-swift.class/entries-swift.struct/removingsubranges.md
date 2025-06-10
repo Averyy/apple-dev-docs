@@ -1,6 +1,6 @@
 # removingSubranges(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Returns a collection of the elements in this collection that are not represented by the given range set.
@@ -31,7 +31,7 @@ For example, this code sample finds the indices of all the vowel characters in t
 ```swift
 let str = "The rain in Spain stays mainly in the plain."
 let vowels: Set<Character> = ["a", "e", "i", "o", "u"]
-let vowelIndices = str.subranges(where: { vowels.contains($0) })
+let vowelIndices = str.indices(where: { vowels.contains($0) })
 
 let disemvoweled = str.removingSubranges(vowelIndices)
 print(String(disemvoweled))

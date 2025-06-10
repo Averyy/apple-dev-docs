@@ -28,8 +28,6 @@ The text view calls this method if the user taps or long-presses the URL link. I
 
 > ❗ **Important**:  Links in text views are interactive only if the text view is selectable but noneditable. That is, if the value of the `UITextView` [`isSelectable`](uitextview/isselectable.md) property is [`true`](https://developer.apple.com/documentation/swift/true) and the [`isEditable`](uitextview/iseditable.md) property is [`false`](https://developer.apple.com/documentation/swift/false).
 
- Links in text views are interactive only if the text view is selectable but noneditable. That is, if the value of the `UITextView` [`isSelectable`](uitextview/isselectable.md) property is [`true`](https://developer.apple.com/documentation/swift/true) and the [`isEditable`](uitextview/iseditable.md) property is [`false`](https://developer.apple.com/documentation/swift/false).
-
 ## Parameters
 
 - `textView`: The text view containing the text attachment.

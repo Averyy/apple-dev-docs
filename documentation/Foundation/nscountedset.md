@@ -81,6 +81,8 @@ If you change the primitive behavior, you must also override the primitive metho
 - [NSMutableCopying](nsmutablecopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

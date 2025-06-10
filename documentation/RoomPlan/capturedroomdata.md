@@ -35,7 +35,7 @@ With an instance of this structure, your app can:
   Creates a new instance by decoding from the given decoder.
 ### Serializing a prior scan
 - [func encode(to: any Encoder) throws](capturedroomdata/encode(to:).md)
-  Encodes this value into the given encoder.
+  Serializes captured room data to the specified encoder.
 
 ## Relationships
 
@@ -43,6 +43,7 @@ With an instance of this structure, your app can:
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

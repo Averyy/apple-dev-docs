@@ -1,6 +1,6 @@
 # hitTest(_:with:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Returns the farthest descendant in the view hierarchy of the current view, including itself, that contains the specified point.

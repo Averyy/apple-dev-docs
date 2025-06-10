@@ -1,6 +1,6 @@
 # timeStamp
 
-**Framework**: Iousbhost  
+**Framework**: IOUSBHost  
 **Kind**: property
 
 The observed time for the frame’s completion.

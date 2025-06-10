@@ -1,6 +1,6 @@
 # requiresSystemTrust
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A Boolean value that indicates whether the update URL must have a system-trusted certificate.

@@ -128,6 +128,7 @@ You can also override [`loadWindow()`](nswindowcontroller/loadwindow().md) to ge
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

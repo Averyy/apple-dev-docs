@@ -56,8 +56,6 @@ When a command queue schedules a command buffer for execution, the drawable trac
 
 > 💡 **Tip**:  For better performance, only retrieve the render pass descriptor when you’re ready to render the contents, and hold onto it and the related drawable object as little as possible. Release it as soon as you finish with it. For more information, see [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer).
 
- For better performance, only retrieve the render pass descriptor when you’re ready to render the contents, and hold onto it and the related drawable object as little as possible. Release it as soon as you finish with it. For more information, see [`CAMetalLayer`](https://developer.apple.com/documentation/QuartzCore/CAMetalLayer).
-
 ## Topics
 
 ### Creating a View
@@ -127,6 +125,8 @@ When a command queue schedules a command buffer for execution, the drawable trac
 ### Releasing Memory
 - [func releaseDrawables()](mtkview/releasedrawables.md)
   Releases the [`depthStencilTexture`](mtkview/depthstenciltexture.md) and [`multisampleColorTexture`](mtkview/multisamplecolortexture.md) objects.
+### Instance Properties
+- [var currentMTL4RenderPassDescriptor: MTL4RenderPassDescriptor?](mtkview/currentmtl4renderpassdescriptor.md)
 
 ## Relationships
 

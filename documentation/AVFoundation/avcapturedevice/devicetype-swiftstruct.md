@@ -71,6 +71,7 @@ Use the device type constants to retrieve devices using an [`AVCaptureDevice.Dis
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -17,7 +17,7 @@ The font the annotation uses to display text.
 
 ```swift
 @NSCopying
-var font: NSFont? { get set }
+var font: UIFont? { get set }
 ```
 
 ## Mentions

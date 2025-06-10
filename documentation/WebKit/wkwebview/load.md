@@ -1,6 +1,6 @@
 # load(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Loads the web content that the specified URL request object references and navigates to that content.
@@ -27,7 +27,7 @@ A new navigation object that you use to track the loading progress of the reques
 
 Use this method to load a page from a local or network-based URL. For example, you might use this method to navigate to a network-based webpage.
 
-Provide the source of this load request for app activity data by setting the [`attribution`](https://developer.apple.com/documentation/foundation/urlrequest/3767318-attribution) parameter on your request.
+Provide the source of this load request for app activity data by setting the [`attribution`](https://developer.apple.com/documentation/Foundation/URLRequest/attribution-swift.property) parameter on your request.
 
 ## Parameters
 

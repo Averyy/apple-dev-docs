@@ -48,7 +48,7 @@ This type is not derived from [`CFTypeRef`](https://developer.apple.com/document
 - [func CGPDFArrayGetString(CGPDFArrayRef, Int, UnsafeMutablePointer<CGPDFStringRef?>?) -> Bool](cgpdfarraygetstring(_:_:_:).md)
   Returns whether an object at a given index in a PDF array is a PDF string and, if so, retrieves that string.
 ### Data Types
-- [typealias CGPDFArrayRef](cgpdfarrayref.md)
+- [struct CGPDFArrayRef](cgpdfarrayref.md)
   An opaque type that encapsulates a PDF array.
 
 ## See Also

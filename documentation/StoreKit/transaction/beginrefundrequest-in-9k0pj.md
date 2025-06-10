@@ -1,6 +1,6 @@
 # beginRefundRequest(in:)
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: method
 
 Presents the refund request sheet for the transaction in a window scene.

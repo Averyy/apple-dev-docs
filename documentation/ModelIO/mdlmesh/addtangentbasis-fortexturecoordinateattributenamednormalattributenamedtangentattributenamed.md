@@ -1,6 +1,6 @@
 # addTangentBasis(forTextureCoordinateAttributeNamed:normalAttributeNamed:tangentAttributeNamed:)
 
-**Framework**: Modelio  
+**Framework**: Model I/O  
 **Kind**: method
 
 Generates surface tangent data for the mesh based on its vertex position, surface normal, and texture coordinate data.

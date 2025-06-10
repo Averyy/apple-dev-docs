@@ -1,6 +1,6 @@
 # Property Type Constants
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 Supported constant values for `kVTPropertyTypeKey`.
 

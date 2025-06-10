@@ -24,8 +24,6 @@ var unicodeScalar: Unicode.Scalar { get }
 
 > ❗ **Important**: Accessing this property when `hasPointerRepresentation` is `true` triggers a runtime error.
 
-Accessing this property when `hasPointerRepresentation` is `true` triggers a runtime error.
-
 
 ---
 

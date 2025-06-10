@@ -1,6 +1,6 @@
 # toggleStyle(_:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Sets the style for toggles in a view hierarchy.

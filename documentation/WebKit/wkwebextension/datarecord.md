@@ -1,6 +1,6 @@
 # WKWebExtension.DataRecord
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that represents a record of stored data for a specific web extension context.

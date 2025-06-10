@@ -3,14 +3,12 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to invite a user on a device to join the Volume Purchase Program (VPP).
+The command to invite a user to join the Volume Purchase Program (VPP).
 
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,9 +18,9 @@ object InviteToProgramCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object InviteToProgramCommand.Command](invitetoprogramcommand/command-data.dictionary.md)
-  The request dictionary to invite a user to join the Volume Purchase Program (VPP).
+  The command to invite a user to join the Volume Purchase Program (VPP).
 
 ## See Also
 

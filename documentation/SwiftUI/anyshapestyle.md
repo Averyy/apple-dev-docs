@@ -31,6 +31,7 @@ struct AnyShapeStyle
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 
 ## See Also
@@ -57,6 +58,8 @@ struct AnyShapeStyle
   A color gradient.
 - [struct ShadowStyle](shadowstyle.md)
   A style to use when rendering shadows.
+- [struct Glass](glass.md)
+  A structure that defines the configuration of the Liquid Glass material.
 
 
 ---

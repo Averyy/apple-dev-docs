@@ -24,6 +24,11 @@ func invalidate(reason: Self.InvalidationReason)
 
 - `reason`: The reason for the tip’s invalidation. The tip’s   returns this value after invalidation.
 
+## See Also
+
+- [func resetEligibility() async](tip/reseteligibility.md)
+  Reset a previously invalidated tip.
+
 
 ---
 

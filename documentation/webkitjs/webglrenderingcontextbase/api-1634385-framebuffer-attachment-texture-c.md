@@ -1,6 +1,6 @@
 # FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

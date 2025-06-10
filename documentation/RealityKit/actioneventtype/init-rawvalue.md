@@ -10,6 +10,7 @@ Creates an action event type from a raw value.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -24,14 +25,8 @@ init(rawValue: UInt)
 
 ## See Also
 
-- [let rawValue: UInt](actioneventtype/rawvalue-swift.property.md)
+- [let rawValue: UInt](actioneventtype/rawvalue.md)
   The backing storage for action event types.
-- [ActionEventType.ArrayLiteralElement](actioneventtype/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [ActionEventType.Element](actioneventtype/element.md)
-  The element type of the option set.
-- [ActionEventType.RawValue](actioneventtype/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 
 
 ---

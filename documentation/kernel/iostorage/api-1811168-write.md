@@ -1,0 +1,61 @@
+# write()
+
+**Framework**: Kernel  
+**Kind**: instm
+
+## Declaration
+
+```swift
+#ifdef __LP64__
+ virtual IOReturn write(
+ IOService *client, 
+ UInt64 byteStart, 
+ IOMemoryDescriptor *buffer, 
+ IOStorageAttributes *attributes = 0, 
+ UInt64 *actualByteCount = 0); 
+#else /* !__LP64__ */
+virtual IOReturn write(
+ IOService *client, 
+ UInt64 byteStart, 
+ IOMemoryDescriptor *buffer, 
+ UInt64 *actualByteCount = 0); 
+#endif 
+/* !__LP64__ */
+```
+
+#### Return_value
+
+Returns the status of the data transfer.
+
+#### Overview
+
+Write data into the storage object at the specified byte offset from the specified buffer, synchronously. When the write completes, this method will return to the caller. The actual byte count field is optional.
+
+## Parameters
+
+- `client`: Client requesting the write.
+- `byteStart`: Starting byte offset for the data transfer.
+- `buffer`: Buffer for the data transfer. The size of the buffer implies the size of the data transfer.
+- `attributes`: Attributes of the data transfer. See IOStorageAttributes.
+- `actualByteCount`: Returns the actual number of bytes transferred in the data transfer.
+
+## See Also
+
+- [complete](iostorage/1810767-complete.md)
+- [copyPhysicalExtent](iostorage/1810820-copyphysicalextent.md)
+- [handleClose](iostorage/1810866-handleclose.md)
+- [handleIsOpen](iostorage/1810905-handleisopen.md)
+- [handleOpen](iostorage/1810948-handleopen.md)
+- [lockPhysicalExtents](iostorage/1810985-lockphysicalextents.md)
+- [open](iostorage/1811013-open.md)
+- [read()](iostorage/1811038-read.md)
+- [read()](iostorage/1811068-read.md)
+- [synchronizeCache](iostorage/1811091-synchronizecache.md)
+- [unlockPhysicalExtents](iostorage/1811117-unlockphysicalextents.md)
+- [unmap](iostorage/1811145-unmap.md)
+- [write()](iostorage/1811185-write.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/iostorage/1811168-write)*

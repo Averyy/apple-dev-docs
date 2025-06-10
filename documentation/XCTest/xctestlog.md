@@ -1,6 +1,6 @@
 # XCTestLog
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An object that logs test failures and errors.

@@ -21,7 +21,7 @@ A rectangle, in window coordinates, aligned to the backing store pixels accordin
 
 #### Discussion
 
-This method uses [`NSIntegralRectWithOptions(_:_:)`](https://developer.apple.com/documentation/foundation/1391311-nsintegralrectwithoptions) to align the input rectangle, and produces a backing store pixel-aligned rectangle.
+This method uses [`NSIntegralRectWithOptions(_:_:)`](https://developer.apple.com/documentation/Foundation/NSIntegralRectWithOptions(_:_:)) to align the input rectangle, and produces a backing store pixel-aligned rectangle.
 
 ## Parameters
 

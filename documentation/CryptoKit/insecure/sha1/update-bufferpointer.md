@@ -1,6 +1,6 @@
 # update(bufferPointer:)
 
-**Framework**: Cryptokit  
+**Framework**: Apple CryptoKit  
 **Kind**: method
 
 Incrementally updates the hash function with the contents of the buffer.

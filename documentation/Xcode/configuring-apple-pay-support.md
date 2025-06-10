@@ -62,4 +62,4 @@ After you create your merchant identifier and payment processing certificate, us
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-apple-pay-support)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-apple-pay-support)*

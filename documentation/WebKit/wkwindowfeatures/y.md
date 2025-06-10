@@ -1,6 +1,6 @@
 # y
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The requested y-coordinate of the containing window.

@@ -51,6 +51,8 @@ In iOS and iPadOS 18.2 and later, a person may select an app — other than the 
   Use the CallKit framework to integrate native VoIP calling.
 - [Preparing your app to be the default calling app](preparing-your-app-to-be-the-default-calling-app.md)
   Configure your CallKit or LiveCommunicationKit app so people can set it as the default calling app on their device.
+- [CallKit updates](../Updates/CallKit.md)
+  Learn about important changes to CallKit.
 ### Incoming calls
 - [Responding to VoIP Notifications from PushKit](../PushKit/responding-to-voip-notifications-from-pushkit.md)
   Receive incoming Voice-over-IP (VoIP) push notifications and use them to display the system call interface to the user.
@@ -82,6 +84,8 @@ In iOS and iPadOS 18.2 and later, a person may select an app — other than the 
   An encapsulation of the act of placing a call on hold or removing a call from hold.
 - [class CXSetMutedCallAction](cxsetmutedcallaction.md)
   An encapsulation of the act of muting or unmuting a call.
+- [class CXSetTranslatingCallAction](cxsettranslatingcallaction.md)
+  An encapsulation of the act of translating a call.
 ### Call information
 - [class CXCall](cxcall.md)
   A telephony call.

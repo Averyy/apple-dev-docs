@@ -1,6 +1,6 @@
 # fetchPartialContents(for:version:request:minimalRange:aligningTo:options:completionHandler:)
 
-**Framework**: Fileprovider  
+**Framework**: File Provider  
 **Kind**: method  
 **Required**: Yes
 
@@ -64,9 +64,9 @@ To prevent a process from accessing content from the extension’s domain, save 
 
 If the system requests an item that your file provider extension doesn’t know about, pass the [`NSFileProviderError.Code.noSuchItem`](nsfileprovidererror/code/nosuchitem.md) error to the completion handler. The system then treats the item as if someone had removed the item from the domain, and it attempts to delete the file. If it can’t delete the item (for example, because the item has local changes) it recreates the item by calling your extension’s [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](nsfileproviderreplicatedextension/createitem(basedon:fields:contents:options:request:completionhandler:).md) method.
 
-If the user doesn’t have access to the file, you can pass an [`NSFileReadNoPermissionError`](https://developer.apple.com/documentation/foundation/nsfilereadnopermissionerror) error to the completion handler. The system then displays that error to the user.
+If the user doesn’t have access to the file, you can pass an [`NSFileReadNoPermissionError`](https://developer.apple.com/documentation/Foundation/NSFileReadNoPermissionError-swift.var) error to the completion handler. The system then displays that error to the user.
 
-Your extension can also pass [`NSFileProviderError.Code.notAuthenticated`](nsfileprovidererror/code/notauthenticated.md) and [`NSFileReadNoPermissionError`](https://developer.apple.com/documentation/foundation/nsfilereadnopermissionerror) errors if it can’t download the items because of the system or domain’s current state. In those cases, the system displays an error to the user, and doesn’t make another fetch request until the next time it receives an update notification about the item.
+Your extension can also pass [`NSFileProviderError.Code.notAuthenticated`](nsfileprovidererror/code/notauthenticated.md) and [`NSFileReadNoPermissionError`](https://developer.apple.com/documentation/Foundation/NSFileReadNoPermissionError-swift.var) errors if it can’t download the items because of the system or domain’s current state. In those cases, the system displays an error to the user, and doesn’t make another fetch request until the next time it receives an update notification about the item.
 
 If you can’t provide the requested version for an item, provide a different version unless the system passed the [`strictVersioning`](nsfileproviderfetchcontentsoptions/strictversioning.md) key in the `options` parameter. In this case, pass a [`NSFileProviderError.Code.versionNoLongerAvailable`](nsfileprovidererror/code/versionnolongeravailable.md) error to the completion handler instead.
 
@@ -78,7 +78,7 @@ The system considers all other errors as transient, and attempts to request the 
 
 Your implementation of this method must return a [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) item that tracks your app’s progress while downloading the requested range. The system uses this item to show the progress to the user.
 
-If the user cancels the operation, the system calls the progress item’s [`cancellationHandler`](https://developer.apple.com/documentation/foundation/progress/1408913-cancellationhandler) block. Use this block to stop fetching the item, because it’s no longer required.
+If the user cancels the operation, the system calls the progress item’s [`cancellationHandler`](https://developer.apple.com/documentation/Foundation/Progress/cancellationHandler) block. Use this block to stop fetching the item, because it’s no longer required.
 
 ## Parameters
 

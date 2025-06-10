@@ -51,6 +51,7 @@ For more information, see the [`NSDecimalNumberBehaviors`](nsdecimalnumberbehavi
 - [NSDecimalNumberBehaviors](nsdecimalnumberbehaviors.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_ReducedResolutionDecode
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Request decoding at smaller resolutions than full-size (optional).

@@ -6,11 +6,11 @@
 The view that was focused before the focus update.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 

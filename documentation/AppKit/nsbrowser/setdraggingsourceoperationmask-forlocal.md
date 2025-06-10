@@ -19,8 +19,6 @@ func setDraggingSourceOperationMask(_ mask: NSDragOperation, forLocal isLocal: B
 
 > ❗ **Important**:  Do not override this method.
 
- Do not override this method.
-
 ## Parameters
 
 - `mask`: Dragging operation mask to use for either local or external drag operations, as specified by localDestination.

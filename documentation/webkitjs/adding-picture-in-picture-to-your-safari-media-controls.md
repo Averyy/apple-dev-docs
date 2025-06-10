@@ -1,6 +1,6 @@
 # Adding Picture in Picture to your Safari media controls
 
-**Framework**: Webkitjs
+**Framework**: WebKit JS
 
 Create a custom control that adds Picture in Picture to your Safari media player. 
 

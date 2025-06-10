@@ -1,6 +1,6 @@
 # subtracting(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Returns a new set containing the elements of this set that do not occur in the given set.

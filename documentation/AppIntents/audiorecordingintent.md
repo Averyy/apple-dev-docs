@@ -8,7 +8,7 @@ An app intent that starts, stops or otherwise modifies audio recording state.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -26,14 +26,13 @@ Adopt this protocol to create an app intent for audio recording functionality an
 
 > ❗ **Important**: In iOS, iPadOS, and watchOS, When you adopt the `AudioRecordingIntent` protocol, you must start a Live Activity when you begin the audio recording and keep it active as long as you record audio. If you don’t start a Live Activity, the audio recording stops.
 
-In iOS, iPadOS, and watchOS, When you adopt the `AudioRecordingIntent` protocol, you must start a Live Activity when you begin the audio recording and keep it active as long as you record audio. If you don’t start a Live Activity, the audio recording stops.
-
 ## Relationships
 
 ### Inherits From
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SystemIntent](systemintent.md)
 
 ## See Also

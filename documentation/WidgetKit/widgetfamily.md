@@ -1,6 +1,6 @@
 # WidgetFamily
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: enum
 
 Values that define the widget’s size and shape.
@@ -8,8 +8,9 @@ Values that define the widget’s size and shape.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -68,6 +69,9 @@ Use the [`WidgetFamily`](widgetfamily.md) value to return the appropriate conten
   A rectangular widget.
 - [WidgetFamily.accessoryInline](widgetfamily/accessoryinline.md)
   A flat widget that contains a single row of text and an optional image.
+### Enumeration Cases
+- [WidgetFamily.systemExtraLargePortrait](widgetfamily/systemextralargeportrait.md)
+  A vertically-oriented extra large.
 
 ## Relationships
 
@@ -79,6 +83,7 @@ Use the [`WidgetFamily`](widgetfamily.md) value to return the appropriate conten
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -88,28 +93,16 @@ Use the [`WidgetFamily`](widgetfamily.md) value to return the appropriate conten
   Offer widgets in additional contexts by adding support for various widget sizes.
 - [Creating accessory widgets and watch complications](creating-accessory-widgets-and-watch-complications.md)
   Support accessory widgets that appear on the Lock Screen and as complications on Apple Watch.
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
-  Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
-- [Building Widgets Using WidgetKit and SwiftUI](building_widgets_using_widgetkit_and_swiftui.md)
-  Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
 - [Emoji Rangers: Supporting Live Activities, interactivity, and animations](emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
-- [Backyard Birds: Building an app with SwiftData and widgets](../SwiftUI/Backyard-birds-sample.md)
-  Create an app with persistent data, interactive widgets, and an all new in-app purchase experience.
-- [Fruta: Building a Feature-Rich App with SwiftUI](../appclip/fruta_building_a_feature-rich_app_with_swiftui.md)
-  Create a shared codebase to build a multiplatform app that offers widgets and an App Clip.
 - [@MainActor @preconcurrency protocol Widget](../SwiftUI/Widget.md)
   The configuration and content of a widget to display on the Home screen or in Notification Center.
 - [@MainActor @preconcurrency protocol WidgetBundle](../SwiftUI/WidgetBundle.md)
   A container used to expose multiple widgets from a single widget extension.
 - [struct StaticConfiguration](staticconfiguration.md)
   An object describing the content of a widget that has no user-configurable options.
-- [struct WidgetRenderingMode](widgetrenderingmode.md)
-  Constants that indicate the rendering mode for a widget.
-- [struct WidgetAccentedRenderingMode](widgetaccentedrenderingmode.md)
-  Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](widgetrenderingmode/accented.md) mode.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/widgetfamily)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/widgetfamily)*

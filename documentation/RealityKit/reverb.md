@@ -10,6 +10,7 @@ The reverberation RealityKit applies to spatial audio sources.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -25,7 +26,7 @@ You can configure the reverb for spatial audio sources in your RealityKit conten
 ```swift
 let cinema = Entity()
 let reverb: Reverb = .preset(.mediumRoomDry)
-cinema.components.set(ReverbComponent(reverb: reverb)
+cinema.components.set(ReverbComponent(reverb: reverb))
 ```
 
 ## Topics
@@ -33,23 +34,12 @@ cinema.components.set(ReverbComponent(reverb: reverb)
 ### Structures
 - [Reverb.Preset](reverb/preset.md)
   Reverbs defined by a preset environment.
-### Operators
-- [static func == (Reverb, Reverb) -> Bool](reverb/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](reverb/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](reverb/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static let anechoic: Reverb](reverb/anechoic.md)
   A reverb instance that applies no reverberation to spatial audio sources.
 ### Type Methods
 - [static func preset(Reverb.Preset) -> Reverb](reverb/preset(_:).md)
   Returns a reverb instance that you can set on a reverb component.
-### Default Implementations
-- [Equatable Implementations](reverb/equatable-implementations.md)
 
 ## Relationships
 
@@ -57,6 +47,7 @@ cinema.components.set(ReverbComponent(reverb: reverb)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

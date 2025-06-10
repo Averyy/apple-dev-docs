@@ -1,6 +1,6 @@
 # revert(toContentsOf:ofType:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Discards all unsaved document modifications and replaces the document’s contents by reading a file or file package located by a URL of a specified type.

@@ -38,6 +38,7 @@ class AVAssetDownloadConfiguration
   A Boolean value that indicates whether the task optimizes auxiliary content selection.
 ### Instance Methods
 - [func setInterstitialMediaSelectionCriteria([AVPlayerMediaSelectionCriteria], forMediaCharacteristic: AVMediaCharacteristic)](avassetdownloadconfiguration/setinterstitialmediaselectioncriteria(_:formediacharacteristic:).md)
+  Sets media selection on interstitials for this asset
 
 ## Relationships
 

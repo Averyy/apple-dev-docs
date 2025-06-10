@@ -14,7 +14,7 @@ A type that resolves to an [`EAGLContext`](https://developer.apple.com/documenta
 ## Declaration
 
 ```swift
-typealias CVEAGLContext = EAGLContext
+typealias CVEAGLContext = UnsafeMutableRawPointer
 ```
 
 #### Discussion

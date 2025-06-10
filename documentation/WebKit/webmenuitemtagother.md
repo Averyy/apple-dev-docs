@@ -1,6 +1,6 @@
 # WebMenuItemTagOther
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Used when a tag for an item in the context menu can’t be determined.

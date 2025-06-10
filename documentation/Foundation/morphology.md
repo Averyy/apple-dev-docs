@@ -81,6 +81,7 @@ The [`Morphology`](morphology.md) type’s design is language-independent; the c
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

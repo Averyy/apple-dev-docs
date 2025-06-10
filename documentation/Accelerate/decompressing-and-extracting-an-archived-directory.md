@@ -102,7 +102,7 @@ do {
 }
 ```
 
-On return, the operation recreates the contents of the directory previously archived in `directory.aar` in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/foundation/1409211-nstemporarydirectory) `+ “dest/”.`
+On return, the operation recreates the contents of the directory previously archived in `directory.aar` in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/Foundation/NSTemporaryDirectory()) `+ “dest/”.`
 
 ## See Also
 

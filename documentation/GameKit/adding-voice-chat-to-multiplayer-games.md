@@ -1,6 +1,6 @@
 # Adding voice chat to multiplayer games
 
-**Framework**: Gamekit
+**Framework**: GameKit
 
 Enable players to voice chat with all, or groups of, players in a multiplayer game.
 
@@ -140,4 +140,4 @@ catch {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/adding-voice-chat-to-multiplayer-games)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/adding-voice-chat-to-multiplayer-games)*

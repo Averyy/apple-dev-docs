@@ -8,8 +8,6 @@ Store pairs of values to be interpolated between in QuickTime movies using tween
 
 > ❗ **Important**: Tween media is deprecated in the QuickTime file format. The information that follows documents existing content containing tween media and should not be used for new development.
 
-Tween media is deprecated in the QuickTime file format. The information that follows documents existing content containing tween media and should not be used for new development.
-
 Tween media is used to store pairs of values to be interpolated between in QuickTime movies. These interpolated values modify the playback of other media types by using track references and track input maps. For example, a tween media could generate gradually changing volume levels to cause a sound track to fade out. It has a media type of `'twen'`.
 
 Every tween operation is based on a collection of one or more values from which a range of output values can be algorithmically derived. Each tween is assigned a time duration, and an output value can be generated for any time value within the duration. In the simplest kind of tween operation, a pair of values is provided as input and values between the two values are generated as output.

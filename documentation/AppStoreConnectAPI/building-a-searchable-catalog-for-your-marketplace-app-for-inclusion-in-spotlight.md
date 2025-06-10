@@ -1,6 +1,6 @@
 # Building a searchable catalog for your marketplace app for inclusion in Spotlight
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Set up and build your alternative marketplace’s searchable index.
 
@@ -32,7 +32,7 @@ The following items are required for the alternative marketplace:
 - Serve the sitemap and app pages from the same hostname (`example.com` in the example). If you intend to operate two marketplaces, you need to use two hostnames, for example `www.example.com` and `www.example2.com`.
 - Render structured data schema server-side. The schema must not require any client-side JavaScript processing.
 
-> **Note**:  Apple infers the hostname from the root sitemap URL you configure by using [`Add a marketplace domain`](post-v1-marketplacedomains.md).
+> **Note**:  Apple infers the hostname from the root sitemap URL you configure by using `POST-v1-marketplaceDomains`.
 
 The marketplace submits the sitemap URL to App Store Connect with [`Add a marketplace search detail URL`](post-v1-marketplacesearchdetails.md).
 
@@ -44,7 +44,7 @@ Here’s an example sitemap:
 curl -X GET https://example.com/apps/sitemap.xml 
 
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://example.com/apps/catalog/backyard-birds.html</loc>
       <lastmod>2023-06-20</lastmod>
@@ -262,6 +262,7 @@ For this example, the user searches for outdoor apps. There are three apps that 
   Add a search detail URL for the alternative marketplace.
 - [Read the marketplace search detail URL](get-v1-apps-_id_-marketplacesearchdetail.md)
   Get search detail URL for the alternative marketplace.
+- [GET /v1/apps/{id}/relationships/marketplaceSearchDetail](get-v1-apps-_id_-relationships-marketplacesearchdetail.md)
 - [Modify a marketplace search detail URL](patch-v1-marketplacesearchdetails-_id_.md)
   Update the search detail URL for the alternative marketplace.
 - [Delete a marketplace search detail URL](delete-v1-marketplacesearchdetails-_id_.md)
@@ -270,4 +271,4 @@ For this example, the user searches for outdoor apps. There are three apps that 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight)*

@@ -1,6 +1,6 @@
 # Creating an audio device driver
 
-**Framework**: Audiodriverkit
+**Framework**: AudioDriverKit
 
 Implement a configurable audio input source as a driver extension that runs in user space in macOS and iPadOS.
 
@@ -40,8 +40,8 @@ If you want to run the app with manual signing, do the following:
 2. In the Xcode project, click the Signing & Capabilities tab for each of the three targets — driver, macOS app, and iOS app — and set the respective bundle identifier.
 3. In the driver’s `Info.plist` file, set the value of the `IOUserServerName` to the driver bundle identifier.
 4. In `SimpleAudioDriverViewModel.swift`, make sure the string concatentation that initializes `dextIdentifier` matches the bundle identifer for the driver.
-5. The sample app needs an explicit App ID and provisioning profile with the entitlements [`System Extension Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.system-extension.install) and [`Communicates with Drivers`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.communicates-with-drivers). For information about how to request entitlements, see [`Requesting Entitlements for DriverKit Development`](https://developer.apple.com/documentation/DriverKit/requesting-entitlements-for-driverkit-development).
-6. The sample driver needs an explicit App ID and provisioning profile with the following entitlements: [`com.apple.developer.driverkit`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit), `com.apple.developer.driverkit.family.audio`, and `com.apple.developer.driverkit.allow-any-userclient-access`. This latter macOS-only entitlement allows any app to connect to the driver as a user client. Although this simplifies running the sample code, in your own apps you may prefer to use [`com.apple.developer.driverkit.userclient-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.driverkit.userclient-access). This entitlement goes on the app rather than the driver, and lists bundle identifiers of drivers it can connect to. If you don’t intend for your driver to allow user client connections, just use the `com.apple.developer.driverkit.family.audio` entitlement.
+5. The sample app needs an explicit App ID and provisioning profile with the entitlements System Extension and Communicates with Drivers. For information about how to request entitlements, see [`Requesting Entitlements for DriverKit Development`](https://developer.apple.com/documentation/DriverKit/requesting-entitlements-for-driverkit-development).
+6. The sample driver needs an explicit App ID and provisioning profile with the following entitlements: `com.apple.developer.driverkit`, `com.apple.developer.driverkit.family.audio`, and `com.apple.developer.driverkit.allow-any-userclient-access`. This latter macOS-only entitlement allows any app to connect to the driver as a user client. Although this simplifies running the sample code, in your own apps you may prefer to use `com.apple.developer.driverkit.userclient-access`. This entitlement goes on the app rather than the driver, and lists bundle identifiers of drivers it can connect to. If you don’t intend for your driver to allow user client connections, just use the `com.apple.developer.driverkit.family.audio` entitlement.
 7. For each of the App IDs you create in the previous steps, select Profiles to create a new provisioning profile. You need one for the macOS app, one for the iPadOS app, and one for the driver, which supports both macOS and iPadOS. When creating the driver’s profile, be sure to select DriverKit App Development as the profile type.
 8. Download each profile and add it to Xcode.
 9. On the Signing & Capabilities tab, set each target to manual code signing and select its new profile.
@@ -78,7 +78,7 @@ The driver subclass is the entry point into the dext, while the device subclass 
 
 > **Note**: When creating a virtual device, best practice is to use an Audio Server Driver Plug-in instead, as described in [`Creating an Audio Server Driver Plug-in`](https://developer.apple.com/documentation/CoreAudio/creating-an-audio-server-driver-plug-in). AudioDriverKit only supports physical audio devices.
 
-After initialization, DriverKit calls the driver’s [`Start`](https://developer.apple.com/documentation/kernel/ioservice/3180710-start) method. The implementation in `SimpleAudioDriver` creates and configures the `SimpleAudioDevice` instance and, if successful, calls [`RegisterService`](https://developer.apple.com/documentation/kernel/ioservice/3180701-registerservice) to let the system know the driver is running.
+After initialization, DriverKit calls the driver’s [`Start`](https://developer.apple.com/documentation/DriverKit/IOService/Start) method. The implementation in `SimpleAudioDriver` creates and configures the `SimpleAudioDevice` instance and, if successful, calls [`RegisterService`](https://developer.apple.com/documentation/DriverKit/IOService/RegisterService) to let the system know the driver is running.
 
 ```c++
 kern_return_t SimpleAudioDriver::Start_Impl(IOService* in_provider)
@@ -123,7 +123,7 @@ Failure:
 
 There are two dictionaries in the `Info.plist` file that define how the driver acts as a user client to the Core Audio Hardware Abstraction Layer (HAL) and to other apps. The first dictionary, `IOUserAudioDriverUserClientProperties`, maps `IOClass` to `IOUserUserClient` and `IOUserClass` to `IOUserAudioDriverUserClient`. This allows the HAL to connect to the driver. To support user client connections from apps, the sample also defines a custom user client class. The dictionary for the custom user client has the key `SimpleAudioDriverUserClientProperties`, and its `IOUserClass` has the value `SimpleAudioDriverUserClient`, a custom subclass of `IOUserClient`. Drivers that don’t accept user client connections from apps don’t need this second dictionary.
 
-When the HAL requires a new user client connection to the dext, it calls the driver’s [`NewUserClient`](https://developer.apple.com/documentation/driverkit/ioservice/3325581-newuserclient) method. In the sample, the implementation of this method serves two purposes. If the incoming client type is `kIOUserAudioDriverUserClientType`, then this is a request from the HAL. In this case, the driver just forwards the call to the [`IOUserAudioDriver`](IOUserAudioDriver.md) superclass. For other client types, such as apps connecting to the driver, it uses the `SimpleAudioDriverUserClientProperties` values from the `Info.plist` file to create an instance of the custom `SimpleAudioDriverUserClient` class.
+When the HAL requires a new user client connection to the dext, it calls the driver’s [`NewUserClient`](https://developer.apple.com/documentation/DriverKit/IOService/NewUserClient) method. In the sample, the implementation of this method serves two purposes. If the incoming client type is `kIOUserAudioDriverUserClientType`, then this is a request from the HAL. In this case, the driver just forwards the call to the [`IOUserAudioDriver`](IOUserAudioDriver.md) superclass. For other client types, such as apps connecting to the driver, it uses the `SimpleAudioDriverUserClientProperties` values from the `Info.plist` file to create an instance of the custom `SimpleAudioDriverUserClient` class.
 
 ```c++
 kern_return_t SimpleAudioDriver::NewUserClient_Impl(uint32_t in_type, IOUserClient** out_user_client)
@@ -229,7 +229,7 @@ FailIfError(error, , Failure, "failed to add input stream");
 
 AudioDriverKit provides [`IOUserAudioControl`](IOUserAudioControl.md) objects for standard user interface to an audio device. Along with general controls for a toggle, slider, or selection interface to device properties, there are standard controls for volume and stereo pan. The sample driver adds an instance of the volume control, [`IOUserAudioLevelControl`](IOUserAudioLevelControl.md), in its initializer, which provides the volume slider in Audio MIDI Setup in macOS.
 
-The following code example creates the audio level control with a default level of -6.0 decibels (dB), and a range of -96.0 to 0.0 dB. Like all audio controls, the level control has an element and scope to set; these properties have the same meaning as the [`AudioUnitElement`](https://developer.apple.com/documentation/AudioToolbox/AudioUnitElement) and [`AudioUnitScope`](https://developer.apple.com/documentation/AudioToolbox/AudioUnitScope) of an [`AUAudioUnit`](https://developer.apple.com/documentation/AudioToolbox/AUAudioUnit) in [`Audio Toolbox`](https://developer.apple.com/documentation/AudioToolbox). In this case, the element [`IOUserAudioObjectPropertyElementMain`](https://developer.apple.comaudiodriverkit/iouseraudiodriver) affects the entire control, and the scope [`Input`](AudioDriverKit/IOUserAudioObjectPropertyScope/Input.md) indicates that this control affects input from the device.
+The following code example creates the audio level control with a default level of -6.0 decibels (dB), and a range of -96.0 to 0.0 dB. Like all audio controls, the level control has an element and scope to set; these properties have the same meaning as the [`AudioUnitElement`](https://developer.apple.com/documentation/AudioToolbox/AudioUnitElement) and [`AudioUnitScope`](https://developer.apple.com/documentation/AudioToolbox/AudioUnitScope) of an [`AUAudioUnit`](https://developer.apple.com/documentation/AudioToolbox/AUAudioUnit) in [`Audio Toolbox`](https://developer.apple.com/documentation/AudioToolbox). In this case, the element [`IOUserAudioObjectPropertyElementMain`](https://developer.apple.comaudiodriverkit/iouseraudiodriver) affects the entire control, and the scope `IOUserAudioObjectPropertyScope::Input` indicates that this control affects input from the device.
 
 ```c++
 // Create the volume control object for the input stream.
@@ -532,4 +532,4 @@ When this method returns, the configuration change is complete, and the system r
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AudioDriverKit/creating-an-audio-device-driver)*
+*[View on Apple Developer](https://developer.apple.com/documentation/audiodriverkit/creating-an-audio-device-driver)*

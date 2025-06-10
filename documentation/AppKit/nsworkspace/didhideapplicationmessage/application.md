@@ -1,0 +1,18 @@
+# application
+
+**Framework**: AppKit  
+**Kind**: property
+
+**Availability**:
+- macOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+var application: NSRunningApplication
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsworkspace/didhideapplicationmessage/application)*

@@ -1,6 +1,6 @@
 # configuration
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A copy of the configuration with which the web extension controller was initialized.

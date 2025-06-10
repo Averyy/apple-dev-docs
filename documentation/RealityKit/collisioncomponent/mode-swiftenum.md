@@ -10,6 +10,7 @@ A mode that dictates how much collision data is collected for a given entity.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -25,20 +26,9 @@ enum Mode
   A default collision object.
 - [CollisionComponent.Mode.trigger](collisioncomponent/mode-swift.enum/trigger.md)
   A trigger collision object.
-### Comparing collision modes
-- [static func == (CollisionComponent.Mode, CollisionComponent.Mode) -> Bool](collisioncomponent/mode-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](collisioncomponent/mode-swift.enum/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](collisioncomponent/mode-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](collisioncomponent/mode-swift.enum/hashvalue.md)
-  The hash value.
 ### Enumeration Cases
 - [CollisionComponent.Mode.colliding](collisioncomponent/mode-swift.enum/colliding.md)
   An environmental collision object.
-### Default Implementations
-- [Equatable Implementations](collisioncomponent/mode-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 # requestReview(in:)
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: method
 
 Tells StoreKit to ask the customer to rate or review the app, if appropriate, using the specified scene.

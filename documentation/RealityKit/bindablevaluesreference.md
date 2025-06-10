@@ -10,6 +10,7 @@ A reference to a bindable value of an animation.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -36,6 +37,7 @@ As the name indicates, this structure doesn’t exhibit copy-on-write behavior b
   A reference to a particular scene, entity, or property that animates.
 - [struct BindableValue](bindablevalue.md)
   The value of a bindable target.
+- [struct ComponentAnimatableData](componentanimatabledata.md)
 - [struct ParameterSet](parameterset.md)
   A reference to general-purpose entity parameters for animations.
 - [struct InternalBindPath](internalbindpath.md)

@@ -1,6 +1,6 @@
 # drop(while:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns a sequence by skipping the initial, consecutive elements that satisfy the given predicate.

@@ -1,6 +1,6 @@
 # SKTileMapNode
 
-**Framework**: Spritekit  
+**Framework**: SpriteKit  
 **Kind**: class
 
 A two-dimensional array of images.
@@ -97,6 +97,7 @@ To work with a tile map programmatically, you supply `SKTileMapNode` with a tile
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
@@ -120,4 +121,4 @@ To work with a tile map programmatically, you supply `SKTileMapNode` with a tile
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/sktilemapnode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/sktilemapnode)*

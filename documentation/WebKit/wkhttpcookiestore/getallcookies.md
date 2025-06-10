@@ -1,6 +1,6 @@
 # getAllCookies(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Fetches all stored cookies asynchronously and delivers them to the specified completion handler.

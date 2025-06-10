@@ -23,9 +23,9 @@ typealias CompletionHandler = ((any Error)?) -> Void
 
 - [func start() throws](chhapticengine/start.md)
   Synchronously starts the haptic engine.
-- [func start(completionHandler: CHHapticEngine.CompletionHandler?)](chhapticengine/start(completionhandler:).md)
+- [func start(completionHandler: (((any Error)?) -> Void)?)](chhapticengine/start(completionhandler:).md)
   Asynchronously starts the haptic engine.
-- [func stop(completionHandler: CHHapticEngine.CompletionHandler?)](chhapticengine/stop(completionhandler:).md)
+- [func stop(completionHandler: (((any Error)?) -> Void)?)](chhapticengine/stop(completionhandler:).md)
   Asynchronously stops the haptic engine and executes the completion handler once the engine has stopped.
 
 

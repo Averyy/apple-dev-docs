@@ -1,6 +1,6 @@
 # WKPreviewActionItemIdentifierOpen
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Opens the item.

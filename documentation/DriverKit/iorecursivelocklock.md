@@ -15,6 +15,14 @@
 void IORecursiveLockLock(struct IORecursiveLock * lock);
 ```
 
+#### Discussion
+
+Lock the recursive lock. If the lock is held by another thread, block waiting for its unlock. The lock may be taken recursively by the same thread, with a balanced number of calls to IORecursiveLockUnlock.
+
+## Parameters
+
+- `lock`: Pointer to the allocated lock.
+
 ## See Also
 
 - [dequeue_head](dequeue_head.md)

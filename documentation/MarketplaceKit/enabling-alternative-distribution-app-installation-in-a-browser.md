@@ -1,6 +1,6 @@
 # Enabling alternative distribution app installation in a browser
 
-**Framework**: Marketplacekit
+**Framework**: MarketplaceKit
 
 Add support for browser apps to install alternative distribution apps from websites.
 
@@ -63,4 +63,4 @@ In iOS or iPadOS 18.2 and later, development builds of browser apps with the def
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/enabling-alternative-distribution-app-installation-in-a-browser)*
+*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/enabling-alternative-distribution-app-installation-in-a-browser)*

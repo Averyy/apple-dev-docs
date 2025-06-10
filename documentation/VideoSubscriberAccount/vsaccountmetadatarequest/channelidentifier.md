@@ -1,6 +1,6 @@
 # channelIdentifier
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The channel identifier for the request.

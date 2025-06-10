@@ -1,6 +1,6 @@
 # replaceSubrange(_:with:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Replaces the specified subrange of elements with the given collection.

@@ -17,8 +17,6 @@ These fields also introduce the idea of a . For uncompressed audio, a frame is o
 
 > ❗ **Important**: The value of all these fields has different meaning for compressed and uncompressed audio. The meaning may not be easily deducible from the field name.
 
-The value of all these fields has different meaning for compressed and uncompressed audio. The meaning may not be easily deducible from the field name.
-
 The four new fields are:
 
 - [`Samples per packet`](sound_sample_description_version_1/samples_per_packet.md)

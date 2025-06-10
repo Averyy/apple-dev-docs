@@ -97,8 +97,6 @@ Completing multiple real-time audio threads by a common deadline is important, o
 
 > 💡 **Tip**:  Use Audio Workgroups API to optimize your audio threads’ performance, giving the operating system insight into active real-time threads, including auxiliary ones that other apps and Audio Unit plug-ins created. For further insights into audio workgroups, see [`Understanding Audio Workgroups`](understanding-audio-workgroups.md).
 
- Use Audio Workgroups API to optimize your audio threads’ performance, giving the operating system insight into active real-time threads, including auxiliary ones that other apps and Audio Unit plug-ins created. For further insights into audio workgroups, see [`Understanding Audio Workgroups`](understanding-audio-workgroups.md).
-
 ##### Analyze Backtrace Information
 
 With your app’s track, you can select the detail row where the overload occurs to see the corresponding backtrace in the inspector pane, as shown in the screenshot below. The backtrace information can take you to your code that’s causing audio performance issues.

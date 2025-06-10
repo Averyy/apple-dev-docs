@@ -1,6 +1,6 @@
 # text(languages:textContentType:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Creates a data type for text and information the scanner finds in text.

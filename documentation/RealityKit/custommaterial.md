@@ -10,6 +10,7 @@ A material that works with custom Metal shader functions.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -28,8 +29,6 @@ Custom, or programmable, materials allow you to leverage RealityKit’s existing
 Use a _surface shader _to calculate or specify all the material attributes that RealityKit uses to render your entity, such as [`baseColor`](custommaterial/basecolor-swift.property.md), [`normal`](custommaterial/normal-swift.property.md), and [`roughness`](custommaterial/roughness-swift.property.md). A  can offset the position of an entity’s vertices to change the size and shape of an entity. It can also change other per-vertex data, such as vertex color and UV texture coordinates, which define how RealityKit maps textures on to the model.
 
 > ❗ **Important**: For the Metal API documentation for custom material shader functions, see [`the Metal RealityKit APIs PDF`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-RealityKit-APIs.pdf).
-
-For the Metal API documentation for custom material shader functions, see [`the Metal RealityKit APIs PDF`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-RealityKit-APIs.pdf).
 
 For more information on creating custom materials and writing shader functions, see [`Modifying RealityKit rendering using custom materials`](modifying-realitykit-rendering-using-custom-materials.md).
 
@@ -139,13 +138,14 @@ For more information on creating custom materials and writing shader functions, 
 - [CustomMaterial.TextureCoordinateTransform](custommaterial/texturecoordinatetransform-swift.typealias.md)
   The object type that custom material use to hold UV texture coordinates.
 - [CustomMaterial.TriangleFillMode](custommaterial/trianglefillmode-swift.typealias.md)
+### Type Properties
+- [static var supportsMutableUniformsResources: Bool](custommaterial/supportsmutableuniformsresources.md)
+  Whether the current device supports resource storage within the WithMutableUniforms API.
 ### Enumerations
 - [CustomMaterial.Blending](custommaterial/blending-swift.enum.md)
   An object that specifies the transparency of an entity.
 - [CustomMaterial.LightingModel](custommaterial/lightingmodel-swift.enum.md)
   An object that defines how the framework renders a custom material.
-### Default Implementations
-- [Material Implementations](custommaterial/material-implementations.md)
 
 ## Relationships
 
@@ -155,6 +155,7 @@ For more information on creating custom materials and writing shader functions, 
 ## See Also
 
 - [struct ShaderGraphMaterial](shadergraphmaterial.md)
+  Create dynamic materials without Metal.
 - [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
 - [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)

@@ -1,6 +1,6 @@
 # Network States
 
-**Framework**: Webkitjs
+**Framework**: WebKit JS
 
 Possible values for the [`networkState`](htmlmediaelement/1633289-networkstate.md) property.
 

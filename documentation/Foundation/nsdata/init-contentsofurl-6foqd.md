@@ -28,8 +28,6 @@ A data object that contains the file’s data, or [`nil`](https://developer.appl
 
 > ❗ **Important**:  As this method runs synchronously and blocks the calling thread until it finishes, don’t invoke it from the main thread. Use file coordination or one of the nonblocking file-related APIs instead. For more information, see [`Improving performance and stability when accessing the file system`](improving-performance-and-stability-when-accessing-the-file-system.md).
 
- As this method runs synchronously and blocks the calling thread until it finishes, don’t invoke it from the main thread. Use file coordination or one of the nonblocking file-related APIs instead. For more information, see [`Improving performance and stability when accessing the file system`](improving-performance-and-stability-when-accessing-the-file-system.md).
-
 If you specify a malformed URL or the referenced location doesn’t exist on disk, the initializer fails and returns [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0). To handle such errors, use [`init(contentsOfURL:options:)`](nsdata/init(contentsofurl:options:)-95rht.md) instead.
 
 ## Parameters

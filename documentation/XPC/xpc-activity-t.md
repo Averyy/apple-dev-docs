@@ -1,6 +1,6 @@
 # xpc_activity_t
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: typealias
 
 An XPC activity object.

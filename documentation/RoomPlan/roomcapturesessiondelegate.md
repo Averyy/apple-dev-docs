@@ -9,7 +9,7 @@ A specification of important events in the room-scanning process.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -29,12 +29,12 @@ The room-capture session’s [`delegate`](roomcapturesession/delegate.md) proper
 
 ### Beginning a session
 - [func captureSession(RoomCaptureSession, didStartWith: RoomCaptureSession.Configuration)](roomcapturesessiondelegate/capturesession(_:didstartwith:).md)
-  session starts with a configuration
+  Notifies the delegate when the session starts.
 ### Updating a session
 - [func captureSession(RoomCaptureSession, didAdd: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didadd:).md)
-  session has newly added surfaces and objects
+  Notifies the delegate of newly added surfaces and objects.
 - [func captureSession(RoomCaptureSession, didRemove: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didremove:).md)
-  session has recently removed surfaces and objects
+  Notifies the delegate when the session removes surfaces and objects.
 - [func captureSession(RoomCaptureSession, didChange: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didchange:).md)
   Notifies the delegate when the session changes the dimensions and the transform properties of surfaces and objects.
 - [func captureSession(RoomCaptureSession, didUpdate: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didupdate:).md)
@@ -55,9 +55,9 @@ The room-capture session’s [`delegate`](roomcapturesession/delegate.md) proper
 - [func captureSession(RoomCaptureSession, didChange: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didchange:)-gv3t.md)
   Provides a default, blank implementation for when the capture session updates the dimensions and the transform properties during a scan.
 - [func captureSession(RoomCaptureSession, didProvide: RoomCaptureSession.Instruction)](roomcapturesessiondelegate/capturesession(_:didprovide:)-5hvhl.md)
-  session has user guidance instructions
+  Provides a default, blank implementation for when the capture session provides a user instruction.
 - [func captureSession(RoomCaptureSession, didEndWith: CapturedRoomData, error: (any Error)?)](roomcapturesessiondelegate/capturesession(_:didendwith:error:)-5f0mc.md)
-  session ends with either CapturedRoom or error
+  Provides a default, blank implementation for when the capture session provides raw scan results.
 
 ## See Also
 

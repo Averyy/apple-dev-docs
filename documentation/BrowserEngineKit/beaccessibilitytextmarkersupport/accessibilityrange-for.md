@@ -12,7 +12,6 @@ Returns the range for the text in a given accessibility marker range.
 - macOS ?+
 - tvOS 18.2+
 - visionOS 2.2+
-- watchOS 11.2+
 
 ## Declaration
 

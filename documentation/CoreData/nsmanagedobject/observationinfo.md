@@ -27,8 +27,6 @@ For more about key-value observation, see [`Key-Value Observing Programming Guid
 
 > ❗ **Important**:  You must not override this method.
 
- You must not override this method.
-
 ## See Also
 
 - [func didAccessValue(forKey: String?)](nsmanagedobject/didaccessvalue(forkey:).md)

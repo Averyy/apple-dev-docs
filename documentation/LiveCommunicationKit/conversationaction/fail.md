@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: method
 
-Reports the failed execution of the action.
+Reports that performing the action failed.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,11 @@ Reports the failed execution of the action.
 ```swift
 final func fail()
 ```
+
+## See Also
+
+- [func fulfill()](conversationaction/fulfill.md)
+  Reports that the action was successful.
 
 
 ---

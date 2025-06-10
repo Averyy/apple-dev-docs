@@ -1,6 +1,6 @@
 # createWebArchiveData(completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Creates a web archive of the web view’s current contents asynchronously.

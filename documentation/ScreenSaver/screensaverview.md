@@ -1,6 +1,6 @@
 # ScreenSaverView
 
-**Framework**: Screensaver  
+**Framework**: Screen Saver  
 **Kind**: class
 
 An abstract class that defines the interface for subclassers to interact with the screen saver infrastructure.
@@ -86,4 +86,4 @@ You can draw from your view’s [`draw(_:)`](screensaverview/draw(_:).md) method
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ScreenSaver/screensaverview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/screensaver/screensaverview)*

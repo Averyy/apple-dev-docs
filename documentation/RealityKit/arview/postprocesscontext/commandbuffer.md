@@ -10,6 +10,7 @@ The Metal command buffer for encoding the frame.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # space
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A constant that represents the Space bar.

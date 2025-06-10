@@ -30,6 +30,7 @@ The testing library defines a number of traits that you can add to test function
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Trait](trait.md)
 ### Conforming Types
 - [Bug](bug.md)

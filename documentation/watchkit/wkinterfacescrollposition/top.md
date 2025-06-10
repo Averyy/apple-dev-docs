@@ -1,6 +1,6 @@
 # WKInterfaceScrollPosition.top
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The top of the screen.

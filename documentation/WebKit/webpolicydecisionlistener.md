@@ -1,9 +1,9 @@
 # WebPolicyDecisionListener
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
-This protocol enables [`WebView`](webview.md) policy delegates to communicate with listener objects. A listener object conforming to this protocol is passed as one of the arguments to web view policy delegate methods.
+This protocol enables `WebView` policy delegates to communicate with listener objects. A listener object conforming to this protocol is passed as one of the arguments to web view policy delegate methods.
 
 **Availability**:
 - macOS 10.3+

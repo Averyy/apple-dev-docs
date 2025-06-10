@@ -1,6 +1,6 @@
 # onPencilDoubleTap(perform:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Adds an action to perform after the user double-taps their Apple Pencil.

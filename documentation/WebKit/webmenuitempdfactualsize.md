@@ -1,6 +1,6 @@
 # WebMenuItemPDFActualSize
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Display a PDF document at its original size.

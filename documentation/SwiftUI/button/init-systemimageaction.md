@@ -21,6 +21,10 @@ nonisolated
 init(_ titleKey: LocalizedStringKey, systemImage: String, action: @escaping @MainActor () -> Void)
 ```
 
+## Mentions
+
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+
 #### Discussion
 
 This initializer creates a [`Label`](label.md) view on your behalf, and treats the localized key similar to [`init(_:tableName:bundle:comment:)`](text/init(_:tablename:bundle:comment:).md). See [`Text`](text.md) for more information about localizing strings.

@@ -100,4 +100,4 @@ if let bundleIdentifier = Bundle.main.bundleIdentifier {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/optimizing-your-app-s-data-for-icloud-backup)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/optimizing-your-app-s-data-for-icloud-backup)*

@@ -1,6 +1,6 @@
 # Opening a File (Legacy)
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 ## Topics
 

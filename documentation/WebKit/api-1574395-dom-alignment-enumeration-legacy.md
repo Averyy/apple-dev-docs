@@ -1,6 +1,6 @@
 # DOM Alignment Enumeration (Legacy)
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 ## Topics
 

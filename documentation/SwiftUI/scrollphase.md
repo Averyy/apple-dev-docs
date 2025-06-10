@@ -53,6 +53,7 @@ SwiftUI provides you a value of this type when using the [`onScrollPhaseChange(_
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -33,6 +33,7 @@ Access the value of a key using the [`setSpecific(key:value:)`](dispatchqueue/se
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -24,7 +24,7 @@ All devices and formats support capture in the sRGB color space. Some devices an
 
 For best results, choose a color space before calling [`startRunning()`](avcapturesession/startrunning().md) on your capture session. Changing this property while a capture session is running requires a disruptive reconfiguration of the capture render pipeline—movie captures in progress ends immediately, unfulfilled photo requests abort, and video preview temporarily freeze.
 
-Before changing this property, you must call the [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md) method to obtain exclusive access to the capture device. Attempting to change this property without locking the device raises an exception ([`genericException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1412113-genericexception)).
+Before changing this property, you must call the [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md) method to obtain exclusive access to the capture device. Attempting to change this property without locking the device raises an exception ([`genericException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/genericException)).
 
 ## See Also
 

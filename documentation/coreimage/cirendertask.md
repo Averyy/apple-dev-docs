@@ -1,9 +1,9 @@
 # CIRenderTask
 
 **Framework**: Core Image  
-**Kind**: cl
+**Kind**: class
 
-A single render task issued in conjunction with [`CIRenderDestination`](cirenderdestination.md).
+A single render task.
 
 **Availability**:
 - iOS 11.0+
@@ -16,32 +16,41 @@ A single render task issued in conjunction with [`CIRenderDestination`](cirender
 ## Declaration
 
 ```swift
-class CIRenderTask : NSObject
+class CIRenderTask
 ```
 
 #### Overview
 
-A [`CIRenderTask`](cirendertask.md) object appears in Xcode Quick Look as a graph.
+A single render task issued in conjunction with [`CIRenderDestination`](cirenderdestination.md).
+
+A `CIRenderTask` object appears in Xcode Quick Look as a graph.
 
 ## Topics
 
 ### Instance Methods
-- [func waitUntilCompleted() -> CIRenderInfo](cirendertask/2881294-waituntilcompleted.md)
+- [func waitUntilCompleted() throws -> CIRenderInfo](cirendertask/waituntilcompleted.md)
   Waits until the [`CIRenderTask`](cirendertask.md) finishes and returns.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
-- [Generating an animation with a Core Image Render Destination](generating_an_animation_with_a_core_image_render_destination.md)
+- [Generating an animation with a Core Image Render Destination](generating-an-animation-with-a-core-image-render-destination.md)
   Animate a filtered image to a Metal view in a SwiftUI app using a Core Image Render Destination.
 - [class CIRenderDestination](cirenderdestination.md)
-  A specification for configuring all attributes of a render task's destination and issuing asynchronous render tasks.
+  A specification for configuring all attributes of a render task’s destination and issuing asynchronous render tasks.
 - [class CIRenderInfo](cirenderinfo.md)
-  An encapsulation of a render task's timing, passes, and pixels processed.
+  An encapsulation of a render task’s timing, passes, and pixels processed.
 - [enum CIRenderDestinationAlphaMode](cirenderdestinationalphamode.md)
   Different ways of representing alpha.
 

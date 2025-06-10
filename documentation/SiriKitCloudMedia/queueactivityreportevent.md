@@ -1,6 +1,6 @@
 # QueueActivityReportEvent
 
-**Framework**: Sirikitcloudmedia  
+**Framework**: SiriKit Cloud Media  
 **Kind**: typealias
 
 An event that occurs during content playback.
@@ -36,4 +36,4 @@ To customize which controls are available during playback of a piece of [`Conten
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SiriKitCloudMedia/queueactivityreportevent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sirikitcloudmedia/queueactivityreportevent)*

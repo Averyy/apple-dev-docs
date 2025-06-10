@@ -1,6 +1,6 @@
 # DOMEventExceptionCode
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: struct
 
 **Availability**:

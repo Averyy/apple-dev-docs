@@ -1,6 +1,6 @@
 # rotationRate
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The rotation rate of the device.

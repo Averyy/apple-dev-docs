@@ -24,8 +24,6 @@ static let didSaveObjectsNotification: Notification.Name
 
 > ❗ **Important**:  Use [`didSaveObjectIDsNotification`](nsmanagedobjectcontext/didsaveobjectidsnotification.md) instead of this notification.
 
- Use [`didSaveObjectIDsNotification`](nsmanagedobjectcontext/didsaveobjectidsnotification.md) instead of this notification.
-
 This notification’s `object` is the saved context. Don’t peform any asynchronous work or block the calling thread. [`NSManagedObjectContext`](nsmanagedobjectcontext.md) posts notifications to the same thread that creates it.
 
 The `userInfo` dictionary contains the inserted, updated, and deleted managed objects of the completed save. For the keys to access those objects, see [`NSManagedObjectContext.NotificationKey`](nsmanagedobjectcontext/notificationkey.md). Don’t capture the dictionary’s contents.
@@ -36,13 +34,13 @@ To safely use the provided managed objects on the current thread, create a new c
 
 - [static let didChangeObjectsNotification: Notification.Name](nsmanagedobjectcontext/didchangeobjectsnotification.md)
   A notification that posts when a context makes changes to its registered objects.
-- [static let NSManagedObjectContextObjectsDidChange: NSNotification.Name](../foundation/nsnotification/name/1506884-nsmanagedobjectcontextobjectsdid.md)
+- [static let NSManagedObjectContextObjectsDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextObjectsDidChange.md)
   A notification that posts when there are changes to context’s registered managed objects.
-- [static let NSManagedObjectContextDidSave: NSNotification.Name](../foundation/nsnotification/name/1506380-nsmanagedobjectcontextdidsave.md)
+- [static let NSManagedObjectContextDidSave: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextDidSave.md)
   A notification that posts after a context finishes writing unsaved changes.
 - [static let willSaveObjectsNotification: Notification.Name](nsmanagedobjectcontext/willsaveobjectsnotification.md)
   A notification that posts before a context writes pending changes to disk.
-- [static let NSManagedObjectContextWillSave: NSNotification.Name](../foundation/nsnotification/name/1506816-nsmanagedobjectcontextwillsave.md)
+- [static let NSManagedObjectContextWillSave: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextWillSave.md)
   A notification that posts before a context writes unsaved changes.
 - [let NSInsertedObjectsKey: String](nsinsertedobjectskey.md)
   A key for the set of objects that were inserted into the context.

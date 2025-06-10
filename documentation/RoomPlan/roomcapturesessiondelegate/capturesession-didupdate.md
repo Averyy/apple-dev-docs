@@ -10,7 +10,7 @@ Notifies the delegate when the session updates the scan results.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -30,9 +30,9 @@ The `room` structure contains all surfaces/objects in the captured room regardle
 ## See Also
 
 - [func captureSession(RoomCaptureSession, didAdd: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didadd:).md)
-  session has newly added surfaces and objects
+  Notifies the delegate of newly added surfaces and objects.
 - [func captureSession(RoomCaptureSession, didRemove: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didremove:).md)
-  session has recently removed surfaces and objects
+  Notifies the delegate when the session removes surfaces and objects.
 - [func captureSession(RoomCaptureSession, didChange: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didchange:).md)
   Notifies the delegate when the session changes the dimensions and the transform properties of surfaces and objects.
 

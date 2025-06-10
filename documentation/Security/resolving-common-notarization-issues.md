@@ -184,4 +184,4 @@ After you enable Skip Install on all dependencies, you can use the Xcode notariz
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/resolving-common-notarization-issues)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/resolving-common-notarization-issues)*

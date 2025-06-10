@@ -1,6 +1,6 @@
 # Movie header atom ('mvhd')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that specifies the characteristics of an entire QuickTime movie.

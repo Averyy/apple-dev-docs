@@ -1,6 +1,6 @@
 # hybrid(elevation:pointsOfInterest:showsTraffic:)
 
-**Framework**: Mapkit  
+**Framework**: MapKit  
 **Kind**: method
 
 Creates a hybrid map style that includes the elevation, point of interest, and traffic characteristics you specify.

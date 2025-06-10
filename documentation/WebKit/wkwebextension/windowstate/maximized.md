@@ -1,6 +1,6 @@
 # WKWebExtension.WindowState.maximized
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates a window is maximized.

@@ -42,6 +42,8 @@ The AudioToolbox framework provides interfaces for recording, playback, and stre
   Play short sounds or trigger a vibration effect on iOS devices with the appropriate hardware.
 - [Music Player](music-player.md)
   Create and play a sequence of tracks, and manage aspects of playback in response to standard events.
+- [Anchoring sound to a window or volume](spatializing-sound-from-a-uiscene.md)
+  Provide unique app experiences by attaching sounds to windows and volumes in 3D space.
 ### Audio Files and Formats
 - [Audio Format Services](audio-format-services.md)
   Access information about audio formats and codecs.
@@ -81,8 +83,68 @@ The AudioToolbox framework provides interfaces for recording, playback, and stre
 - [AudioToolbox Data Types](audiotoolbox-data-types.md)
 ### Macros
 - [Macros](audiotoolbox-macros.md)
+### Protocols
+- [protocol SpatialAudioExperience](spatialaudioexperience.md)
+  Configure an audio stream for spatial computing.
+### Structures
+- [struct AutomaticSpatialAudio](automaticspatialaudio.md)
+  A spatial audio experience determined by the system.
+- [struct BypassedSpatialAudio](bypassedspatialaudio.md)
+  An experience in which the system does not apply spatial processing to the audio stream.
+- [struct FixedSpatialAudio](fixedspatialaudio.md)
+  A spatial experience that does not take user motion into account.
+- [struct HeadTrackedSpatialAudio](headtrackedspatialaudio.md)
+  A spatial experience that takes user motion into account.
 ### Variables
+- [var kAUAudioMixParameter_RemixAmount: AudioUnitParameterID](kauaudiomixparameter_remixamount.md)
+- [var kAUAudioMixParameter_Style: AudioUnitParameterID](kauaudiomixparameter_style.md)
+- [var kAUAudioMixProperty_EnableSpatialization: AudioUnitPropertyID](kauaudiomixproperty_enablespatialization.md)
+- [var kAUAudioMixProperty_SpatialAudioMixMetadata: AudioUnitPropertyID](kauaudiomixproperty_spatialaudiomixmetadata.md)
+- [var kAudioCodecContentSource_AV_Spatial_Live: Int32](kaudiocodeccontentsource_av_spatial_live.md)
+- [var kAudioCodecContentSource_AV_Spatial_Offline: Int32](kaudiocodeccontentsource_av_spatial_offline.md)
+- [var kAudioCodecContentSource_AV_Traditional_Live: Int32](kaudiocodeccontentsource_av_traditional_live.md)
+- [var kAudioCodecContentSource_AV_Traditional_Offline: Int32](kaudiocodeccontentsource_av_traditional_offline.md)
+- [var kAudioCodecContentSource_AppleAV_Spatial_Live: Int32](kaudiocodeccontentsource_appleav_spatial_live.md)
+- [var kAudioCodecContentSource_AppleAV_Spatial_Offline: Int32](kaudiocodeccontentsource_appleav_spatial_offline.md)
+- [var kAudioCodecContentSource_AppleAV_Traditional_Live: Int32](kaudiocodeccontentsource_appleav_traditional_live.md)
+- [var kAudioCodecContentSource_AppleAV_Traditional_Offline: Int32](kaudiocodeccontentsource_appleav_traditional_offline.md)
+- [var kAudioCodecContentSource_AppleCapture_Spatial: Int32](kaudiocodeccontentsource_applecapture_spatial.md)
+- [var kAudioCodecContentSource_AppleCapture_Spatial_Enhanced: Int32](kaudiocodeccontentsource_applecapture_spatial_enhanced.md)
+- [var kAudioCodecContentSource_AppleCapture_Traditional: Int32](kaudiocodeccontentsource_applecapture_traditional.md)
+- [var kAudioCodecContentSource_AppleMusic_Spatial: Int32](kaudiocodeccontentsource_applemusic_spatial.md)
+- [var kAudioCodecContentSource_AppleMusic_Traditional: Int32](kaudiocodeccontentsource_applemusic_traditional.md)
+- [var kAudioCodecContentSource_ApplePassthrough: Int32](kaudiocodeccontentsource_applepassthrough.md)
+- [var kAudioCodecContentSource_Capture_Spatial: Int32](kaudiocodeccontentsource_capture_spatial.md)
+- [var kAudioCodecContentSource_Capture_Spatial_Enhanced: Int32](kaudiocodeccontentsource_capture_spatial_enhanced.md)
+- [var kAudioCodecContentSource_Capture_Traditional: Int32](kaudiocodeccontentsource_capture_traditional.md)
+- [var kAudioCodecContentSource_Music_Spatial: Int32](kaudiocodeccontentsource_music_spatial.md)
+- [var kAudioCodecContentSource_Music_Traditional: Int32](kaudiocodeccontentsource_music_traditional.md)
+- [var kAudioCodecContentSource_Passthrough: Int32](kaudiocodeccontentsource_passthrough.md)
+- [var kAudioCodecContentSource_Reserved: Int32](kaudiocodeccontentsource_reserved.md)
+- [var kAudioCodecContentSource_Unspecified: Int32](kaudiocodeccontentsource_unspecified.md)
+- [var kAudioCodecDynamicRangeControlConfiguration_Capture: UInt32](kaudiocodecdynamicrangecontrolconfiguration_capture.md)
+- [var kAudioCodecDynamicRangeControlConfiguration_Movie: UInt32](kaudiocodecdynamicrangecontrolconfiguration_movie.md)
+- [var kAudioCodecDynamicRangeControlConfiguration_Music: UInt32](kaudiocodecdynamicrangecontrolconfiguration_music.md)
+- [var kAudioCodecDynamicRangeControlConfiguration_None: UInt32](kaudiocodecdynamicrangecontrolconfiguration_none.md)
+- [var kAudioCodecDynamicRangeControlConfiguration_Speech: UInt32](kaudiocodecdynamicrangecontrolconfiguration_speech.md)
+- [var kAudioCodecPropertyASPFrequency: AudioCodecPropertyID](kaudiocodecpropertyaspfrequency.md)
+- [var kAudioCodecPropertyContentSource: AudioCodecPropertyID](kaudiocodecpropertycontentsource.md)
+- [var kAudioCodecPropertyDynamicRangeControlConfiguration: AudioCodecPropertyID](kaudiocodecpropertydynamicrangecontrolconfiguration.md)
 - [var kAudioUnitErr_MultipleVoiceProcessors: OSStatus](kaudiouniterr_multiplevoiceprocessors.md)
+- [var kAudioUnitSubType_AUAudioMix: UInt32](kaudiounitsubtype_auaudiomix.md)
+### Functions
+- [func AudioConverterFillComplexBufferRealtimeSafe(AudioConverterRef, AudioConverterComplexInputDataProcRealtimeSafe, UnsafeMutableRawPointer?, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioBufferList>, UnsafeMutablePointer<AudioStreamPacketDescription>?) -> OSStatus](audioconverterfillcomplexbufferrealtimesafe(_:_:_:_:_:_:).md)
+- [func AudioConverterFillComplexBufferWithPacketDependencies(AudioConverterRef, AudioConverterComplexInputDataProc, UnsafeMutableRawPointer?, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioBufferList>, UnsafeMutablePointer<AudioStreamPacketDescription>?, UnsafeMutablePointer<AudioStreamPacketDependencyDescription>) -> OSStatus](audioconverterfillcomplexbufferwithpacketdependencies(_:_:_:_:_:_:_:).md)
+- [func AudioFileWritePacketsWithDependencies(AudioFileID, Bool, UInt32, UnsafePointer<AudioStreamPacketDescription>?, UnsafePointer<AudioStreamPacketDependencyDescription>, Int64, UnsafeMutablePointer<UInt32>, UnsafeRawPointer) -> OSStatus](audiofilewritepacketswithdependencies(_:_:_:_:_:_:_:_:).md)
+- [func AudioServicesPlayAlertSound(SystemSoundID, spatialExperience: any SpatialAudioExperience) async](audioservicesplayalertsound(_:spatialexperience:).md)
+  Play an alert sound with the provided spatial audio experience.
+- [func AudioServicesPlaySystemSound(SystemSoundID, spatialExperience: any SpatialAudioExperience) async](audioservicesplaysystemsound(_:spatialexperience:).md)
+  Play a system sound with the provided spatial audio experience.
+### Type Aliases
+- [typealias AudioConverterComplexInputDataProcRealtimeSafe](audioconvertercomplexinputdataprocrealtimesafe.md)
+### Enumerations
+- [enum AUAudioMixRenderingStyle](auaudiomixrenderingstyle.md)
+- [enum SpatialAudioExperiences](spatialaudioexperiences.md)
 
 
 ---

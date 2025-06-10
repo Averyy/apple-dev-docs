@@ -1,12 +1,12 @@
 # Configuring Device Management
 
-**Framework**: Authenticationservices
+**Framework**: Authentication Services
 
 Configure Device Management to support device and user registration for platform SSO.
 
 #### Overview
 
-Enable platform SSO through the `com.apple.extensiblesso` payload in [`Device Management`](https://developer.apple.com/documentation/DeviceManagement), for redirect extensions only, because these extensions are designed for modern authentication. The [`ExtensibleSingleSignOn.PlatformSSO`](https://developer.apple.com/documentation/devicemanagement/extensiblesinglesignon/platformsso) dictionary in the payload contains the options to configure platform SSO. These options include choosing which key or keys to use, assigning group membership, creating users during login, and including support for registering devices and users.
+Enable platform SSO through the `com.apple.extensiblesso` payload in [`Device Management`](https://developer.apple.com/documentation/DeviceManagement), for redirect extensions only, because these extensions are designed for modern authentication. The [`ExtensibleSingleSignOn.PlatformSSO`](https://developer.apple.com/documentation/DeviceManagement/ExtensibleSingleSignOn/PlatformSSO-data.dictionary) dictionary in the payload contains the options to configure platform SSO. These options include choosing which key or keys to use, assigning group membership, creating users during login, and including support for registering devices and users.
 
 > **Note**:  The extension data and registration token is user-specific if there’s a user-scoped `com.apple.extensiblesso` MDM payload for the same extension without the `PlatformSSO` dictionary.
 
@@ -82,4 +82,4 @@ For more information, see [`Registering devices and users`](registering-devices-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/configuring-device-management)*
+*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/configuring-device-management)*

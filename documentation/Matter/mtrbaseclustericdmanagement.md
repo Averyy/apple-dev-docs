@@ -64,7 +64,7 @@ Allows servers to ensure that listed clients are notified when a server is avail
 - [func subscribeAttributeRegisteredClients(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributeregisteredclients(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeUserActiveModeTriggerHint(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributeuseractivemodetriggerhint(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeUserActiveModeTriggerInstruction(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributeuseractivemodetriggerinstruction(with:subscriptionestablished:reporthandler:).md)
-- [func unregisterClient(with: MTRICDManagementClusterUnregisterClientParams, completion: MTRStatusCompletion)](mtrbaseclustericdmanagement/unregisterclient(with:completion:).md)
+- [func unregisterClient(with: MTRICDManagementClusterUnregisterClientParams, completion: ((any Error)?) -> Void)](mtrbaseclustericdmanagement/unregisterclient(with:completion:).md)
   Command UnregisterClient
 ### Type Methods
 - [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeacceptedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)

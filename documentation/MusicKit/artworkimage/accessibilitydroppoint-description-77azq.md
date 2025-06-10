@@ -1,6 +1,6 @@
 # accessibilityDropPoint(_:description:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 The point an assistive technology should use to end a drag interaction.

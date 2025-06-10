@@ -23,12 +23,12 @@ struct PixelBuffer<Format> where Format : PixelFormat
 ## Mentions
 
 - [Enhancing image contrast with histogram manipulation](enhancing-image-contrast-with-histogram-manipulation.md)
-- [Applying vImage operations to regions of interest](applying-vimage-operations-to-regions-of-interest.md)
 - [Building a basic image conversion workflow](building-a-basic-image-conversion-workflow.md)
+- [Applying vImage operations to regions of interest](applying-vimage-operations-to-regions-of-interest.md)
+- [Optimizing image-processing performance](optimizing-image-processing-performance.md)
 - [Converting chroma-subsampled images](converting-chroma-subsampled-images.md)
 - [Converting bitmap data between Core Graphics images and vImage buffers](converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
 - [Applying color transforms to images with a multidimensional lookup table](applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
-- [Optimizing image-processing performance](optimizing-image-processing-performance.md)
 
 #### Overview
 
@@ -116,6 +116,9 @@ vImage pixel buffers manage their memory, therefore, you don’t need to call [`
   Extract, flatten, permute, and overwrite the individual color channels of a pixel buffer.
 - [Applying arithmetic operations](applying-arithmetic-operations.md)
   Multiply the pixel values of a buffer by scalar values or matrices.
+### Instance Properties
+- [var bytesPerRow: Int](vimage/pixelbuffer/bytesperrow.md)
+  The width, in bytes, of the underlying memory including any additional row byte padding.
 ### Instance Methods
 - [func applyLookup([Pixel_16U], destination: vImage.PixelBuffer<vImage.Planar16U>)](vimage/pixelbuffer/applylookup(_:destination:)-3yi7i.md)
 - [func applyLookup([Pixel_8], destination: vImage.PixelBuffer<vImage.Planar8>)](vimage/pixelbuffer/applylookup(_:destination:)-6498m.md)
@@ -126,6 +129,8 @@ vImage pixel buffers manage their memory, therefore, you don’t need to call [`
   Applies a morphology operation to the buffer.
 - [func convolve(with: vImage.ConvolutionKernel2D<Float>, bias: Float?, edgeMode: vImage.EdgeMode<Pixel_8888>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/convolve(with:bias:edgemode:destination:)-7no5n.md)
 - [func separableConvolve(horizontalKernel: [Float], verticalKernel: [Float], bias: Float, edgeMode: vImage.EdgeMode<Pixel_8888>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/separableconvolve(horizontalkernel:verticalkernel:bias:edgemode:destination:)-15dhm.md)
+- [func withBNNSTensor<R>((BNNSTensor) throws -> R) rethrows -> R](vimage/pixelbuffer/withbnnstensor(_:).md)
+  Calls the given closure with a pointer to a BNNS tensor that shares memory with the pixel buffer.
 ### Default Implementations
 - [AccelerateBuffer Implementations](vimage/pixelbuffer/acceleratebuffer-implementations.md)
 - [AccelerateMatrixBuffer Implementations](vimage/pixelbuffer/acceleratematrixbuffer-implementations.md)

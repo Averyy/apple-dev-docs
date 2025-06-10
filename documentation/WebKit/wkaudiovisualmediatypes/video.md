@@ -1,6 +1,6 @@
 # video
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Media types that contain video require a user gesture to begin playing.

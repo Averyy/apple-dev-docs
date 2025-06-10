@@ -1,6 +1,6 @@
 # setCancellationHandler(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Sets a closure the session calls when it’s canceled.
@@ -16,14 +16,13 @@ Sets a closure the session calls when it’s canceled.
 ## Declaration
 
 ```swift
+@preconcurrency
 func setCancellationHandler(_ cancellationHandler: @escaping (XPCRichError) -> Void)
 ```
 
 #### Discussion
 
 > ❗ **Important**:  Only call this method on an inactive session.
-
- Only call this method on an inactive session.
 
 ## Parameters
 

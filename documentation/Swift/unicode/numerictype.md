@@ -54,6 +54,7 @@ Some letterlike scalars used in numeric systems, such as Greek or Latin letters,
 - [Equatable](equatable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

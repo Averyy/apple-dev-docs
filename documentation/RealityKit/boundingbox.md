@@ -10,6 +10,7 @@ An axis-aligned bounding box (AABB).
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -69,25 +70,29 @@ struct BoundingBox
 ### Comparing bounding boxes
 - [static func == (BoundingBox, BoundingBox) -> Bool](boundingbox/==(_:_:).md)
   Indicates whether two bounding boxes are equal.
-- [static func != (Self, Self) -> Bool](boundingbox/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [func hash(into: inout Hasher)](boundingbox/hash(into:).md)
   Hashes the essential components of the bounding box by feeding them into the given hash function.
-- [var hashValue: Int](boundingbox/hashvalue.md)
-  The hash value.
 ### Initializers
-- [init(Rect3D)](boundingbox/init(_:).md)
-### Default Implementations
-- [Equatable Implementations](boundingbox/equatable-implementations.md)
+- [init(_:)](boundingbox/init(_:).md)
+### Instance Methods
+- [func contains(_:)](boundingbox/contains(_:).md)
+  Checks whether the bounding box contains the specified bounds.
+- [func formUnion(_:)](boundingbox/formunion(_:).md)
+  Expands the bounding box to contain the specified bounds.
+- [func union(_:)](boundingbox/union(_:).md)
+  Creates a bounding box containing the current bounds and the specified bounds.
 
 ## Relationships
 
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Copyable](../Swift/Copyable.md)
+- [Decodable](../Swift/Decodable.md)
+- [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

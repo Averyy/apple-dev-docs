@@ -19,8 +19,6 @@ If your app needs to read calendar events in addition to creating them, use [`NS
 
 > ❗ **Important**:  This key is required if your app uses APIs that write to the person’s calendar data.
 
- This key is required if your app uses APIs that write to the person’s calendar data.
-
 ## See Also
 
 - [NSCalendarsFullAccessUsageDescription](information-property-list/nscalendarsfullaccessusagedescription.md)

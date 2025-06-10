@@ -1,6 +1,6 @@
 # Customizing Scribble with Interactions
 
-**Framework**: Pencilkit
+**Framework**: PencilKit
 
 Enable writing on a non-text-input view by adding interactions.
 
@@ -37,4 +37,4 @@ This sample code project must be run on a physical device with Apple Pencil.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PencilKit/customizing-scribble-with-interactions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/pencilkit/customizing-scribble-with-interactions)*

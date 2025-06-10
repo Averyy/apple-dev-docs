@@ -1,6 +1,6 @@
 # first(where:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns the first element of the sequence that satisfies the given predicate.

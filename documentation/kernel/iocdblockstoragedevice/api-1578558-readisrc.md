@@ -1,0 +1,18 @@
+# readISRC
+
+**Framework**: Kernel  
+**Kind**: instm
+
+**Availability**:
+- macOS 10.11.4+
+
+## Declaration
+
+```swift
+virtual IOReturn readISRC(UInt8 track, CDISRC isrc);
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/iocdblockstoragedevice/1578558-readisrc)*

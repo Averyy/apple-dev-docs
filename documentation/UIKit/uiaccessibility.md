@@ -187,6 +187,26 @@ struct UIAccessibility
   The types of system Zoom that can be in effect.
 - [UIAccessibility.DirectTouchOptions](uiaccessibility/directtouchoptions.md)
   Constants that configure how VoiceOver produces audio for direct touch areas.
+### Structures
+- [UIAccessibility.AnnouncementDidFinishMessage](uiaccessibility/announcementdidfinishmessage.md)
+- [UIAccessibility.AssistiveTouchStatusDidChangeMessage](uiaccessibility/assistivetouchstatusdidchangemessage.md)
+- [UIAccessibility.BoldTextStatusDidChangeMessage](uiaccessibility/boldtextstatusdidchangemessage.md)
+- [UIAccessibility.ButtonShapesEnabledStatusDidChangeMessage](uiaccessibility/buttonshapesenabledstatusdidchangemessage.md)
+- [UIAccessibility.ClosedCaptioningStatusDidChangeMessage](uiaccessibility/closedcaptioningstatusdidchangemessage.md)
+- [UIAccessibility.DarkerSystemColorsStatusDidChangeMessage](uiaccessibility/darkersystemcolorsstatusdidchangemessage.md)
+- [UIAccessibility.ElementFocusedMessage](uiaccessibility/elementfocusedmessage.md)
+- [UIAccessibility.GrayscaleStatusDidChangeMessage](uiaccessibility/grayscalestatusdidchangemessage.md)
+- [UIAccessibility.GuidedAccessStatusDidChangeMessage](uiaccessibility/guidedaccessstatusdidchangemessage.md)
+- [UIAccessibility.HearingDevicePairedEarDidChangeMessage](uiaccessibility/hearingdevicepairedeardidchangemessage.md)
+- [UIAccessibility.InvertColorsStatusDidChangeMessage](uiaccessibility/invertcolorsstatusdidchangemessage.md)
+- [UIAccessibility.MonoAudioStatusDidChangeMessage](uiaccessibility/monoaudiostatusdidchangemessage.md)
+- [UIAccessibility.ReduceMotionStatusDidChangeMessage](uiaccessibility/reducemotionstatusdidchangemessage.md)
+- [UIAccessibility.ReduceTransparencyStatusDidChangeMessage](uiaccessibility/reducetransparencystatusdidchangemessage.md)
+- [UIAccessibility.ShakeToUndoDidChangeMessage](uiaccessibility/shaketoundodidchangemessage.md)
+- [UIAccessibility.SpeakScreenStatusDidChangeMessage](uiaccessibility/speakscreenstatusdidchangemessage.md)
+- [UIAccessibility.SpeakSelectionStatusDidChangeMessage](uiaccessibility/speakselectionstatusdidchangemessage.md)
+- [UIAccessibility.SwitchControlStatusDidChangeMessage](uiaccessibility/switchcontrolstatusdidchangemessage.md)
+- [UIAccessibility.VoiceOverStatusDidChangeMessage](uiaccessibility/voiceoverstatusdidchangemessage.md)
 
 ## Relationships
 

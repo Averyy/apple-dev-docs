@@ -25,7 +25,7 @@ A range representation of the value.
 
 #### Discussion
 
-This method treats the value as a JavaScript object, reading the values of its `location` and `length` properties using the [`toDouble()`](jsvalue/todouble().md) method and creating a [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange) structure from the result. If the value is not a JavaScript object or does not have the appropriate properties, the resulting range is invalid.
+This method treats the value as a JavaScript object, reading the values of its `location` and `length` properties using the [`toDouble()`](jsvalue/todouble().md) method and creating a [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange-c.struct) structure from the result. If the value is not a JavaScript object or does not have the appropriate properties, the resulting range is invalid.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # optionsPageURL
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The URL of the extension’s options page, if the extension has one.

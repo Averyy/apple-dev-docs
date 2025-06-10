@@ -39,12 +39,6 @@ struct ProjectiveTransform3D
   Creates a projective transform from the specified pose structure.
 - [init(scale: Size3D, rotation: Rotation3D, translation: Vector3D)](projectivetransform3d/init(scale:rotation:translation:)-4h5wm.md)
   Creates a projective transform from the specified scale, rotate, and translate transforms.
-- [init(scale: Size3D)](projectivetransform3d/init(scale:).md)
-  Creates a projective transform from the specified scale transform.
-- [init(rotation: Rotation3D)](projectivetransform3d/init(rotation:).md)
-  Creates a projective transform from the specified rotate transform.
-- [init(translation: Vector3D)](projectivetransform3d/init(translation:)-7l5gj.md)
-  Creates a projective transform from the specified translate transform.
 - [init(shear: AxisWithFactors)](projectivetransform3d/init(shear:).md)
   Creates a projective transform from the specified shear transform.
 - [init(leftTangent: Double, rightTangent: Double, topTangent: Double, bottomTangent: Double, nearZ: Double, farZ: Double, reverseZ: Bool)](projectivetransform3d/init(lefttangent:righttangent:toptangent:bottomtangent:nearz:farz:reversez:).md)
@@ -62,8 +56,6 @@ struct ProjectiveTransform3D
   The translation component of the projective transform.
 - [var matrix: simd_double4x4](projectivetransform3d/matrix.md)
   The projective transform’s underlying matrix.
-- [static let identity: ProjectiveTransform3D](projectivetransform3d/identity.md)
-  The identity transform.
 ### Transforming a 3D projective transform structure
 - [func sheared(AxisWithFactors) -> ProjectiveTransform3D](projectivetransform3d/sheared(_:).md)
   Returns a projective transform that results from shearing over an axis by shear factors for the other two axes.
@@ -71,8 +63,6 @@ struct ProjectiveTransform3D
   Constants that describe the axis of a shear transform.
 - [struct Axis3D](axis3d.md)
   Constants that describe an axis.
-- [func concatenating(ProjectiveTransform3D) -> ProjectiveTransform3D](projectivetransform3d/concatenating(_:).md)
-  Returns a projective transformation matrix that results from concatenating two existing projective transforms.
 - [func flip(along: Axis3D)](projectivetransform3d/flip(along:).md)
   Flips a projective transform along the specified axis.
 - [func flipped(along: Axis3D) -> ProjectiveTransform3D](projectivetransform3d/flipped(along:).md)
@@ -87,14 +77,6 @@ struct ProjectiveTransform3D
   Returns a Boolean value that indicates whether the transform scales equally over the specified dimensions.
 - [var isAffine: Bool](projectivetransform3d/isaffine.md)
   A Boolean value that indicates whether the transform is affine.
-- [var isIdentity: Bool](projectivetransform3d/isidentity.md)
-  A Boolean value that indicates whether the transform is the identity transform.
-- [var isRectilinear: Bool](projectivetransform3d/isrectilinear.md)
-  A Boolean value that indicates whether the transform is rectilinear.
-- [var isTranslation: Bool](projectivetransform3d/istranslation.md)
-  A Boolean value that indicates whether the transform contains only a translation.
-- [var isUniform: Bool](projectivetransform3d/isuniform.md)
-  A Boolean value that indicates whether the transform scales equally over all dimensions.
 - [var isInvertible: Bool](projectivetransform3d/isinvertible.md)
   Returns a Boolean value that indicates whether the transform is invertible.
 ### Comparing values
@@ -118,12 +100,16 @@ struct ProjectiveTransform3D
   Creates a projective transform from the specified scale, rotate, and translate transforms.
 - [init(fovyRadians: Double, aspectRatio: Double, nearZ: Double, farZ: Double, reverseZ: Bool)](projectivetransform3d/init(fovyradians:aspectratio:nearz:farz:reversez:).md)
   Returns a projective transform with right-hand-side perspective and optional reverse-z.
-- [init(translation: Size3D)](projectivetransform3d/init(translation:)-4oiao.md)
+- [init(translation: Size3D)](projectivetransform3d/init(translation:).md)
 - [init(fovyRadians: Double, aspectRatio: Double, nearZ: Double, farZ: Double)](projectivetransform3d/init(fovyradians:aspectratio:nearz:farz:).md)
+### Initializers
+- [init(ProjectiveTransform3DFloat)](projectivetransform3d/init(_:)-7nv9f.md)
+  Returns a double-precision projective transformation from a single-precision projective transformation.
 ### Default Implementations
 - [CustomReflectable Implementations](projectivetransform3d/customreflectable-implementations.md)
-- [Scalable3D Implementations](projectivetransform3d/scalable3d-implementations.md)
-- [Shearable3D Implementations](projectivetransform3d/shearable3d-implementations.md)
+- [Scalable3DProtocol Implementations](projectivetransform3d/scalable3dprotocol-implementations.md)
+- [Shearable3DProtocol Implementations](projectivetransform3d/shearable3dprotocol-implementations.md)
+- [Transform3DProtocol Implementations](projectivetransform3d/transform3dprotocol-implementations.md)
 
 ## Relationships
 
@@ -137,15 +123,25 @@ struct ProjectiveTransform3D
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Rotatable3D](rotatable3d.md)
+- [Rotatable3DProtocol](rotatable3dprotocol.md)
 - [Scalable3D](scalable3d.md)
+- [Scalable3DProtocol](scalable3dprotocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Shearable3D](shearable3d.md)
+- [Shearable3DProtocol](shearable3dprotocol.md)
+- [SpatialTypeProtocol](spatialtypeprotocol.md)
+- [Transform3DProtocol](transform3dprotocol.md)
 - [Translatable3D](translatable3d.md)
+- [Translatable3DProtocol](translatable3dprotocol.md)
 
 ## See Also
 
 - [struct AffineTransform3D](affinetransform3d.md)
   A 3D affine transformation matrix.
+- [struct AffineTransform3DFloat](affinetransform3dfloat.md)
+- [struct ProjectiveTransform3DFloat](projectivetransform3dfloat.md)
+  A single-precision 3D projective transformation matrix.
 
 
 ---

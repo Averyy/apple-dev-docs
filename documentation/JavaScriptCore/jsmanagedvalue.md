@@ -1,6 +1,6 @@
 # JSManagedValue
 
-**Framework**: Javascriptcore  
+**Framework**: JavaScriptCore  
 **Kind**: class
 
 A JavaScript value with conditional retain behavior to provide automatic memory management.
@@ -65,4 +65,4 @@ However, if neither of these conditions is true, the managed value sets its [`va
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/JavaScriptCore/jsmanagedvalue)*
+*[View on Apple Developer](https://developer.apple.com/documentation/javascriptcore/jsmanagedvalue)*

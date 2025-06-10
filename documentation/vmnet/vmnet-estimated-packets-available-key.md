@@ -1,6 +1,6 @@
 # vmnet_estimated_packets_available_key
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: var
 
 **Availability**:
@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-var vmnet_estimated_packets_available_key: UnsafePointer<CChar>
+let vmnet_estimated_packets_available_key: UnsafePointer<CChar>
 ```
 
 #### Discussion

@@ -1,6 +1,6 @@
 # analysis
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The results of analyzing an image for items that people can interact with.

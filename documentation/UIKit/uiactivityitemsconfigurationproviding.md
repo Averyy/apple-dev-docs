@@ -45,6 +45,7 @@ When one of these interactions happens, the system asks your view controller for
 - [UIAlertController](uialertcontroller.md)
 - [UIAlertView](uialertview.md)
 - [UIApplication](uiapplication.md)
+- [UIBackgroundExtensionView](uibackgroundextensionview.md)
 - [UIButton](uibutton.md)
 - [UICalendarView](uicalendarview.md)
 - [UICloudSharingController](uicloudsharingcontroller.md)

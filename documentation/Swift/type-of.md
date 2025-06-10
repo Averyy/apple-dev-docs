@@ -17,7 +17,7 @@ Returns the dynamic type of a value.
 ## Declaration
 
 ```swift
-func type<T, Metatype>(of value: T) -> Metatype
+func type<T, Metatype>(of value: borrowing T) -> Metatype where T : ~Copyable, T : ~Escapable
 ```
 
 #### Return Value
@@ -112,10 +112,6 @@ betterPrintGenericInfo(stringAsP)
   A representation of the substructure and display style of an instance of any type.
 - [struct ObjectIdentifier](objectidentifier.md)
   A unique identifier for a class instance or metatype.
-- [func == ((any Any.Type)?, (any Any.Type)?) -> Bool](==(_:_:)-w1qf.md)
-  Returns a Boolean value indicating whether two types are identical.
-- [func != ((any Any.Type)?, (any Any.Type)?) -> Bool](!=(_:_:)-6s4z0.md)
-  Returns a Boolean value indicating whether two types are not identical.
 
 
 ---

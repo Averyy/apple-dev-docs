@@ -1,6 +1,6 @@
 # isAbsoluteAltitudeAvailable()
 
-**Framework**: Coremotion  
+**Framework**: Core Motion  
 **Kind**: method
 
 Returns a Boolean value indicating whether the current device reports changes in the absolute altitude.

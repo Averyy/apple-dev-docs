@@ -1,6 +1,6 @@
 # keyValueObservingExpectation(for:keyPath:expectedValue:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Creates an expectation that uses Key-Value Observing to observe a value until it matches an expected value.

@@ -17,6 +17,11 @@
 static var errorDomain: String { get }
 ```
 
+## See Also
+
+- [let GKGameSessionErrorDomain: String](gkgamesessionerrordomain.md)
+  The error domain for game sessions.
+
 
 ---
 

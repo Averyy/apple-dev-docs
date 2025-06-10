@@ -1,6 +1,6 @@
 # Representing encoder delay explicitly
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Review an example that represents the temporal position of 5 seconds of 48kHz PCM audio encoded in a 48kHz AAC sound track.
 

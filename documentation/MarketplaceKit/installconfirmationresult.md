@@ -31,6 +31,7 @@ Your marketplace app supplies code in the closure that facilitates any prerequis
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

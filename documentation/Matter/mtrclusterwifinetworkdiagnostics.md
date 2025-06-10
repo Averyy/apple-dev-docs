@@ -44,10 +44,10 @@ class MTRClusterWiFiNetworkDiagnostics
 - [func readAttributeRssi(with: MTRReadParams?) -> [String : Any]](mtrclusterwifinetworkdiagnostics/readattributerssi(with:)-939pp.md)
 - [func readAttributeSecurityType(with: MTRReadParams?) -> [String : Any]?](mtrclusterwifinetworkdiagnostics/readattributesecuritytype(with:).md)
 - [func readAttributeWiFiVersion(with: MTRReadParams?) -> [String : Any]?](mtrclusterwifinetworkdiagnostics/readattributewifiversion(with:).md)
-- [func resetCounts(with: MTRWiFiNetworkDiagnosticsClusterResetCountsParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterwifinetworkdiagnostics/resetcounts(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func resetCounts(with: MTRWiFiNetworkDiagnosticsClusterResetCountsParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: MTRStatusCompletion)](mtrclusterwifinetworkdiagnostics/resetcounts(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func resetCounts(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterwifinetworkdiagnostics/resetcounts(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func resetCounts(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: MTRStatusCompletion)](mtrclusterwifinetworkdiagnostics/resetcounts(withexpectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func resetCounts(with: MTRWiFiNetworkDiagnosticsClusterResetCountsParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterwifinetworkdiagnostics/resetcounts(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func resetCounts(with: MTRWiFiNetworkDiagnosticsClusterResetCountsParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterwifinetworkdiagnostics/resetcounts(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func resetCounts(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterwifinetworkdiagnostics/resetcounts(withexpectedvalues:expectedvalueinterval:completion:).md)
+- [func resetCounts(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterwifinetworkdiagnostics/resetcounts(withexpectedvalues:expectedvalueinterval:completionhandler:).md)
 
 ## Relationships
 

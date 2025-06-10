@@ -12,8 +12,6 @@ A reference to arbitrary data with a specific media type.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,9 +19,13 @@ A reference to arbitrary data with a specific media type.
 object AssetData
 ```
 
+#### Discussion
+
+Specify `com.apple.asset.data` as the declaration type.
+
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object AssetDataAuthenticationObject](assetdataauthenticationobject.md)
   The server authentication details for an asset data.
 - [object AssetDataReferenceObject](assetdatareferenceobject.md)

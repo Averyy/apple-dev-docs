@@ -1,12 +1,17 @@
 # endSession()
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: method
 
 Performs all necessary tasks to end the session.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 

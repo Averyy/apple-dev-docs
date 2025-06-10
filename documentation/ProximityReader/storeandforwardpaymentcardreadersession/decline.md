@@ -1,6 +1,6 @@
 # decline()
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 Removes the last read from store.

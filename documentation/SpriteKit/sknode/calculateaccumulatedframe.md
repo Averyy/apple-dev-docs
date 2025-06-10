@@ -17,14 +17,13 @@ Returns a rectangle in the parent’s coordinate system that contains the positi
 ## Declaration
 
 ```swift
-@MainActor
 func calculateAccumulatedFrame() -> CGRect
 ```
 
 ## Mentions
 
-- [Getting Started with Nodes](getting-started-with-nodes.md)
 - [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
+- [Getting Started with Nodes](getting-started-with-nodes.md)
 
 #### Discussion
 

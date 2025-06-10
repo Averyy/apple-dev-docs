@@ -1,6 +1,6 @@
 # XCUIRemoteButton.fourColors
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents the color functions button on a remote.

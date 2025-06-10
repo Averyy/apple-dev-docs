@@ -18,8 +18,8 @@ var wantsExtendedDynamicRangeContent: Bool { get set }
 
 ## See Also
 
-- [var cornerCurve: CALayerCornerCurve](calayer/cornercurve.md)
-- [var wantsDynamicContentScaling: Bool](calayer/wantsdynamiccontentscaling.md)
+- [var preferredDynamicRange: CALayer.DynamicRange](calayer/preferreddynamicrange.md)
+- [var contentsHeadroom: CGFloat](calayer/contentsheadroom.md)
 
 
 ---

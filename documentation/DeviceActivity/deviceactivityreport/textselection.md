@@ -1,6 +1,6 @@
 # textSelection(_:)
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Controls whether people can select text within this view.

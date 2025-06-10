@@ -35,6 +35,15 @@ struct DenseVector_Complex_Float
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 
+## See Also
+
+- [struct DenseMatrix_Complex_Double](densematrix_complex_double.md)
+  Contains a dense `rowCount` x `columnCount` matrix of complex double values stored in column-major order.
+- [struct DenseMatrix_Complex_Float](densematrix_complex_float.md)
+  Contains a dense `rowCount` x `columnCount` matrix of complex float values stored in column-major order.
+- [struct DenseVector_Complex_Double](densevector_complex_double.md)
+  Contains a dense vector of double complex values.
+
 
 ---
 

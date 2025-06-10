@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: case
 
-Informs that system that `Conversation` has started connecting at the given `Date`.
+Informs the system that a conversation has started to connect participants at a point in time.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,15 @@ Informs that system that `Conversation` has started connecting at the given `Dat
 ```swift
 case conversationStartedConnecting(Date)
 ```
+
+## See Also
+
+- [Conversation.Event.conversationConnected(_:)](conversation/event/conversationconnected(_:).md)
+  Informs that system that conversation successfully connected at a point in time.
+- [case conversationEnded(Date, Conversation.EndedReason)](conversation/event/conversationended(_:_:).md)
+  Informs that system that a conversation ended at a point in time with a reason.
+- [case conversationUpdated(Conversation.Update)](conversation/event/conversationupdated(_:).md)
+  Updates a conversation’s attributes and capabilities.
 
 
 ---

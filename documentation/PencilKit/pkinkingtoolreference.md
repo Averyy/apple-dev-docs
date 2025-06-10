@@ -56,6 +56,11 @@ Create an inking tool programmatically, or display a [`PKToolPicker`](pktoolpick
 ### Supporting backward compatibility
 - [var requiredContentVersion: PKContentVersion](pkinkingtoolreference/requiredcontentversion.md)
   The version of PencilKit necessary to use the inking tool.
+### Initializers
+- [init(inkType: __PKInkType, color: UIColor, width: CGFloat, azimuth: CGFloat)](pkinkingtoolreference/init(inktype:color:width:azimuth:).md)
+### Instance Properties
+- [var azimuth: CGFloat](pkinkingtoolreference/azimuth.md)
+  The base angle of the ink.
 
 ## Relationships
 

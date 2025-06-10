@@ -1,6 +1,6 @@
 # includeSample
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: property
 
 A Boolean value that determines whether the query should return the series sample.
@@ -21,7 +21,7 @@ var includeSample: Bool { get set }
 
 #### Discussion
 
-By default, a quantity series sample only returns the individual quantity objects that make up the series—not the [`HKQuantitySample`](hkquantitysample.md) object that represents the entire series. Set this parameter to [`true`](https://developer.apple.com/documentation/foundation/nsexpression/1411874-true) to have the query also return the quantity sample object for the series.
+By default, a quantity series sample only returns the individual quantity objects that make up the series—not the [`HKQuantitySample`](hkquantitysample.md) object that represents the entire series. Set this parameter to [`true`](https://developer.apple.com/documentation/Foundation/NSExpression/true) to have the query also return the quantity sample object for the series.
 
 > **Note**:  This may introduce a performance cost for the query.
 

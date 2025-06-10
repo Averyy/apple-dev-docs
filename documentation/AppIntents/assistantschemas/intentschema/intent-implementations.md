@@ -26,6 +26,8 @@
   Assistant schema conformance for app intents that offer spreadsheet functionality.
 - [static var system: some AssistantSchemas.SystemIntent](assistantschemas/intentschema/system.md)
   Assistant schema conformance for app intents that match system-provided intents.
+- [static var visualIntelligence: some AssistantSchemas.VisualIntelligenceIntent](assistantschemas/intentschema/visualintelligence.md)
+  Assistant schema conformance for app intents that match visual intelligence intents.
 - [static var whiteboard: some AssistantSchemas.WhiteboardIntent](assistantschemas/intentschema/whiteboard.md)
   Assistant schema conformance for app intents that offer whiteboard functionality.
 - [static var wordProcessor: some AssistantSchemas.WordProcessorIntent](assistantschemas/intentschema/wordprocessor.md)

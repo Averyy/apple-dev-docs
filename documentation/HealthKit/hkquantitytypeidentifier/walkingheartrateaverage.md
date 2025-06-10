@@ -1,6 +1,6 @@
 # walkingHeartRateAverage
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: property
 
 A quantity sample type that measures the user’s heart rate while walking.

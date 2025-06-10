@@ -1,6 +1,6 @@
 # animationController(forPresented:presenting:source:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Asks your delegate for the transition animator object to use when presenting a view controller.

@@ -1,6 +1,6 @@
 # prefix(while:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns a sequence containing the initial, consecutive elements that satisfy the given predicate.

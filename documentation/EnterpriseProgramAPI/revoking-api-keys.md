@@ -10,8 +10,6 @@ Revoke an API key immediately if it becomes inactive, lost, or compromised. A re
 
 > ❗ **Important**:  Once you revoke an API key, you can’t reinstate it. Revoked keys are displayed for 30 days on the Integrations page under the Revoked heading.
 
- Once you revoke an API key, you can’t reinstate it. Revoked keys are displayed for 30 days on the Integrations page under the Revoked heading.
-
 ##### Revoking Enterprise Program Keys
 
 To revoke a team API key, log in to the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com) with an Admin account.

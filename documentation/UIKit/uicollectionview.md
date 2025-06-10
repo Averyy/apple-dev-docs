@@ -21,8 +21,8 @@ class UICollectionView
 
 ## Mentions
 
-- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
 - [Making a view into a drag source](making-a-view-into-a-drag-source.md)
+- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
 
 #### Overview
 
@@ -321,6 +321,7 @@ For general information about making your interface accessible, see [`Accessibil
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

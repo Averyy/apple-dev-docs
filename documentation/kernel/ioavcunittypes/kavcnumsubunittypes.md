@@ -1,0 +1,18 @@
+# kAVCNumSubUnitTypes
+
+**Framework**: Kernel  
+**Kind**: econst
+
+**Availability**:
+- macOS 10.2+
+
+## Declaration
+
+```swift
+kAVCNumSubUnitTypes = 0x20
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/ioavcunittypes/kavcnumsubunittypes)*

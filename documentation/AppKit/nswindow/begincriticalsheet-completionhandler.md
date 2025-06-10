@@ -34,8 +34,6 @@ If the window already has a sheet when this method runs, the existing sheet is t
   A Boolean value that indicates whether the window has ever run as a modal sheet.
 - [func beginSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](nswindow/beginsheet(_:completionhandler:).md)
   Starts a document-modal session and presents—or queues for presentation—a sheet.
-- [func endSheet(NSWindow)](nswindow/endsheet(_:).md)
-  Ends a document-modal session and dismisses the specified sheet.
 - [func endSheet(NSWindow, returnCode: NSApplication.ModalResponse)](nswindow/endsheet(_:returncode:).md)
   Ends a document-modal session and dismisses the specified sheet.
 - [var sheetParent: NSWindow?](nswindow/sheetparent.md)

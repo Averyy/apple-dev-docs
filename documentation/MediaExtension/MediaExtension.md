@@ -82,6 +82,12 @@ MediaExtension format readers encapsulate media assets that the system doesn’t
   A MediaExtension framework error.
 - [MEError.Code](meerror-swift.struct/code.md)
   An enumeration that models media extension error codes.
+### Variables
+- [var kMERAWProcessorClassImplementationIDKey: String](kmerawprocessorclassimplementationidkey.md)
+- [var kMERAWProcessorCodecNameKey: String](kmerawprocessorcodecnamekey.md)
+- [var kMERAWProcessorCodecTypeKey: String](kmerawprocessorcodectypekey.md)
+- [var kMERAWProcessorObjectNameKey: String](kmerawprocessorobjectnamekey.md)
+- [var kMERAWProcessorProcessorInfoKey: String](kmerawprocessorprocessorinfokey.md)
 
 
 ---

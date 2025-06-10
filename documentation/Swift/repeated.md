@@ -59,6 +59,7 @@ for name in repeatedName {
 - [DataProtocol](../Foundation/DataProtocol.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

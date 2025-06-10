@@ -25,8 +25,6 @@ An `NSComboBox` object uses this method to populate the items displayed in its p
 
 > ❗ **Important**:  While this method is marked as `@optional` in the protocol, you must implement this method if you are not providing the data for the combo box using Cocoa bindings.
 
- While this method is marked as `@optional` in the protocol, you must implement this method if you are not providing the data for the combo box using Cocoa bindings.
-
 ## Parameters
 
 - `comboBox`: The combo box.

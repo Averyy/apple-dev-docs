@@ -83,6 +83,7 @@ The `RandomAccessCollection` protocol adds further constraints on the associated
 - [ContiguousArray](contiguousarray.md)
 - [DefaultIndices](defaultindices.md)
 - [EmptyCollection](emptycollection.md)
+- [EnumeratedSequence](enumeratedsequence.md)
 - [Int.Words](int/words-swift.struct.md)
 - [Int16.Words](int16/words-swift.struct.md)
 - [Int32.Words](int32/words-swift.struct.md)

@@ -1,6 +1,6 @@
 # DEPTH_RANGE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

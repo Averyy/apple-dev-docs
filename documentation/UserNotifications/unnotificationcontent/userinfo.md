@@ -1,6 +1,6 @@
 # userInfo
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The custom data to associate with the notification.
@@ -21,8 +21,8 @@ var userInfo: [AnyHashable : Any] { get }
 
 ## Mentions
 
-- [Generating a remote notification](generating-a-remote-notification.md)
 - [Declaring your actionable notification types](declaring-your-actionable-notification-types.md)
+- [Generating a remote notification](generating-a-remote-notification.md)
 
 #### Discussion
 

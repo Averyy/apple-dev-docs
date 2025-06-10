@@ -22,8 +22,6 @@ Hash values aren’t guaranteed to be equal across different executions of your 
 
 > ❗ **Important**: `hashValue` is deprecated as a Hashable requirement. To conform to [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable), implement the [`hash(into:)`](deviceactivityevent/name/hash(into:).md) requirement instead.
 
-`hashValue` is deprecated as a Hashable requirement. To conform to [`Hashable`](https://developer.apple.com/documentation/Swift/Hashable), implement the [`hash(into:)`](deviceactivityevent/name/hash(into:).md) requirement instead.
-
 ## See Also
 
 - [func hash(into: inout Hasher)](deviceactivityevent/name/hash(into:).md)

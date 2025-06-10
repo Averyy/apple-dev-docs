@@ -1,6 +1,6 @@
 # phoneNumber
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Detect phone numbers in text and create a link to call the specified number.

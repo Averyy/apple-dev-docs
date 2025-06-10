@@ -1,6 +1,6 @@
 # XCTKeyPathExpectation.AsynchronousFilter
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: typealias
 
 **Availability**:

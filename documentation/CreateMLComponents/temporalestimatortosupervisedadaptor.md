@@ -46,6 +46,7 @@ struct TemporalEstimatorToSupervisedAdaptor<Estimator, Annotation> where Estimat
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SupervisedTemporalEstimator](supervisedtemporalestimator.md)
 
 ## See Also

@@ -3,23 +3,21 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Attaches a [`UIGestureRecognizerRepresentable`](uigesturerecognizerrepresentable.md) to the view.
+Attaches an [`NSGestureRecognizerRepresentable`](nsgesturerecognizerrepresentable.md) to the view.
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- Mac Catalyst 18.0+
+- macOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
 nonisolated
-func gesture(_ representable: some UIGestureRecognizerRepresentable) -> some View
+func gesture(_ representable: some NSGestureRecognizerRepresentable) -> some View
 ```
 
 #### Return Value
 
-A view with a [`UIGestureRecognizerRepresentable`](uigesturerecognizerrepresentable.md) attached.
+A view with an [`NSGestureRecognizerRepresentable`](nsgesturerecognizerrepresentable.md) attached.
 
 ## Parameters
 

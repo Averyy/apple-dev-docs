@@ -1,301 +1,425 @@
 {
   "metadata": {
-    "last_updated": "2025-06-07T12:39:04.056247",
-    "total_pages": 53,
-    "etags_collected": "2025-06-07T12:39:04.056256"
+    "last_updated": "2025-06-10T21:59:29.655839",
+    "total_pages": 52,
+    "session_id": "2025-06-10T21:59:24.530661"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ThreadNetwork.json": {
-      "hash": "6edb00f44056293723af7bed7fc6a31cd1e820f691ecf589a68e7a75b76ad92e",
-      "last_checked": "2025-06-06T10:35:17.360517",
+      "hash": "25e486bae18e34a29b6bb1e69b056326f027c8cae5956a40f80a88280adc6430",
+      "last_checked": "2025-06-10T21:59:25.070992",
       "status": "new",
-      "etag": "W/\"6a9ff76e871369717a8477620280c684\""
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"003b6fd16fb5bd12d80a8c7065ed3b71\"",
+      "file_path": "documentation/ThreadNetwork/ThreadNetwork.md"
     },
     "https://developer.apple.com/documentation/ThreadNetwork": {
-      "hash": "2a8bcb769f8852e02384db90fcc5d70c4957597451fa6d6ef92424966bd371f6",
-      "last_checked": "2025-06-06T10:35:17.360627",
-      "status": "unchanged"
+      "hash": "25e486bae18e34a29b6bb1e69b056326f027c8cae5956a40f80a88280adc6430",
+      "last_checked": "2025-06-10T21:59:24.844677",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"003b6fd16fb5bd12d80a8c7065ed3b71\"",
+      "file_path": "documentation/ThreadNetwork/ThreadNetwork.md"
     },
-    "https://developer.apple.com/tutorials/data/documentation/threadnetwork.json": {
-      "hash": "2a8bcb769f8852e02384db90fcc5d70c4957597451fa6d6ef92424966bd371f6",
-      "last_checked": "2025-06-06T10:35:17.360627",
-      "status": "unchanged",
-      "etag": "W/\"6a9ff76e871369717a8477620280c684\""
+    "https://developer.apple.com/tutorials/data/documentation/threadnetwork/getting-started-with-threadnetwork.json": {
+      "hash": "319abb01dfd45716613b8c70edb49ee398a303ec1d6b97fff5bf065bdcdfda6b",
+      "last_checked": "2025-06-10T21:59:25.661922",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"febb1ea9880c607e2f2bf4d46d6d02bc\"",
+      "file_path": "documentation/ThreadNetwork/getting-started-with-threadnetwork.md"
+    },
+    "https://developer.apple.com/documentation/threadnetwork/getting-started-with-threadnetwork": {
+      "hash": "319abb01dfd45716613b8c70edb49ee398a303ec1d6b97fff5bf065bdcdfda6b",
+      "last_checked": "2025-06-10T21:59:25.661965",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"febb1ea9880c607e2f2bf4d46d6d02bc\"",
+      "file_path": "documentation/ThreadNetwork/getting-started-with-threadnetwork.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/configuring-a-border-router.json": {
-      "hash": "6b19560f5313ddca53d5a55465a387947dea316da69c8463af8e359714ac5045",
-      "last_checked": "2025-06-06T10:35:18.123828",
-      "status": "unchanged",
-      "etag": "W/\"0988f5bba1b22767f0e73339546854c3\""
+      "hash": "40ebf3c46aee07daf2d8feda7b147c2e098226c09b83593442681d08bbed586a",
+      "last_checked": "2025-06-10T21:59:25.893455",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"14f82570ab46df54317b4000b377058e\"",
+      "file_path": "documentation/ThreadNetwork/configuring-a-border-router.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/configuring-a-border-router": {
-      "hash": "6b19560f5313ddca53d5a55465a387947dea316da69c8463af8e359714ac5045",
-      "last_checked": "2025-06-06T10:35:18.123828",
-      "status": "unchanged"
+      "hash": "40ebf3c46aee07daf2d8feda7b147c2e098226c09b83593442681d08bbed586a",
+      "last_checked": "2025-06-10T21:59:25.893500",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"14f82570ab46df54317b4000b377058e\"",
+      "file_path": "documentation/ThreadNetwork/configuring-a-border-router.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/managing-thread-network-credentials.json": {
-      "hash": "43c5525a33b9947bb20b22f2c5ba401f3b2a03654ba8ab51466e43c9ddf63832",
-      "last_checked": "2025-06-06T19:39:55.454144",
-      "status": "unchanged",
-      "etag": "W/\"0726c096b7024a23d2914c8d8065d9df\""
+      "hash": "8e023b1dbe3f826a29e008ce4ef2ea74d85e1017242ad69c30a03b985cd90048",
+      "last_checked": "2025-06-10T21:59:26.130252",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"cff4274b76b1fdc523bd49a2bfd1bb04\"",
+      "file_path": "documentation/ThreadNetwork/managing-thread-network-credentials.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/managing-thread-network-credentials": {
-      "hash": "5b61e1e59a006fafaa008d04818bd615b0e804f76fb5c2ae6f9edc754efe5407",
-      "last_checked": "2025-06-06T10:35:18.496157",
-      "status": "unchanged"
+      "hash": "8e023b1dbe3f826a29e008ce4ef2ea74d85e1017242ad69c30a03b985cd90048",
+      "last_checked": "2025-06-10T21:59:26.130312",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"cff4274b76b1fdc523bd49a2bfd1bb04\"",
+      "file_path": "documentation/ThreadNetwork/managing-thread-network-credentials.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient.json": {
-      "hash": "b106b13667fbc9f35b63b61efd97db98da28db4daf3f70eaf2b588a5252b1e85",
-      "last_checked": "2025-06-06T10:35:18.872229",
-      "status": "unchanged",
-      "etag": "W/\"1381cd71449c4d03cf51364165ee0587\""
+      "hash": "d34a0fc048b26b9d621842bedf2afb0d03bb56d0060631b7b7fda40b0d25858e",
+      "last_checked": "2025-06-10T21:59:26.365283",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"c95d1a18b108e10b514bb798ab2a2d28\"",
+      "file_path": "documentation/ThreadNetwork/thclient.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thclient": {
-      "hash": "b106b13667fbc9f35b63b61efd97db98da28db4daf3f70eaf2b588a5252b1e85",
-      "last_checked": "2025-06-06T10:35:18.872229",
-      "status": "unchanged"
+      "hash": "d34a0fc048b26b9d621842bedf2afb0d03bb56d0060631b7b7fda40b0d25858e",
+      "last_checked": "2025-06-10T21:59:26.365346",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"c95d1a18b108e10b514bb798ab2a2d28\"",
+      "file_path": "documentation/ThreadNetwork/thclient.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thcredentials.json": {
-      "hash": "ee18241e881eaeea75b5eec561dcc6c9b14b8b5d71fadd269bddc8e7f0375f9a",
-      "last_checked": "2025-06-06T10:35:19.233608",
-      "status": "unchanged",
-      "etag": "W/\"dfefe0a814af16b9f6dbcfc2918b0b75\""
+      "hash": "f95ea4c63e9f5bdb635885e883e2ccae5978f66a441c6b036b2dee7215c82d69",
+      "last_checked": "2025-06-10T21:59:26.472354",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"677ada51be0b277abe51e9449c78511a\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thcredentials": {
-      "hash": "ee18241e881eaeea75b5eec561dcc6c9b14b8b5d71fadd269bddc8e7f0375f9a",
-      "last_checked": "2025-06-06T10:35:19.233608",
-      "status": "unchanged"
+      "hash": "f95ea4c63e9f5bdb635885e883e2ccae5978f66a441c6b036b2dee7215c82d69",
+      "last_checked": "2025-06-10T21:59:26.472403",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"677ada51be0b277abe51e9449c78511a\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient/init().json": {
-      "hash": "caa49070bfa5c56760ff65a8504d4aac6933d070b1403ea39413ae739d86ee8d",
-      "last_checked": "2025-06-06T10:35:19.606119",
-      "status": "unchanged",
-      "etag": "W/\"9692dc97b4c9897f180734ee6b1d83e4\""
+      "hash": "84b963fa1e02742b368671a25b9e3fb25a268d7a1f0411f5cc3c4e3dfc9591a3",
+      "last_checked": "2025-06-10T21:59:26.586812",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"6b221925b3d3d82edc040b08b9c6e374\"",
+      "file_path": "documentation/ThreadNetwork/thclient/init.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thclient/init()": {
-      "hash": "caa49070bfa5c56760ff65a8504d4aac6933d070b1403ea39413ae739d86ee8d",
-      "last_checked": "2025-06-06T10:35:19.606119",
-      "status": "unchanged"
+      "hash": "84b963fa1e02742b368671a25b9e3fb25a268d7a1f0411f5cc3c4e3dfc9591a3",
+      "last_checked": "2025-06-10T21:59:26.586845",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"6b221925b3d3d82edc040b08b9c6e374\"",
+      "file_path": "documentation/ThreadNetwork/thclient/init.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient/ispreferrednetworkavailable(completion:).json": {
-      "hash": "98641ef2f913b425f12f7a4cddf29282b08472bef0bbb7e9f7b5a3f1e685b100",
-      "last_checked": "2025-06-06T10:35:19.991380",
-      "status": "unchanged",
-      "etag": "W/\"ad0d38ae698f428c0002c823bf511c28\""
+      "hash": "147a2fd943d56a643dd7793f8e672dfa2104a23e4ce64a2dad6b1c6c5378cfad",
+      "last_checked": "2025-06-10T21:59:26.829466",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"98350b7e89542b2c35202894df516d8c\"",
+      "file_path": "documentation/ThreadNetwork/thclient/ispreferrednetworkavailable-completion.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thclient/ispreferrednetworkavailable(completion:)": {
-      "hash": "98641ef2f913b425f12f7a4cddf29282b08472bef0bbb7e9f7b5a3f1e685b100",
-      "last_checked": "2025-06-06T10:35:19.991380",
-      "status": "unchanged"
+      "hash": "147a2fd943d56a643dd7793f8e672dfa2104a23e4ce64a2dad6b1c6c5378cfad",
+      "last_checked": "2025-06-10T21:59:26.829521",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"98350b7e89542b2c35202894df516d8c\"",
+      "file_path": "documentation/ThreadNetwork/thclient/ispreferrednetworkavailable-completion.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient/checkpreferrednetwork(foractiveoperationaldataset:completion:).json": {
-      "hash": "2ce62e1a3be2d50c1a337057d9812450640db414b7d6a4465a49372b014bdb4f",
-      "last_checked": "2025-06-06T10:35:20.369128",
-      "status": "unchanged",
-      "etag": "W/\"1d634af0b771c1eddd0d799e858495c1\""
+      "hash": "47ea0e8c9ee3f3beb1c2ae8ee232dff04b16e518d79e3fe665600999463f049f",
+      "last_checked": "2025-06-10T21:59:26.935495",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"003b868942123626f5964fe7415c56c3\"",
+      "file_path": "documentation/ThreadNetwork/thclient/checkpreferrednetwork-foractiveoperationaldatasetcompletion.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thclient/checkpreferrednetwork(foractiveoperationaldataset:completion:)": {
-      "hash": "2ce62e1a3be2d50c1a337057d9812450640db414b7d6a4465a49372b014bdb4f",
-      "last_checked": "2025-06-06T10:35:20.369128",
-      "status": "unchanged"
+      "hash": "47ea0e8c9ee3f3beb1c2ae8ee232dff04b16e518d79e3fe665600999463f049f",
+      "last_checked": "2025-06-10T21:59:26.935559",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"003b868942123626f5964fe7415c56c3\"",
+      "file_path": "documentation/ThreadNetwork/thclient/checkpreferrednetwork-foractiveoperationaldatasetcompletion.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient/retrievecredentials(forborderagent:completion:).json": {
-      "hash": "5c574edecd3a9cfceec3f7a379cfc63157117d1eae6fcf2be36f6191c07dea4b",
-      "last_checked": "2025-06-06T10:35:20.761999",
-      "status": "unchanged",
-      "etag": "W/\"19e11e66c66e584d2130bbdd9706250a\""
+      "hash": "1bebe599094fb8f105daa163482d4b173755b43d1515654e386fd4839b562a3c",
+      "last_checked": "2025-06-10T21:59:27.095890",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"769ac165cbafc0d905c0b5945e2bee5d\"",
+      "file_path": "documentation/ThreadNetwork/thclient/retrievecredentials-forborderagentcompletion.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thclient/retrievecredentials(forborderagent:completion:)": {
-      "hash": "5c574edecd3a9cfceec3f7a379cfc63157117d1eae6fcf2be36f6191c07dea4b",
-      "last_checked": "2025-06-06T10:35:20.761999",
-      "status": "unchanged"
+      "hash": "1bebe599094fb8f105daa163482d4b173755b43d1515654e386fd4839b562a3c",
+      "last_checked": "2025-06-10T21:59:27.095943",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"769ac165cbafc0d905c0b5945e2bee5d\"",
+      "file_path": "documentation/ThreadNetwork/thclient/retrievecredentials-forborderagentcompletion.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient/retrievecredentials(forextendedpanid:completion:).json": {
-      "hash": "91cc468904a24c24099b1eb020c26eeba74989a1c63b80f8964808d763b84ebb",
-      "last_checked": "2025-06-06T10:35:21.159534",
-      "status": "unchanged",
-      "etag": "W/\"33b4b8f4a666efb9955a643c264c41ca\""
+      "hash": "d2ccd2e6f63696096728be8cf9a38e3b67550c1ac6e4a2feebf444d05172d292",
+      "last_checked": "2025-06-10T21:59:27.338820",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"c5b5524de2657356604942fdf6321eb4\"",
+      "file_path": "documentation/ThreadNetwork/thclient/retrievecredentials-forextendedpanidcompletion.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thclient/retrievecredentials(forextendedpanid:completion:)": {
-      "hash": "91cc468904a24c24099b1eb020c26eeba74989a1c63b80f8964808d763b84ebb",
-      "last_checked": "2025-06-06T10:35:21.159534",
-      "status": "unchanged"
+      "hash": "d2ccd2e6f63696096728be8cf9a38e3b67550c1ac6e4a2feebf444d05172d292",
+      "last_checked": "2025-06-10T21:59:27.338879",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"c5b5524de2657356604942fdf6321eb4\"",
+      "file_path": "documentation/ThreadNetwork/thclient/retrievecredentials-forextendedpanidcompletion.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient/retrieveallcredentials(_:).json": {
-      "hash": "d6df802c80bb535c58933b38a7c21fdca7b03cbcd44727524231c373b0d85a68",
-      "last_checked": "2025-06-06T10:35:21.586893",
-      "status": "unchanged",
-      "etag": "W/\"aaedca6229a6fb38d493664d6cb3f09d\""
+      "hash": "38c37ca23c2c96585b3cbe740ed354456046c3b766a5e2b28aadd217ebc692ff",
+      "last_checked": "2025-06-10T21:59:27.476081",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"501aba1860b8a343c3273b26729fa292\"",
+      "file_path": "documentation/ThreadNetwork/thclient/retrieveallcredentials.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thclient/retrieveallcredentials(_:)": {
-      "hash": "d6df802c80bb535c58933b38a7c21fdca7b03cbcd44727524231c373b0d85a68",
-      "last_checked": "2025-06-06T10:35:21.586893",
-      "status": "unchanged"
+      "hash": "38c37ca23c2c96585b3cbe740ed354456046c3b766a5e2b28aadd217ebc692ff",
+      "last_checked": "2025-06-10T21:59:27.476160",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"501aba1860b8a343c3273b26729fa292\"",
+      "file_path": "documentation/ThreadNetwork/thclient/retrieveallcredentials.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient/retrievepreferredcredentials(_:).json": {
-      "hash": "7770cf70cd283c766f8ccb8b30c774a2070f71e58ce0619eccc102cfa73ab266",
-      "last_checked": "2025-06-06T10:35:21.982088",
-      "status": "unchanged",
-      "etag": "W/\"e13d2bbf0ab37a6514017b151cb09019\""
+      "hash": "c176e1d8705b80ee58900958799e7523edf3e2539e4e8910aa773f555649f506",
+      "last_checked": "2025-06-10T21:59:27.705758",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"59a8ebe7416be23fbb147b0f50dfb756\"",
+      "file_path": "documentation/ThreadNetwork/thclient/retrievepreferredcredentials.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thclient/retrievepreferredcredentials(_:)": {
-      "hash": "7770cf70cd283c766f8ccb8b30c774a2070f71e58ce0619eccc102cfa73ab266",
-      "last_checked": "2025-06-06T10:35:21.982088",
-      "status": "unchanged"
+      "hash": "c176e1d8705b80ee58900958799e7523edf3e2539e4e8910aa773f555649f506",
+      "last_checked": "2025-06-10T21:59:27.705813",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"59a8ebe7416be23fbb147b0f50dfb756\"",
+      "file_path": "documentation/ThreadNetwork/thclient/retrievepreferredcredentials.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient/retrieveallactivecredentials(_:).json": {
-      "hash": "728132dadf269dc979bc69df072544b268d33233546cdd32f54b6c840bcc22ab",
-      "last_checked": "2025-06-06T10:35:22.307021",
-      "status": "unchanged",
-      "etag": "W/\"33bf01d9a2cf95b9b27762cd051c922c\""
+      "hash": "34499b7c510879b14349aa6c522be8511621c25147adc2f52938a4ee3b8fe304",
+      "last_checked": "2025-06-10T21:59:27.828618",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"628e33ef1b025f754643d2c9bdd4eca5\"",
+      "file_path": "documentation/ThreadNetwork/thclient/retrieveallactivecredentials.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thclient/retrieveallactivecredentials(_:)": {
-      "hash": "728132dadf269dc979bc69df072544b268d33233546cdd32f54b6c840bcc22ab",
-      "last_checked": "2025-06-06T10:35:22.307021",
-      "status": "unchanged"
+      "hash": "34499b7c510879b14349aa6c522be8511621c25147adc2f52938a4ee3b8fe304",
+      "last_checked": "2025-06-10T21:59:27.828749",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"628e33ef1b025f754643d2c9bdd4eca5\"",
+      "file_path": "documentation/ThreadNetwork/thclient/retrieveallactivecredentials.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient/deletecredentials(forborderagent:completion:).json": {
-      "hash": "34dc84e004445717183173596cedad1d74b0b78f212a3d9cbba940118850bb66",
-      "last_checked": "2025-06-06T10:35:22.674776",
-      "status": "unchanged",
-      "etag": "W/\"294c79c1e16443d4245974f4b8d8fa0c\""
+      "hash": "cea48ee770f272f314482caa229bd8ff7a3c49c29e1d5cf1197966f8e1d0a5e7",
+      "last_checked": "2025-06-10T21:59:28.070333",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"55c3938109b0d971d415174ce844db4c\"",
+      "file_path": "documentation/ThreadNetwork/thclient/deletecredentials-forborderagentcompletion.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thclient/deletecredentials(forborderagent:completion:)": {
-      "hash": "34dc84e004445717183173596cedad1d74b0b78f212a3d9cbba940118850bb66",
-      "last_checked": "2025-06-06T10:35:22.674776",
-      "status": "unchanged"
+      "hash": "cea48ee770f272f314482caa229bd8ff7a3c49c29e1d5cf1197966f8e1d0a5e7",
+      "last_checked": "2025-06-10T21:59:28.070381",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"55c3938109b0d971d415174ce844db4c\"",
+      "file_path": "documentation/ThreadNetwork/thclient/deletecredentials-forborderagentcompletion.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thclient/storecredentials(forborderagent:activeoperationaldataset:completion:).json": {
-      "hash": "5474ae974c05cab7a945e57175a07bbda8aa43ad7f8cacf794da44882cd3ef42",
-      "last_checked": "2025-06-06T10:35:23.091919",
-      "status": "unchanged",
-      "etag": "W/\"5f2bd9e0b02e9f26465a8d40a307005f\""
+      "hash": "37a25a3ba83e2a8fbce2392c2fd2a7f7ae29d524a2f91c35530e3552301cb428",
+      "last_checked": "2025-06-10T21:59:28.192810",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"1e8656775bbacd4d01c79a21c42c2a9f\"",
+      "file_path": "documentation/ThreadNetwork/thclient/storecredentials-forborderagentactiveoperationaldatasetcompletion.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thclient/storecredentials(forborderagent:activeoperationaldataset:completion:)": {
-      "hash": "5474ae974c05cab7a945e57175a07bbda8aa43ad7f8cacf794da44882cd3ef42",
-      "last_checked": "2025-06-06T10:35:23.091919",
-      "status": "unchanged"
+      "hash": "37a25a3ba83e2a8fbce2392c2fd2a7f7ae29d524a2f91c35530e3552301cb428",
+      "last_checked": "2025-06-10T21:59:28.192855",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"1e8656775bbacd4d01c79a21c42c2a9f\"",
+      "file_path": "documentation/ThreadNetwork/thclient/storecredentials-forborderagentactiveoperationaldatasetcompletion.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thcredentials/activeoperationaldataset.json": {
-      "hash": "67802dac3a7b6c6a551813709ffd3f395ac811593e799cebb9d6ffc5e218fcd6",
-      "last_checked": "2025-06-06T10:35:23.468413",
-      "status": "unchanged",
-      "etag": "W/\"d30ff3189d6790ba15d37ceefe7b7e21\""
+      "hash": "f73d3475852aa3353b8f9646d6ca452211cfcc8024356fe1920ecfd6f4e56b8a",
+      "last_checked": "2025-06-10T21:59:28.298094",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"137a3ea5302503950ba782ebba7dcfa4\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/activeoperationaldataset.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thcredentials/activeoperationaldataset": {
-      "hash": "67802dac3a7b6c6a551813709ffd3f395ac811593e799cebb9d6ffc5e218fcd6",
-      "last_checked": "2025-06-06T10:35:23.468413",
-      "status": "unchanged"
+      "hash": "f73d3475852aa3353b8f9646d6ca452211cfcc8024356fe1920ecfd6f4e56b8a",
+      "last_checked": "2025-06-10T21:59:28.298139",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"137a3ea5302503950ba782ebba7dcfa4\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/activeoperationaldataset.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thcredentials/borderagentid.json": {
-      "hash": "f94536c3073f32aaec6d25dea958e14034ffc37e8c43074b46bc82595d727474",
-      "last_checked": "2025-06-06T10:35:23.829270",
-      "status": "unchanged",
-      "etag": "W/\"dbf91220e3d69e7d37bb4dee667f96f2\""
+      "hash": "3dbe25acc2e678af3dca0ddd8648a5b02c0b6c02749ecc5b457985de1785292b",
+      "last_checked": "2025-06-10T21:59:28.454309",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"4556474c76e84f900a74167818a87c71\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/borderagentid.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thcredentials/borderagentid": {
-      "hash": "f94536c3073f32aaec6d25dea958e14034ffc37e8c43074b46bc82595d727474",
-      "last_checked": "2025-06-06T10:35:23.829270",
-      "status": "unchanged"
+      "hash": "3dbe25acc2e678af3dca0ddd8648a5b02c0b6c02749ecc5b457985de1785292b",
+      "last_checked": "2025-06-10T21:59:28.454351",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"4556474c76e84f900a74167818a87c71\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/borderagentid.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thcredentials/channel.json": {
-      "hash": "6516f750bdb3d1d77af1002984a0284139965f885b8557bbd02fdab9c882fd77",
-      "last_checked": "2025-06-06T10:35:24.168636",
-      "status": "unchanged",
-      "etag": "W/\"5084cef03cdfc7788fb10edc13b7d9fb\""
+      "hash": "13f76ff40771c6b7b9d0762175048d17a9c79aa2ad1b0fe6bd6db00b5f0c9b2c",
+      "last_checked": "2025-06-10T21:59:28.593216",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"75aac6e309beabee7a6ba925054b7f03\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/channel.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thcredentials/channel": {
-      "hash": "6516f750bdb3d1d77af1002984a0284139965f885b8557bbd02fdab9c882fd77",
-      "last_checked": "2025-06-06T10:35:24.168636",
-      "status": "unchanged"
+      "hash": "13f76ff40771c6b7b9d0762175048d17a9c79aa2ad1b0fe6bd6db00b5f0c9b2c",
+      "last_checked": "2025-06-10T21:59:28.593302",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"75aac6e309beabee7a6ba925054b7f03\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/channel.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thcredentials/extendedpanid.json": {
-      "hash": "30ee62930645b0c1ffcdb3e28268b27f2eeb101429aae746c9a8d8852e6856c2",
-      "last_checked": "2025-06-06T10:35:24.551994",
-      "status": "unchanged",
-      "etag": "W/\"44e3c2470c6a305ac988f91eb5786299\""
+      "hash": "0fcd981114c64e94c4ee8990cf84b2f7f7c3e625a3c5a60b968b4f403a3d6e8e",
+      "last_checked": "2025-06-10T21:59:28.760688",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"1fcb2f7a3dabdbc2a74fe13abb27d952\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/extendedpanid.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thcredentials/extendedpanid": {
-      "hash": "30ee62930645b0c1ffcdb3e28268b27f2eeb101429aae746c9a8d8852e6856c2",
-      "last_checked": "2025-06-06T10:35:24.551994",
-      "status": "unchanged"
+      "hash": "0fcd981114c64e94c4ee8990cf84b2f7f7c3e625a3c5a60b968b4f403a3d6e8e",
+      "last_checked": "2025-06-10T21:59:28.760733",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"1fcb2f7a3dabdbc2a74fe13abb27d952\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/extendedpanid.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thcredentials/networkkey.json": {
-      "hash": "66312748f9d488cc2e262e20697801437ee4a52b1e3694e14495666a0b661500",
-      "last_checked": "2025-06-06T10:35:24.908608",
-      "status": "unchanged",
-      "etag": "W/\"988c0654e811156c8bad50445bba54eb\""
+      "hash": "cfc83d25dd52588ee20af549f3df78d616251d03ef49d42b2b4f4fe482fe04ed",
+      "last_checked": "2025-06-10T21:59:28.886971",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"3b460a21e648a7db9b569a74e4c99856\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/networkkey.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thcredentials/networkkey": {
-      "hash": "66312748f9d488cc2e262e20697801437ee4a52b1e3694e14495666a0b661500",
-      "last_checked": "2025-06-06T10:35:24.908608",
-      "status": "unchanged"
+      "hash": "cfc83d25dd52588ee20af549f3df78d616251d03ef49d42b2b4f4fe482fe04ed",
+      "last_checked": "2025-06-10T21:59:28.887007",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"3b460a21e648a7db9b569a74e4c99856\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/networkkey.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thcredentials/networkname.json": {
-      "hash": "33e3060fc7e8fe42bed720cc68612ee0d384ef8cb00e46b3bfcb3db5465d27ac",
-      "last_checked": "2025-06-06T10:35:25.292864",
-      "status": "unchanged",
-      "etag": "W/\"0c97e9c79f2bcab7d5d7fd96efca436d\""
+      "hash": "db5fad8d91b7820a2273e874605c6df375fa5208beb755a12b922e24ebf25815",
+      "last_checked": "2025-06-10T21:59:29.009590",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"0587dd2fe683e09c9fbeea702097e6f9\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/networkname.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thcredentials/networkname": {
-      "hash": "33e3060fc7e8fe42bed720cc68612ee0d384ef8cb00e46b3bfcb3db5465d27ac",
-      "last_checked": "2025-06-06T10:35:25.292864",
-      "status": "unchanged"
+      "hash": "db5fad8d91b7820a2273e874605c6df375fa5208beb755a12b922e24ebf25815",
+      "last_checked": "2025-06-10T21:59:29.009628",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"0587dd2fe683e09c9fbeea702097e6f9\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/networkname.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thcredentials/panid.json": {
-      "hash": "61f512556f8787bfb14a5e0e59ece11a5ade9232ed9600fb0cd980163b42f7b9",
-      "last_checked": "2025-06-06T10:35:25.666026",
-      "status": "unchanged",
-      "etag": "W/\"70c3b4825ea8e5ebff5e9f1e5b7c000e\""
+      "hash": "eea5dd8199d64fcc88edbea13ba67ea4fb3b34df9b6cb3dd1a2598741d5d0be8",
+      "last_checked": "2025-06-10T21:59:29.209374",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"fba655950130a445980f3d38e724e6f6\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/panid.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thcredentials/panid": {
-      "hash": "61f512556f8787bfb14a5e0e59ece11a5ade9232ed9600fb0cd980163b42f7b9",
-      "last_checked": "2025-06-06T10:35:25.666026",
-      "status": "unchanged"
+      "hash": "eea5dd8199d64fcc88edbea13ba67ea4fb3b34df9b6cb3dd1a2598741d5d0be8",
+      "last_checked": "2025-06-10T21:59:29.209412",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"fba655950130a445980f3d38e724e6f6\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/panid.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thcredentials/pskc.json": {
-      "hash": "b850d458eb2154b3c1144bbc46d461074cd7d4856ab36cc98fc8091c18536f22",
-      "last_checked": "2025-06-06T10:35:26.091819",
-      "status": "unchanged",
-      "etag": "W/\"bdfd41548055d37fab43c5d65f9e6310\""
+      "hash": "b4753d22ffbf89f60d46cc4739949384798d4c7a9aebd19e968205ae631a8dfb",
+      "last_checked": "2025-06-10T21:59:29.328502",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"5f5e939de966b2ad26ac622ab937792a\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/pskc.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thcredentials/pskc": {
-      "hash": "b850d458eb2154b3c1144bbc46d461074cd7d4856ab36cc98fc8091c18536f22",
-      "last_checked": "2025-06-06T10:35:26.091819",
-      "status": "unchanged"
+      "hash": "b4753d22ffbf89f60d46cc4739949384798d4c7a9aebd19e968205ae631a8dfb",
+      "last_checked": "2025-06-10T21:59:29.328547",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"5f5e939de966b2ad26ac622ab937792a\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/pskc.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thcredentials/creationdate.json": {
-      "hash": "01cb0e42445e2e15387d673a840c7491c6b4217e3824896af522e51b5008f037",
-      "last_checked": "2025-06-06T10:35:26.474352",
-      "status": "unchanged",
-      "etag": "W/\"a8fde00b2f23c4f1051a8ec4c69b6219\""
+      "hash": "495e7b4a7fa8950bb91d5115b5470228458c573f328ef8e685cea53776b9272f",
+      "last_checked": "2025-06-10T21:59:29.550204",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"5a725f518dc4b6684f6bdb005adb5c86\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/creationdate.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thcredentials/creationdate": {
-      "hash": "01cb0e42445e2e15387d673a840c7491c6b4217e3824896af522e51b5008f037",
-      "last_checked": "2025-06-06T10:35:26.474352",
-      "status": "unchanged"
+      "hash": "495e7b4a7fa8950bb91d5115b5470228458c573f328ef8e685cea53776b9272f",
+      "last_checked": "2025-06-10T21:59:29.550236",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"5a725f518dc4b6684f6bdb005adb5c86\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/creationdate.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/threadnetwork/thcredentials/lastmodificationdate.json": {
-      "hash": "2525c06a486ef0fa68b08bc2a0365130b6dd8296c92f1e4f9d8afdfe939429b4",
-      "last_checked": "2025-06-06T10:35:26.871455",
-      "status": "unchanged",
-      "etag": "W/\"132eecf8fc700f6b83a2910885c36db1\""
+      "hash": "681a4ff1cfde5b1555b842bab62bf8a5e3734709b0e1295ef30de3ebd010bf38",
+      "last_checked": "2025-06-10T21:59:29.654564",
+      "status": "new",
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"36a602a29bf3ee76bef6590ab085f29e\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/lastmodificationdate.md"
     },
     "https://developer.apple.com/documentation/threadnetwork/thcredentials/lastmodificationdate": {
-      "hash": "2525c06a486ef0fa68b08bc2a0365130b6dd8296c92f1e4f9d8afdfe939429b4",
-      "last_checked": "2025-06-06T10:35:26.871455",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/ThreadNetwork/managing-thread-network-credentials.json": {
-      "hash": "9900efef40e2f2448b7edc0eb3215bae7987ccf2e7eb76d64056060534834110",
-      "last_checked": "2025-06-06T19:39:55.453751",
+      "hash": "681a4ff1cfde5b1555b842bab62bf8a5e3734709b0e1295ef30de3ebd010bf38",
+      "last_checked": "2025-06-10T21:59:29.654675",
       "status": "new",
-      "etag": "W/\"0726c096b7024a23d2914c8d8065d9df\""
-    },
-    "https://developer.apple.com/documentation/ThreadNetwork/managing-thread-network-credentials": {
-      "hash": "43c5525a33b9947bb20b22f2c5ba401f3b2a03654ba8ab51466e43c9ddf63832",
-      "last_checked": "2025-06-06T19:39:55.454144",
-      "status": "unchanged"
+      "session_id": "2025-06-10T21:59:24.530661",
+      "etag": "W/\"36a602a29bf3ee76bef6590ab085f29e\"",
+      "file_path": "documentation/ThreadNetwork/thcredentials/lastmodificationdate.md"
     }
   }
 }

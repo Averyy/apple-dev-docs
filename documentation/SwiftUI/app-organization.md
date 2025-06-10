@@ -49,6 +49,9 @@ For platform-specific design guidance, see [`Getting started`](https://developer
 ### Targeting tvOS
 - [Creating a tvOS media catalog app in SwiftUI](creating-a-tvos-media-catalog-app-in-swiftui.md)
   Build standard content lockups and rows of content shelves for your tvOS app.
+### Handling system recenter events
+- [enum WorldRecenterPhase](worldrecenterphase.md)
+  A type that represents information associated with a phase of a system recenter event. Values of this type are passed to the closure specified in View.onWorldRecenter(action:).
 
 ## See Also
 

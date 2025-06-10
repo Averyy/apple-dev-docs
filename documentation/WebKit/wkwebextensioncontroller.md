@@ -1,6 +1,6 @@
 # WKWebExtensionController
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that manages a set of loaded extension contexts.

@@ -29,7 +29,7 @@ If [`true`](https://developer.apple.com/documentation/swift/true), the user rema
   Returns the name of the input element to which the user remaps the given physical element.
 - [func mappedPhysicalInputNames(forElementAlias: String) -> Set<String>](gcphysicalinputprofile/mappedphysicalinputnames(forelementalias:).md)
   Returns the physical input elements to which the user remaps the given input element.
-- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../foundation/nsnotification/name/4066959-gccontrollerusercustomizationsdi.md)
+- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerUserCustomizationsDidChange.md)
   A notification that posts when the user customizes the button mappings or other settings of a controller.
 
 

@@ -107,13 +107,16 @@ Chart(data) {
   Creates a point mark with fixed x position and plots values with y.
 - [init<X>(x: PlottableValue<X>, y: CGFloat?)](pointmark/init(x:y:)-9hppd.md)
   Creates a point mark that plots a value on x with fixed y position.
+- [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](pointmark/init(x:y:z:).md)
 
 ## Relationships
 
 ### Conforms To
+- [Chart3DContent](chart3dcontent.md)
 - [ChartContent](chartcontent.md)
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

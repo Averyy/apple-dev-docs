@@ -9,7 +9,7 @@ Creates a configuration option with the specified raw value.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -24,7 +24,7 @@ init(rawValue: Int)
 ## See Also
 
 - [let rawValue: Int](roombuilder/configurationoptions/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
+  A raw value for a configuration option.
 
 
 ---

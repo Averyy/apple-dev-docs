@@ -1,6 +1,6 @@
 # DailyForecast
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 A collection of day forecasts for a specified range of days.

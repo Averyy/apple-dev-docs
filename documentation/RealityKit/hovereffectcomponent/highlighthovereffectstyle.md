@@ -20,17 +20,10 @@ struct HighlightHoverEffectStyle
 
 ## Topics
 
-### Operators
-- [static func == (HoverEffectComponent.HighlightHoverEffectStyle, HoverEffectComponent.HighlightHoverEffectStyle) -> Bool](hovereffectcomponent/highlighthovereffectstyle/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
-- [init(color: NSColor?, strength: Float)](hovereffectcomponent/highlighthovereffectstyle/init(color:strength:)-3wyrf.md)
+- [init(color:strength:)](hovereffectcomponent/highlighthovereffectstyle/init(color:strength:).md)
   Creates a new highlight effect with a color and strength.
-- [init(color: UIColor?, strength: Float)](hovereffectcomponent/highlighthovereffectstyle/init(color:strength:)-7ccfh.md)
-  Creates a new highlight effect with a color and strength.
-- [init(color: NSColor?, strength: Float, opacityFunction: HoverEffectComponent.OpacityFunction)](hovereffectcomponent/highlighthovereffectstyle/init(color:strength:opacityfunction:)-17yj0.md)
-  Creates a new highlight effect with a color and strength.
-- [init(color: UIColor?, strength: Float, opacityFunction: HoverEffectComponent.OpacityFunction)](hovereffectcomponent/highlighthovereffectstyle/init(color:strength:opacityfunction:)-9915c.md)
+- [init(color:strength:opacityFunction:)](hovereffectcomponent/highlighthovereffectstyle/init(color:strength:opacityfunction:).md)
   Creates a new highlight effect with a color and strength.
 ### Instance Properties
 - [var color: NSColor](hovereffectcomponent/highlighthovereffectstyle/color-369cd.md)
@@ -44,8 +37,6 @@ struct HighlightHoverEffectStyle
 ### Type Properties
 - [static let `default`: HoverEffectComponent.HighlightHoverEffectStyle](hovereffectcomponent/highlighthovereffectstyle/default.md)
   The default style applies a white uniform glow to the affect entity as well as a white spotlight glow at the hover location
-### Default Implementations
-- [Equatable Implementations](hovereffectcomponent/highlighthovereffectstyle/equatable-implementations.md)
 
 ## Relationships
 

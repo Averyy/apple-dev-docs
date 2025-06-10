@@ -1,6 +1,6 @@
 # WebMenuItemPDFContinuous
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Display all pages in a PDF document continuously, using a vertical scroll bar, if necessary.

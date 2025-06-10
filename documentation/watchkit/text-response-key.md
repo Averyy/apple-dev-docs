@@ -1,6 +1,6 @@
 # Text Response Key
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Keys for retrieving text response information.
 

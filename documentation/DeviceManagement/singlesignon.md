@@ -8,8 +8,6 @@ The payload you use to configure single sign-on (SSO).
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,21 +19,23 @@ object SingleSignOn
 
 Specify `com.apple.sso` as the payload type.
 
+Deprecated in iOS 26. Use the [`ExtensibleSingleSignOn`](extensiblesinglesignon.md) payload instead.
+
 ##### Profile Availability
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS |
-| User Channel | - |
-| Allow Manual Install | iOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS |
-| Allow Multiple Payloads | - |
+| Device channel | iOS |
+| User channel | NA |
+| Allow manual install | iOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -86,8 +86,9 @@ Specify `com.apple.sso` as the payload type.
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object SingleSignOn.Kerberos](singlesignon/kerberos-data.dictionary.md)
+  The Kerberos dictionary.
 
 ## See Also
 

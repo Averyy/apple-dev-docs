@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-The `Handle`s of all remote members who will be invited to join the `Conversation`.
+The handles of all remote members who receive an invite  to join the conversation.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,11 @@ The `Handle`s of all remote members who will be invited to join the `Conversatio
 ```swift
 final let handles: [Handle]
 ```
+
+## See Also
+
+- [let isVideo: Bool](startconversationaction/isvideo.md)
+  A value that specifies if the conversation contains a video stream.
 
 
 ---

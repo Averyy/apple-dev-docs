@@ -21,7 +21,7 @@ Cells are used by most of the [`NSControl`](nscontrol.md) classes to implement t
 
 ##### Designated Initializers
 
-When subclassing `NSCell` you must implement all of the designated initializers. Those methods include `init`, [`init(coder:)`](https://developer.apple.com/documentation/OSLog/OSLogEntry/init(coder:)), [`init(textCell:)`](nscell/init(textcell:).md), and [`init(imageCell:)`](nscell/init(imagecell:).md).
+When subclassing `NSCell` you must implement all of the designated initializers. Those methods include [`init()`](nscell/init().md), [`init(coder:)`](nscell/init(coder:).md), [`init(textCell:)`](nscell/init(textcell:).md), and [`init(imageCell:)`](nscell/init(imagecell:).md).
 
 ## Topics
 

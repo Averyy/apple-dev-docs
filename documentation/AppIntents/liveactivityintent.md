@@ -8,8 +8,8 @@ An intent that starts, pauses, or otherwise modifies a Live Activity when it run
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
-- visionOS 1.0+
+- Mac Catalyst ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -27,6 +27,7 @@ To gain permission for starting Live Activities, conform to this protocol. Creat
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SystemIntent](systemintent.md)
 
 ## See Also

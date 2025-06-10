@@ -1,6 +1,6 @@
 # TEXTURE_MIN_FILTER
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

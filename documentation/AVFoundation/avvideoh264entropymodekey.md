@@ -25,8 +25,6 @@ This property controls whether an H.264 encoder uses [`AVVideoH264EntropyModeCAV
 
 > ❗ **Important**:  The default value is encoder-specific and may change depending on other encoder settings. Set a value for this property only if the requested profile and level support it. Setting an incompatible value may result in encoding errors or a noncompliant output stream.
 
- The default value is encoder-specific and may change depending on other encoder settings. Set a value for this property only if the requested profile and level support it. Setting an incompatible value may result in encoding errors or a noncompliant output stream.
-
 ## See Also
 
 - [let AVVideoH264EntropyModeCABAC: String](avvideoh264entropymodecabac.md)

@@ -56,6 +56,7 @@ AsyncImage(url: URL(string: "https://example.com/icon.png")) { phase in
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

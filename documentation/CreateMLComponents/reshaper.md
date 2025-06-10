@@ -60,6 +60,7 @@ struct Reshaper<Scalar> where Scalar : MLShapedArrayScalar, Scalar : Decodable, 
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transformer](transformer.md)
 
 ## See Also

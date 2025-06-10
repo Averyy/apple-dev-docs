@@ -51,7 +51,7 @@ For example, this error code may be returned if your application attempts to pos
 - [static var matchRequestInvalid: GKError.Code](gkerror/matchrequestinvalid.md)
   The system can’t complete the requested operation because the match request is invalid.
 - [static var notAuthenticated: GKError.Code](gkerror/notauthenticated.md)
-  The system can’t complete the requested operation because the system hasn’t authenticated the local player.
+  The system can’t complete the requested operation because the system hasn’t initialized the local player.
 - [static var notSupported: GKError.Code](gkerror/notsupported.md)
   The app doesn’t have Game Center enabled.
 - [static var parentalControlsBlocked: GKError.Code](gkerror/parentalcontrolsblocked.md)

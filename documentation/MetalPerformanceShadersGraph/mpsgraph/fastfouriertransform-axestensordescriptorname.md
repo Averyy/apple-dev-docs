@@ -35,8 +35,6 @@ This operation computes the fast Fourier transform of the input tensor according
 
 > 💡 **Tip**: Currently MPSGraph supports the transformation only within the last four dimensions of the input tensor. In case you need to transform higher dimensions than the last four, you can tranpose the higher dimensions of the input with [`transpose(_:permutation:name:)`](mpsgraph/transpose(_:permutation:name:).md)  to be within that last four and then transpose the result tensor back with the inverse of the input transpose.
 
-Currently MPSGraph supports the transformation only within the last four dimensions of the input tensor. In case you need to transform higher dimensions than the last four, you can tranpose the higher dimensions of the input with [`transpose(_:permutation:name:)`](mpsgraph/transpose(_:permutation:name:).md)  to be within that last four and then transpose the result tensor back with the inverse of the input transpose.
-
 ## Parameters
 
 - `tensor`: A complex or real-valued input tensor.

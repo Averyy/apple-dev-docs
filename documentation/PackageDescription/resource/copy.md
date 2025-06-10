@@ -34,6 +34,8 @@ If your resources must remain untouched or must retain a specific folder structu
   Applies a platform-specific rules to the resource at the given path.
 - [Resource.Localization](resource/localization.md)
   Defines the explicit type of localization for resources.
+- [static func embedInCode(String) -> Resource](resource/embedincode(_:).md)
+  Applies the embed rule to a resource at the given path.
 
 
 ---

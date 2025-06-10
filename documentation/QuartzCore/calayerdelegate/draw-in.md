@@ -48,8 +48,6 @@ class LayerDelegate: NSObject, CALayerDelegate {
 
 > ❗ **Important**:  This method is not called if the delegate implements [`display(_:)`](calayerdelegate/display(_:).md).
 
- This method is not called if the delegate implements [`display(_:)`](calayerdelegate/display(_:).md).
-
 ## Parameters
 
 - `layer`: The layer whose contents need to be drawn.

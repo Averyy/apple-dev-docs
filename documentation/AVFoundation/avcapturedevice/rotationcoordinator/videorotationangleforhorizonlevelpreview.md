@@ -1,6 +1,6 @@
 # videoRotationAngleForHorizonLevelPreview
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 An angle the coordinator provides your app to apply to the preview layer so that it’s level relative to gravity.

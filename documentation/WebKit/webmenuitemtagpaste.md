@@ -1,6 +1,6 @@
 # WebMenuItemTagPaste
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Paste the content on the clipboard onto the current selection.

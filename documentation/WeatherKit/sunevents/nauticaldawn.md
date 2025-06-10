@@ -1,6 +1,6 @@
 # nauticalDawn
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The time of nautical sunrise when the sun’s center is 12° below the horizon.

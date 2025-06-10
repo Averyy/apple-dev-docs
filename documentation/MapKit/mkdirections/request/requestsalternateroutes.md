@@ -12,6 +12,7 @@ A Boolean value that indicates whether your app requests multiple routes when th
 - macOS 10.9+
 - tvOS ?+
 - visionOS 1.0+
+- watchOS 2.0+
 
 ## Declaration
 

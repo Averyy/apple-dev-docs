@@ -20,8 +20,6 @@ The identifier is either a UUID or a UUID with additional differentiating bytes.
 
 > ❗ **Important**: Don’t subclass this class.
 
-Don’t subclass this class.
-
 ## Topics
 
 ### Accessing identifier properties
@@ -44,6 +42,7 @@ Don’t subclass this class.
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

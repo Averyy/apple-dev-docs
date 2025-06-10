@@ -9,6 +9,7 @@ An error type that indicates problems when preparing a mobile document reader se
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -70,6 +71,7 @@ enum MobileDocumentReaderError
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

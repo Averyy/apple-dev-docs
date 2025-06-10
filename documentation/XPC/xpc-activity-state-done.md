@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_STATE_DONE
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 The activity is complete.

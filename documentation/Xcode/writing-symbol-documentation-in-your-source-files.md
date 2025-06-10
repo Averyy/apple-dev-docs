@@ -22,8 +22,6 @@ Replace the Description placeholder with a summary for the symbol.
 
 > 💡 **Tip**: The Add Documentation action recognizes the type of symbol and generates a template that includes placeholders for all the necessary elements, such as parameters and return values.
 
-The Add Documentation action recognizes the type of symbol and generates a template that includes placeholders for all the necessary elements, such as parameters and return values.
-
 After you add a summary, Option-click the symbol to review the changes in Xcode’s Quick Help. It displays the text you add directly below the Summary header.
 
 ![A screenshot of Xcode’s Quick Help pop-over displaying a method’s summary above its declaration.](https://docs-assets.developer.apple.com/published/8c5b583faf8120af45f00ad3e6fe1a17/quick-help-method-summary%402x.png)

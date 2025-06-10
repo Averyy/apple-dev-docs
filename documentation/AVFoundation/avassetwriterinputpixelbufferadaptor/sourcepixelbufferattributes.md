@@ -16,7 +16,7 @@ The attributes of the pixel buffers that the pool contains.
 ## Declaration
 
 ```swift
-var sourcePixelBufferAttributes: [String : Any]? { get }
+var sourcePixelBufferAttributes: [String : any Sendable]? { get }
 ```
 
 ## See Also

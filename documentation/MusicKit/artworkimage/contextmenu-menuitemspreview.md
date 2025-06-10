@@ -1,6 +1,6 @@
 # contextMenu(menuItems:preview:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Adds a context menu with a custom preview to a view.

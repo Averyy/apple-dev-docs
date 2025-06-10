@@ -13,6 +13,7 @@ Updates the points of interest and the current selection.
 ## Declaration
 
 ```swift
+@MainActor
 func setPointsOfInterest(_ pointsOfInterest: [CPPointOfInterest], selectedIndex: Int)
 ```
 

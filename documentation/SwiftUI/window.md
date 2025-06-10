@@ -1,12 +1,13 @@
 # Window
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A scene that presents its content in a single, unique window.
 
 **Availability**:
 - macOS 13.0+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -120,4 +121,4 @@ If your app uses a single window as its primary scene, the app quits when the wi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/window)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/window)*

@@ -15,6 +15,9 @@ typedef enum { ... } ar_camera_position_t;
 
 ### Camera positions
 - [ar_camera_position_left](ar_camera_position_t/ar_camera_position_left.md)
+### Enumeration Cases
+- [ar_camera_position_right](ar_camera_position_t/ar_camera_position_right.md)
+  Camera position on the right side of the device.
 
 ## See Also
 

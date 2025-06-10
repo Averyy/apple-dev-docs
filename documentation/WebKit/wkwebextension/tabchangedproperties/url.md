@@ -1,6 +1,6 @@
 # URL
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the URL changed.

@@ -8,7 +8,7 @@ A value that Siri uses to fulfill a person’s request.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -37,6 +37,7 @@ Don’t adopt this protocol directly, instead use the [`AssistantEnum(schema:)`]
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StaticDisplayRepresentable](staticdisplayrepresentable.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 ### Inherited By

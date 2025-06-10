@@ -1,6 +1,6 @@
 # init(screenshot:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an attachment containing a PNG representation of the provided screenshot.

@@ -1,6 +1,6 @@
 # rotation3DEffect(_:axis:anchor:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Rotates content by an angle about an axis that you specify as a tuple of elements.

@@ -1,6 +1,6 @@
 # Storyboard support
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Connect your code to storyboard elements using interface controllers, interface objects, and event handlers.
 
@@ -123,4 +123,4 @@ The WatchKit framework includes classes to control user interface elements that 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/storyboard-support)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/storyboard-support)*

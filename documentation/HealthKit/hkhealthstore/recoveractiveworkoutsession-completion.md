@@ -6,6 +6,8 @@
 Recovers an active workout session.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
 - watchOS 5.0+
 
 ## Declaration

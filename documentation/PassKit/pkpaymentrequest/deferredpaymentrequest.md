@@ -1,6 +1,6 @@
 # deferredPaymentRequest
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property
 
 A request to set up a deferred payment, such as a hotel booking or a pre-order.

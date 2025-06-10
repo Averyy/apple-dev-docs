@@ -1,6 +1,6 @@
 # restoreWindow(withIdentifier:state:completionHandler:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Invoked to request that a window be restored.

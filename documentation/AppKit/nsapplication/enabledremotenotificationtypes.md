@@ -1,6 +1,6 @@
 # enabledRemoteNotificationTypes
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The types of push notifications that the app accepts.
@@ -41,4 +41,4 @@ This property contains a bitmask whose values indicate the types of push notific
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsapplication/enabledremotenotificationtypes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsapplication/enabledremotenotificationtypes)*

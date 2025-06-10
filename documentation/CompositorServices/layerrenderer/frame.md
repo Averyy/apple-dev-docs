@@ -6,6 +6,7 @@
 A type that provides access to the timing information and data types you need to render a single frame of content.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -54,7 +55,15 @@ Separate the work you do for each frame into two phases: the update phase and th
   Creates an uninitialized frame.
 ### Instance Methods
 - [func binocularFrustumMatrix(convention: AxisDirectionConvention, increaseTangents: SIMD4<Float>, depthRange: SIMD2<Float>) -> matrix_float4x4](layerrenderer/frame/binocularfrustummatrix(convention:increasetangents:depthrange:).md)
+- [func binocularFrustumMatrixForDrawableTarget(drawableTarget: LayerRenderer.Drawable.Target, convention: AxisDirectionConvention, increaseTangents: SIMD4<Float>, depthRange: SIMD2<Float>) -> matrix_float4x4](layerrenderer/frame/binocularfrustummatrixfordrawabletarget(drawabletarget:convention:increasetangents:depthrange:).md)
+  Returns the transform which can be used for binocular frustum culling. A matrix to convert between the device coordinate space to normalized device coordinate space. This should be acquired between starting and submitting a frame. Renderer should not utilize this transform for actual rendering output.
+- [func drawableTargetViewCount(target: LayerRenderer.Drawable.Target) -> Int](layerrenderer/frame/drawabletargetviewcount(target:).md)
+  Returns the number of view in the drawable target.
 - [func monocularFrustumMatrix(convention: AxisDirectionConvention, viewIndex: Int, increaseTangents: SIMD4<Float>, depthRange: SIMD2<Float>) -> matrix_float4x4](layerrenderer/frame/monocularfrustummatrix(convention:viewindex:increasetangents:depthrange:).md)
+- [func monocularFrustumMatrixForDrawableTarget(drawableTarget: LayerRenderer.Drawable.Target, convention: AxisDirectionConvention, viewIndex: Int, increaseTangents: SIMD4<Float>, depthRange: SIMD2<Float>) -> matrix_float4x4](layerrenderer/frame/monocularfrustummatrixfordrawabletarget(drawabletarget:convention:viewindex:increasetangents:depthrange:).md)
+  Returns the transform which can be used for monocular frustum culling for given view. A matrix to convert between the device coordinate space to normalized device coordinate space This should be acquired between starting and submitting a frame. Renderer should not utilize this transform for actual rendering output.
+- [func queryDrawables() -> [LayerRenderer.Drawable]](layerrenderer/frame/querydrawables.md)
+  Returns the array of drawables expected to be used for the given frame. These drawables each have textures, transforms and timing information for drawing the frame.
 
 ## Relationships
 

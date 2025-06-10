@@ -1,6 +1,6 @@
 # generateCapsule(height:radius:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: method
 
 Creates a capsule shape with the specified height and radius.
@@ -10,6 +10,7 @@ Creates a capsule shape with the specified height and radius.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

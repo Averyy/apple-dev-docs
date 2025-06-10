@@ -1,6 +1,6 @@
 # XCTSkipIf(_:_:file:line:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: func
 
 Skips remaining tests in a test method if the specified condition is met.

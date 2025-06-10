@@ -48,6 +48,8 @@ enum Code
 - [MTRInteractionError.Code.unsupportedEvent](mtrinteractionerror/code/unsupportedevent.md)
 - [MTRInteractionError.Code.unsupportedRead](mtrinteractionerror/code/unsupportedread.md)
 - [MTRInteractionError.Code.unsupportedWrite](mtrinteractionerror/code/unsupportedwrite.md)
+- [MTRInteractionError.Code.accessRestricted](mtrinteractionerror/code/accessrestricted.md)
+- [MTRInteractionError.Code.invalidTransportType](mtrinteractionerror/code/invalidtransporttype.md)
 ### Initializers
 - [init?(rawValue: Int)](mtrinteractionerror/code/init(rawvalue:).md)
 
@@ -59,6 +61,7 @@ enum Code
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

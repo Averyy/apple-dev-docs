@@ -1,6 +1,6 @@
 # ProductData
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 A base type for all weather data.

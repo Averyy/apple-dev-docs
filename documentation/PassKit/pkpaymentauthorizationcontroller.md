@@ -25,8 +25,6 @@ After the user authorizes the payment request for a transaction, the delegate is
 
 > ❗ **Important**:  The [`PKPaymentAuthorizationController`](pkpaymentauthorizationcontroller.md) class performs the same role as the [`PKPaymentAuthorizationViewController`](pkpaymentauthorizationviewcontroller.md) class, but it does not depend on the UIKit framework. This means that the authorization controller can be used in places where a view controller cannot (for example, in watchOS apps or in SiriKit extensions).
 
- The [`PKPaymentAuthorizationController`](pkpaymentauthorizationcontroller.md) class performs the same role as the [`PKPaymentAuthorizationViewController`](pkpaymentauthorizationviewcontroller.md) class, but it does not depend on the UIKit framework. This means that the authorization controller can be used in places where a view controller cannot (for example, in watchOS apps or in SiriKit extensions).
-
 ## Topics
 
 ### Creating a payment authorization controller

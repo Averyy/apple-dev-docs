@@ -7,8 +7,8 @@ An extension that specifies the height-to-width ratio of pixels found in the vid
 
 ## Mentions
 
-- [Video sample data](video_sample_data.md)
 - [QuickTime File Format change log](revision_history.md)
+- [Video sample data](video_sample_data.md)
 
 #### Overview
 

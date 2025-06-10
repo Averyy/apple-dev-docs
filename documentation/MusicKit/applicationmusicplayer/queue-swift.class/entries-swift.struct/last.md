@@ -1,6 +1,6 @@
 # last
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: property
 
 The last element of the collection.

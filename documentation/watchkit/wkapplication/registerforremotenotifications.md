@@ -1,6 +1,6 @@
 # registerForRemoteNotifications()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Register to receive remote notifications from the Apple Push Notification service (APNs).
@@ -22,8 +22,6 @@ Before calling this method, you must enable your WatchKit extension’s Push Not
 Call this method to register a device with APNs. If registration succeeds, the system calls your app delegate’s [`didRegisterForRemoteNotifications(withDeviceToken:)`](wkapplicationdelegate/didregisterforremotenotifications(withdevicetoken:).md) method and passes it a device token. Pass this token to the provider server you use to generate remote notifications for this device. If registration fails, the system calls your app delegate’s [`didFailToRegisterForRemoteNotificationsWithError(_:)`](wkapplicationdelegate/didfailtoregisterforremotenotificationswitherror(_:).md) method instead.
 
 > ❗ **Important**:  Device tokens may change, so don’t cache the device token on the device. Instead, register for remote notifications every time your app launches. If the device token hasn’t changed, registration happens quickly.
-
- Device tokens may change, so don’t cache the device token on the device. Instead, register for remote notifications every time your app launches. If the device token hasn’t changed, registration happens quickly.
 
 To display alerts, play sounds, or perform other user-facing actions, you must also request authorization using the [`UNUserNotificationCenter`](https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenter) class’s [`requestAuthorization(options:completionHandler:)`](https://developer.apple.com/documentation/UserNotifications/UNUserNotificationCenter/requestAuthorization(options:completionHandler:)) method. If you don’t request and receive authorization for your app’s interactions, the system delivers all remote notifications to your app silently.
 

@@ -1,6 +1,6 @@
 # findEntity(id:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: method
 
 Returns `Entity` with the given `Entity.ID` in the `Scene`.
@@ -10,6 +10,7 @@ Returns `Entity` with the given `Entity.ID` in the `Scene`.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -35,7 +36,7 @@ Returns `Entity` with the given `Entity.ID` in the `Scene`.
 
 - [func findEntity(named: String) -> Entity?](scene/findentity(named:).md)
   Searches the scene’s anchor entity hierarchies for an entity with the given name.
-- [func performQuery(EntityQuery) -> QueryResult<Entity>](scene/performquery(_:).md)
+- [func performQuery(_:)](scene/performquery(_:).md)
   Returns all entities of the scene which pass the query.
 
 

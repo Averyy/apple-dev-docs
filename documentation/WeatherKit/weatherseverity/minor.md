@@ -1,6 +1,6 @@
 # WeatherSeverity.minor
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Minimal or no known threat.

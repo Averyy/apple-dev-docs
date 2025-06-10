@@ -60,6 +60,7 @@ print(numbers[..<3])
 ## Relationships
 
 ### Conforms To
+- [BNNSGraph.Builder.SliceIndex](../Accelerate/BNNSGraph/Builder/SliceIndex.md)
 - [Copyable](copyable.md)
 - [CustomTestStringConvertible](../Testing/CustomTestStringConvertible.md)
 - [Decodable](decodable.md)
@@ -68,6 +69,7 @@ print(numbers[..<3])
 - [MLTensorRangeExpression](../CoreML/MLTensorRangeExpression.md)
 - [RangeExpression](rangeexpression.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

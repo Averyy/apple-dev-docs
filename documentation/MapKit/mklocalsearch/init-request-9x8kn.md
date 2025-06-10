@@ -12,6 +12,7 @@ Creates and returns a search object for fetching points of interest.
 - macOS 11.0+
 - tvOS 14.0+
 - visionOS 1.0+
+- watchOS 7.0+
 
 ## Declaration
 

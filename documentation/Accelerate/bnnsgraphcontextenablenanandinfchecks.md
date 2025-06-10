@@ -31,6 +31,8 @@ Don’t enable this option for production code.
 
 ## See Also
 
+- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](bnnsgraphcontextsetstreamingadvancecount(_:_:).md)
+  Sets the streaming advancement amount for cases with dynamically shaped inputs.
 - [func BNNSGraphContextSetArgumentType(bnns_graph_context_t, BNNSGraphArgumentType) -> Int32](bnnsgraphcontextsetargumenttype(_:_:).md)
   Specifies the argument type for a graph context.
 - [struct BNNSGraphArgumentType](bnnsgraphargumenttype.md)
@@ -43,6 +45,8 @@ Don’t enable this option for production code.
   Sets the batch size for a graph.
 - [func BNNSGraphContextGetWorkspaceSize(bnns_graph_context_t, UnsafePointer<CChar>?) -> Int](bnnsgraphcontextgetworkspacesize(_:_:).md)
   Returns the minimum size, in bytes, of the workspace that graph context execution requires.
+- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](bnnsgraphcontextsetstreamingadvancecount(_:_:).md)
+  Sets the streaming advancement amount for cases with dynamically shaped inputs.
 
 
 ---

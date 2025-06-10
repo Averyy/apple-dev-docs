@@ -31,7 +31,19 @@ This method serves as the basis for the less-than-or-equal-to operator (`<=`) fo
 
 - Because NaN is incomparable with any value, this method returns `false` when called on NaN or when NaN is passed as `other`.
 - `-infinity` compares less than or equal to all values except NaN.
-- Every value except NaN compares less than or equal to `+infinity`. let x = 15.0 x.isLessThanOrEqualTo(20.0) // true x.isLessThanOrEqualTo(.nan) // false Double.nan.isLessThanOrEqualTo(x) // false
+- Every value except NaN compares less than or equal to `+infinity`.
+
+The following example shows the behavior of the `isLessThanOrEqualTo(_:)` method with different kinds of values:
+
+```swift
+let x = 15.0
+x.isLessThanOrEqualTo(20.0)
+// true
+x.isLessThanOrEqualTo(.nan)
+// false
+Double.nan.isLessThanOrEqualTo(x)
+// false
+```
 
 The `isLessThanOrEqualTo(_:)` method implements the less-than-or-equal predicate defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 

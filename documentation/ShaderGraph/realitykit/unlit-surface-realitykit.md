@@ -5,13 +5,21 @@
 
 A surface shader that defines properties for a RealityKit Unlit material.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Parameter Descriptions
 
 #### Discussion
 
-The Unlit Surface node produces a custom surface based on its input parameters. Connect the output of the Unlit Surface node connect to the `Custom Surface` output of your material.
+The `Unlit Surface` node produces a custom surface based on its input parameters. Connect the output of the `Unlit Surface` node connect to the `Custom Surface` output of your material.
 
 ## See Also
 

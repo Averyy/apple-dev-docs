@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_STATE_CONTINUE
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 The activity continues its operation beyond the return of its handler block.

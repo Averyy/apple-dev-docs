@@ -22,8 +22,8 @@ var minPlayers: Int { get set }
 
 ## Mentions
 
-- [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
 - [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
 
 #### Discussion
 

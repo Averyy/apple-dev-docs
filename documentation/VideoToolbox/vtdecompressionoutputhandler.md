@@ -1,6 +1,6 @@
 # VTDecompressionOutputHandler
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: typealias
 
 The prototype for the block invoked when frame decompression is complete.

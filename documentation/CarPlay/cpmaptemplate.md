@@ -1,6 +1,6 @@
 # CPMapTemplate
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: class
 
 A template that displays a navigation overlay that your app draws on the map.
@@ -13,6 +13,7 @@ A template that displays a navigation overlay that your app draws on the map.
 ## Declaration
 
 ```swift
+@MainActor
 class CPMapTemplate
 ```
 
@@ -107,6 +108,8 @@ You can display additional map buttons by providing an array of [`CPMapButton`](
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -124,4 +127,4 @@ You can display additional map buttons by providing an array of [`CPMapButton`](
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cpmaptemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cpmaptemplate)*

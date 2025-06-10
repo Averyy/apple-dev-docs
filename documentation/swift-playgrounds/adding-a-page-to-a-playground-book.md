@@ -20,8 +20,6 @@ For each page in your playground book, create a `main.swift` file. This file is 
 
 > ❗ **Important**: If you’re writing a book that targets a version of the Swift Playgrounds book format earlier than `6.0`, use the name `Contents.swift` instead of `main.swift`.
 
-If you’re writing a book that targets a version of the Swift Playgrounds book format earlier than `6.0`, use the name `Contents.swift` instead of `main.swift`.
-
 By default, everything you write in `main.swift` is treated as normal Swift code that runs when a learner taps the Run button. Playground pages support rich annotions that you use to write prose and add functionality. For more information about annotations, see  and [`Writing Prose for a Playground Page`](writing-prose-for-a-playground-page.md).
 
 ##### Add an Always on Live View

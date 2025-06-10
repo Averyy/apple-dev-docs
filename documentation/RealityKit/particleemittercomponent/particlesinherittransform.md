@@ -10,6 +10,7 @@ Determines if the entity’s transformation also affects the particles.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

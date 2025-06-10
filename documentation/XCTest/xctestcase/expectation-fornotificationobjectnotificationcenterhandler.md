@@ -1,6 +1,6 @@
 # expectation(forNotification:object:notificationCenter:handler:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Creates an expectation that the test fulfills when it receives a specific notification from a specific notification center for a specified object.

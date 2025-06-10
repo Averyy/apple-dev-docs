@@ -54,6 +54,8 @@ Model3D(url: url) { phase in
   A view for displaying static three-dimensional models.
 - [struct Model3DPlaceholderContent](model3dplaceholdercontent.md)
   A container view that presents either a 3D model or a placeholder for one.
+- [class Model3DAsset](model3dasset.md)
+  A container used to represent the asset loaded into the Model3D View.
 
 
 ---

@@ -1,6 +1,6 @@
 # HourWeather
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure that represents the weather conditions for the hour.
@@ -81,6 +81,8 @@ struct HourWeather
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

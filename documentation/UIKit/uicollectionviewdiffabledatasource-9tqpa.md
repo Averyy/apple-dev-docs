@@ -43,8 +43,6 @@ Then, you generate the current state of the data and display the data in the UI 
 
 > ❗ **Important**:  Don’t change the [`dataSource`](uitableview/datasource.md) on the collection view after you configure it with a diffable data source. If the collection view needs a new data source after you configure it initially, create and configure a new collection view and diffable data source.
 
- Don’t change the [`dataSource`](uitableview/datasource.md) on the collection view after you configure it with a diffable data source. If the collection view needs a new data source after you configure it initially, create and configure a new collection view and diffable data source.
-
 ## Topics
 
 ### Creating a diffable data source
@@ -118,6 +116,7 @@ Then, you generate the current state of the data and display the data in the UI 
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UICollectionViewDataSource](uicollectionviewdatasource.md)
 
 ## See Also

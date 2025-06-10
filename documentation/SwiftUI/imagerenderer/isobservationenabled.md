@@ -20,6 +20,11 @@ If observers of this observed object should be notified when the produced image 
 final var isObservationEnabled: Bool { get set }
 ```
 
+## See Also
+
+- [let objectWillChange: PassthroughSubject<Void, Never>](imagerenderer/objectwillchange.md)
+  A publisher that informs subscribers of changes to the image.
+
 
 ---
 

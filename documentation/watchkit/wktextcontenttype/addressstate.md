@@ -1,6 +1,6 @@
 # addressState
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The name of a state.

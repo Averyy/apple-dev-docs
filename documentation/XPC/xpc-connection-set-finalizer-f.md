@@ -1,6 +1,6 @@
 # xpc_connection_set_finalizer_f(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Sets the finalizer for the connection.

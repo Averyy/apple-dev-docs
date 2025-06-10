@@ -71,6 +71,8 @@ class CatTracksCollectionViewController: UIViewController, UICollectionViewDataS
 ### Instance Properties
 - [var backgroundColor: UIColor?](tipuicollectionviewcell/backgroundcolor.md)
   The background color to use for the tip view.
+- [var backgroundStyle: any ShapeStyle](tipuicollectionviewcell/backgroundstyle.md)
+  The background style to use for the tip view.
 - [var cornerRadius: CGFloat](tipuicollectionviewcell/cornerradius.md)
   Corner radius for the tip view.
 - [var imageSize: CGSize](tipuicollectionviewcell/imagesize.md)

@@ -14,6 +14,10 @@ Attributes that describe a Devices resource.
 object Device.Attributes
 ```
 
+## Mentions
+
+- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
+
 
 ---
 

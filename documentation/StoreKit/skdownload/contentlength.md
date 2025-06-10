@@ -15,7 +15,8 @@ The length of the downloadable content, in bytes.
 ## Declaration
 
 ```swift
-var contentLength: Int64 { get }
+@NSCopying
+var contentLength: NSNumber { get }
 ```
 
 ## See Also

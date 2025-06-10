@@ -37,10 +37,11 @@ enum ACAccountCredentialRenewResult
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [func renewCredentials(for: ACAccount!, completion: ACAccountStoreCredentialRenewalHandler!)](acaccountstore/renewcredentials(for:completion:).md)
+- [func renewCredentials(for: ACAccount!, completion: ((ACAccountCredentialRenewResult, (any Error)?) -> Void)!)](acaccountstore/renewcredentials(for:completion:).md)
   Renews account credentials when the credentials are no longer valid.
 - [typealias ACAccountStoreCredentialRenewalHandler](acaccountstorecredentialrenewalhandler.md)
   Specifies a handler to call when credentials are renewed.

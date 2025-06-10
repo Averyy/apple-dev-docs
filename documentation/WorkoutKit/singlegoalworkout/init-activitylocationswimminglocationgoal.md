@@ -1,6 +1,6 @@
 # init(activity:location:swimmingLocation:goal:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: init
 
 Creates a new workout with a single goal.
@@ -10,6 +10,7 @@ Creates a new workout with a single goal.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

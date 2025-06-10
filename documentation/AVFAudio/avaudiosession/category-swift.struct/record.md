@@ -1,6 +1,6 @@
 # record
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: property
 
 The category for recording audio while also silencing playback audio.

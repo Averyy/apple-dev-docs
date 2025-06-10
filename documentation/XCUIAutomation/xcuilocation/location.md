@@ -1,6 +1,6 @@
 # location
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 Returns the object that contains the latitude, longitude, and course information this proxy simulates for the device.
@@ -24,7 +24,7 @@ Returns the object that contains the latitude, longitude, and course information
 
 #### Discussion
 
-Use this property to access the underlying [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) this object wraps.
+Use this property to access the underlying doc://com.apple.documentation/documentation/corelocation/cllocation this object wraps.
 
 ## See Also
 

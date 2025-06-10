@@ -76,8 +76,6 @@ In the above example, search suggestions only render in iOS if the searchable mo
 
 - [var buttonRepeatBehavior: ButtonRepeatBehavior](environmentvalues/buttonrepeatbehavior.md)
   Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
-- [var controlSize: ControlSize](environmentvalues/controlsize.md)
-  The size to apply to controls within a view.
 - [var defaultWheelPickerItemHeight: CGFloat](environmentvalues/defaultwheelpickeritemheight.md)
   The default height of an item in a wheel-style picker, such as a date picker.
 - [var keyboardShortcut: KeyboardShortcut?](environmentvalues/keyboardshortcut.md)

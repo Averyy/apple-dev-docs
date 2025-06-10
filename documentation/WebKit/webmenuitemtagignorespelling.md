@@ -1,6 +1,6 @@
 # WebMenuItemTagIgnoreSpelling
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Ignore the misspelled word.

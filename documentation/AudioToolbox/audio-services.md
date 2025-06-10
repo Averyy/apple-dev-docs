@@ -70,6 +70,8 @@ You can use System Sound Services to play short (30 seconds or shorter) sounds. 
   Connect to audio hardware and manage the recording or playback process.
 - [Music Player](music-player.md)
   Create and play a sequence of tracks, and manage aspects of playback in response to standard events.
+- [Anchoring sound to a window or volume](spatializing-sound-from-a-uiscene.md)
+  Provide unique app experiences by attaching sounds to windows and volumes in 3D space.
 
 
 ---

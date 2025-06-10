@@ -10,6 +10,7 @@ A description of background, lighting, and acoustic properties for a view’s co
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -59,6 +60,10 @@ struct Environment
   Options that determine the state of high dynamic range rendering for virtual content.
 - [enum AntialiasingMode](antialiasingmode.md)
   The rendering technique used to smooth edges of virtual content.
+- [struct RealityViewPostProcessEffect](realityviewpostprocesseffect.md)
+  A struct for enabling or disabling post processing effects for all content a reality view contains.
+- [struct PostProcessEffectContext](postprocesseffectcontext.md)
+  An object RealityKit passes data to a post process effect method.
 - [ARView.RenderOptions](arview/renderoptions-swift.struct.md)
   The available rendering options that you use to selectively disable certain rendering effects.
 

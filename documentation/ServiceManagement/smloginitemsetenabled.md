@@ -22,8 +22,6 @@ Returns [`true`](https://developer.apple.com/documentation/swift/true) if the re
 
 > ❗ **Important**:  To enable or disable `LoginItems` in macOS 13 and later, use the [`register()`](smappservice/register().md) and [`unregister()`](smappservice/unregister().md) methods instead.
 
- To enable or disable `LoginItems` in macOS 13 and later, use the [`register()`](smappservice/register().md) and [`unregister()`](smappservice/unregister().md) methods instead.
-
 The build system places helper executables in the app’s bundle in the `Contents/Library/LoginItems` directory.
 
 ## Parameters

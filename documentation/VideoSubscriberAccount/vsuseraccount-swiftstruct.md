@@ -1,6 +1,6 @@
 # VSUserAccount
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: struct
 
 An object that represents a user’s account.
@@ -23,7 +23,7 @@ struct VSUserAccount
 There are two sources for a `VSUserAccount` instance:
 
 - You create an instance when a person registers a new account or signs into an existing account in your app, and you call [`update(_:)`](vsuseraccountmanager/update(_:).md) on [`VSUserAccountManager`](vsuseraccountmanager.md) with the instance.
-- You fetch user accounts by calling [`userAccounts(options:)`](vsuseraccountmanager/useraccounts(options:).md), which can return user accounts created on the current device, or user accounts registered on all the devices signed into the user’s iCloud account.
+- You fetch user accounts by calling [`userAccounts(options:)`](vsuseraccountmanager/useraccounts(options:).md), which can return user accounts created on the current device, or user accounts registered on all the devices signed into the person’s iCloud account.
 
 ## Topics
 
@@ -68,9 +68,12 @@ There are two sources for a `VSUserAccount` instance:
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [Signing people in to their media accounts automatically](signing-people-in-to-media-apps-automatically.md)
+  Implement single sign-on for media-streaming apps by managing a sign-in token on a person’s Apple Account.
 - [class VSUserAccountManager](vsuseraccountmanager.md)
   The object that coordinates your app’s user account actions.
 

@@ -1,6 +1,6 @@
 # UnitPoint3D
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A normalized 3D point in a view’s coordinate space.
@@ -135,6 +135,7 @@ It’s important to test your app for the different locales that you distribute 
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -146,8 +147,13 @@ It’s important to test your app for the different locales that you distribute 
   A normalized 2D point in a view’s coordinate space.
 - [struct Anchor](anchor.md)
   An opaque value derived from an anchor source and a particular view.
+- [protocol DepthAlignmentID](depthalignmentid.md)
+- [struct Alignment3D](alignment3d.md)
+  An alignment in all three axes.
+- [struct GeometryProxyCoordinateSpace3D](geometryproxycoordinatespace3d.md)
+  A representation of a `GeometryProxy3D` which can be used for `CoordinateSpace3D` based conversions.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/unitpoint3d)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/unitpoint3d)*

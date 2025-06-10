@@ -8,8 +8,8 @@ An atom that stores information that allows you to decode samples in the media.
 ## Mentions
 
 - [Sprite media](sprite_media.md)
-- [Music media](music_media.md)
 - [QuickTime File Format change log](revision_history.md)
+- [Music media](music_media.md)
 - [MPEG-1 media](mpeg-1_media.md)
 
 #### Overview
@@ -34,8 +34,6 @@ The sample description atom has an atom type of `'stsd'`. The sample description
 While the exact format of the sample description varies by media type, the first four fields of every sample description are the same.
 
 > ❗ **Important**: When parsing sample descriptions in the `‘stsd’` atom, be aware of the sample description size value in order to read each table entry correctly. Some sample descriptions terminate with four zero bytes that are not otherwise indicated.
-
-When parsing sample descriptions in the `‘stsd’` atom, be aware of the sample description size value in order to read each table entry correctly. Some sample descriptions terminate with four zero bytes that are not otherwise indicated.
 
 These four fields may be followed by additional data specific to the media type and data format. See [`Media data atom types`](media_data_atom_types.md) for additional details regarding specific media types and media formats.
 

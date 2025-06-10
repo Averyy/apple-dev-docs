@@ -17,7 +17,7 @@ func addObserver(_ observer: Any, selector: Selector, name: NSNotification.Name?
 
 #### Discussion
 
-The receiver does not retain `notificationObserver`. Therefore, you should always send [`removeObserver(_:)`](notificationcenter/removeobserver(_:).md) or [`removeObserver(_:name:object:)`](distributednotificationcenter/removeobserver(_:name:object:).md) to the receiver before releasing `notificationObserver`.
+The receiver does not retain `notificationObserver`. Therefore, you should always send `NotificationCenter/removeObserver(_:)` or [`removeObserver(_:name:object:)`](distributednotificationcenter/removeobserver(_:name:object:).md) to the receiver before releasing `notificationObserver`.
 
 ## Parameters
 

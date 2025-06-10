@@ -12,7 +12,7 @@ Loads the array of track readers that represent the tracks in the media asset.
 ## Declaration
 
 ```swift
-var trackReaders: [any METrackReader] { get async throws }
+func trackReaders() async throws -> [any METrackReader]
 ```
 
 ## Parameters

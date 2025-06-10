@@ -1,6 +1,6 @@
 # Media atom ('mdia')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that describes and defines a track’s media type and sample data.

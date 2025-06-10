@@ -29,9 +29,10 @@ enum LibraryType
 ### Creating a Value
 - [init?(rawValue: String)](product/library/librarytype/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
-### Accessing the Raw Value
+### Instance Properties
 - [var rawValue: String](product/library/librarytype/rawvalue-swift.property.md)
   The corresponding value of the raw type.
+### Type Aliases
 - [Product.Library.LibraryType.RawValue](product/library/librarytype/rawvalue-swift.typealias.md)
   The raw type that can be used to represent all values of the conforming type.
 ### Default Implementations

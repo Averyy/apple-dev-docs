@@ -39,8 +39,6 @@ The following example shows how you could define boundary times for each quarter
 
 > ❗ **Important**:  Use a `weak` reference to `self` in the callback block to prevent creating a retain cycle.
 
- Use a `weak` reference to `self` in the callback block to prevent creating a retain cycle.
-
 ## Parameters
 
 - `times`: An array of   objects containing   values that represent the times at which to invoke the callback. The system raises an exception if you pass an empty array.

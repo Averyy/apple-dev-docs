@@ -74,6 +74,9 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
 ### Specifying a custom compositor
 - [var customVideoCompositorClass: (any AVVideoCompositing.Type)?](avmutablevideocomposition/customvideocompositorclass.md)
   The custom compositor class to use.
+### Instance Properties
+- [var outputBufferDescription: [[CMTag]]?](avmutablevideocomposition/outputbufferdescription-90gl7.md)
+  The output buffers of the video composition can be specified with the outputBufferDescription. The value is an array of an array of CMTag objects that describes the output buffers.
 
 ## Relationships
 
@@ -88,6 +91,8 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSMutableCopying](../Foundation/NSMutableCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

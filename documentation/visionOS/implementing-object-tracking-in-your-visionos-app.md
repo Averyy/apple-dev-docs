@@ -1,6 +1,6 @@
 # Implementing object tracking in your visionOS app
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Create engaging interactions by training models to recognize and track real-world objects in your app.
 
@@ -16,7 +16,7 @@ You can use object tracking to provide virtual interactions with objects in a pe
 
 To integrate object tracking into your app, you start with a 3D model of a physical object, train a machine learning model in Create ML with that 3D model asset to obtain a reference object file, and then use the resulting reference object file to track the physical object in your app. The reference object file is a file format with a `.referenceobject` extension, specifically for object tracking in visionOS.
 
-![A flow diagram of four items with arrows between them. From left to right, the images are an illustration of a globe; the Create ML app icon; a grouping of the RealityKit icon, the ARKit icon, and the Reality Composer Pro icon; and an illustration of a globe within a bounding box.](https://docs-assets.developer.apple.com/published/a4b7b3b4369717a62951659789519c9a/workflow-objects-PageImage-card%402x.png)
+![A flow diagram of four items with arrows between them. From left to right, the images are an illustration of a globe; the Create ML app icon; a grouping of the RealityKit icon, the ARKit icon, and the Reality Composer Pro icon; and an illustration of a globe within a bounding box.](https://docs-assets.developer.apple.com/published/c744bc815682f39888c01eadb57ca074/workflow%402x.png)
 
 Implementing object tracking requires an Apple Vision Pro with visionOS 2 or later, and a Mac with Apple silicon and macOS 15 or later for the machine learning training in Create ML.
 
@@ -108,6 +108,8 @@ For more information about object tracking, see [`Explore object tracking for vi
 
 ## See Also
 
+- [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
+  Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)
@@ -134,4 +136,4 @@ For more information about object tracking, see [`Explore object tracking for vi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/implementing-object-tracking-in-your-visionos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/implementing-object-tracking-in-your-visionos-app)*

@@ -1,18 +1,18 @@
 # handleBinding(ofSymbol:using:)
 
-**Framework**: Scenekit  
+**Framework**: SceneKit  
 **Kind**: method
 
 Specifies a block to be called before rendering using programs with the specified GLSL uniform variable or attribute name.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 
@@ -26,7 +26,7 @@ This method associates a block for handling setup of an attribute or uniform var
 
 > **Note**:  You must associate a handler block with a technique before assigning that technique to a SceneKit object. The result of calling this method on a technique currently in use is undefined.
 
-Use this method when you need to update a value in a shader program every time SceneKit renders a frame. To set a value infrequently, or only once, use the [`setObject(_:forKeyedSubscript:)`](scntechnique/setobject(_:forkeyedsubscript:).md) or [`setValue(_:forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKey:)) method instead.
+Use this method when you need to update a value in a shader program every time SceneKit renders a frame. To set a value infrequently, or only once, use the [`setObject(_:forKeyedSubscript:)`](scntechnique/setobject(_:forkeyedsubscript:).md) or doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue method instead.
 
 If you associate a block with a symbol using this method, SceneKit ignores values set using the [`setObject(_:forKeyedSubscript:)`](scntechnique/setobject(_:forkeyedsubscript:).md) method.
 

@@ -1,6 +1,6 @@
 # strings
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 An array of strings in all pasteboard items.

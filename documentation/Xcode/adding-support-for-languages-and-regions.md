@@ -42,4 +42,4 @@ In the file system, Xcode creates a separate localization folder to store the lo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/adding-support-for-languages-and-regions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/adding-support-for-languages-and-regions)*

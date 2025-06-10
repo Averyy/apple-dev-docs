@@ -18,18 +18,12 @@ struct AnchorCapability
 
 ## Topics
 
-### Operators
-- [static func == (SpatialTrackingSession.Configuration.AnchorCapability, SpatialTrackingSession.Configuration.AnchorCapability) -> Bool](spatialtrackingsession/configuration/anchorcapability/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var debugDescription: String](spatialtrackingsession/configuration/anchorcapability/debugdescription.md)
   A human-readable description of the anchor capability.
-- [var hashValue: Int](spatialtrackingsession/configuration/anchorcapability/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](spatialtrackingsession/configuration/anchorcapability/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
+- [static let accessory: SpatialTrackingSession.Configuration.AnchorCapability](spatialtrackingsession/configuration/anchorcapability/accessory.md)
+  The anchor capability that enables accessory tracking.
 - [static let body: SpatialTrackingSession.Configuration.AnchorCapability](spatialtrackingsession/configuration/anchorcapability/body.md)
   The anchor capability that enables body tracking.
 - [static let camera: SpatialTrackingSession.Configuration.AnchorCapability](spatialtrackingsession/configuration/anchorcapability/camera.md)
@@ -46,9 +40,6 @@ struct AnchorCapability
   The anchor capability that enables plane detection.
 - [static let world: SpatialTrackingSession.Configuration.AnchorCapability](spatialtrackingsession/configuration/anchorcapability/world.md)
   The anchor capability that enables world tracking.
-### Default Implementations
-- [CustomStringConvertible Implementations](spatialtrackingsession/configuration/anchorcapability/customstringconvertible-implementations.md)
-- [Equatable Implementations](spatialtrackingsession/configuration/anchorcapability/equatable-implementations.md)
 
 ## Relationships
 
@@ -58,6 +49,7 @@ struct AnchorCapability
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -66,7 +58,7 @@ struct AnchorCapability
 - [SpatialTrackingSession.Configuration](spatialtrackingsession/configuration.md)
   A type for configuring the spatial tracking session.
 - [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](spatialtrackingsession/configuration/sceneunderstandingcapability.md)
-  Defines how system behaviors can use scene unerstanding data for.
+  Defines how system behaviors use scene understanding.
 - [SpatialTrackingSession.Configuration.Camera](spatialtrackingsession/configuration/camera.md)
   Defines the camera feed the RealityView renders.
 - [SpatialTrackingSession.UnavailableCapabilities](spatialtrackingsession/unavailablecapabilities.md)

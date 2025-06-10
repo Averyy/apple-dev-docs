@@ -9,7 +9,7 @@ An instruction that requests the user increase the amount of light in the room.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

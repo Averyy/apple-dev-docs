@@ -25,8 +25,6 @@ You use this class when creating a composition for Core Image filtering with the
 
 > 💡 **Tip**:  To use the created video composition for playback, create an [`AVPlayerItem`](avplayeritem.md) object from the same asset used as the composition’s source, then assign the composition to the player item’s [`videoComposition`](avplayeritem/videocomposition.md) property. To export the composition to a new movie file, create an [`AVAssetExportSession`](avassetexportsession.md) object from the same source asset, then assign the composition to the export session’s [`videoComposition`](avassetexportsession/videocomposition.md) property.
 
- To use the created video composition for playback, create an [`AVPlayerItem`](avplayeritem.md) object from the same asset used as the composition’s source, then assign the composition to the player item’s [`videoComposition`](avplayeritem/videocomposition.md) property. To export the composition to a new movie file, create an [`AVAssetExportSession`](avassetexportsession.md) object from the same source asset, then assign the composition to the export session’s [`videoComposition`](avassetexportsession/videocomposition.md) property.
-
 ## Topics
 
 ### Getting the Image to be Filtered

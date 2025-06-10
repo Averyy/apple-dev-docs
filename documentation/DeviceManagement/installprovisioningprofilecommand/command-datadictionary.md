@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to install a provisioning profile.
+The command to install a provisioning profile on a device.
 
 **Availability**:
 - iOS 4.0+
@@ -12,8 +12,6 @@ The request dictionary to install a provisioning profile.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

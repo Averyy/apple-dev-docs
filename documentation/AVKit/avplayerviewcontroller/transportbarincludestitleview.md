@@ -23,7 +23,7 @@ var transportBarIncludesTitleView: Bool { get set }
 
 By default, the player presents a title view. This view displays title ([`commonIdentifierTitle`](https://developer.apple.com/documentation/AVFoundation/AVMetadataIdentifier/commonIdentifierTitle)) and subtitle ([`iTunesMetadataTrackSubTitle`](https://developer.apple.com/documentation/AVFoundation/AVMetadataIdentifier/iTunesMetadataTrackSubTitle)) metadata embedded in a media asset or set as a player item’s [`externalMetadata`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/externalMetadata).
 
-The view controller ignores this property when [`playbackControlsIncludeTransportBar`](avplayerviewcontroller/playbackcontrolsincludetransportbar.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+The view controller ignores this property when [`playbackControlsIncludeTransportBar`](avplayerviewcontroller/playbackcontrolsincludetransportbar.md) is `false`.
 
 ## See Also
 

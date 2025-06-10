@@ -47,8 +47,6 @@ For push notifications, the device uses different push tokens for device and use
 
 > ⚠️ **Warning**:  Push notification tokens and `AuthToken` are separate values.
 
- Push notification tokens and `AuthToken` are separate values.
-
 ##### Review a Complete Login
 
 The following is an example of a `UserAuthenticate` transaction:

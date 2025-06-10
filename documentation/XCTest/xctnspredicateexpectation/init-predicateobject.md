@@ -1,6 +1,6 @@
 # init(predicate:object:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an expectation that’s fulfilled when an `NSPredicate` instance returns `true`, optionally for a provided object.

@@ -1,6 +1,6 @@
 # preload
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A DOMString value that gives a hint to the browser how much of the media should be fetched when the webpage is loaded.

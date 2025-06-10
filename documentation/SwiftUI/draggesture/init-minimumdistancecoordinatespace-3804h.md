@@ -16,8 +16,7 @@ Creates a dragging gesture with the minimum dragging distance before the gesture
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init(minimumDistance: CGFloat = 10, coordinateSpace: CoordinateSpace = .local)
+init(minimumDistance: CGFloat = 10, coordinateSpace: CoordinateSpace = .local)
 ```
 
 ## Parameters

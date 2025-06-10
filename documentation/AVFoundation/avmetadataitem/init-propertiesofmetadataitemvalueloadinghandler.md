@@ -1,6 +1,6 @@
 # init(propertiesOfMetadataItem:valueLoadingHandler:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: init
 
 Creates a metadata item whose value loads on an on-demand basis only.

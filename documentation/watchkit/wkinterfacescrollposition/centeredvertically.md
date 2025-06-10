@@ -1,6 +1,6 @@
 # WKInterfaceScrollPosition.centeredVertically
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The vertical center of the screen.

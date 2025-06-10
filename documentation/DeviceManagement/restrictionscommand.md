@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to get a list of restrictions on a device.
+The command to get a list of restrictions on the device.
 
 **Availability**:
 - iOS 4.0+
@@ -11,8 +11,6 @@ The command to get a list of restrictions on a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,14 +24,14 @@ object RestrictionsCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object RestrictionsCommand.Command](restrictionscommand/command-data.dictionary.md)
-  The request dictionary to get a list of restrictions on a device.
+  The command to get a list of restrictions on the device.
 
 ## See Also
 
 - [object RestrictionsResponse](restrictionsresponse.md)
-  A response from the device after it processes the command to get a list of restrictions.
+  A response from the device after it processes the command to get a list of restrictions on the device.
 
 
 ---

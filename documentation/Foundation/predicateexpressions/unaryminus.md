@@ -34,6 +34,7 @@ struct UnaryMinus<Wrapped> where Wrapped : PredicateExpression, Wrapped.Output :
 - [Encodable](../Swift/Encodable.md)
 - [PredicateExpression](predicateexpression.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StandardPredicateExpression](standardpredicateexpression.md)
 
 

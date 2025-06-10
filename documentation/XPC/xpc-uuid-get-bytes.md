@@ -1,6 +1,6 @@
 # xpc_uuid_get_bytes(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Copies the UUID that an XPC UUID object boxes into the specified UUID buffer.

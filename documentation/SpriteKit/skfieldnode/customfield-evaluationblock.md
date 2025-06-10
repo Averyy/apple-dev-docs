@@ -17,7 +17,6 @@ Creates a field node that calculates and applies a custom force to the physics b
 ## Declaration
 
 ```swift
-@MainActor
 class func customField(evaluationBlock block: @escaping SKFieldForceEvaluator) -> SKFieldNode
 ```
 

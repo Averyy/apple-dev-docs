@@ -1,6 +1,6 @@
 # alertStyle
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The type of alert that the app may display when the device is unlocked.

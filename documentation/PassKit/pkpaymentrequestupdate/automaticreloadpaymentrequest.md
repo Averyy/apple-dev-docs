@@ -24,8 +24,6 @@ The default value is nil, which indicates the automatic reload payment request n
 
 > ⚠️ **Warning**:  Changing the [`billingAgreement`](pkrecurringpaymentrequest/billingagreement.md) along with this property causes the framework to invalidate the current payment request, close the payment sheet, and return an error in the completion handler.
 
- Changing the [`billingAgreement`](pkrecurringpaymentrequest/billingagreement.md) along with this property causes the framework to invalidate the current payment request, close the payment sheet, and return an error in the completion handler.
-
 You can’t use this property simultaneously with: multitoken contexts, recurring payment requests, or automatic reload payment requests.
 
 

@@ -26,7 +26,7 @@ A date format style that uses the provided format string and timekeeping paramet
 
 #### Discussion
 
-Use this format style only when you need to produce or parse an exact format, such as when working with programmatically-produced date strings. For formatting dates that people read, use [`dateTime`](formatstyle/datetime.md) to get a localized [`Date.FormatStyle`](date/formatstyle.md) instead. To use the ISO-8601 standard, use [`iso8601`](formatstyle/iso8601.md) to get a [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md).
+Use this format style only when you need to produce or parse an exact format, such as when working with programmatically-produced date strings. For formatting dates that people read, use [`dateTime`](formatstyle/datetime.md) to get a localized [`Date.FormatStyle`](date/formatstyle.md) instead. To use the ISO-8601 standard, use `FormatStyle/iso8601` to get a [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md).
 
 Use the dot-notation form of this type method when the call point allows the use of [`Date.VerbatimFormatStyle`](date/verbatimformatstyle.md). You typically do this when calling the [`formatted(_:)`](date/formatted(_:).md) method of [`Date`](date.md).
 
@@ -54,8 +54,6 @@ let formatted = date.formatted(
   A style for formatting a date and time.
 - [struct FormatStyle](date/formatstyle.md)
   A structure that creates a locale-appropriate string representation of a date instance and converts strings of dates and times into date instances.
-- [static var iso8601: Date.ISO8601FormatStyle](formatstyle/iso8601.md)
-  A style for formatting a date in accordance with the ISO-8601 standard.
 - [struct ISO8601FormatStyle](date/iso8601formatstyle.md)
   A type that converts between dates and their ISO-8601 string representations.
 - [struct VerbatimFormatStyle](date/verbatimformatstyle.md)

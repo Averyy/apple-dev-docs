@@ -88,6 +88,15 @@ If you implement a routing app, the Maps app provides two `MKMapItem` objects re
   Strings that represent the possible values of the launch options direction mode key.
 ### Initializers
 - [init?(coder: NSCoder)](mkmapitem/init(coder:).md)
+- [init(location: CLLocation, address: MKAddress?)](mkmapitem/init(location:address:).md)
+  Creates and returns a map item object using the specified location and address objects.
+### Instance Properties
+- [var address: MKAddress?](mkmapitem/address.md)
+  The address object.
+- [var addressRepresentations: MKAddressRepresentations?](mkmapitem/addressrepresentations.md)
+  The address representations object that contains various address representations useful for display purposes.
+- [var location: CLLocation](mkmapitem/location.md)
+  The location object.
 
 ## Relationships
 

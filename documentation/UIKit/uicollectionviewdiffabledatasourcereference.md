@@ -23,8 +23,6 @@ class UICollectionViewDiffableDataSourceReference
 
 > ❗ **Important**: If you’re working in a Swift codebase, always use [`UICollectionViewDiffableDataSource`](uicollectionviewdiffabledatasource-9tqpa.md) instead.
 
-If you’re working in a Swift codebase, always use [`UICollectionViewDiffableDataSource`](uicollectionviewdiffabledatasource-9tqpa.md) instead.
-
 A  object is a specialized type of data source that works together with your collection view object. It provides the behavior you need to manage updates to your collection view’s data and UI in a simple, efficient way. It also conforms to the [`UICollectionViewDataSource`](uicollectionviewdatasource.md) protocol and provides implementations for all of the protocol’s methods.
 
 To fill a collection view with data:
@@ -45,8 +43,6 @@ self.dataSource = [[UICollectionViewDiffableDataSource alloc] initWithCollection
 Then, you generate the current state of the data and display the data in the UI by constructing and applying a snapshot. For more information, see [`NSDiffableDataSourceSnapshotReference`](nsdiffabledatasourcesnapshotreference.md).
 
 > ❗ **Important**:  Don’t change the [`dataSource`](uicollectionview/datasource.md) on the collection view after you configure it with a diffable data source. If the collection view needs a new data source after you configure it initially, create and configure a new collection view and diffable data source.
-
- Don’t change the [`dataSource`](uicollectionview/datasource.md) on the collection view after you configure it with a diffable data source. If the collection view needs a new data source after you configure it initially, create and configure a new collection view and diffable data source.
 
 ## Topics
 

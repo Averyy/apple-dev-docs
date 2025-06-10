@@ -6,11 +6,11 @@
 Keys you use to access values in the options dictionary when opening a URL.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS 9.0+
+- iPadOS 9.0+
+- Mac Catalyst 13.1+
+- tvOS 9.0+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -43,6 +43,7 @@ Use these keys to retrieve options in the [`application(_:open:options:)`](uiapp
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

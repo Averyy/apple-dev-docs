@@ -105,9 +105,10 @@ When implementing a custom type that conforms to the `SetAlgebra` protocol, you 
 ### Inherited By
 - [OptionSet](optionset.md)
 ### Conforming Types
+- [ClockTraits](clocktraits.md)
 - [Set](set.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/setalgebra)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/setalgebra)*

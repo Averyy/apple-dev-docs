@@ -10,7 +10,7 @@ Provides the delegate with the processed scan results as the view presents them.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

@@ -40,4 +40,4 @@ The certificate, key, and trust services API is a collection of functions and da
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/certificate-key-and-trust-services)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/certificate-key-and-trust-services)*

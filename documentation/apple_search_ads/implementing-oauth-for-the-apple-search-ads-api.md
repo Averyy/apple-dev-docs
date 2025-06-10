@@ -56,8 +56,6 @@ LaZriCQnnqq4Vx+IscLFcrjBj+ulZzKlUQ==
 
 > ❗ **Important**:  Always keep your private key secure and never share it. If your private key becomes compromised, you need to re-create a private key and client secret, and reupload it to your [`Apple Search Ads UI`](https://developer.apple.comhttps://searchads.apple.com) account.
 
- Always keep your private key secure and never share it. If your private key becomes compromised, you need to re-create a private key and client secret, and reupload it to your [`Apple Search Ads UI`](https://developer.apple.comhttps://searchads.apple.com) account.
-
 ##### Extract a Public Key
 
 Use the following command to extract a public key from your persisted private key:
@@ -97,8 +95,6 @@ A client secret is a JSON web token ([`JWT`](https://developer.apple.comhttps://
 The following example is a Python 3 script that generates, encodes, and signs the client secret using your private key. If you decide to create your own JWT using a different programming language and open source library, make sure the library you use supports elliptic curve methods.
 
 > ❗ **Important**:  Make sure that you copy the private-public key pair into your working directory.
-
- Make sure that you copy the private-public key pair into your working directory.
 
 ```console
 import os

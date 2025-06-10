@@ -24,8 +24,6 @@ The system throws an error if the attempt to monitor the device activity failed.
 
 > ❗ **Important**: The application extension’s [`DeviceActivityMonitor`](deviceactivitymonitor.md) may begin receiving callbacks as soon as the system calls this method if the activity’s scheduled interval is ongoing.
 
-The application extension’s [`DeviceActivityMonitor`](deviceactivitymonitor.md) may begin receiving callbacks as soon as the system calls this method if the activity’s scheduled interval is ongoing.
-
 ## Parameters
 
 - `activity`: The name of the activity.

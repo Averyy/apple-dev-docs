@@ -17,6 +17,14 @@
 func compare(_ other: JSValue) -> JSRelationCondition
 ```
 
+#### Return Value
+
+A value of JSRelationCondition, a kJSRelationConditionUndefined is returned if an exception is thrown.
+
+#### Discussion
+
+The result is computed by comparing the results of JavaScript’s ==, <, and > operators. If either self or other is (or would coerce to) NaN in JavaScript, then the result is kJSRelationConditionUndefined.
+
 
 ---
 

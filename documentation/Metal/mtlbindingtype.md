@@ -28,6 +28,7 @@ enum MTLBindingType
 - [MTLBindingType.objectPayload](mtlbindingtype/objectpayload.md)
 - [MTLBindingType.primitiveAccelerationStructure](mtlbindingtype/primitiveaccelerationstructure.md)
 - [MTLBindingType.sampler](mtlbindingtype/sampler.md)
+- [MTLBindingType.tensor](mtlbindingtype/tensor.md)
 - [MTLBindingType.texture](mtlbindingtype/texture.md)
 - [MTLBindingType.threadgroupMemory](mtlbindingtype/threadgroupmemory.md)
 - [MTLBindingType.visibleFunctionTable](mtlbindingtype/visiblefunctiontable.md)
@@ -42,6 +43,7 @@ enum MTLBindingType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

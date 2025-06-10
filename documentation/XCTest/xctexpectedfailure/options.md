@@ -1,6 +1,6 @@
 # XCTExpectedFailure.Options
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 Options that determine how the test matches the expected failure to an actual test failure, and whether an unfulfilled expected failure results in a test failure.

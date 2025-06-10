@@ -1,6 +1,6 @@
 # WeatherCondition.wintryMix
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Wintry mix.

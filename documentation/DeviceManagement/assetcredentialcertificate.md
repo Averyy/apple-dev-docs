@@ -12,8 +12,6 @@ A reference to a PKCS #1 or PEM encoded certificate.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,9 +19,13 @@ A reference to a PKCS #1 or PEM encoded certificate.
 object AssetCredentialCertificate
 ```
 
+#### Discussion
+
+Specify `com.apple.asset.credential.certificate` as the declaration type.
+
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object AssetCredentialCertificateAuthenticationObject](assetcredentialcertificateauthenticationobject.md)
   The server authentication details for an asset-credential certificate.
 - [object AssetCredentialCertificateReferenceObject](assetcredentialcertificatereferenceobject.md)

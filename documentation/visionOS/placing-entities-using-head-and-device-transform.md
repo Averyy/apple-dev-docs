@@ -1,6 +1,6 @@
 # Placing entities using head and device transform
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Query and react to changes in the position and rotation of Apple Vision Pro.
 
@@ -27,7 +27,7 @@ To launch the hummingbird feeder at the position of the wearer’s head, the sam
 
 > **Note**: You can get the transform of an `AnchorEntity` with a different [`AnchoringComponent.Target`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/Target-swift.enum), such as a hand, by using a [`SpatialTrackingSession`](https://developer.apple.com/documentation/RealityKit/SpatialTrackingSession) and requesting authorization from the person using the app.
 
-The sample creates an `AnchorEntity` that anchors to the wearer’s head, and sets the [`AnchoringComponent.TrackingMode`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/TrackingMode-swift.struct) to [`once`](https://developer.apple.com/documentation/RealityKit/AnchoringComponent/TrackingMode-swift.struct/once) to stop tracking after the initial anchor. The head-positioned entity root contains both the feeder entity and the hummingbird entity, which the sample loads from Reality Composer Pro. The app adds the root entity as a subentity of the head anchor to track it. The sample then offsets the feeder from the center of the wearer’s head by setting the position.
+The sample creates an `AnchorEntity` that anchors to the wearer’s head, and sets the doc://com.apple.documentation/documentation/realitykit/anchoringcomponent/trackingmode-swift.struct to doc://com.apple.documentation/documentation/realitykit/anchoringcomponent/trackingmode-swift.struct/once to stop tracking after the initial anchor. The head-positioned entity root contains both the feeder entity and the hummingbird entity, which the sample loads from Reality Composer Pro. The app adds the root entity as a subentity of the head anchor to track it. The sample then offsets the feeder from the center of the wearer’s head by setting the position.
 
 ```swift
 func startHeadPositionMode(content: RealityViewContent) {
@@ -142,6 +142,8 @@ func startFollowMode() {
 
 ## See Also
 
+- [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
+  Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)
@@ -168,4 +170,4 @@ func startFollowMode() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/placing-entities-using-head-and-device-transform)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/placing-entities-using-head-and-device-transform)*

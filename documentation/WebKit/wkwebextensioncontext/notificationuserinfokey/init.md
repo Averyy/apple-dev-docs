@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Creates a constant from a value you provide.

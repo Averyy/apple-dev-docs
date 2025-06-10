@@ -176,14 +176,6 @@ let numberPointer = UnsafePointer<Int>(&number)
 // Accessing 'numberPointer' is undefined behavior.
 ```
 
-The pointer created through implicit bridging of an instance or of an array’s elements is only valid during the execution of the called function. Escaping the pointer to use after the execution of the function is undefined behavior. In particular, do not use implicit bridging when calling an `UnsafePointer` initializer.
-
-```swift
-var number = 5
-let numberPointer = UnsafePointer<Int>(&number)
-// Accessing 'numberPointer' is undefined behavior.
-```
-
 ## Topics
 
 ### Instance Properties

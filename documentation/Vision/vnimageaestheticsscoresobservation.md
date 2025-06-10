@@ -23,9 +23,9 @@ class VNImageAestheticsScoresObservation
 
 ### Parsing Observation Content
 - [var overallScore: Float](vnimageaestheticsscoresobservation/overallscore.md)
-  A score that incorporates the aesthetic score, failure score, and utility labels.
+  A score which incorporates aesthetic score, failure score, and utility labels.
 - [var isUtility: Bool](vnimageaestheticsscoresobservation/isutility.md)
-  Returns a Boolean value that represents an image that may not have memorable or exciting content.
+  A Boolean value that represents images that are not necessarily of poor image quality, but may not have memorable or exciting content.
 
 ## Relationships
 

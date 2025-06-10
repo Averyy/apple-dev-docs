@@ -35,4 +35,4 @@ python3 run_sample.py
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/customizing-a-pytorch-operation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/customizing-a-pytorch-operation)*

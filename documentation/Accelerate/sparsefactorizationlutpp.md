@@ -22,6 +22,15 @@ var SparseFactorizationLUTPP: SparseFactorization_t { get }
 
 #### Discussion
 
+## See Also
+
+- [var SparseFactorizationLU: SparseFactorization_t](sparsefactorizationlu.md)
+  Types of factorization than can be performed.
+- [var SparseFactorizationLUSPP: SparseFactorization_t](sparsefactorizationluspp.md)
+  Types of factorization than can be performed.
+- [var SparseFactorizationLUUnpivoted: SparseFactorization_t](sparsefactorizationluunpivoted.md)
+  Types of factorization than can be performed.
+
 
 ---
 

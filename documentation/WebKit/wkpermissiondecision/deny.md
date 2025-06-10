@@ -1,6 +1,6 @@
 # WKPermissionDecision.deny
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Deny permission for the requested resource.

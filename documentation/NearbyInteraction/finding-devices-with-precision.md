@@ -1,6 +1,6 @@
 # Finding devices with precision
 
-**Framework**: Nearbyinteraction
+**Framework**: Nearby Interaction
 
 Leverage the spatial awareness of ARKit and Apple Ultra Wideband Chips in your app to guide users to a nearby device.
 
@@ -256,4 +256,4 @@ class MeasurementQualityEstimator {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/NearbyInteraction/finding-devices-with-precision)*
+*[View on Apple Developer](https://developer.apple.com/documentation/nearbyinteraction/finding-devices-with-precision)*

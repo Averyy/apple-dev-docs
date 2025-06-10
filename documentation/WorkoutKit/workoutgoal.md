@@ -1,6 +1,6 @@
 # WorkoutGoal
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: enum
 
 A value that specifies the goal for a workout.
@@ -10,6 +10,7 @@ A value that specifies the goal for a workout.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -49,6 +50,7 @@ enum WorkoutGoal
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -12,6 +12,7 @@ Cancels an in-progress search operation.
 - macOS 10.11.4+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 

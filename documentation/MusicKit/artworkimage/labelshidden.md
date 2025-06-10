@@ -1,6 +1,6 @@
 # labelsHidden()
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Hides the labels of any controls contained within this view.

@@ -10,6 +10,7 @@ An interface that provides meshes and materials to define the visual appearance 
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

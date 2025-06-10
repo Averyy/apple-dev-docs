@@ -31,8 +31,6 @@ The Metal debugger requires you to enable GPU Frame Capture in your project sett
 
 > ❗ **Important**:  The capture manager records commands within [`MTLCommandBuffer`](mtlcommandbuffer.md) objects that you create and commit while the capture session is active.
 
- The capture manager records commands within [`MTLCommandBuffer`](mtlcommandbuffer.md) objects that you create and commit while the capture session is active.
-
 For more information about Metal frame capture, see [`Metal debugger`](https://developer.apple.com/documentation/Xcode/Metal-debugger).
 
 ## Topics
@@ -46,7 +44,7 @@ For more information about Metal frame capture, see [`Metal debugger`](https://d
 ### Creating a Capture Scope
 - [func makeCaptureScope(device: any MTLDevice) -> any MTLCaptureScope](mtlcapturemanager/makecapturescope(device:).md)
   Creates a capture scope for commands submitted to a specific device object.
-- [func makeCaptureScope(commandQueue: any MTLCommandQueue) -> any MTLCaptureScope](mtlcapturemanager/makecapturescope(commandqueue:).md)
+- [func makeCaptureScope(commandQueue: any MTLCommandQueue) -> any MTLCaptureScope](mtlcapturemanager/makecapturescope(commandqueue:)-1rozd.md)
   Creates a capture scope for commands submitted to a specific command queue.
 - [var defaultCaptureScope: (any MTLCaptureScope)?](mtlcapturemanager/defaultcapturescope.md)
   The capture scope to use when a capture is initiated in Xcode.
@@ -65,6 +63,8 @@ For more information about Metal frame capture, see [`Metal debugger`](https://d
 ### Monitoring Capture
 - [var isCapturing: Bool](mtlcapturemanager/iscapturing.md)
   A Boolean value that indicates whether Metal commands are being captured.
+### Instance Methods
+- [func makeCaptureScope(commandQueue: any MTL4CommandQueue) -> any MTLCaptureScope](mtlcapturemanager/makecapturescope(commandqueue:)-9wie3.md)
 
 ## Relationships
 

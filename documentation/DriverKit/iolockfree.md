@@ -15,6 +15,14 @@
 void IOLockFree(struct IOLock * lock);
 ```
 
+#### Discussion
+
+Frees a lock allocated with IOLockAlloc. Mutex should be unlocked with no waiters.
+
+## Parameters
+
+- `lock`: Pointer to the allocated lock.
+
 ## See Also
 
 - [dequeue_head](dequeue_head.md)

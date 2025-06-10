@@ -1,6 +1,6 @@
 # VALIDATE_STATUS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

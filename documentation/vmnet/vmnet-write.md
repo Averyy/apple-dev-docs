@@ -1,6 +1,6 @@
 # vmnet_write(_:_:_:)
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: func
 
 Attempts to write specified packets to an interface.

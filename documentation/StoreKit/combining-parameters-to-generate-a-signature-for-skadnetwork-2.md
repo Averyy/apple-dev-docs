@@ -10,8 +10,6 @@ To generate the signature, first combine the values of [`Ad network install-vali
 
 > ❗ **Important**:  Lowercase the string representation of the nonce: [`SKStoreProductParameterAdNetworkNonce`](skstoreproductparameteradnetworknonce.md). Failing to do so results in an invalid signature. Only ads with valid signatures can get ad attributions.
 
- Lowercase the string representation of the nonce: [`SKStoreProductParameterAdNetworkNonce`](skstoreproductparameteradnetworknonce.md). Failing to do so results in an invalid signature. Only ads with valid signatures can get ad attributions.
-
 Strings for version 2 and earlier don’t include a `fidelity-type` parameter. For version 2, combine the values into a UTF-8 string with an invisible separator (`‘\u2063’`) between them, in the exact order shown:
 
 Listing 1. Parameter values combined, in order, for version 2.

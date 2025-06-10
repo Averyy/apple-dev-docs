@@ -39,6 +39,7 @@ By default, a collection conforms to the `Sequence` protocol by supplying `Index
 ### Conforms To
 - [IteratorProtocol](iteratorprotocol.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

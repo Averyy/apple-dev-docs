@@ -83,6 +83,7 @@ The transform matrix is used to rotate, scale, translate, skew, and project the 
   Defines the identity transform matrix used by Core Animation.
 - [Scaling Filters](scaling-filters.md)
   These constants specify the scaling filters used by [`magnificationFilter`](calayer/magnificationfilter.md) and [`minificationFilter`](calayer/minificationfilter.md).
+- [CALayer.DynamicRange](calayer/dynamicrange.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # press(forDuration:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Initiates a press-and-hold gesture at the coordinate, holding for the duration you specify.

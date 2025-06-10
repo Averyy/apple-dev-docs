@@ -1,6 +1,6 @@
 # WKSelectionGranularity
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 The granularity with which the user can select and modify web view content.
@@ -35,6 +35,7 @@ enum WKSelectionGranularity
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

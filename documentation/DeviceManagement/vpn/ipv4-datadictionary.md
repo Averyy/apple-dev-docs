@@ -9,10 +9,7 @@ The dictionary that contains IPV4 settings.
 - iOS 4.0+
 - iPadOS 4.0+
 - macOS 10.7+
-- tvOS 17.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -34,10 +31,10 @@ object VPN.IPv4
   The dictionary that contains PPP settings.
 - [object VPN.Proxies](vpn/proxies-data.dictionary.md)
   The dictionary that contains the Proxies settings.
-- [object VPN.VPN](vpn/vpn-data.dictionary.md)
-  The dictionary that contains VPN, IPSec, and IKEv2 settings.
 - [object VPN.TransparentProxy](vpn/transparentproxy-data.dictionary.md)
   The dictionary to use for a transparent proxy VPN type.
+- [object VPN.VPN](vpn/vpn-data.dictionary.md)
+  The dictionary that contains VPN, IPSec, and IKEv2 settings.
 - [object VPN.VendorConfig](vpn/vendorconfig-data.dictionary.md)
   The vendor-specific configuration dictionary.
 

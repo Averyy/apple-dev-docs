@@ -1,6 +1,6 @@
 # initialRequest
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A reference to the original request that was used to load the web content.

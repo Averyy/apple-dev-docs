@@ -28,8 +28,6 @@ var inverse: AffineTransform3D? { get }
   Constants that describe the axis of a shear transform.
 - [func changeBasis(from: AffineTransform3D, to: AffineTransform3D) -> AffineTransform3D?](affinetransform3d/changebasis(from:to:).md)
   Returns a new affine transform structure by applying a change-of-basis.
-- [func concatenating(AffineTransform3D) -> AffineTransform3D](affinetransform3d/concatenating(_:).md)
-  Returns an affine transformation matrix that results from concatenating two existing affine transforms.
 - [func flip(along: Axis3D)](affinetransform3d/flip(along:).md)
   Flips an affine transform along the specified axis.
 - [func flipped(along: Axis3D) -> AffineTransform3D](affinetransform3d/flipped(along:).md)

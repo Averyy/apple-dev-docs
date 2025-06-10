@@ -14,8 +14,6 @@ As your object model evolves, you may find that the aggregate changes between tw
 
 > ❗ **Important**:  Successful Core Data migrations depend on properly versioned object models, and staged lightweight migrations require a distinct migration stage for each model version.
 
- Successful Core Data migrations depend on properly versioned object models, and staged lightweight migrations require a distinct migration stage for each model version.
-
 ## Topics
 
 ### Migration staging

@@ -38,6 +38,7 @@ Specify a different scale variant for a symbol to change the emphasis of the sym
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -51,8 +52,14 @@ Specify a different scale variant for a symbol to change the emphasis of the sym
   Creates a symbol configuration with the specified text style and symbol scale.
 - [convenience init(scale: NSImage.SymbolScale)](nsimage/symbolconfiguration-swift.class/init(scale:).md)
   Creates a symbol configuration using the scale you specify.
+- [convenience init(colorRenderingMode: NSImage.SymbolColorRenderingMode)](nsimage/symbolconfiguration-swift.class/init(colorrenderingmode:).md)
+  Create a configuration with a specific color rendering mode.
+- [convenience init(variableValueMode: NSImage.SymbolVariableValueMode)](nsimage/symbolconfiguration-swift.class/init(variablevaluemode:).md)
+  Create a configuration with a specified variable value mode.
 - [NSFont.TextStyle](nsfont/textstyle.md)
   Constants that specify the preferred text styles you use with fonts.
+- [NSImage.SymbolColorRenderingMode](nsimage/symbolcolorrenderingmode.md)
+- [NSImage.SymbolVariableValueMode](nsimage/symbolvariablevaluemode.md)
 
 
 ---

@@ -93,6 +93,7 @@ struct PKPaymentNetwork
 ### Type Properties
 - [static let himyan: PKPaymentNetwork](pkpaymentnetwork/himyan.md)
 - [static let jaywan: PKPaymentNetwork](pkpaymentnetwork/jaywan.md)
+- [static let myDebit: PKPaymentNetwork](pkpaymentnetwork/mydebit.md)
 
 ## Relationships
 
@@ -101,6 +102,7 @@ struct PKPaymentNetwork
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

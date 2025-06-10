@@ -1,6 +1,6 @@
 # isDisconnected
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates whether the message port is disconnected.

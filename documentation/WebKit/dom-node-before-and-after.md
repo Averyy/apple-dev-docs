@@ -1,6 +1,6 @@
 # DOM_NODE_BEFORE_AND_AFTER
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

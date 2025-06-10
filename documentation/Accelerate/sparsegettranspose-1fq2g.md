@@ -28,6 +28,21 @@ A matrix factorization of `A^T`, where the original was of `A`. As this is refer
 
 - `Factor`: The factorization to transpose.
 
+## See Also
+
+- [func SparseGetTranspose(SparseOpaqueSubfactor_Complex_Float) -> SparseOpaqueSubfactor_Complex_Float](sparsegettranspose(_:)-2fuzo.md)
+  Returns a transposed, reference-counted copy of a `SparseOpaqueSubfactor_Complex_Float`.
+- [func SparseGetTranspose(SparseOpaqueSubfactor_Complex_Double) -> SparseOpaqueSubfactor_Complex_Double](sparsegettranspose(_:)-4nr8u.md)
+  Returns a transposed, reference-counted copy of a `SparseOpaqueSubfactor_Complex_Double`.
+- [func SparseGetTranspose(SparseMatrix_Complex_Float) -> SparseMatrix_Complex_Float](sparsegettranspose(_:)-7dx1i.md)
+  Returns a transposed copy of the specified matrix of complex float values.
+- [func SparseGetTranspose(SparseMatrix_Complex_Float) -> SparseMatrix_Complex_Float](sparsegettranspose(_:)-7dx1i.md)
+  Returns a transposed copy of the specified matrix of complex float values.
+- [func SparseGetTranspose(SparseMatrix_Complex_Double) -> SparseMatrix_Complex_Double](sparsegettranspose(_:)-9olfr.md)
+  Returns a transposed copy of the specified matrix of complex double values.
+- [func SparseGetTranspose(SparseOpaqueFactorization_Complex_Double) -> SparseOpaqueFactorization_Complex_Double](sparsegettranspose(_:)-d0ny.md)
+  Returns a transposed, reference-counted copy of a `SparseOpaqueFactorization_Complex_Double`.
+
 
 ---
 

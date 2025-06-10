@@ -47,7 +47,7 @@ Instances of this class are thread safe.
 - [var connectedDate: Date?](nevpnconnection/connecteddate.md)
   The date and time when the connection status changed to `NEVPNStatusConnected`.
 ### Notifications
-- [static let NEVPNStatusDidChange: NSNotification.Name](../foundation/nsnotification/name/1406683-nevpnstatusdidchange.md)
+- [static let NEVPNStatusDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NEVPNStatusDidChange.md)
   Posted when the status of the VPN connection changes.
 ### Handling errors
 - [func fetchLastDisconnectError(completionHandler: ((any Error)?) -> Void)](nevpnconnection/fetchlastdisconnecterror(completionhandler:).md)

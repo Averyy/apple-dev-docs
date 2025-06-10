@@ -1,6 +1,6 @@
 # appearance
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The interface style of the device.

@@ -226,4 +226,4 @@ To validate your work, follow the process described in [`Build and validate`](em
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/embedding-a-helper-tool-in-a-sandboxed-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app)*

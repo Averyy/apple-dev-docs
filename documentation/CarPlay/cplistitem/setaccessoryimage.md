@@ -13,6 +13,7 @@ Updates the list item’s accessory image.
 ## Declaration
 
 ```swift
+@MainActor
 func setAccessoryImage(_ accessoryImage: UIImage?)
 ```
 

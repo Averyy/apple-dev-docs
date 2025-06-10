@@ -24,14 +24,8 @@ The interface orientation normally corresponds to the device orientation, but it
 
 ## See Also
 
-- [var traitCollection: UITraitCollection](uiwindowscene/traitcollection.md)
-  The traits that describe the current environment of the scene.
 - [var coordinateSpace: any UICoordinateSpace](uiwindowscene/coordinatespace.md)
   The coordinate space occupied by the scene.
-- [var sizeRestrictions: UISceneSizeRestrictions?](uiwindowscene/sizerestrictions.md)
-  The minimum and maximum size of the app’s windows.
-- [class UISceneSizeRestrictions](uiscenesizerestrictions.md)
-  An object that specifies the minimum and maximum sizes for resizable windows.
 
 
 ---

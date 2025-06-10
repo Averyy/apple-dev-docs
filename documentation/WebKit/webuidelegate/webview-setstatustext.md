@@ -1,6 +1,6 @@
 # webView(_:setStatusText:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sets the status message displayed by a web view’s window, if any, to the specified text.

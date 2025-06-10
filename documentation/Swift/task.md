@@ -115,6 +115,8 @@ deinit actor
   The current task’s priority.
 - [static var basePriority: TaskPriority?](task/basepriority.md)
   The current task’s base priority.
+- [func withTaskPriorityEscalationHandler<T, E>(operation: () async throws(E) -> T, onPriorityEscalated: (TaskPriority, TaskPriority) -> Void, isolation: isolated (any Actor)?) async throws(E) -> T](withtaskpriorityescalationhandler(operation:onpriorityescalated:isolation:).md)
+  Runs the passed `operation` while registering a task priority escalation handler. The handler will be triggered concurrently to the current task if the current is subject to priority escalation.
 ### Accessing Results
 - [var value: Success](task/value-60t02.md)
   The result from a throwing task, after it completes.
@@ -134,6 +136,8 @@ deinit actor
 - [static func checkCancellation() throws](task/checkcancellation.md)
   Throws an error if the task was canceled.
 - [func withTaskCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](withtaskcancellationhandler(handler:operation:).md)
+- [func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel: () -> Void, isolation: isolated (any Actor)?) async rethrows -> T](withtaskcancellationhandler(operation:oncancel:isolation:).md)
+  Execute an operation with a cancellation handler that’s immediately invoked if the current task is canceled.
 ### Suspending Execution
 - [static func yield() async](task/yield.md)
   Suspends the current task and allows other tasks to execute.
@@ -163,9 +167,35 @@ deinit actor
 - [static func suspend() async](task/suspend.md)
 - [static func runDetached(priority: TaskPriority?, operation: () async throws -> Success) -> Task<Success, Failure>](task/rundetached(priority:operation:).md)
 - [static func withCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](task/withcancellationhandler(handler:operation:).md)
+### Initializers
+- [init(name: String?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:priority:operation:)-2dll5.md)
+  Runs the given nonthrowing operation asynchronously as part of a new top-level task on behalf of the current actor.
+- [init(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:priority:operation:)-43wmk.md)
+  Runs the given nonthrowing operation asynchronously as part of a new top-level task on behalf of the current actor.
 ### Instance Methods
+- [func escalatePriority(to: TaskPriority)](task/escalatepriority(to:).md)
+  Manually escalate the task `priority` of this task to the `newPriority`.
 - [func get() async -> Success](task/get-4ohks.md)
+### Type Properties
+- [static var currentExecutor: any Executor](task/currentexecutor.md)
+  Get the current executor; this is the executor that the currently executing task is executing on.
+- [static var currentSchedulableExecutor: (any SchedulableExecutor)?](task/currentschedulableexecutor.md)
+  Get the current  executor, if any.
+- [static var defaultExecutor: any TaskExecutor](task/defaultexecutor.md)
+  The default or global executor, which is the default place in which we run tasks.
+- [static var name: String?](task/name.md)
+  Returns the human-readable name of the current task, if it was set during the tasks’ creation.
+- [static var preferredExecutor: (any TaskExecutor)?](task/preferredexecutor.md)
+  Get the preferred executor for the current `Task`, if any.
 ### Type Methods
+- [static func detached(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, Failure>](task/detached(name:priority:operation:)-795w1.md)
+  Runs the given throwing operation asynchronously as part of a new top-level task.
+- [static func detached(name: String?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Failure>](task/detached(name:priority:operation:)-9xki7.md)
+  Runs the given nonthrowing operation asynchronously as part of a new top-level task.
+- [static func startSynchronously(name: String?, priority: TaskPriority?, sending () async throws -> Success) -> Task<Success, Never>](task/startsynchronously(name:priority:_:)-3kl43.md)
+  Create and immediately start running a new task in the context of the calling thread/task.
+- [static func startSynchronously(name: String?, priority: TaskPriority?, sending () async throws -> Success) -> Task<Success, any Error>](task/startsynchronously(name:priority:_:)-6szf8.md)
+  Create and immediately start running a new task in the context of the calling thread/task.
 - [static func withGroup<TaskResult, BodyResult>(resultType: TaskResult.Type, returning: BodyResult.Type, body: (inout Task<Success, Failure>.Group<TaskResult>) async throws -> BodyResult) async rethrows -> BodyResult](task/withgroup(resulttype:returning:body:).md)
 ### Default Implementations
 - [Equatable Implementations](task/equatable-implementations.md)
@@ -178,6 +208,7 @@ deinit actor
 - [Equatable](equatable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 
@@ -185,6 +216,10 @@ deinit actor
   A group that contains dynamically created child tasks.
 - [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](withtaskgroup(of:returning:isolation:body:).md)
   Starts a new scope that can contain a dynamic number of child tasks.
+- [macro Task(name: String?, priority: TaskPriority?)](task(name:priority:).md)
+  Wrap the function body in a new top-level task on behalf of the current actor.
+- [macro Task(on: any GlobalActor, name: String?, priority: TaskPriority?)](task(on:name:priority:).md)
+  Wrap the function body in a new top-level task on behalf of the given actor.
 - [struct ThrowingTaskGroup](throwingtaskgroup.md)
   A group that contains throwing, dynamically created child tasks.
 - [func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingTaskGroup<ChildTaskResult, any Error>) async throws -> GroupResult) async rethrows -> GroupResult](withthrowingtaskgroup(of:returning:isolation:body:).md)

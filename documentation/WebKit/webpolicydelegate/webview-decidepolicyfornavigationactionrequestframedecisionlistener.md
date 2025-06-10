@@ -1,6 +1,6 @@
 # webView(_:decidePolicyForNavigationAction:request:frame:decisionListener:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Routes a navigation action internally or to an external viewer.
@@ -18,7 +18,7 @@ optional func webView(_ webView: WebView!, decidePolicyForNavigationAction actio
 
 This method is invoked when a navigation decision needs to be made. The web view implements a policy decision by sending one of the [`WebPolicyDecisionListener`](webpolicydecisionlistener.md) protocol messages to `listener`. This method is invoked whenever a server redirect is encountered, and before loading starts.
 
-If you do not implement this method, the default behavior is used. The listener handles the navigation internally if the request is for an error page or if the [`canHandle(_:)`](https://developer.apple.com/documentation/foundation/nsurlconnection/1413072-canhandle) method of the `NSURLConnection` class returns [`true`](https://developer.apple.com/documentation/swift/true) when passed `request`. Otherwise, the listener ignores the navigation, and it is handled externally.
+If you do not implement this method, the default behavior is used. The listener handles the navigation internally if the request is for an error page or if the [`canHandle(_:)`](https://developer.apple.com/documentation/Foundation/NSURLConnection/canHandle(_:)) method of the `NSURLConnection` class returns [`true`](https://developer.apple.com/documentation/swift/true) when passed `request`. Otherwise, the listener ignores the navigation, and it is handled externally.
 
 ## Parameters
 

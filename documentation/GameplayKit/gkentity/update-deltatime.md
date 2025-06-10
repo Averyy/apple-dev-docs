@@ -1,6 +1,6 @@
 # update(deltaTime:)
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: method
 
 Performs periodic updates for each of the entity’s components.

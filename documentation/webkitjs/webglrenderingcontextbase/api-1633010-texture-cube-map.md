@@ -1,6 +1,6 @@
 # TEXTURE_CUBE_MAP
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

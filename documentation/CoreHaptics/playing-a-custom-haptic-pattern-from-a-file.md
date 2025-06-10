@@ -1,6 +1,6 @@
 # Playing a Custom Haptic Pattern from a File
 
-**Framework**: Corehaptics
+**Framework**: Core Haptics
 
 Sample predesigned Apple Haptic Audio Pattern files, and learn how to play your own.
 
@@ -97,4 +97,4 @@ Alternatively, you can write an AHAP file from scratch in a text editor, using t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/playing-a-custom-haptic-pattern-from-a-file)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/playing-a-custom-haptic-pattern-from-a-file)*

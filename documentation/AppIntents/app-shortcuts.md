@@ -1,12 +1,12 @@
 # App Shortcuts
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Integrate your app’s intents and entities with the Shortcuts app, Siri, Spotlight, and the Action button on supported iPhone and Apple Watch models.
 
 #### Overview
 
-Starting with iOS 15 and macOS 13, you can create a preconfigured App Shortcut that enables people to discover and run your app intent without any configuration. By creating App Shortcuts, you make your app’s functionality instantly available for use in Shortcuts, Spotlight, and Siri from the moment a person installs your app — without any setup in the Shortcuts app or an Add to Siri button. On iPhone models that support the Action button, people can associate your preconfigured App Shortcut on the Action button for quick access of your app’s functionality.
+Create a preconfigured App Shortcut that enables people to discover and run your app intent without any configuration. By creating App Shortcuts, you make your app’s functionality instantly available for use in Shortcuts, Spotlight, and Siri from the moment a person installs your app — without any setup in the Shortcuts app or an Add to Siri button. On iPhone models that support the Action button, people can associate your preconfigured App Shortcut on the Action button for quick access of your app’s functionality.
 
 > **Note**: Apple may extract anonymized App Shortcuts data such as localized phrases, display representation values, and the title and description of related intents. Machine learning models use this data when training to help improve the App Shortcuts experience.
 
@@ -99,4 +99,4 @@ Although App Shortcuts don’t require a person to do any configuration in the S
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/app-shortcuts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/app-shortcuts)*

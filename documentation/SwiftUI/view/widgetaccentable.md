@@ -10,6 +10,7 @@ Adds the view and all of its subviews to the accented group.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -41,8 +42,6 @@ var body: some View {
 ```
 
 > ❗ **Important**: After you call `widgetAccentable(true)` on a view moving it into the accented group, calling `widgetAccentable(false)` on its subviews doesn’t move the subviews back into the default group.
-
-After you call `widgetAccentable(true)` on a view moving it into the accented group, calling `widgetAccentable(false)` on its subviews doesn’t move the subviews back into the default group.
 
 ## Parameters
 

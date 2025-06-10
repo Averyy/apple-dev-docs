@@ -1,6 +1,6 @@
 # preferredElementSize
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The size of the menu’s child elements.

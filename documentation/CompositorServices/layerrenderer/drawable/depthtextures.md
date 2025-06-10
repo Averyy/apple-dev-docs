@@ -6,6 +6,7 @@
 An array of depth textures to use to render the current frame.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

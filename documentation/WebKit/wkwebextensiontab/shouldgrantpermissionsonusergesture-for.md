@@ -1,6 +1,6 @@
 # shouldGrantPermissionsOnUserGesture(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to determine if permissions should be granted for the tab on user gesture.

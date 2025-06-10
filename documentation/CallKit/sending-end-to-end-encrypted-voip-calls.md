@@ -10,8 +10,6 @@ If your app can send multiple types of end-to-end encrypted (E2EE) data—for ex
 
 > ❗ **Important**:  Only use this approach when your server can’t determine whether an outgoing notification is a request for a VoIP call or some other data (such as a text message) due to metadata encryption. If your server knows that the outgoing content is a VoIP call, send a [`voIP`](https://developer.apple.com/documentation/PushKit/PKPushType/voIP) push notification instead. For more information, see [`PushKit`](https://developer.apple.com/documentation/PushKit).
 
- Only use this approach when your server can’t determine whether an outgoing notification is a request for a VoIP call or some other data (such as a text message) due to metadata encryption. If your server knows that the outgoing content is a VoIP call, send a [`voIP`](https://developer.apple.com/documentation/PushKit/PKPushType/voIP) push notification instead. For more information, see [`PushKit`](https://developer.apple.com/documentation/PushKit).
-
 ##### Configure Your App to Process Multiple Types of E2ee Data
 
 The workflow for receiving, decrypting, and processing multiple types of E2EE data involves several different components working together. To set up these systems:

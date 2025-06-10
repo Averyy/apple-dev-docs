@@ -24,8 +24,6 @@ You define your own format for data packets that you transmit and receive over t
 
 > ❗ **Important**:  You need to treat data you receive from other players as  data. Be sure to validate the data you receive from the match and write your code carefully to avoid security vulnerabilities.
 
- You need to treat data you receive from other players as  data. Be sure to validate the data you receive from the match and write your code carefully to avoid security vulnerabilities.
-
 ## Parameters
 
 - `match`: The match that received the data.

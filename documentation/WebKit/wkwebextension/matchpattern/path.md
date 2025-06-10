@@ -1,6 +1,6 @@
 # path
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The path part of the pattern string, unless [`matchesAllURLs`](wkwebextension/matchpattern/matchesallurls.md) is `YES`.

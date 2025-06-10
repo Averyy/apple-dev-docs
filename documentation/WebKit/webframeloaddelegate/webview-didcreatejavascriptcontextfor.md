@@ -1,6 +1,6 @@
 # webView(_:didCreateJavaScriptContext:for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Notifies the delegate that a new JavaScript context has been created.

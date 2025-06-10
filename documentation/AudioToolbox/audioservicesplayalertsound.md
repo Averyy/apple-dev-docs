@@ -1,6 +1,6 @@
 # AudioServicesPlayAlertSound(_:)
 
-**Framework**: Audiotoolbox  
+**Framework**: Audio Toolbox  
 **Kind**: func
 
 Plays a system sound as an alert.

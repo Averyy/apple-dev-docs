@@ -1,6 +1,6 @@
 # WKPreviewActionItemIdentifierCopy
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Copies the item to the clipboard.

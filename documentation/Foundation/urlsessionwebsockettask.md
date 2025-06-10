@@ -73,6 +73,7 @@ You send data with [`send(_:completionHandler:)`](urlsessionwebsockettask/send(_
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [ProgressReporting](progressreporting.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -88,4 +89,4 @@ You send data with [`send(_:completionHandler:)`](urlsessionwebsockettask/send(_
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessionwebsockettask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessionwebsockettask)*

@@ -1,6 +1,6 @@
 # Modernizing Safari Web Extensions
 
-**Framework**: Safariservices
+**Framework**: Safari Services
 
 Learn about enhancements to Safari Web Extensions.
 
@@ -28,4 +28,4 @@ Before you run the sample code project in Xcode, open Safari and choose Develop 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/modernizing-safari-web-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/modernizing-safari-web-extensions)*

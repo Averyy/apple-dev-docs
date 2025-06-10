@@ -37,11 +37,15 @@ enum ASAuthorizationResult
   A security key credential from an assertion request.
 - [case securityKeyRegistration(ASAuthorizationSecurityKeyPublicKeyCredentialRegistration)](asauthorizationresult/securitykeyregistration(_:).md)
   A new security key credential from a registration request.
+### Enumeration Cases
+- [case passkeyAccountCreation(ASAuthorizationAccountCreationPlatformPublicKeyCredential)](asauthorizationresult/passkeyaccountcreation(_:).md)
+  A newly created passkey credential and associated user information resulting from an account creation request.
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

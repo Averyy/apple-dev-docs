@@ -1,6 +1,6 @@
 # init(_:image:content:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: init
 
 Creates an `AccessoryWidgetGroup` that generates its label from a localized string key and image resource.

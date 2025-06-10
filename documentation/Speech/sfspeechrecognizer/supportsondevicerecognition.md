@@ -20,7 +20,7 @@ var supportsOnDeviceRecognition: Bool { get set }
 
 #### Discussion
 
-An [`SFSpeechRecognitionRequest`](sfspeechrecognitionrequest.md) can only honor its [`requiresOnDeviceRecognition`](sfspeechrecognitionrequest/requiresondevicerecognition.md) property if [`supportsOnDeviceRecognition`](sfspeechrecognizer/supportsondevicerecognition.md) is [`true`](https://developer.apple.com/documentation/swift/true). If [`supportsOnDeviceRecognition`](sfspeechrecognizer/supportsondevicerecognition.md) is [`false`](https://developer.apple.com/documentation/swift/false), the [`SFSpeechRecognizer`](sfspeechrecognizer.md) requires a network in order to recognize speech.
+An [`SFSpeechRecognitionRequest`](sfspeechrecognitionrequest.md) can only honor its [`requiresOnDeviceRecognition`](sfspeechrecognitionrequest/requiresondevicerecognition.md) property if [`supportsOnDeviceRecognition`](sfspeechrecognizer/supportsondevicerecognition.md) is `true`. If [`supportsOnDeviceRecognition`](sfspeechrecognizer/supportsondevicerecognition.md) is `false`, the [`SFSpeechRecognizer`](sfspeechrecognizer.md) requires a network in order to recognize speech.
 
 ## See Also
 

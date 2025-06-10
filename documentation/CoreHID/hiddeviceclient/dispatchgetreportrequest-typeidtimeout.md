@@ -1,6 +1,6 @@
 # dispatchGetReportRequest(type:id:timeout:)
 
-**Framework**: Corehid  
+**Framework**: Core HID  
 **Kind**: method
 
 Send a get report request to the device over the transport.
@@ -16,8 +16,8 @@ func dispatchGetReportRequest(type: HIDReportType, id: HIDReportID? = nil, timeo
 
 ## Mentions
 
-- [Communicating with human interface devices](communicatingwithhiddevices.md)
 - [Creating virtual devices](creatingvirtualdevices.md)
+- [Communicating with human interface devices](communicatingwithhiddevices.md)
 
 #### Return Value
 

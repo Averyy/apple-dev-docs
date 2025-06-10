@@ -6,10 +6,10 @@
 The combined, maximum size of the essential asset download files.
 
 **Availability**:
-- iOS 16.4+
-- iPadOS 16.4+
-- Mac Catalyst 16.4+
-- macOS 13.3+
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
 - tvOS 18.4+
 - visionOS 2.4+
 

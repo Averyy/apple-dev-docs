@@ -28,8 +28,6 @@ func dispatchThreads(_ threadsPerGrid: MTLSize, threadsPerThreadgroup: MTLSize)
 
 > ⚠️ **Warning**:  Use this method only if the device your app is running on supports nonuniform threadgroup sizes. Check for device capabilities with [`supportsFamily(_:)`](mtldevice/supportsfamily(_:).md) on the device providing your compute command encoder. See [`Metal Feature Set Tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for device support information.
 
- Use this method only if the device your app is running on supports nonuniform threadgroup sizes. Check for device capabilities with [`supportsFamily(_:)`](mtldevice/supportsfamily(_:).md) on the device providing your compute command encoder. See [`Metal Feature Set Tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for device support information.
-
 This method encodes a call that uses an arbitrary number of threads in its execution grid. Metal calculates the number of threadgroups needed, providing partial threadgroups if necessary. Prefer this method to [`dispatchThreadgroups(_:threadsPerThreadgroup:)`](mtlcomputecommandencoder/dispatchthreadgroups(_:threadsperthreadgroup:).md) if your app requires bounds checking or you need extra data allocations to saturate a uniform grid.
 
 ## Parameters

@@ -8,10 +8,10 @@ Sets the presentation background of the enclosing sheet using a shape style.
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
-- Mac Catalyst 16.4+
+- Mac Catalyst ?+
 - macOS 13.3+
 - tvOS 16.4+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.4+
 
 ## Declaration
@@ -44,7 +44,9 @@ struct ContentView: View {
 The `presentationBackground(_:)` modifier differs from the `View/background(_:ignoresSafeAreaEdges:)` modifier in several key ways. A presentation background:
 
 - Automatically fills the entire presentation.
-- Allows views behind the presentation to show through translucent styles.
+- Allows views behind the presentation to show through translucent styles on supported platforms.
+
+> **Note**: Sheet presentations on macOS do not support translucency or transparency — the background is always opaque.
 
 ## Parameters
 

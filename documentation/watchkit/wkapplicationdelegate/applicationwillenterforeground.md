@@ -1,6 +1,6 @@
 # applicationWillEnterForeground()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Tells the delegate that the app is about to transition from the background to the foreground.

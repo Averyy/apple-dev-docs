@@ -1,6 +1,6 @@
 # External link account
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Enable qualifying apps to link to an external website for account creation or management.
 
@@ -28,4 +28,4 @@ If your account has the [`com.apple.developer.storekit.external-link.account`](h
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/external-link-account)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/external-link-account)*

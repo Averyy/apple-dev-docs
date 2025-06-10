@@ -1,6 +1,6 @@
 # WKInterfaceSemanticContentAttribute.playback
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 A view representing the playback controls, such as Play, Rewind, or Fast Forward buttons or playhead scrubbers. These views are not flipped when switching between left-to-right and right-to-left layouts.

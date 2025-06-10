@@ -1,6 +1,6 @@
 # init(string:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Returns a pattern object for the specified pattern string.

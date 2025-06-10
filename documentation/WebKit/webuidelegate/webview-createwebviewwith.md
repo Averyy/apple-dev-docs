@@ -1,6 +1,6 @@
 # webView(_:createWebViewWith:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Creates a window containing a web view to load the specified request.

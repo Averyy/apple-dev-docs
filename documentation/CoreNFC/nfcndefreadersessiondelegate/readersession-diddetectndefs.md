@@ -23,8 +23,6 @@ The reader session calls this method when it detects NFC tags with NDEF messages
 
 > ❗ **Important**:  The reader session doesn’t call this method when the delegate provides the [`readerSession(_:didDetect:)`](nfcndefreadersessiondelegate/readersession(_:diddetect:).md) method.
 
- The reader session doesn’t call this method when the delegate provides the [`readerSession(_:didDetect:)`](nfcndefreadersessiondelegate/readersession(_:diddetect:).md) method.
-
 ## Parameters
 
 - `session`: The reader session calling this method.

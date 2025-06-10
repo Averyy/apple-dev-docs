@@ -1,6 +1,6 @@
 # WKNavigationType.linkActivated
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A link activation.

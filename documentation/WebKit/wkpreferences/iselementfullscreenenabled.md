@@ -1,6 +1,6 @@
 # isElementFullscreenEnabled
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether a web view can display content full screen.
@@ -24,8 +24,6 @@ var isElementFullscreenEnabled: Bool { get set }
 The default value for this preference is [`false`](https://developer.apple.com/documentation/swift/false).
 
 > ❗ **Important**:  When this value is [`true`](https://developer.apple.com/documentation/swift/true) and a page requests full-screen mode, the system removes the [`WKWebView`](wkwebview.md) from your app’s view hierarchy.
-
- When this value is [`true`](https://developer.apple.com/documentation/swift/true) and a page requests full-screen mode, the system removes the [`WKWebView`](wkwebview.md) from your app’s view hierarchy.
 
 ## See Also
 

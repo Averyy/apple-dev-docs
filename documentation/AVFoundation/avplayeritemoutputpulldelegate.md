@@ -37,6 +37,7 @@ The methods in this protocol are called by [`AVPlayerItemVideoOutput`](avplayeri
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

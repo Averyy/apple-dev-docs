@@ -1,6 +1,6 @@
 # provideCredentialWithoutUserInteraction(for:)
 
-**Framework**: Authenticationservices  
+**Framework**: Authentication Services  
 **Kind**: method
 
 Attempts to provide the user-requested credential with no further user interaction.

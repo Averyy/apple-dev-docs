@@ -1,6 +1,6 @@
 # weights
 
-**Framework**: Coreml  
+**Framework**: Core ML  
 **Kind**: property
 
 The key you use to access the weights of a layer in a neural network model.

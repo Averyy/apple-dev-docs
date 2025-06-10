@@ -1,6 +1,6 @@
 # belowIfTooWide
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 Vertical placement below the default vertical position for content that’s too wide to fit next to the TrueDepth camera.
@@ -8,7 +8,6 @@ Vertical placement below the default vertical position for content that’s too 
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

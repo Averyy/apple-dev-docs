@@ -1,6 +1,6 @@
 # Read/Write Status Constants
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 Supported constant values for `kVTPropertyReadWriteStatusKey`.
 

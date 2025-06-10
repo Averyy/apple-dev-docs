@@ -1,6 +1,6 @@
 # WatchKitError.Code.invalidArgument
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 An invalid argument error.

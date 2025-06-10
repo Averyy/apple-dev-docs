@@ -1,6 +1,6 @@
 # errorDescription
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A localized message describing what error occurred.

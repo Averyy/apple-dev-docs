@@ -16,7 +16,7 @@ The facial features of the detected face.
 ## Declaration
 
 ```swift
-let landmarks: FaceObservation.Landmarks2D?
+var landmarks: FaceObservation.Landmarks2D? { get }
 ```
 
 #### Discussion

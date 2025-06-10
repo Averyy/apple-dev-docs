@@ -1,6 +1,6 @@
 # tagNames
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The tag names that you want to include on a saved file.
@@ -43,4 +43,4 @@ When the value of [`showsTagField`](nssavepanel/showstagfield.md) is [`true`](ht
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nssavepanel/tagnames)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nssavepanel/tagnames)*

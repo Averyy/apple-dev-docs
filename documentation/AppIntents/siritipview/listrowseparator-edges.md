@@ -9,7 +9,7 @@ Sets the display mode for the separator associated with this specific row.
 - iOS 15.0+
 - iPadOS 15.0+
 - macOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

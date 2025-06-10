@@ -599,6 +599,17 @@ struct AVMetadataIdentifier
   Creates a metadata identifier.
 - [init(rawValue: String)](avmetadataidentifier/init(rawvalue:).md)
   Creates a metadata identifier with the specified raw value.
+### Type Properties
+- [static let quickTimeMetadataAIMEData: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadataaimedata.md)
+  A value of type kCMMetadataBaseDataType_RawData
+- [static let quickTimeMetadataCameraFocalLength35mmEquivalent: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacamerafocallength35mmequivalent.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating focal length normalized to the 35mm film equivalent value (e.g. “50.00mm”).
+- [static let quickTimeMetadataCameraLensModel: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacameralensmodel.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the lens model (e.g. “iPhone 16 Pro back camera 6.765mm f/1.78”).
+- [static let quickTimeMetadataCinematicVideoIntent: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatacinematicvideointent.md)
+  A value of type `kCMMetadataBaseDataType_UInt8` indicating whether this movie is intended as a Cinematic Video (1) or not (0).
+- [static let quickTimeMetadataPresentationImmersiveMedia: AVMetadataIdentifier](avmetadataidentifier/quicktimemetadatapresentationimmersivemedia.md)
+  A value of type kCMMetadataBaseDataType_RawData
 
 ## Relationships
 
@@ -607,6 +618,7 @@ struct AVMetadataIdentifier
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_STATE_WAIT
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 The activity is waiting for an opportunity to run.

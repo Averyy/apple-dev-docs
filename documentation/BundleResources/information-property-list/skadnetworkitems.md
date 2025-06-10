@@ -17,8 +17,6 @@ Each dictionary contains one [`SKAdNetworkIdentifier`](information-property-list
 
 > ❗ **Important**:  Ad network IDs are case-sensitive and are in lowercase.
 
- Ad network IDs are case-sensitive and are in lowercase.
-
 For more information, see [`Configuring a source app`](https://developer.apple.com/documentation/StoreKit/configuring-a-source-app).
 
 ## Topics

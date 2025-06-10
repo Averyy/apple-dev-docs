@@ -48,8 +48,6 @@ let image = renderer.image {
 
 > ❗ **Important**:  The OS X v10.5 implementation of this method does not support the entire Core Animation composition model. `QCCompositionLayer`, `CAOpenGLLayer`, and `QTMovieLayer` layers are not rendered. Additionally, layers that use 3D transforms are not rendered, nor are layers that specify [`backgroundFilters`](calayer/backgroundfilters.md), [`filters`](calayer/filters.md), [`compositingFilter`](calayer/compositingfilter.md), or a [`mask`](calayer/mask.md) values. Future versions of macOS may add support for rendering these layers and properties.
 
- The OS X v10.5 implementation of this method does not support the entire Core Animation composition model. `QCCompositionLayer`, `CAOpenGLLayer`, and `QTMovieLayer` layers are not rendered. Additionally, layers that use 3D transforms are not rendered, nor are layers that specify [`backgroundFilters`](calayer/backgroundfilters.md), [`filters`](calayer/filters.md), [`compositingFilter`](calayer/compositingfilter.md), or a [`mask`](calayer/mask.md) values. Future versions of macOS may add support for rendering these layers and properties.
-
 ## Parameters
 
 - `ctx`: The graphics context to use to render the layer.

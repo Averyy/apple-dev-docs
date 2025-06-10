@@ -10,8 +10,6 @@ The payload you use to configure an app extension that performs single sign-on w
 - iPadOS 13.0+
 - macOS 10.15+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,17 +29,17 @@ The system supports user channel installation in macOS 11 and later.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS |
-| User Channel | macOS, Shared iPad |
-| Allow Manual Install | - |
-| Requires Supervision | - |
-| Requires User Approved MDM | macOS |
-| Allowed in User Enrollment | iOS, macOS |
-| Allow Multiple Payloads | iOS, macOS, Shared iPad |
+| Device channel | iOS, macOS, visionOS |
+| User channel | macOS, Shared iPad |
+| Allow manual install | NA |
+| Requires supervision | NA |
+| Requires user-approved MDM | macOS |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -92,7 +90,7 @@ The system supports user channel installation in macOS 11 and later.
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object ExtensibleSingleSignOnKerberos.ExtensionData](extensiblesinglesignonkerberos/extensiondata-data.dictionary.md)
   The additional data to pass to the app extension.
 

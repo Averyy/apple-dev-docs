@@ -1,6 +1,6 @@
 # jsObject()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the JavaScript object corresponding to the receiver.

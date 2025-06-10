@@ -38,6 +38,7 @@ The various `yield` methods of `AsyncThrowingStream.Continuation` return this ty
 
 ### Conforms To
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

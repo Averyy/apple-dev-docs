@@ -27,7 +27,7 @@ For additional information about how to use views and controls, see [`Human Inte
 
 ## Topics
 
-### View Fundamentals
+### View fundamentals
 - [class NSView](nsview.md)
   The infrastructure for drawing, printing, and handling events in an app.
 - [class NSControl](nscontrol.md)
@@ -36,7 +36,7 @@ For additional information about how to use views and controls, see [`Human Inte
   A mechanism for displaying text or images in a view object without the overhead of a full [`NSView`](nsview.md) subclass.
 - [class NSActionCell](nsactioncell.md)
   An active area inside a control.
-### Container Views
+### Container views
 - [Localization-Friendly Layouts in macOS](../xcode/localization-friendly_layouts_in_macos.md)
   This project demonstrates localization-friendly auto layout constraints. It uses `NSGridView` as a container view to achieve localized layouts.
 - [Grid View](grid-view.md)
@@ -51,7 +51,7 @@ For additional information about how to use views and controls, see [`Human Inte
   A multipage interface that displays one page at a time.
 - [Scroll View](scroll-view.md)
   Provide an interface for navigating content that is too large to fit in the available space.
-### Content Views
+### Content views
 - [Browser View](browser-view.md)
   Provide a column-based interface for viewing and navigating hierarchical information.
 - [Collection View](collection-view.md)
@@ -107,17 +107,25 @@ For additional information about how to use views and controls, see [`Human Inte
   A control that offers a binary choice.
 - [class NSMatrix](nsmatrix.md)
   A legacy interface for grouping radio buttons or other types of cells together.
-### Visual Adornments
+### Liquid Glass effects
+- [class NSGlassEffectView](nsglasseffectview.md)
+  NSGlassView embeds its content view in a dynamic glass effect.
+- [class NSGlassEffectContainerView](nsglasseffectcontainerview.md)
+  NSGlassContainerView allows similar NSGlassViews in appropriate proximity to eachother to be merged together. Additionally, NSGlassContainerView can reduce the number of passes required to render similar glass views.
+### Interacting with adjacent views
+- [class NSBackgroundExtensionView](nsbackgroundextensionview.md)
+  A view that extends content to fill its own bounds.
+### Visual adornments
 - [class NSVisualEffectView](nsvisualeffectview.md)
   A view that adds translucency and vibrancy effects to the views in your interface.
 - [class NSBox](nsbox.md)
   A stylized rectangular box with an optional title.
-### UI Validation
+### UI validation
 - [protocol NSUserInterfaceValidations](nsuserinterfacevalidations.md)
   A protocol that a custom class can adopt to manage the enabled state of a UI element.
 - [protocol NSValidatedUserInterfaceItem](nsvalidateduserinterfaceitem.md)
   A protocol that a custom class can adopt to manage the automatic enablement of a UI control.
-### Tool Tips
+### Tool tips
 - [protocol NSViewToolTipOwner](nsviewtooltipowner.md)
   A set of methods for dynamically associating a tool tip with a view.
 ### Related types

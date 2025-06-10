@@ -1,6 +1,6 @@
 # fileImporter(isPresented:allowedContentTypes:allowsMultipleSelection:onCompletion:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Presents a system interface for allowing the user to import multiple files.

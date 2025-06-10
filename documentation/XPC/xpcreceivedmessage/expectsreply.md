@@ -1,6 +1,6 @@
 # expectsReply
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: property
 
 A Boolean value that indicates if the client that sent the message expects a reply.

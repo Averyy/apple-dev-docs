@@ -1,6 +1,6 @@
 # configurationIntent(of:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: method
 
 Gets the associated App Intent.
@@ -8,7 +8,9 @@ Gets the associated App Intent.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 

@@ -17,8 +17,6 @@ to your app’s `Info.plist` file and provide a usage description for the operat
 
 > ❗ **Important**: Critical messages sent via this API may not transmit in scenarios where SMS service is unavailable.
 
-Critical messages sent via this API may not transmit in scenarios where SMS service is unavailable.
-
 ##### Understand Api Restrictions and Usage Limitations
 
 You app’s use of this API must follow the [`Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/support/terms/apple-developer-program-license-agreement#other-tech); additionally the following API limitations and restrictions apply:

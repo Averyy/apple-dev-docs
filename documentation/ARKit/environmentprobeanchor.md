@@ -1,6 +1,6 @@
 # EnvironmentProbeAnchor
 
-**Framework**: Arkit  
+**Framework**: ARKit  
 **Kind**: struct
 
 An environment probe in the world.
@@ -43,6 +43,7 @@ Use environment probes to light virtual geometry by producing environment textur
 - [Equatable](../Swift/Equatable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -52,4 +53,4 @@ Use environment probes to light virtual geometry by producing environment textur
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/environmentprobeanchor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/environmentprobeanchor)*

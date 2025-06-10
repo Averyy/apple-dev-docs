@@ -1,6 +1,6 @@
 # miterLimit
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A floating-point number that controls the miter limit ratio for mitered line joins.

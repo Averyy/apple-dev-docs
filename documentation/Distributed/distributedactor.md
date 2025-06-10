@@ -202,6 +202,7 @@ actor system for the decoding initializer when decoding a distributed actor.
 - [Hashable](../swift/hashable.md)
 - [Identifiable](../swift/identifiable.md)
 - [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

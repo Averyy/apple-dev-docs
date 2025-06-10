@@ -1,6 +1,6 @@
 # NSTokenField
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 A text field that converts text into visually distinct tokens.
@@ -71,6 +71,7 @@ Use a token field when you want typed text to be transformed into “tokens”, 
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

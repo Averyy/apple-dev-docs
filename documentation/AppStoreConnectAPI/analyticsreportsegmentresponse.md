@@ -44,6 +44,9 @@ Use this object with [`Read the details for a report segment`](get-v1-analyticsr
   The data structure that represents an analytics report segment.
 - [object AnalyticsReportSegmentsResponse](analyticsreportsegmentsresponse.md)
   A response that contains a list of analytics report segment resources.
+- [object AnalyticsReportInstanceSegmentsLinkagesResponse](analyticsreportinstancesegmentslinkagesresponse.md)
+- [object AnalyticsReportInstancesLinkagesResponse](analyticsreportinstanceslinkagesresponse.md)
+- [object AnalyticsReportRequestReportsLinkagesResponse](analyticsreportrequestreportslinkagesresponse.md)
 
 
 ---

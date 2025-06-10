@@ -1,6 +1,6 @@
 # DOM_BUBBLING_PHASE
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

@@ -28,8 +28,6 @@ Your block should perform any force calculations you are interested in and retur
 
 > ❗ **Important**:  Although your app can use the z coordinate of any of the float vectors to perform its calculations, the z value of the output vector is ignored by SpriteKit. Essentially, this means that you can use field effects only to animate a node’s [`position`](sknode/position.md) property, not its [`zPosition`](sknode/zposition.md) property.
 
- Although your app can use the z coordinate of any of the float vectors to perform its calculations, the z value of the output vector is ignored by SpriteKit. Essentially, this means that you can use field effects only to animate a node’s [`position`](sknode/position.md) property, not its [`zPosition`](sknode/zposition.md) property.
-
 ## See Also
 
 - [class func dragField() -> SKFieldNode](skfieldnode/dragfield.md)

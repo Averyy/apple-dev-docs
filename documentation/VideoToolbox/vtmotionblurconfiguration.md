@@ -1,11 +1,14 @@
 # VTMotionBlurConfiguration
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: class
 
 A configuration object to enable motion blur on a frame processing session.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
 
 ## Declaration
@@ -27,8 +30,6 @@ class VTMotionBlurConfiguration
   The width of a source frame in pixels.
 - [var frameHeight: Int](vtmotionblurconfiguration/frameheight.md)
   The height of a source frame in pixels.
-- [var frameSupportedPixelFormats: [NSNumber]](vtmotionblurconfiguration/framesupportedpixelformats.md)
-  A list of source frame supported pixel formats for the current configuration.
 - [var destinationPixelBufferAttributes: [String : any Sendable]](vtmotionblurconfiguration/destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
 - [var sourcePixelBufferAttributes: [String : any Sendable]](vtmotionblurconfiguration/sourcepixelbufferattributes.md)
@@ -48,6 +49,11 @@ class VTMotionBlurConfiguration
   The collection of currently-supported algorithms or configuration revisions for the class of configurations.
 - [VTMotionBlurConfiguration.Revision](vtmotionblurconfiguration/revision-swift.enum.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
+### Instance Properties
+- [var frameSupportedPixelFormats: [NSNumber]](vtmotionblurconfiguration/framesupportedpixelformats-1n4uq.md)
+- [var supportedPixelFormats: [OSType]](vtmotionblurconfiguration/supportedpixelformats.md)
+### Type Properties
+- [class var isSupported: Bool](vtmotionblurconfiguration/issupported.md)
 
 ## Relationships
 
@@ -61,6 +67,7 @@ class VTMotionBlurConfiguration
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)
 
 ## See Also

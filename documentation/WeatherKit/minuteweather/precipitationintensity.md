@@ -1,6 +1,6 @@
 # precipitationIntensity
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The forecasted precipitation intensity.

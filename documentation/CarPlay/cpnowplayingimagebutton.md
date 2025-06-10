@@ -13,6 +13,7 @@ A button that displays an image.
 ## Declaration
 
 ```swift
+@MainActor
 class CPNowPlayingImageButton
 ```
 
@@ -50,6 +51,8 @@ To properly size your image, use the display scale of the vehicle’s primary sc
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -24,6 +24,7 @@ Request and process Apple Pay payments in your app.
 - [struct PayWithApplePayButton](paywithapplepaybutton.md)
 - [struct PayWithApplePayButtonLabel](paywithapplepaybuttonlabel.md)
 - [struct PayWithApplePayButtonStyle](paywithapplepaybuttonstyle.md)
+- [struct PayWithApplePayButtonLabel](paywithapplepaybuttonlabel.md)
 ### Payment requests
 - [class PKPaymentRequest](pkpaymentrequest.md)
   An object that represents a request for payment, including details about payment-processing capabilities, the payment amount, and shipping information.

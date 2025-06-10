@@ -42,6 +42,7 @@ protocol ModelActor : Actor
 ### Inherits From
 - [Actor](../Swift/Actor.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

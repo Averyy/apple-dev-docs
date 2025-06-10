@@ -1,6 +1,6 @@
 # containingBundleName
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 A dictionary key for the extension host application localized name.

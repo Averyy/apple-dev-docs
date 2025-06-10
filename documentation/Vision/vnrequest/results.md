@@ -21,8 +21,8 @@ var results: [VNObservation]? { get }
 
 ## Mentions
 
-- [Detecting Human Body Poses in Images](detecting-human-body-poses-in-images.md)
 - [Recognizing Text in Images](recognizing-text-in-images.md)
+- [Detecting Human Body Poses in Images](detecting-human-body-poses-in-images.md)
 
 #### Discussion
 

@@ -10,7 +10,7 @@ Core Data can typically perform an automatic data migration, referred to as ligh
 
 ##### Generating an Inferred Mapping Model
 
-To perform automatic lightweight migration, Core Data needs to be able to find the source and destination managed object models at runtime. It looks for models in the bundles returned by the [`allBundles`](https://developer.apple.com/documentation/foundation/bundle/1413705-allbundles) and [`allFrameworks`](https://developer.apple.com/documentation/foundation/bundle/1408056-allframeworks) methods of the [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class. Core Data then analyzes the schema changes to persistent entities and properties, and generates an inferred mapping model.
+To perform automatic lightweight migration, Core Data needs to be able to find the source and destination managed object models at runtime. It looks for models in the bundles returned by the [`allBundles`](https://developer.apple.com/documentation/Foundation/Bundle/allBundles) and [`allFrameworks`](https://developer.apple.com/documentation/Foundation/Bundle/allFrameworks) methods of the [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class. Core Data then analyzes the schema changes to persistent entities and properties, and generates an inferred mapping model.
 
 Generating an inferred mapping model requires changes to fit an obvious migration pattern, for example:
 

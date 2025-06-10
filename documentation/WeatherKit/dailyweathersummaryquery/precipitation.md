@@ -1,6 +1,6 @@
 # precipitation
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The daily precipitation summary query.

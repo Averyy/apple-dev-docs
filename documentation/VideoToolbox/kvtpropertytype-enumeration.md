@@ -1,6 +1,6 @@
 # kVTPropertyType_Enumeration
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

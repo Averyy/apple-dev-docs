@@ -104,4 +104,4 @@ struct NavigationSplitViewWrapper<Sidebar, Content, Detail>: View where Sidebar:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3154-adopting-swiftui-navigation-split-view)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3154-adopting-swiftui-navigation-split-view)*

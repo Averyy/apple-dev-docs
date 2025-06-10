@@ -1,6 +1,6 @@
 # kVTH264EntropyMode_CAVLC
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

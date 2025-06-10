@@ -1,6 +1,6 @@
 # contextMenu(menuItems:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Adds a context menu to a view.

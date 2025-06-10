@@ -10,7 +10,7 @@ Sets a flexible, preferred width for the column containing this view.
 - iPadOS 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration

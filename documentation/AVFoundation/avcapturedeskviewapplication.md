@@ -1,6 +1,6 @@
 # AVCaptureDeskViewApplication
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: class
 
 An object that programmatically presents Desk View.
@@ -71,4 +71,4 @@ deskView.present(launchConfiguration: configuration) { error in
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/avcapturedeskviewapplication)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avcapturedeskviewapplication)*

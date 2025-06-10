@@ -1,6 +1,6 @@
 # score(for:)
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: method
 
 Returns a number rating the desirability of the game model’s current state from the perspective of the specified player.

@@ -50,8 +50,6 @@ This enables you to use the dollar sign (`$`) prefix to get a binding to publish
 
 > ❗ **Important**: Manage an externsion’s life cycle events without using a delegate whenever possible. For example, prefer to handle changes in [`ScenePhase`](scenephase.md) instead of relying on delegate callbacks, like [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/applicationDidFinishLaunching()).
 
-Manage an externsion’s life cycle events without using a delegate whenever possible. For example, prefer to handle changes in [`ScenePhase`](scenephase.md) instead of relying on delegate callbacks, like [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/applicationDidFinishLaunching()).
-
 ## Topics
 
 ### Creating a delegate adaptor
@@ -68,6 +66,7 @@ Manage an externsion’s life cycle events without using a delegate whenever pos
 ### Conforms To
 - [DynamicProperty](dynamicproperty.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

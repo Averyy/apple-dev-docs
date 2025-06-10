@@ -1,6 +1,6 @@
 # toolbar(id:content:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Populates the toolbar or navigation bar with the specified items, allowing for user customization.
@@ -10,7 +10,7 @@ Populates the toolbar or navigation bar with the specified items, allowing for u
 - iPadOS 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 7.0+
 
 ## Declaration

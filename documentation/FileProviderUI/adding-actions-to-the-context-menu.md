@@ -45,11 +45,9 @@ The following sequence of events occurs when the user selects one of your action
 
 ##### Use Predicates to Enable and Disable Actions
 
-Use the `NSExtensionFileProviderActionActivationRule` key to enable or disable actions based on the selected file provider item. Set the key’s value to a predicate format string that the system uses to create an [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) object. The system calls the predicate’s [`evaluate(with:)`](https://developer.apple.com/documentation/foundation/nspredicate/1417924-evaluate) method, passing in the selected item, a dictionary with a single `fileproviderItems` key. The value is an array of [`NSFileProviderItem`](https://developer.apple.com/documentation/FileProvider/NSFileProviderItem-swift.typealias) objects representing the selected items.
+Use the `NSExtensionFileProviderActionActivationRule` key to enable or disable actions based on the selected file provider item. Set the key’s value to a predicate format string that the system uses to create an [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate) object. The system calls the predicate’s [`evaluate(with:)`](https://developer.apple.com/documentation/Foundation/NSPredicate/evaluate(with:)) method, passing in the selected item, a dictionary with a single `fileproviderItems` key. The value is an array of [`NSFileProviderItem`](https://developer.apple.com/documentation/FileProvider/NSFileProviderItem-swift.typealias) objects representing the selected items.
 
 > ❗ **Important**: Your action must have a predicate or the system won’t display it in the action menu. To always show an action, use `TRUEPREDICATE`.
-
-Your action must have a predicate or the system won’t display it in the action menu. To always show an action, use `TRUEPREDICATE`.
 
 You can use predicates to test the value of any of the [`NSFileProviderItemProtocol`](https://developer.apple.com/documentation/FileProvider/NSFileProviderItemProtocol) object’s properties. For example, the following predicate tests whether the [`isUploaded`](https://developer.apple.com/documentation/FileProvider/NSFileProviderItemProtocol/isUploaded) property is set to [`true`](https://developer.apple.com/documentation/swift/true).
 

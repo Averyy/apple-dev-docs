@@ -29,8 +29,6 @@ func setDynamicShapes(_ shapes: [BNNSGraph.Shape], forFunction function: String?
 
 - [func BNNSGraphContextSetDynamicShapes(bnns_graph_context_t, UnsafePointer<CChar>?, Int, UnsafeMutablePointer<bnns_graph_shape_t>) -> Int32](bnnsgraphcontextsetdynamicshapes(_:_:_:_:).md)
   Specifies the dynamic shapes for a graph and, if possible, infers, the output shapes.
-- [func setBatchSize(Int, forFunction: String?) async](bnnsgraph/context/setbatchsize(_:forfunction:).md)
-  Sets the batch size for a graph.
 - [BNNSGraph.Shape](bnnsgraph/shape.md)
   The specification of the shape of an argument.
 - [func argumentCount(forFunction: String?) -> Int](bnnsgraph/context/argumentcount(forfunction:).md)

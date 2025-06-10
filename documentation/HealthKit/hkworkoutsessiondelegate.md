@@ -45,6 +45,8 @@ All the methods are required. HealthKit calls these methods on an anonymous seri
   Tells the delegate that the mirrored workout session disconnected from the primary session.
 - [func workoutSession(HKWorkoutSession, didReceiveDataFromRemoteWorkoutSession: [Data])](hkworkoutsessiondelegate/workoutsession(_:didreceivedatafromremoteworkoutsession:).md)
   Passes data from the remote workout session to the session delegate.
+### Instance Methods
+- [func workoutSession(HKWorkoutSession, didUpdateGeneratedTypes: Set<HKSampleType>)](hkworkoutsessiondelegate/workoutsession(_:didupdategeneratedtypes:).md)
 
 ## Relationships
 

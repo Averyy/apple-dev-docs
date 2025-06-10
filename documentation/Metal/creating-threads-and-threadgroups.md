@@ -6,7 +6,7 @@ Learn how Metal organizes compute-processing workloads.
 
 #### Overview
 
-Recall from [`Processing a Texture in a Compute Function`](processing-a-texture-in-a-compute-function.md) that when you dispatch your compute pass, Metal executes your kernel function over a 1D, 2D, or 3D grid. Each point in the grid represents a single instance of your kernel function, referred to as a . For example, in image processing, the grid is typically a 2D matrix of threads—representing the entire image—with each thread corresponding to a single pixel of the image being processed.
+Recall from [`Processing a texture in a compute function`](processing-a-texture-in-a-compute-function.md) that when you dispatch your compute pass, Metal executes your kernel function over a 1D, 2D, or 3D grid. Each point in the grid represents a single instance of your kernel function, referred to as a . For example, in image processing, the grid is typically a 2D matrix of threads—representing the entire image—with each thread corresponding to a single pixel of the image being processed.
 
 Threads are organized into  that are executed together and can share a common block of memory. While sometimes kernel functions are designed so that threads run independently of each other, it’s also common for threads in a threadgroup to collaborate on their working set.
 
@@ -16,7 +16,7 @@ Threads are organized into  that are executed together and can share a common bl
 
 ![A grid divided into threadgroups that are composed of individual threads.](https://docs-assets.developer.apple.com/published/968ef737b344f13ae030c348b9ec2267/media-2928936%402x.png)
 
-A thread can be identified by its position in the grid; it’s this unique position that allows your kernel function to do something different for each thread. The sample kernel function in [`Processing a Texture in a Compute Function`](processing-a-texture-in-a-compute-function.md), below, shows how a thread’s position in the grid is passed into the function as a parameter. In this case, the parameter, `gid`, is a vector representing 2D coordinates and is used to both read from and write to a particular location in a texture.
+A thread can be identified by its position in the grid; it’s this unique position that allows your kernel function to do something different for each thread. The sample kernel function in [`Processing a texture in a compute function`](processing-a-texture-in-a-compute-function.md), below, shows how a thread’s position in the grid is passed into the function as a parameter. In this case, the parameter, `gid`, is a vector representing 2D coordinates and is used to both read from and write to a particular location in a texture.
 
 ```metal
 kernel void
@@ -87,6 +87,8 @@ The thread shown in red in [`Figure 5`](compute_passes/creating_threads_and_thre
 
 - [Calculating Threadgroup and Grid Sizes](calculating-threadgroup-and-grid-sizes.md)
   Calculate the optimum sizes for threadgroups and grids when dispatching compute-processing workloads.
+- [protocol MTL4ComputeCommandEncoder](mtl4computecommandencoder.md)
+  Encodes a compute pass and other memory operations into a command buffer.
 - [protocol MTLComputeCommandEncoder](mtlcomputecommandencoder.md)
   An interface for dispatching commands to encode in a compute pass.
 

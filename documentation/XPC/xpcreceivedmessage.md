@@ -1,6 +1,6 @@
 # XPCReceivedMessage
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: struct
 
 A type that represents a message sent between a session and a listener.
@@ -37,6 +37,9 @@ struct XPCReceivedMessage
   Sends a reply to the originator of the message.
 - [func handoffReply(to: DispatchQueue, () -> Void) -> (any Encodable)?](xpcreceivedmessage/handoffreply(to:_:).md)
   Informs the system when message processing and response continues in a separate dispatch queue.
+### Instance Methods
+- [func senderSatisfies(XPCPeerRequirement) -> Bool](xpcreceivedmessage/sendersatisfies(_:).md)
+  Check whether the sender of the received message satisfies the specified requirement.
 
 ## See Also
 

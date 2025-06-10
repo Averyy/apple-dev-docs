@@ -14,11 +14,9 @@ PiP playback starts when the user selects the PiP button in the player interface
 
 > 💡 **Tip**:  In iOS and iPadOS, you can disable automatic invocation of Picture in Picture in Settings > General > Picture in Picture. Check this setting if you think you’ve set up everything correctly but find that your video doesn’t enter PiP mode when you return to the Home screen.
 
- In iOS and iPadOS, you can disable automatic invocation of Picture in Picture in Settings > General > Picture in Picture. Check this setting if you think you’ve set up everything correctly but find that your video doesn’t enter PiP mode when you return to the Home screen.
-
 Selecting the stop button in the PiP interface terminates PiP and restores video playback within your app. AVKit can’t make assumptions about how you designed your app, so it doesn’t know how to properly restore your video playback interface. Instead, it delegates that responsibility to you.
 
-Starting in iOS 14, the PiP user interface provides controls that allow users to skip forward and backward within a video. The system enables these controls by default for apps linked in iOS 14 or later. If you need to restrict skipping content for legal disclaimers or advertisements, use [`requiresLinearPlayback`](avplayerviewcontroller/requireslinearplayback.md) during the required section of your video. Set this property back to [`false`](https://developer.apple.com/documentation/swift/false) once you can allow seeking again.
+Starting in iOS 14, the PiP user interface provides controls that allow users to skip forward and backward within a video. The system enables these controls by default for apps linked in iOS 14 or later. If you need to restrict skipping content for legal disclaimers or advertisements, use [`requiresLinearPlayback`](avplayerviewcontroller/requireslinearplayback.md) during the required section of your video. Set this property back to `false` once you can allow seeking again.
 
 ##### Restore Your Video Playback Interface
 
@@ -36,8 +34,6 @@ func playerViewController(_ playerViewController: AVPlayerViewController,
 Avoid adding animations during the swap so you can ensure quick restoration for your user.
 
 > ❗ **Important**:  To allow the system to finish restoring your user interface, call the completion handler with a value of `true`.
-
- To allow the system to finish restoring your user interface, call the completion handler with a value of `true`.
 
 ##### Swap Pip Content in Tvos
 

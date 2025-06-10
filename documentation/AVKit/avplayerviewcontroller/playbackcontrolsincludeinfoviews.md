@@ -17,9 +17,9 @@ var playbackControlsIncludeInfoViews: Bool { get set }
 
 #### Discussion
 
-This property determines whether the player shows views for video metadata, navigation markers, and playback settings. Set this property value to [`false`](https://developer.apple.com/documentation/swift/false), and [`showsPlaybackControls`](avplayerviewcontroller/showsplaybackcontrols.md) to [`true`](https://developer.apple.com/documentation/swift/true), to selectively prevent the player from displaying its information and setting panels. Changing the value of this property doesn’t immediately change the visibility of the info views.
+This property determines whether the player shows views for video metadata, navigation markers, and playback settings. Set this property value to `false`, and [`showsPlaybackControls`](avplayerviewcontroller/showsplaybackcontrols.md) to `true`, to selectively prevent the player from displaying its information and setting panels. Changing the value of this property doesn’t immediately change the visibility of the info views.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is `true`.
 
 ## See Also
 

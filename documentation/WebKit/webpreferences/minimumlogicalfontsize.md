@@ -1,6 +1,6 @@
 # minimumLogicalFontSize
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The minimum logical font size of the web view.

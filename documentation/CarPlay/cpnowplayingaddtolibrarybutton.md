@@ -13,6 +13,7 @@ A button for adding the current playing item to a collection.
 ## Declaration
 
 ```swift
+@MainActor
 class CPNowPlayingAddToLibraryButton
 ```
 

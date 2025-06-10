@@ -17,8 +17,8 @@ Combines two gestures exclusively to create a new gesture where only one gesture
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func exclusively<Other>(before other: Other) -> ExclusiveGesture<Self, Other> where Other : Gesture
+nonisolated
+func exclusively<Other>(before other: Other) -> ExclusiveGesture<Self, Other> where Other : Gesture
 ```
 
 #### Return Value

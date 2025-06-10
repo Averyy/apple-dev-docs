@@ -1,6 +1,6 @@
 # urlString
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The string representation of the URL for the receiver’s page.

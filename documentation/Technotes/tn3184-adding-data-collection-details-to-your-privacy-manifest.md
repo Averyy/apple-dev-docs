@@ -228,4 +228,4 @@ Repeat step 5 for each additional data type your app or third-party SDK collects
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3184-adding-data-collection-details-to-your-privacy-manifest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3184-adding-data-collection-details-to-your-privacy-manifest)*

@@ -1,6 +1,6 @@
 # contextMenu(menuItems:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Adds a context menu to a view.

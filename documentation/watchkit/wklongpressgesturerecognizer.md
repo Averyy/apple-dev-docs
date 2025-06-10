@@ -1,6 +1,6 @@
 # WKLongPressGestureRecognizer
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A gesture recognizer that interprets a touch event that occurs in the same relative area for an extended period of time.

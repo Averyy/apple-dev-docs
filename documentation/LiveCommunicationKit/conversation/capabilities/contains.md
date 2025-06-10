@@ -5,6 +5,13 @@
 
 Returns a Boolean value that indicates whether a given element is a member of the option set.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift
@@ -19,7 +26,7 @@ func contains(_ member: Self) -> Bool
 
 This example uses the `contains(_:)` method to check whether next-day shipping is in the `availableOptions` instance.
 
-```swift
+```None
 let availableOptions = ShippingOptions.express
 if availableOptions.contains(.nextDay) {
     print("Next day shipping available")

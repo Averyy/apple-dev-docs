@@ -1,0 +1,40 @@
+# endIndex
+
+**Framework**: Swift  
+**Kind**: property
+
+The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+var endIndex: EnumeratedSequence<Base>.Index { get }
+```
+
+#### Discussion
+
+When you need a range that includes the last element of a collection, use the half-open range operator (`..<`) with `endIndex`. The `..<` operator creates a range that doesn’t include the upper bound, so it’s always safe to use with `endIndex`. For example:
+
+```swift
+let numbers = [10, 20, 30, 40, 50]
+if let index = numbers.firstIndex(of: 30) {
+    print(numbers[index ..< numbers.endIndex])
+}
+// Prints "[30, 40, 50]"
+```
+
+If the collection is empty, `endIndex` is equal to `startIndex`.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/enumeratedsequence/endindex)*

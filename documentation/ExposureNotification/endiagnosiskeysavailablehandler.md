@@ -22,9 +22,9 @@ typealias ENDiagnosisKeysAvailableHandler = ([ENTemporaryExposureKey]) -> Void
 
 ## See Also
 
-- [func requestPreAuthorizedDiagnosisKeys(completionHandler: ENErrorHandler)](enmanager/requestpreauthorizeddiagnosiskeys(completionhandler:).md)
+- [func requestPreAuthorizedDiagnosisKeys(completionHandler: ((any Error)?) -> Void)](enmanager/requestpreauthorizeddiagnosiskeys(completionhandler:).md)
   Requests diagnosis keys after the user authorizes sharing them.
-- [func preAuthorizeDiagnosisKeys(completionHandler: ENErrorHandler)](enmanager/preauthorizediagnosiskeys(completionhandler:).md)
+- [func preAuthorizeDiagnosisKeys(completionHandler: ((any Error)?) -> Void)](enmanager/preauthorizediagnosiskeys(completionhandler:).md)
   Allows users to authorize a one-time release of diagnosis keys within five days of the authorization.
 - [var diagnosisKeysAvailableHandler: ENDiagnosisKeysAvailableHandler?](enmanager/diagnosiskeysavailablehandler.md)
   The handler that receives available diagnosis keys after a successful preauthorization.

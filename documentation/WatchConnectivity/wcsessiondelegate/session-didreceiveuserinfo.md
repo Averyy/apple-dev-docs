@@ -1,6 +1,6 @@
 # session(_:didReceiveUserInfo:)
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method
 
 Tells the delegate that the session successfully received a data directory from its counterpart.
@@ -25,8 +25,6 @@ The session object calls this method when it successfully receives a data dictio
 The system calls this method on a background thread.
 
 > ⚠️ **Warning**:  Always test Watch Connectivity data transfers on paired devices. The system doesn’t call the [`session(_:didReceiveUserInfo:)`](wcsessiondelegate/session(_:didreceiveuserinfo:).md) method in Simulator.
-
- Always test Watch Connectivity data transfers on paired devices. The system doesn’t call the [`session(_:didReceiveUserInfo:)`](wcsessiondelegate/session(_:didreceiveuserinfo:).md) method in Simulator.
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # maxIterations
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: property
 
 The maximum number of iterations the solver is allowed to do per frame.
@@ -10,6 +10,7 @@ The maximum number of iterations the solver is allowed to do per frame.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

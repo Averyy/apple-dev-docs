@@ -1,6 +1,6 @@
 # HAVE_CURRENT_DATA
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 Data for the current playback position is available, but not enough to begin playback.

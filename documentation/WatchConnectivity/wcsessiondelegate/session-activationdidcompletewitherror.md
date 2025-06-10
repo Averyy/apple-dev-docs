@@ -1,6 +1,6 @@
 # session(_:activationDidCompleteWith:error:)
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method  
 **Required**: Yes
 

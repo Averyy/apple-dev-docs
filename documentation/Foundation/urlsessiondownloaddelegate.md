@@ -49,6 +49,7 @@ In addition to the methods in this protocol, be sure to implement the methods in
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [URLSessionDelegate](urlsessiondelegate.md)
 - [URLSessionTaskDelegate](urlsessiontaskdelegate.md)
 
@@ -72,4 +73,4 @@ In addition to the methods in this protocol, be sure to implement the methods in
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessiondownloaddelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessiondownloaddelegate)*

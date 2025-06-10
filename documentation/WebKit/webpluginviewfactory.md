@@ -1,6 +1,6 @@
 # WebPlugInViewFactory
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 **Availability**:

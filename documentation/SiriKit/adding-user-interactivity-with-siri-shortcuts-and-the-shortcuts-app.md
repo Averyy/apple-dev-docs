@@ -1,6 +1,6 @@
 # Adding User Interactivity with Siri Shortcuts and the Shortcuts App
 
-**Framework**: Sirikit
+**Framework**: SiriKit
 
 Add custom intents and parameters to help users interact more quickly and effectively with Siri and the Shortcuts app.
 
@@ -121,4 +121,4 @@ The following example shows the response for a successful order. It provides the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app)*

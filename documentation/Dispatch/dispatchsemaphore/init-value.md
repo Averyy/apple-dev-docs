@@ -30,8 +30,6 @@ Passing zero for the value is useful for when two threads need to reconcile the 
 
 > ❗ **Important**:  Calls to [`signal()`](dispatchsemaphore/signal().md) must be balanced with calls to [`wait()`](dispatchsemaphore/wait().md). Attempting to dispose of a semaphore with a count lower than `value` causes an `EXC_BAD_INSTRUCTION` exception.
 
- Calls to [`signal()`](dispatchsemaphore/signal().md) must be balanced with calls to [`wait()`](dispatchsemaphore/wait().md). Attempting to dispose of a semaphore with a count lower than `value` causes an `EXC_BAD_INSTRUCTION` exception.
-
 ## Parameters
 
 - `value`: The starting value for the semaphore. Do not pass a value less than zero.

@@ -1,6 +1,6 @@
 # MEMessageSecurityHandler
 
-**Framework**: Mailkit  
+**Framework**: MailKit  
 **Kind**: protocol
 
 An object that digitally signs or encrypts messages the user sends and receives.
@@ -76,4 +76,4 @@ To indicate that your extension contains a message security handler, add `MEMess
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MailKit/memessagesecurityhandler)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mailkit/memessagesecurityhandler)*

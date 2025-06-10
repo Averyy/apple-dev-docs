@@ -17,7 +17,6 @@ A Boolean value that determines whether the effect node applies the filter to it
 ## Declaration
 
 ```swift
-@MainActor
 var shouldEnableEffects: Bool { get set }
 ```
 

@@ -1,6 +1,6 @@
 # MoonPhase.full
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 The disk is fully lit where the moon is visible.

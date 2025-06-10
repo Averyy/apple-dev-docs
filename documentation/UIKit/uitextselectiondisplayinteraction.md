@@ -1,6 +1,6 @@
 # UITextSelectionDisplayInteraction
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An object that provides the system UI for displaying text selection.
@@ -89,4 +89,4 @@ class UITextSelectionDisplayInteraction
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uitextselectiondisplayinteraction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uitextselectiondisplayinteraction)*

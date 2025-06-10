@@ -15,8 +15,6 @@ Present videos in your RealityKit experiences.
   A material that supports animated textures.
 - [class VideoPlaybackController](videoplaybackcontroller.md)
   An object that controls the playback of video for a video material.
-- [VideoPlaybackController.ViewingMode](videoplaybackcontroller/viewingmode.md)
-  Options for viewing video playback.
 ### Content placement
 - [struct DockingRegionComponent](dockingregioncomponent.md)
   A component that docks a scene within a region of an immersive space.
@@ -43,6 +41,8 @@ Present videos in your RealityKit experiences.
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
+- [Presenting images in RealityKit](presenting-images-in-realitykit.md)
+  Create and display spatial scenes in RealityKit.
 - [Models and meshes](scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
 - [Materials, textures, and shaders](scene-content-materials-and-shaders.md)

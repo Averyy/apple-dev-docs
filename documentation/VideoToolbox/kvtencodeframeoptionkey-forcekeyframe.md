@@ -1,6 +1,6 @@
 # kVTEncodeFrameOptionKey_ForceKeyFrame
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Boolean value indicating whether the current frame is forced to be a key frame.

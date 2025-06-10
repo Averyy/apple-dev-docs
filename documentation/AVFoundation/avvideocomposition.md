@@ -79,6 +79,17 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
   The policy for display of HDR display metadata on the rendered frame.
 - [AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](avvideocomposition/perframehdrdisplaymetadatapolicy-swift.struct.md)
   A type that defines the policy for handling of per frame HDR metadata.
+### Structures
+- [AVVideoComposition.Configuration](avvideocomposition/configuration.md)
+  Configurable properties for initializing a new AVVideoComposition instance.
+### Initializers
+- [convenience init(configuration: AVVideoComposition.Configuration)](avvideocomposition/init(configuration:).md)
+  Initialize an AVVideoComposition with a configuration.
+- [convenience init(for: AVAsset, applyingCIFiltersWithHandler: (AVCIImageFilteringParameters) async throws -> AVCIImageFilteringResult, isolation: isolated (any Actor)?) async throws](avvideocomposition/init(for:applyingcifilterswithhandler:isolation:).md)
+  Creates a video composition configured to apply Core Image filters to each video frame of the specified asset.
+### Instance Methods
+- [func outputBufferDescription() -> [[CMTag]]?](avvideocomposition/outputbufferdescription.md)
+  The output buffers of the video composition can be specified with the outputBufferDescription. The value is an array of an array of CMTag objects that describes the output buffers.
 
 ## Relationships
 
@@ -95,6 +106,8 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSMutableCopying](../Foundation/NSMutableCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

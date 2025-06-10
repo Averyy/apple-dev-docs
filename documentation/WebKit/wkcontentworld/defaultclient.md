@@ -1,6 +1,6 @@
 # defaultClient
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The default world for clients.

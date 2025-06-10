@@ -1,6 +1,6 @@
 # webViewIsResizable(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a Boolean value indicating whether a web view’s window can be resized.

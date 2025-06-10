@@ -1,6 +1,6 @@
 # init(dictionaryLiteral:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: init
 
 Creates a data frame from a dictionary literal.

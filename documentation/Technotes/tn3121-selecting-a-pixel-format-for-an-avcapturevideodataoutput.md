@@ -22,7 +22,7 @@ Instead of paying the costs of pixel format conversion and high memory bandwidth
 
 #### Discovering Available Output Pixel Formats
 
-Not all devices support the full range of output pixel formats. To see the available formats at run time, iterate through the [`AVCaptureVideoDataOutput`](https://developer.apple.com/documentation/AVFoundation/AVCaptureVideoDataOutput)’s array of availableVideoPixelFormatTypes.
+Not all devices support the full range of output pixel formats. To see the available formats at run time, iterate through the [`AVCaptureVideoDataOutput`](https://developer.apple.com/documentation/AVFoundation/AVCaptureVideoDataOutput)’s array of [`availableVideoPixelFormatTypes`](https://developer.apple.com/documentation/AVFoundation/AVCaptureVideoDataOutput/availableVideoPixelFormatTypes).
 
 > **Note**: The availableVideoPixelFormatTypes array is dynamic, and depends on the activeFormat of the capture device that the AVCaptureVideoDataOutput is connected to.
 
@@ -104,4 +104,4 @@ In a scenario where your app can utilize a compressed pixel format, always reque
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3121-selecting-a-pixel-format-for-an-avcapturevideodataoutput)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3121-selecting-a-pixel-format-for-an-avcapturevideodataoutput)*

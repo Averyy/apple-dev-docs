@@ -1,6 +1,6 @@
 # Configuring and displaying symbol images in your UI
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Create scalable images that integrate with your app’s text, and adjust the appearance of those images dynamically.
 
@@ -220,4 +220,4 @@ if #available(iOS 13.0, *) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/configuring-and-displaying-symbol-images-in-your-ui)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/configuring-and-displaying-symbol-images-in-your-ui)*

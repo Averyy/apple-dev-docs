@@ -24,6 +24,8 @@ Get a list of reports generated from a specific analytics report request.
   Read analytics report requests for a specific app.
 - [Read report request information](get-v1-analyticsreportrequests-_id_.md)
   Get details for and the state of a specific analytics report request.
+- [Read reports Ids for a specific request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
+  Get a list of reports Ids from a specific analytics report request.
 - [Delete a report request](delete-v1-analyticsreportrequests-_id_.md)
   Remove a specific analytics report request.
 

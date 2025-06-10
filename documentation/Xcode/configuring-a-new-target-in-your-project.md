@@ -61,4 +61,4 @@ For more information on optimizing your targets to improve build times, see [`Im
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-a-new-target-in-your-project)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-a-new-target-in-your-project)*

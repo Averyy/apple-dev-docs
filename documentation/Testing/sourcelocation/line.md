@@ -1,6 +1,6 @@
 # line
 
-**Framework**: Testing  
+**Framework**: Swift Testing  
 **Kind**: property
 
 The line in the source file.

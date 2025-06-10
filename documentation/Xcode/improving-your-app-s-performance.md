@@ -6,7 +6,7 @@ Model, measure, and boost the performance of your app by using a continuous-impr
 
 #### Overview
 
-People using your app expect it to perform well. An app that takes a long time to launch, or responds slowly to input, may appear as if it isn’t working or is sluggish. An app that makes a lot of large network requests may increase the user’s data charges and drain the device battery. Any of these behaviors can frustrate users and lead them to uninstall the app.
+People using your app expect it to perform well. An app that takes a long time to launch, or responds slowly to input, may appear as if it isn’t working or is sluggish. An app that makes a lot of large network requests may increase a person’s data charges and drain the device battery. Similarly, an app that consumes a lot of disk space leaves a person’s device with less space for other content or apps. Any of these behaviors can frustrate people and lead them to uninstall your app.
 
 Plan and implement performance improvements by approaching the problem scientifically:
 
@@ -26,7 +26,8 @@ Minimizing resource use benefits your users and improves their perceptions of yo
 - Decreasing overall memory use reduces the likelihood of iOS freeing your app’s memory in the background, and improves responsiveness when a user switches back to your app.
 - Reducing disk writes speeds up your app’s overall performance, makes it more responsive, and reduces wear on users’ device storage.
 - Decreasing hang rate and hang duration improves your users’ perception of your app’s performance and responsiveness.
-- Reducing battery consumption and the use of power-hungry device features makes your app more reliable, and helps ensure that the rest of the user’s device is available when needed.
+- Reducing battery consumption and the use of power-hungry device features makes your app more reliable, and helps ensure that the rest of a person’s device is available when needed.
+- Maintaining low disk space usage allows a person to install and use more apps, and to keep more content on their device. For example, store content that your app can regenerate in the [`cachesDirectory`](https://developer.apple.com/documentation/Foundation/URL/cachesDirectory) so that the system can purge it when needed. Doing so speeds up app and system upgrades, and reduces the iCloud storage space the system requires to create an iCloud backup of the device. For more information, see [`Optimizing Your App’s Data for iCloud Backup`](https://developer.apple.com/documentation/Foundation/optimizing-your-app-s-data-for-icloud-backup).
 
 Even when your measurements and observations show no pressing performance problems, it’s a good idea to run through the performance-improvement cycle and do preventive work to keep your app’s performance from regressing.
 

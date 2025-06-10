@@ -1,6 +1,6 @@
 # WKScriptMessage
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that encapsulates a message sent by JavaScript code from a webpage.

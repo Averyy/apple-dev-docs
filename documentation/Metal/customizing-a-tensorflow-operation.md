@@ -45,4 +45,4 @@ python tiny_nerf_mlp.py
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/customizing-a-tensorflow-operation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/customizing-a-tensorflow-operation)*

@@ -1,6 +1,6 @@
 # split(maxSplits:omittingEmptySubsequences:whereSeparator:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns the longest possible subsequences of the collection, in order, that don’t contain elements satisfying the given predicate.

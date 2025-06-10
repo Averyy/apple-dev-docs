@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_ConstantBitRate
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Requires that the encoder use a Constant Bit Rate algorithm.

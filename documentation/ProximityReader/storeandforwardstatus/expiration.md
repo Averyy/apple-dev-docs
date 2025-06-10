@@ -17,6 +17,11 @@ The date when the Store and Forward session expires.
 let expiration: Date
 ```
 
+## See Also
+
+- [let readCount: Int](storeandforwardstatus/readcount.md)
+  The number of successful reads the framework performed using a Store and Forward session.
+
 
 ---
 

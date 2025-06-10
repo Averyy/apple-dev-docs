@@ -33,8 +33,6 @@ do {
 
 > ⚠️ **Warning**:  Setting the identifier to an invalid string results in a fatal error that terminates the app.
 
- Setting the identifier to an invalid string results in a fatal error that terminates the app.
-
 In a Linux guest, device identifiers are visible in the `/dev/disk/by-id/` directory.
 
 

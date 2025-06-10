@@ -1,6 +1,6 @@
 # XCTKeyPathExpectation
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An expectation that a specific key-value observing (KVO) condition fulfills.
@@ -56,6 +56,7 @@ Use an instance of this class to asynchronously wait for changes to a property y
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

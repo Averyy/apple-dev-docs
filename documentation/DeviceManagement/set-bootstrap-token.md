@@ -3,43 +3,54 @@
 **Framework**: Device Management  
 **Kind**: httpRequest
 
-Sets the bootstrap token.
+Sends the bootstrap token to the server.
 
 **Availability**:
 - macOS 10.15+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
-This command changes or clears the bootstrap token data for the device.
+A server that supports this request needs to include a `com.apple.mdm.bootstraptoken` value in the `ServerCapabilities` key of the MDM profile payload to enroll the device.
 
-It requires a Device Enrollment Program enrolled client, or on macOS 11 and later, a supervised device.
+This request changes or clears a device’s bootstrap token data that the server stores.
+
+It requires a device using Automated Device Enrollment, or a supervised device in macOS 11 and later.
+
+##### Check in Availability
+
+|  |  |
+| --- | --- |
+| Device channel | macOS |
+| User channel | NA |
+| Requires supervision | macOS |
+| Allowed in user enrollment | NA |
 
 ## Topics
 
-### Request
+### Requests
 - [object SetBootstrapTokenRequest](setbootstraptokenrequest.md)
-  The request object used to set the bootstrap token.
+  The set bootstrap token request details.
 
 ## Request Body
 
-The request object used to set the bootstrap token.
+The request object the system sends for the `SetBootstrapToken` request.
 
 ## See Also
 
 - [Authenticate](authenticate.md)
   Authenticates a user during MDM payload installation.
-- [UserAuthenticate](userauthenticate.md)
+- [User Authenticate](user-authenticate.md)
   Authenticates a user with a two-step authentication protocol.
 - [Check Out](check-out.md)
   Responds to the removal of the MDM enrollment profile from a device.
 - [Get Token](get-token.md)
-  Check-in protocol get-token data.
+  Gets a token from the server.
 - [Token Update](token-update.md)
   Updates the token for a device on the server.
 - [Get Bootstrap Token](get-bootstrap-token.md)
-  Gets the bootstrap token.
+  Gets the bootstrap token from the server.
+- [Return To Service](return-to-service.md)
+  Gets the return-to-service configuration from the server.
 
 
 ---

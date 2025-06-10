@@ -21,8 +21,6 @@ Now, connect the device to your Mac using a cable. In Safari, the device will ap
 
 > ❗ **Important**: You may need to trust the Mac you connect your device to when the device prompts you before it appears in the  menu on your Mac.
 
-You may need to trust the Mac you connect your device to when the device prompts you before it appears in the  menu on your Mac.
-
 ##### Connecting Over the Network
 
 In addition to being able to inspect devices over a wired connection, you can also connect to your device over Wi-Fi or another network connection. To enable connecting over the network, you must first have enabled  on your device and connected it to your Mac using a cable. Then, you can enable  from the device’s submenu in the  menu. Alternatively, you can also [`connect to the device using Xcode`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devbc48d1bad).

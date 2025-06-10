@@ -32,6 +32,7 @@ A cursor identifier is unique across all instances of the same tabletop game.
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -44,7 +45,7 @@ A cursor identifier is unique across all instances of the same tabletop game.
 - [struct TableVisualState](tablevisualstate.md)
   A structure that represents the appearance of an object on the table.
 - [struct TableCursor](tablecursor.md)
-  A visual indicator that represents the destination of player interactions with equipment.
+  A cursor conveys information about one equipment that is currently being controlled by an interaction.
 
 
 ---

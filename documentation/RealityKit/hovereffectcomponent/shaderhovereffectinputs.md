@@ -20,9 +20,6 @@ struct ShaderHoverEffectInputs
 
 ## Topics
 
-### Operators
-- [static func == (HoverEffectComponent.ShaderHoverEffectInputs, HoverEffectComponent.ShaderHoverEffectInputs) -> Bool](hovereffectcomponent/shaderhovereffectinputs/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(fadeInDuration: TimeInterval, fadeOutDuration: TimeInterval)](hovereffectcomponent/shaderhovereffectinputs/init(fadeinduration:fadeoutduration:).md)
 ### Instance Properties
@@ -33,8 +30,6 @@ struct ShaderHoverEffectInputs
 ### Type Properties
 - [static let `default`: HoverEffectComponent.ShaderHoverEffectInputs](hovereffectcomponent/shaderhovereffectinputs/default.md)
   The default style initializes the fade-in and fade-out durations to match the durations of the default spotlight.
-### Default Implementations
-- [Equatable Implementations](hovereffectcomponent/shaderhovereffectinputs/equatable-implementations.md)
 
 ## Relationships
 

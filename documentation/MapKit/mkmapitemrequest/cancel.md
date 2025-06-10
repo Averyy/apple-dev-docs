@@ -12,6 +12,7 @@ Cancels an in-progress map item request.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 1.0+
+- watchOS 11.0+
 
 ## Declaration
 

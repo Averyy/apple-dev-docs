@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_ProgressiveScan
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A Boolean value indicating whether the DV video stream should have the progressive flag set.

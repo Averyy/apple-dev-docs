@@ -1,6 +1,6 @@
 # infectiousnessForDaysSinceOnsetOfSymptoms
 
-**Framework**: Exposurenotification  
+**Framework**: Exposure Notification  
 **Kind**: property
 
 The mapping between the days since onset of symptoms to the degree of infectiousness.
@@ -43,4 +43,4 @@ You can’t change this property more often than once per week. During developme
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposureconfiguration/infectiousnessfordayssinceonsetofsymptoms)*
+*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposureconfiguration/infectiousnessfordayssinceonsetofsymptoms)*

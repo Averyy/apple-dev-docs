@@ -59,8 +59,6 @@ When the user first taps or clicks in a search field, the `isSearching` property
 
 > ❗ **Important**: Access the value from inside the searched view, as the example above demonstrates, rather than from the searched view’s parent. SwiftUI sets the value in the environment of the view that you apply the searchable modifier to, and doesn’t propagate the value up the view hierarchy.
 
-Access the value from inside the searched view, as the example above demonstrates, rather than from the searched view’s parent. SwiftUI sets the value in the environment of the view that you apply the searchable modifier to, and doesn’t propagate the value up the view hierarchy.
-
 ## See Also
 
 - [Managing search interface activation](managing-search-interface-activation.md)

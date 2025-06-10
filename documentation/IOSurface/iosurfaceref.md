@@ -19,6 +19,11 @@ Data type representing an IOSurface opaque object.
 class IOSurfaceRef
 ```
 
+## Topics
+
+### Initializers
+- [init(IOSurface)](iosurfaceref/init(_:).md)
+
 ## Relationships
 
 ### Conforms To

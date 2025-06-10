@@ -13,6 +13,7 @@ Updates the playback control buttons the template displays.
 ## Declaration
 
 ```swift
+@MainActor
 func updateNowPlayingButtons(_ nowPlayingButtons: [CPNowPlayingButton])
 ```
 

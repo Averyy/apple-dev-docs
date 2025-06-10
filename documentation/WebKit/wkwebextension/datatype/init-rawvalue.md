@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Creates a data type from a raw value you provide.

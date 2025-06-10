@@ -50,4 +50,4 @@ To annotate your content with an overlay, click the Debug Visualizations button 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/diagnosing-issues-in-the-appearance-of-your-running-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/diagnosing-issues-in-the-appearance-of-your-running-app)*

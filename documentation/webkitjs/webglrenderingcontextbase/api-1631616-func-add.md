@@ -1,6 +1,6 @@
 # FUNC_ADD
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

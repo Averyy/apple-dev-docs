@@ -1,6 +1,6 @@
 # XPC_CONNECTION_MACH_SERVICE_PRIVILEGED
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A flag that indicates the job advertising the service name belongs to a launch daemon rather than a launch agent.

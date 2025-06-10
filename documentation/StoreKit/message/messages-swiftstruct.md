@@ -28,6 +28,7 @@ Don’t create this structure directly. Instead, use [`messages`](message/messag
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,9 +1,17 @@
 # Refract (RealityKit)
 
-**Framework**: Shadergraph  
+**Framework**: ShaderGraph  
 **Kind**: subscript
 
 Refracts a vector using a given normal and index of refraction (eta).
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
 
 #### Parameter Types
 
@@ -11,9 +19,7 @@ Refracts a vector using a given normal and index of refraction (eta).
 
 #### Discussion
 
-The Refract node takes an incident vector `In` and calculates the direction of refraction off a surface.
-
-> **Note**: The vectors passed as the `In` and `Normal` parameters must both already be normalized in order to get the desired output.
+> **Note**: The vectors passed as the `In` and `Normal` parameters must both already be normalized to achieve the desired output.
 
 ## See Also
 

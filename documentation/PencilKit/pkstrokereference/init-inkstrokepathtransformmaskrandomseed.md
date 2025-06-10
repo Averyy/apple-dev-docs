@@ -15,7 +15,7 @@ Creates a stroke with the line properties, path, transform, mask, and random see
 ## Declaration
 
 ```swift
-init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?, randomSeed: UInt32)
+init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: NSBezierPath?, randomSeed: UInt32)
 ```
 
 ## Parameters

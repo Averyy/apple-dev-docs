@@ -1,6 +1,6 @@
 # metadataObjectTypes
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 An array of strings identifying the types of metadata objects  to process.

@@ -10,6 +10,7 @@ An anchor point attached to a real world surface.
 - iPadOS 13.0+
 - Mac Catalyst 14.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -17,6 +18,10 @@ An anchor point attached to a real world surface.
 ```swift
 case plane(AnchoringComponent.Target.Alignment, classification: AnchoringComponent.Target.Classification, minimumBounds: SIMD2<Float>)
 ```
+
+#### Discussion
+
+> **Note**: macOS and tvOS apps don’t track this type of anchor.
 
 ## See Also
 

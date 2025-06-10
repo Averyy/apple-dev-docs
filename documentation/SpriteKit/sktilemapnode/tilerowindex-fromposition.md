@@ -17,6 +17,7 @@ Returns the tile map node object’s tile row index for the specified position i
 ## Declaration
 
 ```swift
+@MainActor
 func tileRowIndex(fromPosition position: CGPoint) -> Int
 ```
 

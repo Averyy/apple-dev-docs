@@ -1,6 +1,6 @@
 # SCPreferencesCommitChanges(_:)
 
-**Framework**: Systemconfiguration  
+**Framework**: System Configuration  
 **Kind**: func
 
 Commits changes made to the configuration preferences to persistent storage.

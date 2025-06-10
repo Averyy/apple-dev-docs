@@ -1,6 +1,6 @@
 # tv-scrollable-bounds-inset
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Creates an unscrollable region of a specified size at the top and bottom of the stack template.
 
@@ -84,4 +84,4 @@ Here’s an example that sets the inset (unscrollable space) at the top to 50 po
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/tv-scrollable-bounds-inset)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/tv-scrollable-bounds-inset)*

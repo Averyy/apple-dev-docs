@@ -28,7 +28,7 @@ Action set names must be unique within a home.
 - [HomeKit Developer Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/HomeKitDeveloperGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40015050)
 - [var uniqueIdentifier: UUID](hmactionset/uniqueidentifier.md)
   The action set’s unique identifier.
-- [func updateName(String, completionHandler: HMErrorBlock)](hmactionset/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmactionset/updatename(_:completionhandler:).md)
   Updates the name of the action set.
 
 

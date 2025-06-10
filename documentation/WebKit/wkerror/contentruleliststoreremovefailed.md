@@ -1,6 +1,6 @@
 # contentRuleListStoreRemoveFailed
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An error that indicates a failure to remove a content rule list from the rule list data store object.

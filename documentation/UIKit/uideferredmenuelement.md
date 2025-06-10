@@ -26,6 +26,11 @@ class UIDeferredMenuElement
   A convenience initializer that creates a placeholder menu element that the system replaces with the result of the provider’s completion handler.
 - [class func uncached((([UIMenuElement]) -> Void) -> Void) -> Self](uideferredmenuelement/uncached(_:).md)
   Returns a placeholder menu element that the system replaces with the result of the provider’s completion handler.
+- [class func usingFocus(identifier: UIDeferredMenuElement.Identifier, shouldCacheItems: Bool) -> Self](uideferredmenuelement/usingfocus(identifier:shouldcacheitems:).md)
+### Setting an identifier
+- [var identifier: UIDeferredMenuElement.Identifier](uideferredmenuelement/identifier-swift.property.md)
+  The identifier of this deferred menu element.
+- [UIDeferredMenuElement.Identifier](uideferredmenuelement/identifier-swift.struct.md)
 
 ## Relationships
 
@@ -42,6 +47,7 @@ class UIDeferredMenuElement
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 
 ## See Also
@@ -58,6 +64,7 @@ class UIDeferredMenuElement
   A menu element that performs its action in a selector.
 - [class UIKeyCommand](uikeycommand.md)
   An object that specifies a key press perform on a hardware keyboard and the resulting action.
+- [UIDeferredMenuElement.Provider](uideferredmenuelement/provider.md)
 - [UIMenuElement.Attributes](uimenuelement/attributes.md)
   Attributes that determine the style of the menu element.
 - [UIMenuElement.State](uimenuelement/state.md)

@@ -67,6 +67,8 @@ You can load and run a workflow with minimal overhead by using the [`AMWorkflow`
 - [NSEditor](../AppKit/NSEditor.md)
 - [NSEditorRegistration](../AppKit/NSEditorRegistration.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

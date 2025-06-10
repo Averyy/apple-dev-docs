@@ -18,6 +18,10 @@
 func sparse_insert_block_double_complex(_ A: sparse_matrix_double_complex!, _ val: OpaquePointer!, _ row_stride: sparse_dimension, _ col_stride: sparse_dimension, _ bi: sparse_index, _ bj: sparse_index) -> sparse_status
 ```
 
+## See Also
+
+- [func sparse_insert_block_float_complex(sparse_matrix_float_complex!, OpaquePointer!, sparse_dimension, sparse_dimension, sparse_index, sparse_index) -> sparse_status](sparse_insert_block_float_complex(_:_:_:_:_:_:).md)
+
 
 ---
 

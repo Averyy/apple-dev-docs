@@ -1,6 +1,6 @@
 # SYNC_FENCE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

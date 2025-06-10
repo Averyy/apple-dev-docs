@@ -1,6 +1,6 @@
 # VSError
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: struct
 
 Error information in the framework error domain.
@@ -20,10 +20,9 @@ struct VSError
 
 ## Topics
 
-### Error Information
-- [var errorCode: Int](../foundation/customnserror/2946828-errorcode.md)
-- [var errorUserInfo: [String : Any]](../foundation/customnserror/3017373-erroruserinfo.md)
-### Error Codes
+### Error information
+- [static var errorDomain: String](vserror/errordomain.md)
+### Error codes
 - [static var accessNotGranted: VSError.Code](vserror/accessnotgranted.md)
   The user hasn’t granted access to their subscription information.
 - [static var invalidVerificationToken: VSError.Code](vserror/invalidverificationtoken.md)
@@ -42,8 +41,6 @@ struct VSError
   The user canceled the request.
 - [VSError.Code](vserror/code.md)
   Error codes in the framework error domain.
-### Type Properties
-- [static var errorDomain: String](vserror/errordomain.md)
 
 ## Relationships
 
@@ -53,6 +50,7 @@ struct VSError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

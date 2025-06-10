@@ -131,4 +131,4 @@ print(String(reflecting: p))
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/customdebugstringconvertible)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/customdebugstringconvertible)*

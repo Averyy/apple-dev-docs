@@ -52,6 +52,8 @@ Use this class when creating a new playlist using the [`getPlaylist(with:creatio
   A collection of properties that represents a single item in the media library.
 - [class MPMediaItemArtwork](mpmediaitemartwork.md)
   A graphical image, such as music album cover art, associated with a media item.
+- [class MPMediaItemAnimatedArtwork](mpmediaitemanimatedartwork.md)
+  An animated image, such as an animated music album cover art, for a media item.
 - [class MPMediaItemCollection](mpmediaitemcollection.md)
   A sorted set of media items from the media library.
 - [class MPMediaPlaylist](mpmediaplaylist.md)

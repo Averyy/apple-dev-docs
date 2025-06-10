@@ -1,6 +1,6 @@
 # Payment.SummaryItems
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 A breakdown of the total payment.

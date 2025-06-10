@@ -1,6 +1,6 @@
 # multilineTextAlignment
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 An environment value that indicates how a text view aligns its lines when the content wraps or contains newlines.
@@ -40,4 +40,4 @@ This value has no effect on a [`Text`](text.md) view that contains only one line
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/environmentvalues/multilinetextalignment)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/environmentvalues/multilinetextalignment)*

@@ -41,6 +41,7 @@ Each color space guarantees the preservation of a particular range of color valu
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -52,6 +53,9 @@ Each color space guarantees the preservation of a particular range of color valu
   Composites this view’s contents into an offscreen image before final display.
 - [enum BlendMode](blendmode.md)
   Modes for compositing a view with overlapping content.
+- [protocol CompositorContent](compositorcontent.md)
+- [struct CompositorContentBuilder](compositorcontentbuilder.md)
+  A result builder for composing a collection of [`CompositorContent`](compositorcontent.md) elements.
 
 
 ---

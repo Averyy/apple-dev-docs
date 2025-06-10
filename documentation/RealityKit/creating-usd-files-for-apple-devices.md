@@ -1,6 +1,6 @@
 # Creating USD files for Apple devices
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Generate 3D assets that render as expected.
 
@@ -78,9 +78,9 @@ To download these scripts, see [`USD Support Scripts`](https://developer.apple.c
   Retrieve an entity from storage on disk using a synchronous or an asynchronous load operation.
 - [Stored entities](stored-entities.md)
   Manage entities that you store as assets on disk.
-- [convenience init(contentsOf: URL, withName: String?) async throws](entity/init(contentsof:withname:).md)
+- [convenience(contentsOf:withName:)](entity/init(contentsof:withname:).md)
   Creates an entity by asynchronously loading it from a file URL.
-- [convenience init(named: String, in: Bundle?) async throws](entity/init(named:in:).md)
+- [convenience(named:in:)](entity/init(named:in:).md)
   Creates an entity by asynchronously loading it from a bundle.
 - [struct ReferenceComponent](referencecomponent.md)
   A component that can load another entity from a file.
@@ -88,4 +88,4 @@ To download these scripts, see [`USD Support Scripts`](https://developer.apple.c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/creating-usd-files-for-apple-devices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/creating-usd-files-for-apple-devices)*

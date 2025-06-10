@@ -1,6 +1,6 @@
 # saturation(_:)
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Adjusts the color saturation of this view.

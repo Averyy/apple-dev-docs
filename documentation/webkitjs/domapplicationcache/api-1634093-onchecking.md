@@ -1,6 +1,6 @@
 # onchecking
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 Sent when the cache update process begins.

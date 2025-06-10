@@ -1,6 +1,6 @@
 # textSelection(_:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Controls whether people can select text within this view.

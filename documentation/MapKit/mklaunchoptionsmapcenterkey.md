@@ -21,12 +21,14 @@ let MKLaunchOptionsMapCenterKey: String
 
 #### Discussion
 
-The value of this key is an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object that contains an encoded [`CLLocationCoordinate2D`](https://developer.apple.com/documentation/CoreLocation/CLLocationCoordinate2D) structure.
+The value of this key is an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object that contains an encoded doc://com.apple.documentation/documentation/corelocation/cllocationcoordinate2d structure.
 
 ## See Also
 
 - [let MKLaunchOptionsCameraKey: String](mklaunchoptionscamerakey.md)
   The virtual camera to use for viewing the map.
+- [let MKLaunchOptionsDirectionsModeCycling: String](mklaunchoptionsdirectionsmodecycling.md)
+  Cycling directions between the specified start and end points.
 - [let MKLaunchOptionsDirectionsModeDefault: String](mklaunchoptionsdirectionsmodedefault.md)
   Directions that match the user’s preferred transportation type.
 - [let MKLaunchOptionsDirectionsModeDriving: String](mklaunchoptionsdirectionsmodedriving.md)

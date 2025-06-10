@@ -9,8 +9,6 @@ Install a book on a device.
 - iOS 8.0+
 - iPadOS 8.0+
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -32,11 +30,11 @@ Refer to the following sections to determine supported channels and requirements
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, Shared iPad |
-| User Channel | macOS |
-| Requires Supervision | - |
-| Allowed in User Enrollment | iOS |
-| Required Access Right | AllowAppInstallation |
+| Device channel | iOS, Shared iPad |
+| User channel | macOS |
+| Requires supervision | macOS |
+| Allowed in user enrollment | iOS |
+| Required access right | AllowAppInstallation |
 
 ##### Example Request and Response Enterprise Book
 
@@ -44,19 +42,19 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object InstallMediaCommand](installmediacommand.md)
   The command to install a book on a device.
 - [object InstallMediaResponse](installmediaresponse.md)
-  A response from the device after it processes the command to install a book.
+  A response from the device after it processes the command to install a book on a device.
 
 ## Request Body
 
-The command to install a book on a device.
+The request object the server returns for the Install Media Command.
 
 ## See Also
 
-- [List the Managed Media](managed-media-list-command.md)
+- [Managed Media List](managed-media-list-command.md)
   Get a list of the managed books on a device.
 - [Remove Media](remove-media-command.md)
   Remove a previously installed book from a device.

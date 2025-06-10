@@ -1,6 +1,6 @@
 # VTSessionSetProperties(_:propertyDictionary:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Sets multiple properties at once.

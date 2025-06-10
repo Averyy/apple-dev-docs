@@ -8,7 +8,7 @@ Filter store transactions for changes relevant to the current view.
 
 Use persistent history tracking to determine what changes have occurred in the store, and to update your view context only as needed.
 
-For example, consider an app that sometimes shows a list of shopping items, and sometimes shows a list of stores. As the user views the `ShoppingItem` objects from the view context, a background context may download additional `Store` data from a remote source. If the import happens through a batch operation, the save to the store doesn’t generate an [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/foundation/nsnotification/name/1506380-nsmanagedobjectcontextdidsave) notification, and the view misses these relevant updates. Alternatively, the background context may save changes to the store that don’t affect the current view—for example, inserting, modifying, or deleting `Store` objects. These changes  generate context save events, so your view context processes them even though it doesn’t need to.
+For example, consider an app that sometimes shows a list of shopping items, and sometimes shows a list of stores. As the user views the `ShoppingItem` objects from the view context, a background context may download additional `Store` data from a remote source. If the import happens through a batch operation, the save to the store doesn’t generate an [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextDidSave) notification, and the view misses these relevant updates. Alternatively, the background context may save changes to the store that don’t affect the current view—for example, inserting, modifying, or deleting `Store` objects. These changes  generate context save events, so your view context processes them even though it doesn’t need to.
 
 Persistent history solves the problem by keeping track of every transaction on the store. You can filter this history for relevant changes and decide how or whether to update a view.
 
@@ -151,8 +151,6 @@ lazy var tokenFileURL: URL = {
 To request history, use the [`fetchHistory(after:)`](nspersistenthistorychangerequest/fetchhistory(after:)-3rmfm.md) type method on [`NSPersistentHistoryChangeRequest`](nspersistenthistorychangerequest.md).
 
 > ❗ **Important**:  Execute the fetch request on a background context to avoid blocking the main thread.
-
- Execute the fetch request on a background context to avoid blocking the main thread.
 
 The following example shows a request to fetch new history since the last time you fetched history and convert the [`NSPersistentHistoryResult`](nspersistenthistoryresult.md) to an array of [`NSPersistentHistoryTransaction`](nspersistenthistorytransaction.md):
 
@@ -326,8 +324,6 @@ await backgroundContext.perform {
 ```
 
 > ❗ **Important**:  If you attempt to fetch purged history, Core Data throws an expired token error.
-
- If you attempt to fetch purged history, Core Data throws an expired token error.
 
 ## See Also
 

@@ -8,8 +8,6 @@ The functions of the MapKit framework provide convenient ways to package map-rel
 
 > ❗ **Important**:  In iOS 5.1 and earlier, the MapKit framework uses the Google Mobile Maps (GMM) service to provide map data. For apps that run in iOS 5.1 and earlier, use of specific classes of this framework (and their associated interfaces) is subject to the Google Mobile Maps terms of service. You can find these terms of service at [`http://code.google.com/apis/maps/iphone/terms.html`](https://developer.apple.comhttp://code.google.com/apis/maps/iphone/terms.html).
 
- In iOS 5.1 and earlier, the MapKit framework uses the Google Mobile Maps (GMM) service to provide map data. For apps that run in iOS 5.1 and earlier, use of specific classes of this framework (and their associated interfaces) is subject to the Google Mobile Maps terms of service. You can find these terms of service at [`http://code.google.com/apis/maps/iphone/terms.html`](https://developer.apple.comhttp://code.google.com/apis/maps/iphone/terms.html).
-
 ## Topics
 
 ### Functions

@@ -1,6 +1,6 @@
 # CPNowPlayingTemplate
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: class
 
 A shared system template that displays Now Playing information.
@@ -13,6 +13,7 @@ A shared system template that displays Now Playing information.
 ## Declaration
 
 ```swift
+@MainActor
 class CPNowPlayingTemplate
 ```
 
@@ -83,6 +84,8 @@ When CarPlay presents Now Playing information for your app, it uses the shared i
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -92,4 +95,4 @@ When CarPlay presents Now Playing information for your app, it uses the shared i
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cpnowplayingtemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cpnowplayingtemplate)*

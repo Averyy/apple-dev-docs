@@ -1,6 +1,6 @@
 # interface_event_t
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: struct
 
 Interface event types.

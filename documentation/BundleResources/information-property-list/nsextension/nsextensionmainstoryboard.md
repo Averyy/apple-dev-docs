@@ -17,8 +17,6 @@ This key is mutually exclusive with [`NSExtensionPrincipalClass`](information-pr
 
 > ❗ **Important**:  If the app extension’s `Info.plist` file contains both keys, the system won’t load the extension.
 
- If the app extension’s `Info.plist` file contains both keys, the system won’t load the extension.
-
 ## See Also
 
 - [NSExtensionActionWantsFullScreenPresentation](information-property-list/nsextension/nsextensionactionwantsfullscreenpresentation.md)

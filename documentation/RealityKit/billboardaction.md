@@ -1,6 +1,6 @@
 # BillboardAction
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 An action that animates the blend factor of an entity’s billboard component.
@@ -10,6 +10,7 @@ An action that animates the blend factor of an entity’s billboard component.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -79,8 +80,6 @@ Ensure the action can transition back to a non-billboard state by adding the com
 - [BillboardAction.Transition](billboardaction/transition.md)
   The duration and timing of how an action event transitions from one state to another.
 ### Initializers
-- [init(from: any Decoder) throws](billboardaction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(transitionIn: BillboardAction.Transition, transitionOut: BillboardAction.Transition)](billboardaction/init(transitionin:transitionout:).md)
   Creates a new billboard action.
 ### Instance Properties
@@ -90,14 +89,6 @@ Ensure the action can transition back to a non-billboard state by adding the com
   The rate of change at the beginning of the action.
 - [var transitionOut: BillboardAction.Transition](billboardaction/transitionout.md)
   The rate of change at the end of the action.
-### Instance Methods
-- [func encode(to: any Encoder) throws](billboardaction/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [BillboardAction.EventParameterType](billboardaction/eventparametertype.md)
-  The associated event parameter type.
-### Default Implementations
-- [EntityAction Implementations](billboardaction/entityaction-implementations.md)
 
 ## Relationships
 
@@ -128,4 +119,4 @@ Ensure the action can transition back to a non-billboard state by adding the com
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/billboardaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/billboardaction)*

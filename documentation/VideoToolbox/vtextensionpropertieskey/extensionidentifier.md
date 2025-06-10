@@ -1,6 +1,6 @@
 # extensionIdentifier
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 A dictionary key for the video decoder extension identifier.

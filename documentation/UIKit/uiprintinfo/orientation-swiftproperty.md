@@ -1,6 +1,6 @@
 # orientation
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The orientation of the printed content, portrait or landscape.

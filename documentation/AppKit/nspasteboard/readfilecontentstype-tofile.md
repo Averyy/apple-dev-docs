@@ -1,6 +1,6 @@
 # readFileContentsType(_:toFile:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Reads data representing a file’s contents from the receiver and writes it to the specified file.

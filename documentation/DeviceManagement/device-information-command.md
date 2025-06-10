@@ -1,4 +1,4 @@
-# Get Device Information
+# Device Information
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -12,46 +12,53 @@ Get detailed information about a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Query Availability
+##### Deviceinformation Attestation Hardware Support
+
+The following table indicates which System on Chips (SoCs) support DeviceInformation attestation. Unsupported devices ignore the DevicePropertiesAttestation and DeviceAttestationNonce keys.
+
+| Support status | iPhone, iPad | Mac | Apple TV | Apple Watch | Vision Pro |
+| --- | --- | --- | --- | --- | --- |
+| Unsupported | A10x Fusion and earlier | Intel | A10x Fusion and earlier | S3 and earlier | none |
+| Supported | A11 Bionic and laterAll M series | Apple Silicon | A12 Bionic and later | S4 and later | All |
+
+##### Command Availability
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS, watchOS |
-| User Channel | macOS, Shared iPad |
-| Requires Supervision | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Required Access Right | Special case (see subkeys) |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| User channel | macOS, Shared iPad |
+| Requires supervision | NA |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Required access right | Special Case |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object DeviceInformationCommand](deviceinformationcommand.md)
-  The command to query a device for specific information.
+  The command to get detailed information about a device.
 - [object DeviceInformationResponse](deviceinformationresponse.md)
-  A response from the device after it processes the command to get detailed information.
+  A response from the device after it processes the command to get detailed information about a device.
 
 ## Request Body
 
-The command to query a device for specific information.
+The request object the server returns for the Device Information Command.
 
 ## See Also
 
-- [List the Installed Apps](installed-application-list-command.md)
+- [Installed Application List](installed-application-list-command.md)
   Get a list of the installed apps on a device.
-- [Release Device from Await Configuration](device-configured-command.md)
+- [Device Configured](device-configured-command.md)
   Inform the device that it can allow the user to continue in Setup Assistant.
-- [User Configured Command](user-configured-command.md)
-  Informs the device that it can continue past Setup Assistant and finish login.
-- [List the Installed Restrictions](restrictions-command.md)
+- [User Configured](user-configured-command.md)
+  Inform the device that it can continue past Setup Assistant and finish login.
+- [Restrictions](restrictions-command.md)
   Get a list of restrictions on the device.
 
 

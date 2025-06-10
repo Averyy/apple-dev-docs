@@ -49,6 +49,7 @@ This error wraps a decoding error and includes the column name and row index whe
 - [Error](../Swift/Error.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

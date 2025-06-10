@@ -1,6 +1,6 @@
 # scheduleBackgroundRefresh(withPreferredDate:userInfo:scheduledCompletion:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Schedules a background task to refresh the app’s data.

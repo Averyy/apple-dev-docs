@@ -10,6 +10,7 @@ An accessibility event for a custom action defined in your app.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -33,6 +34,7 @@ struct CustomAction
 ### Conforms To
 - [Event](event.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

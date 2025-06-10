@@ -9,7 +9,7 @@ Marks this view as searchable with text and tokens.
 - iOS 16.0+
 - iPadOS 16.0+
 - macOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-The configuration of the manager.
+The configuration of a conversation manager.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,13 @@ The configuration of the manager.
 ```swift
 final let configuration: ConversationManager.Configuration
 ```
+
+## See Also
+
+- [convenience init(configuration: ConversationManager.Configuration)](conversationmanager/init(configuration:).md)
+  Creates a new conversation manager with a given conversation.
+- [ConversationManager.Configuration](conversationmanager/configuration-swift.struct.md)
+  Configuration options for a conversation manager.
 
 
 ---

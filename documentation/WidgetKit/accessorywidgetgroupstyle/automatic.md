@@ -1,6 +1,6 @@
 # automatic
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 The default style that is set to circular.

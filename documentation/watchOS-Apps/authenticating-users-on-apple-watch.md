@@ -1,6 +1,6 @@
 # Authenticating users on Apple Watch
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Create an account sign-up and sign-in strategy for your app.
 

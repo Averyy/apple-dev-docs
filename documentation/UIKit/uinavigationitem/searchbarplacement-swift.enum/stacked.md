@@ -25,7 +25,7 @@ This value reflects the traditional search bar layout available in versions of i
 
 - [UINavigationItem.SearchBarPlacement.automatic](uinavigationitem/searchbarplacement-swift.enum/automatic.md)
   A constant that places the search bar according to the current layout.
-- [UINavigationItem.SearchBarPlacement.inline](uinavigationitem/searchbarplacement-swift.enum/inline.md)
+- [static var inline: UINavigationItem.SearchBarPlacement](uinavigationitem/searchbarplacement-swift.enum/inline.md)
   A constant that places the search bar on the trailing edge of the navigation bar, inline with the other content.
 
 

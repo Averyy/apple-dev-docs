@@ -1,6 +1,6 @@
 # outstandingFileTransfers
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An array of in-progress file transfers.

@@ -1,6 +1,6 @@
 # DeviceDiscoveryExtension
 
-**Framework**: Devicediscoveryextension  
+**Framework**: DeviceDiscoveryExtension  
 **Kind**: module
 
 Stream media to a third-party device that a user selects in a system menu.

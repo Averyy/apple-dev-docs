@@ -1,6 +1,6 @@
 # onTapGesture(count:perform:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Adds an action to perform when this view recognizes a tap gesture.
@@ -10,7 +10,7 @@ Adds an action to perform when this view recognizes a tap gesture.
 - iPadOS 13.0+
 - macOS 10.15+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 6.0+
 
 ## Declaration

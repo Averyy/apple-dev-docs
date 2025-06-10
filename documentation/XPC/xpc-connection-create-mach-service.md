@@ -1,6 +1,6 @@
 # xpc_connection_create_mach_service(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates a new connection object that represents a Mach service.

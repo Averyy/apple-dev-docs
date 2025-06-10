@@ -26,8 +26,6 @@ Programs that require the file to always be in a known state should call this me
 
 > ❗ **Important**:  This method raises [`fileHandleOperationException`](nsexceptionname/filehandleoperationexception.md) if called on a file handle representing a pipe or socket, if the file descriptor is closed, or if the operation failed.
 
- This method raises [`fileHandleOperationException`](nsexceptionname/filehandleoperationexception.md) if called on a file handle representing a pipe or socket, if the file descriptor is closed, or if the operation failed.
-
 ## See Also
 
 - [func readDataToEndOfFile() -> Data](filehandle/readdatatoendoffile.md)

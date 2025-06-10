@@ -1,6 +1,6 @@
 # init(framesPerSecond:hdrFormats:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: init
 
 **Availability**:

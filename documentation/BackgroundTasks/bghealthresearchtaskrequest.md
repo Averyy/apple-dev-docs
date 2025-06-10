@@ -11,6 +11,7 @@ A request to launch your app in the background to execute processing for a healt
 - Mac Catalyst 17.0+
 - tvOS 17.0+
 - visionOS 1.0+
+- watchOS 10.0+
 
 ## Declaration
 
@@ -49,6 +50,8 @@ class BGHealthResearchTaskRequest
   A request to launch your app in the background to execute a short refresh task.
 - [class BGTaskRequest](bgtaskrequest.md)
   An abstract class for representing task requests.
+- [class BGContinuedProcessingTaskRequest](bgcontinuedprocessingtaskrequest.md)
+  A request for a workload that the system continues processing even if a person backgrounds the app.
 
 
 ---

@@ -8,9 +8,9 @@ Initializes a parameter summary Switch statement over widget family.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -38,6 +38,14 @@ static var parameterSummary: some ParameterSummary {
     }
 }
 ```
+
+## See Also
+
+- [init(KeyPath<Intent, IntentParameter<Value>>, () -> CaseCondition)](parametersummaryswitchcondition/init(_:_:)-6cdw3.md)
+- [enum ParameterSummaryCaseBuilder](parametersummarycasebuilder.md)
+  A result builder that allows you to declaratively describe the cases of a switch statement in a parameter summary.
+- [ParameterSummarySwitchCondition.WidgetFamily](parametersummaryswitchcondition/widgetfamily.md)
+  An enum that represents a parameter summary Switch statement over widget family.
 
 
 ---

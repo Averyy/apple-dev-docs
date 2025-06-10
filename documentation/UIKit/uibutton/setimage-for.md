@@ -25,8 +25,6 @@ At a minimum, always set an image for the [`normal`](uicontrol/state-swift.struc
 
 > ❗ **Important**:  When the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) and [`behavioralStyle`](uibutton/behavioralstyle.md) is [`UIBehavioralStyle.mac`](uibehavioralstyle/mac.md), your app throws an exception if you use this method to set the image for any state other than [`normal`](uicontrol/state-swift.struct/normal.md).
 
- When the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) and [`behavioralStyle`](uibutton/behavioralstyle.md) is [`UIBehavioralStyle.mac`](uibehavioralstyle/mac.md), your app throws an exception if you use this method to set the image for any state other than [`normal`](uicontrol/state-swift.struct/normal.md).
-
 ## Parameters
 
 - `image`: The image to use for the specified state.

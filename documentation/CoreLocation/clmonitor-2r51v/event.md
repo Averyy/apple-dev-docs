@@ -59,6 +59,7 @@ The framework delivers these events to an asynchronous sequence in the monitor t
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

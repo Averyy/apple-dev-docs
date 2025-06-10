@@ -1,6 +1,6 @@
 # Revoke Subscription
 
-**Framework**: Advancedcommerceapi  
+**Framework**: Advanced Commerce API  
 **Kind**: httpRequest
 
 Immediately cancel a customer’s subscription and all the items that are included in the subscription, and request a full or prorated refund.
@@ -11,8 +11,8 @@ Immediately cancel a customer’s subscription and all the items that are includ
 ## Mentions
 
 - [Advanced Commerce API changelog](changelog.md)
-- [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
 - [Authorizing API requests from your server](authorizing-server-calls.md)
+- [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
 
 #### Discussion
 
@@ -34,4 +34,4 @@ Refer to the Advanced Commerce API Addendum to learn the use cases for the [`Can
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AdvancedCommerceAPI/revoke-subscription)*
+*[View on Apple Developer](https://developer.apple.com/documentation/advancedcommerceapi/revoke-subscription)*

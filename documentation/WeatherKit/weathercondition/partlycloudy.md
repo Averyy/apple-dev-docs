@@ -1,6 +1,6 @@
 # WeatherCondition.partlyCloudy
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Partly cloudy.

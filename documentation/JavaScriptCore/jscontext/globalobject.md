@@ -1,6 +1,6 @@
 # globalObject
 
-**Framework**: Javascriptcore  
+**Framework**: JavaScriptCore  
 **Kind**: property
 
 The JavaScript global object associated with the context.

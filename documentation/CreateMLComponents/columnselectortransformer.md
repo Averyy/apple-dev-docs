@@ -53,6 +53,7 @@ struct ColumnSelectorTransformer<Base, UnwrappedInput> where Base : Transformer,
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TabularTransformer](tabulartransformer.md)
 - [Transformer](transformer.md)
 

@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Called when the system requires that some `ConversationAction` is performed.
+Tells the delegate that the system requires a conversation action.
 
 **Availability**:
 - iOS 17.4+
@@ -21,8 +21,13 @@ func conversationManager(_ manager: ConversationManager, perform action: Convers
 
 ## Parameters
 
-- `manager`: The   that has requested the   to be performed.
-- `action`: The   to be performed and fulfilled.
+- `manager`: A conversation manager informing the delegate that the system requires a conversation action.
+- `action`: The action to perform and fulfill.
+
+## See Also
+
+- [func conversationManager(ConversationManager, timedOutPerforming: ConversationAction)](conversationmanagerdelegate/conversationmanager(_:timedoutperforming:).md)
+  Tells the delegate that a conversation action wasn’t completed and timed out.
 
 
 ---

@@ -17,7 +17,7 @@ func show(relativeTo positioningRect: NSRect, of positioningView: NSView, prefer
 
 #### Discussion
 
-This method raises [`internalInconsistencyException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1416220-internalinconsistencyexception) if [`contentViewController`](nspopover/contentviewcontroller.md) or the view controller’s view is `nil`. If the popover is already being shown, this method updates the anchored view, rectangle, and preferred edge. If the positioning view is not visible, this method does nothing.
+This method raises [`internalInconsistencyException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/internalInconsistencyException) if [`contentViewController`](nspopover/contentviewcontroller.md) or the view controller’s view is `nil`. If the popover is already being shown, this method updates the anchored view, rectangle, and preferred edge. If the positioning view is not visible, this method does nothing.
 
 ## Parameters
 

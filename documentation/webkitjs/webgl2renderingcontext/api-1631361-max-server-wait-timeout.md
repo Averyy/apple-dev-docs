@@ -1,6 +1,6 @@
 # MAX_SERVER_WAIT_TIMEOUT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

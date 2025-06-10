@@ -49,6 +49,7 @@ enum DecodingError
 - [Error](error.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

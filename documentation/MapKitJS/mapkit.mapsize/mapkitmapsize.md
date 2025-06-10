@@ -22,9 +22,9 @@ new mapkit.MapSize(
 The following example demonstrates how to create a `mapkit.MapSize` instance from map units:
 
 ```javascript
-var mapSize = new mapkit.MapSize(0.3, 0.4);
-var width = mapSize.width; // 0.3
-var height = mapSize.height; // 0.4
+const mapSize = new mapkit.MapSize(0.3, 0.4);
+const width = mapSize.width; // 0.3
+const height = mapSize.height; // 0.4
 ```
 
 ## Parameters

@@ -1,6 +1,6 @@
 # Making browser actions available to Siri and Apple Intelligence
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Create app intents and entities to integrate your app’s web browsing functionality with Siri and Apple Intelligence.
 
@@ -13,7 +13,7 @@ To integrate your app’s web browsing functionality with Siri and Apple Intelli
 For example, if your app allows a person to open a website in a new tab, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.browser` domain and the [`createTab`](assistantschemas/browserintent/createtab.md) schema:
 
 ```swift
-@AssistantIntent(schema: .browser.createTab)
+@AppIntent(schema: .browser.createTab)
 struct CreateTabIntent: AppIntent {
     var url: URL?
     var isPrivate: Bool
@@ -32,7 +32,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 If you use app entities to describe custom data types, annotate the app entity implementation with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `TabEntity`. The following code snippet shows how the `TabEntity` implementation uses the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro:
 
 ```swift
-@AssistantEntity(schema: .browser.tab)
+@AppEntity(schema: .browser.tab)
 struct TabEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [TabEntity.ID]) async throws -> [TabEntity] { [] }
@@ -59,7 +59,7 @@ For a list of available app entity schemas in the `.browser` domain, see [`Assis
 To make sure Siri and Apple Intelligence understand custom static types for your intent parameters, annotate app enumerations with the [`AssistantEnum(schema:)`](assistantenum(schema:).md) macro. Then, pass the `.browser` domain and a schema to it. The following example uses the [`clearHistoryTimeFrame`](assistantschemas/browserenum/clearhistorytimeframe.md) schema:
 
 ```swift
-@AssistantEnum(schema: .browser.clearHistoryTimeFrame)
+@AppEnum(schema: .browser.clearHistoryTimeFrame)
 struct ClearHistoryTimeFrameEnum: String, AppEnum {
     case today
     case lastFourHours
@@ -84,4 +84,4 @@ For a list of available app enumeration schemas in the `.browser` domain, see [`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-browser-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-browser-actions-available-to-siri-and-apple-intelligence)*

@@ -9,8 +9,6 @@ The notification settings dictionary.
 - iOS 9.3+
 - iPadOS 9.3+
 - macOS 10.15+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

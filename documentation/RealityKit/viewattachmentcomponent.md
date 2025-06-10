@@ -16,16 +16,14 @@ struct ViewAttachmentComponent
 
 ## Topics
 
+### Initializers
+- [init<Content>(rootView: Content)](viewattachmentcomponent/init(rootview:).md)
+  A RealityKit component that manages a SwiftUI view hierarchy.
 ### Instance Properties
 - [var bounds: BoundingBox](viewattachmentcomponent/bounds.md)
   The bounding box of the view attachment, expressed in meters.
-- [var id: AnyHashable](viewattachmentcomponent/id-swift.property.md)
+- [var id: AnyHashable](viewattachmentcomponent/id.md)
   The identifier used for this view attachment.
-### Type Aliases
-- [ViewAttachmentComponent.ID](viewattachmentcomponent/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
-### Default Implementations
-- [Component Implementations](viewattachmentcomponent/component-implementations.md)
 
 ## Relationships
 
@@ -44,6 +42,8 @@ struct ViewAttachmentComponent
   The attachments that belong to a RealityView.
 - [class ViewAttachmentEntity](viewattachmententity.md)
   An entity that has a view attachment.
+- [struct PresentationComponent](presentationcomponent.md)
+  A component that presents a SwiftUI modal presentation from a RealityKit entity.
 - [struct TextComponent](textcomponent.md)
   A component that draws 2D text at an entity’s location.
 

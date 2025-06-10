@@ -25,8 +25,6 @@ func delete<T>(model: T.Type, where predicate: Predicate<T>? = nil, includeSubcl
 
 > ⚠️ **Warning**: If you don’t provide a predicate, the context will remove all models of the specified type from the persistent storage.
 
-If you don’t provide a predicate, the context will remove all models of the specified type from the persistent storage.
-
 ## Parameters
 
 - `model`: The type of the model to remove.

@@ -25,6 +25,10 @@
 OPENAI_API_KEY="sk-..."
 MAX_EMBEDDING_COST="10.00"
 
+# Scraper Configuration (optional)
+MAX_CONCURRENT_REQUESTS="5"  # Default: 5, can increase for faster scraping
+RATE_LIMIT_DELAY="0.2"       # Default: 0.2 seconds between requests
+
 # Environment validation in code
 api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:

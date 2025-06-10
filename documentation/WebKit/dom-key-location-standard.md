@@ -1,6 +1,6 @@
 # DOM_KEY_LOCATION_STANDARD
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

@@ -21,7 +21,7 @@ An array of uniform type identifier strings of data types instances that the rec
 
 #### Discussion
 
-By default, the system provides the data for a type to [`init(pasteboardPropertyList:ofType:)`](nspasteboardreading/init(pasteboardpropertylist:oftype:).md) as an instance of `NSData`. If you implement [`readingOptions(forType:pasteboard:)`](nspasteboardreading/readingoptions(fortype:pasteboard:).md) and specify a different option, the system converts the `NSData` object for a type to an `NSString` object or any other property list object.
+By default, the system provides the data for a type to [`init(pasteboardPropertyList:ofType:)`](nsimage/init(pasteboardpropertylist:oftype:).md) as an instance of `NSData`. If you implement [`readingOptions(forType:pasteboard:)`](nspasteboardreading/readingoptions(fortype:pasteboard:).md) and specify a different option, the system converts the `NSData` object for a type to an `NSString` object or any other property list object.
 
 ##### Special Considerations
 

@@ -56,6 +56,8 @@ The evaluation of an instance of `NSNameSpecifier` follows these steps until the
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -16,7 +16,7 @@ optional func appController(_ appController: TVApplicationController, evaluateAp
 
 #### Discussion
 
-This method serves as a callback function, giving the delegate the ability to add JavaScript classes and objects through the  doc://com.apple.documentation/documentation/foundation/nsmutabledictionary/1574187-setobject method using the `jsContext` parameter. This method is called before the JavaScript is parsed into the execution context and is called on the JavaScript execution thread, not the main thread. Any object exposed to [`JSContext`](https://developer.apple.com/documentation/JavaScriptCore/JSContext) must not be retained on any other thread.
+This method serves as a callback function, giving the delegate the ability to add JavaScript classes and objects through the  [`setObject:forKeyedSubscript:`](https://developer.apple.com/documentation/Foundation/NSMutableDictionary/setObject:forKeyedSubscript:) method using the `jsContext` parameter. This method is called before the JavaScript is parsed into the execution context and is called on the JavaScript execution thread, not the main thread. Any object exposed to [`JSContext`](https://developer.apple.com/documentation/JavaScriptCore/JSContext) must not be retained on any other thread.
 
 ## Parameters
 

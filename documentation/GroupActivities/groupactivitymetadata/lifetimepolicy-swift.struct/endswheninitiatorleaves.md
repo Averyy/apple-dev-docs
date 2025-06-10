@@ -25,8 +25,6 @@ This case should be used in the rare instances where the initiator of the activi
 
 > ❗ **Important**: The majority of SharePlay apps should use the [`automatic`](groupactivitymetadata/lifetimepolicy-swift.struct/automatic.md) policy, instead.
 
-The majority of SharePlay apps should use the [`automatic`](groupactivitymetadata/lifetimepolicy-swift.struct/automatic.md) policy, instead.
-
 
 ---
 

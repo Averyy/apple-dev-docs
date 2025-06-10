@@ -1,6 +1,6 @@
 # beginFinalPass
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 A flag that indicates the last pass in a multi-pass compression session.

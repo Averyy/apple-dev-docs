@@ -1,6 +1,6 @@
 # managementURL
 
-**Framework**: Applepayontheweb  
+**Framework**: Apple Pay on the Web  
 **Kind**: property
 
 A URL that links to a page on your web site where the user can manage the payment method for the deferred payment, including deleting it.
@@ -27,4 +27,4 @@ required DOMString managementURL;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaydeferredpaymentrequest/managementurl)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaydeferredpaymentrequest/managementurl)*

@@ -1,6 +1,6 @@
 # UNNotificationCategory
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 A type of notification your app supports and the custom actions that the system displays.
@@ -21,8 +21,8 @@ class UNNotificationCategory
 
 ## Mentions
 
-- [Declaring your actionable notification types](declaring-your-actionable-notification-types.md)
 - [Generating a remote notification](generating-a-remote-notification.md)
+- [Declaring your actionable notification types](declaring-your-actionable-notification-types.md)
 
 #### Overview
 
@@ -87,4 +87,4 @@ Categories can have associated actions, which define custom buttons the system d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/unnotificationcategory)*
+*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/unnotificationcategory)*

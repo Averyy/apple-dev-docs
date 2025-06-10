@@ -23,8 +23,6 @@ var threadGroupSizeIsMultipleOfThreadExecutionWidth: Bool { get set }
 
 > ⚠️ **Warning**:  When this configuration value is `true` and the threadgroup size isn’t a multiple of thread execution width, the compute pass’s execution results are undefined.
 
- When this configuration value is `true` and the threadgroup size isn’t a multiple of thread execution width, the compute pass’s execution results are undefined.
-
 If you can guarantee that the threadgroup size used by all compute commands in this pipeline is a multiple of [`threadExecutionWidth`](mtlcomputepipelinestate/threadexecutionwidth.md), set this property to `true` to take advantage of additional Metal optimizations.
 
 The default value is `false`.

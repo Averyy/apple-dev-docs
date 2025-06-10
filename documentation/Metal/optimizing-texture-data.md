@@ -76,4 +76,4 @@ Finally, create a texture from the texture descriptor.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/optimizing-texture-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/optimizing-texture-data)*

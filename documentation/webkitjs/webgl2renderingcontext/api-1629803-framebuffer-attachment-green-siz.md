@@ -1,6 +1,6 @@
 # FRAMEBUFFER_ATTACHMENT_GREEN_SIZE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

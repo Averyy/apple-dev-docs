@@ -1,6 +1,6 @@
 # textSelection(_:)
 
-**Framework**: Financekitui  
+**Framework**: FinanceKitUI  
 **Kind**: method
 
 Controls whether people can select text within this view.

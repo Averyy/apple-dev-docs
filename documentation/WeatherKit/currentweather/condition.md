@@ -1,6 +1,6 @@
 # condition
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 An enumeration value indicating the condition at the time.

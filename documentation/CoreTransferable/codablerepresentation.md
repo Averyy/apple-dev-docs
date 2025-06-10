@@ -43,8 +43,6 @@ struct Todo: Codable, Transferable {
 
 > ❗ **Important**: If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist`. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/UniformTypeIdentifiers/defining-file-and-data-types-for-your-app).
 
-If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist`. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/UniformTypeIdentifiers/defining-file-and-data-types-for-your-app).
-
 ## Topics
 
 ### Creating a transfer representation
@@ -62,6 +60,7 @@ If your app declares custom uniform type identifiers, include corresponding entr
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TransferRepresentation](transferrepresentation.md)
 
 ## See Also

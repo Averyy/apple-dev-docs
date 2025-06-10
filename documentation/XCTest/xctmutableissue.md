@@ -1,6 +1,6 @@
 # XCTMutableIssue
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 A mutable object that represents a test failure, and includes source code call stacks for test reporting and investigation.
@@ -28,6 +28,8 @@ class XCTMutableIssue
   An array of data that augments an issue, such as files, images, screenshots, data blobs, or ZIP files.
 - [func add(XCTAttachment)](xctmutableissue/add(_:).md)
   Adds supporting data to an issue.
+### Instance Properties
+- [var severity: XCTIssueReference.Severity](xctmutableissue/severity.md)
 
 ## Relationships
 

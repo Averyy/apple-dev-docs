@@ -1,6 +1,6 @@
 # kCFStringTransformToUnicodeName
 
-**Framework**: Corefoundation  
+**Framework**: Core Foundation  
 **Kind**: var
 
 The identifier of a reversible transform to transliterate characters other than printable ASCII to their Unicode character name in braces.
@@ -62,4 +62,4 @@ Examples include `"\N{AIRPLANE}"` for “✈” and `"\N{GREEK CAPITAL LETTER PS
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreFoundation/kcfstringtransformtounicodename)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corefoundation/kcfstringtransformtounicodename)*

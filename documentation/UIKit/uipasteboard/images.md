@@ -1,6 +1,6 @@
 # images
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 An array of image objects in all pasteboard items.

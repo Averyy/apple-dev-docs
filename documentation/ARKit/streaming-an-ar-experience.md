@@ -1,6 +1,6 @@
 # Streaming an AR experience
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Control an AR experience remotely by transferring sensor and user input over the network.
 
@@ -260,4 +260,4 @@ marker.isEnabled = true
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/streaming-an-ar-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/streaming-an-ar-experience)*

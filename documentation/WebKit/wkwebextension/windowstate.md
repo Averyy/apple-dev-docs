@@ -1,6 +1,6 @@
 # WKWebExtension.WindowState
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 Constants used by [`WKWebExtensionWindow`](wkwebextensionwindow.md) to indicate possible states of a window.
@@ -40,6 +40,7 @@ enum WindowState
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # xpc_connection_set_target_queue(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Sets the target queue of the connection.
@@ -24,8 +24,6 @@ Setting the target queue is asynchronous and non-preemptive and therefore this m
 The XPC runtime guarantees this non-preemptiveness even for concurrent target queues. If the target queue is a concurrent queue, then XPC still guarantees that there will never be more than one invocation of the connection’s event handler block executing concurrently. If you wish to process events concurrently, you can [`dispatch_async`](https://developer.apple.com/documentation/dispatch/1453057-dispatch_async) to a concurrent queue from within the event handler.
 
 > ❗ **Important**:  When called from within the event handler block, [`dispatch_get_current_queue()`](https://developer.apple.com/documentation/Dispatch/dispatch_get_current_queue()) is NOT guaranteed to return a pointer to the queue set with this method.
-
- When called from within the event handler block, [`dispatch_get_current_queue()`](https://developer.apple.com/documentation/Dispatch/dispatch_get_current_queue()) is NOT guaranteed to return a pointer to the queue set with this method.
 
 Despite this seeming inconsistency, the XPC runtime guarantees that, when the target queue is a serial queue, the event handler block will execute synchonously with respect to other blocks submitted to that same queue. When the target queue is a concurrent queue, the event handler block may run concurrently with other blocks submitted to that queue, but it will never run concurrently with other invocations of itself for the same connection, as discussed previously.
 

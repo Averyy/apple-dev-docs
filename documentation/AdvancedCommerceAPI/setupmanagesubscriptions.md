@@ -14,8 +14,6 @@ You implement a subscription-management page in your app, and create a deep link
 
 > ❗ **Important**: To submit the subscription-management deep link URL for your eligible Advanced Commerce API app, use the Advanced Commerce API Access form on the [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/) page.
 
-To submit the subscription-management deep link URL for your eligible Advanced Commerce API app, use the Advanced Commerce API Access form on the [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/) page.
-
 Create the deep link by following these guidelines:
 
 - Follow universal link guidelines for the URL. For more information, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content).

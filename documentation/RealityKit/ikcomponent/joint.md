@@ -10,6 +10,7 @@ The update stage object that lets you read and update the current settings of a 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -27,15 +28,12 @@ The settings this object exposes are the runtime editable values of a solver joi
 ### Instance Properties
 - [var fkWeightPerAxis: SIMD3<Float>](ikcomponent/joint/fkweightperaxis.md)
   The per-axis weight of the source animation demand on the joint.
-- [let id: IKComponent.Joint.ID](ikcomponent/joint/id-swift.property.md)
+- [let id: IKComponent.Joint.ID](ikcomponent/joint/id.md)
   The identifier of this joint.
 - [var name: String](ikcomponent/joint/name.md)
   The name of the joint.
 - [var rotationStiffness: SIMD3<Float>](ikcomponent/joint/rotationstiffness.md)
   The per-axis rotational stiffness of the joint.
-### Type Aliases
-- [IKComponent.Joint.ID](ikcomponent/joint/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 
@@ -60,8 +58,6 @@ The settings this object exposes are the runtime editable values of a solver joi
   A reference counted immutable resource which contains one or more inverse kinematics solver rigs.
 - [struct IKSolverDefinition](iksolverdefinition.md)
   A container describing a solver instance.
-- [IKSolverDefinition.ID](iksolverdefinition/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 
 ---

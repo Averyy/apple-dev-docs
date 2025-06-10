@@ -24,6 +24,10 @@ The example request below lists the test results for an Xcode Cloud build that p
   Get Xcode Cloud build information for a given build action.
 - [List All Issues for a Build Action](get-v1-cibuildactions-_id_-issues.md)
   List all issues that occurred for a specific action that Xcode Cloud performed as part of a build.
+- [GET /v1/ciBuildActions/{id}/relationships/artifacts](get-v1-cibuildactions-_id_-relationships-artifacts.md)
+- [GET /v1/ciBuildActions/{id}/relationships/buildRun](get-v1-cibuildactions-_id_-relationships-buildrun.md)
+- [GET /v1/ciBuildActions/{id}/relationships/issues](get-v1-cibuildactions-_id_-relationships-issues.md)
+- [GET /v1/ciBuildActions/{id}/relationships/testResults](get-v1-cibuildactions-_id_-relationships-testresults.md)
 
 
 ---

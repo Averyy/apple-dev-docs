@@ -5,9 +5,6 @@
 
 An authorization result.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift

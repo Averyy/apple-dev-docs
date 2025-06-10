@@ -1,6 +1,6 @@
 # menuIndicator(_:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Sets the menu indicator visibility for controls within this view.
@@ -10,7 +10,7 @@ Sets the menu indicator visibility for controls within this view.
 - iPadOS 15.0+
 - macOS 12.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

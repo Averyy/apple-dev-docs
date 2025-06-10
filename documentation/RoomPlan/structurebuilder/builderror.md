@@ -3,13 +3,13 @@
 **Framework**: RoomPlan  
 **Kind**: enum
 
-Errors that can occur capturedStructure merging processing.
+Errors that can occur during the multiple-scan merging process.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -19,7 +19,7 @@ enum BuildError
 
 #### Overview
 
-The structure builder ([`StructureBuilder`](structurebuilder.md)) function [`capturedStructure(from:)`](structurebuilder/capturedstructure(from:).md) can throw an error of this type.
+The structure builder ([`StructureBuilder`](structurebuilder.md)) function [`capturedStructure(from:)`](structurebuilder/capturedstructure(from:).md) throws an error of this type if the multiple-scan merging process fails.
 
 ## Topics
 
@@ -38,7 +38,7 @@ The structure builder ([`StructureBuilder`](structurebuilder.md)) function [`cap
 - [StructureBuilder.BuildError.invalidInput](structurebuilder/builderror/invalidinput.md)
   An error that indicates the framework encounters invalid captured room data.
 - [StructureBuilder.BuildError.invalidRoomLocation](structurebuilder/builderror/invalidroomlocation.md)
-  An error that indicates one or more rooms are not in the same world space. [only for StructureBuilder]
+  An error that indicates one or more rooms reside in a different vicinity.
 ### Instance Properties
 - [var errorDescription: String?](structurebuilder/builderror/errordescription.md)
   A human-readable explanation of the error.
@@ -61,6 +61,7 @@ The structure builder ([`StructureBuilder`](structurebuilder.md)) function [`cap
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

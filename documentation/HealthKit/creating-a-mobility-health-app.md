@@ -1,6 +1,6 @@
 # Creating a Mobility Health App
 
-**Framework**: Healthkit
+**Framework**: HealthKit
 
 Create a health app that allows a clinical care team to send and receive mobility data.
 
@@ -36,8 +36,10 @@ Before you run the sample code project in Xcode:
   Query health and fitness data.
 - [Visualizing HealthKit State of Mind in visionOS](visualizing-healthkit-state-of-mind-in-visionos.md)
   Incorporate HealthKit State of Mind into your app and visualize the data in visionOS.
+- [Logging symptoms associated with a medication](logging-symptoms-associated-with-a-medication.md)
+  Fetch medications and dose events from the HealthKit store, and create symptom samples to associate with them.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/creating-a-mobility-health-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/creating-a-mobility-health-app)*

@@ -26,16 +26,12 @@ struct Instant
 - [static func - (SuspendingClock.Instant, Duration) -> SuspendingClock.Instant](suspendingclock/instant/-(_:_:)-7hsct.md)
 - [static func - (SuspendingClock.Instant, SuspendingClock.Instant) -> Duration](suspendingclock/instant/-(_:_:)-883fd.md)
 - [static func -= (inout SuspendingClock.Instant, Duration)](suspendingclock/instant/-=(_:_:).md)
-### Initializers
-- [init(from: any Decoder) throws](suspendingclock/instant/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
-### Instance Methods
-- [func encode(to: any Encoder) throws](suspendingclock/instant/encode(to:).md)
-  Encodes this value into the given encoder.
 ### Type Properties
 - [static var now: SuspendingClock.Instant](suspendingclock/instant/now.md)
 ### Default Implementations
 - [Comparable Implementations](suspendingclock/instant/comparable-implementations.md)
+- [Decodable Implementations](suspendingclock/instant/decodable-implementations.md)
+- [Encodable Implementations](suspendingclock/instant/encodable-implementations.md)
 - [Equatable Implementations](suspendingclock/instant/equatable-implementations.md)
 - [Hashable Implementations](suspendingclock/instant/hashable-implementations.md)
 - [InstantProtocol Implementations](suspendingclock/instant/instantprotocol-implementations.md)
@@ -51,6 +47,7 @@ struct Instant
 - [Hashable](hashable.md)
 - [InstantProtocol](instantprotocol.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 
 ---

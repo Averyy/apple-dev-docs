@@ -1,6 +1,6 @@
 # XCUIGestureVelocity
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: struct
 
 A value that describes how fast a gesture moves across the screen, in pixels per second.
@@ -59,6 +59,7 @@ struct XCUIGestureVelocity
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -52,6 +52,9 @@ For design guidance on buttons, see [`Human Interface Guidelines > Buttons`](htt
   A simple square bezel style that can scale to any size.
 ### Deprecated
 - [Deprecated Symbols](bezelstyle-deprecated-symbols.md)
+### Enumeration Cases
+- [NSButton.BezelStyle.glass](nsbutton/bezelstyle-swift.enum/glass.md)
+  A bezel style with a glass effect
 ### Initializers
 - [init?(rawValue: UInt)](nsbutton/bezelstyle-swift.enum/init(rawvalue:).md)
 
@@ -63,6 +66,7 @@ For design guidance on buttons, see [`Human Interface Guidelines > Buttons`](htt
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

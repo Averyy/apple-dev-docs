@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to remove a managed app.
+A response from the device after it processes the command to remove an installed managed app.
 
 **Availability**:
 - iOS 5.0+
@@ -12,8 +12,6 @@ A response from the device after it processes the command to remove a managed ap
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,14 +21,14 @@ object RemoveApplicationResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object RemoveApplicationResponse.ErrorChainItem](removeapplicationresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 
 ## See Also
 
 - [object RemoveApplicationCommand](removeapplicationcommand.md)
-  The command to remove an installed managed app from a device.
+  The command to remove an installed managed app.
 
 
 ---

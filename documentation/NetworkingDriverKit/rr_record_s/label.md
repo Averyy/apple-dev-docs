@@ -12,6 +12,13 @@
 struct { ... } label;
 ```
 
+## Topics
+
+### Instance Properties
+- [len](rr_record_s/label/len.md)
+- [name](rr_record_s/label/name.md)
+- [record](rr_record_s/label/record.md)
+
 
 ---
 

@@ -1,6 +1,6 @@
 # CloudCoverByAltitude
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 Contains the percentage of sky covered by low, medium and high altitude cloud.
@@ -41,6 +41,8 @@ struct CloudCoverByAltitude
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

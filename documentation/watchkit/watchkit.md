@@ -1,6 +1,6 @@
 # WatchKit
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: module
 
 Build watchOS apps that use features the app delegate monitors or controls, such as background tasks and extended runtime sessions.

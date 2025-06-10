@@ -1,6 +1,6 @@
 # reloadFromOrigin(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Reloads the current webpage, and performs end-to-end revalidation of the content using cache-validating conditionals, if possible.

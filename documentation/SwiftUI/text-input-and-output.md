@@ -24,6 +24,8 @@ For design guidance, see [`Typography`](https://developer.apple.com/design/Human
 - [func labelStyle<S>(S) -> some View](view/labelstyle(_:).md)
   Sets the style for labels within this view.
 ### Getting text input
+- [Building rich SwiftUI text experiences](building-rich-swiftui-text-experiences.md)
+  Build an editor for formatted text using SwiftUI text editor views and attributed strings.
 - [struct TextField](textfield.md)
   A control that displays an editable text interface.
 - [func textFieldStyle<S>(S) -> some View](view/textfieldstyle(_:).md)
@@ -45,6 +47,8 @@ For design guidance, see [`Typography`](https://developer.apple.com/design/Human
   A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
 - [enum TextSelectionAffinity](textselectionaffinity.md)
   A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
+- [struct AttributedTextSelection](attributedtextselection.md)
+  Represents a selection of attributed text.
 ### Setting a font
 - [Applying custom fonts to text](applying-custom-fonts-to-text.md)
   Add and use a font in your app that scales with Dynamic Type.
@@ -94,6 +98,12 @@ For design guidance, see [`Typography`](https://developer.apple.com/design/Human
   Modifies the fonts of all child views to use the fixed-width variant of the current font, if possible.
 - [func monospacedDigit() -> some View](view/monospaceddigit.md)
   Modifies the fonts of all child views to use fixed-width digits, if possible, while leaving other characters proportionally spaced.
+- [protocol AttributedTextFormattingDefinition](attributedtextformattingdefinition.md)
+  A protocol for defining how text can be styled in a certain context, e.g. a `TextEditor`.
+- [protocol AttributedTextValueConstraint](attributedtextvalueconstraint.md)
+  A protocol for defining a constraint on the value of a certain attribute.
+- [enum AttributedTextFormatting](attributedtextformatting.md)
+  A namespace for types related to attributed text formatting definitions.
 ### Managing text layout
 - [func truncationMode(Text.TruncationMode) -> some View](view/truncationmode(_:).md)
   Sets the truncation mode for lines of text that are too long to fit in the available space.
@@ -178,6 +188,8 @@ For design guidance, see [`Typography`](https://developer.apple.com/design/Human
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on macOS.
 - [func textContentType(UITextContentType?) -> some View](view/textcontenttype(_:)-ufdv.md)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on an iOS or tvOS device.
+- [struct TextInputFormattingControlPlacement](textinputformattingcontrolplacement.md)
+  A structure defining the system text formatting controls available on each platform.
 ### Dictating text
 - [func searchDictationBehavior(TextInputDictationBehavior) -> some View](view/searchdictationbehavior(_:).md)
   Configures the dictation behavior for any search fields configured by the searchable modifier.

@@ -1,6 +1,6 @@
 # XCUI_UI_TESTING_AVAILABLE
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: var
 
 Indicates whether the current environment supports UI testing.

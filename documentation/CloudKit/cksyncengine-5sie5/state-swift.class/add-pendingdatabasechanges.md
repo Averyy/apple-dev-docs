@@ -1,6 +1,6 @@
 # add(pendingDatabaseChanges:)
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: method
 
 Adds the specified database changes to the state.

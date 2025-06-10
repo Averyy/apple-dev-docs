@@ -29,8 +29,6 @@ class MySystem: System {
 
 > ⚠️ **Warning**: Don’t do any unnecessary work in the `update` method, as it is called very frequently. If your [`update(context:)`](system/update(context:).md) method takes a long time to return, it can negatively impact your app’s frame rate.
 
-Don’t do any unnecessary work in the `update` method, as it is called very frequently. If your [`update(context:)`](system/update(context:).md) method takes a long time to return, it can negatively impact your app’s frame rate.
-
 ##### Retrieve Entities with an Entity Query
 
 To efficiently retrieve entities from a scene, use an [`EntityQuery`](entityquery.md), which you can use to fetch all entities, or just a subset of entities relevant to your system. While some systems operate on every entity in the scene, most only operate on a defined subset, often based on the entities’ components. A physics simulation system, for example, only needs to operate on entities that participate in the scene’s physics simulation and a rendering system only needs to operate on entities that are visible. To retrieve a subset of your scene’s entities, create a [`QueryPredicate`](querypredicate.md) with your criteria and pass the predicate into the initializer when creating your entity query.

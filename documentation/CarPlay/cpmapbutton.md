@@ -13,6 +13,7 @@ A button that represents an action that a map template displays on the CarPlay s
 ## Declaration
 
 ```swift
+@MainActor
 class CPMapButton
 ```
 
@@ -45,6 +46,7 @@ class CPMapButton
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

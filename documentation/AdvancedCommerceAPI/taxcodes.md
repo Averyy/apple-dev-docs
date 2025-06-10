@@ -1,6 +1,6 @@
 # Choosing tax codes for your SKUs
 
-**Framework**: Advancedcommerceapi
+**Framework**: Advanced Commerce API
 
 Select a tax code for each SKU that represents a product your app offers as an in-app purchase.
 
@@ -43,4 +43,4 @@ For more information about tax categories, see [`Set a tax category`](https://de
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AdvancedCommerceAPI/taxcodes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/advancedcommerceapi/taxcodes)*

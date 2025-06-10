@@ -1,6 +1,6 @@
 # WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 An unresponsive delegate error.

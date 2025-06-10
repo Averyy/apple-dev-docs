@@ -5,11 +5,23 @@
 
 Raises the incoming value to an exponent and assigns the sign of the base to the output.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
+#### Overview
+
+Safepow(X,Y) = sign(x) * pow(abs(x), y)
+
 #### Parameter Types
 
 #### Discussion
 
-The output of this node is represented by the equation `safepow(x,y) = sign(x) * pow(abs(x), y)`
+The output of this node is represented by the equation `safepow(x,y) = sign(x) * pow(abs(x), y)`.
 
 ## See Also
 

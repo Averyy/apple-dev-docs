@@ -8,8 +8,6 @@ The payload you use to configure access point names.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,21 +17,21 @@ object APN
 
 #### Discussion
 
-This profile is deprecated. Use the [`Cellular`](cellular.md) profile instead.
-
 Specify `com.apple.apn.managed` as the payload type.
+
+This profile is deprecated. Use the [`Cellular`](cellular.md) profile instead.
 
 ##### Profile Availability
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, Shared iPad |
-| User Channel | - |
-| Allow Manual Install | iOS, watchOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, Shared iPad |
+| User channel | NA |
+| Allow manual install | iOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ## Topics
 

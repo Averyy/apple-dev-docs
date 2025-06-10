@@ -31,7 +31,7 @@ The parameter for [`completePayment`](applepaysession/completepayment.md) in ver
 
 `status`
 
-The status of the payment, whether it succeeded or failed. See [`Apple Pay Status Codes`](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/apple_pay_status_codes).
+The status of the payment, whether it succeeded or failed. See [`Apple Pay Status Codes`](apple-pay-status-codes.md).
 
 The Apple Pay payment sheet is dismissed when this method is called with a status value of [`STATUS_SUCCESS`](applepaysession/status_success.md) or [`STATUS_FAILURE`](applepaysession/status_failure.md). Other status values display an error on the payment sheet to prompt the user to update the information and authenticate again.
 

@@ -11,6 +11,10 @@ Initializes a version struct with the provided version string.
 init?(_ versionString: String)
 ```
 
+## Parameters
+
+- `versionString`: A version string to use for creating a new version struct.
+
 
 ---
 

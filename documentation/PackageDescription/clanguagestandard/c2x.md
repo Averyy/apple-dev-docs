@@ -23,7 +23,7 @@ case c2x
 - [CLanguageStandard.c18](clanguagestandard/c18.md)
   The identifier for the ISO C 2017 language standard.
 - [CLanguageStandard.c89](clanguagestandard/c89.md)
-  The identifier for the ISO C 1990 language standard.
+  The identifier for the ISO C 1989 language standard.
 - [CLanguageStandard.c90](clanguagestandard/c90.md)
   The identifier for the ISO C 1990 language standard.
 - [CLanguageStandard.c99](clanguagestandard/c99.md)

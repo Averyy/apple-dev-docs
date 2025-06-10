@@ -11,8 +11,8 @@ Retrieve the status of an asynchronous event.
 
 ## Mentions
 
-- [Managing Users](managing-users.md)
 - [Managing Assets](managing-assets.md)
+- [Managing Users](managing-users.md)
 - [Handling Error Responses](handling-error-responses.md)
 
 #### Discussion
@@ -23,7 +23,6 @@ Retrieve the status of an asynchronous event.
 
 ### Response
 - [object StatusResponse](statusresponse.md)
-  The response that contains the event status.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
 

@@ -1,6 +1,6 @@
 # HourlyForecast.HourlyForecastData
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 The hourly forecast information.

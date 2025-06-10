@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device in Lost Mode after it processes the command to play the Lost Mode sound.
+A response from the device after it processes the command to play the Lost Mode sound on a device that’s in Lost Mode.
 
 **Availability**:
 - iOS 10.3+
 - iPadOS 10.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,14 +17,14 @@ object PlayLostModeSoundResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object PlayLostModeSoundResponse.ErrorChainItem](playlostmodesoundresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 
 ## See Also
 
 - [object PlayLostModeSoundCommand](playlostmodesoundcommand.md)
-  The command to play the Lost Mode sound.
+  The command to play the Lost Mode sound on a device that’s in Lost Mode.
 
 
 ---

@@ -12,6 +12,7 @@ The type of conveyance to use for determining the travel time.
 - macOS 10.11+
 - tvOS 9.0+
 - visionOS 1.0+
+- watchOS 2.0+
 
 ## Declaration
 

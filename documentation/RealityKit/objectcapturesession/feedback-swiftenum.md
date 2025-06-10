@@ -17,9 +17,6 @@ enum Feedback
 
 ## Topics
 
-### Operators
-- [static func == (ObjectCaptureSession.Feedback, ObjectCaptureSession.Feedback) -> Bool](objectcapturesession/feedback-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [ObjectCaptureSession.Feedback.environmentLowLight](objectcapturesession/feedback-swift.enum/environmentlowlight.md)
   The lighting in the environment is low, which can degrade reconstruction quality. Auto-capture still proceeds but reconstruction quality may suffer.  It is advised to increase lighting.
@@ -39,14 +36,6 @@ enum Feedback
   The bounding box of the object is not in the field of view of the camera so auto-capture will not operate.
 - [ObjectCaptureSession.Feedback.overCapturing](objectcapturesession/feedback-swift.enum/overcapturing.md)
   If the `numberOfShotsTaken > maximumNumberOfInputImages` then any additional shots will not be used in an on-device reconstruction and reconstruction is recommended to be done on a Mac that can support a greater number of images.
-### Instance Properties
-- [var hashValue: Int](objectcapturesession/feedback-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](objectcapturesession/feedback-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](objectcapturesession/feedback-swift.enum/equatable-implementations.md)
 
 ## Relationships
 
@@ -55,6 +44,7 @@ enum Feedback
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

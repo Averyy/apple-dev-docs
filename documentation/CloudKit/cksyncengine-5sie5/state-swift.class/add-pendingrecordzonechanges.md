@@ -1,6 +1,6 @@
 # add(pendingRecordZoneChanges:)
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: method
 
 Adds the specified record zone changes to the state.

@@ -10,6 +10,7 @@ The roughness value for the entire entity.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -24,8 +25,6 @@ var scale: Float
   The roughness values as a UV-mapped image texture.
 - [static let textureSemantic: TextureResource.Semantic](physicallybasedmaterial/roughness-swift.struct/texturesemantic.md)
   The intended use of the object’s texture property.
-- [PhysicallyBasedMaterial.Roughness.FloatLiteralType](physicallybasedmaterial/roughness-swift.struct/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 
 ---

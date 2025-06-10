@@ -1,6 +1,6 @@
 # accessibilityHint(_:isEnabled:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Communicates to the user what happens after performing the view’s action.
@@ -8,7 +8,7 @@ Communicates to the user what happens after performing the view’s action.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+

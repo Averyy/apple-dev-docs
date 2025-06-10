@@ -13,7 +13,7 @@
 ## Declaration
 
 ```swift
-typealias AUGenericViewInternalBase = UIView
+typealias AUGenericViewInternalBase = NSView
 ```
 
 #### Discussion

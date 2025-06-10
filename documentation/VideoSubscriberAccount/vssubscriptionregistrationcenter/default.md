@@ -1,6 +1,6 @@
 # default()
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: method
 
 Returns the default subscription registration center object.

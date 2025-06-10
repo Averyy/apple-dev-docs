@@ -14,7 +14,6 @@ An object that lays out the drawn content of a view for printing.
 ## Declaration
 
 ```swift
-@MainActor
 class UIViewPrintFormatter
 ```
 
@@ -53,7 +52,6 @@ Subclassing `UIViewPrintFormatter` to print the contents of a view is not recomm
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

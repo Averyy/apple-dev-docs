@@ -16,7 +16,7 @@ case createSymbolicLink
 
 #### Discussion
 
-Signifies that the user has granted authorization for [`createSymbolicLink(at:withDestinationURL:)`](https://developer.apple.com/documentation/foundation/filemanager/1414652-createsymboliclink).
+Signifies that the user has granted authorization for [`createSymbolicLink(at:withDestinationURL:)`](https://developer.apple.com/documentation/Foundation/FileManager/createSymbolicLink(at:withDestinationURL:)).
 
 ## See Also
 

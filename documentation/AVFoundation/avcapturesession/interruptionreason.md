@@ -31,6 +31,8 @@ enum InterruptionReason
   An interruption caused when your app is running in Slide Over, Split View, or Picture in Picture mode on iPad.
 - [AVCaptureSession.InterruptionReason.videoDeviceNotAvailableDueToSystemPressure](avcapturesession/interruptionreason/videodevicenotavailableduetosystempressure.md)
   An interruption due to system pressure, such as thermal duress.
+### Enumeration Cases
+- [AVCaptureSession.InterruptionReason.sensitiveContentMitigationActivated](avcapturesession/interruptionreason/sensitivecontentmitigationactivated.md)
 ### Initializers
 - [init?(rawValue: Int)](avcapturesession/interruptionreason/init(rawvalue:).md)
 
@@ -42,6 +44,7 @@ enum InterruptionReason
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

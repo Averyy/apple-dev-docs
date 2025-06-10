@@ -67,4 +67,4 @@ For iOS apps, the system always sends a [`textDidChangeNotification`](https://de
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/about-the-password-autofill-workflow)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/about-the-password-autofill-workflow)*

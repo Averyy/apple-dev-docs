@@ -54,6 +54,7 @@ protocol UIInteraction : NSObjectProtocol
 - [UIPencilInteraction](uipencilinteraction.md)
 - [UIPointerInteraction](uipointerinteraction.md)
 - [UIScribbleInteraction](uiscribbleinteraction.md)
+- [UIScrollEdgeElementContainerInteraction](uiscrolledgeelementcontainerinteraction.md)
 - [UISelectionFeedbackGenerator](uiselectionfeedbackgenerator.md)
 - [UISpringLoadedInteraction](uispringloadedinteraction.md)
 - [UITextInteraction](uitextinteraction.md)

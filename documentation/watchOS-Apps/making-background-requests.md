@@ -1,6 +1,6 @@
 # Making background requests
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Send requests from your app when it’s running in the background.
 
@@ -10,10 +10,10 @@ Use background requests when your app is running in the background or about to b
 
 To create a background session:
 
-1. Create a background configuration by calling the [`backgroundSessionConfiguration(_:)`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/1411521-backgroundsessionconfiguration) method on the [`URLSessionConfiguration`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration) class.
-2. Create a background session by calling the [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) class’s [`init(configuration:delegate:delegateQueue:)`](https://developer.apple.com/documentation/foundation/urlsession/1411597-init) initializer, passing both the background configuration and a session delegate. Background sessions must have a session delegate.
-3. Create a task to download data by calling the session object’s [`downloadTask(with:)`](https://developer.apple.com/documentation/foundation/urlsession/1411482-downloadtask) method.
-4. Start the task by calling its [`resume()`](https://developer.apple.com/documentation/foundation/urlsessiontask/1411121-resume) method.
+1. Create a background configuration by calling the [`backgroundSessionConfiguration(_:)`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/backgroundSessionConfiguration(_:)) method on the [`URLSessionConfiguration`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration) class.
+2. Create a background session by calling the [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) class’s [`init(configuration:delegate:delegateQueue:)`](https://developer.apple.com/documentation/Foundation/URLSession/init(configuration:delegate:delegateQueue:)) initializer, passing both the background configuration and a session delegate. Background sessions must have a session delegate.
+3. Create a task to download data by calling the session object’s [`downloadTask(with:)`](https://developer.apple.com/documentation/Foundation/URLSession/downloadTask(with:)-1onj) method.
+4. Start the task by calling its [`resume()`](https://developer.apple.com/documentation/Foundation/URLSessionTask/resume()) method.
 5. Implement your WatchKit extension delegate’s [`handle(_:)`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/handle(_:)-92ulv) method to respond to (and complete) the WatchKit background task. For more information, see [`WKURLSessionRefreshBackgroundTask`](https://developer.apple.com/documentation/WatchKit/WKURLSessionRefreshBackgroundTask).
 6. Implement the session delegate’s methods to receive data and notifications from the session. For more information, see [`URLSessionDelegate`](https://developer.apple.com/documentation/Foundation/URLSessionDelegate).
 

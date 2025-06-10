@@ -130,6 +130,7 @@ Also see the [`NSComboBoxDataSource`](nscomboboxdatasource.md) protocol, which d
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -56,8 +56,6 @@ This generates the same accessory association flow as the one presented in the H
 
 > ❗ **Important**:  If you add an accessory on a device, including an iOS Simulator, without a logged-in iCloud account, the accessory is isolated to that device. This means that if you add an accessory to an iPhone simulator and then switch over to using an iPad simulator, you have to reassociate the accessory for it to appear in the new environment.
 
- If you add an accessory on a device, including an iOS Simulator, without a logged-in iCloud account, the accessory is isolated to that device. This means that if you add an accessory to an iPhone simulator and then switch over to using an iPad simulator, you have to reassociate the accessory for it to appear in the new environment.
-
 ##### Observe and Change Characteristic Values
 
 After the simulated accessory is part of the home automation network, you can find it and control it from your app just as you would a real accessory.

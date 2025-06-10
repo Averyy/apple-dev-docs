@@ -8,10 +8,10 @@ Renders a view’s content as if it’s rotated in three dimensions around the s
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
+- Mac Catalyst ?+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS 1.0+ - Deprecated
+- visionOS ?+ - Deprecated
 - watchOS 6.0+
 
 ## Declaration
@@ -41,8 +41,6 @@ Text("Rotation by passing an angle in degrees")
 ```
 
 > ❗ **Important**: In visionOS, create this effect with [`perspectiveRotationEffect(_:axis:anchor:anchorZ:perspective:)`](shortcutslink/perspectiverotationeffect(_:axis:anchor:anchorz:perspective:).md) instead. To truly rotate a view in three dimensions, use a 3D rotation modifier without a perspective input like `rotation3DEffect(_:axis:anchor:)`.
-
-In visionOS, create this effect with [`perspectiveRotationEffect(_:axis:anchor:anchorZ:perspective:)`](shortcutslink/perspectiverotationeffect(_:axis:anchor:anchorz:perspective:).md) instead. To truly rotate a view in three dimensions, use a 3D rotation modifier without a perspective input like `rotation3DEffect(_:axis:anchor:)`.
 
 ## Parameters
 

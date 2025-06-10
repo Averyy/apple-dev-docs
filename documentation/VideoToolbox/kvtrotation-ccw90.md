@@ -1,6 +1,6 @@
 # kVTRotation_CCW90
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A constant that indicates a counterclockwise rotation of 90 degrees.

@@ -1,6 +1,6 @@
 # nodeNames()
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Returns the node names that are registered with this session.

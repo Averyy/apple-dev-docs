@@ -1,6 +1,6 @@
 # Integrating AirPlay for Long-Form Video Apps
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Integrate AirPlay features and implement a dedicated external playback experience by preparing the routing system for long-form video playback.
 
@@ -23,4 +23,4 @@ Integrate AirPlay features and implement a dedicated external playback experienc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/integrating-airplay-for-long-form-video-apps)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/integrating-airplay-for-long-form-video-apps)*

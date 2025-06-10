@@ -131,6 +131,7 @@ class SKShapeNode
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)

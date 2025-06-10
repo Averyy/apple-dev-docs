@@ -17,7 +17,6 @@ Removes an action associated with a specific key.
 ## Declaration
 
 ```swift
-@MainActor
 func removeAction(forKey key: String)
 ```
 

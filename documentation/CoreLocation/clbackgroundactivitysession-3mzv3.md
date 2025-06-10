@@ -46,6 +46,7 @@ Use `CLBackgroundActivitySession` to start a background activity session that al
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

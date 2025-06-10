@@ -1,6 +1,6 @@
 # Preview(_:traits:body:cameras:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: macro
 
 Creates a preview of a SwiftUI view using the specified traits and custom viewpoints.

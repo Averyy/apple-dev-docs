@@ -3,7 +3,7 @@
 **Framework**: GameKit  
 **Kind**: method
 
-Authenticates the local player on the device.
+Initializes the local player on the device.
 
 **Availability**:
 - visionOS 1.0+

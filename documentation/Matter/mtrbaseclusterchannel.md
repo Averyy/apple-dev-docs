@@ -26,8 +26,8 @@ class MTRBaseClusterChannel
 ### Instance Methods
 - [func change(with: MTRChannelClusterChangeChannelParams, completion: (MTRChannelClusterChangeChannelResponseParams?, (any Error)?) -> Void)](mtrbaseclusterchannel/change(with:completion:).md)
 - [func change(with: MTRChannelClusterChangeChannelParams, completionHandler: (MTRChannelClusterChangeChannelResponseParams?, (any Error)?) -> Void)](mtrbaseclusterchannel/change(with:completionhandler:).md)
-- [func changeByNumber(with: MTRChannelClusterChangeChannelByNumberParams, completion: MTRStatusCompletion)](mtrbaseclusterchannel/changebynumber(with:completion:).md)
-- [func changeByNumber(with: MTRChannelClusterChangeChannelByNumberParams, completionHandler: MTRStatusCompletion)](mtrbaseclusterchannel/changebynumber(with:completionhandler:).md)
+- [func changeByNumber(with: MTRChannelClusterChangeChannelByNumberParams, completion: ((any Error)?) -> Void)](mtrbaseclusterchannel/changebynumber(with:completion:).md)
+- [func changeByNumber(with: MTRChannelClusterChangeChannelByNumberParams, completionHandler: ((any Error)?) -> Void)](mtrbaseclusterchannel/changebynumber(with:completionhandler:).md)
 - [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterchannel/readattributeacceptedcommandlist(completion:).md)
 - [func readAttributeAcceptedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterchannel/readattributeacceptedcommandlist(completionhandler:).md)
 - [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterchannel/readattributeattributelist(completion:).md)
@@ -44,8 +44,8 @@ class MTRBaseClusterChannel
 - [func readAttributeGeneratedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterchannel/readattributegeneratedcommandlist(completionhandler:).md)
 - [func readAttributeLineup(completion: (MTRChannelClusterLineupInfoStruct?, (any Error)?) -> Void)](mtrbaseclusterchannel/readattributelineup(completion:).md)
 - [func readAttributeLineup(completionHandler: (MTRChannelClusterLineupInfo?, (any Error)?) -> Void)](mtrbaseclusterchannel/readattributelineup(completionhandler:).md)
-- [func skip(with: MTRChannelClusterSkipChannelParams, completion: MTRStatusCompletion)](mtrbaseclusterchannel/skip(with:completion:).md)
-- [func skip(with: MTRChannelClusterSkipChannelParams, completionHandler: MTRStatusCompletion)](mtrbaseclusterchannel/skip(with:completionhandler:).md)
+- [func skip(with: MTRChannelClusterSkipChannelParams, completion: ((any Error)?) -> Void)](mtrbaseclusterchannel/skip(with:completion:).md)
+- [func skip(with: MTRChannelClusterSkipChannelParams, completionHandler: ((any Error)?) -> Void)](mtrbaseclusterchannel/skip(with:completionhandler:).md)
 - [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterchannel/subscribeattributeacceptedcommandlist(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeAcceptedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterchannel/subscribeattributeacceptedcommandlist(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterchannel/subscribeattributeattributelist(with:subscriptionestablished:reporthandler:).md)
@@ -62,12 +62,12 @@ class MTRBaseClusterChannel
 - [func subscribeAttributeGeneratedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterchannel/subscribeattributegeneratedcommandlist(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeLineup(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (MTRChannelClusterLineupInfoStruct?, (any Error)?) -> Void)](mtrbaseclusterchannel/subscribeattributelineup(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeLineup(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (MTRChannelClusterLineupInfo?, (any Error)?) -> Void)](mtrbaseclusterchannel/subscribeattributelineup(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func cancelRecordProgram(with: MTRChannelClusterCancelRecordProgramParams, completion: MTRStatusCompletion)](mtrbaseclusterchannel/cancelrecordprogram(with:completion:).md)
+- [func cancelRecordProgram(with: MTRChannelClusterCancelRecordProgramParams, completion: ((any Error)?) -> Void)](mtrbaseclusterchannel/cancelrecordprogram(with:completion:).md)
   Command CancelRecordProgram
 - [func getProgramGuide(completion: (MTRChannelClusterProgramGuideResponseParams?, (any Error)?) -> Void)](mtrbaseclusterchannel/getprogramguide(completion:).md)
 - [func getProgramGuide(with: MTRChannelClusterGetProgramGuideParams?, completion: (MTRChannelClusterProgramGuideResponseParams?, (any Error)?) -> Void)](mtrbaseclusterchannel/getprogramguide(with:completion:).md)
   Command GetProgramGuide
-- [func recordProgram(with: MTRChannelClusterRecordProgramParams, completion: MTRStatusCompletion)](mtrbaseclusterchannel/recordprogram(with:completion:).md)
+- [func recordProgram(with: MTRChannelClusterRecordProgramParams, completion: ((any Error)?) -> Void)](mtrbaseclusterchannel/recordprogram(with:completion:).md)
   Command RecordProgram
 ### Type Methods
 - [class func readAttributeAcceptedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterchannel/readattributeacceptedcommandlist(withattributecache:endpoint:queue:completionhandler:).md)

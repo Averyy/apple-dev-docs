@@ -8,7 +8,7 @@ An `ALAssetsGroup` object represents an ordered set of the assets managed by the
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 14.0+
 
 ## Declaration
 
@@ -19,10 +19,6 @@ class ALAssetsGroup
 #### Overview
 
 > ❗ **Important**:  The Assets Library framework is deprecated as of iOS 9.0. Instead, use the Photos framework instead, which in iOS 8.0 and later provides more features and better performance for working with a user’s photo library. For more information, see `Photos`. In the Photos framework, the [`PHCollection`](https://developer.apple.com/documentation/Photos/PHCollection) and [`PHCollectionList`](https://developer.apple.com/documentation/Photos/PHCollectionList) classes and their subclasses provide functionality for working with collections of assets.
-
- The Assets Library framework is deprecated as of iOS 9.0. Instead, use the Photos framework instead, which in iOS 8.0 and later provides more features and better performance for working with a user’s photo library. For more information, see `Photos`.
-
-In the Photos framework, the [`PHCollection`](https://developer.apple.com/documentation/Photos/PHCollection) and [`PHCollectionList`](https://developer.apple.com/documentation/Photos/PHCollectionList) classes and their subclasses provide functionality for working with collections of assets.
 
 Assets groups themselves are synced via iTunes, created to hold the user’s saved photos or created during camera import. You can indirectly modify the Saved Photos group by saving images or videos into it using the [`ALAssetsLibrary`](alassetslibrary.md) class.
 

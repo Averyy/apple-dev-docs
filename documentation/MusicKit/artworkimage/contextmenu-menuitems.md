@@ -1,6 +1,6 @@
 # contextMenu(menuItems:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Adds a context menu to a view.

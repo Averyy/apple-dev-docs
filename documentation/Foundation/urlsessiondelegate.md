@@ -24,8 +24,8 @@ protocol URLSessionDelegate : NSObjectProtocol, Sendable
 
 - [Fetching website data into memory](fetching-website-data-into-memory.md)
 - [Performing manual server trust authentication](performing-manual-server-trust-authentication.md)
-- [Uploading data to a website](uploading-data-to-a-website.md)
 - [Downloading files in the background](downloading-files-in-the-background.md)
+- [Uploading data to a website](uploading-data-to-a-website.md)
 
 #### Overview
 
@@ -51,6 +51,7 @@ In addition to the methods defined in this protocol, most delegates should also 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Inherited By
 - [URLSessionDataDelegate](urlsessiondatadelegate.md)
 - [URLSessionDownloadDelegate](urlsessiondownloaddelegate.md)
@@ -70,4 +71,4 @@ In addition to the methods defined in this protocol, most delegates should also 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessiondelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessiondelegate)*

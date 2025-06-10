@@ -1,6 +1,6 @@
 # NSMenuItemCell
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An object that handles the measurement and display of a single menu item in its encompassing frame.
@@ -85,6 +85,7 @@ class NSMenuItemCell
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -106,4 +107,4 @@ class NSMenuItemCell
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsmenuitemcell)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsmenuitemcell)*

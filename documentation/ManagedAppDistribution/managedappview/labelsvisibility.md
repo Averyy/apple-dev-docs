@@ -1,6 +1,6 @@
 # labelsVisibility(_:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Controls the visibility of labels of any controls contained within this view.

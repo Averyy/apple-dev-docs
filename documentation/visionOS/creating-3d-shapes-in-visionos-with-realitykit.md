@@ -1,6 +1,6 @@
 # Creating 3D entities with RealityKit
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
 

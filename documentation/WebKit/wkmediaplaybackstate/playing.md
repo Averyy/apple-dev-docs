@@ -1,6 +1,6 @@
 # WKMediaPlaybackState.playing
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 The media is playing.

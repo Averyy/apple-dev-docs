@@ -1,6 +1,6 @@
 # setAction(_:forSegmentAt:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Sets the action for the segment at the index you specify.

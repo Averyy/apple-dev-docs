@@ -31,8 +31,6 @@ The default value is [`false`](https://developer.apple.com/documentation/swift/f
 
 > ❗ **Important**:  It’s an error to set this property value to [`true`](https://developer.apple.com/documentation/swift/true) when the value for [`expectsMediaDataInRealTime`](avassetwriterinput/expectsmediadatainrealtime.md) is [`true`](https://developer.apple.com/documentation/swift/true). It’s also an error for an asset writer to contain inputs with this property set to [`true`](https://developer.apple.com/documentation/swift/true) when any of its other inputs have a value of [`true`](https://developer.apple.com/documentation/swift/true) for [`expectsMediaDataInRealTime`](avassetwriterinput/expectsmediadatainrealtime.md).
 
- It’s an error to set this property value to [`true`](https://developer.apple.com/documentation/swift/true) when the value for [`expectsMediaDataInRealTime`](avassetwriterinput/expectsmediadatainrealtime.md) is [`true`](https://developer.apple.com/documentation/swift/true). It’s also an error for an asset writer to contain inputs with this property set to [`true`](https://developer.apple.com/documentation/swift/true) when any of its other inputs have a value of [`true`](https://developer.apple.com/documentation/swift/true) for [`expectsMediaDataInRealTime`](avassetwriterinput/expectsmediadatainrealtime.md).
-
 ## See Also
 
 - [var canPerformMultiplePasses: Bool](avassetwriterinput/canperformmultiplepasses.md)

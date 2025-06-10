@@ -1,4 +1,4 @@
-# Tip.InvalidationReason
+# InvalidationReason
 
 **Framework**: TipKit  
 **Kind**: typealias

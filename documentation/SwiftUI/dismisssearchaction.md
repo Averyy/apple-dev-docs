@@ -1,6 +1,6 @@
 # DismissSearchAction
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 An action that can end a search interaction.
@@ -108,6 +108,7 @@ People can dismiss the sheet by dragging it down, effectively canceling the oper
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -129,4 +130,4 @@ People can dismiss the sheet by dragging it down, effectively canceling the oper
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/dismisssearchaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/dismisssearchaction)*

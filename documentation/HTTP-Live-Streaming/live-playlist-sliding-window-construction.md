@@ -41,13 +41,9 @@ These are the tags used in the live playlist example:
 
 > ❗ **Important**: The `EXT-X-MEDIA-SEQUENCE` tag value must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
 
-The `EXT-X-MEDIA-SEQUENCE` tag value must be incremented by 1 for every media URI that’s removed from the playlist file. Media URIs must be removed from the playlist file in the order that they appear in the playlist. The updated index file presents a moving window into a continuous stream. This type of session is suitable for continuous broadcasts.
-
  A record marker that describes the media file identified by the URL that follows it. Each media file URL must be preceded by an `EXTINF` tag. This tag contains a duration attribute that’s an integer or floating-point number in decimal positional notation that specifies the duration of the media segment in seconds. This value must be less than or equal to the target duration.
 
 > ❗ **Important**: Always use floating-point `EXTINF` durations (supported in protocol version 3). This allows the client to minimize round-off errors when seeking within the stream.
-
-Always use floating-point `EXTINF` durations (supported in protocol version 3). This allows the client to minimize round-off errors when seeking within the stream.
 
 The following example shows the same playlist after it’s been updated with new media URIs:
 

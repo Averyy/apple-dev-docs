@@ -1,6 +1,6 @@
 # hourly
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The hourly forecast query. This returns 25 contiguous hours, beginning with the current hour.

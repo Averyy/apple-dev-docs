@@ -1,6 +1,6 @@
 # Create an image for a subscription
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 Reserve an image asset to appear in the App Store, representing a subscription.
@@ -22,6 +22,7 @@ Reserve an image asset to appear in the App Store, representing a subscription.
   Read details about a specific subscription image.
 - [List subscription images](get-v1-subscriptions-_id_-images.md)
   List all images for a specific subscription.
+- [GET /v1/subscriptions/{id}/relationships/images](get-v1-subscriptions-_id_-relationships-images.md)
 - [Read subscription image information](patch-v1-subscriptionimages-_id_.md)
   Read details about a specific subscription image.
 - [Delete an subscription image](delete-v1-subscriptionimages-_id_.md)
@@ -30,4 +31,4 @@ Reserve an image asset to appear in the App Store, representing a subscription.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v1-subscriptionimages)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-subscriptionimages)*

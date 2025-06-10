@@ -14,10 +14,10 @@ An object-detector data source you create by selecting the location of a directo
 case directoryWithImages(at: URL, annotationFile: URL)
 ```
 
-#### Discussion
+## Parameters
 
-- directoryWithImages: The location of a directory that contains image files.
-- annotationFile: The location of a JSON file with object annotations for the images.
+- `directoryWithImages`: The location of a directory that contains image files.
+- `annotationFile`: The location of a JSON file with object annotations for the images.
 
 ## See Also
 

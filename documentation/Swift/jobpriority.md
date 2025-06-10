@@ -50,6 +50,7 @@ Conversions between the two priorities are available as initializers on the resp
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

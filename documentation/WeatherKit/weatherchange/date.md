@@ -1,6 +1,6 @@
 # date
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The date at which this change record becomes effective.

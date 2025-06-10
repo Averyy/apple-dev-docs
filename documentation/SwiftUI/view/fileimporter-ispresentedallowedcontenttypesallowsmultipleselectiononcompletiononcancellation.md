@@ -1,6 +1,6 @@
 # fileImporter(isPresented:allowedContentTypes:allowsMultipleSelection:onCompletion:onCancellation:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Presents a system dialog for allowing the user to import multiple files.

@@ -1,6 +1,6 @@
 # Creating custom container views
 
-**Framework**: Swiftui
+**Framework**: SwiftUI
 
 Access individual subviews to compose flexible container views.
 
@@ -25,4 +25,4 @@ Access individual subviews to compose flexible container views.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/creating-custom-container-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/creating-custom-container-views)*

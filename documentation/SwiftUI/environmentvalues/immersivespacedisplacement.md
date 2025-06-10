@@ -60,6 +60,9 @@ struct ImmersiveGameView: View {
   Sets the style for an immersive space.
 - [protocol ImmersionStyle](immersionstyle.md)
   The styles that an immersive space can have.
+- [struct ImmersiveEnvironmentBehavior](immersiveenvironmentbehavior.md)
+  The behavior of the system-provided immersive environments when a scene is opened by your app.
+- [struct ProgressiveImmersionAspectRatio](progressiveimmersionaspectratio.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # ControlCenter
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: class
 
 An object that contains a list of user-configured controls and is used for reloading controls.
@@ -8,7 +8,9 @@ An object that contains a list of user-configured controls and is used for reloa
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # addUserScript(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Injects the specified script into the webpage’s content.

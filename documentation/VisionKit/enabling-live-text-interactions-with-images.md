@@ -1,6 +1,6 @@
 # Enabling Live Text interactions with images
 
-**Framework**: Visionkit
+**Framework**: VisionKit
 
 Add a Live Text interface that enables users to perform actions with text and QR codes that appear in images.
 
@@ -17,8 +17,6 @@ Before interacting with items in an image, the user can tap the Live Text button
 In your app, you decide whether Live Text recognizes text and data within text, and for iOS apps, QR codes in the image. You choose the types of items to look for and run the analysis on the image, and then VisionKit provides the entire Live Text interface with the breadth of actions for specific types.
 
 > ❗ **Important**: The code listings in this article use asynchronous methods that you invoke from an `async` method or within a [`Task`](https://developer.apple.com/documentation/Swift/Task) structure. For details on asynchronous flows, see [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency).
-
-The code listings in this article use asynchronous methods that you invoke from an `async` method or within a [`Task`](https://developer.apple.com/documentation/Swift/Task) structure. For details on asynchronous flows, see [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency).
 
 ##### Check Whether the Device Supports Live Text
 

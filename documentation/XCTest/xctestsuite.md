@@ -1,6 +1,6 @@
 # XCTestSuite
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 A collection of test cases to manage as a test suite.

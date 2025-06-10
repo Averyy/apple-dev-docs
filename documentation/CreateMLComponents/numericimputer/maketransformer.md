@@ -1,6 +1,6 @@
 # makeTransformer()
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Creates a default-initialized impute transformer suitable for incremental fitting.

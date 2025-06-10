@@ -1,6 +1,6 @@
 # XCUIRemoteButton.left
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents the left button on a remote.

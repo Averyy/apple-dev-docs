@@ -1,6 +1,6 @@
 # hidVirtualDevice(_:receivedGetReportRequestOfType:id:maxSize:)
 
-**Framework**: Corehid  
+**Framework**: Core HID  
 **Kind**: method  
 **Required**: Yes
 

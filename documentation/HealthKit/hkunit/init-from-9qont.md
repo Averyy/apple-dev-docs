@@ -1,6 +1,6 @@
 # init(from:)
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: init
 
 Returns the unit instance described by the provided string.
@@ -21,7 +21,7 @@ convenience init(from string: String)
 
 #### Return Value
 
-The unit object described by the string. If the string does not represent a valid unit, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception)).
+The unit object described by the string. If the string does not represent a valid unit, this method throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException)).
 
 #### Discussion
 
@@ -108,7 +108,7 @@ You can create more complex, compound units by mathematically combining multiple
 | --- | --- | --- | --- |
 | `count/min` | Beats per minute | Count/time | Heart rate |
 | `mg/dl` | Milligrams per deciliter | Mass/volume | Blood glucose level |
-| `ml/kg/min` | Milliliters per kilogram per minute | Volume/mass/time | VO2 Max |
+| `ml/(kg*min)` | Milliliters per kilogram per minute | Volume/(mass * time) | VO2 Max |
 | `L/min` | Liters per minute | Volume/time | Peak Expiratory Flow Rate |
 
 ## Parameters

@@ -1,6 +1,6 @@
 # Filtering Images with MPSGraph FFT Operations
 
-**Framework**: Metalperformanceshadersgraph
+**Framework**: Metal Performance Shaders Graph
 
 Filter an image with MPSGraph fast Fourier transforms using the convolutional theorem.
 

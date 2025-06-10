@@ -48,11 +48,18 @@ The closure you provide to the `AsyncStream` in `init(_:bufferingPolicy:_:)` rec
 ### Enumerations
 - [AsyncStream.Continuation.BufferingPolicy](asyncstream/continuation/bufferingpolicy.md)
   A strategy that handles exhaustion of a buffer’s capacity.
+### Default Implementations
+- [Equatable Implementations](asyncstream/continuation/equatable-implementations.md)
+- [Hashable Implementations](asyncstream/continuation/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [Copyable](copyable.md)
+- [Equatable](equatable.md)
+- [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

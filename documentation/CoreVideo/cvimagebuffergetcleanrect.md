@@ -1,6 +1,6 @@
 # CVImageBufferGetCleanRect(_:)
 
-**Framework**: Corevideo  
+**Framework**: Core Video  
 **Kind**: func
 
 Returns the source rectangle of a Core Video image buffer that represents the clean aperture of the buffer in encoded pixels.

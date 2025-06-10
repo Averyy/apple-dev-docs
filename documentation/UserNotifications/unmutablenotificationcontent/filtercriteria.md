@@ -1,6 +1,6 @@
 # filterCriteria
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The criteria the system evaluates to determine if it displays the notification in the current Focus.

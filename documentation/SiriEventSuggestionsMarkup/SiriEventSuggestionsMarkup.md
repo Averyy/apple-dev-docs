@@ -26,8 +26,6 @@ Fill out the form at [`Siri Event Suggestions Markup Information`](https://devel
 
 > 💡 **Tip**:  Donate reservation information from your app as well, if you have one. For more information about providing event suggestions from your app, see doc://com.apple.documentation/documentation/sirikit/siri_event_suggestions.
 
- Donate reservation information from your app as well, if you have one. For more information about providing event suggestions from your app, see doc://com.apple.documentation/documentation/sirikit/siri_event_suggestions.
-
 ##### Format Reservation Data
 
 If you offer reservations on a website or email reservation confirmations to users, you may provide reservation information embedded in HTML documents as either JSON-LD or Microdata. For JSON-LD, specify the [`@context`](@context.md) and `@type,` as shown in this example:

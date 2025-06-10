@@ -36,6 +36,9 @@ Subviews are proxies to the resolved view they represent, meaning that modifiers
   The container values associated with the given subview.
 - [var id: Subview.ID](subview/id-swift.property.md)
   The unique identifier of the view.
+### Enumerations
+- [Subview.ContainerSizingOptions](subview/containersizingoptions.md)
+  Options on how all subviews should be sized when in a container.
 
 ## Relationships
 
@@ -48,6 +51,7 @@ Subviews are proxies to the resolved view they represent, meaning that modifiers
 - [struct SubviewsCollection](subviewscollection.md)
   An opaque collection representing the subviews of view.
 - [struct SubviewsCollectionSlice](subviewscollectionslice.md)
+  A slice of a SubviewsCollection.
 - [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](view/containervalue(_:_:).md)
   Sets a particular container value of a view.
 - [struct ContainerValues](containervalues.md)

@@ -10,6 +10,7 @@ An event invoked when the anchored state of an anchoring entity changes.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -31,6 +32,7 @@ struct AnchoredStateChanged
 ### Conforms To
 - [Event](event.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

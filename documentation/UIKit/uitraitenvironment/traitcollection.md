@@ -30,8 +30,6 @@ var traitCollection: UITraitCollection { get }
 
 > ❗ **Important**:  Don’t implement this property in your own objects. Instead, use the [`traitCollection`](uitraitenvironment/traitcollection.md) property associated with a view, view controller, or other object to determine the currently available trait information.
 
- Don’t implement this property in your own objects. Instead, use the [`traitCollection`](uitraitenvironment/traitcollection.md) property associated with a view, view controller, or other object to determine the currently available trait information.
-
 
 ---
 

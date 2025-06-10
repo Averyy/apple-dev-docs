@@ -130,8 +130,6 @@ If your verification passes, the postback is valid.
 
 > ❗ **Important**:  If the `attribution-signature` fails your verification, consider the postback message invalid. Don’t use it to count a conversion.
 
- If the `attribution-signature` fails your verification, consider the postback message invalid. Don’t use it to count a conversion.
-
 For version 3 and later, valid postbacks with a `did-win` value of `true` represent an ad attribution.
 
 ##### Count Unique Messages Only

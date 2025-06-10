@@ -33,6 +33,7 @@ class AVMetricEvent
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Inherited By
 - [AVMetricContentKeyRequestEvent](avmetriccontentkeyrequestevent.md)
+- [AVMetricDownloadSummaryEvent](avmetricdownloadsummaryevent.md)
 - [AVMetricErrorEvent](avmetricerrorevent.md)
 - [AVMetricHLSMediaSegmentRequestEvent](avmetrichlsmediasegmentrequestevent.md)
 - [AVMetricHLSPlaylistRequestEvent](avmetrichlsplaylistrequestevent.md)
@@ -52,6 +53,7 @@ class AVMetricEvent
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

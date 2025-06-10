@@ -1,6 +1,6 @@
 # ==(_:_:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: op
 
 Returns a Boolean value that indicates whether two workout goals are equal.

@@ -8,7 +8,6 @@ Asynchronously transmits an APDU command to the card, returning the response in 
 **Availability**:
 - iOS ?+
 - iPadOS ?+
-- Mac Catalyst ?+
 - macOS 10.10+
 - tvOS ?+
 - visionOS ?+

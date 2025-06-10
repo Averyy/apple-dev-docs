@@ -164,8 +164,8 @@ The renderer returns this image object to the view controller for further proces
 
 ## See Also
 
-- [Processing a Texture in a Compute Function](processing-a-texture-in-a-compute-function.md)
-  Perform parallel calculations on structured data by placing the data in textures.
+- [Processing a texture in a compute function](processing-a-texture-in-a-compute-function.md)
+  Create textures by running copy and dispatch commands in a compute pass on a GPU.
 - [Creating and Sampling Textures](creating-and-sampling-textures.md)
   Load image data into a texture and apply it to a quadrangle.
 - [Streaming large images with Metal sparse textures](streaming-large-images-with-metal-sparse-textures.md)

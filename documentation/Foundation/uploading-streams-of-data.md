@@ -80,8 +80,6 @@ The listing also sets `self` as the output stream’s delegate. Declare that you
 
 > 💡 **Tip**:  Your implementations of [`StreamDelegate`](streamdelegate.md) and [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md) may be in the same class or in different classes, whichever makes more sense for your app’s architecture.
 
- Your implementations of [`StreamDelegate`](streamdelegate.md) and [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md) may be in the same class or in different classes, whichever makes more sense for your app’s architecture.
-
 ##### Provide the Stream to the Upload Task
 
 You provide the input stream to the upload task in your implementation of the [`URLSessionTaskDelegate`](urlsessiontaskdelegate.md) method [`urlSession(_:task:needNewBodyStream:)`](urlsessiontaskdelegate/urlsession(_:task:neednewbodystream:).md), which is called after you start the upload task by calling [`resume()`](urlsessiontask/resume().md). The callback passes in a completion handler, which you call directly, passing in the `boundStreams.input` stream you created earlier. The following example shows an implementation of this method.
@@ -148,8 +146,6 @@ timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) {
 ```
 
 > 💡 **Tip**:  If the data you want to stream is coming from an asynchronous process, like callbacks from a media capture device, you still have to wait for the output stream to be ready before you write to it. In these situations, you can use a circular buffer to hold your data until the stream is ready to accept it.
-
- If the data you want to stream is coming from an asynchronous process, like callbacks from a media capture device, you still have to wait for the output stream to be ready before you write to it. In these situations, you can use a circular buffer to hold your data until the stream is ready to accept it.
 
 Once you write to the output stream, you can’t write again until your [`StreamDelegate`](streamdelegate.md) receives a new [`hasSpaceAvailable`](stream/event/hasspaceavailable.md) event. This example enforces this constraint by setting the class’ `canWrite` property to `false`. It will be reset to `true` when a new [`hasSpaceAvailable`](stream/event/hasspaceavailable.md) event is received by the output stream’s delegate, as shown earlier in `Handling StreamDelegate events`.
 

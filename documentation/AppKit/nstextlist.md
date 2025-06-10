@@ -22,7 +22,7 @@ Text lists appear as attributes on paragraphs, as part of the paragraph style. A
 
 The methods implementing this are [`textLists`](nsparagraphstyle/textlists.md) on [`NSParagraphStyle`](nsparagraphstyle.md), and [`textLists`](nsmutableparagraphstyle/textlists.md) on [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md).
 
-In addition, [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) has convenience methods for lists, such as [`range(of:at:)`](https://developer.apple.com/documentation/foundation/nsattributedstring/1525314-range), which determines the range covered by a list, and [`itemNumber(in:at:)`](https://developer.apple.com/documentation/foundation/nsattributedstring/1527303-itemnumber), which determines the ordinal position within a list of a particular item.
+In addition, [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) has convenience methods for lists, such as [`range(of:at:)`](https://developer.apple.com/documentation/Foundation/NSAttributedString/range(of:at:)-6um0x), which determines the range covered by a list, and [`itemNumber(in:at:)`](https://developer.apple.com/documentation/Foundation/NSAttributedString/itemNumber(in:at:)), which determines the ordinal position within a list of a particular item.
 
 ## Topics
 
@@ -52,6 +52,8 @@ In addition, [`NSAttributedString`](https://developer.apple.com/documentation/Fo
 ### Constants
 - [static var prependEnclosingMarker: NSTextList.Options](nstextlist/options/prependenclosingmarker.md)
   Specifies that a nested list should include the marker for its enclosing superlist before its own marker.
+### Type Properties
+- [class var includesTextListMarkers: Bool](nstextlist/includestextlistmarkers.md)
 
 ## Relationships
 

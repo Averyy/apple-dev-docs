@@ -151,6 +151,8 @@ In Instruments, Points of Interest displays the os_signposts in its timeline. Yo
   Create a user experience that feels responsive by removing hangs and hitches from your app.
 - [Understanding user interface responsiveness](understanding-user-interface-responsiveness.md)
   Make your app more responsive by examining the event-handling and rendering loop.
+- [Understanding and improving SwiftUI performance](understanding-and-improving-swiftui-performance.md)
+  Identify and address long-running view updates, and reduce the frequency of updates.
 - [Understanding hangs in your app](understanding-hangs-in-your-app.md)
   Determine the cause for delays in user interactions by examining the main thread and the main run loop.
 - [Understanding hitches in your app](understanding-hitches-in-your-app.md)

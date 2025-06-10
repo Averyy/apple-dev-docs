@@ -66,4 +66,4 @@ To connect your Mac game controller to an app running in the simulated device, s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/sharing-data-with-simulator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/sharing-data-with-simulator)*

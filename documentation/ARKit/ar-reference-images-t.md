@@ -5,6 +5,9 @@
 
 A collection of reference images.
 
+**Availability**:
+- visionOS 1.0+
+
 ## Declaration
 
 ```swift

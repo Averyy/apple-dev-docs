@@ -1,6 +1,6 @@
 # isHighlightingEnabled
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A Boolean value that indicates whether the scanner displays highlights around recognized items.

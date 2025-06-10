@@ -1,6 +1,6 @@
 # SVG_LENGTHTYPE_PERCENTAGE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

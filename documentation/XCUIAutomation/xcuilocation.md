@@ -1,6 +1,6 @@
 # XCUILocation
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: class
 
 A proxy that simulates a device’s location in terms of its longitude, latitude, and course information.

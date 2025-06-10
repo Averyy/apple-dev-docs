@@ -22,7 +22,7 @@ static func move(edge: Edge) -> AnyTransition
 
 ## See Also
 
-- [static let identity: AnyTransition](anytransition/identity.md)
+- [static var identity: AnyTransition](anytransition/identity.md)
   A transition that returns the input view, unmodified, as the output view.
 - [static func offset(CGSize) -> AnyTransition](anytransition/offset(_:).md)
 - [static func offset(x: CGFloat, y: CGFloat) -> AnyTransition](anytransition/offset(x:y:).md)

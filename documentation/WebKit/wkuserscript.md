@@ -1,6 +1,6 @@
 # WKUserScript
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 A script that the web view injects into a webpage.

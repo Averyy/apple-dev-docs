@@ -106,7 +106,7 @@ You enable an alternate mode by adding a query string to your associated domain�
 <service>:<fully qualified domain>?mode=<alternate mode>
 ```
 
-For more information about alternate modes, see [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains). For information about universal links, see [`Allowing apps and websites to link to your content`](allowing-apps-and-websites-to-link-to-your-content.md). For information about Handoff, see [`Implementing Handoff in Your App`](https://developer.apple.com/documentation/Foundation/implementing-handoff-in-your-app). For information about App Clips, see [`Configuring the launch experience of your App Clip`](https://developer.apple.com/documentation/AppClip/configuring-the-launch-experience-of-your-app-clip).
+For more information about alternate modes, see [`Associated Domains Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.associated-domains). For information about universal links, see [`Allowing apps and websites to link to your content`](allowing-apps-and-websites-to-link-to-your-content.md). For information about Handoff, see [`Implementing Handoff in Your App`](https://developer.apple.com/documentation/Foundation/implementing-handoff-in-your-app). For information about App Clips, see [`Configuring App Clip experiences`](https://developer.apple.com/documentation/AppClip/configuring-the-launch-experience-of-your-app-clip).
 
 > ❗ **Important**: Apple’s content delivery network requests the `apple-app-site-association` file for your domain within 24 hours. Devices check for updates approximately once per week after app installation.
 
@@ -122,4 +122,4 @@ For more information about alternate modes, see [`Associated Domains Entitlement
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/supporting-associated-domains)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/supporting-associated-domains)*

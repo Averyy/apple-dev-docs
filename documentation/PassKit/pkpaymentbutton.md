@@ -37,6 +37,8 @@ To trigger a payment through Apple Pay in a WatchKit app, use [`WKInterfacePayme
   A type that indicates the available appearances for an Apple Pay button.
 - [var cornerRadius: CGFloat](pkpaymentbutton/cornerradius.md)
   The radius, in points, for the rounded corners on the button.
+### Initializers
+- [convenience init(type: PKPaymentButtonType, style: PKPaymentButtonStyle, disableCardArt: Bool)](pkpaymentbutton/init(type:style:disablecardart:).md)
 
 ## Relationships
 
@@ -65,6 +67,7 @@ To trigger a payment through Apple Pay in a WatchKit app, use [`WKInterfacePayme
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
 - [NSUserInterfaceValidations](../AppKit/NSUserInterfaceValidations.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityContentSizeCategoryImageAdjusting](../UIKit/UIAccessibilityContentSizeCategoryImageAdjusting.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
@@ -91,6 +94,7 @@ To trigger a payment through Apple Pay in a WatchKit app, use [`WKInterfacePayme
 - [struct PayWithApplePayButton](paywithapplepaybutton.md)
 - [struct PayWithApplePayButtonLabel](paywithapplepaybuttonlabel.md)
 - [struct PayWithApplePayButtonStyle](paywithapplepaybuttonstyle.md)
+- [struct PayWithApplePayButtonLabel](paywithapplepaybuttonlabel.md)
 
 
 ---

@@ -8,8 +8,6 @@ An atom that contains a URL string for a web location.
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
-VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
-
 The URL hot spot atom has an atom type of `kQTVRHotSpotURLType` (`'url '`). The URL hot spot atom contains a URL string for a particular Web location (for example, http://quicktimevr.apple.com). QuickTime VR automatically links to this URL when the hot spot is clicked.
 
 ## See Also

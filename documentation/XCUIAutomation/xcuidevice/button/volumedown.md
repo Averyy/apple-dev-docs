@@ -1,6 +1,6 @@
 # XCUIDevice.Button.volumeDown
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The device’s volume down button.
@@ -19,10 +19,6 @@ The device’s volume down button.
 ```swift
 case volumeDown
 ```
-
-#### Discussion
-
-This device button isn’t available for UI testing in Simulator.
 
 ## See Also
 

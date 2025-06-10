@@ -138,4 +138,4 @@ An RVI represents the entire networking stack of the iOS device; you cannot targ
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Network/recording-a-packet-trace)*
+*[View on Apple Developer](https://developer.apple.com/documentation/network/recording-a-packet-trace)*

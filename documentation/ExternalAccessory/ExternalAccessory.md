@@ -1,6 +1,6 @@
 # External Accessory
 
-**Framework**: Externalaccessory  
+**Framework**: External Accessory  
 **Kind**: module
 
 Communicate with accessories that connect to a device with the Apple Lightning connector, or with Bluetooth wireless technology.

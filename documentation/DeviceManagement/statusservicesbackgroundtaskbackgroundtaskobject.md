@@ -7,8 +7,6 @@ A status report of a background task.
 
 **Availability**:
 - macOS 14.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -16,11 +14,11 @@ A status report of a background task.
 object StatusServicesBackgroundTaskBackgroundTaskObject
 ```
 
-## See Also
+## Topics
 
+### Objects
 - [object StatusServicesBackgroundTaskBackgroundTask_LaunchdObject](statusservicesbackgroundtaskbackgroundtask_launchdobject.md)
   A status report of a background task that’s based on a launch daemon.
-- [object StatusServicesBackgroundTaskBackgroundTask_Launchd_DeviceManagementObject](statusservicesbackgroundtaskbackgroundtask_launchd_devicemanagementobject.md)
 
 
 ---

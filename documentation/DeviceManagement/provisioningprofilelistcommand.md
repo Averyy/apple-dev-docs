@@ -12,8 +12,6 @@ The command to get a list of installed provisioning profiles on a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,14 +25,14 @@ object ProvisioningProfileListCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object ProvisioningProfileListCommand.Command](provisioningprofilelistcommand/command-data.dictionary.md)
-  The request dictionary to get a list of installed provisioning profiles.
+  The command to get a list of installed provisioning profiles on a device.
 
 ## See Also
 
 - [object ProvisioningProfileListResponse](provisioningprofilelistresponse.md)
-  A response from the device after it processes the command to get a list of its provisioning profiles.
+  A response from the device after it processes the command to get a list of installed provisioning profiles on a device.
 
 
 ---

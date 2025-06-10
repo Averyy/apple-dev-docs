@@ -9,7 +9,7 @@ Sets the style for date pickers within this view.
 - iOS 13.0+
 - iPadOS 13.0+
 - macOS 10.15+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

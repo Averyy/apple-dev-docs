@@ -1,6 +1,6 @@
 # hasInteractiveItem(at:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Returns a Boolean value that indicates whether active text, data detectors, or supplementary interface objects exist at the specified point.

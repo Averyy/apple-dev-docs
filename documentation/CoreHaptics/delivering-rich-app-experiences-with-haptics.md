@@ -1,6 +1,6 @@
 # Delivering Rich App Experiences with Haptics
 
-**Framework**: Corehaptics
+**Framework**: Core Haptics
 
 Enhance your app’s experience by incorporating haptic and sound feedback into key interactive moments.
 
@@ -35,4 +35,4 @@ Enhance your app’s experience by incorporating haptic and sound feedback into 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/delivering-rich-app-experiences-with-haptics)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/delivering-rich-app-experiences-with-haptics)*

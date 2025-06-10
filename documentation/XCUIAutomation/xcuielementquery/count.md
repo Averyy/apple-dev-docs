@@ -1,6 +1,6 @@
 # count
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 Evaluates the query and returns the number of elements that match.

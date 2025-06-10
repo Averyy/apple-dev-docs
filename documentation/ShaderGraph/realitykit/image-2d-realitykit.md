@@ -5,6 +5,18 @@
 
 A texture with RealityKit properties.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
+#### Overview
+
+Adjustable level of detail
+
 #### Parameter Types
 
 #### Parameter Descriptions
@@ -17,17 +29,15 @@ For the wrap mode parameters, the possible values are:
 
 > ⚠️ **Warning**: You can only use the clamp-to-zero option if the `Border Color` parameter is set to `transparent_black`; otherwise, the behavior of the node is undefined.
 
-You can only use the clamp-to-zero option if the `Border Color` parameter is set to `transparent_black`; otherwise, the behavior of the node is undefined.
-
 For the `Mag Filter` and `Min Filter` parameters, the possible values are:
 
 The `Mip Filter` parameter has the same possible values, with the addition of the option to allow for the value of `None`, which specifies that mipmapping isn’t used.
 
-Below is an example of a simple node graph that uses the Image 2Dnode to create a material from an image.
+Below is an example of a simple node graph that uses the Image 2Dnode to create a material from an image:
 
 ![None](https://docs-assets.developer.apple.com/published/4b154925c4f38a518e9e33b9c2bebdb7/Image2dGraph.png)
 
-Below, the resulting texture applies to a cube.
+Below, the resulting texture applies to a cube:
 
 ![None](https://docs-assets.developer.apple.com/published/faa74d1975d208dcd704a5c3692a3285/Image2dMaterial.png)
 

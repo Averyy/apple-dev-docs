@@ -19,8 +19,8 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingLiv
 
 ## Mentions
 
-- [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
 - [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
+- [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
 
 #### Discussion
 
@@ -28,13 +28,9 @@ Use this method to receive the results of a Live Photo capture. When the photo o
 
 > 💡 **Tip**:  To add captured Live Photos to the user’s Photos library, use the [`PHAssetCreationRequest`](https://developer.apple.com/documentation/Photos/PHAssetCreationRequest) class. To use Live Photos from the Photos library, use the [`PHLivePhoto`](https://developer.apple.com/documentation/Photos/PHLivePhoto) and [`PHLivePhotoView`](https://developer.apple.com/documentation/PhotosUI/PHLivePhotoView) classes. To display Live Photo content on the web, use the [`LivePhotosKit JS`](https://developer.apple.com/documentation/LivePhotosKitJS) framework.
 
- To add captured Live Photos to the user’s Photos library, use the [`PHAssetCreationRequest`](https://developer.apple.com/documentation/Photos/PHAssetCreationRequest) class. To use Live Photos from the Photos library, use the [`PHLivePhoto`](https://developer.apple.com/documentation/Photos/PHLivePhoto) and [`PHLivePhotoView`](https://developer.apple.com/documentation/PhotosUI/PHLivePhotoView) classes. To display Live Photo content on the web, use the [`LivePhotosKit JS`](https://developer.apple.com/documentation/LivePhotosKitJS) framework.
-
 You don’t need to implement this method if you’re not requesting Live Photo capture.
 
 > ❗ **Important**:  You must implement this method if you request Live Photo capture (by setting the [`livePhotoMovieFileURL`](avcapturephotosettings/livephotomoviefileurl.md) property of your photo settings object). The photo output validates this requirement when you call its [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method; if your delegate does not implement the correct methods, the photo output raises an exception.
-
- You must implement this method if you request Live Photo capture (by setting the [`livePhotoMovieFileURL`](avcapturephotosettings/livephotomoviefileurl.md) property of your photo settings object). The photo output validates this requirement when you call its [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method; if your delegate does not implement the correct methods, the photo output raises an exception.
 
 The photo output calls this method only once for each Live Photo capture.
 

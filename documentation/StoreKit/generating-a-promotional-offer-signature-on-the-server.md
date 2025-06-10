@@ -1,6 +1,6 @@
 # Generating a Promotional Offer Signature on the Server
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Generate a signature using your private key and lightweight cryptography libraries.
 
@@ -65,4 +65,4 @@ The request must have a `Content-type` header of `application/json`, and JSON bo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/generating-a-promotional-offer-signature-on-the-server)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/generating-a-promotional-offer-signature-on-the-server)*

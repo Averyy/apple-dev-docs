@@ -22,8 +22,8 @@ var ignoresSiblingOrder: Bool { get set }
 
 ## Mentions
 
-- [Maximizing Node Drawing Performance](maximizing-node-drawing-performance.md)
 - [About Node Drawing Order](about-node-drawing-order.md)
+- [Maximizing Node Drawing Performance](maximizing-node-drawing-performance.md)
 
 #### Discussion
 

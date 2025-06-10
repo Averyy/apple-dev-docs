@@ -1,6 +1,6 @@
 # Content filter providers
 
-**Framework**: Networkextension
+**Framework**: Network Extension
 
 Create an on-device network content filter.
 
@@ -68,4 +68,4 @@ For detailed information about content filter provider deployment options, see [
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/NetworkExtension/content-filter-providers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/content-filter-providers)*

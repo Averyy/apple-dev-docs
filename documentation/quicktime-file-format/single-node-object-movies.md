@@ -1,6 +1,6 @@
 # Single-node object movies
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Store a QTVR track, an object track, and an object image track in a single-node object movie.
 

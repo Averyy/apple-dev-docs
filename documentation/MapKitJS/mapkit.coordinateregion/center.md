@@ -19,7 +19,7 @@ attribute mapkit.Coordinate center;
 Create a [`mapkit.Coordinate`](mapkit.coordinate/mapkit.coordinate.md) with a latitude and longitude pair:
 
 ```javascript
-var center = new mapkit.Coordinate(37.415, -122.048333); // latitude, longitude
+const center = new mapkit.Coordinate(37.415, -122.048333); // latitude, longitude
 ```
 
 ## See Also

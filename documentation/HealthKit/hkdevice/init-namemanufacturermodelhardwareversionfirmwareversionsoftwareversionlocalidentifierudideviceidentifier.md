@@ -1,6 +1,6 @@
 # init(name:manufacturer:model:hardwareVersion:firmwareVersion:softwareVersion:localIdentifier:udiDeviceIdentifier:)
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: init
 
 Initializes a new device object.

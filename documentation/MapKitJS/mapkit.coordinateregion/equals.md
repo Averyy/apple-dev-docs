@@ -26,12 +26,12 @@ The following example shows how to determine whether a given region is equal to 
 
 ```javascript
 // Create a map.
-var map = new mapkit.Map("my-map-element-id");
+const map = new mapkit.Map("my-map-element-id");
 
 // Create a region named myRegion.
-var coordinate = new mapkit.Coordinate(37.415, -122.048333); // latitude, longitude
-var span = new mapkit.CoordinateSpan(.016, .016); // latitude delta, longitude delta
-var myRegion = new mapkit.CoordinateRegion(coordinate, span);
+const coordinate = new mapkit.Coordinate(37.415, -122.048333); // latitude, longitude
+const span = new mapkit.CoordinateSpan(.016, .016); // latitude delta, longitude delta
+const myRegion = new mapkit.CoordinateRegion(coordinate, span);
 
 // Check whether myRegion is equal to the current map region.
 if (myRegion.equals(map.region))

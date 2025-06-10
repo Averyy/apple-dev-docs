@@ -1,6 +1,6 @@
 # StyleMedia
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 The `StyleMedia` class provides a way to evaluate CSS media queries from JavaScript. You do not need to, nor should you, create instances of this class. You access the shared `StyleMedia` object using the window’s [`styleMedia`](domwindow/1632755-stylemedia.md) property.

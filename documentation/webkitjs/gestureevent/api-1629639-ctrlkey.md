@@ -1,6 +1,6 @@
 # ctrlKey
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A Boolean value indicating whether the control key is pressed.

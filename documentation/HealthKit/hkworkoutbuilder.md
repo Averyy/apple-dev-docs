@@ -93,6 +93,7 @@ For watchOS, use an [`HKWorkoutSession`](hkworkoutsession.md) and an [`HKLiveWor
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

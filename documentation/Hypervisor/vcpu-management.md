@@ -12,8 +12,6 @@ Enter the vCPU by using [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md). The function ru
 
 > ⚠️ **Warning**:  Don’t use vCPUs on dispatch queues, because work from a single queue can run on different threads.
 
- Don’t use vCPUs on dispatch queues, because work from a single queue can run on different threads.
-
 ## Topics
 
 ### Configuration

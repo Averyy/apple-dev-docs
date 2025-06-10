@@ -1,6 +1,6 @@
 # precipitationAmount
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The amount of precipitation for the hour.

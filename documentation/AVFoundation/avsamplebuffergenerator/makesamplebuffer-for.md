@@ -17,7 +17,7 @@ Creates a sample buffer, and attempts to load its data asynchronously if request
 ## Declaration
 
 ```swift
-func makeSampleBuffer(for request: AVSampleBufferRequest) throws -> CMSampleBuffer
+func makeSampleBuffer(for request: AVSampleBufferRequest) throws -> sending CMSampleBuffer
 ```
 
 #### Return Value

@@ -1,6 +1,6 @@
 # numberOfTapsRequired
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The number of taps on the interface object that are required for the gesture to be recognized.

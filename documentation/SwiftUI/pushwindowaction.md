@@ -76,6 +76,7 @@ Use the other two options to target a [`WindowGroup`](windowgroup.md) and provid
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # ShippingFulfillment
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 The details of a shipped order.

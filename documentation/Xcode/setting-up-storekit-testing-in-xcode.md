@@ -126,4 +126,4 @@ Your code is ready to validate receipts by selecting the appropriate certificate
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode)*

@@ -1,6 +1,6 @@
 # DocumentLaunchView
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A view to present when launching document-related user experience.
@@ -98,4 +98,4 @@ extension UTType {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/documentlaunchview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/documentlaunchview)*

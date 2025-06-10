@@ -25,6 +25,7 @@ protocol DistributedActorSystemError : Error
 ### Inherits From
 - [Error](../swift/error.md)
 - [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [DistributedActorCodingError](distributedactorcodingerror.md)
 - [ExecuteDistributedTargetError](executedistributedtargeterror.md)

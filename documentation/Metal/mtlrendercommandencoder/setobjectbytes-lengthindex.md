@@ -26,8 +26,6 @@ The method is equivalent to creating an [`MTLBuffer`](mtlbuffer.md) instance tha
 
 > ❗ **Important**:  Only call this method for single-use data that’s smaller than 4 KB.
 
- Only call this method for single-use data that’s smaller than 4 KB.
-
 For data that’s more than 4 KB, create an [`MTLBuffer`](mtlbuffer.md) instance and pass it to [`setObjectBuffer(_:offset:index:)`](mtlrendercommandencoder/setobjectbuffer(_:offset:index:).md).
 
 ## Parameters

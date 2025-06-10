@@ -1,6 +1,6 @@
 # delta
 
-**Framework**: Mlcompute  
+**Framework**: ML Compute  
 **Kind**: property
 
 The delta value.
@@ -42,4 +42,4 @@ The default value is `1.0`.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MLCompute/mlclossdescriptor/delta)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mlcompute/mlclossdescriptor/delta)*

@@ -72,8 +72,6 @@ await MainActor.run {
   Synchronously creates a cube texture resource from a pixel Metal buffer, or data.
 - [convenience init(dimensions: TextureResource.DimensionsCube, format: TextureResource.Format, contents: TextureResource.Contents) async throws](textureresource/init(dimensions:format:contents:)-75en1.md)
   Asynchronously creates a cube texture resource from a pixel Metal buffer, or data.
-- [TextureResource.DimensionsCube](textureresource/dimensionscube.md)
-  The dimensions of the cube texture.
 
 
 ---

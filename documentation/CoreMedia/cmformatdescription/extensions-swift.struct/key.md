@@ -68,6 +68,35 @@ struct Key
 ### Initializers
 - [init(rawValue: CFString)](cmformatdescription/extensions-swift.struct/key/init(rawvalue:).md)
   Creates a new `Key` backed by `rawValue`
+### Type Properties
+- [static let cameraCalibrationDataLensCollection: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/cameracalibrationdatalenscollection.md)
+  Specifies intrinsic and extrinsic parameters for single or multiple lenses. The value for this key is represented by [`CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection`](cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection.md) type.
+- [static var contentColorVolume: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/contentcolorvolume.md)
+  Matches payload of ITU-T-H.265:11/2019, D.2.40 Content Colour Volume SEI message. The value of this key is of [`CMFormatDescription.Extensions.Value.ContentColorVolume`](cmformatdescription/extensions-swift.struct/value/contentcolorvolume.md) type.
+- [static let convertedFromExternalSphericalTags: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/convertedfromexternalsphericaltags.md)
+  Indicates that the image description contains projected media data converted from an external format.
+- [static var hasAdditionalViews: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/hasadditionalviews.md)
+  A boolean indicating that one or more additional views may be present beyond stereo left and stereo right eyes (e.g,. a “centerline” view).
+- [static var hasLeftStereoEyeView: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/hasleftstereoeyeview.md)
+  A boolean indicating the stereo left eye is present in video frames.
+- [static var hasRightStereoEyeView: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/hasrightstereoeyeview.md)
+  A boolean indicating the stereo right eye is present in video frames.
+- [static var heroEye: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/heroeye.md)
+  Indicates which of the two eyes should be used as the primary when rendering in 2D. It is usually perpendicular to the target image surface.
+- [static var horizontalDisparityAdjustment: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/horizontaldisparityadjustment.md)
+  Indicates a relative shift of the left and right images, which changes the zero parallax plane.
+- [static var horizontalFieldOfView: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/horizontalfieldofview.md)
+  Horizontal field of view in thousandths of a degree (i.e., 123456 is 123.456 degrees).
+- [static var logTransferFunction: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/logtransferfunction.md)
+  Indicates that the transfer function or gamma of the content is a log format and identifies the specific log curve.
+- [static var projectionKind: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/projectionkind.md)
+  Indicates the projection that should be applied to presented decoded video frames.
+- [static var protectedContentOriginalFormat: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/protectedcontentoriginalformat.md)
+  FourCharCode number representing the original format
+- [static var stereoCameraBaseline: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/stereocamerabaseline.md)
+  Indicates the distance between centers of the lenses of the camera system.
+- [static let viewPackingKind: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/viewpackingkind.md)
+  Indicates the packing type of stereoscopic video frames.
 
 ## Relationships
 
@@ -76,6 +105,7 @@ struct Key
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

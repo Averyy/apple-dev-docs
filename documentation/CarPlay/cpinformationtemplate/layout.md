@@ -13,6 +13,7 @@ The layout that the template uses to arrange its items.
 ## Declaration
 
 ```swift
+@MainActor
 var layout: CPInformationTemplateLayout { get }
 ```
 

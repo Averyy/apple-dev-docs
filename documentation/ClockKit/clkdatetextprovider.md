@@ -28,10 +28,10 @@ When creating the formatted string, the date text provider creates the longest s
 
 When creating a `CLKDateTextProvider` object, you must specify which calendar units you want included in the resulting date. Only the following calendar units are supported:
 
-- [`NSDayCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/1409435-nsdaycalendarunit)
-- [`NSMonthCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/1408613-nsmonthcalendarunit)
-- [`NSWeekdayCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/1417495-nsweekdaycalendarunit)
-- [`NSYearCalendarUnit`](https://developer.apple.com/documentation/foundation/nscalendar/unit/1415822-nsyearcalendarunit)
+- [`NSDayCalendarUnit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/NSDayCalendarUnit)
+- [`NSMonthCalendarUnit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/NSMonthCalendarUnit)
+- [`NSWeekdayCalendarUnit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/NSWeekdayCalendarUnit)
+- [`NSYearCalendarUnit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/NSYearCalendarUnit)
 
 All other calendar units are ignored.
 

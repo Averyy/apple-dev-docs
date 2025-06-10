@@ -1,6 +1,6 @@
 # Creating API Keys for App Store Connect API
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Create API keys to sign JSON Web Tokens (JWTs) and authorize API requests.
 
@@ -87,4 +87,4 @@ The download link only appears if you haven’t downloaded the private key. Appl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/creating-api-keys-for-app-store-connect-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/creating-api-keys-for-app-store-connect-api)*

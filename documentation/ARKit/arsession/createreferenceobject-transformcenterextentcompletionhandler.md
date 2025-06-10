@@ -20,8 +20,6 @@ func createReferenceObject(transform: simd_float4x4, center: simd_float3, extent
 
 > ❗ **Important**: This method is valid only when running a session with [`ARObjectScanningConfiguration`](arobjectscanningconfiguration.md), which enables the high-fidelity spatial data collection needed for scanning reference objects. Calling this method on a session with a different configuration immediately invokes your `completionHandler` with an error.
 
-This method is valid only when running a session with [`ARObjectScanningConfiguration`](arobjectscanningconfiguration.md), which enables the high-fidelity spatial data collection needed for scanning reference objects. Calling this method on a session with a different configuration immediately invokes your `completionHandler` with an error.
-
 To use the extracted reference object for 3D object detection, assign it to the [`detectionObjects`](arworldtrackingconfiguration/detectionobjects.md) property of a world tracking configuration. You can bundle reference objects in an app by saving them to files and adding them to an Xcode asset catalog.
 
 When ARKit detects a reference image, the transform of the resulting [`ARObjectAnchor`](arobjectanchor.md) is based on the orgin of the reference object’s coordinate system—the transform you specify when extracting the reference object. For example, if a reference object represents a physical item that sits on a horizontal surface, virtual content should appear to sit on whatever surface the physical object does. To adjust a reference object’s origin after extracting it, use the [`applyingTransform(_:)`](arreferenceobject/applyingtransform(_:).md) method.

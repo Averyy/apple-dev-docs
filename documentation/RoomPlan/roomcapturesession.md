@@ -9,7 +9,7 @@ An object that manages the room-scanning process.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -43,15 +43,16 @@ To produce a 3D asset of the user’s environment, this class:
 - [func run(configuration: RoomCaptureSession.Configuration)](roomcapturesession/run(configuration:).md)
   Starts a room-capture session with the specified configuration.
 - [RoomCaptureSession.Configuration](roomcapturesession/configuration.md)
-  An object to configure the capture process
+  Settings that configure the room-scanning process.
 - [func stop()](roomcapturesession/stop.md)
-  Stop capture process
+  Stops the room-capture session.
 - [func stop(pauseARSession: Bool)](roomcapturesession/stop(pausearsession:).md)
+  Stops the room-capture session and indicates whether the app pauses the underlying AR session.
 ### Responding to events
 - [var delegate: (any RoomCaptureSessionDelegate)?](roomcapturesession/delegate.md)
   An object that observes important events in the room-scanning process.
 - [RoomCaptureSession.CaptureError](roomcapturesession/captureerror.md)
-  Capture error types
+  Errors that can occur during a room-capture session.
 ### Accessing the AR session
 - [var arSession: ARSession](roomcapturesession/arsession.md)
   An object that manages an ARKit session.

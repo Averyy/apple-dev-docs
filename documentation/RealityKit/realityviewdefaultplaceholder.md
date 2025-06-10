@@ -10,6 +10,7 @@ A view that represents the default placeholder for a RealityView.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -23,21 +24,11 @@ A view that represents the default placeholder for a RealityView.
 
 You don’t directly create instances of this type because [`RealityView`](realityview.md) creates them for you.
 
-## Topics
-
-### Instance Properties
-- [var body: some View](realityviewdefaultplaceholder/body-swift.property.md)
-  The content and behavior of the view.
-### Type Aliases
-- [RealityViewDefaultPlaceholder.Body](realityviewdefaultplaceholder/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Default Implementations
-- [View Implementations](realityviewdefaultplaceholder/view-implementations.md)
-
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also
@@ -52,6 +43,8 @@ You don’t directly create instances of this type because [`RealityView`](reali
   A protocol representing the content of a reality view.
 - [struct RealityViewEntityCollection](realityviewentitycollection.md)
   A collection of entities in a RealityView.
+- [struct RealityViewLayoutOption](realityviewlayoutoption.md)
+  Specifies the frame sizing and content alignment option for`RealityView`.
 - [protocol EntityCollection](entitycollection.md)
   An ordered, mutable collection of entities.
 

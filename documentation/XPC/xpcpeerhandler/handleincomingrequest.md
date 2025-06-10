@@ -1,14 +1,18 @@
 # handleIncomingRequest(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method  
 **Required**: Yes
 
 A closure that receives a message from a client and optionally provides a reply.
 
 **Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 17.0+
+- watchOS 10.0+
 
 ## Declaration
 
@@ -18,11 +22,11 @@ func handleIncomingRequest(_: Self.Input) -> Self.Output?
 
 #### Return Value
 
-A response message, if any, to send back to the client; otherwise [`Nil`](https://developer.apple.com/documentation/objectivec/nil).
+A response message, if any, to send back to the client; otherwise [`nil`](https://developer.apple.com/documentation/objectivec/nil).
 
 #### Discussion
 
-If the closure returns [`Nil`](https://developer.apple.com/documentation/objectivec/nil), you can still send use [`send(message:)`](xpcsession/send(message:).md) to send an asynchronous reply after handling the message.
+If the closure returns [`nil`](https://developer.apple.com/documentation/objectivec/nil), you can still send use [`send(message:)`](xpcsession/send(message:).md) to send an asynchronous reply after handling the message.
 
 ## See Also
 

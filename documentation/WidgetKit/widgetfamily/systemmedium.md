@@ -1,6 +1,6 @@
 # WidgetFamily.systemMedium
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: case
 
 A medium-sized widget.
@@ -8,8 +8,9 @@ A medium-sized widget.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 

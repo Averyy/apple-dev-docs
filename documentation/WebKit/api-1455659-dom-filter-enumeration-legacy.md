@@ -1,6 +1,6 @@
 # DOM Filter Enumeration (Legacy)
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 ## Topics
 

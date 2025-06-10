@@ -32,8 +32,6 @@ Set the property’s value before you execute the operation or submit it to a qu
 
 > ⚠️ **Warning**:  Query indexes update asynchronously so they aren’t always current. If you query for records that you recently changed and don’t allow enough time for those changes to process, the query’s results may be incorrect. The results may not contain the correct records, and the records may be out of order.
 
- Query indexes update asynchronously so they aren’t always current. If you query for records that you recently changed and don’t allow enough time for those changes to process, the query’s results may be incorrect. The results may not contain the correct records, and the records may be out of order.
-
 ## See Also
 
 - [var queryCompletionBlock: ((CKQueryOperation.Cursor?, (any Error)?) -> Void)?](ckqueryoperation/querycompletionblock.md)

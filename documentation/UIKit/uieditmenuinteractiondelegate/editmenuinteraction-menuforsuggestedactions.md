@@ -14,7 +14,6 @@ Provides the menu to use when the interaction begins or requires an update.
 ## Declaration
 
 ```swift
-@MainActor
 optional func editMenuInteraction(_ interaction: UIEditMenuInteraction, menuFor configuration: UIEditMenuConfiguration, suggestedActions: [UIMenuElement]) -> UIMenu?
 ```
 

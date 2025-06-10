@@ -1,6 +1,6 @@
 # transceive(_:)
 
-**Framework**: Secureelementcredential  
+**Framework**: SecureElementCredential  
 **Kind**: method
 
 Send a wired command Application Protocol Data Unit (APDU) to the credential.

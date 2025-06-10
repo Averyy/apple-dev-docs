@@ -33,8 +33,6 @@ When configuring an alert with the [`UIAlertController.Style.alert`](uialertcont
 
 > ❗ **Important**:  The [`UIAlertController`](uialertcontroller.md) class is intended to be used as-is and doesn’t support subclassing. The view hierarchy for this class is private and must not be modified.
 
- The [`UIAlertController`](uialertcontroller.md) class is intended to be used as-is and doesn’t support subclassing. The view hierarchy for this class is private and must not be modified.
-
 ## Topics
 
 ### Creating an alert controller
@@ -84,6 +82,7 @@ When configuring an alert with the [`UIAlertController.Style.alert`](uialertcont
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)

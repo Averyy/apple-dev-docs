@@ -31,7 +31,7 @@ NSString *bestType = [[NSPasteboard generalPasteboard]
 
 If the pasteboard contains RTF and string data, then `bestType` would contain `NSRTFPboardType`. If the pasteboard contains none of the types in `supportedTypes`, then `bestType` would be `nil`.
 
-You must send a [`types`](nspasteboard/types.md) or [`availableType(from:)`](nspasteboard/availabletype(from:).md) message before reading any data from an `NSPasteboard` object. If you need to see if a type in the returned array matches a type string you have stored locally, use the [`isEqual(to:)`](https://developer.apple.com/documentation/foundation/nsstring/1407803-isequal) method to perform the comparison.
+You must send a [`types`](nspasteboard/types.md) or [`availableType(from:)`](nspasteboard/availabletype(from:).md) message before reading any data from an `NSPasteboard` object. If you need to see if a type in the returned array matches a type string you have stored locally, use the [`isEqual(to:)`](https://developer.apple.com/documentation/Foundation/NSString/isEqual(to:)) method to perform the comparison.
 
 ## Parameters
 

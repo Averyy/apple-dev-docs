@@ -30,8 +30,6 @@ When complete, the SSO extension needs to call the completion handler with an [`
 
 > 💡 **Tip**:  During device registration, SSO extensions can run as a user or a role account. Device registration is also user-agnostic. So, don’t set user-specific settings such as [`loginUserName`](asauthorizationproviderextensionuserloginconfiguration/loginusername.md) during registration.
 
- During device registration, SSO extensions can run as a user or a role account. Device registration is also user-agnostic. So, don’t set user-specific settings such as [`loginUserName`](asauthorizationproviderextensionuserloginconfiguration/loginusername.md) during registration.
-
 For more information on registering devices and users, see [`ASAuthorizationProviderExtensionRegistrationHandler`](asauthorizationproviderextensionregistrationhandler.md).
 
 ##### Register a User

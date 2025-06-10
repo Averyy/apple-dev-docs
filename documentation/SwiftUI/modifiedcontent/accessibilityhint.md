@@ -1,31 +1,29 @@
 # accessibilityHint(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Communicates to the user what happens after performing the view’s action.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 7.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
 nonisolated
-func accessibilityHint(_ hint: Text) -> ModifiedContent<Content, Modifier>
+func accessibilityHint(_ hint: LocalizedStringResource) -> ModifiedContent<Content, Modifier>
 ```
 
 #### Discussion
 
 Provide a hint in the form of a brief phrase, like “Purchases the item” or “Downloads the attachment”.
-
-> **Note**: On macOS, if the view does not have an action and it has been made into a container with `accessibilityElement(children: .contain)`, this will be used to describe the container. For example, if the container is for a graph, the hint could be “graph”.
 
 
 ---

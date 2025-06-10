@@ -1,6 +1,6 @@
 # frameName
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The name of the frame. If the receiver does not represent the contents of an entire HTML frame, this is `nil`.

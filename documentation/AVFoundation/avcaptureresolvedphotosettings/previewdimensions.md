@@ -1,6 +1,6 @@
 # previewDimensions
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The size, in pixels, of the preview image that the system delivers with the capture.

@@ -39,4 +39,4 @@ Similarly, Xcode Cloud can’t build standalone apps you create with [`Swift Pla
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/building-swift-packages-or-swift-playground-app-projects-with-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/building-swift-packages-or-swift-playground-app-projects-with-xcode-cloud)*

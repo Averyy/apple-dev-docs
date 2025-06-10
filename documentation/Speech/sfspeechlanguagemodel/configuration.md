@@ -3,6 +3,8 @@
 **Framework**: Speech  
 **Kind**: class
 
+An object describing the location of a custom language model and specialized vocabulary.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -16,18 +18,22 @@
 class Configuration
 ```
 
+#### Overview
+
+Pass this object to [`prepareCustomLanguageModel(for:configuration:completion:)`](sfspeechlanguagemodel/preparecustomlanguagemodel(for:configuration:completion:).md) to indicate where that method should create the custom language model file, and to [`customizedLanguageModel`](sfspeechrecognitionrequest/customizedlanguagemodel.md) or [`customizedLanguage(modelConfiguration:)`](dictationtranscriber/contenthint/customizedlanguage(modelconfiguration:).md) to indicate where the system should find that model to use.
+
 ## Topics
 
 ### Initializers
 - [init(languageModel: URL)](sfspeechlanguagemodel/configuration/init(languagemodel:).md)
+  Creates a configuration with the location of a language model file.
 - [init(languageModel: URL, vocabulary: URL?)](sfspeechlanguagemodel/configuration/init(languagemodel:vocabulary:).md)
-- [init(languageModel: URL)](sfspeechlanguagemodel/configuration/init(languagemodel:).md)
-- [init(languageModel: URL, vocabulary: URL?)](sfspeechlanguagemodel/configuration/init(languagemodel:vocabulary:).md)
+  Creates a configuration with the locations of language model and vocabulary files.
 ### Instance Properties
 - [var languageModel: URL](sfspeechlanguagemodel/configuration/languagemodel.md)
+  The location of a compiled language model file.
 - [var vocabulary: URL?](sfspeechlanguagemodel/configuration/vocabulary.md)
-- [var languageModel: URL](sfspeechlanguagemodel/configuration/languagemodel.md)
-- [var vocabulary: URL?](sfspeechlanguagemodel/configuration/vocabulary.md)
+  The location of a compiled vocabulary file.
 
 ## Relationships
 
@@ -39,14 +45,25 @@ class Configuration
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [class AnalysisContext](analysiscontext.md)
+  Contextual information that may be shared among analyzers.
 - [class SFCustomLanguageModelData](sfcustomlanguagemodeldata.md)
+  An object that generates and exports custom language model training data.
 - [class SFSpeechLanguageModel](sfspeechlanguagemodel.md)
+  A language model built from custom training data.
+- [protocol DataInsertable](datainsertable.md)
+  A protocol supporting the custom language model training data result builder.
+- [protocol TemplateInsertable](templateinsertable.md)
+  A protocol supporting the custom language model training data result builder.
 
 
 ---

@@ -14,8 +14,6 @@ When you submit your app for review, if itʼs approved and the status changes to
 
 > ❗ **Important**:  Send this request only when you’re ready to publish your version. You can’t cancel this request.
 
- Send this request only when you’re ready to publish your version. You can’t cancel this request.
-
 ## Request Body
 
 The request body you use to manually release an approved version of your app to the App Store.

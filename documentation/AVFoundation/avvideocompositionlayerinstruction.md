@@ -31,6 +31,22 @@ class AVVideoCompositionLayerInstruction
   Obtains the transform ramp that includes a specified time.
 - [func getCropRectangleRamp(for: CMTime, startCropRectangle: UnsafeMutablePointer<CGRect>?, endCropRectangle: UnsafeMutablePointer<CGRect>?, timeRange: UnsafeMutablePointer<CMTimeRange>?) -> Bool](avvideocompositionlayerinstruction/getcroprectangleramp(for:startcroprectangle:endcroprectangle:timerange:).md)
   Obtains the crop rectangle ramp that includes the specified time.
+### Structures
+- [AVVideoCompositionLayerInstruction.Configuration](avvideocompositionlayerinstruction/configuration.md)
+  Configurable properties for initializing a new AVVideoCompositionLayerInstruction instance.
+- [AVVideoCompositionLayerInstruction.CropRectangleRamp](avvideocompositionlayerinstruction/croprectangleramp.md)
+- [AVVideoCompositionLayerInstruction.OpacityRamp](avvideocompositionlayerinstruction/opacityramp.md)
+- [AVVideoCompositionLayerInstruction.TransformRamp](avvideocompositionlayerinstruction/transformramp.md)
+### Initializers
+- [convenience init(configuration: AVVideoCompositionLayerInstruction.Configuration)](avvideocompositionlayerinstruction/init(configuration:).md)
+  Initialize an AVVideoCompositionLayerInstruction with a configuration.
+### Instance Methods
+- [func cropRectangleRamp(at: CMTime) -> AVVideoCompositionLayerInstruction.CropRectangleRamp?](avvideocompositionlayerinstruction/croprectangleramp(at:).md)
+  Obtains the crop rectangle ramp that includes the specified time.
+- [func opacityRamp(at: CMTime) -> AVVideoCompositionLayerInstruction.OpacityRamp?](avvideocompositionlayerinstruction/opacityramp(at:).md)
+  Obtains the opacity ramp that includes a specified time.
+- [func transformRamp(at: CMTime) -> AVVideoCompositionLayerInstruction.TransformRamp?](avvideocompositionlayerinstruction/transformramp(at:).md)
+  Obtains the transform ramp that includes a specified time.
 
 ## Relationships
 
@@ -49,6 +65,8 @@ class AVVideoCompositionLayerInstruction
 - [NSMutableCopying](../Foundation/NSMutableCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

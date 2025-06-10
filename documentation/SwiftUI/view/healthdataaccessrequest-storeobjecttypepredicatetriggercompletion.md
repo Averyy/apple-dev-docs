@@ -81,9 +81,7 @@ Based on the results, you can then decide whether you need to request authorizat
 trigger.toggle()
 ```
 
-> ❗ **Important**: Using the [`healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)`](View/healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:).md) method to request read access to any data types that require per-object authorization fails with an [`errorInvalidArgument`](https://developer.apple.com/documentation/healthkit/hkerror/2320686-errorinvalidargument) error.
-
-Using the [`healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)`](View/healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:).md) method to request read access to any data types that require per-object authorization fails with an [`errorInvalidArgument`](https://developer.apple.com/documentation/healthkit/hkerror/2320686-errorinvalidargument) error.
+> ❗ **Important**: Using the [`healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:)`](View/healthDataAccessRequest(store:shareTypes:readTypes:trigger:completion:).md) method to request read access to any data types that require per-object authorization fails with an [`errorInvalidArgument`](https://developer.apple.com/documentation/HealthKit/HKError/errorInvalidArgument) error.
 
 When your app calls this method, HealthKit displays an authorization sheet that asks for permission to read the samples that match the predicate and object type. The person using your app can then select individual samples to share with your app. The system always asks for permission, regardless of whether the user previously granted it.
 

@@ -27,4 +27,4 @@ This sample app doesn’t run in Simulator, so you need to run it on a physical 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/detecting-animal-body-poses-with-vision)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/detecting-animal-body-poses-with-vision)*

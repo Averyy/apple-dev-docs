@@ -20,8 +20,6 @@ Use this type for all extents on a file system that doesn’t support sparse fil
 
 > 💡 **Tip**: The kernel keeps track of the end of file, so it knows a range of `[EOF, allocated space]` is uninitialized. Because of this behavior, it’s valid to pass the data extent type for such a range.
 
-The kernel keeps track of the end of file, so it knows a range of `[EOF, allocated space]` is uninitialized. Because of this behavior, it’s valid to pass the data extent type for such a range.
-
 ## See Also
 
 - [FSExtentType.zeroFill](fsextenttype/zerofill.md)

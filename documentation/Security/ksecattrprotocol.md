@@ -33,4 +33,4 @@ The corresponding value is of type [`CFString`](https://developer.apple.com/docu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/ksecattrprotocol)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/ksecattrprotocol)*

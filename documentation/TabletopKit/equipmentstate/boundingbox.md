@@ -22,7 +22,7 @@ This bounding box is object oriented, so remains the same regardless of the equi
 ## See Also
 
 - [var pose: TableVisualState.Pose2D](equipmentstate/pose.md)
-  The 2D position and rotation of the equipment relative to the equipment parent, or table.
+  The 2D position and rotation of the equipment relative to the parent equipment, or table.
 
 
 ---

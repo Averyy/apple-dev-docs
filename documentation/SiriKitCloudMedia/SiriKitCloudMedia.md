@@ -1,6 +1,6 @@
 # SiriKit Cloud Media
 
-**Framework**: Sirikitcloudmedia  
+**Framework**: SiriKit Cloud Media  
 **Kind**: module
 
 Stream music directly to HomePod speakers from your media service.

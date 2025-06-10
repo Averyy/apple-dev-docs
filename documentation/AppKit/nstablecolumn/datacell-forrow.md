@@ -1,6 +1,6 @@
 # dataCell(forRow:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Returns the cell object used to display values in the specified row of the table column.
@@ -23,7 +23,7 @@ The data cell object.
 
 Returns the [`NSCell`](nscell.md) object used by the table view to draw values for the receiver. The table view calls this method when drawing the row, so you shouldn’t need to call it directly. By default, this method just accesses [`dataCell`](nstablecolumn/datacell.md).
 
-To enable per-row customization of the cell used by the table column, you can override this method or use the `NSTableViewDelegate` method [`tableView(_:dataCellFor:row:)`](nstableviewdelegate/tableview(_:datacellfor:row:).md). In both cases, the cell that’s returned should properly implement [`copy(with:)`](https://developer.apple.com/documentation/foundation/nscopying/1410311-copy), because the table view may copy the cell during certain operations.
+To enable per-row customization of the cell used by the table column, you can override this method or use the `NSTableViewDelegate` method [`tableView(_:dataCellFor:row:)`](nstableviewdelegate/tableview(_:datacellfor:row:).md). In both cases, the cell that’s returned should properly implement [`copy(with:)`](https://developer.apple.com/documentation/Foundation/NSCopying/copy(with:)), because the table view may copy the cell during certain operations.
 
 Subclasses should be prepared for this method to be called with `row` equal to –1 in cases where no actual row is involved but the table view needs to get some generic cell information.
 

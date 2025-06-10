@@ -48,6 +48,7 @@ Use a duration event to specify that a different event should end after a period
 - [NSMutableCopying](../Foundation/NSMutableCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

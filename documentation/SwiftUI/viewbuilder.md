@@ -24,6 +24,7 @@ struct ViewBuilder
 ## Mentions
 
 - [Declaring a custom view](declaring-a-custom-view.md)
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Overview
 

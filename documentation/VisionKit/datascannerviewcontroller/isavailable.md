@@ -1,6 +1,6 @@
 # isAvailable
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A Boolean value that indicates whether a person grants your app access to the camera and doesn’t have any restrictions to using the camera.

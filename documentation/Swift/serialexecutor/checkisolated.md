@@ -31,8 +31,6 @@ A default implementation is provided that unconditionally crashes the program, a
 
 > ⚠️ **Warning**: This method must crash and halt program execution if unable to prove the isolation of the calling context.
 
-This method must crash and halt program execution if unable to prove the isolation of the calling context.
-
 
 ---
 

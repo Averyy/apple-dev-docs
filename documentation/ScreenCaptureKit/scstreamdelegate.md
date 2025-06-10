@@ -44,6 +44,8 @@ protocol SCStreamDelegate : NSObjectProtocol
   An instance that filters the content a stream captures.
 - [class SCScreenshotManager](scscreenshotmanager.md)
   An instance for the capture of single frames from a stream.
+- [class SCScreenshotConfiguration](scscreenshotconfiguration.md)
+- [class SCScreenshotOutput](scscreenshotoutput.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # isAccountLinked(using:)
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 A Boolean value that indicates whether the account is already linked.

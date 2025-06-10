@@ -29,6 +29,7 @@ object MerchantIdUpdateRequest
   A response that contains a list of merchant ID resources.
 - [object MerchantIdCreateRequest](merchantidcreaterequest.md)
   The request body you use to create a merchant ID.
+- [object MerchantIdCertificatesLinkagesResponse](merchantidcertificateslinkagesresponse.md)
 
 
 ---

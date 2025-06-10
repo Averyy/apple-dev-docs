@@ -22,12 +22,12 @@ protocol GKTurnBasedEventListener
 
 ## Mentions
 
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
 - [Exchanging data between players in turn-based games](exchanging-data-between-players-in-turn-based-games.md)
+- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Overview
 
-To receive the `GKTurnBasedEventListener` call backs, register your game object with the local player object immediately after authentication.
+To receive the `GKTurnBasedEventListener` call backs, register your game object with the local player object immediately after initialization.
 
 ```swift
 GKLocalPlayer.local.register(self)

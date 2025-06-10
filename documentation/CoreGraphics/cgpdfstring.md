@@ -25,7 +25,7 @@ This object is not derived from CFType and therefore there are no functions for 
 - [func CGPDFStringGetLength(CGPDFStringRef) -> Int](cgpdfstringgetlength(_:).md)
   Returns the number of bytes in a PDF string.
 ### Data Types
-- [typealias CGPDFStringRef](cgpdfstringref.md)
+- [struct CGPDFStringRef](cgpdfstringref.md)
   A data type that represents a string in a PDF document.
 
 ## See Also

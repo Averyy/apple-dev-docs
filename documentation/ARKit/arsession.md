@@ -105,6 +105,9 @@ Running a session requires a configuration. Subclasses of [`ARConfiguration`](ar
 ### Providing a session
 - [protocol ARSessionProviding](arsessionproviding.md)
   An object that provides a session.
+### Instance Methods
+- [func captureHighResolutionFrame(using: AVCapturePhotoSettings?, completion: (ARFrame?, (any Error)?) -> Void)](arsession/capturehighresolutionframe(using:completion:).md)
+  Requests a single, high resolution frame to be captured.
 
 ## Relationships
 

@@ -10,6 +10,7 @@ A collection of animations an entity can play.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -61,12 +62,9 @@ The initializers for [`AnimationLibraryComponent`](animationlibrarycomponent.md)
   Returns an iterator over the animations in the collection.
 - [AnimationLibraryComponent.AnimationCollection.Iterator](animationlibrarycomponent/animationcollection/iterator.md)
   An object to iterate over all animations in the collection.
-### Type Aliases
-- [AnimationLibraryComponent.AnimationCollection.Indices](animationlibrarycomponent/animationcollection/indices.md)
-  A type that represents the indices that are valid for subscripting the collection, in ascending order.
-### Default Implementations
-- [Collection Implementations](animationlibrarycomponent/animationcollection/collection-implementations.md)
-- [Sequence Implementations](animationlibrarycomponent/animationcollection/sequence-implementations.md)
+### Subscripts
+- [subscript(_:)](animationlibrarycomponent/animationcollection/subscript(_:).md)
+  Accesses animations in the collection within an index range.
 
 ## Relationships
 

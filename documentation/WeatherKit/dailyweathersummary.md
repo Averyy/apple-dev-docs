@@ -1,6 +1,6 @@
 # DailyWeatherSummary
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure that holds a collection of day weather summaries.
@@ -71,6 +71,7 @@ struct DailyWeatherSummary<T> where T : Decodable, T : Encodable, T : Equatable,
 - [Equatable](../Swift/Equatable.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 

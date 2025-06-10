@@ -1,6 +1,6 @@
 # VTFrameSiloAddSampleBuffer(_:sampleBuffer:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Adds a sample buffer to a frame silo object.

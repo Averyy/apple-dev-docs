@@ -23,17 +23,20 @@ protocol EquipmentState : Equatable
 - [var boundingBox: Rect3D](equipmentstate/boundingbox.md)
   A 3D bounding box that encloses the equipment.
 - [var pose: TableVisualState.Pose2D](equipmentstate/pose.md)
-  The 2D position and rotation of the equipment relative to the equipment parent, or table.
+  The 2D position and rotation of the equipment relative to the parent equipment, or table.
 ### Controlling the equipment
 - [var lockedBy: PlayerIdentifier?](equipmentstate/lockedby.md)
   The identifier for the player who exclusively controls the equipment.
 - [var seatControl: ControllingSeats](equipmentstate/seatcontrol.md)
-  The seats that can manipulate or interact with the equipment.
+  The seats that can manipulate or interact with this equipment.
 
 ## Relationships
 
 ### Inherits From
 - [Equatable](../Swift/Equatable.md)
+### Inherited By
+- [CustomEquipmentState](customequipmentstate.md)
+- [MutableEquipmentState](mutableequipmentstate.md)
 ### Conforming Types
 - [BaseEquipmentState](baseequipmentstate.md)
 - [CardState](cardstate.md)

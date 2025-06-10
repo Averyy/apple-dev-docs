@@ -1,6 +1,6 @@
 # WKWebpagePreferences.ContentMode
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 Constants that indicate how to render web view content.
@@ -42,6 +42,7 @@ Browsers often render webpages differently based on device type. For example, Sa
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

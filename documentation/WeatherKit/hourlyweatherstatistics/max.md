@@ -1,6 +1,6 @@
 # max()
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns the maximum element in the sequence.

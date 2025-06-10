@@ -1,6 +1,6 @@
 # abRecord(with:)
 
-**Framework**: Eventkit  
+**Framework**: EventKit  
 **Kind**: method
 
 Returns the address book record that represents the participant.

@@ -1,6 +1,6 @@
 # presentationSizing(_:)
 
-**Framework**: Financekitui  
+**Framework**: FinanceKitUI  
 **Kind**: method
 
 Sets the sizing of the containing presentation.

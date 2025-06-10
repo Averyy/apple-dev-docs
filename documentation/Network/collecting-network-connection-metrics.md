@@ -29,4 +29,4 @@ Use reports to understand how DNS and protocol handshakes impact connection esta
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Network/collecting-network-connection-metrics)*
+*[View on Apple Developer](https://developer.apple.com/documentation/network/collecting-network-connection-metrics)*

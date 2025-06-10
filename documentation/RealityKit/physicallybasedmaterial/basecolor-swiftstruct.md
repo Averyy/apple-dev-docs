@@ -10,6 +10,7 @@ An object that defines an entity’s base color.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -36,6 +37,9 @@ Use this struct to specify an entity’s base color, which defines the entity’
   The base color as a UV Image map.
 - [static let textureSemantic: TextureResource.Semantic](physicallybasedmaterial/basecolor-swift.struct/texturesemantic.md)
   The intended use of this object’s texture property.
+### Initializers
+- [init(tint:texture:)](physicallybasedmaterial/basecolor-swift.struct/init(tint:texture:).md)
+  Creates a base color object from a color or texture on macOS.
 ### Instance Properties
 - [var tint: UIColor](physicallybasedmaterial/basecolor-swift.struct/tint-2znu0.md)
 - [var tint: NSColor](physicallybasedmaterial/basecolor-swift.struct/tint-6heih.md)

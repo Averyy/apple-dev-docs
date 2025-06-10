@@ -21,8 +21,8 @@ var classificationError: Double { get }
 
 ## Mentions
 
-- [Creating a Text Classifier Model](creating-a-classification-model-for-natural-language.md)
 - [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
+- [Creating a Text Classifier Model](creating-a-classification-model-for-natural-language.md)
 - [Creating a text classifier model](creating-a-text-classifier-model.md)
 
 #### Discussion
@@ -34,8 +34,6 @@ let accuracy = (1 - metrics.classificationError) * 100
 ```
 
 > ❗ **Important**: This is a useful metric only when the data is well-balanced between categories. For example, suppose you build a classifier to detect a rare disease with very few examples of sick patients compared to the number of healthy patients. Predicting that a new patient will always be healthy would be highly accurate (low classification error), but a poor disease detector. The [`precisionRecall`](mlclassifiermetrics/precisionrecall.md) and [`confusion`](mlclassifiermetrics/confusion.md) properties provide more detail in these cases.
-
-This is a useful metric only when the data is well-balanced between categories. For example, suppose you build a classifier to detect a rare disease with very few examples of sick patients compared to the number of healthy patients. Predicting that a new patient will always be healthy would be highly accurate (low classification error), but a poor disease detector. The [`precisionRecall`](mlclassifiermetrics/precisionrecall.md) and [`confusion`](mlclassifiermetrics/confusion.md) properties provide more detail in these cases.
 
 ## See Also
 

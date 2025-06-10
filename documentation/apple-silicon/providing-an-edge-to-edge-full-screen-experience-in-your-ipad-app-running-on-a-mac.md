@@ -30,8 +30,6 @@ To run the sample app:
 
 > ❗ **Important**: The My Mac (Designed for iPad) destination option is available only on a Mac with Apple silicon.
 
-The My Mac (Designed for iPad) destination option is available only on a Mac with Apple silicon.
-
 When you launch the sample app, it displays two grids across the screen. The first grid has white lines showing the pixel positions as defined in the backing store of the app’s [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene). Each line is 1 pixel wide, and the grid separates each line by 10 pixels. The second grid uses red lines to show the point layout of the [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene) instance. Each line is 1 point wide, and the grid separates each line by 10 points.
 
 The sample app can also show other visual elements, such as a border around the safe area insets. To change the display options, click anywhere within the app.
@@ -63,8 +61,6 @@ Setting the key to `true` also avoids content scaling in the app’s window (whe
 ```
 
 > ❗ **Important**: For more information about the responsibilities of an iPad app that supports arbitrary screen sizes and resolutions when running on Mac, see the [`UISupportsTrueScreenSizeOnMac`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UISupportsTrueScreenSizeOnMac) documentation.
-
-For more information about the responsibilities of an iPad app that supports arbitrary screen sizes and resolutions when running on Mac, see the [`UISupportsTrueScreenSizeOnMac`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UISupportsTrueScreenSizeOnMac) documentation.
 
 ##### Launch in Full Screen Mode By Default
 

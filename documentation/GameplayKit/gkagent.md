@@ -1,6 +1,6 @@
 # GKAgent
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: class
 
 A component that moves a game entity according to a set of goals and realistic constraints.
@@ -108,4 +108,4 @@ In addition, an agent delegate can implement the [`agentWillUpdate(_:)`](gkagent
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GameplayKit/gkagent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gameplaykit/gkagent)*

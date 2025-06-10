@@ -17,7 +17,7 @@ An image to display in the marker balloon.
 
 ```swift
 @NSCopying
-@MainActor var glyphImage: NSImage? { get set }
+@MainActor var glyphImage: UIImage? { get set }
 ```
 
 #### Discussion

@@ -1,6 +1,6 @@
 # testRuns
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An array of test runs that the test suite manages.

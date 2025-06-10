@@ -1,6 +1,6 @@
 # Nutrition Type Identifiers
 
-**Framework**: Healthkit
+**Framework**: HealthKit
 
 Type identifiers used for tracking diet and nutrition.
 
@@ -134,4 +134,4 @@ Unless your app is very focused (for example, tracking only sugar or saturated f
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/nutrition-type-identifiers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/nutrition-type-identifiers)*

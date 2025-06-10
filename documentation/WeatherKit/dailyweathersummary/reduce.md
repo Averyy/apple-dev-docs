@@ -1,6 +1,6 @@
 # reduce(_:_:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns the result of combining the elements of the sequence using the given closure.

@@ -1,6 +1,6 @@
 # Analytics
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Get data about your apps and usage.
 
@@ -44,6 +44,8 @@ To learn more about roles, see [`Program Roles`](https://developer.apple.comhttp
   Get details for and the state of a specific analytics report request.
 - [Read reports for a specific request](get-v1-analyticsreportrequests-_id_-reports.md)
   Get a list of reports generated from a specific analytics report request.
+- [Read reports Ids for a specific request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
+  Get a list of reports Ids from a specific analytics report request.
 - [Delete a report request](delete-v1-analyticsreportrequests-_id_.md)
   Remove a specific analytics report request.
 ### Reading Reports, Instances, and Segments
@@ -55,8 +57,12 @@ To learn more about roles, see [`Program Roles`](https://developer.apple.comhttp
   Get details for a specific instance of an analytics report.
 - [Read the segments for a report](get-v1-analyticsreportinstances-_id_-segments.md)
   Get details for a specific analytics report segment.
+- [Read segment IDs for a report](get-v1-analyticsreportinstances-_id_-relationships-segments.md)
+  Get Ids for a specific analytics report segment.
 - [Read the details for a report segment](get-v1-analyticsreportsegments-_id_.md)
   Get details and download information for a specific analytics report segment.
+- [Read a list of a report instant IDs](get-v1-analyticsreports-_id_-relationships-instances.md)
+  Read list of all the instance IDs for a specific type of analytics report.
 ### Objects
 - [object AnalyticsReportRequest](analyticsreportrequest.md)
   The data structure that represents an analytics report request.
@@ -84,6 +90,10 @@ To learn more about roles, see [`Program Roles`](https://developer.apple.comhttp
   A response that contains a single analytics report segment resource.
 - [object AnalyticsReportSegmentsResponse](analyticsreportsegmentsresponse.md)
   A response that contains a list of analytics report segment resources.
+- [object AnalyticsReportInstanceSegmentsLinkagesResponse](analyticsreportinstancesegmentslinkagesresponse.md)
+- [object AnalyticsReportInstancesLinkagesResponse](analyticsreportinstanceslinkagesresponse.md)
+- [object AnalyticsReportRequestReportsLinkagesResponse](analyticsreportrequestreportslinkagesresponse.md)
+- [object AppAnalyticsReportRequestsLinkagesResponse](appanalyticsreportrequestslinkagesresponse.md)
 
 ## See Also
 

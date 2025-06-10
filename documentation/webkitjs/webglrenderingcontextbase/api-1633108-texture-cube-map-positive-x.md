@@ -1,6 +1,6 @@
 # TEXTURE_CUBE_MAP_POSITIVE_X
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

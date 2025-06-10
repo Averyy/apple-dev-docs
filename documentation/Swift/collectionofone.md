@@ -37,6 +37,8 @@ let b = a + CollectionOfOne(toAdd)
 ### Initializers
 - [init(Element)](collectionofone/init(_:).md)
   Creates an instance containing just the given element.
+### Instance Properties
+- [var span: Span<Element>](collectionofone/span.md)
 ### Default Implementations
 - [BidirectionalCollection Implementations](collectionofone/bidirectionalcollection-implementations.md)
 - [Collection Implementations](collectionofone/collection-implementations.md)
@@ -58,6 +60,7 @@ let b = a + CollectionOfOne(toAdd)
 - [MutableCollection](mutablecollection.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

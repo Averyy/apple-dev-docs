@@ -1,6 +1,6 @@
 # Configuring elements in a scene
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Define the appearance and behavior of objects in a scene.
 
@@ -78,4 +78,4 @@ When you enable the Participates checkbox, three new options appear in the Physi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/configuring-elements-in-a-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/configuring-elements-in-a-scene)*

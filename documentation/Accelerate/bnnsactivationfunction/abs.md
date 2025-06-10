@@ -11,9 +11,9 @@ An activation function that returns the absolute value of its input.
 - Mac Catalyst ?+
 - macOS 10.12+
 - tvOS 10.0+
+- visionOS ?+
 - watchOS 3.0+
 - Unknown ?+ - Deprecated
-- visionOS ?+
 
 ## Declaration
 

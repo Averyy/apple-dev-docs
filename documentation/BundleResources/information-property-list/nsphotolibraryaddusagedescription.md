@@ -14,8 +14,6 @@ A message that tells the user why the app is requesting add-only access to the u
 
 > ❗ **Important**:  This key is required if your app uses APIs that have write access to the user’s photo library.
 
- This key is required if your app uses APIs that have write access to the user’s photo library.
-
 ## See Also
 
 - [Delivering an Enhanced Privacy Experience in Your Photos App](../PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app.md)

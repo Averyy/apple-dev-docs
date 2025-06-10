@@ -1,6 +1,6 @@
 # shouldMonitorBackgroundEvents
 
-**Framework**: Gamecontroller  
+**Framework**: Game Controller  
 **Kind**: property
 
 A Boolean value that indicates whether the app needs to respond to controller events when it isn’t the frontmost app.

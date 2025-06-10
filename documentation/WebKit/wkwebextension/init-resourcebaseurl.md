@@ -1,6 +1,6 @@
 # init(resourceBaseURL:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 **Availability**:

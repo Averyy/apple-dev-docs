@@ -1,6 +1,6 @@
 # dailyStatistics(for:forDaysIn:including:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns daily weather statistics for the requested location, for each day within the specified date interval.

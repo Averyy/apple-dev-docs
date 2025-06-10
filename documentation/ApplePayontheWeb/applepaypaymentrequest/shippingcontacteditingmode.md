@@ -1,6 +1,6 @@
 # shippingContactEditingMode
 
-**Framework**: Applepayontheweb  
+**Framework**: Apple Pay on the Web  
 **Kind**: property
 
 A value that indicates whether the shipping mode prevents the user from editing the shipping address.
@@ -72,4 +72,4 @@ let applePayPaymentRequest = {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaypaymentrequest/shippingcontacteditingmode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaypaymentrequest/shippingcontacteditingmode)*

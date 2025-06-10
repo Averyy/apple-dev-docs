@@ -10,6 +10,7 @@ Retains the `Cancellable` as long as the entity is active (see `Entity.isActive`
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

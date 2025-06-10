@@ -1,6 +1,6 @@
 # Create Targeting Keywords
 
-**Framework**: Apple_Search_Ads  
+**Framework**: Apple Search Ads  
 **Kind**: httpRequest
 
 Creates targeting keywords in ad groups.

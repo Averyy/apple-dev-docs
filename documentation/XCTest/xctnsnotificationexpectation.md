@@ -1,6 +1,6 @@
 # XCTNSNotificationExpectation
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An expectation that is fulfilled when an expected `NSNotification` is received.
@@ -45,6 +45,7 @@ class XCTNSNotificationExpectation
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

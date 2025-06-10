@@ -1,6 +1,6 @@
 # Structuring Recognized Text on a Document
 
-**Framework**: Visionkit
+**Framework**: VisionKit
 
 Detect, recognize, and structure text on a business card or receipt using Vision and VisionKit.
 

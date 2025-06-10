@@ -15,8 +15,6 @@ SiriKit provides a number of supplementary APIs that are specific to messaging a
 
 > 💡 **Tip**:  In addition to messaging apps, the content of the first two sections is applicable to apps using SiriKit’s VoIP-related intents. For example, [`INStartCallIntent`](https://developer.apple.com/documentation/intents/instartcallintent).
 
- In addition to messaging apps, the content of the first two sections is applicable to apps using SiriKit’s VoIP-related intents. For example, [`INStartCallIntent`](https://developer.apple.com/documentation/intents/instartcallintent).
-
 For information about how Apple protects people’s privacy when your messaging or VoIP app shares information with the system, see the Siri section of [`Privacy - Features`](https://developer.apple.comhttps://www.apple.com/privacy/features).
 
 ##### Donate Contact Vocabulary and App Interactions to Siri
@@ -40,8 +38,6 @@ INVocabulary.shared().setVocabulary(contacts, of: .contactName)
 ```
 
 > ❗ **Important**:  Order the collection of speakable strings by importance. For more information, see [`setVocabulary(_:of:)`](https://developer.apple.com/documentation/intents/invocabulary/setvocabulary(_:of:)).
-
- Order the collection of speakable strings by importance. For more information, see [`setVocabulary(_:of:)`](https://developer.apple.com/documentation/intents/invocabulary/setvocabulary(_:of:)).
 
 When someone performs an action in your messaging app and the app includes support for the corresponding intent, such as sending or replying to a message, create and donate an instance of [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) to make Siri aware of the action. If your app uses the system’s Contacts database, reduce ambiguity by setting the [`contactIdentifier`](https://developer.apple.com/documentation/intents/inperson/contactidentifier) property for each of the interaction’s contacts to their corresponding database identifier; otherwise, set their [`customIdentifier`](https://developer.apple.com/documentation/intents/inperson/customidentifier) property to the unique value your app uses to identify them.
 

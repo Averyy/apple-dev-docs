@@ -1,6 +1,6 @@
 # xpc_array_create_connection(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates a connection object from an array directly.

@@ -61,6 +61,8 @@ You need to keep a reference to the detached task if you want to cancel it by ca
   The current task’s priority.
 - [static var basePriority: TaskPriority?](task/basepriority.md)
   The current task’s base priority.
+- [func withTaskPriorityEscalationHandler<T, E>(operation: () async throws(E) -> T, onPriorityEscalated: (TaskPriority, TaskPriority) -> Void, isolation: isolated (any Actor)?) async throws(E) -> T](withtaskpriorityescalationhandler(operation:onpriorityescalated:isolation:).md)
+  Runs the passed `operation` while registering a task priority escalation handler. The handler will be triggered concurrently to the current task if the current is subject to priority escalation.
 
 
 ---

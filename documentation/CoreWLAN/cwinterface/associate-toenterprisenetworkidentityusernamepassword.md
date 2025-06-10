@@ -1,6 +1,6 @@
 # associate(toEnterpriseNetwork:identity:username:password:)
 
-**Framework**: Corewlan  
+**Framework**: Core WLAN  
 **Kind**: method
 
 Connects to the given enterprise network.

@@ -1,6 +1,6 @@
 # gaugeColors
 
-**Framework**: Clockkit  
+**Framework**: ClockKit  
 **Kind**: property
 
 The colors of the gauge.

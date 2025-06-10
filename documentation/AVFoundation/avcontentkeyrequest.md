@@ -30,13 +30,13 @@ class AVContentKeyRequest
 - [let AVContentKeyRequestRequiresValidationDataInSecureTokenKey: String](avcontentkeyrequestrequiresvalidationdatainsecuretokenkey.md)
   A key that requires the secure token to have extended validation data.
 ### Responding to the Content Key Request
-- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest.md)
+- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest-1ci4q.md)
   Tells the receiver that the app requires a persistable content key request object for processing.
 - [func processContentKeyResponse(AVContentKeyResponse)](avcontentkeyrequest/processcontentkeyresponse(_:).md)
   Sends the specified content key response to the receiver for processing.
 - [func processContentKeyResponseError(any Error)](avcontentkeyrequest/processcontentkeyresponseerror(_:).md)
   Tells the receiver that the app was unable to obtain a content key response.
-- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest.md)
+- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest-1ci4q.md)
   Tells the receiver that the app requires a persistable content key request object for processing.
 ### Getting Content Key Request Properties
 - [var identifier: (any Sendable)?](avcontentkeyrequest/identifier.md)
@@ -62,8 +62,11 @@ class AVContentKeyRequest
   A dictionary of options used to initialize key loading.
 - [AVContentKeyRequest.RetryReason](avcontentkeyrequest/retryreason.md)
   The reason for asking the client to retry a content key request.
+### Instance Properties
+- [var originatingRecipient: (any AVContentKeyRecipient)?](avcontentkeyrequest/originatingrecipient.md)
+  The AVContentKeyRecipient which initiated this request, if any.
 ### Instance Methods
-- [func respondByRequestingPersistableContentKeyRequestAndReturnError() throws](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequestandreturnerror.md)
+- [func respondByRequestingPersistableContentKeyRequestAndReturnError() throws](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest-7i2pw.md)
   Tells the receiver that the app requires a persistable content key request object for processing.
 
 ## Relationships
@@ -80,6 +83,7 @@ class AVContentKeyRequest
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

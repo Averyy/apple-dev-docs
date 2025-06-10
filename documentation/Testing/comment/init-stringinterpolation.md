@@ -3,7 +3,7 @@
 **Framework**: Swift Testing  
 **Kind**: init
 
-Creates a new instance from an interpolated string literal.
+Creates an instance from a string interpolation.
 
 **Availability**:
 - iOS ?+
@@ -19,22 +19,16 @@ Creates a new instance from an interpolated string literal.
 ## Declaration
 
 ```swift
-init(stringInterpolation: DefaultStringInterpolation)
+init(stringInterpolation: Comment.StringInterpolation)
 ```
 
 #### Discussion
 
-Don’t call this initializer directly. It’s used by the compiler when you create a string using string interpolation. Instead, use string interpolation to create a new string by including values, literals, variables, or expressions enclosed in parentheses, prefixed by a backslash (`\(`…`)`).
+Most `StringInterpolation` types will store information about the literals and interpolations appended to them in one or more properties. `init(stringInterpolation:)` should use these properties to initialize the instance.
 
-```None
-let price = 2
-let number = 3
-let message = """
-              If one cookie costs \(price) dollars, \
-              \(number) cookies cost \(price * number) dollars.
-              """
-// message == "If one cookie costs 2 dollars, 3 cookies cost 6 dollars."
-```
+## Parameters
+
+- `stringInterpolation`: An instance of    which has had each segment of the string literal appended   to it.
 
 
 ---

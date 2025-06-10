@@ -1,6 +1,6 @@
 # App Store Receipts
 
-**Framework**: Appstorereceipts
+**Framework**: App Store Receipts
 
 Validate app and In-App Purchase receipts with the App Store.
 

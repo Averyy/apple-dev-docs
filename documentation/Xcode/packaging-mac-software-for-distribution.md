@@ -138,7 +138,7 @@ For products that you distribute directly, test that the product works correctly
 
 For products that you distribute as zip files or disk image files, consider these additional scenarios:
 
-- The person opens your app without moving it to a different location. In this situation, when the person first opens your app, Gatekeeper randomizes its path as returned from [`bundleURL`](https://developer.apple.com/documentation/foundation/nsbundle/1415654-bundleurl) and other API. This measure stops your app from accessing resources outside its bundle (and therefore not sealed by its code signature) using a relative path, as an attacker could control those resources to change your app’s behavior. Gatekeeper only performs this  on first launch, so test the behavior on a subsequent launch too.
+- The person opens your app without moving it to a different location. In this situation, when the person first opens your app, Gatekeeper randomizes its path as returned from [`bundleURL`](https://developer.apple.com/documentation/Foundation/Bundle/bundleURL) and other API. This measure stops your app from accessing resources outside its bundle (and therefore not sealed by its code signature) using a relative path, as an attacker could control those resources to change your app’s behavior. Gatekeeper only performs this  on first launch, so test the behavior on a subsequent launch too.
 - The person moves your app to a different location, then launches it. Gatekeeper doesn’t translocate your app’s path in this case.
 
 ## See Also
@@ -151,4 +151,4 @@ For products that you distribute as zip files or disk image files, consider thes
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/packaging-mac-software-for-distribution)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/packaging-mac-software-for-distribution)*

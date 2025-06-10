@@ -11,8 +11,7 @@ The dictionary to configure DNS settings for the VPN.
 - macOS 10.7+
 - tvOS 17.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- watchOS 10.0+
 
 ## Declaration
 
@@ -34,10 +33,10 @@ object VPN.DNS
   The dictionary that contains PPP settings.
 - [object VPN.Proxies](vpn/proxies-data.dictionary.md)
   The dictionary that contains the Proxies settings.
-- [object VPN.VPN](vpn/vpn-data.dictionary.md)
-  The dictionary that contains VPN, IPSec, and IKEv2 settings.
 - [object VPN.TransparentProxy](vpn/transparentproxy-data.dictionary.md)
   The dictionary to use for a transparent proxy VPN type.
+- [object VPN.VPN](vpn/vpn-data.dictionary.md)
+  The dictionary that contains VPN, IPSec, and IKEv2 settings.
 - [object VPN.VendorConfig](vpn/vendorconfig-data.dictionary.md)
   The vendor-specific configuration dictionary.
 

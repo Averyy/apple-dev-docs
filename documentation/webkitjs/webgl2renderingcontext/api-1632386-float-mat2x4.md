@@ -1,6 +1,6 @@
 # FLOAT_MAT2x4
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

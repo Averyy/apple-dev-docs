@@ -1,6 +1,6 @@
 # contains(where:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns a Boolean value indicating whether the sequence contains an element that satisfies the given predicate.

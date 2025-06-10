@@ -1,6 +1,6 @@
 # terminate()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Terminates any running instance of the application.

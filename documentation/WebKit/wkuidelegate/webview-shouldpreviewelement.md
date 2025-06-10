@@ -1,6 +1,6 @@
 # webView(_:shouldPreviewElement:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Determines whether the given element should show a preview.

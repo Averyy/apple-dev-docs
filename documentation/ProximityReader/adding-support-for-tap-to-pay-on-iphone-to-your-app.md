@@ -10,8 +10,6 @@ Tap to Pay on iPhone lets an app use the person’s iPhone to read contactless p
 
 > ❗ **Important**: Apps must have the appropriate entitlements to use Tap to Pay on iPhone. For more information, see [`Setting up Tap to Pay on iPhone`](setting-up-the-entitlement-for-tap-to-pay-on-iphone.md).
 
-Apps must have the appropriate entitlements to use Tap to Pay on iPhone. For more information, see [`Setting up Tap to Pay on iPhone`](setting-up-the-entitlement-for-tap-to-pay-on-iphone.md).
-
 The region or payment service provider may require a specific iOS version for merchants using Tap to Pay on iPhone. Make sure merchants are aware of any restrictions as part of your app materials.
 
 - For a list of supported regions and payment service providers, see [`https://developer.apple.com/tap-to-pay/#regions`](https://developer.apple.comhttps://developer.apple.com/tap-to-pay/#regions).
@@ -111,8 +109,6 @@ If the merchant closes your app while configuration is in progress, the [`prepar
 
 > ❗ **Important**: When your app goes into the background, the current session ends. When that happens, set any variables that contain the session to `nil`. When your app returns to the foreground, call [`prepare(using:)`](paymentcardreader/prepare(using:).md) every time to create a new session.
 
-When your app goes into the background, the current session ends. When that happens, set any variables that contain the session to `nil`. When your app returns to the foreground, call [`prepare(using:)`](paymentcardreader/prepare(using:).md) every time to create a new session.
-
 ##### Present the Ui to Request Someones Payment Details
 
 Once you have a [`PaymentCardReaderSession`](paymentcardreadersession.md) you can use it to display a sheet to the merchant’s customer asking them for their payment method. The sheet displays a standard system payment UI and waits for the customer to present their card or other payment method to the merchant’s iPhone. As soon as the iPhone collects the payment information, the sheet closes and the session returns a [`PaymentCardReadResult`](paymentcardreadresult.md) to your app. If the sheet wasn’t able to collect a payment information, it returns a [`PaymentCardReaderSession.ReadError`](paymentcardreadersession/readerror.md) to let you know that a problem occurred. Make sure your app handles the different types of errors that can occur for transactions.
@@ -160,8 +156,6 @@ A card issuer can also require a person to enter a PIN to complete a transaction
 
 > ❗ **Important**: After you read a person’s payment card data, you have only 55 seconds to call [`capturePIN(using:cardReaderTransactionID:)`](paymentcardreadersession/capturepin(using:cardreadertransactionid:).md) to capture the person’s PIN. If you don’t call the method within this timeframe, the method returns [`PaymentCardReaderSession.ReadError.pinNotAllowed`](paymentcardreadersession/readerror/pinnotallowed.md).
 
-After you read a person’s payment card data, you have only 55 seconds to call [`capturePIN(using:cardReaderTransactionID:)`](paymentcardreadersession/capturepin(using:cardreadertransactionid:).md) to capture the person’s PIN. If you don’t call the method within this timeframe, the method returns [`PaymentCardReaderSession.ReadError.pinNotAllowed`](paymentcardreadersession/readerror/pinnotallowed.md).
-
 If a read operation requires a separate PIN capture, the payment service provider must provide a secure PIN token for that specific operation. Use this token to create a [`PaymentCardReaderSession.PINToken`](paymentcardreadersession/pintoken.md) structure and display the capture UI. The following method captures the PIN for a previous read operation.
 
 ```None
@@ -194,8 +188,6 @@ extension MyPaymentProcessor {
 ```
 
 > ❗ **Important**: When capturing a PIN from a merchant’s customer, do not display any correlatable data in an unsecure manner. A nonexhaustive list of correlatable data includes: phone numbers, email addresses, last 4 digits of payment cards with the expiry date, and so on. If you must display any correlatable data during PIN capture, the best practice is to show only a portion of the data. For example, show only the last 4 digits of the person’s phone number: XXX-XXX-1234.
-
-When capturing a PIN from a merchant’s customer, do not display any correlatable data in an unsecure manner. A nonexhaustive list of correlatable data includes: phone numbers, email addresses, last 4 digits of payment cards with the expiry date, and so on. If you must display any correlatable data during PIN capture, the best practice is to show only a portion of the data. For example, show only the last 4 digits of the person’s phone number: XXX-XXX-1234.
 
 ##### Turn Off Card Reader Functionality When Not in Use
 

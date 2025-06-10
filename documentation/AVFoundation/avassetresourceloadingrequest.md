@@ -70,6 +70,7 @@ When an [`AVURLAsset`](avurlasset.md) object needs help loading a resource, it a
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

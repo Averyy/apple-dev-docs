@@ -38,6 +38,7 @@ struct HashedAuthenticationCode<H> where H : HashFunction
 - [Hashable](../Swift/Hashable.md)
 - [MessageAuthenticationCode](messageauthenticationcode.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

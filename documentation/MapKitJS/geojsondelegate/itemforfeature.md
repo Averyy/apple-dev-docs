@@ -11,7 +11,10 @@ Overrides a feature.
 ## Declaration
 
 ```swift
-optional(mapkit.Annotation|mapkit.Overlay|(mapkit.Annotation|mapkit.Overlay)[]) itemForFeature();
+optional(mapkit.Annotation|mapkit.Overlay|(mapkit.Annotation|mapkit.Overlay)[]) itemForFeature(
+	mapkit.Annotation|mapkit.Overlay|mapkit.ItemCollection item,
+	Object geoJSON
+);
 ```
 
 #### Return Value

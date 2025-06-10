@@ -10,8 +10,6 @@ The API Validation layer checks for code that calls the Metal API incorrectly, i
 
 > ❗ **Important**: The API Validation layer has a small, but measureable, impact on CPU performance.
 
-The API Validation layer has a small, but measureable, impact on CPU performance.
-
 ##### Enable Api Validation in Xcode
 
 Follow these steps to enable API Validation using the runtime diagnostics options in the scheme settings:

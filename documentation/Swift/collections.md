@@ -11,6 +11,8 @@ Store and organize data using arrays, dictionaries, sets, and other data structu
   An ordered, random-access collection.
 - [struct Dictionary](dictionary.md)
   A collection whose elements are key-value pairs.
+- [struct InlineArray](inlinearray.md)
+  A fixed-size array.
 ### Sets
 - [struct Set](set.md)
   An unordered collection of unique elements.

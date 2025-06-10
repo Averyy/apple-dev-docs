@@ -1,6 +1,6 @@
 # add(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Adds an observer to the cookie store.

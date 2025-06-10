@@ -7,8 +7,6 @@ The schedule for turning the device on or off.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,7 +16,7 @@ object EnergySaver.Com.apple.EnergySaver.desktop.Schedule
 
 ## Topics
 
-### Profiles
+### Objects
 - [object EnergySaver.Com.apple.EnergySaver.desktop.Schedule.RepeatingPowerOff](energysaver/com.apple.energysaver.desktop.schedule-data.dictionary/repeatingpoweroff-data.dictionary.md)
   The triggers for turning the device off.
 - [object EnergySaver.Com.apple.EnergySaver.desktop.Schedule.RepeatingPowerOn](energysaver/com.apple.energysaver.desktop.schedule-data.dictionary/repeatingpoweron-data.dictionary.md)
@@ -32,10 +30,6 @@ object EnergySaver.Com.apple.EnergySaver.desktop.Schedule
   The laptop AC power energy-saver settings.
 - [object EnergySaver.Com.apple.EnergySaver.portable.BatteryPower](energysaver/com.apple.energysaver.portable.batterypower-data.dictionary.md)
   The laptop battery power energy-saver settings.
-- [object EnergySaver.Com.apple.EnergySaver.desktop.Schedule.RepeatingPowerOff](energysaver/com.apple.energysaver.desktop.schedule-data.dictionary/repeatingpoweroff-data.dictionary.md)
-  The triggers for turning the device off.
-- [object EnergySaver.Com.apple.EnergySaver.desktop.Schedule.RepeatingPowerOn](energysaver/com.apple.energysaver.desktop.schedule-data.dictionary/repeatingpoweron-data.dictionary.md)
-  The triggers for turning the device on.
 
 
 ---

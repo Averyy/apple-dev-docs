@@ -1,6 +1,6 @@
 # webView(_:shouldBeginEditingIn:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns whether the user is allowed to edit a range of content in a web view.

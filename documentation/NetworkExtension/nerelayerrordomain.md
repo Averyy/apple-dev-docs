@@ -21,7 +21,7 @@ let NERelayErrorDomain: String
 
 #### Discussion
 
-Match this constant to the [`domain`](https://developer.apple.com/documentation/foundation/nserror/1413924-domain) of an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) encountered when calling methods on [`NERelayManager`](nerelaymanager.md). The [`NERelayManagerError`](nerelaymanagererror.md) enumeration defines possible [`code`](https://developer.apple.com/documentation/foundation/nserror/1409165-code) values for these errors.
+Match this constant to the [`domain`](https://developer.apple.com/documentation/Foundation/NSError/domain) of an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) encountered when calling methods on [`NERelayManager`](nerelaymanager.md). The [`NERelayManagerError`](nerelaymanagererror.md) enumeration defines possible [`code`](https://developer.apple.com/documentation/Foundation/NSError/code) values for these errors.
 
 ## See Also
 

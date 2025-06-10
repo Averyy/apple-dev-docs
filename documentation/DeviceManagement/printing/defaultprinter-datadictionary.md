@@ -7,8 +7,6 @@ A default printer for the user.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,8 +18,6 @@ object Printing.DefaultPrinter
 
 - [object Printing.UserPrinterList](printing/userprinterlist-data.dictionary.md)
   A list of printer dictionaries.
-- [object Printing.UserPrinterList.Printer](printing/userprinterlist-data.dictionary/printer-data.dictionary.md)
-  A printer dictionary.
 
 
 ---

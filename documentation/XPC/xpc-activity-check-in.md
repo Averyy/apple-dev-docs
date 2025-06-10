@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_CHECK_IN
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A constant to check in with the system for a previously registered activity using the same identifier.

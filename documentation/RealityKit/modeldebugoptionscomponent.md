@@ -10,6 +10,7 @@ A component that changes how RealityKit renders its entity to help with debuggin
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -22,7 +23,7 @@ struct ModelDebugOptionsComponent
 
 Attaching a `ModelDebugOptionsComponent` to a [`ModelEntity`](modelentity.md) tells RealityKit to change the way it renders that entity based on a specified [`visualizationMode`](modeldebugoptionscomponent/visualizationmode-swift.property.md). This component isolates individual parts of the rendering process, such as the entity’s transparency or roughness, and displays surface color to help identify visual anomalies.
 
-To use this component, create a `ModelDebugOptionsComponent` and set its [`visualizationMode`](modeldebugoptionscomponent/visualizationmode-swift.property.md) to the desired value. Then, set the component as the entity’s [`modelDebugOptions`](modelentity/modeldebugoptions.md) property:
+To use this component, create a `ModelDebugOptionsComponent` and set its [`visualizationMode`](modeldebugoptionscomponent/visualizationmode-swift.property.md) to the desired value. Then, set the component as the entity’s `ModelEntity/modelDebugOptions` property:
 
 ```swift
 if let robot = anchor.findEntity(named: "Robot") as? ModelEntity {
@@ -86,11 +87,6 @@ func debugLightingDiffuseButtonCallback() {
   The part of the rendering process to display as the entity’s surface texture.
 - [ModelDebugOptionsComponent.VisualizationMode](modeldebugoptionscomponent/visualizationmode-swift.enum.md)
   A mode that specifies the portion of the rendering process to isolate and display for debugging.
-### Registering the component
-- [static func registerComponent()](modeldebugoptionscomponent/registercomponent.md)
-  Registers a new component type.
-### Default Implementations
-- [Component Implementations](modeldebugoptionscomponent/component-implementations.md)
 
 ## Relationships
 
@@ -107,6 +103,8 @@ func debugLightingDiffuseButtonCallback() {
   A component that controls the opacity of an entity and its descendants.
 - [struct AdaptiveResolutionComponent](adaptiveresolutioncomponent.md)
   A component that provides the suggested pixels per meter necessary to render an object.
+- [struct MeshInstancesComponent](meshinstancescomponent.md)
+  A component that performs GPU instancing on the ModelComponent on the same Entity.
 
 
 ---

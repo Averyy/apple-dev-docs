@@ -64,6 +64,14 @@ Text("Some additional information...")
   A value with a modifier applied to it.
 - [protocol EnvironmentalModifier](environmentalmodifier.md)
   A modifier that must resolve to a concrete modifier in an environment before use.
+- [struct ManipulableModifier](manipulablemodifier.md)
+- [struct ManipulableResponderModifier](manipulablerespondermodifier.md)
+- [struct ManipulableTransformBindingModifier](manipulabletransformbindingmodifier.md)
+- [struct ManipulationGeometryModifier](manipulationgeometrymodifier.md)
+- [struct ManipulationGestureModifier](manipulationgesturemodifier.md)
+- [struct ManipulationUsingGestureStateModifier](manipulationusinggesturestatemodifier.md)
+- [enum Manipulable](manipulable.md)
+  A namespace for various manipulable related types.
 
 
 ---

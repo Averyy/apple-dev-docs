@@ -1,6 +1,6 @@
 # webView(_:didFinish:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the delegate that navigation is complete.

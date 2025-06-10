@@ -18,8 +18,6 @@ Use this endpoint to add localized app information for a new locale. Be sure to 
 
 > ❗ **Important**:  If the app store version and the app info don’t have the same set of localizations, you will receive an erorr when you submit the version to the App Store.
 
- If the app store version and the app info don’t have the same set of localizations, you will receive an erorr when you submit the version to the App Store.
-
 ##### Add Localized App Information in Us English
 
 ## See Also

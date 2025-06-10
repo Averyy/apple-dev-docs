@@ -24,8 +24,6 @@ Alter the device’s settings with caution, as extreme changes can affect ARKit�
 
 > ❗ **Important**:  This property is `nil` on devices that aren’t equiped with an ultra-wide camera.
 
- This property is `nil` on devices that aren’t equiped with an ultra-wide camera.
-
 ## See Also
 
 - [var videoFormat: ARConfiguration.VideoFormat](arconfiguration/videoformat-swift.property.md)

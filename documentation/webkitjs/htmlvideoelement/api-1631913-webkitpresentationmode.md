@@ -1,6 +1,6 @@
 # webkitPresentationMode
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A property indicating the presentation mode. 

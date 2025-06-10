@@ -1,6 +1,6 @@
 # find(_:configuration:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Searches for the specified string in the web view’s content.

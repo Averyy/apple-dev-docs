@@ -28,15 +28,11 @@ In Swift, this object bridges to [`DateComponents`](datecomponents.md); use [`NS
 
 > ❗ **Important**:  An [`NSDateComponents`](nsdatecomponents.md) object is meaningless in itself; you need to know what calendar it is interpreted against, and you need to know whether the values are absolute values of the units, or quantities of the units.
 
- An [`NSDateComponents`](nsdatecomponents.md) object is meaningless in itself; you need to know what calendar it is interpreted against, and you need to know whether the values are absolute values of the units, or quantities of the units.
-
 An instance of [`NSDateComponents`](nsdatecomponents.md) is not responsible for answering questions about a date beyond the information with which it was initialized. For example, if you initialize one with May 4, 2017, its weekday is [`NSDateComponentUndefined`](nsdatecomponentundefined.md), not Thursday. To get the correct day of the week, you must create a suitable instance of [`NSCalendar`](nscalendar.md), create an [`NSDate`](nsdate.md) object using [`date(from:)`](nscalendar/date(from:).md) and then use [`components(_:from:)`](nscalendar/components(_:from:).md) to retrieve the weekday—as illustrated in the following example.
 
 For more details, see [`Calendars, Date Components, and Calendar Units`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/Articles/dtCalendars.html#//apple_ref/doc/uid/TP40003470) in [`Date and Time Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html#//apple_ref/doc/uid/10000039i).
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`DateComponents`](datecomponents.md) structure, which bridges to the [`NSDateComponents`](nsdatecomponents.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
-
- The Swift overlay to the Foundation framework provides the [`DateComponents`](datecomponents.md) structure, which bridges to the [`NSDateComponents`](nsdatecomponents.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
 
 ## Topics
 

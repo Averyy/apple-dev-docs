@@ -1,6 +1,6 @@
 # WebKit JS Enumerations
 
-**Framework**: Webkitjs
+**Framework**: WebKit JS
 
 ## Topics
 

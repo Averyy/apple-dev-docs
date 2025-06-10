@@ -1,6 +1,6 @@
 # webView(_:requestMediaCapturePermissionFor:initiatedByFrame:type:decisionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Determines whether a web resource, which the security origin object describes, can access to the device’s microphone audio and camera video.

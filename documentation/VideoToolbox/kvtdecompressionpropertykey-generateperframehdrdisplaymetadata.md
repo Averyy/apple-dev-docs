@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_GeneratePerFrameHDRDisplayMetadata
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A key that indicates to generate per frame HDR Metadata and attach it to the resulting decoded pixel buffers.

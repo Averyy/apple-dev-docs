@@ -42,6 +42,19 @@ The package plug-in may specify the executable or binary targets that provide th
 - `sources`: The source files in the plug-in target.
 - `packageAccess`: Allows access to package symbols from other targets in the package.
 
+## See Also
+
+- [var pluginCapability: Target.PluginCapability?](target/plugincapability-swift.property.md)
+  The capability provided by a package plug-in target.
+- [Target.PluginCapability](target/plugincapability-swift.enum.md)
+  The different types of capability that a plug-in can provide.
+- [enum PluginCommandIntent](plugincommandintent.md)
+  The intended use case of the command plug-in.
+- [enum PluginPermission](pluginpermission.md)
+  The type of permission a plug-in requires.
+- [static func plugin(name: String, capability: Target.PluginCapability, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?) -> Target](target/plugin(name:capability:dependencies:path:exclude:sources:).md)
+  Defines a new package plugin target.
+
 
 ---
 

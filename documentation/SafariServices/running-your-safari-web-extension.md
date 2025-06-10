@@ -1,6 +1,6 @@
 # Running your Safari web extension
 
-**Framework**: Safariservices
+**Framework**: Safari Services
 
 Install and update your extension in Safari as you make changes in development.
 
@@ -108,4 +108,4 @@ To deploy changes to your extension after installing it the first time, choose P
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/running-your-safari-web-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/running-your-safari-web-extension)*

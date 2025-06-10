@@ -36,14 +36,6 @@ The reason for this API using a `ResultHandler` rather than returning values dir
     call identifier is incorrect, corrupted, or simply not present in this process.
 ```
 
-If the target location, invocation argument decoding, or some other mismatch between them happens. In general, this method is allowed to throw in any situation that might otherwise result in an illegal or unexpected invocation being performed.
-
-```swift
-    Throws ``ExecuteDistributedTargetMissingAccessorError`` if the `target`
-    does not resolve to a valid distributed function accessor, i.e. the
-    call identifier is incorrect, corrupted, or simply not present in this process.
-```
-
 ## Parameters
 
 - `actor`: Actor on which the remote call should invoke the target

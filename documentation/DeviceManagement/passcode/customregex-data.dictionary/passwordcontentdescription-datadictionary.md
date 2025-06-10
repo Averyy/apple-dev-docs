@@ -6,13 +6,7 @@
 Descriptions of the policy, localized to supported locales.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- macOS 10.7+
-- visionOS 2.0+
-- watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- macOS 14.0+
 
 ## Declaration
 

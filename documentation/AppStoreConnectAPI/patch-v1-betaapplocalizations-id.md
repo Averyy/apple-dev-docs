@@ -16,8 +16,6 @@ Update the localized information for a specific beta app and locale.
 
 > ❗ **Important**:  A description is required for all `betaAppLocalizations` before you can submit to beta app review. After you have added data to the fields for this resource, you can change that data, but you cannot remove data.
 
- A description is required for all `betaAppLocalizations` before you can submit to beta app review. After you have added data to the fields for this resource, you can change that data, but you cannot remove data.
-
 ## See Also
 
 - [Create a Beta App Localization](post-v1-betaapplocalizations.md)

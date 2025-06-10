@@ -47,8 +47,6 @@ A corresponding [`AdImpressionResponse`](adimpressionresponse.md) to send in res
 
 > ❗ **Important**:  The `attributionSourceNonce` in a web ad, the `source_nonce` in an [`AdImpressionRequest`](adimpressionrequest.md), and the `nonce` in an [`AdImpressionResponse`](adimpressionresponse.md) all represent the same UUID, but the encoding varies.
 
- The `attributionSourceNonce` in a web ad, the `source_nonce` in an [`AdImpressionRequest`](adimpressionrequest.md), and the `nonce` in an [`AdImpressionResponse`](adimpressionresponse.md) all represent the same UUID, but the encoding varies.
-
 The device uses the same encoding as `attributionSourceNonce` for the `source_nonce` value in the [`AdImpressionRequest`](adimpressionrequest.md). However, you use the dash-separated string representation of the UUID for the `nonce` value in an [`AdImpressionResponse`](adimpressionresponse.md).
 
 ## Request Body

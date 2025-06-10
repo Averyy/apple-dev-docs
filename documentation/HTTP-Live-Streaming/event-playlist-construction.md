@@ -46,8 +46,6 @@ These are the tags used in the event playlist example:
 
 > ❗ **Important**: Always use floating-point `EXTINF` durations (supported in protocol version 3). This allows the client to minimize round-off errors when seeking within the stream.
 
-Always use floating-point `EXTINF` durations (supported in protocol version 3). This allows the client to minimize round-off errors when seeking within the stream.
-
 You can’t remove anything from the playlist when using the `EVENT` tag; you may only append new segments to the end of the file. New segments are added to the end of the file until the event has concluded, at which time the `EXT-X-ENDLIST` tag is appended. The following example shows the same playlist after it’s been updated with new media URIs and the event has ended:
 
 ```swift

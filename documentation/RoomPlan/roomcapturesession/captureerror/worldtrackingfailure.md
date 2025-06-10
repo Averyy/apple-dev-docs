@@ -9,7 +9,7 @@ An error that indicates an issue with the underlying ARKit session.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

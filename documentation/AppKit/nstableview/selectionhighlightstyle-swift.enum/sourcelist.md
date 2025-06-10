@@ -1,6 +1,6 @@
 # NSTableView.SelectionHighlightStyle.sourceList
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: case
 
 **Availability**:
@@ -26,4 +26,4 @@ The source list style of NSTableView. On 10.5, a light blue gradient is used to 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstableview/selectionhighlightstyle-swift.enum/sourcelist)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstableview/selectionhighlightstyle-swift.enum/sourcelist)*

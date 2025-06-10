@@ -29,6 +29,10 @@ For design guidance, see [`Toolbars`](https://developer.apple.com/design/Human-I
   Conforming types represent items that can be placed in various locations in a toolbar.
 - [struct ToolbarContentBuilder](toolbarcontentbuilder.md)
   Constructs a toolbar item set from multi-expression closures.
+- [struct ToolbarSpacer](toolbarspacer.md)
+  A standard space item in toolbars.
+- [struct DefaultToolbarItem](defaulttoolbaritem.md)
+  A toolbar item that represents a system component.
 ### Populating a customizable toolbar
 - [func toolbar<Content>(id: String, content: () -> Content) -> some View](view/toolbar(id:content:).md)
   Populates the toolbar or navigation bar with the specified items, allowing for user customization.
@@ -38,6 +42,8 @@ For design guidance, see [`Toolbars`](https://developer.apple.com/design/Human-I
   The customization behavior of customizable toolbar content.
 - [struct ToolbarCustomizationOptions](toolbarcustomizationoptions.md)
   Options that influence the default customization behavior of customizable toolbar content.
+- [struct SearchToolbarBehavior](searchtoolbarbehavior.md)
+  The behavior of a search field in a toolbar.
 ### Removing default items
 - [func toolbar(removing: ToolbarDefaultItemKind?) -> some View](view/toolbar(removing:).md)
   Remove a toolbar item present by default
@@ -52,6 +58,7 @@ For design guidance, see [`Toolbars`](https://developer.apple.com/design/Human-I
   Specifies the preferred visibility of backgrounds on a bar managed by SwiftUI.
 - [struct ToolbarPlacement](toolbarplacement.md)
   The placement of a toolbar.
+- [struct ContentToolbarPlacement](contenttoolbarplacement.md)
 ### Specifying the role of toolbar content
 - [func toolbarRole(ToolbarRole) -> some View](view/toolbarrole(_:).md)
   Configures the semantic role for the content populating the toolbar.
@@ -72,6 +79,8 @@ For design guidance, see [`Toolbars`](https://developer.apple.com/design/Human-I
   The label style to apply to controls within a toolbar.
 - [struct ToolbarLabelStyle](toolbarlabelstyle.md)
   The label style of a toolbar.
+- [struct SpacerSizing](spacersizing.md)
+  A type which defines how spacers should size themselves.
 ### Configuring the toolbar title display mode
 - [func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View](view/toolbartitledisplaymode(_:).md)
   Configures the toolbar title display mode for this view.
@@ -83,7 +92,7 @@ For design guidance, see [`Toolbars`](https://developer.apple.com/design/Human-I
 - [struct ToolbarTitleMenu](toolbartitlemenu.md)
   The title menu of a toolbar.
 ### Creating an ornament
-- [func ornament<Content>(visibility: Visibility, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment, ornament: () -> Content) -> some View](view/ornament(visibility:attachmentanchor:contentalignment:ornament:).md)
+- [func ornament(visibility:attachmentAnchor:contentAlignment:ornament:)](view/ornament(visibility:attachmentanchor:contentalignment:ornament:).md)
   Presents an ornament.
 - [struct OrnamentAttachmentAnchor](ornamentattachmentanchor.md)
   An attachment anchor for an ornament.

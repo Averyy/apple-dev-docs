@@ -1,6 +1,6 @@
 # precipitationChance
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The probability of precipitation during the hour.

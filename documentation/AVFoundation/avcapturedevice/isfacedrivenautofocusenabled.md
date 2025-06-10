@@ -32,8 +32,6 @@ When you finish configuring the device, unlock it by calling its [`unlockForConf
 
 > ❗ **Important**:  Updating the state of this property doesn’t initiate a focus change. After setting a new value, set an appropriate [`focusMode`](avcapturedevice/focusmode-swift.property.md) to apply the change.
 
- Updating the state of this property doesn’t initiate a focus change. After setting a new value, set an appropriate [`focusMode`](avcapturedevice/focusmode-swift.property.md) to apply the change.
-
 ## See Also
 
 - [func isFocusModeSupported(AVCaptureDevice.FocusMode) -> Bool](avcapturedevice/isfocusmodesupported(_:).md)

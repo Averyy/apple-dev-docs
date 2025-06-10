@@ -1,6 +1,6 @@
 # forecast
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The forecast collection.

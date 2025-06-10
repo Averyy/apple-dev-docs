@@ -34,6 +34,7 @@ This is the base class for other acceleration structure descriptors. Don’t use
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Inherited By
+- [MTL4AccelerationStructureDescriptor](mtl4accelerationstructuredescriptor.md)
 - [MTLIndirectInstanceAccelerationStructureDescriptor](mtlindirectinstanceaccelerationstructuredescriptor.md)
 - [MTLInstanceAccelerationStructureDescriptor](mtlinstanceaccelerationstructuredescriptor.md)
 - [MTLPrimitiveAccelerationStructureDescriptor](mtlprimitiveaccelerationstructuredescriptor.md)
@@ -52,8 +53,14 @@ This is the base class for other acceleration structure descriptors. Don’t use
   Simplify data access and improve GPU utilization by storing custom primitive data directly in the acceleration structure.
 - [protocol MTLAccelerationStructure](mtlaccelerationstructure.md)
   A collection of model data for GPU-accelerated intersection of rays with the model.
+- [class MTL4AccelerationStructureDescriptor](mtl4accelerationstructuredescriptor.md)
+  Base class for Metal 4 acceleration structure descriptors.
+- [class MTL4PrimitiveAccelerationStructureDescriptor](mtl4primitiveaccelerationstructuredescriptor.md)
+  Descriptor for a primitive acceleration structure that directly references geometric shapes, such as triangles and bounding boxes.
 - [class MTLPrimitiveAccelerationStructureDescriptor](mtlprimitiveaccelerationstructuredescriptor.md)
   A description of an acceleration structure that contains geometry primitives.
+- [class MTL4InstanceAccelerationStructureDescriptor](mtl4instanceaccelerationstructuredescriptor.md)
+  Descriptor for an instance acceleration structure.
 - [class MTLInstanceAccelerationStructureDescriptor](mtlinstanceaccelerationstructuredescriptor.md)
   A description of an acceleration structure that derives from instances of primitive acceleration structures.
 - [protocol MTLAccelerationStructureCommandEncoder](mtlaccelerationstructurecommandencoder.md)

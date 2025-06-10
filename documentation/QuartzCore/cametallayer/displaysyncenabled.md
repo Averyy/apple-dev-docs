@@ -6,8 +6,6 @@
 A Boolean value that determines whether the layer synchronizes its updates to the display’s refresh rate.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.13+
 

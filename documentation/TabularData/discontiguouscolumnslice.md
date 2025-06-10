@@ -221,6 +221,7 @@ let slice = column.filter({ $0.isMultiple(of: 2) })
 - [MutableCollection](../Swift/MutableCollection.md)
 - [OptionalColumnProtocol](optionalcolumnprotocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

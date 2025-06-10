@@ -64,6 +64,9 @@ enum Code
   An error indicating that there isn’t a registered domain for the corresponding identifier.
 - [NSFileProviderError.Code.providerDomainTemporarilyUnavailable](nsfileprovidererror/code/providerdomaintemporarilyunavailable.md)
   An error indicating that the system is unable to service requests for the domain temporarily, and you can try again later.
+### Enumeration Cases
+- [NSFileProviderError.Code.localVersionConflictingWithServer](nsfileprovidererror/code/localversionconflictingwithserver.md)
+  Returned by createItemBasedOnTemplate or modifyItem if the provider does not wish to sync the item.
 ### Initializers
 - [init?(rawValue: Int)](nsfileprovidererror/code/init(rawvalue:).md)
 
@@ -75,6 +78,7 @@ enum Code
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

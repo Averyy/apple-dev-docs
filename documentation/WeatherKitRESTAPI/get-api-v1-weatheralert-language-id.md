@@ -1,6 +1,6 @@
 # GET /api/v1/weatherAlert/{language}/{id}
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: httpRequest
 
 Receive an active weather alert.

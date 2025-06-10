@@ -1,6 +1,6 @@
 # Downloading Information (Legacy)
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 ## Topics
 

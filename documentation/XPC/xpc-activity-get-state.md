@@ -1,6 +1,6 @@
 # xpc_activity_get_state(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the current state of an activity.

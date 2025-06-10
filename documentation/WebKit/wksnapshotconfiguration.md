@@ -1,6 +1,6 @@
 # WKSnapshotConfiguration
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 The configuration data to use when generating an image from a web view’s contents.

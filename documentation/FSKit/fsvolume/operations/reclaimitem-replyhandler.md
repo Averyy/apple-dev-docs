@@ -1,6 +1,6 @@
 # reclaimItem(_:replyHandler:)
 
-**Framework**: Fskit  
+**Framework**: FSKit  
 **Kind**: method  
 **Required**: Yes
 

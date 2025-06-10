@@ -1,6 +1,6 @@
 # webView(_:drawFooterIn:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Draws the web view’s footer in the specified rectangle.

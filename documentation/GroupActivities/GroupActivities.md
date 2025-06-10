@@ -1,6 +1,6 @@
 # Group Activities
 
-**Framework**: Groupactivities  
+**Framework**: Group Activities  
 **Kind**: module
 
 Create app-specific activities your users can share and experience together.
@@ -58,17 +58,28 @@ This framework leverages the FaceTime infrastructure to synchronize your app’s
 - [struct Participant](participant.md)
   An active participant in a group session.
 ### Spatial activities
+- [Configure your visionOS app for sharing with people nearby](configure-your-app-for-sharing-with-people-nearby.md)
+  Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
 - [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
 - [class SystemCoordinator](systemcoordinator.md)
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
 - [SystemCoordinator.ParticipantState](systemcoordinator/participantstate.md)
   A structure that tells you whether a participant supports a shared simulation space for the current activity.
+- [nonisolated func groupActivityAssociation(_ kind: GroupActivityAssociationKind?) -> some View
+](../SwiftUI/View/groupActivityAssociation(_:).md)
+  Specifies how a view should be associated with the current SharePlay group activity.
+- [class GroupActivityAssociationInteraction](groupactivityassociationinteraction.md)
+  An interaction configures a view’s association with the current SharePlay group activity.
+- [struct GroupActivityAssociationKind](groupactivityassociationkind.md)
+  An association a user-interface element can have with a SharePlay group activity.
 ### Custom spatial templates
 - [Building a guessing game for visionOS](building-a-guessing-game-for-visionos.md)
   Create a team-based guessing game for visionOS using Group Activities.
 - [protocol SpatialTemplate](spatialtemplate.md)
   An interface you use to create custom arrangements of spatial Personas in a scene.
+- [struct SpatialTemplatePreference](spatialtemplatepreference.md)
+  A structure that specifies the preferred arrangement of participant spatial Personas in a shared simulation space.
 - [struct SpatialTemplateSeatElement](spatialtemplateseatelement.md)
   A spatial template element that represents a seat for a participant in the activity.
 - [protocol SpatialTemplateElement](spatialtemplateelement.md)
@@ -89,9 +100,6 @@ This framework leverages the FaceTime infrastructure to synchronize your app’s
 ### System status
 - [class GroupStateObserver](groupstateobserver.md)
   An object that contains information about the system’s ability to start SharePlay experiences.
-### Structures
-- [struct SpatialTemplatePreference](spatialtemplatepreference.md)
-  A structure that specifies the preferred arrangement of participant spatial Personas in a shared simulation space.
 
 
 ---

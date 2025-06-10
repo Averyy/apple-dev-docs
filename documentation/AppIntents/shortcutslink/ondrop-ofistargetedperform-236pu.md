@@ -8,7 +8,7 @@ Defines the destination for a drag and drop operation with the same size and pos
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst 13.4+
+- Mac Catalyst ?+
 - macOS 10.15+
 - visionOS 1.0+
 
@@ -22,6 +22,12 @@ func onDrop(of supportedTypes: [String], isTargeted: Binding<Bool>?, perform act
 #### Return Value
 
 A view that provides a drop destination for a drag operation of the specified types.
+
+#### Discussion
+
+The drop destination is the same size and position as this view.
+
+Make sure to start loading the contents of `NSItemProvider` instances within the scope of the `action` closure. Do not perform loading asynchronously on a different actor. Loading the contents may finish later, but it must start here. For security reasons, the drop receiver can access the dropped payload only before this closure returns.
 
 ## Parameters
 

@@ -71,8 +71,8 @@ struct TextEditingView: View {
 - [init(text: Binding<String>)](texteditor/init(text:).md)
   Creates a plain text editor.
 ### Initializers
-- [init(text: Binding<String>, selection: Binding<TextSelection?>)](texteditor/init(text:selection:).md)
-  Creates a plain text editor that captures the current selection.
+- [init(text:selection:)](texteditor/init(text:selection:).md)
+  Creates a styled text editor.
 
 ## Relationships
 
@@ -81,6 +81,8 @@ struct TextEditingView: View {
 
 ## See Also
 
+- [Building rich SwiftUI text experiences](building-rich-swiftui-text-experiences.md)
+  Build an editor for formatted text using SwiftUI text editor views and attributed strings.
 - [struct TextField](textfield.md)
   A control that displays an editable text interface.
 - [func textFieldStyle<S>(S) -> some View](view/textfieldstyle(_:).md)

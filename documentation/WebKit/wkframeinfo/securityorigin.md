@@ -1,6 +1,6 @@
 # securityOrigin
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The frame’s security origin.

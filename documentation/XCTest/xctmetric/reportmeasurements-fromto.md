@@ -1,6 +1,6 @@
 # reportMeasurements(from:to:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method  
 **Required**: Yes
 

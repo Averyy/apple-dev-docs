@@ -10,8 +10,8 @@ Add an existing in-app purchase or auto-renewable subscription to the promoted i
 
 ## Mentions
 
-- [Managing in-app purchases](managing-in-app-purchases.md)
 - [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
+- [Managing in-app purchases](managing-in-app-purchases.md)
 
 ## See Also
 

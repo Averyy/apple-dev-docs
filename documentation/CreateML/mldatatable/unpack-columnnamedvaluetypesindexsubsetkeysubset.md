@@ -28,7 +28,7 @@ A new data table.
 This function performs the inverse of [`pack(columnsNamed:to:type:filling:)`](mldatatable/pack(columnsnamed:to:type:filling:).md).
 
 - columnNamed: The name of the column to unpack. The underlying type of the column must be either [`MLDataValue.SequenceType`](mldatavalue/sequencetype.md) or [`MLDataValue.DictionaryType`](mldatavalue/dictionarytype.md).
-- valueTypes: An array of the underlying types for the new, unpacked columns. If `nil`, the method infers the underlying types in the sequence or dictionary. > **Note**: If not `nil`, the method unpacks `valueTypes.count` columns. If not `nil`, the method unpacks `valueTypes.count` columns.
+- valueTypes: An array of the underlying types for the new, unpacked columns. If `nil`, the method infers the underlying types in the sequence or dictionary. > **Note**: If not `nil`, the method unpacks `valueTypes.count` columns.
 - indexSubset: The subset of indicies to unpack from a specified sequence-typed column. If `nil`, the method unpacks all indicies.
 - keySubset: The subset of keys to unpack from a specified dictionary-typed column. If `nil`, the method unpacks all keys.
 

@@ -10,6 +10,7 @@ A set of masks that determine whether entities can collide during simulations.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -36,13 +37,6 @@ Use Collision filters in combination with collision groups to define which entit
   The collision group or groups, stored as a bit mask, to which the entity belongs.
 - [var mask: CollisionGroup](collisionfilter/mask.md)
   The collision group or groups, stored as a bitmask, with which the entity can collide.
-### Comparing collision filters
-- [static func == (CollisionFilter, CollisionFilter) -> Bool](collisionfilter/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](collisionfilter/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Equatable Implementations](collisionfilter/equatable-implementations.md)
 
 ## Relationships
 

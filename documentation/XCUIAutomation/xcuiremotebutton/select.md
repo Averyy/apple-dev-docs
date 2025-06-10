@@ -1,6 +1,6 @@
 # XCUIRemoteButton.select
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents the select button on a remote.

@@ -19,13 +19,12 @@ func CVMetalBufferCacheFlush(_ bufferCache: CVMetalBufferCache, _ options: CVOpt
 
 #### Discussion
 
-```None
-@function   CVMetalBufferCacheFlush
-@abstract   Performs internal housekeeping/recycling operations
-@discussion This call must be made periodically to give the buffer cache a chance to do internal housekeeping operations.
-@param      bufferCache The buffer cache object to flush
-@param      options Currently unused, set to 0.
-```
+This call must be made periodically to give the buffer cache a chance to do internal housekeeping operations.
+
+## Parameters
+
+- `bufferCache`: The buffer cache object to flush
+- `options`: Currently unused, set to 0.
 
 
 ---

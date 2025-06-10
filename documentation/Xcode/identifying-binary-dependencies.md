@@ -37,4 +37,4 @@ The following image shows an app’s expanded Swift package dependencies, includ
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/identifying-binary-dependencies)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/identifying-binary-dependencies)*

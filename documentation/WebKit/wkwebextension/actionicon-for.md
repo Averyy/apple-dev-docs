@@ -1,6 +1,6 @@
 # actionIcon(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the default action icon for the specified size.

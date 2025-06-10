@@ -23,8 +23,6 @@ The default print operation stored by this property is obtained by calling the [
 
 > ❗ **Important**:  This property does not copy the document’s [`printInfo`](nsdocument/printinfo.md) to the PDF printing operation object. Your app should maintain a separate [`NSPrintInfo`](nsprintinfo.md) instance specifically for creating PDFs and assign it to the [`printInfo`](nsprintoperation/printinfo.md) property of the operation object.
 
- This property does not copy the document’s [`printInfo`](nsdocument/printinfo.md) to the PDF printing operation object. Your app should maintain a separate [`NSPrintInfo`](nsprintinfo.md) instance specifically for creating PDFs and assign it to the [`printInfo`](nsprintoperation/printinfo.md) property of the operation object.
-
 ## See Also
 
 - [var printInfo: NSPrintInfo](nsdocument/printinfo.md)

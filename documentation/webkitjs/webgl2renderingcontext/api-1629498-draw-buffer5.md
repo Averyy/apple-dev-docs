@@ -1,6 +1,6 @@
 # DRAW_BUFFER5
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # XCTWaiter.Result.incorrectOrder
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 The waiter’s expectations were not fulfilled in the required order.

@@ -1,6 +1,6 @@
 # Creating an Intents App Extension
 
-**Framework**: Sirikit
+**Framework**: SiriKit
 
 Add and configure an Intents app extension in your Xcode project.
 
@@ -101,4 +101,4 @@ When installing your extension for the first time, Siri may not immediately reco
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/creating-an-intents-app-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/creating-an-intents-app-extension)*

@@ -1,6 +1,6 @@
 # kVTPropertyShouldBeSerializedKey
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Dictionary key to access the serializable status of a property.

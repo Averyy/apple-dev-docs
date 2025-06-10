@@ -1,6 +1,6 @@
 # XPC_ERROR_KEY_DESCRIPTION
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A key for querying an error dictionary to retrieve a string with a human-readable description of the error.
@@ -16,7 +16,8 @@ A key for querying an error dictionary to retrieve a string with a human-readabl
 ## Declaration
 
 ```swift
-let XPC_ERROR_KEY_DESCRIPTION: UnsafePointer<CChar>
+nonisolated
+(unsafe) let XPC_ERROR_KEY_DESCRIPTION: UnsafePointer<CChar>
 ```
 
 ## See Also

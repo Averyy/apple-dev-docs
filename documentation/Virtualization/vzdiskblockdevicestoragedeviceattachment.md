@@ -20,15 +20,11 @@ The disk block device implements a storage attachment by using an actual disk ra
 
 > ⚠️ **Warning**:  Handle the disk passed to this attachment with caution. If the disk has a file system formatted on it, the guest can destroy data in a way that isn’t recoverable.
 
- Handle the disk passed to this attachment with caution. If the disk has a file system formatted on it, the guest can destroy data in a way that isn’t recoverable.
-
 In the following example, a disk device at `/dev/rdisk42` executes the I/O operations directly on that disk rather than through a file system:
 
 By default, only the `root` user can access the disk file handle. Running virtual machines as `root` isn’t recommended. The best practice is to open the file in a separate process that has `root` privileges, then pass the open file descriptor using XPC or a Unix socket to a non-`root` process running Virtualization. For more information about Unix sockets, see [`Streams, Sockets, and Ports`](https://developer.apple.com/documentation/Foundation/streams-sockets-and-ports); for more information on XPC services, see the [`XPC`](https://developer.apple.com/documentation/XPC) framework documentation.
 
 > ❗ **Important**:  You can’t use this method of privilege escalation in apps distributed on the Mac App Store.
-
- You can’t use this method of privilege escalation in apps distributed on the Mac App Store.
 
 ## Topics
 

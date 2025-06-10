@@ -1,6 +1,6 @@
 # IntentConfiguration
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 An object describing the content of a widget that uses a custom intent definition to provide user-configurable options.
@@ -8,8 +8,9 @@ An object describing the content of a widget that uses a custom intent definitio
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -96,6 +97,7 @@ Modifiers let you specify the families your widget supports, and the details sho
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [WidgetConfiguration](../SwiftUI/WidgetConfiguration.md)
 
 ## See Also

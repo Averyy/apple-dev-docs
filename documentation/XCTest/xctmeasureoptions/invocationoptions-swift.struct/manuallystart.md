@@ -1,6 +1,6 @@
 # manuallyStart
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An invocation option that specifies that the test starts taking measurements when the `startMeasuring()` function is called.

@@ -23,6 +23,8 @@ let MKLaunchOptionsDirectionsModeTransit: String
 
 - [let MKLaunchOptionsCameraKey: String](mklaunchoptionscamerakey.md)
   The virtual camera to use for viewing the map.
+- [let MKLaunchOptionsDirectionsModeCycling: String](mklaunchoptionsdirectionsmodecycling.md)
+  Cycling directions between the specified start and end points.
 - [let MKLaunchOptionsDirectionsModeDefault: String](mklaunchoptionsdirectionsmodedefault.md)
   Directions that match the user’s preferred transportation type.
 - [let MKLaunchOptionsDirectionsModeDriving: String](mklaunchoptionsdirectionsmodedriving.md)

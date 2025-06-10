@@ -10,6 +10,7 @@ An object that defines the color of the light an entity emits.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -31,6 +32,9 @@ struct EmissiveColor
   An optional image texture that defines the color of light emission.
 - [var color: UIColor](custommaterial/emissivecolor-swift.struct/color-5hrho.md)
 - [var color: NSColor](custommaterial/emissivecolor-swift.struct/color-9scic.md)
+### Initializers
+- [init(color:texture:)](custommaterial/emissivecolor-swift.struct/init(color:texture:).md)
+  Creates a color of emitted light in macOS.
 
 ## See Also
 

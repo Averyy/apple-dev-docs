@@ -1,6 +1,6 @@
 # Fruta: Building a Feature-Rich App with SwiftUI
 
-**Framework**: Appclip
+**Framework**: App Clips
 
 Create a shared codebase to build a multiplatform app that offers widgets and an App Clip.
 

@@ -28,8 +28,6 @@ Never convert the `value` property into a string directly; always use this metho
 
 > ❗ **Important**:  You may be tempted to write your own formatting code rather than using the `formattedValue` property. Do not do this. Using the built-in support makes it easy to localize the score value into other languages, and provides a string that is consistent with the presentation of your scores in the Game Center app.
 
- You may be tempted to write your own formatting code rather than using the `formattedValue` property. Do not do this. Using the built-in support makes it easy to localize the score value into other languages, and provides a string that is consistent with the presentation of your scores in the Game Center app.
-
 ## See Also
 
 - [var category: String?](gkscore/category.md)

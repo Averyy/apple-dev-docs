@@ -34,6 +34,7 @@ When you perform an action, the system creates a [`RemoteKeylessEntryAction.Exec
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

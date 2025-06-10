@@ -1,0 +1,38 @@
+# topEdgeEffect
+
+**Framework**: UIKit  
+**Kind**: property
+
+The effect for the top edge of the scroll view.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+@MainActor
+var topEdgeEffect: UIScrollEdgeEffect { get }
+```
+
+## See Also
+
+- [var bottomEdgeEffect: UIScrollEdgeEffect](uiscrollview/bottomedgeeffect.md)
+  The effect for the bottom edge of the scroll view.
+- [var leftEdgeEffect: UIScrollEdgeEffect](uiscrollview/leftedgeeffect.md)
+  The effect for the left edge of the scroll view.
+- [var rightEdgeEffect: UIScrollEdgeEffect](uiscrollview/rightedgeeffect.md)
+  The effect for the right edge of the scroll view.
+- [class UIScrollEdgeEffect](uiscrolledgeeffect.md)
+  Properties of the effect on a particular edge of the scroll view.
+- [UIScrollEdgeEffect.Style](uiscrolledgeeffect/style-swift.class.md)
+  Styles for a scroll view’s edge effect.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiscrollview/topedgeeffect)*

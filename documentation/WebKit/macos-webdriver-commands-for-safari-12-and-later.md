@@ -1,6 +1,6 @@
 # macOS WebDriver Commands for Safari 12 and later
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Test your web content using the WebDriver commands supported by Safari 12 and later.
 

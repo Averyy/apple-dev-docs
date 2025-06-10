@@ -1,6 +1,6 @@
 # allElementsBoundByIndex
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 Immediately evaluates the query and returns an array of elements bound by the index of each result.

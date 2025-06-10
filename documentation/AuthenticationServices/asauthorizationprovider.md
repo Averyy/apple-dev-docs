@@ -25,6 +25,7 @@ protocol ASAuthorizationProvider : NSObjectProtocol
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 ### Conforming Types
+- [ASAuthorizationAccountCreationProvider](asauthorizationaccountcreationprovider.md)
 - [ASAuthorizationAppleIDProvider](asauthorizationappleidprovider.md)
 - [ASAuthorizationPasswordProvider](asauthorizationpasswordprovider.md)
 - [ASAuthorizationPlatformPublicKeyCredentialProvider](asauthorizationplatformpublickeycredentialprovider.md)

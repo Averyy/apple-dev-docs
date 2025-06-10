@@ -1,6 +1,6 @@
 # Forecast
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A forecast collection for minute, hourly, and daily forecasts.
@@ -17,7 +17,7 @@ A forecast collection for minute, hourly, and daily forecasts.
 ## Declaration
 
 ```swift
-struct Forecast<Element> where Element : Decodable, Element : Encodable, Element : Equatable
+struct Forecast<Element> where Element : Decodable, Element : Encodable, Element : Equatable, Element : Sendable
 ```
 
 #### Overview
@@ -80,6 +80,8 @@ struct Forecast<Element> where Element : Decodable, Element : Encodable, Element
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

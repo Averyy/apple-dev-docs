@@ -6,8 +6,12 @@
 Initializes a layer with a remote client ID.
 
 **Availability**:
+- iOS ?+
+- iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 

@@ -17,6 +17,16 @@
 let requestReferenceID: String
 ```
 
+## See Also
+
+- [let consistencyToken: String](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/consistencytoken.md)
+- [let description: String](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/description.md)
+- [let displayName: String](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/displayname.md)
+- [let items: [Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item]](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/items.md)
+  The items included in this subscription.
+- [let period: SubscriptionPeriod](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/period.md)
+- [let taxCode: String](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/taxcode.md)
+
 
 ---
 

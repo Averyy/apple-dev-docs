@@ -1,6 +1,6 @@
 # CollisionComponent
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 A component that gives an entity the ability to collide with other entities that also have collision components.
@@ -10,6 +10,7 @@ A component that gives an entity the ability to collide with other entities that
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -50,31 +51,25 @@ The `filter` property defines the entity’s collision filter, which determines 
 ### Setting collision shapes
 - [var shapes: [ShapeResource]](collisioncomponent/shapes.md)
   A collection of shape resources that collectively represent the outer dimensions of an entity for the purposes of collision detection.
-### Registering a component type
-- [static func registerComponent()](collisioncomponent/registercomponent.md)
-  Registers a new component type.
-### Comparing collision components
-- [static func == (CollisionComponent, CollisionComponent) -> Bool](collisioncomponent/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](collisioncomponent/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Structures
-- [CollisionComponent.CollisionOptions](collisioncomponent/collisionoptions-swift.struct.md)
+- [CollisionComponent.CollisionOptions](collisioncomponent/collisionoptions-4wt2q.md)
+  The options set that defines how a collision object reports collisions.
+- [CollisionComponent.CollisionOptions](collisioncomponent/collisionoptions-77s17.md)
   The options set that defines how a collision object reports collisions.
 ### Initializers
-- [init(shapes: [ShapeResource], isStatic: Bool, filter: CollisionFilter)](collisioncomponent/init(shapes:isstatic:filter:).md)
+- [init(shapes:isStatic:filter:)](collisioncomponent/init(shapes:isstatic:filter:).md)
   Creates a collision component.
-- [init(shapes: [ShapeResource], mode: CollisionComponent.Mode, collisionOptions: CollisionComponent.CollisionOptions, filter: CollisionFilter)](collisioncomponent/init(shapes:mode:collisionoptions:filter:).md)
+- [init(shapes:mode:collisionOptions:filter:)](collisioncomponent/init(shapes:mode:collisionoptions:filter:).md)
 ### Instance Properties
-- [var collisionOptions: CollisionComponent.CollisionOptions](collisioncomponent/collisionoptions-swift.property.md)
-- [var isStatic: Bool](collisioncomponent/isstatic.md)
+- [var collisionOptions: CollisionComponent.CollisionOptions](collisioncomponent/collisionoptions-2fpjt.md)
+- [var collisionOptions: CollisionComponent.CollisionOptions](collisioncomponent/collisionoptions-2s5rh.md)
+- [var isStatic: Bool](collisioncomponent/isstatic-6b0k.md)
+  A Boolean value that indicates whether the collider is static.
+- [var isStatic: Bool](collisioncomponent/isstatic-m9el.md)
   A Boolean value that indicates whether the collider is static.
 ### Enumerations
 - [CollisionComponent.Mode](collisioncomponent/mode-swift.enum.md)
   A mode that dictates how much collision data is collected for a given entity.
-### Default Implementations
-- [Component Implementations](collisioncomponent/component-implementations.md)
-- [Equatable Implementations](collisioncomponent/equatable-implementations.md)
 
 ## Relationships
 
@@ -103,4 +98,4 @@ The `filter` property defines the entity’s collision filter, which determines 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/collisioncomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/collisioncomponent)*

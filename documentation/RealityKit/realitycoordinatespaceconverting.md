@@ -17,17 +17,7 @@ protocol RealityCoordinateSpaceConverting
 ## Topics
 
 ### Instance Methods
-- [func convert(Rotation3D, from: some CoordinateSpaceProtocol, to: some RealityCoordinateSpace) -> simd_quatf](realitycoordinatespaceconverting/convert(_:from:to:)-1l9lu.md)
-  Converts a Rotation3D from a defined SwiftUI coordinate space to a quaternion in a RealityKit coordinate space.
-- [func convert(Rect3D, from: some CoordinateSpaceProtocol, to: some RealityCoordinateSpace) -> BoundingBox](realitycoordinatespaceconverting/convert(_:from:to:)-3fumk.md)
-  Converts a Rect3D from a defined SwiftUI coordinate space to a BoundingBox in a RealityKit coordinate space.
-- [func convert(AffineTransform3D, from: some CoordinateSpaceProtocol, to: some RealityCoordinateSpace) -> Transform](realitycoordinatespaceconverting/convert(_:from:to:)-4q0vz.md)
-  Returns a 3D Transform converted from a defined SwiftUI coordinate space to a RealityKit coordinate space.
-- [func convert(Size3D, from: some CoordinateSpaceProtocol, to: some RealityCoordinateSpace) -> SIMD3<Float>](realitycoordinatespaceconverting/convert(_:from:to:)-6547z.md)
-  Converts a Size3D from a defined SwiftUI coordinate space to a 3D size vector in a RealityKit coordinate space.
-- [func convert(Vector3D, from: some CoordinateSpaceProtocol, to: some RealityCoordinateSpace) -> SIMD3<Float>](realitycoordinatespaceconverting/convert(_:from:to:)-67xm9.md)
-  ConvConverts a 3D vector from a SwiftUI coordinate space to one in a RealityKit coordinate space.
-- [func convert(Point3D, from: some CoordinateSpaceProtocol, to: some RealityCoordinateSpace) -> SIMD3<Float>](realitycoordinatespaceconverting/convert(_:from:to:)-6uv65.md)
+- [func convert(_:from:to:)](realitycoordinatespaceconverting/convert(_:from:to:).md)
   Converts a `Point3D` from a defined SwiftUI coordinate space to a 3D point in a RealityKit coordinate space.
 - [func convert(boundingBox: BoundingBox, from: some RealityCoordinateSpace, to: some CoordinateSpaceProtocol) -> Rect3D](realitycoordinatespaceconverting/convert(boundingbox:from:to:).md)
   Converts a BoundingBox from a RealityKit coordinate space to a Rect3D in a defined SwiftUI coordinate space.
@@ -41,8 +31,7 @@ protocol RealityCoordinateSpaceConverting
   Returns an AffineTransform3D converted from a RealityKit coordinate space to a defined SwiftUI coordinate space.
 - [func convert(vector: SIMD3<Float>, from: some RealityCoordinateSpace, to: some CoordinateSpaceProtocol) -> Vector3D](realitycoordinatespaceconverting/convert(vector:from:to:).md)
   Converts a 3D vector from a RealityKit coordinate space to one in a SwiftUI coordinate space.
-- [func transform(from: some RealityCoordinateSpace, to: some CoordinateSpaceProtocol) -> AffineTransform3D](realitycoordinatespaceconverting/transform(from:to:)-1fw4u.md)
-- [func transform(from: some CoordinateSpaceProtocol, to: some RealityCoordinateSpace) -> AffineTransform3D](realitycoordinatespaceconverting/transform(from:to:)-60jfs.md)
+- [func transform(from:to:)](realitycoordinatespaceconverting/transform(from:to:).md)
 
 ## Relationships
 

@@ -24,8 +24,6 @@ Call the [`setControlsDelegate(_:queue:)`](avcapturesession/setcontrolsdelegate(
 
 > ❗ **Important**:  You must specify a controls delegate for controls to become active.
 
- You must specify a controls delegate for controls to become active.
-
 ## See Also
 
 - [var supportsControls: Bool](avcapturesession/supportscontrols.md)

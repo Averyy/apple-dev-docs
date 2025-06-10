@@ -1,6 +1,6 @@
 # polarity
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A constant that states whether larger or smaller measurements, relative to a set baseline, indicate better performance.

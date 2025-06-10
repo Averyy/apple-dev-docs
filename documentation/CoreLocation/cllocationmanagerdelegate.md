@@ -26,8 +26,6 @@ The location manager calls its delegate’s methods to report location-related e
 
 > ❗ **Important**:  Always implement the methods for handling any potential failures in addition to the methods for receiving location-related data.
 
- Always implement the methods for handling any potential failures in addition to the methods for receiving location-related data.
-
 Assign your delegate object to the [`delegate`](cllocationmanager/delegate.md) property of the [`CLLocationManager`](cllocationmanager.md) object before starting any services. Core Location may report a cached value to your delegate immediately after you start the service, followed by a more current value later. Check the time stamp of any data objects you receive before using them.
 
 Core Location calls the methods of your delegate object on the runloop from the thread on which you initialized [`CLLocationManager`](cllocationmanager.md). That thread must itself have an active run loop, like the one found in your app’s main thread.

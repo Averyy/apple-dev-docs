@@ -1,6 +1,6 @@
 # DOMHTMLFrameElement Additions
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Additions to the `DOMHTMLFrameElement` class facilitate communication between the DOM API and WebKit.
 

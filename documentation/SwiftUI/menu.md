@@ -1,6 +1,6 @@
 # Menu
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A control for presenting a menu of actions.
@@ -18,6 +18,11 @@ A control for presenting a menu of actions.
 ```swift
 struct Menu<Label, Content> where Label : View, Content : View
 ```
+
+## Mentions
+
+- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Overview
 
@@ -116,9 +121,9 @@ Menu("Editing") {
   Creates a menu with a custom primary action that generates its label from a localized string key.
 - [init(content: () -> Content, label: () -> Label, primaryAction: () -> Void)](menu/init(content:label:primaryaction:).md)
   Creates a menu with a custom primary action and custom label.
-- [init(LocalizedStringKey, image: ImageResource, content: () -> Content, primaryAction: () -> Void)](menu/init(_:image:content:primaryaction:).md)
+- [init(_:image:content:primaryAction:)](menu/init(_:image:content:primaryaction:).md)
   Creates a menu with a custom primary action that generates its label from a localized string key.
-- [init(LocalizedStringKey, systemImage: String, content: () -> Content, primaryAction: () -> Void)](menu/init(_:systemimage:content:primaryaction:).md)
+- [init(_:systemImage:content:primaryAction:)](menu/init(_:systemimage:content:primaryaction:).md)
   Creates a menu with a custom primary action that generates its label from a localized string key and system image.
 ### Creating a menu from a configuration
 - [init(MenuStyleConfiguration)](menu/init(_:).md)
@@ -131,10 +136,12 @@ Menu("Editing") {
 
 ## See Also
 
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+  Improve your app by populating menus with controls and organizing your content intuitively.
 - [func menuStyle<S>(S) -> some View](view/menustyle(_:).md)
   Sets the style for menus within this view.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/menu)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/menu)*

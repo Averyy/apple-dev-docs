@@ -38,6 +38,8 @@ You use `CameraFrameProvider` to receive camera images for selected video format
   Values that describe possible camera positions.
 - [CameraFrameProvider.CameraType](cameraframeprovider/cameratype.md)
   Values that describe possible camera types.
+- [CameraFrameProvider.CameraRectification](cameraframeprovider/camerarectification.md)
+  Enumeration of possible camera rectification types.
 ### Type Properties
 - [static var isSupported: Bool](cameraframeprovider/issupported.md)
   A Boolean value that indicates whether this device supports the camera frame provider.
@@ -50,6 +52,7 @@ You use `CameraFrameProvider` to receive camera images for selected video format
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [DataProvider](dataprovider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

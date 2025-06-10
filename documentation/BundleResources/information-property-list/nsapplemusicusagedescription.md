@@ -17,8 +17,6 @@ Set the value of this key to a user-readable description of how your app intends
 
 > ❗ **Important**:  Your app must provide a value for this key to access a person’s media library. This requirement applies to iOS, iPadOS, visionOS, and macOS apps that link against the macOS 15 SDK or later.
 
- Your app must provide a value for this key to access a person’s media library. This requirement applies to iOS, iPadOS, visionOS, and macOS apps that link against the macOS 15 SDK or later.
-
 ## See Also
 
 - [Requesting Access to Apple Music Library](../StoreKit/requesting-access-to-apple-music-library.md)

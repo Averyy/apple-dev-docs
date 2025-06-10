@@ -30,8 +30,6 @@ The [`recentSubscriptionStartDate`](https://developer.apple.com/documentation/Ap
 
 > ❗ **Important**:  Don’t use the [`recentSubscriptionStartDate`](https://developer.apple.com/documentation/AppStoreServerNotifications/recentSubscriptionStartDate) date to calculate days of paid service. For more information about paid days of service, see [`Net revenue after a year`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/#revenue-after-one-year).
 
- Don’t use the [`recentSubscriptionStartDate`](https://developer.apple.com/documentation/AppStoreServerNotifications/recentSubscriptionStartDate) date to calculate days of paid service. For more information about paid days of service, see [`Net revenue after a year`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/#revenue-after-one-year).
-
 This date applies to active or expired subscriptions. For example, if a subscriber purchases an auto-renewable subscription on June 1, 2022 and lets it expire on December 31, 2022, the App Store determines the recent subscription start date as follows:
 
 - Initially, the [`recentSubscriptionStartDate`](https://developer.apple.com/documentation/AppStoreServerNotifications/recentSubscriptionStartDate) is the same as the [`originalPurchaseDate`](originalpurchasedate.md): June 1, 2022.

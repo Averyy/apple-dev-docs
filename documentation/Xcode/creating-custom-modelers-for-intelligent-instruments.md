@@ -240,4 +240,4 @@ Copies the `integer-array` in the first argument and returns the EXTERNAL-ADDRES
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/creating-custom-modelers-for-intelligent-instruments)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/creating-custom-modelers-for-intelligent-instruments)*

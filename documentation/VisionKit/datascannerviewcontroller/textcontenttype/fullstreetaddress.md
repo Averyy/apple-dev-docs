@@ -1,6 +1,6 @@
 # DataScannerViewController.TextContentType.fullStreetAddress
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: case
 
 The content type for a mailing address that appears in text.

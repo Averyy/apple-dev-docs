@@ -1,6 +1,6 @@
 # NIAlgorithmConvergenceStatus.Reason
 
-**Framework**: Nearbyinteraction  
+**Framework**: Nearby Interaction  
 **Kind**: struct
 
 The possible reasons for the Camera Assistance status.

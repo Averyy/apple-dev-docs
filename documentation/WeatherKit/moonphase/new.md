@@ -1,6 +1,6 @@
 # MoonPhase.new
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 The disk is unlit where the moon is not visible.

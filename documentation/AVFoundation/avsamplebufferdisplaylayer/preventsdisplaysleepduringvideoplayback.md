@@ -1,6 +1,6 @@
 # preventsDisplaySleepDuringVideoPlayback
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that indicates whether the layer prevents the system from sleeping during video playback.

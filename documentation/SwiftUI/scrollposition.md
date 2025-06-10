@@ -127,6 +127,10 @@ If no anchor has been provided, SwiftUI will scroll the minimal amount when usin
   The positioned point of the scroll view if configured to be in that position.
 - [var viewID: (any Hashable & Sendable)?](scrollposition/viewid.md)
   The type-erased id of the view positioned in the scroll view if configured to be in that position or the user has scrolled past a view with an id of matching type.
+- [var x: CGFloat?](scrollposition/x.md)
+  The positioned x value of the scroll view if configured to be in that position.
+- [var y: CGFloat?](scrollposition/y.md)
+  The positioned y value of the scroll view if configured to be in that position.
 ### Instance Methods
 - [func scrollTo(edge: Edge)](scrollposition/scrollto(edge:).md)
   Scrolls the position of the scroll view to the edge you provide.
@@ -149,6 +153,7 @@ If no anchor has been provided, SwiftUI will scroll the minimal amount when usin
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

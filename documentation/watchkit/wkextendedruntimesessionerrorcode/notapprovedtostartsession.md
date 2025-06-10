@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionErrorCode.notApprovedToStartSession
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The app attempted to start a session, but doesn’t have a valid session type.

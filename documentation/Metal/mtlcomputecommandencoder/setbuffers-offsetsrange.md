@@ -23,8 +23,6 @@ func setBuffers(_ buffers: [(any MTLBuffer)?], offsets: [Int], range: Range<Int>
 
 > ❗ **Important**:  This method requires that the length of `buffers` and `offsets` are equal to the length of `range`.
 
- This method requires that the length of `buffers` and `offsets` are equal to the length of `range`.
-
 For buffers binding to an argument using the `device` address space, align the offset to the data type’s size. The maximum size for an offset is `16` bytes.
 
 For buffers in the `constant` address space, the minimum alignment depends on the hardware running your app. See the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for information on each Apple GPU family.

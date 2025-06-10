@@ -1,6 +1,6 @@
 # allSatisfy(_:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns a Boolean value indicating whether every element of a sequence satisfies a given predicate.

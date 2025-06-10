@@ -3,6 +3,8 @@
 **Framework**: TipKit  
 **Kind**: property
 
+Returns an events existing donations.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -17,6 +19,11 @@
 ```swift
 var donations: [Tips.Event<DonationInfo>.Donation] { get }
 ```
+
+## See Also
+
+- [struct Donation](tips/event/donation.md)
+  A repeatable user-defined action.
 
 
 ---

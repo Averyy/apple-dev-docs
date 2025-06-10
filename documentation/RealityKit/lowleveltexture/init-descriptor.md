@@ -1,6 +1,6 @@
 # init(descriptor:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: init
 
 Creates a low-level texture from a descriptor.
@@ -10,6 +10,7 @@ Creates a low-level texture from a descriptor.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

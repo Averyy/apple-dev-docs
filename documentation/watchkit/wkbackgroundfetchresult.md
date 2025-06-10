@@ -1,6 +1,6 @@
 # WKBackgroundFetchResult
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 The result of an attempt to download the content associated with a remote notification.
@@ -34,6 +34,7 @@ enum WKBackgroundFetchResult
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

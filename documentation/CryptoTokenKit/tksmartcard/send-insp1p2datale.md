@@ -8,7 +8,6 @@ Synchronously transmits an APDU command to the card and returns the response.
 **Availability**:
 - iOS ?+
 - iPadOS ?+
-- Mac Catalyst ?+
 - macOS 10.12+
 - tvOS ?+
 - visionOS ?+

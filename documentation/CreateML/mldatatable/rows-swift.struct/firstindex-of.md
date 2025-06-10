@@ -1,6 +1,6 @@
 # firstIndex(of:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns the first index where the specified value appears in the collection.

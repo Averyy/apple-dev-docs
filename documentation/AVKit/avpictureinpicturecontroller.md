@@ -32,8 +32,6 @@ Before presenting a user interface to start Picture in Picture, call the [`isPic
 
 > ❗ **Important**:  The framework doesn’t support subclassing [`AVPictureInPictureController`](avpictureinpicturecontroller.md).
 
- The framework doesn’t support subclassing [`AVPictureInPictureController`](avpictureinpicturecontroller.md).
-
 ## Topics
 
 ### Creating a Controller

@@ -10,6 +10,7 @@ Provides the events related to components.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -39,14 +40,10 @@ For more information on subscribing to scene events, see `RealityKit/Scene/Event
 
 ## See Also
 
-- [protocol Event](event.md)
-  A type that can be sent as an event.
-- [protocol EventSource](eventsource.md)
-  A type on which events can be published and subscribed.
-- [struct EventSubscription](eventsubscription.md)
-  A subscription to an event.
 - [enum SceneEvents](sceneevents.md)
   Events the scene invokes.
+- [enum AnchorStateEvents](anchorstateevents.md)
+  Events that trigger on an entity to indicate a change in anchor state.
 
 
 ---

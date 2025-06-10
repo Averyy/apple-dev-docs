@@ -74,15 +74,11 @@ After making changes to the shader source code, click the Reload Shaders button 
 
 > ❗ **Important**: Changes to your shader source code exist only within the Metal debugger. Your original shader source code doesn’t change. Make sure that you copy your changes to your original shader source code.
 
-Changes to your shader source code exist only within the Metal debugger. Your original shader source code doesn’t change. Make sure that you copy your changes to your original shader source code.
-
 For more information on interpreting the per-line shader profiling statistics, see [`Inspecting shaders`](inspecting-shaders.md).
 
 ##### Inspect Shader Performance with the Shader Cost Graph
 
 > ❗ **Important**: The shader cost graph feature is available for iOS devices with A17 Pro or later, and Mac computers with M3 or later.
-
-The shader cost graph feature is available for iOS devices with A17 Pro or later, and Mac computers with M3 or later.
 
 You can quickly find and triage expensive pipeline states and shaders by using the shader cost graph. Select a pipeline state in the Timeline navigator, and then click the Shaders tab.
 
@@ -95,8 +91,6 @@ For more information, see [`Analyzing Apple GPU performance using the shader cos
 ##### Understand Simd Group Execution with the Performance Heat Maps
 
 > ❗ **Important**: The performance heat maps feature is available for iOS devices with A17 Pro or later, and Mac computers with M3 or later.
-
-The performance heat maps feature is available for iOS devices with A17 Pro or later, and Mac computers with M3 or later.
 
 You can quickly find and inspect the execution of your shader source code with the performance heat maps. Select an encoder, a pipeline state, or a GPU command in the Timeline navigator, and then click the Heat Maps tab.
 

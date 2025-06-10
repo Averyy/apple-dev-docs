@@ -1,6 +1,6 @@
 # mergeChanges(fromContextDidSave:)
 
-**Framework**: Coredata  
+**Framework**: Core Data  
 **Kind**: method
 
 Merges the changes specified in a given notification.
@@ -22,16 +22,16 @@ func mergeChanges(fromContextDidSave notification: Notification)
 
 ## Mentions
 
-- [Accessing data when the store changes](accessing-data-when-the-store-changes.md)
 - [Consuming relevant store changes](consuming-relevant-store-changes.md)
+- [Accessing data when the store changes](accessing-data-when-the-store-changes.md)
 
 #### Discussion
 
 This method refreshes any objects which have been updated in the other context, faults in any newly-inserted objects, and invokes [`delete(_:)`](nsmanagedobjectcontext/delete(_:).md): on those which have been deleted.
 
-You can pass a [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/foundation/nsnotification/name/1506380-nsmanagedobjectcontextdidsave) notification posted by a managed object context on another thread, however you must not use the managed objects in the user info dictionary directly. For more details, see Concurrency with Core Data.
+You can pass a [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextDidSave) notification posted by a managed object context on another thread, however you must not use the managed objects in the user info dictionary directly. For more details, see Concurrency with Core Data.
 
-> **Note**: Objective-C uses instances of [`NSManagedObjectContextDidSaveNotification`](nsmanagedobjectcontextdidsavenotification.md) instead of [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/foundation/nsnotification/name/1506380-nsmanagedobjectcontextdidsave).
+> **Note**: Objective-C uses instances of [`NSManagedObjectContextDidSaveNotification`](nsmanagedobjectcontextdidsavenotification.md) instead of [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextDidSave).
 
 ## Parameters
 

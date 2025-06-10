@@ -1,6 +1,6 @@
 # WKInterfaceObject
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An object that provides information that is common to all interface objects in your watchOS app.

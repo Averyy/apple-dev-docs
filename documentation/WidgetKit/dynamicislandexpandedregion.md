@@ -1,6 +1,6 @@
 # DynamicIslandExpandedRegion
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 A structure that defines and positions the content of an expanded Live Activity in the Dynamic Island.
@@ -8,7 +8,6 @@ A structure that defines and positions the content of an expanded Live Activity 
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 
@@ -32,6 +31,9 @@ The expanded presentation of a Live Activity in the Dynamic Island consists of f
   Creates the object that defines and positions the content of an expanded Live Activity in the Dynamic Island.
 - [struct DynamicIslandExpandedRegionPosition](dynamicislandexpandedregionposition.md)
   View positions of an expanded Live Activity that appears in the Dynamic Island.
+- [@MainActor @preconcurrency func dynamicIsland(verticalPlacement: DynamicIslandExpandedRegionVerticalPlacement) -> some View
+](../SwiftUI/View/dynamicIsland(verticalPlacement:).md)
+  Specifies the vertical placement for a view of an expanded Live Activity that appears in the Dynamic Island.
 - [struct DynamicIslandExpandedRegionVerticalPlacement](dynamicislandexpandedregionverticalplacement.md)
   Vertical view positions of an expanded Live Activity that appears in the Dynamic Island.
 - [struct DynamicIslandExpandedContent](dynamicislandexpandedcontent.md)

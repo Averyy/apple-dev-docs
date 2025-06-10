@@ -1,6 +1,6 @@
 # init(x:y:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: init
 
 Creates a point with coordinates specified as integer values.

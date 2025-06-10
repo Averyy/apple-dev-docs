@@ -1,6 +1,6 @@
 # XCUIDevice.Appearance.unspecified
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 An unspecified interface style.

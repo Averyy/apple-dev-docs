@@ -26,8 +26,6 @@ Don’t implement this method for formats where sample reordering doesn’t make
 
 > ❗ **Important**:  Only pass a cursor to this method that references the same sequence of samples as the cursor you call this method on, such as that the same instance of [`METrackReader`](metrackreader.md) created. Otherwise, the result is undefined.
 
- Only pass a cursor to this method that references the same sequence of samples as the cursor you call this method on, such as that the same instance of [`METrackReader`](metrackreader.md) created. Otherwise, the result is undefined.
-
 ## Parameters
 
 - `cursor`: A sample cursor to use to test the sample reordering boundary.

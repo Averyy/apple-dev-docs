@@ -26,8 +26,6 @@ Fences maintain command buffer order to prevent GPU data hazards as the GPU runs
 
 > ❗ **Important**:  For a compute pass that updates and waits for the same fence, call [`waitForFence(_:)`](mtlcomputecommandencoder/waitforfence(_:).md) before you call [`updateFence(_:)`](mtlcomputecommandencoder/updatefence(_:).md). Updating a fence before waiting on it in the same encoder can cause a GPU deadlock.
 
- For a compute pass that updates and waits for the same fence, call [`waitForFence(_:)`](mtlcomputecommandencoder/waitforfence(_:).md) before you call [`updateFence(_:)`](mtlcomputecommandencoder/updatefence(_:).md). Updating a fence before waiting on it in the same encoder can cause a GPU deadlock.
-
 On Apple family GPUs, [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) instances place all fence update commands at the end of their pass.
 
 ## Parameters

@@ -1,6 +1,6 @@
 # Adding Custom Functions to a Shader Graph
 
-**Framework**: Metalperformanceshadersgraph
+**Framework**: Metal Performance Shaders Graph
 
 Run your own graph functions on the GPU by building the function programmatically.
 

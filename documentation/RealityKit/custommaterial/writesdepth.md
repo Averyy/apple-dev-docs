@@ -10,6 +10,7 @@ A boolean value that determines whether this material writes its depth into Real
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

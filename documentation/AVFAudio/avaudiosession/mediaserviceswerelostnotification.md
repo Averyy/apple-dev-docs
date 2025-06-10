@@ -23,7 +23,7 @@ class let mediaServicesWereLostNotification: NSNotification.Name
 
 The system posts this notification when the media server first becomes unavailable. Most apps don’t need to subscribe to this notification and should instead subscribe to the [`mediaServicesWereResetNotification`](avaudiosession/mediaserviceswereresetnotification.md) notification. However, you can use this notification as a cue to take any appropriate steps to handle requests that come in before the server restarts.
 
-This notification has no [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/1409222-userinfo) dictionary.
+This notification has no [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) dictionary.
 
 The system posts this notification on the main thread.
 

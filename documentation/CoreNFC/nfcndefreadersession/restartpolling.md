@@ -1,6 +1,6 @@
 # restartPolling()
 
-**Framework**: Corenfc  
+**Framework**: Core NFC  
 **Kind**: method
 
 Restarts the polling sequence so the reader session can discover new tags.

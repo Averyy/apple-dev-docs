@@ -24,8 +24,6 @@ var functionCount: Int { get }
 
 - [func BNNSGraphGetFunctionCount(bnns_graph_t) -> Int](bnnsgraphgetfunctioncount(_:).md)
   Returns the number of callable functions in the specified graph.
-- [func setBatchSize(Int, forFunction: String?) async](bnnsgraph/context/setbatchsize(_:forfunction:).md)
-  Sets the batch size for a graph.
 - [func setDynamicShapes([BNNSGraph.Shape], forFunction: String?) async throws -> [BNNSGraph.Shape]](bnnsgraph/context/setdynamicshapes(_:forfunction:).md)
   Specifies the dynamic shapes for a graph and, if possible, infers the output shapes.
 - [BNNSGraph.Shape](bnnsgraph/shape.md)

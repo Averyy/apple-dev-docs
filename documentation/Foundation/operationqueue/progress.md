@@ -26,8 +26,6 @@ By default, [`OperationQueue`](operationqueue.md) doesn’t report progress unti
 
 > ⚠️ **Warning**:  Be careful to avoid race conditions and backward progress when updating [`totalUnitCount`](progress/totalunitcount.md). Consider a queue with a progress that has a [`completedUnitCount`](progress/completedunitcount.md) equal to `5` and a [`totalUnitCount`](progress/totalunitcount.md) equal to `10`, representing 50% completion. If you add 90 more operations to the queue, the [`totalUnitCount`](progress/totalunitcount.md) is now `100`, and the progress completion reports 5%. If the progress object is connected to a progress bar, the bar would visibly jump backward from 50% to 5%, which may not be desirable.
 
- Be careful to avoid race conditions and backward progress when updating [`totalUnitCount`](progress/totalunitcount.md). Consider a queue with a progress that has a [`completedUnitCount`](progress/completedunitcount.md) equal to `5` and a [`totalUnitCount`](progress/totalunitcount.md) equal to `10`, representing 50% completion. If you add 90 more operations to the queue, the [`totalUnitCount`](progress/totalunitcount.md) is now `100`, and the progress completion reports 5%. If the progress object is connected to a progress bar, the bar would visibly jump backward from 50% to 5%, which may not be desirable.
-
 To update [`totalUnitCount`](progress/totalunitcount.md) in a thread-safe manner, use the [`addBarrierBlock(_:)`](operationqueue/addbarrierblock(_:).md) method. This method ensures that the operation queue completes the operations in the queue, preventing an inadvertent backward jump in progress.
 
 

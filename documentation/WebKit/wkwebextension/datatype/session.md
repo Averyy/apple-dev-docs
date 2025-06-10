@@ -1,6 +1,6 @@
 # session
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Specifies session storage, including `browser.storage.session`.

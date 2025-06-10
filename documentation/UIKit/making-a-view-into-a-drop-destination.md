@@ -1,6 +1,6 @@
 # Making a view into a drop destination
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Adopt drop interaction APIs to selectively consume dragged content.
 
@@ -111,4 +111,4 @@ The figure above depicts the steps for consuming a drag item, in context:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/making-a-view-into-a-drop-destination)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/making-a-view-into-a-drop-destination)*

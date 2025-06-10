@@ -9,7 +9,7 @@ An option that indicates that the session periodically provides user instruction
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

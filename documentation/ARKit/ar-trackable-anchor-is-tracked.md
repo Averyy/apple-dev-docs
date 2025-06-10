@@ -6,6 +6,7 @@
 Returns a Boolean value that indicates whether ARKit is tracking an anchor.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

@@ -22,10 +22,10 @@ struct URL
 
 ## Mentions
 
+- [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
+- [Checking Volume Storage Capacity](checking-volume-storage-capacity.md)
 - [Encoding and Decoding Custom Types](encoding-and-decoding-custom-types.md)
 - [Downloading files from websites](downloading-files-from-websites.md)
-- [Checking Volume Storage Capacity](checking-volume-storage-capacity.md)
-- [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
 
 #### Overview
 
@@ -331,6 +331,12 @@ As a convenience, you can use Swift’s `async`-`await` syntax to asynchronously
   The core type for conforming with App Intents.
 - [typealias ValueType](url/valuetype.md)
   The value type for conforming with App Intents.
+### Structures
+- [struct Template](url/template.md)
+  A template for constructing a URL from variable expansions.
+### Initializers
+- [init?(template: URL.Template, variables: [URL.Template.VariableName : URL.Template.Value])](url/init(template:variables:).md)
+  Creates a new `URL` by expanding the RFC 6570 template and variables.
 ### Default Implementations
 - [CustomURLRepresentationParameterConvertible Implementations](url/customurlrepresentationparameterconvertible-implementations.md)
 - [Equatable Implementations](url/equatable-implementations.md)
@@ -349,6 +355,7 @@ As a convenience, you can use Swift’s `async`-`await` syntax to asynchronously
 - [Hashable](../Swift/Hashable.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transferable](../CoreTransferable/Transferable.md)
 
 ## See Also

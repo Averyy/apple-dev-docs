@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The details for an account driven enrollment profile.
+The details for an account-driven enrollment profile.
 
 **Availability**:
 - Device Assignment Services ?+

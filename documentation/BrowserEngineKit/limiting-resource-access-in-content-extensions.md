@@ -1,6 +1,6 @@
 # Limiting resource access in web content extensions
 
-**Framework**: Browserenginekit
+**Framework**: BrowserEngineKit
 
 Reduce the impact of vulnerabilities in web content extensions by limiting privileges.
 
@@ -82,4 +82,4 @@ Limit the possibility for malicious code that runs in your web-content extension
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/limiting-resource-access-in-content-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/limiting-resource-access-in-content-extensions)*

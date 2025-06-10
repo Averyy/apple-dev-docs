@@ -1,6 +1,6 @@
 # synchronized
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Specifies synchronized storage, including `browser.storage.sync`.

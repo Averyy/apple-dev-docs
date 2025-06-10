@@ -23,8 +23,6 @@ If you’re recording video, set the input orientation to match the video orient
 
 > ❗ **Important**:  The audio session’s input orientation is independent of the [`orientation`](avaudiosessiondatasourcedescription/orientation.md) property of an [`AVAudioSessionDataSourceDescription`](avaudiosessiondatasourcedescription.md).
 
- The audio session’s input orientation is independent of the [`orientation`](avaudiosessiondatasourcedescription/orientation.md) property of an [`AVAudioSessionDataSourceDescription`](avaudiosessiondatasourcedescription.md).
-
 ## See Also
 
 - [var preferredInputOrientation: AVAudioSession.StereoOrientation](avaudiosession/preferredinputorientation.md)

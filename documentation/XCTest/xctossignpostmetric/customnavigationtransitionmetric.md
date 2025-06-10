@@ -1,6 +1,6 @@
 # customNavigationTransitionMetric
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A metric that records the duration of custom navigation transitions between views.

@@ -3,7 +3,7 @@
 **Framework**: ThreadNetwork  
 **Kind**: property
 
-The Thead network PAN identifier.
+The Thread network PAN identifier.
 
 **Availability**:
 - iOS 15.0+
@@ -23,7 +23,7 @@ var panID: Data? { get }
 - [var activeOperationalDataSet: Data?](thcredentials/activeoperationaldataset.md)
   The essential operational parameters for the Thread network.
 - [var borderAgentID: Data?](thcredentials/borderagentid.md)
-  The identifer of an active Thread network Border Agent.
+  The identifier of an active Thread network Border Agent.
 - [var channel: UInt8](thcredentials/channel.md)
   The Thread network radio channel.
 - [var extendedPANID: Data?](thcredentials/extendedpanid.md)
@@ -33,7 +33,7 @@ var panID: Data? { get }
 - [var networkName: String?](thcredentials/networkname.md)
   The Thread network name.
 - [var pskc: Data?](thcredentials/pskc.md)
-  The Thread network pre-shared key for the Commissioner.
+  The Thread network pre-shared key (PSKC) for the Commissioner.
 
 
 ---

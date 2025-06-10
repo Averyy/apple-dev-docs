@@ -1,6 +1,6 @@
 # Test Results
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Read test results for test actions Xcode Cloud performs.
 
@@ -42,4 +42,4 @@ The `ciTestResult` resource represents the test results that Xcode Cloud makes a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/test-results)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/test-results)*

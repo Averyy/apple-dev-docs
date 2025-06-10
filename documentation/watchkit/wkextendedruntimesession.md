@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSession
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A session that continues to run your app after the user has stopped interacting.

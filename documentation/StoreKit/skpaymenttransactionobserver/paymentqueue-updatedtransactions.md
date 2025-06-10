@@ -24,11 +24,11 @@ func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SK
 ## Mentions
 
 - [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
-- [Testing a payment request](testing-a-payment-request.md)
-- [Processing a transaction](processing-a-transaction.md)
 - [Testing resubscribing from the subscriptions page](testing-resubscribing-from-the-subscriptions-page.md)
-- [Implementing offer codes in your app](implementing-offer-codes-in-your-app.md)
+- [Processing a transaction](processing-a-transaction.md)
+- [Testing a payment request](testing-a-payment-request.md)
 - [Testing a successful transaction](testing-a-successful-transaction.md)
+- [Implementing offer codes in your app](implementing-offer-codes-in-your-app.md)
 
 #### Discussion
 
@@ -37,8 +37,6 @@ The application should process each transaction by examining the transaction’s
 Once a transaction is processed, it should be removed from the payment queue by calling the payment queue’s [`finishTransaction(_:)`](skpaymentqueue/finishtransaction(_:).md) method, passing the transaction as a parameter.
 
 > ❗ **Important**:  Once the transaction is finished, StoreKit can’t tell you that this item is already purchased. It is important that applications process the transaction completely before calling [`finishTransaction(_:)`](skpaymentqueue/finishtransaction(_:).md).
-
- Once the transaction is finished, StoreKit can’t tell you that this item is already purchased. It is important that applications process the transaction completely before calling [`finishTransaction(_:)`](skpaymentqueue/finishtransaction(_:).md).
 
 ## Parameters
 

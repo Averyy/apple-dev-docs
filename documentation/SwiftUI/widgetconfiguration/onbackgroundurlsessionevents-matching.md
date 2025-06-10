@@ -10,6 +10,7 @@ Adds an action to perform when events related to a URL session identified by a c
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -29,7 +30,7 @@ When a widget initiates a background network request, the system delivers events
 
 1. Use the `identifier` parameter to determine if a corresponding `URLSession` object exists. If the system hasn’t terminated your widget extension, maintain a reference to the same `URLSession` object you used for the original background network request. If the system terminated your widget extension, use the identifier to create a new `URLSession` object so it can receive the events. You might consider lazily initializing, and caching, the `URLSession` objects in a central location so that your code works regardless of whether your extension remains active, is suspended, or is terminated.
 2. Store a reference to the `completion` closure to invoke it after the system delivers all events.
-3. After the system calls the `URLSession` delegate’s [`urlSessionDidFinishEvents(forBackgroundURLSession:)`](https://developer.apple.com/documentation/foundation/urlsessiondelegate/1617185-urlsessiondidfinishevents) method, invoke the `completion` closure.
+3. After the system calls the `URLSession` delegate’s [`urlSessionDidFinishEvents(forBackgroundURLSession:)`](https://developer.apple.com/documentation/Foundation/URLSessionDelegate/urlSessionDidFinishEvents(forBackgroundURLSession:)) method, invoke the `completion` closure.
 
 ## Parameters
 

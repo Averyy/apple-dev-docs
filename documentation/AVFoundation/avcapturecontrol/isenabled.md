@@ -1,6 +1,6 @@
 # isEnabled
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that indicates whether this control supports user interaction.

@@ -111,6 +111,7 @@ When you call [`setPostbacks(_:)`](skadtestsession/setpostbacks(_:).md) and [`fl
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

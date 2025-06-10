@@ -51,7 +51,19 @@ If an app requests an element from a document type that doesn’t support it, th
   Returns an element that represents the user’s age is at least the age you specify.
 ### Type Properties
 - [class var documentDHSComplianceStatus: PKIdentityElement](pkidentityelement/documentdhscompliancestatus.md)
+- [class var eyeColor: PKIdentityElement](pkidentityelement/eyecolor.md)
+  The user’s eye color on record with the issuer.
+- [class var hairColor: PKIdentityElement](pkidentityelement/haircolor.md)
+  The user’s hair color on record with the issuer.
+- [class var height: PKIdentityElement](pkidentityelement/height.md)
+  The user’s height on record with the issuer.
+- [class var organDonorStatus: PKIdentityElement](pkidentityelement/organdonorstatus.md)
+  The user’s organ donor status on record with the issuer.
 - [class var sex: PKIdentityElement](pkidentityelement/sex.md)
+- [class var veteranStatus: PKIdentityElement](pkidentityelement/veteranstatus.md)
+  The user’s veteran status on record with the issuer.
+- [class var weight: PKIdentityElement](pkidentityelement/weight.md)
+  The user’s weight on record with the issuer.
 
 ## Relationships
 

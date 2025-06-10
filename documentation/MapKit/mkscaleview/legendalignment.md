@@ -30,7 +30,7 @@ This property determines whether measurements start at the leading or trailing e
 - [var scaleVisibility: MKFeatureVisibility](mkscaleview/scalevisibility.md)
   The visibility of the scale view.
 - [MKScaleView.Alignment](mkscaleview/alignment.md)
-  Constants indicating whether measurements begin at the leading or trailing edge of the view.
+  Constants that indicate how the framework should align measurements.
 
 
 ---

@@ -1,6 +1,6 @@
 # VT_SUPPORT_COLORSYNC_PIXEL_TRANSFER
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

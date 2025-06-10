@@ -1,11 +1,14 @@
 # interpolationPhase
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 An array of floating-point values that indicate which intervals to insert a frame between the current and next frame.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
 
 ## Declaration
@@ -30,8 +33,6 @@ Array size indicates how many frames are needed to interpolate and needs to matc
   A value describing the processing request in a parameters submission object.
 - [VTFrameRateConversionParameters.SubmissionMode](vtframerateconversionparameters/submissionmode-swift.enum.md)
   A value describing the processing request in a parameters submission object.
-- [var destinationFrames: [VTFrameProcessorFrame]](vtframerateconversionparameters/destinationframes.md)
-  A caller-allocated array of frames that contains the pixel buffers to receive the results.
 
 
 ---

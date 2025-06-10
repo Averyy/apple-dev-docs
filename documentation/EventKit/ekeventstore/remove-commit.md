@@ -1,6 +1,6 @@
 # remove(_:commit:)
 
-**Framework**: Eventkit  
+**Framework**: EventKit  
 **Kind**: method
 
 Removes a reminder from the event store by either committing or batching the changes.

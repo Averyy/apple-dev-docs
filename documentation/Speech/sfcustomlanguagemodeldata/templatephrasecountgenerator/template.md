@@ -6,11 +6,9 @@
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
-- tvOS 17.0+
 - visionOS 1.1+
-- watchOS 10.0+
 
 ## Declaration
 
@@ -22,14 +20,9 @@ struct Template
 
 ### Initializers
 - [init(String, count: Int)](sfcustomlanguagemodeldata/templatephrasecountgenerator/template/init(_:count:).md)
-- [init(from: any Decoder) throws](sfcustomlanguagemodeldata/templatephrasecountgenerator/init(from:).md)
 ### Instance Properties
 - [let body: String](sfcustomlanguagemodeldata/templatephrasecountgenerator/template/body.md)
 - [let count: Int](sfcustomlanguagemodeldata/templatephrasecountgenerator/template/count.md)
-### Instance Methods
-- [func hash(into: inout Hasher)](sfcustomlanguagemodeldata/templatephrasecountgenerator/hash(into:).md)
-### Operator Functions
-- [static func == (SFCustomLanguageModelData.TemplatePhraseCountGenerator, SFCustomLanguageModelData.TemplatePhraseCountGenerator) -> Bool](sfcustomlanguagemodeldata/templatephrasecountgenerator/==(_:_:).md)
 
 ## Relationships
 

@@ -52,7 +52,7 @@ This object is not derived from CFType and therefore there are no functions for 
 - [typealias CGPDFDictionaryApplierFunction](cgpdfdictionaryapplierfunction.md)
   Performs custom processing on a key-value pair from a PDF dictionary, using optional contextual information.
 ### Data Types
-- [typealias CGPDFDictionaryRef](cgpdfdictionaryref.md)
+- [struct CGPDFDictionaryRef](cgpdfdictionaryref.md)
   A type that encapsulates a PDF dictionary.
 
 ## See Also

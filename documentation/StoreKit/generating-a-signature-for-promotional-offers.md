@@ -16,8 +16,6 @@ In the first step of generating the signature, you need the following parameters
 
 > ❗ **Important**:  Use lowercase for the string representation of the `nonce` and the `appAccountToken`.
 
- Use lowercase for the string representation of the `nonce` and the `appAccountToken`.
-
 Combine the parameters into a UTF-8 string with an invisible separator (`'\u2063'`) between them in the same order as the following example:
 
 ```http

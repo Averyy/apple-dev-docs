@@ -1,6 +1,6 @@
 # Porting your macOS apps to Apple silicon
 
-**Framework**: Apple Silicon
+**Framework**: Apple silicon
 
 Create a version of your macOS app that runs on both Apple silicon and Intel-based Mac computers.
 

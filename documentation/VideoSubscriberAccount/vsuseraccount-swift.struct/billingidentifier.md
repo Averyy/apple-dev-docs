@@ -1,6 +1,6 @@
 # billingIdentifier
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A string that Identifies the billing group associated with the user account’s subscription.

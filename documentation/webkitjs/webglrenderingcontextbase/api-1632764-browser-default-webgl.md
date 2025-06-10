@@ -1,6 +1,6 @@
 # BROWSER_DEFAULT_WEBGL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

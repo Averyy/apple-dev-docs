@@ -10,6 +10,7 @@ A component that configures channel-based rendering of sounds from an entity.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -47,12 +48,6 @@ Channel audio sources are well suited to play back sounds not associated with an
 ### Instance Properties
 - [var gain: Audio.Decibel](channelaudiocomponent/gain.md)
   The overall level for all sounds emitted from an entity. In relative Decibels, in the range  `-.infinity ... .zero` where `.zero` is the default.
-### Default Implementations
-- [Component Implementations](channelaudiocomponent/component-implementations.md)
-- [Decodable Implementations](channelaudiocomponent/decodable-implementations.md)
-- [Encodable Implementations](channelaudiocomponent/encodable-implementations.md)
-- [Equatable Implementations](channelaudiocomponent/equatable-implementations.md)
-- [Hashable Implementations](channelaudiocomponent/hashable-implementations.md)
 
 ## Relationships
 

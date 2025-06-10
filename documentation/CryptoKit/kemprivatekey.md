@@ -3,6 +3,8 @@
 **Framework**: Apple CryptoKit  
 **Kind**: protocol
 
+The private key for a key encapsulation mechanism.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -25,18 +27,33 @@ protocol KEMPrivateKey : Sendable
 - [associatedtype PublicKey : KEMPublicKey](kemprivatekey/publickey-swift.associatedtype.md)
 ### Instance Properties
 - [var publicKey: Self.PublicKey](kemprivatekey/publickey-swift.property.md)
-  Returns the associated public key
+  The associated public key.
 ### Instance Methods
 - [func decapsulate(Data) throws -> SymmetricKey](kemprivatekey/decapsulate(_:).md)
-  Decapsulates the encapsulated shared secret
+  Recovers a shared secret from an encapsulated representation.
 ### Type Methods
 - [static func generate() throws -> Self](kemprivatekey/generate.md)
-  Generate a new random Private Key
+  Generates a new random private key.
 
 ## Relationships
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+### Inherited By
+- [HPKEKEMPrivateKey](hpkekemprivatekey.md)
+- [HPKEKEMPrivateKeyGeneration](hpkekemprivatekeygeneration.md)
+### Conforming Types
+- [MLKEM1024.PrivateKey](mlkem1024/privatekey.md)
+- [MLKEM768.PrivateKey](mlkem768/privatekey.md)
+- [SecureEnclave.MLKEM1024.PrivateKey](secureenclave/mlkem1024/privatekey.md)
+- [SecureEnclave.MLKEM768.PrivateKey](secureenclave/mlkem768/privatekey.md)
+- [XWingMLKEM768X25519.PrivateKey](xwingmlkem768x25519/privatekey.md)
+
+## See Also
+
+- [protocol KEMPublicKey](kempublickey.md)
+  The public key for a key encapsulation mechanism.
 
 
 ---

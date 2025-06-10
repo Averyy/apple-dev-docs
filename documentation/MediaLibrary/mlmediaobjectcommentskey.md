@@ -36,7 +36,7 @@ let MLMediaObjectCommentsKey: String
 - [let MLMediaObjectChannelCountKey: String](mlmediaobjectchannelcountkey.md)
   Specifies the media object’s channel count. The value for this key is a number ([`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber)).
 - [let MLMediaObjectResolutionStringKey: String](mlmediaobjectresolutionstringkey.md)
-  Specifies the media object’s resolution. The value for this key is a string ([`NSString`](https://developer.apple.com/documentation/Foundation/NSString)) intended to be converted to a size ([`NSSize`](https://developer.apple.com/documentation/Foundation/NSSize)) using the [`NSSizeFromString(_:)`](https://developer.apple.com/documentation/foundation/1391112-nssizefromstring) method.
+  Specifies the media object’s resolution. The value for this key is a string ([`NSString`](https://developer.apple.com/documentation/Foundation/NSString)) intended to be converted to a size ([`NSSize`](https://developer.apple.com/documentation/Foundation/NSSize)) using the [`NSSizeFromString(_:)`](https://developer.apple.com/documentation/Foundation/NSSizeFromString(_:)) method.
 - [let MLMediaObjectKeywordsKey: String](mlmediaobjectkeywordskey.md)
   Specifies the keywords associated with the media object. The value for this key is an array ([`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray)) of strings ([`NSString`](https://developer.apple.com/documentation/Foundation/NSString)).
 - [let MLMediaObjectProtectedKey: String](mlmediaobjectprotectedkey.md)

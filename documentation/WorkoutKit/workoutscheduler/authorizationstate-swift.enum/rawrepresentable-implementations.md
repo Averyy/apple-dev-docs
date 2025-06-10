@@ -1,6 +1,6 @@
 # RawRepresentable Implementations
 
-**Framework**: Workoutkit
+**Framework**: WorkoutKit
 
 ## Topics
 

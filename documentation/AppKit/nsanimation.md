@@ -1,6 +1,6 @@
 # NSAnimation
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An object that manages the timing and progress of animations in the user interface.
@@ -111,4 +111,4 @@ The usual usage pattern for `NSAnimation` is to make a subclass that overrides (
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsanimation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsanimation)*

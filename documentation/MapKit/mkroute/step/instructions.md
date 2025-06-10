@@ -12,6 +12,7 @@ The written instructions for following the path that the step represents.
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 1.0+
 
 ## Declaration
 

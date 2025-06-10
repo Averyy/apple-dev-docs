@@ -1,6 +1,6 @@
 # WKHapticType.notification
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Alerts the user to an arrived notification when the Watch app is not running in the foreground.

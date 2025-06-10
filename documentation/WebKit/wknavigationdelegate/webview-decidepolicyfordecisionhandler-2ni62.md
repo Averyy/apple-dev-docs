@@ -1,6 +1,6 @@
 # webView(_:decidePolicyFor:decisionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Asks the delegate for permission to navigate to new content based on the specified action information.

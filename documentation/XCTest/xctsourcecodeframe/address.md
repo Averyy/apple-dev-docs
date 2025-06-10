@@ -1,6 +1,6 @@
 # address
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An address that represents a specific frame in a call stack.

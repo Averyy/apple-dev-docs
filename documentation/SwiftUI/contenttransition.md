@@ -26,8 +26,6 @@ Set the behavior of content transitions within a view with the [`contentTransiti
 
 > 💡 **Tip**: Content transitions only take effect within transactions that apply an [`Animation`](animation.md) to the views inside the [`contentTransition(_:)`](view/contenttransition(_:).md) modifier.
 
-Content transitions only take effect within transactions that apply an [`Animation`](animation.md) to the views inside the [`contentTransition(_:)`](view/contenttransition(_:).md) modifier.
-
 Content transitions only take effect within the context of an [`Animation`](animation.md) block.
 
 ## Topics
@@ -53,6 +51,7 @@ Content transitions only take effect within the context of an [`Animation`](anim
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

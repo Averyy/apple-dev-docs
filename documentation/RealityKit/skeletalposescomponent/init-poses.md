@@ -10,6 +10,7 @@ Creates a component value with the provided poses.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -21,8 +22,6 @@ init(poses: [SkeletalPose])
 #### Discussion
 
 > ⚠️ **Warning**: When multiple poses share the same identifier, only the first one is accessible using its identifier.
-
-When multiple poses share the same identifier, only the first one is accessible using its identifier.
 
 ## Parameters
 

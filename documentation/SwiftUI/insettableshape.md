@@ -42,6 +42,7 @@ protocol InsettableShape : Shape
 ### Inherits From
 - [Animatable](animatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Shape](shape.md)
 - [View](view.md)
 ### Conforming Types

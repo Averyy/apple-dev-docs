@@ -1,6 +1,6 @@
 # nonStrict()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Options that specify that an unfulfilled expected failure doesn’t generate a test failure.

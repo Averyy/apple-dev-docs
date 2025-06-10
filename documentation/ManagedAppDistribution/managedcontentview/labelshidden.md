@@ -1,6 +1,6 @@
 # labelsHidden()
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Hides the labels of any controls contained within this view.

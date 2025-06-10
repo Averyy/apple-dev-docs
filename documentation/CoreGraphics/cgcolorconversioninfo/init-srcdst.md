@@ -38,7 +38,6 @@ You can use a color conversion object to create [`MPSImageConversion`](https://d
 ## See Also
 
 - [init?(optionsSrc: CGColorSpace, dst: CGColorSpace, options: CFDictionary?)](cgcolorconversioninfo/init(optionssrc:dst:options:).md)
-- [init?(src: CGColorSpace, srcHeadroom: Float, dst: CGColorSpace, dstHeadroom: Float, toneMapping: CGToneMapping, options: CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?)](cgcolorconversioninfo/init(src:srcheadroom:dst:dstheadroom:tonemapping:options:).md)
 - [enum CGColorConversionInfoTransformType](cgcolorconversioninfotransformtype.md)
   Constants describing how a color conversion uses color spaces.
 

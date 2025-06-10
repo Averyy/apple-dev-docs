@@ -46,6 +46,7 @@ When you use this constraint to test a running process, it tests whether the pro
 - [OnDiskConstraint](ondiskconstraint.md)
 - [ProcessConstraint](processconstraint.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

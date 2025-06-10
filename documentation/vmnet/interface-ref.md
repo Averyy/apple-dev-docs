@@ -1,6 +1,6 @@
 # interface_ref
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: typealias
 
 A virtual network interface.

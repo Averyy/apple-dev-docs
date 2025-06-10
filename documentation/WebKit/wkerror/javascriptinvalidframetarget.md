@@ -1,6 +1,6 @@
 # javaScriptInvalidFrameTarget
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An error that indicates your content referenced an invalid web frame.

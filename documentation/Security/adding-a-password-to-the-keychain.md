@@ -80,4 +80,4 @@ In other cases, it might make sense to further characterize the item by adding m
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/adding-a-password-to-the-keychain)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/adding-a-password-to-the-keychain)*

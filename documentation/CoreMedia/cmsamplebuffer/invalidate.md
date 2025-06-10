@@ -26,8 +26,6 @@ You can’t use a sample buffer after invalidating it; all of its accessors thro
 
 > ❗ **Important**:  Don’t invalidate a sample buffer that another process is accessing concurrently.
 
- Don’t invalidate a sample buffer that another process is accessing concurrently.
-
 ## See Also
 
 - [var isValid: Bool](cmsamplebuffer/isvalid.md)

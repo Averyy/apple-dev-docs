@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a set containing only the specified SquareAzimuth.
+Creates a set containing only the specified [`SquareAzimuth`](squareazimuth.md).
 
 **Availability**:
 - visionOS 2.0+

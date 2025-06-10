@@ -1,6 +1,6 @@
 # VTSessionCopySerializableProperties(_:allocator:dictionaryOut:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Retrieves the set of serializable property keys and their current values.

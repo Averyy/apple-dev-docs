@@ -1,6 +1,6 @@
 # pushController(withName:context:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Pushes a new interface controller onto the screen.

@@ -51,8 +51,6 @@ https://site.example.com?externalPurchaseToken=ewoJImFwcEFwcGxlSWQiOjEyMzQ1Njc4O
 
 > ❗ **Important**:  Record and use the external purchase token to report the customer’s external purchases to Apple. For more information, see [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
 
- Record and use the external purchase token to report the customer’s external purchases to Apple. For more information, see [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
-
 ##### Handle Errors
 
 This method throws a [`StoreKitError`](storekiterror.md) if any of the following are true:

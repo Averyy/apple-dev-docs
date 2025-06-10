@@ -23,8 +23,6 @@ var maxTotalThreadsPerThreadgroup: Int { get set }
 
 > ❗ **Important**:  Both the Metal API and Metal Shader language allow setting the maximum number of threads per threadgroup. When you use both, the value of this property needs to be identical to your shader’s `[[max_total_threads_per_threadgroup]]` attribute, or an error occurs.
 
- Both the Metal API and Metal Shader language allow setting the maximum number of threads per threadgroup. When you use both, the value of this property needs to be identical to your shader’s `[[max_total_threads_per_threadgroup]]` attribute, or an error occurs.
-
 By default, when you create an [`MTLComputePipelineState`](mtlcomputepipelinestate.md) instance, Metal calculates the maximum number of threads per threadgroup that you can dispatch to it. The [`MTLDevice`](mtldevice.md) and compute pass’s use of memory determine the thread limit. Metal keeps the GPU as saturated as possible, but may use fewer threads in a threadgroup than the maximum.
 
 The maximum number of threads Metal can use in a compute pass is the [`maxTotalThreadsPerThreadgroup`](mtlcomputepipelinestate/maxtotalthreadsperthreadgroup.md) property of the [`MTLComputePipelineState`](mtlcomputepipelinestate.md) created from your descriptor.

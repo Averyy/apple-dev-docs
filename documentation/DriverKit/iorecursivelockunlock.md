@@ -15,6 +15,14 @@
 void IORecursiveLockUnlock(struct IORecursiveLock * lock);
 ```
 
+#### Discussion
+
+Undo one call to IORecursiveLockLock, if the lock is now unlocked wake any blocked waiters. Results are undefined if the caller does not balance calls to IORecursiveLockLock with IORecursiveLockUnlock.
+
+## Parameters
+
+- `lock`: Pointer to the allocated lock.
+
 ## See Also
 
 - [dequeue_head](dequeue_head.md)

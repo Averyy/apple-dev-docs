@@ -25,8 +25,6 @@ Use multitoken contexts to indicate payments for multiple merchants. This modifi
 
 > ❗ **Important**:  You can’t use this property with [`recurringPaymentRequest`](applepaymodifier/recurringpaymentrequest.md) or [`automaticReloadPaymentRequest`](applepaymodifier/automaticreloadpaymentrequest.md) properties. Simultaneous use of these properties results in an error and cancels the payment request.
 
- You can’t use this property with [`recurringPaymentRequest`](applepaymodifier/recurringpaymentrequest.md) or [`automaticReloadPaymentRequest`](applepaymodifier/automaticreloadpaymentrequest.md) properties. Simultaneous use of these properties results in an error and cancels the payment request.
-
 ## See Also
 
 - [ApplePayPaymentTokenContext](applepaypaymenttokencontext.md)

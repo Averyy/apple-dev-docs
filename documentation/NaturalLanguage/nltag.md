@@ -104,6 +104,7 @@ When you create a linguistic tagger, you specify one or more [`NLTagScheme`](nlt
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

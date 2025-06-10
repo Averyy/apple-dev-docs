@@ -1,6 +1,6 @@
 # fileImporter(isPresented:allowedContentTypes:allowsMultipleSelection:onCompletion:onCancellation:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Presents a system dialog for allowing the user to import multiple files.
@@ -9,7 +9,7 @@ Presents a system dialog for allowing the user to import multiple files.
 - iOS 17.0+
 - iPadOS 17.0+
 - macOS 14.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

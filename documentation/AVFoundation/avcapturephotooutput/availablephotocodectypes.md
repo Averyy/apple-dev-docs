@@ -1,6 +1,6 @@
 # availablePhotoCodecTypes
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The compression codecs this capture output currently supports for photo capture.

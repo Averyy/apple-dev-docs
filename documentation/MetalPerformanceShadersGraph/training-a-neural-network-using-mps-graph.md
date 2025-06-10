@@ -1,6 +1,6 @@
 # Training a Neural Network using MPS Graph
 
-**Framework**: Metalperformanceshadersgraph
+**Framework**: Metal Performance Shaders Graph
 
 Train a simple neural network digit classifier.
 

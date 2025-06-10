@@ -1,6 +1,6 @@
 # astronomicalDusk
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The time of astronomical sunset, when the sun’s center is 18° below the horizon.

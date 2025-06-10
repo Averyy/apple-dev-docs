@@ -53,6 +53,9 @@ You can query the audio session’s [`currentRoute`](avaudiosession/currentroute
   The preferred audio data source for the port.
 - [func setPreferredDataSource(AVAudioSessionDataSourceDescription?) throws](avaudiosessionportdescription/setpreferreddatasource(_:).md)
   Sets the preferred audio data source for the port.
+### Instance Properties
+- [var bluetoothMicrophoneExtension: AVAudioSessionPortExtensionBluetoothMicrophone?](avaudiosessionportdescription/bluetoothmicrophoneextension.md)
+  An optional port extension that describes capabilities relevant to Bluetooth microphone ports.
 
 ## Relationships
 
@@ -66,6 +69,7 @@ You can query the audio session’s [`currentRoute`](avaudiosession/currentroute
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

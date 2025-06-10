@@ -1,6 +1,6 @@
 # ShippingFulfillment.Recipient
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 The recipient of the shipment.

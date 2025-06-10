@@ -19,6 +19,10 @@
 case rg11b10Float
 ```
 
+## Mentions
+
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+
 #### Discussion
 
 The components have no sign bit. The 10-bit float has 5 bits of mantissa and 5 bits of exponent. The 11-bit floats have 6 bits of mantissa and 5 bits of exponent.

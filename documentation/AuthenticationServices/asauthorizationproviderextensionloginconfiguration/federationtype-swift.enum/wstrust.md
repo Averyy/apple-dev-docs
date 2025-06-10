@@ -14,8 +14,8 @@ case wsTrust
 
 ## Mentions
 
-- [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
 - [Performing a WS-Trust metadata exchange data (MEX) request](performing-a-ws-trust-metadata-exchange-data-mex-request.md)
+- [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
 
 ## See Also
 

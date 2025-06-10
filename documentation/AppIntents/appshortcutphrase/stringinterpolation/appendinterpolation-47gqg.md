@@ -6,10 +6,10 @@
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -22,6 +22,9 @@ mutating func appendInterpolation(_ token: AppShortcutPhraseToken)
 
 - [func appendLiteral(String)](appshortcutphrase/stringinterpolation/appendliteral(_:).md)
   Appends a literal segment to the interpolation.
+- [func appendInterpolation<Value, Subject>(Subject)](appshortcutphrase/stringinterpolation/appendinterpolation(_:)-5kcab.md)
+- [enum AppShortcutPhraseToken](appshortcutphrasetoken.md)
+  Dynamic values you can include in the spoken phrases that run your shortcut.
 
 
 ---

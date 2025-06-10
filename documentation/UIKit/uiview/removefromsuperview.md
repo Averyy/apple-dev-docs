@@ -31,8 +31,6 @@ Calling this method removes any constraints that refer to the view you are remov
 
 > ❗ **Important**:  Never call this method from inside your view’s [`draw(_:)`](uiview/draw(_:).md) method.
 
- Never call this method from inside your view’s [`draw(_:)`](uiview/draw(_:).md) method.
-
 ## See Also
 
 - [var superview: UIView?](uiview/superview.md)

@@ -1,6 +1,6 @@
 # UNIFORM_OFFSET
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

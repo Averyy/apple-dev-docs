@@ -49,8 +49,6 @@ cancellable = myRange.publisher
 
 > ❗ **Important**: The [`Subscribers.Assign`](subscribers/assign.md) instance created by this operator maintains a strong reference to `object`, and sets it to `nil` when the upstream publisher completes (either normally or with an error).
 
-The [`Subscribers.Assign`](subscribers/assign.md) instance created by this operator maintains a strong reference to `object`, and sets it to `nil` when the upstream publisher completes (either normally or with an error).
-
 ## Parameters
 
 - `keyPath`: A key path that indicates the property to assign. See   in   to learn how to use key paths to specify a property of an object.

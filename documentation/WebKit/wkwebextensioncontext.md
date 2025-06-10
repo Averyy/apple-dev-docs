@@ -1,6 +1,6 @@
 # WKWebExtensionContext
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that represents the runtime environment for a web extension.

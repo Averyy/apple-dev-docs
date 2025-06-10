@@ -6,13 +6,13 @@
 The maximum distance that the wheel is allowed to move up or down relative to its connection point, in centimeters.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 

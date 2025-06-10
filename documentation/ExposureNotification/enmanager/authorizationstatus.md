@@ -20,8 +20,6 @@ class var authorizationStatus: ENAuthorizationStatus { get }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 
- This property is available in iOS 12.5, and in iOS 13.5 and later.
-
 This property can be used by the app to preflight authorization in order to determine if the user may be prompted.
 
 ## See Also

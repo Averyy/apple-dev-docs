@@ -1,6 +1,6 @@
 # averageLowTemperature
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The average observed low temperature for the month.

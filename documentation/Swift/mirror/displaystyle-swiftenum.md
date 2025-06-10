@@ -54,6 +54,7 @@ Playgrounds and the debugger will show a representation similar to the one used 
 - [Equatable](equatable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 
 ---

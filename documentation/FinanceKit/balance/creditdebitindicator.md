@@ -1,6 +1,6 @@
 # creditDebitIndicator
 
-**Framework**: Financekit  
+**Framework**: FinanceKit  
 **Kind**: property
 
 A value that indicates whether the balance is a credit or a debit balance.

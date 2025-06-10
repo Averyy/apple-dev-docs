@@ -1,6 +1,6 @@
 # VSError.Code.rejected
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 The system rejected the request.

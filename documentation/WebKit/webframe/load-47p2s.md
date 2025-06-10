@@ -1,6 +1,6 @@
 # load(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Connects to a given URL by initiating an asynchronous client request.

@@ -1,6 +1,6 @@
 # EphemeralBrowserSessionIsSupported
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 A Boolean that indicates whether the app supports ephemeral browsing when conducting authentication sessions.

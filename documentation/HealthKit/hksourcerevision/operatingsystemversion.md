@@ -1,6 +1,6 @@
 # operatingSystemVersion
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: property
 
 A string that identifies the operating system used to save a sample.

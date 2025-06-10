@@ -1,6 +1,6 @@
 # Obscuring virtual items in a scene behind real-world items
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
 
@@ -97,8 +97,6 @@ func run(_ sceneRec: SceneReconstructionProvider) async {
 ```
 
 > ❗ **Important**: To use `SceneReconstructionProvider`, your app must add the `NSWorldSensingUsageDescription` property key list entry to the `info.plist`.
-
-To use `SceneReconstructionProvider`, your app must add the `NSWorldSensingUsageDescription` property key list entry to the `info.plist`.
 
 ##### Start Scene Reconstruction
 

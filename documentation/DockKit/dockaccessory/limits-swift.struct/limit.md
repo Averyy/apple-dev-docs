@@ -35,6 +35,7 @@ Zero is the default minimum angular speed. Invalid limit specifications include 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

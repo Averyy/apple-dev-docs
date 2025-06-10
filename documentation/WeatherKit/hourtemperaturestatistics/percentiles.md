@@ -1,6 +1,6 @@
 # percentiles
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The temperature statistics for the hour.

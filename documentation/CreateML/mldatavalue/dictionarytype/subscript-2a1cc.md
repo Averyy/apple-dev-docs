@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: subscript
 
 Accesses the contiguous subrange of the collection’s elements specified by a range expression.

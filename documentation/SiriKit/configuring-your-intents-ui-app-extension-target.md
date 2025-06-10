@@ -33,8 +33,6 @@ The `NSExtensionMainStoryboard` key in your `Info.plist` file contains the name 
 
 > ❗ **Important**:  The `NSExtensionMainStoryboard` and `NSExtensionPrincipalClass` keys are mutually exclusive. If both keys appear in the extension’s `Info.plist` file, the system won’t load the extension.
 
- The `NSExtensionMainStoryboard` and `NSExtensionPrincipalClass` keys are mutually exclusive. If both keys appear in the extension’s `Info.plist` file, the system won’t load the extension.
-
 ## See Also
 
 - [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md)

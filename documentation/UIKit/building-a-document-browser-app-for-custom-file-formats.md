@@ -1,6 +1,6 @@
 # Building a document browser app for custom file formats
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Implement a custom document file format to manage user interactions with files on different cloud storage providers.
 
@@ -91,4 +91,4 @@ Finally, it’s important to know when to use the picker view controller. The [`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/building-a-document-browser-app-for-custom-file-formats)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/building-a-document-browser-app-for-custom-file-formats)*

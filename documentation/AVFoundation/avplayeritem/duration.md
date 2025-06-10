@@ -1,6 +1,6 @@
 # duration
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The duration of the item.

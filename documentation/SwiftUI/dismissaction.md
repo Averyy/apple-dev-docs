@@ -1,6 +1,6 @@
 # DismissAction
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 An action that dismisses a presentation.
@@ -99,6 +99,7 @@ The dismiss action has no effect on a view that isn’t currently presented. If 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -112,4 +113,4 @@ The dismiss action has no effect on a view that isn’t currently presented. If 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/dismissaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/dismissaction)*

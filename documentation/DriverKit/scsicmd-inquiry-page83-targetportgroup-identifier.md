@@ -15,6 +15,10 @@
 typedef struct SCSICmd_INQUIRY_Page83_TargetPortGroup_Identifier { ... } SCSICmd_INQUIRY_Page83_TargetPortGroup_Identifier;
 ```
 
+#### Overview
+
+INQUIRY Page 83h Target Port Group Identifier.
+
 ## Topics
 
 ### Instance Properties

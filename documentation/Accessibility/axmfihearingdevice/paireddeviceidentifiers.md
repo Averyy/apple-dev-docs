@@ -20,7 +20,7 @@ static func pairedDeviceIdentifiers() -> [UUID]
 
 #### Return Value
 
-An array of doc://com.apple.documentation/documentation/foundation/nsuuid/1574571-uuid objects that represent the [`Core Bluetooth`](https://developer.apple.com/documentation/CoreBluetooth) UUIDs of the hearing device peripherals.
+An array of [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID) objects that represent the [`Core Bluetooth`](https://developer.apple.com/documentation/CoreBluetooth) UUIDs of the hearing device peripherals.
 
 #### Discussion
 

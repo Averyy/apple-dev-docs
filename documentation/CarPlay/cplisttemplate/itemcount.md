@@ -13,6 +13,7 @@ The total number of items, across all sections, in the list.
 ## Declaration
 
 ```swift
+@MainActor
 var itemCount: Int { get }
 ```
 

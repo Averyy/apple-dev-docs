@@ -1,6 +1,6 @@
 # fileMover(isPresented:files:onCompletion:onCancellation:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Presents a system dialog for allowing the user to move a collection of existing files to a new location.
@@ -9,7 +9,7 @@ Presents a system dialog for allowing the user to move a collection of existing 
 - iOS 17.0+
 - iPadOS 17.0+
 - macOS 14.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

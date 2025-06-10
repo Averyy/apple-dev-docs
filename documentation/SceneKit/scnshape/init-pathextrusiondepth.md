@@ -6,18 +6,18 @@
 Creates a shape geometry with the specified path and extrusion depth.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.9+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 
 ```swift
-convenience init(path: NSBezierPath?, extrusionDepth: CGFloat)
+convenience init(path: UIBezierPath?, extrusionDepth: CGFloat)
 ```
 
 #### Return Value

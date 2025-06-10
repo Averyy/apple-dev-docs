@@ -1,6 +1,6 @@
 # Timed metadata sample data format
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 A concatenation of one or more atoms that structure a timed metadata media sample.
 

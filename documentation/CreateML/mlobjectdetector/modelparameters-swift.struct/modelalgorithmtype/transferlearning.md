@@ -18,7 +18,8 @@ case transferLearning(MLObjectDetector.ModelParameters.FeatureExtractorType)
 
 You typically use this transfer-learning algorithm to train an object detector in these situations:
 
-- Your training dataset has a limited number of examples. - You prefer your object detector’s Core ML model file to be as small as possible.
+- Your training dataset has a limited number of examples.
+- You prefer your object detector’s Core ML model file to be as small as possible.
 
 ## See Also
 

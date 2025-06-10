@@ -3,7 +3,7 @@
 **Framework**: ARKit  
 **Kind**: property
 
-The unique identifier of this anchor.
+The unique identifier of this reference object.
 
 **Availability**:
 - visionOS 2.0+

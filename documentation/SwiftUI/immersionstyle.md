@@ -6,6 +6,7 @@
 The styles that an immersive space can have.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -55,6 +56,10 @@ struct SolarSystemApp: App {
 ### Type Methods
 - [static progressive(_:initialAmount:)](immersionstyle/progressive(_:initialamount:).md)
   An immersion style that displays unbounded content that partially replaces passthrough video.
+- [static progressive(_:initialAmount:aspectRatio:)](immersionstyle/progressive(_:initialamount:aspectratio:).md)
+  An immersion style that displays unbounded content that partially replaces passthrough video.
+- [static func progressive(aspectRatio: ProgressiveImmersionAspectRatio) -> ProgressiveImmersionStyle](immersionstyle/progressive(aspectratio:).md)
+  An immersion style that displays unbounded content that partially replaces passthrough video.
 
 ## Relationships
 
@@ -74,6 +79,9 @@ struct SolarSystemApp: App {
   Sets the style for an immersive space.
 - [var immersiveSpaceDisplacement: Pose3D](environmentvalues/immersivespacedisplacement.md)
   The displacement that the system applies to the immersive space when moving the space away from its default position, in meters.
+- [struct ImmersiveEnvironmentBehavior](immersiveenvironmentbehavior.md)
+  The behavior of the system-provided immersive environments when a scene is opened by your app.
+- [struct ProgressiveImmersionAspectRatio](progressiveimmersionaspectratio.md)
 
 
 ---

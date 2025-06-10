@@ -6,6 +6,7 @@
 A structure that represents a state of immersion of your app.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -28,6 +29,7 @@ You don’t use this structure directly. Instead, SwiftUI provides instances of 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -48,11 +48,14 @@ You can use the last option to transform URLs, while still relying on the system
   The handler asks the system to open the original URL.
 - [static func systemAction(URL) -> OpenURLAction.Result](openurlaction/result/systemaction(_:).md)
   The handler asks the system to open the modified URL.
+### Type Methods
+- [static func systemAction(URL?, prefersInApp: Bool) -> OpenURLAction.Result](openurlaction/result/systemaction(_:prefersinapp:).md)
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

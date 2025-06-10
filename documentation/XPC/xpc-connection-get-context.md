@@ -1,6 +1,6 @@
 # xpc_connection_get_context(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the context for the connection.

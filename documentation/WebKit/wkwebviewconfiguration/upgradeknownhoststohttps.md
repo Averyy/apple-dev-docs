@@ -1,6 +1,6 @@
 # upgradeKnownHostsToHTTPS
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether the web view should automatically upgrade supported HTTP requests to HTTPS.

@@ -39,8 +39,6 @@ The point that results from applying the specified rotation.
   Returns a point that results from applying the specified pose.
 - [func clamp(to: Rect3D)](point3d/clamp(to:).md)
   Clamps the mutable point to the specified rectangle.
-- [func clamped(to: Rect3D) -> Point3D](point3d/clamped(to:).md)
-  Returns a point with coordinates that clamp to the specified rectangle.
 - [func scale(by: Double)](point3d/scale(by:).md)
 - [func rotated(by: simd_quatd, around: Point3D) -> Point3D](point3d/rotated(by:around:)-chuy.md)
   Returns a point that results from rotating with a quaternion around the specified point.

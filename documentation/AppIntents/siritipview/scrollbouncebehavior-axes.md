@@ -10,7 +10,7 @@ Configures the bounce behavior of scrollable views along the specified axis.
 - iPadOS 16.4+
 - macOS 13.3+
 - tvOS 16.4+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.4+
 
 ## Declaration

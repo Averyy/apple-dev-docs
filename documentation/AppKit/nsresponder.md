@@ -1,6 +1,6 @@
 # NSResponder
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An abstract class that forms the basis of event and command processing in AppKit.
@@ -25,7 +25,7 @@ The core classes—[`NSApplication`](nsapplication.md), [`NSWindow`](nswindow.md
 - Window with window controller but no documents: view > superviews > window > window controller > the application object
 - Window with no window controllers: view > superviews > window > the application object
 
-[`NSApplication`](nsapplication.md) displays a document-modal error alert and, if the error object has a recovery attempter, gives it a chance to recover from the error. A recovery attempter is an object that conforms to the [`NSErrorRecoveryAttempting`](https://developer.apple.com/documentation/foundation/nserror/nserrorrecoveryattempting) informal protocol.
+[`NSApplication`](nsapplication.md) displays a document-modal error alert and, if the error object has a recovery attempter, gives it a chance to recover from the error. A recovery attempter is an object that conforms to the [`NSErrorRecoveryAttempting`](https://developer.apple.com/documentation/Foundation/nserrorrecoveryattempting) informal protocol.
 
 > **Note**:  In macOS 10.15 and later, [`NSResponder`](nsresponder.md) and its descendants call the [`dealloc`](https://developer.apple.com/documentation/objectivec/nsobject/1571947-dealloc) method on the main thread. This method helps to avoid situations where an asynchronous block unexpectedly deallocates an object on a background queue.
 
@@ -194,6 +194,7 @@ The core classes—[`NSApplication`](nsapplication.md), [`NSWindow`](nswindow.md
   Creates a new responder object with data in an unarchiver.
 ### Instance Methods
 - [func contextMenuKeyDown(NSEvent)](nsresponder/contextmenukeydown(_:).md)
+- [func mouseCancelled(with: NSEvent)](nsresponder/mousecancelled(with:).md)
 - [func showWritingTools(Any?)](nsresponder/showwritingtools(_:).md)
 
 ## Relationships
@@ -225,4 +226,4 @@ The core classes—[`NSApplication`](nsapplication.md), [`NSWindow`](nswindow.md
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsresponder)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsresponder)*

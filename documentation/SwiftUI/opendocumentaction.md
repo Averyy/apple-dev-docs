@@ -54,6 +54,7 @@ To present an existing document, your app must define a [`DocumentGroup`](docume
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

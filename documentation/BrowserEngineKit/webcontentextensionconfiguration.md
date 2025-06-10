@@ -26,6 +26,7 @@
 ### Conforms To
 - [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -25,8 +25,6 @@ var fetchLimit: Int?
 
 > ❗ **Important**: Use `nil` to tell the fetch to return all models of the associated type, not `0`.
 
-Use `nil` to tell the fetch to return all models of the associated type, not `0`.
-
 The default value is `nil`.
 
 ## See Also

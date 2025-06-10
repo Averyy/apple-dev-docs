@@ -30,8 +30,6 @@ Use the typesetter to create lines, perform line breaking, and do other contextu
 
 > ❗ **Important**:  By default, this function returns `NULL` if the string requires unreasonable effort to typeset. To create a typesetter that always typesets the text, regardless of the amount of effort, set the [`kCTTypesetterOptionAllowUnboundedLayout`](kcttypesetteroptionallowunboundedlayout.md) option to [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue).
 
- By default, this function returns `NULL` if the string requires unreasonable effort to typeset. To create a typesetter that always typesets the text, regardless of the amount of effort, set the [`kCTTypesetterOptionAllowUnboundedLayout`](kcttypesetteroptionallowunboundedlayout.md) option to [`kCFBooleanTrue`](https://developer.apple.com/documentation/CoreFoundation/kCFBooleanTrue).
-
 ## Parameters
 
 - `string`: The attributed string to typeset. This parameter must be a valid   object.

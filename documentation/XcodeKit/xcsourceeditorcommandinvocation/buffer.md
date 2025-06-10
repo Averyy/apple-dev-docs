@@ -1,6 +1,6 @@
 # buffer
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The buffer of source text upon which the command can operate.

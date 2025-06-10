@@ -1,6 +1,6 @@
 # Specifying Measurements for Components
 
-**Framework**: Applenews
+**Framework**: Apple News
 
 Specify the units of measure to use for margins, minimum heights, and other dimensions.
 
@@ -148,4 +148,4 @@ This example creates a vertical margin that’s 50 percent of the left margin of
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/specifying-measurements-for-components)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applenews/specifying-measurements-for-components)*

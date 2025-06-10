@@ -16,8 +16,6 @@ To get started, use App Store Connect to create a separate and equivalent [`auto
 
 > 💡 **Tip**:  Use an [`app bundle`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev96d99635a) to group apps that share auto-renewable subscriptions on the same platform in a single App Store product page. An app bundle enables customers to view and download apps in a single purchase.
 
- Use an [`app bundle`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev96d99635a) to group apps that share auto-renewable subscriptions on the same platform in a single App Store product page. An app bundle enables customers to view and download apps in a single purchase.
-
 The following image illustrates the steps for implementing a multi-app subscription:
 
 ![A diagram of a subscription shared across multiple apps showing the flow of implementation between apps, developer account database, and the App Store.](https://docs-assets.developer.apple.com/published/c8625dbac1c5c2caacdd8f3fd0f5f76d/media-3174488%402x.png)
@@ -37,8 +35,6 @@ Check if the user has purchased any subscription products before showing a subsc
 Present users who don’t have an active subscription with the subscription for purchase. Consider all potential billing scenarios within your account database when determining eligibility and granting access to a user.
 
 > ❗ **Important**:  If the user has purchased the subscription from an app, you must propagate the purchase across all the apps that provide the subscription service. Failing to persist the purchase to the other apps opens the possibility of a user paying multiple times for the same service.
-
- If the user has purchased the subscription from an app, you must propagate the purchase across all the apps that provide the subscription service. Failing to persist the purchase to the other apps opens the possibility of a user paying multiple times for the same service.
 
 ##### Validate Subscription Status
 

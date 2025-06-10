@@ -1,6 +1,6 @@
 # overrideNewTabPageURL
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The URL to use as an alternative to the default new tab page, if the extension has one.

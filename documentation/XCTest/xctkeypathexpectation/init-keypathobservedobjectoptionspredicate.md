@@ -1,6 +1,6 @@
 # init(keyPath:observedObject:options:predicate:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an expectation that the system fulfills when the value of the observed property changes and satisfies the conditions of a predicate’s evaluation.
@@ -9,8 +9,8 @@ Creates an expectation that the system fulfills when the value of the observed p
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- tvOS 13.0+
 - Unknown ?+ - Deprecated
+- tvOS 13.0+
 
 ## Declaration
 

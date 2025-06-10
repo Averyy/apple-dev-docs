@@ -63,6 +63,7 @@ When the upload phase of the request finishes, the task behaves like a data task
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [ProgressReporting](progressreporting.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -86,4 +87,4 @@ When the upload phase of the request finishes, the task behaves like a data task
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessionuploadtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessionuploadtask)*

@@ -6,6 +6,9 @@
 A view controller that hosts remote views provided by an extension.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 13.0+
 
 ## Declaration
@@ -22,7 +25,7 @@ class EXHostViewController
   The view controller’s configuration.
 - [EXHostViewController.Configuration](exhostviewcontroller/configuration-swift.struct.md)
   An object that holds configuration options for a host view controller.
-- [var placeholderView: NSView](exhostviewcontroller/placeholderview.md)
+- [var placeholderView: UIView](exhostviewcontroller/placeholderview.md)
   A view that’s used when the view controller has no content to display.
 ### Connecting to the Extension
 - [func makeXPCConnection() throws -> NSXPCConnection](exhostviewcontroller/makexpcconnection.md)
@@ -36,6 +39,7 @@ class EXHostViewController
 
 ### Inherits From
 - [NSViewController](../AppKit/NSViewController.md)
+- [UIViewController](../UIKit/UIViewController.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -51,7 +55,16 @@ class EXHostViewController
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
-- [Sendable](../Swift/Sendable.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
+- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
+- [UIContentContainer](../UIKit/UIContentContainer.md)
+- [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
+- [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
+- [UIStateRestoring](../UIKit/UIStateRestoring.md)
+- [UITraitChangeObservable](../UIKit/UITraitChangeObservable-67e94.md)
+- [UITraitEnvironment](../UIKit/UITraitEnvironment.md)
+- [UIUserActivityRestoring](../UIKit/UIUserActivityRestoring.md)
 
 ## See Also
 

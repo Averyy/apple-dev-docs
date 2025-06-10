@@ -364,4 +364,4 @@ If you notarize using `altool`, the notary service sends you an email when it’
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3147-migrating-to-the-latest-notarization-tool)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3147-migrating-to-the-latest-notarization-tool)*

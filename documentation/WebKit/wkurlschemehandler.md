@@ -1,6 +1,6 @@
 # WKURLSchemeHandler
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 A protocol for loading resources with URL schemes that WebKit doesn’t handle.
@@ -49,7 +49,7 @@ When a web view encounters a resource that uses a custom scheme, it creates a [`
   An object that manages the HTTP cookies associated with a particular web view.
 - [protocol WKURLSchemeTask](wkurlschemetask.md)
   An interface that WebKit uses to request custom resources from your app.
-- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../foundation/nsattributedstring/documentreadingoptionkey/3182829-readaccessurl.md)
+- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../Foundation/NSAttributedString/DocumentReadingOptionKey/readAccessURL.md)
   The local files WebKit can access when loading content.
 
 

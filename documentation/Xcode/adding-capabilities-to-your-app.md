@@ -16,8 +16,6 @@ Before you begin, [`add your Apple Account`](https://developer.apple.comhttps://
 
 > ❗ **Important**: Use the default automatic signing when you create a project from a template. If you [`manually sign your app`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev1bf96f17e), you need to perform the capability configuration steps yourself.
 
-Use the default automatic signing when you create a project from a template. If you [`manually sign your app`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev1bf96f17e), you need to perform the capability configuration steps yourself.
-
 ##### Add a Capability
 
 You add capabilities to your app using the Signing & Capabilities pane of the project editor.

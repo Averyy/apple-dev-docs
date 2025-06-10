@@ -10,7 +10,7 @@ Adds an action to be performed when a value, created from a geometry proxy, chan
 - iPadOS 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

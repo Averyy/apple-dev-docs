@@ -1,6 +1,6 @@
 # XCTExpectFailure(_:enabled:strict:failingBlock:issueMatcher:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: func
 
 Instructs the test to expect a failure in an assertion in the provided block of code, with parameters to customize expected failure checking and handling.

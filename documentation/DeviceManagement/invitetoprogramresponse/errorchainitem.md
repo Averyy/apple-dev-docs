@@ -9,8 +9,6 @@ A dictionary that describes an error chain item.
 - iOS 7.0+
 - iPadOS 7.0+
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

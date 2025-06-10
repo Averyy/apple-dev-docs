@@ -1,6 +1,6 @@
 # init(data:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an attachment containing the provided data payload.

@@ -23,8 +23,6 @@ The instance is only valid for the duration of the call.
 
 > ❗ **Important**:  The use of this API requires an entitlement. For information about requesting access, see [`com.apple.developer.avfoundation.multitasking-camera-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.avfoundation.multitasking-camera-access).
 
- The use of this API requires an entitlement. For information about requesting access, see [`com.apple.developer.avfoundation.multitasking-camera-access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.avfoundation.multitasking-camera-access).
-
 ## Parameters
 
 - `sourceView`: A view that contains the content of the video call.

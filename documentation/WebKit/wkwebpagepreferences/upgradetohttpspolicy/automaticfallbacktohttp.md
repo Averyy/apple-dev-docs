@@ -1,6 +1,6 @@
 # WKWebpagePreferences.UpgradeToHTTPSPolicy.automaticFallbackToHTTP
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 **Availability**:

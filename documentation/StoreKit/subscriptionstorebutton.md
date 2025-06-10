@@ -28,8 +28,6 @@ Standard subscription store control styles use the subscription store button. Fo
 
 > 💡 **Tip**:  Within the scope of your type conforming to [`SubscriptionStoreControlStyle`](subscriptionstorecontrolstyle.md), you can spell `SubscriptionStoreButton` as `SubscribeButton` through the [`SubscriptionStoreControlStyle.SubscribeButton`](subscriptionstorecontrolstyle/subscribebutton.md) type alias.
 
- Within the scope of your type conforming to [`SubscriptionStoreControlStyle`](subscriptionstorecontrolstyle.md), you can spell `SubscriptionStoreButton` as `SubscribeButton` through the [`SubscriptionStoreControlStyle.SubscribeButton`](subscriptionstorecontrolstyle/subscribebutton.md) type alias.
-
 In iOS, macOS, visionOS and watchOS you can configure the button’s label by modifying it with `subscriptionStoreButtonLabel(_:)`. Some button label configurations cause the button to have a caption, for example .`displayName.singleLine`.
 
 Because the `SubscriptionStoreButton` is composed of a SwiftUI [`Button`](https://developer.apple.com/documentation/SwiftUI/Button), you can also configure the button using other built-in view modifiers such as [`buttonStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/buttonStyle(_:)-66fbx).
@@ -37,8 +35,6 @@ Because the `SubscriptionStoreButton` is composed of a SwiftUI [`Button`](https:
 To create a `SubscriptionStoreButton`, provide a value of [`SubscriptionStoreControlStyleConfiguration.Option`](subscriptionstorecontrolstyleconfiguration/option.md) to the [`init(_:)`](subscriptionstorebutton/init(_:).md) method. Get an option value from the required [`makeBody(configuration:)`](subscriptionstorecontrolstyle/makebody(configuration:).md) method on your [`SubscriptionStoreControlStyle`](subscriptionstorecontrolstyle.md) implementation.
 
 > ❗ **Important**:  Use `SubscriptionStoreButton` only in the view you return from the required [`makeBody(configuration:)`](subscriptionstorecontrolstyle/makebody(configuration:).md) method of [`SubscriptionStoreControlStyle`](subscriptionstorecontrolstyle.md). Using `SubscriptionStoreButton` in other contexts is not supported.
-
- Use `SubscriptionStoreButton` only in the view you return from the required [`makeBody(configuration:)`](subscriptionstorecontrolstyle/makebody(configuration:).md) method of [`SubscriptionStoreControlStyle`](subscriptionstorecontrolstyle.md). Using `SubscriptionStoreButton` in other contexts is not supported.
 
 ## Topics
 
@@ -50,6 +46,7 @@ To create a `SubscriptionStoreButton`, provide a value of [`SubscriptionStoreCon
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

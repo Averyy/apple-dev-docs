@@ -1,6 +1,6 @@
 # RxFreeSpaceAvailable
 
-**Framework**: Usbserialdriverkit  
+**Framework**: USBSerialDriverKit  
 **Kind**: method
 
 Notifies your driver that buffer space is available for your device’s data.

@@ -5,6 +5,18 @@
 
 A texture with RealityKit properties, a specified LOD gradient, and pixel texture coordinates.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
+#### Overview
+
+Level of detail gradient. Pixel texture coordinates
+
 #### Parameter Types
 
 #### Parameter Descriptions
@@ -16,8 +28,6 @@ The Image 2D Gradient Pixel node produces a texture using the contents of the im
 For the wrap mode parameters, the possible values are:
 
 > ⚠️ **Warning**: You can only use the clamp-to-zero option if the `Border Color` parameter is set to `transparent_black`; otherwise, the behavior of the node is undefined.
-
-You can only use the clamp-to-zero option if the `Border Color` parameter is set to `transparent_black`; otherwise, the behavior of the node is undefined.
 
 For the `Filter` parameter, the possible values are:
 

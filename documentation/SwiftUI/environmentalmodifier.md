@@ -47,6 +47,14 @@ protocol EnvironmentalModifier : ViewModifier where Self.Body == Never
   An empty, or identity, modifier, used during development to switch modifiers at compile time.
 - [struct ModifiedContent](modifiedcontent.md)
   A value with a modifier applied to it.
+- [struct ManipulableModifier](manipulablemodifier.md)
+- [struct ManipulableResponderModifier](manipulablerespondermodifier.md)
+- [struct ManipulableTransformBindingModifier](manipulabletransformbindingmodifier.md)
+- [struct ManipulationGeometryModifier](manipulationgeometrymodifier.md)
+- [struct ManipulationGestureModifier](manipulationgesturemodifier.md)
+- [struct ManipulationUsingGestureStateModifier](manipulationusinggesturestatemodifier.md)
+- [enum Manipulable](manipulable.md)
+  A namespace for various manipulable related types.
 
 
 ---

@@ -1,6 +1,6 @@
 # serviceName
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The weather data provider name.

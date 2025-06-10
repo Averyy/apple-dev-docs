@@ -26,8 +26,6 @@ Use the permutation array to specify the input axis source for the corresponding
 
 > ❗ **Important**:  The number of input dimensions must be equal to number of output dimensions.
 
- The number of input dimensions must be equal to number of output dimensions.
-
 ## Parameters
 
 - `i_desc`: The descriptor of the input.

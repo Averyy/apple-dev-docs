@@ -1,0 +1,35 @@
+# AppStoreVersionExperimentV2AppStoreVersionExperimentTreatmentsLinkagesResponse
+
+**Framework**: App Store Connect API  
+**Kind**: dictionary
+
+**Availability**:
+- App Store Connect API 3.6+
+
+## Declaration
+
+```swift
+object AppStoreVersionExperimentV2AppStoreVersionExperimentTreatmentsLinkagesResponse
+```
+
+## Topics
+
+### Dictionaries
+- [object AppStoreVersionExperimentV2AppStoreVersionExperimentTreatmentsLinkagesResponse.Data](appstoreversionexperimentv2appstoreversionexperimenttreatmentslinkagesresponse/data-data.dictionary.md)
+
+## See Also
+
+- [object AppStoreVersionExperimentTreatment](appstoreversionexperimenttreatment.md)
+- [object AppStoreVersionExperimentTreatmentCreateRequest](appstoreversionexperimenttreatmentcreaterequest.md)
+- [object AppStoreVersionExperimentTreatmentResponse](appstoreversionexperimenttreatmentresponse.md)
+- [object AppStoreVersionExperimentTreatmentUpdateRequest](appstoreversionexperimenttreatmentupdaterequest.md)
+- [object AppStoreVersionExperimentTreatmentsResponse](appstoreversionexperimenttreatmentsresponse.md)
+- [object AppStoreVersionExperimentAppStoreVersionExperimentTreatmentsLinkagesResponse](appstoreversionexperimentappstoreversionexperimenttreatmentslinkagesresponse.md)
+- [object AppStoreVersionExperimentTreatmentAppStoreVersionExperimentTreatmentLocalizationsLinkagesResponse](appstoreversionexperimenttreatmentappstoreversionexperimenttreatmentlocalizationslinkagesresponse.md)
+- [object AppStoreVersionExperimentTreatmentLocalizationAppPreviewSetsLinkagesResponse](appstoreversionexperimenttreatmentlocalizationapppreviewsetslinkagesresponse.md)
+- [object AppStoreVersionExperimentTreatmentLocalizationAppScreenshotSetsLinkagesResponse](appstoreversionexperimenttreatmentlocalizationappscreenshotsetslinkagesresponse.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/appstoreversionexperimentv2appstoreversionexperimenttreatmentslinkagesresponse)*

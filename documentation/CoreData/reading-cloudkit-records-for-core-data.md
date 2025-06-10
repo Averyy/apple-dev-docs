@@ -1,6 +1,6 @@
 # Reading CloudKit Records for Core Data
 
-**Framework**: Coredata
+**Framework**: Core Data
 
 Access CloudKit records created from Core Data managed objects.
 
@@ -213,4 +213,4 @@ Alternatively, use the class functions [`recordForManagedObjectID:`](nspersisten
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/reading-cloudkit-records-for-core-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coredata/reading-cloudkit-records-for-core-data)*

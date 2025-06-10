@@ -9,7 +9,8 @@
 ## Declaration
 
 ```swift
-func updateRootPose(_ pose: Pose3D)
+@MainActor
+@preconcurrency func updateRootPose(_ pose: Pose3D)
 ```
 
 

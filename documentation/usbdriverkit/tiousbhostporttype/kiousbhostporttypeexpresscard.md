@@ -24,8 +24,6 @@ kIOUSBHostPortTypeExpressCard
   A port that cannot be physically disconnected from the host machine.
 - [kIOUSBHostPortTypeAccessory](tiousbhostporttype/kiousbhostporttypeaccessory.md)
   A port for which the device might require additional authentication before a driver can access it.
-- [kIOUSBHostPortTypeCount](tiousbhostporttype/kiousbhostporttypecount.md)
-  The number of port types.
 
 
 ---

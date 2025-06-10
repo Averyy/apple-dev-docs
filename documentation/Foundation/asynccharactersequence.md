@@ -25,6 +25,7 @@ struct AsyncCharacterSequence<Base> where Base : AsyncSequence, Base.Element == 
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

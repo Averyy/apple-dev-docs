@@ -1,6 +1,6 @@
 # WKUserScriptInjectionTime.atDocumentStart
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A constant to inject the script after the creation of the webpage’s document element, but before loading any other content.

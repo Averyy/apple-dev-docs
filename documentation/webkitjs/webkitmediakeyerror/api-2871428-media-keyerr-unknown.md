@@ -1,6 +1,6 @@
 # MEDIA_KEYERR_UNKNOWN
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

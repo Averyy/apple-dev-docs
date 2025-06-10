@@ -1,6 +1,6 @@
 # documentStorageURL
 
-**Framework**: Fileprovider  
+**Framework**: File Provider  
 **Kind**: property
 
 The root URL for all shared documents.
@@ -18,7 +18,7 @@ var documentStorageURL: URL { get }
 
 #### Discussion
 
-This property contains the URL `<container URL>/File Provider Storage`, where  is the value returned by the [`containerURL(forSecurityApplicationGroupIdentifier:)`](https://developer.apple.com/documentation/foundation/filemanager/1412643-containerurl) method.
+This property contains the URL `<container URL>/File Provider Storage`, where  is the value returned by the [`containerURL(forSecurityApplicationGroupIdentifier:)`](https://developer.apple.com/documentation/Foundation/FileManager/containerURL(forSecurityApplicationGroupIdentifier:)) method.
 
 The container URL refers to an app group container directory used by the `NSFileProviderExtension` extension. You can specify this shared container using the `NSExtensionFileProviderDocumentGroup` key in the File Provider extension’s `info.plist` file.
 
@@ -34,4 +34,4 @@ The container URL refers to an app group container directory used by the `NSFile
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/nsfileprovidermanager/documentstorageurl)*
+*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/nsfileprovidermanager/documentstorageurl)*

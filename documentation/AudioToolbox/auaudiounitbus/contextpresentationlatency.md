@@ -39,8 +39,6 @@ This version 3 property is bridged to the version 2 `kAudioUnitProperty_Presenta
 
 > ❗ **Important**:  This property does not describe the same value as the audio unit’s [`latency`](auaudiounit/latency.md) property, with which the audio unit describes to the host any processing latency it introduces between its input and output.
 
- This property does not describe the same value as the audio unit’s [`latency`](auaudiounit/latency.md) property, with which the audio unit describes to the host any processing latency it introduces between its input and output.
-
 ## See Also
 
 - [func setFormat(AVAudioFormat) throws](auaudiounitbus/setformat(_:).md)

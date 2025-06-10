@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionErrorCode.notYetStarted
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The app invalidated the session before it started.

@@ -1,6 +1,6 @@
 # managementURL
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property
 
 A URL to a web page where the user can manage and delete the payment method for the automatic reload payment.

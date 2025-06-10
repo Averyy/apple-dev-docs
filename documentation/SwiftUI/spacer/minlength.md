@@ -17,8 +17,7 @@ The minimum length this spacer can be shrunk to, along the axis or axes of expan
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency var minLength: CGFloat?
+var minLength: CGFloat?
 ```
 
 #### Discussion

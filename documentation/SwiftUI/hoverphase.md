@@ -66,6 +66,7 @@ var body: some View {
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -81,6 +82,12 @@ var body: some View {
   Sets the default hover effect to use for views within this view.
 - [var isHoverEffectEnabled: Bool](environmentvalues/ishovereffectenabled.md)
   A Boolean value that indicates whether the view associated with this environment allows hover effects to be displayed.
+- [struct HoverEffectPhaseOverride](hovereffectphaseoverride.md)
+  Options for overriding a hover effect’s current phase.
+- [struct OrnamentHoverContentEffect](ornamenthovercontenteffect.md)
+  Presents an ornament on hover using a custom effect.
+- [struct OrnamentHoverEffect](ornamenthovereffect.md)
+  Presents an ornament on hover.
 
 
 ---

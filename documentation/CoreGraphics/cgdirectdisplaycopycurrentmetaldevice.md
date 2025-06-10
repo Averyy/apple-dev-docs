@@ -1,6 +1,6 @@
 # CGDirectDisplayCopyCurrentMetalDevice(_:)
 
-**Framework**: Coregraphics  
+**Framework**: Core Graphics  
 **Kind**: func
 
 Returns the GPU device instance that’s currently driving a display.

@@ -17,8 +17,6 @@ For deployment targets earlier than iOS 13, add both [`NSBluetoothAlwaysUsageDes
 
 > ❗ **Important**:  This key is required if your app uses APIs that access Bluetooth peripherals and has a deployment target earlier than iOS 13.
 
- This key is required if your app uses APIs that access Bluetooth peripherals and has a deployment target earlier than iOS 13.
-
 ## See Also
 
 - [NSBluetoothAlwaysUsageDescription](information-property-list/nsbluetoothalwaysusagedescription.md)

@@ -1,6 +1,6 @@
 # kVTScalingMode_CropSourceToCleanAperture
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The source image buffer’s clean aperture is scaled to the destination clean aperture.

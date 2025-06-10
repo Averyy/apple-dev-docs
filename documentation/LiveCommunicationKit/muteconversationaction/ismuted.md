@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-Specifies if the `Conversation` should be muted or unmuted upon execution of this action.
+A value that specifies whether to mute or unmute the local participant of the conversation.
 
 **Availability**:
 - iOS 17.4+

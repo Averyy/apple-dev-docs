@@ -8,11 +8,18 @@ Learn about important changes in App Intents.
 
 Browse notable changes in [`App Intents`](https://developer.apple.com/documentation/AppIntents).
 
+#### June 2025
+
+- Create app intents that conform to [`SnippetIntent`](https://developer.apple.com/documentation/AppIntents/SnippetIntent) to display an interactive snippet.
+- Make app entities available in Spotlight that conform to [`IndexedEntity`](https://developer.apple.com/documentation/AppIntents/IndexedEntity) and use the `@ComputedProperty(indexingKey:)` or `@Property(indexingKey:)` Swift macros for attributes you want to add to the Spotlight index.
+- Integrate your app with visual intelligence by providing app entities to the system using an [`IntentValueQuery`](https://developer.apple.com/documentation/AppIntents/IntentValueQuery).
+- Create an [`AppEntity`](https://developer.apple.com/documentation/AppIntents/AppEntity) that conforms to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol and associate the app entity with a [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) using the activity’s [`appEntityIdentifier`](https://developer.apple.com/documentation/Foundation/NSUserActivity/appEntityIdentifier) property to make onscreen content available to Siri without adopting an assistant schema.
+
 #### November 2024
 
 ##### Siri and Apple Intelligence
 
-- Make onscreen content available to Siri and Apple Intelligence by describing it as an [`AppEntity`](https://developer.apple.com/documentation/AppIntents/AppEntity) and adopting an assistant schema. Additionally, adopt the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol, and associate the app entity with a [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) using the activity’s [`appEntityIdentifier`](https://developer.apple.com/documentation/foundation/nsuseractivity/4485360-appentityidentifier) property.
+- Make onscreen content available to Siri and Apple Intelligence by describing it as an [`AppEntity`](https://developer.apple.com/documentation/AppIntents/AppEntity) and adopting an assistant schema. Additionally, adopt the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol, and associate the app entity with a [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) using the activity’s [`appEntityIdentifier`](https://developer.apple.com/documentation/Foundation/NSUserActivity/appEntityIdentifier) property.
 
 #### June 2024
 
@@ -48,10 +55,14 @@ Browse notable changes in [`App Intents`](https://developer.apple.com/documentat
   Learn about important changes in ActivityKit.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [AppKit updates](appkit.md)
   Learn about important changes to AppKit.
 - [Apple Intelligence updates](apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -64,12 +75,8 @@ Browse notable changes in [`App Intents`](https://developer.apple.com/documentat
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
-- [Core Location updates](corelocation.md)
-  Learn about important changes to Core Location.
+- [Background Tasks updates](backgroundtasks.md)
+  Learn about important changes in Background Tasks.
 
 
 ---

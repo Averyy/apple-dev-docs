@@ -1,6 +1,6 @@
 # prefix(while:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns a subsequence containing the initial elements until `predicate` returns `false` and skipping the remaining elements.

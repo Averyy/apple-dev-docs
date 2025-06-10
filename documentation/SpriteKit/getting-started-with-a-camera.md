@@ -1,6 +1,6 @@
 # Getting Started with a Camera
 
-**Framework**: Spritekit
+**Framework**: SpriteKit
 
 Learn the semantics of using a camera in your scene.
 
@@ -25,4 +25,4 @@ In this way, a camera’s position, scale, and rotation always have the opposite
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/getting-started-with-a-camera)*
+*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/getting-started-with-a-camera)*

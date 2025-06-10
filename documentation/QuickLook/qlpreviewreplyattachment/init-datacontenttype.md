@@ -15,6 +15,11 @@
 init(data: Data, contentType: UTType)
 ```
 
+## Parameters
+
+- `data`: The data content of an html preview
+- `contentType`: The UTType of the attachment for an html preview
+
 
 ---
 

@@ -1,6 +1,6 @@
 # userIdentityLookupInfos
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: property
 
 The user data for the participants.

@@ -1,6 +1,6 @@
 # Authenticating with a Device Enrollment Program (DEP) Server
 
-**Framework**: Devicemanagement
+**Framework**: Device Management
 
 Communicate securely with a DEP web service, using a server token.
 
@@ -82,4 +82,4 @@ After a period of time, the token expires and the service returns a `401` error 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/authenticating-with-a-device-enrollment-program-dep-server)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/authenticating-with-a-device-enrollment-program-dep-server)*

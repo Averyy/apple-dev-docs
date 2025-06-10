@@ -1,6 +1,6 @@
 # Choosing a StoreKit API for In-App Purchases
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Use the latest API to support In-App Purchases in new or existing apps, or the original API to support In-App Purchases in earlier operating systems.
 
@@ -48,4 +48,4 @@ You might need to use the [`Original API for In-App Purchase`](original-api-for-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/choosing-a-storekit-api-for-in-app-purchases)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/choosing-a-storekit-api-for-in-app-purchases)*

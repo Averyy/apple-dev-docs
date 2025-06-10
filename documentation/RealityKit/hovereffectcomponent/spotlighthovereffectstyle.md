@@ -20,17 +20,10 @@ struct SpotlightHoverEffectStyle
 
 ## Topics
 
-### Operators
-- [static func == (HoverEffectComponent.SpotlightHoverEffectStyle, HoverEffectComponent.SpotlightHoverEffectStyle) -> Bool](hovereffectcomponent/spotlighthovereffectstyle/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
-- [init(color: UIColor?, strength: Float)](hovereffectcomponent/spotlighthovereffectstyle/init(color:strength:)-58ai1.md)
+- [init(color:strength:)](hovereffectcomponent/spotlighthovereffectstyle/init(color:strength:).md)
   Creates a new spotlight effect with a color and strength.
-- [init(color: NSColor?, strength: Float)](hovereffectcomponent/spotlighthovereffectstyle/init(color:strength:)-97kh4.md)
-  Creates a new spotlight effect with a color and strength.
-- [init(color: UIColor?, strength: Float, opacityFunction: HoverEffectComponent.OpacityFunction)](hovereffectcomponent/spotlighthovereffectstyle/init(color:strength:opacityfunction:)-3tsob.md)
-  Creates a new spotlight effect with a color and strength.
-- [init(color: NSColor?, strength: Float, opacityFunction: HoverEffectComponent.OpacityFunction)](hovereffectcomponent/spotlighthovereffectstyle/init(color:strength:opacityfunction:)-57r9t.md)
+- [init(color:strength:opacityFunction:)](hovereffectcomponent/spotlighthovereffectstyle/init(color:strength:opacityfunction:).md)
   Creates a new spotlight effect with a color and strength.
 ### Instance Properties
 - [var color: NSColor](hovereffectcomponent/spotlighthovereffectstyle/color-4n481.md)
@@ -44,8 +37,6 @@ struct SpotlightHoverEffectStyle
 ### Type Properties
 - [static let `default`: HoverEffectComponent.SpotlightHoverEffectStyle](hovereffectcomponent/spotlighthovereffectstyle/default.md)
   The default style applies a white spotlight glow at the hover location.
-### Default Implementations
-- [Equatable Implementations](hovereffectcomponent/spotlighthovereffectstyle/equatable-implementations.md)
 
 ## Relationships
 

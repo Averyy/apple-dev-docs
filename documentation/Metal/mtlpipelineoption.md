@@ -48,10 +48,13 @@ struct MTLPipelineOption
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also
 
+- [class MTL4ComputePipelineDescriptor](mtl4computepipelinedescriptor.md)
+  Descriptor defining how a compute pipeline state would be created.
 - [class MTLComputePipelineDescriptor](mtlcomputepipelinedescriptor.md)
   An instance describing the desired GPU state for a kernel call in a compute pass.
 - [protocol MTLComputePipelineState](mtlcomputepipelinestate.md)

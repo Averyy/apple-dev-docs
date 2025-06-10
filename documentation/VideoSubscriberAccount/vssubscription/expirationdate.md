@@ -1,6 +1,6 @@
 # expirationDate
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The date when the user’s subscription expires.
@@ -20,7 +20,7 @@ var expirationDate: Date! { get set }
 
 #### Discussion
 
-This property defines the exact time when the subscription becomes inactive. When the current subscription becomes inactive, the system behaves as though the user isn’t a subscriber, similar to calling [`setCurrentSubscription(_:)`](vssubscriptionregistrationcenter/setcurrentsubscription(_:).md) with a value of `nil`.
+This property defines the exact time when the subscription becomes inactive. When the current subscription becomes inactive, the system behaves as though the person isn’t a subscriber, similar to calling [`setCurrentSubscription(_:)`](vssubscriptionregistrationcenter/setcurrentsubscription(_:).md) with a value of `nil`.
 
 You can use this property when a subscriber decides not to renew their subscription by setting an expiration date that corresponds to the final billing cycle end date.
 

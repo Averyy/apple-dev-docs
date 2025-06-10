@@ -34,6 +34,7 @@ struct SequenceMaximum<Elements> where Elements : PredicateExpression, Elements.
 - [Encodable](../Swift/Encodable.md)
 - [PredicateExpression](predicateexpression.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StandardPredicateExpression](standardpredicateexpression.md)
 
 

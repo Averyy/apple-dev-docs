@@ -1,6 +1,6 @@
 # attachments
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The visual and audio attachments to display alongside the notification’s main content.

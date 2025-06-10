@@ -1,6 +1,6 @@
 # kVTProfileLevel_H264_Baseline_4_0
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

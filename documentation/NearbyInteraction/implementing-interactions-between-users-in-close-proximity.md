@@ -1,6 +1,6 @@
 # Implementing Interactions Between Users in Close Proximity
 
-**Framework**: Nearbyinteraction
+**Framework**: Nearby Interaction
 
 Enable devices to access relative positioning information.
 
@@ -29,4 +29,4 @@ Before you run the sample code project in Xcode, set the run destination to a de
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/NearbyInteraction/implementing-interactions-between-users-in-close-proximity)*
+*[View on Apple Developer](https://developer.apple.com/documentation/nearbyinteraction/implementing-interactions-between-users-in-close-proximity)*

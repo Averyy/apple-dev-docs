@@ -1,6 +1,6 @@
 # WKWebExtensionContext.PermissionStatus
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 Constants used to indicate permission status in web extension context.
@@ -46,6 +46,7 @@ enum PermissionStatus
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

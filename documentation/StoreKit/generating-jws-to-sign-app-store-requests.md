@@ -1,6 +1,6 @@
 # Generating JWS to sign App Store requests
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Create signed JSON Web Signature (JWS) strings on your server to authorize your API requests in your app.
 
@@ -196,4 +196,4 @@ After signing, you should have a string in JWS compact serialization format.  Se
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/generating-jws-to-sign-app-store-requests)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/generating-jws-to-sign-app-store-requests)*

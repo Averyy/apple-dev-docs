@@ -12,8 +12,6 @@ An SCEP identity that the device generates.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,7 +21,7 @@ object SCEPCredential
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object SCEPCredentialSubjectAltNameObject](scepcredentialsubjectaltnameobject.md)
   The subject’s alternative name for the certificate.
 

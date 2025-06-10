@@ -1,6 +1,6 @@
 # writingToolsCoordinator(_:requestsContextsFor:completion:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method  
 **Required**: Yes
 

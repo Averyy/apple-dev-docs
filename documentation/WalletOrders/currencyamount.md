@@ -1,6 +1,6 @@
 # CurrencyAmount
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 An amount of money.

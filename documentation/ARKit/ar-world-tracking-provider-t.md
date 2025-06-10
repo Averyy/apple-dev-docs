@@ -5,6 +5,10 @@
 
 A source of live data about the device pose and anchors in a person’s surroundings.
 
+**Availability**:
+- macOS 26.0+ (Beta)
+- visionOS 1.0+
+
 ## Declaration
 
 ```swift

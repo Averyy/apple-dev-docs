@@ -24,6 +24,9 @@ struct Index
 
 ### Initializers
 - [init?<S>(String.Index, within: S)](attributedstring/index/init(_:within:).md)
+### Instance Methods
+- [func isValid(within: DiscontiguousAttributedSubstring) -> Bool](attributedstring/index/isvalid(within:)-6wjr6.md)
+- [func isValid(within: some AttributedStringProtocol) -> Bool](attributedstring/index/isvalid(within:)-8fw50.md)
 
 ## Relationships
 
@@ -31,6 +34,7 @@ struct Index
 - [Comparable](../Swift/Comparable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

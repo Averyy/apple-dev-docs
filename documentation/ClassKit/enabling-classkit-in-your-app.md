@@ -1,6 +1,6 @@
 # Enabling ClassKit in your app
 
-**Framework**: Classkit
+**Framework**: ClassKit
 
 Prepare your app and your development environment to adopt ClassKit.
 
@@ -51,4 +51,4 @@ When you distribute your ClassKit enabled app through the App Store, it runs in 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/enabling-classkit-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/classkit/enabling-classkit-in-your-app)*

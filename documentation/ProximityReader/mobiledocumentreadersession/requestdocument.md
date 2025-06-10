@@ -1,6 +1,6 @@
 # requestDocument(_:)
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 Presents a sheet to read a mobile document and returns the relevant response.
@@ -9,6 +9,7 @@ Presents a sheet to read a mobile document and returns the relevant response.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
+- visionOS 1.0+
 
 ## Declaration
 

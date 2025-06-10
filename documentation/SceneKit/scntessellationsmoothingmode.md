@@ -4,12 +4,13 @@
 **Kind**: enum
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.13+
-- tvOS 12.0+
+- macOS 10.8+
+- tvOS 9.0+
 - visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 
@@ -34,6 +35,7 @@ enum SCNTessellationSmoothingMode
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # colorSchemeContrast
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 The contrast associated with the color scheme of this environment.
@@ -44,4 +44,4 @@ When adjusting your app’s user interface to match the contrast, consider also 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/environmentvalues/colorschemecontrast)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/environmentvalues/colorschemecontrast)*

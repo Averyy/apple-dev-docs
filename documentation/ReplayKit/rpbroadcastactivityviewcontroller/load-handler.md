@@ -1,6 +1,6 @@
 # load(handler:)
 
-**Framework**: Replaykit  
+**Framework**: ReplayKit  
 **Kind**: method
 
 Loads a broadcast activity view controller.

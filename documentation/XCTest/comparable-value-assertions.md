@@ -1,6 +1,6 @@
 # Comparable Value Assertions
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Compare two values to determine whether one is larger or smaller than the other.
 

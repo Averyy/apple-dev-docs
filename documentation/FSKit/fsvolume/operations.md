@@ -1,6 +1,6 @@
 # FSVolume.Operations
 
-**Framework**: Fskit  
+**Framework**: FSKit  
 **Kind**: protocol
 
 Methods that all volumes implement to provide required capabilities.
@@ -96,6 +96,9 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
   A property that provides up-to-date statistics of the volume.
 - [class FSStatFSResult](fsstatfsresult.md)
   A type used to report a volume’s statistics.
+### Instance Properties
+- [var enableOpenUnlinkEmulation: Bool](fsvolume/operations/enableopenunlinkemulation.md)
+  A property that allows the file system to use open-unlink emulation.
 
 ## Relationships
 
@@ -111,4 +114,4 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/FSKit/fsvolume/operations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/fskit/fsvolume/operations)*

@@ -1,6 +1,6 @@
 # Adopting live updates in Core Location
 
-**Framework**: Corelocation
+**Framework**: Core Location
 
 Simplify location delivery using asynchronous events in Swift.
 
@@ -35,4 +35,4 @@ The live updates sample requires Xcode 16 or later and iOS 18 or later.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/adopting-live-updates-in-core-location)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/adopting-live-updates-in-core-location)*

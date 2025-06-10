@@ -1,6 +1,6 @@
 # kVTVideoEncoderList_QualityRating
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

@@ -22,8 +22,8 @@ optional func update(_ currentTime: TimeInterval, for scene: SKScene)
 
 ## Mentions
 
-- [Detecting Changes at Each Step of an Animation](detecting-changes-at-each-step-of-an-animation.md)
 - [Disconnecting Bodies from Joints](disconnecting-bodies-from-joints.md)
+- [Detecting Changes at Each Step of an Animation](detecting-changes-at-each-step-of-an-animation.md)
 - [Use SpriteKit Objects within Scene Delegate Callbacks](use-spritekit-objects-within-scene-delegate-callbacks.md)
 
 #### Discussion

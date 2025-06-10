@@ -36,6 +36,7 @@ Use this type to specify a test timeout with [`TimeLimitTrait`](timelimittrait.m
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # Defining your app’s SharePlay activities
 
-**Framework**: Groupactivities
+**Framework**: Group Activities
 
 Configure your app’s SharePlay support and define the activities that people can perform from your app.
 
@@ -156,4 +156,4 @@ For more information on displaying a share sheet or supporting SharePlay via Air
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GroupActivities/defining-your-apps-shareplay-activities)*
+*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/defining-your-apps-shareplay-activities)*

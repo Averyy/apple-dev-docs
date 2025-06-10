@@ -20,8 +20,11 @@ static let children: NSAccessibility.Attribute
 - [static let allowedValues: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/allowedvalues.md)
   The allowed values in the slider (`NSArray`).
 - [static let alternateUIVisible: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/alternateuivisible.md)
+- [static let autoInteractableAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/autointeractableattribute.md)
+- [static let blockQuoteLevelAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/blockquotelevelattribute.md)
 - [static let cancelButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/cancelbutton.md)
   The element that represents the cancel button (`id`).
+- [static let childrenInNavigationOrderAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/childreninnavigationorderattribute.md)
 - [static let clearButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/clearbutton.md)
   The element that represents the clear button in a search field (`id`).
 - [static let closeButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/closebutton.md)
@@ -38,12 +41,6 @@ static let children: NSAccessibility.Attribute
   The table’s columns (`NSArray`).
 - [static let containsProtectedContent: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/containsprotectedcontent.md)
   A flag that indicates whether the object contains protected content ([`true`](https://developer.apple.com/documentation/swift/true)), or not ([`false`](https://developer.apple.com/documentation/swift/false)) (`NSNumber` as `boolValue`).
-- [static let contents: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/contents.md)
-  Elements that represent the contents in the current element, such as the document view of a scroll view (`NSArray`).
-- [static let criticalValue: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/criticalvalue.md)
-  The critical value in a level indicator (typically, `NSNumber`).
-- [static let decrementButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/decrementbutton.md)
-  The element that represents a stepper’s decrement button (`id`).
 
 
 ---

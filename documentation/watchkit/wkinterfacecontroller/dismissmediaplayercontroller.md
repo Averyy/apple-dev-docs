@@ -1,6 +1,6 @@
 # dismissMediaPlayerController()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Dismisses the media interface controller.

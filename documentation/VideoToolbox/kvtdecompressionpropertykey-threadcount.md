@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_ThreadCount
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The number of threads used by a codec or the suggested number of threads to use (optional).

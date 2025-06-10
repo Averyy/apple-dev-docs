@@ -3,8 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The response that contains a list of devices.
-
 **Availability**:
 - Device Assignment Services ?+
 - VPP License Management ?+
@@ -17,16 +15,14 @@ object DeviceListResponse
 
 ## Topics
 
-### Objects
+### Dictionaries
 - [object DeviceListResponse.Devices](devicelistresponse/devices-data.dictionary.md)
-  A dictionary of devices, with their serial numbers.
 
 ## See Also
 
 - [object DeviceListRequest](devicelistrequest.md)
   The request for a list of devices.
 - [object DeviceListResponse.Devices](devicelistresponse/devices-data.dictionary.md)
-  A dictionary of devices, with their serial numbers.
 
 
 ---

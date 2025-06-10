@@ -1,6 +1,6 @@
 # setTargetQueue(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Sets the target dispatch queue on an inactive session for processing messages.

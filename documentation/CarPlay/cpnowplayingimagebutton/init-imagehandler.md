@@ -13,6 +13,7 @@ Creates a Now Playing button that displays a custom image and invokes a handler.
 ## Declaration
 
 ```swift
+@MainActor
 init(image: UIImage, handler: ((CPNowPlayingButton) -> Void)? = nil)
 ```
 

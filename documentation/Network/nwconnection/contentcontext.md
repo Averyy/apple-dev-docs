@@ -64,6 +64,7 @@ If you are using a protocol that expects message content, like WebSocket or a cu
 - [NWConnectionGroup.Message](nwconnectiongroup/message.md)
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

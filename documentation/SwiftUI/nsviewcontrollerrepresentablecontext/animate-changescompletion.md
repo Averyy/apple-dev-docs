@@ -17,7 +17,7 @@ Animates changes using the animation in the current transaction.
 
 #### Discussion
 
-This combines [`animate(with:changes:completion:)`](https://developer.apple.com/documentation/AppKit/NSAnimationContext/animate(with:changes:completion:)) with the current transaction’s animation. When you start a SwiftUI animation using [`withAnimation(_:_:)`](withanimation(_:_:).md) and have a mutated SwiftUI state that causes the representable object to update, use this method to animate changes in the representable object using the same `Animation` timing.
+This combines doc://com.apple.documentation/documentation/appkit/nsanimationcontext/4433144-animate with the current transaction’s animation. When you start a SwiftUI animation using [`withAnimation(_:_:)`](withanimation(_:_:).md) and have a mutated SwiftUI state that causes the representable object to update, use this method to animate changes in the representable object using the same `Animation` timing.
 
 ```swift
 struct ContentView: View {

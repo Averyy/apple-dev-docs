@@ -17,8 +17,6 @@ To use this framework, create an [`ITLibrary`](itlibrary.md) object by calling t
 
 > ❗ **Important**:  You must code sign your app to retrieve information with this framework, and iTunes library access is read-only. This framework is available to users with iTunes 11 or later.
 
- You must code sign your app to retrieve information with this framework, and iTunes library access is read-only. This framework is available to users with iTunes 11 or later.
-
 ## Topics
 
 ### Essentials
@@ -40,6 +38,8 @@ To use this framework, create an [`ITLibrary`](itlibrary.md) object by calling t
   This class represents the artwork for a media item.
 - [class ITLibMediaItemVideoInfo](itlibmediaitemvideoinfo.md)
   This class encapsulates the video information of a video media item.
+### Structures
+- [struct LibraryDidChangeMessage](librarydidchangemessage.md)
 
 
 ---

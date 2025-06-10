@@ -1,6 +1,6 @@
 # AudioBuffer
 
-**Framework**: Coreaudiotypes  
+**Framework**: Core Audio Types  
 **Kind**: struct
 
 A structure that holds a buffer of audio data.
@@ -59,4 +59,4 @@ An audio buffer holds a single buffer of audio data in its [`mData`](audiobuffer
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreAudioTypes/audiobuffer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coreaudiotypes/audiobuffer)*

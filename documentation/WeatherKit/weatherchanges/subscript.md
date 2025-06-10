@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: subscript
 
 The weather change at the provided index.

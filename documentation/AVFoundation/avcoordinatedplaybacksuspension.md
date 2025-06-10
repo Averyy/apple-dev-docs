@@ -55,6 +55,7 @@ See the playback coordinator’s [`beginSuspension(for:)`](avplaybackcoordinator
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

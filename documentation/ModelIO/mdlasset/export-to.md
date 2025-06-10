@@ -21,7 +21,7 @@ func export(to URL: URL) throws
 
 #### Discussion
 
-The [`MDLAsset`](mdlasset.md) class infers the data format to export in from the [`pathExtension`](https://developer.apple.com/documentation/foundation/nsurl/1410208-pathextension) property of the specified URL. To determine whether a format is supported for export, call the [`canExportFileExtension(_:)`](mdlasset/canexportfileextension(_:).md) method.
+The [`MDLAsset`](mdlasset.md) class infers the data format to export in from the [`pathExtension`](https://developer.apple.com/documentation/Foundation/NSURL/pathExtension) property of the specified URL. To determine whether a format is supported for export, call the [`canExportFileExtension(_:)`](mdlasset/canexportfileextension(_:).md) method.
 
 ## Parameters
 

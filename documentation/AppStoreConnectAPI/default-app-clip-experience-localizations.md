@@ -15,6 +15,7 @@ The `appClipDefaultExperienceLocalizations` resource represents metadata that ap
   Get localized metadata that appears on the App Clip card of a specific default App Clip experience.
 - [Read App Clip Card Image Information for a Localized Default App Clip Experience](get-v1-appclipdefaultexperiencelocalizations-_id_-appclipheaderimage.md)
   Get the image that appears on the App Clip card, specific to a locale, for a default App Clip experience.
+- [GET /v1/appClipDefaultExperienceLocalizations/{id}/relationships/appClipHeaderImage](get-v1-appclipdefaultexperiencelocalizations-_id_-relationships-appclipheaderimage.md)
 ### Managing Your Default App Clip Experience’s Metadata
 - [Create the Localized Metadata for a Default App Clip Experience](post-v1-appclipdefaultexperiencelocalizations.md)
   Provide localized metadata that appears on the App Clip card of a default App Clip experience.

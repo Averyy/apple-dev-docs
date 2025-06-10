@@ -34,7 +34,7 @@ A pixel buffer adaptor provides a pixel buffer pool that you use to allocate pix
 ### Accessing the Pool
 - [var pixelBufferPool: CVPixelBufferPool?](avassetwriterinputpixelbufferadaptor/pixelbufferpool.md)
   A pool of pixel buffers to append to the adaptor’s input.
-- [var sourcePixelBufferAttributes: [String : Any]?](avassetwriterinputpixelbufferadaptor/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]?](avassetwriterinputpixelbufferadaptor/sourcepixelbufferattributes.md)
   The attributes of the pixel buffers that the pool contains.
 ### Inspecting a Pixel Buffer Adaptor
 - [var assetWriterInput: AVAssetWriterInput](avassetwriterinputpixelbufferadaptor/assetwriterinput.md)
@@ -54,10 +54,12 @@ A pixel buffer adaptor provides a pixel buffer pool that you use to allocate pix
 
 ## See Also
 
-- [Writing Fragmented MPEG-4 Files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
-  Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
+- [Converting projected video to Apple Projected Media Profile](converting-projected-video-to-apple-projected-media-profile.md)
+  Convert content with equirectangular or half-equirectangular projection to APMP.
 - [Converting side-by-side 3D video to multiview HEVC and spatial video](converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
   Create video content for visionOS by converting an existing 3D HEVC file to a multiview HEVC format, optionally adding spatial metadata to create a spatial video.
+- [Writing Fragmented MPEG-4 Files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
+  Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
 - [Creating spatial photos and videos with spatial metadata](../ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
 - [Tagging Media with Video Color Information](tagging-media-with-video-color-information.md)

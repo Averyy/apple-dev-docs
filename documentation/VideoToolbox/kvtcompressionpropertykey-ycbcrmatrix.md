@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_YCbCrMatrix
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The YCbCr matrix for compressed content.

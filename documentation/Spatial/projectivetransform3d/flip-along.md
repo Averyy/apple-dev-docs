@@ -32,8 +32,6 @@ mutating func flip(along axis: Axis3D)
   Constants that describe the axis of a shear transform.
 - [struct Axis3D](axis3d.md)
   Constants that describe an axis.
-- [func concatenating(ProjectiveTransform3D) -> ProjectiveTransform3D](projectivetransform3d/concatenating(_:).md)
-  Returns a projective transformation matrix that results from concatenating two existing projective transforms.
 - [func flipped(along: Axis3D) -> ProjectiveTransform3D](projectivetransform3d/flipped(along:).md)
   Returns a projective transform that results from flipping it along the specified axis.
 

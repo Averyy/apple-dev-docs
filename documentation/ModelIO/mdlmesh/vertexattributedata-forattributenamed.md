@@ -29,8 +29,6 @@ Calling this data is equivalent to using the mesh’s [`vertexDescriptor`](mdlme
 
 > ❗ **Important**:  The buffer’s storage remains mapped for as long as the returned [`MDLVertexAttributeData`](mdlvertexattributedata.md) object exists, potentially restricting other uses of that storage. For example, if a buffer’s storage is shared with GPU memory, that buffer may be unavailable for use in rendering until the data object is deallocated.
 
- The buffer’s storage remains mapped for as long as the returned [`MDLVertexAttributeData`](mdlvertexattributedata.md) object exists, potentially restricting other uses of that storage. For example, if a buffer’s storage is shared with GPU memory, that buffer may be unavailable for use in rendering until the data object is deallocated.
-
 ## Parameters
 
 - `name`: The attribute name for which to retrieve data. See Vertex Attributes for standard attribute names.

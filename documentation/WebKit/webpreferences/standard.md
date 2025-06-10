@@ -1,6 +1,6 @@
 # standard()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the standard set of preferences that may be used by all WebView objects.

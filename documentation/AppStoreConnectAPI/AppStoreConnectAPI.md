@@ -20,7 +20,7 @@ Calls to the API require JSON Web Tokens (JWT) for authorization; you obtain key
 
 > ❗ **Important**:  Changes you make using the App Store Connect API affect the production data you use for development and distribution.
 
-The API provides resources to automate the following areas of App Store Connect:
+The API provides resources to automate these areas of App Store Connect:
 
 -  Manage in-app purchases and auto-renewable subscriptions for your app.
 -  Manage beta builds of your app, testers, and groups.
@@ -72,9 +72,14 @@ The App Store Connect API returns responses from resources that are consistent J
   Create, delete, and download provisioning profiles that enable app installations for development and distribution.
 - [Merchant ID](merchantids.md)
   Manage your merchant ID for Apple Pay.
+- [Pass type Ids](pass-type-id.md)
+  Create, download, and revoke pass type ids for app development and distribution.
 ### Xcode Cloud
 - [Xcode Cloud Workflows and Builds](xcode-cloud-workflows-and-builds.md)
   Automate reading Xcode Cloud data, managing workflows, and starting builds.
+### Webhooks
+- [Webhook notifications](webhook-notifications.md)
+  Manage notifications from App Store about your apps and their statuses.
 ### Reporting
 - [Sales and Finance](sales-and-finance.md)
   Download your sales and financial reports.
@@ -98,6 +103,13 @@ The App Store Connect API returns responses from resources that are consistent J
 ### Alternative App Distribution
 - [Alternative Marketplaces and Web Distribution](alternative-marketplaces-and-web-distribution.md)
   Manage keys, packages, and search for alternative app distribution.
+### Endpoints
+- [GET /v1/appEncryptionDeclarations/{id}/relationships/app](get-v1-appencryptiondeclarations-_id_-relationships-app.md)
+- [GET /v1/appStoreVersions/{id}/relationships/appStoreVersionExperiments](get-v1-appstoreversions-_id_-relationships-appstoreversionexperiments.md)
+- [GET /v1/apps/{id}/relationships/inAppPurchases](get-v1-apps-_id_-relationships-inapppurchases.md)
+- [GET /v1/builds/{id}/relationships/app](get-v1-builds-_id_-relationships-app.md)
+- [GET /v1/gameCenterAchievementLocalizations/{id}/relationships/gameCenterAchievement](get-v1-gamecenterachievementlocalizations-_id_-relationships-gamecenterachievement.md)
+- [GET /v1/gameCenterLeaderboardSetMemberLocalizations/{id}/relationships/gameCenterLeaderboard](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-relationships-gamecenterleaderboard.md)
 ### Dictionaries
 - [object CiBranchStartCondition](cibranchstartcondition.md)
   Settings for a start condition that starts a build if a branch changes.
@@ -115,13 +127,18 @@ The App Store Connect API returns responses from resources that are consistent J
   Settings for a start condition that starts a build if a Git tag changes.
 - [object CiTestDestination](citestdestination.md)
   The test destination of a test action that Xcode Cloud performs.
+- [object DeliveryFileUploadOperation](deliveryfileuploadoperation.md)
 - [object JsonPointer](jsonpointer.md)
   An object that contains the JSON pointer that indicates the location of the error.
 - [object Parameter](parameter.md)
   An object that contains the query parameter that produced the error.
+- [object StringToStringMap](stringtostringmap.md)
+- [object SubscriptionOfferCodesLinkagesResponse](subscriptionoffercodeslinkagesresponse.md)
 ### Type Aliases
+- [type BackgroundAssetVersionState](backgroundassetversionstate.md)
 - [type BuildAudienceType](buildaudiencetype.md)
   A string that represents the App Store Connect audience for a build.
+- [type BuildBundleType](buildbundletype.md)
 - [type CiActionType](ciactiontype.md)
   A string that represents the type of an Xcode Cloud workflow’s action.
 - [type CiCompletionStatus](cicompletionstatus.md)
@@ -132,12 +149,14 @@ The App Store Connect API returns responses from resources that are consistent J
   The string that represents the kind of a test destination.
 - [type CiTestStatus](citeststatus.md)
   A string that represents test status information.
+- [type DeviceConnectionType](deviceconnectiontype.md)
 - [type DiagnosticInsightDirection](diagnosticinsightdirection.md)
   A string that describes the diagnostic insight direction.
 - [type DiagnosticInsightType](diagnosticinsighttype.md)
   A string that desribes the diagnostic insight type.
 - [type GameCenterLeaderboardFormatter](gamecenterleaderboardformatter.md)
   The values you can select to describe the format of a leaderboard.
+- [type GameCenterVersionState](gamecenterversionstate.md)
 - [type TerritoryCode](territorycode.md)
   The App Store territory codes.
 

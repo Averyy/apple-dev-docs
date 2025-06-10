@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_CleanAperture
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The clean aperture for encoded frames.

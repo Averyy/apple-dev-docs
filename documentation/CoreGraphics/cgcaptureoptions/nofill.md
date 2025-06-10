@@ -6,9 +6,9 @@
 Disables fill with black.
 
 **Availability**:
-- macOS ?+
-- Unknown ?+ - Deprecated
 - Mac Catalyst ?+
+- Unknown ?+ - Deprecated
+- macOS ?+
 
 ## Declaration
 

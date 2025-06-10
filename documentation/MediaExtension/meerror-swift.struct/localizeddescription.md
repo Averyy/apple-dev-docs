@@ -20,14 +20,14 @@ var localizedDescription: String { get }
 
 ## See Also
 
-- [var code: Int](../foundation/nserror/1409165-code.md)
+- [var code: Int { get }](../Foundation/NSError/code.md)
   The error code.
-- [var errorCode: Int](../foundation/customnserror/2946828-errorcode.md)
-- [var errorUserInfo: [String : Any]](../foundation/customnserror/3017373-erroruserinfo.md)
+- [var errorCode: Int { get }](../Foundation/CustomNSError/errorCode.md)
+- [var errorUserInfo: [String : Any] { get }](../Foundation/CustomNSError/errorUserInfo.md)
 - [var hashValue: Int { get }](../Swift/Hashable/hashValue.md)
   The hash value.
-- [var userInfo: [String : Any]](../foundation/nserror/1411580-userinfo.md)
-  The user info dictionary. 
+- [var userInfo: [String : Any] { get }](../Foundation/NSError/userInfo.md)
+  The user info dictionary.
 - [static func == (lhs: Self, rhs: Self) -> Bool](../Swift/Equatable/==(_:_:)-3axv1.md)
   Returns a Boolean value indicating whether two values are equal.
 - [static func != (lhs: Self, rhs: Self) -> Bool](../Swift/Equatable/!=(_:_:).md)

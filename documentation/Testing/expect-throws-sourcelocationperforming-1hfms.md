@@ -1,6 +1,6 @@
 # expect(throws:_:sourceLocation:performing:)
 
-**Framework**: Testing  
+**Framework**: Swift Testing  
 **Kind**: macro
 
 Check that an expression always throws an error of a given type.
@@ -22,6 +22,10 @@ Check that an expression always throws an error of a given type.
 @discardableResult
 @freestanding(expression) macro expect<E, R>(throws errorType: E.Type, _ comment: @autoclosure () -> Comment? = nil, sourceLocation: SourceLocation = #_sourceLocation, performing expression: () async throws -> R) -> E? where E : Error
 ```
+
+## Mentions
+
+- [Testing for errors in Swift code](testing-for-errors-in-swift-code.md)
 
 #### Return Value
 

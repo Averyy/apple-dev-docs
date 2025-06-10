@@ -1,6 +1,6 @@
 # init(timerInterval:countsDown:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: init
 
 Creates a progress view for showing continuous progress as time passes.

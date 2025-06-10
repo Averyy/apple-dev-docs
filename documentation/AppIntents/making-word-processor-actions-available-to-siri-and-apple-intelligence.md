@@ -1,6 +1,6 @@
 # Making word processor actions available to Siri and Apple Intelligence
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Create app intents and entities that make your app’s word processor functionality available to Siri and Apple Intelligence.
 
@@ -13,7 +13,7 @@ To integrate your app’s word processor capabilities with Siri and Apple Intell
 For example, if your app allows someone to open a text document, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.wordProcessor` domain and the [`open`](assistantschemas/wordprocessorintent/open.md) schema:
 
 ```swift
-@AssistantIntent(schema: .wordProcessor.open)
+@AppIntent(schema: .wordProcessor.open)
 struct OpenWordProcessorDocumentIntent: OpenIntent {
     var target: WordProcessorDocumentEntity
 
@@ -30,7 +30,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 If you use app entities to describe custom data types, annotate the app entity implementation with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `DocumentEntity`. The following code snippet shows how the `DocumentEntity` implementation uses the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro:
 
 ```swift
-@AssistantEntity(schema: .wordProcessor.document)
+@AppEntity(schema: .wordProcessor.document)
 struct WordProcessorDocumentEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [WordProcessorDocumentEntity.ID]) async throws -> [WordProcessorDocumentEntity] { [] }
@@ -62,4 +62,4 @@ For a list of available app entity schemas in the `.wordProcessor` domain, see [
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-word-processor-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-word-processor-actions-available-to-siri-and-apple-intelligence)*

@@ -1,6 +1,6 @@
 # defaultTextEncodingName
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The default text encoding of the web view.

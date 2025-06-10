@@ -9,8 +9,6 @@ The command to install a book on a device.
 - iOS 8.0+
 - iPadOS 8.0+
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,14 +18,14 @@ object InstallMediaCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object InstallMediaCommand.Command](installmediacommand/command-data.dictionary.md)
-  The request dictionary to install a book.
+  The command to install a book on a device.
 
 ## See Also
 
 - [object InstallMediaResponse](installmediaresponse.md)
-  A response from the device after it processes the command to install a book.
+  A response from the device after it processes the command to install a book on a device.
 
 
 ---

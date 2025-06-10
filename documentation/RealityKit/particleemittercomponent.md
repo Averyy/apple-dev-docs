@@ -10,6 +10,7 @@ A component that emits particles.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -30,8 +31,6 @@ To learn how to use `ParticleEmitterComponent` in your app, see [`Simulating par
   Initial configurations that can be set when starting a new simulation.
 ### Initializers
 - [init()](particleemittercomponent/init.md)
-- [init(from: any Decoder) throws](particleemittercomponent/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 ### Instance Properties
 - [var birthDirection: ParticleEmitterComponent.BirthDirection](particleemittercomponent/birthdirection-swift.property.md)
   The possible initial directions for newly spawned particles, relative to the emitter shape.Defaults to normal.
@@ -82,8 +81,6 @@ To learn how to use `ParticleEmitterComponent` in your app, see [`Simulating par
 ### Instance Methods
 - [func burst()](particleemittercomponent/burst.md)
   Emits burstCount particles on the next update call.
-- [func encode(to: any Encoder) throws](particleemittercomponent/encode(to:).md)
-  Encodes this value into the given encoder.
 - [func restart()](particleemittercomponent/restart.md)
   Restarts the emission of particles. Requires the component to be re-assigned to the entity to take effect.
 ### Enumerations
@@ -101,8 +98,6 @@ To learn how to use `ParticleEmitterComponent` in your app, see [`Simulating par
   Options for when the spawned effect starts, used by the spawnOccasion property.
 - [ParticleEmitterComponent.Timing](particleemittercomponent/timing-swift.enum.md)
   Options for specifying the duration of the particle effects, used by the timing property.
-### Default Implementations
-- [Component Implementations](particleemittercomponent/component-implementations.md)
 
 ## Relationships
 

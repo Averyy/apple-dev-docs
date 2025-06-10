@@ -1,6 +1,6 @@
 # XCT_UI_TESTING_AVAILABLE
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: var
 
 ## Declaration

@@ -1,6 +1,6 @@
 # applicationLaunch
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A metric that records the time that elapses during app launch.

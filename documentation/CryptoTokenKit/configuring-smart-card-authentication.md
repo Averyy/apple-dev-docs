@@ -1,6 +1,6 @@
 # Configuring Smart Card Authentication
 
-**Framework**: Cryptotokenkit
+**Framework**: CryptoTokenKit
 
 Set preferences for smart card authentication operations, including those on managed devices.
 
@@ -37,4 +37,4 @@ The values for `checkCertificateTrust:`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CryptoTokenKit/configuring-smart-card-authentication)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cryptotokenkit/configuring-smart-card-authentication)*

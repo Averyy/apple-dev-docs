@@ -1,6 +1,6 @@
 # reversed()
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns a view presenting the elements of the collection in reverse order.

@@ -1,6 +1,6 @@
 # state
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 The dynamic content of a Live Activity at the time of its creation.

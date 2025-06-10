@@ -50,6 +50,9 @@ struct BarcodeObservation
   The supplemental composite type.
 - [BarcodeObservation.CompositeType](barcodeobservation/compositetype.md)
   Composite types for barcode requests.
+### Instance Properties
+- [var boundingRegion: NormalizedRegion](barcodeobservation/boundingregion.md)
+  The bounding region of the barcode.
 
 ## Relationships
 
@@ -63,6 +66,7 @@ struct BarcodeObservation
 - [Hashable](../Swift/Hashable.md)
 - [QuadrilateralProviding](quadrilateralproviding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionObservation](visionobservation.md)
 
 ## See Also

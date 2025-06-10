@@ -19,8 +19,6 @@ init(rawValue: String)
 
 > ❗ **Important**:  Use the static properties of [`SCStreamFrameInfo`](scstreamframeinfo.md) such as [`status`](scstreamframeinfo/status.md) or [`contentRect`](scstreamframeinfo/contentrect.md) instead of creating an instance with this initializer.
 
- Use the static properties of [`SCStreamFrameInfo`](scstreamframeinfo.md) such as [`status`](scstreamframeinfo/status.md) or [`contentRect`](scstreamframeinfo/contentrect.md) instead of creating an instance with this initializer.
-
 ## Parameters
 
 - `rawValue`: The raw value to use for the new instance.

@@ -11,7 +11,6 @@ The type of screen that appears when the view is presented.
 ## Declaration
 
 ```swift
-@MainActor
 var mode: RPPreviewViewControllerMode { get set }
 ```
 

@@ -1,6 +1,6 @@
 # symbolName
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The SF Symbol icon that represents the moon phase.

@@ -38,8 +38,6 @@ You frequently use a locale in conjunction with a formatter. For example, the [`
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Locale`](locale.md) structure, which bridges to the [`NSLocale`](nslocale.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
 
- The Swift overlay to the Foundation framework provides the [`Locale`](locale.md) structure, which bridges to the [`NSLocale`](nslocale.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
-
 ## Topics
 
 ### Initializing a Locale
@@ -51,7 +49,7 @@ You frequently use a locale in conjunction with a formatter. For example, the [`
 - [class var autoupdatingCurrent: Locale](nslocale/autoupdatingcurrent.md)
   A locale which tracks the user’s current preferences.
 - [class var current: Locale](nslocale/current.md)
-  A locale representing the user’s region settings at the time the property is read.
+  A locale that represents the user’s region settings at the time the property is read.
 - [class let currentLocaleDidChangeNotification: NSNotification.Name](nslocale/currentlocaledidchangenotification.md)
   A notification that indicates that the user’s locale changed.
 - [class var system: Locale](nslocale/system.md)
@@ -175,6 +173,7 @@ You frequently use a locale in conjunction with a formatter. For example, the [`
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

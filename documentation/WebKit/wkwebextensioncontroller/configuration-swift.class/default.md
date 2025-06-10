@@ -1,6 +1,6 @@
 # default()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a new default configuration that is persistent and not unique.

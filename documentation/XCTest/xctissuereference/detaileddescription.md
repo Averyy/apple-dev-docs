@@ -1,6 +1,6 @@
 # detailedDescription
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A detailed description of the issue that may include transient data, such as numbers, object identifiers, and timestamps, to help diagnose the issue.

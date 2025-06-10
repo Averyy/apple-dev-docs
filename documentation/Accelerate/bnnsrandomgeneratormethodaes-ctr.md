@@ -24,8 +24,6 @@ var BNNSRandomGeneratorMethodAES_CTR: BNNSRandomGeneratorMethod { get }
 
 > ❗ **Important**:  Don’t use this method for cryptographic applications.
 
- Don’t use this method for cryptographic applications.
-
 ## See Also
 
 - [init(UInt32)](bnnsrandomgeneratormethod/init(_:).md)

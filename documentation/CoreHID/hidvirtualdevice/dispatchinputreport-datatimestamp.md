@@ -1,6 +1,6 @@
 # dispatchInputReport(data:timestamp:)
 
-**Framework**: Corehid  
+**Framework**: Core HID  
 **Kind**: method
 
 Dispatch an input report to the system.

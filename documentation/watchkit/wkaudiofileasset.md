@@ -1,6 +1,6 @@
 # WKAudioFileAsset
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An object that stores a reference to an audio file and provides metadata information about that file.

@@ -1,6 +1,6 @@
 # pageCount
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The number of pages in the scanned document.

@@ -1,6 +1,6 @@
 # BidirectionalCollection Implementations
 
-**Framework**: Weatherkit
+**Framework**: WeatherKit
 
 ## Topics
 

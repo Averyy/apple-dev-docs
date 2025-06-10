@@ -1,6 +1,6 @@
 # Validating receipts on the device
 
-**Framework**: Appstorereceipts
+**Framework**: App Store Receipts
 
 Verify the contents of app receipts by decoding and parsing the receipt on the device.
 

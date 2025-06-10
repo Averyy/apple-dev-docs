@@ -98,6 +98,7 @@ The formatted string omits any units that aren’t needed to accurately represen
 - [FormatStyle](../Foundation/FormatStyle.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

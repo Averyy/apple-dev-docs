@@ -1,6 +1,6 @@
 # hasAccess(to:in:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Checks the specified URL against the currently granted permission match patterns in a specific tab.

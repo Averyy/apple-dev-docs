@@ -1,0 +1,18 @@
+# dpme_pblocks
+
+**Framework**: Kernel  
+**Kind**: structp
+
+**Availability**:
+- macOS 10.0+
+
+## Declaration
+
+```swift
+UInt32 dpme_pblocks;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/dpme/1415760-dpme_pblocks)*

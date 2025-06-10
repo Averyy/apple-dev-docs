@@ -17,7 +17,6 @@ A node that plays audio.
 ## Declaration
 
 ```swift
-@MainActor
 class SKAudioNode
 ```
 
@@ -83,6 +82,7 @@ To learn more about audio actions, see Controlling the Audio of a Node in [`Acti
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)

@@ -73,7 +73,11 @@ Typical construction of `Duration` values should be created via the static metho
 - [Duration.UnitsFormatStyle](duration/unitsformatstyle.md)
   A format style that shows durations with localized labeled components
 ### Initializers
-- [init(timeval)](duration/init(_:).md)
+- [init(attoseconds: Int128)](duration/init(attoseconds:).md)
+  Construct a `Duration` from the given number of attoseconds.
+### Instance Properties
+- [var attoseconds: Int128](duration/attoseconds.md)
+  The number of attoseconds represented by this `Duration`.
 ### Default Implementations
 - [AdditiveArithmetic Implementations](duration/additivearithmetic-implementations.md)
 - [AtomicRepresentable Implementations](duration/atomicrepresentable-implementations.md)
@@ -96,10 +100,12 @@ Typical construction of `Duration` values should be created via the static metho
 - [CustomStringConvertible](customstringconvertible.md)
 - [Decodable](decodable.md)
 - [DurationProtocol](durationprotocol.md)
+- [ElectricityInsightMeasure](../EnergyKit/ElectricityInsightMeasure.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

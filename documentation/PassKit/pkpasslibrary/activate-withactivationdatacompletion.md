@@ -25,8 +25,6 @@ You can only activate a provisioned pass, and it must be in the [`PKPaymentPassA
 
 > ❗ **Important**:  Activating payment passes requires a special entitlement issued from Apple. For more information, see [`developer.apple.com/apple-pay/`](https://developer.apple.comhttps://developer.apple.com/apple-pay/).
 
- Activating payment passes requires a special entitlement issued from Apple. For more information, see [`developer.apple.com/apple-pay/`](https://developer.apple.comhttps://developer.apple.com/apple-pay/).
-
 ## Parameters
 
 - `paymentPass`: The payment pass to activate.

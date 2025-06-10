@@ -1,6 +1,6 @@
 # highTemperature
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The observed high temperature for the day.

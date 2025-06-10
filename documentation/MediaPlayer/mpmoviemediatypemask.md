@@ -9,8 +9,6 @@ The types of content available in the movie file.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
 
 ## Declaration
 
@@ -40,6 +38,7 @@ You can OR the specified constants together to specify a movie.
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

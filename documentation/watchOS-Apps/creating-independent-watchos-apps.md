@@ -1,6 +1,6 @@
 # Creating independent watchOS apps
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Set up a watchOS app that installs and runs without a companion iOS app.
 

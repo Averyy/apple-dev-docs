@@ -17,7 +17,6 @@ Creates a new node by loading an archive file from the game’s main bundle.
 ## Declaration
 
 ```swift
-@MainActor
 convenience init?(fileNamed filename: String)
 ```
 

@@ -27,6 +27,8 @@ For design guidance, see [`Designing for macOS`](https://developer.apple.com/des
   An AppKit menu with menu items that are defined by a SwiftUI View.
 - [struct NSHostingSizingOptions](nshostingsizingoptions.md)
   Options for how hosting views and controllers reflect their content’s size into Auto Layout constraints.
+- [class NSHostingSceneRepresentation](nshostingscenerepresentation.md)
+  An AppKit type that hosts and can present SwiftUI scenes
 - [struct NSHostingSceneBridgingOptions](nshostingscenebridgingoptions.md)
   Options for how hosting views and controllers manage aspects of the associated window.
 ### Adding AppKit views to SwiftUI view hierarchies
@@ -38,6 +40,13 @@ For design guidance, see [`Designing for macOS`](https://developer.apple.com/des
   A wrapper that you use to integrate an AppKit view controller into your SwiftUI interface.
 - [struct NSViewControllerRepresentableContext](nsviewcontrollerrepresentablecontext.md)
   Contextual information about the state of the system that you use to create and update your AppKit view controller.
+### Adding AppKit gesture recognizers into SwiftUI view hierarchies
+- [protocol NSGestureRecognizerRepresentable](nsgesturerecognizerrepresentable.md)
+  A wrapper for an `NSGestureRecognizer` that you use to integrate that gesture recognizer into your SwiftUI hierarchy.
+- [struct NSGestureRecognizerRepresentableContext](nsgesturerecognizerrepresentablecontext.md)
+  Contextual information about the state of the system that you use to create and update a represented gesture recognizer.
+- [struct NSGestureRecognizerRepresentableCoordinateSpaceConverter](nsgesturerecognizerrepresentablecoordinatespaceconverter.md)
+  A structure used to convert locations to and from coordinate spaces in the hierarchy of the SwiftUI view associated with an [`NSGestureRecognizerRepresentable`](nsgesturerecognizerrepresentable.md).
 
 ## See Also
 

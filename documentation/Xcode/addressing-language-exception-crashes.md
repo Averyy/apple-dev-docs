@@ -100,4 +100,4 @@ If you find that exceptions thrown by your app within an exception handling doma
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/addressing-language-exception-crashes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/addressing-language-exception-crashes)*

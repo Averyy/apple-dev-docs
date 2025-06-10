@@ -10,8 +10,6 @@ To convert an existing movie file to a format that makes it compatible with othe
 
 > 💡 **Tip**:  If your app can save a movie directly from video capture, it’s more efficient to change the default format during capture by following the steps in [`Recording movies in alternative formats`](recording-movies-in-alternative-formats.md).
 
- If your app can save a movie directly from video capture, it’s more efficient to change the default format during capture by following the steps in [`Recording movies in alternative formats`](recording-movies-in-alternative-formats.md).
-
 ##### Export a New Video to the Desired Format
 
 To export a video to a different format, begin with an [`AVAsset`](avasset.md) movie file and perform these steps:

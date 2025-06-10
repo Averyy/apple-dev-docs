@@ -6,6 +6,7 @@
 A drawable that’s assigned to a frame and ready to accept your drawing commands.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

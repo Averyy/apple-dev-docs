@@ -17,6 +17,7 @@ The title of the Redo menu command, such as Redo Paste.
 ## Declaration
 
 ```swift
+@MainActor
 var redoMenuItemTitle: String { get }
 ```
 

@@ -1,6 +1,6 @@
 # cancel()
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Cancels a listener.

@@ -1,6 +1,6 @@
 # webViewUnfocus(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Relinquishes focus on a web view’s window.

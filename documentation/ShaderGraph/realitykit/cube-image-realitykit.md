@@ -1,9 +1,21 @@
 # Cube Image (RealityKit)
 
-**Framework**: Shadergraph  
+**Framework**: ShaderGraph  
 **Kind**: subscript
 
 A texturecube with RealityKit properties.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
+#### Overview
+
+Adjustable level of detail. Input image must be in KTX file format
 
 #### Parameter Types
 
@@ -11,21 +23,21 @@ A texturecube with RealityKit properties.
 
 #### Discussion
 
-The Cube Image node produces a texture using the contents of the image file specified in the `File` parameter. It has a multitude of parameters that affect the properties of the rendered textures.
+The `Cube Image` node produces a texture using the contents of the image file specified in the `File` parameter. It has a variety of parameters that affect the properties of the rendered textures.
 
 > **Note**: Create the input file in a `.ktx` format or the node won’t work properly.
 
-For the wrap mode parameters, the possible values are:
+The possible values for the wrap mode parameters are:
 
-> ⚠️ **Warning**: You can only use the clamp-to-zero option if the `Border Color` parameter is set to `transparent_black`; otherwise, the behavior of the node is undefined.
+> ⚠️ **Warning**: You can only use `clamp-to-zero` if the `Border Color` parameter is set to `transparent_black`; otherwise, the behavior of the node is undefined.
 
-For the `Mag Filter` and `Min Filter` parameters, the possible values are:
+The possible values for `Mag Filter` and `Min Filter` are:
 
-The `Mip Filter` parameter has the same possible values, with the addition of the option to allow for the value of `None`, which specifies that mipmapping isn’t used. Below is an example of a simple node graph that uses the Cube Image Node to take a `.ktx` file and create a cube image texture.
+The `Mip Filter` parameter has the same possible values, with the addition of the option to allow for the value of `None`, which specifies that it doesn’t use mipmapping. Below is an example of a node graph that uses the `Cube Image Node` to take a `.ktx` file and create a cube image texture:
 
 ![None](https://docs-assets.developer.apple.com/published/73251fda502d95e648e767e15c053d18/CubeImageGraph.png)
 
-Below, the resulting texture applies to a cube.
+Below, the resulting texture applies to a cube:
 
 ![None](https://docs-assets.developer.apple.com/published/809047cef616912077b426791ba2fc1e/CubeImageMaterial.png)
 

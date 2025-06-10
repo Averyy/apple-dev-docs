@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-The `Date` after which the action cannot be completed.
+The point in time that marks when the action can’t be completed anymore.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,17 @@ The `Date` after which the action cannot be completed.
 ```swift
 final var timeoutDate: Date { get }
 ```
+
+## See Also
+
+- [var conversationUUID: UUID](conversationaction/conversationuuid.md)
+  The unique identifier for the action’s associated conversation.
+- [var uuid: UUID](conversationaction/uuid.md)
+  The unique identifier that identifies the action.
+- [var state: ConversationAction.State](conversationaction/state-swift.property.md)
+  The action’s current state.
+- [ConversationAction.State](conversationaction/state-swift.enum.md)
+  A type that describes the current state of a conversation action.
 
 
 ---

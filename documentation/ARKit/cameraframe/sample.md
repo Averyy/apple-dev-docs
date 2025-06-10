@@ -27,6 +27,8 @@ Use this structure to access information about a sample from a [`CameraFrame`](c
   A frame’s parameters, such as the camera type, intrinsics, timestamps, exposure, and so on.
 - [var pixelBuffer: CVPixelBuffer](cameraframe/sample/pixelbuffer.md)
 ### Instance Properties
+- [var buffer: CVReadOnlyPixelBuffer](cameraframe/sample/buffer.md)
+  The pixel buffer.
 - [var description: String](cameraframe/sample/description.md)
   A textual representation of this camera frame sample.
 
@@ -36,6 +38,7 @@ Use this structure to access information about a sample from a [`CameraFrame`](c
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

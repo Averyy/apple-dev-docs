@@ -3,15 +3,12 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
+A dictionary that contains default application bundle identifiers for each default application type that can be set.
+
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- macOS 10.9+
-- tvOS 9.0+
-- visionOS 1.1+
-- watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- iOS 18.2+
+- iPadOS 18.2+
+- visionOS 2.2+
 
 ## Declaration
 
@@ -41,16 +38,16 @@ object SettingsCommand.Command.Settings.DefaultApplications
   A dictionary that contains hostname settings.
 - [object SettingsCommand.Command.Settings.MDMOptions](settingscommand/command-data.dictionary/settings-data.dictionary/mdmoptions-data.dictionary.md)
   A dictionary that contains settings about the organization operating the MDM server.
+- [object SettingsCommand.Command.Settings.MaximumResidentUsers](settingscommand/command-data.dictionary/settings-data.dictionary/maximumresidentusers-data.dictionary.md)
+  A dictionary that contains settings for maximum resident users.
 - [object SettingsCommand.Command.Settings.OrganizationInfo](settingscommand/command-data.dictionary/settings-data.dictionary/organizationinfo-data.dictionary.md)
   A dictionary that contains settings about the organization operating the MDM server.
+- [object SettingsCommand.Command.Settings.PasscodeLockGracePeriod](settingscommand/command-data.dictionary/settings-data.dictionary/passcodelockgraceperiod-data.dictionary.md)
+  A dictionary that contains settings for the password lock grace period.
 - [object SettingsCommand.Command.Settings.PersonalHotspot](settingscommand/command-data.dictionary/settings-data.dictionary/personalhotspot-data.dictionary.md)
   A dictionary that contains Personal Hotspot settings.
 - [object SettingsCommand.Command.Settings.SharedDeviceConfiguration](settingscommand/command-data.dictionary/settings-data.dictionary/shareddeviceconfiguration-data.dictionary.md)
   A dictionary that contains shared device configuration settings.
-- [object SettingsCommand.Command.Settings.SoftwareUpdateSettings](settingscommand/command-data.dictionary/settings-data.dictionary/softwareupdatesettings-data.dictionary.md)
-  A dictionary that contains software update settings.
-- [object SettingsCommand.Command.Settings.TimeZone](settingscommand/command-data.dictionary/settings-data.dictionary/timezone-data.dictionary.md)
-  A dictionary that contains time zone settings.
 
 
 ---

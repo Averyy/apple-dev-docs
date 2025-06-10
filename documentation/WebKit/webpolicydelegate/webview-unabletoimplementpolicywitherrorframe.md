@@ -1,6 +1,6 @@
 # webView(_:unableToImplementPolicyWithError:frame:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Handles or drops events that were rejected by a policy maker.

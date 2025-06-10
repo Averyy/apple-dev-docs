@@ -1,22 +1,18 @@
-# draggable(_:)
+# draggable(_:_:)
 
 **Framework**: MusicKit  
 **Kind**: method
 
-Activates this view as the source of a drag and drop operation.
+Activates this view as the source of a drag and drop operation. A view can be dragged separately, or as an element of a drag container.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- visionOS 1.0+
+- macOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
 nonisolated
-func draggable<T>(_ payload: @autoclosure @escaping () -> T) -> some View where T : Transferable
+func draggable<Item>(_ itemType: Item.Type, _ payload: @autoclosure @escaping () -> Item?) -> some View where Item : Transferable, Item : Identifiable, Item.ID : Sendable
 ```
 
 #### Return Value
@@ -27,13 +23,41 @@ A view that activates this view as the source of a drag and drop operation, begi
 
 Applying the `draggable(_:)` modifier adds the appropriate gestures for drag and drop to this view. When a drag operation begins, a rendering of this view is generated and used as the preview image.
 
-To customize the default preview, apply a `View/contentShape(_:_:eoFill:)` with a `ContentShapeKinds/dragPreview` kind. For example, you can change the preview’s corner radius or use a nested view as the preview.
+Dragging this view starts a drag session. When it is enclosed in a `dragContainer(:_:_)`, the view becomes its draggable element.
+
+To customize the default preview, use the `dragPreview(_:)` modifier, or apply a `View/contentShape(_:_:eoFill:)` with a `ContentShapeKinds/dragPreview` kind. For example, you can change the preview’s corner radius or use a nested view as the preview.
+
+```swift
+   var fruits: [Fruit]
+   var selectedFruits: [Fruit.ID]
+
+   var body: some View {
+       ScrollView {
+           VStack {
+               ForEach(fruits) { fruit in
+                   FruitView(fruit)
+                       .draggable(fruit)
+               }
+           }
+       }
+       .dragContainer(selection: selectedFruits) { identifiers in
+           fruits(ids: identifiers)
+       }
+       .padding()
+   }
+
+   /// Returns fruits with given identifiers.
+   func fruits(ids: [Fruit.ID]) -> [Fruit] { ... }
+
+   struct Fruit: Identifiable, Transferable { ... }
+```
 
 ## Parameters
 
-- `payload`: A closure that returns a single   instance or a value conforming to   that   represents the draggable data from this view.
+- `itemType`: A type of the dragged item.
+- `payload`: A closure that returns a single   instance or a value conforming to   that   represents the draggable data from this view. If the closure returns  ,   drag is disabled.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/musickit/artworkimage/draggable(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/musickit/artworkimage/draggable(_:_:))*

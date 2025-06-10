@@ -66,6 +66,7 @@ These constants are used by the [`NSButton`](nsbutton.md) and [`NSButtonCell`](n
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

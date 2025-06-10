@@ -1,6 +1,6 @@
 # availability
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 Flags containing information about data availability and attribution.

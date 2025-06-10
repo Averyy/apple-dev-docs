@@ -1,6 +1,6 @@
 # inspectorColumnWidth(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Sets a fixed, preferred width for the inspector containing this view when presented as a trailing column.

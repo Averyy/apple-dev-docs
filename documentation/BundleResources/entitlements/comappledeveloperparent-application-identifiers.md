@@ -1,6 +1,6 @@
 # Parent Application Identifiers Entitlement
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 A list of parent application identifiers for an App Clip with exactly one entry.

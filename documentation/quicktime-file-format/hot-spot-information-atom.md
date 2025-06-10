@@ -1,6 +1,6 @@
 # Hot spot information atom ('hsin')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that contains general information about a hot spot.

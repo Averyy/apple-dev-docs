@@ -1,6 +1,6 @@
 # textSelection(_:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Controls whether people can select text within this view.
@@ -9,7 +9,7 @@ Controls whether people can select text within this view.
 - iOS 15.0+
 - iPadOS 15.0+
 - macOS 12.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

@@ -8,10 +8,10 @@ Configures the search suggestions for this view.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -38,8 +38,6 @@ ProductList()
 When someone chooses a suggestion, SwiftUI replaces the text in the search field with the search completion string. If you omit the search completion modifier for a particular suggestion view, SwiftUI displays the suggestion, but the suggestion view doesn’t react to taps or clicks.
 
 > ❗ **Important**: In tvOS, searchable modifiers only support suggestion views of type `Text`, like in the above example. Other platforms can use any view for the suggestions, including custom views.
-
-In tvOS, searchable modifiers only support suggestion views of type `Text`, like in the above example. Other platforms can use any view for the suggestions, including custom views.
 
 You can update the suggestions that you provide as conditions change.
 

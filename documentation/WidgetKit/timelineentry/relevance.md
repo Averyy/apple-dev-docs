@@ -1,6 +1,6 @@
 # relevance
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property  
 **Required**: Yes
 
@@ -9,8 +9,9 @@ The relevance of a widget’s content to the user.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -18,10 +19,6 @@ The relevance of a widget’s content to the user.
 ```swift
 var relevance: TimelineEntryRelevance? { get }
 ```
-
-## Mentions
-
-- [Increasing the visibility of widgets in Smart Stacks](widget-suggestions-in-smart-stacks.md)
 
 ## See Also
 

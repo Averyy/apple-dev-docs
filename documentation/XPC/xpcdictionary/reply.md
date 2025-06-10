@@ -1,6 +1,6 @@
 # reply(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Sends a reply to the originator of the dictionary.

@@ -23,7 +23,7 @@ class MPMusicPlayerApplicationController
 ### Changing the queue contents
 - [func perform(queueTransaction: (MPMusicPlayerControllerMutableQueue) -> Void, completionHandler: (MPMusicPlayerControllerQueue, (any Error)?) -> Void)](mpmusicplayerapplicationcontroller/perform(queuetransaction:completionhandler:).md)
   Changes the contents of the media items in the queue.
-- [static let MPMusicPlayerControllerQueueDidChange: NSNotification.Name](../foundation/nsnotification/name/2815063-mpmusicplayercontrollerqueuedidc.md)
+- [static let MPMusicPlayerControllerQueueDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/MPMusicPlayerControllerQueueDidChange.md)
   Indicates the music player’s queue changed.
 
 ## Relationships

@@ -1,6 +1,6 @@
 # confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)
 
-**Framework**: Financekitui  
+**Framework**: FinanceKitUI  
 **Kind**: method
 
 Presents a confirmation dialog using data to produce the dialog’s content and a localized string key for the title.

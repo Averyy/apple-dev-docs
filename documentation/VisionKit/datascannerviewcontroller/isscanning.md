@@ -1,6 +1,6 @@
 # isScanning
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A Boolean value that indicates whether the data scanner is actively looking for items.

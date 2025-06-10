@@ -1,6 +1,6 @@
 # userInfo
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The custom data to associate with the notification.

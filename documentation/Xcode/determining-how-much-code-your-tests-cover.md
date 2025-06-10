@@ -63,4 +63,4 @@ According to the counts in the screenshot above, the test frequently called the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/determining-how-much-code-your-tests-cover)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/determining-how-much-code-your-tests-cover)*

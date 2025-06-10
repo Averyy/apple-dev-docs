@@ -10,7 +10,7 @@ Returns all entities of the scene which pass the query.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- visionOS ?+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

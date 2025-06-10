@@ -23,12 +23,12 @@ class SKShader
 ## Mentions
 
 - [Controlling Shape Drawing with Shaders](controlling-shape-drawing-with-shaders.md)
+- [Executing Shaders in Metal and OpenGL](executing-shaders-in-metal-and-opengl.md)
 - [Applying Shaders to a Sprite](applying-shaders-to-a-sprite.md)
 - [Creating a New Node By Rendering To a Texture](creating-a-new-node-by-rendering-to-a-texture.md)
 - [Getting Started with Particle Shaders](getting-started-with-particle-shaders.md)
-- [Customizing the Behavior of a Node](customizing-the-behavior-of-a-node.md)
-- [Executing Shaders in Metal and OpenGL](executing-shaders-in-metal-and-opengl.md)
 - [Creating a Custom Fragment Shader](creating-a-custom-fragment-shader.md)
+- [Customizing the Behavior of a Node](customizing-the-behavior-of-a-node.md)
 
 #### Overview
 
@@ -43,8 +43,6 @@ Compiling a shader and the uniform data associated with it can be expensive. Bec
 - Share shader objects whenever possible. If multiple sprites need the same behavior, create one shader object and associate it with every sprite that needs that behavior. Do not create a separate shader for each sprite.
 
 > ❗ **Important**:  [`SKShader`](skshader.md) does not support OpenGL Extensions. SpriteKit will return an error if you compile a project containing a fragment shader using extensions.
-
- [`SKShader`](skshader.md) does not support OpenGL Extensions. SpriteKit will return an error if you compile a project containing a fragment shader using extensions.
 
 ## Topics
 

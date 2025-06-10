@@ -2,7 +2,7 @@
 
 **Framework**: Xcode
 
-Add images, strings, data files, and other resources to your projects, and manage how you load them at runtime.
+Add app icons, images, strings, data files, machine learning models, and other resources to your projects, and manage how you load them at runtime.
 
 #### Overview
 
@@ -16,16 +16,18 @@ Xcode also provides interactive editors for certain types of assets, like partic
 
 ## Topics
 
+### App icons and launch screen
+- [Creating your app icon using Icon Composer](creating-your-app-icon-using-icon-composer.md)
+  Use Icon Composer to stylize your app icon for different platforms and appearances.
+- [Configuring Your App to Use Alternate App Icons](configuring_your_app_to_use_alternate_app_icons.md)
+  Add alternate app icons to your app, and let people choose which icon to display.
+- [Configuring your app icon using an asset catalog](configuring-your-app-icon.md)
+  Add app icon variations to an asset catalog that represents your app in places such as the App Store, the Home Screen, Settings, and search results.
+- [Specifying your app’s launch screen](specifying-your-apps-launch-screen.md)
+  Make your iOS app launch experience faster and more responsive by customizing a launch screen.
 ### Asset catalogs
 - [Managing assets with asset catalogs](managing-assets-with-asset-catalogs.md)
   Add, organize, and edit sets of assets in your Xcode project using asset catalogs.
-### App icons and launch screen
-- [Configuring your app icon](configuring-your-app-icon.md)
-  Add app icon variations to represent your app in places such as Settings, search results, and the App Store.
-- [Configuring Your App to Use Alternate App Icons](configuring_your_app_to_use_alternate_app_icons.md)
-  Add alternate app icons to your app, and let people choose which icon to display.
-- [Specifying your app’s launch screen](specifying-your-apps-launch-screen.md)
-  Make your iOS app launch experience faster and more responsive by customizing a launch screen.
 ### Images
 - [Adding images to your Xcode project](adding-images-to-your-xcode-project.md)
   Import images into your project, manage their appearances and variations, and load them at runtime.
@@ -36,14 +38,14 @@ Xcode also provides interactive editors for certain types of assets, like partic
   Set a global accent color for your app by using asset catalogs.
 - [Supporting Dark Mode in your interface](../UIKit/supporting-dark-mode-in-your-interface.md)
   Update colors, images, and behaviors so that your app adapts automatically when Dark Mode is active.
-### AR assets
+### Augmented reality assets
 - [Detecting Images in an AR Experience](../ARKit/detecting-images-in-an-ar-experience.md)
   React to known 2D images in the user’s environment, and use their positions to place AR content.
 - [Scanning and Detecting 3D Objects](../ARKit/scanning-and-detecting-3d-objects.md)
   Record spatial features of real-world objects, then use the results to find those objects in the user’s environment and trigger AR content.
 - [Creating 3D Content with Reality Composer](../RealityKit/creating-3d-content-with-reality-composer.md)
   Assemble assets into a dynamic 3D composition that you can add to a scene in your app, or share with AR Quick Look.
-### Machine learning assets
+### Machine learning models
 - [Create ML](../CreateML/CreateML.md)
   Create machine learning models for use in your app.
 ### Particle effects

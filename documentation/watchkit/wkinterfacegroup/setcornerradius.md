@@ -1,6 +1,6 @@
 # setCornerRadius(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Changes the radius to use when drawing rounded corners for the group.

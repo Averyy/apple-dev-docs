@@ -66,7 +66,7 @@ CloudKit throttles are implemented to balance the use of CloudKit resources and 
 The best strategy to handle CloudKit throttles is to avoid them in the first place, and respect the `retryAfter` time if they happen. For apps that use the CloudKit framework, consider the following:
 
 - Minimize the number of CloudKit operations and avoid doing many operations in a short time frame.
-- Handle errors for every CloudKit operation. When hitting a `.requestRateLimited` or `.serviceUnavailable` error, retrieve the [`CKErrorRetryAfterKey`](https://developer.apple.com/documentation/CloudKit/CKErrorRetryAfterKey) value from the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary, and use it as the number of seconds to wait before retrying the operation.
+- Handle errors for every CloudKit operation. When hitting a `.requestRateLimited` or `.serviceUnavailable` error, retrieve the [`CKErrorRetryAfterKey`](https://developer.apple.com/documentation/CloudKit/CKErrorRetryAfterKey) value from the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary, and use it as the number of seconds to wait before retrying the operation.
 - For operations that are not critical for the current launch session, schedule them as background tasks using the [`Background Tasks`](https://developer.apple.com/documentation/BackgroundTasks) framework to have the system run the operations when it determines appropriate.
 
 > **Note**: Apps that use [`CKSyncEngine`](https://developer.apple.com/documentation/CloudKit/CKSyncEngine-5sie5), which is a part of the CloudKit framework, don’t need to handle the errors. When hitting a throttle,  `CKSyncEngine` respects it and automatically re-schedules the synchronization tasks after the `retry-after` time.
@@ -117,4 +117,4 @@ A retried request is not guaranteed to succeed. It may be throttled again, with 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3162-understanding-cloudkit-throttles)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3162-understanding-cloudkit-throttles)*

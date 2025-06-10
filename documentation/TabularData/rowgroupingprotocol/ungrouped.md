@@ -27,8 +27,6 @@ A row grouping can only use this method if all its groups have the same column n
 
 > ❗ **Important**: The method discards a column with the same name as the row grouping itself.
 
-The method discards a column with the same name as the row grouping itself.
-
 
 ---
 

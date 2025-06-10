@@ -1,6 +1,6 @@
 # Verifying Device Support and User Permission
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Check whether your app can use ARKit and respect user privacy at runtime.
 
@@ -38,4 +38,4 @@ If your app uses [`ARFaceTrackingConfiguration`](arfacetrackingconfiguration.md)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/verifying-device-support-and-user-permission)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/verifying-device-support-and-user-permission)*

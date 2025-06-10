@@ -1,6 +1,6 @@
 # XCTPerformanceMeasurementTimestamp
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 A point in time that captures the start or finish of a performance test iteration.

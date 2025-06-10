@@ -1,6 +1,6 @@
 # Sending push notifications using command-line tools
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Use basic macOS command-line tools to send push notifications to Apple Push Notification service (APNs).
 

@@ -14,6 +14,12 @@ The example below limits the number of reviews returned in the response.
 
 ##### Example Request and Response
 
+## See Also
+
+- [GET /v1/apps/{id}/relationships/customerReviews](get-v1-apps-_id_-relationships-customerreviews.md)
+- [Read customer review summarizations](get-v1-apps-_id_-customerreviewsummarizations.md)
+  Get the customer review summarization for a specific app.
+
 
 ---
 

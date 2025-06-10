@@ -1,4 +1,4 @@
-# Tips.ConfigurationOption.DatastoreLocation
+# DatastoreLocation
 
 **Framework**: TipKit  
 **Kind**: struct
@@ -40,6 +40,7 @@ For more information on datastore location, see [`datastoreLocation(_:)`](tips/c
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

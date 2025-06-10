@@ -20,7 +20,7 @@ var calendar: Calendar { get set }
 
 #### Discussion
 
-Defaults to [`current`](https://developer.apple.com/documentation/foundation/nscalendar/1408501-current), which is the user’s current calendar set in Settings.
+Defaults to [`current`](https://developer.apple.com/documentation/Foundation/NSCalendar/current), which is the user’s current calendar set in Settings.
 
 ## See Also
 

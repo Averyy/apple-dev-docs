@@ -1,6 +1,6 @@
 # Encourage progress and competition with leaderboards
 
-**Framework**: Gamekit
+**Framework**: GameKit
 
 Let players measure their own progress and compare their skills with friends and others.
 
@@ -152,4 +152,4 @@ Otherwise, you set the default leaderboard for all players in App Store Connect 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/encourage-progress-and-competition-with-leaderboards)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/encourage-progress-and-competition-with-leaderboards)*

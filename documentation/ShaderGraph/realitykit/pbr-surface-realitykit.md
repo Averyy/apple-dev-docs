@@ -5,6 +5,14 @@
 
 A surface shader that defines properties for a RealityKit Physically Based Rendering material.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Parameter Descriptions
@@ -13,7 +21,7 @@ A surface shader that defines properties for a RealityKit Physically Based Rende
 
 The PBR Surface node produces a custom surface based on its input parameters. Connect the output of the PBR Surface node to the `Custom Surface` output of your material.
 
-Below is an example material that uses only the PBR Surface node to produce a gold-like texture and apply it to a sphere.
+Below is an example material that uses only the `PBR Surface` node to produce a gold-like texture and apply it to a sphere:
 
 ## See Also
 

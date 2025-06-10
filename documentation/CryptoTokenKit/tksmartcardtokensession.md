@@ -33,6 +33,8 @@ You can use the [`smartCard`](tksmartcardtokensession/smartcard.md) property to 
 ### Accessing the Smart Card
 - [var smartCard: TKSmartCard](tksmartcardtokensession/smartcard.md)
   The smart card for the active exclusive session and selected application.
+### Instance Methods
+- [func getSmartCard() throws -> TKSmartCard](tksmartcardtokensession/getsmartcard.md)
 
 ## Relationships
 

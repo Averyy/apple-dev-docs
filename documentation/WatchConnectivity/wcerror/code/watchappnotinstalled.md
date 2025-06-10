@@ -1,6 +1,6 @@
 # WCError.Code.watchAppNotInstalled
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: case
 
 An error indicating that the Watch app isn’t an installed app on the user’s Apple Watch.

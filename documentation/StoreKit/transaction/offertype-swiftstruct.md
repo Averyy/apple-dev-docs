@@ -45,17 +45,12 @@ You don’t create offer types in [`Transaction.OfferType`](transaction/offertyp
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [let id: String?](transaction/offer-swift.struct/id.md)
-  A string that identifies the subscription offer that applies to the transaction.
-- [let type: Transaction.OfferType](transaction/offer-swift.struct/type.md)
-  The type of subscription offer that applies to the transaction.
-- [let paymentMode: Transaction.Offer.PaymentMode?](transaction/offer-swift.struct/paymentmode-swift.property.md)
-  The payment mode for a subscription offer on an auto-renewable subscription that applies to the transaction.
-- [Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct.md)
-  The payment modes for subscription offers that apply to a transaction.
+- [Transaction.AdvancedCommerceInfo](transaction/advancedcommerceinfo-swift.struct.md)
+  Metadata for transactions that use the Advanced Commerce API.
 
 
 ---

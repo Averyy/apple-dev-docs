@@ -17,6 +17,7 @@ The number of times you can invoke redo before there are no actions left to redo
 ## Declaration
 
 ```swift
+@MainActor
 var redoCount: Int { get }
 ```
 

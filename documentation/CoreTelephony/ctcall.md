@@ -41,6 +41,8 @@ class CTCall
 
 ## See Also
 
+- [class CTCarrier](ctcarrier.md)
+  Information about the user’s cellular service provider, such as its unique identifier and whether it allows VoIP calls on its network.
 - [class CTCallCenter](ctcallcenter.md)
   An object that provides a list of current cellular calls, and provides the ability to respond to state changes for calls.
 

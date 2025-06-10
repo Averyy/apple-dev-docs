@@ -6,12 +6,13 @@
 Specifies a block to be called before rendering with programs with the specified GLSL uniform variable or attribute name.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.9+
-- tvOS ?+
-- visionOS ?+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 

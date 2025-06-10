@@ -27,8 +27,6 @@ Access to the [`AVPlayerItem`](avplayeritem.md) replicas are for informational p
 
 > ❗ **Important**:  You should not modify any properties of the replicas that would disrupt looping playback. This includes properties such as the playhead time/date, selected media option, and forward playback end time.
 
- You should not modify any properties of the replicas that would disrupt looping playback. This includes properties such as the playhead time/date, selected media option, and forward playback end time.
-
 ## See Also
 
 - [func disableLooping()](avplayerlooper/disablelooping.md)

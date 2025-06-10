@@ -21,7 +21,7 @@ var interactionActivityTrackingBaseName: String? { get set }
 
 #### Discussion
 
-To help you investigate perfomance issues in your app, UIKit annotates significant user interactions with signpost messages. It creates activities that span the duration of the interaction and sets one of the [`ProcessInfo.ActivityOptions`](https://developer.apple.com/documentation/Foundation/ProcessInfo/ActivityOptions) for tracking: doc://com.apple.documentation/documentation/foundation/processinfo/activityoptions/3967425-animationtrackingenabled or doc://com.apple.documentation/documentation/foundation/processinfo/activityoptions/3967426-trackingenabled.
+To help you investigate perfomance issues in your app, UIKit annotates significant user interactions with signpost messages. It creates activities that span the duration of the interaction and sets one of the [`ProcessInfo.ActivityOptions`](https://developer.apple.com/documentation/Foundation/ProcessInfo/ActivityOptions) for tracking: [`animationTrackingEnabled`](https://developer.apple.com/documentation/Foundation/ProcessInfo/ActivityOptions/animationTrackingEnabled) or [`trackingEnabled`](https://developer.apple.com/documentation/Foundation/ProcessInfo/ActivityOptions/trackingEnabled).
 
 Use this property to customize the tracking name the activity uses in the signpost messages. Scroll views that can derive their enclosing view controller also use the tracking name to annotate interactive dragging and programmatic scrolling events.
 

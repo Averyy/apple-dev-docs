@@ -24,16 +24,8 @@ var isInvertible: Bool { get }
 
 - [struct Dimension3DSet](dimension3dset.md)
   A set of dimensions.
-- [var isIdentity: Bool](affinetransform3d/isidentity.md)
-  A Boolean value that indicates whether the transform is the identity transform.
-- [var isRectilinear: Bool](affinetransform3d/isrectilinear.md)
-  A Boolean value that indicates whether the transform is rectilinear.
-- [var isTranslation: Bool](affinetransform3d/istranslation.md)
-  A Boolean value that indicates whether the transform contains only a translation.
 - [func isUniform(overDimensions: Dimension3DSet) -> Bool](affinetransform3d/isuniform(overdimensions:).md)
   Returns a Boolean value that indicates whether the transform scales equally over the specified dimensions.
-- [var isUniform: Bool](affinetransform3d/isuniform.md)
-  A Boolean value that indicates whether the transform scales equally over all dimensions.
 - [var matrix: simd_double4x3](affinetransform3d/matrix.md)
   The affine transform’s underlying matrix.
 - [var matrix3x3: simd_double3x3](affinetransform3d/matrix3x3.md)

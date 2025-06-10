@@ -8,8 +8,6 @@ Restricted-use symbols that the framework requires for macro expansion and other
 
 > ❗ **Important**: Don’t use these restricted symbols directly. The framework depends on the symbols for macro expansion and other nonpublic tasks.
 
-Don’t use these restricted symbols directly. The framework depends on the symbols for macro expansion and other nonpublic tasks.
-
 ## Topics
 
 ### Properties

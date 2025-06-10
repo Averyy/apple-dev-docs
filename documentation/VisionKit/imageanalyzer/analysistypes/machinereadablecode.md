@@ -1,6 +1,6 @@
 # machineReadableCode
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 An option that analyzes an image for machine-readable codes, such as QR codes.
@@ -29,8 +29,6 @@ The framework recognizes the following code types:
 Aztec, Codebar, Code 39 Checksum, Code 39, Code 39 Full ASCII, Code 39 Full ASCII Checksum, Code 93, Code 93, Code 128, Matrix EAN-8, Data, EAN-13, GS1 DataBar Expanded, GS1 DataBar Limited, ITF, ITF-14, MicroPDF417, MicroQR, PDF417 QR, UPC-E
 
 > ❗ **Important**: The framework ignores this option on macOS.
-
-The framework ignores this option on macOS.
 
 ## See Also
 

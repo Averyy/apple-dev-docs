@@ -24,8 +24,6 @@ init(rawCategory: CMTypedTag<TypedValue>.RawCategory, valueForTagValue: @escapin
 
 > ❗ **Important**:  To ensure that your category is valid, use an existing static category listed in [`Creating Typed Categories`](cmtypedtag/category-swift.struct#Creating-Typed-Categories.md) rather than creating an instance yourself.
 
- To ensure that your category is valid, use an existing static category listed in [`Creating Typed Categories`](cmtypedtag/category-swift.struct#Creating-Typed-Categories.md) rather than creating an instance yourself.
-
 ## Parameters
 
 - `rawCategory`: A raw 64-bit identifier for the category.

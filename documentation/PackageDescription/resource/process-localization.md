@@ -37,6 +37,8 @@ If possible, use this rule instead of [`copy(_:)`](resource/copy(_:).md).
   Defines the explicit type of localization for resources.
 - [static func copy(String) -> Resource](resource/copy(_:).md)
   Applies the copy rule to a resource at the given path.
+- [static func embedInCode(String) -> Resource](resource/embedincode(_:).md)
+  Applies the embed rule to a resource at the given path.
 
 
 ---

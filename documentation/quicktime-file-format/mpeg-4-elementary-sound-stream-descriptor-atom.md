@@ -7,8 +7,8 @@ A required extension to the audio sample description for MPEG-4 audio.
 
 ## Mentions
 
-- [Sound sample data](sound_sample_data.md)
 - [QuickTime File Format change log](revision_history.md)
+- [Sound sample data](sound_sample_data.md)
 
 #### Overview
 

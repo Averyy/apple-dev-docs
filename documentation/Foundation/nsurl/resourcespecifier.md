@@ -26,8 +26,6 @@ This property contains the resource specifier. Any percent-encoded characters ar
 
 > ❗ **Important**:  If the receiver does not specify a net location portion of the URL, as returned by the toll-free bridged `CFURL` function [`CFURLCopyNetLocation(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFURLCopyNetLocation(_:)), then this method returns only the path of the receiver. For example, in the URL `file:///file.txt`, the resource specifier is `/file.txt`.
 
- If the receiver does not specify a net location portion of the URL, as returned by the toll-free bridged `CFURL` function [`CFURLCopyNetLocation(_:)`](https://developer.apple.com/documentation/CoreFoundation/CFURLCopyNetLocation(_:)), then this method returns only the path of the receiver. For example, in the URL `file:///file.txt`, the resource specifier is `/file.txt`.
-
 ## See Also
 
 - [var absoluteString: String?](nsurl/absolutestring.md)

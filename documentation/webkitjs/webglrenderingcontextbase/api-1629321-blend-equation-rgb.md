@@ -1,6 +1,6 @@
 # BLEND_EQUATION_RGB
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

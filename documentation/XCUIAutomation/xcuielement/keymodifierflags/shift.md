@@ -1,6 +1,6 @@
 # shift
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The Shift key in a combination keystroke.

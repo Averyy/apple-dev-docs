@@ -1,6 +1,6 @@
 # focusGroups(for:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Returns the focus group hierarchy for the specified environment object.

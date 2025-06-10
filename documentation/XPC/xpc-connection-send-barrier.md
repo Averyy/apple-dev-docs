@@ -1,6 +1,6 @@
 # xpc_connection_send_barrier(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Issues a barrier against the connection’s message-send activity.
@@ -40,7 +40,7 @@ It is important to note that a barrier block’s execution order is not guarante
 
 - [func xpc_connection_send_message(xpc_connection_t, xpc_object_t)](xpc_connection_send_message(_:_:).md)
   Sends a message over the connection to the destination service.
-- [func xpc_connection_send_message_with_reply(xpc_connection_t, xpc_object_t, dispatch_queue_t?, xpc_handler_t)](xpc_connection_send_message_with_reply(_:_:_:_:).md)
+- [func xpc_connection_send_message_with_reply(xpc_connection_t, xpc_object_t, dispatch_queue_t?, (xpc_object_t) -> Void)](xpc_connection_send_message_with_reply(_:_:_:_:).md)
   Sends a message over the connection to the destination service and associates a handler to invoke when the remote service sends a reply message.
 - [func xpc_connection_send_message_with_reply_sync(xpc_connection_t, xpc_object_t) -> xpc_object_t](xpc_connection_send_message_with_reply_sync(_:_:).md)
   Sends a message over the connection and blocks the caller until it receives a reply.

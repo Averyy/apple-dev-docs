@@ -1,6 +1,6 @@
 # init(_:kem:)
 
-**Framework**: Cryptokit  
+**Framework**: Apple CryptoKit  
 **Kind**: init
 
 Creates a NIST P-256 elliptic curve public key for use with Diffie-Hellman key exchange.

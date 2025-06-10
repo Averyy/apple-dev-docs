@@ -30,8 +30,6 @@ By default, the enumeration starts with the first object and continues serially 
 
 > ❗ **Important**:  If the block parameter or the `indexSet` is `nil` this method will raise an exception.
 
- If the block parameter or the `indexSet` is `nil` this method will raise an exception.
-
 ## Parameters
 
 - `s`: The indexes of the objects over which to enumerate.

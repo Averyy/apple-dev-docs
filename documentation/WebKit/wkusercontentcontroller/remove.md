@@ -1,6 +1,6 @@
 # remove(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Removes the specified rule list from the content controller object.

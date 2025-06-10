@@ -1,6 +1,6 @@
 # webView(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the web view for the tab is needed.

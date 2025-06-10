@@ -1,6 +1,6 @@
 # xpc_dictionary_set_mach_send(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 **Availability**:

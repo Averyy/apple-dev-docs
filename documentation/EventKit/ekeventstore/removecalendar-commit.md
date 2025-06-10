@@ -1,6 +1,6 @@
 # removeCalendar(_:commit:)
 
-**Framework**: Eventkit  
+**Framework**: EventKit  
 **Kind**: method
 
 Removes a calendar from the event store by either committing or batching the changes.

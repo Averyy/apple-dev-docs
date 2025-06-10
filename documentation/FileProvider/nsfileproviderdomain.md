@@ -60,6 +60,9 @@ By default, a File Provider extension has no domain. You can register domains by
   A list of known folders that the domain can replicate.
 - [struct NSFileProviderKnownFolders](nsfileproviderknownfolders.md)
   Constants that identify known folders.
+### Supporting search
+- [var supportsStringSearchRequest: Bool](nsfileproviderdomain/supportsstringsearchrequest.md)
+  A Boolean value that indicates whether the provider supports search.
 ### Testing
 - [var testingModes: NSFileProviderDomain.TestingModes](nsfileproviderdomain/testingmodes-swift.property.md)
   A mode that gives the File Provider extension more control over the system’s behavior during testing.

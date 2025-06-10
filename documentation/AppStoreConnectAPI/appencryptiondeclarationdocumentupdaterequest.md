@@ -35,6 +35,8 @@ object AppEncryptionDeclarationDocumentUpdateRequest
   A response that contains a list of App Encryption Declaration resources.
 - [type AppEncryptionDeclarationState](appencryptiondeclarationstate.md)
   Strings that represent the review or acceptance status of an app encryption declaration submitted to Apple.
+- [object AppEncryptionDeclarationAppEncryptionDeclarationDocumentLinkageResponse](appencryptiondeclarationappencryptiondeclarationdocumentlinkageresponse.md)
+- [object AppEncryptionDeclarationAppLinkageResponse](appencryptiondeclarationapplinkageresponse.md)
 
 
 ---

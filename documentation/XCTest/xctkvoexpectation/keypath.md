@@ -1,6 +1,6 @@
 # keyPath
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The key path the system observes for KVO changes.

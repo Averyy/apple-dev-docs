@@ -18,7 +18,7 @@ The color used to fill the shape.
 
 ```swift
 @MainActor
-var fillColor: UIColor { get set }
+var fillColor: NSColor { get set }
 ```
 
 ## Mentions

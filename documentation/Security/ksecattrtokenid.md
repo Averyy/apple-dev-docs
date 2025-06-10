@@ -30,8 +30,6 @@ The corresponding value is of type [`CFString`](https://developer.apple.com/docu
 
 > ❗ **Important**:  You can’t change this attribute after creating the keychain item. It isn’t possible to migrate existing items between stores. Setting `kSecAttrTokenID` when creating a keychain item in macOS makes it behave like an iOS keychain item, as if [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) were also set.
 
- You can’t change this attribute after creating the keychain item. It isn’t possible to migrate existing items between stores. Setting `kSecAttrTokenID` when creating a keychain item in macOS makes it behave like an iOS keychain item, as if [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) were also set.
-
 Use this attribute only in the top-level parameter dictionary during key creation and not in one of the private or public key sub-dictionaries given by [`kSecPrivateKeyAttrs`](ksecprivatekeyattrs.md) or [`kSecPublicKeyAttrs`](ksecpublickeyattrs.md), respectively. For an example, see [`Protecting keys with the Secure Enclave`](protecting-keys-with-the-secure-enclave.md).
 
 

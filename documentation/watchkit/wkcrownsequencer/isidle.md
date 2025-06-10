@@ -1,6 +1,6 @@
 # isIdle
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A Boolean value indicating whether the crown is at rest.

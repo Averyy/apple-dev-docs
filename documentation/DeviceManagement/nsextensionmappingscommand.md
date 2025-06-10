@@ -7,8 +7,6 @@ The command to get a list of the installed extensions for a user on a device.
 
 **Availability**:
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,14 +16,14 @@ object NSExtensionMappingsCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object NSExtensionMappingsCommand.Command](nsextensionmappingscommand/command-data.dictionary.md)
-  The request dictionary to get a list of the installed extensions for a user on a device.
+  The command to get a list of the installed extensions for a user on a device.
 
 ## See Also
 
 - [object NSExtensionMappingsResponse](nsextensionmappingsresponse.md)
-  A response from the device after it processes the command to get a list of the installed extensions for a user.
+  A response from the device after it processes the command to get a list of the installed extensions for a user on a device.
 
 
 ---

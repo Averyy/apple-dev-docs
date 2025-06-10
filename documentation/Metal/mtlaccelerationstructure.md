@@ -59,10 +59,16 @@ The table below summarizes the descriptor classes:
 
 - [Improving Ray-Tracing Data Access Using Per-Primitive Data](improving-ray-tracing-data-access-using-per-primitive-data.md)
   Simplify data access and improve GPU utilization by storing custom primitive data directly in the acceleration structure.
+- [class MTL4AccelerationStructureDescriptor](mtl4accelerationstructuredescriptor.md)
+  Base class for Metal 4 acceleration structure descriptors.
 - [class MTLAccelerationStructureDescriptor](mtlaccelerationstructuredescriptor.md)
   A base class for classes that define the configuration for a new acceleration structure.
+- [class MTL4PrimitiveAccelerationStructureDescriptor](mtl4primitiveaccelerationstructuredescriptor.md)
+  Descriptor for a primitive acceleration structure that directly references geometric shapes, such as triangles and bounding boxes.
 - [class MTLPrimitiveAccelerationStructureDescriptor](mtlprimitiveaccelerationstructuredescriptor.md)
   A description of an acceleration structure that contains geometry primitives.
+- [class MTL4InstanceAccelerationStructureDescriptor](mtl4instanceaccelerationstructuredescriptor.md)
+  Descriptor for an instance acceleration structure.
 - [class MTLInstanceAccelerationStructureDescriptor](mtlinstanceaccelerationstructuredescriptor.md)
   A description of an acceleration structure that derives from instances of primitive acceleration structures.
 - [protocol MTLAccelerationStructureCommandEncoder](mtlaccelerationstructurecommandencoder.md)

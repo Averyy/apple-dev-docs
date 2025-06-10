@@ -13,6 +13,7 @@ Asks the delegate for the maneuver’s display style.
 ## Declaration
 
 ```swift
+@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, displayStyleFor maneuver: CPManeuver) -> CPManeuverDisplayStyle
 ```
 

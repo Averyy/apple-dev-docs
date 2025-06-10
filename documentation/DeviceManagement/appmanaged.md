@@ -1,6 +1,6 @@
 # AppManaged
 
-**Framework**: Devicemanagement  
+**Framework**: Device Management  
 **Kind**: dictionary
 
 The declaration to configure a managed app.
@@ -8,9 +8,8 @@ The declaration to configure a managed app.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
+- macOS 26.0+ (Beta)
 - visionOS 2.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,11 +17,24 @@ The declaration to configure a managed app.
 object AppManaged
 ```
 
+## Mentions
+
+- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
+
 #### Discussion
 
-Provide a value for one and only one of the `AppStoreID`, `BundleID`, or `ManifestURL` keys.
+Specify `com.apple.configuration.app.managed` as the declaration type.
 
-> **Note**:  This documentation contains preliminary information about an API or technology in development. This information is subject to change. Learn more about using [`Apple’s beta software`](https://developer.apple.comhttps://developer.apple.com/support/beta-software/).
+##### Configuration Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in device enrollment | iOS, Shared iPad, visionOS |
+| Allowed in user enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in local enrollment | NA |
+| Allowed in system scope | iOS, macOS, Shared iPad, visionOS |
+| Allowed in user scope | macOS |
 
 ## Topics
 
@@ -31,12 +43,12 @@ Provide a value for one and only one of the `AppStoreID`, `BundleID`, or `Manife
   A dictionary of app config data and credentials.
 - [object AppManagedAttributesObject](appmanagedattributesobject.md)
   A dictionary of values associated with an app.
-- [object AppManagedCredentialConfigObject](appmanagedcredentialconfigobject.md)
-  A dictionary of values associated with a credential config.
 - [object AppManagedExtensionConfigsObject](appmanagedextensionconfigsobject.md)
   A dictionary of values associated with an extension config.
 - [object AppManagedInstallBehaviorObject](appmanagedinstallbehaviorobject.md)
   A dictionary that describes how and when to install an app.
+- [object AppManagedUpdateBehaviorObject](appmanagedupdatebehaviorobject.md)
+  Specifies the update behavior of the apps installed from the App Store. Apps in packages are not automatically updated.
 
 ## See Also
 
@@ -54,6 +66,8 @@ Provide a value for one and only one of the `AppStoreID`, `BundleID`, or `Manife
   The declaration to configure a Mail account.
 - [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
   The declaration to configure a Calendar subscription.
+- [object AudioAccessorySettings](audioaccessorysettings.md)
+  The declaration to configure audio accessory settings.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
@@ -66,12 +80,10 @@ Provide a value for one and only one of the `AppStoreID`, `BundleID`, or `Manife
   The declaration to test the MDM system.
 - [object MathSettings](mathsettings.md)
   The declaration to configure the math and calculator apps.
-- [object PasscodeSettings](passcodesettings.md)
-  The declaration to configure passcode policy settings.
-- [object SafariExtensionSettings](safariextensionsettings.md)
-  The declaration to configure Safari Extensions.
+- [object Package](package.md)
+  The declaration to install a package.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/appmanaged)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/appmanaged)*

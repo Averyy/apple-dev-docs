@@ -20,9 +20,6 @@ enum OpacityFunction
 
 ## Topics
 
-### Operators
-- [static func == (HoverEffectComponent.OpacityFunction, HoverEffectComponent.OpacityFunction) -> Bool](hovereffectcomponent/opacityfunction/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [HoverEffectComponent.OpacityFunction.blend](hovereffectcomponent/opacityfunction/blend.md)
   Draws the hover effect with an opacity that’s equal to the product of the entity’s base material and the shader’s output.
@@ -30,14 +27,6 @@ enum OpacityFunction
   Applies an opaque hover effect and ignores the opacity of the entity’s base material.
 - [HoverEffectComponent.OpacityFunction.mask](hovereffectcomponent/opacityfunction/mask.md)
   Applies a hover effect with full opacity when the opacity of the entity’s base material is greater than five percent.
-### Instance Properties
-- [var hashValue: Int](hovereffectcomponent/opacityfunction/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](hovereffectcomponent/opacityfunction/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](hovereffectcomponent/opacityfunction/equatable-implementations.md)
 
 ## Relationships
 
@@ -45,6 +34,7 @@ enum OpacityFunction
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

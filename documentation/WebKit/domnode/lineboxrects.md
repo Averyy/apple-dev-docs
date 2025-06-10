@@ -1,6 +1,6 @@
 # lineBoxRects()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the rectangles that bound each line of text in the node.

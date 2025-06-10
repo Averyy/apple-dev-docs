@@ -1,6 +1,6 @@
 # visibility
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The distance at which an object can be clearly seen.

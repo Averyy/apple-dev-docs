@@ -68,4 +68,4 @@ One way to fix this issue is to avoid the downcast, such as by using instances o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/invalid-object-size)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/invalid-object-size)*

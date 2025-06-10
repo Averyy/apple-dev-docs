@@ -14,7 +14,6 @@ The height of the page footer.
 ## Declaration
 
 ```swift
-@MainActor
 var footerHeight: CGFloat { get set }
 ```
 

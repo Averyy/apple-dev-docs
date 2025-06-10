@@ -9,6 +9,7 @@ An accessibility event associated with a rotor navigation.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -39,6 +40,7 @@ An accessibility event associated with a rotor navigation.
 ### Conforms To
 - [Event](event.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

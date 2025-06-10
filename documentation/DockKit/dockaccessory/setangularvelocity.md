@@ -1,6 +1,6 @@
 # setAngularVelocity(_:)
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: method
 
 Sets the angular velocity of each axis of orientation.

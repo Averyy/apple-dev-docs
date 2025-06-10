@@ -1,6 +1,6 @@
 # handoffReply(to:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Informs the system when message processing and response continues in a separate dispatch queue.
@@ -16,6 +16,7 @@ Informs the system when message processing and response continues in a separate 
 ## Declaration
 
 ```swift
+@preconcurrency
 func handoffReply(to queue: DispatchQueue, _ continuation: @escaping () -> Void) -> (any Encodable)?
 ```
 

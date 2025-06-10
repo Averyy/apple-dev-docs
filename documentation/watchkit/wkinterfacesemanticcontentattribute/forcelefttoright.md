@@ -1,6 +1,6 @@
 # WKInterfaceSemanticContentAttribute.forceLeftToRight
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 A view that is always displayed using a left-to-right layout.

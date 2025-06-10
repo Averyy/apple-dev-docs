@@ -1,6 +1,6 @@
 # XCUIElement.ElementType.radioButton
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents radio-button controls.

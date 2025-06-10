@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The 2D position and rotation of the equipment relative to the equipment parent, or table.
+The 2D position and rotation of the equipment relative to the parent equipment, or table.
 
 **Availability**:
 - visionOS 2.0+

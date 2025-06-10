@@ -48,4 +48,4 @@ Adopt this protocol for potentially long-running Vision requests to provide info
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/vnrequestprogressproviding)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/vnrequestprogressproviding)*

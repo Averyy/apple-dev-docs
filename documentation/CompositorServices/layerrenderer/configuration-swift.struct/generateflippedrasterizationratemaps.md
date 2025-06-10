@@ -6,6 +6,7 @@
 A Boolean value that indicates whether the layer renderer provides rasterization rate maps flipped around the y-axis.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

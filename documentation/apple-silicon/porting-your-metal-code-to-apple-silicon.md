@@ -1,6 +1,6 @@
 # Porting your Metal code to Apple silicon
 
-**Framework**: Apple Silicon
+**Framework**: Apple silicon
 
 Create a version of your Metal app that runs on both Apple silicon and Intel-based Mac computers.
 

@@ -10,6 +10,7 @@ Creates a scalar parameter from an integer literal.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -22,10 +23,6 @@ init(integerLiteral value: Int)
 
 - [init(floatLiteral: Float)](materialscalarparameter/init(floatliteral:).md)
   Creates a scalar parameter from a floating-point literal.
-- [MaterialScalarParameter.FloatLiteralType](materialscalarparameter/floatliteraltype.md)
-  A type that represents a floating-point literal.
-- [MaterialScalarParameter.IntegerLiteralType](materialscalarparameter/integerliteraltype.md)
-  A type that represents an integer literal.
 
 
 ---

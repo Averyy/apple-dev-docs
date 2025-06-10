@@ -1,6 +1,6 @@
 # UTTypeReference
 
-**Framework**: Uniformtypeidentifiers  
+**Framework**: Uniform Type Identifiers  
 **Kind**: class
 
 An object that represents a type of data to load, send, or receive.
@@ -110,6 +110,7 @@ To define your own types in your app’s `Info.plist`, see [`Defining file and d
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -121,4 +122,4 @@ To define your own types in your app’s `Info.plist`, see [`Defining file and d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UniformTypeIdentifiers/uttypereference)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uniformtypeidentifiers/uttypereference)*

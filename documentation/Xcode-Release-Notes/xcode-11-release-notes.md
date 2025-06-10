@@ -851,4 +851,4 @@ SWIFT_INCLUDE_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/usr/lib"
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-11-release-notes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode-release-notes/xcode-11-release-notes)*

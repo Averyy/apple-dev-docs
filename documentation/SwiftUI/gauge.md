@@ -1,6 +1,6 @@
 # Gauge
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A view that shows a value within a range.
@@ -180,8 +180,10 @@ struct StyledGauge: View {
   Sets the style for progress views in this view.
 - [struct DefaultDateProgressLabel](defaultdateprogresslabel.md)
   The default type of the current value label when used by a date-relative progress view.
+- [struct DefaultButtonLabel](defaultbuttonlabel.md)
+  The default label to use for a button.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/gauge)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/gauge)*

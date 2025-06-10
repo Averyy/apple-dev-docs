@@ -6,7 +6,13 @@
 A Core Animation layer that renders a SceneKit scene as its content.
 
 **Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.1+
 - macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 
@@ -42,6 +48,8 @@ Most of the methods and properties you use for working with a SceneKit layer are
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [SCNSceneRenderer](scnscenerenderer.md)
 - [SCNTechniqueSupport](scntechniquesupport.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

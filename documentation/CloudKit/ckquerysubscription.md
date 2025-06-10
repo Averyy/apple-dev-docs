@@ -1,6 +1,6 @@
 # CKQuerySubscription
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: class
 
 A subscription that generates push notifications when CloudKit modifies records that match a predicate.
@@ -128,6 +128,7 @@ operation.qualityOfService = NSQualityOfServiceUtility;
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -137,4 +138,4 @@ operation.qualityOfService = NSQualityOfServiceUtility;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckquerysubscription)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckquerysubscription)*

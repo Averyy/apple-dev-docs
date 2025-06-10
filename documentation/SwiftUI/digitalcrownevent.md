@@ -30,6 +30,7 @@ Use the [`digitalCrownRotation(_:)`](view/digitalcrownrotation(_:).md) modifier 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # schedule(_:at:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: method
 
 Schedules the provided workout at the specified date.
@@ -10,6 +10,7 @@ Schedules the provided workout at the specified date.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

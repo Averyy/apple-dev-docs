@@ -263,4 +263,4 @@ While you can encode an ICB’s commands in a compute kernel, you call `executeC
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/encoding-indirect-command-buffers-on-the-gpu)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/encoding-indirect-command-buffers-on-the-gpu)*

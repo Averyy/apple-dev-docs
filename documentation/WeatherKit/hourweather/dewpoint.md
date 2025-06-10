@@ -1,6 +1,6 @@
 # dewPoint
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The amount of moisture in the air.

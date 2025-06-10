@@ -10,6 +10,7 @@ An object that defines how the framework renders a custom material.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -26,17 +27,6 @@ enum LightingModel
   The entity renders using physically based rendering techniques with a clearcoat.
 - [CustomMaterial.LightingModel.unlit](custommaterial/lightingmodel-swift.enum/unlit.md)
   The entity renders with no light or shadow calculations.
-### Comparing values
-- [var hashValue: Int](custommaterial/lightingmodel-swift.enum/hashvalue.md)
-  The hash value.
-- [func hash(into: inout Hasher)](custommaterial/lightingmodel-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [static func == (CustomMaterial.LightingModel, CustomMaterial.LightingModel) -> Bool](custommaterial/lightingmodel-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](custommaterial/lightingmodel-swift.enum/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Equatable Implementations](custommaterial/lightingmodel-swift.enum/equatable-implementations.md)
 
 ## Relationships
 
@@ -44,6 +34,7 @@ enum LightingModel
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

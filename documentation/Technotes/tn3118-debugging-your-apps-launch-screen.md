@@ -78,4 +78,4 @@ Implement state restoration in your app so that the launch screen is used less o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3118-debugging-your-apps-launch-screen)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3118-debugging-your-apps-launch-screen)*

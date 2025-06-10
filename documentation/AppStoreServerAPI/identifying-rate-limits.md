@@ -19,6 +19,7 @@ The following table lists the rate limits for each endpoint in the production en
 | [`Send Consumption Information`](send-consumption-information.md) | 50 |
 | [`Get Notification History`](get-notification-history.md) | 50 |
 | [`Extend a Subscription Renewal Date`](extend-a-subscription-renewal-date.md) | 20 |
+| [`Set App Account Token`](set-app-account-token.md) | 20 |
 | [`Look Up Order ID`](look-up-order-id.md) | 10 |
 | [`Get Refund History`](get-refund-history.md) | 10 |
 | [`Get Refund History V1`](get-refund-history-v1.md) | 10 |

@@ -19,7 +19,9 @@ class ARSCNView
 
 #### Overview
 
-The [`ARSCNView`](arscnview.md) class provides the easiest way to create augmented reality experiences that blend virtual 3D content with a device camera view of the real world. When you run the view’s provided [`ARSession`](arsession.md) object:
+> ❗ **Important**: SceneKit is deprecated, use [`RealityKit`](https://developer.apple.com/documentation/RealityKit) instead. For more information, see WWDC25 session 288: [`Bring your SceneKit projects to RealityKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/288/).
+
+The [`ARSCNView`](arscnview.md) class provides an easy way to create augmented reality experiences that blend virtual 3D content with a device camera view of the real world. When you run the view’s provided [`ARSession`](arsession.md) object:
 
 - The view automatically renders the live video feed from the device camera as the scene background.
 - The world coordinate system of the view’s SceneKit scene directly responds to the AR world coordinate system established by the session configuration.
@@ -90,6 +92,7 @@ Because ARKit requires Metal, use only Metal features of SceneKit. For example:
 - [SCNSceneRenderer](../SceneKit/SCNSceneRenderer.md)
 - [SCNTechniqueSupport](../SceneKit/SCNTechniqueSupport.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)
@@ -109,6 +112,8 @@ Because ARKit requires Metal, use only Metal features of SceneKit. For example:
 
 ## See Also
 
+- [@MainActor @preconcurrency struct RealityView<Content> where Content : View](../RealityKit/RealityView.md)
+  A view that contains RealityKit content.
 - [@MainActor @objc @preconcurrency class ARView](../RealityKit/ARView.md)
   A view that enables you to display an AR experience with RealityKit.
 - [class ARSKView](arskview.md)

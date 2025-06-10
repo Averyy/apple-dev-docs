@@ -1,6 +1,6 @@
 # Identifiable Implementations
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 ## Topics
 

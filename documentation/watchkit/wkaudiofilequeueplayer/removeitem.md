@@ -1,6 +1,6 @@
 # removeItem(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Removes the specified item from the queue.

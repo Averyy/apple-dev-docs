@@ -1,6 +1,6 @@
 # webView(_:doCommandBy:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns whether the receiver performs a command instead of the web view.

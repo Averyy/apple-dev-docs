@@ -1,6 +1,6 @@
 # fantasyFontFamily
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The fantasy font family of the web view.

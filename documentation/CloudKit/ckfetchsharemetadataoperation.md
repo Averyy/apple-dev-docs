@@ -28,7 +28,7 @@ For a shared record hierarchy, the fetched metadata includes the record ID of th
 
 To run the operation, add it to any container’s operation queue. Returned metadata includes the ID of the container that stores the share. The operation executes its callbacks on a private serial queue.
 
-The operation calls [`perShareMetadataBlock`](ckfetchsharemetadataoperation/persharemetadatablock.md) once for each URL you provide, and CloudKit returns the metadata, or an error if the fetch fails. CloudKit also batches per-URL errors. If the operation completes with errors, it returns a [`partialFailure`](ckerror/partialfailure.md) error. The error stores individual errors in its [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary. Use the [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) key to extract them.
+The operation calls [`perShareMetadataBlock`](ckfetchsharemetadataoperation/persharemetadatablock.md) once for each URL you provide, and CloudKit returns the metadata, or an error if the fetch fails. CloudKit also batches per-URL errors. If the operation completes with errors, it returns a [`partialFailure`](ckerror/partialfailure.md) error. The error stores individual errors in its [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary. Use the [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) key to extract them.
 
 When all of the following conditions are true, CloudKit returns a [`participantMayNeedVerification`](ckerror/participantmayneedverification.md) error:
 
@@ -114,6 +114,7 @@ func fetchShareMetadata(for shareURLs: [URL],
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

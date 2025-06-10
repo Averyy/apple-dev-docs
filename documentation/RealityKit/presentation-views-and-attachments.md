@@ -23,6 +23,8 @@ Views are the building blocks for apps that include RealityKit content. Each vie
   A view that represents the default placeholder for a RealityView.
 - [struct RealityViewEntityCollection](realityviewentitycollection.md)
   A collection of entities in a RealityView.
+- [struct RealityViewLayoutOption](realityviewlayoutoption.md)
+  Specifies the frame sizing and content alignment option for`RealityView`.
 - [protocol EntityCollection](entitycollection.md)
   An ordered, mutable collection of entities.
 ### SwiftUI 3D model presentation
@@ -34,13 +36,8 @@ Views are the building blocks for apps that include RealityKit content. Each vie
   A view for displaying static three-dimensional models.
 - [struct Model3DPlaceholderContent](model3dplaceholdercontent.md)
   A container view that presents either a 3D model or a placeholder for one.
-### UIKit and AppKit presentation
-- [class ARView](arview.md)
-  A view that enables you to display an AR experience with RealityKit.
-- [ARView.DebugOptions](arview/debugoptions-swift.struct.md)
-  Options for drawing overlay content in a scene that can aid in debugging.
-- [typealias ARViewBase](arviewbase.md)
-  The platform-specific base class for the view into which RealityKit renders content.
+- [class Model3DAsset](model3dasset.md)
+  A container used to represent the asset loaded into the Model3D View.
 ### Metal workflow rendering
 - [class RealityRenderer](realityrenderer.md)
   A renderer that displays a RealityKit scene in an existing Metal workflow.
@@ -65,6 +62,8 @@ Views are the building blocks for apps that include RealityKit content. Each vie
   An entity that has a view attachment.
 - [struct ViewAttachmentComponent](viewattachmentcomponent.md)
   A component containing additional information about a view attachment entity provided  via the [`entity(for:)`](realityviewattachments/entity(for:).md) function.
+- [struct PresentationComponent](presentationcomponent.md)
+  A component that presents a SwiftUI modal presentation from a RealityKit entity.
 - [struct TextComponent](textcomponent.md)
   A component that draws 2D text at an entity’s location.
 ### Visual environment adjustments
@@ -78,6 +77,10 @@ Views are the building blocks for apps that include RealityKit content. Each vie
   Options that determine the state of high dynamic range rendering for virtual content.
 - [enum AntialiasingMode](antialiasingmode.md)
   The rendering technique used to smooth edges of virtual content.
+- [struct RealityViewPostProcessEffect](realityviewpostprocesseffect.md)
+  A struct for enabling or disabling post processing effects for all content a reality view contains.
+- [struct PostProcessEffectContext](postprocesseffectcontext.md)
+  An object RealityKit passes data to a post process effect method.
 - [ARView.Environment](arview/environment-swift.struct.md)
   A description of background, lighting, and acoustic properties for a view’s content.
 - [ARView.RenderOptions](arview/renderoptions-swift.struct.md)
@@ -89,6 +92,8 @@ Views are the building blocks for apps that include RealityKit content. Each vie
   An object the framework uses to pass data to a postprocess callback.
 - [ARView.RenderCallbacks](arview/rendercallbacks-swift.struct.md)
   A container that holds the view’s render callbacks.
+- [protocol PostProcessEffect](postprocesseffect.md)
+  A protocol that defines hooks for custom post processing effects.
 ### Coordinate space conversions
 - [protocol RealityCoordinateSpaceConverting](realitycoordinatespaceconverting.md)
   A value that can be converted between SwiftUI `CoordinateSpace` and RealityKit `Entity`.
@@ -111,12 +116,20 @@ Views are the building blocks for apps that include RealityKit content. Each vie
   A result builder that creates attachment content from closures.
 - [protocol AttachmentContent](attachmentcontent.md)
   A type that provides content for an attachment content builder.
+- [struct TuplePackAttachmentContent](tuplepackattachmentcontent.md)
 - [struct ConditionalAttachmentContent](conditionalattachmentcontent.md)
 - [struct EmptyAttachmentContent](emptyattachmentcontent.md)
   A attachment content that doesn’t contain any content.
 - [struct TupleAttachmentContent](tupleattachmentcontent.md)
 - [struct AnyAttachmentContent](anyattachmentcontent.md)
   A type-erased attachment content.
+### UIKit and AppKit presentation
+- [class ARView](arview.md)
+  A view that enables you to display an AR experience with RealityKit.
+- [ARView.DebugOptions](arview/debugoptions-swift.struct.md)
+  Options for drawing overlay content in a scene that can aid in debugging.
+- [typealias ARViewBase](arviewbase.md)
+  The platform-specific base class for the view into which RealityKit renders content.
 
 ## See Also
 

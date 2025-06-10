@@ -1,6 +1,6 @@
 # localizedDescription
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: property
 
 A localized description of the error.

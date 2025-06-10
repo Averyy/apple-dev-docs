@@ -1,6 +1,6 @@
 # XCUIElement
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: class
 
 A UI element in an application.
@@ -180,4 +180,4 @@ In macOS and iPadOS 15 and later, [`XCUIElement`](xcuielement.md) provides a way
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/XCUIAutomation/xcuielement)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcuiautomation/xcuielement)*

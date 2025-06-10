@@ -1,6 +1,6 @@
 # XCUIGestureVelocity.IntegerLiteralType
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: typealias
 
 A type that specifies a gesture velocity with an integer literal.

@@ -1,6 +1,6 @@
 # blocks
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: property
 
 A block of repeating work and recovery steps.
@@ -10,6 +10,7 @@ A block of repeating work and recovery steps.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

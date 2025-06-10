@@ -29,8 +29,6 @@ Capture connections to [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md)
 
 > 💡 **Tip**:  Avoid potential performance issues by only mirroring video with a capture connection when necessary.
 
- Avoid potential performance issues by only mirroring video with a capture connection when necessary.
-
 You can mirror the video of a movie file you record with an [`AVAssetWriter`](avassetwriter.md) instance by applying a scale factor to the [`transform`](avassetwriterinput/transform.md) property of its [`AVAssetWriterInput`](avassetwriterinput.md). For example, you can horizontally flip an image by scaling the x-axis by `-1`. This approach avoids the performance costs that come with rotating each video frame.
 
 ```swift

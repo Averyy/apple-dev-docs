@@ -10,7 +10,7 @@ Adds an accessibility action to the view. Actions allow assistive technologies, 
 - iPadOS 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 7.0+
 
 ## Declaration

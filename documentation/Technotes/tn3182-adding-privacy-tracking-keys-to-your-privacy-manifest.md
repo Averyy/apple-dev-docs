@@ -114,4 +114,4 @@ Repeat step 5 for each additional tracking domain your app or third-party SDK co
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest)*

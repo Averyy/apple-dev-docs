@@ -1,6 +1,6 @@
 # xpc_dictionary_set_date(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Inserts a date primitive value into a dictionary.

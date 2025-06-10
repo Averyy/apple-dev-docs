@@ -51,6 +51,7 @@ The receiver uses another instance of the same cipher, like the [`open(_:using:)
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

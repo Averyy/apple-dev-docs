@@ -1,6 +1,6 @@
 # DOM_CSS_ATTR
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

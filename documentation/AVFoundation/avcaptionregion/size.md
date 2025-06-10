@@ -1,6 +1,6 @@
 # size
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The height and width of the region.

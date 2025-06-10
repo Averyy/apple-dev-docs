@@ -77,6 +77,13 @@ struct GCButtonElementName
 ### Getting arcade stick button names
 - [static func arcadeButton(row: Int, column: Int) -> GCButtonElementName](gcbuttonelementname-swift.struct/arcadebutton(row:column:).md)
   Returns the name of the arcade stick button at the specified location.
+### Type Properties
+- [static let grip: GCButtonElementName](gcbuttonelementname-swift.struct/grip.md)
+- [static let stylusPrimaryButton: GCButtonElementName](gcbuttonelementname-swift.struct/stylusprimarybutton.md)
+- [static let stylusSecondaryButton: GCButtonElementName](gcbuttonelementname-swift.struct/stylussecondarybutton.md)
+- [static let stylusTip: GCButtonElementName](gcbuttonelementname-swift.struct/stylustip.md)
+- [static let thumbstickButton: GCButtonElementName](gcbuttonelementname-swift.struct/thumbstickbutton.md)
+- [static let trigger: GCButtonElementName](gcbuttonelementname-swift.struct/trigger.md)
 
 ## Relationships
 
@@ -87,6 +94,7 @@ struct GCButtonElementName
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

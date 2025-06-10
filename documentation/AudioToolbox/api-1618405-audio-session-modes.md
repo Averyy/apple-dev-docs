@@ -1,6 +1,6 @@
 # Audio Session Modes
 
-**Framework**: Audiotoolbox
+**Framework**: Audio Toolbox
 
 Mode identifiers for audio sessions, used as values for the [`kAudioSessionProperty_Mode`](kaudiosessionproperty_mode.md) property.
 

@@ -1,6 +1,6 @@
 # trailing
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 The trailing position in the Dynamic Island for views of an expanded Live Activity.
@@ -8,7 +8,6 @@ The trailing position in the Dynamic Island for views of an expanded Live Activi
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

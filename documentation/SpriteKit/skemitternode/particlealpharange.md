@@ -17,7 +17,6 @@ The range of allowed random values for a particle’s starting alpha value.
 ## Declaration
 
 ```swift
-@MainActor
 var particleAlphaRange: CGFloat { get set }
 ```
 

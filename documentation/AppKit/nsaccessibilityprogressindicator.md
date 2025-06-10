@@ -1,6 +1,6 @@
 # NSAccessibilityProgressIndicator
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: protocol
 
 A role-based protocol that declares the minimum interface necessary for an accessibility element to act as a progress indicator.
@@ -45,4 +45,4 @@ You can further enhance the adopting element by implementing any of the informat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsaccessibilityprogressindicator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsaccessibilityprogressindicator)*

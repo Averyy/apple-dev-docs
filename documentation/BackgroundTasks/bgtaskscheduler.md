@@ -3,7 +3,7 @@
 **Framework**: Background Tasks  
 **Kind**: class
 
-A class for scheduling task requests that launch your app in the background.
+A class for scheduling tasks that add background support to your app’s most critical work.
 
 **Availability**:
 - iOS 13.0+
@@ -11,6 +11,7 @@ A class for scheduling task requests that launch your app in the background.
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 
@@ -18,15 +19,25 @@ A class for scheduling task requests that launch your app in the background.
 class BGTaskScheduler
 ```
 
+## Mentions
+
+- [Performing long-running tasks on iOS and iPadOS](performing-long-running-tasks-on-ios-and-ipados.md)
+
 #### Overview
 
-Background tasks give your app a way to run code while the app is suspended. To learn how to register, schedule, and run a background task, see [`Using background tasks to update your app`](https://developer.apple.com/documentation/UIKit/using-background-tasks-to-update-your-app).
+Background tasks give your app a way to run code even when the app is suspended:
+
+- To register, schedule, and run tasks in the background, see [`Using background tasks to update your app`](https://developer.apple.com/documentation/UIKit/using-background-tasks-to-update-your-app).
+- To submit work in the foreground that can finish even if the app moves to the background, see [`Performing long-running tasks on iOS and iPadOS`](performing-long-running-tasks-on-ios-and-ipados.md).
 
 ## Topics
 
 ### Getting the shared task scheduler
 - [class var shared: BGTaskScheduler](bgtaskscheduler/shared.md)
   The shared background task scheduler instance.
+### Checking task requirements
+- [class var supportedResources: BGContinuedProcessingTaskRequest.Resources](bgtaskscheduler/supportedresources.md)
+  Additional system resources that a continuous background task can request.
 ### Scheduling a task
 - [func register(forTaskWithIdentifier: String, using: dispatch_queue_t?, launchHandler: (BGTask) -> Void) -> Bool](bgtaskscheduler/register(fortaskwithidentifier:using:launchhandler:).md)
   Register a launch handler for the task with the associated identifier that’s executed on the specified queue.
@@ -62,12 +73,8 @@ Background tasks give your app a way to run code while the app is suspended. To 
 
 ## See Also
 
-- [Starting and Terminating Tasks During Development](starting-and-terminating-tasks-during-development.md)
-  Use the debugger during development to start tasks and to terminate them before completion.
-- [Refreshing and Maintaining Your App Using Background Tasks](refreshing-and-maintaining-your-app-using-background-tasks.md)
-  Use scheduled background tasks for refreshing your app content and for performing maintenance.
-- [Choosing Background Strategies for Your App](choosing-background-strategies-for-your-app.md)
-  Select the best method of scheduling background runtime for your app.
+- [class BGTask](bgtask.md)
+  An abstract class for the framework’s tasks.
 
 
 ---

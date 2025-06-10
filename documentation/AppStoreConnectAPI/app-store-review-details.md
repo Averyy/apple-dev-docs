@@ -26,6 +26,7 @@ For more information see [`App Review information`](https://developer.apple.comh
   Add App Store review details to an App Store version, including contact and demo account information.
 - [Read App Store Review Detail Information](get-v1-appstorereviewdetails-_id_.md)
   Get App Review details you provided, including contact information, demo account, and notes.
+- [GET /v1/appStoreReviewDetails/{id}/relationships/appStoreReviewAttachments](get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
 - [Modify an App Store Review Detail](patch-v1-appstorereviewdetails-_id_.md)
   Update the app store review details, including the contact information, demo account, and notes.
 ### Objects
@@ -37,6 +38,7 @@ For more information see [`App Review information`](https://developer.apple.comh
   The request body you use to update an App Store Review Detail.
 - [object AppStoreReviewDetailResponse](appstorereviewdetailresponse.md)
   A response that contains a single App Store Review Details resource.
+- [object AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse](appstorereviewdetailappstorereviewattachmentslinkagesresponse.md)
 
 ## See Also
 

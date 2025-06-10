@@ -1,6 +1,6 @@
 # Transient()
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: macro
 
 Tells SwiftData not to persist the annotated property when managing the owning class.

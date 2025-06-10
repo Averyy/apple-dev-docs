@@ -1,6 +1,6 @@
 # Certificates
 
-**Framework**: Enterpriseprogramapi
+**Framework**: Enterprise Program API
 
 Create, download, and revoke signing certificates for app development and distribution.
 
@@ -53,4 +53,4 @@ The `certificates` resource represents the digital certificates you use to sign 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/EnterpriseProgramAPI/certificates)*
+*[View on Apple Developer](https://developer.apple.com/documentation/enterpriseprogramapi/certificates)*

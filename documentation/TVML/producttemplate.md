@@ -1,6 +1,6 @@
 # productTemplate
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Displays detailed information about a single product.
 
@@ -294,4 +294,4 @@ The following figures show the ouput for the above example. The first figure sho
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/producttemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/producttemplate)*

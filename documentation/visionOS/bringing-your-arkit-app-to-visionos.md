@@ -1,6 +1,6 @@
 # Bringing your ARKit app to visionOS
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Update an iPadOS or iOS app that uses ARKit, and provide an equivalent experience in visionOS.
 
@@ -117,4 +117,4 @@ If you use ARKit raycasting in iOS to detect interactions with objects in the pe
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/bringing-your-arkit-app-to-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/bringing-your-arkit-app-to-visionos)*

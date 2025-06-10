@@ -1,6 +1,6 @@
 # init(for:withContentsOf:ofType:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: init
 
 Initializes a document with the specified contents, and places the resulting document’s file at the designated location.

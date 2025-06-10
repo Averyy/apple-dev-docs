@@ -71,6 +71,8 @@ Use a content filter to limit an [`SCStream`](scstream.md) object’s output to 
   A delegate protocol your app implements to respond to stream events.
 - [class SCScreenshotManager](scscreenshotmanager.md)
   An instance for the capture of single frames from a stream.
+- [class SCScreenshotConfiguration](scscreenshotconfiguration.md)
+- [class SCScreenshotOutput](scscreenshotoutput.md)
 
 
 ---

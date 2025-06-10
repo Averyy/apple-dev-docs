@@ -22,8 +22,6 @@ class ARSCNPlaneGeometry
 
 > ❗ **Important**:  [`ARSCNPlaneGeometry`](arscnplanegeometry.md) is available only in SceneKit views or renderers that use Metal. This class is not supported for OpenGL-based SceneKit rendering.
 
- [`ARSCNPlaneGeometry`](arscnplanegeometry.md) is available only in SceneKit views or renderers that use Metal. This class is not supported for OpenGL-based SceneKit rendering.
-
 As your AR session continues to run, ARKit provides refined estimates of a detected plane’s 2D shape. Use the [`update(from:)`](arscnplanegeometry/update(from:).md) method to incorporate those refinements into the plane’s SceneKit representation.
 
 ## Topics

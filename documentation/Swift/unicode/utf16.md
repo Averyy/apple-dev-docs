@@ -66,6 +66,7 @@ enum UTF16
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Copyable](copyable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [UnicodeCodec](unicodecodec.md)
 
 ## See Also

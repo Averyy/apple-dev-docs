@@ -1,6 +1,6 @@
 # intrinsicContentSize
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 The hosting controller’s view automatically invalidate its intrinsic content size when its ideal size changes.
@@ -32,4 +32,4 @@ Use this option when the hosting controller’s view is being laid out with Auto
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/uihostingcontrollersizingoptions/intrinsiccontentsize)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/uihostingcontrollersizingoptions/intrinsiccontentsize)*

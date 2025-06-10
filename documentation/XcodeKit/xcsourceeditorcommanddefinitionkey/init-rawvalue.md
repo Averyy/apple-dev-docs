@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: init
 
 Creates the key for a source-editor command by using the string value you specify.

@@ -5,6 +5,14 @@
 
 Outputs each of the channels of a color4, vector4, or integer4 as individual float or integer outputs.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 ## See Also

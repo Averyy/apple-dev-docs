@@ -1,6 +1,6 @@
 # WKRelevantShortcutRefreshBackgroundTask
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A background task used to periodically donate relevant Siri shortcuts.
@@ -36,6 +36,7 @@ The system automatically schedules relevant shortcut refresh tasks based on the 
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -61,4 +62,4 @@ The system automatically schedules relevant shortcut refresh tasks based on the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkrelevantshortcutrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkrelevantshortcutrefreshbackgroundtask)*

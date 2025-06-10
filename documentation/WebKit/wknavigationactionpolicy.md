@@ -1,6 +1,6 @@
 # WKNavigationActionPolicy
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 Constants that indicate whether to allow or cancel navigation to a webpage from an action.
@@ -38,6 +38,7 @@ enum WKNavigationActionPolicy
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

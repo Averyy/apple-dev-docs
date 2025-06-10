@@ -1,6 +1,6 @@
 # Executing Observer Queries
 
-**Framework**: Healthkit
+**Framework**: HealthKit
 
 Create and run observer queries.
 
@@ -73,4 +73,4 @@ For more information on managing background deliveries, see Managing Background 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/executing-observer-queries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/executing-observer-queries)*

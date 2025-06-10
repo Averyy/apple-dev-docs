@@ -28,8 +28,6 @@ To edit or delete environment variables in the Shared Environment Variables shee
 
 > 💡 **Tip**: You can also choose Integrate > [Your project name] > Manage Shared Environment Variables to create, edit, or delete environment variables.
 
-You can also choose Integrate > [Your project name] > Manage Shared Environment Variables to create, edit, or delete environment variables.
-
 To apply environment variables to workflows in Xcode:
 
 1. In the Report navigator, Control-click your project name and choose Manage Workflows from the pop-up menu.

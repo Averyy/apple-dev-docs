@@ -17,7 +17,7 @@ Creates a file URL that references the local file or directory for the file syst
 ## Declaration
 
 ```swift
-init(fileURLWithFileSystemRepresentation path: UnsafePointer<Int8>, isDirectory: Bool, relativeTo baseURL: URL?)
+init(fileURLWithFileSystemRepresentation path: UnsafePointer<Int8>, isDirectory: Bool, relativeTo base: URL?)
 ```
 
 #### Discussion
@@ -28,7 +28,6 @@ File system representation is a null-terminated C string with canonical UTF-8 en
 
 - `path`: The location in the file system.
 - `isDirectory`: A Boolean value that indicates whether the location is a directory.
-- `baseURL`: A URL that provides a file system location that the path extends.
 
 ## See Also
 

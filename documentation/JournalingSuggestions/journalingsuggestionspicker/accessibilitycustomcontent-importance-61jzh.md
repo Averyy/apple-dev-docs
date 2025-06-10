@@ -1,6 +1,6 @@
 # accessibilityCustomContent(_:_:importance:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Add additional accessibility information to the view.
@@ -22,7 +22,7 @@ func accessibilityCustomContent(_ key: AccessibilityCustomContentKey, _ value: T
 
 Use this method to add information you want accessibility users to be able to access about this element, beyond the basics of label, value, and hint. For example, `accessibilityCustomContent` can be used to add information about the orientation of a photograph, or the number of people found in the picture.
 
-> **Note**: Repeated calls of `accessibilityCustomContent` with `key`s having different identifiers will create new entries of additional information. Calling `accessibilityAdditionalContent` repeatedly with `key`s having matching identifiers will replace the previous entry.
+> **Note**: Repeated calls of `accessibilityCustomContent` with `key`s having different identifiers will create new entries of additional information. Calling `accessibilityCustomContent` repeatedly with `key`s having matching identifiers will replace the previous entry.
 
 ## Parameters
 

@@ -29,6 +29,8 @@ enum Column
   The column for the secondary, or detail, view controller.
 - [UISplitViewController.Column.compact](uisplitviewcontroller/column/compact.md)
   The column for the view controller that’s shown when the split view controller is collapsed.
+### Enumeration Cases
+- [UISplitViewController.Column.inspector](uisplitviewcontroller/column/inspector.md)
 ### Initializers
 - [init?(rawValue: Int)](uisplitviewcontroller/column/init(rawvalue:).md)
 
@@ -40,6 +42,7 @@ enum Column
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

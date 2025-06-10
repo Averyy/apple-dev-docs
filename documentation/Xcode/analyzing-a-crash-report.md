@@ -149,4 +149,4 @@ For the meaning of each column in this section, see [`Binary images`](examining-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/analyzing-a-crash-report)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/analyzing-a-crash-report)*

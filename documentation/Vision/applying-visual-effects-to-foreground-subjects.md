@@ -29,4 +29,4 @@ Before you run the sample code project in Xcode, set the run destination to an i
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/applying-visual-effects-to-foreground-subjects)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/applying-visual-effects-to-foreground-subjects)*

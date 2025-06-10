@@ -86,4 +86,4 @@ The Messages app updates the message in the transcript as soon as the user taps 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Messages/mssession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/messages/mssession)*

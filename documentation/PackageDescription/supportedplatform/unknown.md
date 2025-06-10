@@ -20,11 +20,6 @@ Equality is the inverse of inequality. For any values `a` and `b`, `a == b` impl
 - `lhs`: A value to compare.
 - `rhs`: Another value to compare.
 
-## See Also
-
-- [static func != (Self, Self) -> Bool](supportedplatform/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-
 
 ---
 

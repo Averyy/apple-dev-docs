@@ -1,6 +1,6 @@
 # Supported Property Dictionary Constants
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 Property dictionary key and constant values.
 

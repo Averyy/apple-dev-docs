@@ -22,8 +22,6 @@ For apps built for visionOS, use only a [`visionOS`](information-property-list/g
 
 > ❗ **Important**:  If your app doesn’t provide an alternate to the game controller for input in visionOS then you need to include an entry in the [`GCRequiresControllerUserInteraction`](information-property-list/gcrequirescontrolleruserinteraction.md) dictionary and set the value to `YES`.
 
- If your app doesn’t provide an alternate to the game controller for input in visionOS then you need to include an entry in the [`GCRequiresControllerUserInteraction`](information-property-list/gcrequirescontrolleruserinteraction.md) dictionary and set the value to `YES`.
-
 ## Topics
 
 ### Platforms
@@ -46,6 +44,10 @@ For apps built for visionOS, use only a [`visionOS`](information-property-list/g
   A Boolean value indicating whether the app supports a game controller.
 - [GCSupportsMultipleMicroGamepads](information-property-list/gcsupportsmultiplemicrogamepads.md)
   A Boolean value indicating whether the physical Apple TV Remote and the Apple TV Remote app operate as separate game controllers.
+- [LSSupportsGameMode](information-property-list/lssupportsgamemode.md)
+  A Boolean value indicating whether the app supports Game Mode.
+- [GCSupportsGameMode](information-property-list/gcsupportsgamemode.md)
+  A Boolean value indicating whether the app supports game mode.
 
 
 ---

@@ -1,6 +1,6 @@
 # immersiveEnvironmentPicker(content:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Add menu items to open immersive spaces from a media player’s environment picker.

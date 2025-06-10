@@ -14,10 +14,12 @@ enum SystemPackageProvider
 ## Topics
 
 ### Providing Hints to Users of System Packages
-- [static func brew([String]) -> SystemPackageProvider](systempackageprovider/brew(_:).md)
-  Creates a system package provider with a list of installable packages for people who use the HomeBrew package manager on macOS.
 - [static func apt([String]) -> SystemPackageProvider](systempackageprovider/apt(_:).md)
   Creates a system package provider with a list of installable packages for users of the apt-get package manager on Ubuntu Linux.
+- [static func brew([String]) -> SystemPackageProvider](systempackageprovider/brew(_:).md)
+  Creates a system package provider with a list of installable packages for people who use the HomeBrew package manager on macOS.
+- [static func nuget([String]) -> SystemPackageProvider](systempackageprovider/nuget(_:).md)
+  Creates a system package provider with a list of installable packages for users of the NuGet package manager on Linux or Windows.
 - [static func yum([String]) -> SystemPackageProvider](systempackageprovider/yum(_:).md)
   Creates a system package provider with a list of installable packages for users of the yum package manager on Red Hat Enterprise Linux or CentOS.
 ### Enumeration Cases
@@ -29,9 +31,6 @@ enum SystemPackageProvider
   Packages installable by the NuGet package manager.
 - [SystemPackageProvider.yumItem(_:)](systempackageprovider/yumitem(_:).md)
   Packages installable by the Yellowdog Updated, Modified (YUM) package manager.
-### Type Methods
-- [static func nuget([String]) -> SystemPackageProvider](systempackageprovider/nuget(_:).md)
-  Creates a system package provider with a list of installable packages for users of the NuGet package manager on Linux or Windows.
 
 ## See Also
 

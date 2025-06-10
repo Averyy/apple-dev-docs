@@ -14,7 +14,6 @@ The maximum height of the content area.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumContentHeight: CGFloat { get set }
 ```
 

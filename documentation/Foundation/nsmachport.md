@@ -69,6 +69,8 @@ To use [`NSMachPort`](nsmachport.md) effectively, you should be familiar with Ma
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -86,4 +88,4 @@ To use [`NSMachPort`](nsmachport.md) effectively, you should be familiar with Ma
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsmachport)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsmachport)*

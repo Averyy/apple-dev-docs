@@ -1,6 +1,6 @@
 # init(steps:iterations:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: init
 
 Creates a new interval block, in which the workout repeats the provided steps the specified number of times.
@@ -10,6 +10,7 @@ Creates a new interval block, in which the workout repeats the provided steps th
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

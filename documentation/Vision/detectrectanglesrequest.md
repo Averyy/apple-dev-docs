@@ -76,6 +76,7 @@ To further configure or restrict the types of rectangles found, set properties o
 - [Hashable](../Swift/Hashable.md)
 - [ImageProcessingRequest](imageprocessingrequest.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionRequest](visionrequest.md)
 
 ## See Also

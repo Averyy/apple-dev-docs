@@ -3,6 +3,8 @@
 **Framework**: Speech  
 **Kind**: init
 
+Creates a configuration with the locations of language model and vocabulary files.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -19,7 +21,7 @@ init(languageModel: URL, vocabulary: URL?)
 ## See Also
 
 - [init(languageModel: URL)](sfspeechlanguagemodel/configuration/init(languagemodel:).md)
-- [init(languageModel: URL)](sfspeechlanguagemodel/configuration/init(languagemodel:).md)
+  Creates a configuration with the location of a language model file.
 
 
 ---

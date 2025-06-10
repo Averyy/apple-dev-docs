@@ -6,6 +6,9 @@
 An object that holds configuration options for a host view controller.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 13.0+
 
 ## Declaration
@@ -29,7 +32,7 @@ struct Configuration
 
 - [var configuration: EXHostViewController.Configuration?](exhostviewcontroller/configuration-swift.property.md)
   The view controller’s configuration.
-- [var placeholderView: NSView](exhostviewcontroller/placeholderview.md)
+- [var placeholderView: UIView](exhostviewcontroller/placeholderview.md)
   A view that’s used when the view controller has no content to display.
 
 

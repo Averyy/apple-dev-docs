@@ -3,13 +3,16 @@
 **Framework**: TabletopKit  
 **Kind**: property
 
+The shape of the table.
+
 **Availability**:
 - visionOS 2.0+
 
 ## Declaration
 
 ```swift
-var shape: TabletopShape { get }
+@MainActor
+@preconcurrency var shape: TabletopShape { get }
 ```
 
 

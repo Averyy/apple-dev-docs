@@ -28,6 +28,9 @@ The `bundleIds` resource represents the app’s unique identifier that you can r
   Get a list of all profiles for a specific bundle ID.
 - [List All Capabilities for a Bundle ID](get-v1-bundleids-_id_-bundleidcapabilities.md)
   Get a list of all capabilities for a specific bundle ID.
+- [GET /v1/bundleIds/{id}/relationships/app](get-v1-bundleids-_id_-relationships-app.md)
+- [GET /v1/bundleIds/{id}/relationships/bundleIdCapabilities](get-v1-bundleids-_id_-relationships-bundleidcapabilities.md)
+- [GET /v1/bundleIds/{id}/relationships/profiles](get-v1-bundleids-_id_-relationships-profiles.md)
 ### Objects and Types
 - [object BundleId](bundleid.md)
   The data structure that represents a Bundle IDs resource.
@@ -42,6 +45,9 @@ The `bundleIds` resource represents the app’s unique identifier that you can r
 - [object BundleIdWithoutIncludesResponse](bundleidwithoutincludesresponse.md)
 - [object BundleIdsResponse](bundleidsresponse.md)
   A response that contains a list of Bundle ID resources.
+- [object BundleIdAppLinkageResponse](bundleidapplinkageresponse.md)
+- [object BundleIdBundleIdCapabilitiesLinkagesResponse](bundleidbundleidcapabilitieslinkagesresponse.md)
+- [object BundleIdProfilesLinkagesResponse](bundleidprofileslinkagesresponse.md)
 
 ## See Also
 
@@ -55,6 +61,8 @@ The `bundleIds` resource represents the app’s unique identifier that you can r
   Create, delete, and download provisioning profiles that enable app installations for development and distribution.
 - [Merchant ID](merchantids.md)
   Manage your merchant ID for Apple Pay.
+- [Pass type Ids](pass-type-id.md)
+  Create, download, and revoke pass type ids for app development and distribution.
 
 
 ---

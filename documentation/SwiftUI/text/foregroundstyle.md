@@ -48,7 +48,7 @@ HStack {
 ## See Also
 
 - [func bold() -> Text](text/bold.md)
-  Applies a bold font weight to the text.
+  Applies a bold or emphasized treatment to the fonts of the text.
 - [func bold(Bool) -> Text](text/bold(_:).md)
   Applies a bold font weight to the text.
 - [func italic() -> Text](text/italic.md)

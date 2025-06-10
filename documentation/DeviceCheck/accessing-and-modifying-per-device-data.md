@@ -94,8 +94,6 @@ In the `curl` command you create to send a request, you specify the authorizatio
 
 > ❗ **Important**: Use the base URL shown in the example `curl` commands—that is, `https://api.development.devicecheck.apple.com`—only for testing during development. When you’re ready to transition to a production environment, you must use the production base URL `https://api.devicecheck.apple.com`.
 
-Use the base URL shown in the example `curl` commands—that is, `https://api.development.devicecheck.apple.com`—only for testing during development. When you’re ready to transition to a production environment, you must use the production base URL `https://api.devicecheck.apple.com`.
-
 To send a query request, your `curl` command might look similar to the one shown here:
 
 ```shell

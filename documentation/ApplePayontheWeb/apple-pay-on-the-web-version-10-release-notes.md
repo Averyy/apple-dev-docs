@@ -8,9 +8,9 @@ The version of Apple Pay available in macOS 11 and iOS 14.
 
 New features include:
 
-- Added CSS support for rendering Apple Pay buttons using the `border-radius` property to enable custom corner radii. For more information, see [`Styling the Apple Pay Button Using CSS`](https://developer.apple.com/documentation/apple_pay_on_the_web/displaying_apple_pay_buttons_using_css/styling_the_apple_pay_button_using_css).
+- Added CSS support for rendering Apple Pay buttons using the `border-radius` property to enable custom corner radii. For more information, see [`Styling the Apple Pay Button Using CSS`](styling-the-apple-pay-button-using-css.md).
 - Added support for [`billingContact`](applepaypaymentmethod/billingcontact.md) in [`ApplePayPaymentMethod`](applepaypaymentmethod.md).
-- Added support for new Apple Pay buttons including `add-money`, `contribute`, `order`, `reload`, `rent`, `support`, `tip`, and `top-up`. For more information, see [`Displaying Apple Pay Buttons Using CSS`](https://developer.apple.com/documentation/apple_pay_on_the_web/displaying_apple_pay_buttons_using_css).
+- Added support for new Apple Pay buttons including `add-money`, `contribute`, `order`, `reload`, `rent`, `support`, `tip`, and `top-up`. For more information, see [`Displaying Apple Pay Buttons Using CSS`](displaying-apple-pay-buttons-using-css.md).
 
 ## See Also
 

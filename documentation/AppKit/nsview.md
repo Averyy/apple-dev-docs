@@ -1,6 +1,6 @@
 # NSView
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 The infrastructure for drawing, printing, and handling events in an app.
@@ -93,6 +93,7 @@ If your view descends from a class other than `NSView`, call `super` to let the 
   Draw the content of custom views and update that content when the view’s size or appearance changes.
 - [Printing](nsview-printing.md)
   Create a printable version of your view’s content and handle pagination and printer-related behaviors.
+- [protocol NSViewContentSelectionInfo](nsviewcontentselectioninfo.md)
 ### Managing interactions
 - [Event Handling](event-handling.md)
   Respond to mouse, keyboard, touch, and tablet events and gestures that originate inside your view.
@@ -100,6 +101,8 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 - [Deprecated Symbols](nsview-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Instance Properties
+- [var prefersCompactControlSizeMetrics: Bool](nsview/preferscompactcontrolsizemetrics.md)
+  When this property is true, any NSControls in the view or its descendants will be sized with compact metrics compatible with macOS 15 and earlier. Defaults to false
 - [var writingToolsCoordinator: NSWritingToolsCoordinator?](nsview/writingtoolscoordinator.md)
 ### Enumerations
 - [NSView.Invalidations](nsview/invalidations.md)
@@ -113,10 +116,13 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 ### Inherits From
 - [NSResponder](nsresponder.md)
 ### Inherited By
+- [NSBackgroundExtensionView](nsbackgroundextensionview.md)
 - [NSBox](nsbox.md)
 - [NSClipView](nsclipview.md)
 - [NSCollectionView](nscollectionview.md)
 - [NSControl](nscontrol.md)
+- [NSGlassEffectContainerView](nsglasseffectcontainerview.md)
+- [NSGlassEffectView](nsglasseffectview.md)
 - [NSGridView](nsgridview.md)
 - [NSOpenGLView](nsopenglview.md)
 - [NSProgressIndicator](nsprogressindicator.md)
@@ -152,7 +158,6 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [PlaygroundLiveViewable](../playgroundsupport/playgroundliveviewable.md)
-- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 
@@ -166,4 +171,4 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsview)*

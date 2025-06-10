@@ -17,6 +17,7 @@ The target node that renders the emitter’s particles.
 ## Declaration
 
 ```swift
+@MainActor
 weak var targetNode: SKNode? { get set }
 ```
 

@@ -184,6 +184,7 @@ This creates a filled region that’s shaped by the start and end points on each
 - [ChartContent](chartcontent.md)
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

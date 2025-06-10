@@ -1,6 +1,6 @@
 # hasInjectedContent
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating whether the extension has script or stylesheet content that can be injected into webpages.

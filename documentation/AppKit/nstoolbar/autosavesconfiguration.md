@@ -26,8 +26,6 @@ The default of this property is [`false`](https://developer.apple.com/documentat
 
 > ❗ **Important**:  If you allow people to customize your app’s toolbars, enable this property to save the changes they make. Alternatively, use the [`configuration`](nstoolbar/configuration.md) property and [`setConfiguration(_:)`](nstoolbar/setconfiguration(_:).md) method to manage the autosave process yourself.
 
- If you allow people to customize your app’s toolbars, enable this property to save the changes they make. Alternatively, use the [`configuration`](nstoolbar/configuration.md) property and [`setConfiguration(_:)`](nstoolbar/setconfiguration(_:).md) method to manage the autosave process yourself.
-
 ## See Also
 
 - [var allowsUserCustomization: Bool](nstoolbar/allowsusercustomization.md)

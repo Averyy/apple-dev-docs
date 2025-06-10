@@ -1,6 +1,6 @@
 # WeatherCondition.haze
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Haze.

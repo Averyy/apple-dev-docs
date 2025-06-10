@@ -150,4 +150,4 @@ Please confirm the following when automatic re-verification fails:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3173-troubleshooting-issues-with-your-apple-pay-merchant-id-configuration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3173-troubleshooting-issues-with-your-apple-pay-merchant-id-configuration)*

@@ -1,6 +1,6 @@
 # AVAudioUnitEQFilterParameters
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: class
 
 An object that encapsulates the parameters that the equalizer uses.
@@ -63,4 +63,4 @@ class AVAudioUnitEQFilterParameters
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/avaudiouniteqfilterparameters)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/avaudiouniteqfilterparameters)*

@@ -36,6 +36,8 @@ string MetricCategory
   Results of an analysis of metric data for a single metric category for your app.
 - [object PerfPowerMetric](perfpowermetric.md)
   Unused.
+- [object AppPerfPowerMetricsLinkagesResponse](appperfpowermetricslinkagesresponse.md)
+- [object DiagnosticSignatureLogsLinkagesResponse](diagnosticsignaturelogslinkagesresponse.md)
 
 
 ---

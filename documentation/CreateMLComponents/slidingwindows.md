@@ -84,6 +84,7 @@ The shape of each window in the sequence is `[length, featureSize]`. The sequenc
 - [Collection](../Swift/Collection.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

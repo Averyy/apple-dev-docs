@@ -1,6 +1,6 @@
 # vmnet_return_t.VMNET_MEM_FAILURE
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: case
 
 **Availability**:

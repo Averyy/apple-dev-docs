@@ -1,6 +1,6 @@
 # asynchronous
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 A flag that indicates the decode operation ran asynchronously.

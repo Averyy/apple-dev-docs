@@ -1,6 +1,6 @@
 # WKPreferences.InactiveSchedulingPolicy.suspend
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A policy where a web view that’s not in a window fully suspends tasks.

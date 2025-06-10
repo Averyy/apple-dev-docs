@@ -36,7 +36,7 @@ If you enable route detection, the object reports whether it detects multiple pl
   A Boolean value that indicates whether route detection is in an enabled state.
 - [var multipleRoutesDetected: Bool](avroutedetector/multipleroutesdetected.md)
   A Boolean value that indicates whether the object detects more than one playback route.
-- [static let AVRouteDetectorMultipleRoutesDetectedDidChange: NSNotification.Name](../foundation/nsnotification/name/2915761-avroutedetectormultipleroutesdet.md)
+- [static let AVRouteDetectorMultipleRoutesDetectedDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/AVRouteDetectorMultipleRoutesDetectedDidChange.md)
   A notification the system posts when changes occur to its detected routes.
 
 ## Relationships
@@ -51,6 +51,7 @@ If you enable route detection, the object reports whether it detects multiple pl
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

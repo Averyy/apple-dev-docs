@@ -50,6 +50,29 @@ The object can be in one of the following states:
   A semi-opaque type representing symbolic matrix factorization.
 - [var userFactorStorage: Bool](sparseopaquefactorization_complex_double/userfactorstorage.md)
 
+## See Also
+
+- [Solving systems using direct methods](solving-systems-using-direct-methods.md)
+  Use direct methods to solve systems of equations where the coefficient matrix is sparse.
+- [struct SparseOpaqueFactorization_Double](sparseopaquefactorization_double.md)
+  A structure that represents the factorization of a matrix of double-precision, floating-point values.
+- [struct SparseOpaqueFactorization_Float](sparseopaquefactorization_float.md)
+  A structure that represents the factorization of a matrix of single-precision, floating-point values.
+- [struct SparseOpaqueFactorization_Complex_Float](sparseopaquefactorization_complex_float.md)
+  A semi-opaque type representing a matrix factorization in complex float.
+- [Sparse Matrix Factor Functions](sparse-matrix-factor-functions.md)
+  Compute the factorization of a matrix.
+- [Sparse Direct Solving Functions (Matrix RHS)](sparse-direct-solving-functions-matrix-rhs.md)
+  Solve a system with a right-hand-side dense matrix using a factored sparse coefficient matrix.
+- [Sparse Direct Solving Functions (Vector RHS)](sparse-direct-solving-functions-vector-rhs.md)
+  Solve a system with a right-hand-side dense vector using a factored sparse coefficient matrix.
+- [Sparse Symbolic Factorization Functions](sparse-symbolic-factorization-functions.md)
+  Calculate the symbolic factorization of a matrix, and solve systems using precalculated symbolic factorizations.
+- [Sparse Refactor Functions](sparse-refactor-functions.md)
+  Recompute a factorization using the numerical data from a matrix.
+- [Subfactor Functions](subfactor-functions.md)
+  Extract and work with subfactors.
+
 
 ---
 

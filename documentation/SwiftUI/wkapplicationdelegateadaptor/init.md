@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: init
 
 Creates an `WKApplicationDelegateAdaptor` using a WatchKit Application Delegate.

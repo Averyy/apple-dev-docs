@@ -1,6 +1,6 @@
 # WCSessionActivationState.activated
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: case
 
 The session is active and the Watch app and iOS app may communicate with each other freely.

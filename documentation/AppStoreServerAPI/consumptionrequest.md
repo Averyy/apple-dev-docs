@@ -1,6 +1,6 @@
 # ConsumptionRequest
 
-**Framework**: Appstoreserverapi  
+**Framework**: App Store Server API  
 **Kind**: dictionary
 
 The request body containing consumption information.
@@ -36,7 +36,7 @@ The App Store server rejects requests that have a [`customerConsented`](consumpt
 - [type accountTenure](accounttenure.md)
   The age of the customer’s account.
 - [type appAccountToken](appaccounttoken.md)
-  The UUID that an app optionally generates to map a customer’s In-App Purchase with its resulting App Store transaction.
+  The UUID that you generate to associate a customer’s In-App Purchase with its resulting App Store transaction.
 - [type consumptionStatus](consumptionstatus.md)
   A value that indicates the extent to which the customer consumed the in-app purchase.
 - [type customerConsented](customerconsented.md)
@@ -66,4 +66,4 @@ The App Store server rejects requests that have a [`customerConsented`](consumpt
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/consumptionrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/consumptionrequest)*

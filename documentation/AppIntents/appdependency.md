@@ -8,10 +8,10 @@ A property wrapper that resolves a registered dependency at runtime.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -24,6 +24,7 @@ final class AppDependency<Value> where Value : Sendable
 ## Mentions
 
 - [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
+- [Displaying static and interactive snippets](displaying-static-and-interactive-snippets.md)
 
 ## Topics
 
@@ -39,6 +40,7 @@ final class AppDependency<Value> where Value : Sendable
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

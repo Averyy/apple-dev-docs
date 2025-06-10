@@ -6,6 +6,7 @@
 The transform from the device to the origin coordinate system.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

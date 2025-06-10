@@ -1,6 +1,6 @@
 # watchOnlyApp
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An error indicating that the app is a watch-only app.

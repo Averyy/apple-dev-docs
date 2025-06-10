@@ -1,6 +1,6 @@
 # formIndex(_:offsetBy:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Offsets the given index by the specified distance.

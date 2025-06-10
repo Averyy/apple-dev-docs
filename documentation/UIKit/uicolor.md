@@ -33,8 +33,6 @@ Use color to customize your app’s appearance, communicate status, and help peo
 
 > ❗ **Important**:  Most developers have no need to subclass [`UIColor`](uicolor.md). The only time subclassing might be necessary is if you require support for additional color spaces or color models. If you do subclass, the properties and methods you add must be safe to use from multiple threads.
 
- Most developers have no need to subclass [`UIColor`](uicolor.md). The only time subclassing might be necessary is if you require support for additional color spaces or color models. If you do subclass, the properties and methods you add must be safe to use from multiple threads.
-
 ## Topics
 
 ### Getting existing colors
@@ -66,6 +64,8 @@ Use color to customize your app’s appearance, communicate status, and help peo
   Returns the components that form the color in the RGB color space.
 - [func getWhite(UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?) -> Bool](uicolor/getwhite(_:alpha:).md)
   Returns the grayscale components of the color.
+- [var linearExposure: CGFloat](uicolor/linearexposure.md)
+  The linear brightness multiplier that was applied when generating this color. Colors created with an exposure by UIColor create CGColors that are tagged with a contentHeadroom value. While CGColors created without a contentHeadroom tag will return 0 from CGColorGetHeadroom, UIColors generated in a similar fashion return a linearExposure of 1.0.
 - [var accessibilityName: String](uicolor/accessibilityname.md)
   A localized description of the color for accessibility attributes.
 ### Resolving a dynamically generated color
@@ -77,6 +77,11 @@ Use color to customize your app’s appearance, communicate status, and help peo
   Returns the version of the current color that results from applying the specified prominence.
 - [UIColor.Prominence](uicolor/prominence-swift.enum.md)
   A type that indicates the prominence of a color in the interface.
+### Working with high dynamic range (HDR) colors
+- [func applyingContentHeadroom(CGFloat) -> UIColor](uicolor/applyingcontentheadroom(_:).md)
+  Reinterpret the color by applying a new `contentHeadroom` without changing the color components. Changing the `contentHeadroom` redefines the color relative to a different peak white, changing its behavior under tone mapping and the result of calling `standardDynamicRangeColor`. The new color will have a `contentHeadroom` >= 1.0.
+- [var standardDynamicRange: UIColor](uicolor/standarddynamicrange.md)
+  In some cases it is useful to recover the color that was base SDR color that was exposed to generate the given HDR color. If a color’s `linearExposure` is >1, then this will return the base SDR color.
 
 ## Relationships
 
@@ -96,6 +101,7 @@ Use color to customize your app’s appearance, communicate status, and help peo
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

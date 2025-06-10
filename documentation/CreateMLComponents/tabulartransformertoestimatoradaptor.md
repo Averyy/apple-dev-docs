@@ -43,6 +43,7 @@ struct TabularTransformerToEstimatorAdaptor<Transformer> where Transformer : Tab
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TabularEstimator](tabularestimator.md)
 
 ## See Also

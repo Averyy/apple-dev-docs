@@ -18,8 +18,6 @@ To add this key to the information property list, enable the Game Controllers ca
 
 > ❗ **Important**:  To recommend the use of a game controller on iOS or if your app requires a game controller on visionOS, add an entry into the [`GCRequiresControllerUserInteraction`](information-property-list/gcrequirescontrolleruserinteraction.md) dictionary for that platform and set the value to `YES`.
 
- To recommend the use of a game controller on iOS or if your app requires a game controller on visionOS, add an entry into the [`GCRequiresControllerUserInteraction`](information-property-list/gcrequirescontrolleruserinteraction.md) dictionary for that platform and set the value to `YES`.
-
 ## See Also
 
 - [AVGameBypassSystemSpatialAudio](information-property-list/avgamebypasssystemspatialaudio.md)
@@ -34,6 +32,10 @@ To add this key to the information property list, enable the Game Controllers ca
   The platforms for which your app requires or you recommend a game controller.
 - [GCSupportsMultipleMicroGamepads](information-property-list/gcsupportsmultiplemicrogamepads.md)
   A Boolean value indicating whether the physical Apple TV Remote and the Apple TV Remote app operate as separate game controllers.
+- [LSSupportsGameMode](information-property-list/lssupportsgamemode.md)
+  A Boolean value indicating whether the app supports Game Mode.
+- [GCSupportsGameMode](information-property-list/gcsupportsgamemode.md)
+  A Boolean value indicating whether the app supports game mode.
 
 
 ---

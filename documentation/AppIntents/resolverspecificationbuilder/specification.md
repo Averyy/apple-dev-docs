@@ -6,7 +6,7 @@
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -47,6 +47,7 @@ struct Specification<Output, each R> where Output : _IntentValue, repeat each R 
 - [Hashable](../Swift/Hashable.md)
 - [ResolverSpecification](resolverspecification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 

@@ -12,8 +12,6 @@ A dictionary of hashed public keys.
 - tvOS 12.1.1+
 - visionOS 1.0+
 - watchOS 5.1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

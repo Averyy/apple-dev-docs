@@ -48,6 +48,7 @@ An appear transition causes a symbol to become visible using a scaling animation
 - [Hashable](../Swift/Hashable.md)
 - [IndefiniteSymbolEffect](indefinitesymboleffect.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SymbolEffect](symboleffect.md)
 - [TransitionSymbolEffect](transitionsymboleffect.md)
 

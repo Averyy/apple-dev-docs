@@ -13,6 +13,7 @@ A system object that provides a title and image for common tab content, such as 
 ## Declaration
 
 ```swift
+@MainActor
 var tabSystemItem: UITabBarItem.SystemItem { get set }
 ```
 

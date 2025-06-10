@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes requests it receives through lights-out management (LOM).
+A response from the device after it processes the command to send requests to a device using lights-out management (LOM).
 
 **Availability**:
 - macOS 11.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,7 +16,7 @@ object LOMDeviceRequestResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object LOMDeviceRequestResponse.ErrorChainItem](lomdevicerequestresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 - [object LOMDeviceRequestResponse.ResponseListItem](lomdevicerequestresponse/responselistitem.md)

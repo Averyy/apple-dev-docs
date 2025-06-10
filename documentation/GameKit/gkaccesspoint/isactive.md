@@ -25,7 +25,7 @@ var isActive: Bool { get set }
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), the access point appears after you authenticate the local player or appears immediately if you’ve already authenticated the player.
+If this property is [`true`](https://developer.apple.com/documentation/swift/true), the access point appears after you initialize the local player or appears immediately if you’ve already initialized the player.
 
 ## See Also
 

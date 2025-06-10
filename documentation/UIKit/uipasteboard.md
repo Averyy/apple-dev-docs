@@ -1,6 +1,6 @@
 # UIPasteboard
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An object that helps a user share data from one place to another within your app, and from your app to other apps.
@@ -57,7 +57,7 @@ Use the following properties to avoid user notifications and alerts when the sys
 - [`types`](uipasteboard/types.md), [`types(forItemSet:)`](uipasteboard/types(foritemset:).md)
 - [`itemSet(withPasteboardTypes:)`](uipasteboard/itemset(withpasteboardtypes:).md)
 - [`hasColors`](uipasteboard/hascolors.md), [`hasImages`](uipasteboard/hasimages.md), [`hasStrings`](uipasteboard/hasstrings.md), [`hasURLs`](uipasteboard/hasurls.md)
-- [`canLoadObject(ofClass:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/2888333-canloadobject), [`canLoadObject(ofClass:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/2923408-canloadobject)
+- [`canLoadObject(ofClass:)`](https://developer.apple.com/documentation/Foundation/NSItemProvider/canLoadObject(ofClass:)-3eig9), [`canLoadObject(ofClass:)`](https://developer.apple.com/documentation/Foundation/NSItemProvider/canLoadObject(ofClass:)-40grc)
 - any of the pattern-detection methods in the [`Detecting patterns of content in pasteboard items`](uipasteboard#Detecting-patterns-of-content-in-pasteboard-items.md) group in the topic groups below
 
 The system notifies the user when you access properties or call methods that pull data from the pasteboard if the system doesn’t determine that the user intends to access that data.
@@ -222,6 +222,9 @@ A typical app that implements copy, paste, and duplicate operations also manages
 ### Deprecated
 - [Deprecated symbols](uipasteboard-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Structures
+- [UIPasteboard.ChangedMessage](uipasteboard/changedmessage.md)
+- [UIPasteboard.RemovedMessage](uipasteboard/removedmessage.md)
 
 ## Relationships
 
@@ -235,6 +238,7 @@ A typical app that implements copy, paste, and duplicate operations also manages
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -252,4 +256,4 @@ A typical app that implements copy, paste, and duplicate operations also manages
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uipasteboard)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uipasteboard)*

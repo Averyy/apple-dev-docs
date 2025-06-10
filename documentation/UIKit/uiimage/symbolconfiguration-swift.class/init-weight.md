@@ -49,6 +49,8 @@ A new symbol configuration object with the specified information.
   Constants that indicate which scale variant of a symbol image to use.
 - [UIImage.SymbolWeight](uiimage/symbolweight.md)
   Constants that indicate which weight variant of a symbol image to use.
+- [UIImage.SymbolColorRenderingMode](uiimage/symbolcolorrenderingmode.md)
+- [UIImage.SymbolVariableValueMode](uiimage/symbolvariablevaluemode.md)
 
 
 ---

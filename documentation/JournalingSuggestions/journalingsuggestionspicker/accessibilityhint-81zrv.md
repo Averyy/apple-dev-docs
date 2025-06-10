@@ -1,6 +1,6 @@
 # accessibilityHint(_:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Communicates to the user what happens after performing the view’s action.

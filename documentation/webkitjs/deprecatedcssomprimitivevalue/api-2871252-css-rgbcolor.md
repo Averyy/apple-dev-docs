@@ -1,6 +1,6 @@
 # CSS_RGBCOLOR
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

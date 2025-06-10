@@ -34,4 +34,4 @@ Define custom shader behavior at runtime by creating functions from existing one
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/customizing-shaders-using-function-pointers-and-stitching)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/customizing-shaders-using-function-pointers-and-stitching)*

@@ -1,6 +1,6 @@
 # Managing Audio with SiriKit
 
-**Framework**: Sirikit
+**Framework**: SiriKit
 
 Control audio playback and handle requests to add media using SiriKit Media Intents.
 
@@ -47,4 +47,4 @@ Before you run the sample code project in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/managing-audio-with-sirikit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/managing-audio-with-sirikit)*

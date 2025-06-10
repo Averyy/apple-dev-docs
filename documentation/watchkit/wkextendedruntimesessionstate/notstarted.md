@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionState.notStarted
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The app has not yet started or scheduled the session.

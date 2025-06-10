@@ -8,10 +8,7 @@ The object that configures overall beta program settings.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- macOS 15.0+
-- tvOS 18.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- macOS 15.4+
 
 ## Declaration
 
@@ -19,14 +16,18 @@ The object that configures overall beta program settings.
 object SoftwareUpdateSettingsBetaObject
 ```
 
-## See Also
+## Topics
 
-- [object SoftwareUpdateSettingsAutomaticActionsObject](softwareupdatesettingsautomaticactionsobject.md)
-  The object that configures various automatic Software Update functionality.
+### Objects
 - [object SoftwareUpdateSettingsBeta_ProgramObject](softwareupdatesettingsbeta_programobject.md)
   The object that configures a specific beta program.
 - [object SoftwareUpdateSettingsBeta_RequireProgramObject](softwareupdatesettingsbeta_requireprogramobject.md)
   The object that configures beta program requirement settings.
+
+## See Also
+
+- [object SoftwareUpdateSettingsAutomaticActionsObject](softwareupdatesettingsautomaticactionsobject.md)
+  The object that configures various automatic Software Update functionality.
 - [object SoftwareUpdateSettingsDeferralsObject](softwareupdatesettingsdeferralsobject.md)
   The object that configures update deferrals.
 - [object SoftwareUpdateSettingsRapidSecurityResponseObject](softwareupdatesettingsrapidsecurityresponseobject.md)

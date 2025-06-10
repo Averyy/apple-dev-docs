@@ -268,6 +268,7 @@ Each element in a column is an [`Optional`](https://developer.apple.com/document
 - [OptionalColumnProtocol](optionalcolumnprotocol.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

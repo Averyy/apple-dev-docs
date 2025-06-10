@@ -10,6 +10,7 @@ A component that represents the state of a character controller.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -31,8 +32,6 @@ RealityKit adds this component to an entity when you add a [`CharacterController
   A Boolean value that indicates whether the character controller is on the ground.
 - [let velocity: SIMD3<Float>](charactercontrollerstatecomponent/velocity.md)
   The linear speed relative to the origin in physics space.
-### Default Implementations
-- [Component Implementations](charactercontrollerstatecomponent/component-implementations.md)
 
 ## Relationships
 

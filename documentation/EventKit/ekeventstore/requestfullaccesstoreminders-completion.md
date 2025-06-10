@@ -29,21 +29,11 @@ func requestFullAccessToReminders() async throws -> Bool
 func requestFullAccessToReminders() async throws -> Bool
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func requestFullAccessToReminders() async throws -> Bool
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 Requesting access to an event store asynchronously prompts people for permission to use their data. The operating system only prompts them the first time your app requests access to reminders; any subsequent instantiations of [`EKEventStore`](ekeventstore.md) uses existing permissions. When they grant or deny access, [`EventKit`](EventKit.md) calls the completion handler on an arbitrary queue.
 
 Your app isn’t blocked while the person decides to grant or deny permission. Because they may deny permission, your app should handle cases where it doesn’t receive access to the event store.
 
 > ❗ **Important**:  If your app has never requested access, you must request access to reminders before attempting to fetch or create them. If you request reminders before prompting the person for access with this method, you’ll need to reset the event store with the [`reset()`](ekeventstore/reset().md) method to receive data after they grant access.
-
- If your app has never requested access, you must request access to reminders before attempting to fetch or create them. If you request reminders before prompting the person for access with this method, you’ll need to reset the event store with the [`reset()`](ekeventstore/reset().md) method to receive data after they grant access.
 
 ## Parameters
 
@@ -51,9 +41,9 @@ Your app isn’t blocked while the person decides to grant or deny permission. B
 
 ## See Also
 
-- [func requestWriteOnlyAccessToEvents(completion: EKEventStoreRequestAccessCompletionHandler)](ekeventstore/requestwriteonlyaccesstoevents(completion:).md)
+- [func requestWriteOnlyAccessToEvents(completion: (Bool, (any Error)?) -> Void)](ekeventstore/requestwriteonlyaccesstoevents(completion:).md)
   Prompts the person using your app to grant or deny write access to event data.
-- [func requestFullAccessToEvents(completion: EKEventStoreRequestAccessCompletionHandler)](ekeventstore/requestfullaccesstoevents(completion:).md)
+- [func requestFullAccessToEvents(completion: (Bool, (any Error)?) -> Void)](ekeventstore/requestfullaccesstoevents(completion:).md)
   Prompts people to grant or deny read and write access to event data.
 - [class func authorizationStatus(for: EKEntityType) -> EKAuthorizationStatus](ekeventstore/authorizationstatus(for:).md)
   Determines the authorization status for the given entity type.

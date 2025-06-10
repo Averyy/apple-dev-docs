@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: enum
 
-The type of the handle.
+Values that define the handle that identifies a participant in a conversation.
 
 **Availability**:
 - iOS 17.4+
@@ -20,13 +20,13 @@ enum Kind
 
 ## Topics
 
-### Enumeration Cases
+### Types
 - [Handle.Kind.emailAddress](handle/kind/emailaddress.md)
   An email address.
-- [Handle.Kind.generic](handle/kind/generic.md)
-  An unspecified type of handle.
 - [Handle.Kind.phoneNumber](handle/kind/phonenumber.md)
   A phone number.
+- [Handle.Kind.generic](handle/kind/generic.md)
+  An unspecified handle type.
 ### Initializers
 - [init?(rawValue: Int)](handle/kind/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
@@ -50,6 +50,12 @@ enum Kind
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var type: Handle.Kind](handle/type.md)
+  The type of the handle; for example a phone number or email address.
 
 
 ---

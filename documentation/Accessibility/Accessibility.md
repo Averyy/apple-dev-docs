@@ -28,6 +28,12 @@ Explore how sample apps leverage accessible design principles and accessibility 
 
 People can personalize their devices by choosing the accessibility features and assistive technologies that give them the best user experience. Make sure your app provides a great experience for people who use assistive technologies by testing your app with them.
 
+##### Add Accessibility Nutrition Labels to Your Product Page
+
+You can add Accessibility Nutrition Labels to your App Store product page to indicate which accessibility features your app supports on each platform. For example, a person who is blind or has low vision might seek apps that support VoiceOver or Larger Text.
+
+For more information on adding Accessibility Nutrition Labels to your app, see [`Overview of Accessibility Nutrition Labels`](https://developer.apple.comhttps://devcms.apple.com/help/app-store-connect/manage-app-accessibility/overview-of-accessibility-nutrition-labels) in App Store Connect Help.
+
 ##### Related Videos
 
 ## Topics
@@ -89,6 +95,12 @@ People can personalize their devices by choosing the accessibility features and 
 - [WWDC21 Challenge: VoiceOver Maze](wwdc21_challenge_voiceover_maze.md)
   Navigate to the end of a dark maze using VoiceOver as your guide.
 ### Classes
+- [class AXBrailleTable](axbrailletable.md)
+  A rule for translating print text to Braille, and back-translating Braille to print text.
+- [class AXBrailleTranslationResult](axbrailletranslationresult.md)
+  The result of translation or back-translation.
+- [class AXBrailleTranslator](axbrailletranslator.md)
+  Translates print text to Braille and Braille to print text according to the given Braille table.
 - [class AXFeatureOverrideSession](axfeatureoverridesession.md)
   A token object that represents an override session held by your app.
 - [class AXFeatureOverrideSessionManager](axfeatureoverridesessionmanager.md)

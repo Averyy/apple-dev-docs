@@ -1,6 +1,6 @@
 # fullColor
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 The system renders the widget in full color.
@@ -8,8 +8,9 @@ The system renders the widget in full color.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -22,6 +23,8 @@ static let fullColor: WidgetRenderingMode
 
 - [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
 - [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
+- [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
+- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
 
 #### Discussion
 

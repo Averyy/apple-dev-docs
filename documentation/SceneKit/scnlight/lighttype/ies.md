@@ -6,11 +6,11 @@
 A light source whose shape, direction, and intensity of illumination is determined by a photometric profile.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.12+
-- tvOS 10.0+
+- macOS 10.8+
+- tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+
 

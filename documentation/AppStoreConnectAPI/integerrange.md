@@ -32,6 +32,8 @@ object IntegerRange
   The request body you use to update a win-back offer.
 - [object WinBackOffersResponse](winbackoffersresponse.md)
   A response that contains a list of win-back offer resources.
+- [object WinBackOfferPricesLinkagesResponse](winbackofferpriceslinkagesresponse.md)
+- [object SubscriptionWinBackOffersLinkagesResponse](subscriptionwinbackofferslinkagesresponse.md)
 
 
 ---

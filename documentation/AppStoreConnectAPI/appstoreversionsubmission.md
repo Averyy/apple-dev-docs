@@ -26,8 +26,6 @@ object AppStoreVersionSubmission
 
 ## See Also
 
-- [object AppStoreVersionSubmissionCreateRequest](appstoreversionsubmissioncreaterequest.md)
-  The request body you use to create an App Store Version Submission.
 - [object AppStoreVersionSubmissionResponse](appstoreversionsubmissionresponse.md)
   A response that contains a single App Store Version Submissions resource.
 

@@ -39,6 +39,7 @@ You can also use [`periodic(from:by:)`](timelineschedule/periodic(from:by:).md) 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TimelineSchedule](timelineschedule.md)
 
 ## See Also

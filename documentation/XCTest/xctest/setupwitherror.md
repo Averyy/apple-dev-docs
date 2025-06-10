@@ -1,6 +1,6 @@
 # setUpWithError()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Provides an opportunity to reset state and to throw errors before calling each test method in a test case.

@@ -9,7 +9,7 @@ An object that combines multiple scan sessions into a single captured result.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -37,7 +37,7 @@ This class in conjunction with [`CapturedStructure`](capturedstructure.md) enabl
   Combines the argument captured rooms into a single unit.
 ### Interpreting build errors
 - [StructureBuilder.BuildError](structurebuilder/builderror.md)
-  Errors that can occur capturedStructure merging processing.
+  Errors that can occur during the multiple-scan merging process.
 
 ## See Also
 

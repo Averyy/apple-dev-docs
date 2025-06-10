@@ -17,8 +17,8 @@ Registers the specified closure to implement a single undo operation that the ta
 ## Declaration
 
 ```swift
-@preconcurrency
-func registerUndo<TargetType>(withTarget target: TargetType, handler: @escaping (TargetType) -> Void) where TargetType : AnyObject
+@MainActor
+@preconcurrency func registerUndo<TargetType>(withTarget target: TargetType, handler: @escaping @MainActor (TargetType) -> Void) where TargetType : AnyObject
 ```
 
 #### Discussion

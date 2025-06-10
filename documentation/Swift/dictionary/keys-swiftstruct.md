@@ -68,6 +68,7 @@ struct Keys
 - [CustomStringConvertible](customstringconvertible.md)
 - [Equatable](equatable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

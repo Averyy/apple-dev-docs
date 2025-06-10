@@ -25,7 +25,7 @@ An array [`NSString`](https://developer.apple.com/documentation/Foundation/NSStr
 
 #### Discussion
 
-Use this method to determine what action methods are called on the specified object in response to a particular control event. You can use the [`NSSelectorFromString(_:)`](https://developer.apple.com/documentation/foundation/1395294-nsselectorfromstring) function to convert the returned strings to valid selectors, as needed.
+Use this method to determine what action methods are called on the specified object in response to a particular control event. You can use the [`NSSelectorFromString(_:)`](https://developer.apple.com/documentation/Foundation/NSSelectorFromString(_:)) function to convert the returned strings to valid selectors, as needed.
 
 ## Parameters
 

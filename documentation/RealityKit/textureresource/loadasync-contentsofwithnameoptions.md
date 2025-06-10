@@ -10,6 +10,7 @@ Asynchronously loads a texture resource from a URL with options.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -41,7 +42,7 @@ RealityKit uses the resource name to distinguish resources locally, and to match
   Asynchronously generates a texture resource from an in-memory Core Graphics image.
 - [func replaceAsync(withImage: CGImage, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](textureresource/replaceasync(withimage:options:).md)
   Asynchronously replaces the texture with a Core Graphics image.
-- [static func generate(from: CGImage, named: String?, options: TextureResource.CreateOptions) async throws -> TextureResource](textureresource/generate(from:named:options:).md)
+- [static generate(from:named:options:)](textureresource/generate(from:named:options:).md)
   Asynchronously generates a texture resource from an in-memory Core Graphics image.
 
 

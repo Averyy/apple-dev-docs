@@ -1,6 +1,6 @@
 # DYNAMIC_DRAW
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

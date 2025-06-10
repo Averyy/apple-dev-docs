@@ -10,6 +10,7 @@ The radius of a bounding sphere that encompasses the bounding box.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

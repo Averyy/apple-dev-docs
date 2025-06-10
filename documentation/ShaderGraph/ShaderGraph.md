@@ -5,17 +5,25 @@
 
 Create custom materials and effects for 3D content in Reality Composer Pro.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 15.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Overview
 
 Create complex materials and effects with Shader Graph, a node-based material editor within Reality Composer Pro. The editor presents an interface in which you can build out node graphs to achieve various visual effects.
 
-With the control Shader Graph provides over materials, you can create effects that might otherwise require writing Metal shaders. The nodes represent either a value or operation, and have inputs and outputs you can connect in order to build out a material. They serve the same purpose as a variable, constant, or function in Metal. Multiple versions of a node tweak the inputs and outputs it can receive, similar to overloads of a function.
+With the control Shader Graph provides over materials, you can create effects that might otherwise require writing Metal shaders. The nodes represent either a value or operation, and have inputs and outputs you can connect to build a material. They serve the same purpose as a variable, constant, or function in Metal. Multiple versions of a node tweak the inputs and outputs it can receive, similar to overloads of a function.
 
 ![None](https://docs-assets.developer.apple.com/published/9d613c8625c7195c13461b29b95ef35a/HomePageMaterial1.png)
 
-Build out your material using the nodes that achieve your desired visual and geometric effects and apply these materials to entities within your Reality Composer Pro scene.
+Build your material using the nodes that achieve your desired visual and geometric effects, and apply these materials to entities within your Reality Composer Pro scene.
 
-##### Interoperability
+#### Interoperability
 
 Shader Graph uses MaterialX 1.38 conventions to improve interoperability with content creation applications that can read and author MaterialX within USD files.
 
@@ -56,8 +64,6 @@ Shader Graph also includes several nodes that are unique to RealityKit. Some of 
   Add RealityKit surfaces or textures to your material and access and manipulate scene geometry.
 - [Surface](surface.md)
   Generate a MaterialX preview surface.
-- [Other](other.md)
-  Perform a wide variety of miscellaneous operations.
 
 
 ---

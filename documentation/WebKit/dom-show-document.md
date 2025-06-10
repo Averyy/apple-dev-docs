@@ -1,6 +1,6 @@
 # DOM_SHOW_DOCUMENT
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

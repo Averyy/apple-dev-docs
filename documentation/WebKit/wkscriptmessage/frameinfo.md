@@ -1,6 +1,6 @@
 # frameInfo
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The frame that sent the message.

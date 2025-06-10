@@ -192,12 +192,20 @@ struct Decimal
 - [func divide(by: Decimal)](decimal/divide(by:).md)
 - [func multiply(by: Decimal)](decimal/multiply(by:).md)
 - [func subtract(Decimal)](decimal/subtract(_:).md)
+### Default Implementations
+- [ConvertibleFromGeneratedContent Implementations](decimal/convertiblefromgeneratedcontent-implementations.md)
+- [ConvertibleToGeneratedContent Implementations](decimal/convertibletogeneratedcontent-implementations.md)
+- [Generable Implementations](decimal/generable-implementations.md)
+- [InstructionsRepresentable Implementations](decimal/instructionsrepresentable-implementations.md)
+- [PromptRepresentable Implementations](decimal/promptrepresentable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [AdditiveArithmetic](../Swift/AdditiveArithmetic.md)
 - [Comparable](../Swift/Comparable.md)
+- [ConvertibleFromGeneratedContent](../FoundationModels/ConvertibleFromGeneratedContent.md)
+- [ConvertibleToGeneratedContent](../FoundationModels/ConvertibleToGeneratedContent.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)
@@ -205,10 +213,14 @@ struct Decimal
 - [Equatable](../Swift/Equatable.md)
 - [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
 - [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
+- [Generable](../FoundationModels/Generable.md)
 - [Hashable](../Swift/Hashable.md)
+- [InstructionsRepresentable](../FoundationModels/InstructionsRepresentable.md)
 - [Numeric](../Swift/Numeric.md)
 - [Plottable](../Charts/Plottable.md)
+- [PromptRepresentable](../FoundationModels/PromptRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SignedNumeric](../Swift/SignedNumeric.md)
 - [Strideable](../Swift/Strideable.md)
 

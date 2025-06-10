@@ -1,6 +1,6 @@
 # errorDomain
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates a [`WKWebExtension.DataRecord`](wkwebextension/datarecord.md) error.

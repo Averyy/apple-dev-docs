@@ -1,6 +1,6 @@
 # fillText
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Draws a line of text at the specified x,y coordinates, optionally scaled to a specified maximum width.

@@ -3,8 +3,6 @@
 **Framework**: AppKit  
 **Kind**: typealias
 
-An object that contains common types of metadata that the data detection system matches for a pasteboard.
-
 **Availability**:
 - macOS 15.4+
 
@@ -21,7 +19,6 @@ typealias DetectedMetadata = NSPasteboard.DetectedMetadata
 - [func detectedValues(for: Set<PartialKeyPath<NSPasteboardItem.DetectedValues>>) async throws -> NSPasteboardItem.DetectedValues](nspasteboarditem/detectedvalues(for:).md)
   Determines whether this pasteboard item matches the specified patterns, reading the contents if it finds a match.
 - [NSPasteboardItem.DetectedValues](nspasteboarditem/detectedvalues.md)
-  A type that contains common types of data that the data detection system matches for a pasteboard.
 - [func detectedMetadata(for: Set<PartialKeyPath<NSPasteboardItem.DetectedMetadata>>) async throws -> NSPasteboardItem.DetectedMetadata](nspasteboarditem/detectedmetadata(for:).md)
   Determines available metadata from the specified metadata types for this pasteboard item, without notifying the person using the app.
 

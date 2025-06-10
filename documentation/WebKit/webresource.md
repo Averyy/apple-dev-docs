@@ -1,6 +1,6 @@
 # WebResource
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 A `WebResource` object represents a downloaded URL. It encapsulates the data of the download as well as other resource properties such as the URL, MIME type, and frame name.

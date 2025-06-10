@@ -178,6 +178,7 @@ For an even more in-depth explanation about the inner workings of a distributed 
 
 ### Inherits From
 - [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 ### Conforming Types
 - [LocalTestingDistributedActorSystem](localtestingdistributedactorsystem.md)
 
@@ -193,4 +194,4 @@ For an even more in-depth explanation about the inner workings of a distributed 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Distributed/distributedactorsystem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/distributed/distributedactorsystem)*

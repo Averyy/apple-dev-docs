@@ -29,10 +29,12 @@ For design guidance, see [`Human Interface Guidelines > App Shortcuts`](https://
 
 ## See Also
 
+- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
+  Allow people to find your app’s content in Spotlight by donating app entities to its semantic index.
 - [Focus](focus.md)
   Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
 - [Developing a WidgetKit strategy](../WidgetKit/Developing-a-WidgetKit-strategy.md)
-  Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, watch complications, and Live Activities.
+  Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
 
 
 ---

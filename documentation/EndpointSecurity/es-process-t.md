@@ -71,7 +71,10 @@ Endpoint Security provides clients the current state of the CS flags in the [`co
 - [var parent_audit_token: audit_token_t](es_process_t/parent_audit_token.md)
   The audit token of the parent process.
 ### Initializers
-- [init(audit_token: audit_token_t, ppid: pid_t, original_ppid: pid_t, group_id: pid_t, session_id: pid_t, codesigning_flags: UInt32, is_platform_binary: Bool, is_es_client: Bool, cdhash: es_cdhash_t, signing_id: es_string_token_t, team_id: es_string_token_t, executable: UnsafeMutablePointer<es_file_t>, tty: UnsafeMutablePointer<es_file_t>?, start_time: timeval, responsible_audit_token: audit_token_t, parent_audit_token: audit_token_t)](es_process_t/init(audit_token:ppid:original_ppid:group_id:session_id:codesigning_flags:is_platform_binary:is_es_client:cdhash:signing_id:team_id:executable:tty:start_time:responsible_audit_token:parent_audit_token:).md)
+- [init(audit_token: audit_token_t, ppid: pid_t, original_ppid: pid_t, group_id: pid_t, session_id: pid_t, codesigning_flags: UInt32, is_platform_binary: Bool, is_es_client: Bool, cdhash: es_cdhash_t, signing_id: es_string_token_t, team_id: es_string_token_t, executable: UnsafeMutablePointer<es_file_t>, tty: UnsafeMutablePointer<es_file_t>?, start_time: timeval, responsible_audit_token: audit_token_t, parent_audit_token: audit_token_t, cs_validation_category: es_cs_validation_category_t)](es_process_t/init(audit_token:ppid:original_ppid:group_id:session_id:codesigning_flags:is_platform_binary:is_es_client:cdhash:signing_id:team_id:executable:tty:start_time:responsible_audit_token:parent_audit_token:cs_validation_category:).md)
+### Instance Properties
+- [var cs_validation_category: es_cs_validation_category_t](es_process_t/cs_validation_category.md)
+  es_cs_validation_category
 
 ## Relationships
 

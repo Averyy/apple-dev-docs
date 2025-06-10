@@ -1,6 +1,6 @@
 # Making spreadsheet actions available to Siri and Apple Intelligence
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Create app intents and entities to integrate your app’s spreadsheet functionality with Siri and Apple Intelligence.
 
@@ -13,7 +13,7 @@ To integrate your app’s spreadsheet capabilities with Siri and Apple Intellige
 For example, if your app allows someone to open a spreadsheet, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.spreadsheet` domain and the [`open`](assistantschemas/spreadsheetintent/open.md) schema:
 
 ```swift
-@AssistantIntent(schema: .spreadsheet.open)
+@AppIntent(schema: .spreadsheet.open)
 struct OpenSpreadsheetIntent: OpenIntent {
     var target: SpreadsheetDocumentEntity
 
@@ -31,7 +31,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 If you use app entities to describe custom data types, annotate the app entity implementation with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `SpreadsheetEntity`. The following code snippet shows how the `SpreadsheetEntity` implementation uses the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro:
 
 ```swift
-@AssistantEntity(schema: .spreadsheet.document)
+@AppEntity(schema: .spreadsheet.document)
 struct SpreadsheetDocumentEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [SpreadsheetDocumentEntity.ID]) async throws -> [SpreadsheetDocumentEntity] { [] }
@@ -61,4 +61,4 @@ For a list of available app entity schemas in the `.spreadsheet` domain, see [`A
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-spreadsheet-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-spreadsheet-actions-available-to-siri-and-apple-intelligence)*

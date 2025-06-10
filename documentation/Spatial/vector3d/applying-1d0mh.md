@@ -3,7 +3,7 @@
 **Framework**: Spatial  
 **Kind**: method
 
-Returns the vector resulting from applying an affine transform to the vector.
+Returns the vector that results from applying an affine transform to the vector.
 
 **Availability**:
 - iOS 16.0+
@@ -31,13 +31,13 @@ func applying(_ transform: AffineTransform3D) -> Vector3D
 ## See Also
 
 - [func applying(ProjectiveTransform3D) -> Vector3D](vector3d/applying(_:)-5y3xb.md)
-  Returns the vector resulting from applying a projective transform to the vector.
+  Returns the vector that results from applying a projective transform to the vector.
 - [func applying(Pose3D) -> Vector3D](vector3d/applying(_:)-4k2qi.md)
   Returns a vector that results from applying the specified pose.
 - [func unapplying(AffineTransform3D) -> Vector3D](vector3d/unapplying(_:)-6vl3o.md)
-  Returns the vector resulting from unapplying an affine transform to the vector.
+  Returns the vector that results from unapplying an affine transform to the vector.
 - [func unapplying(ProjectiveTransform3D) -> Vector3D](vector3d/unapplying(_:)-8ookb.md)
-  Returns the vector resulting from unapplying a projective transform to the vector.
+  Returns the vector that results from unapplying a projective transform to the vector.
 - [func unapplying(Pose3D) -> Vector3D](vector3d/unapplying(_:)-1gzyd.md)
   Returns a vector that results from unapplying the specified pose.
 - [func rotated(by: Rotation3D) -> Vector3D](vector3d/rotated(by:)-2gcq4.md)

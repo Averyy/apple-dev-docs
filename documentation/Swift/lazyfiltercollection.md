@@ -48,4 +48,4 @@ typealias LazyFilterCollection<T> = LazyFilterSequence<T> where T : Collection
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/lazyfiltercollection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/lazyfiltercollection)*

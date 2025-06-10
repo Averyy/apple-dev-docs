@@ -1,6 +1,6 @@
 # testSuite(_:didRecord:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Notifies the observer when a test suite records an expected failure.

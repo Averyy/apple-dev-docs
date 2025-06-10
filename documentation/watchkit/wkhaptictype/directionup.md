@@ -1,6 +1,6 @@
 # WKHapticType.directionUp
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Indicates an increase in a specific value or when a value has gone above a certain threshold.

@@ -21,8 +21,6 @@ Specify sample buffer timestamps that are relative to the clock timebase specifi
 
 > ❗ **Important**:  Attempting to send a sample buffer from a sink stream throws an exception.
 
- Attempting to send a sample buffer from a sink stream throws an exception.
-
 ## Parameters
 
 - `sampleBuffer`: A sample buffer that contains the media data to send.

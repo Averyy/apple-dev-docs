@@ -1,6 +1,6 @@
 # indexInWindow(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the index of the tab in the window is needed.

@@ -1,6 +1,6 @@
 # environmentObject(_:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Supplies an observable object to a view’s hierarchy.
@@ -10,7 +10,7 @@ Supplies an observable object to a view’s hierarchy.
 - iPadOS 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 6.0+
 
 ## Declaration

@@ -8,6 +8,7 @@ Error codes describing why the framework can’t perform a translation.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.0+
 
 ## Declaration
@@ -40,6 +41,11 @@ struct TranslationError
   A localized message describing what error occurred.
 - [var failureReason: String?](translationerror/failurereason.md)
   A localized message describing the reason for the failure.
+### Type Properties
+- [static let alreadyCancelled: TranslationError](translationerror/alreadycancelled.md)
+  The session was already cancelled, so can’t produce more results.
+- [static let notInstalled: TranslationError](translationerror/notinstalled.md)
+  The device doesn’t have the necessary languages downloaded to perform a translation, and this session can’t request the user download them. This error can be thrown if the languages are supported but not approved, or if they’re approved but not finished downloading yet.
 ### Default Implementations
 - [Error Implementations](translationerror/error-implementations.md)
 - [LocalizedError Implementations](translationerror/localizederror-implementations.md)
@@ -50,6 +56,7 @@ struct TranslationError
 - [Error](../Swift/Error.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

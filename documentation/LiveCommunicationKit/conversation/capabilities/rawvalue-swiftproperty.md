@@ -22,7 +22,7 @@ var rawValue: Int
 
 A new instance initialized with `rawValue` will be equivalent to this instance. For example:
 
-```swift
+```None
 enum PaperSize: String {
     case A4, A5, Letter, Legal
 }

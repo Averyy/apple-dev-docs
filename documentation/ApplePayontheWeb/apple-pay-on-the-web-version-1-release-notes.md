@@ -12,7 +12,7 @@ New features include:
 
 Limitations:
 
-- For this version, Apple Pay buttons must be drawn. Developers must continue providing code to draw buttons to support customers who have this version of Apple Pay on their device. See [`Displaying Apple Pay Buttons Using CSS`](https://developer.apple.com/documentation/apple_pay_on_the_web/displaying_apple_pay_buttons_using_css) for more information.
+- For this version, Apple Pay buttons must be drawn. Developers must continue providing code to draw buttons to support customers who have this version of Apple Pay on their device. See [`Displaying Apple Pay Buttons Using CSS`](displaying-apple-pay-buttons-using-css.md) for more information.
 
 ## See Also
 

@@ -33,6 +33,11 @@ If an ID for a regular IAP is provided, the returned sequence will contain no mo
 
 - `productID`: Identifies the product to check entitlements for.
 
+## See Also
+
+- [static func all(for: String) -> Transaction.Transactions](transaction/all(for:).md)
+  Gets all the transactions associated with this product ID.
+
 
 ---
 

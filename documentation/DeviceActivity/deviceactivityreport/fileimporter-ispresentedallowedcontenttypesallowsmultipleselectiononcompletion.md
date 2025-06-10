@@ -1,6 +1,6 @@
 # fileImporter(isPresented:allowedContentTypes:allowsMultipleSelection:onCompletion:)
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Presents a system interface for allowing the user to import multiple files.

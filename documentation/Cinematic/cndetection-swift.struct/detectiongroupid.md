@@ -8,6 +8,7 @@ A unique number representing the detection to focus on if this is a group decisi
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
 

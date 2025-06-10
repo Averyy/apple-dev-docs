@@ -1,6 +1,6 @@
 # Building a universal macOS binary
 
-**Framework**: Apple Silicon
+**Framework**: Apple silicon
 
 Create macOS apps and other executables that run natively on both Apple silicon and Intel-based Mac computers.
 

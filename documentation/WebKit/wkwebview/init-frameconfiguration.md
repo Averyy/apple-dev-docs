@@ -1,6 +1,6 @@
 # init(frame:configuration:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Creates a web view and initializes it with the specified frame and configuration data.

@@ -1,6 +1,6 @@
 # selectedIndex
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The index of the view controller associated with the currently selected tab item.
@@ -29,6 +29,7 @@ In versions of iOS prior to version 3.0, this property reflects the index of the
 
 ## See Also
 
+- [var selectedTab: UITab?](uitabbarcontroller/selectedtab.md)
 - [var selectedViewController: UIViewController?](uitabbarcontroller/selectedviewcontroller.md)
   The view controller associated with the currently selected tab item.
 

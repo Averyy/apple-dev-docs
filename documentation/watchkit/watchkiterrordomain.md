@@ -1,6 +1,6 @@
 # WatchKitErrorDomain
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: var
 
 The domain for WatchKit errors.

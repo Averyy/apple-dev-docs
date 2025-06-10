@@ -1,0 +1,38 @@
+# init(leftTangent:rightTangent:topTangent:bottomTangent:nearZ:farZ:reverseZ:)
+
+**Framework**: Spatial  
+**Kind**: init
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+init(leftTangent: Float, rightTangent: Float, topTangent: Float, bottomTangent: Float, nearZ: Float, farZ: Float, reverseZ: Bool)
+```
+
+#### Return Value
+
+A projective transform from tangents for each side of its frustum.
+
+## Parameters
+
+- `leftTangent`: The left tangent.
+- `rightTangent`: The right tangent.
+- `topTangent`: The top tangent.
+- `bottomTangent`: Bottom left tangent.
+- `nearZ`: The near @p z .
+- `farZ`: The far @p z .
+- `reverseZ`: A Boolean value that specifies whether the matrix should use reverse z.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/projectivetransform3dfloat/init(lefttangent:righttangent:toptangent:bottomtangent:nearz:farz:reversez:))*

@@ -18,6 +18,11 @@ The raw value of the handle.
 var value: String
 ```
 
+## See Also
+
+- [var displayName: String](handle/displayname.md)
+  The name for a participant in a conversation that appears in the conversation UI.
+
 
 ---
 

@@ -9,8 +9,6 @@ Constants describing the network load state of the movie player.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
 
 ## Declaration
 
@@ -37,6 +35,7 @@ struct MPMovieLoadState
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

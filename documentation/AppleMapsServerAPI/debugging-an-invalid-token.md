@@ -1,6 +1,6 @@
 # Debugging an Invalid token
 
-**Framework**: Applemapsserverapi
+**Framework**: Apple Maps Server API
 
 Inspect the JavaScript console logs, the token, and events to determine why a token is invalid.
 
@@ -72,4 +72,4 @@ For more information about MapKit JS events, see [`Handling initialization event
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleMapsServerAPI/debugging-an-invalid-token)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applemapsserverapi/debugging-an-invalid-token)*

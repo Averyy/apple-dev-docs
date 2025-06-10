@@ -1,6 +1,6 @@
 # sort(by:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Sorts the collection in place, using the given predicate as the comparison between elements.

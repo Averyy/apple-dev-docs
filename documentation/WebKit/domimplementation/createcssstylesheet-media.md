@@ -1,6 +1,6 @@
 # createCSSStyleSheet(_:media:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

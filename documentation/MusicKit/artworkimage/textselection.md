@@ -1,6 +1,6 @@
 # textSelection(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Controls whether people can select text within this view.

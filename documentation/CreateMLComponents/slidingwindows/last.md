@@ -1,6 +1,6 @@
 # last
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: property
 
 The last element of the collection.
@@ -37,4 +37,4 @@ if let lastNumber = numbers.last {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/slidingwindows/last)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/slidingwindows/last)*

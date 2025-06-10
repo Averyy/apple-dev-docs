@@ -1,6 +1,6 @@
 # compare(_:)
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: method
 
 Compares two values after converting them to the same units.

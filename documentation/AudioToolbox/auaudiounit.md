@@ -41,8 +41,6 @@ A host does not need to be aware of the concrete [`AUAudioUnit`](auaudiounit.md)
 
 > ❗ **Important**:  When using the [`AUAudioUnit`](auaudiounit.md) class with a version 2 audio unit, or the C [`AudioComponent`](audiocomponent.md) and `AudioUnit` APIs with a version 3 audio unit, all major pieces of functionality are bridged between the two APIs. When applicable, this document references the version 2 API equivalent of each version 3 method or property.
 
- When using the [`AUAudioUnit`](auaudiounit.md) class with a version 2 audio unit, or the C [`AudioComponent`](audiocomponent.md) and `AudioUnit` APIs with a version 3 audio unit, all major pieces of functionality are bridged between the two APIs. When applicable, this document references the version 2 API equivalent of each version 3 method or property.
-
 ## Topics
 
 ### Creating an Audio Unit
@@ -250,6 +248,9 @@ A host does not need to be aware of the concrete [`AUAudioUnit`](auaudiounit.md)
 ### Instance Methods
 - [func requestViewController(completionHandler: (UIViewController?) -> Void)](auaudiounit/requestviewcontroller(completionhandler:).md)
   Requests an audio unit’s custom view controller.
+### Instance Properties
+- [var intendedSpatialExperience: any SpatialAudioExperience](auaudiounit/intendedspatialexperience-7uqrm.md)
+  The AUAudioUnit’s intended spatial audio experience.
 
 ## Relationships
 

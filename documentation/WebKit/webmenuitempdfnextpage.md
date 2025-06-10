@@ -1,6 +1,6 @@
 # WebMenuItemPDFNextPage
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Display the next page of a PDF document.

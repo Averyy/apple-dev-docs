@@ -30,8 +30,6 @@ This method throws an error if `data` isn’t a valid keyed archive.
 
 > ❗ **Important**:  If you are adapting existing code to use this initializer, make sure you have adopted [`NSSecureCoding`](nssecurecoding.md) in the types you decode. If any call to a `decode`-prefixed method fails, the default [`decodingFailurePolicy`](nskeyedunarchiver/decodingfailurepolicy.md) sets the [`error`](nscoder/error.md) rather than throwing an exception. In this case, the current and all subsequent decode calls return `0` or `nil`.
 
- If you are adapting existing code to use this initializer, make sure you have adopted [`NSSecureCoding`](nssecurecoding.md) in the types you decode. If any call to a `decode`-prefixed method fails, the default [`decodingFailurePolicy`](nskeyedunarchiver/decodingfailurepolicy.md) sets the [`error`](nscoder/error.md) rather than throwing an exception. In this case, the current and all subsequent decode calls return `0` or `nil`.
-
 ## Parameters
 
 - `data`: An archive previously encoded by  .

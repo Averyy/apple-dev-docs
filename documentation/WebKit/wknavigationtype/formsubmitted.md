@@ -1,6 +1,6 @@
 # WKNavigationType.formSubmitted
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A request to submit a form.

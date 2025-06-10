@@ -50,4 +50,4 @@ After encoding a GPU modification, encode a [`synchronize(resource:)`](mtlblitco
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/synchronizing-a-managed-resource-in-macos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/synchronizing-a-managed-resource-in-macos)*

@@ -127,4 +127,4 @@ currentCIImage = blendFilter.outputImage?.oriented(.left)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/applying-matte-effects-to-people-in-images-and-video)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/applying-matte-effects-to-people-in-images-and-video)*

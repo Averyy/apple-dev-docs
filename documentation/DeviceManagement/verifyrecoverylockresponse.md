@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it verifies the password for Recovery Lock.
+A response from the device after it processes the command to verify the device’s Recovery Lock password.
 
 **Availability**:
 - macOS 11.5+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,14 +16,14 @@ object VerifyRecoveryLockResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object VerifyRecoveryLockResponse.ErrorChainItem](verifyrecoverylockresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 
 ## See Also
 
 - [object VerifyRecoveryLockCommand](verifyrecoverylockcommand.md)
-  The command to verify the password for Recovery Lock.
+  The command to verify the device’s Recovery Lock password.
 
 
 ---

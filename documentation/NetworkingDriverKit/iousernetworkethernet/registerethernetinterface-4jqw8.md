@@ -17,7 +17,7 @@ kern_return_t RegisterEthernetInterface(IOUserNetworkMACAddress macAddress, IOUs
 
 #### Discussion
 
-Call this method toward the end of your [`Start`](https://developer.apple.com/documentation/kernel/ioservice/3180710-start) method when your driver is ready to begin processing incoming and outgoing network packets.
+Call this method toward the end of your [`Start`](https://developer.apple.com/documentation/DriverKit/IOService/Start) method when your driver is ready to begin processing incoming and outgoing network packets.
 
 ## Parameters
 

@@ -18,6 +18,7 @@ static var unsupportedRemoteVersionError: GKVoiceChatServiceError.Code { get }
 
 - [static var audioUnavailableError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/audiounavailableerror.md)
 - [static var clientMissingRequiredMethodsError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/clientmissingrequiredmethodserror.md)
+- [static var errorDomain: String](gkvoicechatserviceerror-swift.struct/errordomain.md)
 - [static var internalError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/internalerror.md)
 - [static var invalidCallIDError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/invalidcalliderror.md)
 - [static var invalidParameterError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/invalidparametererror.md)
@@ -30,7 +31,6 @@ static var unsupportedRemoteVersionError: GKVoiceChatServiceError.Code { get }
 - [static var remoteParticipantDeclinedInviteError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/remoteparticipantdeclinedinviteerror.md)
 - [static var remoteParticipantHangupError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/remoteparticipanthanguperror.md)
 - [static var remoteParticipantResponseInvalidError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/remoteparticipantresponseinvaliderror.md)
-- [static var unableToConnectError: GKVoiceChatServiceError.Code](gkvoicechatserviceerror-swift.struct/unabletoconnecterror.md)
 
 
 ---

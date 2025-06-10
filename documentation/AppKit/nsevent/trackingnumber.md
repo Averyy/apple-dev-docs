@@ -16,7 +16,7 @@ var trackingNumber: Int { get }
 
 #### Discussion
 
-This property contains either an [`NSTrackingArea`](nstrackingarea.md) object or an [`NSView.TrackingRectTag`](nsview/trackingrecttag.md) constant, depending on how AppKit generated the event. Valid mouse-tracking event types are [`NSMouseEntered`](nsmouseentered.md), [`NSMouseExited`](nsmouseexited.md), and [`NSCursorUpdate`](nscursorupdate.md). For other types of events, accessing this property raises [`internalInconsistencyException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1416220-internalinconsistencyexception).
+This property contains either an [`NSTrackingArea`](nstrackingarea.md) object or an [`NSView.TrackingRectTag`](nsview/trackingrecttag.md) constant, depending on how AppKit generated the event. Valid mouse-tracking event types are [`NSMouseEntered`](nsmouseentered.md), [`NSMouseExited`](nsmouseexited.md), and [`NSCursorUpdate`](nscursorupdate.md). For other types of events, accessing this property raises [`internalInconsistencyException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/internalInconsistencyException).
 
 ## See Also
 

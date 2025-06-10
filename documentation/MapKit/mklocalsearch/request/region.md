@@ -12,6 +12,7 @@ A map region that provides a hint as to where to search.
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 1.0+
 
 ## Declaration
 

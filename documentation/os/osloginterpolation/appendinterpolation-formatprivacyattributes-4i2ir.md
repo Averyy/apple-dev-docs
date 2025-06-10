@@ -24,8 +24,6 @@ mutating func appendInterpolation(_ number: @autoclosure @escaping () -> Int32, 
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated 32-bit integer to a log message.
 
- You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated 32-bit integer to a log message.
-
 ## Parameters
 
 - `number`: The interpolated 32-bit integer. The system automatically wraps this value in a closure.

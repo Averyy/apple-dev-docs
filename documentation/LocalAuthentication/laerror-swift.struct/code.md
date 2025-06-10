@@ -97,10 +97,13 @@ enum Code
   The user tapped the fallback button in the authentication dialog, but no fallback is available for the authentication policy.
 - [var kLAErrorWatchNotAvailable: Int32](klaerrorwatchnotavailable.md)
   An attempt to authenticate with Apple Watch failed.
+### Enumeration Cases
+- [LAError.Code.companionNotAvailable](laerror-swift.struct/code/companionnotavailable-swift.enum.case.md)
+  Authentication could not start because there was no paired companion device nearby.
 ### Initializers
 - [init?(rawValue: Int)](laerror-swift.struct/code/init(rawvalue:).md)
 ### Type Properties
-- [static var companionNotAvailable: LAError.Code](laerror-swift.struct/code/companionnotavailable.md)
+- [static var companionNotAvailable: LAError.Code](laerror-swift.struct/code/companionnotavailable-swift.type.property.md)
 
 ## Relationships
 
@@ -110,6 +113,7 @@ enum Code
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -3,6 +3,9 @@
 **Framework**: ARKit  
 **Kind**: typealias
 
+**Availability**:
+- visionOS 1.0+
+
 ## Declaration
 
 ```swift

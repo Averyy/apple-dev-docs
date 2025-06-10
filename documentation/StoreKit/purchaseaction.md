@@ -17,7 +17,8 @@ An action that starts an In-App Purchase.
 ## Declaration
 
 ```swift
-struct PurchaseAction
+@MainActor
+@preconcurrency struct PurchaseAction
 ```
 
 #### Overview
@@ -25,12 +26,10 @@ struct PurchaseAction
 StoreKit provides several APIs you can use to enable customers to initiate a purchase. Choose the API that suits your app’s implementation, specifically:
 
 - Use `PurchaseAction` for apps that use [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI), including multi-scene apps for visionOS.
-- Use `Product/purchase(confirmIn:options:)` for apps that use [`UIKit`](https://developer.apple.com/documentation/UIKit).
+- Use [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-3bivf.md) for apps that use [`UIKit`](https://developer.apple.com/documentation/UIKit).
 - Use [`purchase(options:)`](product/purchase(options:).md) if your app runs on watchOS or macOS.
 
 > ❗ **Important**:  If you use StoreKit views such as [`ProductView`](productview.md), [`StoreView`](storeview.md), or [`SubscriptionStoreView`](subscriptionstoreview.md) you don’t need to call any other API to initiate a purchase. StoreKit manages the purchase action automatically, including presenting the purchase confirmation UI. For more information, see [`StoreKit views`](storekit-views.md).
-
- If you use StoreKit views such as [`ProductView`](productview.md), [`StoreView`](storeview.md), or [`SubscriptionStoreView`](subscriptionstoreview.md) you don’t need to call any other API to initiate a purchase. StoreKit manages the purchase action automatically, including presenting the purchase confirmation UI. For more information, see [`StoreKit views`](storekit-views.md).
 
 ##### Use the Purchase Action Api
 
@@ -72,6 +71,14 @@ Note that the second line in the code example can omit the type name, as follows
 ### Calling the action
 - [func callAsFunction(Product, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](purchaseaction/callasfunction(_:options:).md)
   Starts an in-app purchase for the indicated product and purchase options.
+### Instance Methods
+- [func callAsFunction(AdvancedCommerceProduct, compactJWS: String, options: Set<AdvancedCommerceProduct.PurchaseOption>) async throws -> AdvancedCommerceProduct.PurchaseResult](purchaseaction/callasfunction(_:compactjws:options:).md)
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

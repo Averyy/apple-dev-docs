@@ -1,6 +1,6 @@
 # Sharing CloudKit Data with Other iCloud Users
 
-**Framework**: Cloudkit
+**Framework**: CloudKit
 
 Create and share private CloudKit data with other users by implementing the sharing UI.
 
@@ -227,4 +227,4 @@ To be thread-safe, the sample serializes data access with a dispatch queue ([`Di
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/sharing-cloudkit-data-with-other-icloud-users)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/sharing-cloudkit-data-with-other-icloud-users)*

@@ -14,6 +14,10 @@ The accessory that conveys information about a place associated with an annotati
 interface mapkit.PlaceSelectionAccessory
 ```
 
+## Mentions
+
+- [MapKit JS 5](mapkit-js-5.md)
+
 #### Overview
 
 For more information on places, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/MapKit/identifying-unique-locations-with-place-ids).

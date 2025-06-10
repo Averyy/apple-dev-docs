@@ -1,6 +1,6 @@
 # count
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: property
 
 The number of elements in the collection.

@@ -1,6 +1,6 @@
 # XCTSourceCodeSymbolInfo
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An object that contains symbolication information for a specified frame in a call stack.

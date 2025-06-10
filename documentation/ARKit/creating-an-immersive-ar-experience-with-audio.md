@@ -1,6 +1,6 @@
 # Creating an immersive ar experience with audio
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Use sound effects and environmental sound layers to create an engaging AR experience.
 
@@ -55,4 +55,4 @@ objectNode.addAudioPlayer(SCNAudioPlayer(source: audioSource))
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/creating-an-immersive-ar-experience-with-audio)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/creating-an-immersive-ar-experience-with-audio)*

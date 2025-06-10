@@ -1,6 +1,6 @@
 # focusRingMaskBounds
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The focus ring mask bounds, specified in the view’s coordinate space.
@@ -37,4 +37,4 @@ The rectangle in this property is specified relative to the view’s interior (b
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsview/focusringmaskbounds)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsview/focusringmaskbounds)*

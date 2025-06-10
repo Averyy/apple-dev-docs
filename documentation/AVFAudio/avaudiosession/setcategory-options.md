@@ -1,6 +1,6 @@
 # setCategory(_:options:)
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: method
 
 Sets the audio session’s category with the specified options.

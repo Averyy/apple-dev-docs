@@ -31,8 +31,6 @@ If the receiver is a fault, accessing this property does not cause it to fire.
 
 > ❗ **Important**:  If the receiver has not yet been saved, the object ID is a temporary value that will change when the object is saved.
 
- If the receiver has not yet been saved, the object ID is a temporary value that will change when the object is saved.
-
 ## See Also
 
 - [func uriRepresentation() -> URL](nsmanagedobjectid/urirepresentation.md)

@@ -6,12 +6,9 @@
 The bookmark in the allow list of the web content filter.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- macOS 10.15+
+- iOS 14.5+
+- iPadOS 14.5+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,12 +16,10 @@ The bookmark in the allow list of the web content filter.
 object WebContentFilter.AllowListBookmarksItem
 ```
 
-#### Discussion
-
-This device management profile adds any URLs in the allow list to the browser’s bookmarks. The browser prevents the user from visiting any sites not bookmarked. The number of bookmarks on the allow list should be limited to about 500.
-
 ## See Also
 
+- [object WebContentFilter.URLFilterParameters](webcontentfilter/urlfilterparameters-data.dictionary.md)
+  A dictionary containing URL filter parameters.
 - [object WebContentFilter.VendorConfig](webcontentfilter/vendorconfig-data.dictionary.md)
   A custom dictionary for the filtering service plug-in.
 - [object WebContentFilter.WhitelistedBookmarksItem](webcontentfilter/whitelistedbookmarksitem.md)

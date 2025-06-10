@@ -9,7 +9,7 @@ Tells the delegate that the data for continuing an activity is available.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -37,12 +37,12 @@ This method isn’t called if either [`application(_:willFinishLaunchingWithOpti
 
 This method is called whenever your app is launched to handle a SiriKit intent. Update your app’s user interface based on the `userActivity` parameter. Your app should seamlessly continue the interaction that began in Siri.
 
-By default, the intent provides an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object whose [`interaction`](https://developer.apple.com/documentation/foundation/nsuseractivity/1690346-interaction) property contains both the originating intent and your response. You can add additional, app-specific information by creating a new [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object in your intent’s `confirm` or `handle` method and adding your data to the activity’s [`userInfo`](https://developer.apple.com/documentation/foundation/nsuseractivity/1411706-userinfo) dictionary.
+By default, the intent provides an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object whose [`interaction`](https://developer.apple.com/documentation/Foundation/NSUserActivity/interaction) property contains both the originating intent and your response. You can add additional, app-specific information by creating a new [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object in your intent’s `confirm` or `handle` method and adding your data to the activity’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSUserActivity/userInfo) dictionary.
 
 When continuing activities from SiriKit:
 
-- Look for the intent specified in the [`interaction`](https://developer.apple.com/documentation/foundation/nsuseractivity/1690346-interaction) property. Resume handling this intent in your app.
-- Avoid accidentally repeating actions (such as making double payments). For example, check the doc://com.apple.documentation/documentation/sirikit/ininteraction object’s doc://com.apple.documentation/documentation/sirikit/ininteraction/1638817-intentresponse property to see if the action has already been completed.
+- Look for the intent specified in the [`interaction`](https://developer.apple.com/documentation/Foundation/NSUserActivity/interaction) property. Resume handling this intent in your app.
+- Avoid accidentally repeating actions (such as making double payments). For example, check the [`INInteraction`](https://developer.apple.com/documentation/Intents/INInteraction) object’s [`intentResponse`](https://developer.apple.com/documentation/Intents/INInteraction/intentResponse) property to see if the action has already been completed.
 
 Intents may launch your app under the following circumstances:
 

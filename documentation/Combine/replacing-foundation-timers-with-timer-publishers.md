@@ -10,7 +10,7 @@ If your app uses Foundation’s [`Timer`](https://developer.apple.com/documentat
 
 ##### Performing Periodic Work with a Timer
 
-Consider the following snippet, which uses [`scheduledTimer(withTimeInterval:repeats:block:)`](https://developer.apple.com/documentation/foundation/timer/2091889-scheduledtimer) to update the `lastUpdated` property of a data model once a second, on a specific dispatch queue:
+Consider the following snippet, which uses [`scheduledTimer(withTimeInterval:repeats:block:)`](https://developer.apple.com/documentation/Foundation/Timer/scheduledTimer(withTimeInterval:repeats:block:)) to update the `lastUpdated` property of a data model once a second, on a specific dispatch queue:
 
 ```swift
 var timer: Timer?
@@ -26,11 +26,9 @@ override func viewDidLoad() {
 
 ##### Converting to a Timer Publisher
 
-To migrate this code to Combine, replace the [`Timer`](https://developer.apple.com/documentation/Foundation/Timer) that is returned by [`scheduledTimer(withTimeInterval:repeats:block:)`](https://developer.apple.com/documentation/foundation/timer/2091889-scheduledtimer) with a [`Timer.TimerPublisher`](https://developer.apple.com/documentation/Foundation/Timer/TimerPublisher). You create this publisher with the [`Timer`](https://developer.apple.com/documentation/Foundation/Timer) method [`publish(every:tolerance:on:in:options:)`](https://developer.apple.com/documentation/foundation/timer/3329589-publish). Every time the underyling [`Timer`](https://developer.apple.com/documentation/Foundation/Timer) fires, the publisher emits a new [`Date`](https://developer.apple.com/documentation/Foundation/Date) that represents the instant the timer fired. You then apply Combine operators to the [`Date`](https://developer.apple.com/documentation/Foundation/Date), eventually connecting the publisher to a subscriber like [`sink(receiveValue:)`](publisher/sink(receivevalue:).md) or [`assign(to:on:)`](publisher/assign(to:on:).md).
+To migrate this code to Combine, replace the [`Timer`](https://developer.apple.com/documentation/Foundation/Timer) that is returned by [`scheduledTimer(withTimeInterval:repeats:block:)`](https://developer.apple.com/documentation/Foundation/Timer/scheduledTimer(withTimeInterval:repeats:block:)) with a [`Timer.TimerPublisher`](https://developer.apple.com/documentation/Foundation/Timer/TimerPublisher). You create this publisher with the [`Timer`](https://developer.apple.com/documentation/Foundation/Timer) method [`publish(every:tolerance:on:in:options:)`](https://developer.apple.com/documentation/Foundation/Timer/publish(every:tolerance:on:in:options:)). Every time the underyling [`Timer`](https://developer.apple.com/documentation/Foundation/Timer) fires, the publisher emits a new [`Date`](https://developer.apple.com/documentation/Foundation/Date) that represents the instant the timer fired. You then apply Combine operators to the [`Date`](https://developer.apple.com/documentation/Foundation/Date), eventually connecting the publisher to a subscriber like [`sink(receiveValue:)`](publisher/sink(receivevalue:).md) or [`assign(to:on:)`](publisher/assign(to:on:).md).
 
 > 💡 **Tip**: Because [`Timer.TimerPublisher`](https://developer.apple.com/documentation/Foundation/Timer/TimerPublisher) conforms to the [`ConnectablePublisher`](connectablepublisher.md) protocol, it won’t produce elements until you explicitly connect to it. Do this by either calling [`connect()`](connectablepublisher/connect().md), or using an [`autoconnect()`](connectablepublisher/autoconnect().md) operator to connect automatically when a subscriber attaches.
-
-Because [`Timer.TimerPublisher`](https://developer.apple.com/documentation/Foundation/Timer/TimerPublisher) conforms to the [`ConnectablePublisher`](connectablepublisher.md) protocol, it won’t produce elements until you explicitly connect to it. Do this by either calling [`connect()`](connectablepublisher/connect().md), or using an [`autoconnect()`](connectablepublisher/autoconnect().md) operator to connect automatically when a subscriber attaches.
 
 The next example shows how to use a [`Timer.TimerPublisher`](https://developer.apple.com/documentation/Foundation/Timer/TimerPublisher) to replace the previous example. It uses Combine’s operators to perform the tasks that were in the previous example’s closure:
 

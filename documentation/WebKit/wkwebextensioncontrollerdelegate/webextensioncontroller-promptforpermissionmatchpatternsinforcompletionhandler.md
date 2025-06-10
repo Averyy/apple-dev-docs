@@ -1,6 +1,6 @@
 # webExtensionController(_:promptForPermissionMatchPatterns:in:for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when an extension context requests access to a set of match patterns.

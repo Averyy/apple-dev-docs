@@ -32,8 +32,6 @@ The object returned is an instance of your custom class implementing the [`GKGam
 
 > ❗ **Important**:  For the [`GKMonteCarloStrategist`](gkmontecarlostrategist.md) class, or a custom class that requires randomization, you must set the the [`randomSource`](gkstrategist/randomsource.md) property before calling the [`bestMoveForActivePlayer()`](gkstrategist/bestmoveforactiveplayer().md) method. (For the [`GKMinmaxStrategist`](gkminmaxstrategist.md) class, or custom classes with deterministic strategies, a random source is optional.)
 
- For the [`GKMonteCarloStrategist`](gkmontecarlostrategist.md) class, or a custom class that requires randomization, you must set the the [`randomSource`](gkstrategist/randomsource.md) property before calling the [`bestMoveForActivePlayer()`](gkstrategist/bestmoveforactiveplayer().md) method. (For the [`GKMinmaxStrategist`](gkminmaxstrategist.md) class, or custom classes with deterministic strategies, a random source is optional.)
-
 This method returns `nil` if the current player is invalid or has no available moves.
 
 

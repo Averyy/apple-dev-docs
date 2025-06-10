@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to change the password of a local administrator account that Setup Assistant creates on a device.
+The command to update the local administrator account password.
 
 **Availability**:
 - macOS 10.11+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -16,13 +14,11 @@ The command to change the password of a local administrator account that Setup A
 object SetAutoAdminPasswordCommand
 ```
 
-#### Discussion
-
 ## Topics
 
-### Commands
+### Objects
 - [object SetAutoAdminPasswordCommand.Command](setautoadminpasswordcommand/command-data.dictionary.md)
-  The request dictionary to change the password of a local administrator account.
+  The command to update the local administrator account password.
 
 ## See Also
 

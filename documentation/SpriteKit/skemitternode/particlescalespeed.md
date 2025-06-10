@@ -17,7 +17,6 @@ The rate at which a particle’s scale factor changes per second.
 ## Declaration
 
 ```swift
-@MainActor
 var particleScaleSpeed: CGFloat { get set }
 ```
 

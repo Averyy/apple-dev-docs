@@ -1,6 +1,6 @@
 # startDownload(using:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Starts to download the resource at the URL in the request.

@@ -1,6 +1,6 @@
 # wrappedValue
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: property
 
 The most recent fetched result from the Query.

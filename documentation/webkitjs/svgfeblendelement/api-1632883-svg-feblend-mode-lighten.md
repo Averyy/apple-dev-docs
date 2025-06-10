@@ -1,6 +1,6 @@
 # SVG_FEBLEND_MODE_LIGHTEN
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

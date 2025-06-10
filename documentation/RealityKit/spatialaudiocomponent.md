@@ -1,6 +1,6 @@
 # SpatialAudioComponent
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 A component that configures how sounds emit from an entity into a person’s environment.
@@ -10,6 +10,7 @@ A component that configures how sounds emit from an entity into a person’s env
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -97,12 +98,6 @@ entity.spatialAudio?.distanceAttenuation = .rolloff(factor: 2)
   The overall level for all sounds that an entity emits.
 - [var reverbLevel: Audio.Decibel](spatialaudiocomponent/reverblevel.md)
   The level of reverberated signal that an entity emits.
-### Default Implementations
-- [Component Implementations](spatialaudiocomponent/component-implementations.md)
-- [Decodable Implementations](spatialaudiocomponent/decodable-implementations.md)
-- [Encodable Implementations](spatialaudiocomponent/encodable-implementations.md)
-- [Equatable Implementations](spatialaudiocomponent/equatable-implementations.md)
-- [Hashable Implementations](spatialaudiocomponent/hashable-implementations.md)
 
 ## Relationships
 
@@ -126,4 +121,4 @@ entity.spatialAudio?.distanceAttenuation = .rolloff(factor: 2)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/spatialaudiocomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/spatialaudiocomponent)*

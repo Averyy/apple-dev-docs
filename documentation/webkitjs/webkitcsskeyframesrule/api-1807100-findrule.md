@@ -1,6 +1,6 @@
 # findRule
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Returns the keyframe rule for the specified selector.

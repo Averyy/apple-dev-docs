@@ -22,8 +22,8 @@ var identifier: String? { get }
 
 ## Mentions
 
-- [Implementing promotional offers in your app](implementing-promotional-offers-in-your-app.md)
 - [Generating a signature for promotional offers](generating-a-signature-for-promotional-offers.md)
+- [Implementing promotional offers in your app](implementing-promotional-offers-in-your-app.md)
 
 #### Discussion
 

@@ -1,6 +1,6 @@
 # Determining service entitlement on the server
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Identify a customer’s entitlement to your service, offers, and messaging by analyzing a validated receipt and the state of their subscription.
 

@@ -6,13 +6,13 @@
 Attaches a content key to a sample buffer for the purpose of content decryption.
 
 **Availability**:
-- iOS 14.5+
-- iPadOS 14.5+
-- Mac Catalyst 14.5+
-- macOS 11.3+
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.1+
+- macOS 10.10+
 - tvOS 14.5+
 - visionOS 1.0+
-- watchOS 7.4+
+- watchOS 1.0+
 
 ## Declaration
 

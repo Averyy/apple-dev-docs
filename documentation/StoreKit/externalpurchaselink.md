@@ -1,6 +1,6 @@
 # ExternalPurchaseLink
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: enum
 
 Enables qualifying apps to offer external purchase links.
@@ -52,6 +52,7 @@ This functionality is only available to and required by apps with the [`com.appl
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -65,4 +66,4 @@ This functionality is only available to and required by apps with the [`com.appl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/externalpurchaselink)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/externalpurchaselink)*

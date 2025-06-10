@@ -16,12 +16,13 @@ A simple semaphore to synchronize access to Metal resources.
 ## Declaration
 
 ```swift
-protocol MTLEvent : NSObjectProtocol
+protocol MTLEvent : NSObjectProtocol, Sendable
 ```
 
 ## Mentions
 
 - [About Synchronization Events](about-synchronization-events.md)
+- [Synchronizing resource accesses between multiple passes with a fence](synchronizing-resource-accesses-between-multiple-passes-with-a-fence.md)
 
 #### Overview
 
@@ -47,6 +48,8 @@ For more information, see [`Synchronizing Events Within a Single Device`](synchr
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Inherited By
 - [MTLSharedEvent](mtlsharedevent.md)
 

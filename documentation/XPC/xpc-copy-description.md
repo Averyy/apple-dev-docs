@@ -1,6 +1,6 @@
 # xpc_copy_description(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Copies a debug string that describes the object.

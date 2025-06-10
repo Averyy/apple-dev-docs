@@ -10,6 +10,7 @@ Performs a ray cast against all the geometry in the scene for a ray of a given o
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -40,7 +41,7 @@ The method ignores entities that lack a [`ModelComponent`](modelcomponent.md) wi
   Performs a ray cast against all the geometry in the scene for a ray between two end points.
 - [func convexCast(convexShape: ShapeResource, fromPosition: SIMD3<Float>, fromOrientation: simd_quatf, toPosition: SIMD3<Float>, toOrientation: simd_quatf, query: CollisionCastQueryType, mask: CollisionGroup, relativeTo: Entity?) -> [CollisionCastHit]](scene/convexcast(convexshape:fromposition:fromorientation:toposition:toorientation:query:mask:relativeto:).md)
   Performs a convex shape cast against all the geometry in the scene.
-- [func pixelCast(from: SIMD3<Float>, to: SIMD3<Float>) async throws -> PixelCastHit?](scene/pixelcast(from:to:).md)
+- [func pixelCast(from:to:)](scene/pixelcast(from:to:).md)
   Performs a ray cast against all the geometry in the scene for a ray between two end points.
 
 

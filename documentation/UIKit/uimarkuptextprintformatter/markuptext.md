@@ -14,7 +14,6 @@ The HTML markup text for the print formatter.
 ## Declaration
 
 ```swift
-@MainActor
 var markupText: String? { get set }
 ```
 

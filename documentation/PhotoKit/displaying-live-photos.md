@@ -1,6 +1,6 @@
 # Displaying Live Photos
 
-**Framework**: Photokit
+**Framework**: PhotoKit
 
 Provide the same interactive playback of Live Photos as in the iOS Photos app.
 
@@ -36,4 +36,4 @@ Typically, an app doesn’t need to directly control Live Photo playback. In som
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PhotoKit/displaying-live-photos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/photokit/displaying-live-photos)*

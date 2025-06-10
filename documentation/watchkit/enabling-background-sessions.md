@@ -1,6 +1,6 @@
 # Enabling Background Sessions
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Enable the background mode for audio, location updates, remote notifications, or workouts.
 

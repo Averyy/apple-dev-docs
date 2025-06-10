@@ -10,6 +10,7 @@ Creates the shape used to detect collisions between two entities that have colli
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -35,7 +36,7 @@ For non-model entities, the method has no effect. Nevertheless, the method is de
 
 ## See Also
 
-- [func generateCollisionShapes(recursive: Bool, static: Bool)](entity/generatecollisionshapes(recursive:static:).md)
+- [func generateCollisionShapes(recursive:static:)](entity/generatecollisionshapes(recursive:static:).md)
   Creates the shape used to detect collisions between two entities that have collision components.
 
 

@@ -1,6 +1,6 @@
 # xpc_data_create(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates an XPC object that represents a buffer of bytes.

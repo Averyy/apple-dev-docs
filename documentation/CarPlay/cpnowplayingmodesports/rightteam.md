@@ -13,6 +13,7 @@ The sports team that should appear on the right side of the now playing screen. 
 ## Declaration
 
 ```swift
+@MainActor
 var rightTeam: CPNowPlayingSportsTeam { get }
 ```
 

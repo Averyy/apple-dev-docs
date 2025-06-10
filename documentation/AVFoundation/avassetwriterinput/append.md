@@ -31,8 +31,6 @@ If this method returns [`false`](https://developer.apple.com/documentation/swift
 
 > ❗ **Important**:  Don’t modify the sample buffer or its contents after you’ve passed it to this method.
 
- Don’t modify the sample buffer or its contents after you’ve passed it to this method.
-
 ## Parameters
 
 - `sampleBuffer`: The sample buffer to append.

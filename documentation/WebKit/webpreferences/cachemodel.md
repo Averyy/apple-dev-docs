@@ -1,6 +1,6 @@
 # cacheModel
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The cache model for the web views associated with the receiver.

@@ -1,6 +1,6 @@
 # Supporting PushKit Notifications in Your App
 
-**Framework**: Pushkit
+**Framework**: PushKit
 
 Declare the types of PushKit notifications your app supports and configure objects to respond to them.
 
@@ -50,4 +50,4 @@ For information about how to construct and send POST requests to APNs, see [`Sen
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PushKit/supporting-pushkit-notifications-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/pushkit/supporting-pushkit-notifications-in-your-app)*

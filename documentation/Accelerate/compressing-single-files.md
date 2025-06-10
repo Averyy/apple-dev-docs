@@ -76,7 +76,7 @@ do {
 }
 ```
 
-On return, `myFile.pdf.lzfse` exists in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/foundation/1409211-nstemporarydirectory) and contains the compressed contents of `myFile.pdf`.
+On return, `myFile.pdf.lzfse` exists in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/Foundation/NSTemporaryDirectory()) and contains the compressed contents of `myFile.pdf`.
 
 ## See Also
 

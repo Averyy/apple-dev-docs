@@ -20,6 +20,8 @@ struct WatchOSVersion
   The value that represents watchOS 11.0.
 - [static let v2: SupportedPlatform.WatchOSVersion](supportedplatform/watchosversion/v2.md)
   The value that represents watchOS 2.0.
+- [static let v26: SupportedPlatform.WatchOSVersion](supportedplatform/watchosversion/v26.md)
+  The value that represents watchOS 26.0.
 - [static let v3: SupportedPlatform.WatchOSVersion](supportedplatform/watchosversion/v3.md)
   The value that represents watchOS 3.0.
 - [static let v4: SupportedPlatform.WatchOSVersion](supportedplatform/watchosversion/v4.md)
@@ -39,6 +41,7 @@ struct WatchOSVersion
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

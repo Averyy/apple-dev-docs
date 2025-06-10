@@ -1,6 +1,6 @@
 # javaScriptAppBoundDomain
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An error that indicates JavaScript execution failed due to an app-bound domain restriction.

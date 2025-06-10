@@ -1,6 +1,6 @@
 # onupdateready
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 Sent when there is an existing application cache, the update process finishes, and there is a new application cache ready for use.

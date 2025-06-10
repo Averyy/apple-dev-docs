@@ -21,8 +21,8 @@ optional func scene(_ scene: UIScene, willConnectTo session: UISceneSession, opt
 
 ## Mentions
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
 - [About the app launch sequence](about-the-app-launch-sequence.md)
+- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
 
 #### Discussion
 

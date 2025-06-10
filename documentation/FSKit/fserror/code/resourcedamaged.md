@@ -1,6 +1,6 @@
 # FSError.Code.resourceDamaged
 
-**Framework**: Fskit  
+**Framework**: FSKit  
 **Kind**: case
 
 The resource is damaged.
@@ -38,4 +38,4 @@ This error indicates the resource needs a repair operation, or that a repair ope
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/FSKit/fserror/code/resourcedamaged)*
+*[View on Apple Developer](https://developer.apple.com/documentation/fskit/fserror/code/resourcedamaged)*

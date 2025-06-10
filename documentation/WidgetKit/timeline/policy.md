@@ -1,6 +1,6 @@
 # policy
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 The policy that determines the earliest date and time WidgetKit requests a new timeline from a timeline provider.
@@ -8,8 +8,9 @@ The policy that determines the earliest date and time WidgetKit requests a new t
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration

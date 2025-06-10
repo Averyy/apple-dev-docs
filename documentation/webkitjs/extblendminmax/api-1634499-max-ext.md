@@ -1,6 +1,6 @@
 # MAX_EXT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # Accessing Health Records
 
-**Framework**: Healthkit
+**Framework**: HealthKit
 
 Read clinical record data from the HealthKit store.
 
@@ -180,4 +180,4 @@ For more information, see the following websites:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/accessing-health-records)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/accessing-health-records)*

@@ -1,6 +1,6 @@
 # chartScrollableAxes(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Configures the scrollable behavior of charts in this view.

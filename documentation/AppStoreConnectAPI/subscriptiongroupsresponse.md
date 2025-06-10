@@ -20,6 +20,13 @@ object SubscriptionGroupsResponse
 - [object SubscriptionGroupLocalization](subscriptiongrouplocalization.md)
 - [object SubscriptionGroupCreateRequest](subscriptiongroupcreaterequest.md)
 - [object SubscriptionGroupUpdateRequest](subscriptiongroupupdaterequest.md)
+- [object AppSubscriptionGroupsLinkagesResponse](appsubscriptiongroupslinkagesresponse.md)
+- [object SubscriptionGroupSubscriptionGroupLocalizationsLinkagesResponse](subscriptiongroupsubscriptiongrouplocalizationslinkagesresponse.md)
+- [object SubscriptionGroupSubscriptionsLinkagesResponse](subscriptiongroupsubscriptionslinkagesresponse.md)
+  A response that contains a list of Ids of related resources.
+- [object SubscriptionGroupSubscriptionGroupLocalizationsLinkagesResponse](subscriptiongroupsubscriptiongrouplocalizationslinkagesresponse.md)
+- [object SubscriptionGroupSubscriptionsLinkagesResponse](subscriptiongroupsubscriptionslinkagesresponse.md)
+  A response that contains a list of Ids of related resources.
 
 
 ---

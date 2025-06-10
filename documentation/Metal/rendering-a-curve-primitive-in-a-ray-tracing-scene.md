@@ -36,4 +36,4 @@ This sample requires the following system and software configuration:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/rendering-a-curve-primitive-in-a-ray-tracing-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/rendering-a-curve-primitive-in-a-ray-tracing-scene)*

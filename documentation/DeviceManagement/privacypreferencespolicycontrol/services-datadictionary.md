@@ -7,8 +7,6 @@ The privacy policy control services dictionary that controls access on a per app
 
 **Availability**:
 - macOS 10.14+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,7 +16,7 @@ object PrivacyPreferencesPolicyControl.Services
 
 ## Topics
 
-### Profiles
+### Objects
 - [object PrivacyPreferencesPolicyControl.Services.Identity](privacypreferencespolicycontrol/services-data.dictionary/identity.md)
   A dictionary listing apps and the privacy policy to apply to them.
 

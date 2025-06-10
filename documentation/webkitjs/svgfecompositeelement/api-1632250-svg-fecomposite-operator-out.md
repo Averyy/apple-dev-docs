@@ -1,6 +1,6 @@
 # SVG_FECOMPOSITE_OPERATOR_OUT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

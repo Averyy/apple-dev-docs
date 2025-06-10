@@ -3,11 +3,12 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-Defines how system behaviors can use scene unerstanding data for.
+Defines how system behaviors use scene understanding.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -17,17 +18,9 @@ struct SceneUnderstandingCapability
 
 ## Topics
 
-### Operators
-- [static func == (SpatialTrackingSession.Configuration.SceneUnderstandingCapability, SpatialTrackingSession.Configuration.SceneUnderstandingCapability) -> Bool](spatialtrackingsession/configuration/sceneunderstandingcapability/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var debugDescription: String](spatialtrackingsession/configuration/sceneunderstandingcapability/debugdescription.md)
   A human-readable description of the scene-understanding capability.
-- [var hashValue: Int](spatialtrackingsession/configuration/sceneunderstandingcapability/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](spatialtrackingsession/configuration/sceneunderstandingcapability/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static let collision: SpatialTrackingSession.Configuration.SceneUnderstandingCapability](spatialtrackingsession/configuration/sceneunderstandingcapability/collision.md)
   The capability that allows the system to use scene-understanding data for collisions.
@@ -37,9 +30,6 @@ struct SceneUnderstandingCapability
   The capability that allows the system to use scene-understanding data for physics simulation.
 - [static let shadow: SpatialTrackingSession.Configuration.SceneUnderstandingCapability](spatialtrackingsession/configuration/sceneunderstandingcapability/shadow.md)
   The capability that allows the system to use scene-understanding data for shadow casting.
-### Default Implementations
-- [CustomStringConvertible Implementations](spatialtrackingsession/configuration/sceneunderstandingcapability/customstringconvertible-implementations.md)
-- [Equatable Implementations](spatialtrackingsession/configuration/sceneunderstandingcapability/equatable-implementations.md)
 
 ## Relationships
 
@@ -49,6 +39,7 @@ struct SceneUnderstandingCapability
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

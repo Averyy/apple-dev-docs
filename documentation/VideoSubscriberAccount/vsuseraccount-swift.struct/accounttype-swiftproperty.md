@@ -1,6 +1,6 @@
 # accountType
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A constant that represents whether a user has access to paid content.

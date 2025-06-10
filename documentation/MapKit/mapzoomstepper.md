@@ -52,6 +52,7 @@ You can also use a MapZoomStepper in conjunction with the `Map/mapControls(_:)` 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

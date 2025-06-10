@@ -19,8 +19,6 @@ struct SCStreamError
 
 > ❗ **Important**:  When a user cancels a stream, the system calls an observer’s [`stream(_:didStopWithError:)`](scstreamdelegate/stream(_:didstopwitherror:).md) method with [`SCStreamError.Code.userStopped`](scstreamerror/code/userstopped.md). Rather than treating this event as an error, handle it as an intentional user request.
 
- When a user cancels a stream, the system calls an observer’s [`stream(_:didStopWithError:)`](scstreamdelegate/stream(_:didstopwitherror:).md) method with [`SCStreamError.Code.userStopped`](scstreamerror/code/userstopped.md). Rather than treating this event as an error, handle it as an intentional user request.
-
 ## Topics
 
 ### Error inspection
@@ -38,6 +36,7 @@ struct SCStreamError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

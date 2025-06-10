@@ -1,6 +1,6 @@
 # withUnsafeUnderlyingDictionary(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Calls a closure with an unsafe reference to the dictionary.
@@ -26,8 +26,6 @@ The return value, if any, of the closure.
 #### Discussion
 
 > ⚠️ **Warning**:  It’s possible for `closure` to perform operations on the dictionary that cause the receiving dictionary to no longer wrap the underlying dictionary.
-
- It’s possible for `closure` to perform operations on the dictionary that cause the receiving dictionary to no longer wrap the underlying dictionary.
 
 ## Parameters
 

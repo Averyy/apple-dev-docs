@@ -1,6 +1,6 @@
 # Stop
 
-**Framework**: Usbserialdriverkit  
+**Framework**: USBSerialDriverKit  
 **Kind**: method
 
 Stops the service that matches the specified provider.

@@ -8,9 +8,9 @@ Defines a keyboard shortcut and assigns it to the modified control.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

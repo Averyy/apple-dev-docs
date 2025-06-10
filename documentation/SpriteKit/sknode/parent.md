@@ -17,6 +17,7 @@ The node’s parent node.
 ## Declaration
 
 ```swift
+@MainActor
 var parent: SKNode? { get }
 ```
 

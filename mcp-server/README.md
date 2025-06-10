@@ -14,7 +14,6 @@ mcp-server/                    # All MCP-related code lives here
 │   └── build_index.py        # Task 02: Build vector index
 ├── vectorstore/              # ChromaDB storage (created by scripts)
 ├── tests/                    # Test suite
-│   ├── test_embeddings.py    # TEI server tests
 │   └── test_chromadb.py      # Vector database tests
 └── requirements.txt          # Dependencies
 ```
@@ -62,7 +61,6 @@ Run tests before moving between tasks:
 ```bash
 make test  # Run all tests
 # Or individually:
-python tests/test_embeddings.py
 python tests/test_chromadb.py
 python tests/test_build_index.py
 ```

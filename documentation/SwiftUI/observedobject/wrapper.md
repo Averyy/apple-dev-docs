@@ -31,6 +31,7 @@ A wrapper of the underlying observable object that can create bindings to its pr
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

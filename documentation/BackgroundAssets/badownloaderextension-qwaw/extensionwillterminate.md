@@ -26,8 +26,6 @@ This method is invoked if all extension callbacks have returned or if the extens
 
 > ⚠️ **Warning**: This method is advisory only, there will be instances where the extension is terminated before this method is invoked. Do not rely on this method being invoked before the extension is terminated.
 
-This method is advisory only, there will be instances where the extension is terminated before this method is invoked. Do not rely on this method being invoked before the extension is terminated.
-
 
 ---
 

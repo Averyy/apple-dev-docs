@@ -1,6 +1,6 @@
 # WebKitErrorJavaUnavailable
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

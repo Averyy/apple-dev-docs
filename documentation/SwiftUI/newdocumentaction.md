@@ -51,6 +51,7 @@ The above example assumes that you define a `TextDocument` that conforms to the 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

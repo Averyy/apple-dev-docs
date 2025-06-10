@@ -1,6 +1,6 @@
 # didRemove(_:forRow:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Invoked when a row view is removed from the table.

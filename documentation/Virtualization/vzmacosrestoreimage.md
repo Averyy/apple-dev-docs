@@ -25,8 +25,6 @@ To set up a new VM compatible with the restore image, use [`mostFeaturefulSuppor
 
 > ❗ **Important**:  Loading a restore image requires the app to have the [`com.apple.security.virtualization`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.virtualization) entitlement.
 
- Loading a restore image requires the app to have the [`com.apple.security.virtualization`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.virtualization) entitlement.
-
 ## Topics
 
 ### Getting Information About the Restore Image

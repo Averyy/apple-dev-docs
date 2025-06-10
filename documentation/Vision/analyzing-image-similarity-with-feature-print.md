@@ -38,4 +38,4 @@ Generate a feature print to compute distance between images.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/analyzing-image-similarity-with-feature-print)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/analyzing-image-similarity-with-feature-print)*

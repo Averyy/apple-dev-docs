@@ -1,6 +1,6 @@
 # appending(_:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Returns a new text suggestions delegate of a different, but `Hashable` suggestion item type with the items and behaviors of the receiving delegate and `other` concatenated. When the returned delegate is connected to a text field, all suggestion items provided from the first suggestions delegate appear before all those from the second suggestions delegate, visually separated by a separator.

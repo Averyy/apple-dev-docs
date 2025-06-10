@@ -1,6 +1,6 @@
 # messageHandler
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The block to be executed when a message is received from the web extension.

@@ -94,11 +94,11 @@ python3 scripts/build_index_incremental.py --framework SwiftUI --force
 
 ### Real-Time Monitoring
 ```bash
-# Monitor system health
-python3 scripts/production_monitor.py
+# Monitor system health via health check
+python3 scripts/vectorstore_health_check.py
 
-# Watch specific metrics
-python3 scripts/production_monitor.py --metrics embedding_rate,error_count
+# Generate detailed health report
+python3 scripts/vectorstore_health_check.py --output health_report.json
 ```
 
 ### Key Metrics to Monitor

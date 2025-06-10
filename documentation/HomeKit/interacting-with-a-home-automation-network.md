@@ -1,6 +1,6 @@
 # Interacting with a home automation network
 
-**Framework**: Homekit
+**Framework**: HomeKit
 
 Find all the automation accessories in the primary home and control their state.
 
@@ -41,7 +41,7 @@ func resetDisplay(for home: HMHome?) {
 }
 ```
 
-Before triggering a table view reload, use the `reloadDisplayData(for:)` method to prepare a list of accessories sorted by room that can serve as a data source for the home view’s table view. Start with the home’s default room—accessible using the [`roomForEntireHome()`](HMHome/roomForEntireHome().md) method. Add that to the contents of the home’s [`rooms`](HMHome/rooms.md) array. Then filter out any rooms from this composite group lacking accessories. Sort the remaining rooms by name:
+Before triggering a table view reload, use the `reloadDisplayData(for:)` method to prepare a list of accessories sorted by room that can serve as a data source for the home view’s table view. Start with the home’s default room—accessible using the `roomForEntireHome()` method. Add that to the contents of the home’s `rooms` array. Then filter out any rooms from this composite group lacking accessories. Sort the remaining rooms by name:
 
 ```swift
 rooms = ([home.roomForEntireHome()] + home.rooms)
@@ -51,7 +51,7 @@ rooms = ([home.roomForEntireHome()] + home.rooms)
 
 ##### Group Accessories By Category
 
-Alternatively, you can display accessories sorted by category. Accessories have a [`category`](HMAccessory/category.md) property, which is an instance of the [`HMAccessoryCategory`](HMAccessoryCategory.md) class that indicates what the device is, like a door or a light. You can derive a name from this information, and use that to group accessories:
+Alternatively, you can display accessories sorted by category. Accessories have a `category` property, which is an instance of the [`HMAccessoryCategory`](HMAccessoryCategory.md) class that indicates what the device is, like a door or a light. You can derive a name from this information, and use that to group accessories:
 
 ```swift
 home.accessories.forEach {
@@ -112,7 +112,7 @@ You use the table view’s data source and delegate methods to prepare table cel
 
 ##### Add New Accessories
 
-To enable the pairing of new accessories, the UI presents a `+` button in the home view that the user taps to initiate a search for accessories on the local network. The button’s tap handler calls the home’s [`addAndSetupAccessories(completionHandler:)`](HMHome/addAndSetupAccessories(completionHandler:).md) method, which presents the standard HomeKit UI for locating and adding new accessories to a given home:
+To enable the pairing of new accessories, the UI presents a `+` button in the home view that the user taps to initiate a search for accessories on the local network. The button’s tap handler calls the home’s `addAndSetupAccessories(completionHandler:)` method, which presents the standard HomeKit UI for locating and adding new accessories to a given home:
 
 ```swift
 home?.addAndSetupAccessories { error in
@@ -131,7 +131,7 @@ On success, the completion handler refreshes the app’s copy of the HomeKit dat
 
 The sample app’s split view detail controller shows an `AccessoryView` with information about a single accessory. This includes a list of accessory properties, like the accessory’s name and manufacturer. It also includes services, like a door opener or a light bulb, that the accessory offers. Optionally, for an accessory that’s a bridge, which is an accessory that serves as a link to accessories on a non-HomeKit network, the view also shows a list of the accessories to which the bridge provides access.
 
-> **Note**: Bridged accessories (those with the [`isBridged`](HMAccessory/isBridged.md) property set to `true`) also appear in the home view’s main list of accessories because HomeKit makes them directly accessible. Listing them in the accessory view is a convenience to show the relationship with their bridge.
+> **Note**: Bridged accessories (those with the `isBridged` property set to `true`) also appear in the home view’s main list of accessories because HomeKit makes them directly accessible. Listing them in the accessory view is a convenience to show the relationship with their bridge.
 
 When the user taps an accessory in the home view, you use the [`prepare(for:sender:)`](https://developer.apple.com/documentation/UIKit/UIViewController/prepare(for:sender:)) method override to assign the corresponding accessory to the accessory view, which triggers the view to reload its content:
 
@@ -146,9 +146,9 @@ When the user taps a characteristic in the service view, you push a `Characteris
 
 ##### Read Characteristic Values Before Using Them
 
-A characteristic is primarily a container for its [`value`](HMCharacteristic/value.md) property that represents an input to or output from a service. Other properties of the characteristic tell you about that value, like if it’s a Boolean, number, string, or something else, what units apply to it, whether you can read or write it, and so on.
+A characteristic is primarily a container for its `value` property that represents an input to or output from a service. Other properties of the characteristic tell you about that value, like if it’s a Boolean, number, string, or something else, what units apply to it, whether you can read or write it, and so on.
 
-When the user taps a service in the accessory view, the incoming service view writes a characteristic to each of its characteristic cells. This begins the process of populating the cell’s UI, for example by adjusting the visibility of the cell’s controls depending on the characteristic value’s type. But the cell can’t rely on the actual value until it calls the characteristic’s [`readValue(completionHandler:)`](HMCharacteristic/readValue(completionHandler:).md) method.
+When the user taps a service in the accessory view, the incoming service view writes a characteristic to each of its characteristic cells. This begins the process of populating the cell’s UI, for example by adjusting the visibility of the cell’s controls depending on the characteristic value’s type. But the cell can’t rely on the actual value until it calls the characteristic’s `readValue(completionHandler:)` method.
 
 ```swift
 characteristic.readValue { error in
@@ -161,7 +161,7 @@ characteristic.readValue { error in
 }
 ```
 
-You can access the [`value`](HMCharacteristic/value.md) property at any time, but this is a cached value from the last interaction with the physical accessory, if any. Performing an explicit read operation prompts HomeKit to ask the accessory for the characteristic’s current value, and update its local copy. Because this query involves network access, HomeKit reports the value to your app in a completion handler, which then finalizes the UI changes by setting the cell’s label text and the control state.
+You can access the `value` property at any time, but this is a cached value from the last interaction with the physical accessory, if any. Performing an explicit read operation prompts HomeKit to ask the accessory for the characteristic’s current value, and update its local copy. Because this query involves network access, HomeKit reports the value to your app in a completion handler, which then finalizes the UI changes by setting the cell’s label text and the control state.
 
 The characteristic view, which also displays the characteristic value, doesn’t perform an explicit read. The user can only get to the characteristic view by tapping on a service view’s characteristic cell, which has recently refreshed the corresponding value. Both views rely on accessory delegate callbacks to track any further changes in the value, as described in the next section.
 
@@ -192,7 +192,7 @@ To solve this, the home store singleton acts as the accessory delegate for all a
 home?.accessories.forEach { $0.delegate = HomeStore.shared }
 ```
 
-The home store also becomes the accessory delegate for any accessories added later, set in the [`home(_:didAdd:)`](HMHomeDelegate/home(_:didAdd:)-6jcl7.md) delegate method:
+The home store also becomes the accessory delegate for any accessories added later, set in the `home(_:didAdd:)` delegate method:
 
 ```swift
 func home(_ home: HMHome, didAdd accessory: HMAccessory) {
@@ -241,7 +241,7 @@ var service: HMService? {
 }
 ```
 
-This method—defined in an [`HMService`](HMService.md) extension—in turn calls the  [`enableNotification(_:completionHandler:)`](HMCharacteristic/enableNotification(_:completionHandler:).md) method of all the characteristics within the given service that have the [`HMCharacteristicPropertySupportsEventNotification`](HMCharacteristicPropertySupportsEventNotification-2f0ml.md) property.
+This method—defined in an [`HMService`](HMService.md) extension—in turn calls the  `enableNotification(_:completionHandler:)` method of all the characteristics within the given service that have the `HMCharacteristicPropertySupportsEventNotification` property.
 
 ```swift
 func enableNotifications(_ enabled: Bool) {
@@ -295,4 +295,4 @@ For more information about user interface considerations for HomeKit enabled app
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HomeKit/interacting-with-a-home-automation-network)*
+*[View on Apple Developer](https://developer.apple.com/documentation/homekit/interacting-with-a-home-automation-network)*

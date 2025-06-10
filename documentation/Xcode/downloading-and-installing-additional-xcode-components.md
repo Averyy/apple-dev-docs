@@ -87,6 +87,34 @@ xcodebuild -runFirstLaunch -checkForNewerComponents
 
 If new components exist, the `-checkForNewerComponents` option stores the files in the `~/Library/Developer/Packages/` directory and installs the components for the Xcode version you select.
 
+##### Download and Install the Metal Toolchain
+
+To build your Metal apps, download and install the optional Metal Toolchain for the platforms your app targets.
+
+If a sheet appears when you first launch Xcode that lets you select components, select the app’s platforms, select Metal Toolchain under Additional Components, and click Install.
+
+Otherwise, you can manage all your downloads, including the Metal Toolchain, using the Components settings in Xcode. Choose Xcode > Settings, click Components in the toolbar, and then click the Get button next to Metal Toolchain under Other Components.
+
+If you attempt to build an app that requires the Metal Toolchain before downloading the toolchain, a dialog appears. Click Download to download the Metal Toolchain.
+
+Alternatively, to download and install the toolchain from the command line, run this command from Terminal:
+
+```None
+xcodebuild -downloadComponent metalToolchain
+```
+
+To download and install the toolchain separately, first download and export it to a file:
+
+```None
+xcodebuild -downloadComponent metalToolchain -exportPath ~/Downloads
+```
+
+Then, install the toolchain into Xcode:
+
+```None
+xcodebuild -importComponent metalToolchain ~/Downloads/metalToolchain.dmg
+```
+
 ## See Also
 
 - [Installing your app in many Simulator platforms and versions](installing-your-app-in-many-simulator-platforms-and-versions.md)
@@ -95,4 +123,4 @@ If new components exist, the `-checkForNewerComponents` option stores the files 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/downloading-and-installing-additional-xcode-components)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/downloading-and-installing-additional-xcode-components)*

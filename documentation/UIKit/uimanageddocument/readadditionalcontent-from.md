@@ -1,6 +1,6 @@
 # readAdditionalContent(from:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Handles reading non-Core Data content in the additional content directory in the document’s file package.

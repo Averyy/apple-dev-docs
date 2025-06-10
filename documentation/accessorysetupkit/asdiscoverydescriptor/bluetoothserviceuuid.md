@@ -25,7 +25,9 @@ var bluetoothServiceUUID: CBUUID? { get set }
 - [var bluetoothCompanyIdentifier: ASBluetoothCompanyIdentifier](asdiscoverydescriptor/bluetoothcompanyidentifier.md)
   The accessory’s 16-bit Bluetooth Company Identifier.
 - [struct ASBluetoothCompanyIdentifier](asbluetoothcompanyidentifier.md)
-  The identifier of a Bluetooth accessory provider.
+  The type used to identify a Bluetooth accessory provider.
+- [struct ASBluetoothCompanyIdentifier](asbluetoothcompanyidentifier.md)
+  The type used to identify a Bluetooth accessory provider.
 - [var bluetoothManufacturerDataBlob: Data?](asdiscoverydescriptor/bluetoothmanufacturerdatablob.md)
   A byte buffer that matches the accessory’s Bluetooth manufacturer data.
 - [var bluetoothManufacturerDataMask: Data?](asdiscoverydescriptor/bluetoothmanufacturerdatamask.md)
@@ -36,6 +38,8 @@ var bluetoothServiceUUID: CBUUID? { get set }
   The accessory’s Bluetooth service data mask.
 - [var bluetoothNameSubstring: String?](asdiscoverydescriptor/bluetoothnamesubstring.md)
   The accessory’s over-the-air Bluetooth name substring.
+- [var bluetoothNameSubstringCompareOptions: NSString.CompareOptions](asdiscoverydescriptor/bluetoothnamesubstringcompareoptions.md)
+  The accessory’s over-the-air Bluetooth name substring compare options.
 - [var bluetoothRange: ASDiscoveryDescriptor.Range](asdiscoverydescriptor/bluetoothrange.md)
   A property that tells the session to discover accessories within a specific Bluetooth range.
 - [ASDiscoveryDescriptor.Range](asdiscoverydescriptor/range.md)

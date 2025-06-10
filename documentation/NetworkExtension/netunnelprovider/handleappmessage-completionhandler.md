@@ -1,6 +1,6 @@
 # handleAppMessage(_:completionHandler:)
 
-**Framework**: Networkextension  
+**Framework**: Network Extension  
 **Kind**: method
 
 Handle messages sent by the tunnel provider extension’s containing app.

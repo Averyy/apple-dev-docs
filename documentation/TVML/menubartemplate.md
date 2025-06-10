@@ -1,6 +1,6 @@
 # menuBarTemplate
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Creates a page with items along the top and related information below.
 
@@ -110,4 +110,4 @@ The following figure shows the output for the above example:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/menubartemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/menubartemplate)*

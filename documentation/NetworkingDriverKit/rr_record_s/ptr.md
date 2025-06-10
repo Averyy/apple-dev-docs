@@ -12,6 +12,13 @@
 struct { ... } ptr;
 ```
 
+## Topics
+
+### Instance Properties
+- [hb](rr_record_s/ptr/hb.md)
+- [lb](rr_record_s/ptr/lb.md)
+- [record](rr_record_s/ptr/record.md)
+
 
 ---
 

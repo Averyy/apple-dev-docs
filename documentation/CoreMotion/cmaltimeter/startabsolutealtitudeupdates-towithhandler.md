@@ -1,6 +1,6 @@
 # startAbsoluteAltitudeUpdates(to:withHandler:)
 
-**Framework**: Coremotion  
+**Framework**: Core Motion  
 **Kind**: method
 
 Starts the delivery of absolute altitude data to the specified handler.

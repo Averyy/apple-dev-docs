@@ -30,9 +30,9 @@ This method blocks all subsequent event processing on the current thread until t
 
 ## See Also
 
-- [func start(completionHandler: CHHapticEngine.CompletionHandler?)](chhapticengine/start(completionhandler:).md)
+- [func start(completionHandler: (((any Error)?) -> Void)?)](chhapticengine/start(completionhandler:).md)
   Asynchronously starts the haptic engine.
-- [func stop(completionHandler: CHHapticEngine.CompletionHandler?)](chhapticengine/stop(completionhandler:).md)
+- [func stop(completionHandler: (((any Error)?) -> Void)?)](chhapticengine/stop(completionhandler:).md)
   Asynchronously stops the haptic engine and executes the completion handler once the engine has stopped.
 - [CHHapticEngine.CompletionHandler](chhapticengine/completionhandler.md)
   A typealias for a completion handler that the engine calls after starting or stopping.

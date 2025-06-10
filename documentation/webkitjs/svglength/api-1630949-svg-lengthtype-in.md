@@ -1,6 +1,6 @@
 # SVG_LENGTHTYPE_IN
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

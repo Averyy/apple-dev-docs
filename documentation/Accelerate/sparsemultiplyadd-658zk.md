@@ -26,6 +26,11 @@ func SparseMultiplyAdd(_ A: SparseMatrix_Complex_Double, _ X: DenseMatrix_Comple
 - Parameter `X`: (input) dense matrix. Inner dimensions of `A` and `X` must match.
 - Parameter `Y`: (output) dense matrix. Dimensions must match the outer dimensions of `A` and `X`. Overwritten with their product.
 
+## See Also
+
+- [func SparseMultiplyAdd(SparseMatrix_Complex_Float, DenseMatrix_Complex_Float, DenseMatrix_Complex_Float)](sparsemultiplyadd(_:_:_:)-4dpyu.md)
+  Performs `Y += AX` for complex float values
+
 
 ---
 

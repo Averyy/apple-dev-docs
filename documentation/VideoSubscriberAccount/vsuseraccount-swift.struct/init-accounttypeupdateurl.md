@@ -1,6 +1,6 @@
 # init(accountType:updateURL:)
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: init
 
 Creates a user account object with a URL for account update requests.

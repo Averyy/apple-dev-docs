@@ -18,7 +18,7 @@ static let URL: NSPasteboard.PasteboardType
 
 In macOS 10.6 and later, use [`writeObjects(_:)`](nspasteboard/writeobjects(_:).md) to write URLs directly to the pasteboard instead.
 
-In macOS 10.5 and earlier, write an URL to a pasteboard using the [`write(to:)`](https://developer.apple.com/documentation/foundation/nsurl/1532980-write) method of [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL). To get an URL from a pasteboard, use the [`init(from:)`](https://developer.apple.com/documentation/foundation/nsurl/1525106-init) method of [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL).
+In macOS 10.5 and earlier, write an URL to a pasteboard using the [`write(to:)`](https://developer.apple.com/documentation/Foundation/NSURL/write(to:)) method of [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL). To get an URL from a pasteboard, use the [`init(fromPasteboard:)`](https://developer.apple.com/documentation/Foundation/NSURL/init(fromPasteboard:)) method of [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL).
 
 ## See Also
 

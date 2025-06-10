@@ -25,8 +25,6 @@ struct OSLogMessage
 
 > ❗ **Important**:  You don’t create instances of [`OSLogMessage`](oslogmessage.md) directly. Instead, the system creates them for you when writing messages to the unified logging system using a [`Logger`](logger.md).
 
- You don’t create instances of [`OSLogMessage`](oslogmessage.md) directly. Instead, the system creates them for you when writing messages to the unified logging system using a [`Logger`](logger.md).
-
 ## Topics
 
 ### Getting the Message Details

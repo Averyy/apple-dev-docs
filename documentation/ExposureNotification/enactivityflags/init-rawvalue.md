@@ -20,8 +20,6 @@ init(rawValue: UInt32)
 
 > ❗ **Important**:  This method is available in iOS 12.5, and in iOS 13.5 and later.
 
- This method is available in iOS 12.5, and in iOS 13.5 and later.
-
 ## Parameters
 
 - `rawValue`: The raw value of the activity flag.

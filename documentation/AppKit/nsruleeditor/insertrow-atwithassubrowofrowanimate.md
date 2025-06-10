@@ -19,8 +19,6 @@ func insertRow(at rowIndex: Int, with rowType: NSRuleEditor.RowType, asSubrowOfR
 
 > ❗ **Important**:  If `parentRow` is greater than or equal to `rowIndex`, or if `rowIndex` would fall amongst the children of some other parent, or if the nesting mode forbids this configuration, an `NSInvalidArgumentException` is raised.
 
- If `parentRow` is greater than or equal to `rowIndex`, or if `rowIndex` would fall amongst the children of some other parent, or if the nesting mode forbids this configuration, an `NSInvalidArgumentException` is raised.
-
 ## Parameters
 
 - `rowIndex`: The index at which the new row should be inserted.   must be greater than  , and much specify a row that does not fall amongst the children of some other parent.

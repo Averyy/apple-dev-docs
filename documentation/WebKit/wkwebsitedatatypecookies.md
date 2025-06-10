@@ -1,6 +1,6 @@
 # WKWebsiteDataTypeCookies
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Cookies.

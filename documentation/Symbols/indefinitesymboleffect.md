@@ -27,6 +27,8 @@ protocol IndefiniteSymbolEffect
 - [BounceSymbolEffect](bouncesymboleffect.md)
 - [BreatheSymbolEffect](breathesymboleffect.md)
 - [DisappearSymbolEffect](disappearsymboleffect.md)
+- [DrawOffSymbolEffect](drawoffsymboleffect.md)
+- [DrawOnSymbolEffect](drawonsymboleffect.md)
 - [PulseSymbolEffect](pulsesymboleffect.md)
 - [RotateSymbolEffect](rotatesymboleffect.md)
 - [ScaleSymbolEffect](scalesymboleffect.md)

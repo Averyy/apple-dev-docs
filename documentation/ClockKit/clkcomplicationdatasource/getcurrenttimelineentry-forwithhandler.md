@@ -18,8 +18,8 @@ func currentTimelineEntry(for complication: CLKComplication) async -> CLKComplic
 
 ## Mentions
 
-- [Sharing an Apple Watch face](sharing-an-apple-watch-face.md)
 - [Loading future timeline events](loading-future-timeline-events.md)
+- [Sharing an Apple Watch face](sharing-an-apple-watch-face.md)
 
 #### Discussion
 

@@ -1,6 +1,6 @@
 # ProximityReader
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: module
 
 Read contactless physical and digital wallet cards using your iPhone.
@@ -12,8 +12,8 @@ Read contactless physical and digital wallet cards using your iPhone.
 
 ## Mentions
 
-- [Adding support for Tap to Pay on iPhone to your app](adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 - [Adopting the Verifier API in your iPhone app](adopting-the-verifier-api-in-your-iphone-app.md)
+- [Adding support for Tap to Pay on iPhone to your app](adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 
 #### Overview
 
@@ -41,6 +41,17 @@ The use of this framework requires you to coordinate with a participating paymen
   A request to verify details for a contactless payment card.
 - [struct PaymentCardReadResult](paymentcardreadresult.md)
   The result of a payment card read operation.
+### Store and Forward mode
+- [struct StoreAndForwardBatch](storeandforwardbatch.md)
+  A structure that stores the data to send to the payment service provider to process.
+- [struct StoreAndForwardBatchDeletionToken](storeandforwardbatchdeletiontoken.md)
+  A secure token that you use to delete a Store and Forward batch.
+- [class StoreAndForwardPaymentCardReaderSession](storeandforwardpaymentcardreadersession.md)
+  The object you use to start reading a contactless payment or loyalty card in Store and Forward mode.
+- [struct StoreAndForwardStatus](storeandforwardstatus.md)
+  A structure that describes the Store and Forward session status.
+- [struct PaymentCardReaderStore](paymentcardreaderstore.md)
+  A structure that manages the store that contains all the Store and Forward reads.
 ### Loyalty card requests
 - [Accepting loyalty passes from Wallet](accepting-loyalty-passes-from-wallet.md)
   Set up the necessary components so your app can begin using Tap to Pay on iPhone to read and issue loyalty passes.
@@ -75,25 +86,27 @@ The use of this framework requires you to coordinate with a participating paymen
   A mobile national ID card request that retrieves elements from the holder and returns the validated document elements.
 - [struct MobileNationalIDCardRawDataRequest](mobilenationalidcardrawdatarequest.md)
   A mobile national ID card request which retrieves elements from the holder and returns the raw response data for processing.
+- [struct MobileDocumentDisplayRequest](mobiledocumentdisplayrequest.md)
+  A mobile document request that retrieves elements from the holder and displays the results onscreen for visual inspection.
 - [protocol MobileDocumentRequest](mobiledocumentrequest.md)
   A type that represents a mobile document request.
+- [protocol MobileDocumentDataRequest](mobiledocumentdatarequest.md)
+  A type that represents a mobile document data request.
+- [protocol MobileDocumentRawDataRequest](mobiledocumentrawdatarequest.md)
+  A type that represents a mobile document raw data request.
+- [struct MobilePhotoIDDataRequest](mobilephotoiddatarequest.md)
+  A photo ID request that retrieves elements from the holder and returns the validated document elements.
+- [struct MobilePhotoIDRawDataRequest](mobilephotoidrawdatarequest.md)
+  A mobile driver’s license request which retrieves elements from the holder and returns the raw response data for processing.
+- [struct MobileDocumentAnyOfDataRequest](mobiledocumentanyofdatarequest.md)
+  A type that describes a data request for any mobile document from a group of requests.
+- [struct MobileDocumentAnyOfRawDataRequest](mobiledocumentanyofrawdatarequest.md)
+  A type that describes a raw data request for any mobile document from a group of requests.
 ### Errors
 - [enum PaymentCardReaderError](paymentcardreadererror.md)
   An error type that indicates problems with the configuration of the reader.
 - [enum MobileDocumentReaderError](mobiledocumentreadererror.md)
   An error type that indicates problems when preparing a mobile document reader session and performing document requests.
-### Classes
-- [class StoreAndForwardPaymentCardReaderSession](storeandforwardpaymentcardreadersession.md)
-  The object you use to start reading a contactless payment or loyalty card in Store and Forward mode.
-### Structures
-- [struct PaymentCardReaderStore](paymentcardreaderstore.md)
-  A structure that manages the store that contains all the Store and Forward reads.
-- [struct StoreAndForwardBatch](storeandforwardbatch.md)
-  A structure that stores the data to send to the payment service provider to process.
-- [struct StoreAndForwardBatchDeletionToken](storeandforwardbatchdeletiontoken.md)
-  A secure token that you use to delete a Store and Forward batch.
-- [struct StoreAndForwardStatus](storeandforwardstatus.md)
-  A structure that describes the Store and Forward session status.
 
 
 ---

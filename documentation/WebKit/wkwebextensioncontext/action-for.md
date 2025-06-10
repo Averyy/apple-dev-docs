@@ -1,6 +1,6 @@
 # action(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Retrieves the extension action for a given tab, or the default action if `nil` is passed.

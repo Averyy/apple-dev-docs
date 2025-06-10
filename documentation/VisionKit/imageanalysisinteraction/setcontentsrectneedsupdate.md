@@ -1,6 +1,6 @@
 # setContentsRectNeedsUpdate()
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Informs the view that contains the image when the layout changes and the view needs to reload its content.

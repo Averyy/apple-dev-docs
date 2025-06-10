@@ -1,6 +1,6 @@
 # Scheduling a notification locally from your app
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Create and schedule notifications from your app when you want to get the user’s attention.
 

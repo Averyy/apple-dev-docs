@@ -14,8 +14,6 @@ With the user’s authorization, the extension can query the user’s location a
 
 > ❗ **Important**:  To use the Location Push Service Extension, your app must have the [`com.apple.developer.location.push`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.location.push) entitlement. Request this entitlement before implementing this service extension. To apply for the entitlement, log in to your developer account with an Account Holder role and fill out the [`request form`](https://developer.apple.comhttps://developer.apple.com/contact/request/location-push-service-extension/).
 
- To use the Location Push Service Extension, your app must have the [`com.apple.developer.location.push`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.location.push) entitlement. Request this entitlement before implementing this service extension. To apply for the entitlement, log in to your developer account with an Account Holder role and fill out the [`request form`](https://developer.apple.comhttps://developer.apple.com/contact/request/location-push-service-extension/).
-
 ##### Configure Your Xcode Project
 
 To include Location Push Service Extension in your app, use Xcode 13 or later. Configure the following entitlements, capabilities, and keys for your Xcode project:
@@ -50,8 +48,6 @@ If the user authorized your app with Always authorization ([`CLAuthorizationStat
 
 > ❗ **Important**:  Protecting user privacy is important when handling location data. End-to-end encryption provides enhanced security if your app moves location data off the user’s device, including transmitting it to a server or to another user. For more information, see [`Protecting the User’s Privacy`](https://developer.apple.com/documentation/UIKit/protecting-the-user-s-privacy).
 
- Protecting user privacy is important when handling location data. End-to-end encryption provides enhanced security if your app moves location data off the user’s device, including transmitting it to a server or to another user. For more information, see [`Protecting the User’s Privacy`](https://developer.apple.com/documentation/UIKit/protecting-the-user-s-privacy).
-
 ##### Send Location Push Requests From Your Server
 
 When a user requests the location of another user, your app sends the request to your server, which sends a location push request to APNs. Ensure that your APNs `POST` request contains the following fields for a `location` push type:
@@ -64,16 +60,8 @@ For more information about sending APNs requests and using command-line tools to
   Start location services and provide information the system needs to optimize power usage for those services.
 - [Handling location updates in the background](handling-location-updates-in-the-background.md)
   Configure your app to receive location updates when it isn’t running in the foreground.
-- [class CLLocation](cllocation.md)
-  The latitude, longitude, and course information reported by the system.
-- [struct CLLocationCoordinate2D](cllocationcoordinate2d.md)
-  The latitude and longitude associated with a location, specified using the WGS 84 reference frame.
-- [class CLFloor](clfloor.md)
-  The floor of a building on which the user’s device is located.
 - [class CLVisit](clvisit.md)
   Information about the user’s location during a specific period of time.
-- [class CLLocationSourceInformation](cllocationsourceinformation.md)
-  Information about the source that provides a location.
 - [Monitoring location changes with Core Location](monitoring-location-changes-with-core-location.md)
   Define boundaries and act on user location updates.
 - [class CLServiceSession](clservicesession-pt7n.md)

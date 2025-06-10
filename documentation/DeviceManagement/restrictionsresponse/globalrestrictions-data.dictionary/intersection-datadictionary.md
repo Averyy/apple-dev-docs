@@ -11,8 +11,6 @@ A dictionary that contains intersected restrictions.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,7 +20,7 @@ object RestrictionsResponse.GlobalRestrictions.Intersection
 
 ## Topics
 
-### Commands
+### Objects
 - [object RestrictionsResponse.GlobalRestrictions.Intersection.ANY restriction name](restrictionsresponse/globalrestrictions-data.dictionary/intersection-data.dictionary/any-restriction-name-data.dictionary.md)
   A dictionary that contains intersected restriction parameters.
 

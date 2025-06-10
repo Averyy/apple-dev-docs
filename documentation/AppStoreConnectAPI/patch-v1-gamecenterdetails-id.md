@@ -8,6 +8,10 @@ Edit challenge state, default leaderboards, and groups.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Mentions
+
+- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
+
 ## See Also
 
 - [Enable Game Center for an app](post-v1-gamecenterdetails.md)
@@ -16,6 +20,8 @@ Edit challenge state, default leaderboards, and groups.
   Edit the associated leaderboard sets for a Game Center detail.
 - [Modify the associated leaderboards for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboards.md)
   Edit the associated leaderboards for a Game Center detail.
+- [Modify the challenges minimum platform version for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-challengesminimumplatformversions.md)
+  Update the relationship between a challenges minimum platform version and a specific Game Center detail.
 
 
 ---

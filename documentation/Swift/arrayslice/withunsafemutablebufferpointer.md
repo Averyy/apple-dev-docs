@@ -45,8 +45,6 @@ The pointer passed as an argument to `body` is valid only during the execution o
 
 > ⚠️ **Warning**: Do not rely on anything about the array that is the target of this method during execution of the `body` closure; it might not appear to have its correct value. Instead, use only the `UnsafeMutableBufferPointer` argument to `body`.
 
-Do not rely on anything about the array that is the target of this method during execution of the `body` closure; it might not appear to have its correct value. Instead, use only the `UnsafeMutableBufferPointer` argument to `body`.
-
 ## Parameters
 
 - `body`: A closure with an    parameter that points to the contiguous storage for the array.   If   has a return value, that value is also   used as the return value for the    method. The pointer argument is valid only for the duration of the   method’s execution.

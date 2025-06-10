@@ -45,6 +45,7 @@ struct DispatchWallTime
 - [Comparable](../Swift/Comparable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # helpAnchor
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A localized message providing text if the user requests help.

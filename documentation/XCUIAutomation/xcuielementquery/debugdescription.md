@@ -1,6 +1,6 @@
 # debugDescription
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 Provides debugging information about the query.

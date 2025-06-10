@@ -1,6 +1,6 @@
 # WeatherAlert
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A weather alert issued for the requested  location by a governmental authority.
@@ -52,6 +52,8 @@ Weather alerts often contains severe weather information; however, not all alert
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

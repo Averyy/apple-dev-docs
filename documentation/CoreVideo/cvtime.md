@@ -29,6 +29,8 @@ This structure is equivalent to the QuickTime `QTTime` structure.
 ### Initializers
 - [init()](cvtime/init.md)
 - [init(timeValue: Int64, timeScale: Int32, flags: Int32)](cvtime/init(timevalue:timescale:flags:).md)
+- [init(timeValue: Int64, timeScale: Int32)](cvtime/init(timevalue:timescale:).md)
+  Initialize a valid CVTime value. Note: When `timeValue` has nonzero value, `timeScale` must be greater than 0.
 ### Properties
 - [var flags: Int32](cvtime/flags.md)
   The flags associated with the `CVTime` value. See [`CVTime Values`](cvtime-values.md) for possible values. If `kCVTimeIsIndefinite` is set, you should not use any of the other fields in this structure.
@@ -36,12 +38,21 @@ This structure is equivalent to the QuickTime `QTTime` structure.
   The time scale for this value.
 - [var timeValue: Int64](cvtime/timevalue.md)
   The time value.
+### Instance Properties
+- [var flagOptions: CVTimeFlags](cvtime/flagoptions.md)
+  `CVTimeFlags` representation of `CVTime.flags`
+### Type Properties
+- [static var indefinite: CVTime](cvtime/indefinite.md)
+  CVTime with indefinite value
+- [static var zero: CVTime](cvtime/zero.md)
+  CVTime with 0 value
 
 ## Relationships
 
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

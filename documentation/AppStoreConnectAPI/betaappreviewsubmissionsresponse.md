@@ -27,6 +27,7 @@ object BetaAppReviewSubmissionsResponse
 - [object BetaAppReviewSubmissionWithoutIncludesResponse](betaappreviewsubmissionwithoutincludesresponse.md)
 - [type BetaReviewState](betareviewstate.md)
   String that indicates the review state of a beta app.
+- [object BetaAppReviewSubmissionBuildLinkageResponse](betaappreviewsubmissionbuildlinkageresponse.md)
 
 
 ---

@@ -9,8 +9,6 @@ A dictionary of values associated with an app.
 - iOS 17.2+
 - iPadOS 17.2+
 - visionOS 2.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,12 +20,12 @@ object AppManagedAttributesObject
 
 - [object AppManagedAppConfigDictionaryObject](appmanagedappconfigdictionaryobject.md)
   A dictionary of app config data and credentials.
-- [object AppManagedCredentialConfigObject](appmanagedcredentialconfigobject.md)
-  A dictionary of values associated with a credential config.
 - [object AppManagedExtensionConfigsObject](appmanagedextensionconfigsobject.md)
   A dictionary of values associated with an extension config.
 - [object AppManagedInstallBehaviorObject](appmanagedinstallbehaviorobject.md)
   A dictionary that describes how and when to install an app.
+- [object AppManagedUpdateBehaviorObject](appmanagedupdatebehaviorobject.md)
+  Specifies the update behavior of the apps installed from the App Store. Apps in packages are not automatically updated.
 
 
 ---

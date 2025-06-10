@@ -1,6 +1,6 @@
 # Deprecated symbols
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Review unsupported symbols and their replacements.
 

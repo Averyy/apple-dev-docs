@@ -12,8 +12,6 @@ A dictionary that contains status information about managed apps.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,8 +21,9 @@ object ManagedApplicationListResponse.ManagedApplicationList
 
 ## Topics
 
-### Commands
+### Objects
 - [object ManagedApplicationListResponse.ManagedApplicationList.ANY app identifier](managedapplicationlistresponse/managedapplicationlist-data.dictionary/any-app-identifier-data.dictionary.md)
+  The bundle identifier of the managed app.
 
 ## See Also
 

@@ -77,13 +77,15 @@ For design guidance, see [`Searching`](https://developer.apple.com/design/Human-
   Configures the search toolbar presentation behavior for any searchable modifiers within this view.
 - [struct SearchPresentationToolbarBehavior](searchpresentationtoolbarbehavior.md)
   A type that defines how the toolbar behaves when presenting search.
-### Searching for text in a view with find and replace
+### Searching for text in a view
 - [func findNavigator(isPresented: Binding<Bool>) -> some View](view/findnavigator(ispresented:).md)
   Programmatically presents the find and replace interface for text editor views.
 - [func findDisabled(Bool) -> some View](view/finddisabled(_:).md)
   Prevents find and replace operations in a text editor.
 - [func replaceDisabled(Bool) -> some View](view/replacedisabled(_:).md)
   Prevents replace operations in a text editor.
+- [struct FindContext](findcontext.md)
+  The status of the find navigator for views which support text editing.
 
 ## See Also
 

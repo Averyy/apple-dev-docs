@@ -37,6 +37,8 @@ struct PlaneAnchor
 ### Identifying a plane anchor
 - [var id: UUID](planeanchor/id.md)
   The unique identifier of this anchor.
+### Instance Properties
+- [var surfaceClassification: SurfaceClassification](planeanchor/surfaceclassification.md)
 
 ## Relationships
 
@@ -47,6 +49,7 @@ struct PlaneAnchor
 - [Equatable](../Swift/Equatable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

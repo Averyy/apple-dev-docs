@@ -16,6 +16,7 @@ Delete a localization that’s associated with a leaderboard set member.
   Get information about a leaderboard for a specific leaderboard set member localization.
 - [Read leaderboard set information for a leaderboard set member localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-gamecenterleaderboardset.md)
   Get information about a leaderboard set for a specific leaderboard set member localization.
+- [GET /v1/gameCenterLeaderboardSetMemberLocalizations/{id}/relationships/gameCenterLeaderboardSet](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-relationships-gamecenterleaderboardset.md)
 - [Create a leaderboard set member localization](post-v1-gamecenterleaderboardsetmemberlocalizations.md)
   Add a new leaderboard set localization.
 - [Modify a leaderboard set member localization](patch-v1-gamecenterleaderboardsetmemberlocalizations-_id_.md)

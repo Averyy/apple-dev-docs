@@ -11,14 +11,12 @@ Create an alternative distribution package for an app store version.
 ## Mentions
 
 - [Creating alternative distribution packages](creating-alternative-distribution-packages.md)
-- [Configuring alternative marketplaces and alternative marketplace apps](configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
 - [Configuring apps for web distribution](configuring-apps-for-web-distribution.md)
+- [Configuring alternative marketplaces and alternative marketplace apps](configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
 
 #### Discussion
 
 > 💡 **Tip**:  This endpoint requires the `appStoreVersion` in the payload. Obtain the `appStoreVersion` resource ID from the [`List All App Store Versions for an App`](get-v1-apps-_id_-appstoreversions.md) response.
-
- This endpoint requires the `appStoreVersion` in the payload. Obtain the `appStoreVersion` resource ID from the [`List All App Store Versions for an App`](get-v1-apps-_id_-appstoreversions.md) response.
 
 ##### Example Request and Response
 

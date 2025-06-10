@@ -51,6 +51,7 @@ To get an entitlement task state, use [`currentEntitlementTask(for:priority:acti
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

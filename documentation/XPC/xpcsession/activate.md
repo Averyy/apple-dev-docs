@@ -1,6 +1,6 @@
 # activate()
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Activates a session so you can send messages.
@@ -22,8 +22,6 @@ func activate() throws
 #### Discussion
 
 > ❗ **Important**:  Don’t call [`activate()`](xpcsession/activate().md) on a session that’s already active.
-
- Don’t call [`activate()`](xpcsession/activate().md) on a session that’s already active.
 
 If you create an inactive session using the [`inactive`](xpcsession/initializationoptions/inactive.md) initialization option, you must activate the session before deinitialization. Deinitializing an inactive session causes the process to crash.
 

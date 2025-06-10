@@ -3,8 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The response that contains the service configuration.
-
 **Availability**:
 - Device Assignment Services ?+
 - VPP License Management ?+
@@ -17,13 +15,9 @@ object ServiceConfigResponse
 
 ## Topics
 
-### Objects and Data Types
-- [object ResponseErrorCode](responseerrorcode.md)
-  An error code.
+### Dictionaries
 - [object ServiceConfigResponse.Limits](serviceconfigresponse/limits-data.dictionary.md)
-  The mutable limits for request sizes.
 - [object ServiceConfigResponse.Urls](serviceconfigresponse/urls-data.dictionary.md)
-  The URLs for all endpoints.
 
 ## See Also
 

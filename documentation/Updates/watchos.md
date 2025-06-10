@@ -16,13 +16,13 @@ Browse notable changes in [`watchOS apps`](https://developer.apple.com/documenta
 
 ##### Shallow Dives
 
-- Apple Watch Series 10 supports the Shallow Depth and Pressure capability. Use [`CMWaterSubmersionManager`](https://developer.apple.com/documentation/CoreMotion/CMWaterSubmersionManager) to start a shallow dive session, and [`underwaterDepth`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/3958703-underwaterdepth) and [`waterTemperature`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/3958704-watertemperature) to read depth and temperature samples from HealthKit.
+- Apple Watch Series 10 supports the Shallow Depth and Pressure capability. Use [`CMWaterSubmersionManager`](https://developer.apple.com/documentation/CoreMotion/CMWaterSubmersionManager) to start a shallow dive session, and [`underwaterDepth`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/underwaterDepth) and [`waterTemperature`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/waterTemperature) to read depth and temperature samples from HealthKit.
 
 #### June 2024
 
 ##### Water Temperature
 
-- Access water temperature data from swimming workouts. Apple Watch Ultra records [`waterTemperature`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/3958704-watertemperature) samples during swimming workouts.
+- Access water temperature data from swimming workouts. Apple Watch Ultra records [`waterTemperature`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/waterTemperature) samples during swimming workouts.
 
 ##### Double Tap
 
@@ -62,12 +62,16 @@ Browse notable changes in [`watchOS apps`](https://developer.apple.com/documenta
   Learn about important changes in ActivityKit.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [App Intents updates](appintents.md)
   Learn about important changes in App Intents.
 - [AppKit updates](appkit.md)
   Learn about important changes to AppKit.
 - [Apple Intelligence updates](apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -80,10 +84,6 @@ Browse notable changes in [`watchOS apps`](https://developer.apple.com/documenta
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
 
 
 ---

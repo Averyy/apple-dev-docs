@@ -37,6 +37,8 @@ object CiWorkflowUpdateRequest
 - [object CiManualBranchStartCondition](cimanualbranchstartcondition.md)
 - [object CiManualPullRequestStartCondition](cimanualpullrequeststartcondition.md)
 - [object CiManualTagStartCondition](cimanualtagstartcondition.md)
+- [object CiWorkflowBuildRunsLinkagesResponse](ciworkflowbuildrunslinkagesresponse.md)
+- [object CiWorkflowRepositoryLinkageResponse](ciworkflowrepositorylinkageresponse.md)
 
 
 ---

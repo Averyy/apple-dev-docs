@@ -1,6 +1,6 @@
 # toggleButton
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The accessibility element behaves like a toggle button.

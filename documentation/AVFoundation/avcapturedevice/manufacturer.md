@@ -25,8 +25,6 @@ You can use this property to identify capture devices by manufacturer. For all A
 
 > 💡 **Tip**:  Devices from third-party manufacturers may not provide identifying text, in which case the value of this property is an empty string.
 
- Devices from third-party manufacturers may not provide identifying text, in which case the value of this property is an empty string.
-
 ## See Also
 
 - [var uniqueID: String](avcapturedevice/uniqueid.md)

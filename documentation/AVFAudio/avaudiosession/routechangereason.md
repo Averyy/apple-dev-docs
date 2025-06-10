@@ -57,6 +57,7 @@ These constants appear as possible values for the [`AVAudioSessionRouteChangeRea
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

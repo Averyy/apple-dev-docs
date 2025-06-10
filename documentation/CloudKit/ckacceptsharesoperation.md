@@ -26,7 +26,7 @@ Use this operation to accept participation in one or more shares. You create the
 
 If there are several metadatas, group them by their [`containerIdentifier`](ckshare/metadata/containeridentifier.md) and create an operation for each container. Then add the operation to each container’s operation queue to run it. The operation executes its callbacks on a private serial queue.
 
-The operation calls [`perShareCompletionBlock`](ckacceptsharesoperation/persharecompletionblock.md) once for each metadata you provide. CloudKit returns the metadata and its related share, or an error if it can’t accept the share. CloudKit also batches per-metadata errors. If the operation completes with errors, it returns a [`partialFailure`](ckerror/partialfailure.md) error. The error stores individual errors in its [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary. Use the [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) key to extract them.
+The operation calls [`perShareCompletionBlock`](ckacceptsharesoperation/persharecompletionblock.md) once for each metadata you provide. CloudKit returns the metadata and its related share, or an error if it can’t accept the share. CloudKit also batches per-metadata errors. If the operation completes with errors, it returns a [`partialFailure`](ckerror/partialfailure.md) error. The error stores individual errors in its [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary. Use the [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) key to extract them.
 
 After CloudKit applies all record changes, the operation calls [`acceptSharesCompletionBlock`](ckacceptsharesoperation/acceptsharescompletionblock.md). When the closure executes, the server may continue processing residual tasks of the operation, such as creating the record zone in the user’s private database.
 
@@ -114,6 +114,7 @@ func acceptShare(metadata: CKShare.Metadata,
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

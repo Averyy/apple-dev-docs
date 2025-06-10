@@ -145,10 +145,19 @@ All the concrete `HKQuery` subclasses take a predicate. You can use this predica
 - [HealthKit sort descriptors](healthkit-sort-descriptors.md)
   Identifiers for sorting results.
 ### Type Methods
+- [class func predicateForMedicationDoseEvent(medicationConceptIdentifier: HKHealthConceptIdentifier) -> NSPredicate](hkquery/predicateformedicationdoseevent(medicationconceptidentifier:).md)
+- [class func predicateForMedicationDoseEvent(medicationConceptIdentifiers: Set<HKHealthConceptIdentifier>) -> NSPredicate](hkquery/predicateformedicationdoseevent(medicationconceptidentifiers:).md)
+- [class func predicateForMedicationDoseEvent(scheduledDate: Date) -> NSPredicate](hkquery/predicateformedicationdoseevent(scheduleddate:).md)
+- [class func predicateForMedicationDoseEvent(scheduledDates: Set<Date>) -> NSPredicate](hkquery/predicateformedicationdoseevent(scheduleddates:).md)
+- [class func predicateForMedicationDoseEvent(scheduledStart: Date?, end: Date?) -> NSPredicate](hkquery/predicateformedicationdoseevent(scheduledstart:end:).md)
+- [class func predicateForMedicationDoseEvent(status: HKMedicationDoseEvent.LogStatus) -> NSPredicate](hkquery/predicateformedicationdoseevent(status:).md)
+- [class func predicateForMedicationDoseEvent(statuses: Set<NSNumber>) -> NSPredicate](hkquery/predicateformedicationdoseevent(statuses:).md)
 - [class func predicateForStatesOfMind(with: HKStateOfMind.Label) -> NSPredicate](hkquery/predicateforstatesofmind(with:)-3iyym.md)
 - [class func predicateForStatesOfMind(with: HKStateOfMind.Kind) -> NSPredicate](hkquery/predicateforstatesofmind(with:)-6obe4.md)
 - [class func predicateForStatesOfMind(with: HKStateOfMind.Association) -> NSPredicate](hkquery/predicateforstatesofmind(with:)-9fny6.md)
 - [class func predicateForStatesOfMind(withValence: Double, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](hkquery/predicateforstatesofmind(withvalence:operatortype:).md)
+- [class func predicateForUserAnnotatedMedications(hasSchedule: Bool) -> NSPredicate](hkquery/predicateforuserannotatedmedications(hasschedule:).md)
+- [class func predicateForUserAnnotatedMedications(isArchived: Bool) -> NSPredicate](hkquery/predicateforuserannotatedmedications(isarchived:).md)
 - [class func predicateForWorkoutEffortSamplesRelated(workout: HKWorkout, activity: HKWorkoutActivity?) -> NSPredicate](hkquery/predicateforworkouteffortsamplesrelated(workout:activity:).md)
 
 ## Relationships
@@ -168,6 +177,7 @@ All the concrete `HKQuery` subclasses take a predicate. You can use this predica
 - [HKSourceQuery](hksourcequery.md)
 - [HKStatisticsCollectionQuery](hkstatisticscollectionquery.md)
 - [HKStatisticsQuery](hkstatisticsquery.md)
+- [HKUserAnnotatedMedicationQuery](hkuserannotatedmedicationquery.md)
 - [HKVerifiableClinicalRecordQuery](hkverifiableclinicalrecordquery.md)
 - [HKWorkoutEffortRelationshipQuery](hkworkouteffortrelationshipquery.md)
 - [HKWorkoutRouteQuery](hkworkoutroutequery.md)
@@ -179,6 +189,7 @@ All the concrete `HKQuery` subclasses take a predicate. You can use this predica
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -57,6 +57,7 @@ You use `CLLocationUpate` events to observe changes in the device’s location, 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

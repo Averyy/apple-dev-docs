@@ -6,9 +6,7 @@
 A Boolean value that indicates whether authorization is required to play the content.
 
 **Availability**:
-- iOS 4.2+
-- iPadOS 4.2+
-- Mac Catalyst 13.1+
+- Mac Catalyst 13.0+
 - macOS 10.7+
 
 ## Declaration

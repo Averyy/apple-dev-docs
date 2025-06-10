@@ -25,8 +25,6 @@ This delegate method is called every time a payment finishes. A payment may fini
 
 > ❗ **Important**:  Make any needed payment-related updates to your app’s state in this delegate method, especially if the payment is canceled or times out. Also, be sure to call [`dismiss(completion:)`](pkpaymentauthorizationcontroller/dismiss(completion:).md) on the payment authorization view controller.
 
- Make any needed payment-related updates to your app’s state in this delegate method, especially if the payment is canceled or times out. Also, be sure to call [`dismiss(completion:)`](pkpaymentauthorizationcontroller/dismiss(completion:).md) on the payment authorization view controller.
-
 ## Parameters
 
 - `controller`: The payment authorization view controller.

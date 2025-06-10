@@ -5,17 +5,31 @@
 
 Transforms UV texture coordinates for 2D texture placement.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Parameter Descriptions
 
 #### Discussion
 
-The Place 2D node can be used to transform texture coordinates and apply these basic transformations to textures. Below is an example of a simple node graph that uses the Place 2D Node to transform texture coordinates that are then passed to an image node.
+Use the `Place 2D` node to transform texture coordinates and apply these basic transformations to textures. Below is an example of a simple node graph that uses the `Place 2D` node to transform texture coordinates before passing them to an image node:
 
 ![None](https://docs-assets.developer.apple.com/published/9eedcf2c05258008ef6543a7b5d1d075/Place2dGraph.png)
 
-The incoming texture coordinates are transformed in three ways. They are scaled down to half the size, rotated 180 degrees, and offset by 0.5 in both the  and  direction. For the scale and rotation, the pivot point is set to `(0.5, 0.5)`. Because texture coordinates generally range from `(0-1)` this means the scale and rotation are done from the center point of the image. Below is the original image and the texture with the transformation applied.
+The incoming texture coordinates transform in three ways; they are:
+
+- scaled down to half the size
+- rotated 180 degrees
+- offset by `0.5` in both the U and V directions. For the scale and rotation, the pivot point is set to `(0.5, 0.5)`. Because texture coordinates generally range from `(0-1)`, this means the scale and rotation are done from the center point of the image.
+
+Below is the original image and the texture with the transformation applied:
 
 ## See Also
 

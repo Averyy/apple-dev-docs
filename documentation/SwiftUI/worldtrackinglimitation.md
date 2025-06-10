@@ -6,6 +6,7 @@
 A structure to represent limitations of tracking the user’s surroundings.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -42,6 +43,7 @@ var body: some View {
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -67,6 +69,8 @@ var body: some View {
   Indicates whether returned metrics will take dynamic scaling into account.
 - [var worldTrackingLimitations: Set<WorldTrackingLimitation>](environmentvalues/worldtrackinglimitations.md)
   The current limitations of the device tracking the user’s surroundings.
+- [struct SurfaceSnappingInfo](surfacesnappinginfo.md)
+  A type representing information about the window scenes snap state.
 
 
 ---

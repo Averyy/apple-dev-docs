@@ -1,6 +1,6 @@
 # parentTab
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the parent tab with which the tab should be related.

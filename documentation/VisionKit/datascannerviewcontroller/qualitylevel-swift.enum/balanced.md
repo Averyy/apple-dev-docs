@@ -1,6 +1,6 @@
 # DataScannerViewController.QualityLevel.balanced
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: case
 
 A quality level that’s between fast and accurate.

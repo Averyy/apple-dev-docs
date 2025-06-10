@@ -9,8 +9,6 @@ A dictionary of hashed public keys.
 - iOS 14.2+
 - iPadOS 14.2+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

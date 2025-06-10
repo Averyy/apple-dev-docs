@@ -1,6 +1,6 @@
 # testBundleDidFinish(_:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Notifies the observer immediately after all tests in a test bundle finish executing.

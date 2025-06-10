@@ -1,6 +1,6 @@
 # Scanning and Detecting 3D Objects
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Record spatial features of real-world objects, then use the results to find those objects in the user’s environment and trigger AR content.
 
@@ -170,4 +170,4 @@ After you obtain an [`ARReferenceObject`](arreferenceobject.md), you can either 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/scanning-and-detecting-3d-objects)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/scanning-and-detecting-3d-objects)*

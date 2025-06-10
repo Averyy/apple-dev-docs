@@ -1,6 +1,6 @@
 # VTSessionSetProperty(_:key:value:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Sets a property on a VideoToolbox session.

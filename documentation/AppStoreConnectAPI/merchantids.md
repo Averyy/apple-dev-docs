@@ -1,6 +1,6 @@
 # Merchant ID
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Manage your merchant ID for Apple Pay.
 
@@ -23,6 +23,7 @@ To learn more about setting up your Apple developer account and implementing App
   Get information for a merchant ID.
 - [List certificates for a merchant ID](get-v1-merchantids-_id_-certificates.md)
   Get a list of all certificates for a specific merchant ID.
+- [GET /v1/merchantIds/{id}/relationships/certificates](get-v1-merchantids-_id_-relationships-certificates.md)
 - [Modify merchant IDs](patch-v1-merchantids-_id_.md)
   Update a specific merchant ID.
 - [Create a merchant ID](post-v1-merchantids.md)
@@ -40,6 +41,7 @@ To learn more about setting up your Apple developer account and implementing App
   The request body you use to create a merchant ID.
 - [object MerchantIdUpdateRequest](merchantidupdaterequest.md)
   The request body you use to update a merchant ID.
+- [object MerchantIdCertificatesLinkagesResponse](merchantidcertificateslinkagesresponse.md)
 
 ## See Also
 
@@ -53,8 +55,10 @@ To learn more about setting up your Apple developer account and implementing App
   Register devices for development and testing.
 - [Profiles](profiles.md)
   Create, delete, and download provisioning profiles that enable app installations for development and distribution.
+- [Pass type Ids](pass-type-id.md)
+  Create, download, and revoke pass type ids for app development and distribution.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/merchantids)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/merchantids)*

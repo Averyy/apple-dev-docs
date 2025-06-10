@@ -1,4 +1,4 @@
-# Enable Declarative Management
+# Declarative Management
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -12,34 +12,34 @@ Enable your server to support declarative management or trigger a declarative ma
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
+
+The server uses this command to turn on the declarative management engine on the device the first time the server sends it. Subsequent commands trigger a declarative management synchronization operation.
 
 ##### Command Availability
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS, watchOS |
-| User Channel | - |
-| Requires Supervision | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Required Access Right | - |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| User channel | macOS, Shared iPad |
+| Requires supervision | NA |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Required access right |  |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object DeclarativeManagementCommand](declarativemanagementcommand.md)
-  The command to issue declarations to a device.
+  The command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 - [object DeclarativeManagementResponse](declarativemanagementresponse.md)
-  A response from the device after it processes the command to issue declarations to a device.
+  A response from the device after it processes the command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 
 ## Request Body
 
-The command to issue declarations to a device.
+The request object the server returns for the Declarative Management Command.
 
 
 ---

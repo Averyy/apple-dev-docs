@@ -11,8 +11,8 @@ Update the SKU, display name, and description associated with a subscription, wi
 ## Mentions
 
 - [Advanced Commerce API changelog](changelog.md)
-- [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
 - [Authorizing API requests from your server](authorizing-server-calls.md)
+- [Identifying rate limits for Advanced Commerce APIs](ratelimits.md)
 
 #### Discussion
 

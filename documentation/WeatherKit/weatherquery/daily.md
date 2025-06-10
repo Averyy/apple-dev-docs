@@ -1,6 +1,6 @@
 # daily
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The daily forecast query. This returns 10 contiguous days, beginning with the current day.

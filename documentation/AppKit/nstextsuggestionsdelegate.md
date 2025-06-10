@@ -41,6 +41,17 @@ protocol NSTextSuggestionsDelegate<SuggestionItemType> : AnyObject
 - [NSTextSuggestionsDelegate.ItemSection](nstextsuggestionsdelegate/itemsection.md)
   A suggestion item section with the same suggestion item type as the controller.
 
+## See Also
+
+- [var isAutomaticTextCompletionEnabled: Bool](nstextfield/isautomatictextcompletionenabled.md)
+  A Boolean value that indicates whether the text field automatically completes text as the user types.
+- [struct NSSuggestionItem](nssuggestionitem.md)
+  The items that appear in suggestion menus.
+- [struct NSSuggestionItemResponse](nssuggestionitemresponse.md)
+  Describes the result of a batch of suggestion items from a search
+- [struct NSSuggestionItemSection](nssuggestionitemsection.md)
+  Describes a section of suggestions items in a suggestions menu
+
 
 ---
 

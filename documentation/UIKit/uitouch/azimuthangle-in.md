@@ -1,6 +1,6 @@
 # azimuthAngle(in:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Returns the azimuth angle (in radians) of the stylus.

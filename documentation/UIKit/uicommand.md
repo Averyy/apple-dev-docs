@@ -89,6 +89,7 @@ builder.insertSibling(refreshMenuItem, beforeMenu: .close)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIMenuLeaf](uimenuleaf.md)
 
@@ -106,6 +107,7 @@ builder.insertSibling(refreshMenuItem, beforeMenu: .close)
   An object that specifies a key press perform on a hardware keyboard and the resulting action.
 - [class UIDeferredMenuElement](uideferredmenuelement.md)
   A placeholder menu element that the system replaces with the result of the block’s completion handler.
+- [UIDeferredMenuElement.Provider](uideferredmenuelement/provider.md)
 - [UIMenuElement.Attributes](uimenuelement/attributes.md)
   Attributes that determine the style of the menu element.
 - [UIMenuElement.State](uimenuelement/state.md)

@@ -1,6 +1,6 @@
 # Recommending your app to App Clip users
 
-**Framework**: Appclip
+**Framework**: App Clips
 
 Display an overlay in your App Clip to recommend your app to users.
 
@@ -40,4 +40,4 @@ To respond to the overlay’s appearance, dismissal, or failure to load, set the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/recommending-your-app-to-app-clip-users)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appclip/recommending-your-app-to-app-clip-users)*

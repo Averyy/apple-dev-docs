@@ -22,7 +22,7 @@ Your app has its own container directory for storing files, and you should alway
 - `~/Library/Application Support/` — Store app-specific files that you want backed up with the user’s other content. (You can create custom subdirectories here as needed.) Use this directory for data files, configuration files, document templates, and so on.
 - `~/Library/Caches/` — Store temporary data files that can be easily regenerated or downloaded.
 
-To obtain a URL for one of the directories in your app’s container, use the [`urls(for:in:)`](https://developer.apple.com/documentation/foundation/filemanager/1407726-urls) method of [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager).
+To obtain a URL for one of the directories in your app’s container, use the [`urls(for:in:)`](https://developer.apple.com/documentation/Foundation/FileManager/urls(for:in:)) method of [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager).
 
 ```swift
 let appSupportURL = FileManager.default.urls(for: 
@@ -32,7 +32,7 @@ let cachesURL = FileManager.default.urls(for:
       .cachesDirectory, in: .userDomainMask)
 ```
 
-Place any temporary files in your app’s `tmp/` directory. Temporary files might include compressed files that you intend to delete once their contents have been extracted and installed elsewhere. Retrieve the URL for your app’s temporary directory using the [`temporaryDirectory`](https://developer.apple.com/documentation/foundation/filemanager/1642996-temporarydirectory) method of [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager).
+Place any temporary files in your app’s `tmp/` directory. Temporary files might include compressed files that you intend to delete once their contents have been extracted and installed elsewhere. Retrieve the URL for your app’s temporary directory using the [`temporaryDirectory`](https://developer.apple.com/documentation/Foundation/FileManager/temporaryDirectory) method of [`FileManager`](https://developer.apple.com/documentation/Foundation/FileManager).
 
 ## See Also
 

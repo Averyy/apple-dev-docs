@@ -10,7 +10,8 @@ Synchronously loads a model entity from a file URL.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- visionOS ?+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
 
 ## Declaration
 

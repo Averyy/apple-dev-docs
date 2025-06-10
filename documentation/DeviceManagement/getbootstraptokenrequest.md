@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request object used to get the bootstrap token.
+The get bootstrap token request details.
 
 **Availability**:
 - macOS 10.15+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,7 +17,7 @@ object GetBootstrapTokenRequest
 ## See Also
 
 - [object GetBootstrapTokenResponse](getbootstraptokenresponse.md)
-  The response that contains the bootstrap token.
+  The get bootstrap token response details.
 
 
 ---

@@ -30,6 +30,8 @@ To clear the now playing info center dictionary, set it to `nil`.
   Returns the singleton Now Playing info center.
 - [enum MPNowPlayingInfoMediaType](mpnowplayinginfomediatype.md)
   The type of media currently playing.
+- [class var supportedAnimatedArtworkKeys: [String]](mpnowplayinginfocenter/supportedanimatedartworkkeys.md)
+  Keys related to animated artwork that are supported by the current platform.
 
 
 ---

@@ -99,6 +99,7 @@ Use the methods of `NSSegmentedCell` to customize the attributes of a segmented 
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

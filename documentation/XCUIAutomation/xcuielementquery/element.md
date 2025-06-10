@@ -1,6 +1,6 @@
 # element
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The query’s single matching element.

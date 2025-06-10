@@ -1,6 +1,6 @@
 # kVTPixelTransferPropertyKey_DestinationColorPrimaries
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The color primaries to be used for destination image buffers.

@@ -28,8 +28,6 @@ The managed object context’s change processing is explicitly disabled around t
 
 > ❗ **Important**:  Subclasses must invoke super’s implementation before performing their own initialization.
 
- Subclasses must invoke super’s implementation before performing their own initialization.
-
 ## See Also
 
 - [func setPrimitiveValue(Any?, forKey: String)](nsmanagedobject/setprimitivevalue(_:forkey:).md)

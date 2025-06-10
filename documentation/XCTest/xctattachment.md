@@ -1,6 +1,6 @@
 # XCTAttachment
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 Data from a test method’s execution, such as a file, image, screenshot, data blob, or ZIP file.

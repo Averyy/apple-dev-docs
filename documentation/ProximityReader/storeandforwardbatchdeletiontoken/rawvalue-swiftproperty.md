@@ -17,6 +17,10 @@ The raw token string your payment service provider supplies.
 let rawValue: String
 ```
 
+## See Also
+
+- [var hashValue: Int](storeandforwardbatchdeletiontoken/hashvalue.md)
+
 
 ---
 

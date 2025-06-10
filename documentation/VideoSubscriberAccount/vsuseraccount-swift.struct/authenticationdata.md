@@ -1,6 +1,6 @@
 # authenticationData
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A string that represents an authentication token for the user account to authenticate with a provider.
@@ -22,7 +22,7 @@ var authenticationData: String? { get set }
 
 The authentication token or data used to maintain the authentication state for the account in your application. The system provides the token or data to the application JS during account refresh requests so that the account can fetch billing cycle dates, account validity, or any other account data.
 
-When you fetch accounts using [`VSUserAccountManager`](vsuseraccountmanager.md), if an account is pulled from a different device and the user is not signed in to the current device, you can use the token or data to authenticate the user seamlessly without requiring their username and password. This data is not accessible by Apple.
+hen you fetch accounts using [`VSUserAccountManager`](vsuseraccountmanager.md), if an account is pulled from a different device and the person isn’t signed in to the current device, you can use the token or data to authenticate them seamlessly without requiring their username and password. This data isn’t accessible by Apple.
 
 ## See Also
 

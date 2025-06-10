@@ -1,6 +1,6 @@
 # data
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The raw data that represents the data source’s content.

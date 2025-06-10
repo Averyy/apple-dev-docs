@@ -1,6 +1,6 @@
 # loadSimulatedRequest(_:responseHTML:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Loads the web content from the HTML you provide as if the HTML were the response to the request.

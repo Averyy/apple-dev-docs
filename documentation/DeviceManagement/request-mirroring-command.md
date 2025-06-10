@@ -1,4 +1,4 @@
-# Start AirPlay Mirroring
+# Request Mirroring
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -9,8 +9,6 @@ Prompt the user to share their screen using AirPlay Mirroring.
 - iOS 7.0+
 - iPadOS 7.0+
 - macOS 10.10+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -22,17 +20,17 @@ Refer to the following sections to determine supported channels and requirements
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad |
-| User Channel | macOS |
-| Requires Supervision | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Required Access Right | - |
+| Device channel | iOS, macOS, Shared iPad |
+| User channel | NA |
+| Requires supervision | NA |
+| Allowed in user enrollment | iOS, macOS |
+| Required access right | NA |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object RequestMirroringCommand](requestmirroringcommand.md)
   The command to prompt the user to share their screen using AirPlay Mirroring.
 - [object RequestMirroringResponse](requestmirroringresponse.md)
@@ -40,11 +38,11 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
-The command to prompt the user to share their screen using AirPlay Mirroring.
+The request object the server returns for the Request Mirroring Command.
 
 ## See Also
 
-- [Stop AirPlay Mirroring](stop-mirroring-command.md)
+- [Stop Mirroring](stop-mirroring-command.md)
   Stop mirroring the display on another device.
 
 

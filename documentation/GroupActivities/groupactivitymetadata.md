@@ -95,6 +95,7 @@ Create a `GroupActivityMetadata` structure in the [`metadata`](groupactivity/met
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -54,8 +54,6 @@ Scene padding in watchOS also ensures that your content avoids the curved edges 
 
 > ❗ **Important**: Scene padding doesn’t pad the top and bottom edges of a view in watchOS, even if you specify those edges as part of the input. For example, if you specify [`vertical`](edge/set/vertical.md) instead of [`horizontal`](edge/set/horizontal.md) in the example above, the modifier would have no effect in watchOS. It does, however, apply to all the edges that you specify in other platforms.
 
-Scene padding doesn’t pad the top and bottom edges of a view in watchOS, even if you specify those edges as part of the input. For example, if you specify [`vertical`](edge/set/vertical.md) instead of [`horizontal`](edge/set/horizontal.md) in the example above, the modifier would have no effect in watchOS. It does, however, apply to all the edges that you specify in other platforms.
-
 ## Parameters
 
 - `edges`: The set of edges along which to pad this view.

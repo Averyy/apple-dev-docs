@@ -1,6 +1,6 @@
 # WKWebExtension.WindowConfiguration
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that encapsulates configuration options for a window in an extension.

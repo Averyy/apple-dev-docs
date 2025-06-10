@@ -1,6 +1,6 @@
 # automatic
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 An option that enables interaction with any type of text, symbols, or subjects that the framework recognizes.

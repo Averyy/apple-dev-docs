@@ -14,7 +14,6 @@ The alignment of the printed text.
 ## Declaration
 
 ```swift
-@MainActor
 var textAlignment: NSTextAlignment { get set }
 ```
 

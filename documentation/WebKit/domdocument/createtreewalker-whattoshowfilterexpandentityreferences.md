@@ -1,6 +1,6 @@
 # createTreeWalker(_:whatToShow:filter:expandEntityReferences:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

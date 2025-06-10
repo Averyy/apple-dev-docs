@@ -1,34 +1,34 @@
-# listRowInsets(_:)
+# listRowInsets(_:_:)
 
 **Framework**: App Intents  
 **Kind**: method
 
-Applies an inset to the rows in a list.
+Sets the insets of rows in a list on the specified edges.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
 nonisolated
-func listRowInsets(_ insets: EdgeInsets?) -> some View
+func listRowInsets(_ edges: Edge.Set = .all, _ length: CGFloat?) -> some View
 ```
 
 #### Return Value
 
-A view that uses the given edge insets when used as a list cell.
+A view in which the margins of list sections are set to the specified amount
 
 #### Discussion
 
-Use `listRowInsets(_:)` to change the default padding of the content of list items.
+Use this modifier to change the default insets of list rows on the specified edges.
 
-In the example below, the `Flavor` enumeration provides content for list items. The SwiftUI `ForEach` structure computes views for each element of the `Flavor` enumeration and extracts the raw value of each of its elements using the resulting text to create each list row item. The `listRowInsets(_:)` modifier then changes the edge insets of each row of the list according to the `EdgeInsets` provided:
+In the example below, the `Flavor` enumeration provides content for list items. The SwiftUI `ForEach` structure computes views for each element of the `Flavor` enumeration and extracts the raw value of each of its elements using the resulting text to create each list row item. The `listRowInsets(_:_:)` modifier then changes the leading inset of each row of the list and leaves the default insets on the other edges untouched:
 
 ```swift
 struct ContentView: View {
@@ -41,21 +41,21 @@ struct ContentView: View {
         List {
             ForEach(Flavor.allCases) {
                 Text($0.rawValue)
-                    .listRowInsets(.init(top: 0,
-                                         leading: 25,
-                                         bottom: 0,
-                                         trailing: 0))
+                    .listRowInsets(.leading, 25)
             }
         }
     }
 }
 ```
 
+When applying multiple `listRowInsets` modifiers, modifiers with the same edges will override modifiers higher up in the view hierarchy.
+
 ## Parameters
 
-- `insets`: The   to apply to the edges of the   view.
+- `edges`: The edges to set the insets to.
+- `length`: An amount, given in points, to set the insets to on   the specified edges.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents/siritipview/listrowinsets(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/siritipview/listrowinsets(_:_:))*

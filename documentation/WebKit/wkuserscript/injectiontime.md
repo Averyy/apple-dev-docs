@@ -1,6 +1,6 @@
 # injectionTime
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The time at which to inject the script into the webpage.

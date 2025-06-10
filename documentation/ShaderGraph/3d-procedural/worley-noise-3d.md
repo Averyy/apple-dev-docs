@@ -5,18 +5,26 @@
 
 A 3D Worley noise generator.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Parameter Descriptions
 
 #### Discussion
 
-The Worley Noise 3D node procedurally generates nonuniform cellular regions. The node creates a finite number of center points, and each region is a polygon that surrounds the points closest to each center point. Because this node generates noise in 3D, the texture doesn’t repeat in the Z direction but rather continues as depth changes. Below is an example of a simple node graph that uses the Worley Noise 3D node to generate a black and white pattern procedurally.
+The `Worley Noise 3D` node procedurally generates nonuniform cellular regions. The node creates a finite number of center points, and each region is a polygon that surrounds the points closest to each center point. Because this node generates noise in 3D, the texture doesn’t repeat in the Z direction but rather continues as depth changes. Below is an example of a simple node graph that uses the `Worley Noise 3D` node to generate a black and white pattern procedurally:
 
 ![None](https://docs-assets.developer.apple.com/published/93e069365411ee3b9980bbaac0872c99/WorleyNoise3dGraph.png)
 
 Multiply the incoming texture coordinates with a constant float, which changes the frequency of the generated noise. A higher value corresponds to the pattern repeating more often. Then run the output through a convert node to change it to a black and white color value.
-Below, the resulting texture applies to a cube.
+Below, the resulting texture applies to a cube:
 
 ![None](https://docs-assets.developer.apple.com/published/bdf0fcb2dbd86638217094fcc5ebedc6/WorleyNoise3dMaterial.png)
 

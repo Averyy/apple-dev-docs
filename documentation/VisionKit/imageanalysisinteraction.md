@@ -1,6 +1,6 @@
 # ImageAnalysisInteraction
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: class
 
 An interface that enables people to interact with recognized text, barcodes, and other objects in an image.
@@ -141,6 +141,7 @@ You can take more control over the interaction or provide details about your app
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIInteraction](../UIKit/UIInteraction.md)
 
 ## See Also

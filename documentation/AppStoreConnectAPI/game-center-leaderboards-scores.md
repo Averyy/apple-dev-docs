@@ -10,8 +10,6 @@ This endpoint is different than most in App Store Connect API, with this you can
 
 > 💡 **Tip**:  These endpoint requires information from GameKit, specifically [`gamePlayerID`](https://developer.apple.com/documentation/GameKit/GKPlayer/gamePlayerID).
 
- These endpoint requires information from GameKit, specifically [`gamePlayerID`](https://developer.apple.com/documentation/GameKit/GKPlayer/gamePlayerID).
-
 ## Topics
 
 ### Managing Game Center leaderboard scores

@@ -53,6 +53,7 @@ Supported units range from hours to nanoseconds. Use these with the `allowed` pa
 - [Equatable](equatable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

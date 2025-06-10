@@ -1,6 +1,6 @@
 # vmnet_return_t.VMNET_SETUP_INCOMPLETE
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: case
 
 **Availability**:

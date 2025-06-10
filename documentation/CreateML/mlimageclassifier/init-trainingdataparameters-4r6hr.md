@@ -1,6 +1,6 @@
 # init(trainingData:parameters:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: init
 
 Creates an image classifier with a training dataset represented by a data source.

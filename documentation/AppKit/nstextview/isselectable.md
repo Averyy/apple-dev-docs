@@ -1,6 +1,6 @@
 # isSelectable
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 A Boolean value that controls whether the text views sharing the receiver’s layout manager allow the user to select text.
@@ -59,4 +59,4 @@ If a text view is made not selectable, it’s also made not editable, and button
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstextview/isselectable)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstextview/isselectable)*

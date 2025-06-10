@@ -73,4 +73,4 @@ Instantiate a [`VZVirtualMachine`](vzvirtualmachine.md) from the `VZVirtualMachi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Virtualization/creating-and-running-a-linux-virtual-machine)*
+*[View on Apple Developer](https://developer.apple.com/documentation/virtualization/creating-and-running-a-linux-virtual-machine)*

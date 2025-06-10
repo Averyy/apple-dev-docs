@@ -24,8 +24,6 @@ init(i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, rate: Float, 
 
 > ❗ **Important**:  Dropout layers only support arrays with a data type of `float`. The input shape must be equal to the output shape.
 
- Dropout layers only support arrays with a data type of `float`. The input shape must be equal to the output shape.
-
 ## Parameters
 
 - `i_desc`: The descriptor of the input.

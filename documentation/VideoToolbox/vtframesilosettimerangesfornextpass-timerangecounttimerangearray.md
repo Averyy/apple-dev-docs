@@ -1,6 +1,6 @@
 # VTFrameSiloSetTimeRangesForNextPass(_:timeRangeCount:timeRangeArray:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Begins a new pass of samples to be added to a frame silo object.

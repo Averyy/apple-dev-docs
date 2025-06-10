@@ -1,6 +1,6 @@
 # Build Actions
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Read information about actions you configured for an Xcode Cloud workflow and their related data such as artifacts, issues, or test results.
 
@@ -31,6 +31,10 @@ To update a workflow’s actions, use the [`Workflows`](workflows.md) resource.
   List all issues that occurred for a specific action that Xcode Cloud performed as part of a build.
 - [List All Test Results for an Xcode Cloud Test Action](get-v1-cibuildactions-_id_-testresults.md)
   List all test results for a specific test action Xcode Cloud performed as part of a build.
+- [GET /v1/ciBuildActions/{id}/relationships/artifacts](get-v1-cibuildactions-_id_-relationships-artifacts.md)
+- [GET /v1/ciBuildActions/{id}/relationships/buildRun](get-v1-cibuildactions-_id_-relationships-buildrun.md)
+- [GET /v1/ciBuildActions/{id}/relationships/issues](get-v1-cibuildactions-_id_-relationships-issues.md)
+- [GET /v1/ciBuildActions/{id}/relationships/testResults](get-v1-cibuildactions-_id_-relationships-testresults.md)
 ### Objects
 - [object CiBuildAction](cibuildaction.md)
   The data structure that represents a Build Actions resource.
@@ -42,6 +46,10 @@ To update a workflow’s actions, use the [`Workflows`](workflows.md) resource.
   A response that contains a list of Issues resources.
 - [object CiTestResultsResponse](citestresultsresponse.md)
   A response that contains a list of Test Results resources.
+- [object CiBuildActionArtifactsLinkagesResponse](cibuildactionartifactslinkagesresponse.md)
+- [object CiBuildActionBuildRunLinkageResponse](cibuildactionbuildrunlinkageresponse.md)
+- [object CiBuildActionIssuesLinkagesResponse](cibuildactionissueslinkagesresponse.md)
+- [object CiBuildActionTestResultsLinkagesResponse](cibuildactiontestresultslinkagesresponse.md)
 
 ## See Also
 
@@ -57,4 +65,4 @@ To update a workflow’s actions, use the [`Workflows`](workflows.md) resource.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/build-actions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/build-actions)*

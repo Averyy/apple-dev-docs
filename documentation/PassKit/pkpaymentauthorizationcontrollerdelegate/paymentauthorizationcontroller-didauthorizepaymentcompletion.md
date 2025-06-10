@@ -1,6 +1,6 @@
 # paymentAuthorizationController(_:didAuthorizePayment:completion:)
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: method
 
 Tells the delegate that the user authorized the payment request, and asks for a result.

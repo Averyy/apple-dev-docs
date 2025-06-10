@@ -1,6 +1,6 @@
 # SunEvents
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 An enumeration that represents dates of solar events, including sunrise, sunset, dawn, and dusk.
@@ -55,6 +55,8 @@ struct SunEvents
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -8,8 +8,8 @@ Understand HTTP server-side errors and how to debug them.
 
 Apple’s HTTP APIs report transport errors and server-side errors:
 
-- A transport error occurs due to a problem getting your request to, or getting the response from, the server. This [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) value is typically passed to your completion handler block or to a delegate method like [`urlSession(_:task:didCompleteWithError:)`](https://developer.apple.com/documentation/foundation/urlsessiontaskdelegate/1411610-urlsession). If you get a transport error, investigate what is happening with your network traffic. To get started, read [`Choosing a Network Debugging Tool`](choosing-a-network-debugging-tool.md).
-- A server-side error occurs due to problems detected by the server. The [`statusCode`](https://developer.apple.com/documentation/foundation/httpurlresponse/1409395-statuscode) property of the [`HTTPURLResponse`](https://developer.apple.com/documentation/Foundation/HTTPURLResponse) contains the error.
+- A transport error occurs due to a problem getting your request to, or getting the response from, the server. This [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) value is typically passed to your completion handler block or to a delegate method like [`urlSession(_:task:didCompleteWithError:)`](https://developer.apple.com/documentation/Foundation/URLSessionTaskDelegate/urlSession(_:task:didCompleteWithError:)). If you get a transport error, investigate what is happening with your network traffic. To get started, read [`Choosing a Network Debugging Tool`](choosing-a-network-debugging-tool.md).
+- A server-side error occurs due to problems detected by the server. The [`statusCode`](https://developer.apple.com/documentation/Foundation/HTTPURLResponse/statusCode) property of the [`HTTPURLResponse`](https://developer.apple.com/documentation/Foundation/HTTPURLResponse) contains the error.
 
 The status codes returned by the server aren’t always easy to interpret (see Section 6, , of [`RFC 7231`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7231)) . Many HTTP server-side errors don’t give you a way to determine, from the client side, what went wrong. These include the 5xx errors (like ) and many 4xx errors (for example, with , it’s hard to know exactly why the server considers the request bad).
 
@@ -85,4 +85,4 @@ If you don’t have access to a working client, or you can’t get things to wor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Network/debugging-http-server-side-errors)*
+*[View on Apple Developer](https://developer.apple.com/documentation/network/debugging-http-server-side-errors)*

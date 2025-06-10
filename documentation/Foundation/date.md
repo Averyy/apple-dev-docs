@@ -139,7 +139,10 @@ The [`Date`](date.md) structure provides methods for comparing dates, calculatin
 - [struct ComponentsFormatStyle](date/componentsformatstyle.md)
   A style for formatting a date interval in terms of specific date components.
 - [struct FormatString](date/formatstring.md)
+- [struct HTTPFormatStyle](date/httpformatstyle.md)
+  Options for generating and parsing string representations of dates following the HTTP date format from [`RFC 9110 § 5.6.7`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc9110.html#http.date).
 - [struct ParseStrategy](date/parsestrategy.md)
+- [struct SystemClockDidChangeMessage](date/systemclockdidchangemessage.md)
 - [struct VerbatimFormatStyle](date/verbatimformatstyle.md)
   A style that formats a date with an explicitly-specified style.
 ### Initializers
@@ -173,6 +176,7 @@ The [`Date`](date.md) structure provides methods for comparing dates, calculatin
 - [PrimitivePlottableProtocol](../Charts/PrimitivePlottableProtocol.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Strideable](../Swift/Strideable.md)
 
 ## See Also

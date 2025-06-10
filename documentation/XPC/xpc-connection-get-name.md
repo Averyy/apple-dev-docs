@@ -1,6 +1,6 @@
 # xpc_connection_get_name(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the name of the remote service that creates the connection.

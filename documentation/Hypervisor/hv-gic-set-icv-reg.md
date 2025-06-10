@@ -24,8 +24,6 @@ ICV registers are only available when exception level 2 (EL2) is in an enabled s
 
 > ❗ **Important**:  Call this method on the owning thread.
 
- Call this method on the owning thread.
-
 ## Parameters
 
 - `vcpu`: The handle for the vCPU.

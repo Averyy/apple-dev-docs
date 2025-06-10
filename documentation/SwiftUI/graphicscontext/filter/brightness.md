@@ -26,7 +26,7 @@ A filter that applies a brightness adjustment.
 
 #### Discussion
 
-This filter is different than `brightness` filter primitive defined by the Scalable Vector Graphics (SVG) specification. You can obtain an effect like that filter using a [`grayscale(_:)`](graphicscontext/filter/grayscale(_:).md) color multiply. However, this filter does match the [`CIColorControls`](https://developer.apple.com/documentation/coreimage/cicolorcontrols) filter’s brightness adjustment.
+This filter is different than `brightness` filter primitive defined by the Scalable Vector Graphics (SVG) specification. You can obtain an effect like that filter using a [`grayscale(_:)`](graphicscontext/filter/grayscale(_:).md) color multiply. However, this filter does match the [`CIColorControls`](https://developer.apple.com/documentation/CoreImage/CIColorControls) filter’s brightness adjustment.
 
 ## Parameters
 

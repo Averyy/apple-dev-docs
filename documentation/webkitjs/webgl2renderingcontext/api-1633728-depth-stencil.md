@@ -1,6 +1,6 @@
 # DEPTH_STENCIL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

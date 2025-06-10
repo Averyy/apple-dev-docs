@@ -1,6 +1,6 @@
 # interfaceOffsetDidScrollToBottom()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Tells the interface controller that the user has scrolled to the bottom of the interface and that the scrolling animation has finished.

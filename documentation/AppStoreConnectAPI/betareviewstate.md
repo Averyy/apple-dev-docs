@@ -25,6 +25,7 @@ string BetaReviewState
 - [object BetaAppReviewSubmissionWithoutIncludesResponse](betaappreviewsubmissionwithoutincludesresponse.md)
 - [object BetaAppReviewSubmissionsResponse](betaappreviewsubmissionsresponse.md)
   A response that contains a list of Beta App Review Submission resources.
+- [object BetaAppReviewSubmissionBuildLinkageResponse](betaappreviewsubmissionbuildlinkageresponse.md)
 
 
 ---

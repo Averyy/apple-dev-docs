@@ -1,6 +1,6 @@
 # Signaling Changes for User-Driven Actions
 
-**Framework**: Fileprovider
+**Framework**: File Provider
 
 Signal the system about any changes created by an action.
 
@@ -29,4 +29,4 @@ For more information, see [`Tracking Your File Provider’s Changes`](tracking-y
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/signaling-changes-for-user-driven-actions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/signaling-changes-for-user-driven-actions)*

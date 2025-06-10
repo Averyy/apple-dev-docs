@@ -32,6 +32,10 @@ This group can’t move to the overflow menu. If there’s more than one item in
   Item groups to display in the trailing section of the navigation bar.
 - [var titleView: UIView?](uinavigationitem/titleview.md)
   A custom view that displays in the center of the navigation bar when the receiver is the top item.
+- [var subtitleView: UIView?](uinavigationitem/subtitleview.md)
+  A custom view to display below the title in the navigation bar.
+- [var largeSubtitleView: UIView?](uinavigationitem/largesubtitleview.md)
+  A custom view to display below the large title.
 - [var leftBarButtonItems: [UIBarButtonItem]?](uinavigationitem/leftbarbuttonitems.md)
   An array of custom bar button items to display on the left (or leading) side of the navigation bar when the navigation item is the top item.
 - [var leftBarButtonItem: UIBarButtonItem?](uinavigationitem/leftbarbuttonitem.md)

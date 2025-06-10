@@ -1,6 +1,6 @@
 # Deviation
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: enum
 
 Describes a comparison between two values in a trend.
@@ -58,6 +58,8 @@ enum Deviation
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

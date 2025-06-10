@@ -49,6 +49,7 @@ You can also read the [`layoutDirection`](environmentvalues/layoutdirection.md) 
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -58,6 +59,7 @@ You can also read the [`layoutDirection`](environmentvalues/layoutdirection.md) 
   A description of what should happen when the layout direction changes.
 - [var layoutDirection: LayoutDirection](environmentvalues/layoutdirection.md)
   The layout direction associated with the current environment.
+- [struct LayoutRotationUnaryLayout](layoutrotationunarylayout.md)
 
 
 ---

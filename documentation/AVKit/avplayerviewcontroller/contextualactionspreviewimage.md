@@ -1,6 +1,6 @@
 # contextualActionsPreviewImage
 
-**Framework**: Avkit  
+**Framework**: AVKit  
 **Kind**: property
 
 An image to show alongside the contextual actions.
@@ -41,4 +41,4 @@ Use this to enhance a contextual action with more context. For example, if the a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/avplayerviewcontroller/contextualactionspreviewimage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/avplayerviewcontroller/contextualactionspreviewimage)*

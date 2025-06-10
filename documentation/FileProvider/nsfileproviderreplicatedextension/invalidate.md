@@ -1,6 +1,6 @@
 # invalidate()
 
-**Framework**: Fileprovider  
+**Framework**: File Provider  
 **Kind**: method  
 **Required**: Yes
 

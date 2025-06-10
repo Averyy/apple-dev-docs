@@ -1,6 +1,6 @@
 # Watch Connectivity
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: module
 
 Implement two-way communication between an iOS app and its paired watchOS app.

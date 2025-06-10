@@ -1,6 +1,6 @@
 # Handling notification responses from APNs
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Respond to the status codes that the APNs servers return.
 

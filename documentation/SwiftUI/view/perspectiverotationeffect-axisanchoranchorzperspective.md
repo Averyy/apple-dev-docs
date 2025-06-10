@@ -38,8 +38,6 @@ Text("Rotation by passing an angle in degrees")
 
 > ❗ **Important**: To truly rotate a view in three dimensions, use a 3D rotation modifier without a perspective input like [`rotation3DEffect(_:axis:anchor:)`](view/rotation3deffect(_:axis:anchor:).md).
 
-To truly rotate a view in three dimensions, use a 3D rotation modifier without a perspective input like [`rotation3DEffect(_:axis:anchor:)`](view/rotation3deffect(_:axis:anchor:).md).
-
 ## Parameters
 
 - `angle`: The angle by which to rotate the view’s content.
@@ -59,7 +57,7 @@ To truly rotate a view in three dimensions, use a 3D rotation modifier without a
 - [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](view/scaleeffect(x:y:anchor:).md)
   Scales this view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](view/scaleeffect(x:y:z:anchor:).md)
-  Scales this view by the specified horizontal, vertical, and depth factors.
+  Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
 - [func aspectRatio(_:contentMode:)](view/aspectratio(_:contentmode:).md)
   Constrains this view’s dimensions to the specified aspect ratio.
 - [func rotationEffect(Angle, anchor: UnitPoint) -> some View](view/rotationeffect(_:anchor:).md)
@@ -73,7 +71,7 @@ To truly rotate a view in three dimensions, use a 3D rotation modifier without a
 - [func transformEffect(CGAffineTransform) -> some View](view/transformeffect(_:).md)
   Applies an affine transformation to this view’s rendered output.
 - [func transform3DEffect(AffineTransform3D) -> some View](view/transform3deffect(_:).md)
-  Applies a 3D transformation to the receiver.
+  Applies a 3D transformation to this view’s rendered output.
 - [func projectionEffect(ProjectionTransform) -> some View](view/projectioneffect(_:).md)
   Applies a projection transformation to this view’s rendered output.
 - [struct ProjectionTransform](projectiontransform.md)

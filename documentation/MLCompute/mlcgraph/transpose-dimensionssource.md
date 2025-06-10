@@ -1,6 +1,6 @@
 # transpose(dimensions:source:)
 
-**Framework**: Mlcompute  
+**Framework**: ML Compute  
 **Kind**: method
 
 Adds a new transpose layer to the graph using the dimensions and source tensor you specify.

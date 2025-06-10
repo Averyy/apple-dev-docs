@@ -1,6 +1,6 @@
 # item(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the web history item that corresponds to the specified web location.

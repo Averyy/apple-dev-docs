@@ -13,6 +13,7 @@ A Boolean value that indicates whether the list item cell shows a disclosure ind
 ## Declaration
 
 ```swift
+@MainActor
 var showsDisclosureIndicator: Bool { get }
 ```
 

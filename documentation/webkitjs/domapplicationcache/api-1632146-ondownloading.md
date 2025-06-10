@@ -1,6 +1,6 @@
 # ondownloading
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 Sent when the update process begins downloading resources in the manifest file.

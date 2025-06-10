@@ -1,6 +1,6 @@
 # HKAttachment
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: class
 
 A file that is attached to a sample in the HealthKit store.
@@ -109,6 +109,7 @@ do {
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -126,4 +127,4 @@ do {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkattachment)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkattachment)*

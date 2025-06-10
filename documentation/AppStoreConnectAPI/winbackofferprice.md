@@ -38,6 +38,8 @@ object WinBackOfferPrice
   A response that contains a list of win-back offer resources.
 - [object IntegerRange](integerrange.md)
   Describe the upper and lower integer bound of the attribute.
+- [object WinBackOfferPricesLinkagesResponse](winbackofferpriceslinkagesresponse.md)
+- [object SubscriptionWinBackOffersLinkagesResponse](subscriptionwinbackofferslinkagesresponse.md)
 
 
 ---

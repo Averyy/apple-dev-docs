@@ -1,6 +1,6 @@
 # XCTest
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An abstract base class for creating, managing, and executing tests.

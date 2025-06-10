@@ -1,6 +1,6 @@
 # Visualizing and interacting with a reconstructed scene
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Estimate the shape of the physical environment using a polygonal mesh.
 
@@ -214,7 +214,7 @@ if model.collision == nil {
 }
 ```
 
-When this app classifies an object and displays some text, it waits three seconds before dropping the virtual text. When the sample sets the text’s [`physicsBody`](https://developer.apple.com/documentation/RealityKit/ModelEntity/physicsBody)’s [`mode`](https://developer.apple.com/documentation/RealityKit/PhysicsBodyComponent/mode) to [`PhysicsBodyMode.dynamic`](https://developer.apple.com/documentation/RealityKit/PhysicsBodyMode/dynamic), the text reacts to gravity by falling.
+When this app classifies an object and displays some text, it waits three seconds before dropping the virtual text. When the sample sets the text’s doc://com.apple.documentation/documentation/realitykit/modelentity/physicsBody’s [`mode`](https://developer.apple.com/documentation/RealityKit/PhysicsBodyComponent/mode) to [`PhysicsBodyMode.dynamic`](https://developer.apple.com/documentation/RealityKit/PhysicsBodyMode/dynamic), the text reacts to gravity by falling.
 
 ```swift
 Timer.scheduledTimer(withTimeInterval: seconds, repeats: false) { (timer) in
@@ -238,4 +238,4 @@ As the text falls, it reacts when colliding with a meshed, real-world object, su
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/visualizing-and-interacting-with-a-reconstructed-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/visualizing-and-interacting-with-a-reconstructed-scene)*

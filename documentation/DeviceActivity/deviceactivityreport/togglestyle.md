@@ -1,6 +1,6 @@
 # toggleStyle(_:)
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Sets the style for toggles in a view hierarchy.

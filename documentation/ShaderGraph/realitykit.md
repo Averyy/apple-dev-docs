@@ -55,7 +55,7 @@ Incorporate RealityKit-specific content into your graph and modify that content 
 - [Environment Radiance (RealityKit)](realitykit/environment-radiance-(realitykit).md)
   Returns an environment’s diffuse and specular radiance value based on real-world environment, and an IBL map that is either a developer-provided map or a default map.
 - [Hover State (RealityKit)](realitykit/hover-state-(realitykit).md)
-  Hover State to define custom hover effects
+  Hover State to define custom hover effects.
 - [Blurred Background (RealityKit)](realitykit/blurred-background-(realitykit).md)
   Returns a sample of the blurred background.
 - [Geometry Modifier (RealityKit)](realitykit/geometry-modifier-(realitykit).md)
@@ -83,33 +83,68 @@ Incorporate RealityKit-specific content into your graph and modify that content 
 - [Image 2D Read (RealityKit)](realitykit/image-2d-read-(realitykit).md)
   Direct texture read.
 - [Image 3D (RealityKit)](realitykit/image-3d-(realitykit).md)
-  A texture with RealityKit properties. Adjustable level of detail.
+  A texture with RealityKit properties.
 - [Image 3D LOD (RealityKit)](realitykit/image-3d-lod-(realitykit).md)
-  A texture with RealityKit properties. Explicit level of detail.
+  A texture with RealityKit properties.
 - [Image 3D Gradient (RealityKit)](realitykit/image-3d-gradient-(realitykit).md)
-  A texture with RealityKit properties. Level of detail gradient.
+  A texture with RealityKit properties.
 - [Image 3D Pixel (RealityKit)](realitykit/image-3d-pixel-(realitykit).md)
-  A texture with RealityKit properties. Adjustable level of detail. Pixel texture coordinates.
+  A texture with RealityKit properties.
 - [Image 3D LOD Pixel (RealityKit)](realitykit/image-3d-lod-pixel-(realitykit).md)
-  A texture with RealityKit properties. Explicit level of detail. Pixel texture coordinates.
+  A texture with RealityKit properties.
 - [Image 3D Gradient Pixel (RealityKit)](realitykit/image-3d-gradient-pixel-(realitykit).md)
-  A texture with RealityKit properties. Level of detail gradient. Pixel texture coordinates.
+  A texture with RealityKit properties.
 - [Image 2D Array (RealityKit)](realitykit/image-2d-array-(realitykit).md)
-  A texture with RealityKit properties. Adjustable level of detail.
+  A texture with RealityKit properties.
 - [Image 2D Array LOD (RealityKit)](realitykit/image-2d-array-lod-(realitykit).md)
-  A texture with RealityKit properties. Explicit level of detail.
+  A texture with RealityKit properties.
 - [Image 2D Array Gradient (RealityKit)](realitykit/image-2d-array-gradient-(realitykit).md)
-  A texture with RealityKit properties. Level of detail gradient.
+  A texture with RealityKit properties.
 - [Image 2D Array Pixel (RealityKit)](realitykit/image-2d-array-pixel-(realitykit).md)
-  A texture with RealityKit properties. Adjustable level of detail. Pixel texture coordinates.
+  A texture with RealityKit properties.
 - [Image 2D Array LOD Pixel (RealityKit)](realitykit/image-2d-array-lod-pixel-(realitykit).md)
-  A texture with RealityKit properties. Explicit level of detail. Pixel texture coordinates.
+  A texture with RealityKit properties.
 - [Image 2D Array Gradient Pixel (RealityKit)](realitykit/image-2d-array-gradient-pixel-(realitykit).md)
-  A texture with RealityKit properties. Level of detail gradient. Pixel texture coordinates.
+  A texture with RealityKit properties.
 - [Image 2D Array Read (RealityKit)](realitykit/image-2d-array-read-(realitykit).md)
   Direct texture read.
 - [Image 3D Read (RealityKit)](realitykit/image-3d-read-(realitykit).md)
   Direct texture read.
+- [Screen-Space X Partial Derivative (RealityKit)](realitykit/screen-space-x-partial-derivative-(realitykit).md)
+  Returns a high-precision partial derivative of the specified value with respect to the screen space X coordinate.
+- [Screen-Space Y Partial Derivative (RealityKit)](realitykit/screen-space-y-partial-derivative-(realitykit).md)
+  Returns a high-precision partial derivative of the specified value with respect to the screen space Y coordinate.
+- [Absolute Derivatives Sum (RealityKit)](realitykit/absolute-derivatives-sum-(realitykit).md)
+  Returns the sum of the absolute derivatives in X and Y using local differencing for p; that is, fabs(dfdx(p)) + fabs(dfdy(p)).
+- [Power Positive (RealityKit)](realitykit/power-positive-(realitykit).md)
+  Computes X to the power of Y, where X is >= 0.
+- [Round Integral (RealityKit)](realitykit/round-integral-(realitykit).md)
+  Rounds X to integral value using round ties to even rounding mode in floating-point format.
+- [Reflection Diffuse (RealityKit)](realitykit/reflection-diffuse-(realitykit).md)
+  Diffuse component of reflection.
+- [Reflection Specular (RealityKit)](realitykit/reflection-specular-(realitykit).md)
+  Specular component of reflection.
+- [Fortran Difference and Minimum (RealityKit)](realitykit/fortran-difference-and-minimum-(realitykit).md)
+  Returns X – Y if X > Y, or +0 if X <= Y.
+- [Is Finite (RealityKit)](realitykit/is-finite-(realitykit).md)
+  Returns true if the incoming value is finite.
+- [Is Infinite (RealityKit)](realitykit/is-infinite-(realitykit).md)
+  Returns true if the incoming value is infinite.
+- [Is Not a Number (RealityKit)](realitykit/is-not-a-number-(realitykit).md)
+  Returns true if the incoming value is a not a number (NaN).
+- [Is Normal (RealityKit)](realitykit/is-normal-(realitykit).md)
+  Test if the incoming value is a normalized floating-point value.
+- [Is Ordered (RealityKit)](realitykit/is-ordered-(realitykit).md)
+  Test if arguments are ordered.
+- [Is Unordered (RealityKit)](realitykit/is-unordered-(realitykit).md)
+  Test if arguments are unordered.
+- [Sign Bit (RealityKit)](realitykit/sign-bit-(realitykit).md)
+  Tests for sign bit.
+### Subscripts
+- [Multiply 24 (RealityKit)](realitykit/multiply-24-(realitykit).md)
+  Multiplies two 24-bit integer values X and Y and returns the 32-bit integer result.
+- [Multiply Add 24 (RealityKit)](realitykit/multiply-add-24-(realitykit).md)
+  Multiplies two 24-bit integer values X and Y and returns the 32-bit integer result with 32-bit Z value added.
 
 ## See Also
 

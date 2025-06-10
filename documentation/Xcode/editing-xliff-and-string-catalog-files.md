@@ -22,7 +22,7 @@ To find the user-facing strings that need translation, including the app name, s
 
 ##### Group Related Strings Using Tables
 
-If you specify a table name when you internationalize your code — in other words, if you use the `Text` [`init(_:tableName:bundle:comment:)`](https://developer.apple.com/documentation/SwiftUI/Text/init(_:tableName:bundle:comment:)) method or the [`NSLocalizedString(_:tableName:bundle:value:comment:)`](https://developer.apple.com/documentation/foundation/1418095-nslocalizedstring) function with the `tableName` parameter — Xcode groups the strings into separate `<file>` elements with `[table name].strings` as the filename. If you don’t specify a table name, Xcode uses the default `Localizable.strings` as the filename.
+If you specify a table name when you internationalize your code — in other words, if you use the `Text` [`init(_:tableName:bundle:comment:)`](https://developer.apple.com/documentation/SwiftUI/Text/init(_:tableName:bundle:comment:)) method or the [`NSLocalizedString(_:tableName:bundle:value:comment:)`](https://developer.apple.com/documentation/Foundation/NSLocalizedString(_:tableName:bundle:value:comment:)) function with the `tableName` parameter — Xcode groups the strings into separate `<file>` elements with `[table name].strings` as the filename. If you don’t specify a table name, Xcode uses the default `Localizable.strings` as the filename.
 
 When you import the localizations, Xcode adds a version of the strings file for each localization to your project. In the following SwiftUI code listing, the first `Text` string appears in the default `Localized.strings` file while the Button label that specifies a table name appears in the `Buttons.strings` file:
 

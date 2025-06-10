@@ -1,6 +1,6 @@
 # DEPTH_ATTACHMENT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

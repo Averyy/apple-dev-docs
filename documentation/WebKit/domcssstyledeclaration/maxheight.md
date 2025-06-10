@@ -1,6 +1,6 @@
 # maxHeight()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

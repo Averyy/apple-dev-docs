@@ -1,6 +1,6 @@
 # sourceCodeContext
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The source code location for the issue, including the filename, line number, and call stack.

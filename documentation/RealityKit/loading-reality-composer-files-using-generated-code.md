@@ -47,8 +47,6 @@ do {
 
 > ❗ **Important**: Use RealityKit’s synchronous loading methods from the main thread only. RealityKit throws a runtime exception if you attempt to use it from any other thread. If you need to load a scene on a background thread, use asynchronous loading instead.
 
-Use RealityKit’s synchronous loading methods from the main thread only. RealityKit throws a runtime exception if you attempt to use it from any other thread. If you need to load a scene on a background thread, use asynchronous loading instead.
-
 ##### Show the Scene
 
 After you load the Reality Composer scene, you display it to the user by adding it to the scene anchors of an [`ARView`](arview.md). Reality Composer scenes contain anchoring information, which allows RealityKit to automatically find an appropriate surface, object, or image, and anchor your scene to it. For example, RealityKit automatically places a horizontally anchored scene as soon as ARKit detects a flat horizontal surface. Similarly, it displays a scene with an image anchor when ARKit detects the specified image at the correct size.

@@ -23,9 +23,7 @@ func subscribe()
 
 Call the [`subscribe()`](subscriptionstorecontrolstyleconfiguration/option/subscribe().md) method within your custom style when the customer chooses to make a purchase.
 
-> ❗ **Important**:  Don’t call purchase methods, such as `Product/purchase(confirmIn:options:)`, on the [`subscription`](subscriptionstorecontrolstyleconfiguration/option/subscription.md) property from your custom style.
-
- Don’t call purchase methods, such as `Product/purchase(confirmIn:options:)`, on the [`subscription`](subscriptionstorecontrolstyleconfiguration/option/subscription.md) property from your custom style.
+> ❗ **Important**:  Don’t call purchase methods, such as [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-8eai6.md), on the [`subscription`](subscriptionstorecontrolstyleconfiguration/option/subscription.md) property from your custom style.
 
 
 ---

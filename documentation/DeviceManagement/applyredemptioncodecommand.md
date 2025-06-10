@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to send a redemption code to complete installation of an app on a device.
+The command to complete the installation of an app using a redemption code.
 
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,9 +17,9 @@ object ApplyRedemptionCodeCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object ApplyRedemptionCodeCommand.Command](applyredemptioncodecommand/command-data.dictionary.md)
-  The request dictionary to send a redemption code to complete installation of an app.
+  The command to complete the installation of an app using a redemption code.
 
 ## See Also
 

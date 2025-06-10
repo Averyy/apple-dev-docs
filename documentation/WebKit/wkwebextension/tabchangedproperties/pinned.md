@@ -1,6 +1,6 @@
 # pinned
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the pinned state changed.

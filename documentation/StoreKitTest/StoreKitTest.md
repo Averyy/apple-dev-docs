@@ -1,6 +1,6 @@
 # StoreKit Test
 
-**Framework**: Storekittest  
+**Framework**: StoreKit Test  
 **Kind**: module
 
 Create and automate tests in Xcode for your app’s subscription and in-app purchase transactions, and SKAdNetwork implementations.

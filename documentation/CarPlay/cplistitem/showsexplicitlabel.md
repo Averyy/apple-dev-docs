@@ -13,6 +13,7 @@ A Boolean value that determines whether the list item displays its explicit cont
 ## Declaration
 
 ```swift
+@MainActor
 var showsExplicitLabel: Bool { get set }
 ```
 

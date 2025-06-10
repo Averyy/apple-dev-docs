@@ -71,7 +71,7 @@ Xcode automatically registers the iCloud container in your developer account, ad
 
 After selecting the required containers, update your app to perform one or more of following:
 
-- For document-based apps, call [`url(forUbiquityContainerIdentifier:)`](https://developer.apple.com/documentation/foundation/filemanager/1411653-url) to determine the location of your app’s ubiquity container.
+- For document-based apps, call [`url(forUbiquityContainerIdentifier:)`](https://developer.apple.com/documentation/Foundation/FileManager/url(forUbiquityContainerIdentifier:)) to determine the location of your app’s ubiquity container.
 - For CloudKit apps, use [`init(identifier:)`](https://developer.apple.com/documentation/CloudKit/CKContainer/init(identifier:)) to initialize an instance of [`CKContainer`](https://developer.apple.com/documentation/CloudKit/CKContainer) that provides access to the container’s databases and executes operations against those databases.
 - For Core Data apps that sync with CloudKit, use [`NSPersistentCloudKitContainerOptions`](https://developer.apple.com/documentation/CoreData/NSPersistentCloudKitContainerOptions) to configure your Core Data stack to use your new container.
 
@@ -96,4 +96,4 @@ Alternatively, you can access the console directly at [`icloud.developer.apple.c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-icloud-services)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-icloud-services)*

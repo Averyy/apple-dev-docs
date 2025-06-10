@@ -1,6 +1,6 @@
 # execCommand(_:userInterface:value:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

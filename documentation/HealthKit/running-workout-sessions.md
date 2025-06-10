@@ -1,6 +1,6 @@
 # Running workout sessions
 
-**Framework**: Healthkit
+**Framework**: HealthKit
 
 Track a workout on Apple Watch.
 
@@ -59,7 +59,7 @@ configuration.locationType = .outdoor
 
 Use the configuration to set the type of activity and the location for the workout. Apple Watch optimizes both the sensors and the calorimetry based on the configuration.
 
-For example, while the session runs, Apple Watch automatically saves active energy-burned samples to the HealthKit store. HealthKit provides optimized calorie calculations for some activities. These include, but are not limited to, run, walk, cycle, stair-climbing, elliptical, and rowing activities. Furthermore, the calculations for activities may differ between indoor and outdoor locations. For all other activities, the system estimates calories based on the data from Apple Watch’s sensors. Depending on the activity, this rate is either never lower than the brisk walk burn rate or never lower than the brisk walk burn rate when moving.
+For example, while the session runs, Apple Watch automatically saves active energy-burned samples to the HealthKit store. HealthKit provides optimized calorie calculations for run, walk, cycle, stair-climbing, elliptical, and rowing activities. Furthermore, the calculations for run, walk, and cycle activities differ between indoor and outdoor locations. For all other activities, the system estimates calories based on the data from Apple Watch’s sensors. This rate is never lower than the brisk walk burn rate.
 
 Next, use the configuration to create your workout session and get a reference to the session’s [`HKLiveWorkoutBuilder`](hkliveworkoutbuilder.md) object.
 
@@ -210,6 +210,8 @@ As soon as you receive the session object, you must access its builder and set u
   Create your own workout app, quickly and easily, with HealthKit and SwiftUI.
 - [Building a multidevice workout app](building-a-multidevice-workout-app.md)
   Mirror a workout from a watchOS app to its companion iOS app, and perform bidirectional communication between them.
+- [Building a workout app for iPhone and iPad](building-a-workout-app-for-iphone-and-ipad.md)
+  Start a workout in iOS, control it from the Lock Screen with App Intents, and present the workout status with Live Activities.
 - [class HKWorkoutSession](hkworkoutsession.md)
   A session that tracks the user’s workout on Apple Watch.
 - [class HKWorkoutConfiguration](hkworkoutconfiguration.md)
@@ -224,4 +226,4 @@ As soon as you receive the session object, you must access its builder and set u
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/running-workout-sessions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/running-workout-sessions)*

@@ -1,6 +1,6 @@
 # isLoss(for:)
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: method
 
 Returns a Boolean value indicating whether the specified player has lost the game.

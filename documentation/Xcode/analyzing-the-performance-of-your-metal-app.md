@@ -143,4 +143,4 @@ For example, if you have a rendering algorithm that needs the result from a comp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/analyzing-the-performance-of-your-metal-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/analyzing-the-performance-of-your-metal-app)*

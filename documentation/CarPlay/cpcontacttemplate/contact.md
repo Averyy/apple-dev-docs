@@ -13,6 +13,7 @@ The contact that the template displays.
 ## Declaration
 
 ```swift
+@MainActor
 var contact: CPContact { get set }
 ```
 

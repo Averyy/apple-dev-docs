@@ -32,6 +32,7 @@ The context encapsulates states that are known when Swift Package Manager interp
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

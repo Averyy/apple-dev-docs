@@ -22,8 +22,6 @@ CarPlay calls this method after it disconnects the scene. You can use it to perf
 
 > ❗ **Important**:  CarPlay calls this method exclusively for navigation apps. All other categories of apps must implement [`templateApplicationScene(_:didDisconnectInterfaceController:)`](cptemplateapplicationscenedelegate/templateapplicationscene(_:diddisconnectinterfacecontroller:).md) instead.
 
- CarPlay calls this method exclusively for navigation apps. All other categories of apps must implement [`templateApplicationScene(_:didDisconnectInterfaceController:)`](cptemplateapplicationscenedelegate/templateapplicationscene(_:diddisconnectinterfacecontroller:).md) instead.
-
 ## Parameters
 
 - `templateApplicationScene`: The scene disconnecting from the app.

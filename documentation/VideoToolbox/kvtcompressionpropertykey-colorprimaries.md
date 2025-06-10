@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_ColorPrimaries
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The color primaries for compressed content.

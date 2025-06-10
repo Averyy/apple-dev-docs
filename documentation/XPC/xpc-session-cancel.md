@@ -1,6 +1,6 @@
 # xpc_session_cancel(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 **Availability**:

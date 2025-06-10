@@ -1,6 +1,6 @@
 # xpc_dictionary_dup_fd(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates a file descriptor from a dictionary directly.

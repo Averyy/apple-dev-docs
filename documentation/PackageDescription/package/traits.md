@@ -14,6 +14,11 @@ The set of traits of this package.
 final var traits: Set<Trait>
 ```
 
+## See Also
+
+- [struct Trait](trait.md)
+  A struct representing a package’s trait.
+
 
 ---
 

@@ -1,6 +1,6 @@
 # identifier
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A string that identifies a provider.

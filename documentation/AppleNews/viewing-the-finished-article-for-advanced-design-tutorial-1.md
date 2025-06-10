@@ -1,6 +1,6 @@
 # Viewing the Finished Article for Advanced Design Tutorial 1
 
-**Framework**: Applenews
+**Framework**: Apple News
 
 See the full JSON code from this tutorial.
 
@@ -490,4 +490,4 @@ You can copy this template (which is also the `article.json` file in `News_Desig
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/viewing-the-finished-article-for-advanced-design-tutorial-1)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applenews/viewing-the-finished-article-for-advanced-design-tutorial-1)*

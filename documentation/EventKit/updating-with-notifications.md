@@ -1,6 +1,6 @@
 # Updating with notifications
 
-**Framework**: Eventkit
+**Framework**: EventKit
 
 Register for notifications about changes and keep your app up to date.
 
@@ -35,8 +35,8 @@ Because your local data is often invalidated or incomplete when a change occurs 
   Create and modify events and reminders in a person’s database.
 - [Retrieving events and reminders](retrieving-events-and-reminders.md)
   Fetch events and reminders from the Calendar database.
-- [Managing Location-Based Reminders](managing-location-based-reminders.md)
-  Add, fetch, complete, remove, and sort location-based reminders in your app.
+- [Managing location-based reminders](managing-location-based-reminders.md)
+  Access reminders set up with geofence-enabled alarms on a person’s calendars.
 - [class EKEvent](ekevent.md)
   A class that represents an event in a calendar.
 - [class EKReminder](ekreminder.md)
@@ -45,4 +45,4 @@ Because your local data is often invalidated or incomplete when a change occurs 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/EventKit/updating-with-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/eventkit/updating-with-notifications)*

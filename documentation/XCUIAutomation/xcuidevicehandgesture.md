@@ -1,6 +1,6 @@
 # XCUIDeviceHandGesture
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: enum
 
 A hand gesture on a watchOS device.
@@ -34,6 +34,7 @@ enum XCUIDeviceHandGesture
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

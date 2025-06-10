@@ -39,8 +39,6 @@ The decoded payload of the [`jwsRepresentation`](verificationresult/jwsrepresent
 
 > ❗ **Important**:  The decoded payloads of [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) and [`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSTransaction) strings contain [`price`](https://developer.apple.com/documentation/AppStoreServerAPI/price) or [`renewalPrice`](https://developer.apple.com/documentation/AppStoreServerAPI/renewalPrice) fields specified in  of the currency.  StoreKit represents the `price` and [`renewalPrice`](product/subscriptioninfo/renewalinfo/renewalprice.md) values in is  of the currency. Take care not to confuse these two representations when working with both APIs.
 
- The decoded payloads of [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) and [`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSTransaction) strings contain [`price`](https://developer.apple.com/documentation/AppStoreServerAPI/price) or [`renewalPrice`](https://developer.apple.com/documentation/AppStoreServerAPI/renewalPrice) fields specified in  of the currency.  StoreKit represents the `price` and [`renewalPrice`](product/subscriptioninfo/renewalinfo/renewalprice.md) values in is  of the currency. Take care not to confuse these two representations when working with both APIs.
-
 ## Topics
 
 ### Getting the verification results
@@ -120,6 +118,7 @@ The decoded payload of the [`jwsRepresentation`](verificationresult/jwsrepresent
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

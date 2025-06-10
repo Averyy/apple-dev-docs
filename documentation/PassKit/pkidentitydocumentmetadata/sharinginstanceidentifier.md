@@ -3,6 +3,8 @@
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property
 
+A unique identifier that refers to an instance of sharing credentials to a person’s device that another user, device, or the web initiates.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -15,13 +17,6 @@
 ```swift
 var sharingInstanceIdentifier: String { get }
 ```
-
-## See Also
-
-- [var cardConfigurationIdentifier: String](pkidentitydocumentmetadata/cardconfigurationidentifier.md)
-- [var cardTemplateIdentifier: String](pkidentitydocumentmetadata/cardtemplateidentifier.md)
-- [var credentialIdentifier: String](pkidentitydocumentmetadata/credentialidentifier.md)
-- [var serverEnvironmentIdentifier: String](pkidentitydocumentmetadata/serverenvironmentidentifier.md)
 
 
 ---

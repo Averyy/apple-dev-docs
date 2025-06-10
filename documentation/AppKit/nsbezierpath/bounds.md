@@ -18,7 +18,7 @@ var bounds: NSRect { get }
 
 This property contains the rectangle that encloses the path of the receiver. If the path contains curve segments, the bounding box encloses the curve but may not enclose the control points used to calculate the curve.
 
-If the path is empty, accessing this property raises [`genericException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1412113-genericexception).
+If the path is empty, accessing this property raises [`genericException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/genericException).
 
 ## See Also
 

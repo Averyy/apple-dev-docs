@@ -1,6 +1,6 @@
 # expectation(description:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Creates a new expectation with an associated description.

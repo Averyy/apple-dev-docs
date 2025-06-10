@@ -36,20 +36,30 @@ struct Axis3D
 ### Inspecting the axis
 - [var rawValue: UInt32](axis3d/rawvalue.md)
   The corresponding value of the raw type.
+### Default Implementations
+- [Decodable Implementations](axis3d/decodable-implementations.md)
+- [Encodable Implementations](axis3d/encodable-implementations.md)
+- [Hashable Implementations](axis3d/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Copyable](../Swift/Copyable.md)
+- [Decodable](../Swift/Decodable.md)
+- [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [struct Vector3D](vector3d.md)
   A three-element vector.
+- [struct Vector3DFloat](vector3dfloat.md)
+  A single-precision structure that defines a three-element vector
 
 
 ---

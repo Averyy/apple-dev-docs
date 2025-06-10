@@ -1,6 +1,6 @@
 # ControlInfo
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 A structure that contains information about user-configured controls.
@@ -8,7 +8,9 @@ A structure that contains information about user-configured controls.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # clearRect
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Clears the specified rectangle to transparent black—RGBa(0,0,0,0).

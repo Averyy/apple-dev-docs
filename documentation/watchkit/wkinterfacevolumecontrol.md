@@ -1,6 +1,6 @@
 # WKInterfaceVolumeControl
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface element that provides control of the audio volume from the watch or a paired iPhone.

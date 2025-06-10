@@ -1,6 +1,6 @@
 # setHuggingPriority(_:for:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Sets the Auto Layout priority for the stack view to minimize its size, for a specified user interface axis.

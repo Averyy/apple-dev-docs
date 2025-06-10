@@ -1,6 +1,6 @@
 # WeatherCondition.freezingRain
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Freezing rain.

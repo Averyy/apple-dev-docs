@@ -41,6 +41,15 @@ CSR format data can be simulated by using a blockSize of `1` and setting the tra
 - [var rowCount: Int32](sparsematrixstructurecomplex/rowcount.md)
 - [var rowIndices: UnsafeMutablePointer<Int32>](sparsematrixstructurecomplex/rowindices.md)
 
+## See Also
+
+- [struct SparseMatrix_Complex_Double](sparsematrix_complex_double.md)
+  A type representing a sparse complex matrix.
+- [struct SparseMatrix_Complex_Float](sparsematrix_complex_float.md)
+  A type representing a sparse complex matrix.
+- [struct SparseAttributesComplex_t](sparseattributescomplex_t.md)
+  A type representing the attributes of a matrix.
+
 
 ---
 

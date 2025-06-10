@@ -75,6 +75,7 @@ Use these keys with the methods [`object(forKey:)`](nslocale/object(forkey:).md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

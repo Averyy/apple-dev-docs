@@ -1,6 +1,6 @@
 # beginUpdates()
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Begins a group of updates for the table view.

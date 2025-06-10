@@ -23,8 +23,6 @@ class PKPaymentInformationEventExtension
 
 > ❗ **Important**:  Before you can add a QR purchase extension you need an entitlement from Apple. For more information on requesting an entitlement, contact apple-pay-inquiries@apple.com.
 
- Before you can add a QR purchase extension you need an entitlement from Apple. For more information on requesting an entitlement, contact apple-pay-inquiries@apple.com.
-
 ## Relationships
 
 ### Inherits From

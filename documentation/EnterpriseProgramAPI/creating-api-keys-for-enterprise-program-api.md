@@ -12,8 +12,6 @@ An API key has two parts: a public portion that Apple keeps, and a private key t
 
 > ❗ **Important**:  Secure your private keys as you do for other credentials, such as usernames and passwords. If you suspect a private key is compromised, immediately revoke the key in the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com). See [`Revoking API Keys`](revoking-api-keys.md) for details.
 
- Secure your private keys as you do for other credentials, such as usernames and passwords. If you suspect a private key is compromised, immediately revoke the key in the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com). See [`Revoking API Keys`](revoking-api-keys.md) for details.
-
 Enterprise Program API keys are unique to the Enterprise Program API and you can’t use them for other Apple services.
 
 ##### Generate a Enterprise Program Api Key and Assign It a Role
@@ -44,8 +42,6 @@ Once you’ve generated your API key, you can download the private half of the k
 The download link only appears if you haven’t downloaded the private key. Apple doesn’t keep a copy of the private key.
 
 > ❗ **Important**:  Keep your API keys secure and private. Don’t share your keys, store keys in a code repository, or include keys in client-side code. If the key becomes lost or compromised, remember to revoke it immediately. See [`Revoking API Keys`](revoking-api-keys.md) for more information.
-
- Keep your API keys secure and private. Don’t share your keys, store keys in a code repository, or include keys in client-side code. If the key becomes lost or compromised, remember to revoke it immediately. See [`Revoking API Keys`](revoking-api-keys.md) for more information.
 
 ## See Also
 

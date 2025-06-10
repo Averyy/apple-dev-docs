@@ -1,6 +1,6 @@
 # multilineTextAlignment(_:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Sets the alignment of a text view that contains multiple lines of text.

@@ -44,6 +44,7 @@ To create a move equipment action, use the [`moveEquipment(_:childOf:order:pose:
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TabletopAction](tabletopaction.md)
 
 ## See Also

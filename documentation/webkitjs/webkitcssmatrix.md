@@ -1,6 +1,6 @@
 # WebKitCSSMatrix
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 `WebKitCSSMatrix` objects represent a 4x4 homogeneous matrix for 3D transforms or a vector for 2D transforms. You can use these objects to manipulate matrices in JavaScript. For example, you can multiply, translate, and scale matrices.

@@ -1,6 +1,6 @@
 # Testing purchases made outside your app
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Verify that your app receives and handles transactions that occur outside your app, such as subscription purchases, renewals, and offer and promo code redemptions.
 
@@ -66,4 +66,4 @@ Restart your app. The purchase history for the Sandbox Apple Account is empty an
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/testing-purchases-made-outside-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/testing-purchases-made-outside-your-app)*

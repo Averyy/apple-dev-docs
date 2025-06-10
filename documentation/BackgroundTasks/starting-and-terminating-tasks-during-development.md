@@ -10,8 +10,6 @@ The delay between the time you schedule a background task and when the system la
 
 > ❗ **Important**: Use private functions only during development. Including a reference to these functions in apps submitted to the App Store is cause for rejection.
 
-Use private functions only during development. Including a reference to these functions in apps submitted to the App Store is cause for rejection.
-
 ##### Launch a Task
 
 To launch a task:
@@ -38,15 +36,6 @@ To force termination of a task:
 ```other
 e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateExpirationForTaskWithIdentifier:@"TASK_IDENTIFIER"]
 ```
-
-## See Also
-
-- [class BGTaskScheduler](bgtaskscheduler.md)
-  A class for scheduling task requests that launch your app in the background.
-- [Refreshing and Maintaining Your App Using Background Tasks](refreshing-and-maintaining-your-app-using-background-tasks.md)
-  Use scheduled background tasks for refreshing your app content and for performing maintenance.
-- [Choosing Background Strategies for Your App](choosing-background-strategies-for-your-app.md)
-  Select the best method of scheduling background runtime for your app.
 
 
 ---

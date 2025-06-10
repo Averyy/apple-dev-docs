@@ -1,4 +1,4 @@
-# Tip.Status
+# Status
 
 **Framework**: TipKit  
 **Kind**: typealias

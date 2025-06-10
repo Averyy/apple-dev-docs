@@ -29,8 +29,8 @@ HealthKit uses category samples to represent data that can be classified into a 
 
 ## Parameters
 
-- `type`: The category type for this sample. For a complete list, see  .
-- `value`: The value for this sample. This value must come from the appropriate category value enumeration. Each category type uses its own enumeration. For more information, see  .
+- `type`: The category type for this sample. For a complete list, see Category Type Identifiers in  .
+- `value`: The value for this sample. This value must come from the appropriate category value enumeration. Each category type uses its own enumeration. For more information, see Category Type Identifiers in  .
 - `startDate`: The start date for the sample. This must be equal to or earlier than the end date; otherwise, this method throws an exception ( ).
 - `endDate`: The end date for the sample. This must be equal to or later than the start date; otherwise, this method throws an exception ( ).
 

@@ -33,6 +33,7 @@ You can use [`uncached(_:)`](uideferredmenuelement/uncached(_:).md) to initializ
 
 - [class func uncached((([UIMenuElement]) -> Void) -> Void) -> Self](uideferredmenuelement/uncached(_:).md)
   Returns a placeholder menu element that the system replaces with the result of the provider’s completion handler.
+- [class func usingFocus(identifier: UIDeferredMenuElement.Identifier, shouldCacheItems: Bool) -> Self](uideferredmenuelement/usingfocus(identifier:shouldcacheitems:).md)
 
 
 ---

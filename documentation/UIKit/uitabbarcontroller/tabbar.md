@@ -25,6 +25,10 @@ You should never attempt to manipulate the [`UITabBar`](uitabbar.md) object itse
 
 The tab bar view provided by this property is only for situations where you want to display an action sheet using the [`show(from:)`](uiactionsheet/show(from:)-9i3tw.md) method of the [`UIActionSheet`](uiactionsheet.md) class.
 
+## See Also
+
+- [func tab(forIdentifier: String) -> UITab?](uitabbarcontroller/tab(foridentifier:).md)
+
 
 ---
 

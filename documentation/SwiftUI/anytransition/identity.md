@@ -17,7 +17,7 @@ A transition that returns the input view, unmodified, as the output view.
 ## Declaration
 
 ```swift
-static let identity: AnyTransition
+static var identity: AnyTransition { get }
 ```
 
 ## See Also

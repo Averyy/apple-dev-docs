@@ -1,6 +1,6 @@
 # xpc_bool_get_value(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the underlying Boolean value from the object.

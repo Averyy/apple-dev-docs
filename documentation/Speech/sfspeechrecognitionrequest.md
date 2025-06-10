@@ -8,7 +8,7 @@ An abstract class that represents a request to recognize speech from an audio so
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 10.0+
 - macOS 10.15+
 - visionOS 1.0+
 
@@ -24,7 +24,7 @@ Don’t create [`SFSpeechRecognitionRequest`](sfspeechrecognitionrequest.md) obj
 
 ## Topics
 
-### Recognition Request Configuration
+### Configuring a recognition request
 - [var requiresOnDeviceRecognition: Bool](sfspeechrecognitionrequest/requiresondevicerecognition.md)
   A Boolean value that determines whether a request must keep its audio data on the device.
 - [var shouldReportPartialResults: Bool](sfspeechrecognitionrequest/shouldreportpartialresults.md)

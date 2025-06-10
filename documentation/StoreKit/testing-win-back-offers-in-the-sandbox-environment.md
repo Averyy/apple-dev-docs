@@ -1,6 +1,6 @@
 # Testing win-back offers in the sandbox environment
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Verify that your app receives and handles win-back offer transactions, including those made outside your app.
 
@@ -100,4 +100,4 @@ To repeat a test and redeem the same win-back offer, cancel the subscription and
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/testing-win-back-offers-in-the-sandbox-environment)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/testing-win-back-offers-in-the-sandbox-environment)*

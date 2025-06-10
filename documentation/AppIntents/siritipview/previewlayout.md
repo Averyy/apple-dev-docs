@@ -10,7 +10,7 @@ Overrides the size of the container for the preview.
 - iPadOS 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 6.0+
 
 ## Declaration

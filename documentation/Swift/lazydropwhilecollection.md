@@ -48,4 +48,4 @@ typealias LazyDropWhileCollection<T> = LazyDropWhileSequence<T> where T : Collec
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/lazydropwhilecollection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/lazydropwhilecollection)*

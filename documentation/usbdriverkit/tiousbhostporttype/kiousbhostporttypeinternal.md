@@ -24,8 +24,6 @@ kIOUSBHostPortTypeInternal
   A port for which the device might require additional authentication before a driver can access it.
 - [kIOUSBHostPortTypeExpressCard](tiousbhostporttype/kiousbhostporttypeexpresscard.md)
   A port containing an expansion card.
-- [kIOUSBHostPortTypeCount](tiousbhostporttype/kiousbhostporttypecount.md)
-  The number of port types.
 
 
 ---

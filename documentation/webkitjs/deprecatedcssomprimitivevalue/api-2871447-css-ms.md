@@ -1,6 +1,6 @@
 # CSS_MS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

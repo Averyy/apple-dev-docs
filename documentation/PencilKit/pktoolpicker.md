@@ -27,8 +27,6 @@ A [`PKToolPicker`](pktoolpicker.md) manages a draggable palette that displays dr
 
 > ❗ **Important**:  The tool picker doesn’t display in Mac apps built with Mac Catalyst.
 
- The tool picker doesn’t display in Mac apps built with Mac Catalyst.
-
 When configuring your interface, call the [`setVisible(_:forFirstResponder:)`](pktoolpicker/setvisible(_:forfirstresponder:).md) method to associate the tool picker with one or more views in your interface. Each window manages its own tool picker, and the window’s first responder determines the visibility of that tool picker. When one of the registered objects becomes first responder, the tool picker automatically adds its palette view to the current window. When there isn’t a registered object as first responder, the tool picker hides its palette view.
 
 [`PKCanvasView`](pkcanvasview.md) implements the observer protocol for detecting tool picker changes. Adding your canvas view as an observer to a tool picker automatically updates the current drawing tools. For more information about implementing custom observer objects, see [`PKToolPickerObserver`](pktoolpickerobserver.md).
@@ -101,10 +99,15 @@ When configuring your interface, call the [`setVisible(_:forFirstResponder:)`](p
 ### Protocols
 - [PKToolPicker.Delegate](pktoolpicker/delegate-swift.protocol.md)
 ### Instance Properties
+- [var colorMaximumLinearExposure: CGFloat](pktoolpicker/colormaximumlinearexposure.md)
+  Maximum linear exposure for the color picker used by the tool picker. Can be used to enable picking HDR colors.
 - [var delegate: (any PKToolPicker.Delegate)?](pktoolpicker/delegate-swift.property.md)
   The delegate for the tool picker.
 - [var prefersDismissControlVisible: Bool](pktoolpicker/prefersdismisscontrolvisible.md)
   If this is true the tool picker may show UI that allows dismissing it. If this is false the tool picker will not show this UI. By default this resigns first responder, but is customizable by `PKToolPickerDelegate`’s `toolPickerWillDismiss...` method.
+### Type Properties
+- [class var defaultToolItems: [PKToolPickerItem]](pktoolpicker/defaulttoolitems.md)
+  The default tool items for new tool pickers.
 
 ## Relationships
 

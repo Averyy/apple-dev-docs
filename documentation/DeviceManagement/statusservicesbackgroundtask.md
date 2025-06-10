@@ -7,8 +7,6 @@ A status report of the device’s background task details.
 
 **Availability**:
 - macOS 14.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -16,19 +14,28 @@ A status report of the device’s background task details.
 object StatusServicesBackgroundTask
 ```
 
+#### Discussion
+
+##### Status Item Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | macOS |
+| Allowed in device enrollment | NA |
+| Allowed in user enrollment | NA |
+| Allowed in local enrollment | macOS |
+| Allowed in system scope | macOS |
+| Allowed in user scope | NA |
+
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object StatusServicesBackgroundTaskBackgroundTaskObject](statusservicesbackgroundtaskbackgroundtaskobject.md)
   A status report of a background task.
-- [object StatusServicesBackgroundTaskBackgroundTask_LaunchdObject](statusservicesbackgroundtaskbackgroundtask_launchdobject.md)
-  A status report of a background task that’s based on a launch daemon.
-- [object StatusServicesBackgroundTaskBackgroundTask_Launchd_DeviceManagementObject](statusservicesbackgroundtaskbackgroundtask_launchd_devicemanagementobject.md)
 
 ## See Also
 
 - [object StatusReport](statusreport.md)
-  A status report of the device’s current state.
 - [object StatusAppManagedList](statusappmanagedlist.md)
   The device’s declarative managed apps.
 - [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)

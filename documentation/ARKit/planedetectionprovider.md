@@ -45,6 +45,7 @@ Use this provider to indicate to ARKit the types of plane anchors for your app t
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [DataProvider](dataprovider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

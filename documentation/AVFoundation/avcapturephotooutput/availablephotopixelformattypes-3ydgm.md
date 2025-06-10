@@ -1,6 +1,6 @@
 # availablePhotoPixelFormatTypes
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The pixel formats the capture output supports for photo capture.

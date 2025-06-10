@@ -65,6 +65,12 @@ Create an inking tool programmatically, or display a [`PKToolPicker`](pktoolpick
 ### Using reference types
 - [class PKInkingToolReference](pkinkingtoolreference.md)
   An object that defines the drawing characteristics (width, color, pen style) to use when drawing lines on a canvas view.
+### Initializers
+- [init(PKInkingTool.InkType, color: UIColor, width: CGFloat?, azimuth: CGFloat)](pkinkingtool-swift.struct/init(_:color:width:azimuth:)-24rf4.md)
+- [init(PKInkingTool.InkType, color: NSColor, width: CGFloat?, azimuth: CGFloat)](pkinkingtool-swift.struct/init(_:color:width:azimuth:)-5dtjs.md)
+### Instance Properties
+- [var azimuth: CGFloat](pkinkingtool-swift.struct/azimuth.md)
+  The base angle of the ink.
 
 ## Relationships
 

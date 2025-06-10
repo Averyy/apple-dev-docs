@@ -1,6 +1,6 @@
 # requiresSynchronousInitialization
 
-**Framework**: Metalfx  
+**Framework**: MetalFX  
 **Kind**: property
 
 A Boolean value that indicates whether MetalFX compiles a temporal scaling effect’s underlying upscaler as it creates the instance.
@@ -59,4 +59,4 @@ By default, the property is equal to [`false`](https://developer.apple.com/docum
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MetalFX/mtlfxtemporalscalerdescriptor/requiressynchronousinitialization)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metalfx/mtlfxtemporalscalerdescriptor/requiressynchronousinitialization)*

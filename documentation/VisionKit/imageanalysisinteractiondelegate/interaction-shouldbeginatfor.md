@@ -1,6 +1,6 @@
 # interaction(_:shouldBeginAt:for:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method  
 **Required**: Yes
 

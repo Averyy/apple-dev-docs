@@ -66,6 +66,7 @@ final class NWConnectionGroup
 ### Conforms To
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

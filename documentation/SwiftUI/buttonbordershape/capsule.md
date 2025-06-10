@@ -1,6 +1,6 @@
 # capsule
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 A capsule shape.
@@ -40,4 +40,4 @@ Use the [`buttonBorderShape(_:)`](view/buttonbordershape(_:).md) view modifier t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/buttonbordershape/capsule)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/buttonbordershape/capsule)*

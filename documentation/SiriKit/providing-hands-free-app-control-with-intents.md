@@ -1,6 +1,6 @@
 # Providing Hands-Free App Control with Intents
 
-**Framework**: Sirikit
+**Framework**: SiriKit
 
 Resolve, confirm, and handle intents without an extension.
 
@@ -36,4 +36,4 @@ Resolve, confirm, and handle intents without an extension.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/providing-hands-free-app-control-with-intents)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/providing-hands-free-app-control-with-intents)*

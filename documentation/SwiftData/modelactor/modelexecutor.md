@@ -27,8 +27,6 @@ var modelExecutor: any ModelExecutor { get }
 
 > ❗ **Important**: Don’t use the executor to access the model context. Instead, use the [`modelContext`](modelactor/modelcontext.md) property.
 
-Don’t use the executor to access the model context. Instead, use the [`modelContext`](modelactor/modelcontext.md) property.
-
 ## See Also
 
 - [var unownedExecutor: UnownedSerialExecutor](modelactor/unownedexecutor.md)

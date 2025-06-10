@@ -15,6 +15,14 @@
 void IORecursiveLockFree(struct IORecursiveLock * lock);
 ```
 
+#### Discussion
+
+Frees a lock allocated with IORecursiveLockAlloc. Lock should be unlocked with no waiters.
+
+## Parameters
+
+- `lock`: Pointer to the allocated lock.
+
 ## See Also
 
 - [dequeue_head](dequeue_head.md)

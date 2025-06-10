@@ -31,4 +31,4 @@ Before running the sample code project in Xcode, select the sample target, then 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Contacts/accessing-a-person-s-contact-data-using-contacts-and-contactsui)*
+*[View on Apple Developer](https://developer.apple.com/documentation/contacts/accessing-a-person-s-contact-data-using-contacts-and-contactsui)*

@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Wait for the next child task to complete, and return the value it returned.
+Waits for the next child task to complete, and returns the value it returned.
 
 **Availability**:
 - iOS 13.0+

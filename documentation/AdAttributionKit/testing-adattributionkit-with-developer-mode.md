@@ -1,6 +1,6 @@
 # Testing ad attributions with Developer Mode
 
-**Framework**: Adattributionkit
+**Framework**: AdAttributionKit
 
 Reduce the time-window for ad attributions and inspect postbacks using a proxy during testing.
 
@@ -67,4 +67,4 @@ When you enable Developer Mode, the AdAttributionKit postbacks that the device s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AdAttributionKit/testing-adattributionkit-with-developer-mode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/adattributionkit/testing-adattributionkit-with-developer-mode)*

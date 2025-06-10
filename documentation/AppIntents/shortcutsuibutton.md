@@ -8,8 +8,8 @@ A button that opens the current app’s page in the Shortcuts app.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
-- visionOS 1.0+
+- Mac Catalyst ?+
+- visionOS ?+
 
 ## Declaration
 

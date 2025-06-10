@@ -26,8 +26,6 @@ Fences maintain order to prevent GPU data hazards as the GPU runs various passes
 
 > ❗ **Important**:  For a render pass that updates and waits for the same fence, call [`waitForFence(_:before:)`](mtlrendercommandencoder/waitforfence(_:before:).md) before calling [`updateFence(_:after:)`](mtlrendercommandencoder/updatefence(_:after:).md). Updating a fence before waiting on it within the same encoder can cause GPU deadlock.
 
- For a render pass that updates and waits for the same fence, call [`waitForFence(_:before:)`](mtlrendercommandencoder/waitforfence(_:before:).md) before calling [`updateFence(_:after:)`](mtlrendercommandencoder/updatefence(_:after:).md). Updating a fence before waiting on it within the same encoder can cause GPU deadlock.
-
 The GPU driver evaluates the pass’s fences and the commands that depend on them when your app commits the enclosing [`MTLCommandBuffer`](mtlcommandbuffer.md).
 
 Apple family GPUs can update and respond to fences on a per-stage basis. That allows those GPUs to run portions of different stages, such as vertex and fragment, at the same time. You can check whether a GPU is in an Apple GPU family with the [`supportsFamily(_:)`](mtldevice/supportsfamily(_:).md) method.

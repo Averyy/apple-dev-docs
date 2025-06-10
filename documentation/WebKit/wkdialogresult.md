@@ -1,6 +1,6 @@
 # WKDialogResult
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 An enumeration that lists the possible ways a delegate handled displaying a custom Lockdown Mode first use dialog.
@@ -38,6 +38,7 @@ enum WKDialogResult
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

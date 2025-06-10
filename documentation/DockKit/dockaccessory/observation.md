@@ -47,6 +47,7 @@ This object represents an observation about a single video frame, including info
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

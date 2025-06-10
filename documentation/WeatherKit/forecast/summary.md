@@ -1,6 +1,6 @@
 # summary
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A convenient localized description of the minute forecast.

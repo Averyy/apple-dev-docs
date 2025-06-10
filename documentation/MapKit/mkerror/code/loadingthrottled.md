@@ -12,6 +12,7 @@ The data didn’t load because data throttling is in effect.
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 1.0+
 
 ## Declaration
 

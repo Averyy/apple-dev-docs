@@ -23,7 +23,7 @@ enum CLanguageStandard
 - [CLanguageStandard.c2x](clanguagestandard/c2x.md)
   The identifier for the ISO C2x draft language standard.
 - [CLanguageStandard.c89](clanguagestandard/c89.md)
-  The identifier for the ISO C 1990 language standard.
+  The identifier for the ISO C 1989 language standard.
 - [CLanguageStandard.c90](clanguagestandard/c90.md)
   The identifier for the ISO C 1990 language standard.
 - [CLanguageStandard.c99](clanguagestandard/c99.md)
@@ -65,9 +65,10 @@ enum CLanguageStandard
 ### Creating a Value
 - [init?(rawValue: String)](clanguagestandard/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
-### Accessing the Raw Value
+### Instance Properties
 - [var rawValue: String](clanguagestandard/rawvalue-swift.property.md)
   The corresponding value of the raw type.
+### Type Aliases
 - [CLanguageStandard.RawValue](clanguagestandard/rawvalue-swift.typealias.md)
   The raw type that can be used to represent all values of the conforming type.
 ### Default Implementations
@@ -84,16 +85,20 @@ enum CLanguageStandard
 
 ## See Also
 
-- [typealias SwiftVersion](swiftversion.md)
-  Type alias to previous name for backward source compatibility
+- [enum SwiftLanguageMode](swiftlanguagemode.md)
+  The Swift language mode used to compile Swift sources in the package
 - [enum CXXLanguageStandard](cxxlanguagestandard.md)
   The supported C++ language standard you use to compile C++ sources in the package.
-- [var swiftLanguageVersions: [SwiftVersion]?](package/swiftlanguageversions.md)
-  Legacy property name, accesses value of `swiftLanguageModes`
+- [var swiftLanguageModes: [SwiftLanguageMode]?](package/swiftlanguagemodes.md)
+  The list of Swift language modes with which this package is compatible.
 - [var cLanguageStandard: CLanguageStandard?](package/clanguagestandard.md)
   The C language standard to use for all C targets in this package.
 - [var cxxLanguageStandard: CXXLanguageStandard?](package/cxxlanguagestandard.md)
   The C++ language standard to use for all C++ targets in this package.
+- [typealias SwiftVersion](swiftversion.md)
+  Type alias to previous name for backward source compatibility
+- [var swiftLanguageVersions: [SwiftVersion]?](package/swiftlanguageversions.md)
+  Legacy property name, accesses value of `swiftLanguageModes`
 
 
 ---

@@ -91,6 +91,10 @@ A `CMBufferQueue` is a queue of timed buffers backed by a Core Foundation object
 - [CMBufferQueue.Buffers](cmbufferqueue/buffers-swift.struct.md)
 - [CMBufferQueue.Handlers](cmbufferqueue/handlers.md)
 - [CMBufferQueue.Error](cmbufferqueue/error.md)
+### Initializers
+- [init(referencing: CMBufferQueue)](cmbufferqueue/init(referencing:).md)
+### Type Aliases
+- [CMBufferQueue.T](cmbufferqueue/t.md)
 
 ## Relationships
 

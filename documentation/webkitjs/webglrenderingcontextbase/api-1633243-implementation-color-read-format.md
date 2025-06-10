@@ -1,6 +1,6 @@
 # IMPLEMENTATION_COLOR_READ_FORMAT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

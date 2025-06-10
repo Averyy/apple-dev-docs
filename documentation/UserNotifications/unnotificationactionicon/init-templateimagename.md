@@ -1,6 +1,6 @@
 # init(templateImageName:)
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: init
 
 Creates an action icon based on an image in your app’s bundle, preferably in an asset catalog.

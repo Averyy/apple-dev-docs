@@ -33,7 +33,11 @@ The format of the input scope is initially the same as that of the output, but y
 
 > ❗ **Important**:  This class has no methods of its own. It overrides methods that its base classes define.
 
- This class has no methods of its own. It overrides methods that its base classes define.
+## Topics
+
+### Instance Properties
+- [var intendedSpatialExperience: any SpatialAudioExperience](avaudiooutputnode/intendedspatialexperience-3ts59.md)
+  The AVAudioEngine output node’s intended spatial experience.
 
 ## Relationships
 

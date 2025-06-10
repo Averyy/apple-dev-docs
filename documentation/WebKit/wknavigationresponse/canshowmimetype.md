@@ -1,6 +1,6 @@
 # canShowMIMEType
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether WebKit is capable of displaying the response’s MIME type natively.

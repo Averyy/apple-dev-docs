@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: enum
 
-The types of tones that may be played.
+Values that describe keypad tones.
 
 **Availability**:
 - iOS 17.4+
@@ -20,13 +20,13 @@ enum Tone
 
 ## Topics
 
-### Enumeration Cases
+### Keypad tones
 - [PlayToneAction.Tone.hardPause](playtoneaction/tone-swift.enum/hardpause.md)
-  Indicates that the user included digits after a hard pause in their dial string. A hard pause is indicated by a semicolon (;) and waits for further user interaction before dialing the additional digits.
+  A person entered a hard pause.
 - [PlayToneAction.Tone.single](playtoneaction/tone-swift.enum/single.md)
-  Indicates that the user tapped a digit on the in-call keypad.
+  A person entered a digit.
 - [PlayToneAction.Tone.softPause](playtoneaction/tone-swift.enum/softpause.md)
-  Indicates that the user included digits after a soft pause in their dial string. A soft pause is indicated by a comma (,) and waits a few seconds before dialing the additional digits.
+  A person entered a soft pause.
 ### Initializers
 - [init?(rawValue: Int)](playtoneaction/tone-swift.enum/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
@@ -48,6 +48,14 @@ enum Tone
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [let digits: String](playtoneaction/digits.md)
+  The digits tapped by the user into the keypad or included in the dial string.
+- [let tone: PlayToneAction.Tone](playtoneaction/tone-swift.property.md)
+  The keypad tone to play.
 
 
 ---

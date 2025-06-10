@@ -1,6 +1,6 @@
 # Writing Fragmented MPEG-4 Files for HTTP Live Streaming
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
 
@@ -23,6 +23,8 @@ Before you run the sample code project in Xcode:
 
 ## See Also
 
+- [Converting projected video to Apple Projected Media Profile](converting-projected-video-to-apple-projected-media-profile.md)
+  Convert content with equirectangular or half-equirectangular projection to APMP.
 - [Converting side-by-side 3D video to multiview HEVC and spatial video](converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
   Create video content for visionOS by converting an existing 3D HEVC file to a multiview HEVC format, optionally adding spatial metadata to create a spatial video.
 - [Creating spatial photos and videos with spatial metadata](../ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata.md)
@@ -49,4 +51,4 @@ Before you run the sample code project in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/writing-fragmented-mpeg-4-files-for-http-live-streaming)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/writing-fragmented-mpeg-4-files-for-http-live-streaming)*

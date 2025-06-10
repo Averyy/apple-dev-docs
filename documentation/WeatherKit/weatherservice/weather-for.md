@@ -1,6 +1,6 @@
 # weather(for:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns the weather forecast for the requested location.

@@ -8,12 +8,12 @@ The type that should be used for literal segments.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS 1.0+
+- tvOS 17.0+
+- visionOS ?+
 - watchOS 10.0+
 - Unknown ?+ - Deprecated
-- tvOS 17.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

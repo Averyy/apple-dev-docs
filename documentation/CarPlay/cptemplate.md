@@ -13,6 +13,7 @@ An abstract base class for interface templates.
 ## Declaration
 
 ```swift
+@MainActor
 class CPTemplate
 ```
 
@@ -63,6 +64,7 @@ You don’t use this class directly, or create your own subclasses. Instead, you
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

@@ -8,11 +8,11 @@ The minimum and maximum corner points of the object’s bounding box.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst ?+
-- macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- Mac Catalyst 13.1+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 

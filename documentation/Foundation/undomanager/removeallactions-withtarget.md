@@ -17,6 +17,7 @@ Clears the undo and redo stacks of all operations involving the specified target
 ## Declaration
 
 ```swift
+@MainActor
 func removeAllActions(withTarget target: Any)
 ```
 

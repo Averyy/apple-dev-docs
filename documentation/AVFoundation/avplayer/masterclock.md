@@ -26,8 +26,6 @@ The default value of this property is `NULL`, which means that the host clock is
 
 > ❗ **Important**:  If you specify a host clock other than the appropriate audio device’s clock, the audio may drift out of sync.
 
- If you specify a host clock other than the appropriate audio device’s clock, the audio may drift out of sync.
-
 ## See Also
 
 - [func setRate(Float, time: CMTime, atHostTime: CMTime)](avplayer/setrate(_:time:athosttime:).md)

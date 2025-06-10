@@ -57,10 +57,9 @@ struct GKGameSessionError
 - [GKGameSessionError.Code](gkgamesessionerror/code.md)
   Error codes for the game session domain.
 ### Error Domain
+- [static var errorDomain: String](gkgamesessionerror/errordomain.md)
 - [let GKGameSessionErrorDomain: String](gkgamesessionerrordomain.md)
   The error domain for game sessions.
-### Type Properties
-- [static var errorDomain: String](gkgamesessionerror/errordomain.md)
 
 ## Relationships
 
@@ -70,6 +69,7 @@ struct GKGameSessionError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

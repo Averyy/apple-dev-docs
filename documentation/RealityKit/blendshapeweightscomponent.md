@@ -10,6 +10,7 @@ A component that provides access to the current weights associated with all blen
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -39,8 +40,6 @@ entity.components[BlendShapeWeightsComponent.self]!.weightSets[0].weights
 ### Instance Properties
 - [var weightSet: BlendShapeWeightsSet](blendshapeweightscomponent/weightset.md)
   The runtime named blend shapes weights.
-### Default Implementations
-- [Component Implementations](blendshapeweightscomponent/component-implementations.md)
 
 ## Relationships
 

@@ -45,6 +45,7 @@ Each [`CapturedRoom.Surface`](capturedroom/surface.md) instance in a captured ro
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

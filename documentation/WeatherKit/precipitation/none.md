@@ -1,6 +1,6 @@
 # Precipitation.none
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 No precipitation.

@@ -20,8 +20,6 @@ var transmissionRiskLevelValues: [NSNumber] { get set }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 
- This property is available in iOS 12.5, and in iOS 13.5 and later.
-
 This property contains eight levels, one for each type of transmission risk:
 
 - `transmissionRiskScores[0]` for risk level 0.

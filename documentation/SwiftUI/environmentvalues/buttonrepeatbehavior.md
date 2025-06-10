@@ -40,6 +40,7 @@ A value of `enabled` means that buttons will be able to repeatedly trigger their
   A value that describes the purpose of a button.
 - [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
+- [struct ButtonSizing](buttonsizing.md)
 
 
 ---

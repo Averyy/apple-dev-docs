@@ -1,6 +1,6 @@
 # downloadWindow(forAuthenticationSheet:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the window to be used by the authentication sheet.

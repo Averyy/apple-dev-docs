@@ -1,6 +1,6 @@
 # ignoresViewportScaleLimits
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that determines whether a web view allows scaling of the webpage.

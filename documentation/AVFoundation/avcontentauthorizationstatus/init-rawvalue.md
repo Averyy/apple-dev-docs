@@ -4,7 +4,7 @@
 **Kind**: init
 
 **Availability**:
-- macOS ?+
+- macOS 10.7+
 
 ## Declaration
 

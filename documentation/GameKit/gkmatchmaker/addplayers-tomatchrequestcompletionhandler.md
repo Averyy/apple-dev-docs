@@ -25,8 +25,6 @@ Use this method to add more players to an existing match that doesn’t have eno
 
 > ❗ **Important**:  Invoke this method for only one player connected to the match.
 
- Invoke this method for only one player connected to the match.
-
 ## Parameters
 
 - `match`: The match to which GameKit adds the players.

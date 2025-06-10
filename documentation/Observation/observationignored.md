@@ -18,7 +18,7 @@ Disables observation tracking of a property.
 
 ```swift
 @attached
-(accessor, names: named(willSet)) macro ObservationIgnored()
+(accessor) macro ObservationIgnored()
 ```
 
 #### Overview

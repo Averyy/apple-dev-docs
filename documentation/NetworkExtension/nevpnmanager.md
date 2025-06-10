@@ -58,7 +58,7 @@ The [`NEVPNManager`](nevpnmanager.md) API gives apps the ability to create and m
 - [NEVPNError.Code](nevpnerror-swift.struct/code.md)
   Codes that indicate the source of an error.
 ### Notifications
-- [static let NEVPNConfigurationChange: NSNotification.Name](../foundation/nsnotification/name/1406509-nevpnconfigurationchange.md)
+- [static let NEVPNConfigurationChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NEVPNConfigurationChange.md)
   Posted after the VPN configuration stored in the Network Extension preferences changes.
 ### Entitlements
 - [Personal VPN Entitlement](../BundleResources/Entitlements/com.apple.developer.networking.vpn.api.md)

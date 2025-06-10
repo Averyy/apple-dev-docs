@@ -1,6 +1,6 @@
 # init(address:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Initializes an instance with a frame address.

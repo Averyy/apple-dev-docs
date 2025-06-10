@@ -72,6 +72,7 @@ Don’t create this structure directly. Instead, use the [`messages(of:)`](group
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

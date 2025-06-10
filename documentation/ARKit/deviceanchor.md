@@ -6,6 +6,7 @@
 The position and orientation of Apple Vision Pro.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -41,6 +42,7 @@ You create a device anchor by starting an [`ARKitSession`](arkitsession.md) with
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TrackableAnchor](trackableanchor.md)
 
 ## See Also

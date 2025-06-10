@@ -16,8 +16,6 @@ You create the always-on live view by assigning a view or view controller to the
 
 > ❗ **Important**: You invoke the always-on live view from a file named `LiveView.swift`, which must be located in the directory for each playground page. If you assign the current [`liveView`](playgroundpage/1964506-liveview.md) from any other code, the resulting live view will be a traditional live view that doesn't persist across multiple runs of the page.
 
-You invoke the always-on live view from a file named `LiveView.swift`, which must be located in the directory for each playground page. If you assign the current [`liveView`](playgroundpage/1964506-liveview.md) from any other code, the resulting live view will be a traditional live view that doesn't persist across multiple runs of the page.
-
 Configure your always-on live view to adopt the [`PlaygroundLiveViewMessageHandler`](playgroundliveviewmessagehandler.md) protocol for sending and receiving messages from the corresponding playground page. The example below uses a [`UIButton`](https://developer.apple.com/documentation/uikit/uibutton) as the root view and changes the background color of the button when it receives a message. 
 
 ```swift

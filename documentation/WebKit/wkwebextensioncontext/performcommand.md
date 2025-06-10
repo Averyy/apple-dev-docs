@@ -1,6 +1,6 @@
 # performCommand(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Performs the specified command, triggering events specific to this extension.

@@ -1,6 +1,6 @@
 # Creating the Source for a Pass
 
-**Framework**: Walletpasses
+**Framework**: Wallet Passes
 
 Create the directory structure and add source files and images to define a pass.
 
@@ -121,4 +121,4 @@ Use UTF-16 encoding for non-ASCII characters.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WalletPasses/creating-the-source-for-a-pass)*
+*[View on Apple Developer](https://developer.apple.com/documentation/walletpasses/creating-the-source-for-a-pass)*

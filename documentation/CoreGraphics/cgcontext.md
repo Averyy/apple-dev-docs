@@ -27,10 +27,6 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
 ## Topics
 
 ### Creating Bitmap Graphics Contexts
-- [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: UInt32)](cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:).md)
-  Creates a bitmap graphics context.
-- [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: UInt32, releaseCallback: CGBitmapContextReleaseDataCallback?, releaseInfo: UnsafeMutableRawPointer?)](cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:releasecallback:releaseinfo:).md)
-  Creates a bitmap graphics context with the specified callback function.
 - [typealias CGBitmapContextReleaseDataCallback](cgbitmapcontextreleasedatacallback.md)
   A callback function used to release data associate with the bitmap context.
 ### Creating PDF Graphics Contexts
@@ -337,10 +333,19 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
 - [func draw(CGImage, in: CGRect, by: CGToneMapping, options: CFDictionary?) -> Bool](cgcontext/draw(_:in:by:options:).md)
 - [func resetClip()](cgcontext/resetclip.md)
 - [func setEDRTargetHeadroom(Float) -> Bool](cgcontext/setedrtargetheadroom(_:).md)
+- [func setContentToneMappingInfo(CGContentToneMappingInfo)](cgcontext/setcontenttonemappinginfo(_:).md)
+### Structures
+- [CGContext.AuxiliaryInfo](cgcontext/auxiliaryinfo.md)
+### Initializers
+- [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace?, bitmapInfo: CGBitmapInfo)](cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:)-10b3i.md)
+- [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: UInt32)](cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:)-4fkaf.md)
+- [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace?, bitmapInfo: CGBitmapInfo, releaseCallback: CGBitmapContextReleaseDataCallback?, releaseInfo: UnsafeMutableRawPointer?)](cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:releasecallback:releaseinfo:)-4yzt5.md)
+- [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: UInt32, releaseCallback: CGBitmapContextReleaseDataCallback?, releaseInfo: UnsafeMutableRawPointer?)](cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:releasecallback:releaseinfo:)-71ea9.md)
 
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 

@@ -1,6 +1,6 @@
 # scale
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The distance between two fingers since the start of an event as a multiplier of the initial distance. 

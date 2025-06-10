@@ -1,6 +1,6 @@
 # pageUp
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A constant that represents the Page Up key.

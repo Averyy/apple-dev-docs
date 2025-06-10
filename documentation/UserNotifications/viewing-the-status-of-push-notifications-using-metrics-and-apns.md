@@ -1,6 +1,6 @@
 # Viewing the status of push notifications using Metrics and APNs
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Monitor and interpret the status of your push notifications with Apple Push Notification service (APNs).
 
@@ -67,4 +67,4 @@ If your push notification expires before the destination device connects to APNs
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/viewing-the-status-of-push-notifications-using-metrics-and-apns)*
+*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/viewing-the-status-of-push-notifications-using-metrics-and-apns)*

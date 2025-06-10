@@ -42,6 +42,7 @@ Use the [`requestReview(in:)`](skstorereviewcontroller/requestreview(in:).md) me
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

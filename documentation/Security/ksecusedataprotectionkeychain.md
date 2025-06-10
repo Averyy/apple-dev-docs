@@ -32,8 +32,6 @@ The data protection key affects operations only in macOS. Other platforms automa
 
 > 💡 **Tip**:  It’s highly recommended that you set the value of this key to `true` for all keychain operations. This key helps to improve the portability of your code across platforms. Use it unless you specifically need access to items previously stored in a legacy keychain in macOS.
 
- It’s highly recommended that you set the value of this key to `true` for all keychain operations. This key helps to improve the portability of your code across platforms. Use it unless you specifically need access to items previously stored in a legacy keychain in macOS.
-
 Items that you store or have stored in macOS with the [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) attribute set to `true` also behave like iOS keychain items. However, a `true` value for that attribute additionally causes iCloud to synchronize the item across all the user’s devices. Use [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) to get the iOS behavior without synchronization.
 
 

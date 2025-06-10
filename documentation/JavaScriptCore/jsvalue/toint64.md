@@ -17,6 +17,10 @@
 func toInt64() -> Int64
 ```
 
+#### Discussion
+
+The JSValue is converted to an integer according to the rules specified by the JavaScript language. If the value is a BigInt, then the value is truncated to an int64_t.
+
 
 ---
 

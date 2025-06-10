@@ -17,8 +17,8 @@ Combines a gesture with another gesture to create a new gesture that recognizes 
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func simultaneously<Other>(with other: Other) -> SimultaneousGesture<Self, Other> where Other : Gesture
+nonisolated
+func simultaneously<Other>(with other: Other) -> SimultaneousGesture<Self, Other> where Other : Gesture
 ```
 
 #### Return Value

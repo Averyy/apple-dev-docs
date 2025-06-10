@@ -14,8 +14,6 @@ Use this key if your app uses certain APIs that manipulate system configuration,
 
 > ❗ **Important**:  This key is required if your app uses APIs that manipulate the system configuration.
 
- This key is required if your app uses APIs that manipulate the system configuration.
-
 ## See Also
 
 - [NSUpdateSecurityPolicy](information-property-list/nsupdatesecuritypolicy.md)

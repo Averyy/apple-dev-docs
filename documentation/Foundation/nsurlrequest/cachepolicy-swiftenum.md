@@ -70,6 +70,7 @@ The default policy is [`NSURLRequest.CachePolicy.useProtocolCachePolicy`](nsurlr
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

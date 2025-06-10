@@ -1,6 +1,6 @@
 # fixedFontFamily
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The fixed font family of the web view.

@@ -8,7 +8,7 @@ Capture specific GPU commands by using custom capture scopes.
 
 When you capture a frame using the default capture scope by clicking the Metal Capture button in Xcode’s debug bar, the resulting capture contains all of the data for a single frame. In some cases, you may want to debug a partial frame rather than an entire frame. You can accomplish this by setting up and using a custom capture scope that lets you choose exactly which Metal commands to record.
 
-> **Note**: Don’t allocate custom capture scopes yourself. Instead, call one of the [`MTLCaptureManager`](https://developer.apple.com/documentation/Metal/MTLCaptureManager) methods: [`makeCaptureScope(device:)`](https://developer.apple.com/documentation/Metal/MTLCaptureManager/makeCaptureScope(device:)) or [`makeCaptureScope(commandQueue:)`](https://developer.apple.com/documentation/Metal/MTLCaptureManager/makeCaptureScope(commandQueue:)).
+> **Note**: Don’t allocate custom capture scopes yourself. Instead, call one of the [`MTLCaptureManager`](https://developer.apple.com/documentation/Metal/MTLCaptureManager) methods: [`makeCaptureScope(device:)`](https://developer.apple.com/documentation/Metal/MTLCaptureManager/makeCaptureScope(device:)) or doc://com.apple.documentation/documentation/metal/mtlcapturemanager/2869732-makecapturescope.
 
 ##### Define Capture Boundaries
 
@@ -60,4 +60,4 @@ MTLCaptureManager.shared().defaultCaptureScope = myCaptureScope
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/creating-and-using-custom-capture-scopes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/creating-and-using-custom-capture-scopes)*

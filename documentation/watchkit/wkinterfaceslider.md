@@ -1,6 +1,6 @@
 # WKInterfaceSlider
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface element that lets users select a single floating-point value from a range of values.

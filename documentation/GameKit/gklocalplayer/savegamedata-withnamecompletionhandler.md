@@ -28,8 +28,6 @@ If the `name` parameter is an existing filename, GameKit overwrites the file wit
 
 > ❗ **Important**:  You must provide an iCloud container ID in your project to save game data to the player’s iCloud account. Add the [`iCloud Container Identifiers Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.icloud-container-identifiers) key to your project containing a unique identifier for your game.
 
- You must provide an iCloud container ID in your project to save game data to the player’s iCloud account. Add the [`iCloud Container Identifiers Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.icloud-container-identifiers) key to your project containing a unique identifier for your game.
-
 ## Parameters
 
 - `data`: An object that contains the saved game data.

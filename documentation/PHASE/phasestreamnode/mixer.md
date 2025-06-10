@@ -17,13 +17,6 @@
 var mixer: PHASEMixer { get }
 ```
 
-#### Discussion
-
-```None
-@property mixer
-@abstract The readonly property that returns the PHASEMixer this stream was created with and assigned to.
-```
-
 
 ---
 

@@ -1,6 +1,6 @@
 # linkedFramework(_:_:)
 
-**Framework**: Packagedescription  
+**Framework**: PackageDescription  
 **Kind**: method
 
 Declares linkage to a system framework.

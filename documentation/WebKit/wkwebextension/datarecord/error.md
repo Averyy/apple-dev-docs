@@ -1,6 +1,6 @@
 # WKWebExtension.DataRecord.Error
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: struct
 
 Constants that indicate errors in the [`WKWebExtension.DataRecord`](wkwebextension/datarecord.md) domain.
@@ -40,6 +40,7 @@ struct Error
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

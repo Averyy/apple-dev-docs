@@ -16,6 +16,21 @@ Any of the style protocols that define a `makeBody(configuration:)` method, like
 
 ## Topics
 
+### Styling views with Liquid Glass
+- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
+  Configure, combine, and morph views using Liquid Glass effects.
+- [Landmarks: Building an app with Liquid Glass](landmarks-building-an-app-with-liquid-glass.md)
+  Enhance your app experience with system-provided and custom Liquid Glass.
+- [func glassEffect(Glass, in: some Shape, isEnabled: Bool) -> some View](view/glasseffect(_:in:isenabled:).md)
+  Applies the Liquid Glass effect to a view.
+- [func interactive(Bool) -> Glass](glass/interactive(_:).md)
+  Returns a copy of the structure configured to be interactive.
+- [struct GlassEffectContainer](glasseffectcontainer.md)
+  A view that combines multiple Liquid Glass shapes into a single shape that can morph individual shapes into one another.
+- [struct GlassEffectTransition](glasseffecttransition.md)
+  A structure that describes changes to apply when a glass effect is added or removed from the view hierarchy.
+- [struct GlassButtonStyle](glassbuttonstyle.md)
+  A button style that applies glass border artwork based on the button’s context.
 ### Styling buttons
 - [func buttonStyle(_:)](view/buttonstyle(_:).md)
   Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
@@ -140,6 +155,23 @@ Any of the style protocols that define a `makeBody(configuration:)` method, like
   Sets the style for windows created by interacting with this view.
 - [func presentedWindowToolbarStyle<S>(S) -> some View](view/presentedwindowtoolbarstyle(_:).md)
   Sets the style for the toolbar in windows created by interacting with this view.
+### Adding a glass background on views in visionOS
+- [func glassBackgroundEffect(displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(displaymode:).md)
+  Fills the view’s background with an automatic glass background effect and container-relative rounded rectangle shape.
+- [func glassBackgroundEffect<S>(in: S, displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(in:displaymode:).md)
+  Fills the view’s background with an automatic glass background effect and a shape that you specify.
+- [enum GlassBackgroundDisplayMode](glassbackgrounddisplaymode.md)
+  The display mode of a glass background.
+- [protocol GlassBackgroundEffect](glassbackgroundeffect.md)
+  A specification for the appearance of a glass background.
+- [struct AutomaticGlassBackgroundEffect](automaticglassbackgroundeffect.md)
+  The automatic glass background effect.
+- [struct GlassBackgroundEffectConfiguration](glassbackgroundeffectconfiguration.md)
+  A configuration used to build a custom effect.
+- [struct FeatheredGlassBackgroundEffect](featheredglassbackgroundeffect.md)
+  The feathered glass background effect.
+- [struct PlateGlassBackgroundEffect](plateglassbackgroundeffect.md)
+  The plate glass background effect.
 
 ## See Also
 

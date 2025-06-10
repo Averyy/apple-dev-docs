@@ -1,6 +1,6 @@
 # size
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the size changed.

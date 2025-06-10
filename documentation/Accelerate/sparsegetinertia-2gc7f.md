@@ -37,6 +37,19 @@ This call is only supported for factorizations of type `SparseFactorizationLDLTT
 - `num_zero`: Upon return   has been set to the number   of zero pivots.
 - `num_negative`: Upon return   has been set to the number   of negative pivots.
 
+## See Also
+
+- [func SparseGetInertia(SparseOpaqueFactorization_Float, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](sparsegetinertia(_:_:_:_:)-6r90r.md)
+  Returns the inertia of a single-precision  factorization.
+- [func SparseGetInertia(SparseOpaqueFactorization_Double, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](sparsegetinertia(_:_:_:_:)-2ykzq.md)
+  Returns the inertia of a double-precision  factorization.
+- [func SparseGetInertia(SparseOpaqueFactorization_Complex_Float, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> Int32](sparsegetinertia(_:_:_:_:)-6ca5h.md)
+  Returns the inertia of an LDLT factorization in complex float.
+- [struct SparseUpdate_t](sparseupdate_t.md)
+  Low-rank update algorithm selector
+- [var SparseUpdatePartialRefactor: SparseUpdate_t](sparseupdatepartialrefactor.md)
+  Low-rank update algorithm selector
+
 
 ---
 

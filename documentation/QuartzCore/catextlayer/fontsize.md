@@ -1,6 +1,6 @@
 # fontSize
 
-**Framework**: Quartzcore  
+**Framework**: Core Animation  
 **Kind**: property
 
 The font size used to render the receiver’s text. Animatable.
@@ -39,4 +39,4 @@ The `fontSize` property is only used when the [`string`](catextlayer/string.md) 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/catextlayer/fontsize)*
+*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/catextlayer/fontsize)*

@@ -17,6 +17,7 @@ The number of times you can invoke undo before there are no actions left to undo
 ## Declaration
 
 ```swift
+@MainActor
 var undoCount: Int { get }
 ```
 

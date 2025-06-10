@@ -1,6 +1,6 @@
 # webView(_:decidePolicyFor:decisionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Asks the delegate for permission to navigate to new content after the response to the navigation request is known.

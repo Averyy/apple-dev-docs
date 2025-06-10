@@ -1,12 +1,17 @@
 # VTFrameProcessorOpticalFlow
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: class
 
 A class to wrap bidirectional optical flow to send to the processor.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 

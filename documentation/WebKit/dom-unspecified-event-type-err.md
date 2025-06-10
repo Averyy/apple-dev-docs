@@ -1,6 +1,6 @@
 # DOM_UNSPECIFIED_EVENT_TYPE_ERR
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

@@ -22,8 +22,6 @@ Typically, the use of encryption that’s built into the operating system—for 
 
 > ❗ **Important**:  If your app uses exempt forms of encryption, you might alternatively be required to submit a year-end self-classification report to the U.S. government. (If you use non-exempt encryption and provide documentation to Apple, the self-classification report isn’t necessary.) To learn more, see [`How to file an Annual Self Classification Report`](https://developer.apple.comhttps://www.bis.doc.gov/index.php/policy-guidance/encryption/4-reports-and-reviews/a-annual-self-classification).
 
- If your app uses exempt forms of encryption, you might alternatively be required to submit a year-end self-classification report to the U.S. government. (If you use non-exempt encryption and provide documentation to Apple, the self-classification report isn’t necessary.) To learn more, see [`How to file an Annual Self Classification Report`](https://developer.apple.comhttps://www.bis.doc.gov/index.php/policy-guidance/encryption/4-reports-and-reviews/a-annual-self-classification).
-
 ##### Provide Compliance Documentation
 
 If your app requires export compliance documentation, upload the required items to App Store Connect, as described in [`Upload export compliance documentation`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev38f592ac9). After successfully reviewing the documents, Apple provides you with a code. Add this string as the value for the [`ITSEncryptionExportComplianceCode`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/ITSEncryptionExportComplianceCode) key in your app’s `Info.plist` file.

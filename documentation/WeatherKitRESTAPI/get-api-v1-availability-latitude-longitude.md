@@ -1,6 +1,6 @@
 # GET /api/v1/availability/{latitude}/{longitude}
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: httpRequest
 
 Determine the data sets available for the specified location.

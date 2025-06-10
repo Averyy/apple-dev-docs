@@ -1,9 +1,17 @@
 # Geometric Property
 
-**Framework**: Shadergraph  
+**Framework**: ShaderGraph  
 **Kind**: subscript
 
 The value of the specified geometric property (defined using ) of the currently-bound geometry.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
 
 #### Parameter Types
 

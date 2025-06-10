@@ -1,6 +1,6 @@
 # webView(_:didCommitLoadFor:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when content starts arriving for a page load.

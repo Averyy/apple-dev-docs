@@ -1,6 +1,6 @@
 # Updating Continuous and Transient Haptic Parameters in Real Time
 
-**Framework**: Corehaptics
+**Framework**: Core Haptics
 
 Generate continuous and transient haptic patterns in response to user touch.
 
@@ -193,4 +193,4 @@ Creating haptic pattern players is inexpensive, so you don’t need to keep them
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/updating-continuous-and-transient-haptic-parameters-in-real-time)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/updating-continuous-and-transient-haptic-parameters-in-real-time)*

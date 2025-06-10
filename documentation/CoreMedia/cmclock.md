@@ -59,6 +59,10 @@ A clock represents a source of time information: a piece of hardware that measur
 ### Constants
 - [CMClock.Error](cmclock/error.md)
   Constants that describe clock errors.
+### Initializers
+- [init(referencing: CMClock)](cmclock/init(referencing:).md)
+### Type Aliases
+- [typealias T](cmclock/t.md)
 ### Default Implementations
 - [CMSyncProtocol Implementations](cmclock/cmsyncprotocol-implementations.md)
 
@@ -70,6 +74,7 @@ A clock represents a source of time information: a piece of hardware that measur
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

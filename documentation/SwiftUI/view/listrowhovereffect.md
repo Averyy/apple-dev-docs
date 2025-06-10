@@ -44,7 +44,7 @@ Use a `nil` effect to indicate that the list row’s default hover effect should
 - [struct ListItemTint](listitemtint.md)
   A tint effect configuration that you can apply to content in a list.
 - [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
-  The default minimum height of a row in a `List`. The default minimum height of a row in a list.
+  The default minimum height of a row in a list.
 
 
 ---

@@ -16,8 +16,7 @@ The minimum dragging distance before the gesture succeeds.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency var minimumDistance: CGFloat
+var minimumDistance: CGFloat
 ```
 
 ## See Also

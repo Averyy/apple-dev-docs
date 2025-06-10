@@ -1,6 +1,6 @@
-# Tips.Parameter
+# Parameter
 
-**Framework**: Tipkit  
+**Framework**: TipKit  
 **Kind**: struct
 
 A type that monitors the state of its wrapped value to reevaluate any dependent tip rules when the value changes.
@@ -24,7 +24,7 @@ struct Parameter<Value> where Value : Decodable, Value : Encodable, Value : Send
 
 You create a parameter by wrapping a conforming type with the `@Parameter` macro. An `id` is generated based on the parameter’s enclosing instance and the name of the property it is wrapping.
 
-> **Note**: Parameters are persistent by default. Wrapping a property with `@Parameter` will persist its value between app launches within the tips datastore. Passing [`transient`](tips/parameteroption/transient.md) as an option will allow the parameter to reset to a default value the first time it is referenced.
+> **Note**: Parameters are persistent by default. Wrapping a property with `@Parameter` will persist its value between app launches within the tips datastore. Passing [`ParameterOption.transient`](tips/parameteroption/transient.md) as an option will allow the parameter to reset to a default value the first time it is referenced.
 
 Tips must be configured using [`configure(_:)`](tips/configure(_:).md) before a parameter’s value will be updated.
 
@@ -55,9 +55,6 @@ struct FavoriteLandmarkTip: Tip {
 
 ## Topics
 
-### Creating rules
-- [struct Rule](tips/rule.md)
-  A condition to meet before displaying a tip.
 ### Parameter options
 - [static var transient: Tips.ParameterOption](tips/parameteroption/transient.md)
   An option that resets the parameter value the first time it is referenced.
@@ -65,8 +62,15 @@ struct FavoriteLandmarkTip: Tip {
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [struct Rule](tips/rule.md)
+  A condition to meet before displaying a tip.
 
 
 ---

@@ -1,6 +1,6 @@
 # readPaymentCard(_:)
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 Presents a sheet to verify a contactless payment card, and returns the card data.

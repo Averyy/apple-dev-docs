@@ -23,8 +23,6 @@ var itemTime: CMTime { get }
 
 > ❗ **Important**:  Don’t automatically resume playback after seeking to this time. The coordinator issues a new play command when all participants are ready to resume.
 
- Don’t automatically resume playback after seeking to this time. The coordinator issues a new play command when all participants are ready to resume.
-
 ## See Also
 
 - [var shouldBufferInAnticipationOfPlayback: Bool](avdelegatingplaybackcoordinatorseekcommand/shouldbufferinanticipationofplayback.md)

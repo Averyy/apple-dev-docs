@@ -1,6 +1,6 @@
 # xpc_activity_state_t
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: typealias
 
 A type that represents the state of an activity.

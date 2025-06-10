@@ -1,6 +1,6 @@
 # Creating postbacks in developer settings
 
-**Framework**: Adattributionkit
+**Framework**: AdAttributionKit
 
 Test development postbacks for your advertised app without interacting with ads from a publisher app.
 
@@ -40,7 +40,7 @@ You can also tap Use Developer Postback URL to generate the full postback copy U
 
 Configure each property of the postback in this section. You can create variations of all properties in the postback, including the view or click interaction type, conversion types, and one or three conversion windows.
 
-![An image of the AdAttributionKit postback properties form that allows someone to set values that the framework sends in a development postback.](https://docs-assets.developer.apple.com/published/dd07be1ecd2632d667d9b51ba53bb1b4/postback-properties%402x.png)
+![An image of the AdAttributionKit postback properties form that allows someone to set values that the framework sends in a development postback.](https://docs-assets.developer.apple.com/published/44703067d263db4201cd39afcd48add3/postback-properties%402x.png)
 
 ##### Add a Conversion Tag
 
@@ -50,7 +50,7 @@ Fill in a conversion tag if you’re testing the overlapping conversion windows 
 
 AdAttributionKit uses Crowd Anonymity to control the amount of data the framework returns in postbacks in production flows. For each postback, adjust the amount of data that AdAttributionKit includes in the postback.
 
-![An image of the AdAttributionKit postback destination form that allows someone to enter the URL to use for the framework to send development postback information to the developer's server.](https://docs-assets.developer.apple.com/published/d36bb9dd24c3658cc5bbf9b11c609d55/crowd-anonymity-tiers%402x.png)
+![An image of the AdAttributionKit postback destination form that allows someone to enter the URL to use for the framework to send development postback information to the developer's server.](https://docs-assets.developer.apple.com/published/4f5311c8ed111beb883e3315c8ac3bed/crowd-anonymity-tiers%402x.png)
 
 You can use this to test that your server logic is processing different postback data granularities correctly. For more information about Crowd Anonymity, see [`Receiving postbacks in multiple conversion windows`](receiving-postbacks-in-multiple-conversion-windows.md).
 
@@ -84,4 +84,4 @@ Tapping Clear Development Postbacks deletes all development postbacks currently 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AdAttributionKit/creating-postbacks-in-developer-settings)*
+*[View on Apple Developer](https://developer.apple.com/documentation/adattributionkit/creating-postbacks-in-developer-settings)*

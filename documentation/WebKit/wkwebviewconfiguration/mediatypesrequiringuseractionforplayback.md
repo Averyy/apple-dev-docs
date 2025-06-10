@@ -1,6 +1,6 @@
 # mediaTypesRequiringUserActionForPlayback
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The media types that require a user gesture to begin playing.

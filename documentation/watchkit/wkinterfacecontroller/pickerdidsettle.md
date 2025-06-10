@@ -1,6 +1,6 @@
 # pickerDidSettle(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Called to let you know when the user settles on a value in a picker.

@@ -1,6 +1,6 @@
 # Displaying text in visionOS
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Create styled text in a window using SwiftUI.
 

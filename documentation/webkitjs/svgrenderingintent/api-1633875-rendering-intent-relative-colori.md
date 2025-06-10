@@ -1,6 +1,6 @@
 # RENDERING_INTENT_RELATIVE_COLORIMETRIC
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

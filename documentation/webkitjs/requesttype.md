@@ -1,6 +1,6 @@
 # RequestType
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: enum
 
 **Availability**:

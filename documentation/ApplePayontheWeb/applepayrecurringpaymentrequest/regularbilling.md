@@ -1,6 +1,6 @@
 # regularBilling
 
-**Framework**: Applepayontheweb  
+**Framework**: Apple Pay on the Web  
 **Kind**: property
 
 The regular billing cycle for the recurring payment, including start and end dates, an interval, and an interval count.
@@ -31,4 +31,4 @@ This line item applies to a regular billing cycle for a recurring payment.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepayrecurringpaymentrequest/regularbilling)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepayrecurringpaymentrequest/regularbilling)*

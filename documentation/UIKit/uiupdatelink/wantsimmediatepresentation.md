@@ -26,8 +26,6 @@ When the value of this property is [`true`](https://developer.apple.com/document
 
 > ❗ **Important**:  If you opt in to this behavior, keep the complexity of the code you submit to the render server to a minimum. When an app requests immediate frame presentation, but doesn’t keep rendering complexity minimal, frames don’t submit for presentation in time. Dropped frames cause hitches and provide a suboptimal user experience. If you request immediate presentation, make sure to profile your app thoroughly. For more information, read [`Understanding user interface responsiveness`](https://developer.apple.com/documentation/Xcode/understanding-user-interface-responsiveness).
 
- If you opt in to this behavior, keep the complexity of the code you submit to the render server to a minimum. When an app requests immediate frame presentation, but doesn’t keep rendering complexity minimal, frames don’t submit for presentation in time. Dropped frames cause hitches and provide a suboptimal user experience. If you request immediate presentation, make sure to profile your app thoroughly. For more information, read [`Understanding user interface responsiveness`](https://developer.apple.com/documentation/Xcode/understanding-user-interface-responsiveness).
-
 ## See Also
 
 - [var requiresContinuousUpdates: Bool](uiupdatelink/requirescontinuousupdates.md)

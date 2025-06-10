@@ -40,6 +40,7 @@ The following methods throw refund request errors: [`beginRefundRequest(in:)`](t
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

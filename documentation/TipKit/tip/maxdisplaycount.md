@@ -1,4 +1,4 @@
-# Tip.MaxDisplayCount
+# MaxDisplayCount
 
 **Framework**: TipKit  
 **Kind**: typealias
@@ -37,6 +37,10 @@ struct FavoriteBackyardTip: Tip {
 
 ## See Also
 
+- [var options: [any TipOption]](tip/options.md)
+  Customizations for a tip.
+- [typealias Option](tip/option.md)
+  A type that represents the various customizations that you can make to a tip’s behavior.
 - [typealias IgnoresDisplayFrequency](tip/ignoresdisplayfrequency.md)
   Controls whether a tip obeys the preconfigured display frequency interval.
 - [typealias MaxDisplayDuration](tip/maxdisplayduration.md)

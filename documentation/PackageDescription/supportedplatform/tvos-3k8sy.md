@@ -1,6 +1,6 @@
 # tvOS(_:)
 
-**Framework**: Packagedescription  
+**Framework**: PackageDescription  
 **Kind**: method
 
 Configures the minimum deployment target version for the tvOS platform using a custom version string.

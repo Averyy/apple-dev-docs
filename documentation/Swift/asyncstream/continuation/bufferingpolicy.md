@@ -34,6 +34,7 @@ enum BufferingPolicy
 
 ### Conforms To
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

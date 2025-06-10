@@ -16,7 +16,7 @@ Adds a Core Animation layer to the video composition.
 ## Declaration
 
 ```swift
-convenience init(additionalLayer layer: CALayer, asTrackID trackID: CMPersistentTrackID)
+convenience init(additionalLayer layer: sending CALayer, asTrackID trackID: CMPersistentTrackID)
 ```
 
 #### Return Value

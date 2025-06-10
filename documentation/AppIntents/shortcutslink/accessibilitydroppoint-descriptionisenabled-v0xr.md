@@ -1,6 +1,6 @@
 # accessibilityDropPoint(_:description:isEnabled:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 The point an assistive technology should use to end a drag interaction.
@@ -8,7 +8,7 @@ The point an assistive technology should use to end a drag interaction.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
 - visionOS 2.0+
 
@@ -41,7 +41,7 @@ By default, if an accessible view or its subtree has drag and/or drop interactio
 
 ## Parameters
 
-- `point`: The point the assitive technology will perform a drop   interaction.
+- `point`: The point the assistive technology will perform a drop   interaction.
 - `description`: The description of the drop interaction.
 - `isEnabled`: If true the accessibility drop point is applied;   otherwise the accessibility drop point is unchanged.
 

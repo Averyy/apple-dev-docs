@@ -116,4 +116,4 @@ For information on using these features to debug the appearance of your app, see
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/diagnosing-and-resolving-bugs-in-your-running-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/diagnosing-and-resolving-bugs-in-your-running-app)*

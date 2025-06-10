@@ -20,7 +20,7 @@ func browserAccessibilitySelectedTextRange() -> NSRange
 
 #### Return Value
 
-The selection’s range. If there’s no selection, returns `(0,` [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound)`)`.
+The selection’s range. If there’s no selection, returns `(0,` [`NSNotFound`](https://developer.apple.com/documentation/Foundation/NSNotFound-4qp9h)`)`.
 
 ## See Also
 

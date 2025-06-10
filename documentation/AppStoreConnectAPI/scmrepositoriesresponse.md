@@ -20,6 +20,8 @@ object ScmRepositoriesResponse
   The data structure that represents a Repositories resource.
 - [object ScmRepositoryResponse](scmrepositoryresponse.md)
   A response that contains a single Repositories resource.
+- [object ScmRepositoryGitReferencesLinkagesResponse](scmrepositorygitreferenceslinkagesresponse.md)
+- [object ScmRepositoryPullRequestsLinkagesResponse](scmrepositorypullrequestslinkagesresponse.md)
 
 
 ---

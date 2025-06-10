@@ -1,6 +1,6 @@
 # init(quantityType:quantitySamplePredicate:options:completionHandler:)
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: init
 
 Initializes a statistics query instance that performs the specified calculations over the matching samples in the HeathKit store.

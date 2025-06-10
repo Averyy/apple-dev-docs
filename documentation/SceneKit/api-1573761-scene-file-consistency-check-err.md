@@ -6,9 +6,9 @@ Error codes that identify errors found during a scene-file-format consistency ch
 
 #### Overview
 
-If you specify [`true`](https://developer.apple.com/documentation/swift/true) for the [`checkConsistency`](scnscenesource/loadingoption/checkconsistency.md) when creating or loading from a scene source, SceneKit verifies the scene file against the specification for its file format. SceneKit reports any format verification issues in an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object whose [`code`](https://developer.apple.com/documentation/foundation/nserror/1409165-code) property is one of these values.
+If you specify [`true`](https://developer.apple.com/documentation/swift/true) for the [`checkConsistency`](scnscenesource/loadingoption/checkconsistency.md) when creating or loading from a scene source, SceneKit verifies the scene file against the specification for its file format. SceneKit reports any format verification issues in an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object whose [`code`](https://developer.apple.com/documentation/Foundation/NSError/code) property is one of these values.
 
-For more details about the location and nature of any format validation errors, see the [`SCNDetailedErrorsKey`](scndetailederrorskey.md) key in the error’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary, and the keys listed in [`Scene File Consistency Error Keys`](scene-file-consistency-error-keys.md).
+For more details about the location and nature of any format validation errors, see the [`SCNDetailedErrorsKey`](scndetailederrorskey.md) key in the error’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary, and the keys listed in [`Scene File Consistency Error Keys`](scene-file-consistency-error-keys.md).
 
 ## Topics
 

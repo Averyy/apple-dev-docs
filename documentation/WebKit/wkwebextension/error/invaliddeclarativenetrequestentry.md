@@ -1,6 +1,6 @@
 # invalidDeclarativeNetRequestEntry
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates that an invalid declarative net request entry was encountered.

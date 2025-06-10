@@ -1,6 +1,6 @@
 # count
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: property
 
 The number of elements in the array.

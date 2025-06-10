@@ -1,6 +1,6 @@
 # Dealing with Inactive MDM Devices and Invalid Push Tokens
 
-**Framework**: Devicemanagement
+**Framework**: Device Management
 
 Handle when devices become unmanageable due to inactivity or invalid push tokens.
 
@@ -39,4 +39,4 @@ You don’t need to send push notifications on a daily basis to make sure a devi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/dealing-with-inactive-mdm-devices-and-invalid-push-tokens)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/dealing-with-inactive-mdm-devices-and-invalid-push-tokens)*

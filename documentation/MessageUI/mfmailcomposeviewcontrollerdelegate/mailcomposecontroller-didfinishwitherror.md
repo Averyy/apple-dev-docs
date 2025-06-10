@@ -14,7 +14,7 @@ Tells the delegate that the user wants to dismiss the mail composition view.
 ## Declaration
 
 ```swift
-optional func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: (any Error)?)
+optional func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?)
 ```
 
 #### Discussion

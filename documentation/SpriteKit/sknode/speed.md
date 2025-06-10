@@ -17,6 +17,7 @@ A speed modifier applied to all actions executed by a node and its descendants.
 ## Declaration
 
 ```swift
+@MainActor
 var speed: CGFloat { get set }
 ```
 

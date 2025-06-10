@@ -1,6 +1,6 @@
 # UNAuthorizationOptions
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: struct
 
 Options that determine the authorized features of local and remote notifications.
@@ -54,6 +54,7 @@ struct UNAuthorizationOptions
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

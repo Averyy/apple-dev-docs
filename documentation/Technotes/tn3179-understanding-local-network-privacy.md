@@ -63,7 +63,7 @@ If you’re building an app extension, see [`App extension considerations`](tn31
 
 If you’re building some other sort of program for macOS—a `launchd` daemon or agent, a system extension, and so on—see [`macOS considerations`](tn3179-understanding-local-network-privacy#macOS-considerations.md).
 
-If the system presents a local network alert in response to one of your local network operations, it may deny the operation immediately, before the user has responded to the alert.  To handle this smoothly, use an API that supports waiting for connectivity, like Network framework or `URLSession` with [`waitsForConnectivity`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/2908812-waitsforconnectivity) enabled.  If you can’t use one of these preferred APIs, add appropriate retry logic.
+If the system presents a local network alert in response to one of your local network operations, it may deny the operation immediately, before the user has responded to the alert.  To handle this smoothly, use an API that supports waiting for connectivity, like Network framework or `URLSession` with [`waitsForConnectivity`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/waitsForConnectivity) enabled.  If you can’t use one of these preferred APIs, add appropriate retry logic.
 
 For an overview of the networking APIs on Apple platforms, see [`TN3151: Choosing the right networking API`](tn3151-choosing-the-right-networking-api.md).
 
@@ -461,4 +461,4 @@ If you must work with a specific type of interface, call `getifaddrs` to get the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3179-understanding-local-network-privacy)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3179-understanding-local-network-privacy)*

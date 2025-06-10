@@ -1,6 +1,6 @@
 # numberOfRows(in:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Returns the number of records managed for `aTableView` by the data source object.

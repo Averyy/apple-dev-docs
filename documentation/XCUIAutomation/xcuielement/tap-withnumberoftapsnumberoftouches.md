@@ -1,6 +1,6 @@
 # tap(withNumberOfTaps:numberOfTouches:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends one or more taps with one or more touch points.

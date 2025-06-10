@@ -1,6 +1,6 @@
 # isInspectable
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Determines whether Web Inspector can inspect the [`WKWebView`](wkwebview.md) instances for this context.

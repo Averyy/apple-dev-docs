@@ -1,6 +1,6 @@
 # trimmingPrefix(_:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns a new collection of the same type by removing `prefix` from the start of the collection.

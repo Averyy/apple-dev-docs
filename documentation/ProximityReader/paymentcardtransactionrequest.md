@@ -56,6 +56,7 @@ Create a `PaymentCardTransactionRequest` to specify the amount of a purchase or 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

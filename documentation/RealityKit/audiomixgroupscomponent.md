@@ -10,6 +10,7 @@ A component that provides functionality for controlling the playback of audio yo
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -64,10 +65,6 @@ Use [`fade(to:duration:)`](audiomixgroup/fade(to:duration:).md) to fade the volu
   Removes the audio mix group with the given name, if it exists, from the component.
 - [func set(AudioMixGroup)](audiomixgroupscomponent/set(_:).md)
   Adds the given `AudioMixGroup` to the component.
-### Default Implementations
-- [Component Implementations](audiomixgroupscomponent/component-implementations.md)
-- [Equatable Implementations](audiomixgroupscomponent/equatable-implementations.md)
-- [Hashable Implementations](audiomixgroupscomponent/hashable-implementations.md)
 
 ## Relationships
 

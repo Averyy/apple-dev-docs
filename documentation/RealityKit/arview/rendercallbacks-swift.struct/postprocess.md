@@ -10,6 +10,7 @@ A callback function for implementing postprocess effects.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -20,8 +21,8 @@ var postProcess: ((ARView.PostProcessContext) -> Void)?
 ## Mentions
 
 - [Implementing postprocess effects using Metal compute functions](implementing-postprocess-effects-using-metal-compute-functions.md)
-- [Applying core image filters as a postprocess effect](applying-core-image-filters-as-a-postprocess-effect.md)
 - [Using Metal performance shaders to create custom postprocess effects](using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
+- [Applying core image filters as a postprocess effect](applying-core-image-filters-as-a-postprocess-effect.md)
 
 #### Discussion
 

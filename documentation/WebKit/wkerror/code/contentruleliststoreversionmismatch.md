@@ -1,6 +1,6 @@
 # WKError.Code.contentRuleListStoreVersionMismatch
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 An error that indicates the rule list version is outdated and cannot be read.

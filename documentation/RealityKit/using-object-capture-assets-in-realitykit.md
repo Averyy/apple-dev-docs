@@ -1,6 +1,6 @@
 # Using object capture assets in RealityKit
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Create a chess game using RealityKit and assets created using Object Capture.
 

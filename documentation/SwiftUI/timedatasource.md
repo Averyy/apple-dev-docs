@@ -41,6 +41,7 @@ Instances of this type provide [`Text`](text.md) with live and automatically upd
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

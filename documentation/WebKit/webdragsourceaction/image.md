@@ -1,6 +1,6 @@
 # image
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Allows the user to drag an image in the source object.

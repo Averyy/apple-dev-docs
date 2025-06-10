@@ -10,6 +10,7 @@ A material that simulates the appearance of real-world objects.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -137,8 +138,6 @@ For more information on using [`PhysicallyBasedMaterial`](physicallybasedmateria
 ### Enumerations
 - [PhysicallyBasedMaterial.Blending](physicallybasedmaterial/blending-swift.enum.md)
   The object that defines the transparency of an entity.
-### Default Implementations
-- [Material Implementations](physicallybasedmaterial/material-implementations.md)
 
 ## Relationships
 

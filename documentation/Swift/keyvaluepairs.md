@@ -78,6 +78,8 @@ print(pairs.elements)
 ### Initializers
 - [init(dictionaryLiteral: (Key, Value)...)](keyvaluepairs/init(dictionaryliteral:).md)
   Creates a new `KeyValuePairs` instance from the given dictionary literal.
+### Instance Properties
+- [var span: Span<KeyValuePairs<Key, Value>.Element>](keyvaluepairs/span.md)
 ### Default Implementations
 - [BidirectionalCollection Implementations](keyvaluepairs/bidirectionalcollection-implementations.md)
 - [Collection Implementations](keyvaluepairs/collection-implementations.md)
@@ -97,6 +99,7 @@ print(pairs.elements)
 - [ExpressibleByDictionaryLiteral](expressiblebydictionaryliteral.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

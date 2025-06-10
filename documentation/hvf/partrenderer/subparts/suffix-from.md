@@ -1,6 +1,6 @@
 # suffix(from:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns a subsequence from the specified position to the end of the collection.

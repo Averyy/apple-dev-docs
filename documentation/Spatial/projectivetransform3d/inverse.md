@@ -28,8 +28,6 @@ var inverse: ProjectiveTransform3D? { get }
   The translation component of the projective transform.
 - [var matrix: simd_double4x4](projectivetransform3d/matrix.md)
   The projective transform’s underlying matrix.
-- [static let identity: ProjectiveTransform3D](projectivetransform3d/identity.md)
-  The identity transform.
 
 
 ---

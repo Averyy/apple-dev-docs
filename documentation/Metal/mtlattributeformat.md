@@ -153,6 +153,7 @@ All data formats are least significant bit first (little-endian). For compute fu
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -166,4 +167,4 @@ All data formats are least significant bit first (little-endian). For compute fu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/mtlattributeformat)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlattributeformat)*

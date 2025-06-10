@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to get managed app feedback.
+The command to get app feedback from a managed app on the device.
 
 **Availability**:
 - iOS 7.0+
@@ -11,8 +11,6 @@ The request dictionary to get managed app feedback.
 - macOS 11.0+
 - tvOS 10.2+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

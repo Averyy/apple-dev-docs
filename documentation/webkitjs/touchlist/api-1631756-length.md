@@ -1,6 +1,6 @@
 # length
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The number of [`Touch`](touch.md) objects in this `TouchList` object.

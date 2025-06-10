@@ -1,6 +1,6 @@
 # TimeSeriesClassifier.Model
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: struct
 
 A time-series classifier model.
@@ -53,10 +53,11 @@ struct Model
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TemporalTransformer](temporaltransformer.md)
 - [Transformer](transformer.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/timeseriesclassifier/model)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/timeseriesclassifier/model)*

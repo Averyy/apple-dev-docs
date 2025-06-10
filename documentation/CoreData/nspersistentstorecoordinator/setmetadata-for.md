@@ -26,8 +26,6 @@ The store type and UUID (`NSStoreTypeKey` and `NSStoreUUIDKey`) are always added
 
 > ❗ **Important**:  Setting the metadata for a store does not change the information on disk until the store is actually saved.
 
- Setting the metadata for a store does not change the information on disk until the store is actually saved.
-
 ## Parameters
 
 - `metadata`: A dictionary containing metadata for the store.

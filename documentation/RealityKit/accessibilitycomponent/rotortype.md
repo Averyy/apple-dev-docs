@@ -9,6 +9,7 @@ A context-sensitive event that helps VoiceOver users find the next instance of a
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -19,15 +20,10 @@ enum RotorType
 
 ## Topics
 
-### Operators
-- [static func == (AccessibilityComponent.RotorType, AccessibilityComponent.RotorType) -> Bool](accessibilitycomponent/rotortype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [AccessibilityComponent.RotorType.custom(_:)](accessibilitycomponent/rotortype/custom(_:).md)
 - [case system(UIAccessibilityCustomRotor.SystemRotorType)](accessibilitycomponent/rotortype/system(_:).md)
   A rotor type provided by the system.
-### Default Implementations
-- [Equatable Implementations](accessibilitycomponent/rotortype/equatable-implementations.md)
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 # WKWebpagePreferences.UpgradeToHTTPSPolicy.userMediatedFallbackToHTTP
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 **Availability**:

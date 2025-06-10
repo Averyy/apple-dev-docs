@@ -1,6 +1,6 @@
 # shuffle(using:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Shuffles the collection in place, using the given generator as a source for randomness.

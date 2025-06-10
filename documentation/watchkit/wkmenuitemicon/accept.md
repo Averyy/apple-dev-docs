@@ -1,6 +1,6 @@
 # WKMenuItemIcon.accept
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The icon indicating an action to accept an event or item.

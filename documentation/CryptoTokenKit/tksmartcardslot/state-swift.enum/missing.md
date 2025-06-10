@@ -24,8 +24,6 @@ The Smart Card reader slot is no longer known to the system.
 
 > ❗ **Important**:  This is the terminal state of a `TKSmartCardSlotThis` instance; once it has reached this state, the Smart Card reader slot cannot be reinitialized.
 
- This is the terminal state of a `TKSmartCardSlotThis` instance; once it has reached this state, the Smart Card reader slot cannot be reinitialized.
-
 ## See Also
 
 - [TKSmartCardSlot.State.empty](tksmartcardslot/state-swift.enum/empty.md)

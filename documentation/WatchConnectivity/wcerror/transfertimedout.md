@@ -1,6 +1,6 @@
 # transferTimedOut
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An error that occurs when the transfer reaches the timeout limit before it completes.

@@ -1,6 +1,6 @@
 # Repositories
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Read detailed information for each repository Xcode Cloud can access, including Git references and pull requests.
 
@@ -23,8 +23,10 @@ The `scmRepositories` resource represents Git repositories Xcode Cloud can acces
   Get information about a Git repository that Xcode Cloud can access.
 - [List All Git References for a Repository](get-v1-scmrepositories-_id_-gitreferences.md)
   List all Git references for a specific repository that Xcode Cloud can access.
+- [GET /v1/scmRepositories/{id}/relationships/gitReferences](get-v1-scmrepositories-_id_-relationships-gitreferences.md)
 - [List All Pull Requests for a Repository](get-v1-scmrepositories-_id_-pullrequests.md)
   List all pull requests for a specific repository that Xcode Cloud can access.
+- [GET /v1/scmRepositories/{id}/relationships/pullRequests](get-v1-scmrepositories-_id_-relationships-pullrequests.md)
 ### Objects
 - [object ScmRepository](scmrepository.md)
   The data structure that represents a Repositories resource.
@@ -32,6 +34,8 @@ The `scmRepositories` resource represents Git repositories Xcode Cloud can acces
   A response that contains a single Repositories resource.
 - [object ScmRepositoriesResponse](scmrepositoriesresponse.md)
   A response that contains a list of Repositories resources.
+- [object ScmRepositoryGitReferencesLinkagesResponse](scmrepositorygitreferenceslinkagesresponse.md)
+- [object ScmRepositoryPullRequestsLinkagesResponse](scmrepositorypullrequestslinkagesresponse.md)
 
 ## See Also
 
@@ -45,4 +49,4 @@ The `scmRepositories` resource represents Git repositories Xcode Cloud can acces
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/repositories)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/repositories)*

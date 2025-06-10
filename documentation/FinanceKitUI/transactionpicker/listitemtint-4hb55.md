@@ -1,6 +1,6 @@
 # listItemTint(_:)
 
-**Framework**: Financekitui  
+**Framework**: FinanceKitUI  
 **Kind**: method
 
 Sets a fixed tint color for content in a list.

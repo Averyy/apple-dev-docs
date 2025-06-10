@@ -23,14 +23,6 @@ func reimportItems(below itemIdentifier: NSFileProviderItemIdentifier) async thr
 func reimportItems(below itemIdentifier: NSFileProviderItemIdentifier) async throws
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func reimportItems(below itemIdentifier: NSFileProviderItemIdentifier) async throws
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 This method tells the system that the specified item identifiers are no longer valid. Your file provider extension should call this method if it has lost track of its synchronization state and can’t guarantee the stability of the item identifiers anymore.
 
 The system calls [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](nsfileproviderreplicatedextension/createitem(basedon:fields:contents:options:request:completionhandler:).md) and passes the [`mayAlreadyExist`](nsfileprovidercreateitemoptions/mayalreadyexist.md) option for each affected identifier in its working set. Your File Provider extension can then specify a new identifier for each item.

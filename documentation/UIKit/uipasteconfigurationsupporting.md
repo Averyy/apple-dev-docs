@@ -44,6 +44,7 @@ protocol UIPasteConfigurationSupporting : NSObjectProtocol
 - [UIAlertController](uialertcontroller.md)
 - [UIAlertView](uialertview.md)
 - [UIApplication](uiapplication.md)
+- [UIBackgroundExtensionView](uibackgroundextensionview.md)
 - [UIButton](uibutton.md)
 - [UICalendarView](uicalendarview.md)
 - [UICloudSharingController](uicloudsharingcontroller.md)

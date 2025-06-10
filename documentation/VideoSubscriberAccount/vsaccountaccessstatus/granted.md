@@ -1,6 +1,6 @@
 # VSAccountAccessStatus.granted
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 The user allowed the app to access subscription information.

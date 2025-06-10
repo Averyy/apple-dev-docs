@@ -75,4 +75,4 @@ Reset a simulated device to factory settings to clear out all installed apps and
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-a-simulator-for-your-environment)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-a-simulator-for-your-environment)*

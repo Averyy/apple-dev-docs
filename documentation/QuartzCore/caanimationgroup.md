@@ -46,8 +46,6 @@ fadeAndScale.duration = 1
 
 > ❗ **Important**:  The [`delegate`](caanimation/delegate.md) and [`isRemovedOnCompletion`](caanimation/isremovedoncompletion.md) properties of animations in the [`animations`](caanimationgroup/animations.md) array are currently ignored. The [`CAAnimationGroup`](caanimationgroup.md) delegate does receive these messages.
 
- The [`delegate`](caanimation/delegate.md) and [`isRemovedOnCompletion`](caanimation/isremovedoncompletion.md) properties of animations in the [`animations`](caanimationgroup/animations.md) array are currently ignored. The [`CAAnimationGroup`](caanimationgroup.md) delegate does receive these messages.
-
 ## Topics
 
 ### Grouped animations
@@ -70,6 +68,8 @@ fadeAndScale.duration = 1
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

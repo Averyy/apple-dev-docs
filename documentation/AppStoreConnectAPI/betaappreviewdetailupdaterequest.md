@@ -31,6 +31,7 @@ object BetaAppReviewDetailUpdateRequest
   A response that contains a list of Beta App Review Detail resources.
 - [object AppBetaTestersLinkagesRequest](appbetatesterslinkagesrequest.md)
   A request body you use to remove beta testers from an app.
+- [object BetaAppReviewDetailAppLinkageResponse](betaappreviewdetailapplinkageresponse.md)
 
 
 ---

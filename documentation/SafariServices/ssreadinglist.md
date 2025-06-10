@@ -31,7 +31,7 @@ class SSReadingList
 ### Constants
 - [Reading List Error Domain](reading-list-error-domain.md)
   The domain used for Reading List errors.
-- [SSReadingListError.Code](ssreadinglisterror/code.md)
+- [SSReadingListError.Code](ssreadinglisterrorcode.md)
   Messages that describe a Safari Reading List error.
 
 ## Relationships
@@ -50,7 +50,7 @@ class SSReadingList
 
 - [let SSReadingListErrorDomain: String](ssreadinglisterrordomain.md)
   The domain for Safari Reading List errors.
-- [SSReadingListError.Code](ssreadinglisterror/code.md)
+- [SSReadingListError.Code](ssreadinglisterrorcode.md)
   Messages that describe a Safari Reading List error.
 - [struct SSReadingListError](ssreadinglisterror.md)
   A Safari Reading List error.

@@ -1,6 +1,6 @@
 # Updating collection views using diffable data sources
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Streamline the display and update of data in a collection view using a diffable data source that contains identifiers.
 
@@ -293,4 +293,4 @@ Storing data structures directly into diffable data sources and snapshots isn’
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/updating-collection-views-using-diffable-data-sources)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/updating-collection-views-using-diffable-data-sources)*

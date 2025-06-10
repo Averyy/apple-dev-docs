@@ -69,7 +69,7 @@ repeat {
 
 ##### Load Video Layer Information
 
-After preparing timestamps, the app calls `loadVideoLayerIdsForTrack()` to get the layer IDs for the two tracks associated with the left and right eyes. The app calls [`load(_:)`](avasynchronouskeyvalueloading/load(_:).md)to retrieve metadata, then filters the layer data out of the first available track’s [`tagCollections`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription/tagCollections). The filter predicate is [`value(onlyIfMatching:)`](https://developer.apple.com/documentation/CoreMedia/CMTag-swift.class/value(onlyIfMatching:)), extracting only video layer IDs.
+After preparing timestamps, the app calls `loadVideoLayerIdsForTrack()` to get the layer IDs for the two tracks associated with the left and right eyes. The app calls `AVAsynchronousKeyValueLoading/load(_:)`to retrieve metadata, then filters the layer data out of the first available track’s [`tagCollections`](https://developer.apple.com/documentation/CoreMedia/CMFormatDescription/tagCollections). The filter predicate is [`value(onlyIfMatching:)`](https://developer.apple.com/documentation/CoreMedia/CMTag-swift.class/value(onlyIfMatching:)), extracting only video layer IDs.
 
 ```swift
 private func loadVideoLayerIdsForTrack(_ videoTrack: AVAssetTrack) async throws -> [Int64]? {

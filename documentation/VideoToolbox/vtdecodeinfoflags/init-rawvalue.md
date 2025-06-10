@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: init
 
 Creates a flag from a raw unsigned-integer value.

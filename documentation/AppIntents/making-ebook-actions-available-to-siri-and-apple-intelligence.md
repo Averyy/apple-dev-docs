@@ -1,6 +1,6 @@
 # Making ebook actions available to Siri and Apple Intelligence
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Create app intents and entities to integrate your app’s ebook and audiobook functionality with Siri and Apple Intelligence.
 
@@ -13,7 +13,7 @@ To integrate your app’s ebook and audiobook capabilities with Siri and Apple I
 For example, if your app allows a person to open an ebook, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.books` domain and the [`openBook`](assistantschemas/booksintent/openbook.md) schema:
 
 ```swift
-@AssistantIntent(schema: .books.openBook)
+@AppIntent(schema: .books.openBook)
 struct OpenBookIntent: OpenIntent {
     var target: BookEntity
     
@@ -30,7 +30,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 If you use app entities to describe custom data types, annotate the app entity implementation with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `BookEntity`. The following code snippet shows how the `BookEntity` implementation uses the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro:
 
 ```swift
-@AssistantEntity(schema: .books.book)
+@AppEntity(schema: .books.book)
 struct BookEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [BookEntity.ID]) async throws -> [BookEntity] { [] }
@@ -61,7 +61,7 @@ For a list of available app entity schemas in the `.books` domain, see [`Assista
 To make sure Siri and Apple Intelligence understand custom static types for your intent parameters, annotate app enumerations with the [`AssistantEnum(schema:)`](assistantenum(schema:).md) macro. Then, pass the `.books` domain and a schema to it. The following example uses the [`contentType`](assistantschemas/booksenum/contenttype.md) schema:
 
 ```swift
-@AssistantEnum(schema: .books.contentType)
+@AppEnum(schema: .books.contentType)
 enum BookContentType: String, AppEnum {
     case book
     case pdf
@@ -85,4 +85,4 @@ For a list of available app enumeration schemas in the `.books` domain, see [`As
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-ebook-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-ebook-actions-available-to-siri-and-apple-intelligence)*

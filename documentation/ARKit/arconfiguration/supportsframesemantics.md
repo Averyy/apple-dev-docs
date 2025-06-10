@@ -26,8 +26,6 @@ Call this function before attempting to enable a frame semantic on your app’s 
 
 > ⚠️ **Warning**:  Do not call this function on the superclass, [`ARConfiguration`](arconfiguration.md). Only configuration subclasses support frame semantics, such as those listed in `Choose your session's configuration`.
 
- Do not call this function on the superclass, [`ARConfiguration`](arconfiguration.md). Only configuration subclasses support frame semantics, such as those listed in `Choose your session's configuration`.
-
 ## Parameters
 
 - `frameSemantics`: The frame semantics for which to check device support.

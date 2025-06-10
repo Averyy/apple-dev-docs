@@ -1,6 +1,6 @@
 # default()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the default data store, which stores data persistently to disk.

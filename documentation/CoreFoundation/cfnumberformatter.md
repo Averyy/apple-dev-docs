@@ -26,8 +26,6 @@ The format of the format string is defined by Unicode Technical Standard #35; th
 
 > ❗ **Important**:  `CFNumberFormatter` is not thread-safe.  Do not use a single instance from multiple threads.
 
- `CFNumberFormatter` is not thread-safe.  Do not use a single instance from multiple threads.
-
 Unlike some other Core Foundation opaque types with names similar to a corresponding Cocoa Foundation class (such as CFString and `NSString`), CFNumberFormatter objects cannot be cast (“toll-free bridged”) to `NSNumberFormatter` objects.
 
 ## Topics

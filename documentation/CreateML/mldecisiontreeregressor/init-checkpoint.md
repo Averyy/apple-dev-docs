@@ -1,6 +1,6 @@
 # init(checkpoint:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: init
 
 Creates a decision tree regressor  from a checkpoint.

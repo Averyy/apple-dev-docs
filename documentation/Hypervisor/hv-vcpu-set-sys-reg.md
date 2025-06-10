@@ -22,8 +22,6 @@ func hv_vcpu_set_sys_reg(_ vcpu: hv_vcpu_t, _ reg: hv_sys_reg_t, _ value: UInt64
 
 > ❗ **Important**:  This function must be called by the owning thread.
 
- This function must be called by the owning thread.
-
 ## Parameters
 
 - `vcpu`: The instance of the vCPU.

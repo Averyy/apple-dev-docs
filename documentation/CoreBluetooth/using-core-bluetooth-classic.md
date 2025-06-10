@@ -1,6 +1,6 @@
 # Using Core Bluetooth Classic
 
-**Framework**: Corebluetooth
+**Framework**: Core Bluetooth
 
 Discover and communicate with a Bluetooth Classic device by using the Core Bluetooth APIs.
 
@@ -16,4 +16,4 @@ Discover and communicate with a Bluetooth Classic device by using the Core Bluet
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreBluetooth/using-core-bluetooth-classic)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corebluetooth/using-core-bluetooth-classic)*

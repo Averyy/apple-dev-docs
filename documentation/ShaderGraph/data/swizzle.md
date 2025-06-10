@@ -1,9 +1,17 @@
 # Swizzle
 
-**Framework**: Shadergraph  
+**Framework**: ShaderGraph  
 **Kind**: subscript
 
 Performs an arbitrary permutation of the channels of the input stream, returning a new stream of the specified type.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
 
 #### Parameter Types
 
@@ -11,11 +19,11 @@ Performs an arbitrary permutation of the channels of the input stream, returning
 
 #### Discussion
 
-The Swizzle node determines its output by first looking at the `Channels` parameter. Each character in the `Channel` string represents one of the channels of the `In` parameter. For example, if you pass in a vector3 of `(1, 5, 10)` as the `In` parameter, “x” refers to `1`, “y” to `5`, and “z” to `10`. The order of the characters determines how the channels of the input switch around to create the output. For the previous example, if the `Channels` parameter is “zzz”, the output is `(10, 10, 10)`.
+The `Swizzle` node determines its output by first looking at the `Channels` parameter. Each character in the `Channel` string represents one of the channels of the `In` parameter. For example, if you pass in a vector3 of `(1, 5, 10)` as the `In` parameter, “x” refers to `1`, `y` to `5`, and `z` to `10`. The order of the characters determines how the channels of the input switch around to create the output. For the previous example, if the `Channels` parameter is “zzz”, the output is `(10, 10, 10)`.
 
-> **Note**: The number of characters in the `Channels` must be equal to the number of channels in the output.
+> **Note**: The character length of `Channels` must be equal to the number of channels in the output.
 
-The table below shows additional examples of the swizzle node process.
+The table below shows additional examples of the swizzle node process:
 
 | In | Channels | Out |
 | --- | --- | --- |

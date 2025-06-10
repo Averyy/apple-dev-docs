@@ -1,6 +1,6 @@
 # init(concatenating:alongAxis:)
 
-**Framework**: Coreml  
+**Framework**: Core ML  
 **Kind**: init
 
 Concatenates `tensors` along the `axis` dimension.

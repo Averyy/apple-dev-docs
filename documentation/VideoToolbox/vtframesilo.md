@@ -1,6 +1,6 @@
 # VTFrameSilo
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: class
 
 An object that stores a large number of sample buffers, as produced by a multipass compression session.

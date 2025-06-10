@@ -1,6 +1,6 @@
 # App intent domains
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
 
@@ -15,12 +15,11 @@ To learn more, refer to [`Integrating actions with Siri and Apple Intelligence`]
 ## Topics
 
 ### Macros
-- [macro AssistantIntent<T>(schema: T)](assistantintent(schema:).md)
-  A Swift macro you use to make sure your app intent conforms to an assistant schema.
-- [macro AssistantEntity<T>(schema: T)](assistantentity(schema:).md)
-  A Swift macro you use to make sure your app entity conforms to an assistant schema.
-- [macro AssistantEnum<T>(schema: T)](assistantenum(schema:).md)
-  A Swift macro you use to make sure your app enum conforms to an assistant schema.
+- [macro AppIntent<T>(schema: T)](appintent(schema:).md)
+  A Swift macro you use to make sure your app intent conforms to an schema.
+- [macro AppEntity<T>(schema: T)](appentity(schema:).md)
+- [macro AppEnum<T>(schema: T)](appenum(schema:).md)
+  A Swift macro you use to make sure your app enum conforms to a schema.
 ### Books
 - [Making ebook actions available to Siri and Apple Intelligence](making-ebook-actions-available-to-siri-and-apple-intelligence.md)
   Create app intents and entities to integrate your app’s ebook and audiobook functionality with Siri and Apple Intelligence.
@@ -123,6 +122,13 @@ To learn more, refer to [`Integrating actions with Siri and Apple Intelligence`]
 ### Base protocols
 - [Assistant schema base protocols](assistant-schema-base-protocols.md)
   Protocols that provide the underlying functionality for assistant schemas.
+### Deprecated symbols
+- [macro AssistantIntent<T>(schema: T)](assistantintent(schema:).md)
+  A Swift macro you use to make sure your app intent conforms to an assistant schema.
+- [macro AssistantEntity<T>(schema: T)](assistantentity(schema:).md)
+  A Swift macro you use to make sure your app entity conforms to an assistant schema.
+- [macro AssistantEnum<T>(schema: T)](assistantenum(schema:).md)
+  A Swift macro you use to make sure your app enum conforms to an assistant schema.
 
 ## See Also
 
@@ -136,4 +142,4 @@ To learn more, refer to [`Integrating actions with Siri and Apple Intelligence`]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/app-intent-domains)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/app-intent-domains)*

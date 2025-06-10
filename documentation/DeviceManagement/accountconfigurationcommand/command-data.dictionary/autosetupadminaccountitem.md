@@ -7,8 +7,6 @@ A dictionary that describes the administrator account to create with Setup Assis
 
 **Availability**:
 - macOS 10.11+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -16,10 +14,9 @@ A dictionary that describes the administrator account to create with Setup Assis
 object AccountConfigurationCommand.Command.AutoSetupAdminAccountItem
 ```
 
-## See Also
+## Mentions
 
-- [object PasswordHash](passwordhash.md)
-  A dictionary that contains the password hash for the account.
+- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
 
 
 ---

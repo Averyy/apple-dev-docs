@@ -16,6 +16,8 @@ Use this key to indicate that your app requires access to hand-tracking data. Th
 
 - [NSWorldSensingUsageDescription](information-property-list/nsworldsensingusagedescription.md)
   A message that tells the user why the app is requesting access to image tracking, plane detection, or scene reconstruction.
+- [NSAccessoryTrackingUsageDescription](information-property-list/nsaccessorytrackingusagedescription.md)
+  A message that tells a person why the app is requesting access to track accessory position and location.
 
 
 ---

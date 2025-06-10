@@ -1,6 +1,6 @@
 # setTitle(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the button title to the specified string.

@@ -51,6 +51,7 @@ protocol ChartSymbolShape : Shape
 ### Inherits From
 - [Animatable](../SwiftUI/Animatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Shape](../SwiftUI/Shape.md)
 - [View](../SwiftUI/View.md)
 ### Conforming Types

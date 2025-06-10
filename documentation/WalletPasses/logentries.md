@@ -1,14 +1,14 @@
 # LogEntries
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that contains an array of messages.
 
 **Availability**:
 - iOS 10.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 10.0+
+- watchOS 3.0+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # civilDawn
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The time of civil sunrise when the sun’s center is 6° below the horizon.

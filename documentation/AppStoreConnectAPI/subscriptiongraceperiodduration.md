@@ -19,6 +19,7 @@ string SubscriptionGracePeriodDuration
 - [object SubscriptionGracePeriodResponse](subscriptiongraceperiodresponse.md)
 - [object SubscriptionGracePeriod](subscriptiongraceperiod.md)
 - [object SubscriptionGracePeriodUpdateRequest](subscriptiongraceperiodupdaterequest.md)
+- [object AppSubscriptionGracePeriodLinkageResponse](appsubscriptiongraceperiodlinkageresponse.md)
 
 
 ---

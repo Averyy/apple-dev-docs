@@ -1,6 +1,6 @@
 # Creating Photo Editing Extensions
 
-**Framework**: Photokit
+**Framework**: PhotoKit
 
 Provide custom functionality in the Photos app by bundling an app extension.
 
@@ -40,4 +40,4 @@ Include the app extension in your app bundle and the system installs it in Photo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PhotoKit/creating-photo-editing-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/photokit/creating-photo-editing-extensions)*

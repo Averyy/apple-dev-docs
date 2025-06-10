@@ -96,6 +96,7 @@ Each [`CapturedRoom.Object`](capturedroom/object.md) instance in a captured room
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

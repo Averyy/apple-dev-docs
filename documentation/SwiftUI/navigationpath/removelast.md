@@ -1,6 +1,6 @@
 # removeLast(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Removes values from the end of this path.

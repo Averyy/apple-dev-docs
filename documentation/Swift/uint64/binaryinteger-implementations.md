@@ -59,13 +59,6 @@
 ### Initializers
 - [init()](uint64/init.md)
   Creates a new value equal to zero.
-- [init(String, format: IntegerFormatStyle<Self>, lenient: Bool) throws](uint64/init(_:format:lenient:)-1b9ur.md)
-- [init(String, format: IntegerFormatStyle<Self>.Currency, lenient: Bool) throws](uint64/init(_:format:lenient:)-1h8g6.md)
-- [init(String, format: IntegerFormatStyle<Self>.Percent, lenient: Bool) throws](uint64/init(_:format:lenient:)-1x7s1.md)
-- [init<S>(S.ParseInput, strategy: S) throws](uint64/init(_:strategy:)-2ggmt.md)
-  Initialize an instance by parsing `value` with the given `strategy`.
-- [init<S>(S.ParseInput, strategy: S) throws](uint64/init(_:strategy:)-9spow.md)
-  Initialize an instance by parsing `value` with the given `strategy`.
 - [init<Other>(clamping: Other)](uint64/init(clamping:).md)
   Creates a new instance with the representable value that’s closest to the given integer.
 - [init<T>(truncatingIfNeeded: T)](uint64/init(truncatingifneeded:).md)
@@ -80,12 +73,6 @@
   Returns a value that is offset the specified distance from this value.
 - [func distance(to: Self) -> Int](uint64/distance(to:).md)
   Returns the distance from this value to the given value, expressed as a stride.
-- [func formatted() -> String](uint64/formatted.md)
-  Format `self` using `IntegerFormatStyle()`
-- [func formatted<S>(S) -> S.FormatOutput](uint64/formatted(_:)-2wm83.md)
-  Format `self` with the given format.
-- [func formatted<S>(S) -> S.FormatOutput](uint64/formatted(_:)-533x0.md)
-  Format `self` with the given format. `self` is first converted to `S.FormatInput` type, then format with the given format.
 - [func isMultiple(of: Self) -> Bool](uint64/ismultiple(of:).md)
   Returns `true` if this value is a multiple of the given value, and `false` otherwise.
 - [func quotientAndRemainder(dividingBy: Self) -> (quotient: Self, remainder: Self)](uint64/quotientandremainder(dividingby:).md)

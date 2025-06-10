@@ -1,6 +1,6 @@
 # monthlyStatistics(for:including:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns monthly weather statistics for the requested location, for all 12 months of the Gregorian calendar year.

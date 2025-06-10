@@ -6,6 +6,7 @@
 A handler for receiving updates to data provider states.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

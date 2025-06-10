@@ -26,8 +26,6 @@ This class provides basic methods for converting time values to the timebase of 
 
 > ❗ **Important**:  Don’t create instances of this class directly but instead use one of the concrete subclasses that manage specific types of assets.
 
- Don’t create instances of this class directly but instead use one of the concrete subclasses that manage specific types of assets.
-
 ## Topics
 
 ### Time Conversion
@@ -57,6 +55,8 @@ This class provides basic methods for converting time values to the timebase of 
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

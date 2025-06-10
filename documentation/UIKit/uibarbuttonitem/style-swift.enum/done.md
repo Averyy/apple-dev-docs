@@ -1,21 +1,21 @@
-# UIBarButtonItem.Style.done
+# done
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: property
 
 A button style for a done button.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS 2.0+
+- iPadOS 2.0+
+- Mac Catalyst 13.1+
 - tvOS ?+
-- visionOS ?+
+- visionOS 1.0+
 
 ## Declaration
 
 ```swift
-case done
+static var done: UIBarButtonItem.Style { get }
 ```
 
 #### Discussion

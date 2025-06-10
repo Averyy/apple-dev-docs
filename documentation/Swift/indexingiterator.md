@@ -80,6 +80,7 @@ for element in point {
 - [Copyable](copyable.md)
 - [IteratorProtocol](iteratorprotocol.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

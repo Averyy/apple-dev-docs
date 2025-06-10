@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: case
 
-Indicates that the user included digits after a soft pause in their dial string. A soft pause is indicated by a comma (,) and waits a few seconds before dialing the additional digits.
+A person entered a soft pause.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,17 @@ Indicates that the user included digits after a soft pause in their dial string.
 ```swift
 case softPause
 ```
+
+#### Discussion
+
+A comma (,) indicates a soft pause. When a person enters a soft pause, the system waits a few seconds before it dials additional digits.
+
+## See Also
+
+- [PlayToneAction.Tone.hardPause](playtoneaction/tone-swift.enum/hardpause.md)
+  A person entered a hard pause.
+- [PlayToneAction.Tone.single](playtoneaction/tone-swift.enum/single.md)
+  A person entered a digit.
 
 
 ---

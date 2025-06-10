@@ -44,4 +44,4 @@ To get the best of both worlds, you often use asymmetric cryptography to communi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/generating-new-cryptographic-keys)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/generating-new-cryptographic-keys)*

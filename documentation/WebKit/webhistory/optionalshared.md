@@ -1,6 +1,6 @@
 # optionalShared()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a shared web history object, if one exists.

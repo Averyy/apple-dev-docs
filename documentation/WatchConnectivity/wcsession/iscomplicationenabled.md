@@ -1,6 +1,6 @@
 # isComplicationEnabled
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 A Boolean value indicating whether the Watch app’s complication is in use on the currently paired and active Apple Watch.

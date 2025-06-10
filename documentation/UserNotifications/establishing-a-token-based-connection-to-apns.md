@@ -1,6 +1,6 @@
 # Establishing a token-based connection to APNs
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Secure your communications with Apple Push Notification service (APNs) by using stateless authentication tokens.
 
@@ -19,8 +19,6 @@ Use team-scoped keys to generate authentication tokens for sending notifications
 
 > ❗ **Important**:  If you have existing team-scoped keys that work in both the Sandbox and Production environments it will continue to be supported. However, it’s recommended to use different, environment-specific keys to create distinct workflows and to safely manage your development process.
 
- If you have existing team-scoped keys that work in both the Sandbox and Production environments it will continue to be supported. However, it’s recommended to use different, environment-specific keys to create distinct workflows and to safely manage your development process.
-
 ##### Topic Specific Keys
 
 Use topic-specific keys to generate authentication tokens for sending notifications to specific team topics within a single environment. These keys provide granular control and simplify management. You can create a maximum of 200 keys for Sandbox and 200 for Production, with up to 400 topics per topic-based key.
@@ -28,8 +26,6 @@ Use topic-specific keys to generate authentication tokens for sending notificati
 A topic-specific key can have at most one related key in the same environment. When you connect to the APNs server, you can use authentication tokens from both the topic-based key and its related key (if available) for push notification requests.
 
 > ❗ **Important**:  APNs doesn’t support authentication tokens from multiple developer accounts over a single connection.
-
- APNs doesn’t support authentication tokens from multiple developer accounts over a single connection.
 
 ##### Obtain an Encryption Key and Key Id From Apple
 
@@ -45,8 +41,6 @@ When you request a key, Apple gives you:
 Secure both pieces of information carefully. You use the authentication token signing key to encrypt your JSON tokens, so this key must remain private to prevent anyone else from generating those tokens.
 
 > ❗ **Important**:  If you suspect that you may have a compromised authentication token signing key, revoke it and request a new one. (You revoke the key from your developer account on [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com) in the same place where you created it). For maximum security, close all of your existing HTTP/2 connections to APNs and establish new connections before making new requests.
-
- If you suspect that you may have a compromised authentication token signing key, revoke it and request a new one. (You revoke the key from your developer account on [`developer.apple.com`](https://developer.apple.comhttps://developer.apple.com) in the same place where you created it). For maximum security, close all of your existing HTTP/2 connections to APNs and establish new connections before making new requests.
 
 For detailed instructions on how to use an authentication token, see the `authorization` header field in [`Sending notification requests to APNs`](sending-notification-requests-to-apns.md).
 
@@ -74,8 +68,6 @@ The keys divide between the header and claims payload of the JSON Web Token. The
 ```
 
 > ❗ **Important**:  If the value in the `iat` field is more than one hour old, APNs rejects any notifications containing the token, returning an `ExpiredProviderToken` `(403)` error.
-
- If the value in the `iat` field is more than one hour old, APNs rejects any notifications containing the token, returning an `ExpiredProviderToken` `(403)` error.
 
 Encrypt the resulting JSON data using your authentication token signing key and the specified algorithm. Your provider server must include the resulting encrypted data with all notification requests.
 
@@ -109,8 +101,6 @@ As part of the authentication process, APNs relates a team ID and associated bun
 For transferred apps, close and recreate any existing connections from your push provider server to APNs. If you don’t, APNs can’t start accepting push requests from the new team.
 
 > ❗ **Important**:  If you use a token from a team-scoped key during the first push, trying to send a push with a topic-specific key or a team-scoped key from a different environment results in an error. After you establish a connection with a topic-specific key for the initial push, using an unrelated topic-specific key, a key from a different environment, a team-scoped key, or sending to a nonassociated topic also results in an error.
-
- If you use a token from a team-scoped key during the first push, trying to send a push with a topic-specific key or a team-scoped key from a different environment results in an error. After you establish a connection with a topic-specific key for the initial push, using an unrelated topic-specific key, a key from a different environment, a team-scoped key, or sending to a nonassociated topic also results in an error.
 
 ## See Also
 

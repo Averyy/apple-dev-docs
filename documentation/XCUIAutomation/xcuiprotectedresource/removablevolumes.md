@@ -1,6 +1,6 @@
 # XCUIProtectedResource.removableVolumes
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The protected resource case for access to removable volumes.

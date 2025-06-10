@@ -50,6 +50,7 @@ struct TeamIdentifier
 - [OnDiskConstraint](ondiskconstraint.md)
 - [ProcessConstraint](processconstraint.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

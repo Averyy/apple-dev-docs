@@ -6,7 +6,7 @@ Learn how to configure your App Clip to prevent it from being unavailable in the
 
 #### Overview
 
-An App Clip is a lightweight version of your app that lets people quickly start and finish a task from your app, without downloading and installing it. People launch your App Clip by performing an invocation, for example, by scanning an App Clip Code at a physical location, tapping a link in the Maps app, or tapping an App Clip preview. To configure how your App Clip is launched, you create a [`default App Clip experience`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/offer-app-clip-experiences/offer-a-default-app-clip-experience) and optional [`advanced App Clip experiences`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/offer-app-clip-experiences/offer-an-advanced-app-clip-experience) in App Store Connect. To learn how to configure, build, test, and distribute an App Clip, see [`App Clips`](https://developer.apple.com/documentation/AppClip).
+An App Clip is a lightweight version of your app that lets people quickly start and finish a task from your app, without downloading and installing it. People launch your App Clip by performing an invocation, for example, by scanning an App Clip Code at a physical location, tapping a link in the Maps app, or tapping an App Clip preview. To configure how your App Clip is launched, you create a [`default App Clip experience`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/offer-app-clip-experiences/offer-a-default-app-clip-experience) and optional [`advanced App Clip experiences`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/offer-app-clip-experiences/offer-an-advanced-app-clip-experience) in App Store Connect. To learn how to configure, build, test, and distribute an App Clip, see App Clips.
 
 When you launch a debug or release build of your App Clip, you may discover that your App Clip fails to launch with the following error message:
 
@@ -42,11 +42,11 @@ Enterprise distribution isn’t available to App Clips. To distribute your App C
 
 #### Cache Your App Clip Before Testing Your Local Experience
 
-To test your App Clip with a local experience, build your App Clip, sign it for Development, Ad Hoc, or TestFlight distribution, then run your App Clip on your test device to cache it. Local experiences don’t launch an App Clip that’s published on the App Store. For more information, see [`Testing the launch experience of your App Clip`](https://developer.apple.com/documentation/AppClip/testing-the-launch-experience-of-your-app-clip).
+To test your App Clip with a local experience, build your App Clip, sign it for Development, Ad Hoc, or TestFlight distribution, then run your App Clip on your test device to cache it. Local experiences don’t launch an App Clip that’s published on the App Store. For more information, see Testing the launch experience of your App Clip.
 
 #### Clear the Cache Before Testing Your Advanced App Clip Experiences
 
-To show new or updated App Clip experiences, clear the cache on your device before performing invocations for your advanced App Clip experiences. For more information, see [`Testing the launch experience of your App Clip`](https://developer.apple.com/documentation/AppClip/testing-the-launch-experience-of-your-app-clip).
+To show new or updated App Clip experiences, clear the cache on your device before performing invocations for your advanced App Clip experiences. For more information, see Testing the launch experience of your App Clip.
 
 #### Retry Your Invocation Later
 

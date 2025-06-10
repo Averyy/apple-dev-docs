@@ -44,4 +44,4 @@ See [`Rendering a Scene with Deferred Lighting in Objective-C`](rendering-a-scen
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/choosing-a-resource-storage-mode-for-apple-gpus)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/choosing-a-resource-storage-mode-for-apple-gpus)*

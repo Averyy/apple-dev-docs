@@ -1,6 +1,6 @@
 # Providing an integrated view of your timeline when playing HLS interstitials
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Go beyond simple ad insertion with point and fill occupancy HLS interstitials.
 
@@ -39,4 +39,4 @@ When the stream starts, copy its URL, which is in the following format: `http://
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/providing-an-integrated-view-of-your-timeline-when-playing-hls-interstitials)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/providing-an-integrated-view-of-your-timeline-when-playing-hls-interstitials)*

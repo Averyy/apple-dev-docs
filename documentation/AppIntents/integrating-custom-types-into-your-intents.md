@@ -1,6 +1,6 @@
 # Integrating custom data types into your intents
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Provide the system with information about the types your app uses to model its data so that your intents can use those types as parameters.
 
@@ -199,4 +199,4 @@ For more information, see [`DisplayRepresentation`](displayrepresentation.md).
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/integrating-custom-types-into-your-intents)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/integrating-custom-types-into-your-intents)*

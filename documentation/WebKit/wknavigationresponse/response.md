@@ -1,6 +1,6 @@
 # response
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The frame’s response.

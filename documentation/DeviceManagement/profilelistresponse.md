@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to get a list of installed profiles.
+A response from the device after it processes the command to get a list of installed profiles on a device.
 
 **Availability**:
 - iOS 4.0+
@@ -12,8 +12,6 @@ A response from the device after it processes the command to get a list of insta
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,13 +21,11 @@ object ProfileListResponse
 
 ## Topics
 
-### Commands
-- [object ProfileListResponse.ProfileListItem](profilelistresponse/profilelistitem.md)
-  A dictionary that describes a profile list item.
-- [object ProfileListResponse.ProfileListItem.PayloadContentItem](profilelistresponse/profilelistitem/payloadcontentitem.md)
-  A dictionary that describes a profile payload content item.
+### Objects
 - [object ProfileListResponse.ErrorChainItem](profilelistresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
+- [object ProfileListResponse.ProfileListItem](profilelistresponse/profilelistitem.md)
+  A dictionary that describes a profile list item.
 
 ## See Also
 

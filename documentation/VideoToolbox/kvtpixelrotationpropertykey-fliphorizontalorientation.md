@@ -1,6 +1,6 @@
 # kVTPixelRotationPropertyKey_FlipHorizontalOrientation
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A key that specifies a horizontal flip.

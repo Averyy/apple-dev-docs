@@ -27,8 +27,6 @@ Stack views are nestable: a stack view is a valid element in the [`views`](nssta
 
 > ❗ **Important**:  Do not add views or constraints to a stack view’s private views. A stack view’s private views might change in future versions of macOS and are not guaranteed to be encoded or decoded with the [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder) class.
 
- Do not add views or constraints to a stack view’s private views. A stack view’s private views might change in future versions of macOS and are not guaranteed to be encoded or decoded with the [`NSCoder`](https://developer.apple.com/documentation/Foundation/NSCoder) class.
-
 For more information on [`NSStackView`](nsstackview.md), see [`Organize Your User Interface with a Stack View`](organize-your-user-interface-with-a-stack-view.md).
 
 ##### Layout Direction and Gravity Areas
@@ -148,6 +146,7 @@ The system calls a stack view delegate method when a view is about to be detache
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

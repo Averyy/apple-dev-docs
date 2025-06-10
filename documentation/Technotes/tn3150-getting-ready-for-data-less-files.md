@@ -16,16 +16,16 @@ Materializing a dataless file can take time if the file is large or there are po
 
 Dataless files reduce the amount of storage space a file typically consumes, but accessing a dataless file causes the system to materialize the file. This can take a long time, creating a poor user experience in apps that aren’t ready for it.
 
-This typically affects apps that store files in their own [`url(forUbiquityContainerIdentifier:)`](https://developer.apple.com/documentation/foundation/filemanager/1411653-url) or access files from network file providers like iCloud Drive. Common symptoms are:
+This typically affects apps that store files in their own [`url(forUbiquityContainerIdentifier:)`](https://developer.apple.com/documentation/Foundation/FileManager/url(forUbiquityContainerIdentifier:)) or access files from network file providers like iCloud Drive. Common symptoms are:
 
 - Slower frame rates and jitters when someone scrolls a user interface that loads data from one or more files
 - Spins or hangs when performing file system operations
 - Time-out errors (`ETIMEDOUT`) when invoking file system APIs
 - A watchdog termination where the crash report includes reference to the materialization process
 
-Examples of actions that may result in one or more of these symptoms are enumerating a directory’s contents and checking whether a file exists using [`fileExists(atPath:)`](https://developer.apple.com/documentation/foundation/filemanager/1415645-fileexists).
+Examples of actions that may result in one or more of these symptoms are enumerating a directory’s contents and checking whether a file exists using [`fileExists(atPath:)`](https://developer.apple.com/documentation/Foundation/FileManager/fileExists(atPath:)).
 
-If you app encounters one of these symptoms, use Instruments to profile your app and identify the contributing API calls. For example, the following trace shows an app using [`contentsOfDirectory(atPath:)`](https://developer.apple.com/documentation/foundation/filemanager/1414584-contentsofdirectory) to retrieve all paths in a directory, and the `apfs_materialize_dataless_file_ext` symbol in the last frame corresponds to the materialization process:
+If you app encounters one of these symptoms, use Instruments to profile your app and identify the contributing API calls. For example, the following trace shows an app using [`contentsOfDirectory(atPath:)`](https://developer.apple.com/documentation/Foundation/FileManager/contentsOfDirectory(atPath:)) to retrieve all paths in a directory, and the `apfs_materialize_dataless_file_ext` symbol in the last frame corresponds to the materialization process:
 
 ```None
  1000 -[NSFileManager contentsOfDirectoryAtPath:error:] + 36 (Foundation + 416570) [0x7ff81ca4fb3a]

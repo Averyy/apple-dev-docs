@@ -29,6 +29,7 @@ object AppCustomProductPageUpdateRequest
   A response that contains a single app custom product page resource.
 - [object AppCustomProductPagesResponse](appcustomproductpagesresponse.md)
   A response that contains a list of app custom product page resources.
+- [object AppCustomProductPageAppCustomProductPageVersionsLinkagesResponse](appcustomproductpageappcustomproductpageversionslinkagesresponse.md)
 
 
 ---

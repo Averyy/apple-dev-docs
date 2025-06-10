@@ -1,6 +1,6 @@
 # XCUIApplication
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: class
 
 A proxy that can launch, monitor, and terminate a test application.

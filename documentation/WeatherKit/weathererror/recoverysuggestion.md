@@ -1,6 +1,6 @@
 # recoverySuggestion
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A localized message describing how to recover from the failure.

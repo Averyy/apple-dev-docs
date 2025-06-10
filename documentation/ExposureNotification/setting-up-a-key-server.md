@@ -1,6 +1,6 @@
 # Setting Up a Key Server
 
-**Framework**: Exposurenotification
+**Framework**: Exposure Notification
 
 Ensure that your server meets the requirements for supporting Exposure Notifications.
 
@@ -186,4 +186,4 @@ To calculate the `signature` data inside a `TEKSignature` message, start by gene
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/setting-up-a-key-server)*
+*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/setting-up-a-key-server)*

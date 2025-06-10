@@ -1,6 +1,6 @@
 # Associating bugs with tests
 
-**Framework**: Testing
+**Framework**: Swift Testing
 
 Associate bugs uncovered or verified by tests.
 
@@ -80,4 +80,4 @@ func hasNapkins() async {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Testing/associatingbugs)*
+*[View on Apple Developer](https://developer.apple.com/documentation/testing/associatingbugs)*

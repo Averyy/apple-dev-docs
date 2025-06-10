@@ -23,8 +23,8 @@ struct Alignment
 
 ## Mentions
 
-- [Building layouts with stack views](building-layouts-with-stack-views.md)
 - [Aligning views within a stack](aligning-views-within-a-stack.md)
+- [Building layouts with stack views](building-layouts-with-stack-views.md)
 
 #### Overview
 
@@ -148,6 +148,7 @@ For more information about creating custom guides, including the code that creat
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -167,6 +168,10 @@ For more information about creating custom guides, including the code that creat
   A type that you use to create custom alignment guides.
 - [struct ViewDimensions](viewdimensions.md)
   A view’s size and alignment guides in its own coordinate space.
+- [struct ViewDimensions3D](viewdimensions3d.md)
+  A view’s 3D size and alignment guides in its own coordinate space.
+- [struct SpatialContainer](spatialcontainer.md)
+  A layout container that aligns overlapping content in 3D space.
 
 
 ---

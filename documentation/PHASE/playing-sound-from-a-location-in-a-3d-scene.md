@@ -1,6 +1,6 @@
 # Playing sound from a location in a 3D scene
 
-**Framework**: Phase
+**Framework**: PHASE
 
 Position sound from a specific direction and automatically raise or lower volume based on the environment.
 
@@ -288,4 +288,4 @@ Because `electricBuzzingSamplerNode` and `shufflingSamplerNode` have no children
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PHASE/playing-sound-from-a-location-in-a-3d-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/phase/playing-sound-from-a-location-in-a-3d-scene)*

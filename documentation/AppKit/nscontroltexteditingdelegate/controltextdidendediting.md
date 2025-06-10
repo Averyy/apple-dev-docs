@@ -1,6 +1,6 @@
 # controlTextDidEndEditing(_:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Tells the delegate that the control finished editing its text content and committed the changes.

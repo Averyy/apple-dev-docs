@@ -39,4 +39,4 @@ If any elements have missing or improper spoken descriptions, find the source of
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Accessibility/inspecting-the-accessibility-of-screens)*
+*[View on Apple Developer](https://developer.apple.com/documentation/accessibility/inspecting-the-accessibility-of-screens)*

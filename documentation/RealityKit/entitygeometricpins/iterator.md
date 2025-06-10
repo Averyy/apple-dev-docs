@@ -10,6 +10,7 @@ An object to iterate over all geometric pins in the collection.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -20,9 +21,6 @@ struct Iterator
 
 ## Topics
 
-### Instance Methods
-- [func next() -> EntityGeometricPins.Iterator.Element?](entitygeometricpins/iterator/next.md)
-  Advances to the next element and returns it, or `nil` if no next element exists.
 ### Type Aliases
 - [EntityGeometricPins.Iterator.Element](entitygeometricpins/iterator/element.md)
   An individual pin in the collection.

@@ -28,6 +28,7 @@ You don’t create a [`Transaction.Transactions`](transaction/transactions.md) s
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

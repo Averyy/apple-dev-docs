@@ -20,8 +20,6 @@ After this method is invoked, no other application can use the receiver.
 
 > ❗ **Important**:  Although you must call this method to release a temporary, privately named pasteboard to avoid leaks, you should never call it on a standard pasteboard.
 
- Although you must call this method to release a temporary, privately named pasteboard to avoid leaks, you should never call it on a standard pasteboard.
-
 ## See Also
 
 - [class var general: NSPasteboard](nspasteboard/general.md)

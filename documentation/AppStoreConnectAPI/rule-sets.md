@@ -24,10 +24,13 @@ The `rule set` resource represents a set of rules associated with a queue that G
   Get information about a specific rule set and its related objects.
 - [List queues in a rule set](get-v1-gamecentermatchmakingrulesets-_id_-matchmakingqueues.md)
   Get information about queues that belong to a rule set.
+- [GET /v1/gameCenterMatchmakingRuleSets/{id}/relationships/matchmakingQueues](get-v1-gamecentermatchmakingrulesets-_id_-relationships-matchmakingqueues.md)
 - [List rules in a rule set](get-v1-gamecentermatchmakingrulesets-_id_-rules.md)
   Get information about the rules in a rule set.
+- [GET /v1/gameCenterMatchmakingRuleSets/{id}/relationships/rules](get-v1-gamecentermatchmakingrulesets-_id_-relationships-rules.md)
 - [List teams in a rule set](get-v1-gamecentermatchmakingrulesets-_id_-teams.md)
   Get information about the teams in a rule set.
+- [GET /v1/gameCenterMatchmakingRuleSets/{id}/relationships/teams](get-v1-gamecentermatchmakingrulesets-_id_-relationships-teams.md)
 ### Objects
 - [object GameCenterMatchmakingRuleSetCreateRequest](gamecentermatchmakingrulesetcreaterequest.md)
   The request body you use to create a rule set.
@@ -41,6 +44,9 @@ The `rule set` resource represents a set of rules associated with a queue that G
   The response body for endpoints that get multiple rules.
 - [object GameCenterMatchmakingRuleSet](gamecentermatchmakingruleset.md)
   The data structure that represents a rule set.
+- [object GameCenterMatchmakingRuleSetMatchmakingQueuesLinkagesResponse](gamecentermatchmakingrulesetmatchmakingqueueslinkagesresponse.md)
+- [object GameCenterMatchmakingRuleSetRulesLinkagesResponse](gamecentermatchmakingrulesetruleslinkagesresponse.md)
+- [object GameCenterMatchmakingRuleSetTeamsLinkagesResponse](gamecentermatchmakingrulesetteamslinkagesresponse.md)
 
 ## See Also
 

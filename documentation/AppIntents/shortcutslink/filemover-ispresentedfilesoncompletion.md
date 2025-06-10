@@ -1,6 +1,6 @@
 # fileMover(isPresented:files:onCompletion:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Presents a system interface for allowing the user to move a collection of existing files to a new location.
@@ -8,9 +8,9 @@ Presents a system interface for allowing the user to move a collection of existi
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

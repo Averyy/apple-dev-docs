@@ -31,7 +31,7 @@ struct Run
   The typographic bounds of the run of glyphs.
 ### Subscripts
 - [subscript<T>(T.Type) -> T?](text/layout/run/subscript(_:).md)
-  The custom attribute of type `T` associated with the run of glyphs, or nil.
+  The custom attribute of type `T` associated with the run of glyphs, or nil. If no run contains the custom attribute we also check its attachment’s runs.
 
 ## Relationships
 

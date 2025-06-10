@@ -22,8 +22,6 @@ By default, the [`videoFormat`](arconfiguration/videoformat-swift.property.md) p
 
 > ❗ **Important**:  [`ARConfiguration`](arconfiguration.md) is an abstract base class, so its implementation of this property always returns an empty array. Read this property from the configuration subclass you plan to use for your AR session, such as [`ARWorldTrackingConfiguration`](arworldtrackingconfiguration.md) or [`ARFaceTrackingConfiguration`](arfacetrackingconfiguration.md).
 
- [`ARConfiguration`](arconfiguration.md) is an abstract base class, so its implementation of this property always returns an empty array. Read this property from the configuration subclass you plan to use for your AR session, such as [`ARWorldTrackingConfiguration`](arworldtrackingconfiguration.md) or [`ARFaceTrackingConfiguration`](arfacetrackingconfiguration.md).
-
 Different devices and iOS versions offer different sets of supported video formats, but the order of this array always puts higher-quality formats before lower-quality formats. For best results across all devices and versions, choose formats based on their order in the array rather than on hard-coded minimum resolution or frame rate values.
 
 ## See Also

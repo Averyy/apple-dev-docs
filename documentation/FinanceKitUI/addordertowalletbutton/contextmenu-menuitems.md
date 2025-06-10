@@ -1,6 +1,6 @@
 # contextMenu(menuItems:)
 
-**Framework**: Financekitui  
+**Framework**: FinanceKitUI  
 **Kind**: method
 
 Adds a context menu to a view.

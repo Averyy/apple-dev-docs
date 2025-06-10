@@ -45,6 +45,8 @@ class MTLIndirectCommandBufferDescriptor
 - [var maxMeshBufferBindCount: Int](mtlindirectcommandbufferdescriptor/maxmeshbufferbindcount.md)
 - [var maxObjectBufferBindCount: Int](mtlindirectcommandbufferdescriptor/maxobjectbufferbindcount.md)
 - [var maxObjectThreadgroupMemoryBindCount: Int](mtlindirectcommandbufferdescriptor/maxobjectthreadgroupmemorybindcount.md)
+- [var supportColorAttachmentMapping: Bool](mtlindirectcommandbufferdescriptor/supportcolorattachmentmapping.md)
+  Specifies if the indirect command buffer should support color attachment mapping.
 - [var supportDynamicAttributeStride: Bool](mtlindirectcommandbufferdescriptor/supportdynamicattributestride.md)
 - [var supportRayTracing: Bool](mtlindirectcommandbufferdescriptor/supportraytracing.md)
 

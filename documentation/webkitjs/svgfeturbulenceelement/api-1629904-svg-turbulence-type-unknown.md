@@ -1,6 +1,6 @@
 # SVG_TURBULENCE_TYPE_UNKNOWN
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # WKSnapshotReason.complicationUpdate
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The app updated the complication timeline.

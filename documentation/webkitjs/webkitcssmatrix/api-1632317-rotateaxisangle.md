@@ -1,6 +1,6 @@
 # rotateAxisAngle
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Returns the result of rotating this matrix by a given vector and angle.

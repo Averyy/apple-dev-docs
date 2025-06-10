@@ -28,15 +28,13 @@ The method generates a digital camera format (DCF) compliant URL with security s
 
 > ❗ **Important**:  The method generates an error if [`authorizationStatus`](avexternalstoragedevice/authorizationstatus.md) isn’t [`AVAuthorizationStatus.authorized`](avauthorizationstatus/authorized.md).
 
- The method generates an error if [`authorizationStatus`](avexternalstoragedevice/authorizationstatus.md) isn’t [`AVAuthorizationStatus.authorized`](avauthorizationstatus/authorized.md).
-
 ##### Request Access to the Storage Device Before Request
 
 Your app can request authorization before calling the method if [`authorizationStatus`](avexternalstoragedevice/authorizationstatus.md) is [`AVAuthorizationStatus.notDetermined`](avauthorizationstatus/notdetermined.md) by calling the [`requestAccess(completionHandler:)`](avexternalstoragedevice/requestaccess(completionhandler:).md) method first.
 
 ##### Start and Stop Access to a Url Around Your Code
 
-To access one of the security-scoped URLs the method returns, you need to call the [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/url/1779698-startaccessingsecurityscopedreso), and [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/url/1780153-stopaccessingsecurityscopedresou) methods before and after your code.
+To access one of the security-scoped URLs the method returns, you need to call the [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/URL/startAccessingSecurityScopedResource()), and [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/URL/stopAccessingSecurityScopedResource()) methods before and after your code.
 
 ## Parameters
 

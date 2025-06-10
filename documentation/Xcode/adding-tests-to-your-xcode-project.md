@@ -120,4 +120,4 @@ class PerformanceTests : XCTestCase {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/adding-tests-to-your-xcode-project)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/adding-tests-to-your-xcode-project)*

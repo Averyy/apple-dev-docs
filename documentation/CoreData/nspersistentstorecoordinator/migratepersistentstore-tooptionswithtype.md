@@ -30,8 +30,6 @@ This method is typically used for “Save As” operations. Performance may vary
 
 > ❗ **Important**:  After invocation of this method, the specified store is removed from the coordinator thus `store` is no longer a useful reference.
 
- After invocation of this method, the specified store is removed from the coordinator thus `store` is no longer a useful reference.
-
 ## Parameters
 
 - `store`: A persistent store.

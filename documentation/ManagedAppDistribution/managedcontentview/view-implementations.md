@@ -41,6 +41,8 @@
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityAction(named: LocalizedStringKey, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityaction(named:_:)-4c3ke.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
+- [func accessibilityAction(named: LocalizedStringResource, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityaction(named:_:)-agg6.md)
+  Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityActions<Content>(() -> Content) -> some View](managedcontentview/accessibilityactions(_:).md)
   Adds multiple accessibility actions to the view.
 - [func accessibilityActions<Content>(category: AccessibilityActionCategory, () -> Content) -> some View](managedcontentview/accessibilityactions(category:_:).md)
@@ -61,6 +63,8 @@
   Adds a descriptor to a View that represents a chart to make the chart’s contents accessible to all users.
 - [func accessibilityChildren<V>(children: () -> V) -> some View](managedcontentview/accessibilitychildren(children:).md)
   Replaces the existing accessibility element’s children with one or more new synthetic accessibility elements.
+- [func accessibilityCustomContent(AccessibilityCustomContentKey, LocalizedStringResource, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitycustomcontent(_:_:importance:)-165nf.md)
+  Add additional accessibility information to the view.
 - [func accessibilityCustomContent(LocalizedStringKey, LocalizedStringKey, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitycustomcontent(_:_:importance:)-1x6he.md)
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent<V>(LocalizedStringKey, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitycustomcontent(_:_:importance:)-1zm6a.md)
@@ -69,17 +73,27 @@
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent(Text, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitycustomcontent(_:_:importance:)-2jq9u.md)
   Add additional accessibility information to the view.
+- [func accessibilityCustomContent(LocalizedStringResource, LocalizedStringResource, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitycustomcontent(_:_:importance:)-2wpxc.md)
+  Add additional accessibility information to the view.
 - [func accessibilityCustomContent<L, V>(L, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitycustomcontent(_:_:importance:)-51brk.md)
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent(LocalizedStringKey, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitycustomcontent(_:_:importance:)-5izlc.md)
+  Add additional accessibility information to the view.
+- [func accessibilityCustomContent(LocalizedStringResource, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitycustomcontent(_:_:importance:)-86tpx.md)
+  Add additional accessibility information to the view.
+- [func accessibilityCustomContent<V>(LocalizedStringResource, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitycustomcontent(_:_:importance:)-982ih.md)
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent(AccessibilityCustomContentKey, Text?, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitycustomcontent(_:_:importance:)-9h5q4.md)
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent<V>(AccessibilityCustomContentKey, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitycustomcontent(_:_:importance:)-hllj.md)
   Add additional accessibility information to the view.
+- [func accessibilityDefaultFocus<Value>(AccessibilityFocusState<Value>.Binding, Value) -> some View](managedcontentview/accessibilitydefaultfocus(_:_:).md)
+  Defines a region in which default accessibility focus is evaluated by assigning a value to a given accessibility focus state binding.
 - [func accessibilityDirectTouch(Bool, options: AccessibilityDirectTouchOptions) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitydirecttouch(_:options:).md)
   Explicitly set whether this accessibility element is a direct touch area. Direct touch areas passthrough touch events to the app rather than being handled through an assistive technology, such as VoiceOver. The modifier accepts an optional `AccessibilityDirectTouchOptions` option set to customize the functionality of the direct touch area.
 - [func accessibilityDragPoint<S>(UnitPoint, description: S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitydragpoint(_:description:)-3uksi.md)
+  The point an assistive technology should use to begin a drag interaction.
+- [func accessibilityDragPoint(UnitPoint, description: LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitydragpoint(_:description:)-77z03.md)
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint(UnitPoint, description: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitydragpoint(_:description:)-7u9yr.md)
   The point an assistive technology should use to begin a drag interaction.
@@ -91,15 +105,21 @@
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint<S>(UnitPoint, description: S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitydragpoint(_:description:isenabled:)-6za94.md)
   The point an assistive technology should use to begin a drag interaction.
+- [func accessibilityDragPoint(UnitPoint, description: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitydragpoint(_:description:isenabled:)-hm6v.md)
+  The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitydroppoint(_:description:)-27dll.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitydroppoint(_:description:)-3orwc.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint<S>(UnitPoint, description: S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitydroppoint(_:description:)-935kr.md)
   The point an assistive technology should use to end a drag interaction.
+- [func accessibilityDropPoint(UnitPoint, description: LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitydroppoint(_:description:)-gtn7.md)
+  The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitydroppoint(_:description:isenabled:)-3zk2v.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint<S>(UnitPoint, description: S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitydroppoint(_:description:isenabled:)-5h97h.md)
+  The point an assistive technology should use to end a drag interaction.
+- [func accessibilityDropPoint(UnitPoint, description: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitydroppoint(_:description:isenabled:)-6yqsd.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitydroppoint(_:description:isenabled:)-854q8.md)
   The point an assistive technology should use to end a drag interaction.
@@ -117,6 +137,8 @@
   Specifies whether to hide this view from system accessibility features.
 - [func accessibilityHint(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityhint(_:)-14l34.md)
   Communicates to the user what happens after performing the view’s action.
+- [func accessibilityHint(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityhint(_:)-38znu.md)
+  Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityhint(_:)-5u7dc.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityhint(_:)-9p13p.md)
@@ -126,6 +148,8 @@
 - [func accessibilityHint<S>(S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityhint(_:isenabled:)-5sw48.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityhint(_:isenabled:)-7ifcg.md)
+  Communicates to the user what happens after performing the view’s action.
+- [func accessibilityHint(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityhint(_:isenabled:)-86dq6.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityIdentifier(String) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityidentifier(_:).md)
   Uses the string you specify to identify the view.
@@ -145,11 +169,15 @@
   Sets alternate input labels with which users identify a view.
 - [func accessibilityInputLabels([Text], isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityinputlabels(_:isenabled:)-losf.md)
   Sets alternate input labels with which users identify a view.
+- [func accessibilityLabel(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitylabel(_:)-4i69e.md)
+  Adds a label to the view that describes its contents.
 - [func accessibilityLabel<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitylabel(_:)-5gcp6.md)
   Adds a label to the view that describes its contents.
 - [func accessibilityLabel(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitylabel(_:)-7kzf5.md)
   Adds a label to the view that describes its contents.
 - [func accessibilityLabel(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitylabel(_:)-9na6o.md)
+  Adds a label to the view that describes its contents.
+- [func accessibilityLabel(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitylabel(_:isenabled:)-1ulex.md)
   Adds a label to the view that describes its contents.
 - [func accessibilityLabel(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilitylabel(_:isenabled:)-9704e.md)
   Adds a label to the view that describes its contents.
@@ -177,8 +205,12 @@
   Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
 - [func accessibilityRotor<Content>(AccessibilitySystemRotor, entries: () -> Content) -> some View](managedcontentview/accessibilityrotor(_:entries:)-70ays.md)
   Create an Accessibility Rotor replacing the specified system-provided Rotor.
+- [func accessibilityRotor<Content>(LocalizedStringResource, entries: () -> Content) -> some View](managedcontentview/accessibilityrotor(_:entries:)-8xyi6.md)
+  Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
 - [func accessibilityRotor<Content>(LocalizedStringKey, entries: () -> Content) -> some View](managedcontentview/accessibilityrotor(_:entries:)-8zhb3.md)
   Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
+- [func accessibilityRotor<EntryModel, ID>(LocalizedStringResource, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](managedcontentview/accessibilityrotor(_:entries:entryid:entrylabel:)-3vuwy.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel, ID>(Text, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](managedcontentview/accessibilityrotor(_:entries:entryid:entrylabel:)-6sedq.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel, ID>(AccessibilitySystemRotor, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](managedcontentview/accessibilityrotor(_:entries:entryid:entrylabel:)-7iio8.md)
@@ -195,9 +227,13 @@
   Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<L, EntryModel>(L, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](managedcontentview/accessibilityrotor(_:entries:entrylabel:)-e26s.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
+- [func accessibilityRotor<EntryModel>(LocalizedStringResource, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](managedcontentview/accessibilityrotor(_:entries:entrylabel:)-jpak.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor(LocalizedStringKey, textRanges: [Range<String.Index>]) -> some View](managedcontentview/accessibilityrotor(_:textranges:)-5ighp.md)
   Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 - [func accessibilityRotor(Text, textRanges: [Range<String.Index>]) -> some View](managedcontentview/accessibilityrotor(_:textranges:)-5jmik.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
+- [func accessibilityRotor(LocalizedStringResource, textRanges: [Range<String.Index>]) -> some View](managedcontentview/accessibilityrotor(_:textranges:)-7qp0m.md)
   Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 - [func accessibilityRotor<L>(L, textRanges: [Range<String.Index>]) -> some View](managedcontentview/accessibilityrotor(_:textranges:)-88rwg.md)
   Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
@@ -207,6 +243,14 @@
   Defines an explicit identifier tying an Accessibility element for this view to an entry in an Accessibility Rotor.
 - [func accessibilityScrollAction((Edge) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityscrollaction(_:).md)
   Adds an accessibility scroll action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
+- [func accessibilityScrollStatus(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityscrollstatus(_:isenabled:)-18jzc.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityscrollstatus(_:isenabled:)-2hcld.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityscrollstatus(_:isenabled:)-2kefy.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(some StringProtocol, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityscrollstatus(_:isenabled:)-88ojr.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
 - [func accessibilityShowsLargeContentViewer() -> some View](managedcontentview/accessibilityshowslargecontentviewer.md)
   Adds a default large content view to be shown by the large content viewer.
 - [func accessibilityShowsLargeContentViewer<V>(() -> V) -> some View](managedcontentview/accessibilityshowslargecontentviewer(_:).md)
@@ -219,11 +263,15 @@
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityvalue(_:)-7635w.md)
   Adds a textual description of the value that the view contains.
+- [func accessibilityValue(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityvalue(_:)-8kc3f.md)
+  Adds a textual description of the value that the view contains.
 - [func accessibilityValue<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityvalue(_:)-9f4is.md)
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityvalue(_:isenabled:)-3uvba.md)
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue<S>(S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityvalue(_:isenabled:)-41kg9.md)
+  Adds a textual description of the value that the view contains.
+- [func accessibilityValue(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityvalue(_:isenabled:)-90b5n.md)
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](managedcontentview/accessibilityvalue(_:isenabled:)-9vsil.md)
   Adds a textual description of the value that the view contains.
@@ -235,6 +283,8 @@
   Presents an action sheet using the given item as a data source for the sheet’s content.
 - [func alert<A>(Text, isPresented: Binding<Bool>, actions: () -> A) -> some View](managedcontentview/alert(_:ispresented:actions:)-5esuz.md)
   Presents an alert when a given condition is true, using a text view for the title.
+- [func alert<A>(LocalizedStringResource, isPresented: Binding<Bool>, actions: () -> A) -> some View](managedcontentview/alert(_:ispresented:actions:)-66ity.md)
+  Presents an alert when a given condition is true, using a localized string resource for the title.
 - [func alert<A>(LocalizedStringKey, isPresented: Binding<Bool>, actions: () -> A) -> some View](managedcontentview/alert(_:ispresented:actions:)-7cjzq.md)
   Presents an alert when a given condition is true, using a localized string key for the title.
 - [func alert<S, A>(S, isPresented: Binding<Bool>, actions: () -> A) -> some View](managedcontentview/alert(_:ispresented:actions:)-8s4xf.md)
@@ -243,8 +293,12 @@
   Presents an alert with a message when a given condition is true, using a localized string key for a title.
 - [func alert<A, M>(Text, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](managedcontentview/alert(_:ispresented:actions:message:)-2npav.md)
   Presents an alert with a message when a given condition is true using a text view as a title.
+- [func alert<A, M>(LocalizedStringResource, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](managedcontentview/alert(_:ispresented:actions:message:)-60tr4.md)
+  Presents an alert with a message when a given condition is true, using a localized string resource for a title.
 - [func alert<S, A, M>(S, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](managedcontentview/alert(_:ispresented:actions:message:)-8eu8p.md)
   Presents an alert with a message when a given condition is true using a string variable as a title.
+- [func alert<A, T>(LocalizedStringResource, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](managedcontentview/alert(_:ispresented:presenting:actions:)-2kr06.md)
+  Presents an alert using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert<A, T>(LocalizedStringKey, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](managedcontentview/alert(_:ispresented:presenting:actions:)-3qcjo.md)
   Presents an alert using the given data to produce the alert’s content and a localized string key for a title.
 - [func alert<S, A, T>(S, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](managedcontentview/alert(_:ispresented:presenting:actions:)-4vqw4.md)
@@ -255,6 +309,8 @@
   Presents an alert with a message using the given data to produce the alert’s content and a text view for a title.
 - [func alert<A, M, T>(LocalizedStringKey, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](managedcontentview/alert(_:ispresented:presenting:actions:message:)-4ulha.md)
   Presents an alert with a message using the given data to produce the alert’s content and a localized string key for a title.
+- [func alert<A, M, T>(LocalizedStringResource, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](managedcontentview/alert(_:ispresented:presenting:actions:message:)-8ui2z.md)
+  Presents an alert with a message using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert<S, A, M, T>(S, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](managedcontentview/alert(_:ispresented:presenting:actions:message:)-vtav.md)
   Presents an alert with a message using the given data to produce the alert’s content and a string variable as a title.
 - [func alert(isPresented: Binding<Bool>, content: () -> Alert) -> some View](managedcontentview/alert(ispresented:content:).md)
@@ -275,6 +331,8 @@
   Configures whether this view participates in hit test operations.
 - [func allowsTightening(Bool) -> some View](managedcontentview/allowstightening(_:).md)
   Sets whether text in this view can compress the space between characters when necessary to fit text in a line.
+- [func allowsWindowActivationEvents() -> some View](managedcontentview/allowswindowactivationevents.md)
+  Configures gestures in this view hierarchy to handle events that activate the containing window.
 - [func allowsWindowActivationEvents(Bool?) -> some View](managedcontentview/allowswindowactivationevents(_:).md)
   Configures whether gestures in this view hierarchy can handle events that activate the containing window.
 - [func anchorPreference<A, K>(key: K.Type, value: Anchor<A>.Source, transform: (Anchor<A>) -> K.Value) -> some View](managedcontentview/anchorpreference(key:value:transform:).md)
@@ -289,6 +347,16 @@
   Constrains this view’s dimensions to the aspect ratio of the given size.
 - [func aspectRatio(CGFloat?, contentMode: ContentMode) -> some View](managedcontentview/aspectratio(_:contentmode:)-715yy.md)
   Constrains this view’s dimensions to the specified aspect ratio.
+- [func assistiveAccessNavigationIcon(Image) -> some View](managedcontentview/assistiveaccessnavigationicon(_:).md)
+  Configures the view’s icon for purposes of navigation.
+- [func assistiveAccessNavigationIcon(systemImage: String) -> some View](managedcontentview/assistiveaccessnavigationicon(systemimage:).md)
+  Configures the view’s icon for purposes of navigation.
+- [func attributedTextFormattingDefinition<D>(D) -> some View](managedcontentview/attributedtextformattingdefinition(_:)-18i4e.md)
+  Apply a text formatting definition to all nested editor views.
+- [func attributedTextFormattingDefinition<S>(KeyPath<AttributeScopes, S.Type>) -> some View](managedcontentview/attributedtextformattingdefinition(_:)-2w2r1.md)
+  Apply an attribute-only text formatting definition to all nested editor views.
+- [func attributedTextFormattingDefinition<S>(S.Type) -> some View](managedcontentview/attributedtextformattingdefinition(_:)-4peta.md)
+  Apply an attribute-only text formatting definition to all nested editor views.
 - [func autocapitalization(UITextAutocapitalizationType) -> some View](managedcontentview/autocapitalization(_:).md)
   Sets whether to apply auto-capitalization to this view.
 - [func autocorrectionDisabled(Bool) -> some View](managedcontentview/autocorrectiondisabled(_:).md)
@@ -309,6 +377,8 @@
   Sets the view’s background to a shape filled with the default background style.
 - [func background<S>(in: S, fillStyle: FillStyle) -> some View](managedcontentview/background(in:fillstyle:)-8nplw.md)
   Sets the view’s background to an insettable shape filled with the default background style.
+- [func backgroundExtensionEffect() -> some View](managedcontentview/backgroundextensioneffect.md)
+  Adds the background extension effect to the view. The view will be duplicated into mirrored copies which will be placed around the view on any edge with available safe area. Additionally, a blur effect will be applied on top to blur out the copies.
 - [func backgroundPreferenceValue<Key, T>(Key.Type, (Key.Value) -> T) -> some View](managedcontentview/backgroundpreferencevalue(_:_:).md)
   Reads the specified preference value from the view, using it to produce a second view that is applied as the background of the original view.
 - [func backgroundPreferenceValue<K, V>(K.Type, alignment: Alignment, (K.Value) -> V) -> some View](managedcontentview/backgroundpreferencevalue(_:alignment:_:).md)
@@ -323,6 +393,8 @@
   Generates a badge for the view from a string.
 - [func badge(Text?) -> some View](managedcontentview/badge(_:)-5xtx9.md)
   Generates a badge for the view from a text view.
+- [func badge(LocalizedStringResource?) -> some View](managedcontentview/badge(_:)-8oou.md)
+  Generates a badge for the view from a localized string resource.
 - [func badgeProminence(BadgeProminence) -> some View](managedcontentview/badgeprominence(_:).md)
   Specifies the prominence of badges created by this view.
 - [func baselineOffset(CGFloat) -> some View](managedcontentview/baselineoffset(_:).md)
@@ -341,6 +413,7 @@
   Sets the border shape for buttons in this view.
 - [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](managedcontentview/buttonrepeatbehavior(_:).md)
   Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
+- [func buttonSizing(ButtonSizing) -> some View](managedcontentview/buttonsizing(_:).md)
 - [func buttonStyle<S>(S) -> some View](managedcontentview/buttonstyle(_:)-5ni8r.md)
   Sets the style for buttons within this view to a button style with a custom appearance and custom interaction behavior.
 - [func buttonStyle<S>(S) -> some View](managedcontentview/buttonstyle(_:)-7gw3e.md)
@@ -363,22 +436,30 @@
   Presents a confirmation dialog when a given condition is true, using a localized string key for the title.
 - [func confirmationDialog<A>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](managedcontentview/confirmationdialog(_:ispresented:titlevisibility:actions:)-41nnq.md)
   Presents a confirmation dialog when a given condition is true, using a text view for the title.
+- [func confirmationDialog<A>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](managedcontentview/confirmationdialog(_:ispresented:titlevisibility:actions:)-4gkk0.md)
+  Presents a confirmation dialog when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog<S, A>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](managedcontentview/confirmationdialog(_:ispresented:titlevisibility:actions:)-qix8.md)
   Presents a confirmation dialog when a given condition is true, using a string variable as a title.
 - [func confirmationDialog<A, M>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](managedcontentview/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-2860e.md)
   Presents a confirmation dialog with a message when a given condition is true, using a text view for the title.
+- [func confirmationDialog<A, M>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](managedcontentview/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-4biim.md)
+  Presents a confirmation dialog with a message when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog<A, M>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](managedcontentview/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-9sifx.md)
   Presents a confirmation dialog with a message when a given condition is true, using a localized string key for the title.
 - [func confirmationDialog<S, A, M>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](managedcontentview/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-9zejj.md)
   Presents a confirmation dialog with a message when a given condition is true, using a string variable for the title.
 - [func confirmationDialog<A, T>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](managedcontentview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-1le7w.md)
   Presents a confirmation dialog using data to produce the dialog’s content and a text view for the title.
+- [func confirmationDialog<A, T>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](managedcontentview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-4pqfi.md)
+  Presents a confirmation dialog using data to produce the dialog’s content and a localized string resource for the title.
 - [func confirmationDialog<A, T>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](managedcontentview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-5s3gj.md)
   Presents a confirmation dialog using data to produce the dialog’s content and a localized string key for the title.
 - [func confirmationDialog<S, A, T>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](managedcontentview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-78qy6.md)
   Presents a confirmation dialog using data to produce the dialog’s content and a string variable for the title.
 - [func confirmationDialog<S, A, M, T>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](managedcontentview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-3r3vm.md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a string variable for the title.
+- [func confirmationDialog<A, M, T>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](managedcontentview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-3t2lr.md)
+  Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string resource for the title.
 - [func confirmationDialog<A, M, T>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](managedcontentview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-4t2jq.md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string key for the title.
 - [func confirmationDialog<A, M, T>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](managedcontentview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-8ytko.md)
@@ -425,7 +506,9 @@
   Sets the contrast and separation between similar colors in this view.
 - [func controlGroupStyle<S>(S) -> some View](managedcontentview/controlgroupstyle(_:).md)
   Sets the style for control groups within this view.
-- [func controlSize(ControlSize) -> some View](managedcontentview/controlsize(_:).md)
+- [func controlSize<T>(T) -> some View](managedcontentview/controlsize(_:)-38rx1.md)
+  Limits the control size within the view to the given range.
+- [func controlSize(ControlSize) -> some View](managedcontentview/controlsize(_:)-44ooz.md)
   Sets the size for controls within this view.
 - [func coordinateSpace(NamedCoordinateSpace) -> some View](managedcontentview/coordinatespace(_:).md)
   Assigns a name to the view’s coordinate space, so other code can operate on dimensions like points and sizes relative to the named space.
@@ -461,6 +544,8 @@
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
 - [func dialogSuppressionToggle(LocalizedStringKey, isSuppressed: Binding<Bool>) -> some View](managedcontentview/dialogsuppressiontoggle(_:issuppressed:)-8kx7o.md)
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
+- [func dialogSuppressionToggle(LocalizedStringResource, isSuppressed: Binding<Bool>) -> some View](managedcontentview/dialogsuppressiontoggle(_:issuppressed:)-9uer3.md)
+  Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
 - [func dialogSuppressionToggle(isSuppressed: Binding<Bool>) -> some View](managedcontentview/dialogsuppressiontoggle(issuppressed:).md)
   Enables user suppression of dialogs and alerts presented within `self`, with a default suppression message on macOS. Unused on other platforms.
 - [func disableAutocorrection(Bool?) -> some View](managedcontentview/disableautocorrection(_:).md)
@@ -473,14 +558,34 @@
   Returns a new view that applies `shader` to `self` as a geometric distortion effect on the location of each pixel.
 - [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](managedcontentview/documentbrowsercontextmenu(_:).md)
   Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
+- [func dragConfiguration(DragConfiguration) -> some View](managedcontentview/dragconfiguration(_:).md)
+  Configures a drag session.
+- [func dragContainer<ItemID, Item, Data>(for: Item.Type, id: (Item) -> ItemID, in: Namespace.ID?, (ItemID) -> Data) -> some View](managedcontentview/dragcontainer(for:id:in:_:).md)
+  A container with draggable views. The drag payload is based on the current selection.
+- [func dragContainer<ItemID, Item, Data>(for: Item.Type, id: (consuming Item) -> ItemID, in: Namespace.ID?, selection: @autoclosure () -> Array<ItemID>, (Array<ItemID>) -> Data) -> some View](managedcontentview/dragcontainer(for:id:in:selection:_:)-4iwin.md)
+  A container with multiple selection and draggable views. The drag payload is based on the current selection and provided identifiers.
+- [func dragContainer<Item, ItemID>(for: Item.Type, id: (Item) -> ItemID, in: Namespace.ID?, selection: @autoclosure () -> ItemID?, (ItemID) -> Item?) -> some View](managedcontentview/dragcontainer(for:id:in:selection:_:)-trgy.md)
+  A container with single item selection and draggable views. The drag payload is based on the current selection and provided identifiers.
+- [func dragContainer<Item, Data>(for: Item.Type, in: Namespace.ID?, (Item.ID) -> Data) -> some View](managedcontentview/dragcontainer(for:in:_:).md)
+  A container with draggable views. The drag payload is identifiable. To form the payload, use the identifier of the dragged view inside the container.
+- [func dragContainer<Item>(for: Item.Type, in: Namespace.ID?, selection: @autoclosure () -> Item.ID?, (Item.ID) -> Item?) -> some View](managedcontentview/dragcontainer(for:in:selection:_:)-4j2yd.md)
+  A container with single item selection and draggable views. The drag payload is identifiable and is based on the current selection.
+- [func dragContainer<Item, Data>(for: Item.Type, in: Namespace.ID?, selection: @autoclosure () -> Array<Item.ID>, (Array<Item.ID>) -> Data) -> some View](managedcontentview/dragcontainer(for:in:selection:_:)-7nznf.md)
+  A container with multiple selection and draggable views. The drag payload is identifiable and is based on the current selection.
 - [func draggable<T>(@autoclosure () -> T) -> some View](managedcontentview/draggable(_:).md)
   Activates this view as the source of a drag and drop operation.
 - [func draggable<V, T>(@autoclosure () -> T, preview: () -> V) -> some View](managedcontentview/draggable(_:preview:).md)
   Activates this view as the source of a drag and drop operation.
+- [func draggable<T, ID>(for: T.Type, id: ID, (ID) -> T?) -> some View](managedcontentview/draggable(for:id:_:).md)
+  Activates this view as the source of a drag-and-drop operation.
 - [func drawingGroup(opaque: Bool, colorMode: ColorRenderingMode) -> some View](managedcontentview/drawinggroup(opaque:colormode:).md)
   Composites this view’s contents into an offscreen image before final display.
+- [func dropConfiguration((DropSession) -> DropConfiguration) -> some View](managedcontentview/dropconfiguration(_:).md)
+  Configures a drop session.
 - [func dropDestination<T>(for: T.Type, action: ([T], CGPoint) -> Bool, isTargeted: (Bool) -> Void) -> some View](managedcontentview/dropdestination(for:action:istargeted:).md)
   Defines the destination of a drag and drop operation that handles the dropped content with a closure that you specify.
+- [func dropDestination<T>(for: T.Type, isEnabled: Bool, action: ([T], DropSession) -> Void) -> some View](managedcontentview/dropdestination(for:isenabled:action:).md)
+  Defines the destination of a drag and drop operation that provides a drop operation proposal and handles the dropped content with a closure that you specify.
 - [func dynamicTypeSize<T>(T) -> some View](managedcontentview/dynamictypesize(_:)-2t8vw.md)
   Limits the Dynamic Type size within the view to the given range.
 - [func dynamicTypeSize(DynamicTypeSize) -> some View](managedcontentview/dynamictypesize(_:)-871bp.md)
@@ -501,6 +606,8 @@
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
 - [func fileDialogConfirmationLabel<S>(S) -> some View](managedcontentview/filedialogconfirmationlabel(_:)-8j46d.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
+- [func fileDialogConfirmationLabel(LocalizedStringResource) -> some View](managedcontentview/filedialogconfirmationlabel(_:)-9poma.md)
+  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
 - [func fileDialogCustomizationID(String) -> some View](managedcontentview/filedialogcustomizationid(_:).md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to persist and restore the file dialog configuration.
 - [func fileDialogDefaultDirectory(URL?) -> some View](managedcontentview/filedialogdefaultdirectory(_:).md)
@@ -511,6 +618,8 @@
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [func fileDialogMessage(Text?) -> some View](managedcontentview/filedialogmessage(_:)-93c1b.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
+- [func fileDialogMessage(LocalizedStringResource) -> some View](managedcontentview/filedialogmessage(_:)-9w23o.md)
+  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [func fileDialogMessage(LocalizedStringKey) -> some View](managedcontentview/filedialogmessage(_:)-ex0x.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [func fileDialogURLEnabled(Predicate<URL>) -> some View](managedcontentview/filedialogurlenabled(_:).md)
@@ -541,6 +650,8 @@
   On macOS, configures the `fileExporter` with a label for the file name field.
 - [func fileExporterFilenameLabel(Text?) -> some View](managedcontentview/fileexporterfilenamelabel(_:)-j0rr.md)
   On macOS, configures the `fileExporter` with a text to use as a label for the file name field.
+- [func fileExporterFilenameLabel(LocalizedStringResource) -> some View](managedcontentview/fileexporterfilenamelabel(_:)-zujx.md)
+  On macOS, configures the `fileExporter` with a label for the file name field.
 - [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], allowsMultipleSelection: Bool, onCompletion: (Result<[URL], any Error>) -> Void) -> some View](managedcontentview/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:).md)
   Presents a system interface for allowing the user to import multiple files.
 - [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], allowsMultipleSelection: Bool, onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](managedcontentview/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:oncancellation:).md)
@@ -635,6 +746,14 @@
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
 - [func gesture<T>(T, name: String, isEnabled: Bool) -> some View](managedcontentview/gesture(_:name:isenabled:).md)
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
+- [func glassEffect(Glass, in: some Shape, isEnabled: Bool) -> some View](managedcontentview/glasseffect(_:in:isenabled:).md)
+  Applies a glass effect to this view.
+- [func glassEffectID((some Hashable & Sendable)?, in: Namespace.ID) -> some View](managedcontentview/glasseffectid(_:in:).md)
+  Associates an identity value to glass effects defined within this view.
+- [func glassEffectTransition(GlassEffectTransition, isEnabled: Bool) -> some View](managedcontentview/glasseffecttransition(_:isenabled:).md)
+  Associates a glass effect transition with any glass effects defined within this view.
+- [func glassEffectUnion(id: (some Hashable & Sendable)?, namespace: Namespace.ID) -> some View](managedcontentview/glasseffectunion(id:namespace:).md)
+  Associates any glass effects defined within this view to a union with the provided id.
 - [func grayscale(Double) -> some View](managedcontentview/grayscale(_:).md)
   Adds a grayscale effect to this view.
 - [func gridCellAnchor(UnitPoint) -> some View](managedcontentview/gridcellanchor(_:).md)
@@ -655,6 +774,8 @@
   Sets the header prominence for this view.
 - [func help<S>(S) -> some View](managedcontentview/help(_:)-233bv.md)
   Adds help text to a view using a string that you provide.
+- [func help(LocalizedStringResource) -> some View](managedcontentview/help(_:)-46t35.md)
+  Adds help text to a view using a localized string resource that you provide.
 - [func help(Text) -> some View](managedcontentview/help(_:)-8nioo.md)
   Adds help text to a view using a text view that you provide.
 - [func help(LocalizedStringKey) -> some View](managedcontentview/help(_:)-9ohkw.md)
@@ -715,6 +836,10 @@
   Loops the given keyframes continuously, updating the view using the modifiers you apply in `body`.
 - [func keyframeAnimator<Value>(initialValue: Value, trigger: some Equatable, content: (PlaceholderContentView<Self>, Value) -> some View, keyframes: (Value) -> some Keyframes) -> some View](managedcontentview/keyframeanimator(initialvalue:trigger:content:keyframes:).md)
   Plays the given keyframes when the given trigger value changes, updating the view using the modifiers you apply in `body`.
+- [func labelIconToTitleSpacing(CGFloat) -> some View](managedcontentview/labelicontotitlespacing(_:).md)
+  Set the spacing between the icon and title in labels.
+- [func labelReservedIconWidth(CGFloat) -> some View](managedcontentview/labelreservediconwidth(_:).md)
+  Set the width reserved for icons in labels.
 - [func labelStyle<S>(S) -> some View](managedcontentview/labelstyle(_:).md)
   Sets the style for labels within this view.
 - [func labeledContentStyle<S>(S) -> some View](managedcontentview/labeledcontentstyle(_:).md)
@@ -731,6 +856,8 @@
   Sets the priority by which a parent layout should apportion space to this child.
 - [func layoutValue<K>(key: K.Type, value: K.Value) -> some View](managedcontentview/layoutvalue(key:value:).md)
   Associates a value with a custom layout property.
+- [func lineHeight(AttributedString.LineHeight?) -> some View](managedcontentview/lineheight(_:).md)
+  A modifier for the default line height in the view hierarchy.
 - [func lineLimit(PartialRangeFrom<Int>) -> some View](managedcontentview/linelimit(_:)-2hw7t.md)
   Sets to a partial range the number of lines that text can occupy in this view.
 - [func lineLimit(ClosedRange<Int>) -> some View](managedcontentview/linelimit(_:)-36wru.md)
@@ -751,12 +878,18 @@
   Places a custom background view behind a list row item.
 - [func listRowInsets(EdgeInsets?) -> some View](managedcontentview/listrowinsets(_:).md)
   Applies an inset to the rows in a list.
+- [func listRowInsets(Edge.Set, CGFloat?) -> some View](managedcontentview/listrowinsets(_:_:).md)
+  Sets the insets of rows in a list on the specified edges.
 - [func listRowSeparator(Visibility, edges: VerticalEdge.Set) -> some View](managedcontentview/listrowseparator(_:edges:).md)
   Sets the display mode for the separator associated with this specific row.
 - [func listRowSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](managedcontentview/listrowseparatortint(_:edges:).md)
   Sets the tint color associated with a row.
 - [func listRowSpacing(CGFloat?) -> some View](managedcontentview/listrowspacing(_:).md)
   Sets the vertical spacing between two adjacent rows in a List.
+- [func listSectionIndexVisibility(Visibility) -> some View](managedcontentview/listsectionindexvisibility(_:).md)
+  Changes the visibility of the list section index.
+- [func listSectionMargins(Edge.Set, CGFloat?) -> some View](managedcontentview/listsectionmargins(_:_:).md)
+  Set the section margins for the specific edges.
 - [func listSectionSeparator(Visibility, edges: VerticalEdge.Set) -> some View](managedcontentview/listsectionseparator(_:edges:).md)
   Sets whether to hide the separator associated with a list section.
 - [func listSectionSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](managedcontentview/listsectionseparatortint(_:edges:).md)
@@ -803,6 +936,8 @@
   Adds a condition for whether the view’s view hierarchy is movable.
 - [func multilineTextAlignment(TextAlignment) -> some View](managedcontentview/multilinetextalignment(_:).md)
   Sets the alignment of a text view that contains multiple lines of text.
+- [func multilineTextAlignment(strategy: Text.AlignmentStrategy) -> some View](managedcontentview/multilinetextalignment(strategy:).md)
+  A modifier for the default text alignment strategy in the view hierarchy.
 - [func navigationBarBackButtonHidden(Bool) -> some View](managedcontentview/navigationbarbackbuttonhidden(_:).md)
   Hides the navigation bar back button for the view.
 - [func navigationBarHidden(Bool) -> some View](managedcontentview/navigationbarhidden(_:).md)
@@ -842,14 +977,26 @@
   Configures the view’s document for purposes of navigation.
 - [func navigationDocument<D, I1, I2>(D, preview: SharePreview<I1, I2>) -> some View](managedcontentview/navigationdocument(_:preview:)-9t6kw.md)
   Configures the view’s document for purposes of navigation.
+- [func navigationLinkIndicatorVisibility(Visibility) -> some View](managedcontentview/navigationlinkindicatorvisibility(_:).md)
+  Configures whether navigation links show a disclosure indicator.
 - [func navigationSplitViewColumnWidth(CGFloat) -> some View](managedcontentview/navigationsplitviewcolumnwidth(_:).md)
   Sets a fixed, preferred width for the column containing this view.
 - [func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](managedcontentview/navigationsplitviewcolumnwidth(min:ideal:max:).md)
   Sets a flexible, preferred width for the column containing this view.
 - [func navigationSplitViewStyle<S>(S) -> some View](managedcontentview/navigationsplitviewstyle(_:).md)
   Sets the style for navigation split views within this view.
+- [func navigationSubtitle(Text) -> some View](managedcontentview/navigationsubtitle(_:)-27ueh.md)
+  Configures the view’s subtitle for purposes of navigation.
+- [func navigationSubtitle<S>(S) -> some View](managedcontentview/navigationsubtitle(_:)-7kh8x.md)
+  Configures the view’s subtitle for purposes of navigation, using a string.
+- [func navigationSubtitle(LocalizedStringResource) -> some View](managedcontentview/navigationsubtitle(_:)-7yuk8.md)
+  Configures the view’s subtitle for purposes of navigation, using a localized string resource.
+- [func navigationSubtitle(LocalizedStringKey) -> some View](managedcontentview/navigationsubtitle(_:)-8lt0e.md)
+  Configures the view’s subtitle for purposes of navigation, using a localized string.
 - [func navigationTitle(Binding<String>) -> some View](managedcontentview/navigationtitle(_:)-31qxy.md)
   Configures the view’s title for purposes of navigation, using a string binding.
+- [func navigationTitle(LocalizedStringResource) -> some View](managedcontentview/navigationtitle(_:)-732ly.md)
+  Configures the view’s title for purposes of navigation, using a localized string resource.
 - [func navigationTitle(Text) -> some View](managedcontentview/navigationtitle(_:)-7a5w8.md)
   Configures the view’s title for purposes of navigation.
 - [func navigationTitle<S>(S) -> some View](managedcontentview/navigationtitle(_:)-85civ.md)
@@ -884,6 +1031,8 @@
   Activates this view as the source of a drag and drop operation.
 - [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](managedcontentview/ondrag(_:preview:).md)
   Activates this view as the source of a drag and drop operation.
+- [func onDragSessionUpdated((DragSession) -> Void) -> some View](managedcontentview/ondragsessionupdated(_:).md)
+  Specifies an action to perform on each update of an ongoing dragging operation activated by `draggable(_:)` or other drag modifiers.
 - [func onDrop(of: [String], delegate: any DropDelegate) -> some View](managedcontentview/ondrop(of:delegate:)-27lac.md)
   Defines the destination for a drag and drop operation with the same size and position as this view, with behavior controlled by the given delegate.
 - [func onDrop(of: [UTType], delegate: any DropDelegate) -> some View](managedcontentview/ondrop(of:delegate:)-77ia.md)
@@ -896,6 +1045,8 @@
   Defines the destination for a drag and drop operation, using the same size and position as this view, handling dropped content with the given closure.
 - [func onDrop(of: [String], isTargeted: Binding<Bool>?, perform: ([NSItemProvider], CGPoint) -> Bool) -> some View](managedcontentview/ondrop(of:istargeted:perform:)-8xl63.md)
   Defines the destination for a drag and drop operation with the same size and position as this view, handling dropped content and the drop location with the given closure.
+- [func onDropSessionUpdated((DropSession) -> Void) -> some View](managedcontentview/ondropsessionupdated(_:).md)
+  Specifies an action to perform on each update of an ongoing drop operation activated by `dropDestination(_:)` or other drop modifiers.
 - [func onGeometryChange<T>(for: T.Type, of: (GeometryProxy) -> T, action: (T, T) -> Void) -> some View](managedcontentview/ongeometrychange(for:of:action:)-9jbjt.md)
   Adds an action to be performed when a value, created from a geometry proxy, changes.
 - [func onGeometryChange<T>(for: T.Type, of: (GeometryProxy) -> T, action: (T) -> Void) -> some View](managedcontentview/ongeometrychange(for:of:action:)-scxp.md)
@@ -922,6 +1073,8 @@
   Adds an action to perform when this view recognizes a long press gesture.
 - [func onOpenURL(perform: (URL) -> ()) -> some View](managedcontentview/onopenurl(perform:).md)
   Registers a handler to invoke in response to a URL that your app receives.
+- [func onOpenURL(prefersInApp: Bool) -> some View](managedcontentview/onopenurl(prefersinapp:).md)
+  Sets an `OpenURLAction` that prefers opening URL with an in-app browser. It’s equivalent to calling `.onOpenURL(_:)`
 - [func onPencilDoubleTap(perform: (PencilDoubleTapGestureValue) -> Void) -> some View](managedcontentview/onpencildoubletap(perform:).md)
   Adds an action to perform after the user double-taps their Apple Pencil.
 - [func onPencilSqueeze(perform: (PencilSqueezeGesturePhase) -> Void) -> some View](managedcontentview/onpencilsqueeze(perform:).md)
@@ -1040,6 +1193,10 @@
   Renders a view’s content as if it’s rotated in three dimensions around the specified axis.
 - [func rotationEffect(Angle, anchor: UnitPoint) -> some View](managedcontentview/rotationeffect(_:anchor:).md)
   Rotates a view’s rendered output in two dimensions around the specified point.
+- [func safeAreaBar(edge: HorizontalEdge, alignment: VerticalAlignment, spacing: CGFloat?, content: () -> some View) -> some View](managedcontentview/safeareabar(edge:alignment:spacing:content:)-2i1k0.md)
+  Renders the provided content appropriately to be displayed as a custom bar.
+- [func safeAreaBar(edge: VerticalEdge, alignment: HorizontalAlignment, spacing: CGFloat?, content: () -> some View) -> some View](managedcontentview/safeareabar(edge:alignment:spacing:content:)-7m5gq.md)
+  Renders the provided content appropriate to be displayed as a custom bar.
 - [func safeAreaInset<V>(edge: VerticalEdge, alignment: HorizontalAlignment, spacing: CGFloat?, content: () -> V) -> some View](managedcontentview/safeareainset(edge:alignment:spacing:content:)-89sbo.md)
   Shows the specified content above or below the modified view.
 - [func safeAreaInset<V>(edge: HorizontalEdge, alignment: VerticalAlignment, spacing: CGFloat?, content: () -> V) -> some View](managedcontentview/safeareainset(edge:alignment:spacing:content:)-8uy3v.md)
@@ -1076,6 +1233,10 @@
   Disables or enables scrolling in scrollable views.
 - [func scrollDismissesKeyboard(ScrollDismissesKeyboardMode) -> some View](managedcontentview/scrolldismisseskeyboard(_:).md)
   Configures the behavior in which scrollable content interacts with the software keyboard.
+- [func scrollEdgeEffectDisabled(Bool, for: Edge.Set) -> some View](managedcontentview/scrolledgeeffectdisabled(_:for:).md)
+  Disables any scroll edge effects for scroll views within this hierarchy.
+- [func scrollEdgeEffectStyle(ScrollEdgeEffectStyle?, for: Edge.Set) -> some View](managedcontentview/scrolledgeeffectstyle(_:for:).md)
+  Configures the scroll edge effect style for scroll views within this hierarchy.
 - [func scrollIndicators(ScrollIndicatorVisibility, axes: Axis.Set) -> some View](managedcontentview/scrollindicators(_:axes:).md)
   Sets the visibility of scroll indicators within this view.
 - [func scrollIndicatorsFlash(onAppear: Bool) -> some View](managedcontentview/scrollindicatorsflash(onappear:).md)
@@ -1093,9 +1254,9 @@
 - [func scrollTargetLayout(isEnabled: Bool) -> some View](managedcontentview/scrolltargetlayout(isenabled:).md)
   Configures the outermost layout as a scroll target layout.
 - [func scrollTransition(ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](managedcontentview/scrolltransition(_:axis:transition:).md)
-  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 - [func scrollTransition(topLeading: ScrollTransitionConfiguration, bottomTrailing: ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](managedcontentview/scrolltransition(topleading:bottomtrailing:axis:transition:).md)
-  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 - [func searchCompletion<T>(T) -> some View](managedcontentview/searchcompletion(_:)-7em9s.md)
   Associates a search token with the value of this view when used as a search suggestion.
 - [func searchCompletion(String) -> some View](managedcontentview/searchcompletion(_:)-89s95.md)
@@ -1116,7 +1277,11 @@
   Configures the search suggestions for this view.
 - [func searchSuggestions(Visibility, for: SearchSuggestionsPlacement.Set) -> some View](managedcontentview/searchsuggestions(_:for:).md)
   Configures how to display search suggestions within this view.
+- [func searchToolbarBehavior(SearchToolbarBehavior) -> some View](managedcontentview/searchtoolbarbehavior(_:).md)
+  Configures the behavior for search in the toolbar.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (Binding<C.Element>) -> some View) -> some View](managedcontentview/searchable(text:editabletokens:ispresented:placement:prompt:token:)-2l6jb.md)
+  Marks this view as searchable, which configures the display of a search field.
+- [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (Binding<C.Element>) -> some View) -> some View](managedcontentview/searchable(text:editabletokens:ispresented:placement:prompt:token:)-4c1nb.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?, token: (Binding<C.Element>) -> some View) -> some View](managedcontentview/searchable(text:editabletokens:ispresented:placement:prompt:token:)-9qtre.md)
   Marks this view as searchable, which configures the display of a search field.
@@ -1126,11 +1291,15 @@
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (Binding<C.Element>) -> some View) -> some View](managedcontentview/searchable(text:editabletokens:placement:prompt:token:)-218jx.md)
   Marks this view as searchable, which configures the display of a search field.
+- [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (Binding<C.Element>) -> some View) -> some View](managedcontentview/searchable(text:editabletokens:placement:prompt:token:)-77a4e.md)
+  Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: Text?, token: (Binding<C.Element>) -> some View) -> some View](managedcontentview/searchable(text:editabletokens:placement:prompt:token:)-9kb2.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey) -> some View](managedcontentview/searchable(text:ispresented:placement:prompt:)-1k3wn.md)
   Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?) -> some View](managedcontentview/searchable(text:ispresented:placement:prompt:)-3y9zl.md)
+  Marks this view as searchable with programmatic presentation of the search field.
+- [func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource) -> some View](managedcontentview/searchable(text:ispresented:placement:prompt:)-5ou0n.md)
   Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable<S>(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: S) -> some View](managedcontentview/searchable(text:ispresented:placement:prompt:)-8g1pt.md)
   Marks this view as searchable with programmatic presentation of the search field.
@@ -1139,6 +1308,8 @@
 - [func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: Text?) -> some View](managedcontentview/searchable(text:placement:prompt:)-3b6al.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement, prompt: S) -> some View](managedcontentview/searchable(text:placement:prompt:)-3pb2a.md)
+  Marks this view as searchable, which configures the display of a search field.
+- [func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: LocalizedStringResource) -> some View](managedcontentview/searchable(text:placement:prompt:)-8tbux.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, suggestions: () -> S) -> some View](managedcontentview/searchable(text:placement:prompt:suggestions:)-3i7fz.md)
   Marks this view as searchable, which configures the display of a search field.
@@ -1152,7 +1323,11 @@
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](managedcontentview/searchable(text:tokens:ispresented:placement:prompt:token:)-72po0.md)
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](managedcontentview/searchable(text:tokens:ispresented:placement:prompt:token:)-9ljgd.md)
+  Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](managedcontentview/searchable(text:tokens:placement:prompt:token:)-2ea6p.md)
+  Marks this view as searchable with text and tokens.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](managedcontentview/searchable(text:tokens:placement:prompt:token:)-2hd9p.md)
   Marks this view as searchable with text and tokens.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](managedcontentview/searchable(text:tokens:placement:prompt:token:)-klt1.md)
   Marks this view as searchable with text and tokens.
@@ -1164,21 +1339,31 @@
   Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](managedcontentview/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-7ea5d.md)
   Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](managedcontentview/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-8bwes.md)
+  Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](managedcontentview/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-1ucag.md)
   Marks this view as searchable with text, tokens, and suggestions.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](managedcontentview/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-2o50p.md)
   Marks this view as searchable with text, tokens, and suggestions.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](managedcontentview/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-3ltws.md)
   Marks this view as searchable with text, tokens, and suggestions.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](managedcontentview/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-6hhqu.md)
+  Marks this view as searchable with text, tokens, and suggestions.
 - [func sectionActions<Content>(content: () -> Content) -> some View](managedcontentview/sectionactions(content:).md)
   Adds custom actions to a section.
+- [func sectionIndexLabel(Text?) -> some View](managedcontentview/sectionindexlabel(_:)-56pu.md)
+  Sets the label that is used in a section index to point to this section, typically only a single character long.
+- [func sectionIndexLabel<S>(S?) -> some View](managedcontentview/sectionindexlabel(_:)-60vtz.md)
+  Sets the title that is used for the section index label pointing to this section, typically only a single character long.
 - [func selectionDisabled(Bool) -> some View](managedcontentview/selectiondisabled(_:).md)
   Adds a condition that controls whether users can select this view.
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T) -> some View](managedcontentview/sensoryfeedback(_:trigger:).md)
   Plays the specified `feedback` when the provided `trigger` value changes.
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T, condition: (T, T) -> Bool) -> some View](managedcontentview/sensoryfeedback(_:trigger:condition:).md)
   Plays the specified `feedback` when the provided `trigger` value changes and the `condition` closure returns `true`.
-- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](managedcontentview/sensoryfeedback(trigger:_:).md)
+- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](managedcontentview/sensoryfeedback(trigger:_:)-29fhk.md)
+  Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
+- [func sensoryFeedback<T>(trigger: T, () -> SensoryFeedback?) -> some View](managedcontentview/sensoryfeedback(trigger:_:)-3u6yu.md)
   Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
 - [func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some View](managedcontentview/shadow(color:radius:x:y:).md)
   Adds a shadow to this view.
@@ -1214,6 +1399,8 @@
   Prevents submission triggers originating from this view to invoke a submission action configured by a submission modifier higher up in the view hierarchy.
 - [func swipeActions<T>(edge: HorizontalEdge, allowsFullSwipe: Bool, content: () -> T) -> some View](managedcontentview/swipeactions(edge:allowsfullswipe:content:).md)
   Adds custom swipe actions to a row in a list.
+- [func symbolColorRenderingMode(SymbolColorRenderingMode?) -> some View](managedcontentview/symbolcolorrenderingmode(_:).md)
+  Sets the color rendering mode for symbol images.
 - [func symbolEffect<T>(T, options: SymbolEffectOptions, isActive: Bool) -> some View](managedcontentview/symboleffect(_:options:isactive:).md)
   Returns a new view with a symbol effect added to it.
 - [func symbolEffect<T, U>(T, options: SymbolEffectOptions, value: U) -> some View](managedcontentview/symboleffect(_:options:value:).md)
@@ -1222,10 +1409,15 @@
   Returns a new view with its inherited symbol image effects either removed or left unchanged.
 - [func symbolRenderingMode(SymbolRenderingMode?) -> some View](managedcontentview/symbolrenderingmode(_:).md)
   Sets the rendering mode for symbol images within this view.
+- [func symbolVariableValueMode(SymbolVariableValueMode?) -> some View](managedcontentview/symbolvariablevaluemode(_:).md)
+  Sets the variable value mode mode for symbol images within this view.
 - [func symbolVariant(SymbolVariants) -> some View](managedcontentview/symbolvariant(_:).md)
   Makes symbols within the view show a particular variant.
+- [func tabBarMinimizeBehavior(TabBarMinimizeBehavior) -> some View](managedcontentview/tabbarminimizebehavior(_:).md)
+  Sets the behavior for tab bar minimization.
 - [func tabItem<V>(() -> V) -> some View](managedcontentview/tabitem(_:).md)
   Sets the tab bar item associated with this view.
+- [func tabViewBottomAccessory<Content>(content: () -> Content) -> some View](managedcontentview/tabviewbottomaccessory(content:).md)
 - [func tabViewCustomization(Binding<TabViewCustomization>?) -> some View](managedcontentview/tabviewcustomization(_:).md)
   Specifies the customizations to apply to the sidebar representation of the tab view.
 - [func tabViewSidebarBottomBar<Content>(content: () -> Content) -> some View](managedcontentview/tabviewsidebarbottombar(content:).md)
@@ -1256,6 +1448,8 @@
   Sets the style for text fields within this view.
 - [func textInputAutocapitalization(TextInputAutocapitalization?) -> some View](managedcontentview/textinputautocapitalization(_:).md)
   Sets how often the shift key in the keyboard is automatically enabled.
+- [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](managedcontentview/textinputformattingcontrolvisibility(_:for:).md)
+  Define which system text formatting controls are available.
 - [func textRenderer<T>(T) -> some View](managedcontentview/textrenderer(_:).md)
   Returns a new view such that any text views within it will use `renderer` to draw themselves.
 - [func textScale(Text.Scale, isEnabled: Bool) -> some View](managedcontentview/textscale(_:isenabled:).md)
@@ -1318,6 +1512,8 @@
   Associates a transition with the view.
 - [func truncationMode(Text.TruncationMode) -> some View](managedcontentview/truncationmode(_:).md)
   Sets the truncation mode for lines of text that are too long to fit in the available space.
+- [func typeSelectEquivalent(LocalizedStringResource) -> some View](managedcontentview/typeselectequivalent(_:)-1im8y.md)
+  Sets an explicit type select equivalent text in a collection, such as a list or table.
 - [func typeSelectEquivalent(LocalizedStringKey) -> some View](managedcontentview/typeselectequivalent(_:)-49cf8.md)
   Sets an explicit type select equivalent text in a collection, such as a list or table.
 - [func typeSelectEquivalent<S>(S) -> some View](managedcontentview/typeselectequivalent(_:)-5cazx.md)
@@ -1340,6 +1536,8 @@
   Applies effects to this view, while providing access to layout information through a geometry proxy.
 - [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](managedcontentview/windowtoolbarfullscreenvisibility(_:).md)
   Configures the visibility of the window toolbar when the window enters full screen mode.
+- [func writingDirection(strategy: Text.WritingDirectionStrategy) -> some View](managedcontentview/writingdirection(strategy:).md)
+  A modifier for the default text writing direction strategy in the view hierarchy.
 - [func writingToolsAffordanceVisibility(Visibility) -> some View](managedcontentview/writingtoolsaffordancevisibility(_:).md)
   Specifies whether the system should show the Writing Tools affordance for text input views affected by the environment.
 - [func writingToolsBehavior(WritingToolsBehavior) -> some View](managedcontentview/writingtoolsbehavior(_:).md)

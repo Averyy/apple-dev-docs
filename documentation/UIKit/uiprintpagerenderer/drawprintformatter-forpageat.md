@@ -14,7 +14,6 @@ Performs custom drawing in addition to the specified print formatter’s drawing
 ## Declaration
 
 ```swift
-@MainActor
 func drawPrintFormatter(_ printFormatter: UIPrintFormatter, forPageAt pageIndex: Int)
 ```
 

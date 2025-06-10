@@ -1,6 +1,6 @@
 # url
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the initial URL for the tab.

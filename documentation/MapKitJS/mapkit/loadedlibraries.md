@@ -1,6 +1,6 @@
 # loadedLibraries
 
-**Framework**: Mapkitjs  
+**Framework**: MapKit JS  
 **Kind**: property
 
 A string that describes the list of loaded libraries.
@@ -38,4 +38,4 @@ readonly attribute string[] loadedLibraries;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkit/loadedlibraries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit/loadedlibraries)*

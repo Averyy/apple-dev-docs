@@ -1,6 +1,6 @@
 # XPC_CONNECTION_MACH_SERVICE_LISTENER
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A flag that indicates the caller is the listener for the named service.

@@ -1,6 +1,6 @@
 # drawingGroup(opaque:colorMode:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Composites this view’s contents into an offscreen image before final display.

@@ -53,6 +53,7 @@ struct AudioFeaturePrint
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TemporalTransformer](temporaltransformer.md)
 
 ## See Also

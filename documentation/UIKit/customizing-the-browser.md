@@ -65,7 +65,7 @@ By default, users can select only one item at a time. To enable multiple documen
 
 To let users create new documents, you must do the following:
 
-- Set the browser’s [`allowsDocumentCreation`](uidocumentbrowserviewcontroller/allowsdocumentcreation.md) property to [`true`](https://developer.apple.com/documentation/foundation/nsexpression/1411874-true) (the default value).
+- Set the browser’s [`allowsDocumentCreation`](uidocumentbrowserviewcontroller/allowsdocumentcreation.md) property to [`true`](https://developer.apple.com/documentation/Foundation/NSExpression/true) (the default value).
 - Implement the [`UIDocumentBrowserViewControllerDelegate`](uidocumentbrowserviewcontrollerdelegate.md) object’s [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md) method.
 
 After these steps are completed, the system automatically includes an Add button (+) in the document browser’s navigation bar.
@@ -75,8 +75,6 @@ When the user taps the Add button, the system calls the [`documentBrowser(_:didR
 Create a new document and save it to a temporary location. As soon as the document is saved, call the provided `importHandler`. To confirm the request, pass in the document’s temporary URL and the import mode ([`UIDocumentBrowserViewController.ImportMode.copy`](uidocumentbrowserviewcontroller/importmode/copy.md) or [`UIDocumentBrowserViewController.ImportMode.move`](uidocumentbrowserviewcontroller/importmode/move.md)). To cancel the request, pass `nil` and [`UIDocumentBrowserViewController.ImportMode.none`](uidocumentbrowserviewcontroller/importmode/none.md).
 
 > ❗ **Important**:  You must always call the `importHandler`. If you can’t create a new document, pass `nil` for the URL and [`UIDocumentBrowserViewController.ImportMode.none`](uidocumentbrowserviewcontroller/importmode/none.md) for the import mode.
-
- You must always call the `importHandler`. If you can’t create a new document, pass `nil` for the URL and [`UIDocumentBrowserViewController.ImportMode.none`](uidocumentbrowserviewcontroller/importmode/none.md) for the import mode.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # init(postProcessingAsVideoLayers:in:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: init
 
 Composes the composited video frames with the Core Animation layer.
@@ -38,7 +38,7 @@ The `animationLayer` should not come from, or be added to, another layer tree.
 
 ## See Also
 
-- [convenience init(additionalLayer: CALayer, asTrackID: CMPersistentTrackID)](avvideocompositioncoreanimationtool/init(additionallayer:astrackid:).md)
+- [convenience init(additionalLayer: sending CALayer, asTrackID: CMPersistentTrackID)](avvideocompositioncoreanimationtool/init(additionallayer:astrackid:).md)
   Adds a Core Animation layer to the video composition.
 - [convenience init(postProcessingAsVideoLayer: CALayer, in: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayer:in:).md)
   Composes the composited video frame with a Core Animation layer.

@@ -31,15 +31,16 @@ enum Error
   The call to the underlying graph-execute function failed.
 - [BNNSGraph.Error.unableToSetDynamicShapes](bnnsgraph/error/unabletosetdynamicshapes.md)
   The call to the underlying set dynamic shapes function failed.
+### Enumeration Cases
+- [BNNSGraph.Error.unableToMakeGraph(_:)](bnnsgraph/error/unabletomakegraph(_:).md)
+  Indicates that the call to the underlying `BNNSGraphContextSetDynamicShapes` function failed.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
-- [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

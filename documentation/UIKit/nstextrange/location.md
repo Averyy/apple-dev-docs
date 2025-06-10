@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: property
 
-Returns the starting location of the text range.
+The starting location of the text range.
 
 **Availability**:
 - iOS 15.0+
@@ -22,7 +22,7 @@ var location: any NSTextLocation { get }
 ## See Also
 
 - [var endLocation: any NSTextLocation](nstextrange/endlocation.md)
-  Returns the ending location of the text range.
+  The ending location of the text range.
 - [var isEmpty: Bool](nstextrange/isempty.md)
   Returns whether the text range is empty.
 

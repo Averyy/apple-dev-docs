@@ -8,9 +8,9 @@ Sets the style for gauges within this view.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 7.0+
 
 ## Declaration

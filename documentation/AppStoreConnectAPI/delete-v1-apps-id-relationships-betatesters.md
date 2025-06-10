@@ -16,6 +16,7 @@ Remove one or more beta testers’ access to test any builds of a specific app.
 
 - [List All Beta Groups for an App](get-v1-apps-_id_-betagroups.md)
   Get a list of beta groups associated with a specific app.
+- [GET /v1/apps/{id}/relationships/betaGroups](get-v1-apps-_id_-relationships-betagroups.md)
 
 
 ---

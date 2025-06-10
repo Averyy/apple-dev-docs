@@ -1,6 +1,6 @@
 # isInverted
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 Indicates that the expectation is not intended to happen.

@@ -42,6 +42,7 @@ struct RandomImageCropper
 ### Conforms To
 - [RandomTransformer](randomtransformer.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

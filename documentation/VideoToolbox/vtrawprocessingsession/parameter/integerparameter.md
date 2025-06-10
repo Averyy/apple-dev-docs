@@ -1,6 +1,6 @@
 # VTRAWProcessingSession.Parameter.IntegerParameter
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: struct
 
 **Availability**:
@@ -24,6 +24,7 @@ struct IntegerParameter
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # WeatherCondition.freezingDrizzle
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Freezing drizzle or light rain.

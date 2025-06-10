@@ -21,7 +21,7 @@ func sec_protocol_options_set_tls_ocsp_enabled(_ options: sec_protocol_options_t
 #### Discussion
 
 ```None
-  Enable or disable OCSP support.
+ Enable or disable OCSP support.
 ```
 
 ## Parameters

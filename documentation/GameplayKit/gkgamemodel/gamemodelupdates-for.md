@@ -1,6 +1,6 @@
 # gameModelUpdates(for:)
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: method  
 **Required**: Yes
 

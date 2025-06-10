@@ -22,8 +22,8 @@ class UITableViewController
 ## Mentions
 
 - [Filling a table with data](filling-a-table-with-data.md)
-- [Handling row selection in a table view](handling-row-selection-in-a-table-view.md)
 - [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
+- [Handling row selection in a table view](handling-row-selection-in-a-table-view.md)
 
 #### Overview
 
@@ -72,6 +72,7 @@ Create a custom subclass of [`UITableViewController`](uitableviewcontroller.md) 
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)

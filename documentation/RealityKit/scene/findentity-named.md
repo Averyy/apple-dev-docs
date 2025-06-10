@@ -10,6 +10,7 @@ Searches the scene’s anchor entity hierarchies for an entity with the given na
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -37,7 +38,7 @@ The [`findEntity(named:)`](scene/findentity(named:).md) method conducts a depth-
 
 ## See Also
 
-- [func performQuery(EntityQuery) -> QueryResult<Entity>](scene/performquery(_:).md)
+- [func performQuery(_:)](scene/performquery(_:).md)
   Returns all entities of the scene which pass the query.
 - [func findEntity(id: Entity.ID) -> Entity?](scene/findentity(id:).md)
   Returns `Entity` with the given `Entity.ID` in the `Scene`.

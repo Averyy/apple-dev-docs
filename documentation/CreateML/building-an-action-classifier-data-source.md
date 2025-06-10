@@ -20,8 +20,6 @@ Create a parent folder to contain the labeled folders. Then, create a folder for
 
 > ❗ **Important**: Each video in a labeled folder’s data source must demonstrate a single type of action.
 
-Each video in a labeled folder’s data source must demonstrate a single type of action.
-
 ![Flow diagram that shows a labeled directory data-source file arrangement. The parent folder, named Training Data 1 contains three labeled folders named, Squats, Lunges, and Jumping Jacks. Next to each labeled folder is a stack of video file icons with an arrow pointing toward its corresponding labeled directory.](https://docs-assets.developer.apple.com/published/90aaaf85e58dae5039cade10f6b01264/building-an-action-classifier-data-source-1%402x.png)
 
 Each video file may have more than one instance of an action, but the videos must minimize the time between each instance. If you notice inactivity between action instances, remove the inactivity by breaking the video file into separate files and trimming each video to the action.
@@ -39,8 +37,6 @@ To mark the beginning and ending of an example video clip within a larger video 
 Use the `start` and `end` time indices for a  video, which is a video that demonstrates two or more different types of action. If your annotation file omits the `start` category, Create ML defaults to the beginning of every video file for every entry. If your annotation file omits the `end` category, Create ML defaults to the end of every video.
 
 > ❗ **Important**: If you use a `start` or `end` category for any annotation entry, you must provide a value for that category in all annotation entries.
-
-If you use a `start` or `end` category for any annotation entry, you must provide a value for that category in all annotation entries.
 
 Create ML recognizes several different types of time indices including:
 

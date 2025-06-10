@@ -111,6 +111,7 @@ var body: some View {
 - [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>, width: MarkDimension, height: MarkDimension)](rectanglemark/init(x:y:width:height:).md)
   Creates a rectangle that plots values with x and y.
 ### Initializers
+- [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](rectanglemark/init(x:y:z:).md)
 - [init<X>(x: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?, width: MarkDimension)](rectanglemark/init(x:ystart:yend:width:)-xhqp.md)
   Creates a rectangle mark that plots values on x and has a fixed y interval.
 - [init<Y>(xStart: CGFloat?, xEnd: CGFloat?, y: PlottableValue<Y>, height: MarkDimension)](rectanglemark/init(xstart:xend:y:height:)-4x46i.md)
@@ -125,9 +126,11 @@ var body: some View {
 ## Relationships
 
 ### Conforms To
+- [Chart3DContent](chart3dcontent.md)
 - [ChartContent](chartcontent.md)
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

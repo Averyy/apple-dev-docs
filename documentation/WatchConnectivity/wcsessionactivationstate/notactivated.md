@@ -1,6 +1,6 @@
 # WCSessionActivationState.notActivated
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: case
 
 The session is not activated. When in this state, no communication occurs between the Watch app and iOS app. It is a programmer error to try to send data to the counterpart app while in this state.

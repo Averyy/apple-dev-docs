@@ -18,17 +18,13 @@ optional func fileOutput(_ output: AVCaptureFileOutput, didStartRecordingTo file
 
 #### Discussion
 
-```None
 Informs the delegate when the output has started writing to a file.
-```
 
 This method is called when the file output has started writing data to a file. If an error condition prevents any data from being written, this method may not be called. captureOutput:willFinishRecordingToOutputFileAtURL:fromConnections:error: and captureOutput:didFinishRecordingToOutputFileAtURL:fromConnections:error: will always be called, even if no data is written.
 
-```None
 If this method is implemented, the alternative delegate callback -captureOutput:didStartRecordingToOutputFileAtURL:fromConnections will not be called.
 
 Clients should not assume that this method will be called on a specific thread, and should also try to make this method as efficient as possible.
-```
 
 ## Parameters
 

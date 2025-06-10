@@ -1,6 +1,6 @@
 # accentColor(_:)
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Sets the accent color for this view and the views it contains.

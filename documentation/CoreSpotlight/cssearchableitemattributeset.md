@@ -31,8 +31,6 @@ When creating a [`CSSearchableItem`](cssearchableitem.md), it’s important to f
 
 > ❗ **Important**: Modify a `CSSearchableItemAttributeSet` object on only one thread at a time. Concurrent access to properties in an attribute set has undefined behavior.
 
-Modify a `CSSearchableItemAttributeSet` object on only one thread at a time. Concurrent access to properties in an attribute set has undefined behavior.
-
 ## Topics
 
 ### Getting an attribute set

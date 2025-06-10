@@ -31,6 +31,8 @@ string AppEncryptionDeclarationState
 - [object AppEncryptionDeclarationWithoutIncludesResponse](appencryptiondeclarationwithoutincludesresponse.md)
 - [object AppEncryptionDeclarationsResponse](appencryptiondeclarationsresponse.md)
   A response that contains a list of App Encryption Declaration resources.
+- [object AppEncryptionDeclarationAppEncryptionDeclarationDocumentLinkageResponse](appencryptiondeclarationappencryptiondeclarationdocumentlinkageresponse.md)
+- [object AppEncryptionDeclarationAppLinkageResponse](appencryptiondeclarationapplinkageresponse.md)
 
 
 ---

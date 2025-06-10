@@ -13,6 +13,7 @@ The default now playing mode. While this mode is active, your app will display n
 ## Declaration
 
 ```swift
+@MainActor
 class var `default`: CPNowPlayingMode { get }
 ```
 

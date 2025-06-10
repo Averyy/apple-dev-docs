@@ -16,8 +16,6 @@ Apps that manage multiple user profiles can accelerate the login process by reta
 
 > ❗ **Important**:  Don’t perform memory-intensive operations from your TVServices app extension. The memory limits for app extensions are significantly lower than for apps, and using too much memory might cause the system to terminate your extension. Instead, generate top shelf content and perform other memory-intensive operations on your server.
 
- Don’t perform memory-intensive operations from your TVServices app extension. The memory limits for app extensions are significantly lower than for apps, and using too much memory might cause the system to terminate your extension. Instead, generate top shelf content and perform other memory-intensive operations on your server.
-
 ## Topics
 
 ### Top shelf app extensions

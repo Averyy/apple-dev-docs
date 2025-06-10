@@ -1,6 +1,6 @@
 # TEXTURE21
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

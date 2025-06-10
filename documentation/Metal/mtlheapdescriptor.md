@@ -22,6 +22,7 @@ class MTLHeapDescriptor
 ## Mentions
 
 - [Creating Sparse Heaps and Sparse Textures](creating-sparse-heaps-and-sparse-textures.md)
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 
 #### Overview
 
@@ -46,6 +47,9 @@ Each new heap inherits the descriptor’s configuration as you create it, which 
   The total amount of memory, in bytes, for the heaps you create with this descriptor.
 - [var sparsePageSize: MTLSparsePageSize](mtlheapdescriptor/sparsepagesize.md)
   The page size for any resources you allocate from the heaps you create with this descriptor.
+### Instance Properties
+- [var maxCompatiblePlacementSparsePageSize: MTLSparsePageSize](mtlheapdescriptor/maxcompatibleplacementsparsepagesize.md)
+  Specifies the largest sparse page size that the Metal heap supports.
 
 ## Relationships
 

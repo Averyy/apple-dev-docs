@@ -1,6 +1,6 @@
 # kVTQPModulationLevel_Default
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

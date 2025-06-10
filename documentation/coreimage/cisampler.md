@@ -1,7 +1,7 @@
 # CISampler
 
 **Framework**: Core Image  
-**Kind**: cl
+**Kind**: class
 
 An object that retrieves pixel samples for processing by a filter kernel.
 
@@ -16,41 +16,47 @@ An object that retrieves pixel samples for processing by a filter kernel.
 ## Declaration
 
 ```swift
-class CISampler : NSObject
+class CISampler
 ```
 
 #### Overview
 
-The `CISampler` class retrieves samples of images for processing by a [`CIKernel`](cikernel.md) object. A `CISampler` object defines a coordinate transform, and modes for interpolation and wrapping. You use `CISampler` objects in conjunction with other Core Image classes, such as  [`CIFilter`](cifilter.md), [`CIKernel`](cikernel.md), and [`CIFilterShape`](cifiltershape.md), to create custom filters.
+The `CISampler` class retrieves samples of images for processing by a [`CIKernel`](cikernel.md) object. A `CISampler` object defines a coordinate transform, and modes for interpolation and wrapping. You use `CISampler` objects in conjunction with other Core Image classes, such as  [`CIFilter`](cifilter-swift.class.md), `CIKernel`, and [`CIFilterShape`](cifiltershape.md), to create custom filters.
 
 ## Topics
 
 ### Initializing a Sampler
-- [init(image: CIImage)](cisampler/1438117-init.md)
+- [convenience init(image: CIImage)](cisampler/init(image:).md)
   Initializes a sampler with an image object.
-- [init(image: CIImage, options: [AnyHashable : Any]?)](cisampler/1437963-init.md)
+- [init(image: CIImage, options: [AnyHashable : Any]?)](cisampler/init(image:options:).md)
   Initializes the sampler with an image object using options specified in a dictionary.
 ### Getting Information About the Sampler Object
-- [var definition: CIFilterShape](cisampler/1437877-definition.md)
+- [var definition: CIFilterShape](cisampler/definition.md)
   The domain of definition (DOD) of the sampler
-- [var extent: CGRect](cisampler/1437872-extent.md)
+- [var extent: CGRect](cisampler/extent.md)
   The rectangle that specifies the extent of the sampler
 ### Constants
-- [Sampler Option Keys](cisampler/sampler_option_keys.md)
+- [Sampler Option Keys](sampler-option-keys.md)
   Keys for creating a sampler.
-- [Sampler Option Values](cisampler/sampler_option_values.md)
+- [Sampler Option Values](sampler-option-values.md)
   Values for sampler option keys.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
-- [NSCopying](../foundation/nscopying.md)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
-- [Writing Custom Kernels](writing_custom_kernels.md)
+- [Writing Custom Kernels](writing-custom-kernels.md)
   Write your own custom kernels in either the Core Image Kernel Language or the Metal Shading Language.
 - [class CIKernel](cikernel.md)
   A GPU-based image-processing routine used to create custom Core Image filters.

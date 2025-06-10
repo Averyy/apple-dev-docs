@@ -142,6 +142,7 @@ Because floating-point types such as `Float` and `Double` are their own `Stride`
 ## Relationships
 
 ### Conforms To
+- [BNNSGraph.Builder.SliceIndex](../Accelerate/BNNSGraph/Builder/SliceIndex.md)
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
 - [Copyable](copyable.md)
@@ -161,6 +162,7 @@ Because floating-point types such as `Float` and `Double` are their own `Stride`
 - [ScaleDomain](../Charts/ScaleDomain.md)
 - [ScaleRange](../Charts/ScaleRange.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

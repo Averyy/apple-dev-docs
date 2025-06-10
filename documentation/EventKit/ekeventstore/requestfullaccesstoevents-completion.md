@@ -1,6 +1,6 @@
 # requestFullAccessToEvents(completion:)
 
-**Framework**: Eventkit  
+**Framework**: EventKit  
 **Kind**: method
 
 Prompts people to grant or deny read and write access to event data.
@@ -29,7 +29,7 @@ func requestFullAccessToEvents() async throws -> Bool
 func requestFullAccessToEvents() async throws -> Bool
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
-Requesting access to an event store asynchronously prompts people for permission to use their data. The operating system only prompts them the first time your app requests full access to events; any subsequent instantiations of [`EKEventStore`](ekeventstore.md) uses existing permissions. When they grant or deny access, [`EventKit`](eventkit.md) calls the completion handler on an arbitrary queue.
+Requesting access to an event store asynchronously prompts people for permission to use their data. The operating system only prompts them the first time your app requests full access to events; any subsequent instantiations of [`EKEventStore`](ekeventstore.md) uses existing permissions. When they grant or deny access, [`EventKit`](EventKit.md) calls the completion handler on an arbitrary queue.
 
 > **Note**:  Your iOS or Mac Catalyst app can present an [`EKEventEditViewController`](https://developer.apple.com/documentation/EventKitUI/EKEventEditViewController) to let people create events without requesting access to the event store. If your app creates events without using [`EKEventEditViewController`](https://developer.apple.com/documentation/EventKitUI/EKEventEditViewController), you must request at least write-only access to event data.
 
@@ -43,9 +43,9 @@ Your app isn’t blocked while the person decides to grant or deny permission. B
 
 ## See Also
 
-- [func requestWriteOnlyAccessToEvents(completion: EKEventStoreRequestAccessCompletionHandler)](ekeventstore/requestwriteonlyaccesstoevents(completion:).md)
+- [func requestWriteOnlyAccessToEvents(completion: (Bool, (any Error)?) -> Void)](ekeventstore/requestwriteonlyaccesstoevents(completion:).md)
   Prompts the person using your app to grant or deny write access to event data.
-- [func requestFullAccessToReminders(completion: EKEventStoreRequestAccessCompletionHandler)](ekeventstore/requestfullaccesstoreminders(completion:).md)
+- [func requestFullAccessToReminders(completion: (Bool, (any Error)?) -> Void)](ekeventstore/requestfullaccesstoreminders(completion:).md)
   Prompts people to grant or deny read and write access to reminders.
 - [class func authorizationStatus(for: EKEntityType) -> EKAuthorizationStatus](ekeventstore/authorizationstatus(for:).md)
   Determines the authorization status for the given entity type.

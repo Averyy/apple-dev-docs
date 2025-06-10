@@ -76,7 +76,7 @@ Use these modifiers to manage supplemental views that present context-specific c
   Configure the title menu of a toolbar.
 - [func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View](view/toolbartitledisplaymode(_:).md)
   Configures the toolbar title display mode for this view.
-- [func ornament<Content>(visibility: Visibility, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment, ornament: () -> Content) -> some View](view/ornament(visibility:attachmentanchor:contentalignment:ornament:).md)
+- [func ornament(visibility:attachmentAnchor:contentAlignment:ornament:)](view/ornament(visibility:attachmentanchor:contentalignment:ornament:).md)
   Presents an ornament.
 ### Context menus
 - [func contextMenu<MenuItems>(menuItems: () -> MenuItems) -> some View](view/contextmenu(menuitems:).md)

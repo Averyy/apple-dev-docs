@@ -32,6 +32,7 @@ object AgeRatingDeclarationUpdateRequest
   String that represents the app’s age rating as it appears on the App Store in Brazil for all platforms.
 - [type KidsAgeBand](kidsageband.md)
   String that represents a Made for Kids app’s age band.
+- [object AppInfoAgeRatingDeclarationLinkageResponse](appinfoageratingdeclarationlinkageresponse.md)
 
 
 ---

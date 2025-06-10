@@ -1,6 +1,6 @@
 # animate(springDuration:bounce:initialSpringVelocity:delay:options:animations:completion:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Animates changes to one or more views using a spring animation with the specified duration, bounce, initial velocity, delay, options, and completion handler.
@@ -11,8 +11,7 @@ Animates changes to one or more views using a spring animation with the specifie
 - Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
-- watchOS 10.0+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -27,8 +26,6 @@ Animates changes to one or more views using a spring animation with the specifie
 
 ## See Also
 
-- [static func animate(with: Animation, changes: () -> Void, completion: (() -> Void)?)](uiview/animate(with:changes:completion:).md)
-  Animates changes to one or more views using the specified SwiftUI animation.
 - [class func animate(withDuration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions, animations: () -> Void, completion: ((Bool) -> Void)?)](uiview/animate(withduration:delay:options:animations:completion:).md)
   Animate changes to one or more views using the specified duration, delay, options, and completion handler.
 - [class func animate(withDuration: TimeInterval, animations: () -> Void, completion: ((Bool) -> Void)?)](uiview/animate(withduration:animations:completion:).md)

@@ -1,6 +1,6 @@
 # Generating code
 
-**Framework**: Coredata
+**Framework**: Core Data
 
 Automatically or manually generate managed object subclasses from entities.
 
@@ -138,4 +138,4 @@ You can now see and edit both the class and properties files in your project sou
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/generating-code)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coredata/generating-code)*

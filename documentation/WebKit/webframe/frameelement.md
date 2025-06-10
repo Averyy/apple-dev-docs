@@ -1,6 +1,6 @@
 # frameElement
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The web view’s DOM frame element.

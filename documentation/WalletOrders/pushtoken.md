@@ -1,6 +1,6 @@
 # PushToken
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 The push token APNS uses to send update notifications to the device.

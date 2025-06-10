@@ -1,15 +1,16 @@
 # ungrouped
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
-The system may provide a default grouping mechanism, such as per-app grouping, by default.Utilizing the `.ungrouped` option opts out of the default group.
+Don’t use the system’s default behavior for grouping widgets.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
+- visionOS 26.0+ (Beta)
 - watchOS 11.0+
 
 ## Declaration
@@ -17,10 +18,6 @@ The system may provide a default grouping mechanism, such as per-app grouping, b
 ```swift
 static let ungrouped: WidgetRelevanceGroup
 ```
-
-#### Discussion
-
-Associating `.ungrouped` with a widget alongside other groups has undefined behavior.
 
 
 ---

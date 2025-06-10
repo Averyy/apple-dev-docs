@@ -1,6 +1,6 @@
 # setSupplementaryInterfaceHidden(_:animated:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Hides or shows supplementary interface objects, such as the Live Action button and Quick Actions, depending on the item type.

@@ -21,7 +21,7 @@ func presentError(_ error: any Error) -> Bool
 
 #### Discussion
 
-This method does not return until the user dismisses the alert and, if the error has recovery options and a recovery delegate, the error’s recovery delegate  is sent an [`attemptRecovery(fromError:optionIndex:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/attemptRecovery(fromError:optionIndex:)) message.
+This method does not return until the user dismisses the alert and, if the error has recovery options and a recovery delegate, the error’s recovery delegate  is sent an doc://com.apple.documentation/documentation/objectivec/nsobject/1416402-attemptrecovery message.
 
 The `NSDocument` default implementation of this method is equivalent to that of `NSResponder` and treats the shared `NSDocumentController` as the next responder and forwards these messages to it.
 

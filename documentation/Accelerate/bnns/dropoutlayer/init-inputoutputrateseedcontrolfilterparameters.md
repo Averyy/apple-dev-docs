@@ -11,9 +11,9 @@ Returns a new dropout layer.
 - Mac Catalyst ?+
 - macOS 11.0+
 - tvOS 14.0+
+- visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
-- visionOS ?+
 
 ## Declaration
 
@@ -24,8 +24,6 @@ convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, r
 #### Discussion
 
 > ❗ **Important**:  Dropout layers only support arrays with a data type of `float`. The input shape must be equal to the output shape.
-
- Dropout layers only support arrays with a data type of `float`. The input shape must be equal to the output shape.
 
 ## Parameters
 

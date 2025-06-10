@@ -40,6 +40,8 @@ object MetricsInsight
   Categories of metric reports for apps that you distribute through the App Store.
 - [object PerfPowerMetric](perfpowermetric.md)
   Unused.
+- [object AppPerfPowerMetricsLinkagesResponse](appperfpowermetricslinkagesresponse.md)
+- [object DiagnosticSignatureLogsLinkagesResponse](diagnosticsignaturelogslinkagesresponse.md)
 
 
 ---

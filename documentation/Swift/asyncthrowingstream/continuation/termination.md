@@ -36,6 +36,7 @@ The `onTermination` closure receives an instance of this type.
 
 ### Conforms To
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

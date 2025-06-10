@@ -42,6 +42,7 @@ struct RectangleObservation
 - [Hashable](../Swift/Hashable.md)
 - [QuadrilateralProviding](quadrilateralproviding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionObservation](visionobservation.md)
 
 ## See Also

@@ -1,6 +1,6 @@
 # resolveBatch(batchDeletionToken:)
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 Deletes the current batch and all its Store and Forward payments, allowing you to request a new batch.

@@ -27,8 +27,6 @@ Use the [`unsafePayloadValue`](verificationresult/unsafepayloadvalue.md) for deb
 
 > ❗ **Important**:  Don’t trust the integrity of the values you receive from the [`unsafePayloadValue`](verificationresult/unsafepayloadvalue.md) property. This property contains data regardless of the verification result, and contains data even if StoreKit’s verification fails.
 
- Don’t trust the integrity of the values you receive from the [`unsafePayloadValue`](verificationresult/unsafepayloadvalue.md) property. This property contains data regardless of the verification result, and contains data even if StoreKit’s verification fails.
-
 To determine if the JWS value fails verification, perform a verification on the [`jwsRepresentation`](verificationresult/jwsrepresentation-178oj.md) property for subscription renewal information, the [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) property for transactions, or the [`jwsRepresentation`](verificationresult/jwsrepresentation-6ma59.md) property for app transactions.
 
 ## See Also

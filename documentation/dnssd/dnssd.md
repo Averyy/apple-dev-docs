@@ -31,8 +31,6 @@ Most apps shouldn’t use this API, and instead should use a higher-level servic
 
 > ❗ **Important**:  Apps that use the local network must provide a usage string in their `Info.plist` file with the key [`NSLocalNetworkUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocalNetworkUsageDescription). Apps that use [`Bonjour`](https://developer.apple.com/documentation/Foundation/bonjour) must also declare the services they browse, using the [`NSBonjourServices`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSBonjourServices) key.
 
- Apps that use the local network must provide a usage string in their `Info.plist` file with the key [`NSLocalNetworkUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocalNetworkUsageDescription). Apps that use [`Bonjour`](https://developer.apple.com/documentation/Foundation/bonjour) must also declare the services they browse, using the [`NSBonjourServices`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSBonjourServices) key.
-
 ## Topics
 
 ### Reference

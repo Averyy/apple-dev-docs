@@ -24,8 +24,6 @@ The XSAVE feature set of the host processor defines the structure and size of th
 
 > ❗ **Important**:  This function must be called by the owning thread.
 
- This function must be called by the owning thread.
-
 ## Parameters
 
 - `vcpu`: The instance of the vCPU.

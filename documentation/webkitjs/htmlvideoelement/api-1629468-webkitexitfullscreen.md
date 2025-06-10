@@ -1,6 +1,6 @@
 # webkitExitFullscreen
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Exits fullscreen mode.

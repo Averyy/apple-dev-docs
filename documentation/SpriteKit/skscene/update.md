@@ -17,7 +17,6 @@ Tells your app to perform any app-specific logic to update your scene.
 ## Declaration
 
 ```swift
-@MainActor
 func update(_ currentTime: TimeInterval)
 ```
 

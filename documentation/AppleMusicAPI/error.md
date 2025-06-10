@@ -16,8 +16,8 @@ object Error
 
 ## Mentions
 
-- [HTTP Status Codes](http-status-codes.md)
 - [Handling Requests and Responses](handling-requests-and-responses.md)
+- [HTTP Status Codes](http-status-codes.md)
 
 #### Discussion
 

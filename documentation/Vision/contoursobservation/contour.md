@@ -41,6 +41,13 @@ struct Contour
 - [func boundingCircle() -> NormalizedCircle](contoursobservation/contour/boundingcircle.md)
 ### Getting the approximation
 - [func polygonApproximation(epsilon: Float) throws -> ContoursObservation.Contour](contoursobservation/contour/polygonapproximation(epsilon:).md)
+### Instance Properties
+- [var boundingBox: NormalizedRect](contoursobservation/contour/boundingbox.md)
+  The bounding box of the region.
+- [var boundingQuad: RectangleObservation](contoursobservation/contour/boundingquad.md)
+  The bounding quadrilateral of the region.
+- [var points: [NormalizedPoint]](contoursobservation/contour/points.md)
+  The points of the region as an array of `NormalizedPoint`.
 
 ## Relationships
 
@@ -49,6 +56,7 @@ struct Contour
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_TransferFunction
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The transfer function for compressed content.

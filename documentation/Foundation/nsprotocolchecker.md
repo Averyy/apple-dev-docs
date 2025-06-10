@@ -42,6 +42,8 @@ The object should be careful about vending references to `self`—the protocol c
 - [NSProxy](nsproxy.md)
 ### Conforms To
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

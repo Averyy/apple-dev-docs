@@ -22,7 +22,7 @@ static let cancel: ButtonRole
 
 #### Discussion
 
-Use this role for a button that cancels the current operation.
+Use this role for a button that cancels the current operation. Unlike confirmation, a cancel action implies progress will be lost by performing the operation.
 
 ## See Also
 

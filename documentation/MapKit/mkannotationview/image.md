@@ -17,7 +17,7 @@ The image the annotation view displays.
 
 ```swift
 @MainActor
-var image: UIImage? { get set }
+var image: NSImage? { get set }
 ```
 
 #### Discussion

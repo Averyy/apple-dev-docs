@@ -1,6 +1,6 @@
 # PHASE
 
-**Framework**: Phase  
+**Framework**: PHASE  
 **Kind**: module
 
 Create dynamic audio experiences in your game or app that react to events and cues in the environment.

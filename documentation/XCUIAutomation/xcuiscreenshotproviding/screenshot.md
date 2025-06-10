@@ -1,6 +1,6 @@
 # screenshot()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method  
 **Required**: Yes
 

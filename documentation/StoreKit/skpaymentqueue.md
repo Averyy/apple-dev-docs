@@ -22,9 +22,9 @@ class SKPaymentQueue
 
 ## Mentions
 
-- [Testing transaction observer code](testing-transaction-observer-code.md)
-- [Restoring purchased products](restoring-purchased-products.md)
 - [Unlocking purchased content](unlocking-purchased-content.md)
+- [Restoring purchased products](restoring-purchased-products.md)
+- [Testing transaction observer code](testing-transaction-observer-code.md)
 
 #### Overview
 
@@ -100,6 +100,7 @@ For more information on designing the payment processing portion of your app, se
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # compareBoundaryPoints(_:sourceRange:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

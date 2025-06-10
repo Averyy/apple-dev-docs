@@ -1,6 +1,6 @@
 # UNNotificationActionIcon
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 An icon associated with an action.

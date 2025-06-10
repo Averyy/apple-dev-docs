@@ -33,4 +33,4 @@ Implement a post-processing pipeline using the latest features on Apple GPUs.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/processing-hdr-images-with-metal)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/processing-hdr-images-with-metal)*

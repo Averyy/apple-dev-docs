@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it sets the password for Recovery Lock.
+A response from the device after it processes the command to set or clear the Recovery Lock password.
 
 **Availability**:
 - macOS 11.5+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,14 +16,14 @@ object SetRecoveryLockResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object SetRecoveryLockResponse.ErrorChainItem](setrecoverylockresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 
 ## See Also
 
 - [object SetRecoveryLockCommand](setrecoverylockcommand.md)
-  The command to set the password for Recovery Lock.
+  The command to set or clear the Recovery Lock password.
 
 
 ---

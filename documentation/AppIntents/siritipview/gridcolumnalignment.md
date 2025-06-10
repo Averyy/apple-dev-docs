@@ -10,7 +10,7 @@ Overrides the default horizontal alignment of the grid column that the view appe
 - iPadOS 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration

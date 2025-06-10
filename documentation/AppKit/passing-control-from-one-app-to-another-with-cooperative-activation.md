@@ -1,6 +1,6 @@
 # Passing control from one app to another with cooperative activation
 
-**Framework**: Appkit
+**Framework**: AppKit
 
 Request focus for your app, and coordinate passing control from one app to another.
 
@@ -65,4 +65,4 @@ Replace calls to [`deactivate()`](nsapplication/deactivate().md) with [`yieldAct
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/passing-control-from-one-app-to-another-with-cooperative-activation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/passing-control-from-one-app-to-another-with-cooperative-activation)*

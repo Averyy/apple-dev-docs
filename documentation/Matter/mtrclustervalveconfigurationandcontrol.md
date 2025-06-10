@@ -23,10 +23,10 @@ class MTRClusterValveConfigurationAndControl
 ### Initializers
 - [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclustervalveconfigurationandcontrol/init(device:endpointid:queue:).md)
 ### Instance Methods
-- [func close(with: MTRValveConfigurationAndControlClusterCloseParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustervalveconfigurationandcontrol/close(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func close(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustervalveconfigurationandcontrol/close(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func open(with: MTRValveConfigurationAndControlClusterOpenParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustervalveconfigurationandcontrol/open(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func open(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustervalveconfigurationandcontrol/open(withexpectedvalues:expectedvalueinterval:completion:).md)
+- [func close(with: MTRValveConfigurationAndControlClusterCloseParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustervalveconfigurationandcontrol/close(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func close(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustervalveconfigurationandcontrol/close(withexpectedvalues:expectedvalueinterval:completion:).md)
+- [func open(with: MTRValveConfigurationAndControlClusterOpenParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustervalveconfigurationandcontrol/open(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func open(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustervalveconfigurationandcontrol/open(withexpectedvalues:expectedvalueinterval:completion:).md)
 - [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclustervalveconfigurationandcontrol/readattributeacceptedcommandlist(with:).md)
 - [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclustervalveconfigurationandcontrol/readattributeattributelist(with:).md)
 - [func readAttributeAutoCloseTime(with: MTRReadParams?) -> [String : Any]?](mtrclustervalveconfigurationandcontrol/readattributeautoclosetime(with:).md)

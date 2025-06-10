@@ -12,6 +12,7 @@ The class that represents the default map presentation, which is a street map th
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS 1.0+
+- watchOS 9.0+
 
 ## Declaration
 

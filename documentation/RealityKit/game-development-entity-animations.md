@@ -49,6 +49,7 @@ Dynamically move, rotate, and scale entities at runtime.
   The value of a bindable target.
 - [struct BindableValuesReference](bindablevaluesreference.md)
   A reference to a bindable value of an animation.
+- [struct ComponentAnimatableData](componentanimatabledata.md)
 - [struct ParameterSet](parameterset.md)
   A reference to general-purpose entity parameters for animations.
 - [struct InternalBindPath](internalbindpath.md)

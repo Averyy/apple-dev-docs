@@ -26,8 +26,6 @@ Fences maintain order to prevent GPU data hazards as the GPU runs various passes
 
 > ❗ **Important**:  For a pass that updates and waits for the same fence, call [`waitForFence(_:)`](mtlblitcommandencoder/waitforfence(_:).md) before you call [`updateFence(_:)`](mtlblitcommandencoder/updatefence(_:).md). Updating a fence before waiting on it within the same encoder can cause GPU deadlock.
 
- For a pass that updates and waits for the same fence, call [`waitForFence(_:)`](mtlblitcommandencoder/waitforfence(_:).md) before you call [`updateFence(_:)`](mtlblitcommandencoder/updatefence(_:).md). Updating a fence before waiting on it within the same encoder can cause GPU deadlock.
-
 ## Parameters
 
 - `fence`: An   instance to update.

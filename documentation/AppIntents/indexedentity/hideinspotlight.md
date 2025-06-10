@@ -9,7 +9,7 @@ Controls whether this entity will be displayed in search results in the Spotligh
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
+- Mac Catalyst ?+
 - macOS 15.4+
 - visionOS 2.4+
 

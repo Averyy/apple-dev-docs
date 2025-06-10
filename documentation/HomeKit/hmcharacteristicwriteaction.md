@@ -47,14 +47,15 @@ Action sets are instances of [`HMActionSet`](hmactionset.md).
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [var actions: Set<HMAction>](hmactionset/actions.md)
   Set of actions in the action set.
-- [func addAction(HMAction, completionHandler: HMErrorBlock)](hmactionset/addaction(_:completionhandler:).md)
+- [func addAction(HMAction, completionHandler: ((any Error)?) -> Void)](hmactionset/addaction(_:completionhandler:).md)
   Adds an action to the action set.
-- [func removeAction(HMAction, completionHandler: HMErrorBlock)](hmactionset/removeaction(_:completionhandler:).md)
+- [func removeAction(HMAction, completionHandler: ((any Error)?) -> Void)](hmactionset/removeaction(_:completionhandler:).md)
   Removes an action from the action set.
 - [class HMAction](hmaction.md)
   An abstract base class for actions in HomeKit.

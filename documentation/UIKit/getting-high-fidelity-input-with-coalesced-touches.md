@@ -10,8 +10,6 @@ UIKit usually delivers touches to your app at around 60 Hz, but some devices are
 
 > ❗ **Important**:  Coalesced touches are intended for apps that need the extra precision and can handle the associated costs. Processing coalesced touches means gathering additional data and applying it to your content. If you don’t need the extra precision, continue using the set of touch objects that UIKit passes to the methods of your views or gesture recognizers.
 
- Coalesced touches are intended for apps that need the extra precision and can handle the associated costs. Processing coalesced touches means gathering additional data and applying it to your content. If you don’t need the extra precision, continue using the set of touch objects that UIKit passes to the methods of your views or gesture recognizers.
-
 The following image illustrates what happens when the user drags Apple Pencil across the device. At the point where UIKit reports a touch event to the app, Apple Pencil has reported four touch positions, but UIKit reports only the last touch to the app by default. The remaining three touches are delivered as coalesced touches, and the app must retrieve them explicitly to use them.
 
 ![An illustration, with two iPad screens shown side by side. On the left, the initial touch event made by Apple Pencil is shown toward the upper-left of the display. As Apple Pencil is dragged down and to the right, the touches are coalesced when the drag ends, as shown on the right.](https://docs-assets.developer.apple.com/published/223d4aea70e73c49f05b65c59c288f41/media-3004383%402x.png)

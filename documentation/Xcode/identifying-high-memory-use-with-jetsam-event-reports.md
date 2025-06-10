@@ -93,4 +93,4 @@ In addition to lowering your app’s memory use, ensure you are receiving the lo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/identifying-high-memory-use-with-jetsam-event-reports)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/identifying-high-memory-use-with-jetsam-event-reports)*

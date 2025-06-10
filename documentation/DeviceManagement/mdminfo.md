@@ -17,8 +17,8 @@ object MdmInfo
 
 ## Mentions
 
-- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
 - [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
+- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
 
 
 ---

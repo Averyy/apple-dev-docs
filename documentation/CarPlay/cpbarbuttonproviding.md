@@ -1,6 +1,6 @@
 # CPBarButtonProviding
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: protocol
 
 The methods that templates use to provide buttons for the navigation bar.
@@ -64,4 +64,4 @@ You don’t adopt this protocol in your own types. If you want to add buttons to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cpbarbuttonproviding)*
+*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cpbarbuttonproviding)*

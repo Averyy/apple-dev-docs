@@ -1,6 +1,6 @@
 # WebKitCSSKeyframeRule
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 `WebKitCSSKeyframeRule` objects represent the style rule for a single keyframe in the @-webkit-keyframes CSS rule used in animations. The [`WebKitAnimationEvent`](webkitanimationevent.md) class encapsulate information about running animations.

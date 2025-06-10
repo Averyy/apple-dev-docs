@@ -1,6 +1,6 @@
 # Building a Full Screen Top Shelf Extension
 
-**Framework**: Tvservices
+**Framework**: TV Services
 
 Highlight content from your Apple TV application by building a full screen Top Shelf extension.
 
@@ -22,4 +22,4 @@ Highlight content from your Apple TV application by building a full screen Top S
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVServices/building-a-full-screen-top-shelf-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvservices/building-a-full-screen-top-shelf-extension)*

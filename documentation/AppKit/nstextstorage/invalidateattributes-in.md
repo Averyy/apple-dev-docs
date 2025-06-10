@@ -16,7 +16,7 @@ func invalidateAttributes(in range: NSRange)
 
 #### Discussion
 
-Called from [`processEditing()`](nstextstorage/processediting().md) to invalidate attributes when the text storage changes. If the receiver isn’t lazy, this method calls [`fixAttributes(in:)`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/1533823-fixattributes). If lazy attribute fixing is in effect, this method instead records the range needing fixing.
+Called from [`processEditing()`](nstextstorage/processediting().md) to invalidate attributes when the text storage changes. If the receiver isn’t lazy, this method calls [`fixAttributes(in:)`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString/fixAttributes(in:)). If lazy attribute fixing is in effect, this method instead records the range needing fixing.
 
 ## Parameters
 

@@ -73,6 +73,8 @@ Create an `NSHostingController` object when you want to integrate SwiftUI views 
   An AppKit menu with menu items that are defined by a SwiftUI View.
 - [struct NSHostingSizingOptions](nshostingsizingoptions.md)
   Options for how hosting views and controllers reflect their content’s size into Auto Layout constraints.
+- [class NSHostingSceneRepresentation](nshostingscenerepresentation.md)
+  An AppKit type that hosts and can present SwiftUI scenes
 - [struct NSHostingSceneBridgingOptions](nshostingscenebridgingoptions.md)
   Options for how hosting views and controllers manage aspects of the associated window.
 

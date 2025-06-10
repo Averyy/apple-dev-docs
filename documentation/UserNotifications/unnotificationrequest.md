@@ -1,6 +1,6 @@
 # UNNotificationRequest
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 A request to schedule a local notification, which includes the content of the notification and the trigger conditions for delivery.

@@ -57,6 +57,17 @@ Your test keeps running after [`expect(_:_:sourceLocation:)`](expect(_:_:sourcel
 - [macro require<E, R>(throws: E, @autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> R) -> E](require(throws:_:sourcelocation:performing:)-4djuw.md)
 - [macro require<R>(@autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> R, throws: (any Error) async throws -> Bool) -> any Error](require(_:sourcelocation:performing:throws:).md)
   Check that an expression always throws an error matching some condition, and throw an error if it does not.
+### Checking how processes exit
+- [Exit testing](exit-testing.md)
+  Use exit tests to test functionality that might cause a test process to exit.
+- [macro expect(processExitsWith: ExitTest.Condition, observing: [any PartialKeyPath<ExitTest.Result> & Sendable], @autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> Void) -> ExitTest.Result?](expect(processexitswith:observing:_:sourcelocation:performing:).md)
+  Check that an expression causes the process to terminate in a given fashion.
+- [macro require(processExitsWith: ExitTest.Condition, observing: [any PartialKeyPath<ExitTest.Result> & Sendable], @autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> Void) -> ExitTest.Result](require(processexitswith:observing:_:sourcelocation:performing:).md)
+  Check that an expression causes the process to terminate in a given fashion and throw an error if it did not.
+- [enum ExitStatus](exitstatus.md)
+  An enumeration describing possible status a process will report on exit.
+- [struct ExitTest](exittest.md)
+  A type describing an exit test.
 ### Confirming that asynchronous events occur
 - [Testing asynchronous code](testing-asynchronous-code.md)
   Validate whether your code causes expected events to happen.
@@ -80,7 +91,7 @@ Your test keeps running after [`expect(_:_:sourceLocation:)`](expect(_:_:sourcel
 ## See Also
 
 - [Known issues](known-issues.md)
-  Highlight known issues when running tests.
+  Mark issues as known when running tests.
 
 
 ---

@@ -37,6 +37,7 @@ You can also use [`foreground`](shapestyle/foreground.md) to construct this styl
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 
 ## See Also

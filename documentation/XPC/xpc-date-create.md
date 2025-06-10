@@ -1,6 +1,6 @@
 # xpc_date_create(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates an XPC date object.

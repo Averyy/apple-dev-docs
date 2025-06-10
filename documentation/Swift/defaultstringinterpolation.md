@@ -89,6 +89,7 @@ See `StringInterpolationProtocol` for details on `appendInterpolation` methods.
 - [Copyable](copyable.md)
 - [CustomStringConvertible](customstringconvertible.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [StringInterpolationProtocol](stringinterpolationprotocol.md)
 - [TextOutputStream](textoutputstream.md)
 

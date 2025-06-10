@@ -16,7 +16,7 @@ Creates a new `PDFPage` object and initializes it with the specified `NSImage` o
 ## Declaration
 
 ```swift
-convenience init?(image: UIImage)
+convenience init?(image: NSImage)
 ```
 
 

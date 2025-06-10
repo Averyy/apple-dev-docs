@@ -25,8 +25,6 @@ This property is key-value observable.
 
 > ❗ **Important**:  The value of this property may change when switching cameras or formats. When this property changes, [`enabledSemanticSegmentationMatteTypes`](avcapturephotooutput/enabledsemanticsegmentationmattetypes.md) reverts to an empty array. If you’ve previously opted in for delivery of one or more semantic segmentation mattes, you need to set up your [`enabledSemanticSegmentationMatteTypes`](avcapturephotooutput/enabledsemanticsegmentationmattetypes.md) again.
 
- The value of this property may change when switching cameras or formats. When this property changes, [`enabledSemanticSegmentationMatteTypes`](avcapturephotooutput/enabledsemanticsegmentationmattetypes.md) reverts to an empty array. If you’ve previously opted in for delivery of one or more semantic segmentation mattes, you need to set up your [`enabledSemanticSegmentationMatteTypes`](avcapturephotooutput/enabledsemanticsegmentationmattetypes.md) again.
-
 ## See Also
 
 - [var enabledSemanticSegmentationMatteTypes: [AVSemanticSegmentationMatte.MatteType]](avcapturephotooutput/enabledsemanticsegmentationmattetypes.md)

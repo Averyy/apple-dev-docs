@@ -24,8 +24,6 @@ If `true`, the layer makes the result tensor and gradient tensors available for 
 
 > ❗ **Important**:  If you set `isDebuggingEnabled` to `true`, make sure to also include [`debugLayers`](mlcgraphcompilationoptions/debuglayers.md) in the `options` parameter when compiling the graph. Otherwise the layer ignores this property.
 
- If you set `isDebuggingEnabled` to `true`, make sure to also include [`debugLayers`](mlcgraphcompilationoptions/debuglayers.md) in the `options` parameter when compiling the graph. Otherwise the layer ignores this property.
-
 ## See Also
 
 - [var layerID: Int](mlclayer/layerid.md)

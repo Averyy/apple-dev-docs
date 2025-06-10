@@ -1,6 +1,6 @@
 # WKSwipeGestureRecognizer
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A gesture recognizer that interprets swiping gestures in one or more directions.

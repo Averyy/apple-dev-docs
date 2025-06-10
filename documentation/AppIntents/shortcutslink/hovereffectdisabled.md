@@ -8,7 +8,7 @@ Adds a condition that controls whether this view can display hover effects.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - tvOS 17.0+
 - visionOS 1.0+
 

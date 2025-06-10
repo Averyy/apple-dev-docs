@@ -1,30 +1,26 @@
-# init()
+# init(_:)
 
 **Framework**: Core Foundation  
 **Kind**: init
 
-Creates a size with zero width and height.
+Convert `CVImageSize` to [`CGSize`](cgsize.md)
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
 - Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
-init()
+init(_ size: CVImageSize)
 ```
-
-## See Also
-
-- [static var zero: CGSize { get }](CGSize/zero.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corefoundation/cgsize/init())*
+*[View on Apple Developer](https://developer.apple.com/documentation/corefoundation/cgsize/init(_:))*

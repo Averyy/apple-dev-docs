@@ -5,17 +5,31 @@
 
 Subtracts foreground from background values.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
+#### Overview
+
+B - F
+
 #### Parameter Types
 
 #### Parameter Descriptions
 
 #### Discussion
 
-The Subtractive Mix node subtracts two inputs and uses the `Mix` input to determine the weight of the foreground in the blend, represented by the equation `B - F`. Higher values closer to `1` output a more intense subtractive mix, while lower values closer to `0` dim the effect. Below is an example of a simple node graph that uses the subtractive mix node to blend two images together into a single material.
+The `Subtractive Mix` node subtracts two inputs and uses the `Mix` input to determine the weight of the foreground in the blend, represented by the equation `B - F`. Higher values closer to `1` output a more intense subtractive mix, while lower values closer to `0` dim the effect.
+
+Below is an example of a simple node graph that uses the subtractive mix node to blend two images into a single material:
 
 ![None](https://docs-assets.developer.apple.com/published/0b2cb1c29296c2d895fde15bce065e41/SubtractiveMixGraph.png)
 
-Below are two images and the resulting blended texture applied to a cube.
+Below are two images and the resulting blended texture applied to a cube:
 
 ![None](https://docs-assets.developer.apple.com/published/fca33a7dff83ead7e54cef9ff64f0775/SubtractiveMixMaterial.png)
 

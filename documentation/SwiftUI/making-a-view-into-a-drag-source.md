@@ -85,7 +85,7 @@ extension Profile: Transferable {
 
 Make sure to include the custom uniform type identifier in the app’s `Info.plist` file. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/UniformTypeIdentifiers/defining-file-and-data-types-for-your-app).
 
-Declare new uniform type identifiers as convenience variables on [`UTType`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct). For an exported declaration, use the following code:
+Declare new uniform type identifiers as convenience variables on `UTType`. For an exported declaration, use the following code:
 
 ```swift
 extension UTType {

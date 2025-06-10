@@ -35,8 +35,6 @@ Use the value of the original transaction identifier that you get from your app,
 
 > 💡 **Tip**:  If you maintain a database to manage your subscribers, save the original transaction identifier to uniquely identify auto-renewable subscriptions.
 
- If you maintain a database to manage your subscribers, save the original transaction identifier to uniquely identify auto-renewable subscriptions.
-
 ## See Also
 
 - [type effectiveDate](effectivedate.md)

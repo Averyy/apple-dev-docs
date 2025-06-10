@@ -1,6 +1,6 @@
 # com.apple.developer.associated-appclip-app-identifiers
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 A list of App Clip identifiers for an app with exactly one entry.

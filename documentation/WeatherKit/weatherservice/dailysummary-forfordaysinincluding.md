@@ -1,6 +1,6 @@
 # dailySummary(for:forDaysIn:including:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns day weather summaries for the requested location, for each day within the provided date interval.

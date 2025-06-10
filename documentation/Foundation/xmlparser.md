@@ -91,4 +91,4 @@ An [`XMLParser`](xmlparser.md) notifies its delegate about the items (elements, 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/xmlparser)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/xmlparser)*

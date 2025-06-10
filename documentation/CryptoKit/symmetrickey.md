@@ -42,6 +42,7 @@ You typically derive a symmetric key from an instance of a shared secret ([`Shar
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

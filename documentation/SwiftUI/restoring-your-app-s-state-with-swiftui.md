@@ -1,6 +1,6 @@
 # Restoring Your App’s State with SwiftUI
 
-**Framework**: Swiftui
+**Framework**: SwiftUI
 
 Provide app continuity for users by preserving their current activities.
 

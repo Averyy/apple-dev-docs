@@ -38,8 +38,6 @@ When an activity begins, the system creates a [`GroupSession`](groupsession.md) 
 
 > ❗ **Important**: `GroupActivity` types must be [`Codable`](https://developer.apple.com/documentation/Swift/Codable) so that the system can serialize them and send them to other participant’s devices.
 
-`GroupActivity` types must be [`Codable`](https://developer.apple.com/documentation/Swift/Codable) so that the system can serialize them and send them to other participant’s devices.
-
 ## Topics
 
 ### Specifying the activity details

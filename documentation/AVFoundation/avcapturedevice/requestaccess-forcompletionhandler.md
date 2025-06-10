@@ -1,6 +1,6 @@
 # requestAccess(for:completionHandler:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Requests the user’s permission to allow the app to capture media of a particular type.

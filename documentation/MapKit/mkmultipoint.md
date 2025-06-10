@@ -12,6 +12,7 @@ An abstract class that defines the common behavior that open and closed polygon 
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 1.0+
 
 ## Declaration
 

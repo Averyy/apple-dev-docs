@@ -1,6 +1,6 @@
 # show(_:withName:visibility:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Make the given font collection visible by giving it a name.

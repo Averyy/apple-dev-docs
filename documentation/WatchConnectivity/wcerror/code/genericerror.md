@@ -1,6 +1,6 @@
 # WCError.Code.genericError
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: case
 
 An error that occurs when there is an unknown problem.

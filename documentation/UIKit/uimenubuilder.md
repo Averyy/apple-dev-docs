@@ -51,13 +51,36 @@ To see an example of how to use a menu builder object, see [`Adding menus and sh
 - [func insertSibling(UIMenu, afterMenu: UIMenu.Identifier)](uimenubuilder/insertsibling(_:aftermenu:).md)
   Inserts a sibling menu after the specified menu.
 ### Replacing menus and child menu elements
-- [func replace(menu: UIMenu.Identifier, with: UIMenu)](uimenubuilder/replace(menu:with:).md)
-  Replaces the specified menu with a new menu.
 - [func replaceChildren(ofMenu: UIMenu.Identifier, from: ([UIMenuElement]) -> [UIMenuElement])](uimenubuilder/replacechildren(ofmenu:from:).md)
   Replaces the elements in a menu with the elements returned by the specified handler block.
 ### Removing a menu
 - [func remove(menu: UIMenu.Identifier)](uimenubuilder/remove(menu:).md)
   Removes a menu from the menu system.
+### Instance Methods
+- [func insertElements([UIMenuElement], afterAction: UIAction.Identifier)](uimenubuilder/insertelements(_:afteraction:).md)
+  Insert elements after an identified action.
+- [func insertElements([UIMenuElement], afterCommand: Selector, propertyList: Any?)](uimenubuilder/insertelements(_:aftercommand:propertylist:).md)
+- [func insertElements([UIMenuElement], afterMenu: UIMenu.Identifier)](uimenubuilder/insertelements(_:aftermenu:).md)
+  Insert elements after an identified menu.
+- [func insertElements([UIMenuElement], atEndOfMenu: UIMenu.Identifier)](uimenubuilder/insertelements(_:atendofmenu:).md)
+  Insert elements at the end of an identified parent menu.
+- [func insertElements([UIMenuElement], atStartOfMenu: UIMenu.Identifier)](uimenubuilder/insertelements(_:atstartofmenu:).md)
+  Insert elements at the start of an identified parent menu.
+- [func insertElements([UIMenuElement], beforeAction: UIAction.Identifier)](uimenubuilder/insertelements(_:beforeaction:).md)
+  Insert elements before an identified action.
+- [func insertElements([UIMenuElement], beforeCommand: Selector, propertyList: Any?)](uimenubuilder/insertelements(_:beforecommand:propertylist:).md)
+- [func insertElements([UIMenuElement], beforeMenu: UIMenu.Identifier)](uimenubuilder/insertelements(_:beforemenu:).md)
+  Insert elements before an identified menu.
+- [func remove(action: UIAction.Identifier)](uimenubuilder/remove(action:).md)
+  Remove an identified action.
+- [func remove(command: Selector, propertyList: Any?)](uimenubuilder/remove(command:propertylist:).md)
+- [func replace(action: UIAction.Identifier, with: [UIMenuElement])](uimenubuilder/replace(action:with:).md)
+  Replace an identified action with menu elements.
+- [func replace(command: Selector, propertyList: Any?, with: [UIMenuElement])](uimenubuilder/replace(command:propertylist:with:).md)
+- [func replace(menu: UIMenu.Identifier, with: [UIMenuElement])](uimenubuilder/replace(menu:with:)-8mwou.md)
+  Replace an identified menu with menu elements.
+- [func replace(menu: UIMenu.Identifier, with: UIMenu)](uimenubuilder/replace(menu:with:)-95tg2.md)
+  Replace an identified menu with a menu.
 
 ## See Also
 
@@ -65,6 +88,8 @@ To see an example of how to use a menu builder object, see [`Adding menus and sh
   A container for grouping related menu elements in an app menu or contextual menu.
 - [class UIMenuSystem](uimenusystem.md)
   An object representing a main or contextual menu system.
+- [class UIMainMenuSystem](uimainmenusystem.md)
+  The main menu system.
 
 
 ---

@@ -1,6 +1,6 @@
 # WKInterfaceDeviceCrownOrientation
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Constants indicating the crown orientation from the user’s perspective.
@@ -32,6 +32,7 @@ enum WKInterfaceDeviceCrownOrientation
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

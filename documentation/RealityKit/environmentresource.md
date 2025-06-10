@@ -10,6 +10,7 @@ An environmental resource that contains background and lighting information for 
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -36,7 +37,7 @@ RealityKit supports the same input formats as Image I/O, such as `.png` and `.jp
 ## Topics
 
 ### Loading the resource
-- [convenience init(named: String, in: Bundle?) async throws](environmentresource/init(named:in:).md)
+- [convenience(named:in:)](environmentresource/init(named:in:).md)
   Asynchronously loads an environment resource from a bundle.
 - [convenience init(equirectangular: CGImage, withName: String?) throws](environmentresource/init(equirectangular:withname:)-9g602.md)
   Synchronously creates an environment resource from an equirectangular image.
@@ -48,14 +49,6 @@ RealityKit supports the same input formats as Image I/O, such as `.png` and `.jp
   Synchronously generates an environment resource from a cube texture resource.
 - [static func load(named: String, in: Bundle?) throws -> EnvironmentResource](environmentresource/load(named:in:).md)
   Synchronously loads an environment resource from a bundle.
-### Configuring the resource creation
-- [EnvironmentResource.CreateOptions](environmentresource/createoptions.md)
-  A type that controls compression, sampling quality, and cubemap dimensions when creating an environment resource.
-- [EnvironmentResource.Compression](environmentresource/compression.md)
-  The compression to apply when creating an environment resource.
-### Accessing resource data
-- [var skybox: TextureResource](environmentresource/skybox.md)
-  The cube color texture that contains environment surrounding details.
 ### Deprecated
 - [static func generate(fromEquirectangular: CGImage, withName: String?) throws -> EnvironmentResource](environmentresource/generate(fromequirectangular:withname:)-3wtpe.md)
   Synchronously generates an environment resource from an equirectangular image.
@@ -63,12 +56,36 @@ RealityKit supports the same input formats as Image I/O, such as `.png` and `.jp
   Asynchronously generates an environment resource from an equirectangular image.
 - [static func loadAsync(named: String, in: Bundle?) -> LoadRequest<EnvironmentResource>](environmentresource/loadasync(named:in:).md)
   Asynchronously loads an environment resource from a bundle.
+### Structures
+- [EnvironmentResource.CreateOptions](environmentresource/createoptions-7diu2.md)
+  A type that controls compression, sampling quality, and cubemap dimensions when creating an environment resource.
+- [EnvironmentResource.CreateOptions](environmentresource/createoptions-eoe9.md)
+  A type that controls compression, sampling quality, and cubemap dimensions when creating an environment resource.
+### Initializers
+- [convenience(cube:options:)](environmentresource/init(cube:options:).md)
+  Asynchronously creates an environment resource from a cube texture.
+- [convenience(equirectangular:withName:)](environmentresource/init(equirectangular:withname:).md)
+  Asynchronously generates an environment resource from an equirectangular image.
+### Instance Properties
+- [var skybox: TextureResource](environmentresource/skybox-2shog.md)
+  The cube color texture that contains environment surrounding details.
+- [var skybox: TextureResource](environmentresource/skybox-6vyow.md)
+  The cube color texture that contains environment surrounding details.
+### Type Aliases
+- [EnvironmentResource.Compression](environmentresource/compression-4urkz.md)
+  The compression to apply when creating an environment resource.
+- [EnvironmentResource.Compression](environmentresource/compression-6oinp.md)
+  The compression to apply when creating an environment resource.
+### Type Methods
+- [static generate(fromEquirectangular:withName:)](environmentresource/generate(fromequirectangular:withname:).md)
+  Asynchronously generates an environment resource from an equirectangular image.
 
 ## Relationships
 
 ### Conforms To
 - [Resource](resource.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -109,4 +109,4 @@ For example, if you are using Xcode 13.2, which contains the macOS 12.1 SDK, the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3129-resolving-build-errors-from-helper-tools-in-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3129-resolving-build-errors-from-helper-tools-in-xcode-cloud)*

@@ -28,8 +28,6 @@ An outline view has the following features:
 
 > ❗ **Important**:  It is possible that your data source methods for populating the outline view may be called before [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()) if the data source is specified in Interface Builder. You should defend against this by having the data source’s [`outlineView(_:numberOfChildrenOfItem:)`](nsoutlineviewdatasource/outlineview(_:numberofchildrenofitem:).md) method return `0` for the number of items when the data source has not yet been configured. In [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()), when the data source is initialized you should always call [`reloadData()`](nstableview/reloaddata().md).
 
- It is possible that your data source methods for populating the outline view may be called before [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()) if the data source is specified in Interface Builder. You should defend against this by having the data source’s [`outlineView(_:numberOfChildrenOfItem:)`](nsoutlineviewdatasource/outlineview(_:numberofchildrenofitem:).md) method return `0` for the number of items when the data source has not yet been configured. In [`awakeFromNib()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/awakeFromNib()), when the data source is initialized you should always call [`reloadData()`](nstableview/reloaddata().md).
-
 For more information about using NSOutlineView in your app, see [`Navigating Hierarchical Data Using Outline and Split Views`](navigating-hierarchical-data-using-outline-and-split-views.md).
 
 ##### Subclassing
@@ -166,6 +164,7 @@ Subclassing `NSOutlineView` is not recommended. Customization can be accomplishe
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

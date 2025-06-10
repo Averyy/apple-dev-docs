@@ -1,6 +1,6 @@
 # webView(_:runOpenPanelForFileButtonWith:allowMultipleFiles:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Displays an open panel for a file input control.

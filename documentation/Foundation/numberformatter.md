@@ -26,8 +26,6 @@ Instances of [`NumberFormatter`](numberformatter.md) format the textual represen
 
 > 💡 **Tip**:  In Swift, you can use [`IntegerFormatStyle`](integerformatstyle.md), [`FloatingPointFormatStyle`](floatingpointformatstyle.md), or [`Decimal.FormatStyle`](decimal/formatstyle.md) rather than [`NumberFormatter`](numberformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
 
- In Swift, you can use [`IntegerFormatStyle`](integerformatstyle.md), [`FloatingPointFormatStyle`](floatingpointformatstyle.md), or [`Decimal.FormatStyle`](decimal/formatstyle.md) rather than [`NumberFormatter`](numberformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
-
 ##### Significant Digits and Fraction Digits
 
 The [`NumberFormatter`](numberformatter.md) class provides flexible options for displaying non-zero fractional parts of numbers.
@@ -232,6 +230,7 @@ On earlier versions of the operating system, or when using the legacy formatter 
 - [NSCopying](nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

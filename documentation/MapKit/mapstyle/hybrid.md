@@ -1,6 +1,6 @@
 # hybrid
 
-**Framework**: Mapkit  
+**Framework**: MapKit  
 **Kind**: property
 
 A map style that represents a satellite image of the area, including the paths of roads with their names layered on top.

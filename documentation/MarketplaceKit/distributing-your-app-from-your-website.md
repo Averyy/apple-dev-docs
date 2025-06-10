@@ -1,6 +1,6 @@
 # Distributing your app from your website
 
-**Framework**: Marketplacekit
+**Framework**: MarketplaceKit
 
 Configure your app and website to enable people to install your app on their devices from your website.
 
@@ -124,4 +124,4 @@ Similarly, to return `web` for the `current` distributor in a test plan, choose 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/distributing-your-app-from-your-website)*
+*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/distributing-your-app-from-your-website)*

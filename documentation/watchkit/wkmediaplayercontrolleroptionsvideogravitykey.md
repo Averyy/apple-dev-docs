@@ -1,6 +1,6 @@
 # WKMediaPlayerControllerOptionsVideoGravityKey
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: var
 
 The behavior for resizing the video to fit the available space. The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object containing an appropriate constant of the [`WKVideoGravity`](wkvideogravity.md) type.

@@ -77,4 +77,4 @@ Create each input/output queue to meet your apps needs by setting the descriptor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/mtliocommandqueuedescriptor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtliocommandqueuedescriptor)*

@@ -10,13 +10,12 @@ RealityKit anchors all entities in a scene to an anchor target in the same scene
 
 ## Topics
 
-### Anchoring component
+### Anchoring components
 - [struct AnchoringComponent](anchoringcomponent.md)
   A component that anchors virtual content to a real world target.
 - [AnchoringComponent.Target](anchoringcomponent/target-swift.enum.md)
   Defines the kinds of real world objects to which an anchor entity can be tethered.
-- [AnchoringComponent.TrackingMode](anchoringcomponent/trackingmode-swift.struct.md)
-  Decides how the `Entity` tracks its target anchor.
+- [struct ARKitAnchorComponent](arkitanchorcomponent.md)
 - [class AnchorEntity](anchorentity.md)
   An anchor that tethers entities to a scene.
 - [protocol HasAnchoring](hasanchoring.md)
@@ -26,11 +25,6 @@ RealityKit anchors all entities in a scene to an anchor target in the same scene
   Defines the alignment of real-world surfaces to seek as targets.
 - [AnchoringComponent.Target.Classification](anchoringcomponent/target-swift.enum/classification.md)
   Defines types of real-world surfaces to seek as targets.
-### Image and object tracking
-- [AnchoringComponent.ImageAnchoringSource](anchoringcomponent/imageanchoringsource.md)
-  Defines the source of object anchoring target based on how it is created.
-- [AnchoringComponent.ObjectAnchoringSource](anchoringcomponent/objectanchoringsource.md)
-  Defines the source of object anchoring target based on how it is created.
 ### Hand tracking
 - [Happy Beam](../visionOS/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
@@ -46,7 +40,7 @@ RealityKit anchors all entities in a scene to an anchor target in the same scene
 - [SpatialTrackingSession.Configuration.AnchorCapability](spatialtrackingsession/configuration/anchorcapability.md)
   A type that defines various anchor tracking capabilities.
 - [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](spatialtrackingsession/configuration/sceneunderstandingcapability.md)
-  Defines how system behaviors can use scene unerstanding data for.
+  Defines how system behaviors use scene understanding.
 - [SpatialTrackingSession.Configuration.Camera](spatialtrackingsession/configuration/camera.md)
   Defines the camera feed the RealityView renders.
 - [SpatialTrackingSession.UnavailableCapabilities](spatialtrackingsession/unavailablecapabilities.md)
@@ -62,9 +56,9 @@ RealityKit anchors all entities in a scene to an anchor target in the same scene
   An entity used to animate a virtual character in an AR scene by tracking a real person.
 - [protocol HasBodyTracking](hasbodytracking.md)
   An interface that enables the animation of a virtual character by tracking a real person in AR.
-### Physics simulation space
-- [AnchoringComponent.PhysicsSimulation](anchoringcomponent/physicssimulation-swift.enum.md)
-  Describes the physics simulation space of the entity and its descendants.
+### Accessory tracking
+- [Tracking a handheld accessory as a virtual sculpting tool](tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
+  Use a tracked accessory with Apple Vision Pro to create a virtual sculpture.
 
 ## See Also
 
@@ -80,6 +74,8 @@ RealityKit anchors all entities in a scene to an anchor target in the same scene
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
+- [Presenting images in RealityKit](presenting-images-in-realitykit.md)
+  Create and display spatial scenes in RealityKit.
 - [Models and meshes](scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
 - [Materials, textures, and shaders](scene-content-materials-and-shaders.md)

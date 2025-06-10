@@ -15,8 +15,7 @@
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init()
+init()
 ```
 
 

@@ -23,20 +23,20 @@ The circle overlay provides a built-in object for creating circles. MapKit JS de
 The following example uses circle overlays to show the relative population sizes of three cities in the San Francisco Bay Area:
 
 ```javascript
-var stats = [
+const stats = [
     { name: "San Francisco", coordinate: [37.783333, -122.416667], population: 852469 },
     { name: "Oakland", coordinate: [37.804444, -122.270833], population: 390724 },
     { name: "San Jose", coordinate: [37.333333, -121.9], population: 1000536 },
 ];
 
-var style = new mapkit.Style({
+const style = new mapkit.Style({
     lineWidth: 2,         // 2 CSS pixels.
     strokeColor: "#999",
     fillColor: "#FFF"
 });
 
-var circles = stats.map(function(stat) {
-    var coordinate = new mapkit.Coordinate(stat.coordinate[0], stat.coordinate[1]),
+const circles = stats.map(function(stat) {
+    const coordinate = new mapkit.Coordinate(stat.coordinate[0], stat.coordinate[1]),
         radius = stat.population / 85, // The radius is in meters.
         circle = new mapkit.CircleOverlay(coordinate, radius);
     circle.data = { population: stat.population };

@@ -1,6 +1,6 @@
 # action
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 **Availability**:

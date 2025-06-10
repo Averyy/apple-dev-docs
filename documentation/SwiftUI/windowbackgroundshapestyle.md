@@ -29,6 +29,7 @@ struct WindowBackgroundShapeStyle
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 
 ## See Also

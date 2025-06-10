@@ -47,6 +47,7 @@ Each `UnicodeDecodingResult` instance can represent a Unicode scalar value, an i
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

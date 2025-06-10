@@ -1,6 +1,6 @@
 # xpc_connection_set_peer_lightweight_code_requirement(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Sets a requirement that the executable for the peer process has a valid code signature that matches the lightweight code requirement.
@@ -26,8 +26,6 @@ On success, `0`. Otherwise, a value from [`Errors`](xpc-connections#Errors.md).
 When you set this requirement on a connection, the operating system checks that peer process satisfies the requirement every time it sends a message to your process. If the peer process initiated the connection and its executable doesn’t satisfy the lightweight code requirement, then you don’t receive a message and the operating system doesn’t call your event handler. If your process sent a message to its peer expecting a reply, and its executable doesn’t have the requested entitlement, then you don’t receive a reply and the operating system delivers [`XPC_ERROR_PEER_CODE_SIGNING_REQUIREMENT`](xpc_error_peer_code_signing_requirement-c.macro.md) instead.
 
 > ❗ **Important**:  It’s an error to call this function multiple times for the same connection, or to call multiple functions that set code-signing requirements on the same connection. If you do, then the operating system terminates your process.
-
- It’s an error to call this function multiple times for the same connection, or to call multiple functions that set code-signing requirements on the same connection. If you do, then the operating system terminates your process.
 
 ## Parameters
 

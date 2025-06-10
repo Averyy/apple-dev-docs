@@ -1,6 +1,6 @@
 # attachments
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An array of data that augments a test issue, such as files, images, screenshots, data blobs, or ZIP files.

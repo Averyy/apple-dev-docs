@@ -17,6 +17,7 @@ The default style for a tip view.
 ## Declaration
 
 ```swift
+nonisolated
 static var miniTip: MiniTipViewStyle { get }
 ```
 

@@ -5,18 +5,26 @@
 
 Converts a stream from one data type to another.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Discussion
 
-The Convert node takes data of one type and outputs it in another form. The supported type conversions are shown above with the various convert node types. The convert node handles data types in the following ways:
+The `Convert` node takes data of one type and outputs it in another form. The supported type conversions are shown above with the various convert node types. The `Convert` node handles data types in the following ways:
 
-- When converting a float to a color or vector, the convert node copies the float to all channels of the color or vector.
-- When converting a color3 to a color4, the convert node sets the output alpha to `1.0`
-- When converting a color4 to a color3, the alpha channel is dropped.
-- When converting a boolean or integer to a float, the output is either `1.0` or `0.0`.
-- When converting a vector2 to vector3 or a vector3 to a vector4, an additional channel with a value of `1.0` is appended to the input vector.
-- When converting a vector4 to a vector3 or a vector3 to a vector2, the last channel is dropped.
+- When converting a `float` to a `color` or `vector`, the `Convert` node copies the `float` to all channels of the `color` or `vector`.
+- When converting a `color3` to a `color4`, the `Convert` node sets the output alpha to `1.0`
+- When converting a `color4` to a `color3`, the `Convert` node drops the alpha channel.
+- When converting a `boolean` or `integer` to a `float`, the output is either `1.0` or `0.0`.
+- When converting a `vector2` to `vector3` or a `vector3` to a `vector4`, the `Convert` nodes populates the additional channel with a value of `1.0`
+- When converting a `vector4` to a `vector3`, or a `vector3` to a `vector2`, drop the last channel.
 
 ## See Also
 

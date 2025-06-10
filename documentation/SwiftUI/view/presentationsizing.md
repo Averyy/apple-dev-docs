@@ -1,6 +1,6 @@
 # presentationSizing(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Sets the sizing of the containing presentation.

@@ -6,11 +6,12 @@
 Initialize a mesh resource from descriptors asynchronously.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- visionOS ?+
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
 
 ## Declaration
 

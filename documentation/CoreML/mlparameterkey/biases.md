@@ -1,6 +1,6 @@
 # biases
 
-**Framework**: Coreml  
+**Framework**: Core ML  
 **Kind**: property
 
 The key you use to access the biases of a layer in a neural network model.

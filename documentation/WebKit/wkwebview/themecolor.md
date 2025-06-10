@@ -1,6 +1,6 @@
 # themeColor
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The theme color that the system gets from the first valid meta tag in the webpage.
@@ -16,7 +16,7 @@ The theme color that the system gets from the first valid meta tag in the webpag
 
 ```swift
 @MainActor
-var themeColor: UIColor? { get }
+var themeColor: NSColor? { get }
 ```
 
 ## See Also

@@ -1,6 +1,6 @@
 # addItems(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Inserts or updates the specified items in the web history.

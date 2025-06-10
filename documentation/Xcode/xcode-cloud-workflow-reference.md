@@ -115,4 +115,4 @@ Using either Xcode or App Store Connect, you can create custom workflows to veri
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/xcode-cloud-workflow-reference)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/xcode-cloud-workflow-reference)*

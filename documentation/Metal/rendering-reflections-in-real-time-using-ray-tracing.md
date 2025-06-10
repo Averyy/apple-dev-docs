@@ -42,4 +42,4 @@ To run this sample app, you need the following:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/rendering-reflections-in-real-time-using-ray-tracing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/rendering-reflections-in-real-time-using-ray-tracing)*

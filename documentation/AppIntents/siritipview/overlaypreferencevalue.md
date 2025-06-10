@@ -10,7 +10,7 @@ Reads the specified preference value from the view, using it to produce a second
 - iPadOS 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 6.0+
 
 ## Declaration

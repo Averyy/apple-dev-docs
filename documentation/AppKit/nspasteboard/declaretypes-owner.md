@@ -1,6 +1,6 @@
 # declareTypes(_:owner:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Prepares the receiver for a change in its contents by declaring the new types of data it will contain and a new owner.

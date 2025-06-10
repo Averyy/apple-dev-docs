@@ -41,8 +41,8 @@ class MTRClusterSmokeCOAlarm
 - [func readAttributeSmokeSensitivityLevel(with: MTRReadParams?) -> [String : Any]?](mtrclustersmokecoalarm/readattributesmokesensitivitylevel(with:).md)
 - [func readAttributeSmokeState(with: MTRReadParams?) -> [String : Any]?](mtrclustersmokecoalarm/readattributesmokestate(with:).md)
 - [func readAttributeTestInProgress(with: MTRReadParams?) -> [String : Any]?](mtrclustersmokecoalarm/readattributetestinprogress(with:).md)
-- [func selfTestRequest(with: MTRSmokeCOAlarmClusterSelfTestRequestParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustersmokecoalarm/selftestrequest(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func selfTestRequest(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustersmokecoalarm/selftestrequest(withexpectedvalues:expectedvalueinterval:completion:).md)
+- [func selfTestRequest(with: MTRSmokeCOAlarmClusterSelfTestRequestParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustersmokecoalarm/selftestrequest(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func selfTestRequest(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustersmokecoalarm/selftestrequest(withexpectedvalues:expectedvalueinterval:completion:).md)
 - [func writeAttributeSmokeSensitivityLevel(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclustersmokecoalarm/writeattributesmokesensitivitylevel(withvalue:expectedvalueinterval:).md)
 - [func writeAttributeSmokeSensitivityLevel(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclustersmokecoalarm/writeattributesmokesensitivitylevel(withvalue:expectedvalueinterval:params:).md)
 

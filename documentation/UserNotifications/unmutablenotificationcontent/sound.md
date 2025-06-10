@@ -1,6 +1,6 @@
 # sound
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The sound that plays when the system delivers the notification.

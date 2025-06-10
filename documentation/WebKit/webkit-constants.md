@@ -1,6 +1,6 @@
 # WebKit Constants
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 WebKit constants affecting multiple classes.
 
@@ -61,7 +61,7 @@ WebKit constants affecting multiple classes.
 - [let WebActionButtonKey: String](webactionbuttonkey.md)
   An NSNumber object where `0` indicates the left button, `1` indicates the middle button, and `2` indicates the right button.
 - [let WebActionElementKey: String](webactionelementkey.md)
-  A dictionary containing element information. See [`WebView`](webview.md) for a description of the key-value pairs in this dictionary.
+  A dictionary containing element information. See `WebView` for a description of the key-value pairs in this dictionary.
 - [let WebActionModifierFlagsKey: String](webactionmodifierflagskey.md)
   An unsigned number that indicates the modifier flag.
 - [let WebActionNavigationTypeKey: String](webactionnavigationtypekey.md)
@@ -92,19 +92,19 @@ WebKit constants affecting multiple classes.
   An NSString containing the title of an anchor.
 - [let WebElementLinkURLKey: String](webelementlinkurlkey.md)
   An NSURL containing the location of a link if the element is within an anchor.
-- [static let WebHistoryAllItemsRemoved: NSNotification.Name](../foundation/nsnotification/name/1521391-webhistoryallitemsremoved.md)
+- [static let WebHistoryAllItemsRemoved: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistoryAllItemsRemoved.md)
   Posted when all history items have been removed from the web history.
-- [static let WebHistoryItemChanged: NSNotification.Name](../foundation/nsnotification/name/1525160-webhistoryitemchanged.md)
+- [static let WebHistoryItemChanged: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistoryItemChanged.md)
   Posted by a WebHistoryItem object when the value of the history item’s title, alternate title, URL strings, or last visited interval changes.
-- [static let WebHistoryItemsAdded: NSNotification.Name](../foundation/nsnotification/name/1521408-webhistoryitemsadded.md)
+- [static let WebHistoryItemsAdded: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistoryItemsAdded.md)
   Posted when history items have been added to a web history.
 - [let WebHistoryItemsKey: String](webhistoryitemskey.md)
   The key to access an array containing the added or removed web history items.
-- [static let WebHistoryItemsRemoved: NSNotification.Name](../foundation/nsnotification/name/1521392-webhistoryitemsremoved.md)
+- [static let WebHistoryItemsRemoved: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistoryItemsRemoved.md)
   Posted when items have been removed from the web history.
-- [static let WebHistoryLoaded: NSNotification.Name](../foundation/nsnotification/name/1521395-webhistoryloaded.md)
+- [static let WebHistoryLoaded: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistoryLoaded.md)
   Posted when web history items have been loaded from a URL.
-- [static let WebHistorySaved: NSNotification.Name](../foundation/nsnotification/name/1521397-webhistorysaved.md)
+- [static let WebHistorySaved: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebHistorySaved.md)
   Posted when web history items have been saved to a URL.
 - [let WebKitErrorDomain: String](webkiterrordomain.md)
 - [let WebKitErrorMIMETypeKey: String](webkiterrormimetypekey.md)
@@ -120,23 +120,23 @@ WebKit constants affecting multiple classes.
   If an element of the page’s Document Object Model was used to specify the plug-in, this will contain that element. Otherwise, it will be `nil`.
 - [let WebPlugInShouldLoadMainResourceKey: String](webpluginshouldloadmainresourcekey.md)
   A Boolean value indicating whether the plug-in should load its own main resource (the `src` URL, in most cases).
-- [static let WebPreferencesChanged: NSNotification.Name](../foundation/nsnotification/name/1536311-webpreferenceschanged.md)
-  Posted when the web preference settings are changed. 
-- [static let WebViewDidBeginEditing: NSNotification.Name](../foundation/nsnotification/name/1408490-webviewdidbeginediting.md)
+- [static let WebPreferencesChanged: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebPreferencesChanged.md)
+  Posted when the web preference settings are changed.
+- [static let WebViewDidBeginEditing: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewDidBeginEditing.md)
   Posted when a web view begins any operation that changes its contents in response to user editing.
-- [static let WebViewDidChange: NSNotification.Name](../foundation/nsnotification/name/1408476-webviewdidchange.md)
+- [static let WebViewDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewDidChange.md)
   Posted when a web view performs any operation that changes its contents in response to user editing.
-- [static let WebViewDidChangeSelection: NSNotification.Name](../foundation/nsnotification/name/1408552-webviewdidchangeselection.md)
+- [static let WebViewDidChangeSelection: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewDidChangeSelection.md)
   Posted when a web view changes its typing selection.
-- [static let WebViewDidChangeTypingStyle: NSNotification.Name](../foundation/nsnotification/name/1408443-webviewdidchangetypingstyle.md)
+- [static let WebViewDidChangeTypingStyle: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewDidChangeTypingStyle.md)
   Posted when a web view changes its typing style.
-- [static let WebViewDidEndEditing: NSNotification.Name](../foundation/nsnotification/name/1408570-webviewdidendediting.md)
+- [static let WebViewDidEndEditing: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewDidEndEditing.md)
   Posted when a web view ends any operation that changes its contents in response to user editing.
-- [static let WebViewProgressEstimateChanged: NSNotification.Name](../foundation/nsnotification/name/1408355-webviewprogressestimatechanged.md)
+- [static let WebViewProgressEstimateChanged: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewProgressEstimateChanged.md)
   Posted by a WebView object when the estimated progress value of a load changes.
-- [static let WebViewProgressFinished: NSNotification.Name](../foundation/nsnotification/name/1408430-webviewprogressfinished.md)
+- [static let WebViewProgressFinished: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewProgressFinished.md)
   Posted by a WebView object when the load has finished.
-- [static let WebViewProgressStarted: NSNotification.Name](../foundation/nsnotification/name/1408460-webviewprogressstarted.md)
+- [static let WebViewProgressStarted: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebViewProgressStarted.md)
   Posted by a WebView object when a load begins, including a load that is initiated in a subframe.
 ### Constants
 - [let WKErrorDomain: String](wkerrordomain.md)

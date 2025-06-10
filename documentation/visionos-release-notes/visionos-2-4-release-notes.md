@@ -1,6 +1,6 @@
 # visionOS 2.4 Release Notes
 
-**Framework**: Visionos Release Notes
+**Framework**: visionOS Release Notes
 
 Update your apps to use new features, and test your apps against API changes.
 

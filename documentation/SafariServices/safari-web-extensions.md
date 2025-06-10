@@ -10,8 +10,6 @@ A Safari web extension adds custom functionality to Safari using JavaScript APIs
 
 > ❗ **Important**:  You implement a Safari web extension as a macOS, visionOS, or iOS app extension to provide a safe and secure distribution and usage model. You can distribute a Safari web extension with a Mac app, a visionOS app, an iOS app, or a Mac app created using [`Mac Catalyst`](https://developer.apple.com/documentation/UIKit/mac-catalyst). Use [`Xcode`](https://developer.apple.comhttps://developer.apple.com/xcode/) to package your extension for testing and distribution, and join the [`Apple Developer Program`](https://developer.apple.comhttps://developer.apple.com/programs/) to distribute Safari web extensions. For more information, see [`Distributing your Safari web extension`](distributing-your-safari-web-extension.md).
 
- You implement a Safari web extension as a macOS, visionOS, or iOS app extension to provide a safe and secure distribution and usage model. You can distribute a Safari web extension with a Mac app, a visionOS app, an iOS app, or a Mac app created using [`Mac Catalyst`](https://developer.apple.com/documentation/UIKit/mac-catalyst). Use [`Xcode`](https://developer.apple.comhttps://developer.apple.com/xcode/) to package your extension for testing and distribution, and join the [`Apple Developer Program`](https://developer.apple.comhttps://developer.apple.com/programs/) to distribute Safari web extensions. For more information, see [`Distributing your Safari web extension`](distributing-your-safari-web-extension.md).
-
 To get started with creating a Safari web extension, use one of the following options:
 
 - Convert your existing extension into a Safari web extension, so you can use it in Safari in macOS, visionOS, and iOS and distribute it. Xcode includes a command-line tool to simplify this process.
@@ -36,6 +34,8 @@ Safari web extensions are available in macOS with Safari 14 and later, visionOS 
   Convert your existing extension to a Safari web extension using Xcode’s command-line tool.
 - [Converting a Safari app extension to a Safari web extension](converting-a-safari-app-extension-to-a-safari-web-extension.md)
   Unify your web extensions and simplify development by sharing code with a Safari web extension.
+- [Packaging and distributing Safari Web Extensions with App Store Connect](packaging-and-distributing-safari-web-extensions-with-app-store-connect.md)
+  Upload and distribute Safari Web Extensions without using a Mac or Xcode.
 ### Extension updates
 - [Updating a Safari web extension](updating-a-safari-web-extension.md)
   Add new features and fix bugs in your Safari web extension using Xcode tools.

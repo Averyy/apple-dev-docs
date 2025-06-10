@@ -1,6 +1,6 @@
 # kVTDownsamplingMode_Decimate
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Default, decimate extra samples.

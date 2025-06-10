@@ -1,6 +1,6 @@
 # WKInterfaceDate
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A label that displays the current date or time.

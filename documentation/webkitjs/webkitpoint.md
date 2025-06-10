@@ -1,6 +1,6 @@
 # WebKitPoint
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 `WebKitPoint` objects represent a point in two-dimensional space used by CSS transitions specified using the -webkit-transition property.

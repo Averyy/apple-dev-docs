@@ -1,6 +1,6 @@
 # default
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 The system’s default vertical placement.
@@ -8,7 +8,6 @@ The system’s default vertical placement.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

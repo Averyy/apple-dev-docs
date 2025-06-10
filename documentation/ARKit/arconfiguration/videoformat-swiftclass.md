@@ -38,6 +38,11 @@ This class is immutable; to set the frame rate and video resolution for an AR se
   Constants that indicate the physical position of a capture device.
 - [var captureDeviceType: AVCaptureDevice.DeviceType](arconfiguration/videoformat-swift.class/capturedevicetype.md)
   The camera that supplies the video format.
+### Instance Properties
+- [var defaultColorSpace: AVCaptureColorSpace](arconfiguration/videoformat-swift.class/defaultcolorspace.md)
+  The color space ARKit uses to configure the capture session when this video format is selected.
+- [var defaultPhotoSettings: AVCapturePhotoSettings](arconfiguration/videoformat-swift.class/defaultphotosettings.md)
+  The default AVCapturePhotoSettings object that ARKit uses when capturing a high resolution frame using this video format.
 
 ## Relationships
 

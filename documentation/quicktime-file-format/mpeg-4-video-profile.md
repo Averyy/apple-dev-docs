@@ -1,6 +1,6 @@
 # MPEG-4 video profile
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 #### Overview
 

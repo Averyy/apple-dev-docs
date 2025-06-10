@@ -1,6 +1,6 @@
 # onTapGesture(count:perform:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Adds an action to perform when this view recognizes a tap gesture.

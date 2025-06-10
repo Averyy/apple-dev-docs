@@ -39,6 +39,15 @@ struct SparseAttributesComplex_t
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
 
+## See Also
+
+- [struct SparseMatrix_Complex_Double](sparsematrix_complex_double.md)
+  A type representing a sparse complex matrix.
+- [struct SparseMatrix_Complex_Float](sparsematrix_complex_float.md)
+  A type representing a sparse complex matrix.
+- [struct SparseMatrixStructureComplex](sparsematrixstructurecomplex.md)
+  A type representing the sparsity structure of a sparse complex matrix.
+
 
 ---
 

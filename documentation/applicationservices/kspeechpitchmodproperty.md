@@ -1,6 +1,6 @@
 # kSpeechPitchModProperty
 
-**Framework**: Applicationservices  
+**Framework**: Application Services  
 **Kind**: data
 
 Get or set a speech channel’s pitch modulation.

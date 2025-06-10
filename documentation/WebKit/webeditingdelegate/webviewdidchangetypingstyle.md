@@ -1,6 +1,6 @@
 # webViewDidChangeTypingStyle(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sent by the default notification center when the user changes the typing style in the web view.

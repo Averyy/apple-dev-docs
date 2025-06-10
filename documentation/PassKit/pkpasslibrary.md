@@ -86,8 +86,13 @@ The `PKPassLibrary` isn’t thread-safe. Use instances of this class only on a s
 - [Deprecated Symbols](deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Instance Methods
+- [func authorizationStatus(for: PKPassLibrary.Capability) -> PKPassLibrary.AuthorizationStatus](pkpasslibrary/authorizationstatus(for:).md)
 - [func encryptedServiceProviderData(for: PKSecureElementPass, completion: ([AnyHashable : Any]?, (any Error)?) -> Void)](pkpasslibrary/encryptedserviceproviderdata(for:completion:).md)
 - [func passes(withReaderIdentifier: String) -> Set<PKSecureElementPass>](pkpasslibrary/passes(withreaderidentifier:).md)
+- [func requestAuthorization(for: PKPassLibrary.Capability, completion: (PKPassLibrary.AuthorizationStatus) -> Void)](pkpasslibrary/requestauthorization(for:completion:).md)
+### Enumerations
+- [PKPassLibrary.AuthorizationStatus](pkpasslibrary/authorizationstatus.md)
+- [PKPassLibrary.Capability](pkpasslibrary/capability.md)
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 # init(application:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates a metric for measuring disk use in the requested app.

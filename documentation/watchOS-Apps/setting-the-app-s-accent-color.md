@@ -1,6 +1,6 @@
 # Setting the app’s accent color
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Set your app’s accent color.
 
@@ -55,4 +55,4 @@ Click the Global Tint pop-up button to display a menu with several preexisting c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/setting-the-app-s-accent-color)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/setting-the-app-s-accent-color)*

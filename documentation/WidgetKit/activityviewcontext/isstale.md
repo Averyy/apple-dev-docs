@@ -1,6 +1,6 @@
 # isStale
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 A Boolean value that describes whether the Live Activity is out of date.

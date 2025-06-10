@@ -1,6 +1,6 @@
 # recordFailure(inTest:withDescription:inFile:atLine:expected:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Records a test failure during test execution for this test run.

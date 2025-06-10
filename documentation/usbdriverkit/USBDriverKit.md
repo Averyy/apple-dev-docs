@@ -1,6 +1,6 @@
 # USBDriverKit
 
-**Framework**: Usbdriverkit  
+**Framework**: USBDriverKit  
 **Kind**: module
 
 Develop drivers for USB-based devices.
@@ -46,6 +46,27 @@ Develop your driver by subclassing [`IOService`](https://developer.apple.com/doc
 - [USBDriverKit Functions](usbdriverkit-functions.md)
 - [USBDriverKit Data Types](usbdriverkit-data-types.md)
 - [USBDriverKit Macros](usbdriverkit-macros.md)
+### Macros
+- [kUSBHostBillboardDevicePropertyAltModeFailed](kusbhostbillboarddevicepropertyaltmodefailed.md)
+- [kUSBHostBillboardDevicePropertyAltModePowerFailed](kusbhostbillboarddevicepropertyaltmodepowerfailed.md)
+- [kUSBHostBillboardDevicePropertyCurrentMode](kusbhostbillboarddevicepropertycurrentmode.md)
+- [kUSBHostBillboardDevicePropertyModeValueDisplayPort](kusbhostbillboarddevicepropertymodevaluedisplayport.md)
+- [kUSBHostBillboardDevicePropertyModeValueThunderbolt](kusbhostbillboarddevicepropertymodevaluethunderbolt.md)
+- [kUSBHostBillboardDevicePropertyModeValueUSB4](kusbhostbillboarddevicepropertymodevalueusb4.md)
+- [kUSBHostBillboardDevicePropertyPreferredMode](kusbhostbillboarddevicepropertypreferredmode.md)
+- [kUSBHostBillboardDevicePropertyVersion](kusbhostbillboarddevicepropertyversion.md)
+- [kUSBHostControllerPropertyProtocolRevision](kusbhostcontrollerpropertyprotocolrevision.md)
+- [kUSBHostDevicePropertyIdlePolicy](kusbhostdevicepropertyidlepolicy.md)
+- [kUSBHostDevicePropertyPowerSinkAllocation](kusbhostdevicepropertypowersinkallocation.md)
+- [kUSBHostDevicePropertyUSB3Preferred](kusbhostdevicepropertyusb3preferred.md)
+- [kUSBHostDevicePropertyUSB3Required](kusbhostdevicepropertyusb3required.md)
+- [kUSBHostPortPropertyIOPortServicePath](kusbhostportpropertyioportservicepath.md)
+- [kUSBHostPortPropertyProtocolCompanionRevision1](kusbhostportpropertyprotocolcompanionrevision1.md)
+- [kUSBHostPortPropertyProtocolCompanionRevision2](kusbhostportpropertyprotocolcompanionrevision2.md)
+- [kUSBHostPortPropertyProtocolCompanionRevision3](kusbhostportpropertyprotocolcompanionrevision3.md)
+- [kUSBHostPortPropertyProtocolRevision1](kusbhostportpropertyprotocolrevision1.md)
+- [kUSBHostPortPropertyProtocolRevision2](kusbhostportpropertyprotocolrevision2.md)
+- [kUSBHostPortPropertyProtocolRevision3](kusbhostportpropertyprotocolrevision3.md)
 
 
 ---

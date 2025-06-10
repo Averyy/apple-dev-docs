@@ -24,9 +24,9 @@ The x and y values of the point are unit values. MapKit JS expects the value to 
 The following example creates a point that’s one-tenth across the map projection along the x-axis, and half way across the y-axis:
 
 ```javascript
-var mapPoint = new mapkit.MapPoint(0.1, 0.5);
-var x = mapPoint.x; // 0.1
-var y = mapPoint.y; // 0.5
+const mapPoint = new mapkit.MapPoint(0.1, 0.5);
+const x = mapPoint.x; // 0.1
+const y = mapPoint.y; // 0.5
 ```
 
 ## Parameters

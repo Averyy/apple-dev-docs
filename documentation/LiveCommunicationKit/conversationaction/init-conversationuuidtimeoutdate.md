@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: init
 
-Initializes a new conversation action.
+Creates a conversation action.
 
 **Availability**:
 - iOS 17.4+
@@ -20,7 +20,8 @@ convenience init(conversationUUID: UUID, timeoutDate: Date = Date(timeIntervalSi
 
 ## Parameters
 
-- `timeoutDate`: The   after which the action cannot be completed.
+- `conversationUUID`: The unique identifier of the action’s associated conversation.
+- `timeoutDate`: The point in time that marks when the action can’t be completed anymore.
 
 
 ---

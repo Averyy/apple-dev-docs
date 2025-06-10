@@ -1,6 +1,6 @@
 # Declaring complications for your app
 
-**Framework**: Clockkit
+**Framework**: ClockKit
 
 Define the complications that your app supports.
 
@@ -173,4 +173,4 @@ In watchOS 7 and later, if you implement [`getComplicationDescriptors(handler:)`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/declaring-complications-for-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/declaring-complications-for-your-app)*

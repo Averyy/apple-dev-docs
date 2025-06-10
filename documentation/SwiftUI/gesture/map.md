@@ -17,8 +17,8 @@ Returns a gesture that uses the given closure to map over this gesture’s value
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func map<T>(_ body: @escaping (Self.Value) -> T) -> _MapGesture<Self, T>
+nonisolated
+func map<T>(_ body: @escaping (Self.Value) -> T) -> _MapGesture<Self, T>
 ```
 
 

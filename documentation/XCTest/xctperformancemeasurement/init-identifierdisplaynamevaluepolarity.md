@@ -1,6 +1,6 @@
 # init(identifier:displayName:value:polarity:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Initializes a performance measurement for a single iteration with the value and polarity.

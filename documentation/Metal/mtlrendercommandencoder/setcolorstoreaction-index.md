@@ -26,8 +26,6 @@ This method changes the render command encoder’s store action for a color atta
 
 > ❗ **Important**:  You need to call this method before calling the encoder’s [`endEncoding()`](mtlcommandencoder/endencoding().md) method, but only for color attachments with a [`storeAction`](mtlrenderpassattachmentdescriptor/storeaction.md) property equal to [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md).
 
- You need to call this method before calling the encoder’s [`endEncoding()`](mtlcommandencoder/endencoding().md) method, but only for color attachments with a [`storeAction`](mtlrenderpassattachmentdescriptor/storeaction.md) property equal to [`MTLStoreAction.unknown`](mtlstoreaction/unknown.md).
-
 ## Parameters
 
 - `storeAction`: A store action for the color attachment that can’t be  .

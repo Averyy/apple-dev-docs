@@ -26,8 +26,6 @@ To free tiles and make additional memory available to satisfy other requests, en
 
 > ❗ **Important**:  Before you release a sparse texture, unmap all of its sparse tiles. Otherwise, the sparse heap continues to mark those tiles as mapped. However, Metal frees all mapped tile memory when you release the heap.
 
- Before you release a sparse texture, unmap all of its sparse tiles. Otherwise, the sparse heap continues to mark those tiles as mapped. However, Metal frees all mapped tile memory when you release the heap.
-
 ##### Map the Tail Mipmaps After You Create the Texture
 
 If you create a complete mipmap chain for your texture, many of the lower-level mipmaps are smaller than the sparse tile size. To save memory, Metal packs all of these smaller mipmaps into one memory allocation, typically one sparse tile. To guarantee that a texture always has some data to sample, you usually want to map the tail mipmaps after you create the texture and keep the tail mapped until you’re ready to release the texture.
@@ -41,8 +39,6 @@ Similarly, if you unmap the first mipmap in the tail, all of the tail mipmaps ar
 Tile mapping is performed by the GPU, which means that it happens asynchronously at a future point after you commit the command buffer. Don’t change the memory assigned to a texture while the texture’s contents are being read or written. Use fences or events to ensure that these actions don’t overlap.
 
 > ❗ **Important**:  If you use more than one resource state encoder to encode commands that access the same sparse heap, you must execute them sequentially, or your app may crash. For example, if you’ve two different command queues in your app, and both encode resource state commands for the same heap, synchronize access using shared events so that the updates happen sequentially.
-
- If you use more than one resource state encoder to encode commands that access the same sparse heap, you must execute them sequentially, or your app may crash. For example, if you’ve two different command queues in your app, and both encode resource state commands for the same heap, synchronize access using shared events so that the updates happen sequentially.
 
 For more information about synchronizing Metal commands, see [`Resource Synchronization`](resource-synchronization.md).
 

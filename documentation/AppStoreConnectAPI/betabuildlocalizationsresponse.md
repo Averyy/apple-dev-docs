@@ -27,6 +27,7 @@ object BetaBuildLocalizationsResponse
   The request body you use to create a Beta Build Localization.
 - [object BetaBuildLocalizationUpdateRequest](betabuildlocalizationupdaterequest.md)
   The request body you use to update a Beta Build Localization.
+- [object BetaBuildLocalizationBuildLinkageResponse](betabuildlocalizationbuildlinkageresponse.md)
 
 
 ---

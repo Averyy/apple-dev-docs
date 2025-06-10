@@ -67,6 +67,7 @@ iOS ignores calls to this class for apps that lack one of the required entitleme
 - [Copyable](../Swift/Copyable.md)
 - [Observable](../Observation/Observable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

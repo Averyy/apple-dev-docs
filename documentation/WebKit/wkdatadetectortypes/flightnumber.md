@@ -1,6 +1,6 @@
 # flightNumber
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Detect flight numbers in text and turn them into links.

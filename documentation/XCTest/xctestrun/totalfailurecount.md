@@ -1,6 +1,6 @@
 # totalFailureCount
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The number of test failures and uncaught exceptions during the run.

@@ -1,6 +1,6 @@
 # com.apple.developer.usernotifications.filtering
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 Enable receiving notifications without displaying the notification to the user.

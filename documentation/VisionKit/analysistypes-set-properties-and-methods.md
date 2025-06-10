@@ -1,6 +1,6 @@
 # Set properties and methods
 
-**Framework**: Visionkit
+**Framework**: VisionKit
 
 The properties and methods that conform to the option set protocol.
 

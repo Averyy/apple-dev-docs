@@ -72,6 +72,8 @@ You can use ordered sets as an alternative to arrays when the order of elements 
   The last object in the ordered set.
 - [func object(at: Int) -> Any](nsorderedset/object(at:).md)
   Returns the object at the specified index of the set.
+- [subscript(Int) -> Any](nsorderedset/subscript(_:).md)
+  Returns the object at the specified index of the set.
 - [func objects(at: IndexSet) -> [Any]](nsorderedset/objects(at:).md)
   Returns the objects in the ordered set at the specified indexes.
 - [func index(of: Any) -> Int](nsorderedset/index(of:).md)

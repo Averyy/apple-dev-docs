@@ -22,6 +22,7 @@ final class GroupSessionMessenger
 ## Mentions
 
 - [Synchronizing data during a SharePlay activity](synchronizing-data-during-a-shareplay-activity.md)
+- [Configure your visionOS app for sharing with people nearby](configure-your-app-for-sharing-with-people-nearby.md)
 
 #### Overview
 
@@ -99,6 +100,7 @@ async {
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

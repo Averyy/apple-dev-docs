@@ -1,6 +1,6 @@
 # WKHTTPCookieStoreObserver
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 The methods to adopt in an object that monitors changes to a webpage’s cookies.

@@ -10,8 +10,8 @@ Update the activation status for a specific certificate.
 
 ## Mentions
 
-- [App Store Connect API 3.8 release notes](app-store-connect-api-3-8-release-notes.md)
 - [Managing merchant IDs and Payment Processing certificates](managing-payment-processing-certificates.md)
+- [App Store Connect API 3.8 release notes](app-store-connect-api-3-8-release-notes.md)
 
 ## See Also
 

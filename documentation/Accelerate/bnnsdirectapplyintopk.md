@@ -26,8 +26,6 @@ Use [`BNNSDirectApplyInTopK(_:_:_:_:_:_:_:_:_:_:)`](bnnsdirectapplyintopk(_:_:_:
 
 > ❗ **Important**:  The input data type must be `float`, the test indices data type must be `int32`, and the output data type must be `BNNSDataTypeBoolean`.
 
- The input data type must be `float`, the test indices data type must be `int32`, and the output data type must be `BNNSDataTypeBoolean`.
-
 For example, given the following 4 x 4 row-major matrix and vector of test indices:
 
 ```swift

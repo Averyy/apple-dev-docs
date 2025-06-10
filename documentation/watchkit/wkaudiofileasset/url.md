@@ -1,6 +1,6 @@
 # url
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The URL of the audio file.

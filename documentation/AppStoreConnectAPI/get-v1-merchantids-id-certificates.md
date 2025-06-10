@@ -16,6 +16,7 @@ Get a list of all certificates for a specific merchant ID.
   List all merchant Ids for your team.
 - [Read details for a merchant ID](get-v1-merchantids-_id_.md)
   Get information for a merchant ID.
+- [GET /v1/merchantIds/{id}/relationships/certificates](get-v1-merchantids-_id_-relationships-certificates.md)
 - [Modify merchant IDs](patch-v1-merchantids-_id_.md)
   Update a specific merchant ID.
 - [Create a merchant ID](post-v1-merchantids.md)

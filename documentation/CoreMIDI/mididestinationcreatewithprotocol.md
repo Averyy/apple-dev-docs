@@ -30,8 +30,6 @@ The system calls the read block on a separate high-priority thread owned by Core
 
 > 💡 **Tip**:  After creating a virtual source, assign it the same unique ID it had the last time your app created it. Doing so permits other clients to retain persistent references to your virtual source.
 
- After creating a virtual source, assign it the same unique ID it had the last time your app created it. Doing so permits other clients to retain persistent references to your virtual source.
-
 ## Parameters
 
 - `client`: The client that owns the virtual destination.

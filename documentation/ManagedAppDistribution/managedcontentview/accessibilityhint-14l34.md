@@ -1,6 +1,6 @@
 # accessibilityHint(_:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Communicates to the user what happens after performing the view’s action.

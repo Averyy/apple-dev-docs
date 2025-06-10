@@ -1,6 +1,6 @@
 # WKInterfaceDeviceBatteryState
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 The battery’s charging state.
@@ -36,6 +36,7 @@ enum WKInterfaceDeviceBatteryState
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

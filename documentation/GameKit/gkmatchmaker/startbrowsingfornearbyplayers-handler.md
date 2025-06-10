@@ -1,6 +1,6 @@
 # startBrowsingForNearbyPlayers(handler:)
 
-**Framework**: Gamekit  
+**Framework**: GameKit  
 **Kind**: method
 
 Finds nearby players through Bluetooth or WiFi on the same subnet.

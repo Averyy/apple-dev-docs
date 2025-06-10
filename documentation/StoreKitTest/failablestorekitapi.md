@@ -37,6 +37,7 @@ protocol FailableStoreKitAPI<Failure> : Sendable
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [StoreKitAppStoreSyncAPI](storekitappstoresyncapi.md)
 - [StoreKitAppTransactionAPI](storekitapptransactionapi.md)

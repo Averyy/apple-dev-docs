@@ -1,11 +1,12 @@
 # ARKitSession
 
-**Framework**: Arkit  
+**Framework**: ARKit  
 **Kind**: class
 
 The main entry point for receiving data from ARKit.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -66,12 +67,19 @@ Because a [`PlaneDetectionProvider`](planedetectionprovider.md) instance’s req
   The kinds of events that can occur in a session.
 - [var description: String](arkitsession/description.md)
   A textual representation of this session.
+### Initializers
+- [convenience init(device: RemoteDeviceIdentifier)](arkitsession/init(device:).md)
+  Create a new session connected to the specified device.
+### Instance Properties
+- [var dataProviders: [any DataProvider]](arkitsession/dataproviders.md)
+  A list of all data providers on this session.
 
 ## Relationships
 
 ### Conforms To
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -87,4 +95,4 @@ Because a [`PlaneDetectionProvider`](planedetectionprovider.md) instance’s req
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/arkitsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arkitsession)*

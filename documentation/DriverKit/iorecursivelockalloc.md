@@ -15,6 +15,14 @@
 struct IORecursiveLock * IORecursiveLockAlloc();
 ```
 
+#### Return Value
+
+Pointer to the allocated lock, or zero on failure.
+
+#### Discussion
+
+Allocates a recursive lock in general purpose memory, and initializes it. Recursive locks function identically to mutexes but allow one thread to lock more than once, with balanced unlocks.
+
 ## See Also
 
 - [dequeue_head](dequeue_head.md)

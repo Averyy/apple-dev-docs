@@ -1,6 +1,6 @@
 # Presenting Navigation Markers
 
-**Framework**: Avkit
+**Framework**: AVKit
 
 Present navigation markers in the Chapters panel to help users quickly navigate your content.
 
@@ -122,4 +122,4 @@ private func makeMetadataItem(_ identifier: AVMetadataIdentifier, value: Any) ->
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/presenting-navigation-markers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/presenting-navigation-markers)*

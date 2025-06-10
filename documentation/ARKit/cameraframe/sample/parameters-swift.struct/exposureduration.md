@@ -11,7 +11,7 @@ The camera frame exposure duration in seconds.
 ## Declaration
 
 ```swift
-var exposureDuration: CFTimeInterval { get }
+var exposureDuration: TimeInterval { get }
 ```
 
 ## See Also

@@ -1,6 +1,6 @@
 # username
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 An account or login name.

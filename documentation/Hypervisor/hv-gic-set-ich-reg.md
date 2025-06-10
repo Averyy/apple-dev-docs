@@ -24,8 +24,6 @@ ICH registers are only available when EL2 is an enabled state, otherwise the fra
 
 > ❗ **Important**:  Call this method on the owning thread.
 
- Call this method on the owning thread.
-
 ## Parameters
 
 - `vcpu`: The handle for the vCPU.

@@ -1,6 +1,6 @@
 # Get Refund History V1
 
-**Framework**: Appstoreserverapi  
+**Framework**: App Store Server API  
 **Kind**: httpRequest
 
 Get a list of up to 50 of a customer’s refunded in-app purchases for your app.
@@ -39,4 +39,4 @@ The App Store Server API returns information based on the customer’s in-app pu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/get-refund-history-v1)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/get-refund-history-v1)*

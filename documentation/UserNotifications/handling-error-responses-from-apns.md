@@ -1,6 +1,6 @@
 # Handling error responses from Apple Push Notification service
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Respond to the status codes returned by APNs servers.
 

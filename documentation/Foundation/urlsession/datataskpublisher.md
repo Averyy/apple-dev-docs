@@ -40,6 +40,7 @@ struct DataTaskPublisher
 ### Conforms To
 - [Publisher](../Combine/Publisher.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

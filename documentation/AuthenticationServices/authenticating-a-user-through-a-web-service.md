@@ -1,6 +1,6 @@
 # Authenticating a User Through a Web Service
 
-**Framework**: Authenticationservices
+**Framework**: Authentication Services
 
 Use a web authentication session to authenticate a user in your app.
 
@@ -113,4 +113,4 @@ The above example looks for a token stored as a query parameter. The specific pa
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/authenticating-a-user-through-a-web-service)*
+*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/authenticating-a-user-through-a-web-service)*

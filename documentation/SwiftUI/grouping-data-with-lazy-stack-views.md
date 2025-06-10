@@ -1,6 +1,6 @@
 # Grouping data with lazy stack views
 
-**Framework**: Swiftui
+**Framework**: SwiftUI
 
 Split content into logical sections inside lazy stack views.
 
@@ -124,4 +124,4 @@ With this change, section headers are pinned to the top of the view as the user 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/grouping-data-with-lazy-stack-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/grouping-data-with-lazy-stack-views)*

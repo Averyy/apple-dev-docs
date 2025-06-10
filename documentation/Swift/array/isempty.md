@@ -46,4 +46,4 @@ if horseName.isEmpty {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/array/isempty)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/array/isempty)*

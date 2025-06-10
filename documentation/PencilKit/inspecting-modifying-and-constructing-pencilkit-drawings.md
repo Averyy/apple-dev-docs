@@ -1,6 +1,6 @@
 # Inspecting, Modifying, and Constructing PencilKit Drawings
 
-**Framework**: Pencilkit
+**Framework**: PencilKit
 
 Score users’ ability to match PencilKit drawings generated from text, by accessing the strokes and points inside PencilKit drawings.
 
@@ -37,4 +37,4 @@ This sample code project must be run on a physical device with Apple Pencil.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PencilKit/inspecting-modifying-and-constructing-pencilkit-drawings)*
+*[View on Apple Developer](https://developer.apple.com/documentation/pencilkit/inspecting-modifying-and-constructing-pencilkit-drawings)*

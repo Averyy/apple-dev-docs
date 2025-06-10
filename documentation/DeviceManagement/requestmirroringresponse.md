@@ -9,8 +9,6 @@ A response from the device after it processes the command to prompt the user to 
 - iOS 7.0+
 - iPadOS 7.0+
 - macOS 10.10+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,7 +18,7 @@ object RequestMirroringResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object RequestMirroringResponse.ErrorChainItem](requestmirroringresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 

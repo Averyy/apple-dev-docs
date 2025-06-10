@@ -1,6 +1,6 @@
 # handlesURLScheme(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a Boolean value that indicates whether WebKit natively supports resources with the specified URL scheme.

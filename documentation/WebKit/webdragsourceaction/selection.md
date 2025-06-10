@@ -1,6 +1,6 @@
 # selection
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Allows the user to drag a selection in the source object.

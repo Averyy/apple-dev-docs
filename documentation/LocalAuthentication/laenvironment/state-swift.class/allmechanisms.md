@@ -19,9 +19,7 @@ var allMechanisms: [LAEnvironment.Mechanism] { get }
 
 #### Discussion
 
-```None
-        authentication mechanisms.
-```
+This property aggregates @c biometry, @c userPassword, @c companions and any future authentication mechanisms.
 
 
 ---

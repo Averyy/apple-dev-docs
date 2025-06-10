@@ -1,6 +1,6 @@
 # cloudCoverByAltitude
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The fraction of sky obscured by low altitude, medium altitude, and high altitude clouds.

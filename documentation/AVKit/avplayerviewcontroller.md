@@ -23,9 +23,9 @@ class AVPlayerViewController
 
 - [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
 - [Customizing the tvOS Playback Experience](customizing-the-tvos-playback-experience.md)
-- [Adopting Picture in Picture in a Custom Player](adopting-picture-in-picture-in-a-custom-player.md)
 - [Working with Interstitial Content](working-with-interstitial-content.md)
 - [Trimming and exporting media in visionOS](trimming-and-exporting-media-in-visionos.md)
+- [Adopting Picture in Picture in a Custom Player](adopting-picture-in-picture-in-a-custom-player.md)
 - [Adopting Picture in Picture in a Standard Player](adopting-picture-in-picture-in-a-standard-player.md)
 
 #### Overview
@@ -33,8 +33,6 @@ class AVPlayerViewController
 A player view controller makes it simple to add media playback capabilities to your app that match the styling and features of the native system players. Using this object also means that your app automatically adopts the new features and styling of future operating system releases.
 
 > ❗ **Important**:  The framework doesn’t support subclassing [`AVPlayerViewController`](avplayerviewcontroller.md).
-
- The framework doesn’t support subclassing [`AVPlayerViewController`](avplayerviewcontroller.md).
 
 ##### Support Airplay
 
@@ -64,7 +62,7 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
 
 ## Topics
 
-### Configuring Presentation
+### Configuring presentation
 - [var showsPlaybackControls: Bool](avplayerviewcontroller/showsplaybackcontrols.md)
   A Boolean value that indicates whether the player view controller shows playback controls.
 - [var contentOverlayView: UIView?](avplayerviewcontroller/contentoverlayview.md)
@@ -77,7 +75,7 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
   A Boolean value that determines whether the player view displays timecodes, if available.
 - [var appliesPreferredDisplayCriteriaAutomatically: Bool](avplayerviewcontroller/appliespreferreddisplaycriteriaautomatically.md)
   A Boolean value that indicates whether the view controller automatically sets the screen’s display criteria to match that of the currently playing asset.
-### Customizing the tvOS Player UI
+### Customizing the tvOS player UI
 - [var playbackControlsIncludeTransportBar: Bool](avplayerviewcontroller/playbackcontrolsincludetransportbar.md)
   A Boolean value that indicates whether the player shows the transport bar and related controls.
 - [var playbackControlsIncludeInfoViews: Bool](avplayerviewcontroller/playbackcontrolsincludeinfoviews.md)
@@ -98,7 +96,7 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
   A layout guide that represents an area that fixed-position playback controls don’t obscure when visible.
 - [var customInfoViewController: UIViewController?](avplayerviewcontroller/custominfoviewcontroller.md)
   A view controller that provides client-specific content and controls alongside system-provided information and settings panels.
-### Configuring the visionOS Player UI
+### Configuring the visionOS player UI
 - [var infoViewActions: [UIAction]!](avplayerviewcontroller/infoviewactions.md)
   An array of actions to present in the Info content view.
 - [var customInfoViewControllers: [UIViewController]](avplayerviewcontroller/custominfoviewcontrollers.md)
@@ -115,12 +113,12 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
   The experience controller for this view controller.
 - [var groupExperienceCoordinator: AVGroupExperienceCoordinator](avplayerviewcontroller/groupexperiencecoordinator.md)
   The group experience coordinator for this view controller.
-### Presenting the visionOS Trimming UI
+### Presenting the visionOS trimming UI
 - [var canBeginTrimming: Bool](avplayerviewcontroller/canbegintrimming.md)
   A Boolean value that indicates whether the current media supports trimming.
 - [func beginTrimming(completionHandler: ((Bool) -> Void)?)](avplayerviewcontroller/begintrimming(completionhandler:).md)
   Presents the system trimming interface controls inside the player view.
-### Configuring Frame Analysis
+### Configuring frame analysis
 - [var allowsVideoFrameAnalysis: Bool](avplayerviewcontroller/allowsvideoframeanalysis.md)
   A Boolean value that indicates whether to perform video frame analysis.
 - [var toggleLookupAction: UIAction](avplayerviewcontroller/togglelookupaction.md)
@@ -129,7 +127,7 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
   The types of analysis a player view controller performs on a paused video frame.
 - [struct AVVideoFrameAnalysisType](avvideoframeanalysistype.md)
   Constants that define the types of analysis a player view controller may perform on a paused video frame.
-### Configuring Playback Speed
+### Configuring playback speed
 - [var speeds: [AVPlaybackSpeed]](avplayerviewcontroller/speeds.md)
   A list of user-selectable playback speeds to show in the playback speed control.
 - [var selectedSpeed: AVPlaybackSpeed?](avplayerviewcontroller/selectedspeed.md)
@@ -143,20 +141,20 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
   A Boolean value that indicates whether the player allows Picture in Picture playback.
 - [var canStartPictureInPictureAutomaticallyFromInline: Bool](avplayerviewcontroller/canstartpictureinpictureautomaticallyfrominline.md)
   A Boolean value that indicates whether Picture in Picture starts automatically when transitioning to the background when the view controller presents its content inline.
-### Managing Full-Screen Behavior
+### Managing full-screen behavior
 - [var entersFullScreenWhenPlaybackBegins: Bool](avplayerviewcontroller/entersfullscreenwhenplaybackbegins.md)
   A Boolean value that determines whether the player automatically displays in full screen when the user taps the play button.
 - [var exitsFullScreenWhenPlaybackEnds: Bool](avplayerviewcontroller/exitsfullscreenwhenplaybackends.md)
   A Boolean value that indicates whether the player exits full-screen mode when playback ends.
-### Managing Subtitles
+### Managing subtitles
 - [var allowedSubtitleOptionLanguages: [String]?](avplayerviewcontroller/allowedsubtitleoptionlanguages.md)
   An array of language codes that restrict the set of subtitle languages available to the user.
 - [var requiresFullSubtitles: Bool](avplayerviewcontroller/requiresfullsubtitles.md)
   A Boolean value that indicates whether the user can disable the display of subtitles.
-### Preventing Navigation
+### Preventing navigation
 - [var requiresLinearPlayback: Bool](avplayerviewcontroller/requireslinearplayback.md)
   A Boolean value that determines whether the player allows the user to skip media content.
-### Configuring Skipping Behavior
+### Configuring skipping behavior
 - [var isSkipForwardEnabled: Bool](avplayerviewcontroller/isskipforwardenabled.md)
   A Boolean value that indicates whether forward-skipping is available.
 - [var isSkipBackwardEnabled: Bool](avplayerviewcontroller/isskipbackwardenabled.md)
@@ -165,24 +163,31 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
   The behavior that skipping gestures perform.
 - [enum AVPlayerViewControllerSkippingBehavior](avplayerviewcontrollerskippingbehavior.md)
   Constants that represent the player view controller’s skipping behavior.
-### Determining Display Readiness
+### Determining display readiness
 - [var isReadyForDisplay: Bool](avplayerviewcontroller/isreadyfordisplay.md)
   A Boolean value that indicates whether the player item’s first video frame is ready for display.
-### Updating Now Playing Information
+### Updating Now Playing information
 - [var updatesNowPlayingInfoCenter: Bool](avplayerviewcontroller/updatesnowplayinginfocenter.md)
   A Boolean value that indicates whether the view controller updates Now Playing information.
-### Proposing Additional Content
+### Proposing additional content
 - [var contentProposalViewController: AVContentProposalViewController!](avplayerviewcontroller/contentproposalviewcontroller.md)
   The view controller responsible for the presentation of content proposals.
-### Accessing the Player
+### Accessing the player
 - [var player: AVPlayer?](avplayerviewcontroller/player.md)
   The player object that provides the media content for the view controller to display.
-### Accessing the Delegate Object
+### Accessing the delegate object
 - [var delegate: (any AVPlayerViewControllerDelegate)?](avplayerviewcontroller/delegate.md)
   The delegate object for the player view controller.
-### Configuring Pixel Buffers
+### Configuring pixel buffers
 - [var pixelBufferAttributes: [String : Any]?](avplayerviewcontroller/pixelbufferattributes.md)
   The pixel buffer attributes of the video frames the view controller presents.
+### High dynamic range
+- [var preferredDisplayDynamicRange: AVDisplayDynamicRange](avplayerviewcontroller/preferreddisplaydynamicrange.md)
+  Describes how High Dynamic Range (HDR) video content renders.
+- [enum AVDisplayDynamicRange](avdisplaydynamicrange.md)
+  Describes how High Dynamic Range (HDR) video content renders.
+### Type Properties
+- [class var mediaCharacteristicsForSupportedCustomMediaSelectionSchemes: [AVMediaCharacteristic]](avplayerviewcontroller/mediacharacteristicsforsupportedcustommediaselectionschemes.md)
 
 ## Relationships
 
@@ -199,6 +204,7 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)
@@ -220,6 +226,10 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
   An object that registers handlers to respond to capture events from system hardware buttons.
 - [class AVCaptureEvent](avcaptureevent.md)
   An object that describes a user interaction with a system hardware button.
+- [class AVCaptureEventSound](avcaptureeventsound.md)
+  A sound object for a capture event.
+- [class AVInputPickerInteraction](avinputpickerinteraction.md)
+  Use `AVInputPickerInteraction` to present an input picker.
 
 
 ---

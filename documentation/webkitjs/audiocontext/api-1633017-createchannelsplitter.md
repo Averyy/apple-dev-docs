@@ -1,6 +1,6 @@
 # createChannelSplitter
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 **Availability**:

@@ -1,6 +1,6 @@
 # RENDERBUFFER_RED_SIZE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -20,8 +20,8 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, willBeginCaptureFor re
 
 ## Mentions
 
-- [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
 - [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
+- [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
 
 #### Discussion
 

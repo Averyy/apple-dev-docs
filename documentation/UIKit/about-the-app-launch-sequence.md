@@ -1,6 +1,6 @@
 # About the app launch sequence
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Learn the order in which the system executes your code at app launch time.
 
@@ -41,4 +41,4 @@ Prewarming an app results in an indeterminate amount of time between when the pr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/about-the-app-launch-sequence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/about-the-app-launch-sequence)*

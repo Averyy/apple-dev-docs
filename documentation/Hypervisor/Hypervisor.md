@@ -78,6 +78,15 @@ After all threads finish:
 - [Hypervisor Constants](hypervisor-constants.md)
 - [Hypervisor Functions](hypervisor-functions.md)
 - [Hypervisor Data Types](hypervisor-data-types.md)
+### Structures
+- [struct hv_ipa_granule_t](hv_ipa_granule_t.md)
+### Variables
+- [var HV_IPA_GRANULE_16KB: hv_ipa_granule_t](hv_ipa_granule_16kb.md)
+- [var HV_IPA_GRANULE_4KB: hv_ipa_granule_t](hv_ipa_granule_4kb.md)
+### Functions
+- [func hv_vm_config_get_default_ipa_granule(UnsafeMutablePointer<hv_ipa_granule_t>) -> hv_return_t](hv_vm_config_get_default_ipa_granule(_:).md)
+- [func hv_vm_config_get_ipa_granule(hv_vm_config_t, UnsafeMutablePointer<hv_ipa_granule_t>) -> hv_return_t](hv_vm_config_get_ipa_granule(_:_:).md)
+- [func hv_vm_config_set_ipa_granule(hv_vm_config_t, hv_ipa_granule_t) -> hv_return_t](hv_vm_config_set_ipa_granule(_:_:).md)
 
 
 ---

@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_AllowOpenGOP
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Enables Open GOP (Group Of Pictures) encoding.

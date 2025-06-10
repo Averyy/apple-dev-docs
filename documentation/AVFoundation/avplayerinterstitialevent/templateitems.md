@@ -26,8 +26,6 @@ If you require the system to create new player items using the same asset instan
 
 > ❗ **Important**:  The system raises an exception if template items contain assets that aren’t URL based, such as [`AVComposition`](avcomposition.md).
 
- The system raises an exception if template items contain assets that aren’t URL based, such as [`AVComposition`](avcomposition.md).
-
 ## See Also
 
 - [var primaryItem: AVPlayerItem?](avplayerinterstitialevent/primaryitem.md)

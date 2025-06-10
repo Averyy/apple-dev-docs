@@ -1,6 +1,6 @@
 # title
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The title of the toolbar item.
@@ -38,4 +38,4 @@ If you assign a custom view to the toolbar item, modifying this property updates
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstoolbaritem/title)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstoolbaritem/title)*

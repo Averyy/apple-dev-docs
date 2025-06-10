@@ -1,6 +1,6 @@
 # readPaymentCard(_:)
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 Presents a sheet to read a contactless payment card for a purchase or a refund, and returns the encrypted card data.

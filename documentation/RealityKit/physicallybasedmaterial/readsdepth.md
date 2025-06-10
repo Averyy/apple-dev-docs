@@ -10,6 +10,7 @@ A boolean value that determines whether this material performs the depth test by
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS ?+
 - visionOS 2.0+
 
 ## Declaration

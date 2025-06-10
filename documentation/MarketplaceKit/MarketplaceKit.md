@@ -14,8 +14,8 @@ Create an alternative app marketplace, distribute your app on an alternative app
 - [Enabling alternative distribution app installation in a browser](enabling-alternative-distribution-app-installation-in-a-browser.md)
 - [Installing apps from an alternative marketplace](installing-apps-from-an-alternative-marketplace.md)
 - [Installing your app from your website](installing-your-app-from-your-website.md)
-- [Creating an alternative app marketplace](creating-an-alternative-app-marketplace.md)
 - [Reauthenticating a person to manage apps](reauthenticating-a-person-to-manage-apps.md)
+- [Creating an alternative app marketplace](creating-an-alternative-app-marketplace.md)
 
 #### Overview
 
@@ -29,8 +29,6 @@ In addition to alternative app marketplaces, this framework also serves:
 ![Three diagrams that describe the different use cases for MarketplaceKit. From left to right: installing an app from a webpage, installing an app from a alternative app marketplace, and determining an app’s installation source at runtime.](https://docs-assets.developer.apple.com/published/299f1a299648bff2fe696ad51c4bfd02/marketplacekit-hero%402x.png)
 
 > ❗ **Important**: To request the marketplace entitlement, see [`Getting started as an alternative app marketplace in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-app-marketplace-in-the-eu/). To apply to distribute your app from your website, see [`Getting started with Web Distribution in the EU`](https://developer.apple.comhttps://developer.apple.com/support/web-distribution-eu/).
-
-To request the marketplace entitlement, see [`Getting started as an alternative app marketplace in the European Union`](https://developer.apple.comhttps://developer.apple.com/support/alternative-app-marketplace-in-the-eu/). To apply to distribute your app from your website, see [`Getting started with Web Distribution in the EU`](https://developer.apple.comhttps://developer.apple.com/support/web-distribution-eu/).
 
 ## Topics
 

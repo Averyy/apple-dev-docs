@@ -26,7 +26,7 @@ The following example shows the compass only when the map rotation is changing, 
 
 ```javascript
 // Create a map.
-var map = new mapkit.Map("my-map-element-id");
+const map = new mapkit.Map("my-map-element-id");
 
 // Show the compass only when the rotation is actively changing.
 map.showsCompass = mapkit.FeatureVisibility.Adaptive;

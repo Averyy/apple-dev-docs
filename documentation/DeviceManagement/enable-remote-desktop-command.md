@@ -7,8 +7,6 @@ Enable Remote Desktop on a device.
 
 **Availability**:
 - macOS 10.14.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -26,17 +24,17 @@ Refer to the following sections to determine supported channels and requirements
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | - |
-| Requires Supervision | macOS |
-| Allowed in User Enrollment | - |
-| Required Access Right | - |
+| Device channel | macOS |
+| User channel | NA |
+| Requires supervision | macOS |
+| Allowed in user enrollment | NA |
+| Required access right |  |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object EnableRemoteDesktopCommand](enableremotedesktopcommand.md)
   The command to enable Remote Desktop on a device.
 - [object EnableRemoteDesktopResponse](enableremotedesktopresponse.md)
@@ -44,13 +42,13 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
-The command to enable Remote Desktop on a device.
+The request object the server returns for the Enable Remote Desktop Command.
 
 ## See Also
 
 - [Disable Remote Desktop](disable-remote-desktop-command.md)
   Disable Remote Desktop on a device.
-- [Configure Settings](settings-command.md)
+- [Settings](settings-command.md)
   Configure settings on a device.
 
 

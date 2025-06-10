@@ -13,6 +13,7 @@ Tells the navigation session to cancel the trip.
 ## Declaration
 
 ```swift
+@MainActor
 func cancelTrip()
 ```
 

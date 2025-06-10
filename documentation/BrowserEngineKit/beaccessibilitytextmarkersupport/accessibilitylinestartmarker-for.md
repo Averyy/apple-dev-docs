@@ -12,7 +12,6 @@ Returns the text marker that represents the start of the line that contains the 
 - macOS ?+
 - tvOS 18.2+
 - visionOS 2.2+
-- watchOS 11.2+
 
 ## Declaration
 

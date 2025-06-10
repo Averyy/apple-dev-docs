@@ -1,6 +1,6 @@
 # addDestination(withName:at:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Creates a named destination point in the current PDF page.

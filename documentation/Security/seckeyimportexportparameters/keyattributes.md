@@ -26,8 +26,6 @@ The `CSSM_KEYATTR_SENSITIVE` bit indicates that the key can only be extracted in
 
 > ❗ **Important**:  If you do not set the `CSSM_KEYATTR_EXTRACTABLE` bit, you cannot extract the imported key from the keychain in any form, including in wrapped form.
 
- If you do not set the `CSSM_KEYATTR_EXTRACTABLE` bit, you cannot extract the imported key from the keychain in any form, including in wrapped form.
-
 The `CSSM_KEYATTR_FLAGS` enumeration is defined in `cssmtype.h`. Note that the `CSSM_KEYATTR_RETURN_xxx` bits are always forced to `CSSM_KEYATTR_RETURN_REF` regardless of how they are specified in the `keyAttributes` field.
 
 

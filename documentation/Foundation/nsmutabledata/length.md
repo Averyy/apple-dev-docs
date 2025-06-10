@@ -26,8 +26,6 @@ The mutable data object’s length parameter is read-writeable. You can set this
 
 > ❗ **Important**:  Changing the length of a mutable data object invalidate any existing data pointers returned by the [`bytes`](nsdata/bytes.md) or [`mutableBytes`](nsmutabledata/mutablebytes.md) properties.
 
- Changing the length of a mutable data object invalidate any existing data pointers returned by the [`bytes`](nsdata/bytes.md) or [`mutableBytes`](nsmutabledata/mutablebytes.md) properties.
-
 ## See Also
 
 - [func increaseLength(by: Int)](nsmutabledata/increaselength(by:).md)

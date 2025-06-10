@@ -62,6 +62,7 @@ As with digital signing, the data isn’t hidden by this process. When you need 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

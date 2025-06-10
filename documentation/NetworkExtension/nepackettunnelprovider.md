@@ -38,8 +38,6 @@ By specifying IP destination networks, the Packet Tunnel Provider can dictate wh
 
 > ❗ **Important**:  The `com.apple.developer.networking.networkextension` entitlement is required in order to use the [`NEPacketTunnelProvider`](nepackettunnelprovider.md) class. Enable this entitlement when creating an App ID in your developer account.
 
- The `com.apple.developer.networking.networkextension` entitlement is required in order to use the [`NEPacketTunnelProvider`](nepackettunnelprovider.md) class. Enable this entitlement when creating an App ID in your developer account.
-
 ##### Creating a Packet Tunnel Provider Extension
 
 Packet Tunnel Providers run as App Extensions for the `com.apple.networkextension.packet-tunnel` extension point.

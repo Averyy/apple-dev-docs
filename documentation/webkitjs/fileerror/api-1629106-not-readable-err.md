@@ -1,6 +1,6 @@
 # NOT_READABLE_ERR
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # VTDecompressionOutputCallbackRecord
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: struct
 
 **Availability**:

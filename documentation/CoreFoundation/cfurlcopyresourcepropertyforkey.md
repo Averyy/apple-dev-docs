@@ -1,6 +1,6 @@
 # CFURLCopyResourcePropertyForKey(_:_:_:_:)
 
-**Framework**: Corefoundation  
+**Framework**: Core Foundation  
 **Kind**: func
 
 Returns the value of a given resource property of a given URL.

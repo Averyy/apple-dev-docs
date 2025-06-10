@@ -29,8 +29,6 @@ The method returns immediately, and the session starts disabling system features
 
 > ❗ **Important**:  Prior to macOS 12.1, a DNS lookup that your app initiates during a session might fail. Be sure your app resolves all required domain names before beginning a session so that the system can cache the results. You can do this by using [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) to send a `HEAD` request to each domain name that your app needs to access.
 
- Prior to macOS 12.1, a DNS lookup that your app initiates during a session might fail. Be sure your app resolves all required domain names before beginning a session so that the system can cache the results. You can do this by using [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) to send a `HEAD` request to each domain name that your app needs to access.
-
 After completing an assessment and hiding all sensitive information, call the session’s [`end()`](aeassessmentsession/end().md) method:
 
 After making the call, wait for the session to call its delegate’s [`assessmentSessionDidEnd(_:)`](aeassessmentsessiondelegate/assessmentsessiondidend(_:).md) method before reporting assessment completion to the user.

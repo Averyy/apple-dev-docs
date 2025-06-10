@@ -1,6 +1,6 @@
 # initDeviceMotionEvent
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Initializes a new device motion event.

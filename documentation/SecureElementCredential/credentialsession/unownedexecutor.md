@@ -1,6 +1,6 @@
 # unownedExecutor
 
-**Framework**: Secureelementcredential  
+**Framework**: SecureElementCredential  
 **Kind**: property
 
 Retrieve the executor for this actor as an optimized, unowned reference.

@@ -1,6 +1,6 @@
 # shouldShowFileExtensions
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A Boolean value that determines whether the browser always shows file extensions.

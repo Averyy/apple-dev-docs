@@ -1,6 +1,6 @@
 # Adopting Picture in Picture in a Custom Player
 
-**Framework**: Avkit
+**Framework**: AVKit
 
 Add controls to your custom player user interface to invoke Picture in Picture (PiP) playback.
 
@@ -144,4 +144,4 @@ func pictureInPictureControllerDidStopPictureInPicture(_ pictureInPictureControl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/adopting-picture-in-picture-in-a-custom-player)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/adopting-picture-in-picture-in-a-custom-player)*

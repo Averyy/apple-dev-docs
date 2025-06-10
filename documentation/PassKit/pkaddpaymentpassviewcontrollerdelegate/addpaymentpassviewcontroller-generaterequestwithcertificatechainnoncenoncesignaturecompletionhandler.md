@@ -26,8 +26,6 @@ For more information on the encrypted card data, see [`encryptedPassData`](pkadd
 
 > ❗ **Important**:  Do not encrypt the card data on the device. You should encrypt the data on your server, and then pass the encrypted data to the device.
 
- Do not encrypt the card data on the device. You should encrypt the data on your server, and then pass the encrypted data to the device.
-
 ## Parameters
 
 - `controller`: The view controller asking for the add payment request.

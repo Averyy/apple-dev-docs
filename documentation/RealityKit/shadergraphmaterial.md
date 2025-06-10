@@ -3,11 +3,14 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
+Create dynamic materials without Metal.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -18,12 +21,17 @@ struct ShaderGraphMaterial
 
 ## Topics
 
+### Shader Graph fundamentals
+- [Designing RealityKit content with Reality Composer Pro](../visionOS/designing-realitykit-content-with-reality-composer-pro.md)
+  Design RealityKit scenes for your visionOS app.
+- [protocol Material](material.md)
+  A type that describes the material aspects of a mesh, like color and texture.
+- [struct MaterialParameterTypes](materialparametertypes.md)
+  A set of types that material parameters can use.
 ### Initializers
 - [init(materialXLabel: String, data: Data) async throws](shadergraphmaterial/init(materialxlabel:data:).md)
   Loads a ShaderGraphMaterial from MaterialX data.
-- [init(named: String, from: URL) async throws](shadergraphmaterial/init(named:from:)-52t12.md)
-  Loads a ShaderGraphMaterial from a url.
-- [init(named: String, from: Data) async throws](shadergraphmaterial/init(named:from:)-9qt59.md)
+- [init(named:from:)](shadergraphmaterial/init(named:from:).md)
   Loads a ShaderGraphMaterial from a named material within a USD file.
 - [init(named: String, from: String, in: Bundle?) async throws](shadergraphmaterial/init(named:from:in:).md)
   Loads a ShaderGraphMaterial from a bundle.
@@ -52,14 +60,13 @@ struct ShaderGraphMaterial
 ### Enumerations
 - [ShaderGraphMaterial.Error](shadergraphmaterial/error.md)
 - [ShaderGraphMaterial.LoadError](shadergraphmaterial/loaderror.md)
-### Default Implementations
-- [Material Implementations](shadergraphmaterial/material-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Material](material.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -11,6 +11,7 @@ Manage territory and date settings that make your app available for pre-order.
   Get information about your app’s availalbility.
 - [Read App Availablity Territories](get-v2-appavailabilities-_id_-territoryavailabilities.md)
   Read the territory availablity for a specific app.
+- [GET /v2/appAvailabilities/{id}/relationships/territoryAvailabilities](get-v2-appavailabilities-_id_-relationships-territoryavailabilities.md)
 - [Create an App Pre-Order](post-v2-appavailabilities.md)
   Create an app pre-order and set the expected app release date.
 - [Modify the Territory Availabilty for an App Pre-Order](patch-v1-territoryavailabilities-_id_.md)
@@ -24,6 +25,7 @@ Manage territory and date settings that make your app available for pre-order.
   The request body you use to create an app availability.
 - [object AppAvailabilityV2Response](appavailabilityv2response.md)
   A response that contains a single app availability resource.
+- [object AppAppAvailabilityV2LinkageResponse](appappavailabilityv2linkageresponse.md)
 - [object TerritoryAvailability](territoryavailability.md)
   The data structure that represents a territory availability resource.
 - [object TerritoryAvailabilitiesResponse](territoryavailabilitiesresponse.md)

@@ -1,6 +1,6 @@
 # buttonNumber
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The number of the mouse button that caused the navigation request.

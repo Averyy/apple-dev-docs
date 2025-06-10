@@ -122,6 +122,11 @@ You can configure and update a button with a [`UIButton.Configuration`](uibutton
   The style to use when this button appears in macOS.
 - [UIButton.Configuration.MacIdiomStyle](uibutton/configuration-swift.struct/macidiomstyle-swift.enum.md)
   The button style your app uses when running in macOS.
+### Instance Properties
+- [var symbolContentTransition: UISymbolContentTransition?](uibutton/configuration-swift.struct/symbolcontenttransition.md)
+### Type Methods
+- [static func glass() -> UIButton.Configuration](uibutton/configuration-swift.struct/glass.md)
+- [static func prominentGlass() -> UIButton.Configuration](uibutton/configuration-swift.struct/prominentglass.md)
 
 ## Relationships
 

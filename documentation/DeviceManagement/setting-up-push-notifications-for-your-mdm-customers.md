@@ -1,6 +1,6 @@
 # Setting Up Push Notifications for Your MDM Customers
 
-**Framework**: Devicemanagement
+**Framework**: Device Management
 
 Create and sign a certificate signing request (CSR) to enable push notifications.
 
@@ -146,4 +146,4 @@ MIIDiTCCAnGgAwIBAgIIdv/cjbnBgEgwDQYJKoZIhvcNAQEFBQAwUjEaMBgGA1UEAwwRU0FDSSBUZXN0
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/setting-up-push-notifications-for-your-mdm-customers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/setting-up-push-notifications-for-your-mdm-customers)*

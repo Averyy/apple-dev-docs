@@ -27,12 +27,12 @@ var forceTouchCapability: UIForceTouchCapability { get set }
 - [var displayScale: CGFloat](uimutabletraits-13ja5/displayscale.md)
 - [struct UITraitDisplayScale](uitraitdisplayscale-swift.struct.md)
 - [struct UITraitForceTouchCapability](uitraitforcetouchcapability-swift.struct.md)
+- [var headroomUsageLimit: UITraitHDRHeadroomUsageLimit.Value](uimutabletraits-13ja5/headroomusagelimit.md)
+- [struct UITraitHDRHeadroomUsageLimit](uitraithdrheadroomusagelimit-swift.struct.md)
+- [enum UIHDRHeadroomUsageLimit](uihdrheadroomusagelimit.md)
 - [var horizontalSizeClass: UIUserInterfaceSizeClass](uimutabletraits-13ja5/horizontalsizeclass.md)
 - [struct UITraitHorizontalSizeClass](uitraithorizontalsizeclass-swift.struct.md)
 - [var imageDynamicRange: UIImage.DynamicRange](uimutabletraits-13ja5/imagedynamicrange.md)
-- [struct UITraitImageDynamicRange](uitraitimagedynamicrange-swift.struct.md)
-- [var layoutDirection: UITraitEnvironmentLayoutDirection](uimutabletraits-13ja5/layoutdirection.md)
-- [struct UITraitLayoutDirection](uitraitlayoutdirection-swift.struct.md)
 
 
 ---

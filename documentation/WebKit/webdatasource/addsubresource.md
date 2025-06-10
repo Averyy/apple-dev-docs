@@ -1,6 +1,6 @@
 # addSubresource(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Adds a resource to the data source’s list of subresources.

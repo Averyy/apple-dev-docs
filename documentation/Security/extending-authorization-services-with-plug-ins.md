@@ -8,8 +8,6 @@ Modify the system’s authorization policy with custom code.
 
 > ❗ **Important**:  To authenticate the person using your app prior to providing access to resources within the app, use [`Local Authentication`](https://developer.apple.com/documentation/LocalAuthentication) instead of creating an authorization plug-in. Use authorization plug-ins to extend or change system policies.
 
- To authenticate the person using your app prior to providing access to resources within the app, use [`Local Authentication`](https://developer.apple.com/documentation/LocalAuthentication) instead of creating an authorization plug-in. Use authorization plug-ins to extend or change system policies.
-
 The macOS Security Server’s authorization engine consults its authorization policy database to determine which authorization mechanisms to use when evaluating whether to grant particular rights for the person using the Mac. You can customize this process by creating an authorization plug-in, a code bundle that provides one or more authorization mechanisms. Each authorization mechanism performs a single step in an authorization process.
 
 If the policy database specifies a mechanism in your authorization plug-in, the authorization engine loads your plug-in in a dedicated host process to isolate your code. There are two plug-in hosts:
@@ -18,8 +16,6 @@ If the policy database specifies a mechanism in your authorization plug-in, the 
 - One that runs with root privileges to perform privileged operations.
 
 > ❗ **Important**:  Authorization plug-ins that display an interface or otherwise connect to the window server can’t run in the privileged plug-in host. Running GUI code as root is — in general — a bad idea because GUI code links in many libraries, any of which could contain security vulnerabilities.
-
- Authorization plug-ins that display an interface or otherwise connect to the window server can’t run in the privileged plug-in host. Running GUI code as root is — in general — a bad idea because GUI code links in many libraries, any of which could contain security vulnerabilities.
 
 ##### Create an Authorization Plug in
 
@@ -35,15 +31,11 @@ When you set context data, tag the data with a flag that specifies whether the S
 
 > ❗ **Important**:  If your plug-in displays a window before somebody logs into a Mac, ensure you set the [`canBecomeVisibleWithoutLogin`](https://developer.apple.com/documentation/AppKit/NSWindow/canBecomeVisibleWithoutLogin) property of your [`NSWindow`](https://developer.apple.com/documentation/AppKit/NSWindow) instance to [`true`](https://developer.apple.com/documentation/swift/true). For more details, see [`AuthorizationPluginCreate`](authorizationplugincreate.md).
 
- If your plug-in displays a window before somebody logs into a Mac, ensure you set the [`canBecomeVisibleWithoutLogin`](https://developer.apple.com/documentation/AppKit/NSWindow/canBecomeVisibleWithoutLogin) property of your [`NSWindow`](https://developer.apple.com/documentation/AppKit/NSWindow) instance to [`true`](https://developer.apple.com/documentation/swift/true). For more details, see [`AuthorizationPluginCreate`](authorizationplugincreate.md).
-
 ##### Register the Authorization Plug in
 
 To install an authorization plug-in so that the authorization engine can find it and use its authorization mechanisms, copy the bundle to `/Library/Security/SecurityAgentPlugins` as part of your app’s installation process. In your app, call [`AuthorizationRightSet(_:_:_:_:_:_:)`](authorizationrightset(_:_:_:_:_:_:).md) to add a rule to the authorization policy database that refers to your plug-in. Pass a dictionary as the `rightDefinition` parameter, using the keys listed in [`Authorization Name Tags`](authorization-name-tags.md) and those in the file `AuthorizationTagsPriv.h`.
 
 > ❗ **Important**:  `AuthorizationTagsPriv.h` isn’t part of the public API. Apple reserves the right to change this file or its contents with future releases.
-
- `AuthorizationTagsPriv.h` isn’t part of the public API. Apple reserves the right to change this file or its contents with future releases.
 
 The name of a mechanism is the plug-in name, followed by a colon (`:`), and the name of the mechanism. To indicate that the authorization engine should load the plug-in in the privileged host, add a comma and the word `privileged` to the mechanism name; for example:
 

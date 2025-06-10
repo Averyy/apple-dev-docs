@@ -32,6 +32,7 @@ Use this value to determine or set whether the environment uses a left-to-right 
   A description of what should happen when the layout direction changes.
 - [enum LayoutDirection](layoutdirection.md)
   A direction in which SwiftUI can lay out content.
+- [struct LayoutRotationUnaryLayout](layoutrotationunarylayout.md)
 
 
 ---

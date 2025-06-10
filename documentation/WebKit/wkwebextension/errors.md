@@ -1,6 +1,6 @@
 # errors
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An array of all errors that occurred during the processing of the extension.

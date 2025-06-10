@@ -21,7 +21,7 @@ A reference to the identified object or `nil` if could not be found.
 
 #### Discussion
 
-This method is provided as an alternative to [`objectAtIndex:`](https://developer.apple.com/documentation/foundation/nsarray/1417555-objectatindex) for applications where an identifier is available instead of (or in addition to) an index. A unique ID is generally more stable than an index. For example, it may be more useful to identify a contact in Address Book by its identifier (which doesn’t change over time) than by its index in the list of contacts (which can change as contacts are added or removed).
+This method is provided as an alternative to [`object(at:)`](https://developer.apple.com/documentation/Foundation/NSArray/object(at:)) for applications where an identifier is available instead of (or in addition to) an index. A unique ID is generally more stable than an index. For example, it may be more useful to identify a contact in Address Book by its identifier (which doesn’t change over time) than by its index in the list of contacts (which can change as contacts are added or removed).
 
 ## Parameters
 

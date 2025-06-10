@@ -1,6 +1,6 @@
 # applicationWillTerminate(_:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Tells the delegate that the app is about to terminate.

@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to remove an installed book.
+The command to remove a previously installed book from a device.
 
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

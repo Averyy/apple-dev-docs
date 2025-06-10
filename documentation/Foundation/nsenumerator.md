@@ -72,4 +72,4 @@ The enumerator subclasses used by `NSArray`, `NSDictionary`, and `NSSet` retain 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsenumerator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsenumerator)*

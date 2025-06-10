@@ -3,7 +3,7 @@
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: init
 
-Initializes the product instance to provision.
+Creates the product instance to provision.
 
 **Availability**:
 - iOS 18.0+

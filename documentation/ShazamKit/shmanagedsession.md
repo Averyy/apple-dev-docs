@@ -79,6 +79,7 @@ switch result {
 - [Copyable](../Swift/Copyable.md)
 - [Observable](../Observation/Observable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

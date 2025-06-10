@@ -1,6 +1,6 @@
 # WKWebpagePreferences.UpgradeToHTTPSPolicy.keepAsRequested
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 **Availability**:

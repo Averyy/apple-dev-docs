@@ -1,6 +1,6 @@
 # AppTransaction
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: struct
 
 Information that represents the customer’s purchase of the app, cryptographically signed by the App Store.
@@ -88,6 +88,7 @@ struct AppTransaction
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -97,4 +98,4 @@ struct AppTransaction
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/apptransaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/apptransaction)*

@@ -1,6 +1,6 @@
 # MonthlyWeatherStatisticsQuery
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure that encapsulates a generic monthly weather statistics dataset request.
@@ -17,7 +17,7 @@ A structure that encapsulates a generic monthly weather statistics dataset reque
 ## Declaration
 
 ```swift
-struct MonthlyWeatherStatisticsQuery<T> where T : Decodable, T : Encodable, T : Equatable
+struct MonthlyWeatherStatisticsQuery<T> where T : Decodable, T : Encodable, T : Equatable, T : Sendable
 ```
 
 #### Overview
@@ -37,6 +37,12 @@ let (monthlyPrecipitationStatistics, monthlyTemperatureStatistics) = try await s
   The monthly precipitation statistics query.
 - [static var temperature: MonthlyWeatherStatisticsQuery<MonthTemperatureStatistics>](monthlyweatherstatisticsquery/temperature.md)
   The monthly temperature statistics query.
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

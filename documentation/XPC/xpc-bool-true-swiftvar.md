@@ -1,6 +1,6 @@
 # XPC_BOOL_TRUE
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A constant that represents a Boolean value of true.

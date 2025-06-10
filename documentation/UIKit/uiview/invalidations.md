@@ -34,6 +34,8 @@ enum Invalidations
   A change that invalidates the layout of the containing view’s subviews.
 - [UIView.Invalidations.Tuple](uiview/invalidations/tuple.md)
   A change that invalidates a combination of factors covered by the other invalidation types.
+### Structures
+- [UIView.Invalidations.Properties](uiview/invalidations/properties.md)
 
 ## See Also
 

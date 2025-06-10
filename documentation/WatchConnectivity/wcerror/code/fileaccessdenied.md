@@ -1,6 +1,6 @@
 # WCError.Code.fileAccessDenied
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: case
 
 An error indicating that the system can’t transfer a file because it is inaccessible.

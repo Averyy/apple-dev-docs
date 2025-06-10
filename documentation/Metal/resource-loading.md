@@ -69,7 +69,7 @@ To help minimize your appʼs storage footprint, compress your assets at developm
 ## See Also
 
 - [Resource Fundamentals](resource-fundamentals.md)
-  Learn the common attributes of all Metal memory resources, including buffers and textures, and how to manage the underlying memory.
+  Control the common attributes of all Metal memory resources, including buffers and textures, and how to configure their underlying memory.
 - [Buffers](buffers.md)
   Create and manage untyped data your app uses to exchange information with its shader functions.
 - [Textures](textures.md)
@@ -77,9 +77,9 @@ To help minimize your appʼs storage footprint, compress your assets at developm
 - [Memory Heaps](memory-heaps.md)
   Take control of your app’s GPU memory management by creating a large memory allocation for various buffers, textures, and other resources.
 - [Resource Synchronization](resource-synchronization.md)
-  Coordinate the contents of data buffers, textures, and other resources that CPUs and GPUs share access to.
+  Prevent multiple commands that can access the same resources simultaneously by coordinating those accesses with barriers, fences, or events.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/resource-loading)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/resource-loading)*

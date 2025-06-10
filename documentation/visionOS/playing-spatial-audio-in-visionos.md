@@ -1,6 +1,6 @@
 # Playing spatial audio
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Create and adjust spatial audio in visionOS with RealityKit.
 

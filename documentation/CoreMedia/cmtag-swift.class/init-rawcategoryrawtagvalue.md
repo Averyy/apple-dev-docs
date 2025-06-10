@@ -24,8 +24,6 @@ init(rawCategory: CMTag.RawCategory, rawTagValue: CMTag.Value)
 
 > ❗ **Important**:  To ensure that your tags have a valid category, create new [`CMTag`](cmtag-swift.class.md) instances with a static method listed in Creating Tags.
 
- To ensure that your tags have a valid category, create new [`CMTag`](cmtag-swift.class.md) instances with a static method listed in Creating Tags.
-
 ## Parameters
 
 - `rawCategory`: The category of the created tag.

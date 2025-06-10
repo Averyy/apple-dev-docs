@@ -1,6 +1,6 @@
 # ModelContext
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: class
 
 An object that enables you to fetch, insert, and delete models, and save any changes to disk.
@@ -171,4 +171,4 @@ struct LastModifiedView: View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftData/modelcontext)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/modelcontext)*

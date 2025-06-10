@@ -26,9 +26,8 @@ To access the symptoms, query for the [`HKCategorySample`](hkcategorysample.md) 
 ## See Also
 
 - [HKElectrocardiogram.SymptomsStatus.none](hkelectrocardiogram/symptomsstatus-swift.enum/none.md)
-  The user didn’t experience any symptoms during the duration of the electrocardiogram reading.
+  The user didn’t enter a symptom when they recorded the ECG.
 - [HKElectrocardiogram.SymptomsStatus.notSet](hkelectrocardiogram/symptomsstatus-swift.enum/notset.md)
-  The user didn’t specify whether or not they experienced symptoms.
 
 
 ---

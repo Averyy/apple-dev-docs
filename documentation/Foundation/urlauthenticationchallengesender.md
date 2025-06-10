@@ -26,8 +26,6 @@ The methods in the protocol are generally sent by a delegate in response to rece
 
 > ❗ **Important**:  This protocol is  for use with the legacy [`NSURLConnection`](nsurlconnection.md) and [`NSURLDownload`](nsurldownload.md) classes. It should not be used with [`URLSession`](urlsession.md)-based code, for which you respond to authentication challenges by passing [`URLSession.AuthChallengeDisposition`](urlsession/authchallengedisposition.md) constants to the provided completion handler blocks.
 
- This protocol is  for use with the legacy [`NSURLConnection`](nsurlconnection.md) and [`NSURLDownload`](nsurldownload.md) classes. It should not be used with [`URLSession`](urlsession.md)-based code, for which you respond to authentication challenges by passing [`URLSession.AuthChallengeDisposition`](urlsession/authchallengedisposition.md) constants to the provided completion handler blocks.
-
 ## Topics
 
 ### Protocol Methods
@@ -47,6 +45,7 @@ The methods in the protocol are generally sent by a delegate in response to rece
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -92,6 +92,7 @@ To add a signposted interval, create a signpost ID — an identifier that disamb
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

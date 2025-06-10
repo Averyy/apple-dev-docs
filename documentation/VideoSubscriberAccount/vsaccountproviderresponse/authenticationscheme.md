@@ -1,6 +1,6 @@
 # authenticationScheme
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The authentication scheme type of the response.
@@ -20,7 +20,7 @@ var authenticationScheme: VSAccountProviderAuthenticationScheme { get }
 
 #### Discussion
 
-This property identifies the authentication scheme the account provider used to construct the response. See [`VSAccountProviderAuthenticationScheme`](vsaccountproviderauthenticationscheme.md) for a list of types.
+This property identifies the authentication scheme the account provider used to construct the response. For a list of types, see [`VSAccountProviderAuthenticationScheme`](vsaccountproviderauthenticationscheme.md).
 
 ## See Also
 

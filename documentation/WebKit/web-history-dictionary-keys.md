@@ -1,6 +1,6 @@
 # Web History Dictionary Keys
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 The key for accessing the web history items stored in a notification’s user information dictionary.
 

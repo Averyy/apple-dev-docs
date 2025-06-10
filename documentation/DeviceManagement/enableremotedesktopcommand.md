@@ -7,8 +7,6 @@ The command to enable Remote Desktop on a device.
 
 **Availability**:
 - macOS 10.14.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,9 +16,9 @@ object EnableRemoteDesktopCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object EnableRemoteDesktopCommand.Command](enableremotedesktopcommand/command-data.dictionary.md)
-  The request dictionary to enable Remote Desktop on a device.
+  The command to enable Remote Desktop on a device.
 
 ## See Also
 

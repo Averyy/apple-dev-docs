@@ -1,6 +1,6 @@
 # listItemTint(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Sets a fixed tint color for content in a list.
@@ -42,7 +42,7 @@ The containing list’s style applies the tint as appropriate. For example, watc
 - [struct ListItemTint](listitemtint.md)
   A tint effect configuration that you can apply to content in a list.
 - [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
-  The default minimum height of a row in a `List`. The default minimum height of a row in a list.
+  The default minimum height of a row in a list.
 
 
 ---

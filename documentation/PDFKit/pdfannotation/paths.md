@@ -16,7 +16,7 @@ An array of bezier paths, in annotation-space coordinates, that compose the anno
 ## Declaration
 
 ```swift
-var paths: [NSBezierPath]? { get }
+var paths: [UIBezierPath]? { get }
 ```
 
 ## See Also

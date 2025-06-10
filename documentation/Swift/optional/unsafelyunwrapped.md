@@ -30,8 +30,6 @@ The `unsafelyUnwrapped` property is recommended over calling the `unsafeBitCast(
 
 > ⚠️ **Warning**: This property trades safety for performance.  Use `unsafelyUnwrapped` only when you are confident that this instance will never be equal to `nil` and only after you’ve tried using the postfix `!` operator.
 
-This property trades safety for performance.  Use `unsafelyUnwrapped` only when you are confident that this instance will never be equal to `nil` and only after you’ve tried using the postfix `!` operator.
-
 ## See Also
 
 - [func hash(into: inout Hasher)](optional/hash(into:).md)

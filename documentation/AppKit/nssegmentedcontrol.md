@@ -133,6 +133,7 @@ The features of a segmented control include the following:
 - [NSUserInterfaceCompression](nsuserinterfacecompression.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

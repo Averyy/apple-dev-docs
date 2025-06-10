@@ -1,6 +1,6 @@
 # qualityLevel
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The resolution that the scanner uses to find data.

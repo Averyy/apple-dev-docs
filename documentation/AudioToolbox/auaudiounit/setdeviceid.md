@@ -1,6 +1,6 @@
 # setDeviceID(_:)
 
-**Framework**: Audiotoolbox  
+**Framework**: Audio Toolbox  
 **Kind**: method
 
 Sets the I/O hardware device.

@@ -1,6 +1,6 @@
 # startMonitoringSignificantLocationChanges()
 
-**Framework**: Corelocation  
+**Framework**: Core Location  
 **Kind**: method
 
 Starts the generation of updates based on significant location changes.

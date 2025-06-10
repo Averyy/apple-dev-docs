@@ -17,6 +17,7 @@ The average starting alpha value for a particle.
 ## Declaration
 
 ```swift
+@MainActor
 var particleAlpha: CGFloat { get set }
 ```
 

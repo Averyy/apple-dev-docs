@@ -1,6 +1,6 @@
 # WKTextInputMode.plain
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Text from dictation and suggestions only. Do not allow emoji of any kind.

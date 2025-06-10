@@ -1,6 +1,6 @@
 # earlyStoppingTolerance
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: property
 
 The early-stopping tolerance.
@@ -30,4 +30,4 @@ Defaults to 0.01.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/timeseriesclassifierconfiguration/earlystoppingtolerance)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/timeseriesclassifierconfiguration/earlystoppingtolerance)*

@@ -1,38 +1,36 @@
-# fixedSpace(_:)
+# fixedSpace()
 
 **Framework**: UIKit  
 **Kind**: method
 
-Creates a new fixed-width space item.
+Creates a new fixed space item of zero width.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- tvOS 14.0+
-- visionOS 1.0+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
 @MainActor
-class func fixedSpace(_ width: CGFloat) -> Self
+class func fixedSpace() -> Self
 ```
 
-#### Return Value
+#### Discussion
 
-A fixed-width space [`UIBarButtonItem`](uibarbuttonitem.md).
-
-## Parameters
-
-- `width`: The width of the space.
+A fixed space of 0 width separates the shared background used in navigation bars and toolbars to visually group items.
 
 ## See Also
 
+- [class func fixedSpace(CGFloat) -> Self](uibarbuttonitem/fixedspace(_:).md)
+  Creates a new fixed-width space item.
 - [class func flexibleSpace() -> Self](uibarbuttonitem/flexiblespace.md)
   Creates a new flexible-width space item.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uibarbuttonitem/fixedspace(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uibarbuttonitem/fixedspace())*

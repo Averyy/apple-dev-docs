@@ -73,6 +73,8 @@ struct SuggestionsView: View { ... }
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -86,6 +88,8 @@ struct SuggestionsView: View { ... }
   Sets the direction of a selection or cursor relative to a text character.
 - [var textSelectionAffinity: TextSelectionAffinity](environmentvalues/textselectionaffinity.md)
   A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
+- [struct AttributedTextSelection](attributedtextselection.md)
+  Represents a selection of attributed text.
 
 
 ---

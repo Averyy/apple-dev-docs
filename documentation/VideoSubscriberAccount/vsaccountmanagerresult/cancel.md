@@ -1,6 +1,6 @@
 # cancel()
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: method
 
 Cancels an in-progress request for subscriber account information.

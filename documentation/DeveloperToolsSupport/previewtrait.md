@@ -27,6 +27,8 @@ struct PreviewTrait<T>
 - [init(PreviewTrait<T>...)](previewtrait/init(_:).md)
   Convenience to compose multiple traits into a single trait.
 ### Type Properties
+- [static var assistiveAccess: PreviewTrait<Preview.ViewTraits>](previewtrait/assistiveaccess.md)
+  Apply the visual style used in Assistive Access on iOS and iPadOS. On other platforms, this is a no-op.
 - [static var defaultLayout: PreviewTrait<Preview.ViewTraits>](previewtrait/defaultlayout.md)
   Center the preview in a container the size of the device on which the preview is running.
 - [static var landscapeLeft: PreviewTrait<Preview.ViewTraits>](previewtrait/landscapeleft.md)
@@ -51,6 +53,7 @@ struct PreviewTrait<T>
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

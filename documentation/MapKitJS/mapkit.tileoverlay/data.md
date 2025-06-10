@@ -26,7 +26,7 @@ The default value is `{}`.
 This example shows adding a customized tile overlay to a map.
 
 ```javascript
-var customOverlay = new mapkit.TileOverlay("https://{subdomain}.customtileserver.com/{z}/{x}/{y}?scale={scale}&lang={lang}&imageFormat=jpg");
+const customOverlay = new mapkit.TileOverlay("https://{subdomain}.customtileserver.com/{z}/{x}/{y}?scale={scale}&lang={lang}&imageFormat=jpg");
 customOverlay.data = {
     subdomain: "staging",
     lang: mapkit.language

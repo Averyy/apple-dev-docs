@@ -22,8 +22,6 @@ The `error` parameter can be used to inform the user of why the connection faile
 
 > ❗ **Important**:  If a [`GKPeerPickerController`](gkpeerpickercontroller.md) object is being used to configure the session, the controller handles this message automatically. Your delegate can ignore it if the peer picker dialog is in use.
 
- If a [`GKPeerPickerController`](gkpeerpickercontroller.md) object is being used to configure the session, the controller handles this message automatically. Your delegate can ignore it if the peer picker dialog is in use.
-
 ## Parameters
 
 - `session`: The session that received the message.

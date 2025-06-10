@@ -1,6 +1,6 @@
 # PassFieldContent
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that represents the information to display in a field on a pass.
@@ -8,7 +8,7 @@ An object that represents the information to display in a field on a pass.
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
-- watchOS 2.0+
+- watchOS 1.0+
 
 ## Declaration
 
@@ -34,6 +34,8 @@ object PassFieldContent
 - [PassFields.HeaderFields](passfields/headerfields-data.dictionary.md)
 - [PassFields.PrimaryFields](passfields/primaryfields-data.dictionary.md)
 - [PassFields.SecondaryFields](passfields/secondaryfields-data.dictionary.md)
+- [UpcomingPassInformationEntry.AdditionalInfoFields](upcomingpassinformationentry/additionalinfofields-data.dictionary.md)
+- [UpcomingPassInformationEntry.BackFields](upcomingpassinformationentry/backfields-data.dictionary.md)
 
 ## See Also
 
@@ -43,4 +45,4 @@ object PassFieldContent
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WalletPasses/passfieldcontent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/walletpasses/passfieldcontent)*

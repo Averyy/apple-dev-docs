@@ -1,6 +1,6 @@
 # WKCrownDelegate
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: protocol
 
 A collection of methods you can implement to track the user’s interaction with the digital crown, receiving notifications when the user rotates the crown or when rotation stops.

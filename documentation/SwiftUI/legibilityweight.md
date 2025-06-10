@@ -41,6 +41,7 @@ The app can’t override the user’s choice before iOS 16, tvOS 16 or watchOS 9
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

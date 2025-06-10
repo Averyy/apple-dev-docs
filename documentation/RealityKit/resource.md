@@ -10,6 +10,7 @@ A shared resource you use to configure a component, like a material, mesh, or te
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -27,6 +28,7 @@ Resources can be costly to load or create. Share and reuse resources as much as 
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [AnimationResource](animationresource.md)
 - [AudioBufferResource](audiobufferresource.md)

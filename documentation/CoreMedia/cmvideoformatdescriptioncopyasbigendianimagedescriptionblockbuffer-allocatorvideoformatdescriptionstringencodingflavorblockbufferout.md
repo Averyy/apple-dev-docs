@@ -1,6 +1,6 @@
 # CMVideoFormatDescriptionCopyAsBigEndianImageDescriptionBlockBuffer(allocator:videoFormatDescription:stringEncoding:flavor:blockBufferOut:)
 
-**Framework**: Coremedia  
+**Framework**: Core Media  
 **Kind**: func
 
 Copies the contents of a video format description to a buffer in big-endian byte ordering.

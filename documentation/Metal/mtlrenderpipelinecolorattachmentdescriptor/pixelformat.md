@@ -19,6 +19,10 @@ The pixel format of the color attachment’s texture.
 var pixelFormat: MTLPixelFormat { get set }
 ```
 
+## Mentions
+
+- [Using the Metal 4 compilation API](using-the-metal-4-compilation-api.md)
+
 #### Discussion
 
 The pixel format of the rendering pipeline state must be set to match the pixel format of the texture used by the selected color attachment; otherwise, an error occurs.

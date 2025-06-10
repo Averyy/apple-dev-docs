@@ -1,6 +1,6 @@
 # Certainty
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: typealias
 
 How likely the event is to occur.

@@ -1,6 +1,6 @@
 # onPencilSqueeze(perform:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Adds an action to perform when the user squeezes their Apple Pencil.

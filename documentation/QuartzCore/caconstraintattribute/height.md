@@ -6,7 +6,7 @@
 The height of a layer.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst 13.1+
 - macOS ?+
 
 ## Declaration

@@ -10,6 +10,7 @@ A component that defines a virtual camera and its controls.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -58,17 +59,6 @@ In AR scenarios, the system provides the camera automatically; however, in non-A
   The camera’s total field of view in degrees.
 - [var fieldOfViewOrientation: CameraFieldOfViewOrientation](perspectivecameracomponent/fieldofvieworientation.md)
   The orientation with which the system uses to apply the field-of-view degrees.
-### Registering a component type
-- [static func registerComponent()](perspectivecameracomponent/registercomponent.md)
-  Registers a new component type.
-### Comparing perspective camera components
-- [static func == (PerspectiveCameraComponent, PerspectiveCameraComponent) -> Bool](perspectivecameracomponent/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](perspectivecameracomponent/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Component Implementations](perspectivecameracomponent/component-implementations.md)
-- [Equatable Implementations](perspectivecameracomponent/equatable-implementations.md)
 
 ## Relationships
 

@@ -26,7 +26,7 @@ The shape of the new `MLShapedArray` gets a new dimension of 1 at the specified 
 
 ```swift
 let original = MLShapedArray<Int32>(scalars: 0..., shape: [2, 3])
-let expanded = original.expandedingShape(at: 0)
+let expanded = original.expandingShape(at: 0)
 expanded.shape // [1, 2, 3]
 ```
 

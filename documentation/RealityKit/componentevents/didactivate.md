@@ -10,6 +10,7 @@ Event raised after a component has been activated.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -31,6 +32,7 @@ struct DidActivate
 ### Conforms To
 - [Event](event.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

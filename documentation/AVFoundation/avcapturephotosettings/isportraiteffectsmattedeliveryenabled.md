@@ -23,8 +23,6 @@ The default is `NO`.  Set to `YES` if you wish to receive a portrait effects mat
 
 > ❗ **Important**:  Portrait effects matte generation requires depth data to be present, so you must also set [`isDepthDataDeliveryEnabled`](avcapturephotooutput/isdepthdatadeliveryenabled.md) to `YES`.
 
- Portrait effects matte generation requires depth data to be present, so you must also set [`isDepthDataDeliveryEnabled`](avcapturephotooutput/isdepthdatadeliveryenabled.md) to `YES`.
-
 Setting this property to `YES` doen’t guarantee that a portrait effects matte will be present in the resulting [`AVCapturePhoto`](avcapturephoto.md). The matte is primarily used to improve the rendering quality of portrait effects on the image. If the photo’s content lacks a clear foreground subject, no portrait effects matte is generated, and the property returns `nil`. Setting this property to `YES` may add significant processing time to the delivery of your [`photoOutput(_:didFinishProcessingPhoto:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md) callback.
 
 ## See Also

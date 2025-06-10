@@ -1,6 +1,6 @@
 # watchOS 5.1 Release Notes
 
-**Framework**: Watchos Release Notes
+**Framework**: watchOS Release Notes
 
 Update your apps to use new features, and test your apps against API changes.
 

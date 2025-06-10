@@ -13,6 +13,7 @@ An array of strings that describe variants of the current road name.
 ## Declaration
 
 ```swift
+@MainActor
 var currentRoadNameVariants: [String] { get set }
 ```
 

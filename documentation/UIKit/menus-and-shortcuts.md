@@ -21,6 +21,7 @@ Simplify interactions with your app using menu systems, contextual menus, Home S
   An object that specifies a key press perform on a hardware keyboard and the resulting action.
 - [class UIDeferredMenuElement](uideferredmenuelement.md)
   A placeholder menu element that the system replaces with the result of the block’s completion handler.
+- [UIDeferredMenuElement.Provider](uideferredmenuelement/provider.md)
 - [UIMenuElement.Attributes](uimenuelement/attributes.md)
   Attributes that determine the style of the menu element.
 - [UIMenuElement.State](uimenuelement/state.md)
@@ -43,7 +44,11 @@ Simplify interactions with your app using menu systems, contextual menus, Home S
   An interface for adding and removing menus from a menu system.
 - [class UIMenuSystem](uimenusystem.md)
   An object representing a main or contextual menu system.
+- [class UIMainMenuSystem](uimainmenusystem.md)
+  The main menu system.
 ### Contextual menus
+- [class UIContextMenuSystem](uicontextmenusystem.md)
+  The context menu system.
 - [class UIContextMenuInteraction](uicontextmenuinteraction.md)
   An interaction object that you use to display relevant actions for your content.
 - [protocol UIContextMenuInteractionDelegate](uicontextmenuinteractiondelegate.md)

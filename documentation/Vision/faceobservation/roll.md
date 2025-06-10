@@ -29,7 +29,7 @@ This value indicates the rotational angle of the face around the z-axis.
   A type that describes the request and revision combination.
 - [FaceObservation.Landmarks2D](faceobservation/landmarks2d.md)
   A collection of facial features that a request detects.
-- [let landmarks: FaceObservation.Landmarks2D?](faceobservation/landmarks.md)
+- [var landmarks: FaceObservation.Landmarks2D?](faceobservation/landmarks.md)
   The facial features of the detected face.
 - [let pitch: Measurement<UnitAngle>](faceobservation/pitch.md)
   The pitch angle of a face.

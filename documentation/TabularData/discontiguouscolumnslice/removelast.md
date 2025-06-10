@@ -1,6 +1,6 @@
 # removeLast(_:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Removes the given number of elements from the end of the collection.

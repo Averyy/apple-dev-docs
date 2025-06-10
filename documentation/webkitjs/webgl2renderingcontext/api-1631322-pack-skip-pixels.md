@@ -1,6 +1,6 @@
 # PACK_SKIP_PIXELS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

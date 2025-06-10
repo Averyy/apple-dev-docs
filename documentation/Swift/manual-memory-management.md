@@ -9,6 +9,16 @@ Allocate and manage memory manually.
 ### First Steps
 - [Calling Functions With Pointer Parameters](calling-functions-with-pointer-parameters.md)
   Use implicit pointer casting or bridging when calling functions that takes pointers as parameters.
+### Safe Memory Access
+- [struct Span](span.md)
+  `Span<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
+- [struct RawSpan](rawspan.md)
+  `RawSpan` represents a contiguous region of memory which contains initialized bytes.
+- [struct OutputSpan](outputspan.md)
+- [struct UTF8Span](utf8span.md)
+  A borrowed view into contiguous memory that contains validly-encoded UTF-8 code units.
+- [struct MutableSpan](mutablespan.md)
+- [struct MutableRawSpan](mutablerawspan.md)
 ### Typed Pointers
 - [struct UnsafePointer](unsafepointer.md)
   A pointer for accessing data of a specific type.
@@ -54,10 +64,12 @@ Allocate and manage memory manually.
 ### Reference Counting
 - [struct Unmanaged](unmanaged.md)
   A type for propagating an unmanaged object reference.
-- [func withExtendedLifetime<T, E, Result>(borrowing T, (borrowing T) throws(E) -> Result) throws(E) -> Result](withextendedlifetime(_:_:)-4kl68.md)
+- [func withExtendedLifetime<T, E, Result>(borrowing T, () throws(E) -> Result) throws(E) -> Result](withextendedlifetime(_:_:)-4mmpv.md)
   Evaluates a closure while ensuring that the given instance is not destroyed before the closure returns.
-- [func withExtendedLifetime<T, E, Result>(borrowing T, () throws(E) -> Result) throws(E) -> Result](withextendedlifetime(_:_:)-6mq1.md)
+- [func withExtendedLifetime<T, E, Result>(borrowing T, (borrowing T) throws(E) -> Result) throws(E) -> Result](withextendedlifetime(_:_:)-59dz3.md)
   Evaluates a closure while ensuring that the given instance is not destroyed before the closure returns.
+- [func extendLifetime<T>(borrowing T)](extendlifetime(_:).md)
+  Extends the lifetime of the given instance.
 
 ## See Also
 

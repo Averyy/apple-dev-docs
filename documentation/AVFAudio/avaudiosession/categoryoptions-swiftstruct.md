@@ -45,6 +45,11 @@ Each option is valid only for specific audio session categories.
   An option that determines whether audio from the session defaults to the built-in speaker instead of the receiver.
 - [static var overrideMutedMicrophoneInterruption: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/overridemutedmicrophoneinterruption.md)
   An option that indicates whether the system interrupts the audio session when it mutes the built-in microphone.
+### Type Properties
+- [static var allowBluetoothHFP: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/allowbluetoothhfp.md)
+  Allows an application to change the default behavior of some audio session categories with regard to whether Bluetooth Hands-Free Profile (HFP) devices are available for routing. The exact behavior depends on the category.
+- [static var bluetoothHighQualityRecording: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/bluetoothhighqualityrecording.md)
+  When this option is specified with a category that supports both input and output, the session will enable full-bandwidth audio in both input & output directions, if the Bluetooth route supports it (e.g. certain AirPods models). It is currently compatible only with mode [`default`](avaudiosession/mode-swift.struct/default.md).
 
 ## Relationships
 
@@ -55,6 +60,7 @@ Each option is valid only for specific audio session categories.
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

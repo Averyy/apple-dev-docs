@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: subscript
 
 Accesses a pose transformation using the index of the joint name.
@@ -10,6 +10,7 @@ Accesses a pose transformation using the index of the joint name.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

@@ -30,6 +30,8 @@ Create instances of `ASMigrationDisplayItem` by calling the superclass’s initi
   The Bluetooth identifier of the accessory to migrate.
 - [var hotspotSSID: String?](asmigrationdisplayitem/hotspotssid.md)
   The Wi-Fi hotspot SSID of the accessory to migrate.
+- [var wifiAwarePairedDeviceID: ASAccessory.WiFiAwarePairedDeviceID](asmigrationdisplayitem/wifiawarepaireddeviceid.md)
+  The Wi-Fi Aware paired device identififer of the accessory to migrate.
 
 ## Relationships
 
@@ -43,6 +45,7 @@ Create instances of `ASMigrationDisplayItem` by calling the superclass’s initi
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

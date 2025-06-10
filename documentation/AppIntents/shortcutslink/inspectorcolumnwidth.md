@@ -1,6 +1,6 @@
 # inspectorColumnWidth(_:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Sets a fixed, preferred width for the inspector containing this view when presented as a trailing column.
@@ -8,7 +8,7 @@ Sets a fixed, preferred width for the inspector containing this view when presen
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 
 ## Declaration

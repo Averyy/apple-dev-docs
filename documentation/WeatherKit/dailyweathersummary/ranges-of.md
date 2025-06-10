@@ -1,6 +1,6 @@
 # ranges(of:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Finds and returns the ranges of the all occurrences of a given sequence within the collection.

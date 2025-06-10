@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: init
 
-Creates a new `StartConversationAction`.
+Creates an action that starts an outgoing conversation.
 
 **Availability**:
 - iOS 17.4+
@@ -20,9 +20,9 @@ init(conversationUUID: UUID, handles: [Handle], isVideo: Bool)
 
 ## Parameters
 
-- `conversationUUID`: The unique identfiier of the   to which this action will be applied.
-- `handles`: The  s of all remote members who will be invited to join the  .
-- `isVideo`: Specifies if the   contains a video stream.
+- `conversationUUID`: The unique identifier of the conversation to start.
+- `handles`: The handles of all remote members who receive an invite  to join the conversation.
+- `isVideo`: A value that specifies if the conversation contains a video stream.
 
 
 ---

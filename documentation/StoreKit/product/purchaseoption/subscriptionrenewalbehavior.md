@@ -39,6 +39,7 @@ Use the subscription renewal behavior values when you use the [`purchaseDate`](h
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Building watchOS app Interfaces Using the Storyboard
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Create the user interface for your watchOS app by nesting stacks.
 

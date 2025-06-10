@@ -6,20 +6,37 @@ Reduce the need to manually register for trait changes when you use traits withi
 
 #### Overview
 
-In iOS 18 and later, automatic trait tracking is a UIKit feature that eliminates the need to manually register for trait changes when you use traits in a supported method or closure. This feature reduces the amount of code you need to write and maintain, improves performance, and encourages the best practice of using traits within the scope of the supported APIs.
+Automatic trait tracking is a UIKit feature that eliminates the need to manually register for trait changes when you use traits in a supported method or closure. This feature reduces the amount of code you need to write and maintain, improves performance, and encourages the best practice of using traits within the scope of the supported APIs.
+
+Some properties aren’t appropriate to change during [`layoutSubviews()`](uiview/layoutsubviews().md), for example, properties where setting the value has a side-effect of invalidating the view’s layout. Update these properties in a view’s [`updateProperties()`](uiview/updateproperties().md) method, or a view controller’s [`updateProperties()`](uiviewcontroller/updateproperties().md) method. These methods support automatic trait tracking, and automatic observation tracking on objects that use the [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro. Notify an object of other updates to its properties by calling [`setNeedsUpdateProperties()`](uiview/setneedsupdateproperties().md) on your view, or [`setNeedsUpdateProperties()`](uiviewcontroller/setneedsupdateproperties().md) on your view controller. Force an object to immediately update its properties by calling [`updatePropertiesIfNeeded()`](uiview/updatepropertiesifneeded().md) on your view, or [`updatePropertiesIfNeeded()`](uiviewcontroller/updatepropertiesifneeded().md) on your view controller.
+
+> ❗ **Important**:  Avoid causing excessive updates by avoiding changes in [`layoutSubviews()`](uiview/layoutsubviews().md) that update properties the object tracks in [`updateProperties()`](uiview/updateproperties().md), or that invalidate the view’s layout.
 
 A complete list of APIs that support automatic trait tracking appears below.
 
 ## Topics
 
 ### Views
+- [func updateProperties()](uiview/updateproperties.md)
+  Override point for subclasses to update properties of this view. Never call this method directly; use `setNeedsUpdateProperties` to schedule an update.
+- [func setNeedsUpdateProperties()](uiview/setneedsupdateproperties.md)
+  Call to manually request a properties update for the view. Multiple requests may be coalesced into a single update alongside the next layout pass.
+- [func updatePropertiesIfNeeded()](uiview/updatepropertiesifneeded.md)
+  Forces an immediate properties update for this view (and its view controller, if applicable) and any subviews, including any view controllers or views in its subtree.
 - [func layoutSubviews()](uiview/layoutsubviews.md)
   Lays out subviews.
 - [func updateConstraints()](uiview/updateconstraints.md)
   Updates constraints for the view.
 - [func draw(CGRect)](uiview/draw(_:).md)
   Draws the view’s image within the passed-in rectangle.
+- [UIView.Invalidations.Properties](uiview/invalidations/properties.md)
 ### View controllers
+- [func updateProperties()](uiviewcontroller/updateproperties.md)
+  Override point for subclasses to update properties of this view controller or its view. Never call this method directly; use `setNeedsUpdateProperties` to schedule an update.
+- [func setNeedsUpdateProperties()](uiviewcontroller/setneedsupdateproperties.md)
+  Call to manually request a properties update for the view controller. Multiple requests may be coalesced into a single update alongside the next layout pass.
+- [func updatePropertiesIfNeeded()](uiviewcontroller/updatepropertiesifneeded.md)
+  Forces an immediate properties update for this view controller and its view, including any view controllers and views in this subtree.
 - [func viewWillLayoutSubviews()](uiviewcontroller/viewwilllayoutsubviews.md)
   Notifies the view controller that its view is about to lay out its subviews.
 - [func viewDidLayoutSubviews()](uiviewcontroller/viewdidlayoutsubviews.md)

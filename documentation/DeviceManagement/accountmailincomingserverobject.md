@@ -10,8 +10,6 @@ The settings for configuring an incoming mail server.
 - iPadOS 15.0+
 - macOS 13.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,10 +23,6 @@ object AccountMailIncomingServerObject
   The settings for configuring an outgoing mail server.
 - [object AccountMailSMIMEObject](accountmailsmimeobject.md)
   Settings for S/MIME.
-- [object AccountMailSMIME_EncryptionObject](accountmailsmime_encryptionobject.md)
-  Settings for S/MIME encryption.
-- [object AccountMailSMIME_SigningObject](accountmailsmime_signingobject.md)
-  Settings for S/MIME signing.
 
 
 ---

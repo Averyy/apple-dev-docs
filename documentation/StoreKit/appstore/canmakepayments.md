@@ -1,6 +1,6 @@
 # canMakePayments
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: property
 
 A Boolean value that indicates whether the person can make purchases.

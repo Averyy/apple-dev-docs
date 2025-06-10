@@ -1,6 +1,6 @@
 # init(fileURL:lineNumber:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Initializes a new instance with a file URL and a line number.

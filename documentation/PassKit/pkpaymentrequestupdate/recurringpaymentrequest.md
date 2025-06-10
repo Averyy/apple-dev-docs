@@ -24,8 +24,6 @@ The default value is `nil`, which indicates the recurring payment request doesn�
 
 > ⚠️ **Warning**:  Changing the [`billingAgreement`](pkrecurringpaymentrequest/billingagreement.md) along with this property causes the framework to invalidate the current payment request, close the payment sheet, and return an error in the completion handler.
 
- Changing the [`billingAgreement`](pkrecurringpaymentrequest/billingagreement.md) along with this property causes the framework to invalidate the current payment request, close the payment sheet, and return an error in the completion handler.
-
 You can’t use this property simultaneously with multitoken contexts or automatic reload payment requests.
 
 

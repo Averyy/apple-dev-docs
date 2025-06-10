@@ -10,7 +10,7 @@ Subscribes to an event type, optionally limited to events affecting a source ent
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- visionOS ?+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -36,7 +36,7 @@ An object that represents the subscription to this event stream.
   Generates a publisher for events of the specified type.
 - [func subscribe<E>(to: E.Type, on: (any EventSource)?, (E) -> Void) -> any Cancellable](scene/subscribe(to:on:_:).md)
   Subscribes to an event type, optionally limited to events affecting a source entity or scene.
-- [func publisher<E>(for: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?) -> Scene.Publisher<E>](scene/publisher(for:on:componenttype:).md)
+- [func publisher(for:on:componentType:)](scene/publisher(for:on:componenttype:).md)
   Returns a `Publisher` for events of the specified type in a `Scene`.
 
 

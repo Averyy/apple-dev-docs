@@ -1,6 +1,6 @@
 # UNNotificationTrigger
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 The common behavior for subclasses that trigger the delivery of a local or remote notification.

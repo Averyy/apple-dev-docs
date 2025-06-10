@@ -1,6 +1,6 @@
 # TKToken
 
-**Framework**: Cryptotokenkit  
+**Framework**: CryptoTokenKit  
 **Kind**: class
 
 A representation of a hardware-based cryptographic token.
@@ -86,4 +86,4 @@ class TKToken
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CryptoTokenKit/tktoken)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cryptotokenkit/tktoken)*

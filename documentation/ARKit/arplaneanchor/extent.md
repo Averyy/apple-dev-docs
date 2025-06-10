@@ -20,8 +20,6 @@ var extent: simd_float3 { get }
 
 > ⚠️ **Warning**:  In iOS 16, use [`planeExtent`](arplaneanchor/planeextent.md) instead.
 
- In iOS 16, use [`planeExtent`](arplaneanchor/planeextent.md) instead.
-
 The framework sets the x and z components to the width and length of the plane, respectively. The y-component is unused, with a constant value of `0`.
 
 ## See Also

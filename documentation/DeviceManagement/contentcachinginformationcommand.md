@@ -7,8 +7,6 @@ The command to get the status of the content caches on a device.
 
 **Availability**:
 - macOS 10.15.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,7 +16,7 @@ object ContentCachingInformationCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object ContentCachingInformationCommand.Command](contentcachinginformationcommand/command-data.dictionary.md)
   The command to get the status of the content caches on a device.
 

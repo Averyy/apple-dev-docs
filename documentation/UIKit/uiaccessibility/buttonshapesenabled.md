@@ -1,6 +1,6 @@
 # buttonShapesEnabled
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A Boolean value that indicates whether the Button Shapes setting is in an enabled state.

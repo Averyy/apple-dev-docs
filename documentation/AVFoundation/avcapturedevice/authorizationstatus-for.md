@@ -1,6 +1,6 @@
 # authorizationStatus(for:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Returns an authorization status that indicates whether the user grants the app permission to capture media of a particular type.

@@ -48,12 +48,24 @@ Use this class to preview an object with all of the information you need to pres
 
 ## See Also
 
+- [Requesting identity data from a Wallet pass](requesting-identity-data-from-a-wallet-pass.md)
+  Initiate a request for identity information by prompting a user for permission and decrypting a response payload.
+- [class PKIdentityPhotoIDDescriptor](pkidentityphotoiddescriptor.md)
+  An object you use to request information from a user’s photo ID or equivalent document.
+- [class PKIdentityAnyOfDescriptor](pkidentityanyofdescriptor.md)
+  An object you use to request information from multiple identity documents.
+- [class PKIdentityDriversLicenseDescriptor](pkidentitydriverslicensedescriptor.md)
+  An object for requesting information from a user’s driver’s license or equivalent document.
+- [class PKAddIdentityDocumentMetadata](pkaddidentitydocumentmetadata.md)
+  The object for specifying the metadata necessary to provision identity documents.
+- [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
+  Configuration to define the identity document.
 - [struct JPKIPassContents](jpkipasscontents.md)
   A set of actions for viewing and updating PINs, passwords, and signing abilities associated with digital identities on the JPKI applet.
 - [class PKAddIdentityDocumentConfiguration](pkaddidentitydocumentconfiguration.md)
   Configuration to define the identity document.
 - [class PKIdentityDocumentMetadata](pkidentitydocumentmetadata.md)
-  A set of configured metadata defining the required information to add the corresponding pass to Wallet.
+  A set of configured metadata that defines the required information to add the corresponding pass to Wallet.
 - [class PKIdentityNationalIDCardDescriptor](pkidentitynationalidcarddescriptor.md)
   An object for requesting information from a user’s national ID card.
 - [class PKJapanIndividualNumberCardMetadata](pkjapanindividualnumbercardmetadata.md)

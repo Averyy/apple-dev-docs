@@ -1,6 +1,6 @@
 # CKSubscription
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: class
 
 An abstract base class for subscriptions.
@@ -76,6 +76,7 @@ APNs limits the size of a push notification’s payload and CloudKit may omit ke
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -87,4 +88,4 @@ APNs limits the size of a push notification’s payload and CloudKit may omit ke
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/cksubscription)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/cksubscription)*

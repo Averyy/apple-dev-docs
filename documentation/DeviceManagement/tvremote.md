@@ -9,8 +9,6 @@ The payload you use to configure the Apple TV remote.
 - iOS 11.3+
 - iPadOS 11.3+
 - tvOS 11.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,17 +24,17 @@ Specify `com.apple.tvremote` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, Shared iPad, tvOS |
-| User Channel | Shared iPad |
-| Allow Manual Install | iOS, tvOS |
-| Requires Supervision | iOS, tvOS |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, Shared iPad, tvOS |
+| User channel | Shared iPad |
+| Allow manual install | iOS, tvOS |
+| Requires supervision | iOS, tvOS |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

@@ -17,6 +17,7 @@ The order in which the emitter’s particles are rendered.
 ## Declaration
 
 ```swift
+@MainActor
 var particleRenderOrder: SKParticleRenderOrder { get set }
 ```
 

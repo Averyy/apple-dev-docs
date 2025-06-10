@@ -47,6 +47,7 @@ protocol NFCReaderSessionProtocol : NSObjectProtocol
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 ### Conforming Types
 - [NFCNDEFReaderSession](nfcndefreadersession.md)
+- [NFCPaymentTagReaderSession](nfcpaymenttagreadersession.md)
 - [NFCReaderSession](nfcreadersession-swift.class.md)
 - [NFCTagReaderSession](nfctagreadersession.md)
 - [NFCVASReaderSession](nfcvasreadersession.md)

@@ -1,6 +1,6 @@
 # webView(_:resource:didReceive:from:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Invoked after a resource has been loaded.

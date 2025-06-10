@@ -1,6 +1,6 @@
 # init(decorative:variableValue:bundle:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: init
 
 Creates an unlabeled, decorative image, with a variable value.

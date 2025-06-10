@@ -10,6 +10,7 @@ Specifies the mode of clipping for a portal.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -28,16 +29,11 @@ With [`PortalComponent.ClippingMode.plane(_:)`](portalcomponent/clippingmode-swi
 
 ## Topics
 
-### Operators
-- [static func == (PortalComponent.ClippingMode, PortalComponent.ClippingMode) -> Bool](portalcomponent/clippingmode-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [PortalComponent.ClippingMode.disabled](portalcomponent/clippingmode-swift.enum/disabled.md)
   Disables clipping of the contents within the portal.
 - [PortalComponent.ClippingMode.plane(_:)](portalcomponent/clippingmode-swift.enum/plane(_:).md)
   Clips the contents within the portal by the edge of the plane.
-### Default Implementations
-- [Equatable Implementations](portalcomponent/clippingmode-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

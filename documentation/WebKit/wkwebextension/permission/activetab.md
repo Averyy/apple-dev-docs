@@ -1,6 +1,6 @@
 # activeTab
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A request indicating that when a person interacts with the extension, the system grants extra permissions for the active tab only.

@@ -24,7 +24,7 @@ case accountTemporarilyUnavailable
 
 You receive this error when the user’s iCloud account is available, but isn’t ready to support CloudKit operations. Don’t delete any cached data and don’t enqueue any additional CloudKit operations.
 
-Checking the account status after the operation fails, assuming there are no other changes to the account’s status, returns [`CKAccountStatus.temporarilyUnavailable`](ckaccountstatus/temporarilyunavailable.md). Use the [`CKAccountChanged`](https://developer.apple.com/documentation/foundation/nsnotification/name/1399172-ckaccountchanged) notification to listen for future account status changes, and retry the operation after the status becomes [`CKAccountStatus.available`](ckaccountstatus/available.md).
+Checking the account status after the operation fails, assuming there are no other changes to the account’s status, returns [`CKAccountStatus.temporarilyUnavailable`](ckaccountstatus/temporarilyunavailable.md). Use the [`CKAccountChanged`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/CKAccountChanged) notification to listen for future account status changes, and retry the operation after the status becomes [`CKAccountStatus.available`](ckaccountstatus/available.md).
 
 ## See Also
 

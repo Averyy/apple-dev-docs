@@ -48,6 +48,7 @@ Use these flags in calls to the [`SecTrustSetOptions(_:_:)`](sectrustsetoptions(
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 

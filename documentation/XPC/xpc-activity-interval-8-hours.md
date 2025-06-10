@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_INTERVAL_8_HOURS
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A constant that represents an 8-hour time interval.

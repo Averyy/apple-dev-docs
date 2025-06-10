@@ -14,8 +14,6 @@ The macOS 13 SDK provides support to develop apps for Mac computers running macO
 
 > ❗ **Important**: Update to macOS Ventura 13 beta 6 or later before installing firmware updates for Apple Studio Display. (97624990)
 
-Update to macOS Ventura 13 beta 6 or later before installing firmware updates for Apple Studio Display. (97624990)
-
 ##### Appkit
 
 - See [`AppKit Release Notes for macOS Ventura 13`](appkit-release-notes-for-macos-13.md).

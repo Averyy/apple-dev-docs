@@ -1,6 +1,6 @@
 # frameDropped
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 A flag that indicates the decode operation dropped a frame.

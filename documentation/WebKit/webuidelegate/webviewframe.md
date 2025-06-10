@@ -1,6 +1,6 @@
 # webViewFrame(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the frame rectangle of a web view’s window.

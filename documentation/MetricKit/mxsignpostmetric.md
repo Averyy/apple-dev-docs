@@ -1,6 +1,6 @@
 # MXSignpostMetric
 
-**Framework**: Metrickit  
+**Framework**: MetricKit  
 **Kind**: class
 
 An object representing a custom metric.
@@ -9,6 +9,7 @@ An object representing a custom metric.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
+- macOS 10.15+
 - visionOS 1.0+
 
 ## Declaration
@@ -67,4 +68,4 @@ Custom metrics are a type of signpost saved to custom OS logs created using [`ma
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MetricKit/mxsignpostmetric)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metrickit/mxsignpostmetric)*

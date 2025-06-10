@@ -1,13 +1,13 @@
 # Pass.NFC
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that represents the near-field communication (NFC) payload the device passes to an Apple Pay terminal.
 
 **Availability**:
 - iOS 9.0+
-- iPadOS 6.0+
+- iPadOS 9.0+
 - watchOS 2.0+
 
 ## Declaration

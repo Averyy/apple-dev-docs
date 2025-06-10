@@ -35,6 +35,7 @@ If the [`prepare(using:updateHandler:)`](paymentcardreader/prepare(using:updateh
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

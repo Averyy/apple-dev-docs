@@ -1,6 +1,6 @@
 # CFBundleIconFiles
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 The names of the bundle’s icon image files.

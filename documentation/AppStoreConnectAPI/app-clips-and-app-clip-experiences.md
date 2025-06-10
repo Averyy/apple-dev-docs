@@ -1,6 +1,6 @@
 # App Clips and App Clip Experiences
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Read App Clip information and manage App Clip experiences.
 
@@ -12,7 +12,7 @@ Creating and managing default and advanced App Clip experiences using the [`App 
 - Advanced App Clip experiences
 - App Clip experiences for testers
 
-If you’re new to creating an App Clip, see [`App Clips`](https://developer.apple.com/documentation/AppClip) and [`Human Interface Guidelines > App Clips`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/introduction/). For more information about creating App Clip experiences, see [`Configuring the launch experience of your App Clip`](https://developer.apple.com/documentation/AppClip/configuring-the-launch-experience-of-your-app-clip).
+If you’re new to creating an App Clip, see [`App Clips`](https://developer.apple.com/documentation/AppClip) and [`Human Interface Guidelines > App Clips`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/introduction/). For more information about creating App Clip experiences, see [`Configuring App Clip experiences`](https://developer.apple.com/documentation/AppClip/configuring-the-launch-experience-of-your-app-clip).
 
 ##### Review App Store Connect Api Usage
 
@@ -107,4 +107,4 @@ Verifying that the launch experience of the App Clip is free of errors is a key 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/app-clips-and-app-clip-experiences)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/app-clips-and-app-clip-experiences)*

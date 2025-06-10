@@ -16,6 +16,10 @@ Get all App Clip invocations you configure for testing for a specific build bund
   Get the debug status of the domain you associate with your App Clip for a specific build bundle.
 - [List All File Sizes for a Build Bundle](get-v1-buildbundles-_id_-buildbundlefilesizes.md)
   Get all file sizes for a specific build bundle.
+- [GET /v1/buildBundles/{id}/relationships/appClipDomainCacheStatus](get-v1-buildbundles-_id_-relationships-appclipdomaincachestatus.md)
+- [GET /v1/buildBundles/{id}/relationships/appClipDomainDebugStatus](get-v1-buildbundles-_id_-relationships-appclipdomaindebugstatus.md)
+- [GET /v1/buildBundles/{id}/relationships/betaAppClipInvocations](get-v1-buildbundles-_id_-relationships-betaappclipinvocations.md)
+- [GET /v1/buildBundles/{id}/relationships/buildBundleFileSizes](get-v1-buildbundles-_id_-relationships-buildbundlefilesizes.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # accentColor(_:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Sets the accent color for this view and the views it contains.

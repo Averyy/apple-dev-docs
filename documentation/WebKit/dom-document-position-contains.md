@@ -1,6 +1,6 @@
 # DOM_DOCUMENT_POSITION_CONTAINS
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

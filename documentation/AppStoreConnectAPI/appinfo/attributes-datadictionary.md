@@ -1,6 +1,6 @@
 # AppInfo.Attributes
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: dictionary
 
 Attributes that describe an App Infos resource.
@@ -16,9 +16,9 @@ object AppInfo.Attributes
 
 ## Mentions
 
-- [App Store Connect API 3.8 release notes](app-store-connect-api-3-8-release-notes.md)
-- [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
 - [App Store Connect API 3.3 release notes](app-store-connect-api-3-3-release-notes.md)
+- [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
+- [App Store Connect API 3.8 release notes](app-store-connect-api-3-8-release-notes.md)
 
 ##### Discussion
 

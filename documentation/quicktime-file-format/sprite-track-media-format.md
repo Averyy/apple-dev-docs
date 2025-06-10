@@ -8,8 +8,6 @@ A media format for that stores sprite track information in atoms.
 
 > ❗ **Important**: Sprite media is deprecated in the QuickTime file format. The information that follows documents existing content containing sprite media and should not be used for new development.
 
-Sprite media is deprecated in the QuickTime file format. The information that follows documents existing content containing sprite media and should not be used for new development.
-
 The sprite track media format is hierarchical and based on QT atoms and atom containers. A sprite track is defined by one or more key frame samples, each followed by any number of override samples. A key frame sample and its subsequent override samples define a scene in the sprite track. A key frame sample is a QT atom container that contains atoms defining the sprites in the scene and their initial properties. The override samples are other QT atom containers that contain atoms that modify sprite properties, thereby animating the sprites in the scene. In addition to defining properties for individual sprites, you can also define properties that apply to an entire sprite track.
 
 The QT atom container contains one child atom for each sprite in the key frame sample. Each sprite atom has a type of `kSpriteAtomType`. The sprite IDs are numbered from `1` to the number of sprites defined by the key frame sample (`numSprites`).
@@ -33,8 +31,6 @@ This section describes some of the atom types and IDs used to extend the sprite 
 A complete description of the grammar for sprite media handler samples, including action sprite extensions, is included in the section [`Sprite media handler track properties QT atom container format`](sprite_media_handler_track_properties_qt_atom_container_format.md).
 
 > ❗ **Important**: Some sprite track property atoms were added in QuickTime 4. In particular, you must set the `kSpriteTrackPropertyHasActions` track property in order for your sprite actions to be executed.
-
-Some sprite track property atoms were added in QuickTime 4. In particular, you must set the `kSpriteTrackPropertyHasActions` track property in order for your sprite actions to be executed.
 
 #### Sprite Track Property Atoms
 

@@ -74,9 +74,11 @@ Use the data in the reports to help improve the performance of your iOS app, mac
   An object representing metrics about the responsiveness of the app to user interaction.
 - [class MXHangDiagnostic](mxhangdiagnostic.md)
   An object representing a diagnostic report for an app that is too busy to handle user input responsively.
-### Disk access metrics
+### Disk usage metrics
 - [class MXDiskIOMetric](mxdiskiometric.md)
   An object representing metrics about disk usage.
+- [class MXDiskSpaceUsageMetric](mxdiskspaceusagemetric.md)
+  An object representing metrics about your app’s disk space usage.
 - [class MXDiskWriteExceptionDiagnostic](mxdiskwriteexceptiondiagnostic.md)
   An object representing a diagnostic report for a disk write exception.
 ### Custom metrics

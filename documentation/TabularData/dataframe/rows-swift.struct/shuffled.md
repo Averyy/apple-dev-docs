@@ -1,6 +1,6 @@
 # shuffled()
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns the elements of the sequence, shuffled.

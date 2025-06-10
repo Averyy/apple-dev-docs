@@ -1,6 +1,6 @@
 # WKUserScriptInjectionTime
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 Constants for the times at which to inject script content into a webpage.
@@ -36,6 +36,7 @@ enum WKUserScriptInjectionTime
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

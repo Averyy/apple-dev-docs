@@ -1,6 +1,6 @@
 # totalEnergyBurned
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: property
 
 The total active energy burned during the workout.

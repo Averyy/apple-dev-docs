@@ -9,7 +9,8 @@
 ## Declaration
 
 ```swift
-static func faceDown(parentID: EquipmentIdentifier, seatControl: ControllingSeats = .any, pose: TableVisualState.Pose2D = .identity, entity: Entity) -> CardState
+@MainActor
+@preconcurrency static func faceDown(parentID: EquipmentIdentifier, seatControl: ControllingSeats = .any, pose: TableVisualState.Pose2D = .identity, entity: Entity) -> CardState
 ```
 
 ## See Also

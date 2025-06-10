@@ -12,6 +12,7 @@ A completion handler block for a search operation.
 - macOS ?+
 - tvOS ?+
 - visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

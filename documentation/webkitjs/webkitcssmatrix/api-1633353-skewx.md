@@ -1,6 +1,6 @@
 # skewX
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Specifies a skew transformation along the x-axis by the given angle.

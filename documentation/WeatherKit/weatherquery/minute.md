@@ -1,6 +1,6 @@
 # minute
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The minute forecast query.

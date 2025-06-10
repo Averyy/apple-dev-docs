@@ -27,8 +27,6 @@ A minimum of two relationships must be specified per axis. If you specify constr
 
 > ❗ **Important**:  It is possible to create constraints that result in circular references to the same attributes. In cases where the layout is unable to be computed the behavior is undefined.
 
- It is possible to create constraints that result in circular references to the same attributes. In cases where the layout is unable to be computed the behavior is undefined.
-
 ## Topics
 
 ### Create a New Constraint

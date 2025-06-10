@@ -3,7 +3,7 @@
 **Framework**: FinanceKit  
 **Kind**: property
 
-An updated history token.
+An updated history token that you can use to query more historical data.
 
 **Availability**:
 - iOS 17.4+

@@ -1,6 +1,6 @@
 # CURRENT_QUERY
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

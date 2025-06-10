@@ -56,6 +56,9 @@ After you set these keys, other apps can open and edit the contents of your `Doc
   An item’s capabilities, which define the actions that the user can perform in the document browser.
 - [struct NSFileProviderTypeAndCreator](nsfileprovidertypeandcreator.md)
   A structure that contains the file type and file creator codes for an item.
+### Cloud search
+- [protocol NSFileProviderSearching](nsfileprovidersearching.md)
+  A protocol you implement to support searching in your file provider.
 ### Domains
 - [class NSFileProviderDomain](nsfileproviderdomain.md)
   A File Provider extension’s domain.

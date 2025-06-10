@@ -1,6 +1,6 @@
 # localizedDescription
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 Retrieve the localized description for this error.

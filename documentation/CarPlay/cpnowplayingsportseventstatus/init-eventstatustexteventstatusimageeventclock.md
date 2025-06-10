@@ -13,6 +13,7 @@ Initialize an event status with optional event status text, an optional event st
 ## Declaration
 
 ```swift
+@MainActor
 init(eventStatusText: [String]?, eventStatusImage: UIImage?, eventClock: CPNowPlayingSportsClock?)
 ```
 

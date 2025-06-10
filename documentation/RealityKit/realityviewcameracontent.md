@@ -10,6 +10,7 @@ The content of a reality view that is displayed through a camera.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -35,21 +36,16 @@ You can use `RealityViewCameraContent` to add and remove entities, subscribe to 
   The active camera for the RealityKit scene.
 - [var cameraTarget: Entity?](realityviewcameracontent/cameratarget.md)
   The entity which an orbit camera targets.
-- [var entities: RealityViewEntityCollection](realityviewcameracontent/entities-swift.property.md)
+- [var entities: RealityViewEntityCollection](realityviewcameracontent/entities.md)
   A collection of RealityKit entities that this view content renders within the scene.
 - [var environment: RealityViewEnvironment](realityviewcameracontent/environment.md)
   The view’s background and default lighting properties.
 - [var renderingEffects: RealityViewRenderingEffects](realityviewcameracontent/renderingeffects.md)
   The rendering options that you use to selectively enable or disable certain rendering effects.
 ### Instance Methods
+- [func animate(body: () -> Void, completion: (() -> Void)?)](realityviewcameracontent/animate(body:completion:).md)
 - [func subscribe<E>(to: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?, (E) -> Void) -> EventSubscription](realityviewcameracontent/subscribe(to:on:componenttype:_:).md)
   Subscribes to an event type, optionally limited to events affecting a source entity or scene, or a specific component type for component events.
-### Type Aliases
-- [RealityViewCameraContent.Entities](realityviewcameracontent/entities-swift.typealias.md)
-  The type of collection used for `entities`.
-### Default Implementations
-- [RealityCoordinateSpaceProjecting Implementations](realityviewcameracontent/realitycoordinatespaceprojecting-implementations.md)
-- [RealityViewContentProtocol Implementations](realityviewcameracontent/realityviewcontentprotocol-implementations.md)
 
 ## Relationships
 
@@ -70,6 +66,8 @@ You can use `RealityViewCameraContent` to add and remove entities, subscribe to 
   A view that represents the default placeholder for a RealityView.
 - [struct RealityViewEntityCollection](realityviewentitycollection.md)
   A collection of entities in a RealityView.
+- [struct RealityViewLayoutOption](realityviewlayoutoption.md)
+  Specifies the frame sizing and content alignment option for`RealityView`.
 - [protocol EntityCollection](entitycollection.md)
   An ordered, mutable collection of entities.
 

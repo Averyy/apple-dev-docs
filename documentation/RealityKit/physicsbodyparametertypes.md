@@ -10,6 +10,7 @@ Defines which rigid body inputs are required by a force effect’s update handle
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -23,15 +24,8 @@ struct PhysicsBodyParameterTypes
 ### Initializers
 - [init(rawValue: UInt32)](physicsbodyparametertypes/init(rawvalue:).md)
 ### Instance Properties
-- [let rawValue: UInt32](physicsbodyparametertypes/rawvalue-swift.property.md)
+- [let rawValue: UInt32](physicsbodyparametertypes/rawvalue.md)
   The backing storage for force effect inputs.
-### Type Aliases
-- [PhysicsBodyParameterTypes.ArrayLiteralElement](physicsbodyparametertypes/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [PhysicsBodyParameterTypes.Element](physicsbodyparametertypes/element.md)
-  The element type of the option set.
-- [PhysicsBodyParameterTypes.RawValue](physicsbodyparametertypes/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let angularVelocity: PhysicsBodyParameterTypes](physicsbodyparametertypes/angularvelocity.md)
   The angular velocity of each rigid body.
@@ -47,11 +41,6 @@ struct PhysicsBodyParameterTypes
   The center of mass of each rigid body relative to the effect origin.
 - [static let velocity: PhysicsBodyParameterTypes](physicsbodyparametertypes/velocity.md)
   The linear velocity of each rigid body.
-### Default Implementations
-- [Equatable Implementations](physicsbodyparametertypes/equatable-implementations.md)
-- [OptionSet Implementations](physicsbodyparametertypes/optionset-implementations.md)
-- [RawRepresentable Implementations](physicsbodyparametertypes/rawrepresentable-implementations.md)
-- [SetAlgebra Implementations](physicsbodyparametertypes/setalgebra-implementations.md)
 
 ## Relationships
 

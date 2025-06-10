@@ -1,6 +1,6 @@
 # Metadata
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 Descriptive information about the weather data.

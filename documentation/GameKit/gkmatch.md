@@ -22,6 +22,7 @@ class GKMatch
 ## Mentions
 
 - [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Creating activities for your game](creating-activities-for-your-game.md)
 - [Assigning players to teams using rules](assigning-players-to-teams-using-rules.md)
 
 #### Overview

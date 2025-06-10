@@ -1,6 +1,6 @@
 # Customizing Logging Behavior While Debugging
 
-**Framework**: Os
+**Framework**: os
 
 Control which log events are recorded.
 

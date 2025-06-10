@@ -1,6 +1,6 @@
 # QLPreviewController
 
-**Framework**: Quicklook  
+**Framework**: Quick Look  
 **Kind**: class
 
 A specialized view controller for previewing an item.
@@ -109,4 +109,4 @@ In addition, the system doesn’t display a live preview if you embed the `QLPre
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/QuickLook/qlpreviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/quicklook/qlpreviewcontroller)*

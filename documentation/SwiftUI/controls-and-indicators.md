@@ -31,6 +31,7 @@ Use these built-in controls and indicators when composing custom views, and styl
   A value that describes the purpose of a button.
 - [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
+- [struct ButtonSizing](buttonsizing.md)
 ### Creating special-purpose buttons
 - [struct EditButton](editbutton.md)
   A button that toggles the edit mode environment value.
@@ -98,23 +99,23 @@ Use these built-in controls and indicators when composing custom views, and styl
   Sets the style for progress views in this view.
 - [struct DefaultDateProgressLabel](defaultdateprogresslabel.md)
   The default type of the current value label when used by a date-relative progress view.
+- [struct DefaultButtonLabel](defaultbuttonlabel.md)
+  The default label to use for a button.
 ### Indicating missing content
 - [struct ContentUnavailableView](contentunavailableview.md)
   An interface, consisting of a label and additional content, that you display when the content of your app is unavailable to users.
 ### Providing haptic feedback
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T) -> some View](view/sensoryfeedback(_:trigger:).md)
   Plays the specified `feedback` when the provided `trigger` value changes.
-- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](view/sensoryfeedback(trigger:_:).md)
+- [func sensoryFeedback(trigger:_:)](view/sensoryfeedback(trigger:_:).md)
   Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T, condition: (T, T) -> Bool) -> some View](view/sensoryfeedback(_:trigger:condition:).md)
   Plays the specified `feedback` when the provided `trigger` value changes and the `condition` closure returns `true`.
 - [struct SensoryFeedback](sensoryfeedback.md)
   Represents a type of haptic and/or audio feedback that can be played.
 ### Sizing controls
-- [func controlSize(ControlSize) -> some View](view/controlsize(_:).md)
+- [func controlSize(_:)](view/controlsize(_:).md)
   Sets the size for controls within this view.
-- [var controlSize: ControlSize](environmentvalues/controlsize.md)
-  The size to apply to controls within a view.
 - [enum ControlSize](controlsize.md)
   The size classes, like regular or small, that you can apply to controls within a view.
 

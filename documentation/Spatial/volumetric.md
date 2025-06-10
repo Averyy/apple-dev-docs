@@ -62,6 +62,8 @@ protocol Volumetric
   A set of methods that defines the interface to shear Spatial entities.
 - [protocol Translatable3D](translatable3d.md)
   A set of methods that defines the interface to translate Spatial entities.
+- [protocol ClampableWithinRectProtocol](clampablewithinrectprotocol.md)
+  A set of methods that defines the interface for Spatial entities that can be clamped to a volume.
 
 
 ---

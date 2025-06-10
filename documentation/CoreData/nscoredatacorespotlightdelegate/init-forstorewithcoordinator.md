@@ -1,6 +1,6 @@
 # init(forStoreWith:coordinator:)
 
-**Framework**: Coredata  
+**Framework**: Core Data  
 **Kind**: init
 
 Creates a Core Spotlight delegate with the specified store description and coordinator.

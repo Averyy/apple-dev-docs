@@ -1,6 +1,6 @@
 # Adding a depth effect to text in visionOS
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Create text that expands out of a window using stacked SwiftUI text views.
 
@@ -146,4 +146,4 @@ The `animateWithSpringEffect()` method creates a spring animation with `stiffnes
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/adding-a-depth-effect-to-text-in-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/adding-a-depth-effect-to-text-in-visionos)*

@@ -10,6 +10,7 @@ The componentâ€™s video renderer.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -30,8 +31,6 @@ Pass this renderer to the component as a parameter in the initializer; you canâ€
   The screen entity size of the current video player in meters.
 - [var screenVideoDimension: SIMD2<Float>](videoplayercomponent/screenvideodimension.md)
   The video resolution size.
-- [var viewingMode: VideoPlaybackController.ViewingMode?](videoplayercomponent/viewingmode.md)
-  The current content-viewing mode for video playback.
 
 
 ---

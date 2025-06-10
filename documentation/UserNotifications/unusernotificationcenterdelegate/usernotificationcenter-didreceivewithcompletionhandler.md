@@ -1,6 +1,6 @@
 # userNotificationCenter(_:didReceive:withCompletionHandler:)
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: method
 
 Asks the delegate to process the user’s response to a delivered notification.
@@ -21,22 +21,14 @@ optional func userNotificationCenter(_ center: UNUserNotificationCenter, didRece
 
 ## Mentions
 
-- [Handling notifications and notification-related actions](handling-notifications-and-notification-related-actions.md)
 - [Declaring your actionable notification types](declaring-your-actionable-notification-types.md)
+- [Handling notifications and notification-related actions](handling-notifications-and-notification-related-actions.md)
 
 #### Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 optional func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse) async
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-optional func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse) async
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
 Use this method to process the user’s response to a notification. If the user selected one of your app’s custom actions, the `response` parameter contains the identifier for that action. (The response can also indicate that the user dismissed the notification interface, or launched your app, without selecting a custom action.) At the end of your implementation, call the `completionHandler` block to let the system know that you are done processing the user’s response. If you do not implement this method, your app never responds to custom actions.
 

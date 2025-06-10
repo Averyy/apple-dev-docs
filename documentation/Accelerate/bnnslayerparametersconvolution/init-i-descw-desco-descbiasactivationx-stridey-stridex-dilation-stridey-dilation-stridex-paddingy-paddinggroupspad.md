@@ -33,8 +33,6 @@ If `groups` is greater than 1, the layer uses input, output, weights, and bias f
 
 > ❗ **Important**:  Convolution layers only support arrays with a data type of `float`, `float16`, `int8`, or `uint8`.
 
- Convolution layers only support arrays with a data type of `float`, `float16`, `int8`, or `uint8`.
-
 ## Parameters
 
 - `i_desc`: The descriptor of the input. The data type of the input must be  .

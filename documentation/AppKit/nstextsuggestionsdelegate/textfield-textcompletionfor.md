@@ -1,6 +1,6 @@
 # textField(_:textCompletionFor:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method  
 **Required**: Yes
 

@@ -26,8 +26,6 @@ The process name is used to register application defaults and is used in error m
 
 > ⚠️ **Warning**:  User defaults and other aspects of the environment might depend on the process name, so be very careful if you change it. Setting the process name in this manner is not thread safe.
 
- User defaults and other aspects of the environment might depend on the process name, so be very careful if you change it. Setting the process name in this manner is not thread safe.
-
 ## See Also
 
 - [var arguments: [String]](processinfo/arguments.md)

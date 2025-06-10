@@ -13,6 +13,7 @@ The abstract base class that Now Playing template buttons use.
 ## Declaration
 
 ```swift
+@MainActor
 class CPNowPlayingButton
 ```
 
@@ -53,6 +54,7 @@ You don’t use this class directly, or create your own subclasses. Instead, you
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

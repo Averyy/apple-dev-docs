@@ -1,6 +1,6 @@
 # confirmationDialog(_:isPresented:titleVisibility:actions:)
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Presents a confirmation dialog when a given condition is true, using a localized string key for the title.

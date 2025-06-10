@@ -3,7 +3,7 @@
 **Framework**: Vision  
 **Kind**: property
 
-A Boolean value that represents images that aren’t necessarily of poor image quality but may not have memorable or exciting content.
+A Boolean value that represents images that are not necessarily of poor image quality, but may not have memorable or exciting content.
 
 **Availability**:
 - iOS 18.0+
@@ -24,7 +24,7 @@ let isUtility: Bool
 - [enum RequestDescriptor](requestdescriptor.md)
   A type that describes the request and revision combination.
 - [let overallScore: Float](imageaestheticsscoresobservation/overallscore.md)
-  A score which incorporates aesthetic score, failure score and utility labels.
+  A score which incorporates aesthetic score, failure score, and utility labels.
 
 
 ---

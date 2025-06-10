@@ -6,6 +6,7 @@
 Creates a collection of data providers that contains the data providers you supply.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

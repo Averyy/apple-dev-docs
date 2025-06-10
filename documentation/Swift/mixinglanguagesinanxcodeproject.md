@@ -24,4 +24,4 @@ Before you run the sample code project in Xcode, ensure you’re using macOS 14.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/mixinglanguagesinanxcodeproject)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/mixinglanguagesinanxcodeproject)*

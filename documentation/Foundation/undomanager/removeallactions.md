@@ -17,6 +17,7 @@ Clears the undo and redo stacks and reenables the manager.
 ## Declaration
 
 ```swift
+@MainActor
 func removeAllActions()
 ```
 

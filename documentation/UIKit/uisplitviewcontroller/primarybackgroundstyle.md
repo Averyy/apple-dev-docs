@@ -1,6 +1,6 @@
 # primaryBackgroundStyle
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The background style of the primary view controller.

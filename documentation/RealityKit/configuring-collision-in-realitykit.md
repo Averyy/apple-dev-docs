@@ -1,6 +1,6 @@
 # Configuring Collision in RealityKit
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Use collision groups and collision filters to control which objects collide.
 
@@ -73,4 +73,4 @@ Requires Xcode 16.2, iOS 18, and an iOS device with an A9 or later processor. AR
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/configuring-collision-in-realitykit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/configuring-collision-in-realitykit)*

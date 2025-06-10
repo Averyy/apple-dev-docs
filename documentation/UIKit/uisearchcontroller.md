@@ -1,6 +1,6 @@
 # UISearchController
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A view controller that manages the display of search results based on interactions with a search bar.
@@ -113,6 +113,7 @@ To customize the presentation or dismissal of the search results controller, set
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)
@@ -142,4 +143,4 @@ To customize the presentation or dismissal of the search results controller, set
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uisearchcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uisearchcontroller)*

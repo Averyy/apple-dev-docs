@@ -1,6 +1,6 @@
 # photoSettingsForSceneMonitoring
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A photo settings object that controls how the photo output detects and handles automatic flash and stabilization modes.

@@ -1,6 +1,6 @@
 # clearsOnBeginEditing
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A Boolean value that determines whether the text field removes old text when editing begins.

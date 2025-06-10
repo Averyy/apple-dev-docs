@@ -1,6 +1,6 @@
 # UNNotificationAttachment
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 A media file associated with a notification.

@@ -1,6 +1,6 @@
 # AppIntent
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: protocol
 
 An interface for providing an app-specific capability that people invoke from system experiences like Siri and the Shortcuts app.
@@ -8,10 +8,10 @@ An interface for providing an app-specific capability that people invoke from sy
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -23,10 +23,11 @@ protocol AppIntent : PersistentlyIdentifiable, _SupportsAppDependencies, Sendabl
 ## Mentions
 
 - [Making actions and content discoverable and widely available](making-actions-and-content-discoverable-and-widely-available.md)
-- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
 - [Creating your first app intent](creating-your-first-app-intent.md)
 - [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
+- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
 - [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+- [Displaying static and interactive snippets](displaying-static-and-interactive-snippets.md)
 
 #### Overview
 
@@ -145,12 +146,33 @@ struct OrderSoupIntent: AppIntent {
 - [AppIntent.Summary](appintent/summary.md)
 - [AppIntent.Switch](appintent/switch.md)
 - [AppIntent.When](appintent/when.md)
+### Instance Methods
+- [func continueInForeground(IntentDialog?, alwaysConfirm: Bool) async throws](appintent/continueinforeground(_:alwaysconfirm:).md)
+  A method you call to ask a person to continue an action in the foreground.
+- [func needsToContinueInForegroundError(IntentDialog?, alwaysConfirm: Bool) -> AppIntentError](appintent/needstocontinueinforegrounderror(_:alwaysconfirm:).md)
+  A method you call to ask a person to continue an intent’s action in the foreground after it encounters an error.
+- [func requestChoice(between: [IntentChoiceOption], dialog: IntentDialog?) async throws -> IntentChoiceOption](appintent/requestchoice(between:dialog:).md)
+  Pauses the app intent to request a person to choose from several options.
+- [func requestChoice<Content>(between: [IntentChoiceOption], dialog: IntentDialog?, content: () -> Content) async throws -> IntentChoiceOption](appintent/requestchoice(between:dialog:content:).md)
+  Pauses the app intent to request a person to choose from several options.
+- [func requestChoice<Content>(between: [IntentChoiceOption], dialog: IntentDialog?, view: Content) async throws -> IntentChoiceOption](appintent/requestchoice(between:dialog:view:).md)
+  Pauses the app intent to request a person to choose from several options.
+- [func requestConfirmation<Snippet>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, snippetIntent: Snippet) async throws](appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:snippetintent:)-3vewj.md)
+- [func requestConfirmation<Snippet>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, snippetIntent: Snippet) async throws -> Snippet.PerformResult.Value](appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:snippetintent:)-jxb8.md)
+  Requests user confirmation before performing the app intent.
+### Type Aliases
+- [AppIntent.Option](appintent/option.md)
+  A convenience type alias that represents a choice option within the scope of an app intent.
+### Type Properties
+- [static var supportedModes: IntentModes](appintent/supportedmodes.md)
+  Defines the supported modes that describe the behavior of your app intent.
 
 ## Relationships
 
 ### Inherits From
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Inherited By
 - [AssistantIntent](assistantintent.md)
 - [AssistantSchemaIntent](assistantschemaintent.md)
@@ -175,12 +197,17 @@ struct OrderSoupIntent: AppIntent {
 - [SetFocusFilterIntent](setfocusfilterintent.md)
 - [SetValueIntent](setvalueintent.md)
 - [ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
+- [SnippetIntent](snippetintent.md)
 - [StartDiveIntent](startdiveintent.md)
 - [StartWorkoutIntent](startworkoutintent.md)
 - [SystemIntent](systemintent.md)
+- [TargetContentProvidingIntent](targetcontentprovidingintent.md)
+- [UISceneAppIntent](uisceneappintent.md)
 - [URLRepresentableIntent](urlrepresentableintent.md)
+- [UndoableIntent](undoableintent.md)
 - [WidgetConfigurationIntent](widgetconfigurationintent.md)
 ### Conforming Types
+- [EmptySnippetIntent](emptysnippetintent.md)
 - [OpenURLIntent](openurlintent.md)
 
 ## See Also
@@ -219,4 +246,4 @@ struct OrderSoupIntent: AppIntent {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/appintent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/appintent)*

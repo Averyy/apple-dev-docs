@@ -23,7 +23,7 @@ var compositingFilter: Any? { get set }
 
 The default value of this property is `nil`, which causes the layer to use source-over compositing. Although you can use any Core Image filter as a layer’s compositing filter, for best results, use those in the [`CICategoryCompositeOperation`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP30000136-SW71) category.
 
-In macOS, it is possible to modify the filter’s parameters after attaching it to the layer but you must use the layer’s [`setValue(_:forKeyPath:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKeyPath:)) method to do so. For example, to change the `inputRadius` parameter of the filter, you could use code similar to the following:
+In macOS, it is possible to modify the filter’s parameters after attaching it to the layer but you must use the layer’s doc://com.apple.documentation/documentation/objectivec/nsobject/1418139-setvalue method to do so. For example, to change the `inputRadius` parameter of the filter, you could use code similar to the following:
 
 Changing the inputs of the [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter) object directly after it is attached to the layer causes undefined behavior.
 

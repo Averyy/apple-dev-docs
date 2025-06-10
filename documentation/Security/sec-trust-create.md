@@ -25,7 +25,7 @@ A `sec_trust_t` instance.
 #### Discussion
 
 ```None
-  Create an ARC-able `sec_trust_t` instance from a `SecTrustRef`.
+ Create an ARC-able `sec_trust_t` instance from a `SecTrustRef`.
 ```
 
 ## Parameters

@@ -1,6 +1,6 @@
 # searchSuggestions
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A list of suggestions to offer as shortcuts below the search field.
@@ -30,7 +30,7 @@ Provide search suggestions to help people complete their query quickly. Update t
 The presentation of the search suggestions varies according to the platform and [`searchBarPlacement`](uinavigationitem/searchbarplacement-swift.property.md):
 
 - In tvOS, the suggestions appear in a list below the keyboard.
-- In iOS, the suggestions appear in a menu below the search field when the search bar placement is [`UINavigationItem.SearchBarPlacement.inline`](uinavigationitem/searchbarplacement-swift.enum/inline.md), and in a list that overlays the [`searchResultsController`](uisearchcontroller/searchresultscontroller.md) when the search bar placement is [`UINavigationItem.SearchBarPlacement.stacked`](uinavigationitem/searchbarplacement-swift.enum/stacked.md). To prevent the search controller from creating and presenting a search suggestions view controller when the [`searchBarPlacement`](uisearchcontroller/searchbarplacement.md) is [`UINavigationItem.SearchBarPlacement.stacked`](uinavigationitem/searchbarplacement-swift.enum/stacked.md), set [`ignoresSearchSuggestionsForSearchBarPlacementStacked`](uisearchcontroller/ignoressearchsuggestionsforsearchbarplacementstacked.md) to [`true`](https://developer.apple.com/documentation/swift/true) when you create the search controller.
+- In iOS, the suggestions appear in a menu below the search field when the search bar placement is [`inline`](uinavigationitem/searchbarplacement-swift.enum/inline.md), and in a list that overlays the [`searchResultsController`](uisearchcontroller/searchresultscontroller.md) when the search bar placement is [`UINavigationItem.SearchBarPlacement.stacked`](uinavigationitem/searchbarplacement-swift.enum/stacked.md). To prevent the search controller from creating and presenting a search suggestions view controller when the [`searchBarPlacement`](uisearchcontroller/searchbarplacement.md) is [`UINavigationItem.SearchBarPlacement.stacked`](uinavigationitem/searchbarplacement-swift.enum/stacked.md), set [`ignoresSearchSuggestionsForSearchBarPlacementStacked`](uisearchcontroller/ignoressearchsuggestionsforsearchbarplacementstacked.md) to [`true`](https://developer.apple.com/documentation/swift/true) when you create the search controller.
 
 When you assign new suggestions to this property, the suggestions onscreen refresh automatically. When a person selects a suggestion, the system sets this property to `nil` and dismisses the search suggestions menu. Implement [`updateSearchResults(for:selecting:)`](uisearchresultsupdating/updatesearchresults(for:selecting:).md) to execute any necessary updates when a person selects a suggestion.
 

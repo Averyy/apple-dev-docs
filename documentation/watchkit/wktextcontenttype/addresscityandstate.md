@@ -1,6 +1,6 @@
 # addressCityAndState
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The name of a city and state.

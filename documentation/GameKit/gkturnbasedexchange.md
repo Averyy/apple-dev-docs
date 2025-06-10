@@ -22,8 +22,8 @@ class GKTurnBasedExchange
 
 ## Mentions
 
-- [Exchanging data between players in turn-based games](exchanging-data-between-players-in-turn-based-games.md)
 - [Sending messages to players in turn-based games](sending-messages-to-players-in-turn-based-games.md)
+- [Exchanging data between players in turn-based games](exchanging-data-between-players-in-turn-based-games.md)
 
 #### Overview
 

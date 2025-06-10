@@ -1,6 +1,6 @@
 # Updating controls locally and remotely
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Update and reload controls from your app or using push notifications.
 

@@ -12,8 +12,6 @@ A status report of the client’s processed declarations.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,22 +23,26 @@ object StatusManagementDeclarations
 
 The name of the declaration status item is `management.declarations`.
 
+##### Status Item Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| Allowed in device enrollment | iOS, Shared iPad, tvOS, visionOS |
+| Allowed in user enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in local enrollment | NA |
+| Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| Allowed in user scope | macOS, Shared iPad |
+
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object StatusManagementDeclarationsDeclarationsObject](statusmanagementdeclarationsdeclarationsobject.md)
   A collection of the client’s processed declarations.
-- [object StatusManagementDeclarationsDeclarationObject](statusmanagementdeclarationsdeclarationobject.md)
-  A processed declaration for the client.
-- [object StatusManagementDeclarationsStatusReasonObject](statusmanagementdeclarationsstatusreasonobject.md)
-  The details of an error in a status report.
-- [object StatusManagementDeclarationsStatusReason_DetailsObject](statusmanagementdeclarationsstatusreason_detailsobject.md)
-  A dictionary that contains further details about an error.
 
 ## See Also
 
 - [object StatusReport](statusreport.md)
-  A status report of the device’s current state.
 - [object StatusAppManagedList](statusappmanagedlist.md)
   The device’s declarative managed apps.
 - [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)

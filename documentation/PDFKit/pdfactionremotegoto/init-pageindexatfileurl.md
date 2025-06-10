@@ -16,7 +16,7 @@ Initializes the remote go-to action with the specified page index, point, and do
 ## Declaration
 
 ```swift
-init(pageIndex: Int, at point: NSPoint, fileURL url: URL)
+init(pageIndex: Int, at point: CGPoint, fileURL url: URL)
 ```
 
 #### Return Value

@@ -1,6 +1,6 @@
 # children
 
-**Framework**: Modelio  
+**Framework**: Model I/O  
 **Kind**: property
 
 A component that manages this object’s collection of children.
@@ -45,4 +45,4 @@ Container components support fast enumeration and subscripting, so you can treat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ModelIO/mdlobject/children)*
+*[View on Apple Developer](https://developer.apple.com/documentation/modelio/mdlobject/children)*

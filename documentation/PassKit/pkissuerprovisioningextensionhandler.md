@@ -25,8 +25,6 @@ Your app must be installed and the user open the app at least once for the syste
 
 > ❗ **Important**:  Before you can add a payment card provisioning extension you need an entitlement from Apple. For more information on requesting an entitlement, contact apple-pay-inquiries@apple.com.
 
- Before you can add a payment card provisioning extension you need an entitlement from Apple. For more information on requesting an entitlement, contact apple-pay-inquiries@apple.com.
-
 ## Topics
 
 ### Returning extension status

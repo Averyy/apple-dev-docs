@@ -1,6 +1,6 @@
 # value
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The UV Index value.

@@ -1,6 +1,6 @@
 # Objective-C Runtime
 
-**Framework**: Objectivec
+**Framework**: Objective-C Runtime
 
 Describes the macOS Objective-C runtime library support functions and data structures.
 
@@ -274,4 +274,4 @@ Because this isn’t a document about C, it assumes some prior acquaintance with
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ObjectiveC/objective-c-runtime)*
+*[View on Apple Developer](https://developer.apple.com/documentation/objectivec/objective-c-runtime)*

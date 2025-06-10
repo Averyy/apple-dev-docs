@@ -3,14 +3,14 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Add a new model to the container. Returns true if added.
+Add a new model to the container. Returns true if added. Returns false if it already exists.
 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- visionOS ?+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -25,11 +25,11 @@ mutating func insert(_ model: MeshResource.Model) -> Bool
   Number of models.
 - [var isEmpty: Bool](meshmodelcollection/isempty.md)
   True if there are no models.
-- [func remove(id: String) -> MeshResource.Model?](meshmodelcollection/remove(id:).md)
+- [func remove(id:)](meshmodelcollection/remove(id:).md)
   Remove a model by id.
 - [func removeAll()](meshmodelcollection/removeall.md)
   Remove all the models.
-- [func update(MeshResource.Model) -> MeshResource.Model?](meshmodelcollection/update(_:).md)
+- [func update(_:)](meshmodelcollection/update(_:).md)
   Update an existing model. The old model is returned.
 - [subscript(String) -> MeshResource.Model?](meshmodelcollection/subscript(_:)-5xuaf.md)
   Read a model given its id.

@@ -38,6 +38,11 @@ You shouldn’t subclass `AVMetadataObject` directly. Instead, you use one of th
   The duration of the media associated with this metadata object.
 - [var bounds: CGRect](avmetadataobject/bounds.md)
   The bounding rectangle associated with the metadata.
+### Instance Properties
+- [var cinematicVideoFocusMode: AVCaptureDevice.CinematicVideoFocusMode](avmetadataobject/cinematicvideofocusmode.md)
+- [var groupID: Int](avmetadataobject/groupid.md)
+- [var isFixedFocus: Bool](avmetadataobject/isfixedfocus.md)
+- [var objectID: Int](avmetadataobject/objectid.md)
 
 ## Relationships
 
@@ -45,6 +50,8 @@ You shouldn’t subclass `AVMetadataObject` directly. Instead, you use one of th
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Inherited By
 - [AVMetadataBodyObject](avmetadatabodyobject.md)
+- [AVMetadataCatHeadObject](avmetadatacatheadobject.md)
+- [AVMetadataDogHeadObject](avmetadatadogheadobject.md)
 - [AVMetadataFaceObject](avmetadatafaceobject.md)
 - [AVMetadataMachineReadableCodeObject](avmetadatamachinereadablecodeobject.md)
 - [AVMetadataSalientObject](avmetadatasalientobject.md)

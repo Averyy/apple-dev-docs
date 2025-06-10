@@ -5,6 +5,18 @@
 
 Rounds to the nearest integer value, per-channel.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
+#### Overview
+
+Floor(I + 0.5)
+
 #### Parameter Types
 
 ## See Also

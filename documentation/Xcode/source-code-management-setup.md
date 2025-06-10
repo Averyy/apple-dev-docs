@@ -40,4 +40,4 @@ Make sure you have the required permission or role to grant Xcode Cloud access t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/source-code-management-setup)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/source-code-management-setup)*

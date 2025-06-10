@@ -14,7 +14,6 @@ The color of the printed text.
 ## Declaration
 
 ```swift
-@MainActor
 var color: UIColor? { get set }
 ```
 

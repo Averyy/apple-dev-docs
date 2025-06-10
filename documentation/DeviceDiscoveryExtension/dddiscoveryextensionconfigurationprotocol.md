@@ -27,6 +27,7 @@ The [`DDDiscoveryExtensionConfiguration`](dddiscoveryextensionconfiguration.md) 
 ### Inherits From
 - [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [DDDiscoveryExtensionConfiguration](dddiscoveryextensionconfiguration.md)
 

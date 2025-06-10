@@ -46,6 +46,7 @@ struct TreeRegressorModel
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TabularTransformer](tabulartransformer.md)
 - [Transformer](transformer.md)
 

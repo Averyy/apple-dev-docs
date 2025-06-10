@@ -10,6 +10,7 @@ An interface that enables you to configure a virtual camera that you can use to 
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

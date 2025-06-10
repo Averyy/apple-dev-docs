@@ -17,8 +17,8 @@ case web
 
 ## Mentions
 
-- [Distributing your app from your website](distributing-your-app-from-your-website.md)
 - [Distributing your app on an alternative app marketplace](distributing-your-app-on-an-alternative-marketplace.md)
+- [Distributing your app from your website](distributing-your-app-from-your-website.md)
 
 
 ---

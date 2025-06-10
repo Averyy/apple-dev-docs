@@ -29,8 +29,6 @@ The style dictionary is not consulted for the following keys: `bounds`, `frame`.
 
 > ⚠️ **Warning**:  If the style dictionary or any of its ancestors are modified, the values of the layer’s properties are undefined until the `style` property is reset.
 
- If the style dictionary or any of its ancestors are modified, the values of the layer’s properties are undefined until the `style` property is reset.
-
 ## See Also
 
 - [var contentsGravity: CALayerContentsGravity](calayer/contentsgravity.md)

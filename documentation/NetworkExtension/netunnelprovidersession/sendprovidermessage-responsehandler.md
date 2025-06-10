@@ -1,6 +1,6 @@
 # sendProviderMessage(_:responseHandler:)
 
-**Framework**: Networkextension  
+**Framework**: Network Extension  
 **Kind**: method
 
 Send a message to the Tunnel Provider extension. If the extension is not running, it should be launched to handle the message. If this method can’t start sending the message it reports an error in the `returnError` parameter. If an error occurs while sending the message or returning the result, `nil` should be sent to the response handler as notification.

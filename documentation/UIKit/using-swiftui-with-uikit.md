@@ -1,6 +1,6 @@
 # Using SwiftUI with UIKit
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Learn how to incorporate SwiftUI views into a UIKit app.
 
@@ -16,4 +16,4 @@ Learn how to incorporate SwiftUI views into a UIKit app.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/using-swiftui-with-uikit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/using-swiftui-with-uikit)*

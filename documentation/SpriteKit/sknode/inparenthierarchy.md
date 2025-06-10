@@ -17,6 +17,7 @@ Returns a Boolean value that indicates whether the node is a descendant of the t
 ## Declaration
 
 ```swift
+@MainActor
 func inParentHierarchy(_ parent: SKNode) -> Bool
 ```
 

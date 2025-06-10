@@ -1,6 +1,6 @@
 # Reducing the rendering cost of RealityKit content on visionOS
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Optimize your app’s 3D augmented reality content to render efficiently on visionOS.
 
@@ -127,4 +127,4 @@ The tool provides information about entity counts, physics, animations, particle
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/reducing-the-rendering-cost-of-realitykit-content-on-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/reducing-the-rendering-cost-of-realitykit-content-on-visionos)*

@@ -1,6 +1,6 @@
 # NSScreen
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An object that describes the attributes of a computer’s monitor or screen.
@@ -92,6 +92,9 @@ Create the application object before you use the methods in this class, so that 
   Posted when the color space of the screen has changed.
 ### Synchronizing with the display’s refresh rate
 - [func displayLink(target: Any, selector: Selector) -> CADisplayLink](nsscreen/displaylink(target:selector:).md)
+### Instance Properties
+- [var cgDirectDisplayID: CGDirectDisplayID?](nsscreen/cgdirectdisplayid-8ph5i.md)
+  The CGDirectDisplayID for this screen. This will return nil if there isn’t one and will never return kCGNullDirectDisplay.
 
 ## Relationships
 
@@ -108,4 +111,4 @@ Create the application object before you use the methods in this class, so that 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsscreen)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsscreen)*

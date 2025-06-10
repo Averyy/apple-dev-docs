@@ -1,6 +1,6 @@
 # wind
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The wind speed, direction, and gust.

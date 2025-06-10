@@ -1,6 +1,6 @@
 # Equatable Implementations
 
-**Framework**: Xcuiautomation
+**Framework**: XCUIAutomation
 
 ## Topics
 

@@ -306,9 +306,33 @@ struct SIMD4<Scalar> where Scalar : SIMDScalar
 - [init<Other>(SIMD4<Other>)](simd4/init(_:)-1dme2.md)
   Creates a new vector from the given vector of integers.
 - [init(SCNVector4)](simd4/init(_:)-1f9vo.md)
+- [init(Size3DFloat)](simd4/init(_:)-1tyne.md)
+  Creates a simd packed vector from a Spatial size.
 - [init<Other>(SIMD4<Other>)](simd4/init(_:)-2frw5.md)
   Creates a new vector from the given vector of floating-point values.
+- [init(Rotation3D)](simd4/init(_:)-2lh73.md)
+  Creates a simd packed vector from a Spatial rotation.
+- [init(SphericalCoordinates3DFloat)](simd4/init(_:)-2wwuh.md)
+  Creates a simd packed vector from a Spatial spherical coordinates structure .
+- [init(Vector3D)](simd4/init(_:)-30hiv.md)
+  Creates a simd packed vector from a Spatial vector.
+- [init(Point3D)](simd4/init(_:)-3pxce.md)
+  Creates a simd packed vector from a Spatial point.
 - [init(SCNVector4)](simd4/init(_:)-5dnpp.md)
+- [init(Vector3DFloat)](simd4/init(_:)-5emgw.md)
+  Creates a simd packed vector from a Spatial vector.
+- [init(Point3DFloat)](simd4/init(_:)-5sq49.md)
+  Creates a simd packed vector from a Spatial point.
+- [init(Rotation3DFloat)](simd4/init(_:)-6pjsb.md)
+  Creates a simd packed vector from a Spatial rotation.
+- [init(SphericalCoordinates3D)](simd4/init(_:)-8kyv.md)
+  Creates a simd packed vector from a Spatial spherical coordinates structure .
+- [init(RotationAxis3DFloat)](simd4/init(_:)-97pz3.md)
+  Creates a simd packed vector from a Spatial rotation axis.
+- [init(RotationAxis3D)](simd4/init(_:)-9rzwt.md)
+  Creates a simd packed vector from a Spatial rotation axis.
+- [init(Size3D)](simd4/init(_:)-hfd1.md)
+  Creates a simd packed vector from a Spatial size.
 - [init(SIMD3<Scalar>, Scalar)](simd4/init(_:_:).md)
   A four-element vector created by appending a scalar to a three-element vector.
 - [init(Scalar, Scalar, Scalar, Scalar)](simd4/init(_:_:_:_:).md)
@@ -374,6 +398,7 @@ struct SIMD4<Scalar> where Scalar : SIMDScalar
 - [SIMD](simd.md)
 - [SIMDStorage](simdstorage.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # DOM_CSS_URI
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

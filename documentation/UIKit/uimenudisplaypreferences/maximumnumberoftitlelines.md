@@ -1,6 +1,6 @@
 # maximumNumberOfTitleLines
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The number of lines the menu displays for an item’s title or subtitle before it truncates the text.

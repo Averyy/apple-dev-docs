@@ -54,6 +54,7 @@ For example, when you perform a library sectioned request of albums, the library
 - [Identifiable](../Swift/Identifiable.md)
 - [MusicLibrarySectionRequestable](musiclibrarysectionrequestable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

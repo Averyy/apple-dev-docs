@@ -1,6 +1,6 @@
 # WKInterfaceSemanticContentAttribute.unspecified
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The default value for views. The view is flipped when switching between left-to-right and right-to-left layouts.

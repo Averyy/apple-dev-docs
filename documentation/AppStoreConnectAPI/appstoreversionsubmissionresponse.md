@@ -22,8 +22,6 @@ object AppStoreVersionSubmissionResponse
 
 - [object AppStoreVersionSubmission](appstoreversionsubmission.md)
   The data structure that represents an App Store Version Submissions resource.
-- [object AppStoreVersionSubmissionCreateRequest](appstoreversionsubmissioncreaterequest.md)
-  The request body you use to create an App Store Version Submission.
 
 
 ---

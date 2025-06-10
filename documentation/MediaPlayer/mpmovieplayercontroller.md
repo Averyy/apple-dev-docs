@@ -1,6 +1,6 @@
 # MPMoviePlayerController
 
-**Framework**: Mediaplayer  
+**Framework**: Media Player  
 **Kind**: class
 
 A type of movie player that manages the playback of a movie from a file or a network stream.
@@ -48,7 +48,7 @@ You typically specify the movie you want to play when you create a new `MPMovieP
 
 To facilitate the creation of video bookmarks or chapter links for a long movie, the `MPMoviePlayerController` class defines methods for generating thumbnail images at specific times within a movie. You can request a single thumbnail image using the [`thumbnailImage(atTime:timeOption:)`](mpmovieplayercontroller/thumbnailimage(attime:timeoption:).md) method or request multiple thumbnail images using the [`requestThumbnailImages(atTimes:timeOption:)`](mpmovieplayercontroller/requestthumbnailimages(attimes:timeoption:).md) method.
 
-To play a network stream whose URL requires access credentials, first create an appropriate [`URLCredential`](https://developer.apple.com/documentation/Foundation/URLCredential) object. Do this by calling, for example, the [`init(user:password:persistence:)`](https://developer.apple.com/documentation/foundation/urlcredential/1417977-init) method, as shown here:
+To play a network stream whose URL requires access credentials, first create an appropriate [`URLCredential`](https://developer.apple.com/documentation/Foundation/URLCredential) object. Do this by calling, for example, the [`init(user:password:persistence:)`](https://developer.apple.com/documentation/Foundation/URLCredential/init(user:password:persistence:)) method, as shown here:
 
 ```objc
 NSURLCredential *credential = [[NSURLCredential alloc]
@@ -74,7 +74,7 @@ self.protectionSpace = protectionSpace;
 [protectionSpace release];
 ```
 
-Add the URL credential and the protection space to the [`Singleton`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Singleton.html#//apple_ref/doc/uid/TP40008195-CH49) [`URLCredentialStorage`](https://developer.apple.com/documentation/Foundation/URLCredentialStorage) object. Do this by calling, for example, the [`set(_:for:)`](https://developer.apple.com/documentation/foundation/urlcredentialstorage/1407227-set) method, as shown here:
+Add the URL credential and the protection space to the [`Singleton`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Singleton.html#//apple_ref/doc/uid/TP40008195-CH49) [`URLCredentialStorage`](https://developer.apple.com/documentation/Foundation/URLCredentialStorage) object. Do this by calling, for example, the [`set(_:for:)`](https://developer.apple.com/documentation/Foundation/URLCredentialStorage/set(_:for:)) method, as shown here:
 
 ```objc
 [[NSURLCredentialStorage sharedCredentialStorage]
@@ -239,4 +239,4 @@ For more information, see the Notifications section in this document.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MediaPlayer/mpmovieplayercontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mediaplayer/mpmovieplayercontroller)*

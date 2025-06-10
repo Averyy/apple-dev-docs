@@ -15,15 +15,11 @@ The `appStoreVersionSubmissions` resource is available while your submission req
 ## Topics
 
 ### Managing Review Submissions
-- [Create an App Store version submission](post-v1-appstoreversionsubmissions.md)
-  Submit an App Store version to App Review.
 - [Delete an App Store Version Submission](delete-v1-appstoreversionsubmissions-_id_.md)
   Remove a version from App Store review.
 ### Objects
 - [object AppStoreVersionSubmission](appstoreversionsubmission.md)
   The data structure that represents an App Store Version Submissions resource.
-- [object AppStoreVersionSubmissionCreateRequest](appstoreversionsubmissioncreaterequest.md)
-  The request body you use to create an App Store Version Submission.
 - [object AppStoreVersionSubmissionResponse](appstoreversionsubmissionresponse.md)
   A response that contains a single App Store Version Submissions resource.
 

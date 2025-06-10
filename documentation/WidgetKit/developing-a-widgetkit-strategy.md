@@ -1,12 +1,12 @@
 # Developing a WidgetKit strategy
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
-Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, watch complications, and Live Activities.
+Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
 
 #### Overview
 
-Use WidgetKit to build widgets, watch complications, and Live Activities. With these features, you can create an ecosystem across platforms and devices, expanding the reach of your app. Widgets, complications, and Live Activities use WidgetKit and a set of related frameworks, including SwiftUI and App Intents, to take up limited but effective, eye-catching space. Because their design, functionality, and code are similar, they’re perfect candidates for code and design component reuse.
+Use WidgetKit to build widgets, controls, watch complications, and Live Activities. When you offer these system experiences, your app becomes part of the widget ecosystem across platforms and devices, and expands its reach by taking up limited but effective, eye-catching space. System experiences that use WidgetKit as a foundation rely on a set of related frameworks and share design and functional similarities, making them great candidates for code and design component reuse.
 
 To avoid costly changes in your app’s development process, plan your WidgetKit adoption before you create designs and write code. As you make your plans, take into account:
 
@@ -20,70 +20,70 @@ To avoid costly changes in your app’s development process, plan your WidgetKit
 - Visibility in Smart Stacks
 - Functional constraints
 
-##### Offer Glanceable Experiences in Various Sizes and Across Platforms
+Then, approach WidgetKit adoption iteratively. For example, start with a nonconfigurable [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) widget as described in [`Creating a widget extension`](creating-a-widget-extension.md) because it gives your content broad exposure in the WidgetKit ecosystem on iPhone, iPad, Mac, and Apple Vision Pro. Then, add support for configuration, additional widget sizes, and — depending on your app’s features — Live Activities or a watchOS app with watch complications.
 
-Widgets come in many different sizes, from circular accessory widgets on the Lock Screen and complications on Apple Watch to extra-large widgets on iPad and Mac. It’s up to you to choose the sizes and complications you want to support, but consider supporting as many sizes and complications as possible.
+##### Review System Experiences for Each Platform
+
+Widgets come in different sizes, from circular accessory widgets on the Lock Screen and complications on Apple Watch to extra-large widgets on Apple Vision Pro. You can choose the sizes and complications you want to support, but consider supporting as many sizes and complications as possible.
+
+Live Activities are available on iPhone and iPad and appear on the Lock Screen and in the Dynamic Island on supported devices. Additionally, Live Activities appear on a paired Mac or Apple Watch, and in CarPlay. When you add support for Live Activities, you need to create minimal, compact, and extended presentations that make sure your Live Activities appear correctly for each platform.
+
+In iOS, iPadOS, and macOS, your app can offer controls people place in Control Center. On Mac, people can also place controls on the menu bar as menu bar items. On Apple Watch, controls from your watchOS app or a paired iPhone appear in Control Center and the Smart Stack, and people can place them on the Action button of Apple Watch Ultra.
 
 This table shows the functionality available for each platform:
 
-| Widget size or technology | iPhone | iPad | Apple Watch | Mac |
-| --- | --- | --- | --- | --- |
-| Small system widgets | Home Screen, Today View, and StandBy | Home Screen, Today View, and Lock Screen | No | Yes |
-| Medium system widgets | Home Screen and Today View | Home Screen and Today View | No | Yes |
-| Large system widgets | Home Screen and Today View | Home Screen and Today View | No | Yes |
-| Extra large system widgets | No | Home Screen and Today View | No | Yes |
-| Circular accessory widgets | Lock Screen | Lock Screen | Watch complications and Smart Stack | No |
-| Corner accessory widgets | No | No | Watch complications | No |
-| Rectangular accessory widgets | Lock Screen | Lock Screen | Watch complications and Smart Stack | No |
-| Inline accessory widgets | Lock Screen | Lock Screen | Watch complications | No |
-| Live Activities | Yes | Yes | No | No |
-
-Live Activities are available on iPhone and iPad and appear on the Lock Screen. On devices that support the Dynamic Island, Live Activities appear in the Dynamic Island in compact, minimal, and extended appearances. On devices that don’t support the Dynamic Island, Live Activities appear briefly on the Home Screen, and as an overlay in other apps to notify people of updated data if you choose to alert people about the update.
-
-> ❗ **Important**: You need to support all Live Activity appearances, from minimal and compact presentations to larger extended and Lock Screen presentations.
-
-Approach WidgetKit adoption iteratively. For example, start with a nonconfigurable [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) widget as described in [`Creating a widget extension`](creating-a-widget-extension.md) because it gives your content broad exposure in the WidgetKit ecosystem on iPhone, iPad, and Mac. Then, add support for configuration, additional widget sizes, and — depending on your app’s features — Live Activities or a watchOS app with watch complications.
+| Widget size or technology | iPhone | iPad | Apple Watch | Mac | Apple Vision Pro |
+| --- | --- | --- | --- | --- | --- |
+| Small system widgets | Home Screen, Today View, and StandBy | Home Screen, Today View, and Lock Screen | No | Yes | Yes |
+| Medium system widgets | Home Screen and Today View | Home Screen and Today View | No | Yes | Yes |
+| Large system widgets | Home Screen and Today View | Home Screen and Today View | No | Yes | Yes |
+| Extra large system widgets | No | Home Screen and Today View | No | Yes | Yes |
+| Extra large system widgets (portrait) | No | No | No | No | Yes |
+| Circular accessory widgets | Lock Screen | Lock Screen | Watch complications and Smart Stack | No | No |
+| Corner accessory widgets | No | No | Watch complications | No | No |
+| Rectangular accessory widgets | Lock Screen | Lock Screen | Watch complications and Smart Stack | No | No |
+| Inline accessory widgets | Lock Screen | Lock Screen | Watch complications | No | No |
+| Live Activities | Yes | Yes | From a paired iPhone | From a paired iPhone | No |
+| Controls | Yes | Yes | Yes | Yes | No |
 
 ##### Leverage Additional Frameworks
 
-Widgets, watch complications, and Live Activities use a widget extension you add to your Xcode project. The role of WidgetKit is to provide the infrastructure and configuration for the features it enables. Depending on features and platforms you support, you use WidgetKit in combination with other frameworks as follows:
+Widgets, watch complications, controls, and Live Activities use a widget extension you add to your Xcode project. The role of WidgetKit is to provide the infrastructure and configuration for the features it enables. Based on features and platforms you support, use WidgetKit in combination with other frameworks as follows:
 
 - To create the user interface for each feature, use [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI).
 - To add interactivity to widgets and Live Activities, use [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) and the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework.
-- To offer watch complications, create a watchOS app.
-- To make widgets configurable, to offer preconfigured watch complications, and to enable functionalities like Smart Stacks and Widget Suggestions, use [`App Intents`](https://developer.apple.com/documentation/AppIntents) and [`SiriKit`](https://developer.apple.com/documentation/SiriKit) intents.
+- To offer watch complications and watchOS widgets, create a watchOS app.
+- To offer configurable widgets and watch complications, use [`App Intents`](https://developer.apple.com/documentation/AppIntents).
+- To provide the contextual clues that the system uses for Smart Stacks and to offer Widget Suggestions, use [`App Intents`](https://developer.apple.com/documentation/AppIntents) and [`RelevanceKit`](https://developer.apple.com/documentation/RelevanceKit).
 - To start, update, and end Live Activities, use [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit).
 
 ##### Support Different Appearances
 
 Depending on the context, a widget or Live Activity changes its appearance to best fit its context. For example, a [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) widget appears as follows:
 
-- On the Home Screen of iPhone and iPad, it uses the [`fullColor`](widgetrenderingmode/fullcolor.md) or [`accented`](widgetrenderingmode/accented.md) rendering modes for light and dark appearances.
+- On the Home Screen of iPhone and iPad, it uses it uses the  [`accented`](widgetrenderingmode/accented.md) rendering mode for light and dark appearances, and [`fullColor`](widgetrenderingmode/fullcolor.md) on devices that run iOS and iPad 18 or older.
 - On the Lock Screen of iPad and iPhone, it uses the [`vibrant`](widgetrenderingmode/vibrant.md) rendering mode that provides a vibrant, blurred appearance. On the Lock Screen of iPhone in StandBy and StandBy in Night Mode, it renders scaled up in size using the [`vibrant`](widgetrenderingmode/vibrant.md) rendering mode.
-- On Mac, it uses the [`fullColor`](widgetrenderingmode/fullcolor.md) rendering mode in Notification Center for light and dark appearances. On the desktop, the widget appears receded with the [`vibrant`](widgetrenderingmode/vibrant.md) appearance and changes to the [`fullColor`](widgetrenderingmode/fullcolor.md) appearance when a person interacts with it.
+- In CarPlay, it renders scaled-up in size using the [`fullColor`](widgetrenderingmode/fullcolor.md) rendering mode with the background removed.
+- On Mac, it uses the [`accented`](widgetrenderingmode/accented.md) rendering mode. On older versions of macOS, it uses the  [`fullColor`](widgetrenderingmode/fullcolor.md) or [`vibrant`](widgetrenderingmode/vibrant.md) modes.
 
 Similarly, the [`WidgetFamily.accessoryRectangular`](widgetfamily/accessoryrectangular.md) widget appears as follows:
 
 - On the Lock Screen of iPhone and iPad, it takes on the [`vibrant`](widgetrenderingmode/vibrant.md) appearance.
 - On Apple Watch, it appears as a watch complication without a background and the [`accented`](widgetrenderingmode/accented.md) appearance and in a [`fullColor`](widgetrenderingmode/fullcolor.md) appearance in the Smart Stack.
 
-With each feature you add to your app, make sure your widget, watch complication, or Live Activity supports all applicable contexts and appearances well.
-
-For more information, see [`Preparing widgets for additional platforms, contexts, and appearances`](preparing-widgets-for-additional-contexts-and-appearances.md).
-
-For design guidance, see [`Human Interface Guidelines > Widgets`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets).
+With each feature you add to your app, make sure your widget, watch complication, or Live Activity supports all applicable contexts and appearances well. For more information, refer to [`Preparing widgets for additional platforms, contexts, and appearances`](preparing-widgets-for-additional-contexts-and-appearances.md). For design guidance, refer to [`Human Interface Guidelines > Widgets`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets).
 
 ##### Animate Content Updates
 
-On devices that run iOS 16, macOS 13, or earlier, widgets don’t use animations. However, Live Activities use the system’s animation timing to animate dynamic content and the addition or removal of views. For example, you can use built-in transitions for content or state changes, such as [`move(edge:)`](https://developer.apple.com/documentation/SwiftUI/AnyTransition/move(edge:)).
+Widgets and Live Activities can use animations to draw a person’s attention to data updates, inclusing custom animations. For more information, refer to [`Animating data updates in widgets and Live Activities`](animating-data-updates-in-widgets-and-live-activities.md).
 
-Starting with iOS 17 and macOS 14, widgets can use animations, and both widgets and Live Activities can use custom animations. For more information, see [`Animating data updates in widgets and Live Activities`](animating-data-updates-in-widgets-and-live-activities.md).
+##### Provide Up to Date Information
 
-##### Provide Up to Date Information with a Timeline
+Widgets and watch complications use a different mechanism than your app to update their content. They use a timeline of data updates that you create in your app and hand to WidgetKit. You maintain this timeline as your app receives new data, but, to optimize battery life for a device, each app has a budget to update its widgets or complications. Additionally, the system batches and schedules updates to preserve power. For more information on how timelines work and how you can keep your widgets and watch complications up to date, refer to [`Keeping a widget up to date`](keeping-a-widget-up-to-date.md) and [`Making network requests in a widget extension`](making-network-requests-in-a-widget-extension.md). Additionally, widgets can update their data with the Apple Push Notification service (APNs) and WidgetKit push notifications.
 
-Widgets and watch complications use a mechanism to update their content that’s different from your app. They use a timeline of data updates that you create in your app and hand to WidgetKit. You maintain this timeline as your app receives new data, but, to optimize battery life for a device, each app has a budget to update its widgets or complications. Additionally, the system batches and schedules updates to preserve power. For more information on how timelines work and how you can keep your widgets and watch complications up to date, see [`Keeping a widget up to date`](keeping-a-widget-up-to-date.md) and [`Making network requests in a widget extension`](making-network-requests-in-a-widget-extension.md).
+Live Activities don’t use timelines to update their content. Instead, they use [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit) and ActivityKit push notifications you send with APNs. For more information, refer to [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit).
 
-Live Activities don’t use timelines to update their content. Instead, they use [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit) and the Apple Push Notification service (APNs) to send ActivityKit push notifications. For more information, see [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit).
+Controls also don’t use timelines to update their content. Instead, they update their content when someone uses them, the app reloads them, or the system receives a remote push notification from APNs. For more information, refer to [`Updating controls locally and remotely`](updating-controls-locally-and-remotely.md).
 
 ##### Add Specific App Functionality to Your Widgets and Live Activities
 
@@ -91,21 +91,17 @@ By default, people tap a widget, watch complication, or Live Activity to launch 
 
 > **Note**: In iOS 16 and macOS 13 or earlier versions, only large and extra-large widgets can use [`Link`](https://developer.apple.com/documentation/SwiftUI/Link).
 
-Starting with iOS 17 and macOS 14, widgets offer direct interaction with your app using   the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework and SwiftUI. Both [`Button`](https://developer.apple.com/documentation/SwiftUI/Button) and [`Toggle`](https://developer.apple.com/documentation/SwiftUI/Toggle) offer dedicated initializers for this purpose. For more information, see [`Adding interactivity to widgets and Live Activities`](adding-interactivity-to-widgets-and-live-activities.md).
+Widgets offer direct interaction with your app using the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework and SwiftUI. Both [`Button`](https://developer.apple.com/documentation/SwiftUI/Button) and [`Toggle`](https://developer.apple.com/documentation/SwiftUI/Toggle) offer dedicated initializers for this purpose. For more information, refer to [`Adding interactivity to widgets and Live Activities`](adding-interactivity-to-widgets-and-live-activities.md).
 
 ##### Offer Configurable Widgets and Watch Complications
 
-Make it possible for people to select the information they want to view in the widget by offering configurable iOS and macOS widgets that provide customizable properties. For example, people might choose to stay informed about a specific stock in a stock market widget, or enter a tracking number for a package delivery widget. Configurable widgets use the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework and custom intents you define — the same mechanism you use to support system-level services like Siri and the Shortcuts app. For information about creating a configurable widgets, see [`Making a configurable widget`](making-a-configurable-widget.md).
-
-On Apple Watch, offer preconfigured watch complications to people with WidgetKit and the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework.
+Make it possible for people to select the information they want to view in the widget or a watch complication by offering configurable widgets and complications that provide customizable properties. For example, people might choose to stay informed about a specific stock in a stock market widget, or enter a tracking number for a package delivery widget. Configurable widgets and complications use the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework and custom intents you define — the same mechanism you use to support system-level services like Siri and the Shortcuts app. For information about creating configurable widgets and complications, refer to [`Making a configurable widget`](making-a-configurable-widget.md).
 
 ##### Increase Visibility in Smart Stacks
 
-On iPhone and iPad, people create stacks of widgets, swipe through them manually, and use Smart Rotate to create Smart Stacks. In a Smart Stack, WidgetKit shows the widget at the top of a stack that matches a person’s context. For example, a weather widget might appear on the top of a Smart Stack each time a person leaves their home. To make sure the system shows your widget at the top of a Smart Stack at the right moment, use the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework.
+On iPhone and iPad, people create stacks of widgets and swipe through them manually. Additionally, people use Smart Stacks with Smart Rotate to view the most relevant widgets and see widget suggestions. To show relevant widgets at the top of Smart Stacks, iOS and iPadOS rely on behavioral clues that apps provide during use. On Apple Watch, people can place and pin widgets in the Smart Stack, but they rely more heavily on the system to automatically display contextually relevant widgets. To determine the most relevant widgets, watchOS queries your widget extension for contextual clues.
 
-On Apple Watch, the Smart Stack displays a list of default widgets and widgets a person adds to it. Like on iPhone and iPad, you use the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework to make sure people can add your widget to the Smart Stack.
-
-For more information, see [`Increasing the visibility of widgets in Smart Stacks`](widget-suggestions-in-smart-stacks.md).
+For more information, refer to [`Increasing the visibility of widgets in Smart Stacks`](widget-suggestions-in-smart-stacks.md).
 
 ##### Consider User Privacy
 
@@ -126,7 +122,7 @@ Widgets, watch complications, and Live Activities are always visible. To preserv
 | Network access | Yes | Yes | No |
 | Location access | Yes | Yes | No |
 
-For additional information, see [`Accessing location information in widgets`](accessing-location-information-in-widgets.md).
+For additional information, refer to [`Accessing location information in widgets`](accessing-location-information-in-widgets.md).
 
 ## See Also
 
@@ -136,4 +132,4 @@ For additional information, see [`Accessing location information in widgets`](ac
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/developing-a-widgetkit-strategy)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/developing-a-widgetkit-strategy)*

@@ -1,6 +1,6 @@
 # line
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The vertical component of a source text position.

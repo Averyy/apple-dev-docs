@@ -21,7 +21,7 @@ The data source for the table view must implement the appropriate methods of the
 
 Setting the data source invokes [`tile()`](nstableview/tile().md).
 
-If the delegate doesn’t respond to either [`numberOfRows(in:)`](nstableviewdatasource/numberofrows(in:).md) or [`tableView(_:objectValueFor:row:)`](nstableviewdatasource/tableview(_:objectvaluefor:row:).md), [`internalInconsistencyException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1416220-internalinconsistencyexception) may be raised.
+If the delegate doesn’t respond to either [`numberOfRows(in:)`](nstableviewdatasource/numberofrows(in:).md) or [`tableView(_:objectValueFor:row:)`](nstableviewdatasource/tableview(_:objectvaluefor:row:).md), [`internalInconsistencyException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/internalInconsistencyException) may be raised.
 
 ## See Also
 

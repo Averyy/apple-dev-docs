@@ -1,6 +1,6 @@
 # dataDetectors
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 An option that enables interaction with text of certain formats, such as URLs, email addresses, and physical addresses.

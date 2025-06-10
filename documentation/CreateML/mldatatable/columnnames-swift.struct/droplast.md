@@ -1,6 +1,6 @@
 # dropLast(_:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns a subsequence containing all but the specified number of final elements.

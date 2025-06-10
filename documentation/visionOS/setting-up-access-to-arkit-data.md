@@ -1,6 +1,6 @@
 # Setting up access to ARKit data
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Check whether your app can use ARKit and respect people’s privacy.
 
@@ -99,4 +99,4 @@ Providing alternatives is especially important if you’re using ARKit for user 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/setting-up-access-to-arkit-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/setting-up-access-to-arkit-data)*

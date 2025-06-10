@@ -27,8 +27,6 @@ Apple Pay issues an Apple Pay Merchant Token if the user’s payment network sup
 
 > ❗ **Important**:  You can’t use this property with [`multiTokenContexts`](applepaymodifier/multitokencontexts.md) or [`automaticReloadPaymentRequest`](applepaymodifier/automaticreloadpaymentrequest.md) properties. Simultaneous use of these properties results in an error and cancels the payment request.
 
- You can’t use this property with [`multiTokenContexts`](applepaymodifier/multitokencontexts.md) or [`automaticReloadPaymentRequest`](applepaymodifier/automaticreloadpaymentrequest.md) properties. Simultaneous use of these properties results in an error and cancels the payment request.
-
 ## See Also
 
 - [ApplePayRecurringPaymentRequest](applepayrecurringpaymentrequest.md)

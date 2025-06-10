@@ -12,6 +12,7 @@ Directions suitable for public transportation.
 - macOS 10.11+
 - tvOS 9.0+
 - visionOS 1.0+
+- watchOS 2.0+
 
 ## Declaration
 
@@ -25,12 +26,14 @@ This type is only supported for estimating time of arrival.
 
 ## See Also
 
-- [static var automobile: MKDirectionsTransportType](mkdirectionstransporttype/automobile.md)
-  Directions suitable for use while driving.
-- [static var walking: MKDirectionsTransportType](mkdirectionstransporttype/walking.md)
-  Directions suitable for a pedestrian.
 - [static var any: MKDirectionsTransportType](mkdirectionstransporttype/any.md)
   Directions suitable for any transportation option.
+- [static var automobile: MKDirectionsTransportType](mkdirectionstransporttype/automobile.md)
+  Directions suitable for use while driving.
+- [static var cycling: MKDirectionsTransportType](mkdirectionstransporttype/cycling.md)
+  Directions suitable for use while cycling.
+- [static var walking: MKDirectionsTransportType](mkdirectionstransporttype/walking.md)
+  Directions suitable for a pedestrian.
 
 
 ---

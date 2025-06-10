@@ -1,6 +1,6 @@
 # WorkoutPlan
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: struct
 
 A wrapper around a workout object that your app can use to open the object in Workout or schedule it for later.
@@ -10,6 +10,7 @@ A wrapper around a workout object that your app can use to open the object in Wo
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -55,6 +56,7 @@ struct WorkoutPlan
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

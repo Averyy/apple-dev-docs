@@ -10,6 +10,7 @@ Options available to determine the kinds of animation timing.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -31,18 +32,6 @@ The [`EmphasizeAction`](emphasizeaction.md) structure accepts this enumeration a
   Animates with whimsical motion.
 - [EmphasizeAction.EmphasisAnimationStyle.wild](emphasizeaction/emphasisanimationstyle/wild.md)
   Animates with sporadic motion.
-### Initializers
-- [init?(rawValue: Int)](emphasizeaction/emphasisanimationstyle/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int](emphasizeaction/emphasisanimationstyle/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [EmphasizeAction.EmphasisAnimationStyle.RawValue](emphasizeaction/emphasisanimationstyle/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](emphasizeaction/emphasisanimationstyle/equatable-implementations.md)
-- [RawRepresentable Implementations](emphasizeaction/emphasisanimationstyle/rawrepresentable-implementations.md)
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 # textColor
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The color of the text field’s content.
@@ -17,7 +17,7 @@ The color of the text field’s content.
 
 #### Discussion
 
-> **Note**:  When the text field has an attributed string value, the system ignores the [`textColor`](nstextfield/textcolor.md), [`font`](nscontrol/font.md), [`alignment`](nscontrol/alignment.md), [`lineBreakMode`](nscontrol/linebreakmode.md), and `lineBreakStrategy` properties. Set the [`foregroundColor`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1533563-foregroundcolor), [`font`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1528839-font), [`alignment`](nsmutableparagraphstyle/alignment.md), [`lineBreakMode`](nsparagraphstyle/linebreakmode.md), and [`lineBreakStrategy`](nsparagraphstyle/linebreakstrategy-swift.property.md) properties in the attributed string instead.
+> **Note**:  When the text field has an attributed string value, the system ignores the [`textColor`](nstextfield/textcolor.md), [`font`](nscontrol/font.md), [`alignment`](nscontrol/alignment.md), [`lineBreakMode`](nscontrol/linebreakmode.md), and `lineBreakStrategy` properties. Set the [`foregroundColor`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/foregroundColor), [`font`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/font), [`alignment`](nsmutableparagraphstyle/alignment.md), [`lineBreakMode`](nsparagraphstyle/linebreakmode.md), and [`lineBreakStrategy`](nsparagraphstyle/linebreakstrategy-swift.property.md) properties in the attributed string instead.
 
 ## See Also
 
@@ -29,4 +29,4 @@ The color of the text field’s content.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstextfield/textcolor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstextfield/textcolor)*

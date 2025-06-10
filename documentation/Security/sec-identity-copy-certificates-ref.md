@@ -25,7 +25,7 @@ The underlying `CFArrayRef` container with `SecCertificateRef` instances.
 #### Discussion
 
 ```None
-  Copy a retained reference to the underlying `CFArrayRef` container of `SecCertificateRef` types.
+ Copy a retained reference to the underlying `CFArrayRef` container of `SecCertificateRef` types.
 ```
 
 ## Parameters

@@ -18,8 +18,6 @@ When you enable the HomeKit capability, Xcode automatically adds the [`HomeKit E
 
 > ❗ **Important**:  HomeKit supports independent Apple Watch apps in watchOS 7 and later.
 
- HomeKit supports independent Apple Watch apps in watchOS 7 and later.
-
 ##### Explain Why Your App Needs Access to the Users Home Network
 
 A user’s home automation network is a sensitive resource. Apps with access can collect sensor data and change the state of physical objects in the real world. To protect users, the first time your app uses the HomeKit framework—typically, when you create a [`HMHomeManager`](hmhomemanager.md) instance—the system prompts the user for permission.
@@ -35,8 +33,6 @@ The system automatically generates the prompt’s title, which includes the name
 Accurately and concisely explaining to the user why your app needs access to the home network, typically in one complete sentence, lets the user make an informed decision and improves the chances that they’ll grant access.
 
 > ❗ **Important**:  If you don’t include a purpose string, your app crashes when you first try to use HomeKit.
-
- If you don’t include a purpose string, your app crashes when you first try to use HomeKit.
 
 ##### Handle Permission Denial Gracefully
 

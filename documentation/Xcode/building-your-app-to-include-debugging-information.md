@@ -24,8 +24,6 @@ If you distribute your app through the App Store or conduct a beta test using Te
 
 > ❗ **Important**: You must retain the Xcode archive for each build of your app you distribute. Without this archive, you might not be able to diagnose an issue from crash reports.
 
-You must retain the Xcode archive for each build of your app you distribute. Without this archive, you might not be able to diagnose an issue from crash reports.
-
 For more information on archiving your app for distribution, see [`Distributing your app for beta testing and releases`](distributing-your-app-for-beta-testing-and-releases.md).
 
 ## See Also

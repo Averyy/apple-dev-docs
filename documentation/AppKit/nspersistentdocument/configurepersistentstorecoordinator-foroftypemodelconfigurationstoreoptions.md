@@ -1,6 +1,6 @@
 # configurePersistentStoreCoordinator(for:ofType:modelConfiguration:storeOptions:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Configures the receiver’s persistent store coordinator with the appropriate stores for a given URL.

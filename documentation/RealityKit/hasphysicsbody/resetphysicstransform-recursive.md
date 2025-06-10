@@ -10,6 +10,7 @@ Resets the position and velocities of the simulated physics body.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 - Unknown ?+ - Deprecated
 

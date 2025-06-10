@@ -1,6 +1,6 @@
 # Recording student progress
 
-**Framework**: Classkit
+**Framework**: ClassKit
 
 Create an activity to record student progress through an assignment.
 
@@ -145,4 +145,4 @@ When you do run more than one activity at a time, the data store’s [`runningAc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/recording-student-progress)*
+*[View on Apple Developer](https://developer.apple.com/documentation/classkit/recording-student-progress)*

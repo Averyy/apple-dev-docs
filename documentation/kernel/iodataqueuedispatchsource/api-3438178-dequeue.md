@@ -1,0 +1,46 @@
+# Dequeue
+
+**Framework**: Kernel  
+**Kind**: instm
+
+Removes the next entry from the queue.
+
+**Availability**:
+- DriverKit 19.0+
+- macOS 10.15.2+
+
+## Declaration
+
+```swift
+kern_return_t Dequeue(IODataQueueClientDequeueEntryBlock callback);
+```
+
+#### Return_value
+
+[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, [`kIOReturnUnderrun`](https://developer.apple.com/documentation/driverkit/kioreturnunderrun) if the queue is empty, or [`kIOReturnError`](https://developer.apple.com/documentation/driverkit/kioreturnerror) if the queue is corrupt. See `Error Codes`. 
+
+## Parameters
+
+- `callback`: The callback you use to process the next entry in the queue. 
+
+## See Also
+
+- [- SetDataAvailableHandler](../driverkit/iodataqueuedispatchsource/setdataavailablehandler.md)
+  Sets the handler block to run when another object adds data to the queue.
+- [- DataAvailable](../driverkit/iodataqueuedispatchsource/dataavailable.md)
+  Responds to the addition of new data to the queue.
+- [IODataQueueClientDequeueEntryBlock](../driverkit/iodataqueueclientdequeueentryblock.md)
+  The handler block you use to remove data from a queue.
+- [- IsDataAvailable](iodataqueuedispatchsource/3438182-isdataavailable.md)
+  Checks whether the data queue contains data to process.
+- [- Peek](iodataqueuedispatchsource/3438183-peek.md)
+  Returns the next queue entry without removing it from the queue.
+- [- DequeueWithCoalesce](iodataqueuedispatchsource/3438179-dequeuewithcoalesce.md)
+  Removes the next queue entry, but doesn't automatically send notifications.
+- [- SendDataServiced](iodataqueuedispatchsource/3438185-senddataserviced.md)
+  Notifies interested parties that you removed data from the queue. 
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/iodataqueuedispatchsource/3438178-dequeue)*

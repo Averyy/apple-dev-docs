@@ -1,6 +1,6 @@
 # Create a New Library Playlist
 
-**Framework**: Applemusicapi  
+**Framework**: Apple Music API  
 **Kind**: httpRequest
 
 Create a new playlist in a user’s library.
@@ -42,4 +42,4 @@ The `POST` request containing the `name` `tracks` and `parent` playlist folder f
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleMusicAPI/create-a-new-library-playlist)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applemusicapi/create-a-new-library-playlist)*

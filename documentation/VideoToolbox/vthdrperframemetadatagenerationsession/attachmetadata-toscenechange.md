@@ -1,6 +1,6 @@
 # attachMetadata(to:sceneChange:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: method
 
 **Availability**:

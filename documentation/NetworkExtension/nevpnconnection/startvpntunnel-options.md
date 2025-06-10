@@ -1,6 +1,6 @@
 # startVPNTunnel(options:)
 
-**Framework**: Networkextension  
+**Framework**: Network Extension  
 **Kind**: method
 
 Start the process of connecting the VPN.

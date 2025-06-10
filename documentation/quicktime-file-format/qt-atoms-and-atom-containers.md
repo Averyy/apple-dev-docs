@@ -1,6 +1,6 @@
 # QT atoms and atom containers
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 An enhanced data structure that provide a more general-purpose storage format.
 

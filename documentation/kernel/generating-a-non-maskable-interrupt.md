@@ -38,8 +38,6 @@ sudo nvram -d boot-args
 
 > ❗ **Important**: Adding the `DB_NMI_BTN_ENA` flag prevents you from pressing your Mac’s power button to display the UI to shutdown, restart, or sleep the computer. Similarly, you cannot press the button to wake the computer while it’s asleep. You may still press and hold the button for eight to ten seconds to shut down the Mac. 
 
-Adding the `DB_NMI_BTN_ENA` flag prevents you from pressing your Mac’s power button to display the UI to shutdown, restart, or sleep the computer. Similarly, you cannot press the button to wake the computer while it’s asleep. You may still press and hold the button for eight to ten seconds to shut down the Mac. 
-
 ## See Also
 
 - [Implementing drivers, system extensions, and kexts](implementing_drivers_system_extensions_and_kexts.md)

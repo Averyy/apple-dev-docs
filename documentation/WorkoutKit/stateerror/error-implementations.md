@@ -1,6 +1,6 @@
 # Error Implementations
 
-**Framework**: Workoutkit
+**Framework**: WorkoutKit
 
 ## Topics
 

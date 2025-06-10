@@ -1,6 +1,6 @@
 # Reducing Involuntary Subscriber Churn
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Prevent unintentional loss of subscribers due to billing issues.
 
@@ -75,4 +75,4 @@ StoreKit adds a new transaction for the renewal to the transaction queue on the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/reducing-involuntary-subscriber-churn)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/reducing-involuntary-subscriber-churn)*

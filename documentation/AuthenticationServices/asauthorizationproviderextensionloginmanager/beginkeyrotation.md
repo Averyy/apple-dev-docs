@@ -12,6 +12,10 @@
 func beginKeyRotation(_ keyType: ASAuthorizationProviderExtensionKeyType) -> SecKey?
 ```
 
+## Parameters
+
+- `keyType`: The key type to retrieve.
+
 
 ---
 

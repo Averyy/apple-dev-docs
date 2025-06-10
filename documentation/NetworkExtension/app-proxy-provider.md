@@ -1,6 +1,6 @@
 # App proxy provider
 
-**Framework**: Networkextension
+**Framework**: Network Extension
 
 Implement a VPN client for a flow-oriented, custom VPN protocol.
 
@@ -89,4 +89,4 @@ For detailed information about app proxy provider deployment options, see [`TN31
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/NetworkExtension/app-proxy-provider)*
+*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/app-proxy-provider)*

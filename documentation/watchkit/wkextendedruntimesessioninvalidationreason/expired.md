@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionInvalidationReason.expired
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The session used all of its allocated time.

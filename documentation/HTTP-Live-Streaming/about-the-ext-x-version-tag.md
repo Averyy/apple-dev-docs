@@ -1,6 +1,6 @@
 # About the EXT-X-VERSION tag
 
-**Framework**: Http Live Streaming
+**Framework**: HTTP Live Streaming
 
 Find the protocol version that corresponds with the HLS features your app supports.
 
@@ -101,4 +101,4 @@ The following tables list the versions of specifications where specific features
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HTTP-Live-Streaming/about-the-ext-x-version-tag)*
+*[View on Apple Developer](https://developer.apple.com/documentation/http-live-streaming/about-the-ext-x-version-tag)*

@@ -10,6 +10,7 @@ An animation that cycles through a series of frames at a constant interval.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -121,19 +122,11 @@ let sampleAnim = SampledAnimationType(
   The optional time, in seconds, at which the animation plays.
 - [var trimEnd: TimeInterval?](sampledanimation/trimend.md)
   The optional time, in seconds, at which the animation stops.
-- [func trimmed(start: TimeInterval?, end: TimeInterval?, duration: TimeInterval?) -> Self](sampledanimation/trimmed(start:end:duration:).md)
-  Edits the animation duration according to the specified time.
 ### Repeating animation playback
 - [var repeatMode: AnimationRepeatMode](sampledanimation/repeatmode.md)
   An option that determines how the animation repeats.
 - [var fillMode: AnimationFillMode](sampledanimation/fillmode.md)
   An option that determines which data displays outside of the normal duration.
-- [func repeated(count: TimeInterval) -> Self](sampledanimation/repeated(count:)-3iijb.md)
-  Repeats an animation the number of times specified by an irrational number.
-- [func repeated(count: Int) -> Self](sampledanimation/repeated(count:)-ltbf.md)
-  Repeats an animation the number of times specified by a whole number.
-- [func repeatingForever() -> Self](sampledanimation/repeatingforever.md)
-  Repeats the animation infinitely.
 ### Initializers
 - [init(weightNames: [String], frames: [Value], name: String, tweenMode: TweenMode, frameInterval: Float, isAdditive: Bool, bindTarget: BindTarget?, blendLayer: Int32, repeatMode: AnimationRepeatMode, fillMode: AnimationFillMode, trimStart: TimeInterval?, trimEnd: TimeInterval?, trimDuration: TimeInterval?, offset: TimeInterval, delay: TimeInterval, speed: Float)](sampledanimation/init(weightnames:frames:name:tweenmode:frameinterval:isadditive:bindtarget:blendlayer:repeatmode:fillmode:trimstart:trimend:trimduration:offset:delay:speed:).md)
   Creates an animation that blends between a configuration of blend targets.
@@ -142,8 +135,6 @@ let sampleAnim = SampledAnimationType(
   An array of weights in which each element represents a discrete state of the target entity at a given point in the animation’s timeline.
 - [var weightNames: [String]](sampledanimation/weightnames.md)
   The names of the weights to animate.
-### Default Implementations
-- [AnimationDefinition Implementations](sampledanimation/animationdefinition-implementations.md)
 
 ## Relationships
 

@@ -26,8 +26,6 @@ To run the sample app:
 
 > ❗ **Important**: The My Mac (Designed for iPad) destination option is available only on a Mac with Apple silicon.
 
-The My Mac (Designed for iPad) destination option is available only on a Mac with Apple silicon.
-
 When you launch the sample app for the first time, it enables Touch Alternatives. You can press the arrow keys to move the circle around the window. Press Space to return the circle to the center of the window. Use a mouse or trackpad to drag the circle around the window. You can also disable and enable the alternatives from the Touch Alternatives tab in the app’s Settings window.
 
 ##### Enable Touch Alternatives

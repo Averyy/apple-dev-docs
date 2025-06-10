@@ -21,7 +21,7 @@ var quadrilateralPoints: [NSValue]? { get set }
 
 #### Discussion
 
-The array contains `N * 4` [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) objects that use [`pointValue`](https://developer.apple.com/documentation/foundation/nsvalue/1391255-pointvalue) or [`cgPointValue`](https://developer.apple.com/documentation/foundation/nsvalue/1624534-cgpointvalue) to define `N` quadrilaterals in page-space coordinates, where `N` is the number of quad points. The order of the points is a Z pattern as follows:
+The array contains `N * 4` [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) objects that use [`pointValue`](https://developer.apple.com/documentation/Foundation/NSValue/pointValue) or [`cgPointValue`](https://developer.apple.com/documentation/Foundation/NSValue/cgPointValue) to define `N` quadrilaterals in page-space coordinates, where `N` is the number of quad points. The order of the points is a Z pattern as follows:
 
 - Upper-left point
 - Upper-right point

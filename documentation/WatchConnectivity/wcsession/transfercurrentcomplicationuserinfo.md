@@ -1,6 +1,6 @@
 # transferCurrentComplicationUserInfo(_:)
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method
 
 Sends complication-related data from the iOS app to the WatchKit extension.
@@ -28,8 +28,6 @@ Call this method when you have new data to send to your complication. Your Watch
 This method can only be called while the session is active (the [`activationState`](wcsession/activationstate.md) property is set to [`WCSessionActivationState.activated`](wcsessionactivationstate/activated.md)). Calling this method for an inactive or deactivated session is a programmer error.
 
 > ⚠️ **Warning**:  Always test Watch Connectivity data transfers on paired devices. The Simulator app doesn’t support the [`transferCurrentComplicationUserInfo(_:)`](wcsession/transfercurrentcomplicationuserinfo(_:).md) method.
-
- Always test Watch Connectivity data transfers on paired devices. The Simulator app doesn’t support the [`transferCurrentComplicationUserInfo(_:)`](wcsession/transfercurrentcomplicationuserinfo(_:).md) method.
 
 ## Parameters
 

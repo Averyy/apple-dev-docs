@@ -26,14 +26,8 @@ enum Target
 ### Comparing targets
 - [static func == (BodyTrackingComponent.Target, BodyTrackingComponent.Target) -> Bool](bodytrackingcomponent/target-swift.enum/==(_:_:).md)
   Indicates whether two targets are equal.
-- [static func != (Self, Self) -> Bool](bodytrackingcomponent/target-swift.enum/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [func hash(into: inout Hasher)](bodytrackingcomponent/target-swift.enum/hash(into:).md)
   Hashes the essential components of the target by feeding them into the given hash function.
-- [var hashValue: Int](bodytrackingcomponent/target-swift.enum/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](bodytrackingcomponent/target-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

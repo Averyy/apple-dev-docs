@@ -1,0 +1,41 @@
+# init(from:)
+
+**Framework**: Foundation Models  
+**Kind**: init
+
+Creates a new instance by decoding from the given decoder.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+init(from decoder: any Decoder) throws
+```
+
+#### Discussion
+
+This initializer throws an error if reading from the decoder fails, or if the data read is corrupted or otherwise invalid.
+
+## Parameters
+
+- `decoder`: The decoder to read data from.
+
+## See Also
+
+- [init(entries: [Transcript.Entry])](transcript/init(entries:).md)
+  Creates a transcript.
+- [Transcript.Entry](transcript/entry.md)
+  An entry in a transcript.
+- [Transcript.Segment](transcript/segment.md)
+  The types of segments that may be included in a transcript entry.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundationmodels/transcript/init(from:))*

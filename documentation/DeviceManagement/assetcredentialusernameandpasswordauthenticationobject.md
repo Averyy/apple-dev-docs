@@ -6,14 +6,12 @@
 The server authentication details for an asset-credential user name and password.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- macOS 13.0+
-- tvOS 16.0+
+- iOS 17.0+
+- iPadOS 17.0+
+- macOS 14.0+
+- tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

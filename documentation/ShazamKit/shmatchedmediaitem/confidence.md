@@ -1,6 +1,6 @@
 # confidence
 
-**Framework**: Shazamkit  
+**Framework**: ShazamKit  
 **Kind**: property
 
 The level of confidence in the match result.
@@ -21,8 +21,6 @@ var confidence: Float { get }
 ```
 
 #### Discussion
-
-> **Note**: This may be fetched using the key @c SHMediaItemConfidence
 
 The value ranges from 0.0 to 1.0, where 1.0 indicates the highest level of confidence.
 

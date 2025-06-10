@@ -45,8 +45,6 @@ for (index, item) in pasteboardItems.enumerated() {
 
 > ❗ **Important**: If the system finds a match when calling this method, the system informs the person using the app that the app is trying to read the contents of the pasteboard. If the person denies access to the pasteboard, the method throws an error.
 
-If the system finds a match when calling this method, the system informs the person using the app that the app is trying to read the contents of the pasteboard. If the person denies access to the pasteboard, the method throws an error.
-
 ## Parameters
 
 - `keyPaths`: The patterns to detect on the pasteboard.
@@ -56,11 +54,9 @@ If the system finds a match when calling this method, the system informs the per
 - [func detectedPatterns(for: Set<PartialKeyPath<NSPasteboardItem.DetectedValues>>) async throws -> Set<PartialKeyPath<NSPasteboardItem.DetectedValues>>](nspasteboarditem/detectedpatterns(for:).md)
   Determines whether the pasteboard item matches the specified patterns, without notifying the person using the app.
 - [NSPasteboardItem.DetectedValues](nspasteboarditem/detectedvalues.md)
-  A type that contains common types of data that the data detection system matches for a pasteboard.
 - [func detectedMetadata(for: Set<PartialKeyPath<NSPasteboardItem.DetectedMetadata>>) async throws -> NSPasteboardItem.DetectedMetadata](nspasteboarditem/detectedmetadata(for:).md)
   Determines available metadata from the specified metadata types for this pasteboard item, without notifying the person using the app.
 - [NSPasteboardItem.DetectedMetadata](nspasteboarditem/detectedmetadata.md)
-  An object that contains common types of metadata that the data detection system matches for a pasteboard.
 
 
 ---

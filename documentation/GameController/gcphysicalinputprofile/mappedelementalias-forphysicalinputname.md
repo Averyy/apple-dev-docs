@@ -37,7 +37,7 @@ Use this method to get the alias for an input element. For example, if the user 
   A Boolean value that indicates whether the user remaps elements in this profile.
 - [func mappedPhysicalInputNames(forElementAlias: String) -> Set<String>](gcphysicalinputprofile/mappedphysicalinputnames(forelementalias:).md)
   Returns the physical input elements to which the user remaps the given input element.
-- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../foundation/nsnotification/name/4066959-gccontrollerusercustomizationsdi.md)
+- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerUserCustomizationsDidChange.md)
   A notification that posts when the user customizes the button mappings or other settings of a controller.
 
 

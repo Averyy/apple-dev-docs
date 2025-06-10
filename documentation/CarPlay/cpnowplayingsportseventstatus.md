@@ -13,6 +13,7 @@ A representation of the status of a sporting event.
 ## Declaration
 
 ```swift
+@MainActor
 class CPNowPlayingSportsEventStatus
 ```
 
@@ -42,6 +43,7 @@ class CPNowPlayingSportsEventStatus
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

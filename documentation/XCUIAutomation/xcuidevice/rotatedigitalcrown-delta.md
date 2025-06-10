@@ -1,6 +1,6 @@
 # rotateDigitalCrown(delta:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Simulates the user rotating the Digital Crown on an Apple Watch by the delta amount.

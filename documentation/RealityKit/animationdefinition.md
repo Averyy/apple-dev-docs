@@ -10,6 +10,7 @@ The configuration, including target object, timeframe, and visual semantics, of 
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -59,6 +60,9 @@ The framework adopts this protocol for several concrete animation objects, such 
   Repeats an animation the number of times specified by a whole number.
 - [func repeatingForever() -> Self](animationdefinition/repeatingforever.md)
   Repeats the animation infinitely.
+### Instance Methods
+- [func repeated(count:)](animationdefinition/repeated(count:).md)
+  Repeats an animation the number of times specified by a whole number.
 
 ## Relationships
 

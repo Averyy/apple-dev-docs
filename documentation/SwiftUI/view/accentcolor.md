@@ -1,6 +1,6 @@
 # accentColor(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Sets the accent color for this view and the views it contains.

@@ -1,6 +1,6 @@
 # webView(_:shouldGoTo:willUseInstantBack:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

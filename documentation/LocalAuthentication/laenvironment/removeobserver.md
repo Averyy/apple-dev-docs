@@ -17,6 +17,10 @@
 func removeObserver(_ observer: any LAEnvironment.Observer)
 ```
 
+#### Discussion
+
+If the observer is deallocated, it will be removed automatically.
+
 
 ---
 

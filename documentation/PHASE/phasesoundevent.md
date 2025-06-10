@@ -86,8 +86,6 @@ bangSoundEvent.start()
 
 > ❗ **Important**:  To play the same sound asset again, create another sound event object. After the first [`start(completion:)`](phasesoundevent/start(completion:).md) call on a particular `PHASESoundEvent` instance, subsequent calls have no effect.
 
- To play the same sound asset again, create another sound event object. After the first [`start(completion:)`](phasesoundevent/start(completion:).md) call on a particular `PHASESoundEvent` instance, subsequent calls have no effect.
-
 ## Topics
 
 ### Creating a Sound Event
@@ -139,6 +137,10 @@ bangSoundEvent.start()
   A Boolean value that indicates whether the sound loops or stops on its own.
 ### Instance Properties
 - [var pullStreamNodes: [String : PHASEPullStreamNode]](phasesoundevent/pullstreamnodes.md)
+### Instance Methods
+- [func resume(at: AVAudioTime?)](phasesoundevent/resume(at:).md)
+- [func seek(to: Double, resumeAt: AVAudioTime, completion: ((PHASESoundEvent.SeekHandlerReason) -> Void)?)](phasesoundevent/seek(to:resumeat:completion:).md)
+- [func start(at: AVAudioTime?, completion: ((PHASESoundEvent.StartHandlerReason) -> Void)?)](phasesoundevent/start(at:completion:).md)
 
 ## Relationships
 

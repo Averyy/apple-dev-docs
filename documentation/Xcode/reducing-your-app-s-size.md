@@ -72,8 +72,6 @@ Replace all file names and paths as necessary. To create the app size report, pr
 
 > ❗ **Important**: Be sure to escape the angle brackets for the value in your export options property list.
 
-Be sure to escape the angle brackets for the value in your export options property list.
-
 To learn more about using `xcodebuild`, see [`Building from the Command Line with Xcode FAQ`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2339/_index.html#//apple_ref/doc/uid/DTS40014588).
 
 ## Topics

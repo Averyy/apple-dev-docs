@@ -6,6 +6,7 @@
 An error that indicates the depth range values aren’t in reverse-z order.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

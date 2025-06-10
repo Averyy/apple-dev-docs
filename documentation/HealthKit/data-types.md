@@ -309,6 +309,8 @@ You can use the resulting object types to request permission to access the data,
   Query health and fitness data.
 - [Visualizing HealthKit State of Mind in visionOS](visualizing-healthkit-state-of-mind-in-visionos.md)
   Incorporate HealthKit State of Mind into your app and visualize the data in visionOS.
+- [Logging symptoms associated with a medication](logging-symptoms-associated-with-a-medication.md)
+  Fetch medications and dose events from the HealthKit store, and create symptom samples to associate with them.
 
 
 ---

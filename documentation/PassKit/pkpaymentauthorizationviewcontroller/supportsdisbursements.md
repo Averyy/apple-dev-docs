@@ -15,7 +15,7 @@ Returns a Boolean value that indicates whether this device can process disbursem
 ## Declaration
 
 ```swift
-@MainActor
+nonisolated
 class func supportsDisbursements() -> Bool
 ```
 

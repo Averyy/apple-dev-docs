@@ -1,6 +1,6 @@
 # CKSubscription.NotificationInfo
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: class
 
 An object that describes the configuration of a subscription’s push notifications.
@@ -94,6 +94,7 @@ For more information about push notification alerts and how they display to the 
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

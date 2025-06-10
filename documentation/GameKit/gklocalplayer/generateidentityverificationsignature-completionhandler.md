@@ -31,7 +31,7 @@ To generate a signature on your server, see the [`fetchItems(forIdentityVerifica
 ## See Also
 
 - [func authenticate(completionHandler: (((any Error)?) -> Void)?)](gklocalplayer/authenticate(completionhandler:).md)
-  Authenticates the local player on the device.
+  Initializes the local player on the device.
 - [func loadDefaultLeaderboardCategoryID(completionHandler: ((String?, (any Error)?) -> Void)?)](gklocalplayer/loaddefaultleaderboardcategoryid(completionhandler:).md)
   Loads the category identifier for the local player’s default leaderboard.
 - [func loadFriendPlayers(completionHandler: (([GKPlayer]?, (any Error)?) -> Void)?)](gklocalplayer/loadfriendplayers(completionhandler:).md)

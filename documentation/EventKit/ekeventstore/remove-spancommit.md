@@ -1,6 +1,6 @@
 # remove(_:span:commit:)
 
-**Framework**: Eventkit  
+**Framework**: EventKit  
 **Kind**: method
 
 Removes an event or recurring events from the event store by either committing or batching the changes.

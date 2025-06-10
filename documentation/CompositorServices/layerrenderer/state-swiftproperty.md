@@ -6,6 +6,7 @@
 A value that indicates whether the layer renderer is currently visible and ready for you to draw content.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

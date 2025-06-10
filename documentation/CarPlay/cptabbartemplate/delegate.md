@@ -13,6 +13,7 @@ The object that acts as the template’s delegate.
 ## Declaration
 
 ```swift
+@MainActor
 weak var delegate: (any CPTabBarTemplateDelegate)? { get set }
 ```
 

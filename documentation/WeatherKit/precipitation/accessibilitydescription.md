@@ -1,6 +1,6 @@
 # accessibilityDescription
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A localized accessibility description describing the form of precipitation.

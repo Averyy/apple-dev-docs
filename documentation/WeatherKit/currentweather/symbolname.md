@@ -1,6 +1,6 @@
 # symbolName
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The SF Symbol icon that represents the current weather condition and whether it’s daylight at the current date.

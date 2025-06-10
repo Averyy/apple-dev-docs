@@ -13,6 +13,7 @@ An image that represents the content of the tab.
 ## Declaration
 
 ```swift
+@MainActor
 var tabImage: UIImage? { get set }
 ```
 

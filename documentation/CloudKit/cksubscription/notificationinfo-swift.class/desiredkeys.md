@@ -25,7 +25,7 @@ var desiredKeys: [CKRecord.FieldKey]? { get set }
 
 This property contains an array of strings, each of which corresponds to the name of a field in the record that triggers the notification. When the system receives a notification, it includes the keys and their corresponding values. You can request a maximum of three keys.
 
-For the keys you specify, the allowable types are [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation), [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate), and [`CKRecord.Reference`](ckrecord/reference.md). You can’t specify keys with values that contain other data types. CloudKit may truncate strings that are more than 100 characters when it adds them to the notification’s payload.
+For the keys you specify, the allowable types are [`NSString`](https://developer.apple.com/documentation/Foundation/NSString), [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber), doc://com.apple.documentation/documentation/corelocation/cllocation, [`NSDate`](https://developer.apple.com/documentation/Foundation/NSDate), and [`CKRecord.Reference`](ckrecord/reference.md). You can’t specify keys with values that contain other data types. CloudKit may truncate strings that are more than 100 characters when it adds them to the notification’s payload.
 
 
 ---

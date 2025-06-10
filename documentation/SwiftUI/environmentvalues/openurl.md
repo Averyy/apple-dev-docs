@@ -17,7 +17,8 @@ An action that opens a URL.
 ## Declaration
 
 ```swift
-var openURL: OpenURLAction { get set }
+@MainActor
+@preconcurrency var openURL: OpenURLAction { get set }
 ```
 
 #### Discussion

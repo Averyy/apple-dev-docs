@@ -1,6 +1,6 @@
 # opacityThreshold
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: property
 
 A threshold below which RealityKit ignores opacity.
@@ -10,6 +10,7 @@ A threshold below which RealityKit ignores opacity.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

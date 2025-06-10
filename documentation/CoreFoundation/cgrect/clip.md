@@ -1,6 +1,6 @@
 # clip()
 
-**Framework**: Corefoundation  
+**Framework**: Core Foundation  
 **Kind**: method
 
 Modifies the current graphics context clipping path by intersecting it with this rect. This permanently modifies the graphics state, so the current state should be saved beforehand and restored afterwards.

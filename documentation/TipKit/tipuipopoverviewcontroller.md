@@ -88,6 +88,8 @@ class CatTracksViewController: UIViewController {
 ### Instance Properties
 - [var backgroundColor: UIColor?](tipuipopoverviewcontroller/backgroundcolor.md)
   The background color to use for the tip view.
+- [var backgroundStyle: any ShapeStyle](tipuipopoverviewcontroller/backgroundstyle.md)
+  The background style to use for the tip view.
 - [var imageSize: CGSize](tipuipopoverviewcontroller/imagesize.md)
   Size of the image displayed in the tip view.
 - [var imageStyle: (any ShapeStyle)?](tipuipopoverviewcontroller/imagestyle.md)

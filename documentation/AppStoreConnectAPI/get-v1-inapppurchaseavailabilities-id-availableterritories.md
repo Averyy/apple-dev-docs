@@ -16,6 +16,7 @@ List all the territories where an in-app purchase is available.
 
 - [Read information about the Availablity of an In-App Purchase](get-v1-inapppurchaseavailabilities-_id_.md)
   Get information about the territory availablity for an in-app purchase.
+- [GET /v1/inAppPurchaseAvailabilities/{id}/relationships/availableTerritories](get-v1-inapppurchaseavailabilities-_id_-relationships-availableterritories.md)
 - [Modify the territory availablity of an in-app purchase](post-v1-inapppurchaseavailabilities.md)
   Update the territory availablity of a specific in-app purchase.
 

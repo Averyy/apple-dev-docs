@@ -1,6 +1,6 @@
 # userInterfaceDirectionPolicy
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The directionality of user interface elements.

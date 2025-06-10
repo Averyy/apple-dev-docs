@@ -56,4 +56,4 @@ In addition to the methods described in this protocol, an `NSURLConnection` dele
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsurlconnectiondownloaddelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsurlconnectiondownloaddelegate)*

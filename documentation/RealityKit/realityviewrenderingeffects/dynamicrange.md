@@ -10,6 +10,7 @@ Enables or disables high dynamic range rendering for virtual content.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -24,8 +25,6 @@ RealityKit applies a high dynamic range effect, along with tone mapping, as a po
 When deciding whether to use any effect, be sure to consider your app’s CPU and GPU utilization, as described in [`Improving the Performance of a RealityKit App`](improving-the-performance-of-a-realitykit-app.md).
 
 > ❗ **Important**: This rendering effect is unavailable on macOS.
-
-This rendering effect is unavailable on macOS.
 
 
 ---

@@ -53,6 +53,9 @@ When you create images programmatically, you can ask the system to create images
 ### Type Aliases
 - [ImagePlaygroundStyle.ID](imageplaygroundstyle/id-swift.typealias.md)
   A type representing the stable identity of the entity associated with an instance.
+### Type Properties
+- [static let externalProvider: ImagePlaygroundStyle](imageplaygroundstyle/externalprovider.md)
+  An option that yields images in a style provided by an external provider
 ### Default Implementations
 - [Equatable Implementations](imageplaygroundstyle/equatable-implementations.md)
 
@@ -65,6 +68,7 @@ When you create images programmatically, you can ask the system to create images
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

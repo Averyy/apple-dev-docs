@@ -1,6 +1,6 @@
 # WKWebsiteDataTypeIndexedDBDatabases
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 IndexedDB databases.

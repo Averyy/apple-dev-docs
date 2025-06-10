@@ -1,6 +1,6 @@
 # XPC_ARRAY_APPEND
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A constant to pass as the destination index to the class of primitive XPC array setters indicating that the specified primitive needs to append to the array.

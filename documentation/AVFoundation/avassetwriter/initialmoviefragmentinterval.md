@@ -23,7 +23,7 @@ var initialMovieFragmentInterval: CMTime { get set }
 
 When using fragment writing, you can set this property value to indicate the interval at which to write the initial fragment.
 
-The default value is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid), which indicates to use the interval set in the [`movieFragmentInterval`](avassetwriter/moviefragmentinterval.md) property. The [`movieFragmentInterval`](avassetwriter/moviefragmentinterval.md) property is typically set to 10 seconds, so if an error occurs before writing the first fragment, the movie file won’t be playable. To avoid this case, your app may want to set a shorter interval, such as 1 second, to write the initial fragment, and then use a 10 second interval for subsequent fragments.
+The default value is [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid), which indicates to use the interval set in the [`movieFragmentInterval`](avassetwriter/moviefragmentinterval.md) property. The [`movieFragmentInterval`](avassetwriter/moviefragmentinterval.md) property is typically set to 10 seconds, so if an error occurs before writing the first fragment, the movie file won’t be playable. To avoid this case, your app may want to set a shorter interval, such as 1 second, to write the initial fragment, and then use a 10 second interval for subsequent fragments.
 
 You can’t set this property after writing starts.
 

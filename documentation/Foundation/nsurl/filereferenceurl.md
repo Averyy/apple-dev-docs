@@ -36,8 +36,6 @@ In some areas of the file system hierarchy, file reference URLs cannot be genera
 
 > ❗ **Important**:  A file reference URL’s path should never be persistently stored, because it is not valid across system restarts or remounts of volumes. If you need to store a persistent reference to a file system object, use a bookmark instead. You can create a bookmark by calling [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](nsurl/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:).md).
 
- A file reference URL’s path should never be persistently stored, because it is not valid across system restarts or remounts of volumes. If you need to store a persistent reference to a file system object, use a bookmark instead. You can create a bookmark by calling [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](nsurl/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:).md).
-
 ## See Also
 
 - [var filePathURL: URL?](nsurl/filepathurl.md)

@@ -25,8 +25,6 @@ Call this method to reload all the data that’s used to construct the table, in
 
 > ❗ **Important**:  Don’t call this method when the [`hasUncommittedUpdates`](uitableview/hasuncommittedupdates.md) property is [`true`](https://developer.apple.com/documentation/swift/true). Doing so forces the table view to delete any uncommitted changes before reloading the data.
 
- Don’t call this method when the [`hasUncommittedUpdates`](uitableview/hasuncommittedupdates.md) property is [`true`](https://developer.apple.com/documentation/swift/true). Doing so forces the table view to delete any uncommitted changes before reloading the data.
-
 ## See Also
 
 - [var hasUncommittedUpdates: Bool](uitableview/hasuncommittedupdates.md)

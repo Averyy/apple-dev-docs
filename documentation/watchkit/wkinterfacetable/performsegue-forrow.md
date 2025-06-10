@@ -1,6 +1,6 @@
 # performSegue(forRow:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Performs the segue for the specified row.

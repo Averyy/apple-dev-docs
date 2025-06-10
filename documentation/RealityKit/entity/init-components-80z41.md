@@ -1,6 +1,6 @@
 # init(components:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: init
 
 Creates an entity with one or multiple components.

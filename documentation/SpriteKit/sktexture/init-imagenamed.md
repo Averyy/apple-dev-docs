@@ -22,8 +22,8 @@ convenience init(imageNamed name: String)
 
 ## Mentions
 
-- [Loading and Using Textures](loading-and-using-textures.md)
 - [About Texture Atlases](about-texture-atlases.md)
+- [Loading and Using Textures](loading-and-using-textures.md)
 
 #### Return Value
 

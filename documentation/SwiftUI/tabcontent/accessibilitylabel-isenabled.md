@@ -18,7 +18,7 @@ Adds a label to the tab that describes its contents.
 
 ```swift
 nonisolated
-func accessibilityLabel(_ label: Text, isEnabled: Bool = true) -> some TabContent<Self.TabValue>
+func accessibilityLabel(_ label: LocalizedStringResource, isEnabled: Bool = true) -> some TabContent<Self.TabValue>
 ```
 
 #### Discussion

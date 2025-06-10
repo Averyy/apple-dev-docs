@@ -1,6 +1,6 @@
 # noteNumberOfRowsChanged()
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Informs the table view that the number of records in its data source has changed.

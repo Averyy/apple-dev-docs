@@ -1,6 +1,6 @@
 # accentColor(_:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Sets the accent color for this view and the views it contains.
@@ -8,7 +8,7 @@ Sets the accent color for this view and the views it contains.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
+- Mac Catalyst ?+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+

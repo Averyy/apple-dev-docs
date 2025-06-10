@@ -9,7 +9,7 @@ An instruction that requests the user move closer to the wall.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

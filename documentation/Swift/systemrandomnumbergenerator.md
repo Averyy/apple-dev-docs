@@ -63,6 +63,7 @@ While the system generator is automatically seeded and thread-safe on every plat
 - [Copyable](copyable.md)
 - [RandomNumberGenerator](randomnumbergenerator.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

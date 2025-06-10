@@ -1,6 +1,6 @@
 # icon(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the action icon for the specified size.
@@ -16,7 +16,7 @@ Returns the action icon for the specified size.
 
 ```swift
 @MainActor
-func icon(for size: CGSize) -> NSImage?
+func icon(for size: CGSize) -> UIImage?
 ```
 
 #### Return Value

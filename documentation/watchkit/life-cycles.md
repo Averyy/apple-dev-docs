@@ -1,6 +1,6 @@
 # Life cycles
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Receive and respond to life-cycle notifications.
 

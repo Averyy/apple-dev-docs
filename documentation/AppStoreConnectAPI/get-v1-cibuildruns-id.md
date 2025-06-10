@@ -20,6 +20,8 @@ The example request below retrieves detailed information for a specific build. U
   List all actions Xcode Cloud performed during a specific build.
 - [List All Builds Xcode Cloud Created in App Store Connect](get-v1-cibuildruns-_id_-builds.md)
   List All App Store Connect and TestFlight Builds when it performed a build.
+- [GET /v1/ciBuildRuns/{id}/relationships/actions](get-v1-cibuildruns-_id_-relationships-actions.md)
+- [GET /v1/ciBuildRuns/{id}/relationships/builds](get-v1-cibuildruns-_id_-relationships-builds.md)
 
 
 ---

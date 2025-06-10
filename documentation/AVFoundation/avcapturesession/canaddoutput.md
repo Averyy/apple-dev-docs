@@ -34,8 +34,6 @@ In iOS and Mac Catalyst, the system imposes the following limitations on the com
 
 > ❗ **Important**:  If you configure a capture session to use more than one [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) instance, monitor the value of the capture session’s [`hardwareCost`](avcapturesession/hardwarecost.md) property and reconfigure the session as appropriate.
 
- If you configure a capture session to use more than one [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) instance, monitor the value of the capture session’s [`hardwareCost`](avcapturesession/hardwarecost.md) property and reconfigure the session as appropriate.
-
 ## Parameters
 
 - `output`: An output to add to the session.

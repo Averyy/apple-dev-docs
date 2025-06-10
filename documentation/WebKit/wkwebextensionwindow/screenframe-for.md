@@ -1,6 +1,6 @@
 # screenFrame(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the screen frame containing the window is needed.

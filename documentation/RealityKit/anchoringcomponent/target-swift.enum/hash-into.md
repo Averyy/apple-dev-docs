@@ -10,6 +10,7 @@ Hashes the essential components of the target by feeding them into the given has
 - iPadOS 13.0+
 - Mac Catalyst 14.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -26,10 +27,6 @@ func hash(into hasher: inout Hasher)
 
 - [static func == (AnchoringComponent.Target, AnchoringComponent.Target) -> Bool](anchoringcomponent/target-swift.enum/==(_:_:).md)
   Indicates whether two targets are equal.
-- [static func != (Self, Self) -> Bool](anchoringcomponent/target-swift.enum/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [var hashValue: Int](anchoringcomponent/target-swift.enum/hashvalue.md)
-  The hash value.
 
 
 ---

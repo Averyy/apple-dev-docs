@@ -1,6 +1,6 @@
 # builtInDualWideCamera
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A built-in camera device type that consists of two cameras of fixed focal length, one ultrawide angle and one wide angle.

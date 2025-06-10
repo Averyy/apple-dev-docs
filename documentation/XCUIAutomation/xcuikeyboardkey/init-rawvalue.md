@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: init
 
 Initializes a constant with a string that represents a keyboard key.

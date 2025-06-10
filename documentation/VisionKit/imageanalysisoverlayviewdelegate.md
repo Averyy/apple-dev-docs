@@ -1,6 +1,6 @@
 # ImageAnalysisOverlayViewDelegate
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: protocol
 
 A delegate that handles image-analysis and user-interaction callbacks for an overlay view.

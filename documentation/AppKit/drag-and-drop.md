@@ -1,6 +1,6 @@
 # Drag and Drop
 
-**Framework**: Appkit
+**Framework**: AppKit
 
 Support the direct manipulation of your app’s content using drag and drop.
 
@@ -47,4 +47,4 @@ To learn how to use drag and drop for an image view, see [`Supporting Drag and D
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/drag-and-drop)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/drag-and-drop)*

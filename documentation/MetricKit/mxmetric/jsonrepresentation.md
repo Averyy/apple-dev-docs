@@ -9,6 +9,7 @@ Returns the contents of the metric in JSON format.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
+- macOS 10.15+
 - visionOS 1.0+
 
 ## Declaration
@@ -24,7 +25,7 @@ A [`Data`](https://developer.apple.com/documentation/Foundation/Data) (Swift) or
 ## See Also
 
 - [func dictionaryRepresentation() -> [AnyHashable : Any]](mxmetric/dictionaryrepresentation.md)
-  Returns the contents of a metric as a Dictionary.
+  Returns the contents of a metric as a dictionary.
 
 
 ---

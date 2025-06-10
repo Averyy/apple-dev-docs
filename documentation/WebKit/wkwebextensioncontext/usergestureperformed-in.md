@@ -1,6 +1,6 @@
 # userGesturePerformed(in:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Should be called by the app when a user gesture is performed in a specific tab.

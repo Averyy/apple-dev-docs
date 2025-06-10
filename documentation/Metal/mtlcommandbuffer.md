@@ -21,9 +21,10 @@ protocol MTLCommandBuffer : NSObjectProtocol
 
 ## Mentions
 
-- [Setting Up a Command Structure](setting-up-a-command-structure.md)
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 - [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
 - [Tracking the Resource Residency of Argument Buffers](tracking-the-resource-residency-of-argument-buffers.md)
+- [Setting Up a Command Structure](setting-up-a-command-structure.md)
 
 #### Overview
 
@@ -104,6 +105,9 @@ For example, a multithreaded app might set the GPU’s execution order for a seq
   The discrete states for a command buffer that represent its life cycle stages.
 - [Command Buffer Debugging](command-buffer-debugging.md)
   Properties and methods for programmatically debugging runtime issues with a command buffer.
+### Instance Methods
+- [func completed() async](mtlcommandbuffer/completed.md)
+- [func scheduled() async](mtlcommandbuffer/scheduled.md)
 
 ## Relationships
 
@@ -128,4 +132,4 @@ For example, a multithreaded app might set the GPU’s execution order for a seq
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/mtlcommandbuffer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlcommandbuffer)*

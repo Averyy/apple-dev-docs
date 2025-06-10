@@ -22,6 +22,7 @@ This property reflects only the state of the current participant. When this prop
 
 ## See Also
 
+- [var remoteParticipantStates: [Participant : SystemCoordinator.ParticipantState]](systemcoordinator/remoteparticipantstates.md)
 - [var localParticipantStates: SystemCoordinator.ParticipantStates](systemcoordinator/localparticipantstates.md)
   An asynchronous sequence that reports changes to the local participant’s state.
 - [SystemCoordinator.ParticipantStates](systemcoordinator/participantstates.md)

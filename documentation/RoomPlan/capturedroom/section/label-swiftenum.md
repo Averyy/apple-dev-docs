@@ -58,6 +58,7 @@ The [`CapturedRoom.Section`](capturedroom/section.md) structure [`label`](captur
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # CAShapeLayer
 
-**Framework**: Quartzcore  
+**Framework**: Core Animation  
 **Kind**: class
 
 A layer that draws a cubic Bezier spline in its coordinate space.
@@ -110,6 +110,8 @@ The following figure shows the resulting shape layer.
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -121,4 +123,4 @@ The following figure shows the resulting shape layer.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/cashapelayer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/cashapelayer)*

@@ -1,6 +1,6 @@
 # ASAccountAuthenticationModificationViewController
 
-**Framework**: Authenticationservices  
+**Framework**: Authentication Services  
 **Kind**: class
 
 A view controller that can upgrade user passwords to strong passwords, or convert accounts to use Sign in with Apple.
@@ -73,6 +73,8 @@ Adding an account modification extension lets your app seamlessly upgrade user p
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)
@@ -96,4 +98,4 @@ Adding an account modification extension lets your app seamlessly upgrade user p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/asaccountauthenticationmodificationviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/asaccountauthenticationmodificationviewcontroller)*

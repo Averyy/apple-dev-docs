@@ -1,9 +1,9 @@
-# worldScalingCompensation
+# worldScalingCompensation(_:)
 
-**Framework**: Swiftui  
-**Kind**: property
+**Framework**: SwiftUI  
+**Kind**: method
 
-Provides the current world scale compensation of this converter.
+Obtains a new converter with a different world scale compensation behavior.
 
 **Availability**:
 - visionOS 2.0+
@@ -12,14 +12,16 @@ Provides the current world scale compensation of this converter.
 
 ```swift
 @MainActor
-@preconcurrency var worldScalingCompensation: WorldScalingCompensation { get }
+@preconcurrency func worldScalingCompensation(_ compensation: WorldScalingCompensation) -> PhysicalMetricsConverter
 ```
 
 #### Discussion
 
 > **Note**: [`WorldScalingCompensation`](worldscalingcompensation.md)
 
+> **Note**: [`WorldScalingCompensation`](worldscalingcompensation.md)
+
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/physicalmetricsconverter/worldscalingcompensation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/physicalmetricsconverter/worldscalingcompensation(_:))*

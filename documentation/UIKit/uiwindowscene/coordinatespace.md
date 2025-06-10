@@ -25,14 +25,8 @@ Use the provided coordinate space to get the bounds of the scene’s bounds rect
 
 ## See Also
 
-- [var traitCollection: UITraitCollection](uiwindowscene/traitcollection.md)
-  The traits that describe the current environment of the scene.
 - [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/interfaceorientation.md)
   The orientation to use when displaying content in your windows.
-- [var sizeRestrictions: UISceneSizeRestrictions?](uiwindowscene/sizerestrictions.md)
-  The minimum and maximum size of the app’s windows.
-- [class UISceneSizeRestrictions](uiscenesizerestrictions.md)
-  An object that specifies the minimum and maximum sizes for resizable windows.
 
 
 ---

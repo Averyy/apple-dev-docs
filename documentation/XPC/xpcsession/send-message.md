@@ -1,6 +1,6 @@
 # send(message:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Sends a dictionary message over the session to the destination service.
@@ -26,8 +26,6 @@ Sessions send messages serially in a first-in, first-out (FIFO) order. This meth
 If the session fails to send the message, this method throws an error that contains details about the failure.
 
 > ❗ **Important**:  If you create an inactive session, you must activate it before sending messages. Calling this method with an inactive session crashes.
-
- If you create an inactive session, you must activate it before sending messages. Calling this method with an inactive session crashes.
 
 ## Parameters
 

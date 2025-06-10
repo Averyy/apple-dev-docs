@@ -31,8 +31,6 @@ It is your responsibility to ensure that the combination of the values of the [`
 
 > 💡 **Tip**: The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNLocalContrastNormalization`](mpscnnlocalcontrastnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object.
 
-The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNLocalContrastNormalization`](mpscnnlocalcontrastnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object.
-
 ## Topics
 
 ### Initializers

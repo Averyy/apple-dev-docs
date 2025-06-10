@@ -1,6 +1,6 @@
 # xpc_connection_activate(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Activates a new connection.

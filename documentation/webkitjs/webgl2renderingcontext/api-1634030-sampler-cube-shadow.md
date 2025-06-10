@@ -1,6 +1,6 @@
 # SAMPLER_CUBE_SHADOW
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

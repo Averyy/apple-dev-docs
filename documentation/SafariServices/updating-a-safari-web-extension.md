@@ -58,8 +58,6 @@ To add an existing source file or image file from another directory, see the sec
 
 > ❗ **Important**:  When you add new files, make sure that you add the files to the correct target. A Safari web extension has two targets per platform: an app for that platform, and the Safari web extension for that platform. If you want your files included in your Safari web extension, add them to both extension targets.
 
- When you add new files, make sure that you add the files to the correct target. A Safari web extension has two targets per platform: an app for that platform, and the Safari web extension for that platform. If you want your files included in your Safari web extension, add them to both extension targets.
-
 ## See Also
 
 - [Managing Safari web extension permissions](managing-safari-web-extension-permissions.md)

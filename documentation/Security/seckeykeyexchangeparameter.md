@@ -39,6 +39,7 @@ Use these constants as keys in the dictionary that you input to the [`SecKeyCopy
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

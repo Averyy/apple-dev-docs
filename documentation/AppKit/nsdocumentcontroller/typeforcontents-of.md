@@ -1,6 +1,6 @@
 # typeForContents(of:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Returns, for a specified URL, the document type identifier to use when opening the document at that location, if successful.

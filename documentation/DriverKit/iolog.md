@@ -15,6 +15,14 @@
 int IOLog(const char * format, ...);
 ```
 
+#### Discussion
+
+This function allows a driver to log diagnostic information to the screen during verbose boots, and to os_log.
+
+## Parameters
+
+- `format`: A printf() style format string (see printf(3) documentation).
+
 ## See Also
 
 - [dequeue_head](dequeue_head.md)

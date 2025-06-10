@@ -1,6 +1,6 @@
 # DOM_NONE
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

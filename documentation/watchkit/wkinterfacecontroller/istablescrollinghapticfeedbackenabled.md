@@ -1,6 +1,6 @@
 # isTableScrollingHapticFeedbackEnabled
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A Boolean value that determines whether haptic feedback coordinates with the appearance of new rows as the user scrolls through a table.

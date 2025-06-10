@@ -10,6 +10,7 @@ An event raised when two objects, previously in contact, separate.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -31,6 +32,7 @@ struct Ended
 ### Conforms To
 - [Event](event.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

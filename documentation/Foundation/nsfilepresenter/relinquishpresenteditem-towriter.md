@@ -26,8 +26,6 @@ You use this method to provide an appropriate response when another object wants
 
 > ❗ **Important**:  If you implement this method, you must execute the block in the `writer` parameter at the end of your implementation. The system waits for you to execute that block before allowing the `writer` to operate on the file. Therefore, failure to execute the block could stall threads in your application or other processes.
 
- If you implement this method, you must execute the block in the `writer` parameter at the end of your implementation. The system waits for you to execute that block before allowing the `writer` to operate on the file. Therefore, failure to execute the block could stall threads in your application or other processes.
-
 If the writer changes the file or directory, you do not need to incorporate those changes in your reacquirer block. Instead, implement the [`presentedItemDidChange()`](nsfilepresenter/presenteditemdidchange().md) method and use it to detect when a writer actually wrote its changes to disk.
 
 The following listing shows a simple implementation of this method that sets a Boolean flag that the file being monitored is not writable at the moment. After setting the flag, it executes the writer block and passes in yet another block for the writer to execute when it is done.

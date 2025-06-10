@@ -1,6 +1,6 @@
 # width
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 An integer containing the width of the canvas in CSS pixels.

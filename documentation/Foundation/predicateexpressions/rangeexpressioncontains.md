@@ -35,6 +35,7 @@ struct RangeExpressionContains<RangeExpression, Element> where RangeExpression :
 - [Encodable](../Swift/Encodable.md)
 - [PredicateExpression](predicateexpression.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StandardPredicateExpression](standardpredicateexpression.md)
 
 

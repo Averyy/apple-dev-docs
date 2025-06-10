@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to remove a provisioning profile from a device.
+The command to remove a previously installed provisioning profile from a device.
 
 **Availability**:
 - iOS 4.0+
@@ -12,8 +12,6 @@ The command to remove a provisioning profile from a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,14 +21,14 @@ object RemoveProvisioningProfileCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object RemoveProvisioningProfileCommand.Command](removeprovisioningprofilecommand/command-data.dictionary.md)
-  The request dictionary to remove a profile.
+  The command to remove a previously installed provisioning profile from a device.
 
 ## See Also
 
 - [object RemoveProvisioningProfileResponse](removeprovisioningprofileresponse.md)
-  A response from the device after it processes the command to remove a provisioning profile.
+  A response from the device after it processes the command to remove a previously installed provisioning profile from a device.
 
 
 ---

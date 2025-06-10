@@ -1,6 +1,6 @@
 # emailAddress
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 An email address.

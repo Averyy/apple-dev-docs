@@ -32,6 +32,7 @@ protocol GCPhysicalInputElementTypedName : Hashable, RawRepresentable, Sendable 
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [GCAxisElementName](gcaxiselementname-swift.struct.md)
 - [GCButtonElementName](gcbuttonelementname-swift.struct.md)

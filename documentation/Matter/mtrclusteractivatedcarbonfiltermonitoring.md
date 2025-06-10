@@ -34,8 +34,8 @@ class MTRClusterActivatedCarbonFilterMonitoring
 - [func readAttributeInPlaceIndicator(with: MTRReadParams?) -> [String : Any]?](mtrclusteractivatedcarbonfiltermonitoring/readattributeinplaceindicator(with:).md)
 - [func readAttributeLastChangedTime(with: MTRReadParams?) -> [String : Any]?](mtrclusteractivatedcarbonfiltermonitoring/readattributelastchangedtime(with:).md)
 - [func readAttributeReplacementProductList(with: MTRReadParams?) -> [String : Any]?](mtrclusteractivatedcarbonfiltermonitoring/readattributereplacementproductlist(with:).md)
-- [func resetCondition(with: MTRActivatedCarbonFilterMonitoringClusterResetConditionParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusteractivatedcarbonfiltermonitoring/resetcondition(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func resetCondition(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusteractivatedcarbonfiltermonitoring/resetcondition(withexpectedvalues:expectedvalueinterval:completion:).md)
+- [func resetCondition(with: MTRActivatedCarbonFilterMonitoringClusterResetConditionParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusteractivatedcarbonfiltermonitoring/resetcondition(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func resetCondition(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusteractivatedcarbonfiltermonitoring/resetcondition(withexpectedvalues:expectedvalueinterval:completion:).md)
 - [func writeAttributeLastChangedTime(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusteractivatedcarbonfiltermonitoring/writeattributelastchangedtime(withvalue:expectedvalueinterval:).md)
 - [func writeAttributeLastChangedTime(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusteractivatedcarbonfiltermonitoring/writeattributelastchangedtime(withvalue:expectedvalueinterval:params:).md)
 

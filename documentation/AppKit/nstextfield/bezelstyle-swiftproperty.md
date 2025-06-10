@@ -1,6 +1,6 @@
 # bezelStyle
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The text field’s bezel style, square or rounded.

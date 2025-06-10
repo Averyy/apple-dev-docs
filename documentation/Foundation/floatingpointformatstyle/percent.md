@@ -66,6 +66,7 @@ struct Percent
 - [ParseableFormatStyle](parseableformatstyle.md)
 - [RegexComponent](../Swift/RegexComponent.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

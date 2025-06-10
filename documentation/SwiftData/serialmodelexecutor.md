@@ -27,6 +27,7 @@ protocol SerialModelExecutor : ModelExecutor, SerialExecutor
 - [Executor](../Swift/Executor.md)
 - [ModelExecutor](modelexecutor.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SerialExecutor](../Swift/SerialExecutor.md)
 ### Conforming Types
 - [DefaultSerialModelExecutor](defaultserialmodelexecutor.md)

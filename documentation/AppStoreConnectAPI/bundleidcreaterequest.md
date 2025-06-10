@@ -33,6 +33,9 @@ object BundleIdCreateRequest
 - [object BundleIdWithoutIncludesResponse](bundleidwithoutincludesresponse.md)
 - [object BundleIdsResponse](bundleidsresponse.md)
   A response that contains a list of Bundle ID resources.
+- [object BundleIdAppLinkageResponse](bundleidapplinkageresponse.md)
+- [object BundleIdBundleIdCapabilitiesLinkagesResponse](bundleidbundleidcapabilitieslinkagesresponse.md)
+- [object BundleIdProfilesLinkagesResponse](bundleidprofileslinkagesresponse.md)
 
 
 ---

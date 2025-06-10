@@ -1,6 +1,6 @@
 # UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

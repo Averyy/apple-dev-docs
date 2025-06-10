@@ -102,6 +102,19 @@ You can use an asset writer input to create tracks in a QuickTime movie file tha
   The settings to use for encoding media data you append to the output.
 - [var sourceFormatHint: CMFormatDescription?](avassetwriterinput/sourceformathint.md)
   A hint about the format of the sample buffers to append to the input.
+### Classes
+- [AVAssetWriterInput.CaptionReceiver](avassetwriterinput/captionreceiver.md)
+  Provides an interface for writing caption data to an input.
+- [AVAssetWriterInput.MetadataReceiver](avassetwriterinput/metadatareceiver.md)
+  Provides an interface for writing timed metadata groups to an input.
+- [AVAssetWriterInput.MultiPassController](avassetwriterinput/multipasscontroller.md)
+  Provides an interface to receive an async sequence of pass descriptions for the writer input receiver, if multi-pass is supported.
+- [AVAssetWriterInput.PixelBufferReceiver](avassetwriterinput/pixelbufferreceiver.md)
+  Provides an interface for writing pixel buffers to an input.
+- [AVAssetWriterInput.SampleBufferReceiver](avassetwriterinput/samplebufferreceiver.md)
+  Provides an interface for writing sample buffers to an input.
+- [AVAssetWriterInput.TaggedPixelBufferGroupReceiver](avassetwriterinput/taggedpixelbuffergroupreceiver.md)
+  Provides an interface for writing tagged pixel buffers to an input.
 
 ## Relationships
 
@@ -117,10 +130,12 @@ You can use an asset writer input to create tracks in a QuickTime movie file tha
 
 ## See Also
 
-- [Writing Fragmented MPEG-4 Files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
-  Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
+- [Converting projected video to Apple Projected Media Profile](converting-projected-video-to-apple-projected-media-profile.md)
+  Convert content with equirectangular or half-equirectangular projection to APMP.
 - [Converting side-by-side 3D video to multiview HEVC and spatial video](converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
   Create video content for visionOS by converting an existing 3D HEVC file to a multiview HEVC format, optionally adding spatial metadata to create a spatial video.
+- [Writing Fragmented MPEG-4 Files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
+  Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
 - [Creating spatial photos and videos with spatial metadata](../ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
 - [Tagging Media with Video Color Information](tagging-media-with-video-color-information.md)

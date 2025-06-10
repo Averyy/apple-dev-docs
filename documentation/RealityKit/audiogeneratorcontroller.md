@@ -1,6 +1,6 @@
 # AudioGeneratorController
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: class
 
 A controller that manages the playback of a real-time audio stream.
@@ -10,6 +10,7 @@ A controller that manages the playback of a real-time audio stream.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -80,6 +81,7 @@ Call [`stop()`](audiogeneratorcontroller/stop().md) to halt the audio, and [`pla
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -95,4 +97,4 @@ Call [`stop()`](audiogeneratorcontroller/stop().md) to halt the audio, and [`pla
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/audiogeneratorcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/audiogeneratorcontroller)*

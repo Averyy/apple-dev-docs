@@ -1,6 +1,6 @@
 # message
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An optional description of the skipped test, displayed in the Test navigator.

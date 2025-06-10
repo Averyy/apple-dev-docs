@@ -22,8 +22,6 @@ var length: Int { get }
 
 > ❗ **Important**:  This value must not exceed length of `bytes`.
 
- This value must not exceed length of `bytes`.
-
 ## See Also
 
 - [var bytes: UnsafeMutableRawPointer](mlctensordata/bytes.md)

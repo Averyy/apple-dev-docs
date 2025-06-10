@@ -1,6 +1,6 @@
 # removeRows(at:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Removes the specified rows from the table.
@@ -16,7 +16,7 @@ func removeRows(at rows: IndexSet)
 
 #### Discussion
 
-This method removes row controllers from the table using the same semantics defined by the [`removeObjects(at:)`](https://developer.apple.com/documentation/foundation/nsmutablearray/1410154-removeobjects) method of [`NSMutableArray`](https://developer.apple.com/documentation/Foundation/NSMutableArray).
+This method removes row controllers from the table using the same semantics defined by the [`removeObjects(at:)`](https://developer.apple.com/documentation/Foundation/NSMutableArray/removeObjects(at:)) method of [`NSMutableArray`](https://developer.apple.com/documentation/Foundation/NSMutableArray).
 
 ## Parameters
 

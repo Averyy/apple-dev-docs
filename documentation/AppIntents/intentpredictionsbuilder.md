@@ -8,10 +8,10 @@ A result builder that allows you to declaratively describe the predictions for a
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -48,6 +48,7 @@ enum IntentPredictionsBuilder<Intent> where Intent : AppIntent
 
 - [static var predictionConfiguration: Self.Prediction](predictableintent/predictionconfiguration.md)
   A collection of predictions the system can use when it suggests the app intent.
+- [associatedtype Prediction : IntentPredictionConfiguration](predictableintent/prediction.md)
 - [protocol IntentPredictionConfiguration](intentpredictionconfiguration.md)
   An interface that provides the configuration for a single prediction.
 

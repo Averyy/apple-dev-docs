@@ -26,8 +26,6 @@ func changeBasis(from: AffineTransform3D = .identity, to: AffineTransform3D) -> 
   Constants that describe an axis.
 - [enum AxisWithFactors](axiswithfactors.md)
   Constants that describe the axis of a shear transform.
-- [func concatenating(AffineTransform3D) -> AffineTransform3D](affinetransform3d/concatenating(_:).md)
-  Returns an affine transformation matrix that results from concatenating two existing affine transforms.
 - [func flip(along: Axis3D)](affinetransform3d/flip(along:).md)
   Flips an affine transform along the specified axis.
 - [func flipped(along: Axis3D) -> AffineTransform3D](affinetransform3d/flipped(along:).md)

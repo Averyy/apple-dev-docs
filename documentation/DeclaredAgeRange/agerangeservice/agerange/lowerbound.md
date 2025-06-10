@@ -1,0 +1,36 @@
+# lowerBound
+
+**Framework**: DeclaredAgeRange  
+**Kind**: property
+
+The lower limit of the person’s age range.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+var lowerBound: Int?
+```
+
+#### Discussion
+
+If nil, then the lower bound of the person’s age range is 0.
+
+## See Also
+
+- [var upperBound: Int?](agerangeservice/agerange/upperbound.md)
+  The upper limit of the person’s age range.
+- [var ageRangeDeclaration: AgeRangeService.AgeRangeDeclaration?](agerangeservice/agerange/agerangedeclaration.md)
+  The sharer of the age range.
+- [var activeParentalControls: AgeRangeService.ParentalControls](agerangeservice/agerange/activeparentalcontrols.md)
+  The parental controls turned on as a part of the response.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/declaredagerange/agerangeservice/agerange/lowerbound)*

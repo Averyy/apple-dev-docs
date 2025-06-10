@@ -15,20 +15,19 @@ Initializes the user instance for provisioning.
 ## Declaration
 
 ```swift
-init(provisioningCredentialIdentifier credentialIdentifier: String, sharingInstanceIdentifier: String, cardConfigurationIdentifier templateIdentifier: String, preview: PKAddPassMetadataPreview)
+init(provisioningCredentialIdentifier credentialIdentifier: String, sharingInstanceIdentifier: String, cardConfigurationIdentifier: String, preview: PKAddPassMetadataPreview)
 ```
 
 ## Parameters
 
 - `credentialIdentifier`: An identifier for the user instance to provision.
 - `sharingInstanceIdentifier`: A short-lived token to prevent replayability.
-- `templateIdentifier`: An identifier for a legacy product on Apple Pay servers.
 - `preview`: An object that contains information representing the provisioned pass in UI.
 
 ## See Also
 
 - [init(provisioningCredentialIdentifier: String, sharingInstanceIdentifier: String, cardTemplateIdentifier: String, preview: PKAddPassMetadataPreview)](pkjapanindividualnumbercardmetadata/init(provisioningcredentialidentifier:sharinginstanceidentifier:cardtemplateidentifier:preview:).md)
-  Initializes the product instance to provision.
+  Creates the product instance to provision.
 
 
 ---

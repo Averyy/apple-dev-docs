@@ -1,6 +1,6 @@
 # NETWORK_EMPTY
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 The element is not initialized.

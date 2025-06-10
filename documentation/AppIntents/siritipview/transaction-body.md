@@ -10,7 +10,7 @@ Applies the given transaction mutation function to all animations used within th
 - iPadOS 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

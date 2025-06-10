@@ -25,8 +25,6 @@ In earlier versions of iOS, you used these constants in the [`statusBarOrientati
 
 > ❗ **Important**:  Notice that [`UIDeviceOrientation.landscapeRight`](uideviceorientation/landscaperight.md) is assigned to [`UIInterfaceOrientation.landscapeLeft`](uiinterfaceorientation/landscapeleft.md) and [`UIDeviceOrientation.landscapeLeft`](uideviceorientation/landscapeleft.md) is assigned to [`UIInterfaceOrientation.landscapeRight`](uiinterfaceorientation/landscaperight.md). The reason for this is that rotating the device requires rotating the content in the opposite direction.
 
- Notice that [`UIDeviceOrientation.landscapeRight`](uideviceorientation/landscaperight.md) is assigned to [`UIInterfaceOrientation.landscapeLeft`](uiinterfaceorientation/landscapeleft.md) and [`UIDeviceOrientation.landscapeLeft`](uideviceorientation/landscapeleft.md) is assigned to [`UIInterfaceOrientation.landscapeRight`](uiinterfaceorientation/landscaperight.md). The reason for this is that rotating the device requires rotating the content in the opposite direction.
-
 ## Topics
 
 ### Orientations
@@ -56,6 +54,7 @@ In earlier versions of iOS, you used these constants in the [`statusBarOrientati
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

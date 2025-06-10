@@ -1,6 +1,6 @@
 # accessibilityInputLabels(_:isEnabled:)
 
-**Framework**: Financekitui  
+**Framework**: FinanceKitUI  
 **Kind**: method
 
 Sets alternate input labels with which users identify a view.

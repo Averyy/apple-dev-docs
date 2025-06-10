@@ -28,8 +28,6 @@ Include a proposed size that the subview can take into account when sizing itsel
 
 > ❗ **Important**: Call this method only from within your [`Layout`](layout.md) type’s implementation of the [`placeSubviews(in:proposal:subviews:cache:)`](layout/placesubviews(in:proposal:subviews:cache:).md) method.
 
-Call this method only from within your [`Layout`](layout.md) type’s implementation of the [`placeSubviews(in:proposal:subviews:cache:)`](layout/placesubviews(in:proposal:subviews:cache:).md) method.
-
 If you call this method more than once for a subview, the last call takes precedence. If you don’t call this method for a subview, the subview appears at the center of its layout container and uses the layout container’s size proposal.
 
 ## Parameters

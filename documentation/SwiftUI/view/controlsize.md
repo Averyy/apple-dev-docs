@@ -10,6 +10,7 @@ Sets the size for controls within this view.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 10.15+
+- tvOS 15.0+
 - visionOS 1.0+
 - watchOS 9.0+
 
@@ -68,8 +69,6 @@ struct MyControls: View {
 
 ## See Also
 
-- [var controlSize: ControlSize](environmentvalues/controlsize.md)
-  The size to apply to controls within a view.
 - [enum ControlSize](controlsize.md)
   The size classes, like regular or small, that you can apply to controls within a view.
 

@@ -1,6 +1,6 @@
 # replaceData(_:length:data:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

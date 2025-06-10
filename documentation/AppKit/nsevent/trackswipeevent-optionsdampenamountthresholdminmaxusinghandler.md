@@ -1,6 +1,6 @@
 # trackSwipeEvent(options:dampenAmountThresholdMin:max:usingHandler:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Allows tracking and user interface feedback of scroll wheel events.

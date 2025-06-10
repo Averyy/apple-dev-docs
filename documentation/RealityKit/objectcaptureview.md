@@ -27,22 +27,15 @@ The primary view of the Object Capture front-end 3D UI.  This view is used to pr
   Renders the current state of the provided session.
 - [init(session: ObjectCaptureSession, cameraFeedOverlay: () -> Overlay)](objectcaptureview/init(session:camerafeedoverlay:).md)
   Renders the current state of the provided session.
-### Instance Properties
-- [var body: some View](objectcaptureview/body-swift.property.md)
-  The content and behavior of the view.
 ### Instance Methods
 - [func hideObjectReticle(Bool) -> ObjectCaptureView<Overlay>](objectcaptureview/hideobjectreticle(_:).md)
   Hides the object selection reticle when the session is in `.ready` state if set to true. Example: ObjectCaptureView(session: mySession) .hideObjectReticle()
-### Type Aliases
-- [ObjectCaptureView.Body](objectcaptureview/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Default Implementations
-- [View Implementations](objectcaptureview/view-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

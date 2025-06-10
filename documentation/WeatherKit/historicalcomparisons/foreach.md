@@ -1,6 +1,6 @@
 # forEach(_:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.

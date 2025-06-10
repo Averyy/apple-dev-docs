@@ -1,6 +1,6 @@
 # otherParticipants
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The identifiers of the other participants in a group.

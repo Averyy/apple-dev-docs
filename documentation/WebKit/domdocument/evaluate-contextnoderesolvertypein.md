@@ -1,6 +1,6 @@
 # evaluate(_:contextNode:resolver:type:in:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

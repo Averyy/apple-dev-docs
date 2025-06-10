@@ -223,6 +223,7 @@ let slice = column[100 ..< 200]
 - [OptionalColumnProtocol](optionalcolumnprotocol.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

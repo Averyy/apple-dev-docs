@@ -11,7 +11,7 @@ The seats that can manipulate or interact with the equipment.
 ## Declaration
 
 ```swift
-var seatControl: ControllingSeats
+var seatControl: ControllingSeats { get set }
 ```
 
 ## See Also

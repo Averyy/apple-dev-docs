@@ -1,6 +1,6 @@
 # DataScannerViewController.QualityLevel.accurate
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: case
 
 A quality level that prioritizes recognition accuracy over speed.

@@ -1,6 +1,6 @@
 # SetAlgebra Implementations
 
-**Framework**: Xcuiautomation
+**Framework**: XCUIAutomation
 
 ## Topics
 

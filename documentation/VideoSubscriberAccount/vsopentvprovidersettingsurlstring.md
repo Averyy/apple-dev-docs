@@ -1,6 +1,6 @@
 # VSOpenTVProviderSettingsURLString
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: var
 
 A URL string you use to deep link to the system’s TV Provider settings.

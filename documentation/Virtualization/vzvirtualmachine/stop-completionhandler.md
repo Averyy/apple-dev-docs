@@ -18,8 +18,6 @@ func stop() async throws
 
 > ⚠️ **Warning**:  This is a destructive operation. It stops the VM without giving the guest a chance to stop cleanly.
 
- This is a destructive operation. It stops the VM without giving the guest a chance to stop cleanly.
-
 To determine if a VM is in a state that allows you to stop it, check the VM’s [`canStop`](vzvirtualmachine/canstop.md) or [`canRequestStop`](vzvirtualmachine/canrequeststop.md) properties.
 
 ## Parameters

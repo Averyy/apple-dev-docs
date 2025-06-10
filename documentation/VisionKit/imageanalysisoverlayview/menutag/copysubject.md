@@ -1,6 +1,6 @@
 # copySubject
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 An index for the copy-subject menu item.

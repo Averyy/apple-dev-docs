@@ -3,7 +3,7 @@
 **Framework**: MapKit  
 **Kind**: enum
 
-Constants indicating whether measurements begin at the leading or trailing edge of the view.
+Constants that indicate how the framework should align measurements.
 
 **Availability**:
 - iOS 11.0+
@@ -25,10 +25,8 @@ enum Alignment
   Scale measurements begin at the leading edge of the view.
 - [MKScaleView.Alignment.trailing](mkscaleview/alignment/trailing.md)
   Scale measurements begin at the trailing edge of the view.
-- [MKScaleView.Alignment.leading](mkscaleview/alignment/leading.md)
-  Scale measurements begin at the leading edge of the view.
-- [MKScaleView.Alignment.trailing](mkscaleview/alignment/trailing.md)
-  Scale measurements begin at the trailing edge of the view.
+- [MKScaleView.Alignment.center](mkscaleview/alignment/center.md)
+  Scale measurements appear horizontally centered within the view.
 ### Initializers
 - [init?(rawValue: Int)](mkscaleview/alignment/init(rawvalue:).md)
 
@@ -40,6 +38,7 @@ enum Alignment
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

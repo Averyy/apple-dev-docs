@@ -154,14 +154,22 @@ In the absence of using log handlers, your CPU adds a default handler that inter
 
 ## See Also
 
-- [Stepping through code and inspecting variables to isolate bugs](../Xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs.md)
-  Find the cause of your bugs by watching variables change as you step through your source code in the debugger.
-- [Optimizing GPU performance](../Xcode/Optimizing-GPU-performance.md)
-  Find and address performance bottlenecks using the Metal debugger.
-- [Using Function Specialization to Build Pipeline Variants](using-function-specialization-to-build-pipeline-variants.md)
-  Create pipelines for different levels of detail from a common shader source.
-- [Shader Libraries](shader-libraries.md)
-  Manage and load your app’s Metal shaders.
+- [Supporting Simulator in a Metal app](supporting-simulator-in-a-metal-app.md)
+  Configure alternative render paths in your Metal app to enable running your app in Simulator.
+- [Capturing Metal Commands Programmatically](capturing-metal-commands-programmatically.md)
+  Invoke Metal’s frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
+- [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
+  Prototype and test your Metal apps in Simulator.
+- [Improving your game’s graphics performance and settings](improving-your-games-graphics-performance-and-settings.md)
+  Fix performance glitches and develop default settings for smooth experiences on Apple platforms using the powerful suite of Metal development tools.
+- [Metal debugger](../Xcode/Metal-debugger.md)
+  Debug and profile your Metal workload with a GPU trace.
+- [Metal developer workflows](../Xcode/Metal-developer-workflows.md)
+  Locate and fix issues related to your app’s use of the Metal API and GPU functions.
+- [GPU Counters and Counter Sample Buffers](gpu-counters-and-counter-sample-buffers.md)
+  Retrieve runtime data from a GPU device by sampling one or more of its counters.
+- [Metal Debugging Types](metal-debugging-types.md)
+  Create capture managers and capture scopes, and review a GPU device’s log after it runs a command buffer.
 
 
 ---

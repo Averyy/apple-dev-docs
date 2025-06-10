@@ -10,6 +10,7 @@ The update stage object that lets you read and update the current settings of a 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -65,8 +66,6 @@ The settings this object exposes are the runtime editable values on the solver i
   A reference counted immutable resource which contains one or more inverse kinematics solver rigs.
 - [struct IKSolverDefinition](iksolverdefinition.md)
   A container describing a solver instance.
-- [IKSolverDefinition.ID](iksolverdefinition/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 
 ---

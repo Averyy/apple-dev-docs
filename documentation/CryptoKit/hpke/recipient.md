@@ -27,7 +27,9 @@ To decrypt and verify the identity of encrypted messages, initialize a `Recipien
 ## Topics
 
 ### Initializers
-- [init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data) throws](hpke/recipient/init(privatekey:ciphersuite:info:encapsulatedkey:).md)
+- [init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data) throws](hpke/recipient/init(privatekey:ciphersuite:info:encapsulatedkey:)-6jqhf.md)
+  Creates a recipient in base mode.
+- [init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data) throws](hpke/recipient/init(privatekey:ciphersuite:info:encapsulatedkey:)-7v86b.md)
   Creates a recipient in base mode.
 - [init<SK>(privateKey: SK, ciphersuite: HPKE.Ciphersuite, info: Data, encapsulatedKey: Data, authenticatedBy: SK.PublicKey) throws](hpke/recipient/init(privatekey:ciphersuite:info:encapsulatedkey:authenticatedby:).md)
   Creates a recipient in authentication mode.
@@ -47,6 +49,7 @@ To decrypt and verify the identity of encrypted messages, initialize a `Recipien
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

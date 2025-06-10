@@ -1,6 +1,6 @@
 # isBatteryMonitoringEnabled
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A Boolean value that determines whether the app can monitor the device’s battery.

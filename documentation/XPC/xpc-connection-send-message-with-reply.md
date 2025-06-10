@@ -1,6 +1,6 @@
 # xpc_connection_send_message_with_reply(_:_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Sends a message over the connection to the destination service and associates a handler to invoke when the remote service sends a reply message.
@@ -14,7 +14,7 @@ Sends a message over the connection to the destination service and associates a 
 ## Declaration
 
 ```swift
-func xpc_connection_send_message_with_reply(_ connection: xpc_connection_t, _ message: xpc_object_t, _ replyq: dispatch_queue_t?, _ handler: @escaping xpc_handler_t)
+func xpc_connection_send_message_with_reply(_ connection: xpc_connection_t, _ message: xpc_object_t, _ replyq: dispatch_queue_t?, _ handler: @escaping (xpc_object_t) -> Void)
 ```
 
 #### Discussion

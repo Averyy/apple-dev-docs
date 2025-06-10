@@ -8,9 +8,9 @@ Sets the style for date pickers within this view.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
+- Mac Catalyst ?+
 - macOS 10.15+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

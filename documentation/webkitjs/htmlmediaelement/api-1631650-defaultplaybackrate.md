@@ -1,6 +1,6 @@
 # defaultPlaybackRate
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The default rate used to play the media resource.

@@ -1,6 +1,6 @@
 # EventText
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 The official text describing a severe weather event from the agency.

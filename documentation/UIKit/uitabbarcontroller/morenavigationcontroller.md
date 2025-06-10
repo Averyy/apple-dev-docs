@@ -1,6 +1,6 @@
 # moreNavigationController
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The view controller that manages the More navigation interface.

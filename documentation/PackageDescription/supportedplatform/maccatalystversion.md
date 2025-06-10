@@ -26,11 +26,14 @@ struct MacCatalystVersion
   The value that represents Mac Catalyst 17.0.
 - [static let v18: SupportedPlatform.MacCatalystVersion](supportedplatform/maccatalystversion/v18.md)
   The value that represents Mac Catalyst 18.0.
+- [static let v26: SupportedPlatform.MacCatalystVersion](supportedplatform/maccatalystversion/v26.md)
+  The value that represents Mac Catalyst 26.0.
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

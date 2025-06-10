@@ -36,7 +36,7 @@ The `videoLayer` should be in the `animationLayer` sublayer tree. The `animation
 
 ## See Also
 
-- [convenience init(additionalLayer: CALayer, asTrackID: CMPersistentTrackID)](avvideocompositioncoreanimationtool/init(additionallayer:astrackid:).md)
+- [convenience init(additionalLayer: sending CALayer, asTrackID: CMPersistentTrackID)](avvideocompositioncoreanimationtool/init(additionallayer:astrackid:).md)
   Adds a Core Animation layer to the video composition.
 - [convenience init(postProcessingAsVideoLayers: [CALayer], in: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayers:in:).md)
   Composes the composited video frames with the Core Animation layer.

@@ -10,8 +10,6 @@ Add a media picker view controller to your app to enable users to choose music i
 
 > ❗ **Important**:  Your app’s `Info.plist` file must include the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppleMusicUsageDescription) key prior to accessing the user’s music library. If that key isn’t present, displaying the media picker causes your app to exit.
 
- Your app’s `Info.plist` file must include the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppleMusicUsageDescription) key prior to accessing the user’s music library. If that key isn’t present, displaying the media picker causes your app to exit.
-
 ##### Adopt the Protocol and Create the System Music Player
 
 To enable your app to respond to user input, adopt the [`MPMediaPickerControllerDelegate`](mpmediapickercontrollerdelegate.md) protocol.

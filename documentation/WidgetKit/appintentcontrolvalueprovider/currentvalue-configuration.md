@@ -1,6 +1,6 @@
 # currentValue(configuration:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: method  
 **Required**: Yes
 
@@ -9,7 +9,9 @@ The current value of the control.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 

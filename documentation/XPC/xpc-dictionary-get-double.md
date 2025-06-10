@@ -1,6 +1,6 @@
 # xpc_dictionary_get_double(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Gets a double-precision floating point primitive value from a dictionary directly.

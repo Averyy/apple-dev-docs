@@ -53,6 +53,7 @@ for (word, number) in zip(words, numbers) {
 ### Conforms To
 - [Copyable](copyable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

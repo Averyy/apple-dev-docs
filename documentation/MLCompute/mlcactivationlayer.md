@@ -24,8 +24,6 @@ To construct an activation layer, create an activation descriptor and then pass 
 
 > 💡 **Tip**:  If you don’t need to customize the behavior of the activation layer, you can save time by using [`Preconfigured Activation Layers`](preconfigured-activation-layers.md) instead of creating a descriptor to use with an activation layer initializer.
 
- If you don’t need to customize the behavior of the activation layer, you can save time by using [`Preconfigured Activation Layers`](preconfigured-activation-layers.md) instead of creating a descriptor to use with an activation layer initializer.
-
 ## Topics
 
 ### Creating Activation Layers

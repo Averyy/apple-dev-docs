@@ -16,6 +16,7 @@ Deactivate a subscription offer that has offer codes for an auto-renewable subsc
   Get details about a specific subscription offer that has offer codes for an auto-renewable subscription.
 - [List All Subscription Offer Code Prices](get-v1-subscriptionoffercodes-_id_-prices.md)
   Get a list of price tiers for a subscription offer code.
+- [GET /v1/subscriptionOfferCodes/{id}/relationships/prices](get-v1-subscriptionoffercodes-_id_-relationships-prices.md)
 
 
 ---

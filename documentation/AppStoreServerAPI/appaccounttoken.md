@@ -3,7 +3,7 @@
 **Framework**: App Store Server API  
 **Kind**: typealias
 
-The UUID that an app optionally generates to map a customer’s In-App Purchase with its resulting App Store transaction.
+The UUID that you generate to associate a customer’s In-App Purchase with its resulting App Store transaction.
 
 **Availability**:
 - App Store Server API 1.0+
@@ -20,7 +20,11 @@ uuid appAccountToken
 
 #### Discussion
 
-When a customer initiates an in-app purchase, you can optionally generate an [`appAccountToken(_:)`](https://developer.apple.com/documentation/StoreKit/Product/PurchaseOption/appAccountToken(_:)) and send it to the App Store. If you use the [`Original API for In-App Purchase`](https://developer.apple.com/documentation/StoreKit/original-api-for-in-app-purchase), you may provide a UUID in the [`applicationUsername`](https://developer.apple.com/documentation/StoreKit/SKMutablePayment/applicationUsername) property. The App Store returns the same UUID in [`appAccountToken`](https://developer.apple.com/documentation/StoreKit/Transaction/appAccountToken) in the transaction information after the customer completes the purchase.
+When a customer initiates an In-App Purchase in your app, you can optionally generate an app account token and call [`appAccountToken(_:)`](https://developer.apple.com/documentation/StoreKit/Product/PurchaseOption/appAccountToken(_:)) to associate it with the purchase. If you use the [`Original API for In-App Purchase`](https://developer.apple.com/documentation/StoreKit/original-api-for-in-app-purchase), you can provide a UUID in the [`applicationUsername`](https://developer.apple.com/documentation/StoreKit/SKMutablePayment/applicationUsername) property. The App Store returns the same UUID in [`appAccountToken`](https://developer.apple.com/documentation/StoreKit/Transaction/appAccountToken) in the transaction information and subscription renewal information after the customer completes the purchase.
+
+To provide an app account token for a transaction that the customer completes outside of your app, or to update the value of an existing app account token, call the [`Set App Account Token`](set-app-account-token.md) endpoint.
+
+##### Use the App Account Token with Consumption Requests
 
 The [`ConsumptionRequest`](consumptionrequest.md) response body requires that you set the `appAccountToken` value to a valid value of either a UUID or an empty string. Set the `appAccountToken` value to the value you received in the `CONSUMPTION_REQUEST` notification, or, if you choose not to provide this information, set the value to an empty string.
 

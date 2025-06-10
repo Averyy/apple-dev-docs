@@ -1,9 +1,9 @@
-# init()
+# init(_:)
 
 **Framework**: Swift  
 **Kind**: init
 
-Creates a vector with zero in all lanes.
+Creates a vector from the given sequence.
 
 **Availability**:
 - iOS 8.0+
@@ -17,10 +17,18 @@ Creates a vector with zero in all lanes.
 ## Declaration
 
 ```swift
-init()
+init<S>(_ scalars: S) where S : Sequence, Self.Scalar == S.Element
 ```
+
+#### Discussion
+
+> **Note**: `scalars` must have the same number of elements as the vector type.
+
+## Parameters
+
+- `scalars`: The elements to use in the vector.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/simdmask/init())*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/simdmask/init(_:))*

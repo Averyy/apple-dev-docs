@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: enum
 
-Represents the state of a `Conversation` at a given moment in time.
+Values that describe the current state of a conversation.
 
 **Availability**:
 - iOS 17.4+
@@ -20,19 +20,19 @@ enum State
 
 ## Topics
 
-### Enumeration Cases
+### States
 - [Conversation.State.idle](conversation/state-swift.enum/idle.md)
-  The conversation has been registered with the system, but is not yet active.
+  The conversation was registered with the system, but it’s not active yet.
 - [Conversation.State.joined](conversation/state-swift.enum/joined.md)
-  Audio/video streams are active and the user is able to engage with remote participants.
+  Audio and video streams are active and the local participant is able to engage with remote participants.
 - [Conversation.State.joining](conversation/state-swift.enum/joining.md)
-  The conversation is being prepared, e.g. audio and video streams are being established.
+  The setup process of the conversation in progress; for example, establishing audio and video streams.
 - [Conversation.State.leaving](conversation/state-swift.enum/leaving.md)
-  The conversation is being torn down.
+  Participants left the conversation and it’s in the process of ending.
 - [Conversation.State.left](conversation/state-swift.enum/left.md)
-  The conversation is no longer active and any audio/video sessions have ended.
+  The conversation is no longer active and all audio and video sessions have ended.
 - [Conversation.State.paused](conversation/state-swift.enum/paused.md)
-  Audio and video streams have been paused, but may be resumed.
+  Audio and video streams are paused, but may resume.
 ### Initializers
 - [init?(rawValue: Int)](conversation/state-swift.enum/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
@@ -56,6 +56,16 @@ enum State
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var localMember: Handle?](conversation/localmember.md)
+  The handle that identifies the local participant to remote participants.
+- [var state: Conversation.State](conversation/state-swift.property.md)
+  The current state of the conversation.
+- [var uuid: UUID](conversation/uuid.md)
+  The unique identifier for a conversation.
 
 
 ---

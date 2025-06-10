@@ -22,7 +22,7 @@ static var nominalFrameRate: AVAsyncProperty<Root, Float> { get }
 
 #### Discussion
 
-Use the [`load(_:)`](avasynchronouskeyvalueloading/load(_:).md) method to retrieve the property value.
+Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
 
 The nominal frame rate indicates the number of frames per second for tracks that contain a full frame per media sample. For field-based (interlaced) video tracks, the value of this property indicates the field rate, not the frame rate.
 

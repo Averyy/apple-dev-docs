@@ -1,6 +1,6 @@
 # HourlyWeatherStatistics
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure that holds a collection of hour weather statistics data.
@@ -77,6 +77,7 @@ Weather statistics for each hour are derived from data for that hour, collected 
 - [Equatable](../Swift/Equatable.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 

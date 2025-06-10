@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to play the Lost Mode sound.
+The command to play the Lost Mode sound on a device that’s in Lost Mode.
 
 **Availability**:
 - iOS 10.3+
 - iPadOS 10.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

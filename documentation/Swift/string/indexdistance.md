@@ -8,12 +8,12 @@ A type that represents the number of steps between two `String.Index` values, wh
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- macOS 10.10+
+- Mac Catalyst 13.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
 - Unknown ?+ - Deprecated
-- Mac Catalyst 13.0+
+- macOS 10.10+
 
 ## Declaration
 

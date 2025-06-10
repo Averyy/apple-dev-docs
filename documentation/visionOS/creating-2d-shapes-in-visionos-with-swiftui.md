@@ -1,6 +1,6 @@
 # Creating 2D shapes with SwiftUI
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Draw two-dimensional shapes in your visionOS app with SwiftUI shapes or with your custom shapes.
 

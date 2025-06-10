@@ -1,17 +1,18 @@
 # render(atTime:viewport:commandBuffer:passDescriptor:)
 
-**Framework**: Scenekit  
+**Framework**: SceneKit  
 **Kind**: method
 
 Renders the scene’s contents at the specified system time in the specified Metal command buffer.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.11+
+- macOS 10.8+
 - tvOS 9.0+
 - visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 

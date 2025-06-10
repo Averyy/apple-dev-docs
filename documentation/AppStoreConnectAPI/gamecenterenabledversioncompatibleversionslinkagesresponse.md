@@ -28,6 +28,7 @@ object GameCenterEnabledVersionCompatibleVersionsLinkagesResponse
   A request body you use to add or remove compatible versions from a Game Center-enabled version.
 - [object GameCenterEnabledVersionsResponse](gamecenterenabledversionsresponse.md)
   A response that contains a list of Game Center Enabled Version resources.
+- [object AppGameCenterEnabledVersionsLinkagesResponse](appgamecenterenabledversionslinkagesresponse.md)
 
 
 ---

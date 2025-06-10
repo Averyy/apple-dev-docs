@@ -8,8 +8,6 @@ Set sprite media handler track properties in a QT atom container.
 
 > ❗ **Important**: Sprite media is deprecated in the QuickTime file format. The information that follows documents existing content containing sprite media and should not be used for new development.
 
-Sprite media is deprecated in the QuickTime file format. The information that follows documents existing content containing sprite media and should not be used for new development.
-
 ```c
 [(SpriteTrackProperties)]
     <kSpriteTrackPropertyBackgroundColor, 1, 1>

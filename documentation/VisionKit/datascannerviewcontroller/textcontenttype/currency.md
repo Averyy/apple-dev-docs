@@ -1,6 +1,6 @@
 # DataScannerViewController.TextContentType.currency
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: case
 
 The content type for currency.

@@ -22,7 +22,7 @@ struct CompileOptions
 
 #### Overview
 
-Call [`init(compileFromPath:functionName:options:)`](bnnsgraph/context/init(compilefrompath:functionname:options:).md) to create a default options structure and then set properties such as [`optimizationPreference`](bnnsgraph/compileoptions/optimizationpreference-swift.property.md) to specify individual options.
+Call `/Accelerate/BNNSGraph/Context/init(compileFromPath:functionName:options:)` to create a default options structure and then set properties such as [`optimizationPreference`](bnnsgraph/compileoptions/optimizationpreference-swift.property.md) to specify individual options.
 
 ## Topics
 
@@ -41,11 +41,6 @@ Call [`init(compileFromPath:functionName:options:)`](bnnsgraph/context/init(comp
 ### Specifying the optimization preference
 - [BNNSGraph.CompileOptions.OptimizationPreference](bnnsgraph/compileoptions/optimizationpreference-swift.struct.md)
   Constants that describe the compilation-optimization preference.
-
-## See Also
-
-- [init(compileFromPath: String, functionName: String?, options: BNNSGraph.CompileOptions) async throws](bnnsgraph/context/init(compilefrompath:functionname:options:).md)
-  Returns a new context that wraps a graph object representing the compiled mlmodelc file.
 
 
 ---

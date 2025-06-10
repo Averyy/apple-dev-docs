@@ -1,6 +1,6 @@
 # webkitCompassHeading
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: uid
 
 A direction that is measured in degrees relative to magnetic north.

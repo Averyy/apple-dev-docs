@@ -1,6 +1,6 @@
 # contains(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a Boolean value indicating whether the back-forward list contains the specified item.

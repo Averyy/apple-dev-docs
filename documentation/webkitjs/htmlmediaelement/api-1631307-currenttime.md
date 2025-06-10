@@ -1,6 +1,6 @@
 # currentTime
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The current playback position in seconds.

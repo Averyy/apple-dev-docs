@@ -30,8 +30,6 @@ This method uses a combination of locale rules and heuristics to determine the m
 
 > ❗ **Important**:  Currently, only names using Latin or CJK scripts are supported.
 
- Currently, only names using Latin or CJK scripts are supported.
-
 Here are some general rules that describe the name component parsing behavior:
 
 - Names in Latin script have components delimited by whitespace.

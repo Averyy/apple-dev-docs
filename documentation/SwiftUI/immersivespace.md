@@ -133,6 +133,14 @@ To configure the style of the immersive space that opens at launch, add a scene 
   Immersive space content that uses a SwiftUI view hierarchy as the content.
 - [protocol ImmersiveSpaceContent](immersivespacecontent.md)
   A type that you can use as the content of an immersive space.
+### Initializers
+- [init<C>(for: Data.Type, makeContent: (Binding<Data?>) -> C)](immersivespace/init(for:makecontent:).md)
+- [init<C>(for: Data.Type, makeContent: (Binding<Data>) -> C, defaultValue: () -> Data)](immersivespace/init(for:makecontent:defaultvalue:).md)
+- [init<C>(id: String, for: Data.Type, makeContent: (Binding<Data?>) -> C)](immersivespace/init(id:for:makecontent:).md)
+- [init<C>(id: String, for: Data.Type, makeContent: (Binding<Data>) -> C, defaultValue: () -> Data)](immersivespace/init(id:for:makecontent:defaultvalue:).md)
+- [init(id:makeContent:)](immersivespace/init(id:makecontent:).md)
+  Creates the immersive space associated with the specified identifier.
+- [init<C>(makeContent: () -> C)](immersivespace/init(makecontent:).md)
 
 ## Relationships
 
@@ -149,6 +157,9 @@ To configure the style of the immersive space that opens at launch, add a scene 
   The styles that an immersive space can have.
 - [var immersiveSpaceDisplacement: Pose3D](environmentvalues/immersivespacedisplacement.md)
   The displacement that the system applies to the immersive space when moving the space away from its default position, in meters.
+- [struct ImmersiveEnvironmentBehavior](immersiveenvironmentbehavior.md)
+  The behavior of the system-provided immersive environments when a scene is opened by your app.
+- [struct ProgressiveImmersionAspectRatio](progressiveimmersionaspectratio.md)
 
 
 ---

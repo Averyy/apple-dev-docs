@@ -1,6 +1,6 @@
 # XCTestError.Code.timeoutWhileWaiting
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 A code that represents a timeout the test encountered while waiting to fulfill expectations.

@@ -8,6 +8,161 @@ Use the most up-to-date version of MapKit JS on your website.
 
 This document includes release notes for updates to MapKit JS 5. You can learn more about MapKit JS version numbers and how to automatically link to the latest available version in [`Loading the latest version of MapKit JS`](loading-the-latest-version-of-mapkit-js.md).
 
+##### 579
+
+###### New Features
+
+- [`mapkit.Directions.Transport`](mapkit.directions.transport.md) supports a new transport type, [`Cycling`](mapkit.directions.transport/cycling.md), for directions and ETAs.
+- Introduced the ability to enable 360-degree interactive Look Around imagery with [`mapkit.LookAround`](mapkit.lookaround.md) and [`mapkit.LookAroundPreview`](mapkit.lookaroundpreview.md).
+
+###### Updates
+
+- The map view and Look Around view respond to user font size preferences, and Dynamic Types on iOS. (Feedback ID: 12784220)
+- The map view now pans or zooms in response to the mouse wheel and track pad scrolls. (Feedback ID: 12019011)
+- Updated Marker annotation styles.
+
+##### 578112
+
+###### New Features
+
+- The framework now supports expanded Point of interest categories.
+
+##### 578279
+
+###### Updates
+
+- Updated maps link format.
+
+##### 57853
+
+###### New Features
+
+- Improved cartography styling.
+- New label styles for physical feature like mountain ranges.
+
+##### 5781
+
+###### New Features
+
+- Introduced a new way to generate developer tokens.
+- Introduced [`mapkit.PlaceSelectionAccessory`](mapkit.placeselectionaccessory.md) and [`mapkit.PlaceDetail`](mapkit.placedetail.md), allowing developers to display details of a location.
+- Introduced [`mapkit.PlaceAnnotation`](mapkit.placeannotation.md) that allows developers to place markers with iconographies from the map view.
+- Introduced Place ID and its lookup API.
+- Introduced new Search filtering capabilities to enforce strict search region, or only return address locations.
+
+##### 5776
+
+###### New Features
+
+- Content Security Policy is now supported.
+
+##### 57699
+
+###### Updates
+
+- Prevent erroneous source map loading errors in Web Inspector (Feedback ID: 4632607)
+
+##### 5767
+
+###### New Features
+
+- Improved map control sizing.
+
+##### 57567
+
+###### Updates
+
+- Fixed a Null is not an object error (Feedback ID: 4342930)
+
+##### 57552
+
+###### New Features
+
+- Physical features on the map view are now selectable.
+
+##### 5754
+
+###### New Features
+
+- Introduced a new way to load MapKit JS, with smaller payloads, optional libraries, and quicker initialization.
+
+##### 5741
+
+###### New Features
+
+- Map features (Point of interest and territory labels) are now selectable.
+
+##### 5731
+
+###### New Features
+
+- Introduced an option to hint preferred load priority of the map view.
+
+##### 57253
+
+###### New Features
+
+- Relaxed minimal zoom to make the entire world visible when the map view is wider than 1024 pixels.
+
+###### Updates
+
+- Ended support for Internet Explorer 11 and legacy Microsoft Edge.
+
+##### 5722
+
+###### New Features
+
+- Routing request can now be made with “avoid tolls.”
+
+##### 5630
+
+###### New Features
+
+- Modernized map view look and feel.
+
+##### 5560
+
+###### Updates
+
+- Corrected annotation alignment after browser zoom in Safari (Feedback ID: 7469504)
+
+##### 5550
+
+###### New Features
+
+- Return origin/destination information in Directions and ETAs response (Feedback ID: 8669255)
+
+###### Updates
+
+- Fixed an issue causing setting padding doesn’t respect rotation on creating new map (Feedback ID: 3565752)
+
+##### 5520
+
+###### Updates
+
+- Fixed an issue that causes setting [`cameraBoundary`](mapkit.map/cameraboundary.md) to change the map region (Feedback ID: 3518887)
+
+##### 5502
+
+###### New Features
+
+- Introduced new styles for built-in controls (zoom buttons, map type picker, etc).
+- Introduced a new map type popover.
+- Introduced a new user location annotation style.
+- Introduce a new [`None`](mapkit.map.loadpriorities/none.md) collision mode for annotations.
+
+##### 5490
+
+###### Updates
+
+- Fixed an issue causing [`anchorOffset`](annotationconstructoroptions/anchoroffset.md) to be disregarded (Feedback ID: 7789168)
+
+##### 5460
+
+###### New Features
+
+- Calling `Event.preventDefault()` on  `single-tap` event will now prevents annotation selection.
+
 ##### 5450
 
 MapKit JS 5.45.0 introduces new APIs for overlay styling and animation and a new API for searching Points of Interest within a region, and includes bug fixes.

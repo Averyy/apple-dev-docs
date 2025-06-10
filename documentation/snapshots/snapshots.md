@@ -1,6 +1,6 @@
 # Maps Web Snapshots
 
-**Framework**: Snapshots
+**Framework**: Maps Web Snapshots
 
 Create a static image of a map from a URL.
 

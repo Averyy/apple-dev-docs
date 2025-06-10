@@ -213,8 +213,12 @@ Interactions between the AppKit framework and the Game Controller framework can,
 
 - [Adapting your game interface for smaller screens](adapting-your-game-interface-for-smaller-screens.md)
   Make text legible on all devices the player chooses to run your game on.
+- [Onscreen Presentation](onscreen-presentation.md)
+  Show the output from a GPU’s rendering pass to the user in your app.
+- [HDR Content](hdr-content.md)
+  Take advantage of high dynamic range to present more vibrant colors in your apps and games.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/managing-your-game-window-for-metal-in-macos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/managing-your-game-window-for-metal-in-macos)*

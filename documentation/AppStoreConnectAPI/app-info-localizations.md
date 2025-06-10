@@ -1,6 +1,6 @@
 # App Info Localizations
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Manage the app metadata that is localized and appears on the App Store.
 
@@ -57,8 +57,10 @@ You can update localized metadata when your app is in an editable state. For mor
   Create and maintain version-specific App Store metadata that’s localized.
 - [Routing App Coverages](routing-app-coverages.md)
   Manage geographic coverage files for apps that use location to provide routing information.
+- [Accessibility declarations](accessibility-declarations.md)
+  Manage accessibility metadata for your apps per device family.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/app-info-localizations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/app-info-localizations)*

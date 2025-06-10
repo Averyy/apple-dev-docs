@@ -27,8 +27,6 @@ At a minimum, set the value for the [`normal`](uicontrol/state-swift.struct/norm
 
 > ❗ **Important**:  When the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) and [`behavioralStyle`](uibutton/behavioralstyle.md) is [`UIBehavioralStyle.mac`](uibehavioralstyle/mac.md), your app throws an exception if you use this method to set the title for any state other than [`normal`](uicontrol/state-swift.struct/normal.md).
 
- When the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) and [`behavioralStyle`](uibutton/behavioralstyle.md) is [`UIBehavioralStyle.mac`](uibehavioralstyle/mac.md), your app throws an exception if you use this method to set the title for any state other than [`normal`](uicontrol/state-swift.struct/normal.md).
-
 ## Parameters
 
 - `title`: The title to use for the specified state.

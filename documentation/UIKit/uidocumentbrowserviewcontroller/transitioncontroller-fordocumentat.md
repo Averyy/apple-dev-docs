@@ -1,6 +1,6 @@
 # transitionController(forDocumentAt:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Creates a transition controller that provides the standard system-loading and segue animations for the document browser.

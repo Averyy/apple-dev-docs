@@ -1,6 +1,6 @@
 # CFURLSetResourcePropertyForKey(_:_:_:_:)
 
-**Framework**: Corefoundation  
+**Framework**: Core Foundation  
 **Kind**: func
 
 Sets the URL’s resource property for a given key to a given value.

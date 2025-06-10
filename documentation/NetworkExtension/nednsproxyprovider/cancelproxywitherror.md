@@ -24,8 +24,6 @@ Call this method from within the proxy provider when you need to stop the proxy 
 
 > ❗ **Important**:  Subclasses should not override this method.
 
- Subclasses should not override this method.
-
 ## Parameters
 
 - `error`: An error instance containing details about the problem that the proxy provider implementation encountered.

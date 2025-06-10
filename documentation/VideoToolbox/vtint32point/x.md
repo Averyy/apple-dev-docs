@@ -1,6 +1,6 @@
 # x
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 The x-coordinate of the point.

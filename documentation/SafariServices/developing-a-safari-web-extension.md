@@ -1,6 +1,6 @@
 # Developing a Safari Web Extension
 
-**Framework**: Safariservices
+**Framework**: Safari Services
 
 Customize and enhance web pages by building a Safari web extension.
 
@@ -32,4 +32,4 @@ Before you run the sample code project in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/developing-a-safari-web-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/developing-a-safari-web-extension)*

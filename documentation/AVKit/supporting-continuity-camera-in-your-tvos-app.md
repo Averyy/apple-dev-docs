@@ -1,6 +1,6 @@
 # Supporting Continuity Camera in your tvOS app
 
-**Framework**: Avkit
+**Framework**: AVKit
 
 Capture high-quality photos, video, and audio in your Apple TV app by connecting an iPhone or iPad as a continuity device.
 
@@ -239,4 +239,4 @@ The app can temporarily disable voice processing by setting the [`isVoiceProcess
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/supporting-continuity-camera-in-your-tvos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/supporting-continuity-camera-in-your-tvos-app)*

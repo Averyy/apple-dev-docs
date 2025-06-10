@@ -1,6 +1,6 @@
 # webView(_:setFrame:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sets the frame rectangle of a web view’s window to the specified frame size.

@@ -1,6 +1,6 @@
 # Passing Structured Data to a Metal Compute Function
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Send nontexture data from Swift to your Metal shaders using a shared header file.
 
@@ -91,4 +91,4 @@ void myPostProcess(uint2 gid [[thread_position_in_grid]],
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/passing-structured-data-to-a-metal-compute-function)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/passing-structured-data-to-a-metal-compute-function)*

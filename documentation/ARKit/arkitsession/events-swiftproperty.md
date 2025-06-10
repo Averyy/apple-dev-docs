@@ -6,6 +6,7 @@
 An asynchronous sequence of events that provide updates to the current authorization status of the session.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

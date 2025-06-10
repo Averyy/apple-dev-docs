@@ -1,6 +1,6 @@
 # DOMTimeStamp
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: typealias
 
 **Availability**:

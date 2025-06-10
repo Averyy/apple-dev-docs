@@ -1,6 +1,6 @@
 # NSAttributeDescription
 
-**Framework**: Coredata  
+**Framework**: Core Data  
 **Kind**: class
 
 A description of a single attribute belonging to an entity.
@@ -90,4 +90,4 @@ Attribute descriptions are editable until they are used by an object graph manag
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/nsattributedescription)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nsattributedescription)*

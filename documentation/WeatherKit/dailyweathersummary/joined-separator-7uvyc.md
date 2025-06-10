@@ -1,6 +1,6 @@
 # joined(separator:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns a new string by concatenating the elements of the sequence, adding the given separator between each element.

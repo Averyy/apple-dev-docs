@@ -1,6 +1,6 @@
 # startTime
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The earliest possible time in seconds to start playback. (read-only)

@@ -1,6 +1,6 @@
 # hitTest(_:types:)
 
-**Framework**: Arkit  
+**Framework**: ARKit  
 **Kind**: method
 
 Searches for real-world objects or AR anchors in the captured camera image corresponding to a point in the SceneKit view.

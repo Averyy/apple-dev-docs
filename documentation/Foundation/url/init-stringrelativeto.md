@@ -24,8 +24,6 @@ init?(string: String, relativeTo url: URL?)
 
 > ❗ **Important**:  For apps linked on or after iOS 17 and aligned OS versions, [`URL`](url.md) parsing has updated from the obsolete RFC 1738/1808 parsing to the same [`RFC 3986`](https://developer.apple.comhttps://www.ietf.org/rfc/rfc3986.txt) parsing as [`URLComponents`](urlcomponents.md). This unifies the parsing behaviors of the `URL` and `URLComponents` APIs. Now, `URL` automatically percent- and IDNA-encodes invalid characters to help create a valid URL.
 
- For apps linked on or after iOS 17 and aligned OS versions, [`URL`](url.md) parsing has updated from the obsolete RFC 1738/1808 parsing to the same [`RFC 3986`](https://developer.apple.comhttps://www.ietf.org/rfc/rfc3986.txt) parsing as [`URLComponents`](urlcomponents.md). This unifies the parsing behaviors of the `URL` and `URLComponents` APIs. Now, `URL` automatically percent- and IDNA-encodes invalid characters to help create a valid URL.
-
 This initializer returns `nil` if the string doesn’t represent a valid URL even after encoding invalid characters. To check if a URL string is strictly valid according to the RFC, use the new [`init(string:encodingInvalidCharacters:)`](url/init(string:encodinginvalidcharacters:).md) initializer and pass `encodingInvalidCharacters: false`. This leaves all characters as they are and returns `nil` if the URL string is explicitly invalid.
 
 ## Parameters

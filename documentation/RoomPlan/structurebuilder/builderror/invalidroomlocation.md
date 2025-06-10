@@ -3,13 +3,13 @@
 **Framework**: RoomPlan  
 **Kind**: case
 
-An error that indicates one or more rooms are not in the same world space. [only for StructureBuilder]
+An error that indicates one or more rooms reside in a different vicinity.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

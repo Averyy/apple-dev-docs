@@ -22,13 +22,13 @@ func copy() -> Any
 
 #### Return Value
 
-The object returned by the [`NSCopying`](https://developer.apple.com/documentation/Foundation/NSCopying) protocol method [`copy(with:)`](https://developer.apple.com/documentation/foundation/nscopying/1410311-copy),.
+The object returned by the [`NSCopying`](https://developer.apple.com/documentation/Foundation/NSCopying) protocol method [`copy(with:)`](https://developer.apple.com/documentation/Foundation/NSCopying/copy(with:)),.
 
 #### Discussion
 
-This is a convenience method for classes that adopt the [`NSCopying`](https://developer.apple.com/documentation/Foundation/NSCopying) protocol. An exception is raised if there is no implementation for [`copy(with:)`](https://developer.apple.com/documentation/foundation/nscopying/1410311-copy).
+This is a convenience method for classes that adopt the [`NSCopying`](https://developer.apple.com/documentation/Foundation/NSCopying) protocol. An exception is raised if there is no implementation for [`copy(with:)`](https://developer.apple.com/documentation/Foundation/NSCopying/copy(with:)).
 
-`NSObject` does not itself support the [`NSCopying`](https://developer.apple.com/documentation/Foundation/NSCopying) protocol. Subclasses must support the protocol and implement the [`copy(with:)`](https://developer.apple.com/documentation/foundation/nscopying/1410311-copy) method. A subclass version of the [`copy(with:)`](https://developer.apple.com/documentation/foundation/nscopying/1410311-copy) method should send the message to `super` first, to incorporate its implementation, unless the subclass descends directly from `NSObject`.
+`NSObject` does not itself support the [`NSCopying`](https://developer.apple.com/documentation/Foundation/NSCopying) protocol. Subclasses must support the protocol and implement the [`copy(with:)`](https://developer.apple.com/documentation/Foundation/NSCopying/copy(with:)) method. A subclass version of the [`copy(with:)`](https://developer.apple.com/documentation/Foundation/NSCopying/copy(with:)) method should send the message to `super` first, to incorporate its implementation, unless the subclass descends directly from `NSObject`.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # setMatrixValue
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Sets the matrix values using a string representation.

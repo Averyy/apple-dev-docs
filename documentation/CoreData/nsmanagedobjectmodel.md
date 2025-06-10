@@ -129,7 +129,9 @@ for (NSEntityDescription *entity in aModel) {
 ### Instance Methods
 - [func makeManagedObjectModel(for: Schema, mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](nsmanagedobjectmodel/makemanagedobjectmodel(for:mergedwith:)-swift.method.md)
 ### Type Methods
-- [static func makeManagedObjectModel(for: [any PersistentModel.Type], mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](nsmanagedobjectmodel/makemanagedobjectmodel(for:mergedwith:)-swift.type.method.md)
+- [static func makeManagedObjectModel(for: any PersistentModel.Type..., mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](nsmanagedobjectmodel/makemanagedobjectmodel(for:mergedwith:)-2tc31.md)
+- [static func makeManagedObjectModel(for: [any PersistentModel.Type], mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](nsmanagedobjectmodel/makemanagedobjectmodel(for:mergedwith:)-37opo.md)
+- [static func makeManagedObjectModel(for: Schema, mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](nsmanagedobjectmodel/makemanagedobjectmodel(for:mergedwith:)-7lqq9.md)
 
 ## Relationships
 

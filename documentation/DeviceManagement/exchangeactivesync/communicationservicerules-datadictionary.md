@@ -6,11 +6,9 @@
 The communication service rules.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
+- iOS 10.0+
+- iPadOS 10.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,7 +18,7 @@ object ExchangeActiveSync.CommunicationServiceRules
 
 ## Topics
 
-### Profiles
+### Objects
 - [object ExchangeActiveSync.CommunicationServiceRules.DefaultServiceHandlers](exchangeactivesync/communicationservicerules-data.dictionary/defaultservicehandlers-data.dictionary.md)
   The default service handlers.
 

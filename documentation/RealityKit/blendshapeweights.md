@@ -10,6 +10,7 @@ A set of animatable weight values that collectively represent the blending amoun
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -50,20 +51,6 @@ struct BlendShapeWeights
   An individual weight in the collection.
 - [BlendShapeWeights.Index](blendshapeweights/index.md)
   A position of an individual weight in the collection.
-- [BlendShapeWeights.Indices](blendshapeweights/indices.md)
-  A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [BlendShapeWeights.Iterator](blendshapeweights/iterator.md)
-  A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [BlendShapeWeights.SubSequence](blendshapeweights/subsequence.md)
-  A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
-### Default Implementations
-- [BidirectionalCollection Implementations](blendshapeweights/bidirectionalcollection-implementations.md)
-- [Collection Implementations](blendshapeweights/collection-implementations.md)
-- [Decodable Implementations](blendshapeweights/decodable-implementations.md)
-- [Encodable Implementations](blendshapeweights/encodable-implementations.md)
-- [Equatable Implementations](blendshapeweights/equatable-implementations.md)
-- [MutableCollection Implementations](blendshapeweights/mutablecollection-implementations.md)
-- [Sequence Implementations](blendshapeweights/sequence-implementations.md)
 
 ## Relationships
 

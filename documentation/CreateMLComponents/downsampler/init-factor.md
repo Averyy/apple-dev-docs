@@ -1,6 +1,6 @@
 # init(factor:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: init
 
 Creates a down sample temporal transformer.

@@ -85,8 +85,6 @@ The observer in this example prints the prediction’s result — a timestamp, 
 
 > ❗ **Important**:  You must maintain a strong reference to your observer. Sound analyzers don’t keep strong references to your observer.
 
- You must maintain a strong reference to your observer. Sound analyzers don’t keep strong references to your observer.
-
 ##### Create an Audio File Analyzer
 
 Analyze an audio file by creating an [`SNAudioFileAnalyzer`](snaudiofileanalyzer.md) and passing a URL to an audio file to the [`init(url:)`](snaudiofileanalyzer/init(url:).md) initializer.
@@ -100,8 +98,6 @@ func createAnalyzer(audioFileURL: URL) -> SNAudioFileAnalyzer? {
 ```
 
 > 💡 **Tip**:  Audio file analyzers work with any compressed or uncompressed audio file format that [`Core Audio`](https://developer.apple.com/documentation/CoreAudio) supports.
-
- Audio file analyzers work with any compressed or uncompressed audio file format that [`Core Audio`](https://developer.apple.com/documentation/CoreAudio) supports.
 
 Add your sound classification request and results observer to the analyzer by calling the [`add(_:withObserver:)`](snaudiofileanalyzer/add(_:withobserver:).md) method.
 

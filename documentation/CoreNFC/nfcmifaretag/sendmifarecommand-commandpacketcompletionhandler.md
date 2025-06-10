@@ -1,6 +1,6 @@
 # sendMiFareCommand(commandPacket:completionHandler:)
 
-**Framework**: Corenfc  
+**Framework**: Core NFC  
 **Kind**: method  
 **Required**: Yes
 

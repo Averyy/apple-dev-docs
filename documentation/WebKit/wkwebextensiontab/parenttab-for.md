@@ -1,6 +1,6 @@
 # parentTab(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the parent tab for the tab is needed.

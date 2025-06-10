@@ -1,6 +1,6 @@
 # status
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A value that indicates the readiness of a player object for playback.

@@ -1,6 +1,6 @@
 # associatedError
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An optional error to associate with a test issue.

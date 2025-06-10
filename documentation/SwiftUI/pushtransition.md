@@ -17,8 +17,7 @@ A transition that when added to a view will animate the view’s insertion by mo
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct PushTransition
+struct PushTransition
 ```
 
 ## Topics

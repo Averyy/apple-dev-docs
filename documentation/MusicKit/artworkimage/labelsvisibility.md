@@ -1,6 +1,6 @@
 # labelsVisibility(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Controls the visibility of labels of any controls contained within this view.

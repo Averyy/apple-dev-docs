@@ -1,6 +1,6 @@
 # issueMatcher
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A block of code that determines whether the test issue fulfills the expected failure.

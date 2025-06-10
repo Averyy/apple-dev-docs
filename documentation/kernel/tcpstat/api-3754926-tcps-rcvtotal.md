@@ -1,0 +1,18 @@
+# tcps_rcvtotal
+
+**Framework**: Kernel  
+**Kind**: structp
+
+**Availability**:
+- macOS 12.0+
+
+## Declaration
+
+```swift
+u_int32_t tcps_rcvtotal;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/tcpstat/3754926-tcps_rcvtotal)*

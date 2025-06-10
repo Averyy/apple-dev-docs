@@ -23,8 +23,6 @@ The maximum coordinate limit of the divider.
 
 > ❗ **Important**:  If your split view uses Auto Layout to size its subviews, don’t implement this method.
 
- If your split view uses Auto Layout to size its subviews, don’t implement this method.
-
 The delegate receives this message before the split view begins tracking the mouse to position a divider. You can further constrain the limits, but you can’t extend the divider limits.
 
 If the split bars are horizontal (views are one on top of the other), `proposedMax` is the bottom limit. If the split bars are vertical (views are side by side), `proposedMax` is the right limit. The initial value of `proposedMax` is the bottom (or right side) of the subview after the divider.

@@ -53,6 +53,8 @@ class AppMetrics: NSObject, MXMetricManagerSubscriber {
 
 ```
 
+> **Note**:  MetricKit delivers daily metric reports from iOS 13 or later, and macOS 26 or later.
+
 ## Topics
 
 ### Getting the shared metrics manager

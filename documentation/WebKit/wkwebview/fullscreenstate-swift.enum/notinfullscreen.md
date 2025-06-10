@@ -1,6 +1,6 @@
 # WKWebView.FullscreenState.notInFullscreen
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 **Availability**:

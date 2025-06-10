@@ -1,6 +1,6 @@
 # QuickTime movie files
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 The QuickTime file format describes the characteristics of QuickTime movie files.
 

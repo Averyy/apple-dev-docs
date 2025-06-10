@@ -9,7 +9,7 @@ Creates a room builder using the specified options.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -28,7 +28,7 @@ Pass the [`beautifyObjects`](roombuilder/configurationoptions/beautifyobjects.md
 ## See Also
 
 - [RoomBuilder.ConfigurationOptions](roombuilder/configurationoptions.md)
-  The configuration options for the RoomBuilder
+  Options that configure a room builder.
 
 
 ---

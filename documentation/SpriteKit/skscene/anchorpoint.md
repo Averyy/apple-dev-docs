@@ -17,6 +17,7 @@ The point in the view’s frame that corresponds to the scene’s origin.
 ## Declaration
 
 ```swift
+@MainActor
 var anchorPoint: CGPoint { get set }
 ```
 

@@ -7,8 +7,6 @@ The payload you use to configure parental controls for apps.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -32,17 +30,17 @@ To determine if an app can be launched, the app is evaluated with these rules:
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | macOS |
-| Allow Manual Install | macOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | macOS |
+| Device channel | macOS |
+| User channel | macOS |
+| Allow manual install | macOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | macOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

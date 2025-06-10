@@ -1,6 +1,6 @@
 # fetchDataRecord(ofTypes:for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Fetches a data record containing the given extension data types for a specific known web extension context.

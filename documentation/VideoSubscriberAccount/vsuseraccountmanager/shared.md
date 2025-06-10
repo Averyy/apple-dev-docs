@@ -1,6 +1,6 @@
 # shared
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A shared instance of the user account manager class.

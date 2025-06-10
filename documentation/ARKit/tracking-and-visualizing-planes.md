@@ -35,8 +35,6 @@ Run your session only when the view that will display it is onscreen.
 
 > ❗ **Important**: If your app requires ARKit for its core functionality, use the [`arkit`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW3) key in the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities) section of your app’s `Info.plist` file to make your app available only on devices that support ARKit. If AR is a secondary feature of your app, use the [`isSupported`](arconfiguration/issupported.md) property to determine whether to offer AR-based features.
 
-If your app requires ARKit for its core functionality, use the [`arkit`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html#//apple_ref/doc/uid/TP40009252-SW3) key in the [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIRequiredDeviceCapabilities) section of your app’s `Info.plist` file to make your app available only on devices that support ARKit. If AR is a secondary feature of your app, use the [`isSupported`](arconfiguration/issupported.md) property to determine whether to offer AR-based features.
-
 #### Place 3d Content for Detected Planes
 
 After you’ve set up your AR session, you can use SceneKit to place virtual content in the view.

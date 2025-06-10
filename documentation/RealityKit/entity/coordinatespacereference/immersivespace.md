@@ -1,6 +1,6 @@
 # Entity.CoordinateSpaceReference.immersiveSpace
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: case
 
 A reference to an opened immersive space.

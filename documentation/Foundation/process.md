@@ -25,8 +25,6 @@ You can only run the subprocess once per instance. Subsequent attempts raise an 
 
 > ❗ **Important**:  In a sandboxed app, child processes you create with this class inherit the sandbox of the parent app. Instead, write helper apps as XPC Services because it allows you to specify different sandbox entitlements for helper apps. For more information, see [`Daemons and Services Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/Introduction.html#//apple_ref/doc/uid/10000172i) and [`XPC`](https://developer.apple.com/documentation/XPC).
 
- In a sandboxed app, child processes you create with this class inherit the sandbox of the parent app. Instead, write helper apps as XPC Services because it allows you to specify different sandbox entitlements for helper apps. For more information, see [`Daemons and Services Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/Introduction.html#//apple_ref/doc/uid/10000172i) and [`XPC`](https://developer.apple.com/documentation/XPC).
-
 ## Topics
 
 ### Creating and Initializing
@@ -94,6 +92,8 @@ You can only run the subprocess once per instance. Subsequent attempts raise an 
   Sets the receiver’s executable.
 - [func launch()](process/launch.md)
   Launches the task represented by the receiver.
+### Structures
+- [Process.DidTerminateMessage](process/didterminatemessage.md)
 ### Instance Properties
 - [var launchRequirement: LaunchCodeRequirement?](process/launchrequirement.md)
 - [var launchRequirementData: Data?](process/launchrequirementdata.md)
@@ -110,6 +110,7 @@ You can only run the subprocess once per instance. Subsequent attempts raise an 
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -5,9 +5,6 @@
 
 A collection of world anchors.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift

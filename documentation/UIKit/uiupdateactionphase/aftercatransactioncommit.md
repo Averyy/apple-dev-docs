@@ -24,8 +24,6 @@ This phase runs after [`flush()`](https://developer.apple.com/documentation/Quar
 
 > ❗ **Important**:  Although you can send the latest Core Animation layer changes to the render server right away by calling [`commit()`](https://developer.apple.com/documentation/QuartzCore/CATransaction/commit()) or [`flush()`](https://developer.apple.com/documentation/QuartzCore/CATransaction/flush()) manually, doing so isn’t recommended. Calling these methods manually might send unrelated changes to the render server prematurely.
 
- Although you can send the latest Core Animation layer changes to the render server right away by calling [`commit()`](https://developer.apple.com/documentation/QuartzCore/CATransaction/commit()) or [`flush()`](https://developer.apple.com/documentation/QuartzCore/CATransaction/flush()) manually, doing so isn’t recommended. Calling these methods manually might send unrelated changes to the render server prematurely.
-
 ## See Also
 
 - [class var afterUpdateScheduled: UIUpdateActionPhase](uiupdateactionphase/afterupdatescheduled.md)

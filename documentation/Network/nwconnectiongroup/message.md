@@ -50,6 +50,7 @@ class Message
 - [NWConnection.ContentContext](nwconnection/contentcontext.md)
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

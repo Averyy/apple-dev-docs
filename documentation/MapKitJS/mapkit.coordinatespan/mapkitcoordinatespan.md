@@ -22,7 +22,7 @@ new mapkit.CoordinateSpan(
 The latitude and longitude delta parameters need to be positive numbers. MapKit JS treats negative numbers as zero.
 
 ```javascript
-var span = new mapkit.CoordinateSpan(.016, .016); // The initializer requires parameters in the order of latitude delta, longitude delta.
+const span = new mapkit.CoordinateSpan(.016, .016); // The initializer requires parameters in the order of latitude delta, longitude delta.
 ```
 
 ## Parameters

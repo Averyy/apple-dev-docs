@@ -1,6 +1,6 @@
 # allDevices
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A constant that indicates fetching user accounts from all the user’s iCloud devices.

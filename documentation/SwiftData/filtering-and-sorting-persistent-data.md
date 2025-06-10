@@ -1,6 +1,6 @@
 # Filtering and sorting persistent data
 
-**Framework**: Swiftdata
+**Framework**: SwiftData
 
 Manage data store presentation using predicates and dynamic queries.
 
@@ -183,4 +183,4 @@ These two initializers have different sorting constraints to match the needs of 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftData/filtering-and-sorting-persistent-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/filtering-and-sorting-persistent-data)*

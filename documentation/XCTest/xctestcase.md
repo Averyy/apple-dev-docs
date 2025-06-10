@@ -1,6 +1,6 @@
 # XCTestCase
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 The primary class for defining test cases, test methods, and performance tests.
@@ -15,8 +15,8 @@ class XCTestCase
 
 - [Defining Test Cases and Test Methods](defining-test-cases-and-test-methods.md)
 - [Set Up and Tear Down State in Your Tests](set-up-and-tear-down-state-in-your-tests.md)
-- [Adding Attachments to Tests, Activities, and Issues](adding-attachments-to-tests-activities-and-issues.md)
 - [Grouping Tests into Substeps with Activities](grouping-tests-into-substeps-with-activities.md)
+- [Adding Attachments to Tests, Activities, and Issues](adding-attachments-to-tests-activities-and-issues.md)
 
 #### Overview
 

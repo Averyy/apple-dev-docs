@@ -62,6 +62,8 @@ class CXSetMutedCallAction
   An encapsulation of the act of grouping or ungrouping calls.
 - [class CXSetHeldCallAction](cxsetheldcallaction.md)
   An encapsulation of the act of placing a call on hold or removing a call from hold.
+- [class CXSetTranslatingCallAction](cxsettranslatingcallaction.md)
+  An encapsulation of the act of translating a call.
 
 
 ---

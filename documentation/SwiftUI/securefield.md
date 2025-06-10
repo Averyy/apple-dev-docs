@@ -102,6 +102,8 @@ If you remove the prompt from the previous example, the field keeps the label on
 
 ## See Also
 
+- [Building rich SwiftUI text experiences](building-rich-swiftui-text-experiences.md)
+  Build an editor for formatted text using SwiftUI text editor views and attributed strings.
 - [struct TextField](textfield.md)
   A control that displays an editable text interface.
 - [func textFieldStyle<S>(S) -> some View](view/textfieldstyle(_:).md)

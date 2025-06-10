@@ -68,6 +68,7 @@ extension UInt256: ExpressibleByIntegerLiteral {
 - [CustomReflectable](customreflectable.md)
 - [ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

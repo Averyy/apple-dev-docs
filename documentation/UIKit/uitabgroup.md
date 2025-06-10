@@ -71,6 +71,7 @@ Use tab groups to create a rich hierarchy of tab items. On iPad, the system disp
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIPopoverPresentationControllerSourceItem](uipopoverpresentationcontrollersourceitem.md)
 - [UISpringLoadedInteractionSupporting](uispringloadedinteractionsupporting.md)
@@ -95,6 +96,7 @@ Use tab groups to create a rich hierarchy of tab items. On iPad, the system disp
   An object that describes an item in a tab bar.
 - [class UITab](uitab.md)
   An object that manages a tab in a tab bar.
+- [class UITabAccessory](uitabaccessory.md)
 - [class UISearchTab](uisearchtab.md)
   A tab subclass that represents the system’s search tab.
 - [class UIPageViewController](uipageviewcontroller.md)

@@ -32,8 +32,6 @@ You can also set this property using the Allow Cloud Encryption attribute in the
 
 > ❗ **Important**:  Attributes can’t change their encryption state after you promote them to your production CloudKit schema. If you choose to encrypt an attribute, it always remains that way.
 
- Attributes can’t change their encryption state after you promote them to your production CloudKit schema. If you choose to encrypt an attribute, it always remains that way.
-
 ## See Also
 
 - [var allowsExternalBinaryDataStorage: Bool](nsattributedescription/allowsexternalbinarydatastorage.md)

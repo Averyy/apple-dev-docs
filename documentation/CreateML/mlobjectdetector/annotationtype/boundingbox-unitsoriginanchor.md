@@ -18,7 +18,9 @@ case boundingBox(units: MLBoundingBoxUnits = .pixel, origin: MLBoundingBoxCoordi
 
 To use bounding box annotations, you must tell Create ML how to interpret your annotations.
 
-- Use [`MLBoundingBoxUnits`](mlboundingboxunits.md) to specify the coordinate units of your bounding boxes. - Use [`MLBoundingBoxAnchor`](mlboundingboxanchor.md) to specify the location in the bounding box its coordinates refer to. - Use [`MLBoundingBoxCoordinatesOrigin`](mlboundingboxcoordinatesorigin.md) to specify the part of the image the annotations use as their origin.
+- Use [`MLBoundingBoxUnits`](mlboundingboxunits.md) to specify the coordinate units of your bounding boxes.
+- Use [`MLBoundingBoxAnchor`](mlboundingboxanchor.md) to specify the location in the bounding box its coordinates refer to.
+- Use [`MLBoundingBoxCoordinatesOrigin`](mlboundingboxcoordinatesorigin.md) to specify the part of the image the annotations use as their origin.
 
 #### Formatting a Bounding Box Json Annotation File
 

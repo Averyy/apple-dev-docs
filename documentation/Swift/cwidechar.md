@@ -24,6 +24,8 @@ typealias CWideChar = Unicode.Scalar
   The C ‘_Bool’ and C++ ‘bool’ type.
 - [typealias CChar](cchar.md)
   The C ‘char’ type.
+- [typealias CChar8](cchar8.md)
+  The C++20 ‘char8_t’ type, which has UTF-8 encoding.
 - [typealias CChar16](cchar16.md)
   The C++11 ‘char16_t’ type, which has UTF-16 encoding.
 - [typealias CChar32](cchar32.md)
@@ -45,7 +47,6 @@ typealias CWideChar = Unicode.Scalar
   The C ‘signed char’ type.
 - [typealias CUnsignedChar](cunsignedchar.md)
   The C ‘unsigned char’ type.
-- [typealias CUnsignedInt](cunsignedint.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # sections
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: property
 
 The subscription options to merchandise by sections.

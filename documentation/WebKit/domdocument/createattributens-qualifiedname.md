@@ -1,6 +1,6 @@
 # createAttributeNS(_:qualifiedName:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

@@ -29,10 +29,14 @@ struct AEAssessmentError
 ### Error characteristics
 - [let AEAssessmentErrorDomain: String](aeassessmenterrordomain.md)
   A constant representing the error domain that the framework uses when issuing errors.
+### Instance Properties
+- [var notInstalledParticipants: [String]?](aeassessmenterror/notinstalledparticipants.md)
+- [var restrictedSystemParticipants: [String]?](aeassessmenterror/restrictedsystemparticipants.md)
 ### Type Properties
 - [static var configurationUpdatesNotSupported: AEAssessmentError.Code](aeassessmenterror/configurationupdatesnotsupported.md)
 - [static var errorDomain: String](aeassessmenterror/errordomain.md)
 - [static var multipleParticipantsNotSupported: AEAssessmentError.Code](aeassessmenterror/multipleparticipantsnotsupported.md)
+- [static var requiredParticipantsNotAvailable: AEAssessmentError.Code](aeassessmenterror/requiredparticipantsnotavailable.md)
 
 ## Relationships
 
@@ -42,6 +46,7 @@ struct AEAssessmentError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -24,8 +24,6 @@ mutating func appendInterpolation(_ number: @autoclosure @escaping () -> Double,
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated double to a log message.
 
- You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated double to a log message.
-
 ## Parameters
 
 - `number`: The interpolated double. The system automatically wraps this value in a closure.

@@ -1,6 +1,6 @@
 # dashboardInstructionVariants
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: property
 
 An array of instruction variants for the CarPlay dashboard.

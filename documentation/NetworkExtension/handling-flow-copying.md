@@ -1,6 +1,6 @@
 # Handling Flow Copying
 
-**Framework**: Networkextension
+**Framework**: Network Extension
 
 Exchange data streams by using proxy-provider classes.
 
@@ -130,4 +130,4 @@ When the system marks the connection as complete, the flow copying process is fi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/NetworkExtension/handling-flow-copying)*
+*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/handling-flow-copying)*

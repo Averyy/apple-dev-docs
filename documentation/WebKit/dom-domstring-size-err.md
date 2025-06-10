@@ -1,6 +1,6 @@
 # DOM_DOMSTRING_SIZE_ERR
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

@@ -1,6 +1,6 @@
 # DynamicIslandMode
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 A structure that offers values that describe the content mode for a Live Activity.
@@ -8,7 +8,6 @@ A structure that offers values that describe the content mode for a Live Activit
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

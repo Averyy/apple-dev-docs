@@ -44,11 +44,20 @@ protocol QuadrilateralProviding : BoundingBoxProviding
 
 ## See Also
 
-- [let inputObservation: any QuadrilateralProviding & VisionObservation](trackrectanglerequest/inputobservation.md)
-  The object to track.
-- [var trackingLevel: TrackRectangleRequest.TrackingLevel](trackrectanglerequest/trackinglevel-swift.property.md)
-  The tracking quality preference.
-- [TrackRectangleRequest.TrackingLevel](trackrectanglerequest/trackinglevel-swift.enum.md)
+- [struct NormalizedPoint](normalizedpoint.md)
+  A point in a 2D coordinate system.
+- [struct NormalizedRect](normalizedrect.md)
+  The location and dimensions of a rectangle.
+- [typealias NormalizedRegion](normalizedregion.md)
+  A polygon composed of normalized points.
+- [struct NormalizedCircle](normalizedcircle.md)
+  The center point and radius of a 2D circle.
+- [protocol BoundingBoxProviding](boundingboxproviding.md)
+  A protocol for objects that have a bounding box.
+- [protocol BoundingRegionProviding](boundingregionproviding.md)
+  A protocol for objects that have a defined boundary in an image.
+- [enum CoordinateOrigin](coordinateorigin.md)
+  The origin of a coordinate system relative to an image.
 
 
 ---

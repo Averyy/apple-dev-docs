@@ -1,6 +1,6 @@
 # DriverKit
 
-**Framework**: Driverkit  
+**Framework**: DriverKit  
 **Kind**: module
 
 Develop device drivers that run in user space.
@@ -152,6 +152,18 @@ In macOS, use the [`System Extensions`](https://developer.apple.com/documentatio
 - [DriverKit Namespaces](driverkit-namespaces.md)
 ### Macros
 - [Macros](driverkit-macros.md)
+- [kIOPropertyHashTypeKey](kiopropertyhashtypekey.md)
+- [kIOPropertySHA3256Key](kiopropertysha3256key.md)
+- [kIOPropertySHA3384Key](kiopropertysha3384key.md)
+- [kIOPropertySHA3512Key](kiopropertysha3512key.md)
+### Enumeration Cases
+- [kIOServicePMAssertionCPUBit](kioservicepmassertioncpubit.md)
+  kIOServicePMAssertionCPUBit When set, PM kernel will prefer to leave the CPU and core hardware running in “Dark Wake” state, instead of sleeping.
+- [kIOServicePMAssertionForceFullWakeupBit](kioservicepmassertionforcefullwakeupbit.md)
+  kIOServicePMAssertionForceFullWakeupBit When set, the system will immediately do a full wakeup after going to sleep.
+- [kIOServicePowerCapabilityLPW](kioservicepowercapabilitylpw.md)
+- [kSCSICmd_ATA_PASS_THROUGH](kscsicmd_ata_pass_through.md)
+- [kSCSICmd_ATA_PASS_THROUGH_EXT](kscsicmd_ata_pass_through_ext.md)
 
 
 ---

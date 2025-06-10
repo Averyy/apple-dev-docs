@@ -1,273 +1,393 @@
 {
   "metadata": {
-    "last_updated": "2025-06-07T13:23:20.821178",
+    "last_updated": "2025-06-10T21:58:29.025700",
     "total_pages": 48,
-    "etags_collected": "2025-06-07T13:23:20.821186"
+    "session_id": "2025-06-10T21:58:24.491279"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds.json": {
-      "hash": "f6d39fa5d9f7a34d376bcadc6e33649fd95b136ce2d119ab4f08226ea5726a83",
-      "last_checked": "2025-06-06T09:32:01.948680",
-      "status": "unchanged",
-      "etag": "W/\"cf5be80bca30c8b4c5f80cd5a594b4bf\""
+      "hash": "3cd2247d9bcfd79424400b8aa93a42c2503578ce860d32a36b0fd1f3dbddb86d",
+      "last_checked": "2025-06-10T21:58:25.045897",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"eccda180e134afd6139e6034a7d15a34\"",
+      "file_path": "documentation/swift-playgrounds/swift-playgrounds.md"
     },
     "https://developer.apple.com/documentation/swift-playgrounds": {
-      "hash": "f6d39fa5d9f7a34d376bcadc6e33649fd95b136ce2d119ab4f08226ea5726a83",
-      "last_checked": "2025-06-06T09:32:01.948680",
-      "status": "unchanged"
+      "hash": "3cd2247d9bcfd79424400b8aa93a42c2503578ce860d32a36b0fd1f3dbddb86d",
+      "last_checked": "2025-06-10T21:58:24.800980",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"eccda180e134afd6139e6034a7d15a34\"",
+      "file_path": "documentation/swift-playgrounds/swift-playgrounds.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/add-a-swift-package.json": {
-      "hash": "0e3c2ec0934bf02f50b04e33d21fb9b617fb18718fa88f93c070f8f974caa723",
-      "last_checked": "2025-06-06T09:32:02.869902",
-      "status": "unchanged",
-      "etag": "W/\"a3203b7fbd7175c5299f148bb0820bd0\""
+      "hash": "05cddf47c7fc61bb679a0ea1fcbae4ebe48b7aa466d12b3dcbe109fa1e854642",
+      "last_checked": "2025-06-10T21:58:25.595462",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"fd04699aced290d130ce141fee24456a\"",
+      "file_path": "documentation/swift-playgrounds/add-a-swift-package.md"
     },
     "https://developer.apple.com/documentation/swift-playgrounds/add-a-swift-package": {
-      "hash": "0e3c2ec0934bf02f50b04e33d21fb9b617fb18718fa88f93c070f8f974caa723",
-      "last_checked": "2025-06-06T09:32:02.869902",
-      "status": "unchanged"
+      "hash": "05cddf47c7fc61bb679a0ea1fcbae4ebe48b7aa466d12b3dcbe109fa1e854642",
+      "last_checked": "2025-06-10T21:58:25.595502",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"fd04699aced290d130ce141fee24456a\"",
+      "file_path": "documentation/swift-playgrounds/add-a-swift-package.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/console-print-debugging.json": {
-      "hash": "e04593407eb1b14747fb5cdf63a9e45ba987dcab7c42b46ed7cbe25c5121cdd4",
-      "last_checked": "2025-06-06T09:32:03.424911",
-      "status": "unchanged",
-      "etag": "W/\"6e53a918095693594c4bfcfe47e6cab5\""
+      "hash": "43e5c2b2089511209d4d0929e0032fc8b5984ae312e815212daf30ddb4e4169e",
+      "last_checked": "2025-06-10T21:58:25.816044",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"033cafbe1a88c58783d3fd7d3671979a\"",
+      "file_path": "documentation/swift-playgrounds/console-print-debugging.md"
     },
     "https://developer.apple.com/documentation/swift-playgrounds/console-print-debugging": {
-      "hash": "e04593407eb1b14747fb5cdf63a9e45ba987dcab7c42b46ed7cbe25c5121cdd4",
-      "last_checked": "2025-06-06T09:32:03.424911",
-      "status": "unchanged"
+      "hash": "43e5c2b2089511209d4d0929e0032fc8b5984ae312e815212daf30ddb4e4169e",
+      "last_checked": "2025-06-10T21:58:25.816084",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"033cafbe1a88c58783d3fd7d3671979a\"",
+      "file_path": "documentation/swift-playgrounds/console-print-debugging.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/live-preview.json": {
-      "hash": "f87faaeea0e94628348441fc676a76a56e7ac739906e3dcaa5fdc3e6a666bb53",
-      "last_checked": "2025-06-06T09:32:03.882402",
-      "status": "unchanged",
-      "etag": "W/\"3efcf31835e6acd9af1efa98d3313be5\""
+      "hash": "335b78e7e3d61edb9a52d5663dad03908f1a1aa5651bcd592c9ff9a7358a1c3d",
+      "last_checked": "2025-06-10T21:58:26.045457",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"ce69238b101e269b8c69da8d45e418fe\"",
+      "file_path": "documentation/swift-playgrounds/live-preview.md"
     },
     "https://developer.apple.com/documentation/swift-playgrounds/live-preview": {
-      "hash": "f87faaeea0e94628348441fc676a76a56e7ac739906e3dcaa5fdc3e6a666bb53",
-      "last_checked": "2025-06-06T09:32:03.882402",
-      "status": "unchanged"
+      "hash": "335b78e7e3d61edb9a52d5663dad03908f1a1aa5651bcd592c9ff9a7358a1c3d",
+      "last_checked": "2025-06-10T21:58:26.045507",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"ce69238b101e269b8c69da8d45e418fe\"",
+      "file_path": "documentation/swift-playgrounds/live-preview.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/project-capabilities.json": {
-      "hash": "c4cb2ee3f643a0de3e6b82c2cf9739791ad5bf49c5b7ec324d8db05bed010ec8",
-      "last_checked": "2025-06-06T09:32:04.424172",
-      "status": "unchanged",
-      "etag": "W/\"6440406163c1f1e3abe4a00fb479c65c\""
+      "hash": "3dc31629ebccc41b377ea165490d5547696e16cb2cce78abd284fd57b6290abf",
+      "last_checked": "2025-06-10T21:58:26.162569",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"9d94ba1aee102f1f0410a1d3412d1e60\"",
+      "file_path": "documentation/swift-playgrounds/project-capabilities.md"
     },
     "https://developer.apple.com/documentation/swift-playgrounds/project-capabilities": {
-      "hash": "c4cb2ee3f643a0de3e6b82c2cf9739791ad5bf49c5b7ec324d8db05bed010ec8",
-      "last_checked": "2025-06-06T09:32:04.424172",
-      "status": "unchanged"
+      "hash": "3dc31629ebccc41b377ea165490d5547696e16cb2cce78abd284fd57b6290abf",
+      "last_checked": "2025-06-10T21:58:26.162643",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"9d94ba1aee102f1f0410a1d3412d1e60\"",
+      "file_path": "documentation/swift-playgrounds/project-capabilities.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/using-content-in-user-projects.json": {
-      "hash": "9cb3442fba80ee138b937c13a75662f8ad7854e36517b5febb8325da2b2d9fcc",
-      "last_checked": "2025-06-06T09:32:04.842193",
-      "status": "unchanged",
-      "etag": "W/\"c40a81bfcd5432057f8a42b33ebe2a48\""
+      "hash": "014b641ea505b23231d075f95ce303176a093b9ffb26f42fff6da233d3373c4b",
+      "last_checked": "2025-06-10T21:58:26.415034",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"a097b1354cc1fdf550588ccde9836fde\"",
+      "file_path": "documentation/swift-playgrounds/using-content-in-user-projects.md"
     },
     "https://developer.apple.com/documentation/swift-playgrounds/using-content-in-user-projects": {
-      "hash": "9cb3442fba80ee138b937c13a75662f8ad7854e36517b5febb8325da2b2d9fcc",
-      "last_checked": "2025-06-06T09:32:04.842193",
-      "status": "unchanged"
+      "hash": "014b641ea505b23231d075f95ce303176a093b9ffb26f42fff6da233d3373c4b",
+      "last_checked": "2025-06-10T21:58:26.415074",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"a097b1354cc1fdf550588ccde9836fde\"",
+      "file_path": "documentation/swift-playgrounds/using-content-in-user-projects.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/playground-books.json": {
-      "hash": "4f104529c6ee3fcff9707c3f062d0e7e5d1a0b5c90fc946850b4963bdf33ff5f",
-      "last_checked": "2025-06-06T09:32:05.382204",
-      "status": "unchanged",
-      "etag": "W/\"3acd8b22189bfddecc8c6de97bdcae90\""
+      "hash": "b961554fd8aa51d3f7873f3891179ece75912ba84d7d140b59e99d5dd5e1f516",
+      "last_checked": "2025-06-10T21:58:26.532493",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"89964ea016940429141ed5e3a79a9ea9\"",
+      "file_path": "documentation/swift-playgrounds/playground-books.md"
     },
     "https://developer.apple.com/documentation/swift-playgrounds/playground-books": {
-      "hash": "4f104529c6ee3fcff9707c3f062d0e7e5d1a0b5c90fc946850b4963bdf33ff5f",
-      "last_checked": "2025-06-06T09:32:05.382204",
-      "status": "unchanged"
+      "hash": "b961554fd8aa51d3f7873f3891179ece75912ba84d7d140b59e99d5dd5e1f516",
+      "last_checked": "2025-06-10T21:58:26.532539",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"89964ea016940429141ed5e3a79a9ea9\"",
+      "file_path": "documentation/swift-playgrounds/playground-books.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/creating-a-subscription.json": {
-      "hash": "ae5e074ed0ffe490b3e72649b323baf63b185afe0efaf6537ce0365c131fb2ee",
-      "last_checked": "2025-06-06T09:32:05.816550",
-      "status": "unchanged",
-      "etag": "W/\"1d7fface0d8bd9f82398639f7a967f68\""
+      "hash": "12a2a1dc3e52f82f6a6041797e031025e96990d1203528928730ac2edf875f26",
+      "last_checked": "2025-06-10T21:58:26.707172",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"2554ab9d3db68c9b621875e58e8b1f61\"",
+      "file_path": "documentation/swift-playgrounds/creating-a-subscription.md"
     },
     "https://developer.apple.com/documentation/swift-playgrounds/creating-a-subscription": {
-      "hash": "ae5e074ed0ffe490b3e72649b323baf63b185afe0efaf6537ce0365c131fb2ee",
-      "last_checked": "2025-06-06T09:32:05.816550",
-      "status": "unchanged"
+      "hash": "12a2a1dc3e52f82f6a6041797e031025e96990d1203528928730ac2edf875f26",
+      "last_checked": "2025-06-10T21:58:26.707229",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"2554ab9d3db68c9b621875e58e8b1f61\"",
+      "file_path": "documentation/swift-playgrounds/creating-a-subscription.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/localizing-a-subscription-feed.json": {
-      "hash": "ae50ff89574de82dd14819c164d4b86dbb6b3b67e6a5a85b0ae2880a92aebe7b",
-      "last_checked": "2025-06-06T09:32:06.276452",
-      "status": "unchanged",
-      "etag": "W/\"55410aa10011e77ac6029d1aeb8819ae\""
+      "hash": "ad3964e5960f657f5a3094f31ab8809d5c8132a21be3846b91ebf53eb48b1b3f",
+      "last_checked": "2025-06-10T21:58:26.824822",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"adcc2c9e958a226b285b624006845b1e\"",
+      "file_path": "documentation/swift-playgrounds/localizing-a-subscription-feed.md"
     },
     "https://developer.apple.com/documentation/swift-playgrounds/localizing-a-subscription-feed": {
-      "hash": "ae50ff89574de82dd14819c164d4b86dbb6b3b67e6a5a85b0ae2880a92aebe7b",
-      "last_checked": "2025-06-06T09:32:06.276452",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/creating-and-running-a-playground-book.json": {
-      "hash": "6726b2fb57d14cf017e1a5044fba7bf2f58975ccb2711058073c490ce4ef85e0",
-      "last_checked": "2025-06-06T09:32:07.110130",
-      "status": "unchanged",
-      "etag": "W/\"6c6e40431b32913b5719610f4fac5b97\""
-    },
-    "https://developer.apple.com/documentation/swift-playgrounds/creating-and-running-a-playground-book": {
-      "hash": "6726b2fb57d14cf017e1a5044fba7bf2f58975ccb2711058073c490ce4ef85e0",
-      "last_checked": "2025-06-06T09:32:07.110130",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/structuring-content-for-swift-playgrounds.json": {
-      "hash": "64fdbe4cebc8aacee98c329504d816b40a4d63e43781595e7467a31031eeadb9",
-      "last_checked": "2025-06-06T09:32:07.512958",
-      "status": "unchanged",
-      "etag": "W/\"a96dbf2cc74ae52c68d119fd7c3ba380\""
-    },
-    "https://developer.apple.com/documentation/swift-playgrounds/structuring-content-for-swift-playgrounds": {
-      "hash": "64fdbe4cebc8aacee98c329504d816b40a4d63e43781595e7467a31031eeadb9",
-      "last_checked": "2025-06-06T09:32:07.512958",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/writing-prose-for-a-playground-page.json": {
-      "hash": "53dcad54e712276671689421448998082242aba0575a07b8432c2024ade8ca09",
-      "last_checked": "2025-06-06T09:32:07.952124",
-      "status": "unchanged",
-      "etag": "W/\"41273a5a8cb4f0d47e1e1a88faa33f21\""
-    },
-    "https://developer.apple.com/documentation/swift-playgrounds/writing-prose-for-a-playground-page": {
-      "hash": "53dcad54e712276671689421448998082242aba0575a07b8432c2024ade8ca09",
-      "last_checked": "2025-06-06T09:32:07.952124",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/specifying-editable-regions-in-a-playground-page.json": {
-      "hash": "f7524d34bded9482704056b49ed0b78fc8b0e79da98a5ee814e4c7dde6b91af3",
-      "last_checked": "2025-06-06T09:32:08.466522",
-      "status": "unchanged",
-      "etag": "W/\"8dc9a427dfd710ab109bae2b69ba244f\""
-    },
-    "https://developer.apple.com/documentation/swift-playgrounds/specifying-editable-regions-in-a-playground-page": {
-      "hash": "f7524d34bded9482704056b49ed0b78fc8b0e79da98a5ee814e4c7dde6b91af3",
-      "last_checked": "2025-06-06T09:32:08.466522",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/hiding-code-from-a-playground-page.json": {
-      "hash": "a56cbb9c761ec473815ee62dc8cf68c3dcccbec0931b35348337ff95e9568135",
-      "last_checked": "2025-06-06T09:32:08.861789",
-      "status": "unchanged",
-      "etag": "W/\"6a11d40db36228f90424872228cd6f28\""
-    },
-    "https://developer.apple.com/documentation/swift-playgrounds/hiding-code-from-a-playground-page": {
-      "hash": "a56cbb9c761ec473815ee62dc8cf68c3dcccbec0931b35348337ff95e9568135",
-      "last_checked": "2025-06-06T09:32:08.861789",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/customizing-the-completions-in-the-shortcut-bar.json": {
-      "hash": "4006407b6b26435ba46ecdd0dd19ed5d606adba4d6911001605a84f09ffdc8b5",
-      "last_checked": "2025-06-06T09:32:09.355420",
-      "status": "unchanged",
-      "etag": "W/\"7869f7f34dcc2f9f48e418b6ad590700\""
-    },
-    "https://developer.apple.com/documentation/swift-playgrounds/customizing-the-completions-in-the-shortcut-bar": {
-      "hash": "4006407b6b26435ba46ecdd0dd19ed5d606adba4d6911001605a84f09ffdc8b5",
-      "last_checked": "2025-06-06T09:32:09.355420",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/localizing-code-comments-and-string-literals.json": {
-      "hash": "963a8e3fb3d799a3046150ed8d940d589a4ce64d91af94c2aab7587367d50467",
-      "last_checked": "2025-06-06T09:32:09.759415",
-      "status": "unchanged",
-      "etag": "W/\"40c643ba9aa75d9ca03742b9a231bec1\""
-    },
-    "https://developer.apple.com/documentation/swift-playgrounds/localizing-code-comments-and-string-literals": {
-      "hash": "963a8e3fb3d799a3046150ed8d940d589a4ce64d91af94c2aab7587367d50467",
-      "last_checked": "2025-06-06T09:32:09.759415",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/adding-a-glossary-to-a-playground-book.json": {
-      "hash": "384aebd013a4593d4f745826ec66abffcbcbf017ea20555f24da40e263f1ec47",
-      "last_checked": "2025-06-06T09:32:10.201894",
-      "status": "unchanged",
-      "etag": "W/\"73002626a5acb1b36c6622cd1dc5b884\""
-    },
-    "https://developer.apple.com/documentation/swift-playgrounds/adding-a-glossary-to-a-playground-book": {
-      "hash": "384aebd013a4593d4f745826ec66abffcbcbf017ea20555f24da40e263f1ec47",
-      "last_checked": "2025-06-06T09:32:10.201894",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/giving-hints-to-help-learners-solve-problems.json": {
-      "hash": "be7496074469b4d1f00917dc4a05f4a7a22ec5e0896dbe7bfdd937a7e6c29413",
-      "last_checked": "2025-06-06T09:32:10.595640",
-      "status": "unchanged",
-      "etag": "W/\"693165177340113dc7b794660392624b\""
-    },
-    "https://developer.apple.com/documentation/swift-playgrounds/giving-hints-to-help-learners-solve-problems": {
-      "hash": "be7496074469b4d1f00917dc4a05f4a7a22ec5e0896dbe7bfdd937a7e6c29413",
-      "last_checked": "2025-06-06T09:32:10.595640",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/adding-a-chapter-to-a-playground-book.json": {
-      "hash": "2eb5b317fce5e69f6db21f13fa4ac2b3c55eaace80358fe3c492f94de34022b7",
-      "last_checked": "2025-06-06T09:32:11.035805",
-      "status": "unchanged",
-      "etag": "W/\"5f2fbeb67e6d53cba5f975f3790cb411\""
-    },
-    "https://developer.apple.com/documentation/swift-playgrounds/adding-a-chapter-to-a-playground-book": {
-      "hash": "2eb5b317fce5e69f6db21f13fa4ac2b3c55eaace80358fe3c492f94de34022b7",
-      "last_checked": "2025-06-06T09:32:11.035805",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/adding-a-page-to-a-playground-book.json": {
-      "hash": "e004ba33d53b6ca605e94ab23b494a5e0676847b76bbb8a8f0458adef16d311b",
-      "last_checked": "2025-06-06T09:32:11.426266",
-      "status": "unchanged",
-      "etag": "W/\"0464f89c446971adad7ab6213234de6d\""
-    },
-    "https://developer.apple.com/documentation/swift-playgrounds/adding-a-page-to-a-playground-book": {
-      "hash": "e004ba33d53b6ca605e94ab23b494a5e0676847b76bbb8a8f0458adef16d311b",
-      "last_checked": "2025-06-06T09:32:11.426266",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/adding-a-cutscene-to-a-playground-book.json": {
-      "hash": "21fbaaaead01a70e7d79f8b11544ee204b9038bbe9efbc4303f6b3b9387f4beb",
-      "last_checked": "2025-06-06T09:32:11.821583",
-      "status": "unchanged",
-      "etag": "W/\"affa7f06aa6df7e365e77607a956bd7f\""
-    },
-    "https://developer.apple.com/documentation/swift-playgrounds/adding-a-cutscene-to-a-playground-book": {
-      "hash": "21fbaaaead01a70e7d79f8b11544ee204b9038bbe9efbc4303f6b3b9387f4beb",
-      "last_checked": "2025-06-06T09:32:11.821583",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/using-modules-to-share-code-in-a-playground-book.json": {
-      "hash": "53800d52d3cb75198a0e07c88b5829350954b2cac6b868f4392398cc377fe970",
-      "last_checked": "2025-06-06T09:32:12.266102",
-      "status": "unchanged",
-      "etag": "W/\"14c87d6cb74a431cfd0ed9a3e57ef3ac\""
-    },
-    "https://developer.apple.com/documentation/swift-playgrounds/using-modules-to-share-code-in-a-playground-book": {
-      "hash": "53800d52d3cb75198a0e07c88b5829350954b2cac6b868f4392398cc377fe970",
-      "last_checked": "2025-06-06T09:32:12.266102",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/sharing-resources-in-a-playground-book.json": {
-      "hash": "0be48bccfbb9d9d586af777bc0cebb848b3e7d8fa3f0fecf64a68a333ac5b015",
-      "last_checked": "2025-06-06T09:32:12.681827",
-      "status": "unchanged",
-      "etag": "W/\"277cb1d4d9465cc18430614d64a572d0\""
-    },
-    "https://developer.apple.com/documentation/swift-playgrounds/sharing-resources-in-a-playground-book": {
-      "hash": "0be48bccfbb9d9d586af777bc0cebb848b3e7d8fa3f0fecf64a68a333ac5b015",
-      "last_checked": "2025-06-06T09:32:12.681827",
-      "status": "unchanged"
+      "hash": "ad3964e5960f657f5a3094f31ab8809d5c8132a21be3846b91ebf53eb48b1b3f",
+      "last_checked": "2025-06-10T21:58:26.824855",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"adcc2c9e958a226b285b624006845b1e\"",
+      "file_path": "documentation/swift-playgrounds/localizing-a-subscription-feed.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/publishing-a-subscription.json": {
-      "hash": "4cb5fe539ddb5ce9c0ebfe74610843480c7e0759f04c567a20bf54c5a98d91f1",
-      "last_checked": "2025-06-06T19:39:09.628411",
-      "status": "unchanged",
-      "etag": "W/\"a7aa2c4610905fc6556419b4a8fcba53\""
+      "hash": "53caed1e9dff5ff77e9bdb008576c955b48e433115dcfc1c2a09d8f2f9581d43",
+      "last_checked": "2025-06-10T21:58:26.956719",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"5286c208436596b842e99725a3617c15\"",
+      "file_path": "documentation/swift-playgrounds/publishing-a-subscription.md"
     },
     "https://developer.apple.com/documentation/swift-playgrounds/publishing-a-subscription": {
-      "hash": "4cb5fe539ddb5ce9c0ebfe74610843480c7e0759f04c567a20bf54c5a98d91f1",
-      "last_checked": "2025-06-06T19:39:09.628411",
-      "status": "unchanged"
+      "hash": "53caed1e9dff5ff77e9bdb008576c955b48e433115dcfc1c2a09d8f2f9581d43",
+      "last_checked": "2025-06-10T21:58:26.956757",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"5286c208436596b842e99725a3617c15\"",
+      "file_path": "documentation/swift-playgrounds/publishing-a-subscription.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/creating-and-running-a-playground-book.json": {
+      "hash": "b189a529947c32df60b6a23b352913c17c2f57289d0dce3969999e2dbe428d52",
+      "last_checked": "2025-06-10T21:58:27.073437",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"18261bec4d9f64c8a7e21e2d249d025c\"",
+      "file_path": "documentation/swift-playgrounds/creating-and-running-a-playground-book.md"
+    },
+    "https://developer.apple.com/documentation/swift-playgrounds/creating-and-running-a-playground-book": {
+      "hash": "b189a529947c32df60b6a23b352913c17c2f57289d0dce3969999e2dbe428d52",
+      "last_checked": "2025-06-10T21:58:27.073520",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"18261bec4d9f64c8a7e21e2d249d025c\"",
+      "file_path": "documentation/swift-playgrounds/creating-and-running-a-playground-book.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/structuring-content-for-swift-playgrounds.json": {
+      "hash": "398c4342faecb189a558e13ab46db289661a4ee65d60c993d09d1dd55f0a6ee5",
+      "last_checked": "2025-06-10T21:58:27.306642",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"03a1e05a74d90e642cb8f6f2b91548a8\"",
+      "file_path": "documentation/swift-playgrounds/structuring-content-for-swift-playgrounds.md"
+    },
+    "https://developer.apple.com/documentation/swift-playgrounds/structuring-content-for-swift-playgrounds": {
+      "hash": "398c4342faecb189a558e13ab46db289661a4ee65d60c993d09d1dd55f0a6ee5",
+      "last_checked": "2025-06-10T21:58:27.306699",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"03a1e05a74d90e642cb8f6f2b91548a8\"",
+      "file_path": "documentation/swift-playgrounds/structuring-content-for-swift-playgrounds.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/writing-prose-for-a-playground-page.json": {
+      "hash": "4bd53c76847e0001c2ce70de743b204de93c3ad1660f94bc6baf052319bc22de",
+      "last_checked": "2025-06-10T21:58:27.430827",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"60d674c48e295aac2197c1b6415c47d3\"",
+      "file_path": "documentation/swift-playgrounds/writing-prose-for-a-playground-page.md"
+    },
+    "https://developer.apple.com/documentation/swift-playgrounds/writing-prose-for-a-playground-page": {
+      "hash": "4bd53c76847e0001c2ce70de743b204de93c3ad1660f94bc6baf052319bc22de",
+      "last_checked": "2025-06-10T21:58:27.430873",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"60d674c48e295aac2197c1b6415c47d3\"",
+      "file_path": "documentation/swift-playgrounds/writing-prose-for-a-playground-page.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/specifying-editable-regions-in-a-playground-page.json": {
+      "hash": "d83a1f4f862af012b7b4f4cc338bd78be4ec836dfb57a653c121913e57e856ef",
+      "last_checked": "2025-06-10T21:58:27.563999",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"a1e8ee16d2e2dbc82e3b39cf32acf0a6\"",
+      "file_path": "documentation/swift-playgrounds/specifying-editable-regions-in-a-playground-page.md"
+    },
+    "https://developer.apple.com/documentation/swift-playgrounds/specifying-editable-regions-in-a-playground-page": {
+      "hash": "d83a1f4f862af012b7b4f4cc338bd78be4ec836dfb57a653c121913e57e856ef",
+      "last_checked": "2025-06-10T21:58:27.564062",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"a1e8ee16d2e2dbc82e3b39cf32acf0a6\"",
+      "file_path": "documentation/swift-playgrounds/specifying-editable-regions-in-a-playground-page.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/hiding-code-from-a-playground-page.json": {
+      "hash": "2cbd0d9bf21c57d0eaddfb2d50fed06dc83036bd541f1b686fa9a948a4bd0cb3",
+      "last_checked": "2025-06-10T21:58:27.684287",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"b0cd8a582d931c3871f49fedc06c07b5\"",
+      "file_path": "documentation/swift-playgrounds/hiding-code-from-a-playground-page.md"
+    },
+    "https://developer.apple.com/documentation/swift-playgrounds/hiding-code-from-a-playground-page": {
+      "hash": "2cbd0d9bf21c57d0eaddfb2d50fed06dc83036bd541f1b686fa9a948a4bd0cb3",
+      "last_checked": "2025-06-10T21:58:27.684328",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"b0cd8a582d931c3871f49fedc06c07b5\"",
+      "file_path": "documentation/swift-playgrounds/hiding-code-from-a-playground-page.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/customizing-the-completions-in-the-shortcut-bar.json": {
+      "hash": "7096b130203cbbb0769fa5763c402c66a18f6436cb60d278bd0018ebda6641ff",
+      "last_checked": "2025-06-10T21:58:27.921826",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"8c59fcc3b7315567ccccb1853cb69125\"",
+      "file_path": "documentation/swift-playgrounds/customizing-the-completions-in-the-shortcut-bar.md"
+    },
+    "https://developer.apple.com/documentation/swift-playgrounds/customizing-the-completions-in-the-shortcut-bar": {
+      "hash": "7096b130203cbbb0769fa5763c402c66a18f6436cb60d278bd0018ebda6641ff",
+      "last_checked": "2025-06-10T21:58:27.921868",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"8c59fcc3b7315567ccccb1853cb69125\"",
+      "file_path": "documentation/swift-playgrounds/customizing-the-completions-in-the-shortcut-bar.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/localizing-code-comments-and-string-literals.json": {
+      "hash": "5de98764513e35bd6b483e32e40d90616a6fa5e57f69bc1a9b916353b3eae715",
+      "last_checked": "2025-06-10T21:58:28.149411",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"b9818ffd20c33827cb5eb503224605cd\"",
+      "file_path": "documentation/swift-playgrounds/localizing-code-comments-and-string-literals.md"
+    },
+    "https://developer.apple.com/documentation/swift-playgrounds/localizing-code-comments-and-string-literals": {
+      "hash": "5de98764513e35bd6b483e32e40d90616a6fa5e57f69bc1a9b916353b3eae715",
+      "last_checked": "2025-06-10T21:58:28.149450",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"b9818ffd20c33827cb5eb503224605cd\"",
+      "file_path": "documentation/swift-playgrounds/localizing-code-comments-and-string-literals.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/adding-a-glossary-to-a-playground-book.json": {
+      "hash": "290f1e55fc886a9e186feff73781f4a1af23701b0031c46b9c7af8b78400505c",
+      "last_checked": "2025-06-10T21:58:28.268372",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"0102dec323443c3406f2f057d418564a\"",
+      "file_path": "documentation/swift-playgrounds/adding-a-glossary-to-a-playground-book.md"
+    },
+    "https://developer.apple.com/documentation/swift-playgrounds/adding-a-glossary-to-a-playground-book": {
+      "hash": "290f1e55fc886a9e186feff73781f4a1af23701b0031c46b9c7af8b78400505c",
+      "last_checked": "2025-06-10T21:58:28.268423",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"0102dec323443c3406f2f057d418564a\"",
+      "file_path": "documentation/swift-playgrounds/adding-a-glossary-to-a-playground-book.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/giving-hints-to-help-learners-solve-problems.json": {
+      "hash": "c7db0b0b7cc4514dd5d31a97a1fe2d5539c5446e8a61ecac6fe9113bf9f0e2b8",
+      "last_checked": "2025-06-10T21:58:28.393497",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"c5edbaf046d0cb539f2a354bd3e3b3a9\"",
+      "file_path": "documentation/swift-playgrounds/giving-hints-to-help-learners-solve-problems.md"
+    },
+    "https://developer.apple.com/documentation/swift-playgrounds/giving-hints-to-help-learners-solve-problems": {
+      "hash": "c7db0b0b7cc4514dd5d31a97a1fe2d5539c5446e8a61ecac6fe9113bf9f0e2b8",
+      "last_checked": "2025-06-10T21:58:28.393553",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"c5edbaf046d0cb539f2a354bd3e3b3a9\"",
+      "file_path": "documentation/swift-playgrounds/giving-hints-to-help-learners-solve-problems.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/adding-a-chapter-to-a-playground-book.json": {
+      "hash": "af2a345f90e911a89cd5b7f4b336cf51c07339a678e39c34a8bea0f0b8db7897",
+      "last_checked": "2025-06-10T21:58:28.518201",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"f5452260022ddc4dbf8cfae899e91744\"",
+      "file_path": "documentation/swift-playgrounds/adding-a-chapter-to-a-playground-book.md"
+    },
+    "https://developer.apple.com/documentation/swift-playgrounds/adding-a-chapter-to-a-playground-book": {
+      "hash": "af2a345f90e911a89cd5b7f4b336cf51c07339a678e39c34a8bea0f0b8db7897",
+      "last_checked": "2025-06-10T21:58:28.518240",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"f5452260022ddc4dbf8cfae899e91744\"",
+      "file_path": "documentation/swift-playgrounds/adding-a-chapter-to-a-playground-book.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/adding-a-page-to-a-playground-book.json": {
+      "hash": "926f9a0f093c417d9a384c8866b9cc6eab9a60b5fd53179ab85bc1e0af30a1cc",
+      "last_checked": "2025-06-10T21:58:28.635316",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"bac0a5473a584af6b290023e1c7cf092\"",
+      "file_path": "documentation/swift-playgrounds/adding-a-page-to-a-playground-book.md"
+    },
+    "https://developer.apple.com/documentation/swift-playgrounds/adding-a-page-to-a-playground-book": {
+      "hash": "926f9a0f093c417d9a384c8866b9cc6eab9a60b5fd53179ab85bc1e0af30a1cc",
+      "last_checked": "2025-06-10T21:58:28.635359",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"bac0a5473a584af6b290023e1c7cf092\"",
+      "file_path": "documentation/swift-playgrounds/adding-a-page-to-a-playground-book.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/adding-a-cutscene-to-a-playground-book.json": {
+      "hash": "c51a394ee5faf7410114520f2eb0ae094e6e8ed7b25a9f782845ad92228cc0e5",
+      "last_checked": "2025-06-10T21:58:28.765719",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"042e97c82baff22072d3f6cb12473fc6\"",
+      "file_path": "documentation/swift-playgrounds/adding-a-cutscene-to-a-playground-book.md"
+    },
+    "https://developer.apple.com/documentation/swift-playgrounds/adding-a-cutscene-to-a-playground-book": {
+      "hash": "c51a394ee5faf7410114520f2eb0ae094e6e8ed7b25a9f782845ad92228cc0e5",
+      "last_checked": "2025-06-10T21:58:28.765814",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"042e97c82baff22072d3f6cb12473fc6\"",
+      "file_path": "documentation/swift-playgrounds/adding-a-cutscene-to-a-playground-book.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/using-modules-to-share-code-in-a-playground-book.json": {
+      "hash": "d5bf40436db1b708b83266620f3720f235c8fa3984121901492616838679dd27",
+      "last_checked": "2025-06-10T21:58:28.912367",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"0732fe442ba28c276c2edf91d70274b7\"",
+      "file_path": "documentation/swift-playgrounds/using-modules-to-share-code-in-a-playground-book.md"
+    },
+    "https://developer.apple.com/documentation/swift-playgrounds/using-modules-to-share-code-in-a-playground-book": {
+      "hash": "d5bf40436db1b708b83266620f3720f235c8fa3984121901492616838679dd27",
+      "last_checked": "2025-06-10T21:58:28.912515",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"0732fe442ba28c276c2edf91d70274b7\"",
+      "file_path": "documentation/swift-playgrounds/using-modules-to-share-code-in-a-playground-book.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/swift-playgrounds/sharing-resources-in-a-playground-book.json": {
+      "hash": "1338b8954a972b070f6e9688aa5621926a993dac9bbcab65484202366cba923e",
+      "last_checked": "2025-06-10T21:58:29.025020",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"52f6b4c81cc0f0afdf8aada44dab189b\"",
+      "file_path": "documentation/swift-playgrounds/sharing-resources-in-a-playground-book.md"
+    },
+    "https://developer.apple.com/documentation/swift-playgrounds/sharing-resources-in-a-playground-book": {
+      "hash": "1338b8954a972b070f6e9688aa5621926a993dac9bbcab65484202366cba923e",
+      "last_checked": "2025-06-10T21:58:29.025063",
+      "status": "new",
+      "session_id": "2025-06-10T21:58:24.491279",
+      "etag": "W/\"52f6b4c81cc0f0afdf8aada44dab189b\"",
+      "file_path": "documentation/swift-playgrounds/sharing-resources-in-a-playground-book.md"
     }
   }
 }

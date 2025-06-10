@@ -1,6 +1,6 @@
 # image
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A representation of the screenshot as a platform-native image object.
@@ -19,7 +19,7 @@ A representation of the screenshot as a platform-native image object.
 
 ```swift
 @NSCopying
-@MainActor var image: UIImage { get }
+@MainActor var image: NSImage { get }
 ```
 
 ## See Also

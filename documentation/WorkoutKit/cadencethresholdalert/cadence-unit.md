@@ -1,6 +1,6 @@
 # cadence(_:unit:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: method
 
 Returns a new cadence threshold alert for the target value.

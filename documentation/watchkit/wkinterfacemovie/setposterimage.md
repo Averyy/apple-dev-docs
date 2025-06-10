@@ -1,6 +1,6 @@
 # setPosterImage(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the poster image to display for the movie.

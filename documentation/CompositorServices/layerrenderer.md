@@ -6,6 +6,7 @@
 A type that provides the Metal types and timing information you need to draw your content.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -59,12 +60,21 @@ For information about how to create and configure a layer renderer and use it to
   A type that provides access to the timing information and data types you need to render a single frame of content.
 - [LayerRenderer.Drawable](layerrenderer/drawable.md)
   A type that provides the textures and information you need to draw a frame of content.
-### Handling events
-- [var onSpatialEvent: (SpatialEventCollection) -> Void](layerrenderer/onspatialevent.md)
-  A closure that receives spatial event updates from the layer renderer.
 ### Configuring the frame update rate
 - [var minimumFrameRepeatCount: Int32](layerrenderer/minimumframerepeatcount.md)
   The number of additional frames for which the system displays the same content.
+### Structures
+- [LayerRenderer.RenderQuality](layerrenderer/renderquality-swift.struct.md)
+  Render quality controls the quality which drawing happens at.
+### Instance Properties
+- [var commandQueue: any MTL4CommandQueue](layerrenderer/commandqueue.md)
+  Returns the command queue that the layer uses for drawing operations.
+- [var onSpatialEvent: (SpatialEventCollection) -> Void](layerrenderer/onspatialevent-2jg60.md)
+  A closure that receives the spatial events updates from the LayerRenderer
+- [var onSpatialEvent: (SpatialEventCollection) -> Void](layerrenderer/onspatialevent-inq8.md)
+  A closure that receives the spatial events updates from the LayerRenderer
+- [var renderQuality: LayerRenderer.RenderQuality](layerrenderer/renderquality-swift.property.md)
+  Get the render quality to be used by the drawables.
 
 ## Relationships
 

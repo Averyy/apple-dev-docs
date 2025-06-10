@@ -1,6 +1,6 @@
 # OSSystemExtensionsWorkspace
 
-**Framework**: Systemextensions  
+**Framework**: System Extensions  
 **Kind**: class
 
 **Availability**:
@@ -40,8 +40,9 @@ class OSSystemExtensionsWorkspace
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SystemExtensions/ossystemextensionsworkspace)*
+*[View on Apple Developer](https://developer.apple.com/documentation/systemextensions/ossystemextensionsworkspace)*

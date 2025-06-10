@@ -1,6 +1,6 @@
 # Implementing User Authentication with Sign in with Apple
 
-**Framework**: Authenticationservices
+**Framework**: Authentication Services
 
 Provide a way for users of your app to set up an account and start using your services.
 
@@ -180,4 +180,4 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/implementing-user-authentication-with-sign-in-with-apple)*
+*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/implementing-user-authentication-with-sign-in-with-apple)*

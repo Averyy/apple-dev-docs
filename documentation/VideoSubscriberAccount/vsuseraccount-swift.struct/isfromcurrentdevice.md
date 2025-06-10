@@ -1,6 +1,6 @@
 # isFromCurrentDevice
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A Boolean value that indicates whether the user originated their account on the current device.

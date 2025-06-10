@@ -1,6 +1,6 @@
 # Reading route data
 
-**Framework**: Healthkit
+**Framework**: HealthKit
 
 Access the user’s route for a workout.
 
@@ -91,19 +91,7 @@ let query = HKWorkoutRouteQuery(route: myRoute) { (query, locationsOrNil, done, 
 store.execute(query)
 ```
 
-[`HKWorkoutRoute`](hkworkoutroute.md) saves a subset of [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) properties including:
-
-- [`timestamp`](https://developer.apple.com/documentation/CoreLocation/CLLocation/timestamp)
-- [`coordinate`](https://developer.apple.com/documentation/CoreLocation/CLLocation/coordinate)
-- [`altitude`](https://developer.apple.com/documentation/CoreLocation/CLLocation/altitude)
-- [`speed`](https://developer.apple.com/documentation/CoreLocation/CLLocation/speed)
-- [`course`](https://developer.apple.com/documentation/CoreLocation/CLLocation/course)
-- [`horizontalAccuracy`](https://developer.apple.com/documentation/CoreLocation/CLLocation/horizontalAccuracy)
-- [`verticalAccuracy`](https://developer.apple.com/documentation/CoreLocation/CLLocation/verticalAccuracy)
-- [`speedAccuracy`](https://developer.apple.com/documentation/CoreLocation/CLLocation/speedAccuracy)
-- [`courseAccuracy`](https://developer.apple.com/documentation/CoreLocation/CLLocation/courseAccuracy)
-
-> **Note**:  Locations from the HealthKit store are accurate within 50 meters, but they may need additional smoothing before you can use them. For example, to produce clean lines when it’s plotting the route on a map.
+> **Note**:  Locations from the HealthKit store are accurate within 50 meters or fewer, but they may need additional smoothing before you can use them (for example, to produce clean lines when plotting the route on a map).
 
 ## See Also
 
@@ -127,4 +115,4 @@ store.execute(query)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/reading-route-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/reading-route-data)*

@@ -58,4 +58,4 @@ Simulator creates a file name with a combination of “Simulator Screen Recordin
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/capturing-screenshots-and-videos-from-simulator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/capturing-screenshots-and-videos-from-simulator)*

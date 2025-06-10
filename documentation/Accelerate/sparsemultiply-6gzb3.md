@@ -26,6 +26,11 @@ func SparseMultiply(_ A: SparseMatrix_Complex_Float, _ x: DenseVector_Complex_Fl
 - `x`: (Input) dense vector.
 - `y`: (Output) dense vector.
 
+## See Also
+
+- [func SparseMultiply(SparseMatrix_Complex_Double, DenseVector_Complex_Double, DenseVector_Complex_Double)](sparsemultiply(_:_:_:)-6xiv8.md)
+  Performs the multiplication `y = Ax` for complex double values
+
 
 ---
 

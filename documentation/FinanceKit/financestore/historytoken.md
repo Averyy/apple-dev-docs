@@ -15,6 +15,10 @@ A structure that describes the starting point to use for financial data queries.
 struct HistoryToken
 ```
 
+#### Overview
+
+The framework returns this as part of a [`FinanceStore.Changes`](financestore/changes.md) instance when iterating over a `History` sequence.
+
 ## Topics
 
 ### Initializers
@@ -22,7 +26,7 @@ struct HistoryToken
   Initializes a new history token using data from the provided decoder.
 ### Instance Methods
 - [func encode(to: any Encoder) throws](financestore/historytoken/encode(to:).md)
-  Persists a the  history token data using  the provided encoder.
+  Encodes the history token into the provided encoder.
 
 ## Relationships
 
@@ -30,13 +34,7 @@ struct HistoryToken
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Sendable](../Swift/Sendable.md)
-
-## See Also
-
-- [struct FullyQualifiedOrderIdentifier](fullyqualifiedorderidentifier.md)
-  A structure that specifies the characteristics of an order.
-- [func saveOrder(signedArchive: Data) async throws -> FinanceStore.SaveOrderResult](financestore/saveorder(signedarchive:).md)
-  Adds an order to the store or updates an existing order.
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

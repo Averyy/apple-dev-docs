@@ -48,12 +48,6 @@ init(leftTangent: Double, rightTangent: Double, topTangent: Double, bottomTangen
   Creates a projective transform from the specified pose structure.
 - [init(scale: Size3D, rotation: Rotation3D, translation: Vector3D)](projectivetransform3d/init(scale:rotation:translation:)-4h5wm.md)
   Creates a projective transform from the specified scale, rotate, and translate transforms.
-- [init(scale: Size3D)](projectivetransform3d/init(scale:).md)
-  Creates a projective transform from the specified scale transform.
-- [init(rotation: Rotation3D)](projectivetransform3d/init(rotation:).md)
-  Creates a projective transform from the specified rotate transform.
-- [init(translation: Vector3D)](projectivetransform3d/init(translation:)-7l5gj.md)
-  Creates a projective transform from the specified translate transform.
 - [init(shear: AxisWithFactors)](projectivetransform3d/init(shear:).md)
   Creates a projective transform from the specified shear transform.
 - [init(fovY: Angle2D, aspectRatio: Double, nearZ: Double, farZ: Double)](projectivetransform3d/init(fovy:aspectratio:nearz:farz:).md)

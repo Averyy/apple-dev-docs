@@ -1,6 +1,6 @@
 # Performance Tests
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Gather metrics while running your code, and report a failure if the metrics become significantly worse than a baseline value.
 

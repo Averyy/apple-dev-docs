@@ -16,7 +16,7 @@ var types: [NSPasteboard.PasteboardType]? { get }
 
 #### Discussion
 
-The [`types`](nspasteboard/types.md) array is an array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects containing the union of the types of data declared for all the pasteboard items on the receiver. The returned types are listed in the order they were declared. It’s a good idea to check the value of [`types`](nspasteboard/types.md) (or call [`availableType(from:)`](nspasteboard/availabletype(from:).md)) before reading any data from an `NSPasteboard` object. If you need to see if a type in the [`types`](nspasteboard/types.md) array matches a type string you have stored locally, use the [`isEqual(to:)`](https://developer.apple.com/documentation/foundation/nsstring/1407803-isequal) method to perform the comparison.
+The [`types`](nspasteboard/types.md) array is an array of [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) objects containing the union of the types of data declared for all the pasteboard items on the receiver. The returned types are listed in the order they were declared. It’s a good idea to check the value of [`types`](nspasteboard/types.md) (or call [`availableType(from:)`](nspasteboard/availabletype(from:).md)) before reading any data from an `NSPasteboard` object. If you need to see if a type in the [`types`](nspasteboard/types.md) array matches a type string you have stored locally, use the [`isEqual(to:)`](https://developer.apple.com/documentation/Foundation/NSString/isEqual(to:)) method to perform the comparison.
 
 ## See Also
 

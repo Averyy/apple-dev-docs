@@ -50,6 +50,11 @@ By default, the view aligned behavior will limit the number of views it scrolls 
   Creates a view aligned scroll behavior.
 - [ViewAlignedScrollTargetBehavior.LimitBehavior](viewalignedscrolltargetbehavior/limitbehavior.md)
   A type that defines the amount of views that can be scrolled at a time.
+### Initializers
+- [init(anchor: UnitPoint?)](viewalignedscrolltargetbehavior/init(anchor:).md)
+  Creates a view aligned scroll behavior with the provided anchor.
+- [init(limitBehavior: ViewAlignedScrollTargetBehavior.LimitBehavior, anchor: UnitPoint?)](viewalignedscrolltargetbehavior/init(limitbehavior:anchor:).md)
+  Creates a view aligned scroll behavior with the provided limit behavior and anchor.
 
 ## Relationships
 
@@ -72,6 +77,10 @@ By default, the view aligned behavior will limit the number of views it scrolls 
   The scroll behavior that aligns scroll targets to container-based geometry.
 - [struct AnyScrollTargetBehavior](anyscrolltargetbehavior.md)
   A type-erased scroll target behavior.
+- [struct ScrollTargetBehaviorProperties](scrolltargetbehaviorproperties.md)
+  Properties influencing the scroll view a scroll target behavior applies to.
+- [struct ScrollTargetBehaviorPropertiesContext](scrolltargetbehaviorpropertiescontext.md)
+  The context in which a scroll target behavior can decide its properties.
 
 
 ---

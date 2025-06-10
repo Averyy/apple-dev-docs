@@ -1,6 +1,6 @@
 # measureMetrics(_:automaticallyStartMeasuring:for:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Measures the performance of a block of code, optionally deferring the starting point for measurement.

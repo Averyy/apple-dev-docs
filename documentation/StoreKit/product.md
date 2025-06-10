@@ -21,8 +21,8 @@ struct Product
 
 ## Mentions
 
-- [Supporting Family Sharing in your app](supporting-family-sharing-in-your-app.md)
 - [Supporting promoted In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
+- [Supporting Family Sharing in your app](supporting-family-sharing-in-your-app.md)
 
 #### Overview
 
@@ -34,7 +34,7 @@ To get a `Product` instance, call [`products(for:)`](product/products(for:).md) 
 - Determine whether a user is eligible for an introductory offer for the product using [`isEligibleForIntroOffer`](product/subscriptioninfo/iseligibleforintrooffer.md).
 - Display your subscription offers using the subscription information in [`subscription`](product/subscription.md).
 
-When users initiate a purchase, call [`purchase(options:)`](product/purchase(options:).md) or `purchase(confirmIn:options:)` on the product instance. If your app uses SwiftUI, you can also use [`PurchaseAction`](purchaseaction.md). Set purchase options ([`Product.PurchaseOption`](product/purchaseoption.md)) to define an optional app account token, apply a promotional offer, or set a product quantity. Purchase options can also simulate an Ask to Buy scenario when you’re testing your app in the sandbox environment.
+When users initiate a purchase, call [`purchase(options:)`](product/purchase(options:).md) or [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-3bivf.md) on the product instance. If your app uses SwiftUI, you can also use [`PurchaseAction`](purchaseaction.md). Set purchase options ([`Product.PurchaseOption`](product/purchaseoption.md)) to define an optional app account token, apply a promotional offer, or set a product quantity. Purchase options can also simulate an Ask to Buy scenario when you’re testing your app in the sandbox environment.
 
 Use a `Product` instance to learn whether a user is entitled to a product by checking [`currentEntitlement`](product/currententitlement.md), which holds the transaction that entitles the user to the product. This transaction information, as well as the transaction in [`latestTransaction`](product/latesttransaction.md), are cryptographically signed by the App Store in JSON Web Signature (JWS) format.
 
@@ -127,6 +127,7 @@ For information about configuring In-App Purchases in App Store Connect, see [`O
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

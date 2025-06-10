@@ -49,6 +49,7 @@ Create a metadata instance and store it as part of your model when you export a 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -24,8 +24,6 @@ mutating func appendInterpolation(_ argumentString: @autoclosure @escaping () ->
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated string to a log message.
 
- You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated string to a log message.
-
 ## Parameters
 
 - `argumentString`: The interpolated string. The system automatically wraps this value in a closure.

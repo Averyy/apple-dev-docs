@@ -1,6 +1,6 @@
 # randomElement()
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns a random element of the collection.

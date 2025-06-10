@@ -1,6 +1,6 @@
 # gestureRecognizerShouldBegin(_:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Asks the view if the gesture recognizer should continue tracking touch events.

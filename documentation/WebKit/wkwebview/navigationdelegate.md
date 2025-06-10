@@ -1,6 +1,6 @@
 # navigationDelegate
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The object you use to manage navigation behavior for the web view.

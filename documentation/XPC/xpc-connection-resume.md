@@ -1,6 +1,6 @@
 # xpc_connection_resume(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Resumes a suspended connection.

@@ -1,6 +1,6 @@
 # init(vm_pkt_size:vm_pkt_iov:vm_pkt_iovcnt:vm_flags:)
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: init
 
 **Availability**:

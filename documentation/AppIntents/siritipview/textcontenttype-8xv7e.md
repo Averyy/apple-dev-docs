@@ -9,7 +9,7 @@ Sets the text content type for this view, which the system uses to offer suggest
 - iOS 13.0+
 - iPadOS 13.0+
 - tvOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

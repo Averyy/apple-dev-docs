@@ -24,8 +24,6 @@ convenience init(objectIDs objects: [NSManagedObjectID])
 
 > ❗ **Important**:  The identifiers your provide must be from managed objects of the same entity type; mixing entity types results in an error when you execute the request.
 
- The identifiers your provide must be from managed objects of the same entity type; mixing entity types results in an error when you execute the request.
-
 ## Parameters
 
 - `objects`: The array that contains the identifiers of the managed objects to delete.

@@ -13,6 +13,7 @@ The maximum size of a list item’s image and accessory image.
 ## Declaration
 
 ```swift
+@MainActor
 class var maximumImageSize: CGSize { get }
 ```
 

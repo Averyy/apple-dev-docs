@@ -1,6 +1,6 @@
 # XCUIDevice.Appearance
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: enum
 
 Constants that indicate an interface style.
@@ -44,6 +44,7 @@ enum Appearance
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

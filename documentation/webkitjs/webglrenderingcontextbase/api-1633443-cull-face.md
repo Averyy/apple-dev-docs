@@ -1,6 +1,6 @@
 # CULL_FACE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

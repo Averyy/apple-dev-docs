@@ -13,6 +13,7 @@ Updates travel estimates, such as arrival time and the remaining time and distan
 ## Declaration
 
 ```swift
+@MainActor
 func updateEstimates(_ estimates: CPTravelEstimates, for trip: CPTrip)
 ```
 

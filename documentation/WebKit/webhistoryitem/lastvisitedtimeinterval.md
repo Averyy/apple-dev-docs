@@ -1,6 +1,6 @@
 # lastVisitedTimeInterval
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The last time and date the receiver’s page was visited.

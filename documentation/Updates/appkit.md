@@ -8,6 +8,24 @@ Learn about important changes to AppKit.
 
 Browse notable changes in [`AppKit`](https://developer.apple.comhttps://developer.apple.com/documentation/appkit).
 
+#### June 2025
+
+##### General
+
+- To use control metrics consistent with macOS 15 and earlier, use [`prefersCompactControlSizeMetrics`](https://developer.apple.com/documentation/AppKit/NSView/prefersCompactControlSizeMetrics).
+- [`NSControl.ControlSize`](https://developer.apple.com/documentation/AppKit/NSControl/ControlSize-swift.enum) includes a new extra large size, [`NSControl.ControlSize.extraLarge`](https://developer.apple.com/documentation/AppKit/NSControl/ControlSize-swift.enum/extraLarge).
+- Provide seamless immersive visuals by using [`NSBackgroundExtensionView`](https://developer.apple.com/documentation/AppKit/NSBackgroundExtensionView) to extend a view’s content under sidebars and inspectors.
+- Apply Liquid Glass effects to your custom views using [`NSGlassEffectView`](https://developer.apple.com/documentation/AppKit/NSGlassEffectView). Use [`NSGlassEffectContainerView`](https://developer.apple.com/documentation/AppKit/NSGlassEffectContainerView) to efficiently merge these views when they’re in proximity to one other.
+- Configure buttons for Liquid Glass by setting `NSButton.BezelStyle` to [`NSButton.BezelStyle.glass`](https://developer.apple.com/documentation/AppKit/NSButton/BezelStyle-swift.enum/glass).
+
+##### Split Views
+
+- Add top and bottom accessory views in split views by adding one or more [`NSSplitViewItemAccessoryViewController`](https://developer.apple.com/documentation/AppKit/NSSplitViewItemAccessoryViewController) objects to the [`topAlignedAccessoryViewControllers`](https://developer.apple.com/documentation/AppKit/NSSplitViewItem/topAlignedAccessoryViewControllers) and [`bottomAlignedAccessoryViewControllers`](https://developer.apple.com/documentation/AppKit/NSSplitViewItem/bottomAlignedAccessoryViewControllers) properties.
+
+##### Toolbars
+
+- Tint toolbar items to make them stand out and stand apart from other toolbar items by setting [`NSToolbarItem.Style`](https://developer.apple.com/documentation/AppKit/NSToolbarItem/Style-swift.enum) to [`NSToolbarItem.Style.prominent`](https://developer.apple.com/documentation/AppKit/NSToolbarItem/Style-swift.enum/prominent), and setting [`backgroundTintColor`](https://developer.apple.com/documentation/AppKit/NSToolbarItem/backgroundTintColor).
+
 #### April 2025
 
 ##### Macos Pasteboard Privacy
@@ -23,12 +41,11 @@ Browse notable changes in [`AppKit`](https://developer.apple.comhttps://develope
 ##### Swift and Swiftui
 
 - Use SwiftUI menus in AppKit with the [`NSHostingMenu`](https://developer.apple.com/documentation/SwiftUI/NSHostingMenu).
-- Animate AppKit views using SwiftUI animations using [`animate(with:changes:completion:)`](https://developer.apple.com/documentation/AppKit/NSAnimationContext/animate(with:changes:completion:)).
+- Animate AppKit views using SwiftUI animations using [`animate(_:changes:completion:)`](https://developer.apple.com/documentation/AppKit/NSAnimationContext/animate(_:changes:completion:)).
 
 ##### Api Refinements
 
 - Use the keyboard to open context menus for UI elements on which you are focused currently.
-- Highlight text and choose from a number of highlight color schemes with [`NSAttributedString.TextHighlightStyle`](https://developer.apple.com/documentation/Foundation/NSAttributedString/TextHighlightStyle).
 - Add repeat, wiggle, bounce, and rotate effects to [`SF Symbols`](https://developer.apple.comhttps://developer.apple.com/sf-symbols/).
 - Leverage predefined content types when saving files using the new format picker on `NSPanel`.
 - Resize frames and zoom in and out with new `NSCursor` APIs such as [`NSCursor.FrameResizeDirection`](https://developer.apple.com/documentation/AppKit/NSCursor/FrameResizeDirection) and [`NSCursor.FrameResizePosition`](https://developer.apple.com/documentation/AppKit/NSCursor/FrameResizePosition).
@@ -84,10 +101,14 @@ Browse notable changes in [`AppKit`](https://developer.apple.comhttps://develope
   Learn about important changes in ActivityKit.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [App Intents updates](appintents.md)
   Learn about important changes in App Intents.
 - [Apple Intelligence updates](apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -100,14 +121,10 @@ Browse notable changes in [`AppKit`](https://developer.apple.comhttps://develope
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
-- [Core Location updates](corelocation.md)
-  Learn about important changes to Core Location.
+- [Background Tasks updates](backgroundtasks.md)
+  Learn about important changes in Background Tasks.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Updates/appkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/updates/appkit)*

@@ -1,6 +1,6 @@
 # CFURLCreateByResolvingBookmarkData(_:_:_:_:_:_:_:)
 
-**Framework**: Corefoundation  
+**Framework**: Core Foundation  
 **Kind**: func
 
 Returns a new URL made by resolving bookmark data.

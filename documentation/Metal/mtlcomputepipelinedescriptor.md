@@ -27,8 +27,6 @@ class MTLComputePipelineDescriptor
 
 > ❗ **Important**:  Before creating a pipeline state, set the [`computeFunction`](mtlcomputepipelinedescriptor/computefunction.md) property on your descriptor instance. This property tells the GPU which kernel to run.
 
- Before creating a pipeline state, set the [`computeFunction`](mtlcomputepipelinedescriptor/computefunction.md) property on your descriptor instance. This property tells the GPU which kernel to run.
-
 A pipeline descriptor provides information necessary for creating an [`MTLComputePipelineState`](mtlcomputepipelinestate.md) instance.
 
 ## Topics
@@ -81,6 +79,8 @@ A pipeline descriptor provides information necessary for creating an [`MTLComput
   A Boolean value that indicates whether you can use the pipeline to create new pipelines by adding binary functions to its callable functions list.
 - [var binaryArchives: [any MTLBinaryArchive]?](mtlcomputepipelinedescriptor/binaryarchives.md)
   The binary archives that contain any precompiled shader functions to link.
+### Instance Properties
+- [var requiredThreadsPerThreadgroup: MTLSize](mtlcomputepipelinedescriptor/requiredthreadsperthreadgroup.md)
 
 ## Relationships
 
@@ -97,6 +97,8 @@ A pipeline descriptor provides information necessary for creating an [`MTLComput
 
 ## See Also
 
+- [class MTL4ComputePipelineDescriptor](mtl4computepipelinedescriptor.md)
+  Descriptor defining how a compute pipeline state would be created.
 - [protocol MTLComputePipelineState](mtlcomputepipelinestate.md)
   An interface that represents a GPU pipeline configuration for running kernels in a compute pass.
 - [class MTLStageInputOutputDescriptor](mtlstageinputoutputdescriptor.md)

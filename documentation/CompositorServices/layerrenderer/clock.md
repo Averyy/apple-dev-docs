@@ -6,6 +6,7 @@
 A type that supports operations that require a precise time measurement.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -33,6 +34,7 @@ Use this type to perform time-related operations during the rendering of a frame
 - [Clock](../Swift/Clock.md)
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

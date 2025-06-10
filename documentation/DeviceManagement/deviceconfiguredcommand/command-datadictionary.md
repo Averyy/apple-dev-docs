@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to inform a device that it can allow the user to continue in Setup Assistant.
+The command to inform the device that it can allow the user to continue in Setup Assistant.
 
 **Availability**:
 - iOS 9.0+
@@ -11,8 +11,6 @@ The request dictionary to inform a device that it can allow the user to continue
 - macOS 10.11+
 - tvOS 10.2+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

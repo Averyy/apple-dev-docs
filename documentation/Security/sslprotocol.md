@@ -71,6 +71,7 @@ The descriptions given here apply to the functions [`SSLSetProtocolVersion`](ssl
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

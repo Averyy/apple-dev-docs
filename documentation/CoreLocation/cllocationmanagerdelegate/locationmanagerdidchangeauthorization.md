@@ -32,8 +32,6 @@ Use this delegate method to manage your app’s state changes in response to its
 
 > ❗ **Important**:  Core Location always calls [`locationManagerDidChangeAuthorization(_:)`](cllocationmanagerdelegate/locationmanagerdidchangeauthorization(_:).md) when the user’s action results in an authorization status change, and when your app creates an instance of [`CLLocationManager`](cllocationmanager.md), whether your app runs in the foreground or in the background.
 
- Core Location always calls [`locationManagerDidChangeAuthorization(_:)`](cllocationmanagerdelegate/locationmanagerdidchangeauthorization(_:).md) when the user’s action results in an authorization status change, and when your app creates an instance of [`CLLocationManager`](cllocationmanager.md), whether your app runs in the foreground or in the background.
-
 If the user’s choice doesn’t change the authorization status after you call the [`requestWhenInUseAuthorization()`](cllocationmanager/requestwheninuseauthorization().md) or [`requestAlwaysAuthorization()`](cllocationmanager/requestalwaysauthorization().md) method, the location manager doesn’t report the current authorization status to this method—the location manager only reports changes. For example, the location manager calls this method when the status changes from [`CLAuthorizationStatus.notDetermined`](clauthorizationstatus/notdetermined.md) to [`CLAuthorizationStatus.authorizedWhenInUse`](clauthorizationstatus/authorizedwheninuse.md).
 
 ##### Events That Cause Authorization Status Changes

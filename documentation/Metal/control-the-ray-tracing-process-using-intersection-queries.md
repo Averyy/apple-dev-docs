@@ -28,4 +28,4 @@ Explicitly enumerate a ray’s intersections with acceleration structures by cre
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/control-the-ray-tracing-process-using-intersection-queries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/control-the-ray-tracing-process-using-intersection-queries)*

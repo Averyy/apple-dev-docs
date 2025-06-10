@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_ExpectedFrameRate
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The expected frame rate, if known.

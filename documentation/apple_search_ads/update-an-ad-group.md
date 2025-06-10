@@ -1,6 +1,6 @@
 # Update an Ad Group
 
-**Framework**: Apple_Search_Ads  
+**Framework**: Apple Search Ads  
 **Kind**: httpRequest
 
 Updates an ad group with an ad group identifier.

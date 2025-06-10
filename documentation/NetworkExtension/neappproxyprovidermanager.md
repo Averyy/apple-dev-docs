@@ -30,8 +30,6 @@ App Proxy configurations can only be used with Per-App VPN routing rules. For mo
 
 > ❗ **Important**:  The `com.apple.developer.networking.networkextension` entitlement is required in order to use the [`NEAppProxyProviderManager`](neappproxyprovidermanager.md) class. Enable this entitlement when creating an App ID in your developer account.
 
- The `com.apple.developer.networking.networkextension` entitlement is required in order to use the [`NEAppProxyProviderManager`](neappproxyprovidermanager.md) class. Enable this entitlement when creating an App ID in your developer account.
-
 ## Topics
 
 ### Loading the app proxy configuration

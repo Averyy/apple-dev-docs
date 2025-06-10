@@ -1,6 +1,6 @@
 # Making journaling actions available to Siri and Apple Intelligence
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Create app intents and entities to integrate your app’s journaling functionality with Siri and Apple Intelligence.
 
@@ -13,7 +13,7 @@ To integrate your app’s journaling capabilities with Siri and Apple Intelligen
 For example, if your app allows someone to create a new journal entry, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.journal` domain and the [`createEntry`](assistantschemas/journalintent/createentry.md) schema:
 
 ```swift
-@AssistantIntent(schema: .journal.createEntry)
+@AppIntent(schema: .journal.createEntry)
 struct CreateJournalEntryIntent {
     var message: AttributedString
     var title: String?
@@ -37,7 +37,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 If you use app entities to describe custom data types, annotate the app entity implementation with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `JournalEntity`. The following code snippet shows how the `JournalEntity` implementation uses the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro:
 
 ```swift
-@AssistantEntity(schema: .journal.entry)
+@AppEntity(schema: .journal.entry)
 struct JournalEntryEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [JournalEntryEntity.ID]) async throws -> [JournalEntryEntity] { [] }
@@ -71,4 +71,4 @@ For a list of available app entity schemas in the `.journal` domain, see [`Assis
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-journaling-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-journaling-actions-available-to-siri-and-apple-intelligence)*

@@ -22,8 +22,6 @@ init(paymentDescription: String, automaticReloadBilling: PKAutomaticReloadPaymen
 
 > ❗ **Important**:  You must set the [`automaticReloadPaymentRequest`](pkpaymentrequest/automaticreloadpaymentrequest.md) property on a [`PKPaymentRequest`](pkpaymentrequest.md) object to set up an automatic reload payment.
 
- You must set the [`automaticReloadPaymentRequest`](pkpaymentrequest/automaticreloadpaymentrequest.md) property on a [`PKPaymentRequest`](pkpaymentrequest.md) object to set up an automatic reload payment.
-
 ## Parameters
 
 - `paymentDescription`: The description you provide of the automatic reload payment and that Apple Pay displays to the user in the payment sheet.

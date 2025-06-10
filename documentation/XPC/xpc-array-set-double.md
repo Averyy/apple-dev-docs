@@ -1,6 +1,6 @@
 # xpc_array_set_double(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Inserts a double-precision floating point primitive value into an array.

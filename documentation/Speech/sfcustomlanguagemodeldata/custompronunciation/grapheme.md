@@ -3,14 +3,14 @@
 **Framework**: Speech  
 **Kind**: property
 
+The written representation of the term, the way it is expected to appear in transcriptions.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
-- tvOS 17.0+
 - visionOS 1.1+
-- watchOS 10.0+
 
 ## Declaration
 
@@ -21,6 +21,7 @@ let grapheme: String
 ## See Also
 
 - [let phonemes: [String]](sfcustomlanguagemodeldata/custompronunciation/phonemes.md)
+  Zero or more phonetic representations of the term, given as X-SAMPA strings.
 
 
 ---

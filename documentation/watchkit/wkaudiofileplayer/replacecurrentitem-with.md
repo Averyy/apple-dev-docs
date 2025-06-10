@@ -1,6 +1,6 @@
 # replaceCurrentItem(with:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Replaces the current player item with a different one.

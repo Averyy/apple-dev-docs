@@ -1,6 +1,6 @@
 # Focus
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
 
@@ -29,12 +29,14 @@ People use Focus on macOS, iOS, and iPadOS to minimize distractions. For example
 
 ## See Also
 
+- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
+  Allow people to find your app’s content in Spotlight by donating app entities to its semantic index.
 - [Action button on iPhone and Apple Watch](actionbutton.md)
   Enable people to run your App Shortcuts with the Action button on iPhone or to start your app’s workout or dive sessions using the Action button on Apple Watch.
 - [Developing a WidgetKit strategy](../WidgetKit/Developing-a-WidgetKit-strategy.md)
-  Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, watch complications, and Live Activities.
+  Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/focus)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/focus)*

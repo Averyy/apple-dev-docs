@@ -1,6 +1,6 @@
 # UNNotificationAction
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 A task your app performs in response to a notification that the system delivers.
@@ -86,4 +86,4 @@ For information on how to handle actions, see [`Handling notifications and notif
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/unnotificationaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/unnotificationaction)*

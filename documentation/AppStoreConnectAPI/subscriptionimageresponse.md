@@ -24,6 +24,7 @@ object SubscriptionImageResponse
   A response that contains a list of subscription image resources.
 - [object SubscriptionImageUpdateRequest](subscriptionimageupdaterequest.md)
   The data structure that represents a subscription image update request resource.
+- [object SubscriptionImagesLinkagesResponse](subscriptionimageslinkagesresponse.md)
 
 
 ---

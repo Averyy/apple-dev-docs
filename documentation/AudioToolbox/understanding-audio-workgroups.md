@@ -1,6 +1,6 @@
 # Understanding Audio Workgroups
 
-**Framework**: Audiotoolbox
+**Framework**: Audio Toolbox
 
 Learn how to optimize real-time rendering performance with the Audio Workgroups API.
 
@@ -40,4 +40,4 @@ If your app or Audio Unit plug-in creates and manages its own audio real-time th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AudioToolbox/understanding-audio-workgroups)*
+*[View on Apple Developer](https://developer.apple.com/documentation/audiotoolbox/understanding-audio-workgroups)*

@@ -1,6 +1,6 @@
 # Location
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 A geographic location.

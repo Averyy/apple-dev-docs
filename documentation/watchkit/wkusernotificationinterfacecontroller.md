@@ -1,6 +1,6 @@
 # WKUserNotificationInterfaceController
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface controller object that manages a dynamic user interface for a local or remote notification.
@@ -93,6 +93,7 @@ The notification category object associated with your notification interface con
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # caseSensitive
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether to consider case when matching the search string.

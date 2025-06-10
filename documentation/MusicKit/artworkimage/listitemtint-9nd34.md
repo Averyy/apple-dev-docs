@@ -1,6 +1,6 @@
 # listItemTint(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Sets a fixed tint color for content in a list.

@@ -1,6 +1,6 @@
 # shouldPrintBackgrounds
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean that indicates whether or not the web view should include backgrounds when printing.

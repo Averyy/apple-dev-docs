@@ -8,6 +8,7 @@ A structure that represents a detected subject, face, torso or pet at a particul
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
 
@@ -51,9 +52,12 @@ Some types of detections also include a unique group number that associates rela
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [Editing Spatial Audio with an audio mix](editing-spatial-audio-with-an-audio-mix.md)
+  Add Spatial Audio editing capabilities with the Audio Mix API in the Cinematic framework.
 - [struct CNDecision](cndecision-swift.struct.md)
   An object that represents a decision to focus on a particular detection, or group of detections, at a particular time.
 - [class CNDetectionTrack](cndetectiontrack-2bxtd.md)

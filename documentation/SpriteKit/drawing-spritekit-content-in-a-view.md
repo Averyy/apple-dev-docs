@@ -1,6 +1,6 @@
 # Drawing SpriteKit Content in a View
 
-**Framework**: Spritekit
+**Framework**: SpriteKit
 
 Display visual content using SpriteKit.
 
@@ -66,4 +66,4 @@ Because the code in this article sets up a view, you add it to your view control
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/drawing-spritekit-content-in-a-view)*
+*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/drawing-spritekit-content-in-a-view)*

@@ -27,6 +27,9 @@ You configure entitlements for your app by declaring capabilities for a target i
   Verify your app’s entitlements at every stage of development to track down errors during distribution.
 - [Signing a daemon with a restricted entitlement](../Xcode/signing-a-daemon-with-a-restricted-entitlement.md)
   Wrap a daemon in an app-like structure to use an entitlement thatʼs authorized by a provisioning profile.
+### AccessorySetupKit
+- [com.apple.developer.accessory-setup-discovery-extension](entitlements/com.apple.developer.accessory-setup-discovery-extension.md)
+  An entitlement that lets an app extension discover and set up accessories.
 ### Alternative marketplaces
 - [com.apple.developer.marketplace.app-installation](entitlements/com.apple.developer.marketplace.app-installation.md)
   The entitlement that enables an app to vend other apps as an alternative app marketplace.
@@ -42,6 +45,9 @@ You configure entitlements for your app by declaring capabilities for a target i
   A Boolean value that indicates whether the app may, with user permission, provide user names and passwords for AutoFill in Safari and other apps.
 - [Sign in with Apple Entitlement](entitlements/com.apple.developer.applesignin.md)
   An entitlement that lets your app use Sign in with Apple.
+### Background tasks
+- [Background GPU Access](entitlements/com.apple.developer.background-tasks.continued-processing.gpu.md)
+  The entitlement the system requires for a continuous background task to use the GPU.
 ### CallKit
 - [Default Calling App](entitlements/com.apple.developer.calling-app.md)
   A Boolean value that indicates whether an app can be the default calling app on someone’s device.
@@ -68,9 +74,10 @@ You configure entitlements for your app by declaring capabilities for a target i
 ### Email clients
 - [com.apple.developer.mail-client](entitlements/com.apple.developer.mail-client.md)
   A Boolean that indicates whether the app can act as a user’s default email client.
+### EnergyKit
+- [com.apple.developer.energykit](entitlements/com.apple.developer.energykit.md)
+  The entitlement the system requires for an app to use the EnergyKit framework.
 ### Enterprise
-- [Apple Neural Engine access](entitlements/com.apple.developer.coreml.neural-engine-access.md)
-  A Boolean value that indicates whether an app can use the Apple Neural Engine to speed up CoreML.
 - [Increased performance headroom](entitlements/com.apple.developer.app-compute-category.md)
   An entitlement that allows an app to adjust thresholds that balance thermal dissipation and performance against fan noise and other factors.
 - [Passthrough in screen capture](entitlements/com.apple.developer.screen-capture.include-passthrough.md)
@@ -81,6 +88,16 @@ You configure entitlements for your app by declaring capabilities for a target i
   A Boolean value that allows an app to use ARKit to track more objects with a higher frequency.
 - [Spatial barcode and QR code scanning](entitlements/com.apple.developer.arkit.barcode-detection.allow.md)
   A Boolean value that indicates whether an app can use ARKit to detect, position, and decode barcode and QR codes.
+- [Camera Region access](entitlements/com.apple.developer.arkit.camera-region.allow.md)
+  A Boolean value indicating whether your app may access the camera region.
+- [Shared Coordinate Space access](entitlements/com.apple.developer.arkit.shared-coordinate-space.allow.md)
+  A Boolean value indicating whether your app may use a shared coordinate space.
+- [App-Protected Content](entitlements/com.apple.developer.protected-content.md)
+  A Boolean value indicating whether the system prohibits capturing your app’s content.
+- [Follow Mode for Windows](entitlements/com.apple.developer.window-body-follow.md)
+  A Boolean value indicating whether your app’s windows will follow the user.
+- [Apple Neural Engine access](entitlements/com.apple.developer.coreml.neural-engine-access.md)
+  A Boolean value that indicates whether an app can use the Apple Neural Engine to speed up CoreML.
 - [UVC Device Access on visionOS](entitlements/com.apple.developer.avfoundation.uvc-device-access.md)
   A Boolean value that indicates whether the app can stream USB UVC devices connected to the Developer strap.
 ### Exposure notification
@@ -92,6 +109,9 @@ You configure entitlements for your app by declaring capabilities for a target i
 ### File provider
 - [com.apple.developer.fileprovider.testing-mode](entitlements/com.apple.developer.fileprovider.testing-mode.md)
   A Boolean value that indicates whether you can place domains in testing mode.
+### Foundation Models
+- [com.apple.developer.foundation-model-adapter](entitlements/com.apple.developer.foundation-model-adapter.md)
+  A Boolean value that indicates whether the app can enable custom adapters for the Foundation Models framework.
 ### Games
 - [Game Center Entitlement](entitlements/com.apple.developer.game-center.md)
   A Boolean value that indicates whether users of the app may see and compare achievements on a leaderboard, invite friends, and start multiplayer games.
@@ -134,9 +154,17 @@ You configure entitlements for your app by declaring capabilities for a target i
   The iCloud services used by the app.
 - [iCloud Key-Value Store Entitlement](entitlements/com.apple.developer.ubiquity-kvstore-identifier.md)
   The container identifier to use for iCloud key-value storage.
+### IdentityDocumentServices
+- [Digital Credentials API - Mobile Document Provider](entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types.md)
+  An array of strings that represent the types of mobile documents (mdoc) that an identity document provider app can provide during an online web presentment.
 ### Journaling Suggestions
 - [com.apple.developer.journal.allow](entitlements/com.apple.developer.journal.allow.md)
   The entitlement that enables an app to present the journaling suggestions picker.
+### LiveCommunicationKit
+- [Default Calling App](entitlements/com.apple.developer.calling-app.md)
+  A Boolean value that indicates whether an app can be the default calling app on someone’s device.
+- [Default Dialer App](entitlements/com.apple.developer.dialing-app.md)
+  A Boolean value that indicates whether an app can be the default dialer app on someone’s device.
 ### Location
 - [com.apple.developer.location.push](entitlements/com.apple.developer.location.push.md)
   An entitlement to enable a location-sharing app to query someone’s location in response to a push notification.
@@ -189,6 +217,10 @@ You configure entitlements for your app by declaring capabilities for a target i
 - [5G Network Slicing Traffic Category](entitlements/com.apple.developer.networking.slicing.trafficcategory.md)
   The key that defines the traffic category entitlement to enable Cellular Network Slicing.
 - [com.apple.developer.networking.vmnet](entitlements/com.apple.developer.networking.vmnet.md)
+- [com.apple.developer.networking.carrier-constrained.appcategory](entitlements/com.apple.developer.networking.carrier-constrained.appcategory.md)
+  The key that defines an app’s category for accessing a carrier-provided satellite network.
+- [com.apple.developer.networking.carrier-constrained.app-optimized](entitlements/com.apple.developer.networking.carrier-constrained.app-optimized.md)
+  A Boolean value that indicates whether your app is optimized for a carrier-provided satellite network.
 ### Notifications
 - [APS Environment Entitlement](entitlements/aps-environment.md)
   The environment for push notifications.
@@ -210,80 +242,14 @@ You configure entitlements for your app by declaring capabilities for a target i
 - [com.apple.developer.secure-element-credential.default-contactless-app](entitlements/com.apple.developer.secure-element-credential.default-contactless-app.md)
   A Boolean value that indicates whether your app that uses the SecureElementCredential framework can become the default contactless app.
 ### Security
+- [Security entitlements](security-entitlements.md)
+  Key-value pairs that grant an executable access to secure resources, or enable hardening checks.
 - [App Sandbox](../Security/app-sandbox.md)
   Restrict access to system resources and user data in macOS apps to contain damage if an app becomes compromised.
-- [App Sandbox Entitlement](entitlements/com.apple.security.app-sandbox.md)
-  A Boolean value that indicates whether the app may use access control technology to contain damage to the system and user data if an app is compromised.
-- [com.apple.security.network.server](entitlements/com.apple.security.network.server.md)
-  A Boolean value indicating whether your app may listen for incoming network connections.
-- [com.apple.security.network.client](entitlements/com.apple.security.network.client.md)
-  A Boolean value indicating whether your app may open outgoing network connections.
-- [Camera entitlement](entitlements/com.apple.security.device.camera.md)
-  A Boolean value that indicates whether the app may interact with the built-in and external cameras, and capture movies and still images.
-- [com.apple.security.device.microphone](entitlements/com.apple.security.device.microphone.md)
-  A Boolean value that indicates whether the app may use the microphone.
-- [com.apple.security.device.usb](entitlements/com.apple.security.device.usb.md)
-  A Boolean value indicating whether your app may interact with USB devices.
-- [com.apple.security.print](entitlements/com.apple.security.print.md)
-  A Boolean value indicating whether your app may print a document.
-- [com.apple.security.device.bluetooth](entitlements/com.apple.security.device.bluetooth.md)
-  A Boolean value indicating whether your app may interact with Bluetooth devices.
-- [Address book entitlement](entitlements/com.apple.security.personal-information.addressbook.md)
-  A Boolean value that indicates whether the app may have read-write access to contacts in the user’s address book.
-- [Location entitlement](entitlements/com.apple.security.personal-information.location.md)
-  A Boolean value that indicates whether the app may access location information from Location Services.
-- [Calendars entitlement](entitlements/com.apple.security.personal-information.calendars.md)
-  A Boolean value that indicates whether the app may have read-write access to the user’s calendar.
-- [com.apple.security.files.user-selected.read-only](entitlements/com.apple.security.files.user-selected.read-only.md)
-  A Boolean value that indicates whether the app may have read-only access to files the user has selected using an Open or Save dialog.
-- [com.apple.security.files.user-selected.read-write](entitlements/com.apple.security.files.user-selected.read-write.md)
-  A Boolean value that indicates whether the app may have read-write access to files the user has selected using an Open or Save dialog.
-- [com.apple.security.files.downloads.read-only](entitlements/com.apple.security.files.downloads.read-only.md)
-  A Boolean value that indicates whether the app may have read-only access to the Downloads folder.
-- [com.apple.security.files.downloads.read-write](entitlements/com.apple.security.files.downloads.read-write.md)
-  A Boolean value that indicates whether the app may have read-write access to the Downloads folder.
-- [com.apple.security.assets.pictures.read-only](entitlements/com.apple.security.assets.pictures.read-only.md)
-  A Boolean value that indicates whether the app may have read-only access to the Pictures folder.
-- [com.apple.security.assets.pictures.read-write](entitlements/com.apple.security.assets.pictures.read-write.md)
-  A Boolean value that indicates whether the app may have read-write access to the Pictures folder.
-- [com.apple.security.assets.music.read-only](entitlements/com.apple.security.assets.music.read-only.md)
-  A Boolean value that indicates whether the app may have read-only access to the Music folder.
-- [com.apple.security.assets.music.read-write](entitlements/com.apple.security.assets.music.read-write.md)
-  A Boolean value that indicates whether the app may have read-write access to the Music folder.
-- [com.apple.security.assets.movies.read-only](entitlements/com.apple.security.assets.movies.read-only.md)
-  A Boolean value that indicates whether the app may have read-only access to the Movies folder.
-- [com.apple.security.assets.movies.read-write](entitlements/com.apple.security.assets.movies.read-write.md)
-  A Boolean value that indicates whether the app may have read-write access to the Movies folder.
 - [Hardened Runtime](../Security/hardened-runtime.md)
   Manage security protections and resource access for your macOS apps.
-- [Allow execution of JIT-compiled code entitlement](entitlements/com.apple.security.cs.allow-jit.md)
-  A Boolean value that indicates whether the app may create writable and executable memory using the `MAP_JIT` flag.
-- [Allow Unsigned Executable Memory Entitlement](entitlements/com.apple.security.cs.allow-unsigned-executable-memory.md)
-  A Boolean value that indicates whether the app may create writable and executable memory without the restrictions imposed by using the `MAP_JIT` flag.
-- [Allow DYLD environment variables entitlement](entitlements/com.apple.security.cs.allow-dyld-environment-variables.md)
-  A Boolean value that indicates whether the app may be affected by dynamic linker environment variables, which you can use to inject code into your app’s process.
-- [Disable Library Validation Entitlement](entitlements/com.apple.security.cs.disable-library-validation.md)
-  A Boolean value that indicates whether the app loads arbitrary plug-ins or frameworks, without requiring code signing.
-- [Disable Executable Memory Protection Entitlement](entitlements/com.apple.security.cs.disable-executable-page-protection.md)
-  A Boolean value that indicates whether to disable all code signing protections while launching an app, and during its execution.
-- [Debugging tool entitlement](entitlements/com.apple.security.cs.debugger.md)
-  A Boolean value that indicates whether the app is a debugger and may attach to other processes or get task ports.
-- [Audio Input Entitlement](entitlements/com.apple.security.device.audio-input.md)
-  A Boolean value that indicates whether the app may record audio using the built-in microphone and access audio input using Core Audio.
-- [Photos Library Entitlement](entitlements/com.apple.security.personal-information.photos-library.md)
-  A Boolean value that indicates whether the app has read-write access to the user’s Photos library.
-- [App Groups Entitlement](entitlements/com.apple.security.application-groups.md)
-  A list of identifiers specifying the groups your app belongs to.
-- [Apple Events Entitlement](entitlements/com.apple.security.automation.apple-events.md)
-  A Boolean value that indicates whether the app may prompt the user for permission to send Apple events to other apps.
-- [Keychain Access Groups Entitlement](entitlements/keychain-access-groups.md)
-  The identifiers for the keychain groups that the app may share items with.
-- [Data Protection Entitlement](entitlements/com.apple.developer.default-data-protection.md)
-  The level of data protection for sensitive user data when an app accesses it on a device.
-- [App Attest Environment](entitlements/com.apple.developer.devicecheck.appattest-environment.md)
-  The environment for an app that uses the App Attest service to validate itself.
-- [com.apple.security.smartcard](entitlements/com.apple.security.smartcard.md)
-  A Boolean that indicates whether your app has access to smart card slots and smart cards.
+- [Enabling enhanced security for your app](../Xcode/enabling-enhanced-security-for-your-app.md)
+  Detect out-of-bounds memory access, use of freed memory, and other potential vulnerabilities.
 ### Sensitive content analysis
 - [com.apple.developer.sensitivecontentanalysis.client](entitlements/com.apple.developer.sensitivecontentanalysis.client.md)
   A code-signing entitlement that enables an app to detect nudity in images and video.
@@ -305,6 +271,9 @@ You configure entitlements for your app by declaring capabilities for a target i
   Develop device drivers in macOS and iPadOS.
 - [System Extensions](system-extensions.md)
   Extend the capabilities of macOS from user space.
+### TelephonyMessagingKit
+- [Default Carrier Messaging App](entitlements/com.apple.developer.carrier-messaging-app.md)
+  A Boolean value that indicates whether the app can use the TelephonyMessagingKit framework to serve as the default carrier messaging app.
 ### Translation
 - [Translation](entitlements/com.apple.developer.translation-app.md)
   A Boolean value that indicates whether an app can be the default translation app on someone’s device.
@@ -315,6 +284,9 @@ You configure entitlements for your app by declaring capabilities for a target i
   A Boolean value that indicates whether your app can use the TV Provider Authentication service.
 - [com.apple.smoot.subscriptionservice](entitlements/com.apple.smoot.subscriptionservice.md)
   A Boolean value that indicates whether your app can integrate with APIs to provide different feed based content.
+### Vision
+- [Low-Latency Streaming](entitlements/com.apple.developer.low-latency-streaming.md)
+  A Boolean value indicating whether your app may use low-latency wireless networking.
 ### Wallet
 - [Pass Type IDs Entitlement](entitlements/com.apple.developer.pass-type-identifiers.md)
   A list of identifiers that specify pass types that your app can access in Wallet.
@@ -351,6 +323,9 @@ You configure entitlements for your app by declaring capabilities for a target i
   An array of identifier strings the app handles with the card session API.
 - [com.apple.developer.nfc.hce.default-contactless-app](entitlements/com.apple.developer.nfc.hce.default-contactless-app.md)
   A Boolean value indicating whether your app can be a default app for contactless NFC with the card session API.
+### Wireless insights
+- [Wireless Insights Service Predictions](entitlements/com.apple.developer.wireless-insights.service-predictions.md)
+  A Boolean value that indicates whether the app can use the WirelessInsights framework to obtain wireless service predictions.
 ### Deprecated entitlements
 - [Maps Entitlement](entitlements/com.apple.developer.maps.md)
   A Boolean value that indicates whether the app may provide directions beyond what Maps supports, such as subway routes, hiking trails, and bike paths.
@@ -369,8 +344,21 @@ You configure entitlements for your app by declaring capabilities for a target i
 ### ScreenCaptureKit
 - [Persistent Content Capture](entitlements/com.apple.developer.persistent-content-capture.md)
   A Boolean value that indicates whether a Virtual Network Computing (VNC) app needs persistent access to screen capture.
+### Wi-Fi Aware
+- [com.apple.developer.wifi-aware](entitlements/com.apple.developer.wifi-aware.md)
+  The entitlement the system requires for an app to use the Wi-Fi Aware framework.
 ### Type Aliases
 - [com.apple.developer.accessibility.merchant-api-control](entitlements/com.apple.developer.accessibility.merchant-api-control.md)
+- [App Sandbox Entitlement](entitlements/com.apple.security.app-sandbox.md)
+  A Boolean value that indicates whether the app may use access control technology to contain damage to the system and user data if an app is compromised.
+- [com.apple.security.assets.pictures.read-write](entitlements/com.apple.security.assets.pictures.read-write.md)
+  A Boolean value that indicates whether the app may have read-write access to the Pictures folder.
+- [Apple Events Entitlement](entitlements/com.apple.security.automation.apple-events.md)
+  A Boolean value that indicates whether the app may prompt the user for permission to send Apple events to other apps.
+- [Audio Input Entitlement](entitlements/com.apple.security.device.audio-input.md)
+  A Boolean value that indicates whether the app may record audio using the built-in microphone and access audio input using Core Audio.
+- [Photos Library Entitlement](entitlements/com.apple.security.personal-information.photos-library.md)
+  A Boolean value that indicates whether the app has read-write access to the user’s Photos library.
 
 ## See Also
 

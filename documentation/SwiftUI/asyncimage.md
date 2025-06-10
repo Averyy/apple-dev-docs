@@ -50,8 +50,6 @@ For this example, SwiftUI shows a [`ProgressView`](progressview.md) first, and t
 
 > ❗ **Important**: You can’t apply image-specific modifiers, like [`resizable(capInsets:resizingMode:)`](image/resizable(capinsets:resizingmode:).md), directly to an `AsyncImage`. Instead, apply them to the [`Image`](image.md) instance that your `content` closure gets when defining the view’s appearance.
 
-You can’t apply image-specific modifiers, like [`resizable(capInsets:resizingMode:)`](image/resizable(capinsets:resizingmode:).md), directly to an `AsyncImage`. Instead, apply them to the [`Image`](image.md) instance that your `content` closure gets when defining the view’s appearance.
-
 To gain more control over the loading process, use the [`init(url:scale:transaction:content:)`](asyncimage/init(url:scale:transaction:content:).md) initializer, which takes a `content` closure that receives an [`AsyncImagePhase`](asyncimagephase.md) to indicate the state of the loading operation. Return a view that’s appropriate for the current phase:
 
 ```swift

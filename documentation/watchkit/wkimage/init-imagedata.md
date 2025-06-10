@@ -1,6 +1,6 @@
 # init(imageData:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: init
 
 Creates an image with the specified raw image data.

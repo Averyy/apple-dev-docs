@@ -1,6 +1,6 @@
 # addRule(_:style:index:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

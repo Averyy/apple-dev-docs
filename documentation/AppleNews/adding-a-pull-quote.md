@@ -15,8 +15,6 @@ You can use pull quotes to highlight particularly compelling and relevant points
 
 > 💡 **Tip**:  This example uses curly quotes. If you ever want to use straight quotes instead, make sure you “escape” the straight quotes using a backslash (`\`).
 
- This example uses curly quotes. If you ever want to use straight quotes instead, make sure you “escape” the straight quotes using a backslash (`\`).
-
 ##### Add a Pull Quote in Your Article
 
 When a pull quote is accompanied by an attribution line, use two separate `pullquote` components. This allows you to use different layouts and different text styles for the quote text and the attribution text.

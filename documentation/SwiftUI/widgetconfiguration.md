@@ -47,7 +47,7 @@ extension MyCustomType: Transition {
   The type of widget configuration representing the body of this configuration.
 ### Setting a name
 - [func configurationDisplayName(_:)](widgetconfiguration/configurationdisplayname(_:).md)
-  Sets the name shown for a widget when a user adds or edits it using the contents of a text view.
+  Sets the localized name shown for a widget when a user adds or edits the widget.
 ### Setting a description
 - [func description(_:)](widgetconfiguration/description(_:).md)
   Sets the description shown for a widget when a user adds or edits it using the contents of a text view.
@@ -66,10 +66,18 @@ extension MyCustomType: Transition {
 - [func onBackgroundURLSessionEvents(matching:_:)](widgetconfiguration/onbackgroundurlsessionevents(matching:_:).md)
   Adds an action to perform when events related to a URL session identified by a closure are waiting to be processed.
 ### Instance Methods
+- [func associatedKind(String?) -> some WidgetConfiguration](widgetconfiguration/associatedkind(_:).md)
+  Tells the system that a relevance-based widget can replace a timeline-based widget.
 - [func promptsForUserConfiguration() -> some WidgetConfiguration](widgetconfiguration/promptsforuserconfiguration.md)
   Specifies that a widget’s configuration UI should be automatically presented after the widget is added.
+- [func pushHandler(any WidgetPushHandler.Type) -> some WidgetConfiguration](widgetconfiguration/pushhandler(_:).md)
+  Register a type that can handle push tokens changing for widgets.
 - [func supplementalActivityFamilies([ActivityFamily]) -> some WidgetConfiguration](widgetconfiguration/supplementalactivityfamilies(_:).md)
   Sets the sizes that a Live Activity supports.
+- [func supportedMountingStyles([WidgetMountingStyle]) -> some WidgetConfiguration](widgetconfiguration/supportedmountingstyles(_:).md)
+  Specifies the mounting style for this widget.
+- [func widgetTexture(WidgetTexture) -> some WidgetConfiguration](widgetconfiguration/widgettexture(_:).md)
+  Specifies the widget texture for this widget.
 
 ## Relationships
 

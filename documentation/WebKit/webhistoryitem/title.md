@@ -1,6 +1,6 @@
 # title
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The receiver’s original page title.

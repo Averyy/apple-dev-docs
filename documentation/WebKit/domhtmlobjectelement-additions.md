@@ -1,6 +1,6 @@
 # DOMHTMLObjectElement Additions
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 These additions to the `DOMHTMLObjectElement` class facilitate communication between the DOM API and WebKit.
 

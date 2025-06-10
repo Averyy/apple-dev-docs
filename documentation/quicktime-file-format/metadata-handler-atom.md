@@ -1,6 +1,6 @@
 # Metadata handler atom ('hdlr')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that defines the structure used for all types of metadata stored within the metadata atom.

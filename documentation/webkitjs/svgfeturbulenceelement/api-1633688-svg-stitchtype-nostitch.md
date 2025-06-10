@@ -1,6 +1,6 @@
 # SVG_STITCHTYPE_NOSTITCH
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

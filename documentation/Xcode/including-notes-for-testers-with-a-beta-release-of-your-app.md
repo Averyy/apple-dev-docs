@@ -81,4 +81,4 @@ For more information, see [`Writing custom build scripts`](writing-custom-build-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/including-notes-for-testers-with-a-beta-release-of-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/including-notes-for-testers-with-a-beta-release-of-your-app)*

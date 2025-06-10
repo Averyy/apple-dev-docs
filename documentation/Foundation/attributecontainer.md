@@ -61,6 +61,11 @@ struct AttributeContainer
 ### Interoperating with Objective-C Attributes
 - [protocol ObjectiveCConvertibleAttributedStringKey](objectivecconvertibleattributedstringkey.md)
   A protocol that defines Objective-C interoperability with an attribute key’s value type.
+### Instance Methods
+- [func filter(inheritedByAddedText: Bool) -> AttributeContainer](attributecontainer/filter(inheritedbyaddedtext:).md)
+  Returns an attribute container storing only the attributes in `self` with the `inheritedByAddedText` property set to `true`
+- [func filter(runBoundaries: AttributedString.AttributeRunBoundaries?) -> AttributeContainer](attributecontainer/filter(runboundaries:).md)
+  Returns an attribute container storing only the attributes in `self` with a matching run boundary property
 
 ## Relationships
 
@@ -72,6 +77,7 @@ struct AttributeContainer
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

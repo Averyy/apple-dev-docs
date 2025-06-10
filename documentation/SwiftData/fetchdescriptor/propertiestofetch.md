@@ -1,6 +1,6 @@
 # propertiesToFetch
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: property
 
 The specific subset of attributes to fetch if you don’t require them all.

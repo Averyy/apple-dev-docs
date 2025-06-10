@@ -1,6 +1,6 @@
 # Address
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 The physical address for an order.

@@ -31,8 +31,6 @@ In iOS 8.0 and later, the `transform` property does not affect Auto Layout. Auto
 
 > ⚠️ **Warning**:  When the value of this property is anything other than the identity transform, the value in the [`frame`](uiview/frame.md) property is undefined and should be ignored.
 
- When the value of this property is anything other than the identity transform, the value in the [`frame`](uiview/frame.md) property is undefined and should be ignored.
-
 ## See Also
 
 - [var frame: CGRect](uiview/frame.md)

@@ -1,6 +1,6 @@
 # XCTIssueReference
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An object that represents a test failure, and includes source code call stacks for test reporting and investigation.
@@ -22,6 +22,8 @@ In Swift, `XCTIssueReference` bridges to the Objective-C class `XCTIssue`. When 
   Creates an issue with a compact description for a test failure.
 - [init(type: XCTIssueReference.IssueType, compactDescription: String, detailedDescription: String?, sourceCodeContext: XCTSourceCodeContext, associatedError: (any Error)?, attachments: [XCTAttachment])](xctissuereference/init(type:compactdescription:detaileddescription:sourcecodecontext:associatederror:attachments:).md)
   Creates an issue for a test failure, with descriptions, source code location, error, and attachments.
+- [init(type: XCTIssueReference.IssueType, compactDescription: String, detailedDescription: String?, sourceCodeContext: XCTSourceCodeContext, associatedError: (any Error)?, attachments: [XCTAttachment], severity: XCTIssueReference.Severity)](xctissuereference/init(type:compactdescription:detaileddescription:sourcecodecontext:associatederror:attachments:severity:).md)
+- [convenience init(type: XCTIssueReference.IssueType, compactDescription: String, severity: XCTIssueReference.Severity)](xctissuereference/init(type:compactdescription:severity:).md)
 ### Issue Types
 - [XCTIssueReference.IssueType](xctissuereference/issuetype.md)
   Constants that indicate types of test failures, such as assertion failures, performance regressions, or thrown errors.
@@ -38,6 +40,14 @@ In Swift, `XCTIssueReference` bridges to the Objective-C class `XCTIssue`. When 
   An optional error to associate with a test issue.
 - [var attachments: [XCTAttachment]](xctissuereference/attachments.md)
   An array of data that augments a test issue, such as files, images, screenshots, data blobs, or ZIP files.
+### Instance Properties
+- [var isFailure: Bool](xctissuereference/isfailure.md)
+  Whether or not this issue should cause the test it’s associated with to be considered a failure.
+- [var severity: XCTIssueReference.Severity](xctissuereference/severity-swift.property.md)
+  The severity of the issue.
+### Enumerations
+- [XCTIssueReference.Severity](xctissuereference/severity-swift.enum.md)
+  An enum representing the severity of a test issue.
 
 ## Relationships
 

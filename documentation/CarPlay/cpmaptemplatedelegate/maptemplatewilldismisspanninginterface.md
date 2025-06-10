@@ -13,6 +13,7 @@ Tells the delegate that the panning interface will disappear from the map.
 ## Declaration
 
 ```swift
+@MainActor
 optional func mapTemplateWillDismissPanningInterface(_ mapTemplate: CPMapTemplate)
 ```
 

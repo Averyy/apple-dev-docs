@@ -1,6 +1,6 @@
 # WKUserInterfaceDirectionPolicy
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 The policy that determines the directionality of user interface elements in a web view.
@@ -36,6 +36,7 @@ When `WKUserInterfaceDirectionPolicyContent` is specified, the directionality of
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

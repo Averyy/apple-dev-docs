@@ -56,7 +56,6 @@ class IOBluetoothObjectPushUIController
 - [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
-- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

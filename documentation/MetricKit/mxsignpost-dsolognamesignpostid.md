@@ -9,6 +9,7 @@ Posts a single custom metric, the start time of a custom metric, or the end time
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
+- macOS 10.15+
 - visionOS 1.0+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # isPersistent
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating if this context will write data to the the file system.

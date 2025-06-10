@@ -30,7 +30,7 @@ A fully loaded and initialized Metal texture, or `nil` if an error occurred.
 
 ## See Also
 
-- [func newTexture(cgImage: CGImage, options: [MTKTextureLoader.Option : Any]?, completionHandler: MTKTextureLoader.Callback)](mtktextureloader/newtexture(cgimage:options:completionhandler:).md)
+- [func newTexture(cgImage: CGImage, options: [MTKTextureLoader.Option : Any]?, completionHandler: ((any MTLTexture)?, (any Error)?) -> Void)](mtktextureloader/newtexture(cgimage:options:completionhandler:).md)
   Asynchronously loads image data and creates a new Metal texture from a given bitmap image.
 
 

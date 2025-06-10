@@ -15,7 +15,7 @@ class Config:
     
     # Rate limiting (optimized for JSON API endpoints)
     RATE_LIMIT_DELAY = float(os.getenv("RATE_LIMIT_DELAY", "0.2"))
-    MAX_CONCURRENT_REQUESTS = int(os.getenv("MAX_CONCURRENT_REQUESTS", "5"))
+    MAX_CONCURRENT_REQUESTS = int(os.getenv("MAX_CONCURRENT_REQUESTS", "20"))
     REQUEST_TIMEOUT = float(os.getenv("REQUEST_TIMEOUT", "30.0"))
     MAX_RETRIES = int(os.getenv("MAX_RETRIES", "3"))
     RETRY_BACKOFF_FACTOR = float(os.getenv("RETRY_BACKOFF_FACTOR", "2.0"))
@@ -52,13 +52,25 @@ class Config:
             directory.mkdir(parents=True, exist_ok=True)
     
     @classmethod
-    def get_framework_output_dir(cls, framework_id: str) -> Path:
-        """Get the output directory for a specific framework."""
+    def get_framework_output_dir(cls, framework_id: str, framework_name: Optional[str] = None) -> Path:
+        """Get the output directory for a specific framework.
+        
+        Args:
+            framework_id: Framework ID (usually lowercase)
+            framework_name: Framework display name (not used for directory)
+        """
+        # Always use framework_id for directory to match Apple's URL structure
         return cls.OUTPUT_DIR / framework_id
     
     @classmethod
-    def get_hash_file(cls, framework_id: str) -> Path:
-        """Get the hash file path for a specific framework."""
+    def get_hash_file(cls, framework_id: str, framework_name: Optional[str] = None) -> Path:
+        """Get the hash file path for a specific framework.
+        
+        Args:
+            framework_id: Framework ID (usually lowercase)
+            framework_name: Framework display name (not used for filename)
+        """
+        # Always use framework_id for hash file to match directory structure
         return cls.CACHE_DIR / f"{framework_id}_hashes.json"
     
     @classmethod

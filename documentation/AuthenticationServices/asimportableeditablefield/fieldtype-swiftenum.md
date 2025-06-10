@@ -6,11 +6,11 @@
 An enumeration of editable field types.
 
 **Availability**:
-- iOS 18.2+
-- iPadOS 18.2+
-- Mac Catalyst 18.2+
-- macOS 15.2+
-- visionOS 2.2+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -33,6 +33,10 @@ enum FieldType
   A type for a number field.
 - [ASImportableEditableField.FieldType.string](asimportableeditablefield/fieldtype-swift.enum/string.md)
   A type for a concealed string field.
+### Enumeration Cases
+- [ASImportableEditableField.FieldType.countryCode](asimportableeditablefield/fieldtype-swift.enum/countrycode.md)
+- [ASImportableEditableField.FieldType.subdivisionCode](asimportableeditablefield/fieldtype-swift.enum/subdivisioncode.md)
+- [ASImportableEditableField.FieldType.wifiNetworkSecurityType](asimportableeditablefield/fieldtype-swift.enum/wifinetworksecuritytype.md)
 
 ## Relationships
 
@@ -44,10 +48,11 @@ enum FieldType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [var id: Data](asimportableeditablefield/id.md)
+- [var id: Data?](asimportableeditablefield/id.md)
   A unique identifier for this editable field.
 - [var fieldType: ASImportableEditableField.FieldType](asimportableeditablefield/fieldtype-swift.property.md)
   The type of this editable field.

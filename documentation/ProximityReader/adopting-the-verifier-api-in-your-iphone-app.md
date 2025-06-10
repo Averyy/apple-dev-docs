@@ -1,6 +1,6 @@
 # Adopting the Verifier API in your iPhone app
 
-**Framework**: Proximityreader
+**Framework**: ProximityReader
 
 Configure and test ID Verifier support in your app for reading mobile documents.
 
@@ -138,4 +138,4 @@ To enable the simulated test mode on your iPhone, download and install the “Mo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ProximityReader/adopting-the-verifier-api-in-your-iphone-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/adopting-the-verifier-api-in-your-iphone-app)*

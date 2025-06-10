@@ -1,6 +1,6 @@
 # bottomRight
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The lower-right corner of the recognized item in view coordinates.

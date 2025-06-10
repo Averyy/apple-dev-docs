@@ -1,6 +1,6 @@
 # Creating fully immersive experiences in your app
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Build fully immersive experiences by combining spaces with content you create using RealityKit or Metal.
 
@@ -24,8 +24,6 @@ Give people control over when they enter or exit fully immersive experiences, an
 At launch time, display windows or other content that allows the person to see their surroundings. Add controls to that content to initiate the transition to the fully immersive experience, and provide a clear indication of what the controls do. Inside your experience, provide clear controls and instructions on how to exit the experience.
 
 > ⚠️ **Warning**: When you start a fully immersive experience, visionOS defines a system boundary that extends approximately 1.5 meters from the initial position of the person’s head. If their head moves outside of that zone, the system automatically stops the immersive experience and turns on the external video again. This feature is an assistant to help prevent someone from colliding with objects.
-
-When you start a fully immersive experience, visionOS defines a system boundary that extends approximately 1.5 meters from the initial position of the person’s head. If their head moves outside of that zone, the system automatically stops the immersive experience and turns on the external video again. This feature is an assistant to help prevent someone from colliding with objects.
 
 For guidelines on how to design fully immersive experiences, see [`Human Interface Guidelines`](https://developer.apple.com/design/human-interface-guidelines).
 

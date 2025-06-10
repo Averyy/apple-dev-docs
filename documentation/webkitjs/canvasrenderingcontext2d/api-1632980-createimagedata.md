@@ -1,6 +1,6 @@
 # createImageData
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Creates an opaque object whose `data` property contains a one-dimensional array of pixel values, initialized to transparent black.

@@ -20,12 +20,22 @@ struct Pose
 ## Topics
 
 ### Instance Properties
+- [var intrinsics: simd_float3x3?](photogrammetrysession/pose/intrinsics.md)
+  If available, the estimated pinhole camera intrinsics matrix associated with the input image.  If not available, `nil`.
+- [var lensDistortionData: LensDistortionData?](photogrammetrysession/pose/lensdistortiondata.md)
+  If available, the estimated lens distortion data for the associated input image.  This can be used to rectify the image for computer vision applications.  If not available, this is nil.
 - [let rotation: simd_quatf](photogrammetrysession/pose/rotation.md)
   Rotation (orientation) of the pose relative to the reference coordinate system.
 - [var transform: Transform](photogrammetrysession/pose/transform.md)
   A unit scale transform that represents a 6DoF pose.
 - [let translation: SIMD3<Float>](photogrammetrysession/pose/translation.md)
   Position of the pose relative to the reference coordinate system.
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

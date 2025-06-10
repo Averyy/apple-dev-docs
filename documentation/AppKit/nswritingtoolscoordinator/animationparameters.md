@@ -45,6 +45,7 @@ You don’t create an `NSWritingToolsCoordinator.AnimationParameters` object dir
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -58,6 +59,8 @@ You don’t create an `NSWritingToolsCoordinator.AnimationParameters` object dir
   An interface that you use to manage interactions between Writing Tools and your custom text view.
 - [NSWritingToolsCoordinator.Context](nswritingtoolscoordinator/context.md)
   A data object that you use to share your custom view’s text with Writing Tools.
+- [Enhancing your custom text engine with Writing Tools](enhancing-your-custom-text-engine-with-writing-tools.md)
+  Add Writing Tools support to your custom text engine to enhance the text editing experience.
 
 
 ---

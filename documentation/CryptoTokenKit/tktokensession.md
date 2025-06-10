@@ -28,8 +28,6 @@ A session is always instantiated by a [`TKToken`](tktoken.md) instance through t
 
 > ❗ **Important**:  Never share the authentication status of a token, such as the PIN entered to unlock a smart card, with other token sessions.
 
- Never share the authentication status of a token, such as the PIN entered to unlock a smart card, with other token sessions.
-
 ## Topics
 
 ### Creating Token Sessions

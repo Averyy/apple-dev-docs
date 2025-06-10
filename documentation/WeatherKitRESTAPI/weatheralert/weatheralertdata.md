@@ -1,6 +1,6 @@
 # WeatherAlert.WeatherAlertData
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 The weather alert information.

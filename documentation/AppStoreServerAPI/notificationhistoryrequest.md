@@ -1,6 +1,6 @@
 # NotificationHistoryRequest
 
-**Framework**: Appstoreserverapi  
+**Framework**: App Store Server API  
 **Kind**: dictionary
 
 The request body for notification history.
@@ -52,4 +52,4 @@ If you provide both the `notificationType` and `subtype`, they need to be a vali
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/notificationhistoryrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/notificationhistoryrequest)*

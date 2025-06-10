@@ -1,6 +1,6 @@
 # Implementing an inline Photos picker
 
-**Framework**: Photokit
+**Framework**: PhotoKit
 
 Embed a system-provided, half-height Photos picker into your app’s view.
 
@@ -31,4 +31,4 @@ Before you run the sample code project in Xcode, set the run destination to an i
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PhotoKit/implementing-an-inline-photos-picker)*
+*[View on Apple Developer](https://developer.apple.com/documentation/photokit/implementing-an-inline-photos-picker)*

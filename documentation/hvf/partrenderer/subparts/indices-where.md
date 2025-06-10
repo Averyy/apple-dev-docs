@@ -1,6 +1,6 @@
 # indices(where:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns the indices of all the elements that match the given predicate.

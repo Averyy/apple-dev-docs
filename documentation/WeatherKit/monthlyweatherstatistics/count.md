@@ -1,6 +1,6 @@
 # count
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The number of elements in the collection.

@@ -1,6 +1,6 @@
 # coordinate(withNormalizedOffset:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Creates and returns a new coordinate with a normalized offset.

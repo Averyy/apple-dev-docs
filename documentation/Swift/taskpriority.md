@@ -29,7 +29,7 @@ Child tasks automatically inherit their parent task’s priority. Detached tasks
 In some situations the priority of a task is elevated — that is, the task is treated as it if had a higher priority, without actually changing the priority of the task:
 
 - If a task runs on behalf of an actor, and a new higher-priority task is enqueued to the actor, then the actor’s current task is temporarily elevated to the priority of the enqueued task. This priority elevation allows the new task to be processed at the priority it was enqueued with.
-- If a a higher-priority task calls the `get()` method, then the priority of this task increases until the task completes.
+- If a higher-priority task calls the `get()` method, then the priority of this task increases until the task completes.
 
 In both cases, priority elevation helps you prevent a low-priority task from blocking the execution of a high priority task, which is also known as .
 
@@ -75,6 +75,7 @@ In both cases, priority elevation helps you prevent a low-priority task from blo
 - [Equatable](equatable.md)
 - [RawRepresentable](rawrepresentable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 
@@ -84,6 +85,10 @@ In both cases, priority elevation helps you prevent a low-priority task from blo
   A group that contains dynamically created child tasks.
 - [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](withtaskgroup(of:returning:isolation:body:).md)
   Starts a new scope that can contain a dynamic number of child tasks.
+- [macro Task(name: String?, priority: TaskPriority?)](task(name:priority:).md)
+  Wrap the function body in a new top-level task on behalf of the current actor.
+- [macro Task(on: any GlobalActor, name: String?, priority: TaskPriority?)](task(on:name:priority:).md)
+  Wrap the function body in a new top-level task on behalf of the given actor.
 - [struct ThrowingTaskGroup](throwingtaskgroup.md)
   A group that contains throwing, dynamically created child tasks.
 - [func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingTaskGroup<ChildTaskResult, any Error>) async throws -> GroupResult) async rethrows -> GroupResult](withthrowingtaskgroup(of:returning:isolation:body:).md)

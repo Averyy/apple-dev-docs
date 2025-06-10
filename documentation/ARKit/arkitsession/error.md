@@ -6,6 +6,7 @@
 An error that might occur when running data providers on an ARKit session.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -41,6 +42,7 @@ struct Error
 - [Error](../Swift/Error.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

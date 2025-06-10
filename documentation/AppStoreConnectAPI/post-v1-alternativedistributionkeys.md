@@ -10,8 +10,8 @@ Add an alternative distribution key for your alternative marketplace app or web 
 
 ## Mentions
 
-- [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
 - [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
+- [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
 - [Configuring alternative marketplaces and alternative marketplace apps](configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
 
 #### Discussion
@@ -32,6 +32,9 @@ You can use a single alternative distribution key for all alternative distributi
   List the alternative distribution key for your account.
 - [Read alternative distribution key information](get-v1-alternativedistributionkeys-_id_.md)
   Read the public key information for a specific alternative distribution key.
+- [GET /v1/apps/{id}/relationships/alternativeDistributionKey](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
+- [Read an app’s alternative distribution key](get-v1-apps-_id_-alternativedistributionkey.md)
+  Get the alternative distribution keys for a specific app.
 - [Remove an alternative distribution key](delete-v1-alternativedistributionkeys-_id_.md)
   Remove an alternative distribution key from your account.
 

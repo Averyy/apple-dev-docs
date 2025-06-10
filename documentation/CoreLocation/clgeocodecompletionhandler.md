@@ -28,9 +28,9 @@ If the request was canceled or there was an error in obtaining the placemark inf
 
 ## See Also
 
-- [func reverseGeocodeLocation(CLLocation, preferredLocale: Locale?, completionHandler: CLGeocodeCompletionHandler)](clgeocoder/reversegeocodelocation(_:preferredlocale:completionhandler:).md)
+- [func reverseGeocodeLocation(CLLocation, preferredLocale: Locale?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/reversegeocodelocation(_:preferredlocale:completionhandler:).md)
   Submits a reverse-geocoding request for the specified location and locale.
-- [func reverseGeocodeLocation(CLLocation, completionHandler: CLGeocodeCompletionHandler)](clgeocoder/reversegeocodelocation(_:completionhandler:).md)
+- [func reverseGeocodeLocation(CLLocation, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/reversegeocodelocation(_:completionhandler:).md)
   Submits a reverse-geocoding request for the specified location.
 
 

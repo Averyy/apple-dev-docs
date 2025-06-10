@@ -1,6 +1,6 @@
 # tableView(_:setObjectValue:for:row:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Sets the data object for an item in the specified row and column.

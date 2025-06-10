@@ -20,7 +20,7 @@ The created arc is defined by a circle inscribed inside the angle specified by t
 
 The arc usually does not contain the points in the `fromPoint` and `toPoint` parameters. If the starting point of the arc does not coincide with the current point, a line is drawn between the two points. The starting point of the arc lies on the line defined by the current point and the `fromPoint` parameter.
 
-You must set the path’s current point (using the [`move(to:)`](nsbezierpath/move(to:).md) method or through the creation of a preceding line or curve segment) before you invoke this method. If the path is empty, this method raises an [`genericException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1412113-genericexception) exception.
+You must set the path’s current point (using the [`move(to:)`](nsbezierpath/move(to:).md) method or through the creation of a preceding line or curve segment) before you invoke this method. If the path is empty, this method raises an [`genericException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/genericException) exception.
 
 Depending on the length of the arc, this method may add multiple connected curve segments to the path.
 

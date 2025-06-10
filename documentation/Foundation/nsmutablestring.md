@@ -76,6 +76,8 @@ NSMutableString is “toll-free bridged” with its Core Foundation counterpart,
 - [NSMutableCopying](nsmutablecopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

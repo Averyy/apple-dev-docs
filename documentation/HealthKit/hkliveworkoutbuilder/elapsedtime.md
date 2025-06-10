@@ -6,6 +6,9 @@
 The elapsed time for the workout based on the builder’s current contents, including pauses.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS ?+
 - watchOS 5.0+
 

@@ -1,6 +1,6 @@
 # WebMenuItemPDFSinglePage
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Display a PDF document one page at a time.

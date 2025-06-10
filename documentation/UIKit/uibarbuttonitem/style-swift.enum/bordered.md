@@ -21,7 +21,7 @@ case bordered
 
 - [UIBarButtonItem.Style.plain](uibarbuttonitem/style-swift.enum/plain.md)
   A button style with plain text styling.
-- [UIBarButtonItem.Style.done](uibarbuttonitem/style-swift.enum/done.md)
+- [static var done: UIBarButtonItem.Style](uibarbuttonitem/style-swift.enum/done.md)
   A button style for a done button.
 
 

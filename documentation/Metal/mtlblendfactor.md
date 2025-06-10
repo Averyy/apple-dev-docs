@@ -60,6 +60,9 @@ enum MTLBlendFactor
   Blend factor of source alpha. This option supports dual-source blending and reads from the second color output of the fragment function.
 - [MTLBlendFactor.oneMinusSource1Alpha](mtlblendfactor/oneminussource1alpha.md)
   Blend factor of one minus source alpha. This option supports dual-source blending and reads from the second color output of the fragment function.
+### Enumeration Cases
+- [MTLBlendFactor.unspecialized](mtlblendfactor/unspecialized.md)
+  Defers assigning the blend factor.
 ### Initializers
 - [init?(rawValue: UInt)](mtlblendfactor/init(rawvalue:).md)
 
@@ -71,6 +74,7 @@ enum MTLBlendFactor
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

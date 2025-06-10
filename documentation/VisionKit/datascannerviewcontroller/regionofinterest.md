@@ -1,6 +1,6 @@
 # regionOfInterest
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The area of the live video in view coordinates that the data scanner searches for items.

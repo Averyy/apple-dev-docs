@@ -25,8 +25,6 @@ For Picture in Picture to work correctly, maintain a strong reference to this ob
 
 > ❗ **Important**:  Before attempting to create a controller instance, verify that the current device supports Picture in Picture by calling the [`isPictureInPictureSupported()`](avpictureinpicturecontroller/ispictureinpicturesupported().md) class method. Attempting to create a Picture in Picture controller on an unsupported device returns `nil`.
 
- Before attempting to create a controller instance, verify that the current device supports Picture in Picture by calling the [`isPictureInPictureSupported()`](avpictureinpicturecontroller/ispictureinpicturesupported().md) class method. Attempting to create a Picture in Picture controller on an unsupported device returns `nil`.
-
 ## Parameters
 
 - `playerLayer`: The player layer from which to source the media content for the Picture in Picture controller.

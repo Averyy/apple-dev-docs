@@ -23,9 +23,9 @@ func restoreCompletedTransactions()
 ## Mentions
 
 - [Choosing a receipt validation technique](choosing-a-receipt-validation-technique.md)
-- [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
-- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 - [Restoring purchased products](restoring-purchased-products.md)
+- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
+- [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
 
 #### Discussion
 
@@ -48,8 +48,6 @@ This method has no effect in the following situations:
 - Your app’s build version does not meet the guidelines for the `CFBundleVersion` key.
 
 > ❗ **Important**:  If you are using the [`In-App Purchase`](in-app-purchase.md) API and managing transactions using the [`Transaction`](transaction.md) API, use [`currentEntitlements`](transaction/currententitlements.md) to determine which in-app purchases the customer is currently entitled to. The [`restoreCompletedTransactions()`](skpaymentqueue/restorecompletedtransactions().md) function doesn’t affect transactions in the [`Transaction`](transaction.md) API. In rare cases when a user suspects the app isn’t showing all the transactions, call [`sync()`](appstore/sync().md) in response to an explicit user action, like tapping a button.
-
- If you are using the [`In-App Purchase`](in-app-purchase.md) API and managing transactions using the [`Transaction`](transaction.md) API, use [`currentEntitlements`](transaction/currententitlements.md) to determine which in-app purchases the customer is currently entitled to. The [`restoreCompletedTransactions()`](skpaymentqueue/restorecompletedtransactions().md) function doesn’t affect transactions in the [`Transaction`](transaction.md) API. In rare cases when a user suspects the app isn’t showing all the transactions, call [`sync()`](appstore/sync().md) in response to an explicit user action, like tapping a button.
 
 ## See Also
 

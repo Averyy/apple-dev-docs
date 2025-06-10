@@ -1,6 +1,6 @@
 # MAX_TEXTURE_SIZE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

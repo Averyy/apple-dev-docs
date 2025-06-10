@@ -1,6 +1,6 @@
 # WKWebpagePreferences.UpgradeToHTTPSPolicy
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 **Availability**:
@@ -38,6 +38,7 @@ Preference for loading a webpage with https, and how failures should be handled.
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

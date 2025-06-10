@@ -35,6 +35,7 @@ The comparator uses the relevant type’s [`Comparable`](https://developer.apple
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SortComparator](sortcomparator.md)
 
 ## See Also

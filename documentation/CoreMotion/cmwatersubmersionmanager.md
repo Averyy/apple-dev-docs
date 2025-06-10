@@ -1,6 +1,6 @@
 # CMWaterSubmersionManager
 
-**Framework**: Coremotion  
+**Framework**: Core Motion  
 **Kind**: class
 
 An object for managing the collection of pressure and temperature data during submersion.
@@ -96,4 +96,4 @@ Your delegate then begins receiving updates from the system. For more informatio
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreMotion/cmwatersubmersionmanager)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coremotion/cmwatersubmersionmanager)*

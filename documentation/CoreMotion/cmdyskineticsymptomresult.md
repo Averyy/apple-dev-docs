@@ -29,8 +29,6 @@ The following equation is always true: [`percentUnlikely`](cmdyskineticsymptomre
 
 > ❗ **Important**:  Gather and present data on dyskinetic symptom results only to users with choreiform dyskinesias, either self-reported or diagnosed by a clinician.
 
- Gather and present data on dyskinetic symptom results only to users with choreiform dyskinesias, either self-reported or diagnosed by a clinician.
-
 ## Topics
 
 ### Reading the Time Interval

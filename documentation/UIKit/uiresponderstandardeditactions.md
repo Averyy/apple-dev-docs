@@ -89,7 +89,15 @@ Responder objects can implement the methods of this protocol to handle standard 
 - [func updateTextAttributes(conversionHandler: ([NSAttributedString.Key : Any]) -> [NSAttributedString.Key : Any])](uiresponderstandardeditactions/updatetextattributes(conversionhandler:).md)
   Tells your app to update the attributes of the currently selected text.
 ### Instance Methods
+- [func alignCenter(Any?)](uiresponderstandardeditactions/aligncenter(_:).md)
+- [func alignJustified(Any?)](uiresponderstandardeditactions/alignjustified(_:).md)
+- [func alignLeft(Any?)](uiresponderstandardeditactions/alignleft(_:).md)
+- [func alignRight(Any?)](uiresponderstandardeditactions/alignright(_:).md)
+- [func newFromPasteboard(Any?)](uiresponderstandardeditactions/newfrompasteboard(_:).md)
+- [func performClose(Any?)](uiresponderstandardeditactions/performclose(_:).md)
 - [func showWritingTools(Any)](uiresponderstandardeditactions/showwritingtools(_:).md)
+- [func toggleInspector(Any?)](uiresponderstandardeditactions/toggleinspector(_:).md)
+- [func toggleSidebar(Any?)](uiresponderstandardeditactions/togglesidebar(_:).md)
 
 ## Relationships
 
@@ -103,6 +111,7 @@ Responder objects can implement the methods of this protocol to handle standard 
 - [UIAlertController](uialertcontroller.md)
 - [UIAlertView](uialertview.md)
 - [UIApplication](uiapplication.md)
+- [UIBackgroundExtensionView](uibackgroundextensionview.md)
 - [UIButton](uibutton.md)
 - [UICalendarView](uicalendarview.md)
 - [UICloudSharingController](uicloudsharingcontroller.md)

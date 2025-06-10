@@ -1,6 +1,6 @@
 # supportsGoal(_:activity:location:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: method
 
 Returns a Boolean value that indicates whether the system supports the specified goal for the given activity type and location.
@@ -10,6 +10,7 @@ Returns a Boolean value that indicates whether the system supports the specified
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -30,7 +31,7 @@ static func supportsGoal(_ goal: WorkoutGoal, activity: HKWorkoutActivityType, l
   Create a new custom workout.
 - [static func supportsActivity(HKWorkoutActivityType) -> Bool](customworkout/supportsactivity(_:).md)
   Returns a Boolean value that indicates whether the system supports the specified workout activity .
-- [static func supportsAlert(WorkoutAlert, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](customworkout/supportsalert(_:activity:location:).md)
+- [static func supportsAlert(any WorkoutAlert, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](customworkout/supportsalert(_:activity:location:).md)
   Returns a Boolean value that indicates whether the system supports the specified alert for the given activity type and location.
 
 

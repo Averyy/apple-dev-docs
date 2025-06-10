@@ -18,6 +18,10 @@
 func sparse_matrix_variable_block_create_float_complex(_ Mb: sparse_dimension, _ Nb: sparse_dimension, _ K: UnsafePointer<sparse_dimension>!, _ L: UnsafePointer<sparse_dimension>!) -> sparse_matrix_float_complex!
 ```
 
+## See Also
+
+- [func sparse_matrix_variable_block_create_double_complex(sparse_dimension, sparse_dimension, UnsafePointer<sparse_dimension>!, UnsafePointer<sparse_dimension>!) -> sparse_matrix_double_complex!](sparse_matrix_variable_block_create_double_complex(_:_:_:_:).md)
+
 
 ---
 

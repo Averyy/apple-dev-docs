@@ -1,6 +1,6 @@
 # Metadata key table atom ('keys')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that contains a table of keys and mappings to payload data in the corresponding timed metadata media samples.

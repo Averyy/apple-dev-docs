@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_H264EntropyMode
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The entropy encoding mode for H.264 compression.

@@ -70,4 +70,4 @@ The following screenshot shows how the debug groups appear in Xcode’s Debug na
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/naming-resources-and-commands)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/naming-resources-and-commands)*

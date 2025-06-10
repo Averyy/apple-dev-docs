@@ -1,6 +1,6 @@
 # scale
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Scales the canvas coordinate system horizontally and vertically.

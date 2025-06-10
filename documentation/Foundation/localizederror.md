@@ -33,6 +33,7 @@ protocol LocalizedError : Error
 ### Inherits From
 - [Error](../Swift/Error.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

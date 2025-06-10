@@ -1,6 +1,6 @@
 # TEXTPATH_METHODTYPE_ALIGN
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

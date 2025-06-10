@@ -1,6 +1,6 @@
 # Handling Subscriptions Billing
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Build logic around the date and time constraints of subscription products, while planning for all scenarios where you control access to content.
 
@@ -110,4 +110,4 @@ Opening this URL launches iTunes or iTunes Store and displays the Manage Subscri
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/handling-subscriptions-billing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/handling-subscriptions-billing)*

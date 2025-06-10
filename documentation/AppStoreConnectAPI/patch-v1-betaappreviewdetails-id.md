@@ -12,8 +12,6 @@ Update the details for a specific app’s beta app review.
 
 > ❗ **Important**:  First name, last name, phone, email cannot be cleared for the primary locale once set.
 
- First name, last name, phone, email cannot be cleared for the primary locale once set.
-
 
 ---
 

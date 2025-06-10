@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Called when the provider’s audio session is deactivated.
+Tells the delegate that the app deactivated a conversation’s audio session..
 
 **Availability**:
 - iOS 17.4+
@@ -21,8 +21,15 @@ func conversationManager(_ manager: ConversationManager, didDeactivate audioSess
 
 ## Parameters
 
-- `manager`: The   that has requested the   to be performed.
-- `audioSession`: The audio session that was deactivated.
+- `manager`: A conversation manager informing the delegate that the app deactivated the audio session.
+- `audioSession`: The audio session that the app deactivated.
+
+## See Also
+
+- [func conversationManager(ConversationManager, conversationChanged: Conversation)](conversationmanagerdelegate/conversationmanager(_:conversationchanged:).md)
+  Tells the delegate that a conversation changed.
+- [func conversationManager(ConversationManager, didActivate: AVAudioSession)](conversationmanagerdelegate/conversationmanager(_:didactivate:).md)
+  Tells the delegate that the app activated the conversation’s audio session.
 
 
 ---

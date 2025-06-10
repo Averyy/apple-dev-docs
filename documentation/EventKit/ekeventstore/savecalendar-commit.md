@@ -1,6 +1,6 @@
 # saveCalendar(_:commit:)
 
-**Framework**: Eventkit  
+**Framework**: EventKit  
 **Kind**: method
 
 Saves a calendar to the event store by either committing or batching the changes.

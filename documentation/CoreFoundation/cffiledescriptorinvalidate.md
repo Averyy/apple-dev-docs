@@ -28,8 +28,6 @@ If you passed `true` for the `closeOnInvalidate` parameter when you called [`CFF
 
 > ❗ **Important**:  You must invalidate the CFFileDescriptor before closing the underlying file descriptor.
 
- You must invalidate the CFFileDescriptor before closing the underlying file descriptor.
-
 ## Parameters
 
 - `f`: A CFFileDescriptor.

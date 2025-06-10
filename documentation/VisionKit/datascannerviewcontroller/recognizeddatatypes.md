@@ -1,6 +1,6 @@
 # recognizedDataTypes
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The types of data that the data scanner identifies in the live video.

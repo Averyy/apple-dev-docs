@@ -65,8 +65,6 @@ fatalError("*** An error occurred while requesting permission to read vision pre
 
 > ❗ **Important**:  Using the [`requestAuthorization(toShare:read:)`](hkhealthstore/requestauthorization(toshare:read:).md) method to request read access to any data types that require per-object authorization fails with an [`HKError.Code.errorInvalidArgument`](hkerror/code/errorinvalidargument.md) error.
 
- Using the [`requestAuthorization(toShare:read:)`](hkhealthstore/requestauthorization(toshare:read:).md) method to request read access to any data types that require per-object authorization fails with an [`HKError.Code.errorInvalidArgument`](hkerror/code/errorinvalidargument.md) error.
-
 When your app calls this method, HealthKit displays an authorization sheet that asks for permission to read the samples that match the predicate and object type. The person using your app can then select individual samples to share with your app. The system always asks for permission, regardless of whether they previously granted it.
 
 ![A screenshot of the authorization sheet, showing two vision prescriptions. People can individually enable each of the prescriptions.](https://docs-assets.developer.apple.com/published/f97653d2cdef38e39eeaef1e7f39b5ce/media-4092700%402x.png)

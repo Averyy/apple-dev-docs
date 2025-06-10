@@ -10,6 +10,7 @@ Sets the description shown for a widget when a user adds or edits it using the c
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration

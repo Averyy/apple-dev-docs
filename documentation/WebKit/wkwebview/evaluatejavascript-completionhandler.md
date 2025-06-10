@@ -1,6 +1,6 @@
 # evaluateJavaScript(_:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Evaluates the specified JavaScript string.

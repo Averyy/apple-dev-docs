@@ -1,6 +1,6 @@
 # VTDecompressionSessionWaitForAsynchronousFrames(_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Waits for any and all outstanding asynchronous and delayed frames to complete, then returns.

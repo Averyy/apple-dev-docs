@@ -26,7 +26,7 @@ This sample contains macOS and iOS targets. Run the iOS scheme on a physical dev
 
 Layer Selection is supported on all macOS GPUs but only iOS GPUs which support the `MTLFeatureSet_iOS_GPUFamily5_v1` feature set.
 
-You check the GPU that you choose at runtime if it supports ICBs using `MTLDevice`’s [`supportsFeatureSet(_:)`](MTLDevice/supportsFeatureSet(_:).md):
+You check the GPU that you choose at runtime if it supports ICBs using `MTLDevice`’s supportsFeatureSet::
 
 ```objective-c
 supportsLayerSelection = [_view.device supportsFeatureSet:MTLFeatureSet_iOS_GPUFamily5_v1];

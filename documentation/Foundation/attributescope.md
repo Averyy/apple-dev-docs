@@ -42,6 +42,8 @@ This allows callers to use a syntax like `myAttributedString.foregroundColor = .
   The configuration for encoding the attribute scope.
 - [static var decodingConfiguration: AttributeScopeCodableConfiguration](attributescope/decodingconfiguration.md)
   The configuration for decoding the attribute scope.
+### Type Properties
+- [static var attributeKeys: some Sequence<any AttributedStringKey.Type>](attributescope/attributekeys.md)
 
 ## Relationships
 
@@ -53,6 +55,7 @@ This allows callers to use a syntax like `myAttributedString.foregroundColor = .
 - [AttributeScopes.AppKitAttributes](attributescopes/appkitattributes.md)
 - [AttributeScopes.FoundationAttributes](attributescopes/foundationattributes.md)
 - [AttributeScopes.FoundationAttributes.NumberFormatAttributes](attributescopes/foundationattributes/numberformatattributes.md)
+- [AttributeScopes.SpeechAttributes](attributescopes/speechattributes.md)
 - [AttributeScopes.SwiftUIAttributes](attributescopes/swiftuiattributes.md)
 - [AttributeScopes.UIKitAttributes](attributescopes/uikitattributes.md)
 

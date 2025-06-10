@@ -42,6 +42,7 @@ Use this provider to receive updates about barcodes that ARKit detect in a perso
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [DataProvider](dataprovider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

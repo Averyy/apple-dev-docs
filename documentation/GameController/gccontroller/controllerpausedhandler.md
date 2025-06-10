@@ -23,6 +23,12 @@ var controllerPausedHandler: ((GCController) -> Void)? { get set }
 
 Implement this handler to toggle between pausing and resuming gameplay. Provide an interface that displays when the user pauses the game, and allows the user to resume gameplay. If your game suspends gameplay for some other reason, also implement this handler to resume gameplay when it’s possible.
 
+## See Also
+
+- [protocol GCGameControllerSceneDelegate](gcgamecontrollerscenedelegate.md)
+- [class GCEventInteraction](gceventinteraction.md)
+  An interaction that indicates the view’s intent to receive game controller events through the Game Controller framework.
+
 
 ---
 

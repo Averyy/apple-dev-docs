@@ -1,6 +1,6 @@
 # SKProductStorePromotionController
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: class
 
 A product promotion controller for customizing the order and visibility of In-App Purchases per device.
@@ -68,4 +68,4 @@ For information about promoting In-App Purchases, see [`Promoting In-App Purchas
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/skproductstorepromotioncontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/skproductstorepromotioncontroller)*

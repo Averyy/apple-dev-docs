@@ -12,8 +12,6 @@ A dictionary that describes a profile list item.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -33,8 +31,6 @@ object ProfileListResponse.ProfileListItem
 
 ## See Also
 
-- [object ProfileListResponse.ProfileListItem.PayloadContentItem](profilelistresponse/profilelistitem/payloadcontentitem.md)
-  A dictionary that describes a profile payload content item.
 - [object ProfileListResponse.ErrorChainItem](profilelistresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 

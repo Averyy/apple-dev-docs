@@ -1,6 +1,6 @@
 # isLoading
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean that indicates whether the data source is loading its content.

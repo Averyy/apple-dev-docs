@@ -1,6 +1,6 @@
 # transform
 
-**Framework**: Modelio  
+**Framework**: Model I/O  
 **Kind**: property
 
 A component that manages this object’s spatial transform and its changes over time.
@@ -33,4 +33,4 @@ A transform defines the local coordinate space for an object’s content—that 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ModelIO/mdlobject/transform)*
+*[View on Apple Developer](https://developer.apple.com/documentation/modelio/mdlobject/transform)*

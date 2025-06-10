@@ -1,6 +1,6 @@
 # PickupFulfillment
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 The details of a pickup order.

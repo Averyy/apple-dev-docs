@@ -18,9 +18,10 @@ Creates a style transfer model with a training dataset represented by a data sou
 init(trainingData: MLStyleTransfer.DataSource, parameters: MLStyleTransfer.ModelParameters = .init()) throws
 ```
 
-#### Discussion
+## Parameters
 
-- trainingData: A style image and a content image, represented by a data source.
+- `trainingData`: A style image and a content image, represented by a data source.
+- `parameters`: An   instance you use to configure the model for the training   session.
 
 
 ---

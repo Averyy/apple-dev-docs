@@ -76,4 +76,4 @@ Correct logic errors, add any necessary null guards to the function, or remove t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/nonnull-return-value-violation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/nonnull-return-value-violation)*

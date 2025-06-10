@@ -10,11 +10,12 @@ The platform-specific base class for the view into which RealityKit renders cont
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
-typealias ARViewBase = UIView
+typealias ARViewBase = NSView
 ```
 
 ## See Also

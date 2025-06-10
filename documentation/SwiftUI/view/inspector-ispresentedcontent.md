@@ -1,6 +1,6 @@
 # inspector(isPresented:content:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Inserts an inspector at the applied position in the view hierarchy.

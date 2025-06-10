@@ -1,6 +1,6 @@
 # WeatherCondition.scatteredThunderstorms
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Numerous thunderstorms spread across up to 50% of the forecast area.

@@ -1,6 +1,6 @@
 # Merchandising win-back offers in your app
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Present win-back offers to eligible customers in your app with the win-back offer sheet or by implementing custom merchandising.
 
@@ -71,4 +71,4 @@ To add a win-back offer to a purchase, include the win-back offer the customer c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/merchandising-win-back-offers-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/merchandising-win-back-offers-in-your-app)*

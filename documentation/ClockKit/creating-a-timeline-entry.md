@@ -1,6 +1,6 @@
 # Creating a timeline entry
 
-**Framework**: Clockkit
+**Framework**: ClockKit
 
 Package your app-specific data into a template and create a timeline entry for that template.
 
@@ -160,4 +160,4 @@ For future timeline entries, specify the date and time for the data to appear on
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/creating-a-timeline-entry)*
+*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/creating-a-timeline-entry)*

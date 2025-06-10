@@ -19,7 +19,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-Set this value to [`false`](https://developer.apple.com/documentation/swift/false) when your app can’t or won’t respond to the action callbacks to avoid non-interactive buttons or UI elements.
+Set this value to `false` when your app can’t or won’t respond to the action callbacks to avoid non-interactive buttons or UI elements.
 
 
 ---

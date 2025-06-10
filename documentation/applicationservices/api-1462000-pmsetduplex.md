@@ -1,6 +1,6 @@
 # PMSetDuplex(_:_:)
 
-**Framework**: Applicationservices  
+**Framework**: Application Services  
 **Kind**: func
 
 Sets the duplex mode.

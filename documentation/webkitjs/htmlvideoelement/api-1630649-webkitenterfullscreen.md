@@ -1,6 +1,6 @@
 # webkitEnterFullScreen
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Use [`webkitEnterFullscreen`](htmlvideoelement/1633500-webkitenterfullscreen.md).

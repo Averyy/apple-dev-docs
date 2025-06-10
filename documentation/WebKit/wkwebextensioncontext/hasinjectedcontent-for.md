@@ -1,6 +1,6 @@
 # hasInjectedContent(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Checks if the extension has script or stylesheet content that can be injected into the specified URL.

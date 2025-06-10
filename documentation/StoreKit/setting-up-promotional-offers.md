@@ -1,6 +1,6 @@
 # Setting up promotional offers
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Generate a key and configure offers for auto-renewable subscriptions in App Store Connect.
 
@@ -48,4 +48,4 @@ For business guidance on using promotional offers, see [`Auto-renewable Subscrip
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/setting-up-promotional-offers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/setting-up-promotional-offers)*

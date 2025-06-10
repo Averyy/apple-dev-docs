@@ -10,6 +10,7 @@ Display a coordinate axis indicating the position and orientation of the AR worl
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

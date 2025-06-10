@@ -1,6 +1,6 @@
 # toolbar(_:for:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Specifies the visibility of a bar managed by SwiftUI.
@@ -72,6 +72,7 @@ Depending on the specified bars, the requested visibility may not be able to be 
   Specifies the preferred visibility of backgrounds on a bar managed by SwiftUI.
 - [struct ToolbarPlacement](toolbarplacement.md)
   The placement of a toolbar.
+- [struct ContentToolbarPlacement](contenttoolbarplacement.md)
 
 
 ---

@@ -20,7 +20,7 @@ protocol GKFriendRequestComposeViewControllerDelegate
 
 ## Topics
 
-### Responding to User Events
+### Instance Methods
 - [func friendRequestComposeViewControllerDidFinish(GKFriendRequestComposeViewController)](gkfriendrequestcomposeviewcontrollerdelegate/friendrequestcomposeviewcontrollerdidfinish(_:).md)
   Called when the player dismisses the request.
 
@@ -31,6 +31,8 @@ protocol GKFriendRequestComposeViewControllerDelegate
 - [protocol GKChallengeEventHandlerDelegate](gkchallengeeventhandlerdelegate.md)
   You implement the [`GKChallengeEventHandlerDelegate`](gkchallengeeventhandlerdelegate.md) delegate to control how challenges are displayed in your game.
 - [protocol GKChallengesViewControllerDelegate](gkchallengesviewcontrollerdelegate.md)
+- [protocol GKChallengeListener](gkchallengelistener.md)
+  An object that responds to challenge events.
 - [protocol GKGameSessionEventListener](gkgamesessioneventlistener.md)
   An event listener that handles game session events.
 - [protocol GKLeaderboardViewControllerDelegate](gkleaderboardviewcontrollerdelegate.md)

@@ -28,7 +28,7 @@ class CKFetchRecordZonesOperation
 
 Use this operation object to fetch record zones so that you can ascertain their capabilities.
 
-If you assign a handler to the [`completionBlock`](https://developer.apple.com/documentation/foundation/operation/1408085-completionblock) property of the operation, CloudKit calls it after the operation executes and returns its results. You can use the handler to perform any housekeeping tasks that relate to the operation, but don’t use it to process the results of the operation. The handler you specify should manage any failures, whether due to an error or an explicit cancellation.
+If you assign a handler to the [`completionBlock`](https://developer.apple.com/documentation/Foundation/Operation/completionBlock) property of the operation, CloudKit calls it after the operation executes and returns its results. You can use the handler to perform any housekeeping tasks that relate to the operation, but don’t use it to process the results of the operation. The handler you specify should manage any failures, whether due to an error or an explicit cancellation.
 
 ## Topics
 
@@ -62,6 +62,7 @@ If you assign a handler to the [`completionBlock`](https://developer.apple.com/d
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

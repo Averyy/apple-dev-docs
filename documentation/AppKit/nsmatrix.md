@@ -19,8 +19,6 @@ class NSMatrix
 
 > ❗ **Important**:  Use of NSMatrix is discouraged in apps that run in macOS 10.8 and later. If you need to create a radio button group in an app that runs in macOS 10.8 and later, create instances of [`NSButton`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2219/_index.html#//apple_ref/doc/uid/DTS10004624-CH1-SUBSECTION12) that each specify a button type of `NSRadioButton` and specify the same action and the same superview for each button in the group.
 
- Use of NSMatrix is discouraged in apps that run in macOS 10.8 and later. If you need to create a radio button group in an app that runs in macOS 10.8 and later, create instances of [`NSButton`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2219/_index.html#//apple_ref/doc/uid/DTS10004624-CH1-SUBSECTION12) that each specify a button type of `NSRadioButton` and specify the same action and the same superview for each button in the group.
-
 `NSMatrix` uses flipped coordinates by default. The cells in an [`NSMatrix`](nsmatrix.md) object are numbered by row and column, each starting with 0; for example, the top left [`NSCell`](nscell.md) would be at (0, 0), and the [`NSCell`](nscell.md) that’s second down and third across would be at (1, 2).
 
 The [`NSMatrix`](nsmatrix.md) class has the notion of a single selected cell, which is the cell that was most recently clicked or that was so designated by a [`selectCell(atRow:column:)`](nsmatrix/selectcell(atrow:column:).md) or [`selectCell(withTag:)`](nsmatrix/selectcell(withtag:).md) message. The selected cell is the cell chosen for action messages except for [`performClick(_:)`](nscell/performclick(_:).md) ([`NSCell`](nscell.md)), which is assigned to the key cell. (The key cell is generally identical to the selected cell, but can be given click focus while leaving the selected cell unchanged.) If the user has selected multiple cells, the selected cell is the one lowest and furthest to the right in the matrix of cells.
@@ -236,6 +234,7 @@ The [`NSMatrix`](nsmatrix.md) class has the notion of a single selected cell, wh
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
 - [NSViewToolTipOwner](nsviewtooltipowner.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # ASAccountAuthenticationModificationExtensionContext
 
-**Framework**: Authenticationservices  
+**Framework**: Authentication Services  
 **Kind**: class
 
 An object that you interact with to change an account’s password or to upgrade to Sign in with Apple.
@@ -46,6 +46,8 @@ class ASAccountAuthenticationModificationExtensionContext
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -59,4 +61,4 @@ class ASAccountAuthenticationModificationExtensionContext
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/asaccountauthenticationmodificationextensioncontext)*
+*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/asaccountauthenticationmodificationextensioncontext)*

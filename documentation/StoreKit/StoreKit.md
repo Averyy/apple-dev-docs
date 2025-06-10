@@ -18,13 +18,17 @@ Support In-App Purchases and interactions with the App Store.
 
 Use the StoreKit framework to provide the following features and services for your apps and In-App Purchases:
 
-The StoreKit framework also provides functionality for [`External Purchase`](external-purchase.md), [`External link account`](external-link-account.md), and [`PaymentMethodBinding`](paymentmethodbinding.md).
+The StoreKit framework also provides functionality for [`External Purchase`](external-purchase.md), [`External link account`](external-link-account.md), [`PaymentMethodBinding`](paymentmethodbinding.md), and [`StoreDownloaderExtension`](storedownloaderextension.md).
 
 ## Topics
 
 ### In-App Purchase
 - [In-App Purchase](in-app-purchase.md)
   Offer content and services in your app across Apple platforms using a Swift-based interface.
+- [Understanding StoreKit workflows](understanding-storekit-workflows.md)
+  Implement an in-app store with several product types, using StoreKit views.
+- [Getting started with In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
+  Set up an in-app store using SwiftUI and StoreKit views.
 ### App transaction
 - [Supporting business model changes by using the app transaction](supporting-business-model-changes-by-using-the-app-transaction.md)
   Access the app transaction to learn when a customer first purchased an app, to determine the app features they’re entitled to.
@@ -51,6 +55,12 @@ The StoreKit framework also provides functionality for [`External Purchase`](ext
   A view controller that provides a page where customers can purchase media from the App Store.
 - [class SKOverlay](skoverlay.md)
   A class that displays an overlay you can use to recommend another app or an App Clip’s corresponding full app.
+### Background assets extension
+- [protocol StoreDownloaderExtension](storedownloaderextension.md)
+  A protocol to which a downloader extension for Apple-Hosted Background Assets must conform.
+### Payment method binding
+- [struct PaymentMethodBinding](paymentmethodbinding.md)
+  A binding that makes payment methods available in apps for an Apple ID.
 ### Ad network attribution
 - [Ad network attribution](ad-network-attribution.md)
   Validate advertisement-driven app installations.
@@ -60,9 +70,6 @@ The StoreKit framework also provides functionality for [`External Purchase`](ext
 ### External link account
 - [External link account](external-link-account.md)
   Enable qualifying apps to link to an external website for account creation or management.
-### Payment method binding
-- [struct PaymentMethodBinding](paymentmethodbinding.md)
-  A binding that makes payment methods available in apps for an Apple ID.
 ### Deprecated
 - [class SKCloudServiceSetupViewController](skcloudservicesetupviewcontroller.md)
   A view controller that helps people perform setup for a cloud service, like an Apple Music subscription.
@@ -77,10 +84,10 @@ The StoreKit framework also provides functionality for [`External Purchase`](ext
   Create and automate tests in Xcode for your app’s subscription and in-app purchase transactions, and SKAdNetwork implementations.
 - [App Store Server Notifications](../AppStoreServerNotifications/AppStoreServerNotifications.md)
   Monitor In-App Purchase events in real time and learn of unreported external purchase tokens, with server notifications from the App Store.
-- [App Store Receipts](../appstorereceipts/appstorereceipts.md)
-  Validate app and In-App Purchase receipts with the App Store.
 - [App Store Connect API](../AppStoreConnectAPI/AppStoreConnectAPI.md)
   Automate the tasks you perform on the Apple Developer website and in App Store Connect.
+- [App Store Receipts](../appstorereceipts/appstorereceipts.md)
+  Validate app and In-App Purchase receipts with the App Store.
 
 
 ---

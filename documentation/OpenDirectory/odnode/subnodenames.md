@@ -1,6 +1,6 @@
 # subnodeNames()
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Returns the names of subnodes for the node.

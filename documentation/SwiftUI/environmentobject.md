@@ -1,6 +1,6 @@
 # EnvironmentObject
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A property wrapper type for an observable object that a parent or ancestor view supplies.
@@ -45,6 +45,7 @@ An environment object invalidates the current view whenever the observable objec
 ### Conforms To
 - [DynamicProperty](dynamicproperty.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -56,4 +57,4 @@ An environment object invalidates the current view whenever the observable objec
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/environmentobject)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/environmentobject)*

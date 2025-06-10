@@ -24,8 +24,6 @@ An `NSComboBoxCell` object uses this method to determine how many items it shoul
 
 > ❗ **Important**:  While this method is marked as `@optional` in the protocol, .
 
- While this method is marked as `@optional` in the protocol, .
-
 ## Parameters
 
 - `comboBoxCell`: The combo box cell for which your data source manages items.

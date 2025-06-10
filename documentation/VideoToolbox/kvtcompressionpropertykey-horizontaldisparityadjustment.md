@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_HorizontalDisparityAdjustment
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A value that indicates a relative shift of the left and right images, which changes the zero parallax plane.

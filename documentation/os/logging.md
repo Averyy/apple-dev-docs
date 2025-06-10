@@ -16,8 +16,6 @@ The unified logging system provides a comprehensive and performant API to captur
 
 > ❗ **Important**:  The unified logging system is available in iOS 10.0 and later, macOS 10.12 and later, tvOS 10.0 and later, and watchOS 3.0 and later. This system supersedes the Apple System Logger (ASL) and Syslog APIs.
 
- The unified logging system is available in iOS 10.0 and later, macOS 10.12 and later, tvOS 10.0 and later, and watchOS 3.0 and later. This system supersedes the Apple System Logger (ASL) and Syslog APIs.
-
 ## Topics
 
 ### Essentials

@@ -8,6 +8,7 @@ An object that represents what to focus on, and where to focus, in a given movie
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
 
@@ -38,6 +39,7 @@ struct Frame
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

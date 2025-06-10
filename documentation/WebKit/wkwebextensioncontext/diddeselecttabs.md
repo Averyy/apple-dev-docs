@@ -1,6 +1,6 @@
 # didDeselectTabs(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called by the app when tabs are deselected to fire appropriate events with only this extension.

@@ -1,6 +1,6 @@
 # xpc_uint64_create(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates an XPC unsigned integer object.

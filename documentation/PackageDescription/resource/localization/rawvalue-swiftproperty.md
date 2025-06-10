@@ -31,11 +31,6 @@ print(selectedSize == PaperSize(rawValue: selectedSize.rawValue)!)
 // Prints "true"
 ```
 
-## See Also
-
-- [Resource.Localization.RawValue](resource/localization/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-
 
 ---
 

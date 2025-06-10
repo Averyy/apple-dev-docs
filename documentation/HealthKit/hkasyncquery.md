@@ -40,6 +40,7 @@ protocol HKAsyncQuery
 - [HKSourceQueryDescriptor](hksourcequerydescriptor.md)
 - [HKStatisticsCollectionQueryDescriptor](hkstatisticscollectionquerydescriptor.md)
 - [HKStatisticsQueryDescriptor](hkstatisticsquerydescriptor.md)
+- [HKUserAnnotatedMedicationQueryDescriptor](hkuserannotatedmedicationquerydescriptor.md)
 - [HKVerifiableClinicalRecordQueryDescriptor](hkverifiableclinicalrecordquerydescriptor.md)
 - [HKWorkoutEffortRelationshipQueryDescriptor](hkworkouteffortrelationshipquerydescriptor.md)
 

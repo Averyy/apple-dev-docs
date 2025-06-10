@@ -1,6 +1,6 @@
 # preferredInteractionTypes
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The types of interactions that people can perform with the image.

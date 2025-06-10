@@ -48,6 +48,7 @@ Provide this structure to [`updateElements(_:timeout:)`](hiddeviceclient/updatee
 - [HIDElementUpdate](hidelementupdate.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

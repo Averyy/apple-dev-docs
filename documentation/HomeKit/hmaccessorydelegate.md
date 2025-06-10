@@ -1,6 +1,6 @@
 # HMAccessoryDelegate
 
-**Framework**: Homekit  
+**Framework**: HomeKit  
 **Kind**: protocol
 
 A set of methods that defines the communication method for state updates from accessories to their delegates.
@@ -56,6 +56,7 @@ To find out about changes made to the accessory’s home, adopt the [`HMHomeDele
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -65,4 +66,4 @@ To find out about changes made to the accessory’s home, adopt the [`HMHomeDele
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HomeKit/hmaccessorydelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/homekit/hmaccessorydelegate)*

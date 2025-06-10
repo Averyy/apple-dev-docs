@@ -8,10 +8,10 @@ A type that provides the properties to include in a property-matched query.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -41,12 +41,11 @@ var properties = QueryProperties {
 ## Topics
 
 ### Creating the query properties
+- [init(properties: () -> [EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>])](entityqueryproperties/init(properties:).md)
 - [enum EntityQueryPropertiesBuilder](entityquerypropertiesbuilder.md)
   A result builder that allows you to declaratively describe the properties to include in a property-matched query.
 ### Getting the query properties
 - [subscript(Int) -> EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>](entityqueryproperties/subscript(_:).md)
-### Initializers
-- [init(properties: () -> [EntityQueryPropertyDeclaration<Entity, ComparatorMappingType>])](entityqueryproperties/init(properties:).md)
 
 ## See Also
 

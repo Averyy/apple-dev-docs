@@ -1,6 +1,6 @@
 # IntentRecommendation
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 An object that describes a recommended intent configuration for a user-customizable widget.
@@ -8,8 +8,9 @@ An object that describes a recommended intent configuration for a user-customiza
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -50,6 +51,9 @@ public func recommendations() -> [IntentRecommendation<DynamicCharacterSelection
   Creates a recommended configuration for a widget on platforms that don’t offer a dedicated user interface to customize widgets.
 - [init<S>(intent: T, description: S)](intentrecommendation/init(intent:description:)-6v7dj.md)
   Creates a recommended configuration for a widget on platforms that don’t offer a dedicated user interface to customize widgets.
+### Initializers
+- [init(intent: T, description: LocalizedStringResource)](intentrecommendation/init(intent:description:)-6o8yy.md)
+  Creates a recommended configuration for a widget on platforms that don’t offer a dedicated user interface to customize widgets with a localized description.
 
 ## See Also
 
@@ -69,4 +73,4 @@ public func recommendations() -> [IntentRecommendation<DynamicCharacterSelection
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/intentrecommendation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/intentrecommendation)*

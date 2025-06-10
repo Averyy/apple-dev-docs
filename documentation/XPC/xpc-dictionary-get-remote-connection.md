@@ -1,6 +1,6 @@
 # xpc_dictionary_get_remote_connection(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the connection that receives the dictionary.

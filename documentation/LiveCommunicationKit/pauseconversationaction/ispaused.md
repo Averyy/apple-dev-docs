@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-Specifies if the `Conversation` should be paused upon execution of this action.
+A value that specifies whether to start or stop all audio or video streams for a conversation.
 
 **Availability**:
 - iOS 17.4+

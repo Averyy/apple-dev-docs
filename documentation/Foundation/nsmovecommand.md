@@ -43,6 +43,8 @@ When an instance of `NSMoveCommand` is executed, it does not make copies of move
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

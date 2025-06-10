@@ -1,6 +1,6 @@
 # CATextLayer
 
-**Framework**: Quartzcore  
+**Framework**: Core Animation  
 **Kind**: class
 
 A layer that provides simple text layout and rendering of plain or attributed strings.
@@ -68,6 +68,8 @@ The first line is aligned to the top of the layer.
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -79,4 +81,4 @@ The first line is aligned to the top of the layer.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/catextlayer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/catextlayer)*

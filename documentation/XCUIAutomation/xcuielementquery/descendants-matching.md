@@ -1,6 +1,6 @@
 # descendants(matching:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Returns a new query that matches all descendants of the requested type.

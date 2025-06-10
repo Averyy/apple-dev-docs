@@ -1,6 +1,6 @@
 # vmnet_interface_remove_ip_port_forwarding_rule(_:_:_:_:_:)
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: func
 
 **Availability**:

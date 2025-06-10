@@ -8,7 +8,7 @@ Sets whether to apply auto-capitalization to this view.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
+- Mac Catalyst ?+
 - tvOS 13.0+
 - visionOS 1.0+
 

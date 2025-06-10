@@ -1,6 +1,6 @@
 # XPC_TYPE_ERROR
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A type that represents an error object.

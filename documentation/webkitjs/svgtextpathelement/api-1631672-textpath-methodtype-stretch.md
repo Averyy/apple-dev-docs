@@ -1,6 +1,6 @@
 # TEXTPATH_METHODTYPE_STRETCH
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

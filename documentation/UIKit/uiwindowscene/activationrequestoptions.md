@@ -52,7 +52,6 @@ Create a [`UIWindowScene.ActivationRequestOptions`](uiwindowscene/activationrequ
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

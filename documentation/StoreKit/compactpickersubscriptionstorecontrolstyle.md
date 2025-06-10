@@ -38,6 +38,7 @@ This style lays out the picker options in a horizontal stack, and it can scroll 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SubscriptionStoreControlStyle](subscriptionstorecontrolstyle.md)
 
 ## See Also

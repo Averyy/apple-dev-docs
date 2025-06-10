@@ -3,45 +3,44 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a plain text editor that captures the current selection.
+Creates a styled text editor.
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- Mac Catalyst 18.0+
-- macOS 15.0+
-- visionOS 2.0+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 1.0+
 
 ## Declaration
 
 ```swift
-init(text: Binding<String>, selection: Binding<TextSelection?>)
+init(text: Binding<AttributedString>, selection: Binding<AttributedTextSelection>? = nil)
 ```
 
 #### Discussion
 
-Use this initializer to create a view in which users can enter and edit long-form text and access the current selection.
+Use a [`TextEditor`](texteditor.md) instance to create a view in which users can enter and edit long-form styled text.
 
-In this example, the text editor renders gray text using the 13 point Helvetica Neue font with 5 points of spacing between each line:
+In this example the text editor is setup to edit styled text:
 
 ```swift
-struct TextEditingView: View {
-    @State private var fullText: String = "This is some editable text..."
-    @State var selection: TextSelection? = nil
+struct StyledTextEditingView: View {
+    @State private var fullText =
+        AttributedString("This is some editable text...")
 
     var body: some View {
-        TextEditor(text: $fullText, selection: $selection)
-            .foregroundColor(Color.gray)
-            .font(.custom("HelveticaNeue", size: 13))
-            .lineSpacing(5)
+        TextEditor(text: $fullText)
     }
 }
 ```
 
+If the AttributedString does not have a font and/or foreground color specified for a given range of text, the rich text editor will use the font and/or foreground color inherited from the environment for that range of text.
+
 ## Parameters
 
-- `text`: A   to the variable containing the text to edit.
-- `selection`: A   to the variable containing the selection.
+- `text`: A   to the variable containing the   styled text to edit.
+- `selection`: An optional   to the variable   containing the selection.
 
 
 ---

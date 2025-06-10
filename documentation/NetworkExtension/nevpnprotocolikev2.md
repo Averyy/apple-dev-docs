@@ -71,6 +71,7 @@ Instances of this class are thread safe.
 - [var enableFallback: Bool](nevpnprotocolikev2/enablefallback.md)
   A property to enable the use of cellular data when Wi-Fi connectivity is poor.
 ### Instance Properties
+- [var allowPostQuantumKeyExchangeFallback: Bool](nevpnprotocolikev2/allowpostquantumkeyexchangefallback.md)
 - [var ppkConfiguration: NEVPNIKEv2PPKConfiguration?](nevpnprotocolikev2/ppkconfiguration.md)
 
 ## Relationships

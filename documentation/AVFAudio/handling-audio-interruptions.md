@@ -38,7 +38,7 @@ func setupNotifications() {
 
 ##### Handle Audio Session Interruptions
 
-The posted [`Notification`](https://developer.apple.com/documentation/Foundation/Notification) object contains a populated user-information dictionary that provides the details of the interruption. You determine the type of interruption by retrieving the [`AVAudioSession.InterruptionType`](avaudiosession/interruptiontype.md) value from the [`userInfo`](https://developer.apple.com/documentation/foundation/notification/1779652-userinfo) dictionary. The interruption type indicates whether the interruption is beginning or ending.
+The posted [`Notification`](https://developer.apple.com/documentation/Foundation/Notification) object contains a populated user-information dictionary that provides the details of the interruption. You determine the type of interruption by retrieving the [`AVAudioSession.InterruptionType`](avaudiosession/interruptiontype.md) value from the [`userInfo`](https://developer.apple.com/documentation/Foundation/Notification/userInfo) dictionary. The interruption type indicates whether the interruption is beginning or ending.
 
 ```swift
 @objc func handleInterruption(notification: Notification) {
@@ -70,7 +70,7 @@ The posted [`Notification`](https://developer.apple.com/documentation/Foundation
 }
 ```
 
-If the interruption type is [`AVAudioSession.InterruptionType.ended`](avaudiosession/interruptiontype/ended.md), the [`userInfo`](https://developer.apple.com/documentation/foundation/notification/1779652-userinfo) dictionary contains an [`AVAudioSession.InterruptionOptions`](avaudiosession/interruptionoptions.md) value, which you use to determine whether playback automatically resumes.
+If the interruption type is [`AVAudioSession.InterruptionType.ended`](avaudiosession/interruptiontype/ended.md), the [`userInfo`](https://developer.apple.com/documentation/Foundation/Notification/userInfo) dictionary contains an [`AVAudioSession.InterruptionOptions`](avaudiosession/interruptionoptions.md) value, which you use to determine whether playback automatically resumes.
 
 ## See Also
 

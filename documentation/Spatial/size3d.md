@@ -115,6 +115,11 @@ struct Size3D
 - [var simd: simd_double3](size3d/simd.md)
 - [func containsAny(of: [Point3D]) -> Bool](size3d/containsany(of:).md)
   Returns a Boolean value that indicates whether the size contains the specified point.
+### Initializers
+- [init(simd_packed_double4)](size3d/init(_:)-25dft.md)
+  Creates a Spatial size from a simd packed vector.
+- [init(Size3DFloat)](size3d/init(_:)-2jfoh.md)
+  Returns a double-precision size from a single-precision size.
 ### Default Implementations
 - [AdditiveArithmetic Implementations](size3d/additivearithmetic-implementations.md)
 - [CustomReflectable Implementations](size3d/customreflectable-implementations.md)
@@ -122,10 +127,11 @@ struct Size3D
 - [Encodable Implementations](size3d/encodable-implementations.md)
 - [Equatable Implementations](size3d/equatable-implementations.md)
 - [Hashable Implementations](size3d/hashable-implementations.md)
-- [Primitive3D Implementations](size3d/primitive3d-implementations.md)
-- [Scalable3D Implementations](size3d/scalable3d-implementations.md)
+- [Primitive3DProtocol Implementations](size3d/primitive3dprotocol-implementations.md)
+- [Scalable3DProtocol Implementations](size3d/scalable3dprotocol-implementations.md)
 - [Shearable3D Implementations](size3d/shearable3d-implementations.md)
 - [Volumetric Implementations](size3d/volumetric-implementations.md)
+- [VolumetricProtocol Implementations](size3d/volumetricprotocol-implementations.md)
 
 ## Relationships
 
@@ -140,31 +146,51 @@ struct Size3D
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Primitive3D](primitive3d.md)
+- [Primitive3DProtocol](primitive3dprotocol.md)
 - [Rotatable3D](rotatable3d.md)
+- [Rotatable3DProtocol](rotatable3dprotocol.md)
 - [Scalable3D](scalable3d.md)
+- [Scalable3DProtocol](scalable3dprotocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Shearable3D](shearable3d.md)
+- [SpatialTypeProtocol](spatialtypeprotocol.md)
 - [VectorArithmetic](../SwiftUI/VectorArithmetic.md)
 - [Volumetric](volumetric.md)
+- [VolumetricProtocol](volumetricprotocol.md)
 
 ## See Also
 
 - [struct Point3D](point3d.md)
   A point in a 3D coordinate system.
+- [struct Point3DFloat](point3dfloat.md)
+  A single-precision structure that contains a point in a three-dimensional coordinate system.
+- [struct Size3DFloat](size3dfloat.md)
+  A single-precision structure that contains width, height, and depth values.
 - [struct Rect3D](rect3d.md)
   A rectangle in a 3D coordinate system.
+- [struct Rect3DFloat](rect3dfloat.md)
+  A single-precision structure that contains the location and dimensions of a 3D rectangle.
 - [struct Rotation3D](rotation3d.md)
   A rotation in three dimensions.
+- [struct Rotation3DFloat](rotation3dfloat.md)
+  A single-precision structure that represents a rotation in three dimensions.
 - [struct RotationAxis3D](rotationaxis3d.md)
   A 3D rotation axis.
+- [struct RotationAxis3DFloat](rotationaxis3dfloat.md)
+  A 3D axis.
 - [struct Pose3D](pose3d.md)
   A structure that contains a 3D position and a 3D rotation.
+- [struct Pose3DFloat](pose3dfloat.md)
+  A single-precision structure that contains a position and rotation.
 - [struct ScaledPose3D](scaledpose3d.md)
+  A structure that contains a position, rotation, and scale.
+- [struct ScaledPose3DFloat](scaledpose3dfloat.md)
   A structure that contains a position, rotation, and scale.
 - [struct SphericalCoordinates3D](sphericalcoordinates3d.md)
   A structure that defines spherical coordinates in radial, inclination, azimuthal order.
-- [struct Ray3D](ray3d.md)
-  A ray in a 3D coordinate system.
+- [struct SphericalCoordinates3DFloat](sphericalcoordinates3dfloat.md)
+  A single-precision structure that defines spherical coordinates in radial, inclination, azimuthal order.
 
 
 ---

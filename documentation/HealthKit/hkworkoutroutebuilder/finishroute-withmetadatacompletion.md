@@ -1,6 +1,6 @@
 # finishRoute(with:metadata:completion:)
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: method
 
 Creates, saves, and associates the route with the provided workout.

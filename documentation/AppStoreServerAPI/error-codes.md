@@ -15,10 +15,14 @@ Understand the error codes that App Store Server API responses return.
   An error that indicates the endpoint doesn’t support an app transaction ID.
 - [object FamilySharedSubscriptionExtensionIneligibleError](familysharedsubscriptionextensionineligibleerror.md)
   An error that indicates a subscription isn’t directly eligible for a renewal date extension because the customer obtained it through Family Sharing.
+- [object FamilyTransactionNotSupportedError](familytransactionnotsupportederror.md)
+  An error that indicates the transaction is for a product the customer obtains through Family Sharing, which the endpoint doesn’t support.
 - [object GeneralInternalError](generalinternalerror.md)
   An error that indicates a general internal error.
 - [object GeneralBadRequestError](generalbadrequesterror.md)
   An error that indicates an invalid request.
+- [object InvalidAppAccountTokenUUIDError](invalidappaccounttokenuuiderror.md)
+  An error that indicates the app account token value is not a valid UUID.
 - [object InvalidAppIdentifierError](invalidappidentifiererror.md)
   An error that indicates an invalid app identifier.
 - [object InvalidEmptyStorefrontCountryCodeListError](invalidemptystorefrontcountrycodelisterror.md)
@@ -53,6 +57,8 @@ Understand the error codes that App Store Server API responses return.
   An error that indicates the subscription doesn’t qualify for a renewal-date extension due to its subscription state.
 - [object SubscriptionMaxExtensionError](subscriptionmaxextensionerror.md)
   An error that indicates the subscription doesn’t qualify for a renewal-date extension because it has already received the maximum extensions.
+- [object TransactionIdIsNotOriginalTransactionIdError](transactionidisnotoriginaltransactioniderror.md)
+  An error that indicates the endpoint expects an original transaction identifier.
 - [object TransactionIdNotFoundError](transactionidnotfounderror.md)
   An error that indicates a transaction identifier wasn’t found.
 ### Errors to retry

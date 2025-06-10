@@ -1,6 +1,6 @@
 # UIView
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An object that manages the content for a rectangular area on the screen.
@@ -22,13 +22,13 @@ class UIView
 ## Mentions
 
 - [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
+- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
+- [Customizing drawings](customizing-drawings.md)
+- [Implementing a Multi-Touch app](implementing-a-multi-touch-app.md)
+- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
+- [About App Development with UIKit](about-app-development-with-uikit.md)
 - [Enhancing your app with fluid transitions](enhancing-your-app-with-fluid-transitions.md)
 - [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
-- [Customizing drawings](customizing-drawings.md)
-- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
-- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
-- [Implementing a Multi-Touch app](implementing-a-multi-touch-app.md)
-- [About App Development with UIKit](about-app-development-with-uikit.md)
 
 #### Overview
 
@@ -97,7 +97,7 @@ When subclassing [`UIView`](uiview.md), there are only a handful of methods you 
 
 - Initialization:
 - [`init(frame:)`](uiview/init(frame:).md) - It is recommended that you implement this method. You can also implement custom initialization methods in addition to, or instead of, this method.
-- [`init(coder:)`](https://developer.apple.com/documentation/OSLog/OSLogEntry/init(coder:)) - Implement this method if you load your view from storyboards or nib files and your view requires custom initialization.
+- doc://com.apple.documentation/documentation/oslog/oslogentry/init(coder:) - Implement this method if you load your view from storyboards or nib files and your view requires custom initialization.
 - [`layerClass`](uiview/layerclass.md) Use this property only if you want your view to use a different Core Animation layer for its backing store. For example, if your view uses tiling to display a large scrollable area, you might want to set the property to the [`CATiledLayer`](https://developer.apple.com/documentation/QuartzCore/CATiledLayer) class.
 - Drawing and printing:
 - [`draw(_:)`](uiview/draw(_:).md) - Implement this method if your view draws custom content. If your view does not do any custom drawing, avoid overriding this method.
@@ -361,6 +361,11 @@ Animations are another way to make visible changes to a view without requiring y
   A Boolean value that indicates whether the receiver depends on the constraint-based layout system.
 - [var translatesAutoresizingMaskIntoConstraints: Bool](uiview/translatesautoresizingmaskintoconstraints.md)
   A Boolean value that determines whether the view’s autoresizing mask is translated into Auto Layout constraints.
+### Accessing insets and layout guides
+- [UIView.LayoutRegion](uiview/layoutregion.md)
+- [func directionalEdgeInsets(for: UIView.LayoutRegion) -> NSDirectionalEdgeInsets](uiview/directionaledgeinsets(for:).md)
+- [func edgeInsets(for: UIView.LayoutRegion) -> UIEdgeInsets](uiview/edgeinsets(for:).md)
+- [func layoutGuide(for: UIView.LayoutRegion) -> UILayoutGuide](uiview/layoutguide(for:).md)
 ### Adjusting the user interface
 - [var overrideUserInterfaceStyle: UIUserInterfaceStyle](uiview/overrideuserinterfacestyle.md)
   The user interface style adopted by the view and all of its subviews.
@@ -497,8 +502,6 @@ Animations are another way to make visible changes to a view without requiring y
 - [var showsLargeContentViewer: Bool](uiview/showslargecontentviewer.md)
   A Boolean value that indicates whether to show the view in the large content viewer.
 ### Animating views
-- [static func animate(with: Animation, changes: () -> Void, completion: (() -> Void)?)](uiview/animate(with:changes:completion:).md)
-  Animates changes to one or more views using the specified SwiftUI animation.
 - [class func animate(springDuration: TimeInterval, bounce: CGFloat, initialSpringVelocity: CGFloat, delay: TimeInterval, options: UIView.AnimationOptions, animations: () -> Void, completion: ((Bool) -> Void)?)](uiview/animate(springduration:bounce:initialspringvelocity:delay:options:animations:completion:).md)
   Animates changes to one or more views using a spring animation with the specified duration, bounce, initial velocity, delay, options, and completion handler.
 - [class func animate(withDuration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions, animations: () -> Void, completion: ((Bool) -> Void)?)](uiview/animate(withduration:delay:options:animations:completion:).md)
@@ -551,6 +554,15 @@ Animations are another way to make visible changes to a view without requiring y
 ### Deprecated
 - [Deprecated symbols](uiview-deprecated-symbols.md)
   Symbols that views no longer support.
+### Initializers
+- [convenience init()](uiview/init.md)
+### Instance Methods
+- [func setNeedsUpdateProperties()](uiview/setneedsupdateproperties.md)
+  Call to manually request a properties update for the view. Multiple requests may be coalesced into a single update alongside the next layout pass.
+- [func updateProperties()](uiview/updateproperties.md)
+  Override point for subclasses to update properties of this view. Never call this method directly; use `setNeedsUpdateProperties` to schedule an update.
+- [func updatePropertiesIfNeeded()](uiview/updatepropertiesifneeded.md)
+  Forces an immediate properties update for this view (and its view controller, if applicable) and any subviews, including any view controllers or views in its subtree.
 ### Type Methods
 - [static func animate(Animation, changes: () -> Void, completion: (() -> Void)?)](uiview/animate(_:changes:completion:).md)
 ### Enumerations
@@ -565,6 +577,7 @@ Animations are another way to make visible changes to a view without requiring y
 - [UIActionSheet](uiactionsheet.md)
 - [UIActivityIndicatorView](uiactivityindicatorview.md)
 - [UIAlertView](uialertview.md)
+- [UIBackgroundExtensionView](uibackgroundextensionview.md)
 - [UICalendarView](uicalendarview.md)
 - [UICollectionReusableView](uicollectionreusableview.md)
 - [UIContentUnavailableView](uicontentunavailableview.md)
@@ -601,6 +614,7 @@ Animations are another way to make visible changes to a view without requiring y
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)
@@ -626,4 +640,4 @@ Animations are another way to make visible changes to a view without requiring y
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiview)*

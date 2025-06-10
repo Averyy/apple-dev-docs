@@ -1,6 +1,6 @@
 # backgroundContentFailedToLoad
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates that an error occurred loading the background content.

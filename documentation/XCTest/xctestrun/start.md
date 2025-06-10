@@ -1,6 +1,6 @@
 # start()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Starts a test run.

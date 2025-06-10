@@ -1,6 +1,6 @@
 # stackTemplate
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Displays groups of products.
 
@@ -149,4 +149,4 @@ When you add a video in the background, playback starts 5 seconds after the page
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/stacktemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/stacktemplate)*

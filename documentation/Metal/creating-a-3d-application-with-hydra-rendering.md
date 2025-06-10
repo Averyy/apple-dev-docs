@@ -54,7 +54,7 @@ Finally, open the generated Xcode project, and change the scheme to `hydraplayer
 - [Using Metal to Draw a View’s Contents](using-metal-to-draw-a-view's-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
 - [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
-  Render a simple 2D triangle.
+  Render a colorful, 2D triangle by running a draw command on the GPU.
 - [Selecting Device Objects for Graphics Rendering](selecting-device-objects-for-graphics-rendering.md)
   Switch dynamically between multiple GPUs to efficiently render to a display.
 - [Customizing Render Pass Setup](customizing-render-pass-setup.md)
@@ -81,4 +81,4 @@ Finally, open the generated Xcode project, and change the scheme to `hydraplayer
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/creating-a-3d-application-with-hydra-rendering)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/creating-a-3d-application-with-hydra-rendering)*

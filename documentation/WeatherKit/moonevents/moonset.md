@@ -1,6 +1,6 @@
 # moonset
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The time of moonset.

@@ -1,6 +1,6 @@
 # XPC_EVENT_KEY_NAME
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A key for querying an XPC event dictionary to retrieve a string that identifies the event.
@@ -16,12 +16,13 @@ A key for querying an XPC event dictionary to retrieve a string that identifies 
 ## Declaration
 
 ```swift
-let XPC_EVENT_KEY_NAME: UnsafePointer<CChar>
+nonisolated
+(unsafe) let XPC_EVENT_KEY_NAME: UnsafePointer<CChar>
 ```
 
 ## See Also
 
-- [func xpc_set_event_stream_handler(UnsafePointer<CChar>, dispatch_queue_t?, xpc_handler_t)](xpc_set_event_stream_handler(_:_:_:).md)
+- [func xpc_set_event_stream_handler(UnsafePointer<CChar>, dispatch_queue_t?, (xpc_object_t) -> Void)](xpc_set_event_stream_handler(_:_:_:).md)
   Sets the event handler to invoke when receiving streamed events.
 
 

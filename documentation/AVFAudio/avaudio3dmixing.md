@@ -26,8 +26,6 @@ Only the [`AVAudioEnvironmentNode`](avaudioenvironmentnode.md) class implements 
 
 > ❗ **Important**:  The [`AVAudioMixing`](avaudiomixing.md) protocol adopts these properties. As a result, many classes inherit this protocol by adopting `AVAudioMixing`.
 
- The [`AVAudioMixing`](avaudiomixing.md) protocol adopts these properties. As a result, many classes inherit this protocol by adopting `AVAudioMixing`.
-
 ## Topics
 
 ### Getting the 3D Mixing Parameters

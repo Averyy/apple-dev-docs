@@ -1,6 +1,6 @@
 # rawValue
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The corresponding value of the raw type.

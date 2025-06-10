@@ -31,6 +31,8 @@ If you set value to [`false`](https://developer.apple.com/documentation/swift/fa
   A Boolean value that indicates whether the capture session uses the app’s shared audio session.
 - [var configuresApplicationAudioSessionToMixWithOthers: Bool](avcapturesession/configuresapplicationaudiosessiontomixwithothers.md)
   A Boolean value that Indicates whether the capture session configures the app’s audio session to mix with others.
+- [var configuresApplicationAudioSessionForBluetoothHighQualityRecording: Bool](avcapturesession/configuresapplicationaudiosessionforbluetoothhighqualityrecording.md)
+  A Boolean value that indicates whether the capture session configures the app’s audio session for bluetooth high-quality recording.
 
 
 ---

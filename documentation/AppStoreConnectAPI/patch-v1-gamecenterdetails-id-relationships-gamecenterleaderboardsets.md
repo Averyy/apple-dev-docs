@@ -16,6 +16,8 @@ Edit the associated leaderboard sets for a Game Center detail.
   Edit challenge state, default leaderboards, and groups.
 - [Modify the associated leaderboards for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboards.md)
   Edit the associated leaderboards for a Game Center detail.
+- [Modify the challenges minimum platform version for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-challengesminimumplatformversions.md)
+  Update the relationship between a challenges minimum platform version and a specific Game Center detail.
 
 
 ---

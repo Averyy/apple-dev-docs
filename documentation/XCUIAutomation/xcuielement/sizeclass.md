@@ -1,6 +1,6 @@
 # XCUIElement.SizeClass
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: enum
 
 The user interface size classes you can inspect in a UI test.
@@ -44,6 +44,7 @@ enum SizeClass
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

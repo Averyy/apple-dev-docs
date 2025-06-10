@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_MaxKeyFrameIntervalDuration
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The maximum duration from one key frame to the next in seconds.

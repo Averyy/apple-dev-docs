@@ -1,6 +1,6 @@
 # ResponseType
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: typealias
 
 The recommended action from a reporting agency.

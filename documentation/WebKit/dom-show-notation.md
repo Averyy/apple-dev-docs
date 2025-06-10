@@ -1,6 +1,6 @@
 # DOM_SHOW_NOTATION
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

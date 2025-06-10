@@ -48,6 +48,7 @@ A disappear transition causes a symbol to become invisible using a scaling anima
 - [Hashable](../Swift/Hashable.md)
 - [IndefiniteSymbolEffect](indefinitesymboleffect.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SymbolEffect](symboleffect.md)
 - [TransitionSymbolEffect](transitionsymboleffect.md)
 

@@ -50,6 +50,7 @@ Starting in iOS 7, the [`UIView`](uiview.md) and [`UICollectionViewLayoutAttribu
 - [UIActionSheet](uiactionsheet.md)
 - [UIActivityIndicatorView](uiactivityindicatorview.md)
 - [UIAlertView](uialertview.md)
+- [UIBackgroundExtensionView](uibackgroundextensionview.md)
 - [UIButton](uibutton.md)
 - [UICalendarView](uicalendarview.md)
 - [UICollectionReusableView](uicollectionreusableview.md)

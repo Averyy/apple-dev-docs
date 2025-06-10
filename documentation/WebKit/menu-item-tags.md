@@ -1,6 +1,6 @@
 # Menu Item Tags
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Tags that define the types of default menu items passed to the [`webView(_:contextMenuItemsForElement:defaultMenuItems:)`](webuidelegate/webview(_:contextmenuitemsforelement:defaultmenuitems:).md) method.
 

@@ -6,72 +6,41 @@ Link to the most recent autoupdating version of MapKit JS, or a version of your 
 
 #### Overview
 
-When you include a map element on your webpage, your webpage loads a version of MapKit JS. Load the most recent version of MapKit JS available whenever possible. Depending on what features your map uses, you may want to load a specific version. To load more efficiently, you can also specify that MapKit JS only loads the specific elements and libraries that you need.
-
-MapKit JS follows semantic versioning with each release. This means that you, as the developer, have full control over when to upgrade to a new version of MapKit JS. Each version follows the standard semantic versioning pattern `MAJOR.MINOR.PATCH,` which conveys the following information:
-
-- MAJOR — Incompatible API changes
-- MINOR — New functionality, but backward-compatible
-- PATCH — Backward-compatible bug fixes
-
-A backward-compatible new release that contains only bug fixes increases the patch version; a backward-compatible new release that contains new features or functionality increases the minor version. A new release that changes the API, so it’s no longer backward-compatible, increases the major version.
+When you include a map element on your webpage, your webpage loads a version of MapKit JS. Load the most recent version of MapKit JS available whenever possible.
 
 The recommended mechanism to load MapKit JS is through backward-compatible, autoupdate URLs as the example below shows:
 
-```javascript
+```html
 <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.core.js"
     crossorigin async
     data-callback="initMapKit"
-    data-libraries="services,full-map,geojson"></script>
+    data-libraries="services,full-map,geojson"
+    data-token="Your MapKit JS token"></script>
 ```
 
-In this example, the script tag pins the major version at `5`, and the server automatically selects the latest `minor.patch` version. It’s also possible to request more specific versions by specifying the patch version, as the following example shows:
+See [`Creating a Maps token`](creating-a-maps-token.md) to obtain a Maps token and insert that into the `data-token` attribute. To load more efficiently, you should specify that MapKit JS only loads the specific libraries that you need by setting the `data-libraries` attribute.
 
-```javascript
-<script src="https://cdn.apple-mapkit.com/mk/5.0.x/mapkit.core.js"
-    crossorigin async
-    data-callback="initMapKit"
-    data-libraries="services,full-map,geojson"></script>
-```
+##### Select Mapkit Js Libraries
 
-Here, the script tag pins the `major.minor` version at `5.0`, and the server automatically selects the latest patch version.
+Pick only the interfaces you need to optimize your app load time. MapKit JS divides its interfaces into libraries that you can specify when loading the framework:
 
-Autoupdate URLs have a cache time of 5 minutes.
+- `services` — All services interfaces (such as Search and Geocoder) and relevant data types.
+- `full-map` — All `mapkit.Map` features and relevant data types.
+- `map` — Basic `mapkit.Map` features without overlays, annotations, and relevant data types.
+- `overlays` — Overlays, data types, and displays on [`mapkit.Map`](mapkit.map.md).
+- `annotations` — Annotations, data types, and displays on [`mapkit.Map`](mapkit.map.md).
+- `geojson` — The GeoJSON importer.
+- `user-location` — User location display and controls on [`mapkit.Map`](mapkit.map.md).
+- `look-around` — [`mapkit.LookAround`](mapkit.lookaround.md) and [`mapkit.LookAroundPreview`](mapkit.lookaroundpreview.md).
 
-##### Use Explicitly Versioned Urls
-
-If your code is dependent upon a specific MapKit JS version, each version of MapKit JS has a unique URL. Linking to a version URL ensures that your app always gets that exact version of MapKit JS. Below are few examples of version URLs:
-
-```javascript
-<script src="https://cdn.apple-mapkit.com/mk/5.0.0/mapkit.core.js"
-    crossorigin async
-    data-callback="initMapKit"
-    data-libraries="services,full-map,geojson"></script>
-```
-
-```javascript
-<script src="https://cdn.apple-mapkit.com/mk/5.0.1/mapkit.core.js"
-    crossorigin async
-    data-callback="initMapKit"
-    data-libraries="services,full-map,geojson"></script>
-```
-
-```javascript
-<script src="https://cdn.apple-mapkit.com/mk/5.1.0/mapkit.core.js"
-    crossorigin async
-    data-callback="initMapKit"
-    data-libraries="services,full-map,geojson"></script>
-```
-
-Browsers cache version URLs for a longer time. Use versioned URLs if you want to be in full control of when MapKit JS updates and get the benefits of browser caching.
+You can set the libraries to load statically by defining them within a script tag in the `data-libraries` attribute or in the `mapkit.load()` method, or by passing a `libraries` property in the `mapkit.init()` options.
 
 ##### Select Script Element Attributes
 
 The `script` tag you use to load MapKit JS supports several attribute elements that allow you to customize the loading of the framework to support only the features you need.
 
-```javascript
-<script
-    src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.core.js"
+```html
+<script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.core.js"
     crossorigin async
     data-callback="initMapKit"
     data-libraries="services,full-map,geojson"
@@ -90,23 +59,65 @@ The data attributes you can set on the `script` element are:
 - `data-callback` — Required; this is the callback the browser calls when MapKit JS finishes loading.
 - `data-language` — The language to set for MapKit JS. A language ID is a language designator followed by an optional region or script designator. Examples of language IDs include: `de` (German), `es-MX`, (Mexican Spanish), and `zh-Hans` (simplified Chinese).
 - `data-libraries` — Required; this is a comma-separated list of libraries to load at initialization. See the list of available libraries and the services they provide below.
-- `data-token` —` `Required unless you intend to call [`init`](mapkit/init.md) later. See [`Create a Maps Web Snapshot`](https://developer.apple.com/documentation/snapshots/create_a_maps_web_snapshot) to obtain a Maps token.
+- `data-token` —` `Required unless you intend to call [`init`](mapkit/init.md) later. See [`Creating a Maps token`](creating-a-maps-token.md) to obtain a Maps token.
 
-##### Select Mapkit Js Libraries
+##### Semantic Versioning
 
-Pick only the interfaces you need to optimize your app load time. MapKit JS divides its interfaces into libraries that you can specify when loading the framework:
+MapKit JS follows semantic versioning with each release. This means that you, as the developer, have full control over when to upgrade to a new version of MapKit JS. Each version follows the standard semantic versioning pattern `MAJOR.MINOR.PATCH,` which conveys the following information:
 
-- `services` — All services interfaces (such as Search and Geocoder) and relevant data types.
-- `full-map` — All `mapkit.Map` features and relevant data types.
-- `map` — Basic `mapkit.Map` features without overlays, annotations, and relevant data types.
-- `overlays` — Overlays, data types, and displays on `mapkit.Map`.
-- `annotations` — Annotations, data types, and displays on `mapkit.Map`.
-- `geojson` — The GeoJSON importer.
-- `user-location` — User location display and controls on `mapkit.Map`.
+- MAJOR — Incompatible API changes
+- MINOR — New functionality, but backward-compatible
+- PATCH — Backward-compatible bug fixes
 
-You can set the libraries to load statically by defining them within a script tag in the `data-libraries` attribute or in the `mapkit.load()` method, or by passing a `libraries` property in the `mapkit.init()` options.
+A backward-compatible new release that contains only bug fixes increases the patch version; a backward-compatible new release that contains new features or functionality increases the minor version. A new release that changes the API, so it’s no longer backward-compatible, increases the major version.
+
+In this example, the script tag pins the major version at `5`, and the server automatically selects the latest `minor.patch` version. It’s also possible to request more specific versions by specifying the patch version, as the following example shows:
+
+```html
+<script src="https://cdn.apple-mapkit.com/mk/5.0.x/mapkit.core.js"
+    crossorigin async
+    data-callback="initMapKit"
+    data-libraries="services,full-map,geojson"
+    data-token="Your MapKit JS token"></script>
+```
+
+Here, the script tag pins the `major.minor` version at `5.0`, and the server automatically selects the latest patch version.
+
+Autoupdate URLs have a cache time of 5 minutes.
+
+##### Use Explicitly Versioned Urls
+
+If your code is dependent upon a specific MapKit JS version, each version of MapKit JS has a unique URL. Linking to a version URL ensures that your app always gets that exact version of MapKit JS. Below are few examples of version URLs:
+
+```html
+<script src="https://cdn.apple-mapkit.com/mk/5.0.0/mapkit.core.js"
+    crossorigin async
+    data-callback="initMapKit"
+    data-libraries="services,full-map,geojson"
+    data-token="Your MapKit JS token"></script>
+```
+
+```html
+<script src="https://cdn.apple-mapkit.com/mk/5.0.1/mapkit.core.js"
+    crossorigin async
+    data-callback="initMapKit"
+    data-libraries="services,full-map,geojson"
+    data-token="Your MapKit JS token"></script>
+```
+
+```html
+<script src="https://cdn.apple-mapkit.com/mk/5.1.0/mapkit.core.js"
+    crossorigin async
+    data-callback="initMapKit"
+    data-libraries="services,full-map,geojson"
+    data-token="Your MapKit JS token"></script>
+```
+
+Browsers cache version URLs for a longer time. Use versioned URLs if you want to be in full control of when MapKit JS updates and get the benefits of browser caching.
 
 ##### Load the Full Bundle of Mapkit Js
+
+> **Note**:  The full bundle does not contain newer features like [`mapkit.LookAround`](mapkit.lookaround.md).
 
 A full browser bundle is also available, but it isn’t recommended in production for performance reasons. With the full bundle, the full MapKit JS interfaces are available as soon as the script tag loads.
 
@@ -117,7 +128,7 @@ A full browser bundle is also available, but it isn’t recommended in productio
 ></script>
 ```
 
-This example uses the `defer` attribute in place of `async`:. With this attribute, the browser evaluates the script only after the browser fully downloads and parses the HTML. This prevents `mapkit.js` from blocking the page load, but the `mapkit` instance isn’t available to the embedded `<script>` blocks in HTML until loading and evaluation is complete.
+This example uses the `defer` attribute in place of `async`. With this attribute, the browser evaluates the script only after the browser fully downloads and parses the HTML. This prevents `mapkit.js` from blocking the page load, but the `mapkit` instance isn’t available to the embedded `<script>` blocks in HTML until loading and evaluation is complete.
 
 Alternatively, if you need to load MapKit JS on-demand, create an `HTMLScriptElement`, insert it into the document and use a Javascript Promise, as the following example shows:
 
@@ -136,17 +147,18 @@ The loading of individual libraries isn’t applicable to the full bundle.
 
 ##### Implement a Content Security Policy
 
-To mitigate possible security attacks like, data injecting or cross-site Scripting (XSS), consider implementing Content Security Policy (CSP) in your app. MapKit JS supports a `nonce-`based CSP.
+To mitigate possible security attacks like, data injecting or Cross-Site Scripting (XSS), consider implementing Content Security Policy (CSP) in your app. MapKit JS supports a `nonce`-based CSP.
 
 When implementing a CSP in MapKit JS:
 
 - The website must set the `nonce` attribute on the script element when loading Mapkit JS.
 - MapKit JS needs to load workers, images from and connect to MapKit CDN, and `blob` URLs.
+- Complete rendering of the map and Look Around requires Web Assembly.
 
 The following example shows possible CSP directives:
 
 ```other
-script-src 'nonce-{nonce-value}';
+script-src 'nonce-{nonce-value}' 'wasm-unsafe-eval';
 style-src 'nonce-{nonce-value}';
 img-src https://*.apple-mapkit.com blob:;
 connect-src https://*.apple-mapkit.com blob:;
@@ -156,7 +168,7 @@ frame-src https://*.apple-mapkit.com;
 
 The following is an example script tag with a `nonce` value:
 
-```javascript
+```html
 <script 
   src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.core.js"
   crossorigin async

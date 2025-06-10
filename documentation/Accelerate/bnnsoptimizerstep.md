@@ -26,8 +26,6 @@ Use [`BNNSOptimizerStep(_:_:_:_:_:_:_:)`](bnnsoptimizerstep(_:_:_:_:_:_:_:).md) 
 
 > ❗ **Important**:  Parameter, gradient, and accumulator descriptors must have the same sizes and strides and be of type `float`.
 
- Parameter, gradient, and accumulator descriptors must have the same sizes and strides and be of type `float`.
-
 For example, the following shows the code required to update the weights data described by `weightsDescriptor` using an Adam optimizer.
 
 ```swift

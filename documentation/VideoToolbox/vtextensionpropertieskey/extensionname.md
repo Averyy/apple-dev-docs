@@ -1,6 +1,6 @@
 # extensionName
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 A dictionary key for the localized extension name.

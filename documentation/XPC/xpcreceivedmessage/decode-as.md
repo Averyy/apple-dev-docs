@@ -1,6 +1,6 @@
 # decode(as:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Decodes a message as the given type.

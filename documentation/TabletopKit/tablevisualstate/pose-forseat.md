@@ -12,10 +12,6 @@
 func pose(forSeat seat: some TableSeat) -> Pose3D?
 ```
 
-## See Also
-
-- [func pose(matching: TableSeatIdentifier) -> Pose3D?](tablevisualstate/pose(matching:).md)
-
 
 ---
 

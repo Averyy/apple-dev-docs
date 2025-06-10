@@ -1,6 +1,6 @@
 # Making photo and video actions available to Siri and Apple Intelligence
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Create app intents and entities to integrate your app’s photo and video functionality with Siri and Apple Intelligence.
 
@@ -13,7 +13,7 @@ To integrate your app’s photo and video capabilities with Siri and Apple Intel
 For example, if your app allows someone to open a photo, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.photos` domain and the [`openAsset`](assistantschemas/photosintent/openasset.md) schema:
 
 ```swift
-@AssistantIntent(schema: .photos.openAsset)
+@AppIntent(schema: .photos.openAsset)
 struct OpenAssetIntent: OpenIntent {
     var target: AssetEntity
 
@@ -43,7 +43,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 If you use app entities to describe custom data types, annotate the app entity implementation with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `AssetEntity`. The following code snippet shows how the `AssetEntity` implementation uses the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro:
 
 ```swift
-@AssistantEntity(schema: .photos.asset)
+@AppEntity(schema: .photos.asset)
 struct AssetEntity: IndexedEntity {
 
     static let defaultQuery = AssetQuery()
@@ -79,7 +79,7 @@ For a list of available app entity schemas in the `.photos` domain, see [`Assist
 To make sure Siri and Apple Intelligence understand custom static types for your intent parameters, annotate app enumerations with the [`AssistantEnum(schema:)`](assistantenum(schema:).md) macro. Then, pass the `.photos` domain and a schema to it. The following example uses the [`assetType`](assistantschemas/photosenum/assettype.md) schema:
 
 ```swift
-@AssistantEnum(schema: .photos.assetType)
+@AppEnum(schema: .photos.assetType)
 enum AssetType: String, AppEnum {
     case photo
     case video
@@ -105,4 +105,4 @@ For a list of available app enumeration schemas in the `.photos` domain, see [`A
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-photo-and-video-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-photo-and-video-actions-available-to-siri-and-apple-intelligence)*

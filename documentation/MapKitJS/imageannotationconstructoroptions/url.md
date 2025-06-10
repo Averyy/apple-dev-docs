@@ -18,7 +18,7 @@ attribute Object url;
 
 This property is an object literal containing absolute or relative URLs to standard, 2×, and 3× Retina assets. MapKit JS requires at least one image URL.
 
-```swift
+```javascript
 {
     url: {
         1: "example.png",

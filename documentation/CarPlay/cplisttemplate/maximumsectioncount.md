@@ -13,6 +13,7 @@ The maximum number of sections that the template can display.
 ## Declaration
 
 ```swift
+@MainActor
 class var maximumSectionCount: Int { get }
 ```
 

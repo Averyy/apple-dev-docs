@@ -1,6 +1,6 @@
 # WorkoutAlertMetric
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: enum
 
 A value that specifies the type of metric used to measure performance.
@@ -10,6 +10,7 @@ A value that specifies the type of metric used to measure performance.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -46,6 +47,7 @@ enum WorkoutAlertMetric
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

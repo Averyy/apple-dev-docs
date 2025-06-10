@@ -1,6 +1,6 @@
 # WKInterfaceSwitch
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface element that toggles between an On and Off state.

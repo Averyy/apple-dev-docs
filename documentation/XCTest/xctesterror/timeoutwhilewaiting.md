@@ -1,6 +1,6 @@
 # timeoutWhileWaiting
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A code that represents a timeout the test encountered while waiting to fulfill expectations.

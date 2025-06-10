@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A dictionary that contains Boolean profile restriction parameters.
+A dictionary that contains Boolean restriction parameters.
 
 **Availability**:
 - iOS 4.0+
@@ -11,8 +11,6 @@ A dictionary that contains Boolean profile restriction parameters.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

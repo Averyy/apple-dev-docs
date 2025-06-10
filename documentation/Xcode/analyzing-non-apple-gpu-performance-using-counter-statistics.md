@@ -8,8 +8,6 @@ Optimize performance by examining counters for individual passes and commands.
 
 > ❗ **Important**: The Counters viewer feature isn’t applicable to Apple GPUs. For Apple GPUs, see [`Analyzing Apple GPU performance using a visual timeline`](analyzing-apple-gpu-performance-using-a-visual-timeline.md) and [`Analyzing Apple GPU performance using counter statistics`](analyzing-apple-gpu-performance-using-counter-statistics.md).
 
-The Counters viewer feature isn’t applicable to Apple GPUs. For Apple GPUs, see [`Analyzing Apple GPU performance using a visual timeline`](analyzing-apple-gpu-performance-using-a-visual-timeline.md) and [`Analyzing Apple GPU performance using counter statistics`](analyzing-apple-gpu-performance-using-counter-statistics.md).
-
 The Counters viewer shows performance counters from your app’s passes or commands in the GPU trace. These counters measure hardware-related activities on the GPU, ranging from memory bandwidth to the number of vertices, the number of rasterized fragments, and the texture-filtering limiter and utilization percentages.
 
 ![A screenshot of the Counters viewer, consisting of a counters timeline and a table for either passes or commands.](https://docs-assets.developer.apple.com/published/080dc9cc88071641b45ac6b4fa49df86/gputools-metal-debugger-cg-overview%402x.png)

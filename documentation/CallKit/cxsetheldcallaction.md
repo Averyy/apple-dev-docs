@@ -66,6 +66,8 @@ When the user or the system places a call on hold, the provider sends [`provider
   An encapsulation of the act of grouping or ungrouping calls.
 - [class CXSetMutedCallAction](cxsetmutedcallaction.md)
   An encapsulation of the act of muting or unmuting a call.
+- [class CXSetTranslatingCallAction](cxsettranslatingcallaction.md)
+  An encapsulation of the act of translating a call.
 
 
 ---

@@ -17,6 +17,7 @@ Returns a Boolean value that indicates whether a point lies inside the parent’
 ## Declaration
 
 ```swift
+@MainActor
 func contains(_ p: CGPoint) -> Bool
 ```
 

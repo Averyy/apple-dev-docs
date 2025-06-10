@@ -22,8 +22,6 @@ func hv_vcpu_get_exec_time(_ vcpu: hv_vcpu_t, _ time: UnsafeMutablePointer<UInt6
 
 > ❗ **Important**:  This function must be called by the owning thread.
 
- This function must be called by the owning thread.
-
 ## Parameters
 
 - `vcpu`: The instance of the vCPU.

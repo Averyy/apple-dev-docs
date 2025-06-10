@@ -23,14 +23,6 @@ optional func pendingItemsDidChange() async
 optional func pendingItemsDidChange() async
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can implement this method as a synchronous method that takes a completion handler, as shown on this page, or as an asynchronous method that has the following declaration:
-
-```swift
-optional func pendingItemsDidChange() async
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 The system calls this method whenever the set of pending items changes. It updates the pending set regularly, but only when there are meaningful changes, such as:
 
 - New items are now pending.
@@ -40,8 +32,6 @@ The system calls this method whenever the set of pending items changes. It updat
 To enumerate the pending set, create an object that adopts the [`NSFileProviderEnumerationObserver`](nsfileproviderenumerationobserver.md) and [`NSFileProviderChangeObserver`](nsfileproviderchangeobserver.md) protocols. Then pass this item to the [`enumeratorForPendingItems()`](nsfileprovidermanager/enumeratorforpendingitems().md) method on a [`NSFileProviderManager`](nsfileprovidermanager.md) instance for your domain. The system then calls your observer object’s methods when the pending set changes.
 
 > 💡 **Tip**:  Calls to the observer object may not happen immediately. Don’t use the pending set to detect changes.
-
- Calls to the observer object may not happen immediately. Don’t use the pending set to detect changes.
 
 ## Parameters
 

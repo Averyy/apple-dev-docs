@@ -1,6 +1,6 @@
 # xpc_rich_error_t
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: typealias
 
 A type that describes an error, and whether you can retry the operation that experienced the error.

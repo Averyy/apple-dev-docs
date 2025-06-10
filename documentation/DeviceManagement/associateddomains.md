@@ -7,8 +7,6 @@ The payload you use to configure associated domains.
 
 **Availability**:
 - macOS 10.15+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,17 +24,17 @@ You can use associated domains with features such as Extensible AppSSO, universa
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | macOS |
-| Allow Manual Install | macOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | macOS |
-| Allow Multiple Payloads | macOS |
+| Device channel | macOS |
+| User channel | macOS |
+| Allow manual install | NA |
+| Requires supervision | NA |
+| Requires user-approved MDM | macOS |
+| Allowed in user enrollment | macOS |
+| Allow multiple payloads | macOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -81,7 +79,7 @@ You can use associated domains with features such as Extensible AppSSO, universa
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object AssociatedDomains.ConfigurationItem](associateddomains/configurationitem.md)
   A dictionary that maps apps to their associated domains.
 

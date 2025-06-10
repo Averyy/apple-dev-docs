@@ -6,7 +6,11 @@
 A preset to export a 7680 by 4320 movie that contains HEVC video and AAC audio.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 12.1+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 

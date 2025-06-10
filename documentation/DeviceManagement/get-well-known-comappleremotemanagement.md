@@ -21,8 +21,6 @@ Each server entry corresponds to a server that supports a different version of t
 
 ## See Also
 
-- [Onboarding users with account sign-in](onboarding-users-with-account-sign-in.md)
-  Examine new, user-initiated, identity-focused flows.
 - [object EnrollmentSSODocument](enrollmentssodocument.md)
   Enrollment SSO streamlines the MDM enrollment process, reduces sign-ins, and improves security.
 

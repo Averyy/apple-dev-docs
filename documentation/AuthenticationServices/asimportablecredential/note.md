@@ -6,11 +6,11 @@
 A piece of text used to store some information about an item.
 
 **Availability**:
-- iOS 18.2+
-- iPadOS 18.2+
-- Mac Catalyst 18.2+
-- macOS 15.2+
-- visionOS 2.2+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -21,10 +21,10 @@ struct Note
 ## Topics
 
 ### Creating a note
-- [init(content: String)](asimportablecredential/note/init(content:).md)
+- [init(content: ASImportableEditableField)](asimportablecredential/note/init(content:).md)
   Creates a note instance from the note contents.
 ### Accessing note properties
-- [var content: String](asimportablecredential/note/content.md)
+- [var content: ASImportableEditableField](asimportablecredential/note/content.md)
   The contents of the note.
 
 ## Relationships
@@ -35,6 +35,7 @@ struct Note
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

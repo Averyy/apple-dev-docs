@@ -1,6 +1,6 @@
 # Enhancing your app experience with the Camera Control
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Provide direct access to your camera app’s features to help people quickly capture the perfect shot.
 
@@ -186,4 +186,4 @@ After adopting this protocol in your app, set the delegate by calling the captur
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/enhancing-your-app-experience-with-the-camera-control)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/enhancing-your-app-experience-with-the-camera-control)*

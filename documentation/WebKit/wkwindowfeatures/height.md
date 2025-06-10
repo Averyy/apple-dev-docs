@@ -1,6 +1,6 @@
 # height
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The requested height of the containing window.

@@ -15,6 +15,10 @@
 typedef struct SCSICmd_INQUIRY_Page83_LogicalUnitGroup_Identifier { ... } SCSICmd_INQUIRY_Page83_LogicalUnitGroup_Identifier;
 ```
 
+#### Overview
+
+INQUIRY Page 83h Logical Unit Group Identifier.
+
 ## Topics
 
 ### Instance Properties

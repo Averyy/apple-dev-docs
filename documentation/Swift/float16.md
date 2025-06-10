@@ -61,6 +61,7 @@ struct Float16
 - [Hashable Implementations](float16/hashable-implementations.md)
 - [LosslessStringConvertible Implementations](float16/losslessstringconvertible-implementations.md)
 - [Numeric Implementations](float16/numeric-implementations.md)
+- [OperationParameter Implementations](float16/operationparameter-implementations.md)
 - [SIMDScalar Implementations](float16/simdscalar-implementations.md)
 - [SignedNumeric Implementations](float16/signednumeric-implementations.md)
 - [Strideable Implementations](float16/strideable-implementations.md)
@@ -71,6 +72,7 @@ struct Float16
 ### Conforms To
 - [AdditiveArithmetic](additivearithmetic.md)
 - [AtomicRepresentable](../synchronization/atomicrepresentable.md)
+- [BNNSGraph.Builder.OperationParameter](../Accelerate/BNNSGraph/Builder/OperationParameter.md)
 - [BNNSScalar](../Accelerate/BNNSScalar.md)
 - [BinaryFloatingPoint](binaryfloatingpoint.md)
 - [BitwiseCopyable](bitwisecopyable.md)
@@ -93,6 +95,7 @@ struct Float16
 - [PrimitivePlottableProtocol](../Charts/PrimitivePlottableProtocol.md)
 - [SIMDScalar](simdscalar.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [SignedNumeric](signednumeric.md)
 - [Strideable](strideable.md)
 - [TextOutputStreamable](textoutputstreamable.md)

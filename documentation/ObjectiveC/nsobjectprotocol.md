@@ -1,6 +1,6 @@
 # NSObjectProtocol
 
-**Framework**: Objectivec  
+**Framework**: Objective-C Runtime  
 **Kind**: protocol
 
 The group of methods that are fundamental to all Objective-C objects.
@@ -77,4 +77,4 @@ The Cocoa root class [`NSObject`](nsobject-swift.class.md) adopts this protocol,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ObjectiveC/nsobjectprotocol)*
+*[View on Apple Developer](https://developer.apple.com/documentation/objectivec/nsobjectprotocol)*

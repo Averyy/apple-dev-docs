@@ -1,6 +1,6 @@
 # Creating a Scene from a File
 
-**Framework**: Spritekit
+**Framework**: SpriteKit
 
 Load a scene that you configure in Xcode’s scene editor.
 
@@ -41,4 +41,4 @@ skView.presentScene(scene)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/creating-a-scene-from-a-file)*
+*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/creating-a-scene-from-a-file)*

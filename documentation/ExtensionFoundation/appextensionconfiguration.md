@@ -31,6 +31,9 @@ An object that holds configuration options for an app extension.
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+### Conforming Types
+- [ConnectionHandler](connectionhandler.md)
 
 ## See Also
 

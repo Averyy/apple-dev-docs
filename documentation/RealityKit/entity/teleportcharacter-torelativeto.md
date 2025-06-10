@@ -10,7 +10,7 @@ Moves the character instantly to a new position.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- visionOS ?+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -30,11 +30,7 @@ This method moves the character to a location specified relative to another enti
 
 ## See Also
 
-- [var characterController: CharacterControllerComponent?](entity/charactercontroller.md)
-  The character controller component for the entity.
-- [var characterControllerState: CharacterControllerStateComponent?](entity/charactercontrollerstate.md)
-  The character controller state for  the entity.
-- [func moveCharacter(by: SIMD3<Float>, deltaTime: Float, relativeTo: Entity?, collisionHandler: ((CharacterControllerComponent.Collision) -> Void)?) -> CharacterControllerComponent.CollisionFlags](entity/movecharacter(by:deltatime:relativeto:collisionhandler:).md)
+- [func moveCharacter(by:deltaTime:relativeTo:collisionHandler:)](entity/movecharacter(by:deltatime:relativeto:collisionhandler:).md)
   Moves the character along a specified vector over a period of time.
 
 

@@ -1,6 +1,6 @@
 # javaScriptResultTypeIsUnsupported
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An error that indicates the result of JavaScript execution could not be returned.

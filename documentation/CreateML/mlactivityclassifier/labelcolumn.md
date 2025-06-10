@@ -1,6 +1,6 @@
 # labelColumn
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: property
 
 The name of the label column the activity classifier used during its training session.

@@ -30,8 +30,6 @@ This method invokes [`readData(ofLength:)`](filehandle/readdata(oflength:).md) a
 
 > ❗ **Important**:  This method raises [`fileHandleOperationException`](nsexceptionname/filehandleoperationexception.md) if attempts to determine the file-handle type fail or if attempts to read from the file or channel fail.
 
- This method raises [`fileHandleOperationException`](nsexceptionname/filehandleoperationexception.md) if attempts to determine the file-handle type fail or if attempts to read from the file or channel fail.
-
 ## See Also
 
 - [var availableData: Data](filehandle/availabledata.md)

@@ -1,6 +1,6 @@
 # artist
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The artist information for the audio file.

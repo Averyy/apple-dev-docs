@@ -1,6 +1,6 @@
 # CarPlay
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: module
 
 Integrate CarPlay in apps related to audio, communication, navigation, parking, EV charging, food ordering, and more.
@@ -122,6 +122,14 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
 - [CarPlay Enumerations](carplay-enumerations.md)
 - [CarPlay Constants](carplay-constants.md)
 ### Classes
+- [class CPListImageRowItemCardElement](cplistimagerowitemcardelement.md)
+- [class CPListImageRowItemCondensedElement](cplistimagerowitemcondensedelement.md)
+- [class CPListImageRowItemElement](cplistimagerowitemelement.md)
+  Abstract superclass for a a row item element object.
+- [class CPListImageRowItemGridElement](cplistimagerowitemgridelement.md)
+- [class CPListImageRowItemImageGridElement](cplistimagerowitemimagegridelement.md)
+- [class CPListImageRowItemRowElement](cplistimagerowitemrowelement.md)
+- [class CPMessageGridItemConfiguration](cpmessagegriditemconfiguration.md)
 - [class CPNowPlayingMode](cpnowplayingmode.md)
 - [class CPNowPlayingModeSports](cpnowplayingmodesports.md)
   The sports mode represents a layout for now playing suited to live-streaming or recorded playback of a sporting event that features exactly two teams.
@@ -133,6 +141,14 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
   A representation of a sports team for the now playing screen, in sports that have exactly two teams.
 - [class CPNowPlayingSportsTeamLogo](cpnowplayingsportsteamlogo.md)
   A logo image or, if no image is available, an abbreviation or initialism for this team.
+### Variables
+- [let CPMaximumMessageItemLeadingDetailTextImageSize: CGSize](cpmaximummessageitemleadingdetailtextimagesize.md)
+  Maximum size of an image for the detailed text leading image.
+### Enumerations
+- [enum CPListImageRowItemCondensedElementShape](cplistimagerowitemcondensedelementshape.md)
+  Types of shape used to draw a condensed row element.
+- [enum CPListImageRowItemImageGridElementShape](cplistimagerowitemimagegridelementshape.md)
+  Types of shape used to draw a list item.
 
 
 ---

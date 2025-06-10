@@ -1,6 +1,6 @@
 # subscript(_:as:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: subscript
 
 Reads and writes the value at the given index as a Boolean value.
@@ -21,7 +21,7 @@ subscript(index: Int, as type: Bool.Type = Bool.self) -> Bool? { get }
 
 #### Return Value
 
-The value at the specified index in the array, otherwise [`Nil`](https://developer.apple.com/documentation/objectivec/nil).
+The value at the specified index in the array, otherwise [`nil`](https://developer.apple.com/documentation/objectivec/nil).
 
 ## Parameters
 

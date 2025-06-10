@@ -28,6 +28,7 @@ object CiMacOsVersion
   A response that contains a single macOS Versions resource.
 - [object CiMacOsVersionsResponse](cimacosversionsresponse.md)
   A response that contains a list of macOS Versions resources.
+- [object CiMacOsVersionXcodeVersionsLinkagesResponse](cimacosversionxcodeversionslinkagesresponse.md)
 
 
 ---

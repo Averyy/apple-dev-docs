@@ -1,6 +1,6 @@
 # fileURL
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: property
 
 The URL for accessing the asset.

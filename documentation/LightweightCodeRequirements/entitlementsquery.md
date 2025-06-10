@@ -127,6 +127,7 @@ This constraint will cause a matching failure if the process or file being match
 - [OnDiskConstraint](ondiskconstraint.md)
 - [ProcessConstraint](processconstraint.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

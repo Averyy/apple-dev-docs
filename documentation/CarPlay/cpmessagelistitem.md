@@ -1,6 +1,6 @@
 # CPMessageListItem
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: class
 
 A list template row that represents a conversation or contact.
@@ -62,6 +62,9 @@ CarPlay doesn’t support custom list item types. Instead, use the [`userInfo`](
 ### Enabling Items
 - [var isEnabled: Bool](cpmessagelistitem/isenabled.md)
   A Boolean value that indicates if the item is enabled.
+### Instance Properties
+- [var leadingDetailTextImage: UIImage?](cpmessagelistitem/leadingdetailtextimage.md)
+  Image shown on the leading edge of the detail text.
 
 ## Relationships
 
@@ -92,4 +95,4 @@ CarPlay doesn’t support custom list item types. Instead, use the [`userInfo`](
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cpmessagelistitem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cpmessagelistitem)*

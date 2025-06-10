@@ -1,6 +1,6 @@
 # CMMemoryPool APIs
 
-**Framework**: Coremedia
+**Framework**: Core Media
 
 An object that optimizes memory allocation when working with large blocks of memory.
 
@@ -50,4 +50,4 @@ A memory pool deallocates memory if it isn’t reused in `0.5` seconds, so that 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreMedia/cmmemorypool-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coremedia/cmmemorypool-api)*

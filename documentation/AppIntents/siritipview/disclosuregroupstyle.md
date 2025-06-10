@@ -9,7 +9,7 @@ Sets the style for disclosure groups within this view.
 - iOS 16.0+
 - iPadOS 16.0+
 - macOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

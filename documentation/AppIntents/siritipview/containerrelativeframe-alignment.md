@@ -10,7 +10,7 @@ Positions this view within an invisible frame with a size relative to the neares
 - iPadOS 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

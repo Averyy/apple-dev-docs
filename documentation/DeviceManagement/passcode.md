@@ -11,8 +11,6 @@ The payload you use to configure a passcode policy.
 - macOS 10.7+
 - visionOS 2.0+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,7 +24,7 @@ Specify `com.apple.mobiledevice.passwordpolicy` as the payload type.
 
 The presence of this payload type prompts an iOS or macOS device to present the user with a passcode entry mechanism. The complexity of the passcode can be customized with this payload.
 
-On iOS User Enrollments, the system allows the Passcode payload type, but ignores all keys. Instead, the presence of the Passcode payload forces these settings:
+In iOS user enrollments, the system allows the Passcode payload type, but ignores all keys. Instead, the presence of the Passcode payload forces these settings:
 
 - `allowSimple` = `false`
 - `forcePIN` = `true`
@@ -36,17 +34,17 @@ On iOS User Enrollments, the system allows the Passcode payload type, but ignore
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, watchOS |
-| User Channel | - |
-| Allow Manual Install | iOS, macOS, watchOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS |
-| Allow Multiple Payloads | iOS, macOS, watchOS |
+| Device channel | iOS, macOS, visionOS, watchOS |
+| User channel | macOS |
+| Allow manual install | iOS, macOS, visionOS, watchOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, visionOS |
+| Allow multiple payloads | iOS, macOS, visionOS, watchOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -98,7 +96,7 @@ On iOS User Enrollments, the system allows the Passcode payload type, but ignore
 
 ## Topics
 
-### Profiles
+### Objects
 - [object Passcode.CustomRegex](passcode/customregex-data.dictionary.md)
   The regex defining the passcode policy.
 

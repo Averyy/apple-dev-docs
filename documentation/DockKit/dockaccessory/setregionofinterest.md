@@ -1,6 +1,6 @@
 # setRegionOfInterest(_:)
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: method
 
 Sets the area in the video frame in which the dock accessory tracks a subject.

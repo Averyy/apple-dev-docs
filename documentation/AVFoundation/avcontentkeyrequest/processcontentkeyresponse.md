@@ -30,11 +30,11 @@ After receiving a content key request and calling [`makeStreamingContentKeyReque
 
 ## See Also
 
-- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest.md)
+- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest-1ci4q.md)
   Tells the receiver that the app requires a persistable content key request object for processing.
 - [func processContentKeyResponseError(any Error)](avcontentkeyrequest/processcontentkeyresponseerror(_:).md)
   Tells the receiver that the app was unable to obtain a content key response.
-- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest.md)
+- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest-1ci4q.md)
   Tells the receiver that the app requires a persistable content key request object for processing.
 
 

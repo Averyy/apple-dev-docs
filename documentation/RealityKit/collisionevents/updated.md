@@ -10,6 +10,7 @@ An event raised on every frame when two objects are in contact.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -31,11 +32,17 @@ struct Updated
 - [let position: SIMD3<Float>](collisionevents/updated/position.md)
   A position representing the estimated point of contact.
 ### Instance Properties
-- [var contacts: [Contact]](collisionevents/updated/contacts.md)
+- [var contacts: [Contact]](collisionevents/updated/contacts-6o66m.md)
   All contacts between the collision pair. Empty if all contact information is not requested.
-- [var impulseDirection: SIMD3<Float>](collisionevents/updated/impulsedirection.md)
+- [var contacts: [Contact]](collisionevents/updated/contacts-6reys.md)
+  All contacts between the collision pair. Empty if all contact information is not requested.
+- [var impulseDirection: SIMD3<Float>](collisionevents/updated/impulsedirection-27oho.md)
   The direction of the total impulse in scene coordinate space.
-- [var penetrationDistance: Float](collisionevents/updated/penetrationdistance.md)
+- [var impulseDirection: SIMD3<Float>](collisionevents/updated/impulsedirection-7kzjt.md)
+  The direction of the total impulse in scene coordinate space.
+- [var penetrationDistance: Float](collisionevents/updated/penetrationdistance-59jo9.md)
+  The estimated distance of overlap between the two colliding entities in scene coordinate space.
+- [var penetrationDistance: Float](collisionevents/updated/penetrationdistance-6t13o.md)
   The estimated distance of overlap between the two colliding entities in scene coordinate space.
 
 ## Relationships
@@ -43,6 +50,7 @@ struct Updated
 ### Conforms To
 - [Event](event.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

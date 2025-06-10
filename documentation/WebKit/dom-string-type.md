@@ -1,6 +1,6 @@
 # DOM_STRING_TYPE
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

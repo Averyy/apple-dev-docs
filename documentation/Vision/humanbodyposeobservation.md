@@ -52,6 +52,7 @@ struct HumanBodyPoseObservation
 - [Hashable](../Swift/Hashable.md)
 - [PoseProviding](poseproviding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionObservation](visionobservation.md)
 
 ## See Also

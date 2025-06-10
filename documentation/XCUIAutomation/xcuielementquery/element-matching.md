@@ -1,6 +1,6 @@
 # element(matching:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Matches the predicate.

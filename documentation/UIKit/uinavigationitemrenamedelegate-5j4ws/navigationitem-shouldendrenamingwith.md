@@ -29,8 +29,6 @@ Implement this method to return [`false`](https://developer.apple.com/documentat
 
 > ❗ **Important**:  UIKit might not call this method in certain situations, like when the system pushes a new navigation item onto the navigation bar. In these situations, UIKit calls [`navigationItem(_:didEndRenamingWith:)`](uinavigationitemrenamedelegate-5j4ws/navigationitem(_:didendrenamingwith:).md) instead. Therefore, make sure to implement [`navigationItem(_:didEndRenamingWith:)`](uinavigationitemrenamedelegate-5j4ws/navigationitem(_:didendrenamingwith:).md) to handle the cases when [`navigationItem(_:shouldEndRenamingWith:)`](uinavigationitemrenamedelegate-5j4ws/navigationitem(_:shouldendrenamingwith:).md) returns [`false`](https://developer.apple.com/documentation/swift/false).
 
- UIKit might not call this method in certain situations, like when the system pushes a new navigation item onto the navigation bar. In these situations, UIKit calls [`navigationItem(_:didEndRenamingWith:)`](uinavigationitemrenamedelegate-5j4ws/navigationitem(_:didendrenamingwith:).md) instead. Therefore, make sure to implement [`navigationItem(_:didEndRenamingWith:)`](uinavigationitemrenamedelegate-5j4ws/navigationitem(_:didendrenamingwith:).md) to handle the cases when [`navigationItem(_:shouldEndRenamingWith:)`](uinavigationitemrenamedelegate-5j4ws/navigationitem(_:shouldendrenamingwith:).md) returns [`false`](https://developer.apple.com/documentation/swift/false).
-
 ## Parameters
 
 - `title`: The new title of the navigation item.

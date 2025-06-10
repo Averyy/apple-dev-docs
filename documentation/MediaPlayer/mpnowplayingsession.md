@@ -24,8 +24,6 @@ An [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer)
 
 > ❗ **Important**:  If you create an `MPNowPlayingSession` object, don’t attempt to use it with the `AVPlayer` that an `AVPlayerViewController` presents. Create your own `AVPlayer` instance with custom playback controls to use with your Now Playing session.
 
- If you create an `MPNowPlayingSession` object, don’t attempt to use it with the `AVPlayer` that an `AVPlayerViewController` presents. Create your own `AVPlayer` instance with custom playback controls to use with your Now Playing session.
-
 ## Topics
 
 ### Creating a session

@@ -9,7 +9,7 @@ Assigns an optional keyboard shortcut to the modified control.
 - iOS 15.4+
 - iPadOS 15.4+
 - macOS 12.3+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

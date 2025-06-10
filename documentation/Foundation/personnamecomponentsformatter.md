@@ -44,8 +44,6 @@ These considerations extend to the availability of certain formatter styles as w
 
 > 💡 **Tip**:  In Swift, you can use [`PersonNameComponents.FormatStyle`](personnamecomponents/formatstyle.md) rather than [`PersonNameComponentsFormatter`](personnamecomponentsformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
 
- In Swift, you can use [`PersonNameComponents.FormatStyle`](personnamecomponents/formatstyle.md) rather than [`PersonNameComponentsFormatter`](personnamecomponentsformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
-
 ##### Styles
 
 `NSPersonNameComponentsFormatter` can be configured to format names in the following styles:
@@ -105,8 +103,6 @@ Short style is not available for names in CJK script and is restricted to Given 
 
 > ❗ **Important**:  `NSPersonNameComponentsFormatter` does not currently account for prepositional particles. Representations using the Short style that specify a family name initial naively use the first letter unit of the particle as the initial.
 
- `NSPersonNameComponentsFormatter` does not currently account for prepositional particles. Representations using the Short style that specify a family name initial naively use the first letter unit of the particle as the initial.
-
 ###### Long
 
 The Long style provides the most explicit representation of names. It uses all available name components, with the exception of nickname.
@@ -150,8 +146,6 @@ If the Abbreviated style is unavailable, the Short style is used instead—unles
 | Thai (th-TH) | ส |
 
 > ❗ **Important**:  `NSPersonNameComponentsFormatter` doesn’t currently account for prepositional particles or compound names. Representations using the Abbreviated style uses the first letter unit of each name component, regardless.
-
- `NSPersonNameComponentsFormatter` doesn’t currently account for prepositional particles or compound names. Representations using the Abbreviated style uses the first letter unit of each name component, regardless.
 
 ## Topics
 
@@ -197,6 +191,7 @@ If the Abbreviated style is unavailable, the Short style is used instead—unles
 - [NSCopying](nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

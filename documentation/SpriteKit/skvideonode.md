@@ -22,8 +22,8 @@ class SKVideoNode
 
 ## Mentions
 
-- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
 - [Adding a Video to a Scene](adding-a-video-to-a-scene.md)
+- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
 
 #### Overview
 
@@ -76,6 +76,7 @@ This class renders a video at a given size and location in your scene with no ex
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)

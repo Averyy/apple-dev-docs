@@ -13,6 +13,7 @@ Resumes the current trip with updated route information.
 ## Declaration
 
 ```swift
+@MainActor
 func resumeTrip(updatedRouteInformation routeInformation: CPRouteInformation)
 ```
 

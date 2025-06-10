@@ -1,6 +1,6 @@
 # XCSourceEditorExtension
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: protocol
 
 The protocol you implement to create Xcode source editor extensions.

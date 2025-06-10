@@ -1,6 +1,6 @@
 # kVTPropertySupportedValueMaximumKey
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Dictionary key to access the maximum value of a property.

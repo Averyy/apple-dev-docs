@@ -22,8 +22,6 @@ This class is a subclass of [`SCNGeometry`](https://developer.apple.com/document
 
 > ❗ **Important**:  [`ARSCNFaceGeometry`](arscnfacegeometry.md) is available only in SceneKit views or renderers that use Metal. This class is not supported for OpenGL-based SceneKit rendering.
 
- [`ARSCNFaceGeometry`](arscnfacegeometry.md) is available only in SceneKit views or renderers that use Metal. This class is not supported for OpenGL-based SceneKit rendering.
-
 Face mesh topology is constant for the lifetime of an [`ARSCNFaceGeometry`](arscnfacegeometry.md) object. That is, the geometry’s single [`SCNGeometryElement`](https://developer.apple.com/documentation/SceneKit/SCNGeometryElement) object always describes the same arrangement of vertices, and the [`texcoord`](https://developer.apple.com/documentation/SceneKit/SCNGeometrySource/Semantic-swift.struct/texcoord) geometry source always maps the same vertices to the same texture coordinates.
 
 When you modify the geometry with the [`update(from:)`](arscnfacegeometry/update(from:).md) method, only the contents of the [`vertex`](https://developer.apple.com/documentation/SceneKit/SCNGeometrySource/Semantic-swift.struct/vertex) geometry source change, indicating the difference in vertex positions as ARKit adapts the mesh to the shape and expression of the user’s face.

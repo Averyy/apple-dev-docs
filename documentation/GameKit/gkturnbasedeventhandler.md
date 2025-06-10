@@ -18,9 +18,7 @@ class GKTurnBasedEventHandler
 
 #### Overview
 
-> ❗ **Important**:  Your game must authenticate a local player before you can use any Game Center classes. If there is no authenticated player, your game receives a [`GKError.Code.notAuthenticated`](gkerror/code/notauthenticated.md) error. For more information, see [`Authenticating a player`](authenticating-a-player.md).
-
- Your game must authenticate a local player before you can use any Game Center classes. If there is no authenticated player, your game receives a [`GKError.Code.notAuthenticated`](gkerror/code/notauthenticated.md) error. For more information, see [`Authenticating a player`](authenticating-a-player.md).
+> ❗ **Important**:  Your game must initialize a local player before you can use any Game Center classes. If there is no initialized player, your game receives a [`GKError.Code.notAuthenticated`](gkerror/code/notauthenticated.md) error. For more information, see [`Authenticating a player`](authenticating-a-player.md).
 
 This framework has been deprecated in iOS 7. Use [`GKTurnBasedEventListener`](gkturnbasedeventlistener.md).
 
@@ -56,8 +54,16 @@ This class may not be subclassed.
 - [class GKChallengeEventHandler](gkchallengeeventhandler.md)
   The `GKChallengeEventHandler` class is used to respond to events related to challenges sent or received by the local player.
 - [class GKChallengesViewController](gkchallengesviewcontroller.md)
+- [class GKChallenge](gkchallenge.md)
+  A challenge issued by the local player to another player.
+- [class GKScoreChallenge](gkscorechallenge.md)
+  A type of challenge where a player must beat the leaderboard score of another player.
+- [class GKAchievementChallenge](gkachievementchallenge.md)
+  A type of challenge where a player must earn another player’s achievement.
 - [class GKCloudPlayer](gkcloudplayer.md)
   The object representing the currently signed-in iCloud user.
+- [class GKGameCenterViewController](gkgamecenterviewcontroller.md)
+  The dashboard that allows players to access their Game Center data in your game.
 - [class GKGameSession](gkgamesession.md)
   A game session you can use to save game data, invite other players, and create turn-based and real-time game apps.
 - [class GKGameSessionSharingViewController](gkgamesessionsharingviewcontroller.md)
@@ -72,10 +78,6 @@ This class may not be subclassed.
   An object containing information for a score that was earned by the player.
 - [class GKSession](gksession.md)
   A [`GKSession`](gksession.md) object provides the ability to discover and connect to nearby iOS devices using Bluetooth or Wi-fi.
-- [class GKVoiceChat](gkvoicechat.md)
-  A voice channel that allows players to speak with each other in a multiplayer game.
-- [class GKVoiceChatService](gkvoicechatservice.md)
-  The [`GKVoiceChatService`](gkvoicechatservice.md) class allows your application to connect two iOS devices into a voice chat.
 
 
 ---

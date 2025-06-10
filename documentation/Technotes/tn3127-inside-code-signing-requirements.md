@@ -10,7 +10,7 @@ Code signing requirements are an obscure and dusty corner of the code signing ca
 
 However, in some cases requirements are important, especially on macOS.  For example:
 
-- If you’re building an XPC service, you might want to restrict it to specific clients.  The best way to do this is by setting a code signing requirement on the connection with [`setCodeSigningRequirement(_:)`](https://developer.apple.com/documentation/foundation/nsxpcconnection/3943309-setcodesigningrequirement).  But what requirement to use?
+- If you’re building an XPC service, you might want to restrict it to specific clients.  The best way to do this is by setting a code signing requirement on the connection with [`setCodeSigningRequirement(_:)`](https://developer.apple.com/documentation/Foundation/NSXPCConnection/setCodeSigningRequirement(_:)).  But what requirement to use?
 - When working with privacy-protected resources on macOS, like the microphone, you might find that the system fails to remember your choices during development.
 - You might find that the keychain presents unexpected authorization alerts when you deploy your app through a new channel, like TestFlight.
 
@@ -350,4 +350,4 @@ This Apple Development DR is very different from the DR used by Developer ID and
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3127-inside-code-signing-requirements)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3127-inside-code-signing-requirements)*

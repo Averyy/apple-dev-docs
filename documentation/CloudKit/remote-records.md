@@ -1,6 +1,6 @@
 # Remote Records
 
-**Framework**: Cloudkit
+**Framework**: CloudKit
 
 Use subscriptions and change tokens to efficiently manage modifications to remote records.
 
@@ -115,4 +115,4 @@ func extractCloudRecord(from product: Product) throws -> CKRecord? {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/remote-records)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/remote-records)*

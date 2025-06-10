@@ -41,6 +41,7 @@ struct NSHostingSizingOptions
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also
@@ -53,6 +54,8 @@ struct NSHostingSizingOptions
   An AppKit view that hosts a SwiftUI view hierarchy.
 - [class NSHostingMenu](nshostingmenu.md)
   An AppKit menu with menu items that are defined by a SwiftUI View.
+- [class NSHostingSceneRepresentation](nshostingscenerepresentation.md)
+  An AppKit type that hosts and can present SwiftUI scenes
 - [struct NSHostingSceneBridgingOptions](nshostingscenebridgingoptions.md)
   Options for how hosting views and controllers manage aspects of the associated window.
 

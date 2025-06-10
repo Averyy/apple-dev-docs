@@ -54,6 +54,7 @@ The signing identifier is referred to as simply the “Identifier” in codesign
 - [OnDiskConstraint](ondiskconstraint.md)
 - [ProcessConstraint](processconstraint.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

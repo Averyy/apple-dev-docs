@@ -26,8 +26,6 @@ An expression description describes a value that a fetch request returns, which 
 
 > ❗ **Important**:  Don’t add expression descriptions to the [`properties`](nsentitydescription/properties.md) array of [`NSEntityDescription`](nsentitydescription.md).
 
- Don’t add expression descriptions to the [`properties`](nsentitydescription/properties.md) array of [`NSEntityDescription`](nsentitydescription.md).
-
 ## Topics
 
 ### Configuring the Expression Description

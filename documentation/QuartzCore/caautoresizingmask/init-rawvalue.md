@@ -4,7 +4,7 @@
 **Kind**: init
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst 13.1+
 - macOS ?+
 
 ## Declaration

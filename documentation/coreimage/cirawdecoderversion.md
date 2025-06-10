@@ -4,12 +4,12 @@
 **Kind**: struct
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,46 +20,50 @@ struct CIRAWDecoderVersion
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](cirawdecoderversion/3802023-init.md)
+- [init(rawValue: String)](cirawdecoderversion/init(rawvalue:).md)
 ### Type Properties
-- [static let none: CIRAWDecoderVersion](cirawdecoderversion/3801613-none.md)
-- [static let version6: CIRAWDecoderVersion](cirawdecoderversion/3801607-version6.md)
-- [static let version6DNG: CIRAWDecoderVersion](cirawdecoderversion/3801608-version6dng.md)
-- [static let version7: CIRAWDecoderVersion](cirawdecoderversion/3801609-version7.md)
-- [static let version7DNG: CIRAWDecoderVersion](cirawdecoderversion/3801610-version7dng.md)
-- [static let version8: CIRAWDecoderVersion](cirawdecoderversion/3801611-version8.md)
-- [static let version8DNG: CIRAWDecoderVersion](cirawdecoderversion/3801612-version8dng.md)
+- [static let none: CIRAWDecoderVersion](cirawdecoderversion/none.md)
+- [static let version6: CIRAWDecoderVersion](cirawdecoderversion/version6.md)
+- [static let version6DNG: CIRAWDecoderVersion](cirawdecoderversion/version6dng.md)
+- [static let version7: CIRAWDecoderVersion](cirawdecoderversion/version7.md)
+- [static let version7DNG: CIRAWDecoderVersion](cirawdecoderversion/version7dng.md)
+- [static let version8: CIRAWDecoderVersion](cirawdecoderversion/version8.md)
+- [static let version8DNG: CIRAWDecoderVersion](cirawdecoderversion/version8dng.md)
+- [static let version9: CIRAWDecoderVersion](cirawdecoderversion/version9.md)
+- [static let version9DNG: CIRAWDecoderVersion](cirawdecoderversion/version9dng.md)
 
 ## Relationships
 
 ### Conforms To
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [class var supportedCameraModels: [String]](cirawfilter/3801659-supportedcameramodels.md)
+- [class var supportedCameraModels: [String]](cirawfilter/supportedcameramodels.md)
   An array containing the names of all supported camera models.
-- [var supportedDecoderVersions: [CIRAWDecoderVersion]](cirawfilter/3801660-supporteddecoderversions.md)
+- [var supportedDecoderVersions: [CIRAWDecoderVersion]](cirawfilter/supporteddecoderversions.md)
   An array of all supported decoder versions for the given image type.
-- [var isColorNoiseReductionSupported: Bool](cirawfilter/3801619-iscolornoisereductionsupported.md)
+- [var isColorNoiseReductionSupported: Bool](cirawfilter/iscolornoisereductionsupported.md)
   A Boolean that indicates if the current image supports color noise reduction adjustments.
-- [var isContrastSupported: Bool](cirawfilter/3801621-iscontrastsupported.md)
+- [var isContrastSupported: Bool](cirawfilter/iscontrastsupported.md)
   A Boolean that indicates if the current image supports contrast adjustments.
-- [var isDetailSupported: Bool](cirawfilter/3801624-isdetailsupported.md)
+- [var isDetailSupported: Bool](cirawfilter/isdetailsupported.md)
   A Boolean that indicates if the current image supports detail enhancement adjustments.
-- [var isLensCorrectionSupported: Bool](cirawfilter/3801633-islenscorrectionsupported.md)
+- [var isLensCorrectionSupported: Bool](cirawfilter/islenscorrectionsupported.md)
   A Boolean that indicates if you can enable lens correction for the current image.
-- [var isLocalToneMapSupported: Bool](cirawfilter/3801636-islocaltonemapsupported.md)
+- [var isLocalToneMapSupported: Bool](cirawfilter/islocaltonemapsupported.md)
   A Boolean that indicates if the current image supports local tone curve adjustments.
-- [var isLuminanceNoiseReductionSupported: Bool](cirawfilter/3801638-isluminancenoisereductionsupport.md)
+- [var isLuminanceNoiseReductionSupported: Bool](cirawfilter/isluminancenoisereductionsupported.md)
   A Boolean that indicates if the current image supports luminance noise reduction adjustments.
-- [var isMoireReductionSupported: Bool](cirawfilter/3801640-ismoirereductionsupported.md)
+- [var isMoireReductionSupported: Bool](cirawfilter/ismoirereductionsupported.md)
   A Boolean that indicates if the current image supports moire artifact reduction adjustments.
-- [var isSharpnessSupported: Bool](cirawfilter/3801658-issharpnesssupported.md)
+- [var isSharpnessSupported: Bool](cirawfilter/issharpnesssupported.md)
   A Boolean that indicates if the current image supports sharpness adjustments.
-- [var nativeSize: CGSize](cirawfilter/3801641-nativesize.md)
+- [var nativeSize: CGSize](cirawfilter/nativesize.md)
   The full native size of the unscaled image.
 
 

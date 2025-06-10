@@ -46,8 +46,6 @@ You don’t need to call [`register(_:forSupplementaryViewOfKind:withReuseIdenti
 
 > ❗ **Important**:  Don’t create your supplementary view registration inside a [`UICollectionViewDiffableDataSource.SupplementaryViewProvider`](uicollectionviewdiffabledatasource-9tqpa/supplementaryviewprovider-swift.typealias.md) closure; doing so prevents reuse, and generates an exception in iOS 15 and higher.
 
- Don’t create your supplementary view registration inside a [`UICollectionViewDiffableDataSource.SupplementaryViewProvider`](uicollectionviewdiffabledatasource-9tqpa/supplementaryviewprovider-swift.typealias.md) closure; doing so prevents reuse, and generates an exception in iOS 15 and higher.
-
 ## Topics
 
 ### Creating a supplementary registration

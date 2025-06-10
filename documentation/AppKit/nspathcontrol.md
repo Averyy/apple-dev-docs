@@ -86,6 +86,7 @@ The [`NSPathControl`](nspathcontrol.md) class uses [`NSPathCell`](nspathcell.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

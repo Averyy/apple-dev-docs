@@ -1,6 +1,6 @@
 # XCUIDevice.Appearance.light
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The light interface style.

@@ -6,7 +6,7 @@
 The last call to request content authorization couldn’t be completed because there was no known mechanism by which to attempt authorization.
 
 **Availability**:
-- macOS ?+
+- macOS 10.7+
 
 ## Declaration
 

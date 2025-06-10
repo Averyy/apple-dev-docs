@@ -1,6 +1,6 @@
 # kVTPixelTransferPropertyKey_DestinationYCbCrMatrix
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The color matrix to be used for YCbCr to RGB conversions involving the destination image buffers.

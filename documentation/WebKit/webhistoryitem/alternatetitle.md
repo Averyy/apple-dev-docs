@@ -1,6 +1,6 @@
 # alternateTitle
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An alternate title that may be used in place of the receiver’s page title.

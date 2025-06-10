@@ -12,6 +12,7 @@ Creates a polygon from the polygon you provide.
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS ?+
+- watchOS 10.0+
 
 ## Declaration
 

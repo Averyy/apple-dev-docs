@@ -1,6 +1,6 @@
 # init(notificationName:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an expectation that waits for a Darwin notification with the specified name to be posted.

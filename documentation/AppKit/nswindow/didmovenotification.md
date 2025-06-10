@@ -1,6 +1,6 @@
 # didMoveNotification
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 A notification that the window object moved.
@@ -56,4 +56,4 @@ The notification object is the `NSWindow` object that has moved. This notificati
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nswindow/didmovenotification)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nswindow/didmovenotification)*

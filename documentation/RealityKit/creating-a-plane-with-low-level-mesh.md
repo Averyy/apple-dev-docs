@@ -1,6 +1,6 @@
 # Creating a plane with low-level mesh
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Create a low-level mesh and set its vertex positions and normals to form a plane.
 
@@ -281,8 +281,10 @@ The following image shows the result of rendering a `PlaneMesh`’s low-level me
   Designates the intended usage of a vertex attribute.
 - [LowLevelMesh.PartsCollection](lowlevelmesh/partscollection.md)
   An object that holds a mutable collection low-level mesh parts.
+- [class LowLevelBuffer](lowlevelbuffer.md)
+- [class LowLevelInstanceData](lowlevelinstancedata.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/creating-a-plane-with-low-level-mesh)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/creating-a-plane-with-low-level-mesh)*

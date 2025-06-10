@@ -1,6 +1,6 @@
 # vm_pkt_size
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: property
 
 The size of the packet, in bytes.

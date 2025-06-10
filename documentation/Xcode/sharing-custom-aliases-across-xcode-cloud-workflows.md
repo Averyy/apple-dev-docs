@@ -25,8 +25,6 @@ To quickly modify aliases in the Custom Aliases sheet before you dismiss it, Con
 
 > 💡 **Tip**: You can also choose Integrate > [Your project name] > Manage Custom Aliases to create, edit, or delete custom aliases.
 
-You can also choose Integrate > [Your project name] > Manage Custom Aliases to create, edit, or delete custom aliases.
-
 To apply custom aliases to workflows in Xcode:
 
 1. In the Report navigator, Control-click your project name and choose Manage Workflows from the pop-up menu.

@@ -60,6 +60,8 @@ final class Schema
 ### Structures
 - [Schema.PropertyMetadata](schema/propertymetadata.md)
 - [Schema.Version](schema/version-swift.struct.md)
+### Initializers
+- [convenience init(any PersistentModel.Type..., version: Schema.Version)](schema/init(_:version:)-1aea5.md)
 ### Instance Properties
 - [var hashValue: Int](schema/hashvalue.md)
   The hash value.

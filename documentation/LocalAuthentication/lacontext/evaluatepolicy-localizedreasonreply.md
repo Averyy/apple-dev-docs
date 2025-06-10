@@ -1,6 +1,6 @@
 # evaluatePolicy(_:localizedReason:reply:)
 
-**Framework**: Localauthentication  
+**Framework**: Local Authentication  
 **Kind**: method
 
 Evaluates the specified policy.

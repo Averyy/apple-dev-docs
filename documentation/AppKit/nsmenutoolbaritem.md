@@ -47,6 +47,8 @@ If you don’t set an action on the [`NSMenuToolbarItem`](nsmenutoolbaritem.md),
 - [NSMenuItemValidation](nsmenuitemvalidation.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSValidatedUserInterfaceItem](nsvalidateduserinterfaceitem.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

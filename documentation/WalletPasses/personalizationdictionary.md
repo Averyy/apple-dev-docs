@@ -1,14 +1,14 @@
 # PersonalizationDictionary
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that contains the information you use to personalize a pass.
 
 **Availability**:
 - iOS 10.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 10.0+
+- watchOS 3.0+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # childFrames
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The frames of the web frame’s immediate children.

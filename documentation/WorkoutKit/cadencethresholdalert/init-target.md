@@ -1,6 +1,6 @@
 # init(target:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: init
 
 Create a new cadence threshold alert for the target measurement.
@@ -10,6 +10,7 @@ Create a new cadence threshold alert for the target measurement.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

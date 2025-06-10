@@ -1,6 +1,6 @@
 # SHMediaLibrary
 
-**Framework**: Shazamkit  
+**Framework**: ShazamKit  
 **Kind**: class
 
 An object that represents the user’s Shazam library.
@@ -54,4 +54,4 @@ Use `SHMediaLibrary` to add matched songs from the Shazam catalog to the user’
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ShazamKit/shmedialibrary)*
+*[View on Apple Developer](https://developer.apple.com/documentation/shazamkit/shmedialibrary)*

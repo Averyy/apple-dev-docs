@@ -1,6 +1,6 @@
 # initWebKitAnimationEvent
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Initializes a new animation event object.

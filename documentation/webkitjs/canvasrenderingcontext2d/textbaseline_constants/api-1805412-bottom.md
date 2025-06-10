@@ -1,6 +1,6 @@
 # bottom
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: uid
 
 Aligns the y-coordinate of the bounding box with the bottom of text glyphs with descenders.

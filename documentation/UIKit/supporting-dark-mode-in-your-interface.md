@@ -1,6 +1,6 @@
 # Supporting Dark Mode in your interface
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Update colors, images, and behaviors so that your app adapts automatically when Dark Mode is active.
 
@@ -132,4 +132,4 @@ When the user toggles between light and dark interfaces, the system asks your ap
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/supporting-dark-mode-in-your-interface)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/supporting-dark-mode-in-your-interface)*

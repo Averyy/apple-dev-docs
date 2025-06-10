@@ -1,6 +1,6 @@
 # Deleting persistent data from your app
 
-**Framework**: Swiftdata
+**Framework**: SwiftData
 
 Explore different ways to use SwiftData to delete persistent data.
 
@@ -209,4 +209,4 @@ To delete all persistent data from your app and not just data of a certain model
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftData/deleting-persistent-data-from-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/deleting-persistent-data-from-your-app)*

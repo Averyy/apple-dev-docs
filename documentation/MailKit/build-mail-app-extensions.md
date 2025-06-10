@@ -1,6 +1,6 @@
 # Build Mail App Extensions
 
-**Framework**: Mailkit
+**Framework**: MailKit
 
 Create app extensions that block content, perform message and composing actions, and help message security.
 
@@ -20,4 +20,4 @@ Create app extensions that block content, perform message and composing actions,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MailKit/build-mail-app-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mailkit/build-mail-app-extensions)*

@@ -1,6 +1,6 @@
 # destinationRect
 
-**Framework**: Screencapturekit  
+**Framework**: ScreenCaptureKit  
 **Kind**: property
 
 A rectangle that specifies a destination into which to write the output.

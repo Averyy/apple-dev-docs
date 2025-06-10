@@ -15,6 +15,14 @@
 void IORWLockWrite(struct IORWLock * lock);
 ```
 
+#### Discussion
+
+Lock the lock for write, allowing one writer exlusive access. If the lock is held for read or write, block waiting for its unlock. Locking the lock recursively from one thread, for read or write, can result in deadlock.
+
+## Parameters
+
+- `lock`: Pointer to the allocated lock.
+
 ## See Also
 
 - [dequeue_head](dequeue_head.md)

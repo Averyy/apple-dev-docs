@@ -8,8 +8,8 @@ Adds to a `DocumentLaunchView` actions that accept a list of selected files as t
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
-- visionOS 1.0+
+- Mac Catalyst ?+
+- visionOS ?+
 
 ## Declaration
 

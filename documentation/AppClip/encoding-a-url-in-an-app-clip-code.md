@@ -14,18 +14,17 @@ Creating an App Clip Code involves the following key tasks:
 
 Although App Clip Codes are a great way to launch your App Clip, an App Clip Code can only contain a limited amount of information in its visual code or NFC tag. At the same time, it’s important you choose invocation URLs with additional parameters or attributes that lead to the best possible launch experience for users. This additional information could make your invocation URL too long to encode.
 
-When you create an App Clip Code, you need to find the best tradeoff between the limited capacity to store information in the App Clip Code and the need to encode more information. Therefore, choosing the right URLs to launch your App Clip from an App Clip Code is extremely important.
+When you create an App Clip Code, you need to find the best tradeoff between the limited capacity to store information in the App Clip Code and the need to encode more information. Therefore, choosing the right URLs to launch your App Clip from an App Clip Code is important.
 
 ##### Review App Clip Experiences and Invocation Urls
 
-Users launch your App Clip with an invocation; for example, by tapping a link in the Messages app, by scanning a QR code, or by scanning an App Clip Code. Configuring your App Clip’s launch experience requires you to:
+Users launch your App Clip with an invocation; for example, by tapping a link in the Messages app, by scanning a QR code, or by scanning an App Clip Code. To support invocations from App Clip Codes:
 
-- Associate your App Clip with your website to enable the system to verify your App Clip upon launch. For more information, see [`Associating your App Clip with your website`](associating-your-app-clip-with-your-website.md).
-- Create a default App Clip experience and additional advanced App Clip experiences that allow you to register an invocation URL that launches your App Clip. To support invocations from App Clip Codes, you need to create at least one advanced App Clip experience. For more information, see [`Configuring the launch experience of your App Clip`](configuring-the-launch-experience-of-your-app-clip.md).
+When you create an advanced App Clip experience, use a custom URL for your default App Clip experience and your advanced App Clip experiences. For example, create a default App Clip experience that uses  `https://example.com` as its invocation URL, and one advanced App Clip experience. The advanced experience’s registered invocation URL might be `https://appclip.example.com`, and takes advantage of prefix matching.
 
-For example, you can create a default App Clip experience that uses `https://example.com` as its invocation URL, and one advanced App Clip experience. The advanced experience’s registered invocation URL might be `https://appclip.example.com` and take advantage of prefix matching.
+When you use the advanced App Clip experience, you support invocations from QR codes, NFC tags, and App Clip Codes. These invocations use `https://appclip.example.com` as their URL prefix and encode additional information with URL path components or queries. For example, you can encode `https://appclip.example.com/shop?p=123&p1=ab` in an App Clip Code.
 
-You can use the advanced App Clip experience to support invocations from QR codes, NFC tags, and App Clip Codes. Those invocations use `https://appclip.example.com` as their URL prefix and encode additional information using URL path components or queries. For example, you can encode `https://appclip.example.com/shop?p=123&p1=ab` in an App Clip Code.
+For more information, refer to [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md).
 
 ##### Choose a Valid Invocation Url
 
@@ -63,15 +62,17 @@ Always use the fewest possible path components.
 - about, access, account, add, app, archives, article, attraction, author
 - bag, biz, book, brand, brands, browse, buy
 - cancel, cart, cat, catalog, category, categories, channel, charts, checkin, checkout, collection, collections, company, compare, connect, contact, content, contents, cost, coupons, create
-- data, demo, destinations, detail, discover, download, entry, event, events, explore
+- data, demo, destinations, detail, discover, download
+- entry, event, events, explore
 - faq, fetch, finance, find, food, fund
 - game, gift, goods, guide
 - health, help, home, hotel, hotels
 - id, index, info, item, item_id
 - join
 - lifestyle, list, listen, live, local, location, locations, locator, login
-- manage, menu, more, music, name, news
-- note, open, order, overview
+- manage, menu, more, music
+- name, news, note, open
+- order, overview
 - park, part, pay, payment, payments, play, post, posts, preview, product, product_id, products, profile, promotion, purchase
 - rate, recipe, recipes, reservation, reservations, reserve, retail, review, rewards
 - sale, scan, schedule, search, sell, send, service, share, shop, show, showtime, site, song, special, stations, status, store, store-locator, stores, stories, story
@@ -88,7 +89,7 @@ If you use no path component, or a single-word path component from the above lis
 
 ##### Hash Long Urls
 
-In some cases, you may need to pass long query strings to the App Clip upon launch that result in a URL that’s too long to encode in an App Clip Code. In this case, you can use a hashing algorithm to shorten the long query string. Upon launch, your App and App Clip can then expand the hash back to the long query string and use it to update their UI.
+In some cases, you may need to pass long query strings to the App Clip upon launch that result in a URL that’s too long to encode in an App Clip Code. In this case, you can use a hashing algorithm to shorten the long query string. Upon launch, your app and App Clip can then expand the hash back to the long query string and use it to update their UI.
 
 ##### Reuse Existing Urls
 
@@ -98,7 +99,16 @@ You may want to reuse URLs you previously created for other purposes in your App
 - Set up the AASA file for each domain you use.
 - Configure advanced App Clip experiences for both the short and long URLs.
 
-For more information, see [`Configuring the launch experience of your App Clip`](configuring-the-launch-experience-of-your-app-clip.md).
+For more information, refer to [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md).
+
+## See Also
+
+- [Creating App Clip Codes](creating-app-clip-codes.md)
+  Help users discover your App Clip by using an NFC-integrated or scan-only App Clip Code.
+- [Preparing multiple App Clip Codes for production](preparing-multiple-app-clip-codes-for-production.md)
+  Prepare your App Clip Codes to send to a professional printing service.
+- [Interacting with App Clip Codes in AR](interacting-with-app-clip-codes-in-ar.md)
+  Display content and provide services in an AR experience with App Clip Codes.
 
 
 ---

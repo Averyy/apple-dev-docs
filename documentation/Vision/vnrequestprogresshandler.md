@@ -39,4 +39,4 @@ Vision may populate the [`results`](vnrequest/results.md) array in the request w
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/vnrequestprogresshandler)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/vnrequestprogresshandler)*

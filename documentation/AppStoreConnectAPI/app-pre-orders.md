@@ -1,6 +1,6 @@
 # App Pre-Orders
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Manage the settings that make your app available for pre-order.
 
@@ -37,4 +37,4 @@ For more information, see [`Publish for pre-order`](https://developer.apple.comh
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/app-pre-orders)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/app-pre-orders)*

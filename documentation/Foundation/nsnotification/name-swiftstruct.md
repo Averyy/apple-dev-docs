@@ -703,8 +703,6 @@ struct Name
 ### MessageUI
 - [static let MFMessageComposeViewControllerTextMessageAvailabilityDidChange: NSNotification.Name](nsnotification/name-swift.struct/mfmessagecomposeviewcontrollertextmessageavailabilitydidchange.md)
   Posted when the value returned by the [`canSendText()`](https://developer.apple.com/documentation/MessageUI/MFMessageComposeViewController/canSendText()) class method has changed.
-- [MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification](../messageui/mfmessagecomposeviewcontrollertextmessageavailabilitydidchangenotification.md)
-  Posted when the value returned by the  class method has changed.
 ### NetworkExtension
 - [static let NEFilterConfigurationDidChange: NSNotification.Name](nsnotification/name-swift.struct/nefilterconfigurationdidchange.md)
   Posted after the filter configuration stored in the Network Extension preferences changes.
@@ -1007,6 +1005,10 @@ struct Name
 - [static var AVCaptureSessionRuntimeError: NSNotification.Name](nsnotification/name-swift.struct/avcapturesessionruntimeerror.md)
 - [static var AVCaptureSessionWasInterrupted: NSNotification.Name](nsnotification/name-swift.struct/avcapturesessionwasinterrupted.md)
 - [static var AVPlayerInterstitialEventMonitorAssetListResponseStatusDidChange: NSNotification.Name](nsnotification/name-swift.struct/avplayerinterstitialeventmonitorassetlistresponsestatusdidchange.md)
+- [static let AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChange: NSNotification.Name](nsnotification/name-swift.struct/avplayerinterstitialeventmonitorcurrenteventskippablestatedidchange.md)
+- [static let AVPlayerInterstitialEventMonitorCurrentEventSkipped: NSNotification.Name](nsnotification/name-swift.struct/avplayerinterstitialeventmonitorcurrenteventskipped.md)
+- [static let AVPlayerInterstitialEventMonitorInterstitialEventDidFinish: NSNotification.Name](nsnotification/name-swift.struct/avplayerinterstitialeventmonitorinterstitialeventdidfinish.md)
+- [static let AVPlayerInterstitialEventMonitorInterstitialEventWasUnscheduled: NSNotification.Name](nsnotification/name-swift.struct/avplayerinterstitialeventmonitorinterstitialeventwasunscheduled.md)
 - [static var AVPlayerItemDidPlayToEndTime: NSNotification.Name](nsnotification/name-swift.struct/avplayeritemdidplaytoendtime.md)
 - [static var AVPlayerItemFailedToPlayToEndTime: NSNotification.Name](nsnotification/name-swift.struct/avplayeritemfailedtoplaytoendtime.md)
 - [static var AVPlayerItemNewAccessLogEntry: NSNotification.Name](nsnotification/name-swift.struct/avplayeritemnewaccesslogentry.md)
@@ -1026,10 +1028,18 @@ struct Name
 - [static let DREraseProgressPanelWillBegin: NSNotification.Name](nsnotification/name-swift.struct/dreraseprogresspanelwillbegin.md)
 - [static let DREraseStatusChanged: NSNotification.Name](nsnotification/name-swift.struct/drerasestatuschanged.md)
 - [static let DRSetupPanelDeviceSelectionChanged: NSNotification.Name](nsnotification/name-swift.struct/drsetuppaneldeviceselectionchanged.md)
+- [static let GCStylusDidConnect: NSNotification.Name](nsnotification/name-swift.struct/gcstylusdidconnect.md)
+- [static let GCStylusDidDisconnect: NSNotification.Name](nsnotification/name-swift.struct/gcstylusdiddisconnect.md)
 - [static let HMCharacteristicPropertySupportsEvent: NSNotification.Name](nsnotification/name-swift.struct/hmcharacteristicpropertysupportsevent.md)
 - [static let JRSMenuDidReuseItem: NSNotification.Name](nsnotification/name-swift.struct/jrsmenudidreuseitem.md)
 - [static let MEVideoDecoderReadyForMoreMediaDataDidChange: NSNotification.Name](nsnotification/name-swift.struct/mevideodecoderreadyformoremediadatadidchange.md)
 - [static let NERelayConfigurationDidChange: NSNotification.Name](nsnotification/name-swift.struct/nerelayconfigurationdidchange.md)
+- [static let NEURLFilterConfigurationDidChange: Notification.Name](nsnotification/name-swift.struct/neurlfilterconfigurationdidchange.md)
+  Name of the NSNotification that is posted when the URL filter configuration changes.
+- [static let NEURLFilterStatusDidChange: Notification.Name](nsnotification/name-swift.struct/neurlfilterstatusdidchange.md)
+  Name of the NSNotification that is posted when the URL filter status changes.
+- [static let NSApplicationShouldBeginSuppressingHighDynamicRangeContent: NSNotification.Name](nsnotification/name-swift.struct/nsapplicationshouldbeginsuppressinghighdynamicrangecontent.md)
+- [static let NSApplicationShouldEndSuppressingHighDynamicRangeContent: NSNotification.Name](nsnotification/name-swift.struct/nsapplicationshouldendsuppressinghighdynamicrangecontent.md)
 - [static let NSProcessInfoPerformanceProfileDidChange: NSNotification.Name](nsnotification/name-swift.struct/nsprocessinfoperformanceprofiledidchange.md)
 - [static let NSSpellCheckerDidChangeAutomaticInlinePrediction: NSNotification.Name](nsnotification/name-swift.struct/nsspellcheckerdidchangeautomaticinlineprediction.md)
 
@@ -1040,6 +1050,7 @@ struct Name
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

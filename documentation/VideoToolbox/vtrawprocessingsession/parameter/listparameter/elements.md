@@ -1,6 +1,6 @@
 # elements
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 **Availability**:

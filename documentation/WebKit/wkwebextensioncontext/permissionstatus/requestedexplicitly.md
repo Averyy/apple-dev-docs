@@ -1,6 +1,6 @@
 # WKWebExtensionContext.PermissionStatus.requestedExplicitly
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates that the permission was explicitly requested.

@@ -1,6 +1,6 @@
 # init(label:content:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: init
 
 Creates an AccessoryWidgetGroup composed of a label and three circular or rounded square contents with equal spacing and vertical alignment.

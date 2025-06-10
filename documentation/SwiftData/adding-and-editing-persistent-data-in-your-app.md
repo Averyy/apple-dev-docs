@@ -1,6 +1,6 @@
 # Adding and editing persistent data in your app
 
-**Framework**: Swiftdata
+**Framework**: SwiftData
 
 Create a data entry form for collecting and changing data managed by SwiftData.
 
@@ -220,4 +220,4 @@ When a person clicks the Cancel button, the editor discards any changes made to 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftData/adding-and-editing-persistent-data-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/adding-and-editing-persistent-data-in-your-app)*

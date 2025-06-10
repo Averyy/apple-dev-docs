@@ -14,7 +14,6 @@ The number of pages to print.
 ## Declaration
 
 ```swift
-@MainActor
 var pageCount: Int { get }
 ```
 

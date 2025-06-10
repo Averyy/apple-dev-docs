@@ -10,6 +10,7 @@ A type on which events can be published and subscribed.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -39,10 +40,6 @@ protocol EventSource
   A type that can be sent as an event.
 - [struct EventSubscription](eventsubscription.md)
   A subscription to an event.
-- [enum SceneEvents](sceneevents.md)
-  Events the scene invokes.
-- [enum ComponentEvents](componentevents.md)
-  Provides the events related to components.
 
 
 ---

@@ -1,6 +1,6 @@
 # isMultipleTouchEnabled
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A Boolean value that indicates whether the view receives more than one touch at a time.

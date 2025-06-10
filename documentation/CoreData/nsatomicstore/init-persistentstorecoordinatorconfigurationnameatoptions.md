@@ -30,8 +30,6 @@ It’s your responsibility to load the store’s metadata during initialization 
 
 > ❗ **Important**:  If you override this method, you must invoke the superclass implementation to ensure that Core Data correctly initializes the store.
 
- If you override this method, you must invoke the superclass implementation to ensure that Core Data correctly initializes the store.
-
 ## Parameters
 
 - `coordinator`: The persistent store coordinator.

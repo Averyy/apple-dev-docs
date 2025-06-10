@@ -8,7 +8,7 @@ Returns a filter that gets all assets in the assets group.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

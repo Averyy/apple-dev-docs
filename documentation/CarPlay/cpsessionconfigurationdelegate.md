@@ -13,6 +13,7 @@ A protocol for receiving notifications about changes to vehicle properties and c
 ## Declaration
 
 ```swift
+@MainActor
 protocol CPSessionConfigurationDelegate : NSObjectProtocol
 ```
 

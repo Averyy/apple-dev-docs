@@ -1,6 +1,6 @@
 # XCTKVOExpectation.Handler
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: typealias
 
 A custom handler to call when observing a KVO change for a specified key path.

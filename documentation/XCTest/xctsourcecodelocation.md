@@ -1,6 +1,6 @@
 # XCTSourceCodeLocation
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An object that contains a file URL and line number that represents a distinct location in source code.

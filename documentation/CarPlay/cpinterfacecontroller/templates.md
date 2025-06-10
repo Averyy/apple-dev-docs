@@ -13,6 +13,7 @@ The contents of the navigation hierarchy.
 ## Declaration
 
 ```swift
+@MainActor
 var templates: [CPTemplate] { get }
 ```
 

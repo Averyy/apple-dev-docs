@@ -10,6 +10,7 @@ The intended use of the object’s texture property.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -24,8 +25,6 @@ static let textureSemantic: TextureResource.Semantic
   The reflectiveness as a UV-mapped image texture.
 - [var scale: Float](physicallybasedmaterial/metallic-swift.struct/scale.md)
   The reflectiveness for the entire entity.
-- [PhysicallyBasedMaterial.Metallic.FloatLiteralType](physicallybasedmaterial/metallic-swift.struct/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 
 ---

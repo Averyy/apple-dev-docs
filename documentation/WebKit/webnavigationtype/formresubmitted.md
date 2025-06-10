@@ -1,6 +1,6 @@
 # WebNavigationType.formResubmitted
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A form was resubmitted (through a back, forward or reload action).

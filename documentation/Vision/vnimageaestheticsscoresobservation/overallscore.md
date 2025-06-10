@@ -3,7 +3,7 @@
 **Framework**: Vision  
 **Kind**: property
 
-A score that incorporates the aesthetic score, failure score, and utility labels.
+A score which incorporates aesthetic score, failure score, and utility labels.
 
 **Availability**:
 - iOS 18.0+
@@ -21,12 +21,12 @@ var overallScore: Float { get }
 
 #### Discussion
 
-This returns a value within the range of `-1` and `1`, where `1` is most desirable and `-1` isn’t desireable.
+This returns a value within the range of `-1` and `1`, where `-1` is least desirable and `1` is most desirable.
 
 ## See Also
 
 - [var isUtility: Bool](vnimageaestheticsscoresobservation/isutility.md)
-  Returns a Boolean value that represents an image that may not have memorable or exciting content.
+  A Boolean value that represents images that are not necessarily of poor image quality, but may not have memorable or exciting content.
 
 
 ---

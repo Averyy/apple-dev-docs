@@ -1,6 +1,6 @@
 # init(localizedDisplayName:identifier:)
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: init
 
 Returns an application provider using a given display name and identifier.

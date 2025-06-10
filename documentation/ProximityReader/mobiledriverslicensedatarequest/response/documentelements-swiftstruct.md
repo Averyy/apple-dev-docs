@@ -9,6 +9,7 @@ A type that contains the document elements from a successful mobile driver’s l
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -49,8 +50,18 @@ struct DocumentElements
   The document’s number, as defined by the document’s issuing authority.
 - [let drivingPrivileges: [MobileDriversLicenseDataRequest.Response.DocumentElements.DrivingPrivilege]](mobiledriverslicensedatarequest/response/documentelements-swift.struct/drivingprivileges.md)
   The mobile driver’s license holder’s driving privileges.
+- [let eyeColor: MobileDriversLicenseDataRequest.Response.DocumentElements.EyeColor?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/eyecolor-swift.property.md)
+  The mobile identity document holder’s eye color on record with the issuer.
+- [let hairColor: MobileDriversLicenseDataRequest.Response.DocumentElements.HairColor?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.property.md)
+  The mobile identity document holder’s hair color on record with the issuer.
 - [var hashValue: Int](mobiledriverslicensedatarequest/response/documentelements-swift.struct/hashvalue.md)
   The hash value.
+- [let height: Measurement<UnitLength>?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/height.md)
+  The mobile identity document holder’s height on record with the issuer.
+- [let isOrganDonor: Bool?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/isorgandonor.md)
+  A Boolean value indicating whether the identity document holder is an organ donor.
+- [let isVeteran: Bool?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/isveteran.md)
+  A Boolean value indicating whether the identity document holder is a veteran.
 - [let issuingAuthority: MobileDriversLicenseDataRequest.Response.DocumentElements.IssuingAuthority?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/issuingauthority-swift.property.md)
   The state or government that issued the identity document.
 - [let nameComponents: PersonNameComponents?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/namecomponents.md)
@@ -59,12 +70,18 @@ struct DocumentElements
   The portrait data of the mobile driver’s license holder on record with the issuer.
 - [let sex: MobileDriversLicenseDataRequest.Response.DocumentElements.Sex?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.property.md)
   The mobile driver’s license holder’s sex.
+- [let weight: Measurement<UnitMass>?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/weight.md)
+  The mobile identity document holder’s weight on record with the issuer.
 ### Instance Methods
 - [func hash(into: inout Hasher)](mobiledriverslicensedatarequest/response/documentelements-swift.struct/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Enumerations
 - [MobileDriversLicenseDataRequest.Response.DocumentElements.DHSComplianceStatus](mobiledriverslicensedatarequest/response/documentelements-swift.struct/dhscompliancestatus.md)
   A type that represents the mobile driver’s license’ DHS (U.S. Department of Homeland Security) compliance status.
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.EyeColor](mobiledriverslicensedatarequest/response/documentelements-swift.struct/eyecolor-swift.enum.md)
+  A type that represents the mobile driver’s license holder’s eye color
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.HairColor](mobiledriverslicensedatarequest/response/documentelements-swift.struct/haircolor-swift.enum.md)
+  A type that represents the mobile driver’s license holder’s hair color
 - [MobileDriversLicenseDataRequest.Response.DocumentElements.Sex](mobiledriverslicensedatarequest/response/documentelements-swift.struct/sex-swift.enum.md)
   A type that represents the mobile driver’s license holder’s sex.
 ### Default Implementations
@@ -76,6 +93,7 @@ struct DocumentElements
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

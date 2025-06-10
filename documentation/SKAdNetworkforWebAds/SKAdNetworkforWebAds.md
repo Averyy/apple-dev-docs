@@ -1,6 +1,6 @@
 # SKAdNetwork for Web Ads
 
-**Framework**: Skadnetworkforwebads  
+**Framework**: SKAdNetwork for Web Ads  
 **Kind**: module
 
 Attribute app-install campaigns that originate on the web.

@@ -28,6 +28,7 @@ Note that this is unchecked Sendable, and therefore unsafe. The contained object
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

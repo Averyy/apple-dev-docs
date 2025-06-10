@@ -21,12 +21,13 @@ protocol MTLTexture : MTLResource
 
 ## Mentions
 
-- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
-- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 - [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
+- [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Setting Resource Storage Modes](setting-resource-storage-modes.md)
 - [Creating a Mipmapped Texture](creating-a-mipmapped-texture.md)
-- [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
 - [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Choosing a Resource Storage Mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
 
 #### Overview
 
@@ -133,6 +134,9 @@ To copy pixel data back to system memory, call [`getBytes(_:bytesPerRow:bytesPer
 ### Instance Properties
 - [var compressionType: MTLTextureCompressionType](mtltexture/compressiontype.md)
 - [var gpuResourceID: MTLResourceID](mtltexture/gpuresourceid.md)
+- [var sparseTextureTier: MTLTextureSparseTier](mtltexture/sparsetexturetier.md)
+### Instance Methods
+- [func newTextureView(with: MTLTextureViewDescriptor) -> (any MTLTexture)?](mtltexture/newtextureview(with:).md)
 
 ## Relationships
 

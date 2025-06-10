@@ -1,6 +1,6 @@
 # duration
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The duration (in seconds) of the audio file.

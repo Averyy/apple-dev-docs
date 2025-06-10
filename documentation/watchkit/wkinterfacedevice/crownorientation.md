@@ -1,6 +1,6 @@
 # crownOrientation
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The side on which the crown is positioned.

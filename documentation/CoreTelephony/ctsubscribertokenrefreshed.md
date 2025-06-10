@@ -18,7 +18,7 @@ let CTSubscriberTokenRefreshed: String
 
 #### Discussion
 
-The notification’s [`object`](https://developer.apple.com/documentation/foundation/nsnotification/1414469-object) property is the [`CTSubscriber`](ctsubscriber.md) instance whose subscriber token refreshed.
+The notification’s [`object`](https://developer.apple.com/documentation/Foundation/NSNotification/object) property is the [`CTSubscriber`](ctsubscriber.md) instance whose subscriber token refreshed.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # gradientType
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The gradient of the buttonâ€™s border.
@@ -41,4 +41,4 @@ If the button has no border, setting this property has no effect on the buttonâ€
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsbuttoncell/gradienttype)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsbuttoncell/gradienttype)*

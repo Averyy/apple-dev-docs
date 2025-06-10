@@ -22,7 +22,7 @@ dictionary GeocoderConstructorOptions {
 You can optionally set the [`language`](mapkit.geocoder/language.md) and [`getsUserLocation`](mapkit.geocoder/getsuserlocation.md) properties of a [`mapkit.Geocoder`](mapkit.geocoder/mapkit.geocoder.md) object on initialization. Provide a dictionary of [`GeocoderConstructorOptions`](geocoderconstructoroptions.md), as shown in the following code listing.
 
 ```javascript
-var geocoder = new mapkit.Geocoder({
+const geocoder = new mapkit.Geocoder({
     language: "en-GB",
     getsUserLocation: true
 });

@@ -17,6 +17,10 @@
 func addObserver(_ observer: any LAEnvironment.Observer)
 ```
 
+#### Discussion
+
+The observer will be held weakly so its instance should be kept alive by the caller.
+
 
 ---
 

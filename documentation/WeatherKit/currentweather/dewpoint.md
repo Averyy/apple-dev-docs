@@ -1,6 +1,6 @@
 # dewPoint
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The temperature at which relative humidity is 100%.

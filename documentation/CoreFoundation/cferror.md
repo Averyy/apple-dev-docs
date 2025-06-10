@@ -65,6 +65,7 @@ CFError is toll-free bridged to [`NSError`](https://developer.apple.com/document
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

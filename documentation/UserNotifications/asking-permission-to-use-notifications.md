@@ -1,6 +1,6 @@
 # Asking permission to use notifications
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Request permission to display alerts, play sounds, or badge the app’s icon in response to a notification.
 

@@ -1,6 +1,6 @@
 # referenceDisplayModeStatus
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The status of the screen’s reference display mode.

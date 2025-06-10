@@ -12,6 +12,7 @@ A utility object that computes directions and travel-time information based on t
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 1.0+
 
 ## Declaration
 
@@ -39,14 +40,14 @@ Each `MKDirections` object handles a single request for directions, although you
 - [MKDirections.RoutePreference](mkdirections/routepreference.md)
   Options that modify how the framework selects routes when calculating directions.
 ### Getting the directions
-- [func calculate(completionHandler: MKDirections.DirectionsHandler)](mkdirections/calculate(completionhandler:).md)
+- [func calculate(completionHandler: (MKDirections.Response?, (any Error)?) -> Void)](mkdirections/calculate(completionhandler:).md)
   Begins calculating the requested route information asynchronously.
 - [MKDirections.DirectionsHandler](mkdirections/directionshandler.md)
   The block to use for processing the requested route information.
 - [MKDirections.Response](mkdirections/response.md)
   The route information that Apple servers return in response to your request for directions.
 ### Getting the ETA
-- [func calculateETA(completionHandler: MKDirections.ETAHandler)](mkdirections/calculateeta(completionhandler:).md)
+- [func calculateETA(completionHandler: (MKDirections.ETAResponse?, (any Error)?) -> Void)](mkdirections/calculateeta(completionhandler:).md)
   Begins calculating the requested travel-time information asynchronously.
 - [MKDirections.ETAHandler](mkdirections/etahandler.md)
   The block to use for processing travel-time information.

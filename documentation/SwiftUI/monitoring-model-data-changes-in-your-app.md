@@ -18,8 +18,6 @@ Traditionally, you use a view controller to move data back and forth between the
 
 > ❗ **Important**: This article explains how to observe model data changes in SwiftUI apps that have a minimum deployment target that is prior to iOS 17, iPadOS 17, macOS 14, tvOS 17, or watchOS 10. To prepare your app for a newer version of one of those operating systems, see [`Migrating from the Observable Object protocol to the Observable macro`](migrating-from-the-observable-object-protocol-to-the-observable-macro.md). If your app’s minimum deployment target is iOS 17, iPadOS 17, macOS 14, tvOS 17, or watchOS 10 or later, use the observation approach described in [`Managing model data in your app`](managing-model-data-in-your-app.md).
 
-This article explains how to observe model data changes in SwiftUI apps that have a minimum deployment target that is prior to iOS 17, iPadOS 17, macOS 14, tvOS 17, or watchOS 10. To prepare your app for a newer version of one of those operating systems, see [`Migrating from the Observable Object protocol to the Observable macro`](migrating-from-the-observable-object-protocol-to-the-observable-macro.md). If your app’s minimum deployment target is iOS 17, iPadOS 17, macOS 14, tvOS 17, or watchOS 10 or later, use the observation approach described in [`Managing model data in your app`](managing-model-data-in-your-app.md).
-
 ##### Make Model Data Observable
 
 To make the data changes in your model visible to SwiftUI, adopt the [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) protocol for model classes. For example, you can create a `Book` class that’s an observable object:
@@ -178,7 +176,7 @@ The binding connects the view element to the underlying model so that a person m
   Create connections between your app’s data model and views.
 - [Migrating from the Observable Object protocol to the Observable macro](migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
   Update your existing app to leverage the benefits of Observation in Swift.
-- [@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation)) @attached(memberAttribute) @attached(extension, conformances: Observable) macro Observable()](../Observation/Observable().md)
+- [@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) macro Observable()](../Observation/Observable().md)
   Defines and implements conformance of the Observable protocol.
 - [struct StateObject](stateobject.md)
   A property wrapper type that instantiates an observable object.

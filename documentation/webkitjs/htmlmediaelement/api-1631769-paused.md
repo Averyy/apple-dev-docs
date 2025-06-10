@@ -1,6 +1,6 @@
 # paused
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A Boolean value that indicates whether the media is paused. (read-only)

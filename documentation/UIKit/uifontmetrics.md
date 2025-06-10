@@ -65,6 +65,7 @@ Use a [`UIFontMetrics`](uifontmetrics.md) object to support scalable custom font
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

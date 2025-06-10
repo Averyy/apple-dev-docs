@@ -36,11 +36,14 @@ struct MacOSVersion
   The value that represents macOS 14.0.
 - [static let v15: SupportedPlatform.MacOSVersion](supportedplatform/macosversion/v15.md)
   The value that represents macOS 15.0.
+- [static let v26: SupportedPlatform.MacOSVersion](supportedplatform/macosversion/v26.md)
+  The value that represents macOS 26.0.
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

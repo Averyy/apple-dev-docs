@@ -29,11 +29,11 @@ The app’s authorization status of the given type.
 
 ## See Also
 
-- [func requestWriteOnlyAccessToEvents(completion: EKEventStoreRequestAccessCompletionHandler)](ekeventstore/requestwriteonlyaccesstoevents(completion:).md)
+- [func requestWriteOnlyAccessToEvents(completion: (Bool, (any Error)?) -> Void)](ekeventstore/requestwriteonlyaccesstoevents(completion:).md)
   Prompts the person using your app to grant or deny write access to event data.
-- [func requestFullAccessToEvents(completion: EKEventStoreRequestAccessCompletionHandler)](ekeventstore/requestfullaccesstoevents(completion:).md)
+- [func requestFullAccessToEvents(completion: (Bool, (any Error)?) -> Void)](ekeventstore/requestfullaccesstoevents(completion:).md)
   Prompts people to grant or deny read and write access to event data.
-- [func requestFullAccessToReminders(completion: EKEventStoreRequestAccessCompletionHandler)](ekeventstore/requestfullaccesstoreminders(completion:).md)
+- [func requestFullAccessToReminders(completion: (Bool, (any Error)?) -> Void)](ekeventstore/requestfullaccesstoreminders(completion:).md)
   Prompts people to grant or deny read and write access to reminders.
 - [enum EKAuthorizationStatus](ekauthorizationstatus.md)
   The current authorization status for a specific entity type.

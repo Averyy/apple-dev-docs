@@ -16,9 +16,12 @@ interface mapkit.PlaceDetail
 
 ## Mentions
 
+- [MapKit JS 5](mapkit-js-5.md)
 - [Displaying place information using the Maps Embed API](displaying-place-information-using-the-maps-embed-api.md)
 
 #### Overview
+
+![A screenshot showing the PlaceDetail view containing the details information of California Science Center.](https://docs-assets.developer.apple.com/published/56ce684a64c1e17e0e8a02fc4d3b1548/PlaceDetail-cl-01%402x.png)
 
 For more information on places, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/MapKit/identifying-unique-locations-with-place-ids).
 

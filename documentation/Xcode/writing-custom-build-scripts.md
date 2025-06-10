@@ -142,4 +142,4 @@ To help make your helper scripts more recognizable, you should avoid prefixing t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/writing-custom-build-scripts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/writing-custom-build-scripts)*

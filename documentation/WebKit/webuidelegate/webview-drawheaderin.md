@@ -1,6 +1,6 @@
 # webView(_:drawHeaderIn:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Draws the web view’s header in the specified rectangle.

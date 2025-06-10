@@ -53,11 +53,16 @@ For more information, see [`Adding menus and shortcuts to the menu bar and user 
 ### Revalidating a menu system
 - [func setNeedsRevalidate()](uimenusystem/setneedsrevalidate.md)
   Tells the menu system to validate all of its menus.
+### Setting group preferences
+- [UIMenuSystem.ElementGroupPreference](uimenusystem/elementgrouppreference.md)
 
 ## Relationships
 
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Inherited By
+- [UIContextMenuSystem](uicontextmenusystem.md)
+- [UIMainMenuSystem](uimainmenusystem.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -73,6 +78,8 @@ For more information, see [`Adding menus and shortcuts to the menu bar and user 
   A container for grouping related menu elements in an app menu or contextual menu.
 - [protocol UIMenuBuilder](uimenubuilder.md)
   An interface for adding and removing menus from a menu system.
+- [class UIMainMenuSystem](uimainmenusystem.md)
+  The main menu system.
 
 
 ---

@@ -1,6 +1,6 @@
 # libraries
 
-**Framework**: Mapkitjs  
+**Framework**: MapKit JS  
 **Kind**: property
 
 An array of libraries to load at initialization.
@@ -33,4 +33,4 @@ You can set the libraries to load statically by defining them within script tag 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkitinitoptions/libraries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkitinitoptions/libraries)*

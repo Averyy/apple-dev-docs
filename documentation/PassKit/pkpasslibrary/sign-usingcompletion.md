@@ -23,8 +23,6 @@ func sign(_ signData: Data, using secureElementPass: PKSecureElementPass) async 
 
 > ❗ **Important**:  The method is available only to developers who work with Apple to enable this functionality.
 
- The method is available only to developers who work with Apple to enable this functionality.
-
 PassKit may execute the completion Swift closure or an Objective-C block on an arbitrary queue.
 
 ## Parameters

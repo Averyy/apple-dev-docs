@@ -1,6 +1,6 @@
 # Making whiteboard actions available to Siri and Apple Intelligence
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Create app intents and entities that make your app’s whiteboard functionality available to Siri and Apple Intelligence.
 
@@ -13,7 +13,7 @@ To integrate your app’s whiteboard capabilities with Siri and Apple Intelligen
 For example, if your app allows someone to open a whiteboard, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.whiteboard` domain and the [`createBoard`](assistantschemas/whiteboardintent/createboard.md) schema:
 
 ```swift
-@AssistantIntent(schema: .whiteboard.createBoard)
+@AppIntent(schema: .whiteboard.createBoard)
 struct CreateWhiteboardIntent: AppIntent {
     public var title: String?
 
@@ -30,7 +30,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 If you use app entities to describe custom data types, annotate the app entity implementation with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `WhiteboardEntity`. The following code snippet shows how the `WhiteboardEntity` implementation uses the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro:
 
 ```swift
-@AssistantEntity(schema: .whiteboard.board)
+@AppEntity(schema: .whiteboard.board)
 struct WhiteboardBoardEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [WhiteboardBoardEntity.ID]) async throws -> [WhiteboardBoardEntity] { [] }
@@ -57,7 +57,7 @@ For a list of available app entity schemas in the `.whiteboard` domain, see [`As
 To make sure Siri and Apple Intelligence understand custom static types for your intent parameters, annotate app enumerations with the [`AssistantEnum(schema:)`](assistantenum(schema:).md) macro. Then, pass the `.whiteboard` domain and a schema to it. The following example uses the [`color`](assistantschemas/whiteboardenum/color.md) schema:
 
 ```swift
-@AssistantEnum(schema: .whiteboard.color)
+@AppEnum(schema: .whiteboard.color)
 enum WhiteboardColor: String, AppEnum {
     case white
     case black
@@ -86,4 +86,4 @@ For a list of available app enums in the `.whiteboard` domain, refer to [`Assist
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-whiteboard-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-whiteboard-actions-available-to-siri-and-apple-intelligence)*

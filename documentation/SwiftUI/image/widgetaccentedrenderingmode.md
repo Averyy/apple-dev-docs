@@ -10,6 +10,7 @@ Specifies the how to render an `Image` when using the `WidgetKit/WidgetRendering
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS 26.0+ (Beta)
 - watchOS 11.0+
 
 ## Declaration
@@ -31,8 +32,6 @@ var body: some View {
 ```
 
 > ❗ **Important**: If the `Image` is a subview for a group that has `widgetAccentable(true)` applied, this modifier may conflict.
-
-If the `Image` is a subview for a group that has `widgetAccentable(true)` applied, this modifier may conflict.
 
 ## Parameters
 

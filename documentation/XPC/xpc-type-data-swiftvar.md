@@ -1,6 +1,6 @@
 # XPC_TYPE_DATA
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A type that represents an arbitrary buffer of bytes.

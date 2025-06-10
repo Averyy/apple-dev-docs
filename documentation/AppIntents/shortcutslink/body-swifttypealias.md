@@ -8,8 +8,8 @@ The type of view representing the body of this view.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
-- visionOS 1.0+
+- Mac Catalyst ?+
+- visionOS ?+
 
 ## Declaration
 

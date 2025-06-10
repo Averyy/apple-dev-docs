@@ -22,8 +22,6 @@ func hv_vcpu_get_sme_zt0_reg(_ vcpu: hv_vcpu_t, _ value: UnsafeMutablePointer<hv
 
 > ❗ **Important**:  You need to call this on the owning thread.
 
- You need to call this on the owning thread.
-
 This method returns an error if `PSTATE.ZA` is `0` (for example, when [`za_storage_enabled`](hv_vcpu_sme_state_t/za_storage_enabled.md) is `false`).
 
 This method doesn’t require streaming SVE mode to be in an enabled state.

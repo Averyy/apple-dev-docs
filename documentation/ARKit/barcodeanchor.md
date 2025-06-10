@@ -46,6 +46,7 @@ A `BarcodeAnchor` describes a barcode that ARKit detects in a person’s surroun
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,8 +1,7 @@
 # isSparse
 
 **Framework**: Metal  
-**Kind**: property  
-**Required**: Yes
+**Kind**: property
 
 A Boolean value that indicates whether this is a sparse texture.
 

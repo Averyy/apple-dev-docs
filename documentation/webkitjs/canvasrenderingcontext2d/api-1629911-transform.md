@@ -1,6 +1,6 @@
 # transform
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Transforms the current transformation matrix using another matrix.

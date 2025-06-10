@@ -1,6 +1,6 @@
 # webView(_:print:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Prints the contents of a web frame view.

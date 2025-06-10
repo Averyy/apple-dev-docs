@@ -1,6 +1,6 @@
 # registeredNibsByIdentifier
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The dictionary of all registered nib files for view-based table view identifiers.
@@ -29,4 +29,4 @@ Each key in the dictionary is the identifier string (given by [`NSUserInterfaceI
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstableview/registerednibsbyidentifier)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstableview/registerednibsbyidentifier)*

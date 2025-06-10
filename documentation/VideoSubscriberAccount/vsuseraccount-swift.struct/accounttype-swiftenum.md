@@ -1,6 +1,6 @@
 # VSUserAccount.AccountType
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: enum
 
 Constants that represent whether a user has access to paid content.
@@ -38,6 +38,7 @@ The default is [`VSUserAccount.AccountType.free`](vsuseraccount-swift.struct/acc
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

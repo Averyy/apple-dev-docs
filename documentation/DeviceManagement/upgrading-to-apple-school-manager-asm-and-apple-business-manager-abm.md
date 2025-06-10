@@ -21,8 +21,6 @@ The purchases made in VPP in ASM and ABM are location-based, making it easy for 
 
 > ⚠️ **Warning**:  Licenses which have been assigned using a legacy token must continue to be managed by the legacy token until they are transferred to a location. MDMs will need to support both models of licensing simultaneously. Failure to support both the legacy and location based models of tokens will create discrepancies between user experiences in ASM/ABM and their MDM.
 
- Licenses which have been assigned using a legacy token must continue to be managed by the legacy token until they are transferred to a location. MDMs will need to support both models of licensing simultaneously. Failure to support both the legacy and location based models of tokens will create discrepancies between user experiences in ASM/ABM and their MDM.
-
 ## See Also
 
 - [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services-legacy.md)

@@ -1,6 +1,6 @@
 # backList
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The array of items that precede the current item.

@@ -1,6 +1,6 @@
 # AVExperienceController.Experience.embedded
 
-**Framework**: Avkit  
+**Framework**: AVKit  
 **Kind**: case
 
 An experience where the video embeds within its original container.
@@ -32,4 +32,4 @@ It’s the app’s responsibility to correctly manage the player view controller
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/avexperiencecontroller/experience-swift.enum/embedded)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/avexperiencecontroller/experience-swift.enum/embedded)*

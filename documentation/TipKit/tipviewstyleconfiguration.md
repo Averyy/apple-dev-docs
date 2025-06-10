@@ -31,7 +31,7 @@ struct TipViewStyleConfiguration
 
 ## See Also
 
-- [@MainActor @preconcurrency func tipViewStyle(_ style: some TipViewStyle) -> some View
+- [nonisolated func tipViewStyle(_ style: some TipViewStyle) -> some View
 ](../SwiftUI/View/tipViewStyle(_:).md)
   Sets the given style for TipView within the view hierarchy.
 - [protocol TipViewStyle](tipviewstyle.md)

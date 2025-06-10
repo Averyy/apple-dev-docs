@@ -1,6 +1,6 @@
 # userNotificationCenter(_:openSettingsFor:)
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: method
 
 Asks the delegate to display the in-app notification settings.

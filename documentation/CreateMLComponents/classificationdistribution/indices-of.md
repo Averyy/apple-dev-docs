@@ -1,6 +1,6 @@
 # indices(of:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns the indices of all the elements that are equal to the given element.

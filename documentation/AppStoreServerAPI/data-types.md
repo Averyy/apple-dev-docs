@@ -26,7 +26,7 @@ Refer to these data types for decoded transaction and renewal information payloa
   The bundle identifier of an app.
 ### Account information
 - [type appAccountToken](appaccounttoken.md)
-  The UUID that an app optionally generates to map a customer’s In-App Purchase with its resulting App Store transaction.
+  The UUID that you generate to associate a customer’s In-App Purchase with its resulting App Store transaction.
 ### Product information
 - [type productId](productid.md)
   The unique identifier of the product, which you create in App Store Connect.

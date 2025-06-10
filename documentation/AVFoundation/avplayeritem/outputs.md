@@ -17,7 +17,7 @@ An array of outputs associated with the player item.
 ## Declaration
 
 ```swift
-@MainActor
+nonisolated
 var outputs: [AVPlayerItemOutput] { get }
 ```
 

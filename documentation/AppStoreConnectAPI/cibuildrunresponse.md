@@ -22,6 +22,8 @@ object CiBuildRunResponse
   The request body you use to start a new Xcode Cloud build.
 - [object CiBuildActionsResponse](cibuildactionsresponse.md)
   A response that contains a list of Build Actions resources.
+- [object CiBuildRunActionsLinkagesResponse](cibuildrunactionslinkagesresponse.md)
+- [object CiBuildRunBuildsLinkagesResponse](cibuildrunbuildslinkagesresponse.md)
 
 
 ---

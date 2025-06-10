@@ -39,6 +39,8 @@ protocol BADownloaderExtension : AppExtension
 
 ### Inherits From
 - [AppExtension](../ExtensionFoundation/AppExtension.md)
+### Inherited By
+- [ManagedDownloaderExtension](manageddownloaderextension.md)
 
 ## See Also
 

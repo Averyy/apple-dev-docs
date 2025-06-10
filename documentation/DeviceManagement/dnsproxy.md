@@ -10,8 +10,6 @@ The payload you use to configure DNS proxies.
 - iPadOS 11.0+
 - macOS 10.15+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,17 +27,17 @@ Beginning with iOS 15, this profile is unsupervised and needs to be installed th
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad |
-| User Channel | - |
-| Allow Manual Install | macOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, macOS, Shared iPad, visionOS |
+| User channel | NA |
+| Allow manual install | macOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, visionOS |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

@@ -1,9 +1,9 @@
-# receive(_:)
+# receive()
 
 **Framework**: Combine  
 **Kind**: method
 
-Tells the subscriber that the publisher has produced an element.
+Tells the subscriber that a publisher of void elements is ready to receive further requests.
 
 **Availability**:
 - iOS 13.0+
@@ -17,14 +17,18 @@ Tells the subscriber that the publisher has produced an element.
 ## Declaration
 
 ```swift
-final func receive(_ value: Input) -> Subscribers.Demand
+func receive() -> Subscribers.Demand
 ```
 
 #### Return Value
 
-A `Subscribers.Demand` instance indicating how many more elements the subscriber expects to receive.
+A [`Subscribers.Demand`](subscribers/demand.md) instance indicating how many more elements the subscriber expects to receive.
+
+#### Discussion
+
+Use `Void` inputs and outputs when you want to signal that an event has occurred, but don’t need to send the event itself.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/combine/subscribers/sink/receive(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/combine/subscribers/sink/receive())*

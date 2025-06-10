@@ -1,6 +1,6 @@
 # WCError
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: struct
 
 A structure that contains Watch Connectivity error information.
@@ -73,6 +73,7 @@ struct WCError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

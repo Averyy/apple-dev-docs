@@ -1,6 +1,6 @@
 # XCUIRemoteButton.pageDown
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents the page down button on a remote.

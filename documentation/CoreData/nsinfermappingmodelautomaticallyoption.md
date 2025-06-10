@@ -26,7 +26,7 @@ let NSInferMappingModelAutomaticallyOption: String
 
 #### Discussion
 
-The corresponding value is an `NSNumber` object. If the [`boolValue`](https://developer.apple.com/documentation/foundation/nsnumber/1410865-boolvalue) of the number is [`true`](https://developer.apple.com/documentation/swift/true) and the value of the `NSMigratePersistentStoresAutomaticallyOption` is [`true`](https://developer.apple.com/documentation/swift/true), the coordinator will attempt to infer a mapping model if none can be found.
+The corresponding value is an `NSNumber` object. If the [`boolValue`](https://developer.apple.com/documentation/Foundation/NSNumber/boolValue) of the number is [`true`](https://developer.apple.com/documentation/swift/true) and the value of the `NSMigratePersistentStoresAutomaticallyOption` is [`true`](https://developer.apple.com/documentation/swift/true), the coordinator will attempt to infer a mapping model if none can be found.
 
 ## See Also
 

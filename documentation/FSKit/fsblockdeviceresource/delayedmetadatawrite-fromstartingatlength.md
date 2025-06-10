@@ -1,6 +1,6 @@
 # delayedMetadataWrite(from:startingAt:length:)
 
-**Framework**: Fskit  
+**Framework**: FSKit  
 **Kind**: method
 
 Writes file system metadata from a buffer to a cache, prior to flushing it to the resource.

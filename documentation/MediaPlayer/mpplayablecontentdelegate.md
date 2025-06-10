@@ -23,8 +23,6 @@ After the media player determines that a media item should play, the app’s con
 
 > ❗ **Important**:  Some features of this protocol are specific to CarPlay, which requires a special entitlement issued by Apple. Apps without the correct entitlement won’t appear on the CarPlay home screen. See [`http://www.apple.com/ios/carplay/`](https://developer.apple.comhttp://www.apple.com/ios/carplay/) for more information.
 
- Some features of this protocol are specific to CarPlay, which requires a special entitlement issued by Apple. Apps without the correct entitlement won’t appear on the CarPlay home screen. See [`http://www.apple.com/ios/carplay/`](https://developer.apple.comhttp://www.apple.com/ios/carplay/) for more information.
-
 When creating your CarPlay app, keep the following in mind:
 
 - Transition to the Now Playing screen only when content is ready to play. Due to buffering and network conditions, it may take several seconds for audio to begin playing after a user selects it. The user’s selection remains highlighted, and the system displays a spinning activity indicator until your app informs the system that the audio is ready to play.

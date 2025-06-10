@@ -13,6 +13,7 @@ Tells the delegate that the template did disappear from the screen.
 ## Declaration
 
 ```swift
+@MainActor
 optional func templateDidDisappear(_ aTemplate: CPTemplate, animated: Bool)
 ```
 

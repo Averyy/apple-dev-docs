@@ -1,6 +1,6 @@
 # webView(_:identifierForInitialRequest:from:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns an identifier object used to track the progress of loading a single resource.

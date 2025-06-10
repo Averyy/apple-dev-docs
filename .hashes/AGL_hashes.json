@@ -1,2226 +1,265 @@
 {
   "metadata": {
-    "last_updated": "2025-06-08T17:22:13.209632",
-    "total_pages": 403
+    "last_updated": "2025-06-10T21:43:43.931109",
+    "total_pages": 32,
+    "session_id": "2025-06-10T21:43:40.900307"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AGL.json": {
-      "hash": "b9066331cc794aad4a364cf088eba70edafb1a5b2d123efd1fe4f88f63327ed8",
-      "last_checked": "2025-06-08T17:22:12.973956",
-      "status": "unchanged",
-      "etag": "W/\"e7f2dc95a6a88acf41d34bc4c6a02dea\""
+      "hash": "fbe43b9e8bc19ac281c63aebbaa09e0db7a818452b2147f6936680b0c4b72938",
+      "last_checked": "2025-06-10T21:43:41.518280",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"4a10b4430905909833f605f5bf54d02c\"",
+      "file_path": "documentation/AGL/AGL.md"
     },
     "https://developer.apple.com/documentation/AGL": {
-      "hash": "b9066331cc794aad4a364cf088eba70edafb1a5b2d123efd1fe4f88f63327ed8",
-      "last_checked": "2025-06-08T17:22:12.974001",
-      "status": "unchanged",
-      "etag": "W/\"e7f2dc95a6a88acf41d34bc4c6a02dea\""
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl.json": {
-      "hash": "f17961fc850d8305e90e86276f40c5cec1f520472b12d4061c1c5e7c77094732",
-      "last_checked": "2025-06-05T12:35:38.432010",
-      "status": "unchanged",
-      "etag": "W/\"e7f2dc95a6a88acf41d34bc4c6a02dea\""
+      "hash": "fbe43b9e8bc19ac281c63aebbaa09e0db7a818452b2147f6936680b0c4b72938",
+      "last_checked": "2025-06-10T21:43:41.333119",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"4a10b4430905909833f605f5bf54d02c\"",
+      "file_path": "documentation/AGL/AGL.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/agl/agl-collection.json": {
-      "hash": "b6d7ca54ecd674f9c2f3704065783c34f39bd4e8f7cd043a6d52016084aa266c",
-      "last_checked": "2025-06-06T19:38:31.095926",
-      "status": "unchanged",
-      "etag": "W/\"938d8c41c822db808161a1a766a7db40\""
+      "hash": "89d3c049a8c3b81da2e6be59e73945c2731085478c5c4f2d028f315d4d136ee7",
+      "last_checked": "2025-06-10T21:43:41.917401",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"71633baf4730d9017dd1f40cf80336af\"",
+      "file_path": "documentation/AGL/agl-collection.md"
     },
     "https://developer.apple.com/documentation/agl/agl-collection": {
-      "hash": "41d466b9d26d1df503d50c08c1a925fd01c47de9d14f0d8e350614aaae361d70",
-      "last_checked": "2025-06-05T12:35:39.347689",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/bit-depths.json": {
-      "hash": "2b117b6854d9d86e38a4246d3902c6952a56f9f87b897f54218800e5b3e1db3a",
-      "last_checked": "2025-06-05T12:35:39.698154",
-      "status": "unchanged",
-      "etag": "W/\"883566eef5ef0a5e82e5db5f38aba297\""
-    },
-    "https://developer.apple.com/documentation/agl/bit-depths": {
-      "hash": "2b117b6854d9d86e38a4246d3902c6952a56f9f87b897f54218800e5b3e1db3a",
-      "last_checked": "2025-06-05T12:35:39.698154",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_0_bit.json": {
-      "hash": "5f7c91c022b9c4d72a8dadfc9a94e64ad4a72d2eb40785187fe36fb26f3a554a",
-      "last_checked": "2025-06-05T12:35:40.052884",
-      "status": "unchanged",
-      "etag": "W/\"3b46765e725cafba1be117ba53cfac30\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_0_bit": {
-      "hash": "5f7c91c022b9c4d72a8dadfc9a94e64ad4a72d2eb40785187fe36fb26f3a554a",
-      "last_checked": "2025-06-05T12:35:40.052884",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_1_bit.json": {
-      "hash": "a8212e2d14550195635ff65fa780ecb42b3e8923ecc3e40b98ef812b8d94b17b",
-      "last_checked": "2025-06-05T12:35:40.465644",
-      "status": "unchanged",
-      "etag": "W/\"731c626b437456d9ba88077bf6a123b7\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_1_bit": {
-      "hash": "a8212e2d14550195635ff65fa780ecb42b3e8923ecc3e40b98ef812b8d94b17b",
-      "last_checked": "2025-06-05T12:35:40.465644",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_2_bit.json": {
-      "hash": "3b779d6eace784fd05620fbcf7fa3a3bec0e20a7d3959565d3b9a5131eaebb74",
-      "last_checked": "2025-06-05T12:35:41.014654",
-      "status": "unchanged",
-      "etag": "W/\"01cfc353c55ce0dd6ea3f6f3d1c21fea\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_2_bit": {
-      "hash": "3b779d6eace784fd05620fbcf7fa3a3bec0e20a7d3959565d3b9a5131eaebb74",
-      "last_checked": "2025-06-05T12:35:41.014654",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_3_bit.json": {
-      "hash": "1c2dadc451e1d171d54e15647a19d657f8e036806147720d39f8c7ae6634126b",
-      "last_checked": "2025-06-05T12:35:41.389549",
-      "status": "unchanged",
-      "etag": "W/\"2ac43eb204ec9a7e6c5f312e7681cf34\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_3_bit": {
-      "hash": "1c2dadc451e1d171d54e15647a19d657f8e036806147720d39f8c7ae6634126b",
-      "last_checked": "2025-06-05T12:35:41.389549",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_4_bit.json": {
-      "hash": "aa02d9d7af414eca1b2f9169797bcc03824559908bda7325d28e62bc0788cea3",
-      "last_checked": "2025-06-05T12:35:41.797441",
-      "status": "unchanged",
-      "etag": "W/\"2de0e7363138ba3a799fc9b1023bff7b\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_4_bit": {
-      "hash": "aa02d9d7af414eca1b2f9169797bcc03824559908bda7325d28e62bc0788cea3",
-      "last_checked": "2025-06-05T12:35:41.797441",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_5_bit.json": {
-      "hash": "f5b5af1ef0ce84a6ddfa95f13a4495b56e2474aa79464ecd7f71106f297ca92e",
-      "last_checked": "2025-06-05T12:35:42.219250",
-      "status": "unchanged",
-      "etag": "W/\"49d4cfdaab0e0d94e17a2572b72d4e26\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_5_bit": {
-      "hash": "f5b5af1ef0ce84a6ddfa95f13a4495b56e2474aa79464ecd7f71106f297ca92e",
-      "last_checked": "2025-06-05T12:35:42.219250",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_6_bit.json": {
-      "hash": "39349b57d7e7a1fc11e50177049d6fdf6dc1533191019761ea8de2a8b47e5c2c",
-      "last_checked": "2025-06-05T12:35:42.581699",
-      "status": "unchanged",
-      "etag": "W/\"c8298eb561b20e380415caace2a5809f\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_6_bit": {
-      "hash": "39349b57d7e7a1fc11e50177049d6fdf6dc1533191019761ea8de2a8b47e5c2c",
-      "last_checked": "2025-06-05T12:35:42.581699",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_8_bit.json": {
-      "hash": "f7771e0d470332253fdbe93301a7eda126541bd979e5a92307edafa4f0f3518b",
-      "last_checked": "2025-06-05T12:35:42.947303",
-      "status": "unchanged",
-      "etag": "W/\"6204d87029bf86c708994f8a851aacf7\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_8_bit": {
-      "hash": "f7771e0d470332253fdbe93301a7eda126541bd979e5a92307edafa4f0f3518b",
-      "last_checked": "2025-06-05T12:35:42.947303",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_10_bit.json": {
-      "hash": "5daea97d764e111842ecb53ddcf8e9cf66807cc6ccebf8e6fc2a90b1056c4879",
-      "last_checked": "2025-06-05T12:35:43.332552",
-      "status": "unchanged",
-      "etag": "W/\"41fbdb412976f38084a7e596e352d6f0\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_10_bit": {
-      "hash": "5daea97d764e111842ecb53ddcf8e9cf66807cc6ccebf8e6fc2a90b1056c4879",
-      "last_checked": "2025-06-05T12:35:43.332552",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_12_bit.json": {
-      "hash": "a4151b2810396dd91923772de8d85c81e743f12abcfa3dbc2e385ab1036013b0",
-      "last_checked": "2025-06-05T12:35:43.702742",
-      "status": "unchanged",
-      "etag": "W/\"72f90a1020f37bafcabe600155c4ceb2\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_12_bit": {
-      "hash": "a4151b2810396dd91923772de8d85c81e743f12abcfa3dbc2e385ab1036013b0",
-      "last_checked": "2025-06-05T12:35:43.702742",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_16_bit.json": {
-      "hash": "4c940a6a460404792dfe4c83e9c0da75104dc61018b993726183e53f6fccb4c9",
-      "last_checked": "2025-06-05T12:35:44.036099",
-      "status": "unchanged",
-      "etag": "W/\"00387a79670464f274d38a3af2eb7dd7\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_16_bit": {
-      "hash": "4c940a6a460404792dfe4c83e9c0da75104dc61018b993726183e53f6fccb4c9",
-      "last_checked": "2025-06-05T12:35:44.036099",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_24_bit.json": {
-      "hash": "fcdf970574e18c3cc77b6542e1763692f23206ced1bd3fd1bca56328908b4e33",
-      "last_checked": "2025-06-05T12:35:44.447779",
-      "status": "unchanged",
-      "etag": "W/\"f03ccf9a696e8631b5b12dbe70fa782e\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_24_bit": {
-      "hash": "fcdf970574e18c3cc77b6542e1763692f23206ced1bd3fd1bca56328908b4e33",
-      "last_checked": "2025-06-05T12:35:44.447779",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_32_bit.json": {
-      "hash": "32651aedfb005ba191bbd54cf44d236ef3f0b2b0245e4f1447cfeac6653f515a",
-      "last_checked": "2025-06-05T12:35:44.843006",
-      "status": "unchanged",
-      "etag": "W/\"63beb66df794059291c3d08de59c0209\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_32_bit": {
-      "hash": "32651aedfb005ba191bbd54cf44d236ef3f0b2b0245e4f1447cfeac6653f515a",
-      "last_checked": "2025-06-05T12:35:44.843006",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_48_bit.json": {
-      "hash": "60bdbc4035b11cd567a1d55838b913165f36210403e41127abd3484d27ea33c8",
-      "last_checked": "2025-06-05T12:35:45.193205",
-      "status": "unchanged",
-      "etag": "W/\"93322f2c2fde4d2010e728b2e60f76e9\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_48_bit": {
-      "hash": "60bdbc4035b11cd567a1d55838b913165f36210403e41127abd3484d27ea33c8",
-      "last_checked": "2025-06-05T12:35:45.193205",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_64_bit.json": {
-      "hash": "02e33676cc24220eaec905f320a069764352a9db26dfd61a59f1685ec9eedc7f",
-      "last_checked": "2025-06-05T12:35:45.571607",
-      "status": "unchanged",
-      "etag": "W/\"db449972596d5819a8aa4f7a06a46113\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_64_bit": {
-      "hash": "02e33676cc24220eaec905f320a069764352a9db26dfd61a59f1685ec9eedc7f",
-      "last_checked": "2025-06-05T12:35:45.571607",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_96_bit.json": {
-      "hash": "021d1ff70bd2eb482be7702445b53019c87d98b9226296452a131dae2152bb91",
-      "last_checked": "2025-06-05T12:35:45.929161",
-      "status": "unchanged",
-      "etag": "W/\"a57024ddaf01edf5ce2f587b985be965\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_96_bit": {
-      "hash": "021d1ff70bd2eb482be7702445b53019c87d98b9226296452a131dae2152bb91",
-      "last_checked": "2025-06-05T12:35:45.929161",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_128_bit.json": {
-      "hash": "8908577eb1e605f86a2dba293b775eea2e91094267dfa59ba4799cf5ef6bd476",
-      "last_checked": "2025-06-05T12:35:46.291839",
-      "status": "unchanged",
-      "etag": "W/\"ad96d8b1473b160cc2f067335dd36cb7\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_128_bit": {
-      "hash": "8908577eb1e605f86a2dba293b775eea2e91094267dfa59ba4799cf5ef6bd476",
-      "last_checked": "2025-06-05T12:35:46.291839",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/buffer-and-renderer-attributes.json": {
-      "hash": "c99fd3258802e391de4d47b56b33fdd08a6502db4d58dfc3da7cc7c34d6251e2",
-      "last_checked": "2025-06-05T12:35:46.695646",
-      "status": "unchanged",
-      "etag": "W/\"cfd767bc8ee2e5aa5be580ad45c92c25\""
-    },
-    "https://developer.apple.com/documentation/agl/buffer-and-renderer-attributes": {
-      "hash": "c99fd3258802e391de4d47b56b33fdd08a6502db4d58dfc3da7cc7c34d6251e2",
-      "last_checked": "2025-06-05T12:35:46.695646",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_none.json": {
-      "hash": "084b97e98c7a549720e9a2bc2271e30e4e58a9dc9dd379ae1ed2ece42faf908f",
-      "last_checked": "2025-06-05T12:35:47.124859",
-      "status": "unchanged",
-      "etag": "W/\"4c467c1e4f4e759701bc9acc9fed950c\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_none": {
-      "hash": "084b97e98c7a549720e9a2bc2271e30e4e58a9dc9dd379ae1ed2ece42faf908f",
-      "last_checked": "2025-06-05T12:35:47.124859",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_all_renderers.json": {
-      "hash": "4fbf5f8673dd60b9efe0b61849d27384c90a2392802b9e1a8cb5982791f9ae21",
-      "last_checked": "2025-06-05T12:35:47.505766",
-      "status": "unchanged",
-      "etag": "W/\"4429da10b48f5a45a0d58d2ca10c71af\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_all_renderers": {
-      "hash": "4fbf5f8673dd60b9efe0b61849d27384c90a2392802b9e1a8cb5982791f9ae21",
-      "last_checked": "2025-06-05T12:35:47.505766",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_buffer_size.json": {
-      "hash": "42957ed002e172525ef25d9f1925783f0211b66dad423f842d38dff91dcefad9",
-      "last_checked": "2025-06-05T12:35:47.862355",
-      "status": "unchanged",
-      "etag": "W/\"4c96481a699868db2b95a36529a38575\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_buffer_size": {
-      "hash": "42957ed002e172525ef25d9f1925783f0211b66dad423f842d38dff91dcefad9",
-      "last_checked": "2025-06-05T12:35:47.862355",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_level.json": {
-      "hash": "50765711527cdf84e499cb338b3a0d55ff095313b061a41bba6a289f2711ef9f",
-      "last_checked": "2025-06-05T12:35:48.273388",
-      "status": "unchanged",
-      "etag": "W/\"42af511e686d876597cf01d0e167a59b\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_level": {
-      "hash": "50765711527cdf84e499cb338b3a0d55ff095313b061a41bba6a289f2711ef9f",
-      "last_checked": "2025-06-05T12:35:48.273388",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgba.json": {
-      "hash": "4242c57c723dc08ae526342872e8e25a1b67caa7ce2968957f3af9d48c97a6fb",
-      "last_checked": "2025-06-05T12:35:48.626622",
-      "status": "unchanged",
-      "etag": "W/\"a344367b942d6d290257a18e5b7b19d5\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgba": {
-      "hash": "4242c57c723dc08ae526342872e8e25a1b67caa7ce2968957f3af9d48c97a6fb",
-      "last_checked": "2025-06-05T12:35:48.626622",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_doublebuffer.json": {
-      "hash": "d6a5886f559105eb6175edf2b9180e73261cfb68081ebebc90dcf5ed6d705889",
-      "last_checked": "2025-06-05T12:35:48.978997",
-      "status": "unchanged",
-      "etag": "W/\"907472bef6b705189da16bb7a1f62383\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_doublebuffer": {
-      "hash": "d6a5886f559105eb6175edf2b9180e73261cfb68081ebebc90dcf5ed6d705889",
-      "last_checked": "2025-06-05T12:35:48.978997",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_stereo.json": {
-      "hash": "db0f087ab15a1095dccf58be3557da74d66cc75728e23938fdf4bdb74bc6c5dd",
-      "last_checked": "2025-06-05T12:35:49.345393",
-      "status": "unchanged",
-      "etag": "W/\"fef4411e9010262028132224326757d2\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_stereo": {
-      "hash": "db0f087ab15a1095dccf58be3557da74d66cc75728e23938fdf4bdb74bc6c5dd",
-      "last_checked": "2025-06-05T12:35:49.345393",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_aux_buffers.json": {
-      "hash": "8eb9a7c7c1a865398b9e976a395216e33be61e86618b0af75c29f482a2d08310",
-      "last_checked": "2025-06-05T12:35:49.680453",
-      "status": "unchanged",
-      "etag": "W/\"355760122b94fef018382784c7d4fcbb\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_aux_buffers": {
-      "hash": "8eb9a7c7c1a865398b9e976a395216e33be61e86618b0af75c29f482a2d08310",
-      "last_checked": "2025-06-05T12:35:49.680453",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_red_size.json": {
-      "hash": "1b1c5414ed0d74f4bd46c944047459e33b7c9afbfa7617acd7239decc690e892",
-      "last_checked": "2025-06-05T12:35:50.099429",
-      "status": "unchanged",
-      "etag": "W/\"07be16db03fba6fc3deddee0134fee2c\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_red_size": {
-      "hash": "1b1c5414ed0d74f4bd46c944047459e33b7c9afbfa7617acd7239decc690e892",
-      "last_checked": "2025-06-05T12:35:50.099429",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_green_size.json": {
-      "hash": "fee8d58ea57fa466074332da7bb5fa145271b47d110a8fc28730484b643f9dde",
-      "last_checked": "2025-06-05T12:35:50.444028",
-      "status": "unchanged",
-      "etag": "W/\"af2d48cf93ac9994c951f0f3b52e4757\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_green_size": {
-      "hash": "fee8d58ea57fa466074332da7bb5fa145271b47d110a8fc28730484b643f9dde",
-      "last_checked": "2025-06-05T12:35:50.444028",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_blue_size.json": {
-      "hash": "1f8cbc8fb6a7b72f1142dd4b57dc1ac1387ecfb2e9faf1079857ea38b5fb7f1f",
-      "last_checked": "2025-06-05T12:35:50.807678",
-      "status": "unchanged",
-      "etag": "W/\"d37a22283ee062c136896763e4950487\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_blue_size": {
-      "hash": "1f8cbc8fb6a7b72f1142dd4b57dc1ac1387ecfb2e9faf1079857ea38b5fb7f1f",
-      "last_checked": "2025-06-05T12:35:50.807678",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_alpha_size.json": {
-      "hash": "e182866a61130340d87e482d22e590a7d30744c41b84adc7ccc6958977720fc6",
-      "last_checked": "2025-06-05T12:35:51.139732",
-      "status": "unchanged",
-      "etag": "W/\"83e57e46507bdb51e8604852c782afcf\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_alpha_size": {
-      "hash": "e182866a61130340d87e482d22e590a7d30744c41b84adc7ccc6958977720fc6",
-      "last_checked": "2025-06-05T12:35:51.139732",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_depth_size.json": {
-      "hash": "07dff598ca3b9144b593fcf3d92b75e3e3a165230b46dea0c418ee4b1021fee3",
-      "last_checked": "2025-06-05T12:35:51.497677",
-      "status": "unchanged",
-      "etag": "W/\"1d4f185e8cf05559aa3717c4e0c34981\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_depth_size": {
-      "hash": "07dff598ca3b9144b593fcf3d92b75e3e3a165230b46dea0c418ee4b1021fee3",
-      "last_checked": "2025-06-05T12:35:51.497677",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_stencil_size.json": {
-      "hash": "4ac36820782711e7d33791217b07b8ff89fd400bdf00f4d516afb4459f63e039",
-      "last_checked": "2025-06-05T12:35:51.899340",
-      "status": "unchanged",
-      "etag": "W/\"d0efa6033027d7a90741fc7b6b60dc82\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_stencil_size": {
-      "hash": "4ac36820782711e7d33791217b07b8ff89fd400bdf00f4d516afb4459f63e039",
-      "last_checked": "2025-06-05T12:35:51.899340",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_accum_red_size.json": {
-      "hash": "8fe08c740881d05dbf98177dc7c5ff058b54eba1b0f09794cde4ee12a4c0bbcb",
-      "last_checked": "2025-06-05T12:35:52.307646",
-      "status": "unchanged",
-      "etag": "W/\"06f66086a2e00c1bafce78472956eb48\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_accum_red_size": {
-      "hash": "8fe08c740881d05dbf98177dc7c5ff058b54eba1b0f09794cde4ee12a4c0bbcb",
-      "last_checked": "2025-06-05T12:35:52.307646",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_accum_green_size.json": {
-      "hash": "7da4a8fc9e6e5c361d059809970c0dc2f505b138a2df0244ba01e71e58cf285f",
-      "last_checked": "2025-06-05T12:35:52.758702",
-      "status": "unchanged",
-      "etag": "W/\"bace273fca65c344a5bde998c0d82f90\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_accum_green_size": {
-      "hash": "7da4a8fc9e6e5c361d059809970c0dc2f505b138a2df0244ba01e71e58cf285f",
-      "last_checked": "2025-06-05T12:35:52.758702",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_accum_blue_size.json": {
-      "hash": "6ebff729909f3c227d15848d5722d2ead55c666a1c6ca84e3a7633d84bd8e3cc",
-      "last_checked": "2025-06-05T12:35:53.157599",
-      "status": "unchanged",
-      "etag": "W/\"43cb4b89e750f05125b58b3f0e9b02b6\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_accum_blue_size": {
-      "hash": "6ebff729909f3c227d15848d5722d2ead55c666a1c6ca84e3a7633d84bd8e3cc",
-      "last_checked": "2025-06-05T12:35:53.157599",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_accum_alpha_size.json": {
-      "hash": "404ecbec4e30e0aebacc81cab01c5558b01c3e42bdcb63f19bc5d2fad6013bb2",
-      "last_checked": "2025-06-05T12:35:53.492791",
-      "status": "unchanged",
-      "etag": "W/\"36029123bddd7b9582287f90a307cbbe\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_accum_alpha_size": {
-      "hash": "404ecbec4e30e0aebacc81cab01c5558b01c3e42bdcb63f19bc5d2fad6013bb2",
-      "last_checked": "2025-06-05T12:35:53.492791",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_pixel_size.json": {
-      "hash": "2ac18320d7c45d06438734ad33e49bfa6580c5c997f449b2986b57a4db0b926d",
-      "last_checked": "2025-06-05T12:35:53.853742",
-      "status": "unchanged",
-      "etag": "W/\"f97d0d1b1ca56eea6059d3aff4eb4bcf\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_pixel_size": {
-      "hash": "2ac18320d7c45d06438734ad33e49bfa6580c5c997f449b2986b57a4db0b926d",
-      "last_checked": "2025-06-05T12:35:53.853742",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_minimum_policy.json": {
-      "hash": "0e6f1e69c34c6afe9bfcd09cdc7544cab786eceace717a2552ec4b6f40558c0e",
-      "last_checked": "2025-06-05T12:35:54.237862",
-      "status": "unchanged",
-      "etag": "W/\"f240320ea14d93d08b27f64508b9501a\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_minimum_policy": {
-      "hash": "0e6f1e69c34c6afe9bfcd09cdc7544cab786eceace717a2552ec4b6f40558c0e",
-      "last_checked": "2025-06-05T12:35:54.237862",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_maximum_policy.json": {
-      "hash": "1cc34c0fd4de6a1f87bbe5f6d2473de68a4b00a4c2df3e2ac926c0f16161325e",
-      "last_checked": "2025-06-05T12:35:54.584074",
-      "status": "unchanged",
-      "etag": "W/\"7f0f60c915dc8d8c5223e125137d72a2\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_maximum_policy": {
-      "hash": "1cc34c0fd4de6a1f87bbe5f6d2473de68a4b00a4c2df3e2ac926c0f16161325e",
-      "last_checked": "2025-06-05T12:35:54.584074",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_offscreen.json": {
-      "hash": "40bbdb6459f2acb5e9f2ae20f8186d9982f551c8c7430132b4f6fe6c7e39044c",
-      "last_checked": "2025-06-05T12:35:54.966110",
-      "status": "unchanged",
-      "etag": "W/\"fe7a9a51ab10b37b6d076634c715a368\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_offscreen": {
-      "hash": "40bbdb6459f2acb5e9f2ae20f8186d9982f551c8c7430132b4f6fe6c7e39044c",
-      "last_checked": "2025-06-05T12:35:54.966110",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_fullscreen.json": {
-      "hash": "374bf1fb15f0643bbc368a1b8c1b63cc5ab2816965eb56a78e8cec1beeb5a0d3",
-      "last_checked": "2025-06-05T12:35:55.315873",
-      "status": "unchanged",
-      "etag": "W/\"a2d3765b1741ae1d6127846121b42cae\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_fullscreen": {
-      "hash": "374bf1fb15f0643bbc368a1b8c1b63cc5ab2816965eb56a78e8cec1beeb5a0d3",
-      "last_checked": "2025-06-05T12:35:55.315873",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_sample_buffers_arb.json": {
-      "hash": "d93d975481d3925e87f5c36082c98f085aed479511e6f2c8b53951e5a07f5767",
-      "last_checked": "2025-06-05T12:35:55.697242",
-      "status": "unchanged",
-      "etag": "W/\"f46cc268a1460efb3b57a16a35f6632c\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_sample_buffers_arb": {
-      "hash": "d93d975481d3925e87f5c36082c98f085aed479511e6f2c8b53951e5a07f5767",
-      "last_checked": "2025-06-05T12:35:55.697242",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_samples_arb.json": {
-      "hash": "c386bff68734e4dfe6bd398b97dbf02922bf69b89612e5afd773ca095ec00122",
-      "last_checked": "2025-06-05T12:35:56.066186",
-      "status": "unchanged",
-      "etag": "W/\"aebab5e7342a98e76b02660f247aa3f0\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_samples_arb": {
-      "hash": "c386bff68734e4dfe6bd398b97dbf02922bf69b89612e5afd773ca095ec00122",
-      "last_checked": "2025-06-05T12:35:56.066186",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_aux_depth_stencil.json": {
-      "hash": "b19897f94a0e2ad9b046631cd9d586af4e3caccfa98f6b76089beb35519c26be",
-      "last_checked": "2025-06-05T12:35:56.445715",
-      "status": "unchanged",
-      "etag": "W/\"6d264890eecf7414540e6657044f2a12\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_aux_depth_stencil": {
-      "hash": "b19897f94a0e2ad9b046631cd9d586af4e3caccfa98f6b76089beb35519c26be",
-      "last_checked": "2025-06-05T12:35:56.445715",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_color_float.json": {
-      "hash": "ae4f25de56f2c3177398669c4082e99a6336b30fab7441cabb9bf3525c8acef6",
-      "last_checked": "2025-06-05T12:35:56.815795",
-      "status": "unchanged",
-      "etag": "W/\"bb78773bdca27eba68aa577039449a8f\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_color_float": {
-      "hash": "ae4f25de56f2c3177398669c4082e99a6336b30fab7441cabb9bf3525c8acef6",
-      "last_checked": "2025-06-05T12:35:56.815795",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_multisample.json": {
-      "hash": "d6dde569e5ff120a7b817bd679bdff33d3075d532a7fdfa1add03eb52994fdc2",
-      "last_checked": "2025-06-05T12:35:57.173968",
-      "status": "unchanged",
-      "etag": "W/\"ffb44ce2c4b9f560c61454cdb3978a12\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_multisample": {
-      "hash": "d6dde569e5ff120a7b817bd679bdff33d3075d532a7fdfa1add03eb52994fdc2",
-      "last_checked": "2025-06-05T12:35:57.173968",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_supersample.json": {
-      "hash": "62dd6644b999912cab867b4d7e654024181b3583d9e5206c1081abeb1380905c",
-      "last_checked": "2025-06-05T12:35:57.561004",
-      "status": "unchanged",
-      "etag": "W/\"9622d2b21c3da9baf722ff5dcf871d09\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_supersample": {
-      "hash": "62dd6644b999912cab867b4d7e654024181b3583d9e5206c1081abeb1380905c",
-      "last_checked": "2025-06-05T12:35:57.561004",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_sample_alpha.json": {
-      "hash": "2d9e9c59ed695bb4aac02c44d6cdb55826d4b138ccf96ede0f54a7e41621186b",
-      "last_checked": "2025-06-05T12:35:57.961530",
-      "status": "unchanged",
-      "etag": "W/\"2c0626d4fe657340275f7e2cb41cbacd\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_sample_alpha": {
-      "hash": "2d9e9c59ed695bb4aac02c44d6cdb55826d4b138ccf96ede0f54a7e41621186b",
-      "last_checked": "2025-06-05T12:35:57.961530",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/buffer-mode-flags.json": {
-      "hash": "1237a1fbc3b2350487f1eeb560ba9975b5923c79e6285f14f0b76d2f91f6b138",
-      "last_checked": "2025-06-05T12:35:58.311604",
-      "status": "unchanged",
-      "etag": "W/\"d9df5852c7cf21bf6793cc8151ec546b\""
-    },
-    "https://developer.apple.com/documentation/agl/buffer-mode-flags": {
-      "hash": "1237a1fbc3b2350487f1eeb560ba9975b5923c79e6285f14f0b76d2f91f6b138",
-      "last_checked": "2025-06-05T12:35:58.311604",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_monoscopic_bit.json": {
-      "hash": "be7fbfaaa5c10733bd1ea6c9bdf25ec6eed8e356ece18613783c0fbd4b57f3ae",
-      "last_checked": "2025-06-05T12:35:58.692826",
-      "status": "unchanged",
-      "etag": "W/\"5a5f7cf9c8f0d26b3e08f7968a7eb25c\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_monoscopic_bit": {
-      "hash": "be7fbfaaa5c10733bd1ea6c9bdf25ec6eed8e356ece18613783c0fbd4b57f3ae",
-      "last_checked": "2025-06-05T12:35:58.692826",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_stereoscopic_bit.json": {
-      "hash": "880bce76d6ca4beadf47ada751e1c200ca12f085410cf1c87e2a6744e76896b3",
-      "last_checked": "2025-06-05T12:35:59.100097",
-      "status": "unchanged",
-      "etag": "W/\"bd56faa8616b4f8ebed40494a2d8f15d\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_stereoscopic_bit": {
-      "hash": "880bce76d6ca4beadf47ada751e1c200ca12f085410cf1c87e2a6744e76896b3",
-      "last_checked": "2025-06-05T12:35:59.100097",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_singlebuffer_bit.json": {
-      "hash": "471b6ba560a2547ace253de8c7c4f106b7131488b98a7eaceaed80e13312777d",
-      "last_checked": "2025-06-05T12:35:59.439119",
-      "status": "unchanged",
-      "etag": "W/\"f2fe593d8ad2b54eb37e9f9b2680f7f7\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_singlebuffer_bit": {
-      "hash": "471b6ba560a2547ace253de8c7c4f106b7131488b98a7eaceaed80e13312777d",
-      "last_checked": "2025-06-05T12:35:59.439119",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_doublebuffer_bit.json": {
-      "hash": "133cfb2c7c7fb124d0a8b1d948f1adb92b989bc231e13ef40faf6a588327885f",
-      "last_checked": "2025-06-05T12:35:59.785914",
-      "status": "unchanged",
-      "etag": "W/\"ed4c0a32fe2cc184012a96163fde34d5\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_doublebuffer_bit": {
-      "hash": "133cfb2c7c7fb124d0a8b1d948f1adb92b989bc231e13ef40faf6a588327885f",
-      "last_checked": "2025-06-05T12:35:59.785914",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/color-modes.json": {
-      "hash": "8de08ea06a00be2a91371a4b8a9497e6927583149847c18ce0f0a25227f67bfe",
-      "last_checked": "2025-06-05T12:36:00.137865",
-      "status": "unchanged",
-      "etag": "W/\"7061442aa8cb9eb0ec76f41a112c7bb5\""
-    },
-    "https://developer.apple.com/documentation/agl/color-modes": {
-      "hash": "8de08ea06a00be2a91371a4b8a9497e6927583149847c18ce0f0a25227f67bfe",
-      "last_checked": "2025-06-05T12:36:00.137865",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb8_bit.json": {
-      "hash": "356daeb39ab7babe85aff721784e995a8b6979eecf6c863d171a48a88203fe68",
-      "last_checked": "2025-06-05T12:36:00.511785",
-      "status": "unchanged",
-      "etag": "W/\"1f65f178e11ce89caa1e5326594586cb\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb8_bit": {
-      "hash": "356daeb39ab7babe85aff721784e995a8b6979eecf6c863d171a48a88203fe68",
-      "last_checked": "2025-06-05T12:36:00.511785",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb8_a8_bit.json": {
-      "hash": "c08f7a8522337cb5ae11284191459da3da7c9589c888964b1b2807351ba083df",
-      "last_checked": "2025-06-05T12:36:00.902247",
-      "status": "unchanged",
-      "etag": "W/\"8cbe6944ef5a19ffb7f48d5df2c26524\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb8_a8_bit": {
-      "hash": "c08f7a8522337cb5ae11284191459da3da7c9589c888964b1b2807351ba083df",
-      "last_checked": "2025-06-05T12:36:00.902247",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bgr233_bit.json": {
-      "hash": "fcd413581026bf915cad4f9061a5484086ae7a8d8d4190e30ccfb32add28dfdf",
-      "last_checked": "2025-06-05T12:36:01.257379",
-      "status": "unchanged",
-      "etag": "W/\"862e7c946323152c38f5f8672fc86eb9\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bgr233_bit": {
-      "hash": "fcd413581026bf915cad4f9061a5484086ae7a8d8d4190e30ccfb32add28dfdf",
-      "last_checked": "2025-06-05T12:36:01.257379",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bgr233_a8_bit.json": {
-      "hash": "73c2500b005529ed918f53777df5c2e7a68dbcb7723d14155ebee696fc423b3c",
-      "last_checked": "2025-06-05T12:36:01.648431",
-      "status": "unchanged",
-      "etag": "W/\"3c55328335802fd1152fc8402b007da1\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bgr233_a8_bit": {
-      "hash": "73c2500b005529ed918f53777df5c2e7a68dbcb7723d14155ebee696fc423b3c",
-      "last_checked": "2025-06-05T12:36:01.648431",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb332_bit.json": {
-      "hash": "a37e684167ec14d2f839c9455ad09d09ee72349071b5174c29c643cf4e488e2d",
-      "last_checked": "2025-06-05T12:36:02.025688",
-      "status": "unchanged",
-      "etag": "W/\"0c1340427483f9405a2c31ba1c376d76\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb332_bit": {
-      "hash": "a37e684167ec14d2f839c9455ad09d09ee72349071b5174c29c643cf4e488e2d",
-      "last_checked": "2025-06-05T12:36:02.025688",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb332_a8_bit.json": {
-      "hash": "3d22498f1905667e8f074e267f195cdacdb14d3e19f19a8a2a4448cad5369083",
-      "last_checked": "2025-06-05T12:36:02.362702",
-      "status": "unchanged",
-      "etag": "W/\"a02ebebc8f6c3bc2a18b19644ccb4230\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb332_a8_bit": {
-      "hash": "3d22498f1905667e8f074e267f195cdacdb14d3e19f19a8a2a4448cad5369083",
-      "last_checked": "2025-06-05T12:36:02.362702",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb444_bit.json": {
-      "hash": "a326b46867031837874948ba6c559359021794911f157d9273c4511e6863ffff",
-      "last_checked": "2025-06-05T12:36:02.739136",
-      "status": "unchanged",
-      "etag": "W/\"b4114a80abec7294209d47644f91b82b\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb444_bit": {
-      "hash": "a326b46867031837874948ba6c559359021794911f157d9273c4511e6863ffff",
-      "last_checked": "2025-06-05T12:36:02.739136",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_argb4444_bit.json": {
-      "hash": "26a9d4710eb4e4a5370539cedf66e4ad0720ccd18fc21626b648f6e03ec4a366",
-      "last_checked": "2025-06-05T12:36:03.174619",
-      "status": "unchanged",
-      "etag": "W/\"c1363f90e0147a74a02afa52f7c877e2\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_argb4444_bit": {
-      "hash": "26a9d4710eb4e4a5370539cedf66e4ad0720ccd18fc21626b648f6e03ec4a366",
-      "last_checked": "2025-06-05T12:36:03.174619",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb444_a8_bit.json": {
-      "hash": "32ed65407ab9ce975b5c96fcb4b3b75f96cd4ae667bf5b767bcfb593be122052",
-      "last_checked": "2025-06-05T12:36:03.569864",
-      "status": "unchanged",
-      "etag": "W/\"889ccf46c20e5e32092e0333281f130a\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb444_a8_bit": {
-      "hash": "32ed65407ab9ce975b5c96fcb4b3b75f96cd4ae667bf5b767bcfb593be122052",
-      "last_checked": "2025-06-05T12:36:03.569864",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb555_bit.json": {
-      "hash": "23a0bca816fe2ec65ff98950cc7f8d2ea631c3e605cdb4aa290afb0ea398d206",
-      "last_checked": "2025-06-05T12:36:03.967095",
-      "status": "unchanged",
-      "etag": "W/\"408b986b450e8c56e5eca150718b5be1\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb555_bit": {
-      "hash": "23a0bca816fe2ec65ff98950cc7f8d2ea631c3e605cdb4aa290afb0ea398d206",
-      "last_checked": "2025-06-05T12:36:03.967095",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_argb1555_bit.json": {
-      "hash": "a2fa2803c5078c14d1454edf562d60cc25e989a2e6595c94888d2eb05639e298",
-      "last_checked": "2025-06-05T12:36:04.355573",
-      "status": "unchanged",
-      "etag": "W/\"0c541984220abeaf188355495955ba4c\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_argb1555_bit": {
-      "hash": "a2fa2803c5078c14d1454edf562d60cc25e989a2e6595c94888d2eb05639e298",
-      "last_checked": "2025-06-05T12:36:04.355573",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb555_a8_bit.json": {
-      "hash": "c32f865a2539a00a1fb62aa6a7a537b393540bce255dd518db3ec91f6a777da1",
-      "last_checked": "2025-06-05T12:36:04.715431",
-      "status": "unchanged",
-      "etag": "W/\"4a0e4fc9a46cc8f8234c9e652f650c58\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb555_a8_bit": {
-      "hash": "c32f865a2539a00a1fb62aa6a7a537b393540bce255dd518db3ec91f6a777da1",
-      "last_checked": "2025-06-05T12:36:04.715431",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb565_bit.json": {
-      "hash": "d4cc8dc245695f2a7516ec3e825cfe08b62c11ee8ee006109b5502748b790513",
-      "last_checked": "2025-06-05T12:36:05.099828",
-      "status": "unchanged",
-      "etag": "W/\"1e3b5ff4fe93d3af40eb9e25d0b73fe8\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb565_bit": {
-      "hash": "d4cc8dc245695f2a7516ec3e825cfe08b62c11ee8ee006109b5502748b790513",
-      "last_checked": "2025-06-05T12:36:05.099828",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb565_a8_bit.json": {
-      "hash": "5add58a20856b36e05b1ae76f7bccff8f76e18a756c6633c0ecaefa5d8faf657",
-      "last_checked": "2025-06-05T12:36:05.416876",
-      "status": "unchanged",
-      "etag": "W/\"7a50949bd75cca9eebdf220f8e949c87\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb565_a8_bit": {
-      "hash": "5add58a20856b36e05b1ae76f7bccff8f76e18a756c6633c0ecaefa5d8faf657",
-      "last_checked": "2025-06-05T12:36:05.416876",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb888_bit.json": {
-      "hash": "e8d29fb343f9cd7534aa697f1f60c4d6798a53157fd26e144c1c361e42511d8e",
-      "last_checked": "2025-06-05T12:36:05.784778",
-      "status": "unchanged",
-      "etag": "W/\"519ff204e7ec48c0580f22ec041b79ce\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb888_bit": {
-      "hash": "e8d29fb343f9cd7534aa697f1f60c4d6798a53157fd26e144c1c361e42511d8e",
-      "last_checked": "2025-06-05T12:36:05.784778",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_argb8888_bit.json": {
-      "hash": "1988598c1965ab720382da919809a3330da6221699e36fcde7a9c5f035e44e30",
-      "last_checked": "2025-06-05T12:36:06.195311",
-      "status": "unchanged",
-      "etag": "W/\"7102e65ccdd23149f06c8d545825030f\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_argb8888_bit": {
-      "hash": "1988598c1965ab720382da919809a3330da6221699e36fcde7a9c5f035e44e30",
-      "last_checked": "2025-06-05T12:36:06.195311",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb888_a8_bit.json": {
-      "hash": "29c03bc85fa2c2e5e4852bfa7c307ca2d0c5c3da1ec24623f1cd07cfbb9fb83d",
-      "last_checked": "2025-06-05T12:36:06.588113",
-      "status": "unchanged",
-      "etag": "W/\"b80fdf18cb0ef15b72a992dd4dd495bd\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb888_a8_bit": {
-      "hash": "29c03bc85fa2c2e5e4852bfa7c307ca2d0c5c3da1ec24623f1cd07cfbb9fb83d",
-      "last_checked": "2025-06-05T12:36:06.588113",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb101010_bit.json": {
-      "hash": "44d6dc805414ca2be9c47f24fe149c607d56784e68050c50c01e9ab5d9c4ac33",
-      "last_checked": "2025-06-05T12:36:06.952325",
-      "status": "unchanged",
-      "etag": "W/\"692e6598654f2486596801b37e47a82a\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb101010_bit": {
-      "hash": "44d6dc805414ca2be9c47f24fe149c607d56784e68050c50c01e9ab5d9c4ac33",
-      "last_checked": "2025-06-05T12:36:06.952325",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_argb2101010_bit.json": {
-      "hash": "e4e494a3543961a53618eb875c8eca95f9312cf21c6b45c7dbe0d8346510ef15",
-      "last_checked": "2025-06-05T12:36:07.356629",
-      "status": "unchanged",
-      "etag": "W/\"cd90842c8514f2d64d518de58e0899f6\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_argb2101010_bit": {
-      "hash": "e4e494a3543961a53618eb875c8eca95f9312cf21c6b45c7dbe0d8346510ef15",
-      "last_checked": "2025-06-05T12:36:07.356629",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb101010_a8_bit.json": {
-      "hash": "f3c351af8e78768c19813415f2d4da68a4a3162189d96ddb96fef8797ec5bf1c",
-      "last_checked": "2025-06-05T12:36:07.738184",
-      "status": "unchanged",
-      "etag": "W/\"5e4e4d4868711664c007cce51dbb28c3\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb101010_a8_bit": {
-      "hash": "f3c351af8e78768c19813415f2d4da68a4a3162189d96ddb96fef8797ec5bf1c",
-      "last_checked": "2025-06-05T12:36:07.738184",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb121212_bit.json": {
-      "hash": "4fd3ddbf6078fc028a8f9a428716562baa918ef2f9557885df239bc5cfb4c837",
-      "last_checked": "2025-06-05T12:36:08.061224",
-      "status": "unchanged",
-      "etag": "W/\"60dc4eec848262905bb5b7ddf2625c4d\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb121212_bit": {
-      "hash": "4fd3ddbf6078fc028a8f9a428716562baa918ef2f9557885df239bc5cfb4c837",
-      "last_checked": "2025-06-05T12:36:08.061224",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_argb12121212_bit.json": {
-      "hash": "3215f3bee1844ff62046eaf0d993b82eef0e34d51ee0071cefec7fed9f0ebdd2",
-      "last_checked": "2025-06-05T12:36:08.472529",
-      "status": "unchanged",
-      "etag": "W/\"2cebceeccf8f76cce813c12ca814afc2\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_argb12121212_bit": {
-      "hash": "3215f3bee1844ff62046eaf0d993b82eef0e34d51ee0071cefec7fed9f0ebdd2",
-      "last_checked": "2025-06-05T12:36:08.472529",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgb161616_bit.json": {
-      "hash": "845c3c26450d046c86470267e1497901f55336f493fd4cb6fc0ca276dfddbaf7",
-      "last_checked": "2025-06-05T12:36:08.862884",
-      "status": "unchanged",
-      "etag": "W/\"8069a4cd0754ac25afba72d69b36036d\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgb161616_bit": {
-      "hash": "845c3c26450d046c86470267e1497901f55336f493fd4cb6fc0ca276dfddbaf7",
-      "last_checked": "2025-06-05T12:36:08.862884",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_argb16161616_bit.json": {
-      "hash": "48f0040f6374c1cc53a51ebe0b224dedab0ef92ccc4c2570ce49c74a5f732171",
-      "last_checked": "2025-06-05T12:36:09.241561",
-      "status": "unchanged",
-      "etag": "W/\"e22d399d8c4b9304995dc976cea40e82\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_argb16161616_bit": {
-      "hash": "48f0040f6374c1cc53a51ebe0b224dedab0ef92ccc4c2570ce49c74a5f732171",
-      "last_checked": "2025-06-05T12:36:09.241561",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_index8_bit.json": {
-      "hash": "9dc6857ff0b06836d0cae2058094b2e8d78c201d9b85571bc1fc24b19b412838",
-      "last_checked": "2025-06-05T12:36:09.635490",
-      "status": "unchanged",
-      "etag": "W/\"46b02e165302c68f0c079f3fc34df681\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_index8_bit": {
-      "hash": "9dc6857ff0b06836d0cae2058094b2e8d78c201d9b85571bc1fc24b19b412838",
-      "last_checked": "2025-06-05T12:36:09.635490",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_index16_bit.json": {
-      "hash": "e35fb6fe6d6a626010cc3fd2a988c4a69b39cafec2430cf47f8d7ff029a7ee81",
-      "last_checked": "2025-06-05T12:36:10.073323",
-      "status": "unchanged",
-      "etag": "W/\"ffeac0b7af535a69c4a4a5dcdbab23af\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_index16_bit": {
-      "hash": "e35fb6fe6d6a626010cc3fd2a988c4a69b39cafec2430cf47f8d7ff029a7ee81",
-      "last_checked": "2025-06-05T12:36:10.073323",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgbfloat64_bit.json": {
-      "hash": "f047eb408eab244bbcfa5cc794d131ed93c289de42bc4920698a92f0fe234cc5",
-      "last_checked": "2025-06-05T12:36:10.468010",
-      "status": "unchanged",
-      "etag": "W/\"0379b898d76e54b4855c3641bbe2df69\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgbfloat64_bit": {
-      "hash": "f047eb408eab244bbcfa5cc794d131ed93c289de42bc4920698a92f0fe234cc5",
-      "last_checked": "2025-06-05T12:36:10.468010",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgbafloat64_bit.json": {
-      "hash": "0f64b94a4574dda22b362908357d3531c89e6effbc158af2f00f456ab849f50a",
-      "last_checked": "2025-06-05T12:36:10.820035",
-      "status": "unchanged",
-      "etag": "W/\"cc977affcc1a5d852b2284793fac97bc\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgbafloat64_bit": {
-      "hash": "0f64b94a4574dda22b362908357d3531c89e6effbc158af2f00f456ab849f50a",
-      "last_checked": "2025-06-05T12:36:10.820035",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgbfloat128_bit.json": {
-      "hash": "3c4814fcca6eb902a4d3f0b0026e632801d14dd603db160992a83139000fe290",
-      "last_checked": "2025-06-05T12:36:11.156067",
-      "status": "unchanged",
-      "etag": "W/\"a5c715cdf207bb92617a0d86765871cb\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgbfloat128_bit": {
-      "hash": "3c4814fcca6eb902a4d3f0b0026e632801d14dd603db160992a83139000fe290",
-      "last_checked": "2025-06-05T12:36:11.156067",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgbafloat128_bit.json": {
-      "hash": "5031f9b8c97076271e274bbdb886652b916fcd28f648c0bd54b199cd52f76c50",
-      "last_checked": "2025-06-05T12:36:11.505756",
-      "status": "unchanged",
-      "etag": "W/\"f9828f5290f90a8bf6597844b23f76c6\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgbafloat128_bit": {
-      "hash": "5031f9b8c97076271e274bbdb886652b916fcd28f648c0bd54b199cd52f76c50",
-      "last_checked": "2025-06-05T12:36:11.505756",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgbfloat256_bit.json": {
-      "hash": "b199b11c9806a4b78f0d10e063b2c0a01bcfe5af8309e6a6e0a71e7a415fbf5d",
-      "last_checked": "2025-06-05T12:36:11.852934",
-      "status": "unchanged",
-      "etag": "W/\"5334f44b5dffc0aba40528c0b279cfdd\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgbfloat256_bit": {
-      "hash": "b199b11c9806a4b78f0d10e063b2c0a01bcfe5af8309e6a6e0a71e7a415fbf5d",
-      "last_checked": "2025-06-05T12:36:11.852934",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rgbafloat256_bit.json": {
-      "hash": "3e718845cc0945e15fe0086a3891ba4e4e8d0c208578a2b6d0c7bef73ee557a7",
-      "last_checked": "2025-06-05T12:36:12.249218",
-      "status": "unchanged",
-      "etag": "W/\"52bc8f9c08d6dd776801b7d94c953660\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rgbafloat256_bit": {
-      "hash": "3e718845cc0945e15fe0086a3891ba4e4e8d0c208578a2b6d0c7bef73ee557a7",
-      "last_checked": "2025-06-05T12:36:12.249218",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/context-options-and-parameters.json": {
-      "hash": "f4ee44ef7091738e7bef7f60128c0185ab58f67c30f820b8d8797ba973549212",
-      "last_checked": "2025-06-05T12:36:12.598980",
-      "status": "unchanged",
-      "etag": "W/\"dd0939f98da3ab18ffa747bc94d54cd3\""
-    },
-    "https://developer.apple.com/documentation/agl/context-options-and-parameters": {
-      "hash": "f4ee44ef7091738e7bef7f60128c0185ab58f67c30f820b8d8797ba973549212",
-      "last_checked": "2025-06-05T12:36:12.598980",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_swap_rect.json": {
-      "hash": "1145e43de0e5994361f339c9c1b161f71a05646ae09de2f959c3aa9fc23b597d",
-      "last_checked": "2025-06-05T12:36:12.970922",
-      "status": "unchanged",
-      "etag": "W/\"3badaeb1fe2011b3c1eac88a32e8fc42\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_swap_rect": {
-      "hash": "1145e43de0e5994361f339c9c1b161f71a05646ae09de2f959c3aa9fc23b597d",
-      "last_checked": "2025-06-05T12:36:12.970922",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_buffer_rect.json": {
-      "hash": "0684254ae509b1e8c4111703fbba84640d6df245120e60ca453fe868dd112804",
-      "last_checked": "2025-06-05T12:36:13.293492",
-      "status": "unchanged",
-      "etag": "W/\"e3c29e57ef53d08877ad878bcf119e61\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_buffer_rect": {
-      "hash": "0684254ae509b1e8c4111703fbba84640d6df245120e60ca453fe868dd112804",
-      "last_checked": "2025-06-05T12:36:13.293492",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_swap_limit.json": {
-      "hash": "71fbabed32540d733eabb6ced942b08552a8a8ef533d2dad4169d816e7a25a47",
-      "last_checked": "2025-06-05T12:36:13.717861",
-      "status": "unchanged",
-      "etag": "W/\"7eef29fc804bc728c49f0f3080754962\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_swap_limit": {
-      "hash": "71fbabed32540d733eabb6ced942b08552a8a8ef533d2dad4169d816e7a25a47",
-      "last_checked": "2025-06-05T12:36:13.717861",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_colormap_tracking.json": {
-      "hash": "673edb6bc25dcc435410ec8bc3acff84cc31189fa5b89226cd1f5bc227557a0b",
-      "last_checked": "2025-06-05T12:36:14.116919",
-      "status": "unchanged",
-      "etag": "W/\"6d879093d39a24dc9f32191d5d1f0f89\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_colormap_tracking": {
-      "hash": "673edb6bc25dcc435410ec8bc3acff84cc31189fa5b89226cd1f5bc227557a0b",
-      "last_checked": "2025-06-05T12:36:14.116919",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_colormap_entry.json": {
-      "hash": "4a4c5f219080b15827c1f75c27431161ab709417f3a3302c924120f3d889de2a",
-      "last_checked": "2025-06-05T12:36:14.525542",
-      "status": "unchanged",
-      "etag": "W/\"9cf988f7283011efd936870fe9fa3531\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_colormap_entry": {
-      "hash": "4a4c5f219080b15827c1f75c27431161ab709417f3a3302c924120f3d889de2a",
-      "last_checked": "2025-06-05T12:36:14.525542",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_rasterization.json": {
-      "hash": "840bba21bf8c3b364eb0a74d41175d0dcd272b29adcb2e1d733b61b09f26b667",
-      "last_checked": "2025-06-05T12:36:14.890784",
-      "status": "unchanged",
-      "etag": "W/\"03bf9aa0f21fd8cf5e0c013a76ce9d78\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_rasterization": {
-      "hash": "840bba21bf8c3b364eb0a74d41175d0dcd272b29adcb2e1d733b61b09f26b667",
-      "last_checked": "2025-06-05T12:36:14.890784",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_swap_interval.json": {
-      "hash": "9e0347f8ca1c9887adafd74966d3d996522a2ba77eb6f09343e9463d82ce01fa",
-      "last_checked": "2025-06-05T12:36:15.260595",
-      "status": "unchanged",
-      "etag": "W/\"c6169ee8e315de0afa52f55f3ac2eeca\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_swap_interval": {
-      "hash": "9e0347f8ca1c9887adafd74966d3d996522a2ba77eb6f09343e9463d82ce01fa",
-      "last_checked": "2025-06-05T12:36:15.260595",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_state_validation.json": {
-      "hash": "91015a51f7a418d9f5889834306c87bf4a7f9e41c10a5f5cace08b8078d1fbf6",
-      "last_checked": "2025-06-05T12:36:15.641935",
-      "status": "unchanged",
-      "etag": "W/\"391f3483bd26a31cfd4ab15e7dfcf007\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_state_validation": {
-      "hash": "91015a51f7a418d9f5889834306c87bf4a7f9e41c10a5f5cace08b8078d1fbf6",
-      "last_checked": "2025-06-05T12:36:15.641935",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_buffer_name.json": {
-      "hash": "b0581c186ce56d44f13b76acfda5367c59e1bac43137903062a31f5a6bd2de82",
-      "last_checked": "2025-06-05T12:36:16.028525",
-      "status": "unchanged",
-      "etag": "W/\"bc640c8ccfe33548b82e7b9642bc73a4\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_buffer_name": {
-      "hash": "b0581c186ce56d44f13b76acfda5367c59e1bac43137903062a31f5a6bd2de82",
-      "last_checked": "2025-06-05T12:36:16.028525",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_order_context_to_front.json": {
-      "hash": "3d37c5b9a1b791255e0f158e8c0c2baaf58999b8b7fcd8c9bcf6b1375cd1fb90",
-      "last_checked": "2025-06-05T12:36:16.403817",
-      "status": "unchanged",
-      "etag": "W/\"eb36d563e30b8a52a5d0e2a6f834ba94\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_order_context_to_front": {
-      "hash": "3d37c5b9a1b791255e0f158e8c0c2baaf58999b8b7fcd8c9bcf6b1375cd1fb90",
-      "last_checked": "2025-06-05T12:36:16.403817",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_context_surface_id.json": {
-      "hash": "7a174726fd6b906ab25437ce9d71f083976bb27f4624cfedd14c0a19573458dc",
-      "last_checked": "2025-06-05T12:36:16.776034",
-      "status": "unchanged",
-      "etag": "W/\"06b7d9d5933dfabd88e2b30d29dce71a\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_context_surface_id": {
-      "hash": "7a174726fd6b906ab25437ce9d71f083976bb27f4624cfedd14c0a19573458dc",
-      "last_checked": "2025-06-05T12:36:16.776034",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_context_display_id.json": {
-      "hash": "22fc5b74acba601c71d4527af546b346750eae95b4ae3b8b154f48ac95e689fa",
-      "last_checked": "2025-06-05T12:36:17.190402",
-      "status": "unchanged",
-      "etag": "W/\"94e3571b486705929cc0a7a0cd0e2893\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_context_display_id": {
-      "hash": "22fc5b74acba601c71d4527af546b346750eae95b4ae3b8b154f48ac95e689fa",
-      "last_checked": "2025-06-05T12:36:17.190402",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_surface_order.json": {
-      "hash": "3096fd4c9ca581d23fdce5510b42cea41c2fe72a65c84fabb3b0e5ff944011ed",
-      "last_checked": "2025-06-05T12:36:17.549177",
-      "status": "unchanged",
-      "etag": "W/\"9d68dfbaf330012bc8a3db93160f91a1\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_surface_order": {
-      "hash": "3096fd4c9ca581d23fdce5510b42cea41c2fe72a65c84fabb3b0e5ff944011ed",
-      "last_checked": "2025-06-05T12:36:17.549177",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_surface_opacity.json": {
-      "hash": "a8121847cb7c5b2cf6abcc472f11d7d3eed0b63d4433b1807978dfb67f33abbe",
-      "last_checked": "2025-06-05T12:36:17.904063",
-      "status": "unchanged",
-      "etag": "W/\"4e1133c9a42ae149a71f53b82af2711a\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_surface_opacity": {
-      "hash": "a8121847cb7c5b2cf6abcc472f11d7d3eed0b63d4433b1807978dfb67f33abbe",
-      "last_checked": "2025-06-05T12:36:17.904063",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_clip_region.json": {
-      "hash": "e05ec7671c1b051fc1991e03924c43a59f24f52b22b0463e521651ee1bdd885e",
-      "last_checked": "2025-06-05T12:36:18.294116",
-      "status": "unchanged",
-      "etag": "W/\"e4ff168d504d218a6c591a1320d3b425\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_clip_region": {
-      "hash": "e05ec7671c1b051fc1991e03924c43a59f24f52b22b0463e521651ee1bdd885e",
-      "last_checked": "2025-06-05T12:36:18.294116",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_fs_capture_single.json": {
-      "hash": "c050954581bad6051661dcbec9370b6c17be8e022fc5e2fb4c532c23b49b5d77",
-      "last_checked": "2025-06-05T12:36:18.732538",
-      "status": "unchanged",
-      "etag": "W/\"46760feb3410288b1ecf58fbb8821ea1\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_fs_capture_single": {
-      "hash": "c050954581bad6051661dcbec9370b6c17be8e022fc5e2fb4c532c23b49b5d77",
-      "last_checked": "2025-06-05T12:36:18.732538",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_surface_backing_size.json": {
-      "hash": "89b6e5cf22d6c4a02e93d04c05c61a55fab13f4edaf1aff9a4bf3721f7a5b378",
-      "last_checked": "2025-06-05T12:36:19.084764",
-      "status": "unchanged",
-      "etag": "W/\"b412b37d3ed83264a2a74dfdc5246e0e\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_surface_backing_size": {
-      "hash": "89b6e5cf22d6c4a02e93d04c05c61a55fab13f4edaf1aff9a4bf3721f7a5b378",
-      "last_checked": "2025-06-05T12:36:19.084764",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_enable_surface_backing_size.json": {
-      "hash": "34aaa7bfd844231f9c5e13566fad268a41e329880aad97ac4b6446c99a1a4bbd",
-      "last_checked": "2025-06-05T12:36:19.483691",
-      "status": "unchanged",
-      "etag": "W/\"29663045466ca6ed5e981b0405036877\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_enable_surface_backing_size": {
-      "hash": "34aaa7bfd844231f9c5e13566fad268a41e329880aad97ac4b6446c99a1a4bbd",
-      "last_checked": "2025-06-05T12:36:19.483691",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_surface_volatile.json": {
-      "hash": "23b29e4cf44a626fc8a0296945505248fe2eee71592c0087cbd332b3dd23a4ba",
-      "last_checked": "2025-06-05T12:36:19.818582",
-      "status": "unchanged",
-      "etag": "W/\"71c492269fa0c79b12ae43ac4725dbe5\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_surface_volatile": {
-      "hash": "23b29e4cf44a626fc8a0296945505248fe2eee71592c0087cbd332b3dd23a4ba",
-      "last_checked": "2025-06-05T12:36:19.818582",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/error-codes.json": {
-      "hash": "408cda4319e5f138b3e9b685729290e212a77e39a8104b2230bd1b1c5dd5a0b5",
-      "last_checked": "2025-06-05T12:36:20.226798",
-      "status": "unchanged",
-      "etag": "W/\"9e2a82f50966f04bcbf237dab3cc307f\""
-    },
-    "https://developer.apple.com/documentation/agl/error-codes": {
-      "hash": "408cda4319e5f138b3e9b685729290e212a77e39a8104b2230bd1b1c5dd5a0b5",
-      "last_checked": "2025-06-05T12:36:20.226798",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_no_error.json": {
-      "hash": "2bc1991a4720a5a76498f3c8965625d62916a07e3315b939d1fb16edc7511f81",
-      "last_checked": "2025-06-05T12:36:20.606408",
-      "status": "unchanged",
-      "etag": "W/\"e72c2cf2e24670268747299cafafe6ad\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_no_error": {
-      "hash": "2bc1991a4720a5a76498f3c8965625d62916a07e3315b939d1fb16edc7511f81",
-      "last_checked": "2025-06-05T12:36:20.606408",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_attribute.json": {
-      "hash": "c5b804a36719c8dd77b55d8451dd9618166cb02c5ef63d496142f644d0f1e01a",
-      "last_checked": "2025-06-05T12:36:20.944584",
-      "status": "unchanged",
-      "etag": "W/\"eadb4b3805ac6b34ab7d91f338fbcbfc\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_attribute": {
-      "hash": "c5b804a36719c8dd77b55d8451dd9618166cb02c5ef63d496142f644d0f1e01a",
-      "last_checked": "2025-06-05T12:36:20.944584",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_property.json": {
-      "hash": "e1d869ec20bbbc9e4fe4c9b276559d4e48153cf52eb09c8ebcd1be3c4af0bfdf",
-      "last_checked": "2025-06-05T12:36:21.338638",
-      "status": "unchanged",
-      "etag": "W/\"f99f5e4f240917c4ee6e190054e15055\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_property": {
-      "hash": "e1d869ec20bbbc9e4fe4c9b276559d4e48153cf52eb09c8ebcd1be3c4af0bfdf",
-      "last_checked": "2025-06-05T12:36:21.338638",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_pixelfmt.json": {
-      "hash": "fd8175278f2c65b58c6ee6cc512fa5a2370ca6408ef50f02eb0445a7387a878b",
-      "last_checked": "2025-06-05T12:36:21.706757",
-      "status": "unchanged",
-      "etag": "W/\"1f136b64fc4a9cc6483eb495f7049326\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_pixelfmt": {
-      "hash": "fd8175278f2c65b58c6ee6cc512fa5a2370ca6408ef50f02eb0445a7387a878b",
-      "last_checked": "2025-06-05T12:36:21.706757",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_rendinfo.json": {
-      "hash": "d50c40dd261c3458eb06c4a3828401c2eedebb1fde4dc365cb51b9a4aa87dc94",
-      "last_checked": "2025-06-05T12:36:22.087702",
-      "status": "unchanged",
-      "etag": "W/\"e2f39ecbc0a70246b8a62276194e4019\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_rendinfo": {
-      "hash": "d50c40dd261c3458eb06c4a3828401c2eedebb1fde4dc365cb51b9a4aa87dc94",
-      "last_checked": "2025-06-05T12:36:22.087702",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_context.json": {
-      "hash": "e6c6eba7baa4dc93a1c7df429dc98590fc7b09c0e85a6f75367f38970c717653",
-      "last_checked": "2025-06-05T12:36:22.430520",
-      "status": "unchanged",
-      "etag": "W/\"7d399a2eb6bca16ce20f5c3aba2a8708\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_context": {
-      "hash": "e6c6eba7baa4dc93a1c7df429dc98590fc7b09c0e85a6f75367f38970c717653",
-      "last_checked": "2025-06-05T12:36:22.430520",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_drawable.json": {
-      "hash": "5b9a3af3044cca6b783d44a22a8fafcf90f6623bcd2db1da563f6a949b0ee446",
-      "last_checked": "2025-06-05T12:36:22.810942",
-      "status": "unchanged",
-      "etag": "W/\"8bb5b8146beacfcc7c02d9a352b20263\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_drawable": {
-      "hash": "5b9a3af3044cca6b783d44a22a8fafcf90f6623bcd2db1da563f6a949b0ee446",
-      "last_checked": "2025-06-05T12:36:22.810942",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_gdev.json": {
-      "hash": "824018f04ccd5b4b079654bf8e7951aca94cf56563c60463c4631fe6dc0e7ced",
-      "last_checked": "2025-06-05T12:36:23.182644",
-      "status": "unchanged",
-      "etag": "W/\"1a5f70a55d851387c30e737ed3d79f2d\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_gdev": {
-      "hash": "824018f04ccd5b4b079654bf8e7951aca94cf56563c60463c4631fe6dc0e7ced",
-      "last_checked": "2025-06-05T12:36:23.182644",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_state.json": {
-      "hash": "07e6aaf64eb32ff87d39045cefefd46422d50b9f3e7ba715e03dcc51f3d6aa64",
-      "last_checked": "2025-06-05T12:36:23.574445",
-      "status": "unchanged",
-      "etag": "W/\"43d01301ad4d895e1b6be3036da49fb1\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_state": {
-      "hash": "07e6aaf64eb32ff87d39045cefefd46422d50b9f3e7ba715e03dcc51f3d6aa64",
-      "last_checked": "2025-06-05T12:36:23.574445",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_value.json": {
-      "hash": "d30690c5b0cdebbcd6b2ccbfbd80dcde0adfb87a3d18879139be02894f972086",
-      "last_checked": "2025-06-05T12:36:23.941030",
-      "status": "unchanged",
-      "etag": "W/\"4eb96521623e839d4388bb5e9f41f6e4\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_value": {
-      "hash": "d30690c5b0cdebbcd6b2ccbfbd80dcde0adfb87a3d18879139be02894f972086",
-      "last_checked": "2025-06-05T12:36:23.941030",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_match.json": {
-      "hash": "fece6941f026ad04b00616fddbb58d9298a3d3d7e8e8756e150645f96ea8bc9f",
-      "last_checked": "2025-06-05T12:36:24.316873",
-      "status": "unchanged",
-      "etag": "W/\"e9082cdab0dce003bbb3415101e37841\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_match": {
-      "hash": "fece6941f026ad04b00616fddbb58d9298a3d3d7e8e8756e150645f96ea8bc9f",
-      "last_checked": "2025-06-05T12:36:24.316873",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_enum.json": {
-      "hash": "d5267b86971397fc8ed2007e2afcae7214dc32f9284e17cd2d02817b8d905d27",
-      "last_checked": "2025-06-05T12:36:24.707375",
-      "status": "unchanged",
-      "etag": "W/\"0d37f2ab61c7f9895cc94d9172548f5f\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_enum": {
-      "hash": "d5267b86971397fc8ed2007e2afcae7214dc32f9284e17cd2d02817b8d905d27",
-      "last_checked": "2025-06-05T12:36:24.707375",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_offscreen.json": {
-      "hash": "f7fbb0a3407da19b407ccd346fbfc92ba49978f93325a6231b5ea1a1e7d4cab4",
-      "last_checked": "2025-06-05T12:36:25.103139",
-      "status": "unchanged",
-      "etag": "W/\"91575e9ee64bd75e07f0676bbf20a889\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_offscreen": {
-      "hash": "f7fbb0a3407da19b407ccd346fbfc92ba49978f93325a6231b5ea1a1e7d4cab4",
-      "last_checked": "2025-06-05T12:36:25.103139",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_fullscreen.json": {
-      "hash": "d25f454a819feeaad4186f4888d301d4fc60e5b436351a782af7c2f77d4979c4",
-      "last_checked": "2025-06-05T12:36:25.522799",
-      "status": "unchanged",
-      "etag": "W/\"4bd909dc86cfd5670f0a9bce9bdce236\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_fullscreen": {
-      "hash": "d25f454a819feeaad4186f4888d301d4fc60e5b436351a782af7c2f77d4979c4",
-      "last_checked": "2025-06-05T12:36:25.522799",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_window.json": {
-      "hash": "1f714b38c87a1996052fc30b5229096d8191f30ba9451a98d60a92cf8598baa1",
-      "last_checked": "2025-06-05T12:36:25.934660",
-      "status": "unchanged",
-      "etag": "W/\"06c3780f9d05d68b12d40ebc07eca2f7\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_window": {
-      "hash": "1f714b38c87a1996052fc30b5229096d8191f30ba9451a98d60a92cf8598baa1",
-      "last_checked": "2025-06-05T12:36:25.934660",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_pointer.json": {
-      "hash": "7e258f6bf3d626010c2c8f9ee71fd2f62528f266d24f5c5c65c6ede12a30e4ab",
-      "last_checked": "2025-06-05T12:36:26.283043",
-      "status": "unchanged",
-      "etag": "W/\"9da27a155bc926ae44008e75df534349\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_pointer": {
-      "hash": "7e258f6bf3d626010c2c8f9ee71fd2f62528f266d24f5c5c65c6ede12a30e4ab",
-      "last_checked": "2025-06-05T12:36:26.283043",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_module.json": {
-      "hash": "8466bdfaf3ab9191a1eb9e8f25d8b157162ac0619dc65853b4dab4259aafb0b9",
-      "last_checked": "2025-06-05T12:36:26.638608",
-      "status": "unchanged",
-      "etag": "W/\"fa43b461e33a0083d4af333557b718a4\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_module": {
-      "hash": "8466bdfaf3ab9191a1eb9e8f25d8b157162ac0619dc65853b4dab4259aafb0b9",
-      "last_checked": "2025-06-05T12:36:26.638608",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_alloc.json": {
-      "hash": "dc82f3cd5771892cd5d5d842ea3cee3e7934e94aec656e07fbff21e6c57ddbb1",
-      "last_checked": "2025-06-05T12:36:27.033005",
-      "status": "unchanged",
-      "etag": "W/\"30d6978e17724c2d3ae933a7f29239a5\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_alloc": {
-      "hash": "dc82f3cd5771892cd5d5d842ea3cee3e7934e94aec656e07fbff21e6c57ddbb1",
-      "last_checked": "2025-06-05T12:36:27.033005",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_bad_connection.json": {
-      "hash": "7c794891aec81e4bd32da97d139f864d70cf95f52f4cca907ff9af9eb065748f",
-      "last_checked": "2025-06-05T12:36:27.421226",
-      "status": "unchanged",
-      "etag": "W/\"1610c8b176a4d870c050e95dba4b501e\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_bad_connection": {
-      "hash": "7c794891aec81e4bd32da97d139f864d70cf95f52f4cca907ff9af9eb065748f",
-      "last_checked": "2025-06-05T12:36:27.421226",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/globally-configured-options.json": {
-      "hash": "1b8c1b59c22899ffcf854b455120bd76334c202984f62b7b76ab321c8286a35c",
-      "last_checked": "2025-06-05T12:36:27.771209",
-      "status": "unchanged",
-      "etag": "W/\"cf20ee0405f480bd237ba873579cd838\""
-    },
-    "https://developer.apple.com/documentation/agl/globally-configured-options": {
-      "hash": "1b8c1b59c22899ffcf854b455120bd76334c202984f62b7b76ab321c8286a35c",
-      "last_checked": "2025-06-05T12:36:27.771209",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_format_cache_size.json": {
-      "hash": "36ade368f49974528f18a9fef44dd8af6e95900c7df7595e053a446f5b1f0280",
-      "last_checked": "2025-06-05T12:36:28.159495",
-      "status": "unchanged",
-      "etag": "W/\"f909179e29ee50afde3f5b52554db77e\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_format_cache_size": {
-      "hash": "36ade368f49974528f18a9fef44dd8af6e95900c7df7595e053a446f5b1f0280",
-      "last_checked": "2025-06-05T12:36:28.159495",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_clear_format_cache.json": {
-      "hash": "1d4eaa773a51c2c33be43b6e1bbc9d6972788c8653e69e7f501cea3072a884de",
-      "last_checked": "2025-06-05T12:36:28.527579",
-      "status": "unchanged",
-      "etag": "W/\"d2116cdec924925d5d77b27f99d349bf\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_clear_format_cache": {
-      "hash": "1d4eaa773a51c2c33be43b6e1bbc9d6972788c8653e69e7f501cea3072a884de",
-      "last_checked": "2025-06-05T12:36:28.527579",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_retain_renderers.json": {
-      "hash": "b3e3c8c24eed6cc652dd49b7cb6ea6428bbda09c7f7017e7d7cb8b54b3a2fc4d",
-      "last_checked": "2025-06-05T12:36:28.891033",
-      "status": "unchanged",
-      "etag": "W/\"c1635b561cc036fa762e19662faefd22\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_retain_renderers": {
-      "hash": "b3e3c8c24eed6cc652dd49b7cb6ea6428bbda09c7f7017e7d7cb8b54b3a2fc4d",
-      "last_checked": "2025-06-05T12:36:28.891033",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/renderer-attributes.json": {
-      "hash": "b83bab8b6c8942efc50bc0aab568deace9b12a044d627f1dfdf48e856645689d",
-      "last_checked": "2025-06-05T12:36:29.396602",
-      "status": "unchanged",
-      "etag": "W/\"d21708a79d435b54477ab9104be67d4a\""
-    },
-    "https://developer.apple.com/documentation/agl/renderer-attributes": {
-      "hash": "b83bab8b6c8942efc50bc0aab568deace9b12a044d627f1dfdf48e856645689d",
-      "last_checked": "2025-06-05T12:36:29.396602",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_renderer_id.json": {
-      "hash": "16ef18a8724eccbb484c554a86950286d742abdb529420817c04a5de6a0ef1f5",
-      "last_checked": "2025-06-05T12:36:29.927004",
-      "status": "unchanged",
-      "etag": "W/\"83fbf2c41e6ff93d2a50796e8a5836d7\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_renderer_id": {
-      "hash": "16ef18a8724eccbb484c554a86950286d742abdb529420817c04a5de6a0ef1f5",
-      "last_checked": "2025-06-05T12:36:29.927004",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_single_renderer.json": {
-      "hash": "60104d39a4dfe8dbf7ca5bc13c2a8ba13ac713c1ef52cf84443dfadf2c8c4201",
-      "last_checked": "2025-06-05T12:36:30.332484",
-      "status": "unchanged",
-      "etag": "W/\"1c4eeb51388a8c03aef083bae3d1796a\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_single_renderer": {
-      "hash": "60104d39a4dfe8dbf7ca5bc13c2a8ba13ac713c1ef52cf84443dfadf2c8c4201",
-      "last_checked": "2025-06-05T12:36:30.332484",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_no_recovery.json": {
-      "hash": "edd2afc639c4febed17174737ac9d027e4a16bb0c2dd1b9fa89f30616d0c29a2",
-      "last_checked": "2025-06-05T12:36:30.849548",
-      "status": "unchanged",
-      "etag": "W/\"e081c658abbb7b216fe93ce33256205b\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_no_recovery": {
-      "hash": "edd2afc639c4febed17174737ac9d027e4a16bb0c2dd1b9fa89f30616d0c29a2",
-      "last_checked": "2025-06-05T12:36:30.849548",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_accelerated.json": {
-      "hash": "f76e621c33ecdeb08f261a84d365ef4239051e007169d0c372ea59a5f16a0646",
-      "last_checked": "2025-06-05T12:36:31.499481",
-      "status": "unchanged",
-      "etag": "W/\"e683633030b51571cd836ff12ed2f7bf\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_accelerated": {
-      "hash": "f76e621c33ecdeb08f261a84d365ef4239051e007169d0c372ea59a5f16a0646",
-      "last_checked": "2025-06-05T12:36:31.499481",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_closest_policy.json": {
-      "hash": "6279136aff5253ec21d218e74e26e1931d7bca67c5b83e8da17a34499f81f564",
-      "last_checked": "2025-06-05T12:36:32.230542",
-      "status": "unchanged",
-      "etag": "W/\"af4c2a42872cca3a881464ff79e78b0e\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_closest_policy": {
-      "hash": "6279136aff5253ec21d218e74e26e1931d7bca67c5b83e8da17a34499f81f564",
-      "last_checked": "2025-06-05T12:36:32.230542",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_robust.json": {
-      "hash": "aab6ce949aebd5b340e918d5bce9dbf2db4c63f5318349d9c52629eab77c807d",
-      "last_checked": "2025-06-05T12:36:32.746536",
-      "status": "unchanged",
-      "etag": "W/\"ec5707ce54ed468237819168ca2eb1c5\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_robust": {
-      "hash": "aab6ce949aebd5b340e918d5bce9dbf2db4c63f5318349d9c52629eab77c807d",
-      "last_checked": "2025-06-05T12:36:32.746536",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_backing_store.json": {
-      "hash": "d19c2afb8cb192fe04ea3ba9aa8f2fbf5030ff1650f4c0e775ea1373afef41a3",
-      "last_checked": "2025-06-05T12:36:33.366644",
-      "status": "unchanged",
-      "etag": "W/\"3f6149af8bdf5a4ec97d530592a0a3a6\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_backing_store": {
-      "hash": "d19c2afb8cb192fe04ea3ba9aa8f2fbf5030ff1650f4c0e775ea1373afef41a3",
-      "last_checked": "2025-06-05T12:36:33.366644",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_mp_safe.json": {
-      "hash": "2a33b13b8c2760a2a05183c8f9c5fc4c9b729f77349036699b79df009da2bd27",
-      "last_checked": "2025-06-05T12:36:33.763632",
-      "status": "unchanged",
-      "etag": "W/\"b23599d1d3cb468a7da5bda3ff40a2de\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_mp_safe": {
-      "hash": "2a33b13b8c2760a2a05183c8f9c5fc4c9b729f77349036699b79df009da2bd27",
-      "last_checked": "2025-06-05T12:36:33.763632",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_window.json": {
-      "hash": "961ee2dd35fe8a6d9818607eaa6ab29bc15009aecc5598969d868c4ceb317ef0",
-      "last_checked": "2025-06-05T12:36:34.222007",
-      "status": "unchanged",
-      "etag": "W/\"818787d5a97d5e3288f08d1c830988f5\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_window": {
-      "hash": "961ee2dd35fe8a6d9818607eaa6ab29bc15009aecc5598969d868c4ceb317ef0",
-      "last_checked": "2025-06-05T12:36:34.222007",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_multiscreen.json": {
-      "hash": "9a4ce9d34fe53736cf1398fdb7853b03802e926b05af554b9ce1dad4f039983f",
-      "last_checked": "2025-06-05T12:36:34.720067",
-      "status": "unchanged",
-      "etag": "W/\"1d01adcce6b6ffe23573b93a2f9d335e\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_multiscreen": {
-      "hash": "9a4ce9d34fe53736cf1398fdb7853b03802e926b05af554b9ce1dad4f039983f",
-      "last_checked": "2025-06-05T12:36:34.720067",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_virtual_screen.json": {
-      "hash": "662d7d65e930d79102b750016d237481befb437cecb02425ee1bbd5f16bd9203",
-      "last_checked": "2025-06-05T12:36:35.114602",
-      "status": "unchanged",
-      "etag": "W/\"c720a4d38189bbb76214f709aa9f7006\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_virtual_screen": {
-      "hash": "662d7d65e930d79102b750016d237481befb437cecb02425ee1bbd5f16bd9203",
-      "last_checked": "2025-06-05T12:36:35.114602",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_compliant.json": {
-      "hash": "bd5bb08be78f5ae161ccebd95d6e34408860f117ed2f9f657b90a89357f87059",
-      "last_checked": "2025-06-05T12:36:35.623912",
-      "status": "unchanged",
-      "etag": "W/\"f25de970ab7880b7c19ddf00c0ed10ec\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_compliant": {
-      "hash": "bd5bb08be78f5ae161ccebd95d6e34408860f117ed2f9f657b90a89357f87059",
-      "last_checked": "2025-06-05T12:36:35.623912",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_pbuffer.json": {
-      "hash": "08330cce3ad3c5888bcaaef3b5f2ef30ffb2d1f368e03cf0ef22d145014f0a46",
-      "last_checked": "2025-06-05T12:36:36.051346",
-      "status": "unchanged",
-      "etag": "W/\"96bd90708e5935d04c578364b2990474\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_pbuffer": {
-      "hash": "08330cce3ad3c5888bcaaef3b5f2ef30ffb2d1f368e03cf0ef22d145014f0a46",
-      "last_checked": "2025-06-05T12:36:36.051346",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_remote_pbuffer.json": {
-      "hash": "ae9d01334f93fc40888ad1a71491bb0b4466b5e961607423ccfe40d027c4a164",
-      "last_checked": "2025-06-05T12:36:36.487174",
-      "status": "unchanged",
-      "etag": "W/\"645164e9813909070623f69cb061aed5\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_remote_pbuffer": {
-      "hash": "ae9d01334f93fc40888ad1a71491bb0b4466b5e961607423ccfe40d027c4a164",
-      "last_checked": "2025-06-05T12:36:36.487174",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/renderer-ids.json": {
-      "hash": "784f9875cfe41b0ea3517cfbf9ad57389a6cb9e467afa5c5bd957fc63a585eed",
-      "last_checked": "2025-06-05T12:36:36.861869",
-      "status": "unchanged",
-      "etag": "W/\"da7f5d0adebeccc04dd9d19676536038\""
-    },
-    "https://developer.apple.com/documentation/agl/renderer-ids": {
-      "hash": "784f9875cfe41b0ea3517cfbf9ad57389a6cb9e467afa5c5bd957fc63a585eed",
-      "last_checked": "2025-06-05T12:36:36.861869",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/renderer-properties.json": {
-      "hash": "13670e8657350b86706620706fc2f5a7c18e9f9a5c7abc94509900a0b6e9c829",
-      "last_checked": "2025-06-05T12:36:37.273028",
-      "status": "unchanged",
-      "etag": "W/\"8d3f127be8f38b5406efcce2a589164d\""
-    },
-    "https://developer.apple.com/documentation/agl/renderer-properties": {
-      "hash": "13670e8657350b86706620706fc2f5a7c18e9f9a5c7abc94509900a0b6e9c829",
-      "last_checked": "2025-06-05T12:36:37.273028",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_buffer_modes.json": {
-      "hash": "c8bf471ed7ec5871ffec7977b04205d85c79b99714e420fd9b4bc0cc36e8668d",
-      "last_checked": "2025-06-05T12:36:37.697976",
-      "status": "unchanged",
-      "etag": "W/\"8f8de75e294d43fb5828da10e112803b\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_buffer_modes": {
-      "hash": "c8bf471ed7ec5871ffec7977b04205d85c79b99714e420fd9b4bc0cc36e8668d",
-      "last_checked": "2025-06-05T12:36:37.697976",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_min_level.json": {
-      "hash": "e722e687328d0c080dee4c91a4e8bf00b033899d83a7b3801eb5ff51be7605c9",
-      "last_checked": "2025-06-05T12:36:38.081211",
-      "status": "unchanged",
-      "etag": "W/\"cb2316834448867eda54d5a9134e4850\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_min_level": {
-      "hash": "e722e687328d0c080dee4c91a4e8bf00b033899d83a7b3801eb5ff51be7605c9",
-      "last_checked": "2025-06-05T12:36:38.081211",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_max_level.json": {
-      "hash": "9d0c096af00342470808223c974e7df481f3311e9f3f3440d076752485a557ad",
-      "last_checked": "2025-06-05T12:36:38.486926",
-      "status": "unchanged",
-      "etag": "W/\"d66507251749ecdaf0078e5d91cfea15\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_max_level": {
-      "hash": "9d0c096af00342470808223c974e7df481f3311e9f3f3440d076752485a557ad",
-      "last_checked": "2025-06-05T12:36:38.486926",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_color_modes.json": {
-      "hash": "179c23bf29a69c3583cef2377ef2347c39d2e732c8880e99e582baf6fdb3c7fb",
-      "last_checked": "2025-06-05T12:36:38.922062",
-      "status": "unchanged",
-      "etag": "W/\"2073c019c90df133625c7aa97f9abebf\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_color_modes": {
-      "hash": "179c23bf29a69c3583cef2377ef2347c39d2e732c8880e99e582baf6fdb3c7fb",
-      "last_checked": "2025-06-05T12:36:38.922062",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_accum_modes.json": {
-      "hash": "c07ab2539da3d9c8cf3ce306428564c105b566c890a26f82f6520d32c353d35f",
-      "last_checked": "2025-06-05T12:36:39.431910",
-      "status": "unchanged",
-      "etag": "W/\"90e383cf972ffdfee6b5a5bbf32afd1c\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_accum_modes": {
-      "hash": "c07ab2539da3d9c8cf3ce306428564c105b566c890a26f82f6520d32c353d35f",
-      "last_checked": "2025-06-05T12:36:39.431910",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_depth_modes.json": {
-      "hash": "43e42d2f2eedf125f152d34d948b236ad034ea8eaef735c4888fb080a284354a",
-      "last_checked": "2025-06-05T12:36:39.886057",
-      "status": "unchanged",
-      "etag": "W/\"9d1a4af29b8ea7c92a2bd2d17f94001e\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_depth_modes": {
-      "hash": "43e42d2f2eedf125f152d34d948b236ad034ea8eaef735c4888fb080a284354a",
-      "last_checked": "2025-06-05T12:36:39.886057",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_stencil_modes.json": {
-      "hash": "30153094473898760d8fe68c993a53d85d26b9232e96e2eabc536144b722f680",
-      "last_checked": "2025-06-05T12:36:40.310297",
-      "status": "unchanged",
-      "etag": "W/\"7e469d249ddef0aae0afb9cba9d05d58\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_stencil_modes": {
-      "hash": "30153094473898760d8fe68c993a53d85d26b9232e96e2eabc536144b722f680",
-      "last_checked": "2025-06-05T12:36:40.310297",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_max_aux_buffers.json": {
-      "hash": "bb6291e27df6828680f0f35ddce2b0ab1965bbf0db82435960a5ffaddd1aa0fa",
-      "last_checked": "2025-06-05T12:36:40.694249",
-      "status": "unchanged",
-      "etag": "W/\"98eb9687d610b155320acaa1f31115f3\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_max_aux_buffers": {
-      "hash": "bb6291e27df6828680f0f35ddce2b0ab1965bbf0db82435960a5ffaddd1aa0fa",
-      "last_checked": "2025-06-05T12:36:40.694249",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_video_memory.json": {
-      "hash": "f3906906e10f2b8d89f9ae5d5f66c1214c1ec5664a4587f9667356b2c187a736",
-      "last_checked": "2025-06-05T12:36:41.069503",
-      "status": "unchanged",
-      "etag": "W/\"015ad2d288817920d79c1a426063d3ae\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_video_memory": {
-      "hash": "f3906906e10f2b8d89f9ae5d5f66c1214c1ec5664a4587f9667356b2c187a736",
-      "last_checked": "2025-06-05T12:36:41.069503",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_texture_memory.json": {
-      "hash": "244bae0a0be8a76d135a65b96579645b443306957f3277248dad824151c5a0cd",
-      "last_checked": "2025-06-05T12:36:41.482765",
-      "status": "unchanged",
-      "etag": "W/\"f7aeb034878da07c718bdddd72b2e474\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_texture_memory": {
-      "hash": "244bae0a0be8a76d135a65b96579645b443306957f3277248dad824151c5a0cd",
-      "last_checked": "2025-06-05T12:36:41.482765",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_renderer_count.json": {
-      "hash": "d6c9dd569dbcf5621d7d733beed18df661078a7d1681d1472537cd656d3e3fa1",
-      "last_checked": "2025-06-05T12:36:41.892105",
-      "status": "unchanged",
-      "etag": "W/\"4f061b479fcc931c9f8003e99b91e60b\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_renderer_count": {
-      "hash": "d6c9dd569dbcf5621d7d733beed18df661078a7d1681d1472537cd656d3e3fa1",
-      "last_checked": "2025-06-05T12:36:41.892105",
-      "status": "unchanged"
+      "hash": "89d3c049a8c3b81da2e6be59e73945c2731085478c5c4f2d028f315d4d136ee7",
+      "last_checked": "2025-06-10T21:43:41.917460",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"71633baf4730d9017dd1f40cf80336af\"",
+      "file_path": "documentation/AGL/agl-collection.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/agl/agl-constants.json": {
-      "hash": "e70e101e046a2c770a5841cd7a775f7ddd002bb453885ed9433b2bd420f20521",
-      "last_checked": "2025-06-05T12:36:42.271955",
-      "status": "unchanged",
-      "etag": "W/\"4425644ae3d7aec17453be6eac273832\""
+      "hash": "8c20f166bafce5381e154050669aeac72412f91915083f59080a7afe2027b744",
+      "last_checked": "2025-06-10T21:43:42.300099",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"c5fc5a5fbf070978a938f0768f7e160c\"",
+      "file_path": "documentation/AGL/agl-constants.md"
     },
     "https://developer.apple.com/documentation/agl/agl-constants": {
-      "hash": "e70e101e046a2c770a5841cd7a775f7ddd002bb453885ed9433b2bd420f20521",
-      "last_checked": "2025-06-05T12:36:42.271955",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_allow_offline_renderers.json": {
-      "hash": "34869273f9245fbf976b7ebd4776faa34270ddddb667c6e22308150a2ac442ad",
-      "last_checked": "2025-06-05T12:36:42.897324",
-      "status": "unchanged",
-      "etag": "W/\"f9336ed867a47141638ee992727123ab\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_allow_offline_renderers": {
-      "hash": "34869273f9245fbf976b7ebd4776faa34270ddddb667c6e22308150a2ac442ad",
-      "last_checked": "2025-06-05T12:36:42.897324",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_display_mask.json": {
-      "hash": "a5b2e6d7649aadd35106193228680f4e7f1b409cdf24528c60835b54e90505fa",
-      "last_checked": "2025-06-05T12:36:43.314608",
-      "status": "unchanged",
-      "etag": "W/\"1e11b9d3cd73ae20d5f8424e7ad8169e\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_display_mask": {
-      "hash": "a5b2e6d7649aadd35106193228680f4e7f1b409cdf24528c60835b54e90505fa",
-      "last_checked": "2025-06-05T12:36:43.314608",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_invalid_function.json": {
-      "hash": "4a816ea7bb3dca071fd20754a92e9862ed4717d5db215f17014eb9fb90e23fea",
-      "last_checked": "2025-06-05T12:36:43.702005",
-      "status": "unchanged",
-      "etag": "W/\"eb552652fc724ce8212c379cf184fbb9\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_invalid_function": {
-      "hash": "4a816ea7bb3dca071fd20754a92e9862ed4717d5db215f17014eb9fb90e23fea",
-      "last_checked": "2025-06-05T12:36:43.702005",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl_version_3_0.json": {
-      "hash": "869982b46a058b16bcb537af1b9b69cd3e0b8dc71ba34e739900bb5c045cfa69",
-      "last_checked": "2025-06-05T12:36:44.132417",
-      "status": "unchanged",
-      "etag": "W/\"2a65896319cc5e5253d5ba6b22015c26\""
-    },
-    "https://developer.apple.com/documentation/agl/agl_version_3_0": {
-      "hash": "869982b46a058b16bcb537af1b9b69cd3e0b8dc71ba34e739900bb5c045cfa69",
-      "last_checked": "2025-06-05T12:36:44.132417",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/agl-functions.json": {
-      "hash": "d1812fb4d0a593ebd46e745a3a6e365fd0db56f63e1ac542dc2de21176493c9f",
-      "last_checked": "2025-06-05T12:36:44.554513",
-      "status": "unchanged",
-      "etag": "W/\"83c24a7f69d8c7f9741015e38334df5c\""
-    },
-    "https://developer.apple.com/documentation/agl/agl-functions": {
-      "hash": "d1812fb4d0a593ebd46e745a3a6e365fd0db56f63e1ac542dc2de21176493c9f",
-      "last_checked": "2025-06-05T12:36:44.554513",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/aglsetwindowref.json": {
-      "hash": "35d946c0f6950913e00f1ed1b254ca3508a5d92791128aefa7c4d27c9e994bea",
-      "last_checked": "2025-06-05T12:36:44.998516",
-      "status": "unchanged",
-      "etag": "W/\"2d56e5edae7c5a2f835e6cf26a5ce1ff\""
-    },
-    "https://developer.apple.com/documentation/agl/aglsetwindowref": {
-      "hash": "35d946c0f6950913e00f1ed1b254ca3508a5d92791128aefa7c4d27c9e994bea",
-      "last_checked": "2025-06-05T12:36:44.998516",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/aglgetwindowref.json": {
-      "hash": "31fafe53523a05a97078ab5f13fd200ad2cb33ce3bccf272608d2d17df52bcc0",
-      "last_checked": "2025-06-05T12:36:45.404932",
-      "status": "unchanged",
-      "etag": "W/\"04d9517c7a48680ebcb97939c2344a4d\""
-    },
-    "https://developer.apple.com/documentation/agl/aglgetwindowref": {
-      "hash": "31fafe53523a05a97078ab5f13fd200ad2cb33ce3bccf272608d2d17df52bcc0",
-      "last_checked": "2025-06-05T12:36:45.404932",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmcalloc.json": {
-      "hash": "75094e6a062152fde32bfab659e87503cc29f6f52abd3b33f37ceeb007824216",
-      "last_checked": "2025-06-05T12:36:45.828756",
-      "status": "unchanged",
-      "etag": "W/\"8cddf2e3c7f91ac49a6d54c178e5e051\""
-    },
-    "https://developer.apple.com/documentation/agl/glmcalloc": {
-      "hash": "75094e6a062152fde32bfab659e87503cc29f6f52abd3b33f37ceeb007824216",
-      "last_checked": "2025-06-05T12:36:45.828756",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmcopy.json": {
-      "hash": "d12ffc103c1202f70542c7bd5ef359f1537f16e927eca2d848d54f1683a730fd",
-      "last_checked": "2025-06-05T12:36:46.218252",
-      "status": "unchanged",
-      "etag": "W/\"b78fb0289a68ee5203a1e5098a39f2b7\""
-    },
-    "https://developer.apple.com/documentation/agl/glmcopy": {
-      "hash": "d12ffc103c1202f70542c7bd5ef359f1537f16e927eca2d848d54f1683a730fd",
-      "last_checked": "2025-06-05T12:36:46.218252",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmdcballoc.json": {
-      "hash": "f402d12114c1f989be1dea124e459eefb47a5f68901eadcb8d6f75d7956211a4",
-      "last_checked": "2025-06-05T12:36:46.659395",
-      "status": "unchanged",
-      "etag": "W/\"74f8756fe6d2c9d094ccb927a0a3dbe8\""
-    },
-    "https://developer.apple.com/documentation/agl/glmdcballoc": {
-      "hash": "f402d12114c1f989be1dea124e459eefb47a5f68901eadcb8d6f75d7956211a4",
-      "last_checked": "2025-06-05T12:36:46.659395",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmdcbfree.json": {
-      "hash": "3b336449782b8e518dee073b861f151e35bf1940d527f3e87cf10c839260bd7d",
-      "last_checked": "2025-06-05T12:36:47.035090",
-      "status": "unchanged",
-      "etag": "W/\"00575229876a163fec1070ec14d73784\""
-    },
-    "https://developer.apple.com/documentation/agl/glmdcbfree": {
-      "hash": "3b336449782b8e518dee073b861f151e35bf1940d527f3e87cf10c839260bd7d",
-      "last_checked": "2025-06-05T12:36:47.035090",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmfree.json": {
-      "hash": "5df288ef80b572da247a9b910a8fd7115ac89710c07db4cfa0561129589ecd9f",
-      "last_checked": "2025-06-05T12:36:47.482702",
-      "status": "unchanged",
-      "etag": "W/\"fc9f5d600bef160c62dd75c1395dc862\""
-    },
-    "https://developer.apple.com/documentation/agl/glmfree": {
-      "hash": "5df288ef80b572da247a9b910a8fd7115ac89710c07db4cfa0561129589ecd9f",
-      "last_checked": "2025-06-05T12:36:47.482702",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmgeterror.json": {
-      "hash": "d55bd74584065dc28323910c2979cce37928bcfa484e0528bcb4f3f372ad4e2f",
-      "last_checked": "2025-06-05T12:36:47.887365",
-      "status": "unchanged",
-      "etag": "W/\"1608b65cb1d85ebb80ba60a392a8af3d\""
-    },
-    "https://developer.apple.com/documentation/agl/glmgeterror": {
-      "hash": "d55bd74584065dc28323910c2979cce37928bcfa484e0528bcb4f3f372ad4e2f",
-      "last_checked": "2025-06-05T12:36:47.887365",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmgetinteger.json": {
-      "hash": "5ef0328632a7d1aa3af698d48ac43ca9503c6defdaca7caeeb2e190768c412e3",
-      "last_checked": "2025-06-05T12:36:48.323311",
-      "status": "unchanged",
-      "etag": "W/\"bec78a62e194bbb505ed807acab62670\""
-    },
-    "https://developer.apple.com/documentation/agl/glmgetinteger": {
-      "hash": "5ef0328632a7d1aa3af698d48ac43ca9503c6defdaca7caeeb2e190768c412e3",
-      "last_checked": "2025-06-05T12:36:48.323311",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmmalloc.json": {
-      "hash": "9800465bc9abfcc5a0e3d08ab69e20241ac8efb5fcd7108991c53cafef795695",
-      "last_checked": "2025-06-05T12:36:48.760551",
-      "status": "unchanged",
-      "etag": "W/\"fcee4e55e5059668df0202acc5990851\""
-    },
-    "https://developer.apple.com/documentation/agl/glmmalloc": {
-      "hash": "9800465bc9abfcc5a0e3d08ab69e20241ac8efb5fcd7108991c53cafef795695",
-      "last_checked": "2025-06-05T12:36:48.760551",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmpagefreeall.json": {
-      "hash": "bf79c3f1334448c071310e3126f73272cbe060b59bd6095b081f56da061ecbd4",
-      "last_checked": "2025-06-05T12:36:49.141911",
-      "status": "unchanged",
-      "etag": "W/\"1c1c4967b4021f2ed735c827cbcbd937\""
-    },
-    "https://developer.apple.com/documentation/agl/glmpagefreeall": {
-      "hash": "bf79c3f1334448c071310e3126f73272cbe060b59bd6095b081f56da061ecbd4",
-      "last_checked": "2025-06-05T12:36:49.141911",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmrealloc.json": {
-      "hash": "cb3494fc0f175c42d01487763161a4f8ddba1826dce7207a9969ffec10465908",
-      "last_checked": "2025-06-05T12:36:49.582475",
-      "status": "unchanged",
-      "etag": "W/\"ca90e6b8cfc1c5486f521b9703cdd97b\""
-    },
-    "https://developer.apple.com/documentation/agl/glmrealloc": {
-      "hash": "cb3494fc0f175c42d01487763161a4f8ddba1826dce7207a9969ffec10465908",
-      "last_checked": "2025-06-05T12:36:49.582475",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmsetdouble.json": {
-      "hash": "d53fd63a17e73ea252a88a4779a4c129cc03f79bacbf26c71c77f369ab9a6f05",
-      "last_checked": "2025-06-05T12:36:50.003665",
-      "status": "unchanged",
-      "etag": "W/\"a624f440d75ef1c8df9124893ad55113\""
-    },
-    "https://developer.apple.com/documentation/agl/glmsetdouble": {
-      "hash": "d53fd63a17e73ea252a88a4779a4c129cc03f79bacbf26c71c77f369ab9a6f05",
-      "last_checked": "2025-06-05T12:36:50.003665",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmsetfunc.json": {
-      "hash": "1892983867c21f30b0b0d39907b2ffb0b2b000848757beb54f3a0b8661e6fd2c",
-      "last_checked": "2025-06-05T12:36:50.413209",
-      "status": "unchanged",
-      "etag": "W/\"47f1aae4feca841921d2c2d0260fd21e\""
-    },
-    "https://developer.apple.com/documentation/agl/glmsetfunc": {
-      "hash": "1892983867c21f30b0b0d39907b2ffb0b2b000848757beb54f3a0b8661e6fd2c",
-      "last_checked": "2025-06-05T12:36:50.413209",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmsetinteger.json": {
-      "hash": "8fc9e8ead34cf59bef396ec1a0856e18d414537cb7b7eb139c707d5541f54801",
-      "last_checked": "2025-06-05T12:36:50.797495",
-      "status": "unchanged",
-      "etag": "W/\"1617fbee287eb50473aae611b1cbe3dd\""
-    },
-    "https://developer.apple.com/documentation/agl/glmsetinteger": {
-      "hash": "8fc9e8ead34cf59bef396ec1a0856e18d414537cb7b7eb139c707d5541f54801",
-      "last_checked": "2025-06-05T12:36:50.797495",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmsetmode.json": {
-      "hash": "03f41d03d4a94d61fa834157b3a85ab499eba30ced3a8d7f4ac891ac0af9c662",
-      "last_checked": "2025-06-05T12:36:51.209285",
-      "status": "unchanged",
-      "etag": "W/\"adfcdc9cfc8cd00e969f8db5e791e988\""
-    },
-    "https://developer.apple.com/documentation/agl/glmsetmode": {
-      "hash": "03f41d03d4a94d61fa834157b3a85ab499eba30ced3a8d7f4ac891ac0af9c662",
-      "last_checked": "2025-06-05T12:36:51.209285",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmsetubyte.json": {
-      "hash": "c151aab0c3d11e735a3ff1a43b9c6b36e5f011b66b77fb20fb576c352b255216",
-      "last_checked": "2025-06-05T12:36:51.625141",
-      "status": "unchanged",
-      "etag": "W/\"1c494ebf5dd418373a1b58aff373bd5a\""
-    },
-    "https://developer.apple.com/documentation/agl/glmsetubyte": {
-      "hash": "c151aab0c3d11e735a3ff1a43b9c6b36e5f011b66b77fb20fb576c352b255216",
-      "last_checked": "2025-06-05T12:36:51.625141",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmsetuint.json": {
-      "hash": "cc85a82095741b978d5a5775159367f151cb15f1238b629a89d2480129134c3b",
-      "last_checked": "2025-06-05T12:36:52.024184",
-      "status": "unchanged",
-      "etag": "W/\"a9e0402e534de5752e9fb07ba9dcfaab\""
-    },
-    "https://developer.apple.com/documentation/agl/glmsetuint": {
-      "hash": "cc85a82095741b978d5a5775159367f151cb15f1238b629a89d2480129134c3b",
-      "last_checked": "2025-06-05T12:36:52.024184",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmsetushort.json": {
-      "hash": "28b4030dc5970e0a1c357f8013e1072e18369e436d47fe3c25c84dcb9db9b1b8",
-      "last_checked": "2025-06-05T12:36:52.415519",
-      "status": "unchanged",
-      "etag": "W/\"00389374ace97f6f139f68ad45673334\""
-    },
-    "https://developer.apple.com/documentation/agl/glmsetushort": {
-      "hash": "28b4030dc5970e0a1c357f8013e1072e18369e436d47fe3c25c84dcb9db9b1b8",
-      "last_checked": "2025-06-05T12:36:52.415519",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmvecalloc.json": {
-      "hash": "1bdd086c5be407cc02cdbe9f15ee002ee1359d6e4d45aadeda27c7cecb928dc3",
-      "last_checked": "2025-06-05T12:36:52.854889",
-      "status": "unchanged",
-      "etag": "W/\"c3bbba2c92aa2c760c9c2287282214c7\""
-    },
-    "https://developer.apple.com/documentation/agl/glmvecalloc": {
-      "hash": "1bdd086c5be407cc02cdbe9f15ee002ee1359d6e4d45aadeda27c7cecb928dc3",
-      "last_checked": "2025-06-05T12:36:52.854889",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmvecfree.json": {
-      "hash": "8d278802c3d21623ff3d2bf4074a17e1823b5683107e0b381a53a331da0a19e5",
-      "last_checked": "2025-06-05T12:36:53.265322",
-      "status": "unchanged",
-      "etag": "W/\"533f32b0680a5453086793035b36630d\""
-    },
-    "https://developer.apple.com/documentation/agl/glmvecfree": {
-      "hash": "8d278802c3d21623ff3d2bf4074a17e1823b5683107e0b381a53a331da0a19e5",
-      "last_checked": "2025-06-05T12:36:53.265322",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmzero.json": {
-      "hash": "b9520a7452c29191d0611bdb4e26838c53c920679f232dabba2301921ec454f5",
-      "last_checked": "2025-06-05T12:36:53.643821",
-      "status": "unchanged",
-      "etag": "W/\"2fcb1ddc1b93a76d8ac79ff8151cb57e\""
-    },
-    "https://developer.apple.com/documentation/agl/glmzero": {
-      "hash": "b9520a7452c29191d0611bdb4e26838c53c920679f232dabba2301921ec454f5",
-      "last_checked": "2025-06-05T12:36:53.643821",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/gl-functions-and-macros.json": {
-      "hash": "3598eaf9d9f9f19bd4e7c334c7bb02dd9657578f794d75ce96b7c05497293668",
-      "last_checked": "2025-06-05T12:36:54.253984",
-      "status": "unchanged",
-      "etag": "W/\"6f1adb956c80cebe13f774fae482103f\""
-    },
-    "https://developer.apple.com/documentation/agl/gl-functions-and-macros": {
-      "hash": "3598eaf9d9f9f19bd4e7c334c7bb02dd9657578f794d75ce96b7c05497293668",
-      "last_checked": "2025-06-05T12:36:54.253984",
-      "status": "unchanged"
+      "hash": "8c20f166bafce5381e154050669aeac72412f91915083f59080a7afe2027b744",
+      "last_checked": "2025-06-10T21:43:42.300127",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"c5fc5a5fbf070978a938f0768f7e160c\"",
+      "file_path": "documentation/AGL/agl-constants.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/agl/agl-data-types.json": {
-      "hash": "efed525afd0c64823cde4cd9c25e126e3584efeecb4a41418e6ab95f2f7bec0d",
-      "last_checked": "2025-06-05T12:36:54.710080",
-      "status": "unchanged",
-      "etag": "W/\"2a6b637fa0ad49fbc767bed2c7205aa2\""
+      "hash": "20bd2717df1d15990912e90b17c742789d2d13b3c630174a7e868be84f925187",
+      "last_checked": "2025-06-10T21:43:42.413013",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"c4c74d133f3f243874bc89f793dcfa36\"",
+      "file_path": "documentation/AGL/agl-data-types.md"
     },
     "https://developer.apple.com/documentation/agl/agl-data-types": {
-      "hash": "efed525afd0c64823cde4cd9c25e126e3584efeecb4a41418e6ab95f2f7bec0d",
-      "last_checked": "2025-06-05T12:36:54.710080",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/aglprivate.json": {
-      "hash": "3c1167da9938439bf5ddbe1b1025cd4cfbac596d5dd6f569121f11a4c96ea93a",
-      "last_checked": "2025-06-05T12:36:55.118238",
-      "status": "unchanged",
-      "etag": "W/\"967a3b83891056efd927221135305635\""
-    },
-    "https://developer.apple.com/documentation/agl/aglprivate": {
-      "hash": "3c1167da9938439bf5ddbe1b1025cd4cfbac596d5dd6f569121f11a4c96ea93a",
-      "last_checked": "2025-06-05T12:36:55.118238",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmcopyfunc.json": {
-      "hash": "b8ed99c2adceb2051af5851ecfb757df9ca292cce5c0e1a1c1a699bff64800e1",
-      "last_checked": "2025-06-05T12:36:55.507934",
-      "status": "unchanged",
-      "etag": "W/\"e7be58119d9d361db8252fcaa0e2e5b9\""
-    },
-    "https://developer.apple.com/documentation/agl/glmcopyfunc": {
-      "hash": "b8ed99c2adceb2051af5851ecfb757df9ca292cce5c0e1a1c1a699bff64800e1",
-      "last_checked": "2025-06-05T12:36:55.507934",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmpageallocfunc.json": {
-      "hash": "24ead9a7fb43197bd2a5cdbcc6c4019702f2c41ed3e067d27559c0f9107bd496",
-      "last_checked": "2025-06-05T12:36:55.894209",
-      "status": "unchanged",
-      "etag": "W/\"cacf0919b8b439c57c4b7af67991cc09\""
-    },
-    "https://developer.apple.com/documentation/agl/glmpageallocfunc": {
-      "hash": "24ead9a7fb43197bd2a5cdbcc6c4019702f2c41ed3e067d27559c0f9107bd496",
-      "last_checked": "2025-06-05T12:36:55.894209",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmpagefreefunc.json": {
-      "hash": "af090d9f4ad751f410c5f684a5696f30f8b63955fae15436064842b5f80e5246",
-      "last_checked": "2025-06-05T12:36:56.274840",
-      "status": "unchanged",
-      "etag": "W/\"6e2c946e42d099c05d6793655a462b77\""
-    },
-    "https://developer.apple.com/documentation/agl/glmpagefreefunc": {
-      "hash": "af090d9f4ad751f410c5f684a5696f30f8b63955fae15436064842b5f80e5246",
-      "last_checked": "2025-06-05T12:36:56.274840",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmsetdoublefunc.json": {
-      "hash": "26e824c9e72f373420ac348b40ed350797da68e5c7da9701b4ab8ffb85a384fe",
-      "last_checked": "2025-06-05T12:36:56.675923",
-      "status": "unchanged",
-      "etag": "W/\"7f1b1db31e198c3208ba3ac7363946a8\""
-    },
-    "https://developer.apple.com/documentation/agl/glmsetdoublefunc": {
-      "hash": "26e824c9e72f373420ac348b40ed350797da68e5c7da9701b4ab8ffb85a384fe",
-      "last_checked": "2025-06-05T12:36:56.675923",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmsetubytefunc.json": {
-      "hash": "334329c22757832eec1cde2348209d946d9d89acb5defc55932622df224830e7",
-      "last_checked": "2025-06-05T12:36:57.096311",
-      "status": "unchanged",
-      "etag": "W/\"c3c64c3cd5cb578f342af6f3bc6a37d9\""
-    },
-    "https://developer.apple.com/documentation/agl/glmsetubytefunc": {
-      "hash": "334329c22757832eec1cde2348209d946d9d89acb5defc55932622df224830e7",
-      "last_checked": "2025-06-05T12:36:57.096311",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmsetuintfunc.json": {
-      "hash": "4ace07a74a7d719c5684bddd5c8133429162ac1a805ccd28dab9480197c7570f",
-      "last_checked": "2025-06-05T12:36:57.503461",
-      "status": "unchanged",
-      "etag": "W/\"4ec7b8cb9059b3716ecd014c9b69ff52\""
-    },
-    "https://developer.apple.com/documentation/agl/glmsetuintfunc": {
-      "hash": "4ace07a74a7d719c5684bddd5c8133429162ac1a805ccd28dab9480197c7570f",
-      "last_checked": "2025-06-05T12:36:57.503461",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmsetushortfunc.json": {
-      "hash": "d6b50775f1be66c2dd1de92f0c25e63debbc959b6c70e238cacf62b9f0b6d20d",
-      "last_checked": "2025-06-05T12:36:57.869454",
-      "status": "unchanged",
-      "etag": "W/\"02d3916a92d4537698a29e8e43d73b8f\""
-    },
-    "https://developer.apple.com/documentation/agl/glmsetushortfunc": {
-      "hash": "d6b50775f1be66c2dd1de92f0c25e63debbc959b6c70e238cacf62b9f0b6d20d",
-      "last_checked": "2025-06-05T12:36:57.869454",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/agl/glmzerofunc.json": {
-      "hash": "f6c37d1025d36aac481fb28565c28c36930aad636b0950af0a05410785f0029b",
-      "last_checked": "2025-06-05T12:36:58.262197",
-      "status": "unchanged",
-      "etag": "W/\"afd5e31aafb3744415ced4932627f537\""
-    },
-    "https://developer.apple.com/documentation/agl/glmzerofunc": {
-      "hash": "f6c37d1025d36aac481fb28565c28c36930aad636b0950af0a05410785f0029b",
-      "last_checked": "2025-06-05T12:36:58.262197",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/AGL/agl-collection.json": {
-      "hash": "d9fe85741d9c0124375d0ecc38739f5640a4e431dc6789b509711dc51e60e39a",
-      "last_checked": "2025-06-06T19:38:31.095734",
+      "hash": "20bd2717df1d15990912e90b17c742789d2d13b3c630174a7e868be84f925187",
+      "last_checked": "2025-06-10T21:43:42.413041",
       "status": "new",
-      "etag": "W/\"938d8c41c822db808161a1a766a7db40\""
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"c4c74d133f3f243874bc89f793dcfa36\"",
+      "file_path": "documentation/AGL/agl-data-types.md"
     },
-    "https://developer.apple.com/documentation/AGL/agl-collection": {
-      "hash": "b6d7ca54ecd674f9c2f3704065783c34f39bd4e8f7cd043a6d52016084aa266c",
-      "last_checked": "2025-06-06T19:38:31.095926",
-      "status": "unchanged"
+    "https://developer.apple.com/tutorials/data/documentation/agl/agl-functions.json": {
+      "hash": "79c22d3b4be19fbcf7a7e03205626d9de30f8359e05fbaa54915285572c2756d",
+      "last_checked": "2025-06-10T21:43:42.551874",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"d75e9ff38b820b4a3b4496623fb91b6f\"",
+      "file_path": "documentation/AGL/agl-functions.md"
+    },
+    "https://developer.apple.com/documentation/agl/agl-functions": {
+      "hash": "79c22d3b4be19fbcf7a7e03205626d9de30f8359e05fbaa54915285572c2756d",
+      "last_checked": "2025-06-10T21:43:42.551902",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"d75e9ff38b820b4a3b4496623fb91b6f\"",
+      "file_path": "documentation/AGL/agl-functions.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/agl/bit-depths.json": {
+      "hash": "f02f343085a0dcb9ad2b5a319e126b54aae3cf9d75412f758ede90625e47861e",
+      "last_checked": "2025-06-10T21:43:42.636976",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"3e05ae4f59449c491faaa19db9b9b54a\"",
+      "file_path": "documentation/AGL/bit-depths.md"
+    },
+    "https://developer.apple.com/documentation/agl/bit-depths": {
+      "hash": "f02f343085a0dcb9ad2b5a319e126b54aae3cf9d75412f758ede90625e47861e",
+      "last_checked": "2025-06-10T21:43:42.637014",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"3e05ae4f59449c491faaa19db9b9b54a\"",
+      "file_path": "documentation/AGL/bit-depths.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/agl/buffer-and-renderer-attributes.json": {
+      "hash": "712e5449d7f73e939fdfbea47a2d556f7184e38d139d5d87428680606f50ad78",
+      "last_checked": "2025-06-10T21:43:42.736572",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"19e34dfd015e31a7babf36f30fdb97ad\"",
+      "file_path": "documentation/AGL/buffer-and-renderer-attributes.md"
+    },
+    "https://developer.apple.com/documentation/agl/buffer-and-renderer-attributes": {
+      "hash": "712e5449d7f73e939fdfbea47a2d556f7184e38d139d5d87428680606f50ad78",
+      "last_checked": "2025-06-10T21:43:42.736605",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"19e34dfd015e31a7babf36f30fdb97ad\"",
+      "file_path": "documentation/AGL/buffer-and-renderer-attributes.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/agl/buffer-mode-flags.json": {
+      "hash": "53b17320dec2212398567e47636dae3a06be4d0f8093bb595656d6b2d9e36ab9",
+      "last_checked": "2025-06-10T21:43:42.864675",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"9ba471d45757a11c38761b1090b1886f\"",
+      "file_path": "documentation/AGL/buffer-mode-flags.md"
+    },
+    "https://developer.apple.com/documentation/agl/buffer-mode-flags": {
+      "hash": "53b17320dec2212398567e47636dae3a06be4d0f8093bb595656d6b2d9e36ab9",
+      "last_checked": "2025-06-10T21:43:42.864713",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"9ba471d45757a11c38761b1090b1886f\"",
+      "file_path": "documentation/AGL/buffer-mode-flags.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/agl/color-modes.json": {
+      "hash": "8a5518e1eda97e8a4d69cac7d07dbd4f36211267e70caed04065ecdfd0cbabef",
+      "last_checked": "2025-06-10T21:43:43.003684",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"34d18483dfbb702be412859878a2fff2\"",
+      "file_path": "documentation/AGL/color-modes.md"
+    },
+    "https://developer.apple.com/documentation/agl/color-modes": {
+      "hash": "8a5518e1eda97e8a4d69cac7d07dbd4f36211267e70caed04065ecdfd0cbabef",
+      "last_checked": "2025-06-10T21:43:43.003719",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"34d18483dfbb702be412859878a2fff2\"",
+      "file_path": "documentation/AGL/color-modes.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/agl/context-options-and-parameters.json": {
+      "hash": "ea883f62870fdc7aef0adfe9fec40901ab0fe59b72a5f58bcc45ab498a101100",
+      "last_checked": "2025-06-10T21:43:43.125539",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"39d84a1eac380a553a76c6747397d9b2\"",
+      "file_path": "documentation/AGL/context-options-and-parameters.md"
+    },
+    "https://developer.apple.com/documentation/agl/context-options-and-parameters": {
+      "hash": "ea883f62870fdc7aef0adfe9fec40901ab0fe59b72a5f58bcc45ab498a101100",
+      "last_checked": "2025-06-10T21:43:43.125568",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"39d84a1eac380a553a76c6747397d9b2\"",
+      "file_path": "documentation/AGL/context-options-and-parameters.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/agl/error-codes.json": {
+      "hash": "7b1563ad2bb9d4a19d454e7b9f0e451d00d48912d3a5339b1a80d8d82806da81",
+      "last_checked": "2025-06-10T21:43:43.244897",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"7e0a90518cc6745faf8a08d08f63f3d5\"",
+      "file_path": "documentation/AGL/error-codes.md"
+    },
+    "https://developer.apple.com/documentation/agl/error-codes": {
+      "hash": "7b1563ad2bb9d4a19d454e7b9f0e451d00d48912d3a5339b1a80d8d82806da81",
+      "last_checked": "2025-06-10T21:43:43.244930",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"7e0a90518cc6745faf8a08d08f63f3d5\"",
+      "file_path": "documentation/AGL/error-codes.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/agl/gl-functions-and-macros.json": {
+      "hash": "1974ffe33dd90ee201ab098dd2904cdc9a4202b5d65d1c31c0dcef0b07409cca",
+      "last_checked": "2025-06-10T21:43:43.441430",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"e727e34f9ea75673538148b85a7e5418\"",
+      "file_path": "documentation/AGL/gl-functions-and-macros.md"
+    },
+    "https://developer.apple.com/documentation/agl/gl-functions-and-macros": {
+      "hash": "1974ffe33dd90ee201ab098dd2904cdc9a4202b5d65d1c31c0dcef0b07409cca",
+      "last_checked": "2025-06-10T21:43:43.441464",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"e727e34f9ea75673538148b85a7e5418\"",
+      "file_path": "documentation/AGL/gl-functions-and-macros.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/agl/globally-configured-options.json": {
+      "hash": "cbb2b985af54c7a14eb52a8e2f59be31024f41ad9eb808c96fd008a4d75e276c",
+      "last_checked": "2025-06-10T21:43:43.554136",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"1e270dafd7dbb9f9df4032cea741c2e6\"",
+      "file_path": "documentation/AGL/globally-configured-options.md"
+    },
+    "https://developer.apple.com/documentation/agl/globally-configured-options": {
+      "hash": "cbb2b985af54c7a14eb52a8e2f59be31024f41ad9eb808c96fd008a4d75e276c",
+      "last_checked": "2025-06-10T21:43:43.554176",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"1e270dafd7dbb9f9df4032cea741c2e6\"",
+      "file_path": "documentation/AGL/globally-configured-options.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/agl/renderer-attributes.json": {
+      "hash": "42f47313cc9d50051c71e16bdb64b5f3f78ea1ab69f02ee4444c3ddcae557986",
+      "last_checked": "2025-06-10T21:43:43.685569",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"ff8649161499ef381efa73bba7f6939b\"",
+      "file_path": "documentation/AGL/renderer-attributes.md"
+    },
+    "https://developer.apple.com/documentation/agl/renderer-attributes": {
+      "hash": "42f47313cc9d50051c71e16bdb64b5f3f78ea1ab69f02ee4444c3ddcae557986",
+      "last_checked": "2025-06-10T21:43:43.685599",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"ff8649161499ef381efa73bba7f6939b\"",
+      "file_path": "documentation/AGL/renderer-attributes.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/agl/renderer-ids.json": {
+      "hash": "ece8c51871288be9dc8e13e0970d2527be2c0eb1d8fb368618886f817a5ec18b",
+      "last_checked": "2025-06-10T21:43:43.772600",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"d3e0d35f55c34bf887830874bf07bfeb\"",
+      "file_path": "documentation/AGL/renderer-ids.md"
+    },
+    "https://developer.apple.com/documentation/agl/renderer-ids": {
+      "hash": "ece8c51871288be9dc8e13e0970d2527be2c0eb1d8fb368618886f817a5ec18b",
+      "last_checked": "2025-06-10T21:43:43.772629",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"d3e0d35f55c34bf887830874bf07bfeb\"",
+      "file_path": "documentation/AGL/renderer-ids.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/agl/renderer-properties.json": {
+      "hash": "6a9baae08478f0e5eb02706110c682459db7959a7d4f94acb71bdbedc4e4d9b7",
+      "last_checked": "2025-06-10T21:43:43.930560",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"5074713b5a9fc6db89576a79a1c23b19\"",
+      "file_path": "documentation/AGL/renderer-properties.md"
+    },
+    "https://developer.apple.com/documentation/agl/renderer-properties": {
+      "hash": "6a9baae08478f0e5eb02706110c682459db7959a7d4f94acb71bdbedc4e4d9b7",
+      "last_checked": "2025-06-10T21:43:43.930591",
+      "status": "new",
+      "session_id": "2025-06-10T21:43:40.900307",
+      "etag": "W/\"5074713b5a9fc6db89576a79a1c23b19\"",
+      "file_path": "documentation/AGL/renderer-properties.md"
     }
   }
 }

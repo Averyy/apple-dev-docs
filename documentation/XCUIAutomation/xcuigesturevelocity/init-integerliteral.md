@@ -1,6 +1,6 @@
 # init(integerLiteral:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: init
 
 Creates a gesture velocity with an integer value.

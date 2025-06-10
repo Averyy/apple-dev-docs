@@ -24,8 +24,6 @@ When Core Spotlight invokes this method, update the properties of the attribute 
 
 > ❗ **Important**:  Core Spotlight indexes files in batches and may call this method simultaneously on multiple queues with different values of `contentURL`.
 
- Core Spotlight indexes files in batches and may call this method simultaneously on multiple queues with different values of `contentURL`.
-
 ## Parameters
 
 - `attributes`: The attribute set for the file at  .

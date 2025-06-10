@@ -1,6 +1,6 @@
 # WKWaterResistanceRating
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Values indicating the water-resistance rating.
@@ -33,6 +33,7 @@ enum WKWaterResistanceRating
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

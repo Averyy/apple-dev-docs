@@ -1,6 +1,6 @@
 # vmnet_interface_event_callback_t
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: typealias
 
 **Availability**:

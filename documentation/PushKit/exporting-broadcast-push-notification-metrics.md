@@ -1,6 +1,6 @@
 # Exporting broadcast push notification metrics
 
-**Framework**: Pushkit
+**Framework**: PushKit
 
 Discover how many people subscribe to your broadcast channels, and how many messages they receive.
 
@@ -69,4 +69,4 @@ Apple servers retain the exported data for six months. To re-download the data, 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PushKit/exporting-broadcast-push-notification-metrics)*
+*[View on Apple Developer](https://developer.apple.com/documentation/pushkit/exporting-broadcast-push-notification-metrics)*

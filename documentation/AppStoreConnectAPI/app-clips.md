@@ -18,6 +18,8 @@ The `appClips` resource represents an App Clip and its associated App Clip exper
   Get all default App Clip experiences for an App Clip.
 - [List All Advanced App Clip Experiences for an App Clip](get-v1-appclips-_id_-appclipadvancedexperiences.md)
   Get all advanced App Clip experiences for an App Clip.
+- [GET /v1/appClips/{id}/relationships/appClipAdvancedExperiences](get-v1-appclips-_id_-relationships-appclipadvancedexperiences.md)
+- [GET /v1/appClips/{id}/relationships/appClipDefaultExperiences](get-v1-appclips-_id_-relationships-appclipdefaultexperiences.md)
 ### Objects
 - [object AppClip](appclip.md)
   The data structure that represents an App Clips resource.
@@ -27,6 +29,8 @@ The `appClips` resource represents an App Clip and its associated App Clip exper
   A response that contains a list of Default App Clip Experiences resources.
 - [object AppClipAdvancedExperiencesResponse](appclipadvancedexperiencesresponse.md)
   A response that contains a list of Advanced App Clip Experiences resources.
+- [object AppClipAppClipAdvancedExperiencesLinkagesResponse](appclipappclipadvancedexperienceslinkagesresponse.md)
+- [object AppClipAppClipDefaultExperiencesLinkagesResponse](appclipappclipdefaultexperienceslinkagesresponse.md)
 
 
 ---

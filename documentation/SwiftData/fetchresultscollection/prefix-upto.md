@@ -1,6 +1,6 @@
 # prefix(upTo:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns a subsequence from the start of the collection up to, but not including, the specified position.

@@ -1,6 +1,6 @@
 # performKeyEquivalent(with:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Handle a key equivalent.

@@ -6,7 +6,7 @@
 The constraints used to position current layer’s sublayers.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst 13.1+
 - macOS ?+
 
 ## Declaration

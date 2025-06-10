@@ -3,8 +3,6 @@
 **Framework**: Swift  
 **Kind**: init
 
-Creates an instance that uniquely identifies the given metatype.
-
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -19,10 +17,6 @@ Creates an instance that uniquely identifies the given metatype.
 ```swift
 init(_ x: any Any.Type)
 ```
-
-## Parameters
-
-- `x`: A metatype.
 
 
 ---

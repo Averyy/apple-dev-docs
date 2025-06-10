@@ -3,6 +3,8 @@
 **Framework**: FinanceKit  
 **Kind**: enum
 
+Values that describe errors that may occur when accessing financial data.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -51,6 +53,7 @@ enum FinanceError
 - [Error](../Swift/Error.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

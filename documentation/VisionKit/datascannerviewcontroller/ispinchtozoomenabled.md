@@ -1,6 +1,6 @@
 # isPinchToZoomEnabled
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A Boolean value that indicates whether people can use a two-finger pinch-to-zoom gesture.

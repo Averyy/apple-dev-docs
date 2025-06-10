@@ -21,6 +21,9 @@ struct FinancialConnectionExtensionAuthorizationRequest
 ### Instance Methods
 - [func complete(authorizationResult: FinancialConnectionExtensionAuthorizationResult)](financialconnectionextensionauthorizationrequest/complete(authorizationresult:).md)
 - [func complete(error: any Error)](financialconnectionextensionauthorizationrequest/complete(error:).md)
+### Type Aliases
+- [FinancialConnectionExtensionAuthorizationRequest.CompletionHandler](financialconnectionextensionauthorizationrequest/completionhandler.md)
+- [FinancialConnectionExtensionAuthorizationRequest.CompletionHandlerResult](financialconnectionextensionauthorizationrequest/completionhandlerresult.md)
 
 
 ---

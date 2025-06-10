@@ -1,6 +1,6 @@
 # RequestReviewAction
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: struct
 
 An instance that tells StoreKit to request an App Store rating or review, if appropriate.
@@ -52,6 +52,7 @@ People can review your app at any time on the App Store. To make it easier for p
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -63,4 +64,4 @@ People can review your app at any time on the App Store. To make it easier for p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/requestreviewaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/requestreviewaction)*

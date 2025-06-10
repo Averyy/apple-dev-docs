@@ -1,6 +1,6 @@
 # PKPaymentRequest
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: class
 
 An object that represents a request for payment, including details about payment-processing capabilities, the payment amount, and shipping information.
@@ -178,6 +178,7 @@ Use the [`multiTokenContexts`](pkpaymentrequestupdate/multitokencontexts.md) pro
 ### Instance Properties
 - [var applePayLaterAvailability: PKPaymentRequest.ApplePayLaterAvailability](pkpaymentrequest/applepaylateravailability-3dxrt.md)
   A value that indicates whether Apple Pay Later is available for a transaction.
+- [var attributionIdentifier: String?](pkpaymentrequest/attributionidentifier.md)
 - [var merchantCategoryCode: PKPaymentRequest.MerchantCategoryCode?](pkpaymentrequest/merchantcategorycode-9kcn6.md)
 
 ## Relationships
@@ -206,4 +207,4 @@ Use the [`multiTokenContexts`](pkpaymentrequestupdate/multitokencontexts.md) pro
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/pkpaymentrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/passkit/pkpaymentrequest)*

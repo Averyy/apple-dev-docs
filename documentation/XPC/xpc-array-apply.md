@@ -1,6 +1,6 @@
 # xpc_array_apply(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Invokes the specified block for every value in the array.

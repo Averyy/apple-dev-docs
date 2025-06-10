@@ -13,6 +13,7 @@ A representation of the current event status. See
 ## Declaration
 
 ```swift
+@MainActor
 var eventStatus: CPNowPlayingSportsEventStatus? { get }
 ```
 

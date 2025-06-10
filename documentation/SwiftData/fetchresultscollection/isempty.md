@@ -1,6 +1,6 @@
 # isEmpty
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: property
 
 A Boolean value indicating whether the collection is empty.

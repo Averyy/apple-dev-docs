@@ -1,6 +1,6 @@
 # awakeFromNib()
 
-**Framework**: Objectivec  
+**Framework**: Objective-C Runtime  
 **Kind**: method
 
 Prepares the receiver for service after it has been loaded from an Interface Builder archive, or nib file.
@@ -35,11 +35,8 @@ Typically, you implement `awakeFromNib` for objects that require additional set 
 
 ## See Also
 
-- [func awakeAfter(using: NSCoder) -> Any?](nsobject-swift.class/awakeafter(using:).md)
-  Overridden by subclasses to substitute another object in place of the object that was decoded and subsequently received this message.
 - [class func initialize()](nsobject-swift.class/initialize.md)
   Initializes the class before it receives its first message.
-- [init?(coder: NSCoder)](../OSLog/OSLogEntry/init(coder:).md)
 
 
 ---

@@ -6,6 +6,7 @@
 An error that indicates the configuration’s current layout value is invalid.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

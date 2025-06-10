@@ -1,6 +1,6 @@
 # PATHSEG_CURVETO_CUBIC_ABS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

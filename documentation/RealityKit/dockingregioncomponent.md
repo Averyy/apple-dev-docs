@@ -49,8 +49,6 @@ In the example below, the video player docks in a built-in sky dome scene from R
 ### Sizing a docking region
 - [var width: Float](dockingregioncomponent/width.md)
   The width of the docking region, in meters.
-### Default Implementations
-- [Component Implementations](dockingregioncomponent/component-implementations.md)
 
 ## Relationships
 

@@ -22,8 +22,6 @@ var rangeValue: NSRange { get }
 
 ## See Also
 
-- [typealias NSRange](nsrange.md)
-  A structure used to describe a portion of a series, such as characters in a string or objects in an array.
 - [init(range: NSRange)](nsvalue/init(range:).md)
   Creates a new value object containing the specified Foundation range structure.
 

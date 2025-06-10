@@ -16,8 +16,6 @@ When you toggle a feature to a non-default state, its name is displayed in bold.
 
 > ❗ **Important**: The default setting for each feature flag is how users will generally experience your content, so make sure your pages gracefully handle the absence of a feature you’ve enabled for development.
 
-The default setting for each feature flag is how users will generally experience your content, so make sure your pages gracefully handle the absence of a feature you’ve enabled for development.
-
 #### Feature Statuses
 
 There are four possible statuses for a feature, each with a different meaning and default state. Non-developer features will typically start as  features, and then move to  as the feature and spec the feature is based on matures, eventually becoming  features.

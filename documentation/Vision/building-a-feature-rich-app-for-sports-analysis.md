@@ -68,4 +68,4 @@ To learn more about Action Classification, see [`Creating an Action Classifier M
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/building-a-feature-rich-app-for-sports-analysis)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/building-a-feature-rich-app-for-sports-analysis)*

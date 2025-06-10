@@ -17,7 +17,6 @@ The audio node’s current audio asset.
 ## Declaration
 
 ```swift
-@MainActor
 var avAudioNode: AVAudioNode? { get set }
 ```
 

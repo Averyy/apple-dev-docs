@@ -14,7 +14,10 @@ struct AudioHardwareError
 
 ## Topics
 
+### Initializers
+- [init(OSStatus)](audiohardwareerror/init(_:).md)
 ### Instance Properties
+- [let error: OSStatus](audiohardwareerror/error.md)
 - [var errorDescription: String?](audiohardwareerror/errordescription.md)
 
 ## Relationships
@@ -23,6 +26,7 @@ struct AudioHardwareError
 - [Error](../Swift/Error.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

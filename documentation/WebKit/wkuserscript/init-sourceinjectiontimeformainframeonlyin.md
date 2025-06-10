@@ -1,6 +1,6 @@
 # init(source:injectionTime:forMainFrameOnly:in:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Creates a user script object that is scoped to a particular content world.

@@ -10,8 +10,6 @@ The payload you use to configure profile removal.
 - iPadOS 4.0+
 - macOS 10.7+
 - tvOS 9.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,17 +27,17 @@ This payload provides a password to allow users to remove a locked configuration
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, tvOS |
-| User Channel | macOS |
-| Allow Manual Install | iOS, macOS, tvOS |
-| Requires Supervision | iOS, tvOS |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, macOS, tvOS |
+| User channel | macOS |
+| Allow manual install | iOS, macOS, tvOS |
+| Requires supervision | iOS, tvOS |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

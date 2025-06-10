@@ -64,6 +64,7 @@ The [`UnitConcentrationMass`](unitconcentrationmass.md) class defines its [`base
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

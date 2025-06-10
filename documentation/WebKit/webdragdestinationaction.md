@@ -1,6 +1,6 @@
 # WebDragDestinationAction
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: struct
 
 Actions that the destination object of a drag operation can perform.
@@ -37,6 +37,7 @@ struct WebDragDestinationAction
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

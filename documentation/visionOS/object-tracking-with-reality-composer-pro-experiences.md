@@ -1,6 +1,6 @@
 # Object tracking with Reality Composer Pro experiences
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
 
@@ -40,4 +40,4 @@ Simulator doesn’t support ARKit, so you can only run this sample on a physical
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/object-tracking-with-reality-composer-pro-experiences)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/object-tracking-with-reality-composer-pro-experiences)*

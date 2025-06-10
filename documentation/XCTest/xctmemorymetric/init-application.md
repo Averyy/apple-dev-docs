@@ -1,6 +1,6 @@
 # init(application:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Initializes a metric that measures memory use in the target app.

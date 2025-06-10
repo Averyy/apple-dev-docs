@@ -5,6 +5,9 @@
 
 A source of live data about planes in a person’s surroundings.
 
+**Availability**:
+- visionOS 1.0+
+
 ## Declaration
 
 ```swift

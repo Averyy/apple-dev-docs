@@ -1,6 +1,6 @@
 # WKSnapshotReason.returnToDefaultState
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 It has been more than an hour since the user’s last interaction with the app; the app’s snapshot should return to its default state.

@@ -42,6 +42,7 @@ struct TemporalTransformerToEstimatorAdaptor<Transformer> where Transformer : Te
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TemporalEstimator](temporalestimator.md)
 
 ## See Also

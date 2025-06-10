@@ -12,6 +12,7 @@ The center point of the circular area, specified as a latitude and longitude.
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 1.0+
 
 ## Declaration
 

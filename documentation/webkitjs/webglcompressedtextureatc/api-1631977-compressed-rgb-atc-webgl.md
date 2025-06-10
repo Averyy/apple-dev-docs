@@ -1,6 +1,6 @@
 # COMPRESSED_RGB_ATC_WEBGL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

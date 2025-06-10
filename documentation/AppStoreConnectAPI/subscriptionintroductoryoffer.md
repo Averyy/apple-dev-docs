@@ -27,7 +27,9 @@ object SubscriptionIntroductoryOffer
 - [object Subscription](subscription.md)
 - [object SubscriptionIntroductoryOffersResponse](subscriptionintroductoryoffersresponse.md)
 - [object SubscriptionIntroductoryOffersLinkagesRequest](subscriptionintroductoryofferslinkagesrequest.md)
+  The data structure that represents a subscription introductory offers linkages request resource.
 - [object SubscriptionIntroductoryOffersLinkagesResponse](subscriptionintroductoryofferslinkagesresponse.md)
+  A response that contains a list of Ids of related resources.
 - [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)
 - [object SubscriptionOfferCodesResponse](subscriptionoffercodesresponse.md)
 - [object SubscriptionOfferCode](subscriptionoffercode.md)

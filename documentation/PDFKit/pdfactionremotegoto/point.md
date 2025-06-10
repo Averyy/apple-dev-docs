@@ -16,7 +16,7 @@ Sets the point, in page space, on the page referenced by the remote go-to action
 ## Declaration
 
 ```swift
-var point: NSPoint { get set }
+var point: CGPoint { get set }
 ```
 
 #### Discussion

@@ -41,6 +41,7 @@ protocol CMSyncProtocol : Sendable
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [CMClock](cmclock.md)
 - [CMTimebase](cmtimebase.md)

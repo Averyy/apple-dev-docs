@@ -1,6 +1,6 @@
 # Supporting Single Sign-On in a Web Browser App
 
-**Framework**: Authenticationservices
+**Framework**: Authentication Services
 
 Extend your web browser app to handle web authentication requests from other apps.
 
@@ -129,4 +129,4 @@ Use this indicator to adjust the behavior of your browser at startup. For exampl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/supporting-single-sign-on-in-a-web-browser-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/supporting-single-sign-on-in-a-web-browser-app)*

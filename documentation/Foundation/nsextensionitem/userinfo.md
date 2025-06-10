@@ -26,8 +26,6 @@ If applicable to a particular extension type, additional information may be avai
 
 > ❗ **Important**:  Setting the [`userInfo`](nsextensionitem/userinfo.md) dictionary after setting [`attachments`](nsextensionitem/attachments.md), [`attributedContentText`](nsextensionitem/attributedcontenttext.md), or [`attributedTitle`](nsextensionitem/attributedtitle.md) overrides those properties.
 
- Setting the [`userInfo`](nsextensionitem/userinfo.md) dictionary after setting [`attachments`](nsextensionitem/attachments.md), [`attributedContentText`](nsextensionitem/attributedcontenttext.md), or [`attributedTitle`](nsextensionitem/attributedtitle.md) overrides those properties.
-
 ## See Also
 
 - [var attributedTitle: NSAttributedString?](nsextensionitem/attributedtitle.md)

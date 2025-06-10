@@ -24,11 +24,19 @@ struct DropProposal
 - [init(operation: DropOperation)](dropproposal/init(operation:).md)
 - [let operation: DropOperation](dropproposal/operation.md)
   The drop operation that the drop proposes to perform.
+### Initializers
+- [init(withinApplication: DropOperation, outsideApplication: DropOperation)](dropproposal/init(withinapplication:outsideapplication:).md)
+### Instance Properties
+- [let operationOutsideApplication: DropOperation?](dropproposal/operationoutsideapplication.md)
+  The drop operation for drops outside the source application.
 
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

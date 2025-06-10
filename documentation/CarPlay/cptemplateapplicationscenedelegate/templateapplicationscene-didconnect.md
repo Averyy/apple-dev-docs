@@ -26,8 +26,6 @@ CarPlay calls this method when it launches your app and connects the scene. Use 
 
 > ❗ **Important**:  Navigation apps must implement [`templateApplicationScene(_:didConnect:to:)`](cptemplateapplicationscenedelegate/templateapplicationscene(_:didconnect:to:).md) instead so they can access the window where they draw their map content.
 
- Navigation apps must implement [`templateApplicationScene(_:didConnect:to:)`](cptemplateapplicationscenedelegate/templateapplicationscene(_:didconnect:to:).md) instead so they can access the window where they draw their map content.
-
 ## Parameters
 
 - `templateApplicationScene`: The scene connecting to the app.

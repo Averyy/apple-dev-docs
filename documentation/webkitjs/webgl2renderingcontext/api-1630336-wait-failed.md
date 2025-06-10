@@ -1,6 +1,6 @@
 # WAIT_FAILED
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

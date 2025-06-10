@@ -1,6 +1,6 @@
 # siSlopeAndIntercept atom
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that contains parameters relevant to a decompressor component.

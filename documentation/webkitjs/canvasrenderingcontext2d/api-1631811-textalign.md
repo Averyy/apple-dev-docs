@@ -1,6 +1,6 @@
 # textAlign
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A string that specifies whether text is left-justified, right-justified, or centered.

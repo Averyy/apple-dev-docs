@@ -1,6 +1,6 @@
 # Automatic Assessment Configuration
 
-**Framework**: Automaticassessmentconfiguration  
+**Framework**: Automatic Assessment Configuration  
 **Kind**: module
 
 Enter single-app mode and prevent students from accessing specific system features while taking an exam.

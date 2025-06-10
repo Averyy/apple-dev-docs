@@ -1,6 +1,6 @@
 # UVIndex.ExposureCategory.AllCases
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: typealias
 
 A type that can represent a collection of all values of this type.

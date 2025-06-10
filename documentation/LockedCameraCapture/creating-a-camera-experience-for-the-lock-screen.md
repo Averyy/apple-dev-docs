@@ -1,6 +1,6 @@
 # Creating a camera experience for the Lock Screen
 
-**Framework**: Lockedcameracapture
+**Framework**: LockedCameraCapture
 
 Offer your app’s camera experience on locked devices from Control Center, the Lock Screen, and the Action button.
 
@@ -186,4 +186,4 @@ for await update in LockedCameraCaptureManager.shared.sessionContentUpdates {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/LockedCameraCapture/creating-a-camera-experience-for-the-lock-screen)*
+*[View on Apple Developer](https://developer.apple.com/documentation/lockedcameracapture/creating-a-camera-experience-for-the-lock-screen)*

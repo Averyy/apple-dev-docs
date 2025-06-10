@@ -8,8 +8,6 @@ Display data in a single column of customizable rows.
 
 A table view displays a single column of vertically scrolling content, divided into rows and sections. Each row of a table displays a single piece of information related to your app. Sections let you group related rows together. For example, the Contacts app uses a table to display the names of the user’s contacts.
 
-![Illustration showing three table view examples. The first contains only rows, the second contains rows grouped into sections, and the third contains custom cells.](https://docs-assets.developer.apple.com/published/a62f6812cd9c5880d56e7f8ae8cb859c/media-3148899%402x.png)
-
 Table views are a collaboration between many different objects, including:
 
 - Cells. A cell provides the visual representation for your content. You can use the default cells provided by UIKit or define custom cells to suit the needs of your app.

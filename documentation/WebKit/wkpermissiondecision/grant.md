@@ -1,6 +1,6 @@
 # WKPermissionDecision.grant
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Grant permission for the requested resource.

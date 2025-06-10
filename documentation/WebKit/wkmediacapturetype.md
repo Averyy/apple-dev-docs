@@ -1,6 +1,6 @@
 # WKMediaCaptureType
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 An enumeration listing the types of media devices that can capture audio, video, or both.
@@ -38,6 +38,7 @@ enum WKMediaCaptureType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

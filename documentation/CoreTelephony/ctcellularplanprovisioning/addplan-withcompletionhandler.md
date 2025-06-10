@@ -35,6 +35,8 @@ The user may send your app to the background prior to completing eSIM installati
   Indicates whether the device supports eSIM and the activation policy allows eSIM installation.
 - [var supportsEmbeddedSIM: Bool](ctcellularplanprovisioning/supportsembeddedsim.md)
   A Boolean value that indicates whether the device has hardware eSIM support.
+- [func addPlan(request: CTCellularPlanProvisioningRequest, properties: CTCellularPlanProperties?, completionHandler: (CTCellularPlanProvisioningAddPlanResult) -> Void)](ctcellularplanprovisioning/addplan(request:properties:completionhandler:).md)
+  Starts the provisioning process with optional properties for the specified eSIM.
 - [enum CTCellularPlanProvisioningAddPlanResult](ctcellularplanprovisioningaddplanresult.md)
   The result from attempting to provision an eSIM.
 

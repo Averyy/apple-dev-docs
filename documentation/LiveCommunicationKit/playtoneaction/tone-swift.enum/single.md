@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: case
 
-Indicates that the user tapped a digit on the in-call keypad.
+A person entered a digit.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,13 @@ Indicates that the user tapped a digit on the in-call keypad.
 ```swift
 case single
 ```
+
+## See Also
+
+- [PlayToneAction.Tone.hardPause](playtoneaction/tone-swift.enum/hardpause.md)
+  A person entered a hard pause.
+- [PlayToneAction.Tone.softPause](playtoneaction/tone-swift.enum/softpause.md)
+  A person entered a soft pause.
 
 
 ---

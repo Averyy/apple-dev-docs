@@ -35,4 +35,4 @@ Open the sample code project in Xcode. Before building it, do the following:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Accessibility/enhancing-the-accessibility-of-your-swiftui-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/accessibility/enhancing-the-accessibility-of-your-swiftui-app)*

@@ -10,13 +10,14 @@ Hashes the essential components of the shape by feeding them into the given hash
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func hash(into hasher: inout Hasher)
+nonisolated
+func hash(into hasher: inout Hasher)
 ```
 
 ## Parameters
@@ -27,10 +28,6 @@ Hashes the essential components of the shape by feeding them into the given hash
 
 - [static func == (ShapeResource, ShapeResource) -> Bool](shaperesource/==(_:_:).md)
   Indicates whether two shapes are equal.
-- [static func != (Self, Self) -> Bool](shaperesource/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [var hashValue: Int](shaperesource/hashvalue.md)
-  The hash value.
 
 
 ---

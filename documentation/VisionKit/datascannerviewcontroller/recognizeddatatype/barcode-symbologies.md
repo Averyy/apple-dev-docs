@@ -1,6 +1,6 @@
 # barcode(symbologies:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Creates a data type for barcodes the use the specified symbologies.

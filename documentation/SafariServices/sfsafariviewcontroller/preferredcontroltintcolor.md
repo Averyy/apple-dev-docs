@@ -26,6 +26,7 @@ This color preference is ignored if the view controller is in Private Browsing m
 - [var configuration: SFSafariViewController.Configuration](sfsafariviewcontroller/configuration-swift.property.md)
   A copy of the Safari view controller’s initialized configuration.
 - [var dismissButtonStyle: SFSafariViewController.DismissButtonStyle](sfsafariviewcontroller/dismissbuttonstyle-swift.property.md)
+  The style of dismiss button to use in the navigation bar to close the Safari view controller.
 - [SFSafariViewController.DismissButtonStyle](sfsafariviewcontroller/dismissbuttonstyle-swift.enum.md)
 - [var preferredBarTintColor: UIColor?](sfsafariviewcontroller/preferredbartintcolor.md)
   The color to tint the background of the navigation bar and the toolbar.

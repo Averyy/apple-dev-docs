@@ -23,8 +23,9 @@ class AVQueuePlayer
 
 ## Mentions
 
-- [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
 - [Implementing simple enhanced buffering for your content](implementing-simple-enhanced-buffering-for-your-content.md)
+- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
+- [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
 
 #### Overview
 
@@ -54,18 +55,25 @@ Use an instance of this class to manage a queue of player items.
 ### Inherits From
 - [AVPlayer](avplayer.md)
 ### Conforms To
+- [AVRoutingPlaybackParticipant](../AVRouting/AVRoutingPlaybackParticipant.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Observable](../Observation/Observable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
+  Keep your user interface in sync with state changes from playback objects.
 - [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
   Play, pause, and seek through a media presentation.
+- [Creating a seamless multiview playback experience](creating-a-seamless-multiview-playback-experience.md)
+  Build advanced multiview playback experiences with the AVFoundation and AVRouting frameworks.
 - [class AVPlayer](avplayer.md)
   An object that provides the interface to control the player’s transport behavior.
 - [class AVPlayerItem](avplayeritem.md)

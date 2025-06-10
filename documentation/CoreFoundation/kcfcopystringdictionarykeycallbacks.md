@@ -26,8 +26,6 @@ You typically use a pointer to this constant when creating a new dictionary.
 
 > ❗ **Important**:  For performance reasons, the default `kCFCopyStringDictionaryKeyCallBacks` behavior uses [`CFEqual(_:_:)`](cfequal(_:_:).md) which does not normalize the strings. This means that, for example, it does not consider CFStrings to be equal when they are the same but one is in pre-composed form (say, originating from a UTF-16 text file) and the other in decomposed form (say, originating from a file name). In cases where you use strings from different sources, you may want to pre-normalize the keys or else use a different set of functions to perform the comparison.
 
- For performance reasons, the default `kCFCopyStringDictionaryKeyCallBacks` behavior uses [`CFEqual(_:_:)`](cfequal(_:_:).md) which does not normalize the strings. This means that, for example, it does not consider CFStrings to be equal when they are the same but one is in pre-composed form (say, originating from a UTF-16 text file) and the other in decomposed form (say, originating from a file name). In cases where you use strings from different sources, you may want to pre-normalize the keys or else use a different set of functions to perform the comparison.
-
 ## See Also
 
 - [let kCFTypeDictionaryKeyCallBacks: CFDictionaryKeyCallBacks](kcftypedictionarykeycallbacks.md)

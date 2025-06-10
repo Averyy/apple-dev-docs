@@ -21,7 +21,7 @@ class UITextRange
 
 #### Overview
 
-Classes that adopt the [`UITextInput`](uitextinput.md) protocol must create custom [`UITextRange`](uitextrange.md) objects for representing ranges within the text managed by the class. The starting and ending indexes of the range are represented by [`UITextPosition`](uitextposition.md) objects. The text system uses both [`UITextRange`](uitextrange.md) and [`UITextPosition`](uitextposition.md) objects for communicating text-layout information. There are two reasons for using objects for text ranges rather than primitive types such as [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange):
+Classes that adopt the [`UITextInput`](uitextinput.md) protocol must create custom [`UITextRange`](uitextrange.md) objects for representing ranges within the text managed by the class. The starting and ending indexes of the range are represented by [`UITextPosition`](uitextposition.md) objects. The text system uses both [`UITextRange`](uitextrange.md) and [`UITextPosition`](uitextposition.md) objects for communicating text-layout information. There are two reasons for using objects for text ranges rather than primitive types such as [`NSRange`](https://developer.apple.com/documentation/Foundation/NSRange-c.struct):
 
 - Some documents contain nested elements (for example, HTML tags and embedded objects) and you need to track both absolute position and position in the visible text.
 - The WebKit framework requires that text indexes and offsets be represented by objects.

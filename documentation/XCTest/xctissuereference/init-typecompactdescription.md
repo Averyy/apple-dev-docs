@@ -1,6 +1,6 @@
 # init(type:compactDescription:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an issue with a compact description for a test failure.

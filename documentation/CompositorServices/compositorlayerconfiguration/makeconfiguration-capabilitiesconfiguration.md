@@ -7,6 +7,7 @@
 Creates and returns a type that contains the rendering options for Compositor Services to use when configuring a layer.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

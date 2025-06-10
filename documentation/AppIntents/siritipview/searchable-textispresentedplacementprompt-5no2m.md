@@ -9,7 +9,7 @@ Marks this view as searchable with programmatic presentation of the search field
 - iOS 17.0+
 - iPadOS 17.0+
 - macOS 14.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

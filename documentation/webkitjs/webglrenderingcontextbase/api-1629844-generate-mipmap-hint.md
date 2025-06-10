@@ -1,6 +1,6 @@
 # GENERATE_MIPMAP_HINT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

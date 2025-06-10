@@ -35,8 +35,6 @@ Ending the transparency layer restores these parameters to their previous values
 
 > 💡 **Tip**:  For best performance, make sure that you set the smallest possible clipping area for the objects in the transparency layer prior to calling `CGContextBeginTransparencyLayer`.
 
- For best performance, make sure that you set the smallest possible clipping area for the objects in the transparency layer prior to calling `CGContextBeginTransparencyLayer`.
-
 ## Parameters
 
 - `auxiliaryInfo`: A dictionary that specifies any additional information, or  .

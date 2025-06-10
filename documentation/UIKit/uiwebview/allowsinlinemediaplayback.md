@@ -24,8 +24,6 @@ The default value for iPhone is `false` and the default value for iPad is `true`
 
 > ❗ **Important**:  Apps created before iOS 10.0 must use the `webkit-playsinline` attribute.
 
- Apps created before iOS 10.0 must use the `webkit-playsinline` attribute.
-
 ## See Also
 
 - [var mediaPlaybackRequiresUserAction: Bool](uiwebview/mediaplaybackrequiresuseraction.md)

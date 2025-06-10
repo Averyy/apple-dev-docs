@@ -17,6 +17,10 @@
 var biometry: LAEnvironment.MechanismBiometry? { get }
 ```
 
+#### Discussion
+
+@C nil if biometry is not supported by this device.
+
 
 ---
 

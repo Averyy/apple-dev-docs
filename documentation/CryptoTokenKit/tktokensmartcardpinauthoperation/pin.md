@@ -1,6 +1,6 @@
 # pin
 
-**Framework**: Cryptotokenkit  
+**Framework**: CryptoTokenKit  
 **Kind**: property
 
 The PIN value resulting from performing the operation.

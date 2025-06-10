@@ -14,8 +14,6 @@ These methods are typically invoked on user interface elements by a controller. 
 
 > ❗ **Important**:  In macOS 10.7 or later, if you have enabled autosaving in your application, and your application has custom objects that implement or override the [`NSEditor`](nseditor.md) protocol, you must also implement [`commitEditingWithoutPresentingError()`](nseditor/commiteditingwithoutpresentingerror().md) in those objects.
 
- In macOS 10.7 or later, if you have enabled autosaving in your application, and your application has custom objects that implement or override the [`NSEditor`](nseditor.md) protocol, you must also implement [`commitEditingWithoutPresentingError()`](nseditor/commiteditingwithoutpresentingerror().md) in those objects.
-
 ## See Also
 
 - [NSAccessibility](nsaccessibility.md)

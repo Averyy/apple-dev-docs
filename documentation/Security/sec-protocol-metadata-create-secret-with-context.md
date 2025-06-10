@@ -25,7 +25,7 @@ Returns a dispatch_data_t object carrying the exported secret.
 #### Discussion
 
 ```None
-  Export a secret, e.g., a cryptographic key, derived from the protocol metadata using a label and context string.
+ Export a secret, e.g., a cryptographic key, derived from the protocol metadata using a label and context string.
 ```
 
 ## Parameters

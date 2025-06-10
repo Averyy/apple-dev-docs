@@ -1,6 +1,6 @@
 # observedObject
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The object by which the notification must be posted, or nil if the notification can be posted by any object.

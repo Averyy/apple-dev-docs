@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The data structure that represents a subscription introductory offers linkages request resource.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -16,6 +18,7 @@ object SubscriptionIntroductoryOffersLinkagesRequest
 
 ### Objects
 - [object SubscriptionIntroductoryOffersLinkagesRequest.Data](subscriptionintroductoryofferslinkagesrequest/data-data.dictionary.md)
+  The data structure that represents a subscription introductory offers linkages request resource.
 
 ## See Also
 
@@ -27,6 +30,7 @@ object SubscriptionIntroductoryOffersLinkagesRequest
 - [object SubscriptionIntroductoryOffersResponse](subscriptionintroductoryoffersresponse.md)
 - [object SubscriptionIntroductoryOffer](subscriptionintroductoryoffer.md)
 - [object SubscriptionIntroductoryOffersLinkagesResponse](subscriptionintroductoryofferslinkagesresponse.md)
+  A response that contains a list of Ids of related resources.
 - [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)
 - [object SubscriptionOfferCodesResponse](subscriptionoffercodesresponse.md)
 - [object SubscriptionOfferCode](subscriptionoffercode.md)

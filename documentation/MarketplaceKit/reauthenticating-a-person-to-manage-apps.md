@@ -1,6 +1,6 @@
 # Reauthenticating a person to manage apps
 
-**Framework**: Marketplacekit
+**Framework**: MarketplaceKit
 
 Renew your app’s authorization when an app needs updating or when a device restores from backup.
 
@@ -130,4 +130,4 @@ For example, if the system encounters an invalid access token while performing a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/reauthenticating-a-person-to-manage-apps)*
+*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/reauthenticating-a-person-to-manage-apps)*

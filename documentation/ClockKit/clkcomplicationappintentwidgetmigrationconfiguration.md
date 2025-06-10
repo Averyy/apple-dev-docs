@@ -34,6 +34,8 @@ For more information, see [`Migrating ClockKit complications to WidgetKit`](http
   An intent that provides additional configuration information to your WidgetKit complication.
 - [let localizedDisplayName: String](clkcomplicationappintentwidgetmigrationconfiguration/localizeddisplayname.md)
   A localized name for the complication.
+### Initializers
+- [init?(coder: NSCoder)](clkcomplicationappintentwidgetmigrationconfiguration/init(coder:).md)
 
 ## Relationships
 

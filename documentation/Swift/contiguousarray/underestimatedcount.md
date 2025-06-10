@@ -27,4 +27,4 @@ var underestimatedCount: Int { get }
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/contiguousarray/underestimatedcount)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/contiguousarray/underestimatedcount)*

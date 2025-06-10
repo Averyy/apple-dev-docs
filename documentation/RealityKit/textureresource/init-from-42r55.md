@@ -27,12 +27,6 @@ Asynchronously creates a texture resource from a low-level texture.
 
 - [convenience init(from: LowLevelTexture) throws](textureresource/init(from:)-3psmc.md)
   Synchronously creates a texture resource from a low-level texture.
-- [TextureResource.Contents](textureresource/contents.md)
-  An object that references the pixel data for each mipmap level of a texture.
-- [TextureResource.Format](textureresource/format.md)
-  The pixel format and encoding of a texture.
-- [TextureResource.Compression](textureresource/compression.md)
-  The compression to apply when importing an image as a texture.
 
 
 ---

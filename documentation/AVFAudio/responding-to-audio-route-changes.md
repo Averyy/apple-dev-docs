@@ -1,6 +1,6 @@
 # Responding to audio route changes
 
-**Framework**: Avfaudio
+**Framework**: AVFAudio
 
 Observe audio session notifications to ensure that your app responds appropriately to route changes.
 
@@ -88,4 +88,4 @@ func hasHeadphones(in routeDescription: AVAudioSessionRouteDescription) -> Bool 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/responding-to-audio-route-changes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/responding-to-audio-route-changes)*

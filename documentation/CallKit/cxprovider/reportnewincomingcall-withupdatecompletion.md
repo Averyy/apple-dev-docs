@@ -20,22 +20,14 @@ func reportNewIncomingCall(with UUID: UUID, update: CXCallUpdate) async throws
 
 ## Mentions
 
-- [Making and receiving VoIP calls](making-and-receiving-voip-calls.md)
 - [Sending End-to-End Encrypted VoIP Calls](sending-end-to-end-encrypted-voip-calls.md)
+- [Making and receiving VoIP calls](making-and-receiving-voip-calls.md)
 
 #### Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
 func reportNewIncomingCall(with UUID: UUID, update: CXCallUpdate) async throws
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func reportNewIncomingCall(with UUID: UUID, update: CXCallUpdate) async throws
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
 An incoming call may be disallowed by the system if, for example, the caller handle is blocked, or the user has Do Not Disturb enabled.
 

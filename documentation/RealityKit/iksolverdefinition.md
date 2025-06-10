@@ -10,6 +10,7 @@ A container describing a solver instance.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -28,13 +29,10 @@ Adds unique identifier for each solver instance as the rig can be reused.
 - [init(id: IKSolverDefinition.ID, rig: IKRig)](iksolverdefinition/init(id:rig:).md)
   Creates a solver definition for with a unique solver identifier and a rig.
 ### Instance Properties
-- [let id: IKSolverDefinition.ID](iksolverdefinition/id-swift.property.md)
+- [let id: IKSolverDefinition.ID](iksolverdefinition/id.md)
   The identifier of the solver instance.
 - [var rigDefinition: IKRig](iksolverdefinition/rigdefinition.md)
   The solver’s rig definition.
-### Type Aliases
-- [IKSolverDefinition.ID](iksolverdefinition/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 
@@ -59,8 +57,6 @@ Adds unique identifier for each solver instance as the rig can be reused.
   Ordered dictionary like container with fixed size.
 - [class IKResource](ikresource.md)
   A reference counted immutable resource which contains one or more inverse kinematics solver rigs.
-- [IKSolverDefinition.ID](iksolverdefinition/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 
 ---

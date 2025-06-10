@@ -1,6 +1,6 @@
 # fileMover(isPresented:files:onCompletion:onCancellation:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Presents a system dialog for allowing the user to move a collection of existing files to a new location.

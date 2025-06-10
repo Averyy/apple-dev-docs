@@ -26,7 +26,7 @@ The reference data used to construct objectID.
 
 #### Discussion
 
-This method raises an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) if the object ID was not created by the receiving store.
+This method raises an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if the object ID was not created by the receiving store.
 
 You should not override this method.
 

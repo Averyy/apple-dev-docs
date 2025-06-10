@@ -1,6 +1,6 @@
 # xpc_dictionary_get_data(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Gets a raw data value from a dictionary directly.

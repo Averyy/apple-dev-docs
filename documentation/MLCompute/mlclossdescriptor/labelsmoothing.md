@@ -1,6 +1,6 @@
 # labelSmoothing
 
-**Framework**: Mlcompute  
+**Framework**: ML Compute  
 **Kind**: property
 
 The value for label smoothing.

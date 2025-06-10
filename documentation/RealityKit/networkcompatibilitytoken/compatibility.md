@@ -10,6 +10,7 @@ Indicates whether two devices running RealityKit are compatible and able to conn
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -25,17 +26,6 @@ enum Compatibility
   An indication that the compared devices are running compatible versions of RealityKit.
 - [NetworkCompatibilityToken.Compatibility.sessionProtocolVersionMismatch](networkcompatibilitytoken/compatibility/sessionprotocolversionmismatch.md)
   An indication that two peers running incompatible versions of RealityKit can’t sync.
-### Comparisons
-- [var hashValue: Int](networkcompatibilitytoken/compatibility/hashvalue.md)
-  The hash value.
-- [func hash(into: inout Hasher)](networkcompatibilitytoken/compatibility/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [static func != (Self, Self) -> Bool](networkcompatibilitytoken/compatibility/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [static func == (NetworkCompatibilityToken.Compatibility, NetworkCompatibilityToken.Compatibility) -> Bool](networkcompatibilitytoken/compatibility/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](networkcompatibilitytoken/compatibility/equatable-implementations.md)
 
 ## Relationships
 

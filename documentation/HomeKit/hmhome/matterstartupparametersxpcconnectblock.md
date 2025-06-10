@@ -20,7 +20,7 @@ var matterStartupParametersXPCConnectBlock: () -> NSXPCConnection { get }
 #### Discussion
 
 ```None
-    This property can be passed as part of an MTRXPCDeviceControllerParameters to create an MTRDeviceController that will have access to the Apple Home Fabric.
+   This property can be passed as part of an MTRXPCDeviceControllerParameters to create an MTRDeviceController that will have access to the Apple Home Fabric.
 ```
 
 

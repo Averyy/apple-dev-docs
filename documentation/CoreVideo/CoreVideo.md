@@ -66,13 +66,53 @@ Core Video provides a pipeline model for digital video. It simplifies working wi
 - [Core Video Functions](core-video-functions.md)
 ### Classes
 - [class CVMetalBufferCache](cvmetalbuffercache.md)
+- [class CVReadOnlyPixelBuffer](cvreadonlypixelbuffer.md)
+  CVReadOnlyPixelBuffer provides an immutable view of the pixel data held by the pixel buffer.
+### Protocols
+- [protocol CVBufferRepresentable](cvbufferrepresentable.md)
+  CVBufferRepresentable protocol is a sealed protocol intended to be implemented by the types in CoreVideo framework. This protocol facilitates Swift types that wrap a value of CVBuffer type.
+- [protocol CVImageBufferRepresentable](cvimagebufferrepresentable.md)
+  CVImageBufferRepresentable protocol is a sealed protocol intended to be implemented by the types in CoreVideo framework. This protocol facilitates Swift types that wrap a value of CVImageBuffer type.
+- [protocol CVPixelBufferRepresentable](cvpixelbufferrepresentable.md)
+  CVPixelBufferRepresentable protocol is a sealed protocol intended to be implemented by the types in CoreVideo framework. This protocol facilitates Swift types that wrap a value of CVPixelBuffer type.
+### Structures
+- [struct CVError](cverror.md)
+  `CVError` wraps `CVReturn` values to present them as Swift Error values. This type is used for all errors thrown in the CoreVideo framework. All `CVReturn` values are provided as static constants.
+- [struct CVImageSize](cvimagesize.md)
+  Size of image buffer expressed as pixel count.
+- [struct CVMutablePixelBuffer](cvmutablepixelbuffer.md)
+  CVMutablePixelBuffer provides read-write access to the pixel data and attachments.
+- [struct CVPixelBufferAttributes](cvpixelbufferattributes.md)
+  A partial set of pixel buffer creation attributes. This struct is useful for conveying partial requirements for pixel buffers to clients. This struct makes all properties of `CVPixelBuffer/CreationAttributes` optional.
+- [struct CVPixelBufferCreationAttributes](cvpixelbuffercreationattributes.md)
+  Attributes needed for creating a pixel buffer.
+- [struct CVPixelBufferPadding](cvpixelbufferpadding.md)
+  Padding pixels around the CVPixelBuffer
+- [struct CVPixelBufferPlaneProperties](cvpixelbufferplaneproperties.md)
+  Properties of a plane of pixels in pixel buffer
+- [struct CVPixelFormatDescription](cvpixelformatdescription.md)
+  Defines a pixel format which can be used to create custom pixel buffer types.
+- [struct CVPixelFormatType](cvpixelformattype.md)
+  Identifier for a pixel format type
 ### Variables
-- [let kCVImageBufferPostDecodeProcessingFrameMetadataKey: CFString!](kcvimagebufferpostdecodeprocessingframemetadatakey.md)
-- [let kCVImageBufferPostDecodeProcessingSequenceMetadataKey: CFString!](kcvimagebufferpostdecodeprocessingsequencemetadatakey.md)
+- [let kCVImageBufferDisplayMaskRectangleKey: CFString](kcvimagebufferdisplaymaskrectanglekey.md)
+- [let kCVImageBufferDisplayMaskRectangleStereoLeftKey: CFString](kcvimagebufferdisplaymaskrectanglestereoleftkey.md)
+- [let kCVImageBufferDisplayMaskRectangleStereoRightKey: CFString](kcvimagebufferdisplaymaskrectanglestereorightkey.md)
+- [let kCVImageBufferDisplayMaskRectangle_LeftEdgePointsKey: CFString](kcvimagebufferdisplaymaskrectangle_leftedgepointskey.md)
+- [let kCVImageBufferDisplayMaskRectangle_RectangleHeightKey: CFString](kcvimagebufferdisplaymaskrectangle_rectangleheightkey.md)
+- [let kCVImageBufferDisplayMaskRectangle_RectangleLeftKey: CFString](kcvimagebufferdisplaymaskrectangle_rectangleleftkey.md)
+- [let kCVImageBufferDisplayMaskRectangle_RectangleTopKey: CFString](kcvimagebufferdisplaymaskrectangle_rectangletopkey.md)
+- [let kCVImageBufferDisplayMaskRectangle_RectangleWidthKey: CFString](kcvimagebufferdisplaymaskrectangle_rectanglewidthkey.md)
+- [let kCVImageBufferDisplayMaskRectangle_ReferenceRasterHeightKey: CFString](kcvimagebufferdisplaymaskrectangle_referencerasterheightkey.md)
+- [let kCVImageBufferDisplayMaskRectangle_ReferenceRasterWidthKey: CFString](kcvimagebufferdisplaymaskrectangle_referencerasterwidthkey.md)
+- [let kCVImageBufferDisplayMaskRectangle_RightEdgePointsKey: CFString](kcvimagebufferdisplaymaskrectangle_rightedgepointskey.md)
+- [let kCVImageBufferPostDecodeProcessingFrameMetadataKey: CFString](kcvimagebufferpostdecodeprocessingframemetadatakey.md)
+- [let kCVImageBufferPostDecodeProcessingSequenceMetadataKey: CFString](kcvimagebufferpostdecodeprocessingsequencemetadatakey.md)
 - [let kCVImageBufferSceneIlluminationKey: CFString](kcvimagebuffersceneilluminationkey.md)
 - [let kCVMetalBufferCacheMaximumBufferAgeKey: CFString](kcvmetalbuffercachemaximumbufferagekey.md)
 - [let kCVPixelFormatBitsPerComponent: CFString](kcvpixelformatbitspercomponent.md)
 - [var kCVPixelFormatType_30RGB_r210: OSType](kcvpixelformattype_30rgb_r210.md)
+- [var kCVPixelFormatType_96VersatileBayerPacked12: OSType](kcvpixelformattype_96versatilebayerpacked12.md)
 - [var kCVPixelFormatType_Lossless_420YpCbCr10PackedBiPlanarFullRange: OSType](kcvpixelformattype_lossless_420ypcbcr10packedbiplanarfullrange.md)
 - [var kCVPixelFormatType_Lossless_64RGBAHalf: OSType](kcvpixelformattype_lossless_64rgbahalf.md)
 ### Functions
@@ -82,8 +122,12 @@ Core Video provides a pipeline model for digital video. It simplifies working wi
 - [func CVMetalBufferCacheGetTypeID() -> CFTypeID](cvmetalbuffercachegettypeid().md)
 - [func CVMetalBufferGetBuffer(CVMetalBuffer) -> (any MTLBuffer)?](cvmetalbuffergetbuffer(_:).md)
 - [func CVMetalBufferGetTypeID() -> CFTypeID](cvmetalbuffergettypeid().md)
+- [func CVPixelBufferIsCompatibleWithAttributes(CVPixelBuffer, CFDictionary?) -> Bool](cvpixelbufferiscompatiblewithattributes(_:_:).md)
+- [func CVPixelFormatTypeCopyFourCharCodeString(OSType) -> CFString](cvpixelformattypecopyfourcharcodestring(_:).md)
 ### Type Aliases
 - [typealias CVMetalBuffer](cvmetalbuffer.md)
+### Enumerations
+- [enum CVImageBufferOriginPosition](cvimagebufferoriginposition.md)
 
 
 ---

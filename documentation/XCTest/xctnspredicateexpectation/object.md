@@ -1,6 +1,6 @@
 # object
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An optional object against which the predicate evaluates.

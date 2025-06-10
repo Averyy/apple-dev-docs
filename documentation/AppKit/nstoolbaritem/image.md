@@ -24,6 +24,7 @@ If you assign a custom view to the toolbar item, modifying this property updates
 
 ## See Also
 
+- [var backgroundTintColor: UIColor?](nstoolbaritem/backgroundtintcolor.md)
 - [var view: NSView?](nstoolbaritem/view.md)
   The custom view you use to draw the toolbar item.
 

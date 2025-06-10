@@ -1,6 +1,6 @@
 # hash(into:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 **Availability**:

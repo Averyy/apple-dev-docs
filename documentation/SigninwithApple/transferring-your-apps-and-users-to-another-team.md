@@ -1,6 +1,6 @@
 # Transferring your apps and users to another team
 
-**Framework**: Signinwithapple
+**Framework**: Sign in with Apple
 
 Migrate Sign in with Apple users to another team.
 
@@ -103,4 +103,4 @@ If you need to communicate with users during this process, do so using their pri
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SigninwithApple/transferring-your-apps-and-users-to-another-team)*
+*[View on Apple Developer](https://developer.apple.com/documentation/signinwithapple/transferring-your-apps-and-users-to-another-team)*

@@ -19,6 +19,10 @@ A picker style that presents the options as a menu when the user presses a butto
 static var menu: MenuPickerStyle { get }
 ```
 
+## Mentions
+
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+
 #### Discussion
 
 Use this style when there are more than five options. Consider using [`inline`](pickerstyle/inline.md) when there are fewer than five options.

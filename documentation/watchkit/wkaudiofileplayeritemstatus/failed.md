@@ -1,6 +1,6 @@
 # WKAudioFilePlayerItemStatus.failed
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The item can’t be played.

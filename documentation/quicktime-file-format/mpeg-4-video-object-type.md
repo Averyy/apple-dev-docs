@@ -1,6 +1,6 @@
 # MPEG-4 video object type
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 #### Overview
 

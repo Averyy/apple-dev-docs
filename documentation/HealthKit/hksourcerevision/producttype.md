@@ -1,6 +1,6 @@
 # productType
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: property
 
 A string that identifies the device used to save a sample.

@@ -6,12 +6,13 @@
 A view for displaying 3D SceneKit content.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.1+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 
@@ -123,6 +124,8 @@ For additional important methods and properties for working with SceneKit views,
 
 - [class SCNScene](scnscene.md)
   A container for the node hierarchy and global properties that together form a displayable 3D scene.
+- [struct SceneView](sceneview.md)
+  A SwiftUI view for displaying 3D SceneKit content.
 
 
 ---

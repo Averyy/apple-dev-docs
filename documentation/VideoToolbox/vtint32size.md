@@ -1,6 +1,6 @@
 # VTInt32Size
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: struct
 
 A structure that represents a 32-bit integer size value.

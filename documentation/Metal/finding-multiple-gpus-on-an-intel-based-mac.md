@@ -67,7 +67,7 @@ For more information about GPU memory bandwidth, see [`Adjusting for GPU Memory 
   Keep up to date with the optimal device for your display.
 - [func MTLCopyAllDevices() -> [any MTLDevice]](mtlcopyalldevices().md)
   Returns an array of all the Metal device instances in the system.
-- [func MTLCopyAllDevicesWithObserver(handler: MTLDeviceNotificationHandler) -> (devices: [any MTLDevice], observer: NSObject)](mtlcopyalldeviceswithobserver(handler:).md)
+- [func MTLCopyAllDevicesWithObserver(handler: (any MTLDevice, MTLDeviceNotificationName) -> Void) -> (devices: [any MTLDevice], observer: NSObject)](mtlcopyalldeviceswithobserver(handler:).md)
   Returns an array of all the Metal GPU devices in the system and registers a notification handler that Metal calls when the device list changes.
 - [func MTLRemoveDeviceObserver(any NSObjectProtocol)](mtlremovedeviceobserver(_:).md)
   Removes a registered observer of device notifications.
@@ -81,4 +81,4 @@ For more information about GPU memory bandwidth, see [`Adjusting for GPU Memory 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/finding-multiple-gpus-on-an-intel-based-mac)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/finding-multiple-gpus-on-an-intel-based-mac)*

@@ -1,6 +1,6 @@
 # password(withIdentifier:)
 
-**Framework**: Managedapp  
+**Framework**: ManagedApp  
 **Kind**: method
 
 Provides a password by its identifier.

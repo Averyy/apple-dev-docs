@@ -25,8 +25,6 @@ func deleteAllData()
 
 > ⚠️ **Warning**: After you call this method, the container immediately deletes all data from the app’s persistent storage. This deletion is permanent and cannot be undone.
 
-After you call this method, the container immediately deletes all data from the app’s persistent storage. This deletion is permanent and cannot be undone.
-
 
 ---
 

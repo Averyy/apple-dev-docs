@@ -1,6 +1,6 @@
 # distance(from:to:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns the distance between two indices.

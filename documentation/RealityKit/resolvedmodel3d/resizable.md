@@ -1,6 +1,6 @@
 # resizable(_:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: method
 
 Allows this model to resize itself to fit its container.

@@ -16,7 +16,7 @@ A collection of individual counters a GPU device supports for a counter set.
 ## Declaration
 
 ```swift
-protocol MTLCounterSet : NSObjectProtocol
+protocol MTLCounterSet : NSObjectProtocol, Sendable
 ```
 
 #### Overview
@@ -24,8 +24,6 @@ protocol MTLCounterSet : NSObjectProtocol
 You can determine which counter sets a GPU supports by checking an [`MTLDevice`](mtldevice.md) instance’s [`counterSets`](mtldevice/countersets.md) property. A counter set’s [`name`](mtlcounterset/name.md) property typically matches one of the common counter set names that [`MTLCommonCounterSet`](mtlcommoncounterset.md) defines. Check whether a GPU device supports a specific counter by comparing elements of the [`counters`](mtlcounterset/counters.md) property with a counter’s common name that [`MTLCommonCounter`](mtlcommoncounter.md) defines.
 
 > ❗ **Important**:  Some GPUs may only support some of the counters within a counter set.
-
- Some GPUs may only support some of the counters within a counter set.
 
 For more information, see [`Confirming which Counters and Counter Sets a GPU Supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md).
 
@@ -42,6 +40,8 @@ For more information, see [`Confirming which Counters and Counter Sets a GPU Sup
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -3,17 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A dictionary that contains the device’s reduced security settings.
+Reports which security features the user disables in `recoveryOS`. This property is only present for Apple silicon when `SecureBootLevel` is `medium`.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.1+
-- watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- macOS 11.0+
 
 ## Declaration
 
@@ -21,16 +14,9 @@ A dictionary that contains the device’s reduced security settings.
 object SecurityInfoResponse.SecurityInfo.SecureBoot.ReducedSecurity
 ```
 
-## See Also
+#### Discussion
 
-- [object SecurityInfoResponse.SecurityInfo.FirewallSettings](securityinforesponse/securityinfo-data.dictionary/firewallsettings-data.dictionary.md)
-  A dictionary that contains the firewall settings.
-- [object SecurityInfoResponse.SecurityInfo.FirmwarePasswordStatus](securityinforesponse/securityinfo-data.dictionary/firmwarepasswordstatus-data.dictionary.md)
-  A dictionary that contains the status of the EFI firmware password.
-- [object SecurityInfoResponse.SecurityInfo.ManagementStatus](securityinforesponse/securityinfo-data.dictionary/managementstatus-data.dictionary.md)
-  A dictionary that contains the status of the device’s MDM enrollment.
-- [object SecurityInfoResponse.SecurityInfo.SecureBoot](securityinforesponse/securityinfo-data.dictionary/secureboot-data.dictionary.md)
-  The response object for the secure boot settings.
+Available in iOS 11 and later.
 
 
 ---

@@ -1,7 +1,7 @@
-# UINavigationItem.SearchBarPlacement.inline
+# inline
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: property
 
 A constant that places the search bar on the trailing edge of the navigation bar, inline with the other content.
 
@@ -14,7 +14,7 @@ A constant that places the search bar on the trailing edge of the navigation bar
 ## Declaration
 
 ```swift
-case inline
+static var inline: UINavigationItem.SearchBarPlacement { get }
 ```
 
 ## See Also

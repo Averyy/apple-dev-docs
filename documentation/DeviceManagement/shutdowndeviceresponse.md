@@ -3,14 +3,12 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to shut down.
+A response from the device after it processes the command to remotely and immediately shut down a device.
 
 **Availability**:
 - iOS 10.3+
 - iPadOS 10.3+
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,14 +18,14 @@ object ShutDownDeviceResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object ShutDownDeviceResponse.ErrorChainItem](shutdowndeviceresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 
 ## See Also
 
 - [object ShutDownDeviceCommand](shutdowndevicecommand.md)
-  The command to shut down a device.
+  The command to remotely and immediately shut down a device.
 
 
 ---

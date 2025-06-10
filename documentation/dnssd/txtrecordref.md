@@ -26,6 +26,11 @@ typealias TXTRecordRef = _TXTRecordRef_t
 - [Force Natural Alignment](force-natural-alignment.md)
 - [Private Data](private-data.md)
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+
 ## See Also
 
 - [typealias DNSServiceErrorType](dnsserviceerrortype.md)

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A dictionary that describes an error chain.
+A dictionary that describes an error chain item.
 
 **Availability**:
 - iOS 4.0+
@@ -11,8 +11,6 @@ A dictionary that describes an error chain.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

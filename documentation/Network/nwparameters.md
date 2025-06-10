@@ -104,7 +104,14 @@ final class NWParameters
 - [NWParameters.PrivacyContext](nwparameters/privacycontext.md)
   An object that defines the privacy requirements for a set of connections.
 ### Instance Properties
+- [var allowUltraConstrainedPaths: Bool](nwparameters/allowultraconstrainedpaths.md)
+  Allow connection to use interfaces considered ultra-constrained by the system
 - [var attribution: NWParameters.Attribution](nwparameters/attribution-swift.property.md)
+- [var wifiAware: WAParameters](nwparameters/wifiaware.md)
+  Get and set Wi-Fi Aware specific connection parameters.
+### Instance Methods
+- [func wifiAware((inout WAParameters) -> Void) -> Self](nwparameters/wifiaware(_:).md)
+  Configure Wi-Fi Aware properties on an `NWParameters` object.
 ### Type Properties
 - [class var applicationService: NWParameters](nwparameters/applicationservice.md)
   The default parameters for connecting with other, local devices that are running your app.
@@ -114,8 +121,11 @@ final class NWParameters
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [NWParametersProvider](nwparametersprovider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

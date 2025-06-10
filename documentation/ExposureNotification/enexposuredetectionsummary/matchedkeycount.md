@@ -20,8 +20,6 @@ var matchedKeyCount: UInt64 { get }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 
- This property is available in iOS 12.5, and in iOS 13.5 and later.
-
 The framework computes this property’s value across all matching exposures, not just exposures that meet or exceed [`minimumRiskScore`](enexposureconfiguration/minimumriskscore.md) or [`minimumRiskScoreFullRange`](enexposureconfiguration/minimumriskscorefullrange.md).
 
 This value is only available when `ENAPIVersion` is set to `1` in the app’s `Info.plist` file.

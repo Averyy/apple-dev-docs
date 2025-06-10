@@ -1,6 +1,6 @@
 # Longitude
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: typealias
 
 A numeric value indicating the longitude of the coordinate between `-180` and `180`.

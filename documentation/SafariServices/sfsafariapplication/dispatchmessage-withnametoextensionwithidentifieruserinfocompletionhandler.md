@@ -1,6 +1,6 @@
 # dispatchMessage(withName:toExtensionWithIdentifier:userInfo:completionHandler:)
 
-**Framework**: Safariservices  
+**Framework**: Safari Services  
 **Kind**: method
 
 Sends a message to a Safari app extension, launching Safari if necessary.

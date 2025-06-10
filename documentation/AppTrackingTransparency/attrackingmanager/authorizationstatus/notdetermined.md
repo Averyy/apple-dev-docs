@@ -1,6 +1,6 @@
 # ATTrackingManager.AuthorizationStatus.notDetermined
 
-**Framework**: Apptrackingtransparency  
+**Framework**: App Tracking Transparency  
 **Kind**: case
 
 The value that returns when the app can’t determine the user’s authorization status for access to app-related data for tracking the user or the device.

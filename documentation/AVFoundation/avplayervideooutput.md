@@ -26,8 +26,6 @@ Attach a video output to an [`AVPlayer`](avplayer.md) object to access the playe
 
 > ❗ **Important**:  You can only attach an instance of this class to a single player at a time. Attempting to attach the instance to more than one player results in the system raising an exception.
 
- You can only attach an instance of this class to a single player at a time. Attempting to attach the instance to more than one player results in the system raising an exception.
-
 ## Topics
 
 ### Creating an output
@@ -37,6 +35,12 @@ Attach a video output to an [`AVPlayer`](avplayer.md) object to access the playe
 - [func taggedBuffers(forHostTime: CMTime) -> (taggedBufferGroup: [CMTaggedBuffer], presentationTime: CMTime, activeConfiguration: AVPlayerVideoOutput.Configuration)?](avplayervideooutput/taggedbuffers(forhosttime:).md)
 - [AVPlayerVideoOutput.Configuration](avplayervideooutput/configuration.md)
   An object that provides configuration information for the related player item.
+### Structures
+- [AVPlayerVideoOutput.Sample](avplayervideooutput/sample.md)
+  A video frame along with auxiliary information for display at the specified presentation time.
+### Instance Methods
+- [func sample(forHostTime: CMTime) -> AVPlayerVideoOutput.Sample?](avplayervideooutput/sample(forhosttime:).md)
+  Retrieves a video sample along with auxiliary information for display at the specified host time.
 
 ## Relationships
 
@@ -49,6 +53,8 @@ Attach a video output to an [`AVPlayer`](avplayer.md) object to access the playe
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # SAMPLE_BUFFERS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

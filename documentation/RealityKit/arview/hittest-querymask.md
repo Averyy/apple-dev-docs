@@ -10,6 +10,7 @@ Searches for objects corresponding to a point in the view based on a query and a
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

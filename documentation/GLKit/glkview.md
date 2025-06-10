@@ -25,8 +25,6 @@ To use this class in your application, create a new [`GLKView`](glkview.md) obje
 
 > ❗ **Important**:  Your drawing method should only modify the contents of the framebuffer object. Never attempt to read the pixel information from the underlying framebuffer object, modify or dispose of the framebuffer object, or read its other properties by calling OpenGL ES functions. Instead, rely on the properties and methods provided by the [`GLKView`](glkview.md) class.
 
- Your drawing method should only modify the contents of the framebuffer object. Never attempt to read the pixel information from the underlying framebuffer object, modify or dispose of the framebuffer object, or read its other properties by calling OpenGL ES functions. Instead, rely on the properties and methods provided by the [`GLKView`](glkview.md) class.
-
 The [`GLKView`](glkview.md) class can be used in conjunction with a [`GLKViewController`](glkviewcontroller.md) object to create an animation rendering loop that redraws the contents of the view at a specified frame rate.
 
 ##### Subclassing Notes
@@ -92,6 +90,8 @@ Typically, there is no need to subclass the [`GLKView`](glkview.md) class. Inste
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)

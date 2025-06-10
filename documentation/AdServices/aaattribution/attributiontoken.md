@@ -1,6 +1,6 @@
 # attributionToken()
 
-**Framework**: Adservices  
+**Framework**: AdServices  
 **Kind**: method
 
 Generates a token.

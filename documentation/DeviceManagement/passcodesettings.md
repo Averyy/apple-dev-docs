@@ -11,8 +11,6 @@ The declaration to configure passcode policy settings.
 - macOS 13.0+
 - visionOS 2.0+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,20 +24,20 @@ Specify `com.apple.configuration.passcode.settings` as the declaration type.
 
 ##### Configuration Availability
 
-| Allowed in Device Enrollment | iOS, macOS, watchOS |
+|  |  |
 | --- | --- |
-| Allowed in User Enrollment | iOS |
-| Allowed in Local Enrollment | iOS, macOS, watchOS |
-| Allowed in System Scope | iOS, macOS, watchOS |
-| Allowed in User Scope | macOS |
+| Allowed in supervised enrollment | iOS, macOS, Shared iPad, visionOS, watchOS |
+| Allowed in device enrollment | iOS, Shared iPad, visionOS |
+| Allowed in user enrollment | iOS, Shared iPad, visionOS |
+| Allowed in local enrollment | iOS, macOS, Shared iPad, visionOS, watchOS |
+| Allowed in system scope | iOS, macOS, visionOS, watchOS |
+| Allowed in user scope | macOS |
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object PasscodeSettingsCustomRegexObject](passcodesettingscustomregexobject.md)
   A regular expression and its description to enforce password compliance.
-- [object PasscodeSettingsCustomRegex_DescriptionObject](passcodesettingscustomregex_descriptionobject.md)
-  A dictionary that contains supported OS language IDs for the keys and values that represent a localized description of the policy that the regular expression enforces.
 
 ## See Also
 
@@ -59,6 +57,8 @@ Specify `com.apple.configuration.passcode.settings` as the declaration type.
   The declaration to configure a Calendar subscription.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AudioAccessorySettings](audioaccessorysettings.md)
+  The declaration to configure audio accessory settings.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
@@ -71,8 +71,6 @@ Specify `com.apple.configuration.passcode.settings` as the declaration type.
   The declaration to test the MDM system.
 - [object MathSettings](mathsettings.md)
   The declaration to configure the math and calculator apps.
-- [object SafariExtensionSettings](safariextensionsettings.md)
-  The declaration to configure Safari Extensions.
 
 
 ---

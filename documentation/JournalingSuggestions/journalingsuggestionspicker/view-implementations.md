@@ -37,6 +37,8 @@
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityAction<S>(named: S, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityaction(named:_:)-1hgvn.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
+- [func accessibilityAction(named: LocalizedStringResource, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityaction(named:_:)-4okoi.md)
+  Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityAction(named: Text, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityaction(named:_:)-5vmp4.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityAction(named: LocalizedStringKey, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityaction(named:_:)-6fe24.md)
@@ -61,9 +63,13 @@
   Adds a descriptor to a View that represents a chart to make the chart’s contents accessible to all users.
 - [func accessibilityChildren<V>(children: () -> V) -> some View](journalingsuggestionspicker/accessibilitychildren(children:).md)
   Replaces the existing accessibility element’s children with one or more new synthetic accessibility elements.
+- [func accessibilityCustomContent<V>(LocalizedStringResource, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitycustomcontent(_:_:importance:)-2ivhl.md)
+  Add additional accessibility information to the view.
 - [func accessibilityCustomContent<L, V>(L, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitycustomcontent(_:_:importance:)-2s1it.md)
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent<V>(LocalizedStringKey, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitycustomcontent(_:_:importance:)-4j0xt.md)
+  Add additional accessibility information to the view.
+- [func accessibilityCustomContent(AccessibilityCustomContentKey, LocalizedStringResource, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitycustomcontent(_:_:importance:)-5bo1d.md)
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent(AccessibilityCustomContentKey, Text?, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitycustomcontent(_:_:importance:)-61jzh.md)
   Add additional accessibility information to the view.
@@ -71,14 +77,22 @@
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent(LocalizedStringKey, LocalizedStringKey, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitycustomcontent(_:_:importance:)-73f7v.md)
   Add additional accessibility information to the view.
+- [func accessibilityCustomContent(LocalizedStringResource, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitycustomcontent(_:_:importance:)-77gbr.md)
+  Add additional accessibility information to the view.
 - [func accessibilityCustomContent<V>(AccessibilityCustomContentKey, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitycustomcontent(_:_:importance:)-8cu5o.md)
+  Add additional accessibility information to the view.
+- [func accessibilityCustomContent(LocalizedStringResource, LocalizedStringResource, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitycustomcontent(_:_:importance:)-8opcn.md)
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent(LocalizedStringKey, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitycustomcontent(_:_:importance:)-9su3q.md)
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent(Text, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitycustomcontent(_:_:importance:)-9ycw5.md)
   Add additional accessibility information to the view.
+- [func accessibilityDefaultFocus<Value>(AccessibilityFocusState<Value>.Binding, Value) -> some View](journalingsuggestionspicker/accessibilitydefaultfocus(_:_:).md)
+  Defines a region in which default accessibility focus is evaluated by assigning a value to a given accessibility focus state binding.
 - [func accessibilityDirectTouch(Bool, options: AccessibilityDirectTouchOptions) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitydirecttouch(_:options:).md)
   Explicitly set whether this accessibility element is a direct touch area. Direct touch areas passthrough touch events to the app rather than being handled through an assistive technology, such as VoiceOver. The modifier accepts an optional `AccessibilityDirectTouchOptions` option set to customize the functionality of the direct touch area.
+- [func accessibilityDragPoint(UnitPoint, description: LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitydragpoint(_:description:)-26m4a.md)
+  The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint<S>(UnitPoint, description: S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitydragpoint(_:description:)-42oyd.md)
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint(UnitPoint, description: LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitydragpoint(_:description:)-4nohi.md)
@@ -86,6 +100,8 @@
 - [func accessibilityDragPoint(UnitPoint, description: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitydragpoint(_:description:)-72lg9.md)
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint<S>(UnitPoint, description: S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitydragpoint(_:description:isenabled:)-1f1gm.md)
+  The point an assistive technology should use to begin a drag interaction.
+- [func accessibilityDragPoint(UnitPoint, description: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitydragpoint(_:description:isenabled:)-2goz2.md)
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint(UnitPoint, description: Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitydragpoint(_:description:isenabled:)-6al8z.md)
   The point an assistive technology should use to begin a drag interaction.
@@ -95,7 +111,11 @@
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitydroppoint(_:description:)-1ulec.md)
   The point an assistive technology should use to end a drag interaction.
+- [func accessibilityDropPoint(UnitPoint, description: LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitydroppoint(_:description:)-43gy4.md)
+  The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitydroppoint(_:description:)-4rzo3.md)
+  The point an assistive technology should use to end a drag interaction.
+- [func accessibilityDropPoint(UnitPoint, description: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitydroppoint(_:description:isenabled:)-2god1.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint<S>(UnitPoint, description: S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitydroppoint(_:description:isenabled:)-58pa8.md)
   The point an assistive technology should use to end a drag interaction.
@@ -115,11 +135,15 @@
   Specifies whether to hide this view from system accessibility features.
 - [func accessibilityHidden(Bool, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityhidden(_:isenabled:).md)
   Specifies whether to hide this view from system accessibility features.
+- [func accessibilityHint(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityhint(_:)-2a4cr.md)
+  Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityhint(_:)-81zrv.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityhint(_:)-8ozjn.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityhint(_:)-91ruu.md)
+  Communicates to the user what happens after performing the view’s action.
+- [func accessibilityHint(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityhint(_:isenabled:)-21ayy.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityhint(_:isenabled:)-3rqym.md)
   Communicates to the user what happens after performing the view’s action.
@@ -151,6 +175,10 @@
   Adds a label to the view that describes its contents.
 - [func accessibilityLabel<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitylabel(_:)-8ako1.md)
   Adds a label to the view that describes its contents.
+- [func accessibilityLabel(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitylabel(_:)-94r0x.md)
+  Adds a label to the view that describes its contents.
+- [func accessibilityLabel(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitylabel(_:isenabled:)-1wmn6.md)
+  Adds a label to the view that describes its contents.
 - [func accessibilityLabel(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitylabel(_:isenabled:)-36h5o.md)
   Adds a label to the view that describes its contents.
 - [func accessibilityLabel<S>(S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilitylabel(_:isenabled:)-6pa09.md)
@@ -179,6 +207,10 @@
   Create an Accessibility Rotor replacing the specified system-provided Rotor.
 - [func accessibilityRotor<Content>(LocalizedStringKey, entries: () -> Content) -> some View](journalingsuggestionspicker/accessibilityrotor(_:entries:)-7a1dz.md)
   Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
+- [func accessibilityRotor<Content>(LocalizedStringResource, entries: () -> Content) -> some View](journalingsuggestionspicker/accessibilityrotor(_:entries:)-8s6zc.md)
+  Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
+- [func accessibilityRotor<EntryModel, ID>(LocalizedStringResource, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](journalingsuggestionspicker/accessibilityrotor(_:entries:entryid:entrylabel:)-2o8az.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel, ID>(AccessibilitySystemRotor, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](journalingsuggestionspicker/accessibilityrotor(_:entries:entryid:entrylabel:)-466fa.md)
   Create an Accessibility Rotor replacing the specified system-provided Rotor.
 - [func accessibilityRotor<EntryModel, ID>(LocalizedStringKey, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](journalingsuggestionspicker/accessibilityrotor(_:entries:entryid:entrylabel:)-4dumf.md)
@@ -193,6 +225,8 @@
   Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel>(Text, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](journalingsuggestionspicker/accessibilityrotor(_:entries:entrylabel:)-5a567.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
+- [func accessibilityRotor<EntryModel>(LocalizedStringResource, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](journalingsuggestionspicker/accessibilityrotor(_:entries:entrylabel:)-7v028.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel>(AccessibilitySystemRotor, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](journalingsuggestionspicker/accessibilityrotor(_:entries:entrylabel:)-9eig4.md)
   Create an Accessibility Rotor replacing the specified system-provided Rotor.
 - [func accessibilityRotor(AccessibilitySystemRotor, textRanges: [Range<String.Index>]) -> some View](journalingsuggestionspicker/accessibilityrotor(_:textranges:)-1ljs7.md)
@@ -201,12 +235,22 @@
   Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 - [func accessibilityRotor(LocalizedStringKey, textRanges: [Range<String.Index>]) -> some View](journalingsuggestionspicker/accessibilityrotor(_:textranges:)-2fptc.md)
   Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
+- [func accessibilityRotor(LocalizedStringResource, textRanges: [Range<String.Index>]) -> some View](journalingsuggestionspicker/accessibilityrotor(_:textranges:)-6omg.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 - [func accessibilityRotor<L>(L, textRanges: [Range<String.Index>]) -> some View](journalingsuggestionspicker/accessibilityrotor(_:textranges:)-925bi.md)
   Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 - [func accessibilityRotorEntry<ID>(id: ID, in: Namespace.ID) -> some View](journalingsuggestionspicker/accessibilityrotorentry(id:in:).md)
   Defines an explicit identifier tying an Accessibility element for this view to an entry in an Accessibility Rotor.
 - [func accessibilityScrollAction((Edge) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityscrollaction(_:).md)
   Adds an accessibility scroll action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
+- [func accessibilityScrollStatus(some StringProtocol, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityscrollstatus(_:isenabled:)-7h7vs.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityscrollstatus(_:isenabled:)-7kvbg.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityscrollstatus(_:isenabled:)-97nga.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityscrollstatus(_:isenabled:)-9wwro.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
 - [func accessibilityShowsLargeContentViewer() -> some View](journalingsuggestionspicker/accessibilityshowslargecontentviewer.md)
   Adds a default large content view to be shown by the large content viewer.
 - [func accessibilityShowsLargeContentViewer<V>(() -> V) -> some View](journalingsuggestionspicker/accessibilityshowslargecontentviewer(_:).md)
@@ -217,11 +261,15 @@
   Sets an accessibility text content type.
 - [func accessibilityValue<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityvalue(_:)-1naia.md)
   Adds a textual description of the value that the view contains.
+- [func accessibilityValue(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityvalue(_:)-5ekxx.md)
+  Adds a textual description of the value that the view contains.
 - [func accessibilityValue(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityvalue(_:)-6qtyn.md)
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityvalue(_:)-84e5b.md)
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityvalue(_:isenabled:)-2ynz.md)
+  Adds a textual description of the value that the view contains.
+- [func accessibilityValue(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityvalue(_:isenabled:)-4rrkw.md)
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue<S>(S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](journalingsuggestionspicker/accessibilityvalue(_:isenabled:)-84w4v.md)
   Adds a textual description of the value that the view contains.
@@ -239,6 +287,10 @@
   Presents an alert when a given condition is true, using a localized string key for the title.
 - [func alert<S, A>(S, isPresented: Binding<Bool>, actions: () -> A) -> some View](journalingsuggestionspicker/alert(_:ispresented:actions:)-6rupk.md)
   Presents an alert when a given condition is true, using a string variable as a title.
+- [func alert<A>(LocalizedStringResource, isPresented: Binding<Bool>, actions: () -> A) -> some View](journalingsuggestionspicker/alert(_:ispresented:actions:)-8l6xp.md)
+  Presents an alert when a given condition is true, using a localized string resource for the title.
+- [func alert<A, M>(LocalizedStringResource, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](journalingsuggestionspicker/alert(_:ispresented:actions:message:)-1vamy.md)
+  Presents an alert with a message when a given condition is true, using a localized string resource for a title.
 - [func alert<S, A, M>(S, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](journalingsuggestionspicker/alert(_:ispresented:actions:message:)-37ofv.md)
   Presents an alert with a message when a given condition is true using a string variable as a title.
 - [func alert<A, M>(Text, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](journalingsuggestionspicker/alert(_:ispresented:actions:message:)-4iraz.md)
@@ -247,6 +299,8 @@
   Presents an alert with a message when a given condition is true, using a localized string key for a title.
 - [func alert<S, A, T>(S, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](journalingsuggestionspicker/alert(_:ispresented:presenting:actions:)-2s6i8.md)
   Presents an alert using the given data to produce the alert’s content and a string variable as a title.
+- [func alert<A, T>(LocalizedStringResource, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](journalingsuggestionspicker/alert(_:ispresented:presenting:actions:)-61b8y.md)
+  Presents an alert using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert<A, T>(Text, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](journalingsuggestionspicker/alert(_:ispresented:presenting:actions:)-7jknh.md)
   Presents an alert using the given data to produce the alert’s content and a text view as a title.
 - [func alert<A, T>(LocalizedStringKey, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](journalingsuggestionspicker/alert(_:ispresented:presenting:actions:)-9mca.md)
@@ -257,6 +311,8 @@
   Presents an alert with a message using the given data to produce the alert’s content and a string variable as a title.
 - [func alert<A, M, T>(Text, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](journalingsuggestionspicker/alert(_:ispresented:presenting:actions:message:)-5hfk3.md)
   Presents an alert with a message using the given data to produce the alert’s content and a text view for a title.
+- [func alert<A, M, T>(LocalizedStringResource, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](journalingsuggestionspicker/alert(_:ispresented:presenting:actions:message:)-7vvg2.md)
+  Presents an alert with a message using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert(isPresented: Binding<Bool>, content: () -> Alert) -> some View](journalingsuggestionspicker/alert(ispresented:content:).md)
   Presents an alert to the user.
 - [func alert<E, A>(isPresented: Binding<Bool>, error: E?, actions: () -> A) -> some View](journalingsuggestionspicker/alert(ispresented:error:actions:).md)
@@ -275,6 +331,8 @@
   Configures whether this view participates in hit test operations.
 - [func allowsTightening(Bool) -> some View](journalingsuggestionspicker/allowstightening(_:).md)
   Sets whether text in this view can compress the space between characters when necessary to fit text in a line.
+- [func allowsWindowActivationEvents() -> some View](journalingsuggestionspicker/allowswindowactivationevents.md)
+  Configures gestures in this view hierarchy to handle events that activate the containing window.
 - [func allowsWindowActivationEvents(Bool?) -> some View](journalingsuggestionspicker/allowswindowactivationevents(_:).md)
   Configures whether gestures in this view hierarchy can handle events that activate the containing window.
 - [func anchorPreference<A, K>(key: K.Type, value: Anchor<A>.Source, transform: (Anchor<A>) -> K.Value) -> some View](journalingsuggestionspicker/anchorpreference(key:value:transform:).md)
@@ -289,6 +347,16 @@
   Constrains this view’s dimensions to the specified aspect ratio.
 - [func aspectRatio(CGSize, contentMode: ContentMode) -> some View](journalingsuggestionspicker/aspectratio(_:contentmode:)-es33.md)
   Constrains this view’s dimensions to the aspect ratio of the given size.
+- [func assistiveAccessNavigationIcon(Image) -> some View](journalingsuggestionspicker/assistiveaccessnavigationicon(_:).md)
+  Configures the view’s icon for purposes of navigation.
+- [func assistiveAccessNavigationIcon(systemImage: String) -> some View](journalingsuggestionspicker/assistiveaccessnavigationicon(systemimage:).md)
+  Configures the view’s icon for purposes of navigation.
+- [func attributedTextFormattingDefinition<S>(S.Type) -> some View](journalingsuggestionspicker/attributedtextformattingdefinition(_:)-3m7mz.md)
+  Apply an attribute-only text formatting definition to all nested editor views.
+- [func attributedTextFormattingDefinition<D>(D) -> some View](journalingsuggestionspicker/attributedtextformattingdefinition(_:)-4f1ol.md)
+  Apply a text formatting definition to all nested editor views.
+- [func attributedTextFormattingDefinition<S>(KeyPath<AttributeScopes, S.Type>) -> some View](journalingsuggestionspicker/attributedtextformattingdefinition(_:)-8qaic.md)
+  Apply an attribute-only text formatting definition to all nested editor views.
 - [func autocapitalization(UITextAutocapitalizationType) -> some View](journalingsuggestionspicker/autocapitalization(_:).md)
   Sets whether to apply auto-capitalization to this view.
 - [func autocorrectionDisabled(Bool) -> some View](journalingsuggestionspicker/autocorrectiondisabled(_:).md)
@@ -309,6 +377,8 @@
   Sets the view’s background to an insettable shape filled with the default background style.
 - [func background<S>(in: S, fillStyle: FillStyle) -> some View](journalingsuggestionspicker/background(in:fillstyle:)-6sg8w.md)
   Sets the view’s background to a shape filled with the default background style.
+- [func backgroundExtensionEffect() -> some View](journalingsuggestionspicker/backgroundextensioneffect.md)
+  Adds the background extension effect to the view. The view will be duplicated into mirrored copies which will be placed around the view on any edge with available safe area. Additionally, a blur effect will be applied on top to blur out the copies.
 - [func backgroundPreferenceValue<Key, T>(Key.Type, (Key.Value) -> T) -> some View](journalingsuggestionspicker/backgroundpreferencevalue(_:_:).md)
   Reads the specified preference value from the view, using it to produce a second view that is applied as the background of the original view.
 - [func backgroundPreferenceValue<K, V>(K.Type, alignment: Alignment, (K.Value) -> V) -> some View](journalingsuggestionspicker/backgroundpreferencevalue(_:alignment:_:).md)
@@ -321,6 +391,8 @@
   Generates a badge for the view from a text view.
 - [func badge(LocalizedStringKey?) -> some View](journalingsuggestionspicker/badge(_:)-5r843.md)
   Generates a badge for the view from a localized string key.
+- [func badge(LocalizedStringResource?) -> some View](journalingsuggestionspicker/badge(_:)-602yk.md)
+  Generates a badge for the view from a localized string resource.
 - [func badge(Int) -> some View](journalingsuggestionspicker/badge(_:)-97edb.md)
   Generates a badge for the view from an integer value.
 - [func badgeProminence(BadgeProminence) -> some View](journalingsuggestionspicker/badgeprominence(_:).md)
@@ -341,6 +413,7 @@
   Sets the border shape for buttons in this view.
 - [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](journalingsuggestionspicker/buttonrepeatbehavior(_:).md)
   Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
+- [func buttonSizing(ButtonSizing) -> some View](journalingsuggestionspicker/buttonsizing(_:).md)
 - [func buttonStyle<S>(S) -> some View](journalingsuggestionspicker/buttonstyle(_:)-8jpwp.md)
   Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
 - [func buttonStyle<S>(S) -> some View](journalingsuggestionspicker/buttonstyle(_:)-h9rk.md)
@@ -365,10 +438,14 @@
   Presents a confirmation dialog when a given condition is true, using a string variable as a title.
 - [func confirmationDialog<A>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](journalingsuggestionspicker/confirmationdialog(_:ispresented:titlevisibility:actions:)-61jug.md)
   Presents a confirmation dialog when a given condition is true, using a text view for the title.
+- [func confirmationDialog<A>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](journalingsuggestionspicker/confirmationdialog(_:ispresented:titlevisibility:actions:)-7hrxm.md)
+  Presents a confirmation dialog when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog<A, M>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](journalingsuggestionspicker/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-4jcth.md)
   Presents a confirmation dialog with a message when a given condition is true, using a localized string key for the title.
 - [func confirmationDialog<A, M>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](journalingsuggestionspicker/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-7aol7.md)
   Presents a confirmation dialog with a message when a given condition is true, using a text view for the title.
+- [func confirmationDialog<A, M>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](journalingsuggestionspicker/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-840mr.md)
+  Presents a confirmation dialog with a message when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog<S, A, M>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](journalingsuggestionspicker/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-9pevg.md)
   Presents a confirmation dialog with a message when a given condition is true, using a string variable for the title.
 - [func confirmationDialog<A, T>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](journalingsuggestionspicker/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-16dbi.md)
@@ -377,12 +454,16 @@
   Presents a confirmation dialog using data to produce the dialog’s content and a localized string key for the title.
 - [func confirmationDialog<S, A, T>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](journalingsuggestionspicker/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-4e2j4.md)
   Presents a confirmation dialog using data to produce the dialog’s content and a string variable for the title.
+- [func confirmationDialog<A, T>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](journalingsuggestionspicker/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-7nyyq.md)
+  Presents a confirmation dialog using data to produce the dialog’s content and a localized string resource for the title.
 - [func confirmationDialog<A, M, T>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](journalingsuggestionspicker/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-746xc.md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a text view for the message.
 - [func confirmationDialog<A, M, T>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](journalingsuggestionspicker/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-91mq9.md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string key for the title.
 - [func confirmationDialog<S, A, M, T>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](journalingsuggestionspicker/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-979au.md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a string variable for the title.
+- [func confirmationDialog<A, M, T>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](journalingsuggestionspicker/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-9s6xn.md)
+  Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string resource for the title.
 - [func containerBackground<S>(S, for: ContainerBackgroundPlacement) -> some View](journalingsuggestionspicker/containerbackground(_:for:).md)
   Sets the container background of the enclosing container using a view.
 - [func containerBackground<V>(for: ContainerBackgroundPlacement, alignment: Alignment, content: () -> V) -> some View](journalingsuggestionspicker/containerbackground(for:alignment:content:).md)
@@ -425,8 +506,10 @@
   Sets the contrast and separation between similar colors in this view.
 - [func controlGroupStyle<S>(S) -> some View](journalingsuggestionspicker/controlgroupstyle(_:).md)
   Sets the style for control groups within this view.
-- [func controlSize(ControlSize) -> some View](journalingsuggestionspicker/controlsize(_:).md)
+- [func controlSize(ControlSize) -> some View](journalingsuggestionspicker/controlsize(_:)-1i646.md)
   Sets the size for controls within this view.
+- [func controlSize<T>(T) -> some View](journalingsuggestionspicker/controlsize(_:)-5dstb.md)
+  Limits the control size within the view to the given range.
 - [func coordinateSpace(NamedCoordinateSpace) -> some View](journalingsuggestionspicker/coordinatespace(_:).md)
   Assigns a name to the view’s coordinate space, so other code can operate on dimensions like points and sizes relative to the named space.
 - [func coordinateSpace<T>(name: T) -> some View](journalingsuggestionspicker/coordinatespace(name:).md)
@@ -461,6 +544,8 @@
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
 - [func dialogSuppressionToggle(Text, isSuppressed: Binding<Bool>) -> some View](journalingsuggestionspicker/dialogsuppressiontoggle(_:issuppressed:)-5gkok.md)
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
+- [func dialogSuppressionToggle(LocalizedStringResource, isSuppressed: Binding<Bool>) -> some View](journalingsuggestionspicker/dialogsuppressiontoggle(_:issuppressed:)-7021k.md)
+  Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
 - [func dialogSuppressionToggle(isSuppressed: Binding<Bool>) -> some View](journalingsuggestionspicker/dialogsuppressiontoggle(issuppressed:).md)
   Enables user suppression of dialogs and alerts presented within `self`, with a default suppression message on macOS. Unused on other platforms.
 - [func disableAutocorrection(Bool?) -> some View](journalingsuggestionspicker/disableautocorrection(_:).md)
@@ -473,14 +558,34 @@
   Returns a new view that applies `shader` to `self` as a geometric distortion effect on the location of each pixel.
 - [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](journalingsuggestionspicker/documentbrowsercontextmenu(_:).md)
   Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
+- [func dragConfiguration(DragConfiguration) -> some View](journalingsuggestionspicker/dragconfiguration(_:).md)
+  Configures a drag session.
+- [func dragContainer<ItemID, Item, Data>(for: Item.Type, id: (Item) -> ItemID, in: Namespace.ID?, (ItemID) -> Data) -> some View](journalingsuggestionspicker/dragcontainer(for:id:in:_:).md)
+  A container with draggable views. The drag payload is based on the current selection.
+- [func dragContainer<Item, ItemID>(for: Item.Type, id: (Item) -> ItemID, in: Namespace.ID?, selection: @autoclosure () -> ItemID?, (ItemID) -> Item?) -> some View](journalingsuggestionspicker/dragcontainer(for:id:in:selection:_:)-4sj33.md)
+  A container with single item selection and draggable views. The drag payload is based on the current selection and provided identifiers.
+- [func dragContainer<ItemID, Item, Data>(for: Item.Type, id: (consuming Item) -> ItemID, in: Namespace.ID?, selection: @autoclosure () -> Array<ItemID>, (Array<ItemID>) -> Data) -> some View](journalingsuggestionspicker/dragcontainer(for:id:in:selection:_:)-50gen.md)
+  A container with multiple selection and draggable views. The drag payload is based on the current selection and provided identifiers.
+- [func dragContainer<Item, Data>(for: Item.Type, in: Namespace.ID?, (Item.ID) -> Data) -> some View](journalingsuggestionspicker/dragcontainer(for:in:_:).md)
+  A container with draggable views. The drag payload is identifiable. To form the payload, use the identifier of the dragged view inside the container.
+- [func dragContainer<Item, Data>(for: Item.Type, in: Namespace.ID?, selection: @autoclosure () -> Array<Item.ID>, (Array<Item.ID>) -> Data) -> some View](journalingsuggestionspicker/dragcontainer(for:in:selection:_:)-1ecl4.md)
+  A container with multiple selection and draggable views. The drag payload is identifiable and is based on the current selection.
+- [func dragContainer<Item>(for: Item.Type, in: Namespace.ID?, selection: @autoclosure () -> Item.ID?, (Item.ID) -> Item?) -> some View](journalingsuggestionspicker/dragcontainer(for:in:selection:_:)-4ffff.md)
+  A container with single item selection and draggable views. The drag payload is identifiable and is based on the current selection.
 - [func draggable<T>(@autoclosure () -> T) -> some View](journalingsuggestionspicker/draggable(_:).md)
   Activates this view as the source of a drag and drop operation.
 - [func draggable<V, T>(@autoclosure () -> T, preview: () -> V) -> some View](journalingsuggestionspicker/draggable(_:preview:).md)
   Activates this view as the source of a drag and drop operation.
+- [func draggable<T, ID>(for: T.Type, id: ID, (ID) -> T?) -> some View](journalingsuggestionspicker/draggable(for:id:_:).md)
+  Activates this view as the source of a drag-and-drop operation.
 - [func drawingGroup(opaque: Bool, colorMode: ColorRenderingMode) -> some View](journalingsuggestionspicker/drawinggroup(opaque:colormode:).md)
   Composites this view’s contents into an offscreen image before final display.
+- [func dropConfiguration((DropSession) -> DropConfiguration) -> some View](journalingsuggestionspicker/dropconfiguration(_:).md)
+  Configures a drop session.
 - [func dropDestination<T>(for: T.Type, action: ([T], CGPoint) -> Bool, isTargeted: (Bool) -> Void) -> some View](journalingsuggestionspicker/dropdestination(for:action:istargeted:).md)
   Defines the destination of a drag and drop operation that handles the dropped content with a closure that you specify.
+- [func dropDestination<T>(for: T.Type, isEnabled: Bool, action: ([T], DropSession) -> Void) -> some View](journalingsuggestionspicker/dropdestination(for:isenabled:action:).md)
+  Defines the destination of a drag and drop operation that provides a drop operation proposal and handles the dropped content with a closure that you specify.
 - [func dynamicTypeSize(DynamicTypeSize) -> some View](journalingsuggestionspicker/dynamictypesize(_:)-67m9c.md)
   Sets the Dynamic Type size within the view to the given value.
 - [func dynamicTypeSize<T>(T) -> some View](journalingsuggestionspicker/dynamictypesize(_:)-7p3q1.md)
@@ -495,6 +600,8 @@
   Supplies an observable object to a view’s hierarchy.
 - [func fileDialogBrowserOptions(FileDialogBrowserOptions) -> some View](journalingsuggestionspicker/filedialogbrowseroptions(_:).md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to provide a refined URL search experience: include or exclude hidden files, allow searching by tag, etc.
+- [func fileDialogConfirmationLabel(LocalizedStringResource) -> some View](journalingsuggestionspicker/filedialogconfirmationlabel(_:)-2to31.md)
+  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
 - [func fileDialogConfirmationLabel(Text?) -> some View](journalingsuggestionspicker/filedialogconfirmationlabel(_:)-51cbl.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with custom text as a confirmation button label.
 - [func fileDialogConfirmationLabel(LocalizedStringKey) -> some View](journalingsuggestionspicker/filedialogconfirmationlabel(_:)-5vs50.md)
@@ -513,6 +620,8 @@
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [func fileDialogMessage(Text?) -> some View](journalingsuggestionspicker/filedialogmessage(_:)-7vxsv.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
+- [func fileDialogMessage(LocalizedStringResource) -> some View](journalingsuggestionspicker/filedialogmessage(_:)-8dap9.md)
+  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [func fileDialogURLEnabled(Predicate<URL>) -> some View](journalingsuggestionspicker/filedialogurlenabled(_:).md)
   On macOS, configures the the `fileImporter` or `fileMover` to conditionally disable presented URLs.
 - [func fileExporter<D>(isPresented: Binding<Bool>, document: D?, contentType: UTType, defaultFilename: String?, onCompletion: (Result<URL, any Error>) -> Void) -> some View](journalingsuggestionspicker/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:)-2ky8u.md)
@@ -536,6 +645,8 @@
 - [func fileExporter<C, T>(isPresented: Binding<Bool>, items: C, contentTypes: [UTType], onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](journalingsuggestionspicker/fileexporter(ispresented:items:contenttypes:oncompletion:oncancellation:).md)
   Presents a system interface allowing the user to export a collection of items to files on disk.
 - [func fileExporterFilenameLabel(LocalizedStringKey) -> some View](journalingsuggestionspicker/fileexporterfilenamelabel(_:)-3rau0.md)
+  On macOS, configures the `fileExporter` with a label for the file name field.
+- [func fileExporterFilenameLabel(LocalizedStringResource) -> some View](journalingsuggestionspicker/fileexporterfilenamelabel(_:)-59cwd.md)
   On macOS, configures the `fileExporter` with a label for the file name field.
 - [func fileExporterFilenameLabel(Text?) -> some View](journalingsuggestionspicker/fileexporterfilenamelabel(_:)-7cr5p.md)
   On macOS, configures the `fileExporter` with a text to use as a label for the file name field.
@@ -635,6 +746,14 @@
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
 - [func gesture<T>(T, name: String, isEnabled: Bool) -> some View](journalingsuggestionspicker/gesture(_:name:isenabled:).md)
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
+- [func glassEffect(Glass, in: some Shape, isEnabled: Bool) -> some View](journalingsuggestionspicker/glasseffect(_:in:isenabled:).md)
+  Applies a glass effect to this view.
+- [func glassEffectID((some Hashable & Sendable)?, in: Namespace.ID) -> some View](journalingsuggestionspicker/glasseffectid(_:in:).md)
+  Associates an identity value to glass effects defined within this view.
+- [func glassEffectTransition(GlassEffectTransition, isEnabled: Bool) -> some View](journalingsuggestionspicker/glasseffecttransition(_:isenabled:).md)
+  Associates a glass effect transition with any glass effects defined within this view.
+- [func glassEffectUnion(id: (some Hashable & Sendable)?, namespace: Namespace.ID) -> some View](journalingsuggestionspicker/glasseffectunion(id:namespace:).md)
+  Associates any glass effects defined within this view to a union with the provided id.
 - [func grayscale(Double) -> some View](journalingsuggestionspicker/grayscale(_:).md)
   Adds a grayscale effect to this view.
 - [func gridCellAnchor(UnitPoint) -> some View](journalingsuggestionspicker/gridcellanchor(_:).md)
@@ -653,6 +772,8 @@
   Specifies the external events that the view’s scene handles if the scene is already open.
 - [func headerProminence(Prominence) -> some View](journalingsuggestionspicker/headerprominence(_:).md)
   Sets the header prominence for this view.
+- [func help(LocalizedStringResource) -> some View](journalingsuggestionspicker/help(_:)-2n57.md)
+  Adds help text to a view using a localized string resource that you provide.
 - [func help<S>(S) -> some View](journalingsuggestionspicker/help(_:)-572a9.md)
   Adds help text to a view using a string that you provide.
 - [func help(Text) -> some View](journalingsuggestionspicker/help(_:)-62k7e.md)
@@ -699,6 +820,8 @@
   Applies italics to the text in this view.
 - [func itemProvider(Optional<() -> NSItemProvider?>) -> some View](journalingsuggestionspicker/itemprovider(_:).md)
   Provides a closure that vends the drag representation to be used for a particular data element.
+- [func journalingSuggestionsPicker(isPresented: Binding<Bool>, journalingSuggestionToken: JournalingSuggestionPresentationToken?, onCompletion: (JournalingSuggestion) async -> Void) -> some View](journalingsuggestionspicker/journalingsuggestionspicker(ispresented:journalingsuggestiontoken:oncompletion:).md)
+  Presents a visual picker interface that contains events and images that a person can select to retrieve more information.
 - [func journalingSuggestionsPicker(isPresented: Binding<Bool>, onCompletion: (JournalingSuggestion) async -> Void) -> some View](journalingsuggestionspicker/journalingsuggestionspicker(ispresented:oncompletion:).md)
   Presents a visual picker interface that contains events and images that a person can select to retrieve more information.
 - [func kerning(CGFloat) -> some View](journalingsuggestionspicker/kerning(_:).md)
@@ -717,6 +840,10 @@
   Loops the given keyframes continuously, updating the view using the modifiers you apply in `body`.
 - [func keyframeAnimator<Value>(initialValue: Value, trigger: some Equatable, content: (PlaceholderContentView<Self>, Value) -> some View, keyframes: (Value) -> some Keyframes) -> some View](journalingsuggestionspicker/keyframeanimator(initialvalue:trigger:content:keyframes:).md)
   Plays the given keyframes when the given trigger value changes, updating the view using the modifiers you apply in `body`.
+- [func labelIconToTitleSpacing(CGFloat) -> some View](journalingsuggestionspicker/labelicontotitlespacing(_:).md)
+  Set the spacing between the icon and title in labels.
+- [func labelReservedIconWidth(CGFloat) -> some View](journalingsuggestionspicker/labelreservediconwidth(_:).md)
+  Set the width reserved for icons in labels.
 - [func labelStyle<S>(S) -> some View](journalingsuggestionspicker/labelstyle(_:).md)
   Sets the style for labels within this view.
 - [func labeledContentStyle<S>(S) -> some View](journalingsuggestionspicker/labeledcontentstyle(_:).md)
@@ -733,6 +860,8 @@
   Sets the priority by which a parent layout should apportion space to this child.
 - [func layoutValue<K>(key: K.Type, value: K.Value) -> some View](journalingsuggestionspicker/layoutvalue(key:value:).md)
   Associates a value with a custom layout property.
+- [func lineHeight(AttributedString.LineHeight?) -> some View](journalingsuggestionspicker/lineheight(_:).md)
+  A modifier for the default line height in the view hierarchy.
 - [func lineLimit(Int?) -> some View](journalingsuggestionspicker/linelimit(_:)-1ddrr.md)
   Sets the maximum number of lines that text can occupy in this view.
 - [func lineLimit(PartialRangeThrough<Int>) -> some View](journalingsuggestionspicker/linelimit(_:)-3ll3c.md)
@@ -753,12 +882,18 @@
   Places a custom background view behind a list row item.
 - [func listRowInsets(EdgeInsets?) -> some View](journalingsuggestionspicker/listrowinsets(_:).md)
   Applies an inset to the rows in a list.
+- [func listRowInsets(Edge.Set, CGFloat?) -> some View](journalingsuggestionspicker/listrowinsets(_:_:).md)
+  Sets the insets of rows in a list on the specified edges.
 - [func listRowSeparator(Visibility, edges: VerticalEdge.Set) -> some View](journalingsuggestionspicker/listrowseparator(_:edges:).md)
   Sets the display mode for the separator associated with this specific row.
 - [func listRowSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](journalingsuggestionspicker/listrowseparatortint(_:edges:).md)
   Sets the tint color associated with a row.
 - [func listRowSpacing(CGFloat?) -> some View](journalingsuggestionspicker/listrowspacing(_:).md)
   Sets the vertical spacing between two adjacent rows in a List.
+- [func listSectionIndexVisibility(Visibility) -> some View](journalingsuggestionspicker/listsectionindexvisibility(_:).md)
+  Changes the visibility of the list section index.
+- [func listSectionMargins(Edge.Set, CGFloat?) -> some View](journalingsuggestionspicker/listsectionmargins(_:_:).md)
+  Set the section margins for the specific edges.
 - [func listSectionSeparator(Visibility, edges: VerticalEdge.Set) -> some View](journalingsuggestionspicker/listsectionseparator(_:edges:).md)
   Sets whether to hide the separator associated with a list section.
 - [func listSectionSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](journalingsuggestionspicker/listsectionseparatortint(_:edges:).md)
@@ -769,8 +904,38 @@
   Sets the spacing between adjacent sections in a `List` to a custom value.
 - [func listStyle<S>(S) -> some View](journalingsuggestionspicker/liststyle(_:).md)
   Sets the style for lists within this view.
+- [func lookAroundViewer(isPresented: Binding<Bool>, initialScene: MKLookAroundScene?, allowsNavigation: Bool, showsRoadLabels: Bool, pointsOfInterest: PointOfInterestCategories, onDismiss: (() -> Void)?) -> some View](journalingsuggestionspicker/lookaroundviewer(ispresented:initialscene:allowsnavigation:showsroadlabels:pointsofinterest:ondismiss:).md)
+- [func lookAroundViewer(isPresented: Binding<Bool>, scene: Binding<MKLookAroundScene?>, allowsNavigation: Bool, showsRoadLabels: Bool, pointsOfInterest: PointOfInterestCategories, onDismiss: (() -> Void)?) -> some View](journalingsuggestionspicker/lookaroundviewer(ispresented:scene:allowsnavigation:showsroadlabels:pointsofinterest:ondismiss:).md)
 - [func luminanceToAlpha() -> some View](journalingsuggestionspicker/luminancetoalpha.md)
   Adds a luminance to alpha effect to this view.
+- [func mapCameraKeyframeAnimator(trigger: some Equatable, keyframes: (MapCamera) -> some Keyframes<MapCamera>) -> some View](journalingsuggestionspicker/mapcamerakeyframeanimator(trigger:keyframes:).md)
+  Uses the given keyframes to animate the camera of a `Map` when the given trigger value changes.
+- [func mapControlVisibility(Visibility) -> some View](journalingsuggestionspicker/mapcontrolvisibility(_:).md)
+  Configures all Map controls in the environment to have the specified visibility
+- [func mapControls(() -> some View) -> some View](journalingsuggestionspicker/mapcontrols(_:).md)
+  Configures all `Map` views in the associated environment to have standard size and position controls
+- [func mapFeatureSelectionAccessory(MapItemDetailSelectionAccessoryStyle?) -> some View](journalingsuggestionspicker/mapfeatureselectionaccessory(_:).md)
+  Specifies the selection accessory to display for a `MapFeature`
+- [func mapFeatureSelectionContent(content: (MapFeature) -> some MapContent) -> some View](journalingsuggestionspicker/mapfeatureselectioncontent(content:).md)
+  Specifies a custom presentation for the currently selected feature.
+- [func mapFeatureSelectionDisabled((MapFeature) -> Bool) -> some View](journalingsuggestionspicker/mapfeatureselectiondisabled(_:).md)
+  Specifies which map features should have selection disabled.
+- [func mapItemDetailPopover(isPresented: Binding<Bool>, item: MKMapItem?, displaysMap: Bool, attachmentAnchor: PopoverAttachmentAnchor) -> some View](journalingsuggestionspicker/mapitemdetailpopover(ispresented:item:displaysmap:attachmentanchor:).md)
+  Presents a map item detail popover.
+- [func mapItemDetailPopover(isPresented: Binding<Bool>, item: MKMapItem?, displaysMap: Bool, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge) -> some View](journalingsuggestionspicker/mapitemdetailpopover(ispresented:item:displaysmap:attachmentanchor:arrowedge:).md)
+  Presents a map item detail popover.
+- [func mapItemDetailPopover(item: Binding<MKMapItem?>, displaysMap: Bool, attachmentAnchor: PopoverAttachmentAnchor) -> some View](journalingsuggestionspicker/mapitemdetailpopover(item:displaysmap:attachmentanchor:).md)
+  Presents a map item detail popover.
+- [func mapItemDetailPopover(item: Binding<MKMapItem?>, displaysMap: Bool, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge) -> some View](journalingsuggestionspicker/mapitemdetailpopover(item:displaysmap:attachmentanchor:arrowedge:).md)
+  Presents a map item detail popover.
+- [func mapItemDetailSheet(isPresented: Binding<Bool>, item: MKMapItem?, displaysMap: Bool) -> some View](journalingsuggestionspicker/mapitemdetailsheet(ispresented:item:displaysmap:).md)
+  Presents a map item detail sheet.
+- [func mapItemDetailSheet(item: Binding<MKMapItem?>, displaysMap: Bool) -> some View](journalingsuggestionspicker/mapitemdetailsheet(item:displaysmap:).md)
+  Presents a map item detail sheet.
+- [func mapScope(Namespace.ID) -> some View](journalingsuggestionspicker/mapscope(_:).md)
+  Creates a mapScope that SwiftUI uses to connect map controls to an associated map.
+- [func mapStyle(MapStyle) -> some View](journalingsuggestionspicker/mapstyle(_:).md)
+  Specifies the map style to be used.
 - [func mask<Mask>(Mask) -> some View](journalingsuggestionspicker/mask(_:).md)
   Masks this view using the alpha channel of the given view.
 - [func mask<Mask>(alignment: Alignment, () -> Mask) -> some View](journalingsuggestionspicker/mask(alignment:_:).md)
@@ -803,6 +968,8 @@
   Adds a condition for whether the view’s view hierarchy is movable.
 - [func multilineTextAlignment(TextAlignment) -> some View](journalingsuggestionspicker/multilinetextalignment(_:).md)
   Sets the alignment of a text view that contains multiple lines of text.
+- [func multilineTextAlignment(strategy: Text.AlignmentStrategy) -> some View](journalingsuggestionspicker/multilinetextalignment(strategy:).md)
+  A modifier for the default text alignment strategy in the view hierarchy.
 - [func navigationBarBackButtonHidden(Bool) -> some View](journalingsuggestionspicker/navigationbarbackbuttonhidden(_:).md)
   Hides the navigation bar back button for the view.
 - [func navigationBarHidden(Bool) -> some View](journalingsuggestionspicker/navigationbarhidden(_:).md)
@@ -842,12 +1009,24 @@
   Configures the view’s document for purposes of navigation.
 - [func navigationDocument<D, I>(D, preview: SharePreview<I, Never>) -> some View](journalingsuggestionspicker/navigationdocument(_:preview:)-9qt8f.md)
   Configures the view’s document for purposes of navigation.
+- [func navigationLinkIndicatorVisibility(Visibility) -> some View](journalingsuggestionspicker/navigationlinkindicatorvisibility(_:).md)
+  Configures whether navigation links show a disclosure indicator.
 - [func navigationSplitViewColumnWidth(CGFloat) -> some View](journalingsuggestionspicker/navigationsplitviewcolumnwidth(_:).md)
   Sets a fixed, preferred width for the column containing this view.
 - [func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](journalingsuggestionspicker/navigationsplitviewcolumnwidth(min:ideal:max:).md)
   Sets a flexible, preferred width for the column containing this view.
 - [func navigationSplitViewStyle<S>(S) -> some View](journalingsuggestionspicker/navigationsplitviewstyle(_:).md)
   Sets the style for navigation split views within this view.
+- [func navigationSubtitle(LocalizedStringResource) -> some View](journalingsuggestionspicker/navigationsubtitle(_:)-3mssi.md)
+  Configures the view’s subtitle for purposes of navigation, using a localized string resource.
+- [func navigationSubtitle(LocalizedStringKey) -> some View](journalingsuggestionspicker/navigationsubtitle(_:)-8cksp.md)
+  Configures the view’s subtitle for purposes of navigation, using a localized string.
+- [func navigationSubtitle<S>(S) -> some View](journalingsuggestionspicker/navigationsubtitle(_:)-92tpu.md)
+  Configures the view’s subtitle for purposes of navigation, using a string.
+- [func navigationSubtitle(Text) -> some View](journalingsuggestionspicker/navigationsubtitle(_:)-ubg8.md)
+  Configures the view’s subtitle for purposes of navigation.
+- [func navigationTitle(LocalizedStringResource) -> some View](journalingsuggestionspicker/navigationtitle(_:)-4w4dl.md)
+  Configures the view’s title for purposes of navigation, using a localized string resource.
 - [func navigationTitle<V>(() -> V) -> some View](journalingsuggestionspicker/navigationtitle(_:)-6halb.md)
   Configures the view’s title for purposes of navigation, using a custom view.
 - [func navigationTitle<S>(S) -> some View](journalingsuggestionspicker/navigationtitle(_:)-707tj.md)
@@ -884,6 +1063,8 @@
   Activates this view as the source of a drag and drop operation.
 - [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](journalingsuggestionspicker/ondrag(_:preview:).md)
   Activates this view as the source of a drag and drop operation.
+- [func onDragSessionUpdated((DragSession) -> Void) -> some View](journalingsuggestionspicker/ondragsessionupdated(_:).md)
+  Specifies an action to perform on each update of an ongoing dragging operation activated by `draggable(_:)` or other drag modifiers.
 - [func onDrop(of: [UTType], delegate: any DropDelegate) -> some View](journalingsuggestionspicker/ondrop(of:delegate:)-5oj4b.md)
   Defines the destination of a drag and drop operation using behavior controlled by the delegate that you provide.
 - [func onDrop(of: [String], delegate: any DropDelegate) -> some View](journalingsuggestionspicker/ondrop(of:delegate:)-xtrh.md)
@@ -896,6 +1077,8 @@
   Defines the destination for a drag and drop operation, using the same size and position as this view, handling dropped content with the given closure.
 - [func onDrop(of: [UTType], isTargeted: Binding<Bool>?, perform: ([NSItemProvider], CGPoint) -> Bool) -> some View](journalingsuggestionspicker/ondrop(of:istargeted:perform:)-6s0ki.md)
   Defines the destination of a drag and drop operation that handles the dropped content with a closure that you specify.
+- [func onDropSessionUpdated((DropSession) -> Void) -> some View](journalingsuggestionspicker/ondropsessionupdated(_:).md)
+  Specifies an action to perform on each update of an ongoing drop operation activated by `dropDestination(_:)` or other drop modifiers.
 - [func onGeometryChange<T>(for: T.Type, of: (GeometryProxy) -> T, action: (T) -> Void) -> some View](journalingsuggestionspicker/ongeometrychange(for:of:action:)-2ro4j.md)
   Adds an action to be performed when a value, created from a geometry proxy, changes.
 - [func onGeometryChange<T>(for: T.Type, of: (GeometryProxy) -> T, action: (T, T) -> Void) -> some View](journalingsuggestionspicker/ongeometrychange(for:of:action:)-6vh47.md)
@@ -920,8 +1103,14 @@
   Adds an action to perform when this view recognizes a long press gesture.
 - [func onLongPressGesture(minimumDuration: Double, pressing: ((Bool) -> Void)?, perform: () -> Void) -> some View](journalingsuggestionspicker/onlongpressgesture(minimumduration:pressing:perform:).md)
   Adds an action to perform when this view recognizes a long press gesture.
+- [func onMapCameraChange(frequency: MapCameraUpdateFrequency, (MapCameraUpdateContext) -> Void) -> some View](journalingsuggestionspicker/onmapcamerachange(frequency:_:)-1t1lz.md)
+  Performs an action when Map camera framing changes
+- [func onMapCameraChange(frequency: MapCameraUpdateFrequency, () -> Void) -> some View](journalingsuggestionspicker/onmapcamerachange(frequency:_:)-7zv5a.md)
+  Performs an action when Map camera framing changes
 - [func onOpenURL(perform: (URL) -> ()) -> some View](journalingsuggestionspicker/onopenurl(perform:).md)
   Registers a handler to invoke in response to a URL that your app receives.
+- [func onOpenURL(prefersInApp: Bool) -> some View](journalingsuggestionspicker/onopenurl(prefersinapp:).md)
+  Sets an `OpenURLAction` that prefers opening URL with an in-app browser. It’s equivalent to calling `.onOpenURL(_:)`
 - [func onPencilDoubleTap(perform: (PencilDoubleTapGestureValue) -> Void) -> some View](journalingsuggestionspicker/onpencildoubletap(perform:).md)
   Adds an action to perform after the user double-taps their Apple Pencil.
 - [func onPencilSqueeze(perform: (PencilSqueezeGesturePhase) -> Void) -> some View](journalingsuggestionspicker/onpencilsqueeze(perform:).md)
@@ -1040,6 +1229,10 @@
   Renders a view’s content as if it’s rotated in three dimensions around the specified axis.
 - [func rotationEffect(Angle, anchor: UnitPoint) -> some View](journalingsuggestionspicker/rotationeffect(_:anchor:).md)
   Rotates a view’s rendered output in two dimensions around the specified point.
+- [func safeAreaBar(edge: HorizontalEdge, alignment: VerticalAlignment, spacing: CGFloat?, content: () -> some View) -> some View](journalingsuggestionspicker/safeareabar(edge:alignment:spacing:content:)-14buq.md)
+  Renders the provided content appropriately to be displayed as a custom bar.
+- [func safeAreaBar(edge: VerticalEdge, alignment: HorizontalAlignment, spacing: CGFloat?, content: () -> some View) -> some View](journalingsuggestionspicker/safeareabar(edge:alignment:spacing:content:)-5gd75.md)
+  Renders the provided content appropriate to be displayed as a custom bar.
 - [func safeAreaInset<V>(edge: VerticalEdge, alignment: HorizontalAlignment, spacing: CGFloat?, content: () -> V) -> some View](journalingsuggestionspicker/safeareainset(edge:alignment:spacing:content:)-62h2w.md)
   Shows the specified content above or below the modified view.
 - [func safeAreaInset<V>(edge: HorizontalEdge, alignment: VerticalAlignment, spacing: CGFloat?, content: () -> V) -> some View](journalingsuggestionspicker/safeareainset(edge:alignment:spacing:content:)-lxvq.md)
@@ -1076,6 +1269,10 @@
   Disables or enables scrolling in scrollable views.
 - [func scrollDismissesKeyboard(ScrollDismissesKeyboardMode) -> some View](journalingsuggestionspicker/scrolldismisseskeyboard(_:).md)
   Configures the behavior in which scrollable content interacts with the software keyboard.
+- [func scrollEdgeEffectDisabled(Bool, for: Edge.Set) -> some View](journalingsuggestionspicker/scrolledgeeffectdisabled(_:for:).md)
+  Disables any scroll edge effects for scroll views within this hierarchy.
+- [func scrollEdgeEffectStyle(ScrollEdgeEffectStyle?, for: Edge.Set) -> some View](journalingsuggestionspicker/scrolledgeeffectstyle(_:for:).md)
+  Configures the scroll edge effect style for scroll views within this hierarchy.
 - [func scrollIndicators(ScrollIndicatorVisibility, axes: Axis.Set) -> some View](journalingsuggestionspicker/scrollindicators(_:axes:).md)
   Sets the visibility of scroll indicators within this view.
 - [func scrollIndicatorsFlash(onAppear: Bool) -> some View](journalingsuggestionspicker/scrollindicatorsflash(onappear:).md)
@@ -1093,9 +1290,9 @@
 - [func scrollTargetLayout(isEnabled: Bool) -> some View](journalingsuggestionspicker/scrolltargetlayout(isenabled:).md)
   Configures the outermost layout as a scroll target layout.
 - [func scrollTransition(ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](journalingsuggestionspicker/scrolltransition(_:axis:transition:).md)
-  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 - [func scrollTransition(topLeading: ScrollTransitionConfiguration, bottomTrailing: ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](journalingsuggestionspicker/scrolltransition(topleading:bottomtrailing:axis:transition:).md)
-  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 - [func searchCompletion(String) -> some View](journalingsuggestionspicker/searchcompletion(_:)-894w4.md)
   Associates a fully formed string with the value of this view when used as a search suggestion.
 - [func searchCompletion<T>(T) -> some View](journalingsuggestionspicker/searchcompletion(_:)-90oem.md)
@@ -1116,13 +1313,19 @@
   Configures the search suggestions for this view.
 - [func searchSuggestions(Visibility, for: SearchSuggestionsPlacement.Set) -> some View](journalingsuggestionspicker/searchsuggestions(_:for:).md)
   Configures how to display search suggestions within this view.
+- [func searchToolbarBehavior(SearchToolbarBehavior) -> some View](journalingsuggestionspicker/searchtoolbarbehavior(_:).md)
+  Configures the behavior for search in the toolbar.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?, token: (Binding<C.Element>) -> some View) -> some View](journalingsuggestionspicker/searchable(text:editabletokens:ispresented:placement:prompt:token:)-1zxs1.md)
+  Marks this view as searchable, which configures the display of a search field.
+- [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (Binding<C.Element>) -> some View) -> some View](journalingsuggestionspicker/searchable(text:editabletokens:ispresented:placement:prompt:token:)-5c161.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: some StringProtocol, token: (Binding<C.Element>) -> some View) -> some View](journalingsuggestionspicker/searchable(text:editabletokens:ispresented:placement:prompt:token:)-85ojf.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (Binding<C.Element>) -> some View) -> some View](journalingsuggestionspicker/searchable(text:editabletokens:ispresented:placement:prompt:token:)-9rly1.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: some StringProtocol, token: (Binding<C.Element>) -> some View) -> some View](journalingsuggestionspicker/searchable(text:editabletokens:placement:prompt:token:)-3fvlt.md)
+  Marks this view as searchable, which configures the display of a search field.
+- [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (Binding<C.Element>) -> some View) -> some View](journalingsuggestionspicker/searchable(text:editabletokens:placement:prompt:token:)-415k0.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (Binding<C.Element>) -> some View) -> some View](journalingsuggestionspicker/searchable(text:editabletokens:placement:prompt:token:)-8uku9.md)
   Marks this view as searchable, which configures the display of a search field.
@@ -1134,7 +1337,11 @@
   Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?) -> some View](journalingsuggestionspicker/searchable(text:ispresented:placement:prompt:)-5s0sp.md)
   Marks this view as searchable with programmatic presentation of the search field.
+- [func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource) -> some View](journalingsuggestionspicker/searchable(text:ispresented:placement:prompt:)-97fwr.md)
+  Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: LocalizedStringKey) -> some View](journalingsuggestionspicker/searchable(text:placement:prompt:)-10v5x.md)
+  Marks this view as searchable, which configures the display of a search field.
+- [func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: LocalizedStringResource) -> some View](journalingsuggestionspicker/searchable(text:placement:prompt:)-1x0b9.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: Text?) -> some View](journalingsuggestionspicker/searchable(text:placement:prompt:)-3qexo.md)
   Marks this view as searchable, which configures the display of a search field.
@@ -1146,18 +1353,24 @@
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<V, S>(text: Binding<String>, placement: SearchFieldPlacement, prompt: S, suggestions: () -> V) -> some View](journalingsuggestionspicker/searchable(text:placement:prompt:suggestions:)-974e5.md)
   Marks this view as searchable, which configures the display of a search field.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](journalingsuggestionspicker/searchable(text:tokens:ispresented:placement:prompt:token:)-306ck.md)
+  Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](journalingsuggestionspicker/searchable(text:tokens:ispresented:placement:prompt:token:)-4juwy.md)
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](journalingsuggestionspicker/searchable(text:tokens:ispresented:placement:prompt:token:)-4x089.md)
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](journalingsuggestionspicker/searchable(text:tokens:ispresented:placement:prompt:token:)-zatq.md)
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](journalingsuggestionspicker/searchable(text:tokens:placement:prompt:token:)-27rct.md)
+  Marks this view as searchable with text and tokens.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](journalingsuggestionspicker/searchable(text:tokens:placement:prompt:token:)-2xpkm.md)
   Marks this view as searchable with text and tokens.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](journalingsuggestionspicker/searchable(text:tokens:placement:prompt:token:)-6s0e.md)
   Marks this view as searchable with text and tokens.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](journalingsuggestionspicker/searchable(text:tokens:placement:prompt:token:)-geuu.md)
   Marks this view as searchable with text and tokens.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](journalingsuggestionspicker/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-1okxg.md)
+  Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](journalingsuggestionspicker/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-6u7a0.md)
   Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](journalingsuggestionspicker/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-7410l.md)
@@ -1166,19 +1379,27 @@
   Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](journalingsuggestionspicker/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-3lws2.md)
   Marks this view as searchable with text, tokens, and suggestions.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](journalingsuggestionspicker/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-4rana.md)
+  Marks this view as searchable with text, tokens, and suggestions.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](journalingsuggestionspicker/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-70me4.md)
   Marks this view as searchable with text, tokens, and suggestions.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](journalingsuggestionspicker/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-7zv4k.md)
   Marks this view as searchable with text, tokens, and suggestions.
 - [func sectionActions<Content>(content: () -> Content) -> some View](journalingsuggestionspicker/sectionactions(content:).md)
   Adds custom actions to a section.
+- [func sectionIndexLabel(Text?) -> some View](journalingsuggestionspicker/sectionindexlabel(_:)-15yo2.md)
+  Sets the label that is used in a section index to point to this section, typically only a single character long.
+- [func sectionIndexLabel<S>(S?) -> some View](journalingsuggestionspicker/sectionindexlabel(_:)-4ey98.md)
+  Sets the title that is used for the section index label pointing to this section, typically only a single character long.
 - [func selectionDisabled(Bool) -> some View](journalingsuggestionspicker/selectiondisabled(_:).md)
   Adds a condition that controls whether users can select this view.
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T) -> some View](journalingsuggestionspicker/sensoryfeedback(_:trigger:).md)
   Plays the specified `feedback` when the provided `trigger` value changes.
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T, condition: (T, T) -> Bool) -> some View](journalingsuggestionspicker/sensoryfeedback(_:trigger:condition:).md)
   Plays the specified `feedback` when the provided `trigger` value changes and the `condition` closure returns `true`.
-- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](journalingsuggestionspicker/sensoryfeedback(trigger:_:).md)
+- [func sensoryFeedback<T>(trigger: T, () -> SensoryFeedback?) -> some View](journalingsuggestionspicker/sensoryfeedback(trigger:_:)-23uc6.md)
+  Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
+- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](journalingsuggestionspicker/sensoryfeedback(trigger:_:)-46aux.md)
   Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
 - [func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some View](journalingsuggestionspicker/shadow(color:radius:x:y:).md)
   Adds a shadow to this view.
@@ -1214,6 +1435,8 @@
   Prevents submission triggers originating from this view to invoke a submission action configured by a submission modifier higher up in the view hierarchy.
 - [func swipeActions<T>(edge: HorizontalEdge, allowsFullSwipe: Bool, content: () -> T) -> some View](journalingsuggestionspicker/swipeactions(edge:allowsfullswipe:content:).md)
   Adds custom swipe actions to a row in a list.
+- [func symbolColorRenderingMode(SymbolColorRenderingMode?) -> some View](journalingsuggestionspicker/symbolcolorrenderingmode(_:).md)
+  Sets the color rendering mode for symbol images.
 - [func symbolEffect<T>(T, options: SymbolEffectOptions, isActive: Bool) -> some View](journalingsuggestionspicker/symboleffect(_:options:isactive:).md)
   Returns a new view with a symbol effect added to it.
 - [func symbolEffect<T, U>(T, options: SymbolEffectOptions, value: U) -> some View](journalingsuggestionspicker/symboleffect(_:options:value:).md)
@@ -1222,10 +1445,15 @@
   Returns a new view with its inherited symbol image effects either removed or left unchanged.
 - [func symbolRenderingMode(SymbolRenderingMode?) -> some View](journalingsuggestionspicker/symbolrenderingmode(_:).md)
   Sets the rendering mode for symbol images within this view.
+- [func symbolVariableValueMode(SymbolVariableValueMode?) -> some View](journalingsuggestionspicker/symbolvariablevaluemode(_:).md)
+  Sets the variable value mode mode for symbol images within this view.
 - [func symbolVariant(SymbolVariants) -> some View](journalingsuggestionspicker/symbolvariant(_:).md)
   Makes symbols within the view show a particular variant.
+- [func tabBarMinimizeBehavior(TabBarMinimizeBehavior) -> some View](journalingsuggestionspicker/tabbarminimizebehavior(_:).md)
+  Sets the behavior for tab bar minimization.
 - [func tabItem<V>(() -> V) -> some View](journalingsuggestionspicker/tabitem(_:).md)
   Sets the tab bar item associated with this view.
+- [func tabViewBottomAccessory<Content>(content: () -> Content) -> some View](journalingsuggestionspicker/tabviewbottomaccessory(content:).md)
 - [func tabViewCustomization(Binding<TabViewCustomization>?) -> some View](journalingsuggestionspicker/tabviewcustomization(_:).md)
   Specifies the customizations to apply to the sidebar representation of the tab view.
 - [func tabViewSidebarBottomBar<Content>(content: () -> Content) -> some View](journalingsuggestionspicker/tabviewsidebarbottombar(content:).md)
@@ -1256,6 +1484,8 @@
   Sets the style for text fields within this view.
 - [func textInputAutocapitalization(TextInputAutocapitalization?) -> some View](journalingsuggestionspicker/textinputautocapitalization(_:).md)
   Sets how often the shift key in the keyboard is automatically enabled.
+- [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](journalingsuggestionspicker/textinputformattingcontrolvisibility(_:for:).md)
+  Define which system text formatting controls are available.
 - [func textRenderer<T>(T) -> some View](journalingsuggestionspicker/textrenderer(_:).md)
   Returns a new view such that any text views within it will use `renderer` to draw themselves.
 - [func textScale(Text.Scale, isEnabled: Bool) -> some View](journalingsuggestionspicker/textscale(_:isenabled:).md)
@@ -1322,6 +1552,8 @@
   Sets an explicit type select equivalent text in a collection, such as a list or table.
 - [func typeSelectEquivalent<S>(S) -> some View](journalingsuggestionspicker/typeselectequivalent(_:)-4b6dl.md)
   Sets an explicit type select equivalent text in a collection, such as a list or table.
+- [func typeSelectEquivalent(LocalizedStringResource) -> some View](journalingsuggestionspicker/typeselectequivalent(_:)-596tr.md)
+  Sets an explicit type select equivalent text in a collection, such as a list or table.
 - [func typeSelectEquivalent(Text?) -> some View](journalingsuggestionspicker/typeselectequivalent(_:)-61u5k.md)
   Sets an explicit type select equivalent text in a collection, such as a list or table.
 - [func typesettingLanguage(Locale.Language, isEnabled: Bool) -> some View](journalingsuggestionspicker/typesettinglanguage(_:isenabled:)-1yu7d.md)
@@ -1340,6 +1572,8 @@
   Applies effects to this view, while providing access to layout information through a geometry proxy.
 - [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](journalingsuggestionspicker/windowtoolbarfullscreenvisibility(_:).md)
   Configures the visibility of the window toolbar when the window enters full screen mode.
+- [func writingDirection(strategy: Text.WritingDirectionStrategy) -> some View](journalingsuggestionspicker/writingdirection(strategy:).md)
+  A modifier for the default text writing direction strategy in the view hierarchy.
 - [func writingToolsAffordanceVisibility(Visibility) -> some View](journalingsuggestionspicker/writingtoolsaffordancevisibility(_:).md)
   Specifies whether the system should show the Writing Tools affordance for text input views affected by the environment.
 - [func writingToolsBehavior(WritingToolsBehavior) -> some View](journalingsuggestionspicker/writingtoolsbehavior(_:).md)

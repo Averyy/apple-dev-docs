@@ -6,6 +6,8 @@ Respond to events that trigger when MapKit JS initializes.
 
 #### Overview
 
+Unless you wish to explicitly control initialization timing in JavaScript, use `data-token` instead of handling initialization events directly. See [`Loading the latest version of MapKit JS`](loading-the-latest-version-of-mapkit-js.md) for more information.
+
 The `mapkit` object emits two events to indicate the success or failure of a configuration operation. The initialization process configures MapKit JS.
 
 | Event | Summary |

@@ -1,4 +1,4 @@
-# Shut Down a Device
+# Shut Down Device
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -9,8 +9,6 @@ Remotely and immediately shut down a device.
 - iOS 10.3+
 - iPadOS 10.3+
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -22,33 +20,33 @@ Refer to the following sections to determine supported channels and requirements
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad |
-| User Channel | - |
-| Requires Supervision | iOS |
-| Allowed in User Enrollment | - |
-| Required Access Right | AllowPasscodeRemovalAndLock |
+| Device channel | iOS, macOS, Shared iPad |
+| User channel | NA |
+| Requires supervision | iOS, macOS |
+| Allowed in user enrollment | NA |
+| Required access right | AllowPasscodeRemovalAndLock |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object ShutDownDeviceCommand](shutdowndevicecommand.md)
-  The command to shut down a device.
+  The command to remotely and immediately shut down a device.
 - [object ShutDownDeviceResponse](shutdowndeviceresponse.md)
-  A response from the device after it processes the command to shut down.
+  A response from the device after it processes the command to remotely and immediately shut down a device.
 
 ## Request Body
 
-The command to shut down a device.
+The request object the server returns for the Shut Down Device Command.
 
 ## See Also
 
-- [Erase a Device](erase-device-command.md)
+- [Erase Device](erase-device-command.md)
   Remotely and immediately erase a device.
-- [Lock a Device](device-lock-command.md)
+- [Device Lock](device-lock-command.md)
   Remotely and immediately lock a device.
-- [Restart a Device](restart-device-command.md)
+- [Restart Device](restart-device-command.md)
   Remotely and immediately restart a device.
 
 

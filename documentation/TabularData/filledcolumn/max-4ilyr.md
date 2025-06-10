@@ -1,6 +1,6 @@
 # max()
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns the maximum element in the sequence.

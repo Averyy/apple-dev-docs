@@ -1,6 +1,6 @@
 # webExtensionContext
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The web extension context associated with the command.

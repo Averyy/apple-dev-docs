@@ -43,8 +43,6 @@ After calling `bindMemory(to:capacity:)`, the first four bytes of the memory ref
 
 > ⚠️ **Warning**: A memory location may only be bound to one type at a time. The behavior of accessing memory as a type unrelated to its bound type is undefined.
 
-A memory location may only be bound to one type at a time. The behavior of accessing memory as a type unrelated to its bound type is undefined.
-
 ## Parameters
 
 - `type`: The type   to bind the memory to.

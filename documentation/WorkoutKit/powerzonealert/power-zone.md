@@ -1,6 +1,6 @@
 # power(zone:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: method
 
 Returns a new power zone alert.

@@ -1,6 +1,6 @@
 # ActivityPreviewViewKind
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: enum
 
 Values that represent Live Activity presentations for use in Xcode previews.
@@ -8,7 +8,6 @@ Values that represent Live Activity presentations for use in Xcode previews.
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
-- Mac Catalyst 16.2+
 
 ## Declaration
 
@@ -31,6 +30,7 @@ enum ActivityPreviewViewKind
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

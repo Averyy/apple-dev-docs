@@ -22,8 +22,6 @@ func hv_vmx_vcpu_set_apic_address(_ vcpu: hv_vcpuid_t, _ gpa: hv_gpaddr_t) -> hv
 
 > ❗ **Important**:  This function must be called by the owning thread.
 
- This function must be called by the owning thread.
-
 ## Parameters
 
 - `vcpu`: The ID of the vCPU.

@@ -17,14 +17,13 @@ Returns an array of all visible descendants that intersect a point.
 ## Declaration
 
 ```swift
-@MainActor
 func nodes(at p: CGPoint) -> [SKNode]
 ```
 
 ## Mentions
 
-- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
 - [Understanding Hit-Testing](understanding-hit-testing.md)
+- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
 
 #### Return Value
 

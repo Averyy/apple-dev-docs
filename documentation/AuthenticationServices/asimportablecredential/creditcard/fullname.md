@@ -6,29 +6,29 @@
 The full name of the card owner.
 
 **Availability**:
-- iOS 18.2+
-- iPadOS 18.2+
-- Mac Catalyst 18.2+
-- macOS 15.2+
-- visionOS 2.2+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
-var fullName: String
+var fullName: ASImportableEditableField?
 ```
 
 ## See Also
 
-- [var number: String](asimportablecredential/creditcard/number.md)
+- [var number: ASImportableEditableField?](asimportablecredential/creditcard/number.md)
   The card number.
-- [var cardType: String?](asimportablecredential/creditcard/cardtype.md)
+- [var cardType: ASImportableEditableField?](asimportablecredential/creditcard/cardtype.md)
   The card type, if any.
-- [var verificationNumber: String?](asimportablecredential/creditcard/verificationnumber.md)
+- [var verificationNumber: ASImportableEditableField?](asimportablecredential/creditcard/verificationnumber.md)
   The verification number, such as the CVC code.
-- [var expiryDate: String?](asimportablecredential/creditcard/expirydate.md)
+- [var expiryDate: ASImportableEditableField?](asimportablecredential/creditcard/expirydate.md)
   The expiration date, if any, in MM/DD format.
-- [var validFrom: String?](asimportablecredential/creditcard/validfrom.md)
+- [var validFrom: ASImportableEditableField?](asimportablecredential/creditcard/validfrom.md)
   The date from which the card is valid, if any.
 
 

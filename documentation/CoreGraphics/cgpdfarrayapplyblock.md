@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-func CGPDFArrayApplyBlock(_ array: CGPDFArrayRef, _ block: @escaping CGPDFArrayApplierBlock, _ info: UnsafeMutableRawPointer?)
+func CGPDFArrayApplyBlock(_ array: CGPDFArrayRef, _ block: (Int, CGPDFObjectRef, UnsafeMutableRawPointer?) -> Bool, _ info: UnsafeMutableRawPointer?)
 ```
 
 ## See Also

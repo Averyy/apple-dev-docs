@@ -49,6 +49,7 @@ protocol VisionObservation : CustomStringConvertible, Decodable, Encodable, Hash
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [AnimalBodyPoseObservation](animalbodyposeobservation.md)
 - [BarcodeObservation](barcodeobservation.md)
@@ -57,6 +58,7 @@ protocol VisionObservation : CustomStringConvertible, Decodable, Encodable, Hash
 - [CoreMLFeatureValueObservation](coremlfeaturevalueobservation.md)
 - [DetectedDocumentObservation](detecteddocumentobservation.md)
 - [DetectedObjectObservation](detectedobjectobservation.md)
+- [DocumentObservation](documentobservation.md)
 - [FaceObservation](faceobservation.md)
 - [FeaturePrintObservation](featureprintobservation.md)
 - [HorizonObservation](horizonobservation.md)
@@ -74,6 +76,7 @@ protocol VisionObservation : CustomStringConvertible, Decodable, Encodable, Hash
 - [RecognizedTextObservation](recognizedtextobservation.md)
 - [RectangleObservation](rectangleobservation.md)
 - [SaliencyImageObservation](saliencyimageobservation.md)
+- [SmudgeObservation](smudgeobservation.md)
 - [TextObservation](textobservation.md)
 - [TrajectoryObservation](trajectoryobservation.md)
 
@@ -89,6 +92,10 @@ protocol VisionObservation : CustomStringConvertible, Decodable, Encodable, Hash
   An object that processes one or more image-analysis requests pertaining to a single image.
 - [protocol VisionRequest](visionrequest.md)
   A type for image-analysis requests.
+- [struct DetectLensSmudgeRequest](detectlenssmudgerequest.md)
+  A request that detects a smudge on a lens from an image or video frame capture.
+- [struct SmudgeObservation](smudgeobservation.md)
+  An observation that provides an overall score of the presence of a smudge in an image or video frame capture.
 
 
 ---

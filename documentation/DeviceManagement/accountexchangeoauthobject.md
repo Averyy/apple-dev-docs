@@ -10,8 +10,6 @@ The declaration for configuring OAuth authentication of an Exchange account.
 - iPadOS 15.0+
 - macOS 13.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,10 +21,6 @@ object AccountExchangeOAuthObject
 
 - [object AccountExchangeSMIMEObject](accountexchangesmimeobject.md)
   Settings for S/MIME.
-- [object AccountExchangeSMIME_EncryptionObject](accountexchangesmime_encryptionobject.md)
-  Settings for S/MIME encryption.
-- [object AccountExchangeSMIME_SigningObject](accountexchangesmime_signingobject.md)
-  Settings for S/MIME signing.
 
 
 ---

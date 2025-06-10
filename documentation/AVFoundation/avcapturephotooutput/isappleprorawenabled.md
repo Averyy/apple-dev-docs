@@ -31,8 +31,6 @@ This property is key-value observable.
 
 > 💡 **Tip**:  Set this property to [`true`](https://developer.apple.com/documentation/swift/true) before calling [`startRunning()`](avcapturesession/startrunning().md) on the capture session. Enabling this property later requires a lengthy reconfiguration of the capture pipeline.
 
- Set this property to [`true`](https://developer.apple.com/documentation/swift/true) before calling [`startRunning()`](avcapturesession/startrunning().md) on the capture session. Enabling this property later requires a lengthy reconfiguration of the capture pipeline.
-
 ## See Also
 
 - [var isAppleProRAWSupported: Bool](avcapturephotooutput/isappleprorawsupported.md)

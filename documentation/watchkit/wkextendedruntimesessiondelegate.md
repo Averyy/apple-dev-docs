@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionDelegate
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: protocol
 
 A set of optional methods for monitoring an extended runtime session.

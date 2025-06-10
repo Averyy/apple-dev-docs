@@ -1,6 +1,6 @@
 # Distributing your app on an alternative app marketplace
 
-**Framework**: Marketplacekit
+**Framework**: MarketplaceKit
 
 Design your app for alternative distribution from an alternative app marketplace.
 
@@ -119,4 +119,4 @@ Similarly, to override the `current` distributor in a test plan, choose a market
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/distributing-your-app-on-an-alternative-marketplace)*
+*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/distributing-your-app-on-an-alternative-marketplace)*

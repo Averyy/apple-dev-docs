@@ -1,6 +1,6 @@
 # applePayCapabilities
 
-**Framework**: Applepayontheweb  
+**Framework**: Apple Pay on the Web  
 **Kind**: method
 
 Indicates whether the device supports Apple Pay and whether the person has an active card in Wallet that qualifies for web payments.
@@ -31,7 +31,7 @@ Returns the [`PaymentCredentialStatus`](paymentcredentialstatus.md) object.
 
 This method asynchronously contacts the Apple Pay servers as part of the verification process. You can use this method to check for support on third-party browsers.
 
-According to the [`Acceptable Use Guidelines for Apple Pay on the Web`](https://developer.apple.comhttps://developer.apple.com/apple-pay/acceptable-use-guidelines-for-websites/), if you invoke the `applePayCapabilities` method and determine that a person has an active card provisioned into Wallet, then Apple Pay should be the primary, but not necessarily sole, payment option on any webpage that accepts payments, like the checkout page or product detail page. In all other situations, use [`canMakePayments`](applepaysession/canmakepayments.md) instead. For more information, see [`Checking for Apple Pay availability`](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/checking_for_apple_pay_availability).
+According to the [`Acceptable Use Guidelines for Apple Pay on the Web`](https://developer.apple.comhttps://developer.apple.com/apple-pay/acceptable-use-guidelines-for-websites/), if you invoke the `applePayCapabilities` method and determine that a person has an active card provisioned into Wallet, then Apple Pay should be the primary, but not necessarily sole, payment option on any webpage that accepts payments, like the checkout page or product detail page. In all other situations, use [`canMakePayments`](applepaysession/canmakepayments.md) instead. For more information, see [`Checking for Apple Pay availability`](checking-for-apple-pay-availability.md).
 
 > **Note**:  Some cards, such as transit cards, are only enabled for POS payments and therefore won’t qualify for payments on the web.
 
@@ -78,4 +78,4 @@ The following code demonstrates calling this method with each of the possible re
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaysession/applepaycapabilities)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaysession/applepaycapabilities)*

@@ -94,4 +94,4 @@ The following additional filter tools appear to the right:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/analyzing-your-metal-workload)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/analyzing-your-metal-workload)*

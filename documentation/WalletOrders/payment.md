@@ -1,6 +1,6 @@
 # Payment
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 The payment information associated with the order.

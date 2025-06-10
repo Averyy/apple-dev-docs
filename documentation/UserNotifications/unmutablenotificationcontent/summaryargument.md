@@ -1,6 +1,6 @@
 # summaryArgument
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The text the system adds to the notification summary to provide additional context.

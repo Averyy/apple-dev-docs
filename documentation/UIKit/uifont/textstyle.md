@@ -66,6 +66,7 @@ Pass these constants to the [`preferredFont(forTextStyle:)`](uifont/preferredfon
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

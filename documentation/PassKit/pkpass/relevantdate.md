@@ -31,6 +31,7 @@ You can use this property for sorting UI elements that represent passes, such as
   Returns the localized value for a specified field of the pass.
 - [var organizationName: String](pkpass/organizationname.md)
   The name of the organization that creates the pass.
+- [class PKPassRelevantDate](pkpassrelevantdate.md)
 
 
 ---

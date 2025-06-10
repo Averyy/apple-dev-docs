@@ -1,6 +1,6 @@
 # Supporting Writing Tools via the pasteboard
 
-**Framework**: Appkit
+**Framework**: AppKit
 
 Adopt a simplified version of the Writing Tools experience in a custom view using the pasteboard and macOS services.
 
@@ -95,8 +95,10 @@ To anchor the Writing Tools UI to a custom part of your view’s content, adopt 
   A data object that you use to share your custom view’s text with Writing Tools.
 - [NSWritingToolsCoordinator.AnimationParameters](nswritingtoolscoordinator/animationparameters.md)
   An object you use to configure additional tasks or animations to run alongside the Writing Tools animations.
+- [Enhancing your custom text engine with Writing Tools](enhancing-your-custom-text-engine-with-writing-tools.md)
+  Add Writing Tools support to your custom text engine to enhance the text editing experience.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/supporting-writing-tools-via-the-pasteboard)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/supporting-writing-tools-via-the-pasteboard)*

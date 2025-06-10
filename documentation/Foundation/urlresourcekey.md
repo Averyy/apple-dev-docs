@@ -297,6 +297,9 @@ To request information using one of these keys, pass it to the `forKey:` paramet
   The key for a value that indicates the percentage of data that the system downloaded from iCloud storage.
 - [static let ubiquitousItemPercentUploadedKey: URLResourceKey](urlresourcekey/ubiquitousitempercentuploadedkey.md)
   The key for a value that indicates the percentage of data that the system uploaded to iCloud storage.
+### Type Properties
+- [static let ubiquitousItemIsSyncPausedKey: URLResourceKey](urlresourcekey/ubiquitousitemissyncpausedkey.md)
+- [static let ubiquitousItemSupportedSyncControlsKey: URLResourceKey](urlresourcekey/ubiquitousitemsupportedsynccontrolskey.md)
 
 ## Relationships
 
@@ -305,6 +308,7 @@ To request information using one of these keys, pass it to the `forKey:` paramet
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

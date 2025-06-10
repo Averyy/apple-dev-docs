@@ -102,8 +102,6 @@ In the Angle fields, click the minus (—) or plus (+) button, or double-click i
 
 > 💡 **Tip**: Degrees versus radians — the particle emitter inspector displays degrees when presenting an angle to the user. However, these degrees are converted into radians to match the SpriteKit API when the app is built.
 
-Degrees versus radians — the particle emitter inspector displays degrees when presenting an angle to the user. However, these degrees are converted into radians to match the SpriteKit API when the app is built.
-
 The  fields define how fast the particle is moving, in points per second, at the instance of creation.
 
 In the Speed fields, click the minus (—) or plus (+) buttons, or double-click in the fields and enter the speed values. The start and range values correspond to the particle emitter’s [`particleSpeed`](https://developer.apple.com/documentation/SpriteKit/SKEmitterNode/particleSpeed) and [`particleSpeedRange`](https://developer.apple.com/documentation/SpriteKit/SKEmitterNode/particleSpeedRange) properties.
@@ -143,8 +141,6 @@ In the Rotation fields, click the minus (—) or plus (+) button, or double-clic
 You can manage how many particles are created, the maximum number of particles created, and the length of time that each particle is alive.
 
 > ❗ **Important**: The number of particles the emitter creates and how long they are onscreen directly affect the performance of your app.
-
-The number of particles the emitter creates and how long they are onscreen directly affect the performance of your app.
 
 The  fields control how often particles are created and the maximum number of particles created.
 

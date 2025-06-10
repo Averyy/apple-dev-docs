@@ -1,6 +1,6 @@
 # vmnet_interface_set_event_callback(_:_:_:_:)
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: func
 
 Schedules a callback to be executed when events for the specified interface are received.

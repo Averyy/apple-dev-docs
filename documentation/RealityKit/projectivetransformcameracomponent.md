@@ -10,6 +10,7 @@ A component that defines a virtual camera with a custom projection matrix.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -45,18 +46,12 @@ content.add(cameraEntity)
 
 ## Topics
 
-### Operators
-- [static func == (ProjectiveTransformCameraComponent, ProjectiveTransformCameraComponent) -> Bool](projectivetransformcameracomponent/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(projectionMatrix: float4x4)](projectivetransformcameracomponent/init(projectionmatrix:).md)
   Creates a new custom matrix camera component with the given settings.
 ### Instance Properties
 - [var transform: float4x4](projectivetransformcameracomponent/transform.md)
   The custom projection RealityKit applies to objects in the scene.
-### Default Implementations
-- [Component Implementations](projectivetransformcameracomponent/component-implementations.md)
-- [Equatable Implementations](projectivetransformcameracomponent/equatable-implementations.md)
 
 ## Relationships
 

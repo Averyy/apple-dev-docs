@@ -1,6 +1,6 @@
 # alarms
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A request for access to the `browser.alarms` APIs.

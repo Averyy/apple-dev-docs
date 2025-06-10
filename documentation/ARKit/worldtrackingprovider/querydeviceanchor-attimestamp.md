@@ -6,6 +6,7 @@
 The predicted pose of the current device at a given time.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -23,8 +24,6 @@ The predicted position and orientation of the device at the time you specify.
 Pass the `timestamp` parameter as absolute time in seconds. For example, to get the device’s current pose, pass [`CACurrentMediaTime()`](https://developer.apple.com/documentation/QuartzCore/CACurrentMediaTime()) as the timestamp.
 
 > ❗ **Important**:  Predicting future device pose is a computationally expensive operation. You typically only use this method when implementing your own rendering with the [`Compositor Services`](https://developer.apple.com/documentation/CompositorServices) framework.
-
- Predicting future device pose is a computationally expensive operation. You typically only use this method when implementing your own rendering with the [`Compositor Services`](https://developer.apple.com/documentation/CompositorServices) framework.
 
 ## Parameters
 

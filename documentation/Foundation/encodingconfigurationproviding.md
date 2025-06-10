@@ -37,6 +37,7 @@ protocol EncodingConfigurationProviding
 - [AttributeScopes.AppKitAttributes](attributescopes/appkitattributes.md)
 - [AttributeScopes.FoundationAttributes](attributescopes/foundationattributes.md)
 - [AttributeScopes.FoundationAttributes.NumberFormatAttributes](attributescopes/foundationattributes/numberformatattributes.md)
+- [AttributeScopes.SpeechAttributes](attributescopes/speechattributes.md)
 - [AttributeScopes.SwiftUIAttributes](attributescopes/swiftuiattributes.md)
 - [AttributeScopes.UIKitAttributes](attributescopes/uikitattributes.md)
 

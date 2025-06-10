@@ -64,8 +64,6 @@ When diagnosing user-reported issues, pay attention to the user’s device and O
 
 > 💡 **Tip**: Raising your app’s deployment target reduces the number of combinations of device model and OS version to test. If testing all combinations is unmanageable, you can shrink the number of devices your app supports — and thus, the number of devices to test — by raising the deployment target.
 
-Raising your app’s deployment target reduces the number of combinations of device model and OS version to test. If testing all combinations is unmanageable, you can shrink the number of devices your app supports — and thus, the number of devices to test — by raising the deployment target.
-
 ##### Check File System Access
 
 On macOS, users can have different levels of file system access depending on their user account privilege. One way to test the difference that a user’s account privilege makes in your app is to run the app as a guest user. The file system privileges of a guest user falls under the `everyone` category in Finder’s Get Info pane. By default, the file system access level for `everyone` differs from the default admin access level.
@@ -123,7 +121,7 @@ If your app processes dates or times, ensure your app handles all of the possibl
 Test with a 12-hour region, a 24-hour region, a 12-hour region that’s overridden to use 24-hour, and a 24-hour region that’s overridden to use 12 hours. Also, test with a Gregorian and non-Gregorian calendar (such as lunar or lunisolar), as well as regions that use Latin and non-Latin digits (such as Arabic). To set the region or calendar on a device:
 
 - On iOS, use Settings > General > Language & Region.
-- On macOS, use System Settings > Language & Region.
+- On macOS, use System Settings > General > Language & Region.
 
 To learn more about testing languages and regions, see [`Testing localizations when running your app`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/testing-localizations-when-running-your-app).
 

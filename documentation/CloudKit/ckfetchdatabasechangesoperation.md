@@ -1,6 +1,6 @@
 # CKFetchDatabaseChangesOperation
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: class
 
 An operation that fetches database changes.
@@ -114,6 +114,7 @@ operation.qualityOfService = NSQualityOfServiceUtility;
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -125,4 +126,4 @@ operation.qualityOfService = NSQualityOfServiceUtility;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckfetchdatabasechangesoperation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckfetchdatabasechangesoperation)*

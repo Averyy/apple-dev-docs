@@ -1,16 +1,22 @@
 # Adding interactivity to widgets and Live Activities
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Include buttons or toggles in a widget or Live Activity to offer app functionality without launching the app.
 
 #### Overview
 
-Starting with iOS 17, iPadOS 17, or macOS 14, widgets and Live Activities can include buttons and toggles to offer specific app functionality without launching the app. For example, a Reminders widget allows people to mark a task as completed with a toggle. On a locked device, buttons and toggles are inactive and the system doesn’t perform actions unless a person authenticates and unlocks their device.
+Widgets and Live Activities can include buttons and toggles to offer specific app functionality without launching the app. For example, a Reminders widget allows people to mark a task as completed with a toggle. On a locked device, buttons and toggles are inactive and the system doesn’t perform actions unless a person authenticates and unlocks their device.
 
 When you create a widget or Live Activity, think about how people interact with it. Then, make your app’s most important actions available directly in a widget or Live Activity by adding buttons or toggles.
 
 > ❗ **Important**: An interaction with a button or toggle should do more than open the app. If you want to offer an interaction that opens the app, use [`Link`](https://developer.apple.com/documentation/SwiftUI/Link) and [`widgetURL(_:)`](https://developer.apple.com/documentation/SwiftUI/View/widgetURL(_:)) as described in [`Linking to specific app scenes from your widget or Live Activity`](linking-to-specific-app-scenes-from-your-widget-or-live-activity.md).
+
+For design guidance, refer to [`Human Interface Guidelines > Widgets`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets).
+
+> **Note**: [`Session 10027: Bring widgets to new places`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10027)
+
+##### Review Widgets That Support Interactive Views
 
 Widgets of the following sizes can include buttons and toggles:
 
@@ -18,14 +24,15 @@ Widgets of the following sizes can include buttons and toggles:
 - [`WidgetFamily.systemMedium`](widgetfamily/systemmedium.md)
 - [`WidgetFamily.systemLarge`](widgetfamily/systemlarge.md)
 - [`WidgetFamily.systemExtraLarge`](widgetfamily/systemextralarge.md)
+- [`WidgetFamily.systemExtraLargePortrait`](widgetfamily/systemextralargeportrait.md)
 - [`WidgetFamily.accessoryCircular`](widgetfamily/accessorycircular.md) on iPhone and iPad
 - [`WidgetFamily.accessoryRectangular`](widgetfamily/accessoryrectangular.md) on iPhone and iPad
 
 Live Activities can include buttons or toggles in the expanded and the Lock Screen presentation.
 
-For design guidance, see [`Human Interface Guidelines > Widgets`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets).
+##### Support Interactive Widgets in Carplay
 
-> **Note**: [`Session 10027: Bring widgets to new places`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10027)
+People configure small system widgets to appear in CarPlay in the Widgets screen. To fit the context of widgets on a vehicle’s built-in display, WidgetKit adjusts their functionality to match the CarPlay context. For additional information, refer to [`Adding StandBy and CarPlay support to your widget`](adding-standby-and-carplay-support-to-your-widget.md).
 
 ##### Understand the Role of App Intents
 
@@ -49,7 +56,6 @@ Buttons and toggles you add to your widgets and Live Activities use functionalit
 For example, the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project includes a button in its large widget that people click or touch to give the hero a healing boost. The following code snippet shows its app intent implementation:
 
 ```swift
-@available(iOS 16.0, macOS 13.0, watchOS 9.0, tvOS 16.0, *)
 struct SuperCharge: AppIntent {
     
     static var title: LocalizedStringResource = "Emoji Ranger SuperCharger"
@@ -162,7 +168,7 @@ To accurately reflect changed state for a person’s action with a `Toggle`, upd
 
 ##### Review Interactions in Iphone Widgets on Mac
 
-In the context of iPhone widgets on Mac, it’s important to use the [`invalidatableContent(_:)`](https://developer.apple.com/documentation/SwiftUI/View/invalidatableContent(_:)) view modifier on views if you add a [`Button`](https://developer.apple.com/documentation/SwiftUI/Button) to a widget and also understand the optimistic behavior of a [`Toggle`](https://developer.apple.com/documentation/SwiftUI/Toggle). Starting with iOS 17 and macOS 14, users can put iPhone widgets on their Mac desktop and in Notification Center. When a person interacts with the iPhone widget on Mac, the system sends the interaction to iPhone. On iPhone, the system performs the intent, generates a new timeline, and then sends the updated timeline to the iPhone widget on Mac. This process may take extra time. As a result, marking views that await updated data and making sure a toggle reflects synchronized data are especially important.
+In the context of iPhone widgets on Mac, it’s important to use the [`invalidatableContent(_:)`](https://developer.apple.com/documentation/SwiftUI/View/invalidatableContent(_:)) view modifier on views if you add a [`Button`](https://developer.apple.com/documentation/SwiftUI/Button) to a widget and also understand the optimistic behavior of a [`Toggle`](https://developer.apple.com/documentation/SwiftUI/Toggle). People can put iPhone widgets on their Mac desktop and in Notification Center. When a person interacts with the iPhone widget on Mac, the system sends the interaction to iPhone. On iPhone, the system performs the intent, generates a new timeline, and then sends the updated timeline to the iPhone widget on Mac. This process may take extra time. As a result, marking views that await updated data and making sure a toggle reflects synchronized data are especially important.
 
 ## See Also
 
@@ -174,4 +180,4 @@ In the context of iPhone widgets on Mac, it’s important to use the [`invalidat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/adding-interactivity-to-widgets-and-live-activities)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/adding-interactivity-to-widgets-and-live-activities)*

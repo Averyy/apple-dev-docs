@@ -1,6 +1,6 @@
 # VERTEX_ATTRIB_ARRAY_NORMALIZED
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

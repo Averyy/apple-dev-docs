@@ -22,8 +22,6 @@ struct ModelDocument
 
 > ❗ **Important**: Don’t create instances of this type. Instead, use one of the initializers on [`DocumentGroup`](https://developer.apple.com/documentation/SwiftUI/DocumentGroup).
 
-Don’t create instances of this type. Instead, use one of the initializers on [`DocumentGroup`](https://developer.apple.com/documentation/SwiftUI/DocumentGroup).
-
 ## See Also
 
 - [Reverting data changes using the undo manager](reverting-data-changes-using-the-undo-manager.md)

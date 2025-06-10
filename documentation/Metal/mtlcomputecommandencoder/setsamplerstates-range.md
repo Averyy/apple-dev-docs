@@ -23,8 +23,6 @@ func setSamplerStates(_ samplers: [(any MTLSamplerState)?], range: Range<Int>)
 
 > ⚠️ **Warning**:  This method requires that the number of instances in `samplers` be the same as the length of `range`.
 
- This method requires that the number of instances in `samplers` be the same as the length of `range`.
-
 ## Parameters
 
 - `samplers`: An array of   instance to bind to the sampler argument table.

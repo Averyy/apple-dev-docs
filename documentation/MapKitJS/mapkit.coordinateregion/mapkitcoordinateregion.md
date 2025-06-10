@@ -22,9 +22,9 @@ new mapkit.CoordinateRegion(
 Create a coordinate region by passing a center coordinate and span to the constructor.
 
 ```javascript
-var coordinate = new mapkit.Coordinate(37.415, -122.048333); // latitude, longitude
-var span = new mapkit.CoordinateSpan(.016, .016); // latitude delta, longitude delta
-var region = new mapkit.CoordinateRegion(coordinate, span);
+const coordinate = new mapkit.Coordinate(37.415, -122.048333); // latitude, longitude
+const span = new mapkit.CoordinateSpan(.016, .016); // latitude delta, longitude delta
+const region = new mapkit.CoordinateRegion(coordinate, span);
 ```
 
 ## Parameters

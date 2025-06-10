@@ -56,6 +56,8 @@ protocol PersistentModel : AnyObject, Observable, Hashable, Identifiable
 ### Internal
 - [Internal symbols](persistentmodelinternal.md)
   Restricted-use symbols that the framework requires for macro expansion and other internal tasks.
+### Associated Types
+- [associatedtype Root : PersistentModel = Self](persistentmodel/root.md)
 ### Type Methods
 - [static func createBackingData<P>() -> some BackingData<P>
 ](persistentmodel/createbackingdata.md)

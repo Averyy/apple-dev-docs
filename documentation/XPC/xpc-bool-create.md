@@ -1,6 +1,6 @@
 # xpc_bool_create(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates an XPC Boolean object.

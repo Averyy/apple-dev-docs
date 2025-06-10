@@ -1,7 +1,7 @@
 # CIContext
 
 **Framework**: Core Image  
-**Kind**: cl
+**Kind**: class
 
 An evaluation context for rendering image processing results and performing image analysis.
 
@@ -10,141 +10,166 @@ An evaluation context for rendering image processing results and performing imag
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS 9.0+
+- tvOS ?+
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
-class CIContext : NSObject
+class CIContext
 ```
+
+## Mentions
+
+- [Processing an Image Using Built-in Filters](processing-an-image-using-built-in-filters.md)
 
 #### Overview
 
-The [`CIContext`](cicontext.md) class provides an evaluation context for Core Image processing with Quartz 2D, Metal, or OpenGL. You use [`CIContext`](cicontext.md) objects in conjunction with other Core Image classes, such as [`CIFilter`](cifilter.md), [`CIImage`](ciimage.md), and [`CIColor`](cicolor.md), to process images using Core Image filters. You also use a Core Image context with the [`CIDetector`](cidetector.md) class to analyze images—for example, to detect faces or barcodes.
+The `CIContext` class provides an evaluation context for Core Image processing with Quartz 2D, Metal, or OpenGL. You use `CIContext` objects in conjunction with other Core Image classes, such as [`CIFilter`](cifilter-swift.class.md), [`CIImage`](ciimage.md), and [`CIColor`](cicolor.md), to process images using Core Image filters. You also use a Core Image context with the [`CIDetector`](cidetector.md) class to analyze images—for example, to detect faces or barcodes.
 
-[`CIContext`](cicontext.md) and [`CIImage`](ciimage.md) objects are immutable, so multiple threads can use the same [`CIContext`](cicontext.md) object to render [`CIImage`](ciimage.md) objects. However, [`CIFilter`](cifilter.md) objects are mutable and thus cannot be shared safely among threads. Each thread must create its own [`CIFilter`](cifilter.md) objects, but you can pass a filter’s immutable input and output [`CIImage`](ciimage.md) objects between threads.
+`CIContext` and `CIImage` objects are immutable, so multiple threads can use the same `CIContext` object to render `CIImage` objects. However, `CIFilter` objects are mutable and thus cannot be shared safely among threads. Each thread must create its own `CIFilter` objects, but you can pass a filter’s immutable input and output `CIImage` objects between threads.
 
 ## Topics
 
 ### Creating a Context Without Specifying a Destination
-- [init()](cicontext/1642212-init.md)
+- [init()](cicontext/init.md)
   Initializes a context without a specific rendering destination, using default options.
-- [init(options: [CIContextOption : Any]?)](cicontext/1438261-init.md)
-  Initializes a context without a specific rendering destination, using the specified options.
 ### Creating a Context for CPU-Based Rendering
-- [init(cgContext: CGContext, options: [CIContextOption : Any]?)](cicontext/1437864-init.md)
+- [init(cgContext: CGContext, options: [CIContextOption : Any]?)](cicontext/init(cgcontext:options:).md)
   Creates a Core Image context from a Quartz context, using the specified options.
 ### Creating a Context for GPU-Based Rendering
-- [init(mtlDevice: any MTLDevice)](cicontext/1437609-init.md)
+- [init(mtlDevice: any MTLDevice)](cicontext/init(mtldevice:).md)
   Creates a Core Image context using the specified Metal device.
-- [init(mtlDevice: any MTLDevice, options: [CIContextOption : Any]?)](cicontext/1437711-init.md)
+- [init(mtlDevice: any MTLDevice, options: [CIContextOption : Any]?)](cicontext/init(mtldevice:options:).md)
   Creates a Core Image context using the specified Metal device and options.
-- [init(mtlCommandQueue: any MTLCommandQueue)](cicontext/3365984-init.md)
-- [init(mtlCommandQueue: any MTLCommandQueue, options: [CIContextOption : Any]?)](cicontext/3365985-init.md)
+- [init(mtlCommandQueue: any MTLCommandQueue)](cicontext/init(mtlcommandqueue:).md)
+- [init(mtlCommandQueue: any MTLCommandQueue, options: [CIContextOption : Any]?)](cicontext/init(mtlcommandqueue:options:).md)
 ### Rendering Images
-- [func createCGImage(CIImage, from: CGRect) -> CGImage?](cicontext/1437784-createcgimage.md)
+- [func createCGImage(CIImage, from: CGRect) -> CGImage?](cicontext/createcgimage(_:from:).md)
   Creates a Quartz 2D image from a region of a Core Image image object.
-- [func createCGImage(CIImage, from: CGRect, format: CIFormat, colorSpace: CGColorSpace?) -> CGImage?](cicontext/1437978-createcgimage.md)
+- [func createCGImage(CIImage, from: CGRect, format: CIFormat, colorSpace: CGColorSpace?) -> CGImage?](cicontext/createcgimage(_:from:format:colorspace:).md)
   Creates a Quartz 2D image from a region of a Core Image image object.
-- [func createCGImage(CIImage, from: CGRect, format: CIFormat, colorSpace: CGColorSpace?, deferred: Bool) -> CGImage?](cicontext/1642211-createcgimage.md)
+- [func createCGImage(CIImage, from: CGRect, format: CIFormat, colorSpace: CGColorSpace?, deferred: Bool) -> CGImage?](cicontext/createcgimage(_:from:format:colorspace:deferred:).md)
   Creates a Quartz 2D image from a region of a Core Image image object with deferred rendering.
-- [func render(CIImage, toBitmap: UnsafeMutableRawPointer, rowBytes: Int, bounds: CGRect, format: CIFormat, colorSpace: CGColorSpace?)](cicontext/1437897-render.md)
-  Renders to the given bitmap. 
-- [func render(CIImage, to: CVPixelBuffer)](cicontext/1437853-render.md)
+- [func render(CIImage, toBitmap: UnsafeMutableRawPointer, rowBytes: Int, bounds: CGRect, format: CIFormat, colorSpace: CGColorSpace?)](cicontext/render(_:tobitmap:rowbytes:bounds:format:colorspace:).md)
+  Renders to the given bitmap.
+- [func render(CIImage, to: CVPixelBuffer)](cicontext/render(_:to:).md)
   Renders an image into a pixel buffer.
-- [func render(CIImage, to: CVPixelBuffer, bounds: CGRect, colorSpace: CGColorSpace?)](cicontext/1437835-render.md)
+- [func render(CIImage, to: CVPixelBuffer, bounds: CGRect, colorSpace: CGColorSpace?)](cicontext/render(_:to:bounds:colorspace:)-2k8l2.md)
   Renders a region of an image into a pixel buffer.
-- [func render(CIImage, to: IOSurfaceRef, bounds: CGRect, colorSpace: CGColorSpace?)](cicontext/1437778-render.md)
+- [func render(CIImage, to: IOSurfaceRef, bounds: CGRect, colorSpace: CGColorSpace?)](cicontext/render(_:to:bounds:colorspace:)-54b9l.md)
   Renders a region of an image into an IOSurface object.
-- [func render(CIImage, to: any MTLTexture, commandBuffer: (any MTLCommandBuffer)?, bounds: CGRect, colorSpace: CGColorSpace)](cicontext/1438026-render.md)
+- [func render(CIImage, to: any MTLTexture, commandBuffer: (any MTLCommandBuffer)?, bounds: CGRect, colorSpace: CGColorSpace)](cicontext/render(_:to:commandbuffer:bounds:colorspace:).md)
   Renders a region of an image to a Metal texture.
 ### Drawing Images
-- [func draw(CIImage, at: CGPoint, from: CGRect)](cicontext/1473521-draw.md)
-  Renders a region of an image to a point in the context destination.
-- [func draw(CIImage, in: CGRect, from: CGRect)](cicontext/1437786-draw.md)
+- [func draw(CIImage, in: CGRect, from: CGRect)](cicontext/draw(_:in:from:).md)
   Renders a region of an image to a rectangle in the context destination.
 ### Determining the Allowed Extents for Images Used by a Context
-- [func inputImageMaximumSize() -> CGSize](cicontext/1620425-inputimagemaximumsize.md)
+- [func inputImageMaximumSize() -> CGSize](cicontext/inputimagemaximumsize.md)
   Returns the maximum size allowed for any image rendered into the context.
-- [func outputImageMaximumSize() -> CGSize](cicontext/1620335-outputimagemaximumsize.md)
+- [func outputImageMaximumSize() -> CGSize](cicontext/outputimagemaximumsize.md)
   Returns the maximum size allowed for any image created by the context.
 ### Managing Resources
-- [func clearCaches()](cicontext/1437790-clearcaches.md)
+- [func clearCaches()](cicontext/clearcaches.md)
   Frees any cached data, such as temporary images, associated with the context and runs the garbage collector.
-- [func reclaimResources()](cicontext/1437967-reclaimresources.md)
+- [func reclaimResources()](cicontext/reclaimresources.md)
   Runs the garbage collector to reclaim any resources that the context no longer requires.
-- [class func offlineGPUCount() -> UInt32](cicontext/1437817-offlinegpucount.md)
+- [class func offlineGPUCount() -> UInt32](cicontext/offlinegpucount.md)
   Returns the number of GPUs not currently driving a display.
-- [var workingColorSpace: CGColorSpace?](cicontext/1438061-workingcolorspace.md)
+- [var workingColorSpace: CGColorSpace?](cicontext/workingcolorspace.md)
   The working color space of the Core Image context.
-- [var workingFormat: CIFormat](cicontext/1642215-workingformat.md)
+- [var workingFormat: CIFormat](cicontext/workingformat.md)
   The working pixel format of the Core Image context.
 ### Rendering Images for Data or File Export
-- [func tiffRepresentation(of: CIImage, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/1642220-tiffrepresentation.md)
+- [func tiffRepresentation(of: CIImage, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/tiffrepresentation(of:format:colorspace:options:).md)
   Renders the image and exports the resulting image data in TIFF format.
-- [func jpegRepresentation(of: CIImage, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/1642214-jpegrepresentation.md)
+- [func jpegRepresentation(of: CIImage, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/jpegrepresentation(of:colorspace:options:).md)
   Renders the image and exports the resulting image data in JPEG format.
-- [func pngRepresentation(of: CIImage, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/2866196-pngrepresentation.md)
+- [func pngRepresentation(of: CIImage, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/pngrepresentation(of:format:colorspace:options:).md)
   Renders the image and exports the resulting image data in PNG format.
-- [func heifRepresentation(of: CIImage, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/2902269-heifrepresentation.md)
+- [func heifRepresentation(of: CIImage, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data?](cicontext/heifrepresentation(of:format:colorspace:options:).md)
   Renders the image and exports the resulting image data in HEIF format.
-- [func heif10Representation(of: CIImage, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) -> Data](cicontext/3762899-heif10representation.md)
+- [func heif10Representation(of: CIImage, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws -> Data](cicontext/heif10representation(of:colorspace:options:).md)
   Renders the image and exports the resulting image data in HEIF10 format.
-- [func openEXRRepresentation(of: CIImage, options: [CIImageRepresentationOption : Any]) -> Data](cicontext/4210204-openexrrepresentation.md)
+- [func openEXRRepresentation(of: CIImage, options: [CIImageRepresentationOption : Any]) throws -> Data](cicontext/openexrrepresentation(of:options:).md)
   Renders the image and exports the resulting image data in open EXR format.
-- [func writeTIFFRepresentation(of: CIImage, to: URL, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any])](cicontext/1642213-writetiffrepresentation.md)
+- [func writeTIFFRepresentation(of: CIImage, to: URL, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws](cicontext/writetiffrepresentation(of:to:format:colorspace:options:).md)
   Renders the image and exports the resulting image data as a file in TIFF format.
-- [func writeJPEGRepresentation(of: CIImage, to: URL, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any])](cicontext/1642218-writejpegrepresentation.md)
+- [func writeJPEGRepresentation(of: CIImage, to: URL, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws](cicontext/writejpegrepresentation(of:to:colorspace:options:).md)
   Renders the image and exports the resulting image data as a file in JPEG format.
-- [func writePNGRepresentation(of: CIImage, to: URL, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any])](cicontext/2866197-writepngrepresentation.md)
+- [func writePNGRepresentation(of: CIImage, to: URL, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws](cicontext/writepngrepresentation(of:to:format:colorspace:options:).md)
   Renders the image and exports the resulting image data as a file in PNG format.
-- [func writeHEIFRepresentation(of: CIImage, to: URL, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any])](cicontext/2902266-writeheifrepresentation.md)
+- [func writeHEIFRepresentation(of: CIImage, to: URL, format: CIFormat, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws](cicontext/writeheifrepresentation(of:to:format:colorspace:options:).md)
   Renders the image and exports the resulting image data as a file in HEIF format.
-- [func writeHEIF10Representation(of: CIImage, to: URL, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any])](cicontext/3762900-writeheif10representation.md)
+- [func writeHEIF10Representation(of: CIImage, to: URL, colorSpace: CGColorSpace, options: [CIImageRepresentationOption : Any]) throws](cicontext/writeheif10representation(of:to:colorspace:options:).md)
   Renders the image and exports the resulting image data as a file in HEIF10 format.
-- [func writeOpenEXRRepresentation(of: CIImage, to: URL, options: [CIImageRepresentationOption : Any])](cicontext/4210205-writeopenexrrepresentation.md)
+- [func writeOpenEXRRepresentation(of: CIImage, to: URL, options: [CIImageRepresentationOption : Any]) throws](cicontext/writeopenexrrepresentation(of:to:options:).md)
   Renders the image and exports the resulting image data as a file in open EXR format.
 - [struct CIImageRepresentationOption](ciimagerepresentationoption.md)
 ### Creating Depth Blur Filters
-- [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, hairSemanticSegmentation: CIImage?, glassesMatte: CIImage?, gainMap: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/3600105-depthblureffectfilter.md)
-- [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, hairSemanticSegmentation: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/3228045-depthblureffectfilter.md)
-- [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/3019315-depthblureffectfilter.md)
-- [func depthBlurEffectFilter(forImageData: Data, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/3020629-depthblureffectfilter.md)
-- [func depthBlurEffectFilter(forImageURL: URL, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/3019316-depthblureffectfilter.md)
+- [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, hairSemanticSegmentation: CIImage?, glassesMatte: CIImage?, gainMap: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(for:disparityimage:portraiteffectsmatte:hairsemanticsegmentation:glassesmatte:gainmap:orientation:options:).md)
+- [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, hairSemanticSegmentation: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(for:disparityimage:portraiteffectsmatte:hairsemanticsegmentation:orientation:options:).md)
+- [func depthBlurEffectFilter(for: CIImage, disparityImage: CIImage, portraitEffectsMatte: CIImage?, orientation: CGImagePropertyOrientation, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(for:disparityimage:portraiteffectsmatte:orientation:options:).md)
+- [func depthBlurEffectFilter(forImageData: Data, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(forimagedata:options:).md)
+- [func depthBlurEffectFilter(forImageURL: URL, options: [AnyHashable : Any]?) -> CIFilter?](cicontext/depthblureffectfilter(forimageurl:options:).md)
 ### Constants
 - [struct CIContextOption](cicontextoption.md)
 ### Customizing Render Destination
-- [func prepareRender(CIImage, from: CGRect, to: CIRenderDestination, at: CGPoint)](cicontext/2875428-preparerender.md)
+- [func prepareRender(CIImage, from: CGRect, to: CIRenderDestination, at: CGPoint) throws](cicontext/preparerender(_:from:to:at:).md)
   An optional call to warm up a [`CIContext`](cicontext.md) so that subsequent calls to render with the same arguments run more efficiently.
-- [func startTask(toClear: CIRenderDestination) -> CIRenderTask](cicontext/2875450-starttask.md)
-  Fills the entire destination with black or clear depending on its [`alphaMode`](cirenderdestination/2875443-alphamode.md).
-- [func startTask(toRender: CIImage, from: CGRect, to: CIRenderDestination, at: CGPoint) -> CIRenderTask](cicontext/2875448-starttask.md)
+- [func startTask(toClear: CIRenderDestination) throws -> CIRenderTask](cicontext/starttask(toclear:).md)
+  Fills the entire destination with black or clear depending on its [`alphaMode`](cirenderdestination/alphamode.md).
+- [func startTask(toRender: CIImage, from: CGRect, to: CIRenderDestination, at: CGPoint) throws -> CIRenderTask](cicontext/starttask(torender:from:to:at:).md)
   Renders a portion of an image to a point in the destination.
-- [func startTask(toRender: CIImage, to: CIRenderDestination) -> CIRenderTask](cicontext/2875429-starttask.md)
+- [func startTask(toRender: CIImage, to: CIRenderDestination) throws -> CIRenderTask](cicontext/starttask(torender:to:).md)
   Renders an image to a destination so that point (0, 0) of the image maps to point (0, 0) of the destination.
 ### Deprecated
-- [init(cglContext: CGLContextObj, pixelFormat: CGLPixelFormatObj?, colorSpace: CGColorSpace?, options: [CIContextOption : Any]?)](cicontext/1438137-init.md)
+- [init(cglContext: CGLContextObj, pixelFormat: CGLPixelFormatObj?, colorSpace: CGColorSpace?, options: [CIContextOption : Any]?)](cicontext/init(cglcontext:pixelformat:colorspace:options:).md)
   Creates a Core Image context from a CGL context, using the specified options, color space, and pixel format object.
-- [init(eaglContext: EAGLContext)](cicontext/1620419-init.md)
+- [init(eaglContext: EAGLContext)](cicontext/init(eaglcontext:).md)
   Creates a Core Image context from an EAGL context.
-- [init(eaglContext: EAGLContext, options: [CIContextOption : Any]?)](cicontext/1620362-init.md)
+- [init(eaglContext: EAGLContext, options: [CIContextOption : Any]?)](cicontext/init(eaglcontext:options:).md)
   Creates a Core Image context from an EAGL context using the specified options.
-- [init?(forOfflineGPUAt: UInt32)](cicontext/1437772-init.md)
+- [init?(forOfflineGPUAtIndex: UInt32)](cicontext/init(forofflinegpuatindex:).md)
   Creates an OpenGL-based Core Image context using a GPU that is not currently driving a display.
-- [init?(forOfflineGPUAt: UInt32, colorSpace: CGColorSpace?, options: [CIContextOption : Any]?, sharedContext: CGLContextObj?)](cicontext/1437758-init.md)
+- [init?(forOfflineGPUAtIndex: UInt32, colorSpace: CGColorSpace?, options: [CIContextOption : Any]?, sharedContext: CGLContextObj?)](cicontext/init(forofflinegpuatindex:colorspace:options:sharedcontext:).md)
   Creates an OpenGL-based Core Image context using a GPU that is not currently driving a display, with the specified options.
-- [func createCGLayer(with: CGSize, info: CFDictionary?) -> CGLayer?](cicontext/1438267-createcglayer.md)
+- [func createCGLayer(with: CGSize, info: CFDictionary?) -> CGLayer?](cicontext/createcglayer(with:info:).md)
   Creates a CGLayer object from the provided parameters.
+- [func draw(CIImage, at: CGPoint, from: CGRect)](cicontext/draw(_:at:from:).md)
+  Renders a region of an image to a point in the context destination.
+### Initializers
+- [init(options: [CIContextOption : Any]?)](cicontext/init(options:).md)
+  Initializes a context without a specific rendering destination, using the specified options.
+### Instance Methods
+- [func calculateHDRStats(for: CGImage) -> CGImage](cicontext/calculatehdrstats(for:)-3ia7r.md)
+  Given a Core Graphics image, use the receiving Core Image context to calculate its HDR statistics (content headroom and content average light level) and then return a new Core Graphics image that has the calculated values.
+- [func calculateHDRStats(for: IOSurfaceRef)](cicontext/calculatehdrstats(for:)-6lwmz.md)
+  Given an IOSurface, use the receiving Core Image context to calculate its HDR statistics (content headroom and content average light level) and then update the surface’s attachments to store the values.
+- [func calculateHDRStats(for: CVPixelBuffer)](cicontext/calculatehdrstats(for:)-7bcki.md)
+  Given a CVPixelBuffer, use the receiving Core Image context to calculate its HDR statistics (content headroom and content average light level) and then update the buffers’s attachments to store the values.
+- [func calculateHDRStats(for: CIImage) -> CIImage?](cicontext/calculatehdrstats(for:)-l1rj.md)
+  Given a Core Image image, use the receiving Core Image context to calculate its HDR statistics (content headroom and content average light level) and then return a new Core Image image that has the calculated values.
+- [func createCGImage(CIImage, from: CGRect, format: CIFormat, colorSpace: CGColorSpace?, deferred: Bool, calculateHDRStats: Bool) -> CGImage?](cicontext/createcgimage(_:from:format:colorspace:deferred:calculatehdrstats:).md)
+  Creates a Core Graphics image from a region of a Core Image image instance with an option for calculating HDR statistics.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [Processing an Image Using Built-in Filters](processing_an_image_using_built-in_filters.md)
+- [Processing an Image Using Built-in Filters](processing-an-image-using-built-in-filters.md)
   Apply effects such as sepia tint, highlight strengthening, and scaling to images.
 - [class CIImage](ciimage.md)
   A representation of an image to be processed or produced by Core Image filters.

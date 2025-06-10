@@ -1,6 +1,6 @@
 # MarketplaceKitURIScheme
 
-**Framework**: Marketplacekit  
+**Framework**: MarketplaceKit  
 **Kind**: var
 
 A URI scheme that defines an alternative distribution app installation link.
@@ -72,4 +72,4 @@ The fully qualified domain in the `alternateDistributionPackage` value needs to 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/marketplacekiturischeme)*
+*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/marketplacekiturischeme)*

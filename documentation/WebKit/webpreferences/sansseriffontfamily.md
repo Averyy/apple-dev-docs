@@ -1,6 +1,6 @@
 # sansSerifFontFamily
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The sans serif font family of the web view.

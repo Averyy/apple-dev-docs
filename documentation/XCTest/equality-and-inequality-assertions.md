@@ -1,6 +1,6 @@
 # Equality and Inequality Assertions
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Check whether two values are equal or unequal.
 

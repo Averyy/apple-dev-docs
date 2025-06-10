@@ -1,6 +1,6 @@
 # Building local experiences with room tracking
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Use room tracking in visionOS to provide custom interactions with physical spaces.
 

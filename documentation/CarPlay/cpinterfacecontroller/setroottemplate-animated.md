@@ -13,6 +13,7 @@ Sets the root template, starting a new stack for the template navigation hierarc
 ## Declaration
 
 ```swift
+@MainActor
 func setRootTemplate(_ rootTemplate: CPTemplate, animated: Bool)
 ```
 

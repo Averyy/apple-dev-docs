@@ -10,8 +10,6 @@ A dictionary that describes an error chain item.
 - iPadOS 9.2+
 - tvOS 10.2+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

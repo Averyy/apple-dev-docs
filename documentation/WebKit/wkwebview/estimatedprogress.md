@@ -1,6 +1,6 @@
 # estimatedProgress
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An estimate of what fraction of the current navigation has been loaded.

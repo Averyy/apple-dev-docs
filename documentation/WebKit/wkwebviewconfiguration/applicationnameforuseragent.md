@@ -1,6 +1,6 @@
 # applicationNameForUserAgent
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The app name that appears in the user agent string.

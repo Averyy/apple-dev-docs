@@ -1,6 +1,6 @@
 # delegate
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 An object that handles image analysis interface callbacks.

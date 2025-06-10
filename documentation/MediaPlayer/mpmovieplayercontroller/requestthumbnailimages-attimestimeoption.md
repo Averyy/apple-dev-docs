@@ -1,6 +1,6 @@
 # requestThumbnailImages(atTimes:timeOption:)
 
-**Framework**: Mediaplayer  
+**Framework**: Media Player  
 **Kind**: method
 
 Captures one or more thumbnail images asynchronously from the current movie.

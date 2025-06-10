@@ -1,6 +1,6 @@
 # showsExpansionTextWhenTruncated
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A Boolean value that determines whether the full text of the label displays when the pointer hovers over the truncated text.

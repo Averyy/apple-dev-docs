@@ -3,7 +3,7 @@
 **Framework**: Assignables  
 **Kind**: method
 
-Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 
 **Availability**:
 - iOS 17.0+

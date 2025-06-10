@@ -24,10 +24,15 @@ Using the FinanceKit framework, you can:
 - Add, update, store, and interact with orders in Wallet.
 - Interact with Apple Card and Apple Cash.
 
-> ❗ **Important**: To access someone’s financial data, you must meet the criteria outlined in [`Get started with FinanceKit`](https://developer.apple.comhttps://developer.apple.com/financekit/), request the [`FinanceKit managed entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/financekit/), hold an organization-level Apple Developer account, be logged in as Account Holder, and include the `NSFinancialDataDescription` string in your `Info.plist`. Apple reviews each application using [`Get started with FinanceKit`](https://developer.apple.comhttps://developer.apple.com/financekit/). If your request meets the criteria, Apple adds the entitlement to your developer account by using managed capabilities. To request access, see the [`FinanceKit managed entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/financekit/). For more information about managed entitlements, see [`Provisioning with capabilities`](https://developer.apple.comhttps://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities).
+> ❗ **Important**: To access someone’s financial data, you must meet the criteria outlined in [`Get started with FinanceKit`](https://developer.apple.comhttps://developer.apple.com/financekit/), request the [`FinanceKit managed entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/financekit/), hold an organization-level Apple Developer account, be logged in as Account Holder, and include the `NSFinancialDataUsageDescription` string in your `Info.plist`. Apple reviews each application using [`Get started with FinanceKit`](https://developer.apple.comhttps://developer.apple.com/financekit/). If your request meets the criteria, Apple adds the entitlement to your developer account by using managed capabilities. To request access, see the [`FinanceKit managed entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/financekit/). For more information about managed entitlements, see [`Provisioning with capabilities`](https://developer.apple.comhttps://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities).
 
 ## Topics
 
+### Essentials
+- [Implementing a background delivery extension](implementing-a-background-delivery-extension.md)
+  Receive up-to-date financial data in your app and its extensions by adding a background delivery extension.
+- [FinanceKit updates](../Updates/FinanceKit.md)
+  Learn more about changes to FinanceKit.
 ### Data storage
 - [class FinanceStore](financestore.md)
   Secure storage for Apple Wallet orders.
@@ -54,7 +59,7 @@ Using the FinanceKit framework, you can:
 - [func accountBalanceHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<AccountBalance>](financestore/accountbalancehistory(foraccountid:since:ismonitoring:).md)
   Returns the account balance history since a time specified by the provided financial history token.
 - [struct AccountBalance](accountbalance.md)
-  A structure that describes the financial balance of an account at a specific point in time.
+  A structure that describes the financial balance of an account at a specific point in time. The financial balance of an account at a specific point in time.
 - [struct AccountBalanceQuery](accountbalancequery.md)
   A structure that defines an account balance query.
 - [struct Balance](balance.md)
@@ -66,8 +71,6 @@ Using the FinanceKit framework, you can:
 ### Orders
 - [struct FullyQualifiedOrderIdentifier](fullyqualifiedorderidentifier.md)
   A structure that specifies the characteristics of an order.
-- [FinanceStore.HistoryToken](financestore/historytoken.md)
-  A structure that describes the starting point to use for financial data queries.
 - [func saveOrder(signedArchive: Data) async throws -> FinanceStore.SaveOrderResult](financestore/saveorder(signedarchive:).md)
   Adds an order to the store or updates an existing order.
 ### Transactions
@@ -89,10 +92,17 @@ Using the FinanceKit framework, you can:
   Values that describe kinds of transactions.
 - [enum TransactionStatus](transactionstatus.md)
   Values that describe the status of a transaction.
+### Queries
+- [FinanceStore.HistoryToken](financestore/historytoken.md)
+  A structure that describes the starting point to use for financial data queries.
 ### Merchant categories
 - [struct MerchantCategoryCode](merchantcategorycode.md)
 ### Errors
 - [enum FinanceError](financeerror.md)
+  Values that describe errors that may occur when accessing financial data.
+### Protocols
+- [protocol BackgroundDeliveryExtension](backgrounddeliveryextension.md)
+- [protocol BackgroundDeliveryExtensionProviding](backgrounddeliveryextensionproviding.md)
 
 
 ---

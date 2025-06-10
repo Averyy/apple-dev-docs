@@ -1,6 +1,6 @@
 # VSError.Code.serviceTemporarilyUnavailable
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 The request failed due to a timeout or unreachable host, but a subsequent attempt might succeed.

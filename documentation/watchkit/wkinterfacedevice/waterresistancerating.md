@@ -1,6 +1,6 @@
 # waterResistanceRating
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The Apple Watch water-resistance rating.

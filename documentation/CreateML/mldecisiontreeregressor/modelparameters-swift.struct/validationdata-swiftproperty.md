@@ -1,6 +1,6 @@
 # validationData
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: property
 
 Validation data represented as a `MLDataTable`.

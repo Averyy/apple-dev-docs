@@ -71,4 +71,4 @@ DocC also integrates with `xcodebuild`, which means you can build documentation 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/documenting-apps-frameworks-and-packages)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/documenting-apps-frameworks-and-packages)*

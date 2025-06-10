@@ -65,6 +65,7 @@ This service is unavailable in a compatible iPad or iPhone app running in vision
 ### Conforms To
 - [Actor](../Swift/Actor.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

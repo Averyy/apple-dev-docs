@@ -1,6 +1,6 @@
 # NSCompositeAttributeDescription
 
-**Framework**: Coredata  
+**Framework**: Core Data  
 **Kind**: class
 
 A description of an attribute that derives its value by composing other attributes.
@@ -79,4 +79,4 @@ print(quake.magnitude.richter)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/nscompositeattributedescription)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nscompositeattributedescription)*

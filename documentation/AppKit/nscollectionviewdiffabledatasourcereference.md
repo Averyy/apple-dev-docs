@@ -18,8 +18,6 @@ class NSCollectionViewDiffableDataSourceReference
 
 > ❗ **Important**:  If you’re working in a Swift codebase, always use [`NSCollectionViewDiffableDataSource`](nscollectionviewdiffabledatasource-axww.md) instead of `NSCollectionViewDiffableDataSourceReference`.
 
- If you’re working in a Swift codebase, always use [`NSCollectionViewDiffableDataSource`](nscollectionviewdiffabledatasource-axww.md) instead of `NSCollectionViewDiffableDataSourceReference`.
-
 A  object is a specialized type of data source that works together with your collection view object. It provides the behavior you need to manage updates to your collection view’s data and UI in a simple, efficient way. It also conforms to the [`NSCollectionViewDataSource`](nscollectionviewdatasource.md) protocol and provides implementations for all of the protocol’s methods.
 
 To fill a collection view with data:

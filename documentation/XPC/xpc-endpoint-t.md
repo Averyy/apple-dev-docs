@@ -1,6 +1,6 @@
 # xpc_endpoint_t
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: typealias
 
 A type that represents a connection in serialized form.

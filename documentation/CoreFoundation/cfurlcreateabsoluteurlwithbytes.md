@@ -1,6 +1,6 @@
 # CFURLCreateAbsoluteURLWithBytes(_:_:_:_:_:_:)
 
-**Framework**: Corefoundation  
+**Framework**: Core Foundation  
 **Kind**: func
 
 Creates a new `CFURL` object by resolving the relative portion of a URL, specified as bytes, against its given base URL.

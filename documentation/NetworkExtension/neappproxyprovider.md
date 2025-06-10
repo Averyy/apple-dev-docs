@@ -28,8 +28,6 @@ The [`NEAppProxyProvider`](neappproxyprovider.md) class provides access to flows
 
 > ❗ **Important**:  The `com.apple.developer.networking.networkextension` entitlement is required to use the [`NEAppProxyProvider`](neappproxyprovider.md) class. Enable this entitlement when creating an App ID in your developer account.
 
- The `com.apple.developer.networking.networkextension` entitlement is required to use the [`NEAppProxyProvider`](neappproxyprovider.md) class. Enable this entitlement when creating an App ID in your developer account.
-
 ##### Dns Handling
 
 In addition to flows of raw network data from applications, the App Proxy Provider also receives flows of DNS queries in the form of [`NEAppProxyUDPFlow`](neappproxyudpflow.md) objects. DNS query flows are received only for applications that use low-level DNS resolution APIs such as [`DNSServiceGetAddrInfo(_:_:_:_:_:_:_:)`](https://developer.apple.com/documentation/dnssd/DNSServiceGetAddrInfo(_:_:_:_:_:_:_:))(). The App Proxy Provider can specify the DNS resolver configuration that will be used by these applications using the [`setTunnelNetworkSettings(_:completionHandler:)`](netunnelprovider/settunnelnetworksettings(_:completionhandler:).md) method.

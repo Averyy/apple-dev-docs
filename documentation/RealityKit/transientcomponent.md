@@ -10,6 +10,7 @@ An interface for components that aren’t saved to file or cloned.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -60,6 +61,7 @@ In networked AR experiences, RealityKit sends transient components to peers when
 ### Inherits From
 - [Component](component.md)
 ### Conforming Types
+- [PresentationComponent](presentationcomponent.md)
 - [ViewAttachmentComponent](viewattachmentcomponent.md)
 
 ## See Also

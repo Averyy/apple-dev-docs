@@ -56,6 +56,7 @@ This affects all system button styles, as well as automatically affects custom `
   A value that describes the purpose of a button.
 - [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
+- [struct ButtonSizing](buttonsizing.md)
 
 
 ---

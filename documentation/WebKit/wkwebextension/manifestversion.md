@@ -1,6 +1,6 @@
 # manifestVersion
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The parsed manifest version, or `0` if there is no version specified in the manifest.

@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: init
 
-Creates a new `PauseConversationAction`.
+Creates an action that starts or stops all audio and video streams for a conversation.
 
 **Availability**:
 - iOS 17.4+
@@ -20,8 +20,8 @@ init(conversationUUID: UUID, isPaused: Bool)
 
 ## Parameters
 
-- `conversationUUID`: The unique identfiier of the   to which this action will be applied.
-- `isPaused`: Specifies if the   should be paused upon execution of this action.
+- `conversationUUID`: The unique identifier of the ongoing conversation.
+- `isPaused`: A value that specifies whether to start or stop all audio or video streams for a conversation.
 
 
 ---

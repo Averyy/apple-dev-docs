@@ -1,6 +1,6 @@
 # cameraCaptureState
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An enumeration case that indicates whether the webpage is using the camera to capture images or video.

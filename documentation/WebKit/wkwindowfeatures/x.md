@@ -1,6 +1,6 @@
 # x
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The requested x-coordinate of the containing window.

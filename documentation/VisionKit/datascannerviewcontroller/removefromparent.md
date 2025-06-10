@@ -1,6 +1,6 @@
 # removeFromParent()
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Removes the view controller from its parent.

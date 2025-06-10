@@ -25,8 +25,6 @@ A search bar displayed in a navigation bar cannot have a scope bar.
 
 > ❗ **Important**:  The system raises an exception if you set the [`showsScopeBar`](uisearchbar/showsscopebar.md) property to [`true`](https://developer.apple.com/documentation/swift/true) in a search bar that is displayed in a navigation bar.
 
- The system raises an exception if you set the [`showsScopeBar`](uisearchbar/showsscopebar.md) property to [`true`](https://developer.apple.com/documentation/swift/true) in a search bar that is displayed in a navigation bar.
-
 ## See Also
 
 - [var delegate: (any UISearchDisplayDelegate)?](uisearchdisplaycontroller/delegate.md)

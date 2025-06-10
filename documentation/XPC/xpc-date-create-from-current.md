@@ -1,6 +1,6 @@
 # xpc_date_create_from_current()
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates an XPC date object that represents the current date.

@@ -36,6 +36,7 @@ Family Controls uses this type as a generic constraint for the `Icon` of the [`L
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

@@ -9,7 +9,7 @@ A component that specifies an entity is participating in the system’s scene-un
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -41,16 +41,12 @@ For more information about scene-understanding features, see [`Implementing scen
   The type of real-world objects that the component models.
 - [SceneUnderstandingComponent.EntityType](sceneunderstandingcomponent/entitytype-swift.enum.md)
   Types of real-world objects that a scene-understanding component models.
-- [static func registerComponent()](sceneunderstandingcomponent/registercomponent.md)
-  Registers a new component type.
 ### Instance Properties
 - [var origin: SceneUnderstandingComponent.Origin](sceneunderstandingcomponent/origin-swift.property.md)
   The origin that RealityKit creates the component from.
 ### Enumerations
 - [SceneUnderstandingComponent.Origin](sceneunderstandingcomponent/origin-swift.enum.md)
   Types of scene-understanding origins this component lives in.
-### Default Implementations
-- [Component Implementations](sceneunderstandingcomponent/component-implementations.md)
 
 ## Relationships
 

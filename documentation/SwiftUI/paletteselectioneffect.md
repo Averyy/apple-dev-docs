@@ -37,6 +37,7 @@ You can configure the selection effect of a palette item by using the [`paletteS
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

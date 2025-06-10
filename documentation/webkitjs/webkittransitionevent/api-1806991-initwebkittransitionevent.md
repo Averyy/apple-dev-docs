@@ -1,6 +1,6 @@
 # initWebKitTransitionEvent
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: uid
 
 Initializes a new transition event object.

@@ -37,6 +37,8 @@ object GameCenterLeaderboardSetUpdateRequest
   A response that contains a single leaderboard set resource.
 - [object GameCenterLeaderboardSetsResponse](gamecenterleaderboardsetsresponse.md)
   A response that contains multiple leaderboard set resources.
+- [object GameCenterLeaderboardSetLocalizationGameCenterLeaderboardSetImageLinkageResponse](gamecenterleaderboardsetlocalizationgamecenterleaderboardsetimagelinkageresponse.md)
+- [object GameCenterLeaderboardSetLocalizationsLinkagesResponse](gamecenterleaderboardsetlocalizationslinkagesresponse.md)
 
 
 ---

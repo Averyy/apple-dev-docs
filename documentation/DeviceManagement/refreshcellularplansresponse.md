@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to query a carrier URL for active eSIM cellular-plan profiles.
+A response from the device after it processes the command to query a carrier URL for active eSIM cellular-plan profiles on a device.
 
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,14 +17,14 @@ object RefreshCellularPlansResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object RefreshCellularPlansResponse.ErrorChainItem](refreshcellularplansresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 
 ## See Also
 
 - [object RefreshCellularPlansCommand](refreshcellularplanscommand.md)
-  The command to query a carrier URL for active eSIM cellular-plan profiles.
+  The command to query a carrier URL for active eSIM cellular-plan profiles on a device.
 
 
 ---

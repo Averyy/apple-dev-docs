@@ -485,4 +485,4 @@ Certificates aren’t the only code-signing asset that expire.  Provisioning pro
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3161-inside-code-signing-certificates)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3161-inside-code-signing-certificates)*

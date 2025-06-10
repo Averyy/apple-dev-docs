@@ -62,8 +62,6 @@ struct Point3D
   Returns a point that results from applying the specified pose.
 - [func clamp(to: Rect3D)](point3d/clamp(to:).md)
   Clamps the mutable point to the specified rectangle.
-- [func clamped(to: Rect3D) -> Point3D](point3d/clamped(to:).md)
-  Returns a point with coordinates that clamp to the specified rectangle.
 - [func scale(by: Double)](point3d/scale(by:).md)
 - [func rotated(by: Rotation3D, around: Point3D) -> Point3D](point3d/rotated(by:around:)-4tmfq.md)
   Returns a point that results from applying a rotation around the specified point.
@@ -122,8 +120,14 @@ struct Point3D
 - [var origin: Point3D](point3d/origin.md)
 - [var simd: simd_double3](point3d/simd.md)
   A simd three-element vector that contains the x-, y-, and z-coordinate values.
+### Initializers
+- [init(Point3DFloat)](point3d/init(_:)-7wgtj.md)
+  Returns a double-precision point from a single-precision point.
+- [init(simd_packed_double4)](point3d/init(_:)-8r7om.md)
+  Creates a Spatial point from a simd packed vector.
 ### Default Implementations
 - [Animatable Implementations](point3d/animatable-implementations.md)
+- [ClampableWithinRectProtocol Implementations](point3d/clampablewithinrectprotocol-implementations.md)
 - [CustomReflectable Implementations](point3d/customreflectable-implementations.md)
 - [Decodable Implementations](point3d/decodable-implementations.md)
 - [Encodable Implementations](point3d/encodable-implementations.md)
@@ -135,6 +139,7 @@ struct Point3D
 
 ### Conforms To
 - [Animatable](../SwiftUI/Animatable.md)
+- [ClampableWithinRectProtocol](clampablewithinrectprotocol.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomReflectable](../Swift/CustomReflectable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
@@ -143,28 +148,48 @@ struct Point3D
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Primitive3D](primitive3d.md)
+- [Primitive3DProtocol](primitive3dprotocol.md)
+- [ProjectiveTransformable3D](projectivetransformable3d.md)
 - [Rotatable3D](rotatable3d.md)
+- [Rotatable3DProtocol](rotatable3dprotocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SpatialTypeProtocol](spatialtypeprotocol.md)
 - [Translatable3D](translatable3d.md)
+- [Translatable3DProtocol](translatable3dprotocol.md)
 
 ## See Also
 
+- [struct Point3DFloat](point3dfloat.md)
+  A single-precision structure that contains a point in a three-dimensional coordinate system.
 - [struct Size3D](size3d.md)
   A size that describes width, height, and depth in a 3D coordinate system.
+- [struct Size3DFloat](size3dfloat.md)
+  A single-precision structure that contains width, height, and depth values.
 - [struct Rect3D](rect3d.md)
   A rectangle in a 3D coordinate system.
+- [struct Rect3DFloat](rect3dfloat.md)
+  A single-precision structure that contains the location and dimensions of a 3D rectangle.
 - [struct Rotation3D](rotation3d.md)
   A rotation in three dimensions.
+- [struct Rotation3DFloat](rotation3dfloat.md)
+  A single-precision structure that represents a rotation in three dimensions.
 - [struct RotationAxis3D](rotationaxis3d.md)
   A 3D rotation axis.
+- [struct RotationAxis3DFloat](rotationaxis3dfloat.md)
+  A 3D axis.
 - [struct Pose3D](pose3d.md)
   A structure that contains a 3D position and a 3D rotation.
+- [struct Pose3DFloat](pose3dfloat.md)
+  A single-precision structure that contains a position and rotation.
 - [struct ScaledPose3D](scaledpose3d.md)
+  A structure that contains a position, rotation, and scale.
+- [struct ScaledPose3DFloat](scaledpose3dfloat.md)
   A structure that contains a position, rotation, and scale.
 - [struct SphericalCoordinates3D](sphericalcoordinates3d.md)
   A structure that defines spherical coordinates in radial, inclination, azimuthal order.
-- [struct Ray3D](ray3d.md)
-  A ray in a 3D coordinate system.
+- [struct SphericalCoordinates3DFloat](sphericalcoordinates3dfloat.md)
+  A single-precision structure that defines spherical coordinates in radial, inclination, azimuthal order.
 
 
 ---

@@ -1,6 +1,6 @@
 # NSAllowsLocalNetworking
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 A Boolean value that indicates whether to allow local resources to load.

@@ -69,6 +69,7 @@ See the HID specification for more details: [`https://www.usb.org/hid`](https://
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

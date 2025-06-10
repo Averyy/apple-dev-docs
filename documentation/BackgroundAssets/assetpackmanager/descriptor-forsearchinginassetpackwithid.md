@@ -1,0 +1,47 @@
+# descriptor(for:searchingInAssetPackWithID:)
+
+**Framework**: Background Assets  
+**Kind**: method
+
+Opens a file descriptor for the specified relative path.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+nonisolated
+func descriptor(for path: FilePath, searchingInAssetPackWithID assetPackID: String? = nil) throws -> FileDescriptor
+```
+
+#### Return Value
+
+A descriptor for the opened file.
+
+#### Discussion
+
+All asset packs share the same namespace, so you can treat the overall collection of downloaded asset packs as if it were a single root directory that contains all of your subdirectories and asset files, regardless of the specific asset pack in which any particular file resides. If there’s a path collision across multiple asset packs, then it’s undefined from which asset pack the file will be read unless you explicitly limit the search to a particular asset pack by passing a non-`nil` ID to the `assetPackID` parameter.
+
+> **Note**: [`ManagedBackgroundAssetsError.fileNotFound(at:)`](managedbackgroundassetserror/filenotfound(at:).md) when no file is found at `path`.
+
+> **Note**: When the path is not relative or when some other error occurs while finding or opening the requested file.
+
+> ❗ **Important**: It’s your responsibility to close the file descriptor when you’re done using it.
+
+> **Note**: Use this method if you need low-level access to the file descriptor. If you don’t, then use [`contents(at:searchingInAssetPackWithID:options:)`](assetpackmanager/contents(at:searchinginassetpackwithid:options:).md) instead.
+
+## Parameters
+
+- `path`: The relative path.
+- `assetPackID`: The ID of the asset pack in which to search for the file. By default, all downloaded asset packs are searched.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/backgroundassets/assetpackmanager/descriptor(for:searchinginassetpackwithid:))*

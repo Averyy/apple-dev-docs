@@ -21,7 +21,7 @@ case fixed(ratio: Double, seed: Int?)
 
 #### Discussion
 
-Use a value in the range `[0.0, 1.0]` for `ratio`. Use any value for `seed`, including the return value from [`timestampSeed()`](timestampseed().md), to tell Create ML how to pseudorandomly select data from your training dataset. Otherwise, set `seed` to `nil` to tell Create ML to choose a number for you.
+The ratio is a value in the range `[0.0, 1.0]` that determines how much of the training data to use for validation. The seed value can be used to get consistent results across invocations. If seed is nil the split will be randomized on every invocation.
 
 ## See Also
 

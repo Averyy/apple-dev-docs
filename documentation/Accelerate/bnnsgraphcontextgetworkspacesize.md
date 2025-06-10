@@ -37,6 +37,8 @@ Note that the workspace size may not be proportional with the dynamic size. That
 
 ## See Also
 
+- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](bnnsgraphcontextsetstreamingadvancecount(_:_:).md)
+  Sets the streaming advancement amount for cases with dynamically shaped inputs.
 - [func BNNSGraphContextSetArgumentType(bnns_graph_context_t, BNNSGraphArgumentType) -> Int32](bnnsgraphcontextsetargumenttype(_:_:).md)
   Specifies the argument type for a graph context.
 - [struct BNNSGraphArgumentType](bnnsgraphargumenttype.md)
@@ -49,6 +51,8 @@ Note that the workspace size may not be proportional with the dynamic size. That
   Sets the batch size for a graph.
 - [func BNNSGraphContextEnableNanAndInfChecks(bnns_graph_context_t, Bool)](bnnsgraphcontextenablenanandinfchecks(_:_:).md)
   Specifies that the context checks intermediate tensors for NaNs and infinities.
+- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](bnnsgraphcontextsetstreamingadvancecount(_:_:).md)
+  Sets the streaming advancement amount for cases with dynamically shaped inputs.
 
 
 ---

@@ -28,8 +28,6 @@ Offer preferences that use this modifier override offer preferences from ancesto
 
 > ❗ **Important**: Subscription offers in the [`Product.SubscriptionInfo`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo) object may contain offers the customer isn’t eligible for. Instead, use the eligibleOffers argument of the offer closure to select the offers to apply to the customer’s purchase.
 
-Subscription offers in the [`Product.SubscriptionInfo`](https://developer.apple.com/documentation/StoreKit/Product/SubscriptionInfo) object may contain offers the customer isn’t eligible for. Instead, use the eligibleOffers argument of the offer closure to select the offers to apply to the customer’s purchase.
-
 If StoreKit determines that the customer is eligible for more than one offer, the system calls the `offer` closure before it draws the product on the subscription store view, or before the customer initiates a purchase on a store view or product view. Return the subscription offer to apply to the product, if any, to have system-provided UI reflect the discounted pricing terms under the selected offer.
 
 If your `offer` closure returns nil, the system selects the introductory offer, if it exists, and if the customer is eligible for it.

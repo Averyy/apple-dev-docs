@@ -1,6 +1,6 @@
 # COPY_WRITE_BUFFER_BINDING
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

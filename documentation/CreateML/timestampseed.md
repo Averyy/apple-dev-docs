@@ -3,7 +3,7 @@
 **Framework**: Create ML  
 **Kind**: func
 
-Creates a deterministic number from the current system time to seed random-number generators.
+Returns a number based on the current system time.
 
 **Availability**:
 - iOS 15.0+

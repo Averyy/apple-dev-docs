@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to query a device for specific information.
+The command to get detailed information about a device.
 
 **Availability**:
 - iOS 4.0+
@@ -12,8 +12,6 @@ The command to query a device for specific information.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -28,14 +26,14 @@ object DeviceInformationCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object DeviceInformationCommand.Command](deviceinformationcommand/command-data.dictionary.md)
-  The request dictionary to query a device for specific information.
+  The command to get detailed information about a device.
 
 ## See Also
 
 - [object DeviceInformationResponse](deviceinformationresponse.md)
-  A response from the device after it processes the command to get detailed information.
+  A response from the device after it processes the command to get detailed information about a device.
 
 
 ---

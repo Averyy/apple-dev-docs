@@ -1,6 +1,6 @@
 # privileged
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: property
 
 **Availability**:

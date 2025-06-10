@@ -14,8 +14,6 @@ The entitlement is required to use the Hypervisor APIs in any process.
 
 > ❗ **Important**:  If your app has a deployment target of macOS 10.15 or earlier, add the [`com.apple.vm.hypervisor`](entitlements/com.apple.vm.hypervisor.md) entitlement to your app in addition to this entitlement.
 
- If your app has a deployment target of macOS 10.15 or earlier, add the [`com.apple.vm.hypervisor`](entitlements/com.apple.vm.hypervisor.md) entitlement to your app in addition to this entitlement.
-
 ## See Also
 
 - [com.apple.vm.hypervisor](entitlements/com.apple.vm.hypervisor.md)

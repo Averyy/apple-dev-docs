@@ -1,6 +1,6 @@
 # WKTextContentType
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: struct
 
 Constants that specify a text field’s semantic meaning.
@@ -87,6 +87,7 @@ struct WKTextContentType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

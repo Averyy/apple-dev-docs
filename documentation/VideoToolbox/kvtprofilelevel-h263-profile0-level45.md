@@ -1,6 +1,6 @@
 # kVTProfileLevel_H263_Profile0_Level45
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

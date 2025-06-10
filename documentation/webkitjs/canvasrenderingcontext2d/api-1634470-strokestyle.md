@@ -1,6 +1,6 @@
 # strokeStyle
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A CSS color, a gradient, or a pattern used to stroke lines and shapes.

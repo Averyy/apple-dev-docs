@@ -101,8 +101,6 @@ This example modifies the component’s `speed` and `birthrate` properties to `0
 
 > ❗ **Important**: If you adjust one or more particle component properties, you need to replace the entity’s current particle component instance by setting it again because component instances are from value types.
 
-If you adjust one or more particle component properties, you need to replace the entity’s current particle component instance by setting it again because component instances are from value types.
-
 ##### Configure the Color for the Emitters Particles
 
 You can customize the color of the particles an emitter component creates by setting the [`color`](particleemittercomponent/particleemitter/color-swift.property.md) property to one of the enumeration cases, including:

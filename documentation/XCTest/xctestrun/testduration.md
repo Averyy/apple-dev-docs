@@ -1,6 +1,6 @@
 # testDuration
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The number of seconds that elapse between when the run starts and when it stops.

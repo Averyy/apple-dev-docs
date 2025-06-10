@@ -72,8 +72,6 @@ func advertiser(_ advertiser: MCNearbyServiceAdvertiser,
 
 > ❗ **Important**: This app automatically joins the first nearby session it finds. Depending on the kind of shared AR experience you want to create, you may want to more precisely control broadcasting, invitation, and acceptance behavior. See the [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity) documentation for details.
 
-This app automatically joins the first nearby session it finds. Depending on the kind of shared AR experience you want to create, you may want to more precisely control broadcasting, invitation, and acceptance behavior. See the [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity) documentation for details.
-
 In a multipeer session, all participants are by definition equal peers; there is no explicit separation of devices into host and guest roles. However, you may wish to define such roles for your own AR experience. For example, a multiplayer game design might require a host role to arbitrate gameplay. If you need to separate peers by role, you can choose a way to do so that fits the design of your app. For example:
 
 - Have the user choose whether to act as a host or guest before starting a session. The host uses [`MCNearbyServiceAdvertiser`](https://developer.apple.com/documentation/MultipeerConnectivity/MCNearbyServiceAdvertiser) to broadcast availability, and guests use [`MCNearbyServiceBrowser`](https://developer.apple.com/documentation/MultipeerConnectivity/MCNearbyServiceBrowser) to find a host to join.

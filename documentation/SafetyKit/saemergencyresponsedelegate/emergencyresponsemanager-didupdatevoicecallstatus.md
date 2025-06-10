@@ -1,7 +1,8 @@
 # emergencyResponseManager(_:didUpdateVoiceCallStatus:)
 
 **Framework**: SafetyKit  
-**Kind**: method
+**Kind**: method  
+**Required**: Yes
 
 Provides the voice call status to the delegate.
 

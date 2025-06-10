@@ -22,7 +22,7 @@ static let range: NSAttributedString.TextLayoutSectionKey
 
 #### Discussion
 
-An [`NSValue`](nsvalue.md) object containing an [`NSRange`](nsrange.md) representing a character range. The default value is a range covering the entire string.
+An [`NSValue`](nsvalue.md) object containing an `NSRange` representing a character range. The default value is a range covering the entire string.
 
 ## See Also
 

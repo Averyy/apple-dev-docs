@@ -28,7 +28,7 @@ The sample relies on a running server containing JavaScript files, image assets,
 
 ##### Create and Display a Document View Controller
 
-XML files provide the structure of a TVMLKit app. The files contain TVML elements such as [`button`](https://developer.apple.com/documentation/TVML/button) and [`lockup`](https://developer.apple.com/documentation/TVML/lockup), and lay out the elements on screen. In this app, the templates folder in the server directory contains two XML files: Index.xml, and ProductSingle.xml. These files contain the structure of the two primary views used in this app. Index.xml is responsible for providing the structure of the initial page, which consists of a grid of items to select. When the user selects an item from the main page, the ProductSingle.xml file displays the content for the selected item.
+XML files provide the structure of a TVMLKit app. The files contain TVML elements such as buttons and lockups, and lay out the elements on screen. In this app, the templates folder in the server directory contains two XML files: Index.xml, and ProductSingle.xml. These files contain the structure of the two primary views used in this app. Index.xml is responsible for providing the structure of the initial page, which consists of a grid of items to select. When the user selects an item from the main page, the ProductSingle.xml file displays the content for the selected item.
 
 At launch time, create a `TVApplicationController` object in the `application(_:didFinishLaunching:)` method. That object provides the infrastructure your app needs to display content. You then use the app controller’s delegate method to specify the initial page’s content by creating a new `TVDocumentViewController` object.
 

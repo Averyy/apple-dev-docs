@@ -15,8 +15,6 @@ By reading the attribute information the framework sets on objects, your app can
 
 > 💡 **Tip**: If you export a scan result to USDZ, for example, with [`export(to:metadataURL:modelProvider:exportOptions:)`](capturedroom/export(to:metadataurl:modelprovider:exportoptions:).md), objects output as bounding boxes. To substitute the boxes with detailed 3D models based on object attributes, see [`CapturedRoom.ModelProvider`](capturedroom/modelprovider.md).
 
-If you export a scan result to USDZ, for example, with [`export(to:metadataURL:modelProvider:exportOptions:)`](capturedroom/export(to:metadataurl:modelprovider:exportoptions:).md), objects output as bounding boxes. To substitute the boxes with detailed 3D models based on object attributes, see [`CapturedRoom.ModelProvider`](capturedroom/modelprovider.md).
-
 ## Topics
 
 ### Accessing object details

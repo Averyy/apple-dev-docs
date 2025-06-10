@@ -1,6 +1,6 @@
 # displayActionLabel
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The default localized extension action label.

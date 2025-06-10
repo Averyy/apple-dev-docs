@@ -79,9 +79,15 @@ The Foundation framework provides a base layer of functionality for apps and fra
 - [Foundation Enumerations](foundation-enumerations.md)
 - [Foundation Data Types](foundation-data-types.md)
   This document describes the data types and constants found in the Foundation framework.
-### Articles
-- [init](1807255-init.md)
-  Initializes an allocated [`NSIndexSet`](nsindexset.md) object.
+### Structures
+- [struct DiscontiguousAttributedSubstring](discontiguousattributedsubstring.md)
+- [struct NSFileManagerSupportedSyncControls](nsfilemanagersupportedsynccontrols.md)
+### Macros
+- [macro bundle() -> Bundle](bundle().md)
+  Returns the bundle most likely to contain resources for the calling code.
+### Enumerations
+- [enum NSFileManagerResumeSyncBehavior](nsfilemanagerresumesyncbehavior.md)
+- [enum NSFileManagerUploadLocalVersionConflictPolicy](nsfilemanageruploadlocalversionconflictpolicy.md)
 
 
 ---

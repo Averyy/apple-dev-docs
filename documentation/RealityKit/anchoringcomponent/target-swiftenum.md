@@ -10,6 +10,7 @@ Defines the kinds of real world objects to which an anchor entity can be tethere
 - iPadOS 13.0+
 - Mac Catalyst 14.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -41,21 +42,13 @@ enum Target
 ### Image and object anchor targets
 - [AnchoringComponent.Target.image(group:name:)](anchoringcomponent/target-swift.enum/image(group:name:).md)
   An anchor point attached to the image specified by a group and a name in AR Resources.
-- [case referenceImage(from: AnchoringComponent.ImageAnchoringSource)](anchoringcomponent/target-swift.enum/referenceimage(from:).md)
-  An anchor point attached to the image specified by an image anchoring source.
 - [AnchoringComponent.Target.object(group:name:)](anchoringcomponent/target-swift.enum/object(group:name:).md)
   An anchor point attached to the object specified by a group and a name in AR Resources.
-- [case referenceObject(from: AnchoringComponent.ObjectAnchoringSource)](anchoringcomponent/target-swift.enum/referenceobject(from:).md)
-  An anchor point attached to the object specified by an object anchoring source.
 ### Comparing targets
 - [static func == (AnchoringComponent.Target, AnchoringComponent.Target) -> Bool](anchoringcomponent/target-swift.enum/==(_:_:).md)
   Indicates whether two targets are equal.
-- [static func != (Self, Self) -> Bool](anchoringcomponent/target-swift.enum/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [func hash(into: inout Hasher)](anchoringcomponent/target-swift.enum/hash(into:).md)
   Hashes the essential components of the target by feeding them into the given hash function.
-- [var hashValue: Int](anchoringcomponent/target-swift.enum/hashvalue.md)
-  The hash value.
 ### Structures
 - [AnchoringComponent.Target.Alignment](anchoringcomponent/target-swift.enum/alignment.md)
   Defines the alignment of real-world surfaces to seek as targets.
@@ -63,11 +56,19 @@ enum Target
   Defines types of real-world surfaces to seek as targets.
 - [AnchoringComponent.Target.HandLocation](anchoringcomponent/target-swift.enum/handlocation.md)
   Defines the locations of tracked hands to look for.
+### Enumeration Cases
+- [case accessory(from: AnchoringComponent.AccessoryAnchoringSource, location: AnchoringComponent.AccessoryLocationName)](anchoringcomponent/target-swift.enum/accessory(from:location:).md)
+- [case referenceImage(from: AnchoringComponent.ImageAnchoringSource)](anchoringcomponent/target-swift.enum/referenceimage(from:)-52x3p.md)
+  An anchor point attached to the image specified by an image anchoring source.
+- [case referenceImage(from: AnchoringComponent.ImageAnchoringSource)](anchoringcomponent/target-swift.enum/referenceimage(from:)-7ubtj.md)
+  An anchor point attached to the image specified by an image anchoring source.
+- [case referenceObject(from: AnchoringComponent.ObjectAnchoringSource)](anchoringcomponent/target-swift.enum/referenceobject(from:)-7yzer.md)
+  An anchor point attached to an object that matches the reference of an object anchor.
+- [case referenceObject(from: AnchoringComponent.ObjectAnchoringSource)](anchoringcomponent/target-swift.enum/referenceobject(from:)-k3em.md)
+  An anchor point attached to an object that matches the reference of an object anchor.
 ### Enumerations
 - [AnchoringComponent.Target.Chirality](anchoringcomponent/target-swift.enum/chirality.md)
   Defines the chirality of tracked hands to look for.
-### Default Implementations
-- [Equatable Implementations](anchoringcomponent/target-swift.enum/equatable-implementations.md)
 
 ## Relationships
 
@@ -79,8 +80,7 @@ enum Target
 
 - [struct AnchoringComponent](anchoringcomponent.md)
   A component that anchors virtual content to a real world target.
-- [AnchoringComponent.TrackingMode](anchoringcomponent/trackingmode-swift.struct.md)
-  Decides how the `Entity` tracks its target anchor.
+- [struct ARKitAnchorComponent](arkitanchorcomponent.md)
 - [class AnchorEntity](anchorentity.md)
   An anchor that tethers entities to a scene.
 - [protocol HasAnchoring](hasanchoring.md)

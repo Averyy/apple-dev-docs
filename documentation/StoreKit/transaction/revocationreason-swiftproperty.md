@@ -21,8 +21,8 @@ let revocationReason: Transaction.RevocationReason?
 
 ## Mentions
 
-- [Testing refund requests](testing-refund-requests.md)
 - [Testing Family Sharing](testing-family-sharing.md)
+- [Testing refund requests](testing-refund-requests.md)
 
 ## See Also
 

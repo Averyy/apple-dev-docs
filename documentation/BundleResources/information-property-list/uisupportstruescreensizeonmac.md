@@ -1,6 +1,6 @@
 # UISupportsTrueScreenSizeOnMac
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 A Boolean value that indicates whether your iPad app supports arbitrary screen sizes and resolutions when running on a Mac.

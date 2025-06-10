@@ -63,13 +63,16 @@ When you use this type, you become partially responsible for keeping the object 
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Copyable](copyable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 
-- [func withExtendedLifetime<T, E, Result>(borrowing T, (borrowing T) throws(E) -> Result) throws(E) -> Result](withextendedlifetime(_:_:)-4kl68.md)
+- [func withExtendedLifetime<T, E, Result>(borrowing T, () throws(E) -> Result) throws(E) -> Result](withextendedlifetime(_:_:)-4mmpv.md)
   Evaluates a closure while ensuring that the given instance is not destroyed before the closure returns.
-- [func withExtendedLifetime<T, E, Result>(borrowing T, () throws(E) -> Result) throws(E) -> Result](withextendedlifetime(_:_:)-6mq1.md)
+- [func withExtendedLifetime<T, E, Result>(borrowing T, (borrowing T) throws(E) -> Result) throws(E) -> Result](withextendedlifetime(_:_:)-59dz3.md)
   Evaluates a closure while ensuring that the given instance is not destroyed before the closure returns.
+- [func extendLifetime<T>(borrowing T)](extendlifetime(_:).md)
+  Extends the lifetime of the given instance.
 
 
 ---

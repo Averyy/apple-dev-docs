@@ -1,6 +1,6 @@
 # Supporting invocations from your website and the Messages app
 
-**Framework**: Appclip
+**Framework**: App Clips
 
 Display a Smart App Banner and the App Clip card on your website that people tap to launch your App Clip, and add support for invocations from the Messages app.
 
@@ -42,6 +42,8 @@ Note that the value of a Smart App Banner’s `app-argument` attribute isn’t a
 
 When you add the `meta` tag to your webpage to support invocations from Safari or an [`SFSafariViewController`](https://developer.apple.com/documentation/SafariServices/SFSafariViewController), you automatically add support for invocations from links people share with others in the Messages app. When a person shares a link to the website that displays the banner or App Clip card, the recipient can tap the link to instantly launch your App Clip.
 
+> 💡 **Tip**: If people share the default App Clip URL or the App Clip demo URL in Messages, Messages displays the App Clip card.
+
 Sharing your App Clip in Messages requires that the recipient’s device:
 
 - Runs iOS 14 or later
@@ -56,7 +58,7 @@ In addition to the above requirements, you must provide the preview image that a
 1. If your website doesn’t already contain the `property=”og:image”` HTML `meta` tag, add `<meta property=”og:image” content=”https://example.com/example.png”>` to each page that displays the Smart App Banner and the App Clip card.
 2. Replace the value of the `content` attribute with the URL of the preview image. Typically, this is the same image you use on the App Clip card. For additional information on displaying link previews in Messages, see [`Best Practices for Link Previews in Messages`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2444/_index.html).
 
-To enable your App Clip or fulll app to respond to the invocation from a website that displays the Smart App Banner or the App Clip card in Safari, retrieve the website’s URL upon invocation. Then, use the URL to update the interface of your App Clip to best match the content on the website. For more information on accessing the invocation URL, see [`Responding to invocations`](responding-to-invocations.md).
+To enable your App Clip or full app to respond to the invocation from a website that displays the Smart App Banner or the App Clip card in Safari, retrieve the website’s URL upon invocation. Then, use the URL to update the interface of your App Clip to best match the content on the website. For more information on accessing the invocation URL, see [`Responding to invocations`](responding-to-invocations.md).
 
 ![A screenshot of a conversation in the Messages app on iPhone that includes a preview of a shared App Clip.](https://docs-assets.developer.apple.com/published/f455903036d0b3eae53cdfd46a6609f3/media-3737844%402x.png)
 
@@ -67,7 +69,7 @@ In some cases, you may want to add the App Clip card and the Smart App Banner to
 1. Add the `meta` tags for the Smart App Banner and App Clip card and for the link previews in the Messages app to each website, for example, `https://example.com`, `https://example2.com`, `https://example3.com`, and so on.
 2. Associate each website with your App Clip as described in [`Associating your App Clip with your website`](associating-your-app-clip-with-your-website.md).
 3. Configure the default App Clip experience for one website, likely for a more generic landing page. When people launch the App Clip from the landing page, the App Clip could then allow them to choose a business.
-4. Create separate advanced App Clip experiences for `https://example2.com`, `https://example3.com`, and so on, as described in [`Configuring the launch experience of your App Clip`](configuring-the-launch-experience-of-your-app-clip.md).
+4. Create separate advanced App Clip experiences for `https://example2.com`, `https://example3.com`, and so on, as described in [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md).
 5. Use different metadata for each advanced experience you configure; for example, choose custom imagery for the App Clip card.
 6. Add code to handle the invocation of your App Clip and to update the interface of your App Clip using the invocation URL — the URL of the website that displays the Smart App Banner or App Clip card. For more information on accessing the invocation URL, see [`Responding to invocations`](responding-to-invocations.md).
 
@@ -77,12 +79,10 @@ To avoid associating your App Clip with multiple domains, consider using one dom
 
 ## See Also
 
-- [Configuring the launch experience of your App Clip](configuring-the-launch-experience-of-your-app-clip.md)
-  Review how people launch your App Clip, identify invocation URLs, make use of default App Clip links, and configure experiences in App Store Connect.
-- [Associating your App Clip with your website](associating-your-app-clip-with-your-website.md)
-  Enable the system to verify your App Clip to support invocations in iOS 16.3 or earlier and from your website.
 - [Responding to invocations](responding-to-invocations.md)
   Add code to respond to invocations and offer a focused launch experience.
+- [Associating your App Clip with your website](associating-your-app-clip-with-your-website.md)
+  Enable the system to verify your App Clip to support invocations from your website and devices running iOS 16.3 or earlier.
 - [Confirming a person’s physical location](confirming-a-person-s-physical-location.md)
   Add code to quickly confirm a person’s physical location while respecting their privacy.
 - [Launching another app’s App Clip from your app](launching-another-app-s-app-clip-from-your-app.md)
@@ -95,4 +95,4 @@ To avoid associating your App Clip with multiple domains, consider using one dom
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/supporting-invocations-from-your-website-and-the-messages-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appclip/supporting-invocations-from-your-website-and-the-messages-app)*

@@ -30,8 +30,6 @@ The maximum detectable range depends on environmental factors. For example, a cl
 
 > ❗ **Important**:  The framework doesn’t implement secure ranging, so don’t rely on Nearby Interaction to provide users with secure access, for example, security clearance, based on the value of this property.
 
- The framework doesn’t implement secure ranging, so don’t rely on Nearby Interaction to provide users with secure access, for example, security clearance, based on the value of this property.
-
 
 ---
 

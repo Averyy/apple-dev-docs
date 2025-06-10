@@ -1,9 +1,9 @@
-# !=(_:_:)
+# ==(_:_:)
 
 **Framework**: Swift  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Returns a Boolean value indicating whether two values are equal.
 
 **Availability**:
 - iOS 8.0+
@@ -17,14 +17,12 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func == (lhs: ManagedBufferPointer<Header, Element>, rhs: ManagedBufferPointer<Header, Element>) -> Bool
 ```
 
 #### Discussion
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
 
 ## Parameters
 
@@ -34,4 +32,4 @@ This is the default implementation of the not-equal-to operator (`!=`) for any t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/managedbufferpointer/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/managedbufferpointer/==(_:_:))*

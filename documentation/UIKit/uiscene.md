@@ -51,6 +51,8 @@ You don’t create scene objects directly. You can programmatically ask UIKit to
   The conditions that define when UIKit activates the scene object.
 - [class UISceneActivationConditions](uisceneactivationconditions.md)
   The set of conditions that define when UIKit activates the current scene.
+### Specifying the scene’s destruction conditions
+- [var destructionConditions: Set<UIScene.DestructionCondition>](uiscene/destructionconditions-9rfrj.md)
 ### Responding to life cycle notifications
 - [class let willConnectNotification: NSNotification.Name](uiscene/willconnectnotification.md)
   A notification that indicates that UIKit added a scene to your app.
@@ -96,6 +98,14 @@ You don’t create scene objects directly. You can programmatically ask UIKit to
   An object you pass to UIKit to permanently remove a scene and its associated session from your app.
 - [UIScene.OpenURLOptions](uiscene/openurloptions.md)
   Options that UIKit provides when asking your app to open a URL.
+### Structures
+- [UIScene.DestructionCondition](uiscene/destructioncondition.md)
+- [UIScene.DidActivateMessage](uiscene/didactivatemessage.md)
+- [UIScene.DidEnterBackgroundMessage](uiscene/didenterbackgroundmessage.md)
+- [UIScene.SystemProtectionDidChangeMessage](uiscene/systemprotectiondidchangemessage.md)
+- [UIScene.WillConnectMessage](uiscene/willconnectmessage.md)
+- [UIScene.WillDeactivateMessage](uiscene/willdeactivatemessage.md)
+- [UIScene.WillEnterForegroundMessage](uiscene/willenterforegroundmessage.md)
 ### Instance Methods
 - [func getDefaultAudioSession(completionHandler: (AVAudioSession?) -> Void)](uiscene/getdefaultaudiosession(completionhandler:).md)
   Retrieves the audio session that contains all sounds that implicitly belong to this scene.
@@ -115,6 +125,7 @@ You don’t create scene objects directly. You can programmatically ask UIKit to
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
 - [UIResponderStandardEditActions](uiresponderstandardeditactions.md)

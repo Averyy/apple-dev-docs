@@ -1,6 +1,6 @@
 # VSAccountMetadataRequest
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: class
 
 An object that specifies what subscriber account information your app retrieves.

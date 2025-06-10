@@ -8,6 +8,7 @@ A localized accessibility label converting a specific detection type into a broa
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
 

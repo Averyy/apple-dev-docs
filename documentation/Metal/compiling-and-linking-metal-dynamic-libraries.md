@@ -27,8 +27,6 @@ Start by compiling your utility functions to a dynamic library. Use the `metal` 
 
 > ❗ **Important**:  Ensure that the install name uses the format of l`ib${LIBRARY_NAME}.metallib`. Otherwise, the Metal linker can’t locate your dynamic library.
 
- Ensure that the install name uses the format of l`ib${LIBRARY_NAME}.metallib`. Otherwise, the Metal linker can’t locate your dynamic library.
-
 ##### Add Binary Archives to Your Dynamic Library Optionally
 
 Binary archives are prebuilt shader functions for GPUs you specify at compile time. Use binary archives when you prefer to make the tradeoff of distributing larger files for your app while avoiding the cost of compiling shaders from Metal IR at runtime. For more information on binary archives, see [`Metal Binary Archives`](metal-binary-archives.md).

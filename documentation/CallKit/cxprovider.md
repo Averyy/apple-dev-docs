@@ -106,6 +106,8 @@ A [`CXProvider`](cxprovider.md) object is responsible for reporting out-of-band 
   Use the CallKit framework to integrate native VoIP calling.
 - [Preparing your app to be the default calling app](preparing-your-app-to-be-the-default-calling-app.md)
   Configure your CallKit or LiveCommunicationKit app so people can set it as the default calling app on their device.
+- [CallKit updates](../Updates/CallKit.md)
+  Learn about important changes to CallKit.
 
 
 ---

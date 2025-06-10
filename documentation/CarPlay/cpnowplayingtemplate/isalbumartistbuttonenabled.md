@@ -13,6 +13,7 @@ A Boolean value that indicates whether the album and artist string is a button.
 ## Declaration
 
 ```swift
+@MainActor
 var isAlbumArtistButtonEnabled: Bool { get set }
 ```
 

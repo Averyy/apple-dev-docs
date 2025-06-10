@@ -1,6 +1,6 @@
 # sorted(on:order:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Generates a data frame by copying the data frame’s rows and then sorting the rows according to a column that you select by its column identifier.

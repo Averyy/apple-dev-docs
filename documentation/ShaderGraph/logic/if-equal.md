@@ -5,6 +5,14 @@
 
 Outputs True Result or False Result depending on whether value1 == value2.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Parameter Descriptions
@@ -25,6 +33,12 @@ Outputs True Result or False Result depending on whether value1 == value2.
   Returns true if only one of the inputs is true.
 - [Not (RealityKit)](logic/not-(realitykit).md)
   Returns !input.
+- [Select (RealityKit)](logic/select-(realitykit).md)
+  Selects B if conditional is true, A if false.
+- [Multiply Add 24 (RealityKit)](realitykit/multiply-add-24-(realitykit).md)
+  Multiplies two 24-bit integer values X and Y and returns the 32-bit integer result with 32-bit Z value added.
+- [Multiply 24 (RealityKit)](realitykit/multiply-24-(realitykit).md)
+  Multiplies two 24-bit integer values X and Y and returns the 32-bit integer result.
 
 
 ---

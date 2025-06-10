@@ -1,6 +1,6 @@
 # skipCount
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The number of skipped tests during the run.

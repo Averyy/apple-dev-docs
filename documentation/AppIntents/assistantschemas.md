@@ -6,7 +6,7 @@
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS 1.0+
@@ -75,6 +75,8 @@ enum AssistantSchemas
   Assistant schema conformance for app intents that offer spreadsheet functionality.
 - [AssistantSchemas.SystemIntent](assistantschemas/systemintent.md)
   Assistant schema conformance for app intents that match system-provided intents.
+- [AssistantSchemas.VisualIntelligenceIntent](assistantschemas/visualintelligenceintent.md)
+  Assistant schema conformance for app intents that match visual intelligence intents.
 - [AssistantSchemas.WhiteboardEntity](assistantschemas/whiteboardentity.md)
   Assistant schema conformance for app entities that describe data for whiteboard functionality.
 - [AssistantSchemas.WhiteboardEnum](assistantschemas/whiteboardenum.md)

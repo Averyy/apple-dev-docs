@@ -40,6 +40,7 @@ The `modelFileURL` functions can throw an error of this type, such as `CapturedR
 - [Error](../Swift/Error.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

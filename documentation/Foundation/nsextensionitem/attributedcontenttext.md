@@ -25,8 +25,6 @@ var attributedContentText: NSAttributedString? { get set }
 
 > ❗ **Important**:  Alternatively, you can set attributed content in the [`userInfo`](nsextensionitem/userinfo.md) dictionary using the [`NSExtensionItemAttributedContentTextKey`](nsextensionitemattributedcontenttextkey.md) key. However, setting the [`userInfo`](nsextensionitem/userinfo.md) dictionary after setting [`attributedContentText`](nsextensionitem/attributedcontenttext.md) overrides this property.
 
- Alternatively, you can set attributed content in the [`userInfo`](nsextensionitem/userinfo.md) dictionary using the [`NSExtensionItemAttributedContentTextKey`](nsextensionitemattributedcontenttextkey.md) key. However, setting the [`userInfo`](nsextensionitem/userinfo.md) dictionary after setting [`attributedContentText`](nsextensionitem/attributedcontenttext.md) overrides this property.
-
 ## See Also
 
 - [var attachments: [NSItemProvider]?](nsextensionitem/attachments.md)

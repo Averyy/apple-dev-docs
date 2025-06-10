@@ -52,4 +52,4 @@ Learn more about adopting package dependencies in [`Adding package dependencies 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/publishing-a-swift-package-with-xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/publishing-a-swift-package-with-xcode)*

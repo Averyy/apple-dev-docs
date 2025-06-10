@@ -27,8 +27,6 @@ This function assumes that you are mutating the contents.
 
 > ⚠️ **Warning**:  The byte pointer argument should not be stored and used outside of the lifetime of the call to the closure.
 
- The byte pointer argument should not be stored and used outside of the lifetime of the call to the closure.
-
 ## See Also
 
 - [func withUnsafeBytes<ResultType, ContentType>((UnsafePointer<ContentType>) throws -> ResultType) rethrows -> ResultType](data/withunsafebytes(_:).md)

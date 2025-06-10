@@ -1,6 +1,6 @@
 # removeLast(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Removes the specified number of elements from the end of the collection.

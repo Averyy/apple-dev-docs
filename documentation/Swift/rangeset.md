@@ -28,7 +28,7 @@ In this example, `negativeSubranges` is a range set representing the locations o
 
 ```swift
 var numbers = [10, 12, -5, 14, -3, -9, 15]
-let negativeSubranges = numbers.subranges(where: { $0 < 0 })
+let negativeSubranges = numbers.indices(where: { $0 < 0 })
 // numbers[negativeSubranges].count == 3
 
 numbers.moveSubranges(negativeSubranges, to: 0)
@@ -80,6 +80,8 @@ numbers.moveSubranges(negativeSubranges, to: 0)
   Returns a Boolean value that indicates whether this range set is a subset of the given set.
 - [func isSuperset(of: RangeSet<Bound>) -> Bool](rangeset/issuperset(of:).md)
   Returns a Boolean value that indicates whether this range set is a superset of the given set.
+- [func isValid(within: DiscontiguousAttributedSubstring) -> Bool](rangeset/isvalid(within:)-38qb9.md)
+- [func isValid(within: some AttributedStringProtocol) -> Bool](rangeset/isvalid(within:)-6u17e.md)
 - [func remove<C>(Bound, within: C)](rangeset/remove(_:within:).md)
   Removes the range that contains only the specified index from the range set.
 - [func remove(contentsOf: Range<Bound>)](rangeset/remove(contentsof:).md)
@@ -105,6 +107,7 @@ numbers.moveSubranges(negativeSubranges, to: 0)
 - [Equatable](equatable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

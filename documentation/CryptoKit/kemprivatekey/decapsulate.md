@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Decapsulates the encapsulated shared secret
+Recovers a shared secret from an encapsulated representation.
 
 **Availability**:
 - iOS 17.0+
@@ -23,11 +23,11 @@ func decapsulate(_ encapsulated: Data) throws -> SymmetricKey
 
 #### Return Value
 
-The decapsulated shared secret
+The decapsulated shared secret.
 
 ## Parameters
 
-- `encapsulated`: The encapsulated shared secret
+- `encapsulated`: The encapsulated shared secret that someone created using this key’s  .
 
 
 ---

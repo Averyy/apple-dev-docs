@@ -23,8 +23,6 @@ You discover accessories to add to a home using the [`HMAccessoryBrowser`](hmacc
 
 > ❗ **Important**:  To provide a consistent user experience, use the [`addAndSetupAccessories(completionHandler:)`](hmhome/addandsetupaccessories(completionhandler:).md) method instead.
 
- To provide a consistent user experience, use the [`addAndSetupAccessories(completionHandler:)`](hmhome/addandsetupaccessories(completionhandler:).md) method instead.
-
 ## Parameters
 
 - `accessory`: The accessory to add to the home.

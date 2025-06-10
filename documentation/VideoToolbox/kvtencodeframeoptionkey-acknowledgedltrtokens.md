@@ -1,6 +1,6 @@
 # kVTEncodeFrameOptionKey_AcknowledgedLTRTokens
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Enable Long Term Reference (LTR) frames during encoding.

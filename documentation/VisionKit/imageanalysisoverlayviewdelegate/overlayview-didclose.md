@@ -1,6 +1,6 @@
 # overlayView(_:didClose:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method  
 **Required**: Yes
 

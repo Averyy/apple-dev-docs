@@ -24,8 +24,6 @@ static func -= (lhs: inout Date, rhs: TimeInterval)
 
 > ⚠️ **Warning**: This only adjusts an absolute value. If you wish to add calendrical concepts like hours, days, months then you must use a `Calendar`. That will take into account complexities like daylight saving time, months with different numbers of days, and more.
 
-This only adjusts an absolute value. If you wish to add calendrical concepts like hours, days, months then you must use a `Calendar`. That will take into account complexities like daylight saving time, months with different numbers of days, and more.
-
 ## See Also
 
 - [func addTimeInterval(TimeInterval)](date/addtimeinterval(_:).md)

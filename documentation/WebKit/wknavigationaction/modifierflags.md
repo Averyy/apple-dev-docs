@@ -1,6 +1,6 @@
 # modifierFlags
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The modifier keys that were pressed at the time of the navigation request.
@@ -16,7 +16,7 @@ The modifier keys that were pressed at the time of the navigation request.
 
 ```swift
 @MainActor
-var modifierFlags: UIKeyModifierFlags { get }
+var modifierFlags: NSEvent.ModifierFlags { get }
 ```
 
 ## See Also

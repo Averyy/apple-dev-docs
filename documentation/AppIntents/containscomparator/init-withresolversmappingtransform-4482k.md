@@ -8,10 +8,10 @@ Declares support for the `contains` operator between an `Array` property and use
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -24,6 +24,15 @@ init<Spec>(@ResolverSpecificationBuilder<PropertyType.UnwrappedType> withResolve
 
 - `resolvers`: Set of  s to apply when converting user input to the target   type.
 - `mappingTransform`: Closure that transforms the user-supplied value into the   output type.
+
+## See Also
+
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](containscomparator/init(mappingtransform:)-xvws.md)
+  Declares support for the `contains` operator between a `AttributedString` property and user-supplied values.
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](containscomparator/init(mappingtransform:)-3xuvt.md)
+  Declares support for the `contains` operator between a `String` property and user-supplied values.
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](containscomparator/init(mappingtransform:)-7rx55.md)
+  Declares support for the `contains` operator between an optional `Array` property and user-supplied values.
 
 
 ---

@@ -1,6 +1,6 @@
 # webView(_:stop:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method  
 **Required**: Yes
 

@@ -161,6 +161,8 @@ var body: some View {
 
 ## See Also
 
+- [Building rich SwiftUI text experiences](building-rich-swiftui-text-experiences.md)
+  Build an editor for formatted text using SwiftUI text editor views and attributed strings.
 - [func textFieldStyle<S>(S) -> some View](view/textfieldstyle(_:).md)
   Sets the style for text fields within this view.
 - [struct SecureField](securefield.md)

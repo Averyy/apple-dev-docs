@@ -1,6 +1,6 @@
 # handleInterruptPacket
 
-**Framework**: Usbserialdriverkit  
+**Framework**: USBSerialDriverKit  
 **Kind**: method
 
 Processes an interrupt packet that originated from the device.

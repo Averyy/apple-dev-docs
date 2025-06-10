@@ -1,6 +1,6 @@
 # swimmingLocation
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: property
 
 For swimming workouts, the workout’s swimming location.
@@ -10,6 +10,7 @@ For swimming workouts, the workout’s swimming location.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

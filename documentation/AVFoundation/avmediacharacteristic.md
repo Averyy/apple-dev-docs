@@ -104,6 +104,11 @@ AVMutableMetadataItem *myTaggedMediaCharacteristic = [[AVMutableMetadataItem all
   Creates a media characteristic.
 - [init(rawValue: String)](avmediacharacteristic/init(rawvalue:).md)
   Creates a media characteristic with a string value.
+### Type Properties
+- [static let indicatesNonRectilinearProjection: AVMediaCharacteristic](avmediacharacteristic/indicatesnonrectilinearprojection.md)
+  A media characteristic that indicates the video track carries information related to how it should be projected for display.
+- [static let machineGenerated: AVMediaCharacteristic](avmediacharacteristic/machinegenerated.md)
+  A media characteristic that indicates that a track was generated in an automated fashion by a machine.
 
 ## Relationships
 
@@ -112,6 +117,7 @@ AVMutableMetadataItem *myTaggedMediaCharacteristic = [[AVMutableMetadataItem all
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

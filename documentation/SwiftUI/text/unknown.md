@@ -24,6 +24,10 @@ static func + (lhs: Text, rhs: Text) -> Text
 
 A new text view containing the combined contents of the two input text views.
 
+#### Discussion
+
+> **Note**:  The `+` on `Text` has been deprecated. Using this operator to concatenate texts hardcodes a specific order for part of the sentence. This may lead to incorrect localization, especially for right-to-left languages. Instead, prefer using the initializer on `Text` that allows for string interpolation. For example, instead of `Text("Hello") + Text(name)`, that concatenation can be equivalently expressed as `Text("Hello, \(name)!")`. See [`Text`](text.md) for more information on localization and string interpolation.
+
 ## Parameters
 
 - `lhs`: The first text view with text to combine.

@@ -93,4 +93,4 @@ To use your XCFramework that contains mergeable metadata, add it to the Link Bin
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-your-project-to-use-mergeable-libraries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-your-project-to-use-mergeable-libraries)*

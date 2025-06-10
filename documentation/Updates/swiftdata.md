@@ -8,6 +8,11 @@ Learn about important changes to SwiftData.
 
 Browse notable changes in [`SwiftData`](https://developer.apple.com/documentation/SwiftData).
 
+#### June 2025
+
+- Increase the flexibility of your models by adopting inheritance through the [`Model()`](https://developer.apple.com/documentation/SwiftData/Model()) macro.
+- Gain added flexibility in accessing and sorting transaction history using [`sortBy`](https://developer.apple.com/documentation/SwiftData/HistoryDescriptor/sortBy) in the [`HistoryDescriptor`](https://developer.apple.com/documentation/SwiftData/HistoryDescriptor).
+
 #### June 2024
 
 ##### Macros
@@ -20,7 +25,7 @@ Browse notable changes in [`SwiftData`](https://developer.apple.com/documentatio
 
 - Fetch historical changes for one or more persistent models using the model context’s [`fetchHistory(_:)`](https://developer.apple.com/documentation/SwiftData/ModelContext/fetchHistory(_:)) method.
 - Delete stale model history from a persistent store by calling the context’s [`deleteHistory(_:)`](https://developer.apple.com/documentation/SwiftData/ModelContext/deleteHistory(_:)) method.
-- Provide an alternate change tracking strategy for your custom persistent store by adopting the doc://com.apple.documentation/documentation/swiftdata/history/historyproviding protocol.
+- Provide an alternate change tracking strategy for your custom persistent store by adopting the [`HistoryProviding`](https://developer.apple.com/documentation/SwiftData/HistoryProviding) protocol.
 
 ##### Custom Persistent Stores
 
@@ -36,12 +41,16 @@ Browse notable changes in [`SwiftData`](https://developer.apple.com/documentatio
   Learn about important changes in ActivityKit.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [App Intents updates](appintents.md)
   Learn about important changes in App Intents.
 - [AppKit updates](appkit.md)
   Learn about important changes to AppKit.
 - [Apple Intelligence updates](apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -54,10 +63,6 @@ Browse notable changes in [`SwiftData`](https://developer.apple.com/documentatio
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
 
 
 ---

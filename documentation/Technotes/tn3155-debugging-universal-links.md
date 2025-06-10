@@ -247,4 +247,4 @@ When testing, if you’re running your app from Xcode, using a server that is un
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3155-debugging-universal-links)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3155-debugging-universal-links)*

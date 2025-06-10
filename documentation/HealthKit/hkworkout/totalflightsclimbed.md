@@ -1,6 +1,6 @@
 # totalFlightsClimbed
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: property
 
 The total number of flights of stairs climbed during the workout.

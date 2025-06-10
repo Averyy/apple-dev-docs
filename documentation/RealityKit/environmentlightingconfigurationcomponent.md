@@ -1,6 +1,6 @@
 # EnvironmentLightingConfigurationComponent
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 A component that scales the amount of light that an entity receives from its environment.
@@ -10,6 +10,7 @@ A component that scales the amount of light that an entity receives from its env
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -43,11 +44,6 @@ spaceship.components.set(EnvironmentLightingConfigurationComponent(
 ### Comparing environment-lighting configuration components
 - [static func == (EnvironmentLightingConfigurationComponent, EnvironmentLightingConfigurationComponent) -> Bool](environmentlightingconfigurationcomponent/==(_:_:).md)
   Returns a Boolean value that indicates whether two environment-lighting configuration components are equal.
-- [static func != (Self, Self) -> Bool](environmentlightingconfigurationcomponent/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Component Implementations](environmentlightingconfigurationcomponent/component-implementations.md)
-- [Equatable Implementations](environmentlightingconfigurationcomponent/equatable-implementations.md)
 
 ## Relationships
 
@@ -69,4 +65,4 @@ spaceship.components.set(EnvironmentLightingConfigurationComponent(
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/environmentlightingconfigurationcomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/environmentlightingconfigurationcomponent)*

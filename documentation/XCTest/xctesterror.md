@@ -1,6 +1,6 @@
 # XCTestError
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: struct
 
 A type of error that can occur while the test waits to fulfill expectations.
@@ -35,6 +35,7 @@ struct XCTestError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

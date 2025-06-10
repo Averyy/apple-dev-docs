@@ -6,11 +6,11 @@
 A collection of items and subcollections for use in import and export.
 
 **Availability**:
-- iOS 18.2+
-- iPadOS 18.2+
-- Mac Catalyst 18.2+
-- macOS 15.2+
-- visionOS 2.2+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -22,13 +22,10 @@ struct ASImportableCollection
 
 A collection represents a group of items such as a vault or folder.
 
-This type is a representation of `Collection` as defined in the Credential Exchange Format (CXF) specification. You can supply a JSON representation of a CXF `Collection` to initialize an instance of this struct by using a [`JSONDecoder`](https://developer.apple.com/documentation/Foundation/JSONDecoder) and calling [`decode(_:from:)`](https://developer.apple.com/documentation/foundation/jsondecoder/2895189-decode).
+This type is a representation of `Collection` as defined in the Credential Exchange Format (CXF) specification. You can supply a JSON representation of a CXF `Collection` to initialize an instance of this struct by using a [`JSONDecoder`](https://developer.apple.com/documentation/Foundation/JSONDecoder) and calling [`decode(_:from:)`](https://developer.apple.com/documentation/Foundation/JSONDecoder/decode(_:from:)).
 
 ## Topics
 
-### Creating a collection
-- [init(id: Data, title: String, subtitle: String?, items: [ASImportableLinkedItem], subcollections: [ASImportableCollection])](asimportablecollection/init(id:title:subtitle:items:subcollections:).md)
-  Creates a collection from its items, child collections, and identifying information.
 ### Accessing collection properties
 - [var id: Data](asimportablecollection/id.md)
   A unique identifier for the collection.
@@ -42,6 +39,13 @@ This type is a representation of `Collection` as defined in the Credential Excha
   A linked item for use in import and export.
 - [var subcollections: [ASImportableCollection]](asimportablecollection/subcollections.md)
   Subcollections that are part of the collection.
+### Initializers
+- [init(id: Data, created: Date?, lastModified: Date?, title: String, subtitle: String?, items: [ASImportableLinkedItem], subcollections: [ASImportableCollection])](asimportablecollection/init(id:created:lastmodified:title:subtitle:items:subcollections:).md)
+### Instance Properties
+- [var created: Date?](asimportablecollection/created.md)
+  The date and time when the collection was created.
+- [var lastModified: Date?](asimportablecollection/lastmodified.md)
+  The date and time when the collection was last modified.
 
 ## Relationships
 
@@ -51,6 +55,7 @@ This type is a representation of `Collection` as defined in the Credential Excha
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

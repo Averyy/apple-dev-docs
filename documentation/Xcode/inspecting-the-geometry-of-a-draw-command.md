@@ -30,8 +30,6 @@ Occasionally, you might have an issue in an attribute of your geometry. In that 
 
 > 💡 **Tip**: You can also Control-click to disable Show Wireframe and Show Vertices to make the attribute visualization easier to see.
 
-You can also Control-click to disable Show Wireframe and Show Vertices to make the attribute visualization easier to see.
-
 ##### Inspect Vertex Values
 
 When you discover a misplaced or misshaped primitive, it’s possible that the issue lies in the data you’re passing into the vertex, object, or mesh shader. Check the data view at the bottom to ensure the input and output of your shader is correct. To see all of the attributes for a specific primitive, click the primitive in the scene view to select it, and then Xcode highlights the primitive’s vertices in the data view.

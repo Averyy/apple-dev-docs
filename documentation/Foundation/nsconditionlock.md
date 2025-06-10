@@ -62,6 +62,7 @@ Using an [`NSConditionLock`](nsconditionlock.md) object, you can ensure that a t
 - [NSLocking](nslocking.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

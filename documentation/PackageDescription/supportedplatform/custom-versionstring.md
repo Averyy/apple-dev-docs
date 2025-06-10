@@ -1,6 +1,6 @@
 # custom(_:versionString:)
 
-**Framework**: Packagedescription  
+**Framework**: PackageDescription  
 **Kind**: method
 
 Configures the minimum deployment target version for custom platforms.

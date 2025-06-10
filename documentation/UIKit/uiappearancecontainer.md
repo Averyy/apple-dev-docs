@@ -45,6 +45,7 @@ For example, [`UIBarButtonItem`](uibarbuttonitem.md) defines these methods:
 - [UIActivityViewController](uiactivityviewcontroller.md)
 - [UIAlertController](uialertcontroller.md)
 - [UIAlertView](uialertview.md)
+- [UIBackgroundExtensionView](uibackgroundextensionview.md)
 - [UIButton](uibutton.md)
 - [UICalendarView](uicalendarview.md)
 - [UICloudSharingController](uicloudsharingcontroller.md)

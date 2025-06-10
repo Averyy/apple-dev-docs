@@ -10,7 +10,7 @@ Scales images within the view according to one of the relative sizes available i
 - iPadOS 13.0+
 - macOS 11.0+
 - tvOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 6.0+
 
 ## Declaration

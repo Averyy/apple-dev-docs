@@ -57,4 +57,4 @@ xcrun simctl diagnose --help
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/troubleshooting-simulator-launch-or-animation-issues)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/troubleshooting-simulator-launch-or-animation-issues)*

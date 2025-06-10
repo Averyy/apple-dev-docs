@@ -28,8 +28,6 @@ When packing, make sure to use acceptable directory entry names and unambiguous 
 
 > 💡 **Tip**: If the `attributes` parameter is `nil`, include at least two entries in a directory: `"."` and `".."`, which represent the current and parent directories, respectively. Both of these items have type [`FSItem.ItemType.directory`](fsitem/itemtype/directory.md). For the root directory, `"."` and `".."` have identical contents. Don’t pack  `"."` and `".."` if `attributes` isn’t `nil`.
 
-If the `attributes` parameter is `nil`, include at least two entries in a directory: `"."` and `".."`, which represent the current and parent directories, respectively. Both of these items have type [`FSItem.ItemType.directory`](fsitem/itemtype/directory.md). For the root directory, `"."` and `".."` have identical contents. Don’t pack  `"."` and `".."` if `attributes` isn’t `nil`.
-
 ## Parameters
 
 - `directory`: The item to enumerate. FSKit guarantees this item is of type  .

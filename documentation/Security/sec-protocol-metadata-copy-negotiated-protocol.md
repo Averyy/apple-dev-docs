@@ -25,8 +25,8 @@ A NULL-terminated string carrying the negotiated protocol.
 #### Discussion
 
 ```None
-  Copy the application protocol negotiated, e.g., via the TLS ALPN extension.
-  The caller is expected to `free` the output string when no longer needed.
+ Copy the application protocol negotiated, e.g., via the TLS ALPN extension.
+ The caller is expected to `free` the output string when no longer needed.
 ```
 
 ## Parameters

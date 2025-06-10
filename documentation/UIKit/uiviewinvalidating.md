@@ -37,6 +37,8 @@ protocol UIViewInvalidating
   Indicates to the system that an aspect of a view is invalid and triggers the necessary update.
 - [UIView.Invalidations](uiview/invalidations.md)
   Changes that cause an aspect of a view to be invalid and require an update.
+### Type Properties
+- [static var properties: UIView.Invalidations.Properties](uiviewinvalidating/properties.md)
 
 ## Relationships
 
@@ -46,6 +48,7 @@ protocol UIViewInvalidating
 - [UIView.Invalidations.Display](uiview/invalidations/display.md)
 - [UIView.Invalidations.IntrinsicContentSize](uiview/invalidations/intrinsiccontentsize.md)
 - [UIView.Invalidations.Layout](uiview/invalidations/layout.md)
+- [UIView.Invalidations.Properties](uiview/invalidations/properties.md)
 - [UIView.Invalidations.Tuple](uiview/invalidations/tuple.md)
 
 ## See Also

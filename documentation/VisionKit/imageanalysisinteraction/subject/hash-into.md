@@ -1,6 +1,6 @@
 # hash(into:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Serializes a subject with the given hasher.

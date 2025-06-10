@@ -1,6 +1,6 @@
 # birthdayPersonUniqueID
 
-**Framework**: Eventkit  
+**Framework**: EventKit  
 **Kind**: property
 
 The Address Book framework record identifier of the person for this birthday event.

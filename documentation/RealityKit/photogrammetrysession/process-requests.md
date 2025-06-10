@@ -1,6 +1,6 @@
 # process(requests:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: method
 
 Starts processing of the provided processing `requests`.  Messages begin to be produced to the `output` publisher.

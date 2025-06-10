@@ -35,6 +35,21 @@ As `Factor` is contained in the returned object, its underlying reference count 
 - `subfactor`: The sub-factor the new object should represent.
 - `Factor`: The factorization to extract the sub-factor from.
 
+## See Also
+
+- [struct SparseSubfactor_t](sparsesubfactor_t.md)
+  Constants that define the subfactor of a factorization.
+- [func SparseCreateSubfactor(SparseSubfactor_t, SparseOpaqueFactorization_Double) -> SparseOpaqueSubfactor_Double](sparsecreatesubfactor(_:_:)-49d8w.md)
+  Returns an opaque object that represents a subfactor of a factorization of a matrix of double-precision values.
+- [struct SparseOpaqueFactorization_Double](sparseopaquefactorization_double.md)
+  A structure that represents the factorization of a matrix of double-precision, floating-point values.
+- [func SparseCreateSubfactor(SparseSubfactor_t, SparseOpaqueFactorization_Float) -> SparseOpaqueSubfactor_Float](sparsecreatesubfactor(_:_:)-4renf.md)
+  Returns an opaque object that represents a subfactor of a factorization of a matrix of single-precision values.
+- [struct SparseOpaqueFactorization_Float](sparseopaquefactorization_float.md)
+  A structure that represents the factorization of a matrix of single-precision, floating-point values.
+- [func SparseCreateSubfactor(SparseSubfactor_t, SparseOpaqueFactorization_Complex_Float) -> SparseOpaqueSubfactor_Complex_Float](sparsecreatesubfactor(_:_:)-udwd.md)
+  Returns an opaque object representing a sub-factor of a factorization in complex float.
+
 
 ---
 

@@ -50,8 +50,6 @@ To recover storage space from unused Simulator runtimes:
 
 > 💡 **Tip**: Simulators can also be [`managed from the terminal`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/installing-additional-simulator-runtimes#Install-and-manage-Simulator-runtimes-from-the-command-line).
 
-Simulators can also be [`managed from the terminal`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/installing-additional-simulator-runtimes#Install-and-manage-Simulator-runtimes-from-the-command-line).
-
 ## See Also
 
 - [Installing Xcode and Simulators](installing-xcode-and-simulators.md)

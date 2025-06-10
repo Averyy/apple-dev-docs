@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: subscript
 
 Accesses the element at the specified position.

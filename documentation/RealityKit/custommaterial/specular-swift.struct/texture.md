@@ -10,6 +10,7 @@ The specular value as a UV-mapped image texture.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -21,8 +22,6 @@ var texture: CustomMaterial.Texture?
 
 - [var scale: Float](custommaterial/specular-swift.struct/scale.md)
   The specular value for the entire entity or a multiplier for values sampled from the material’s texture.
-- [CustomMaterial.Specular.FloatLiteralType](custommaterial/specular-swift.struct/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 
 ---

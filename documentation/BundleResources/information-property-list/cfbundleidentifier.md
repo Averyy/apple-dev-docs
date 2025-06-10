@@ -25,8 +25,6 @@ The operating system uses the bundle ID to identify the app when applying specif
 
 > ❗ **Important**:  The bundle ID in the information property list must match the bundle ID you enter in App Store Connect. After you upload a build to App Store Connect, you can’t change the bundle ID or delete the associated explicit App ID in your developer account.
 
- The bundle ID in the information property list must match the bundle ID you enter in App Store Connect. After you upload a build to App Store Connect, you can’t change the bundle ID or delete the associated explicit App ID in your developer account.
-
 ##### Watchos Apps with Companion Ios App Considerations
 
 For watchOS apps that have a companion iOS app in the same project, the embedded WatchKit app and WatchKit extension targets must have the same bundle ID prefix as the iOS app. The WatchKit app must have the format `[Bundle ID].watchkitapp`, and the WatchKit extension must have the format `[Bundle ID].watchkitextension`.

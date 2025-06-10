@@ -1,6 +1,6 @@
 # remainingComplicationUserInfoTransfers
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 The number of remaining times you can send complication data from the iOS app to the WatchKit extension.

@@ -38,8 +38,6 @@ Derived attributes support the following expressions:
 
 > ❗ **Important**:  Data recomputes derived attributes when you save a context. A managed object’s property does not reflect unsaved changes until you save the context and refresh the object.
 
- Data recomputes derived attributes when you save a context. A managed object’s property does not reflect unsaved changes until you save the context and refresh the object.
-
 ## Topics
 
 ### Specifying the Derivation Expression

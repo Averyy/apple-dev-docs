@@ -57,6 +57,7 @@ You can also use `MapUserLocationButton` in conjunction with the `Map/mapControl
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

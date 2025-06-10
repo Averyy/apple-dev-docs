@@ -1,6 +1,6 @@
 # visibility
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The distance at which terrain is visible.

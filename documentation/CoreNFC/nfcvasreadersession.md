@@ -1,6 +1,6 @@
 # NFCVASReaderSession
 
-**Framework**: Corenfc  
+**Framework**: Core NFC  
 **Kind**: class
 
 A reader session for processing Value Added Service (VAS) tags.
@@ -61,4 +61,4 @@ class NFCVASReaderSession
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreNFC/nfcvasreadersession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corenfc/nfcvasreadersession)*

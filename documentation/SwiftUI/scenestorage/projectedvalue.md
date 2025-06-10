@@ -1,6 +1,6 @@
 # projectedValue
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 A binding to the state value.
@@ -34,4 +34,4 @@ This works identically to `State.projectedValue`.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/scenestorage/projectedvalue)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/scenestorage/projectedvalue)*

@@ -11,7 +11,8 @@
 ## Declaration
 
 ```swift
-protocol FinancialConnectionUIExtensionScene : AppExtensionScene
+@MainActor
+@preconcurrency protocol FinancialConnectionUIExtensionScene : AppExtensionScene
 ```
 
 ## Relationships

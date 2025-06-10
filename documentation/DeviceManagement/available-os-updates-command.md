@@ -1,4 +1,4 @@
-# List the Available OS Updates
+# Available OS Updates
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -10,8 +10,6 @@ Get a list of available operating-system updates for a device.
 - iPadOS 9.0+
 - macOS 10.11+
 - tvOS 12.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -19,37 +17,37 @@ This command is also available to execute on managed devices that aren’t enrol
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Query Availability
+##### Command Availability
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS |
-| User Channel | - |
-| Requires Supervision | iOS, tvOS |
-| Allowed in User Enrollment | - |
-| Required Access Right | AllowAppInstallation |
+| Device channel | iOS, macOS, Shared iPad, tvOS |
+| User channel | NA |
+| Requires supervision | iOS, macOS, tvOS |
+| Allowed in user enrollment | NA |
+| Required access right | AllowAppInstallation |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object AvailableOSUpdatesCommand](availableosupdatescommand.md)
-  The command to get a list of available operating-system updates.
+  The command to get a list of available operating-system updates for a device.
 - [object AvailableOSUpdatesResponse](availableosupdatesresponse.md)
-  A response from the device after it processes the command to get a list of available operating-system updates.
+  A response from the device after it processes the command to get a list of available operating-system updates for a device.
 
 ## Request Body
 
-The command to get a list of available operating-system updates.
+The request object the server returns for the Available OS Updates Command.
 
 ## See Also
 
-- [Schedule an OS Update Scan](schedule-os-update-scan-command.md)
+- [Schedule OS Update Scan](schedule-os-update-scan-command.md)
   Schedule a background scan for operating-system updates on a device.
-- [Schedule an OS Update](schedule-os-update-command.md)
+- [Schedule OS Update](schedule-os-update-command.md)
   Schedule an update of the operating system on a device.
-- [Get the OS Update Status](os-update-status-command.md)
+- [OS Update Status](os-update-status-command.md)
   Get the status of operating-system updates on a device.
 
 

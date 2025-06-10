@@ -1,6 +1,6 @@
 # xpc_array_set_data(_:_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Inserts a raw data value into an array.

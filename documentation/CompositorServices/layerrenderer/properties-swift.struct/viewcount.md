@@ -6,6 +6,7 @@
 The number of views that you must fill with content.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

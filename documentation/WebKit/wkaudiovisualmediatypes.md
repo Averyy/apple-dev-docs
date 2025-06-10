@@ -1,6 +1,6 @@
 # WKAudiovisualMediaTypes
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: struct
 
 The media types that require a user gesture to begin playing.
@@ -43,6 +43,7 @@ To indicate that no user gestures are required to play media, use an empty set o
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

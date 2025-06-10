@@ -1,6 +1,6 @@
 # Linking to specific app scenes from your widget or Live Activity
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Add deep links to your widgets and Live Activities that enable people to open a specific scene in your app.
 
@@ -48,7 +48,11 @@ For example, the leaderboard widget of the [`Emoji Rangers: Supporting Live Acti
 
 If a widget doesn’t specify a deep link URL with [`widgetURL(_:)`](https://developer.apple.com/documentation/SwiftUI/View/widgetURL(_:)) or [`Link`](https://developer.apple.com/documentation/SwiftUI/Link) and a person interacts with it, the system opens the containing app and passes an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) to [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onContinueUserActivity(_:perform:)), [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:continue:restorationHandler:)), or [`application(_:continue:restorationHandler:)`](https://developer.apple.com/documentation/AppKit/NSApplicationDelegate/application(_:continue:restorationHandler:)). The user activity’s `userInfo` dictionary contains details about the widget the person interacted with. Use the keys in [`WidgetCenter.UserInfoKey`](widgetcenter/userinfokey.md) to access these values from Swift code. To access the `userInfo` values from Objective-C, use the keys `WGWidgetUserInfoKeyKind` and `WGWidgetUserInfoKeyFamily` instead. Then, update your app’s interface to match the widget so people don’t have to navigate to the right place in your app.
 
-> **Note**: If you use an [`AppIntentConfiguration`](appintentconfiguration.md) to configure your widget, use the [`widgetConfigurationIntent(of:)`](https://developer.apple.com/documentation/foundation/nsuseractivity/4226429-widgetconfigurationintent) function to access the widget’s intent. Similarly, if you use an [`IntentConfiguration`](intentconfiguration.md), the user activity’s [`interaction`](https://developer.apple.com/documentation/foundation/nsuseractivity/1690346-interaction) property contains the associated [`INIntent`](https://developer.apple.com/documentation/Intents/INIntent).
+> **Note**: If you use an [`AppIntentConfiguration`](appintentconfiguration.md) to configure your widget, use the [`widgetConfigurationIntent(of:)`](https://developer.apple.com/documentation/Foundation/NSUserActivity/widgetConfigurationIntent(of:)) function to access the widget’s intent. Similarly, if you use an [`IntentConfiguration`](intentconfiguration.md), the user activity’s [`interaction`](https://developer.apple.com/documentation/Foundation/NSUserActivity/interaction) property contains the associated [`INIntent`](https://developer.apple.com/documentation/Intents/INIntent).
+
+##### Review Linking Behavior in Carplay
+
+In CarPlay, linking from your widget to your app works differently to match the specific context of using your app while using your car. For more information about supporting CarPlay, see [`Adding StandBy and CarPlay support to your widget`](adding-standby-and-carplay-support-to-your-widget.md).
 
 ## See Also
 
@@ -60,4 +64,4 @@ If a widget doesn’t specify a deep link URL with [`widgetURL(_:)`](https://dev
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/linking-to-specific-app-scenes-from-your-widget-or-live-activity)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/linking-to-specific-app-scenes-from-your-widget-or-live-activity)*

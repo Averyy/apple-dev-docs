@@ -1,6 +1,6 @@
 # activate(options:completionHandler:)
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: method
 
 Activates an audio session asynchronously on watchOS.

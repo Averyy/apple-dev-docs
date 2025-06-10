@@ -1,6 +1,6 @@
 # AGL
 
-**Framework**: Agl
+**Framework**: AGL
 
 Create and manage OpenGL rendering contexts for use in macOS, and perform operations on drawable objects.
 
@@ -34,11 +34,7 @@ To use AGL from the Carbon framework, your application must link to both the AGL
 - [Renderer Properties](renderer-properties.md)
   Specify constants that you can use to query renderer properties.
 
-## See Also
-
-- [AGL Constants](agl-constants.md)
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AGL/agl-collection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/agl/agl-collection)*

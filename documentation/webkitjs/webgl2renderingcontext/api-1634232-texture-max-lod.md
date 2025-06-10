@@ -1,6 +1,6 @@
 # TEXTURE_MAX_LOD
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # XCXcodeKitVersionNumber
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: var
 
 The current version of XcodeKit.

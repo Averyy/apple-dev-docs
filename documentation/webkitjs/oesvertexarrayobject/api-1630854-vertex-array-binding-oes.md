@@ -1,6 +1,6 @@
 # VERTEX_ARRAY_BINDING_OES
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

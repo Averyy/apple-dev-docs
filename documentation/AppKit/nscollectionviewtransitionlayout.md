@@ -1,6 +1,6 @@
 # NSCollectionViewTransitionLayout
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An object that implements custom behaviors when changing from one layout to another in a collection view.
@@ -53,6 +53,7 @@ Transition layout objects are commonly used to implement interactive transitions
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -80,4 +81,4 @@ Transition layout objects are commonly used to implement interactive transitions
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nscollectionviewtransitionlayout)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nscollectionviewtransitionlayout)*

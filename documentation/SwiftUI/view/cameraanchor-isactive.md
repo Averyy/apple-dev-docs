@@ -41,8 +41,6 @@ struct ExampleSelfPreviewWhenFocusedView: View {
 
 > ❗ **Important**:  You should avoid creating multiple views with simultaneously active camera anchors. If multiple views with active camera anchors are found, the first created will have its parent View be used as the camera anchor, and a runtime error will be emitted.
 
- You should avoid creating multiple views with simultaneously active camera anchors. If multiple views with active camera anchors are found, the first created will have its parent View be used as the camera anchor, and a runtime error will be emitted.
-
 ## Parameters
 
 - `isActive`: You can use this value to ensure that only one camera anchor is active at a time   if you want to create multiple views that could act as the anchor in your app.

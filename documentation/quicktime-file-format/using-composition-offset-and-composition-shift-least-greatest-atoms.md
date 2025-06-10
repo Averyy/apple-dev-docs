@@ -1,6 +1,6 @@
 # Using composition offset and composition shift least greatest atoms
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Calculate the offset shift when you store an out of order video stream’s sample table.
 

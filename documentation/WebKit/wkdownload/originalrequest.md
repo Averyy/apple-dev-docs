@@ -1,6 +1,6 @@
 # originalRequest
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An object that represents the request that initiated the download.

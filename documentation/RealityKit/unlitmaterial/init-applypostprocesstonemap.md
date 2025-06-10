@@ -8,6 +8,7 @@
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS ?+
 - visionOS 1.0+
 
 ## Declaration
@@ -26,8 +27,8 @@ init(applyPostProcessToneMap: Bool)
   Creates an unlit material with the given base color.
 - [init(color: NSColor, applyPostProcessToneMap: Bool)](unlitmaterial/init(color:applypostprocesstonemap:)-2cszc.md)
 - [init(color: UIColor, applyPostProcessToneMap: Bool)](unlitmaterial/init(color:applypostprocesstonemap:)-9pbcy.md)
-- [init(program: UnlitMaterial.Program)](unlitmaterial/init(program:).md)
-- [init(texture: TextureResource)](unlitmaterial/init(texture:).md)
+- [init(program:)](unlitmaterial/init(program:).md)
+- [init(texture:)](unlitmaterial/init(texture:).md)
   Creates a new unlit material with the provided color texture.
 
 

@@ -1,6 +1,6 @@
 # MIN_PROGRAM_TEXEL_OFFSET
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

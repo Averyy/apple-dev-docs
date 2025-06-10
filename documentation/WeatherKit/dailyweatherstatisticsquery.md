@@ -1,6 +1,6 @@
 # DailyWeatherStatisticsQuery
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure that encapsulates a generic daily weather statistics dataset request.
@@ -17,7 +17,7 @@ A structure that encapsulates a generic daily weather statistics dataset request
 ## Declaration
 
 ```swift
-struct DailyWeatherStatisticsQuery<T> where T : Decodable, T : Encodable, T : Equatable
+struct DailyWeatherStatisticsQuery<T> where T : Decodable, T : Encodable, T : Equatable, T : Sendable
 ```
 
 #### Overview
@@ -37,6 +37,12 @@ let (dailyPrecipitationStatistics, dailyTemperatureStatistics) = try await servi
   The daily precipitation statistics query.
 - [static var temperature: DailyWeatherStatisticsQuery<DayTemperatureStatistics>](dailyweatherstatisticsquery/temperature.md)
   The daily temperature statistics query.
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

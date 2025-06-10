@@ -1,6 +1,6 @@
 # sun
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The solar events for the day.

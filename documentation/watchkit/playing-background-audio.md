@@ -1,6 +1,6 @@
 # Playing Background Audio
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Enable background audio in your app to provide a seamless playback experience.
 

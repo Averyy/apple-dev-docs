@@ -43,6 +43,7 @@ Use [`DispatchTimeInterval`](dispatchtimeinterval.md) values to specify the inte
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

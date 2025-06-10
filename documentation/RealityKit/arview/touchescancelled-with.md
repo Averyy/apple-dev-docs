@@ -9,6 +9,7 @@ Tells the view when a system event (such as a system alert) cancels a touch sequ
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

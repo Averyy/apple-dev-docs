@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: init
 
 Initializes and returns the interface controller using the specified remote notification data.

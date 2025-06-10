@@ -1,6 +1,6 @@
 # UISheetPresentationController
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A presentation controller that manages the appearance and behavior of a sheet.
@@ -93,6 +93,7 @@ Sheet presentation controllers specify a sheet’s size based on a , a height wh
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)
 - [UIFocusEnvironment](uifocusenvironment.md)

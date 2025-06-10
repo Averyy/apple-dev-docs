@@ -1,6 +1,6 @@
 # setNeedsDisplay(_:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Marks the specified rectangle of the receiver as needing to be redrawn.

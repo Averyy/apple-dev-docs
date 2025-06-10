@@ -1,6 +1,6 @@
 # errorDomain
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 **Availability**:

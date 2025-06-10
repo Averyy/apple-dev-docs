@@ -10,6 +10,7 @@ Performs a convex shape cast against all the geometry in the scene.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -44,9 +45,9 @@ For objects that intersect the convex shape at its starting position and orienta
   Performs a ray cast against all the geometry in the scene for a ray of a given origin, direction, and length.
 - [func raycast(from: SIMD3<Float>, to: SIMD3<Float>, query: CollisionCastQueryType, mask: CollisionGroup, relativeTo: Entity?) -> [CollisionCastHit]](scene/raycast(from:to:query:mask:relativeto:).md)
   Performs a ray cast against all the geometry in the scene for a ray between two end points.
-- [func pixelCast(from: SIMD3<Float>, to: SIMD3<Float>) async throws -> PixelCastHit?](scene/pixelcast(from:to:).md)
+- [func pixelCast(from:to:)](scene/pixelcast(from:to:).md)
   Performs a ray cast against all the geometry in the scene for a ray between two end points.
-- [func pixelCast(origin: SIMD3<Float>, direction: SIMD3<Float>, length: Float) async throws -> PixelCastHit?](scene/pixelcast(origin:direction:length:).md)
+- [func pixelCast(origin:direction:length:)](scene/pixelcast(origin:direction:length:).md)
   Performs a ray cast against all the geometry in the scene for a ray of a given origin, direction, and length.
 
 

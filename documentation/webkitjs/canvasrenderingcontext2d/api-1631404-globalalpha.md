@@ -1,6 +1,6 @@
 # globalAlpha
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A floating-point number controlling the degree of opacity for all drawing operations.

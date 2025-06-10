@@ -1,6 +1,6 @@
 # Identifying unique locations with Place IDs
 
-**Framework**: Mapkit
+**Framework**: MapKit
 
 Obtain information about a point of interest that persists over its lifetime.
 
@@ -57,4 +57,4 @@ To maintain performance, use these steps to perform de-duplication on a periodic
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MapKit/identifying-unique-locations-with-place-ids)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkit/identifying-unique-locations-with-place-ids)*

@@ -11,6 +11,7 @@
 ## Declaration
 
 ```swift
+@MainActor
 func select(_ newTemplate: CPTemplate)
 ```
 

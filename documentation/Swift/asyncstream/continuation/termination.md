@@ -51,6 +51,7 @@ The `onTermination` closure receives an instance of this type.
 - [Equatable](equatable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # WKUserScriptInjectionTime.atDocumentEnd
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A constant to inject the script after the document finishes loading, but before loading any other subresources.

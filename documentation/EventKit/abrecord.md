@@ -6,6 +6,9 @@
 A reference to an ABRecord object or any of its derivedopaque types.
 
 **Availability**:
+- iOS 2.0+
+- iPadOS 2.0+
+- Mac Catalyst 13.1+
 - visionOS 1.0+
 - watchOS 2.0+
 

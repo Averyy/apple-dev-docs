@@ -42,6 +42,8 @@ NavigationStack {
   The label style to apply to controls within a toolbar.
 - [struct ToolbarLabelStyle](toolbarlabelstyle.md)
   The label style of a toolbar.
+- [struct SpacerSizing](spacersizing.md)
+  A type which defines how spacers should size themselves.
 
 
 ---

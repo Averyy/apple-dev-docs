@@ -6,6 +6,7 @@
 The default immersion style.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -18,7 +19,7 @@ static var automatic: AutomaticImmersionStyle { get }
 
 The system uses this style for an [`ImmersiveSpace`](immersivespace.md) if you don’t provide an [`immersionStyle(selection:in:)`](scene/immersionstyle(selection:in:).md) scene modifier. You don’t typically specify the `automatic` style explicitly.
 
-By default, the system uses the [`mixed`](immersionstyle/mixed.md) immersion style as the `automatic` style.
+By default, on visionOS, the system uses the [`mixed`](immersionstyle/mixed.md) immersion style as the `automatic` style and for macOS the [`full`](immersionstyle/full.md) immersion style as the `automatic` style.
 
 ## See Also
 

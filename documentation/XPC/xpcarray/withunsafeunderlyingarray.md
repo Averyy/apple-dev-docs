@@ -1,6 +1,6 @@
 # withUnsafeUnderlyingArray(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Calls a closure with an unsafe reference to the array.

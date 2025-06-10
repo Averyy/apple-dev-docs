@@ -1,6 +1,6 @@
 # SKStoreProductViewController
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: class
 
 A view controller that provides a page where customers can purchase media from the App Store.
@@ -86,6 +86,7 @@ This class throws the following runtime exceptions:
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)
@@ -107,4 +108,4 @@ This class throws the following runtime exceptions:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/skstoreproductviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/skstoreproductviewcontroller)*

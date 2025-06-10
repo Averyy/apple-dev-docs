@@ -65,8 +65,6 @@ request.regionOfInterest = CGRect(x: 0, y: 0, width: 0.5, height: 1.0)
 
 > 💡 **Tip**:  The minimum and maximum object sizes aren’t pixel accurate, but instead provide general guidelines to the algorithm. Setting a size that’s slightly smaller than your target [`minimumObjectSize`](vndetecttrajectoriesrequest/minimumobjectsize.md), and slightly larger than your [`maximumObjectSize`](vndetecttrajectoriesrequest/maximumobjectsize.md) may produce better results.
 
- The minimum and maximum object sizes aren’t pixel accurate, but instead provide general guidelines to the algorithm. Setting a size that’s slightly smaller than your target [`minimumObjectSize`](vndetecttrajectoriesrequest/minimumobjectsize.md), and slightly larger than your [`maximumObjectSize`](vndetecttrajectoriesrequest/maximumobjectsize.md) may produce better results.
-
 ##### Process the Results
 
 After the handler performs the request, it calls the request’s completion closure, passing it the request and any errors that occurred. Retrieve the observations by querying the request object for its results, which it returns as an array of [`VNTrajectoryObservation`](vntrajectoryobservation.md) objects.
@@ -87,7 +85,7 @@ Because the request builds evidence over time before it produces trajectory obse
 
 The key pieces of data that a [`VNTrajectoryObservation`](vntrajectoryobservation.md) provides are the  and  points the object travels on the parabolic path. The detected points follow the centroids of the object in motion, which may not follow the parabolic path exactly, whereas the projected points represent the path precisely. You can retrieve the equation coefficients for the quadratic equation, f(x) = ax2 + bx + c, from the observation, which it provides as a [`simd_float3`](https://developer.apple.com/documentation/simd/simd_float3) value.
 
-Each trajectory provides a [`uuid`](https://developer.apple.com/documentation/foundation/uuid/1779678-uuid) value that you can use to track it over time, which is useful when performing ongoing calculations on the data or drawing visualizations of it. For an example of how you can visualize trajectory data, see the [`Building a feature-rich app for sports analysis`](building-a-feature-rich-app-for-sports-analysis.md) sample app.
+Each trajectory provides a [`uuid`](https://developer.apple.com/documentation/Foundation/UUID/uuid) value that you can use to track it over time, which is useful when performing ongoing calculations on the data or drawing visualizations of it. For an example of how you can visualize trajectory data, see the [`Building a feature-rich app for sports analysis`](building-a-feature-rich-app-for-sports-analysis.md) sample app.
 
 ##### Apply Your Business Logic
 

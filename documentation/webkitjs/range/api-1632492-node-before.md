@@ -1,6 +1,6 @@
 # NODE_BEFORE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

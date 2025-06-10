@@ -1,6 +1,6 @@
 # WCError.Code.messageReplyTimedOut
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: case
 
 An error that occurs when the counterpart app doesn’t return a reply in time.

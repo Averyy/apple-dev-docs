@@ -1,6 +1,6 @@
 # rawValue
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: property
 
 The authorization status’s raw value.

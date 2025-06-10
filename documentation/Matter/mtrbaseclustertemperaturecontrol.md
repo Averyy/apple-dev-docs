@@ -41,9 +41,9 @@ Attributes and commands for configuring the temperature control, and reporting t
 - [func readAttributeStep(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustertemperaturecontrol/readattributestep(completion:).md)
 - [func readAttributeSupportedTemperatureLevels(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustertemperaturecontrol/readattributesupportedtemperaturelevels(completion:).md)
 - [func readAttributeTemperatureSetpoint(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustertemperaturecontrol/readattributetemperaturesetpoint(completion:).md)
-- [func setTemperatureWith(MTRTemperatureControlClusterSetTemperatureParams?, completion: MTRStatusCompletion)](mtrbaseclustertemperaturecontrol/settemperaturewith(_:completion:).md)
+- [func setTemperatureWith(MTRTemperatureControlClusterSetTemperatureParams?, completion: ((any Error)?) -> Void)](mtrbaseclustertemperaturecontrol/settemperaturewith(_:completion:).md)
   Command SetTemperature
-- [func setTemperatureWithCompletion(MTRStatusCompletion)](mtrbaseclustertemperaturecontrol/settemperaturewithcompletion(_:).md)
+- [func setTemperatureWithCompletion(((any Error)?) -> Void)](mtrbaseclustertemperaturecontrol/settemperaturewithcompletion(_:).md)
 - [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustertemperaturecontrol/subscribeattributeacceptedcommandlist(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustertemperaturecontrol/subscribeattributeattributelist(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeClusterRevision(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustertemperaturecontrol/subscribeattributeclusterrevision(with:subscriptionestablished:reporthandler:).md)

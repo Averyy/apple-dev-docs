@@ -20,6 +20,13 @@ The key derivation function (KDF) for deriving the symmetric key.
 let kdf: HPKE.KDF
 ```
 
+## See Also
+
+- [let aead: HPKE.AEAD](hpke/ciphersuite/aead.md)
+  The authenticated encryption with additional data (AEAD) algorithm for encrypting and decrypting messages.
+- [let kem: HPKE.KEM](hpke/ciphersuite/kem.md)
+  The key encapsulation mechanism (KEM) for encapsulating the symmetric key.
+
 
 ---
 

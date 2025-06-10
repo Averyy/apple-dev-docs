@@ -28,7 +28,7 @@ Set the value of this property at initialization time. When you configure a quer
 - [`firesOnRecordUpdate`](ckquerysubscription/options/firesonrecordupdate.md)
 - [`firesOnRecordDeletion`](ckquerysubscription/options/firesonrecorddeletion.md)
 
-If you don’t set an option, the system throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception).
+If you don’t set an option, the system throws an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException).
 
 ## See Also
 

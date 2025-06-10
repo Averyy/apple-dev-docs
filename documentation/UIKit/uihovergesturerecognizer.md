@@ -1,6 +1,6 @@
 # UIHoverGestureRecognizer
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A continuous gesture recognizer that interprets pointer movement over a view.
@@ -82,6 +82,7 @@ class ViewController: UIViewController {
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -95,4 +96,4 @@ class ViewController: UIViewController {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uihovergesturerecognizer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uihovergesturerecognizer)*

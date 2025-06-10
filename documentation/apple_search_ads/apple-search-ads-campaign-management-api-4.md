@@ -38,8 +38,6 @@ Updates to the [`ProductPageReason`](productpagereason.md) object:
 
 > ❗ **Important**:  With the 4.9 release, all previously rejected Today tab ad creatives were `PAUSED` and resubmitted for re-review. The status was updated to `ENABLED` after the re-review. For more information about updating an ad status, see [`Update an Ad`](update-an-ad.md).
 
- With the 4.9 release, all previously rejected Today tab ad creatives were `PAUSED` and resubmitted for re-review. The status was updated to `ENABLED` after the re-review. For more information about updating an ad status, see [`Update an Ad`](update-an-ad.md).
-
 ##### 48
 
 Released in April, 2023.

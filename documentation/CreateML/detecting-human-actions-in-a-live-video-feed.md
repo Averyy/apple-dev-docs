@@ -1,6 +1,6 @@
 # Detecting Human Actions in a Live Video Feed
 
-**Framework**: Createml
+**Framework**: Create ML
 
 Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
 

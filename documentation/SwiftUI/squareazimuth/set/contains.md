@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Returns a Boolean value that indicates whether the set contains the specified SquareAzimuth.
+Returns a Boolean value that indicates whether the set contains the specified [`SquareAzimuth`](squareazimuth.md).
 
 **Availability**:
 - visionOS 2.0+

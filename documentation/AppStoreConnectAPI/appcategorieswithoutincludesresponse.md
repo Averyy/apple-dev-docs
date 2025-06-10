@@ -21,6 +21,12 @@ object AppCategoriesWithoutIncludesResponse
 - [object AppCategoryResponse](appcategoryresponse.md)
   A response that contains a single App Categories resource.
 - [object AppCategoryWithoutIncludesResponse](appcategorywithoutincludesresponse.md)
+- [object AppInfoPrimaryCategoryLinkageResponse](appinfoprimarycategorylinkageresponse.md)
+- [object AppInfoPrimarySubcategoryOneLinkageResponse](appinfoprimarysubcategoryonelinkageresponse.md)
+- [object AppInfoPrimarySubcategoryTwoLinkageResponse](appinfoprimarysubcategorytwolinkageresponse.md)
+- [object AppInfoSecondaryCategoryLinkageResponse](appinfosecondarycategorylinkageresponse.md)
+- [object AppInfoSecondarySubcategoryOneLinkageResponse](appinfosecondarysubcategoryonelinkageresponse.md)
+- [object AppInfoSecondarySubcategoryTwoLinkageResponse](appinfosecondarysubcategorytwolinkageresponse.md)
 
 
 ---

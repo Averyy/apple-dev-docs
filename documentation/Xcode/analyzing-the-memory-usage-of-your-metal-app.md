@@ -86,4 +86,4 @@ The corresponding columns are also available in the Summary view of the bottom d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/analyzing-the-memory-usage-of-your-metal-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/analyzing-the-memory-usage-of-your-metal-app)*

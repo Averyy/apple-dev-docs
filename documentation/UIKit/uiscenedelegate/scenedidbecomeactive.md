@@ -1,6 +1,6 @@
 # sceneDidBecomeActive(_:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Tells the delegate that the scene became active and is now responding to user events.

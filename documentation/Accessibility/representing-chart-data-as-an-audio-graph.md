@@ -40,7 +40,7 @@ let series = AXDataSeriesDescriptor(name: "Cars",
                               dataPoints: dataPoints)
 ```
 
-Next, set up descriptors for the chart’s axes. For numeric axes, use the [`valueDescriptionProvider`](axnumericdataaxisdescriptor/valuedescriptionprovider.md) closure to format the data values into string representations that include the units. Consider using a formatter, like [`NSNumberFormatter`](https://developer.apple.com/documentation/foundation/nsnumberformatter) or [`NSDateFormatter`](https://developer.apple.com/documentation/foundation/nsdateformatter), to generate strings that have more complex formats.
+Next, set up descriptors for the chart’s axes. For numeric axes, use the [`valueDescriptionProvider`](axnumericdataaxisdescriptor/valuedescriptionprovider.md) closure to format the data values into string representations that include the units. Consider using a formatter, like [`NumberFormatter`](https://developer.apple.com/documentation/Foundation/NumberFormatter) or [`DateFormatter`](https://developer.apple.com/documentation/Foundation/DateFormatter), to generate strings that have more complex formats.
 
 ```swift
 // Make the axis descriptors.

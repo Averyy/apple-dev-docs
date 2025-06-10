@@ -1,6 +1,6 @@
 # Managing Content Ratings, Alternate Versions, and Equivalencies
 
-**Framework**: Applemusicapi
+**Framework**: Apple Music API
 
 Handle multiple and alternate versions of content.
 
@@ -52,4 +52,4 @@ GET https://api.music.apple.com/v1/catalog/us/albums?filter[equivalents]=1540031
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleMusicAPI/managing-content-ratings-alternate-versions-and-equivalencies)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applemusicapi/managing-content-ratings-alternate-versions-and-equivalencies)*

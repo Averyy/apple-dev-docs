@@ -36,8 +36,6 @@ For backward compatibility on Mach, `- [NSPort allocWithZone:]` returns an insta
 
 > ❗ **Important**:  [`Port`](port.md) conforms to the [`NSCoding`](nscoding.md) protocol, but only supports coding by an [`NSPortCoder`](nsportcoder.md). [`Port`](port.md) and its subclasses do not support archiving.
 
- [`Port`](port.md) conforms to the [`NSCoding`](nscoding.md) protocol, but only supports coding by an [`NSPortCoder`](nsportcoder.md). [`Port`](port.md) and its subclasses do not support archiving.
-
 ## Topics
 
 ### Validation
@@ -68,6 +66,8 @@ For backward compatibility on Mach, `- [NSPort allocWithZone:]` returns an insta
 ### Data Types
 - [typealias SocketNativeHandle](socketnativehandle.md)
   Type for the platform-specific native socket handle.
+### Structures
+- [struct DidBecomeInvalidMessage](port/didbecomeinvalidmessage.md)
 
 ## Relationships
 

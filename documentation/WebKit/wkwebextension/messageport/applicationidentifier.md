@@ -1,6 +1,6 @@
 # applicationIdentifier
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The unique identifier for the app to which this port should be connected.

@@ -30,8 +30,6 @@ When your app calls [`presentNoticeSheet()`](externalpurchase/presentnoticesheet
 
 > ❗ **Important**:  Record and use the token to report the customer’s external purchases to Apple. For more information, see [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
 
- Record and use the token to report the customer’s external purchases to Apple. For more information, see [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
-
 ``
 
 ## Parameters

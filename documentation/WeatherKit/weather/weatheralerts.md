@@ -1,6 +1,6 @@
 # weatherAlerts
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A list of severe weather alerts.

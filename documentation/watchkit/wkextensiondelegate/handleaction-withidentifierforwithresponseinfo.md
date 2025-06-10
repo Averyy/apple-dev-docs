@@ -1,6 +1,6 @@
 # handleAction(withIdentifier:for:withResponseInfo:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Delivers a local notification payload and user response information to the app.

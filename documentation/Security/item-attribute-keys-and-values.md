@@ -274,4 +274,4 @@ You specify attributes as the keys and values of a dictionary. The available att
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/item-attribute-keys-and-values)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/item-attribute-keys-and-values)*

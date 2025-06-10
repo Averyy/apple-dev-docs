@@ -3,7 +3,7 @@
 **Framework**: TabletopKit  
 **Kind**: struct
 
-A visual indicator that represents the destination of player interactions with equipment.
+A cursor conveys information about one equipment that is currently being controlled by an interaction.
 
 **Availability**:
 - visionOS 2.0+
@@ -18,24 +18,25 @@ struct TableCursor
 
 ### Getting the associated interaction
 - [var interactionID: TabletopInteraction.Identifier](tablecursor/interactionid.md)
-  The interaction id for the cursor.
+  The identifier of the interaction manipulating the equipment corresponding to this cursor.
 ### Getting the player performing the interaction
 - [var playerID: PlayerIdentifier](tablecursor/playerid.md)
-  The player that the cursor represents.
+  The player that owns the interaction.
 ### Getting information about the equipment in the interaction
 - [let controlledEquipmentPose: EquipmentPose3D](tablecursor/controlledequipmentpose.md)
-  Pose relative to the the table
+  The identifier of the equipment and the pose of the equipment in table space.
 - [var hovering: TabletopInteraction.Destination?](tablecursor/hovering.md)
-  The cursor’s current position, relative to the table or a piece of equipment.
+  The current destination for the equipment, if the interaction were to end now. `nil` if no destination is currently available.
 ### Getting the cursor identifier
 - [var id: TableCursor.ID](tablecursor/id.md)
-  The interaction identifier for the cursor.
+  The identifier of the cursor.
 
 ## Relationships
 
 ### Conforms To
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # add(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Adds the specified content rule list to the content controller object.

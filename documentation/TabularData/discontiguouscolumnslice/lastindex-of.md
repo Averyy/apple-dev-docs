@@ -1,6 +1,6 @@
 # lastIndex(of:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns the last index where the specified value appears in the collection.

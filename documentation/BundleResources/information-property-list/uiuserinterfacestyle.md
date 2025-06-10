@@ -12,6 +12,8 @@ The user interface style for the app.
 
 ## See Also
 
+- [UIDesignRequiresCompatibility](information-property-list/uidesignrequirescompatibility.md)
+  A Boolean value that indicates whether the system runs the app using a compatibility mode for UI.
 - [UIViewEdgeAntialiasing](information-property-list/uiviewedgeantialiasing.md)
   A Boolean value that indicates whether Core Animation layers use antialiasing when drawing a layer that isn’t aligned to pixel boundaries.
 - [UIWhitePointAdaptivityStyle](information-property-list/uiwhitepointadaptivitystyle.md)

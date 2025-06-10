@@ -10,6 +10,7 @@ Display the depth-colored wireframe for scene-understanding meshes.
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

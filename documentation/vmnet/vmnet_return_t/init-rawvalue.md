@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: init
 
 **Availability**:

@@ -25,8 +25,6 @@ A type that produces view previews in Xcode.
 
 > ❗ **Important**: You can use this protocol to define a preview manually, but you typically use a preview macro like [`Preview(_:body:)`](preview(_:body:).md) instead.
 
-You can use this protocol to define a preview manually, but you typically use a preview macro like [`Preview(_:body:)`](preview(_:body:).md) instead.
-
 You can create an Xcode preview by declaring a structure that conforms to the `PreviewProvider` protocol. Implement the required [`previews`](previewprovider/previews-swift.type.property.md) computed property, and return the view to display:
 
 ```swift

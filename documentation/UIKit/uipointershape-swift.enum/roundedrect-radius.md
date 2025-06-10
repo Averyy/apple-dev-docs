@@ -1,6 +1,6 @@
 # UIPointerShape.roundedRect(_:radius:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: case
 
 The pointer morphs into a rounded rectangle using the provided corner radius.

@@ -1,6 +1,6 @@
 # contextMenu(menuItems:)
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Adds a context menu to a view.

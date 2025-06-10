@@ -36,13 +36,13 @@ final class PDFDocument: ReferenceFileDocument {
     }
 
     static let readableContentTypes: [UTType] = [.pdf]
-    let storage: OSAllocatedUnfairLock<Storage>
+    let storage: Mutex<Storage>
 
     required init(configuration: ReadConfiguration) throws {
        guard let data = configuration.file.regularFileContents else {
            throw CocoaError(.fileReadCorruptFile)
        }
-        self.storage = .init(initialState: .init(contents: data))
+        self.storage = .init(.init(contents: data))
     }
 
     func snapshot(contentType: UTType) throws -> Data {
@@ -56,8 +56,6 @@ final class PDFDocument: ReferenceFileDocument {
 ```
 
 > ❗ **Important**: If you store your document as a value type — like a structure — use [`FileDocument`](filedocument.md) instead.
-
-If you store your document as a value type — like a structure — use [`FileDocument`](filedocument.md) instead.
 
 ## Topics
 
@@ -86,6 +84,7 @@ If you store your document as a value type — like a structure — use [`FileDo
 ### Inherits From
 - [ObservableObject](../Combine/ObservableObject.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

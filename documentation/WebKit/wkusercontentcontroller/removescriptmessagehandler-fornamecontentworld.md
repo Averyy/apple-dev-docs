@@ -1,6 +1,6 @@
 # removeScriptMessageHandler(forName:contentWorld:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Uninstalls a custom message handler from the specified content world in your JavaScript code.

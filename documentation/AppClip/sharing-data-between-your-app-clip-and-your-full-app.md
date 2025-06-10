@@ -27,9 +27,7 @@ To read your app’s public iCloud database, add the iCloud capability to your A
 
 > ❗ **Important**:  Your App Clip can’t write data to the public database. It can’t use iCloud Documents, iCloud key-value storage, or private and shared containers.
 
- Your App Clip can’t write data to the public database. It can’t use iCloud Documents, iCloud key-value storage, or private and shared containers.
-
-For more information on iCloud and public databases, see [`Build Apps Using CloudKit`](https://developer.apple.comhttps://developer.apple.com/icloud/cloudkit/) and [`Designing apps using CloudKit`](https://developer.apple.comhttps://developer.apple.com/icloud/cloudkit/designing/).
+For more information on iCloud and public databases, refer to [`Build Apps Using CloudKit`](https://developer.apple.comhttps://developer.apple.com/icloud/cloudkit/) and [`Designing apps using CloudKit`](https://developer.apple.comhttps://developer.apple.com/icloud/cloudkit/designing/).
 
 ##### Make Local App Clip Data Available to the Full App
 
@@ -37,10 +35,12 @@ Your App Clip can make its local data accessible to your corresponding full app 
 
 To store local data in a shared container:
 
-1. Add the App Groups capability to the targets of both the App Clip and the full app. For more information about configuring App Groups, see [`Configuring app groups`](https://developer.apple.com/documentation/Xcode/configuring-app-groups).
+1. Add the App Groups capability to the targets of both the App Clip and the full app. For more information about configuring App Groups, refer to [`Configuring app groups`](https://developer.apple.com/documentation/Xcode/configuring-app-groups).
 2. For both targets, add the same app group to the capability; for example, `group.exampleApp.appClipMigration`.
-3. Add code to your App Clip target that obtains the URL of the shared container using [`containerURL(forSecurityApplicationGroupIdentifier:)`](https://developer.apple.com/documentation/foundation/filemanager/1412643-containerurl) and store data using this URL; for example, by using [`write(to:atomically:encoding:)`](https://developer.apple.com/documentation/foundation/nsstring/1417341-write).
-4. In your full app’s code, use the same function to obtain the URL of the shared container and access its content; for example, by using [`init(contentsOf:encoding:)`](https://developer.apple.com/documentation/foundation/nsstring/1414463-init).
+3. Add code to your App Clip target that obtains the URL of the shared container using [`containerURL(forSecurityApplicationGroupIdentifier:)`](https://developer.apple.com/documentation/Foundation/FileManager/containerURL(forSecurityApplicationGroupIdentifier:)) and store data using this URL; for example, by using [`write(to:atomically:encoding:)`](https://developer.apple.com/documentation/Foundation/NSString/write(to:atomically:encoding:)).
+4. In your full app’s code, use the same function to obtain the URL of the shared container and access its content; for example, by using [`init(contentsOfURL:encoding:)`](https://developer.apple.com/documentation/Foundation/NSString/init(contentsOfURL:encoding:)-715fw).
+
+> 💡 **Tip**: App Clips support [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets). Make sure to add support for background assets to your app and your App Clip. Background Assets use app groups, and assets your App Clip downloads become available to your full app.
 
 In addition to a shared container, the App Clip can also store information in a shared [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) instance that’s accessible to the full app. The following code uses the configured app group to create the shared `UserDefaults` instance and store a string:
 
@@ -109,7 +109,7 @@ SecItemCopyMatching(readSecretsQuery as CFDictionary, &secretsCopy)
 
 ```
 
-For more information on using the keychain to store sensitive information, see [`Using the keychain to manage user secrets`](https://developer.apple.com/documentation/Security/using-the-keychain-to-manage-user-secrets) and [`Keychain services`](https://developer.apple.com/documentation/Security/keychain-services).
+For more information on using the keychain to store sensitive information, refer to [`Using the keychain to manage user secrets`](https://developer.apple.com/documentation/Security/using-the-keychain-to-manage-user-secrets) and [`Keychain services`](https://developer.apple.com/documentation/Security/keychain-services).
 
 ##### Offer Sign in with Apple
 

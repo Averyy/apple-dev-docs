@@ -1,6 +1,6 @@
 # toggleStyle(_:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Sets the style for toggles in a view hierarchy.

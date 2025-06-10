@@ -41,6 +41,7 @@ struct SIMD32Storage
 - [BitwiseCopyable](bitwisecopyable.md)
 - [SIMDStorage](simdstorage.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 
 ---

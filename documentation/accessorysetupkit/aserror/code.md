@@ -17,8 +17,6 @@ enum Code
 
 ## Topics
 
-### Creating an error code
-- [init?(rawValue: Int)](aserror/code/init(rawvalue:).md)
 ### Activation errors
 - [ASError.Code.activationFailed](aserror/code/activationfailed.md)
   Session activation failed.
@@ -56,6 +54,8 @@ enum Code
   The domain of the error.
 - [let ASErrorDomain: String](aserrordomain.md)
   NSError domain for AccessorySetupKit errors.
+### Working with raw values
+- [init?(rawValue: Int)](aserror/code/init(rawvalue:).md)
 ### Default Implementations
 - [Equatable Implementations](aserror/code/equatable-implementations.md)
 - [RawRepresentable Implementations](aserror/code/rawrepresentable-implementations.md)
@@ -68,6 +68,7 @@ enum Code
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

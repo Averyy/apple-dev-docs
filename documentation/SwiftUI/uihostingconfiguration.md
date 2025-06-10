@@ -99,6 +99,8 @@ cell.contentConfiguration = UIHostingConfiguration {
   A UIKit view controller that manages a SwiftUI view hierarchy.
 - [struct UIHostingControllerSizingOptions](uihostingcontrollersizingoptions.md)
   Options for how a hosting controller tracks its content’s size.
+- [protocol UIHostingSceneDelegate](uihostingscenedelegate.md)
+  Extends `UIKit/UISceneDelegate` to bridge SwiftUI scenes.
 
 
 ---

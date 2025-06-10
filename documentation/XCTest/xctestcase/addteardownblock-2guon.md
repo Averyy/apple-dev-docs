@@ -1,6 +1,6 @@
 # addTeardownBlock(_:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Registers a block of teardown code to run after the current test method ends.

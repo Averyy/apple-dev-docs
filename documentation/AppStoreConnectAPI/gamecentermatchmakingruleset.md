@@ -34,6 +34,9 @@ object GameCenterMatchmakingRuleSet
   The response body for endpoints that get multiple rule sets.
 - [object GameCenterMatchmakingRulesResponse](gamecentermatchmakingrulesresponse.md)
   The response body for endpoints that get multiple rules.
+- [object GameCenterMatchmakingRuleSetMatchmakingQueuesLinkagesResponse](gamecentermatchmakingrulesetmatchmakingqueueslinkagesresponse.md)
+- [object GameCenterMatchmakingRuleSetRulesLinkagesResponse](gamecentermatchmakingrulesetruleslinkagesresponse.md)
+- [object GameCenterMatchmakingRuleSetTeamsLinkagesResponse](gamecentermatchmakingrulesetteamslinkagesresponse.md)
 
 
 ---

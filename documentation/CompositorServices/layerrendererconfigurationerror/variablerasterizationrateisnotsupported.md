@@ -6,6 +6,7 @@
 An error that indicates foveation is enabled but not supported.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

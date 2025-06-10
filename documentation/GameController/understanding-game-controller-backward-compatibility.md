@@ -24,8 +24,6 @@ When your app uses the APIs in `IOHIDManager.h` or `IOKitLib.h` to query the HID
 
 > ❗ **Important**:  Checking for the presence of the `GCSyntheticDevice` property is the only supported way to determine whether a HID device is a game controller synthetic HID device.
 
- Checking for the presence of the `GCSyntheticDevice` property is the only supported way to determine whether a HID device is a game controller synthetic HID device.
-
 The Game Controller framework defines the [`kIOHIDGCSyntheticDeviceKey`](kiohidgcsyntheticdevicekey.md) constant. If you can’t import the Game Controller framework into your code, you can specify the `“GCSyntheticDevice”` string directly.
 
 ```objc

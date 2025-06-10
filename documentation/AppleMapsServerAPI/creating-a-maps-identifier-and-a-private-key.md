@@ -42,8 +42,6 @@ After executing these steps, you have a private key that you can use to sign tok
 
 > ❗ **Important**:  The private key is a shared secret between you and Apple. To keep your private key secure, don’t put your private key in public facing client-side code, and don’t share the key.
 
- The private key is a shared secret between you and Apple. To keep your private key secure, don’t put your private key in public facing client-side code, and don’t share the key.
-
 The private key doesn’t expire, but you can revoke it. Revoking a key makes it invalid and affects calls to the MapKit JS API. If you lose a key or if someone else starts using your key, revoke it. See [`Revoke, edit, and download keys`](https://developer.apple.comhttps://help.apple.com/developer-account/#/dev3a82eef1c?sub=deve86584d6a) for more information.
 
 ## See Also

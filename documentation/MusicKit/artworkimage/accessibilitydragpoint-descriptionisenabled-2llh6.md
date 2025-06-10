@@ -1,6 +1,6 @@
 # accessibilityDragPoint(_:description:isEnabled:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 The point an assistive technology should use to begin a drag interaction.
@@ -41,7 +41,7 @@ By default, if an accessible view or its subtree has drag and/or drop interactio
 
 ## Parameters
 
-- `point`: The point the assitive technology will begin a drag   interaction.
+- `point`: The point the assistive technology will begin a drag   interaction.
 - `description`: The description of the drag interaction.
 - `isEnabled`: If true the accessibility drag point is applied;   otherwise the accessibility drag point is unchanged.
 

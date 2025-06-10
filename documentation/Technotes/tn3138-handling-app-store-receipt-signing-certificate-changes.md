@@ -105,4 +105,4 @@ If your app successfully verifies the receipt and you’ve confirmed that the ne
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3138-handling-app-store-receipt-signing-certificate-changes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3138-handling-app-store-receipt-signing-certificate-changes)*

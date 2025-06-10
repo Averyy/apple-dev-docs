@@ -1,6 +1,6 @@
 # prepare(for:)
 
-**Framework**: Testing  
+**Framework**: Swift Testing  
 **Kind**: method
 
 Prepare to run the test that has this trait.

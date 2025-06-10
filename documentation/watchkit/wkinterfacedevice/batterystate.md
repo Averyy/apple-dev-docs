@@ -1,6 +1,6 @@
 # batteryState
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The device’s battery state.

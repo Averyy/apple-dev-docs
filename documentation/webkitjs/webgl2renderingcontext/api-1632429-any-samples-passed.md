@@ -1,6 +1,6 @@
 # ANY_SAMPLES_PASSED
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

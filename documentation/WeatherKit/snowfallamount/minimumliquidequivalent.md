@@ -1,6 +1,6 @@
 # minimumLiquidEquivalent
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The minimum amount of snowfall as liquid equivalent for the period.

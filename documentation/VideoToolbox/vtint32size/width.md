@@ -1,6 +1,6 @@
 # width
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 The width of the size.

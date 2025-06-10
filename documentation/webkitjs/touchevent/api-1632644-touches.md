@@ -1,6 +1,6 @@
 # touches
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A collection of Touch objects representing all touches associated with this event.

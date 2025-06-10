@@ -1,6 +1,6 @@
 # Controlling a DockKit accessory using your camera app
 
-**Framework**: Dockkit
+**Framework**: DockKit
 
 Follow subjects in real time using an iPhone that you mount on a DockKit accessory.
 
@@ -307,4 +307,4 @@ func selectNextVideoDevice() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DockKit/controlling-a-dockkit-accessory-using-your-camera-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/dockkit/controlling-a-dockkit-accessory-using-your-camera-app)*

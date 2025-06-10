@@ -1,6 +1,6 @@
 # SCSIControllerDriverKit
 
-**Framework**: Scsicontrollerdriverkit  
+**Framework**: SCSIControllerDriverKit  
 **Kind**: module
 
 Develop drivers for SCSI protocol-based devices.

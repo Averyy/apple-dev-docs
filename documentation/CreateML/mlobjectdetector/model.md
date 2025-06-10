@@ -14,6 +14,10 @@ The object detector’s underlying Core ML model instance.
 var model: MLModel { get }
 ```
 
+#### Discussion
+
+> **Note**: This computed property exports and compiles a Core ML model. Prefer storing the result to using this property repeatedly.
+
 ## See Also
 
 - [let modelParameters: MLObjectDetector.ModelParameters](mlobjectdetector/modelparameters-swift.property.md)

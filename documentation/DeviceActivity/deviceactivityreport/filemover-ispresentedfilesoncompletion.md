@@ -1,6 +1,6 @@
 # fileMover(isPresented:files:onCompletion:)
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Presents a system interface for allowing the user to move a collection of existing files to a new location.

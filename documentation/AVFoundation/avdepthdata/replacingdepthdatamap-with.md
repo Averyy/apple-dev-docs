@@ -1,6 +1,6 @@
 # replacingDepthDataMap(with:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Returns a derivative depth data object by replacing the depth data map.

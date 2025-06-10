@@ -1,6 +1,6 @@
 # Testing and validating ad impression signatures and postbacks for SKAdNetwork
 
-**Framework**: Storekittest
+**Framework**: StoreKit Test
 
 Validate your ad impressions and test your postbacks by creating unit tests using the StoreKit Test framework.
 
@@ -140,4 +140,4 @@ testSession.flushPostbacks { responses, error in
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKitTest/testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekittest/testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork)*

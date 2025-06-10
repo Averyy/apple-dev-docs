@@ -1,6 +1,6 @@
 # Working with Interstitial Content
 
-**Framework**: Avkit
+**Framework**: AVKit
 
 Present additional content alongside your main media presentation using HTTP Live Streaming support.
 
@@ -46,7 +46,7 @@ When you define interstitial time ranges, [`AVPlayerViewController`](avplayervie
 
 ##### Enforce Linear Playback
 
-When you adopt the [`AVPlayerViewControllerDelegate`](avplayerviewcontrollerdelegate.md) protocol, the player can notify your app as it traverses interstitial time ranges, which is useful to help you enforce business rules. For instance, a common requirement when presenting advertisements is to prevent users from skipping past them. You can use the [`requiresLinearPlayback`](avplayerviewcontroller/requireslinearplayback.md) property of [`AVPlayerViewController`](avplayerviewcontroller.md) to control whether users can navigate through the content using the Siri Remote. During playback, this property is normally set to [`false`](https://developer.apple.com/documentation/swift/false), but when presenting an advertisement, you can set it to [`true`](https://developer.apple.com/documentation/swift/true) to prevent user navigation, as shown in the following example.
+When you adopt the [`AVPlayerViewControllerDelegate`](avplayerviewcontrollerdelegate.md) protocol, the player can notify your app as it traverses interstitial time ranges, which is useful to help you enforce business rules. For instance, a common requirement when presenting advertisements is to prevent users from skipping past them. You can use the [`requiresLinearPlayback`](avplayerviewcontroller/requireslinearplayback.md) property of [`AVPlayerViewController`](avplayerviewcontroller.md) to control whether users can navigate through the content using the Siri Remote. During playback, this property is normally set to `false`, but when presenting an advertisement, you can set it to `true` to prevent user navigation, as shown in the following example.
 
 ```swift
 public func playerViewController(_ playerViewController: AVPlayerViewController,
@@ -174,4 +174,4 @@ playerItem.interstitialTimeRanges = appInterstitials
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/working-with-interstitial-content)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/working-with-interstitial-content)*

@@ -17,7 +17,7 @@ optional func windowDidChangeBackingProperties(_ notification: Notification)
 
 #### Discussion
 
-You can retrieve the `NSWindow` object in question by sending [`object`](https://developer.apple.com/documentation/foundation/nsnotification/1414469-object) to `notification`.
+You can retrieve the `NSWindow` object in question by sending [`object`](https://developer.apple.com/documentation/Foundation/NSNotification/object) to `notification`.
 
 The notification `NSWindowDidChangeBackingPropertiesNotification` is posted in macOS 10.7.3 or later when a window’s backing scale factor or its color space changes. You should watch for this notification instead of `NSWindowDidChangeScreenProfileNotification` if your app runs on a system version on which the backing properties notification is available.
 

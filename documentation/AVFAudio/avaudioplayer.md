@@ -33,8 +33,6 @@ For more information about preparing your app to play audio, see [`Configuring y
 
 > ❗ **Important**:  For more advanced playback capabilities, like playing streaming or positional audio, use [`AVAudioEngine`](avaudioengine.md) instead.
 
- For more advanced playback capabilities, like playing streaming or positional audio, use [`AVAudioEngine`](avaudioengine.md) instead.
-
 ## Topics
 
 ### Creating an audio player
@@ -110,6 +108,9 @@ For more information about preparing your app to play audio, see [`Configuring y
   The unique identifier of the current audio player.
 - [var deviceCurrentTime: TimeInterval](avaudioplayer/devicecurrenttime.md)
   The time value, in seconds, of the audio output device’s clock.
+### Instance Properties
+- [var intendedSpatialExperience: any SpatialAudioExperience](avaudioplayer/intendedspatialexperience-27klj.md)
+  The AVAudioPlayer’s intended spatial experience.
 
 ## Relationships
 

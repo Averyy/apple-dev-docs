@@ -25,7 +25,7 @@ A Boolean value that indicates whether the insertion was successful.
 
 #### Discussion
 
-Use this method after appending samples or sample references to a track’s media. To specify that the media time range be played at its natural rate, pass `mediaTimeRange.duration == trackTimeRange.duration`; otherwise, the ratio between these is used to determine the playback rate. Pass [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid) for `trackTimeRange.start` to indicate that the segment should be appended to the end of the track.
+Use this method after appending samples or sample references to a track’s media. To specify that the media time range be played at its natural rate, pass `mediaTimeRange.duration == trackTimeRange.duration`; otherwise, the ratio between these is used to determine the playback rate. Pass [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid) for `trackTimeRange.start` to indicate that the segment should be appended to the end of the track.
 
 ## Parameters
 

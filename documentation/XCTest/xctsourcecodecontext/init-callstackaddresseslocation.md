@@ -1,6 +1,6 @@
 # init(callStackAddresses:location:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Initializes a new instance with an array of call stack addresses and a source code location.

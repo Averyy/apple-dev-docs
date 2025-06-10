@@ -1,6 +1,6 @@
 # WeatherCondition.breezy
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Breezy, light wind.

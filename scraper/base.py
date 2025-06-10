@@ -39,12 +39,12 @@ class BaseAppleScraper(ABC):
         self.framework_name = framework_name
         self.base_url = base_url or f"{Config.DOCUMENTATION_URL}/{framework_id}"
         
-        # Set up paths
-        self.output_dir = Config.get_framework_output_dir(framework_id)
+        # Set up paths - use framework_name for proper case in directory
+        self.output_dir = Config.get_framework_output_dir(framework_id, framework_name)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         
-        # Initialize components
-        self.hash_manager = HashManager(Config.get_hash_file(framework_id))
+        # Initialize components - use framework_name for proper case in hash file
+        self.hash_manager = HashManager(Config.get_hash_file(framework_id, framework_name))
         self.rate_limiter = AdaptiveRateLimiter(initial_delay=Config.RATE_LIMIT_DELAY)
         self.session: Optional[httpx.AsyncClient] = None
         

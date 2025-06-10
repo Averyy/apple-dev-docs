@@ -1,6 +1,6 @@
 # keyCommand
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A key command representation of the web extension command for use in the responder chain.

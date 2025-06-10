@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: subscript
 
 Accesses a view of this collection with the elements at the given indices.

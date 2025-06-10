@@ -1,6 +1,6 @@
 # XCUIElementQuery
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: class
 
 An object that defines the search criteria a test uses to identify UI elements.

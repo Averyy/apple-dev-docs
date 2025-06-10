@@ -1,6 +1,6 @@
 # Handling Workout Requests with SiriKit
 
-**Framework**: Sirikit
+**Framework**: SiriKit
 
 Add an Intent Extension to your app that handles requests to control workouts with Siri.
 
@@ -151,4 +151,4 @@ func application(_ application: UIApplication, handle intent: INIntent, completi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/handling-workout-requests-with-sirikit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/handling-workout-requests-with-sirikit)*

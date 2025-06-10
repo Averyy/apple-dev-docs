@@ -1,6 +1,6 @@
 # DOM_FIRST_ORDERED_NODE_TYPE
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

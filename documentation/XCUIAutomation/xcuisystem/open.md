@@ -1,6 +1,6 @@
 # open(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Opens an item in the default application for a URL.

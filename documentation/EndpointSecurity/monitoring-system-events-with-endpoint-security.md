@@ -1,6 +1,6 @@
 # Monitoring System Events with Endpoint Security
 
-**Framework**: Endpointsecurity
+**Framework**: Endpoint Security
 
 Receive notifications and authorization requests for sensitive operations by creating an Endpoint Security client for your app.
 
@@ -58,4 +58,4 @@ To  uninstall the system extension:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/EndpointSecurity/monitoring-system-events-with-endpoint-security)*
+*[View on Apple Developer](https://developer.apple.com/documentation/endpointsecurity/monitoring-system-events-with-endpoint-security)*

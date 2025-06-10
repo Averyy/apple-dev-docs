@@ -1,6 +1,6 @@
 # Defining and Applying Text Styles
 
-**Framework**: Applenews
+**Framework**: Apple News
 
 Define and apply custom, default, and inline text styles, or use HTML tags or Markdown syntax to style your text.
 
@@ -178,4 +178,4 @@ You can use HTML tags and Markdown syntax to style text in your article and to a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/defining-and-applying-text-styles)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applenews/defining-and-applying-text-styles)*

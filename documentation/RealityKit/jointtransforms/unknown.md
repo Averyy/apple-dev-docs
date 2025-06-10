@@ -1,42 +1,34 @@
-# !=(_:_:)
+# ==(_:_:)
 
 **Framework**: RealityKit  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Returns a Boolean value that indicates whether two collections of joints are equal.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func == (lhs: JointTransforms, rhs: JointTransforms) -> Bool
 ```
 
-#### Discussion
+#### Return Value
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+Returns `true` if the two collections of joints are equal. Otherwise, returns `false`.
 
 ## Parameters
 
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
-
-## See Also
-
-- [static func == (JointTransforms, JointTransforms) -> Bool](jointtransforms/==(_:_:).md)
-  Returns a Boolean value that indicates whether two collections of joints are equal.
-- [func compare<Comparator>(Comparator.Compared, Comparator.Compared) -> ComparisonResult](jointtransforms/compare(_:_:).md)
-  If `lhs` is ordered before `rhs` in the ordering described by the given sequence of `SortComparator`s
+- `lhs`: The collection of joints on the left side of the operator.
+- `rhs`: The collection of joints on the right side of the operator.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/jointtransforms/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/jointtransforms/==(_:_:))*

@@ -1,6 +1,6 @@
 # Order
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 The order’s details, including information about the products or services rendered, customer service, and fulfillment.

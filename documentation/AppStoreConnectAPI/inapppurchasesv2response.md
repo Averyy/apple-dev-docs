@@ -25,6 +25,10 @@ object InAppPurchasesV2Response
 - [object InAppPurchasePricesResponse](inapppurchasepricesresponse.md)
 - [object InAppPurchasePrice](inapppurchaseprice.md)
 - [object InAppPurchasePriceInlineCreate](inapppurchasepriceinlinecreate.md)
+- [object AppInAppPurchasesLinkagesResponse](appinapppurchaseslinkagesresponse.md)
+- [object AppInAppPurchasesV2LinkagesResponse](appinapppurchasesv2linkagesresponse.md)
+- [object InAppPurchasePricePointEqualizationsLinkagesResponse](inapppurchasepricepointequalizationslinkagesresponse.md)
+- [object InAppPurchaseV2AppStoreReviewScreenshotLinkageResponse](inapppurchasev2appstorereviewscreenshotlinkageresponse.md)
 
 
 ---

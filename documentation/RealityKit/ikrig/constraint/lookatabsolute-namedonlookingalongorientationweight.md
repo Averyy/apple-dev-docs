@@ -1,6 +1,6 @@
 # lookAtAbsolute(named:on:lookingAlong:orientationWeight:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: method
 
 Creates a constraint with only an orientational demand in absolute look-at mode.
@@ -10,6 +10,7 @@ Creates a constraint with only an orientational demand in absolute look-at mode.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

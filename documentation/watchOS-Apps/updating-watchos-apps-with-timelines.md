@@ -1,6 +1,6 @@
 # Updating watchOS apps with timelines
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Seamlessly schedule updates to your user interface, even while it’s inactive.
 
@@ -88,4 +88,4 @@ For example, an egg timer could use an `ExplicitTimelineSchedule` to set up per-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/updating-watchos-apps-with-timelines)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/updating-watchos-apps-with-timelines)*

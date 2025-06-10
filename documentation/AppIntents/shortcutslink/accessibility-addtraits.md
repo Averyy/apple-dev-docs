@@ -8,7 +8,7 @@ Adds the given traits to the view.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
+- Mac Catalyst ?+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+

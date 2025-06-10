@@ -1,6 +1,6 @@
 # WKMediaPlaybackState.paused
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 The media playback is paused.

@@ -1,6 +1,6 @@
 # SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

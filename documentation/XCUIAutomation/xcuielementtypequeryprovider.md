@@ -1,6 +1,6 @@
 # XCUIElementTypeQueryProvider
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: protocol
 
 A type that provides ready-made queries for locating descendant UI elements.

@@ -102,6 +102,7 @@ When you create a linguistic tagger, you specify one or more [`NSLinguisticTagSc
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

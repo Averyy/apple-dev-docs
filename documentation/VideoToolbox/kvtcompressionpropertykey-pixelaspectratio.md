@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_PixelAspectRatio
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The pixel aspect ratio for encoded frames.

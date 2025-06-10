@@ -1,6 +1,6 @@
 # pageDown
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A constant that represents the Page Down key.

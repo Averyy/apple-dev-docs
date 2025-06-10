@@ -71,6 +71,15 @@ In iOS, iPadOS, and macOS, the system uses the space available to the toolbar wh
   Places the item in the leading edge of the navigation bar.
 - [static let navigationBarTrailing: ToolbarItemPlacement](toolbaritemplacement/navigationbartrailing.md)
   Places the item in the trailing edge of the navigation bar.
+### Type Properties
+- [static let largeSubtitle: ToolbarItemPlacement](toolbaritemplacement/largesubtitle.md)
+  Places the item in the subtitle area of the navigation bar.
+- [static let largeTitle: ToolbarItemPlacement](toolbaritemplacement/largetitle.md)
+  Places the item in the title area of the navigation bar.
+- [static let subtitle: ToolbarItemPlacement](toolbaritemplacement/subtitle.md)
+  Places the item in the subtitle area of the navigation bar.
+- [static var title: ToolbarItemPlacement](toolbaritemplacement/title.md)
+  Places the item in the title area of the navigation bar.
 
 ## See Also
 
@@ -84,6 +93,10 @@ In iOS, iPadOS, and macOS, the system uses the space available to the toolbar wh
   Conforming types represent items that can be placed in various locations in a toolbar.
 - [struct ToolbarContentBuilder](toolbarcontentbuilder.md)
   Constructs a toolbar item set from multi-expression closures.
+- [struct ToolbarSpacer](toolbarspacer.md)
+  A standard space item in toolbars.
+- [struct DefaultToolbarItem](defaulttoolbaritem.md)
+  A toolbar item that represents a system component.
 
 
 ---

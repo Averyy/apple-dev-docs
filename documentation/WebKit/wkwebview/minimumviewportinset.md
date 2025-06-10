@@ -1,6 +1,6 @@
 # minimumViewportInset
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 **Availability**:
@@ -14,7 +14,7 @@
 
 ```swift
 @MainActor
-var minimumViewportInset: UIEdgeInsets { get }
+var minimumViewportInset: NSEdgeInsets { get }
 ```
 
 ## See Also

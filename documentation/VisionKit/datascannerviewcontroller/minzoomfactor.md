@@ -1,6 +1,6 @@
 # minZoomFactor
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The minimum zoom factor that the camera supports.

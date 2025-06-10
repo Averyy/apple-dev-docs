@@ -24,8 +24,6 @@ If the converter needs more information, it asks you interactively, or you can p
 
 > ❗ **Important**:  By default, the converter creates a reference in the Xcode project to the resources in the path you provide. As a result, changes you make to the original extension update your converted Safari web extension and vice versa. If you prefer to keep your original and converted extensions separate, use the `--copy-resources` option to make a copy of the original files.
 
- By default, the converter creates a reference in the Xcode project to the resources in the path you provide. As a result, changes you make to the original extension update your converted Safari web extension and vice versa. If you prefer to keep your original and converted extensions separate, use the `--copy-resources` option to make a copy of the original files.
-
 New Xcode projects require you to select either the Swift or Objective-C language for native development. For your Safari web extension, you may not need to make any native customizations at all because your extension uses the JavaScript, HTML, and CSS you provide. If you are unsure of which language to use, select Swift.
 
 If the converter runs interactively, it asks you to confirm your selections and gives you the opportunity to update them.
@@ -63,6 +61,8 @@ Provide the path to your current extension’s Xcode project file (including the
 
 - [Converting a Safari app extension to a Safari web extension](converting-a-safari-app-extension-to-a-safari-web-extension.md)
   Unify your web extensions and simplify development by sharing code with a Safari web extension.
+- [Packaging and distributing Safari Web Extensions with App Store Connect](packaging-and-distributing-safari-web-extensions-with-app-store-connect.md)
+  Upload and distribute Safari Web Extensions without using a Mac or Xcode.
 
 
 ---

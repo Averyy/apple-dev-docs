@@ -22,7 +22,7 @@ static var allMediaSelections: AVAsyncProperty<Root, [AVMediaSelection]> { get }
 
 #### Discussion
 
-Use the [`load(_:)`](avasynchronouskeyvalueloading/load(_:).md) method to retrieve the property value.
+Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
 
 ## See Also
 

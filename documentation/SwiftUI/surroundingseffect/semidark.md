@@ -6,6 +6,7 @@
 An effect that dims passthrough video less than [`dark`](surroundingseffect/dark.md).
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

@@ -10,6 +10,7 @@ Synchronously creates a mesh resource from a low-level mesh.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -27,8 +28,6 @@ Synchronously creates a mesh resource from a low-level mesh.
 
 - [convenience init(from: LowLevelMesh) async throws](meshresource/init(from:)-1ehyt.md)
   Asynchronously creates a mesh resource from a low-level mesh.
-- [var lowLevelMesh: LowLevelMesh?](meshresource/lowlevelmesh.md)
-  The low-level mesh that this mesh is built from, if any.
 
 
 ---

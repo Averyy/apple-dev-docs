@@ -1,0 +1,18 @@
+# options
+
+**Framework**: Kernel  
+**Kind**: structp
+
+**Availability**:
+- macOS 10.12+
+
+## Declaration
+
+```swift
+uint64_t options;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/dk_provision_status_t/1644137-options)*

@@ -1,6 +1,6 @@
 # Bringing multiple windows to your SwiftUI app
 
-**Framework**: Swiftui
+**Framework**: SwiftUI
 
 Compose rich views by reacting to state changes and customize your app’s scene presentation and behavior on iPadOS and macOS.
 

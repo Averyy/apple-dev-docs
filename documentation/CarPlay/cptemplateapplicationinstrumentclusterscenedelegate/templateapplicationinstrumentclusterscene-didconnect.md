@@ -11,6 +11,7 @@
 ## Declaration
 
 ```swift
+@MainActor
 optional func templateApplicationInstrumentClusterScene(_ templateApplicationInstrumentClusterScene: CPTemplateApplicationInstrumentClusterScene, didConnect instrumentClusterController: CPInstrumentClusterController)
 ```
 

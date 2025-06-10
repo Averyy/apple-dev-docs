@@ -1,6 +1,6 @@
 # Combining multiple streams of metadata into the same track
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Introduce new metadata samples with the union of all metadata values from combined tracks.
 

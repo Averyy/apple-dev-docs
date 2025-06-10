@@ -8,6 +8,7 @@ Creates an asynchronous sequence that maps an error-throwing closure over the ba
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst ?+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+

@@ -1,6 +1,6 @@
 # TEXTPATH_SPACINGTYPE_EXACT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

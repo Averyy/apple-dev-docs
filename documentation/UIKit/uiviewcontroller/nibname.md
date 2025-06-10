@@ -1,6 +1,6 @@
 # nibName
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The name of the view controller’s nib file, if one was specified.

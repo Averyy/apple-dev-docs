@@ -1,14 +1,14 @@
 # Pass.Beacons
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that represents the identifier of a Bluetooth Low Energy beacon the system uses to show a relevant pass.
 
 **Availability**:
 - iOS 7.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 7.0+
+- watchOS 1.0+
 
 ## Declaration
 

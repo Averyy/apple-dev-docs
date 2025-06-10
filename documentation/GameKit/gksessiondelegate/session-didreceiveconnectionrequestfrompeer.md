@@ -22,8 +22,6 @@ The delegate should call the session’s [`acceptConnection(fromPeer:)`](gksessi
 
 > ❗ **Important**:  If a [`GKPeerPickerController`](gkpeerpickercontroller.md) object is being used to configure the session, the controller handles this message automatically. Your delegate can ignore it if the peer picker dialog is in use. If your application is not using a [`GKPeerPickerController`](gkpeerpickercontroller.md) object to configure the session, your delegate must implement this method as described above.
 
- If a [`GKPeerPickerController`](gkpeerpickercontroller.md) object is being used to configure the session, the controller handles this message automatically. Your delegate can ignore it if the peer picker dialog is in use. If your application is not using a [`GKPeerPickerController`](gkpeerpickercontroller.md) object to configure the session, your delegate must implement this method as described above.
-
 ## Parameters
 
 - `session`: The session that received the request.

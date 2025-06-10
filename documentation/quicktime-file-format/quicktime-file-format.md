@@ -15,8 +15,6 @@ QuickTime provides a number of high-level functions that you can use to create a
 
 > ❗ **Important**: The QuickTime File Format is the basis of the MPEG-4 standard and the JPEG-2000 standard, developed by the International Organization for Standardization (ISO). Although these file types have similar structures and contain many functionally identical elements, they are distinct file types.
 
-The QuickTime File Format is the basis of the MPEG-4 standard and the JPEG-2000 standard, developed by the International Organization for Standardization (ISO). Although these file types have similar structures and contain many functionally identical elements, they are distinct file types.
-
 QuickTime files are used to store QuickTime movies, as well as other data. If you are writing an application that parses QuickTime files, you should recognize that there may be non-movie data in the files.
 
 ## Topics

@@ -28,8 +28,6 @@ The recreated interval state.
 
 > ❗ **Important**:  Recreating interval state to end a signposted interval bypasses runtime assertions that check for consistency between the beginning and the end of the interval.
 
- Recreating interval state to end a signposted interval bypasses runtime assertions that check for consistency between the beginning and the end of the interval.
-
 ## Parameters
 
 - `id`: The signpost ID you use to begin the signposted interval.

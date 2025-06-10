@@ -1,6 +1,6 @@
 # metadataObjects
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The list of metadata objects captured at this synchronization timestamp.

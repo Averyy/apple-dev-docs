@@ -10,10 +10,10 @@ Common marker protocol providing a shared “base” for both (local) `Actor` an
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 13.0+
 - visionOS 1.0+
 - watchOS 6.0+
 - Unknown ?+ - Deprecated
-- tvOS 13.0+
 
 ## Declaration
 
@@ -37,6 +37,8 @@ While both local and distributed actors are conceptually “actors”, there are
   A singleton actor whose executor is equivalent to the main dispatch queue.
 - [protocol GlobalActor](globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
+- [protocol SendableMetatype](sendablemetatype.md)
+  A type `T` whose metatype `T.Type` is `Sendable`.
 - [typealias ConcurrentValue](concurrentvalue.md)
 - [protocol UnsafeSendable](unsafesendable.md)
   A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.

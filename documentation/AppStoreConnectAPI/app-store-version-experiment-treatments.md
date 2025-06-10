@@ -7,8 +7,12 @@ Create and update the metadata and the optional icon that represent the treatmen
 ## Topics
 
 ### Endpoints
+- [List All Treatments for an App Store Experiment](get-v2-appstoreversionexperiments-_id_-appstoreversionexperimenttreatments.md)
+  Get a list of all treatments for a specific App Store version experiment.
+- [GET /v2/appStoreVersionExperiments/{id}/relationships/appStoreVersionExperimentTreatments](get-v2-appstoreversionexperiments-_id_-relationships-appstoreversionexperimenttreatments.md)
 - [GET /v1/appStoreVersionExperimentTreatments/{id}](get-v1-appstoreversionexperimenttreatments-_id_.md)
 - [GET /v1/appStoreVersionExperimentTreatments/{id}/appStoreVersionExperimentTreatmentLocalizations](get-v1-appstoreversionexperimenttreatments-_id_-appstoreversionexperimenttreatmentlocalizations.md)
+- [GET /v1/appStoreVersionExperimentTreatments/{id}/relationships/appStoreVersionExperimentTreatmentLocalizations](get-v1-appstoreversionexperimenttreatments-_id_-relationships-appstoreversionexperimenttreatmentlocalizations.md)
 - [Modify an App Store version experiement treatment](patch-v1-appstoreversionexperimenttreatments-_id_.md)
   Update the name and app icon name for a specific App Store version experiment.
 - [POST /v1/appStoreVersionExperimentTreatments](post-v1-appstoreversionexperimenttreatments.md)
@@ -20,6 +24,11 @@ Create and update the metadata and the optional icon that represent the treatmen
 - [object AppStoreVersionExperimentTreatmentResponse](appstoreversionexperimenttreatmentresponse.md)
 - [object AppStoreVersionExperimentTreatmentUpdateRequest](appstoreversionexperimenttreatmentupdaterequest.md)
 - [object AppStoreVersionExperimentTreatmentsResponse](appstoreversionexperimenttreatmentsresponse.md)
+- [object AppStoreVersionExperimentAppStoreVersionExperimentTreatmentsLinkagesResponse](appstoreversionexperimentappstoreversionexperimenttreatmentslinkagesresponse.md)
+- [object AppStoreVersionExperimentTreatmentAppStoreVersionExperimentTreatmentLocalizationsLinkagesResponse](appstoreversionexperimenttreatmentappstoreversionexperimenttreatmentlocalizationslinkagesresponse.md)
+- [object AppStoreVersionExperimentTreatmentLocalizationAppPreviewSetsLinkagesResponse](appstoreversionexperimenttreatmentlocalizationapppreviewsetslinkagesresponse.md)
+- [object AppStoreVersionExperimentTreatmentLocalizationAppScreenshotSetsLinkagesResponse](appstoreversionexperimenttreatmentlocalizationappscreenshotsetslinkagesresponse.md)
+- [object AppStoreVersionExperimentV2AppStoreVersionExperimentTreatmentsLinkagesResponse](appstoreversionexperimentv2appstoreversionexperimenttreatmentslinkagesresponse.md)
 
 ## See Also
 

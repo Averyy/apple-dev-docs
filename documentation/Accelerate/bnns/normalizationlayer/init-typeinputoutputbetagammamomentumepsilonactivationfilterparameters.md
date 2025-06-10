@@ -10,10 +10,10 @@ Returns a new normalization layer.
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
+- tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
-- tvOS 14.0+
 
 ## Declaration
 
@@ -24,8 +24,6 @@ convenience init?(type normalization: BNNS.NormalizationType, input: BNNSNDArray
 #### Discussion
 
 > ❗ **Important**:  The gamma and beta descriptors must match the shape of input up to the normalizaton axis. The input and output descriptors must have a layout of [`BNNS.DataLayout.imageCHW`](bnns/datalayout/imagechw.md). The gamma, beta, moving mean, and moving variance descriptors must have a `size[0]` that’s the same as the number of input channels. All arrays must have a data type of `float`.
-
- The gamma and beta descriptors must match the shape of input up to the normalizaton axis. The input and output descriptors must have a layout of [`BNNS.DataLayout.imageCHW`](bnns/datalayout/imagechw.md). The gamma, beta, moving mean, and moving variance descriptors must have a `size[0]` that’s the same as the number of input channels. All arrays must have a data type of `float`.
 
 ## Parameters
 

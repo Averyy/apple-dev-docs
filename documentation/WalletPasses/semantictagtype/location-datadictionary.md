@@ -1,14 +1,14 @@
 # SemanticTagType.Location
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that represents the coordinates of a location.
 
 **Availability**:
 - iOS 12.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 12.0+
+- watchOS 5.0+
 
 ## Declaration
 

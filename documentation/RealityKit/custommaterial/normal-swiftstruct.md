@@ -10,6 +10,7 @@ An object that stores fine surface details for an entity in an image texture.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

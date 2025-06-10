@@ -35,6 +35,9 @@ You configure scenes using modifiers, similar to how you configure views. For ex
   An action that presents the settings scene for an app.
 - [var openSettings: OpenSettingsAction](environmentvalues/opensettings.md)
   A Settings presentation action stored in a view’s environment.
+### Building a menu bar
+- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+  Provide a seamless, cross-platform user experience by building a native menu bar for iPadOS and macOS.
 ### Creating a menu bar extra
 - [struct MenuBarExtra](menubarextra.md)
   A scene that renders itself as a persistent control in the system menu bar.

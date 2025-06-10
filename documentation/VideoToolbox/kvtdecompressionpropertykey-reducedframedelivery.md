@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_ReducedFrameDelivery
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The proportion of frames that should be delivered, indicating that the rest may be dropped.

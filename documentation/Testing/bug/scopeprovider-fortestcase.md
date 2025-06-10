@@ -6,15 +6,8 @@
 Get this trait’s scope provider for the specified test or test case.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
-- Swift 6.0+
-- Xcode 16.0+
+- Swift 6.1+
+- Xcode 16.3+
 
 ## Declaration
 

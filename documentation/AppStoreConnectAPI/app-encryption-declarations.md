@@ -1,6 +1,6 @@
 # App Encryption Declarations
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 View, and assign to builds, the declarations about types of encryption used in your app.
 
@@ -28,8 +28,9 @@ For more information, see [`Overview of export compliance`](https://developer.ap
   Get the app information from a specific app encryption declaration.
 - [Read a specific App Encryption Declaration Document](get-v1-appencryptiondeclarationdocuments-_id_.md)
   Get detailed information about a specified App Encryption Declaration document.
-- [Read the Declaration Document for an App Encryption Declaration](get-v1-appencryptiondeclarations-_id_-appencryptiondeclarationdocument.md)
+- [GET /v1/appEncryptionDeclarations/{id}/appEncryptionDeclarationDocument](get-v1-appencryptiondeclarations-_id_-appencryptiondeclarationdocument.md)
   Read the associate document for a specific App Encryption Declaration.
+- [GET /v1/appEncryptionDeclarations/{id}/relationships/appEncryptionDeclarationDocument](get-v1-appencryptiondeclarations-_id_-relationships-appencryptiondeclarationdocument.md)
 ### Assigning App Encryption Declarations
 - [Create an app encryption declarations](post-v1-appencryptiondeclarations.md)
   Add an app encryption delcaration for a specific app.
@@ -58,6 +59,8 @@ For more information, see [`Overview of export compliance`](https://developer.ap
   A response that contains a list of App Encryption Declaration resources.
 - [type AppEncryptionDeclarationState](appencryptiondeclarationstate.md)
   Strings that represent the review or acceptance status of an app encryption declaration submitted to Apple.
+- [object AppEncryptionDeclarationAppEncryptionDeclarationDocumentLinkageResponse](appencryptiondeclarationappencryptiondeclarationdocumentlinkageresponse.md)
+- [object AppEncryptionDeclarationAppLinkageResponse](appencryptiondeclarationapplinkageresponse.md)
 
 ## See Also
 
@@ -71,4 +74,4 @@ For more information, see [`Overview of export compliance`](https://developer.ap
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/app-encryption-declarations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/app-encryption-declarations)*

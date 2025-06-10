@@ -50,6 +50,7 @@ Use this class to represent an event that fires at a time relative to a signific
 - [NSMutableCopying](../Foundation/NSMutableCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

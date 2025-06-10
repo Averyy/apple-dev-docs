@@ -1,6 +1,6 @@
 # XCTIssueReference.IssueType
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: enum
 
 Constants that indicate types of test failures, such as assertion failures, performance regressions, or thrown errors.
@@ -37,6 +37,7 @@ enum IssueType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

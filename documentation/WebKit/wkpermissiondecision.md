@@ -1,6 +1,6 @@
 # WKPermissionDecision
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 An enumeration of possible permission decisions for device resource access.
@@ -38,6 +38,7 @@ enum WKPermissionDecision
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

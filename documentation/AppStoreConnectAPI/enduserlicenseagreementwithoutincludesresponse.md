@@ -22,6 +22,8 @@ object EndUserLicenseAgreementWithoutIncludesResponse
   The request body you use to update an End User License Agreement.
 - [object EndUserLicenseAgreementResponse](enduserlicenseagreementresponse.md)
   A response that contains a single End User License Agreements resource.
+- [object AppEndUserLicenseAgreementLinkageResponse](appenduserlicenseagreementlinkageresponse.md)
+- [object EndUserLicenseAgreementTerritoriesLinkagesResponse](enduserlicenseagreementterritorieslinkagesresponse.md)
 
 
 ---

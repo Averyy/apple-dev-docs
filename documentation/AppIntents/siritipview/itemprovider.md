@@ -10,7 +10,7 @@ Provides a closure that vends the drag representation to be used for a particula
 - iPadOS 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 6.0+
 
 ## Declaration

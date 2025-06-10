@@ -19,21 +19,11 @@ A container view that presents either a 3D model or a placeholder for one.
 
 Don’t instantiate this type directly. [`Model3D`](model3d.md) creates it for you.
 
-## Topics
-
-### Instance Properties
-- [var body: some View](model3dplaceholdercontent/body-swift.property.md)
-  The content and behavior of the view.
-### Type Aliases
-- [Model3DPlaceholderContent.Body](model3dplaceholdercontent/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Default Implementations
-- [View Implementations](model3dplaceholdercontent/view-implementations.md)
-
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also
@@ -44,6 +34,8 @@ Don’t instantiate this type directly. [`Model3D`](model3d.md) creates it for y
   The current phase of the asynchronous model loading operation.
 - [struct ResolvedModel3D](resolvedmodel3d.md)
   A view for displaying static three-dimensional models.
+- [class Model3DAsset](model3dasset.md)
+  A container used to represent the asset loaded into the Model3D View.
 
 
 ---

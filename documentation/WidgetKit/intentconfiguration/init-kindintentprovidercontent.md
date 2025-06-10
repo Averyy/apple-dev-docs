@@ -1,6 +1,6 @@
 # init(kind:intent:provider:content:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: init
 
 Creates a configuration for a widget by using a custom intent definition to provide user-configurable options.
@@ -8,8 +8,9 @@ Creates a configuration for a widget by using a custom intent definition to prov
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration

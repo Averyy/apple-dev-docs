@@ -22,6 +22,8 @@ enum LACompanionType
 ### Enumeration Cases
 - [LACompanionType.mac](lacompaniontype/mac.md)
   Paired Mac
+- [LACompanionType.vision](lacompaniontype/vision.md)
+  Paired Vision Pro
 - [LACompanionType.watch](lacompaniontype/watch.md)
   Paired Apple Watch
 ### Initializers
@@ -35,6 +37,7 @@ enum LACompanionType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

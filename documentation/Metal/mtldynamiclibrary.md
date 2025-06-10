@@ -16,7 +16,7 @@ A dynamically linkable representation of compiled shader code for a specific Met
 ## Declaration
 
 ```swift
-protocol MTLDynamicLibrary : NSObjectProtocol
+protocol MTLDynamicLibrary : NSObjectProtocol, Sendable
 ```
 
 ## Topics
@@ -36,6 +36,8 @@ protocol MTLDynamicLibrary : NSObjectProtocol
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

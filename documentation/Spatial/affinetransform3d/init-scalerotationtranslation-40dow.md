@@ -8,12 +8,12 @@ Creates an affine transform from the specified scale, rotate, and translate tran
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+
 - Unknown ?+ - Deprecated
-- Mac Catalyst ?+
 
 ## Declaration
 
@@ -41,7 +41,7 @@ init(scale: Size3D = Size3D(width: 1.0, height: 1, depth: 1), rotation: Rotation
   Creates an affine transform from the specified 4 x 4 single-precision matrix.
 - [init?(projectiveTransform: ProjectiveTransform3D)](affinetransform3d/init(projectivetransform:).md)
   Creates an affine transform from the specified projective transform.
-- [init(translation: Size3D)](affinetransform3d/init(translation:)-2fbl8.md)
+- [init(translation: Size3D)](affinetransform3d/init(translation:).md)
 - [func inverted() -> AffineTransform3D?](affinetransform3d/inverted.md)
   Returns a new transform that results from inverting an existing affine transform.
 - [var offset: Vector3D](affinetransform3d/offset.md)

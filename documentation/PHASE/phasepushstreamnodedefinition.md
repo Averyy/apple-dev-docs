@@ -1,6 +1,6 @@
 # PHASEPushStreamNodeDefinition
 
-**Framework**: Phase  
+**Framework**: PHASE  
 **Kind**: class
 
 A node that plays a sequence of audio buffers.
@@ -69,4 +69,4 @@ Use this node to create sound events for a piecemeal audio source, for example, 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PHASE/phasepushstreamnodedefinition)*
+*[View on Apple Developer](https://developer.apple.com/documentation/phase/phasepushstreamnodedefinition)*

@@ -25,6 +25,7 @@ struct EmptyMatchedTransitionSourceConfiguration
 ### Conforms To
 - [MatchedTransitionSourceConfiguration](matchedtransitionsourceconfiguration.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

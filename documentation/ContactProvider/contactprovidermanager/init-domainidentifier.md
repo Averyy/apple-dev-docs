@@ -1,6 +1,6 @@
 # init(domainIdentifier:)
 
-**Framework**: Contactprovider  
+**Framework**: ContactProvider  
 **Kind**: init
 
 Creates a provider manager.

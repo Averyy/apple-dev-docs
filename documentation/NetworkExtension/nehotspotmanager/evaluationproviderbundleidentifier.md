@@ -1,0 +1,30 @@
+# evaluationProviderBundleIdentifier
+
+**Framework**: Network Extension  
+**Kind**: property
+
+The bundle identifier of the hotspot evaluation provider.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+final var evaluationProviderBundleIdentifier: String? { get set }
+```
+
+## See Also
+
+- [var isEnabled: Bool](nehotspotmanager/isenabled.md)
+  A Boolean value that indicates whether the configuration is enabled.
+- [var authenticationProviderBundleIdentifier: String?](nehotspotmanager/authenticationproviderbundleidentifier.md)
+  The bundle identifier of the hotspot authentication provider.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/nehotspotmanager/evaluationproviderbundleidentifier)*

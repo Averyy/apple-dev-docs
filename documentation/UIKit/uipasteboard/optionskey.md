@@ -38,6 +38,7 @@ Use these options with the [`setItems(_:options:)`](uipasteboard/setitems(_:opti
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

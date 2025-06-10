@@ -69,6 +69,18 @@ To display highlights, set the [`showHighlights`](gkaccesspoint/showhighlights.m
   Displays the Game Center dashboard in a state that shows a specific leaderboard.
 - [func trigger(leaderboardSetID: String, handler: (() -> Void)?)](gkaccesspoint/trigger(leaderboardsetid:handler:).md)
   Displays the Game Center dashboard in a state that shows a specific leaderboard set.
+### Instance Methods
+- [func trigger(challengeDefinitionID: String, handler: (() -> Void)?)](gkaccesspoint/trigger(challengedefinitionid:handler:).md)
+  Displays the challenge creation view for the provided challenge definition ID.
+- [func trigger(gameActivityDefinitionID: String, handler: (() -> Void)?)](gkaccesspoint/trigger(gameactivitydefinitionid:handler:)-9hemd.md)
+  Displays the game activity creation view for the provided activity definition ID.
+- [func trigger(gameActivityDefinitionID: String, handler: (() -> Void)?)](gkaccesspoint/trigger(gameactivitydefinitionid:handler:)-9m45r.md)
+- [func triggerForChallenges(handler: (() -> Void)?)](gkaccesspoint/triggerforchallenges(handler:).md)
+  Displays the view that allows players to engage each other with challenges.
+- [func triggerForFriending(handler: (() -> Void)?)](gkaccesspoint/triggerforfriending(handler:).md)
+  Brings up the invite friends view.
+- [func triggerForPlayTogether(handler: (() -> Void)?)](gkaccesspoint/triggerforplaytogether(handler:).md)
+  Displays the view that allows players to engage each other with activities and challenges.
 
 ## Relationships
 
@@ -81,6 +93,8 @@ To display highlights, set the [`showHighlights`](gkaccesspoint/showhighlights.m
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -88,14 +102,10 @@ To display highlights, set the [`showHighlights`](gkaccesspoint/showhighlights.m
   Provide your users a convenient connection to the Game Center dashboard.
 - [Displaying the Game Center dashboard](displaying-the-game-center-dashboard.md)
   Provide an interface for players to navigate to their Game Center data from your game.
-- [class GKGameCenterViewController](gkgamecenterviewcontroller.md)
-  The dashboard that allows players to access their Game Center data in your game.
 - [class GKDialogController](gkdialogcontroller.md)
   An object that provides the ability to present the dashboard in macOS games.
 - [protocol GKViewController](gkviewcontroller.md)
   The abstract base protocol adopted by GameKit view controller classes.
-- [class GKNotificationBanner](gknotificationbanner.md)
-  A Game Center-style banner that displays a message to the local player.
 
 
 ---

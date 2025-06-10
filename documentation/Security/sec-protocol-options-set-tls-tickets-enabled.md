@@ -21,7 +21,7 @@ func sec_protocol_options_set_tls_tickets_enabled(_ options: sec_protocol_option
 #### Discussion
 
 ```None
-  Enable or disable TLS session ticket support.
+ Enable or disable TLS session ticket support.
 ```
 
 ## Parameters

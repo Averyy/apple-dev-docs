@@ -1,6 +1,6 @@
 # NSScrubber
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 A customizable item picker control for the Touch Bar.
@@ -263,6 +263,7 @@ When choosing between a scrubber and a scroll view, use a scrubber unless the am
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -274,4 +275,4 @@ When choosing between a scrubber and a scroll view, use a scrubber unless the am
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsscrubber)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsscrubber)*

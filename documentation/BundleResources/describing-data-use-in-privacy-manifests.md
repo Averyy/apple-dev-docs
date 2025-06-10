@@ -10,8 +10,6 @@ Record the categories of data that your app or third-party SDK collects about th
 
 > ❗ **Important**:  Third-party SDKs need to provide their own privacy manifest files that record the types of data they collect. Your app’s privacy manifest file doesn’t need to cover data collected by third-party SDKs that your app links to.
 
- Third-party SDKs need to provide their own privacy manifest files that record the types of data they collect. Your app’s privacy manifest file doesn’t need to cover data collected by third-party SDKs that your app links to.
-
 ##### Describe the Data Your App or Third Party Sdk Collects
 
 For each type of data your app or third-party SDK collects, add a dictionary to the [`NSPrivacyCollectedDataTypes`](app-privacy-configuration/nsprivacycollecteddatatypes.md) array in your privacy information file. Add the following keys to the dictionary.

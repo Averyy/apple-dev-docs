@@ -1,4 +1,4 @@
-# Release Device from Await Configuration
+# Device Configured
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -11,8 +11,10 @@ Inform the device that it can allow the user to continue in Setup Assistant.
 - macOS 10.11+
 - tvOS 10.2+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+
+## Mentions
+
+- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
 
 #### Discussion
 
@@ -24,35 +26,35 @@ Refer to the following sections to determine supported channels and requirements
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS |
-| User Channel | macOS, Shared iPad |
-| Requires Supervision | - |
-| Allowed in User Enrollment | - |
-| Required Access Right | - |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS |
+| User channel | NA |
+| Requires supervision | iOS, macOS, tvOS, visionOS |
+| Allowed in user enrollment | NA |
+| Required access right | NA |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object DeviceConfiguredCommand](deviceconfiguredcommand.md)
-  The command to inform a device that it can allow the user to continue in Setup Assistant.
+  The command to inform the device that it can allow the user to continue in Setup Assistant.
 - [object DeviceConfiguredResponse](deviceconfiguredresponse.md)
-  A response from the device after it processes the command to allow the user to continue in Setup Assistant.
+  A response from the device after it processes the command to inform the device that it can allow the user to continue in Setup Assistant.
 
 ## Request Body
 
-The command to inform a device that it can allow the user to continue in Setup Assistant.
+The request object the server returns for the Device Configured Command.
 
 ## See Also
 
-- [List the Installed Apps](installed-application-list-command.md)
+- [Installed Application List](installed-application-list-command.md)
   Get a list of the installed apps on a device.
-- [Get Device Information](device-information-command.md)
+- [Device Information](device-information-command.md)
   Get detailed information about a device.
-- [User Configured Command](user-configured-command.md)
-  Informs the device that it can continue past Setup Assistant and finish login.
-- [List the Installed Restrictions](restrictions-command.md)
+- [User Configured](user-configured-command.md)
+  Inform the device that it can continue past Setup Assistant and finish login.
+- [Restrictions](restrictions-command.md)
   Get a list of restrictions on the device.
 
 

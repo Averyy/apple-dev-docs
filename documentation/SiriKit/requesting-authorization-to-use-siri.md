@@ -1,6 +1,6 @@
 # Requesting Authorization to Use Siri
 
-**Framework**: Sirikit
+**Framework**: SiriKit
 
 Request permission from the user for Siri and Maps to communicate with your app or Intents app extension.
 
@@ -62,4 +62,4 @@ The user can approve or deny your app’s request for authorization, and can cha
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/requesting-authorization-to-use-siri)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/requesting-authorization-to-use-siri)*

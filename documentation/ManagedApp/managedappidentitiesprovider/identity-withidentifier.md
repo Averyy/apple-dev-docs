@@ -1,6 +1,6 @@
 # identity(withIdentifier:)
 
-**Framework**: Managedapp  
+**Framework**: ManagedApp  
 **Kind**: method
 
 Provides an identity by its identifier.

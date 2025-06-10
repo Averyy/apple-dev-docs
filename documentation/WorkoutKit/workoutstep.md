@@ -1,6 +1,6 @@
 # WorkoutStep
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: struct
 
 A step in a workout.
@@ -10,6 +10,7 @@ A step in a workout.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -21,10 +22,10 @@ struct WorkoutStep
 ## Topics
 
 ### Creating new workout steps
-- [init(goal: WorkoutGoal, alert: (WorkoutAlert)?)](workoutstep/init(goal:alert:).md)
+- [init(goal: WorkoutGoal, alert: (any WorkoutAlert)?)](workoutstep/init(goal:alert:).md)
   Creates a new workout step with the provided goal and alerts.
 ### Accessing step data
-- [var alert: (WorkoutAlert)?](workoutstep/alert.md)
+- [var alert: (any WorkoutAlert)?](workoutstep/alert.md)
   Alerts used during the step.
 - [var goal: WorkoutGoal](workoutstep/goal.md)
   A goal that determines when the step ends.
@@ -50,6 +51,7 @@ struct WorkoutStep
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

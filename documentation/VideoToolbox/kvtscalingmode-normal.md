@@ -1,6 +1,6 @@
 # kVTScalingMode_Normal
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The full width and height of the source image buffer is stretched to the full width and height of the destination image buffer.

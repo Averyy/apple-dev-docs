@@ -52,6 +52,8 @@ Then, inspect and use the data from objects that the data detection system retur
 ### Matched strings
 - [class DDMatch](ddmatch.md)
   A base class for common types of data that the data detection system matches.
+- [enum DataDetector](datadetector.md)
+  An extension to the string protocol that scans strings for semantic entities, such as email addresses, phone numbers, URLs, and flight information.
 ### Matched data types
 - [class DDMatchCalendarEvent](ddmatchcalendarevent.md)
   An object that represents a calendar date or date range that the data detection system matches.
@@ -69,7 +71,7 @@ Then, inspect and use the data from objects that the data detection system retur
   An object that contains a postal address that the data detection system matches.
 - [class DDMatchShipmentTrackingNumber](ddmatchshipmenttrackingnumber.md)
   An object that contains parcel tracking information that the data detection system matches.
-### UIKit pasteboard detectors
+### Pasteboard detectors
 - [func detectPatterns(for keyPaths: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, completionHandler: @escaping (Result<Set<PartialKeyPath<UIPasteboard.DetectedValues>>, any Error>) -> ())](../UIKit/UIPasteboard/detectPatterns(for:completionHandler:)-23vwn.md)
   Requests that the data detection system identify the patterns that you specify for the pasteboard, and provide the patterns that it matches to your closure.
 - [func detectedPatterns(for keyPaths: Set<PartialKeyPath<UIPasteboard.DetectedValues>>) async throws -> Set<PartialKeyPath<UIPasteboard.DetectedValues>>](../UIKit/UIPasteboard/detectedPatterns(for:).md)
@@ -86,17 +88,6 @@ Then, inspect and use the data from objects that the data detection system retur
   Requests that the data detection system identify the types of data that you specify for the pasteboard items, and provide the values that it matches to your closure.
 - [func detectedValues(for keyPaths: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet itemSet: IndexSet?) async throws -> [UIPasteboard.DetectedValues]](../UIKit/UIPasteboard/detectedValues(for:inItemSet:).md)
   Requests that the data detection system asynchronously identify the types of values that you specify for the pasteboard item, and return the values that it matches for each pasteboard.
-### AppKit pasteboard detectors
-- [func detectedPatterns(for keyPaths: Set<PartialKeyPath<NSPasteboard.DetectedValues>>) async throws -> Set<PartialKeyPath<NSPasteboard.DetectedValues>>](../AppKit/NSPasteboard/detectedPatterns(for:).md)
-  Determines whether the first pasteboard item matches the specified patterns, without notifying the person using the app.
-- [func detectedValues(for keyPaths: Set<PartialKeyPath<NSPasteboard.DetectedValues>>) async throws -> NSPasteboard.DetectedValues](../AppKit/NSPasteboard/detectedValues(for:).md)
-  Determines whether the first pasteboard item matches the specified patterns, reading the contents if it finds a match.
-- [NSPasteboard.DetectedValues](../AppKit/NSPasteboard/DetectedValues.md)
-  A type that contains common types of data that the data detection system matches for a pasteboard.
-- [func detectedMetadata(for keyPaths: Set<PartialKeyPath<NSPasteboard.DetectedMetadata>>) async throws -> NSPasteboard.DetectedMetadata](../AppKit/NSPasteboard/detectedMetadata(for:).md)
-  Determines available metadata from the specified metadata types for the first pasteboard item, without notifying the person using the app.
-- [NSPasteboard.DetectedMetadata](../AppKit/NSPasteboard/DetectedMetadata.md)
-  An object that contains common types of metadata that the data detection system matches for a pasteboard.
 
 
 ---

@@ -1,6 +1,6 @@
 # Expected Failures
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Anticipate known test failures to prevent failing tests from affecting your workflows.
 
@@ -134,4 +134,4 @@ The test system records a test failure for each `XCTExpectFailure` call that did
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/XCTest/expected-failures)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xctest/expected-failures)*

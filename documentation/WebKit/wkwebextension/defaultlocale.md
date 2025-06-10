@@ -1,6 +1,6 @@
 # defaultLocale
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The default locale for the extension.

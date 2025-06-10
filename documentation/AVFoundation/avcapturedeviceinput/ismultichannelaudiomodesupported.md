@@ -1,6 +1,6 @@
 # isMultichannelAudioModeSupported(_:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 A Boolean value that indicates whether the input supports the specified multichannel audio mode.

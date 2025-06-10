@@ -23,8 +23,6 @@ SecureElementCredential supports transactions for in-store payments, car keys, c
 
 > ⚠️ **Warning**: In any file that imports a symbol from this framework’s SwiftUI extension, don’t also import UIKit. Similarly, if you use this framework’s UIKit extensions, don’t also import SwiftUI in the same file. Importing SwiftUI and UIKit in the same file results in ambiguity during compilation.
 
-In any file that imports a symbol from this framework’s SwiftUI extension, don’t also import UIKit. Similarly, if you use this framework’s UIKit extensions, don’t also import SwiftUI in the same file. Importing SwiftUI and UIKit in the same file results in ambiguity during compilation.
-
 ## Topics
 
 ### Essentials

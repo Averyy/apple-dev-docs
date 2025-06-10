@@ -35,6 +35,7 @@ struct ExpressionEvaluate<Transformation, each Input, Output> where Transformati
 - [Encodable](../Swift/Encodable.md)
 - [PredicateExpression](predicateexpression.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StandardPredicateExpression](standardpredicateexpression.md)
 
 

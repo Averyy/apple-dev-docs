@@ -1,6 +1,6 @@
 # month
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The month of the year, in UTC.

@@ -1,6 +1,6 @@
 # Establishing your app’s integrity
 
-**Framework**: Devicecheck
+**Framework**: DeviceCheck
 
 Ensure that requests your server receives come from legitimate instances of your app.
 
@@ -128,4 +128,4 @@ The keys that you generate remain valid through regular app updates, but don’t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceCheck/establishing-your-app-s-integrity)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicecheck/establishing-your-app-s-integrity)*

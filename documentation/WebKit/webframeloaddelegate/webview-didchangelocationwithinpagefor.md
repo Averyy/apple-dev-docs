@@ -1,6 +1,6 @@
 # webView(_:didChangeLocationWithinPageFor:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the scroll position within a frame changes.

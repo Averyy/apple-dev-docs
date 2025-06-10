@@ -233,4 +233,4 @@ The [`Using Argument Buffers with Resource Heaps`](using-argument-buffers-with-r
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/managing-groups-of-resources-with-argument-buffers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/managing-groups-of-resources-with-argument-buffers)*

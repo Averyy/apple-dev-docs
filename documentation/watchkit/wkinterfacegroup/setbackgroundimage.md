@@ -1,6 +1,6 @@
 # setBackgroundImage(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Changes the background image of the group container to the specified image.

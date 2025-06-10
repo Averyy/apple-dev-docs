@@ -1,6 +1,6 @@
 # system
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 An object that provides an interface to OS-specific properties and actions.

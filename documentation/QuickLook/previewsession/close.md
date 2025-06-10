@@ -1,6 +1,6 @@
 # close()
 
-**Framework**: Quicklook  
+**Framework**: Quick Look  
 **Kind**: method
 
 Closes the preview session.

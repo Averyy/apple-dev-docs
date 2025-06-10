@@ -5,13 +5,21 @@
 
 A MaterialX version of USD Preview Surface.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Parameter Description
 
 #### Discussion
 
-The Preview Surface node produces a custom surface based on its input parameters. Connect the output of the Preview Surface node to the `Custom Surface` output of your material. Below is an example material that uses only the Preview Surface node to produce a gold-like texture and apply it to a sphere.
+The `Preview Surface` node produces a custom surface based on its input parameters. Connect the output of the `Preview Surface` node to the `Custom Surface` output of your material. Below is an example material that uses only the `Preview Surface` node to produce a gold-like texture and apply it to a sphere:
 
 
 ---

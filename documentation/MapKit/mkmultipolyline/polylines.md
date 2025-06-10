@@ -12,6 +12,7 @@ An array containing the polyline objects that make up the multipolyline object.
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 

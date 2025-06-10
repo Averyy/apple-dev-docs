@@ -1,6 +1,6 @@
 # recommendations()
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: method  
 **Required**: Yes
 
@@ -9,8 +9,9 @@ Returns a set of intent recommendations you use to offer pre-configured widgets 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
+- visionOS 26.0+ (Beta)
 - watchOS 10.0+
 
 ## Declaration
@@ -21,13 +22,15 @@ func recommendations() -> [AppIntentRecommendation<Self.Intent>]
 
 ## Mentions
 
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
 - [Making a configurable widget](making-a-configurable-widget.md)
+- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
 
 ## See Also
 
 - [func placeholder(in: Self.Context) -> Self.Entry](appintenttimelineprovider/placeholder(in:).md)
   Provides a timeline entry representing a placeholder version of the widget.
+- [func relevance() async -> WidgetRelevance<Self.Intent>](appintenttimelineprovider/relevance.md)
+  Provides an object containing attributes that describe when a specific widget is relevant.
 - [func snapshot(for: Self.Intent, in: Self.Context) async -> Self.Entry](appintenttimelineprovider/snapshot(for:in:).md)
   Provides a timeline entry representing the current time and state of a widget.
 - [func timeline(for: Self.Intent, in: Self.Context) async -> Timeline<Self.Entry>](appintenttimelineprovider/timeline(for:in:).md)

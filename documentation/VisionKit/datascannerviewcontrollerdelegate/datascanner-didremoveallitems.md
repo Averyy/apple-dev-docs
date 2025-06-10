@@ -1,6 +1,6 @@
 # dataScanner(_:didRemove:allItems:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method  
 **Required**: Yes
 

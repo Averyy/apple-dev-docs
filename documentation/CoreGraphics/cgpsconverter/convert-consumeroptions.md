@@ -25,10 +25,6 @@ The conversion is thread safe, however it is not possible to have more than one 
 
 > ❗ **Important**:  Although `CGPSConverterConvert` is thread safe (it uses locks to prevent more than one conversion at a time in the same process), it is not thread safe with respect to the Resource Manager. If your application uses the Resource Manager on a separate thread, you should either use locks to prevent `CGPSConverterConvert` from executing during your usage of the Resource Manager or you should perform your conversions using the Post Script converter in a separate process. In general, you can avoid this issue by using nib files instead of Resource Manager resources.
 
- Although `CGPSConverterConvert` is thread safe (it uses locks to prevent more than one conversion at a time in the same process), it is not thread safe with respect to the Resource Manager. If your application uses the Resource Manager on a separate thread, you should either use locks to prevent `CGPSConverterConvert` from executing during your usage of the Resource Manager or you should perform your conversions using the Post Script converter in a separate process.
-
-In general, you can avoid this issue by using nib files instead of Resource Manager resources.
-
 ## Parameters
 
 - `provider`: A Quartz data provider that supplies PostScript data.

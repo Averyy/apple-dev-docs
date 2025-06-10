@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_PreserveAlphaChannel
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A key that specifies whether to encode the alpha channel of input video frames.

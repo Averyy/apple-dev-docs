@@ -1,6 +1,6 @@
 # preferredVideoStabilizationMode
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The stabilization mode that’s the most appropriate for a video connection.

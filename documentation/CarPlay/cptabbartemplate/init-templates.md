@@ -13,6 +13,7 @@ Creates a tab bar template that displays the provided root templates as tabs.
 ## Declaration
 
 ```swift
+@MainActor
 init(templates: [CPTemplate])
 ```
 

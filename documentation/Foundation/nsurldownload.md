@@ -18,8 +18,6 @@ class NSURLDownload
 
 > ❗ **Important**:  This API is considered legacy. Use [`URLSession`](urlsession.md) instead.
 
- This API is considered legacy. Use [`URLSession`](urlsession.md) instead.
-
 The interface for [`NSURLDownload`](nsurldownload.md) provides methods to initialize a download, set the destination path and cancel loading the request.
 
 The delegate object assigned to each instance of this class should implement the methods defined by the [`NSURLDownloadDelegate`](nsurldownloaddelegate.md) protocol. These methods provide the delegate with the current status of in-progress asynchronous downloads and allow the delegate to customize the URL loading process. These delegate methods are called on the thread that started the asynchronous load operation for the associated [`NSURLDownload`](nsurldownload.md) object.

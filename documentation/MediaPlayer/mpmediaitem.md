@@ -138,6 +138,8 @@ You use attributes of media items to build media queries for searching the Media
 
 - [class MPMediaItemArtwork](mpmediaitemartwork.md)
   A graphical image, such as music album cover art, associated with a media item.
+- [class MPMediaItemAnimatedArtwork](mpmediaitemanimatedartwork.md)
+  An animated image, such as an animated music album cover art, for a media item.
 - [class MPMediaItemCollection](mpmediaitemcollection.md)
   A sorted set of media items from the media library.
 - [class MPMediaPlaylist](mpmediaplaylist.md)

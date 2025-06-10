@@ -35,6 +35,7 @@ Use a value of this type to indicate when to display a glass background that you
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -42,6 +43,16 @@ Use a value of this type to indicate when to display a glass background that you
   Fills the view’s background with an automatic glass background effect and container-relative rounded rectangle shape.
 - [func glassBackgroundEffect<S>(in: S, displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(in:displaymode:).md)
   Fills the view’s background with an automatic glass background effect and a shape that you specify.
+- [protocol GlassBackgroundEffect](glassbackgroundeffect.md)
+  A specification for the appearance of a glass background.
+- [struct AutomaticGlassBackgroundEffect](automaticglassbackgroundeffect.md)
+  The automatic glass background effect.
+- [struct GlassBackgroundEffectConfiguration](glassbackgroundeffectconfiguration.md)
+  A configuration used to build a custom effect.
+- [struct FeatheredGlassBackgroundEffect](featheredglassbackgroundeffect.md)
+  The feathered glass background effect.
+- [struct PlateGlassBackgroundEffect](plateglassbackgroundeffect.md)
+  The plate glass background effect.
 
 
 ---

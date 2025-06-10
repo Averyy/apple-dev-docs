@@ -1,6 +1,6 @@
 # leading
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 The leading position in the Dynamic Island for views of an expanded Live Activity.
@@ -8,7 +8,6 @@ The leading position in the Dynamic Island for views of an expanded Live Activit
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

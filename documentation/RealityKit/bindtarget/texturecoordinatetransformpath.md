@@ -10,6 +10,7 @@ The texture coordinate parameters for a given texture layer that an animation ca
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

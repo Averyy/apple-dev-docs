@@ -1,6 +1,6 @@
 # WKProcessPool
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An opaque token that you use to run multiple web views in a single process.

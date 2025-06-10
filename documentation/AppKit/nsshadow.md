@@ -22,7 +22,7 @@ A shadow has two positional parameters: an x-offset and a y-offset. Express thes
 
 In addition to its positional parameters, a shadow also contains a blur radius, which specifies how much the system blurs a drawn object’s image mask before compositing the image onto the destination. A value of `0` produces no blur. Larger values produce an increasingly large blurred shadow.
 
-You can use an [`NSShadow`](nsshadow.md) object in one of two ways. First, you can set it, like a color or a font, where `NSShadow` attributes apply to everything you draw until you apply another shadow or restore a previous graphics state. Second, you can use an `NSShadow` instance as the value for the [`shadow`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1524321-shadow) text attribute, so the system applies the shadow to the glyphs corresponding to the characters bearing this attribute.
+You can use an [`NSShadow`](nsshadow.md) object in one of two ways. First, you can set it, like a color or a font, where `NSShadow` attributes apply to everything you draw until you apply another shadow or restore a previous graphics state. Second, you can use an `NSShadow` instance as the value for the [`shadow`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/shadow) text attribute, so the system applies the shadow to the glyphs corresponding to the characters bearing this attribute.
 
 ## Topics
 
@@ -55,6 +55,7 @@ You can use an [`NSShadow`](nsshadow.md) object in one of two ways. First, you c
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

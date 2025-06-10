@@ -42,6 +42,7 @@ Use this type in a call to the [`scrollDismissesKeyboard(_:)`](view/scrolldismis
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

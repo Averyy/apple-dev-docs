@@ -1,6 +1,6 @@
 # Get Notification History
 
-**Framework**: Appstoreserverapi  
+**Framework**: App Store Server API  
 **Kind**: httpRequest
 
 Get a list of notifications that the App Store server attempted to send to your server.
@@ -41,4 +41,4 @@ The request body that includes the start and end dates, and optional query const
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/get-notification-history)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/get-notification-history)*

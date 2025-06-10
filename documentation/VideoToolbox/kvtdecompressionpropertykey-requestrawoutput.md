@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_RequestRAWOutput
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

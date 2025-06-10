@@ -23,8 +23,6 @@ If [`adjustSubviews()`](nssplitview/adjustsubviews().md) can change the size of 
 
 > ❗ **Important**:  If your split view uses Auto Layout to size its subviews, don’t implement this method.
 
- If your split view uses Auto Layout to size its subviews, don’t implement this method.
-
 Regardless of the value that this method returns, [`adjustSubviews()`](nssplitview/adjustsubviews().md) may change the origin of the subview. Nonresizable subviews may resize to prevent an invalid subview layout.
 
 If a split view has no delegate, or if its delegate doesn’t respond to this message, the split view behaves as if this method returns [`true`](https://developer.apple.com/documentation/swift/true).

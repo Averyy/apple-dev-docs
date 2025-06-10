@@ -1,6 +1,6 @@
 # Preparing your app to play haptics
 
-**Framework**: Corehaptics
+**Framework**: Core Haptics
 
 Set up your app to play haptics.
 
@@ -74,4 +74,4 @@ Once you’ve set up your app to play haptics, you can incorporate haptic patter
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/preparing-your-app-to-play-haptics)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/preparing-your-app-to-play-haptics)*

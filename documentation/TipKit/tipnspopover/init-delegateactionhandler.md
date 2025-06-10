@@ -12,7 +12,7 @@ Initializes a popover with the specified tip.
 
 ```swift
 @MainActor
-@preconcurrency required init(_ tip: any Tip, delegate: (any NSPopoverDelegate)? = nil, actionHandler: @escaping (Tips.Action) -> Void = { _ in })
+@preconcurrency required init(_ tip: any Tip, delegate: (any NSPopoverDelegate)? = nil, actionHandler: @escaping @MainActor (Tips.Action) -> Void = { _ in })
 ```
 
 ## Parameters

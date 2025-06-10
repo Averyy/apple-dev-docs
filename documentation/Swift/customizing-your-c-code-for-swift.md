@@ -51,4 +51,4 @@ extension Color {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/customizing-your-c-code-for-swift)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/customizing-your-c-code-for-swift)*

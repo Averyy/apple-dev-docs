@@ -59,6 +59,7 @@ for (index, subview) in subviews.enumerated() {
 - [Equatable](../Swift/Equatable.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

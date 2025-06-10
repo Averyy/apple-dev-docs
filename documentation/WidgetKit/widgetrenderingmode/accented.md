@@ -1,6 +1,6 @@
 # accented
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 The system divides the widget’s view hierarchy into an accent group and a default group, applying a different color to each group.
@@ -8,8 +8,9 @@ The system divides the widget’s view hierarchy into an accent group and a defa
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -20,8 +21,10 @@ static let accented: WidgetRenderingMode
 
 ## Mentions
 
-- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
+- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
 - [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
+- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
+- [Updating your widgets for visionOS](updating-your-widgets-for-visionos.md)
 - [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
 
 #### Discussion

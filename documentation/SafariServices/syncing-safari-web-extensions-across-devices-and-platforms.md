@@ -1,6 +1,6 @@
 # Syncing Safari web extensions across devices and platforms
 
-**Framework**: Safariservices
+**Framework**: Safari Services
 
 Let users install your extension on one device and then use and manage the extension on all their other iOS and macOS devices.
 
@@ -71,4 +71,4 @@ Next, configure your iOS extension for syncing:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/syncing-safari-web-extensions-across-devices-and-platforms)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/syncing-safari-web-extensions-across-devices-and-platforms)*

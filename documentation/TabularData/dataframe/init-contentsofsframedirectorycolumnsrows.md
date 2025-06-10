@@ -1,6 +1,6 @@
 # init(contentsOfSFrameDirectory:columns:rows:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: init
 
 Creates a data frame from a Turi Create scalable data frame.

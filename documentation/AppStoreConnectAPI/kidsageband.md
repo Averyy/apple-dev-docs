@@ -28,6 +28,7 @@ string KidsAgeBand
   String that represents the app’s age rating as it appears on the App Store for all platforms.
 - [type BrazilAgeRating](brazilagerating.md)
   String that represents the app’s age rating as it appears on the App Store in Brazil for all platforms.
+- [object AppInfoAgeRatingDeclarationLinkageResponse](appinfoageratingdeclarationlinkageresponse.md)
 
 
 ---

@@ -23,6 +23,7 @@ protocol SKTestFailure : Equatable, Sendable
 ### Inherits From
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [SKTestFailures.AppStoreSync](sktestfailures/appstoresync.md)
 - [SKTestFailures.AppTransaction](sktestfailures/apptransaction.md)

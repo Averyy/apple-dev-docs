@@ -1,6 +1,6 @@
 # insert(_:at:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Inserts a new element into the collection at the specified position.

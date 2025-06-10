@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: init
 
 Creates a new authorization status from the provided value.

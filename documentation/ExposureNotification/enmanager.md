@@ -1,6 +1,6 @@
 # ENManager
 
-**Framework**: Exposurenotification  
+**Framework**: Exposure Notification  
 **Kind**: class
 
 A class that manages exposure notifications.
@@ -33,7 +33,7 @@ After calling [`invalidate()`](enmanager/invalidate().md), your app can’t reus
 ## Topics
 
 ### Activating the Manager
-- [func activate(completionHandler: ENErrorHandler)](enmanager/activate(completionhandler:).md)
+- [func activate(completionHandler: ((any Error)?) -> Void)](enmanager/activate(completionhandler:).md)
   Prepares the manager for use.
 - [var activityHandler: ENActivityHandler?](enmanager/activityhandler.md)
   The handler that the framework invokes when the app activates a notification manager.
@@ -41,7 +41,7 @@ After calling [`invalidate()`](enmanager/invalidate().md), your app can’t reus
   The handler the system invokes to report activities that occurred while the app wasn’t running.
 - [struct ENActivityFlags](enactivityflags.md)
   Activities that occur while the app isn’t running.
-- [func setExposureNotificationEnabled(Bool, completionHandler: ENErrorHandler)](enmanager/setexposurenotificationenabled(_:completionhandler:).md)
+- [func setExposureNotificationEnabled(Bool, completionHandler: ((any Error)?) -> Void)](enmanager/setexposurenotificationenabled(_:completionhandler:).md)
   Enables or disables exposure notification.
 ### Obtaining Exposure Information
 - [func detectExposures(configuration: ENExposureConfiguration, diagnosisKeyURLs: [URL], completionHandler: ENDetectExposuresHandler) -> Progress](enmanager/detectexposures(configuration:diagnosiskeyurls:completionhandler:).md)
@@ -52,16 +52,16 @@ After calling [`invalidate()`](enmanager/invalidate().md), your app can’t reus
   Obtains information from the provided summary about the user’s exposure within a window of time.
 - [typealias ENGetExposureWindowsHandler](engetexposurewindowshandler.md)
   The handler the system invokes when the acquisition of windows completes.
-- [func getUserTraveled(completionHandler: ENGetUserTraveledHandler)](enmanager/getusertraveled(completionhandler:).md)
+- [func getUserTraveled(completionHandler: (Bool, (any Error)?) -> Void)](enmanager/getusertraveled(completionhandler:).md)
   Obtains information about the user’s travel within an exposure period.
 - [typealias ENGetUserTraveledHandler](engetusertraveledhandler.md)
   The handler the system invokes when acquistiion of the user’s travel status completes.
 - [func getExposureInfo(summary: ENExposureDetectionSummary, userExplanation: String, completionHandler: ENGetExposureInfoHandler) -> Progress](enmanager/getexposureinfo(summary:userexplanation:completionhandler:).md)
   Returns information about each exposure.
 ### Obtaining Exposure Keys
-- [func getDiagnosisKeys(completionHandler: ENGetDiagnosisKeysHandler)](enmanager/getdiagnosiskeys(completionhandler:).md)
+- [func getDiagnosisKeys(completionHandler: ([ENTemporaryExposureKey]?, (any Error)?) -> Void)](enmanager/getdiagnosiskeys(completionhandler:).md)
   Requests the temporary exposure keys from the user’s device to share with a server.
-- [func getTestDiagnosisKeys(completionHandler: ENGetDiagnosisKeysHandler)](enmanager/gettestdiagnosiskeys(completionhandler:).md)
+- [func getTestDiagnosisKeys(completionHandler: ([ENTemporaryExposureKey]?, (any Error)?) -> Void)](enmanager/gettestdiagnosiskeys(completionhandler:).md)
   Requests the temporary exposure keys, including the current key, used by this device for testing.
 - [class ENTemporaryExposureKey](entemporaryexposurekey.md)
   The key used to generate rolling proximity identifiers.
@@ -75,9 +75,9 @@ After calling [`invalidate()`](enmanager/invalidate().md), your app can’t reus
 - [var dispatchQueue: dispatch_queue_t](enmanager/dispatchqueue.md)
   The dispatch queue on which to invoke handlers.
 ### Preauthorizing Exposure Keys
-- [func requestPreAuthorizedDiagnosisKeys(completionHandler: ENErrorHandler)](enmanager/requestpreauthorizeddiagnosiskeys(completionhandler:).md)
+- [func requestPreAuthorizedDiagnosisKeys(completionHandler: ((any Error)?) -> Void)](enmanager/requestpreauthorizeddiagnosiskeys(completionhandler:).md)
   Requests diagnosis keys after the user authorizes sharing them.
-- [func preAuthorizeDiagnosisKeys(completionHandler: ENErrorHandler)](enmanager/preauthorizediagnosiskeys(completionhandler:).md)
+- [func preAuthorizeDiagnosisKeys(completionHandler: ((any Error)?) -> Void)](enmanager/preauthorizediagnosiskeys(completionhandler:).md)
   Allows users to authorize a one-time release of diagnosis keys within five days of the authorization.
 - [typealias ENDiagnosisKeysAvailableHandler](endiagnosiskeysavailablehandler.md)
   The handler the system invokes after requesting diagnosis keys.
@@ -124,4 +124,4 @@ After calling [`invalidate()`](enmanager/invalidate().md), your app can’t reus
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enmanager)*
+*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enmanager)*

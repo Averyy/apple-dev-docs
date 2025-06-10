@@ -1,6 +1,6 @@
 # WeatherCondition.sunShowers
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Rain with visible sun.

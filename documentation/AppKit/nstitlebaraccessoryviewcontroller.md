@@ -1,6 +1,6 @@
 # NSTitlebarAccessoryViewController
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An object that manages a custom view—known as an accessory view—in the title bar–toolbar area of a window.
@@ -65,6 +65,7 @@ Don’t override the `view` property in your `NSTitlebarAccessoryViewController`
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -76,4 +77,4 @@ Don’t override the `view` property in your `NSTitlebarAccessoryViewController`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstitlebaraccessoryviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstitlebaraccessoryviewcontroller)*

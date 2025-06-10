@@ -13,6 +13,7 @@ A Boolean value that determines whether the list item displays its Now Playing i
 ## Declaration
 
 ```swift
+@MainActor
 var isPlaying: Bool { get set }
 ```
 

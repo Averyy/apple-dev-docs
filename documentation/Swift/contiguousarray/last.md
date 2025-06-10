@@ -37,4 +37,4 @@ if let lastNumber = numbers.last {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/contiguousarray/last)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/contiguousarray/last)*

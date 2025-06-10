@@ -1,6 +1,6 @@
 # WindowGroup
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A scene that presents a group of identically structured windows.
@@ -19,6 +19,10 @@ A scene that presents a group of identically structured windows.
 ```swift
 struct WindowGroup<Content> where Content : View
 ```
+
+## Mentions
+
+- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
 
 #### Overview
 
@@ -260,4 +264,4 @@ The dismiss action doesn’t close the window if you call it from a modal — li
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/windowgroup)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/windowgroup)*

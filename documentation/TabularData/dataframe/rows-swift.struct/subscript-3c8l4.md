@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: subscript
 
 Accesses a contiguous subrange of the collection’s elements.

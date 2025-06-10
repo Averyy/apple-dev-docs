@@ -30,8 +30,6 @@ You can synchronize with an agent in either or both directions:
 
 > 💡 **Tip**:  If you use the [`GKSKNodeComponent`](gksknodecomponent.md) class to manage the relationship between an entity and a SpriteKit node,  set your [`GKSKNodeComponent`](gksknodecomponent.md) instance as the delegate for that entity’s agent, and GameplayKit will automatically synchronize the agent and its SpriteKit representation.
 
- If you use the [`GKSKNodeComponent`](gksknodecomponent.md) class to manage the relationship between an entity and a SpriteKit node,  set your [`GKSKNodeComponent`](gksknodecomponent.md) instance as the delegate for that entity’s agent, and GameplayKit will automatically synchronize the agent and its SpriteKit representation.
-
 To learn more about using goals and agents, see [`Agents, Goals, and Behaviors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Agent.html#//apple_ref/doc/uid/TP40015172-CH8) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Topics

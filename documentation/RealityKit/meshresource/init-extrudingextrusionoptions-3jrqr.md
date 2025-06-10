@@ -10,6 +10,7 @@ Synchronously generates a 3D mesh by extruding a 2D path.
 - iPadOS 18.0+
 - Mac Catalyst ?+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

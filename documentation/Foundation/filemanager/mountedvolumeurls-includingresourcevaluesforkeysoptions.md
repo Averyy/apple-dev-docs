@@ -26,8 +26,6 @@ An array of `NSURL` objects identifying the mounted volumes.
 
 > ❗ **Important**:  This method returns `nil` on platforms other than macOS.
 
- This method returns `nil` on platforms other than macOS.
-
 #### Discussion
 
 This call may block if I/O is required to determine values for the requested `propertyKeys`.

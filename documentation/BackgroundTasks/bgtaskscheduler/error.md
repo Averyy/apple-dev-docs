@@ -11,6 +11,7 @@ The Errors for the `BGTaskSchedulerError` domain.
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 
@@ -24,14 +25,16 @@ struct Error
 - [BGTaskScheduler.Error.Code](bgtaskscheduler/error/code.md)
   An enumeration of the task scheduling errors.
 - [static var notPermitted: BGTaskScheduler.Error.Code](bgtaskscheduler/error/notpermitted.md)
-  A task scheduling error indicating the app isn’t permitted to launch the task.
+  A task scheduling error that indicates the app isn’t permitted to launch the task.
 - [static var tooManyPendingTaskRequests: BGTaskScheduler.Error.Code](bgtaskscheduler/error/toomanypendingtaskrequests.md)
-  A task scheduling error indicating that there are too many pending tasks of the type requested.
+  A task scheduling error that indicates there are too many pending tasks of the type requested.
 - [static var unavailable: BGTaskScheduler.Error.Code](bgtaskscheduler/error/unavailable.md)
-  A task scheduling error indicating that the app or extension can’t schedule background work.
+  A task scheduling error that indicates the app or extension can’t schedule background work.
 ### Getting the error domain
 - [static var errorDomain: String](bgtaskscheduler/error/errordomain.md)
   The background tasks error domain as a string.
+### Type Properties
+- [static var immediateRunIneligible: BGTaskScheduler.Error.Code](bgtaskscheduler/error/immediaterunineligible.md)
 
 ## Relationships
 
@@ -41,6 +44,7 @@ struct Error
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

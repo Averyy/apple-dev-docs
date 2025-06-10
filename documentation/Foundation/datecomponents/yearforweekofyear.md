@@ -26,8 +26,6 @@ The Gregorian calendar defines a week to have 7 days, and a year to have 365 day
 
 > ❗ **Important**:  The values of [`weekOfYear`](datecomponents/weekofyear.md) and [`yearForWeekOfYear`](datecomponents/yearforweekofyear.md) depend on the calendar they are used with. For example, the ISO 8601 calendar starts a week on Monday, and uses the first Thursday to determine the first week of the year. However, the Gregorian calendar as used in North America starts the week on Sunday, and uses the year’s first Saturday to determine the first week.
 
- The values of [`weekOfYear`](datecomponents/weekofyear.md) and [`yearForWeekOfYear`](datecomponents/yearforweekofyear.md) depend on the calendar they are used with. For example, the ISO 8601 calendar starts a week on Monday, and uses the first Thursday to determine the first week of the year. However, the Gregorian calendar as used in North America starts the week on Sunday, and uses the year’s first Saturday to determine the first week.
-
 You can use the week-numbering year when specifying a date with [`DateComponents`](datecomponents.md), usually in combination with the [`weekOfYear`](datecomponents/weekofyear.md). The code listing below shows this approach. It creates a [`DateComponents`](datecomponents.md) instance specifying the first Friday (weekday 6) of the first week of 2016, which started on a Friday. Therefore, this date is January 1, 2016 in the Gregorian calendar. However, on the ISO 8601 calendar, the first week of 2016 begins on the following Monday. This means the first Friday in the first week of 2016 is January 8, 2016 on the ISO 8601 calendar.
 
 ```swift

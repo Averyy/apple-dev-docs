@@ -1,6 +1,6 @@
 # maximumHumidity
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The maximum amount of water vapor in the air for the day.

@@ -23,6 +23,13 @@ protocol GCGameControllerSceneDelegate : NSObjectProtocol
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
+## See Also
+
+- [var controllerPausedHandler: ((GCController) -> Void)?](gccontroller/controllerpausedhandler.md)
+  The block that the framework calls when the user presses the pause button on the controller.
+- [class GCEventInteraction](gceventinteraction.md)
+  An interaction that indicates the view’s intent to receive game controller events through the Game Controller framework.
+
 
 ---
 

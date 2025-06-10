@@ -22,10 +22,10 @@ case failed
 
 ## Mentions
 
-- [Processing a transaction](processing-a-transaction.md)
-- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 - [Testing an interrupted purchase](testing-an-interrupted-purchase.md)
 - [Implementing promotional offers in your app](implementing-promotional-offers-in-your-app.md)
+- [Processing a transaction](processing-a-transaction.md)
+- [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
 
 #### Discussion
 

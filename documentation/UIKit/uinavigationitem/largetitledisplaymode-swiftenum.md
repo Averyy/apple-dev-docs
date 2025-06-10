@@ -40,11 +40,15 @@ enum LargeTitleDisplayMode
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [var title: String?](uinavigationitem/title.md)
   The navigation item’s title that displays in the navigation bar.
+- [var attributedTitle: AttributedString?](uinavigationitem/attributedtitle-25fxb.md)
+- [var largeTitle: String?](uinavigationitem/largetitle.md)
+  String to be used as the large title.
 - [var largeTitleDisplayMode: UINavigationItem.LargeTitleDisplayMode](uinavigationitem/largetitledisplaymode-swift.property.md)
   The mode for displaying the title of the navigation bar.
 

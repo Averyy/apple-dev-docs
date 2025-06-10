@@ -1,6 +1,6 @@
 # insertRule
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: uid
 
 Adds a keyframe rule to the collection of keyframes.

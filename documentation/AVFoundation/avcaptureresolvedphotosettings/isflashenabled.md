@@ -1,6 +1,6 @@
 # isFlashEnabled
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value indicating whether the camera flash fires for this capture.

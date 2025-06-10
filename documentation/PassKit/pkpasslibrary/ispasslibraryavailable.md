@@ -1,6 +1,6 @@
 # isPassLibraryAvailable()
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: method
 
 Returns a Boolean value that indicates whether the pass library is available.

@@ -1,6 +1,6 @@
 # AVPlaybackCoordinator
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: class
 
 An object that coordinates the playback of players in a connected group.
@@ -77,6 +77,7 @@ The framework provides two playback coordinator subclasses that manage different
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -92,4 +93,4 @@ The framework provides two playback coordinator subclasses that manage different
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/avplaybackcoordinator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avplaybackcoordinator)*

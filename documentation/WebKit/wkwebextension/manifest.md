@@ -1,6 +1,6 @@
 # manifest
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The parsed manifest as a dictionary.

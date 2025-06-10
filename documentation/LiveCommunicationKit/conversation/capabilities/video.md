@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-The conversation includes video streams to be displayed to or sent from the user.
+The conversation sends or displays video streams.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,17 @@ The conversation includes video streams to be displayed to or sent from the user
 ```swift
 static let video: Conversation.Capabilities
 ```
+
+## See Also
+
+- [static let merging: Conversation.Capabilities](conversation/capabilities/merging.md)
+  The conversation can merge with another conversation to create a new conversation.
+- [static let pausing: Conversation.Capabilities](conversation/capabilities/pausing.md)
+  The conversation is active and can be temporarily paused.
+- [static let playingTones: Conversation.Capabilities](conversation/capabilities/playingtones.md)
+  The conversation supports playing tone sequences.
+- [static let unmerging: Conversation.Capabilities](conversation/capabilities/unmerging.md)
+  The conversation is the result of merging two conversations and can be separated into the original conversations.
 
 
 ---

@@ -38,6 +38,8 @@ class NEDNSSettings
 - [var dnsProtocol: NEDNSProtocol](nednssettings/dnsprotocol.md)
   The DNS protocol used by the server, such as HTTPS or TLS.
 - [enum NEDNSProtocol](nednsprotocol.md)
+### Instance Properties
+- [var allowFailover: Bool](nednssettings/allowfailover.md)
 
 ## Relationships
 

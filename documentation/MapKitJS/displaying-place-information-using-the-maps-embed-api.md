@@ -1,6 +1,6 @@
 # Displaying place information using the Maps Embed API
 
-**Framework**: Mapkitjs
+**Framework**: MapKit JS
 
 Show place information on a map using a URL.
 
@@ -17,7 +17,7 @@ Alternatively, you can construct the snippet yourself by manually adjusting the 
 
 > **Note**:  For greater control over the presentation style of the Place Card and map, use [`mapkit.PlaceDetail`](mapkit.placedetail.md).
 
-![A screenshot showing the Place Card for the Apple Park Visitor Center above a map of the area. The hours of operation, website, phone number, and address are in the Place Card.](https://docs-assets.developer.apple.com/published/55dbe945a52bfa33e2984281e6a25a97/media-4422945%402x.png)
+![A screenshot showing the Place Card for the Apple Park Visitor Center above a map of the area. The hours of operation, website, phone number, and address are in the Place Card.](https://docs-assets.developer.apple.com/published/c3e6646de27b9b9915804b9b27b64218/displaying-place-information-using-the-maps-embed-api-01%402x.png)
 
 ## See Also
 
@@ -31,4 +31,4 @@ Alternatively, you can construct the snippet yourself by manually adjusting the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/displaying-place-information-using-the-maps-embed-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/displaying-place-information-using-the-maps-embed-api)*

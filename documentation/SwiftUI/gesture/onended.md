@@ -29,6 +29,10 @@ func onEnded(_ action: @escaping (Self.Value) -> Void) -> _EndedGesture<Self>
 
 A gesture that triggers `action` when the gesture ends.
 
+#### Discussion
+
+> ❗ **Important**: The action is only performed if the gesture ends successfully. Use a `@GestureState` property to track state that is reset regardless of how the gesture ends.
+
 ## Parameters
 
 - `action`: The action to perform when this gesture ends. The    closure’s parameter contains the final value of the gesture.

@@ -1,4 +1,4 @@
-# Set Recovery Lock Command
+# Set Recovery Lock
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -7,8 +7,6 @@ Set or clear the Recovery Lock password.
 
 **Availability**:
 - macOS 11.5+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -20,29 +18,29 @@ This command is only available with Apple silicon.
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | - |
-| Requires Supervision | - |
-| Allowed in User Enrollment | - |
-| Required Access Right | DeviceLockAndRemovePasscode |
+| Device channel | macOS |
+| User channel | NA |
+| Requires supervision | macOS |
+| Allowed in user enrollment | NA |
+| Required access right | DeviceLockAndRemovePasscode |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object SetRecoveryLockCommand](setrecoverylockcommand.md)
-  The command to set the password for Recovery Lock.
+  The command to set or clear the Recovery Lock password.
 - [object SetRecoveryLockResponse](setrecoverylockresponse.md)
-  A response from the device after it sets the password for Recovery Lock.
+  A response from the device after it processes the command to set or clear the Recovery Lock password.
 
 ## Request Body
 
-The command to set the password for Recovery Lock.
+The request object the server returns for the Set Recovery Lock Command.
 
 ## See Also
 
-- [Verify Recovery Lock Command](verify-recovery-lock-command.md)
+- [Verify Recovery Lock](verify-recovery-lock-command.md)
   Verify the device’s Recovery Lock password.
 
 

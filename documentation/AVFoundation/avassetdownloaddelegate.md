@@ -39,12 +39,16 @@ protocol AVAssetDownloadDelegate : URLSessionTaskDelegate
   Tells the delegate that the aggregate download task loaded a new time range.
 - [func urlSession(URLSession, aggregateAssetDownloadTask: AVAggregateAssetDownloadTask, didCompleteFor: AVMediaSelection)](avassetdownloaddelegate/urlsession(_:aggregateassetdownloadtask:didcompletefor:).md)
   Tells the delegate that a child task finished downloading a media selection.
+### Instance Methods
+- [func urlSession(URLSession, assetDownloadTask: AVAssetDownloadTask, didReceive: AVMetricEvent)](avassetdownloaddelegate/urlsession(_:assetdownloadtask:didreceive:).md)
+  Sent when a download task receives an AVMetricEvent.
 
 ## Relationships
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [URLSessionDelegate](../Foundation/URLSessionDelegate.md)
 - [URLSessionTaskDelegate](../Foundation/URLSessionTaskDelegate.md)
 

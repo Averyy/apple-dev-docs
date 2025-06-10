@@ -128,4 +128,4 @@ If you distribute your app using TestFlight or through the App Store, you can vi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/distributing-your-app-for-beta-testing-and-releases)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases)*

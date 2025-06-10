@@ -1,6 +1,6 @@
 # setDestinationWithName(_:for:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Creates a link rectangle in the current page that jumps the PDF viewer to the named destination when clicked.

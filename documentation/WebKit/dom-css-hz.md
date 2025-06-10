@@ -1,6 +1,6 @@
 # DOM_CSS_HZ
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

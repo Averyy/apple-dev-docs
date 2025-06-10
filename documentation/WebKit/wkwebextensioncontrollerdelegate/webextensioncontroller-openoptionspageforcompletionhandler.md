@@ -1,6 +1,6 @@
 # webExtensionController(_:openOptionsPageFor:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when an extension context requests its options page to be opened.

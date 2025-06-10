@@ -44,6 +44,7 @@ For more details, see [`Cocoa Drawing Guide`](https://developer.apple.comhttps:/
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

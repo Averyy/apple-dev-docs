@@ -1,6 +1,6 @@
 # Registering an ad network
 
-**Framework**: Adattributionkit
+**Framework**: AdAttributionKit
 
 Use the AdAttributionKit APIs for your ad campaigns after registering your ad network with Apple.
 
@@ -54,8 +54,10 @@ Send your public key file to Apple when you register your ad network.
   Set up a publisher app to participate in ad campaigns.
 - [Configuring an advertised app](configuring-an-advertised-app.md)
   Prepare an advertised app to participate in ad campaigns.
+- [Configuring attribution rules for your app](configuring-attribution-rules-for-your-app.md)
+  Tune aspects of attribution flow, including the time available to register impressions and the minimum time your app is willing to accept conversions.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AdAttributionKit/registering-an-ad-network)*
+*[View on Apple Developer](https://developer.apple.com/documentation/adattributionkit/registering-an-ad-network)*

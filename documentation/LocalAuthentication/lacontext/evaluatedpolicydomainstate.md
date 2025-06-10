@@ -1,6 +1,6 @@
 # evaluatedPolicyDomainState
 
-**Framework**: Localauthentication  
+**Framework**: Local Authentication  
 **Kind**: property
 
 The current state of the evaluated policy domain.

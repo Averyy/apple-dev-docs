@@ -114,12 +114,18 @@ struct FoundationAttributes
 ### Instance Properties
 - [let byteCount: AttributeScopes.FoundationAttributes.ByteCountAttribute](attributescopes/foundationattributes/bytecount.md)
 - [let durationField: AttributeScopes.FoundationAttributes.DurationFieldAttribute](attributescopes/foundationattributes/durationfield.md)
+- [let listItemDelimiter: AttributeScopes.FoundationAttributes.ListItemDelimiterAttribute](attributescopes/foundationattributes/listitemdelimiter.md)
 - [let localizedNumberFormat: AttributeScopes.FoundationAttributes.LocalizedNumberFormatAttribute](attributescopes/foundationattributes/localizednumberformat.md)
 - [let measurement: AttributeScopes.FoundationAttributes.MeasurementAttribute](attributescopes/foundationattributes/measurement.md)
+- [let writingDirection: AttributeScopes.FoundationAttributes.WritingDirectionAttribute](attributescopes/foundationattributes/writingdirection.md)
+  The base writing direction of a paragraph.
 ### Enumerations
 - [AttributeScopes.FoundationAttributes.ByteCountAttribute](attributescopes/foundationattributes/bytecountattribute.md)
 - [AttributeScopes.FoundationAttributes.DurationFieldAttribute](attributescopes/foundationattributes/durationfieldattribute.md)
+- [AttributeScopes.FoundationAttributes.ListItemDelimiterAttribute](attributescopes/foundationattributes/listitemdelimiterattribute.md)
 - [AttributeScopes.FoundationAttributes.LocalizedNumberFormatAttribute](attributescopes/foundationattributes/localizednumberformatattribute.md)
+- [AttributeScopes.FoundationAttributes.WritingDirectionAttribute](attributescopes/foundationattributes/writingdirectionattribute.md)
+  The attribute key for the base writing direction of a paragraph.
 
 ## Relationships
 

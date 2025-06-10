@@ -1,6 +1,6 @@
 # xpc_session_copy_description(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 **Availability**:

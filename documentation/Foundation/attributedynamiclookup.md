@@ -53,6 +53,7 @@ public extension AttributeDynamicLookup {
   Returns the attributed string key for a specified AppKit key path.
 ### Subscripts
 - [subscript<T>(dynamicMember _: KeyPath<AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes, T>) -> T](attributedynamiclookup/subscript(dynamicmember:)-30vmv.md)
+- [subscript<T>(dynamicMember _: KeyPath<AttributeScopes.SpeechAttributes, T>) -> T](attributedynamiclookup/subscript(dynamicmember:)-3ft4y.md)
 - [subscript<T>(dynamicMember _: KeyPath<AttributeScopes.AccessibilityAttributes, T>) -> T](attributedynamiclookup/subscript(dynamicmember:)-7vcf2.md)
 
 ## Relationships

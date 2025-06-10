@@ -31,6 +31,7 @@ This class defines the base class for property identifiers.
 ### Conforms To
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -81,6 +81,7 @@ A tab bar item can display a supplementary value in a badge that provides extra 
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIAppearance](uiappearance.md)
 - [UIPopoverPresentationControllerSourceItem](uipopoverpresentationcontrollersourceitem.md)
@@ -104,6 +105,7 @@ A tab bar item can display a supplementary value in a badge that provides extra 
   A control that displays one or more buttons in a tab bar for selecting between different subtasks, views, or modes in an app.
 - [class UITab](uitab.md)
   An object that manages a tab in a tab bar.
+- [class UITabAccessory](uitabaccessory.md)
 - [class UISearchTab](uisearchtab.md)
   A tab subclass that represents the system’s search tab.
 - [class UITabGroup](uitabgroup.md)

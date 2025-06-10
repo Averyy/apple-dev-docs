@@ -23,7 +23,7 @@ A capture device’s [`activeVideoMinFrameDuration`](avcapturedevice/activevideo
 
 If you wish to use a particular device format but run it only at lower frame rates (for instance, only run a 1080p240 fps format at a maximum frame rate of 60), set the input’s [`videoMinFrameDurationOverride`](avcapturedeviceinput/videominframedurationoverride.md) property to the reciprocal of the maximum frame rate you intend to use before starting the session (or within a [`beginConfiguration()`](avcapturesession/beginconfiguration().md) / [`commitConfiguration()`](avcapturesession/commitconfiguration().md) block while running the session).
 
-This property’s default value is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid). When you remove a device input from a session and then add it back, this property reverts to its default value.
+This property’s default value is [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid). When you remove a device input from a session and then add it back, this property reverts to its default value.
 
 ## See Also
 

@@ -56,6 +56,7 @@ Except for [`AccessibilityHeadingLevel.h1`](accessibilityheadinglevel/h1.md), be
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

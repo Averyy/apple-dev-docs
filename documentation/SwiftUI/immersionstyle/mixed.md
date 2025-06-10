@@ -16,7 +16,7 @@ static var mixed: MixedImmersionStyle { get }
 
 #### Discussion
 
-When this immersion style is selected, the immersion amount reported by the closure of `View/onImmersionChange(_:)` is `0.0`.
+When this immersion style is selected, the immersion amount reported by the closure of [`onImmersionChange(initial:_:)`](view/onimmersionchange(initial:_:).md) is `0.0`.
 
 Use the [`immersionStyle(selection:in:)`](scene/immersionstyle(selection:in:).md) scene modifier to specify this style for an [`ImmersiveSpace`](immersivespace.md). However, this is the default immersion style if you don’t specify one.
 

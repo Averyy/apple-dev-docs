@@ -55,4 +55,4 @@ For more information on how to enable Password AutoFill behavior in web apps, se
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/enabling-password-autofill-on-a-text-input-view)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/enabling-password-autofill-on-a-text-input-view)*

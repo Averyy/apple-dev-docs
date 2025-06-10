@@ -24,8 +24,6 @@ init(format: AVAudioFormat)
 
 > ❗ **Important**:  The audio stream format must be a linear PCM (pulse code modulation).
 
- The audio stream format must be a linear PCM (pulse code modulation).
-
 ## Parameters
 
 - `format`: The audio format of an audio stream.

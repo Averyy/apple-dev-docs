@@ -1,6 +1,6 @@
 # didMoveTab(_:from:in:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Should be called by the app when a tab is moved to fire appropriate events with all loaded web extensions.

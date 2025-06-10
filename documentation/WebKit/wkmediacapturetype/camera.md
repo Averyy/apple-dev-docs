@@ -1,6 +1,6 @@
 # WKMediaCaptureType.camera
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A media device that can capture video.

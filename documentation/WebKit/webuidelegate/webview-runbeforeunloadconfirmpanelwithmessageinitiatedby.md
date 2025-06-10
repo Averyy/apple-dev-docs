@@ -1,6 +1,6 @@
 # webView(_:runBeforeUnloadConfirmPanelWithMessage:initiatedBy:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Displays a confirmation panel containing the specified message before a window closes.

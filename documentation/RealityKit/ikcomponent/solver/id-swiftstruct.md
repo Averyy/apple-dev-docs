@@ -10,6 +10,7 @@ The solver instance identifier type.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -17,20 +18,6 @@ The solver instance identifier type.
 ```swift
 struct ID
 ```
-
-## Topics
-
-### Operators
-- [static func == (IKComponent.Solver.ID, IKComponent.Solver.ID) -> Bool](ikcomponent/solver/id-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](ikcomponent/solver/id-swift.struct/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](ikcomponent/solver/id-swift.struct/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](ikcomponent/solver/id-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

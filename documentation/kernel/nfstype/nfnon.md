@@ -1,0 +1,18 @@
+# NFNON
+
+**Framework**: Kernel  
+**Kind**: econst
+
+**Availability**:
+- macOS 13.0+
+
+## Declaration
+
+```swift
+NFNON = 0
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/nfstype/nfnon)*

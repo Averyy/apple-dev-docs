@@ -1,6 +1,6 @@
 # openUntitledDocumentAndDisplay(_:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Creates a new untitled document, presents its user interface if `displayDocument` is [`true`](https://developer.apple.com/documentation/swift/true), and returns the document if successful.

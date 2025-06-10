@@ -25,7 +25,7 @@ func insertRouteData(_ routeData: [CLLocation]) async throws
 
 #### Discussion
 
-Use this method to asynchronously add one or more [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) objects to the series. The [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) objects may be inserted in any order; the builder sorts them by date when finalizing the route.
+Use this method to asynchronously add one or more doc://com.apple.documentation/documentation/corelocation/cllocation objects to the series. The doc://com.apple.documentation/documentation/corelocation/cllocation objects may be inserted in any order; the builder sorts them by date when finalizing the route.
 
 ## Parameters
 

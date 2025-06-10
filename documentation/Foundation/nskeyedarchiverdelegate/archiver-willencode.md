@@ -26,7 +26,7 @@ Either `object` or a different object to be encoded in its stead. The delegate c
 
 #### Discussion
 
-This method is called after the original object may have replaced itself with [`replacementObject(for:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/replacementObject(for:)-60vwc):.
+This method is called after the original object may have replaced itself with doc://com.apple.documentation/documentation/objectivec/nsobject/1417663-replacementobject:.
 
 This method is called whether or not the object is being encoded conditionally.
 

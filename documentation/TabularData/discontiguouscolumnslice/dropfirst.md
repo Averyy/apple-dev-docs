@@ -1,6 +1,6 @@
 # dropFirst(_:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns a subsequence containing all but the given number of initial elements.

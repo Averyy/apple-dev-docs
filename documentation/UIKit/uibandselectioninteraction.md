@@ -1,6 +1,6 @@
 # UIBandSelectionInteraction
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An object that tracks the selection of multiple items using pointer-based input.
@@ -99,4 +99,4 @@ view.addInteraction(bandSelectionInteraction)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uibandselectioninteraction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uibandselectioninteraction)*

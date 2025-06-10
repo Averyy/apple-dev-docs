@@ -54,6 +54,7 @@ struct FullyConnectedNetworkMultiLabelClassifierModel<Scalar, Label> where Scala
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transformer](transformer.md)
 
 ## See Also

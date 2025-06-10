@@ -19,7 +19,7 @@ var clickedPathComponentCell: NSPathComponentCell? { get }
 
 When setting, an array of `NSPathComponentCell` objects is automatically set, based on the path in `url`. The type of `NSPathComponentCell` objects created can be controlled by subclassing `NSPathCell` and overriding [`pathComponentCellClass`](nspathcell/pathcomponentcellclass.md).
 
-If `url` is a file URL (returns [`true`](https://developer.apple.com/documentation/swift/true) from [`isFileURL`](https://developer.apple.com/documentation/foundation/nsurl/1408782-isfileurl)), the images are automatically filled with file icons, if the path exists. The URL value itself is stored in the `objectValue` property of the cell.
+If `url` is a file URL (returns [`true`](https://developer.apple.com/documentation/swift/true) from [`isFileURL`](https://developer.apple.com/documentation/Foundation/NSURL/isFileURL)), the images are automatically filled with file icons, if the path exists. The URL value itself is stored in the `objectValue` property of the cell.
 
 ## Parameters
 

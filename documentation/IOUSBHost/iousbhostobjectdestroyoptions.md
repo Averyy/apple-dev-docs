@@ -16,11 +16,11 @@ struct IOUSBHostObjectDestroyOptions
 #### Overview
 
 ```None
-          the device will not be reset and drivers will not be re-registered for matching.  This allows for IOUSBHostDevice
-          objects that were initialized with <code>IOUSBHostObjectInitOptionsDeviceCapture</code> to honor the
-          <code>kUSBHostMessageDeviceIsRequestingClose</code> message.
+         the device will not be reset and drivers will not be re-registered for matching.  This allows for IOUSBHostDevice
+         objects that were initialized with <code>IOUSBHostObjectInitOptionsDeviceCapture</code> to honor the
+         <code>kUSBHostMessageDeviceIsRequestingClose</code> message.
 
-          This option is only valid for macOS
+         This option is only valid for macOS
 ```
 
 ## Topics
@@ -39,6 +39,7 @@ struct IOUSBHostObjectDestroyOptions
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

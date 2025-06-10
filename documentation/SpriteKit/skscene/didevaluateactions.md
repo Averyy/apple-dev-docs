@@ -17,6 +17,7 @@ Tells your app to peform any necessary logic after scene actions are evaluated.
 ## Declaration
 
 ```swift
+@MainActor
 func didEvaluateActions()
 ```
 

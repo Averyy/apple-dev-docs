@@ -1,6 +1,6 @@
 # WeatherAlert.WeatherAlertData.Area
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 **Availability**:

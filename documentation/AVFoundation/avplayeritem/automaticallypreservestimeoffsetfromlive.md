@@ -1,6 +1,6 @@
 # automaticallyPreservesTimeOffsetFromLive
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that indicates whether the player preserves its time offset from the live time after a buffering operation.

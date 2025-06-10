@@ -1,8 +1,7 @@
 # resetTextureAccessCounters(_:region:mipLevel:slice:)
 
 **Framework**: Metal  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Encodes a command that resets a sparse texture’s access data for a specific region, mipmap level, and slice.
 

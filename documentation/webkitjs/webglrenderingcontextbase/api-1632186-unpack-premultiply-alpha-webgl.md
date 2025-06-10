@@ -1,6 +1,6 @@
 # UNPACK_PREMULTIPLY_ALPHA_WEBGL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

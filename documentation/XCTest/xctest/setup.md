@@ -1,6 +1,6 @@
 # setUp()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Provides an opportunity to reset state before calling each test method in a test case.

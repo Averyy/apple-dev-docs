@@ -28,8 +28,6 @@ A Boolean that is [`true`](https://developer.apple.com/documentation/swift/true)
 
 > ❗ **Important**: Even if this function returns true, you must still call [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:).md) because the evaluation can still fail if something changes between the initial evaluation and the reevaluation.
 
-Even if this function returns true, you must still call [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:).md) because the evaluation can still fail if something changes between the initial evaluation and the reevaluation.
-
 ## Parameters
 
 - `trust`: The trust management object whose exception list you wish to modify.

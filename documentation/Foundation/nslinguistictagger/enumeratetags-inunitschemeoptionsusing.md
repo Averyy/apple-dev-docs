@@ -30,8 +30,6 @@ This method’s block is called for all tokens intersecting a given range, suppl
 
 > ❗ **Important**:  This method enumerates over the ranges of all tokens that intersect the specified range.
 
- This method enumerates over the ranges of all tokens that intersect the specified range.
-
 ## Parameters
 
 - `range`: The range to analyze.

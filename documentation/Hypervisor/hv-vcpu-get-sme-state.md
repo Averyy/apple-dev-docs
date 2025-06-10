@@ -22,8 +22,6 @@ func hv_vcpu_get_sme_state(_ vcpu: hv_vcpu_t, _ sme_state: UnsafeMutablePointer<
 
 > ❗ **Important**:  You must call this on the owning thread.
 
- You must call this on the owning thread.
-
 This SME state consists of the streaming Scalable Vector Extension (SVE) mode (PSTATE.SM) and ZA storage enable (PSTATE.ZA). In streaming SVE mode, the system aliases the SIMD Q registers to the bottom `128` bits of the corresponding Z register, and any modification reflects on the Z register state.
 
 ## Parameters

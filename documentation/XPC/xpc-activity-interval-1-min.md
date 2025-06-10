@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_INTERVAL_1_MIN
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A constant that represents a 1-minute time interval.

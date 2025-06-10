@@ -28,8 +28,6 @@ The interval state that the signposter derives from the specified `id` parameter
 
 > ❗ **Important**:  Don’t create an instance of [`SignpostMetadata`](signpostmetadata.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
 
- Don’t create an instance of [`SignpostMetadata`](signpostmetadata.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
-
 The signposter uses a signpost ID to pair the beginning and the end of a signposted interval, which is necessary because multiple intervals with the same configuration and scope can be in-flight simultaneously. If only one interval with a specific configuration can execute at any particular time, use [`exclusive`](ossignpostid/exclusive.md) for the `id` parameter. Otherwise, use the [`makeSignpostID()`](ossignposter/makesignpostid().md) and [`makeSignpostID(from:)`](ossignposter/makesignpostid(from:).md) methods to generate a signpost identifier.
 
 To end a signposted interval, pass the return value to one of the [`endInterval(_:_:)`](ossignposter/endinterval(_:_:).md) or [`endInterval(_:_:_:)`](ossignposter/endinterval(_:_:_:).md) methods. If you don’t have access to the returned interval state when you want to end the signposted interval, recreate it by passing the same signpost ID to the [`beginState(id:)`](ossignpostintervalstate/beginstate(id:).md) method.

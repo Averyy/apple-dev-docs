@@ -70,13 +70,13 @@ struct ContentView: View {
 
 The old and new [`Viewpoint3D`](viewpoint3d.md) provided to the action are relative to the center of the volume.
 
-Reading this value is only valid inside a [`View`](view.md) that inherits the environment of a [`Scene`](scene.md) created with a [`VolumetricWindowStyle`](volumetricwindowstyle.md). This value will be equivalent to [`standard`](viewpoint3d/standard.md) when read within a standard window.
+Reading this value is only valid inside a [`View`](view.md) that inherits the environment of a [`Scene`](scene.md) created with a [`VolumetricWindowStyle`](volumetricwindowstyle.md).
 
 ## Parameters
 
 - `updateStrategy`: Whether the action should be run for all viewpoint   changes or only for supported viewpoint changes.
 - `initial`: Whether the action should be run when this view initially   appears.
-- `action`: A closure to run when the viewpoint changes. The closure is   also run when the volume is first opened.
+- `action`: A closure to run when the viewpoint changes. The closure is   also run when the volume is first opened if   is  .
 
 ## See Also
 
@@ -102,6 +102,8 @@ Reading this value is only valid inside a [`View`](view.md) that inherits the en
   The current limitations of the device tracking the user’s surroundings.
 - [struct WorldTrackingLimitation](worldtrackinglimitation.md)
   A structure to represent limitations of tracking the user’s surroundings.
+- [struct SurfaceSnappingInfo](surfacesnappinginfo.md)
+  A type representing information about the window scenes snap state.
 
 
 ---

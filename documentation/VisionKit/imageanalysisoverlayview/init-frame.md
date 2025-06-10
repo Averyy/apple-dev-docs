@@ -1,6 +1,6 @@
 # init(frame:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: init
 
 Creates an overlay view with the specified frame rectangle.

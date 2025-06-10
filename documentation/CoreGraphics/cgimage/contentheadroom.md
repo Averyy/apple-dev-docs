@@ -20,10 +20,11 @@ var contentHeadroom: Float { get }
 
 ## See Also
 
-- [var byteOrderInfo: CGImageByteOrderInfo](cgimage/byteorderinfo.md)
-- [var containsImageSpecificToneMappingMetadata: Bool](cgimage/containsimagespecifictonemappingmetadata.md)
-- [var pixelFormatInfo: CGImagePixelFormatInfo](cgimage/pixelformatinfo.md)
-- [var shouldToneMap: Bool](cgimage/shouldtonemap.md)
+- [func CGImageCalculateContentHeadroom(CGImage) -> Float](cgimagecalculatecontentheadroom(_:).md)
+- [func CGImageGetContentAverageLightLevel(CGImage) -> Float](cgimagegetcontentaveragelightlevel(_:).md)
+- [func CGImageCalculateContentAverageLightLevel(CGImage) -> Float](cgimagecalculatecontentaveragelightlevel(_:).md)
+- [func CGImageCreateCopyWithContentAverageLightLevel(Float, CGImage) -> CGImage?](cgimagecreatecopywithcontentaveragelightlevel(_:_:).md)
+- [func CGImageCreateCopyWithCalculatedHDRStats(CGImage) -> CGImage?](cgimagecreatecopywithcalculatedhdrstats(_:).md)
 
 
 ---

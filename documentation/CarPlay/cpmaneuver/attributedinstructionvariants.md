@@ -1,6 +1,6 @@
 # attributedInstructionVariants
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: property
 
 An array of attributed instruction variants for the maneuver.

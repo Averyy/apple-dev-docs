@@ -1,6 +1,6 @@
 # Relationship(_:deleteRule:minimumModelCount:maximumModelCount:originalName:inverse:hashModifier:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: macro
 
 Specifies the options that SwiftData needs to manage the annotated property as a relationship between two models.

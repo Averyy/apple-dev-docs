@@ -1,7 +1,7 @@
 # CIWarpKernel
 
 **Framework**: Core Image  
-**Kind**: cl
+**Kind**: class
 
 A GPU-based image-processing routine that processes only the geometry information in an image, used to create custom Core Image filters.
 
@@ -10,13 +10,13 @@ A GPU-based image-processing routine that processes only the geometry informatio
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS 9.0+
+- tvOS ?+
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
-class CIWarpKernel : CIKernel
+class CIWarpKernel
 ```
 
 #### Overview
@@ -24,11 +24,11 @@ class CIWarpKernel : CIKernel
 The kernel language routine for a warp kernel has the following characteristics:
 
 - It uses exactly one input image.
-- Its return type is `vec2 `(Core Image Kernel Language) or `float2` (Metal Shading Language), specifying a position in source image coordinates. 
+- Its return type is `vec2` (Core Image Kernel Language) or `float2` (Metal Shading Language), specifying a position in source image coordinates.
 
 A warp kernel routine requires no input parameters (but can use additional custom parameters you declare). Typically, a warp kernel uses the destination coordinate function to look up the coordinates of the destination pixel currently being rendered, then computes a corresponding position in source image coordinates (output using the `return` keyword). Core Image then samples from the source image at the returned coordinates to produce a pixel color for the output image. For example, the Metal Shading Language source below implements a filter that passes through its input image unchanged.
 
-```other
+```c
 #include <CoreImage/CoreImage.h>
  
 extern "C" {
@@ -42,7 +42,7 @@ extern "C" {
 
 The equivalent code in Core Image Kernel Language is:
 
-```other
+```c
 kernel vec2 do_nothing() {
     return destCoord();
 }
@@ -53,20 +53,29 @@ The Core Image Kernel Language is a dialect of the OpenGL Shading Language. See 
 ## Topics
 
 ### Creating a Kernel
-- [init?(source: String)](ciwarpkernel/1438278-init.md)
+- [convenience init?(source: String)](ciwarpkernel/init(source:).md)
   Creates a warp kernel object from the specified kernel source code.
 ### Applying a Kernel to Filter an Image
-- [func apply(extent: CGRect, roiCallback: CIKernelROICallback, image: CIImage, arguments: [Any]) -> CIImage?](ciwarpkernel/1437798-apply.md)
+- [func apply(extent: CGRect, roiCallback: CIKernelROICallback, image: CIImage, arguments: [Any]) -> CIImage?](ciwarpkernel/apply(extent:roicallback:image:arguments:).md)
   Creates a new image using the kernel and the specified input image and arguments.
 
 ## Relationships
 
 ### Inherits From
 - [CIKernel](cikernel.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [Writing Custom Kernels](writing_custom_kernels.md)
+- [Writing Custom Kernels](writing-custom-kernels.md)
   Write your own custom kernels in either the Core Image Kernel Language or the Metal Shading Language.
 - [class CIKernel](cikernel.md)
   A GPU-based image-processing routine used to create custom Core Image filters.

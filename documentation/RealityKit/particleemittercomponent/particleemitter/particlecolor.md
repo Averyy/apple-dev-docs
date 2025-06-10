@@ -10,6 +10,7 @@ Options for specifying the behavior of the color of the particles.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -20,9 +21,6 @@ enum ParticleColor
 
 ## Topics
 
-### Operators
-- [static func == (ParticleEmitterComponent.ParticleEmitter.ParticleColor, ParticleEmitterComponent.ParticleEmitter.ParticleColor) -> Bool](particleemittercomponent/particleemitter/particlecolor/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [case constant(ParticleEmitterComponent.ParticleEmitter.ParticleColor.ColorValue)](particleemittercomponent/particleemitter/particlecolor/constant(_:).md)
   The particle will remain the given color throughout its lifetime.
@@ -31,8 +29,6 @@ enum ParticleColor
 ### Enumerations
 - [ParticleEmitterComponent.ParticleEmitter.ParticleColor.ColorValue](particleemittercomponent/particleemitter/particlecolor/colorvalue.md)
   Options for specifying whether the particle color is a single color, or if the particle should take a random color in the given range.
-### Default Implementations
-- [Equatable Implementations](particleemittercomponent/particleemitter/particlecolor/equatable-implementations.md)
 
 ## Relationships
 

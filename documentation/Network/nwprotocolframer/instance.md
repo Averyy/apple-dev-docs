@@ -75,6 +75,7 @@ All interaction between your protocol and the connection occurs through this obj
 ### Conforms To
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

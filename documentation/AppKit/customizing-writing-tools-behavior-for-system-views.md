@@ -1,6 +1,6 @@
 # Customizing Writing Tools behavior for AppKit views
 
-**Framework**: Appkit
+**Framework**: AppKit
 
 Modify the behavior of Writing Tools in standard macOS text views, and adjust your app’s behavior while the feature is active.
 
@@ -36,4 +36,4 @@ If you don’t want Writing Tools to modify portions of your [`NSTextView`](nste
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/customizing-writing-tools-behavior-for-system-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/customizing-writing-tools-behavior-for-system-views)*

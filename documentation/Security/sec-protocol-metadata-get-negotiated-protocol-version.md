@@ -25,7 +25,7 @@ A SSLProtocol enum of the TLS version.
 #### Discussion
 
 ```None
-  Get the negotiated TLS version.
+ Get the negotiated TLS version.
 ```
 
 ## Parameters

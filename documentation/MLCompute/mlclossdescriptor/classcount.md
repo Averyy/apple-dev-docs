@@ -1,6 +1,6 @@
 # classCount
 
-**Framework**: Mlcompute  
+**Framework**: ML Compute  
 **Kind**: property
 
 The number of classes.
@@ -42,4 +42,4 @@ The default value is 1.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MLCompute/mlclossdescriptor/classcount)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mlcompute/mlclossdescriptor/classcount)*

@@ -1,6 +1,6 @@
 # init(identifier:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Returns an initialized `WebPreferences` object, creating one if it does not exist.
@@ -20,9 +20,9 @@ A newly initialized [`WebPreferences`](webpreferences.md) object with the identi
 
 #### Discussion
 
-The `anIdentifier` argument should be unique—it is prepended to the keys used to store the receiver’s attributes in the user defaults database. [`WebView`](webview.md) objects can share a [`WebPreferences`](webpreferences.md) object by using the same preferences identifier.
+The `anIdentifier` argument should be unique—it is prepended to the keys used to store the receiver’s attributes in the user defaults database. `WebView` objects can share a [`WebPreferences`](webpreferences.md) object by using the same preferences identifier.
 
-Typically, you do not invoke this method directly. Instead, you set the preferences identifier by sending a [`preferencesIdentifier`](webview/preferencesidentifier.md) message to your WebView object. This method is the designated initializer for the WebPreferences class.
+Typically, you do not invoke this method directly. Instead, you set the preferences identifier by sending a [`preferencesIdentifier`](webview-swift.class/preferencesidentifier.md) message to your WebView object. This method is the designated initializer for the WebPreferences class.
 
 ## Parameters
 

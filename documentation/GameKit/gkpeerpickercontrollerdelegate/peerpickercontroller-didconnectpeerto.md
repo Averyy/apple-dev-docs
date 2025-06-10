@@ -20,8 +20,6 @@ Once a peer is connected to the session, your application should take ownership 
 
 > ❗ **Important**:  Although optional in the protocol, Game Kit expects your application to implement this method.
 
- Although optional in the protocol, Game Kit expects your application to implement this method.
-
 ## Parameters
 
 - `picker`: The controller that connected the peer.

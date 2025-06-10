@@ -17,6 +17,7 @@ The SceneKit scene to render.
 ## Declaration
 
 ```swift
+@MainActor
 var scnScene: SCNScene? { get set }
 ```
 

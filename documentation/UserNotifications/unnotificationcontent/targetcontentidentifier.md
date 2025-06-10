@@ -1,6 +1,6 @@
 # targetContentIdentifier
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The value your app uses to determine which scene to display to handle the notification.

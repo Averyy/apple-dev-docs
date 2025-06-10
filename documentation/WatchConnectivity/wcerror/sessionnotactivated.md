@@ -1,6 +1,6 @@
 # sessionNotActivated
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An error indicating that the other device doesn’t have an active session.

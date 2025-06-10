@@ -1,6 +1,6 @@
 # WeatherCondition.sleet
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Sleet.

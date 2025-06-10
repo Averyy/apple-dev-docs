@@ -62,4 +62,4 @@ For more information, see the WWDC session video [`Font Management and Text Scal
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-custom-fonts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-custom-fonts)*

@@ -1,6 +1,6 @@
 # animationName
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The name of the animation. The value of the CSS -webkit-animation-name property of the animation that caused the event.

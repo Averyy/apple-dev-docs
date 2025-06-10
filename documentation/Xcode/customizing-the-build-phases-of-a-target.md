@@ -96,4 +96,4 @@ For details on the location of platform-specific bundle directories, see [`Placi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/customizing-the-build-phases-of-a-target)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/customizing-the-build-phases-of-a-target)*

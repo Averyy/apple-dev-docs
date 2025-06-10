@@ -1,6 +1,6 @@
 # PATHSEG_CLOSEPATH
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

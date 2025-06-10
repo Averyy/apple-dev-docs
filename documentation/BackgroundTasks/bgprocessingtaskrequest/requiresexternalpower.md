@@ -11,6 +11,7 @@ A Boolean specifying if the processing task requires a device connected to power
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 

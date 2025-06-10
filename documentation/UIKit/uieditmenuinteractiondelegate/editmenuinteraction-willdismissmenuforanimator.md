@@ -14,7 +14,6 @@ Informs the delegate when the interaction is about to dismiss the menu.
 ## Declaration
 
 ```swift
-@MainActor
 optional func editMenuInteraction(_ interaction: UIEditMenuInteraction, willDismissMenuFor configuration: UIEditMenuConfiguration, animator: any UIEditMenuInteractionAnimating)
 ```
 

@@ -33,6 +33,10 @@ protocol CustomizableToolbarContent : ToolbarContent where Self.Body : Customiza
 ### Instance Methods
 - [func hidden(Bool) -> some CustomizableToolbarContent](customizabletoolbarcontent/hidden(_:).md)
   Hides a toolbar item within its toolbar.
+- [func matchedTransitionSource(id: some Hashable, in: Namespace.ID) -> some CustomizableToolbarContent](customizabletoolbarcontent/matchedtransitionsource(id:in:).md)
+  Identifies this toolbar content as the source of a navigation transition, such as a zoom transition.
+- [func sharedBackgroundVisibility(Visibility) -> some CustomizableToolbarContent](customizabletoolbarcontent/sharedbackgroundvisibility(_:).md)
+  Controls the visibility of the glass background effect on items in the toolbar. In certain contexts, such as the navigation bar on iOS and the window toolbar on macOS, toolbar items will be given a glass background effect that is shared with other items in the same logical grouping.
 
 ## Relationships
 
@@ -41,6 +45,7 @@ protocol CustomizableToolbarContent : ToolbarContent where Self.Body : Customiza
 ### Conforming Types
 - [Group](group.md)
 - [ToolbarItem](toolbaritem.md)
+- [ToolbarSpacer](toolbarspacer.md)
 - [ToolbarTitleMenu](toolbartitlemenu.md)
 
 ## See Also
@@ -51,6 +56,8 @@ protocol CustomizableToolbarContent : ToolbarContent where Self.Body : Customiza
   The customization behavior of customizable toolbar content.
 - [struct ToolbarCustomizationOptions](toolbarcustomizationoptions.md)
   Options that influence the default customization behavior of customizable toolbar content.
+- [struct SearchToolbarBehavior](searchtoolbarbehavior.md)
+  The behavior of a search field in a toolbar.
 
 
 ---

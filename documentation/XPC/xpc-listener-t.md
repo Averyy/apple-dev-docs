@@ -1,6 +1,6 @@
 # xpc_listener_t
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: typealias
 
 A C type that performs tasks for clients across process boundaries.

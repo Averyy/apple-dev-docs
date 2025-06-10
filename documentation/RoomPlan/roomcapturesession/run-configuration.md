@@ -9,7 +9,7 @@ Starts a room-capture session with the specified configuration.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -28,10 +28,11 @@ func run(configuration: RoomCaptureSession.Configuration)
 ## See Also
 
 - [RoomCaptureSession.Configuration](roomcapturesession/configuration.md)
-  An object to configure the capture process
+  Settings that configure the room-scanning process.
 - [func stop()](roomcapturesession/stop.md)
-  Stop capture process
+  Stops the room-capture session.
 - [func stop(pauseARSession: Bool)](roomcapturesession/stop(pausearsession:).md)
+  Stops the room-capture session and indicates whether the app pauses the underlying AR session.
 
 
 ---

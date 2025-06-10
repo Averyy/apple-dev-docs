@@ -28,8 +28,6 @@ The type-safe instance.
 
 > ❗ **Important**:  This method applies only to SwiftUI apps.
 
- This method applies only to SwiftUI apps.
-
 Use this method to retrieve information from the user activity’s [`userInfo`](nsuseractivity/userinfo.md) dictionary in a type-safe manner.
 
 If the type can’t be decoded from the [`userInfo`](nsuseractivity/userinfo.md) dictionary, this method throws [`NSUserActivity.TypedPayloadError.invalidContent`](nsuseractivity/typedpayloaderror/invalidcontent.md).

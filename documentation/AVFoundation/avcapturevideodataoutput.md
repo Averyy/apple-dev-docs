@@ -31,8 +31,6 @@ This object supports compressed video data output for macOS only. It can output 
 
 > ❗ **Important**:  Avoid defaulting to a BGRA format, because BGRA formats aren’t native and require conversion. Additionally, BGRA formats requires significantly more memory than many of the native formats. For more information, see [`TN3121: Selecting a pixel format for an AVCaptureVideoDataOutput`](https://developer.apple.com/documentation/Technotes/tn3121-selecting-a-pixel-format-for-an-avcapturevideodataoutput).
 
- Avoid defaulting to a BGRA format, because BGRA formats aren’t native and require conversion. Additionally, BGRA formats requires significantly more memory than many of the native formats. For more information, see [`TN3121: Selecting a pixel format for an AVCaptureVideoDataOutput`](https://developer.apple.com/documentation/Technotes/tn3121-selecting-a-pixel-format-for-an-avcapturevideodataoutput).
-
 ## Topics
 
 ### Configuring Video Capture
@@ -73,6 +71,9 @@ This object supports compressed video data output for macOS only. It can output 
 ### Creating Video Capture Output
 - [init()](avcapturevideodataoutput/init.md)
   Creates a new video file output.
+### Instance Properties
+- [var preparesCellularRadioForNetworkConnection: Bool](avcapturevideodataoutput/preparescellularradiofornetworkconnection.md)
+- [var recommendedMediaTimeScaleForAssetWriter: CMTimeScale](avcapturevideodataoutput/recommendedmediatimescaleforassetwriter.md)
 
 ## Relationships
 
@@ -88,6 +89,8 @@ This object supports compressed video data output for macOS only. It can output 
 
 ## See Also
 
+- [Capturing Spatial Audio in your iOS app](capturing-spatial-audio-in-your-ios-app.md)
+  Enhance your app’s audio recording capabilities by supporting Spatial Audio capture.
 - [class AVCaptureAudioDataOutput](avcaptureaudiodataoutput.md)
   A capture output that records audio and provides access to audio sample buffers as they are recorded.
 

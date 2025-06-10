@@ -20,11 +20,9 @@ In Series 4 and later, Apple Watch can detect when a wearer falls, and contact e
 
 > ❗ **Important**:  To use this API, you must include the [`NSFallDetectionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSFallDetectionUsageDescription) key in your app’s `Info.plist` file and provide a usage description string for the key. The description appears in the prompt that the user receives when the system asks to access fall detection data for your app. If you don’t include a usage description string, your app crashes when you call this API.
 
- To use this API, you must include the [`NSFallDetectionUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSFallDetectionUsageDescription) key in your app’s `Info.plist` file and provide a usage description string for the key. The description appears in the prompt that the user receives when the system asks to access fall detection data for your app. If you don’t include a usage description string, your app crashes when you call this API.
-
 `CMFallDetectionManager` requires an entitlement from Apple. To apply for the entitlement, see [`Fall Detection Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/fall-detection-api). This entitlement allows the app to run in the background without requiring any additional capabilities. However, you can add capabilities for other background modes, as needed by your app.
 
-There are two approaches to detecting falls in your app. You can either query for [`numberOfTimesFallen`](https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/1615592-numberoftimesfallen) samples in HealthKit, or you can use Core Motion’s `CMFallDetectionManager`.
+There are two approaches to detecting falls in your app. You can either query for [`numberOfTimesFallen`](https://developer.apple.com/documentation/HealthKit/HKQuantityTypeIdentifier/numberOfTimesFallen) samples in HealthKit, or you can use Core Motion’s `CMFallDetectionManager`.
 
 ##### Detect and Respond to Falls
 
@@ -66,8 +64,6 @@ if CMFallDetectionManager.isAvailable  {
 Set the delegate as early as possible, ideally in your extension delegate’s [`applicationDidFinishLaunching()`](https://developer.apple.com/documentation/WatchKit/WKExtensionDelegate/applicationDidFinishLaunching()) method. The system may not instantiate your app’s user interface when launching your app in the background, so you can’t set the delegate from your user interface code, such as when an interface controller activates, or in response to a change in SwiftUI’s [`ScenePhase`](https://developer.apple.com/documentation/SwiftUI/ScenePhase) state.
 
 > ❗ **Important**:  Create only a single instance of the detection manager. Store the manager in a variable so you can access it later. Be sure to use a variable that remains in memory throughout your app’s lifetime—for example, add the variable to your extension delegate.
-
- Create only a single instance of the detection manager. Store the manager in a variable so you can access it later. Be sure to use a variable that remains in memory throughout your app’s lifetime—for example, add the variable to your extension delegate.
 
 ##### Request User Authorization
 

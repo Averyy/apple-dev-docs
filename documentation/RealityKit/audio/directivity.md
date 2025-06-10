@@ -10,6 +10,7 @@ The radiation pattern of sound emitted from an entity.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -23,11 +24,6 @@ enum Directivity
 ### Enumeration Cases
 - [Audio.Directivity.beam(focus:)](audio/directivity/beam(focus:).md)
   A parametric frequency-dependent radiation pattern, where the `focus` determines the width of a beam.
-### Default Implementations
-- [Decodable Implementations](audio/directivity/decodable-implementations.md)
-- [Encodable Implementations](audio/directivity/encodable-implementations.md)
-- [Equatable Implementations](audio/directivity/equatable-implementations.md)
-- [Hashable Implementations](audio/directivity/hashable-implementations.md)
 
 ## Relationships
 

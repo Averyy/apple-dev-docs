@@ -1,6 +1,6 @@
 # canPlayType
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Returns whether the media element supports the specified MIME type.

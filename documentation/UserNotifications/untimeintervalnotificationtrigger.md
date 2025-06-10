@@ -1,6 +1,6 @@
 # UNTimeIntervalNotificationTrigger
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 A trigger condition that causes the system to deliver a notification after the amount of time you specify elapses.

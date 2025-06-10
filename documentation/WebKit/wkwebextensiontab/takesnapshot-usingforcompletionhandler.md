@@ -1,6 +1,6 @@
 # takeSnapshot(using:for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to capture a snapshot of the current webpage as an image.

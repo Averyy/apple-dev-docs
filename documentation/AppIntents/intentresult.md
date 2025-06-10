@@ -8,10 +8,10 @@ A type that contains the result of performing an action, and includes optional i
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -57,6 +57,8 @@ func perform() async throws -> some ReturnsValue<Int> & OpensAppIntent {
   Indicates the `AppIntent` finished performing
 - [static func result<Content>(dialog: IntentDialog, content: () -> Content) -> Self](intentresult/result(dialog:content:).md)
   Indicates the `AppIntent` finished performing
+- [static func result(dialog: IntentDialog, snippetIntent: some SnippetIntent) -> Self](intentresult/result(dialog:snippetintent:).md)
+  Indicates that a completed app intent displays an interactive snippet and a success dialog.
 - [static func result<Content>(dialog: IntentDialog, view: Content) -> Self](intentresult/result(dialog:view:).md)
   Indicates the `AppIntent` finished performing
 - [static func result(opensIntent: some AppIntent) -> Self](intentresult/result(opensintent:)-8t8q8.md)
@@ -69,12 +71,18 @@ func perform() async throws -> some ReturnsValue<Int> & OpensAppIntent {
 - [static func result<OpensAppIntent, Content>(opensIntent: OpensAppIntent, dialog: IntentDialog, content: () -> Content) -> Self](intentresult/result(opensintent:dialog:content:)-2g81m.md)
 - [static func result<Content>(opensIntent: some AppIntent, dialog: IntentDialog, content: () -> Content) -> Self](intentresult/result(opensintent:dialog:content:)-9kg66.md)
   Indicates the `AppIntent` finished performing
+- [static func result(opensIntent: some AppIntent, dialog: IntentDialog, snippetIntent: some SnippetIntent) -> Self](intentresult/result(opensintent:dialog:snippetintent:).md)
+  Indicates that a completed app intent displays an interactive snippet with a dialog and returns another intent to open the originating app.
 - [static func result<Content>(opensIntent: some AppIntent, dialog: IntentDialog, view: Content) -> Self](intentresult/result(opensintent:dialog:view:)-1w6b6.md)
   Indicates the `AppIntent` finished performing
 - [static func result<OpensAppIntent, Content>(opensIntent: OpensAppIntent, dialog: IntentDialog, view: Content) -> Self](intentresult/result(opensintent:dialog:view:)-8wkpg.md)
+- [static func result(opensIntent: some AppIntent, snippetIntent: some SnippetIntent) -> Self](intentresult/result(opensintent:snippetintent:).md)
+  Indicates that a completed app intent displays an interactive snippet and returns another intent to open the originating app.
 - [static func result<OpensAppIntent, Content>(opensIntent: OpensAppIntent, view: Content) -> Self](intentresult/result(opensintent:view:)-4l1d4.md)
 - [static func result<Content>(opensIntent: some AppIntent, view: Content) -> Self](intentresult/result(opensintent:view:)-5hm2s.md)
   Indicates the `AppIntent` finished performing
+- [static func result(snippetIntent: some SnippetIntent) -> Self](intentresult/result(snippetintent:).md)
+  Indicates that a completed app intent displays an interactive snippet.
 - [static func result<Value>(value: Value) -> Self](intentresult/result(value:).md)
   Indicates the `AppIntent` finished performing
 - [static func result<Value, Intent>(value: Value, actionButtonIntent: Intent) -> Self](intentresult/result(value:actionbuttonintent:).md)
@@ -91,6 +99,8 @@ func perform() async throws -> some ReturnsValue<Int> & OpensAppIntent {
   Indicates the `AppIntent` finished performing
 - [static func result<Value, Content>(value: Value, dialog: IntentDialog, content: () -> Content) -> Self](intentresult/result(value:dialog:content:).md)
   Indicates the `AppIntent` finished performing
+- [static func result<Value>(value: Value, dialog: IntentDialog, snippetIntent: some SnippetIntent) -> Self](intentresult/result(value:dialog:snippetintent:).md)
+  Indicates that a completed app intent displays an interactive snippet with a dialog and returns a value.
 - [static func result<Value, Content>(value: Value, dialog: IntentDialog, view: Content) -> Self](intentresult/result(value:dialog:view:).md)
   Indicates the `AppIntent` finished performing
 - [static func result<Value>(value: Value, opensIntent: some AppIntent) -> Self](intentresult/result(value:opensintent:)-8v5op.md)
@@ -103,12 +113,18 @@ func perform() async throws -> some ReturnsValue<Int> & OpensAppIntent {
 - [static func result<Value, OpensAppIntent, Content>(value: Value, opensIntent: OpensAppIntent, dialog: IntentDialog, content: () -> Content) -> Self](intentresult/result(value:opensintent:dialog:content:)-4iwem.md)
 - [static func result<Value, Content>(value: Value, opensIntent: some AppIntent, dialog: IntentDialog, content: () -> Content) -> Self](intentresult/result(value:opensintent:dialog:content:)-mwwf.md)
   Indicates the `AppIntent` finished performing
+- [static func result<Value>(value: Value, opensIntent: some AppIntent, dialog: IntentDialog, snippetIntent: some SnippetIntent) -> Self](intentresult/result(value:opensintent:dialog:snippetintent:).md)
+  Indicates that a completed app intent displays an interactive snippet with a dialog and returns a value and another intent to open the originating app.
 - [static func result<Value, OpensAppIntent, Content>(value: Value, opensIntent: OpensAppIntent, dialog: IntentDialog, view: Content) -> Self](intentresult/result(value:opensintent:dialog:view:)-5sg4p.md)
 - [static func result<Value, Content>(value: Value, opensIntent: some AppIntent, dialog: IntentDialog, view: Content) -> Self](intentresult/result(value:opensintent:dialog:view:)-88j6a.md)
   Indicates the `AppIntent` finished performing
+- [static func result<Value>(value: Value, opensIntent: some AppIntent, snippetIntent: some SnippetIntent) -> Self](intentresult/result(value:opensintent:snippetintent:).md)
+  Indicates that a completed app intent displays an interactive snippet and returns a value and another intent to open the originating app.
 - [static func result<Value, Content>(value: Value, opensIntent: some AppIntent, view: Content) -> Self](intentresult/result(value:opensintent:view:)-12wbo.md)
   Indicates the `AppIntent` finished performing
 - [static func result<Value, OpensAppIntent, Content>(value: Value, opensIntent: OpensAppIntent, view: Content) -> Self](intentresult/result(value:opensintent:view:)-5z5t0.md)
+- [static func result<Value>(value: Value, snippetIntent: some SnippetIntent) -> Self](intentresult/result(value:snippetintent:).md)
+  Indicates that a completed app intent returns a value and displays an interactive snippet.
 - [static func result<Value, Content>(value: Value, view: Content) -> Self](intentresult/result(value:view:).md)
   Indicates the `AppIntent` finished performing
 - [static func result<Content>(view: Content) -> Self](intentresult/result(view:).md)
@@ -120,10 +136,12 @@ func perform() async throws -> some ReturnsValue<Int> & OpensAppIntent {
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Inherited By
 - [OpensIntent](opensintent.md)
 - [ProvidesDialog](providesdialog.md)
 - [ReturnsValue](returnsvalue.md)
+- [ShowsSnippetIntent](showssnippetintent.md)
 - [ShowsSnippetView](showssnippetview.md)
 ### Conforming Types
 - [IntentResultContainer](intentresultcontainer.md)

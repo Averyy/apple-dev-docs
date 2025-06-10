@@ -68,7 +68,7 @@ When a person interacts with a specific POI, the framework calls your delegate o
 
 ##### Adding Look Around Views to the Map
 
-iOS16 and macOS 13, and later, support the inclusion of a Look Around view within the map view. Look Around allows people to explore the environment at street level. You request a Look Around view by creating an [`MKLookAroundSceneRequest`](mklookaroundscenerequest.md) with either an [`MKMapItem`](mkmapitem.md) or a [`CLLocationCoordinate2D`](https://developer.apple.com/documentation/CoreLocation/CLLocationCoordinate2D), and if there’s Look Around imagery available for the specified location, the framework returns an [`MKLookAroundScene`](mklookaroundscene.md) for you to display using an [`MKLookAroundViewController`](mklookaroundviewcontroller.md).
+iOS16 and macOS 13, and later, support the inclusion of a Look Around view within the map view. Look Around allows people to explore the environment at street level. You request a Look Around view by creating an [`MKLookAroundSceneRequest`](mklookaroundscenerequest.md) with either an [`MKMapItem`](mkmapitem.md) or a doc://com.apple.documentation/documentation/corelocation/cllocationcoordinate2d, and if there’s Look Around imagery available for the specified location, the framework returns an [`MKLookAroundScene`](mklookaroundscene.md) for you to display using an [`MKLookAroundViewController`](mklookaroundviewcontroller.md).
 
 ## Topics
 
@@ -287,6 +287,7 @@ iOS16 and macOS 13, and later, support the inclusion of a Look Around view withi
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)

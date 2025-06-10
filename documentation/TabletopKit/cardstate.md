@@ -45,9 +45,13 @@ struct CardState
 ## Relationships
 
 ### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [EquipmentState](equipmentstate.md)
+- [MutableEquipmentState](mutableequipmentstate.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

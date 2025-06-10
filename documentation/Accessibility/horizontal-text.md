@@ -60,4 +60,4 @@ Check the value of the Prefer Horizontal Text setting at any time by using [`pre
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Accessibility/horizontal-text)*
+*[View on Apple Developer](https://developer.apple.com/documentation/accessibility/horizontal-text)*

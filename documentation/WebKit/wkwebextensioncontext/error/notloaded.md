@@ -1,6 +1,6 @@
 # notLoaded
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates that the context is not loaded by a [`WKWebExtensionController`](wkwebextensioncontroller.md).

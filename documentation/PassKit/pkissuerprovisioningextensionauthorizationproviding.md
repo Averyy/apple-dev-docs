@@ -23,8 +23,6 @@ The principal class of your app’s authorization user interface extension targe
 
 > ❗ **Important**:  Before you can add a payment card provisioning UI extension you need an entitlement from Apple. For more information on requesting an entitlement, contact apple-pay-inquiries@apple.com.
 
- Before you can add a payment card provisioning UI extension you need an entitlement from Apple. For more information on requesting an entitlement, contact apple-pay-inquiries@apple.com.
-
 ## Topics
 
 ### Providing the result of authorization

@@ -17,7 +17,6 @@ object GameCenterAppVersionsResponse
 ## See Also
 
 - [object GameCenterAppVersion](gamecenterappversion.md)
-  The data structure that represents a Game Center app version resource.
 - [object GameCenterAppVersionCompatibilityVersionsLinkagesRequest](gamecenterappversioncompatibilityversionslinkagesrequest.md)
   The request body you use to create a relationship between an app version and a compatibility version.
 - [object GameCenterAppVersionCompatibilityVersionsLinkagesResponse](gamecenterappversioncompatibilityversionslinkagesresponse.md)
@@ -28,6 +27,7 @@ object GameCenterAppVersionsResponse
   A response that contains a single app version resource.
 - [object GameCenterAppVersionUpdateRequest](gamecenterappversionupdaterequest.md)
   The request body you use to update an app version.
+- [object GameCenterAppVersionAppStoreVersionLinkageResponse](gamecenterappversionappstoreversionlinkageresponse.md)
 
 
 ---

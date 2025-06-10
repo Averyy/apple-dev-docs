@@ -25,8 +25,8 @@ init(_ anchor: ARAnchor)
 
 - [init(AnchoringComponent.Target)](anchoringcomponent/init(_:)-2wng6.md)
   Creates an anchoring component for a given target.
-- [init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode)](anchoringcomponent/init(_:trackingmode:).md)
-- [init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode, physicsSimulation: AnchoringComponent.PhysicsSimulation)](anchoringcomponent/init(_:trackingmode:physicssimulation:).md)
+- [init(_:trackingMode:)](anchoringcomponent/init(_:trackingmode:).md)
+- [init(_:trackingMode:physicsSimulation:)](anchoringcomponent/init(_:trackingmode:physicssimulation:).md)
   Creates an anchoring component for a given target, tracking mode and physics simulation.
 
 

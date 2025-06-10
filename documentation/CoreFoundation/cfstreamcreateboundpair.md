@@ -33,7 +33,7 @@ The created streams are bound to one another, such that any data written to `wri
 
 ## See Also
 
-- [class func getBoundStreams(withBufferSize: Int, inputStream: AutoreleasingUnsafeMutablePointer<InputStream?>?, outputStream: AutoreleasingUnsafeMutablePointer<OutputStream?>?)](../foundation/stream/1412683-getboundstreams.md)
+- [class func getBoundStreams(withBufferSize bufferSize: Int, inputStream: AutoreleasingUnsafeMutablePointer<InputStream?>?, outputStream: AutoreleasingUnsafeMutablePointer<OutputStream?>?)](../Foundation/Stream/getBoundStreams(withBufferSize:inputStream:outputStream:).md)
   Creates and returns by reference a bound pair of input and output streams.
 - [func CFStreamCreatePairWithPeerSocketSignature(CFAllocator!, UnsafePointer<CFSocketSignature>!, UnsafeMutablePointer<Unmanaged<CFReadStream>?>!, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>!)](cfstreamcreatepairwithpeersocketsignature(_:_:_:_:).md)
   Creates readable and writable streams connected to a socket.

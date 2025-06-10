@@ -39,6 +39,7 @@ When executing its query, a [`CSUserQuery`](csuserquery.md) object returns both 
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

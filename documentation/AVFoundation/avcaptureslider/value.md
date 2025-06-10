@@ -24,8 +24,6 @@ The default value is the slider’s minimum value. You may set a value only if i
 
 > ❗ **Important**:  Only modify a slider’s value from the same dispatch queue that you specified in the control’s [`setActionQueue:action:`](avcaptureslider/setactionqueue:action:.md) method.
 
- Only modify a slider’s value from the same dispatch queue that you specified in the control’s [`setActionQueue:action:`](avcaptureslider/setactionqueue:action:.md) method.
-
 ## See Also
 
 - [var prominentValues: [Float]](avcaptureslider/prominentvalues-199dz.md)

@@ -1,11 +1,14 @@
 # qualityPrioritization
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 A value that specifies whether to prioritize quality or performance.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
 
 ## Declaration
@@ -28,8 +31,6 @@ See VEFrameRateConversionConfigurationQualityPrioritization for more info.
   A dictionary of pixel buffer attributes describing requirements for pixel buffers used as source frames and reference frames.
 - [var destinationPixelBufferAttributes: [String : any Sendable]](vtopticalflowconfiguration/destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
-- [var frameSupportedPixelFormats: [NSNumber]](vtopticalflowconfiguration/framesupportedpixelformats.md)
-  A list of source frame supported pixel formats for the current configuration.
 - [VTOpticalFlowConfiguration.QualityPrioritization](vtopticalflowconfiguration/qualityprioritization-swift.enum.md)
   Values that specify whether to prioritize quality or performance.
 

@@ -17,6 +17,7 @@ Before an app can be distributed to external testers, it must be reviewed by App
   Get beta app review details for a specific app.
 - [Read the App Information of a Beta App Review Detail](get-v1-betaappreviewdetails-_id_-app.md)
   Get the app information for a specific beta app review details resource.
+- [GET /v1/betaAppReviewDetails/{id}/relationships/app](get-v1-betaappreviewdetails-_id_-relationships-app.md)
 ### Modifying Beta App Review Details
 - [Modify a Beta App Review Detail](patch-v1-betaappreviewdetails-_id_.md)
   Update the details for a specific app’s beta app review.
@@ -32,6 +33,7 @@ Before an app can be distributed to external testers, it must be reviewed by App
   A response that contains a list of Beta App Review Detail resources.
 - [object AppBetaTestersLinkagesRequest](appbetatesterslinkagesrequest.md)
   A request body you use to remove beta testers from an app.
+- [object BetaAppReviewDetailAppLinkageResponse](betaappreviewdetailapplinkageresponse.md)
 
 ## See Also
 

@@ -24,8 +24,6 @@ func speak(_ utterance: AVSpeechUtterance)
 
 > ⚠️ **Warning**:  Attempting to enqueue the same utterance more than once throws an exception.
 
- Attempting to enqueue the same utterance more than once throws an exception.
-
 ## Parameters
 
 - `utterance`: An   instance that contains text to speak.

@@ -1,6 +1,6 @@
 # init(jsonData:columns:types:options:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: init
 
 Creates a data frame by converting JSON data.

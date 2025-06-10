@@ -35,8 +35,6 @@ Gather at least 10 audio examples of each sound category you want the sound clas
 
 > 💡 **Tip**: Use single-channel audio files with a sample rate of 16 kHz or higher for best results.
 
-Use single-channel audio files with a sample rate of 16 kHz or higher for best results.
-
 Reduce a sound classifier’s bias — which can adversely affect its performance — by gathering audio files that use a consistent bit depth and sample rate.
 
 Train, evaluate, and export your sound classifier by following similar steps to creating any other Create ML model type. For more information about the Create ML training workflow, see:
@@ -124,6 +122,7 @@ Add the sound classifier’s Core ML model to an Xcode project and use it to cre
 - [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

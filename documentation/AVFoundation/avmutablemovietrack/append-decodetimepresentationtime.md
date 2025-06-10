@@ -1,17 +1,17 @@
 # append(_:decodeTime:presentationTime:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Appends sample data to a media file and adds sample references for the added data to a track’s media sample tables.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.12+
+- macOS 10.10+
 - visionOS 1.0+
-- watchOS 6.0+
+- watchOS 1.0+
 
 ## Declaration
 

@@ -10,6 +10,7 @@ Events associated with video playback for VideoPlayerComponent.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -30,6 +31,10 @@ For more information on subscribing to scene events, see `RealityKit/Scene/Event
 - [VideoPlayerEvents.ImmersiveViewingModeDidChange](videoplayerevents/immersiveviewingmodedidchange.md)
 - [VideoPlayerEvents.ImmersiveViewingModeDidTransition](videoplayerevents/immersiveviewingmodedidtransition.md)
 - [VideoPlayerEvents.ImmersiveViewingModeWillTransition](videoplayerevents/immersiveviewingmodewilltransition.md)
+- [VideoPlayerEvents.RenderingStatusDidChange](videoplayerevents/renderingstatusdidchange.md)
+- [VideoPlayerEvents.SpatialVideoModeDidChange](videoplayerevents/spatialvideomodedidchange.md)
+- [VideoPlayerEvents.VideoComfortMitigationDidOccur](videoplayerevents/videocomfortmitigationdidoccur.md)
+  The system detects a video comfort violation and triggers the event along with the comfort mitigation action
 - [VideoPlayerEvents.VideoSizeDidChange](videoplayerevents/videosizedidchange.md)
 - [VideoPlayerEvents.ViewingModeDidChange](videoplayerevents/viewingmodedidchange.md)
 
@@ -37,6 +42,7 @@ For more information on subscribing to scene events, see `RealityKit/Scene/Event
 
 - [enum AudioEvents](audioevents.md)
   Events associated with audio playback.
+- [enum ImagePresentationEvents](imagepresentationevents.md)
 
 
 ---

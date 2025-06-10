@@ -17,7 +17,7 @@ Returns the size needed to display a row of the current document page.
 
 ```swift
 @MainActor
-func rowSize(for page: PDFPage) -> CGSize
+func rowSize(for page: PDFPage) -> NSSize
 ```
 
 #### Discussion

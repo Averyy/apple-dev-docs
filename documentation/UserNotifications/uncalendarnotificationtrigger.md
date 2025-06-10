@@ -1,6 +1,6 @@
 # UNCalendarNotificationTrigger
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 A trigger condition that causes a notification the system delivers at a specific date and time.

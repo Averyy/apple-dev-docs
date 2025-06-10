@@ -23,16 +23,16 @@ You can customize an annotation callout by replacing the callout element, or by 
 This example shows how to replace the standard callout with a custom callout for a [`mapkit.MarkerAnnotation`](mapkit.markerannotation.md).
 
 ```javascript
-var calloutDelegate = {
+const calloutDelegate = {
 
     // Return a div element and populate it with information from the
     // annotation, including a link to a review site.
     calloutElementForAnnotation: function(annotation) {
-        var element = document.createElement("div");
+        const element = document.createElement("div");
         element.className = "review-callout";
-        var title = element.appendChild(document.createElement("h1"));
+        const title = element.appendChild(document.createElement("h1"));
         title.textContent = annotation.title;
-        var link = element.appendChild(document.createElement("a"));
+        const link = element.appendChild(document.createElement("a"));
         link.href = annotation.data.reviewLink;
         link.textContent = "Review";
         // Add more content.
@@ -43,7 +43,7 @@ var calloutDelegate = {
 };
 
 // Create an annotation with a link to be displayed in the callout.
-var annotation = new mapkit.MarkerAnnotation(
+const annotation = new mapkit.MarkerAnnotation(
     new mapkit.Coordinate(35.7019272, 139.575628),
     {
         callout: calloutDelegate,
@@ -60,16 +60,16 @@ var annotation = new mapkit.MarkerAnnotation(
 
 You may want to provide your own content to display inside the callout bubble, without replacing the whole element as in the previous code listing. The following example is similar to the previous one, but uses the standard callout bubble to display custom content.
 
-```swift
-var calloutDelegate = {
+```javascript
+const calloutDelegate = {
     // Return a div element and populate it with information from the
     // annotation, including a link to a review site.
     calloutContentForAnnotation: function(annotation) {
-        var element = document.createElement("div");
+        const element = document.createElement("div");
         element.className = "review-callout-content";
-        var title = element.appendChild(document.createElement("h1"));
+        const title = element.appendChild(document.createElement("h1"));
         title.textContent = annotation.title;
-        var link = element.appendChild(document.createElement("a"));
+        const link = element.appendChild(document.createElement("a"));
         link.href = annotation.data.reviewLink;
         link.textContent = "Review";
         // Add more content.
@@ -78,7 +78,7 @@ var calloutDelegate = {
 };
 
 // Create an annotation with a link to be displayed in the callout.
-var annotation = new mapkit.MarkerAnnotation(
+const annotation = new mapkit.MarkerAnnotation(
     new mapkit.Coordinate(35.7019272, 139.575628),
     {
         callout: calloutDelegate,

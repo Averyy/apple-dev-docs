@@ -113,6 +113,10 @@ The modified guide calculation causes the affected view to place the bottom edge
   An alignment position along the depth axis.
 - [struct ViewDimensions](viewdimensions.md)
   A view’s size and alignment guides in its own coordinate space.
+- [struct ViewDimensions3D](viewdimensions3d.md)
+  A view’s 3D size and alignment guides in its own coordinate space.
+- [struct SpatialContainer](spatialcontainer.md)
+  A layout container that aligns overlapping content in 3D space.
 
 
 ---

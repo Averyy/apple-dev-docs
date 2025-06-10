@@ -1,6 +1,6 @@
 # appleSubscription
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 **Availability**:

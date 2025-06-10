@@ -26,8 +26,6 @@ As your managed object model changes, Core Data can use lightweight migrations t
 
 > ❗ **Important**:  This key is dual-purpose. When adding a persistent store to the coordinator, you use it to enable deferred lightweight migrations for that store. Afterward, Core Data uses it to indicate whether there are deferred cleanup tasks to run. Therefore, don’t use this key to later determine whether you enabled deferred lightweight migrations on a specific store.
 
- This key is dual-purpose. When adding a persistent store to the coordinator, you use it to enable deferred lightweight migrations for that store. Afterward, Core Data uses it to indicate whether there are deferred cleanup tasks to run. Therefore, don’t use this key to later determine whether you enabled deferred lightweight migrations on a specific store.
-
 Deferred lightweight migrations are off by default. To enable them, add [`NSPersistentStoreDeferredLightweightMigrationOptionKey`](nspersistentstoredeferredlightweightmigrationoptionkey.md), with a value of [`true`](https://developer.apple.com/documentation/swift/true), to the options dictionary you provide when adding a persistent store to the coordinator.
 
 ```swift

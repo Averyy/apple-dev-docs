@@ -37,8 +37,8 @@ class MTRClusterTemperatureControl
 - [func readAttributeStep(with: MTRReadParams?) -> [String : Any]?](mtrclustertemperaturecontrol/readattributestep(with:).md)
 - [func readAttributeSupportedTemperatureLevels(with: MTRReadParams?) -> [String : Any]?](mtrclustertemperaturecontrol/readattributesupportedtemperaturelevels(with:).md)
 - [func readAttributeTemperatureSetpoint(with: MTRReadParams?) -> [String : Any]?](mtrclustertemperaturecontrol/readattributetemperaturesetpoint(with:).md)
-- [func setTemperatureWith(MTRTemperatureControlClusterSetTemperatureParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustertemperaturecontrol/settemperaturewith(_:expectedvalues:expectedvalueinterval:completion:).md)
-- [func setTemperatureWithExpectedValues([[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustertemperaturecontrol/settemperaturewithexpectedvalues(_:expectedvalueinterval:completion:).md)
+- [func setTemperatureWith(MTRTemperatureControlClusterSetTemperatureParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustertemperaturecontrol/settemperaturewith(_:expectedvalues:expectedvalueinterval:completion:).md)
+- [func setTemperatureWithExpectedValues([[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustertemperaturecontrol/settemperaturewithexpectedvalues(_:expectedvalueinterval:completion:).md)
 
 ## Relationships
 

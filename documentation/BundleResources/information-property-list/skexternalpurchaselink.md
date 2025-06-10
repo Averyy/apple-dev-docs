@@ -24,8 +24,6 @@ Include one key entry for each country code where your app supports an external 
 
 > ❗ **Important**:  At all times, the destination URLs that you provide in the property list key must match the values in your app binary that you submit to App Review.
 
- At all times, the destination URLs that you provide in the property list key must match the values in your app binary that you submit to App Review.
-
 Make sure the destination URL meets all of the following conditions:
 
 - Uses the HTTPS scheme

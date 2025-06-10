@@ -1,6 +1,6 @@
 # stopAbsoluteAltitudeUpdates()
 
-**Framework**: Coremotion  
+**Framework**: Core Motion  
 **Kind**: method
 
 Stops the delivery of absolute altitude data for this altimeter object.

@@ -1,6 +1,6 @@
 # boundingBox()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a rectangle that bounds the onscreen rendering of the node.

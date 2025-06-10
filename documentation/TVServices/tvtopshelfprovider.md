@@ -28,7 +28,7 @@ You adopt this protocol in the principal class of your app’s TV Services exten
 - [enum TVTopShelfContentStyle](tvtopshelfcontentstyle.md)
   An enumerated type used to specify the style in which you want your content to be displayed.
 ### Notifying the System of Changes
-- [static let TVTopShelfItemsDidChange: NSNotification.Name](../foundation/nsnotification/name/1627592-tvtopshelfitemsdidchange.md)
+- [static let TVTopShelfItemsDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/TVTopShelfItemsDidChange.md)
   A notification to post when your app’s Top Shelf content has changed.
 
 

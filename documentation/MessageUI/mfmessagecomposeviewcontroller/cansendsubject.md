@@ -14,7 +14,6 @@ Indicates whether or not messages can include subject lines, according to the us
 ## Declaration
 
 ```swift
-@MainActor
 class func canSendSubject() -> Bool
 ```
 

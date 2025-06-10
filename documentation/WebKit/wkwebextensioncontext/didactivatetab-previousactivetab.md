@@ -1,6 +1,6 @@
 # didActivateTab(_:previousActiveTab:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called by the app when a tab is activated to notify only this specific extension.

@@ -10,6 +10,7 @@ Recursively searches all descendant entities for one with the given name.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -37,10 +38,6 @@ The [`findEntity(named:)`](entity/findentity(named:).md) method conducts a depth
   The scene that owns the entity.
 - [var name: String](entity/name.md)
   The name of the entity.
-- [var id: UInt64](entity/id-8kxa.md)
-  The stable identity of the entity associated with this instance.
-- [typealias ID](entity/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 - [var debugDescription: String](entity/debugdescription.md)
   A human readable description of the entity.
 

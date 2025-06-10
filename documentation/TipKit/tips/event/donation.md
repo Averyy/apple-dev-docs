@@ -1,7 +1,9 @@
-# Tips.Event.Donation
+# Donation
 
 **Framework**: TipKit  
 **Kind**: struct
+
+A repeatable user-defined action.
 
 **Availability**:
 - iOS 17.0+
@@ -32,6 +34,12 @@ struct Donation
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var donations: [Tips.Event<DonationInfo>.Donation]](tips/event/donations.md)
+  Returns an events existing donations.
 
 
 ---

@@ -39,8 +39,10 @@ For more information on declaring intersection functions in MSL, see [`Metal Sha
 - [static var curveData: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/curvedata.md)
 - [static var extendedLimits: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/extendedlimits.md)
 - [static var instanceMotion: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/instancemotion.md)
+- [static var intersectionFunctionBuffer: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/intersectionfunctionbuffer.md)
 - [static var maxLevels: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/maxlevels.md)
 - [static var primitiveMotion: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/primitivemotion.md)
+- [static var userData: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/userdata.md)
 
 ## Relationships
 
@@ -51,6 +53,7 @@ For more information on declaring intersection functions in MSL, see [`Metal Sha
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also
@@ -61,6 +64,7 @@ For more information on declaring intersection functions in MSL, see [`Metal Sha
   A specification of how to create an intersection function table.
 - [class MTLIntersectionFunctionDescriptor](mtlintersectionfunctiondescriptor.md)
   A description of an intersection function that performs an intersection test.
+- [struct MTLIntersectionFunctionBufferArguments](mtlintersectionfunctionbufferarguments.md)
 
 
 ---

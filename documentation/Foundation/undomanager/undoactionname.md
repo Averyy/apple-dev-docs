@@ -17,6 +17,7 @@ The name identifying the undo action.
 ## Declaration
 
 ```swift
+@MainActor
 var undoActionName: String { get }
 ```
 
@@ -30,8 +31,6 @@ For example, if the menu title is “Undo Delete,” the string returned is “D
 
 - [var redoActionName: String](undomanager/redoactionname.md)
   The name identifying the redo action.
-- [func setActionName(String)](undomanager/setactionname(_:).md)
-  Sets the name of the action associated with the Undo or Redo command.
 
 
 ---

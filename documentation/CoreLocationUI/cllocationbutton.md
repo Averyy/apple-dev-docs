@@ -41,8 +41,6 @@ locationButton.addTarget(self, action: #selector(userPressedLocationButton), for
 
 > ❗ **Important**: When a user taps the button, it only provides one-time authorization to fetch location data — not the location data itself. For more details about fetching location data, see [`Configuring your app to use location services`](https://developer.apple.com/documentation/CoreLocation/configuring-your-app-to-use-location-services).
 
-When a user taps the button, it only provides one-time authorization to fetch location data — not the location data itself. For more details about fetching location data, see [`Configuring your app to use location services`](https://developer.apple.com/documentation/CoreLocation/configuring-your-app-to-use-location-services).
-
 Configure the button’s content by specifying its [`icon`](cllocationbutton/icon.md) and [`label`](cllocationbutton/label.md) styles. Customize its appearance using the [`cornerRadius`](cllocationbutton/cornerradius.md) and [`fontSize`](cllocationbutton/fontsize.md) properties, or the standard view appearance properties [`backgroundColor`](https://developer.apple.com/documentation/UIKit/UIView/backgroundColor) and [`tintColor`](https://developer.apple.com/documentation/UIKit/UIView/tintColor). For design guidance, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/accessing-user-data/).
 
 ## Topics

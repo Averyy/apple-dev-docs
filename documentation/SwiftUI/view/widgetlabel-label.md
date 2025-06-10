@@ -9,6 +9,7 @@ Creates a label for displaying additional content outside an accessory family wi
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration

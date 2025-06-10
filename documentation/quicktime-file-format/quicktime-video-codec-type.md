@@ -1,6 +1,6 @@
 # QuickTime video codec type
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 #### Overview
 

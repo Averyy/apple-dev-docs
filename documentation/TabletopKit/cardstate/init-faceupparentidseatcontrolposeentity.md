@@ -11,7 +11,8 @@ Creates a card state with the given faceUp value, parent, controlling seats, pos
 ## Declaration
 
 ```swift
-init(faceUp: Bool, parentID: EquipmentIdentifier, seatControl: ControllingSeats = .any, pose: TableVisualState.Pose2D = .identity, entity: Entity)
+@MainActor
+@preconcurrency init(faceUp: Bool, parentID: EquipmentIdentifier, seatControl: ControllingSeats = .any, pose: TableVisualState.Pose2D = .identity, entity: Entity)
 ```
 
 ## See Also

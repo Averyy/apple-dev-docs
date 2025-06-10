@@ -1,6 +1,6 @@
 # map(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Returns an array containing the results of mapping the given closure over the sequence’s elements.

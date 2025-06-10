@@ -16,8 +16,8 @@ class func popUpContextMenu(_ menu: NSMenu, with event: NSEvent, for view: NSVie
 
 ## Mentions
 
-- [Supporting Writing Tools via the pasteboard](supporting-writing-tools-via-the-pasteboard.md)
 - [Supporting Continuity Camera in Your Mac App](supporting-continuity-camera-in-your-mac-app.md)
+- [Supporting Writing Tools via the pasteboard](supporting-writing-tools-via-the-pasteboard.md)
 
 ## Parameters
 

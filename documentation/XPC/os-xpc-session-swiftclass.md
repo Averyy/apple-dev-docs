@@ -1,6 +1,6 @@
 # OS_xpc_session
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: class
 
 **Availability**:
@@ -24,6 +24,8 @@ class OS_xpc_session
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

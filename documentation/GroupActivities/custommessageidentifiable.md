@@ -1,6 +1,6 @@
 # CustomMessageIdentifiable
 
-**Framework**: Groupactivities  
+**Framework**: Group Activities  
 **Kind**: protocol
 
 A type that assigns a custom ID string to messages you send to other devices.
@@ -47,4 +47,4 @@ Providing an app-specific string makes it possible to use different types to sup
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GroupActivities/custommessageidentifiable)*
+*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/custommessageidentifiable)*

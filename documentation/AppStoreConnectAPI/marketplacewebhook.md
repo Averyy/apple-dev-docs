@@ -18,7 +18,7 @@ object MarketplaceWebhook
 
 ### Objects
 - [object MarketplaceWebhook.Attributes](marketplacewebhook/attributes-data.dictionary.md)
-  The attribute that describes the url where you will recieve notifications.
+  The attribute that describes the url where you receive notifications.
 
 ## See Also
 

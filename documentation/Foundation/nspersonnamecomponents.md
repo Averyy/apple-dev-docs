@@ -161,4 +161,4 @@ Because each alias represents a separate name, an individual with one or more al
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nspersonnamecomponents)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nspersonnamecomponents)*

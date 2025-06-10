@@ -55,15 +55,21 @@ object App.Relationships
 - [object App.Relationships.AppStoreVersionExperimentsV2](app/relationships-data.dictionary/appstoreversionexperimentsv2-data.dictionary.md)
 - [object App.Relationships.GameCenterDetail](app/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
 ### Dictionaries
+- [object App.Relationships.AccessibilityDeclarations](app/relationships-data.dictionary/accessibilitydeclarations-data.dictionary.md)
 - [object App.Relationships.AlternativeDistributionKey](app/relationships-data.dictionary/alternativedistributionkey-data.dictionary.md)
 - [object App.Relationships.AnalyticsReportRequests](app/relationships-data.dictionary/analyticsreportrequests-data.dictionary.md)
 - [object App.Relationships.AppAvailabilityV2](app/relationships-data.dictionary/appavailabilityv2-data.dictionary.md)
 - [object App.Relationships.AppPricePoints](app/relationships-data.dictionary/apppricepoints-data.dictionary.md)
 - [object App.Relationships.AppPriceSchedule](app/relationships-data.dictionary/apppriceschedule-data.dictionary.md)
+- [object App.Relationships.BackgroundAssets](app/relationships-data.dictionary/backgroundassets-data.dictionary.md)
+- [object App.Relationships.BetaFeedbackCrashSubmissions](app/relationships-data.dictionary/betafeedbackcrashsubmissions-data.dictionary.md)
+- [object App.Relationships.BetaFeedbackScreenshotSubmissions](app/relationships-data.dictionary/betafeedbackscreenshotsubmissions-data.dictionary.md)
 - [object App.Relationships.BetaTesters](app/relationships-data.dictionary/betatesters-data.dictionary.md)
+- [object App.Relationships.CustomerReviewSummarizations](app/relationships-data.dictionary/customerreviewsummarizations-data.dictionary.md)
 - [object App.Relationships.CustomerReviews](app/relationships-data.dictionary/customerreviews-data.dictionary.md)
 - [object App.Relationships.MarketplaceSearchDetail](app/relationships-data.dictionary/marketplacesearchdetail-data.dictionary.md)
 - [object App.Relationships.PerfPowerMetrics](app/relationships-data.dictionary/perfpowermetrics-data.dictionary.md)
+- [object App.Relationships.Webhooks](app/relationships-data.dictionary/webhooks-data.dictionary.md)
 
 ## See Also
 

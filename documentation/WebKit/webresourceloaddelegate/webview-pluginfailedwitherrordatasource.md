@@ -1,6 +1,6 @@
 # webView(_:plugInFailedWithError:dataSource:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Invoked when a plug-in fails to load.

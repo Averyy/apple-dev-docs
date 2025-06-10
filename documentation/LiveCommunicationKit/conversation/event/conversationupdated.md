@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: case
 
-Updates a `Conversation` with the given `Update`.
+Updates a conversation’s attributes and capabilities.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,15 @@ Updates a `Conversation` with the given `Update`.
 ```swift
 case conversationUpdated(Conversation.Update)
 ```
+
+## See Also
+
+- [Conversation.Event.conversationConnected(_:)](conversation/event/conversationconnected(_:).md)
+  Informs that system that conversation successfully connected at a point in time.
+- [case conversationEnded(Date, Conversation.EndedReason)](conversation/event/conversationended(_:_:).md)
+  Informs that system that a conversation ended at a point in time with a reason.
+- [Conversation.Event.conversationStartedConnecting(_:)](conversation/event/conversationstartedconnecting(_:).md)
+  Informs the system that a conversation has started to connect participants at a point in time.
 
 
 ---

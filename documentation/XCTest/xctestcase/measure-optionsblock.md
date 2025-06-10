@@ -1,6 +1,6 @@
 # measure(options:block:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Records the performance, using the specified measurement options, for a block of code.

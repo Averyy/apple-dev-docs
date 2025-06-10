@@ -25,8 +25,6 @@ This request generates an [`OpticalFlowObservation`](opticalflowobservation.md) 
 
 > ❗ **Important**:  Optical flow requests are very resource intensive, so perform only one request at a time. Release memory immediately after generating an optical flow.
 
- Optical flow requests are very resource intensive, so perform only one request at a time. Release memory immediately after generating an optical flow.
-
 ## Topics
 
 ### Creating a request
@@ -72,6 +70,7 @@ This request generates an [`OpticalFlowObservation`](opticalflowobservation.md) 
 - [Hashable](../Swift/Hashable.md)
 - [ImageProcessingRequest](imageprocessingrequest.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StatefulRequest](statefulrequest.md)
 - [TargetedRequest](targetedrequest.md)
 - [VisionRequest](visionrequest.md)

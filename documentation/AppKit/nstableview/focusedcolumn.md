@@ -1,6 +1,6 @@
 # focusedColumn()
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Returns the currently focused column.

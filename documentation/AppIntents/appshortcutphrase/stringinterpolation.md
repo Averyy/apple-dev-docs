@@ -8,10 +8,10 @@ The type each segment of a string literal containing interpolations should be ap
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -32,9 +32,10 @@ The `StringLiteralType` of an interpolation type must match the `StringLiteralTy
 ### Appending values to the string
 - [func appendLiteral(String)](appshortcutphrase/stringinterpolation/appendliteral(_:).md)
   Appends a literal segment to the interpolation.
-- [func appendInterpolation(AppShortcutPhraseToken)](appshortcutphrase/stringinterpolation/appendinterpolation(_:)-47gqg.md)
-### Instance Methods
 - [func appendInterpolation<Value, Subject>(Subject)](appshortcutphrase/stringinterpolation/appendinterpolation(_:)-5kcab.md)
+- [func appendInterpolation(AppShortcutPhraseToken)](appshortcutphrase/stringinterpolation/appendinterpolation(_:)-47gqg.md)
+- [enum AppShortcutPhraseToken](appshortcutphrasetoken.md)
+  Dynamic values you can include in the spoken phrases that run your shortcut.
 ### Type Aliases
 - [AppShortcutPhrase.StringInterpolation.StringLiteralType](appshortcutphrase/stringinterpolation/stringliteraltype.md)
   The type that should be used for literal segments.
@@ -51,8 +52,6 @@ The `StringLiteralType` of an interpolation type must match the `StringLiteralTy
   Creates an instance initialized to the given string value.
 - [init(stringInterpolation: AppShortcutPhrase<Intent>.StringInterpolation)](appshortcutphrase/init(stringinterpolation:).md)
   Creates an instance from a string interpolation.
-- [enum AppShortcutPhraseToken](appshortcutphrasetoken.md)
-  Dynamic values you can include in the spoken phrases that run your shortcut.
 
 
 ---

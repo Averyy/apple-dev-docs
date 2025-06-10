@@ -10,6 +10,7 @@ Hashes the essential components of the entity by feeding them into the given has
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -27,10 +28,6 @@ func hash(into hasher: inout Hasher)
 
 - [static func == (Entity, Entity) -> Bool](entity/==(_:_:).md)
   Indicates whether two entities are equal.
-- [static func != (Self, Self) -> Bool](entity/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [var hashValue: Int](entity/hashvalue.md)
-  The hash value.
 
 
 ---

@@ -8,6 +8,7 @@ Returns the minimum element in the asynchronous sequence, using the given predic
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst ?+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+

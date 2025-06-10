@@ -24,8 +24,6 @@ The progress of the method.
 
 > ❗ **Important**:  This method is available in iOS 12.5, and in iOS 13.5 and later.
 
- This method is available in iOS 12.5, and in iOS 13.5 and later.
-
 Use this method to retrieve summary data about the user’s potential exposure within different time windows. This method will only provide information when your app’s `Info.plist` file has `ENAPIVersion` set to `2`.
 
 ## Parameters
@@ -41,7 +39,7 @@ Use this method to retrieve summary data about the user’s potential exposure w
   Detects exposures using the specified configuration to control the scoring algorithm.
 - [typealias ENGetExposureWindowsHandler](engetexposurewindowshandler.md)
   The handler the system invokes when the acquisition of windows completes.
-- [func getUserTraveled(completionHandler: ENGetUserTraveledHandler)](enmanager/getusertraveled(completionhandler:).md)
+- [func getUserTraveled(completionHandler: (Bool, (any Error)?) -> Void)](enmanager/getusertraveled(completionhandler:).md)
   Obtains information about the user’s travel within an exposure period.
 - [typealias ENGetUserTraveledHandler](engetusertraveledhandler.md)
   The handler the system invokes when acquistiion of the user’s travel status completes.

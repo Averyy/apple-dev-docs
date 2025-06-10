@@ -19,7 +19,7 @@ var showsSharingServiceButton: Bool { get set }
 
 This property is currently supported only with a [`controlsStyle`](avplayerview/controlsstyle.md) of [`AVPlayerViewControlsStyle.floating`](avplayerviewcontrolsstyle/floating.md) or [`AVPlayerViewControlsStyle.inline`](avplayerviewcontrolsstyle/inline.md).
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is `false`.
 
 ## See Also
 

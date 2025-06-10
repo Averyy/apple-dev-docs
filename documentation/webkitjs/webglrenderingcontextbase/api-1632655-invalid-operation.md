@@ -1,6 +1,6 @@
 # INVALID_OPERATION
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -10,6 +10,7 @@ An event raised when two objects collide.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -31,11 +32,17 @@ struct Began
 - [let position: SIMD3<Float>](collisionevents/began/position.md)
   A position representing the estimated point of contact.
 ### Instance Properties
-- [var contacts: [Contact]](collisionevents/began/contacts.md)
+- [var contacts: [Contact]](collisionevents/began/contacts-6to0q.md)
   All contacts between the collision pair. Empty if all contact information is not requested.
-- [var impulseDirection: SIMD3<Float>](collisionevents/began/impulsedirection.md)
+- [var contacts: [Contact]](collisionevents/began/contacts-9kb7f.md)
+  All contacts between the collision pair. Empty if all contact information is not requested.
+- [var impulseDirection: SIMD3<Float>](collisionevents/began/impulsedirection-3860u.md)
   The direction of the total impulse in scene coordinate space.
-- [var penetrationDistance: Float](collisionevents/began/penetrationdistance.md)
+- [var impulseDirection: SIMD3<Float>](collisionevents/began/impulsedirection-8vweg.md)
+  The direction of the total impulse in scene coordinate space.
+- [var penetrationDistance: Float](collisionevents/began/penetrationdistance-55vqr.md)
+  The estimated distance of overlap between the two colliding entities in scene coordinate space.
+- [var penetrationDistance: Float](collisionevents/began/penetrationdistance-5stle.md)
   The estimated distance of overlap between the two colliding entities in scene coordinate space.
 
 ## Relationships
@@ -43,6 +50,7 @@ struct Began
 ### Conforms To
 - [Event](event.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

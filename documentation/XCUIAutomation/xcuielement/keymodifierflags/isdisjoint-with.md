@@ -1,6 +1,6 @@
 # isDisjoint(with:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Returns a Boolean value that indicates whether the set has no members in common with the given set.

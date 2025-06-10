@@ -45,8 +45,6 @@ The effect of tracking resembles that of the [`kerning(_:)`](text/kerning(_:).md
 
 > ❗ **Important**: If you add both the [`tracking(_:)`](text/tracking(_:).md) and [`kerning(_:)`](text/kerning(_:).md) modifiers to a view, the view applies the tracking and ignores the kerning.
 
-If you add both the [`tracking(_:)`](text/tracking(_:).md) and [`kerning(_:)`](text/kerning(_:).md) modifiers to a view, the view applies the tracking and ignores the kerning.
-
 ## Parameters
 
 - `tracking`: The amount of additional space, in points, that   the view should add to each character cluster after layout. Value of    sets the tracking to the system default value.
@@ -56,7 +54,7 @@ If you add both the [`tracking(_:)`](text/tracking(_:).md) and [`kerning(_:)`](t
 - [func foregroundStyle<S>(S) -> Text](text/foregroundstyle(_:).md)
   Sets the style of the text displayed by this view.
 - [func bold() -> Text](text/bold.md)
-  Applies a bold font weight to the text.
+  Applies a bold or emphasized treatment to the fonts of the text.
 - [func bold(Bool) -> Text](text/bold(_:).md)
   Applies a bold font weight to the text.
 - [func italic() -> Text](text/italic.md)

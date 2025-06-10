@@ -54,7 +54,17 @@ The Swift tools version declares the version of the `PackageDescription` library
 ## Topics
 
 ### Creating a Package
+- [init(name: String, defaultLocalization: LanguageTag?, platforms: [SupportedPlatform]?, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageModes: [SwiftLanguageMode]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:defaultlocalization:platforms:pkgconfig:providers:products:dependencies:targets:swiftlanguagemodes:clanguagestandard:cxxlanguagestandard:).md)
+  Initializes a Swift package with configuration options you provide.
+- [init(name: String, defaultLocalization: LanguageTag?, platforms: [SupportedPlatform]?, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], traits: Set<Trait>, dependencies: [Package.Dependency], targets: [Target], swiftLanguageModes: [SwiftLanguageMode]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:defaultlocalization:platforms:pkgconfig:providers:products:traits:dependencies:targets:swiftlanguagemodes:clanguagestandard:cxxlanguagestandard:).md)
+  Initializes a Swift package with configuration options you provide.
 - [init(name: String, defaultLocalization: LanguageTag?, platforms: [SupportedPlatform]?, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageVersions: [SwiftVersion]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:defaultlocalization:platforms:pkgconfig:providers:products:dependencies:targets:swiftlanguageversions:clanguagestandard:cxxlanguagestandard:).md)
+  Initializes a Swift package with configuration options you provide.
+- [init(name: String, platforms: [SupportedPlatform]?, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageVersions: [SwiftVersion]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:platforms:pkgconfig:providers:products:dependencies:targets:swiftlanguageversions:clanguagestandard:cxxlanguagestandard:).md)
+  Initializes a Swift package with configuration options you provide.
+- [init(name: String, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageVersions: [Int]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:pkgconfig:providers:products:dependencies:targets:swiftlanguageversions:clanguagestandard:cxxlanguagestandard:)-7ld3y.md)
+  Initializes a Swift package with configuration options you provide.
+- [init(name: String, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageVersions: [SwiftVersion]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:pkgconfig:providers:products:dependencies:targets:swiftlanguageversions:clanguagestandard:cxxlanguagestandard:)-767rj.md)
   Initializes a Swift package with configuration options you provide.
 ### Naming the Package
 - [var name: String](package/name.md)
@@ -88,40 +98,33 @@ The Swift tools version declares the version of the `PackageDescription` library
   The name to use for C modules.
 - [var providers: [SystemPackageProvider]?](package/providers.md)
   An array of providers for a system target.
+### Configuring Traits
+- [var traits: Set<Trait>](package/traits.md)
+  The set of traits of this package.
+- [struct Trait](trait.md)
+  A struct representing a package’s trait.
 ### Declaring Package Dependencies
 - [var dependencies: [Package.Dependency]](package/dependencies.md)
   The list of package dependencies.
 - [Package.Dependency](package/dependency.md)
   A package dependency of a Swift package.
 ### Declaring Supported Languages
-- [typealias SwiftVersion](swiftversion.md)
-  Type alias to previous name for backward source compatibility
+- [enum SwiftLanguageMode](swiftlanguagemode.md)
+  The Swift language mode used to compile Swift sources in the package
 - [enum CLanguageStandard](clanguagestandard.md)
   The supported C language standard you use to compile C sources in the package.
 - [enum CXXLanguageStandard](cxxlanguagestandard.md)
   The supported C++ language standard you use to compile C++ sources in the package.
-- [var swiftLanguageVersions: [SwiftVersion]?](package/swiftlanguageversions.md)
-  Legacy property name, accesses value of `swiftLanguageModes`
+- [var swiftLanguageModes: [SwiftLanguageMode]?](package/swiftlanguagemodes.md)
+  The list of Swift language modes with which this package is compatible.
 - [var cLanguageStandard: CLanguageStandard?](package/clanguagestandard.md)
   The C language standard to use for all C targets in this package.
 - [var cxxLanguageStandard: CXXLanguageStandard?](package/cxxlanguagestandard.md)
   The C++ language standard to use for all C++ targets in this package.
-### Initializers
-- [init(name: String, defaultLocalization: LanguageTag?, platforms: [SupportedPlatform]?, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageModes: [SwiftLanguageMode]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:defaultlocalization:platforms:pkgconfig:providers:products:dependencies:targets:swiftlanguagemodes:clanguagestandard:cxxlanguagestandard:).md)
-  Initializes a Swift package with configuration options you provide.
-- [init(name: String, defaultLocalization: LanguageTag?, platforms: [SupportedPlatform]?, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], traits: Set<Trait>, dependencies: [Package.Dependency], targets: [Target], swiftLanguageModes: [SwiftLanguageMode]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:defaultlocalization:platforms:pkgconfig:providers:products:traits:dependencies:targets:swiftlanguagemodes:clanguagestandard:cxxlanguagestandard:).md)
-  Initializes a Swift package with configuration options you provide.
-- [init(name: String, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageVersions: [SwiftVersion]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:pkgconfig:providers:products:dependencies:targets:swiftlanguageversions:clanguagestandard:cxxlanguagestandard:)-767rj.md)
-  Initializes a Swift package with configuration options you provide.
-- [init(name: String, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageVersions: [Int]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:pkgconfig:providers:products:dependencies:targets:swiftlanguageversions:clanguagestandard:cxxlanguagestandard:)-7ld3y.md)
-  Initializes a Swift package with configuration options you provide.
-- [init(name: String, platforms: [SupportedPlatform]?, pkgConfig: String?, providers: [SystemPackageProvider]?, products: [Product], dependencies: [Package.Dependency], targets: [Target], swiftLanguageVersions: [SwiftVersion]?, cLanguageStandard: CLanguageStandard?, cxxLanguageStandard: CXXLanguageStandard?)](package/init(name:platforms:pkgconfig:providers:products:dependencies:targets:swiftlanguageversions:clanguagestandard:cxxlanguagestandard:).md)
-  Initializes a Swift package with configuration options you provide.
-### Instance Properties
-- [var swiftLanguageModes: [SwiftLanguageMode]?](package/swiftlanguagemodes.md)
-  The list of Swift language modes with which this package is compatible.
-- [var traits: Set<Trait>](package/traits.md)
-  The set of traits of this package.
+- [typealias SwiftVersion](swiftversion.md)
+  Type alias to previous name for backward source compatibility
+- [var swiftLanguageVersions: [SwiftVersion]?](package/swiftlanguageversions.md)
+  Legacy property name, accesses value of `swiftLanguageModes`
 
 ## See Also
 

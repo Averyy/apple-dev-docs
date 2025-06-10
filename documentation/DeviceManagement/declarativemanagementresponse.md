@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to issue declarations to a device.
+A response from the device after it processes the command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 
 **Availability**:
 - iOS 15.0+
@@ -12,8 +12,6 @@ A response from the device after it processes the command to issue declarations 
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,14 +21,14 @@ object DeclarativeManagementResponse
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object DeclarativeManagementResponse.ErrorChainItem](declarativemanagementresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 
 ## See Also
 
 - [object DeclarativeManagementCommand](declarativemanagementcommand.md)
-  The command to issue declarations to a device.
+  The command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 
 
 ---

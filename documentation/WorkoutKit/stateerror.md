@@ -1,6 +1,6 @@
 # StateError
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: enum
 
 An error that occurs while previewing a workout composition.
@@ -10,6 +10,7 @@ An error that occurs while previewing a workout composition.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -49,6 +50,7 @@ enum StateError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

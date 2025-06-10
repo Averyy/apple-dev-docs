@@ -1,6 +1,6 @@
 # shortcutItems
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The Home screen dynamic quick actions for your app; available on devices that support 3D Touch.

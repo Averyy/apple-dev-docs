@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: init
 
 Creates a query option from an integer value you provide.

@@ -1,6 +1,6 @@
 # matchingFontDescriptor(withMandatoryKeys:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Returns a normalized font descriptor whose specified attributes match those of the receiver.

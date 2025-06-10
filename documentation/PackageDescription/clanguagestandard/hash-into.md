@@ -11,6 +11,10 @@ Hashes the C language standard by feeding the item into the given hasher.
 func hash(into hasher: inout Hasher)
 ```
 
+## Parameters
+
+- `hasher`: The hasher.
+
 ## See Also
 
 - [var hashValue: Int](clanguagestandard/hashvalue.md)

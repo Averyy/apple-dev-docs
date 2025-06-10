@@ -62,6 +62,7 @@ The rounding mode matters only if the [`scale()`](nsdecimalnumberbehaviors/scale
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

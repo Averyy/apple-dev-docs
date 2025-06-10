@@ -70,6 +70,9 @@ struct AnimationOptions
 ### Initializers
 - [init(rawValue: UInt)](uiview/animationoptions/init(rawvalue:).md)
   Creates an animation options structure with the specified raw value.
+### Type Properties
+- [static var flushUpdates: UIView.AnimationOptions](uiview/animationoptions/flushupdates.md)
+  Flush all pending updates (including traits, properties, and layout) whenever the animation context changes. This includes flushing updates:
 
 ## Relationships
 
@@ -80,6 +83,7 @@ struct AnimationOptions
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

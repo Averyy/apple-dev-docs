@@ -1,6 +1,6 @@
 # Receiving ad attributions and postbacks
 
-**Framework**: Adattributionkit
+**Framework**: AdAttributionKit
 
 Understand timeframes and priorities for ad impressions that result in ad attributions, and how impressions qualify for postbacks.
 
@@ -71,7 +71,7 @@ private func attributeCustomerAccountCreated() async {
 
         // Updates any active reengagement postbacks with a conversion value of 12.
         let reengagementPostbackUpdate = PostbackUpdate(fineConversionValue: 12, lockPostback: false, conversionTypes: [.reengagement])
-        try await Postback.updateConversionValue(reengagementPostbackUpdate)
+        try await Postback.updateConversionValue(installPostbackUpdate)
     }
     catch {
         print("Failed to update postback conversion value: \(error)")
@@ -99,4 +99,4 @@ AdAttributionKit records a maximum of 15 view-through ad impressions per publish
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AdAttributionKit/receiving-ad-attributions-and-postbacks)*
+*[View on Apple Developer](https://developer.apple.com/documentation/adattributionkit/receiving-ad-attributions-and-postbacks)*

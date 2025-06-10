@@ -1,6 +1,6 @@
 # XCSourceEditorCommand
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: protocol
 
 The protocol you implement to handle command invocations in a source editor extension.

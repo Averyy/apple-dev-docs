@@ -1,6 +1,6 @@
 # associate(to:password:)
 
-**Framework**: Corewlan  
+**Framework**: Core WLAN  
 **Kind**: method
 
 Associates to a given network using the given network passphrase.

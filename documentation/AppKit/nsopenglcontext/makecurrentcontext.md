@@ -1,6 +1,6 @@
 # makeCurrentContext()
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Sets the context as the current OpenGL context object.

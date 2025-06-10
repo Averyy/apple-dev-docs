@@ -26,8 +26,6 @@ If the handle represents a file, writing takes place at the file pointer’s cur
 
 > ❗ **Important**:  This method raises [`fileHandleOperationException`](nsexceptionname/filehandleoperationexception.md) if the file descriptor is closed or isn’t valid, if the handle represents an unconnected pipe or socket endpoint, if there isn’t any free space on the file system, or if any other writing error occurs.
 
- This method raises [`fileHandleOperationException`](nsexceptionname/filehandleoperationexception.md) if the file descriptor is closed or isn’t valid, if the handle represents an unconnected pipe or socket endpoint, if there isn’t any free space on the file system, or if any other writing error occurs.
-
 ## Parameters
 
 - `data`: The data to write to the file handle.

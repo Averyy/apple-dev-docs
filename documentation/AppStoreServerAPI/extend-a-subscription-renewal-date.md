@@ -1,6 +1,6 @@
 # Extend a Subscription Renewal Date
 
-**Framework**: Appstoreserverapi  
+**Framework**: App Store Server API  
 **Kind**: httpRequest
 
 Extends the renewal date of a customer’s active subscription using the original transaction identifier.
@@ -11,8 +11,8 @@ Extends the renewal date of a customer’s active subscription using the origina
 ## Mentions
 
 - [Extending the renewal date for auto-renewable subscriptions](extending-the-renewal-date-for-auto-renewable-subscriptions.md)
-- [App Store Server API changelog](app-store-server-api-changelog.md)
 - [Identifying rate limits](identifying-rate-limits.md)
+- [App Store Server API changelog](app-store-server-api-changelog.md)
 
 #### Discussion
 
@@ -56,4 +56,4 @@ The request body containing subscription-renewal-extension data.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/extend-a-subscription-renewal-date)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/extend-a-subscription-renewal-date)*

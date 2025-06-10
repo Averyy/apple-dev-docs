@@ -1,6 +1,6 @@
 # isPaired
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 A Boolean indicating whether the current iPhone has a paired Apple Watch.

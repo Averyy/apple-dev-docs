@@ -1,6 +1,6 @@
 # asset
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The audio file asset being managed.

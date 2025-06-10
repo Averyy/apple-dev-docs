@@ -54,6 +54,7 @@ Like many HealthKit classes, the [`HKCDADocument`](hkcdadocument.md) class shoul
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -17,8 +17,7 @@ The amount to offset the view by.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency var offset: CGSize
+var offset: CGSize
 ```
 
 ## See Also

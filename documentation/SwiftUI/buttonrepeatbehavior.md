@@ -40,6 +40,7 @@ Use values of this type with the [`buttonRepeatBehavior(_:)`](view/buttonrepeatb
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -57,6 +58,7 @@ Use values of this type with the [`buttonRepeatBehavior(_:)`](view/buttonrepeatb
   A shape used to draw a button’s border.
 - [struct ButtonRole](buttonrole.md)
   A value that describes the purpose of a button.
+- [struct ButtonSizing](buttonsizing.md)
 
 
 ---

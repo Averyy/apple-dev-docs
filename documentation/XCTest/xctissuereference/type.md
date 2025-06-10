@@ -1,6 +1,6 @@
 # type
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A value for classifying an issue that occurs during testing.

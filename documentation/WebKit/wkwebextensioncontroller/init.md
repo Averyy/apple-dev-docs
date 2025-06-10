@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Returns a web extension controller initialized with the default configuration.

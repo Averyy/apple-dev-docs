@@ -1,42 +1,26 @@
-# selection
+# selection(_:)
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: method
 
-Indicates that a UI element’s values are changing.
+Plays feedback in response to a specific UI element’s values changing.
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst 17.0+
-- macOS 14.0+
-- tvOS 17.0+
-- watchOS 10.0+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
-static let selection: SensoryFeedback
+static func selection(_ feedback: SensoryFeedback.SelectionFeedback) -> SensoryFeedback
 ```
-
-#### Discussion
-
-Only plays feedback on iOS and watchOS.
-
-## See Also
-
-- [static let alignment: SensoryFeedback](sensoryfeedback/alignment.md)
-  Indicates the alignment of a dragged item.
-- [static let decrease: SensoryFeedback](sensoryfeedback/decrease.md)
-  Indicates that an important value decreased below a significant threshold.
-- [static let increase: SensoryFeedback](sensoryfeedback/increase.md)
-  Indicates that an important value increased above a significant threshold.
-- [static let levelChange: SensoryFeedback](sensoryfeedback/levelchange.md)
-  Indicates movement between discrete levels of pressure.
-- [static let pathComplete: SensoryFeedback](sensoryfeedback/pathcomplete.md)
-  Indicates a drawn path has completed and/or recognized.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/sensoryfeedback/selection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/sensoryfeedback/selection(_:))*

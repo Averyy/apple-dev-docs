@@ -44,6 +44,15 @@ You create a `UISceneSessionActivationRequest` object in your code, then you pas
   The specific scene session to activate.
 - [var userActivity: NSUserActivity?](uiscenesessionactivationrequest-swift.struct/useractivity.md)
   A user activity to send to the newly activated scene.
+### Initializers
+- [init?<D>(hostingDelegateClass: D.Type)](uiscenesessionactivationrequest-swift.struct/init(hostingdelegateclass:).md)
+  Creates a `UISceneSessionActivationRequest` customized to open a SwiftUI scene.
+- [init?<D>(hostingDelegateClass: D.Type, id: String)](uiscenesessionactivationrequest-swift.struct/init(hostingdelegateclass:id:).md)
+  Creates a `UISceneSessionActivationRequest` customized to open a SwiftUI scene with the given identifier.
+- [init?<H, D>(hostingDelegateClass: H.Type, id: String, value: D)](uiscenesessionactivationrequest-swift.struct/init(hostingdelegateclass:id:value:).md)
+  Creates a `UISceneSessionActivationRequest` customized to open a SwiftUI scene with the given identifier and presented value.
+- [init?<H, D>(hostingDelegateClass: H.Type, value: D)](uiscenesessionactivationrequest-swift.struct/init(hostingdelegateclass:value:).md)
+  Creates a `UISceneSessionActivationRequest` customized to open a SwiftUI scene with a presented value.
 
 ## Relationships
 

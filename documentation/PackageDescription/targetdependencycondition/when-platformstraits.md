@@ -19,6 +19,15 @@ static func when(platforms: [Platform], traits: Set<String>) -> TargetDependency
 - `platforms`: The applicable platforms for this target dependency condition.
 - `traits`: The applicable traits for this target dependency condition.
 
+## See Also
+
+- [static func when(platforms: [Platform]) -> TargetDependencyCondition?](targetdependencycondition/when(platforms:)-5bxhc.md)
+  Creates a target dependency condition.
+- [static func when(traits: Set<String>) -> TargetDependencyCondition?](targetdependencycondition/when(traits:).md)
+  Creates a target dependency condition.
+- [static func when(platforms: [Platform]?) -> TargetDependencyCondition](targetdependencycondition/when(platforms:)-4djh6.md)
+  Creates a target dependency condition.
+
 
 ---
 

@@ -1,6 +1,6 @@
 # IOUserHIDDevice
 
-**Framework**: Hiddriverkit  
+**Framework**: HIDDriverKit  
 **Kind**: class
 
 A provider object for devices that support interactions with users.
@@ -69,4 +69,4 @@ You may add other keys to assist with the matching process. For example, you mig
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HIDDriverKit/iouserhiddevice)*
+*[View on Apple Developer](https://developer.apple.com/documentation/hiddriverkit/iouserhiddevice)*

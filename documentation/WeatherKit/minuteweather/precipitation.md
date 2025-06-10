@@ -1,6 +1,6 @@
 # precipitation
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A description of the precipitation for this minute.

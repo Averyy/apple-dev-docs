@@ -1,6 +1,6 @@
 # prefix(while:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns a sequence containing the initial, consecutive elements that satisfy the given predicate.

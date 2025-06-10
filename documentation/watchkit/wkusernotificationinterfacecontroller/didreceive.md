@@ -1,6 +1,6 @@
 # didReceive(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Delivers a notification object to your interface controller for processing.

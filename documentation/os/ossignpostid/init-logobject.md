@@ -24,8 +24,6 @@ init(log: OSLog, object: AnyObject)
 
 > ❗ **Important**:  Don’t use this method if your signpost IDs cross process boundaries.
 
- Don’t use this method if your signpost IDs cross process boundaries.
-
 ## Parameters
 
 - `log`: The log that you’re writing signposted events to.

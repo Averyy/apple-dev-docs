@@ -39,8 +39,6 @@ struct MapProxy
 
 - [struct DefaultUserAnnotationContent](defaultuserannotationcontent.md)
   A structure that represents the view to show at the user’s location on the map.
-- [struct AnyMapContent](anymapcontent.md)
-  A structure you use to change the type of content MapKit uses in a map view.
 - [struct EmptyMapContent](emptymapcontent.md)
   A map content element that doesn’t contain any content.
 - [struct MapReader](mapreader.md)

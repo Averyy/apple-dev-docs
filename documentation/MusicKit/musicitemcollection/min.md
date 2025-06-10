@@ -1,6 +1,6 @@
 # min()
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Returns the minimum element in the sequence.

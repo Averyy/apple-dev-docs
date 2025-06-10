@@ -1,6 +1,6 @@
 # atEnd
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 A policy that specifies that WidgetKit requests a new timeline after the last date in a timeline passes.
@@ -8,8 +8,9 @@ A policy that specifies that WidgetKit requests a new timeline after the last da
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration

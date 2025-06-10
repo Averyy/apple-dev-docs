@@ -1,6 +1,6 @@
 # setAccessibilityTraits(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the combination of accessibility traits that best characterize the accessibility element.

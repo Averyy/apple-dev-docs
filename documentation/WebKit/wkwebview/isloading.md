@@ -1,6 +1,6 @@
 # isLoading
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether the view is currently loading content.

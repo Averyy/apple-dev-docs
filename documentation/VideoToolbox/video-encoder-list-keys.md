@@ -1,6 +1,6 @@
 # Video Encoder List Keys
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 Dictionary key constants to use to retrieve video encoder information.
 

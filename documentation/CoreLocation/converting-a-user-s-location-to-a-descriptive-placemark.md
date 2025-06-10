@@ -18,8 +18,6 @@ To provide user-friendly place information, configure your map view to display t
 
 > ❗ **Important**:  Geocoding requests are rate-limited for each app. Issue new geocoding requests only when the user has moved a significant distance and after a reasonable amount of time has passed.
 
- Geocoding requests are rate-limited for each app. Issue new geocoding requests only when the user has moved a significant distance and after a reasonable amount of time has passed.
-
 ```swift
 func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         guard let newLocation = userLocation.location else { return }

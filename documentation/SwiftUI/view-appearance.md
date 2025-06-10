@@ -76,7 +76,7 @@ For information about configuring views, see [`View configuration`](view-configu
   Sets the default wheel-style picker item height.
 - [func horizontalRadioGroupLayout() -> some View](view/horizontalradiogrouplayout.md)
   Sets the style for radio group style pickers within this view to be horizontally positioned with the radio buttons inside the layout.
-- [func controlSize(ControlSize) -> some View](view/controlsize(_:).md)
+- [func controlSize(_:)](view/controlsize(_:).md)
   Sets the size for controls within this view.
 - [func buttonBorderShape(ButtonBorderShape) -> some View](view/buttonbordershape(_:).md)
   Sets the border shape for buttons in this view.
@@ -142,7 +142,7 @@ For information about configuring views, see [`View configuration`](view-configu
 ### Sensory feedback
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T) -> some View](view/sensoryfeedback(_:trigger:).md)
   Plays the specified `feedback` when the provided `trigger` value changes.
-- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](view/sensoryfeedback(trigger:_:).md)
+- [func sensoryFeedback(trigger:_:)](view/sensoryfeedback(trigger:_:).md)
   Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T, condition: (T, T) -> Bool) -> some View](view/sensoryfeedback(_:trigger:condition:).md)
   Plays the specified `feedback` when the provided `trigger` value changes and the `condition` closure returns `true`.

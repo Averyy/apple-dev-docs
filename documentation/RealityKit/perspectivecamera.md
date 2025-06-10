@@ -10,6 +10,7 @@ A virtual camera that establishes the rendering perspective.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -28,17 +29,14 @@ During an AR session, RealityKit automatically uses the device’s camera to def
 ### Creating a camera
 - [init()](perspectivecamera/init.md)
   Creates a perspective camera entity.
-### Configuring the camera
-- [var camera: PerspectiveCameraComponent](perspectivecamera/camera.md)
-  A camera component for the perspective camera entity.
-### Default Implementations
-- [HasPerspectiveCamera Implementations](perspectivecamera/hasperspectivecamera-implementations.md)
 
 ## Relationships
 
 ### Inherits From
 - [Entity](entity.md)
 ### Conforms To
+- [CoordinateSpace3D](../Spatial/CoordinateSpace3D.md)
+- [CoordinateSpace3DFloat](../Spatial/CoordinateSpace3DFloat.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [EventSource](eventsource.md)
@@ -48,8 +46,10 @@ During an AR session, RealityKit automatically uses the device’s camera to def
 - [HasTransform](hastransform.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
+- [Observable](../Observation/Observable.md)
 - [RealityCoordinateSpace](realitycoordinatespace.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

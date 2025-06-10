@@ -1,6 +1,6 @@
 # altKey
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A Boolean value indicating whether the alt key is pressed.

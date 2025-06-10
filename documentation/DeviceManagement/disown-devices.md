@@ -13,9 +13,7 @@ Notify Apple’s servers that your organization no longer owns the specified dev
 
 ### Response
 - [object DeviceStatusResponse](devicestatusresponse.md)
-  The request to get the status of a set of devices.
 - [object DeviceStatusResponse.Devices](devicestatusresponse/devices-data.dictionary.md)
-  A dictionary of devices with their status.
 
 ## Request Body
 

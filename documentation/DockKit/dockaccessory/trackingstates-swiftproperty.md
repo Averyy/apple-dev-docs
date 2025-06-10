@@ -1,6 +1,6 @@
 # trackingStates
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: property
 
 Provides an access to the asynchronous sequence of tracking session states

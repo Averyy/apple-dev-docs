@@ -29,4 +29,4 @@ To run the app:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/migrating-opengl-code-to-metal)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/migrating-opengl-code-to-metal)*

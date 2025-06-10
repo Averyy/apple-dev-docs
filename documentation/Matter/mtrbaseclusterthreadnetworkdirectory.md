@@ -30,7 +30,7 @@ Manages the names and credentials of Thread networks visible to the user.
 - [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclusterthreadnetworkdirectory/init(device:endpointid:queue:).md)
   For all instance methods (reads, writes, commands) that take a completion, the completion will be called on the provided queue.
 ### Instance Methods
-- [func addNetwork(with: MTRThreadNetworkDirectoryClusterAddNetworkParams, completion: MTRStatusCompletion)](mtrbaseclusterthreadnetworkdirectory/addnetwork(with:completion:).md)
+- [func addNetwork(with: MTRThreadNetworkDirectoryClusterAddNetworkParams, completion: ((any Error)?) -> Void)](mtrbaseclusterthreadnetworkdirectory/addnetwork(with:completion:).md)
   Command AddNetwork
 - [func getOperationalDataset(with: MTRThreadNetworkDirectoryClusterGetOperationalDatasetParams, completion: (MTRThreadNetworkDirectoryClusterOperationalDatasetResponseParams?, (any Error)?) -> Void)](mtrbaseclusterthreadnetworkdirectory/getoperationaldataset(with:completion:).md)
   Command GetOperationalDataset
@@ -42,7 +42,7 @@ Manages the names and credentials of Thread networks visible to the user.
 - [func readAttributePreferredExtendedPanID(completion: (Data?, (any Error)?) -> Void)](mtrbaseclusterthreadnetworkdirectory/readattributepreferredextendedpanid(completion:).md)
 - [func readAttributeThreadNetworkTableSize(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterthreadnetworkdirectory/readattributethreadnetworktablesize(completion:).md)
 - [func readAttributeThreadNetworks(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterthreadnetworkdirectory/readattributethreadnetworks(completion:).md)
-- [func removeNetwork(with: MTRThreadNetworkDirectoryClusterRemoveNetworkParams, completion: MTRStatusCompletion)](mtrbaseclusterthreadnetworkdirectory/removenetwork(with:completion:).md)
+- [func removeNetwork(with: MTRThreadNetworkDirectoryClusterRemoveNetworkParams, completion: ((any Error)?) -> Void)](mtrbaseclusterthreadnetworkdirectory/removenetwork(with:completion:).md)
   Command RemoveNetwork
 - [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterthreadnetworkdirectory/subscribeattributeacceptedcommandlist(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterthreadnetworkdirectory/subscribeattributeattributelist(with:subscriptionestablished:reporthandler:).md)
@@ -52,8 +52,8 @@ Manages the names and credentials of Thread networks visible to the user.
 - [func subscribeAttributePreferredExtendedPanID(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (Data?, (any Error)?) -> Void)](mtrbaseclusterthreadnetworkdirectory/subscribeattributepreferredextendedpanid(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeThreadNetworkTableSize(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterthreadnetworkdirectory/subscribeattributethreadnetworktablesize(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeThreadNetworks(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterthreadnetworkdirectory/subscribeattributethreadnetworks(with:subscriptionestablished:reporthandler:).md)
-- [func writeAttributePreferredExtendedPanID(withValue: Data?, completion: MTRStatusCompletion)](mtrbaseclusterthreadnetworkdirectory/writeattributepreferredextendedpanid(withvalue:completion:).md)
-- [func writeAttributePreferredExtendedPanID(withValue: Data?, params: MTRWriteParams?, completion: MTRStatusCompletion)](mtrbaseclusterthreadnetworkdirectory/writeattributepreferredextendedpanid(withvalue:params:completion:).md)
+- [func writeAttributePreferredExtendedPanID(withValue: Data?, completion: ((any Error)?) -> Void)](mtrbaseclusterthreadnetworkdirectory/writeattributepreferredextendedpanid(withvalue:completion:).md)
+- [func writeAttributePreferredExtendedPanID(withValue: Data?, params: MTRWriteParams?, completion: ((any Error)?) -> Void)](mtrbaseclusterthreadnetworkdirectory/writeattributepreferredextendedpanid(withvalue:params:completion:).md)
 ### Type Methods
 - [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterthreadnetworkdirectory/readattributeacceptedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
 - [class func readAttributeAttributeList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterthreadnetworkdirectory/readattributeattributelist(withclusterstatecache:endpoint:queue:completion:).md)

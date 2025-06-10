@@ -29,21 +29,9 @@ If the system can’t create an instance of one of the classes you specify in `c
 
 > 💡 **Tip**:  Ensure you receive one object per item on the pasteboard by including the [`NSPasteboardItem`](nspasteboarditem.md) class in the array of classes.
 
- Ensure you receive one object per item on the pasteboard by including the [`NSPasteboardItem`](nspasteboarditem.md) class in the array of classes.
-
 When the system provides a `draggingItem` to your block, modify the item’s properties to change how the user sees the item while dragging. Provide a `view` to this method if you want to express each dragging item’s `draggingFrame` relative to that `view`.
 
 > ⚠️ **Warning**:  The `draggingItem` object is only valid for the current iteration of the enumeration block. Never store the `draggingItem` or change it outside of the block iteration. Don’t reference `draggingItem` inside an [`imageComponentsProvider`](nsdraggingitem/imagecomponentsprovider.md) block for the following reasons: ・When the system calls the `imageComponentsProvider` block, the enumeration block is out of scope and the `draggingItem` is no longer valid. ・Referencing `draggingItem` in an `imageComponentsProvider` block creates a retain cycle because `draggingItem` retains `imageComponentsProvider`, and `imageComponentsProvider` retains `draggingItem`. Assign `draggingItem.item` to an object pointer or variable outside of the `imageComponentsProvider` block definition instead, and use that object pointer or variable inside the [`imageComponentsProvider`](nsdraggingitem/imagecomponentsprovider.md) block definition.
-
- The `draggingItem` object is only valid for the current iteration of the enumeration block. Never store the `draggingItem` or change it outside of the block iteration.
-
-Don’t reference `draggingItem` inside an [`imageComponentsProvider`](nsdraggingitem/imagecomponentsprovider.md) block for the following reasons:
-
-・When the system calls the `imageComponentsProvider` block, the enumeration block is out of scope and the `draggingItem` is no longer valid.
-
-・Referencing `draggingItem` in an `imageComponentsProvider` block creates a retain cycle because `draggingItem` retains `imageComponentsProvider`, and `imageComponentsProvider` retains `draggingItem`.
-
-Assign `draggingItem.item` to an object pointer or variable outside of the `imageComponentsProvider` block definition instead, and use that object pointer or variable inside the [`imageComponentsProvider`](nsdraggingitem/imagecomponentsprovider.md) block definition.
 
 To refine the list of dragging items that this method provides, specify `enumOpts` and `searchOptions`.
 

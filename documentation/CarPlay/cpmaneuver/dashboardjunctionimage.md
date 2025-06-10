@@ -1,6 +1,6 @@
 # dashboardJunctionImage
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: property
 
 An image for the CarPlay dashboard that represents an upcoming junction.

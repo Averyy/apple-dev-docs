@@ -6,10 +6,9 @@
 The product identifier of the In-App Purchase that the customer selects to purchase outside of the app.
 
 **Availability**:
-- iOS 16.4+
-- iPadOS 16.4+
-- Mac Catalyst 16.4+
-- macOS 14.4+
+- iOS 18.0+
+- iPadOS 18.0+
+- macOS 15.0+
 
 ## Declaration
 

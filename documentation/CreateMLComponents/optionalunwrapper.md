@@ -40,6 +40,7 @@ struct OptionalUnwrapper<Element>
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transformer](transformer.md)
 
 ## See Also

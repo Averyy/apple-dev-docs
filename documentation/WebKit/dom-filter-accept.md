@@ -1,6 +1,6 @@
 # DOM_FILTER_ACCEPT
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

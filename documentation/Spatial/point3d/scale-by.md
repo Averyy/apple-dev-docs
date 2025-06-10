@@ -22,8 +22,6 @@ mutating func scale(by rhs: Double)
   Returns a point that results from applying the specified pose.
 - [func clamp(to: Rect3D)](point3d/clamp(to:).md)
   Clamps the mutable point to the specified rectangle.
-- [func clamped(to: Rect3D) -> Point3D](point3d/clamped(to:).md)
-  Returns a point with coordinates that clamp to the specified rectangle.
 - [func rotated(by: Rotation3D, around: Point3D) -> Point3D](point3d/rotated(by:around:)-4tmfq.md)
   Returns a point that results from applying a rotation around the specified point.
 - [func rotated(by: simd_quatd, around: Point3D) -> Point3D](point3d/rotated(by:around:)-chuy.md)

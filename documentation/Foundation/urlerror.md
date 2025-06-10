@@ -156,6 +156,7 @@ These error codes are for [`NSError`](nserror.md) objects in the domain [`NSURLE
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

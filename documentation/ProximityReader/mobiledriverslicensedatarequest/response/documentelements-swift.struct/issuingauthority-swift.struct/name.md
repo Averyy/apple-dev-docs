@@ -9,6 +9,7 @@ The name of the state or government that issued the identity document.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
+- visionOS 1.0+
 
 ## Declaration
 

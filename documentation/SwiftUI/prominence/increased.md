@@ -1,6 +1,6 @@
 # Prominence.increased
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: case
 
 An increased prominence.
@@ -32,4 +32,4 @@ case increased
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/prominence/increased)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/prominence/increased)*

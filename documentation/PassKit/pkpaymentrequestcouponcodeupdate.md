@@ -1,6 +1,6 @@
 # PKPaymentRequestCouponCodeUpdate
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: class
 
 An object that updates the payment request after the coupon code changes.
@@ -63,4 +63,4 @@ Use this object to update the summary items to reflect the change in the coupon 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/pkpaymentrequestcouponcodeupdate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/passkit/pkpaymentrequestcouponcodeupdate)*

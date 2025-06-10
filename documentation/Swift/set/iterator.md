@@ -34,6 +34,7 @@ struct Iterator
 - [CustomReflectable](customreflectable.md)
 - [IteratorProtocol](iteratorprotocol.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

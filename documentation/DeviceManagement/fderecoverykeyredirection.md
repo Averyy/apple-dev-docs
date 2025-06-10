@@ -7,8 +7,6 @@ The payload you use to configure FileVault recovery key redirection.
 
 **Availability**:
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,13 +29,13 @@ Note these cautions:
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | - |
-| Allow Manual Install | macOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | macOS |
+| User channel | NA |
+| Allow manual install | macOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ## See Also
 

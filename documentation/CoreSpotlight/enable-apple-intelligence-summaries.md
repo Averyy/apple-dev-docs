@@ -1,6 +1,6 @@
 # Enabling Apple Intelligence summarization and prioritization
 
-**Framework**: Corespotlight
+**Framework**: Core Spotlight
 
 Summarize and prioritize app content using Spotlight extensions.
 
@@ -112,4 +112,4 @@ Apple Intelligence only considers an item for summarization or prioritization wh
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreSpotlight/enable-apple-intelligence-summaries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corespotlight/enable-apple-intelligence-summaries)*

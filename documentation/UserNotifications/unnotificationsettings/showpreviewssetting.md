@@ -1,6 +1,6 @@
 # showPreviewsSetting
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The setting that indicates whether the app shows a preview of the notification’s content.

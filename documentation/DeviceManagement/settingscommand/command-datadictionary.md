@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to configure settings on a device.
+The command to configure settings on a device.
 
 **Availability**:
 - iOS 5.0+
@@ -12,8 +12,6 @@ The request dictionary to configure settings on a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,7 +21,7 @@ object SettingsCommand.Command
 
 ## Topics
 
-### Commands
+### Objects
 - [object SettingsCommand.Command.Settings](settingscommand/command-data.dictionary/settings-data.dictionary.md)
   An array of dictionaries that contains the settings.
 

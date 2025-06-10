@@ -1,6 +1,6 @@
 # CTFramesetterCreateWithAttributedString(_:)
 
-**Framework**: Coretext  
+**Framework**: Core Text  
 **Kind**: func
 
 Creates an immutable framesetter object from an attributed string.

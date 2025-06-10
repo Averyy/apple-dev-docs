@@ -1,6 +1,6 @@
 # confirmationDialog(_:isPresented:titleVisibility:actions:message:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Presents a confirmation dialog with a message when a given condition is true, using a string variable for the title.

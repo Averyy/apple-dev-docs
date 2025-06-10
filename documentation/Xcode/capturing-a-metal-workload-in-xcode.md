@@ -33,8 +33,6 @@ Xcode automatically starts capturing a GPU trace when the scope triggers, and th
 
 > 💡 **Tip**: In macOS, you can start a capture by selecting an option from the “Capture shortcut” menu, and then pressing that keyboard shortcut while the app is active.
 
-In macOS, you can start a capture by selecting an option from the “Capture shortcut” menu, and then pressing that keyboard shortcut while the app is active.
-
 ##### Capture Your Metal Workload After Deployment
 
 Capture a GPU trace after deploying your app by following these steps:
@@ -50,8 +48,6 @@ Capture a GPU trace after deploying your app by following these steps:
 Xcode automatically starts capturing a GPU trace when the scope triggers, and then finishes the capture based on the count you select. To manually stop the capture, you can click the Finish button at any time.
 
 > 💡 **Tip**: In macOS, you can start a capture by selecting an option from the “Capture shortcut” menu, and then pressing that keyboard shortcut while the app is active.
-
-In macOS, you can start a capture by selecting an option from the “Capture shortcut” menu, and then pressing that keyboard shortcut while the app is active.
 
 ##### Save the Capture to Your Computer
 

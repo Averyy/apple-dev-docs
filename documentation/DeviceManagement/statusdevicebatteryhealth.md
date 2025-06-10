@@ -9,8 +9,6 @@ The device’s battery health.
 - iOS 17.0+
 - iPadOS 17.0+
 - macOS 14.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,12 +16,22 @@ The device’s battery health.
 object StatusDeviceBatteryHealth
 ```
 
-#### Overview
+#### Discussion
+
+##### Status Item Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | iOS, macOS, Shared iPad |
+| Allowed in device enrollment | iOS, Shared iPad |
+| Allowed in user enrollment | NA |
+| Allowed in local enrollment | iOS, macOS, Shared iPad |
+| Allowed in system scope | iOS, macOS, Shared iPad |
+| Allowed in user scope | NA |
 
 ## See Also
 
 - [object StatusReport](statusreport.md)
-  A status report of the device’s current state.
 - [object StatusAppManagedList](statusappmanagedlist.md)
   The device’s declarative managed apps.
 - [object StatusDeviceModelFamily](statusdevicemodelfamily.md)

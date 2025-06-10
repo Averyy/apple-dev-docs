@@ -333,4 +333,4 @@ int cryptographic_routine(void) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/writing-arm64-code-for-apple-platforms)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/writing-arm64-code-for-apple-platforms)*

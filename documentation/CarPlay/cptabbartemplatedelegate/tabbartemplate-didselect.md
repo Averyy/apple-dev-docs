@@ -14,6 +14,7 @@ Tells the delegate when the tab bar selects the specified template.
 ## Declaration
 
 ```swift
+@MainActor
 func tabBarTemplate(_ tabBarTemplate: CPTabBarTemplate, didSelect selectedTemplate: CPTemplate)
 ```
 

@@ -1,6 +1,6 @@
 # touchesEnded(_:with:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Tells the responder when one or more fingers are raised from a view or window.

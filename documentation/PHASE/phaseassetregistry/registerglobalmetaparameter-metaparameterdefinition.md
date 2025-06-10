@@ -1,6 +1,6 @@
 # registerGlobalMetaParameter(metaParameterDefinition:)
 
-**Framework**: Phase  
+**Framework**: PHASE  
 **Kind**: method
 
 Registers a global metaparameter with the asset registry.

@@ -1,6 +1,6 @@
 # webViewConfiguration
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The web view configuration to use for web views that load pages from this extension.

@@ -28,8 +28,6 @@ Drivers don’t need to call this function. When they create devices and entitie
 
 > 💡 **Tip**:  After creating a virtual source, assign it the same unique ID it had the last time your app created it. Doing so permits other clients to retain persistent references to your virtual source.
 
- After creating a virtual source, assign it the same unique ID it had the last time your app created it. Doing so permits other clients to retain persistent references to your virtual source.
-
 ## Parameters
 
 - `client`: The client to own the virtual source.

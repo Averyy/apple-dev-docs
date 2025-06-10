@@ -1,6 +1,6 @@
 # isApplicationRunningInDock
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A Boolean value that indicates whether the app is running in the dock.

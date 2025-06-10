@@ -1,6 +1,6 @@
 # playingAudio
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the audio playback state changed.

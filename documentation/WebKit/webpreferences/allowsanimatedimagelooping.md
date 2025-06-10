@@ -1,6 +1,6 @@
 # allowsAnimatedImageLooping
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean that indicates whether or not the receiver allows animated images to loop.

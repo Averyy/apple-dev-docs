@@ -1,6 +1,6 @@
 # contentFrame
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The content frame of the element.

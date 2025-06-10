@@ -37,8 +37,6 @@ The first time the system calls this method, it alerts the user that Apple Pay i
 
 > ❗ **Important**:  This method requires a special entitlement from Apple. If the entitlement isn’t present, the request fails with a [`PKPassLibrary`](pkpasslibrary.md) result. For more information, see [`developer.apple.com/apple-pay/`](https://developer.apple.comhttps://developer.apple.com/apple-pay/).
 
- This method requires a special entitlement from Apple. If the entitlement isn’t present, the request fails with a [`PKPassLibrary`](pkpasslibrary.md) result. For more information, see [`developer.apple.com/apple-pay/`](https://developer.apple.comhttps://developer.apple.com/apple-pay/).
-
 ## Parameters
 
 - `responseHandler`: The response handler for the request.

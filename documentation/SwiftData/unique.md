@@ -28,8 +28,6 @@ If a model class contains attributes that you require to be unique across all pe
 
 > ❗ **Important**: For relationship attributes, SwiftData only supports unique constraints on those that reference a single persistent model, rather than an array of persistent models.
 
-For relationship attributes, SwiftData only supports unique constraints on those that reference a single persistent model, rather than an array of persistent models.
-
 The following example declares that every instance of `Person` has a unique `id`, and that no two instances of `Person` have the same `givenName` and `familyName`:
 
 ```swift

@@ -51,36 +51,36 @@ The `GLKTextureLoader` and `GLKTextureInfo` classes do not manage the OpenGL tex
 ### Loading Textures from Files
 - [class func texture(withContentsOfFile: String, options: [String : NSNumber]?) throws -> GLKTextureInfo](glktextureloader/texture(withcontentsoffile:options:).md)
   Loads a 2D texture image from a file and creates a new texture from the data.
-- [func texture(withContentsOfFile: String, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: GLKTextureLoaderCallback)](glktextureloader/texture(withcontentsoffile:options:queue:completionhandler:).md)
+- [func texture(withContentsOfFile: String, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: (GLKTextureInfo?, (any Error)?) -> Void)](glktextureloader/texture(withcontentsoffile:options:queue:completionhandler:).md)
   Asynchronously loads a 2D texture image from a file and creates a new texture from the data.
 ### Loading a Texture From a URL
 - [class func texture(withContentsOf: URL, options: [String : NSNumber]?) throws -> GLKTextureInfo](glktextureloader/texture(withcontentsof:options:)-708ft.md)
   Loads a 2D texture image from a URL and creates a new texture from the data.
-- [func texture(withContentsOf: URL, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: GLKTextureLoaderCallback)](glktextureloader/texture(withcontentsof:options:queue:completionhandler:)-55187.md)
+- [func texture(withContentsOf: URL, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: (GLKTextureInfo?, (any Error)?) -> Void)](glktextureloader/texture(withcontentsof:options:queue:completionhandler:)-55187.md)
   Asynchronously loads a 2D texture image from a URL and creates a new texture from the data.
 ### Creating Textures from In-Memory Representations
 - [class func texture(withContentsOf: Data, options: [String : NSNumber]?) throws -> GLKTextureInfo](glktextureloader/texture(withcontentsof:options:)-2ljxb.md)
   Loads a 2D texture image from a memory range and creates a new texture from the data.
-- [func texture(withContentsOf: Data, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: GLKTextureLoaderCallback)](glktextureloader/texture(withcontentsof:options:queue:completionhandler:)-6n0cf.md)
+- [func texture(withContentsOf: Data, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: (GLKTextureInfo?, (any Error)?) -> Void)](glktextureloader/texture(withcontentsof:options:queue:completionhandler:)-6n0cf.md)
   Asynchronously loads a 2D texture image from a memory range and creates a new texture from the data.
 ### Creating Textures from CGImages
 - [class func texture(with: CGImage, options: [String : NSNumber]?) throws -> GLKTextureInfo](glktextureloader/texture(with:options:).md)
   Loads a 2D texture image from a Quartz image and creates a new texture from the data.
-- [func texture(with: CGImage, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: GLKTextureLoaderCallback)](glktextureloader/texture(with:options:queue:completionhandler:).md)
+- [func texture(with: CGImage, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: (GLKTextureInfo?, (any Error)?) -> Void)](glktextureloader/texture(with:options:queue:completionhandler:).md)
   Asynchronously loads a 2D texture image from a Quartz image and creates a new texture from the data.
 ### Loading Cube Maps from Files
 - [class func cubeMap(withContentsOfFile: String, options: [String : NSNumber]?) throws -> GLKTextureInfo](glktextureloader/cubemap(withcontentsoffile:options:).md)
   Loads a cube map texture image from a single file and creates a new texture from the data.
-- [func cubeMap(withContentsOfFile: String, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: GLKTextureLoaderCallback)](glktextureloader/cubemap(withcontentsoffile:options:queue:completionhandler:).md)
+- [func cubeMap(withContentsOfFile: String, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: (GLKTextureInfo?, (any Error)?) -> Void)](glktextureloader/cubemap(withcontentsoffile:options:queue:completionhandler:).md)
   Asynchronously loads a cube map texture image from a single file and creates a new texture from the data.
 - [class func cubeMap(withContentsOfFiles: [Any], options: [String : NSNumber]?) throws -> GLKTextureInfo](glktextureloader/cubemap(withcontentsoffiles:options:).md)
   Loads a cube map texture image from a series of files and creates a new texture from the data.
-- [func cubeMap(withContentsOfFiles: [Any], options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: GLKTextureLoaderCallback)](glktextureloader/cubemap(withcontentsoffiles:options:queue:completionhandler:).md)
+- [func cubeMap(withContentsOfFiles: [Any], options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: (GLKTextureInfo?, (any Error)?) -> Void)](glktextureloader/cubemap(withcontentsoffiles:options:queue:completionhandler:).md)
   Asynchronously loads a cube map texture image from a series of files and creates a new texture from the data.
 ### Loading Cube Maps from URLs
 - [class func cubeMap(withContentsOf: URL, options: [String : NSNumber]?) throws -> GLKTextureInfo](glktextureloader/cubemap(withcontentsof:options:).md)
   Loads a cube map texture image from a single URL and creates a new texture from the data.
-- [func cubeMap(withContentsOf: URL, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: GLKTextureLoaderCallback)](glktextureloader/cubemap(withcontentsof:options:queue:completionhandler:).md)
+- [func cubeMap(withContentsOf: URL, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: (GLKTextureInfo?, (any Error)?) -> Void)](glktextureloader/cubemap(withcontentsof:options:queue:completionhandler:).md)
   Asynchronously loads a cube map texture image from a single URL and creates a new texture from the data.
 ### Constants
 - [typealias GLKTextureLoaderCallback](glktextureloadercallback.md)
@@ -92,7 +92,7 @@ The `GLKTextureLoader` and `GLKTextureInfo` classes do not manage the OpenGL tex
 - [GLKTextureLoaderError.Code](glktextureloadererror-swift.struct/code.md)
   Values to be returned when a texture loader encounters an error.
 ### Instance Methods
-- [func texture(withName: String, scaleFactor: CGFloat, bundle: Bundle?, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: GLKTextureLoaderCallback)](glktextureloader/texture(withname:scalefactor:bundle:options:queue:completionhandler:).md)
+- [func texture(withName: String, scaleFactor: CGFloat, bundle: Bundle?, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: (GLKTextureInfo?, (any Error)?) -> Void)](glktextureloader/texture(withname:scalefactor:bundle:options:queue:completionhandler:).md)
 ### Type Methods
 - [class func texture(withName: String, scaleFactor: CGFloat, bundle: Bundle?, options: [String : NSNumber]?) throws -> GLKTextureInfo](glktextureloader/texture(withname:scalefactor:bundle:options:).md)
 

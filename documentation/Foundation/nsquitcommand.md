@@ -39,6 +39,8 @@ The quit command may optionally specify how to handle modified documents (automa
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

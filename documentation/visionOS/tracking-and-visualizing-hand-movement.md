@@ -1,6 +1,6 @@
 # Tracking and visualizing hand movement
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
 
@@ -273,4 +273,4 @@ The `makeHandEntities(in:)` method creates the left- and right-hand entities, an
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/tracking-and-visualizing-hand-movement)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/tracking-and-visualizing-hand-movement)*

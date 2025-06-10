@@ -1,6 +1,6 @@
 # swipeLeft()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a swipe-left gesture.

@@ -8,10 +8,10 @@ An App Intent for starting a workout.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -78,8 +78,6 @@ struct MyStartWorkoutIntent: StartWorkoutIntent {
 
 > ❗ **Important**: When defining the [`workoutStyle`](startworkoutintent/workoutstyle-swift.property.md) property, ensure that it adopts either the [`AppEnum`](appenum.md) or [`AppEntity`](appentity.md) protocol. Declare this property using the [`AppIntent.Parameter`](appintent/parameter.md) property wrapper.
 
-When defining the [`workoutStyle`](startworkoutintent/workoutstyle-swift.property.md) property, ensure that it adopts either the [`AppEnum`](appenum.md) or [`AppEntity`](appentity.md) protocol. Declare this property using the [`AppIntent.Parameter`](appintent/parameter.md) property wrapper.
-
 For more information, see [`Responding to the Action button on Apple Watch Ultra`](actionbuttonarticle.md).
 
 ## Topics
@@ -105,6 +103,7 @@ For more information, see [`Responding to the Action button on Apple Watch Ultra
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SystemIntent](systemintent.md)
 
 ## See Also

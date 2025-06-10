@@ -30,4 +30,4 @@ To check whether a collection is empty, use its `isEmpty` property instead of co
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/collection/count)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/collection/count)*

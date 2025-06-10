@@ -48,9 +48,6 @@ Use the default values in most instances. In some cases, you may improve the qua
 ### Structures
 - [PhotogrammetrySession.Configuration.CustomDetailSpecification](photogrammetrysession/configuration-swift.struct/customdetailspecification-swift.struct.md)
   A structure for specifying various customizable options on the reconstructed model and textures.
-### Operators
-- [static func == (PhotogrammetrySession.Configuration, PhotogrammetrySession.Configuration) -> Bool](photogrammetrysession/configuration-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(checkpointDirectory: URL)](photogrammetrysession/configuration-swift.struct/init(checkpointdirectory:).md)
 ### Instance Properties
@@ -65,13 +62,13 @@ Use the default values in most instances. In some cases, you may improve the qua
 ### Enumerations
 - [PhotogrammetrySession.Configuration.MeshPrimitive](photogrammetrysession/configuration-swift.struct/meshprimitive-swift.enum.md)
   The type of geometric mesh primitives to create in model output
-### Default Implementations
-- [Equatable Implementations](photogrammetrysession/configuration-swift.struct/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

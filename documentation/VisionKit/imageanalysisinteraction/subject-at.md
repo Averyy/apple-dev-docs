@@ -1,6 +1,6 @@
 # subject(at:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Returns the subject at the given point within the interaction’s image, if one exists.

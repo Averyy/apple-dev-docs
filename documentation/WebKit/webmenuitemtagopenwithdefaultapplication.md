@@ -1,6 +1,6 @@
 # WebMenuItemTagOpenWithDefaultApplication
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Open the current selection using the default application.

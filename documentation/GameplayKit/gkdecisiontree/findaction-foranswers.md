@@ -1,6 +1,6 @@
 # findAction(forAnswers:)
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: method
 
 Searches the decision tree, following the branches corresponding to each of the specified answers, and returns the resulting action object.

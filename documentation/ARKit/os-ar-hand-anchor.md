@@ -5,9 +5,6 @@
 
 A hand’s position in a person’s surroundings.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift

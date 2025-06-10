@@ -1,4 +1,4 @@
-# Schedule an OS Update
+# Schedule OS Update
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -10,8 +10,6 @@ Schedule an update of the operating system on a device.
 - iPadOS 9.0+
 - macOS 10.11+
 - tvOS 12.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -31,33 +29,33 @@ Refer to the following sections to determine supported channels and requirements
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS |
-| User Channel | - |
-| Requires Supervision | iOS, macOS, tvOS |
-| Allowed in User Enrollment | - |
-| Required Access Right | AllowAppInstallation |
+| Device channel | iOS, macOS, Shared iPad, tvOS |
+| User channel | NA |
+| Requires supervision | iOS, macOS, tvOS |
+| Allowed in user enrollment | NA |
+| Required access right | AllowAppInstallation |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object ScheduleOSUpdateCommand](scheduleosupdatecommand.md)
-  The command to schedule an update of the operating system.
+  The command to schedule an update of the operating system on a device.
 - [object ScheduleOSUpdateResponse](scheduleosupdateresponse.md)
-  A response from the device after it processes the command to schedule an update of the operating system.
+  A response from the device after it processes the command to schedule an update of the operating system on a device.
 
 ## Request Body
 
-The command to schedule an update of the operating system.
+The request object the server returns for the Schedule OS Update Command.
 
 ## See Also
 
-- [Schedule an OS Update Scan](schedule-os-update-scan-command.md)
+- [Schedule OS Update Scan](schedule-os-update-scan-command.md)
   Schedule a background scan for operating-system updates on a device.
-- [List the Available OS Updates](available-os-updates-command.md)
+- [Available OS Updates](available-os-updates-command.md)
   Get a list of available operating-system updates for a device.
-- [Get the OS Update Status](os-update-status-command.md)
+- [OS Update Status](os-update-status-command.md)
   Get the status of operating-system updates on a device.
 
 

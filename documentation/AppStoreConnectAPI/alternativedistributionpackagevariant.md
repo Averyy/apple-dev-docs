@@ -20,8 +20,6 @@ To learn more about the responses that include alternative distribution package 
 
 > 💡 **Tip**:  Use the `links` fields to navigate the resource object graph while making your requests. For example, from the alternative distribution package variant object above, you can also reach its package metadata, deltas, and versions.
 
- Use the `links` fields to navigate the resource object graph while making your requests. For example, from the alternative distribution package variant object above, you can also reach its package metadata, deltas, and versions.
-
 ## Topics
 
 ### Objects
@@ -51,6 +49,9 @@ To learn more about the responses that include alternative distribution package 
   A response that contains a single alternative distribution package variant resource.
 - [object AlternativeDistributionPackageVariantsResponse](alternativedistributionpackagevariantsresponse.md)
   A response that contains a list of alternative distribution package variant resources.
+- [object AlternativeDistributionPackageVersionDeltasLinkagesResponse](alternativedistributionpackageversiondeltaslinkagesresponse.md)
+- [object AlternativeDistributionPackageVersionVariantsLinkagesResponse](alternativedistributionpackageversionvariantslinkagesresponse.md)
+- [object AlternativeDistributionPackageVersionsLinkagesResponse](alternativedistributionpackageversionslinkagesresponse.md)
 
 
 ---

@@ -11,6 +11,7 @@ Informs the background task scheduler that the task is complete.
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 
@@ -29,8 +30,6 @@ Not calling [`setTaskCompleted(success:)`](bgtask/settaskcompleted(success:).md)
 You can reschedule an unsuccessful required task.
 
 > ❗ **Important**: If you don’t set an expiration handler, the system will mark your task as complete and unsuccessful instead of sending a warning.
-
-If you don’t set an expiration handler, the system will mark your task as complete and unsuccessful instead of sending a warning.
 
 ## Parameters
 

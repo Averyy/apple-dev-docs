@@ -1,6 +1,6 @@
 # duration
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 The number of seconds, following an entry’s date, that WidgetKit considers the widget for rotation to the top of the stack.
@@ -8,8 +8,9 @@ The number of seconds, following an entry’s date, that WidgetKit considers the
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -17,6 +18,10 @@ The number of seconds, following an entry’s date, that WidgetKit considers the
 ```swift
 var duration: TimeInterval
 ```
+
+## Mentions
+
+- [Increasing the visibility of widgets in Smart Stacks](widget-suggestions-in-smart-stacks.md)
 
 ## See Also
 

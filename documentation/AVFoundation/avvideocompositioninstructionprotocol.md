@@ -16,7 +16,7 @@ A protocol that defines the interface for a video composition instruction.
 ## Declaration
 
 ```swift
-protocol AVVideoCompositionInstructionProtocol : NSObjectProtocol
+protocol AVVideoCompositionInstructionProtocol : NSObjectProtocol, Sendable
 ```
 
 #### Overview
@@ -46,6 +46,8 @@ A video composition maintains an array of instructions that describe how to comp
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [AVMutableVideoCompositionInstruction](avmutablevideocompositioninstruction.md)
 - [AVVideoCompositionInstruction](avvideocompositioninstruction-swift.class.md)

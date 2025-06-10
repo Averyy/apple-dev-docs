@@ -44,20 +44,20 @@ The server can send the token to the device as the `DeclarationsToken` item in t
 
 When the client processes the server’s declarations manifest, it persists the declarations token that the server sends. The device uses that value to determine whether it needs to update the declarations manifest. When the device receives a [`DeclarativeManagementCommand`](declarativemanagementcommand.md) command, it triggers a synchronization operation that uses the following rules to determine what steps to take:
 
-- If the [`DeclarativeManagementCommand`](declarativemanagementcommand.md) doesn’t contain a `Data` key, the device fetches the current set of synchronization tokens from the server with a [`Declarative Management Checkin`](declarative-management.md) `tokens` `Endpoint` request. It then uses the `DeclarationsToken` key extracted from the server’s response.
+- If the [`DeclarativeManagementCommand`](declarativemanagementcommand.md) doesn’t contain a `Data` key, the device fetches the current set of synchronization tokens from the server with a [`Declarative Management`](declarative-management.md) `tokens` `Endpoint` request. It then uses the `DeclarationsToken` key extracted from the server’s response.
 - If the [`DeclarativeManagementCommand`](declarativemanagementcommand.md) contains a `Data` key, the device extracts the value of the `DeclarationsToken`.
 
 The device compares the new declaration token to the last declaration token received from the server:
 
 - If the new and existing tokens match, the device assumes the declarations on the server identical since the last synchronization, and the current synchronization operation ends.
-- If the new and existing tokens don’t match, the device continues the synchronization operation by fetching the declarations manifest from the server with a [`Declarative Management Checkin`](declarative-management.md) `declaration-items` `Endpoint` request. The declaration manifest is a JSON object with keys for each declaration type, whose values are an array of declaration item descriptors. Those descriptors contain the Identifier and ServerToken values for each declaration for the device to synchronize.
+- If the new and existing tokens don’t match, the device continues the synchronization operation by fetching the declarations manifest from the server with a [`Declarative Management`](declarative-management.md) `declaration-items` `Endpoint` request. The declaration manifest is a JSON object with keys for each declaration type, whose values are an array of declaration item descriptors. Those descriptors contain the Identifier and ServerToken values for each declaration for the device to synchronize.
 
 ###### Synchronize Device State
 
 The device uses the declaration manifest’s declaration items to synchronize its state with the server using the following logic:
 
-- If the declaration manifest contains a declaration item with an `Identifier` that doesn’t match the `Identifier` of any declaration present on the device, the device considers that to be a new declaration, and fetches it with a [`Declarative Management Checkin`](declarative-management.md) declaration Endpoint request.
-- If the declaration manifest contains a declaration item with an `Identifier` that does match the `Identifier` of a declaration present on the device and the `ServerToken` items don’t match, the device considers that to be an updated declaration, and fetches it with a [`Declarative Management Checkin`](declarative-management.md) declaration Endpoint request.
+- If the declaration manifest contains a declaration item with an `Identifier` that doesn’t match the `Identifier` of any declaration present on the device, the device considers that to be a new declaration, and fetches it with a [`Declarative Management`](declarative-management.md) declaration Endpoint request.
+- If the declaration manifest contains a declaration item with an `Identifier` that does match the `Identifier` of a declaration present on the device and the `ServerToken` items don’t match, the device considers that to be an updated declaration, and fetches it with a [`Declarative Management`](declarative-management.md) declaration Endpoint request.
 
 After processing the entire declaration manifest, if there are declarations present on the device with an `Identifier` that isn’t present in the declaration manifest, the device marks those declarations for removal.
 

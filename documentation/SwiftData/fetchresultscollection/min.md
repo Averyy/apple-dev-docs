@@ -1,6 +1,6 @@
 # min()
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns the minimum element in the sequence.

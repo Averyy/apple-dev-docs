@@ -1,6 +1,6 @@
 # Barcode
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 The details of a barcode for an order.

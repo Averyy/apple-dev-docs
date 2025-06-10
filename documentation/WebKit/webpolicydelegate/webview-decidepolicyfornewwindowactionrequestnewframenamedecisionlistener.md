@@ -1,6 +1,6 @@
 # webView(_:decidePolicyForNewWindowAction:request:newFrameName:decisionListener:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Decides whether to allow a targeted navigation event, such as opening a link in a new window.

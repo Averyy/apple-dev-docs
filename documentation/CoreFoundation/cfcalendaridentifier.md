@@ -47,6 +47,17 @@ struct CFCalendarIdentifier
   Specifies the Persian calendar.
 - [static let republicOfChinaCalendar: CFCalendarIdentifier!](cfcalendaridentifier/republicofchinacalendar.md)
   Specifies the calendar for the Republic of China.
+- [static let banglaCalendar: CFCalendarIdentifier!](cfcalendaridentifier/banglacalendar.md)
+- [static let dangiCalendar: CFCalendarIdentifier!](cfcalendaridentifier/dangicalendar.md)
+- [static let gujaratiCalendar: CFCalendarIdentifier!](cfcalendaridentifier/gujaraticalendar.md)
+- [static let kannadaCalendar: CFCalendarIdentifier!](cfcalendaridentifier/kannadacalendar.md)
+- [static let malayalamCalendar: CFCalendarIdentifier!](cfcalendaridentifier/malayalamcalendar.md)
+- [static let marathiCalendar: CFCalendarIdentifier!](cfcalendaridentifier/marathicalendar.md)
+- [static let odiaCalendar: CFCalendarIdentifier!](cfcalendaridentifier/odiacalendar.md)
+- [static let tamilCalendar: CFCalendarIdentifier!](cfcalendaridentifier/tamilcalendar.md)
+- [static let teluguCalendar: CFCalendarIdentifier!](cfcalendaridentifier/telugucalendar.md)
+- [static let vietnameseCalendar: CFCalendarIdentifier!](cfcalendaridentifier/vietnamesecalendar.md)
+- [static let vikramCalendar: CFCalendarIdentifier!](cfcalendaridentifier/vikramcalendar.md)
 ### Initializers
 - [init(rawValue: CFString)](cfcalendaridentifier/init(rawvalue:).md)
 
@@ -57,6 +68,7 @@ struct CFCalendarIdentifier
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

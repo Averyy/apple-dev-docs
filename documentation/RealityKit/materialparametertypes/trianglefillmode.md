@@ -10,6 +10,7 @@ An object that defines how the system rasterizes triangles and triangle strips
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -20,22 +21,11 @@ enum TriangleFillMode
 
 ## Topics
 
-### Operators
-- [static func == (MaterialParameterTypes.TriangleFillMode, MaterialParameterTypes.TriangleFillMode) -> Bool](materialparametertypes/trianglefillmode/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [MaterialParameterTypes.TriangleFillMode.fill](materialparametertypes/trianglefillmode/fill.md)
   Triangles and triangle strips are rasterized as filled triangles
 - [MaterialParameterTypes.TriangleFillMode.lines](materialparametertypes/trianglefillmode/lines.md)
   Triangles and triangle strips are rasterized as lines
-### Instance Properties
-- [var hashValue: Int](materialparametertypes/trianglefillmode/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](materialparametertypes/trianglefillmode/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](materialparametertypes/trianglefillmode/equatable-implementations.md)
 
 ## Relationships
 

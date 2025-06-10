@@ -25,8 +25,6 @@ The [`layerWillDraw(_:)`](calayerdelegate/layerwilldraw(_:).md) method is called
 
 > ❗ **Important**:  This method is not called if the delegate implements [`display(_:)`](calayerdelegate/display(_:).md).
 
- This method is not called if the delegate implements [`display(_:)`](calayerdelegate/display(_:).md).
-
 ## Parameters
 
 - `layer`: The layer whose contents will be drawn.

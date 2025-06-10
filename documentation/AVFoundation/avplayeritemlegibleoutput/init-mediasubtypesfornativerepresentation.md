@@ -1,6 +1,6 @@
 # init(mediaSubtypesForNativeRepresentation:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: init
 
 Creates an initialized legible-output object.

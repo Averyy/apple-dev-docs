@@ -1,6 +1,6 @@
 # +=(_:_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: op
 
 Appends the elements of a sequence to a range-replaceable collection.

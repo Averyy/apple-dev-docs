@@ -291,4 +291,4 @@ For a complete overview of how to decrypt the Apple Pay Payment token and how th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3103-apple-pay-on-the-web-troubleshooting-guide)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3103-apple-pay-on-the-web-troubleshooting-guide)*

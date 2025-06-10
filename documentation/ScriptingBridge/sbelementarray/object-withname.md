@@ -21,7 +21,7 @@ A reference to the designated object or `nil` if the object couldn’t be found.
 
 #### Discussion
 
-This method is provided as an alternative to [`objectAtIndex:`](https://developer.apple.com/documentation/foundation/nsarray/1417555-objectatindex) for applications where a name is available instead of (or in addition to) an index. A name is generally more stable than an index. For example, it is typically more useful to identify a mailbox in Mail by its name than by its index in the list of mailboxes.
+This method is provided as an alternative to [`object(at:)`](https://developer.apple.com/documentation/Foundation/NSArray/object(at:)) for applications where a name is available instead of (or in addition to) an index. A name is generally more stable than an index. For example, it is typically more useful to identify a mailbox in Mail by its name than by its index in the list of mailboxes.
 
 ## Parameters
 

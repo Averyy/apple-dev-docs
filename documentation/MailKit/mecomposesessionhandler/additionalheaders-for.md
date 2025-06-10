@@ -1,6 +1,6 @@
 # additionalHeaders(for:)
 
-**Framework**: Mailkit  
+**Framework**: MailKit  
 **Kind**: method
 
 Provides custom headers to include in the outgoing message.

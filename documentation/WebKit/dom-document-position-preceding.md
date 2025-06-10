@@ -1,6 +1,6 @@
 # DOM_DOCUMENT_POSITION_PRECEDING
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

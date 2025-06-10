@@ -36,6 +36,7 @@ These constants are returned by [`userInterfaceLayoutDirection`](nsapplication/u
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

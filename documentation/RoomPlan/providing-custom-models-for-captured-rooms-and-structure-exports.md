@@ -1,6 +1,6 @@
 # Providing custom models for captured rooms and structure exports
 
-**Framework**: Roomplan
+**Framework**: RoomPlan
 
 Enhance the look of an exported 3D model by substituting object bounding boxes with detailed 3D renditions.
 
@@ -74,4 +74,4 @@ convert -i "~/RoomPlan/Room.json" \
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RoomPlan/providing-custom-models-for-captured-rooms-and-structure-exports)*
+*[View on Apple Developer](https://developer.apple.com/documentation/roomplan/providing-custom-models-for-captured-rooms-and-structure-exports)*

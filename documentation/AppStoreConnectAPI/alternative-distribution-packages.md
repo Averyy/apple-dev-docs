@@ -34,6 +34,12 @@ To learn more about ingesting alternative distribution packages as a marketplace
   List deltas for a specific alternative distribution package version.
 - [List variants information](get-v1-alternativedistributionpackageversions-_id_-variants.md)
   List variants for specific alternative distribution package version.
+- [List delta Ids](get-v1-alternativedistributionpackageversions-_id_-relationships-deltas.md)
+  List all delta Ids for a specific alternative distribution package version.
+- [List variant Ids information](get-v1-alternativedistributionpackageversions-_id_-relationships-variants.md)
+  List variant Ids for specific alternative distribution package version.
+- [Read version Ids for an alternative distribution package](get-v1-alternativedistributionpackages-_id_-relationships-versions.md)
+  Get version IDs about a specific alternative distribution package.
 ### Getting delta information
 - [Read information for alternative distribution package deltas](get-v1-alternativedistributionpackagedeltas-_id_.md)
   Get detail information about specific alternative distribution package deltas.
@@ -69,6 +75,9 @@ To learn more about ingesting alternative distribution packages as a marketplace
   A response that contains a single alternative distribution package variant resource.
 - [object AlternativeDistributionPackageVariantsResponse](alternativedistributionpackagevariantsresponse.md)
   A response that contains a list of alternative distribution package variant resources.
+- [object AlternativeDistributionPackageVersionDeltasLinkagesResponse](alternativedistributionpackageversiondeltaslinkagesresponse.md)
+- [object AlternativeDistributionPackageVersionVariantsLinkagesResponse](alternativedistributionpackageversionvariantslinkagesresponse.md)
+- [object AlternativeDistributionPackageVersionsLinkagesResponse](alternativedistributionpackageversionslinkagesresponse.md)
 
 ## See Also
 

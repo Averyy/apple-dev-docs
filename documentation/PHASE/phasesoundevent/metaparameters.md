@@ -25,8 +25,6 @@ Each meta parameter contained in this dictionary affects only the sound event in
 
 > 💡 **Tip**:  To propagate a metaparameter change to multiple sound events instead of just one, register the metaparameter globally by calling [`registerGlobalMetaParameter(metaParameterDefinition:)`](phaseassetregistry/registerglobalmetaparameter(metaparameterdefinition:).md). To change its value, access the metaparameter through the asset registry’s [`globalMetaParameters`](phaseassetregistry/globalmetaparameters.md) dictionary instead.
 
- To propagate a metaparameter change to multiple sound events instead of just one, register the metaparameter globally by calling [`registerGlobalMetaParameter(metaParameterDefinition:)`](phaseassetregistry/registerglobalmetaparameter(metaparameterdefinition:).md). To change its value, access the metaparameter through the asset registry’s [`globalMetaParameters`](phaseassetregistry/globalmetaparameters.md) dictionary instead.
-
 ## See Also
 
 - [var mixers: [String : PHASEMixer]](phasesoundevent/mixers.md)

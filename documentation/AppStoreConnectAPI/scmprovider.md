@@ -30,6 +30,7 @@ object ScmProvider
   A response that contains a single Providers resource.
 - [object ScmProvidersResponse](scmprovidersresponse.md)
   A response that contains a list of Providers resources.
+- [object ScmProviderRepositoriesLinkagesResponse](scmproviderrepositorieslinkagesresponse.md)
 
 
 ---

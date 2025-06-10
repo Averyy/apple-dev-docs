@@ -1,6 +1,6 @@
 # watchOS 7 Release Notes
 
-**Framework**: Watchos Release Notes
+**Framework**: watchOS Release Notes
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -28,7 +28,7 @@ The watchOS 7 SDK provides support to develop watchOS apps for Apple Watch devic
 
 ###### New Features
 
-- [`NSURLSession`](https://developer.apple.com/documentation/foundation/nsurlsession) metrics support is now available. (29448748)
+- [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) metrics support is now available. (29448748)
 
 ##### Software Update
 

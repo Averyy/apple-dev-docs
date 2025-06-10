@@ -28,7 +28,7 @@ Writing Tools in AppKit:
 
 #### November 2024
 
-- Make onscreen content available to Siri and Apple Intelligence with App Intents. Describe content as an [`AppEntity`](https://developer.apple.com/documentation/AppIntents/AppEntity) and adopt an assistant schema. Conform the entity to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol, and associate it with a [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) using the activity’s [`appEntityIdentifier`](https://developer.apple.com/documentation/foundation/nsuseractivity/4485360-appentityidentifier) property.
+- Make onscreen content available to Siri and Apple Intelligence with App Intents. Describe content as an [`AppEntity`](https://developer.apple.com/documentation/AppIntents/AppEntity) and adopt an assistant schema. Conform the entity to the [`Transferable`](https://developer.apple.com/documentation/CoreTransferable/Transferable) protocol, and associate it with a [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) using the activity’s [`appEntityIdentifier`](https://developer.apple.com/documentation/Foundation/NSUserActivity/appEntityIdentifier) property.
 
 #### July 2024
 
@@ -62,10 +62,14 @@ Writing Tools in AppKit:
   Learn about important changes in ActivityKit.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [App Intents updates](appintents.md)
   Learn about important changes in App Intents.
 - [AppKit updates](appkit.md)
   Learn about important changes to AppKit.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -78,14 +82,10 @@ Writing Tools in AppKit:
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
-- [Core Location updates](corelocation.md)
-  Learn about important changes to Core Location.
+- [Background Tasks updates](backgroundtasks.md)
+  Learn about important changes in Background Tasks.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Updates/apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/updates/apple-intelligence)*

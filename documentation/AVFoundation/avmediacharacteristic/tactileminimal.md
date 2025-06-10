@@ -1,6 +1,6 @@
 # tactileMinimal
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A media characteristic that indicates that a track or media selection option includes haptic content.

@@ -1,6 +1,6 @@
 # AppShortcut
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: struct
 
 A type that defines a preconfigured shortcut for a specific app intent.
@@ -8,10 +8,10 @@ A type that defines a preconfigured shortcut for a specific app intent.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -60,4 +60,4 @@ struct AppShortcut
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/appshortcut)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/appshortcut)*

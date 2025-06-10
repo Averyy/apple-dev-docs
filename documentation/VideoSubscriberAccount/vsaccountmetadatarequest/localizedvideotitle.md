@@ -1,6 +1,6 @@
 # localizedVideoTitle
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A short, user-presentable name for the video that the user wants to play.

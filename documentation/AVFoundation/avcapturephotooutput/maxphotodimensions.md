@@ -26,8 +26,6 @@ The dimensions you set must match one returned by [`supportedMaxPhotoDimensions`
 
 > 💡 **Tip**:  Changing this property may trigger a lengthy reconfiguration of the capture pipeline, so set this value before calling [`startRunning()`](avcapturesession/startrunning().md) on the capture session.
 
- Changing this property may trigger a lengthy reconfiguration of the capture pipeline, so set this value before calling [`startRunning()`](avcapturesession/startrunning().md) on the capture session.
-
 
 ---
 

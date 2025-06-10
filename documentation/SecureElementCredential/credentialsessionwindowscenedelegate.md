@@ -23,8 +23,6 @@ protocol CredentialSessionWindowSceneDelegate
 
 > ⚠️ **Warning**: Don’t import SwiftUI in any files that refer to symbols defined in this protocol. Importing SwiftUI and UIKit in the same file results in ambiguity during compilation.
 
-Don’t import SwiftUI in any files that refer to symbols defined in this protocol. Importing SwiftUI and UIKit in the same file results in ambiguity during compilation.
-
 ## Topics
 
 ### Handling events

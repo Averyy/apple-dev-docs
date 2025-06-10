@@ -21,8 +21,6 @@ One use of this method might be to visually highlight the word being spoken.
 
 > ❗ **Important**:  In OS X v10.4 and earlier, the delegate is not sent this message when the `NSSpeechSynthesizer` object is synthesizing speech to a file ([`startSpeaking(_:to:)`](nsspeechsynthesizer/startspeaking(_:to:).md)).
 
- In OS X v10.4 and earlier, the delegate is not sent this message when the `NSSpeechSynthesizer` object is synthesizing speech to a file ([`startSpeaking(_:to:)`](nsspeechsynthesizer/startspeaking(_:to:).md)).
-
 ## Parameters
 
 - `sender`: An   object that’s synthesizing text into speech.

@@ -3,7 +3,7 @@
 **Framework**: MetalKit  
 **Kind**: property
 
-The key used to retrieve an error string from an error object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary.
+The key used to retrieve an error string from an error object’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary.
 
 **Availability**:
 - iOS 9.0+

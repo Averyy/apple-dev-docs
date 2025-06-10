@@ -1,6 +1,6 @@
 # DOM_PROCESSING_INSTRUCTION_NODE
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

@@ -1,6 +1,6 @@
 # endSession(atSourceTime:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Finishes an asset-writing session.

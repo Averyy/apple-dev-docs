@@ -1,6 +1,6 @@
 # XCXcodeKitVersionNumber_Xcode_8_0
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: var
 
 The version of XcodeKit included in Xcode 8.0.

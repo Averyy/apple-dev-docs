@@ -37,6 +37,7 @@ An object that holds configuration options for an extension scene.
 ### Conforms To
 - [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

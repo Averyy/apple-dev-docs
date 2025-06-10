@@ -3,14 +3,14 @@
 **Framework**: Speech  
 **Kind**: class
 
+Abstract base class defining the interface for classes that generate `PhraseCount` via an iterator.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
-- tvOS 17.0+
 - visionOS 1.1+
-- watchOS 10.0+
 
 ## Declaration
 
@@ -20,10 +20,10 @@ class PhraseCountGenerator
 
 ## Topics
 
-### Initializers
-- [init()](sfcustomlanguagemodeldata/phrasecountgenerator/init.md)
 ### Classes
 - [SFCustomLanguageModelData.PhraseCountGenerator.Iterator](sfcustomlanguagemodeldata/phrasecountgenerator/iterator.md)
+### Initializers
+- [init()](sfcustomlanguagemodeldata/phrasecountgenerator/init.md)
 
 ## Relationships
 
@@ -40,6 +40,7 @@ class PhraseCountGenerator
 ## See Also
 
 - [SFCustomLanguageModelData.TemplatePhraseCountGenerator](sfcustomlanguagemodeldata/templatephrasecountgenerator.md)
+  A `PhraseCountGenerator` that produces `PhraseCount` values based on templates.
 
 
 ---

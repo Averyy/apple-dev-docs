@@ -11,11 +11,11 @@ Find and list apps in App Store Connect.
 ## Mentions
 
 - [Creating alternative distribution packages](creating-alternative-distribution-packages.md)
-- [Generating Tokens for API Requests](generating-tokens-for-api-requests.md)
 - [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
-- [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
 - [Creating auto-renewable subscription groups](creating-auto-renewable-subscription-groups.md)
 - [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
+- [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
+- [Generating Tokens for API Requests](generating-tokens-for-api-requests.md)
 
 #### Discussion
 
@@ -29,6 +29,7 @@ Find and list apps in App Store Connect.
   Update app information, including bundle ID, primary locale, price schedule, and global availability.
 - [Read an App’s Encryption Declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
   Find and list all available app encryption declarations.
+- [GET /v1/apps/{id}/relationships/appEncryptionDeclarations](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
 
 
 ---

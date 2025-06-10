@@ -76,11 +76,11 @@ enum vDSP
 - [static func add<S, T, U>(multiplication: (a: S, b: T), U) -> [Float]](vdsp/add(multiplication:_:)-9bgb2.md)
   Returns the single-precision element-wise sum of a vector and the product of two vectors.
 - [static func add<U, V>(multiplication: (a: U, b: Double), Double, result: inout V)](vdsp/add(multiplication:_:result:)-8ixx9.md)
-  Calculates the double-precision element-wise addition of the product of a vector and a scalar value, and a vector.
+  Calculates the double-precision element-wise addition of the product of a vector and a scalar value, and a scalar.
 - [static func add<T, U, V>(multiplication: (a: T, b: Double), U, result: inout V)](vdsp/add(multiplication:_:result:)-2i5om.md)
   Calculates the double-precision element-wise addition of the product of a vector and a scalar value, and a vector.
 - [static func add<U, V>(multiplication: (a: U, b: Float), Float, result: inout V)](vdsp/add(multiplication:_:result:)-1rob9.md)
-  Calculates the single-precision element-wise addition of the product of a vector and a scalar value, and a vector.
+  Calculates the single-precision element-wise addition of the product of a vector and a scalar value, and a scalar.
 - [static func add<T, U, V>(multiplication: (a: T, b: Float), U, result: inout V)](vdsp/add(multiplication:_:result:)-6n4jf.md)
   Calculates the single-precision element-wise addition of the product of a vector and a scalar value, and a vector.
 - [static func add<T, U, V>(multiplication: (a: T, b: U), Double, result: inout V)](vdsp/add(multiplication:_:result:)-2wpvw.md)

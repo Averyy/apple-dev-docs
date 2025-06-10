@@ -1,6 +1,6 @@
 # COLOR_ATTACHMENT10
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

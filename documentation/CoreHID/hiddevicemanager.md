@@ -53,6 +53,7 @@ Matching criteria are specified by creating [`HIDDeviceManager.DeviceMatchingCri
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

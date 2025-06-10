@@ -3,27 +3,19 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The configuration settings for Return to Service.
+The configuration settings for return to service.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- macOS 10.7+
-- tvOS 10.2+
-- visionOS 1.1+
-- watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- iOS 17.0+
+- iPadOS 17.0+
+- tvOS 18.0+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
 object EraseDeviceCommand.Command.ReturnToService
 ```
-
-#### Discussion
-
-This command is available in iOS 17 and later and with Shared iPad.
 
 
 ---

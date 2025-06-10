@@ -1,6 +1,6 @@
 # MAX_VARYING_COMPONENTS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

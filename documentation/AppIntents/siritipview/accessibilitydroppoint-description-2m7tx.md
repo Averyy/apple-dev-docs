@@ -1,6 +1,6 @@
 # accessibilityDropPoint(_:description:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 The point an assistive technology should use to end a drag interaction.
@@ -9,7 +9,7 @@ The point an assistive technology should use to end a drag interaction.
 - iOS 16.0+
 - iPadOS 16.0+
 - macOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

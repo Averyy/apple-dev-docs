@@ -26,7 +26,7 @@ optional func dropInteraction(_ interaction: UIDropInteraction, performDrop sess
 
 You can request a drag item’s [`itemProvider`](uidragitem/itemprovider.md) data within the scope of this method only and not at any other time.
 
-To request the data, iterate over the session items calling [`loadObject(ofClass:completionHandler:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/2888336-loadobject) on each item’s item provider. For example, if you are expecting the drag items to be images, here’s how you can load each image:
+To request the data, iterate over the session items calling [`loadObject(ofClass:completionHandler:)`](https://developer.apple.com/documentation/Foundation/NSItemProvider/loadObject(ofClass:completionHandler:)-8ak5d) on each item’s item provider. For example, if you are expecting the drag items to be images, here’s how you can load each image:
 
 ```swift
 func dropInteraction(_ interaction: UIDropInteraction, performDrop session: UIDropSession) {
@@ -48,9 +48,9 @@ func dropInteraction(_ interaction: UIDropInteraction, performDrop session: UIDr
 
 If you need to be more specific about the type of data to load, use one of the following methods to specify the desired data type using its uniform type identifier (UTI):
 
-- [`loadDataRepresentation(forTypeIdentifier:completionHandler:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/2888331-loaddatarepresentation)
-- [`loadFileRepresentation(forTypeIdentifier:completionHandler:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/2888338-loadfilerepresentation)
-- [`loadInPlaceFileRepresentation(forTypeIdentifier:completionHandler:)`](https://developer.apple.com/documentation/foundation/nsitemprovider/2888335-loadinplacefilerepresentation)
+- [`loadDataRepresentation(forTypeIdentifier:completionHandler:)`](https://developer.apple.com/documentation/Foundation/NSItemProvider/loadDataRepresentation(forTypeIdentifier:completionHandler:))
+- [`loadFileRepresentation(forTypeIdentifier:completionHandler:)`](https://developer.apple.com/documentation/Foundation/NSItemProvider/loadFileRepresentation(forTypeIdentifier:completionHandler:))
+- [`loadInPlaceFileRepresentation(forTypeIdentifier:completionHandler:)`](https://developer.apple.com/documentation/Foundation/NSItemProvider/loadInPlaceFileRepresentation(forTypeIdentifier:completionHandler:))
 
 If you want only JPEG images, use the UTI for the JPEG image type:
 
@@ -86,7 +86,7 @@ func dropInteraction(_ interaction: UIDropInteraction, performDrop session: UIDr
 }
 ```
 
-When you ask the session or item provider to load its data, it gives you a [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) object. You can also get the progress for the session at a later time from its [`progress`](https://developer.apple.com/documentation/foundation/progressreporting/1412781-progress) property.
+When you ask the session or item provider to load its data, it gives you a [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) object. You can also get the progress for the session at a later time from its [`progress`](https://developer.apple.com/documentation/Foundation/ProgressReporting/progress) property.
 
 The [`Progress`](https://developer.apple.com/documentation/Foundation/Progress) object tells you how much of the data transfer is complete and if the transfer has finished. What’s more, it can be used to cancel, pause, and resume the data-load process.
 

@@ -1,6 +1,6 @@
 # Testing your ClassKit app during development
 
-**Framework**: Classkit
+**Framework**: ClassKit
 
 Use development mode to test your app without a Managed Apple ID.
 
@@ -49,4 +49,4 @@ From your app’s point of view, the ClassKit API behaves exactly the same in pr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/testing-your-classkit-app-during-development)*
+*[View on Apple Developer](https://developer.apple.com/documentation/classkit/testing-your-classkit-app-during-development)*

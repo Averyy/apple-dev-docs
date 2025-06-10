@@ -1,6 +1,6 @@
 # MAX_DRAW_BUFFERS_WEBGL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

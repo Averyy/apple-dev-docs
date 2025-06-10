@@ -10,6 +10,7 @@ Maps a 2D point from the view’s coordinate system onto the given plane in 3D s
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

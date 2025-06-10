@@ -1,7 +1,7 @@
 # CIQRCodeFeature
 
-**Framework**: Coreimage  
-**Kind**: cl
+**Framework**: Core Image  
+**Kind**: class
 
 Information about a Quick Response code detected in a still or video image.
 
@@ -10,18 +10,18 @@ Information about a Quick Response code detected in a still or video image.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS 9.0+
+- tvOS ?+
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
-class CIQRCodeFeature : CIFeature
+class CIQRCodeFeature
 ```
 
 #### Overview
 
-> **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNDetectBarcodesRequest`](https://developer.apple.com/documentation/vision/vndetectbarcodesrequest).
+> **Note**:  In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/Vision) framework replaces these classes for identifying and analyzing image features. See [`VNDetectBarcodesRequest`](https://developer.apple.com/documentation/Vision/VNDetectBarcodesRequest).
 
 A QR code is a two-dimensional barcode using the ISO/IEC 18004:2006 standard. The properties of a [`CIQRCodeFeature`](ciqrcodefeature.md) object identify the corners of the barcode in the image perspective and provide the decoded message.
 
@@ -30,21 +30,21 @@ To detect QR codes in an image or video, choose the [`CIDetectorTypeQRCode`](cid
 ## Topics
 
 ### Locating a Detected Feature
-- [var bounds: CGRect](ciqrcodefeature/1438153-bounds.md)
+- [var bounds: CGRect](ciqrcodefeature/bounds-swift.property.md)
   A rectangle indicating the position and extent of the feature in image coordinates.
 ### Decoding a Detected Barcode
-- [var messageString: String?](ciqrcodefeature/1438035-messagestring.md)
+- [var messageString: String?](ciqrcodefeature/messagestring.md)
   The string decoded from the detected barcode.
-- [var symbolDescriptor: CIQRCodeDescriptor?](ciqrcodefeature/2875553-symboldescriptor.md)
+- [var symbolDescriptor: CIQRCodeDescriptor?](ciqrcodefeature/symboldescriptor-swift.property.md)
   An abstract representation of a QR Code symbol.
 ### Identifying the Corners of a Detected Barcode
-- [var bottomLeft: CGPoint](ciqrcodefeature/1437985-bottomleft.md)
+- [var bottomLeft: CGPoint](ciqrcodefeature/bottomleft-swift.property.md)
   The lower-left corner of the detected barcode, in image coordinates.
-- [var bottomRight: CGPoint](ciqrcodefeature/1438245-bottomright.md)
+- [var bottomRight: CGPoint](ciqrcodefeature/bottomright-swift.property.md)
   The lower-right corner of the detected barcode, in image coordinates.
-- [var topLeft: CGPoint](ciqrcodefeature/1437780-topleft.md)
+- [var topLeft: CGPoint](ciqrcodefeature/topleft-swift.property.md)
   The upper-left corner of the detected barcode, in image coordinates.
-- [var topRight: CGPoint](ciqrcodefeature/1437896-topright.md)
+- [var topRight: CGPoint](ciqrcodefeature/topright-swift.property.md)
   The upper-right corner of the detected barcode, in image coordinates.
 
 ## Relationships
@@ -52,8 +52,15 @@ To detect QR codes in an image or video, choose the [`CIDetectorTypeQRCode`](cid
 ### Inherits From
 - [CIFeature](cifeature.md)
 ### Conforms To
-- [NSCopying](../foundation/nscopying.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 

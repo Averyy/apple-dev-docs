@@ -7,8 +7,6 @@ The payload you use to configure file provider settings.
 
 **Availability**:
 - macOS 11.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,17 +22,17 @@ Specify `com.apple.fileproviderd` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | macOS |
-| Allow Manual Install | macOS |
-| Requires Supervision | - |
-| Requires User-Approved MDM | macOS |
-| Allowed in User Enrollment | macOS |
-| Allow Multiple Payloads | - |
+| Device channel | macOS |
+| User channel | macOS |
+| Allow manual install | NA |
+| Requires supervision | NA |
+| Requires user-approved MDM | macOS |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

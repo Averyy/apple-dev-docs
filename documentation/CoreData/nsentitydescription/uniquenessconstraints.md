@@ -1,6 +1,6 @@
 # uniquenessConstraints
 
-**Framework**: Coredata  
+**Framework**: Core Data  
 **Kind**: property
 
 An array of arrays that contains one or more attributes with a value that must be unique over the instances of that entity.

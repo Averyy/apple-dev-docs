@@ -41,8 +41,6 @@ Notifications require a URL and an authentication token. The URL must use the HT
 
 > ❗ **Important**:  The server sends a test notification of type TEST_NOTIFICATION when configuring notifications with [`Client Config`](client-config-4szk1.md). If delivery fails, the system rejects the configuration.
 
- The server sends a test notification of type TEST_NOTIFICATION when configuring notifications with [`Client Config`](client-config-4szk1.md). If delivery fails, the system rejects the configuration.
-
 The test notification has the following format:
 
 ```javascript

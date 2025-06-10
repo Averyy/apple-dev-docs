@@ -1,6 +1,6 @@
 # WKInterfaceLayoutDirection
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Specifies the directional flow of the user interface.
@@ -32,6 +32,7 @@ enum WKInterfaceLayoutDirection
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

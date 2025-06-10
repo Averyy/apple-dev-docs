@@ -1,6 +1,6 @@
 # AUEventSampleTime
 
-**Framework**: Audiotoolbox
+**Framework**: Audio Toolbox
 
 Expresses time as a sample count.
 

@@ -1,6 +1,6 @@
 # wait(for:toEqual:timeout:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Waits a specified amount of time for a property value to equal a specified value.

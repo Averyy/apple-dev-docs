@@ -16,7 +16,7 @@ let IKFilterBrowserDefaultInputImage: String
 
 #### Discussion
 
-The associated value is the [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) object to use as the default input image for the filter preview. Setting the image to `nil` causes Image Kit to use the image supplied by the framework. You can also set the input image and other parameters during the notification [`IKFilterBrowserWillPreviewFilterNotification`](ikfilterbrowserwillpreviewfilternotification.md).
+The associated value is the [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) object to use as the default input image for the filter preview. Setting the image to `nil` causes Image Kit to use the image supplied by the framework. You can also set the input image and other parameters during the notification [`IKFilterBrowserWillPreviewFilterNotification`](ikfilterbrowserwillpreviewfilternotification.md).
 
 ## See Also
 

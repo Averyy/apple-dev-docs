@@ -1,6 +1,6 @@
 # UTType
 
-**Framework**: Uniformtypeidentifiers  
+**Framework**: Uniform Type Identifiers  
 **Kind**: struct
 
 A structure that represents a type of data to load, send, or receive.
@@ -408,6 +408,7 @@ To define your own types in your app’s `Info.plist`, see [`Defining file and d
 - [Hashable](../Swift/Hashable.md)
 - [ReferenceConvertible](../Foundation/ReferenceConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

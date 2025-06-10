@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The attribute that describes the url where you will recieve notifications.
+The attribute that describes the url where you receive notifications.
 
 **Availability**:
 - App Store Connect API 3.3+

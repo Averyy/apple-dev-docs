@@ -1,6 +1,6 @@
 # isLoaded
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating if this context is loaded in an extension controller.

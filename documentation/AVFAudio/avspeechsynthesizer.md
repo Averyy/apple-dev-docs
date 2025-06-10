@@ -1,6 +1,6 @@
 # AVSpeechSynthesizer
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: class
 
 An object that produces synthesized speech from text utterances and enables monitoring or controlling of ongoing speech.
@@ -97,4 +97,4 @@ An `AVSpeechSynthesizer` also controls the route where the speech plays. For mor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/avspeechsynthesizer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/avspeechsynthesizer)*

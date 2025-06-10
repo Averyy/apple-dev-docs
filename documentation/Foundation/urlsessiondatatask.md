@@ -60,6 +60,7 @@ For examples of using data tasks for fetching and uploading data, see [`Fetching
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [ProgressReporting](progressreporting.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

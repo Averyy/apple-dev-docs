@@ -1,6 +1,6 @@
 # monitorNotifications(matchingCriteria:)
 
-**Framework**: Corehid  
+**Framework**: Core HID  
 **Kind**: method
 
 Creates an asynchronous stream that receives notifications for devices of interest.

@@ -22,7 +22,7 @@ case partialFailure
 
 #### Discussion
 
-Examine the specific item failures, and act on the failed items. Each specific item error is from the CloudKit error domain. You can inspect the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) to see per-item errors.
+Examine the specific item failures, and act on the failed items. Each specific item error is from the CloudKit error domain. You can inspect the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) to see per-item errors.
 
 Note that in a custom zone, the system processes all items in an operation atomically. As a result, you may get a [`CKError.Code.batchRequestFailed`](ckerror/code/batchrequestfailed.md) error for all other items in an operation that don’t cause an error.
 

@@ -1,6 +1,6 @@
 # index(_:offsetBy:limitedBy:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.

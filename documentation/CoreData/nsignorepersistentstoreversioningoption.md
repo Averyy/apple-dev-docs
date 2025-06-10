@@ -22,7 +22,7 @@ let NSIgnorePersistentStoreVersioningOption: String
 
 #### Discussion
 
-The corresponding value is an `NSNumber` object. If the [`boolValue`](https://developer.apple.com/documentation/foundation/nsnumber/1410865-boolvalue) of the number is [`true`](https://developer.apple.com/documentation/swift/true), Core Data will not compare the version hashes between the managed object model in the coordinator and the metadata for the loaded store. (It will, however, continue to update the version hash information in the metadata.) This key and corresponding value of [`true`](https://developer.apple.com/documentation/swift/true) is specified by default for all applications linked on or before OS X v10.4.
+The corresponding value is an `NSNumber` object. If the [`boolValue`](https://developer.apple.com/documentation/Foundation/NSNumber/boolValue) of the number is [`true`](https://developer.apple.com/documentation/swift/true), Core Data will not compare the version hashes between the managed object model in the coordinator and the metadata for the loaded store. (It will, however, continue to update the version hash information in the metadata.) This key and corresponding value of [`true`](https://developer.apple.com/documentation/swift/true) is specified by default for all applications linked on or before OS X v10.4.
 
 ## See Also
 

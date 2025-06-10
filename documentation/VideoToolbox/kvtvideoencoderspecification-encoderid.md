@@ -1,6 +1,6 @@
 # kVTVideoEncoderSpecification_EncoderID
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A key that indicates a particular video encoder to use.

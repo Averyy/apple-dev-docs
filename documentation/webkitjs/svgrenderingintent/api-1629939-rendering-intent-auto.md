@@ -1,6 +1,6 @@
 # RENDERING_INTENT_AUTO
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # Accelerating ray tracing and motion blur using Metal
 
-**Framework**: Metalperformanceshaders
+**Framework**: Metal Performance Shaders
 
 Generate ray-traced images with motion blur using GPU-based parallel processing.
 
@@ -36,4 +36,4 @@ This sample requires the following system and software configuration:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/animating-and-denoising-a-raytraced-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders/animating_and_denoising_a_raytraced_scene)*

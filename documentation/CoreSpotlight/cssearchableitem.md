@@ -20,9 +20,9 @@ class CSSearchableItem
 
 ## Mentions
 
-- [Searching for information in your app](searching-for-information-in-your-app.md)
-- [Enabling Apple Intelligence summarization and prioritization](enable-apple-intelligence-summaries.md)
 - [Adding your app’s content to Spotlight indexes](adding-your-app-s-content-to-spotlight-indexes.md)
+- [Enabling Apple Intelligence summarization and prioritization](enable-apple-intelligence-summaries.md)
+- [Searching for information in your app](searching-for-information-in-your-app.md)
 
 #### Overview
 

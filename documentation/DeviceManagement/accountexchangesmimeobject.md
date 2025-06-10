@@ -6,12 +6,9 @@
 Settings for S/MIME.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- macOS 13.0+
+- iOS 17.0+
+- iPadOS 17.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,14 +16,18 @@ Settings for S/MIME.
 object AccountExchangeSMIMEObject
 ```
 
-## See Also
+## Topics
 
-- [object AccountExchangeOAuthObject](accountexchangeoauthobject.md)
-  The declaration for configuring OAuth authentication of an Exchange account.
+### Objects
 - [object AccountExchangeSMIME_EncryptionObject](accountexchangesmime_encryptionobject.md)
   Settings for S/MIME encryption.
 - [object AccountExchangeSMIME_SigningObject](accountexchangesmime_signingobject.md)
   Settings for S/MIME signing.
+
+## See Also
+
+- [object AccountExchangeOAuthObject](accountexchangeoauthobject.md)
+  The declaration for configuring OAuth authentication of an Exchange account.
 
 
 ---

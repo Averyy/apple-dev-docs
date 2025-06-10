@@ -1,6 +1,6 @@
 # UIViewController
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An object that manages a view hierarchy for your UIKit app.
@@ -21,10 +21,10 @@ class UIViewController
 
 ## Mentions
 
-- [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
 - [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
-- [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
+- [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
 - [Responding to memory warnings](responding-to-memory-warnings.md)
+- [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
 
 #### Overview
 
@@ -200,6 +200,12 @@ For more information about how the system determines which view controllers to p
   The interface orientation to use when presenting the view controller.
 - [func setNeedsUpdateOfSupportedInterfaceOrientations()](uiviewcontroller/setneedsupdateofsupportedinterfaceorientations.md)
   Notifies the view controller about a change in supported interface orientations or preferred interface orientation for presentation.
+- [var prefersInterfaceOrientationLocked: Bool](uiviewcontroller/prefersinterfaceorientationlocked.md)
+  Whether this view controller prefers the scene’s interface orientation to be locked when shown. The default is `NO`. Note that this preference may or may not be honored. See `UIWindowScene.Geometry` for the current state of interface orientation lock.
+- [func setNeedsUpdateOfPrefersInterfaceOrientationLocked()](uiviewcontroller/setneedsupdateofprefersinterfaceorientationlocked.md)
+  Call whenever the view controller’s preference for interface orientation lock has changed
+- [var childViewControllerForInterfaceOrientationLock: UIViewController?](uiviewcontroller/childviewcontrollerforinterfaceorientationlock.md)
+  Override to return a child view controller or nil. If non-nil, that view controller’s preference for interface orientation lock will be used. If nil, `self` is used. Whenever the return value changes, call `setNeedsUpdateOfPrefersInterfaceOrientationLocked()`.
 ### Performing segues
 - [func shouldPerformSegue(withIdentifier: String, sender: Any?) -> Bool](uiviewcontroller/shouldperformsegue(withidentifier:sender:).md)
   Determines whether the segue with the specified identifier should be performed.
@@ -443,13 +449,22 @@ For more information about how the system determines which view controllers to p
 ### Deprecated
 - [Deprecated symbols](uiviewcontroller-deprecated-symbols.md)
   Symbols that view controllers no longer support.
+### Structures
+- [UIViewController.ShowDetailTargetDidChangeMessage](uiviewcontroller/showdetailtargetdidchangemessage.md)
 ### Instance Properties
 - [var childViewControllerForPreferredContainerBackgroundStyle: UIViewController?](uiviewcontroller/childviewcontrollerforpreferredcontainerbackgroundstyle.md)
 - [var ornaments: [UIOrnament]](uiviewcontroller/ornaments.md)
 - [var preferredContainerBackgroundStyle: UIContainerBackgroundStyle](uiviewcontroller/preferredcontainerbackgroundstyle.md)
 - [var tab: UITab?](uiviewcontroller/tab.md)
 ### Instance Methods
+- [func findView(withAccessibilityIdentifier: String) -> UIView?](uiviewcontroller/findview(withaccessibilityidentifier:).md)
 - [func setNeedsUpdateOfPreferredContainerBackgroundStyle()](uiviewcontroller/setneedsupdateofpreferredcontainerbackgroundstyle.md)
+- [func setNeedsUpdateProperties()](uiviewcontroller/setneedsupdateproperties.md)
+  Call to manually request a properties update for the view controller. Multiple requests may be coalesced into a single update alongside the next layout pass.
+- [func updateProperties()](uiviewcontroller/updateproperties.md)
+  Override point for subclasses to update properties of this view controller or its view. Never call this method directly; use `setNeedsUpdateProperties` to schedule an update.
+- [func updatePropertiesIfNeeded()](uiviewcontroller/updatepropertiesifneeded.md)
+  Forces an immediate properties update for this view controller and its view, including any view controllers and views in this subtree.
 - [func updateTraitsIfNeeded()](uiviewcontroller/updatetraitsifneeded.md)
 
 ## Relationships
@@ -490,6 +505,7 @@ For more information about how the system determines which view controllers to p
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)
@@ -517,4 +533,4 @@ For more information about how the system determines which view controllers to p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiviewcontroller)*

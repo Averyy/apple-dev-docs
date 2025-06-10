@@ -1,6 +1,6 @@
 # WKWebExtension.DataType
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: struct
 
 Constants for specifying data types for a [`WKWebExtension.DataRecord`](wkwebextension/datarecord.md).
@@ -38,6 +38,7 @@ struct DataType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

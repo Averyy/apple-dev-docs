@@ -1,6 +1,6 @@
 # subviews
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The array of views embedded in the current view.
@@ -55,4 +55,4 @@ This property marks the affected view and window areas as needing display.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsview/subviews)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsview/subviews)*

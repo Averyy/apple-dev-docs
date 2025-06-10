@@ -7,8 +7,6 @@ A dictionary that contains additional details about the peer content cache.
 
 **Availability**:
 - macOS 10.15.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,7 +16,7 @@ object ContentCachingInformationResponse.StatusResponse.PeersItem.Details
 
 ## Topics
 
-### Commands
+### Objects
 - [object ContentCachingInformationResponse.StatusResponse.PeersItem.Details.Capabilities](contentcachinginformationresponse/statusresponse-data.dictionary/peersitem/details-data.dictionary/capabilities-data.dictionary.md)
   The capabilities of the peer content cache.
 - [object ContentCachingInformationResponse.StatusResponse.PeersItem.Details.Local-network](contentcachinginformationresponse/statusresponse-data.dictionary/peersitem/details-data.dictionary/local-network-data.dictionary.md)

@@ -14,8 +14,6 @@ Omit this key if the MDM server doesn’t require a Trust Profile because it’s
 
 > 💡 **Tip**:  Provide a value for `dep_anchor_certs_url` if you provide a value for `dep_enrollment_url`.
 
- Provide a value for `dep_anchor_certs_url` if you provide a value for `dep_enrollment_url`.
-
 ##### Example of an Mdmserviceconfig Request
 
 ```None

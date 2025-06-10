@@ -1,6 +1,6 @@
 # values(forAttribute:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Returns the values of an attribute of the record.

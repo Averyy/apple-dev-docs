@@ -1,6 +1,6 @@
 # setPageCacheSize(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sets the maximum number of pages the receiver can cache.

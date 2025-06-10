@@ -52,6 +52,7 @@ The [`purchase(options:)`](product/purchase(options:).md) function may throw a p
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

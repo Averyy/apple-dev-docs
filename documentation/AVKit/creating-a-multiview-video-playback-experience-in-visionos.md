@@ -235,6 +235,8 @@ if !supportsEmbeddedPlaybackExperience, context.toExperience == .expanded {
 
 ## See Also
 
+- [Playing immersive media with AVKit](playing-immersive-media-with-avkit.md)
+  Adopt the system playback interface to provide an immersive video watching experience.
 - [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
   Provide an optimized viewing experience for watching 3D video content.
 - [Trimming and exporting media in visionOS](trimming-and-exporting-media-in-visionos.md)

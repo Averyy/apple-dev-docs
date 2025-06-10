@@ -11,7 +11,7 @@ Loads the approximate data rate of the track in bytes per second.
 ## Declaration
 
 ```swift
-var estimatedDataRate: Float32 { get async throws }
+optional func estimatedDataRate() async throws -> Float32
 ```
 
 #### Discussion

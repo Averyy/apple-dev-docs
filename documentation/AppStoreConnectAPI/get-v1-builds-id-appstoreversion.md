@@ -16,8 +16,10 @@ Get the App Store version of a specific build.
   Get information about a specific build.
 - [Read the App Information of a Build](get-v1-builds-_id_-app.md)
   Get the app information for a specific build.
+- [GET /v1/builds/{id}/relationships/appStoreVersion](get-v1-builds-_id_-relationships-appstoreversion.md)
 - [Read the Prerelease Version of a Build](get-v1-builds-_id_-prereleaseversion.md)
   Get the prerelease version for a specific build.
+- [GET /v1/builds/{id}/relationships/preReleaseVersion](get-v1-builds-_id_-relationships-prereleaseversion.md)
 - [Read usage metrics for a beta build](get-v1-builds-_id_-metrics-betabuildusages.md)
   Get usage metrics for a specific build.
 

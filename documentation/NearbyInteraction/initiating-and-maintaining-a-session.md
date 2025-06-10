@@ -1,6 +1,6 @@
 # Initiating and maintaining a session
 
-**Framework**: Nearbyinteraction
+**Framework**: Nearby Interaction
 
 Measure the relative position of a nearby device and coach the user to sustain interaction.
 
@@ -146,4 +146,4 @@ To use Camera Assistance in an interaction session, ensure the device supports t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/NearbyInteraction/initiating-and-maintaining-a-session)*
+*[View on Apple Developer](https://developer.apple.com/documentation/nearbyinteraction/initiating-and-maintaining-a-session)*

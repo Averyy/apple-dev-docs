@@ -24,7 +24,7 @@ var valueTransformerName: String? { get set }
 
 The attribute must be of type `NSTransformedAttributeType`.
 
-The transformer must output an `NSData` object from [`transformedValue(_:)`](https://developer.apple.com/documentation/foundation/valuetransformer/1402004-transformedvalue) and must allow reverse transformations.
+The transformer must output an `NSData` object from [`transformedValue(_:)`](https://developer.apple.com/documentation/Foundation/ValueTransformer/transformedValue(_:)) and must allow reverse transformations.
 
 If this value is `nil`, Core Data uses a default a transformer that uses [`NSCoding`](https://developer.apple.com/documentation/Foundation/NSCoding) to archive and unarchive the attribute value.
 

@@ -8,6 +8,7 @@ The source metadata track IDs required to implement the video composition instru
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
 

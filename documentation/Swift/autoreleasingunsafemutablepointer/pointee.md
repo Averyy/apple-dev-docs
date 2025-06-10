@@ -34,4 +34,4 @@ var pointee: Pointee { get nonmutating set }
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/autoreleasingunsafemutablepointer/pointee)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/autoreleasingunsafemutablepointer/pointee)*

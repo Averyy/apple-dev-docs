@@ -10,7 +10,7 @@ The name of the bundle’s main executable class.
 
 #### Discussion
 
-The system uses the class identified by this key to set the [`principalClass`](https://developer.apple.com/documentation/foundation/bundle/1409048-principalclass) property of a bundle when it’s loaded.
+The system uses the class identified by this key to set the [`principalClass`](https://developer.apple.com/documentation/Foundation/Bundle/principalClass) property of a bundle when it’s loaded.
 
 Xcode sets the default value of this key to [`NSApplication`](https://developer.apple.com/documentation/AppKit/NSApplication) for macOS apps, and to [`UIApplication`](https://developer.apple.com/documentation/UIKit/UIApplication) for iOS and tvOS apps. For other types of bundles, you must set this key in [`The Info.plist File`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Carbon/Conceptual/ProvidingUserAssitAppleHelp/authoring_help/authoring_help_book.html#//apple_ref/doc/uid/TP30000903-CH206-SW22).
 

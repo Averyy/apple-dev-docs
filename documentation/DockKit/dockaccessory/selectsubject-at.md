@@ -1,6 +1,6 @@
 # selectSubject(at:)
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: method
 
 Selects a subject to track at the supplied coordinates.

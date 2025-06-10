@@ -24,6 +24,10 @@ object CiBuildActionResponse
   A response that contains a list of Issues resources.
 - [object CiTestResultsResponse](citestresultsresponse.md)
   A response that contains a list of Test Results resources.
+- [object CiBuildActionArtifactsLinkagesResponse](cibuildactionartifactslinkagesresponse.md)
+- [object CiBuildActionBuildRunLinkageResponse](cibuildactionbuildrunlinkageresponse.md)
+- [object CiBuildActionIssuesLinkagesResponse](cibuildactionissueslinkagesresponse.md)
+- [object CiBuildActionTestResultsLinkagesResponse](cibuildactiontestresultslinkagesresponse.md)
 
 
 ---

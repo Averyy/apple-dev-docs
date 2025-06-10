@@ -35,6 +35,7 @@ These constants are used by the [`columnResizingType`](nsbrowser/columnresizingt
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

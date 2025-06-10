@@ -14,6 +14,7 @@ Get details about a specific promotional offer for an auto-renewable subscriptio
   Create a promotional offer for an auto-renewable subscription.
 - [List All Promotional Offer Prices for a Subscription](get-v1-subscriptionpromotionaloffers-_id_-prices.md)
   Get a list of prices of a promotional offer for an auto-renewable subscription, for a specified territory.
+- [GET /v1/subscriptionPromotionalOffers/{id}/relationships/prices](get-v1-subscriptionpromotionaloffers-_id_-relationships-prices.md)
 - [Modify a Promotional Offer](patch-v1-subscriptionpromotionaloffers-_id_.md)
   Update the prices for a specific promotional offer for an auto-renewable subscription.
 - [Delete a Promotional Offer from a Subscription](delete-v1-subscriptionpromotionaloffers-_id_.md)

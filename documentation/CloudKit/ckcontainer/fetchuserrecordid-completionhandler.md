@@ -1,6 +1,6 @@
 # fetchUserRecordID(completionHandler:)
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: method
 
 Fetches the user record ID of the current user.

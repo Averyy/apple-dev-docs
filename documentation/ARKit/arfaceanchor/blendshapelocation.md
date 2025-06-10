@@ -1,6 +1,6 @@
 # ARFaceAnchor.BlendShapeLocation
 
-**Framework**: Arkit  
+**Framework**: ARKit  
 **Kind**: struct
 
 Identifiers for specific facial features, for use with coefficients describing the relative movements of those features.
@@ -146,6 +146,7 @@ ARKit provides many blend shape coefficients, resulting in a detailed model of a
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -155,4 +156,4 @@ ARKit provides many blend shape coefficients, resulting in a detailed model of a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/arfaceanchor/blendshapelocation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation)*

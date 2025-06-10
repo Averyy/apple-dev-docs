@@ -10,6 +10,7 @@ The component that describes how the virtual content is anchored to the real wor
 - iPadOS 13.0+
 - Mac Catalyst 14.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

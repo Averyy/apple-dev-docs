@@ -196,4 +196,4 @@ From there the client can set up a handshake using TLS on a local network.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Network/creating-an-identity-for-local-network-tls)*
+*[View on Apple Developer](https://developer.apple.com/documentation/network/creating-an-identity-for-local-network-tls)*

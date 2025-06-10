@@ -1,6 +1,6 @@
 # Restoring purchased products
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Give customers functionality that restores their purchases in your app to maintain access to purchased content.
 
@@ -60,4 +60,4 @@ If your app doesn’t use the app receipt, it examines all completed transaction
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/restoring-purchased-products)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/restoring-purchased-products)*

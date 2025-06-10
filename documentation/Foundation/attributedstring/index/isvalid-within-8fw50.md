@@ -1,0 +1,24 @@
+# isValid(within:)
+
+**Framework**: Foundation  
+**Kind**: method
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+- watchOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+func isValid(within text: some AttributedStringProtocol) -> Bool
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/attributedstring/index/isvalid(within:)-8fw50)*

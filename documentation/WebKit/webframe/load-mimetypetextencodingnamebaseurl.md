@@ -1,6 +1,6 @@
 # load(_:mimeType:textEncodingName:baseURL:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sets the main page contents, MIME type, content encoding, and base URL.

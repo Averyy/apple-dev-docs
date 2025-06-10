@@ -152,4 +152,4 @@ You now have a project that has an independent watchOS app with a companion iOS 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3157-updating-your-watchos-project-for-swiftui-and-widgetkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3157-updating-your-watchos-project-for-swiftui-and-widgetkit)*

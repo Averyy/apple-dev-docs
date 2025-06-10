@@ -1,6 +1,6 @@
 # host
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The security origin’s host.

@@ -1,6 +1,6 @@
 # TEXTURE_COMPARE_FUNC
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

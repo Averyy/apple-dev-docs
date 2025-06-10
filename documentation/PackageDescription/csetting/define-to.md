@@ -1,6 +1,6 @@
 # define(_:to:_:)
 
-**Framework**: Packagedescription  
+**Framework**: PackageDescription  
 **Kind**: method
 
 Defines a value for a macro.

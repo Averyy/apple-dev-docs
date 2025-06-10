@@ -1,6 +1,6 @@
 # serviceTemporarilyUnavailable
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The request failed due to a timeout or unreachable host, but a subsequent attempt might succeed.

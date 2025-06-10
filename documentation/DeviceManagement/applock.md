@@ -9,8 +9,6 @@ The payload you use to configure a device to run a single app.
 - iOS 6.0+
 - iPadOS 6.0+
 - tvOS 10.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -30,17 +28,17 @@ Only use an app lock payload after installing the target app.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, Shared iPad, tvOS |
-| User Channel | - |
-| Allow Manual Install | - |
-| Requires Supervision | iOS, tvOS |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, Shared iPad, tvOS |
+| User channel | NA |
+| Allow manual install | iOS, tvOS |
+| Requires supervision | iOS, tvOS |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -79,7 +77,7 @@ Only use an app lock payload after installing the target app.
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object AppLock.App](applock/app-data.dictionary.md)
   The only app available for use on the iOS device.
 

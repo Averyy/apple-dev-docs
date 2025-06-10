@@ -1,6 +1,6 @@
 # invocation
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The invocation for running the test.

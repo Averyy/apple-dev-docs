@@ -1,6 +1,6 @@
 # watchOS Release Notes
 
-**Framework**: Watchos Release Notes
+**Framework**: watchOS Release Notes
 
 Learn about changes to the watchOS SDK.
 
@@ -14,6 +14,9 @@ For issues not mentioned in release notes, file bugs through [`Feedback Assistan
 
 ## Topics
 
+### watchOS 26
+- [watchOS 26 Beta Release Notes](watchos-26-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 ### watchOS 11
 - [watchOS 11.5 Release Notes](watchos-11_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

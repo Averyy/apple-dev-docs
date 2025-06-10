@@ -1,6 +1,6 @@
 # placeholder(in:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: method  
 **Required**: Yes
 
@@ -9,8 +9,9 @@ Provides a timeline entry representing a placeholder version of the widget.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -41,8 +42,6 @@ struct LeaderboardProvider: TimelineProvider {
 In addition, WidgetKit may render your widget as a placeholder if user’s choose to hide sensitive information on Apple Watch or the iPhone Lock Screen. To learn more about redacting sensitive data, see [`Creating a widget extension`](creating-a-widget-extension.md).
 
 > ❗ **Important**: `placeholder(in:)` is synchronous and returns a `TimelineEntry` immediately. Return from `placeholder(in:)` as quickly as possible.
-
-`placeholder(in:)` is synchronous and returns a `TimelineEntry` immediately. Return from `placeholder(in:)` as quickly as possible.
 
 ## Parameters
 

@@ -19,6 +19,15 @@ The discounted price under the offer.
 let price: Decimal
 ```
 
+## See Also
+
+- [let period: SubscriptionPeriod](transaction/advancedcommerceinfo-swift.struct/offer/period.md)
+  The duration of the offer.
+- [let periodCount: Int](transaction/advancedcommerceinfo-swift.struct/offer/periodcount.md)
+  The number of periods the system applies the offer.
+- [let reason: Transaction.AdvancedCommerceInfo.Offer.Reason](transaction/advancedcommerceinfo-swift.struct/offer/reason-swift.property.md)
+  The reason the offer was applied.
+
 
 ---
 

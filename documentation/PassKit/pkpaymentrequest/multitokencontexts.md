@@ -24,8 +24,6 @@ Use multitoken contexts to indicate payments for multiple merchants. This proper
 
 > ❗ **Important**:  You can’t use this property with [`recurringPaymentRequest`](pkpaymentrequest/recurringpaymentrequest.md) or [`automaticReloadPaymentRequest`](pkpaymentrequest/automaticreloadpaymentrequest.md) properties. Simultaneous use of these properties results in a runtime error and cancels the payment request.
 
- You can’t use this property with [`recurringPaymentRequest`](pkpaymentrequest/recurringpaymentrequest.md) or [`automaticReloadPaymentRequest`](pkpaymentrequest/automaticreloadpaymentrequest.md) properties. Simultaneous use of these properties results in a runtime error and cancels the payment request.
-
 ## See Also
 
 - [class PKPaymentTokenContext](pkpaymenttokencontext.md)

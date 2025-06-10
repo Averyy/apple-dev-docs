@@ -1,6 +1,6 @@
 # isCameraEnabled
 
-**Framework**: Replaykit  
+**Framework**: ReplayKit  
 **Kind**: property
 
 A Boolean value that indicates whether the camera is currently enabled.

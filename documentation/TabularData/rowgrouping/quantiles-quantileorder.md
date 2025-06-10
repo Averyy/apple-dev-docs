@@ -1,6 +1,6 @@
 # quantiles(_:quantile:order:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Generates a data frame that contains the quantiles of each group’s rows along a column you select by column identifier.

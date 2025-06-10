@@ -68,6 +68,7 @@ This request generates a collection of [`BarcodeObservation`](barcodeobservation
 - [Hashable](../Swift/Hashable.md)
 - [ImageProcessingRequest](imageprocessingrequest.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionRequest](visionrequest.md)
 
 

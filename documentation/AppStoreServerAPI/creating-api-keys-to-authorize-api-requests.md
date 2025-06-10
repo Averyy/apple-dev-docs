@@ -12,8 +12,6 @@ An API key has two parts: a public portion that Apple keeps, and a private key t
 
 > ❗ **Important**:  Store your private keys in a secure place. Don’t share your keys, don’t store keys in a code repository, and don’t include keys in client-side code. If you suspect a private key is compromised, immediately revoke the key in App Store Connect. See [`Revoking API Keys`](https://developer.apple.com/documentation/AppStoreConnectAPI/revoking-api-keys) for details.
 
- Store your private keys in a secure place. Don’t share your keys, don’t store keys in a code repository, and don’t include keys in client-side code. If you suspect a private key is compromised, immediately revoke the key in App Store Connect. See [`Revoking API Keys`](https://developer.apple.com/documentation/AppStoreConnectAPI/revoking-api-keys) for details.
-
 Use the API key for the App Store Server API, the Advanced Commerce API, and the External Purchase Server API. You can’t use the key for other Apple services.
 
 ##### Generate a Private Key

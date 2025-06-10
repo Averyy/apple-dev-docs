@@ -17,8 +17,7 @@ An alternative to the font color that can be used for animations.
 ## Declaration
 
 ```swift
-@MainActor
-var color: NSColor? { get set }
+var color: UIColor? { get set }
 ```
 
 ## See Also

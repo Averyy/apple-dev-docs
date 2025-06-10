@@ -10,7 +10,7 @@ The code in this article uses the [`Compression`](https://developer.apple.com/do
 
 The code in this sample is useful in applications that store or transmit files, such as PDF or text, where saving or sending smaller files can improve performance and reduce storage overhead. This sample app implements , where it reads chunks of data from a source buffer repeatedly to compress or decompress data, and appends each chunk to a destination buffer.
 
-Use the input and output filters API when working with data that’s streamed to or from memory — for example, when reading from or writing to a file. If you’re compressing and decompressing data that’s held entirely in memory, consider using [`compressed(using:)`](https://developer.apple.com/documentation/foundation/nsdata/3174960-compressed) and [`decompressed(using:)`](https://developer.apple.com/documentation/foundation/nsdata/3174961-decompressed). These functions provide a simple API to compress and decompress data in a single step.
+Use the input and output filters API when working with data that’s streamed to or from memory — for example, when reading from or writing to a file. If you’re compressing and decompressing data that’s held entirely in memory, consider using [`compressed(using:)`](https://developer.apple.com/documentation/Foundation/NSData/compressed(using:)) and [`decompressed(using:)`](https://developer.apple.com/documentation/Foundation/NSData/decompressed(using:)). These functions provide a simple API to compress and decompress data in a single step.
 
 ##### Create the Source Data
 
@@ -72,7 +72,7 @@ do {
 
 ##### Compress the Data
 
-Iterate over the source data and call the [`subdata(in:)`](https://developer.apple.com/documentation/foundation/data/1779918-subdata) method to copy `pageSize` chunks to `subdata`. The [`write(_:)`](https://developer.apple.com/documentation/Compression/OutputFilter/write(_:)) method compresses each chunk and uses the closure specified in the [`OutputFilter`](https://developer.apple.com/documentation/Compression/OutputFilter) initializer to write the result to `compressedData`.
+Iterate over the source data and call the [`subdata(in:)`](https://developer.apple.com/documentation/Foundation/Data/subdata(in:)) method to copy `pageSize` chunks to `subdata`. The [`write(_:)`](https://developer.apple.com/documentation/Compression/OutputFilter/write(_:)) method compresses each chunk and uses the closure specified in the [`OutputFilter`](https://developer.apple.com/documentation/Compression/OutputFilter) initializer to write the result to `compressedData`.
 
 ```swift
 do {
@@ -219,8 +219,8 @@ do {
 
 ## See Also
 
-- [Compressing and Decompressing Files with Stream Compression](compressing-and-decompressing-files-with-stream-compression.md)
-  Perform compression or the appropriate kind of decompression to a file based on its path extension.
+- [Compressing and decompressing files with stream compression](compressing-and-decompressing-files-with-stream-compression.md)
+  Perform compression for all files and decompression for files with supported extension types.
 - [Compressing and decompressing data with buffer compression](compressing-and-decompressing-data-with-buffer-compression.md)
   Compress a string, write it to the file system, and decompress the same file using buffer compression.
 

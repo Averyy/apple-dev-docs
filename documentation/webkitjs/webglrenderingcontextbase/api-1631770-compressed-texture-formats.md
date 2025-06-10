@@ -1,6 +1,6 @@
 # COMPRESSED_TEXTURE_FORMATS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

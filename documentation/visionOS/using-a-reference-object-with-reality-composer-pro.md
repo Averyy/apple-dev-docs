@@ -1,6 +1,6 @@
 # Using a reference object with Reality Composer Pro
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Import a reference object file to track a real-world object in your visionOS app.
 

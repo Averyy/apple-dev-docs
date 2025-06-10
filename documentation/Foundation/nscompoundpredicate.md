@@ -63,6 +63,8 @@ Use [`NSCompoundPredicate`](nscompoundpredicate.md) to create an `AND` or `OR` c
 - [NSCopying](nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

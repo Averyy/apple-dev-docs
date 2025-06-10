@@ -3,11 +3,15 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report that contains details about an error.
+Provides details about an error for an item in a status report.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- iOS 15.0+
+- iPadOS 15.0+
+- macOS 13.0+
+- tvOS 16.0+
+- visionOS 1.1+
+- watchOS 10.0+
 
 ## Declaration
 
@@ -15,16 +19,18 @@ A status report that contains details about an error.
 object StatusReason
 ```
 
+#### Discussion
+
+Each status item defines its own set of `code`, `description`, and `details` values.
+
 ## Topics
 
-### Objects
+### Dictionaries
 - [object StatusReason.ErrorDetails](statusreason/errordetails.md)
-  A dictionary that contains further details about an error.
 
 ## See Also
 
 - [object StatusReport](statusreport.md)
-  A status report of the device’s current state.
 - [object StatusAppManagedList](statusappmanagedlist.md)
   The device’s declarative managed apps.
 - [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)

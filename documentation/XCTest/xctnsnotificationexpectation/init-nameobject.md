@@ -1,6 +1,6 @@
 # init(name:object:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an expectation that is fulfilled when an `NSNotification` is posted from the default notification center by a specific object.

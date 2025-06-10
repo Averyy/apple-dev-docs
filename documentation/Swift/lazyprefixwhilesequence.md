@@ -70,4 +70,4 @@ struct LazyPrefixWhileSequence<Base> where Base : Sequence
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/lazyprefixwhilesequence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/lazyprefixwhilesequence)*

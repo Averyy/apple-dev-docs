@@ -1,6 +1,6 @@
 # XCTWaiter
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 Waits for the fulfillment of a group of expectations.
@@ -65,6 +65,7 @@ You can use waiters without a delegate or any association with a test case insta
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

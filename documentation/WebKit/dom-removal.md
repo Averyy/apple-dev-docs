@@ -1,6 +1,6 @@
 # DOM_REMOVAL
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

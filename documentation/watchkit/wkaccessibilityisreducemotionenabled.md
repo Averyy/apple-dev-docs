@@ -1,6 +1,6 @@
 # WKAccessibilityIsReduceMotionEnabled()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: func
 
 Returns a Boolean value indicating whether reduced motion is enabled.
@@ -16,7 +16,7 @@ func WKAccessibilityIsReduceMotionEnabled() -> Bool
 
 #### Discussion
 
-You can use this function to customize your application’s UI when reduced motion is enabled. Note that you can also listen for the [`WKAccessibilityReduceMotionStatusDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name/2915218-wkaccessibilityreducemotionstatu) (Swift) or [`WKAccessibilityReduceMotionStatusDidChangeNotification`](wkaccessibilityreducemotionstatusdidchangenotification.md) (Objective-C) notification to find out when VoiceOver starts and stops.
+You can use this function to customize your application’s UI when reduced motion is enabled. Note that you can also listen for the [`WKAccessibilityReduceMotionStatusDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/WKAccessibilityReduceMotionStatusDidChange) (Swift) or [`WKAccessibilityReduceMotionStatusDidChangeNotification`](wkaccessibilityreducemotionstatusdidchangenotification.md) (Objective-C) notification to find out when VoiceOver starts and stops.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # XCTAssertNoThrow(_:_:file:line:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: func
 
 Asserts that an expression doesn’t throw an error.

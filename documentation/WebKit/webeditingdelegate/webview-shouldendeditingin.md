@@ -1,6 +1,6 @@
 # webView(_:shouldEndEditingIn:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns whether the user should be allowed to end editing.

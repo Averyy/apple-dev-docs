@@ -5,6 +5,9 @@
 
 A collection of plane anchors.
 
+**Availability**:
+- visionOS 1.0+
+
 ## Declaration
 
 ```swift

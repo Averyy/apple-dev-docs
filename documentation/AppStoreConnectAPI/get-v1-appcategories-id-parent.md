@@ -12,6 +12,7 @@ Get the App Store category to which a specific subcategory belongs.
 
 - [Read App Category Information](get-v1-appcategories-_id_.md)
   Get a specific app category.
+- [GET /v1/appCategories/{id}/relationships/parent](get-v1-appcategories-_id_-relationships-parent.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # WKInterfaceImage
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An image that can be displayed in the interface of your watchOS app.
@@ -109,4 +109,4 @@ Xcode lets you configure information about your image interface object in your s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkinterfaceimage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkinterfaceimage)*

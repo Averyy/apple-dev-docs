@@ -6,10 +6,10 @@
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -29,6 +29,7 @@ case other
 - [IntentPerson.Handle.Label.school](intentperson/handle-swift.struct/label-swift.enum/school.md)
 - [IntentPerson.Handle.Label.work](intentperson/handle-swift.struct/label-swift.enum/work.md)
 - [IntentPerson.Handle.Label.workFax](intentperson/handle-swift.struct/label-swift.enum/workfax.md)
+- [IntentPerson.Handle.Label.custom(_:)](intentperson/handle-swift.struct/label-swift.enum/custom(_:).md)
 
 
 ---

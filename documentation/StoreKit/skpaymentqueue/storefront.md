@@ -28,8 +28,6 @@ If the storefront changes during a transaction, StoreKit notifies your app by ca
 
 > ❗ **Important**:  [`storefront`](skpaymentqueue/storefront.md) is a synchronous API that may take significant time to return. Don’t use [`storefront`](skpaymentqueue/storefront.md) in a time-sensitive thread, such as during app launch. To get asynchronous behavior, dispatch it to a separate queue, or use the asynchronous [`current`](storefront/current.md) property of [`Storefront`](storefront.md) instead.
 
- [`storefront`](skpaymentqueue/storefront.md) is a synchronous API that may take significant time to return. Don’t use [`storefront`](skpaymentqueue/storefront.md) in a time-sensitive thread, such as during app launch. To get asynchronous behavior, dispatch it to a separate queue, or use the asynchronous [`current`](storefront/current.md) property of [`Storefront`](storefront.md) instead.
-
 
 ---
 

@@ -1,6 +1,6 @@
 # hasSucceeded
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A Boolean value that returns true if all tests in the run completed without recording any failures; otherwise, false.

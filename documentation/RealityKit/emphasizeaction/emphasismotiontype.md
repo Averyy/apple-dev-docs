@@ -10,6 +10,7 @@ Options available to determine the kinds of animation effects.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -41,18 +42,6 @@ The [`EmphasizeAction`](emphasizeaction.md) structure accepts this enumeration a
   Scales larger and smaller like a heartbeat.
 - [EmphasizeAction.EmphasisMotionType.spin](emphasizeaction/emphasismotiontype/spin.md)
   Rotates around its central y-axis and returns to its original pose.
-### Initializers
-- [init?(rawValue: Int)](emphasizeaction/emphasismotiontype/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-### Instance Properties
-- [var rawValue: Int](emphasizeaction/emphasismotiontype/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [EmphasizeAction.EmphasisMotionType.RawValue](emphasizeaction/emphasismotiontype/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Default Implementations
-- [Equatable Implementations](emphasizeaction/emphasismotiontype/equatable-implementations.md)
-- [RawRepresentable Implementations](emphasizeaction/emphasismotiontype/rawrepresentable-implementations.md)
 
 ## Relationships
 

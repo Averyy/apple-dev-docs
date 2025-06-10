@@ -1,6 +1,6 @@
 # XCTIssueReference.IssueType.unmatchedExpectedFailure
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 A test failure due to an expected test failure that doesn’t occur.

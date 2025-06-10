@@ -80,6 +80,9 @@ struct AVFileType
   Creates a file type with a string.
 - [init(rawValue: String)](avfiletype/init(rawvalue:).md)
   Creates a file type from its raw string value.
+### Type Properties
+- [static let dcm: AVFileType](avfiletype/dcm.md)
+  A UTI for the Digital Imaging and Communications in Medicine (DICOM) file format.
 
 ## Relationships
 
@@ -88,6 +91,7 @@ struct AVFileType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

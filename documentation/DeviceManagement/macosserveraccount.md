@@ -8,8 +8,6 @@ The payload you use to configure a macOS server account.
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,18 +23,19 @@ Specify `com.apple.osxserver.account` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS |
-| User Channel | - |
-| Allow Manual Install | iOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | iOS |
+| Device channel | iOS |
+| User channel | NA |
+| Allow manual install | iOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | iOS |
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object MacOSServerAccount.ConfiguredAccountsItem](macosserveraccount/configuredaccountsitem.md)
+  An array of dictionaries containing configured account types and relevant settings
 
 ## See Also
 

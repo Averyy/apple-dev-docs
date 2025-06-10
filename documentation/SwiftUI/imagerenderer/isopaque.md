@@ -33,6 +33,8 @@ Setting this value to `true`, meaning the alpha channel is opaque, may improve p
   The scale at which to render the image.
 - [var colorMode: ColorRenderingMode](imagerenderer/colormode.md)
   The working color space and storage format of the image.
+- [var allowedDynamicRange: Image.DynamicRange?](imagerenderer/alloweddynamicrange.md)
+  The allowed dynamic range of the image, or nil to mark that the dynamic range of the image should be unrestricted. This property defaults to `sdr`, i.e. HDR content will be tone mapped to SDR.
 
 
 ---

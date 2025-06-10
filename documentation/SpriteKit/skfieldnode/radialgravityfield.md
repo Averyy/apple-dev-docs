@@ -17,7 +17,6 @@ Creates a field node that accelerates physics bodies toward the field node.
 ## Declaration
 
 ```swift
-@MainActor
 class func radialGravityField() -> SKFieldNode
 ```
 

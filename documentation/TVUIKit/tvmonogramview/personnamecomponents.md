@@ -17,7 +17,7 @@ var personNameComponents: PersonNameComponents? { get set }
 
 #### Discussion
 
-If no image is provided, the monogram object creates an image using the first initial of the [`givenName`](https://developer.apple.com/documentation/foundation/nspersonnamecomponents/1407259-givenname) and [`familyName`](https://developer.apple.com/documentation/foundation/personnamecomponents/1779855-familyname) attributes contained in this property. The person’s name appears below the monogram image.
+If no image is provided, the monogram object creates an image using the first initial of the [`givenName`](https://developer.apple.com/documentation/Foundation/NSPersonNameComponents/givenName) and [`familyName`](https://developer.apple.com/documentation/Foundation/PersonNameComponents/familyName) attributes contained in this property. The person’s name appears below the monogram image.
 
 ## See Also
 

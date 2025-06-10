@@ -1,6 +1,6 @@
 # textFieldShouldEndEditing(_:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Asks the delegate whether to stop editing in the specified text field.

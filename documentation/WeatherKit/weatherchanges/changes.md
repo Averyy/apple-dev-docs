@@ -1,6 +1,6 @@
 # changes
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A list of forecasted weather changes, in chronological order.

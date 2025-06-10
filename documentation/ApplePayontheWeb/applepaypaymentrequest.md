@@ -1,6 +1,6 @@
 # ApplePayPaymentRequest
 
-**Framework**: Applepayontheweb  
+**Framework**: Apple Pay on the Web  
 **Kind**: struct
 
 A request for payment, which includes information about payment-processing capabilities, the payment amount, and shipping information.
@@ -39,11 +39,11 @@ dictionary ApplePayPaymentRequest {
 
 ## Mentions
 
+- [Apple Pay on the Web Version 3 Release Notes](apple-pay-on-the-web-version-3-release-notes.md)
 - [Apple Pay on the Web Version 14 Release Notes](apple-pay-on-the-web-version-14-release-notes.md)
 - [Creating an Apple Pay Session](creating-an-apple-pay-session.md)
 - [Apple Pay on the Web Version 4 Release Notes](apple-pay-on-the-web-version-4-release-notes.md)
 - [Apple Pay on the Web Version 12 Release Notes](apple-pay-on-the-web-version-12-release-notes.md)
-- [Apple Pay on the Web Version 3 Release Notes](apple-pay-on-the-web-version-3-release-notes.md)
 
 #### Overview
 
@@ -148,4 +148,4 @@ For recurring payments and automatic reload payments, you can optionally set up 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaypaymentrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaypaymentrequest)*

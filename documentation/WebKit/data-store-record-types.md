@@ -1,6 +1,6 @@
 # Data Store Record Types
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Explore the constants that identify the types of data that websites store.
 
@@ -10,26 +10,28 @@ A [`WKWebsiteDataRecord`](wkwebsitedatarecord.md) object includes these constant
 
 ## Topics
 
-### Cookie Type
+### Cookie type
 - [let WKWebsiteDataTypeCookies: String](wkwebsitedatatypecookies.md)
   Cookies.
-### Cache Types
+### Cache types
 - [let WKWebsiteDataTypeMemoryCache: String](wkwebsitedatatypememorycache.md)
   In-memory caches.
 - [let WKWebsiteDataTypeDiskCache: String](wkwebsitedatatypediskcache.md)
   On-disk caches.
 - [let WKWebsiteDataTypeOfflineWebApplicationCache: String](wkwebsitedatatypeofflinewebapplicationcache.md)
   HTML offline web app caches.
-### Storage Types
+### Storage types
 - [let WKWebsiteDataTypeLocalStorage: String](wkwebsitedatatypelocalstorage.md)
   HTML local storage.
 - [let WKWebsiteDataTypeSessionStorage: String](wkwebsitedatatypesessionstorage.md)
   HTML session storage.
-### Database Types
+### Database types
 - [let WKWebsiteDataTypeWebSQLDatabases: String](wkwebsitedatatypewebsqldatabases.md)
   WebSQL databases.
 - [let WKWebsiteDataTypeIndexedDBDatabases: String](wkwebsitedatatypeindexeddbdatabases.md)
   IndexedDB databases.
+### Screen time type
+- [let WKWebsiteDataTypeScreenTime: String](wkwebsitedatatypescreentime.md)
 
 ## See Also
 

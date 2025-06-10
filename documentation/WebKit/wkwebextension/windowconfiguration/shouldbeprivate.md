@@ -1,6 +1,6 @@
 # shouldBePrivate
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates whether the window should be private.

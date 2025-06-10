@@ -12,6 +12,7 @@ Decodes the provided data into native MapKit types that a map can display.
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # Arranging elements in a scene
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Manipulate objects to complete your Reality Composer scene.
 
@@ -84,4 +84,4 @@ To group items on an iOS device, touch and hold the first object you want to inc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/arranging-elements-in-a-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/arranging-elements-in-a-scene)*

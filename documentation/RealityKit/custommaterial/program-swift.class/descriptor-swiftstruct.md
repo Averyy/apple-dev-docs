@@ -10,6 +10,7 @@ An object that specifies all parameters necessary to initialize `CustomMaterial`
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -19,23 +20,13 @@ struct Descriptor
 
 ## Topics
 
-### Operators
-- [static func == (CustomMaterial.Program.Descriptor, CustomMaterial.Program.Descriptor) -> Bool](custommaterial/program-swift.class/descriptor-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init()](custommaterial/program-swift.class/descriptor-swift.struct/init.md)
 ### Instance Properties
 - [var blendMode: MaterialParameterTypes.BlendMode?](custommaterial/program-swift.class/descriptor-swift.struct/blendmode.md)
   Modes that describe how materials using the created `CustomMaterial.Program` will be blended with content behind them.
-- [var hashValue: Int](custommaterial/program-swift.class/descriptor-swift.struct/hashvalue.md)
-  The hash value.
 - [var lightingModel: CustomMaterial.LightingModel](custommaterial/program-swift.class/descriptor-swift.struct/lightingmodel.md)
   Modes that describe how materials using created `CustomMaterial.Program` will interact with light within the RealityKit scene.
-### Instance Methods
-- [func hash(into: inout Hasher)](custommaterial/program-swift.class/descriptor-swift.struct/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](custommaterial/program-swift.class/descriptor-swift.struct/equatable-implementations.md)
 
 ## Relationships
 
@@ -43,10 +34,12 @@ struct Descriptor
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [struct ShaderGraphMaterial](shadergraphmaterial.md)
+  Create dynamic materials without Metal.
 - [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
 - [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)

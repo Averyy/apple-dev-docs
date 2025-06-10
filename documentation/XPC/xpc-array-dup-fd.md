@@ -1,6 +1,6 @@
 # xpc_array_dup_fd(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Gets a file descriptor from an array directly.

@@ -6,6 +6,7 @@
 Copies a reference to a Core Foundation error object that represents the specified ARKit error.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # unownedExecutor
 
-**Framework**: Corehid  
+**Framework**: Core HID  
 **Kind**: property
 
 Retrieve the executor for this actor as an optimized, unowned reference.
@@ -32,4 +32,4 @@ This property will be implicitly accessed when work needs to be scheduled onto t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreHID/hidvirtualdevice/unownedexecutor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corehid/hidvirtualdevice/unownedexecutor)*

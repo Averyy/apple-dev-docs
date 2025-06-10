@@ -43,6 +43,8 @@ enum InkType
 ### Supporting backward compatibility
 - [var requiredContentVersion: PKContentVersion](pkinkingtool-swift.struct/inktype-swift.enum/requiredcontentversion.md)
   The version of PencilKit necessary to use the ink type.
+### Enumeration Cases
+- [PKInkingTool.InkType.reed](pkinkingtool-swift.struct/inktype-swift.enum/reed.md)
 
 ## Relationships
 

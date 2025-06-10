@@ -1,6 +1,6 @@
 # init(xpcService:targetQueue:options:cancellationHandler:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: init
 
 Establishes a connection to an XPC service with the name you specify.
@@ -14,6 +14,7 @@ Establishes a connection to an XPC service with the name you specify.
 ## Declaration
 
 ```swift
+@preconcurrency
 convenience init(xpcService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, cancellationHandler: ((XPCRichError) -> Void)? = nil) throws
 ```
 

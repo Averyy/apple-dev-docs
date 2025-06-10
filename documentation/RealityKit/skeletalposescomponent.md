@@ -10,6 +10,7 @@ A component that exposes the collection of named animation skeletal poses.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -40,8 +41,6 @@ You can use [`poses`](skeletalposescomponent/poses.md)’s [`default`](skeletalp
 ### Instance Properties
 - [var poses: SkeletalPoseSet](skeletalposescomponent/poses.md)
   The collection of the skeletal poses for a single entity.
-### Default Implementations
-- [Component Implementations](skeletalposescomponent/component-implementations.md)
 
 ## Relationships
 
@@ -52,12 +51,8 @@ You can use [`poses`](skeletalposescomponent/poses.md)’s [`default`](skeletalp
 
 - [struct SkeletalPose](skeletalpose.md)
   A container that holds the position and orientation of each joint in a single animation skeleton.
-- [SkeletalPose.ID](skeletalpose/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 - [struct SkeletalPoseSet](skeletalposeset.md)
   A collection of named skeletal poses.
-- [SkeletalPoseSet.Element](skeletalposeset/element.md)
-  A type representing the sequence’s elements.
 
 
 ---

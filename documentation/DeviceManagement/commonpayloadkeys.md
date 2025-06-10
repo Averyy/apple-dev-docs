@@ -12,8 +12,6 @@ The payload properties that are common across all profiles.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,13 +25,13 @@ object CommonPayloadKeys
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS, watchOS |
-| User Channel | - |
-| Allow Manual Install | iOS, macOS, tvOS, watchOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| User channel | macOS, Shared iPad |
+| Allow manual install | iOS, macOS, tvOS, visionOS, watchOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Allow multiple payloads | NA |
 
 ## See Also
 

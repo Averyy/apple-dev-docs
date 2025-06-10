@@ -6,9 +6,7 @@
 A dictionary that maps team identifiers to bundle identifiers of extensions that are non-removable.
 
 **Availability**:
-- macOS 10.15+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- macOS 15.0+
 
 ## Declaration
 

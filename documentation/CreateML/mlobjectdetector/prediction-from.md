@@ -18,9 +18,9 @@ func prediction(from image: URL) throws -> MLObjectDetector.DetectedObjects
 
 An [`MLObjectDetector.DetectedObjects`](mlobjectdetector/detectedobjects.md) instance — which is an [`MLObjectDetector.ObjectAnnotation`](mlobjectdetector/objectannotation.md) array — where each annotation represents an item the object detector found in the image.
 
-#### Discussion
+## Parameters
 
-- image: The URL for the image file where you want the object detector to look for objects.
+- `image`: The URL for the image file where you want the object detector to look for objects.
 
 ## See Also
 

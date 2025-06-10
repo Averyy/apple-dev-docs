@@ -1,6 +1,6 @@
 # Capture setup
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Configure built-in cameras and microphones, and external capture devices, for media capture.
 
@@ -31,6 +31,8 @@ The main parts of the capture architecture are sessions, inputs, and outputs: Ca
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
 - [AVCam: Building a camera app](avcam-building-a-camera-app.md)
   Capture photos and record video using the front and rear iPhone and iPad cameras.
+- [Capturing cinematic video](capturing-cinematic-video.md)
+  Capture video with an adjustable depth of field and focus points.
 - [AVMultiCamPiP: Capturing from Multiple Cameras](avmulticampip-capturing-from-multiple-cameras.md)
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
 - [AVCamBarcode: Detecting Barcodes and Faces](avcambarcode-detecting-barcodes-and-faces.md)
@@ -96,4 +98,4 @@ The main parts of the capture architecture are sessions, inputs, and outputs: Ca
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/capture-setup)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/capture-setup)*

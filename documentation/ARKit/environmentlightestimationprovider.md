@@ -42,6 +42,7 @@ Use the anchor this provider returns to reflect lighting from a person’s surro
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [DataProvider](dataprovider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

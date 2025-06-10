@@ -11,6 +11,7 @@ Indicates that an important value increased above a significant threshold.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS 26.0+ (Beta)
 - watchOS 10.0+
 
 ## Declaration
@@ -21,7 +22,7 @@ static let increase: SensoryFeedback
 
 #### Discussion
 
-Only plays feedback on watchOS.
+Only plays feedback on watchOS and visionOS.
 
 ## See Also
 

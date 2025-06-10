@@ -1,6 +1,6 @@
 # RecognizedItem.Text
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: struct
 
 An object that represents a text item that the scanner recognizes.

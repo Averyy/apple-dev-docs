@@ -1,6 +1,6 @@
 # xpc_session_create_mach_service(_:_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 **Availability**:

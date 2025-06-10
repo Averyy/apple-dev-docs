@@ -311,4 +311,4 @@ You may need to combine this change with those described in the article sections
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/updating-your-existing-codebase-to-accommodate-unit-tests)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/updating-your-existing-codebase-to-accommodate-unit-tests)*

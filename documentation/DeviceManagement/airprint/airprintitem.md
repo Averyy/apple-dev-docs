@@ -10,8 +10,6 @@ A dictionary of AirPrint printer details.
 - iPadOS 7.0+
 - macOS 10.10+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

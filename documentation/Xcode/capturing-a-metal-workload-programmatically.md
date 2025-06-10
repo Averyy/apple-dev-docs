@@ -16,8 +16,6 @@ Alternatively, in macOS 14 and later, you can set the environment variable on yo
 
 > 💡 **Tip**: Enabling Metal capture has a tiny, but measurable, effect on your app’s CPU processing time. You may want to set the value of this key using a build setting in your project so that you can enable it for some builds, but not for your final release build.
 
-Enabling Metal capture has a tiny, but measurable, effect on your app’s CPU processing time. You may want to set the value of this key using a build setting in your project so that you can enable it for some builds, but not for your final release build.
-
 ##### Capture a Device or Command Queue
 
 Create an [`MTLCaptureDescriptor`](https://developer.apple.com/documentation/Metal/MTLCaptureDescriptor) object that defines which commands you want to record and what needs to happen after the capture is complete. To capture commands for a specific [`MTLDevice`](https://developer.apple.com/documentation/Metal/MTLDevice) or [`MTLCommandQueue`](https://developer.apple.com/documentation/Metal/MTLCommandQueue), set the capture descriptor’s [`captureObject`](https://developer.apple.com/documentation/Metal/MTLCaptureDescriptor/captureObject) property to point at the specific object to track, and call the [`startCapture(with:)`](https://developer.apple.com/documentation/Metal/MTLCaptureManager/startCapture(with:)) method. To stop capturing commands, call the [`stopCapture()`](https://developer.apple.com/documentation/Metal/MTLCaptureManager/stopCapture()) method.
@@ -47,15 +45,11 @@ The capture manager captures commands only within [`MTLCommandBuffer`](https://d
 
 > 💡 **Tip**: When you capture a frame programmatically, you can capture Metal commands that span multiple frames. For example, by calling `startCapture` at the start of frame 1 and `stopCapture` after frame 3, the traces contain command data from all the buffers that the system commits in the three frames.
 
-When you capture a frame programmatically, you can capture Metal commands that span multiple frames. For example, by calling `startCapture` at the start of frame 1 and `stopCapture` after frame 3, the traces contain command data from all the buffers that the system commits in the three frames.
-
 ##### Capture Specific Commands with a Capture Scope
 
 To learn how to add custom scopes to your app, see [`Creating and using custom capture scopes`](creating-and-using-custom-capture-scopes.md). To capture commands using a custom scope, create an [`MTLCaptureScope`](https://developer.apple.com/documentation/Metal/MTLCaptureScope) object and set the capture descriptor’s [`captureObject`](https://developer.apple.com/documentation/Metal/MTLCaptureDescriptor/captureObject) property to point to it.
 
 > ❗ **Important**: Set the file extension of the `outputURL` to `.gputrace` to ensure that you can replay it later in the Metal debugger. For more information on replaying GPU trace files, see [`Replaying a GPU trace file`](replaying-a-gpu-trace-file.md).
-
-Set the file extension of the `outputURL` to `.gputrace` to ensure that you can replay it later in the Metal debugger. For more information on replaying GPU trace files, see [`Replaying a GPU trace file`](replaying-a-gpu-trace-file.md).
 
 ```swift
 func setupProgrammaticCaptureScope(device: MTLDevice) {
@@ -89,8 +83,6 @@ func runMetalCommands(commandQueue: MTLCommandQueue) {
 ```
 
 > ❗ **Important**: The capture scope captures commands only within [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) objects that you create after the scope begins and commit before the scope ends.
-
-The capture scope captures commands only within [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer) objects that you create after the scope begins and commit before the scope ends.
 
 ##### Save the Capture to Your Computer
 

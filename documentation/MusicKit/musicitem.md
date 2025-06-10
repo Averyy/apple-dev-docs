@@ -37,6 +37,7 @@ protocol MusicItem : Sendable
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Inherited By
 - [FilterableMusicItem](filterablemusicitem.md)
 - [MusicCatalogChartRequestable](musiccatalogchartrequestable.md)

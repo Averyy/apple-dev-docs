@@ -37,6 +37,7 @@ The fields of an [`NSSwappedFloat`](nsswappedfloat.md) are private.
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

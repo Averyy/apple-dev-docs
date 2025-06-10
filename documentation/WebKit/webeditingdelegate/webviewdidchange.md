@@ -1,6 +1,6 @@
 # webViewDidChange(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sent by the default notification center when the user changes content in the web view.

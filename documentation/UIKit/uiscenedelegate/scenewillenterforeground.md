@@ -1,6 +1,6 @@
 # sceneWillEnterForeground(_:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Tells the delegate that the scene is about to begin running in the foreground and become visible to the user.

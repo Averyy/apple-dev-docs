@@ -10,6 +10,7 @@ A structure that encapsulates the blend shape name, blend shape weights and the 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -24,15 +25,12 @@ struct BlendShapeWeightsData
 - [init(id: BlendShapeWeightsData.ID, weights: [(String, BlendShapeWeights.Element)])](blendshapeweightsdata/init(id:weights:).md)
   Creates an instance of the named weights for a single blend shape.
 ### Instance Properties
-- [var id: BlendShapeWeightsData.ID](blendshapeweightsdata/id-swift.property.md)
+- [var id: BlendShapeWeightsData.ID](blendshapeweightsdata/id.md)
   The unique id of the blend shape. This value is used when binding to the structure using an animation bind target.
 - [var weightNames: [String]](blendshapeweightsdata/weightnames.md)
   The name of each weight value defined in the [`weights`](blendshapeweightsdata/weights.md) variable.
 - [var weights: BlendShapeWeights](blendshapeweightsdata/weights.md)
   The blend shape’s weight values.
-### Type Aliases
-- [BlendShapeWeightsData.ID](blendshapeweightsdata/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 

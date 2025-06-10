@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Modify a beta group’s metadata, including changing its Testflight public link status.
+Modify a beta group’s metadata, including changing its TestFlight public link status.
 
 **Availability**:
 - App Store Connect API 1.0+

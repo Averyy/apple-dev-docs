@@ -20,7 +20,7 @@ If you set this key to `YES`, your app can share files with the user. Place the 
 
 - [LSSupportsOpeningDocumentsInPlace](information-property-list/lssupportsopeningdocumentsinplace.md)
   A Boolean value indicating whether the app may open the original document from a file provider, rather than a copy of the document.
-- [func NSHomeDirectory() -> String](../foundation/1413045-nshomedirectory.md)
+- [func NSHomeDirectory() -> String](../Foundation/NSHomeDirectory().md)
   Returns the path to either the user’s or application’s home directory, depending on the platform.
 - [APFiles](information-property-list/apfiles.md)
   Describes the files or directories the app installs on the system.

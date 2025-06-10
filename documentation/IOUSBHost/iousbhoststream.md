@@ -24,7 +24,7 @@ The [`copyStream(withStreamID:)`](iousbhostpipe/copystream(withstreamid:).md) me
 ### Sending I/O
 - [typealias IOUSBHostCompletionHandler](iousbhostcompletionhandler.md)
   The completion handler for asynchronous control, bulk, and interrupt transfers.
-- [func enqueueIORequest(with: NSMutableData?, completionHandler: IOUSBHostCompletionHandler?) throws](iousbhoststream/enqueueiorequest(with:completionhandler:).md)
+- [func enqueueIORequest(with: NSMutableData?, completionHandler: ((IOReturn, Int) -> Void)?) throws](iousbhoststream/enqueueiorequest(with:completionhandler:).md)
   Enqueues an input/output request on the stream.
 - [func abort(with: IOUSBHostAbortOption) throws](iousbhoststream/abort(with:).md)
   Aborts pending input/output requests.

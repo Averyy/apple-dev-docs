@@ -1,6 +1,6 @@
 # WeatherService
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: class
 
 Provides an interface for obtaining weather data.
@@ -75,6 +75,7 @@ final class WeatherService
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

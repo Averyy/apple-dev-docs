@@ -1,6 +1,6 @@
 # menuBarVisibility
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether the webpage requests a visible menu bar.

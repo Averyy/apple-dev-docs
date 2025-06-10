@@ -1,6 +1,6 @@
 # Displaying dynamic dates in widgets
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Show up-to-date, time-based information in your widget even when it isn’t running.
 

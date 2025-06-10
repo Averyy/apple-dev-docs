@@ -1,6 +1,6 @@
 # NSTouchBarItem
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 A UI control shown in the Touch Bar on supported models of MacBook Pro.
@@ -370,4 +370,4 @@ If using the [`NSTouch`](nstouch.md) class directly, be sure to implement the [`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstouchbaritem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstouchbaritem)*

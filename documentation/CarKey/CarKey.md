@@ -1,6 +1,6 @@
 # CarKey
 
-**Framework**: Carkey  
+**Framework**: CarKey  
 **Kind**: module
 
 Access the remote keyless features of configured vehicles in the Wallet app.

@@ -1,6 +1,6 @@
 # click()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a click event to a hittable point computed for the element.

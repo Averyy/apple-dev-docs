@@ -37,6 +37,7 @@ struct JoinedSequence<Base> where Base : Sequence, Base.Element : Sequence
 ### Conforms To
 - [Copyable](copyable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

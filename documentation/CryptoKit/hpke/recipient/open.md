@@ -1,6 +1,6 @@
 # open(_:)
 
-**Framework**: Cryptokit  
+**Framework**: Apple CryptoKit  
 **Kind**: method
 
 Decrypts a message, if the ciphertext is valid.

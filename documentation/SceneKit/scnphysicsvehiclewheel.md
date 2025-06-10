@@ -1,18 +1,18 @@
 # SCNPhysicsVehicleWheel
 
-**Framework**: Scenekit  
+**Framework**: SceneKit  
 **Kind**: class
 
 The appearance and physical characteristics of an individual wheel associated with an physics vehicle behavior.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 
@@ -94,4 +94,4 @@ The properties of a wheel define the geometry of its connection to the vehicle a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SceneKit/scnphysicsvehiclewheel)*
+*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnphysicsvehiclewheel)*

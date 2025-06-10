@@ -10,6 +10,7 @@ Loads an entity from a configuration catalog and a dictionary of configuration c
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -23,11 +24,6 @@ Loads an entity from a configuration catalog and a dictionary of configuration c
 
 - `catalog`: A collection of alternative representations for an entity.
 - `configurations`: A dictionary of configuration choices the initializer applies as it loads the entity,   mapping the ID of a configuration set to the ID of a configuration within that set.
-
-## See Also
-
-- [Entity.ConfigurationCatalog](entity/configurationcatalog.md)
-  A collection of alternative representations of an entity you can choose from.
 
 
 ---

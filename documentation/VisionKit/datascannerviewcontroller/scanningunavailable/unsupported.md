@@ -1,6 +1,6 @@
 # DataScannerViewController.ScanningUnavailable.unsupported
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: case
 
 The data scanner isn’t supported on this device.

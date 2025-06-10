@@ -28,7 +28,7 @@ func present() async -> Bool
 
 The first version, `present(completion:)`, has a return type of `Void` and takes a completion handler. The second version, `present()`, returns a Boolean value and is an asynchronous method.
 
-Methods whose completion handlers populate a [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) pointer parameter also become throwing methods in Swift, as described in [`About Imported Cocoa Error Parameters`](about-imported-cocoa-error-parameters.md). The `NSError` parameter on an asynchronous throwing method must also be nullable, which indicates that the parameter is used only to communicate an error. For example, consider the [`write(_:timeout:completionHandler:)`](https://developer.apple.com/documentation/foundation/urlsessionstreamtask/1411602-write) method from [`URLSessionStreamTask`](https://developer.apple.com/documentation/Foundation/URLSessionStreamTask). In Objective-C, it’s declared like this:
+Methods whose completion handlers populate a [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) pointer parameter also become throwing methods in Swift, as described in [`About Imported Cocoa Error Parameters`](about-imported-cocoa-error-parameters.md). The `NSError` parameter on an asynchronous throwing method must also be nullable, which indicates that the parameter is used only to communicate an error. For example, consider the [`write(_:timeout:completionHandler:)`](https://developer.apple.com/documentation/Foundation/URLSessionStreamTask/write(_:timeout:completionHandler:)) method from [`URLSessionStreamTask`](https://developer.apple.com/documentation/Foundation/URLSessionStreamTask). In Objective-C, it’s declared like this:
 
 ```occ
 - (void)writeData:(NSData *)data

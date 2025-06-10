@@ -30,6 +30,7 @@ class NWMultiplexGroup
 ### Conforms To
 - [NWGroupDescriptor](nwgroupdescriptor.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

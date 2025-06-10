@@ -1,6 +1,6 @@
 # symbolVariant(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Applies the specified symbol variant when selected.

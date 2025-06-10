@@ -18,15 +18,15 @@ Before you create a project, collect the information that Xcode needs to identif
 
 > ❗ **Important**: The organization identifier is part of the bundle ID ([`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier)) by default. Xcode uses the bundle ID to register an App ID when you first run your app on a device. The number of App IDs are limited if you are not a member of the Apple Developer Program, and you can’t change the App ID after you upload a build to App Store Connect, so choose the organization identifier carefully.
 
-The organization identifier is part of the bundle ID ([`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier)) by default. Xcode uses the bundle ID to register an App ID when you first run your app on a device. The number of App IDs are limited if you are not a member of the Apple Developer Program, and you can’t change the App ID after you upload a build to App Store Connect, so choose the organization identifier carefully.
-
 ##### Create a Project
 
 Launch Xcode, then click “Create a new Xcode project” in the Welcome to Xcode window or choose File > New > Project. In the sheet that appears, select the target operating system or platform and a template under Application. In the following sheets, fill out the forms and choose options to configure your project.
 
 ![Screenshot of an Xcode window depicting the choices for a template for a new project. At the top are a list of platforms from which to choose, including iOS, watchOS, and so on. In the lower half of the window, options for types of applications are displayed, such as a game and an augmented reality app. The type “Single View App” is highlighted.](https://docs-assets.developer.apple.com/published/714daaca83de4a304e3a9c351f0d468d/creating-an-xcode-project-for-an-app-1%402x.png)
 
-You must provide a  and  because they are used to create the  that identifies your app throughout the system. Also enter an . If you don’t belong to an organization, enter your name.
+If you see a banner that says you don’t have support for the platform, you can create the project, but you can’t build and run it on a device. To install the platform now, click the Get button on the right of the banner. Otherwise, you can manage downloads in the Components settings later (see [`Downloading and installing additional Xcode components`](downloading-and-installing-additional-xcode-components.md)).
+
+To continue creating your project, you need to provide a  and  because they are used to create the  that identifies your app throughout the system. Also enter an . If you don’t belong to an organization, enter your name.
 
 ![Screenshot showing new project options where you enter a product name, organization name, and organization identifier, and choose a Team and a programming language.](https://docs-assets.developer.apple.com/published/fc17beb75b820e8ebb654513906e95fd/creating-an-xcode-project-for-an-app-2%402x.png)
 

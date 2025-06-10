@@ -1,6 +1,6 @@
 # Create a Subscription Group Localization
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 Create a localized display name and optional custom app name for a subscription group.
@@ -28,4 +28,4 @@ Create a localized display name and optional custom app name for a subscription 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v1-subscriptiongrouplocalizations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-subscriptiongrouplocalizations)*

@@ -1,6 +1,6 @@
 # allocateRenderResources()
 
-**Framework**: Audiotoolbox  
+**Framework**: Audio Toolbox  
 **Kind**: method
 
 Allocates resources required to render audio.

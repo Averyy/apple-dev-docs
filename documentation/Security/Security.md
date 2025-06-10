@@ -121,6 +121,10 @@ As shown in the image below, you can also use lower level cryptographic resource
 ### Functions
 - [func sec_protocol_metadata_copy_negotiated_protocol(sec_protocol_metadata_t) -> UnsafePointer<CChar>?](sec_protocol_metadata_copy_negotiated_protocol(_:).md)
 - [func sec_protocol_metadata_copy_server_name(sec_protocol_metadata_t) -> UnsafePointer<CChar>?](sec_protocol_metadata_copy_server_name(_:).md)
+### Type Aliases
+- [typealias CE_DataType](ce_datatype-swift.typealias.md)
+- [typealias CE_ExtendedKeyUsage](ce_extendedkeyusage-swift.typealias.md)
+- [typealias CE_GeneralNameType](ce_generalnametype-swift.typealias.md)
 
 
 ---

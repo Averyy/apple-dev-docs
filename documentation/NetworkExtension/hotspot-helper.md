@@ -10,8 +10,6 @@ Integrate your app with the iOS hotspot network subsystem.
 
 > ❗ **Important**:  [`NEHotspotHelper`](nehotspothelper.md) is  useful for hotspot integration. There are both technical and business restrictions that prevent it from being used for other tasks, such as accessory integration or Wi-Fi based location. Before using [`NEHotspotHelper`](nehotspothelper.md), you must first be granted a special entitlement (`com.apple.developer.networking.HotspotHelper`) by Apple. For more information, see [`Hotspot Helper Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/network-extension/).
 
- [`NEHotspotHelper`](nehotspothelper.md) is  useful for hotspot integration. There are both technical and business restrictions that prevent it from being used for other tasks, such as accessory integration or Wi-Fi based location. Before using [`NEHotspotHelper`](nehotspothelper.md), you must first be granted a special entitlement (`com.apple.developer.networking.HotspotHelper`) by Apple. For more information, see [`Hotspot Helper Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/network-extension/).
-
 For more about creating a hotspot helper, see the [`Hotspot Network Subsystem Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/Hotspot_Network_Subsystem_Guide/Contents/Introduction.html#//apple_ref/doc/uid/TP40016639).
 
 ## Topics
@@ -27,10 +25,21 @@ For more about creating a hotspot helper, see the [`Hotspot Network Subsystem Pr
 - [class NEHotspotNetwork](nehotspotnetwork.md)
   Information about a Wi-Fi network associated with a command or a response.
 ### Hotspot communication
-- [func bind(to: NEHotspotHelperCommand)](../foundation/nsmutableurlrequest/1619006-bind.md)
+- [func bind(to command: NEHotspotHelperCommand)](../Foundation/NSMutableURLRequest/bind(to:).md)
   Binds a URL request to the network interface associated with the hotspot helper command instance.
 - [In-Provider Networking](in-provider-networking.md)
   Network APIs for use by all types of NetworkExtension providers and by hotspot helpers.
+### Hotspot helper extension
+- [class NEHotspotManager](nehotspotmanager.md)
+  A class that you use to enable or disable the hotspot evaluation and authentication provider extensions.
+- [protocol NEHotspotEvaluationProvider](nehotspotevaluationprovider.md)
+  A protocol that defines methods and properties your extension implements to handle evaluate and filter scan list commands.
+- [protocol NEHotspotAuthenticationProvider](nehotspotauthenticationprovider.md)
+  A protocol that defines methods that your extension adopts to start and stop the extension, and to handle commands to authenticate with the hotspot network.
+- [class NEHotspotEvaluationProviderConfiguration](nehotspotevaluationproviderconfiguration.md)
+  A class that defines configuration options for use in NetworkExtension evaluation providers.
+- [class NEHotspotAuthenticationProviderConfiguration](nehotspotauthenticationproviderconfiguration.md)
+  A class that defines configuration options for use in NetworkExtension authentication providers.
 
 ## See Also
 

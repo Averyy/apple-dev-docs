@@ -24,6 +24,7 @@ struct GKSessionError
 - [static var connectivityError: GKSessionError.Code](gksessionerror-swift.struct/connectivityerror.md)
 - [static var dataTooBigError: GKSessionError.Code](gksessionerror-swift.struct/datatoobigerror.md)
 - [static var declinedError: GKSessionError.Code](gksessionerror-swift.struct/declinederror.md)
+- [static var errorDomain: String](gksessionerror-swift.struct/errordomain.md)
 - [static var inProgressError: GKSessionError.Code](gksessionerror-swift.struct/inprogresserror.md)
 - [static var internalError: GKSessionError.Code](gksessionerror-swift.struct/internalerror.md)
 - [static var invalidParameterError: GKSessionError.Code](gksessionerror-swift.struct/invalidparametererror.md)
@@ -33,7 +34,6 @@ struct GKSessionError
 - [static var timedOutError: GKSessionError.Code](gksessionerror-swift.struct/timedouterror.md)
 - [static var transportError: GKSessionError.Code](gksessionerror-swift.struct/transporterror.md)
 - [static var unknownError: GKSessionError.Code](gksessionerror-swift.struct/unknownerror.md)
-- [static var errorDomain: String](gksessionerror-swift.struct/errordomain.md)
 ### Enumerations
 - [GKSessionError.Code](gksessionerror-swift.struct/code.md)
   Error codes for the session error domain.
@@ -46,6 +46,7 @@ struct GKSessionError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

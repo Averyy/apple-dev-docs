@@ -1,6 +1,6 @@
 # jointTransforms
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: property
 
 The relative joint transforms of the model entity.
@@ -10,6 +10,7 @@ The relative joint transforms of the model entity.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -21,7 +22,7 @@ The relative joint transforms of the model entity.
 
 #### Discussion
 
-Call [`jointNames`](bodytrackedentity/jointnames.md) to determine the name and order of the joints.
+Call `RealityKit/BodyTrackedEntity/jointNames` to determine the name and order of the joints.
 
 > **Note**: Active animations may override the joint transforms set using this property.
 

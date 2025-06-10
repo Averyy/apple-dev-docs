@@ -1,6 +1,6 @@
 # allowsInlineMediaPlayback
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether HTML5 videos play inline or use the native full-screen controller.
@@ -25,8 +25,6 @@ Set this property to [`true`](https://developer.apple.com/documentation/swift/tr
 The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false) for iPhone and [`true`](https://developer.apple.com/documentation/swift/true) for iPad.
 
 > ❗ **Important**:  Apps created before iOS 10.0 must use the `webkit-playsinline` attribute.
-
- Apps created before iOS 10.0 must use the `webkit-playsinline` attribute.
 
 ## See Also
 

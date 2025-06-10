@@ -17,6 +17,10 @@
 var userPassword: LAEnvironment.MechanismUserPassword? { get }
 ```
 
+#### Discussion
+
+@C nil if user password or passcode is not supported by this device.
+
 
 ---
 

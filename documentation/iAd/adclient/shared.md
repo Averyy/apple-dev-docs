@@ -1,6 +1,6 @@
 # shared()
 
-**Framework**: Iad  
+**Framework**: iAd  
 **Kind**: method
 
 Gets an instance of ADClient.

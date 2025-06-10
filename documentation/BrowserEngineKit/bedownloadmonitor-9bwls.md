@@ -63,6 +63,7 @@ When someone downloads a file in your web browser, create an instance of this cl
 - [Identifiable](../Swift/Identifiable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

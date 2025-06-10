@@ -19,7 +19,7 @@ static var filenameCollision: NSFileProviderError.Code { get }
 
 #### Discussion
 
-Use the [`fileProviderErrorForCollision(with:)`](https://developer.apple.com/documentation/foundation/nserror/2882067-fileprovidererrorforcollision) method to create properly formatted [`filenameCollision`](nsfileprovidererror/filenamecollision.md) errors.
+Use the [`fileProviderErrorForCollision(with:)`](https://developer.apple.com/documentation/Foundation/NSError/fileProviderErrorForCollision(with:)) method to create properly formatted [`filenameCollision`](nsfileprovidererror/filenamecollision.md) errors.
 
 You have two options for resolving file name collisions:
 

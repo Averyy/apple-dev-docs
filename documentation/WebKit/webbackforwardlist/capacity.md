@@ -1,6 +1,6 @@
 # capacity
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The maximum number of items that the back-forward list can contain.

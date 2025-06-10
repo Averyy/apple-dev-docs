@@ -1,6 +1,6 @@
 # xpc_connection_cancel(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Cancels the connection and ensures that its event handler doesn’t fire again.

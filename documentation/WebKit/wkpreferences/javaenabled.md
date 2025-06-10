@@ -1,6 +1,6 @@
 # javaEnabled
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether Java is enabled.

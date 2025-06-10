@@ -36,6 +36,15 @@ Supported techniques are:
 - `updatedIndices`: List of updated indices, interpreted as described above
 - `Update`: The updated entries.
 
+## See Also
+
+- [func SparseUpdateFactor(SparseUpdate_t, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Double>, Int32, UnsafePointer<Int32>, SparseMatrix_Complex_Double)](sparseupdatefactor(_:_:_:_:_:)-9h956.md)
+  Apply a low-rank update to an existing factorization of a matrix of complex double values.
+- [func SparseUpdateFactor(SparseUpdate_t, UnsafeMutablePointer<SparseOpaqueFactorization_Float>, Int32, UnsafePointer<Int32>, SparseMatrix_Float)](sparseupdatefactor(_:_:_:_:_:)-9qg54.md)
+  Apply a low-rank update to an existing factorization of a matrix of float values.
+- [func SparseUpdateFactor(SparseUpdate_t, UnsafeMutablePointer<SparseOpaqueFactorization_Double>, Int32, UnsafePointer<Int32>, SparseMatrix_Double)](sparseupdatefactor(_:_:_:_:_:)-wrqg.md)
+  Apply a low-rank update to an existing factorization of a matrix of double values.
+
 
 ---
 

@@ -25,7 +25,7 @@ If you set `language` to a language ID, such as `fr-CA` or `en-GB`, MapKit JS re
 Set the `language` option when creating a [`mapkit.Directions`](mapkit.directions/mapkit.directions.md) object as in the code below:
 
 ```javascript
-var directions = new mapkit.Directions({
+const directions = new mapkit.Directions({
     language: "en-GB"
 });
 ```

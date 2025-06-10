@@ -40,4 +40,4 @@ When your app has a counter sample buffer, it can then instruct the GPU to save 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass)*

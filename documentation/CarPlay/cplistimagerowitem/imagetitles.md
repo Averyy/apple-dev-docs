@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: property
 
-Update the titles displayed each image in this image row item. If this image row item is already displayed in a list template, then it will be automatically reloaded.
+The titles displayed for each image in this image row item.
 
 **Availability**:
 - iOS 17.4+
@@ -13,7 +13,8 @@ Update the titles displayed each image in this image row item. If this image row
 ## Declaration
 
 ```swift
-var imageTitles: [String] { get set }
+@MainActor
+var imageTitles: [String] { get }
 ```
 
 #### Discussion

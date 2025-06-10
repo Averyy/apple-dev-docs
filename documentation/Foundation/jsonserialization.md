@@ -76,4 +76,4 @@ Other rules may apply. Calling [`isValidJSONObject(_:)`](jsonserialization/isval
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/jsonserialization)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/jsonserialization)*

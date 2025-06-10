@@ -1,6 +1,6 @@
 # load
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Allows the drag operation to change the location.

@@ -3,14 +3,14 @@
 **Framework**: App Intents  
 **Kind**: method
 
-Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

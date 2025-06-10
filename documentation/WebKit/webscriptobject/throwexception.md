@@ -1,6 +1,6 @@
 # throwException(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Raises an exception in the current script execution context.

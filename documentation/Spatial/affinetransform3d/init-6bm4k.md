@@ -39,7 +39,7 @@ init?(_ matrix: simd_double4x4)
   Creates an affine transform from the specified projective transform.
 - [init(scale: Size3D, rotation: Rotation3D, translation: Size3D)](affinetransform3d/init(scale:rotation:translation:)-40dow.md)
   Creates an affine transform from the specified scale, rotate, and translate transforms.
-- [init(translation: Size3D)](affinetransform3d/init(translation:)-2fbl8.md)
+- [init(translation: Size3D)](affinetransform3d/init(translation:).md)
 - [func inverted() -> AffineTransform3D?](affinetransform3d/inverted.md)
   Returns a new transform that results from inverting an existing affine transform.
 - [var offset: Vector3D](affinetransform3d/offset.md)

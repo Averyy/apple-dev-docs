@@ -1,6 +1,6 @@
 # Cache Attributes
 
-**Framework**: Corevideo
+**Framework**: Core Video
 
 Dictionary keys and values for use with the cacheAttributes parameter of [`CVOpenGLTextureCacheCreate(_:_:_:_:_:_:)`](cvopengltexturecachecreate(_:_:_:_:_:_:).md)
 
@@ -26,4 +26,4 @@ In some cases, a texture cache can do higher quality chroma upsampling on GPUs t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreVideo/cvopengltexturecache-cache-attributes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corevideo/cvopengltexturecache-cache-attributes)*

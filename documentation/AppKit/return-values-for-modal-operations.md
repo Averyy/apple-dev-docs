@@ -30,7 +30,7 @@ The system also reserves all values below these.
   These constants specify how a cell formats numeric data.
 - [Anonymous](nsbuttontypes-anonymous.md)
 - [Additional Writing Directions](additional-writing-directions.md)
-  Additional values to be added to [`NSWritingDirection.leftToRight`](nswritingdirection/lefttoright.md) or [`NSWritingDirection.rightToLeft`](nswritingdirection/righttoleft.md), when used with [`writingDirection`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1524497-writingdirection).
+  Additional values to be added to [`NSWritingDirection.leftToRight`](nswritingdirection/lefttoright.md) or [`NSWritingDirection.rightToLeft`](nswritingdirection/righttoleft.md), when used with `NSAttributedString/Key/writingDirection`.
 - [Tags of Views in the FontPanel](tags-of-views-in-the-fontpanel.md)
   These constants are obsolete and should not be used.
 

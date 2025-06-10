@@ -1,6 +1,6 @@
 # xpc_transaction_begin()
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Informs the XPC runtime when a transaction begins, indicating that the service isn’t idle.

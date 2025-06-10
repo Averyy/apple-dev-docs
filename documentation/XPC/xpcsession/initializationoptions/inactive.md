@@ -1,6 +1,6 @@
 # inactive
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: property
 
 Indicates that the session isn’t activated during its creation.
@@ -16,20 +16,18 @@ Indicates that the session isn’t activated during its creation.
 ## Declaration
 
 ```swift
-static var inactive: XPCSession.InitializationOptions
+static let inactive: XPCSession.InitializationOptions
 ```
 
 #### Discussion
 
 > ❗ **Important**:  If you create a session with this option, you must manually activate it by calling [`activate()`](xpcsession/activate().md).
 
- If you create a session with this option, you must manually activate it by calling [`activate()`](xpcsession/activate().md).
-
 ## See Also
 
-- [static var privileged: XPCSession.InitializationOptions](xpcsession/initializationoptions/privileged.md)
+- [static let privileged: XPCSession.InitializationOptions](xpcsession/initializationoptions/privileged.md)
   Indicates that the Mach service is in the priviledged Mach bootstrap.
-- [static var none: XPCSession.InitializationOptions](xpcsession/initializationoptions/none.md)
+- [static let none: XPCSession.InitializationOptions](xpcsession/initializationoptions/none.md)
   Indicates that the listener uses a default configuration during creation.
 
 

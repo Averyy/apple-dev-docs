@@ -1,6 +1,6 @@
 # xpc_array_set_value(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Inserts the specified object into the array at the specified index.

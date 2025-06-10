@@ -40,12 +40,16 @@ See [`Simplifying GPU Resource Management with Residency Sets`](simplifying-gpu-
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 ### Inherited By
+- [MTL4MachineLearningPipelineState](mtl4machinelearningpipelinestate.md)
 - [MTLAccelerationStructure](mtlaccelerationstructure.md)
 - [MTLBuffer](mtlbuffer.md)
+- [MTLComputePipelineState](mtlcomputepipelinestate.md)
 - [MTLHeap](mtlheap.md)
 - [MTLIndirectCommandBuffer](mtlindirectcommandbuffer.md)
 - [MTLIntersectionFunctionTable](mtlintersectionfunctiontable.md)
+- [MTLRenderPipelineState](mtlrenderpipelinestate.md)
 - [MTLResource](mtlresource.md)
+- [MTLTensor](mtltensor.md)
 - [MTLTexture](mtltexture.md)
 - [MTLVisibleFunctionTable](mtlvisiblefunctiontable.md)
 

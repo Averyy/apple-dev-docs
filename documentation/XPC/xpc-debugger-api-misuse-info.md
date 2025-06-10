@@ -1,6 +1,6 @@
 # xpc_debugger_api_misuse_info()
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns a pointer to a string that describes the reason XPC aborts the calling process.

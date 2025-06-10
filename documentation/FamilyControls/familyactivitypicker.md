@@ -1,6 +1,6 @@
 # FamilyActivityPicker
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: struct
 
 A view in which users specify applications, web domains, and categories without revealing their choices to the app.
@@ -97,6 +97,7 @@ Your app passes the selected values to the appropriate instances and methods fro
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also
@@ -107,4 +108,4 @@ Your app passes the selected values to the appropriate instances and methods fro
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/FamilyControls/familyactivitypicker)*
+*[View on Apple Developer](https://developer.apple.com/documentation/familycontrols/familyactivitypicker)*

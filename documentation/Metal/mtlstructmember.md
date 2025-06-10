@@ -45,6 +45,9 @@ Don’t create [`MTLStructMember`](mtlstructmember.md) objects directly. You obt
   Provides a description of the underlying pointer when the struct member holds a pointer.
 - [func textureReferenceType() -> MTLTextureReferenceType?](mtlstructmember/texturereferencetype.md)
   Provides a description of the underlying texture when the struct member holds a texture.
+### Instance Methods
+- [func tensorReferenceType() -> MTLTensorReferenceType?](mtlstructmember/tensorreferencetype.md)
+  Provides a description of the underlying tensor type when this struct member holds a tensor.
 
 ## Relationships
 

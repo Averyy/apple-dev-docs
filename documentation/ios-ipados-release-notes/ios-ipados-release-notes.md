@@ -16,6 +16,9 @@ When writing your report, please include the full version number in the title an
 
 ## Topics
 
+### iOS & iPadOS 26
+- [iOS & iPadOS 26 Beta Release Notes](ios-ipados-26-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 ### iOS & iPadOS 18
 - [iOS & iPadOS 18.5 Release Notes](ios-ipados-18_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

@@ -64,6 +64,7 @@ It will crash on any attempt of remote communication, but can be useful for lear
 ### Conforms To
 - [DistributedActorSystem](distributedactorsystem.md)
 - [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

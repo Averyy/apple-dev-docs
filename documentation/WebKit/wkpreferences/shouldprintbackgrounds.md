@@ -1,6 +1,6 @@
 # shouldPrintBackgrounds
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether to include any background color or graphics when printing content.

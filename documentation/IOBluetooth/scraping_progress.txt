@@ -1,4 +1,4 @@
 Completed scraping IOBluetooth!
-Total pages scraped: 0
-Pages skipped (unchanged): 2
+Total pages scraped: 3881
+Pages skipped (unchanged): 4
 Pages failed: 0

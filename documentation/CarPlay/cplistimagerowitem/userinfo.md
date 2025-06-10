@@ -13,6 +13,7 @@ An opaque value for the list item.
 ## Declaration
 
 ```swift
+@MainActor
 var userInfo: Any? { get set }
 ```
 

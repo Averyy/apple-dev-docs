@@ -1,6 +1,6 @@
 # NSAdvertisingAttributionReportEndpoint
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 The URL where Private Click Measurement and SKAdNetwork send attribution information.

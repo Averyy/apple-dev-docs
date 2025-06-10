@@ -1,6 +1,6 @@
 # XCTKVOExpectation
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An expectation that a specific key-value observing (KVO) condition fulfills.
@@ -60,6 +60,7 @@ Apple discourages the use of this symbol in Swift. Use [`XCTKeyPathExpectation`]
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

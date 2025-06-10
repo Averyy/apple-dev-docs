@@ -1,6 +1,6 @@
 # serviceSubscriberCellularProviders
 
-**Framework**: Coretelephony  
+**Framework**: Core Telephony  
 **Kind**: property
 
 A dictionary that contains carrier information about each service.
@@ -34,7 +34,7 @@ Although the actual value of a key isn’t important, you can also use it to get
   A block dispatched when the user’s cellular service provider information changes.
 - [var serviceSubscriberCellularProvidersDidUpdateNotifier: ((String) -> Void)?](cttelephonynetworkinfo/servicesubscribercellularprovidersdidupdatenotifier.md)
   A block dispatched when there are updates to the user’s cellular provider information for any service.
-- [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](../foundation/nsnotification/name/1616908-ctradioaccesstechnologydidchange.md)
+- [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/CTRadioAccessTechnologyDidChange.md)
   The name of the notification indicating that the radio access technology changed for one of the services.
 
 

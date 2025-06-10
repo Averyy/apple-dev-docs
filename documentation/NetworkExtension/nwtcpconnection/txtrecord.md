@@ -25,8 +25,6 @@ When the connection is connected to a Bonjour service endpoint, the TXT record a
 
 > ❗ **Important**:  Note that the value comes from an untrusted network source. Care must be taken when parsing this potentially malicious value.
 
- Note that the value comes from an untrusted network source. Care must be taken when parsing this potentially malicious value.
-
 ## See Also
 
 - [var endpoint: NWEndpoint](nwtcpconnection/endpoint.md)

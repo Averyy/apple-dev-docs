@@ -8,8 +8,8 @@ The styles to apply to buttons you use to open your app’s page in the Shortcut
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
-- visionOS 1.0+
+- Mac Catalyst ?+
+- visionOS ?+
 
 ## Declaration
 
@@ -28,7 +28,6 @@ Specify a [`ShortcutsLinkStyle`](shortcutslinkstyle.md) value when you add a [`S
   The default button style, based on the current color scheme.
 - [static let automaticOutline: ShortcutsLinkStyle](shortcutslinkstyle/automaticoutline.md)
   The default button style with an outline, based on the current color scheme.
-### Type Properties
 - [static let dark: ShortcutsLinkStyle](shortcutslinkstyle/dark.md)
   A button style that applies a dark background with light text.
 - [static let darkOutline: ShortcutsLinkStyle](shortcutslinkstyle/darkoutline.md)

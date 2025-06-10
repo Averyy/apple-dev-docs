@@ -6,7 +6,7 @@
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -32,6 +32,7 @@ struct IntentSchema
 - [ReaderIntent Implementations](assistantschema/intentschema/readerintent-implementations.md)
 - [SpreadsheetIntent Implementations](assistantschema/intentschema/spreadsheetintent-implementations.md)
 - [SystemIntent Implementations](assistantschema/intentschema/systemintent-implementations.md)
+- [VisualIntelligenceIntent Implementations](assistantschema/intentschema/visualintelligenceintent-implementations.md)
 - [WhiteboardIntent Implementations](assistantschema/intentschema/whiteboardintent-implementations.md)
 - [WordProcessorIntent Implementations](assistantschema/intentschema/wordprocessorintent-implementations.md)
 
@@ -51,6 +52,7 @@ struct IntentSchema
 - [AssistantSchemas.ReaderIntent](assistantschemas/readerintent.md)
 - [AssistantSchemas.SpreadsheetIntent](assistantschemas/spreadsheetintent.md)
 - [AssistantSchemas.SystemIntent](assistantschemas/systemintent.md)
+- [AssistantSchemas.VisualIntelligenceIntent](assistantschemas/visualintelligenceintent.md)
 - [AssistantSchemas.WhiteboardIntent](assistantschemas/whiteboardintent.md)
 - [AssistantSchemas.WordProcessorIntent](assistantschemas/wordprocessorintent.md)
 - [Copyable](../Swift/Copyable.md)

@@ -1,6 +1,6 @@
 # CMAbsoluteAltitudeHandler
 
-**Framework**: Coremotion  
+**Framework**: Core Motion  
 **Kind**: typealias
 
 A block for receiving absolute altitude data.
@@ -45,4 +45,4 @@ You pass a block of this type to the altimeter object’s [`startAbsoluteAltitud
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreMotion/cmabsolutealtitudehandler)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coremotion/cmabsolutealtitudehandler)*

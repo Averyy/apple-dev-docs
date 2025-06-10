@@ -1,6 +1,6 @@
 # Creating NFC Tags from Your iPhone
 
-**Framework**: Corenfc
+**Framework**: Core NFC
 
 Save data to tags, and interact with them using native tag protocols.
 
@@ -33,4 +33,4 @@ Save data to tags, and interact with them using native tag protocols.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreNFC/creating-nfc-tags-from-your-iphone)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corenfc/creating-nfc-tags-from-your-iphone)*

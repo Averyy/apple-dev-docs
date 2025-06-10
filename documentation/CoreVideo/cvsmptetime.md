@@ -24,7 +24,8 @@ struct CVSMPTETime
 
 ### Initializers
 - [init()](cvsmptetime/init.md)
-- [init(subframes: Int16, subframeDivisor: Int16, counter: UInt32, type: UInt32, flags: UInt32, hours: Int16, minutes: Int16, seconds: Int16, frames: Int16)](cvsmptetime/init(subframes:subframedivisor:counter:type:flags:hours:minutes:seconds:frames:).md)
+- [init(subframes: Int16, subframeDivisor: Int16, counter: UInt32, type: UInt32, flags: UInt32, hours: Int16, minutes: Int16, seconds: Int16, frames: Int16)](cvsmptetime/init(subframes:subframedivisor:counter:type:flags:hours:minutes:seconds:frames:)-4yakl.md)
+- [init(subframes: Int16, subframeDivisor: Int16, counter: UInt32, type: CVSMPTETimeType, flags: CVSMPTETimeFlags, hours: Int16, minutes: Int16, seconds: Int16, frames: Int16)](cvsmptetime/init(subframes:subframedivisor:counter:type:flags:hours:minutes:seconds:frames:)-7s092.md)
 ### Properties
 - [var counter: UInt32](cvsmptetime/counter.md)
   The total number of messages received.
@@ -44,12 +45,18 @@ struct CVSMPTETime
   The number of subframes in the full message.
 - [var type: UInt32](cvsmptetime/type.md)
   The kind of SMPTE time type.
+### Instance Properties
+- [var flagOptions: CVSMPTETimeFlags](cvsmptetime/flagoptions.md)
+  `CVSMPTETimeFlags` representation of `CVSMPTETime.flags`
+- [var typeOptions: CVSMPTETimeType](cvsmptetime/typeoptions.md)
+  `CVSMPTETimeType` representation of `CVSMPTETime.type`
 
 ## Relationships
 
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

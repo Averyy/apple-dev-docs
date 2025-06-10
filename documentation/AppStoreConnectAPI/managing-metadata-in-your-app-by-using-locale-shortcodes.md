@@ -6,7 +6,7 @@ Optimize your app’s user experience by adding localized metadata with App Stor
 
 #### Overview
 
-The App Store is available in 175 regions and 40 languages to make it easy for users around the world to discover and download your app. Localizing your app helps make it relevant to a variety of cultures and languages, and provides an opportunity to grow your business. Use these locale short codes to manage localized metadata with App Store Connect API.
+The App Store is available in 175 regions and 39 languages to make it easy for users around the world to discover and download your app. Localizing your app helps make it relevant to a variety of cultures and languages, and provides an opportunity to grow your business. Use these locale short codes to manage localized metadata with App Store Connect API.
 
 This table describes the localized languages and locale shortcode you use in App Store Connect API when you configure metadata.
 

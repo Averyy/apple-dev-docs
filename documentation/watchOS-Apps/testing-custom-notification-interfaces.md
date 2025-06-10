@@ -1,6 +1,6 @@
 # Testing custom notification interfaces
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Test your notification interfaces on watchOS using a notification scheme and payload file.
 

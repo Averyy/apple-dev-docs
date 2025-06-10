@@ -1,14 +1,14 @@
 # Register a Pass for Update Notifications
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: httpRequest
 
 Set up change notifications for a pass on a device.
 
 **Availability**:
 - iOS 10.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 10.0+
+- watchOS 3.0+
 
 ## Request Body
 

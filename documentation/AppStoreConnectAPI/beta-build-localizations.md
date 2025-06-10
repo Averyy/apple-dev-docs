@@ -17,6 +17,7 @@ A `betaBuildLocalizations` resource represents the localized content that appear
   Get a specific beta build localization resource.
 - [Read the Build Information of a Beta Build Localization](get-v1-betabuildlocalizations-_id_-build.md)
   Get the build information for a specific beta build localization.
+- [GET /v1/betaBuildLocalizations/{id}/relationships/build](get-v1-betabuildlocalizations-_id_-relationships-build.md)
 ### Creating, Modifying, and Deleting Beta Build Localizations
 - [Create a Beta Build Localization](post-v1-betabuildlocalizations.md)
   Create localized What’s New text for a build.
@@ -36,6 +37,7 @@ A `betaBuildLocalizations` resource represents the localized content that appear
   The request body you use to update a Beta Build Localization.
 - [object BetaBuildLocalizationsResponse](betabuildlocalizationsresponse.md)
   A response that contains a list of Beta Build Localization resources.
+- [object BetaBuildLocalizationBuildLinkageResponse](betabuildlocalizationbuildlinkageresponse.md)
 
 ## See Also
 

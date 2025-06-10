@@ -27,8 +27,6 @@ You create a reflection instance at the same time as the pipeline state that it 
 
 > ❗ **Important**:  Only create reflection instances if you need them because each one can require a significant amount of memory.
 
- Only create reflection instances if you need them because each one can require a significant amount of memory.
-
 For more information, see [`Pipeline State Creation`](pipeline-state-creation.md).
 
 ## Topics
@@ -63,6 +61,8 @@ For more information, see [`Pipeline State Creation`](pipeline-state-creation.md
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

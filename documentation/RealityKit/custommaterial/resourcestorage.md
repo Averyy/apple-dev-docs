@@ -10,6 +10,7 @@ A container for resources that will be encoded into a CustomMaterial’s custom 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -24,6 +25,7 @@ An object of this type is passed to you in the callback closure passed to [`with
 ## Topics
 
 ### Subscripts
+- [subscript<BufferType>(buffer _: KeyPath<UniformsType, UnsafeMutablePointer<BufferType>?>) -> LowLevelBuffer?](custommaterial/resourcestorage/subscript(buffer:).md)
 - [subscript(textureResource _: KeyPath<UniformsType, UInt64>) -> TextureResource](custommaterial/resourcestorage/subscript(textureresource:).md)
 
 ## See Also

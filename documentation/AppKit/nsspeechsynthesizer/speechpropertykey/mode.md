@@ -39,6 +39,7 @@ Use these keys in the [`inputMode`](nsspeechsynthesizer/speechpropertykey/inputm
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

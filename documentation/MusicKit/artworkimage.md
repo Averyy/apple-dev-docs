@@ -49,6 +49,7 @@ While the artwork’s image data is loading, [`ArtworkImage`](artworkimage.md) a
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

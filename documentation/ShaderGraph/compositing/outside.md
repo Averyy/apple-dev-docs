@@ -5,17 +5,25 @@
 
 Multiplies (1 - mask) to all channels of the input.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Parameter Descriptions
 
 #### Discussion
 
-Below is an example of a simple node graph that uses the Outside node to apply a mask to a brick texture.
+Below is an example of a simple node graph that uses the `Outside` node to apply a mask to a brick texture:
 
 ![None](https://docs-assets.developer.apple.com/published/fa72f1155b0049c8effbed2bbc869017/OutsideGraph.png)
 
-Below, the resulting texture applies to a cube.
+Below, the resulting texture applies to a cube:
 
 ![None](https://docs-assets.developer.apple.com/published/38b4a6a44aa78ba48dc64c3a582f6f37/OutsideMaterial.png)
 

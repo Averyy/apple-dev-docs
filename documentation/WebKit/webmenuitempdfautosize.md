@@ -1,6 +1,6 @@
 # WebMenuItemPDFAutoSize
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Display a PDF document at a user-specified size.

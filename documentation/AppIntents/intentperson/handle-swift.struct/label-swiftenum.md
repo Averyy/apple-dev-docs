@@ -8,10 +8,10 @@ A location description that applies to the handle’s content, for example a wor
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -33,11 +33,10 @@ enum Label
 - [IntentPerson.Handle.Label.school](intentperson/handle-swift.struct/label-swift.enum/school.md)
 - [IntentPerson.Handle.Label.work](intentperson/handle-swift.struct/label-swift.enum/work.md)
 - [IntentPerson.Handle.Label.workFax](intentperson/handle-swift.struct/label-swift.enum/workfax.md)
+- [IntentPerson.Handle.Label.custom(_:)](intentperson/handle-swift.struct/label-swift.enum/custom(_:).md)
 ### Operators
 - [static func == (IntentPerson.Handle.Label, IntentPerson.Handle.Label) -> Bool](intentperson/handle-swift.struct/label-swift.enum/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
-### Enumeration Cases
-- [IntentPerson.Handle.Label.custom(_:)](intentperson/handle-swift.struct/label-swift.enum/custom(_:).md)
 ### Instance Properties
 - [var hashValue: Int](intentperson/handle-swift.struct/label-swift.enum/hashvalue.md)
   The hash value.
@@ -58,6 +57,11 @@ enum Label
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var label: IntentPerson.Handle.Label](intentperson/handle-swift.struct/label-swift.property.md)
 
 
 ---

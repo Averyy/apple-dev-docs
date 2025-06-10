@@ -34,8 +34,8 @@ class MTRClusterHEPAFilterMonitoring
 - [func readAttributeInPlaceIndicator(with: MTRReadParams?) -> [String : Any]?](mtrclusterhepafiltermonitoring/readattributeinplaceindicator(with:).md)
 - [func readAttributeLastChangedTime(with: MTRReadParams?) -> [String : Any]?](mtrclusterhepafiltermonitoring/readattributelastchangedtime(with:).md)
 - [func readAttributeReplacementProductList(with: MTRReadParams?) -> [String : Any]?](mtrclusterhepafiltermonitoring/readattributereplacementproductlist(with:).md)
-- [func resetCondition(with: MTRHEPAFilterMonitoringClusterResetConditionParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterhepafiltermonitoring/resetcondition(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func resetCondition(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterhepafiltermonitoring/resetcondition(withexpectedvalues:expectedvalueinterval:completion:).md)
+- [func resetCondition(with: MTRHEPAFilterMonitoringClusterResetConditionParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterhepafiltermonitoring/resetcondition(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func resetCondition(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterhepafiltermonitoring/resetcondition(withexpectedvalues:expectedvalueinterval:completion:).md)
 - [func writeAttributeLastChangedTime(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterhepafiltermonitoring/writeattributelastchangedtime(withvalue:expectedvalueinterval:).md)
 - [func writeAttributeLastChangedTime(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterhepafiltermonitoring/writeattributelastchangedtime(withvalue:expectedvalueinterval:params:).md)
 

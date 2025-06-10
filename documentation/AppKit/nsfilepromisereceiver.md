@@ -1,6 +1,6 @@
 # NSFilePromiseReceiver
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An object that receives a file promise from the pasteboard.
@@ -65,4 +65,4 @@ Likewise, you can enumerate dragged items by calling the following:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsfilepromisereceiver)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsfilepromisereceiver)*

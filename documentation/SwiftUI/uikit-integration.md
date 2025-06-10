@@ -31,6 +31,8 @@ For design guidance, see the following sections in the Human Interface Guideline
   Options for how a hosting controller tracks its content’s size.
 - [struct UIHostingConfiguration](uihostingconfiguration.md)
   A content configuration suitable for hosting a hierarchy of SwiftUI views.
+- [protocol UIHostingSceneDelegate](uihostingscenedelegate.md)
+  Extends `UIKit/UISceneDelegate` to bridge SwiftUI scenes.
 ### Adding UIKit views to SwiftUI view hierarchies
 - [protocol UIViewRepresentable](uiviewrepresentable.md)
   A wrapper for a UIKit view that you use to integrate that view into your SwiftUI view hierarchy.
@@ -40,7 +42,7 @@ For design guidance, see the following sections in the Human Interface Guideline
   A view that represents a UIKit view controller.
 - [struct UIViewControllerRepresentableContext](uiviewcontrollerrepresentablecontext.md)
   Contextual information about the state of the system that you use to create and update your UIKit view controller.
-### Integrate gesture recognizer into SwiftUI view hierarchies
+### Adding UIKit gesture recognizers into SwiftUI view hierarchies
 - [protocol UIGestureRecognizerRepresentable](uigesturerecognizerrepresentable.md)
   A wrapper for a `UIGestureRecognizer` that you use to integrate that gesture recognizer into your SwiftUI hierarchy.
 - [struct UIGestureRecognizerRepresentableContext](uigesturerecognizerrepresentablecontext.md)
@@ -48,8 +50,7 @@ For design guidance, see the following sections in the Human Interface Guideline
 - [struct UIGestureRecognizerRepresentableCoordinateSpaceConverter](uigesturerecognizerrepresentablecoordinatespaceconverter.md)
   A proxy structure used to convert locations to/from coordinate spaces in the hierarchy of the SwiftUI view associated with a [`UIGestureRecognizerRepresentable`](uigesturerecognizerrepresentable.md).
 ### Sharing configuration information
-- [protocol UITraitBridgedEnvironmentKey](uitraitbridgedenvironmentkey.md)
-  An environment key that is bridged to a UIKit trait.
+- [typealias UITraitBridgedEnvironmentKey](uitraitbridgedenvironmentkey.md)
 ### Hosting an ornament in UIKit
 - [class UIHostingOrnament](uihostingornament.md)
   A model that represents an ornament suitable for being hosted in UIKit.

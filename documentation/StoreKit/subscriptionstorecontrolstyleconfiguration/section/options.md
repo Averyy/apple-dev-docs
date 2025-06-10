@@ -27,8 +27,6 @@ Use the properties of each [`SubscriptionStoreControlStyleConfiguration.Option`]
 
 > 💡 **Tip**:  Use [`SubscriptionOptionSection`](subscriptionoptionsection.md) to configure the contents of a section when creating a [`SubscriptionStoreView`](subscriptionstoreview.md).
 
- Use [`SubscriptionOptionSection`](subscriptionoptionsection.md) to configure the contents of a section when creating a [`SubscriptionStoreView`](subscriptionstoreview.md).
-
 
 ---
 

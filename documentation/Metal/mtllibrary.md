@@ -16,7 +16,7 @@ A collection of Metal shader functions.
 ## Declaration
 
 ```swift
-protocol MTLLibrary : NSObjectProtocol
+protocol MTLLibrary : NSObjectProtocol, Sendable
 ```
 
 ## Mentions
@@ -70,11 +70,16 @@ To create a [`MTLLibrary`](mtllibrary.md) by compiling source code at runtime, c
   The Metal device object that created the library.
 - [var label: String?](mtllibrary/label.md)
   A string that identifies the library.
+### Instance Methods
+- [func reflection(functionName: String) -> MTLFunctionReflection?](mtllibrary/reflection(functionname:).md)
+  Returns a reflection object for a matching function name in this library instance.
 
 ## Relationships
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

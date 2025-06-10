@@ -1,0 +1,37 @@
+# BetaCrashLog
+
+**Framework**: App Store Connect API  
+**Kind**: dictionary
+
+**Availability**:
+- App Store Connect API 4.0+
+
+## Declaration
+
+```swift
+object BetaCrashLog
+```
+
+## Topics
+
+### Dictionaries
+- [object BetaCrashLog.Attributes](betacrashlog/attributes-data.dictionary.md)
+  Attributes that describe a beta crash log resource.
+
+## See Also
+
+- [object BetaCrashLogResponse](betacrashlogresponse.md)
+  A response that contains a single beta crash log response resource.
+- [object BetaFeedbackCrashSubmission](betafeedbackcrashsubmission.md)
+  The data structure that represents a `BetaFeedbackCrashSubmission` resource.
+- [object BetaFeedbackCrashSubmissionResponse](betafeedbackcrashsubmissionresponse.md)
+  A response that contains a single `BetaFeedbackCrashSubmissionResponse` resource.
+- [object BetaFeedbackCrashSubmissionsResponse](betafeedbackcrashsubmissionsresponse.md)
+  A response that contains a list of `BetaFeedbackCrashSubmissionsResponse` resources.
+- [object BetaFeedbackCrashSubmissionCrashLogLinkageResponse](betafeedbackcrashsubmissioncrashloglinkageresponse.md)
+  A response that contains a single beta feedback crash submission crash log linkage response resource.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/betacrashlog)*

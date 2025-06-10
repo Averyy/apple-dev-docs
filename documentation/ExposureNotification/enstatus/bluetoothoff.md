@@ -1,6 +1,6 @@
 # ENStatus.bluetoothOff
 
-**Framework**: Exposurenotification  
+**Framework**: Exposure Notification  
 **Kind**: case
 
 Bluetooth is turned off.
@@ -42,4 +42,4 @@ Exposure Notification is a system service and can use Bluetooth in situations wh
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enstatus/bluetoothoff)*
+*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enstatus/bluetoothoff)*

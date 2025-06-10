@@ -1,6 +1,6 @@
 # CMWaterSubmersionManagerDelegate
 
-**Framework**: Coremotion  
+**Framework**: Core Motion  
 **Kind**: protocol
 
 A delegate that receives updates about ambient pressure, water pressure, water temperature, and submersion events.
@@ -62,4 +62,4 @@ The system sends measurement and temperature updates three times a second while 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreMotion/cmwatersubmersionmanagerdelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coremotion/cmwatersubmersionmanagerdelegate)*

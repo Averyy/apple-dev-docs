@@ -35,6 +35,25 @@ The following example allows the Swift package manager to select a version like 
 - `url`: The valid Git URL of the package.
 - `version`: The minimum version requirement.
 
+## See Also
+
+- [static func package(name: String?, url: String, Package.Dependency.Requirement) -> Package.Dependency](package/dependency/package(name:url:_:)-6k3na.md)
+  Adds a remote package dependency with a given version requirement.
+- [static func package(name: String, url: String, Range<Version>) -> Package.Dependency](package/dependency/package(name:url:_:)-nqbk.md)
+  Adds a package dependency starting with a specific minimum version, up to but not including a specified maximum version.
+- [static func package(name: String, url: String, ClosedRange<Version>) -> Package.Dependency](package/dependency/package(name:url:_:)-7zltl.md)
+  Adds a package dependency starting with a specific minimum version, going up to and including a specific maximum version.
+- [static func package(name: String, url: String, branch: String) -> Package.Dependency](package/dependency/package(name:url:branch:).md)
+  Adds a remote package dependency given a branch requirement.
+- [static func package(name: String, url: String, revision: String) -> Package.Dependency](package/dependency/package(name:url:revision:).md)
+  Adds a remote package dependency given a revision requirement.
+- [static func package(url: String, Package.Dependency.Requirement) -> Package.Dependency](package/dependency/package(url:_:)-4tkwi.md)
+  Adds a remote package dependency given a version requirement.
+- [var name: String?](package/dependency/name.md)
+  The name of the dependency.
+- [var url: String?](package/dependency/url.md)
+  The Git URL of the package dependency.
+
 
 ---
 

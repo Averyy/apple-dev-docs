@@ -1,6 +1,6 @@
 # webView(_:dragDestinationActionMaskFor:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a mask indicating which drag operations are allowed by the sender.

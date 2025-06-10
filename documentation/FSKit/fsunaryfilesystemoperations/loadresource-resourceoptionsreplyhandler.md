@@ -12,7 +12,7 @@ Requests that the file system load a resource and present it as a volume.
 ## Declaration
 
 ```swift
-func loadResource(resource: FSResource, options: FSTaskOptions, replyHandler: @escaping (FSVolume?, (any Error)?) -> Void)
+func loadResource(resource: FSResource, options: FSTaskOptions) async throws -> FSVolume
 ```
 
 #### Discussion
@@ -23,7 +23,7 @@ Implement this method by inspecting the provided resource and verifying it uses 
 
 - `resource`: An   to load.
 - `options`: An   object specifying options to apply when loading the resource. An   supports two options:   for “force” and   for read-only. The file system must remember if the read-only option is present.
-- `replyHandler`: A block or closure that your implementation invokes when it finishes setting up or encounters an error. Pass a subclass of   as the first parameter if loading succeeds. If loading fails, pass an error as the second parameter.
+- `reply`: A block or closure that your implementation invokes when it finishes setting up or encounters an error. Pass a subclass of   as the first parameter if loading succeeds. If loading fails, pass an error as the second parameter.
 
 ## See Also
 

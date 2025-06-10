@@ -1,6 +1,6 @@
 # withKnownIssue(_:isIntermittent:isolation:sourceLocation:_:when:matching:)
 
-**Framework**: Testing  
+**Framework**: Swift Testing  
 **Kind**: func
 
 Invoke a function that has a known issue that is expected to occur during its execution.
@@ -30,7 +30,7 @@ func withKnownIssue(_ comment: Comment? = nil, isIntermittent: Bool = false, iso
 
 > **Note**: Whatever is thrown by `body`, unless it is matched by `issueMatcher`.
 
-Use this function when a test is known to raise one or more issues that should not cause the test to fail, or if a precondition affects whether issues are known to occur. For example:
+Use this function when a test is known to record one or more issues that should not cause the test to fail, or if a precondition affects whether issues are known to occur. For example:
 
 ```swift
 @Test func example() async throws {
@@ -60,6 +60,8 @@ It is not necessary to specify both `precondition` and `issueMatcher` if only on
 
 ## See Also
 
+- [Known issues](known-issues.md)
+  Mark issues as known when running tests.
 - [func withKnownIssue(Comment?, isIntermittent: Bool, sourceLocation: SourceLocation, () throws -> Void)](withknownissue(_:isintermittent:sourcelocation:_:).md)
   Invoke a function that has a known issue that is expected to occur during its execution.
 - [func withKnownIssue(Comment?, isIntermittent: Bool, isolation: isolated (any Actor)?, sourceLocation: SourceLocation, () async throws -> Void) async](withknownissue(_:isintermittent:isolation:sourcelocation:_:).md)

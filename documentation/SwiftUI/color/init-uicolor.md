@@ -1,6 +1,6 @@
 # init(uiColor:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: init
 
 Creates a color from a UIKit color.

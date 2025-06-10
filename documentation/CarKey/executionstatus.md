@@ -41,6 +41,7 @@ An [`ExecutionStatus`](executionstatus.md) type wraps a code that indicates how 
 ### Conforms To
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

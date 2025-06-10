@@ -1,6 +1,6 @@
 # value
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The recorded baseline value for the condition in which the trend is comparing to.

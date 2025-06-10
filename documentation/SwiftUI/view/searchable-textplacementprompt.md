@@ -24,8 +24,8 @@ func searchable(text: Binding<String>, placement: SearchFieldPlacement = .automa
 ## Mentions
 
 - [Adding a search interface to your app](adding-a-search-interface-to-your-app.md)
-- [Suggesting search terms](suggesting-search-terms.md)
 - [Managing search interface activation](managing-search-interface-activation.md)
+- [Suggesting search terms](suggesting-search-terms.md)
 
 #### Discussion
 

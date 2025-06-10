@@ -1,6 +1,6 @@
 # forwardItem
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The item that follows the current item in the back-forward list.

@@ -13,6 +13,7 @@ A representation of a sports team for the now playing screen, in sports that hav
 ## Declaration
 
 ```swift
+@MainActor
 class CPNowPlayingSportsTeam
 ```
 
@@ -48,6 +49,7 @@ class CPNowPlayingSportsTeam
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # downloadDidFinish(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the delegate that the download finished.

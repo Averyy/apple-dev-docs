@@ -1,6 +1,6 @@
 # browserUserInterfaceStyle
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The visual style for the document browser.

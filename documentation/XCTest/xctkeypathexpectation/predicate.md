@@ -1,6 +1,6 @@
 # XCTKeyPathExpectation.Predicate
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: typealias
 
 A function the key path expectation uses to test the value of an observed property.

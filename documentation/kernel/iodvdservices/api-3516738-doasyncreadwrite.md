@@ -1,0 +1,18 @@
+# doAsyncReadWrite
+
+**Framework**: Kernel  
+**Kind**: instm
+
+**Availability**:
+- macOS 10.15.2+
+
+## Declaration
+
+```swift
+virtual IOReturn doAsyncReadWrite(IOMemoryDescriptor *buffer, UInt64 block, UInt64 nblks, IOStorageAttributes *attributes, IOStorageCompletion *completion);
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/iodvdservices/3516738-doasyncreadwrite)*

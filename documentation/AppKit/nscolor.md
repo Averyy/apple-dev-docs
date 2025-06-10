@@ -178,6 +178,7 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 - [NSPasteboardWriting](nspasteboardwriting.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transferable](../CoreTransferable/Transferable.md)
 
 ## See Also

@@ -68,6 +68,7 @@ User interface frameworks like SwiftUI can use these attributes when presenting 
 - [FormatStyle](formatstyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_INTERVAL_1_HOUR
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A constant that represents a 1-hour time interval.

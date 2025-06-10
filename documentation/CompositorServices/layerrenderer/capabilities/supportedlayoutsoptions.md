@@ -6,6 +6,7 @@
 Options you can use to filter the supported layouts for a layer.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ struct SupportedLayoutsOptions
 ### Getting the options
 - [static let foveationEnabled: LayerRenderer.Capabilities.SupportedLayoutsOptions](layerrenderer/capabilities/supportedlayoutsoptions/foveationenabled.md)
   An option to request a layout that supports foveated rendering.
+### Type Properties
+- [static let progressiveImmersionEnabled: LayerRenderer.Capabilities.SupportedLayoutsOptions](layerrenderer/capabilities/supportedlayoutsoptions/progressiveimmersionenabled.md)
 
 ## Relationships
 

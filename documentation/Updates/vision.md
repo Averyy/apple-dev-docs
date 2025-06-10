@@ -8,6 +8,11 @@ Learn about important changes in Vision.
 
 Browse notable changes in [`Vision`](https://developer.apple.com/documentation/Vision).
 
+#### June 2025
+
+- Use [`DetectLensSmudgeRequest`](https://developer.apple.com/documentation/Vision/DetectLensSmudgeRequest) and [`SmudgeObservation`](https://developer.apple.com/documentation/Vision/SmudgeObservation) to detect a smudge with a confidence level in an image or video frame capture.
+- Use [`RecognizeDocumentsRequest`](https://developer.apple.com/documentation/Vision/RecognizeDocumentsRequest) and  [`DocumentObservation`](https://developer.apple.com/documentation/Vision/DocumentObservation) to scan a document and recieve detailed information about its structure and content.
+
 #### June 2024
 
 - Use the new Swift-only API that follows best design practices in Swift and leverages modern language features like Swift concurrency for optimal performance.
@@ -25,12 +30,16 @@ Browse notable changes in [`Vision`](https://developer.apple.com/documentation/V
   Learn about important changes in ActivityKit.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [App Intents updates](appintents.md)
   Learn about important changes in App Intents.
 - [AppKit updates](appkit.md)
   Learn about important changes to AppKit.
 - [Apple Intelligence updates](apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -43,10 +52,6 @@ Browse notable changes in [`Vision`](https://developer.apple.com/documentation/V
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
 
 
 ---

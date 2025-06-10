@@ -1,6 +1,6 @@
 # Authenticating Users with a Cryptographic Token
 
-**Framework**: Cryptotokenkit
+**Framework**: CryptoTokenKit
 
 Grant access to user accounts and the keychain by creating a smart card app extension.
 
@@ -73,4 +73,4 @@ The hosting app may in fact do nothing more than exit cleanly, but the act of ru
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CryptoTokenKit/authenticating-users-with-a-cryptographic-token)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cryptotokenkit/authenticating-users-with-a-cryptographic-token)*

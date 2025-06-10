@@ -1,6 +1,6 @@
 # isForMainFrame
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether the response targets the web view’s main frame.

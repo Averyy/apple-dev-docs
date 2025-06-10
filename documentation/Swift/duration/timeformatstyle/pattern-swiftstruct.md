@@ -51,6 +51,7 @@ Use the type properties [`hourMinute`](duration/timeformatstyle/pattern-swift.st
 - [Equatable](equatable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

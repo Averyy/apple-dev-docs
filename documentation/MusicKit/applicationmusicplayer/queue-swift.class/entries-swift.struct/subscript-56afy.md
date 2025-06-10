@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: subscript
 
 Accesses a view of this collection with the elements at the given indices.

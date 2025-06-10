@@ -21,22 +21,15 @@ You don’t instantiate this type directly, instead [`Model3D`](model3d.md) crea
 
 ## Topics
 
-### Instance Properties
-- [var body: some View](resolvedmodel3d/body-swift.property.md)
-  The content and behavior of the view.
 ### Instance Methods
 - [func resizable(Bool) -> ResolvedModel3D](resolvedmodel3d/resizable(_:).md)
   Allows this model to resize itself to fit its container.
-### Type Aliases
-- [ResolvedModel3D.Body](resolvedmodel3d/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Default Implementations
-- [View Implementations](resolvedmodel3d/view-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also
@@ -47,6 +40,8 @@ You don’t instantiate this type directly, instead [`Model3D`](model3d.md) crea
   The current phase of the asynchronous model loading operation.
 - [struct Model3DPlaceholderContent](model3dplaceholdercontent.md)
   A container view that presents either a 3D model or a placeholder for one.
+- [class Model3DAsset](model3dasset.md)
+  A container used to represent the asset loaded into the Model3D View.
 
 
 ---

@@ -1,6 +1,6 @@
 # Request authentication for WeatherKit REST API
 
-**Framework**: Weatherkitrestapi
+**Framework**: WeatherKit REST API
 
 Create a developer token to access weather data.
 
@@ -67,4 +67,4 @@ curl -v -H 'Authorization: Bearer [developer token]' "https://weatherkit.apple.c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WeatherKitRESTAPI/request-authentication-for-weatherkit-rest-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/weatherkitrestapi/request-authentication-for-weatherkit-rest-api)*

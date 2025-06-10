@@ -1,6 +1,6 @@
 # VTDecompressionSessionInvalidate(_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Tears down a decompression session.

@@ -35,8 +35,6 @@ The value of `readyForMoreMediaData` will often change from [`false`](https://de
 
 > ❗ **Important**:  This property does not support key-value observing.
 
- This property does not support key-value observing.
-
 ## See Also
 
 - [func requestMediaDataWhenReady(on: dispatch_queue_t, using: () -> Void)](avsamplebufferdisplaylayer/requestmediadatawhenready(on:using:).md)

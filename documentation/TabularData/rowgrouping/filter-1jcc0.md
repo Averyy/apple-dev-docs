@@ -1,6 +1,6 @@
 # filter(_:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns an array containing, in order, the elements of the sequence that satisfy the given predicate.

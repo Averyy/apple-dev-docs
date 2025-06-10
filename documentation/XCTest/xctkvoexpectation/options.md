@@ -1,6 +1,6 @@
 # options
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The key-value observing options the expectation uses when registering for observation.

@@ -1,6 +1,6 @@
 # GoogleAccount
 
-**Framework**: Devicemanagement  
+**Framework**: Device Management  
 **Kind**: dictionary
 
 The payload you use to configure a Google account.
@@ -9,8 +9,6 @@ The payload you use to configure a Google account.
 - iOS 9.3+
 - iPadOS 9.3+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -32,17 +30,17 @@ The payload never contains credentials; the system prompts the user to enter cre
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS |
-| User Channel | Shared iPad |
-| Allow Manual Install | iOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS |
-| Allow Multiple Payloads | iOS, Shared iPad |
+| Device channel | iOS, visionOS |
+| User channel | Shared iPad |
+| Allow manual install | iOS, visionOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, visionOS |
+| Allow multiple payloads | iOS, Shared iPad, visionOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -82,7 +80,7 @@ The payload never contains credentials; the system prompts the user to enter cre
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object GoogleAccount.CommunicationServiceRules](googleaccount/communicationservicerules-data.dictionary.md)
   The communication service handler rules for this account.
 
@@ -104,4 +102,4 @@ The payload never contains credentials; the system prompts the user to enter cre
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/googleaccount)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/googleaccount)*

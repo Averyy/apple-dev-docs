@@ -10,7 +10,7 @@ Modifies the fonts of all child views to use fixed-width digits, if possible, wh
 - iPadOS 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 8.0+
 
 ## Declaration

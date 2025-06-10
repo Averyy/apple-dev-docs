@@ -1,14 +1,14 @@
 # PassFields.AdditionalInfoFields
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
-An object that represents fields that display in the Additional Info section below a pass
+An object that represents fields that display in the Additional Info section below a pass.
 
 **Availability**:
 - iOS 18.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 18.0+
+- watchOS 11.0+
 
 ## Declaration
 

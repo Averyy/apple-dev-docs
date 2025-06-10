@@ -8,7 +8,7 @@ An instance of `ALAssetsLibrary` provides access to the videos and photos that a
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 14.0+
 
 ## Declaration
 
@@ -19,10 +19,6 @@ class ALAssetsLibrary
 #### Overview
 
 > ❗ **Important**:  The Assets Library framework is deprecated as of iOS 9.0. Instead, use the Photos framework instead, which in iOS 8.0 and later provides more features and better performance for working with a user’s photo library. For more information, see `Photos`. In the Photos framework, the [`PHPhotoLibrary`](https://developer.apple.com/documentation/Photos/PHPhotoLibrary) class manages access to and changes in the photo library, and class methods on the [`PHAsset`](https://developer.apple.com/documentation/Photos/PHAsset) and [`PHCollection`](https://developer.apple.com/documentation/Photos/PHCollection) classes and related classes provide functionality for finding photo and video assets.
-
- The Assets Library framework is deprecated as of iOS 9.0. Instead, use the Photos framework instead, which in iOS 8.0 and later provides more features and better performance for working with a user’s photo library. For more information, see `Photos`.
-
-In the Photos framework, the [`PHPhotoLibrary`](https://developer.apple.com/documentation/Photos/PHPhotoLibrary) class manages access to and changes in the photo library, and class methods on the [`PHAsset`](https://developer.apple.com/documentation/Photos/PHAsset) and [`PHCollection`](https://developer.apple.com/documentation/Photos/PHCollection) classes and related classes provide functionality for finding photo and video assets.
 
 The library includes those that are in the Saved Photos album, those coming from iTunes, and those that were directly imported into the device. You use it to retrieve the list of all asset groups and to save images and videos into the Saved Photos album.
 
@@ -52,15 +48,15 @@ Many of the methods declared by `ALAssetsLibrary` take blocks for failure and su
   Invokes a given block passing as a parameter each of the asset groups that match the given asset group type.
 - [func enumerateGroupsWithTypes(UInt32, usingBlock: ALAssetsLibraryGroupsEnumerationResultsBlock!, failureBlock: ALAssetsLibraryAccessFailureBlock!)](alassetslibrary/enumerategroupswithtypes(_:usingblock:failureblock:).md)
 ### Saving Assets
-- [func writeVideoAtPath(toSavedPhotosAlbum: URL!, completionBlock: ALAssetsLibraryWriteVideoCompletionBlock!)](alassetslibrary/writevideoatpath(tosavedphotosalbum:completionblock:).md)
+- [func writeVideoAtPath(toSavedPhotosAlbum: URL!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alassetslibrary/writevideoatpath(tosavedphotosalbum:completionblock:).md)
   Saves a video identified by a given URL to the Saved Photos album.
 - [func videoAtPathIs(compatibleWithSavedPhotosAlbum: URL!) -> Bool](alassetslibrary/videoatpathis(compatiblewithsavedphotosalbum:).md)
   Returns a Boolean value that indicates whether a video identified by a given URL is compatible with the Saved Photos album.
-- [func writeImage(toSavedPhotosAlbum: CGImage!, orientation: ALAssetOrientation, completionBlock: ALAssetsLibraryWriteImageCompletionBlock!)](alassetslibrary/writeimage(tosavedphotosalbum:orientation:completionblock:).md)
+- [func writeImage(toSavedPhotosAlbum: CGImage!, orientation: ALAssetOrientation, completionBlock: ((URL?, (any Error)?) -> Void)!)](alassetslibrary/writeimage(tosavedphotosalbum:orientation:completionblock:).md)
   Saves a given image to the Saved Photos album.
-- [func writeImageData(toSavedPhotosAlbum: Data!, metadata: [AnyHashable : Any]!, completionBlock: ALAssetsLibraryWriteImageCompletionBlock!)](alassetslibrary/writeimagedata(tosavedphotosalbum:metadata:completionblock:).md)
+- [func writeImageData(toSavedPhotosAlbum: Data!, metadata: [AnyHashable : Any]!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alassetslibrary/writeimagedata(tosavedphotosalbum:metadata:completionblock:).md)
   Writes given image data and metadata to the Photos Album.
-- [func writeImage(toSavedPhotosAlbum: CGImage!, metadata: [AnyHashable : Any]!, completionBlock: ALAssetsLibraryWriteImageCompletionBlock!)](alassetslibrary/writeimage(tosavedphotosalbum:metadata:completionblock:).md)
+- [func writeImage(toSavedPhotosAlbum: CGImage!, metadata: [AnyHashable : Any]!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alassetslibrary/writeimage(tosavedphotosalbum:metadata:completionblock:).md)
   Writes a given image and metadata to the Photos Album.
 ### Managing Asset Groups
 - [func addAssetsGroupAlbum(withName: String!, resultBlock: ALAssetsLibraryGroupResultBlock!, failureBlock: ALAssetsLibraryAccessFailureBlock!)](alassetslibrary/addassetsgroupalbum(withname:resultblock:failureblock:).md)
@@ -95,7 +91,7 @@ Many of the methods declared by `ALAssetsLibrary` take blocks for failure and su
 - [Error Codes](error-codes.md)
   AssetsLibrary-related error codes
 ### Notifications
-- [static let ALAssetsLibraryChanged: NSNotification.Name](../foundation/nsnotification/name/1617908-alassetslibrarychanged.md)
+- [static let ALAssetsLibraryChanged: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/ALAssetsLibraryChanged.md)
   Sent when the contents of the assets library have changed from under the app that is using the data.
 
 ## Relationships

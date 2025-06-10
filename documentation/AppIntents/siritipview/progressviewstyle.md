@@ -10,7 +10,7 @@ Sets the style for progress views in this view.
 - iPadOS 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 7.0+
 
 ## Declaration

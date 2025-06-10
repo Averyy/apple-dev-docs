@@ -1,6 +1,6 @@
 # dataSource
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The committed data source.

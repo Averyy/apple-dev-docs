@@ -1,6 +1,6 @@
 # webView(_:willDismissEditMenuWithAnimator:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the delegate that the web view is about to dismiss an edit menu.

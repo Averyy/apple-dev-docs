@@ -8,6 +8,7 @@ The command queue of a Metal device that creates the command buffer.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
 

@@ -8,8 +8,9 @@ Prevents find and replace operations in a text editor.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
-- visionOS 1.0+
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- visionOS ?+
 
 ## Declaration
 

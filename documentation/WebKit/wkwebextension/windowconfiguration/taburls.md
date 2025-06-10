@@ -1,6 +1,6 @@
 # tabURLs
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the URLs that the window should initially load as tabs.

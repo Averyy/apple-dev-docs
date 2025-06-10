@@ -11,7 +11,7 @@ Returns the duration of the track, disregarding edits.
 ## Declaration
 
 ```swift
-var uneditedDuration: CMTime { get async throws }
+optional func uneditedDuration() async throws -> CMTime
 ```
 
 #### Discussion

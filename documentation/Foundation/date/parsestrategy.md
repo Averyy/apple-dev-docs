@@ -44,6 +44,7 @@ struct ParseStrategy
 - [ParseStrategy](parsestrategy.md)
 - [RegexComponent](../Swift/RegexComponent.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

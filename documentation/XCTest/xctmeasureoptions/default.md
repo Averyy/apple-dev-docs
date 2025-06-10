@@ -1,6 +1,6 @@
 # default
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The default measurement options.

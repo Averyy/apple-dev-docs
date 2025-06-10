@@ -10,6 +10,7 @@ A Boolean that indicates whether the entity and all of its ancestors are enabled
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

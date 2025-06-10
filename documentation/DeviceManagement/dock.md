@@ -7,8 +7,6 @@ The payload you use to configure the dock.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,17 +22,17 @@ Specify `com.apple.dock` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | macOS |
-| Allow Manual Install | macOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | macOS |
+| User channel | macOS |
+| Allow manual install | macOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -119,10 +117,6 @@ Specify `com.apple.dock` as the payload type.
 ### Objects
 - [object Dock.StaticItem](dock/staticitem.md)
   Items that are located on the Documents side of the Dock and cannot be removed from that location.
-- [object Dock.StaticItem.Tile-data](dock/staticitem/tile-data-data.dictionary.md)
-  The dictionary that contains details about a dock item.
-- [object Dock.StaticItem.Tile-data.File-data](dock/staticitem/tile-data-data.dictionary/file-data-data.dictionary.md)
-  For Apple use only.
 
 ## See Also
 

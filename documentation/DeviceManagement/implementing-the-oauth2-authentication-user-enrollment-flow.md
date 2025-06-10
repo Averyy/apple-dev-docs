@@ -1,47 +1,47 @@
-# Implementing the OAuth2 authentication user-enrollment flow
+# Implementing the OAuth 2 authentication account-driven enrollment flow
 
 **Framework**: Device Management
 
-Understand the steps of the OAuth2 flow between the user, client, server, and Apple services.
+Examine the steps between the user, client, server, and Apple services in the OAuth 2 flow.
 
 #### Overview
 
-To implement user enrollment, you must support a series of interactions between the user’s device and your MDM server. The diagrams below illustrates the interactions with the text describing the interactions in more detail.
+To implement account-driven enrollment, you need to support a series of interactions between the user’s device and your MDM server. The following diagrams illustrate the interactions, and the sections below detail each of the interaction steps.
 
-![A sequence diagram showing the first five interactions between the user, client, server, and Apple servers for OAuth2 authentication.](https://docs-assets.developer.apple.com/published/a73e53fb7a290c25f56fe61ed62a24f9/media-4091474%402x.png)
+![A sequence diagram showing the first five interactions between the user, client, server, and Apple servers for OAuth 2 authentication.](https://docs-assets.developer.apple.com/published/a73e53fb7a290c25f56fe61ed62a24f9/media-4091474%402x.png)
 
-To implement the OAuth2 flow, steps 1-4 are identical to the simple flow explained in [`Implementing the simple authentication user-enrollment flow`](implementing-the-simple-authentication-user-enrollment-flow.md).
+To implement the OAuth 2 flow, steps 1–4 are identical to the simple flow explained in [`Implementing the simple authentication account-driven enrollment flow`](implementing-the-simple-authentication-user-enrollment-flow.md).
 
-##### 401 Response
+##### Return the 401 Response
 
-In step 5 above, the server returns an `HTTP 401` response status to the client and includes a `WWW-Authenticate` response header. This response header must use the `Bearer` scheme and include the following parameters:
+In step 5, the server returns an `HTTP 401` response status to the client and includes a `WWW-Authenticate` response header. This response header needs to use the `Bearer` scheme and include the following parameters:
 
 | Name | Content |
 | --- | --- |
-| `method` | (Required) A string that must be `apple-oauth2`, defining the authentication protocol. |
-| `authorization-url` | (Required) The OAuth2 protocol authorization endpoint URL, for the initial ASWebAuthenticationSession HTTP request. The URL scheme must be `https`. |
-| `token-url` | (Required) The OAuth2 protocol token endpoint URL, for the token request. The URL scheme must be `https`. |
-| `redirect-url` | (Required) The OAuth2 protocol redirection endpoint URL, where the OAuth2 authorization request redirects to on success. Since the authorization request uses the [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) protocol, this URL scheme must be set to `apple-remotemanagement-user-login` and have a path component set to the server’s redirection endpoint. |
-| `client-id` | (Required) The OAuth2 protocol client identifier that the client must use in the OAuth2 authorization request. |
-| `scope` | The OAuth2 protocol access token scope the client must use in the OAuth2 authorization request. |
+| `method` | (Required) A string that needs to be `apple-oauth2`, defining the authentication protocol. |
+| `authorization-url` | (Required) The OAuth 2 protocol authorization endpoint URL for the initial `ASWebAuthenticationSession` HTTP request. The URL scheme needs to be `https`. |
+| `token-url` | (Required) The OAuth 2 protocol token endpoint URL for the token request. The URL scheme needs to be `https`. |
+| `redirect-url` | (Required) The OAuth 2 protocol redirection endpoint URL where the OAuth 2 authorization request redirects to on success. Because the authorization request uses the [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) protocol, the server needs to set this URL scheme to `apple-remotemanagement-user-login` and set a path component to the server’s redirection endpoint. |
+| `client-id` | (Required) The OAuth 2 protocol client identifier that the client needs to use in the OAuth 2 authorization request. |
+| `scope` | (Required) The OAuth 2 protocol access token scope the client needs to use in the OAuth 2 authorization request. |
 
-If the client’s enrollment request is invalid, the server returns a standard HTTP error response code (for example, 400 or 403) to halt the enrollment flow on the device. If the server’s response is invalid (for example, missing the `WWW-Authenticate` response header), then the system cancels the enrollment.
+If the client’s enrollment request is invalid, the server returns a standard HTTP error response code (for example, 400 or 403) to halt the enrollment flow on the device. If the server’s response is invalid (for example, missing the `WWW-Authenticate` response header), the system cancels the enrollment.
 
-![A sequence diagram showing interactions 6-11 between the user, client, server, and Apple servers for OAuth2 authentication.](https://docs-assets.developer.apple.com/published/28b776ef1f3d2b49cde6c822b6ae94f0/media-4091472%402x.png)
+##### Send the Authorization Request
 
-##### Authorization Request
+In steps 6–10, the client starts the OAuth 2 authorization grant flow with a public client type by constructing the authorization request URL from the parameters that return in the 401 response. It then adds a query item with the name `login_hint` and its value as the user account identifier that the user enters.
 
-In steps 6-10 above, the client starts the OAuth2 authorization grant flow by constructing the authorization request URL from the parameters returned in the 401 response, and adds a query item with the name `login_hint`, with its value set to the user account identifier entered by the user.
+![A sequence diagram showing interactions 6-11 between the user, client, server, and Apple servers for OAuth 2 authentication.](https://docs-assets.developer.apple.com/published/28b776ef1f3d2b49cde6c822b6ae94f0/media-4091472%402x.png)
 
-The client creates an [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) using the authorization request URL and a callback scheme set to `apple-remotemanagement-user-login`, and starts the session.
+The client creates an [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) using the authorization request URL and a callback scheme that it sets to `apple-remotemanagement-user-login`, and then starts the session.
 
-The authentication session does an `HTTPS GET` request for the OAuth2 authorization request URL, and includes the appropriate query parameters needed for the authorization code grant request. The device presents any resulting HTML data to the user in a web view.
+The authentication session performs an `HTTPS GET` request for the OAuth 2 authorization request URL, and includes the appropriate query parameters needed for the authorization code grant request. The device presents any resulting HTML data to the user in a web view.
 
-The OAuth2 authorization server responding to the request can pre-populate any user id form field by extracting the relevant items from the request’s `login_hint` query item. The server can also use that query item to customize the form based on the user name or domain portions of the user account identifier.
+The OAuth 2 authorization server responding to the request can prepopulate any user ID form field by extracting the relevant items from the request’s `login_hint` query item. The server can also use that query item to customize the form based on the user name or domain portions of the user account identifier.
 
-[`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) supports most types of browser based single sign-on, multi-factor, or federated authentication. There can be several round trips between the client and the authorization server to complete authentication.
+[`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) supports most types of browser-based single sign-on, multifactor, or federated authentication. There can be several round trips between the client and the authorization server to complete authentication.
 
-The user does have the option of canceling out of the web-view at any time, and that terminates the authentication flow and the enrollment.
+The user has the option of canceling out of the web view at any time, which terminates the authentication flow and the enrollment.
 
 ```swift
 <<<<< Request
@@ -63,9 +63,9 @@ Content-Length: 17643
 </html>
 ```
 
-##### Authorization Response
+##### Return the Authorization Response
 
-In step 11 above, the authentication session web flow completes when the server returns an HTTP 308 permanent redirect response to the client, with a `Location` header set to the `redirect-url` parameter value returned in step 5. The URL must also include the OAuth2 protocol `code` and `state` query items (note the client always sets a `state` parameter in its authorization request, so the server must always set it in the authorization response).
+In step 11, the authentication session web flow completes when the server returns an HTTP 308 permanent redirect response to the client, with a `Location` header that it sets to the `redirect-url` parameter value in step 5. The URL also needs to include the OAuth 2 protocol `code` and `state` query items (note the client sets a `state` parameter in its authorization request, so the server needs to set it in the authorization response).
 
 ```other
 <<<<< Request
@@ -90,13 +90,13 @@ Location: apple-remotemanagement-user-login:/oauth2/redirection
     ?code=Dek1jUOEcaIPGhbDrCTm9GDV5qT1sb&state=340B948D-A84A-45A3-AC45-C93195124B00
 ```
 
-![A sequence diagram showing interactions 12 and 13 between the user, client, server, and Apple servers for OAuth2 authentication.](https://docs-assets.developer.apple.com/published/a35a8a1b9c4a92b221ca627681a6fa5c/media-4091471%402x.png)
+##### Send the Token Request
 
-##### Token Request and Response
+In steps 12–13, the client makes a token access request to fetch the OAuth 2 access and (optional) refresh tokens, using the authorization grant code from step 11, along with other required OAuth 2 parameters. The client securely stores the tokens that the server returns, to use when authorizing subsequent requests to the server.
 
-In steps 12-13 above, the client then makes a token access request to fetch the OAuth2 access and (optional) refresh tokens, using the authorization grant code returned in step 11, along with other required OAuth2 parameters. The client securely stores the tokens returned by the server for use when authorizing subsequent requests to the server.
+![A sequence diagram showing interactions 12 and 13 between the user, client, server, and Apple servers for OAuth 2 authentication.](https://docs-assets.developer.apple.com/published/a35a8a1b9c4a92b221ca627681a6fa5c/media-4091471%402x.png)
 
-If authentication fails, the server should return an appropriate HTTP error response code that terminates the enrollment on the device.
+If authentication fails, the server needs to return an appropriate HTTP error response code that terminates the enrollment on the device.
 
 ```other
 <<<<< Request
@@ -123,11 +123,11 @@ Content-Type: application/json
 }
 ```
 
-![A sequence diagram showing interactions 14-20 between the user, client, server, and Apple servers for OAuth2 authentication.](https://docs-assets.developer.apple.com/published/6a9f1c4d34cfffc5b380b886414e97cb/media-4091473%402x.png)
+##### Attempt the Second Enrollment
 
-##### Second Enrollment Attempt to Enrollment
+In steps 14–21, the behavior is identical to the second enrollment attempt from the [`Implementing the simple authentication account-driven enrollment flow`](implementing-the-simple-authentication-user-enrollment-flow.md), with the client using the OAuth 2 access token value in the `Authorization` HTTP request header.
 
-In steps 14-21 above, the behavior is identical to the second enrollment attempt from the simple authentication protocol, with the client using the OAuth2 access token value in the `Authorization` HTTP request header.
+![A sequence diagram showing interactions 14–20 between the user, client, server, and Apple servers for OAuth 2 authentication.](https://docs-assets.developer.apple.com/published/6a9f1c4d34cfffc5b380b886414e97cb/media-4091473%402x.png)
 
 ```other
 Authorization: Bearer dXNlcm9hdXRo.MjZkNTkzZmMtNzk4MC00OWFkLTllZTAtZTA2NzhmNmVhNzg5
@@ -135,8 +135,10 @@ Authorization: Bearer dXNlcm9hdXRo.MjZkNTkzZmMtNzk4MC00OWFkLTllZTAtZTA2NzhmNmVhN
 
 ## See Also
 
-- [Implementing the simple authentication user-enrollment flow](implementing-the-simple-authentication-user-enrollment-flow.md)
-  Understand the steps of the authentication flow between the user, client, server, and Apple services.
+- [Implementing the simple authentication account-driven enrollment flow](implementing-the-simple-authentication-user-enrollment-flow.md)
+  Examine the steps between the user, client, server, and Apple services in the simple authentication flow.
+- [Implementing the Enrollment SSO flow](implementing-the-enrollment-sso-flow.md)
+  Examine the steps between the user, client, and server in the Enrollment SSO flow.
 
 
 ---

@@ -40,6 +40,7 @@ Don’t reuse the same nonce for multiple calls to encryption APIs. It’s criti
 ### Conforms To
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 

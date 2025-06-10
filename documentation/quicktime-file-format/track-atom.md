@@ -1,6 +1,6 @@
 # Track atom ('trak')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that defines a single track of a movie.

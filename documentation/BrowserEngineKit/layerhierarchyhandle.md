@@ -28,6 +28,12 @@ class LayerHierarchyHandle
   Creates a handle from a representation received in an XPC message.
 - [func createXPCRepresentation() -> xpc_object_t](layerhierarchyhandle/createxpcrepresentation.md)
   Creates an object representing this handle that you send to another process in an XPC message.
+### Initializers
+- [init(port: mach_port_t, data: Data) throws](layerhierarchyhandle/init(port:data:).md)
+  takes ownership of the port right (even if it returns nil).
+### Instance Methods
+- [func encode((mach_port_t, Data) -> Void)](layerhierarchyhandle/encode(_:).md)
+  passes a copy of the send right or `MACH_PORT_NULL` if inert. the receiver is responsible for disposing of `copiedPort`. the port and data should be consumed together and  once by `init(port:data:)`.
 
 ## Relationships
 
@@ -43,6 +49,7 @@ class LayerHierarchyHandle
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

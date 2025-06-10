@@ -54,4 +54,4 @@ After you add a cross-project reference, you can refer to the other project’s 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/managing-multiple-projects-and-their-dependencies)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/managing-multiple-projects-and-their-dependencies)*

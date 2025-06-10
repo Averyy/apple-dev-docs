@@ -3,15 +3,13 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to get a list of available operating-system updates.
+A response from the device after it processes the command to get a list of available operating-system updates for a device.
 
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
 - macOS 10.11+
 - tvOS 12.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,7 +19,7 @@ object AvailableOSUpdatesResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object AvailableOSUpdatesResponse.AvailableOSUpdatesItem](availableosupdatesresponse/availableosupdatesitem.md)
   The response dictionary that describes the available operating-system updates item.
 - [object AvailableOSUpdatesResponse.ErrorChainItem](availableosupdatesresponse/errorchainitem.md)
@@ -30,7 +28,7 @@ object AvailableOSUpdatesResponse
 ## See Also
 
 - [object AvailableOSUpdatesCommand](availableosupdatescommand.md)
-  The command to get a list of available operating-system updates.
+  The command to get a list of available operating-system updates for a device.
 
 
 ---

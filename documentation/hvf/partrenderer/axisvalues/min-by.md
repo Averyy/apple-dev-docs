@@ -1,6 +1,6 @@
 # min(by:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns the minimum element in the sequence, using the given predicate as the comparison between elements.

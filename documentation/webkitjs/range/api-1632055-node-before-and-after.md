@@ -1,6 +1,6 @@
 # NODE_BEFORE_AND_AFTER
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

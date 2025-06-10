@@ -1,6 +1,6 @@
 # tabsToLinks
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean that indicates whether or not the tab key will focus links.

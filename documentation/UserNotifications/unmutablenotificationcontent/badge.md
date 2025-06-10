@@ -1,6 +1,6 @@
 # badge
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The number that your app’s icon displays.

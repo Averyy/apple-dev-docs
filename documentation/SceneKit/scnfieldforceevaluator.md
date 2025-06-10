@@ -1,18 +1,18 @@
 # SCNFieldForceEvaluator
 
-**Framework**: Scenekit  
+**Framework**: SceneKit  
 **Kind**: typealias
 
 The signature for a block that SceneKit calls to determine the effect of a custom field on an object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.1+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 
@@ -38,4 +38,4 @@ Your block uses these parameters to compute and return an [`SCNVector3`](scnvect
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SceneKit/scnfieldforceevaluator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnfieldforceevaluator)*

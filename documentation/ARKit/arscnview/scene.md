@@ -1,6 +1,6 @@
 # scene
 
-**Framework**: Arkit  
+**Framework**: ARKit  
 **Kind**: property
 
 The SceneKit scene to be displayed in the view.
@@ -31,4 +31,4 @@ var scene: SCNScene { get set }
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/arscnview/scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arscnview/scene)*

@@ -95,6 +95,11 @@ For more about Core Foundation, see [`Core Foundation Design Concepts`](https://
 - [Core Foundation Functions](core-foundation-functions.md)
 - [Core Foundation Data Types](core-foundation-data-types.md)
 - [Core Foundation Macros](corefoundation-macros.md)
+### Variables
+- [let kCFURLUbiquitousItemIsSyncPausedKey: CFString!](kcfurlubiquitousitemissyncpausedkey.md)
+- [let kCFURLUbiquitousItemSupportedSyncControlsKey: CFString!](kcfurlubiquitousitemsupportedsynccontrolskey.md)
+### Functions
+- [func CFAttributedStringGetStatisticalWritingDirections(CFAttributedString!, CFRange, Int8, UnsafeMutablePointer<UInt8>!, UnsafeMutablePointer<UInt8>!) -> Bool](cfattributedstringgetstatisticalwritingdirections(_:_:_:_:_:).md)
 
 
 ---

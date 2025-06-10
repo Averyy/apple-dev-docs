@@ -343,6 +343,8 @@ When Writing Tools is active, it tracks changes to the text in your view. If you
   A data object that you use to share your custom view’s text with Writing Tools.
 - [NSWritingToolsCoordinator.AnimationParameters](nswritingtoolscoordinator/animationparameters.md)
   An object you use to configure additional tasks or animations to run alongside the Writing Tools animations.
+- [Enhancing your custom text engine with Writing Tools](enhancing-your-custom-text-engine-with-writing-tools.md)
+  Add Writing Tools support to your custom text engine to enhance the text editing experience.
 
 
 ---

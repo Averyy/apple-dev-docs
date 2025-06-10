@@ -29,6 +29,9 @@ object BundleIdsResponse
 - [object BundleIdResponse](bundleidresponse.md)
   A response that contains a single Bundle IDs resource.
 - [object BundleIdWithoutIncludesResponse](bundleidwithoutincludesresponse.md)
+- [object BundleIdAppLinkageResponse](bundleidapplinkageresponse.md)
+- [object BundleIdBundleIdCapabilitiesLinkagesResponse](bundleidbundleidcapabilitieslinkagesresponse.md)
+- [object BundleIdProfilesLinkagesResponse](bundleidprofileslinkagesresponse.md)
 
 
 ---

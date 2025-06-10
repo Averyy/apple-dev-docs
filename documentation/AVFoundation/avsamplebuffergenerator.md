@@ -30,7 +30,7 @@ Each request for `CMSampleBuffer` creation is described in an `AVSampleBufferReq
 - [init(asset: AVAsset, timebase: CMTimebase?)](avsamplebuffergenerator/init(asset:timebase:).md)
   Creates a new sample buffer generator.
 ### Creating a Sample Buffer
-- [func makeSampleBuffer(for: AVSampleBufferRequest) throws -> CMSampleBuffer](avsamplebuffergenerator/makesamplebuffer(for:).md)
+- [func makeSampleBuffer(for: AVSampleBufferRequest) throws -> sending CMSampleBuffer](avsamplebuffergenerator/makesamplebuffer(for:).md)
   Creates a sample buffer, and attempts to load its data asynchronously if requested.
 - [func makeBatch() -> AVSampleBufferGeneratorBatch](avsamplebuffergenerator/makebatch.md)
   Creates a batch object to handle generating multiple sample buffers.
@@ -54,6 +54,7 @@ Each request for `CMSampleBuffer` creation is described in an `AVSampleBufferReq
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

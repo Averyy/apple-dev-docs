@@ -27,8 +27,6 @@ Use this method to report changes that precisely intersect your context object�
 
 > ⚠️ **Warning**: Failure to call this method for a change can cause Writing Tools to deliver inaccurate information to your delegate and lead to data loss.
 
-Failure to call this method for a change can cause Writing Tools to deliver inaccurate information to your delegate and lead to data loss.
-
 ## Parameters
 
 - `range`: The range of text to replace. This range is relative to   the starting location of the specified context object’s text in   your view’s text storage. If you initialized the context object   with the entire contents of your view’s text storage, specify the   range of text you’re replacing in your text storage. However, if   you initialized the context object with only a portion of your   view’s text, specify a range that is relative to the starting   location of the context object’s text.

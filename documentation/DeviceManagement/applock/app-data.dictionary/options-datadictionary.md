@@ -6,11 +6,9 @@
 The dictionary of options to set for the app.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
+- iOS 7.0+
+- iPadOS 7.0+
 - tvOS 10.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

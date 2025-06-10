@@ -1,6 +1,6 @@
 # SRGB8_ALPHA8_EXT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

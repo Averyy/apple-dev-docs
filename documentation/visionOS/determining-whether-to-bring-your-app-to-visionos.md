@@ -1,6 +1,6 @@
 # Determining whether to bring your app to visionOS
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Decide whether to bring your existing iPadOS or iOS app to visionOS.
 
@@ -117,4 +117,4 @@ Here’s a list of frameworks and features that behave differently in visionOS:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/determining-whether-to-bring-your-app-to-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/determining-whether-to-bring-your-app-to-visionos)*

@@ -35,8 +35,6 @@ Always perform any necessary cleanup in the closure, because the method makes no
 
 > ⚠️ **Warning**: Your `body` closure must not replace `buffer`. This leads to a crash in all implementations of this method within the standard library.
 
-Your `body` closure must not replace `buffer`. This leads to a crash in all implementations of this method within the standard library.
-
 Successive calls to this method may provide a different pointer on each call. Don’t store `buffer` outside of this method.
 
 A `Collection` that provides its own implementation of this method must provide contiguous storage to its elements in the same order as they appear in the collection. This guarantees that it’s possible to generate contiguous mutable storage to any of its subsequences by slicing `buffer` with a range formed from the distances to the subsequence’s `startIndex` and `endIndex`, respectively.

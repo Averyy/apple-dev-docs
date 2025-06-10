@@ -1,6 +1,6 @@
 # networkState
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The state of downloading the media resource. (read-only)

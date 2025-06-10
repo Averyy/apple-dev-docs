@@ -83,8 +83,6 @@ For information on configuring the Buffer viewer to better interpret the data, s
 
 > 💡 **Tip**: You can use Option-Command-Control-click at any time in the scene view to quickly reveal the primitive in the structure outline.
 
-You can use Option-Command-Control-click at any time in the scene view to quickly reveal the primitive in the structure outline.
-
 ##### View Motion Data
 
 If your acceleration structure includes motion data, Xcode automatically shows additional motion data properties per-instance or per-geometry in the structure outline.

@@ -1,6 +1,6 @@
 # fileWrapper(configuration:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method  
 **Required**: Yes
 

@@ -14,6 +14,10 @@ The place information of an advanced App Clip experience.
 object AppClipAdvancedExperience.Attributes.Place
 ```
 
+## Mentions
+
+- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
+
 ## Topics
 
 ### Objects

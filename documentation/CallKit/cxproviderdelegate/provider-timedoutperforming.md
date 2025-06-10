@@ -45,6 +45,8 @@ An action that has already timed out should not be fulfilled or failed by the pr
   Called when the provider performs the specified set group call action.
 - [func provider(CXProvider, perform: CXPlayDTMFCallAction)](cxproviderdelegate/provider(_:perform:)-4htxt.md)
   Called when the provider performs the specified play DTMF (dual tone multifrequency) call action.
+- [func provider(CXProvider, perform: CXSetTranslatingCallAction)](cxproviderdelegate/provider(_:perform:)-43atg.md)
+  Called when the provider performs the specified set translation action.
 
 
 ---

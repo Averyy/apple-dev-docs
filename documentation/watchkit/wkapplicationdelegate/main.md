@@ -1,6 +1,6 @@
 # main()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Provides the top-level entry point for an app.

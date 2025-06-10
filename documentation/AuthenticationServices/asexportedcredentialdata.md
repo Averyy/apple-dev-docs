@@ -6,11 +6,11 @@
 A container for credential data that your app provides to an exporter or receives from an importer.
 
 **Availability**:
-- iOS 18.2+
-- iPadOS 18.2+
-- Mac Catalyst 18.2+
-- macOS 15.2+
-- visionOS 2.2+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -24,14 +24,21 @@ This type is a wrapper object for multiple [`ASImportableAccount`](asimportablea
 
 ## Topics
 
-### Creating a credential data instance
-- [init(accounts: [ASImportableAccount])](asexportedcredentialdata/init(accounts:).md)
-  Creates a credential data instance from an array of importable accounts.
 ### Accessing accounts
 - [var accounts: [ASImportableAccount]](asexportedcredentialdata/accounts.md)
   An array of importable accounts.
 - [struct ASImportableAccount](asimportableaccount.md)
   An account for use in importing and exporting credentials.
+### Initializers
+- [init(accounts: [ASImportableAccount], formatVersion: ASExportedCredentialData.FormatVersion, exporterRelyingPartyIdentifier: String, exporterDisplayName: String, timestamp: Date)](asexportedcredentialdata/init(accounts:formatversion:exporterrelyingpartyidentifier:exporterdisplayname:timestamp:).md)
+### Instance Properties
+- [let exporterDisplayName: String](asexportedcredentialdata/exporterdisplayname.md)
+- [let exporterRelyingPartyIdentifier: String](asexportedcredentialdata/exporterrelyingpartyidentifier.md)
+- [let formatVersion: ASExportedCredentialData.FormatVersion](asexportedcredentialdata/formatversion-swift.property.md)
+- [let timestamp: Date](asexportedcredentialdata/timestamp.md)
+### Enumerations
+- [ASExportedCredentialData.FormatVersion](asexportedcredentialdata/formatversion-swift.enum.md)
+  The Credential Exchange Format version for `ASExportedCredentialData`.
 
 ## Relationships
 
@@ -40,8 +47,8 @@ This type is a wrapper object for multiple [`ASImportableAccount`](asimportablea
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
-- [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -19,8 +19,6 @@ To create the consumable In-App Purchase, follow the instructions in [`Create co
 
 > 💡 **Tip**: Use the Reference name “Enabled for Advanced Commerce” when you create the In-App Purchases, to differentiate them from other products you define.
 
-Use the Reference name “Enabled for Advanced Commerce” when you create the In-App Purchases, to differentiate them from other products you define.
-
 Send the generic product identifiers that you create for Advanced Commerce to Apple using the Advanced Commerce API Access form on the [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/) page.
 
 Be sure to set the generic products’ availability for each storefront that you support. For more information, see [`Set availability for In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-in-app-purchases/set-availability-for-in-app-purchases) and [`Set availability for an auto-renewable subscription`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-availability-for-an-auto-renewable-subscription).

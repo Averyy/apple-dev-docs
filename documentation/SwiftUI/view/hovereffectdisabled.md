@@ -53,6 +53,12 @@ HStack {
   A Boolean value that indicates whether the view associated with this environment allows hover effects to be displayed.
 - [enum HoverPhase](hoverphase.md)
   The current hovering state and value of the pointer.
+- [struct HoverEffectPhaseOverride](hovereffectphaseoverride.md)
+  Options for overriding a hover effect’s current phase.
+- [struct OrnamentHoverContentEffect](ornamenthovercontenteffect.md)
+  Presents an ornament on hover using a custom effect.
+- [struct OrnamentHoverEffect](ornamenthovereffect.md)
+  Presents an ornament on hover.
 
 
 ---

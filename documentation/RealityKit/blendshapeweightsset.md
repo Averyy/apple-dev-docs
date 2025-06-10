@@ -10,6 +10,7 @@ A custom collection of named blend shape weights.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -51,14 +52,10 @@ The collection allows:
 - [func set(BlendShapeWeightsSet.Element) -> BlendShapeWeightsSet.Element?](blendshapeweightsset/set(_:).md)
   Updates a blend shape weights data instance in the set based on its name. If blend shape weights data with this ID does not exist, does nothing.
 ### Subscripts
-- [subscript(String) -> BlendShapeWeightsSet.Element?](blendshapeweightsset/subscript(_:)-707pw.md)
+- [subscript(_:)](blendshapeweightsset/subscript(_:).md)
   Accessor for reading a blend shape weights data in the set.
-### Type Aliases
-- [BlendShapeWeightsSet.Element](blendshapeweightsset/element.md)
-  A type representing the sequence’s elements.
 ### Default Implementations
 - [Collection Implementations](blendshapeweightsset/collection-implementations.md)
-- [Sequence Implementations](blendshapeweightsset/sequence-implementations.md)
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 # allowedScrollTypesMask
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A scroll type mask that enables recognition of scroll events.

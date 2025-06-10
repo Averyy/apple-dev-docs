@@ -19,9 +19,7 @@ To avoid performance issues, limit requests to 1000 devices at a time.
 - [object ProfileServiceRequest](profileservicerequest.md)
   The request for assigning a profile to a set of devices.
 - [object AssignProfileResponse](assignprofileresponse.md)
-  The response to assigning a profile to a set of devices.
 - [object AssignProfileResponse.Devices](assignprofileresponse/devices-data.dictionary.md)
-  A dictionary of device serial numbers mapped to the status of their profile assignment.
 
 ## Request Body
 

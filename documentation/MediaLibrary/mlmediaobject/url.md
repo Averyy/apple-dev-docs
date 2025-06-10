@@ -17,7 +17,7 @@ var url: URL? { get }
 
 #### Discussion
 
-This property is provided as a security-scoped URL. In order to gain access to the file that this URL refers to, the caller must call [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/1417051-startaccessingsecurityscopedreso) before and [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/1413736-stopaccessingsecurityscopedresou) after using the URL to access the file. For more information about security-scoped URLs, see [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL).
+This property is provided as a security-scoped URL. In order to gain access to the file that this URL refers to, the caller must call [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/startAccessingSecurityScopedResource()) before and [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/stopAccessingSecurityScopedResource()) after using the URL to access the file. For more information about security-scoped URLs, see [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL).
 
 ## See Also
 

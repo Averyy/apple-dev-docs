@@ -20,8 +20,6 @@ After you finish a transaction, don’t take any actions on it or do any work to
 
 > ❗ **Important**:  Don’t call the [`finishTransaction(_:)`](skpaymentqueue/finishtransaction(_:).md) method before the transaction is actually complete and attempt to use some other mechanism in your app to track the transaction as unfinished. StoreKit doesn’t function that way, and doing that prevents your app from downloading Apple-hosted content and can lead to other issues.
 
- Don’t call the [`finishTransaction(_:)`](skpaymentqueue/finishtransaction(_:).md) method before the transaction is actually complete and attempt to use some other mechanism in your app to track the transaction as unfinished. StoreKit doesn’t function that way, and doing that prevents your app from downloading Apple-hosted content and can lead to other issues.
-
 ## See Also
 
 - [Unlocking purchased content](unlocking-purchased-content.md)

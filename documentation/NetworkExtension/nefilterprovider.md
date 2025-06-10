@@ -36,8 +36,6 @@ The Filter Control Provider extension is implemented by creating a custom subcla
 
 > ❗ **Important**:  To use the [`NEFilterProvider`](nefilterprovider.md) class, you must enable the Network Extensions capability in Xcode and select the Content Filter capability. See [`Configure network extensions`](https://developer.apple.comhttp://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
 
- To use the [`NEFilterProvider`](nefilterprovider.md) class, you must enable the Network Extensions capability in Xcode and select the Content Filter capability. See [`Configure network extensions`](https://developer.apple.comhttp://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
-
 ##### Subclassing Notes
 
 `NEFilterProvider` should not be subclassed directly. Instead, you should create subclasses of `NEFilterProvider’s` subclasses and override the following methods:

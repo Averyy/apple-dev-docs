@@ -1,6 +1,6 @@
 # Presenting ads in your app
 
-**Framework**: Adattributionkit
+**Framework**: AdAttributionKit
 
 Render different ad styles in your app.
 
@@ -89,4 +89,4 @@ Pass an `AppImpression` when configuring a StoreKit rendered ad, and it handles 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AdAttributionKit/presenting-ads-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/adattributionkit/presenting-ads-in-your-app)*

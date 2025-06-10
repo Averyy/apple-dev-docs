@@ -15,8 +15,8 @@ var federationMEXURL: URL? { get set }
 ## Mentions
 
 - [Performing a WS-Trust metadata exchange data (MEX) request](performing-a-ws-trust-metadata-exchange-data-mex-request.md)
-- [Performing a preauthentication request](performing-a-preauthentication-request.md)
 - [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
+- [Performing a preauthentication request](performing-a-preauthentication-request.md)
 
 ## See Also
 

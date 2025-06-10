@@ -1,6 +1,6 @@
 # kAudioSession_AudioRouteChangeKey_Reason
 
-**Framework**: Audiotoolbox  
+**Framework**: Audio Toolbox  
 **Kind**: var
 
 Identifies the reason for the audio route change.

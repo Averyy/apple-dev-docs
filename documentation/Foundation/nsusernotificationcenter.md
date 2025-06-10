@@ -83,4 +83,4 @@ The `NSUserNotificationCenter` class and the [`NSUserNotification`](nsusernotifi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsusernotificationcenter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsusernotificationcenter)*

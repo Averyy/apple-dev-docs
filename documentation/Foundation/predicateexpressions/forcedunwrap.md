@@ -34,6 +34,7 @@ struct ForcedUnwrap<Inner, Wrapped> where Inner : PredicateExpression, Inner.Out
 - [Encodable](../Swift/Encodable.md)
 - [PredicateExpression](predicateexpression.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StandardPredicateExpression](standardpredicateexpression.md)
 
 

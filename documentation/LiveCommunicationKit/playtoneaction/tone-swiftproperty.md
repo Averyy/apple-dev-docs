@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-The tone to play.
+The keypad tone to play.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,13 @@ The tone to play.
 ```swift
 final let tone: PlayToneAction.Tone
 ```
+
+## See Also
+
+- [let digits: String](playtoneaction/digits.md)
+  The digits tapped by the user into the keypad or included in the dial string.
+- [PlayToneAction.Tone](playtoneaction/tone-swift.enum.md)
+  Values that describe keypad tones.
 
 
 ---

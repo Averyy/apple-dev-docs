@@ -1,6 +1,6 @@
 # setMagnification(_:centeredAt:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Scales the page content and centers the result on the specified point.

@@ -1,6 +1,6 @@
 # WebMenuItemTagCopy
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Copy the element to the clipboard.

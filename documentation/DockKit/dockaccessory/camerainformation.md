@@ -43,6 +43,7 @@ Use this class in conjuction with [`track(_:cameraInformation:)`](dockaccessory/
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

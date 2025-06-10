@@ -8,10 +8,10 @@ A type that describes the type of contact information in the handle, such as whe
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -50,6 +50,12 @@ enum Value
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var value: IntentPerson.Handle.Value](intentperson/handle-swift.struct/value-swift.property.md)
+  The string value for this `Handle`, such as the specific phone number or email address
 
 
 ---

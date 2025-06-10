@@ -53,6 +53,7 @@ You use object anchors to learn about the position and orientation of a real-wor
 - [Equatable](../Swift/Equatable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TrackableAnchor](trackableanchor.md)
 
 ## See Also

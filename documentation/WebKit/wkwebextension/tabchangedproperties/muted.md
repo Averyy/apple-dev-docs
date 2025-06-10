@@ -1,6 +1,6 @@
 # muted
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the muted state changed.

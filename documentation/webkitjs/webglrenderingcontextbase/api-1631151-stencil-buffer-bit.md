@@ -1,6 +1,6 @@
 # STENCIL_BUFFER_BIT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

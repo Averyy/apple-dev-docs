@@ -30,6 +30,7 @@ You can receive these notifications using [`monitorNotifications(matchingCriteri
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

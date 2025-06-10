@@ -20,8 +20,6 @@ For your first app intent, choose an action that people are likely to use freque
 
 > 💡 **Tip**: To get familiar with the App Intents framework, consider creating your first app intent for functionality that doesn’t use a specialized app intent protocol; for example, an app intent that opens your app. When you’ve successfully created your first app intent, make changes to adopt a specialized app intent or add more app intents for more complex app functionality.
 
-To get familiar with the App Intents framework, consider creating your first app intent for functionality that doesn’t use a specialized app intent protocol; for example, an app intent that opens your app. When you’ve successfully created your first app intent, make changes to adopt a specialized app intent or add more app intents for more complex app functionality.
-
 ##### Review When to Adopt Specialized App Intent Protocols
 
 For many app intents, the [`AppIntent`](appintent.md) protocol is the preferred protocol to adopt. However, depending on your app’s specific behaviors, you might prefer your code to conform to one of the other intent protocols; for example:
@@ -98,8 +96,6 @@ If it doesn’t make sense for your intent to return a concrete result, return `
 
 > ❗ **Important**: By default, the system launches your app in a limited mode in the background and executes the intent’s `perform()` method on an arbitrary queue. To override this behavior and launch the app in the foreground, set the intent’s [`openAppWhenRun`](appintent/openappwhenrun.md) variable to `true`. If your intent updates the app’s user interface, annotate [`perform()`](appintent/perform().md) with `@MainActor` to make sure the method executes on the main queue.
 
-By default, the system launches your app in a limited mode in the background and executes the intent’s `perform()` method on an arbitrary queue. To override this behavior and launch the app in the foreground, set the intent’s [`openAppWhenRun`](appintent/openappwhenrun.md) variable to `true`. If your intent updates the app’s user interface, annotate [`perform()`](appintent/perform().md) with `@MainActor` to make sure the method executes on the main queue.
-
 ##### Verify the Behavior of Your Intent in Simulator or on Device
 
 During development, validate that your intents behave as you expect by testing them in Simulator or on-device. If you’re adding intents to a macOS app, build and run the app. For other platforms, select the relevant simulator or connected device and then build and run. After your app launches, follow these steps:
@@ -149,6 +145,8 @@ For more information, see [`Intent discovery`](intent-discovery.md).
   Learn about important changes in App Intents.
 - [Making actions and content discoverable and widely available](making-actions-and-content-discoverable-and-widely-available.md)
   Adopt App Intents to make your app discoverable with Spotlight, controls, widgets, and the Action button.
+- [Adopting App Intents to support system experiences](adopting-app-intents-to-support-system-experiences.md)
+  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
 - [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
   Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
 

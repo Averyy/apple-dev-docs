@@ -1,6 +1,6 @@
 # ARConfiguration.WorldAlignment.camera
 
-**Framework**: Arkit  
+**Framework**: ARKit  
 **Kind**: case
 
 The scene coordinate system is locked to match the orientation of the camera.
@@ -34,4 +34,4 @@ When this alignment is active, ARKit performs no device motion tracking. That is
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/arconfiguration/worldalignment-swift.enum/camera)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arconfiguration/worldalignment-swift.enum/camera)*

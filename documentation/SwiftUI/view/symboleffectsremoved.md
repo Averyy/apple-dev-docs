@@ -49,7 +49,7 @@ VStack {
 - [func symbolEffect<T, U>(T, options: SymbolEffectOptions, value: U) -> some View](view/symboleffect(_:options:value:).md)
   Returns a new view with a symbol effect added to it.
 - [struct SymbolEffectTransition](symboleffecttransition.md)
-  Creates a transition that applies the Appear or Disappear symbol animation to symbol images within the inserted or removed view hierarchy.
+  Creates a transition that applies the Appear, Disappear, DrawOn or DrawOff symbol animation to symbol images within the inserted or removed view hierarchy.
 
 
 ---

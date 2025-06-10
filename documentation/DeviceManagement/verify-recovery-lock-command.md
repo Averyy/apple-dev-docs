@@ -1,4 +1,4 @@
-# Verify Recovery Lock Command
+# Verify Recovery Lock
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -7,8 +7,6 @@ Verify the device’s Recovery Lock password.
 
 **Availability**:
 - macOS 11.5+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -18,29 +16,29 @@ This command is only available with Apple silicon.
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | - |
-| Requires Supervision | - |
-| Allowed in User Enrollment | - |
-| Required Access Right | DeviceLockAndRemovePasscode |
+| Device channel | macOS |
+| User channel | NA |
+| Requires supervision | macOS |
+| Allowed in user enrollment | NA |
+| Required access right | DeviceLockAndRemovePasscode |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object VerifyRecoveryLockCommand](verifyrecoverylockcommand.md)
-  The command to verify the password for Recovery Lock.
+  The command to verify the device’s Recovery Lock password.
 - [object VerifyRecoveryLockResponse](verifyrecoverylockresponse.md)
-  A response from the device after it verifies the password for Recovery Lock.
+  A response from the device after it processes the command to verify the device’s Recovery Lock password.
 
 ## Request Body
 
-The command to verify the password for Recovery Lock.
+The request object the server returns for the Verify Recovery Lock Command.
 
 ## See Also
 
-- [Set Recovery Lock Command](set-recovery-lock-command.md)
+- [Set Recovery Lock](set-recovery-lock-command.md)
   Set or clear the Recovery Lock password.
 
 

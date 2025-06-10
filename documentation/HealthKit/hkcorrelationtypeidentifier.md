@@ -41,6 +41,7 @@ To create an [`HKCorrelationType`](hkcorrelationtype.md) instance, pass an [`HKC
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

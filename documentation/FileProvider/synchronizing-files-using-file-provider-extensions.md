@@ -64,7 +64,7 @@ func addDomain(displayName: String, accountIdentifier: String) {
 }
 ```
 
-The domain name needs to be unique. Adding a domain with a name that conflicts with an existing domain triggers an [`NSFileWriteFileExistsError`](https://developer.apple.com/documentation/foundation/1448136-nserror_codes/nsfilewritefileexistserror) error.
+The domain name needs to be unique. Adding a domain with a name that conflicts with an existing domain triggers an NSFileWriteFileExistsError error.
 
 Users can delete a domain by selecting it and tapping the Remove Domain button, which eventually triggers [`remove(_:completionHandler:)`](NSFileProviderManager/remove(_:completionHandler:).md) or [`remove(_:mode:completionHandler:)`](NSFileProviderManager/remove(_:mode:completionHandler:).md). In iOS, deleting a domain deletes all the files. In macOS, apps can keep downloaded files or files that contain unsynchronized local changes by specifying a removal mode ([`NSFileProviderManager.DomainRemovalMode`](NSFileProviderManager/DomainRemovalMode.md)).
 

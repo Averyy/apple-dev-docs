@@ -1,6 +1,6 @@
 # screenY
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The y-coordinate of the touch’s location in screen coordinates.

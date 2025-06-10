@@ -1,6 +1,6 @@
 # hasAccessToAllURLs
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating if the currently granted permission match patterns set contains the `<all_urls>` pattern.

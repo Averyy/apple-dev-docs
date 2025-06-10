@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_OutputPoolRequestedMinimumBufferCount
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The requested minimum buffer count that a decompression session should use for its output pixel buffer pool, without releasing buffers while the number in use is below this level.

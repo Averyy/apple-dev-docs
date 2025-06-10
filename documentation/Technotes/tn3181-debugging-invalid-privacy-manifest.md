@@ -146,4 +146,4 @@ To fix the errors, open your privacy manifest in a text editor or Xcode to addre
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3181-debugging-invalid-privacy-manifest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3181-debugging-invalid-privacy-manifest)*

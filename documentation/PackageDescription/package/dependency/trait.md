@@ -64,6 +64,20 @@ struct Trait
 - [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [let traits: Set<Package.Dependency.Trait>](package/dependency/traits.md)
+  The dependencies traits configuration.
+- [Package.Dependency.RegistryRequirement](package/dependency/registryrequirement.md)
+  An enum that represents the requirement for a package dependency.
+- [Package.Dependency.SourceControlRequirement](package/dependency/sourcecontrolrequirement.md)
+  An enum that represents the requirement for a package dependency.
+- [var requirement: Package.Dependency.Requirement](package/dependency/requirement-swift.property.md)
+  The dependency requirement of the package dependency.
+- [Package.Dependency.Requirement](package/dependency/requirement-swift.enum.md)
+  An enum that represents the requirement for a package dependency.
 
 
 ---

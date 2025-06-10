@@ -46,6 +46,7 @@ Use an instances to create a `WiFiNetworkAssociation` as a possible Wi-Fi networ
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

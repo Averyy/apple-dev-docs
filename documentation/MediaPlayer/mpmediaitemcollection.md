@@ -62,6 +62,8 @@ A media item collection can have a wide range of metadata associated with it. Yo
   A collection of properties that represents a single item in the media library.
 - [class MPMediaItemArtwork](mpmediaitemartwork.md)
   A graphical image, such as music album cover art, associated with a media item.
+- [class MPMediaItemAnimatedArtwork](mpmediaitemanimatedartwork.md)
+  An animated image, such as an animated music album cover art, for a media item.
 - [class MPMediaPlaylist](mpmediaplaylist.md)
   A playable collection of related media items.
 - [class MPMediaPlaylistCreationMetadata](mpmediaplaylistcreationmetadata.md)

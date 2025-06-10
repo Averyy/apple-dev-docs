@@ -52,4 +52,4 @@ Note that the `Element` array is suitably-aligned . You are expected to construc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/managedbuffer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/managedbuffer)*

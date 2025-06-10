@@ -74,15 +74,15 @@ struct Vector3D
   Returns the reflection direction of the incident vector and a specified unit normal vector.
 ### Transforming a vector
 - [func applying(AffineTransform3D) -> Vector3D](vector3d/applying(_:)-1d0mh.md)
-  Returns the vector resulting from applying an affine transform to the vector.
+  Returns the vector that results from applying an affine transform to the vector.
 - [func applying(ProjectiveTransform3D) -> Vector3D](vector3d/applying(_:)-5y3xb.md)
-  Returns the vector resulting from applying a projective transform to the vector.
+  Returns the vector that results from applying a projective transform to the vector.
 - [func applying(Pose3D) -> Vector3D](vector3d/applying(_:)-4k2qi.md)
   Returns a vector that results from applying the specified pose.
 - [func unapplying(AffineTransform3D) -> Vector3D](vector3d/unapplying(_:)-6vl3o.md)
-  Returns the vector resulting from unapplying an affine transform to the vector.
+  Returns the vector that results from unapplying an affine transform to the vector.
 - [func unapplying(ProjectiveTransform3D) -> Vector3D](vector3d/unapplying(_:)-8ookb.md)
-  Returns the vector resulting from unapplying a projective transform to the vector.
+  Returns the vector that results from unapplying a projective transform to the vector.
 - [func unapplying(Pose3D) -> Vector3D](vector3d/unapplying(_:)-1gzyd.md)
   Returns a vector that results from unapplying the specified pose.
 - [func rotated(by: Rotation3D) -> Vector3D](vector3d/rotated(by:)-2gcq4.md)
@@ -159,6 +159,16 @@ struct Vector3D
   Returns a vector with each element divided by a scalar value.
 - [static func /= (inout Vector3D, Double)](vector3d/_=(_:_:).md)
   Divides a vector by a scalar value and stores the result in the left-hand-side variable.
+### Initializers
+- [init(simd_packed_double4)](vector3d/init(_:)-23qst.md)
+  Creates a Spatial vector from a simd packed vector.
+- [init(Vector3DFloat)](vector3d/init(_:)-272sg.md)
+  Returns a double-precision vector from a single-precision vector.
+### Type Methods
+- [static func lerp(from: Vector3D, to: Vector3D, t: Vector3D) -> Vector3D](vector3d/lerp(from:to:t:).md)
+  Returns a Spatial vector that represents the linear interpolation at `t` between two vectors.
+- [static func smoothstep(edge0: Vector3D, edge1: Vector3D, x: Vector3D) -> Vector3D](vector3d/smoothstep(edge0:edge1:x:).md)
+  Returns a Spatial vector that represents the smooth interpolation at `x` between two vectors.
 ### Default Implementations
 - [AdditiveArithmetic Implementations](vector3d/additivearithmetic-implementations.md)
 - [CustomReflectable Implementations](vector3d/customreflectable-implementations.md)
@@ -166,9 +176,10 @@ struct Vector3D
 - [Encodable Implementations](vector3d/encodable-implementations.md)
 - [Equatable Implementations](vector3d/equatable-implementations.md)
 - [Hashable Implementations](vector3d/hashable-implementations.md)
-- [Primitive3D Implementations](vector3d/primitive3d-implementations.md)
-- [Rotatable3D Implementations](vector3d/rotatable3d-implementations.md)
-- [Scalable3D Implementations](vector3d/scalable3d-implementations.md)
+- [Primitive3DProtocol Implementations](vector3d/primitive3dprotocol-implementations.md)
+- [ProjectiveTransformable3D Implementations](vector3d/projectivetransformable3d-implementations.md)
+- [Rotatable3DProtocol Implementations](vector3d/rotatable3dprotocol-implementations.md)
+- [Scalable3DProtocol Implementations](vector3d/scalable3dprotocol-implementations.md)
 - [Shearable3D Implementations](vector3d/shearable3d-implementations.md)
 
 ## Relationships
@@ -184,14 +195,22 @@ struct Vector3D
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Primitive3D](primitive3d.md)
+- [Primitive3DProtocol](primitive3dprotocol.md)
+- [ProjectiveTransformable3D](projectivetransformable3d.md)
 - [Rotatable3D](rotatable3d.md)
+- [Rotatable3DProtocol](rotatable3dprotocol.md)
 - [Scalable3D](scalable3d.md)
+- [Scalable3DProtocol](scalable3dprotocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Shearable3D](shearable3d.md)
+- [SpatialTypeProtocol](spatialtypeprotocol.md)
 - [VectorArithmetic](../SwiftUI/VectorArithmetic.md)
 
 ## See Also
 
+- [struct Vector3DFloat](vector3dfloat.md)
+  A single-precision structure that defines a three-element vector
 - [struct Axis3D](axis3d.md)
   Constants that describe an axis.
 

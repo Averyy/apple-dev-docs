@@ -21,8 +21,8 @@ class UIFocusGuide
 
 ## Mentions
 
-- [Creating custom navigation interactions](creating-custom-navigation-interactions.md)
 - [Adding user-focusable elements to a tvOS app](adding-user-focusable-elements-to-a-tvos-app.md)
+- [Creating custom navigation interactions](creating-custom-navigation-interactions.md)
 
 #### Overview
 
@@ -50,6 +50,8 @@ As a subclass of [`UILayoutGuide`](uilayoutguide.md), a focus guide is not a vie
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIPopoverPresentationControllerSourceItem](uipopoverpresentationcontrollersourceitem.md)
 
 ## See Also

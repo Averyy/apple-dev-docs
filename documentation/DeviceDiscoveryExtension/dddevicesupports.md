@@ -21,6 +21,8 @@ struct DDDeviceSupports
 ### Initializers
 - [init(rawValue: UInt)](dddevicesupports/init(rawvalue:).md)
 ### Type Properties
+- [static var bluetoothHID: DDDeviceSupports](dddevicesupports/bluetoothhid.md)
+  Device supports bring up of classic transport profiles when low energy transport for peripheral is connected.
 - [static var bluetoothPairingLE: DDDeviceSupports](dddevicesupports/bluetoothpairingle.md)
 - [static var bluetoothTransportBridging: DDDeviceSupports](dddevicesupports/bluetoothtransportbridging.md)
 
@@ -33,6 +35,7 @@ struct DDDeviceSupports
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 

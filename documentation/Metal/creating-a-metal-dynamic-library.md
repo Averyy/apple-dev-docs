@@ -30,4 +30,4 @@ This sample requires the following system and software configuration:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/creating-a-metal-dynamic-library)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/creating-a-metal-dynamic-library)*

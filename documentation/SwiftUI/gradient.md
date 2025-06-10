@@ -51,6 +51,7 @@ struct Gradient
 - [Hashable](../Swift/Hashable.md)
 - [ScaleRange](../Charts/ScaleRange.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 
 ## See Also
@@ -77,6 +78,8 @@ struct Gradient
   A color gradient.
 - [struct ShadowStyle](shadowstyle.md)
   A style to use when rendering shadows.
+- [struct Glass](glass.md)
+  A structure that defines the configuration of the Liquid Glass material.
 
 
 ---

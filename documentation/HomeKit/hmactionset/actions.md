@@ -21,9 +21,9 @@ var actions: Set<HMAction> { get }
 
 ## See Also
 
-- [func addAction(HMAction, completionHandler: HMErrorBlock)](hmactionset/addaction(_:completionhandler:).md)
+- [func addAction(HMAction, completionHandler: ((any Error)?) -> Void)](hmactionset/addaction(_:completionhandler:).md)
   Adds an action to the action set.
-- [func removeAction(HMAction, completionHandler: HMErrorBlock)](hmactionset/removeaction(_:completionhandler:).md)
+- [func removeAction(HMAction, completionHandler: ((any Error)?) -> Void)](hmactionset/removeaction(_:completionhandler:).md)
   Removes an action from the action set.
 - [class HMCharacteristicWriteAction](hmcharacteristicwriteaction.md)
   An action in an action set that writes a value to a characteristic.

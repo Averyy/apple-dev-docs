@@ -1,6 +1,6 @@
 # NSFetchRequest
 
-**Framework**: Coredata  
+**Framework**: Core Data  
 **Kind**: class
 
 A description of search criteria used to retrieve data from a persistent store.
@@ -157,4 +157,4 @@ You often predefine fetch requests in an [`NSManagedObjectModel`](nsmanagedobjec
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/nsfetchrequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nsfetchrequest)*

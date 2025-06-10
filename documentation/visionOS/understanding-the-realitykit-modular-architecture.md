@@ -1,6 +1,6 @@
 # Understanding the modular architecture of RealityKit
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Learn how everything fits together in RealityKit.
 
@@ -36,6 +36,8 @@ For more information on creating systems, see [`Implementing systems for entitie
 
 ## See Also
 
+- [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
+  Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)

@@ -38,7 +38,7 @@ By default, `List` rows have built-in hover effects in visionOS. In some cases, 
 - [struct ListItemTint](listitemtint.md)
   A tint effect configuration that you can apply to content in a list.
 - [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
-  The default minimum height of a row in a `List`. The default minimum height of a row in a list.
+  The default minimum height of a row in a list.
 
 
 ---

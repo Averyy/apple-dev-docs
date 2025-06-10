@@ -1,6 +1,6 @@
 # contentsRect
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 Returns the rectangle, in unit coordinates, that contains the image within the superview.

@@ -1,6 +1,6 @@
 # XCUIApplication.State.notRunning
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The application isn’t running.

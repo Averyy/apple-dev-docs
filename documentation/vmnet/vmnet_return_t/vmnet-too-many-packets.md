@@ -1,6 +1,6 @@
 # vmnet_return_t.VMNET_TOO_MANY_PACKETS
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: case
 
 **Availability**:

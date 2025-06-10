@@ -10,6 +10,7 @@ The amount of opacity specified as a single value.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -25,8 +26,6 @@ If [`texture`](custommaterial/opacity/texture.md) is `nil`, RealityKit uses this
 
 - [var texture: CustomMaterial.Texture?](custommaterial/opacity/texture.md)
   The amount of opacity specified using a UV-mapped image.
-- [CustomMaterial.Opacity.FloatLiteralType](custommaterial/opacity/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 
 ---

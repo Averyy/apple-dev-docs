@@ -10,6 +10,7 @@ An individual piece of a larger path that refers to the target of an animation.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -46,8 +47,6 @@ let target3: BindTarget = .entity("entityA").entity("entityB").parameter("myInt"
 ### Comparing bind parts
 - [static func == (BindPath.Part, BindPath.Part) -> Bool](bindpath/part/==(_:_:).md)
   Returns a Boolean value that indicates whether two components of a bind path are equal.
-- [static func != (Self, Self) -> Bool](bindpath/part/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Enumeration Cases
 - [BindPath.Part.billboardBlendFactor](bindpath/part/billboardblendfactor.md)
 - [BindPath.Part.blendShapeWeights](bindpath/part/blendshapeweights.md)
@@ -67,8 +66,6 @@ let target3: BindTarget = .entity("entityA").entity("entityB").parameter("myInt"
 - [BindPath.Part.opacity](bindpath/part/opacity.md)
   An path component to animate an opacity. Requires that the entity has an OpacityComponent
 - [case skeletalPose(SkeletalPose.ID)](bindpath/part/skeletalpose(_:).md)
-### Default Implementations
-- [Equatable Implementations](bindpath/part/equatable-implementations.md)
 
 ## Relationships
 

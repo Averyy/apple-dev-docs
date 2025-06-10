@@ -11,6 +11,7 @@
 ## Declaration
 
 ```swift
+@MainActor
 protocol CPTemplateApplicationInstrumentClusterSceneDelegate : UISceneDelegate
 ```
 

@@ -1,6 +1,6 @@
 # invocationOptions
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 Options that define whether measurement is automatically or manually controlled.

@@ -42,7 +42,7 @@ struct FavoriteBackyardTip: Tip {
 }
 ```
 
-For a tip to be valid, you need to set its `title`. To control when a tip displays, pass instances of [`Tip.Rule`](tip/rule.md) and [`Tip.Option`](tip/option.md) into the [`rules`](tip/rules.md) and [`options`](tip/options.md) properties of the tip.
+For a tip to be valid, you need to set its `title`. To control when a tip displays, pass instances of [`Rule`](tip/rule.md) and [`Option`](tip/option.md) into the [`rules`](tip/rules.md) and [`options`](tip/options.md) properties of the tip.
 
 After you define your tip’s content, display it in either a [`TipView`](tipview.md) or a [`popoverTip(_:arrowEdge:action:)`](https://developer.apple.com/documentation/SwiftUI/View/popoverTip(_:arrowEdge:action:)).
 
@@ -59,7 +59,7 @@ After you define your tip’s content, display it in either a [`TipView`](tipvie
   The tip’s unique identifier.
 ### Controlling when tips appear
 - [var rules: [Self.Rule]](tip/rules.md)
-  The rules that determine when a tip is eligible for display. For more information on rules, see [`Tips.Rule`](tips/rule.md).
+  The rules that determine when a tip is eligible for display. For more information on rules, see [`Rule`](tips/rule.md).
 - [typealias Rule](tip/rule.md)
   A condition to meet before displaying a tip.
 - [typealias Event](tip/event.md)
@@ -69,6 +69,12 @@ After you define your tip’s content, display it in either a [`TipView`](tipvie
   Customizations for a tip.
 - [typealias Option](tip/option.md)
   A type that represents the various customizations that you can make to a tip’s behavior.
+- [typealias IgnoresDisplayFrequency](tip/ignoresdisplayfrequency.md)
+  Controls whether a tip obeys the preconfigured display frequency interval.
+- [typealias MaxDisplayCount](tip/maxdisplaycount.md)
+  Specifies the maximum number of times a tip displays before the system automatically invalidates it.
+- [typealias MaxDisplayDuration](tip/maxdisplayduration.md)
+  Specifies the maximum amount of time a tip is displayed before it is invalidated.
 ### Providing actions
 - [var actions: [Self.Action]](tip/actions.md)
   Buttons that help people get started or learn more about your feature.
@@ -90,19 +96,15 @@ After you define your tip’s content, display it in either a [`TipView`](tipvie
 ### Invalidating a tip
 - [func invalidate(reason: Self.InvalidationReason)](tip/invalidate(reason:).md)
   Permanently invalidates a tip and prevents it from displaying.
-### Type Aliases
-- [typealias IgnoresDisplayFrequency](tip/ignoresdisplayfrequency.md)
-  Controls whether a tip obeys the preconfigured display frequency interval.
-- [typealias MaxDisplayCount](tip/maxdisplaycount.md)
-  Specifies the maximum number of times a tip displays before the system automatically invalidates it.
-- [typealias MaxDisplayDuration](tip/maxdisplayduration.md)
-  Specifies the maximum amount of time a tip is displayed before it is invalidated.
+- [func resetEligibility() async](tip/reseteligibility.md)
+  Reset a previously invalidated tip.
 
 ## Relationships
 
 ### Inherits From
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [AnyTip](anytip.md)
 

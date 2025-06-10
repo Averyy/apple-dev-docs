@@ -1,6 +1,6 @@
 # resetTextSelection()
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Removes a person’s text selection from the interface.

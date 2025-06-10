@@ -1,17 +1,17 @@
 # CIFeatureTypeQRCode
 
 **Framework**: Core Image  
-**Kind**: data
+**Kind**: var
 
 The discovered feature is a Quick Response code (2D barcode).
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.0+
-- macOS 10.11+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 

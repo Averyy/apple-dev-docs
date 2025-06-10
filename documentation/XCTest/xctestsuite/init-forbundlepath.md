@@ -1,6 +1,6 @@
 # init(forBundlePath:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates a test suite with the bundle at the specified path.

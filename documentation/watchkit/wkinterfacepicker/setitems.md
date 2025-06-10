@@ -1,6 +1,6 @@
 # setItems(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the list of items displayed by the picker.

@@ -27,6 +27,14 @@ struct ResourceVersion
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [struct ImageCoordinateConversionHelpers](imagecoordinateconversionhelpers.md)
+- [struct ImagePixelDimensions](imagepixeldimensions.md)
+- [struct VNVideoProcessingOption](vnvideoprocessingoption.md)
+  Options to pass to the video processor when adding requests.
 
 
 ---

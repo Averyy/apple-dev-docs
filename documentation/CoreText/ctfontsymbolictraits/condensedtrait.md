@@ -24,8 +24,6 @@ static var condensedTrait: CTFontSymbolicTraits { get }
 
 > ❗ **Important**:  [`expandedTrait`](ctfontsymbolictraits/expandedtrait.md) and [`condensedTrait`](ctfontsymbolictraits/condensedtrait.md) are mutually exclusive.
 
- [`expandedTrait`](ctfontsymbolictraits/expandedtrait.md) and [`condensedTrait`](ctfontsymbolictraits/condensedtrait.md) are mutually exclusive.
-
 Additional detail is available via [`kCTFontWidthTrait`](kctfontwidthtrait.md).
 
 ## See Also

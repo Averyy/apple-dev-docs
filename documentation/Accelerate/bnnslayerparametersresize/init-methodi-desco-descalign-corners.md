@@ -24,8 +24,6 @@ init(method: BNNSInterpolationMethod, i_desc: BNNSNDArrayDescriptor, o_desc: BNN
 
 > ❗ **Important**:  The number of input dimensions must be equal to number of output dimensions. The resize must be in same direction for all dimensions.
 
- The number of input dimensions must be equal to number of output dimensions. The resize must be in same direction for all dimensions.
-
 ## Parameters
 
 - `method`: The interpolation method for resizing.

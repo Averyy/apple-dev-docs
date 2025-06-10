@@ -98,6 +98,8 @@ Pass these constants to the [`NSCell`](nscell.md) method [`sendAction(on:)`](nsc
 - [init(rawValue: UInt64)](nsevent/eventtypemask/init(rawvalue:).md)
 - [init(type: NSEvent.EventType)](nsevent/eventtypemask/init(type:).md)
   Returns the event mask for the specified type.
+### Type Properties
+- [static var mouseCancelled: NSEvent.EventTypeMask](nsevent/eventtypemask/mousecancelled.md)
 
 ## Relationships
 
@@ -108,6 +110,7 @@ Pass these constants to the [`NSCell`](nscell.md) method [`sendAction(on:)`](nsc
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

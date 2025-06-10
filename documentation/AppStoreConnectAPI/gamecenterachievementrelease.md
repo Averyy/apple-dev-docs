@@ -28,6 +28,7 @@ object GameCenterAchievementRelease
   A response that contains a single achievement release resource.
 - [object GameCenterAchievementReleasesResponse](gamecenterachievementreleasesresponse.md)
   A response that contains a list of achievement release resources.
+- [object GameCenterAchievementReleasesLinkagesResponse](gamecenterachievementreleaseslinkagesresponse.md)
 
 
 ---

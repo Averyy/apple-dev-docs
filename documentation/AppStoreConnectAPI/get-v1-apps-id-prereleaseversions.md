@@ -16,6 +16,8 @@ Get a list of prerelease versions associated with a specific app.
 
 - [List All Builds of an App](get-v1-apps-_id_-builds.md)
   Get a list of builds associated with a specific app.
+- [GET /v1/apps/{id}/relationships/builds](get-v1-apps-_id_-relationships-builds.md)
+- [GET /v1/apps/{id}/relationships/preReleaseVersions](get-v1-apps-_id_-relationships-prereleaseversions.md)
 
 
 ---

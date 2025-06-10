@@ -1,6 +1,6 @@
 # WKInterfaceTable
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An object that creates and manages the contents of a single-column table interface.
@@ -143,4 +143,4 @@ For each row controller in your table, The following table lists the attributes 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkinterfacetable)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkinterfacetable)*

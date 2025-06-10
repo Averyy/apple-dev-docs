@@ -1,6 +1,6 @@
 # kCTFontFeatureSettingsAttribute
 
-**Framework**: Coretext  
+**Framework**: Core Text  
 **Kind**: var
 
 The font features settings for a font reference.
@@ -62,4 +62,4 @@ The value associated with this key is a [`CFArray`](https://developer.apple.com/
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreText/kctfontfeaturesettingsattribute)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coretext/kctfontfeaturesettingsattribute)*

@@ -1,6 +1,6 @@
 # publisher
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 **Availability**:

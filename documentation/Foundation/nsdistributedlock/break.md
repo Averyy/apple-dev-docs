@@ -21,8 +21,6 @@ This method always succeeds unless the lock has been damaged. If another process
 
 > ⚠️ **Warning**:  Because `breakLock` can release another process’s lock, it should be used with great caution.
 
- Because `breakLock` can release another process’s lock, it should be used with great caution.
-
 Even if you break a lock, there’s no guarantee that you will then be able to acquire the lock—another process might get it before your [`try()`](nsdistributedlock/try().md) is invoked.
 
 Raises an `NSGenericException` if the lock could not be removed.

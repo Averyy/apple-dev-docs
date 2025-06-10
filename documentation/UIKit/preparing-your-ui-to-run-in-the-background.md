@@ -1,6 +1,6 @@
 # Preparing your UI to run in the background
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Prepare your app to be suspended.
 
@@ -101,4 +101,4 @@ Enable the Background Modes capability in Xcode if your app supports background 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/preparing-your-ui-to-run-in-the-background)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/preparing-your-ui-to-run-in-the-background)*

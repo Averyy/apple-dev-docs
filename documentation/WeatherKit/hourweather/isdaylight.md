@@ -1,6 +1,6 @@
 # isDaylight
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The presence or absence of daylight at the requested location and hour.

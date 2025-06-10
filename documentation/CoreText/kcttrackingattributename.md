@@ -30,8 +30,6 @@ The effect of this attribute is similar to [`kCTKernAttributeName`](kctkernattri
 
 > ❗ **Important**:  If you apply both [`kCTTrackingAttributeName`](kcttrackingattributename.md) and [`kCTKernAttributeName`](kctkernattributename.md), [`kCTTrackingAttributeName`](kcttrackingattributename.md) supersedes [`kCTKernAttributeName`](kctkernattributename.md).
 
- If you apply both [`kCTTrackingAttributeName`](kcttrackingattributename.md) and [`kCTKernAttributeName`](kctkernattributename.md), [`kCTTrackingAttributeName`](kcttrackingattributename.md) supersedes [`kCTKernAttributeName`](kctkernattributename.md).
-
 ## See Also
 
 - [let kCTKernAttributeName: CFString](kctkernattributename.md)

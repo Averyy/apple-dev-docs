@@ -34,7 +34,7 @@ The player view also makes it simple to add trimming capabilities to your player
 
 ## Topics
 
-### Customizing the User Interface
+### Customizing the user interface
 - [var controlsStyle: AVPlayerViewControlsStyle](avplayerview/controlsstyle.md)
   The player view’s controls style.
 - [enum AVPlayerViewControlsStyle](avplayerviewcontrolsstyle.md)
@@ -53,20 +53,20 @@ The player view also makes it simple to add trimming capabilities to your player
   An action pop-up button menu that the player view displays.
 - [var updatesNowPlayingInfoCenter: Bool](avplayerview/updatesnowplayinginfocenter.md)
   A Boolean value that indicates whether the player view controller updates the Now Playing info center.
-### Customizing the Video Presentation
+### Customizing the video presentation
 - [var isReadyForDisplay: Bool](avplayerview/isreadyfordisplay.md)
   A Boolean value that indicates whether the current player item’s first video frame is ready for display.
 - [var videoBounds: NSRect](avplayerview/videobounds.md)
   The current size and position of the video image that displays within the player view’s bounds.
 - [var videoGravity: AVLayerVideoGravity](avplayerview/videogravity.md)
   A value that determines how the player view displays video content within its bounds.
-### Configuring Frame Analysis
+### Configuring frame analysis
 - [var allowsVideoFrameAnalysis: Bool](avplayerview/allowsvideoframeanalysis.md)
   A Boolean value that indicates whether to perform video frame analysis.
 - [var videoFrameAnalysisTypes: AVVideoFrameAnalysisType](avplayerview/videoframeanalysistypes.md)
 - [struct AVVideoFrameAnalysisType](avvideoframeanalysistype.md)
   Constants that define the types of analysis a player view controller may perform on a paused video frame.
-### Configuring the Playback Speed
+### Configuring the playback speed
 - [var speeds: [AVPlaybackSpeed]](avplayerview/speeds.md)
   A list of user-selectable playback speeds to show in the playback speed control.
 - [var selectedSpeed: AVPlaybackSpeed?](avplayerview/selectedspeed.md)
@@ -75,38 +75,43 @@ The player view also makes it simple to add trimming capabilities to your player
   Selects a specified playback speed.
 - [class AVPlaybackSpeed](avplaybackspeed.md)
   An object that represents a user-selectable playback speed in a playback user interface.
-### Configuring Picture in Picture
+### Configuring picture in picture
 - [var allowsPictureInPicturePlayback: Bool](avplayerview/allowspictureinpictureplayback.md)
   A Boolean value that determines whether the player view allows Picture in Picture playback.
 - [var pictureInPictureDelegate: (any AVPlayerViewPictureInPictureDelegate)?](avplayerview/pictureinpicturedelegate.md)
   The Picture in Picture delegate object.
 - [protocol AVPlayerViewPictureInPictureDelegate](avplayerviewpictureinpicturedelegate.md)
   A protocol that defines the methods to implement to respond to Picture in Picture playback events.
-### Magnifying Video
+### Magnifying video
 - [var allowsMagnification: Bool](avplayerview/allowsmagnification.md)
   A Boolean value that indicates whether the magnify gesture changes the video’s view magnification.
 - [var magnification: CGFloat](avplayerview/magnification.md)
   The factor by which the video’s view is currently scaled.
 - [func setMagnification(CGFloat, centeredAt: CGPoint)](avplayerview/setmagnification(_:centeredat:).md)
   Scales the video’s view by a specified factor, and centers the result on a specified point.
-### Displaying the Chapter and Title
+### Displaying the chapter and title
 - [func flashChapterNumber(Int, chapterTitle: String?)](avplayerview/flashchapternumber(_:chaptertitle:).md)
   Displays the chapter number and title in the player view for a brief moment.
-### Trimming Media
+### Trimming media
 - [var canBeginTrimming: Bool](avplayerview/canbegintrimming.md)
   A Boolean value that indicates whether the player view can begin trimming.
 - [func beginTrimming(completionHandler: ((AVPlayerViewTrimResult) -> Void)?)](avplayerview/begintrimming(completionhandler:).md)
   Puts the player view into trimming mode.
 - [enum AVPlayerViewTrimResult](avplayerviewtrimresult.md)
   Constants that specify an action a user takes when trimming media in a player view.
-### Setting the Player Object
+### Setting the player object
 - [var player: AVPlayer?](avplayerview/player.md)
   The player instance that provides the media content for the view.
-### Setting the Delegate Object
+### Setting the delegate object
 - [var delegate: (any AVPlayerViewDelegate)?](avplayerview/delegate.md)
   The player view’s delegate object.
 - [protocol AVPlayerViewDelegate](avplayerviewdelegate.md)
   A protocol that defines the methods to implement to participate in the player view’s full-screen presentation life cycle.
+### High dynamic range
+- [var preferredDisplayDynamicRange: AVDisplayDynamicRange](avplayerview/preferreddisplaydynamicrange.md)
+  Describes how High Dynamic Range (HDR) video content renders.
+- [enum AVDisplayDynamicRange](avdisplaydynamicrange.md)
+  Describes how High Dynamic Range (HDR) video content renders.
 
 ## Relationships
 
@@ -130,6 +135,7 @@ The player view also makes it simple to add trimming capabilities to your player
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

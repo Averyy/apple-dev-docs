@@ -1,6 +1,6 @@
 # toDataURL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Returns a data URL containing an image of the canvas.

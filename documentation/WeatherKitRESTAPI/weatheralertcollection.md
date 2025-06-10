@@ -1,6 +1,6 @@
 # WeatherAlertCollection
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 A collection of severe weather alerts for a specified location.

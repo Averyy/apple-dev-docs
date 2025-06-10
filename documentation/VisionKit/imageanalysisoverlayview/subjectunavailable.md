@@ -1,6 +1,6 @@
 # ImageAnalysisOverlayView.SubjectUnavailable
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: enum
 
 Error conditions that can occur during subject analysis.
@@ -32,6 +32,7 @@ This enumeration contains a failure [`ImageAnalysisOverlayView.SubjectUnavailabl
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

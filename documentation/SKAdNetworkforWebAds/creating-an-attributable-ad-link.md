@@ -39,8 +39,6 @@ When a person clicks the web ad, their device generates an [`AdImpressionRequest
 
 > ❗ **Important**:  The device doesn’t follow an HTTP redirect when it sends the request to the [`Get a Signed Web Ad Impression Payload`](get-a-signed-skadnetwork-ad-payload-for-a-web-ad..md) endpoint at the `attributionDestination` URL.
 
- The device doesn’t follow an HTTP redirect when it sends the request to the [`Get a Signed Web Ad Impression Payload`](get-a-signed-skadnetwork-ad-payload-for-a-web-ad..md) endpoint at the `attributionDestination` URL.
-
 On your server, implement the [`Get a Signed Web Ad Impression Payload`](get-a-signed-skadnetwork-ad-payload-for-a-web-ad..md) endpoint to return an [`AdImpressionResponse`](adimpressionresponse.md). For an example of the response format, see [`AdImpressionResponse`](adimpressionresponse.md).
 
 For more information about generating the signature in your response, see [`Generating a signature for attributable web ads`](generating-a-signature-for-attributable-web-ads.md).

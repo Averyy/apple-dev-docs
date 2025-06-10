@@ -37,8 +37,6 @@ Table 1  Social Services Individual Documentation Sites
 
 > ❗ **Important**:  For Sina Weibo integration, users must have the Chinese keyboard enabled. Users can enable this keyboard in Settings > General > Keyboard. If a Chinese keyboard is not enabled, users won’t be prompted to sign in to their Sina Weibo account.
 
- For Sina Weibo integration, users must have the Chinese keyboard enabled. Users can enable this keyboard in Settings > General > Keyboard. If a Chinese keyboard is not enabled, users won’t be prompted to sign in to their Sina Weibo account.
-
 ## Topics
 
 ### Initializing Requests

@@ -1,6 +1,6 @@
 # didSelectTabs(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Should be called by the app when tabs are selected to fire appropriate events with all loaded web extensions.

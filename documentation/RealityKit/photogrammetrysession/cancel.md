@@ -1,6 +1,6 @@
 # cancel()
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: method
 
 Requests cancellation of any running requests.

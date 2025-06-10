@@ -1,6 +1,6 @@
 # delegate
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The delegate that handles user interaction with items recognized by the data scanner.

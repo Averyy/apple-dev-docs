@@ -17,7 +17,8 @@ A type that defines the geometry of a collection of views.
 ## Declaration
 
 ```swift
-protocol Layout : Animatable
+@preconcurrency
+protocol Layout : Sendable, Animatable
 ```
 
 #### Overview
@@ -156,15 +157,23 @@ You can also create custom layout values by creating a layout key. Set a value o
 ### Supporting types
 - [func callAsFunction<V>(() -> V) -> some View](layout/callasfunction(_:).md)
   Combines the specified views into a single composite view using the layout algorithms of the custom layout container.
+### Instance Methods
+- [func depthAlignment(DepthAlignment) -> some Layout](layout/depthalignment(_:).md)
+  Sets the depth alignment for this layout.
+- [func depthAlignment<Content>(DepthAlignment, content: () -> Content) -> some View](layout/depthalignment(_:content:).md)
+  Creates a layout view with the specified depth alignment.
 
 ## Relationships
 
 ### Inherits From
 - [Animatable](animatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [AnyLayout](anylayout.md)
 - [GridLayout](gridlayout.md)
 - [HStackLayout](hstacklayout.md)
+- [SpatialContainer](spatialcontainer.md)
 - [VStackLayout](vstacklayout.md)
 - [ZStackLayout](zstacklayout.md)
 

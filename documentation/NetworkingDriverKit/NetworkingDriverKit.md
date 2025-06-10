@@ -1,6 +1,6 @@
 # NetworkingDriverKit
 
-**Framework**: Networkingdriverkit  
+**Framework**: NetworkingDriverKit  
 **Kind**: module
 
 Develop drivers for Ethernet networking devices.
@@ -57,6 +57,8 @@ Develop your driver with DriverKit and NetworkingDriverKit. Use USBDriverKit to 
 - [IOUserNetworkPacketPoller](iousernetworkpacketpoller.md)
 ### Structures
 - [IOUserNetworkEthernet_IVars](iousernetworkethernet_ivars.md)
+### Macros
+- [NDK_25](ndk_25.md)
 ### Enumeration Cases
 - [kIOUserNetworkHWAssistLRONumSeg](kiousernetworkhwassistlronumseg.md)
 

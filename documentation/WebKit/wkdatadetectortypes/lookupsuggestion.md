@@ -1,6 +1,6 @@
 # lookupSuggestion
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Detect Spotlight suggestions and turn them into links.

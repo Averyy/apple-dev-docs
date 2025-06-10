@@ -60,6 +60,7 @@ path.components.removeAll { $0.kind == .currentDirectory }
 - [Hashable](../Swift/Hashable.md)
 - [RangeReplaceableCollection](../Swift/RangeReplaceableCollection.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 

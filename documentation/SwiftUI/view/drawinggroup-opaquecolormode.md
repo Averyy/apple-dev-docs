@@ -1,6 +1,6 @@
 # drawingGroup(opaque:colorMode:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Composites this view’s contents into an offscreen image before final display.
@@ -68,6 +68,9 @@ VStack {
   Modes for compositing a view with overlapping content.
 - [enum ColorRenderingMode](colorrenderingmode.md)
   The set of possible working color spaces for color-compositing operations.
+- [protocol CompositorContent](compositorcontent.md)
+- [struct CompositorContentBuilder](compositorcontentbuilder.md)
+  A result builder for composing a collection of [`CompositorContent`](compositorcontent.md) elements.
 
 
 ---

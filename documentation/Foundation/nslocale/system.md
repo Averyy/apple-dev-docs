@@ -33,7 +33,7 @@ Use the system locale when you don’t want any localizations. If you want local
 - [class var autoupdatingCurrent: Locale](nslocale/autoupdatingcurrent.md)
   A locale which tracks the user’s current preferences.
 - [class var current: Locale](nslocale/current.md)
-  A locale representing the user’s region settings at the time the property is read.
+  A locale that represents the user’s region settings at the time the property is read.
 - [class let currentLocaleDidChangeNotification: NSNotification.Name](nslocale/currentlocaledidchangenotification.md)
   A notification that indicates that the user’s locale changed.
 

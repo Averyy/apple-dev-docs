@@ -1,6 +1,6 @@
 # Core Printing
 
-**Framework**: Applicationservices
+**Framework**: Application Services
 
 #### Overview
 

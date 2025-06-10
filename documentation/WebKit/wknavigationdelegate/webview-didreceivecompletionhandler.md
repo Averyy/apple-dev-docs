@@ -1,6 +1,6 @@
 # webView(_:didReceive:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Asks the delegate to respond to an authentication challenge.

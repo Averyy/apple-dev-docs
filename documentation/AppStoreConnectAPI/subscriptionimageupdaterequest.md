@@ -30,6 +30,7 @@ object SubscriptionImageUpdateRequest
   A response that contains a single subscription images resource.
 - [object SubscriptionImagesResponse](subscriptionimagesresponse.md)
   A response that contains a list of subscription image resources.
+- [object SubscriptionImagesLinkagesResponse](subscriptionimageslinkagesresponse.md)
 
 
 ---

@@ -213,4 +213,4 @@ To learn how to respond to state transitions within your app, see [`Managing you
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3187-migrating-to-the-uikit-scene-based-life-cycle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3187-migrating-to-the-uikit-scene-based-life-cycle)*

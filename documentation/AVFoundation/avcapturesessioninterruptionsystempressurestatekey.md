@@ -20,7 +20,7 @@ let AVCaptureSessionInterruptionSystemPressureStateKey: String
 
 #### Discussion
 
-If an interruption occurs and the value of [`AVCaptureSessionInterruptionReasonKey`](avcapturesessioninterruptionreasonkey.md) equals [`AVCaptureSession.InterruptionReason.videoDeviceNotAvailableDueToSystemPressure`](avcapturesession/interruptionreason/videodevicenotavailableduetosystempressure.md), the [`userInfo`](https://developer.apple.com/documentation/foundation/notification/1779652-userinfo) dictionary for the notification contains this key and a corresponding [`AVCaptureDevice.SystemPressureState`](avcapturedevice/systempressurestate-swift.class.md) value.
+If an interruption occurs and the value of [`AVCaptureSessionInterruptionReasonKey`](avcapturesessioninterruptionreasonkey.md) equals [`AVCaptureSession.InterruptionReason.videoDeviceNotAvailableDueToSystemPressure`](avcapturesession/interruptionreason/videodevicenotavailableduetosystempressure.md), the [`userInfo`](https://developer.apple.com/documentation/Foundation/Notification/userInfo) dictionary for the notification contains this key and a corresponding [`AVCaptureDevice.SystemPressureState`](avcapturedevice/systempressurestate-swift.class.md) value.
 
 ## See Also
 

@@ -73,6 +73,9 @@ All of the methods in this protocol are optional. For more information on how to
 
 - [var delegate: (any UITabBarControllerDelegate)?](uitabbarcontroller/delegate.md)
   The tab bar controller’s delegate object.
+- [var tabBarMinimizeBehavior: UITabBarController.MinimizeBehavior](uitabbarcontroller/tabbarminimizebehavior.md)
+  Defines the minimize behavior for the tab bar, if it is supported.
+- [UITabBarController.MinimizeBehavior](uitabbarcontroller/minimizebehavior.md)
 
 
 ---

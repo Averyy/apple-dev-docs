@@ -1,6 +1,6 @@
 # init(checkpoint:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: init
 
 Creates a boosted tree classifier from a checkpoint.

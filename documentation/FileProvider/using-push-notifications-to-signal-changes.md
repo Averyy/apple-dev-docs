@@ -1,6 +1,6 @@
 # Using push notifications to signal changes
 
-**Framework**: Fileprovider
+**Framework**: File Provider
 
 Send push notifications to a device to signal changes from your server.
 
@@ -125,4 +125,4 @@ For more information, see [`APNs Notification API`](https://developer.apple.comh
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/using-push-notifications-to-signal-changes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/using-push-notifications-to-signal-changes)*

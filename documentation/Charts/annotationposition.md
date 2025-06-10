@@ -54,7 +54,6 @@ struct AnnotationPosition
 - [struct AnnotationContext](annotationcontext.md)
   Information about an item that you add an annotation to.
 - [struct AnnotationOverflowResolution](annotationoverflowresolution.md)
-  The behavior for resolving an annotation that extends past a boundary of the chart.
 
 
 ---

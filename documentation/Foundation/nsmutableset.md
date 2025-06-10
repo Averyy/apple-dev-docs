@@ -93,6 +93,8 @@ You must also override the primitive methods of the [`NSSet`](nsset.md) class.
 - [NSMutableCopying](nsmutablecopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 

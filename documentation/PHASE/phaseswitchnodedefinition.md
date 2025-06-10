@@ -35,8 +35,6 @@ The following code creates a random node subtree for each terrain type and adds 
 
 > 💡 **Tip**:  The [`metaParameters`](phasesoundevent/metaparameters.md) objects affect only one sound event. To propagate a metaparameter change to multiple sound events, register the metaparameter globally using [`registerGlobalMetaParameter(metaParameterDefinition:)`](phaseassetregistry/registerglobalmetaparameter(metaparameterdefinition:).md), and change its value through the asset registry’s [`globalMetaParameters`](phaseassetregistry/globalmetaparameters.md) dictionary.
 
- The [`metaParameters`](phasesoundevent/metaparameters.md) objects affect only one sound event. To propagate a metaparameter change to multiple sound events, register the metaparameter globally using [`registerGlobalMetaParameter(metaParameterDefinition:)`](phaseassetregistry/registerglobalmetaparameter(metaparameterdefinition:).md), and change its value through the asset registry’s [`globalMetaParameters`](phaseassetregistry/globalmetaparameters.md) dictionary.
-
 ## Topics
 
 ### Creating a Node

@@ -96,4 +96,4 @@ You need to decide whether modifications to your project’s targets offer any b
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/improving-the-speed-of-incremental-builds)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/improving-the-speed-of-incremental-builds)*

@@ -1,6 +1,6 @@
 # Preparing your app to be the default calling app
 
-**Framework**: Callkit
+**Framework**: CallKit
 
 Configure your CallKit or LiveCommunicationKit app so people can set it as the default calling app on their device.
 
@@ -16,7 +16,7 @@ Add the `com.apple.developer.calling-app` entitlement to the `.entitlements` fil
 
 ##### Apply the Fallback Url Scheme in Your App
 
-In cases where your app can’t handle the provided phone number, you may wish to have the call fall back to the operating system to handle it as a cellular phone call. Your app can do this by adopting the `telephony:` URL scheme as the fallback handler for the  [`scene(_:continue:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:continue:)) delegate callback. For example:
+If starting a VoIP conversation fails, you may wish to have the conversation fall back to the system to handle it. While optional, providing a fallback gives people another opportunity to have the conversation. When you let the conversation fall back to the system, it handles the conversation as a cellular network conversation. To provide a fallback, adopt the `telephony:` URL scheme as the fallback handler for the  [`scene(_:continue:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:continue:)) delegate callback. For example:
 
 ```swift
     let handle = userActivity.startCallHandle // The `UserActivity` structure the system provides; the `startCallHandle` property is the phone number the system is passing to your app.
@@ -55,8 +55,10 @@ To submit your app to App Store Connect, your app needs to meet the following cr
   Initiate outgoing calls with VoIP and configure your app to receive incoming calls.
 - [VoIP calling with CallKit](voip-calling-with-callkit.md)
   Use the CallKit framework to integrate native VoIP calling.
+- [CallKit updates](../Updates/CallKit.md)
+  Learn about important changes to CallKit.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CallKit/preparing-your-app-to-be-the-default-calling-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/callkit/preparing-your-app-to-be-the-default-calling-app)*

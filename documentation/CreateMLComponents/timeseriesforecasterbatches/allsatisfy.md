@@ -1,6 +1,6 @@
 # allSatisfy(_:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns a Boolean value indicating whether every element of a sequence satisfies a given predicate.

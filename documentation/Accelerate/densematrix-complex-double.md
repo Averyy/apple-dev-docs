@@ -22,10 +22,6 @@ struct DenseMatrix_Complex_Double
 
 #### Overview
 
-```None
-                matrix is symmetrical (Hermitian) or triangular.
-```
-
 ## Topics
 
 ### Initializers
@@ -37,6 +33,15 @@ struct DenseMatrix_Complex_Double
 - [var columnStride: Int32](densematrix_complex_double/columnstride.md)
 - [var data: OpaquePointer](densematrix_complex_double/data.md)
 - [var rowCount: Int32](densematrix_complex_double/rowcount.md)
+
+## See Also
+
+- [struct DenseMatrix_Complex_Float](densematrix_complex_float.md)
+  Contains a dense `rowCount` x `columnCount` matrix of complex float values stored in column-major order.
+- [struct DenseVector_Complex_Double](densevector_complex_double.md)
+  Contains a dense vector of double complex values.
+- [struct DenseVector_Complex_Float](densevector_complex_float.md)
+  Contains a dense vector of float complex values.
 
 
 ---

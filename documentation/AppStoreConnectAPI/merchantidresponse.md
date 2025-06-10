@@ -24,6 +24,7 @@ object MerchantIdResponse
   The request body you use to create a merchant ID.
 - [object MerchantIdUpdateRequest](merchantidupdaterequest.md)
   The request body you use to update a merchant ID.
+- [object MerchantIdCertificatesLinkagesResponse](merchantidcertificateslinkagesresponse.md)
 
 
 ---

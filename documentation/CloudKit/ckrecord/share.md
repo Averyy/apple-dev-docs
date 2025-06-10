@@ -1,6 +1,6 @@
 # share
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: property
 
 A reference to the share object that determines the share status of the record.

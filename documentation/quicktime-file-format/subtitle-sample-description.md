@@ -1,6 +1,6 @@
 # Subtitle sample description
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that defines how to interpret subtitle media data.

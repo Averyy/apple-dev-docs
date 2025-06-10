@@ -6,9 +6,9 @@
 Saves the video at a specified path to the Saved Photos album.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 14.0+
 
 ## Declaration
 
@@ -22,14 +22,6 @@ func writeModifiedVideoAtPath(toSavedPhotosAlbum videoPathURL: URL!) async throw
 func writeModifiedVideoAtPath(toSavedPhotosAlbum videoPathURL: URL!) async throws -> URL?
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func writeModifiedVideoAtPath(toSavedPhotosAlbum videoPathURL: URL!) async throws -> URL?
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 This method saves the video at `videoPathURL` to the Saved Photos album as a new asset that is considered a modified version of the receiver.
 
 ## Parameters
@@ -39,7 +31,7 @@ This method saves the video at `videoPathURL` to the Saved Photos album as a new
 
 ## See Also
 
-- [func writeModifiedImageData(toSavedPhotosAlbum: Data!, metadata: [AnyHashable : Any]!, completionBlock: ALAssetsLibraryWriteImageCompletionBlock!)](alasset/writemodifiedimagedata(tosavedphotosalbum:metadata:completionblock:).md)
+- [func writeModifiedImageData(toSavedPhotosAlbum: Data!, metadata: [AnyHashable : Any]!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alasset/writemodifiedimagedata(tosavedphotosalbum:metadata:completionblock:).md)
   Saves image data to the Saved Photos album.
 
 

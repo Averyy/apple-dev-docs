@@ -1,6 +1,6 @@
 # WKWebExtension
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that encapsulates a web extension’s resources that the manifest file defines.

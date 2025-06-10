@@ -1,6 +1,6 @@
 # authenticationExpirationDate
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The date when the user’s current authentication session expires.

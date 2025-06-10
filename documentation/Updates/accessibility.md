@@ -8,6 +8,13 @@ Learn about important changes to Accessibility.
 
 Browse notable changes in [`Accessibility`](https://developer.apple.com/documentation/Accessibility).
 
+#### June 2025
+
+- Add [`Accessibility`](https://developer.apple.com/documentation/Accessibility) to your App Store product page to indicate which accessibility features your app supports.
+- Support Assistive Access in iOS and iPadOS scenes with [`AssistiveAccess`](https://developer.apple.com/documentation/SwiftUI/AssistiveAccess).
+- Use [`AXBrailleTranslator`](https://developer.apple.com/documentation/Accessibility/AXBrailleTranslator) to translate print text to Braille and Braille to print text according to a given Braille table.
+- Use [`openSettings(for:)`](https://developer.apple.com/documentation/Accessibility/AccessibilitySettings/openSettings(for:)) to open the Settings app to new sections of Accessibility settings, including [`AccessibilitySettings.Feature.assistiveTouch`](https://developer.apple.com/documentation/Accessibility/AccessibilitySettings/Feature/assistiveTouch), [`AccessibilitySettings.Feature.assistiveTouchDevices`](https://developer.apple.com/documentation/Accessibility/AccessibilitySettings/Feature/assistiveTouchDevices), and  [`AccessibilitySettings.Feature.dwellControl`](https://developer.apple.com/documentation/Accessibility/AccessibilitySettings/Feature/dwellControl).
+
 #### June 2024
 
 ##### General
@@ -19,12 +26,9 @@ Browse notable changes in [`Accessibility`](https://developer.apple.com/document
 
 ##### Swiftui
 
-- Add accessibility custom actions to interactive widgets or custom controls using new accessibility action modifiers such as doc://com.apple.documentation/documentation/swiftui/view/accessibilityaction(named:intent:)-26k7g.
-- Improve the drag-and-drop experience for accessibility clients such as VoiceOver. Define the location of a drag or drop point and a textual description of the kind of drag or drop available using doc://com.apple.documentation/documentation/SwiftUI/View/accessibilityDragPoint(_:description:)-81e6u and doc://com.apple.documentation/documentation/SwiftUI/View/accessibilityDropPoint(_:description:)-65k1c.
 - Specify that your accessibility element behaves as a tab bar using the [`isTabBar`](https://developer.apple.com/documentation/SwiftUI/AccessibilityTraits/isTabBar) accessibility trait with the [`accessibilityAddTraits(_:)`](https://developer.apple.com/documentation/SwiftUI/View/accessibilityAddTraits(_:)) modifier. In UIKit, use [`tabBar`](https://developer.apple.com/documentation/UIKit/UIAccessibilityTraits/tabBar).
 - Enhance how you structure accessibility labels by appending custom content using [`accessibilityLabel(content:)`](https://developer.apple.com/documentation/SwiftUI/View/accessibilityLabel(content:)).
 - Generate a localized description of a color in a string interpolation by adding `accessibilityName:`, such as `"\(accessibilityName: myColor)"`. Pass that string to any accessibility modifier.
-- Provide accessibility information conditionally with new modifiers such as doc://com.apple.documentation/documentation/swiftui/view/accessibilitylabel(_:isenabled:)-83vyj.
 
 #### June 2023
 
@@ -47,12 +51,16 @@ Browse notable changes in [`Accessibility`](https://developer.apple.com/document
   Learn about important changes in ActivityKit.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [App Intents updates](appintents.md)
   Learn about important changes in App Intents.
 - [AppKit updates](appkit.md)
   Learn about important changes to AppKit.
 - [Apple Intelligence updates](apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -65,12 +73,8 @@ Browse notable changes in [`Accessibility`](https://developer.apple.com/document
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
-- [Core Location updates](corelocation.md)
-  Learn about important changes to Core Location.
+- [Background Tasks updates](backgroundtasks.md)
+  Learn about important changes in Background Tasks.
 
 
 ---

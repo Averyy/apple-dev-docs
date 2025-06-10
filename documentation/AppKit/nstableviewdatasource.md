@@ -1,6 +1,6 @@
 # NSTableViewDataSource
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: protocol
 
 A set of methods that a table view uses to provide data to a table view and to allow the editing of the table view’s data source object.
@@ -80,4 +80,4 @@ To learn more about Cocoa bindings, see [`Cocoa Bindings Programming Topics`](ht
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstableviewdatasource)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstableviewdatasource)*

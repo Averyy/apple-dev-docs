@@ -56,10 +56,12 @@ If your project doesn’t contain a default launch screen file, add a launch scr
 
 ## See Also
 
-- [Configuring your app icon](configuring-your-app-icon.md)
-  Add app icon variations to represent your app in places such as Settings, search results, and the App Store.
+- [Creating your app icon using Icon Composer](creating-your-app-icon-using-icon-composer.md)
+  Use Icon Composer to stylize your app icon for different platforms and appearances.
 - [Configuring Your App to Use Alternate App Icons](configuring_your_app_to_use_alternate_app_icons.md)
   Add alternate app icons to your app, and let people choose which icon to display.
+- [Configuring your app icon using an asset catalog](configuring-your-app-icon.md)
+  Add app icon variations to an asset catalog that represents your app in places such as the App Store, the Home Screen, Settings, and search results.
 
 
 ---

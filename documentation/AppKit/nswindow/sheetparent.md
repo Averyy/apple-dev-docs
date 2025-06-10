@@ -19,7 +19,7 @@ var sheetParent: NSWindow? { get }
 
 The value of this property is `nil` if the receiver is not a sheet or has no sheet parent.
 
-The window object in this property refers to the window to which the sheet is logically attached, regardless of appearance. The parent window–sheet relationship begins with the beginning of the sheet (for example, through [`beginSheet(_:completionHandler:)`](nswindow/beginsheet(_:completionhandler:).md)) and ends with the sheet’s dismissal (for example, through [`endSheet(_:)`](nswindow/endsheet(_:).md)).
+The window object in this property refers to the window to which the sheet is logically attached, regardless of appearance. The parent window–sheet relationship begins with the beginning of the sheet (for example, through [`beginSheet(_:completionHandler:)`](nswindow/beginsheet(_:completionhandler:).md)) and ends with the sheet’s dismissal (for example, through `NSWindow/endSheet(_:)`).
 
 ## See Also
 
@@ -31,8 +31,6 @@ The window object in this property refers to the window to which the sheet is lo
   Starts a document-modal session and presents—or queues for presentation—a sheet.
 - [func beginCriticalSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](nswindow/begincriticalsheet(_:completionhandler:).md)
   Starts a document-modal session and presents the specified critical sheet.
-- [func endSheet(NSWindow)](nswindow/endsheet(_:).md)
-  Ends a document-modal session and dismisses the specified sheet.
 - [func endSheet(NSWindow, returnCode: NSApplication.ModalResponse)](nswindow/endsheet(_:returncode:).md)
   Ends a document-modal session and dismisses the specified sheet.
 - [var sheets: [NSWindow]](nswindow/sheets.md)

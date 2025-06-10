@@ -120,6 +120,7 @@ An app can have only one active session at a time. When your app no longer needs
 - [Actor](../Swift/Actor.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

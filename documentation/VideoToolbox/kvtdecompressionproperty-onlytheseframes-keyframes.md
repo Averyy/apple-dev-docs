@@ -1,6 +1,6 @@
 # kVTDecompressionProperty_OnlyTheseFrames_KeyFrames
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

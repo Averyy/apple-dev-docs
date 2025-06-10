@@ -21,8 +21,8 @@ class MTLCompileOptions
 
 ## Mentions
 
-- [Minimizing the Binary Size of a Shader Library](minimizing-the-binary-size-of-a-shader-library.md)
 - [Logging shader debug messages](logging-shader-debug-messages.md)
+- [Minimizing the Binary Size of a Shader Library](minimizing-the-binary-size-of-a-shader-library.md)
 
 #### Overview
 
@@ -65,6 +65,7 @@ You can compile a library with your compile options instance by calling an [`MTL
 - [var allowReferencingUndefinedSymbols: Bool](mtlcompileoptions/allowreferencingundefinedsymbols.md)
 - [var compileSymbolVisibility: MTLCompileSymbolVisibility](mtlcompileoptions/compilesymbolvisibility.md)
 - [var maxTotalThreadsPerThreadgroup: Int](mtlcompileoptions/maxtotalthreadsperthreadgroup.md)
+- [var requiredThreadsPerThreadgroup: MTLSize](mtlcompileoptions/requiredthreadsperthreadgroup.md)
 
 ## Relationships
 

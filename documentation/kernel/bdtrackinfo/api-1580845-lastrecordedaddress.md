@@ -1,0 +1,18 @@
+# lastRecordedAddress
+
+**Framework**: Kernel  
+**Kind**: structp
+
+**Availability**:
+- macOS 10.5+
+
+## Declaration
+
+```swift
+UInt32 lastRecordedAddress;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/bdtrackinfo/1580845-lastrecordedaddress)*

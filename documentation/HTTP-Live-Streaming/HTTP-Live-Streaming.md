@@ -43,8 +43,6 @@ However, if you do develop your own client software, begin by fetching the index
 
 > ❗ **Important**: Your client is responsible for fetching any decryption keys, authenticating or presenting a user interface to allow authentication, and decrypting media files as needed.
 
-Your client is responsible for fetching any decryption keys, authenticating or presenting a user interface to allow authentication, and decrypting media files as needed.
-
 Continue this process until your client encounters the `EXT-X-ENDLIST` tag in the index file. If no `EXT-X-ENDLIST` tag is present, the index file is part of an ongoing broadcast. During ongoing broadcasts, load a new version of the index file periodically. Look for new media files and encryption keys in the updated index and add these URLs to the playback queue.
 
 ## Topics

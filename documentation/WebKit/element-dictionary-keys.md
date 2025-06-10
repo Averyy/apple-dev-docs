@@ -1,6 +1,6 @@
 # Element Dictionary Keys
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Predefined keys used to access an element dictionary.
 

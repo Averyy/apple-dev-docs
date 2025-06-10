@@ -13,6 +13,7 @@ Creates a Point of Interest template with a title, the points of interest to dis
 ## Declaration
 
 ```swift
+@MainActor
 init(title: String, pointsOfInterest: [CPPointOfInterest], selectedIndex: Int)
 ```
 

@@ -38,6 +38,7 @@ The values correspond to the `ICAP_UNITS` values as defined in the `TWAIN` Speci
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

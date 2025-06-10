@@ -11,6 +11,7 @@ Manage localizations for your Game Center leaderboard sets.
   Get information about a leaderboard set localization.
 - [Read the image associated with a leaderboard set localization](get-v1-gamecenterleaderboardsetlocalizations-_id_-gamecenterleaderboardsetimage.md)
   Get information about a leaderboard set image associated with a leaderboard set localization.
+- [GET /v1/gameCenterLeaderboardSetLocalizations/{id}/relationships/gameCenterLeaderboardSetImage](get-v1-gamecenterleaderboardsetlocalizations-_id_-relationships-gamecenterleaderboardsetimage.md)
 - [Create a leaderboard set localization](post-v1-gamecenterleaderboardsetlocalizations.md)
   Add a new leaderboard set localization.
 - [Modify a leaderboard set localization](patch-v1-gamecenterleaderboardsetlocalizations-_id_.md)
@@ -34,11 +35,11 @@ Manage localizations for your Game Center leaderboard sets.
 - [Game Center leaderboard sets](game-center-leaderboard-sets.md)
   Manage Game Center leaderboard sets for your apps.
 - [Game Center leaderboard set images](game-center-leaderboard-set-images.md)
-  Mangage image assets for your Game Center leaderboard sets.
+  Manage image assets for your Game Center leaderboard sets.
 - [Game Center leaderboard set releases](game-center-leaderboard-set-releases.md)
   Manage a leaderboard set releases.
 - [Game Center leaderboard set member localizations](game-center-leaderboard-set-member-localizations.md)
-  Mangage Game Center leaderboard set member localizations.
+  Manage Game Center leaderboard set member localizations.
 
 
 ---

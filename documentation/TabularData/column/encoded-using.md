@@ -1,6 +1,6 @@
 # encoded(using:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Generates a column by encoding each element’s value.

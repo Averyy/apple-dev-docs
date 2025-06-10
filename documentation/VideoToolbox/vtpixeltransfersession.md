@@ -1,6 +1,6 @@
 # VTPixelTransferSession
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: class
 
 A reference to a VideoToolbox pixel transfer session.

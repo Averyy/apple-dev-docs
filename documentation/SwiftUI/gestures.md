@@ -14,8 +14,6 @@ You can also compose custom gestures from individual gestures using the [`simult
 
 > ❗ **Important**: When you need a button, use a [`Button`](button.md) instance rather than a tap gesture. You can use any view as the button’s label, and the button type automatically provides many of the standard behaviors that users expect from a button, like accessibility labels and hints.
 
-When you need a button, use a [`Button`](button.md) instance rather than a tap gesture. You can use any view as the button’s label, and the button type automatically provides many of the standard behaviors that users expect from a button, like accessibility labels and hints.
-
 For design guidance, see [`Gestures`](https://developer.apple.com/design/Human-Interface-Guidelines/gestures) in the Human Interface Guidelines.
 
 ## Topics
@@ -49,8 +47,8 @@ For design guidance, see [`Gestures`](https://developer.apple.com/design/Human-I
 - [enum Chirality](chirality.md)
   The chirality, or handedness, of a pose.
 ### Recognizing gestures that change over time
-- [func gesture(some UIGestureRecognizerRepresentable) -> some View](view/gesture(_:).md)
-  Attaches a [`UIGestureRecognizerRepresentable`](uigesturerecognizerrepresentable.md) to the view.
+- [func gesture(_:)](view/gesture(_:).md)
+  Attaches an [`NSGestureRecognizerRepresentable`](nsgesturerecognizerrepresentable.md) to the view.
 - [func gesture<T>(T, isEnabled: Bool) -> some View](view/gesture(_:isenabled:).md)
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
 - [func gesture<T>(T, name: String, isEnabled: Bool) -> some View](view/gesture(_:name:isenabled:).md)

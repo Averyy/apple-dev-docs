@@ -45,8 +45,10 @@ struct ASAuthorizationError
 - [ASAuthorizationError.Code](asauthorizationerror-swift.struct/code.md)
   Codes that authorization errors can have.
 ### Type Properties
+- [static var deviceNotConfiguredForPasskeyCreation: ASAuthorizationError.Code](asauthorizationerror-swift.struct/devicenotconfiguredforpasskeycreation.md)
 - [static var errorDomain: String](asauthorizationerror-swift.struct/errordomain.md)
 - [static var matchedExcludedCredential: ASAuthorizationError.Code](asauthorizationerror-swift.struct/matchedexcludedcredential.md)
+- [static var preferSignInWithApple: ASAuthorizationError.Code](asauthorizationerror-swift.struct/prefersigninwithapple.md)
 
 ## Relationships
 
@@ -56,6 +58,7 @@ struct ASAuthorizationError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

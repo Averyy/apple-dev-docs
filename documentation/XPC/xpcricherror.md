@@ -1,6 +1,6 @@
 # XPCRichError
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: struct
 
 An error that contains a description and indicates if you can retry the operation that caused the error.
@@ -32,6 +32,7 @@ struct XPCRichError
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Error](../Swift/Error.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -54,6 +54,7 @@ An `UnownedJob` must be eventually run  using `runSynchronously(on:)`. Not doing
 - [Copyable](copyable.md)
 - [CustomStringConvertible](customstringconvertible.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

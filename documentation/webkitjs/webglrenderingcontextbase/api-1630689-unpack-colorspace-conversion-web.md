@@ -1,6 +1,6 @@
 # UNPACK_COLORSPACE_CONVERSION_WEBGL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

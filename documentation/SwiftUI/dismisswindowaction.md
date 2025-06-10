@@ -69,6 +69,7 @@ If the window was opened with [`pushWindow`](environmentvalues/pushwindow.md), t
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

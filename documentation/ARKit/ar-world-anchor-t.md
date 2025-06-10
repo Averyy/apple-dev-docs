@@ -5,6 +5,9 @@
 
 A fixed location in a person’s surroundings.
 
+**Availability**:
+- visionOS 1.0+
+
 ## Declaration
 
 ```swift

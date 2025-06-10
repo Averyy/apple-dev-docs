@@ -1,6 +1,6 @@
 # xpc_connection_set_context(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Sets a context on the connection.

@@ -98,8 +98,6 @@ fabricID: fabricID, nocSigner: myRootKeypair)
 
 > ❗ **Important**:  Store the root key and IPK in iCloud Keychain. Make sure you use the same fabric identifier every time you create this controller.
 
- Store the root key and IPK in iCloud Keychain. Make sure you use the same fabric identifier every time you create this controller.
-
 In either case, set `params.vendorID` to your Connectivity Standards Alliance-assigned vendor identifier.
 
 ##### Commission the Matter Device

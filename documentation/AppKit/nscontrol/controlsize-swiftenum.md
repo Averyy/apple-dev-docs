@@ -29,7 +29,11 @@ These constants are used by the [`controlSize`](nscell/controlsize.md) property.
   The default control size.
 - [NSControl.ControlSize.large](nscontrol/controlsize-swift.enum/large.md)
   A size larger than the default control size.
+### Enumeration Cases
+- [NSControl.ControlSize.extraLarge](nscontrol/controlsize-swift.enum/extralarge.md)
 ### Initializers
+- [init?(ControlSize)](nscontrol/controlsize-swift.enum/init(_:).md)
+  Creates a control size from its ControlSize equivalent.
 - [init?(rawValue: UInt)](nscontrol/controlsize-swift.enum/init(rawvalue:).md)
 
 ## Relationships
@@ -40,6 +44,7 @@ These constants are used by the [`controlSize`](nscell/controlsize.md) property.
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

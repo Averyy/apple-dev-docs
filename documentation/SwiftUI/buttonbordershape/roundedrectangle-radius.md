@@ -1,6 +1,6 @@
 # roundedRectangle(radius:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 A rounded rectangle shape.

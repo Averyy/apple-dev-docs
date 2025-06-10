@@ -1,6 +1,6 @@
 # XCUIRemoteButton.tvProvider
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents the TV provider button on a remote.

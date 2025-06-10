@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to get the status of all managed apps.
+A response from the device after it processes the command to get the status of all managed apps on a device.
 
 **Availability**:
 - iOS 5.0+
@@ -12,8 +12,6 @@ A response from the device after it processes the command to get the status of a
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,16 +21,16 @@ object ManagedApplicationListResponse
 
 ## Topics
 
-### Commands
-- [object ManagedApplicationListResponse.ManagedApplicationList](managedapplicationlistresponse/managedapplicationlist-data.dictionary.md)
-  A dictionary that contains status information about managed apps.
+### Objects
 - [object ManagedApplicationListResponse.ErrorChainItem](managedapplicationlistresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
+- [object ManagedApplicationListResponse.ManagedApplicationList](managedapplicationlistresponse/managedapplicationlist-data.dictionary.md)
+  A dictionary that contains status information about managed apps.
 
 ## See Also
 
 - [object ManagedApplicationListCommand](managedapplicationlistcommand.md)
-  The command to get the status of managed apps on a device.
+  The command to get the status of all managed apps on a device.
 
 
 ---

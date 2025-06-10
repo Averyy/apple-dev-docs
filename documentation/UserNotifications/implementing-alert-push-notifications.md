@@ -1,6 +1,6 @@
 # Implementing Alert Push Notifications
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Add visible alert notifications to your app by using the UserNotifications framework.
 
@@ -27,4 +27,4 @@ Before you run the sample code project in Xcode, set up a remote notification se
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/implementing-alert-push-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/implementing-alert-push-notifications)*

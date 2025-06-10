@@ -33,8 +33,6 @@ Creating a new instance of `MPMusicPlayerController` and not specifying the play
 
 > ❗ **Important**:  Only use a music player on the app’s main thread.
 
- Only use a music player on the app’s main thread.
-
 ##### Accessing Limited Playback Information While Using Home Sharing
 
 The built-in Music and Videos apps can play media from shared libraries using Home Sharing. However, third-party apps using the Media Player framework only have access to the device music library. This means that your app can’t display the title of a home-shared song in your user interface. Specifically, if the Music app is playing a home-shared song, and you’re using a system music player, the value of the [`nowPlayingItem`](mpmusicplayercontroller/nowplayingitem.md) property of your music player is [`nil`](https://developer.apple.com/documentation/ObjectiveC/nil-227m0). However, other playback information is available when playing shared media. For example, the framework updates the value of the [`playbackState`](mpmusicplayercontroller/playbackstate.md) property when the system music player plays a home-shared item.

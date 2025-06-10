@@ -53,8 +53,6 @@ To create an empty cell, use something invisible, like the [`clear`](shapestyle/
 
 > ❗ **Important**: You can’t use [`EmptyView`](emptyview.md) to create a blank cell because that resolves to the absence of a view and doesn’t generate a cell.
 
-You can’t use [`EmptyView`](emptyview.md) to create a blank cell because that resolves to the absence of a view and doesn’t generate a cell.
-
 By default, the cells in the row use the [`Alignment`](alignment.md) that you define when you initialize the [`Grid`](grid.md). However, you can override the vertical alignment for the cells in a row by providing a [`VerticalAlignment`](verticalalignment.md) value to the row’s [`init(alignment:content:)`](gridrow/init(alignment:content:).md) initializer.
 
 If you apply a view modifier to a row, the row applies the modifier to all of the cells, similar to how a [`Group`](group.md) behaves. For example,  if you apply the [`border(_:width:)`](view/border(_:width:).md) modifier to a row, SwiftUI draws a border on each cell in the row rather than around the row.

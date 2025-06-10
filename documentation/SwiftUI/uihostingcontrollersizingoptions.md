@@ -39,6 +39,7 @@ struct UIHostingControllerSizingOptions
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also
@@ -51,6 +52,8 @@ struct UIHostingControllerSizingOptions
   A UIKit view controller that manages a SwiftUI view hierarchy.
 - [struct UIHostingConfiguration](uihostingconfiguration.md)
   A content configuration suitable for hosting a hierarchy of SwiftUI views.
+- [protocol UIHostingSceneDelegate](uihostingscenedelegate.md)
+  Extends `UIKit/UISceneDelegate` to bridge SwiftUI scenes.
 
 
 ---

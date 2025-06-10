@@ -11,9 +11,9 @@ Returns a new pooling layer.
 - Mac Catalyst ?+
 - macOS 11.0+
 - tvOS 14.0+
+- visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
-- visionOS ?+
 
 ## Declaration
 
@@ -24,8 +24,6 @@ convenience init?(type poolingType: BNNS.PoolingType, input: BNNSNDArrayDescript
 #### Discussion
 
 > ❗ **Important**:  The number of input channels must be equal to number of output channels. The pooling layer supports `float16` and `float`, and the input data type must be equal to the output data type. The pooling layer only supports dilation stride for max and unmax pooling functions and in that case, data type must be `float`.
-
- The number of input channels must be equal to number of output channels. The pooling layer supports `float16` and `float`, and the input data type must be equal to the output data type. The pooling layer only supports dilation stride for max and unmax pooling functions and in that case, data type must be `float`.
 
 ## Parameters
 

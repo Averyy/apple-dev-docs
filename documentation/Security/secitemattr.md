@@ -93,6 +93,7 @@ For attributes for keys, see [`Keychain Item Attribute Constants For Keys`](keyc
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -26,8 +26,6 @@ Resumes the execution of the command if a successful, unmatched, invocation of [
 
 > ❗ **Important**:  The script command handler that is being executed when [`suspendExecution()`](nsscriptcommand/suspendexecution().md) is invoked must return before you invoke [`resumeExecution(withResult:)`](nsscriptcommand/resumeexecution(withresult:).md). That is, it is not valid to suspend a command’s execution and then resume it immediately.
 
- The script command handler that is being executed when [`suspendExecution()`](nsscriptcommand/suspendexecution().md) is invoked must return before you invoke [`resumeExecution(withResult:)`](nsscriptcommand/resumeexecution(withresult:).md). That is, it is not valid to suspend a command’s execution and then resume it immediately.
-
 ## See Also
 
 - [func suspendExecution()](nsscriptcommand/suspendexecution.md)

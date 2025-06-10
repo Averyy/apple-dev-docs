@@ -1,6 +1,6 @@
 # split(maxSplits:omittingEmptySubsequences:whereSeparator:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns the longest possible subsequences of the collection, in order, that don’t contain elements satisfying the given predicate.

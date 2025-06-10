@@ -1,6 +1,6 @@
 # setAlternateIconName(_:completionHandler:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Changes the icon the system displays for the app.
@@ -23,7 +23,7 @@ func setAlternateIconName(_ alternateIconName: String?) async throws
 
 Use this method to change your app’s icon to its primary icon or to one of its alternate icons. You can change the icon only if the value of the [`supportsAlternateIcons`](uiapplication/supportsalternateicons.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
 
-You must configure your app’s primary icon asset in the “App Icons and Launch Images” section of the General pane or set it directly using the “Primary App Icon Set Name” build setting. You specify the names of additional icon assets available to your app using the “Alternate App Icon Sets” build setting. Xcode uses these setting to generate the entries for [`CFBundlePrimaryIcon`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon) and [`CFBundleAlternateIcons`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIcons/CFBundleAlternateIcons) under the top-level key [`CFBundleIcons`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIcons). For more information, see [`Build settings reference`](https://developer.apple.com/documentation/Xcode/build-settings-reference) and [`Configuring your app icon`](https://developer.apple.com/documentation/Xcode/configuring-your-app-icon).
+You must configure your app’s primary icon asset in the “App Icons and Launch Images” section of the General pane or set it directly using the “Primary App Icon Set Name” build setting. You specify the names of additional icon assets available to your app using the “Alternate App Icon Sets” build setting. Xcode uses these setting to generate the entries for [`CFBundlePrimaryIcon`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIcons/CFBundlePrimaryIcon) and [`CFBundleAlternateIcons`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIcons/CFBundleAlternateIcons) under the top-level key [`CFBundleIcons`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIcons). For more information, see [`Build settings reference`](https://developer.apple.com/documentation/Xcode/build-settings-reference) and [`Configuring your app icon using an asset catalog`](https://developer.apple.com/documentation/Xcode/configuring-your-app-icon).
 
 > **Note**:  This method still sets the alternate icon in compatible iPad and iPhone apps running in visionOS. Support for alternate icons is unavailable in apps you build using the visionOS SDK, and calling this method has no effect.
 

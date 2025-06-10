@@ -1,6 +1,6 @@
 # severity
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The severity of the weather alert.

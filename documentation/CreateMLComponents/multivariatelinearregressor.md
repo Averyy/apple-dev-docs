@@ -1,6 +1,6 @@
 # MultivariateLinearRegressor
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: struct
 
 A multivariate linear regressor.
@@ -77,6 +77,7 @@ Unlike a [`LinearRegressor`](linearregressor.md), a [`MultivariateLinearRegresso
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SupervisedEstimator](supervisedestimator.md)
 - [UpdatableSupervisedEstimator](updatablesupervisedestimator.md)
 
@@ -106,4 +107,4 @@ Unlike a [`LinearRegressor`](linearregressor.md), a [`MultivariateLinearRegresso
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/multivariatelinearregressor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/multivariatelinearregressor)*

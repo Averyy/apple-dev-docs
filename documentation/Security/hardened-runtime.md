@@ -20,8 +20,6 @@ The default value of these Boolean entitlements is false. When Xcode signs your 
 
 > ❗ **Important**:  To upload a macOS app to be notarized, you must enable the Hardened Runtime capability. For more information about notarization, see [`Notarizing macOS software before distribution`](notarizing-macos-software-before-distribution.md).
 
- To upload a macOS app to be notarized, you must enable the Hardened Runtime capability. For more information about notarization, see [`Notarizing macOS software before distribution`](notarizing-macos-software-before-distribution.md).
-
 ## Topics
 
 ### Runtime Exceptions

@@ -1,6 +1,6 @@
 # UIFont.Weight
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: struct
 
 Constants that represent standard typeface styles.
@@ -65,6 +65,7 @@ Use system-defined constants as interchangeable values for [`weight`](uifontdesc
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

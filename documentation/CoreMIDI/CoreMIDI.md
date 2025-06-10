@@ -45,10 +45,10 @@ The Core MIDI framework provides APIs to communicate with MIDI (Musical Instrume
 - [Core MIDI Data Types](core-midi-data-types.md)
 - [Core MIDI Macros](coremidi-macros.md)
 ### Articles
-- [kMIDIObjectType_ExternalMask](kmidiobjecttype_externalmask.md)
-  A bit mask indicating that a device is external.
 - [Deprecated Symbols](midi_system_setup-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+- [kMIDIObjectType_ExternalMask](kmidiobjecttype_externalmask.md)
+  A bit mask indicating that a device is external.
 ### Classes
 - [class MIDI2DeviceInfo](midi2deviceinfo.md)
 - [class MIDICIDevice](midicidevice.md)

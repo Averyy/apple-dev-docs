@@ -23,8 +23,6 @@ You can configure the navigation item as described in the [`UINavigationItem`](u
 
 > ❗ **Important**:  The system raises an exception if you attempt to set the [`titleView`](uinavigationitem/titleview.md) property for a search display controller’s navigation item.
 
- The system raises an exception if you attempt to set the [`titleView`](uinavigationitem/titleview.md) property for a search display controller’s navigation item.
-
 ## See Also
 
 - [var delegate: (any UISearchDisplayDelegate)?](uisearchdisplaycontroller/delegate.md)

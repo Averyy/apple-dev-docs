@@ -1,6 +1,6 @@
 # init(expanded:compactLeading:compactTrailing:minimal:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: init
 
 Creates a configuration object with views that appear in the Dynamic Island.
@@ -8,7 +8,6 @@ Creates a configuration object with views that appear in the Dynamic Island.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

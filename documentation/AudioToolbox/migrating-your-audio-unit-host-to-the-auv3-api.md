@@ -64,8 +64,6 @@ func selectAudioUnit(at index: Int) {
 
 > ❗ **Important**:  A key difference between the two audio unit API versions is that AUv2 audio units are loaded into the host’s process, whereas AUv3 audio units are loaded out-of-process by default. In macOS only, if supported by the AUv3 audio unit, you can request loading it in-process by passing the [`loadInProcess`](audiocomponentinstantiationoptions/loadinprocess.md) option in the `options` argument. To verify that the audio unit was successfully loaded in-process, query its [`isLoadedInProcess`](auaudiounit/isloadedinprocess.md) property.
 
- A key difference between the two audio unit API versions is that AUv2 audio units are loaded into the host’s process, whereas AUv3 audio units are loaded out-of-process by default. In macOS only, if supported by the AUv3 audio unit, you can request loading it in-process by passing the [`loadInProcess`](audiocomponentinstantiationoptions/loadinprocess.md) option in the `options` argument. To verify that the audio unit was successfully loaded in-process, query its [`isLoadedInProcess`](auaudiounit/isloadedinprocess.md) property.
-
 ##### Interact with an Audio Unit
 
 The way you interact with audio units using the AUv3 API differs from how you do so with the AUv2 API. With AUv2, you used C functions to operate on an audio unit. For example, the following code sets the maximum number of frames to render using the AUv2 API.

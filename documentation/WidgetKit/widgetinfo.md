@@ -1,6 +1,6 @@
 # WidgetInfo
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 A structure that contains information about user-configured widgets.
@@ -8,8 +8,9 @@ A structure that contains information about user-configured widgets.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -21,6 +22,7 @@ struct WidgetInfo
 
 ## Mentions
 
+- [Updating widgets with WidgetKit push notifications](updating-widgets-with-widgetkit-push-notifications.md)
 - [Making a configurable widget](making-a-configurable-widget.md)
 
 ## Topics
@@ -50,6 +52,7 @@ struct WidgetInfo
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

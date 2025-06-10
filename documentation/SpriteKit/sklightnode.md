@@ -17,7 +17,6 @@ A node that lights surrounding nodes.
 ## Declaration
 
 ```swift
-@MainActor
 class SKLightNode
 ```
 
@@ -83,6 +82,7 @@ If any of the criteria are not met, the sprite is considered unlit and is render
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)

@@ -1,6 +1,6 @@
 # NSTouchBar
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An object that provides dynamic contextual controls in the Touch Bar of supported models of MacBook Pro.
@@ -365,4 +365,4 @@ Always test Touch Bar performance using the specific MacBook hardware you suppor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstouchbar)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstouchbar)*

@@ -24,8 +24,6 @@ enum Insecure
 
 > ❗ **Important**: These algorithms aren’t considered cryptographically secure, but the framework provides them for backward compatibility with older services that require them. For new services, avoid these algorithms.
 
-These algorithms aren’t considered cryptographically secure, but the framework provides them for backward compatibility with older services that require them. For new services, avoid these algorithms.
-
 ## Topics
 
 ### Hashes
@@ -43,6 +41,7 @@ These algorithms aren’t considered cryptographically secure, but the framework
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

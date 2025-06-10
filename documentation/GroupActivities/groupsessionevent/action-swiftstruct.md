@@ -1,6 +1,6 @@
 # GroupSessionEvent.Action
 
-**Framework**: Groupactivities  
+**Framework**: Group Activities  
 **Kind**: struct
 
 A playback-related change that occurs during the session.

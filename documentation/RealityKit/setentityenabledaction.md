@@ -1,6 +1,6 @@
 # SetEntityEnabledAction
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 An action that enables or disables the targeted entity and its descendants when played as an animation.
@@ -10,6 +10,7 @@ An action that enables or disables the targeted entity and its descendants when 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -56,8 +57,6 @@ rootEntity.playAnimation(disableEntityAnimation)
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](setentityenabledaction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(targetEntity: ActionEntityResolution, isEnabled: Bool)](setentityenabledaction/init(targetentity:isenabled:).md)
   Creates a new set entity enabled action.
 ### Instance Properties
@@ -67,14 +66,6 @@ rootEntity.playAnimation(disableEntityAnimation)
   A Boolean that you set to enable or disable the entity and its descendants.
 - [var targetEntity: ActionEntityResolution](setentityenabledaction/targetentity.md)
   The entity to disable or enable.
-### Instance Methods
-- [func encode(to: any Encoder) throws](setentityenabledaction/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [SetEntityEnabledAction.EventParameterType](setentityenabledaction/eventparametertype.md)
-  The associated event parameter type.
-### Default Implementations
-- [EntityAction Implementations](setentityenabledaction/entityaction-implementations.md)
 
 ## Relationships
 
@@ -105,4 +96,4 @@ rootEntity.playAnimation(disableEntityAnimation)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/setentityenabledaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/setentityenabledaction)*

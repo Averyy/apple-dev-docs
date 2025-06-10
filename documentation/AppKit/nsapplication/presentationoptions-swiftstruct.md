@@ -25,7 +25,7 @@ There are restrictions on the combination of presentation options that can be se
 - If you specify any of [`disableProcessSwitching`](nsapplication/presentationoptions-swift.struct/disableprocessswitching.md), [`disableForceQuit`](nsapplication/presentationoptions-swift.struct/disableforcequit.md), [`disableSessionTermination`](nsapplication/presentationoptions-swift.struct/disablesessiontermination.md), or [`disableMenuBarTransparency`](nsapplication/presentationoptions-swift.struct/disablemenubartransparency.md), it must be accompanied by either [`hideDock`](nsapplication/presentationoptions-swift.struct/hidedock.md) or [`autoHideDock`](nsapplication/presentationoptions-swift.struct/autohidedock.md).
 - [`autoHideToolbar`](nsapplication/presentationoptions-swift.struct/autohidetoolbar.md) may be used only when both [`fullScreen`](nsapplication/presentationoptions-swift.struct/fullscreen.md) and [`autoHideMenuBar`](nsapplication/presentationoptions-swift.struct/autohidemenubar.md) are also set.
 
-When [`NSApplication`](nsapplication.md) receives a parameter value that does not conform to these requirements, it raises an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception).
+When [`NSApplication`](nsapplication.md) receives a parameter value that does not conform to these requirements, it raises an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException).
 
 ## Topics
 
@@ -69,6 +69,7 @@ When [`NSApplication`](nsapplication.md) receives a parameter value that does no
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also
@@ -81,6 +82,8 @@ When [`NSApplication`](nsapplication.md) receives a parameter value that does no
   The set of app presentation options that are currently in effect for the system.
 - [var presentationOptions: NSApplication.PresentationOptions](nsapplication/presentationoptions-swift.property.md)
   The presentation options that should be in effect for the system when this app is active.
+- [var applicationShouldSuppressHighDynamicRangeContent: Bool](nsapplication/applicationshouldsuppresshighdynamicrangecontent.md)
+  A boolean value indicating whether your application should suppress HDR content based on established policy. Built-in AppKit components such as NSImageView will automatically behave correctly with HDR content. You should use this value in conjunction with notifications (`NSApplicationShouldBeginSuppressingHighDynamicRangeContentNotification` and `NSApplicationShouldEndSuppressingHighDynamicRangeContentNotification`) to suppress HDR content in your application when signaled to do so.
 
 
 ---

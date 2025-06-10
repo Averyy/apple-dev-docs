@@ -8,7 +8,7 @@ A view that displays the phrase for an App Shortcut.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

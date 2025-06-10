@@ -233,10 +233,14 @@ Creating a custom locale like this isn’t necessarily common in apps, but can b
 - [class NSLocale](nslocale.md)
   Information about linguistic, cultural, and technological conventions for use in formatting data for presentation.
 ### Structures
+- [Locale.CurrentLocaleDidChangeMessage](locale/currentlocaledidchangemessage.md)
 - [Locale.LanguageCode](locale/languagecode-swift.struct.md)
   An alphabetical code associated with a language.
 - [Locale.Script](locale/script.md)
   The written script used with a given language.
+### Type Properties
+- [static var preferredLocales: [Locale]](locale/preferredlocales.md)
+  Returns a list of the user’s preferred locales, as specified in Language & Region settings, taking into account any per-app language overrides.
 
 ## Relationships
 
@@ -251,6 +255,7 @@ Creating a custom locale like this isn’t necessarily common in apps, but can b
 - [Hashable](../Swift/Hashable.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

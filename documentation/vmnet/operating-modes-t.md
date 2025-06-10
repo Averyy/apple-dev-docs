@@ -1,6 +1,6 @@
 # operating_modes_t
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: enum
 
 The operating modes for an interface.

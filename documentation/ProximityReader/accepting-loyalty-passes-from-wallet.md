@@ -1,6 +1,6 @@
 # Accepting loyalty passes from Wallet
 
-**Framework**: Proximityreader
+**Framework**: ProximityReader
 
 Set up the necessary components so your app can begin using Tap to Pay on iPhone to read and issue loyalty passes.
 
@@ -144,4 +144,4 @@ Use [`readPaymentCard(_:vasRequest:stopOnVASResult:)`](paymentcardreadersession/
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ProximityReader/accepting-loyalty-passes-from-wallet)*
+*[View on Apple Developer](https://developer.apple.com/documentation/proximityreader/accepting-loyalty-passes-from-wallet)*

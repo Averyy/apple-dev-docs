@@ -1,6 +1,6 @@
 # UVIndex.ExposureCategory.moderate
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 The UV index is moderate.

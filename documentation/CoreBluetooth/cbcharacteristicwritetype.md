@@ -26,8 +26,6 @@ Characteristic write types have corresponding restrictions on the length of the 
 
 > 💡 **Tip**:  When you write with a response, you can write a characteristic value that’s longer than permitted when you write without a response.
 
- When you write with a response, you can write a characteristic value that’s longer than permitted when you write without a response.
-
 ## Topics
 
 ### Write Types
@@ -46,6 +44,7 @@ Characteristic write types have corresponding restrictions on the length of the 
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

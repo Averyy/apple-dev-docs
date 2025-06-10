@@ -24,8 +24,6 @@ This property contains a JSON Web Signature (JWS) Compact Serialization of the c
 
 > ❗ **Important**:  To ensure that the data is authentic and that no one has tampered with it, decompress the data and then use a public key from the issuer to verify their signature.
 
- To ensure that the data is authentic and that no one has tampered with it, decompress the data and then use a public key from the issuer to verify their signature.
-
 ## See Also
 
 - [var dataRepresentation: Data](hkverifiableclinicalrecord/datarepresentation.md)

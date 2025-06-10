@@ -1,6 +1,6 @@
 # vmnet
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: module
 
 Connect with network interfaces to read and write packets on guest operating systems.
@@ -73,9 +73,31 @@ You can create a maximum of 32 interfaces with a limit of 4 per guest operating 
 - [vmnet Functions](vmnet_functions.md)
 - [vmnet Data Types](vmnet_data_types.md)
 ### Variables
-- [var vmnet_enable_virtio_header_key: UnsafePointer<CChar>](vmnet_enable_virtio_header_key-swift.var.md)
-- [var vmnet_read_max_packets_key: UnsafePointer<CChar>](vmnet_read_max_packets_key.md)
-- [var vmnet_write_max_packets_key: UnsafePointer<CChar>](vmnet_write_max_packets_key.md)
+- [let vmnet_enable_virtio_header_key: UnsafePointer<CChar>](vmnet_enable_virtio_header_key-swift.var.md)
+- [let vmnet_read_max_packets_key: UnsafePointer<CChar>](vmnet_read_max_packets_key.md)
+- [let vmnet_write_max_packets_key: UnsafePointer<CChar>](vmnet_write_max_packets_key.md)
+### Functions
+- [func vmnet_interface_start_with_network(vmnet_network_ref, xpc_object_t, dispatch_queue_t, vmnet_start_interface_completion_handler_t) -> interface_ref?](vmnet_interface_start_with_network(_:_:_:_:).md)
+- [func vmnet_network_configuration_add_dhcp_reservation(vmnet_network_configuration_ref, UnsafePointer<ether_addr_t>, UnsafePointer<in_addr>) -> vmnet_return_t](vmnet_network_configuration_add_dhcp_reservation(_:_:_:).md)
+- [func vmnet_network_configuration_add_port_forwarding_rule(vmnet_network_configuration_ref, UInt8, sa_family_t, UInt16, UInt16, UnsafeRawPointer) -> vmnet_return_t](vmnet_network_configuration_add_port_forwarding_rule(_:_:_:_:_:_:).md)
+- [func vmnet_network_configuration_create(operating_modes_t, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_configuration_ref?](vmnet_network_configuration_create(_:_:).md)
+- [func vmnet_network_configuration_disable_dhcp(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_dhcp(_:).md)
+- [func vmnet_network_configuration_disable_dns_proxy(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_dns_proxy(_:).md)
+- [func vmnet_network_configuration_disable_nat44(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_nat44(_:).md)
+- [func vmnet_network_configuration_disable_nat66(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_nat66(_:).md)
+- [func vmnet_network_configuration_disable_router_advertisement(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_router_advertisement(_:).md)
+- [func vmnet_network_configuration_set_external_interface(vmnet_network_configuration_ref, UnsafePointer<CChar>) -> vmnet_return_t](vmnet_network_configuration_set_external_interface(_:_:).md)
+- [func vmnet_network_configuration_set_ipv4_subnet(vmnet_network_configuration_ref, UnsafePointer<in_addr>, UnsafePointer<in_addr>) -> vmnet_return_t](vmnet_network_configuration_set_ipv4_subnet(_:_:_:).md)
+- [func vmnet_network_configuration_set_ipv6_prefix(vmnet_network_configuration_ref, UnsafePointer<in6_addr>, UInt8) -> vmnet_return_t](vmnet_network_configuration_set_ipv6_prefix(_:_:_:).md)
+- [func vmnet_network_configuration_set_mtu(vmnet_network_configuration_ref, UInt32) -> vmnet_return_t](vmnet_network_configuration_set_mtu(_:_:).md)
+- [func vmnet_network_copy_serialization(vmnet_network_ref, UnsafeMutablePointer<vmnet_return_t>?) -> xpc_object_t?](vmnet_network_copy_serialization(_:_:).md)
+- [func vmnet_network_create(vmnet_network_configuration_ref, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_ref?](vmnet_network_create(_:_:).md)
+- [func vmnet_network_create_with_serialization(xpc_object_t, UnsafeMutablePointer<vmnet_return_t>?) -> vmnet_network_ref?](vmnet_network_create_with_serialization(_:_:).md)
+- [func vmnet_network_get_ipv4_subnet(vmnet_network_ref, UnsafeMutablePointer<in_addr>, UnsafeMutablePointer<in_addr>)](vmnet_network_get_ipv4_subnet(_:_:_:).md)
+- [func vmnet_network_get_ipv6_prefix(vmnet_network_ref, UnsafeMutablePointer<in6_addr>, UnsafeMutablePointer<UInt8>)](vmnet_network_get_ipv6_prefix(_:_:_:).md)
+### Type Aliases
+- [typealias vmnet_network_configuration_ref](vmnet_network_configuration_ref.md)
+- [typealias vmnet_network_ref](vmnet_network_ref.md)
 
 
 ---

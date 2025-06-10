@@ -1,6 +1,6 @@
 # WKNavigationActionPolicy.allow
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Allow the navigation to continue.

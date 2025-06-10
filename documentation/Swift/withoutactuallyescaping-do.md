@@ -77,8 +77,6 @@ func perform(_ f: () -> Void, simultaneouslyWith g: () -> Void) {
 
 > ❗ **Important**: The escapable copy of `closure` passed to `body` is only valid during the call to `withoutActuallyEscaping(_:do:)`. It is undefined behavior for the escapable closure to be stored, referenced, or executed after the function returns.
 
-The escapable copy of `closure` passed to `body` is only valid during the call to `withoutActuallyEscaping(_:do:)`. It is undefined behavior for the escapable closure to be stored, referenced, or executed after the function returns.
-
 ## Parameters
 
 - `closure`: A nonescaping closure value that is made escapable for the   duration of the execution of the   closure. If   has a   return value, that value is also used as the return value for the    function.

@@ -23,8 +23,8 @@ nonisolated func alignmentGuide(_ g: HorizontalAlignment, computeValue: @escapin
 
 ## Mentions
 
-- [Aligning views within a stack](aligning-views-within-a-stack.md)
 - [Aligning views across stacks](aligning-views-across-stacks.md)
+- [Aligning views within a stack](aligning-views-within-a-stack.md)
 
 #### Return Value
 
@@ -79,6 +79,10 @@ Changing the alignment of one view may have effects on surrounding views. Here t
   A type that you use to create custom alignment guides.
 - [struct ViewDimensions](viewdimensions.md)
   A view’s size and alignment guides in its own coordinate space.
+- [struct ViewDimensions3D](viewdimensions3d.md)
+  A view’s 3D size and alignment guides in its own coordinate space.
+- [struct SpatialContainer](spatialcontainer.md)
+  A layout container that aligns overlapping content in 3D space.
 
 
 ---

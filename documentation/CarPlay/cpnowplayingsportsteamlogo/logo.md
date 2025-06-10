@@ -14,7 +14,7 @@ A team logo image for this team.
 
 ```swift
 @NSCopying
-var logo: UIImage? { get }
+@MainActor var logo: UIImage? { get }
 ```
 
 

@@ -16,8 +16,8 @@ string SubscriptionStatusUrlVersion
 
 ## Mentions
 
-- [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
 - [App Store Connect API 3.0 release notes](app-store-connect-api-3-0-release-notes.md)
+- [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
 
 #### Discussion
 

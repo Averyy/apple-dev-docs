@@ -10,6 +10,7 @@ Repeats an animation the number of times specified by an irrational number.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

@@ -124,6 +124,8 @@ Typically the collection that an [`NSArrayController`](nsarraycontroller.md) man
 - [NSEditor](nseditor.md)
 - [NSEditorRegistration](nseditorregistration.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

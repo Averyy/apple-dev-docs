@@ -20,7 +20,7 @@ func selectFile(_ fullPath: String?, inFileViewerRootedAtPath rootFullPath: Stri
 
 #### Discussion
 
-In macOS 10.5 and later, this method does not follow symlinks when selecting the file. If the `fullPath` parameter contains any symlinks, this method selects the symlink instead of the file it targets. If you want to select the target file, use the [`resolvingSymlinksInPath`](https://developer.apple.com/documentation/foundation/nsstring/1417783-resolvingsymlinksinpath) method to resolve any symlinks before calling this method.
+In macOS 10.5 and later, this method does not follow symlinks when selecting the file. If the `fullPath` parameter contains any symlinks, this method selects the symlink instead of the file it targets. If you want to select the target file, use the [`resolvingSymlinksInPath`](https://developer.apple.com/documentation/Foundation/NSString/resolvingSymlinksInPath) method to resolve any symlinks before calling this method.
 
 You can safely call this method from any thread of your app.
 

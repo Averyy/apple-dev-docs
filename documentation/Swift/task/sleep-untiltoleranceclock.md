@@ -17,7 +17,7 @@ Suspends the current task until the given deadline within a tolerance.
 ## Declaration
 
 ```swift
-static func sleep<C>(until deadline: C.Instant, tolerance: C.Instant.Duration? = nil, clock: C = ContinuousClock()) async throws where C : Clock
+static func sleep<C>(until deadline: C.Instant, tolerance: C.Instant.Duration? = nil, clock: C = .continuous) async throws where C : Clock
 ```
 
 #### Discussion

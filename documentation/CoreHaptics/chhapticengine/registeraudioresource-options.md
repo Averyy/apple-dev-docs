@@ -1,6 +1,6 @@
 # registerAudioResource(_:options:)
 
-**Framework**: Corehaptics  
+**Framework**: Core Haptics  
 **Kind**: method
 
 Registers an external audio to use as a custom waveform.

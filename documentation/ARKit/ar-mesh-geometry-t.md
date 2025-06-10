@@ -5,6 +5,9 @@
 
 The shapes that make up a mesh anchor.
 
+**Availability**:
+- visionOS 1.0+
+
 ## Declaration
 
 ```swift

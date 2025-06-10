@@ -1,6 +1,6 @@
 # setDate(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Changes the start time for the timer.

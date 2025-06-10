@@ -1,6 +1,6 @@
 # WidgetFamily.accessoryRectangular
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: case
 
 A rectangular widget.
@@ -8,7 +8,7 @@ A rectangular widget.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -19,10 +19,10 @@ case accessoryRectangular
 
 ## Mentions
 
-- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
-- [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
 - [Adding interactivity to widgets and Live Activities](adding-interactivity-to-widgets-and-live-activities.md)
+- [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
 - [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
 
 #### Discussion
 

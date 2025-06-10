@@ -17,6 +17,7 @@ A node that determines which parts of the scene are visible within a view.
 ## Declaration
 
 ```swift
+@MainActor
 class SKCameraNode
 ```
 
@@ -58,6 +59,7 @@ If you don’t use a camera in your scene, you control the visible portion of a 
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)

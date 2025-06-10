@@ -1,6 +1,6 @@
 # WKSelectionGranularity.character
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Granularity that allows the user to place selection endpoints at any character boundary.

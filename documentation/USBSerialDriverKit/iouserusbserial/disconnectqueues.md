@@ -1,6 +1,6 @@
 # DisconnectQueues
 
-**Framework**: Usbserialdriverkit  
+**Framework**: USBSerialDriverKit  
 **Kind**: method
 
 Releases the buffers that manage data moving to and from the device.

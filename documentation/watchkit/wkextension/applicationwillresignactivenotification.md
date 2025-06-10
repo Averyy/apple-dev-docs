@@ -1,6 +1,6 @@
 # applicationWillResignActiveNotification
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A message indicating that the system is about to deactivate the watchOS app.

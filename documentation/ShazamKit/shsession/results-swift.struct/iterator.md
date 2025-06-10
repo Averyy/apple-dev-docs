@@ -20,10 +20,23 @@ An interator for accessing session results.
 struct Iterator
 ```
 
+## Topics
+
+### Iterating over results
+- [func next() async -> SHSession.Results.Element?](shsession/results-swift.struct/iterator/next.md)
+  Asynchronously waits for the next element and returns it.
+
 ## Relationships
 
 ### Conforms To
 - [AsyncIteratorProtocol](../Swift/AsyncIteratorProtocol.md)
+
+## See Also
+
+- [func makeAsyncIterator() -> SHSession.Results.Iterator](shsession/results-swift.struct/makeasynciterator.md)
+  Creates an asynchronous iterate that produces results from an asynchronous sequence.
+- [SHSession.Results.Element](shsession/results-swift.struct/element.md)
+  A set of results that a session result object returns.
 
 
 ---

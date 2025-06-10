@@ -1,6 +1,6 @@
 # XCUISystem
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: class
 
 A proxy that provides an interface to OS-specific properties and actions.

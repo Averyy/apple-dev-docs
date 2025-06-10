@@ -3,7 +3,7 @@
 **Framework**: TabletopKit  
 **Kind**: property
 
-The interaction id for the cursor.
+The identifier of the interaction manipulating the equipment corresponding to this cursor.
 
 **Availability**:
 - visionOS 2.0+

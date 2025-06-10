@@ -59,6 +59,7 @@ struct PublicKey
 - [HPKEDiffieHellmanPublicKey](hpkediffiehellmanpublickey.md)
 - [HPKEPublicKeySerialization](hpkepublickeyserialization.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

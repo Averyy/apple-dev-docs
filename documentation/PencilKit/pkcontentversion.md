@@ -34,6 +34,9 @@ enum PKContentVersion
   The PencilKit version that supports inks from iPadOS 17 and earlier, including marker, pen, pencil, monoline, fountain pen, watercolor, and crayon.
 - [PKContentVersion.version3](pkcontentversion/version3.md)
   The PencilKit version that supports barrel-roll angle data in inks.
+### Enumeration Cases
+- [PKContentVersion.version4](pkcontentversion/version4.md)
+  New Reed Pen
 ### Initializers
 - [init?(rawValue: Int)](pkcontentversion/init(rawvalue:).md)
 
@@ -45,6 +48,7 @@ enum PKContentVersion
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

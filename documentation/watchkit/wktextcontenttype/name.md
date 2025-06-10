@@ -1,6 +1,6 @@
 # name
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A full name.

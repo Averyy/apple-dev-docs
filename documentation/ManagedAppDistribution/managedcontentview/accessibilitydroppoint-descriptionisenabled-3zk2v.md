@@ -1,6 +1,6 @@
 # accessibilityDropPoint(_:description:isEnabled:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 The point an assistive technology should use to end a drag interaction.
@@ -40,7 +40,7 @@ By default, if an accessible view or its subtree has drag and/or drop interactio
 
 ## Parameters
 
-- `point`: The point the assitive technology will perform a drop   interaction.
+- `point`: The point the assistive technology will perform a drop   interaction.
 - `description`: The description of the drop interaction.
 - `isEnabled`: If true the accessibility drop point is applied;   otherwise the accessibility drop point is unchanged.
 

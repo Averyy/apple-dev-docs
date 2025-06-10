@@ -1,6 +1,6 @@
 # HTTP Live Streaming (HLS) authoring specification for Apple devices
 
-**Framework**: Http Live Streaming
+**Framework**: HTTP Live Streaming
 
 Learn the requirements for live and on-demand audio and video content delivery using HLS.
 
@@ -10,7 +10,11 @@ For a deeper discussion of the features available in HLS, refer to [`Apple’s s
 
 ##### About Hls Authoring
 
-The HLS specification is a published RFC ([`RFC 8216`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc8216)). However, HLS continues to evolve, so there’s an updated draft specification — [`draft-pantos-hls-rfc8216bis (HLS2)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis). This document always uses the most recent version of the draft standard.
+The HLS specification is a published RFC ([`RFC 8216`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc8216)). However, HLS continues to evolve, so there’s an updated draft specification — [`draft-pantos-hls-rfc8216bis (HLS2)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis).
+
+Please see [`Documentation`](https://developer.apple.comhttps://developer.apple.com/streaming/), which may contain a reference to a preliminary version of the draft specification.
+
+This document always uses the most up-to-date version, which is, either the preliminary version or the draft specification (whichever has a higher version number).
 
 > **Note**: HLS was originally specified in draft-pantos-http-live-streaming (HLS1). That document was superseded by RFC 8216.
 
@@ -18,9 +22,26 @@ The key words “MUST,” “MUST NOT,” “REQUIRED,” “SHALL,” “SHALL 
 
 Find additional information for HLS specifications at [`HTTP Live Streaming (HLS) Authoring Specification for Apple devices appendixes`](hls-authoring-specification-for-apple-devices-appendixes.md).
 
+##### About Spatial Video
+
+Spatial video is intended to produce a richer experience for the user. Spatial video MUST use the REQ-VIDEO-LAYOUT attribute to specify desired channel and projection specifiers. Please see HLS specification [https://developer.apple.com/streaming/HLS-draft-pantos.pdf] for valid channel and projection specifiers.
+
+Spatial video media is split into following categories.
+
+This video relies on a special projection type, known as ‘PROJ-AIV’ which is defined outside the core HLS specification. For details, see [QuickTime and ISO Base Media File Formats and Spatial and Immersive Media] (https://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf)
+
+> **Note**: Stereo, Immersive and stereo APMP video is only supported in visionOS. See amended requirements for visionOS.
+
+##### About Multi Format Audio Codecs
+
+Multi-format audio codecs support combinations of channels, audio objects, and ambisonics as opposed to multi-channel codecs that just support channels. Examples of such a multi-format codec are:
+
+- Apple Positional Audio Codec [APAC] (https://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf)
+- Dolby Digital Plus JOC
+
 ##### General Authoring Requirements
 
-A stream that matches these requirements should be compatible with iOS, tvOS, or macOS. Rules with a leading asterisk (*) are modified by one or more of the Amended Requirements listed below.
+A stream that matches these requirements should be compatible with iOS, tvOS, macOS or visionOS. Rules with a leading asterisk (*) are modified by one or more of the Amended Requirements listed below.
 
 Support for a specific video Profile and Level doesn’t imply that any particular device supports the maximum bit rate for that Level.
 
@@ -113,6 +134,52 @@ Support for a specific video Profile and Level doesn’t imply that any particul
 | 3840 x 2160 | 11600 | 13900 | Same as source |
 | 3840 x 2160 | 16800 | 20000 | Same as source |
 
+Following tables provide a possible bit rate recommendations for APMP videos.
+
+###### Apmp Monoscopic Videos
+
+| Tier | Resolution | Bit rate | Projection specifier | fps |
+| --- | --- | --- | --- | --- |
+| 1 | 8k x 4k | 80 Mbps | PROJ-EQUI | 60 |
+| 2 | 8k x 4k | 60 Mbps | PROJ-EQUI | 60 |
+| 3 | 8k x 4k | 40 Mbps | PROJ-EQUI | 60 |
+
+If the quality of the 3rd tier is not acceptable, or you are working with very high motion content, one can lower the resolution and bitrate combination further.
+
+| Tier | Resolution | Bit rate | Projection specifier | fps |
+| --- | --- | --- | --- | --- |
+| 4 | 5760 x 2880 | 60 Mbps | PROJ-EQUI | 60 |
+| 5 | 5760 x 2880 | 40 Mbps | PROJ-EQUI | 60 |
+| 6 | 5760 x 2880 | 30 Mbps | PROJ-EQUI | 60 |
+| 7 | 4096 x 2048 | 20 Mbps | PROJ-EQUI | 60 |
+
+###### Apmp Stereoscopic Videos
+
+| Tier | Resolution | Bit rate | Projection specifier | fps |
+| --- | --- | --- | --- | --- |
+| 1 | 4k x 4k | 80 Mbps | PROJ-HEQU | 60 |
+| 2 | 4k x 4k | 60 Mbps | PROJ-HEQU | 60 |
+| 3 | 4k x 4k | 40 Mbps | PROJ-HEQU | 60 |
+
+If the quality of the 3rd tier is not acceptable, or you are working with very high motion content, one can lower the resolution and bitrate combination further.
+
+| Tier | Resolution | Bit rate | Projection specifier | fps |
+| --- | --- | --- | --- | --- |
+| 4 | 2880 x 2880 | 60 Mbps | PROJ-EQUI | 60 |
+| 5 | 2880 x 2880 | 40 Mbps | PROJ-EQUI | 60 |
+| 6 | 2880 x 2880 | 30 Mbps | PROJ-EQUI | 60 |
+| 7 | 2048 x 2048 | 20 Mbps | PROJ-EQUI | 60 |
+
+Following table provides a possible bit rate recommendations for AIV.
+
+| Tier | Average bandwith | Peak bandwidth | Resolution | fps |
+| --- | --- | --- | --- | --- |
+| 1 | 100 Mbps | 150 Mbps | 4320 x 4320 | 90 |
+| 2 | 80  Mbps | 120 Mbps | 4320 x 4320 | 90 |
+| 3 | 50  Mbps | 100 Mbps | 4320 x 4320 | 90 |
+| 4 | 32  Mbps | 64  Mbps | 4320 x 4320 | 90 |
+| 5 | 25  Mbps | 50  Mbps | 4320 x 4320 | 90 |
+
 > **Note**: The above bit rates are initial encoding targets for typical content delivered via HLS. Apple recommends that you evaluate them against your specific content and encoding workflow, then adjust accordingly. 30i source content is considered to have a source frame rate of 60 fps. 24 fps HEVC content should use bit rates reduced by about 20% from the values above.
 
 1.26. For VOD content, the average segment bit rate MUST be within 10% of the `AVERAGE-BANDWIDTH` attribute. (See [`Declared versus measured values of bandwidths`](hls-authoring-specification-for-apple-devices-appendixes#Declared-versus-measured-values-of-bandwidths.md).)
@@ -139,37 +206,40 @@ Support for a specific video Profile and Level doesn’t imply that any particul
 
 1.37. Level for AV1 MUST be less than or equal to Level 6.2
 
+1.38. All APMP monoscopic videos MUST be encoded using HEVC/H.265.
+
 ###### Audio
 
 2. 
 
 2.1. Audio data SHOULD be provided as an elementary audio stream or in fMP4.
 
-2.2. Stereo audio formats are:
+2.2. Codecs that provide stereo audio are:
 
+- Apple Positional Audio Codec (APAC)
 - AAC-LC
 - HE-AAC v1
 - HE-AAC v2
 - xHE-AAC
 - Apple Lossless
 - FLAC
-- Multichannel formats that only carry stereo
 
 2.3. * Stereo audio in AAC, HE-AAC v1, or HE-AAC v2 format MUST be provided.
 
 2.4. You SHOULD NOT use HE-AAC if your audio bit rate is above 64 kbit/s.
 
-2.5. Supported multichannel audio formats are:
+2.5. Supported multichannel audio codecs are:
 
+- APAC
 - AAC-LC
 - HE-AAC v1
 - Apple Lossless
 - FLAC
 - Dolby Digital (AC-3)
-- Dolby Digital Plus (E-AC-3)
-- Dolby Digital Plus with Dolby Atmos
+- Dolby Digital Plus (E-AC-3)(ec-3)
+- Dolby Digital Plus JOC (ec+3)
 
-(See [`Values for the CODECS attribute`](hls-authoring-specification-for-apple-devices-appendixes#Values-for-the-CODECS-attribute.md) for more information about Dolby Atmos.)
+(See [`Values for the CODECS attribute`](hls-authoring-specification-for-apple-devices-appendixes#Values-for-the-CODECS-attribute.md) for more information about specifying Dolby Digital Plus JOC.)
 
 2.6. * If Dolby Digital Plus is provided and your streams are delivered to devices that don’t support Dolby Digital Plus, then Dolby Digital MUST be provided also. See [`Audio compatibility`](hls-authoring-specification-for-apple-devices-appendixes#Audio-compatibility.md).
 
@@ -179,16 +249,33 @@ Support for a specific video Profile and Level doesn’t imply that any particul
 
 2.9. Overall bit rate recommendations are as follows:
 
-| Audio channels | Format | Total (kbit/s) |
+###### Bitrate Recommendations for Stereo Are As Follows
+
+| Audio channels | Codec | Total (kbit/s) |
 | --- | --- | --- |
+| 2.0 (stereo) | APAC | 32 to 160 |
 | 2.0 (stereo) | AAC | 32 to 160 |
 | 2.0 (stereo) | xHE-AAC | 24 to 160 |
 | 2.0 (stereo) | Dolby Digital Plus | 96 to 160 |
+
+###### Bitrate Recommendations for Multi Channel Surround Formats Are As Follows
+
+| Audio channels | Codec | Total (kbit/s) |
+| --- | --- | --- |
+| 5.1 (surround) | APAC | 320 |
 | 5.1 (surround) | AAC | 320 |
 | 5.1 (surround) | Dolby Digital | 384 |
 | 5.1 (surround) | Dolby Digital Plus | 192 |
+| 7.1 (surround) | APAC | 384 |
 | 7.1 (surround) | Dolby Digital Plus | 384 |
-| Nominally 16 | Dolby Digital Plus with Dolby Atmos | 384 to 768 |
+
+###### Bitrate Recommendations for Ambisonics Httpsdeveloperapplecomav Foundationapple Positional Audio Codecpdf Are As Follows
+
+| Ambisonic order | Codec | Audio coding identifier | Total (kbit/s) |
+| --- | --- | --- | --- |
+| 1 | APAC | 1OA | 192 to 384 |
+| 2 | APAC | 2OA | 240 to 512 |
+| 3 | APAC | 3OA | /270 to 768 |
 
 2.10. * You MAY change channel layout within a stream.
 
@@ -208,7 +295,7 @@ Support for a specific video Profile and Level doesn’t imply that any particul
 
 2.18. Loudness management or Dynamic range control SHOULD be present unless all content (including ads) has been encoded at the same audio levels.
 
-2.19. In fMP4 files, you SHOULD provide loudness information by way of a loudness box (’`ludt`’). When present, the loudness box takes precedence over any loudness information in the audio stream.
+2.19. In fMP4 files, except for the APAC codec, you SHOULD provide loudness information by way of a loudness box (’`ludt`’). When present, the loudness box takes precedence over any loudness information in the audio stream. For APAC, a loudness box SHALL not be used.
 
 2.20. In the absence of a loudness box, Dolby Digital and Dolby Digital Plus loudness SHOULD be specified by the `dialnorm` field (ATSC A/52:2012). 
 
@@ -220,13 +307,22 @@ Support for a specific video Profile and Level doesn’t imply that any particul
 
 2.24. HE-AAC in fMP4 files MUST use explicit signaling of SBR data.
 
-2.25. The container format for xHE-AAC, Apple Lossless, and FLAC audio MUST be fMP4.
+2.25. The container format for xHE-AAC, Apple Lossless, FLAC, and APAC audio MUST be fMP4.
 
 2.26. If you provide non-Dolby multichannel audio, you SHOULD provide multichannel AAC also.
 
 2.27. For audio description, the LANGUAGE attribute MUST be present and indicate the primary language used to convey the descriptions.
 
 2.28. Audio that has been prepared or otherwise processed to heighten the intelligibility of speech MAY be marked with the attribute `CHARACTERISTICS="public.accessibility.enhances-speech-intelligibility"`.
+
+2.29. Supported multi-format audio codecs that carry the combination of two or more formats out of channels, objects and Ambisonics are:
+
+- APAC
+- Dolby Digital Plus JOC
+
+2.30. APAC encoded content MUST have in-stream loudness and DRC metadata.
+
+2.31. If you provide APAC immersive audio, you SHOULD provide stereo AAC also.
 
 ###### Ads and Pre Mid Post Rolls
 
@@ -367,6 +463,8 @@ Support for a specific video Profile and Level doesn’t imply that any particul
 
 7.8. Each xHE-AAC segment SHOULD start with an Immediate Playout Frame (IPF).
 
+7.9. Each APAC segment MUST start with an Audio Synchronization Packet (ASP).
+
 ###### Media Playlists
 
 8. 
@@ -419,6 +517,8 @@ Support for a specific video Profile and Level doesn’t imply that any particul
 
 8.24. A live (linear) playlist update SHOULD be considered invalid when the Last-Modified HTTP header, if supplied, is more than three target durations from the Date HTTP header.
 
+8.25. If your APAC segments start with an ASP, you SHOULD use the `EXT-X-INDEPENDENT-SEGMENTS` tag in the Media Playlist.
+
 ###### Multivariant Playlist
 
 9. 
@@ -460,6 +560,8 @@ Support for a specific video Profile and Level doesn’t imply that any particul
 9.18. An `EXT-X-CONTENT-STEERING` tag SHOULD always have a `PATHWAY-ID` attribute.
 
 9.19. The `SCORE` attribute (if present) MUST be on every variant. Otherwise, the `SCORE` attribute will be ignored.
+
+9.20. For APAC, the APAC profile and level MUST be provided as a part of Codec string. See [APAC] (https://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf) for more information about APAC profile and level.
 
 ###### Delivery
 
@@ -580,13 +682,118 @@ Support for a specific video Profile and Level doesn’t imply that any particul
 
 15.3. Interstitials delivered to participants in a SharePlay session SHOULD match in duration. If they do not, participants receiving longer duration interstitials will miss some of the primary content. This behavior can only be overridden when all participants are using apps that support control of coordinated media playback.
 
-###### Stereo Video
+###### Spatial Stereo Immersive and Projected Video
+
+> **Note**: Please see [`About spatial video`](hls-authoring-specification-for-apple-devices#About-spatial-video.md) for information regarding Spatial Video.
 
 16. 
 
-16.1. All variants containing stereo video content MUST be marked with a REQ-VIDEO-LAYOUT attribute.
+16.1. All variants containing spatial video MUST be marked with a REQ-VIDEO-LAYOUT attribute.
 
-> **Note**: Stereo video is only supported in visionOS. See amended requirements for visionOS.
+16.2. All spatial video content MUST include Video Extended Usage (`'vexu'`) atoms/boxes. (See [`Additional spatial video specifications`](hls-authoring-specification-for-apple-devices-appendixes#Additional-spatial-video-specifications.md).)
+
+16.3. Switches between spatial and non-spatial video content MUST be marked with an EXT-X-DISCONTINUITY tag, or the Media Initialization Section MUST contain sample descriptions for both kinds of content.
+
+16.4. Stereo and Immersive video content SHOULD include parallax metadata if your content has subtitles. (See [`Additional spatial video specifications`](hls-authoring-specification-for-apple-devices-appendixes#Additional-spatial-video-specifications.md).)
+
+16.5. If spatial video content includes sections of monoscopic video content, then the REQ-VIDEO-LAYOUT attribute MUST include “CH-MONO” as one entry.
+
+##### Amended Requirements for Macos
+
+All general rules apply except as expressly modified by a rule with the same number in this section. Rules with a leading plus sign (+) are additional rules.
+
+###### Video
+
+1. 
+
+1.3.
+
+1.3b. Profile and Level for H.264 MUST be less than or equal to High Profile, Level 5.0.
+
+##### Amended Requirements for Ios
+
+All general rules apply except as expressly modified by a rule with the same number in this section. Rules with a leading plus sign (+) are additional rules.
+
+###### Video
+
+1. 
+
+1.6.
+
+1.6b. Profile and Level for H.264 MUST be less than or equal to High Profile, Level 6.0.
+
+1.9.
+
+1.9a. Profile and Level for Dolby Vision MUST be Profile 5 (single layer 10-bit HEVC) or Profile 10 (single layer 10-bit AV1) and less than or equal to Level 9.
+
+1.9b. + For maximum compatibility, some Dolby Vision variants SHOULD be Profile 5 and less than or equal to Level 7.
+
+1.32.
+
+1.32a. For Wi-Fi delivery, the default video variant SHOULD be the 2000 kbit/s (average bit rate) variant.
+
+1.32b. For cellular delivery, the default video variant SHOULD be the 730 kbit/s (average bit rate) variant.
+
+###### Multivariant Playlist
+
+9. 
+
+9.21. + Multivariant Playlists that are delivered over cellular networks MUST contain a variant whose peak `BANDWIDTH` is less than or equal to 192 kbit/s.
+
+9.22. + For backward compatibility, a peak 192 kbit/s H.264 variant packaged in a transport stream SHOULD be provided for cellular.
+
+##### Amended Requirements for Visionos
+
+All general rules apply except as expressly modified by a rule with the same number in this section. Rules with a leading plus sign (+) are additional rules.
+
+The following general rules regarding compatibility aren’t applicable in visionOS if all variants contain stereo video content: 1.3a, 1.6a, 1.9b, 1.12, 1.24, 2.3, 2.6, 6.14, 6.16.
+
+###### Video
+
+1. 
+
+1.9.
+
+1.9a. Dolby Vision monoscopic content MUST be Profile 5 (single layer 10-bit HEVC) and less than or equal to Level 9.
+
+1.9c. + Dolby Vision stereo video MUST be Profile 20 (MV-HEVC) and less than or equal to Level 9.
+
+1.25. Suggested bit rates for MV-HEVC variants.
+
+| 16:9 aspect ratio | MV-HEVC SDR 30 fps | MV-HEVC HDR 30 fps | Frame rate |
+| --- | --- | --- | --- |
+| 640 x 360 | 246 | 272 | ≤ 30 fps |
+| 768 x 432 | 510 | 612 | ≤ 30 fps |
+| 960 x 540 | 1020 | 1241 | ≤ 30 fps |
+| 960 x 540 | 1530 | 1853 | ≤ 30 fps |
+| 960 x 540 | 2720 | 3281 | Same as source |
+| 1280 x 720 | 4080 | 4930 | Same as source |
+| 1280 x 720 | 5780 | 6936 | Same as source |
+| 1920 x 1080 | 7650 | 9180 | Same as source |
+| 1920 x 1080 | 9660 | 11900 | Same as source |
+| 2560 x 1440 | 13770 | 16490 | Same as source |
+| 3840 x 2160 | 19720 | 23630 | Same as source |
+| 3840 x 2160 | 28560 | 34000 | Same as source |
+
+1.39. + Stereo video MUST be encoded using Dolby Vision Profile 20 (MV-HEVC).
+
+###### Trick Play
+
+6. 
+
+6.6. If your only content is stereo video, then you SHOULD provide only one I-frame Media Playlist. (See item 6.19.)
+
+6.18. + Trick play content SHOULD be monoscopic and rectilinear.
+
+6.19. + In visionOS, a thumbnail list is produced for scrubbing and scanning. These thumbnails are 160px height with a width that matches the aspect ratio of the main content. For better performance, you MAY provide an I-frame playlist having exactly this height.
+
+###### Spatial Stereo Immersive and Projected Video
+
+16. 
+
+16.6. + All Stereo (including APMP) video MUST be encoded using MV-HEVC.
+
+16.7. + Immersive video content MUST use CH-STEREO and PROJ-AIV for channel and projection specifier in REQ-VIDEO-LAYOUT.
 
 ##### Amended Requirements for Tvos
 
@@ -628,109 +835,6 @@ All general rules apply except as expressly modified by a rule with the same num
 
 9.20. + You MUST have no audio-only variants listed in the Multivariant Playlist.
 
-##### Amended Requirements for Ios
-
-All general rules apply except as expressly modified by a rule with the same number in this section. Rules with a leading plus sign (+) are additional rules.
-
-###### Video
-
-1. 
-
-1.6.
-
-1.6b. Profile and Level for H.264 MUST be less than or equal to High Profile, Level 6.0.
-
-1.9.
-
-1.9a. Profile and Level for Dolby Vision MUST be Profile 5 (single layer 10-bit HEVC) or Profile 10 (single layer 10-bit AV1) and less than or equal to Level 9.
-
-1.9b. + For maximum compatibility, some Dolby Vision variants SHOULD be Profile 5 and less than or equal to Level 7.
-
-1.32.
-
-1.32a. For Wi-Fi delivery, the default video variant SHOULD be the 2000 kbit/s (average bit rate) variant.
-
-1.32b. For cellular delivery, the default video variant SHOULD be the 730 kbit/s (average bit rate) variant.
-
-###### Multivariant Playlist
-
-9. 
-
-9.21. + Multivariant Playlists that are delivered over cellular networks MUST contain a variant whose peak `BANDWIDTH` is less than or equal to 192 kbit/s.
-
-9.22. + For backward compatibility, a peak 192 kbit/s H.264 variant packaged in a transport stream SHOULD be provided for cellular.
-
-##### Amended Requirements for Macos
-
-All general rules apply except as expressly modified by a rule with the same number in this section. Rules with a leading plus sign (+) are additional rules.
-
-###### Video
-
-1. 
-
-1.3.
-
-1.3b. Profile and Level for H.264 MUST be less than or equal to High Profile, Level 5.0.
-
-##### Amended Requirements for Visionos
-
-All general rules apply except as expressly modified by a rule with the same number in this section. Rules with a leading plus sign (+) are additional rules.
-
-The following general rules regarding compatibility aren’t applicable in visionOS if all variants contain stereo video content: 1.3a, 1.6a, 1.9b, 1.12, 1.24, 2.3, 2.6, 6.14, 6.16.
-
-###### Video
-
-1. 
-
-1.9.
-
-1.9a. Dolby Vision monoscopic content MUST be Profile 5 (single layer 10-bit HEVC) and less than or equal to Level 9.
-
-1.9c. + Dolby Vision stereo video MUST be Profile 20 (MV-HEVC) and less than or equal to Level 9.
-
-1.25. Suggested bit rates for MV-HEVC variants.
-
-| 16:9 aspect ratio | MV-HEVC SDR 30 fps | MV-HEVC HDR 30 fps | Frame rate |
-| --- | --- | --- | --- |
-| 640 x 360 | 246 | 272 | ≤ 30 fps |
-| 768 x 432 | 510 | 612 | ≤ 30 fps |
-| 960 x 540 | 1020 | 1241 | ≤ 30 fps |
-| 960 x 540 | 1530 | 1853 | ≤ 30 fps |
-| 960 x 540 | 2720 | 3281 | Same as source |
-| 1280 x 720 | 4080 | 4930 | Same as source |
-| 1280 x 720 | 5780 | 6936 | Same as source |
-| 1920 x 1080 | 7650 | 9180 | Same as source |
-| 1920 x 1080 | 9660 | 11900 | Same as source |
-| 2560 x 1440 | 13770 | 16490 | Same as source |
-| 3840 x 2160 | 19720 | 23630 | Same as source |
-| 3840 x 2160 | 28560 | 34000 | Same as source |
-
-###### Trick Play
-
-6. 
-
-6.6. If your only content is stereo video, then you SHOULD provide only one I-frame Media Playlist. (See item 6.19.)
-
-6.18. + Trick play content SHOULD be monoscopic.
-
-6.19. + In visionOS, a thumbnail list is produced for scrubbing and scanning. These thumbnails are 160px height with a width that matches the aspect ratio of the main content. For better performance, you MAY provide an I-frame playlist having exactly this height.
-
-###### Stereo Video
-
-16. 
-
-16.2. + Stereo video content MUST include Video Extended Usage (`'vexu'`) atoms/boxes. (See [`Additional stereo video specifications`](hls-authoring-specification-for-apple-devices-appendixes#Additional-stereo-video-specifications.md).)
-
-16.3. + Stereo video content SHOULD include parallax metadata if your content has subtitles. (See [`Additional stereo video specifications`](hls-authoring-specification-for-apple-devices-appendixes#Additional-stereo-video-specifications.md).)
-
-16.4. + Switches between stereo video and monoscopic video content MUST be marked with an EXT-X-DISCONTINUITY tag, or the Media Initialization Section MUST contain sample descriptions for both kinds of content. In the latter case, the sample index field of each sample should point to the appropriate sample description.
-
-16.5. + If stereo video content includes sections of monoscopic video content, then the REQ-VIDEO-LAYOUT attribute MUST include “CH-MONO” as one entry.
-
-16.6. + Stereo video content SHOULD include multi-channel audio.
-
-16.7. + Stereo video MUST be encoded using MV-HEVC.
-
 ##### Amended Requirements for Airplay 2 Enabled Tvs
 
 All general rules apply except as expressly modified by a rule with the same number in this section. Rules with a leading plus sign (+) are additional rules.
@@ -743,7 +847,7 @@ All general rules apply except as expressly modified by a rule with the same num
 
 1.23. If multiple video streams are provided (H.264, HEVC, HDR), each stream MUST provide all anticipated bandwidths.
 
-1.38. + Encrypted fMP4 content MUST contain either a Sample Encryption Box (`'senc'`), or both a Sample Auxiliary Information Sizes Box (`'saiz'`) and a Sample Auxiliary Information Offsets Box (`'saio'`).
+1.39. + Encrypted fMP4 content MUST contain either a Sample Encryption Box (`'senc'`), or both a Sample Auxiliary Information Sizes Box (`'saiz'`) and a Sample Auxiliary Information Offsets Box (`'saio'`).
 
 ###### Audio
 
@@ -793,6 +897,11 @@ The following table describes the changes to this document.
 
 | Date | Notes |
 | --- | --- |
+| 2025-05-08 | Added AIV bit-rate tiers. |
+| 2025-05-02 | Added Offline download guidelines. |
+| 2025-04-30 | Added APAC authoring guidelines. |
+| 2025-04-18 | Added Spatial (Stereo, APMP and AIV) authoring guidelines. |
+| 2025-03-25 | Clarified use of DV20 for Stereo video for VisionOS. |
 | 2023-05-24 | Minor changes. |
 | 2023-08-15 | Added visionOS requirements. Added note about audio/aac. |
 | 2023-06-27 | Added stereo video rules and MV-HEVC bit rate. |
@@ -844,4 +953,4 @@ The following table describes the changes to this document.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HTTP-Live-Streaming/hls-authoring-specification-for-apple-devices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/http-live-streaming/hls-authoring-specification-for-apple-devices)*

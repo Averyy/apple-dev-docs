@@ -1,6 +1,6 @@
 # VTPixelTransferSessionTransferImage(_:from:to:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Copies and/or converts an image from one pixel buffer to another.

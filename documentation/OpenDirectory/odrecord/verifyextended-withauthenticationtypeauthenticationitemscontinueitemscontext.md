@@ -1,6 +1,6 @@
 # verifyExtended(withAuthenticationType:authenticationItems:continueItems:context:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Verifies the credentials for interaction with the record’s node using other types of authentication available to Open Directory.

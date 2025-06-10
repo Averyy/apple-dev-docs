@@ -17,9 +17,7 @@ Get the details on a set of devices.
 - [object DeviceListRequest](devicelistrequest.md)
   The request for a list of devices.
 - [object DeviceListResponse](devicelistresponse.md)
-  The response that contains a list of devices.
 - [object DeviceListResponse.Devices](devicelistresponse/devices-data.dictionary.md)
-  A dictionary of devices, with their serial numbers.
 
 ## Request Body
 

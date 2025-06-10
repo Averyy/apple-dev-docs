@@ -1,6 +1,6 @@
 # XCUIElement.ElementType.picker
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents an element type for picker controls.

@@ -1,6 +1,6 @@
 # MLParameterKey
 
-**Framework**: Coreml  
+**Framework**: Core ML  
 **Kind**: class
 
 The keys for the parameter dictionary in a model configuration or a model update context.
@@ -116,4 +116,4 @@ See [`Personalizing a Model with On-Device Updates`](personalizing-a-model-with-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/mlparameterkey)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coreml/mlparameterkey)*

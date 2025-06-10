@@ -54,4 +54,4 @@ An  turns the data in your chart into an audible representation by encoding the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Accessibility/audio-graphs)*
+*[View on Apple Developer](https://developer.apple.com/documentation/accessibility/audio-graphs)*

@@ -1,6 +1,6 @@
 # VTFrameSiloCallFunctionForEachSampleBuffer(_:in:refcon:callback:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Retrieves sample buffers from a frame silo object.

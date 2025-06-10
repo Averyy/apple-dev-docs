@@ -1,6 +1,6 @@
 # shareImage
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 An index for the share-image menu item.

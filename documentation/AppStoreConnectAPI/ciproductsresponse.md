@@ -20,6 +20,11 @@ object CiProductsResponse
   The data structure that represents a Products resource.
 - [object CiProductResponse](ciproductresponse.md)
   A response that contains a single Products resource.
+- [object CiProductAdditionalRepositoriesLinkagesResponse](ciproductadditionalrepositorieslinkagesresponse.md)
+- [object CiProductAppLinkageResponse](ciproductapplinkageresponse.md)
+- [object CiProductBuildRunsLinkagesResponse](ciproductbuildrunslinkagesresponse.md)
+- [object CiProductPrimaryRepositoriesLinkagesResponse](ciproductprimaryrepositorieslinkagesresponse.md)
+- [object CiProductWorkflowsLinkagesResponse](ciproductworkflowslinkagesresponse.md)
 
 
 ---

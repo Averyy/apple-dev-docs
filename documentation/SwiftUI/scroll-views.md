@@ -55,11 +55,15 @@ For design guidance, see [`Scroll views`](https://developer.apple.com/design/Hum
   The scroll behavior that aligns scroll targets to view-based geometry.
 - [struct AnyScrollTargetBehavior](anyscrolltargetbehavior.md)
   A type-erased scroll target behavior.
+- [struct ScrollTargetBehaviorProperties](scrolltargetbehaviorproperties.md)
+  Properties influencing the scroll view a scroll target behavior applies to.
+- [struct ScrollTargetBehaviorPropertiesContext](scrolltargetbehaviorpropertiescontext.md)
+  The context in which a scroll target behavior can decide its properties.
 ### Animating scroll transitions
 - [func scrollTransition(ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](view/scrolltransition(_:axis:transition:).md)
-  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 - [func scrollTransition(topLeading: ScrollTransitionConfiguration, bottomTrailing: ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](view/scrolltransition(topleading:bottomtrailing:axis:transition:).md)
-  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 - [enum ScrollTransitionPhase](scrolltransitionphase.md)
   The phases that a view transitions between when it scrolls among other views.
 - [struct ScrollTransitionConfiguration](scrolltransitionconfiguration.md)
@@ -113,6 +117,15 @@ For design guidance, see [`Scroll views`](https://developer.apple.com/design/Hum
   The scroll bounce mode for the vertical axis of scrollable views.
 - [struct ScrollBounceBehavior](scrollbouncebehavior.md)
   The ways that a scrollable view can bounce when it reaches the end of its content.
+### Configuring scroll edge effects
+- [func scrollEdgeEffectStyle(ScrollEdgeEffectStyle?, for: Edge.Set) -> some View](view/scrolledgeeffectstyle(_:for:).md)
+  Configures the scroll edge effect style for scroll views within this hierarchy.
+- [func scrollEdgeEffectDisabled(Bool, for: Edge.Set) -> some View](view/scrolledgeeffectdisabled(_:for:).md)
+  Disables any scroll edge effects for scroll views within this hierarchy.
+- [struct ScrollEdgeEffectStyle](scrolledgeeffectstyle.md)
+  A structure that defines the style of pocket a scroll view will have.
+- [func safeAreaBar(edge:alignment:spacing:content:)](view/safeareabar(edge:alignment:spacing:content:).md)
+  Renders the provided content appropriately to be displayed as a custom bar.
 ### Interacting with a software keyboard
 - [func scrollDismissesKeyboard(ScrollDismissesKeyboardMode) -> some View](view/scrolldismisseskeyboard(_:).md)
   Configures the behavior in which scrollable content interacts with the software keyboard.

@@ -38,6 +38,7 @@ The various `yield` methods of `AsyncStream.Continuation` return this type to in
 
 ### Conforms To
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

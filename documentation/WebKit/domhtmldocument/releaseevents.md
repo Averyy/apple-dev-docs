@@ -1,6 +1,6 @@
 # releaseEvents()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

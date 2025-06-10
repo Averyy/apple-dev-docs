@@ -1,6 +1,6 @@
 # setHeight(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the absolute height (in points) of the object.

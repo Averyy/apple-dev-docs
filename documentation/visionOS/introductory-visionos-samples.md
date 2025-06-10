@@ -1,6 +1,6 @@
 # Introductory visionOS samples
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Learn the fundamentals of building apps for visionOS with beginner-friendly sample code projects.
 

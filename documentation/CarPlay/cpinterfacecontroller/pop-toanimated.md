@@ -13,6 +13,7 @@ Pops templates until the specified template is at the top of the navigation stac
 ## Declaration
 
 ```swift
+@MainActor
 func pop(to targetTemplate: CPTemplate, animated: Bool)
 ```
 

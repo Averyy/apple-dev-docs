@@ -22,8 +22,8 @@ class SKPaymentTransaction
 
 ## Mentions
 
-- [Implementing promotional offers in your app](implementing-promotional-offers-in-your-app.md)
 - [Restoring purchased products](restoring-purchased-products.md)
+- [Implementing promotional offers in your app](implementing-promotional-offers-in-your-app.md)
 
 #### Overview
 
@@ -65,6 +65,7 @@ A payment transaction is created whenever a payment is added to the payment queu
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

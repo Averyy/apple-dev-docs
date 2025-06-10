@@ -1,12 +1,17 @@
 # VTFrameProcessor
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: class
 
 A class that creates a new frame processor for the configured video effect.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -34,6 +39,9 @@ For successful processing, the caller needs to ensure that all buffers passed to
   Asynchronously performs the video effect specified in the start session specifically for Metal.
 - [func endSession()](vtframeprocessor/endsession.md)
   Performs all necessary tasks to end the session.
+### Instance Methods
+- [func process(parameters: any VTFrameProcessorParameters) -> some AsyncSequence<VTFrameProcessorFrame.ReadOnlyFrame, any Error>
+](vtframeprocessor/process(parameters:).md)
 
 ## Relationships
 
@@ -49,6 +57,8 @@ For successful processing, the caller needs to ensure that all buffers passed to
 
 ## See Also
 
+- [Enhancing your app with machine learning-based video effects](enhancing-your-app-with-machine-learning-based-video-effects.md)
+  Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
 - [class VTFrameProcessorFrame](vtframeprocessorframe.md)
   An object that wraps video frames to send to the processor, as source, reference, or output frames.
 - [protocol VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)

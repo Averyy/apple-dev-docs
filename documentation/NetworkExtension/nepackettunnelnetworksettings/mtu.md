@@ -1,6 +1,6 @@
 # mtu
 
-**Framework**: Networkextension  
+**Framework**: Network Extension  
 **Kind**: property
 
 The size of the maximum trasnmission unit, in bytes.

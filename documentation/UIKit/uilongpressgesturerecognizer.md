@@ -51,6 +51,7 @@ A long-press gesture is continuous. The gesture begins ([`UIGestureRecognizer.St
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # XPC_TYPE_INT64
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A type that represents a signed, 64-bit integer value.

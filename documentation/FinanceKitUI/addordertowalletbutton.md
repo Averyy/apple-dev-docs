@@ -35,6 +35,7 @@ A button you use to add an order to a person’s Apple Wallet.
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

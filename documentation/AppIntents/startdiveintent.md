@@ -42,8 +42,6 @@ To read live depth, water pressure, and water temperature data, see [`Accessing 
 
 > ❗ **Important**: Before you can access live dive data, your app needs to include an entitlement to access submersion data. For more information, see [`Express interest in the Submerged Depth and Pressure API`](https://developer.apple.comhttps://developer.apple.com/contact/request/submerged-depth-pressure-api/).
 
-Before you can access live dive data, your app needs to include an entitlement to access submersion data. For more information, see [`Express interest in the Submerged Depth and Pressure API`](https://developer.apple.comhttps://developer.apple.com/contact/request/submerged-depth-pressure-api/).
-
 For more information, see [`Responding to the Action button on Apple Watch Ultra`](actionbuttonarticle.md).
 
 ## Relationships
@@ -52,6 +50,7 @@ For more information, see [`Responding to the Action button on Apple Watch Ultra
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SystemIntent](systemintent.md)
 
 ## See Also

@@ -8,6 +8,13 @@ Learn about important changes to GameKit.
 
 Browse notable changes in [`GameKit`](https://developer.apple.com/documentation/GameKit).
 
+#### June 2025
+
+- Use a GameKit Configuration file in Xcode to configure Game Activities and Challenges.
+- Test leaderboard score submissions by receiving system notifications when they happen. On iOS, open Settings > Developer, then turn on Notify About Score Submissions.
+- Use [`GKGameActivity`](https://developer.apple.com/documentation/GameKit/GKGameActivity) to present players with ways to engage each other in your game.
+- Configure challenges in Xcode or App Store Connect and use  [`GKChallengeDefinition`](https://developer.apple.com/documentation/GameKit/GKChallengeDefinition) to retrieve the metadata you define.
+
 #### June 2024
 
 ##### Dashboard
@@ -29,12 +36,16 @@ Browse notable changes in [`GameKit`](https://developer.apple.com/documentation/
   Learn about important changes in ActivityKit.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [App Intents updates](appintents.md)
   Learn about important changes in App Intents.
 - [AppKit updates](appkit.md)
   Learn about important changes to AppKit.
 - [Apple Intelligence updates](apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -47,10 +58,6 @@ Browse notable changes in [`GameKit`](https://developer.apple.com/documentation/
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
 
 
 ---

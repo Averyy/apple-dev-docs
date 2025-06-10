@@ -1,6 +1,6 @@
 # DOM_WRONG_DOCUMENT_ERR
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

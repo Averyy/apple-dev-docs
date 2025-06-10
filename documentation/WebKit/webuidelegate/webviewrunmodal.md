@@ -1,6 +1,6 @@
 # webViewRunModal(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Displays a web view in a modal window.

@@ -13,6 +13,7 @@ An optional closure that CarPlay invokes when the user selects an image.
 ## Declaration
 
 ```swift
+@MainActor
 var listImageRowHandler: ((CPListImageRowItem, Int, @escaping () -> Void) -> Void)? { get set }
 ```
 

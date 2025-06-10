@@ -1,6 +1,6 @@
 # name
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The name of the message handler to which the message is sent.

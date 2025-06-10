@@ -1,6 +1,6 @@
 # TYPE_RELOAD
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

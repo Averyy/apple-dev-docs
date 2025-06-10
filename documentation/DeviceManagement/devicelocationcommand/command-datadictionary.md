@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to request a device’s location.
+The command to request the location of a device when in Lost Mode.
 
 **Availability**:
 - iOS 9.3+
 - iPadOS 9.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

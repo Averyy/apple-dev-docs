@@ -1,6 +1,6 @@
 # webView(_:createWebViewWith:for:windowFeatures:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Creates a new web view.

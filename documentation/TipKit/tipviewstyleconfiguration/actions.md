@@ -15,7 +15,8 @@
 ## Declaration
 
 ```swift
-var actions: [Tips.Action] { get }
+@MainActor
+@preconcurrency var actions: [Tips.Action] { get }
 ```
 
 

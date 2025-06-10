@@ -26,7 +26,7 @@ class MTRClusterMicrowaveOvenControl
 - [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclustermicrowaveovencontrol/init(device:endpointid:queue:).md)
   For all instance methods that take a completion (i.e. command invocations), the completion will be called on the provided queue.
 ### Instance Methods
-- [func addMoreTime(with: MTRMicrowaveOvenControlClusterAddMoreTimeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustermicrowaveovencontrol/addmoretime(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func addMoreTime(with: MTRMicrowaveOvenControlClusterAddMoreTimeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustermicrowaveovencontrol/addmoretime(with:expectedvalues:expectedvalueinterval:completion:).md)
 - [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclustermicrowaveovencontrol/readattributeacceptedcommandlist(with:).md)
 - [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclustermicrowaveovencontrol/readattributeattributelist(with:).md)
 - [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclustermicrowaveovencontrol/readattributeclusterrevision(with:).md)
@@ -39,8 +39,8 @@ class MTRClusterMicrowaveOvenControl
 - [func readAttributePowerSetting(with: MTRReadParams?) -> [String : Any]?](mtrclustermicrowaveovencontrol/readattributepowersetting(with:).md)
 - [func readAttributePowerStep(with: MTRReadParams?) -> [String : Any]?](mtrclustermicrowaveovencontrol/readattributepowerstep(with:).md)
 - [func readAttributeWattRating(with: MTRReadParams?) -> [String : Any]?](mtrclustermicrowaveovencontrol/readattributewattrating(with:).md)
-- [func setCookingParametersWith(MTRMicrowaveOvenControlClusterSetCookingParametersParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustermicrowaveovencontrol/setcookingparameterswith(_:expectedvalues:expectedvalueinterval:completion:).md)
-- [func setCookingParametersWithExpectedValues([[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustermicrowaveovencontrol/setcookingparameterswithexpectedvalues(_:expectedvalueinterval:completion:).md)
+- [func setCookingParametersWith(MTRMicrowaveOvenControlClusterSetCookingParametersParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustermicrowaveovencontrol/setcookingparameterswith(_:expectedvalues:expectedvalueinterval:completion:).md)
+- [func setCookingParametersWithExpectedValues([[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustermicrowaveovencontrol/setcookingparameterswithexpectedvalues(_:expectedvalueinterval:completion:).md)
 
 ## Relationships
 

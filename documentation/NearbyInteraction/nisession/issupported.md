@@ -25,8 +25,6 @@ class var isSupported: Bool { get }
 
 > ⚠️ **Warning**:  This property is deprecated.
 
- This property is deprecated.
-
 ##### Check the Devices Supported Features
 
 In iOS 16 and watchOS 9, check a device’s supported features with [`deviceCapabilities`](nisession/devicecapabilities.md) instead of calling this function.

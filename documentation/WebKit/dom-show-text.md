@@ -1,6 +1,6 @@
 # DOM_SHOW_TEXT
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

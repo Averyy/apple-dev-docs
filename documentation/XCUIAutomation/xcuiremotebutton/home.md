@@ -1,6 +1,6 @@
 # XCUIRemoteButton.home
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents the home button on a remote.

@@ -12,8 +12,6 @@ The payload you use to configure certificate transparency enforcement.
 - tvOS 12.1.1+
 - visionOS 1.0+
 - watchOS 5.1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,17 +27,17 @@ Specify `com.apple.security.certificatetransparency` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS, watchOS |
-| User Channel | - |
-| Allow Manual Install | iOS, macOS, tvOS, watchOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Allow Multiple Payloads | iOS, macOS, Shared iPad, tvOS, watchOS |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| User channel | NA |
+| Allow manual install | iOS, macOS, tvOS, visionOS, watchOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -90,7 +88,7 @@ Specify `com.apple.security.certificatetransparency` as the payload type.
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object CertificateTransparency.SubjectPublicKeyInfoHashDict](certificatetransparency/subjectpublickeyinfohashdict.md)
   A dictionary of hashed public keys.
 

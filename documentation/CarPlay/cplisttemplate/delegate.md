@@ -13,6 +13,7 @@ The object that serves as the delegate to the list template.
 ## Declaration
 
 ```swift
+@MainActor
 weak var delegate: (any CPListTemplateDelegate)? { get set }
 ```
 

@@ -1,6 +1,6 @@
 # zoomFactor
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The zoom factor for the live video in the camera.

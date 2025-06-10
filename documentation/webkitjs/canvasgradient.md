@@ -1,6 +1,6 @@
 # CanvasGradient
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 `CanvasGradient` instances define visual gradients that can be displayed on the HTML canvas element. The `CanvasRenderingContext2D` properties `fillStyle` and `strokeStyle` can be set to a `CanvasGradient` object. You obtain a `CanvasGradient` instance by calling one of the gradient creation methods of the `CanvasRenderingContext2D` class—`createLinearGradient()` or `createRadialGradient()`.

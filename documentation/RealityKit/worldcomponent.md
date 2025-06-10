@@ -10,6 +10,7 @@ A component that defines a portal world.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -30,8 +31,6 @@ See [`PortalComponent`](portalcomponent.md) for information about example usage,
 
 ### Initializers
 - [init()](worldcomponent/init.md)
-### Default Implementations
-- [Component Implementations](worldcomponent/component-implementations.md)
 
 ## Relationships
 

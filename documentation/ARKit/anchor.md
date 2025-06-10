@@ -6,6 +6,7 @@
 The identity, location, and orientation of an object in world space.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -34,10 +35,13 @@ protocol Anchor : CustomStringConvertible, Identifiable, Sendable
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Inherited By
 - [TrackableAnchor](trackableanchor.md)
 ### Conforming Types
+- [AccessoryAnchor](accessoryanchor.md)
 - [BarcodeAnchor](barcodeanchor.md)
+- [CameraRegionAnchor](cameraregionanchor.md)
 - [DeviceAnchor](deviceanchor.md)
 - [EnvironmentProbeAnchor](environmentprobeanchor.md)
 - [HandAnchor](handanchor.md)

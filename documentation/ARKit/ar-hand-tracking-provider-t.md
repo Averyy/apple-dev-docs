@@ -5,6 +5,9 @@
 
 A source of live data about the position of a person’s hands and hand joints.
 
+**Availability**:
+- visionOS 1.0+
+
 ## Declaration
 
 ```swift

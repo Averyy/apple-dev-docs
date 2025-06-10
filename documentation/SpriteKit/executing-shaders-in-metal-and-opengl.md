@@ -12,8 +12,6 @@ You can specify which renderer your device uses—for example, forcing a Metal-e
 
 > ❗ **Important**:  To ensure compatibility across all devices, test your shader code with and without the `PrefersOpenGL` key, to be certain it compiles in both environments.
 
- To ensure compatibility across all devices, test your shader code with and without the `PrefersOpenGL` key, to be certain it compiles in both environments.
-
 
 ---
 

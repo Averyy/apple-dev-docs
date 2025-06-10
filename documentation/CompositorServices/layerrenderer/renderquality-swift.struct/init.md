@@ -1,0 +1,19 @@
+# init(_:)
+
+**Framework**: Compositor Services  
+**Kind**: init
+
+**Availability**:
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+init(_ rawValue: Float)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/compositorservices/layerrenderer/renderquality-swift.struct/init(_:))*

@@ -8,8 +8,6 @@ A dictionary that describes an error chain item.
 **Availability**:
 - iOS 10.3+
 - iPadOS 10.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

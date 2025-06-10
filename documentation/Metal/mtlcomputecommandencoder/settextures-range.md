@@ -23,8 +23,6 @@ func setTextures(_ textures: [(any MTLTexture)?], range: Range<Int>)
 
 > ❗ **Important**:  This method requires that the number of instances in `textures` be the same as the length of `range`.
 
- This method requires that the number of instances in `textures` be the same as the length of `range`.
-
 ## Parameters
 
 - `textures`: A list of   instances to bind to the texture argument table.

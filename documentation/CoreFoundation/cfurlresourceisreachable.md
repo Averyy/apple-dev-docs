@@ -1,6 +1,6 @@
 # CFURLResourceIsReachable(_:_:)
 
-**Framework**: Corefoundation  
+**Framework**: Core Foundation  
 **Kind**: func
 
 Returns whether the resource pointed to by a file URL can be reached.

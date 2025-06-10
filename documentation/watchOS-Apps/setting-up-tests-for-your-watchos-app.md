@@ -1,6 +1,6 @@
 # Setting up tests for your watchOS app
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Configure your watch-only project with unit tests and user interface tests.
 

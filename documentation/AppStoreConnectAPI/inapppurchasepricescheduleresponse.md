@@ -17,6 +17,9 @@ object InAppPurchasePriceScheduleResponse
 - [object InAppPurchasePriceSchedule](inapppurchasepriceschedule.md)
 - [object InAppPurchasePriceScheduleCreateRequest](inapppurchasepriceschedulecreaterequest.md)
 - [object InAppPurchasePricesResponse](inapppurchasepricesresponse.md)
+- [object InAppPurchasePriceScheduleAutomaticPricesLinkagesResponse](inapppurchasepricescheduleautomaticpriceslinkagesresponse.md)
+- [object InAppPurchasePriceScheduleBaseTerritoryLinkageResponse](inapppurchasepriceschedulebaseterritorylinkageresponse.md)
+- [object InAppPurchasePriceScheduleManualPricesLinkagesResponse](inapppurchasepriceschedulemanualpriceslinkagesresponse.md)
 
 
 ---

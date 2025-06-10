@@ -1,0 +1,18 @@
+# kNonMagneticDriveMask
+
+**Framework**: Kernel  
+**Kind**: econst
+
+**Availability**:
+- macOS 10.12+
+
+## Declaration
+
+```swift
+kNonMagneticDriveMask = (1 << kNonMagneticDriveBit)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/1646151-anonymous/knonmagneticdrivemask)*

@@ -1,6 +1,6 @@
 # date
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The timestamp’s representation as a date.

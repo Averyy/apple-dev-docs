@@ -20,6 +20,8 @@ Capture audio and video directly to media files, or capture streams of media for
 - [protocol AVCaptureFileOutputRecordingDelegate](avcapturefileoutputrecordingdelegate.md)
   Methods for responding to events that occur while recording captured media to a file.
 ### Stream capture
+- [Capturing Spatial Audio in your iOS app](capturing-spatial-audio-in-your-ios-app.md)
+  Enhance your app’s audio recording capabilities by supporting Spatial Audio capture.
 - [class AVCaptureVideoDataOutput](avcapturevideodataoutput.md)
   A capture output that records video and provides access to video frames for processing.
 - [class AVCaptureAudioDataOutput](avcaptureaudiodataoutput.md)

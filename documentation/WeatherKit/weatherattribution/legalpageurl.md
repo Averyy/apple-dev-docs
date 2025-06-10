@@ -1,6 +1,6 @@
 # legalPageURL
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A link to the legal attribution page that contains copyright information about the weather data sources.

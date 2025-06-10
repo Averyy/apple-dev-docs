@@ -17,6 +17,7 @@ Pauses video playback.
 ## Declaration
 
 ```swift
+@MainActor
 func pause()
 ```
 

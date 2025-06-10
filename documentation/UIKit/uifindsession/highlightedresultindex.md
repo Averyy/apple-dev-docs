@@ -20,7 +20,7 @@ var highlightedResultIndex: Int { get }
 
 #### Discussion
 
-To indicate no highlighted result, return `nil` (Swift) or [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound-8f9) (Objective-C).
+To indicate no highlighted result, return `nil` (Swift) or [`NSNotFound`](https://developer.apple.com/documentation/Foundation/NSNotFound-9t5v2) (Objective-C).
 
 ## See Also
 

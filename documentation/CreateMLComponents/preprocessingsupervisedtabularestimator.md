@@ -61,6 +61,7 @@ struct PreprocessingSupervisedTabularEstimator<Preprocessor, Estimator> where Pr
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SupervisedTabularEstimator](supervisedtabularestimator.md)
 
 ## See Also

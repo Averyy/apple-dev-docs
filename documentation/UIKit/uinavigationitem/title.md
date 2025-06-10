@@ -33,6 +33,9 @@ When the navigation item is on the navigation item stack and is second from the 
   A custom view that displays in the center of the navigation bar when the receiver is the top item.
 - [class UINavigationItem](uinavigationitem.md)
   The items that a navigation bar displays when the associated view controller is visible.
+- [var attributedTitle: AttributedString?](uinavigationitem/attributedtitle-25fxb.md)
+- [var largeTitle: String?](uinavigationitem/largetitle.md)
+  String to be used as the large title.
 - [var largeTitleDisplayMode: UINavigationItem.LargeTitleDisplayMode](uinavigationitem/largetitledisplaymode-swift.property.md)
   The mode for displaying the title of the navigation bar.
 - [UINavigationItem.LargeTitleDisplayMode](uinavigationitem/largetitledisplaymode-swift.enum.md)

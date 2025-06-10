@@ -1,6 +1,6 @@
 # unlimitedStorage
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A request for access to an unlimited quota on the `browser.storage.local` APIs.

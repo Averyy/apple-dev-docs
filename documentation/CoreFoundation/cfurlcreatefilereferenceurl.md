@@ -36,8 +36,6 @@ In some areas of the file system hierarchy, file reference URLs cannot be genera
 
 > ❗ **Important**:  A file reference URL’s path should never be persistently stored, because it is not valid across system restarts or remounts of volumes. If you need to store a persistent reference to a file system object, use a bookmark instead. You can create a bookmark by calling [`CFURLCreateBookmarkData(_:_:_:_:_:_:)`](cfurlcreatebookmarkdata(_:_:_:_:_:_:).md).
 
- A file reference URL’s path should never be persistently stored, because it is not valid across system restarts or remounts of volumes. If you need to store a persistent reference to a file system object, use a bookmark instead. You can create a bookmark by calling [`CFURLCreateBookmarkData(_:_:_:_:_:_:)`](cfurlcreatebookmarkdata(_:_:_:_:_:_:).md).
-
 ## Parameters
 
 - `allocator`: The allocator to use to allocate memory for the new   object. Pass   or   to use the current default allocator.

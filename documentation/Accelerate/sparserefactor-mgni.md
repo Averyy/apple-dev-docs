@@ -35,6 +35,23 @@ Note that if the reference count of the underlying object is not exactly one (i.
 - `Matrix`: The matrix to be factorized.
 - `Factorization`: The factorization to be updated.
 
+## See Also
+
+- [func SparseRefactor(SparseMatrix_Double, UnsafeMutablePointer<SparseOpaqueFactorization_Double>)](sparserefactor(_:_:)-8vrf5.md)
+  Computes a factorization of the specified double-precision matrix using an existing factorization’s storage.
+- [func SparseRefactor(SparseMatrix_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Float>)](sparserefactor(_:_:)-21q4x.md)
+  Computes a factorization of the specified single-precision matrix using an existing factorization’s storage.
+- [func SparseRefactor(SparseMatrix_Double, UnsafeMutablePointer<SparseOpaqueFactorization_Double>, SparseNumericFactorOptions)](sparserefactor(_:_:_:)-6ttkd.md)
+  Computes a factorization of the specified double-precision matrix using an existing factorization’s storage and specified options.
+- [func SparseRefactor(SparseMatrix_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Float>, SparseNumericFactorOptions)](sparserefactor(_:_:_:)-2ovxs.md)
+  Computes a factorization of the specified single-precision matrix using an existing factorization’s storage and specified options.
+- [func SparseRefactor(SparseMatrix_Complex_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Float>)](sparserefactor(_:_:)-zegz.md)
+  Reuses supplied factorization object’s storage to compute a new factorization of the supplied matrix of complex float values.
+- [func SparseRefactor(SparseMatrix_Complex_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Float>, SparseNumericFactorOptions)](sparserefactor(_:_:_:)-4chx2.md)
+  Reuses supplied factorization object’s storage to compute a new factorization of the supplied matrix of complex float values, using different options.
+- [func SparseRefactor(SparseMatrix_Complex_Double, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Double>, SparseNumericFactorOptions)](sparserefactor(_:_:_:)-q0va.md)
+  Reuses supplied factorization object’s storage to compute a new factorization of the supplied matrix of complex double values, using different options.
+
 
 ---
 

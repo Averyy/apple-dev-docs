@@ -1,6 +1,6 @@
 # Configuring a Border Router
 
-**Framework**: Threadnetwork
+**Framework**: ThreadNetwork
 
 Set up or add a Border Router on a Thread network.
 
@@ -33,10 +33,12 @@ After you’ve configured the Border Router, use [`storeCredentials(forBorderAge
 
 ## See Also
 
+- [Getting started with ThreadNetwork](getting-started-with-threadnetwork.md)
+  Create a plan to build, test, and deploy your Thread Border Router app.
 - [Managing Thread network credentials](managing-thread-network-credentials.md)
-  Store, delete, retrieve, and update Thread network credentials on your Apple device.
+  Store, retrieve, update, and delete Thread network credentials on your Apple device.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ThreadNetwork/configuring-a-border-router)*
+*[View on Apple Developer](https://developer.apple.com/documentation/threadnetwork/configuring-a-border-router)*

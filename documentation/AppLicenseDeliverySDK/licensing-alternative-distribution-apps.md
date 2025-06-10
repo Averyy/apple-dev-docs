@@ -1,6 +1,6 @@
 # Licensing alternative distribution apps
 
-**Framework**: Applicensedeliverysdk
+**Framework**: App License Delivery SDK
 
 Build a license server that supports the installation of your apps and the apps available in your marketplace.
 
@@ -343,4 +343,4 @@ You can determine the number of active installs of a particular app for an accou
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppLicenseDeliverySDK/licensing-alternative-distribution-apps)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applicensedeliverysdk/licensing-alternative-distribution-apps)*

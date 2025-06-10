@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: init
 
 Creates an instance from a raw type.

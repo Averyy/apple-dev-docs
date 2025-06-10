@@ -15,6 +15,18 @@
 bool IORecursiveLockTryLock(struct IORecursiveLock * lock);
 ```
 
+#### Return Value
+
+True if the lock is now locked by the caller, otherwise false.
+
+#### Discussion
+
+Lock the lock if it is currently unlocked, or held by the calling thread, and return true. If the lock is held by another thread, return false. Successful calls to IORecursiveLockTryLock should be balanced with calls to IORecursiveLockUnlock.
+
+## Parameters
+
+- `lock`: Pointer to the allocated lock.
+
 ## See Also
 
 - [dequeue_head](dequeue_head.md)

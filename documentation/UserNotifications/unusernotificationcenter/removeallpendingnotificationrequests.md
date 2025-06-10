@@ -1,6 +1,6 @@
 # removeAllPendingNotificationRequests()
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: method
 
 Removes all of your app’s pending local notifications.

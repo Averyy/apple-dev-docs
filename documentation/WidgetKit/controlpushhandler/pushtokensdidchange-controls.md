@@ -1,6 +1,6 @@
 # pushTokensDidChange(controls:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: method  
 **Required**: Yes
 
@@ -9,7 +9,9 @@ Handle push tokens changing for configured controls.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 

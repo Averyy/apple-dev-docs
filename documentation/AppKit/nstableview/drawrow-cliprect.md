@@ -1,6 +1,6 @@
 # drawRow(_:clipRect:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Draws the cells for the row at `rowIndex` in the columns that intersect `clipRect`.

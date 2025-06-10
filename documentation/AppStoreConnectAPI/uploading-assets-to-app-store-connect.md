@@ -1,6 +1,6 @@
 # Uploading Assets to App Store Connect
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Upload screenshots, app previews, attachments for App Review, and routing app coverage files to App Store Connect.
 
@@ -19,10 +19,15 @@ This workflow is the same for every asset type you manage and upload using the f
 
 | Asset Type | API Resource |
 | --- | --- |
-| App Store screenshots | [`App Screenshot Sets`](app-screenshot-sets.md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`App Screenshots`](app-screenshots.md) |
-| App previews | [`App Preview Sets`](app-preview-sets.md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`App Previews`](app-previews.md) |
-| App Clip card images | [`App Clip Header Images`](app-clip-header-images.md) ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) [`Advanced App Clip Experience Images`](advanced-app-clip-experience-images.md) |
+| App Store screenshots | [`App Screenshot Sets`](app-screenshot-sets.md)   [`App Screenshots`](app-screenshots.md) |
+| App event screenshots | [`App Event Screenshots`](app-event-screenshots.md) |
+| App previews | [`App Preview Sets`](app-preview-sets.md)   [`App Previews`](app-previews.md) |
+| App Clip card images | [`App Clip Header Images`](app-clip-header-images.md)   [`Advanced App Clip Experience Images`](advanced-app-clip-experience-images.md) |
 | Attachments for the App Review team | [`App Store review attachments`](app-store-review-attachments.md) |
+| In-App purchase App Store review screenshots | [`In-App Purchase App Store Review Screenshots`](in-app-purchase-app-store-review-screenshots.md) |
+| In-app purchase images | [`In-app purchase images`](in-app-purchase-images.md) |
+| Subscription App Store review screenshots | [`Subscription App Store Review Screenshots`](subscription-app-store-review-screenshots.md) |
+| Subscription images | [`Subscription images`](subscription-images.md) |
 | Routing app coverage files | [`Routing App Coverages`](routing-app-coverages.md) |
 
 ##### Make an Asset Reservation
@@ -211,4 +216,4 @@ If your asset fails processing at App Store Connect, the asset state will change
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/uploading-assets-to-app-store-connect)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/uploading-assets-to-app-store-connect)*

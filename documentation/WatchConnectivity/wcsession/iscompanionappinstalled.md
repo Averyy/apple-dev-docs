@@ -1,6 +1,6 @@
 # isCompanionAppInstalled
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 A Boolean value indicating whether the companion has installed the app.

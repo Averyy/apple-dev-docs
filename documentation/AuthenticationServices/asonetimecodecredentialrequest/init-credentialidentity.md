@@ -16,6 +16,10 @@
 init(credentialIdentity: ASOneTimeCodeCredentialIdentity)
 ```
 
+## Parameters
+
+- `credentialIdentity`: The credential identity to use for this request.
+
 
 ---
 

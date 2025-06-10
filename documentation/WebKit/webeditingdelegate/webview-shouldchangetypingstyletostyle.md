@@ -1,6 +1,6 @@
 # webView(_:shouldChangeTypingStyle:toStyle:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns whether the user should be allowed to change the typing style in a web view.

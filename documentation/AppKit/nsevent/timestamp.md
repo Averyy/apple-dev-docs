@@ -16,7 +16,7 @@ var timestamp: TimeInterval { get }
 
 ## See Also
 
-- [var systemUptime: TimeInterval](../foundation/processinfo/1414553-systemuptime.md)
+- [var systemUptime: TimeInterval { get }](../Foundation/ProcessInfo/systemUptime.md)
   The amount of time the system has been awake since the last time it was restarted.
 - [var locationInWindow: NSPoint](nsevent/locationinwindow.md)
   The event location in the base coordinate system of the associated window.

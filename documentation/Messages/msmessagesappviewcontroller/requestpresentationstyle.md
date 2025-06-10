@@ -23,8 +23,6 @@ Use this method when you need to change the extension’s presentation style. Ke
 
 > ❗ **Important**:  You cannot pass the [`MSMessagesAppPresentationStyle.transcript`](msmessagesapppresentationstyle/transcript.md) presentation style to this method.
 
- You cannot pass the [`MSMessagesAppPresentationStyle.transcript`](msmessagesapppresentationstyle/transcript.md) presentation style to this method.
-
 If you call this method on a view controller with a [`MSMessagesAppPresentationStyle.transcript`](msmessagesapppresentationstyle/transcript.md) presentation style (which is a controller that’s presenting an interactive view in the transcript), the system creates a new instance of the view controller and displays it using the provided presentation style.
 
 ## Parameters

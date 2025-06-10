@@ -1,6 +1,6 @@
 # mainResource
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A`WebResource` object representing the data source.

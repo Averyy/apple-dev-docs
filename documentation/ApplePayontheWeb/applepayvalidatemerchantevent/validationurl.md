@@ -23,7 +23,7 @@ readonly attribute DOMString validationURL;
 
 This attribute is contained by the [`onvalidatemerchant`](applepaysession/onvalidatemerchant.md) event. Access this attribute using the event parameter, for example, `var URL = event.validationURL;`.
 
-Pass the URL in the [`validationURL`](applepayvalidatemerchantevent/validationurl.md) attribute to your server, as described in [`Providing Merchant Validation`](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/providing_merchant_validation).
+Pass the URL in the [`validationURL`](applepayvalidatemerchantevent/validationurl.md) attribute to your server, as described in [`Providing Merchant Validation`](providing-merchant-validation.md).
 
 
 ---

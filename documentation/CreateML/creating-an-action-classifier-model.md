@@ -1,6 +1,6 @@
 # Creating an Action Classifier Model
 
-**Framework**: Createml
+**Framework**: Create ML
 
 Train a machine learning model to recognize a person’s body movements.
 
@@ -152,4 +152,4 @@ For an example app that integrates and applies an action classifier, see the rel
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateML/creating-an-action-classifier-model)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createml/creating-an-action-classifier-model)*

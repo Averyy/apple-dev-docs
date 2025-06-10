@@ -1,6 +1,6 @@
 # activeVideoStabilizationMode
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The connection’s current stabilization mode.

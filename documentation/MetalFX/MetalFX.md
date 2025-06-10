@@ -45,6 +45,26 @@ Because the scaling effects take time to initialize, make an instance of either 
   A set of properties that configure a spatial scaling effect, and a factory method that creates the effect.
 - [enum MTLFXSpatialScalerColorProcessingMode](mtlfxspatialscalercolorprocessingmode.md)
   The color space modes for the input and output textures you use with a spatial scaling effect instance.
+### Classes
+- [class MTLFXFrameInterpolatorDescriptor](mtlfxframeinterpolatordescriptor.md)
+  A set of properties that configure a frame interpolator, and a factory method that creates the effect.
+- [class MTLFXTemporalDenoisedScalerDescriptor](mtlfxtemporaldenoisedscalerdescriptor.md)
+### Protocols
+- [protocol MTL4FXFrameInterpolator](mtl4fxframeinterpolator.md)
+- [protocol MTL4FXSpatialScaler](mtl4fxspatialscaler.md)
+  An upscaling effect that generates a higher resolution texture in a render pass by spatially analyzing an input texture.
+- [protocol MTL4FXTemporalDenoisedScaler](mtl4fxtemporaldenoisedscaler.md)
+- [protocol MTL4FXTemporalScaler](mtl4fxtemporalscaler.md)
+- [protocol MTLFXFrameInterpolator](mtlfxframeinterpolator.md)
+- [protocol MTLFXFrameInterpolatorBase](mtlfxframeinterpolatorbase.md)
+  A common abstraction to all frame interpolators.
+- [protocol MTLFXSpatialScalerBase](mtlfxspatialscalerbase.md)
+  An upscaling effect that generates a higher resolution texture in a render pass by spatially analyzing an input texture.
+- [protocol MTLFXTemporalDenoisedScaler](mtlfxtemporaldenoisedscaler.md)
+- [protocol MTLFXTemporalDenoisedScalerBase](mtlfxtemporaldenoisedscalerbase.md)
+  A common abstraction to all denoiser scalers.
+- [protocol MTLFXTemporalScalerBase](mtlfxtemporalscalerbase.md)
+  An upscaling effect that generates a higher resolution texture in a render pass by analyzing multiple input textures over time.
 
 
 ---

@@ -12,8 +12,6 @@ The Root dictionary of the `AppIntentVocabulary.plist` file contains the followi
 
 > ❗ **Important**:  During development, Xcode syncs your vocabulary with Siri, which uses the vocabulary to interpret requests from the version of your app on your development device. Ingestion of your vocabulary data isn’t instantaneous, though, so you may need to wait a minute or two before testing your Siri capabilities.
 
- During development, Xcode syncs your vocabulary with Siri, which uses the vocabulary to interpret requests from the version of your app on your development device. Ingestion of your vocabulary data isn’t instantaneous, though, so you may need to wait a minute or two before testing your Siri capabilities.
-
 ## Topics
 
 ### Property List Keys

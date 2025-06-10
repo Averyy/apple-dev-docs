@@ -24,8 +24,6 @@ func setBytes(_ bytes: UnsafeRawPointer, length: Int, attributeStride stride: In
 
 > ❗ **Important**:  This method only works for data smaller than 4 kilobytes that doesn’t persist. Create an [`MTLBuffer`](mtlbuffer.md) instance if your data exceeds 4 KB, needs to persist on the GPU, or you access results on the CPU.
 
- This method only works for data smaller than 4 kilobytes that doesn’t persist. Create an [`MTLBuffer`](mtlbuffer.md) instance if your data exceeds 4 KB, needs to persist on the GPU, or you access results on the CPU.
-
 This method allows Metal to copy data directly onto the GPU, rather than creating a new [`MTLBuffer`](mtlbuffer.md) instance and binding it. Binding data directly can improve performance, especially when making many small allocations.
 
 ## Parameters

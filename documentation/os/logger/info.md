@@ -24,8 +24,6 @@ func info(_ message: OSLogMessage)
 
 > ❗ **Important**:  Don’t create an instance of [`OSLogMessage`](oslogmessage.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
 
- Don’t create an instance of [`OSLogMessage`](oslogmessage.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
-
 Use this method to write messages with the [`info`](oslogtype/info.md) log level to the in-memory log store only. If you use the `log` command line tool to collect your logs, the method also writes messages to the on-disk log store.
 
 ## Parameters

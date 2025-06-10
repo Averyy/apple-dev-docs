@@ -1,0 +1,24 @@
+# constant(values:rowMajor:)
+
+**Framework**: Accelerate  
+**Kind**: method
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+func constant(values: Array<Array<Float16>>, rowMajor: Bool = false) -> BNNSGraph.Builder.Tensor<Float16>
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/bnnsgraph/builder/constant(values:rowmajor:)-7b4v2)*

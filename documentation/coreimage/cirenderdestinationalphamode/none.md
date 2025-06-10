@@ -1,23 +1,30 @@
 # CIRenderDestinationAlphaMode.none
 
 **Framework**: Core Image  
-**Kind**: enumelt
+**Kind**: case
 
 Designates a destination with no alpha compositing.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.0+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-case none = 0
+case none
 ```
+
+## See Also
+
+- [CIRenderDestinationAlphaMode.premultiplied](cirenderdestinationalphamode/premultiplied.md)
+  Designates a destination that expects premultiplied alpha values.
+- [CIRenderDestinationAlphaMode.unpremultiplied](cirenderdestinationalphamode/unpremultiplied.md)
+  Designates a destination that expects non-premultiplied alpha values.
 
 
 ---

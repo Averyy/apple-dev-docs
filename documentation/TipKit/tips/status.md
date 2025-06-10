@@ -1,4 +1,4 @@
-# Tips.Status
+# Status
 
 **Framework**: TipKit  
 **Kind**: enum
@@ -36,6 +36,12 @@ enum Status
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [enum InvalidationReason](tips/invalidationreason.md)
+  A type that describes why the system permanently invalidated a tip.
 
 
 ---

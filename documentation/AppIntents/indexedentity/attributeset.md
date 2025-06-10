@@ -9,7 +9,7 @@ Provide a customized attribute set for improved search accuracy.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
 - visionOS 2.0+
 
@@ -18,6 +18,10 @@ Provide a customized attribute set for improved search accuracy.
 ```swift
 var attributeSet: CSSearchableItemAttributeSet { get }
 ```
+
+## Mentions
+
+- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
 
 #### Discussion
 

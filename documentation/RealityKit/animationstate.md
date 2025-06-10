@@ -10,6 +10,7 @@ The concretely typed animation state structure.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -50,8 +51,6 @@ Access the animation state structure from the event structure returned to  the a
   Stores a subset of animated joints.
 - [func storeAnimatedValue<ValueType>(ValueType) -> Bool](animationstate/storeanimatedvalue(_:).md)
   See: [`storeAnimatedValue(_:)`](animationstateprotocol/storeanimatedvalue(_:).md)
-### Type Aliases
-- [AnimationState.ValueType](animationstate/valuetype.md)
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 # STENCIL_BACK_VALUE_MASK
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

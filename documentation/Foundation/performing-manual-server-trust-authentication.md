@@ -83,4 +83,4 @@ If you determine that you need to evaluate server trust manually in some or all 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/performing-manual-server-trust-authentication)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/performing-manual-server-trust-authentication)*

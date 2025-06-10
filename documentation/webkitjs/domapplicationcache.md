@@ -1,6 +1,6 @@
 # DOMApplicationCache
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 A `DOMApplicationCache` object is used to store resources—such as, HTML, JavaScript, CSS, and images—locally. This allows your web application to continue running offline when there is no network connection. The cache persists after Safari exits, so it can be used by multiple browser sessions. There is one application cache per browsing context. 

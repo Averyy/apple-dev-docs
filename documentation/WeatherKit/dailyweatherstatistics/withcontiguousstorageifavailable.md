@@ -1,6 +1,6 @@
 # withContiguousStorageIfAvailable(_:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Executes a closure on the sequence’s contiguous storage.

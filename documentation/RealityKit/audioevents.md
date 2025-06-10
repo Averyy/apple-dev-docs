@@ -10,6 +10,7 @@ Events associated with audio playback.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -32,6 +33,7 @@ For more information on subscribing to scene events, see `RealityKit/Scene/Event
 
 - [enum VideoPlayerEvents](videoplayerevents.md)
   Events associated with video playback for VideoPlayerComponent.
+- [enum ImagePresentationEvents](imagepresentationevents.md)
 
 
 ---

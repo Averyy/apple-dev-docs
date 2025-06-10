@@ -141,4 +141,4 @@ To validate your receipt in the production environment and limit the content of 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3122-receipt-validation-with-the-app-store-fails-with-a-non-zero-error-code)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3122-receipt-validation-with-the-app-store-fails-with-a-non-zero-error-code)*

@@ -8,6 +8,7 @@
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS ?+
 
 ## Declaration
 
@@ -17,20 +18,9 @@ enum CustomShaderStage
 
 ## Topics
 
-### Operators
-- [static func == (CustomShaderStage, CustomShaderStage) -> Bool](customshaderstage/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [CustomShaderStage.geometryModifier](customshaderstage/geometrymodifier.md)
 - [CustomShaderStage.surfaceShader](customshaderstage/surfaceshader.md)
-### Instance Properties
-- [var hashValue: Int](customshaderstage/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](customshaderstage/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](customshaderstage/equatable-implementations.md)
 
 ## Relationships
 
@@ -38,10 +28,12 @@ enum CustomShaderStage
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [struct ShaderGraphMaterial](shadergraphmaterial.md)
+  Create dynamic materials without Metal.
 - [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
 - [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)

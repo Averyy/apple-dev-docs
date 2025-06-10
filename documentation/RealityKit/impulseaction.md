@@ -10,6 +10,7 @@ An action that applies an impulse to the physics body at its center of mass when
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -44,17 +45,11 @@ entity.playAnimation(impulseAnimation)
 
 > ❗ **Important**: This action does not directly animate a bound property, such as [`BindTarget.transform`](bindtarget/transform.md).
 
-This action does not directly animate a bound property, such as [`BindTarget.transform`](bindtarget/transform.md).
-
 > 💡 **Tip**: This action performs instantaneously, consider supplying a small positive duration value when creating the animation.
-
-This action performs instantaneously, consider supplying a small positive duration value when creating the animation.
 
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](impulseaction/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(targetEntity: ActionEntityResolution, linearImpulse: SIMD3<Float>)](impulseaction/init(targetentity:linearimpulse:).md)
   Creates a new impulse action.
 ### Instance Properties
@@ -64,14 +59,6 @@ This action performs instantaneously, consider supplying a small positive durati
   An impulse in newton seconds (in physics simulation space).
 - [var targetEntity: ActionEntityResolution](impulseaction/targetentity.md)
   The entity that the impulse acts upon.
-### Instance Methods
-- [func encode(to: any Encoder) throws](impulseaction/encode(to:).md)
-  Encodes this value into the given encoder.
-### Type Aliases
-- [ImpulseAction.EventParameterType](impulseaction/eventparametertype.md)
-  The associated event parameter type.
-### Default Implementations
-- [EntityAction Implementations](impulseaction/entityaction-implementations.md)
 
 ## Relationships
 

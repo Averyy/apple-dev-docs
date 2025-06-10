@@ -1,6 +1,6 @@
 # SKOverlay
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: class
 
 A class that displays an overlay you can use to recommend another app or an App Clip’s corresponding full app.
@@ -99,4 +99,4 @@ To respond to the overlay’s appearance, dismissal, or failure to load, set the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/skoverlay)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/skoverlay)*

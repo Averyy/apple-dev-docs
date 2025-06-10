@@ -24,8 +24,6 @@ If you do not implement this method, the contextual menu item is always availabl
 
 > ❗ **Important**:  This method is called by Safari after the user has already clicked to display the menu and before the menu is displayed. Because this is a time-sensitive operation, your extension should call the validation handler as soon as possible after receiving the call. If an extension does not respond in a reasonable period of time, Safari will display the contextual menu item using the default text.
 
- This method is called by Safari after the user has already clicked to display the menu and before the menu is displayed. Because this is a time-sensitive operation, your extension should call the validation handler as soon as possible after receiving the call. If an extension does not respond in a reasonable period of time, Safari will display the contextual menu item using the default text.
-
 To hide the contextual menu item:
 
 To change the menu text:

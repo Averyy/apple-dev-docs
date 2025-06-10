@@ -65,8 +65,6 @@ Because `ImageRenderer` conforms to [`ObservableObject`](https://developer.apple
 
 > ❗ **Important**: `ImageRenderer` output only includes views that SwiftUI renders, such as text, images, shapes, and composite views of these types. It does not render views provided by native platform frameworks (AppKit and UIKit) such as web views, media players, and some controls. For these views, `ImageRenderer` displays a placeholder image, similar to the behavior of [`drawingGroup(opaque:colorMode:)`](view/drawinggroup(opaque:colormode:).md).
 
-`ImageRenderer` output only includes views that SwiftUI renders, such as text, images, shapes, and composite views of these types. It does not render views provided by native platform frameworks (AppKit and UIKit) such as web views, media players, and some controls. For these views, `ImageRenderer` displays a placeholder image, similar to the behavior of [`drawingGroup(opaque:colorMode:)`](view/drawinggroup(opaque:colormode:).md).
-
 ##### Rendering to a Pdf Context
 
 The [`render(rasterizationScale:renderer:)`](imagerenderer/render(rasterizationscale:renderer:).md) method renders the specified view to any [`CGContext`](https://developer.apple.com/documentation/CoreGraphics/CGContext). That means you aren’t limited to creating a rasterized `CGImage`. For example, you can generate PDF data by rendering to a PDF context. The resulting PDF maintains resolution-independence for supported members of the view hierarchy, such as text, symbol images, lines, shapes, and fills.
@@ -123,6 +121,8 @@ var body: some View {
   A Boolean value that indicates whether the alpha channel of the image is fully opaque.
 - [var colorMode: ColorRenderingMode](imagerenderer/colormode.md)
   The working color space and storage format of the image.
+- [var allowedDynamicRange: Image.DynamicRange?](imagerenderer/alloweddynamicrange.md)
+  The allowed dynamic range of the image, or nil to mark that the dynamic range of the image should be unrestricted. This property defaults to `sdr`, i.e. HDR content will be tone mapped to SDR.
 ### Rendering images
 - [func render(rasterizationScale: CGFloat, renderer: (CGSize, (CGContext) -> Void) -> Void)](imagerenderer/render(rasterizationscale:renderer:).md)
   Draws the renderer’s current contents to an arbitrary Core Graphics context.
@@ -135,7 +135,6 @@ var body: some View {
 ### Producing a stream of images
 - [let objectWillChange: PassthroughSubject<Void, Never>](imagerenderer/objectwillchange.md)
   A publisher that informs subscribers of changes to the image.
-### Instance Properties
 - [var isObservationEnabled: Bool](imagerenderer/isobservationenabled.md)
   If observers of this observed object should be notified when the produced image changes.
 

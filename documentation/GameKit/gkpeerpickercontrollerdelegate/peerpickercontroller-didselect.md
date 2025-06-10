@@ -20,8 +20,6 @@ If the peer picker is configured to allow users to choose between multiple conne
 
 > ❗ **Important**:  In iOS 3.0, the peer picker can configure Bluetooth connections ([`GKPeerPickerConnectionType.nearby`](gkpeerpickerconnectiontype/nearby.md)). If the user chooses an Internet connection ([`GKPeerPickerConnectionType.online`](gkpeerpickerconnectiontype/online.md)), your delegate should dismiss the dialog and present its own user interface to configure the Internet connection:
 
- In iOS 3.0, the peer picker can configure Bluetooth connections ([`GKPeerPickerConnectionType.nearby`](gkpeerpickerconnectiontype/nearby.md)). If the user chooses an Internet connection ([`GKPeerPickerConnectionType.online`](gkpeerpickerconnectiontype/online.md)), your delegate should dismiss the dialog and present its own user interface to configure the Internet connection:
-
 ```objc
 - (void)peerPickerController:(GKPeerPickerController *)picker didSelectConnectionType:(GKPeerPickerConnectionType)type {
     if(type == GKPeerPickerConnectionTypeOnline) {

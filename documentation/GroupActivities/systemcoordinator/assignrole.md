@@ -31,10 +31,6 @@ Note that assigning a given role does not guarantee that the participant will be
 
 > ⚠️ **Warning**: You should only assign roles that exist in the current spatial template. This method will emit a runtime warning if the given role is not assigned to a seat in the current [`spatialTemplatePreference`](systemcoordinator/configuration-swift.struct/spatialtemplatepreference.md).
 
-You should only assign roles that exist in the current spatial template.
-
-This method will emit a runtime warning if the given role is not assigned to a seat in the current [`spatialTemplatePreference`](systemcoordinator/configuration-swift.struct/spatialtemplatepreference.md).
-
 ## See Also
 
 - [func resignRole()](systemcoordinator/resignrole.md)

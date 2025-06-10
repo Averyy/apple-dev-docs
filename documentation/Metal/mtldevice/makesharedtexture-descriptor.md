@@ -34,8 +34,6 @@ You can create a shared texture but only with [`storageModePrivate`](mtlresource
 
 > ❗ **Important**:  You can share a texture with another process that uses the same GPU, but not with a different GPU.
 
- You can share a texture with another process that uses the same GPU, but not with a different GPU.
-
 ## Parameters
 
 - `descriptor`: An   instance.

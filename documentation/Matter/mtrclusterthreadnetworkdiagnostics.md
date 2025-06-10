@@ -94,10 +94,10 @@ class MTRClusterThreadNetworkDiagnostics
 - [func readAttributeTxTotalCount(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadnetworkdiagnostics/readattributetxtotalcount(with:).md)
 - [func readAttributeTxUnicastCount(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadnetworkdiagnostics/readattributetxunicastcount(with:).md)
 - [func readAttributeWeighting(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadnetworkdiagnostics/readattributeweighting(with:).md)
-- [func resetCounts(with: MTRThreadNetworkDiagnosticsClusterResetCountsParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterthreadnetworkdiagnostics/resetcounts(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func resetCounts(with: MTRThreadNetworkDiagnosticsClusterResetCountsParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: MTRStatusCompletion)](mtrclusterthreadnetworkdiagnostics/resetcounts(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func resetCounts(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterthreadnetworkdiagnostics/resetcounts(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func resetCounts(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: MTRStatusCompletion)](mtrclusterthreadnetworkdiagnostics/resetcounts(withexpectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func resetCounts(with: MTRThreadNetworkDiagnosticsClusterResetCountsParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterthreadnetworkdiagnostics/resetcounts(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func resetCounts(with: MTRThreadNetworkDiagnosticsClusterResetCountsParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterthreadnetworkdiagnostics/resetcounts(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func resetCounts(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterthreadnetworkdiagnostics/resetcounts(withexpectedvalues:expectedvalueinterval:completion:).md)
+- [func resetCounts(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterthreadnetworkdiagnostics/resetcounts(withexpectedvalues:expectedvalueinterval:completionhandler:).md)
 
 ## Relationships
 

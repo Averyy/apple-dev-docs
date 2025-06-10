@@ -5,6 +5,13 @@
 
 Inserts the elements of another set into this option set.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift

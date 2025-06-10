@@ -1,6 +1,6 @@
 # UIGraphicsPDFRenderer
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A graphics renderer for creating PDFs.
@@ -104,6 +104,8 @@ The above code results in the following PDF:
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -127,4 +129,4 @@ The above code results in the following PDF:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uigraphicspdfrenderer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uigraphicspdfrenderer)*

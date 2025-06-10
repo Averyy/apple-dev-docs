@@ -1,6 +1,6 @@
 # UIButton
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A control that executes your custom code in response to user interactions.
@@ -22,9 +22,9 @@ class UIButton
 ## Mentions
 
 - [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
-- [Supporting VoiceOver in your app](supporting-voiceover-in-your-app.md)
-- [Attaching gesture recognizers to UIKit controls](attaching-gesture-recognizers-to-uikit-controls.md)
 - [Adding user-focusable elements to a tvOS app](adding-user-focusable-elements-to-a-tvos-app.md)
+- [Attaching gesture recognizers to UIKit controls](attaching-gesture-recognizers-to-uikit-controls.md)
+- [Supporting VoiceOver in your app](supporting-voiceover-in-your-app.md)
 
 #### Overview
 
@@ -270,6 +270,7 @@ For more information about making iOS controls accessible, see the accessibility
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityContentSizeCategoryImageAdjusting](uiaccessibilitycontentsizecategoryimageadjusting.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
@@ -314,4 +315,4 @@ For more information about making iOS controls accessible, see the accessibility
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uibutton)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uibutton)*

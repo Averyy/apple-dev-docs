@@ -97,18 +97,83 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
 - [struct nw_multipath_version_t](nw_multipath_version_t.md)
 - [struct nw_path_unsatisfied_reason_t](nw_path_unsatisfied_reason_t.md)
 - [struct nw_quic_stream_type_t](nw_quic_stream_type_t.md)
+- [struct Bonjour](bonjour.md)
+- [struct BonjourListenerProvider](bonjourlistenerprovider.md)
+- [struct Coder](coder.md)
+- [struct DefaultProtocolStorage](defaultprotocolstorage.md)
+- [struct Framer](framer.md)
+- [struct IP](ip.md)
+- [struct NWParametersBuilder](nwparametersbuilder.md)
 - [struct NWTXTRecord](nwtxtrecord.md)
   A dictionary representing a TXT record in a DNS packet.
+- [struct NetworkJSONCoder](networkjsoncoder.md)
+- [struct NetworkPropertyListCoder](networkpropertylistcoder.md)
+- [struct ProtocolMetadataBuilder](protocolmetadatabuilder.md)
+- [struct ProtocolStackBuilder](protocolstackbuilder.md)
 - [struct ProxyConfiguration](proxyconfiguration.md)
   A proxy configuration for Relays, Oblivious HTTP, HTTP CONNECT, or SOCKSv5.
+- [struct QUIC](quic.md)
+  The QUIC type can be used to insert QUIC into a protocol stack. As it conforms to MultiplexProtocol, it exposes configuration a multiplexing instance of QUIC to be used with NetworkConnection, which will in turn expose the ability to handle multiple streams of data over QUIC.
+- [struct QUICDatagram](quicdatagram.md)
+  QUICDatagram exposes sending unreliable datagrams over QUIC via RFC 9221
+- [struct QUICStream](quicstream.md)
+  The default QUIC Stream type for Subconnection objects returned from a NetworkConnection over QUIC. Connection’s parameterized over QUICStream will expose a nearly identical stream interface as TCP. This type is not intended to be inserted into the protocol stack manually.
+- [struct TCP](tcp.md)
+- [struct TLS](tls.md)
+- [struct TLV](tlv.md)
+- [struct TXTRecordDecoder](txtrecorddecoder.md)
+- [struct UDP](udp.md)
+- [struct UnexpectedEndpointType](unexpectedendpointtype.md)
+- [struct WebSocket](websocket.md)
+- [struct nw_link_quality_t](nw_link_quality_t.md)
 ### Classes
 - [class NWMultiplexGroup](nwmultiplexgroup.md)
+- [class NetworkBrowser](networkbrowser.md)
+- [class NetworkConnection](networkconnection.md)
+- [class NetworkListener](networklistener.md)
 ### Reference
 - [Network Constants](network-constants.md)
   Access Network framework constants used in C.
 - [Network Functions](network-functions.md)
   Access Network framework functions used in C.
 - [Network Data Types](network-data-types.md)
+### Protocols
+- [protocol BrowserProvider](browserprovider.md)
+- [protocol Connectable](connectable.md)
+- [protocol ConnectionProtocol](connectionprotocol.md)
+- [protocol ConnectionStorage](connectionstorage.md)
+  Types that conform to ConnectionStorage can be used as additional storage within a NetworkConnection
+- [protocol DatagramProtocol](datagramprotocol.md)
+- [protocol FramerProtocol](framerprotocol.md)
+- [protocol ListenerProvider](listenerprovider.md)
+- [protocol MessageProtocol](messageprotocol.md)
+- [protocol MultiplexProtocol](multiplexprotocol.md)
+  Types that conform to MultiplexProtocol are allowed to be the top protocol in a network protocol stack for multiplexing network connection objects. Generally network protocols conforming to this will not directly expose send or receive methods. Instead, they usually expose methods to open and listen for multiplexed Subconnections which can be sent and received on
+- [protocol NWParametersProvider](nwparametersprovider.md)
+- [protocol NetworkCoder](networkcoder.md)
+- [protocol NetworkDecoder](networkdecoder.md)
+- [protocol NetworkEncoder](networkencoder.md)
+- [protocol NetworkFixedWidthInteger](networkfixedwidthinteger.md)
+- [protocol NetworkMetadataProtocol](networkmetadataprotocol.md)
+- [protocol NetworkProtocolOptions](networkprotocoloptions.md)
+- [protocol OneToOneProtocol](onetooneprotocol.md)
+  Types that conform to OneToOneProtocol are allowed to be the top protocol in a network protocol stack for standard, non-multiplexed Connections
+- [protocol StreamProtocol](streamprotocol.md)
+- [protocol SubConnectionProtocol](subconnectionprotocol.md)
+### Variables
+- [let kNWErrorDomainWiFiAware: CFString](knwerrordomainwifiaware.md)
+- [var nw_error_domain_wifi_aware: nw_error_domain_t](nw_error_domain_wifi_aware.md)
+- [var nw_link_quality_good: nw_link_quality_t](nw_link_quality_good.md)
+- [var nw_link_quality_minimal: nw_link_quality_t](nw_link_quality_minimal.md)
+- [var nw_link_quality_moderate: nw_link_quality_t](nw_link_quality_moderate.md)
+- [var nw_link_quality_unknown: nw_link_quality_t](nw_link_quality_unknown.md)
+### Functions
+- [func nw_parameters_get_allow_ultra_constrained(nw_parameters_t) -> Bool](nw_parameters_get_allow_ultra_constrained(_:).md)
+- [func nw_parameters_set_allow_ultra_constrained(nw_parameters_t, Bool)](nw_parameters_set_allow_ultra_constrained(_:_:).md)
+- [func nw_path_get_link_quality(nw_path_t) -> nw_link_quality_t](nw_path_get_link_quality(_:).md)
+- [func nw_path_is_ultra_constrained(nw_path_t) -> Bool](nw_path_is_ultra_constrained(_:).md)
+### Enumerations
+- [enum AdvertisedRoute](advertisedroute.md)
 
 
 ---

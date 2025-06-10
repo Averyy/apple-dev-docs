@@ -51,6 +51,7 @@ struct Error
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Error](../Swift/Error.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

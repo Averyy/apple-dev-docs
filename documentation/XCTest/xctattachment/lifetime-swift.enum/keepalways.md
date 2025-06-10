@@ -1,6 +1,6 @@
 # XCTAttachment.Lifetime.keepAlways
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 Indicates that the attachment should be persisted as part of the test’s results even if the test passes.

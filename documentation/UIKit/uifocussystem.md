@@ -50,6 +50,9 @@ Use a [`UIFocusSystem`](uifocussystem.md) object to obtain the focus-related sta
   Updates the context key.
 - [class let movementDidFailNotification: NSNotification.Name](uifocussystem/movementdidfailnotification.md)
   The focus failed to move to another item.
+### Structures
+- [UIFocusSystem.DidUpdateMessage](uifocussystem/didupdatemessage.md)
+- [UIFocusSystem.MovementDidFailMessage](uifocussystem/movementdidfailmessage.md)
 
 ## Relationships
 

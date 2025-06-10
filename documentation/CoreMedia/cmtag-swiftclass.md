@@ -26,8 +26,6 @@ The Core Media framework uses tags to describe the properties of media channels.
 
 > ❗ **Important**:  Tag data can only contain values that can be safely stored on disk. In particular, [`CMTag`](cmtag-swift.class.md) values can’t contain a pointer. If you need to refer to another media element or in-memory data as part of a tag, use a buffer index or other constant.
 
- Tag data can only contain values that can be safely stored on disk. In particular, [`CMTag`](cmtag-swift.class.md) values can’t contain a pointer. If you need to refer to another media element or in-memory data as part of a tag, use a buffer index or other constant.
-
 It’s recommended to use [`CMTypedTag`](cmtypedtag.md) instances where possible to preserve type safety.
 
 ## Topics
@@ -77,6 +75,7 @@ It’s recommended to use [`CMTypedTag`](cmtypedtag.md) instances where possible
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

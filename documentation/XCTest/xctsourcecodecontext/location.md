@@ -1,6 +1,6 @@
 # location
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A representation of a location in source code where a test issue occurred.

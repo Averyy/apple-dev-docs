@@ -10,6 +10,7 @@ An object used to define a material’s anisotropy angle.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -32,8 +33,6 @@ struct AnisotropyAngle
   The intended use of the object’s texture property.
 - [var scale: Float](physicallybasedmaterial/anisotropyangle-swift.struct/scale.md)
   The anistropy angle specified as a single value.
-- [PhysicallyBasedMaterial.AnisotropyAngle.FloatLiteralType](physicallybasedmaterial/anisotropyangle-swift.struct/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 ## Relationships
 

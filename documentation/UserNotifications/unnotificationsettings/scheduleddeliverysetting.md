@@ -1,6 +1,6 @@
 # scheduledDeliverySetting
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The setting that indicates the system schedules the notification.

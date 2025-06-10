@@ -1,6 +1,6 @@
 # averageHighTemperature
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The average observed high temperature for the day.

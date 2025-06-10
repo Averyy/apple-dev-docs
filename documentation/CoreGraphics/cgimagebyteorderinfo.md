@@ -29,15 +29,22 @@ enum CGImageByteOrderInfo
 - [CGImageByteOrderInfo.orderDefault](cgimagebyteorderinfo/orderdefault.md)
 ### Initializers
 - [init?(rawValue: UInt32)](cgimagebyteorderinfo/init(rawvalue:).md)
+### Type Properties
+- [static var order16Host: CGImageByteOrderInfo](cgimagebyteorderinfo/order16host.md)
+- [static var order32Host: CGImageByteOrderInfo](cgimagebyteorderinfo/order32host.md)
 
 ## Relationships
 
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [CaseIterable](../Swift/CaseIterable.md)
+- [Copyable](../Swift/Copyable.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

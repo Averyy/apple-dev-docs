@@ -6,19 +6,19 @@
 Adds a label to the view that describes its contents.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 8.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
 nonisolated
-func accessibilityLabel(_ label: Text) -> Text
+func accessibilityLabel(_ label: LocalizedStringResource) -> Text
 ```
 
 #### Discussion
@@ -34,11 +34,9 @@ var body: some View {
 }
 ```
 
-You can’t style the label that you add
-
 ## Parameters
 
-- `label`: The text view to add the label to.
+- `label`: The string resource for the alternative   accessibility label.
 
 ## See Also
 

@@ -27,8 +27,6 @@ Use this method to iterate your block over the given range of a string. The meth
 
 > ❗ **Important**:  This method enumerates over the ranges of all tokens that intersect the specified range.
 
- This method enumerates over the ranges of all tokens that intersect the specified range.
-
 ## Parameters
 
 - `range`: The range of the string you want the tagger to analyze.

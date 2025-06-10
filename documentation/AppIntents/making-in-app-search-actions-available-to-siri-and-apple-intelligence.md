@@ -1,6 +1,6 @@
 # Making in-app search actions available to Siri and Apple Intelligence
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Create app intents and entities to integrate your app’s search functionality with Siri and Apple Intelligence.
 
@@ -16,7 +16,7 @@ Use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and prov
 import AppIntents
 import Foundation
 
-@AssistantIntent(schema: .system.search)
+@AppIntent(schema: .system.search)
 struct ExampleSearchIntent: ShowInAppSearchResultsIntent {
     static var searchScopes: [StringSearchScope] = [.general]
     var criteria: StringSearchCriteria
@@ -42,4 +42,4 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-in-app-search-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-in-app-search-actions-available-to-siri-and-apple-intelligence)*

@@ -1,6 +1,6 @@
 # willMove(to:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Performs an action before the view adds or removes the interaction from its interaction array.

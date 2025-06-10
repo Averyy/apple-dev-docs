@@ -79,6 +79,41 @@ extension ContainerValues {
 
 Clients of your value then access the value by reading it from the container values collection of a [`Subview`](subview.md).
 
+Related pieces of container configuration can also be grouped under the same container values key.
+
+```swift
+struct PinPosition {
+    var rotation: Double = 0
+    var xOffset: Int = 0
+}
+
+extension ContainerValues {
+    @Entry var pinPosition: PinPosition = .init()
+}
+
+// pinPosition.rotation = 0, pinPosition.xOffset = 3
+Text("A").containerValue(\.pinPosition.xOffset, 3)
+
+// pinPosition.rotation = 10, pinPosition.xOffset = 5
+Text("B")
+    .containerValue(\.pinPosition.rotation, 10)
+    .containerValue(\.pinPosition.xOffset, 5)
+```
+
+This allows you to group multiple related container values into structs while maintaining separate modifiers to write each value.
+
+```swift
+extension View {
+    func pinRotation(_ rotation: Double) -> some View {
+        containerValue(\.pinPosition.rotation, rotation)
+    }
+
+    func pinXOffset(_ xOffset: Int) -> some View {
+        containerValue(\.pinPosition.xOffset, xOffset)
+    }
+}
+```
+
 ## Topics
 
 ### Instance Methods
@@ -97,6 +132,7 @@ Clients of your value then access the value by reading it from the container val
 - [struct SubviewsCollection](subviewscollection.md)
   An opaque collection representing the subviews of view.
 - [struct SubviewsCollectionSlice](subviewscollectionslice.md)
+  A slice of a SubviewsCollection.
 - [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](view/containervalue(_:_:).md)
   Sets a particular container value of a view.
 - [protocol ContainerValueKey](containervaluekey.md)

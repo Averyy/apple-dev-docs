@@ -43,6 +43,7 @@ struct AlertConfiguration
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -50,8 +51,6 @@ struct AlertConfiguration
   Updates the dynamic content of the Live Activity.
 - [func update(ActivityContent<Activity<Attributes>.ContentState>, alertConfiguration: AlertConfiguration?) async](activity/update(_:alertconfiguration:).md)
   Updates the dynamic content of a Live Activity and alerts a person about the Live Activity update.
-- [func update(using: Activity<Attributes>.ContentState) async](activity/update(using:).md)
-  Updates the dynamic content of the Live Activity.
 - [func update(ActivityContent<Activity<Attributes>.ContentState>, alertConfiguration: AlertConfiguration?, timestamp: Date) async](activity/update(_:alertconfiguration:timestamp:).md)
   Updates the dynamic content of a Live Activity and alerts a person about the Live Activity update.
 

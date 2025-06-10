@@ -47,6 +47,7 @@ When using an elliptical gradient as a shape style, you can also use [`elliptica
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 - [View](view.md)
 

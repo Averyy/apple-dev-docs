@@ -10,8 +10,6 @@ A multinode QuickTime VR movie can contain any number of object and panoramic no
 
 > ❗ **Important**: Panoramic tracks and object tracks must never be located at the same time.
 
-Panoramic tracks and object tracks must never be located at the same time.
-
 ## See Also
 
 - [Single-node panoramic movies](single-node_panoramic_movies.md)

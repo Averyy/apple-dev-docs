@@ -57,6 +57,7 @@ For [`ProcessCodeRequirement`](processcoderequirement.md) and [`LaunchCodeRequir
 - [OnDiskConstraint](ondiskconstraint.md)
 - [ProcessConstraint](processconstraint.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

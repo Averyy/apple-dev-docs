@@ -248,4 +248,4 @@ In most cases, however, it’s easier and better to rewrite everything to use rp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/embedding-nonstandard-code-structures-in-a-bundle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/embedding-nonstandard-code-structures-in-a-bundle)*

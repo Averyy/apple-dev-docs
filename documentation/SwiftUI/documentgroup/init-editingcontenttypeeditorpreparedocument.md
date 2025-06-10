@@ -55,8 +55,6 @@ init(editing modelType: any PersistentModel.Type, contentType: UTType, editor: @
 
 > ❗ **Important**: If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist`. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/UniformTypeIdentifiers/defining-file-and-data-types-for-your-app). Also, remember to specify the supported Document types in the Info.plist as well.
 
-If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist`. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/UniformTypeIdentifiers/defining-file-and-data-types-for-your-app). Also, remember to specify the supported Document types in the Info.plist as well.
-
 ## Parameters
 
 - `modelType`: The model type defining the schema used for each document.

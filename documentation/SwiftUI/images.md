@@ -52,7 +52,7 @@ For design guidance, see [`Images`](https://developer.apple.com/design/Human-Int
 - [func symbolEffectsRemoved(Bool) -> some View](view/symboleffectsremoved(_:).md)
   Returns a new view with its inherited symbol image effects either removed or left unchanged.
 - [struct SymbolEffectTransition](symboleffecttransition.md)
-  Creates a transition that applies the Appear or Disappear symbol animation to symbol images within the inserted or removed view hierarchy.
+  Creates a transition that applies the Appear, Disappear, DrawOn or DrawOff symbol animation to symbol images within the inserted or removed view hierarchy.
 ### Setting symbol rendering modes
 - [func symbolRenderingMode(SymbolRenderingMode?) -> some View](view/symbolrenderingmode(_:).md)
   Sets the rendering mode for symbol images within this view.
@@ -60,6 +60,10 @@ For design guidance, see [`Images`](https://developer.apple.com/design/Human-Int
   The current symbol rendering mode, or `nil` denoting that the mode is picked automatically using the current image and foreground style as parameters.
 - [struct SymbolRenderingMode](symbolrenderingmode.md)
   A symbol rendering mode.
+- [struct SymbolColorRenderingMode](symbolcolorrenderingmode.md)
+  A method of filling a layer in a symbol image.
+- [struct SymbolVariableValueMode](symbolvariablevaluemode.md)
+  A method of rendering the variable value of a symbol image.
 ### Rendering images from views
 - [class ImageRenderer](imagerenderer.md)
   An object that creates images from SwiftUI views.

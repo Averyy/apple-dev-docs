@@ -29,8 +29,6 @@ The `network` parameter must correspond to the currently associated Wi-Fi networ
 
 > ⚠️ **Warning**:  The application must not actually log off from the network until it receives the command to log off.
 
- The application must not actually log off from the network until it receives the command to log off.
-
 ## Parameters
 
 - `network`: A   corresponding to the currently associated Wi-Fi network.

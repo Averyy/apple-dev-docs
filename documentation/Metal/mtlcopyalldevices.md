@@ -29,7 +29,7 @@ func MTLCopyAllDevices() -> [any MTLDevice]
   Locate, identify, and choose suitable GPUs for your app.
 - [Getting the GPU that Drives a View’s Display](getting-the-gpu-that-drives-a-views-display.md)
   Keep up to date with the optimal device for your display.
-- [func MTLCopyAllDevicesWithObserver(handler: MTLDeviceNotificationHandler) -> (devices: [any MTLDevice], observer: NSObject)](mtlcopyalldeviceswithobserver(handler:).md)
+- [func MTLCopyAllDevicesWithObserver(handler: (any MTLDevice, MTLDeviceNotificationName) -> Void) -> (devices: [any MTLDevice], observer: NSObject)](mtlcopyalldeviceswithobserver(handler:).md)
   Returns an array of all the Metal GPU devices in the system and registers a notification handler that Metal calls when the device list changes.
 - [func MTLRemoveDeviceObserver(any NSObjectProtocol)](mtlremovedeviceobserver(_:).md)
   Removes a registered observer of device notifications.

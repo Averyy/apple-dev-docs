@@ -1,0 +1,26 @@
+# init(rawValue:)
+
+**Framework**: TelephonyMessagingKit  
+**Kind**: init
+
+Initializes an message identifier with the given rawValue.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst ?+
+
+## Declaration
+
+```swift
+init(rawValue: UInt32)
+```
+
+## Parameters
+
+- `rawValue`: The identifier of the message.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/telephonymessagingkit/smsmessageid/init(rawvalue:))*

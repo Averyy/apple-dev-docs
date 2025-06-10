@@ -1,6 +1,6 @@
 # init(uniformTypeIdentifier:name:payload:userInfo:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an attachment containing the provided data payload, optionally with a custom UTI, name, and user-provided metadata dictionary.

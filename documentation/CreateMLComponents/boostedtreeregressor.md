@@ -51,6 +51,7 @@ struct BoostedTreeRegressor<Annotation>
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SupervisedTabularEstimator](supervisedtabularestimator.md)
 - [UpdatableSupervisedTabularEstimator](updatablesupervisedtabularestimator.md)
 

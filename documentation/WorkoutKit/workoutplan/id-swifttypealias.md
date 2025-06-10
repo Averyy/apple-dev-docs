@@ -1,6 +1,6 @@
 # WorkoutPlan.ID
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: typealias
 
 The data type of the workout plan’s ID.

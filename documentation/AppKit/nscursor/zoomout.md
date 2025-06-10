@@ -1,6 +1,6 @@
 # zoomOut
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 Returns the zoom-out cursor.
@@ -24,4 +24,4 @@ class var zoomOut: NSCursor { get }
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nscursor/zoomout)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nscursor/zoomout)*

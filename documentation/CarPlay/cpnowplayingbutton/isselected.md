@@ -13,6 +13,7 @@ A Boolean value that indicates whether the button is in a selected state.
 ## Declaration
 
 ```swift
+@MainActor
 var isSelected: Bool { get set }
 ```
 

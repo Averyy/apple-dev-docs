@@ -411,14 +411,14 @@
 - [func CGImageCreateCopyWithContentHeadroom(Float, CGImage) -> CGImage?](cgimagecreatecopywithcontentheadroom(_:_:).md)
 - [func CGInhibitLocalEvents(boolean_t) -> CGError](cginhibitlocalevents(_:).md)
   Turns off local hardware events in the current session.
-- [func CGPDFArrayApplyBlock(CGPDFArrayRef, CGPDFArrayApplierBlock, UnsafeMutableRawPointer?)](cgpdfarrayapplyblock(_:_:_:).md)
+- [func CGPDFArrayApplyBlock(CGPDFArrayRef, (Int, CGPDFObjectRef, UnsafeMutableRawPointer?) -> Bool, UnsafeMutableRawPointer?)](cgpdfarrayapplyblock(_:_:_:).md)
 - [func CGPDFContextBeginTag(CGContext, CGPDFTagType, CFDictionary)](cgpdfcontextbegintag(_:_:_:).md)
 - [func CGPDFContextEndTag(CGContext)](cgpdfcontextendtag(_:).md)
 - [func CGPDFContextSetIDTree(CGContext, CGPDFDictionaryRef)](cgpdfcontextsetidtree(_:_:).md)
 - [func CGPDFContextSetOutline(CGContext, CFDictionary?)](cgpdfcontextsetoutline(_:_:).md)
 - [func CGPDFContextSetPageTagStructureTree(CGContext, CFDictionary)](cgpdfcontextsetpagetagstructuretree(_:_:).md)
 - [func CGPDFContextSetParentTree(CGContext, CGPDFDictionaryRef)](cgpdfcontextsetparenttree(_:_:).md)
-- [func CGPDFDictionaryApplyBlock(CGPDFDictionaryRef, CGPDFDictionaryApplierBlock, UnsafeMutableRawPointer?)](cgpdfdictionaryapplyblock(_:_:_:).md)
+- [func CGPDFDictionaryApplyBlock(CGPDFDictionaryRef, (UnsafePointer<CChar>, CGPDFObjectRef, UnsafeMutableRawPointer?) -> Bool, UnsafeMutableRawPointer?)](cgpdfdictionaryapplyblock(_:_:_:).md)
 - [func CGPDFScannerStop(CGPDFScannerRef)](cgpdfscannerstop(_:).md)
 - [func CGPointMake(CGFloat, CGFloat) -> CGPoint](cgpointmake(_:_:).md)
   Returns a point with the specified coordinates.
@@ -478,7 +478,6 @@
 - [init?(propertyListPlist: CFPropertyList)](cgcolorspace/init(propertylistplist:).md)
   Creates a color space from a property list.
 - [init?(scrollWheelEvent2Source: CGEventSource?, units: CGScrollEventUnit, wheelCount: UInt32, wheel1: Int32, wheel2: Int32, wheel3: Int32)](cgevent/init(scrollwheelevent2source:units:wheelcount:wheel1:wheel2:wheel3:).md)
-- [init?(src: CGColorSpace, srcHeadroom: Float, dst: CGColorSpace, dstHeadroom: Float, toneMapping: CGToneMapping, options: CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?)](cgcolorconversioninfo/init(src:srcheadroom:dst:dstheadroom:tonemapping:options:).md)
 - [func isHDR() -> Bool](cgcolorspace/ishdr.md)
 - [var name: UnsafePointer<CChar>](cgpdftagtype/name.md)
 - [var outline: CFDictionary?](cgpdfdocument/outline.md)

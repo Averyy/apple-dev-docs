@@ -22,8 +22,6 @@ If your app needs to provide animated content with special timing, you can use C
 
 > ❗ **Important**:  Use lower refresh rates whenever possible to save power, because higher refresh rates can result in significant power consumption.
 
- Use lower refresh rates whenever possible to save power, because higher refresh rates can result in significant power consumption.
-
 ##### Understand Refresh Rates
 
 You can’t force a ProMotion display to show your content at any specific rate. The refresh rate of a ProMotion display behaves differently than a traditional display. The system insulates the ProMotion’s actual refresh rate from your app. From your app’s point of view, the refresh rate for a ProMotion display is the rate that Core Animation renders the content for the entire display. The system synchronizes the rendering process with the display hardware’s refresh rate, but the display hardware doesn’t necessarily drive the rendering process. Core Animation arbitrates all the animations it presents on the screen and determines the refresh rate at any particular time. Your app can provide hints to Core Animation about what refresh rates the app prefers for its animations.
@@ -53,8 +51,6 @@ The iPad Pro’s ProMotion display can present content on the display using the 
 
 > ❗ **Important**:  Custom animations in your app need to be able to adapt to changes in refresh rates. Display refresh rates can change for many reasons and your app must not presume any specific refresh rate, at any time. For example, the system disables faster refresh rates in low power mode or if a device gets hot. Also, while UIKit and Core Animation are managing various GUI elements, Core Animation might elect to vary the refresh rate to provide an enhanced user experience.
 
- Custom animations in your app need to be able to adapt to changes in refresh rates. Display refresh rates can change for many reasons and your app must not presume any specific refresh rate, at any time. For example, the system disables faster refresh rates in low power mode or if a device gets hot. Also, while UIKit and Core Animation are managing various GUI elements, Core Animation might elect to vary the refresh rate to provide an enhanced user experience.
-
 ##### Enable Faster Promotion Refresh Rates
 
 If you don’t enable faster refresh rates for your app, your [`CADisplayLink`](cadisplaylink.md) callback might run at any of the speeds that the ProMotion display supports, at different times during normal GUI operations. In these cases, other animations in the system may affect the rate at which Core Animation calls your [`CADisplayLink`](cadisplaylink.md) callback. The rate at which Core Animation calls your [`CADisplayLink`](cadisplaylink.md) callback may not match the refresh rate hints that you provide to your [`CADisplayLink`](cadisplaylink.md) callback. Specifically, Core Animation won’t unlock any refresh rate that’s faster than the system’s default.
@@ -73,13 +69,9 @@ The system automatically handles frame pacing for UIKit, SpriteKit , SwiftUI, an
 
 > ❗ **Important**:  Prepare your app to operate at any refresh rate, not just those it requests through [`CADisplayLink`](cadisplaylink.md) or [`CAAnimation`](caanimation.md).
 
- Prepare your app to operate at any refresh rate, not just those it requests through [`CADisplayLink`](cadisplaylink.md) or [`CAAnimation`](caanimation.md).
-
 When specifying a preferred frame rate, specify the best possible frame rate for your content. [`CADisplayLink`](cadisplaylink.md) might be unable to update the display at that rate at all times, but it attempts to provide the closest refresh rate as possible, given available hardware and current conditions on the device. iOS 15 provides special priority to 30Hz and 60Hz refresh rates (if your app provides hints that request either of these rates) to help with early adoption for game developers. This prioritization is specific to iOS 15.
 
 > ❗ **Important**:  Don’t use timers or other strategies that don’t properly align with Core Animation’s display refresh cycle.
-
- Don’t use timers or other strategies that don’t properly align with Core Animation’s display refresh cycle.
 
 ##### Provide Timing Hints to Core Animation
 
@@ -98,8 +90,6 @@ As a general rule, for better visual appearance use faster refresh rates when an
 
 > ❗ **Important**:  Be selective when requesting the maximum frame rate. If your animation requests 120Hz but can’t keep up, it may render poorly. But the same animation may be able to maintain a steady cadence at a lower rate.
 
- Be selective when requesting the maximum frame rate. If your animation requests 120Hz but can’t keep up, it may render poorly. But the same animation may be able to maintain a steady cadence at a lower rate.
-
 Use these recommended timings and principles when designing and building your app, but also do your own testing on an actual device to make sure your animations look good.
 
 ##### Synchronize Your Content with the Display
@@ -107,8 +97,6 @@ Use these recommended timings and principles when designing and building your ap
 Core Animation reports timing information about the current refresh interval in the [`timestamp`](cadisplaylink/timestamp.md) and [`targetTimestamp`](cadisplaylink/targettimestamp.md) properties each time it calls your app’s [`CADisplayLink`](cadisplaylink.md) callback. When Core Animation calls your [`CADisplayLink`](cadisplaylink.md) callback , [`timestamp`](cadisplaylink/timestamp.md) equals the beginning of the current refresh interval and [`targetTimestamp`](cadisplaylink/targettimestamp.md) is equal to the end of the interval. When providing new content, [`targetTimestamp`](cadisplaylink/targettimestamp.md) is your deadline to submit changes for the next frame that Core Animation renders to the device’s display.
 
 > ❗ **Important**:  Always use [`targetTimestamp`](cadisplaylink/targettimestamp.md) to drive any animation, physics, or other time-related content provided in your [`CADisplayLink`](cadisplaylink.md) callback.
-
- Always use [`targetTimestamp`](cadisplaylink/targettimestamp.md) to drive any animation, physics, or other time-related content provided in your [`CADisplayLink`](cadisplaylink.md) callback.
 
 Though [`timestamp`](cadisplaylink/timestamp.md) reflects the time of the beginning of the current refresh interval, there might be some latency between that time and the time when Core Animation calls your [`CADisplayLink`](cadisplaylink.md) callback. To calculate how much time your [`CADisplayLink`](cadisplaylink.md) callback has to prepare content before [`targetTimestamp`](cadisplaylink/targettimestamp.md), subtract the value returned by [`CACurrentMediaTime()`](cacurrentmediatime().md) from [`targetTimestamp`](cadisplaylink/targettimestamp.md). For example:
 
@@ -130,8 +118,6 @@ displayLink.add(to: .current, forMode: .default)
 ```
 
 > ❗ **Important**:  If your [`CADisplayLink`](cadisplaylink.md) callback continues to execute past the [`targetTimestamp`](cadisplaylink/targettimestamp.md), then any refresh intervals with which your callback’s execution time overlaps don’t receive [`CADisplayLink`](cadisplaylink.md) callbacks. In these cases, you need to provide recovery for this condition in your code the next time Core Animation invokes your [`CADisplayLink`](cadisplaylink.md) callback, to ensure proper display synchronization with your content.
-
- If your [`CADisplayLink`](cadisplaylink.md) callback continues to execute past the [`targetTimestamp`](cadisplaylink/targettimestamp.md), then any refresh intervals with which your callback’s execution time overlaps don’t receive [`CADisplayLink`](cadisplaylink.md) callbacks. In these cases, you need to provide recovery for this condition in your code the next time Core Animation invokes your [`CADisplayLink`](cadisplaylink.md) callback, to ensure proper display synchronization with your content.
 
 
 ---

@@ -6,6 +6,7 @@
 Tracking state of this anchor
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

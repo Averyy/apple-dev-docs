@@ -1,6 +1,6 @@
 # expectation(that:on:options:willSatisfy:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Creates an expectation using key-value observing to monitor changes to a given key path on a given object.

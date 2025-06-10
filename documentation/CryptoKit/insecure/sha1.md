@@ -28,8 +28,6 @@ You can compute the digest by calling the static `hash(data:)` method once. Alte
 
 > ❗ **Important**: This hash algorithm isn’t considered cryptographically secure, but is provided for backward compatibility with older services that require it. For new services, prefer one of the secure hashes, like [`SHA512`](sha512.md).
 
-This hash algorithm isn’t considered cryptographically secure, but is provided for backward compatibility with older services that require it. For new services, prefer one of the secure hashes, like [`SHA512`](sha512.md).
-
 ## Topics
 
 ### Specifying the output type
@@ -57,6 +55,7 @@ This hash algorithm isn’t considered cryptographically secure, but is provided
 - [Copyable](../Swift/Copyable.md)
 - [HashFunction](hashfunction.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

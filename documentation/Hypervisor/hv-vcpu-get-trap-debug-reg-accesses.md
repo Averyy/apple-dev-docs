@@ -26,8 +26,6 @@ The equivalent system register is `MDCR_EL2.TDA`.
 
 > ❗ **Important**:  This function must be called by the owning thread.
 
- This function must be called by the owning thread.
-
 ## Parameters
 
 - `vcpu`: The instance of the vCPU.

@@ -1,4 +1,4 @@
-# transient
+# ParameterOption.transient
 
 **Framework**: TipKit  
 **Kind**: property
@@ -32,9 +32,8 @@ struct LandmarksUser {
 }
 ```
 
-## Topics
+## See Also
 
-### Creating parameters
 - [struct Parameter](tips/parameter.md)
   A type that monitors the state of its wrapped value to reevaluate any dependent tip rules when the value changes.
 

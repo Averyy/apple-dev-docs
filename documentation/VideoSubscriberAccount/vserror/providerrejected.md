@@ -1,6 +1,6 @@
 # providerRejected
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The user’s subscription provider didn’t allow the request to proceed.

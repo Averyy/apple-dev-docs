@@ -573,6 +573,13 @@ struct AVMetadataKey
   Creates a metadata key.
 - [init(rawValue: String)](avmetadatakey/init(rawvalue:).md)
   Creates a metadata key with the specified raw value.
+### Type Properties
+- [static let quickTimeMetadataKeyCameraFocalLength35mmEquivalent: AVMetadataKey](avmetadatakey/quicktimemetadatakeycamerafocallength35mmequivalent.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating focal length normalized to the 35mm film equivalent value (e.g. “50.00mm”).
+- [static let quickTimeMetadataKeyCameraLensModel: AVMetadataKey](avmetadatakey/quicktimemetadatakeycameralensmodel.md)
+  A value of type kCMMetadataBaseDataType_UTF8 indicating the lens model (e.g. “iPhone 16 Pro back camera 6.765mm f/1.78”).
+- [static let quickTimeMetadataKeyCinematicVideoIntent: AVMetadataKey](avmetadatakey/quicktimemetadatakeycinematicvideointent.md)
+  A value of type `kCMMetadataBaseDataType_UInt8` indicating whether this movie is intended as a Cinematic Video (1) or not (0).
 
 ## Relationships
 
@@ -581,6 +588,7 @@ struct AVMetadataKey
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

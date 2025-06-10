@@ -1,6 +1,6 @@
 # XCTSourceCodeContext
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An object that contains call stack and source code location details to provide context for a point of execution in a test.

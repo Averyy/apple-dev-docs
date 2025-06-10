@@ -10,6 +10,7 @@ Asynchronously creates a 3D texture resource from a pixel Metal buffer, or data.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -63,8 +64,6 @@ See [`init(named:in:)`](textureresource/init(named:in:).md) for an example of op
   Synchronously creates a 3D texture by generating it from images.
 - [convenience init(dimensions: TextureResource.Dimensions3D, format: TextureResource.Format, contents: TextureResource.Contents) throws](textureresource/init(dimensions:format:contents:)-5l84l.md)
   Synchronously creates a 3D texture resource from a pixel Metal buffer, or data.
-- [TextureResource.Dimensions3D](textureresource/dimensions3d.md)
-  The dimensions of the 3D texture.
 
 
 ---

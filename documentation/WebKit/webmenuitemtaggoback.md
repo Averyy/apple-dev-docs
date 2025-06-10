@@ -1,6 +1,6 @@
 # WebMenuItemTagGoBack
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Load the previous page.

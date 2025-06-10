@@ -1,6 +1,6 @@
 # saturation(_:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Adjusts the color saturation of this view.

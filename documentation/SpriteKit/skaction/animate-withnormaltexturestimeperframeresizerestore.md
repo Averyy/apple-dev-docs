@@ -1,6 +1,6 @@
 # animate(withNormalTextures:timePerFrame:resize:restore:)
 
-**Framework**: Spritekit  
+**Framework**: SpriteKit  
 **Kind**: method
 
 Creates an action that animates changes to a sprite’s texture.

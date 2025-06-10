@@ -1,6 +1,6 @@
 # SAMPLE_COVERAGE_INVERT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

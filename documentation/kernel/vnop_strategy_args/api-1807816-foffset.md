@@ -1,0 +1,28 @@
+# foffset
+
+**Framework**: Kernel  
+**Kind**: structp
+
+Offset (in bytes) at which region starts.
+
+## See Also
+
+- [vp](vnop_strategy_args/1807814-vp.md)
+  The vnode for which to get on-disk information.
+- [size](vnop_strategy_args/1807819-size.md)
+  Size of region.
+- [bpn](vnop_strategy_args/1807821-bpn.md)
+  Destination for physical block number at which region begins on disk.
+- [run](vnop_strategy_args/1807823-run.md)
+  Destination for number of bytes which can be found contiguously on-disk before first discontinuity.
+- [poff](vnop_strategy_args/1807826-poff.md)
+  Currently unused.
+- [flags](vnop_strategy_args/1807828-flags.md)
+  VNODE_READ: request is for a read. VNODE_WRITE: request is for a write.
+- [ctx](vnop_strategy_args/1807831-ctx.md)
+  Context to authenticate for blockmap request; currently often set to NULL.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/vnop_strategy_args/1807816-foffset)*

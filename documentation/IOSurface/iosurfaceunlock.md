@@ -1,6 +1,6 @@
 # IOSurfaceUnlock(_:_:_:)
 
-**Framework**: Iosurface  
+**Framework**: IOSurface  
 **Kind**: func
 
 “Unlock” an [`IOSurface`](iosurface.md) for reading or writing.

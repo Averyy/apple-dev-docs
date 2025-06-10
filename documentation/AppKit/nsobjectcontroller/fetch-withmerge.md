@@ -1,6 +1,6 @@
 # fetch(with:merge:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Subclasses should override this method to customize a fetch request, for example to specify fetch limits.

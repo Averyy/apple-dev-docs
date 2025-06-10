@@ -1,6 +1,6 @@
 # Augmenting images to expand your training data
 
-**Framework**: Createmlcomponents
+**Framework**: Create ML Components
 
 Improve your model by using transformed versions of your training images.
 
@@ -190,4 +190,4 @@ for iteration in 0 ..< 100 {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/augmenting-images-to-expand-your-training-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/augmenting-images-to-expand-your-training-data)*

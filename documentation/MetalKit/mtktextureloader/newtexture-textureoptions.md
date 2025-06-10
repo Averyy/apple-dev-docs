@@ -30,7 +30,7 @@ A fully loaded and initialized Metal texture, or `nil` if an error occurred.
 
 ## See Also
 
-- [func newTexture(texture: MDLTexture, options: [MTKTextureLoader.Option : Any]?, completionHandler: MTKTextureLoader.Callback)](mtktextureloader/newtexture(texture:options:completionhandler:).md)
+- [func newTexture(texture: MDLTexture, options: [MTKTextureLoader.Option : Any]?, completionHandler: ((any MTLTexture)?, (any Error)?) -> Void)](mtktextureloader/newtexture(texture:options:completionhandler:).md)
   Asynchronously loads image data and creates a Metal texture from the specified Model I/O texture.
 
 

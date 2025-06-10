@@ -29,9 +29,9 @@ Use Procedural nodes to manage constant values within your graph. Configure a Pr
 - [Integer](procedural/integer.md)
   A constant integer numeric value.
 - [Matrix3x3 (Float)](procedural/matrix3x3-(float).md)
-  A constant Matrix3x3 (Float) value. (Row-major order.)
+  A constant Matrix3x3 (Float) value.
 - [Matrix4x4 (Float)](procedural/matrix4x4-(float).md)
-  A constant Matrix4x4 (Float) value. (Row-major order.)
+  A constant Matrix4x4 (Float) value.
 - [String](procedural/string.md)
   A constant string (text) value.
 - [Image File](procedural/image-file.md)
@@ -45,7 +45,7 @@ Use Procedural nodes to manage constant values within your graph. Configure a Pr
 - [Vector4 (Half)](procedural/vector4-(half).md)
   A constant half-precision floating-point Vector4 numeric value.
 - [Matrix2x2 (Float)](procedural/matrix2x2-(float).md)
-  A constant Matrix2x2 (Float) value. (Row-major order.)
+  A constant Matrix2x2 (Float) value.
 - [Integer2](procedural/integer2.md)
   A constant Integer2 value.
 - [Integer3](procedural/integer3.md)

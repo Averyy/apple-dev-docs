@@ -12,6 +12,10 @@ List your app’s associated App Clips.
 
 ##### Example Request and Response
 
+## See Also
+
+- [GET /v1/apps/{id}/relationships/appClips](get-v1-apps-_id_-relationships-appclips.md)
+
 
 ---
 

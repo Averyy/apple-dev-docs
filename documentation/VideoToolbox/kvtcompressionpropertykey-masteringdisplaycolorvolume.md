@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_MasteringDisplayColorVolume
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

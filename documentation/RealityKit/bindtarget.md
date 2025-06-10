@@ -10,6 +10,7 @@ A reference to a particular scene, entity, or property that animates.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -40,8 +41,6 @@ For nested entities, the [`BindTarget.path(_:)`](bindtarget/path(_:).md) case re
 ### Comparing bind targets
 - [static func == (BindTarget, BindTarget) -> Bool](bindtarget/==(_:_:).md)
   Returns a Boolean value that indicates whether two bind targets are equal.
-- [static func != (Self, Self) -> Bool](bindtarget/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Targeting entities and scenes
 - [static func scene(String) -> BindTarget.ScenePath](bindtarget/scene(_:).md)
   Generates a bind path from a particular scene.
@@ -72,8 +71,6 @@ For nested entities, the [`BindTarget.path(_:)`](bindtarget/path(_:).md) case re
 ### Type Methods
 - [static func material(Int) -> BindTarget.MaterialPath](bindtarget/material(_:).md)
   Generates a complex bind path from one of an entity’s materials.
-### Default Implementations
-- [Equatable Implementations](bindtarget/equatable-implementations.md)
 
 ## Relationships
 
@@ -88,6 +85,7 @@ For nested entities, the [`BindTarget.path(_:)`](bindtarget/path(_:).md) case re
   The value of a bindable target.
 - [struct BindableValuesReference](bindablevaluesreference.md)
   A reference to a bindable value of an animation.
+- [struct ComponentAnimatableData](componentanimatabledata.md)
 - [struct ParameterSet](parameterset.md)
   A reference to general-purpose entity parameters for animations.
 - [struct InternalBindPath](internalbindpath.md)

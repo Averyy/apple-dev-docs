@@ -1,6 +1,6 @@
 # max(by:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Returns the maximum element in the sequence, using the given predicate as the comparison between elements.

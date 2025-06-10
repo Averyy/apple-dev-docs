@@ -44,6 +44,7 @@ These constants define the behavior of `NSLayoutManager` and `NSTypesetter` when
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

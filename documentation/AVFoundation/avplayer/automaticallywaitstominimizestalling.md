@@ -32,13 +32,6 @@ Changing the value of this property to [`false`](https://developer.apple.com/doc
 > ❗ **Important**:  For clients linked against iOS 10.0 and later or macOS 10.12 and later (and running on those versions), the default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). This property did not exist in previous OS versions and the observed behavior was dependent on the type of media played: -  When playing HLS media, the player behaved as if [`automaticallyWaitsToMinimizeStalling`](avplayer/automaticallywaitstominimizestalling.md) is [`true`](https://developer.apple.com/documentation/swift/true).
 -  When playing file-based media, including progressively downloaded content, the player behaved as if [`automaticallyWaitsToMinimizeStalling`](avplayer/automaticallywaitstominimizestalling.md) is [`false`](https://developer.apple.com/documentation/swift/false). You should verify that your playback applications perform as expected using this new default automatic waiting behavior.
 
- For clients linked against iOS 10.0 and later or macOS 10.12 and later (and running on those versions), the default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). This property did not exist in previous OS versions and the observed behavior was dependent on the type of media played:
-
--  When playing HLS media, the player behaved as if [`automaticallyWaitsToMinimizeStalling`](avplayer/automaticallywaitstominimizestalling.md) is [`true`](https://developer.apple.com/documentation/swift/true).
--  When playing file-based media, including progressively downloaded content, the player behaved as if [`automaticallyWaitsToMinimizeStalling`](avplayer/automaticallywaitstominimizestalling.md) is [`false`](https://developer.apple.com/documentation/swift/false).
-
-You should verify that your playback applications perform as expected using this new default automatic waiting behavior.
-
 ## See Also
 
 - [var reasonForWaitingToPlay: AVPlayer.WaitingReason?](avplayer/reasonforwaitingtoplay.md)

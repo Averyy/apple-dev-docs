@@ -90,10 +90,22 @@ When a new instance of `DateComponents` is created, the date components are set 
 ### Using Reference Types
 - [class NSDateComponents](nsdatecomponents.md)
   An object that specifies a date or time in terms of units (such as year, month, day, hour, and minute) to be evaluated in a calendar system and time zone.
+### Structures
+- [DateComponents.HTTPFormatStyle](datecomponents/httpformatstyle.md)
+  Converts `DateComponents` into RFC 9110-compatible “HTTP date” `String`, and parses in the reverse direction. This parser does not do validation on the individual values of the components. An optional date can be created from the result using `Calendar(identifier: .gregorian).date(from: ...)`. When formatting, missing or invalid fields are filled with default values: `Sun`, `01`, `Jan`, `2000`, `00:00:00`, `GMT`. Note that missing fields may result in an invalid date or time. Other values in the `DateComponents` are ignored.
+- [DateComponents.ISO8601FormatStyle](datecomponents/iso8601formatstyle.md)
+  Options for generating and parsing string representations of dates following the ISO 8601 standard.
 ### Initializers
+- [init<T, Value>(Value, strategy: T) throws](datecomponents/init(_:strategy:)-62hv8.md)
+  Creates a new `DateComponents` by parsing the given string representation.
+- [init<T>(T.ParseInput, strategy: T) throws](datecomponents/init(_:strategy:)-84m93.md)
+  Creates a new `DateComponents` by parsing the given representation.
 - [init(subscriptionPeriod: Product.SubscriptionPeriod)](datecomponents/init(subscriptionperiod:).md)
 ### Instance Properties
 - [var dayOfYear: Int?](datecomponents/dayofyear.md)
+### Instance Methods
+- [func formatted<F>(F) -> F.FormatOutput](datecomponents/formatted(_:).md)
+  Converts `self` to its textual representation.
 ### Type Aliases
 - [DateComponents.Specification](datecomponents/specification.md)
 - [DateComponents.UnwrappedType](datecomponents/unwrappedtype.md)
@@ -116,6 +128,7 @@ When a new instance of `DateComponents` is created, the date components are set 
 - [Hashable](../Swift/Hashable.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

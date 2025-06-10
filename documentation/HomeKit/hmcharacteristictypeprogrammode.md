@@ -1,6 +1,6 @@
 # HMCharacteristicTypeProgramMode
 
-**Framework**: Homekit  
+**Framework**: HomeKit  
 **Kind**: var
 
 The current mode of the accessory’s scheduled programs.
@@ -67,4 +67,4 @@ The corresponding value is one of the constants in the [`HMCharacteristicValuePr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HomeKit/hmcharacteristictypeprogrammode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/homekit/hmcharacteristictypeprogrammode)*

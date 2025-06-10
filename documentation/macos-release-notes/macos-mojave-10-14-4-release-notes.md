@@ -32,7 +32,7 @@ StoreKit introduces a new array of [`SKProductDiscount`](https://developer.apple
 
 ###### Known Issues
 
-- After updating to Safari 12.1 from Safari 10.1.2, web pages might not display. (47335741)  Run the following command in Terminal: `defaults delete com.apple.Safari` > ⚠️ **Warning**: You will lose your previous Safari settings after running the command above. You will lose your previous Safari settings after running the command above.
+- After updating to Safari 12.1 from Safari 10.1.2, web pages might not display. (47335741)  Run the following command in Terminal: `defaults delete com.apple.Safari` > ⚠️ **Warning**: You will lose your previous Safari settings after running the command above.
 
 ## See Also
 

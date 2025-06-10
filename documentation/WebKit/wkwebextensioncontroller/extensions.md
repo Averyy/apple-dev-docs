@@ -1,6 +1,6 @@
 # extensions
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A set of all the currently loaded extensions.

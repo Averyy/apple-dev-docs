@@ -1,6 +1,6 @@
 # createRecord(withRecordType:name:attributes:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Creates a record in a specified node with specified properties.

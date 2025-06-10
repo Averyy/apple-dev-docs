@@ -324,6 +324,7 @@ struct Atomic<Value> where Value : AtomicRepresentable
 
 ### Conforms To
 - [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

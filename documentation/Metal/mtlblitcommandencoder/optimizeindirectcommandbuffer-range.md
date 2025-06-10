@@ -25,8 +25,6 @@ This command can reduce the time it takes the GPU to run the commands within an 
 
 > ❗ **Important**:  You can only run optimized commands by using the entire range. Otherwise, starting or ending within an optimized range may result in unexpected behavior.
 
- You can only run optimized commands by using the entire range. Otherwise, starting or ending within an optimized range may result in unexpected behavior.
-
 You can’t run any commands that start or end at an index within that range, or that cross into another optimized range. However, you can reuse the range you optimize by resetting it and then encoding new commands to it.
 
 ## Parameters

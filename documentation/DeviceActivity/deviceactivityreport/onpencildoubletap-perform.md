@@ -1,6 +1,6 @@
 # onPencilDoubleTap(perform:)
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Adds an action to perform after the user double-taps their Apple Pencil.

@@ -1,6 +1,6 @@
 # StateObject
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A property wrapper type that instantiates an observable object.
@@ -149,6 +149,7 @@ Be mindful of the performance cost of reinitializing the state object every time
 ### Conforms To
 - [DynamicProperty](dynamicproperty.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -156,7 +157,7 @@ Be mindful of the performance cost of reinitializing the state object every time
   Create connections between your app’s data model and views.
 - [Migrating from the Observable Object protocol to the Observable macro](migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
   Update your existing app to leverage the benefits of Observation in Swift.
-- [@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation)) @attached(memberAttribute) @attached(extension, conformances: Observable) macro Observable()](../Observation/Observable().md)
+- [@attached(member, names: named(_$observationRegistrar), named(access), named(withMutation), named(shouldNotifyObservers)) @attached(memberAttribute) @attached(extension, conformances: Observable) macro Observable()](../Observation/Observable().md)
   Defines and implements conformance of the Observable protocol.
 - [Monitoring data changes in your app](monitoring-model-data-changes-in-your-app.md)
   Show changes to data in your app’s user interface by using observable objects.
@@ -168,4 +169,4 @@ Be mindful of the performance cost of reinitializing the state object every time
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/stateobject)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/stateobject)*

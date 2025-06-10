@@ -8,8 +8,6 @@ Describe the properties that you associate with audio sessions and audio routes.
 
 > ❗ **Important**:  The `AudioSession` API has been completely deprecated in iOS 7.0. See [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession) for the Objective-C implementation of these functions.
 
- The `AudioSession` API has been completely deprecated in iOS 7.0. See [`AVAudioSession`](https://developer.apple.com/documentation/AVFAudio/AVAudioSession) for the Objective-C implementation of these functions.
-
 Audio Session Services lets you specify the intended audio behavior for your iOS app. For example, you can specify whether you intend for your app’s audio to silence other apps or to mix with their audio. You also use this API to specify your app’s behavior when it is interrupted, such as by a phone call. When the system knows your intentions, it configures the audio hardware in the device to satisfy those intentions, as possible.
 
 These functions apply only to iOS. They do not apply to macOS.

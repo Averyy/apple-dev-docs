@@ -10,7 +10,7 @@ Specifies how to adapt a presentation to compact size classes.
 - iPadOS 16.4+
 - macOS 13.3+
 - tvOS 16.4+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.4+
 
 ## Declaration

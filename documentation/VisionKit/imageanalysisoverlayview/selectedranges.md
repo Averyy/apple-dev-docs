@@ -1,6 +1,6 @@
 # selectedRanges
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The current selected ranges.

@@ -104,6 +104,9 @@ Do not declare new conformances to `StringProtocol`. Only the `String` and `Subs
 - [func contains(Substring) -> Bool](stringprotocol/contains(_:)-78p35.md)
 - [func data(using: String.Encoding, allowLossyConversion: Bool) -> Data?](stringprotocol/data(using:allowlossyconversion:).md)
   Returns a `Data` containing a representation of the `String` encoded using a given encoding.
+- [func dataDetectorMatches(DataDetector.MatchType, options: DataDetector.Options) -> some AsyncSequence<DataDetector.Match, Never>
+](stringprotocol/datadetectormatches(_:options:).md)
+  Searches for known data types in a string or a substring.
 - [func enumerateLines(invoking: (String, inout Bool) -> Void)](stringprotocol/enumeratelines(invoking:).md)
   Enumerates all the lines in a string.
 - [func enumerateLinguisticTags<T, R>(in: R, scheme: T, options: NSLinguisticTagger.Options, orthography: NSOrthography?, invoking: (String, Range<Self.Index>, Range<Self.Index>, inout Bool) -> Void)](stringprotocol/enumeratelinguistictags(in:scheme:options:orthography:invoking:).md)

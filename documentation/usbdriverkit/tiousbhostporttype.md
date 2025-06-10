@@ -27,8 +27,9 @@ enum tIOUSBHostPortType : unsigned int;
   A port for which the device might require additional authentication before a driver can access it.
 - [kIOUSBHostPortTypeExpressCard](tiousbhostporttype/kiousbhostporttypeexpresscard.md)
   A port containing an expansion card.
-- [kIOUSBHostPortTypeCount](tiousbhostporttype/kiousbhostporttypecount.md)
-  The number of port types.
+### Enumeration Cases
+- [kIOUSBHostPortTypeC](tiousbhostporttype/kiousbhostporttypec.md)
+- [kIOUSBHostPortTypeUnknown](tiousbhostporttype/kiousbhostporttypeunknown.md)
 
 ## See Also
 

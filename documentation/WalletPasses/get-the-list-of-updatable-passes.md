@@ -1,14 +1,14 @@
 # Get the List of Updatable Passes
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: httpRequest
 
 Send the serial numbers for updated passes to a device.
 
 **Availability**:
 - iOS 10.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 10.0+
+- watchOS 3.0+
 
 ## Mentions
 

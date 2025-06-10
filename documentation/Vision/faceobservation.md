@@ -31,7 +31,7 @@ struct FaceObservation
   A type that describes the request and revision combination.
 - [FaceObservation.Landmarks2D](faceobservation/landmarks2d.md)
   A collection of facial features that a request detects.
-- [let landmarks: FaceObservation.Landmarks2D?](faceobservation/landmarks.md)
+- [var landmarks: FaceObservation.Landmarks2D?](faceobservation/landmarks.md)
   The facial features of the detected face.
 - [let pitch: Measurement<UnitAngle>](faceobservation/pitch.md)
   The pitch angle of a face.
@@ -43,7 +43,7 @@ struct FaceObservation
 - [FaceObservation.CaptureQuality](faceobservation/capturequality-swift.struct.md)
   An indicator of the quality of a face capture.
 ### Instance Properties
-- [let captureQuality: FaceObservation.CaptureQuality?](faceobservation/capturequality-swift.property.md)
+- [var captureQuality: FaceObservation.CaptureQuality?](faceobservation/capturequality-swift.property.md)
   The quality of the face capture.
 
 ## Relationships
@@ -57,6 +57,7 @@ struct FaceObservation
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionObservation](visionobservation.md)
 
 ## See Also

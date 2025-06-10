@@ -9,6 +9,7 @@ An object representing metrics about disk usage.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
+- macOS 10.15+
 - visionOS 1.0+
 
 ## Declaration
@@ -39,6 +40,8 @@ class MXDiskIOMetric
 
 ## See Also
 
+- [class MXDiskSpaceUsageMetric](mxdiskspaceusagemetric.md)
+  An object representing metrics about your app’s disk space usage.
 - [class MXDiskWriteExceptionDiagnostic](mxdiskwriteexceptiondiagnostic.md)
   An object representing a diagnostic report for a disk write exception.
 

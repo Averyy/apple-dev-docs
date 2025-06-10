@@ -10,6 +10,7 @@ A spherical joint that allows free rotational movement between two entities’ p
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -20,36 +21,20 @@ struct PhysicsSphericalJoint
 
 #### Overview
 
-This joint has three rotational degrees of freedom and removes all translational degrees of freedom by making the positions of [`pin0`](physicssphericaljoint/pin0.md) and [`pin1`](physicssphericaljoint/pin1.md) coincide. This is also called a “ball-socket joint”.
+This joint has three rotational degrees of freedom and removes all translational degrees of freedom by making the positions of `pin0` and `pin1` coincide. This is also called a “ball-socket joint”.
 
-To add limits to the rotational freedom of [`pin1`](physicssphericaljoint/pin1.md), define a tuple value for [`angularLimitInYZ`](physicssphericaljoint/angularlimitinyz.md). This tuple defines an elliptical cone shape around the x-axis of [`pin0`](physicssphericaljoint/pin0.md), which limits the rotational freedom of [`pin1`](physicssphericaljoint/pin1.md). The rotation around the x-axis is never limited with this joint.
+To add limits to the rotational freedom of `pin1`, define a tuple value for [`angularLimitInYZ`](physicssphericaljoint/angularlimitinyz.md). This tuple defines an elliptical cone shape around the x-axis of `pin0`, which limits the rotational freedom of `pin1`. The rotation around the x-axis is never limited with this joint.
 
 > 💡 **Tip**: Pass an orientation when creating the [`GeometricPin`](geometricpin.md) instances to change the axis of rotation.
 
-Pass an orientation when creating the [`GeometricPin`](geometricpin.md) instances to change the axis of rotation.
-
 ## Topics
 
-### Operators
-- [static func == (PhysicsSphericalJoint, PhysicsSphericalJoint) -> Bool](physicssphericaljoint/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(pin0: GeometricPin, pin1: GeometricPin, angularLimitInYZ: (Float, Float)?, checksForInternalCollisions: Bool)](physicssphericaljoint/init(pin0:pin1:angularlimitinyz:checksforinternalcollisions:).md)
   Creates a new spherical joint.
 ### Instance Properties
 - [var angularLimitInYZ: (Float, Float)?](physicssphericaljoint/angularlimitinyz.md)
   A cone-shaped limit of rotational freedom.
-- [var checksForInternalCollisions: Bool](physicssphericaljoint/checksforinternalcollisions.md)
-  A Boolean that indicates whether the joint checks and reports collisions between the two entity instances.
-- [var isActive: Bool](physicssphericaljoint/isactive.md)
-  A Boolean that indicates whether the joint is active.
-- [var pin0: GeometricPin](physicssphericaljoint/pin0.md)
-  The pin that defines a local position and orientation on the first entity.
-- [var pin1: GeometricPin](physicssphericaljoint/pin1.md)
-  The pin that defines a local position and orientation on the second entity.
-### Default Implementations
-- [Equatable Implementations](physicssphericaljoint/equatable-implementations.md)
-- [PhysicsJoint Implementations](physicssphericaljoint/physicsjoint-implementations.md)
 
 ## Relationships
 

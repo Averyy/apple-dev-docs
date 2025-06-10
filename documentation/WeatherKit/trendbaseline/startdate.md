@@ -1,6 +1,6 @@
 # startDate
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The year the statistics collection began.

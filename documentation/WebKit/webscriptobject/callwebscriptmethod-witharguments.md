@@ -1,6 +1,6 @@
 # callWebScriptMethod(_:withArguments:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the result of executing a method in the scripting environment.

@@ -24,8 +24,6 @@ init(i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, activation: B
 
 > ❗ **Important**:  The input dimensions must be equal to the output dimensions. For activation types other than identity, the input and output must be `float`.
 
- The input dimensions must be equal to the output dimensions. For activation types other than identity, the input and output must be `float`.
-
 ## Parameters
 
 - `i_desc`: The descriptor of the input.

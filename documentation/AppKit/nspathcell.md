@@ -105,6 +105,7 @@ When setting the [`controlSize`](nscell/controlsize.md) property, `NSPathCell` p
 - [NSOpenSavePanelDelegate](nsopensavepaneldelegate.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

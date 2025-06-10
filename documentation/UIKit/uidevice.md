@@ -101,6 +101,11 @@ You can also use the [`playInputClick()`](uidevice/playinputclick().md) instance
   A notification that posts when the orientation of the device changes.
 - [class let proximityStateDidChangeNotification: NSNotification.Name](uidevice/proximitystatedidchangenotification.md)
   A notification that posts when the state of the proximity sensor changes.
+### Structures
+- [UIDevice.BatteryLevelDidChangeMessage](uidevice/batteryleveldidchangemessage.md)
+- [UIDevice.BatteryStateDidChangeMessage](uidevice/batterystatedidchangemessage.md)
+- [UIDevice.OrientationDidChangeMessage](uidevice/orientationdidchangemessage.md)
+- [UIDevice.ProximityStateDidChangeMessage](uidevice/proximitystatedidchangemessage.md)
 
 ## Relationships
 

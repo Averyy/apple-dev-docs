@@ -42,7 +42,7 @@ init(listener: NSXPCListener = .service()) {
 
 This uses the XPC service’s listener by default, but allows you to override that by passing in a value to the `listener` parameter.
 
-Now, in your test program, call [`anonymousListener`](https://developer.apple.com/documentation/foundation/nsxpclistener/1412648-anonymouslistener) to create a anonymous listener and pass that to your listener abstraction:
+Now, in your test program, call [`anonymous()`](https://developer.apple.com/documentation/Foundation/NSXPCListener/anonymous()) to create a anonymous listener and pass that to your listener abstraction:
 
 ```swift
 let myListener = MyListener(listener: .anonymous())
@@ -71,7 +71,7 @@ init(connection: NSXPCConnection = .init(serviceName: "com.example.MyService")) 
 
 This sets up a connection to the XPC service’s listener by default, but allows you to override that by passing in a value to the `connection` parameter.
 
-Finally, in your test program, use `init(listenerEndpoint:)` to create a connection to your anonymous listener:
+Finally, in your test program, use [`init(listenerEndpoint:)`](https://developer.apple.com/documentation/Foundation/NSXPCConnection/init(listenerEndpoint:)) to create a connection to your anonymous listener:
 
 ```swift
 let connection = NSXPCConnection(listenerEndpoint: myListener.listener.endpoint)
@@ -122,4 +122,4 @@ You now have an XPC connection between your client code and your listener, with 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3113-testing-xpc-code-with-an-anonymous-listener)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3113-testing-xpc-code-with-an-anonymous-listener)*

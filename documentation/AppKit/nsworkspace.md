@@ -221,6 +221,27 @@ You can use the workspace object to:
 ### Deprecated
 - [Deprecated Symbols](nsworkspace-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Structures
+- [NSWorkspace.AccessibilityDisplayOptionsDidChangeMessage](nsworkspace/accessibilitydisplayoptionsdidchangemessage.md)
+- [NSWorkspace.ActiveSpaceDidChangeMessage](nsworkspace/activespacedidchangemessage.md)
+- [NSWorkspace.DidActivateApplicationMessage](nsworkspace/didactivateapplicationmessage.md)
+- [NSWorkspace.DidChangeFileLabelsMessage](nsworkspace/didchangefilelabelsmessage.md)
+- [NSWorkspace.DidDeactivateApplicationMessage](nsworkspace/diddeactivateapplicationmessage.md)
+- [NSWorkspace.DidHideApplicationMessage](nsworkspace/didhideapplicationmessage.md)
+- [NSWorkspace.DidLaunchApplicationMessage](nsworkspace/didlaunchapplicationmessage.md)
+- [NSWorkspace.DidMountVolumeMessage](nsworkspace/didmountvolumemessage.md)
+- [NSWorkspace.DidRenameVolumeMessage](nsworkspace/didrenamevolumemessage.md)
+- [NSWorkspace.DidTerminateApplicationMessage](nsworkspace/didterminateapplicationmessage.md)
+- [NSWorkspace.DidUnhideApplicationMessage](nsworkspace/didunhideapplicationmessage.md)
+- [NSWorkspace.DidUnmountVolumeMessage](nsworkspace/didunmountvolumemessage.md)
+- [NSWorkspace.DidWakeMessage](nsworkspace/didwakemessage.md)
+- [NSWorkspace.ScreensDidSleepMessage](nsworkspace/screensdidsleepmessage.md)
+- [NSWorkspace.ScreensDidWakeMessage](nsworkspace/screensdidwakemessage.md)
+- [NSWorkspace.SessionDidBecomeActiveMessage](nsworkspace/sessiondidbecomeactivemessage.md)
+- [NSWorkspace.SessionDidResignActiveMessage](nsworkspace/sessiondidresignactivemessage.md)
+- [NSWorkspace.WillLaunchApplicationMessage](nsworkspace/willlaunchapplicationmessage.md)
+- [NSWorkspace.WillSleepMessage](nsworkspace/willsleepmessage.md)
+- [NSWorkspace.WillUnmountVolumeMessage](nsworkspace/willunmountvolumemessage.md)
 
 ## Relationships
 

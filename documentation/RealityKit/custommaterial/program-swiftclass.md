@@ -10,6 +10,7 @@ An object that represents the backing shader compilation required for custom mat
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -43,22 +44,12 @@ let material = CustomMaterial(program: program)
 ### Structures
 - [CustomMaterial.Program.Descriptor](custommaterial/program-swift.class/descriptor-swift.struct.md)
   An object that specifies all parameters necessary to initialize `CustomMaterial` programs
-### Operators
-- [static func == (CustomMaterial.Program, CustomMaterial.Program) -> Bool](custommaterial/program-swift.class/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(surfaceShader: CustomMaterial.SurfaceShader, geometryModifier: CustomMaterial.GeometryModifier?, descriptor: CustomMaterial.Program.Descriptor) async throws](custommaterial/program-swift.class/init(surfaceshader:geometrymodifier:descriptor:).md)
 ### Instance Properties
 - [let descriptor: CustomMaterial.Program.Descriptor](custommaterial/program-swift.class/descriptor-swift.property.md)
 - [let geometryModifier: CustomMaterial.GeometryModifier?](custommaterial/program-swift.class/geometrymodifier.md)
-- [var hashValue: Int](custommaterial/program-swift.class/hashvalue.md)
-  The hash value.
 - [let surfaceShader: CustomMaterial.SurfaceShader](custommaterial/program-swift.class/surfaceshader.md)
-### Instance Methods
-- [func hash(into: inout Hasher)](custommaterial/program-swift.class/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](custommaterial/program-swift.class/equatable-implementations.md)
 
 ## Relationships
 
@@ -66,10 +57,12 @@ let material = CustomMaterial(program: program)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [struct ShaderGraphMaterial](shadergraphmaterial.md)
+  Create dynamic materials without Metal.
 - [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
 - [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)

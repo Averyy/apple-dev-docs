@@ -1,6 +1,6 @@
 # tabWidth
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The number of space characters represented by a tab character in the buffer.

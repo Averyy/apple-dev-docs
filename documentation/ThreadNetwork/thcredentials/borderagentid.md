@@ -3,7 +3,7 @@
 **Framework**: ThreadNetwork  
 **Kind**: property
 
-The identifer of an active Thread network Border Agent.
+The identifier of an active Thread network Border Agent.
 
 **Availability**:
 - iOS 15.0+
@@ -20,7 +20,7 @@ var borderAgentID: Data? { get }
 
 #### Discussion
 
-This property’s value is the MAC Extended Address, a random identifier that the active Thread network border router generates.
+This property’s value is the MAC Extended Address, a random identifier that the active Thread network Thread Border Router generates.
 
 ## See Also
 
@@ -35,9 +35,9 @@ This property’s value is the MAC Extended Address, a random identifier that th
 - [var networkName: String?](thcredentials/networkname.md)
   The Thread network name.
 - [var panID: Data?](thcredentials/panid.md)
-  The Thead network PAN identifier.
+  The Thread network PAN identifier.
 - [var pskc: Data?](thcredentials/pskc.md)
-  The Thread network pre-shared key for the Commissioner.
+  The Thread network pre-shared key (PSKC) for the Commissioner.
 
 
 ---

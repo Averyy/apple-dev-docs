@@ -1,6 +1,6 @@
 # Building a guessing game for visionOS
 
-**Framework**: Groupactivities
+**Framework**: Group Activities
 
 Create a team-based guessing game for visionOS using Group Activities.
 
@@ -356,6 +356,8 @@ For more information about building custom spatial templates, see [`SpatialTempl
 
 - [protocol SpatialTemplate](spatialtemplate.md)
   An interface you use to create custom arrangements of spatial Personas in a scene.
+- [struct SpatialTemplatePreference](spatialtemplatepreference.md)
+  A structure that specifies the preferred arrangement of participant spatial Personas in a shared simulation space.
 - [struct SpatialTemplateSeatElement](spatialtemplateseatelement.md)
   A spatial template element that represents a seat for a participant in the activity.
 - [protocol SpatialTemplateElement](spatialtemplateelement.md)
@@ -370,4 +372,4 @@ For more information about building custom spatial templates, see [`SpatialTempl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GroupActivities/building-a-guessing-game-for-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/building-a-guessing-game-for-visionos)*

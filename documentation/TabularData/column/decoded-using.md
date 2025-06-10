@@ -1,6 +1,6 @@
 # decoded(_:using:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Generates a column by decoding each element’s data.

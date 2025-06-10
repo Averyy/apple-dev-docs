@@ -1,6 +1,6 @@
 # UNNotificationSound
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 The sound played upon delivery of a notification.

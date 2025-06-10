@@ -41,6 +41,7 @@ protocol UILargeContentViewerItem : NSObjectProtocol
 - [UIActionSheet](uiactionsheet.md)
 - [UIActivityIndicatorView](uiactivityindicatorview.md)
 - [UIAlertView](uialertview.md)
+- [UIBackgroundExtensionView](uibackgroundextensionview.md)
 - [UIButton](uibutton.md)
 - [UICalendarView](uicalendarview.md)
 - [UICollectionReusableView](uicollectionreusableview.md)

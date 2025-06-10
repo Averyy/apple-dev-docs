@@ -12,6 +12,7 @@ List all the App Store territories to which a specific custom app license agreem
 
 - [List Territories](get-v1-territories.md)
   List all territories where the App Store operates.
+- [GET /v1/endUserLicenseAgreements/{id}/relationships/territories](get-v1-enduserlicenseagreements-_id_-relationships-territories.md)
 
 
 ---

@@ -29,8 +29,6 @@ It’s your app’s responsibility to maintain strong references to all the reso
 
 > ❗ **Important**:  Releasing a resource before a command buffer’s commands complete may trigger a runtime error or erratic behavior.
 
- Releasing a resource before a command buffer’s commands complete may trigger a runtime error or erratic behavior.
-
 You can determine whether an existing command buffer retains references by checking its [`retainedReferences`](mtlcommandbuffer/retainedreferences.md) property.
 
 ## See Also

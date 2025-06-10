@@ -8,6 +8,7 @@
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -15,15 +16,6 @@
 ```swift
 struct Semantic<Element>
 ```
-
-## Topics
-
-### Instance Properties
-- [let id: MeshBuffers.Identifier](meshbuffers/semantic/id-swift.property.md)
-  The stable identity of the entity associated with this instance.
-### Type Aliases
-- [MeshBuffers.Semantic.ID](meshbuffers/semantic/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 ## Relationships
 

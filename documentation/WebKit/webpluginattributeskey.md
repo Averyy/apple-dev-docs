@@ -1,6 +1,6 @@
 # WebPlugInAttributesKey
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 The `NSDictionary` object containing all names and values of all attributes of the plug-in’s associated HTML element, as well as all names and values of the parameters to be passed to the plug-in. For example, this dictionary will contain all `PARAM` elements within an `APPLET` element. If attribute and parameter names conflict, the attributes of an element take precedence over any of its parameters. All keys and values in this dictionary must be of type `NSString`. .
@@ -19,7 +19,7 @@ let WebPlugInAttributesKey: String
 - [let WebActionButtonKey: String](webactionbuttonkey.md)
   An NSNumber object where `0` indicates the left button, `1` indicates the middle button, and `2` indicates the right button.
 - [let WebActionElementKey: String](webactionelementkey.md)
-  A dictionary containing element information. See [`WebView`](webview.md) for a description of the key-value pairs in this dictionary.
+  A dictionary containing element information. See `WebView` for a description of the key-value pairs in this dictionary.
 - [let WebActionModifierFlagsKey: String](webactionmodifierflagskey.md)
   An unsigned number that indicates the modifier flag.
 - [let WebActionNavigationTypeKey: String](webactionnavigationtypekey.md)

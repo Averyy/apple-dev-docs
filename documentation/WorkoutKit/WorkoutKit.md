@@ -1,6 +1,6 @@
 # WorkoutKit
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: module
 
 Create, preview, and sync workout compositions to the Workout app.

@@ -20,8 +20,6 @@ Call this method in your watchOS app to start a mirrored workout session on the 
 
 > ❗ **Important**:  This method fails if you call it on a workout session that ended.
 
- This method fails if you call it on a workout session that ended.
-
 ```swift
 let configuration = HKWorkoutConfiguration()
 configuration.activityType = .running

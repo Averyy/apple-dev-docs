@@ -21,8 +21,6 @@ This key is optional. The default value is `NO`.
 
 > ❗ **Important**:  You must supply a justification during App Store review if you set the key’s value to YES, as described in `Provide Justification for Exceptions`.
 
- You must supply a justification during App Store review if you set the key’s value to YES, as described in `Provide Justification for Exceptions`.
-
 ## See Also
 
 - [NSExceptionMinimumTLSVersion](information-property-list/nsexceptionminimumtlsversion.md)

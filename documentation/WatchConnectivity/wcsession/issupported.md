@@ -1,6 +1,6 @@
 # isSupported()
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method
 
 Returns a Boolean value indicating whether the current iOS device is able to use a session object.

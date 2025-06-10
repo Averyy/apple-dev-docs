@@ -1,6 +1,6 @@
 # HAVE_FUTURE_DATA
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 Enough data is available to begin playback.

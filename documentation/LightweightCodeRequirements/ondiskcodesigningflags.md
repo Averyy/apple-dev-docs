@@ -47,6 +47,7 @@ struct OnDiskCodeSigningFlags
 - [Encodable](../Swift/Encodable.md)
 - [OnDiskConstraint](ondiskconstraint.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

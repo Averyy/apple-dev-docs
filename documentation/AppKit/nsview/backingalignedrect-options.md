@@ -21,7 +21,7 @@ A rectangle in the view’s interior coordinate system that is aligned to the ba
 
 #### Discussion
 
-Uses the [`NSIntegralRectWithOptions(_:_:)`](https://developer.apple.com/documentation/foundation/1391311-nsintegralrectwithoptions) function and the given input rectangle and options to produce a backing store pixel-aligned rectangle in the view’s interior coordinates.
+Uses the [`NSIntegralRectWithOptions(_:_:)`](https://developer.apple.com/documentation/Foundation/NSIntegralRectWithOptions(_:_:)) function and the given input rectangle and options to produce a backing store pixel-aligned rectangle in the view’s interior coordinates.
 
 ## Parameters
 

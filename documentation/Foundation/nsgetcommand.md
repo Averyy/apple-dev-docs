@@ -37,6 +37,8 @@ For information on working with `get` commands, see [`Getting and Setting Proper
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

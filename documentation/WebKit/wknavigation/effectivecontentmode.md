@@ -1,6 +1,6 @@
 # effectiveContentMode
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The content mode WebKit uses to load the webpage.

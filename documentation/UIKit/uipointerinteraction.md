@@ -1,6 +1,6 @@
 # UIPointerInteraction
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An interaction that enables support for effects on a view or customizes the pointer’s appearance within a region of an app.
@@ -67,4 +67,4 @@ If you use a [`UIButton`](uibutton.md) as an interface object, use the button’
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uipointerinteraction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uipointerinteraction)*

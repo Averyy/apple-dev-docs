@@ -1,6 +1,6 @@
 # Playing audio using the built-in music player
 
-**Framework**: Mediaplayer
+**Framework**: Media Player
 
 Create a media player inside your app to play audio from the user’s media library.
 
@@ -55,4 +55,4 @@ For more information about controlling the playback of your items, see [`MPMedia
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MediaPlayer/playing-audio-using-the-built-in-music-player)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mediaplayer/playing-audio-using-the-built-in-music-player)*

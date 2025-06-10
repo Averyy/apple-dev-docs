@@ -1,6 +1,6 @@
 # Detecting nudity in media and providing intervention options
 
-**Framework**: Sensitivecontentanalysis
+**Framework**: SensitiveContentAnalysis
 
 Alert people before displaying images or video that might be sensitive.
 
@@ -70,6 +70,8 @@ let handler = analyzer.videoAnalysis(forFileAt: videoFileUrl)
 let response = try await handler.hasSensitiveContent()
 ```
 
+> **Note**: To analyze a video stream rather than static files, see [`SCVideoStreamAnalyzer`](scvideostreamanalyzer.md).
+
 ##### Handle Performance Implications
 
 Although sensitivity checks incur additional image processing and introduce a delay while checking video, the presence of active user preferences indicate the user’s expectation to receive protections at the cost of time to review.
@@ -113,4 +115,4 @@ Inline interventions for the Sensitive Content Warning setting aim to interfere 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SensitiveContentAnalysis/detecting-nudity-in-media-and-providing-intervention-options)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sensitivecontentanalysis/detecting-nudity-in-media-and-providing-intervention-options)*

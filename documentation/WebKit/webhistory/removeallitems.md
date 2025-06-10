@@ -1,6 +1,6 @@
 # removeAllItems()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Removes all items from the web history.

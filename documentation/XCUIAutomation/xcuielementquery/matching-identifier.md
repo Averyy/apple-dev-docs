@@ -1,6 +1,6 @@
 # matching(_:identifier:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Returns a new query that matches elements of the requested type and have an identifying property that matches a provided identifier.

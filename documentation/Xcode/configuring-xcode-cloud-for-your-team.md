@@ -63,4 +63,4 @@ Xcode Cloud uses your personal SCM account to monitor the Git repository for cha
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-xcode-cloud-for-your-team)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-xcode-cloud-for-your-team)*

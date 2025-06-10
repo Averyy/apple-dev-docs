@@ -1,6 +1,6 @@
 # all
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Detect all data types and turn them into links.

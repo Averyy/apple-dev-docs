@@ -1,6 +1,6 @@
 # INVALID_ENUM
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -21,7 +21,7 @@ class let wasDisconnectedNotification: NSNotification.Name
 
 #### Discussion
 
-The notification’s [`object`](https://developer.apple.com/documentation/foundation/notification/1779839-object) property contains the capture device that disconnected.
+The notification’s [`object`](https://developer.apple.com/documentation/Foundation/Notification/object) property contains the capture device that disconnected.
 
 ## See Also
 

@@ -17,6 +17,7 @@ Registers the selector of the specified target to implement a single undo operat
 ## Declaration
 
 ```swift
+@MainActor
 func registerUndo(withTarget target: Any, selector: Selector, object: Any?)
 ```
 
@@ -55,8 +56,6 @@ garden.manager.undo()
 ```
 
 > ❗ **Important**:  This method raises [`internalInconsistencyException`](nsexceptionname/internalinconsistencyexception.md) if it’s called when no undo group has been established using [`beginUndoGrouping()`](undomanager/beginundogrouping().md). Undo groups are usually set by default, and you rarely need to create a top-level undo group explicitly.
-
- This method raises [`internalInconsistencyException`](nsexceptionname/internalinconsistencyexception.md) if it’s called when no undo group has been established using [`beginUndoGrouping()`](undomanager/beginundogrouping().md). Undo groups are usually set by default, and you rarely need to create a top-level undo group explicitly.
 
 ## Parameters
 

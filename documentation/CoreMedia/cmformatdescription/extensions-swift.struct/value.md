@@ -65,6 +65,20 @@ struct Value
 - [CMFormatDescription.Extensions.Value.TransferFunction](cmformatdescription/extensions-swift.struct/value/transferfunction.md)
 - [CMFormatDescription.Extensions.Value.Vendor](cmformatdescription/extensions-swift.struct/value/vendor.md)
 - [CMFormatDescription.Extensions.Value.YCbCrMatrix](cmformatdescription/extensions-swift.struct/value/ycbcrmatrix.md)
+### Structures
+- [CMFormatDescription.Extensions.Value.ContentColorVolume](cmformatdescription/extensions-swift.struct/value/contentcolorvolume.md)
+- [CMFormatDescription.Extensions.Value.HeroEye](cmformatdescription/extensions-swift.struct/value/heroeye.md)
+- [CMFormatDescription.Extensions.Value.LogTransferFunction](cmformatdescription/extensions-swift.struct/value/logtransferfunction.md)
+- [CMFormatDescription.Extensions.Value.ProjectionKind](cmformatdescription/extensions-swift.struct/value/projectionkind.md)
+- [CMFormatDescription.Extensions.Value.ViewPackingKind](cmformatdescription/extensions-swift.struct/value/viewpackingkind.md)
+### Type Methods
+- [static func cameraCalibrationDataLensCollection(CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection(_:).md)
+- [static func heroEye(CMFormatDescription.Extensions.Value.HeroEye) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/heroeye(_:).md)
+- [static func logTransferFunction(CMFormatDescription.Extensions.Value.LogTransferFunction) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/logtransferfunction(_:).md)
+- [static func projectionKind(CMFormatDescription.Extensions.Value.ProjectionKind) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/projectionkind(_:).md)
+- [static func viewPackingKind(CMFormatDescription.Extensions.Value.ViewPackingKind) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/viewpackingkind(_:).md)
+### Enumerations
+- [CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection](cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection.md)
 
 ## Relationships
 
@@ -73,6 +87,7 @@ struct Value
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

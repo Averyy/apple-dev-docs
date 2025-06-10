@@ -38,6 +38,7 @@ To conditionally disallow the performance of a segue, override the [`shouldPerfo
 - [NSCollectionViewItem](nscollectionviewitem.md)
 - [NSPageController](nspagecontroller.md)
 - [NSSplitViewController](nssplitviewcontroller.md)
+- [NSSplitViewItemAccessoryViewController](nssplitviewitemaccessoryviewcontroller.md)
 - [NSTabViewController](nstabviewcontroller.md)
 - [NSTitlebarAccessoryViewController](nstitlebaraccessoryviewcontroller.md)
 - [NSViewController](nsviewcontroller.md)

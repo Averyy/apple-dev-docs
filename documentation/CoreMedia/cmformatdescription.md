@@ -114,6 +114,10 @@ A `CMFormatDescription` object is an object that describes media types (audio, v
   A type that describes format description extensions.
 - [CMFormatDescription.ParameterSetCollection](cmformatdescription/parametersetcollection.md)
   A type that describes format description parameter sets.
+### Initializers
+- [init(referencing: CMFormatDescription)](cmformatdescription/init(referencing:).md)
+### Type Aliases
+- [CMFormatDescription.T](cmformatdescription/t.md)
 
 ## Relationships
 
@@ -122,6 +126,7 @@ A `CMFormatDescription` object is an object that describes media types (audio, v
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

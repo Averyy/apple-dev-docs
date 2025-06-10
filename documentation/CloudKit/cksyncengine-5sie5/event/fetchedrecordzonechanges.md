@@ -1,6 +1,6 @@
 # CKSyncEngine.Event.FetchedRecordZoneChanges
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: struct
 
 A type that provides information about fetched record zone changes.
@@ -38,6 +38,7 @@ struct FetchedRecordZoneChanges
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

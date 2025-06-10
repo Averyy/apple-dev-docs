@@ -22,7 +22,7 @@ func skip(with params: MTRServiceAreaClusterSkipAreaParams) async throws -> MTRS
 
 #### Discussion
 
-This command is used to skip an area where the device operates.
+This command is used to skip the given area, and to attempt operating at other areas on the SupportedAreas attribute list.
 
 
 ---

@@ -1,6 +1,6 @@
 # testCase(_:didFailWithDescription:inFile:atLine:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Notifies the observer when a test case reports a failure.

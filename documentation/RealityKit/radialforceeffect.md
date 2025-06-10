@@ -10,6 +10,7 @@ A force effect that pulls objects toward its center with a spring-like (distance
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -21,8 +22,6 @@ struct RadialForceEffect
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](radialforceeffect/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(strength: Double, restDistance: Double)](radialforceeffect/init(strength:restdistance:).md)
   Creates a radial force effect.
 ### Instance Properties
@@ -35,12 +34,8 @@ struct RadialForceEffect
 - [let strength: Float](radialforceeffect/strength.md)
   The magnitude of the force.
 ### Instance Methods
-- [func encode(to: any Encoder) throws](radialforceeffect/encode(to:).md)
-  Encodes this value into the given encoder.
 - [func update(parameters: inout ForceEffectParameters)](radialforceeffect/update(parameters:).md)
   Calculates the radial forces for rigid bodies from the force effect.
-### Default Implementations
-- [ForceEffectProtocol Implementations](radialforceeffect/forceeffectprotocol-implementations.md)
 
 ## Relationships
 

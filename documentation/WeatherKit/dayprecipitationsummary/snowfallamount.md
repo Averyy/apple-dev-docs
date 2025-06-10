@@ -1,6 +1,6 @@
 # snowfallAmount
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The snowfall amount as depth of snow crystals for the day.

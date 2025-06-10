@@ -1,6 +1,6 @@
 # SVG_PRESERVEASPECTRATIO_XMAXYMIN
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

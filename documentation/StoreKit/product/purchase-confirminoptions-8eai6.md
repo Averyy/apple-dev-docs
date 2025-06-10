@@ -1,6 +1,6 @@
 # purchase(confirmIn:options:)
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: method
 
 Processes a purchase for the product.

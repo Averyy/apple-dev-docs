@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to disable Lost Mode.
+A response from the device after it processes the command to take the device out of Lost Mode.
 
 **Availability**:
 - iOS 9.3+
 - iPadOS 9.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,14 +17,14 @@ object DisableLostModeResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object DisableLostModeResponse.ErrorChainItem](disablelostmoderesponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 
 ## See Also
 
 - [object DisableLostModeCommand](disablelostmodecommand.md)
-  The command to disable Lost Mode.
+  The command to take the device out of Lost Mode.
 
 
 ---

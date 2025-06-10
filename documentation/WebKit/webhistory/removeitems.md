@@ -1,6 +1,6 @@
 # removeItems(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Removes the specified items from the web history.

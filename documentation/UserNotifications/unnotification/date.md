@@ -1,6 +1,6 @@
 # date
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The delivery date of the notification.

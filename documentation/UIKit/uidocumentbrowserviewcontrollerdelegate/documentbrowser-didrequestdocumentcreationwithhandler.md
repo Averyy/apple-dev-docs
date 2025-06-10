@@ -1,6 +1,6 @@
 # documentBrowser(_:didRequestDocumentCreationWithHandler:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Asks the delegate to create a new document.

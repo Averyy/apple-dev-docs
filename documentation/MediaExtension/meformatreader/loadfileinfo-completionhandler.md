@@ -12,7 +12,7 @@ Loads the file info object with the properties of the media asset.
 ## Declaration
 
 ```swift
-var fileInfo: MEFileInfo { get async throws }
+func fileInfo() async throws -> MEFileInfo
 ```
 
 ## Parameters

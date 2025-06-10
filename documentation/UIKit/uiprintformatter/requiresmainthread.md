@@ -14,7 +14,6 @@ A Boolean value that determines whether the system executes the print formatterâ
 ## Declaration
 
 ```swift
-@MainActor
 var requiresMainThread: Bool { get }
 ```
 

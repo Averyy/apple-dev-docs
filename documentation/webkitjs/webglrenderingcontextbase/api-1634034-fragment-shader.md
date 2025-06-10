@@ -1,6 +1,6 @@
 # FRAGMENT_SHADER
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

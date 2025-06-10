@@ -10,6 +10,7 @@ Prepares and plays a new audio playback instance on this entity.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -33,20 +34,14 @@ The method prepares the audio by calling [`prepareAudio(_:)`](entity/prepareaudi
 
 ## See Also
 
-- [func playAudio(configuration: AudioGeneratorConfiguration, Audio.GeneratorRenderHandler) throws -> AudioGeneratorController](entity/playaudio(configuration:_:).md)
+- [func playAudio(configuration:_:)](entity/playaudio(configuration:_:).md)
   Prepares and plays a real-time audio playback instance.
-- [func prepareAudio(configuration: AudioGeneratorConfiguration, Audio.GeneratorRenderHandler) throws -> AudioGeneratorController](entity/prepareaudio(configuration:_:).md)
+- [func prepareAudio(configuration:_:)](entity/prepareaudio(configuration:_:).md)
   Prepares a real-time audio playback instances.
 - [func prepareAudio(AudioResource) -> AudioPlaybackController](entity/prepareaudio(_:).md)
   Prepares an audio resource for playback.
 - [func stopAllAudio()](entity/stopallaudio.md)
   Stops playback for all audio on this entity.
-- [var spatialAudio: SpatialAudioComponent?](entity/spatialaudio.md)
-  The component that configures the spatial rendering of sounds from this entity.
-- [var ambientAudio: AmbientAudioComponent?](entity/ambientaudio.md)
-  The component that configures the ambient rendering of sounds from this entity.
-- [var channelAudio: ChannelAudioComponent?](entity/channelaudio.md)
-  The component that configures the channel-based rendering of sounds from this entity.
 
 
 ---

@@ -28,7 +28,7 @@ This class provides a [`CVPixelBufferPool`](https://developer.apple.com/document
 - [init(assetWriterInput: AVAssetWriterInput, sourcePixelBufferAttributes: [String : Any]?)](avassetwriterinputtaggedpixelbuffergroupadaptor/init(assetwriterinput:sourcepixelbufferattributes:).md)
   Creates an object that appends tagged buffer groups to an asset writer input.
 ### Configuring the buffer pool
-- [var sourcePixelBufferAttributes: [String : Any]?](avassetwriterinputtaggedpixelbuffergroupadaptor/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]?](avassetwriterinputtaggedpixelbuffergroupadaptor/sourcepixelbufferattributes.md)
   The attributes of buffers that the adaptor’s pixel buffer pool vends.
 - [var pixelBufferPool: CVPixelBufferPool?](avassetwriterinputtaggedpixelbuffergroupadaptor/pixelbufferpool.md)
   A pixel buffer pool that vends and efficiently recycles the pixel buffers of tagged buffer groups.
@@ -55,10 +55,12 @@ This class provides a [`CVPixelBufferPool`](https://developer.apple.com/document
 
 ## See Also
 
-- [Writing Fragmented MPEG-4 Files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
-  Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
+- [Converting projected video to Apple Projected Media Profile](converting-projected-video-to-apple-projected-media-profile.md)
+  Convert content with equirectangular or half-equirectangular projection to APMP.
 - [Converting side-by-side 3D video to multiview HEVC and spatial video](converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
   Create video content for visionOS by converting an existing 3D HEVC file to a multiview HEVC format, optionally adding spatial metadata to create a spatial video.
+- [Writing Fragmented MPEG-4 Files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
+  Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
 - [Creating spatial photos and videos with spatial metadata](../ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
 - [Tagging Media with Video Color Information](tagging-media-with-video-color-information.md)

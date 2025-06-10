@@ -1,6 +1,6 @@
 # screenX
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The x-coordinate of the touch’s location in screen coordinates.

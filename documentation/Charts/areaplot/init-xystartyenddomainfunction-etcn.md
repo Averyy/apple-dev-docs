@@ -1,6 +1,6 @@
 # init(x:yStart:yEnd:domain:function:)
 
-**Framework**: Charts  
+**Framework**: Swift Charts  
 **Kind**: init
 
 Creates a mark that fills the area between two functions (yStart, yEnd) = f(x).

@@ -14,7 +14,6 @@ Returns the area that encloses a specified page of content.
 ## Declaration
 
 ```swift
-@MainActor
 func rectForPage(at pageIndex: Int) -> CGRect
 ```
 

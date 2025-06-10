@@ -1,6 +1,6 @@
 # Tracking preregistered images in 3D space
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Place content based on the current position of a known image in a person’s surroundings.
 

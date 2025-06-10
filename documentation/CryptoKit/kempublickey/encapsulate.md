@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Encapsulates the generated shared secret
+Generates and encapsulates a shared secret.
 
 **Availability**:
 - iOS 17.0+
@@ -23,7 +23,11 @@ func encapsulate() throws -> KEM.EncapsulationResult
 
 #### Return Value
 
-The shared secret and its encapsulated version
+The shared secret, and its encapsulated version.
+
+#### Discussion
+
+Share the encapsulated secret with the person who has the [`KEMPrivateKey`](kemprivatekey.md). They use [`decapsulate(_:)`](kemprivatekey/decapsulate(_:).md) to recover the shared secret.
 
 
 ---

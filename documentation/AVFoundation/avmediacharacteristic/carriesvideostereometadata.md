@@ -1,6 +1,6 @@
 # carriesVideoStereoMetadata
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A media characteristic that indicates that the stereoscopic video track carries additional information related to the stereoscopic video.

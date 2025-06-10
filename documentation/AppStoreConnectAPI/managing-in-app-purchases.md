@@ -1,6 +1,6 @@
 # Managing in-app purchases
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Learn how to create and manage in-app purchases with the App Store Connect API.
 
@@ -612,4 +612,4 @@ For more information on creating and editing in-app purchases, see [`Overview fo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/managing-in-app-purchases)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/managing-in-app-purchases)*

@@ -1,6 +1,6 @@
 # notificationCenter
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The notification center from which the notification must be posted.

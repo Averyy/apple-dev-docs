@@ -25,8 +25,6 @@ func lineStyle(_ style: StrokeStyle) -> some ChartContent
 
 > ⚠️ **Warning**: Use this `.lineStyle(_:)` overload only if you have a predefined stroke style. The provided stroke style will override default line width and line cap for line marks.
 
-Use this `.lineStyle(_:)` overload only if you have a predefined stroke style. The provided stroke style will override default line width and line cap for line marks.
-
 ## Parameters
 
 - `style`: The stroke style.

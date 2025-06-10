@@ -59,6 +59,9 @@ enum Code
   An error that indicates a problem in the system’s capture pipeline.
 - [ARError.Code.highResolutionFrameCaptureInProgress](arerror/code/highresolutionframecaptureinprogress.md)
   An error that indicates the system needs to finish a high-resolution frame request before accepting another request.
+### Enumeration Cases
+- [ARError.Code.networkConnectionFailure](arerror/code/networkconnectionfailure.md)
+  Generic network connection failure.
 ### Initializers
 - [init?(rawValue: Int)](arerror/code/init(rawvalue:).md)
 
@@ -70,6 +73,7 @@ enum Code
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

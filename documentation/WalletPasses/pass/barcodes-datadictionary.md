@@ -1,13 +1,13 @@
 # Pass.Barcodes
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that represents a barcode on a pass.
 
 **Availability**:
 - iOS 9.0+
-- iPadOS 6.0+
+- iPadOS 9.0+
 - watchOS 2.0+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # count(where:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns the number of elements in the sequence that satisfy the given predicate.

@@ -14,6 +14,7 @@ A standard view controller whose interface lets the user compose and send SMS or
 ## Declaration
 
 ```swift
+@MainActor
 class MFMessageComposeViewController
 ```
 
@@ -26,8 +27,6 @@ The composition interface doesn’t guarantee the delivery of your message; it o
 ![a screenshot of the New Message screen, with a phone number in the To field and a short sentence in the composition text field.](https://docs-assets.developer.apple.com/published/e75d28ad3cf6ade12a7f581320e3a862/media-4288093%402x.png)
 
 > ❗ **Important**:  You must not modify the view hierarchy presented by this view controller. However, you can customize the appearance of the interface using the [`UIAppearance`](https://developer.apple.com/documentation/UIKit/UIAppearance) protocol.
-
- You must not modify the view hierarchy presented by this view controller. However, you can customize the appearance of the interface using the [`UIAppearance`](https://developer.apple.com/documentation/UIKit/UIAppearance) protocol.
 
 An alternate way to compose SMS messages is to create and open a URL that uses the `sms` scheme. URLs of that type go directly to the Messages app, which uses your URL to configure the message. For information about the structure of `sms` URLs, see [`Apple URL Scheme Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899).
 
@@ -45,7 +44,7 @@ For more information on how to present and dismiss view controllers, see [`View 
 
 ##### Detecting Changes to the Availability of Messaging
 
-Add an observer to the [`MFMessageComposeViewControllerTextMessageAvailabilityDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name/1614064-mfmessagecomposeviewcontrollerte) notification to get notified of changes to the messaging capabilities of the current device. The system delivers that notification to your observer when the status of messaging changes.
+Add an observer to the [`MFMessageComposeViewControllerTextMessageAvailabilityDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/MFMessageComposeViewControllerTextMessageAvailabilityDidChange) notification to get notified of changes to the messaging capabilities of the current device. The system delivers that notification to your observer when the status of messaging changes.
 
 ## Topics
 
@@ -87,8 +86,8 @@ Add an observer to the [`MFMessageComposeViewControllerTextMessageAvailabilityDi
   The key for the alternate filename for the file-based item attached to the message.
 - [func insertCollaborationItemProvider(NSItemProvider) -> Bool](mfmessagecomposeviewcontroller/insertcollaborationitemprovider(_:).md)
 ### Handling notifications
-- [static let MFMessageComposeViewControllerTextMessageAvailabilityDidChange: NSNotification.Name](../foundation/nsnotification/name/1614064-mfmessagecomposeviewcontrollerte.md)
-  Posted when the value returned by the  class method has changed.
+- [static let MFMessageComposeViewControllerTextMessageAvailabilityDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/MFMessageComposeViewControllerTextMessageAvailabilityDidChange.md)
+  Posted when the value returned by the [`canSendText()`](doc://com.apple.documentation/documentation/MessageUI/MFMessageComposeViewController/canSendText()) class method has changed.
 - [let MFMessageComposeViewControllerTextMessageAvailabilityKey: String](mfmessagecomposeviewcontrollertextmessageavailabilitykey.md)
   The value of this key is a number object that contains a Boolean value.
 
@@ -107,6 +106,7 @@ Add an observer to the [`MFMessageComposeViewControllerTextMessageAvailabilityDi
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

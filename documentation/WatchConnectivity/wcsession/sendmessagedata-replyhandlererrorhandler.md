@@ -1,6 +1,6 @@
 # sendMessageData(_:replyHandler:errorHandler:)
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method
 
 Sends a data object immediately to the paired and active device and optionally handles a response.

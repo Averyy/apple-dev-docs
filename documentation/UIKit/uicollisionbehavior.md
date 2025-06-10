@@ -38,8 +38,6 @@ You can define a collision boundary with a bezier path (see the [`addBoundary(wi
 
 > ❗ **Important**:  When setting the initial position for a dynamic item, you must ensure that its bounds do not intersect any collision boundaries. The animation behavior for such a misplaced item is undefined.
 
- When setting the initial position for a dynamic item, you must ensure that its bounds do not intersect any collision boundaries. The animation behavior for such a misplaced item is undefined.
-
 To respond to collisions, implement a delegate object that adopts the [`UICollisionBehaviorDelegate`](uicollisionbehaviordelegate.md) protocol. Add the delegate to the behavior using the [`collisionDelegate`](uicollisionbehavior/collisiondelegate.md) property.
 
 You can include a collision behavior in a custom, composite behavior by starting with a [`UIDynamicBehavior`](uidynamicbehavior.md) object and adding a collision behavior with the [`addChildBehavior(_:)`](uidynamicbehavior/addchildbehavior(_:).md) method.  If you want to influence a collision behavior at each step of a dynamic animation, implement the inherited [`action`](uidynamicbehavior/action.md) method.
@@ -95,6 +93,7 @@ You can include a collision behavior in a custom, composite behavior by starting
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

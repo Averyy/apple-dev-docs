@@ -25,8 +25,6 @@ After calling this method, the resource request downloads any on-demand resource
 
 > ❗ **Important**:  You must call this method or [`conditionallyBeginAccessingResources(completionHandler:)`](nsbundleresourcerequest/conditionallybeginaccessingresources(completionhandler:).md) before accessing any resources marked with the tags managed by the request.
 
- You must call this method or [`conditionallyBeginAccessingResources(completionHandler:)`](nsbundleresourcerequest/conditionallybeginaccessingresources(completionhandler:).md) before accessing any resources marked with the tags managed by the request.
-
 ## Parameters
 
 - `completionHandler`: The block takes the following parameter:

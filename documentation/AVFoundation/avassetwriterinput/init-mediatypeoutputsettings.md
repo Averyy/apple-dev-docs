@@ -1,6 +1,6 @@
 # init(mediaType:outputSettings:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: init
 
 Creates an input to append sample buffers of the specified type to the output file.

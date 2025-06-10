@@ -1,6 +1,6 @@
 # XPC connections
 
-**Framework**: Xpc
+**Framework**: XPC
 
 Create and manage connections to services using connection-based APIs.
 
@@ -28,7 +28,7 @@ But, in most situations, the listener- and session-based APIs are a better choic
 - [var XPC_CONNECTION_MACH_SERVICE_PRIVILEGED: Int32](xpc_connection_mach_service_privileged.md)
   A flag that indicates the job advertising the service name belongs to a launch daemon rather than a launch agent.
 ### Event handling
-- [func xpc_connection_set_event_handler(xpc_connection_t, xpc_handler_t)](xpc_connection_set_event_handler(_:_:).md)
+- [func xpc_connection_set_event_handler(xpc_connection_t, (xpc_object_t) -> Void)](xpc_connection_set_event_handler(_:_:).md)
   Sets the event handler block for the connection.
 - [typealias xpc_handler_t](xpc_handler_t.md)
   The type of block that the XPC connection APIs accept.
@@ -55,7 +55,7 @@ But, in most situations, the listener- and session-based APIs are a better choic
   Sends a message over the connection to the destination service.
 - [func xpc_connection_send_barrier(xpc_connection_t, () -> Void)](xpc_connection_send_barrier(_:_:).md)
   Issues a barrier against the connection’s message-send activity.
-- [func xpc_connection_send_message_with_reply(xpc_connection_t, xpc_object_t, dispatch_queue_t?, xpc_handler_t)](xpc_connection_send_message_with_reply(_:_:_:_:).md)
+- [func xpc_connection_send_message_with_reply(xpc_connection_t, xpc_object_t, dispatch_queue_t?, (xpc_object_t) -> Void)](xpc_connection_send_message_with_reply(_:_:_:_:).md)
   Sends a message over the connection to the destination service and associates a handler to invoke when the remote service sends a reply message.
 - [func xpc_connection_send_message_with_reply_sync(xpc_connection_t, xpc_object_t) -> xpc_object_t](xpc_connection_send_message_with_reply_sync(_:_:).md)
   Sends a message over the connection and blocks the caller until it receives a reply.

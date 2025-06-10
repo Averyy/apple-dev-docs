@@ -1,6 +1,6 @@
 # VTVideoDecoderExtensionProperties(_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 **Availability**:

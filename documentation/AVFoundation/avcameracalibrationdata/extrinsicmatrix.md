@@ -1,6 +1,6 @@
 # extrinsicMatrix
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A matrix relating a camera’s position and orientation to a world or scene coordinate system.

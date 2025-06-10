@@ -1,6 +1,6 @@
 # accountManager(_:shouldAuthenticateAccountProviderWithIdentifier:)
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: method
 
 Asks the delegate whether to authenticate the user with the selected provider.

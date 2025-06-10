@@ -1,6 +1,6 @@
 # COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

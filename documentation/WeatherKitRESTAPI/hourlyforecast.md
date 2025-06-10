@@ -1,6 +1,6 @@
 # HourlyForecast
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 A collection of hour forecasts for a specified range of hours.

@@ -1,6 +1,6 @@
 # Tracking specific points in world space
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Retrieve the position and orientation of anchors your app stores in ARKit.
 
@@ -38,8 +38,6 @@ Task {
 ```
 
 > ❗ **Important**: If a person repositions the current space — for example, by holding down the Digital Crown — world anchor updates begin updating their position relative to the new world origin. For example, a world anchor placed on a table still reports information about the table’s position, but those positions are relative to the updated world origin.
-
-If a person repositions the current space — for example, by holding down the Digital Crown — world anchor updates begin updating their position relative to the new world origin. For example, a world anchor placed on a table still reports information about the table’s position, but those positions are relative to the updated world origin.
 
 ##### Create and Add World Anchors
 

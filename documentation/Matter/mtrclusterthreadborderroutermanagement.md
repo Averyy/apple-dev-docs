@@ -41,8 +41,8 @@ class MTRClusterThreadBorderRouterManagement
 - [func readAttributeInterfaceEnabled(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadborderroutermanagement/readattributeinterfaceenabled(with:).md)
 - [func readAttributePendingDatasetTimestamp(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadborderroutermanagement/readattributependingdatasettimestamp(with:).md)
 - [func readAttributeThreadVersion(with: MTRReadParams?) -> [String : Any]?](mtrclusterthreadborderroutermanagement/readattributethreadversion(with:).md)
-- [func setActiveDatasetRequestWith(MTRThreadBorderRouterManagementClusterSetActiveDatasetRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterthreadborderroutermanagement/setactivedatasetrequestwith(_:expectedvalues:expectedvalueinterval:completion:).md)
-- [func setPendingDatasetRequestWith(MTRThreadBorderRouterManagementClusterSetPendingDatasetRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterthreadborderroutermanagement/setpendingdatasetrequestwith(_:expectedvalues:expectedvalueinterval:completion:).md)
+- [func setActiveDatasetRequestWith(MTRThreadBorderRouterManagementClusterSetActiveDatasetRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterthreadborderroutermanagement/setactivedatasetrequestwith(_:expectedvalues:expectedvalueinterval:completion:).md)
+- [func setPendingDatasetRequestWith(MTRThreadBorderRouterManagementClusterSetPendingDatasetRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterthreadborderroutermanagement/setpendingdatasetrequestwith(_:expectedvalues:expectedvalueinterval:completion:).md)
 
 ## Relationships
 

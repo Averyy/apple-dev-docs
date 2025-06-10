@@ -18,10 +18,12 @@ init(trainingData: MLDataTable, imageColumn: String, annotationColumn: String, a
 
 Use this initializer to create an object detector with an [`MLDataTable`](mldatatable.md).
 
-- trainingData: An [`MLDataTable`](mldatatable.md) that contains the annotated images the task uses to train the object detector.
-- imageColumn: The name of the column in the data table that contains the image file URLs.
-- annotationColumn: The name of the column in the data table that contains the image annotations.
-- annotationType : The format your data table uses for its image annotations.
+## Parameters
+
+- `trainingData`: An   that contains the annotated images the task uses to train the object   detector.
+- `imageColumn`: The name of the column in the data table that contains the image file URLs.
+- `annotationColumn`: The name of the column in the data table that contains the image annotations.
+- `parameters`: An   instance you use to set the model   configuration settings for the training session.
 
 ## See Also
 

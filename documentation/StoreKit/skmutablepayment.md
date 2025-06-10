@@ -61,6 +61,8 @@ When a mutable payment is added to the payment queue, the payment queue copies t
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSMutableCopying](../Foundation/NSMutableCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

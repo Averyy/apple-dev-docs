@@ -1,6 +1,6 @@
 # Pass
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that represents a pass.
@@ -8,7 +8,7 @@ An object that represents a pass.
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
-- watchOS 2.0+
+- watchOS 1.0+
 
 ## Declaration
 
@@ -20,10 +20,10 @@ object Pass
 
 - [Supporting semantic tags in Wallet passes](supporting-semantic-tags-in-wallet-passes.md)
 - [Showing a Pass on the Lock Screen](showing-a-pass-on-the-lock-screen.md)
-- [Distributing and updating a pass](distributing-and-updating-a-pass.md)
-- [Building a Pass](building-a-pass.md)
 - [Adding a Web Service to Update Passes](adding-a-web-service-to-update-passes.md)
+- [Building a Pass](building-a-pass.md)
 - [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
+- [Distributing and updating a pass](distributing-and-updating-a-pass.md)
 
 ## Topics
 
@@ -73,6 +73,12 @@ object Pass
 
 ## See Also
 
+- [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
+  Create the directory structure and add source files and images to define a pass.
+- [Building a Pass](building-a-pass.md)
+  Build a distributable pass.
+- [Distributing and updating a pass](distributing-and-updating-a-pass.md)
+  Distribute a pass to your users or update an existing pass.
 - [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
   Create the directory structure and add source files and images to define a pass.
 - [Building a Pass](building-a-pass.md)

@@ -54,6 +54,9 @@ class AudioHardwareObject
 - [AudioHardwareStream](audiohardwarestream.md)
 - [AudioHardwareSystem](audiohardwaresystem.md)
 - [AudioHardwareTap](audiohardwaretap.md)
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

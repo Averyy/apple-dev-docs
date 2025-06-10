@@ -1,6 +1,6 @@
 # screenPoint
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The dynamically computed value of the coordinate’s location on screen.

@@ -1,6 +1,6 @@
 # ActionEntityResolution.entityNamed(_:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: case
 
 An option that resolves an entity from the specified name within the scene of the entity playing the action.
@@ -10,6 +10,7 @@ An option that resolves an entity from the specified name within the scene of th
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

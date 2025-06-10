@@ -13,6 +13,7 @@ A controller that manages the templates for constructing a scene’s user interf
 ## Declaration
 
 ```swift
+@MainActor
 class CPInterfaceController
 ```
 
@@ -76,6 +77,7 @@ You also use the interface controller to display a single template modally. Call
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

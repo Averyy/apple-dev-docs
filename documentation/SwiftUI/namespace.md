@@ -21,6 +21,10 @@ A dynamic property type that allows access to a namespace defined by the persist
 @propertyWrapper struct Namespace
 ```
 
+## Mentions
+
+- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
+
 ## Topics
 
 ### Creating a namespace
@@ -37,6 +41,7 @@ A dynamic property type that allows access to a namespace defined by the persist
 - [Copyable](../Swift/Copyable.md)
 - [DynamicProperty](dynamicproperty.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Building an object reconstruction app
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Reconstruct objects from user-selected input images by using photogrammetry.
 
@@ -38,4 +38,4 @@ Reconstruct objects from user-selected input images by using photogrammetry.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/building-an-object-reconstruction-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/building-an-object-reconstruction-app)*

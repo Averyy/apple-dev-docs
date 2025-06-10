@@ -26,8 +26,6 @@ The window group uses the specified content as a template to create each window 
 
 > ❗ **Important**: The system ignores any text styling that you apply to the [`Text`](text.md) view title, like bold or italics. However, you can use the formatting controls that the view offers, like for localization, dates, and numerical representations.
 
-The system ignores any text styling that you apply to the [`Text`](text.md) view title, like bold or italics. However, you can use the formatting controls that the view offers, like for localization, dates, and numerical representations.
-
 ## Parameters
 
 - `title`: The   view to use for the group’s title.

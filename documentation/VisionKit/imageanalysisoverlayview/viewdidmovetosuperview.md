@@ -1,6 +1,6 @@
 # viewDidMoveToSuperview()
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Notifies your app when the view initially appears.

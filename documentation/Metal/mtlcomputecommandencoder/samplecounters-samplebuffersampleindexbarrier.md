@@ -28,8 +28,6 @@ func sampleCounters(sampleBuffer: any MTLCounterSampleBuffer, sampleIndex: Int, 
 
 > ❗ **Important**:  To use a sample buffer, it must be part of the [`sampleBufferAttachments`](mtlcomputepassdescriptor/samplebufferattachments.md) on the compute pass descriptor.
 
- To use a sample buffer, it must be part of the [`sampleBufferAttachments`](mtlcomputepassdescriptor/samplebufferattachments.md) on the compute pass descriptor.
-
 See [`GPU Counters and Counter Sample Buffers`](gpu-counters-and-counter-sample-buffers.md), [`Sampling GPU Data into Counter Sample Buffers`](sampling-gpu-data-into-counter-sample-buffers.md), and [`MTLCounter`](mtlcounter.md) for more information.
 
 ## Parameters

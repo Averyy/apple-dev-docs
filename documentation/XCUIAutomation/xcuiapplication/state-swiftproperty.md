@@ -1,6 +1,6 @@
 # state
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The most recent state of the application.

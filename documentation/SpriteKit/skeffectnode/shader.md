@@ -17,7 +17,6 @@ A custom shader that is called when the effect node is blended into the parentâ€
 ## Declaration
 
 ```swift
-@MainActor
 var shader: SKShader? { get set }
 ```
 

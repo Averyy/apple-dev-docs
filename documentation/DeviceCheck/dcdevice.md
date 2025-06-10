@@ -1,6 +1,6 @@
 # DCDevice
 
-**Framework**: Devicecheck  
+**Framework**: DeviceCheck  
 **Kind**: class
 
 A representation of a device that provides a unique, authenticated token.
@@ -76,4 +76,4 @@ Apple records the bits for you, and reports the bits back to you, but you’re r
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceCheck/dcdevice)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicecheck/dcdevice)*

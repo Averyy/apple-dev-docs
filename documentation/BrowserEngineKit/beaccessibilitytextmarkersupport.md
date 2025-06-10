@@ -11,7 +11,6 @@ A set of methods that provide information about text offsets to support assistiv
 - macOS ?+
 - tvOS 18.2+
 - visionOS 2.2+
-- watchOS 11.2+
 
 ## Declaration
 

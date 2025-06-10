@@ -20,7 +20,7 @@ SwiftUI provides views, controls, and layout structures for declaring your app�
 
 Define your app structure using the [`App`](app.md) protocol, and populate it with scenes that contain the views that make up your app’s user interface. Create your own custom views that conform to the [`View`](view.md) protocol, and compose them with SwiftUI views for displaying text, images, and custom shapes using stacks, lists, and more. Apply powerful modifiers to built-in views and your own views to customize their rendering and interactivity. Share code between apps on multiple platforms with views and controls that adapt to their context and presentation.
 
-![A screenshot of Xcode showing an app and its preview.](https://docs-assets.developer.apple.com/published/fab1d65d44232c5a0be4c36d8c6a763b/SwiftUI-Hero%402x.png)
+![An image of the Landmarks sample app on Mac, iPad, and iPhone showing the Mount Fuji landmark.](https://docs-assets.developer.apple.com/published/ce193ec494e91d4150c3356442824213/landmarks-app-article-hero%402x.png)
 
 You can integrate SwiftUI views with objects from the [`UIKit`](https://developer.apple.com/documentation/UIKit), [`AppKit`](https://developer.apple.com/documentation/AppKit), and [`WatchKit`](https://developer.apple.com/documentation/WatchKit) frameworks to take further advantage of platform-specific functionality. You can also customize accessibility support in SwiftUI, and localize your app’s interface for different languages, countries, or cultural regions.
 
@@ -29,14 +29,16 @@ You can integrate SwiftUI views with objects from the [`UIKit`](https://develope
 ## Topics
 
 ### Essentials
-- [Introducing SwiftUI](https://developer.apple.com/tutorials/SwiftUI)
-  SwiftUI is a modern way to declare user interfaces for any Apple platform. Create beautiful, dynamic apps faster than ever before.
+- [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md)
+  Find out how to bring the new material to your app.
 - [Learning SwiftUI](https://developer.apple.com/tutorials/swiftui-concepts)
   Discover tips and techniques for building multiplatform apps with this set of conceptual articles and sample code.
 - [Exploring SwiftUI Sample Apps](https://developer.apple.com/tutorials/Sample-Apps)
   Explore these SwiftUI samples using Swift Playgrounds on iPad or in Xcode to learn about defining user interfaces, responding to user interactions, and managing data flow.
 - [SwiftUI updates](../Updates/SwiftUI.md)
   Learn about important changes to SwiftUI.
+- [Landmarks: Building an app with Liquid Glass](landmarks-building-an-app-with-liquid-glass.md)
+  Enhance your app experience with system-provided and custom Liquid Glass.
 ### App structure
 - [App organization](app-organization.md)
   Define the entry point and top-level structure of your app.
@@ -141,23 +143,6 @@ You can integrate SwiftUI views with objects from the [`UIKit`](https://develope
   Generate dynamic, interactive previews of your custom views.
 - [Xcode library customization](xcode-library-customization.md)
   Expose custom views and modifiers in the Xcode library.
-### Protocols
-- [protocol GlassBackgroundEffect](glassbackgroundeffect.md)
-  A specification for the appearance of a glass background.
-### Structures
-- [struct AutomaticGlassBackgroundEffect](automaticglassbackgroundeffect.md)
-  The automatic glass background effect.
-- [struct ContentToolbarPlacement](contenttoolbarplacement.md)
-- [struct FeatheredGlassBackgroundEffect](featheredglassbackgroundeffect.md)
-  The feathered glass background effect.
-- [struct GlassBackgroundEffectConfiguration](glassbackgroundeffectconfiguration.md)
-  A configuration used to build a custom effect.
-- [struct PlateGlassBackgroundEffect](plateglassbackgroundeffect.md)
-  The plate glass background effect.
-- [struct ScrollTargetBehaviorProperties](scrolltargetbehaviorproperties.md)
-  Properties influencing the scroll view a scroll target behavior applies to.
-- [struct ScrollTargetBehaviorPropertiesContext](scrolltargetbehaviorpropertiescontext.md)
-  The context in which a scroll target behavior can decide its properties.
 
 
 ---

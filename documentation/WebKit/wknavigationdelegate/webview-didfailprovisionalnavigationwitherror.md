@@ -1,6 +1,6 @@
 # webView(_:didFailProvisionalNavigation:withError:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the delegate that an error occurred during the early navigation process.

@@ -1,6 +1,6 @@
 # printOperation(withSettings:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Creates and returns a print operation for the document’s contents.

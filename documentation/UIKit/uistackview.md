@@ -1,6 +1,6 @@
 # UIStackView
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A streamlined interface for laying out a collection of views in either a column or a row.
@@ -185,6 +185,7 @@ Finally, you can define size-class specific values for many of the stack view’
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)
@@ -205,4 +206,4 @@ Finally, you can define size-class specific values for many of the stack view’
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uistackview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uistackview)*

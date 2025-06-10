@@ -7,8 +7,6 @@ The command to get the status of the content caches on a device.
 
 **Availability**:
 - macOS 10.15.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # Custom Product Pages
 
-**Framework**: Apple_Search_Ads
+**Framework**: Apple Search Ads
 
 View Custom Product Page details.
 

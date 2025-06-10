@@ -1,0 +1,63 @@
+# tryMap(_:)
+
+**Framework**: Swift  
+**Kind**: method
+
+Transforms all elements from the upstream publisher with a provided error-throwing closure.
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
+- macOS 10.15+
+- tvOS 13.0+
+- visionOS 1.0+
+- watchOS 6.0+
+
+## Declaration
+
+```swift
+func tryMap<T>(_ transform: @escaping (Self.Output) throws -> T) -> Publishers.TryMap<Self, T>
+```
+
+#### Return Value
+
+A publisher that uses the provided closure to map elements from the upstream publisher to new elements that it then publishes.
+
+#### Discussion
+
+Combine’s [`tryMap(_:)`](result/publisher-swift.struct/trymap(_:).md) operator performs a function similar to that of [`map(_:)`](Sequence/map(_:).md) in the Swift standard library: it uses a closure to transform each element it receives from the upstream publisher. You use [`tryMap(_:)`](result/publisher-swift.struct/trymap(_:).md) to transform from one kind of element to another, and to terminate publishing when the map’s closure throws an error.
+
+The following example uses an array of numbers as the source for a collection based publisher. A [`tryMap(_:)`](result/publisher-swift.struct/trymap(_:).md) operator consumes each integer from the publisher and uses a dictionary to transform it from its Arabic numeral to a Roman equivalent, as a [`String`](String.md). If the [`tryMap(_:)`](result/publisher-swift.struct/trymap(_:).md)’s closure fails to look up a Roman numeral, it throws an error. The [`tryMap(_:)`](result/publisher-swift.struct/trymap(_:).md) operator catches this error and terminates publishing, sending a `Subscribers/Completion/failure(_:)` that wraps the error.
+
+```swift
+struct ParseError: Error {}
+func romanNumeral(from:Int) throws -> String {
+    let romanNumeralDict: [Int : String] =
+        [1:"I", 2:"II", 3:"III", 4:"IV", 5:"V"]
+    guard let numeral = romanNumeralDict[from] else {
+        throw ParseError()
+    }
+    return numeral
+}
+let numbers = [5, 4, 3, 2, 1, 0]
+cancellable = numbers.publisher
+    .tryMap { try romanNumeral(from: $0) }
+    .sink(
+        receiveCompletion: { print ("completion: \($0)") },
+        receiveValue: { print ("\($0)", terminator: " ") }
+     )
+
+// Prints: "V IV III II I completion: failure(ParseError())"
+```
+
+If your closure doesn’t throw, use `Publisher/map(_:)-99evh` instead.
+
+## Parameters
+
+- `transform`: A closure that takes one element as its parameter and returns a new element. If the closure throws an error, the publisher fails with the thrown error.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/result/publisher-swift.struct/trymap(_:)-16sv7)*

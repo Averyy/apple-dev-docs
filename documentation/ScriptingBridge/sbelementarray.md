@@ -17,7 +17,7 @@ class SBElementArray
 
 #### Overview
 
-`SBElementArray` defines methods beyond those of [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) for obtaining individual objects. In addition to [`objectAtIndex:`](https://developer.apple.com/documentation/foundation/nsarray/1417555-objectatindex), `SBElementArray` also defines [`object(withName:)`](sbelementarray/object(withname:).md), [`object(withID:)`](sbelementarray/object(withid:).md), and [`object(atLocation:)`](sbelementarray/object(atlocation:).md).
+`SBElementArray` defines methods beyond those of [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) for obtaining individual objects. In addition to [`object(at:)`](https://developer.apple.com/documentation/Foundation/NSArray/object(at:)), `SBElementArray` also defines [`object(withName:)`](sbelementarray/object(withname:).md), [`object(withID:)`](sbelementarray/object(withid:).md), and [`object(atLocation:)`](sbelementarray/object(atlocation:).md).
 
 #### Subclassing Notes
 
@@ -59,6 +59,8 @@ The `SBElementArray` class is not designed for subclassing.
 - [NSMutableCopying](../Foundation/NSMutableCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 

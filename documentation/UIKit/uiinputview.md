@@ -1,6 +1,6 @@
 # UIInputView
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An object that displays and manages custom input for a view when that view becomes the first responder.
@@ -56,6 +56,7 @@ The [`UIInputView`](uiinputview.md) class is designed to match the appearance of
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)
@@ -89,4 +90,4 @@ The [`UIInputView`](uiinputview.md) class is designed to match the appearance of
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiinputview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiinputview)*

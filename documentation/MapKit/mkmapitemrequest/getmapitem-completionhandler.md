@@ -12,6 +12,7 @@ Requests a map item and calls the provided completion handler.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 1.0+
+- watchOS 11.0+
 
 ## Declaration
 
@@ -24,14 +25,6 @@ var mapItem: MKMapItem { get async throws }
 > **Note**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can access it as an asynchronous property that has the following declaration: ```swift
 var mapItem: MKMapItem { get async throws }
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can access it as an asynchronous property that has the following declaration:
-
-```swift
-var mapItem: MKMapItem { get async throws }
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
 ## Parameters
 

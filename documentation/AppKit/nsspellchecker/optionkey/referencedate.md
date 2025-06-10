@@ -25,7 +25,7 @@ static let referenceDate: NSSpellChecker.OptionKey
 - [static let orthography: NSSpellChecker.OptionKey](nsspellchecker/optionkey/orthography.md)
   An [`NSOrthography`](https://developer.apple.com/documentation/Foundation/NSOrthography) instance indicating an orthography to be used as a starting point for orthography checking, or as the orthography if orthography checking is not enabled.
 - [static let quotes: NSSpellChecker.OptionKey](nsspellchecker/optionkey/quotes.md)
-  An NSArray containing four strings to be used with doc://com.apple.documentation/documentation/foundation/nstextcheckingresult/checkingtype/1411424-quote (opening double quote, closing double quote, opening single quote, and closing single quote in that order); if not specified, values will be taken from user’s preferences.
+  An NSArray containing four strings to be used with [`quote`](https://developer.apple.com/documentation/Foundation/NSTextCheckingResult/CheckingType/quote) (opening double quote, closing double quote, opening single quote, and closing single quote in that order); if not specified, values will be taken from user’s preferences.
 - [static let referenceTimeZone: NSSpellChecker.OptionKey](nsspellchecker/optionkey/referencetimezone.md)
   An NSTimeZone to be associated with the document, used as a reference for dates without time zones; if not specified, the current time zone will be used.
 - [static let regularExpressions: NSSpellChecker.OptionKey](nsspellchecker/optionkey/regularexpressions.md)

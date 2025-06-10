@@ -1,6 +1,6 @@
 # verificationData
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 Data you use to verify that the response came from the account provider.

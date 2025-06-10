@@ -1,6 +1,6 @@
 # HwDeactivate
 
-**Framework**: Usbserialdriverkit  
+**Framework**: USBSerialDriverKit  
 **Kind**: method
 
 Closes the communication channel to the device.

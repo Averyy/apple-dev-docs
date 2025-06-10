@@ -34,6 +34,8 @@ The value of this property is [`true`](https://developer.apple.com/documentation
   A Boolean value that indicates whether you can resume the VM.
 - [var canStop: Bool](vzvirtualmachine/canstop.md)
   A Boolean value that indicates whether you can stop the VM.
+- [var queue: dispatch_queue_t](vzvirtualmachine/queue.md)
+  The queue associated with this virtual machine.
 
 
 ---

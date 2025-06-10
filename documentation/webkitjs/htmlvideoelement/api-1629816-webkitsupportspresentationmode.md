@@ -1,6 +1,6 @@
 # webkitSupportsPresentationMode
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 A Boolean value indicating whether the video can be played in presentation mode.

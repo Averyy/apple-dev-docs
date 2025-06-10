@@ -20,8 +20,6 @@ FSClient is the primary management interface for FSKit. Use this class to discov
 
 > ❗ **Important**: Don’t subclass `FSClient`.
 
-Don’t subclass `FSClient`.
-
 ## Topics
 
 ### Obtaining the shared instance

@@ -1,6 +1,6 @@
 # SupportedActivityFamiliesEnvironmentKey
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 An environment key for the size of a rendered Live Activity.

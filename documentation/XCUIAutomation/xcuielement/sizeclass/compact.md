@@ -1,6 +1,6 @@
 # XCUIElement.SizeClass.compact
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents an element for the compact size class.

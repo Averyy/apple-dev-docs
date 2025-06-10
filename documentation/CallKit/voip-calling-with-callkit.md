@@ -1,6 +1,6 @@
 # VoIP calling with CallKit
 
-**Framework**: Callkit
+**Framework**: CallKit
 
 Use the CallKit framework to integrate native VoIP calling.
 
@@ -32,8 +32,10 @@ Before you run the sample code project in Xcode, check to be sure your device ha
   Initiate outgoing calls with VoIP and configure your app to receive incoming calls.
 - [Preparing your app to be the default calling app](preparing-your-app-to-be-the-default-calling-app.md)
   Configure your CallKit or LiveCommunicationKit app so people can set it as the default calling app on their device.
+- [CallKit updates](../Updates/CallKit.md)
+  Learn about important changes to CallKit.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CallKit/voip-calling-with-callkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/callkit/voip-calling-with-callkit)*

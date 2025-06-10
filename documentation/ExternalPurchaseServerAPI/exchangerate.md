@@ -25,8 +25,6 @@ The `exchangeRate` field is required when the [`pricingCurrency`](pricingcurrenc
 
 > ❗ **Important**: To determine an exchange rate for your calculations, use the Bloomberg exchange rate from within 48 hours of the transaction date.
 
-To determine an exchange rate for your calculations, use the Bloomberg exchange rate from within 48 hours of the transaction date.
-
 If the [`pricingCurrency`](pricingcurrency.md) and [`reportingCurrency`](reportingcurrency.md) field values are the same currency, don’t include an `exchangeRate` in the line item. For more information about determining which reporting currency to use, see [`reportingCurrency`](reportingcurrency.md).
 
 ## See Also

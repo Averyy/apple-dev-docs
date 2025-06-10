@@ -1,6 +1,6 @@
 # webViewFooterHeight(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the height of the web view’s printed page footer.

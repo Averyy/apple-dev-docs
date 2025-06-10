@@ -34,6 +34,12 @@ You must configure the [`searchController`](uinavigationitem/searchcontroller.md
   The preferred placement of the search bar in the navigation bar.
 - [UINavigationItem.SearchBarPlacement](uinavigationitem/searchbarplacement-swift.enum.md)
   Constants that determine where the search bar appears in the navigation bar.
+- [var searchBarPlacementAllowsExternalIntegration: Bool](uinavigationitem/searchbarplacementallowsexternalintegration.md)
+  A Boolean value that indicates whether an alternate object may integrate the search bar somewhere other than the navigation bar or toolbar.
+- [var searchBarPlacementAllowsToolbarIntegration: Bool](uinavigationitem/searchbarplacementallowstoolbarintegration.md)
+  A Boolean value that indicates whether the system can place the search bar among other toolbar items on iPhone.
+- [var searchBarPlacementBarButtonItem: UIBarButtonItem](uinavigationitem/searchbarplacementbarbuttonitem.md)
+  An item you use to control the placement of the search bar in a toolbar on iPhone.
 
 
 ---

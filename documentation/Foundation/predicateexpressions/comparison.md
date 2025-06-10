@@ -36,6 +36,7 @@ struct Comparison<LHS, RHS> where LHS : PredicateExpression, RHS : PredicateExpr
 - [Encodable](../Swift/Encodable.md)
 - [PredicateExpression](predicateexpression.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StandardPredicateExpression](standardpredicateexpression.md)
 
 

@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-`ConversationAction`s that have not yet been fulfilled.
+All unfinished conversation actions.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,13 @@
 ```swift
 final var pendingActions: [ConversationAction] { get }
 ```
+
+## See Also
+
+- [var conversations: [Conversation]](conversationmanager/conversations.md)
+  Currently active conversations.
+- [var delegate: (any ConversationManagerDelegate)?](conversationmanager/delegate.md)
+  The object that acts as the delegate of the conversation manager.
 
 
 ---

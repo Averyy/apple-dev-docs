@@ -1,6 +1,6 @@
 # WebKitTransitionEvent
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 `WebKitTransitionEvent` objects provide information about CSS transitions specified using the `transition` property. An event is sent at the end of a transition for each CSS property in the transition. Each event contains the name of the CSS property and duration of the transition. You can use these events to perform some action that starts at the end of a transition.

@@ -19,6 +19,15 @@ The date the refund was granted.
 let date: Date
 ```
 
+## See Also
+
+- [let amount: Decimal](transaction/advancedcommerceinfo-swift.struct/refund/amount.md)
+  The amount of the refund.
+- [let reason: Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.property.md)
+  The reason for the refund.
+- [let type: Transaction.AdvancedCommerceInfo.Refund.RefundType](transaction/advancedcommerceinfo-swift.struct/refund/type.md)
+  The type of the refund.
+
 
 ---
 

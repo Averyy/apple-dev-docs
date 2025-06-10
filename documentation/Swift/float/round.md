@@ -46,7 +46,7 @@ z.round(.down)
 // z == 6.0
 ```
 
-For more information about the available rounding rules, see the `FloatingPointRoundingRule` enumeration. To round a value using the default “schoolbook rounding”, you can use the shorter `round()` method instead.
+For more information about the available rounding rules, see the `FloatingPointRoundingRule` enumeration. To round a value using the default “schoolbook rounding” of `.toNearestOrAwayFromZero`, you can use the shorter `round()` method instead.
 
 ```swift
 var w1 = 6.5

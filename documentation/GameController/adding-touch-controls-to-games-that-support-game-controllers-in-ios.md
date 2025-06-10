@@ -1,6 +1,6 @@
 # Adding touch controls to games that support game controllers in iOS
 
-**Framework**: Gamecontroller
+**Framework**: Game Controller
 
 Use touch input and virtual controllers to make your game available to players without controllers.
 
@@ -52,7 +52,7 @@ When you connect a [`GCVirtualController`](gcvirtualcontroller.md), a new [`GCCo
 
 If there are no physical controllers connected, the game shows the virtual controller by default. If the player connects a physical controller, the game hides the virtual controller.
 
-To show a virtual controller when there are no physical controllers connected, call [`connect(replyHandler:)`](gcvirtualcontroller/connect(replyhandler:).md) on it in the [`GCControllerDidDisconnect`](https://developer.apple.com/documentation/foundation/nsnotification/name/1458875-gccontrollerdiddisconnect) (Swift) or [`GCControllerDidDisconnectNotification`](gccontrollerdiddisconnectnotification.md) (Objective-C) handler.
+To show a virtual controller when there are no physical controllers connected, call [`connect(replyHandler:)`](gcvirtualcontroller/connect(replyhandler:).md) on it in the [`GCControllerDidDisconnect`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCControllerDidDisconnect) (Swift) or [`GCControllerDidDisconnectNotification`](gccontrollerdiddisconnectnotification.md) (Objective-C) handler.
 
 ```swift
 - (void)controllerDidDisconnect:(NSNotification *)notification {
@@ -72,7 +72,7 @@ When your game starts and there are no controllers connected, call [`connect(rep
 }
 ```
 
-To hide the virtual controller when a player connects a physical controller, call disconnect on the virtual controller in the [`GCControllerDidConnect`](https://developer.apple.com/documentation/foundation/nsnotification/name/1458856-gccontrollerdidconnect) (Swift) or [`GCControllerDidConnectNotification`](gccontrollerdidconnectnotification.md) (Objective-C) handler. The game might receive a connection notification for a physical controller before receiving a notification for the virtual controller because controller connections are asynchronous.
+To hide the virtual controller when a player connects a physical controller, call disconnect on the virtual controller in the [`GCControllerDidConnect`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCControllerDidConnect) (Swift) or [`GCControllerDidConnectNotification`](gccontrollerdidconnectnotification.md) (Objective-C) handler. The game might receive a connection notification for a physical controller before receiving a notification for the virtual controller because controller connections are asynchronous.
 
 ```swift
 - (void)controllerDidConnect:(NSNotification *)notification {
@@ -259,7 +259,7 @@ Next, implement the [`gestureRecognizer(_:shouldReceive:)`](https://developer.ap
 }
 ```
 
-Update [`GCControllerDidConnect`](https://developer.apple.com/documentation/foundation/nsnotification/name/1458856-gccontrollerdidconnect) (Swift) and [`GCControllerDidDisconnect`](https://developer.apple.com/documentation/foundation/nsnotification/name/1458875-gccontrollerdiddisconnect) (Swift) handlers to show or hide the custom user interface when the virtual controller is connected. For Objective-C, update the [`GCControllerDidConnectNotification`](gccontrollerdidconnectnotification.md) and [`GCControllerDidDisconnectNotification`](gccontrollerdiddisconnectnotification.md) handlers.
+Update [`GCControllerDidConnect`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCControllerDidConnect) (Swift) and [`GCControllerDidDisconnect`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/GCControllerDidDisconnect) (Swift) handlers to show or hide the custom user interface when the virtual controller is connected. For Objective-C, update the [`GCControllerDidConnectNotification`](gccontrollerdidconnectnotification.md) and [`GCControllerDidDisconnectNotification`](gccontrollerdiddisconnectnotification.md) handlers.
 
 ```swift
 - (void)gameDidStart {
@@ -301,4 +301,4 @@ Update [`GCControllerDidConnect`](https://developer.apple.com/documentation/foun
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GameController/adding-touch-controls-to-games-that-support-game-controllers-in-ios)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gamecontroller/adding-touch-controls-to-games-that-support-game-controllers-in-ios)*

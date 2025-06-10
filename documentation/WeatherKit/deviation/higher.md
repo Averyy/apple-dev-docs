@@ -1,6 +1,6 @@
 # Deviation.higher
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 The most recently observed value is larger than the value it is being compared against.

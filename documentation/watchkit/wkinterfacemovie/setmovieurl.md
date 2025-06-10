@@ -1,6 +1,6 @@
 # setMovieURL(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the URL of the movie to play.

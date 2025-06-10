@@ -1,6 +1,6 @@
 # insert(contentsOf:beforeIndex:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: method  
 **Required**: Yes
 
@@ -11,6 +11,7 @@ Adds the specified sequence of entities to this collection in order, directly be
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

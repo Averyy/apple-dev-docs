@@ -1,6 +1,6 @@
 # TYPE_RESERVED
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

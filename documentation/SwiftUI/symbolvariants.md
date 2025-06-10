@@ -94,6 +94,7 @@ SwiftUI sets a variant for you in some environments. For example, SwiftUI automa
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

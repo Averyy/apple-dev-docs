@@ -51,6 +51,8 @@ This class is a convenience subclass of [`UIApplicationShortcutItem`](uiapplicat
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSMutableCopying](../Foundation/NSMutableCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

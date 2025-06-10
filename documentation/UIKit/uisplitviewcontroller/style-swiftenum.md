@@ -49,6 +49,7 @@ Before iOS 14, [`UISplitViewController`](uisplitviewcontroller.md) supported jus
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

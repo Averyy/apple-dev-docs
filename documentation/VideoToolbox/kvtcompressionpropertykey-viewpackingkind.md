@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_ViewPackingKind
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A value that indicates the view packing kind.

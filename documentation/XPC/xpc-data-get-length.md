@@ -1,6 +1,6 @@
 # xpc_data_get_length(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the length of the data that an XPC data object encapsulates.

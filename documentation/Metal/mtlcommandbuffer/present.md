@@ -26,8 +26,6 @@ This convenience method calls the drawable’s [`present()`](mtldrawable/present
 
 > ❗ **Important**:  You can only call this method before calling the command buffer’s [`commit()`](mtlcommandbuffer/commit().md) method.
 
- You can only call this method before calling the command buffer’s [`commit()`](mtlcommandbuffer/commit().md) method.
-
 ## Parameters
 
 - `drawable`: An   instance that contains a texture the system can show on a display.

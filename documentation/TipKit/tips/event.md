@@ -1,6 +1,6 @@
-# Tips.Event
+# Event
 
-**Framework**: Tipkit  
+**Framework**: TipKit  
 **Kind**: struct
 
 A repeatable user-defined action.
@@ -97,11 +97,21 @@ struct LandmarkDetailTip: Tip {
 
 ## Topics
 
-### Initializer
-- [init(id: String)](tips/event/init(id:).md)
-  Creates an event with the specified identifier.
-### Properties
+### Initializers
+- [init(id: String)](tips/event/init(id:)-99edo.md)
+  Creates an event.
+- [init(id: String, donationLimit: Tips.DonationLimit)](tips/event/init(id:donationlimit:)-7tgi1.md)
+  Creates an event.
+### Initializers with a donation value
+- [init(id: String)](tips/event/init(id:)-3edd4.md)
+  Creates an event with an associated donation value.
+- [init(id: String, donationLimit: Tips.DonationLimit)](tips/event/init(id:donationlimit:)-1d1hy.md)
+  Creates an event with an associated donation value.
+### Donations
+- [struct Donation](tips/event/donation.md)
+  A repeatable user-defined action.
 - [var donations: [Tips.Event<DonationInfo>.Donation]](tips/event/donations.md)
+  Returns an events existing donations.
 ### Add Donations
 - [func donate() async](tips/event/donate.md)
   Donates an event with no associated `Donation` value.
@@ -111,17 +121,22 @@ struct LandmarkDetailTip: Tip {
   Asynchronously donates an event with no associated `Donation` value.
 - [func sendDonation(DonationInfo, (() -> Void)?)](tips/event/senddonation(_:_:).md)
   Asynchronously donates an event along with its associated `Donation` value.
-### Creating rules
-- [struct Rule](tips/rule.md)
-  A condition to meet before displaying a tip.
-### Structures
-- [Tips.Event.Donation](tips/event/donation.md)
+### Delete Donations
+- [func deleteDonations() async throws](tips/event/deletedonations.md)
+  Deletes an event’s existing donations.
 
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [struct Rule](tips/rule.md)
+  A condition to meet before displaying a tip.
 
 
 ---

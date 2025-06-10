@@ -1,6 +1,6 @@
 # vertexAttrib1f
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 **Availability**:

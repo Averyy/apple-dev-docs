@@ -1,6 +1,6 @@
 # seizeDevice()
 
-**Framework**: Corehid  
+**Framework**: Core HID  
 **Kind**: method
 
 Attempt to obtain the device so that this client is the only active client.

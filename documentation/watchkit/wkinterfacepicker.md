@@ -1,6 +1,6 @@
 # WKInterfacePicker
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface element that presents a scrolling list of items for the user to choose from.

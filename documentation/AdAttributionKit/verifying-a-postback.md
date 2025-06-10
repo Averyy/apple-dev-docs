@@ -72,8 +72,6 @@ If your verification passes, the postback is valid.
 
 > ❗ **Important**: If the signature fails your verification, consider the postback message invalid. Don’t use it to count a conversion.
 
-If the signature fails your verification, consider the postback message invalid. Don’t use it to count a conversion.
-
 #### Verify the Jws Components
 
 The JWS components include the following:

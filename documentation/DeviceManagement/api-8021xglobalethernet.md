@@ -10,8 +10,6 @@ The payload you use to configure the default fallback global Ethernet interface.
 - iPadOS 17.0+
 - macOS 10.13+
 - tvOS 17.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,17 +27,17 @@ This payload’s contents contain these profile-specific keys:
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS, Shared iPad |
-| User Channel | macOS, Shared iPad |
-| Allow Manual Install | iOS, macOS, tvOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS, macOS, tvOS |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, macOS, Shared iPad, tvOS |
+| User channel | macOS, Shared iPad |
+| Allow manual install | iOS, macOS, tvOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, macOS |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

@@ -8,6 +8,7 @@ Checks to see if a language pairing is supported based off a string of sample te
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.0+
 
 ## Declaration

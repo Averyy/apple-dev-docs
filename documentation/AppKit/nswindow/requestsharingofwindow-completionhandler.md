@@ -15,12 +15,11 @@ func requestSharingOfWindow(_ window: NSWindow) async throws
 
 #### Discussion
 
-The window to share
-
 The error will be non-nil if the request does not result in a window being shared.  The error will be NSUserCancelledError if there is no ScreenCaptureKit session, or if the user rejects the offer to share.  If sharing fails for some other reason, the error will provide the details.
 
 ## Parameters
 
+- `window`: The window to share
 - `completionHandler`: A completion block that is called after the request finishes.
 
 

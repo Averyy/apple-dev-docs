@@ -17,7 +17,7 @@ typedef struct SCSICmd_INQUIRY_Page89_Data { ... } SCSICmd_INQUIRY_Page89_Data;
 
 #### Overview
 
-Specification. This section contains all structures and definitions used by the INQUIRY command in response to a request for page 89h - ATA information VPD Page.
+INQUIRY Page 89h data as defined in the SAT 1.0 specification. This section contains all structures and definitions used by the INQUIRY command in response to a request for page 89h - ATA information VPD Page.
 
 ## Topics
 

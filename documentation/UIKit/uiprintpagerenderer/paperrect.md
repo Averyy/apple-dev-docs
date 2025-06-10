@@ -14,7 +14,6 @@ The size of the paper for printing.
 ## Declaration
 
 ```swift
-@MainActor
 var paperRect: CGRect { get }
 ```
 

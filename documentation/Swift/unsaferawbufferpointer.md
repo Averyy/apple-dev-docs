@@ -70,6 +70,7 @@ byteArray += someBytes[n..<someBytes.count]
 ### Instance Properties
 - [var baseAddress: UnsafeRawPointer?](unsaferawbufferpointer/baseaddress.md)
   A pointer to the first byte of the buffer.
+- [var bytes: RawSpan](unsaferawbufferpointer/bytes.md)
 ### Instance Methods
 - [func assumingMemoryBound<T>(to: T.Type) -> UnsafeBufferPointer<T>](unsaferawbufferpointer/assumingmemorybound(to:).md)
   Returns a typed buffer to the memory referenced by this buffer, assuming that the memory is already bound to the specified type.
@@ -118,4 +119,4 @@ byteArray += someBytes[n..<someBytes.count]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/unsaferawbufferpointer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/unsaferawbufferpointer)*

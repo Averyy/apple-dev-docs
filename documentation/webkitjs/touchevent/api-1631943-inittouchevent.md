@@ -1,6 +1,6 @@
 # initTouchEvent
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Initializes a newly created `TouchEvent` object.

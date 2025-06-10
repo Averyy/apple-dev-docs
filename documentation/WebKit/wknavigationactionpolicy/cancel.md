@@ -1,6 +1,6 @@
 # WKNavigationActionPolicy.cancel
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Cancel the navigation.

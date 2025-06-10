@@ -1,6 +1,6 @@
 # textField(_:provideUpdatedSuggestions:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method  
 **Required**: Yes
 

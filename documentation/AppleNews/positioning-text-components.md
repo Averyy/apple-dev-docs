@@ -1,6 +1,6 @@
 # Positioning Text Components
 
-**Framework**: Applenews
+**Framework**: Apple News
 
 Adjust the positions of the text components in your article—for example, place the article body off-center.
 
@@ -206,4 +206,4 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/positioning-text-components)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applenews/positioning-text-components)*

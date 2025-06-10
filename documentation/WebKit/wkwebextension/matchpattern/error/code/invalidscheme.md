@@ -1,6 +1,6 @@
 # WKWebExtension.MatchPattern.Error.Code.invalidScheme
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates that the scheme component was invalid.

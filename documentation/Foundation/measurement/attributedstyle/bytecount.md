@@ -56,6 +56,7 @@ The attributed strings that this fomat style creates contain attributes from the
 - [FormatStyle](formatstyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -14,7 +14,6 @@ Returns a Boolean value that indicates whether the current device is capable of 
 ## Declaration
 
 ```swift
-@MainActor
 class func canSendText() -> Bool
 ```
 
@@ -26,7 +25,7 @@ class func canSendText() -> Bool
 
 Always call this method before attempting to present the message compose view controller. A device may be unable to send messages if it does not support messaging or if it is not currently configured to send messages. This method applies only to the ability to send text messages via iMessage, SMS, and MMS.
 
-To be notified of changes in the availability of sending text messages, register as an observer of the [`MFMessageComposeViewControllerTextMessageAvailabilityDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name/1614064-mfmessagecomposeviewcontrollerte) notification.
+To be notified of changes in the availability of sending text messages, register as an observer of the [`MFMessageComposeViewControllerTextMessageAvailabilityDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/MFMessageComposeViewControllerTextMessageAvailabilityDidChange) notification.
 
 ## See Also
 

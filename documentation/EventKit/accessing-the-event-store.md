@@ -1,6 +1,6 @@
 # Accessing the event store
 
-**Framework**: Eventkit
+**Framework**: EventKit
 
 Request access to a person’s calendar data through the event store.
 
@@ -57,4 +57,4 @@ To access Calendar data, all sandboxed macOS apps must include the `com.apple.se
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/EventKit/accessing-the-event-store)*
+*[View on Apple Developer](https://developer.apple.com/documentation/eventkit/accessing-the-event-store)*

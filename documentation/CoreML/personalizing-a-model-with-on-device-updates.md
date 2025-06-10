@@ -1,6 +1,6 @@
 # Personalizing a Model with On-Device Updates
 
-**Framework**: Coreml
+**Framework**: Core ML
 
 Modify an updatable Core ML model by running an update task with labeled data.
 
@@ -169,4 +169,4 @@ updatedDrawingClassifier = model
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/personalizing-a-model-with-on-device-updates)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coreml/personalizing-a-model-with-on-device-updates)*

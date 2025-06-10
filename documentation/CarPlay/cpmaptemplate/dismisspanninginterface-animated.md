@@ -13,6 +13,7 @@ Dismisses the panning interface.
 ## Declaration
 
 ```swift
+@MainActor
 func dismissPanningInterface(animated: Bool)
 ```
 

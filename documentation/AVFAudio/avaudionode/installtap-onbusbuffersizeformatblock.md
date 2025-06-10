@@ -37,8 +37,6 @@ AVAudioFormat *format = [input outputFormatForBus: 0];
 
 > ❗ **Important**:  The framework may invoke the `tapBlock` on a thread other than the main thread.
 
- The framework may invoke the `tapBlock` on a thread other than the main thread.
-
 ## Parameters
 
 - `bus`: The output bus to attach the tap to.

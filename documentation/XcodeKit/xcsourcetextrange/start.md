@@ -1,6 +1,6 @@
 # start
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The start position of the range.

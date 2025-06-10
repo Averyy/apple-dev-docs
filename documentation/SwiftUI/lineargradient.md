@@ -45,6 +45,7 @@ When using a linear gradient as a shape style, you can also use [`linearGradient
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 - [View](view.md)
 

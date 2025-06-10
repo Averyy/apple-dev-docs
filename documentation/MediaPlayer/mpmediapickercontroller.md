@@ -1,6 +1,6 @@
 # MPMediaPickerController
 
-**Framework**: Mediaplayer  
+**Framework**: Media Player  
 **Kind**: class
 
 A specialized view controller that provides a graphical interface for selecting media items.
@@ -63,6 +63,8 @@ To respond to user selections and to dismiss a media item picker, use the [`MPMe
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)
@@ -84,4 +86,4 @@ To respond to user selections and to dismiss a media item picker, use the [`MPMe
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MediaPlayer/mpmediapickercontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mediaplayer/mpmediapickercontroller)*

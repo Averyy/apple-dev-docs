@@ -1,6 +1,6 @@
 # fullScreenAllowsTiling
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The window can be a secondary full screen tile even if it can’t be a full screen window itself.
@@ -38,4 +38,4 @@ A window can explicitly disallow the system from placing the window in a full-sc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nswindow/collectionbehavior-swift.struct/fullscreenallowstiling)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nswindow/collectionbehavior-swift.struct/fullscreenallowstiling)*

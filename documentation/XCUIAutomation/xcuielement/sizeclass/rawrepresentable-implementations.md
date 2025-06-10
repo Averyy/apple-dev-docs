@@ -1,6 +1,6 @@
 # RawRepresentable Implementations
 
-**Framework**: Xcuiautomation
+**Framework**: XCUIAutomation
 
 ## Topics
 

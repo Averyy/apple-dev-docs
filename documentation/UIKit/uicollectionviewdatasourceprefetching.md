@@ -1,6 +1,6 @@
 # UICollectionViewDataSourcePrefetching
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: protocol
 
 A protocol that provides advance warning of the data requirements for a collection view, allowing the triggering of asynchronous data load operations.
@@ -82,4 +82,4 @@ One approach that handles all of these situations is to use [`Operation`](https:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uicollectionviewdatasourceprefetching)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uicollectionviewdatasourceprefetching)*

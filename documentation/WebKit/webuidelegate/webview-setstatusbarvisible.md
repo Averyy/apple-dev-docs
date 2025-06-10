@@ -1,6 +1,6 @@
 # webView(_:setStatusBarVisible:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sets the visibility of the status bar in a web view’s window.

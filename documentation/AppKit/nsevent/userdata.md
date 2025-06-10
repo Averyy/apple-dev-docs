@@ -18,7 +18,7 @@ var userData: UnsafeMutableRawPointer? { get }
 
 When you call [`addTrackingRect(_:owner:userData:assumeInside:)`](nsview/addtrackingrect(_:owner:userdata:assumeinside:).md) to set up a tracking rectangle, you can provide custom data to store in the event. AppKit makes that custom data available to you from this property.
 
-This property is only valid when the event is of type [`NSMouseEntered`](nsmouseentered.md) or [`NSMouseExited`](nsmouseexited.md). If you access this property for any other type of event, AppKit raises [`internalInconsistencyException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1416220-internalinconsistencyexception).
+This property is only valid when the event is of type [`NSMouseEntered`](nsmouseentered.md) or [`NSMouseExited`](nsmouseexited.md). If you access this property for any other type of event, AppKit raises [`internalInconsistencyException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/internalInconsistencyException).
 
 ## See Also
 

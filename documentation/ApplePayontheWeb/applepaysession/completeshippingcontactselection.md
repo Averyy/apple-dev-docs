@@ -33,7 +33,7 @@ In Apple Pay JS API version 3, the parameter is an [`ApplePayShippingContactUpda
 
 In version 1 and 2 of the Apple Pay JS API, [`completeShippingContactSelection`](applepaysession/completeshippingcontactselection.md) has the following parameters:
 
-| status | The status of the shipping contact update. For valid values, see [`Apple Pay Status Codes`](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/apple_pay_status_codes). |
+| status | The status of the shipping contact update. For valid values, see [`Apple Pay Status Codes`](apple-pay-status-codes.md). |
 | --- | --- |
 | newShippingMethods | A sequence of [`ApplePayShippingMethod`](applepayshippingmethod.md) dictionaries that represents shipping costs (if any). |
 | newTotal | An [`ApplePayLineItem`](applepaylineitem.md) dictionary representing the total price for the purchase. Set the [`label`](applepaylineitem/label.md) to the merchant’s name, and the [`amount`](applepaylineitem/amount.md) to the total price. The amount must be greater than zero. |

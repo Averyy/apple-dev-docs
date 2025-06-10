@@ -1,6 +1,6 @@
 # viewWillAppear(_:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Notifies the view controller that its view is about to be added to a view hierarchy.

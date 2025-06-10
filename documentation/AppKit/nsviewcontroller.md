@@ -165,6 +165,7 @@ A view controller is meant to be highly reusable, such as for dynamically repres
 - [NSCollectionViewItem](nscollectionviewitem.md)
 - [NSPageController](nspagecontroller.md)
 - [NSSplitViewController](nssplitviewcontroller.md)
+- [NSSplitViewItemAccessoryViewController](nssplitviewitemaccessoryviewcontroller.md)
 - [NSTabViewController](nstabviewcontroller.md)
 - [NSTitlebarAccessoryViewController](nstitlebaraccessoryviewcontroller.md)
 ### Conforms To
@@ -185,6 +186,7 @@ A view controller is meant to be highly reusable, such as for dynamically repres
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [PlaygroundLiveViewable](../playgroundsupport/playgroundliveviewable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

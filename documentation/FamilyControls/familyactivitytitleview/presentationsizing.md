@@ -1,6 +1,6 @@
 # presentationSizing(_:)
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Sets the sizing of the containing presentation.

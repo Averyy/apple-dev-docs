@@ -1,6 +1,6 @@
 # EntityAction
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: protocol
 
 A protocol that defines an action for an entity.
@@ -10,6 +10,7 @@ A protocol that defines an action for an entity.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -43,13 +44,9 @@ The action data stored within an action animation is available to the action’s
 - [var isReversible: Bool](entityaction/isreversible.md)
   A Boolean value that determines whether the action reverses prior operations when playback is reverses.
 ### Type Methods
-- [static func registerAction()](entityaction/registeraction-43ix1.md)
-  Registers the serializable action into the action-types registry.
-- [static func registerAction()](entityaction/registeraction-ho8k.md)
+- [static registerAction()](entityaction/registeraction.md)
   Registers the action into the action-types registry.
-- [static func subscribe(to: ActionEventType, (ActionEvent<Self>) -> Void)](entityaction/subscribe(to:_:)-1r0qx.md)
-  Subscribes to a serializable action event.
-- [static func subscribe(to: ActionEventType, (ActionEvent<Self>) -> Void)](entityaction/subscribe(to:_:)-7ivlj.md)
+- [static subscribe(to:_:)](entityaction/subscribe(to:_:).md)
   Subscribes to an action event.
 - [static func unsubscribe(from: ActionEventType)](entityaction/unsubscribe(from:).md)
   Unsubscribes from an action event.
@@ -81,4 +78,4 @@ The action data stored within an action animation is available to the action’s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/entityaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/entityaction)*

@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_TargetQualityForAlpha
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The target quality to use for encoding the alpha channel.
@@ -24,8 +24,6 @@ let kVTCompressionPropertyKey_TargetQualityForAlpha: CFString
 Specify this value as a number in the range of `0.0` for the lowest quality to `1.0` for nearly lossless quality. Alpha plane bit rates tend to increase with increasing values. When encoding the alpha channel, the system gives priority to quality over bitrate.
 
 > ❗ **Important**:  Only HEVC with Alpha encoders support this parameter.
-
- Only HEVC with Alpha encoders support this parameter.
 
 ## See Also
 

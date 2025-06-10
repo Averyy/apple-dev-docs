@@ -67,8 +67,6 @@ func color(fraction: Double) -> Color {
 
 > ❗ **Important**: You may not use the [`ScrollViewProxy`](scrollviewproxy.md) during execution of the `content` view builder; doing so results in a runtime error. Instead, only actions created within `content` can call the proxy, such as gesture handlers or a view’s `onChange(of:perform:)` method.
 
-You may not use the [`ScrollViewProxy`](scrollviewproxy.md) during execution of the `content` view builder; doing so results in a runtime error. Instead, only actions created within `content` can call the proxy, such as gesture handlers or a view’s `onChange(of:perform:)` method.
-
 ## Topics
 
 ### Creating a scroll view reader

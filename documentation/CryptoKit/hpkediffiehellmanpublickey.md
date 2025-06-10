@@ -32,6 +32,7 @@ protocol HPKEDiffieHellmanPublicKey : HPKEPublicKeySerialization
 ### Inherits From
 - [HPKEPublicKeySerialization](hpkepublickeyserialization.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [Curve25519.KeyAgreement.PublicKey](curve25519/keyagreement/publickey.md)
 - [P256.KeyAgreement.PublicKey](p256/keyagreement/publickey.md)

@@ -17,7 +17,7 @@ Returns a dictionary of all attachments for an attachment bearer object.
 ## Declaration
 
 ```swift
-func CMCopyDictionaryOfAttachments(allocator: CFAllocator?, target: CMAttachmentBearer, attachmentMode: CMAttachmentMode) -> CFDictionary?
+func CMCopyDictionaryOfAttachments(allocator: CFAllocator?, target: CMAttachmentBearer, attachmentMode: CMAttachmentMode) -> sending CFDictionary?
 ```
 
 #### Return Value

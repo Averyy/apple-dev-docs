@@ -1,6 +1,6 @@
 # xpc_activity_register(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Registers an activity with the system.

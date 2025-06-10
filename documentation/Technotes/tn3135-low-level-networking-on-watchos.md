@@ -9,7 +9,7 @@ Learn about the supported use cases for low-level networking on watchOS.
 watchOS groups networking into two categories:
 
 - High-level networking.  This includes the HTTP and HTTPS support in [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession), and any code layered on top of that.
-- Low-level networking.  This includes [`Network`](https://developer.apple.com/documentation/Network) framework, [`NSStream`](https://developer.apple.com/documentation/foundation/nsstream), and any other API that runs a TCP connection or UDP session directly.  That includes the low-level aspects of [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession), namely [`URLSessionStreamTask`](https://developer.apple.com/documentation/Foundation/URLSessionStreamTask) and [`URLSessionWebSocketTask`](https://developer.apple.com/documentation/Foundation/URLSessionWebSocketTask).   It also includes APIs, like [`NWBrowser`](https://developer.apple.com/documentation/Network/NWBrowser) and [`NetService`](https://developer.apple.com/documentation/Foundation/NetService), that interact directly with Bonjour.
+- Low-level networking.  This includes [`Network`](https://developer.apple.com/documentation/Network) framework, [`Stream`](https://developer.apple.com/documentation/Foundation/Stream), and any other API that runs a TCP connection or UDP session directly.  That includes the low-level aspects of [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession), namely [`URLSessionStreamTask`](https://developer.apple.com/documentation/Foundation/URLSessionStreamTask) and [`URLSessionWebSocketTask`](https://developer.apple.com/documentation/Foundation/URLSessionWebSocketTask).   It also includes APIs, like [`NWBrowser`](https://developer.apple.com/documentation/Network/NWBrowser) and [`NetService`](https://developer.apple.com/documentation/Foundation/NetService), that interact directly with Bonjour.
 
 watchOS allows all apps to use high-level networking equally.  However, it only allows an app to use low-level networking under specific circumstances:
 
@@ -21,11 +21,9 @@ watchOS blocks low-level networking outside of these specific circumstances.  Fo
 
 > ❗ **Important**: watchOS versions 6 through 8 had a bug where low-level networking might work outside of these circumstances (r. 83682211).  That bug has been fixed in watchOS 9, which correctly enforces the rules described above.
 
-watchOS versions 6 through 8 had a bug where low-level networking might work outside of these circumstances (r. 83682211).  That bug has been fixed in watchOS 9, which correctly enforces the rules described above.
-
 The BSD sockets API doesn’t work for networking on watchOS under any circumstances.  Use Network framework instead.
 
-Foundation has various APIs for synchronously creating a value using bytes loaded from a URL.  For example, [`init(contentsOf:)`](https://developer.apple.com/documentation/foundation/nsdata/1413892-init) creates a data value in this way.  Using these APIs with network URLs is not best practice on any Apple platform and is not supported by watchOS.  Instead, load network URLs with a dedicated asynchronous networking API, like [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession).
+Foundation has various APIs for synchronously creating a value using bytes loaded from a URL.  For example, [`init(contentsOfURL:)`](https://developer.apple.com/documentation/Foundation/NSData/init(contentsOfURL:)-6rrnr) creates a data value in this way.  Using these APIs with network URLs is not best practice on any Apple platform and is not supported by watchOS.  Instead, load network URLs with a dedicated asynchronous networking API, like [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession).
 
 When writing watchOS networking code, test it on a real device; the simulator always allows low-level networking.
 

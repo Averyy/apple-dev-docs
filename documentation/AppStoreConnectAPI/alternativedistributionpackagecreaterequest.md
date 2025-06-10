@@ -47,6 +47,9 @@ Use this object to create a new alternative distribution package in App Store Co
   A response that contains a single alternative distribution package variant resource.
 - [object AlternativeDistributionPackageVariantsResponse](alternativedistributionpackagevariantsresponse.md)
   A response that contains a list of alternative distribution package variant resources.
+- [object AlternativeDistributionPackageVersionDeltasLinkagesResponse](alternativedistributionpackageversiondeltaslinkagesresponse.md)
+- [object AlternativeDistributionPackageVersionVariantsLinkagesResponse](alternativedistributionpackageversionvariantslinkagesresponse.md)
+- [object AlternativeDistributionPackageVersionsLinkagesResponse](alternativedistributionpackageversionslinkagesresponse.md)
 
 
 ---

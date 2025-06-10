@@ -1,6 +1,6 @@
 # swipeLeft(velocity:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a swipe-left gesture with a velocity you specify.

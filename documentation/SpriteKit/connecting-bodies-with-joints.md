@@ -25,8 +25,6 @@ To use a physics joint in your app, follow these steps:
 
 > ❗ **Important**:  The anchor arguments passed to physics joint initializers are always in the parent scene’s coordinate space. You can use the [`convert(_:to:)`](sknode/convert(_:to:).md) method to calculate a node’s position in scene coordinates if that node is not an immediate child of the scene.
 
- The anchor arguments passed to physics joint initializers are always in the parent scene’s coordinate space. You can use the [`convert(_:to:)`](sknode/convert(_:to:).md) method to calculate a node’s position in scene coordinates if that node is not an immediate child of the scene.
-
 The following code pins two nodes, `pin` and `piston`, together using a [`SKPhysicsJointPin`](skphysicsjointpin.md) joint. In this example, the node `pin` is a child of `connectingRod`. Because it is not an immediate child of the scene, its coordinates are converted to scene coordinates for use in initializing the joint.
 
 ```swift

@@ -42,6 +42,12 @@ class PKStrokePointReference
 - [var opacity: CGFloat](pkstrokepointreference/opacity.md)
   Opacity of the point.
 - [var secondaryScale: CGFloat](pkstrokepointreference/secondaryscale.md)
+### Initializers
+- [init(location: CGPoint, timeOffset: TimeInterval, size: CGSize, opacity: CGFloat, force: CGFloat, azimuth: CGFloat, altitude: CGFloat, secondaryScale: CGFloat, threshold: CGFloat)](pkstrokepointreference/init(location:timeoffset:size:opacity:force:azimuth:altitude:secondaryscale:threshold:).md)
+  Create a new point with the provided properties.
+### Instance Properties
+- [var threshold: CGFloat](pkstrokepointreference/threshold.md)
+  The threshold for clipping the stroke rendering.
 
 ## Relationships
 

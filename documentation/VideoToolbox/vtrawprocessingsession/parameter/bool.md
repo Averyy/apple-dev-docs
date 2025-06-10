@@ -1,6 +1,6 @@
 # VTRAWProcessingSession.Parameter.bool(_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: case
 
 **Availability**:

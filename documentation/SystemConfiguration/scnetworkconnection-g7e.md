@@ -1,6 +1,6 @@
 # SCNetworkConnection
 
-**Framework**: Systemconfiguration
+**Framework**: System Configuration
 
 #### Overview
 
@@ -79,4 +79,4 @@ The `SCNetworkConnection` programming interface contains functions that allow an
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SystemConfiguration/scnetworkconnection-g7e)*
+*[View on Apple Developer](https://developer.apple.com/documentation/systemconfiguration/scnetworkconnection-g7e)*

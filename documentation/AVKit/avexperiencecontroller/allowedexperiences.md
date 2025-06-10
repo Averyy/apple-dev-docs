@@ -1,6 +1,6 @@
 # allowedExperiences
 
-**Framework**: Avkit  
+**Framework**: AVKit  
 **Kind**: property
 
 The set of experiences the application supports.
@@ -39,4 +39,4 @@ Use this to allow additional experiences like multiview, or to disable expanded.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/avexperiencecontroller/allowedexperiences)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/avexperiencecontroller/allowedexperiences)*

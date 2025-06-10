@@ -77,11 +77,17 @@ enum ActivityAuthorizationError
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:).md)
+  Requests and starts a standard Live Activity.
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:).md)
   Requests and starts a Live Activity.
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle, alertConfiguration: AlertConfiguration, start: Date) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:alertconfiguration:start:).md)
+  Requests and schedules a Live Activity for a specific date.
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle, alertConfiguration: AlertConfiguration, startDate: Date) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:alertconfiguration:startdate:).md)
 - [let attributes: Attributes](activity/attributes.md)
   A set of attributes that describe a Live Activity and its content.
 - [protocol ActivityAttributes](activityattributes.md)
@@ -95,7 +101,6 @@ enum ActivityAuthorizationError
   The type alias for the structure that describes the dynamic content of a Live Activity.
 - [struct PushType](pushtype.md)
   The structure that offers constants you use to configure a Live Activity to receive updates through ActivityKit push notifications.
-- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:).md)
 
 
 ---

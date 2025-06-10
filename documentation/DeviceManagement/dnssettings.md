@@ -10,8 +10,6 @@ The payload you use to configure encrypted DNS settings.
 - iPadOS 14.0+
 - macOS 11.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,13 +29,13 @@ When installed manually, this setting also applies to cellular.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad |
-| User Channel | - |
-| Allow Manual Install | iOS, macOS |
-| Requires Supervision | - |
-| Requires User-Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | iOS, macOS, Shared iPad |
+| Device channel | iOS, macOS, Shared iPad, visionOS |
+| User channel | NA |
+| Allow manual install | iOS, macOS, visionOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
 ## Topics
 

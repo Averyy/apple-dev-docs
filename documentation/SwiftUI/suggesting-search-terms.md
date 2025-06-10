@@ -41,8 +41,6 @@ If you omit the search completion modifier for a particular suggestion view, Swi
 
 > ❗ **Important**: In tvOS, searchable modifiers only support suggestion views of type [`Text`](text.md), like in the above example. Other platforms can use arbitrary views for the suggestions, including custom views.
 
-In tvOS, searchable modifiers only support suggestion views of type [`Text`](text.md), like in the above example. Other platforms can use arbitrary views for the suggestions, including custom views.
-
 Certain events or actions, like when someone moves a macOS window, might dismiss the suggestion list.
 
 ##### Suggest Tokens

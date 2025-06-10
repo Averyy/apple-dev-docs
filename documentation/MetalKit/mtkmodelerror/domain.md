@@ -22,7 +22,7 @@ static let domain: MTKModelError
 ## See Also
 
 - [static let key: MTKModelError](mtkmodelerror/key.md)
-  The key used to retrieve an error string from an error object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary.
+  The key used to retrieve an error string from an error object’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary.
 
 
 ---

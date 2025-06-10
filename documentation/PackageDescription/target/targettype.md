@@ -39,9 +39,10 @@ enum TargetType
 ### Operator Functions
 - [static func != (Self, Self) -> Bool](target/targettype/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
-### Accessing the Raw Value
+### Instance Properties
 - [var rawValue: String](target/targettype/rawvalue-swift.property.md)
   The corresponding value of the raw type.
+### Type Aliases
 - [Target.TargetType.RawValue](target/targettype/rawvalue-swift.typealias.md)
   The raw type that can be used to represent all values of the conforming type.
 ### Default Implementations

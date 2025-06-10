@@ -13,6 +13,7 @@ The array of actions available on the alert.
 ## Declaration
 
 ```swift
+@MainActor
 var actions: [CPAlertAction] { get }
 ```
 

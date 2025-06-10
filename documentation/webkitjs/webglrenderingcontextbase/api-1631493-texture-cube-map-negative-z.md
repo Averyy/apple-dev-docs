@@ -1,6 +1,6 @@
 # TEXTURE_CUBE_MAP_NEGATIVE_Z
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

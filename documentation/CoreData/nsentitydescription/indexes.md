@@ -26,8 +26,6 @@ This value doesn’t form part of the entity’s version hash, and stores that d
 
 > ❗ **Important**:  Set indexes last in a model. Changing an entity hierarchy in any way that affects the validity of indexes drops all existing indexes for entities in that hierarchy, such as adding or removing superentities or subentities, or adding and removing properties anywhere in the hierarchy.
 
- Set indexes last in a model. Changing an entity hierarchy in any way that affects the validity of indexes drops all existing indexes for entities in that hierarchy, such as adding or removing superentities or subentities, or adding and removing properties anywhere in the hierarchy.
-
 ## See Also
 
 - [var uniquenessConstraints: [[Any]]](nsentitydescription/uniquenessconstraints.md)

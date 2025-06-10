@@ -1,6 +1,6 @@
 # WebViewInsertAction.typed
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates the user inserted content by typing.

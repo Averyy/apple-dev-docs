@@ -1,6 +1,6 @@
 # symbolicationError
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An optional error that describes a failed symbolication attempt.

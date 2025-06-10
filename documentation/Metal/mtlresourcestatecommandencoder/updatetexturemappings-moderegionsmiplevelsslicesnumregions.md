@@ -1,8 +1,7 @@
 # updateTextureMappings(_:mode:regions:mipLevels:slices:numRegions:)
 
 **Framework**: Metal  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Encodes a command to update memory mappings for multiple regions inside a texture.
 
@@ -17,7 +16,7 @@ Encodes a command to update memory mappings for multiple regions inside a textur
 ## Declaration
 
 ```swift
-optional func updateTextureMappings(_ texture: any MTLTexture, mode: MTLSparseTextureMappingMode, regions: UnsafePointer<MTLRegion>, mipLevels: UnsafePointer<Int>, slices: UnsafePointer<Int>, numRegions: Int)
+func updateTextureMappings(_ texture: any MTLTexture, mode: MTLSparseTextureMappingMode, regions: UnsafePointer<MTLRegion>, mipLevels: UnsafePointer<Int>, slices: UnsafePointer<Int>, numRegions: Int)
 ```
 
 ## Parameters

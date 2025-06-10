@@ -25,8 +25,6 @@ The default value of this property is [`false`](https://developer.apple.com/docu
 
 > ❗ **Important**:  You should set this property only if necessary and should be sure to reset it to [`false`](https://developer.apple.com/documentation/swift/false) when the need no longer exists. Most apps should let the system turn off the screen when the idle timer elapses. This includes audio apps. With appropriate use of Audio Session Services, playback and recording proceed uninterrupted when the screen turns off. The only apps that should disable the idle timer are mapping apps, games, or programs where the app needs to continue displaying content when user interaction is minimal.
 
- You should set this property only if necessary and should be sure to reset it to [`false`](https://developer.apple.com/documentation/swift/false) when the need no longer exists. Most apps should let the system turn off the screen when the idle timer elapses. This includes audio apps. With appropriate use of Audio Session Services, playback and recording proceed uninterrupted when the screen turns off. The only apps that should disable the idle timer are mapping apps, games, or programs where the app needs to continue displaying content when user interaction is minimal.
-
 
 ---
 

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to get the status of managed apps.
+The command to get the status of all managed apps on a device.
 
 **Availability**:
 - iOS 5.0+
@@ -12,8 +12,6 @@ The request dictionary to get the status of managed apps.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

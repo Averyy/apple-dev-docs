@@ -1,6 +1,6 @@
 # NSBitmapImageRep
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An object that renders an image from bitmap data.
@@ -145,6 +145,8 @@ For this reason, you should not use an [`NSBitmapImageRep`](nsbitmapimagerep.md)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -156,4 +158,4 @@ For this reason, you should not use an [`NSBitmapImageRep`](nsbitmapimagerep.md)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsbitmapimagerep)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsbitmapimagerep)*

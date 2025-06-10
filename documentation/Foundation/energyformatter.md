@@ -71,4 +71,4 @@ class EnergyFormatter
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/energyformatter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/energyformatter)*

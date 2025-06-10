@@ -1,6 +1,6 @@
 # VTCompressionOutputHandler
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: typealias
 
 A callback for the system to invoke when it’s finished compressing a frame.

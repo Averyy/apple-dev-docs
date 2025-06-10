@@ -7,6 +7,7 @@ The launch behavior for a scene.
 
 **Availability**:
 - macOS 15.0+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -50,6 +51,7 @@ struct MyApp: App {
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,0 +1,24 @@
+# offset
+
+**Framework**: Kernel  
+**Kind**: structp
+
+Hint for where to find free blocks.
+
+## See Also
+
+- [vp](vnop_pagein_args/1807403-vp.md)
+  The vnode for which to preallocate space.
+- [length](vnop_pagein_args/1807414-length.md)
+  Desired preallocated file length.
+- [flags](vnop_pagein_args/1807426-flags.md)
+  PREALLOCATE: preallocate allocation blocks. ALLOCATECONTIG: allocate contigious space. ALLOCATEALL: allocate all requested space or no space at all. FREEREMAINDER: deallocate allocated but unfilled blocks. ALLOCATEFROMPEOF: allocate from the physical eof. ALLOCATEFROMVOL: allocate from the volume offset.
+- [bytesallocated](vnop_pagein_args/1807437-bytesallocated.md)
+  Additional bytes set aside for file. Set to 0 if none are allocated OR if the file is contracted.
+- [ctx](vnop_pagein_args/1807464-ctx.md)
+  Context to authenticate for allocation request.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/vnop_pagein_args/1807450-offset)*

@@ -1,6 +1,6 @@
 # draggingFormation
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property  
 **Required**: Yes
 
@@ -34,4 +34,4 @@ The default value is the current drag formation.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsdragginginfo/draggingformation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsdragginginfo/draggingformation)*

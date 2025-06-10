@@ -1,6 +1,6 @@
 # Metadata header atom ('mhdr')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that holds the integer value for the next unique item identifier to assign.

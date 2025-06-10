@@ -1,6 +1,6 @@
 # shippingContactEditingMode
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property
 
 A value that indicates whether the shipping mode prevents the user from editing the shipping address.

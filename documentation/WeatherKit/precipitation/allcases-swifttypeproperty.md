@@ -1,6 +1,6 @@
 # allCases
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A collection of all values of this type.

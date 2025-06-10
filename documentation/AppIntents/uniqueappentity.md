@@ -8,7 +8,7 @@ An entity that will only ever have one value, such as global settings.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -31,6 +31,7 @@ protocol UniqueAppEntity : AppEntity where Self.DefaultQuery : UniqueAppEntityQu
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 
 ## See Also

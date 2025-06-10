@@ -1,6 +1,6 @@
 # first(where:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns the first element of the sequence that satisfies the given predicate.

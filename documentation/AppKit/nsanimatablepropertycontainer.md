@@ -45,6 +45,7 @@ It’s perfectly valid to set a new value for a property for which an animation 
 ## Relationships
 
 ### Conforming Types
+- [NSBackgroundExtensionView](nsbackgroundextensionview.md)
 - [NSBox](nsbox.md)
 - [NSBrowser](nsbrowser.md)
 - [NSButton](nsbutton.md)
@@ -58,6 +59,8 @@ It’s perfectly valid to set a new value for a property for which an animation 
 - [NSDatePicker](nsdatepicker.md)
 - [NSFontPanel](nsfontpanel.md)
 - [NSForm](nsform.md)
+- [NSGlassEffectContainerView](nsglasseffectcontainerview.md)
+- [NSGlassEffectView](nsglasseffectview.md)
 - [NSGridView](nsgridview.md)
 - [NSImageView](nsimageview.md)
 - [NSLayoutConstraint](nslayoutconstraint.md)
@@ -89,6 +92,7 @@ It’s perfectly valid to set a new value for a property for which an animation 
 - [NSSlider](nsslider.md)
 - [NSSplitView](nssplitview.md)
 - [NSSplitViewItem](nssplitviewitem.md)
+- [NSSplitViewItemAccessoryViewController](nssplitviewitemaccessoryviewcontroller.md)
 - [NSStackView](nsstackview.md)
 - [NSStatusBarButton](nsstatusbarbutton.md)
 - [NSStepper](nsstepper.md)

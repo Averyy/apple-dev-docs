@@ -12,6 +12,7 @@ The value that represents a map elevation style with realistic ground contours.
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS 1.0+
+- watchOS 9.0+
 
 ## Declaration
 

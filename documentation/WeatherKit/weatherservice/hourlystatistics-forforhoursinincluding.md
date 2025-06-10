@@ -1,6 +1,6 @@
 # hourlyStatistics(for:forHoursIn:including:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns hourly weather statistics for the requested location, for each hour within the specified date interval.

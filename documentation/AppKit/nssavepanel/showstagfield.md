@@ -19,7 +19,7 @@ var showsTagField: Bool { get set }
 
 When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the panel displays the Tags field; if [`false`](https://developer.apple.com/documentation/swift/false), the panel doesn’t display the Tags field. The default value is [`true`](https://developer.apple.com/documentation/swift/true). (Note that the Tags field is appropriate only in a Save panel.)
 
-If you set this property to [`true`](https://developer.apple.com/documentation/swift/true), you are responsible for setting tag names on the resulting file after saving is complete. If you don’t set this property, macOS will automatically show the tag field and attempt to apply the tags to the file. To set tags on files, use the [`tagNamesKey`](https://developer.apple.com/documentation/foundation/urlresourcekey/1410718-tagnameskey).
+If you set this property to [`true`](https://developer.apple.com/documentation/swift/true), you are responsible for setting tag names on the resulting file after saving is complete. If you don’t set this property, macOS will automatically show the tag field and attempt to apply the tags to the file. To set tags on files, use the [`tagNamesKey`](https://developer.apple.com/documentation/Foundation/URLResourceKey/tagNamesKey).
 
 ## See Also
 

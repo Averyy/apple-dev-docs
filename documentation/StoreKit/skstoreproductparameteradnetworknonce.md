@@ -19,18 +19,16 @@ let SKStoreProductParameterAdNetworkNonce: String
 
 ## Mentions
 
-- [Combining parameters to generate a signature for SKAdNetwork 1](combining-parameters-to-generate-a-signature-for-skadnetwork-1.md)
 - [Generating the signature to validate StoreKit-rendered ads](generating-the-signature-to-validate-storekit-rendered-ads.md)
-- [Combining parameters to generate signatures for SKAdNetwork 2.2 and 3](combining-parameters-to-generate-signatures-for-skadnetwork-2-2-and-3.md)
+- [Combining parameters to generate a signature for SKAdNetwork 1](combining-parameters-to-generate-a-signature-for-skadnetwork-1.md)
 - [Combining parameters to generate a signature for SKAdNetwork 2](combining-parameters-to-generate-a-signature-for-skadnetwork-2.md)
+- [Combining parameters to generate signatures for SKAdNetwork 2.2 and 3](combining-parameters-to-generate-signatures-for-skadnetwork-2-2-and-3.md)
 
 #### Discussion
 
 The value for this key is an [`NSUUID`](https://developer.apple.com/documentation/Foundation/NSUUID). Ad networks generate a random value for this key at the time of the ad impression.
 
 > ❗ **Important**:  When you generate the signature value ([`SKStoreProductParameterAdNetworkAttributionSignature`](skstoreproductparameteradnetworkattributionsignature.md)), you must sign the nonce as an all-lowercase UUID string representation.
-
- When you generate the signature value ([`SKStoreProductParameterAdNetworkAttributionSignature`](skstoreproductparameteradnetworkattributionsignature.md)), you must sign the nonce as an all-lowercase UUID string representation.
 
 ## See Also
 

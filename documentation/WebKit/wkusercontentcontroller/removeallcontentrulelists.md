@@ -1,6 +1,6 @@
 # removeAllContentRuleLists()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Removes all rules lists from the content controller.

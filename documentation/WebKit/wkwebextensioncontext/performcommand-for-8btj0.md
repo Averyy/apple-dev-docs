@@ -1,6 +1,6 @@
 # performCommand(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Performs the command associated with the given event.

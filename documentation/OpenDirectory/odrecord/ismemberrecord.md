@@ -1,6 +1,6 @@
 # isMemberRecord(_:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Determines whether a given record is a member of this group record.

@@ -1,6 +1,6 @@
 # initMutationEvent(_:canBubble:cancelable:relatedNode:prevValue:newValue:attrName:attrChange:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

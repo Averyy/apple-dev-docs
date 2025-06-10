@@ -1,6 +1,6 @@
 # headerSearchPath(_:_:)
 
-**Framework**: Packagedescription  
+**Framework**: PackageDescription  
 **Kind**: method
 
 Provides a header search path relative to the target’s directory.

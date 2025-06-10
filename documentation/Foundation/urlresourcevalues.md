@@ -283,6 +283,11 @@ As a convenience, you can request volume resource values from any file system UR
 ### Initializers
 - [init()](urlresourcevalues/init.md)
   Initializes a new resource values structure.
+### Instance Properties
+- [var ubiquitousItemIsSyncPaused: Bool?](urlresourcevalues/ubiquitousitemissyncpaused.md)
+  True if the sync of the item has been paused.
+- [var ubiquitousItemSupportedSyncControls: NSFileManagerSupportedSyncControls?](urlresourcevalues/ubiquitousitemsupportedsynccontrols.md)
+  The supported sync controls on the item.
 
 ## See Also
 

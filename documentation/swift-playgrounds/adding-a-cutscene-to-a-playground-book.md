@@ -20,8 +20,6 @@ Place all of the resources used in a cutscene in its PrivateResources folder.
 
 > ❗ **Important**: To localize a cutscene, enclose the cutscene files in a localization folder, such as en.lproj for English, inside the PrivateResources folder.
 
-To localize a cutscene, enclose the cutscene files in a localization folder, such as en.lproj for English, inside the PrivateResources folder.
-
 ##### Add the Cutscene Manifest
 
 In Xcode, create a property list file called `Manifest.plist` in the cutscene subfolder. Choose `File > New > File`, then choose the Property List template from `iOS > Resources`. Use the manifest property list to list a cutscene’s name and to reference the HTML file that defines the cutscene.

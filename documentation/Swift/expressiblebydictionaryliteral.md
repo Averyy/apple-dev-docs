@@ -97,4 +97,4 @@ extension CountedSet: ExpressibleByDictionaryLiteral {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/expressiblebydictionaryliteral)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/expressiblebydictionaryliteral)*

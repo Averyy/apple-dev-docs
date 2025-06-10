@@ -1,6 +1,6 @@
 # Creating images from a video asset
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Display images for specific times within the media timeline by generating images from a video’s frames.
 
@@ -84,4 +84,4 @@ This method returns an asynchronous sequence of type [`AVAssetImageGenerator.Ima
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/creating-images-from-a-video-asset)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/creating-images-from-a-video-asset)*

@@ -23,6 +23,8 @@ func textFieldStyle<S>(_ style: S) -> some View where S : TextFieldStyle
 
 ## See Also
 
+- [Building rich SwiftUI text experiences](building-rich-swiftui-text-experiences.md)
+  Build an editor for formatted text using SwiftUI text editor views and attributed strings.
 - [struct TextField](textfield.md)
   A control that displays an editable text interface.
 - [struct SecureField](securefield.md)

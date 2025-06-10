@@ -9,7 +9,7 @@ The raw type that can be used to represent all values of the conforming type.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

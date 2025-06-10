@@ -1,6 +1,6 @@
 # DRAW_FRAMEBUFFER
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

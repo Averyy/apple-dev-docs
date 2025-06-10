@@ -59,6 +59,7 @@ Alternatively, use `MapPitchToggle` in conjunction with the `mapControls(_:)` mo
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

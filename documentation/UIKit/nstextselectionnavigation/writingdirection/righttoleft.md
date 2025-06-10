@@ -1,0 +1,29 @@
+# NSTextSelectionNavigation.WritingDirection.rightToLeft
+
+**Framework**: UIKit  
+**Kind**: case
+
+The value that defines the right to left writing direction.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- tvOS 15.0+
+- visionOS 1.0+
+
+## Declaration
+
+```swift
+case rightToLeft
+```
+
+## See Also
+
+- [NSTextSelectionNavigation.WritingDirection.leftToRight](nstextselectionnavigation/writingdirection/lefttoright.md)
+  The value that defines the left to right writing direction.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/nstextselectionnavigation/writingdirection/righttoleft)*

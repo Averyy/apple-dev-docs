@@ -1,6 +1,6 @@
 # documentViewShouldHandlePrint
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating whether the document view should handle a print operation.

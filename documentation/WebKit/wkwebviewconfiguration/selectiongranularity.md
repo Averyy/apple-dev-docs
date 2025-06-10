@@ -1,6 +1,6 @@
 # selectionGranularity
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The level of granularity with which the user can interactively select web view content.

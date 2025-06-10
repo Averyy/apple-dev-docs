@@ -1,9 +1,21 @@
 # Cube Image LOD (RealityKit)
 
-**Framework**: Shadergraph  
+**Framework**: ShaderGraph  
 **Kind**: subscript
 
 A texturecube with RealityKit properties and a explicit level of detail.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
+#### Overview
+
+Explicit level of detail. Input image must be in KTX file format
 
 #### Parameter Types
 
@@ -11,15 +23,15 @@ A texturecube with RealityKit properties and a explicit level of detail.
 
 #### Discussion
 
-The Cube Image LOD node produces a texture using the contents of the image file specified in the `File` parameter. It has a multitude of parameters that affect the properties of the rendered textures.
+The `Cube Image LOD` node produces a texture using the contents of the image file specified in the `File` parameter. It has various of parameters that affect the properties of the rendered textures.
 
 > **Note**: Create the input file in a `.ktx` format or the node won’t work properly.
 
-For the wrap mode parameters, the possible values are:
+The possible values for the wrap mode parameters are:
 
-> ⚠️ **Warning**: You can only use the clamp-to-zero option if the `Border Color` parameter is set to `transparent_black`; otherwise, the behavior of the node is undefined.
+> ⚠️ **Warning**: You can only use `clamp-to-zero` if the `Border Color` parameter is set to `transparent_black`; otherwise, the behavior of the node is undefined.
 
-For the `Mag Filter` and `Min Filter` parameters, the possible values are:
+The possible values for `Mag Filter` and `Min Filter` are:
 
 The `Mip Filter` parameter has the same possible values, with the addition of the option to allow for the value of `None`, which specifies that mipmapping isn’t used.
 

@@ -1,6 +1,6 @@
 # setParentTab(_:for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to set or clear the parent tab for the tab.

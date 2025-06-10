@@ -33,7 +33,7 @@ Set the stream context as nonactive on the device with an out-of-band (class-def
 
 - [typealias IOUSBHostCompletionHandler](iousbhostcompletionhandler.md)
   The completion handler for asynchronous control, bulk, and interrupt transfers.
-- [func enqueueIORequest(with: NSMutableData?, completionHandler: IOUSBHostCompletionHandler?) throws](iousbhoststream/enqueueiorequest(with:completionhandler:).md)
+- [func enqueueIORequest(with: NSMutableData?, completionHandler: ((IOReturn, Int) -> Void)?) throws](iousbhoststream/enqueueiorequest(with:completionhandler:).md)
   Enqueues an input/output request on the stream.
 - [func abort() throws](iousbhoststream/abort.md)
   Aborts pending input/output requests synchronously.

@@ -1,6 +1,6 @@
 # Generating the signature to validate view-through ads
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Initiate install validation by displaying a view-through ad with signed parameters.
 
@@ -71,7 +71,7 @@ Encode the binary signature you generate into a Base64 string. The result is you
 MEQCIEQlmZRNfYzKBSE8QnhLTIHZZZWCFgZpRqRxHss65KoFAiAJgJKjdrWdkLUOCCjuEx2RmFS7daRzSVZRVZ8RyMyUXg==
 ```
 
-For more information about Base64 encoding, see [`base64EncodedString(options:)`](https://developer.apple.com/documentation/foundation/data/2142853-base64encodedstring).
+For more information about Base64 encoding, see [`base64EncodedString(options:)`](https://developer.apple.com/documentation/Foundation/Data/base64EncodedString(options:)).
 
 ##### Use the Generated Signature String
 
@@ -89,4 +89,4 @@ After you generate the signature, you have all the required values for your [`SK
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/generating-the-signature-to-validate-view-through-ads)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/generating-the-signature-to-validate-view-through-ads)*

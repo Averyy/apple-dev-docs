@@ -1,6 +1,6 @@
 # inactive
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: property
 
 **Availability**:

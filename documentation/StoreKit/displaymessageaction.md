@@ -1,6 +1,6 @@
 # DisplayMessageAction
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: struct
 
 An instance that asks StoreKit to display an App Store message, if appropriate.
@@ -92,6 +92,7 @@ struct MessageExampleView: View {
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -103,4 +104,4 @@ struct MessageExampleView: View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/displaymessageaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/displaymessageaction)*

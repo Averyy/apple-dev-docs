@@ -1,6 +1,6 @@
 # HistoricalComparisons.Element
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: typealias
 
 A type representing the sequence’s elements.

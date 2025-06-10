@@ -55,6 +55,7 @@ The default value for all scenes if you don’t apply the modifier is [`automati
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

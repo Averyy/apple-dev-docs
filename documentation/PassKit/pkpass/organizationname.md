@@ -31,6 +31,7 @@ You can use this property to display information about the organization that cre
   Returns the localized value for a specified field of the pass.
 - [var relevantDate: Date?](pkpass/relevantdate.md)
   The date when the pass is most likely to be useful or necessary.
+- [class PKPassRelevantDate](pkpassrelevantdate.md)
 
 
 ---

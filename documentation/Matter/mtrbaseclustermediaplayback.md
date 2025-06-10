@@ -110,12 +110,12 @@ class MTRBaseClusterMediaPlayback
 - [func subscribeAttributeSeekRangeStart(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustermediaplayback/subscribeattributeseekrangestart(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeStartTime(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustermediaplayback/subscribeattributestarttime(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeStartTime(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustermediaplayback/subscribeattributestarttime(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func activateAudioTrack(with: MTRMediaPlaybackClusterActivateAudioTrackParams, completion: MTRStatusCompletion)](mtrbaseclustermediaplayback/activateaudiotrack(with:completion:).md)
+- [func activateAudioTrack(with: MTRMediaPlaybackClusterActivateAudioTrackParams, completion: ((any Error)?) -> Void)](mtrbaseclustermediaplayback/activateaudiotrack(with:completion:).md)
   Command ActivateAudioTrack
-- [func activateTextTrack(with: MTRMediaPlaybackClusterActivateTextTrackParams, completion: MTRStatusCompletion)](mtrbaseclustermediaplayback/activatetexttrack(with:completion:).md)
+- [func activateTextTrack(with: MTRMediaPlaybackClusterActivateTextTrackParams, completion: ((any Error)?) -> Void)](mtrbaseclustermediaplayback/activatetexttrack(with:completion:).md)
   Command ActivateTextTrack
-- [func deactivateTextTrack(completion: MTRStatusCompletion)](mtrbaseclustermediaplayback/deactivatetexttrack(completion:).md)
-- [func deactivateTextTrack(with: MTRMediaPlaybackClusterDeactivateTextTrackParams?, completion: MTRStatusCompletion)](mtrbaseclustermediaplayback/deactivatetexttrack(with:completion:).md)
+- [func deactivateTextTrack(completion: ((any Error)?) -> Void)](mtrbaseclustermediaplayback/deactivatetexttrack(completion:).md)
+- [func deactivateTextTrack(with: MTRMediaPlaybackClusterDeactivateTextTrackParams?, completion: ((any Error)?) -> Void)](mtrbaseclustermediaplayback/deactivatetexttrack(with:completion:).md)
   Command DeactivateTextTrack
 ### Type Methods
 - [class func readAttributeAcceptedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustermediaplayback/readattributeacceptedcommandlist(withattributecache:endpoint:queue:completionhandler:).md)

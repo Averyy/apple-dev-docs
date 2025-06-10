@@ -81,6 +81,7 @@ The [`UnitFrequency`](unitfrequency.md) class defines its [`baseUnit()`](dimensi
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

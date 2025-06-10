@@ -18,8 +18,6 @@ object BetaAppLocalizationUpdateRequest.Data.Attributes
 
 > ❗ **Important**:  A description is required for all `betaAppLocalizations` before you can submit to beta app review. After you have added data to the fields for this object, you can change that data, but you cannot remove data.
 
- A description is required for all `betaAppLocalizations` before you can submit to beta app review. After you have added data to the fields for this object, you can change that data, but you cannot remove data.
-
 ## See Also
 
 - [Beta App Localizations](beta-app-localizations.md)

@@ -46,13 +46,6 @@ Many modifiers apply to specific kinds of views or behaviors, but some apply mor
 ### Providing contextual help
 - [func help(_:)](view/help(_:).md)
   Adds help text to a view using a text view that you provide.
-### Adding a glass background
-- [func glassBackgroundEffect(displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(displaymode:).md)
-  Fills the view’s background with an automatic glass background effect and container-relative rounded rectangle shape.
-- [func glassBackgroundEffect<S>(in: S, displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(in:displaymode:).md)
-  Fills the view’s background with an automatic glass background effect and a shape that you specify.
-- [enum GlassBackgroundDisplayMode](glassbackgrounddisplaymode.md)
-  The display mode of a glass background.
 ### Detecting and requesting the light or dark appearance
 - [func preferredColorScheme(ColorScheme?) -> some View](view/preferredcolorscheme(_:).md)
   Sets the preferred color scheme for this presentation.
@@ -70,6 +63,7 @@ Many modifiers apply to specific kinds of views or behaviors, but some apply mor
   Applies an effect to passthrough video.
 - [struct SurroundingsEffect](surroundingseffect.md)
   Effects that the system can apply to passthrough video.
+- [struct BreakthroughEffect](breakthrougheffect.md)
 ### Redacting private content
 - [Designing your app for the Always On state](../watchOS-Apps/designing-your-app-for-the-always-on-state.md)
   Customize your watchOS app’s user interface for continuous display.

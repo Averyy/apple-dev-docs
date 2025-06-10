@@ -1,6 +1,6 @@
 # Sending notification requests to APNs
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Transmit your remote notification payload and device token information to Apple Push Notification service (APNs).
 
@@ -137,4 +137,4 @@ Below are some APNs best practices to consider:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/sending-notification-requests-to-apns)*
+*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/sending-notification-requests-to-apns)*

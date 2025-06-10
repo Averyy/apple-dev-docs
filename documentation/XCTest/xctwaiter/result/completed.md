@@ -1,6 +1,6 @@
 # XCTWaiter.Result.completed
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 All of the waiter’s expectations were fulfilled successfully.

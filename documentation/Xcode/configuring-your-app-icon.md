@@ -1,10 +1,12 @@
-# Configuring your app icon
+# Configuring your app icon using an asset catalog
 
 **Framework**: Xcode
 
-Add app icon variations to represent your app in places such as Settings, search results, and the App Store.
+Add app icon variations to an asset catalog that represents your app in places such as the App Store, the Home Screen, Settings, and search results.
 
 #### Overview
+
+> ❗ **Important**: To create your app icon using Icon Composer for all variants, including different platforms and appearances, see [`Creating your app icon using Icon Composer`](creating-your-app-icon-using-icon-composer.md).
 
 Every app has a distinct app icon that communicates the app’s purpose and makes it easy to recognize throughout the system. Apps require multiple variations of the app icon to look great in different contexts. Xcode can help generate these variations for you using a single high-resolution image, or you can configure your app icon variations by using an app icon’s image set in your project’s asset catalog. visionOS and tvOS app icons are made up of multiple stacked image layers you configure in your project’s asset catalog. iOS and iPadOS app icons support additional dark and tinted styles.
 
@@ -61,7 +63,7 @@ After you select the Appearance from the pop-up menu, two image wells appear. Dr
 
 If you prefer, you can take advantage of the system’s automatically generated treatment that is applied to all app icons. It is crafted intelligently to preserve design intent and maintain legibility. This also helps maintain a consistent visual experience across the Home Screen.
 
-For design guidance specific to iOS and iPadOS, see [`Human Interface Guidelines > App Icons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-icons#iOS-iPadOS).
+For design guidance specific to iOS and iPadOS, see [`Human Interface Guidelines > App Icons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-icons).
 
 ##### Configure the Layers of an Image Stack
 
@@ -104,6 +106,8 @@ For information on configuring tests that use icons in App Store Connect, see [`
 
 ## See Also
 
+- [Creating your app icon using Icon Composer](creating-your-app-icon-using-icon-composer.md)
+  Use Icon Composer to stylize your app icon for different platforms and appearances.
 - [Configuring Your App to Use Alternate App Icons](configuring_your_app_to_use_alternate_app_icons.md)
   Add alternate app icons to your app, and let people choose which icon to display.
 - [Specifying your app’s launch screen](specifying-your-apps-launch-screen.md)
@@ -112,4 +116,4 @@ For information on configuring tests that use icons in App Store Connect, see [`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-your-app-icon)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-your-app-icon)*

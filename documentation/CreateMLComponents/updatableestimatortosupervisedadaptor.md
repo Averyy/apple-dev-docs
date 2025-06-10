@@ -58,6 +58,7 @@ struct UpdatableEstimatorToSupervisedAdaptor<Estimator, Annotation> where Estima
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SupervisedEstimator](supervisedestimator.md)
 - [UpdatableSupervisedEstimator](updatablesupervisedestimator.md)
 

@@ -6,6 +6,7 @@
 An action that dismisses an immersive space.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -18,6 +19,8 @@ struct DismissImmersiveSpaceAction
 #### Overview
 
 Use the [`dismissImmersiveSpace`](environmentvalues/dismissimmersivespace.md) environment value to get an instance of this type for a given [`Environment`](environment.md). Then call the instance to dismiss a space. You call the instance directly because it defines a [`callAsFunction()`](dismissimmersivespaceaction/callasfunction().md) method that Swift calls when you call the instance.
+
+On macOS, this may be used to dismiss a remote immersive space declared with [`RemoteImmersiveSpace`](remoteimmersivespace.md).
 
 For example, you can define a button that dismisses an immersive space:
 
@@ -59,6 +62,7 @@ The asynchronous call returns after the system finishes dismissing the space. Un
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

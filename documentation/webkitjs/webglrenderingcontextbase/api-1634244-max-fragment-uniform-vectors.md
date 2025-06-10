@@ -1,6 +1,6 @@
 # MAX_FRAGMENT_UNIFORM_VECTORS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # setZoomFactor(_:for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to set the zoom factor of the tab.

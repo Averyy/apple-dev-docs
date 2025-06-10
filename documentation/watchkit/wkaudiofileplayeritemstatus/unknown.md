@@ -1,6 +1,6 @@
 # WKAudioFilePlayerItemStatus.unknown
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The item’s status is unknown.

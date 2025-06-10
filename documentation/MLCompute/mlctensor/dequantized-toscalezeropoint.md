@@ -26,8 +26,6 @@ A tensor the system dequantizes.
 
 > ❗ **Important**:  The tensor type must be [`MLCDataType.float32`](mlcdatatype/float32.md).
 
- The tensor type must be [`MLCDataType.float32`](mlcdatatype/float32.md).
-
 ## Parameters
 
 - `type`: The tensor data type.

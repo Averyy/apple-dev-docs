@@ -1,6 +1,6 @@
 # DOM_SHOW_CDATA_SECTION
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

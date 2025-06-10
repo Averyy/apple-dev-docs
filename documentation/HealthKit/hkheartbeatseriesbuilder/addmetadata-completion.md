@@ -21,7 +21,7 @@ func addMetadata(_ metadata: [String : Any]) async throws
 
 #### Discussion
 
-The builder adds the metadata to the resulting series sample. It incorporates new data using [`addEntries(from:)`](https://developer.apple.com/documentation/foundation/nsmutabledictionary/1411035-addentries).
+The builder adds the metadata to the resulting series sample. It incorporates new data using [`addEntries(from:)`](https://developer.apple.com/documentation/Foundation/NSMutableDictionary/addEntries(from:)).
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # findNamed(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a web frame that matches the given name.

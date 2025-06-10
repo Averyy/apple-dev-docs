@@ -44,11 +44,14 @@ This clock is suitable for high resolution measurements of execution.
 - [Clock](clock.md)
 - [Copyable](copyable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 
 - [protocol Clock](clock.md)
   A mechanism in which to measure time, and delay work until a given point in time.
+- [struct ClockTraits](clocktraits.md)
+  Represents traits of a particular Clock implementation.
 - [struct ContinuousClock](continuousclock.md)
   A clock that measures time that always increments and does not stop incrementing while the system is asleep.
 

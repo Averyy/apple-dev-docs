@@ -1,6 +1,6 @@
 # Setting up Apple Pay
 
-**Framework**: Passkit
+**Framework**: PassKit (Apple Pay and Wallet)
 
 Fulfill the requirements to provide Apple Pay as a payment option on your website or in your app.
 
@@ -41,7 +41,7 @@ For more information, see [`Adding capabilities to your app`](https://developer.
 
 ##### Configure Apple Pay on the Web
 
-If you’re also developing websites using [`Apple Pay on the Web`](https://developer.apple.com/documentation/apple_pay_on_the_web), you can use the same merchant ID and Payment Processing Certificate for your website. However, Apple Pay on the web requires additional setup; see [`Configuring Your Environment`](https://developer.apple.com/documentation/apple_pay_on_the_web/configuring_your_environment), [`Get Started with Apple Pay on the Web`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/111381), and the [`Apple Pay Merchant Integration Guide`](https://developer.apple.comhttp://developer.apple.com/apple-pay/Apple-Pay-Merchant-Integration-Guide.pdf) for more information.
+If you’re also developing websites using [`Apple Pay on the Web`](https://developer.apple.com/documentation/ApplePayontheWeb), you can use the same merchant ID and Payment Processing Certificate for your website. However, Apple Pay on the web requires additional setup; see [`Configuring Your Environment`](https://developer.apple.com/documentation/ApplePayontheWeb/configuring-your-environment), [`Get Started with Apple Pay on the Web`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/111381), and the [`Apple Pay Merchant Integration Guide`](https://developer.apple.comhttp://developer.apple.com/apple-pay/Apple-Pay-Merchant-Integration-Guide.pdf) for more information.
 
 ## See Also
 
@@ -53,4 +53,4 @@ If you’re also developing websites using [`Apple Pay on the Web`](https://deve
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PassKit/setting-up-apple-pay)*
+*[View on Apple Developer](https://developer.apple.com/documentation/passkit/setting-up-apple-pay)*

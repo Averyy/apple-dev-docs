@@ -6,12 +6,12 @@
 **Availability**:
 - iOS ?+
 - iPadOS ?+
-- macOS ?+
+- Mac Catalyst ?+
 - tvOS ?+
 - visionOS ?+
 - watchOS ?+
 - Unknown ?+ - Deprecated
-- Mac Catalyst ?+
+- macOS ?+
 
 ## Declaration
 

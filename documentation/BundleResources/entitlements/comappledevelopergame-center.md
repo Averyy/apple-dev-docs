@@ -18,7 +18,7 @@ To add this entitlement to your app, enable the Game Center capability in Xcode.
 
 ## See Also
 
-- [Enabling and configuring Game Center](../GameKit/enabling-and-configuring-game-center.md)
+- [Initializing and configuring Game Center](../GameKit/initializing-and-configuring-game-center.md)
   Enable Game Center in your Xcode project and configure features in App Store Connect.
 
 

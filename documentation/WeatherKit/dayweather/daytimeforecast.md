@@ -1,6 +1,6 @@
 # daytimeForecast
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The weather forecast from 7AM - 7PM on this day.

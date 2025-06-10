@@ -12,6 +12,7 @@ Creates and returns a directions request object using the specified URL.
 - macOS 10.9+
 - tvOS ?+
 - visionOS 1.0+
+- watchOS 2.0+
 
 ## Declaration
 

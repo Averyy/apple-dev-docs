@@ -26,6 +26,10 @@ If set to `YES`, your app supports multiple remotes with gamepads; otherwise, it
   A Boolean value indicating whether the app supports a game controller.
 - [GCRequiresControllerUserInteraction](information-property-list/gcrequirescontrolleruserinteraction.md)
   The platforms for which your app requires or you recommend a game controller.
+- [LSSupportsGameMode](information-property-list/lssupportsgamemode.md)
+  A Boolean value indicating whether the app supports Game Mode.
+- [GCSupportsGameMode](information-property-list/gcsupportsgamemode.md)
+  A Boolean value indicating whether the app supports game mode.
 
 
 ---

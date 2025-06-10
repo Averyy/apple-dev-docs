@@ -1,6 +1,6 @@
 # UISceneConfigurations
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: dictionary
 
 The default configuration details the system uses to create new scenes.

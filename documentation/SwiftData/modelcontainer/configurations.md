@@ -27,8 +27,6 @@ Use this property to access or update the configurations that the container uses
 
 > ❗ **Important**: A container must have at least one configuration. If you don’t specify any at initialization, the framework creates an instance of [`ModelConfiguration`](modelconfiguration.md) for you by combining your app’s entitlements with the type’s default values.
 
-A container must have at least one configuration. If you don’t specify any at initialization, the framework creates an instance of [`ModelConfiguration`](modelconfiguration.md) for you by combining your app’s entitlements with the type’s default values.
-
 ## See Also
 
 - [let schema: Schema](modelcontainer/schema.md)

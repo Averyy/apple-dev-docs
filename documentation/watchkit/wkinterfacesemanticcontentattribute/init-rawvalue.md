@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: init
 
 **Availability**:

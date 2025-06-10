@@ -4,8 +4,7 @@
 **Kind**: dictionary
 
 **Availability**:
-- App Store Connect ?+ - Deprecated
-- App Store Connect API 3.6+
+- App Store Connect API ?+ - Deprecated
 
 ## Declaration
 

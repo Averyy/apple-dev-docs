@@ -1,6 +1,6 @@
 # Managing auto-renewable subscriptions
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Create and manage subscriptions with the App Store Connect API.
 
@@ -308,4 +308,4 @@ Here’s an example payload:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/managing-auto-renewable-subscriptions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/managing-auto-renewable-subscriptions)*

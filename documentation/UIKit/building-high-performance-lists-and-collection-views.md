@@ -1,6 +1,6 @@
 # Building high-performance lists and collection views
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Improve the performance of lists and collections in your app with prefetching and image preparation.
 
@@ -44,4 +44,4 @@ Improve the performance of lists and collections in your app with prefetching an
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/building-high-performance-lists-and-collection-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/building-high-performance-lists-and-collection-views)*

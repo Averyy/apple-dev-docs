@@ -43,6 +43,7 @@ To override the layout direction for a specific view, use the [`environment(_:_:
   The layout direction associated with the current environment.
 - [enum LayoutDirection](layoutdirection.md)
   A direction in which SwiftUI can lay out content.
+- [struct LayoutRotationUnaryLayout](layoutrotationunarylayout.md)
 
 
 ---

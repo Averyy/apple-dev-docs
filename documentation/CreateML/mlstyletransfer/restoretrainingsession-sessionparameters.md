@@ -22,9 +22,9 @@ static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameter
 
 An [`MLTrainingSession`](mltrainingsession.md) that represents the style transfer model-training session.
 
-#### Discussion
+## Parameters
 
-- sessionParameters: The [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you used to create the training session using [`makeTrainingSession(trainingData:parameters:sessionParameters:)`](mlstyletransfer/maketrainingsession(trainingdata:parameters:sessionparameters:).md).
+- `sessionParameters`: The   instance you used to create the training session   using  .
 
 ## See Also
 

@@ -10,6 +10,7 @@ Synchronously creates a 2D array texture resource from a pixel Metal buffer, or 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -39,8 +40,6 @@ RealityKit efficiently creates a 2D array texture from raw pixel bytes, with ful
   Synchronously creates a 2D texture array by generating it from images.
 - [convenience init(dimensions: TextureResource.Dimensions2DArray, format: TextureResource.Format, contents: TextureResource.Contents) async throws](textureresource/init(dimensions:format:contents:)-324ls.md)
   Asynchronously creates a 2D array texture resource from a pixel Metal buffer, or data.
-- [TextureResource.Dimensions2DArray](textureresource/dimensions2darray.md)
-  The dimensions of the 2D array texture.
 
 
 ---

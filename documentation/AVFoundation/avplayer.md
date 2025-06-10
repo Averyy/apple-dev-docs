@@ -24,11 +24,12 @@ class AVPlayer
 ## Mentions
 
 - [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
+- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
 - [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
 - [Presenting Chapter Markers](presenting-chapter-markers.md)
-- [Implementing simple enhanced buffering for your content](implementing-simple-enhanced-buffering-for-your-content.md)
-- [Monitoring playback progress in your app](monitoring-playback-progress-in-your-app.md)
 - [Selecting Subtitles and Alternative Audio Tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Monitoring playback progress in your app](monitoring-playback-progress-in-your-app.md)
+- [Implementing simple enhanced buffering for your content](implementing-simple-enhanced-buffering-for-your-content.md)
 
 #### Overview
 
@@ -205,6 +206,19 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
 ### Displaying Closed Captions
 - [var isClosedCaptionDisplayEnabled: Bool](avplayer/isclosedcaptiondisplayenabled.md)
   A Boolean value that indicates whether the player uses closed captioning.
+### Instance Properties
+- [var audioOutputSuppressedDueToNonMixableAudioRoute: Bool](avplayer/audiooutputsuppressedduetononmixableaudioroute.md)
+  Whether the player’s audio output is suppressed due to being on a non-mixable audio route.
+- [var intendedSpatialAudioExperience: any SpatialAudioExperience](avplayer/intendedspatialaudioexperience-1bd87.md)
+  The AVPlayer’s intended spatial audio experience.
+- [var networkResourcePriority: AVPlayer.NetworkResourcePriority](avplayer/networkresourcepriority-swift.property.md)
+  Indicates the priority of this player for network bandwidth resource distribution.
+### Type Properties
+- [class var isObservationEnabled: Bool](avplayer/isobservationenabled.md)
+  AVPlayer and other AVFoundation types can optionally be observed using Swift Observation.
+### Enumerations
+- [AVPlayer.NetworkResourcePriority](avplayer/networkresourcepriority-swift.enum.md)
+  This defines the network resource priority for a player.
 
 ## Relationships
 
@@ -213,18 +227,25 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
 ### Inherited By
 - [AVQueuePlayer](avqueueplayer.md)
 ### Conforms To
+- [AVRoutingPlaybackParticipant](../AVRouting/AVRoutingPlaybackParticipant.md)
 - [CVarArg](../Swift/CVarArg.md)
+- [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Observable](../Observation/Observable.md)
 - [Sendable](../Swift/Sendable.md)
 
 ## See Also
 
+- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
+  Keep your user interface in sync with state changes from playback objects.
 - [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
   Play, pause, and seek through a media presentation.
+- [Creating a seamless multiview playback experience](creating-a-seamless-multiview-playback-experience.md)
+  Build advanced multiview playback experiences with the AVFoundation and AVRouting frameworks.
 - [class AVPlayerItem](avplayeritem.md)
   An object that models the timing and presentation state of an asset during playback.
 - [class AVPlayerItemTrack](avplayeritemtrack.md)

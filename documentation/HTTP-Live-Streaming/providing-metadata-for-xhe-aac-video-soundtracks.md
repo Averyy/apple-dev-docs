@@ -1,6 +1,6 @@
 # Providing metadata for xHE-AAC video soundtracks
 
-**Framework**: Http Live Streaming
+**Framework**: HTTP Live Streaming
 
 Ensure volume normalization by including metadata for loudness and dynamic range control.
 
@@ -105,4 +105,4 @@ User preferences can override DRC settings. The following table provides example
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HTTP-Live-Streaming/providing-metadata-for-xhe-aac-video-soundtracks)*
+*[View on Apple Developer](https://developer.apple.com/documentation/http-live-streaming/providing-metadata-for-xhe-aac-video-soundtracks)*

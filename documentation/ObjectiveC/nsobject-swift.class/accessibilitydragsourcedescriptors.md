@@ -1,6 +1,6 @@
 # accessibilityDragSourceDescriptors
 
-**Framework**: Objectivec  
+**Framework**: Objective-C Runtime  
 **Kind**: property
 
 An array of location descriptor objects that you use to define what drags are possible from this element.
@@ -32,4 +32,4 @@ To restore the default automatic behavior for this property, assign or return th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ObjectiveC/nsobject-swift.class/accessibilitydragsourcedescriptors)*
+*[View on Apple Developer](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilitydragsourcedescriptors)*

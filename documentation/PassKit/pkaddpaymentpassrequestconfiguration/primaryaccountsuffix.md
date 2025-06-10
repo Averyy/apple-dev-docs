@@ -1,6 +1,6 @@
 # primaryAccountSuffix
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property
 
 The last four or five digits of the card’s number.

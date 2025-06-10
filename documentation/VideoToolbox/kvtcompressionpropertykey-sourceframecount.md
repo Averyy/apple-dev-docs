@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_SourceFrameCount
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The number of source frames, if known.

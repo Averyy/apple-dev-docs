@@ -17,7 +17,8 @@ An action that starts an in-app purchase.
 ## Declaration
 
 ```swift
-var purchase: PurchaseAction { get }
+@MainActor
+@preconcurrency var purchase: PurchaseAction { get }
 ```
 
 #### Discussion

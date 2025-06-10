@@ -18,8 +18,6 @@ The user must grant permission before your app can access Apple Music library. S
 
 > ❗ **Important**:  When the Music app is absent on the user’s device, [`load(options:completionHandler:)`](skcloudservicesetupviewcontroller/load(options:completionhandler:).md) fails to load.
 
- When the Music app is absent on the user’s device, [`load(options:completionHandler:)`](skcloudservicesetupviewcontroller/load(options:completionhandler:).md) fails to load.
-
 ##### Determine If the User Is Eligible for an Apple Music Subscription
 
 After getting Apple Music access from the user, call [`requestCapabilities(completionHandler:)`](skcloudservicecontroller/requestcapabilities(completionhandler:).md) on an instance of [`SKCloudServiceController`](skcloudservicecontroller.md) to query the user’s capabilities. Then, inspect the `capabilities` parameter of this method to determine eligibility. See [`Determining a person’s Apple Music capabilities`](determining-a-person-s-apple-music-capabilities.md) for details. A user has an active subscription to Apple Music when `capabilities` contains [`musicCatalogPlayback`](skcloudservicecapability/musiccatalogplayback.md). A user is eligible for the offer when `capabilities` doesn’t include [`musicCatalogPlayback`](skcloudservicecapability/musiccatalogplayback.md) but contains [`musicCatalogSubscriptionEligible`](skcloudservicecapability/musiccatalogsubscriptioneligible.md).

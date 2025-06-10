@@ -1,6 +1,6 @@
 # CurrentWeather
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 The current weather conditions for the specified location.

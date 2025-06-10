@@ -42,8 +42,6 @@ If your app specifies the navigation entitlement, implement the [`templateApplic
 
 > ❗ **Important**:  Use the window’s root view controller to draw only map content. Don’t render alerts, overlays, or any other user interface elements. Use only the templates that the framework provides to create your app’s CarPlay user interface.
 
- Use the window’s root view controller to draw only map content. Don’t render alerts, overlays, or any other user interface elements. Use only the templates that the framework provides to create your app’s CarPlay user interface.
-
 ##### Add a Carplay Dashboard Scene
 
 Navigation apps can add an additional scene entry to their scene manifest to enable their maps, upcoming maneuvers, and shortcut buttons to appear in the CarPlay Dashboard.
@@ -75,8 +73,6 @@ In the same file, add the CarPlay Dashboard scene configuration to the `UISceneC
 ```
 
 > 💡 **Tip**:  The names of the dashboard scene’s session role and scene class are different from the standard CarPlay scene. If the CarPlay Dashboard doesn’t display your navigation app, make sure that you’re using the correct names.
-
- The names of the dashboard scene’s session role and scene class are different from the standard CarPlay scene. If the CarPlay Dashboard doesn’t display your navigation app, make sure that you’re using the correct names.
 
 In your dashboard scene delegate, implement [`templateApplicationDashboardScene(_:didConnect:to:)`](cptemplateapplicationdashboardscenedelegate/templateapplicationdashboardscene(_:didconnect:to:).md). Use the window that the method provides to render your map content. Set the dashboard controller’s [`shortcutButtons`](cpdashboardcontroller/shortcutbuttons.md) property to an array of buttons — up to a maximum of two — that the CarPlay Dashboard displays when your app isn’t actively navigating.
 

@@ -24,8 +24,6 @@ case quarter
 
 > ❗ **Important**:  The `quarter` unit is largely unimplemented, and is not recommended for use.
 
- The `quarter` unit is largely unimplemented, and is not recommended for use.
-
 ## See Also
 
 - [Calendar.Component.era](calendar/component/era.md)

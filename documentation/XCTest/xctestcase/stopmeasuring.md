@@ -1,6 +1,6 @@
 # stopMeasuring()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Ends recording performance metrics within a block of code.

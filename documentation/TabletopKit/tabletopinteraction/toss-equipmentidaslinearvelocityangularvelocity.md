@@ -25,8 +25,8 @@ func toss(equipmentID: EquipmentIdentifier, as representation: TossableRepresent
 
 - [TabletopInteraction.Delegate](tabletopinteraction/delegate.md)
   A protocol for objects that manage the entire flow of players interacting with equipment.
-- [func addAction(some TabletopAction)](tabletopinteraction/addaction(_:).md)
 - [func addActions(some Sequence<any TabletopAction>)](tabletopinteraction/addactions(_:).md)
+  Submit a collection of actions tied to this interaction. If the interaction gets canceled, all the associated actions will be automatically rolled back.
 - [func end()](tabletopinteraction/end.md)
   Ends the current interaction.
 - [func cancel()](tabletopinteraction/cancel.md)

@@ -20,8 +20,6 @@ typealias ENRiskScore = UInt8
 
 > ❗ **Important**:  This type is available in iOS 12.5, and in iOS 13.5 and later.
 
- This type is available in iOS 12.5, and in iOS 13.5 and later.
-
 The risk score incorporates the range and weights of various exposure criteria to produce an estimate of the user’s risk of exposure.
 
 ## See Also

@@ -1,6 +1,6 @@
 # subresource(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a subresource for the given URL.

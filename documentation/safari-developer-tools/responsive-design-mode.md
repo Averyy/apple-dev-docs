@@ -16,8 +16,6 @@ While focused on the webpage you want to test in Responsive Design Mode, choose 
 
 > 💡 **Tip**: You can use Responsive Design Mode with [`Web Inspector`](web-inspector.md) to debug your page’s layout while resizing the page in Responsive Design Mode.
 
-You can use Responsive Design Mode with [`Web Inspector`](web-inspector.md) to debug your page’s layout while resizing the page in Responsive Design Mode.
-
 #### Using Responsive Design Mode
 
 ##### Viewport Size Presets

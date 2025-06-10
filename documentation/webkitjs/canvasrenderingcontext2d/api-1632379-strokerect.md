@@ -1,6 +1,6 @@
 # strokeRect
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Draws a rectangle using the current stroke color, pattern, or gradient.

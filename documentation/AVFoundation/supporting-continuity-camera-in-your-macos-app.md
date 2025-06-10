@@ -1,6 +1,6 @@
 # Supporting Continuity Camera in your macOS app
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Enable high-quality photo and video capture by using an iPhone camera as an external capture device.
 
@@ -178,4 +178,4 @@ AVCaptureDevice.self.addObserver(self, forKeyPath: studioLightKeyPath, options: 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/supporting-continuity-camera-in-your-macos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/supporting-continuity-camera-in-your-macos-app)*

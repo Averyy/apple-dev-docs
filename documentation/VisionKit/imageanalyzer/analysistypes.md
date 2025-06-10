@@ -1,6 +1,6 @@
 # ImageAnalyzer.AnalysisTypes
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: struct
 
 The types of items that an image analyzer looks for in an image.

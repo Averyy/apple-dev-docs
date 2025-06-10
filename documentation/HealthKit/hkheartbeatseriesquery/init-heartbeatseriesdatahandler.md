@@ -21,7 +21,7 @@ init(heartbeatSeries: HKHeartbeatSeriesSample, dataHandler: @escaping (HKHeartbe
 
 #### Discussion
 
-The system calls the `dataHandler` once for each heartbeat until either the `done` parameter is [`true`](https://developer.apple.com/documentation/foundation/nsexpression/1411874-true), or you call [`stop(_:)`](hkhealthstore/stop(_:).md).
+The system calls the `dataHandler` once for each heartbeat until either the `done` parameter is [`true`](https://developer.apple.com/documentation/Foundation/NSExpression/true), or you call [`stop(_:)`](hkhealthstore/stop(_:).md).
 
 ## Parameters
 

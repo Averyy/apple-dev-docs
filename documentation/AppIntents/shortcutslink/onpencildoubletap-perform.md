@@ -1,6 +1,6 @@
 # onPencilDoubleTap(perform:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Adds an action to perform after the user double-taps their Apple Pencil.
@@ -8,7 +8,7 @@ Adds an action to perform after the user double-taps their Apple Pencil.
 **Availability**:
 - iOS 17.5+
 - iPadOS 17.5+
-- Mac Catalyst 17.5+
+- Mac Catalyst ?+
 - macOS 14.5+
 
 ## Declaration

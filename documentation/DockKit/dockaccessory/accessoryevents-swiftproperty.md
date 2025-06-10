@@ -1,6 +1,6 @@
 # accessoryEvents
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: property
 
 Events from the accessory that signify button presses or common camera controls.

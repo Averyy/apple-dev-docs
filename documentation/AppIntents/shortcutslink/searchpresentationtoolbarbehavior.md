@@ -8,10 +8,10 @@ Configures the search toolbar presentation behavior for any searchable modifiers
 **Availability**:
 - iOS 17.1+
 - iPadOS 17.1+
-- Mac Catalyst 17.1+
+- Mac Catalyst ?+
 - macOS 14.1+
 - tvOS 17.1+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.1+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # setSecureTextEntry(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Determines whether the text field hides the text entered by the user.

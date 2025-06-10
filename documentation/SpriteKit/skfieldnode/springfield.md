@@ -17,7 +17,6 @@ Creates a field node that applies a spring-like force that pulls physics bodies 
 ## Declaration
 
 ```swift
-@MainActor
 class func springField() -> SKFieldNode
 ```
 

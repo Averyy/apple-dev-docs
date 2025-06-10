@@ -1,6 +1,6 @@
 # rawValue
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A unique, underlying value for the analysis type.

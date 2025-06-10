@@ -1,6 +1,6 @@
 # setURL(_:for:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Creates a link to an external resource defined by a URL

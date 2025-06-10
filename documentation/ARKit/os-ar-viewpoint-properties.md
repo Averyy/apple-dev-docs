@@ -3,9 +3,6 @@
 **Framework**: ARKit  
 **Kind**: protocol
 
-**Availability**:
-- visionOS 2.4+
-
 ## Declaration
 
 ```swift

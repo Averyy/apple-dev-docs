@@ -1,6 +1,6 @@
 # NSPrintOperation
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An object that controls operations that generate Encapsulated PostScript (EPS) code, Portable Document Format (PDF) code, or print jobs.
@@ -124,4 +124,4 @@ It is important to note that the majority of methods in [`NSPrintOperation`](nsp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsprintoperation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsprintoperation)*

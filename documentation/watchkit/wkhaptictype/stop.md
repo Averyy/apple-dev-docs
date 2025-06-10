@@ -1,6 +1,6 @@
 # WKHapticType.stop
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Indicates the end of an action.

@@ -1,6 +1,6 @@
 # read(from:ofType:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Sets the contents of the receiver by reading from a file of a given type located by a given URL.

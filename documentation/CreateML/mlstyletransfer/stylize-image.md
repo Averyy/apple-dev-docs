@@ -1,6 +1,6 @@
 # stylize(image:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Applies the style the model learned to an image.

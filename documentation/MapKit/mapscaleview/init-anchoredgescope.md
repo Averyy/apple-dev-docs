@@ -25,6 +25,11 @@ Creates a map scale view.
 - `anchorEdge`: The fixed edge the scale grows and shrinks from. Use this outside of   view modifier.
 - `scope`: A   value that identifies this namespace and that you can use to associate this control with a map instance.
 
+## See Also
+
+- [init(alignment: HorizontalAlignment, scope: Namespace.ID?)](mapscaleview/init(alignment:scope:).md)
+  Creates a scale view with the provided alignment and scope.
+
 
 ---
 

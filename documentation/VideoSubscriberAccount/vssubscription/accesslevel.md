@@ -1,6 +1,6 @@
 # accessLevel
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The subscriber’s level of access to your catalog of content.

@@ -17,6 +17,7 @@ Create, modify, and delete auto-renewable subscriptions for your app.
   Delete a specific auto-renewable subscription that you configured for an app.
 - [List All Localizations for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-subscriptionlocalizations.md)
   Get a list of the subscription localizations for a specific auto-renewable subscription.
+- [GET /v1/subscriptions/{id}/relationships/subscriptionLocalizations](get-v1-subscriptions-_id_-relationships-subscriptionlocalizations.md)
 - [List All Introductory Offers for a Subscription](get-v1-subscriptions-_id_-introductoryoffers.md)
   Get a list of introductory offers for a specific auto-renewable subscription.
 - [List All Introductory Offer Resource IDs for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-relationships-introductoryoffers.md)
@@ -25,12 +26,16 @@ Create, modify, and delete auto-renewable subscriptions for your app.
   Delete a specific introductory offer for an auto-renewable subscription.
 - [Read Promoted Purchase Information for a Subscription](get-v1-subscriptions-_id_-promotedpurchase.md)
   Get details about the promoted purchase of an auto-renewable subscription.
+- [GET /v1/subscriptions/{id}/relationships/promotedPurchase](get-v1-subscriptions-_id_-relationships-promotedpurchase.md)
 - [List All Offer Codes for a Subscription](get-v1-subscriptions-_id_-offercodes.md)
   Get a list of subscription offer codes for a specific auto-renewable subscription.
+- [GET /v1/subscriptions/{id}/relationships/offerCodes](get-v1-subscriptions-_id_-relationships-offercodes.md)
 - [List All Promotional Offer Resource IDs for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-promotionaloffers.md)
   Get a list of promotional offers for a specific auto-renewable subscription.
+- [GET /v1/subscriptions/{id}/relationships/promotionalOffers](get-v1-subscriptions-_id_-relationships-promotionaloffers.md)
 - [List All Price Points for a Subscription](get-v1-subscriptions-_id_-pricepoints.md)
   Get a list of price points for an auto-renewable subscription by territory.
+- [GET /v1/subscriptions/{id}/relationships/pricePoints](get-v1-subscriptions-_id_-relationships-pricepoints.md)
 - [List All Prices for a Subscription](get-v1-subscriptions-_id_-prices.md)
   Get a list of prices for an auto-renewable subscription, by territory.
 - [List All Subscription Prices IDs for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-relationships-prices.md)
@@ -39,8 +44,13 @@ Create, modify, and delete auto-renewable subscriptions for your app.
   Delete a scheduled subscription price change for an auto-renewable subscription.
 - [Read Review Screenshot Information for a Subscription](get-v1-subscriptions-_id_-appstorereviewscreenshot.md)
   Get information about review screenshot for a specific auto-renewable subscription.
+- [GET /v1/subscriptions/{id}/relationships/appStoreReviewScreenshot](get-v1-subscriptions-_id_-relationships-appstorereviewscreenshot.md)
 - [Read Information About the Availability of a Subscription](get-v1-subscriptions-_id_-subscriptionavailability.md)
   Get information about the territory availability for a subscription.
+- [GET /v1/subscriptions/{id}/relationships/subscriptionAvailability](get-v1-subscriptions-_id_-relationships-subscriptionavailability.md)
+- [List win-back offers](get-v1-subscriptions-_id_-winbackoffers.md)
+  List all win-back offers for a specific subscription.
+- [GET /v1/subscriptions/{id}/relationships/winBackOffers](get-v1-subscriptions-_id_-relationships-winbackoffers.md)
 ### Objects
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)
 - [object SubscriptionUpdateRequest](subscriptionupdaterequest.md)
@@ -50,7 +60,9 @@ Create, modify, and delete auto-renewable subscriptions for your app.
 - [object SubscriptionIntroductoryOffersResponse](subscriptionintroductoryoffersresponse.md)
 - [object SubscriptionIntroductoryOffer](subscriptionintroductoryoffer.md)
 - [object SubscriptionIntroductoryOffersLinkagesRequest](subscriptionintroductoryofferslinkagesrequest.md)
+  The data structure that represents a subscription introductory offers linkages request resource.
 - [object SubscriptionIntroductoryOffersLinkagesResponse](subscriptionintroductoryofferslinkagesresponse.md)
+  A response that contains a list of Ids of related resources.
 - [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)
 - [object SubscriptionOfferCodesResponse](subscriptionoffercodesresponse.md)
 - [object SubscriptionOfferCode](subscriptionoffercode.md)
@@ -60,10 +72,22 @@ Create, modify, and delete auto-renewable subscriptions for your app.
 - [object SubscriptionPricesResponse](subscriptionpricesresponse.md)
 - [object SubscriptionPrice](subscriptionprice.md)
 - [object SubscriptionPricesLinkagesRequest](subscriptionpriceslinkagesrequest.md)
+  The data structure that represents a subscription prices linkages request resource.
 - [object SubscriptionPricesLinkagesResponse](subscriptionpriceslinkagesresponse.md)
+  A response that contains a list of Ids of related resources.
 - [object SubscriptionLocalizationResponse](subscriptionlocalizationresponse.md)
 - [object SubscriptionLocalizationsResponse](subscriptionlocalizationsresponse.md)
 - [object SubscriptionLocalization](subscriptionlocalization.md)
+- [object SubscriptionWinBackOffersLinkagesResponse](subscriptionwinbackofferslinkagesresponse.md)
+- [object SubscriptionAppStoreReviewScreenshotLinkageResponse](subscriptionappstorereviewscreenshotlinkageresponse.md)
+- [object SubscriptionPricePointEqualizationsLinkagesResponse](subscriptionpricepointequalizationslinkagesresponse.md)
+- [object SubscriptionPricePointsLinkagesResponse](subscriptionpricepointslinkagesresponse.md)
+- [object SubscriptionPromotedPurchaseLinkageResponse](subscriptionpromotedpurchaselinkageresponse.md)
+- [object SubscriptionPromotionalOfferPricesLinkagesResponse](subscriptionpromotionalofferpriceslinkagesresponse.md)
+- [object SubscriptionPromotionalOffersLinkagesResponse](subscriptionpromotionalofferslinkagesresponse.md)
+- [object SubscriptionSubscriptionAvailabilityLinkageResponse](subscriptionsubscriptionavailabilitylinkageresponse.md)
+- [object SubscriptionSubscriptionLocalizationsLinkagesResponse](subscriptionsubscriptionlocalizationslinkagesresponse.md)
+- [object SubscriptionWinBackOffersLinkagesResponse](subscriptionwinbackofferslinkagesresponse.md)
 
 ## See Also
 

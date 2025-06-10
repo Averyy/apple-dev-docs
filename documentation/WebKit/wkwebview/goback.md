@@ -1,6 +1,6 @@
 # goBack()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Navigates to the back item in the back-forward list.

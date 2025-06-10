@@ -14,8 +14,6 @@ Apple GPUs interpret the storage size of color render targets differently in til
 
 > ❗ **Important**:  To check the tile memory size for each Apple GPU, see the [`Metal Feature Set Tables`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
 
- To check the tile memory size for each Apple GPU, see the [`Metal Feature Set Tables`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
-
 On non-Apple GPUs, you can use up to eight color render targets per render pass with any color-renderable pixel format. Because non-Apple GPUs don’t have tile memory, they don’t have a combined size limit for their color render targets.
 
 ## See Also

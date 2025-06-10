@@ -1,6 +1,6 @@
 # WKAccessibilityVoiceOverStatusChanged
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: var
 
 Tells the interface controller that the VoiceOver status has changed.

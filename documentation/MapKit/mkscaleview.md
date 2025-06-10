@@ -36,7 +36,7 @@ Use this class when you want to incorporate a standard scale view into your own 
 - [var legendAlignment: MKScaleView.Alignment](mkscaleview/legendalignment.md)
   The alignment of the distance information in the scale view.
 - [MKScaleView.Alignment](mkscaleview/alignment.md)
-  Constants indicating whether measurements begin at the leading or trailing edge of the view.
+  Constants that indicate how the framework should align measurements.
 
 ## Relationships
 
@@ -53,6 +53,7 @@ Use this class when you want to incorporate a standard scale view into your own 
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)

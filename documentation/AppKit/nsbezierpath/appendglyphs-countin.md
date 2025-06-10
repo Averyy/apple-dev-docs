@@ -18,7 +18,7 @@ func appendGlyphs(_ glyphs: UnsafeMutablePointer<NSGlyph>, count: Int, in font: 
 
 If the glyphs are not encoded in the font specified by the `fontObj` parameter—that is, the font does not have an entry for one of the specified glyphs—then no path is appended to the receiver.
 
-You must set the path’s current point (using the [`move(to:)`](nsbezierpath/move(to:).md) method or through the creation of a preceding line or curve segment) before you invoke this method. If the path is empty, this method raises an [`genericException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1412113-genericexception) exception.
+You must set the path’s current point (using the [`move(to:)`](nsbezierpath/move(to:).md) method or through the creation of a preceding line or curve segment) before you invoke this method. If the path is empty, this method raises an [`genericException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/genericException) exception.
 
 ## Parameters
 

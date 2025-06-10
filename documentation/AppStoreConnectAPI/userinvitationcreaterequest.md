@@ -28,6 +28,7 @@ object UserInvitationCreateRequest
   A response that contains a single User Invitations resource.
 - [object UserInvitationsResponse](userinvitationsresponse.md)
   A response that contains a list of User Invitations resources.
+- [object UserInvitationVisibleAppsLinkagesResponse](userinvitationvisibleappslinkagesresponse.md)
 
 
 ---

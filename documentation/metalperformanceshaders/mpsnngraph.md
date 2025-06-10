@@ -1,6 +1,6 @@
 # MPSNNGraph
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: cl
 
 An optimized representation of a graph of neural network image and filter nodes.

@@ -13,6 +13,7 @@ An optional additional label displayed near the team name. This could be a win-l
 ## Declaration
 
 ```swift
+@MainActor
 var teamStandings: String? { get }
 ```
 

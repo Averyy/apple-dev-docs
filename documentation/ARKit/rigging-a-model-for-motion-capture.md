@@ -1,6 +1,6 @@
 # Rigging a Model for Motion Capture
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Configure custom 3D models so ARKit’s human body-tracking feature can control them.
 
@@ -64,4 +64,4 @@ For more information on loading and using the model once it’s in your Xcode pr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/rigging-a-model-for-motion-capture)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/rigging-a-model-for-motion-capture)*

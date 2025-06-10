@@ -43,6 +43,7 @@ For simple transformations, the closure you provide to the `transformingAttribut
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

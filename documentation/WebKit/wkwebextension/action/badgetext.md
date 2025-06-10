@@ -1,6 +1,6 @@
 # badgeText
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The badge text for the action.

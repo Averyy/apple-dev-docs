@@ -1,6 +1,6 @@
 # Extending advanced direction finding and ranging
 
-**Framework**: Nearbyinteraction
+**Framework**: Nearby Interaction
 
 Extend your app’s direction finding capabilities with data from Ultra Wideband devices.
 
@@ -165,4 +165,4 @@ If both sides support EDM, they can run [`NISession`](nisession.md) with the con
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/NearbyInteraction/extending-advanced-direction-finding-and-ranging)*
+*[View on Apple Developer](https://developer.apple.com/documentation/nearbyinteraction/extending-advanced-direction-finding-and-ranging)*

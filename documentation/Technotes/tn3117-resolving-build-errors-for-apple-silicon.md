@@ -145,4 +145,4 @@ After temporarily changing `EXCLUDED_ARCHS`, select the appropriate simulator de
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3117-resolving-build-errors-for-apple-silicon)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3117-resolving-build-errors-for-apple-silicon)*

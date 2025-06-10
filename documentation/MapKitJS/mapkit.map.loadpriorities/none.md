@@ -14,6 +14,10 @@ Signifies no preferences over what to prioritize when loading the map.
 const null None;
 ```
 
+## Mentions
+
+- [MapKit JS 5](mapkit-js-5.md)
+
 #### Discussion
 
 In this case, MapKit JS uses its default prioritization, [`PointsOfInterest`](mapkit.map.loadpriorities/pointsofinterest.md).

@@ -45,6 +45,7 @@ Instances of `UnfoldSequence` are created with the functions `sequence(first:nex
 ### Conforms To
 - [IteratorProtocol](iteratorprotocol.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

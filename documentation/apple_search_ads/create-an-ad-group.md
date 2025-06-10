@@ -1,6 +1,6 @@
 # Create an Ad Group
 
-**Framework**: Apple_Search_Ads  
+**Framework**: Apple Search Ads  
 **Kind**: httpRequest
 
 Creates an ad group as part of a campaign.

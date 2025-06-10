@@ -16,8 +16,6 @@ SwiftData requires two separate capabilities to perform automatic iCloud sync: t
 
 > ❗ **Important**: The iCloud capability requires an active Apple Developer account with admin permissions.
 
-The iCloud capability requires an active Apple Developer account with admin permissions.
-
 To add the iCloud and Background Modes capabilities:
 
 1. Follow the steps in [`Configuring iCloud services`](https://developer.apple.com/documentation/Xcode/configuring-icloud-services) to add the iCloud capability to your Xcode project, enable CloudKit, and create or choose an existing  — an object that CloudKit uses to isolate your app’s databases on the iCloud servers and manage their access and operations.
@@ -96,8 +94,6 @@ By default, SwiftData inspects your app’s `Entitlements.plist` file to determi
 
 > ❗ **Important**: For apps already using a production CloudKit schema, specify only containers that SwiftData or Core Data have managed previously. All other CloudKit containers are incompatible.
 
-For apps already using a production CloudKit schema, specify only containers that SwiftData or Core Data have managed previously. All other CloudKit containers are incompatible.
-
 To opt out of automatic container discovery in SwiftData, create an instance of [`ModelConfiguration`](modelconfiguration.md) and use the initializer’s `cloudKitDatabase` parameter to specify your preferred identifier:
 
 ```swift
@@ -126,8 +122,6 @@ Specifying `none` overrides any automatically discovered identifiers and disable
   Describe your model classes to SwiftData using the framework’s macros, and store instances of those models so they exist beyond the app’s runtime.
 - [Building a document-based app using SwiftData](../SwiftUI/Building-a-document-based-app-using-SwiftData.md)
   Code along with the WWDC presenter to transform an app with SwiftData.
-- [Adopting SwiftData for a Core Data app](../CoreData/adopting-swiftdata-for-a-core-data-app.md)
-  Persist data in your app intuitively with the Swift native persistence framework.
 
 
 ---

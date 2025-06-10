@@ -1,6 +1,6 @@
 # Distributing your App Clip
 
-**Framework**: Appclip
+**Framework**: App Clips
 
 Archive the full app for your App Clip, upload it to App Store Connect, and distribute it to testers or publish it on the App Store.
 
@@ -25,4 +25,4 @@ For additional information, see [`Testing the launch experience of your App Clip
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/distributing-your-app-clip)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appclip/distributing-your-app-clip)*

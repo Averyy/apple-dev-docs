@@ -1,6 +1,6 @@
 # type(ofFile:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Returns the uniform type identifier of the specified file, if it can be determined.

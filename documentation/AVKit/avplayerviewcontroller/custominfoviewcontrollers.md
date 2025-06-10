@@ -18,8 +18,8 @@ var customInfoViewControllers: [UIViewController] { get set }
 
 ## Mentions
 
-- [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
 - [Customizing the tvOS Playback Experience](customizing-the-tvos-playback-experience.md)
+- [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)
 
 #### Discussion
 
@@ -28,8 +28,6 @@ The system uses a view controller’s [`title`](https://developer.apple.com/docu
 Similarly, set a [`preferredContentSize`](https://developer.apple.com/documentation/UIKit/UIViewController/preferredContentSize) value on the custom view controllers, or define appropriate auto layout constraints on their views, so the system sizes them correctly in the player user interface.
 
 > ❗ **Important**:  The view with the greatest height determines the height of all of the content views. Set the height of your content views consistently to simplify layout, or verify that your content renders as intended if the system resizes it.
-
- The view with the greatest height determines the height of all of the content views. Set the height of your content views consistently to simplify layout, or verify that your content renders as intended if the system resizes it.
 
 ## See Also
 

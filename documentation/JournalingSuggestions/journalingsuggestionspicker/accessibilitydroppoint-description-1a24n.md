@@ -1,6 +1,6 @@
 # accessibilityDropPoint(_:description:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 The point an assistive technology should use to end a drag interaction.

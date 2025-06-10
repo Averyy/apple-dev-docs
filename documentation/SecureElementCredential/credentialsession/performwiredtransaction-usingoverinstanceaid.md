@@ -34,8 +34,6 @@ The credential session can be in any state when calling this method. If the call
 
 > ❗ **Important**: Calling this method may generate a billable event to the credential provider.
 
-Calling this method may generate a billable event to the credential provider.
-
 ## Parameters
 
 - `credential`: The credential to activate and transition into card emulation state with.

@@ -76,7 +76,7 @@ You can sync and restore non-consumables and auto-renewable subscriptions across
   Select the type of receipt validation, on the device or on your server, that works for your app.
 - [Validating receipts with the App Store](validating-receipts-with-the-app-store.md)
   Verify transactions with the App Store on a secure server.
-- [var appStoreReceiptURL: URL?](../foundation/bundle/1407276-appstorereceipturl.md)
+- [var appStoreReceiptURL: URL? { get }](../Foundation/Bundle/appStoreReceiptURL.md)
   The file URL for the bundle’s App Store receipt.
 - [class SKReceiptRefreshRequest](skreceiptrefreshrequest.md)
   A request to the App Store to get the app receipt, which represents the customer’s transactions with your app.

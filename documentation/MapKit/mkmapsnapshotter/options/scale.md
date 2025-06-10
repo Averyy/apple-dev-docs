@@ -11,6 +11,7 @@ The scale factor to use when creating the image.
 - Mac Catalyst 13.1+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 2.0+
 
 ## Declaration
 

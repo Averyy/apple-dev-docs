@@ -26,7 +26,7 @@ For example, this code sample finds the indices of all the negative numbers in t
 
 ```swift
 var numbers = [5, 7, -3, -8, 11, 2, -1, 6]
-let negativeIndices = numbers.subranges(where: { $0 < 0 })
+let negativeIndices = numbers.indices(where: { $0 < 0 })
 
 numbers.removeSubranges(negativeIndices)
 // numbers == [5, 7, 11, 2, 6]

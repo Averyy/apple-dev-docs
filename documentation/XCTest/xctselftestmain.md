@@ -1,6 +1,6 @@
 # XCTSelfTestMain()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: func
 
 **Availability**:

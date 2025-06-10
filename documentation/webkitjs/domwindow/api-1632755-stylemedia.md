@@ -1,6 +1,6 @@
 # styleMedia
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The style media object you use to make CSS media queries.

@@ -8,16 +8,25 @@ A protocol you use for app intents which begin their work with the app in the ba
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
-- Mac Catalyst 16.4+
+- Mac Catalyst ?+
 - macOS 13.3+
 - tvOS 16.4+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.4+
 
 ## Declaration
 
 ```swift
 protocol ForegroundContinuableIntent : AppIntent
+```
+
+#### Overview
+
+This protocol is deprecated, please include `.foreground(.dynamic)` in the `supportedModes` of your app intent instead. For backward compatibility, you can provide conformance to this protocol in an extension, for example:
+
+```swift
+@available(*, deprecated)
+extension OrderSoupIntent: ForegroundContinuableIntent {}
 ```
 
 ## Topics
@@ -34,6 +43,7 @@ protocol ForegroundContinuableIntent : AppIntent
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

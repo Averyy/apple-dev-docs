@@ -117,4 +117,4 @@ _updateData[i] = [[NSData alloc] initWithBytesNoCopy:updateAddress
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/selecting-device-objects-for-compute-processing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/selecting-device-objects-for-compute-processing)*

@@ -1,6 +1,6 @@
 # primary
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The behavior marking this window as primary for both Stage Manager and full screen.
@@ -34,4 +34,4 @@ Use this collection behavior for document or viewer windows.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nswindow/collectionbehavior-swift.struct/primary)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nswindow/collectionbehavior-swift.struct/primary)*

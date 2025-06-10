@@ -1,6 +1,6 @@
 # WebKitAnimationEvent
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 `WebKitAnimationEvent` objects encapsulate information about running animations.

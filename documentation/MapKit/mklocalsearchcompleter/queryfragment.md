@@ -12,6 +12,7 @@ The search string that you want completions for.
 - macOS 10.11.4+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 

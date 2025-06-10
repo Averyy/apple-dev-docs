@@ -1,6 +1,6 @@
 # VSUserAccount.OriginatingDeviceCategory.mobile
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 A constant that indicates the original registering device is mobile.

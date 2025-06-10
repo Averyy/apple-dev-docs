@@ -1,6 +1,6 @@
 # Showing a Pass on the Lock Screen
 
-**Framework**: Walletpasses
+**Framework**: Wallet Passes
 
 Add information to your pass so the system can display it on the Lock Screen at a relevant time and place.
 
@@ -73,4 +73,4 @@ The following code shows a pass with one beacon:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WalletPasses/showing-a-pass-on-the-lock-screen)*
+*[View on Apple Developer](https://developer.apple.com/documentation/walletpasses/showing-a-pass-on-the-lock-screen)*

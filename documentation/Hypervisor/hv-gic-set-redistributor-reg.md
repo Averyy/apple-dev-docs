@@ -24,8 +24,6 @@ GIC redistributor register enumeration values are equal to the device register o
 
 > ❗ **Important**:  Call this method on the owning thread.
 
- Call this method on the owning thread.
-
 ## Parameters
 
 - `vcpu`: The redistributor block for the vCPU.

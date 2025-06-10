@@ -1,6 +1,6 @@
 # kVTProfileLevel_MP4V_AdvancedSimple_L1
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

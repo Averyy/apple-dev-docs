@@ -46,6 +46,7 @@ class MTLIntersectionFunctionTableDescriptor
   A description of an intersection function that performs an intersection test.
 - [struct MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature.md)
   Constants for specifying different types of custom intersection functions.
+- [struct MTLIntersectionFunctionBufferArguments](mtlintersectionfunctionbufferarguments.md)
 
 
 ---

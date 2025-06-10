@@ -1,6 +1,6 @@
 # Media Ready States
 
-**Framework**: Webkitjs
+**Framework**: WebKit JS
 
 Possible values for the [`readyState`](htmlmediaelement/1632439-readystate.md) property.
 

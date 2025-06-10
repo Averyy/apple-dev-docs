@@ -10,7 +10,7 @@ Explicitly set whether this accessibility element is a direct touch area. Direct
 - iPadOS 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

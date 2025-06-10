@@ -1,9 +1,9 @@
-# sensoryFeedback(trigger:_:)
+# sensoryFeedback(_:trigger:)
 
 **Framework**: Assignables  
 **Kind**: method
 
-Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
+Plays the specified `feedback` when the provided `trigger` value changes.
 
 **Availability**:
 - iOS 17.0+
@@ -11,49 +11,44 @@ Plays feedback when returned from the `feedback` closure after the provided `tri
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS 26.0+ (Beta)
 - watchOS 10.0+
 
 ## Declaration
 
 ```swift
 nonisolated
-func sensoryFeedback<T>(trigger: T, _ feedback: @escaping (T, T) -> SensoryFeedback?) -> some View where T : Equatable
+func sensoryFeedback<T>(_ feedback: SensoryFeedback, trigger: T) -> some View where T : Equatable
 ```
 
 #### Discussion
 
-For example, you could play different feedback for different state transitions:
+For example, you could play feedback when a state value changes:
 
 ```None
 struct MyView: View {
-    @State private var phase = Phase.inactive
+    @State private var showAccessory = false
 
     var body: some View {
-        ContentView(phase: $phase)
-            .sensoryFeedback(trigger: phase) { old, new in
-                switch (old, new) {
-                    case (.inactive, _): return .success
-                    case (_, .expanded): return .impact
-                    default: return nil
-                }
+        ContentView()
+            .sensoryFeedback(.selection, trigger: showAccessory)
+            .onLongPressGesture {
+                showAccessory.toggle()
             }
-    }
 
-    enum Phase {
-        case inactive
-        case preparing
-        case active
-        case expanded
+        if showAccessory {
+            AccessoryView()
+        }
     }
 }
 ```
 
 ## Parameters
 
+- `feedback`: Which type of feedback to play.
 - `trigger`: A value to monitor for changes to determine when to play.
-- `feedback`: A closure to determine whether to play the feedback and   what type of feedback to play when   changes.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/assignables/assignedworkdocumentview/sensoryfeedback(trigger:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/assignables/assignedworkdocumentview/sensoryfeedback(_:trigger:))*

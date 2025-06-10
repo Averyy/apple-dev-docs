@@ -1,6 +1,6 @@
 # UNPushNotificationTrigger
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 A trigger condition that indicates Apple Push Notification Service (APNs) has sent the notification.

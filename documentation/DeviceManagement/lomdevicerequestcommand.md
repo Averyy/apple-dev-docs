@@ -7,8 +7,6 @@ The command to send requests to a device using lights-out management (LOM).
 
 **Availability**:
 - macOS 11.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,14 +16,14 @@ object LOMDeviceRequestCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object LOMDeviceRequestCommand.Command](lomdevicerequestcommand/command-data.dictionary.md)
-  The request dictionary to send requests to a device using lights-out management (LOM).
+  The command to send requests to a device using lights-out management (LOM).
 
 ## See Also
 
 - [object LOMDeviceRequestResponse](lomdevicerequestresponse.md)
-  A response from the device after it processes requests it receives through lights-out management (LOM).
+  A response from the device after it processes the command to send requests to a device using lights-out management (LOM).
 
 
 ---

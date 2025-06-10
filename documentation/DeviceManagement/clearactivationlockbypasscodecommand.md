@@ -10,8 +10,6 @@ The command to clear the Activation Lock bypass code on a device.
 - iPadOS 7.1+
 - macOS 10.15+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,14 +23,14 @@ object ClearActivationLockBypassCodeCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object ClearActivationLockBypassCodeCommand.Command](clearactivationlockbypasscodecommand/command-data.dictionary.md)
-  The request dictionary to clear the Activation Lock bypass code on a device.
+  The command to clear the Activation Lock bypass code on a device.
 
 ## See Also
 
 - [object ClearActivationLockBypassCodeResponse](clearactivationlockbypasscoderesponse.md)
-  A response from the device after it processes the command to clear the Activation Lock bypass code.
+  A response from the device after it processes the command to clear the Activation Lock bypass code on a device.
 
 
 ---

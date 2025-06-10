@@ -46,6 +46,7 @@ See the [`NSTableView`](nstableview.md) and [`NSTableHeaderCell`](nstableheaderc
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -8,7 +8,7 @@ A task object for monitoring the speech recognition progress.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 10.0+
 - macOS 10.15+
 - visionOS 1.0+
 
@@ -26,17 +26,17 @@ You don’t create speech recognition task objects directly. Instead, you receiv
 
 ## Topics
 
-### Canceling a Speech Recognition Task
+### Canceling a speech recognition task
 - [func cancel()](sfspeechrecognitiontask/cancel.md)
   Cancels the current speech recognition task.
 - [var isCancelled: Bool](sfspeechrecognitiontask/iscancelled.md)
   A Boolean value that indicates whether the speech recognition task was canceled.
-### Finishing a Speech Recognition Task
+### Finishing a speech recognition task
 - [func finish()](sfspeechrecognitiontask/finish.md)
   Stops accepting new audio and finishes processing on the audio input that has already been accepted.
 - [var isFinishing: Bool](sfspeechrecognitiontask/isfinishing.md)
   A Boolean value that indicates whether audio input has stopped.
-### Monitoring Recognition Progress
+### Monitoring recognition progress
 - [var state: SFSpeechRecognitionTaskState](sfspeechrecognitiontask/state.md)
   The current state of the speech recognition task.
 - [enum SFSpeechRecognitionTaskState](sfspeechrecognitiontaskstate.md)
@@ -55,6 +55,13 @@ You don’t create speech recognition task objects directly. Instead, you receiv
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+## See Also
+
+- [protocol SFSpeechRecognitionTaskDelegate](sfspeechrecognitiontaskdelegate.md)
+  A protocol with methods for managing multi-utterance speech recognition requests.
+- [enum SFSpeechRecognitionTaskState](sfspeechrecognitiontaskstate.md)
+  The state of the task associated with the recognition request.
 
 
 ---

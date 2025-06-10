@@ -6,7 +6,6 @@
 An anchor location at the tip of the thumb.
 
 **Availability**:
-- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 ## Declaration

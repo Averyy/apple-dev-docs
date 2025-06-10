@@ -1,35 +1,26 @@
-# init()
+# init(_:)
 
 **Framework**: Spatial  
 **Kind**: init
 
-Creates a ray structure.
+Returns a double-precision ray from a single-precision ray.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
-- watchOS 9.0+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
-init()
+init(_ ray: Ray3DFloat)
 ```
-
-## See Also
-
-- [init(origin: Point3D, direction: Vector3D)](ray3d/init(origin:direction:)-5sxkl.md)
-  Creates a ray with the specified origin and the specified direction from Spatial primitives.
-- [init(origin: simd_float3, direction: simd_float3)](ray3d/init(origin:direction:)-3gfcj.md)
-  Creates a ray with the specified origin and the specified direction from single-precision vectors.
-- [init(origin: simd_double3, direction: simd_double3)](ray3d/init(origin:direction:)-47w1c.md)
-  Creates a ray with the specified origin and the specified direction from double-precision vectors.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spatial/ray3d/init())*
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/ray3d/init(_:))*

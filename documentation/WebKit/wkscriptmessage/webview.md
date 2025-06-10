@@ -1,6 +1,6 @@
 # webView
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The web view that sent the message.

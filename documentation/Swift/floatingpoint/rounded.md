@@ -49,7 +49,7 @@ print(x.rounded(.down))
 // Prints "6.0"
 ```
 
-For more information about the available rounding rules, see the `FloatingPointRoundingRule` enumeration. To round a value using the default “schoolbook rounding”, you can use the shorter `rounded()` method instead.
+For more information about the available rounding rules, see the `FloatingPointRoundingRule` enumeration. To round a value using the default “schoolbook rounding” of `.toNearestOrAwayFromZero`, you can use the shorter `rounded()` method instead.
 
 ```swift
 print(x.rounded())

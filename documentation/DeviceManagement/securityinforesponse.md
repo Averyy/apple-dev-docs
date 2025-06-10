@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to get security-related information.
+A response from the device after it processes the command to get security-related information about a device.
 
 **Availability**:
 - iOS 4.0+
@@ -12,8 +12,6 @@ A response from the device after it processes the command to get security-relate
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,7 +21,7 @@ object SecurityInfoResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object SecurityInfoResponse.ErrorChainItem](securityinforesponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 - [object SecurityInfoResponse.SecurityInfo](securityinforesponse/securityinfo-data.dictionary.md)

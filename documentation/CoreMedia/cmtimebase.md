@@ -95,6 +95,10 @@ class CMTimebase
 - [var masterClock: CMClock?](cmtimebase/masterclock.md)
 - [var masterTimebase: CMTimebase?](cmtimebase/mastertimebase.md)
 - [var ultimateMasterClock: CMClock](cmtimebase/ultimatemasterclock.md)
+### Initializers
+- [init(referencing: CMTimebase)](cmtimebase/init(referencing:).md)
+### Type Aliases
+- [CMTimebase.T](cmtimebase/t.md)
 ### Default Implementations
 - [CMSyncProtocol Implementations](cmtimebase/cmsyncprotocol-implementations.md)
 
@@ -106,6 +110,7 @@ class CMTimebase
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

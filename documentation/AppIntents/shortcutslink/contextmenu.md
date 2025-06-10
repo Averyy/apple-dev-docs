@@ -8,7 +8,7 @@ Adds a context menu to the view.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
+- Mac Catalyst ?+
 - macOS 10.15+
 - visionOS 1.0+
 - watchOS 6.0+

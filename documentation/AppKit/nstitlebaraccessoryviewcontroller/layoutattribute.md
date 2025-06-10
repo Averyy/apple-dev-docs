@@ -1,6 +1,6 @@
 # layoutAttribute
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The location of the accessory view, in relation to the window’s title bar.
@@ -29,4 +29,4 @@ The default value of this property is [`NSLayoutConstraint.Attribute.bottom`](ht
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nstitlebaraccessoryviewcontroller/layoutattribute)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nstitlebaraccessoryviewcontroller/layoutattribute)*

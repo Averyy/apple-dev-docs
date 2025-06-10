@@ -1,6 +1,6 @@
 # webExtensionController(_:sendMessage:toApplicationWithIdentifier:for:replyHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when an extension context wants to send a one-time message to an application.

@@ -1,6 +1,6 @@
 # setTintColor(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the volume control’s tint color.

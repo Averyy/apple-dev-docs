@@ -1,6 +1,6 @@
 # count
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: property
 
 The number of elements in the collection.

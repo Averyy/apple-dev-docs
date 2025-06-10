@@ -78,6 +78,9 @@ struct ObjectType
 ### Initializers
 - [init(rawValue: String)](avmetadataobject/objecttype/init(rawvalue:).md)
   Creates a metadata object type with a string value.
+### Type Properties
+- [static let catHead: AVMetadataObject.ObjectType](avmetadataobject/objecttype/cathead.md)
+- [static let dogHead: AVMetadataObject.ObjectType](avmetadataobject/objecttype/doghead.md)
 
 ## Relationships
 
@@ -86,6 +89,7 @@ struct ObjectType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Create a 3D model of an interior room by guiding the user through an AR experience
 
-**Framework**: Roomplan
+**Framework**: RoomPlan
 
 Highlight physical structures and display text that guides a user to scan the shape of their physical environment using a framework-provided view.
 
@@ -22,4 +22,4 @@ Set the run destination to a device running iOS 16 or later with a LiDAR Scanner
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RoomPlan/create-a-3d-model-of-an-interior-room-by-guiding-the-user-through-an-ar-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/roomplan/create-a-3d-model-of-an-interior-room-by-guiding-the-user-through-an-ar-experience)*

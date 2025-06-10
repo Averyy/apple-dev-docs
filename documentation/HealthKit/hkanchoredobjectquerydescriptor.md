@@ -67,8 +67,6 @@ repeat {
 
 > 💡 **Tip**:  Because [`HKQueryAnchor`](hkqueryanchor.md) instances adopt the [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) protocol, you can save the most recent anchor and use it the next time your app launches.
 
- Because [`HKQueryAnchor`](hkqueryanchor.md) instances adopt the [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) protocol, you can save the most recent anchor and use it the next time your app launches.
-
 ##### Monitor for Changes
 
 To monitor the HealthKit store for changes, start by creating an [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md) instance that matches the data you want to monitor. Pass in the anchor from the last time you read data from the HealthKit store.
@@ -126,6 +124,8 @@ updateTask = Task {
 - [Copyable](../Swift/Copyable.md)
 - [HKAsyncQuery](hkasyncquery.md)
 - [HKAsyncSequenceQuery](hkasyncsequencequery.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

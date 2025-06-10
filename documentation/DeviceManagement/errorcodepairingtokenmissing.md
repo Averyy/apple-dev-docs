@@ -7,8 +7,6 @@ An error response that indicates a missing pairing token.
 
 **Availability**:
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,9 +22,16 @@ The system returns this response when an Apple Watch attempts to enroll in MDM, 
 
 ## Topics
 
-### Details
+### Objects
 - [object ErrorCodePairingTokenMissing.Details](errorcodepairingtokenmissing/details-data.dictionary.md)
   A dictionary that contains additional data about the token-missing error code.
+
+## See Also
+
+- [object ErrorCodeSoftwareUpdateRequired](errorcodesoftwareupdaterequired.md)
+  An error response that indicates the system requires a software update.
+- [object ErrorUnrecognizedDevice](errorunrecognizeddevice.md)
+- [object ErrorWellKnownFailed](errorwellknownfailed.md)
 
 
 ---

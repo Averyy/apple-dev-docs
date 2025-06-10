@@ -1,6 +1,6 @@
 # monitorNotifications(reportIDsToMonitor:elementsToMonitor:)
 
-**Framework**: Corehid  
+**Framework**: Core HID  
 **Kind**: method
 
 Creates an asynchronous that receives notifications about the associated device.

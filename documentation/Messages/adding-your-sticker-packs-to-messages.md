@@ -44,4 +44,4 @@ You can either restrict your sticker pack to just Messages, or make it available
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Messages/adding-your-sticker-packs-to-messages)*
+*[View on Apple Developer](https://developer.apple.com/documentation/messages/adding-your-sticker-packs-to-messages)*

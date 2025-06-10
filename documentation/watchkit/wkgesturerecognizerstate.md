@@ -1,6 +1,6 @@
 # WKGestureRecognizerState
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Constants describing the possible states of a gesture recognizer.
@@ -35,6 +35,7 @@ enum WKGestureRecognizerState
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

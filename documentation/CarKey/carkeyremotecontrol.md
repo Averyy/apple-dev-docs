@@ -29,6 +29,11 @@ Start a new session only when your app is running in the foreground. If your app
 ### Creating the Session Object
 - [class func start(delegate: any CarKeyRemoteControlSessionDelegate, subscriptionRange: ClosedRange<Int>?, with: DispatchQueue?) async throws -> CarKeyRemoteControlSession](carkeyremotecontrol/start(delegate:subscriptionrange:with:).md)
   Creates and returns a new session object to access the provisioned vehicles.
+### Type Methods
+- [class func registerForLaunchOnCarKeyEvent() throws](carkeyremotecontrol/registerforlaunchoncarkeyevent.md)
+  Register your app to be relaunched in the background on CarKey events. Under certain conditions the system will not relaunch the app regardless of CarKey events.
+- [class func unregisterForLaunchOnCarKeyEvent() throws](carkeyremotecontrol/unregisterforlaunchoncarkeyevent.md)
+  Unregister your app so it’s no longer relaunched in the background on CarKey events.
 
 ## See Also
 

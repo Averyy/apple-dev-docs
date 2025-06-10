@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus.unknown
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 **Availability**:

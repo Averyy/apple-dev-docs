@@ -22,7 +22,7 @@ A copy of the overlay’s array returns on read, so changing the array’s eleme
 
 The following example creates a rectangle overlay with two triangles cut out of it:
 
-```swift
+```javascript
 // Creates an array of coordinates.
 function toCoordinates(array) {
     return array.map(function(element) {
@@ -30,20 +30,20 @@ function toCoordinates(array) {
     });
 }
 
-var rectangle = [ [0, 0], [20, 0], [20, 10], [0, 10] ],
+const rectangle = [ [0, 0], [20, 0], [20, 10], [0, 10] ],
     triangle1 = [ [4, 4], [8, 4], [6, 6] ],
     triangle2 = [ [14, 4], [18, 4], [16, 6] ];
 
-var points = [
+const points = [
     toCoordinates(rectangle),
     toCoordinates(triangle1),
     toCoordinates(triangle2)
 ];
-var style = new mapkit.Style({
+const style = new mapkit.Style({
     strokeColor: "#777",
     fillRule: "evenodd"
 });
-var overlay = new mapkit.PolygonOverlay(points, { style: style });
+const overlay = new mapkit.PolygonOverlay(points, { style: style });
 ```
 
 

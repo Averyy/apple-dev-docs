@@ -6,7 +6,7 @@
 These constants are used by the [`autoresizingMask`](calayer/autoresizingmask.md) property.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst 13.1+
 - macOS ?+
 
 ## Declaration
@@ -41,6 +41,7 @@ struct CAAutoresizingMask
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also
@@ -55,6 +56,7 @@ struct CAAutoresizingMask
   These constants specify the scaling filters used by [`magnificationFilter`](calayer/magnificationfilter.md) and [`minificationFilter`](calayer/minificationfilter.md).
 - [struct CATransform3D](catransform3d.md)
   The standard transform matrix used throughout Core Animation.
+- [CALayer.DynamicRange](calayer/dynamicrange.md)
 
 
 ---

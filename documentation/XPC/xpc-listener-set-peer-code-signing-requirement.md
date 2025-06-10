@@ -1,6 +1,6 @@
 # xpc_listener_set_peer_code_signing_requirement(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 **Availability**:

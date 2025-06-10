@@ -1,6 +1,6 @@
 # Test Execution and Observation
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Observe, introspect, and customize the test execution flow.
 

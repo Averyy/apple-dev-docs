@@ -1,6 +1,6 @@
 # VSError.Code.userCancelled
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 The user canceled the request.

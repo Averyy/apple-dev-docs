@@ -36,7 +36,12 @@ To observe these changes, use the asynchronous sequences the activity object off
 
 ### Starting a Live Activity
 - [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:).md)
+  Requests and starts a standard Live Activity.
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:).md)
   Requests and starts a Live Activity.
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle, alertConfiguration: AlertConfiguration, start: Date) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:alertconfiguration:start:).md)
+  Requests and schedules a Live Activity for a specific date.
+- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle, alertConfiguration: AlertConfiguration, startDate: Date) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:alertconfiguration:startdate:).md)
 - [let attributes: Attributes](activity/attributes.md)
   A set of attributes that describe a Live Activity and its content.
 - [protocol ActivityAttributes](activityattributes.md)
@@ -52,7 +57,6 @@ To observe these changes, use the asynchronous sequences the activity object off
   The structure that offers constants you use to configure a Live Activity to receive updates through ActivityKit push notifications.
 - [enum ActivityAuthorizationError](activityauthorizationerror.md)
   An error that indicates why the request to start a Live Activity failed.
-- [static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType?, style: ActivityStyle) throws -> Activity<Attributes>](activity/request(attributes:content:pushtype:style:).md)
 ### Updating a Live Activity
 - [func update(ActivityContent<Activity<Attributes>.ContentState>) async](activity/update(_:).md)
   Updates the dynamic content of the Live Activity.
@@ -60,8 +64,6 @@ To observe these changes, use the asynchronous sequences the activity object off
   Updates the dynamic content of a Live Activity and alerts a person about the Live Activity update.
 - [struct AlertConfiguration](alertconfiguration.md)
   A structure you use to configure an alert that appears when you update your Live Activity.
-- [func update(using: Activity<Attributes>.ContentState) async](activity/update(using:).md)
-  Updates the dynamic content of the Live Activity.
 - [func update(ActivityContent<Activity<Attributes>.ContentState>, alertConfiguration: AlertConfiguration?, timestamp: Date) async](activity/update(_:alertconfiguration:timestamp:).md)
   Updates the dynamic content of a Live Activity and alerts a person about the Live Activity update.
 ### Ending a Live Activity
@@ -111,19 +113,9 @@ To observe these changes, use the asynchronous sequences the activity object off
   A unique identifier for a Live Activity.
 - [let id: String](activity/id-swift.property.md)
   A unique identifier for a Live Activity.
-### Deprecated symbols
-- [static func request(attributes: Attributes, contentState: Activity<Attributes>.ContentState, pushType: PushType?) throws -> Activity<Attributes>](activity/request(attributes:contentstate:pushtype:).md)
-  Requests and starts a Live Activity.
-- [var contentState: Activity<Attributes>.ContentState](activity/contentstate-swift.property.md)
-  The dynamic content of a Live Activity.
-- [func update(using: Activity<Attributes>.ContentState, alertConfiguration: AlertConfiguration?) async](activity/update(using:alertconfiguration:).md)
-  Updates the dynamic content of a Live Activity and alerts a person about the Live Activity update.
-- [func end(using: Activity<Attributes>.ContentState?, dismissalPolicy: ActivityUIDismissalPolicy) async](activity/end(using:dismissalpolicy:).md)
-  Ends an active Live Activity.
-- [var contentStateUpdates: Activity<Attributes>.ContentStateUpdates](activity/contentstateupdates-swift.property.md)
-  An asynchronous sequence you use to observe changes to the dynamic content of a Live Activity.
-- [Activity.ContentStateUpdates](activity/contentstateupdates-swift.struct.md)
-  A structure that offers functionality to observe changes to the dynamic content of a Live Activity.
+### Deprecated
+- [Deprecated symbols](deprecated-symbols.md)
+  Review unsupported symbols and their replacements.
 ### Type Aliases
 - [typealias ID](activity/id-swift.typealias.md)
   A type representing the stable identity of the entity associated with an instance.
@@ -136,11 +128,9 @@ To observe these changes, use the asynchronous sequences the activity object off
 ## See Also
 
 - [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
-  Display your app’s data in the Dynamic Island and on the Lock Screen and offer quick interactions.
+  Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
 - [Starting and updating Live Activities with ActivityKit push notifications](starting-and-updating-live-activities-with-activitykit-push-notifications.md)
   Use ActivityKit to receive push tokens and to remotely start, update, and end your Live Activity with ActivityKit notifications.
-- [Adding accessible descriptions to widgets and Live Activities](adding-accessible-descriptions-to-widgets-and-live-activities.md)
-  Describe the interface elements of your widgets and Live Activities to help people understand what they represent.
 - [Emoji Rangers: Supporting Live Activities, interactivity, and animations](../WidgetKit/emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
 - [NSSupportsLiveActivities](../BundleResources/Information-Property-List/NSSupportsLiveActivities.md)

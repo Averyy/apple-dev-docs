@@ -1,6 +1,6 @@
 # MEDIA_ERR_ABORTED
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

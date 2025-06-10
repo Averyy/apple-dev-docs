@@ -18,7 +18,7 @@ var lockedBy: PlayerIdentifier? { get }
 ## See Also
 
 - [var seatControl: ControllingSeats](equipmentstate/seatcontrol.md)
-  The seats that can manipulate or interact with the equipment.
+  The seats that can manipulate or interact with this equipment.
 
 
 ---

@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to set the password for Recovery Lock.
+The command to set or clear the Recovery Lock password.
 
 **Availability**:
 - macOS 11.5+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,14 +16,14 @@ object SetRecoveryLockCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object SetRecoveryLockCommand.Command](setrecoverylockcommand/command-data.dictionary.md)
-  The request dictionary to set the Recovery Lock password.
+  The command to set or clear the Recovery Lock password.
 
 ## See Also
 
 - [object SetRecoveryLockResponse](setrecoverylockresponse.md)
-  A response from the device after it sets the password for Recovery Lock.
+  A response from the device after it processes the command to set or clear the Recovery Lock password.
 
 
 ---

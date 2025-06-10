@@ -33,8 +33,6 @@ To record audio in iOS or tvOS, configure your audio session to use the [`record
 
 > ❗ **Important**:  For more advanced recording capabilities, like applying signal processing to recorded audio, use [`AVAudioEngine`](avaudioengine.md) instead.
 
- For more advanced recording capabilities, like applying signal processing to recorded audio, use [`AVAudioEngine`](avaudioengine.md) instead.
-
 ## Topics
 
 ### Creating an audio recorder
@@ -103,6 +101,7 @@ To record audio in iOS or tvOS, configure your audio session to use the [`record
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

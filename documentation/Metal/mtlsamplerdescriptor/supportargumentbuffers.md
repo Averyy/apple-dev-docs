@@ -31,8 +31,6 @@ Your app can encode samplers into an argument buffer if you create them with an 
 
 > 💡 **Tip**: Check [`maxArgumentBufferSamplerCount`](mtldevice/maxargumentbuffersamplercount.md) at runtime to query the number of samplers your app can encode into an argument buffer.
 
-Check [`maxArgumentBufferSamplerCount`](mtldevice/maxargumentbuffersamplercount.md) at runtime to query the number of samplers your app can encode into an argument buffer.
-
 Each unique configuration of an [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance’s properties creates a unique [`MTLSamplerState`](mtlsamplerstate.md) instance. For example, you can create unique samplers with the same [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance by changing one or more values of its properties, such as [`minFilter`](mtlsamplerdescriptor/minfilter.md) or [`magFilter`](mtlsamplerdescriptor/magfilter.md) before creating another instance.
 
 Conversely, creating secondary sampler instances with the same descriptor property values doesn’t create any additional, unique samplers. Instead, they refer to the same underlying sampler, even if you create it with a difference descriptor instance because the configuration is the same.

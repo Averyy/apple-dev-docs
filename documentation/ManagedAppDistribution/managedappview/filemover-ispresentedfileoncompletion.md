@@ -1,6 +1,6 @@
 # fileMover(isPresented:file:onCompletion:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Presents a system interface for allowing the user to move an existing file to a new location.

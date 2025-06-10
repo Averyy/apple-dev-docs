@@ -13,6 +13,7 @@ Tells the delegate that the template will appear onscreen.
 ## Declaration
 
 ```swift
+@MainActor
 optional func templateWillAppear(_ aTemplate: CPTemplate, animated: Bool)
 ```
 

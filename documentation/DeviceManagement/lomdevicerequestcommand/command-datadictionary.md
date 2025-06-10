@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to send requests to a device using lights-out management (LOM).
+The command to send requests to a device using lights-out management (LOM).
 
 **Availability**:
 - macOS 11.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,7 +16,7 @@ object LOMDeviceRequestCommand.Command
 
 ## Topics
 
-### Commands
+### Objects
 - [object LOMDeviceRequestCommand.Command.RequestListItem](lomdevicerequestcommand/command-data.dictionary/requestlistitem.md)
   A dictionary that contains a requested action to perform on a device using lights-out management (LOM).
 

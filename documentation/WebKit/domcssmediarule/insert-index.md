@@ -1,6 +1,6 @@
 # insert(_:index:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

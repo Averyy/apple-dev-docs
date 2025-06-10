@@ -10,6 +10,7 @@ A set of predefined groups that indicate how the renderer draws a model relative
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -91,9 +92,6 @@ greenPlane.components.set(ModelSortGroupComponent(group: group, order: 0))
 
 ## Topics
 
-### Operators
-- [static func == (ModelSortGroup.PlanarUIPlacement, ModelSortGroup.PlanarUIPlacement) -> Bool](modelsortgroup/planaruiplacement-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [ModelSortGroup.PlanarUIPlacement.alwaysBehind](modelsortgroup/planaruiplacement-swift.enum/alwaysbehind.md)
   Instructs the renderer to draw a model’s mesh behind a SwiftUI layer that’s coincident with the mesh.
@@ -101,14 +99,6 @@ greenPlane.components.set(ModelSortGroupComponent(group: group, order: 0))
   Instructs the renderer to draw a model’s mesh in front of a SwiftUI layer that’s coincident with the mesh.
 - [ModelSortGroup.PlanarUIPlacement.inlineUI](modelsortgroup/planaruiplacement-swift.enum/inlineui.md)
   Instructs the renderer to draw a model’s mesh along with a SwiftUI layer that’s coincident with the mesh.
-### Instance Properties
-- [var hashValue: Int](modelsortgroup/planaruiplacement-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](modelsortgroup/planaruiplacement-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](modelsortgroup/planaruiplacement-swift.enum/equatable-implementations.md)
 
 ## Relationships
 
@@ -117,6 +107,7 @@ greenPlane.components.set(ModelSortGroupComponent(group: group, order: 0))
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

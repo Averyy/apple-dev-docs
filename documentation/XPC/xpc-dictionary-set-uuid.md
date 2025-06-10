@@ -1,6 +1,6 @@
 # xpc_dictionary_set_uuid(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Inserts a UUID primitive value into an array.

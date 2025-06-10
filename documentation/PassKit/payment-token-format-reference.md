@@ -28,8 +28,6 @@ Step 1: Verify the signature as follows:
 
 > ❗ **Important**:  The signature is valid if all the signature verification steps above succeed. If the signature is invalid or any of the hash values don’t match, ignore the transaction.
 
- The signature is valid if all the signature verification steps above succeed. If the signature is invalid or any of the hash values don’t match, ignore the transaction.
-
 Step 2: Use the value of the `publicKeyHash` key to determine which merchant public key Apple used, and then retrieve the corresponding merchant public key certificate and private key.
 
 Step 3: Restore the symmetric key. For instructions, see [`Restoring the symmetric key`](restoring-the-symmetric-key.md).
@@ -47,7 +45,7 @@ Step 6: Verify the transaction details using information from the merchant about
 
 - Check that the `currencyCode` matches the currency code in the original Apple Pay payment request.
 - Check that the `transactionAmount` is correct, as compared with the total charge of the transaction.
-- Check that the `applicationData` field matches the hash of the data the original payment request used, and that the data is correct. For example, check that an order number in the data from the original payment request is the order number to which you, the payment processor, are applying this payment. For more information, see [`applicationData`](pkpaymentrequest/applicationdata.md) in [`PKPaymentRequest`](pkpaymentrequest.md). For transactions that initiate in Apple Pay on the Web, see [`applicationData`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest/2577137-applicationdata) in [`ApplePayPaymentRequest`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest) and [`applicationData`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepayrequest/2951834-applicationdata) in [`ApplePayRequest`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepayrequest).
+- Check that the `applicationData` field matches the hash of the data the original payment request used, and that the data is correct. For example, check that an order number in the data from the original payment request is the order number to which you, the payment processor, are applying this payment. For more information, see [`applicationData`](pkpaymentrequest/applicationdata.md) in [`PKPaymentRequest`](pkpaymentrequest.md). For transactions that initiate in Apple Pay on the Web, see [`applicationData`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest/2577137-applicationdata) in [`ApplePayPaymentRequest`](https://developer.apple.com/documentation/ApplePayontheWeb/ApplePayPaymentRequest) and [`applicationData`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepayrequest/2951834-applicationdata) in [`ApplePayRequest`](https://developer.apple.com/documentation/ApplePayontheWeb/ApplePayRequest).
 
 Step 7: If the signature is valid, the hash values match, and your transaction validation passes, use the decrypted payment data to process the payment. Otherwise, ignore the transaction.
 
@@ -57,7 +55,7 @@ The following tables describe the keys and values of the payment token structure
 
 ###### Payment Token Structure
 
-The [`paymentData`](pkpaymenttoken/paymentdata.md) property of [`PKPaymentToken`](pkpaymenttoken.md) (or the [`paymentData`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymenttoken/1916115-paymentdata) property of [`ApplePayPaymentToken`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymenttoken), for Apple Pay on the Web) contains a UTF-8 serialization of a plaintext JSON dictionary with the following keys and values:
+The [`paymentData`](pkpaymenttoken/paymentdata.md) property of [`PKPaymentToken`](pkpaymenttoken.md) (or the [`paymentData`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymenttoken/1916115-paymentdata) property of [`ApplePayPaymentToken`](https://developer.apple.com/documentation/ApplePayontheWeb/ApplePayPaymentToken), for Apple Pay on the Web) contains a UTF-8 serialization of a plaintext JSON dictionary with the following keys and values:
 
 | Key | Value | Description |
 | --- | --- | --- |
@@ -70,14 +68,14 @@ The [`paymentData`](pkpaymenttoken/paymentdata.md) property of [`PKPaymentToken`
 
 The `header` contains the following keys and values:
 
-| `applicationData` | SHA–256 hash, hex encoded as a string | Optional. Hash of the [`applicationData`](pkpaymentrequest/applicationdata.md) property of the original [`PKPaymentRequest`](pkpaymentrequest.md) object for transactions that initiate in apps. For transactions that initiate in Apple Pay on the Web, the value is the hash of [`applicationData`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest/2577137-applicationdata) in [`ApplePayPaymentRequest`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest) or of [`applicationData`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepayrequest/2951834-applicationdata) in [`ApplePayRequest`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepayrequest). ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) This key is omitted if the value of that property is `nil`. |
+| `applicationData` | SHA–256 hash, hex encoded as a string | Optional. Hash of the [`applicationData`](pkpaymentrequest/applicationdata.md) property of the original [`PKPaymentRequest`](pkpaymentrequest.md) object for transactions that initiate in apps. For transactions that initiate in Apple Pay on the Web, the value is the hash of [`applicationData`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest/2577137-applicationdata) in [`ApplePayPaymentRequest`](https://developer.apple.com/documentation/ApplePayontheWeb/ApplePayPaymentRequest) or of [`applicationData`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepayrequest/2951834-applicationdata) in [`ApplePayRequest`](https://developer.apple.com/documentation/ApplePayontheWeb/ApplePayRequest). ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) This key is omitted if the value of that property is `nil`. |
 | --- | --- | --- |
 | `ephemeralPublicKey` | X.509 encoded key bytes, Base64 encoded as a string | Ephemeral public key bytes ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) EC_v1 only. |
 | `wrappedKey` | A Base64-encoded string | The symmetric key wrapped using your RSA public key ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) RSA_v1 only. |
 | `publicKeyHash` | SHA–256 hash, Base64 encoded as a string | Hash of the X.509 encoded public key bytes of the merchant’s certificate |
 | `transactionId` | A hexadecimal identifier, as a string | Transaction identifier, generated on the device |
 
-For more information about the application data and the original payment request, see [`applicationData`](pkpaymentrequest/applicationdata.md) and [`PKPaymentRequest`](pkpaymentrequest.md). For transactions using Apple Pay on the Web, see [`applicationData`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepayrequest/2951834-applicationdata) and [`ApplePayRequest`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepayrequest), and [`applicationData`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest/2577137-applicationdata) and [`ApplePayPaymentRequest`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest).
+For more information about the application data and the original payment request, see [`applicationData`](pkpaymentrequest/applicationdata.md) and [`PKPaymentRequest`](pkpaymentrequest.md). For transactions using Apple Pay on the Web, see [`applicationData`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepayrequest/2951834-applicationdata) and [`ApplePayRequest`](https://developer.apple.com/documentation/ApplePayontheWeb/ApplePayRequest), and [`applicationData`](https://developer.apple.com/documentation/apple_pay_on_the_web/applepaypaymentrequest/2577137-applicationdata) and [`ApplePayPaymentRequest`](https://developer.apple.com/documentation/ApplePayontheWeb/ApplePayPaymentRequest).
 
 ###### Payment Data Keys
 

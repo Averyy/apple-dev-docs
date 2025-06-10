@@ -1,6 +1,6 @@
 # Making presentation actions available to Siri and Apple Intelligence
 
-**Framework**: Appintents
+**Framework**: App Intents
 
 Create app intents and entities to integrate your app’s presentation functionality with Siri and Apple Intelligence.
 
@@ -13,7 +13,7 @@ To integrate your app’s presentation capabilities with Siri and Apple Intellig
 For example, if your app allows someone to open a presentation, use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro and provide the assistant schema that consists of the `.presentation` domain and the [`createSlide`](assistantschemas/presentationintent/createslide.md) schema:
 
 ```swift
-@AssistantIntent(schema: .presentation.open)
+@AppIntent(schema: .presentation.open)
 struct OpenPresentationIntent: OpenIntent {
     var target: PresentationEntity
 
@@ -30,7 +30,7 @@ To learn more about assistant schemas, see [`Integrating actions with Siri and A
 If you use app entities to describe custom data types, annotate the app entity implementation with the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro. This makes sure Siri and Apple Intelligence can understand your data. For example, the intent in the previous section uses `PresentationEntity`. The following code snippet shows how the `PresentationEntity` implementation uses the [`AssistantEntity(schema:)`](assistantentity(schema:).md) macro:
 
 ```swift
-@AssistantEntity(schema: .presentation.document)
+@AppEntity(schema: .presentation.document)
 struct PresentationEntity {
     struct Query: EntityStringQuery {
         func entities(for identifiers: [PresentationEntity.ID]) async throws -> [PresentationEntity] { [] }
@@ -60,4 +60,4 @@ For a list of available app entity schemas in the `.presentation` domain, see [`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/making-presentation-actions-available-to-siri-and-apple-intelligence)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/making-presentation-actions-available-to-siri-and-apple-intelligence)*

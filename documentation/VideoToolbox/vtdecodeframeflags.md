@@ -1,6 +1,6 @@
 # VTDecodeFrameFlags
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: struct
 
 Flags to pass to a decompression session and the video decoder.
@@ -34,6 +34,7 @@ struct VTDecodeFrameFlags
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

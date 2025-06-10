@@ -22,8 +22,6 @@ To create an app that recognizes objects in the physical environment, first you 
 
 > ❗ **Important**:  `ARObjectScanningConfiguration` is for use only in development scenarios. Because the high-fidelity spatial mapping required by object scanning has a high performance and energy cost, many ARKit features are disabled that aren’t required for object scanning.
 
- `ARObjectScanningConfiguration` is for use only in development scenarios. Because the high-fidelity spatial mapping required by object scanning has a high performance and energy cost, many ARKit features are disabled that aren’t required for object scanning.
-
 ## Topics
 
 ### Creating a Configuration

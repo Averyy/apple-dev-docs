@@ -1,6 +1,6 @@
 # requestPriceIncreaseConsentForTransaction(identifier:)
 
-**Framework**: Storekittest  
+**Framework**: StoreKit Test  
 **Kind**: method
 
 Simulates a price increase that requires customer consent for an auto-renewable subscription.

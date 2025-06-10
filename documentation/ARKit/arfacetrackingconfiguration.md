@@ -1,6 +1,6 @@
 # ARFaceTrackingConfiguration
 
-**Framework**: Arkit  
+**Framework**: ARKit  
 **Kind**: class
 
 A configuration that tracks facial movement and expressions using the front camera.
@@ -68,4 +68,4 @@ When you enable the [`isLightEstimationEnabled`](arconfiguration/islightestimati
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/arfacetrackingconfiguration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arfacetrackingconfiguration)*

@@ -39,6 +39,7 @@ You can also use [`everyMinute`](timelineschedule/everyminute.md) to construct t
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TimelineSchedule](timelineschedule.md)
 
 ## See Also

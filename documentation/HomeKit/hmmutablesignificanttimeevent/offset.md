@@ -21,7 +21,7 @@ var offset: DateComponents { get set }
 
 #### Discussion
 
-To specify that this event should fire before the significant event, supply a date components object with negative values. For example, to specify 30 minutes before sunset, the [`minute`](https://developer.apple.com/documentation/foundation/datecomponents/1779999-minute) property of the value of the [`offset`](hmmutablesignificanttimeevent/offset.md) property must be set to `-30`.
+To specify that this event should fire before the significant event, supply a date components object with negative values. For example, to specify 30 minutes before sunset, the [`minute`](https://developer.apple.com/documentation/Foundation/DateComponents/minute) property of the value of the [`offset`](hmmutablesignificanttimeevent/offset.md) property must be set to `-30`.
 
 ## See Also
 

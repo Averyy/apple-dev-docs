@@ -1,6 +1,6 @@
 # Implementing coalesced touch support in an app
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Learn how to create a simple app that handles coalesced touches.
 
@@ -134,4 +134,4 @@ The remaining methods of the `DrawingView` class take the touch samples and turn
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/implementing-coalesced-touch-support-in-an-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/implementing-coalesced-touch-support-in-an-app)*

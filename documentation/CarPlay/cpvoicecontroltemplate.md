@@ -13,6 +13,7 @@ A template that displays a voice control indicator during audio input.
 ## Declaration
 
 ```swift
+@MainActor
 class CPVoiceControlTemplate
 ```
 
@@ -49,6 +50,8 @@ CarPlay navigation apps must show a voice control indicator during audio input b
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

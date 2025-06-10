@@ -50,6 +50,9 @@ Use this object with [`Request reports`](post-v1-analyticsreportrequests.md).
   A response that contains a single analytics report segment resource.
 - [object AnalyticsReportSegmentsResponse](analyticsreportsegmentsresponse.md)
   A response that contains a list of analytics report segment resources.
+- [object AnalyticsReportInstanceSegmentsLinkagesResponse](analyticsreportinstancesegmentslinkagesresponse.md)
+- [object AnalyticsReportInstancesLinkagesResponse](analyticsreportinstanceslinkagesresponse.md)
+- [object AnalyticsReportRequestReportsLinkagesResponse](analyticsreportrequestreportslinkagesresponse.md)
 
 
 ---

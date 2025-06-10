@@ -1,6 +1,6 @@
 # go(to:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Makes the specified item in the back-forward list the current item.

@@ -13,6 +13,7 @@ Tells the delegate that the system changed keyboard or list limits on the user i
 ## Declaration
 
 ```swift
+@MainActor
 optional func sessionConfiguration(_ sessionConfiguration: CPSessionConfiguration, limitedUserInterfacesChanged limitedUserInterfaces: CPLimitableUserInterface)
 ```
 

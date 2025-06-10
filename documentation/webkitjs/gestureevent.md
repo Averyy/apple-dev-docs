@@ -1,6 +1,6 @@
 # GestureEvent
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 The `GestureEvent` class encapsulates information about a multi-touch gesture.

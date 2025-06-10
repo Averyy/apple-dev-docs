@@ -52,6 +52,21 @@ Use an asset reader to read media data from instances of [`AVAsset`](avasset.md)
 ### Inspecting the Asset
 - [var asset: AVAsset](avassetreader/asset.md)
   The asset from which to read media data.
+### Instance Methods
+- [func outputCaptionProvider(for: AVAssetReaderTrackOutput, validationDelegate: (any AVAssetReaderCaptionValidationHandling)?) -> sending AVAssetReaderOutput.Provider<AVCaptionGroup>](avassetreader/outputcaptionprovider(for:validationdelegate:).md)
+  Attaches the output to the reader and returns an output provider for reading caption groups.
+- [func outputCaptionProviderWithRandomAccess(for: AVAssetReaderTrackOutput, validationDelegate: (any AVAssetReaderCaptionValidationHandling)?) -> sending (AVAssetReaderOutput.Provider<AVCaptionGroup>, AVAssetReaderOutput.RandomAccessController)](avassetreader/outputcaptionproviderwithrandomaccess(for:validationdelegate:).md)
+  Attaches the output to the reader and returns a tuple with an output provider for reading caption groups, and an associated random access controller.
+- [func outputMetadataProvider(for: AVAssetReaderTrackOutput) -> sending AVAssetReaderOutput.Provider<AVTimedMetadataGroup>](avassetreader/outputmetadataprovider(for:).md)
+  Attaches the output to the reader and returns an output provider for reading timed metadata groups.
+- [func outputMetadataProviderWithRandomAccess(for: AVAssetReaderTrackOutput) -> sending (AVAssetReaderOutput.Provider<AVTimedMetadataGroup>, AVAssetReaderOutput.RandomAccessController)](avassetreader/outputmetadataproviderwithrandomaccess(for:).md)
+  Attaches the output to the reader and returns a tuple with an output provider for timed metadata groups buffers, and an associated random access controller.
+- [func outputProvider(for: AVAssetReaderOutput) -> sending AVAssetReaderOutput.Provider<CMReadySampleBuffer<CMSampleBuffer.DynamicContent>>](avassetreader/outputprovider(for:).md)
+  Attaches the output to the reader and returns an output provider for reading sample buffers.
+- [func outputProviderWithRandomAccess(for: AVAssetReaderOutput) -> sending (AVAssetReaderOutput.Provider<CMReadySampleBuffer<CMSampleBuffer.DynamicContent>>, AVAssetReaderOutput.RandomAccessController)](avassetreader/outputproviderwithrandomaccess(for:).md)
+  Attaches the output to the reader and returns a tuple with an output provider for reading sample buffers, and an associated random access controller.
+- [func start() throws](avassetreader/start.md)
+  Prepares the reader to read media data from the asset.
 
 ## Relationships
 

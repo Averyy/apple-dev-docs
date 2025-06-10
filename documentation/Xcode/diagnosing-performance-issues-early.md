@@ -27,7 +27,7 @@ The issues surfaced point to code in your project that can cause hangs. Hangs oc
 If you use concurrency primitives, such as [`dispatch_semaphore_wait`](https://developer.apple.com/documentation/dispatch/1453087-dispatch_semaphore_wait) and [`dispatch_group_wait`](https://developer.apple.com/documentation/dispatch/1452794-dispatch_group_wait), in your code or invoke APIs that use them, your app is susceptible to priority inversions if there is a mismatch in the quality-of-service (QoS) class of the dispatch queues your app uses. When you use these primitives, the system can’t automatically propagate priority from the higher-priority thread to the lower-priority thread. You can take these precautions to avoid priority inversions in your code:
 
 - Don’t use `dispatch_semaphore_wait` and `dispatch_group_wait` to emulate synchronous behavior when calling an asynchronous internal method or API. Remove the code if the underlying functionality is unnecessary.
-- Ensure that the QoS of the waiting thread is the same as or lower than the QoS of the signaling thread when a synchronous variant isn’t available. Explicitly classify the QoS of the work when you create a [`Dispatch Queue`](https://developer.apple.com/documentation/Dispatch/dispatch-queue) or an [`NSOperationQueue`](https://developer.apple.com/documentation/foundation/nsoperationqueue).
+- Ensure that the QoS of the waiting thread is the same as or lower than the QoS of the signaling thread when a synchronous variant isn’t available. Explicitly classify the QoS of the work when you create a [`Dispatch Queue`](https://developer.apple.com/documentation/Dispatch/dispatch-queue) or an [`OperationQueue`](https://developer.apple.com/documentation/Foundation/OperationQueue).
 
 The code in `initiateBackgroundWork` below explicitly creates a dispatch queue with background QoS. `doBackgroundWorkAsync` signals the completion of the background work it does asynchronously at background QoS. After the background work completes, it updates the UI label on the main thread at [`userInteractive`](https://developer.apple.com/documentation/Dispatch/DispatchQoS/userInteractive) QoS.
 
@@ -61,7 +61,7 @@ Long-running synchronous I/O and networking on the main thread can make your app
 
 - Don’t synchronously read from or write to files and I/O devices on the main thread. Instead, do the work on a separate serial dispatch queue, and notify the completion of I/O by enqueuing a block onto the main queue.
 - Use the asynchronous variant of an API that performs I/O to do that work off the main thread.
-- Don’t perform synchronous networking on the main thread of your app. Instead, use an asynchronous networking API, such as [`NSURLSession`](https://developer.apple.com/documentation/foundation/nsurlsession).
+- Don’t perform synchronous networking on the main thread of your app. Instead, use an asynchronous networking API, such as [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession).
 
 ##### Disable the Thread Performance Checker Tool
 
@@ -72,8 +72,6 @@ The Thread Performance Checker tool is enabled by default for schemes that build
 In addition to the Thread Performance Checker tool, always test your code using a comprehensive set of performance tests. For more information about testing your code, see [`Testing`](testing.md).
 
 > ❗ **Important**: The Thread Performance Checker tool is currently supported only on macOS and iOS.
-
-The Thread Performance Checker tool is currently supported only on macOS and iOS.
 
 Resolution of certain performance issues may require significant code refactoring or redesign of the underlying logic. To suppress the warning for issues you intend to address at a later time, set the `PERFC_SUPPRESSION_FILE` environment variable to provide a list of classes and methods in a suppression file. The Thread Performance Checker tool only shows issues that don’t involve those classes and methods. Use the following format for your suppression file:
 
@@ -96,6 +94,8 @@ method:readv
   Create a user experience that feels responsive by removing hangs and hitches from your app.
 - [Understanding user interface responsiveness](understanding-user-interface-responsiveness.md)
   Make your app more responsive by examining the event-handling and rendering loop.
+- [Understanding and improving SwiftUI performance](understanding-and-improving-swiftui-performance.md)
+  Identify and address long-running view updates, and reduce the frequency of updates.
 - [Understanding hangs in your app](understanding-hangs-in-your-app.md)
   Determine the cause for delays in user interactions by examining the main thread and the main run loop.
 - [Understanding hitches in your app](understanding-hitches-in-your-app.md)

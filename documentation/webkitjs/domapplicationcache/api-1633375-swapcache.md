@@ -1,6 +1,6 @@
 # swapCache
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Replaces the active cache with the latest version.

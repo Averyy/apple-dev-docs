@@ -1,6 +1,6 @@
 # invalidManifest
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates that an invalid `manifest.json` was encountered.

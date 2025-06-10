@@ -1,6 +1,6 @@
 # sleet
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The amount of sleet for the period.

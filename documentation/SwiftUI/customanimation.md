@@ -1,6 +1,6 @@
 # CustomAnimation
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: protocol
 
 A type that defines how an animatable value changes over time.
@@ -104,6 +104,7 @@ struct ElasticEaseInEaseOutView: View {
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -121,4 +122,4 @@ struct ElasticEaseInEaseOutView: View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/customanimation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/customanimation)*

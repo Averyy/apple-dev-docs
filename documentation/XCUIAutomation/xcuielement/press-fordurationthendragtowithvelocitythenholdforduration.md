@@ -1,6 +1,6 @@
 # press(forDuration:thenDragTo:withVelocity:thenHoldForDuration:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Initiates a press-and-hold gesture, drags to another element at a velocity, and holds for a duration, all of which you specify.

@@ -1,6 +1,6 @@
 # providesAppNotificationSettings
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 A Boolean value indicating the system displays a button for in-app notification settings.

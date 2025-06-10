@@ -1,6 +1,6 @@
 # Wallet Orders
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: module
 
 Create, distribute, and update orders in Wallet.

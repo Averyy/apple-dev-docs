@@ -20,6 +20,8 @@ static let open: UIMenu.Identifier
 
 ## See Also
 
+- [static let newItem: UIMenu.Identifier](uimenu/identifier-swift.struct/newitem.md)
+  New item menu
 - [static let newScene: UIMenu.Identifier](uimenu/identifier-swift.struct/newscene.md)
   The New Scene menu.
 - [static let openRecent: UIMenu.Identifier](uimenu/identifier-swift.struct/openrecent.md)

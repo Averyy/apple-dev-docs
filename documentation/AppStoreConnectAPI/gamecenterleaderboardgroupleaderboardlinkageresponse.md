@@ -18,6 +18,7 @@ object GameCenterLeaderboardGroupLeaderboardLinkageResponse
 
 ### Objects
 - [object GameCenterLeaderboardGroupLeaderboardLinkageResponse.Data](gamecenterleaderboardgroupleaderboardlinkageresponse/data-data.dictionary.md)
+  The data structure that represents a leaderboard resource.
 
 ## See Also
 
@@ -33,6 +34,8 @@ object GameCenterLeaderboardGroupLeaderboardLinkageResponse
   A response that contains a single leaderboard image resource.
 - [object GameCenterLeaderboardGroupLeaderboardLinkageRequest](gamecenterleaderboardgroupleaderboardlinkagerequest.md)
   The request body you use to attach an individual leaderbaord to a group leaderboard.
+- [object GameCenterLeaderboardActivityLinkageRequest](gamecenterleaderboardactivitylinkagerequest.md)
+- [object GameCenterLeaderboardChallengeLinkageRequest](gamecenterleaderboardchallengelinkagerequest.md)
 
 
 ---

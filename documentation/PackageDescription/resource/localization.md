@@ -32,9 +32,10 @@ enum Localization
 ### Creating a Value
 - [init?(rawValue: String)](resource/localization/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
-### Accessing the Raw Value
+### Instance Properties
 - [var rawValue: String](resource/localization/rawvalue-swift.property.md)
   The corresponding value of the raw type.
+### Type Aliases
 - [Resource.Localization.RawValue](resource/localization/rawvalue-swift.typealias.md)
   The raw type that can be used to represent all values of the conforming type.
 ### Default Implementations
@@ -49,6 +50,7 @@ enum Localization
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -56,6 +58,8 @@ enum Localization
   Applies a platform-specific rules to the resource at the given path.
 - [static func copy(String) -> Resource](resource/copy(_:).md)
   Applies the copy rule to a resource at the given path.
+- [static func embedInCode(String) -> Resource](resource/embedincode(_:).md)
+  Applies the embed rule to a resource at the given path.
 
 
 ---

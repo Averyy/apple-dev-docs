@@ -1,6 +1,6 @@
 # currentPermissions
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The currently granted permissions that have not expired.

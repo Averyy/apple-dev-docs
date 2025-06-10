@@ -17,7 +17,8 @@ The base color for the tile map. The influence of the color over the tile map no
 ## Declaration
 
 ```swift
-var color: UIColor { get set }
+@MainActor
+var color: NSColor { get set }
 ```
 
 ## See Also

@@ -1,6 +1,6 @@
 # commandDefinitions
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The array of command definitions used by Xcode to associate command names with their implementation in an extension.

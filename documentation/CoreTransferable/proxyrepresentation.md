@@ -89,6 +89,7 @@ Use [`FileRepresentation`](FileRepresentation.md) or [`DataRepresentation`](Data
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TransferRepresentation](transferrepresentation.md)
 
 ## See Also

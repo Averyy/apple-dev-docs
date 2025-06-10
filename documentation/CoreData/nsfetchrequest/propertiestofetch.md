@@ -26,7 +26,7 @@ Property descriptions can either be instances of [`NSPropertyDescription`](nspro
 
 ##### Special Considerations
 
-You must set the entity for the fetch request before setting this value; otherwise, [`NSFetchRequest`](nsfetchrequest.md) throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) exception.
+You must set the entity for the fetch request before setting this value; otherwise, [`NSFetchRequest`](nsfetchrequest.md) throws an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception.
 
 This property can be set with [`managedObjectResultType`](nsfetchrequestresulttype/managedobjectresulttype.md) and thereby implement a partial faulting (whereby only some of the properties are populated) of the returned objects, as well as the [`dictionaryResultType`](nsfetchrequestresulttype/dictionaryresulttype.md) to define what properties are included in the resulting [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary).
 

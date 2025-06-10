@@ -1,6 +1,6 @@
 # UNNotificationSoundName
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: struct
 
 A string providing the name of a sound file.
@@ -35,6 +35,7 @@ struct UNNotificationSoundName
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

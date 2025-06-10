@@ -1,6 +1,6 @@
 # analyze(_:orientation:configuration:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Returns the data for providing a Live Text interaction with a bitmap image in the specified orientation.

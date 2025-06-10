@@ -1,6 +1,6 @@
 # Converting a legacy Safari extension to a Safari app extension
 
-**Framework**: Safariservices
+**Framework**: Safari Services
 
 Convert a legacy Safari extension to a Safari app extension, automatically with keys or manually.
 
@@ -46,4 +46,4 @@ Rewrites are required in these areas:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/converting-a-legacy-safari-extension-to-a-safari-app-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/converting-a-legacy-safari-extension-to-a-safari-app-extension)*

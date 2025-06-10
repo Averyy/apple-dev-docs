@@ -1,6 +1,6 @@
 # playbackRate
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The speed that the media resource is playing.

@@ -30,12 +30,18 @@ Any animations will be interpreted on the video’s timeline, not real-time, so 
 ## Topics
 
 ### Creating a Composition Tool
-- [convenience init(additionalLayer: CALayer, asTrackID: CMPersistentTrackID)](avvideocompositioncoreanimationtool/init(additionallayer:astrackid:).md)
+- [convenience init(additionalLayer: sending CALayer, asTrackID: CMPersistentTrackID)](avvideocompositioncoreanimationtool/init(additionallayer:astrackid:).md)
   Adds a Core Animation layer to the video composition.
 - [convenience init(postProcessingAsVideoLayer: CALayer, in: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayer:in:).md)
   Composes the composited video frame with a Core Animation layer.
 - [convenience init(postProcessingAsVideoLayers: [CALayer], in: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayers:in:).md)
   Composes the composited video frames with the Core Animation layer.
+### Structures
+- [AVVideoCompositionCoreAnimationTool.Configuration](avvideocompositioncoreanimationtool/configuration.md)
+  Configurable properties for initializing a new AVVideoCompositionCoreAnimationTool instance.
+### Initializers
+- [convenience init(configuration: sending AVVideoCompositionCoreAnimationTool.Configuration)](avvideocompositioncoreanimationtool/init(configuration:).md)
+  Compose the composited video frames with the Core Animation layer.
 
 ## Relationships
 
@@ -48,6 +54,8 @@ Any animations will be interpreted on the video’s timeline, not real-time, so 
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

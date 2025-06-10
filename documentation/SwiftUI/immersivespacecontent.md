@@ -6,6 +6,7 @@
 A type that you can use as the content of an immersive space.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -42,6 +43,7 @@ extension MyCustomType: Transition {
 ## Relationships
 
 ### Conforming Types
+- [CompositorContentBuilder.Content](compositorcontentbuilder/content.md)
 - [ImmersiveSpaceViewContent](immersivespaceviewcontent.md)
 
 ## See Also

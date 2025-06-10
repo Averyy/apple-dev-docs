@@ -41,10 +41,6 @@ AVAudioSession.sharedInstance().requestRecordPermission { granted in
 
 > ❗ **Important**:  Apps that access any of the device’s microphones must declare their intent to do so. You do this by including the `NSMicrophoneUsageDescription` key and a corresponding purpose string in your app’s `Info.plist`. When the system prompts the user to allow access, it displays the purpose string as part of the alert. If an application attempts to access any of the device’s microphones without a corresponding purpose string, the app exits.
 
- Apps that access any of the device’s microphones must declare their intent to do so. You do this by including the `NSMicrophoneUsageDescription` key and a corresponding purpose string in your app’s `Info.plist`. When the system prompts the user to allow access, it displays the purpose string as part of the alert.
-
-If an application attempts to access any of the device’s microphones without a corresponding purpose string, the app exits.
-
 ## Parameters
 
 - `response`: When you call this method, if the user previously granted or denied recording permission, the block executes immediately without displaying a recording permission alert. If the user hasn’t yet granted or denied permission when you call this method, the system displays a recording permission alert and executes the block after the user responds to it.

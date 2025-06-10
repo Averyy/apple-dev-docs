@@ -1,6 +1,6 @@
 # init(recipientKey:ciphersuite:info:presharedKey:presharedKeyIdentifier:)
 
-**Framework**: Cryptokit  
+**Framework**: Apple CryptoKit  
 **Kind**: init
 
 Creates a sender in preshared key (PSK) mode.

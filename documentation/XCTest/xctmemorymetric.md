@@ -1,6 +1,6 @@
 # XCTMemoryMetric
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 A metric to record the physical memory that a performance test uses.

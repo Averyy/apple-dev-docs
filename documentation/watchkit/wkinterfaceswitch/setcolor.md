@@ -1,6 +1,6 @@
 # setColor(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Changes the tint color of the switch when it is on.

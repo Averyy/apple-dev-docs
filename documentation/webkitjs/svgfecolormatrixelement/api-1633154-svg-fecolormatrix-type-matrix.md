@@ -1,6 +1,6 @@
 # SVG_FECOLORMATRIX_TYPE_MATRIX
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

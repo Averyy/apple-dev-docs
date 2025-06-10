@@ -15,8 +15,6 @@ A message to the user that explains the app’s request for permission to access
 
 > ❗ **Important**:  If your app uses the [`CMFallDetectionManager`](https://developer.apple.com/documentation/CoreMotion/CMFallDetectionManager), the app requires this key.
 
- If your app uses the [`CMFallDetectionManager`](https://developer.apple.com/documentation/CoreMotion/CMFallDetectionManager), the app requires this key.
-
 ## See Also
 
 - [NSMotionUsageDescription](information-property-list/nsmotionusagedescription.md)

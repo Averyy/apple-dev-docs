@@ -22,9 +22,7 @@ class AVPlayerItemVideoOutput
 ## Topics
 
 ### Creating a Video Output
-- [init(pixelBufferAttributes: [String : Any]?)](avplayeritemvideooutput/init(pixelbufferattributes:).md)
-  Creates a video output object using the specified pixel buffer attributes.
-- [init(outputSettings: [String : Any]?)](avplayeritemvideooutput/init(outputsettings:).md)
+- [init(outputSettings: [String : any Sendable]?)](avplayeritemvideooutput/init(outputsettings:).md)
   Creates a video output object initialized with the specified output settings.
 ### Configuring the Delegate
 - [func setDelegate((any AVPlayerItemOutputPullDelegate)?, queue: dispatch_queue_t?)](avplayeritemvideooutput/setdelegate(_:queue:).md)
@@ -43,6 +41,13 @@ class AVPlayerItemVideoOutput
   Returns a Boolean value that indicates whether video output is available for the specified item time.
 - [func copyPixelBuffer(forItemTime: CMTime, itemTimeForDisplay: UnsafeMutablePointer<CMTime>?) -> CVPixelBuffer?](avplayeritemvideooutput/copypixelbuffer(foritemtime:itemtimefordisplay:).md)
   Retrieves an image that is appropriate for display at the specified item time, and marks the image as acquired.
+### Initializers
+- [convenience init(pixelBufferAttributes: CVPixelBufferAttributes)](avplayeritemvideooutput/init(pixelbufferattributes:)-18izh.md)
+  Initializes an instance of AVPlayerItemVideoOutput, using the specified pixel buffer attributes, for video image output
+- [init(pixelBufferAttributes: [String : any Sendable]?)](avplayeritemvideooutput/init(pixelbufferattributes:)-7n7v8.md)
+### Instance Methods
+- [func pixelBufferAndDisplayTime(forItemTime: CMTime) -> (pixelBuffer: CVReadOnlyPixelBuffer?, itemTimeForDisplay: CMTime)](avplayeritemvideooutput/pixelbufferanddisplaytime(foritemtime:).md)
+  Retrieves an image that is appropriate for display at the specified item time, and marks the image as acquired
 
 ## Relationships
 
@@ -55,6 +60,8 @@ class AVPlayerItemVideoOutput
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # thumbnailImage(atTime:timeOption:)
 
-**Framework**: Mediaplayer  
+**Framework**: Media Player  
 **Kind**: method
 
 Captures and returns a thumbnail image from the current movie.

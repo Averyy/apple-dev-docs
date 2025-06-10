@@ -4,13 +4,6 @@
 **Kind**: typealias
 
 **Availability**:
-- iOS 10.0+ - Deprecated
-- iPadOS 10.0+ - Deprecated
-- Mac Catalyst 13.1+ - Deprecated
-- macOS 10.12+ - Deprecated
-- tvOS 10.0+ - Deprecated
-- visionOS ?+ - Deprecated
-- watchOS 3.0+ - Deprecated
 - Swift 4.2+
 
 ## Declaration

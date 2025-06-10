@@ -1,6 +1,6 @@
 # xpc_connection_get_pid(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the PID of the remote peer.

@@ -1,6 +1,6 @@
 # stop()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Stops a test run.

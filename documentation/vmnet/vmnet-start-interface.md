@@ -1,6 +1,6 @@
 # vmnet_start_interface(_:_:_:)
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: func
 
 Starts host or shared mode on an interface with a specified configuration.

@@ -1,6 +1,6 @@
 # WeatherCondition.heavySnow
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Heavy snow.

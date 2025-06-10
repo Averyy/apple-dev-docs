@@ -1,6 +1,6 @@
 # WKScriptMessageHandlerWithReply
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 An interface for responding to messages from JavaScript code running in a webpage.
@@ -62,4 +62,4 @@ To call your message handler from JavaScript, send a message to `window.webkit.m
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/wkscriptmessagehandlerwithreply)*
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/wkscriptmessagehandlerwithreply)*

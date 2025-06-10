@@ -14,7 +14,6 @@ The margins for each printed page.
 ## Declaration
 
 ```swift
-@MainActor
 var perPageContentInsets: UIEdgeInsets { get set }
 ```
 

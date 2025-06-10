@@ -23,8 +23,6 @@ func loadSoundBankInstrument(at bankURL: URL, program: UInt8, bankMSB: UInt8, ba
 
 > ❗ **Important**:  This method reads from the file and allocates memory. Don’t call it on a real-time thread.
 
- This method reads from the file and allocates memory. Don’t call it on a real-time thread.
-
 ## Parameters
 
 - `bankURL`: The URL for a soundbank file, either a DLS bank ( ) or a SoundFont bank ( ).

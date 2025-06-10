@@ -1,6 +1,6 @@
 # Counting human body action repetitions in a live video feed
 
-**Framework**: Createmlcomponents
+**Framework**: Create ML Components
 
 Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
 

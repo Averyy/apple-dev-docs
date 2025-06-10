@@ -6,7 +6,7 @@ Deliver notifications to subscribers by using notification centers’ publishers
 
 #### Overview
 
-Many frameworks deliver asynchronous events to your app with the [`NotificationCenter`](https://developer.apple.com/documentation/Foundation/NotificationCenter) API. Your app may already have places where it receives and processes these notifications in callback methods or closures. For example, the following code uses [`addObserver(forName:object:queue:using:)`](https://developer.apple.com/documentation/foundation/notificationcenter/1411723-addobserver) to print a message every time an iOS device rotates to portrait orientation.
+Many frameworks deliver asynchronous events to your app with the [`NotificationCenter`](https://developer.apple.com/documentation/Foundation/NotificationCenter) API. Your app may already have places where it receives and processes these notifications in callback methods or closures. For example, the following code uses [`addObserver(forName:object:queue:using:)`](https://developer.apple.com/documentation/Foundation/NotificationCenter/addObserver(forName:object:queue:using:)) to print a message every time an iOS device rotates to portrait orientation.
 
 ```swift
 var notificationToken: NSObjectProtocol?
@@ -27,7 +27,7 @@ override func viewDidLoad() {
 
 Using notification center callbacks and closures requires you to do all your work inside the callback method or closure. By migrating to Combine, you can use operators to perform common tasks like filtering.
 
-To take advantage of Combine, use the [`NotificationCenter.Publisher`](https://developer.apple.com/documentation/Foundation/NotificationCenter/Publisher) to migrate your [`NSNotification`](https://developer.apple.com/documentation/Foundation/NSNotification) handling code to the Combine idiom. You create this publisher with the [`NotificationCenter`](https://developer.apple.com/documentation/Foundation/NotificationCenter) method [`publisher(for:object:)`](https://developer.apple.com/documentation/foundation/notificationcenter/3329353-publisher), passing in the notification name in which you’re interested and a source object, if any.
+To take advantage of Combine, use the [`NotificationCenter.Publisher`](https://developer.apple.com/documentation/Foundation/NotificationCenter/Publisher) to migrate your [`NSNotification`](https://developer.apple.com/documentation/Foundation/NSNotification) handling code to the Combine idiom. You create this publisher with the [`NotificationCenter`](https://developer.apple.com/documentation/Foundation/NotificationCenter) method [`publisher(for:object:)`](https://developer.apple.com/documentation/Foundation/NotificationCenter/publisher(for:object:)), passing in the notification name in which you’re interested and a source object, if any.
 
 Rewrite the above code in Combine as shown in the following listing. This code uses the default notification center to create a publisher for the [`orientationDidChangeNotification`](https://developer.apple.com/documentation/UIKit/UIDevice/orientationDidChangeNotification) notification. When the code receives notifications from this publisher, it applies a filter operator to only act on portrait orientation notifications, and prints a message.
 
@@ -42,7 +42,7 @@ override func viewDidLoad() {
 }
 ```
 
-Note that in this case, the [`orientationDidChangeNotification`](https://developer.apple.com/documentation/UIKit/UIDevice/orientationDidChangeNotification) doesn’t contain the new orientation in its [`userInfo`](https://developer.apple.com/documentation/foundation/notification/1779652-userinfo) dictionary, so the [`filter(_:)`](publisher/filter(_:).md) operator queries the [`UIDevice`](https://developer.apple.com/documentation/UIKit/UIDevice) directly.
+Note that in this case, the [`orientationDidChangeNotification`](https://developer.apple.com/documentation/UIKit/UIDevice/orientationDidChangeNotification) doesn’t contain the new orientation in its [`userInfo`](https://developer.apple.com/documentation/Foundation/Notification/userInfo) dictionary, so the [`filter(_:)`](publisher/filter(_:).md) operator queries the [`UIDevice`](https://developer.apple.com/documentation/UIKit/UIDevice) directly.
 
 ## See Also
 

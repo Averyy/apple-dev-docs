@@ -17,6 +17,15 @@
 func JSValueIsBigInt(_ ctx: JSContextRef, _ value: JSValueRef) -> Bool
 ```
 
+#### Return Value
+
+True if value’s type is the BigInt type, otherwise false.
+
+## Parameters
+
+- `ctx`: The execution context to use.
+- `value`: The JSValue to test.
+
 
 ---
 

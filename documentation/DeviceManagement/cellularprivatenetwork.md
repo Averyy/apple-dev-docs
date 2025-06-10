@@ -8,8 +8,6 @@ The payload to provide device info on private network deployments, including geo
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,17 +23,17 @@ Specify `com.apple.cellularprivatenetwork.managed` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, Shared iPad |
-| User Channel | - |
-| Allow Manual Install | iOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, Shared iPad |
+| User channel | NA |
+| Allow manual install | iOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | iOS, Shared iPad |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

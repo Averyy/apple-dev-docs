@@ -1,6 +1,6 @@
 # translate
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Moves the origin of the canvas coordinate system.

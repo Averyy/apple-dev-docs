@@ -22,8 +22,6 @@ Set `quantity` to `1` when a customer purchases a single product. Use a value gr
 
 > ❗ **Important**: Amount values always represent the total amount for the line item, not a per-item amount. The `quantity` value is not used for calculations.
 
-Amount values always represent the total amount for the line item, not a per-item amount. The `quantity` value is not used for calculations.
-
 Multiple items may be considered a single product if they are sold as a package. For example, a 10-pack of game gems may be a single product with a quantity of `1`.
 
 If the [`productType`](producttype.md) is `SUBSCRIPTION`, use a `quantity` greater than `1` to indicate a purchase of multiple subscriptions that renew as one, for example, a multi-seat subscription. If subscriptions can have different billing dates or renewal schedules, report them as separate line items with a `quantity` of `1`.

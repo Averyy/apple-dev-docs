@@ -1,6 +1,6 @@
 # symbolName
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A string that represents a human-readable symbol in source code.

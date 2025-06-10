@@ -1,6 +1,6 @@
 # hasCommands
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating whether the extension includes commands that users can invoke.

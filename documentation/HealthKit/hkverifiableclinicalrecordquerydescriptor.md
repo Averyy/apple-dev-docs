@@ -1,6 +1,6 @@
 # HKVerifiableClinicalRecordQueryDescriptor
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: struct
 
 A query interface that provides one-time access to a SMART Health Card or EU Digital COVID Certificate using Swift concurrency.
@@ -98,4 +98,4 @@ Unlike other HealthKit queries, you don’t need to request permission to read v
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkverifiableclinicalrecordquerydescriptor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkverifiableclinicalrecordquerydescriptor)*

@@ -40,7 +40,7 @@ init(fovyRadians: Double, aspectRatio: Double, nearZ: Double, farZ: Double, reve
   Creates a projective transform from the specified 4 x 4 single-precision matrix.
 - [init(scale: Size3D, rotation: Rotation3D, translation: Size3D)](projectivetransform3d/init(scale:rotation:translation:)-8qxxq.md)
   Creates a projective transform from the specified scale, rotate, and translate transforms.
-- [init(translation: Size3D)](projectivetransform3d/init(translation:)-4oiao.md)
+- [init(translation: Size3D)](projectivetransform3d/init(translation:).md)
 - [init(fovyRadians: Double, aspectRatio: Double, nearZ: Double, farZ: Double)](projectivetransform3d/init(fovyradians:aspectratio:nearz:farz:).md)
 
 

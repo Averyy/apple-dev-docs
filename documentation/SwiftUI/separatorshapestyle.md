@@ -34,6 +34,7 @@ You can also use [`separator`](shapestyle/separator.md) to construct this style.
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 
 ## See Also

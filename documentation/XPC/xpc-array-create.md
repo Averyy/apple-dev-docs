@@ -1,6 +1,6 @@
 # xpc_array_create(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates an XPC object that represents an array of XPC objects.

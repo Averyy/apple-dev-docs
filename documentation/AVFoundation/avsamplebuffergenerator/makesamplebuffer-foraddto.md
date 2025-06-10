@@ -39,7 +39,7 @@ The request may fail based on generator configuration or file format.
 
 ## See Also
 
-- [func makeSampleBuffer(for: AVSampleBufferRequest) throws -> CMSampleBuffer](avsamplebuffergenerator/makesamplebuffer(for:).md)
+- [func makeSampleBuffer(for: AVSampleBufferRequest) throws -> sending CMSampleBuffer](avsamplebuffergenerator/makesamplebuffer(for:).md)
   Creates a sample buffer, and attempts to load its data asynchronously if requested.
 - [func makeBatch() -> AVSampleBufferGeneratorBatch](avsamplebuffergenerator/makebatch.md)
   Creates a batch object to handle generating multiple sample buffers.

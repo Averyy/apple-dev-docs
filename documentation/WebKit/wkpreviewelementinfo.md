@@ -1,6 +1,6 @@
 # WKPreviewElementInfo
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 The `WKPreviewElement` object contains information for previewing a webpage.

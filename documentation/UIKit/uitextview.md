@@ -24,9 +24,9 @@ class UITextView
 - [Customizing Writing Tools behavior for UIKit views](customizing-writing-tools-behavior-for-system-views.md)
 - [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
 - [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
-- [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
 - [Making a view into a drag source](making-a-view-into-a-drag-source.md)
+- [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
+- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
 
 #### Overview
 
@@ -154,8 +154,13 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   The text storage object holding the text that displays in the text view.
 ### Supporting state restoration
 - [var interactionState: Any](uitextview/interactionstate.md)
+### Structures
+- [UITextView.TextDidBeginEditingMessage](uitextview/textdidbegineditingmessage.md)
+- [UITextView.TextDidChangeMessage](uitextview/textdidchangemessage.md)
+- [UITextView.TextDidEndEditingMessage](uitextview/textdidendeditingmessage.md)
 ### Instance Properties
 - [var allowedWritingToolsResultOptions: UIWritingToolsResultOptions](uitextview/allowedwritingtoolsresultoptions.md)
+- [var selectedRanges: [NSRange]](uitextview/selectedranges-70g3h.md)
 - [var subclassForWritingToolsCoordinator: AnyClass](uitextview/subclassforwritingtoolscoordinator.md)
 - [var textFormattingConfiguration: UITextFormattingViewController.Configuration?](uitextview/textformattingconfiguration.md)
 - [var writingToolsBehavior: UIWritingToolsBehavior](uitextview/writingtoolsbehavior.md)
@@ -177,6 +182,7 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

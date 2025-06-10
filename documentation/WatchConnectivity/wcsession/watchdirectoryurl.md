@@ -1,6 +1,6 @@
 # watchDirectoryURL
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 A directory for storing information specific to the currently paired and active Apple Watch.

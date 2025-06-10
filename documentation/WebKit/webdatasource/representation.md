@@ -1,6 +1,6 @@
 # representation
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The data source’s representation depending on its MIME type.

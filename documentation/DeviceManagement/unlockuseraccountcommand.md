@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to unlock a local user account on a device.
+The command to unlock a user account that the system locked because of too many failed password attempts.
 
 **Availability**:
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,14 +20,14 @@ object UnlockUserAccountCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object UnlockUserAccountCommand.Command](unlockuseraccountcommand/command-data.dictionary.md)
-  The request dictionary to unlock a local user account.
+  The command to unlock a user account that the system locked because of too many failed password attempts.
 
 ## See Also
 
 - [object UnlockUserAccountResponse](unlockuseraccountresponse.md)
-  A response from the device after it processes the command to unlock a user account.
+  A response from the device after it processes the command to unlock a user account that the system locked because of too many failed password attempts.
 
 
 ---

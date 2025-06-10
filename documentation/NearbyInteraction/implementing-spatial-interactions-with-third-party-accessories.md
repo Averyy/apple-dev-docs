@@ -1,6 +1,6 @@
 # Implementing spatial interactions with third-party accessories
 
-**Framework**: Nearbyinteraction
+**Framework**: Nearby Interaction
 
 Establish a connection with a nearby accessory to receive periodic measurements of its distance from the user.
 
@@ -25,4 +25,4 @@ Set the run destination to an iPhone that contains a U1 chip. The sample app int
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/NearbyInteraction/implementing-spatial-interactions-with-third-party-accessories)*
+*[View on Apple Developer](https://developer.apple.com/documentation/nearbyinteraction/implementing-spatial-interactions-with-third-party-accessories)*

@@ -1,6 +1,6 @@
 # XCUISiriService
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: class
 
 A proxy that simulates a device’s Siri interface.

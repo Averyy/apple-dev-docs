@@ -22,8 +22,8 @@ func textureNamed(_ name: String) -> SKTexture
 
 ## Mentions
 
-- [About Texture Atlases](about-texture-atlases.md)
 - [Maximizing Node Drawing Performance](maximizing-node-drawing-performance.md)
+- [About Texture Atlases](about-texture-atlases.md)
 
 #### Return Value
 

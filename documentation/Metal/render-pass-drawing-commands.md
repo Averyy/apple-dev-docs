@@ -12,8 +12,6 @@ To render tessellated patches, configure the render pass with a post-tessellatio
 
 > ❗ **Important**:  Post-tessellation vertex shaders only apply to the tessellation patch-drawing methods.
 
- Post-tessellation vertex shaders only apply to the tessellation patch-drawing methods.
-
 ## Topics
 
 ### Drawing with Meshes

@@ -29,12 +29,11 @@ Don’t use this type directly. Instead, MapKit creates this type on your behalf
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also
 
-- [struct AnyMapContent](anymapcontent.md)
-  A structure you use to change the type of content MapKit uses in a map view.
 - [struct EmptyMapContent](emptymapcontent.md)
   A map content element that doesn’t contain any content.
 - [struct MapProxy](mapproxy.md)

@@ -1,6 +1,6 @@
 # HKCategoryValueSleepAnalysis
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: enum
 
 Categories that represent the result of a sleep analysis.
@@ -81,6 +81,7 @@ By comparing the start and end times of these samples, apps can calculate second
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -118,4 +119,4 @@ By comparing the start and end times of these samples, apps can calculate second
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkcategoryvaluesleepanalysis)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkcategoryvaluesleepanalysis)*

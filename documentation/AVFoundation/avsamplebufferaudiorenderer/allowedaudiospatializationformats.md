@@ -27,8 +27,6 @@ This property isn’t key-value observable.
 
 > ❗ **Important**:  It’s incorrect to render binaural recordings with spatialization. Content tagged with a binaural channel layout ignores this property value.
 
- It’s incorrect to render binaural recordings with spatialization. Content tagged with a binaural channel layout ignores this property value.
-
 
 ---
 

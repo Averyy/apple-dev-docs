@@ -1,6 +1,6 @@
 # Injecting a script into a webpage
 
-**Framework**: Safariservices
+**Framework**: Safari Services
 
 Inject a script that you write for a Safari app extension into a webpage.
 
@@ -81,4 +81,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/injecting-a-script-into-a-webpage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/injecting-a-script-into-a-webpage)*

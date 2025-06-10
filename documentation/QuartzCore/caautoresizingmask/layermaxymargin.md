@@ -6,7 +6,7 @@
 The top margin between the receiver and its superview is flexible.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst 13.1+
 - macOS ?+
 
 ## Declaration

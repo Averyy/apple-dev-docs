@@ -1,6 +1,6 @@
 # reloadAllTimelines()
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: method
 
 Reloads the timelines for all configured widgets belonging to the containing app.
@@ -8,8 +8,9 @@ Reloads the timelines for all configured widgets belonging to the containing app
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -17,6 +18,10 @@ Reloads the timelines for all configured widgets belonging to the containing app
 ```swift
 func reloadAllTimelines()
 ```
+
+## Mentions
+
+- [Updating widgets with WidgetKit push notifications](updating-widgets-with-widgetkit-push-notifications.md)
 
 ## See Also
 

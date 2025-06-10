@@ -1,6 +1,6 @@
 # fitzpatrickSkinType()
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: method
 
 Reads the user’s Fitzpatrick Skin Type from the HealthKit store.

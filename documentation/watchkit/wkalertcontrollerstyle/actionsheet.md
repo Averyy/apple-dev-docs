@@ -1,6 +1,6 @@
 # WKAlertControllerStyle.actionSheet
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 An action sheet style. Action sheets are modal sheets that can be dismissed using the Cancel button in the top-left corner of the sheet. You can also add one or two custom buttons to perform related tasks.

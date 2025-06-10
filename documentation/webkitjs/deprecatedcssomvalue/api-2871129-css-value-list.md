@@ -1,6 +1,6 @@
 # CSS_VALUE_LIST
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

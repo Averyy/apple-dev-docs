@@ -1,6 +1,6 @@
 # WeatherCondition.strongStorms
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Notably strong thunderstorms.

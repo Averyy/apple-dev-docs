@@ -10,8 +10,6 @@ The payload you use to configure the domains under an organization’s managemen
 - iPadOS 8.0+
 - macOS 10.10+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -33,17 +31,17 @@ If a domain string entry contains a port number, the system considers only addre
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad |
-| User Channel | macOS, Shared iPad |
-| Allow Manual Install | iOS, macOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, macOS, Shared iPad, visionOS |
+| User channel | macOS, Shared iPad |
+| Allow manual install | iOS, macOS, visionOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

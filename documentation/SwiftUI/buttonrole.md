@@ -35,12 +35,18 @@ Button("Delete", role: .destructive) { delete() }
   A role that indicates a button that cancels an operation.
 - [static let destructive: ButtonRole](buttonrole/destructive.md)
   A role that indicates a destructive button.
+### Type Properties
+- [static let close: ButtonRole](buttonrole/close.md)
+  A role that indicates a button that closes the current operation.
+- [static let confirm: ButtonRole](buttonrole/confirm.md)
+  A role that indicates a button that confirms an operation.
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -58,6 +64,7 @@ Button("Delete", role: .destructive) { delete() }
   A shape used to draw a button’s border.
 - [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
+- [struct ButtonSizing](buttonsizing.md)
 
 
 ---

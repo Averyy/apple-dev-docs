@@ -22,15 +22,15 @@ protocol SKSceneDelegate : NSObjectProtocol
 
 ## Mentions
 
-- [Configuring a Physics Body](configuring-a-physics-body.md)
-- [Subclassing Scenes Versus Assigning a Delegate](subclassing-scenes-versus-assigning-a-delegate.md)
 - [Getting Started with Nodes](getting-started-with-nodes.md)
+- [Use SpriteKit Objects within Scene Delegate Callbacks](use-spritekit-objects-within-scene-delegate-callbacks.md)
+- [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
+- [Displaying 3D Content in a SpriteKit Scene](displaying-3d-content-in-a-spritekit-scene.md)
 - [Getting Started with Actions](getting-started-with-actions.md)
 - [Disconnecting Bodies from Joints](disconnecting-bodies-from-joints.md)
-- [Responding to Frame-Cycle Events](responding-to-frame-cycle-events.md)
-- [Use SpriteKit Objects within Scene Delegate Callbacks](use-spritekit-objects-within-scene-delegate-callbacks.md)
 - [Detecting Changes at Each Step of an Animation](detecting-changes-at-each-step-of-an-animation.md)
-- [Displaying 3D Content in a SpriteKit Scene](displaying-3d-content-in-a-spritekit-scene.md)
+- [Subclassing Scenes Versus Assigning a Delegate](subclassing-scenes-versus-assigning-a-delegate.md)
+- [Configuring a Physics Body](configuring-a-physics-body.md)
 
 #### Overview
 
@@ -41,8 +41,6 @@ When processing a scene, SpriteKit runs a loop that processes and renders the sc
 ![Frame processing in a scene](https://docs-assets.developer.apple.com/published/be1a33d8b82e5a33a9f3873c756bb121/media-2527821%402x.png)
 
 > ❗ **Important**:  If your view has a [`SKViewDelegate`](skviewdelegate.md) and its [`view(_:shouldRenderAtTime:)`](skviewdelegate/view(_:shouldrenderattime:).md) method returns [`false`](https://developer.apple.com/documentation/swift/false), the update is skipped and none of the scene delegate methods are called.
-
- If your view has a [`SKViewDelegate`](skviewdelegate.md) and its [`view(_:shouldRenderAtTime:)`](skviewdelegate/view(_:shouldrenderattime:).md) method returns [`false`](https://developer.apple.com/documentation/swift/false), the update is skipped and none of the scene delegate methods are called.
 
 ## Topics
 

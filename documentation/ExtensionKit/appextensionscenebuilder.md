@@ -49,6 +49,7 @@ A custom parameter attribute that constructs extension scenes from closures.
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

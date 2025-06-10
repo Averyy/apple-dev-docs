@@ -1,6 +1,6 @@
 # restoreState(with:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Restores the interface-related state of the document.

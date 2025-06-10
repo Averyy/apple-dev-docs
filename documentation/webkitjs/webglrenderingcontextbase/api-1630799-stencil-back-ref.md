@@ -1,6 +1,6 @@
 # STENCIL_BACK_REF
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

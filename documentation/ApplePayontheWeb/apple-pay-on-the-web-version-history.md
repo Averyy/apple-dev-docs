@@ -8,7 +8,7 @@ Learn about features in each version of Apple Pay on the Web.
 
 Specify the Apple Pay version your website supports when you create a session by calling [`ApplePaySession`](applepaysession/applepaysession.md) or by creating an [`ApplePayRequest`](applepayrequest.md). Keep in mind that customers using Apple Pay may be running any version of Apple Pay. The operating system of the customer’s device determines the version of Apple Pay that it runs. To support all customers, make sure your app works properly with all Apple Pay versions. See [`supportsVersion`](applepaysession/supportsversion.md) for more information.
 
-Apple Pay version numbers apply to both [`Apple Pay JS API`](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api) and [`Payment Request API`](https://developer.apple.com/documentation/apple_pay_on_the_web/payment_request_api).
+Apple Pay version numbers apply to both [`Apple Pay JS API`](apple-pay-js-api.md) and [`Payment Request API`](payment-request-api.md).
 
 ## Topics
 

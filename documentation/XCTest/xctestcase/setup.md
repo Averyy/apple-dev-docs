@@ -1,6 +1,6 @@
 # setUp()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Provides an opportunity to customize initial state before a test case begins.

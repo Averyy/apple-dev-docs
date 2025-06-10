@@ -1,6 +1,6 @@
 # confirmAcquired(in:completionHandler:)
 
-**Framework**: Appclip  
+**Framework**: App Clips  
 **Kind**: method
 
 Checks whether an App Clip invocation happened at an expected physical location.

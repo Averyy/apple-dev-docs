@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: init
 
-Creates a new `JoinConversationAction`.
+Creates an action for joining an incoming conversation.
 
 **Availability**:
 - iOS 17.4+
@@ -20,7 +20,7 @@ init(conversationUUID: UUID)
 
 ## Parameters
 
-- `conversationUUID`: The unique identfiier of the   to which this action will be applied.
+- `conversationUUID`: The unique identifier of the incoming conversation.
 
 
 ---

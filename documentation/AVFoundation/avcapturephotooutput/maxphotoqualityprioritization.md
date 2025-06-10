@@ -28,8 +28,6 @@ When you attach the photo output to an [`AVCaptureSession`](avcapturesession.md)
 
 > ❗ **Important**:  Changing the value of this property while the session is running causes the session to be rebuilt. This can be an expensive operation that will interrupt video preview until complete.
 
- Changing the value of this property while the session is running causes the session to be rebuilt. This can be an expensive operation that will interrupt video preview until complete.
-
 ## See Also
 
 - [AVCapturePhotoOutput.QualityPrioritization](avcapturephotooutput/qualityprioritization.md)

@@ -1,6 +1,6 @@
 # WKURLSessionRefreshBackgroundTask
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A task that responds to background URL sessions.
@@ -43,7 +43,7 @@ backgroundTask.earliestBeginDate = Date().addingTimeInterval(15 * 60)
 backgroundTask.resume()
 ```
 
-If your app has a complication on the active watch face, it can receive up to four [`WKURLSessionRefreshBackgroundTask`](wkurlsessionrefreshbackgroundtask.md) tasks per hour. To avoid throttling, use the [`earliestBeginDate`](https://developer.apple.com/documentation/foundation/urlsessiontask/2873413-earliestbegindate) property to schedule background URL session tasks no closer than 15 minutes apart.
+If your app has a complication on the active watch face, it can receive up to four [`WKURLSessionRefreshBackgroundTask`](wkurlsessionrefreshbackgroundtask.md) tasks per hour. To avoid throttling, use the [`earliestBeginDate`](https://developer.apple.com/documentation/Foundation/URLSessionTask/earliestBeginDate) property to schedule background URL session tasks no closer than 15 minutes apart.
 
 Don’t subclass or create instances of this class. Instead, the system instantiates a [`WKURLSessionRefreshBackgroundTask`](wkurlsessionrefreshbackgroundtask.md) object and passes the task object to your extension delegate’s [`handle(_:)`](wkapplicationdelegate/handle(_:)-4vdjo.md) method in response to [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) events. Defer calling the background [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) task’s `setTaskCompleted()` method until all the delegate method calls finish processing.
 
@@ -74,6 +74,7 @@ To get more information about the transfer, create a background configuration ob
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -99,4 +100,4 @@ To get more information about the transfer, create a background configuration ob
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkurlsessionrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkurlsessionrefreshbackgroundtask)*

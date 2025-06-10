@@ -1,6 +1,6 @@
 # session(_:didReceiveMessageData:replyHandler:)
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method
 
 Tells the delegate that an immediate data message has arrived, and it requires a response.

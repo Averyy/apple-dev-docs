@@ -24,15 +24,11 @@ func makeAliasable()
 
 > ❗ **Important**:  This method is only valid for heap-allocated resources using the [`MTLHeapType.automatic`](mtlheaptype/automatic.md) allocator.
 
- This method is only valid for heap-allocated resources using the [`MTLHeapType.automatic`](mtlheaptype/automatic.md) allocator.
-
 Resource instances marked as aliased have backing memory available for use in new allocations to the heap. One common use case is to make a single large resource aliasable for reuse of memory by smaller and more frequent resource allocations. For situations where you need fine-grained control over your memory management, you might want to use a heap with the allocation type [`MTLHeapType.placement`](mtlheaptype/placement.md) and manage memory yourself instead.
 
 Aliased resources can’t be un-aliased or moved. If you use an aliased resource instance to read or write data, it results in undefined behavior.
 
 > ⚠️ **Warning**:  When you alias a resource, make sure it’s safe to release the underlying data. Accessing the data of an aliased resource instance can cause memory corruption.
-
- When you alias a resource, make sure it’s safe to release the underlying data. Accessing the data of an aliased resource instance can cause memory corruption.
 
 When working with resources possibly backed by aliased memory, you should take great care that the system doesn’t access resources from multiple aliases concurrently. Use an [`MTLEvent`](mtlevent.md) or [`MTLFence`](mtlfence.md) instance to protect access to resources that you’ve either already aliased or intend to alias.
 

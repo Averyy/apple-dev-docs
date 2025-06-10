@@ -30,6 +30,7 @@ protocol PlayableMusicItem : MusicItem
 ### Inherits From
 - [MusicItem](musicitem.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [Album](album.md)
 - [MusicPlayer.Queue.Entry.Item](musicplayer/queue/entry/item-swift.enum.md)

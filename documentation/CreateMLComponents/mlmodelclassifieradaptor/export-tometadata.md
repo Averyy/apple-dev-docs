@@ -1,6 +1,6 @@
 # export(to:metadata:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Exports this transformer as a CoreML model with userInfo.

@@ -1,6 +1,6 @@
 # webViewAreToolbarsVisible(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a Boolean value indicating whether any toolbars are visible in a web view’s window.

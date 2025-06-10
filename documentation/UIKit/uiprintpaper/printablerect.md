@@ -14,7 +14,6 @@ The rectangle that represents the portion of the paper that can be imaged upon.
 ## Declaration
 
 ```swift
-@MainActor
 var printableRect: CGRect { get }
 ```
 

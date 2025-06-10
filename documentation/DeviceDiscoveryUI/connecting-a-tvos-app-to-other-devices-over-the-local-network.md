@@ -1,6 +1,6 @@
 # Connecting a tvOS app to other devices over the local network
 
-**Framework**: Devicediscoveryui
+**Framework**: DeviceDiscoveryUI
 
 Display a view in your tvOS app that lists available iOS, iPadOS, and watchOS devices that the user can connect to over their local network.
 
@@ -255,4 +255,4 @@ Start the listener as quickly as possible after your app launches. This ensures 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceDiscoveryUI/connecting-a-tvos-app-to-other-devices-over-the-local-network)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicediscoveryui/connecting-a-tvos-app-to-other-devices-over-the-local-network)*

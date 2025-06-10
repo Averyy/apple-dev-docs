@@ -14,8 +14,6 @@ The raw force value associated with a touch is available in the [`force`](uitouc
 
 > ❗ **Important**:  If your app implements peek-and-pop support, don’t use raw force don’t as input to your app. For information about using 3D Touch to support the UIKit peek-and-pop APIs, see [`Adopting 3D Touch on iPhone`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Adopting3DTouchOniPhone/index.html#//apple_ref/doc/uid/TP40016543).
 
- If your app implements peek-and-pop support, don’t use raw force don’t as input to your app. For information about using 3D Touch to support the UIKit peek-and-pop APIs, see [`Adopting 3D Touch on iPhone`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Adopting3DTouchOniPhone/index.html#//apple_ref/doc/uid/TP40016543).
-
 For guidance about using 3D Touch, see [`iOS Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/ios/human-interface-guidelines/).
 
 ## Topics

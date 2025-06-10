@@ -11,6 +11,7 @@ Represents a type of haptic and/or audio feedback that can be played.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS 26.0+ (Beta)
 - watchOS 10.0+
 
 ## Declaration
@@ -61,18 +62,33 @@ This feedback can be passed to `View.sensoryFeedback` to play it.
   The flexibility to be represented by a type of feedback.
 - [SensoryFeedback.Weight](sensoryfeedback/weight.md)
   The weight to be represented by a type of feedback.
+### Structures
+- [SensoryFeedback.PressFeedback](sensoryfeedback/pressfeedback.md)
+  Feedback that can be played in response to a press (touch down) on a control.
+- [SensoryFeedback.ReleaseFeedback](sensoryfeedback/releasefeedback.md)
+  Feedback that can be played in response to a release (touch up) of a control.
+- [SensoryFeedback.SelectionFeedback](sensoryfeedback/selectionfeedback.md)
+  Feedback that can be played in response to a specific UI element’s values changing.
+### Type Methods
+- [static func press(SensoryFeedback.PressFeedback) -> SensoryFeedback](sensoryfeedback/press(_:).md)
+  Plays feedback in response to a specific UI element being pressed (touch down).
+- [static func release(SensoryFeedback.ReleaseFeedback) -> SensoryFeedback](sensoryfeedback/release(_:).md)
+  Plays feedback in response to a specific UI element being released (touch up).
+- [static func selection(SensoryFeedback.SelectionFeedback) -> SensoryFeedback](sensoryfeedback/selection(_:).md)
+  Plays feedback in response to a specific UI element’s values changing.
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T) -> some View](view/sensoryfeedback(_:trigger:).md)
   Plays the specified `feedback` when the provided `trigger` value changes.
-- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](view/sensoryfeedback(trigger:_:).md)
+- [func sensoryFeedback(trigger:_:)](view/sensoryfeedback(trigger:_:).md)
   Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T, condition: (T, T) -> Bool) -> some View](view/sensoryfeedback(_:trigger:condition:).md)
   Plays the specified `feedback` when the provided `trigger` value changes and the `condition` closure returns `true`.

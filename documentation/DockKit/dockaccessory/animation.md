@@ -50,6 +50,7 @@ Each animation executes on a predefined trajectory. See [`animate(motion:)`](doc
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

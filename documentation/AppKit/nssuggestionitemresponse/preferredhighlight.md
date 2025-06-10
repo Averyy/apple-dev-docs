@@ -1,6 +1,6 @@
 # preferredHighlight
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The preferred response that the control should take when this batch of results comes in (like whether or not to highlight the first selectable item). Defaults to `.automatic`.
@@ -21,4 +21,4 @@ var preferredHighlight: NSSuggestionItemResponse<SuggestionItemType>.Highlight
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nssuggestionitemresponse/preferredhighlight)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nssuggestionitemresponse/preferredhighlight)*

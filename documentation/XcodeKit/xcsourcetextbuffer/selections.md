@@ -1,6 +1,6 @@
 # selections
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The text selections in the buffer.

@@ -1,6 +1,6 @@
 # WKContextMenuElementInfo
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that contains information about a link the user clicked in a webpage, and which you use to configure a context menu for that link.

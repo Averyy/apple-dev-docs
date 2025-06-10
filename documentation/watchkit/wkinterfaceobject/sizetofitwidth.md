@@ -1,6 +1,6 @@
 # sizeToFitWidth()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the width of the object to fit its current content.

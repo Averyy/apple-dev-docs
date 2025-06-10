@@ -1,6 +1,6 @@
 # IOUserUSBSerial
 
-**Framework**: Usbserialdriverkit  
+**Framework**: USBSerialDriverKit  
 **Kind**: class
 
 A service that manages a serial connection to a USB device.

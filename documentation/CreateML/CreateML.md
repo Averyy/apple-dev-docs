@@ -50,8 +50,6 @@ Create ML leverages the machine learning infrastructure built in to Apple produc
 ### Text Models
 - [Creating a text classifier model](creating-a-text-classifier-model.md)
   Train a machine learning model to classify natural language text.
-- [Creating a word tagger model](../NaturalLanguage/creating-a-word-tagger-model.md)
-  Train a machine learning model to tag individual words in natural language text.
 - [struct MLTextClassifier](mltextclassifier.md)
   A model you train to classify natural language text.
 - [struct MLWordTagger](mlwordtagger.md)
@@ -112,12 +110,12 @@ Create ML leverages the machine learning infrastructure built in to Apple produc
 - [enum MLSplitStrategy](mlsplitstrategy.md)
   Data partitioning approaches, typically for creating a validation dataset from a training dataset.
 ### Articles
-- [Gathering Training Videos for an Action Classifier](recording-or-choosing-training-videos.md)
-  Collect quality example videos that effectively train action classifiers.
 - [Creating a Text Classifier Model](creating-a-classification-model-for-natural-language.md)
   Train a machine learning model to classify natural language text.
 - [Data Visualizations](create-ml-utilties.md)
   Render images of data tables and columns in a playground.
+- [Gathering Training Videos for an Action Classifier](recording-or-choosing-training-videos.md)
+  Collect quality example videos that effectively train action classifiers.
 - [Option Set Support](option-set-support.md)
   Inspect and modify a video augmentation option set with the properties and methods it inherits from standard protocols.
 ### Enumerations

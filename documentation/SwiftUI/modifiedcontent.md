@@ -25,7 +25,7 @@ struct ModifiedContent<Content, Modifier>
 
 ### Creating a modified content view
 - [init(content: Content, modifier: Modifier)](modifiedcontent/init(content:modifier:).md)
-  A structure that the defines the content and modifier needed to produce a new view or view modifier.
+  A structure that defines the content and modifier needed to produce a new view or view modifier.
 - [var content: Content](modifiedcontent/content.md)
   The content that the modifier transforms into a new view or new view modifier.
 - [var modifier: Modifier](modifiedcontent/modifier.md)
@@ -111,6 +111,8 @@ struct ModifiedContent<Content, Modifier>
   Explicitly set whether this Accessibility element responds to user interaction and would thus be interacted with by technologies such as Switch Control, Voice Control or Full Keyboard Access.
 - [func accessibilityScrollAction((Edge) -> Void) -> ModifiedContent<Content, Modifier>](modifiedcontent/accessibilityscrollaction(_:).md)
   Adds an accessibility scroll action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
+- [func accessibilityScrollStatus(_:isEnabled:)](modifiedcontent/accessibilityscrollstatus(_:isenabled:).md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
 - [func accessibilitySortPriority(Double) -> ModifiedContent<Content, Modifier>](modifiedcontent/accessibilitysortpriority(_:).md)
   Sets the sort priority order for this view’s accessibility element, relative to other elements at the same level.
 - [func accessibilityTextContentType(AccessibilityTextContentType) -> ModifiedContent<Content, Modifier>](modifiedcontent/accessibilitytextcontenttype(_:).md)
@@ -125,6 +127,8 @@ struct ModifiedContent<Content, Modifier>
 ## Relationships
 
 ### Conforms To
+- [Animatable](animatable.md)
+- [Chart3DContent](../Charts/Chart3DContent.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomHoverEffect](customhovereffect.md)
 - [DynamicMapContent](../MapKit/DynamicMapContent.md)
@@ -134,9 +138,12 @@ struct ModifiedContent<Content, Modifier>
 - [HoverEffectContent](hovereffectcontent.md)
 - [MapContent](../MapKit/MapContent.md)
 - [Scene](scene.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TableRowContent](tablerowcontent.md)
 - [View](view.md)
 - [ViewModifier](viewmodifier.md)
+- [VisualEffect](visualeffect.md)
 
 ## See Also
 
@@ -152,6 +159,14 @@ struct ModifiedContent<Content, Modifier>
   An empty, or identity, modifier, used during development to switch modifiers at compile time.
 - [protocol EnvironmentalModifier](environmentalmodifier.md)
   A modifier that must resolve to a concrete modifier in an environment before use.
+- [struct ManipulableModifier](manipulablemodifier.md)
+- [struct ManipulableResponderModifier](manipulablerespondermodifier.md)
+- [struct ManipulableTransformBindingModifier](manipulabletransformbindingmodifier.md)
+- [struct ManipulationGeometryModifier](manipulationgeometrymodifier.md)
+- [struct ManipulationGestureModifier](manipulationgesturemodifier.md)
+- [struct ManipulationUsingGestureStateModifier](manipulationusinggesturestatemodifier.md)
+- [enum Manipulable](manipulable.md)
+  A namespace for various manipulable related types.
 
 
 ---

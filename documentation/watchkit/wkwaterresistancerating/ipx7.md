@@ -1,6 +1,6 @@
 # WKWaterResistanceRating.ipx7
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 A water-resistance rating of IPX7.

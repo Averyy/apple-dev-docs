@@ -32,8 +32,6 @@ mutating func clamp(to rect: Rect3D)
   Returns a point that’s transformed by the specified scaled pose.
 - [func applying(Pose3D) -> Point3D](point3d/applying(_:)-7ulww.md)
   Returns a point that results from applying the specified pose.
-- [func clamped(to: Rect3D) -> Point3D](point3d/clamped(to:).md)
-  Returns a point with coordinates that clamp to the specified rectangle.
 - [func scale(by: Double)](point3d/scale(by:).md)
 - [func rotated(by: Rotation3D, around: Point3D) -> Point3D](point3d/rotated(by:around:)-4tmfq.md)
   Returns a point that results from applying a rotation around the specified point.

@@ -17,7 +17,7 @@ required DOMString merchantIdentifier;
 
 #### Discussion
 
-This is the merchant ID you created and registered with Apple. See [`Configuring Your Environment`](https://developer.apple.com/documentation/apple_pay_on_the_web/configuring_your_environment) for more information.
+This is the merchant ID you created and registered with Apple. See [`Configuring Your Environment`](configuring-your-environment.md) for more information.
 
 ## See Also
 

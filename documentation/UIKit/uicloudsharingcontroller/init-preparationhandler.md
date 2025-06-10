@@ -24,8 +24,6 @@ Use the [`init(preparationHandler:)`](uicloudsharingcontroller/init(preparationh
 
 > ❗ **Important**:  You must initialize the controller with the correct initializer method. Do not use [`init(preparationHandler:)`](uicloudsharingcontroller/init(preparationhandler:).md) if the [`CKRecord`](https://developer.apple.com/documentation/CloudKit/CKRecord) is already shared. Likewise, do not use [`init(share:container:)`](uicloudsharingcontroller/init(share:container:).md) if the [`CKRecord`](https://developer.apple.com/documentation/CloudKit/CKRecord) is not shared. Using the wrong initializer leads to errors when saving the record.
 
- You must initialize the controller with the correct initializer method. Do not use [`init(preparationHandler:)`](uicloudsharingcontroller/init(preparationhandler:).md) if the [`CKRecord`](https://developer.apple.com/documentation/CloudKit/CKRecord) is already shared. Likewise, do not use [`init(share:container:)`](uicloudsharingcontroller/init(share:container:).md) if the [`CKRecord`](https://developer.apple.com/documentation/CloudKit/CKRecord) is not shared. Using the wrong initializer leads to errors when saving the record.
-
 The `preparationHandler:` provided to the initializer method is responsible for saving the new [`CKShare`](https://developer.apple.com/documentation/CloudKit/CKShare) record. The handler has two parameters:
 
 - A reference to the [`UICloudSharingController`](uicloudsharingcontroller.md) instance that called the preparation handler

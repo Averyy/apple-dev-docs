@@ -863,6 +863,7 @@ struct SIMDMask<Storage> where Storage : SIMD, Storage.Scalar : FixedWidthIntege
 - [SIMD](simd.md)
 - [SIMDStorage](simdstorage.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

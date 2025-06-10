@@ -1,6 +1,6 @@
 # Simulating physics joints in your RealityKit app
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Create realistic, connected motion using physics joints.
 
@@ -82,7 +82,7 @@ parentSimulationEntity.components.set(PhysicsJointsComponent())
 
 A joint needs two [`GeometricPin`](geometricpin.md) instances on separate entities to create a physics joint.
 
-The app creates each pin with the method [`set(named:position:orientation:)`](entitygeometricpins/set(named:position:orientation:).md) on its respective entity. Use [`pins`](entity/pins.md) to access all pins an entity owns:
+The app creates each pin with the method [`set(named:position:orientation:)`](entitygeometricpins/set(named:position:orientation:).md) on its respective entity. Use `Entity/pins` to access all pins an entity owns:
 
 ```swift
 // Rotate hinge orientation from x to z-axis.
@@ -155,8 +155,10 @@ In the sample app, you can change the static value `PendulumSettings.pendulumCou
   A component that stores physics joints which RealityKit simulates.
 - [struct EntityGeometricPins](entitygeometricpins.md)
   A structure that wraps all geometric pins an entity owns.
+- [struct AttachedTransformComponent](attachedtransformcomponent.md)
+  A component that stores an optional source pin owned by this entity and a target pin which this entity is attached to
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/simulating-physics-joints-in-your-realitykit-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/simulating-physics-joints-in-your-realitykit-app)*

@@ -1,6 +1,6 @@
 # onvalidatemerchant
 
-**Framework**: Applepayontheweb  
+**Framework**: Apple Pay on the Web  
 **Kind**: property
 
 An event handler the system calls when it displays the payment sheet.
@@ -33,7 +33,7 @@ where `event` is an [`ApplePayValidateMerchantEvent`](applepayvalidatemerchantev
 The process to complete the merchant validation is as follows:
 
 1. Your [`onvalidatemerchant`](applepaysession/onvalidatemerchant.md) function calls your server, and passes it the static hostname `apple-pay-gateway.apple.com` as the validation URL. In the China region, use `cn-apple-pay-gateway.apple.com`.
-2. Your server uses the validation URL to request a session from the Apple Pay server, as described in [`Requesting an Apple Pay payment session`](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/requesting_an_apple_pay_payment_session).
+2. Your server uses the validation URL to request a session from the Apple Pay server, as described in [`Requesting an Apple Pay payment session`](requesting-an-apple-pay-payment-session.md).
 3. In response, your server receives an opaque merchant session object, `MerchantSession`.
 4. You pass the merchant session object to the completion method, [`completeMerchantValidation`](applepaysession/completemerchantvalidation.md).
 
@@ -55,4 +55,4 @@ The system enables the payment sheet.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaysession/onvalidatemerchant)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaysession/onvalidatemerchant)*

@@ -17,7 +17,7 @@ func claimSeat(matching seatID: TableSeatIdentifier)
 ## See Also
 
 - [func claimAnySeat()](tabletopgame/claimanyseat.md)
-  Claims any free seat. If there are no free seats, it has no effect
+  Claims any free seat. Has no effect if the player is already seated or if there are no free seats.
 - [func claimSeat(some TableSeat)](tabletopgame/claimseat(_:).md)
   Claims the given seat. If provided Seat is not part of the table, it has no effect
 - [func releaseSeat()](tabletopgame/releaseseat.md)

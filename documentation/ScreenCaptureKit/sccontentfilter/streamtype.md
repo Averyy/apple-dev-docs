@@ -1,6 +1,6 @@
 # streamType
 
-**Framework**: Screencapturekit  
+**Framework**: ScreenCaptureKit  
 **Kind**: property
 
 The type of the streaming content.

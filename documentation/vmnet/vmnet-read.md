@@ -1,6 +1,6 @@
 # vmnet_read(_:_:_:)
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: func
 
 Attempts to read a specified number of packets from an interface.

@@ -22,16 +22,14 @@ class UITableView
 ## Mentions
 
 - [Configuring the cells for your table](configuring-the-cells-for-your-table.md)
+- [Estimating the height of a table’s scrolling area](estimating-the-height-of-a-table-s-scrolling-area.md)
 - [Adding headers and footers to table sections](adding-headers-and-footers-to-table-sections.md)
 - [Making a view into a drag source](making-a-view-into-a-drag-source.md)
 - [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
-- [Estimating the height of a table’s scrolling area](estimating-the-height-of-a-table-s-scrolling-area.md)
 
 #### Overview
 
 Table views in iOS display rows of vertically scrolling content in a single column. Each row in the table contains one piece of your app’s content. For example, the Contacts app displays the name of each contact in a separate row, and the main page of the Settings app displays the available groups of settings. You can configure a table to display a single long list of rows, or you can group related rows into sections to make navigating the content easier.
-
-![Illustration showing the Contacts app and Settings app. The Contacts app uses a table to organize the user’s individual contacts in a scrolling list. The Settings app displays different groups of settings in a scrolling list.](https://docs-assets.developer.apple.com/published/c5825c4798a83073da9b456bc7877e71/media-3148900%402x.png)
 
 Tables are common in apps with data that’s highly structured or organized hierarchically. Apps that contain hierarchical data often use tables in conjunction with a navigation view controller, which facilitates navigation between different levels of the hierarchy. For example, the Settings app uses tables and a navigation controller to organize the system settings.
 
@@ -286,6 +284,8 @@ For information about how to save and restore your app’s state information, se
   A setting that determines which type of items tightly hug their content.
 - [struct UITableViewContentHuggingElements](uitableviewcontenthuggingelements.md)
   Constants that determine which types of items in a table view tightly hug their content.
+### Structures
+- [UITableView.SelectionDidChangeMessage](uitableview/selectiondidchangemessage.md)
 
 ## Relationships
 
@@ -303,6 +303,7 @@ For information about how to save and restore your app’s state information, se
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

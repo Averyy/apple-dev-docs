@@ -1,6 +1,6 @@
 # source-atop
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 #### Overview

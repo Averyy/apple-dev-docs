@@ -9,6 +9,7 @@ A type that represents a mobile document request.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -55,6 +56,13 @@ protocol MobileDocumentRequest : Hashable, Sendable
 ### Associated Types
 - [associatedtype Response : Hashable, Sendable](mobiledocumentrequest/response.md)
   A type that represents the response type of the request.
+### Type Methods
+- [static func displayDocument([MobileDocumentDisplayRequest.Element], options: MobileDocumentDisplayRequest.Options) -> Self](mobiledocumentrequest/displaydocument(_:options:).md)
+  A request that displays document elements onscreen.
+- [static func photoIDData(retaining: [MobilePhotoIDDataRequest.Element], notRetaining: [MobilePhotoIDDataRequest.Element]) -> Self](mobiledocumentrequest/photoiddata(retaining:notretaining:).md)
+  A request which retrieves elements from the holder and returns the validated document elements.
+- [static func photoIDRawData(retaining: [MobilePhotoIDRawDataRequest.Element], notRetaining: [MobilePhotoIDRawDataRequest.Element]) -> Self](mobiledocumentrequest/photoidrawdata(retaining:notretaining:).md)
+  A request which retrieves photo ID elements from the holder and returns the raw response data for processing.
 
 ## Relationships
 
@@ -62,13 +70,22 @@ protocol MobileDocumentRequest : Hashable, Sendable
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+### Inherited By
+- [MobileDocumentDataRequest](mobiledocumentdatarequest.md)
+- [MobileDocumentRawDataRequest](mobiledocumentrawdatarequest.md)
 ### Conforming Types
+- [MobileDocumentAnyOfDataRequest](mobiledocumentanyofdatarequest.md)
+- [MobileDocumentAnyOfRawDataRequest](mobiledocumentanyofrawdatarequest.md)
+- [MobileDocumentDisplayRequest](mobiledocumentdisplayrequest.md)
 - [MobileDriversLicenseDataRequest](mobiledriverslicensedatarequest.md)
 - [MobileDriversLicenseDisplayRequest](mobiledriverslicensedisplayrequest.md)
 - [MobileDriversLicenseRawDataRequest](mobiledriverslicenserawdatarequest.md)
 - [MobileNationalIDCardDataRequest](mobilenationalidcarddatarequest.md)
 - [MobileNationalIDCardDisplayRequest](mobilenationalidcarddisplayrequest.md)
 - [MobileNationalIDCardRawDataRequest](mobilenationalidcardrawdatarequest.md)
+- [MobilePhotoIDDataRequest](mobilephotoiddatarequest.md)
+- [MobilePhotoIDRawDataRequest](mobilephotoidrawdatarequest.md)
 
 ## See Also
 
@@ -84,6 +101,20 @@ protocol MobileDocumentRequest : Hashable, Sendable
   A mobile national ID card request that retrieves elements from the holder and returns the validated document elements.
 - [struct MobileNationalIDCardRawDataRequest](mobilenationalidcardrawdatarequest.md)
   A mobile national ID card request which retrieves elements from the holder and returns the raw response data for processing.
+- [struct MobileDocumentDisplayRequest](mobiledocumentdisplayrequest.md)
+  A mobile document request that retrieves elements from the holder and displays the results onscreen for visual inspection.
+- [protocol MobileDocumentDataRequest](mobiledocumentdatarequest.md)
+  A type that represents a mobile document data request.
+- [protocol MobileDocumentRawDataRequest](mobiledocumentrawdatarequest.md)
+  A type that represents a mobile document raw data request.
+- [struct MobilePhotoIDDataRequest](mobilephotoiddatarequest.md)
+  A photo ID request that retrieves elements from the holder and returns the validated document elements.
+- [struct MobilePhotoIDRawDataRequest](mobilephotoidrawdatarequest.md)
+  A mobile driver’s license request which retrieves elements from the holder and returns the raw response data for processing.
+- [struct MobileDocumentAnyOfDataRequest](mobiledocumentanyofdatarequest.md)
+  A type that describes a data request for any mobile document from a group of requests.
+- [struct MobileDocumentAnyOfRawDataRequest](mobiledocumentanyofrawdatarequest.md)
+  A type that describes a raw data request for any mobile document from a group of requests.
 
 
 ---

@@ -8,10 +8,10 @@ An App Intent that plays, pauses, or otherwise modifies audio playback state whe
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -34,6 +34,7 @@ Adopt this protocol to indicate to the system that your App Intent plays audio. 
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SystemIntent](systemintent.md)
 
 ## See Also

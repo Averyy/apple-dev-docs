@@ -1,6 +1,6 @@
 # multilineTextAlignment(_:)
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Sets the alignment of a text view that contains multiple lines of text.

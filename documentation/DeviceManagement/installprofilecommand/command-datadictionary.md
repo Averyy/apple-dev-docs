@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to install a configuration profile.
+The command to install a configuration profile on a device.
 
 **Availability**:
 - iOS 4.0+
@@ -12,8 +12,6 @@ The request dictionary to install a configuration profile.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

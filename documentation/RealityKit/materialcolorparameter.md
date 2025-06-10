@@ -10,6 +10,7 @@ The color parameter applied to a material.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -28,17 +29,11 @@ enum MaterialColorParameter
 ### Comparing material color parameters
 - [static func == (MaterialColorParameter, MaterialColorParameter) -> Bool](materialcolorparameter/==(_:_:).md)
   Indicates whether two color parameters are equal.
-- [static func != (Self, Self) -> Bool](materialcolorparameter/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [func hash(into: inout Hasher)](materialcolorparameter/hash(into:).md)
   Hashes the essential components of the color parameter by feeding them into the given hash function.
-- [var hashValue: Int](materialcolorparameter/hashvalue.md)
-  The hash value.
 ### Enumeration Cases
 - [MaterialColorParameter.color(_:)](materialcolorparameter/color(_:)-49aw0.md)
   A color value in macOS.
-### Default Implementations
-- [Equatable Implementations](materialcolorparameter/equatable-implementations.md)
 
 ## Relationships
 

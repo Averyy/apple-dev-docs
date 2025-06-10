@@ -10,7 +10,7 @@ Share image data between Core Video pixel buffers and vImage buffers to integrat
 
 #### Overview
 
-vImage supports reading from and writing to Core Video pixel buffers. This sample implements ends-in contrast stretching using vImage and makes that operation available to Core Image workflows by subclassing [`CIImageProcessorKernel`](https://developer.apple.com/documentation/coreimage/ciimageprocessorkernel). An image processor kernel uses Core Video pixel buffers for input and output, so the app creates vImage pixel buffers that share data with [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) instances.
+vImage supports reading from and writing to Core Video pixel buffers. This sample implements ends-in contrast stretching using vImage and makes that operation available to Core Image workflows by subclassing [`CIImageProcessorKernel`](https://developer.apple.com/documentation/CoreImage/CIImageProcessorKernel). An image processor kernel uses Core Video pixel buffers for input and output, so the app creates vImage pixel buffers that share data with [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVPixelBuffer) instances.
 
 The example below shows a photograph before (left) and after (right) the app has applied ends-in contrast stretching:
 
@@ -22,7 +22,7 @@ Before exploring the code, try building and running the app to familiarize yours
 
 ##### Define an Ends in Contrast Stretch Image Processor Kernel
 
-The `ContrastStretchImageProcessorKernel` inherits from the Core Image [`CIImageProcessorKernel`](https://developer.apple.com/documentation/coreimage/ciimageprocessorkernel) class.
+The `ContrastStretchImageProcessorKernel` inherits from the Core Image [`CIImageProcessorKernel`](https://developer.apple.com/documentation/CoreImage/CIImageProcessorKernel) class.
 
 The sample code defines a [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure that represents a four-channel, 8-bit-per-channel interleaved image format. The image processor kernel supports [`R8`](https://developer.apple.com/documentation/coreimage/ciformat/1437695-r8), [`BGRA8`](https://developer.apple.com/documentation/coreimage/ciformat/1438064-bgra8), [`RGBAh`](https://developer.apple.com/documentation/coreimage/ciformat/1437998-rgbah), and [`RGBAf`](https://developer.apple.com/documentation/coreimage/ciformat/1437756-rgbaf) input and output formats. For this sample project, the code overrides [`outputFormat`](https://developer.apple.com/documentation/coreimage/ciimageprocessorkernel/2143065-outputformat) and [`formatForInput(at:)`](https://developer.apple.com/documentation/coreimage/ciimageprocessorkernel/2138289-formatforinput) to return a `BGRA8` that’s the same as the [`bitmapInfo`](vimage_cgimageformat/bitmapinfo.md) property of the `vImage_CGImageFormat` structure.
 
@@ -127,7 +127,7 @@ Because the destination pixel buffer shares memory with the output Core Video pi
 
 ##### Apply the Ends in Contrast Stretching Operation to an Image
 
-The  `apply(withExtent:inputs:arguments:)` method generates a [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) instance based on the output of the processor’s `process(with:arguments:output:)` function.
+The  `apply(withExtent:inputs:arguments:)` method generates a [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) instance based on the output of the processor’s `process(with:arguments:output:)` function.
 
 ```swift
 let ciResult = try? ContrastStretchImageProcessorKernel.apply(

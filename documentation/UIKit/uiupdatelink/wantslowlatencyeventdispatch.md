@@ -28,8 +28,6 @@ Low-latency eligible events dispatch in the middle of a UI update. This timing g
 
 > ❗ **Important**:  If you opt in to this behavior, keep the complexity of the code you use to handle these events to a minimum. When an app requests low-latency event dispatch, but doesn’t optimize event-handling code, frames don’t submit for presentation in time. Dropped frames cause hitches and provide a suboptimal user experience. If you request dispatch of low-latency eligible events, make sure to profile your app thoroughly. For more information, read [`Understanding user interface responsiveness`](https://developer.apple.com/documentation/Xcode/understanding-user-interface-responsiveness).
 
- If you opt in to this behavior, keep the complexity of the code you use to handle these events to a minimum. When an app requests low-latency event dispatch, but doesn’t optimize event-handling code, frames don’t submit for presentation in time. Dropped frames cause hitches and provide a suboptimal user experience. If you request dispatch of low-latency eligible events, make sure to profile your app thoroughly. For more information, read [`Understanding user interface responsiveness`](https://developer.apple.com/documentation/Xcode/understanding-user-interface-responsiveness).
-
 ## See Also
 
 - [var requiresContinuousUpdates: Bool](uiupdatelink/requirescontinuousupdates.md)

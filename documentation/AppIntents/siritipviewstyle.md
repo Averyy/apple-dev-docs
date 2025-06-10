@@ -9,7 +9,7 @@ The styles to apply to the tip views you use to display spoken phrases.
 - iOS 16.0+
 - iPadOS 16.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -26,7 +26,6 @@ Specify a [`SiriTipViewStyle`](siritipviewstyle.md) value when you add a [`SiriT
 
 ### Getting the styles
 - [static let automatic: SiriTipViewStyle](siritipviewstyle/automatic.md)
-### Type Properties
 - [static let dark: SiriTipViewStyle](siritipviewstyle/dark.md)
 - [static let light: SiriTipViewStyle](siritipviewstyle/light.md)
 

@@ -25,10 +25,6 @@ Use this property to get additional information about the current scene, such as
 
 ## See Also
 
-- [var coordinateSpace: any UICoordinateSpace](uiwindowscene/coordinatespace.md)
-  The coordinate space occupied by the scene.
-- [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/interfaceorientation.md)
-  The orientation to use when displaying content in your windows.
 - [var sizeRestrictions: UISceneSizeRestrictions?](uiwindowscene/sizerestrictions.md)
   The minimum and maximum size of the app’s windows.
 - [class UISceneSizeRestrictions](uiscenesizerestrictions.md)

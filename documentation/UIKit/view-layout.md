@@ -54,7 +54,7 @@ When you design your app’s interface, you position views and other interface e
 - [View controllers](view-controllers.md)
   Manage your interface using view controllers and facilitate navigation around your app’s content.
 - [Appearance customization](appearance-customization.md)
-  Add Dark Mode support to your app, customize the appearance of bars, and use appearance proxies to modify your UI.
+  Apply Liquid Glass to views, support Dark Mode in your app, customize the appearance of bars, and use appearance proxies to modify your UI.
 - [Animation and haptics](animation-and-haptics.md)
   Provide feedback to users using view-based animations and haptics.
 - [Windows and screens](windows-and-screens.md)

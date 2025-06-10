@@ -1,6 +1,6 @@
 # WKAlertAction
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An object that encapsulates information about a button displayed in an alert or action sheet.

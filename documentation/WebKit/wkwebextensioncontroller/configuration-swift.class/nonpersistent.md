@@ -1,6 +1,6 @@
 # nonPersistent()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a new non-persistent configuration.

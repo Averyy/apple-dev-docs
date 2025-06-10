@@ -57,6 +57,7 @@ The default is [`DockAccessory.FramingMode.automatic`](dockaccessory/framingmode
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -24,12 +24,16 @@ static let android: Platform
   The tvOS platform.
 - [static let watchOS: Platform](platform/watchos.md)
   The watchOS platform.
+- [static let visionOS: Platform](platform/visionos.md)
+  The visionOS platform.
 - [static let macCatalyst: Platform](platform/maccatalyst.md)
   The Mac Catalyst platform.
 - [static let driverKit: Platform](platform/driverkit.md)
   The DriverKit platform
 - [static let linux: Platform](platform/linux.md)
   The Linux platform.
+- [static let freebsd: Platform](platform/freebsd.md)
+  The FreeBSD platform.
 - [static let openbsd: Platform](platform/openbsd.md)
   The OpenBSD platform.
 - [static let wasi: Platform](platform/wasi.md)

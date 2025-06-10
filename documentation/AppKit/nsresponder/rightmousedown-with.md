@@ -1,6 +1,6 @@
 # rightMouseDown(with:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Informs the receiver that the user has pressed the right mouse button.

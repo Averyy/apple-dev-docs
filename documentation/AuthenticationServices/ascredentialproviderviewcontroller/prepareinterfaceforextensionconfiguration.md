@@ -1,6 +1,6 @@
 # prepareInterfaceForExtensionConfiguration()
 
-**Framework**: Authenticationservices  
+**Framework**: Authentication Services  
 **Kind**: method
 
 Prepares the interface to enable the user to configure the extension.

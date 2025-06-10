@@ -1,6 +1,6 @@
 # embeddedThumbnailDimensions
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The size, in pixels, of the thumbnail image that the capture delivers.

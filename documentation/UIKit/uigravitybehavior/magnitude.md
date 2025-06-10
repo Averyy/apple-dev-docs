@@ -27,8 +27,6 @@ The default value of this property is `1.0`.
 
 > ❗ **Important**:  Setting the value of this property to `0.0` creates the vector (`0.0`, `0.0`) and resets the [`angle`](uigravitybehavior/angle.md) property to `0.0` radians. If you make subsequent changes to this property, also remember to update the [`angle`](uigravitybehavior/angle.md) property.
 
- Setting the value of this property to `0.0` creates the vector (`0.0`, `0.0`) and resets the [`angle`](uigravitybehavior/angle.md) property to `0.0` radians. If you make subsequent changes to this property, also remember to update the [`angle`](uigravitybehavior/angle.md) property.
-
 ## See Also
 
 - [var gravityDirection: CGVector](uigravitybehavior/gravitydirection.md)

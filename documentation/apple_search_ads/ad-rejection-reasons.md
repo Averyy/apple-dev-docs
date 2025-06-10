@@ -1,6 +1,6 @@
 # Ad Rejection Reasons
 
-**Framework**: Apple_Search_Ads
+**Framework**: Apple Search Ads
 
 Review reasons for an ad rejection.
 

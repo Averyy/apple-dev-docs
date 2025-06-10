@@ -1,6 +1,6 @@
 # shared
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A single, shared weather service object.

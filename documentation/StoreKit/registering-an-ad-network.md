@@ -22,8 +22,6 @@ The ad network ID is a unique lowercased identifier in the format of “`example
 
 > ❗ **Important**:  Lowercase the ad network ID string; otherwise, the system doesn’t recognize it as valid.
 
- Lowercase the ad network ID string; otherwise, the system doesn’t recognize it as valid.
-
 ##### Generate Your Private Key
 
 Ad networks use a private cryptographic key to generate a signature for each ad that an app displays. During registration, ad networks create a public-private key pair, and send the public key to Apple. The private key you create uses an Elliptic Curve Digital Signature Algorithm (ECDSA) with a prime256v1 curve.
@@ -37,8 +35,6 @@ openssl ecparam -name prime256v1 -genkey -noout -out companyname_skadnetwork_pri
 In the command, replace `companyname` with the name of your company. For example, the name of the private key file for a company named  is `example_skadnetwork_private_key.pem`.
 
 > ❗ **Important**:  Secure your private keys as you do other credentials, such as passwords. Don’t share your private keys, store keys in a code repository, or include keys in client-side code. Share only your public key.
-
- Secure your private keys as you do other credentials, such as passwords. Don’t share your private keys, store keys in a code repository, or include keys in client-side code. Share only your public key.
 
 ##### Generate and Share Your Public Key
 

@@ -1,6 +1,6 @@
 # SwimBikeRunWorkout
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: struct
 
 A workout for multisport activities that include running, biking, and swimming.
@@ -10,6 +10,7 @@ A workout for multisport activities that include running, biking, and swimming.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -50,6 +51,7 @@ struct SwimBikeRunWorkout
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

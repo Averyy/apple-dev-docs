@@ -34,8 +34,6 @@ Note that from the perspective of [`RunLoop`](runloop.md), [`Timer`](timer.md) o
 
 > ⚠️ **Warning**:  The [`RunLoop`](runloop.md) class is generally not thread-safe, and you must call its methods only within the context of the current thread. Don’t call the methods of a [`RunLoop`](runloop.md) object running in a different thread, which might cause unexpected results.
 
- The [`RunLoop`](runloop.md) class is generally not thread-safe, and you must call its methods only within the context of the current thread. Don’t call the methods of a [`RunLoop`](runloop.md) object running in a different thread, which might cause unexpected results.
-
 ## Topics
 
 ### Accessing Run Loops and Modes

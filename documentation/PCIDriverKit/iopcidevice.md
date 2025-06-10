@@ -1,6 +1,6 @@
 # IOPCIDevice
 
-**Framework**: Pcidriverkit  
+**Framework**: PCIDriverKit  
 **Kind**: class
 
 A DriverKit provider object that manages access to your custom PCI hardware.
@@ -137,4 +137,4 @@ Use an `IOPCIDevice` object to enable or manage the custom features of your PCI 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PCIDriverKit/iopcidevice)*
+*[View on Apple Developer](https://developer.apple.com/documentation/pcidriverkit/iopcidevice)*

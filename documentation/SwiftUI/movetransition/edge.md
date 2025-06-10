@@ -17,8 +17,7 @@ The edge to move the view towards.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency var edge: Edge
+var edge: Edge
 ```
 
 ## See Also

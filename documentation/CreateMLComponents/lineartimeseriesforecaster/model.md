@@ -1,6 +1,6 @@
 # LinearTimeSeriesForecaster.Model
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: struct
 
 A linear time-series forecasting model.
@@ -66,10 +66,11 @@ struct Model
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TemporalTransformer](temporaltransformer.md)
 - [Transformer](transformer.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/lineartimeseriesforecaster/model)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/lineartimeseriesforecaster/model)*

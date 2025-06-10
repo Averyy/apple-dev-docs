@@ -20,6 +20,8 @@ var supportsEmbeddedSIM: Bool { get }
 
 - [func supportsCellularPlan() -> Bool](ctcellularplanprovisioning/supportscellularplan.md)
   Indicates whether the device supports eSIM and the activation policy allows eSIM installation.
+- [func addPlan(request: CTCellularPlanProvisioningRequest, properties: CTCellularPlanProperties?, completionHandler: (CTCellularPlanProvisioningAddPlanResult) -> Void)](ctcellularplanprovisioning/addplan(request:properties:completionhandler:).md)
+  Starts the provisioning process with optional properties for the specified eSIM.
 - [func addPlan(with: CTCellularPlanProvisioningRequest, completionHandler: (CTCellularPlanProvisioningAddPlanResult) -> Void)](ctcellularplanprovisioning/addplan(with:completionhandler:).md)
   Starts the provisioning process for a specified eSIM.
 - [enum CTCellularPlanProvisioningAddPlanResult](ctcellularplanprovisioningaddplanresult.md)

@@ -1,6 +1,6 @@
 # VTHDRPerFrameMetadataGenerationSession.HDRFormat.dolbyVision
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: case
 
 Indicates to generate DolbyVision data for each pixel buffer.

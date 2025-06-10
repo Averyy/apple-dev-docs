@@ -3,9 +3,22 @@
 **Framework**: ShaderGraph  
 **Kind**: subscript
 
-A texture with RealityKit properties. Level of detail gradient.
+A texture with RealityKit properties.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- visionOS 1.0+
+
+#### Overview
+
+Level of detail gradient
 
 #### Parameter Types
+
+> ❗ **Important**: This node requires a device with a [`MTLGPUFamily.apple6`](https://developer.apple.com/documentation/Metal/MTLGPUFamily/apple6) or later GPU and may not be available on certain devices. To determine GPU feature support at runtime, see [`Detecting GPU Features and Metal Software Versions`](https://developer.apple.com/documentation/Metal/detecting-gpu-features-and-metal-software-versions).
 
 ## See Also
 

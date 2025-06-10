@@ -1,6 +1,6 @@
 # Handling subscription price changes
 
-**Framework**: Advancedcommerceapi
+**Framework**: Advanced Commerce API
 
 Provide necessary customer communications to notify and gather applicable consent before you initiate a price change.
 
@@ -93,4 +93,4 @@ If consent is required, include a clear “Agree to New Price” button so custo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AdvancedCommerceAPI/handling-subscription-price-changes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/advancedcommerceapi/handling-subscription-price-changes)*

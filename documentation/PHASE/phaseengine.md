@@ -25,8 +25,6 @@ Before using PHASE, an app creates an instance of this object. Apps access all o
 
 > ❗ **Important**:  You can create multiple engine instances, but normally, apps create only one.
 
- You can create multiple engine instances, but normally, apps create only one.
-
 ##### Create and Start the Engine
 
 To create an engine object, choose a value for the [`init(updateMode:)`](phaseengine/init(updatemode:).md) argument that selects the desired control over scene setup and playback timing.
@@ -96,6 +94,12 @@ engine.stop()
   A conversion factor from meters to your app’s preferred unit of measurement.
 - [var unitsPerSecond: Double](phaseengine/unitspersecond.md)
   A conversion factor from seconds to your app’s preferred unit of time.
+### Initializers
+- [init(updateMode: PHASEEngine.UpdateMode, renderingMode: PHASEEngine.RenderingMode)](phaseengine/init(updatemode:renderingmode:).md)
+### Instance Properties
+- [var lastRenderTime: AVAudioTime?](phaseengine/lastrendertime.md)
+### Enumerations
+- [PHASEEngine.RenderingMode](phaseengine/renderingmode.md)
 
 ## Relationships
 

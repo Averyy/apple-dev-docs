@@ -12,8 +12,6 @@ A dictionary that contains a managed app’s configurations item.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,7 +21,7 @@ object ManagedApplicationConfigurationResponse.ApplicationConfigurationsItem
 
 ## Topics
 
-### Commands
+### Objects
 - [object ManagedApplicationConfigurationResponse.ApplicationConfigurationsItem.Configuration](managedapplicationconfigurationresponse/applicationconfigurationsitem/configuration-data.dictionary.md)
   A dictionary that contains a managed app’s configuration items.
 

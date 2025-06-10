@@ -13,6 +13,7 @@ An array of subtitle strings.
 ## Declaration
 
 ```swift
+@MainActor
 var subtitleVariants: [String] { get }
 ```
 

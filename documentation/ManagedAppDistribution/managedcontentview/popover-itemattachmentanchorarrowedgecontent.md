@@ -44,8 +44,6 @@ struct PopoverModel: Identifiable {
 
 > ❗ **Important**: Prior to iOS 18.1, the popover arrow edge was not respected. Apps that are re-compiled with the iOS 18.1 or later SDK or visionOS 2.1 or later SDK and run on iOS 18.1 or later or visionOS 2.1 or later have the arrow edge respected. On macOS, arrow edge has always been respected. Alternatively, to allow the system to choose the best orientation of the popover’s arrow, use the `View/popover(item:attachmentAnchor:content:)` variant.
 
-Prior to iOS 18.1, the popover arrow edge was not respected. Apps that are re-compiled with the iOS 18.1 or later SDK or visionOS 2.1 or later SDK and run on iOS 18.1 or later or visionOS 2.1 or later have the arrow edge respected. On macOS, arrow edge has always been respected. Alternatively, to allow the system to choose the best orientation of the popover’s arrow, use the `View/popover(item:attachmentAnchor:content:)` variant.
-
 ## Parameters
 
 - `item`: A binding to an optional source of truth for the popover.   When   is non- , the system passes the contents to   the modifier’s closure. You use this content to populate the fields   of a popover that you create that the system displays to the user.   If   changes, the system dismisses the currently presented   popover and replaces it with a new popover using the same process.

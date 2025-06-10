@@ -52,6 +52,11 @@ Using the App Store Connect API, you can automate the same tasks you perform in 
   Information about your app required for beta app review.
 - [Beta App Review Submissions](beta-app-review-submissions.md)
   The submissions of builds for beta app review, including the status of submissions.
+### Beta Feedback
+- [Beta feedback crash submissions](beta-feedback-crash-submissions.md)
+  Get TestFlight feedback crashes from beta testers for your apps.
+- [Beta feedback screenshot submissions](beta-feedback-screenshot-submissions.md)
+  Get Testflight feedback screenshots from beta testers for your apps.
 
 
 ---

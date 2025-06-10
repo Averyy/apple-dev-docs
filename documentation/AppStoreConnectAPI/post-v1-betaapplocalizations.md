@@ -12,8 +12,6 @@ Create localized descriptive information for an app.
 
 > ❗ **Important**:  A description is required for all `betaAppLocalizations` before you can submit to beta app review.
 
- A description is required for all `betaAppLocalizations` before you can submit to beta app review.
-
 ## See Also
 
 - [Modify a Beta App Localization](patch-v1-betaapplocalizations-_id_.md)

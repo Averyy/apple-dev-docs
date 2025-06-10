@@ -1,6 +1,6 @@
 # VTSession
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 An abstract object that provides the common interface to configure VideoToolbox session objects.
 

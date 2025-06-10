@@ -1,6 +1,6 @@
 # press(forDuration:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a press-and-hold gesture to a hittable point the system computes for the element, holding for the duration you specify.

@@ -25,7 +25,7 @@ var isPictureInPicturePossible: Bool { get }
 
 #### Discussion
 
-This property value is [`false`](https://developer.apple.com/documentation/swift/false) if another app, like FaceTime, is presenting Picture in Picture content.
+This property value is `false` if another app, like FaceTime, is presenting Picture in Picture content.
 
 This property is key-value observable.
 

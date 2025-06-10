@@ -1,6 +1,6 @@
 # removeTestObserver(_:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Unregisters an object conforming to [`XCTestObservation`](xctestobservation.md) as an observer for the current test session.

@@ -1,6 +1,6 @@
 # maxZoomFactor
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The maximum zoom factor that the camera supports.

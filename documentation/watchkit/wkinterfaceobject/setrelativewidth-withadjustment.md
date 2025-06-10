@@ -1,6 +1,6 @@
 # setRelativeWidth(_:withAdjustment:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the width of the object relative to its container.

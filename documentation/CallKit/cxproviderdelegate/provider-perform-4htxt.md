@@ -37,6 +37,8 @@ optional func provider(_ provider: CXProvider, perform action: CXPlayDTMFCallAct
   Called when the provider performs the specified set muted call action.
 - [func provider(CXProvider, perform: CXSetGroupCallAction)](cxproviderdelegate/provider(_:perform:)-9masw.md)
   Called when the provider performs the specified set group call action.
+- [func provider(CXProvider, perform: CXSetTranslatingCallAction)](cxproviderdelegate/provider(_:perform:)-43atg.md)
+  Called when the provider performs the specified set translation action.
 - [func provider(CXProvider, timedOutPerforming: CXAction)](cxproviderdelegate/provider(_:timedoutperforming:).md)
   Called when the provider performs the specified action times out.
 

@@ -1,6 +1,6 @@
 # snowfallAmount
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 Describes the amount of snowfall for the period.

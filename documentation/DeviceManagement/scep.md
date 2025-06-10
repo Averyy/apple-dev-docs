@@ -12,8 +12,6 @@ The payload you use to configure Simple Certificate Enrollment Protocol (SCEP).
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,23 +23,23 @@ object SCEP
 
 Specify `com.apple.security.scep` as the payload type.
 
-An SCEP payload automates the request of a client certificate from an SCEP server, as described in [`Over-the-Air Profile Delivery and Configuration`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html).
+A SCEP payload automates the request of a client certificate from a SCEP server, as described in [`Over-the-Air Profile Delivery and Configuration`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html).
 
 ##### Profile Availability
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS, watchOS |
-| User Channel | macOS |
-| Allow Manual Install | iOS, macOS, tvOS, watchOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Allow Multiple Payloads | iOS, macOS, Shared iPad, tvOS, watchOS |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| User channel | macOS |
+| Allow manual install | iOS, macOS, tvOS, visionOS, watchOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -118,11 +116,9 @@ An SCEP payload automates the request of a client certificate from an SCEP serve
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object SCEP.PayloadContent](scep/payloadcontent-data.dictionary.md)
   The SCEP dictionary.
-- [object SCEP.PayloadContent.SubjectAltName](scep/payloadcontent-data.dictionary/subjectaltname-data.dictionary.md)
-  An optional dictionary that provides values required by the CA for issuing a certificate.
 
 ## See Also
 

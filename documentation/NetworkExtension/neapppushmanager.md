@@ -67,6 +67,8 @@ Your app can create as many [`NEAppPushManager`](neapppushmanager.md) instances 
   The error domain string for local push errors.
 - [NEAppPushManagerError.Code](neapppushmanagererror-swift.struct/code.md)
   Error codes that the local push API declares.
+### Instance Properties
+- [var matchEthernet: Bool](neapppushmanager/matchethernet.md)
 
 ## Relationships
 

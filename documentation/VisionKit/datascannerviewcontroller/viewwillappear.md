@@ -1,6 +1,6 @@
 # viewWillAppear(_:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Performs some action before the view appears.

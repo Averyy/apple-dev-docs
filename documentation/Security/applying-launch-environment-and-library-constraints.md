@@ -71,4 +71,4 @@ The fields in the log message have the following meanings:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/applying-launch-environment-and-library-constraints)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/applying-launch-environment-and-library-constraints)*

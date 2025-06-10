@@ -1,6 +1,6 @@
 # Application
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 The details of an app in the App Store.

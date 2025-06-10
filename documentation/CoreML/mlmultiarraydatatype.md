@@ -39,6 +39,8 @@ All elements of an [`MLMultiArray`](mlmultiarray.md) instance must be of the sam
   Designates the multiarray’s elements as floats.
 - [static var float64: MLMultiArrayDataType](mlmultiarraydatatype/float64.md)
   Designates the multiarray’s elements as 64-bit floats.
+### Enumeration Cases
+- [MLMultiArrayDataType.int8](mlmultiarraydatatype/int8.md)
 ### Initializers
 - [init?(rawValue: Int)](mlmultiarraydatatype/init(rawvalue:).md)
 
@@ -50,6 +52,7 @@ All elements of an [`MLMultiArray`](mlmultiarray.md) instance must be of the sam
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

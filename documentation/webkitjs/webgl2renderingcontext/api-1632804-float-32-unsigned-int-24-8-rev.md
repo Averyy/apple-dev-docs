@@ -1,6 +1,6 @@
 # FLOAT_32_UNSIGNED_INT_24_8_REV
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -6,9 +6,9 @@
 Replaces the video data in receiver with the video at a given URL.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 14.0+
 
 ## Declaration
 
@@ -22,14 +22,6 @@ func setVideoAtPath(_ videoPathURL: URL!) async throws -> URL?
 func setVideoAtPath(_ videoPathURL: URL!) async throws -> URL?
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func setVideoAtPath(_ videoPathURL: URL!) async throws -> URL?
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 Before invoking this method, you should check the [`isEditable`](alasset/iseditable.md) property of the asset to determine whether it is possible to replace the video data.
 
 ## Parameters
@@ -39,7 +31,7 @@ Before invoking this method, you should check the [`isEditable`](alasset/isedita
 
 ## See Also
 
-- [func setImageData(Data!, metadata: [AnyHashable : Any]!, completionBlock: ALAssetsLibraryWriteImageCompletionBlock!)](alasset/setimagedata(_:metadata:completionblock:).md)
+- [func setImageData(Data!, metadata: [AnyHashable : Any]!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alasset/setimagedata(_:metadata:completionblock:).md)
   Replaces the image data in the receiver with given image data
 
 

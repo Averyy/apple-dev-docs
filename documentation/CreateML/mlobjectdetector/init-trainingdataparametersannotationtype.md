@@ -18,8 +18,10 @@ init(trainingData: MLObjectDetector.DataSource, parameters: MLObjectDetector.Mod
 
 Use this initializer to create an object detector with an [`MLObjectDetector.DataSource`](mlobjectdetector/datasource.md).
 
-- trainingData: A data source that contains the annotated images the task uses to train the object detector.
-- annotationType : The format your data source uses for its image annotations.
+## Parameters
+
+- `trainingData`: A data source that contains the annotated images the task uses to train the object detector.
+- `parameters`: An   instance you use to set the model   configuration settings for the training session.
 
 ## See Also
 

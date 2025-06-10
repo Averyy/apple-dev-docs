@@ -30,7 +30,7 @@ This method matches date substrings in accordance with the formatting of Foundat
 
 If a time value follows the date substring, the matcher ignores it, treating it as any other character sequence. To match date and time substrings, use [`dateTime(date:time:locale:timeZone:calendar:)`](regexcomponent/datetime(date:time:locale:timezone:calendar:).md).
 
-The following example creates a [`Regex`](regex.md) that matches a date formatted with the [`numeric`](https://developer.apple.com/documentation/foundation/date/formatstyle/datestyle/3766159-numeric) style in the `en_US` locale. It then matches this regex against a source string containing a date with this format, some whitespace, a substring, more whitespace, and a currency value.
+The following example creates a [`Regex`](regex.md) that matches a date formatted with the [`numeric`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle/DateStyle/numeric) style in the `en_US` locale. It then matches this regex against a source string containing a date with this format, some whitespace, a substring, more whitespace, and a currency value.
 
 ```swift
 let source = "7/31/2022  Lemon-lime slushie      $1.99"

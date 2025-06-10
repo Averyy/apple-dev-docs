@@ -19,8 +19,6 @@ This key is required if your app uses the device’s Bluetooth interface.
 
 > ❗ **Important**:  If your app has a deployment target earlier than iOS 13, add the [`NSBluetoothPeripheralUsageDescription`](information-property-list/nsbluetoothperipheralusagedescription.md) key to your app’s [`Information Property List`](information-property-list.md) file in addition to this key.
 
- If your app has a deployment target earlier than iOS 13, add the [`NSBluetoothPeripheralUsageDescription`](information-property-list/nsbluetoothperipheralusagedescription.md) key to your app’s [`Information Property List`](information-property-list.md) file in addition to this key.
-
 ## See Also
 
 - [NSBluetoothPeripheralUsageDescription](information-property-list/nsbluetoothperipheralusagedescription.md)

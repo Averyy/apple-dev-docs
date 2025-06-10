@@ -9,6 +9,7 @@ Tells the view when one or more fingers are raised from the view.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # prefix(upTo:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns a subsequence from the start of the collection up to, but not including, the specified position.

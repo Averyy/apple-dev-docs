@@ -1,6 +1,6 @@
 # perform(_:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Executes a specific test.

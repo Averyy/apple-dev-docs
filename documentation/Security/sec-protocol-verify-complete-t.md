@@ -21,7 +21,7 @@ typealias sec_protocol_verify_complete_t = (Bool) -> Void
 #### Discussion
 
 ```None
-  Block to be invoked when verification is complete.
+ Block to be invoked when verification is complete.
 ```
 
 ## Parameters

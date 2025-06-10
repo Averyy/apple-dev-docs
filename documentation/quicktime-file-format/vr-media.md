@@ -8,8 +8,6 @@ Atoms that describe the QuickTime VR world.
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
-VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
-
 This section describes the QuickTime VR world and node information atom containers, which can be obtained by calling the QuickTime VR Manager routines `QTVRGetVRWorld` and `QTVRGetNodeInfo`. Those routines, as well as a complete discussion of QuickTime VR and how your application can create QuickTime VR movies, are described in detail in [`QuickTime VR`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/QuickTime/InsideQT_QTVR/0Preface/QTVR-preface.html#//apple_ref/doc/uid/TP40000944).
 
 Many atom types contained in the VR world and node information atom containers are unique within their container. For example, each has a single header atom. Most parent atoms within an atom container are unique as well, such as the node parent atom in the VR world atom container or the hot spot parent atom in the node information atom container. For these one-time-only atoms, the atom ID is always set to `1`. Unless otherwise mentioned in the descriptions of the atoms that follow, assume that the atom ID is `1`.

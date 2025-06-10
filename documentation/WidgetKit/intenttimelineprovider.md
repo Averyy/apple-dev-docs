@@ -1,6 +1,6 @@
 # IntentTimelineProvider
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: protocol
 
 A type that advises WidgetKit when to update a user-configurable widget’s display.
@@ -8,8 +8,9 @@ A type that advises WidgetKit when to update a user-configurable widget’s disp
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -17,6 +18,10 @@ A type that advises WidgetKit when to update a user-configurable widget’s disp
 ```swift
 protocol IntentTimelineProvider
 ```
+
+## Mentions
+
+- [Increasing the visibility of widgets in Smart Stacks](widget-suggestions-in-smart-stacks.md)
 
 #### Overview
 
@@ -85,7 +90,7 @@ struct CharacterDetailProvider: IntentTimelineProvider {
   An object that contains details about how a widget is rendered, including its size and whether it appears in the widget gallery.
 ### Instance Methods
 - [func relevance() async -> WidgetRelevance<Self.Intent>](intenttimelineprovider/relevance.md)
-  Provides an object containing attributes that describe when a specific widget could be relevant.
+  Provides an object containing attributes that describe when a specific widget is relevant.
 
 ## See Also
 
@@ -95,6 +100,8 @@ struct CharacterDetailProvider: IntentTimelineProvider {
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
 - [protocol TimelineProvider](timelineprovider.md)
   A type that advises WidgetKit when to update a widget’s display.
+- [protocol AppIntentTimelineProvider](appintenttimelineprovider.md)
+  A type that advises WidgetKit when to update a user-configurable widget’s display.
 - [struct TimelineProviderContext](timelineprovidercontext.md)
   An object that contains details about how a widget is rendered, including its size and whether it appears in the widget gallery.
 - [protocol TimelineEntry](timelineentry.md)
@@ -103,8 +110,6 @@ struct CharacterDetailProvider: IntentTimelineProvider {
   An object that specifies a date for WidgetKit to update a widget’s view.
 - [class WidgetCenter](widgetcenter.md)
   An object that contains a list of user-configured widgets and is used for reloading widget timelines.
-- [protocol AppIntentTimelineProvider](appintenttimelineprovider.md)
-  A type that advises WidgetKit when to update a user-configurable widget’s display.
 
 
 ---

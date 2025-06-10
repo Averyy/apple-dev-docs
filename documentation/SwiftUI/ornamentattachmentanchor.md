@@ -19,15 +19,19 @@ struct OrnamentAttachmentAnchor
 ### Getting an anchor
 - [static scene(_:)](ornamentattachmentanchor/scene(_:).md)
   The anchor point for the ornament expressed as a unit point relative to the scene.
+### Type Methods
+- [static func parent(UnitPoint3D) -> OrnamentAttachmentAnchor](ornamentattachmentanchor/parent(_:).md)
+  The anchor point for the ornament expressed as a 3D unit point relative to its parent.
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [func ornament<Content>(visibility: Visibility, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment, ornament: () -> Content) -> some View](view/ornament(visibility:attachmentanchor:contentalignment:ornament:).md)
+- [func ornament(visibility:attachmentAnchor:contentAlignment:ornament:)](view/ornament(visibility:attachmentanchor:contentalignment:ornament:).md)
   Presents an ornament.
 
 

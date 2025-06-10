@@ -11,8 +11,6 @@ The payload you use to configure add-on VPN software.
 - macOS 10.9+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,23 +22,25 @@ object AppLayerVPN
 
 Specify `com.apple.vpn.managed.applayer` as the payload type.
 
-This profile defines per-app VPN behavior and only applies to VPN services of type `VPN`, `IPsec`, and `IKEv2`. All the properties of VPN apply to the top level of this profile as well.
+Specify `com.apple.vpn.managed.applayer` as the payload type.
+
+This profile defines per-app VPN behavior and applies only to VPN services of type `VPN`, `IPsec`, and `IKEv2`. All the properties of VPN apply to the top level of this profile as well.
 
 ##### Profile Availability
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, watchOS |
-| User Channel | macOS |
-| Allow Manual Install | iOS, macOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Allow Multiple Payloads | iOS, macOS, Shared iPad, watchOS |
+| Device channel | iOS, macOS, Shared iPad, visionOS, watchOS |
+| User channel | macOS |
+| Allow manual install | iOS, macOS, visionOS |
+| Requires supervision | watchOS |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Allow multiple payloads | iOS, macOS, Shared iPad, visionOS, watchOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

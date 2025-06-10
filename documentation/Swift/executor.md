@@ -22,6 +22,9 @@ protocol Executor : AnyObject, Sendable
 
 ## Topics
 
+### Instance Properties
+- [var isMainExecutor: Bool](executor/ismainexecutor.md)
+  `true` if this is the main executor.
 ### Instance Methods
 - [func enqueue(consuming Job)](executor/enqueue(_:)-2sc5t.md)
 - [func enqueue(consuming ExecutorJob)](executor/enqueue(_:)-55qpq.md)
@@ -31,9 +34,20 @@ protocol Executor : AnyObject, Sendable
 
 ### Inherits From
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 ### Inherited By
+- [MainExecutor](mainexecutor.md)
+- [RunLoopExecutor](runloopexecutor.md)
+- [SchedulableExecutor](schedulableexecutor.md)
 - [SerialExecutor](serialexecutor.md)
 - [TaskExecutor](taskexecutor.md)
+### Conforming Types
+- [CFMainExecutor](cfmainexecutor.md)
+- [CFTaskExecutor](cftaskexecutor.md)
+- [DispatchGlobalTaskExecutor](dispatchglobaltaskexecutor.md)
+- [DispatchMainExecutor](dispatchmainexecutor.md)
+- [DummyMainExecutor](dummymainexecutor.md)
+- [DummyTaskExecutor](dummytaskexecutor.md)
 
 ## See Also
 

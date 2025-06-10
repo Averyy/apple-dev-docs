@@ -26,11 +26,7 @@ The filter configuration is stored in the Network Extension preferences which ar
 
 > ❗ **Important**:  In product builds for distribution, Network Content Filter configurations can be created only on supervised devices. During development and testing you can temporarily override this restriction by signing your build with the `get-task-allow` entitlement.
 
- In product builds for distribution, Network Content Filter configurations can be created only on supervised devices. During development and testing you can temporarily override this restriction by signing your build with the `get-task-allow` entitlement.
-
 > ❗ **Important**:  To use the [`NEFilterManager`](nefiltermanager.md) class, you must enable the Network Extensions capability in Xcode and select the Content Filter capability. See [`Configure network extensions`](https://developer.apple.comhttp://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
-
- To use the [`NEFilterManager`](nefiltermanager.md) class, you must enable the Network Extensions capability in Xcode and select the Content Filter capability. See [`Configure network extensions`](https://developer.apple.comhttp://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
 
 ##### Profile Configuration
 
@@ -69,7 +65,7 @@ Apps that use `NEFilterManager` are required to contain two Filter Provider exte
 - [enum NEFilterManagerError](nefiltermanagererror.md)
   Error codes specific to filter managers.
 ### Notifications
-- [static let NEFilterConfigurationDidChange: NSNotification.Name](../foundation/nsnotification/name/1406656-nefilterconfigurationdidchange.md)
+- [static let NEFilterConfigurationDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NEFilterConfigurationDidChange.md)
   Posted after the filter configuration stored in the Network Extension preferences changes.
 ### Instance Properties
 - [var disableEncryptedDNSSettings: Bool](nefiltermanager/disableencrypteddnssettings.md)

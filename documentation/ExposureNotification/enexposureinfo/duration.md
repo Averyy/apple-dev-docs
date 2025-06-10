@@ -1,6 +1,6 @@
 # duration
 
-**Framework**: Exposurenotification  
+**Framework**: Exposure Notification  
 **Kind**: property
 
 The length of time that the contact was in proximity to the user.
@@ -50,4 +50,4 @@ When reporting the duration of an exposure, the values are stored as seconds rou
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/enexposureinfo/duration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/enexposureinfo/duration)*

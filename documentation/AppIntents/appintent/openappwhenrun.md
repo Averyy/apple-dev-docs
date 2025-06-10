@@ -9,10 +9,10 @@ A boolean property that tells the system to consider the app intent even if its 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -25,6 +25,17 @@ static var openAppWhenRun: Bool { get }
 
 - [Creating your first app intent](creating-your-first-app-intent.md)
 - [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
+
+#### Discussion
+
+This property is deprecated, use [`supportedModes`](appintent/supportedmodes.md) instead. For backward compatibility, provide `openAppWhenRun` in an extension, for example:
+
+```swift
+@available(*, deprecated)
+extension OrderSoupIntent {
+    static var openAppWhenRun: Bool { true }
+}
+```
 
 ## See Also
 

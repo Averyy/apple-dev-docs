@@ -8,7 +8,6 @@ Synchronously begins a session, executes the given closure, and ends the session
 **Availability**:
 - iOS ?+
 - iPadOS ?+
-- Mac Catalyst ?+
 - macOS 10.12+
 - tvOS ?+
 - visionOS ?+

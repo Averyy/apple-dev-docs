@@ -17,7 +17,6 @@ Starts video playback.
 ## Declaration
 
 ```swift
-@MainActor
 func play()
 ```
 

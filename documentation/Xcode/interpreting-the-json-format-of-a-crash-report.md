@@ -251,4 +251,4 @@ print(String(format: "0x%lx", decimal))
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/interpreting-the-json-format-of-a-crash-report)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/interpreting-the-json-format-of-a-crash-report)*

@@ -1,6 +1,6 @@
 # DOM_SHOW_PROCESSING_INSTRUCTION
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

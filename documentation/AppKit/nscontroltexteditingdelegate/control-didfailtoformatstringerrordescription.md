@@ -31,7 +31,7 @@ Your implementation of this method should evaluate the error or query the user a
 
 ## See Also
 
-- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](../foundation/formatter/1408927-getobjectvalue.md)
+- [func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for string: String, errorDescription error: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](../Foundation/Formatter/getObjectValue(_:for:errorDescription:).md)
   The default implementation of this method raises an exception.
 
 

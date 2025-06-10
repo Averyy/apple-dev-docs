@@ -30,6 +30,7 @@ Don’t use this type directly. Swift Charts automatically instantiates and cons
 ### Conforms To
 - [ChartContent](chartcontent.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VectorizedChartContent](vectorizedchartcontent.md)
 
 

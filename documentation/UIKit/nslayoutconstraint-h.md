@@ -9,6 +9,7 @@
 - Mac Catalyst ?+
 - tvOS ?+
 - visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # depthData
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 Depth or disparity map data captured with the photo.

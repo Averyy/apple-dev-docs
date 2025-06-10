@@ -16,6 +16,10 @@
 var previewItemURL: URL? { get }
 ```
 
+#### Discussion
+
+The URL must be a file URL.
+
 
 ---
 

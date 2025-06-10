@@ -1,6 +1,6 @@
 # subtitle
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A string that the app displays in the title bar of a window when running in macOS.

@@ -35,6 +35,7 @@ struct Iterator
 ### Conforms To
 - [IteratorProtocol](iteratorprotocol.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 
 ---

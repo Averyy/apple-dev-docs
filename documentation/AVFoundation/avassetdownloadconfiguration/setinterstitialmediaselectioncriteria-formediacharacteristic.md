@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: method
 
+Sets media selection on interstitials for this asset
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -20,10 +22,7 @@ func setInterstitialMediaSelectionCriteria(_ criteria: [AVPlayerMediaSelectionCr
 
 #### Discussion
 
-```None
-			This method allows the user to specify AVMediaSelectionCriteria for all interstitials that are discovered.
-			Each AVPlayerMediaSelectionCriteria in the array of criteria specfies a set of criteria for a variant to download.
-```
+Typically, interstitial assets have not been discovered when the main download is initiated. This method allows the user to specify AVMediaSelectionCriteria for all interstitials that are discovered. Each AVPlayerMediaSelectionCriteria in the array of criteria specfies a set of criteria for a variant to download.
 
 ## Parameters
 

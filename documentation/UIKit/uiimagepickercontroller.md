@@ -50,8 +50,6 @@ You can customize an image picker controller to manage user interactions yoursel
 
 > ❗ **Important**:  The `UIImagePickerController` class supports portrait mode only. This class is intended to be used as-is and doesn’t support subclassing. The view hierarchy for this class is private and must not be modified, with one exception. You can assign a custom view to the [`cameraOverlayView`](uiimagepickercontroller/cameraoverlayview.md) property and use that view to present additional information or manage the interactions between the camera interface and your code.
 
- The `UIImagePickerController` class supports portrait mode only. This class is intended to be used as-is and doesn’t support subclassing. The view hierarchy for this class is private and must not be modified, with one exception. You can assign a custom view to the [`cameraOverlayView`](uiimagepickercontroller/cameraoverlayview.md) property and use that view to present additional information or manage the interactions between the camera interface and your code.
-
 ##### Provide a Delegate Object
 
 To use an image picker controller, you must provide a delegate that conforms to the [`UIImagePickerControllerDelegate`](uiimagepickercontrollerdelegate.md) protocol. Starting in iOS 4.1, you can use the delegate to save still-image metadata to the photo library along with the image. See [`UIImagePickerControllerDelegate`](uiimagepickercontrollerdelegate.md).
@@ -172,6 +170,7 @@ To create a fully customized image picker for browsing the photo library, use cl
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)

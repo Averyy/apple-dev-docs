@@ -10,6 +10,7 @@ Synchronously creates an environment resource from an equirectangular image.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -30,7 +31,7 @@ Loading an [`EnvironmentResource`](environmentresource.md) with this method bloc
 
 ## See Also
 
-- [convenience init(named: String, in: Bundle?) async throws](environmentresource/init(named:in:).md)
+- [convenience(named:in:)](environmentresource/init(named:in:).md)
   Asynchronously loads an environment resource from a bundle.
 - [convenience init(equirectangular: CGImage, withName: String?) async throws](environmentresource/init(equirectangular:withname:)-3xxrz.md)
   Asynchronously generates an environment resource from an equirectangular image.

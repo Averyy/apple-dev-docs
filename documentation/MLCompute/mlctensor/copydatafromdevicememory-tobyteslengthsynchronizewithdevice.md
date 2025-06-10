@@ -28,8 +28,6 @@ When the device is a GPU, you may need to synchronize the device memory, that is
 
 > ❗ **Important**:  Only call this method once the graph, with which you used this tensor, finishes execution. Otherwise the results in device memory may not be up to date. When the device is a GPU, you must set `synchronizeWithDevice` to `false` when you call this method in a completion handler. If you specified a tensor for the outputs of a graph using `addOutputs`, set `synchronizeWithDevice` to `false`.
 
- Only call this method once the graph, with which you used this tensor, finishes execution. Otherwise the results in device memory may not be up to date. When the device is a GPU, you must set `synchronizeWithDevice` to `false` when you call this method in a completion handler. If you specified a tensor for the outputs of a graph using `addOutputs`, set `synchronizeWithDevice` to `false`.
-
 ## Parameters
 
 - `bytes`: The data to copy.

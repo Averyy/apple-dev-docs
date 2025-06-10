@@ -8,10 +8,10 @@ The result of performing an action that delivers a dialog back to the initiator 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -25,6 +25,7 @@ protocol ProvidesDialog : IntentResult where Self.Dialog == IntentDialog
 ### Inherits From
 - [IntentResult](intentresult.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [IntentResultContainer](intentresultcontainer.md)
 

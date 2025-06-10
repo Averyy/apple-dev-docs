@@ -10,8 +10,6 @@ Content providers supply chapter markers and other per-chapter meta data using t
 
 > ❗ **Important**: This article is for informational purposes only. Apple may have patents, patent applications, trademarks, copyrights, or other intellectual property rights covering subject matter in this document. The furnishing of this article doesn’t give you a license to any patents, trademarks, copyrights, or other intellectual property.
 
-This article is for informational purposes only. Apple may have patents, patent applications, trademarks, copyrights, or other intellectual property rights covering subject matter in this document. The furnishing of this article doesn’t give you a license to any patents, trademarks, copyrights, or other intellectual property.
-
 ##### Organize Chapter Metadata
 
 Chapter data is information that describes a chapter using four different types: timing, titles, images, and general metadata. Keep the following in mind when designing your chapter data:

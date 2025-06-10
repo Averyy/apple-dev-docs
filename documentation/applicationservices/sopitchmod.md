@@ -1,6 +1,6 @@
 # soPitchMod
 
-**Framework**: Applicationservices  
+**Framework**: Application Services  
 **Kind**: data
 
 **Availability**:

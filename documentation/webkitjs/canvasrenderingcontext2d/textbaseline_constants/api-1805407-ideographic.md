@@ -1,6 +1,6 @@
 # ideographic
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: uid
 
 Aligns the y-coordinate of the bounding box with the bottom of ideographic text glyphs.

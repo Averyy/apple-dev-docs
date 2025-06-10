@@ -8,7 +8,7 @@ The parameter was provided an initial value.
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
-- Mac Catalyst 18.2+
+- Mac Catalyst ?+
 - macOS 15.2+
 - tvOS 18.2+
 - visionOS 2.2+

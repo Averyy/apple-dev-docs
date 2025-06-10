@@ -31,6 +31,9 @@ When you open an immersive space, the system continues to display all of your ap
   The styles that an immersive space can have.
 - [var immersiveSpaceDisplacement: Pose3D](environmentvalues/immersivespacedisplacement.md)
   The displacement that the system applies to the immersive space when moving the space away from its default position, in meters.
+- [struct ImmersiveEnvironmentBehavior](immersiveenvironmentbehavior.md)
+  The behavior of the system-provided immersive environments when a scene is opened by your app.
+- [struct ProgressiveImmersionAspectRatio](progressiveimmersionaspectratio.md)
 ### Opening an immersive space
 - [var openImmersiveSpace: OpenImmersiveSpaceAction](environmentvalues/openimmersivespace.md)
   An action that presents an immersive space.
@@ -59,6 +62,11 @@ When you open an immersive space, the system continues to display all of your ap
 ### Adding menu items to an immersive space
 - [func immersiveEnvironmentPicker<Content>(content: () -> Content) -> some View](view/immersiveenvironmentpicker(content:).md)
   Add menu items to open immersive spaces from a media player’s environment picker.
+### Handling remote immersive spaces
+- [struct RemoteImmersiveSpace](remoteimmersivespace.md)
+  A scene that presents its content in an unbounded space on a remote device.
+- [struct RemoteDeviceIdentifier](remotedeviceidentifier.md)
+  An opaque type that identifies a remote device displaying scene content in a [`RemoteImmersiveSpace`](remoteimmersivespace.md).
 
 ## See Also
 

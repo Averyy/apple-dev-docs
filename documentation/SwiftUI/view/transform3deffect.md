@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Applies a 3D transformation to the receiver.
+Applies a 3D transformation to this view’s rendered output.
 
 **Availability**:
 - visionOS 1.0+
@@ -18,6 +18,18 @@ func transform3DEffect(_ transform: AffineTransform3D) -> some View
 #### Return Value
 
 A view that renders transformed according to the provided `transform`
+
+##### Apply a Transform About an Anchor
+
+This does not adjust the transform relative to an anchor point. Instead, apply the scale and rotation separately using [`scaleEffect(_:anchor:)`](view/scaleeffect(_:anchor:).md) together with [`rotation3DEffect(_:anchor:)`](view/rotation3deffect(_:anchor:).md).
+
+```swift
+Model3D(url: URL(string: "https://example.com/robot.usdz")!)
+   .scaleEffect(transform.scale)
+   .rotation3DEffect(transform.rotation ?? .identity)
+   .transform3DEffect(AffineTransform3D(
+       translation: transform.translation))
+```
 
 ## Parameters
 
@@ -34,7 +46,7 @@ A view that renders transformed according to the provided `transform`
 - [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](view/scaleeffect(x:y:anchor:).md)
   Scales this view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](view/scaleeffect(x:y:z:anchor:).md)
-  Scales this view by the specified horizontal, vertical, and depth factors.
+  Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
 - [func aspectRatio(_:contentMode:)](view/aspectratio(_:contentmode:).md)
   Constrains this view’s dimensions to the specified aspect ratio.
 - [func rotationEffect(Angle, anchor: UnitPoint) -> some View](view/rotationeffect(_:anchor:).md)

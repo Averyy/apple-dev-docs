@@ -8,6 +8,57 @@ Learn about important changes to Xcode.
 
 Browse notable changes in [`Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode).
 
+#### June 2025
+
+The latest version of Xcode includes the following new features.
+
+##### Optimizations
+
+- Download components, such as Metal toolchains and Simulator runtimes, only when Xcode detects that you need them. For more information, see [`Downloading and installing additional Xcode components`](https://developer.apple.com/documentation/Xcode/downloading-and-installing-additional-xcode-components).
+- Download smaller Simulator runtimes that no longer contain Intel-based Mac support by default.
+
+##### Workspace and Editing
+
+- In the source editor, add as many tabs as you want, and pin files to a tab.
+- Find clusters of words across files in your project using the Multiple Words search option in the Find navigator. Enter a set of words and Xcode finds the clusters in proximity to each other across your files, sorting the occurrences by relevance.
+- Use Voice Control to instruct Xcode and write Swift code. Voice Control understands Swift syntax, adds spaces where needed, and enters expressions correctly.
+- Use Icon Composer to create a single file representation of your app icon for iOS, iPadOS, macOS, and watchOS. Take full advantage of the new material and appearances on these platforms. For more information, see [`Creating your app icon using Icon Composer`](https://developer.apple.com/documentation/Xcode/creating-your-app-icon-using-icon-composer).
+
+##### Intelligence
+
+- Use a coding assistant to explain, write, and fix Swift code for you from prompts and project files in Xcode. You can configure models in the Intelligence settings and switch between them in the coding assistant. For more information, see [`Writing code with intelligence in Xcode`](https://developer.apple.com/documentation/Xcode/writing-code-with-intelligence-in-xcode).
+- Use the playground macro to quickly iterate on code snippets directly in Xcode and display the live execution results in a canvas tab. Ask the coding assistant to generate playgrounds for you about symbols in your project. For more information, see [`Running code snippets using the playground macro`](https://developer.apple.com/documentation/Xcode/running-code-snippets-using-the-playground-macro).
+- In the source editor, use the Coding Tools popover for common actions to selected code, such as explain, document, and generate a preview or playground. Enter a prompt about the code in the text field.
+- When using code completion in the source editor, click the disclosure triangle to select one of multiple signatures for a base method.
+- For issues and warnings that appear in the Issue navigator and source editor, such as deprecation warnings, click the Generate button in the Fix-It popover to let the coding assistant fix it for you.
+
+##### String Catalogs
+
+- Add localized strings to string catalogs and access them in code using type-safe Swift symbols that also appear in code completion.
+- Let Xcode use on-device models to generate comments for localized strings in your code that assist translators.
+
+##### Debugging and Performance
+
+- When debugging Swift concurrency code, step into or out of an `await` call to follow a task onto a new thread.
+- Add a missing usage description key to your project directly from the debugger when your app stops abruptly because it accesses a private resource without the person’s permission. The debugger takes you to the Signing & Capabilities pane where you can edit all the usage description keys in one place.
+- Use the SwiftUI template in Instruments to find long-running view body updates and other performance issues in your SwiftUI views. For more information, see [`Understanding and improving SwiftUI performance`](https://developer.apple.com/documentation/Xcode/understanding-and-improving-swiftui-performance).
+- Identify situations where your app causes a device to consume high amounts of energy with the Power Profiler instrument. For more information, see [`Measuring your app’s power use with Power Profiler`](https://developer.apple.com/documentation/Xcode/measuring-your-app-s-power-use-with-power-profiler).
+- Discover and analyze situations where your app doesn’t use the processor at highest effectiveness with the CPU Counters instrument.
+
+##### Organizer
+
+- Compare your apps metrics with recommended values in the Metrics Organizer. For more information, see [`Analyzing the performance of your shipping app`](https://developer.apple.com/documentation/Xcode/analyzing-the-performance-of-your-shipping-app).
+- Prioritize performance work by identifying trending insights in the Metrics Organizer.
+
+##### Security
+
+- Adopt Enhanced Security in your apps and extensions to take advantage of compiler and runtime capabilities that can help to address some security issues. For more information, see [`Enabling enhanced security for your app`](https://developer.apple.com/documentation/Xcode/enabling-enhanced-security-for-your-app).
+
+##### Testing
+
+- Use the improved UI automation recording feature to build UI tests for your app. For more information, see [`Recording UI automation for testing`](https://developer.apple.com/documentation/XCUIAutomation/recording-ui-automation-for-testing).
+- Use Thread Performance Checker to detect situations where your tests use main-thread-only APIs on background threads or where your tests create background tasks that depend on tasks with lower quality of service.
+
 #### June 2024
 
 Xcode 16 includes SDKs for iOS 18, iPadOS 18, macOS 15, tvOS 18, and watchOS 11, and the following new features.
@@ -170,12 +221,16 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10,
   Learn about important changes in ActivityKit.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [App Intents updates](appintents.md)
   Learn about important changes in App Intents.
 - [AppKit updates](appkit.md)
   Learn about important changes to AppKit.
 - [Apple Intelligence updates](apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -188,12 +243,8 @@ Xcode 15 includes SDKs for iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10,
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Updates/xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/updates/xcode)*

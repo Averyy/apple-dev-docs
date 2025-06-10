@@ -46,6 +46,7 @@ struct LogisticRegressionClassifierModel<Scalar, Label> where Scalar : MLShapedA
 ### Conforms To
 - [Classifier](classifier.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transformer](transformer.md)
 
 ## See Also

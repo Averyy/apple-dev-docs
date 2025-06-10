@@ -1,6 +1,6 @@
 # Working with Overlays and Parental Controls in tvOS
 
-**Framework**: Avkit
+**Framework**: AVKit
 
 Add interactive overlays, parental controls, and livestream channel flipping using a player view controller.
 
@@ -27,7 +27,7 @@ By default, the sample demonstrates automatic support for parental controls. Act
 
 The first demo video has a rating of PG, and the second has a rating of PG-13. You can find or edit these ratings in `MainViewController.swift`.
 
-This sample also demonstrates explicit support for parental restrictions by directly calling [`requestPlaybackRestrictionsAuthorization(_:)`](https://developer.apple.com/documentation/AVFoundation/AVPlayerItem/requestPlaybackRestrictionsAuthorization(_:)). You can test explicit support by changing the value of `checkParentalControlsExplicitly` in the sample.
+This sample also demonstrates explicit support for parental restrictions by directly calling `playerItem.requestPlaybackRestrictionsAuthorization(_ completion)`. You can test explicit support by changing the value of `checkParentalControlsExplicitly` in the sample.
 
 ## See Also
 
@@ -61,4 +61,4 @@ This sample also demonstrates explicit support for parental restrictions by dire
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/working-with-overlays-and-parental-controls-in-tvos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/working-with-overlays-and-parental-controls-in-tvos)*

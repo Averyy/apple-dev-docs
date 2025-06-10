@@ -18,8 +18,6 @@ Include the signed JWT in the authorization header of each API request. Generate
 
 > 💡 **Tip**:  The App Store Server Library provides an API client and creates JWTs for use with the [`App Store Server API`](AppStoreServerAPI.md). For more information, see [`Simplifying your implementation by using the App Store Server Library`](simplifying-your-implementation-by-using-the-app-store-server-library.md).
 
- The App Store Server Library provides an API client and creates JWTs for use with the [`App Store Server API`](AppStoreServerAPI.md). For more information, see [`Simplifying your implementation by using the App Store Server Library`](simplifying-your-implementation-by-using-the-app-store-server-library.md).
-
 ##### Create the Jwt Header
 
 To create a JWT to communicate with the [`App Store Server API`](AppStoreServerAPI.md) or [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI), use the following fields and values in the header:

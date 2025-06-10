@@ -11,8 +11,6 @@ A dictionary that contains numeric restrictions.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,7 +20,7 @@ object RestrictionsResponse.GlobalRestrictions.RestrictedValue
 
 ## Topics
 
-### Commands
+### Objects
 - [object RestrictionsResponse.GlobalRestrictions.RestrictedValue.ANY restriction name](restrictionsresponse/globalrestrictions-data.dictionary/restrictedvalue-data.dictionary/any-restriction-name-data.dictionary.md)
   A dictionary that contains numeric restriction parameters.
 

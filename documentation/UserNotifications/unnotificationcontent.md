@@ -1,6 +1,6 @@
 # UNNotificationContent
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 The uneditable content of a notification.

@@ -1,6 +1,6 @@
 # init(service:targetQueue:options:incomingSessionHandler:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: init
 
 Creates the server side of an XPC service using the specified service name.
@@ -12,6 +12,7 @@ Creates the server side of an XPC service using the specified service name.
 ## Declaration
 
 ```swift
+@preconcurrency
 init(service: String, targetQueue: DispatchQueue? = nil, options: XPCListener.InitializationOptions = .none, incomingSessionHandler: @escaping (XPCListener.IncomingSessionRequest) -> XPCListener.IncomingSessionRequest.Decision) throws
 ```
 

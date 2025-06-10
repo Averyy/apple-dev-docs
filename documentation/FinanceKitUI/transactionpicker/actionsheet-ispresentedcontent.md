@@ -1,6 +1,6 @@
 # actionSheet(isPresented:content:)
 
-**Framework**: Financekitui  
+**Framework**: FinanceKitUI  
 **Kind**: method
 
 Presents an action sheet when a given condition is true.

@@ -1,6 +1,6 @@
 # setMinimumViewportInset(_:maximumViewportInset:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

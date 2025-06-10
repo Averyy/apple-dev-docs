@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_SuggestedLookAheadFrameCount
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A value that requests that the encoder retain the specified number of frames during encoding.

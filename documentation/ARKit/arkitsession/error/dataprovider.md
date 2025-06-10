@@ -6,6 +6,7 @@
 The data provider that caused an error in a session.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

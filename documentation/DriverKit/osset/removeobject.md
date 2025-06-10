@@ -15,6 +15,14 @@
 void removeObject(const OSMetaClassBase * anObject);
 ```
 
+#### Discussion
+
+Removes an object from the set.
+
+## Parameters
+
+- `anObject`: The OSMetaClassBase-derived object to be removed from the set.
+
 
 ---
 

@@ -21,8 +21,6 @@ An interface that enables the animation of a virtual character by tracking a rea
 
 > ❗ **Important**: Body tracking requires a compatible rigged model. For more information on creating a compatible model, see [`Rigging a Model for Motion Capture`](https://developer.apple.com/documentation/ARKit/rigging-a-model-for-motion-capture).
 
-Body tracking requires a compatible rigged model. For more information on creating a compatible model, see [`Rigging a Model for Motion Capture`](https://developer.apple.com/documentation/ARKit/rigging-a-model-for-motion-capture).
-
 ## Topics
 
 ### Accessing the component

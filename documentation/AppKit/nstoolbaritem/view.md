@@ -23,6 +23,7 @@ Many properties of [`NSToolbarItem`](nstoolbaritem.md) automatically forward cha
 
 - [var image: UIImage?](nstoolbaritem/image.md)
   The image to display for the toolbar item.
+- [var backgroundTintColor: UIColor?](nstoolbaritem/backgroundtintcolor.md)
 
 
 ---

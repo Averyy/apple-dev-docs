@@ -1,6 +1,6 @@
 # Download Sales and Trends Reports
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 Download sales and trends reports filtered by your specified criteria.
@@ -10,12 +10,12 @@ Download sales and trends reports filtered by your specified criteria.
 
 ## Mentions
 
+- [Downloading Analytics Reports](downloading-analytics-reports.md)
 - [App Store Connect API 3.2 release notes](app-store-connect-api-3-2-release-notes.md)
 - [App Store Connect API 3.4 release notes](app-store-connect-api-3-4-release-notes.md)
-- [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
-- [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
 - [App Store Connect API 1.8 release notes](app-store-connect-api-1-8-release-notes.md)
-- [Downloading Analytics Reports](downloading-analytics-reports.md)
+- [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
+- [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
 
 #### Discussion
 
@@ -52,4 +52,4 @@ Each sales report type has specific valid values for `reportType`, `reportSubTyp
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/get-v1-salesreports)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-salesreports)*

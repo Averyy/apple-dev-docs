@@ -167,6 +167,8 @@ On platforms other than macOS, the circular style may appear as an indeterminate
   Sets the style for progress views in this view.
 - [struct DefaultDateProgressLabel](defaultdateprogresslabel.md)
   The default type of the current value label when used by a date-relative progress view.
+- [struct DefaultButtonLabel](defaultbuttonlabel.md)
+  The default label to use for a button.
 
 
 ---

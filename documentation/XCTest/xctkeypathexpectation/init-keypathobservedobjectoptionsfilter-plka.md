@@ -1,6 +1,6 @@
 # init(keyPath:observedObject:options:filter:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 **Availability**:

@@ -1,6 +1,6 @@
 # XPC_TYPE_DICTIONARY
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A type that represents a dictionary of XPC objects keyed off of C-strings.

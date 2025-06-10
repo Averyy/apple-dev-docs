@@ -1,6 +1,6 @@
 # WKWebsiteDataTypeLocalStorage
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 HTML local storage.

@@ -108,4 +108,4 @@ If your app enters the background with an active file presenter, any other proce
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsfilepresenter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsfilepresenter)*

@@ -1,0 +1,18 @@
+# tcps_unnecessary_rxmt
+
+**Framework**: Kernel  
+**Kind**: structp
+
+**Availability**:
+- macOS 12.0+
+
+## Declaration
+
+```swift
+u_int32_t tcps_unnecessary_rxmt;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/tcpstat/3755003-tcps_unnecessary_rxmt)*

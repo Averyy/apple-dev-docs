@@ -8,8 +8,6 @@
 - iPadOS 17.5+
 - macOS 14.5+
 - visionOS 1.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

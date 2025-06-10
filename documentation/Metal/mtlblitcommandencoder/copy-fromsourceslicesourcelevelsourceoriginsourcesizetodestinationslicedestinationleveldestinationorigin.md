@@ -30,8 +30,6 @@ For textures that use a PVRTC pixel format, you can use this method to copy the 
 
 > ❗ **Important**:  Copying data to overlapping regions within the same texture may result in unexpected behavior.
 
- Copying data to overlapping regions within the same texture may result in unexpected behavior.
-
 ## Parameters
 
 - `sourceTexture`: For a texture that uses a compressed pixel format, align the copy region (  and  ) to the pixel format’s block size.

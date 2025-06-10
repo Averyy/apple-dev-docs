@@ -1,6 +1,6 @@
 # isAuthorizedForWidgetUpdates
 
-**Framework**: Corelocation  
+**Framework**: Core Location  
 **Kind**: property
 
 A Boolean value that indicates whether a widget is eligible to receive location updates.
@@ -47,4 +47,4 @@ For details about using location information in widgets with [`CLAuthorizationSt
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/cllocationmanager/isauthorizedforwidgetupdates)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/cllocationmanager/isauthorizedforwidgetupdates)*

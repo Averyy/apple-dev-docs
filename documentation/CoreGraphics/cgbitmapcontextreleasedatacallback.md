@@ -22,14 +22,7 @@ typealias CGBitmapContextReleaseDataCallback = (UnsafeMutableRawPointer?, Unsafe
 
 #### Discussion
 
-The `releaseInfo` parameter contains the contextual data that you passed to the [`init(data:width:height:bitsPerComponent:bytesPerRow:space:bitmapInfo:releaseCallback:releaseInfo:)`](cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:releasecallback:releaseinfo:).md) function. The `data` parameter contains a pointer to the bitmap data for you to release.
-
-## See Also
-
-- [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: UInt32)](cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:).md)
-  Creates a bitmap graphics context.
-- [init?(data: UnsafeMutableRawPointer?, width: Int, height: Int, bitsPerComponent: Int, bytesPerRow: Int, space: CGColorSpace, bitmapInfo: UInt32, releaseCallback: CGBitmapContextReleaseDataCallback?, releaseInfo: UnsafeMutableRawPointer?)](cgcontext/init(data:width:height:bitspercomponent:bytesperrow:space:bitmapinfo:releasecallback:releaseinfo:).md)
-  Creates a bitmap graphics context with the specified callback function.
+The `releaseInfo` parameter contains the contextual data that you passed to the `CGContext/init(data:width:height:bitsPerComponent:bytesPerRow:space:bitmapInfo:releaseCallback:releaseInfo:)` function. The `data` parameter contains a pointer to the bitmap data for you to release.
 
 
 ---

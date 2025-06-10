@@ -1,6 +1,6 @@
 # src
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Specifies the URL for an image.
 
@@ -32,4 +32,4 @@ The URL can point to an image on a server or to the resource scheme in your app.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/src)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/src)*

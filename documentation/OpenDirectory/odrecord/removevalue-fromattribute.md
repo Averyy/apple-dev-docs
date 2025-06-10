@@ -1,6 +1,6 @@
 # removeValue(_:fromAttribute:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Removes a value from an attribute of the record.

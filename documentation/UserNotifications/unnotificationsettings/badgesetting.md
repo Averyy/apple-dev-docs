@@ -1,6 +1,6 @@
 # badgeSetting
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The setting that indicates whether badges appear on your app’s icon.

@@ -29,11 +29,6 @@ A metadata group initialized with `items`.
 - `items`: An array of   objects.
 - `timeRange`: The time range of the metadata contained in  .
 
-## See Also
-
-- [init?(sampleBuffer: CMSampleBuffer)](avtimedmetadatagroup/init(samplebuffer:).md)
-  Creates a timed metadata group with a sample buffer.
-
 
 ---
 

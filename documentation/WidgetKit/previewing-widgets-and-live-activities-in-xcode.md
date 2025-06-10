@@ -1,6 +1,6 @@
 # Previewing widgets and Live Activities in Xcode
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Use Xcode previews to iteratively develop, fine-tune, and troubleshoot widgets and Live Activities.
 
@@ -10,7 +10,7 @@ With Xcode previews, you can make changes to your app’s code and see the resul
 
 For general information about Xcode previews, refer to [`Previewing your app’s interface in Xcode`](https://developer.apple.com/documentation/Xcode/previewing-your-apps-interface-in-xcode).
 
-> **Note**: Xcode previews support for iOS and watchOS widgets, and Live Activities. Debug your macOS widgets as described in [`Debugging Widgets`](debugging-widgets.md).
+> **Note**: Xcode previews support for iOS and watchOS widgets, and Live Activities. Debug your macOS widgets as described in [`Debugging widgets`](debugging-widgets.md).
 
 ##### Provide Timeline Entries to Widget Previews
 
@@ -48,7 +48,7 @@ Previewing Live Activities with Xcode works similar to previewing widgets. The o
 
 ## See Also
 
-- [Debugging Widgets](debugging-widgets.md)
+- [Debugging widgets](debugging-widgets.md)
   Set environment variables in Xcode to control your widget’s configuration in the debugger.
 - [struct WidgetPreviewContext](widgetpreviewcontext.md)
   A specification for the context of a widget preview.
@@ -58,4 +58,4 @@ Previewing Live Activities with Xcode works similar to previewing widgets. The o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/previewing-widgets-and-live-activities-in-xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/previewing-widgets-and-live-activities-in-xcode)*

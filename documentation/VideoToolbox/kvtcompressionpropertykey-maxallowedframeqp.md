@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_MaxAllowedFrameQP
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The maximum allowed encoded frame QP (Quantization Parameter).

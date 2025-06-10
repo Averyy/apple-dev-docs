@@ -29,6 +29,8 @@ final var colorMode: ColorRenderingMode { get set }
   The scale at which to render the image.
 - [var isOpaque: Bool](imagerenderer/isopaque.md)
   A Boolean value that indicates whether the alpha channel of the image is fully opaque.
+- [var allowedDynamicRange: Image.DynamicRange?](imagerenderer/alloweddynamicrange.md)
+  The allowed dynamic range of the image, or nil to mark that the dynamic range of the image should be unrestricted. This property defaults to `sdr`, i.e. HDR content will be tone mapped to SDR.
 
 
 ---

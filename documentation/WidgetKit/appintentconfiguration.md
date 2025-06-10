@@ -1,6 +1,6 @@
 # AppIntentConfiguration
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 An object describing the content of a widget that uses a custom intent to provide user-configurable options.
@@ -8,8 +8,9 @@ An object describing the content of a widget that uses a custom intent to provid
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
+- visionOS 26.0+ (Beta)
 - watchOS 10.0+
 
 ## Declaration
@@ -21,7 +22,7 @@ An object describing the content of a widget that uses a custom intent to provid
 
 ## Mentions
 
-- [Increasing the visibility of widgets in Smart Stacks](widget-suggestions-in-smart-stacks.md)
+- [Creating a widget extension](creating-a-widget-extension.md)
 
 #### Overview
 
@@ -98,6 +99,7 @@ Modifiers let you specify the families your widget supports, and the details sho
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [WidgetConfiguration](../SwiftUI/WidgetConfiguration.md)
 
 ## See Also

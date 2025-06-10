@@ -26,8 +26,6 @@ For information about how to provide the PDF data, see [`UIScreenshotServiceDele
 
 > 💡 **Tip**:  Beginning in iOS 17 and iPadOS 17, people have the option to share or save the generated full page screenshot as a PDF or an image.
 
- Beginning in iOS 17 and iPadOS 17, people have the option to share or save the generated full page screenshot as a PDF or an image.
-
 ## Topics
 
 ### Responding to screenshot requests

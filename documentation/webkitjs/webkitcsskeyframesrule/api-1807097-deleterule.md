@@ -1,6 +1,6 @@
 # deleteRule
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: uid
 
 Removes a keyframe rule from the collection of keyframes.

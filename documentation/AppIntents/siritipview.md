@@ -9,7 +9,7 @@ A SwiftUI view that displays the phrase someone uses to invoke an App Shortcut.
 - iOS 16.0+
 - iPadOS 16.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -47,6 +47,7 @@ Note that you must use the [`AppIntent`](appintent.md) in an [`AppShortcut`](app
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

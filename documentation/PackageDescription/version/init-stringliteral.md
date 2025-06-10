@@ -11,6 +11,10 @@ Initializes a version struct with the provided string literal.
 init(stringLiteral value: String)
 ```
 
+## Parameters
+
+- `value`: A string literal to use for creating a new version struct.
+
 
 ---
 

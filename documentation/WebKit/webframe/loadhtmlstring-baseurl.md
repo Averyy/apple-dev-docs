@@ -1,6 +1,6 @@
 # loadHTMLString(_:baseURL:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sets the main page contents and base URL.

@@ -22,7 +22,7 @@ static let elementFocusedNotification: NSNotification.Name
 
 #### Discussion
 
-Retrieve the [`focusedElementUserInfoKey`](uiaccessibility/focusedelementuserinfokey.md) key from the [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/1409222-userinfo) dictionary to get the identity of the focused accessibility element.
+Retrieve the [`focusedElementUserInfoKey`](uiaccessibility/focusedelementuserinfokey.md) key from the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) dictionary to get the identity of the focused accessibility element.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # activate(voiceRecognitionText:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Presents the Siri UI, if it’s not currently active, and accepts a string that is then processed as if it’s recognized speech.

@@ -10,6 +10,7 @@ The rendering technique used to smooth edges of virtual content.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS ?+
 - visionOS 2.0+
 
 ## Declaration
@@ -25,15 +26,6 @@ enum AntialiasingMode
   Multisampling renders each pixel multiple times and combines the results, creating a higher quality image at a performance cost proportional to the number of samples used.
 - [AntialiasingMode.none](antialiasingmode/none.md)
   Do not apply any technique to smooth jagged edges.
-### Protocol support
-- [func hash(into: inout Hasher)](antialiasingmode/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](antialiasingmode/hashvalue.md)
-  The hash value.
-- [static func == (AntialiasingMode, AntialiasingMode) -> Bool](antialiasingmode/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](antialiasingmode/equatable-implementations.md)
 
 ## Relationships
 
@@ -41,6 +33,7 @@ enum AntialiasingMode
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -52,6 +45,10 @@ enum AntialiasingMode
   A mode that determines whether a rendering effect is enabled or disabled.
 - [struct RealityViewDynamicRange](realityviewdynamicrange.md)
   Options that determine the state of high dynamic range rendering for virtual content.
+- [struct RealityViewPostProcessEffect](realityviewpostprocesseffect.md)
+  A struct for enabling or disabling post processing effects for all content a reality view contains.
+- [struct PostProcessEffectContext](postprocesseffectcontext.md)
+  An object RealityKit passes data to a post process effect method.
 - [ARView.Environment](arview/environment-swift.struct.md)
   A description of background, lighting, and acoustic properties for a view’s content.
 - [ARView.RenderOptions](arview/renderoptions-swift.struct.md)

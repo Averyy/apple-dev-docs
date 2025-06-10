@@ -1,6 +1,6 @@
 # click()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a click event at the coordinate.

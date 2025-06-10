@@ -1,6 +1,6 @@
 # XPC_ERROR_CONNECTION_INTERRUPTED
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 An error that sends to the connection’s event handler when the remote service exits.

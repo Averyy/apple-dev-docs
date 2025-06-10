@@ -23,8 +23,12 @@ class UIColorWell
 ### Configuring color picker attributes
 - [var title: String?](uicolorwell/title.md)
   The title for the color picker.
+- [var maximumLinearExposure: CGFloat](uicolorwell/maximumlinearexposure.md)
+  The maximum exposure to apply to a color when returned by the color well.
 - [var supportsAlpha: Bool](uicolorwell/supportsalpha.md)
   A Boolean value that determines whether the color picker supports alpha values.
+- [var supportsEyedropper: Bool](uicolorwell/supportseyedropper.md)
+  If set to `NO` the eyedropper functionality is not supported for this color well.
 - [var selectedColor: UIColor?](uicolorwell/selectedcolor.md)
   The selected color in the color picker.
 
@@ -43,6 +47,7 @@ class UIColorWell
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

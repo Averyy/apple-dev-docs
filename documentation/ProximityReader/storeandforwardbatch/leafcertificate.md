@@ -17,6 +17,19 @@ The leaf certificate the framework uses to sign this batch.
 let leafCertificate: String
 ```
 
+## See Also
+
+- [let id: String](storeandforwardbatch/id-swift.property.md)
+  The unique identifier for the batch.
+- [let count: Int](storeandforwardbatch/count.md)
+  The number of payments this batch includes.
+- [let intermediateCertificate: [String]](storeandforwardbatch/intermediatecertificate.md)
+  An array that contains the intermediate certificates that the system uses to sign the leaf certificate.
+- [let payments: [StoreAndForwardBatch.StoredPaymentCardReadResult]](storeandforwardbatch/payments.md)
+  The payments that are part of the batch.
+- [let signature: String](storeandforwardbatch/signature.md)
+  The signature, as a Base64-encoded string, that guarantees the integrity of the batch.
+
 
 ---
 

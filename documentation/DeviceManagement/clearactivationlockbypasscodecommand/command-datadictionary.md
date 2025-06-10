@@ -3,15 +3,13 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to clear the Activation Lock bypass code on a device.
+The command to clear the Activation Lock bypass code on a device.
 
 **Availability**:
 - iOS 7.1+
 - iPadOS 7.1+
 - macOS 10.15+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

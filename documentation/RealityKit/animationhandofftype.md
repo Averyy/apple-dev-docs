@@ -10,6 +10,7 @@ The type of handoff the play animation method performs between a current animati
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -20,9 +21,6 @@ struct AnimationHandoffType
 
 ## Topics
 
-### Operators
-- [static func == (AnimationHandoffType, AnimationHandoffType) -> Bool](animationhandofftype/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Type Properties
 - [static var compose: AnimationHandoffType](animationhandofftype/compose.md)
   Adds the new animation to existing animations, and immediately starts the new animation.
@@ -35,10 +33,6 @@ struct AnimationHandoffType
   Keeps playing the current animation during the transition time and uses the value from that animation as the blend value for the transition to the new animation.
 - [static func snapshotAndReplace(applyToAllLayers: Bool) -> AnimationHandoffType](animationhandofftype/snapshotandreplace(applytoalllayers:).md)
   Stops the current animation and uses the current value of that animation as the blend value for the transition to the new animation.
-### Default Implementations
-- [Decodable Implementations](animationhandofftype/decodable-implementations.md)
-- [Encodable Implementations](animationhandofftype/encodable-implementations.md)
-- [Equatable Implementations](animationhandofftype/equatable-implementations.md)
 
 ## Relationships
 

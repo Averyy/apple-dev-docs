@@ -14,7 +14,6 @@ The height of the page header.
 ## Declaration
 
 ```swift
-@MainActor
 var headerHeight: CGFloat { get set }
 ```
 

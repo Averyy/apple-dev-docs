@@ -10,6 +10,7 @@ A component that controls the motion of the body in physics simulations.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -40,17 +41,6 @@ The behavior of an entity with a physics motion component depends on the entityâ
   The angular velocity of the body around the center of mass.
 - [var linearVelocity: SIMD3<Float>](physicsmotioncomponent/linearvelocity.md)
   The linear velocity of the body in the physics simulation.
-### Registering a component type
-- [static func registerComponent()](physicsmotioncomponent/registercomponent.md)
-  Registers a new component type.
-### Comparing physics motion components
-- [static func == (PhysicsMotionComponent, PhysicsMotionComponent) -> Bool](physicsmotioncomponent/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](physicsmotioncomponent/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Component Implementations](physicsmotioncomponent/component-implementations.md)
-- [Equatable Implementations](physicsmotioncomponent/equatable-implementations.md)
 
 ## Relationships
 

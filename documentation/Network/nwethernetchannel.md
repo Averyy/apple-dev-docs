@@ -60,6 +60,7 @@ Creating Ethernet channels requires the `com.apple.developer.networking.custom-p
 ### Conforms To
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

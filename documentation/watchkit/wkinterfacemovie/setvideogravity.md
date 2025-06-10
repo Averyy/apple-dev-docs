@@ -1,6 +1,6 @@
 # setVideoGravity(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the resizing behavior for the movie content.

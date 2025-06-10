@@ -1,6 +1,6 @@
 # coordinateRateChange(to:options:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Coordinates a rate change across all participants, waiting for others to become ready, if necessary.

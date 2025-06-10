@@ -1,6 +1,6 @@
 # rawData
 
-**Framework**: Mailkit  
+**Framework**: MailKit  
 **Kind**: property
 
 The raw RFC 2822 header and body content of the message.

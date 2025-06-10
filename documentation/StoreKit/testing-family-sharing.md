@@ -1,6 +1,6 @@
 # Testing Family Sharing
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Verify that your app handles auto-renewable subscriptions and non-consumable in-app purchases that family members share with Family Sharing.
 
@@ -64,4 +64,4 @@ Note that you can also change the sharing status using App Store Connect instead
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/testing-family-sharing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/testing-family-sharing)*

@@ -87,6 +87,9 @@ Don’t declare new conformances to [`AttributedStringProtocol`](attributedstrin
   An attribute container that allows dynamic member lookup of its contents within the specified attribute scope.
 ### Comparing Attributed Strings or Substrings
 - [static func == <RHS>(Self, RHS) -> Bool](attributedstringprotocol/==(_:_:).md)
+### Instance Properties
+- [var utf16: AttributedString.UTF16View](attributedstringprotocol/utf16.md)
+- [var utf8: AttributedString.UTF8View](attributedstringprotocol/utf8.md)
 ### Default Implementations
 - [CustomStringConvertible Implementations](attributedstringprotocol/customstringconvertible-implementations.md)
 - [Hashable Implementations](attributedstringprotocol/hashable-implementations.md)
@@ -99,6 +102,7 @@ Don’t declare new conformances to [`AttributedStringProtocol`](attributedstrin
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [AttributedString](attributedstring.md)
 - [AttributedSubstring](attributedsubstring.md)

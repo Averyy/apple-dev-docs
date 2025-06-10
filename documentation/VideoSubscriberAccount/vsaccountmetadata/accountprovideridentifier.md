@@ -1,6 +1,6 @@
 # accountProviderIdentifier
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The unique identifier of the account provider.

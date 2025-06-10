@@ -25,7 +25,7 @@ new mapkit.Search(
 To use search, create an instance of a [`mapkit.Search`](mapkit.search/mapkit.search.md). You can optionally set properties of the search object by providing a dictionary of [`SearchConstructorOptions`](searchconstructoroptions.md) on initialization.
 
 ```javascript
-var search = new mapkit.Search({
+const search = new mapkit.Search({
     language: "en-GB",
     getsUserLocation: true,
     region: map.region

@@ -48,8 +48,6 @@ State changes can trigger in either of the following ways:
 
 > ❗ **Important**:  An injected content script can’t directly force the toolbar item to become enabled or disabled. However, you can implement this control yourself by sending a message to your app extension, and changing the toolbar state in your message handler. For more information, see [`Passing messages between Safari app extensions and injected scripts`](passing-messages-between-safari-app-extensions-and-injected-scripts.md).
 
- An injected content script can’t directly force the toolbar item to become enabled or disabled. However, you can implement this control yourself by sending a message to your app extension, and changing the toolbar state in your message handler. For more information, see [`Passing messages between Safari app extensions and injected scripts`](passing-messages-between-safari-app-extensions-and-injected-scripts.md).
-
 ##### Validate the Safari Toolbar Item
 
 When an event occurs that may require your toolbar’s state to change, Safari calls your app extension’s event handler. The event handler receives parameters that indicate the window the toolbar appears in, and a completion handler for your app extension to call. Your event handler determines whether to enable or disable the toolbar button and whether to display a badge, and then returns this information to Safari.

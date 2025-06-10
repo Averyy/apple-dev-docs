@@ -41,6 +41,7 @@ The values correspond to the `ICAP_PIXELTYPE` types as defined in the `TWAIN` Sp
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # RENDERBUFFER_SAMPLES
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

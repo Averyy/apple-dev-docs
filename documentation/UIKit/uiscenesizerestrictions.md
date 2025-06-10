@@ -50,10 +50,6 @@ Don’t create a [`UISceneSizeRestrictions`](uiscenesizerestrictions.md) object 
 
 - [var traitCollection: UITraitCollection](uiwindowscene/traitcollection.md)
   The traits that describe the current environment of the scene.
-- [var coordinateSpace: any UICoordinateSpace](uiwindowscene/coordinatespace.md)
-  The coordinate space occupied by the scene.
-- [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/interfaceorientation.md)
-  The orientation to use when displaying content in your windows.
 - [var sizeRestrictions: UISceneSizeRestrictions?](uiwindowscene/sizerestrictions.md)
   The minimum and maximum size of the app’s windows.
 

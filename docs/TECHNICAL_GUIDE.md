@@ -18,6 +18,41 @@
    - Preserves context with title inclusion
    - Chunk metadata tracking
 
+## 🗑️ Orphan Detection and Cleanup
+
+### Automatic Cleanup
+The scraper now automatically detects and removes orphaned documentation files when Apple removes pages:
+
+1. **During Scraping**: Each file's location is tracked in the hash file
+2. **After Completion**: Compares file timestamps with scrape start time
+3. **Cleanup**: Deletes files that weren't updated (meaning they no longer exist on Apple's site)
+4. **Empty Directories**: Automatically removed
+
+### Manual Orphan Check
+```bash
+# Check all frameworks for orphans (dry run)
+python3 scripts/check_orphans.py
+
+# Check specific framework
+python3 scripts/check_orphans.py --framework SwiftUI
+
+# Actually delete orphaned files
+python3 scripts/check_orphans.py --clean
+
+# Show summary only
+python3 scripts/check_orphans.py --summary
+
+# Consider files orphaned if not updated in X days
+python3 scripts/check_orphans.py --days 30
+```
+
+### How It Works
+- File paths are stored in the existing `.hashes/{framework}_hashes.json` files
+- Each saved file updates its `last_seen` timestamp
+- Files not updated during current scrape = orphans
+- Safely deletes orphaned files and empty directories
+- No separate manifest files needed - everything in the hash file!
+
 ## ⚠️ CRITICAL: ChromaDB Configuration
 
 ### Always Use OpenAI Embeddings
@@ -154,6 +189,10 @@ MAX_FILE_SIZE_MB="10"            # Individual file size
 MAX_TOKENS_PER_DOC="8000"        # Before splitting
 OPENAI_RPM="3000"                # Rate limit
 EMBEDDING_BATCH_SIZE="100"       # Batch size
+
+# Scraper Configuration (optional)
+MAX_CONCURRENT_REQUESTS="5"      # Concurrent HTTP requests (default: 5)
+RATE_LIMIT_DELAY="0.2"          # Delay between requests in seconds (default: 0.2)
 ```
 
 ### Rate Limiting

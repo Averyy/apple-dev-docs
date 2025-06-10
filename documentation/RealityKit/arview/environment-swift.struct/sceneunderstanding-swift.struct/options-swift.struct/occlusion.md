@@ -10,6 +10,7 @@ The `.occlusion` option means that the reconstructed geometry will be used for r
 - iPadOS 13.4+
 - Mac Catalyst 14.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

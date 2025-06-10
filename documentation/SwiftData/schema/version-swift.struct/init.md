@@ -1,6 +1,6 @@
 # init(_:_:_:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: init
 
 Initializes a version struct with the provided components of a semantic version.

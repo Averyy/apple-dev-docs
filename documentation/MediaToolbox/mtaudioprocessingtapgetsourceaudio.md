@@ -38,7 +38,7 @@ This function may only be called from the processing tap’s callback.
 
 ## See Also
 
-- [func MTAudioProcessingTapCreate(CFAllocator?, UnsafePointer<MTAudioProcessingTapCallbacks>, MTAudioProcessingTapCreationFlags, UnsafeMutablePointer<Unmanaged<MTAudioProcessingTap>?>) -> OSStatus](mtaudioprocessingtapcreate(_:_:_:_:).md)
+- [func MTAudioProcessingTapCreate(CFAllocator?, UnsafePointer<MTAudioProcessingTapCallbacks>, MTAudioProcessingTapCreationFlags, UnsafeMutablePointer<MTAudioProcessingTap?>) -> OSStatus](mtaudioprocessingtapcreate(_:_:_:_:).md)
   Creates a new audio processing tap.
 - [func MTAudioProcessingTapGetStorage(MTAudioProcessingTap) -> UnsafeMutableRawPointer](mtaudioprocessingtapgetstorage(_:).md)
   Retrieves a custom storage pointer for an audio processing tap.

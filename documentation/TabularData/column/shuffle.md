@@ -1,6 +1,6 @@
 # shuffle()
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Shuffles the collection in place.

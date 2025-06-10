@@ -3,15 +3,15 @@
 **Framework**: App Intents  
 **Kind**: method
 
-Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -25,7 +25,6 @@ func scrollTransition(_ configuration: ScrollTransitionConfiguration = .interact
 
 - `configuration`: The configuration controlling how the   transition will be applied. The configuration will be applied both   while the view is coming into view and while it is disappearing (the   transition is symmetrical).
 - `axis`: The axis of the containing scroll view over which the   transition will be applied. The default value of   uses the   axis of the innermost containing scroll view, or   if   the innermost scroll view is scrollable along both axes.
-- `coordinateSpace`: The coordinate space of the container that   visibility is evaluated within. Defaults to  .
 - `transition`: A closure that applies visual effects as a function of   the provided phase.
 
 

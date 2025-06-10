@@ -1,6 +1,6 @@
 # receivedApplicationContext
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 A dictionary containing the last update data received from a paired and active device.

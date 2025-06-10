@@ -45,4 +45,4 @@ After you select the necessary routing modes, there are additional configuration
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-maps-support)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-maps-support)*

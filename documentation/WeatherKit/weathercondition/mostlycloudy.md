@@ -1,6 +1,6 @@
 # WeatherCondition.mostlyCloudy
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Mostly cloudy.

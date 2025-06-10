@@ -14,7 +14,6 @@ Returns a simple-text print formatter initialized with plain text.
 ## Declaration
 
 ```swift
-@MainActor
 init(text: String)
 ```
 

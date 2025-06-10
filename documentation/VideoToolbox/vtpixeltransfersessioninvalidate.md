@@ -1,6 +1,6 @@
 # VTPixelTransferSessionInvalidate(_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Tears down a pixel transfer session.

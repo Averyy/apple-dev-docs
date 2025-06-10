@@ -1,6 +1,6 @@
 # localStorageFailed
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates a failure occurred when either deleting or calculating local storage.

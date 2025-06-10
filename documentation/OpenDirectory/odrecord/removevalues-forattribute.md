@@ -1,6 +1,6 @@
 # removeValues(forAttribute:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Removes all values from an attribute of the record.

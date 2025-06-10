@@ -82,6 +82,7 @@ Note that 9 and 10 are never used as features because there would be no annotati
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

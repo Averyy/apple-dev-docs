@@ -3,7 +3,7 @@
 **Framework**: Apple CryptoKit  
 **Kind**: property
 
-The encapsulated secret
+The encapsulated representation of the shared secret.
 
 **Availability**:
 - iOS 17.0+

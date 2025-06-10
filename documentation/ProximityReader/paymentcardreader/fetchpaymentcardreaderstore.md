@@ -1,6 +1,6 @@
 # fetchPaymentCardReaderStore()
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 Returns a store containing the read results the framework obtained using a Store and Forward session.

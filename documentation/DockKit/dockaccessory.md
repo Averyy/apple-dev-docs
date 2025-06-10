@@ -25,8 +25,6 @@ If there are multiple subjects in a video frame, direct the dock accessory to fo
 
 > ❗ **Important**: DockKit throws a [`DockKitError.frameRateTooHigh`](dockkiterror/frameratetoohigh.md) exception if you animate or set the orientation of the dock accessory too quickly, so keep call rates at 2 times per second or less.
 
-DockKit throws a [`DockKitError.frameRateTooHigh`](dockkiterror/frameratetoohigh.md) exception if you animate or set the orientation of the dock accessory too quickly, so keep call rates at 2 times per second or less.
-
 ## Topics
 
 ### Selecting and tracking
@@ -155,6 +153,7 @@ DockKit throws a [`DockKitError.frameRateTooHigh`](dockkiterror/frameratetoohigh
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

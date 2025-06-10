@@ -6,6 +6,7 @@
 An error that indicates the system doesn’t support the specified color format choice.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

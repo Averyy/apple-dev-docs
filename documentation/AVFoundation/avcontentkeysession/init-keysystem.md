@@ -26,7 +26,7 @@ Returns a new [`AVContentKeySession`](avcontentkeysession.md) instance.
 
 #### Discussion
 
-The `AVContentKeySession` instance returned is capable of managing a collection of content decryption keys that correspond to the input key system. An [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) is raised when the value of `keySystem` is unsupported.
+The `AVContentKeySession` instance returned is capable of managing a collection of content decryption keys that correspond to the input key system. An [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) is raised when the value of `keySystem` is unsupported.
 
 ## Parameters
 

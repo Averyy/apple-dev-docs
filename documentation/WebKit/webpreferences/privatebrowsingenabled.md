@@ -1,6 +1,6 @@
 # privateBrowsingEnabled
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean that indicates whether or not private browsing is enabled.

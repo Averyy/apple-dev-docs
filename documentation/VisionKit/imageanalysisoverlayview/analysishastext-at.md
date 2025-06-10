@@ -1,6 +1,6 @@
 # analysisHasText(at:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Returns a Boolean value that indicates whether the analysis finds text at the specified point.

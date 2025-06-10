@@ -1,6 +1,6 @@
 # electrocardiogramType()
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: method
 
 Returns the shared electrocardiogram type.

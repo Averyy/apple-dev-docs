@@ -67,4 +67,4 @@ If your iOS browser app includes an alternative browser engine, which includes u
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/preparing-your-app-to-be-the-default-browser)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/preparing-your-app-to-be-the-default-browser)*

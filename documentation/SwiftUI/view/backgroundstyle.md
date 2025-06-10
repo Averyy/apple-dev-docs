@@ -64,6 +64,8 @@ To restore the default background style, set the [`backgroundStyle`](environment
   A color gradient.
 - [struct ShadowStyle](shadowstyle.md)
   A style to use when rendering shadows.
+- [struct Glass](glass.md)
+  A structure that defines the configuration of the Liquid Glass material.
 
 
 ---

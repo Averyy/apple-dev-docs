@@ -71,6 +71,7 @@ The [`UIFocusEnvironment`](uifocusenvironment.md) protocol provides a common int
 - [UIActivityViewController](uiactivityviewcontroller.md)
 - [UIAlertController](uialertcontroller.md)
 - [UIAlertView](uialertview.md)
+- [UIBackgroundExtensionView](uibackgroundextensionview.md)
 - [UIButton](uibutton.md)
 - [UICalendarView](uicalendarview.md)
 - [UICloudSharingController](uicloudsharingcontroller.md)

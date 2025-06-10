@@ -1,6 +1,6 @@
 # elements
 
-**Framework**: Gamecontroller  
+**Framework**: Game Controller  
 **Kind**: property
 
 The input elements of a virtual controller.

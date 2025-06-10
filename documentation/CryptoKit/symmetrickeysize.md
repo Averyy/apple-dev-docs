@@ -44,6 +44,7 @@ When creating a new [`SymmetricKey`](symmetrickey.md) instance with a call to it
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

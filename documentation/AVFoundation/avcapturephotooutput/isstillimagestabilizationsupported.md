@@ -1,6 +1,6 @@
 # isStillImageStabilizationSupported
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value indicating whether the capture output currently supports automatic stabilization for still image capture.

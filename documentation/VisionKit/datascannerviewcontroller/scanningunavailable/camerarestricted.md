@@ -1,6 +1,6 @@
 # DataScannerViewController.ScanningUnavailable.cameraRestricted
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: case
 
 The data scanner isn’t available due to user restrictions on the use of the camera.

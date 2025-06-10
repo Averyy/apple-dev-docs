@@ -1,6 +1,6 @@
 # WKBluetoothAlertRefreshBackgroundTask
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A task for handling timely Bluetooth alerts in the background.
@@ -44,6 +44,7 @@ If you exceed your budget, your app doesn’t receive any timely alerts until ad
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -69,4 +70,4 @@ If you exceed your budget, your app doesn’t receive any timely alerts until ad
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkbluetoothalertrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkbluetoothalertrefreshbackgroundtask)*

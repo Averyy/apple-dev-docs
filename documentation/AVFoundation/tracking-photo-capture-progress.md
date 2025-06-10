@@ -1,6 +1,6 @@
 # Tracking Photo Capture Progress
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Monitor key events during capture to provide feedback in your camera UI.
 
@@ -93,4 +93,4 @@ func shootPhoto() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/tracking-photo-capture-progress)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/tracking-photo-capture-progress)*

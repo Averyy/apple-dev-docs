@@ -10,6 +10,7 @@ The optional time, in seconds, at which the source animation stops.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -36,8 +37,6 @@ This property is `nil` by default, which plays the animation until `time` = [`du
   An optional duration that overrides the calculated duration.
 - [var trimStart: TimeInterval?](blendtreeanimation/trimstart.md)
   The optional time, in seconds, at which the source animation plays.
-- [func trimmed(start: TimeInterval?, end: TimeInterval?, duration: TimeInterval?) -> Self](blendtreeanimation/trimmed(start:end:duration:).md)
-  Edits the animation duration according to the specified time.
 
 
 ---

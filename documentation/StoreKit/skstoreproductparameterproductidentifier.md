@@ -1,6 +1,6 @@
 # SKStoreProductParameterProductIdentifier
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: var
 
 The key representing the product identifier for the promoted product you want the store to display at the top of the page.
@@ -44,4 +44,4 @@ The product indicated by the identifier must be set up as a promoted product in 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/skstoreproductparameterproductidentifier)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/skstoreproductparameterproductidentifier)*

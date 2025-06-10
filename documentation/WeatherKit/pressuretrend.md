@@ -1,6 +1,6 @@
 # PressureTrend
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: enum
 
 The atmospheric pressure change over time.
@@ -63,6 +63,8 @@ enum PressureTrend
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

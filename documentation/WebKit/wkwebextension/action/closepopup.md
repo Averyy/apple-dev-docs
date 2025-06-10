@@ -1,6 +1,6 @@
 # closePopup()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Triggers the dismissal process of the pop-up.

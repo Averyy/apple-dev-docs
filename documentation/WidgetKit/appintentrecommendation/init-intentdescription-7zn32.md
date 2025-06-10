@@ -1,6 +1,6 @@
 # init(intent:description:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: init
 
 Creates a recommended configuration for a widget on platforms that don’t offer a dedicated user interface to customize widgets.
@@ -8,8 +8,9 @@ Creates a recommended configuration for a widget on platforms that don’t offer
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
+- visionOS 26.0+ (Beta)
 - watchOS 10.0+
 
 ## Declaration

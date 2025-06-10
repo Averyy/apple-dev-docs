@@ -16,8 +16,6 @@ If an image fails to load in a reasonable amount of time, the snapshot rendering
 
 > ❗ **Important**: By providing an image URL, you’re responsible for ensuring the availability of the image at all times.
 
-By providing an image URL, you’re responsible for ensuring the availability of the image at all times.
-
 ## See Also
 
 - [Generating a URL and Signature to Create a Maps Web Snapshot](generating_a_url_and_signature_to_create_a_maps_web_snapshot.md)

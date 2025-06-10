@@ -6,7 +6,7 @@
 The last completed call to request content authorization completed.
 
 **Availability**:
-- macOS ?+
+- macOS 10.7+
 
 ## Declaration
 

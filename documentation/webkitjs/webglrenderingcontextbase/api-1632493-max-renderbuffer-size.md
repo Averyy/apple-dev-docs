@@ -1,6 +1,6 @@
 # MAX_RENDERBUFFER_SIZE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

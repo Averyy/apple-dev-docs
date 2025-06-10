@@ -5,9 +5,6 @@
 
 A collection of mech anchors.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift

@@ -8,6 +8,10 @@ Get the build information for a specific beta app review submission.
 **Availability**:
 - App Store Connect API 1.0+
 
+## See Also
+
+- [GET /v1/betaAppReviewSubmissions/{id}/relationships/build](get-v1-betaappreviewsubmissions-_id_-relationships-build.md)
+
 
 ---
 

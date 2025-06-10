@@ -1,6 +1,6 @@
 # download(_:didFailWithError:resumeData:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the delegate that the download failed, with error information and data you can use to restart the download.

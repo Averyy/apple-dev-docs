@@ -8,10 +8,10 @@ An object that determines whether the value of a string property has the specifi
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +22,7 @@ final class HasPrefixComparator<Property, PropertyType, InputType, ComparatorMap
 
 ## Topics
 
-### Initializers
+### Creating a comparator
 - [init(mappingTransform: (InputType) -> ComparatorMappingType)](hasprefixcomparator/init(mappingtransform:)-4i1bf.md)
   Declares support for the `hasPrefix` operator between a `String` property and user-supplied values.
 - [init(mappingTransform: (InputType) -> ComparatorMappingType)](hasprefixcomparator/init(mappingtransform:)-5kri6.md)

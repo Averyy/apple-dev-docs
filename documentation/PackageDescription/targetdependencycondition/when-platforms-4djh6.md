@@ -19,6 +19,10 @@ static func when(platforms: [Platform]? = nil) -> TargetDependencyCondition
 
 - [static func when(platforms: [Platform]) -> TargetDependencyCondition?](targetdependencycondition/when(platforms:)-5bxhc.md)
   Creates a target dependency condition.
+- [static func when(traits: Set<String>) -> TargetDependencyCondition?](targetdependencycondition/when(traits:).md)
+  Creates a target dependency condition.
+- [static func when(platforms: [Platform], traits: Set<String>) -> TargetDependencyCondition?](targetdependencycondition/when(platforms:traits:).md)
+  Creates a target dependency condition.
 
 
 ---

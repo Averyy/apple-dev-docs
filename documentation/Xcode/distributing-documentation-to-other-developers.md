@@ -108,4 +108,4 @@ After configuring your web server to host a documentation archive, keep it up to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/distributing-documentation-to-other-developers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/distributing-documentation-to-other-developers)*

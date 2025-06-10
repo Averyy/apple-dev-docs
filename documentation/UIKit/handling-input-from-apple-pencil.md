@@ -1,6 +1,6 @@
 # Handling input from Apple Pencil
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Learn how to detect and respond to touches from Apple Pencil.
 
@@ -87,4 +87,4 @@ override func touchesEstimatedPropertiesUpdated(_ touches: Set<UITouch>) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/handling-input-from-apple-pencil)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/handling-input-from-apple-pencil)*

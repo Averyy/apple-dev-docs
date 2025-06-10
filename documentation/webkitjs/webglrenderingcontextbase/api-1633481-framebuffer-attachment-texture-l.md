@@ -1,6 +1,6 @@
 # FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

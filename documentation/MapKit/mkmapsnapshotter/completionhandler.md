@@ -12,6 +12,7 @@ A block that processes the results of a snapshot request.
 - macOS ?+
 - tvOS ?+
 - visionOS ?+
+- watchOS ?+
 
 ## Declaration
 
@@ -28,7 +29,7 @@ typealias CompletionHandler = (MKMapSnapshotter.Snapshot?, (any Error)?) -> Void
 
 - [func start(completionHandler: (MKMapSnapshotter.Snapshot?, (any Error)?) -> Void)](mkmapsnapshotter/start(completionhandler:).md)
   Submits the request to create a snapshot and delivers the results to the specified block.
-- [func start(with: dispatch_queue_t, completionHandler: MKMapSnapshotter.CompletionHandler)](mkmapsnapshotter/start(with:completionhandler:).md)
+- [func start(with: dispatch_queue_t, completionHandler: (MKMapSnapshotter.Snapshot?, (any Error)?) -> Void)](mkmapsnapshotter/start(with:completionhandler:).md)
   Submits the request to create a snapshot and executes the resulting block on the specified queue.
 - [func cancel()](mkmapsnapshotter/cancel.md)
   Cancels the request to create a snapshot.

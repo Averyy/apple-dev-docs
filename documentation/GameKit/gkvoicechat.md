@@ -87,8 +87,16 @@ Note that if there’s insufficient bandwidth over Wi-Fi to maintain a voice cha
 - [class GKChallengeEventHandler](gkchallengeeventhandler.md)
   The `GKChallengeEventHandler` class is used to respond to events related to challenges sent or received by the local player.
 - [class GKChallengesViewController](gkchallengesviewcontroller.md)
+- [class GKChallenge](gkchallenge.md)
+  A challenge issued by the local player to another player.
+- [class GKScoreChallenge](gkscorechallenge.md)
+  A type of challenge where a player must beat the leaderboard score of another player.
+- [class GKAchievementChallenge](gkachievementchallenge.md)
+  A type of challenge where a player must earn another player’s achievement.
 - [class GKCloudPlayer](gkcloudplayer.md)
   The object representing the currently signed-in iCloud user.
+- [class GKGameCenterViewController](gkgamecenterviewcontroller.md)
+  The dashboard that allows players to access their Game Center data in your game.
 - [class GKGameSession](gkgamesession.md)
   A game session you can use to save game data, invite other players, and create turn-based and real-time game apps.
 - [class GKGameSessionSharingViewController](gkgamesessionsharingviewcontroller.md)
@@ -103,10 +111,6 @@ Note that if there’s insufficient bandwidth over Wi-Fi to maintain a voice cha
   An object containing information for a score that was earned by the player.
 - [class GKSession](gksession.md)
   A [`GKSession`](gksession.md) object provides the ability to discover and connect to nearby iOS devices using Bluetooth or Wi-fi.
-- [class GKTurnBasedEventHandler](gkturnbasedeventhandler.md)
-  The [`GKTurnBasedEventHandler`](gkturnbasedeventhandler.md) class is used to respond to important messages related to turn-based matches. To use it, call the [`shared()`](gkturnbasedeventhandler/shared().md) class method to get the singleton instance and assign an object that implements the [`GKTurnBasedEventHandlerDelegate`](gkturnbasedeventhandlerdelegate.md) protocol to its [`delegate`](gkturnbasedeventhandler/delegate.md) property. All methods are called on the main thread.
-- [class GKVoiceChatService](gkvoicechatservice.md)
-  The [`GKVoiceChatService`](gkvoicechatservice.md) class allows your application to connect two iOS devices into a voice chat.
 
 
 ---

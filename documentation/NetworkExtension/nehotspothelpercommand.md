@@ -27,12 +27,13 @@ NEHotspostHelperCommand objects are passed to the the Hotspot Helper app’s com
 - [var commandType: NEHotspotHelperCommandType](nehotspothelpercommand/commandtype.md)
   The type of the command
 - [enum NEHotspotHelperCommandType](nehotspothelpercommandtype.md)
+  An enumeration of hotspot command types.
 - [var network: NEHotspotNetwork?](nehotspothelpercommand/network.md)
   The network associated with the command.
 - [var networkList: [NEHotspotNetwork]?](nehotspothelpercommand/networklist.md)
   The list of networks associated with the command.
 ### Networking on the hotspot network
-- [func bind(to: NEHotspotHelperCommand)](../foundation/nsmutableurlrequest/1619006-bind.md)
+- [func bind(to command: NEHotspotHelperCommand)](../Foundation/NSMutableURLRequest/bind(to:).md)
   Binds a URL request to the network interface associated with the hotspot helper command instance.
 - [func createTCPConnection(NWEndpoint) -> NWTCPConnection](nehotspothelpercommand/createtcpconnection(_:).md)
   Create a new TCP connection over the network associated with the command.
@@ -42,6 +43,7 @@ NEHotspostHelperCommand objects are passed to the the Hotspot Helper app’s com
 - [func createResponse(NEHotspotHelperResult) -> NEHotspotHelperResponse](nehotspothelpercommand/createresponse(_:).md)
   Create a response to the command.
 - [enum NEHotspotHelperResult](nehotspothelperresult.md)
+  The result of handling a hotspot command.
 ### Instance Properties
 - [var interface: NWInterface](nehotspothelpercommand/interface-46dq.md)
 

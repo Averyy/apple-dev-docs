@@ -10,6 +10,7 @@ Options available to determine the resolution method for a target entity in an a
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -41,8 +42,6 @@ Use this to resolve the entity an action should target. For example, [`ImpulseAc
 ### Type Properties
 - [static var sourceEntity: ActionEntityResolution](actionentityresolution/sourceentity.md)
   Resolves to the source entity that is playing the action.
-### Default Implementations
-- [Equatable Implementations](actionentityresolution/equatable-implementations.md)
 
 ## Relationships
 

@@ -16,8 +16,6 @@ Use the [`SecurityInfoCommand`](securityinfocommand.md) to determine whether a u
 
 > ❗ **Important**:  Wait until the user complies with the passcode policy before sending any proprietary data or configurations to the device.
 
- Wait until the user complies with the passcode policy before sending any proprietary data or configurations to the device.
-
 ##### Manage the Clearpasscode Command
 
 Passcodes add a layer of security to your organization’s devices. Occasionally, it may be necessary to clear a device’s passcode by sending it a [`ClearPasscodeCommand`](clearpasscodecommand.md), such as when:
@@ -31,8 +29,6 @@ Clearing the passcode on a managed device compromises its security because it en
 If your MDM payload specifies the Device Lock feature, the device includes an `UnlockToken` data value in the `TokenUpdate` message that it sends your server after installing the profile. This data contains a cryptographic package that can enable unlocking the device. Treat this data as the equivalent of a primary passcode for the device. Ensure that your IT policy specifies how to securely store this data, who has access to it, and the requirements to execute the [`ClearPasscodeCommand`](clearpasscodecommand.md). To create a `ClearPasscodeCommand` request, obtain the `UnlockToken` for that device by sending it a [`TokenUpdateRequest`](tokenupdaterequest.md).
 
 > ⚠️ **Warning**:  Never send the `ClearPasscodeCommand` to a lost device, and always ensure physical possession of the device by a member of your organization before sending this command.
-
- Never send the `ClearPasscodeCommand` to a lost device, and always ensure physical possession of the device by a member of your organization before sending this command.
 
 ## See Also
 

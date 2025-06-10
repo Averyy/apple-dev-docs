@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: init
 
-Creates a new `Configuration`.
+Creates a new configuration for a conversation manager.
 
 **Availability**:
 - iOS 17.4+
@@ -20,13 +20,18 @@ init(ringtoneName: String?, iconTemplateImageData: Data?, maximumConversationGro
 
 ## Parameters
 
-- `ringtoneName`: The name of the sound resource in the app bundle to be used for the provider ringtone.
-- `iconTemplateImageData`: PNG data for the icon image to be displayed for the provider.
-- `maximumConversationGroups`: The maximum number of  s groups.
-- `maximumConversationsPerConversationGroup`: The maximum number of  s per   group.
-- `includesConversationInRecents`: A Boolean value that indicates whether the provider includes a call in the system’s Recents list after the call ends.
-- `supportsVideo`: A Boolean value that indicates whether the provider supports video in addition to audio.
+- `ringtoneName`: The name of the sound resource in the app bundle for your app’s ringtone.
+- `iconTemplateImageData`: The PNG data for the icon image of your app.
+- `maximumConversationGroups`: The maximum number of conversation groups.
+- `maximumConversationsPerConversationGroup`: The maximum number of conversations per conversation group.
+- `includesConversationInRecents`: A Boolean value that indicates whether your app includes a conversation in the system’s Recents list after the conversation ends.
+- `supportsVideo`: A Boolean value that indicates whether your app supports video in addition to audio.
 - `supportedHandleTypes`: The supported handle types.
+
+## See Also
+
+- [init(ringtoneName: String?, iconTemplateImageData: Data?, maximumConversationGroups: Int, maximumConversationsPerConversationGroup: Int, includesConversationInRecents: Bool, supportsVideo: Bool, supportedHandleTypes: Set<Handle.Kind>, supportsAudioTranslation: Bool)](conversationmanager/configuration-swift.struct/init(ringtonename:icontemplateimagedata:maximumconversationgroups:maximumconversationsperconversationgroup:includesconversationinrecents:supportsvideo:supportedhandletypes:supportsaudiotranslation:).md)
+  Creates a new configuration for a conversation manager.
 
 
 ---

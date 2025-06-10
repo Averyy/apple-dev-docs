@@ -1,6 +1,6 @@
 # Executing Statistics Collection Queries
 
-**Framework**: Healthkit
+**Framework**: HealthKit
 
 Calculate statistical data for graphs and charts.
 
@@ -161,4 +161,4 @@ Since the sample doesn’t provide an update results handler, when the initial r
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/executing-statistics-collection-queries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/executing-statistics-collection-queries)*

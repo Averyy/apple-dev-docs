@@ -24,8 +24,6 @@ The default value is `0`. You can only set a value that’s greater than or equa
 
 > ❗ **Important**:  Only modify the selected index from the same dispatch queue that you specified in the control’s [`setActionQueue:action:`](avcaptureslider/setactionqueue:action:.md) method.
 
- Only modify the selected index from the same dispatch queue that you specified in the control’s [`setActionQueue:action:`](avcaptureslider/setactionqueue:action:.md) method.
-
 ## See Also
 
 - [var numberOfIndexes: Int](avcaptureindexpicker/numberofindexes.md)

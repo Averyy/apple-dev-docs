@@ -1,6 +1,6 @@
 # javaScriptCanOpenWindowsAutomatically
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether JavaScript can open windows without user interaction.

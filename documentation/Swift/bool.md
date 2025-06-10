@@ -134,15 +134,20 @@ The C `bool` and `Boolean` types and the Objective-C `BOOL` type are all bridged
 - [static var defaultResolverSpecification: some ResolverSpecification](bool/defaultresolverspecification.md)
 ### Default Implementations
 - [AtomicRepresentable Implementations](bool/atomicrepresentable-implementations.md)
+- [ConvertibleFromGeneratedContent Implementations](bool/convertiblefromgeneratedcontent-implementations.md)
+- [ConvertibleToGeneratedContent Implementations](bool/convertibletogeneratedcontent-implementations.md)
 - [CustomReflectable Implementations](bool/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](bool/customstringconvertible-implementations.md)
 - [Decodable Implementations](bool/decodable-implementations.md)
 - [Encodable Implementations](bool/encodable-implementations.md)
 - [Equatable Implementations](bool/equatable-implementations.md)
 - [ExpressibleByBooleanLiteral Implementations](bool/expressiblebybooleanliteral-implementations.md)
+- [Generable Implementations](bool/generable-implementations.md)
 - [Hashable Implementations](bool/hashable-implementations.md)
+- [InstructionsRepresentable Implementations](bool/instructionsrepresentable-implementations.md)
 - [LosslessStringConvertible Implementations](bool/losslessstringconvertible-implementations.md)
 - [MLDataValueConvertible Implementations](bool/mldatavalueconvertible-implementations.md)
+- [PromptRepresentable Implementations](bool/promptrepresentable-implementations.md)
 
 ## Relationships
 
@@ -153,6 +158,8 @@ The C `bool` and `Boolean` types and the Objective-C `BOOL` type are all bridged
 - [BitwiseCopyable](bitwisecopyable.md)
 - [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
 - [CVarArg](cvararg.md)
+- [ConvertibleFromGeneratedContent](../FoundationModels/ConvertibleFromGeneratedContent.md)
+- [ConvertibleToGeneratedContent](../FoundationModels/ConvertibleToGeneratedContent.md)
 - [Copyable](copyable.md)
 - [CustomReflectable](customreflectable.md)
 - [CustomStringConvertible](customstringconvertible.md)
@@ -160,12 +167,17 @@ The C `bool` and `Boolean` types and the Objective-C `BOOL` type are all bridged
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
 - [ExpressibleByBooleanLiteral](expressiblebybooleanliteral.md)
+- [Generable](../FoundationModels/Generable.md)
 - [Hashable](hashable.md)
+- [InstructionsRepresentable](../FoundationModels/InstructionsRepresentable.md)
 - [LosslessStringConvertible](losslessstringconvertible.md)
 - [MLDataValueConvertible](../CreateML/MLDataValueConvertible.md)
 - [MLTensorScalar](../CoreML/MLTensorScalar.md)
 - [MusicLibraryRequestFilterValueEquatable](../MusicKit/MusicLibraryRequestFilterValueEquatable.md)
+- [PDFObjectType](../CoreGraphics/PDFObjectType.md)
+- [PromptRepresentable](../FoundationModels/PromptRepresentable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 
 ---

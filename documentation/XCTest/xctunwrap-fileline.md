@@ -1,6 +1,6 @@
 # XCTUnwrap(_:_:file:line:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: func
 
 Asserts that an expression is not `nil,` and returns the unwrapped value.

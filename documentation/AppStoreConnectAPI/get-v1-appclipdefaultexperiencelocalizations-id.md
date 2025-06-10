@@ -12,6 +12,7 @@ Get localized metadata that appears on the App Clip card of a specific default A
 
 - [Read App Clip Card Image Information for a Localized Default App Clip Experience](get-v1-appclipdefaultexperiencelocalizations-_id_-appclipheaderimage.md)
   Get the image that appears on the App Clip card, specific to a locale, for a default App Clip experience.
+- [GET /v1/appClipDefaultExperienceLocalizations/{id}/relationships/appClipHeaderImage](get-v1-appclipdefaultexperiencelocalizations-_id_-relationships-appclipheaderimage.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # Handling external player events notifications
 
-**Framework**: Mediaplayer
+**Framework**: Media Player
 
 Handle events for external media players.
 
@@ -31,4 +31,4 @@ You can ensure that your app interacts well with other apps handling remote cont
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MediaPlayer/handling-external-player-events-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mediaplayer/handling-external-player-events-notifications)*

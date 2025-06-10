@@ -27,8 +27,6 @@ When you do this to create an environment that’s suitable for video playback, 
 
 > ❗ **Important**: This modifier doesn’t affect scenes other than immersive spaces.
 
-This modifier doesn’t affect scenes other than immersive spaces.
-
 ## Parameters
 
 - `brightness`: The level of content brightness that you prefer.

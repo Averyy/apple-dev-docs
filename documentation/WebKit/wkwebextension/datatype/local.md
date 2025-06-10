@@ -1,6 +1,6 @@
 # local
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Specifies local storage, including `browser.storage.local`.

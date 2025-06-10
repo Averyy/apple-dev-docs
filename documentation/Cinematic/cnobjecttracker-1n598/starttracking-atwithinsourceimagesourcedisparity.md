@@ -8,6 +8,7 @@ Starts creating a detection track to track an object within the given bounds.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
 

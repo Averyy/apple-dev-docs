@@ -1,6 +1,6 @@
 # touchBarItemPrincipal(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Sets principal views that have special significance to this Touch Bar.

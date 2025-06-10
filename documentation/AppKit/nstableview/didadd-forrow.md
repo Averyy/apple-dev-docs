@@ -1,6 +1,6 @@
 # didAdd(_:forRow:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Invoked when a row view is added to the table.

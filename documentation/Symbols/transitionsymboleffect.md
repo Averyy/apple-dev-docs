@@ -26,6 +26,8 @@ protocol TransitionSymbolEffect
 - [AppearSymbolEffect](appearsymboleffect.md)
 - [AutomaticSymbolEffect](automaticsymboleffect.md)
 - [DisappearSymbolEffect](disappearsymboleffect.md)
+- [DrawOffSymbolEffect](drawoffsymboleffect.md)
+- [DrawOnSymbolEffect](drawonsymboleffect.md)
 
 ## See Also
 

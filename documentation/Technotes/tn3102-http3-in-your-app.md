@@ -165,4 +165,4 @@ If you experience issues while debugging your network transactions, take a look 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3102-http3-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3102-http3-in-your-app)*

@@ -1,6 +1,6 @@
 # MEDIA_ERR_ENCRYPTED
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

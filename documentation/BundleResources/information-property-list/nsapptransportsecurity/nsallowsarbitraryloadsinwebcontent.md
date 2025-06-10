@@ -19,13 +19,11 @@ A web view is an instance of any of the following classes:
 
 - [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView)
 - [`UIWebView`](https://developer.apple.com/documentation/UIKit/UIWebView) (iOS only)
-- [`WebView`](https://developer.apple.com/documentation/WebKit/WebView) (macOS only)
+- doc://com.apple.documentation/documentation/webkit/webview (macOS only)
 
 In iOS 10 and later and in macOS 10.12 and later, if you include this key with any value, then App Transport Security ignores the value of the [`NSAllowsArbitraryLoads`](information-property-list/nsapptransportsecurity/nsallowsarbitraryloads.md) key, instead using that key’s default value of `NO`. For more information about how the OS version affects ATS behavior, see the [`NSAppTransportSecurity`](information-property-list/nsapptransportsecurity.md) key’s Versioning section.
 
 > ❗ **Important**:  You must supply a justification during App Store review if you set the key’s value to `YES`, as described in `Provide Justification for Exceptions`.
-
- You must supply a justification during App Store review if you set the key’s value to `YES`, as described in `Provide Justification for Exceptions`.
 
 ## See Also
 

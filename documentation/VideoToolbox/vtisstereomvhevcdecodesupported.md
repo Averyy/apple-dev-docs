@@ -1,6 +1,6 @@
 # VTIsStereoMVHEVCDecodeSupported()
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Returns a Boolean value that indicates whether the system supports MV-HEVC decoding.

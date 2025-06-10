@@ -3,7 +3,7 @@
 **Framework**: HealthKit  
 **Kind**: case
 
-The ovulation test detected a surge in estrogen. This value often refers to a `High` result.
+The ovulation test detected a surge in estrogen.
 
 **Availability**:
 - iOS 13.0+
@@ -24,7 +24,7 @@ case estrogenSurge
 - [HKCategoryValueOvulationTestResult.negative](hkcategoryvalueovulationtestresult/negative.md)
   The ovulation test is negative.
 - [HKCategoryValueOvulationTestResult.luteinizingHormoneSurge](hkcategoryvalueovulationtestresult/luteinizinghormonesurge.md)
-  The ovulation test detected a surge in the luteinizing hormone. This value often refers to a `Positive` or `Peak` result.
+  The ovulation test detected a surge in the luteinizing hormone.
 - [HKCategoryValueOvulationTestResult.indeterminate](hkcategoryvalueovulationtestresult/indeterminate.md)
   The ovulation test is inconclusive.
 - [static var positive: HKCategoryValueOvulationTestResult](hkcategoryvalueovulationtestresult/positive.md)

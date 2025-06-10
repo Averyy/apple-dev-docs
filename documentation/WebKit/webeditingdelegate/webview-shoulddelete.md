@@ -1,6 +1,6 @@
 # webView(_:shouldDelete:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns whether the user should be allowed to delete a range of content.

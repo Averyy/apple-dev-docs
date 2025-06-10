@@ -1,6 +1,6 @@
 # require(_:_:sourceLocation:)
 
-**Framework**: Testing  
+**Framework**: Swift Testing  
 **Kind**: macro
 
 Check that an expectation has passed after a condition has been evaluated and throw an error if it failed.

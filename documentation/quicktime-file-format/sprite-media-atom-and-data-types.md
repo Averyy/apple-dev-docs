@@ -1,6 +1,6 @@
 # Sprite media atom and data types
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Atoms that represent sprite media and data types.
 

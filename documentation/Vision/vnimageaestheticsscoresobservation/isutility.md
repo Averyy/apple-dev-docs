@@ -3,7 +3,7 @@
 **Framework**: Vision  
 **Kind**: property
 
-Returns a Boolean value that represents an image that may not have memorable or exciting content.
+A Boolean value that represents images that are not necessarily of poor image quality, but may not have memorable or exciting content.
 
 **Availability**:
 - iOS 18.0+
@@ -22,7 +22,7 @@ var isUtility: Bool { get }
 ## See Also
 
 - [var overallScore: Float](vnimageaestheticsscoresobservation/overallscore.md)
-  A score that incorporates the aesthetic score, failure score, and utility labels.
+  A score which incorporates aesthetic score, failure score, and utility labels.
 
 
 ---

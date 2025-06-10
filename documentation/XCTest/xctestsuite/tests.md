@@ -1,6 +1,6 @@
 # tests
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 All tests currently in the test suite.

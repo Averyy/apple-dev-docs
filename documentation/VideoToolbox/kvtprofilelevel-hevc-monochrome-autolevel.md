@@ -1,6 +1,6 @@
 # kVTProfileLevel_HEVC_Monochrome_AutoLevel
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

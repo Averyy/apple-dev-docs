@@ -17,14 +17,15 @@ The transparency value applied to the node’s contents.
 ## Declaration
 
 ```swift
+@MainActor
 var alpha: CGFloat { get set }
 ```
 
 ## Mentions
 
-- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
 - [Getting Started with Nodes](getting-started-with-nodes.md)
 - [About Node Property Propagation](about-node-property-propagation.md)
+- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
 
 #### Discussion
 

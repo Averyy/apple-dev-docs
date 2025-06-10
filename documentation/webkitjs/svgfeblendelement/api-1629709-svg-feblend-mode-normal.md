@@ -1,6 +1,6 @@
 # SVG_FEBLEND_MODE_NORMAL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

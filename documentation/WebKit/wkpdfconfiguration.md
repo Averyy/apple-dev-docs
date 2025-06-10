@@ -1,6 +1,6 @@
 # WKPDFConfiguration
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 The configuration data to use when generating a PDF representation of a web view’s contents.

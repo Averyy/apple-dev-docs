@@ -1,0 +1,27 @@
+# renderQuality
+
+**Framework**: Compositor Services  
+**Kind**: property
+
+Get the render quality to be used by the drawables.
+
+**Availability**:
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+var renderQuality: LayerRenderer.RenderQuality { get set }
+```
+
+#### Discussion
+
+The render quality will increase the resolution at which rendering happens. This value cannot exceed the quality specified on the layer renderer configuration see [`cp_layer_renderer_configuration_set_max_render_quality`](cp_layer_renderer_configuration_set_max_render_quality.md). The quality will be changed to the target render quality over a set duration to hide the transition of quality from the user.
+
+The renderer should monitor its frame rate to determine whether its making the frames on time. If it is unable to maintain proper frame rate, the app should reduce the render quality, reduce the scene complexity, or increase the frame repeat count see [`cp_layer_renderer_set_minimum_frame_repeat_count`](cp_layer_renderer_set_minimum_frame_repeat_count.md). It is generally preferable to reduce anything else before increasing the frame repeat count.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/compositorservices/layerrenderer/renderquality-swift.property)*

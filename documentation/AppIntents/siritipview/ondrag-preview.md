@@ -9,7 +9,7 @@ Activates this view as the source of a drag and drop operation.
 - iOS 15.0+
 - iPadOS 15.0+
 - macOS 12.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

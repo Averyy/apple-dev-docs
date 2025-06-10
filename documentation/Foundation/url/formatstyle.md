@@ -155,9 +155,12 @@ let url = match.1 // url = https://www.example.com:8088/productList?query=slushi
 - [Hashable](../Swift/Hashable.md)
 - [ParseableFormatStyle](parseableformatstyle.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [Language Introspector](language-introspector.md)
+  Converts data into human-readable text using formatters and locales.
 - [protocol FormatStyle](formatstyle.md)
   A type that converts a given data type into a representation in another type, such as a string.
 - [struct IntegerFormatStyle](integerformatstyle.md)

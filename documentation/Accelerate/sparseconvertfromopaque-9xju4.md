@@ -24,6 +24,15 @@ func SparseConvertFromOpaque(_ matrix: sparse_matrix_double_complex) -> SparseMa
 
 - `matrix`: The matrix to be converted.
 
+## See Also
+
+- [func SparseConvertFromOpaque(sparse_matrix_double) -> SparseMatrix_Double](sparseconvertfromopaque(_:)-6n7rw.md)
+  Returns a sparse matrix of double-precision, floating-point values from a BLAS opaque matrix.
+- [func SparseConvertFromOpaque(sparse_matrix_float) -> SparseMatrix_Float](sparseconvertfromopaque(_:)-4u519.md)
+  Returns a sparse matrix of single-precision, floating-point values from a BLAS opaque matrix.
+- [func SparseConvertFromOpaque(sparse_matrix_float_complex) -> SparseMatrix_Complex_Float](sparseconvertfromopaque(_:)-9ll2d.md)
+  Converts an opaque matrix of complex float values object to a transparent sparse matrix object. When you are done with this matrix, release the memory that has been allocated by calling `SparseCleanup` on it.
+
 
 ---
 

@@ -28,8 +28,6 @@ A new property list if the conversion is successful, otherwise `NULL`. Ownership
 
 > ⚠️ **Warning**:  This function is obsolete and will be deprecated soon. Use [`CFPropertyListCreateWithData(_:_:_:_:_:)`](cfpropertylistcreatewithdata(_:_:_:_:_:).md) instead.
 
- This function is obsolete and will be deprecated soon. Use [`CFPropertyListCreateWithData(_:_:_:_:_:)`](cfpropertylistcreatewithdata(_:_:_:_:_:).md) instead.
-
 ## Parameters
 
 - `allocator`: The allocator to use to allocate memory for the new property list. Pass   or kCFAllocatorDefault to use the current default allocator.

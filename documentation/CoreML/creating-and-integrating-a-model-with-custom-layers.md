@@ -1,6 +1,6 @@
 # Creating and Integrating a Model with Custom Layers
 
-**Framework**: Coreml
+**Framework**: Core ML
 
 Add models with custom neural-network layers to your app.
 
@@ -56,4 +56,4 @@ If applicable, test the custom layers by using the model to make predictions wit
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/creating-and-integrating-a-model-with-custom-layers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coreml/creating-and-integrating-a-model-with-custom-layers)*

@@ -21,7 +21,7 @@ class let willEnterForegroundNotification: NSNotification.Name
 
 #### Discussion
 
-UIKit posts this notification before moving a scene to the foreground. This transition occurs both for newly created and connected scenes and for scenes that were running in the background and were brought to the foreground by the system or a user action. A scene enters the foreground as a precursor to becoming visible onscreen, so this method is invariably followed by the posting of a [`didActivateNotification`](uiscene/didactivatenotification.md) notification. UIKit places the scene object in the [`object`](https://developer.apple.com/documentation/foundation/nsnotification/1414469-object) property of the notification.
+UIKit posts this notification before moving a scene to the foreground. This transition occurs both for newly created and connected scenes and for scenes that were running in the background and were brought to the foreground by the system or a user action. A scene enters the foreground as a precursor to becoming visible onscreen, so this method is invariably followed by the posting of a [`didActivateNotification`](uiscene/didactivatenotification.md) notification. UIKit places the scene object in the [`object`](https://developer.apple.com/documentation/Foundation/NSNotification/object) property of the notification.
 
 UIKit also calls the [`sceneWillEnterForeground(_:)`](uiscenedelegate/scenewillenterforeground(_:).md) method of your scene delegate object.
 

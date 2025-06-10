@@ -34,8 +34,6 @@ The `frequency` and `power` parameters are closely related:
 
 > 💡 **Tip**:  For natural-looking results when applying turbulence to [`GKCoherentNoiseSource`](gkcoherentnoisesource.md) output, start with a `frequency` parameter 2-4 times the [`frequency`](gkcoherentnoisesource/frequency.md) value of the noise source and a `power` parameter that is the reciprocal of that frequency. Then experiment with slight variations to each parameter to find a desired effect.
 
- For natural-looking results when applying turbulence to [`GKCoherentNoiseSource`](gkcoherentnoisesource.md) output, start with a `frequency` parameter 2-4 times the [`frequency`](gkcoherentnoisesource/frequency.md) value of the noise source and a `power` parameter that is the reciprocal of that frequency. Then experiment with slight variations to each parameter to find a desired effect.
-
 ## Parameters
 
 - `frequency`: A value that determines how often (per unit area) the amount of distortion changes.

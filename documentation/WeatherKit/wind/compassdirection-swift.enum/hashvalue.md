@@ -1,6 +1,6 @@
 # hashValue
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 **Availability**:

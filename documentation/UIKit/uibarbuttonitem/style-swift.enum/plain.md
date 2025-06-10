@@ -26,7 +26,7 @@ This item style is the default.
 
 - [UIBarButtonItem.Style.bordered](uibarbuttonitem/style-swift.enum/bordered.md)
   A simple button style with a border.
-- [UIBarButtonItem.Style.done](uibarbuttonitem/style-swift.enum/done.md)
+- [static var done: UIBarButtonItem.Style](uibarbuttonitem/style-swift.enum/done.md)
   A button style for a done button.
 
 

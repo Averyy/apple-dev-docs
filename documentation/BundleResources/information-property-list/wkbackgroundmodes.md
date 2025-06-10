@@ -14,8 +14,6 @@ To add this key to the Information Property List, enable your WatchKit extension
 
 > ❗ **Important**:  You can only enable one of the extended runtime session modes (`self-care`, `mindfulness`, `physical-therapy`, or `alarm`). However, you can enable both an extended runtime session mode and the `workout-processing` mode. If you set the background modes using Xcode’s Signing & Capabilities tab, Xcode ensures that these values are set properly.
 
- You can only enable one of the extended runtime session modes (`self-care`, `mindfulness`, `physical-therapy`, or `alarm`). However, you can enable both an extended runtime session mode and the `workout-processing` mode. If you set the background modes using Xcode’s Signing & Capabilities tab, Xcode ensures that these values are set properly.
-
 ## See Also
 
 - [Using extended runtime sessions](../WatchKit/using-extended-runtime-sessions.md)

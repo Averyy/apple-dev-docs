@@ -1,40 +1,34 @@
-# !=(_:_:)
+# ==(_:_:)
 
 **Framework**: RealityKit  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Returns a Boolean value that indicates whether two blend weights are equal.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func == (lhs: BlendWeight, rhs: BlendWeight) -> Bool
 ```
 
-#### Discussion
+#### Return Value
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+Returns `true` if the blend weights are equal. Otherwise, returns `false`.
 
 ## Parameters
 
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
-
-## See Also
-
-- [static func == (BlendWeight, BlendWeight) -> Bool](blendweight/==(_:_:).md)
-  Returns a Boolean value that indicates whether two blend weights are equal.
+- `lhs`: The blend weight on the left side of the operator.
+- `rhs`: The blend weight on the right side of the operator.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/blendweight/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/blendweight/==(_:_:))*

@@ -1,6 +1,6 @@
 # XCUIElementSnapshot
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: protocol
 
 A set of attributes to express a snapshot of an element’s attributes and descendant user interface hierarchy.

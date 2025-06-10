@@ -1,6 +1,6 @@
 # WKErrorDomain
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 String that identifies the WebKit error domain.

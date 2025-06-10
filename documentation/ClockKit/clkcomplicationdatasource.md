@@ -1,6 +1,6 @@
 # CLKComplicationDataSource
 
-**Framework**: Clockkit  
+**Framework**: ClockKit  
 **Kind**: protocol
 
 A protocol that provides ClockKit with information about your complication.
@@ -17,8 +17,8 @@ protocol CLKComplicationDataSource : NSObjectProtocol
 
 ## Mentions
 
-- [Enabling Complications for Your watchOS App](enabling-complications-for-your-watchos-app.md)
 - [Sharing an Apple Watch face](sharing-an-apple-watch-face.md)
+- [Enabling Complications for Your watchOS App](enabling-complications-for-your-watchos-app.md)
 
 #### Overview
 
@@ -115,4 +115,4 @@ ClockKit calls your data source methods on your watchOS app’s main thread.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/clkcomplicationdatasource)*
+*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/clkcomplicationdatasource)*

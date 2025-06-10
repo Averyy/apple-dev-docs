@@ -1,6 +1,6 @@
 # underestimatedCount
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: property
 
 A value less than or equal to the number of elements in the sequence, calculated nondestructively.
@@ -29,4 +29,4 @@ The default implementation returns 0. If you provide your own implementation, ma
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/timeseriesforecasterannotatedwindows/underestimatedcount)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/timeseriesforecasterannotatedwindows/underestimatedcount)*

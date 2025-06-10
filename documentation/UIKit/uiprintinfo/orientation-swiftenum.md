@@ -1,6 +1,6 @@
 # UIPrintInfo.Orientation
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: enum
 
 Constants that describe the orientation of printing on a page.
@@ -41,6 +41,7 @@ You use these constants when setting the value of the [`orientation`](uiprintinf
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

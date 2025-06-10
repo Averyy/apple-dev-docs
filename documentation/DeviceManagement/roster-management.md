@@ -1,6 +1,6 @@
 # Roster Management
 
-**Framework**: Devicemanagement
+**Framework**: Device Management
 
 Manage classes for your students and teachers.
 
@@ -58,4 +58,4 @@ Administrators of Apple School Manager can use this API to access information ab
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/roster-management)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/roster-management)*

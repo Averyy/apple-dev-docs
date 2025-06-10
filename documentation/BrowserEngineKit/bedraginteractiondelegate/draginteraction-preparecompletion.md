@@ -28,8 +28,6 @@ Call the completion handler as soon as you’re prepared to handle the drag sess
 
 > ❗ **Important**:  If you don’t call the completion handler within a time interval that the operating system expects, it cancels the drag interaction.
 
- If you don’t call the completion handler within a time interval that the operating system expects, it cancels the drag interaction.
-
 If you successfully prepare for the drag session, pass `true` as the parameter in the completion handler; otherwise, pass `false`.
 
 ## Parameters

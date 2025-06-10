@@ -6,6 +6,7 @@
 The device position and orientation you used to render the frame.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

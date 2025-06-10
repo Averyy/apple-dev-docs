@@ -9,6 +9,7 @@ A data store that applies settings to the current user or device.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -114,6 +115,10 @@ In a few cases, you can also access the effective settings. For example, a media
 ### Initializers
 - [convenience init(named: ManagedSettingsStore.Name)](managedsettingsstore/init(named:).md)
   Creates a new instance of a store with a custom name.
+### Instance Properties
+- [var $effectiveDenyExplicitContent: Published<Bool>.Publisher](managedsettingsstore/$effectivedenyexplicitcontent.md)
+- [var effectiveDenyExplicitContent: Bool](managedsettingsstore/effectivedenyexplicitcontent.md)
+  The deny explicit content constraint that is active on this device.
 ### Instance Methods
 - [func clearAllSettings()](managedsettingsstore/clearallsettings.md)
   Clears all settings for this store.

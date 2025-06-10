@@ -57,6 +57,8 @@ class CXEndCallAction
   An encapsulation of the act of placing a call on hold or removing a call from hold.
 - [class CXSetMutedCallAction](cxsetmutedcallaction.md)
   An encapsulation of the act of muting or unmuting a call.
+- [class CXSetTranslatingCallAction](cxsettranslatingcallaction.md)
+  An encapsulation of the act of translating a call.
 
 
 ---

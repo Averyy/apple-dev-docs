@@ -8,7 +8,6 @@ Reports from the device about its current state.
 
 ### Status Reports and Elements
 - [object StatusReport](statusreport.md)
-  A status report of the device’s current state.
 - [object StatusAppManagedList](statusappmanagedlist.md)
   The device’s declarative managed apps.
 - [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)
@@ -45,12 +44,14 @@ Reports from the device about its current state.
   A status report of the device’s operating system marketing name.
 - [object StatusMDMApp](statusmdmapp.md)
   A status report of the client’s MDM-installed apps.
+- [object StatusPackageList](statuspackagelist.md)
+  The client’s declarative packages.
 - [object StatusPasscodeCompliance](statuspasscodecompliance.md)
   A status report of passcode compliance.
 - [object StatusPasscodeIsPresent](statuspasscodeispresent.md)
   A status report of the passcode on the device.
 - [object StatusReason](statusreason.md)
-  A status report that contains details about an error.
+  Provides details about an error for an item in a status report.
 - [object StatusScreenSharingConnectionGroupUnresolvedConnections](statusscreensharingconnectiongroupunresolvedconnections.md)
   Information about connection groups with member connection references that the system couldn’t resolve.
 - [object StatusSecurityCertificateList](statussecuritycertificatelist.md)

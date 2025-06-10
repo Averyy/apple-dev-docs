@@ -1,6 +1,6 @@
 # exists
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 Determines if the element exists.

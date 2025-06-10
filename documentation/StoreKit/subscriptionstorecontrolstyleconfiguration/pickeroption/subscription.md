@@ -22,9 +22,7 @@ var subscription: Product { get }
 
 [`SubscriptionStoreControlStyleConfiguration.PickerOption`](subscriptionstorecontrolstyleconfiguration/pickeroption.md) is a dynamic member lookup type, so you don’t need to use this property directly to access the properties of the [`Product`](product.md) value. Instead, access any properties of [`Product`](product.md) or [`Product.SubscriptionInfo`](product/subscriptioninfo.md) directly on the `PickerOption` value.
 
-> ❗ **Important**:  Don’t use `Product/purchase(confirmIn:options:)` or related purchase methods on this property to initiate a purchase. Use a picker option only for selecting a subscription option, which requires additional confirmation before initiating a purchase.
-
- Don’t use `Product/purchase(confirmIn:options:)` or related purchase methods on this property to initiate a purchase. Use a picker option only for selecting a subscription option, which requires additional confirmation before initiating a purchase.
+> ❗ **Important**:  Don’t use [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-6dj6y.md) or related purchase methods on this property to initiate a purchase. Use a picker option only for selecting a subscription option, which requires additional confirmation before initiating a purchase.
 
 ## See Also
 

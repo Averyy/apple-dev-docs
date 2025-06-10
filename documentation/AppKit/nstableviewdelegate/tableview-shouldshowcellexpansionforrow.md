@@ -1,6 +1,6 @@
 # tableView(_:shouldShowCellExpansionFor:row:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Asks the delegate if an expansion tooltip should be displayed for a specific row and column.

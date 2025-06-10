@@ -1,6 +1,6 @@
 # fetchError
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: property
 
 An error encountered during the most recent attempt to fetch data.

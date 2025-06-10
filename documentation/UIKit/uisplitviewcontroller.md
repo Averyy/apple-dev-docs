@@ -1,6 +1,6 @@
 # UISplitViewController
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A container view controller that implements a hierarchical interface.
@@ -188,6 +188,8 @@ If you assign a value to the split view controller’s [`restorationIdentifier`]
   The maximum width, in points, for the supplementary view controller’s content.
 - [class let automaticDimension: CGFloat](uisplitviewcontroller/automaticdimension.md)
   The default value to apply to a dimension.
+### Inspecting the layout environment
+- [UISplitViewController.LayoutEnvironment](uisplitviewcontroller/layoutenvironment.md)
 ### Positioning the primary view controller
 - [var primaryEdge: UISplitViewController.PrimaryEdge](uisplitviewcontroller/primaryedge-swift.property.md)
   The side on which the primary view controller sits.
@@ -198,6 +200,16 @@ If you assign a value to the split view controller’s [`restorationIdentifier`]
   The background style of the primary view controller.
 - [UISplitViewController.BackgroundStyle](uisplitviewcontroller/backgroundstyle.md)
   Styles that apply a visual effect to the background of a primary view controller.
+### Instance Properties
+- [var maximumInspectorColumnWidth: CGFloat](uisplitviewcontroller/maximuminspectorcolumnwidth.md)
+- [var minimumInspectorColumnWidth: CGFloat](uisplitviewcontroller/minimuminspectorcolumnwidth.md)
+- [var minimumSecondaryColumnWidth: CGFloat](uisplitviewcontroller/minimumsecondarycolumnwidth.md)
+- [var preferredInspectorColumnWidth: CGFloat](uisplitviewcontroller/preferredinspectorcolumnwidth.md)
+- [var preferredInspectorColumnWidthFraction: CGFloat](uisplitviewcontroller/preferredinspectorcolumnwidthfraction.md)
+- [var preferredSecondaryColumnWidth: CGFloat](uisplitviewcontroller/preferredsecondarycolumnwidth.md)
+- [var preferredSecondaryColumnWidthFraction: CGFloat](uisplitviewcontroller/preferredsecondarycolumnwidthfraction.md)
+### Instance Methods
+- [func isShowing(UISplitViewController.Column) -> Bool](uisplitviewcontroller/isshowing(_:).md)
 
 ## Relationships
 
@@ -214,6 +226,7 @@ If you assign a value to the split view controller’s [`restorationIdentifier`]
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)
@@ -243,6 +256,7 @@ If you assign a value to the split view controller’s [`restorationIdentifier`]
   An object that describes an item in a tab bar.
 - [class UITab](uitab.md)
   An object that manages a tab in a tab bar.
+- [class UITabAccessory](uitabaccessory.md)
 - [class UISearchTab](uisearchtab.md)
   A tab subclass that represents the system’s search tab.
 - [class UITabGroup](uitabgroup.md)
@@ -253,4 +267,4 @@ If you assign a value to the split view controller’s [`restorationIdentifier`]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uisplitviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uisplitviewcontroller)*

@@ -1,6 +1,6 @@
 # displayShortName
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The localized extension short name.

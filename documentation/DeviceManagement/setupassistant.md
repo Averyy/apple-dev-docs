@@ -9,8 +9,6 @@ The payload you use to configure setup-assistant settings.
 - iOS 14.0+
 - iPadOS 14.0+
 - macOS 10.12+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,17 +24,17 @@ Specify `com.apple.SetupAssistant.managed` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad |
-| User Channel | macOS |
-| Allow Manual Install | iOS, macOS |
-| Requires Supervision | iOS |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, macOS, Shared iPad |
+| User channel | macOS |
+| Allow manual install | iOS, macOS |
+| Requires supervision | iOS |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

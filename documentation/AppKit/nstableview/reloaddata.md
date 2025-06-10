@@ -1,6 +1,6 @@
 # reloadData()
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Marks the table view as needing redisplay, so it will reload the data for visible cells and draw the new values.

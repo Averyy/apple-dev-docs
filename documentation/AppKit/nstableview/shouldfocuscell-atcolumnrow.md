@@ -1,6 +1,6 @@
 # shouldFocusCell(_:atColumn:row:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Returns whether the fully prepared cell at the specified row and column can be made the focused cell.

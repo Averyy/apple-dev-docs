@@ -33,6 +33,7 @@ To render the table surface using RealityKit, conform to the [`EntityTabletop`](
 
 ### Creating a round or rectangular table
 - [var shape: TabletopShape](tabletop/shape.md)
+  The shape of the table.
 ### Displaying the equipment
 - [func layoutChildren(for: TableSnapshot, visualState: TableVisualState) -> any EquipmentLayout](tabletop/layoutchildren(for:visualstate:).md)
   This function provides the layout of the direct children of this equipment and is called whenever the snapshot changes. Override it to provide a custom layout. The output of this function is considered to be only a function of its inputs. Reaching out to data outside what is provided might result in undefined behavior.
@@ -48,6 +49,8 @@ To render the table surface using RealityKit, conform to the [`EntityTabletop`](
 
 - [Creating tabletop games](tabletopkitsample.md)
   Develop a spatial board game where multiple players interact with pieces on a table.
+- [Synchronizing group gameplay with TabletopKit](synchronizing-group-gameplay-with-tabletopkit.md)
+  Maintain game state across multiple players in a race to capture all the coins.
 - [class TabletopGame](tabletopgame.md)
   An object that manages the setup and gameplay of a tabletop game.
 - [struct TableSetup](tablesetup.md)

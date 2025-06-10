@@ -1,6 +1,6 @@
 # MPSKernel
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: cl
 
 A standard interface for Metal Performance Shaders kernels.

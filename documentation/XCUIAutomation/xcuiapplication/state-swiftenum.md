@@ -1,6 +1,6 @@
 # XCUIApplication.State
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: enum
 
 The possible states of an application during UI testing.
@@ -48,6 +48,7 @@ enum State
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

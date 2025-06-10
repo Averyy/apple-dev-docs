@@ -71,11 +71,16 @@ queuePlayer.play()
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
+  Keep your user interface in sync with state changes from playback objects.
 - [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
   Play, pause, and seek through a media presentation.
+- [Creating a seamless multiview playback experience](creating-a-seamless-multiview-playback-experience.md)
+  Build advanced multiview playback experiences with the AVFoundation and AVRouting frameworks.
 - [class AVPlayer](avplayer.md)
   An object that provides the interface to control the player’s transport behavior.
 - [class AVPlayerItem](avplayeritem.md)

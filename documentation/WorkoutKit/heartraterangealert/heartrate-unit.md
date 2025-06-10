@@ -1,6 +1,6 @@
 # heartRate(_:unit:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: method
 
 Returns a new heart rate alert for the target range.

@@ -1,6 +1,6 @@
 # download(_:didReceiveFinalURL:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

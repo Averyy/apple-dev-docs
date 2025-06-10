@@ -1,6 +1,6 @@
 # version
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The extension version.

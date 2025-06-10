@@ -1,6 +1,6 @@
 # count
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: property
 
 The number of elements in the collection.

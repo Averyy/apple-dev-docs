@@ -58,10 +58,13 @@ With Swift Testing you leverage powerful and expressive capabilities of the Swif
 - [Expectations and confirmations](expectations.md)
   Check for expected values, outcomes, and asynchronous events in tests.
 - [Known issues](known-issues.md)
-  Highlight known issues when running tests.
+  Mark issues as known when running tests.
 ### Test customization
 - [Traits](traits.md)
   Annotate test functions and suites, and customize their behavior.
+### Data collection
+- [Attachments](attachments.md)
+  Attach values to tests to help diagnose issues and gather feedback.
 
 
 ---

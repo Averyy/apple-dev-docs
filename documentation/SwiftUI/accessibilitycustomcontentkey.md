@@ -27,7 +27,7 @@ Use `AccessibilityCustomContentKey` and the associated modifiers taking this val
 ## Topics
 
 ### Creating a key
-- [init(LocalizedStringKey)](accessibilitycustomcontentkey/init(_:).md)
+- [init(_:)](accessibilitycustomcontentkey/init(_:).md)
   Create an `AccessibilityCustomContentKey` with the specified label.
 - [init(_:id:)](accessibilitycustomcontentkey/init(_:id:).md)
   Create an `AccessibilityCustomContentKey` with the specified label and identifier.

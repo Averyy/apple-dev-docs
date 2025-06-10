@@ -24,8 +24,6 @@ protocol CKSyncEngineDelegate : AnyObject, Sendable
 
 > ❗ **Important**:  [`CKSyncEngine`](cksyncengine-5sie5.md) delivers events serially, which means the delegate doesn’t receive the next event until it finishes handling the current one. To maintain this ordering, don’t call sync engine methods from your delegate that may cause the engine to generate additional events. For example, don’t invoke [`fetchChanges(_:)`](cksyncengine-5sie5/fetchchanges(_:).md) or [`sendChanges(_:)`](cksyncengine-5sie5/sendchanges(_:).md) from within [`handleEvent(_:syncEngine:)`](cksyncenginedelegate-1q7g8/handleevent(_:syncengine:).md).
 
- [`CKSyncEngine`](cksyncengine-5sie5.md) delivers events serially, which means the delegate doesn’t receive the next event until it finishes handling the current one. To maintain this ordering, don’t call sync engine methods from your delegate that may cause the engine to generate additional events. For example, don’t invoke [`fetchChanges(_:)`](cksyncengine-5sie5/fetchchanges(_:).md) or [`sendChanges(_:)`](cksyncengine-5sie5/sendchanges(_:).md) from within [`handleEvent(_:syncEngine:)`](cksyncenginedelegate-1q7g8/handleevent(_:syncengine:).md).
-
 ## Topics
 
 ### Handling sync events
@@ -49,6 +47,7 @@ protocol CKSyncEngineDelegate : AnyObject, Sendable
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

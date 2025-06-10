@@ -1,6 +1,6 @@
 # use()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method  
 **Required**: Yes
 
@@ -21,7 +21,7 @@ If there are pending policy decisions, the next policy delegate method has the o
 
 ## See Also
 
-- [class func registerClass(AnyClass!, representationClass: AnyClass!, forMIMEType: String!)](webview/registerclass(_:representationclass:formimetype:).md)
+- [class func registerClass(AnyClass!, representationClass: AnyClass!, forMIMEType: String!)](webview-swift.class/registerclass(_:representationclass:formimetype:).md)
   Specifies the view and representation objects to be used for specific MIME types.
 - [func download()](webpolicydecisionlistener/download.md)
   Tells the listener to download the resource instead of displaying it.

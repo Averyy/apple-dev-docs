@@ -1,6 +1,6 @@
 # DataScannerViewController.QualityLevel
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: enum
 
 The possible quality levels that the scanner uses to find data.
@@ -37,6 +37,7 @@ The quality levels mostly impact the camera resolution.
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

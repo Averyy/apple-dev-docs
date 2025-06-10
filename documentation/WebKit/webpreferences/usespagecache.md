@@ -1,6 +1,6 @@
 # usesPageCache
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean that indicates whether the web views associated with the receiver should use the shared page cache.

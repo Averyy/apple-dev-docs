@@ -43,13 +43,6 @@ let anotherSet: Set = employeesArray
 // error: cannot convert value of type '[String]' to specified type 'Set'
 ```
 
-An array literal is not the same as an `Array` instance. You can’t initialize a type that conforms to `ExpressibleByArrayLiteral` simply by assigning an existing array.
-
-```swift
-let anotherSet: Set = employeesArray
-// error: cannot convert value of type '[String]' to specified type 'Set'
-```
-
 ### Type Inference of Array Literals
 
 Whenever possible, Swift’s compiler infers the full intended type of your array literal. Because `Array` is the default type for an array literal, without writing any other code, you can declare an array with a particular element type by providing one or more values.
@@ -136,6 +129,7 @@ extension OrderedSet: ExpressibleByArrayLiteral {
 ### Conforming Types
 - [Array](array.md)
 - [ArraySlice](arrayslice.md)
+- [ClockTraits](clocktraits.md)
 - [ContiguousArray](contiguousarray.md)
 - [SIMD16](simd16.md)
 - [SIMD2](simd2.md)

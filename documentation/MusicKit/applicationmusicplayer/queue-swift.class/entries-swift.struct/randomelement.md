@@ -1,6 +1,6 @@
 # randomElement()
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Returns a random element of the collection.

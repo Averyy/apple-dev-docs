@@ -256,4 +256,4 @@ For testing, you can delete locally downloaded models in macOS by choosing Syste
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Translation/translating-text-within-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/translation/translating-text-within-your-app)*

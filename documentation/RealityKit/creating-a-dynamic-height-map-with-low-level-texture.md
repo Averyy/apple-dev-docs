@@ -1,6 +1,6 @@
 # Creating a dynamic height and normal map with low-level texture
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Create a low-level texture and update its pixel data on the GPU to form a dynamic height and normal map.
 
@@ -234,4 +234,4 @@ The following video shows the normal map the compute shader function derives fro
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/creating-a-dynamic-height-map-with-low-level-texture)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/creating-a-dynamic-height-map-with-low-level-texture)*

@@ -138,4 +138,4 @@ To install iOS, iPadOS, tvOS, visionOS, or watchOS apps with Apple Configurator 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/distributing-your-app-to-registered-devices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/distributing-your-app-to-registered-devices)*

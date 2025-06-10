@@ -8,8 +8,6 @@ The application rules dictionary.
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

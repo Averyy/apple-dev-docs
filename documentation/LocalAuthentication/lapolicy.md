@@ -24,9 +24,9 @@ enum LAPolicy
 ### Policies
 - [LAPolicy.deviceOwnerAuthenticationWithBiometrics](lapolicy/deviceownerauthenticationwithbiometrics.md)
   User authentication with biometry.
-- [LAPolicy.deviceOwnerAuthenticationWithWatch](lapolicy/deviceownerauthenticationwithwatch.md)
+- [static var deviceOwnerAuthenticationWithWatch: LAPolicy](lapolicy/deviceownerauthenticationwithwatch.md)
   User authentication with Apple Watch.
-- [LAPolicy.deviceOwnerAuthenticationWithBiometricsOrWatch](lapolicy/deviceownerauthenticationwithbiometricsorwatch.md)
+- [static var deviceOwnerAuthenticationWithBiometricsOrWatch: LAPolicy](lapolicy/deviceownerauthenticationwithbiometricsorwatch.md)
   User authentication with either biometry or Apple Watch.
 - [LAPolicy.deviceOwnerAuthentication](lapolicy/deviceownerauthentication.md)
   User authentication with biometry, Apple Watch, or the device passcode.
@@ -43,13 +43,13 @@ enum LAPolicy
   User authentication with either biometry or the device passcode.
 - [var kLAPolicyDeviceOwnerAuthenticationWithWristDetection: Int32](klapolicydeviceownerauthenticationwithwristdetection.md)
   User authentication with wrist detection on watchOS.
+### Enumeration Cases
+- [LAPolicy.deviceOwnerAuthenticationWithBiometricsOrCompanion](lapolicy/deviceownerauthenticationwithbiometricsorcompanion.md)
+  Device owner will be authenticated by biometry or a companion device e.g. Watch, Mac, etc.
+- [LAPolicy.deviceOwnerAuthenticationWithCompanion](lapolicy/deviceownerauthenticationwithcompanion.md)
+  Device owner will be authenticated by a companion device e.g. Watch, Mac, etc.
 ### Initializers
 - [init?(rawValue: Int)](lapolicy/init(rawvalue:).md)
-### Type Properties
-- [static var deviceOwnerAuthenticationWithBiometricsOrCompanion: LAPolicy](lapolicy/deviceownerauthenticationwithbiometricsorcompanion.md)
-  Device owner will be authenticated by biometry or a companion device e.g. Watch, Mac, etc.
-- [static var deviceOwnerAuthenticationWithCompanion: LAPolicy](lapolicy/deviceownerauthenticationwithcompanion.md)
-  Device owner will be authenticated by a companion device e.g. Watch, Mac, etc.
 
 ## Relationships
 
@@ -59,6 +59,7 @@ enum LAPolicy
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

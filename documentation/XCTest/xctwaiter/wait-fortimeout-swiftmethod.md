@@ -1,6 +1,6 @@
 # wait(for:timeout:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Waits on a group of expectations for up to the specified timeout.

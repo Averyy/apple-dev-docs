@@ -32,8 +32,6 @@ When you finish configuring the device, unlock it by calling its [`unlockForConf
 
 > ❗ **Important**:  Updating the state of this property doesn’t initiate an exposure change. After setting a new value, set an appropriate [`exposureMode`](avcapturedevice/exposuremode-swift.property.md) to apply the change.
 
- Updating the state of this property doesn’t initiate an exposure change. After setting a new value, set an appropriate [`exposureMode`](avcapturedevice/exposuremode-swift.property.md) to apply the change.
-
 ## See Also
 
 - [var automaticallyAdjustsFaceDrivenAutoExposureEnabled: Bool](avcapturedevice/automaticallyadjustsfacedrivenautoexposureenabled.md)

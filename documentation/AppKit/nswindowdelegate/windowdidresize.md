@@ -17,7 +17,7 @@ optional func windowDidResize(_ notification: Notification)
 
 #### Discussion
 
-You can retrieve the window object in question by sending [`object`](https://developer.apple.com/documentation/foundation/nsnotification/1414469-object) to `notification`.
+You can retrieve the window object in question by sending [`object`](https://developer.apple.com/documentation/Foundation/NSNotification/object) to `notification`.
 
 ## Parameters
 

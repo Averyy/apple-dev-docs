@@ -29,8 +29,6 @@ When the device receives a location push notification that your server generated
 
 > ❗ **Important**:  In order for your app extension to receive push notifications, the app that contains the app extension must have Always authorization for location services. For information about how to request this access, see [`Requesting authorization to use location services`](requesting-authorization-to-use-location-services.md).
 
- In order for your app extension to receive push notifications, the app that contains the app extension must have Always authorization for location services. For information about how to request this access, see [`Requesting authorization to use location services`](requesting-authorization-to-use-location-services.md).
-
 Location Push Service Extensions aren’t supported in visionOS. If a compatible iPad or iPhone app contains an app extension of this type, the system doesn’t load it.
 
 For more information about adding the extension to your app, see [`Creating a location push service extension`](creating-a-location-push-service-extension.md). For information about how to generate push notifications from your server, see [`Setting up a remote notification server`](https://developer.apple.com/documentation/UserNotifications/setting-up-a-remote-notification-server).

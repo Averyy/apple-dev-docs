@@ -10,6 +10,7 @@ A representation of a shape.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -47,29 +48,18 @@ A representation of a shape.
 ### Comparing shapes
 - [static func == (ShapeResource, ShapeResource) -> Bool](shaperesource/==(_:_:).md)
   Indicates whether two shapes are equal.
-- [static func != (Self, Self) -> Bool](shaperesource/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [func hash(into: inout Hasher)](shaperesource/hash(into:).md)
   Hashes the essential components of the shape by feeding them into the given hash function.
-- [var hashValue: Int](shaperesource/hashvalue.md)
-  The hash value.
 ### Instance Properties
 - [var bounds: BoundingBox](shaperesource/bounds.md)
   Axis aligned bounding box in world space.
 ### Type Methods
-- [static func generateConvex(from: [SIMD3<Float>]) async throws -> ShapeResource](shaperesource/generateconvex(from:)-1c8f6.md)
-  Creates a convex shape from the given points asynchronously.
-- [static func generateConvex(from: MeshResource) async throws -> ShapeResource](shaperesource/generateconvex(from:)-6upj9.md)
+- [static generateConvex(from:)](shaperesource/generateconvex(from:).md)
   Creates a convex shape from the given mesh.
-- [static func generateStaticMesh(from: MeshAnchor) async throws -> ShapeResource](shaperesource/generatestaticmesh(from:)-693dx.md)
-  Creates a mesh-based collision shape derived from an ARKit scene-understanding mesh anchor.
-- [static func generateStaticMesh(from: MeshResource) async throws -> ShapeResource](shaperesource/generatestaticmesh(from:)-6fgkt.md)
+- [static generateStaticMesh(from:)](shaperesource/generatestaticmesh(from:).md)
   Creates a static collision mesh from a mesh resource.
-- [static func generateStaticMesh(from: ARMeshAnchor) async throws -> ShapeResource](shaperesource/generatestaticmesh(from:)-8zvta.md)
-- [static func generateStaticMesh(positions: [SIMD3<Float>], faceIndices: [UInt16]) async throws -> ShapeResource](shaperesource/generatestaticmesh(positions:faceindices:).md)
+- [static generateStaticMesh(positions:faceIndices:)](shaperesource/generatestaticmesh(positions:faceindices:).md)
   Creates a static collision mesh from an array of vertex positions and face indices.
-### Default Implementations
-- [Equatable Implementations](shaperesource/equatable-implementations.md)
 
 ## Relationships
 
@@ -78,6 +68,7 @@ A representation of a shape.
 - [Hashable](../Swift/Hashable.md)
 - [Resource](resource.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # expanded
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 The expanded presentation of a Live Activity in the Dynamic Island.
@@ -8,7 +8,6 @@ The expanded presentation of a Live Activity in the Dynamic Island.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # initialURL
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The source URL that originally asked the web view to load this page.

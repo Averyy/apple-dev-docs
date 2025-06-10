@@ -1,6 +1,6 @@
 # Adding actions to notifications on watchOS
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Provide a set of responses to a notification.
 
@@ -88,4 +88,4 @@ The following rules define where the system handles the action:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/adding-actions-to-notifications-on-watchos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/adding-actions-to-notifications-on-watchos)*

@@ -303,15 +303,23 @@ struct SIMD3<Scalar> where Scalar : SIMDScalar
 ### Initializers
 - [init()](simd3/init.md)
   Creates a vector with zero in all lanes.
+- [init(Size3DFloat)](simd3/init(_:)-3i2wy.md)
+  Returns a new vector from a Spatial size.
 - [init(SCNVector3)](simd3/init(_:)-4bsad.md)
 - [init<Other>(SIMD3<Other>)](simd3/init(_:)-4lx91.md)
   Creates a new vector from the given vector of integers.
+- [init(Point3DFloat)](simd3/init(_:)-612bd.md)
+  Returns a new vector from a Spatial point.
 - [init(Point3D)](simd3/init(_:)-6xfbj.md)
   Returns a new vector from a Spatial point.
 - [init<Other>(SIMD3<Other>)](simd3/init(_:)-7eqf.md)
   Creates a new vector from the given vector of floating-point values.
 - [init(Vector3D)](simd3/init(_:)-8cj8r.md)
   Returns a new vector from a Spatial point.
+- [init(Vector3DFloat)](simd3/init(_:)-8mcjs.md)
+  Returns a new vector from a Spatial point.
+- [init(RotationAxis3DFloat)](simd3/init(_:)-irjs.md)
+  Returns a new vector from a Spatial rotation axis.
 - [init(RotationAxis3D)](simd3/init(_:)-wsoa.md)
   Returns a new vector from a Spatial rotation axis.
 - [init(SCNVector3)](simd3/init(_:)-ykmb.md)
@@ -378,6 +386,7 @@ struct SIMD3<Scalar> where Scalar : SIMDScalar
 - [SIMD](simd.md)
 - [SIMDStorage](simdstorage.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

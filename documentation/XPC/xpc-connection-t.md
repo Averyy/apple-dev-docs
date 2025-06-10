@@ -1,6 +1,6 @@
 # xpc_connection_t
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: typealias
 
 A type that represents a connection to a named service.

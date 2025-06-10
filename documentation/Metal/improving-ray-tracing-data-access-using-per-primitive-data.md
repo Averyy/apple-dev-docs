@@ -43,8 +43,6 @@ A per-primitive data type can store the same types as an argument buffer (see [`
 
 > 💡 **Tip**:  Profile your app before and after you make any changes to how you store your data so that you can measure the benefit you gained from the changes.
 
- Profile your app before and after you make any changes to how you store your data so that you can measure the benefit you gained from the changes.
-
 One way to reduce a per-primitive structure’s size is by including a pointer to another buffer. Although this approach brings back some of the complexity of the earlier buffered approach, it still provides relatively quick access to data in the secondary structure. Put the data that you need most in the per-primitive structure, and access the secondary structure only when necessary. For better cache performance, pack both structures so that you store values you access at the same time near each other in memory.
 
 ##### Add the Per Primitive Data to Your Acceleration Structure
@@ -150,16 +148,20 @@ committedPrimitiveData = (const device PrimitiveTextureData *) query.get_committ
 
 > 💡 **Tip**:  Improve the runtime performance of your Metal apps that use intersection queries by converting to an implementation that uses kernels with intersectors, with or without custom intersection functions.
 
- Improve the runtime performance of your Metal apps that use intersection queries by converting to an implementation that uses kernels with intersectors, with or without custom intersection functions.
-
 ## See Also
 
 - [protocol MTLAccelerationStructure](mtlaccelerationstructure.md)
   A collection of model data for GPU-accelerated intersection of rays with the model.
+- [class MTL4AccelerationStructureDescriptor](mtl4accelerationstructuredescriptor.md)
+  Base class for Metal 4 acceleration structure descriptors.
 - [class MTLAccelerationStructureDescriptor](mtlaccelerationstructuredescriptor.md)
   A base class for classes that define the configuration for a new acceleration structure.
+- [class MTL4PrimitiveAccelerationStructureDescriptor](mtl4primitiveaccelerationstructuredescriptor.md)
+  Descriptor for a primitive acceleration structure that directly references geometric shapes, such as triangles and bounding boxes.
 - [class MTLPrimitiveAccelerationStructureDescriptor](mtlprimitiveaccelerationstructuredescriptor.md)
   A description of an acceleration structure that contains geometry primitives.
+- [class MTL4InstanceAccelerationStructureDescriptor](mtl4instanceaccelerationstructuredescriptor.md)
+  Descriptor for an instance acceleration structure.
 - [class MTLInstanceAccelerationStructureDescriptor](mtlinstanceaccelerationstructuredescriptor.md)
   A description of an acceleration structure that derives from instances of primitive acceleration structures.
 - [protocol MTLAccelerationStructureCommandEncoder](mtlaccelerationstructurecommandencoder.md)

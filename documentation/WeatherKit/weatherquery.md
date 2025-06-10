@@ -1,6 +1,6 @@
 # WeatherQuery
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure that encapsulates a generic weather dataset request.
@@ -54,6 +54,12 @@ let (hourly, daily, alerts) = try await service.weather(for: newYork, including:
   The weather changes query.
 - [static var historicalComparisons: WeatherQuery<HistoricalComparisons?>](weatherquery/historicalcomparisons.md)
   The weather historical comparison query.
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

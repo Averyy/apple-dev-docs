@@ -47,6 +47,7 @@ struct DetectedObject<Label> where Label : Comparable, Label : Hashable
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

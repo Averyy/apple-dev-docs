@@ -1,6 +1,6 @@
 # UIFindInteraction
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An interaction that provides text finding and replacing operations using a system find panel.
@@ -136,4 +136,4 @@ Implement the [`UITextSearching`](uitextsearching-53wjq.md) protocol on the clas
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uifindinteraction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uifindinteraction)*

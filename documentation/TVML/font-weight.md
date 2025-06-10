@@ -1,6 +1,6 @@
 # font-weight
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Specifies the font weight for the text in an element.
 
@@ -33,4 +33,4 @@ Use the `font-weight` style to specify how thick or thin a font looks.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/font-weight)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/font-weight)*

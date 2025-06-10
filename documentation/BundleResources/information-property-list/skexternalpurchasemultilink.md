@@ -1,6 +1,6 @@
 # SKExternalPurchaseMultiLink
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: dictionary
 
 A dictionary that contains an array of URLs to websites where people using your app can make external purchases.

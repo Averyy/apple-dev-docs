@@ -30,7 +30,6 @@ A [`CGColorConversionInfo`](cgcolorconversioninfo.md) object specifies a convers
 - [init?(src: CGColorSpace, dst: CGColorSpace)](cgcolorconversioninfo/init(src:dst:).md)
   Creates a conversion between two specified color spaces.
 - [init?(optionsSrc: CGColorSpace, dst: CGColorSpace, options: CFDictionary?)](cgcolorconversioninfo/init(optionssrc:dst:options:).md)
-- [init?(src: CGColorSpace, srcHeadroom: Float, dst: CGColorSpace, dstHeadroom: Float, toneMapping: CGToneMapping, options: CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?)](cgcolorconversioninfo/init(src:srcheadroom:dst:dstheadroom:tonemapping:options:).md)
 - [enum CGColorConversionInfoTransformType](cgcolorconversioninfotransformtype.md)
   Constants describing how a color conversion uses color spaces.
 ### Working with Core Foundation Types
@@ -38,6 +37,8 @@ A [`CGColorConversionInfo`](cgcolorconversioninfo.md) object specifies a convers
   Returns the Core Foundation type identifier for a color conversion info data type.
 ### Instance Methods
 - [func convert(width: Int, height: Int, to: UnsafeMutableRawPointer, format: CGColorBufferFormat, from: UnsafeRawPointer, format: CGColorBufferFormat, options: CFDictionary?) -> Bool](cgcolorconversioninfo/convert(width:height:to:format:from:format:options:).md)
+### Initializers
+- [init?(src: CGColorSpace, srcHeadroom: Float, dst: CGColorSpace, dstHeadroom: Float, toneMapping: CGToneMapping, options: CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?)](cgcolorconversioninfo/init(src:srcheadroom:dst:dstheadroom:tonemapping:options:_:).md)
 
 ## Relationships
 

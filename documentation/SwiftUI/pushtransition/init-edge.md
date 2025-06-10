@@ -17,8 +17,7 @@ Creates a transition that animates a view by moving and fading it.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init(edge: Edge)
+init(edge: Edge)
 ```
 
 ## See Also

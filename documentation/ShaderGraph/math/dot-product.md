@@ -5,6 +5,18 @@
 
 Outputs the dot product of two vectors.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
+#### Overview
+
+(in1.x * in2.x) + (in1.y * in2.y)
+
 #### Parameter Types
 
 ## See Also

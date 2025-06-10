@@ -1,6 +1,6 @@
 # familyName
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A last name.

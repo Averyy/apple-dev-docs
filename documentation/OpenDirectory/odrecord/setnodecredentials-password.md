@@ -1,6 +1,6 @@
 # setNodeCredentials(_:password:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Sets credentials for the record’s node.

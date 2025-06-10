@@ -1,6 +1,6 @@
 # uvIndex
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The level of ultraviolet radiation.

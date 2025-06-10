@@ -14,6 +14,7 @@ Get the custom end user license agreement associated with an app, and the territ
   Get the custom end user license agreement (EULA) for a specific app and the territories where the agreement applies.
 - [List All Territories for an End User License Agreement](get-v1-enduserlicenseagreements-_id_-territories.md)
   List all the App Store territories to which a specific custom app license agreement applies.
+- [GET /v1/endUserLicenseAgreements/{id}/relationships/territories](get-v1-enduserlicenseagreements-_id_-relationships-territories.md)
 
 
 ---

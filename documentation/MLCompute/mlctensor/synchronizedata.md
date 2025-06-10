@@ -30,8 +30,6 @@ Only call this method once the graph, with which you used this tensor, finishes 
 
 > ❗ **Important**:  Don’t call this method from a completion callback when the device is a GPU.
 
- Don’t call this method from a completion callback when the device is a GPU.
-
 ## See Also
 
 - [func synchronizeOptimizerData() -> Bool](mlctensor/synchronizeoptimizerdata.md)

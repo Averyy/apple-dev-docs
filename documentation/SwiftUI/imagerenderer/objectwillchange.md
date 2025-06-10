@@ -24,6 +24,11 @@ final let objectWillChange: PassthroughSubject<Void, Never>
 
 The renderer’s [`ObjectWillChangePublisher`](https://developer.apple.com/documentation/Combine/ObservableObject/ObjectWillChangePublisher) publishes `Void` elements. Subscribers should interpret any event as indicating that the contents of the image may have changed.
 
+## See Also
+
+- [var isObservationEnabled: Bool](imagerenderer/isobservationenabled.md)
+  If observers of this observed object should be notified when the produced image changes.
+
 
 ---
 

@@ -1,6 +1,6 @@
 # Reference movies
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 A movie that contains references to alternate movies is called a reference movie.
 

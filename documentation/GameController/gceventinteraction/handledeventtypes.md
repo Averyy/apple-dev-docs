@@ -14,9 +14,12 @@ The types of game controller events that should be delivered through the Game Co
 ## Declaration
 
 ```swift
-@MainActor
 var handledEventTypes: GCUIEventTypes { get set }
 ```
+
+## See Also
+
+- [struct GCUIEventTypes](gcuieventtypes.md)
 
 
 ---

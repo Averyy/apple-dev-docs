@@ -1,6 +1,6 @@
 # initDeviceOrientationEvent
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Initializes a new device orientation event.

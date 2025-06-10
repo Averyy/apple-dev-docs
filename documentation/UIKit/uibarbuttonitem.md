@@ -56,6 +56,8 @@ In general, specify a value for the normal state so that other states without a 
 ### Creating space items
 - [class func fixedSpace(CGFloat) -> Self](uibarbuttonitem/fixedspace(_:).md)
   Creates a new fixed-width space item.
+- [class func fixedSpace() -> Self](uibarbuttonitem/fixedspace.md)
+  Creates a new fixed space item of zero width.
 - [class func flexibleSpace() -> Self](uibarbuttonitem/flexiblespace.md)
   Creates a new flexible-width space item.
 ### Creating groups
@@ -153,6 +155,14 @@ In general, specify a value for the normal state so that other states without a 
 ### Representing the item in a menu
 - [var menuRepresentation: UIMenuElement?](uibarbuttonitem/menurepresentation.md)
   A menu element that represents the item when it appears in a menu.
+### Adding a badge
+- [var badge: UIBarButtonItem.Badge?](uibarbuttonitem/badge-4sz3f.md)
+- [UIBarButtonItem.Badge](uibarbuttonitem/badge-swift.struct.md)
+### Customizing placement in a toolbar
+- [var hidesSharedBackground: Bool](uibarbuttonitem/hidessharedbackground.md)
+  A boolean value indicating whether the background this item may share with other items in the bar should be hidden.
+- [var sharesBackground: Bool](uibarbuttonitem/sharesbackground.md)
+  A boolean value indicating whether this bar button item can share a background with other items in a navigation bar or a toolbar.
 
 ## Relationships
 
@@ -167,6 +177,8 @@ In general, specify a value for the normal state so that other states without a 
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIAppearance](uiappearance.md)
 - [UIPopoverPresentationControllerSourceItem](uipopoverpresentationcontrollersourceitem.md)

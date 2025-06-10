@@ -33,6 +33,8 @@ An instance of `NSCountCommand` counts the number of objects of a specified clas
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](nscoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

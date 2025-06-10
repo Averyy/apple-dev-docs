@@ -1,6 +1,6 @@
 # fetchChanges(_:)
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: method
 
 Fetches pending remote changes from the server.

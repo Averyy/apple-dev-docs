@@ -13,6 +13,10 @@
 func PGCreateDeviceWithDescriptor(_ descriptor: PGDeviceDescriptor) -> (any PGDevice)?
 ```
 
+## Parameters
+
+- `descriptor`: The device descriptor for the new device.
+
 
 ---
 

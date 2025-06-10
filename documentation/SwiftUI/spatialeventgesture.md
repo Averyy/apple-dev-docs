@@ -66,8 +66,6 @@ The phase of events in the collection can change to [`SpatialEventCollection.Eve
 
 > 💡 **Tip**: Only use a spatial event gesture if you need to access low-level event information, like when you create a complex multi-touch experience. For most use cases, it’s better to rely on gestures that recognize targeted interactions, like a [`SpatialTapGesture`](spatialtapgesture.md), [`MagnifyGesture`](magnifygesture.md), or [`DragGesture`](draggesture.md).
 
-Only use a spatial event gesture if you need to access low-level event information, like when you create a complex multi-touch experience. For most use cases, it’s better to rely on gestures that recognize targeted interactions, like a [`SpatialTapGesture`](spatialtapgesture.md), [`MagnifyGesture`](magnifygesture.md), or [`DragGesture`](draggesture.md).
-
 ## Topics
 
 ### Creating a spatial event gesture
@@ -76,6 +74,9 @@ Only use a spatial event gesture if you need to access low-level event informati
 ### Getting gesture properties
 - [let coordinateSpace: CoordinateSpace](spatialeventgesture/coordinatespace.md)
   The coordinate space of the gesture.
+### Initializers
+- [init(coordinateSpace3D: some CoordinateSpace3D)](spatialeventgesture/init(coordinatespace3d:).md)
+  Creates the gesture with a desired coordinate space 3D.
 
 ## Relationships
 

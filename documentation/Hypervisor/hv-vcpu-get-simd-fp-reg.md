@@ -22,8 +22,6 @@ func hv_vcpu_get_simd_fp_reg(_ vcpu: hv_vcpu_t, _ reg: hv_simd_fp_reg_t, _ value
 
 > ❗ **Important**:  This function must be called by the owning thread.
 
- This function must be called by the owning thread.
-
 ## Parameters
 
 - `vcpu`: The vCPU instance.

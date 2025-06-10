@@ -1,6 +1,6 @@
 # Handling UI Interruptions
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Improve your UI test’s stability by handling interface changes that block the UI elements under test.
 
@@ -12,8 +12,6 @@ Use XCTestCase UI interruption monitors to handle situations in which unrelated 
 - Your app performs an action that causes the operating system to present a modal UI. An example is an action that presents a photo picker, which may make the system request access to photos if the user hasn’t already granted it.
 
 > ❗ **Important**:  When an alert or other modal UI is an expected part of the test workflow, don’t write a UI interruption monitor. The test won’t use the monitor because the modal UI isn’t blocking the test. A UI test only tries its UI interruption monitors if the elements it needs to interact with to complete the test are blocked by an interruption from an unrelated UI.
-
- When an alert or other modal UI is an expected part of the test workflow, don’t write a UI interruption monitor. The test won’t use the monitor because the modal UI isn’t blocking the test. A UI test only tries its UI interruption monitors if the elements it needs to interact with to complete the test are blocked by an interruption from an unrelated UI.
 
 ##### Add a Ui Interruption Monitor to Your Test
 

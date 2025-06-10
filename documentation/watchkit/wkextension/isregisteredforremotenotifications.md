@@ -1,6 +1,6 @@
 # isRegisteredForRemoteNotifications
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A Boolean value that indicates if the app has successfully registered for remote notifications.

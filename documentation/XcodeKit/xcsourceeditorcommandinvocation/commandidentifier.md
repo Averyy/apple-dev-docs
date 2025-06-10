@@ -1,6 +1,6 @@
 # commandIdentifier
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The identifier of the command that the user invoked.

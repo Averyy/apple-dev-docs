@@ -1,6 +1,6 @@
 # power(_:unit:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: method
 
 Returns a new power alert for the target range.

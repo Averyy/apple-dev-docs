@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-init?(properties: [IOSurfacePropertyKey : Any])
+init?(properties: [IOSurfacePropertyKey : any Sendable])
 ```
 
 

@@ -10,10 +10,10 @@ Returns a new fully connected layer.
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
-- tvOS 14.0+
+- visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
-- visionOS ?+
+- tvOS 14.0+
 
 ## Declaration
 
@@ -24,8 +24,6 @@ convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, w
 #### Discussion
 
 > ❗ **Important**:  The input data type and the weights data type must be equal and be `float`, `float16`, `int8`, or `int16` for the forward pass. The output data type must be `float` for the forward pass. All three arrays must be `float` for the backward pass.
-
- The input data type and the weights data type must be equal and be `float`, `float16`, `int8`, or `int16` for the forward pass. The output data type must be `float` for the forward pass. All three arrays must be `float` for the backward pass.
 
 ## Parameters
 

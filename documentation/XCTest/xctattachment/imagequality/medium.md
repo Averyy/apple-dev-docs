@@ -1,6 +1,6 @@
 # XCTAttachment.ImageQuality.medium
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 Medium image quality, represented as a high quality lossy JPEG image.

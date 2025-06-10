@@ -12,6 +12,7 @@ The distance provided in meters or the longest distance derived from the center 
 - macOS 11.0+
 - tvOS 14.0+
 - visionOS 1.0+
+- watchOS 7.0+
 
 ## Declaration
 

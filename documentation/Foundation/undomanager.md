@@ -17,6 +17,7 @@ A general-purpose recorder of operations that enables undo and redo.
 ## Declaration
 
 ```swift
+@MainActor
 class UndoManager
 ```
 
@@ -87,8 +88,6 @@ Typically, apps with UI interactions work with [`UndoManager`](undomanager.md). 
   The name identifying the undo action.
 - [var redoActionName: String](undomanager/redoactionname.md)
   The name identifying the redo action.
-- [func setActionName(String)](undomanager/setactionname(_:).md)
-  Sets the name of the action associated with the Undo or Redo command.
 ### Getting and localizing the menu item title
 - [var undoMenuItemTitle: String](undomanager/undomenuitemtitle.md)
   The title of the Undo menu command, such as Undo Paste.
@@ -138,6 +137,20 @@ Typically, apps with UI interactions work with [`UndoManager`](undomanager.md). 
   Posted just before an undo manager performs an undo operation.
 - [let NSUndoManagerGroupIsDiscardableKey: String](nsundomanagergroupisdiscardablekey.md)
   A key, used in a notification’s user info, that indicates the undo group contains only discardable actions.
+### Structures
+- [UndoManager.CheckpointMessage](undomanager/checkpointmessage.md)
+- [UndoManager.DidCloseUndoGroupMessage](undomanager/didcloseundogroupmessage.md)
+- [UndoManager.DidOpenUndoGroupMessage](undomanager/didopenundogroupmessage.md)
+- [UndoManager.DidRedoChangeMessage](undomanager/didredochangemessage.md)
+- [UndoManager.DidUndoChangeMessage](undomanager/didundochangemessage.md)
+- [UndoManager.WillCloseUndoGroupMessage](undomanager/willcloseundogroupmessage.md)
+- [UndoManager.WillRedoChangeMessage](undomanager/willredochangemessage.md)
+- [UndoManager.WillUndoChangeMessage](undomanager/willundochangemessage.md)
+### Instance Methods
+- [func setActionName(String)](undomanager/setactionname(_:)-8lzip.md)
+  Sets the name of the action associated with the Undo or Redo command.
+- [func setActionName(LocalizedStringResource?)](undomanager/setactionname(_:)-cci9.md)
+  Set the name of the action associated with the Undo or Redo command.
 
 ## Relationships
 
@@ -150,6 +163,7 @@ Typically, apps with UI interactions work with [`UndoManager`](undomanager.md). 
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

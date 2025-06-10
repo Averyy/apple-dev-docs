@@ -1,6 +1,6 @@
 # defaultTestSuite
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A test suite that contains test cases for all of the tests in the class.

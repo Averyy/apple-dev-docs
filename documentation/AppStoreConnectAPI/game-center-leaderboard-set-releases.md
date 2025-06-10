@@ -22,6 +22,7 @@ Manage a leaderboard set releases.
   A response that contains a single leaderboard set release resource.
 - [object GameCenterLeaderboardSetReleasesResponse](gamecenterleaderboardsetreleasesresponse.md)
   A response that contains multiple leaderboard set release resource.
+- [object GameCenterLeaderboardSetReleasesLinkagesResponse](gamecenterleaderboardsetreleaseslinkagesresponse.md)
 
 ## See Also
 
@@ -30,9 +31,9 @@ Manage a leaderboard set releases.
 - [Game Center leaderboard set localizations](game-center-leaderboard-set-localizations.md)
   Manage localizations for your Game Center leaderboard sets.
 - [Game Center leaderboard set images](game-center-leaderboard-set-images.md)
-  Mangage image assets for your Game Center leaderboard sets.
+  Manage image assets for your Game Center leaderboard sets.
 - [Game Center leaderboard set member localizations](game-center-leaderboard-set-member-localizations.md)
-  Mangage Game Center leaderboard set member localizations.
+  Manage Game Center leaderboard set member localizations.
 
 
 ---

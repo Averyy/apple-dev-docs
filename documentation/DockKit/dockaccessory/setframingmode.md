@@ -1,6 +1,6 @@
 # setFramingMode(_:)
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: method
 
 Customize the dock accessory’s tracking behavior.

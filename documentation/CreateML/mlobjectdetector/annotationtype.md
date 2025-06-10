@@ -38,6 +38,7 @@ Use [`MLObjectDetector.AnnotationType`](mlobjectdetector/annotationtype.md) to t
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

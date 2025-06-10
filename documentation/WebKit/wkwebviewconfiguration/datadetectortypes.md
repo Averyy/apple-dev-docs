@@ -1,6 +1,6 @@
 # dataDetectorTypes
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The types of data detectors to apply to the web view’s content.

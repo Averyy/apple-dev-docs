@@ -1,6 +1,6 @@
 # disconnect(throwing:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Disconnects the port, terminating all further messages with an optional error.

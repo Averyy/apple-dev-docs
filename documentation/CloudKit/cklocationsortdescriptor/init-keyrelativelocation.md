@@ -26,7 +26,7 @@ During sorting, the sort descriptor computes the distance between the value in t
 
 ## Parameters
 
-- `key`: The name of the key with a   object as its value. The key must belong to the records you’re sorting. The sort descriptor uses this key to retrieve the corresponding value from the record.
+- `key`: The name of the key with a  doc://com.apple.documentation/documentation/corelocation/cllocation  object as its value. The key must belong to the records you’re sorting. The sort descriptor uses this key to retrieve the corresponding value from the record.
 - `relativeLocation`: The reference location when sorting. CloudKit sorts records according to their distance from this location.
 
 ## See Also

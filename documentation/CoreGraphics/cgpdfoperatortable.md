@@ -1,6 +1,6 @@
 # CGPDFOperatorTable
 
-**Framework**: Coregraphics
+**Framework**: Core Graphics
 
 A set of callback functions for operators used when scanning content in a PDF document.
 
@@ -35,4 +35,4 @@ For more about PDF operators, see the latest version of , Adobe Systems Incorpor
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreGraphics/cgpdfoperatortable)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coregraphics/cgpdfoperatortable)*

@@ -1,6 +1,6 @@
 # webView(_:runJavaScriptConfirmPanelWithMessage:initiatedByFrame:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Displays a JavaScript confirm panel.

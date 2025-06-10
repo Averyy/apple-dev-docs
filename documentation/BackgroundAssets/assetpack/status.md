@@ -1,0 +1,54 @@
+# AssetPack.Status
+
+**Framework**: Background Assets  
+**Kind**: struct
+
+The status of an asset pack.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+struct Status
+```
+
+## Topics
+
+### Type Properties
+- [static let downloadAvailable: AssetPack.Status](assetpack/status/downloadavailable.md)
+  A status value that indicates that the asset pack is available to download.
+- [static let downloaded: AssetPack.Status](assetpack/status/downloaded.md)
+  A status value that indicates that the system finished downloading the asset pack.
+- [static let downloading: AssetPack.Status](assetpack/status/downloading.md)
+  A status value that indicates that the system is currently downloading the asset pack.
+- [static let obsolete: AssetPack.Status](assetpack/status/obsolete.md)
+  A status value that indicates that the asset pack is no longer available to download.
+- [static let outOfDate: AssetPack.Status](assetpack/status/outofdate.md)
+  A status value that indicates that the downloaded asset pack is out of date.
+- [static let upToDate: AssetPack.Status](assetpack/status/uptodate.md)
+  A status value that indicates that the downloaded asset pack is up to date.
+- [static let updateAvailable: AssetPack.Status](assetpack/status/updateavailable.md)
+  A status value that indicates that an update to the asset pack is available to download.
+
+## Relationships
+
+### Conforms To
+- [Equatable](../Swift/Equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
+- [OptionSet](../Swift/OptionSet.md)
+- [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SetAlgebra](../Swift/SetAlgebra.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/backgroundassets/assetpack/status)*

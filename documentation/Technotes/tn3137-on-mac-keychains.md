@@ -140,4 +140,4 @@ The keychain support in the `security` command-line tool is primarily focused on
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3137-on-mac-keychains)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3137-on-mac-keychains)*

@@ -1,6 +1,6 @@
 # trackingImageView
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The image view that contains the image.

@@ -27,8 +27,8 @@ The value type depends on the type of the port type, as shown in the following t
 | --- | --- |
 | Boolean, Index, or Number | [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) or any object that responds to the methods `integerValue`, `floatValue`, or `doubleValue` |
 | String | [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) or any object that responds to the methods`stringValue` or `description` |
-| Color | [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor), [`CIColor`](https://developer.apple.com/documentation/coreimage/cicolor), or `CGColor` object |
-| Image | [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage), [`NSBitmapImageRep`](https://developer.apple.com/documentation/AppKit/NSBitmapImageRep), `CGImage` object, [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage), `CVPixelBuffer` object, `CVOpenGLBuffer` object, or an opaque `QCImage` (that is, an optimized abstract image object only to be used with `setValue:forInputKey:` of another `<QCCompositionRenderer>`) |
+| Color | [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor), [`CIColor`](https://developer.apple.com/documentation/CoreImage/CIColor), or `CGColor` object |
+| Image | [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage), [`NSBitmapImageRep`](https://developer.apple.com/documentation/AppKit/NSBitmapImageRep), `CGImage` object, [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage), `CVPixelBuffer` object, `CVOpenGLBuffer` object, or an opaque `QCImage` (that is, an optimized abstract image object only to be used with `setValue:forInputKey:` of another `<QCCompositionRenderer>`) |
 | Structure | [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) or [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) |
 
 ## Parameters

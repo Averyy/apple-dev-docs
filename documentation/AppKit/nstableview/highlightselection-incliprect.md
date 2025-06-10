@@ -1,6 +1,6 @@
 # highlightSelection(inClipRect:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Highlights the region of the table view in the specified rectangle.

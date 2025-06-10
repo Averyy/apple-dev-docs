@@ -8,9 +8,9 @@ Adds an action to perform when the user moves the pointer over or away from the 
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst 13.4+
+- Mac Catalyst ?+
 - macOS 10.15+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

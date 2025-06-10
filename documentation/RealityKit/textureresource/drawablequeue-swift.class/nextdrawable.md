@@ -1,6 +1,6 @@
 # nextDrawable()
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: method
 
 Returns drawable when one is available, blocking the caller in the meantime.
@@ -10,6 +10,7 @@ Returns drawable when one is available, blocking the caller in the meantime.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -20,7 +21,7 @@ func nextDrawable() throws -> TextureResource.Drawable
 
 #### Discussion
 
-The method can block the caller for a duration up to the [`timeout`](textureresource/drawablequeue-swift.class/descriptor/timeout.md) period.
+The method can block the caller for a duration up to the `DrawableQueue-swift.class/Descriptor/timeout` period.
 
 > **Note**: The method returns `nil` without blocking when the drawable queue isn’t bound to a material in the scene, or when the render server is currently loading and initializing it.
 

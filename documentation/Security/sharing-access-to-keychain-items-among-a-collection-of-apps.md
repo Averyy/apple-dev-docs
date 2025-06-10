@@ -12,8 +12,6 @@ An access group is a logical collection of apps tagged with a particular group n
 
 > ❗ **Important**:  This form of keychain item sharing applies to all iOS keychain items, and to macOS keychain items when you query with the [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) key, set the item’s [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) attribute, or both.
 
- This form of keychain item sharing applies to all iOS keychain items, and to macOS keychain items when you query with the [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) key, set the item’s [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) attribute, or both.
-
 ##### Set Your Apps Access Groups
 
 You control the groups that your app belongs to by manipulating its entitlements. In particular, an app belongs to all the groups named in a virtual array of strings that the system forms for each app as the concatenation of the following items, evaluated in this order:
@@ -66,7 +64,7 @@ Notice that the distinct areas represented by the app IDs are still present, all
 
 ###### Use App Groups to Expand Sharing of Keychain and Non Keychain Data
 
-When your app belongs to an app group, it can share certain kinds of non-keychain data with other apps in the same group. For example, you can use the [`init(suiteName:)`](https://developer.apple.com/documentation/foundation/userdefaults/1409957-init) method to create a new [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) instance that shares the preferences you set among all the apps in the app group. Like keychain access groups, you enable app groups with a capability in Xcode.
+When your app belongs to an app group, it can share certain kinds of non-keychain data with other apps in the same group. For example, you can use the [`init(suiteName:)`](https://developer.apple.com/documentation/Foundation/UserDefaults/init(suiteName:)) method to create a new [`UserDefaults`](https://developer.apple.com/documentation/Foundation/UserDefaults) instance that shares the preferences you set among all the apps in the app group. Like keychain access groups, you enable app groups with a capability in Xcode.
 
 Starting in iOS 8, when an app belongs to an app group, it can also use this mechanism to share keychain items. In this example, add App One to the `group.com.example.AppSuite` app group:
 

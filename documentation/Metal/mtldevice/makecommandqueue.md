@@ -34,8 +34,6 @@ A command queue can only submit commands to the GPU device instance that created
 
 > ❗ **Important**:  The command queues you create with this method allow up to 64 uncompleted command buffers at time.
 
- The command queues you create with this method allow up to 64 uncompleted command buffers at time.
-
 This method is the equivalent of passing `64` to the [`makeCommandQueue(maxCommandBufferCount:)`](mtldevice/makecommandqueue(maxcommandbuffercount:).md) method.
 
 ## See Also

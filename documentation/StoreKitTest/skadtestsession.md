@@ -1,6 +1,6 @@
 # SKAdTestSession
 
-**Framework**: Storekittest  
+**Framework**: StoreKit Test  
 **Kind**: class
 
 The class you use to test ad impressions and postbacks in Xcode.
@@ -60,7 +60,7 @@ To perform tests on conversion values and postbacks, follow these steps:
   Add test postbacks to the test session.
 - [var postbacks: [SKAdTestPostback]](skadtestsession/postbacks.md)
   An array of test postbacks you set in the testing environment.
-- [func flushPostbacks(responses: SKANTestPostbackResponseHandler)](skadtestsession/flushpostbacks(responses:).md)
+- [func flushPostbacks(responses: ([String : SKAdTestPostbackResponse]?, (any Error)?) -> Void)](skadtestsession/flushpostbacks(responses:).md)
   Sends the test postbacks and handles the responses.
 - [typealias SKANTestPostbackResponseHandler](skantestpostbackresponsehandler.md)
   A type that represents the test postback response handler.
@@ -97,4 +97,4 @@ To perform tests on conversion values and postbacks, follow these steps:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKitTest/skadtestsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekittest/skadtestsession)*

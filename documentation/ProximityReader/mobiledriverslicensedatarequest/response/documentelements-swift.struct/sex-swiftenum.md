@@ -9,6 +9,7 @@ A type that represents the mobile driver’s license holder’s sex.
 - iOS 17.2+
 - iPadOS 17.2+
 - Mac Catalyst 17.2+
+- visionOS 1.2+
 
 ## Declaration
 
@@ -49,6 +50,7 @@ enum Sex
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

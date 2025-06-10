@@ -1,9 +1,9 @@
 # CIBarcodeDescriptor
 
 **Framework**: Core Image  
-**Kind**: cl
+**Kind**: class
 
-An abstract base class that represents a machine-readable code's attributes.
+An abstract base class that represents a machine-readable code’s attributes.
 
 **Availability**:
 - iOS 11.0+
@@ -16,14 +16,14 @@ An abstract base class that represents a machine-readable code's attributes.
 ## Declaration
 
 ```swift
-class CIBarcodeDescriptor : NSObject
+class CIBarcodeDescriptor
 ```
 
 #### Overview
 
 Subclasses encapsulate the formal specification and fields specific to a code type.  Each subclass is sufficient to recreate the unique symbol exactly as seen or used with a custom parser.
 
-```occ
+```objc
 - (CIImage*) imageFromBarcodeDescriptor:(CIBarcodeDescriptor*)descriptor
 {
     NSDictionary* inputParams = @{
@@ -38,21 +38,33 @@ Subclasses encapsulate the formal specification and fields specific to a code ty
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Inherited By
+- [CIAztecCodeDescriptor](ciazteccodedescriptor.md)
+- [CIDataMatrixCodeDescriptor](cidatamatrixcodedescriptor.md)
+- [CIPDF417CodeDescriptor](cipdf417codedescriptor.md)
+- [CIQRCodeDescriptor](ciqrcodedescriptor.md)
 ### Conforms To
-- [NSCopying](../foundation/nscopying.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
 - [class CIQRCodeDescriptor](ciqrcodedescriptor.md)
-  A concrete subclass of [`CIBarcodeDescriptor`](cibarcodedescriptor.md) that represents a square QR code symbol.
+  A square QR code symbol.
 - [class CIAztecCodeDescriptor](ciazteccodedescriptor.md)
-  A concrete subclass of [`CIBarcodeDescriptor`](cibarcodedescriptor.md) that represents an Aztec code symbol.
+  An Aztec code symbol.
 - [class CIPDF417CodeDescriptor](cipdf417codedescriptor.md)
-  A concrete subclass of [`CIBarcodeDescriptor`](cibarcodedescriptor.md) that represents a PDF417 symbol.
+  A PDF417 symbol.
 - [class CIDataMatrixCodeDescriptor](cidatamatrixcodedescriptor.md)
-  A concrete subclass of [`CIBarcodeDescriptor`](cibarcodedescriptor.md) that represents a Data Matrix code symbol.
+  A Data Matrix code symbol.
 
 
 ---

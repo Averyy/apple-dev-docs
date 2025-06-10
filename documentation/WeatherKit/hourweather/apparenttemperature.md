@@ -1,6 +1,6 @@
 # apparentTemperature
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The apparent, or “feels like” temperature during the hour.

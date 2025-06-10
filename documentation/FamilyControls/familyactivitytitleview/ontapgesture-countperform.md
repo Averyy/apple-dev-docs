@@ -1,6 +1,6 @@
 # onTapGesture(count:perform:)
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Adds an action to perform when this view recognizes a tap gesture.

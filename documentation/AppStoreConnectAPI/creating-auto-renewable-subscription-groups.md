@@ -1,6 +1,6 @@
 # Creating auto-renewable subscription groups
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Configure subscription groups with the App Store Connect API.
 
@@ -127,4 +127,4 @@ After you configure your subscription group, create your subscription following 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/creating-auto-renewable-subscription-groups)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/creating-auto-renewable-subscription-groups)*

@@ -10,8 +10,6 @@ When using the movement disorder APIs, it’s critical that your app provides a 
 
 > ❗ **Important**:  Apps that offer movement disorders monitoring must adhere to the [`Movement Disorder API Addendum`](https://developer.apple.comhttps://developer.apple.com/contact/request/movement-disorder-api-entitlement/). Note that only Apple Developer Program account holders can access the addendum. In addition, all health-related apps must follow best practices for handling the user’s health data, as defined by the HealthKit guidelines (see [`Protecting user privacy`](https://developer.apple.com/documentation/HealthKit/protecting-user-privacy)).
 
- Apps that offer movement disorders monitoring must adhere to the [`Movement Disorder API Addendum`](https://developer.apple.comhttps://developer.apple.com/contact/request/movement-disorder-api-entitlement/). Note that only Apple Developer Program account holders can access the addendum. In addition, all health-related apps must follow best practices for handling the user’s health data, as defined by the HealthKit guidelines (see [`Protecting user privacy`](https://developer.apple.com/documentation/HealthKit/protecting-user-privacy)).
-
 ##### Explain Your Apps Data Use Policy
 
 Apps that perform movement disorder monitoring must display an introduction screen when the user first launches the app. This screen must describe the following:

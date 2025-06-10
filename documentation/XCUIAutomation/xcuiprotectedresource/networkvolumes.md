@@ -1,6 +1,6 @@
 # XCUIProtectedResource.networkVolumes
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The protected resource case for access to network volumes.

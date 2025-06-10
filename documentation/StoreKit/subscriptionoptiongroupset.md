@@ -34,6 +34,7 @@ A set of groups of subscription options that include optional views for labels a
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StoreContent](storecontent.md)
 
 ## See Also

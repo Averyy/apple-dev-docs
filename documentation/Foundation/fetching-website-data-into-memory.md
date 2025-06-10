@@ -145,4 +145,4 @@ The various delegate protocols offer methods beyond those shown in the above cod
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/fetching-website-data-into-memory)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/fetching-website-data-into-memory)*

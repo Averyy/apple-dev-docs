@@ -1,6 +1,6 @@
 # Responding to VoIP Notifications from PushKit
 
-**Framework**: Pushkit
+**Framework**: PushKit
 
 Receive incoming Voice-over-IP (VoIP) push notifications and use them to display the system call interface to the user.
 
@@ -116,4 +116,4 @@ After sending the initial push notification, don’t send additional push notifi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PushKit/responding-to-voip-notifications-from-pushkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/pushkit/responding-to-voip-notifications-from-pushkit)*

@@ -35,11 +35,11 @@ Manage devices for your students and employees.
   Remove a profile from a list of devices.
 ### Account-Driven Enrollment Service Discovery
 - [Assign Account-Driven Enrollment Service Discovery](assign-account-driven-enrollment-profile.md)
-  The Account-Driven Enrollment profile defines key attributes related to service discovery for account-driven enrollment, by MDM.
+  The Account-Driven Enrollment profile defines key attributes related to service discovery for account-driven enrollment by MDM.
 - [Fetch Account-Driven Enrollment Service Discovery](fetch-account-driven-enrollment-profile.md)
-  Fetch the Account-Driven Enrollment profile set by MDM that includes information about service discovery for account-driven enrollment.
+  Fetch the Account-Driven Enrollment profile that the MDM server sets, which includes information about service discovery for account-driven enrollment.
 - [Remove Account-Driven Enrollment Profile](remove-account-driven-enrollment-profile.md)
-  Remove the Account-Driven Enrollment profile set by MDM that includes information about service discovery for account-driven enrollment.
+  Remove the Account-Driven Enrollment profile that the MDM server sets, which includes information about service discovery for account-driven enrollment.
 ### Objects and Data Types
 - [object Device](device.md)
   A device’s properties and their values.

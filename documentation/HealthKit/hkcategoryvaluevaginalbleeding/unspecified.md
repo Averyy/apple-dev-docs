@@ -3,8 +3,6 @@
 **Framework**: HealthKit  
 **Kind**: case
 
-An unspecified amount of vaginal bleeding.
-
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

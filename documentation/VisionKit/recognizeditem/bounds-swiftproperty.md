@@ -1,6 +1,6 @@
 # bounds
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The four corners of the recognized item in view coordinates.

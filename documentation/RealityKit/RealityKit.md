@@ -10,18 +10,19 @@ Simulate and render 3D content for use in your augmented reality apps.
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Mentions
 
 - [Selecting an anchor for a Reality Composer scene](selecting-an-anchor-for-a-reality-composer-scene.md)
+- [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
 - [Configuring elements in a scene](configuring-elements-in-a-scene.md)
 - [Designing scene hierarchies for efficient physics simulation](designing-scene-hierarchies-for-efficient-physics-simulation.md)
-- [Adding procedural assets to a scene](adding-procedural-assets-to-a-scene.md)
 
 #### Overview
 
-RealityKit provides high-performance 3D simulation and rendering capabilities you can use to create apps with 3D or augmented reality (AR) for iOS, iPadOS, macOS, and visionOS. RealityKit is an AR-first 3D framework that leverages [`ARKit`](https://developer.apple.com/documentation/ARKit) to seamlessly integrate virtual objects into the real world.
+RealityKit provides high-performance 3D simulation and rendering capabilities you can use to create apps with 3D or augmented reality (AR) for iOS, iPadOS, macOS, tvOS, and visionOS. RealityKit is an AR-first 3D framework that leverages [`ARKit`](https://developer.apple.com/documentation/ARKit) to seamlessly integrate virtual objects into the real world.
 
 ![A screenshot that shows a virtual warehouse environment set up as a theater. A movie showing on a big floating screen features a wheeled robot rolling through an outdoor environment.](https://docs-assets.developer.apple.com/published/608fdec903f17a98916147458196a26f/realityKit-hero-image.png)
 
@@ -89,6 +90,8 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   Use attachments to place 2D content relative to 3D content in your visionOS app.
 - [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
+- [Presenting images in RealityKit](presenting-images-in-realitykit.md)
+  Create and display spatial scenes in RealityKit.
 - [Models and meshes](scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
 - [Materials, textures, and shaders](scene-content-materials-and-shaders.md)

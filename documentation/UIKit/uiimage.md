@@ -1,6 +1,6 @@
 # UIImage
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An object that manages image data in your app.
@@ -21,9 +21,9 @@ class UIImage
 
 ## Mentions
 
-- [Understanding a drag item as a promise](understanding-a-drag-item-as-a-promise.md)
-- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
 - [Configuring and displaying symbol images in your UI](configuring-and-displaying-symbol-images-in-your-ui.md)
+- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
+- [Understanding a drag item as a promise](understanding-a-drag-item-as-a-promise.md)
 
 #### Overview
 
@@ -257,8 +257,6 @@ Image objects don’t provide direct access to their underlying image data. Howe
   The horizontal end-cap size.
 - [var topCapHeight: Int](uiimage/topcapheight.md)
   The vertical end-cap size.
-### Default Implementations
-- [JournalingSuggestionAsset Implementations](uiimage/journalingsuggestionasset-implementations.md)
 
 ## Relationships
 
@@ -278,6 +276,7 @@ Image objects don’t provide direct access to their underlying image data. Howe
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIItemProviderPresentationSizeProviding](uiitemproviderpresentationsizeproviding.md)
 
@@ -291,4 +290,4 @@ Image objects don’t provide direct access to their underlying image data. Howe
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiimage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiimage)*

@@ -73,6 +73,8 @@ Other properties and methods let you track the progress of a download, change th
 ### Notifications
 - [static let NSBundleResourceRequestLowDiskSpace: NSNotification.Name](nsnotification/name-swift.struct/nsbundleresourcerequestlowdiskspace.md)
   Posted after the system detects that the amount of available disk space is getting low. The notification is posted to the default notification center.
+### Structures
+- [NSBundleResourceRequest.LowDiskSpaceMessage](nsbundleresourcerequest/lowdiskspacemessage.md)
 
 ## Relationships
 
@@ -90,4 +92,4 @@ Other properties and methods let you track the progress of a download, change th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsbundleresourcerequest)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsbundleresourcerequest)*

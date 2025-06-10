@@ -14,7 +14,6 @@ An object that lays out plain text for printing, possibly over multiple pages.
 ## Declaration
 
 ```swift
-@MainActor
 class UISimpleTextPrintFormatter
 ```
 
@@ -61,7 +60,6 @@ You can change the text at any time before drawing of the printable content begi
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

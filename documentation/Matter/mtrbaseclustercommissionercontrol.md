@@ -38,7 +38,7 @@ Supports the ability for clients to request the commissioning of themselves or o
 - [func readAttributeFeatureMap(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustercommissionercontrol/readattributefeaturemap(completion:).md)
 - [func readAttributeGeneratedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustercommissionercontrol/readattributegeneratedcommandlist(completion:).md)
 - [func readAttributeSupportedDeviceCategories(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustercommissionercontrol/readattributesupporteddevicecategories(completion:).md)
-- [func requestCommissioningApproval(with: MTRCommissionerControlClusterRequestCommissioningApprovalParams, completion: MTRStatusCompletion)](mtrbaseclustercommissionercontrol/requestcommissioningapproval(with:completion:).md)
+- [func requestCommissioningApproval(with: MTRCommissionerControlClusterRequestCommissioningApprovalParams, completion: ((any Error)?) -> Void)](mtrbaseclustercommissionercontrol/requestcommissioningapproval(with:completion:).md)
   Command RequestCommissioningApproval
 - [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustercommissionercontrol/subscribeattributeacceptedcommandlist(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustercommissionercontrol/subscribeattributeattributelist(with:subscriptionestablished:reporthandler:).md)

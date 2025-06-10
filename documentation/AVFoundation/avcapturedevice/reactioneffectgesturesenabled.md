@@ -1,6 +1,6 @@
 # reactionEffectGesturesEnabled
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that indicates whether gesture detection triggers reaction effects on the video stream.

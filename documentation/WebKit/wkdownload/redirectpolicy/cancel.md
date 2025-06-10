@@ -1,6 +1,6 @@
 # WKDownload.RedirectPolicy.cancel
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Cancel the redirect action.

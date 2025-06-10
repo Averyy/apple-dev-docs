@@ -1,6 +1,6 @@
 # Promoting Apps with Smart App Banners
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Create a banner to promote your app on the App Store from a website.
 
@@ -38,7 +38,7 @@ You can generate the `app-argument` parameter for each page dynamically with a s
 
 ##### Provide Navigational Context to Your App
 
-Implement the [`application(_:open:sourceApplication:annotation:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:open:sourceApplication:annotation:)): method in your app delegate, which fires when your app is launched from a URL. Then provide logic that can interpret the URL you pass. The value you set for the `app-argument` parameter is available as the [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) [`url`](https://developer.apple.com/documentation/foundation/nsurlcomponents/1413469-url) object.
+Implement the [`application(_:open:sourceApplication:annotation:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:open:sourceApplication:annotation:)): method in your app delegate, which fires when your app is launched from a URL. Then provide logic that can interpret the URL you pass. The value you set for the `app-argument` parameter is available as the [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) [`url`](https://developer.apple.com/documentation/Foundation/NSURLComponents/url) object.
 
 The code sample below is for a website that passes data to a native iOS app. It first detects whether the URL contains the string `/profile`. If so, it opens the profile view controller and passes the profile ID number that’s in the query string.
 
@@ -74,4 +74,4 @@ The code sample below is for a website that passes data to a native iOS app. It 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/promoting-apps-with-smart-app-banners)*
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/promoting-apps-with-smart-app-banners)*

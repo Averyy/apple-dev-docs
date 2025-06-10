@@ -1,6 +1,6 @@
 # WKSecurityOrigin
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that identifies the origin of a particular resource.

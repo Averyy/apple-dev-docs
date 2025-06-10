@@ -31,6 +31,7 @@ object BetaAppLocalizationCreateRequest
   The request body you use to update a Beta App Localization.
 - [object BetaAppLocalizationsResponse](betaapplocalizationsresponse.md)
   A response that contains a list of Beta App Localization resources.
+- [object BetaAppLocalizationAppLinkageResponse](betaapplocalizationapplinkageresponse.md)
 
 
 ---

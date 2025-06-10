@@ -26,14 +26,6 @@ func requestTemporaryFullAccuracyAuthorization(withPurposeKey purposeKey: String
 func requestTemporaryFullAccuracyAuthorization(withPurposeKey purposeKey: String) async throws
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func requestTemporaryFullAccuracyAuthorization(withPurposeKey purposeKey: String) async throws
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 After the user gives permission for your app to use location data with full accuracy, your app can access that data in the foreground or in the background, until its permission automatically expires. Expiration is postponed while your app is actively in use. For example, expiration is postponed while your app in the foreground, and while a Continuous Background Location session is active with the background location indicator enabled. This approach to expiration allows apps to provide experiences that require full accuracy, such as fitness and navigation apps, even if the user doesn’t grant persistent access for full accuracy.
 
 The completion closure is guaranteed to be called after the request is completed, which includes the user granting access, the user declining, or an error that prevented displaying the prompt. The closure is always called in the same threading context as [`CLLocationManagerDelegate`](cllocationmanagerdelegate.md) methods. If the prompt was successfully displayed to the user, the callback’s `error` parameter is `nil`.

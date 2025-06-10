@@ -8,6 +8,14 @@ Learn about important changes to Foundation.
 
 Browse notable changes in [`Foundation`](https://developer.apple.com/documentation/Foundation).
 
+#### June 2025
+
+- Post and observe concurrency-safe notifications with new features in [`NotificationCenter`](https://developer.apple.com/documentation/Foundation/NotificationCenter) that support Swift-friendly “message” types. Use [`NotificationCenter.MainActorMessage`](https://developer.apple.com/documentation/Foundation/NotificationCenter/MainActorMessage) for notification messages bound to the [`MainActor`](https://developer.apple.com/documentation/Swift/MainActor) and  [`NotificationCenter.AsyncMessage`](https://developer.apple.com/documentation/Foundation/NotificationCenter/AsyncMessage) for messages that are [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable). Add an observer to one of these notification message types with the various `addObserver(of:for:using:)` methods in [`NotificationCenter`](https://developer.apple.com/documentation/Foundation/NotificationCenter). Many standard notifications in Foundation, UIKit, and AppKit now offer a message-based API, associating the message with an existing [`Notification.Name`](https://developer.apple.com/documentation/Foundation/Notification/Name-swift.typealias). You can also associate a message with a new name for Swift-only notifications.
+- Simplify usage of [`UndoManager`](https://developer.apple.com/documentation/Foundation/UndoManager) on the main actor, now that the undo manager is marked with `@MainActor`. The undo manager also adds a [`setActionName(_:)`](https://developer.apple.com/documentation/Foundation/UndoManager/setActionName(_:)-cci9) method that takes a [`LocalizedStringResource`](https://developer.apple.com/documentation/Foundation/LocalizedStringResource). Use this with the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework, which introduces a new [`UndoableIntent`](https://developer.apple.com/documentation/AppIntents/UndoableIntent).
+- Access your app, app extension, or framework’s bundle with the `#bundle` macro. Using the macro is more performant and convenient than using `.self` or a bundle identifier, particularly when loading localized strings with initializers that take a `bundle:` parameter. The macro back-deploys, so you can use it with projects whose deployment targets specify earlier versions of the operating system.
+- Get UTF-8 and UTF-16 views of an [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString) with the [`utf8`](https://developer.apple.com/documentation/Foundation/AttributedStringProtocol/utf8) and [`utf16`](https://developer.apple.com/documentation/Foundation/AttributedStringProtocol/utf16) methods of [`AttributedStringProtocol`](https://developer.apple.com/documentation/Foundation/AttributedStringProtocol).
+- Access multiple ranges of an [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString) with the new [`DiscontiguousAttributedSubstring`](https://developer.apple.com/documentation/Foundation/DiscontiguousAttributedSubstring) type. You can get this type from an attributed string with either a [`RangeSet`](https://developer.apple.com/documentation/Swift/RangeSet) of indices, or with the new [`AttributedTextSelection`](https://developer.apple.com/documentation/SwiftUI/AttributedTextSelection) type.
+
 #### June 2024
 
 ##### Predicates
@@ -50,12 +58,16 @@ Browse notable changes in [`Foundation`](https://developer.apple.com/documentati
   Learn about important changes in ActivityKit.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [App Intents updates](appintents.md)
   Learn about important changes in App Intents.
 - [AppKit updates](appkit.md)
   Learn about important changes to AppKit.
 - [Apple Intelligence updates](apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -68,10 +80,6 @@ Browse notable changes in [`Foundation`](https://developer.apple.com/documentati
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
 
 
 ---

@@ -62,6 +62,8 @@ The IOBluetoothSDPUUID class can represent a UUID of any valid size (16, 32 or 1
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

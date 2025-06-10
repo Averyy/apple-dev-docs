@@ -1,6 +1,6 @@
 # shouldPerformDownload
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether the web content provided an attribute that indicates a download.

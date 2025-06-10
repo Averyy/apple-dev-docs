@@ -6,17 +6,18 @@
 Tells the delegate to export an image attached to a scene.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.9+
-- tvOS 10.0+
+- macOS 10.8+
+- tvOS 9.0+
 - visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 
 ```swift
-optional func write(_ image: NSImage, withSceneDocumentURL documentURL: URL, originalImageURL: URL?) -> URL?
+optional func write(_ image: UIImage, withSceneDocumentURL documentURL: URL, originalImageURL: URL?) -> URL?
 ```
 
 #### Return Value

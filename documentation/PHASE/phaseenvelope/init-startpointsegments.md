@@ -25,8 +25,6 @@ For an empty `segments` argument, the resulting envelope contains one segment wh
 
 > ❗ **Important**:  The start point’s  value must be less than or equal to the segment with the lowest  value of all other `segments`, otherwise this function returns `nil`.
 
- The start point’s  value must be less than or equal to the segment with the lowest  value of all other `segments`, otherwise this function returns `nil`.
-
 ## Parameters
 
 - `startPoint`: The start point of the envelope.

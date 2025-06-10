@@ -54,6 +54,7 @@ You can also use `MapLocationCompass` in conjunction with the `mapControls(_:)` 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

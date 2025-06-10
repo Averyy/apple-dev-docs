@@ -1,6 +1,6 @@
 # WebMenuItemTagCopyImageToClipboard
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Copy the image to the clipboard.

@@ -8,12 +8,12 @@ A type whose values can safely be passed across concurrency domains by copying, 
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst 13.0+
 - macOS 10.10+
 - tvOS 9.0+
+- visionOS 1.0+
 - watchOS 2.0+
 - Unknown ?+ - Deprecated
-- visionOS 1.0+
+- Mac Catalyst 13.0+
 
 ## Declaration
 
@@ -33,6 +33,7 @@ struct MyStructure: @unchecked Sendable { ... }
 
 ### Inherits From
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 
@@ -46,6 +47,8 @@ struct MyStructure: @unchecked Sendable { ... }
   A singleton actor whose executor is equivalent to the main dispatch queue.
 - [protocol GlobalActor](globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
+- [protocol SendableMetatype](sendablemetatype.md)
+  A type `T` whose metatype `T.Type` is `Sendable`.
 - [typealias ConcurrentValue](concurrentvalue.md)
 - [typealias UnsafeConcurrentValue](unsafeconcurrentvalue.md)
 - [macro isolation<T>() -> T](isolation().md)

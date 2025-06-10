@@ -42,6 +42,7 @@ struct TemporalAdaptor<Base> where Base : Transformer, Base : Sendable
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TemporalTransformer](temporaltransformer.md)
 
 ## See Also

@@ -32,8 +32,6 @@ If a context’s parent store is a persistent store coordinator, then changes ar
 
 > ❗ **Important**:  Always verify that the context has uncommitted changes (using the [`hasChanges`](nsmanagedobjectcontext/haschanges.md) property) before invoking the `save:` method. Otherwise, Core Data may perform unnecessary work.
 
- Always verify that the context has uncommitted changes (using the [`hasChanges`](nsmanagedobjectcontext/haschanges.md) property) before invoking the `save:` method. Otherwise, Core Data may perform unnecessary work.
-
 ## See Also
 
 - [var hasChanges: Bool](nsmanagedobjectcontext/haschanges.md)

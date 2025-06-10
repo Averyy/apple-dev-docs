@@ -3,19 +3,23 @@
 **Framework**: RoomPlan  
 **Kind**: enum
 
-3D model generation failures
+Errors that can occur during captured room-data processing.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
 enum BuildError
 ```
+
+#### Overview
+
+The room builder ([`RoomBuilder`](roombuilder.md)) function [`capturedRoom(from:)`](roombuilder/capturedroom(from:).md) can throw an error of this type.
 
 ## Topics
 
@@ -32,7 +36,7 @@ enum BuildError
   An error that indicates that the framework doesn’t support the user’s device.
 ### Inspecting error information
 - [var errorDescription: String?](roombuilder/builderror/errordescription.md)
-  A localized message describing what error occurred.
+  A human-readable explanation of the error.
 - [var recoverySuggestion: String?](roombuilder/builderror/recoverysuggestion.md)
   A localized message describing how one might recover from the failure.
 - [var localizedDescription: String](roombuilder/builderror/localizeddescription.md)
@@ -64,6 +68,7 @@ enum BuildError
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

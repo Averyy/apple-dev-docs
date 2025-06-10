@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A dictionary that contains numeric profile restrictions.
+A dictionary that contains numeric restrictions.
 
 **Availability**:
 - iOS 4.0+
@@ -11,8 +11,6 @@ A dictionary that contains numeric profile restrictions.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,18 +20,18 @@ object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Restricte
 
 ## Topics
 
-### Commands
+### Objects
 - [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.RestrictedValue.ANY restriction name](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/restrictedvalue-data.dictionary/any-restriction-name-data.dictionary.md)
-  A dictionary that contains numeric profile restriction parameters.
+  A dictionary that contains numeric restriction parameters.
 
 ## See Also
 
 - [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Intersection](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/intersection-data.dictionary.md)
-  A dictionary that contains intersected profile restrictions.
+  A dictionary that contains intersected restrictions.
 - [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.RestrictedBool](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/restrictedbool-data.dictionary.md)
-  A dictionary that contains Boolean profile restrictions.
+  A dictionary that contains Boolean restrictions.
 - [object RestrictionsResponse.ProfileRestrictions.ANY profile identifier.Union](restrictionsresponse/profilerestrictions-data.dictionary/any-profile-identifier-data.dictionary/union-data.dictionary.md)
-  A dictionary that contains unioned profile restrictions.
+  A dictionary that contains unioned restrictions.
 
 
 ---

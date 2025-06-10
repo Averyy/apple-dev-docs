@@ -1,6 +1,6 @@
 # last
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The last element of the collection.

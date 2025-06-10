@@ -1,6 +1,6 @@
 # allowTransparentBackground
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether the PDF may have a transparent background.

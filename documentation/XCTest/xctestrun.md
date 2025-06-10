@@ -1,6 +1,6 @@
 # XCTestRun
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 A base class for collecting information about a specific execution of a test.

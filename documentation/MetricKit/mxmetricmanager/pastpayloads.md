@@ -9,6 +9,7 @@ Returns an array of the daily metrics reports generated since the last allocatio
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
+- macOS 12.0+
 - visionOS 1.0+
 
 ## Declaration

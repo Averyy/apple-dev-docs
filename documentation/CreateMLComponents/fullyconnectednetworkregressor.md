@@ -49,6 +49,7 @@ struct FullyConnectedNetworkRegressor<Scalar> where Scalar : MLShapedArrayScalar
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SupervisedEstimator](supervisedestimator.md)
 - [UpdatableSupervisedEstimator](updatablesupervisedestimator.md)
 

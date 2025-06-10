@@ -8,10 +8,10 @@ Constants that help the system understand the in-app search functionality and it
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst 17.2+
+- Mac Catalyst ?+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.2+
 
 ## Declaration
@@ -73,6 +73,7 @@ enum StringSearchScope
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StaticDisplayRepresentable](staticdisplayrepresentable.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 

@@ -17,9 +17,9 @@ var requiresFullSubtitles: Bool { get set }
 
 #### Discussion
 
-When this property value is [`true`](https://developer.apple.com/documentation/swift/true), the subtitle menu doesn’t present the Off or Auto options, because subtitles are always displayed, if available.
+When this property value is `true`, the subtitle menu doesn’t present the Off or Auto options, because subtitles are always displayed, if available.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is `false`.
 
 ## See Also
 

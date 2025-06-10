@@ -1,6 +1,6 @@
 # LPMetadataProvider
 
-**Framework**: Linkpresentation  
+**Framework**: Link Presentation  
 **Kind**: class
 
 An object that retrieves metadata for a URL.
@@ -84,4 +84,4 @@ For more information about handling errors, see [`LPError`](lperror.md).
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/LinkPresentation/lpmetadataprovider)*
+*[View on Apple Developer](https://developer.apple.com/documentation/linkpresentation/lpmetadataprovider)*

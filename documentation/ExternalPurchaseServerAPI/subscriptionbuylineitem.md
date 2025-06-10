@@ -1,6 +1,6 @@
 # SubscriptionBuyLineItem
 
-**Framework**: Externalpurchaseserverapi  
+**Framework**: External Purchase Server API  
 **Kind**: dictionary
 
 The line item that indicates a subscription-related event or transaction.
@@ -52,4 +52,4 @@ For more information, see [`Reporting tokens with transactions`](reportwithtrans
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExternalPurchaseServerAPI/subscriptionbuylineitem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/externalpurchaseserverapi/subscriptionbuylineitem)*

@@ -17,6 +17,8 @@ Manage the metadata of apps in App Store Connect.
   Create and maintain version-specific App Store metadata that’s localized.
 - [Routing App Coverages](routing-app-coverages.md)
   Manage geographic coverage files for apps that use location to provide routing information.
+- [Accessibility declarations](accessibility-declarations.md)
+  Manage accessibility metadata for your apps per device family.
 ### Managing App Screenshots
 - [App Screenshot Sets](app-screenshot-sets.md)
   Create sets of app screenshots to upload to App Store Connect.
@@ -41,7 +43,7 @@ Manage the metadata of apps in App Store Connect.
   Manage custom End User License Agreements (EULA) that are related to territories.
 ### Managing Game Center Enabled Versions
 - [Game Center Enabled Versions](game-center-enabled-versions.md)
-  Manage compatible game center-enabled versions.
+  Manage compatible Game Center-enabled versions.
 
 ## See Also
 

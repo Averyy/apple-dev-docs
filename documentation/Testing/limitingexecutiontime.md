@@ -1,6 +1,6 @@
 # Limiting the running time of tests
 
-**Framework**: Testing
+**Framework**: Swift Testing
 
 Set limits on how long a test can run for until it fails.
 
@@ -55,4 +55,4 @@ When a time limit is applied to a parameterized test function, it’s applied to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Testing/limitingexecutiontime)*
+*[View on Apple Developer](https://developer.apple.com/documentation/testing/limitingexecutiontime)*

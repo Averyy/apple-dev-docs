@@ -24,6 +24,9 @@ object PrereleaseVersionResponse
   A response that contains a list of Pre-Release Version resources.
 - [object PrereleaseVersionWithoutIncludesResponse](prereleaseversionwithoutincludesresponse.md)
 - [object PreReleaseVersionsWithoutIncludesResponse](prereleaseversionswithoutincludesresponse.md)
+- [object AppPreReleaseVersionsLinkagesResponse](appprereleaseversionslinkagesresponse.md)
+- [object PrereleaseVersionAppLinkageResponse](prereleaseversionapplinkageresponse.md)
+- [object PrereleaseVersionBuildsLinkagesResponse](prereleaseversionbuildslinkagesresponse.md)
 
 
 ---

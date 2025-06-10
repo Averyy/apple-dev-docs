@@ -20,8 +20,6 @@ class ENExposureDetectionSummary
 
 > ❗ **Important**:  This class is available in iOS 12.5, and in iOS 13.5 and later.
 
- This class is available in iOS 12.5, and in iOS 13.5 and later.
-
 ## Topics
 
 ### Exposure Criteria

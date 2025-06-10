@@ -1,6 +1,6 @@
 # HStack
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A view that arranges its subviews in a horizontal line.
@@ -23,12 +23,13 @@ struct HStack<Content> where Content : View
 
 ## Mentions
 
+- [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
 - [Laying out a simple view](laying-out-a-simple-view.md)
 - [Building layouts with stack views](building-layouts-with-stack-views.md)
-- [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
-- [Aligning views within a stack](aligning-views-within-a-stack.md)
 - [Picking container views for your content](picking-container-views-for-your-content.md)
 - [Aligning views across stacks](aligning-views-across-stacks.md)
+- [Aligning views within a stack](aligning-views-within-a-stack.md)
+- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
 
 #### Overview
 
@@ -77,4 +78,4 @@ var body: some View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/hstack)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/hstack)*

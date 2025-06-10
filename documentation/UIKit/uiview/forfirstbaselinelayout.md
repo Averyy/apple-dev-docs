@@ -1,6 +1,6 @@
 # forFirstBaselineLayout
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 Returns a view used to satisfy first baseline constraints.

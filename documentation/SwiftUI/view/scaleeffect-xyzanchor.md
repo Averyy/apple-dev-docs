@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Scales this view by the specified horizontal, vertical, and depth factors.
+Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
 
 **Availability**:
 - visionOS 1.0+
@@ -55,7 +55,7 @@ The original dimensions of the view are considered to be unchanged by scaling th
 - [func transformEffect(CGAffineTransform) -> some View](view/transformeffect(_:).md)
   Applies an affine transformation to this view’s rendered output.
 - [func transform3DEffect(AffineTransform3D) -> some View](view/transform3deffect(_:).md)
-  Applies a 3D transformation to the receiver.
+  Applies a 3D transformation to this view’s rendered output.
 - [func projectionEffect(ProjectionTransform) -> some View](view/projectioneffect(_:).md)
   Applies a projection transformation to this view’s rendered output.
 - [struct ProjectionTransform](projectiontransform.md)

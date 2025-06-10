@@ -10,6 +10,7 @@ An audio resource that you load from an [`AVAudioBuffer`](https://developer.appl
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -40,8 +41,6 @@ Use the resource to create an [`AudioPlaybackController`](audioplaybackcontrolle
   Init an AudioBufferResource from an `AVAudioBuffer` instead of a file location. This is intended for use with `AVSpeechSynthesisVoice`.
 - [var shouldLoop: Bool](audiobufferresource/shouldloop.md)
   Whether or not this file loops during playback. This should be set for assets that are prepared as seamless loops. A looping resource will play forever until it is explicitly told to stop.
-### Default Implementations
-- [Hashable Implementations](audiobufferresource/hashable-implementations.md)
 
 ## Relationships
 
@@ -53,6 +52,7 @@ Use the resource to create an [`AudioPlaybackController`](audioplaybackcontrolle
 - [Hashable](../Swift/Hashable.md)
 - [Resource](resource.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -64,10 +64,6 @@ Use the resource to create an [`AudioPlaybackController`](audioplaybackcontrolle
   A container for audio resources that you can look up by user-defined names.
 - [class AudioResource](audioresource.md)
   A playable audio resource
-- [AudioResource.Calibration](audioresource/calibration.md)
-  A container for different calibration modes that can be applied for playback.
-- [AudioResource.Normalization](audioresource/normalization.md)
-  Normalization adjusts the level of an audio file or buffer to be at a defined target.
 
 
 ---

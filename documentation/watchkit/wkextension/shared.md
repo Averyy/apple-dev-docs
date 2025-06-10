@@ -1,6 +1,6 @@
 # shared()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Returns the shared WatchKit extension object.

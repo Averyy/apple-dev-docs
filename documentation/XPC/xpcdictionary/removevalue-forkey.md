@@ -1,6 +1,6 @@
 # removeValue(forKey:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Removes the given key and its associated value from the dictionary.

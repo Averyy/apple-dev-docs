@@ -1,6 +1,6 @@
 # webViewStatusText(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the current status message from a web view’s window.

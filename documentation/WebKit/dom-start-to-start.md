@@ -1,6 +1,6 @@
 # DOM_START_TO_START
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

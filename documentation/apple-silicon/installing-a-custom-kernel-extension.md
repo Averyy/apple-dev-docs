@@ -1,6 +1,6 @@
 # Installing a custom kernel extension
 
-**Framework**: Apple Silicon
+**Framework**: Apple silicon
 
 Install kernel extensions using a custom installer package, and help users understand the installation process.
 

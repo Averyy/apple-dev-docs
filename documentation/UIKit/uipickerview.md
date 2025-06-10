@@ -1,6 +1,6 @@
 # UIPickerView
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A view that uses a spinning-wheel or slot-machine metaphor to show one or more sets of values.
@@ -79,6 +79,7 @@ You provide the data to display in your picker view using a picker data source (
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)
@@ -114,4 +115,4 @@ You provide the data to display in your picker view using a picker data source (
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uipickerview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uipickerview)*

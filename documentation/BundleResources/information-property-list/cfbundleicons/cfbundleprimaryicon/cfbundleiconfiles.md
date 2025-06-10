@@ -1,6 +1,6 @@
 # CFBundleIconFiles
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 The names of the icon files in the app’s asset catalog or bundle.

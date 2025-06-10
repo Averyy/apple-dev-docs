@@ -1,6 +1,6 @@
 # commitConfiguration(_:authorization:)
 
-**Framework**: Corewlan  
+**Framework**: Core WLAN  
 **Kind**: method
 
 Commit a configuration for the given WLAN interface.

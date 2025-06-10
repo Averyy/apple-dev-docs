@@ -16,7 +16,7 @@ Returns the text enclosed within the specified rectangle, expressed in page (use
 ## Declaration
 
 ```swift
-func selection(for rect: CGRect) -> PDFSelection?
+func selection(for rect: NSRect) -> PDFSelection?
 ```
 
 ## See Also

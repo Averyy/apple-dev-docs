@@ -1,6 +1,6 @@
 # init(configuration:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: init  
 **Required**: Yes
 

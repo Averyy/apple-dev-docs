@@ -1,6 +1,6 @@
 # title
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A descriptive title for the command to help discoverability.

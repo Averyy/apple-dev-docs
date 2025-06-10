@@ -6,11 +6,11 @@
 The password associated with the credential.
 
 **Availability**:
-- iOS 18.2+
-- iPadOS 18.2+
-- Mac Catalyst 18.2+
-- macOS 15.2+
-- visionOS 2.2+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -20,10 +20,6 @@ var password: ASImportableEditableField?
 
 ## See Also
 
-- [var urls: [String]](asimportablecredential/basicauthentication/urls.md)
-  The list of URLs for which to fill the password.
-- [var username: ASImportableEditableField?](asimportablecredential/basicauthentication/username.md)
-  The username associated with the credential.
 - [struct ASImportableEditableField](asimportableeditablefield.md)
   A field that someone can edit within a credential.
 

@@ -1,6 +1,6 @@
 # title
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The text to display for the item.

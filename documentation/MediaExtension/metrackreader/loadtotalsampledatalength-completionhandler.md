@@ -11,7 +11,7 @@ Loads the total size in bytes of all the samples in the track.
 ## Declaration
 
 ```swift
-var totalSampleDataLength: Int64 { get async throws }
+optional func totalSampleDataLength() async throws -> Int64
 ```
 
 ## Parameters

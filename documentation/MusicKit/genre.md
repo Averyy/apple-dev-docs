@@ -70,6 +70,7 @@ struct Genre
 - [MusicLibrarySectionRequestable](musiclibrarysectionrequestable.md)
 - [MusicPropertyContainer](musicpropertycontainer.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

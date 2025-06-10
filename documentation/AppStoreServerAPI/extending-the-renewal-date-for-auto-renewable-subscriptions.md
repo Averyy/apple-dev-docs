@@ -1,6 +1,6 @@
 # Extending the renewal date for auto-renewable subscriptions
 
-**Framework**: Appstoreserverapi
+**Framework**: App Store Server API
 
 Compensate eligible active subscribers for service interruptions by extending a subscription’s renewal date.
 
@@ -92,4 +92,4 @@ The App Store server sends real-time notifications as it processes your request 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/extending-the-renewal-date-for-auto-renewable-subscriptions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/extending-the-renewal-date-for-auto-renewable-subscriptions)*

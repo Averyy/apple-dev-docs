@@ -1,6 +1,6 @@
 # testSuiteDidFinish(_:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Notifies the observer immediately after a test suite finishes executing.

@@ -1,6 +1,6 @@
 # WKDownload.RedirectPolicy
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 An enumeration with cases that indicate whether to proceed with a redirect.
@@ -36,6 +36,7 @@ enum RedirectPolicy
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

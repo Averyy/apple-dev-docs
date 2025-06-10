@@ -18,7 +18,7 @@ func cellSize() -> NSSize
 
 ## See Also
 
-- [var icon: NSImage?](../foundation/filewrapper/1413123-icon.md)
+- [var icon: NSImage? { get set }](../Foundation/FileWrapper/icon.md)
   The icon that represents the file wrapper.
 - [var fileWrapper: FileWrapper?](nstextattachment/filewrapper.md)
   The text attachment’s file wrapper.

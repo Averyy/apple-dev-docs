@@ -17,11 +17,14 @@
 let HKMetadataKeyAppleFitnessPlusCatalogIdentifier: String
 ```
 
+#### Discussion
+
+This key only exists if the workout was completed in Fitness+. The expected value type is an NSString containing the Fitness+ catalog identifier.
+
 ## See Also
 
 - [let HKDataTypeIdentifierStateOfMind: String](hkdatatypeidentifierstateofmind.md)
 - [let HKMetadataKeyMaximumLightIntensity: String](hkmetadatakeymaximumlightintensity.md)
-  A key that indicates the maximum intensity of light for an outdoor time sample.
 - [let HKPredicateKeyPathWorkoutEffortRelationship: String](hkpredicatekeypathworkouteffortrelationship.md)
 
 

@@ -21,8 +21,6 @@ class ABPersonViewController
 
 > ❗ **Important**:  Person view controllers must be used with a navigation controller in order to function properly.
 
- Person view controllers must be used with a navigation controller in order to function properly.
-
 ##### Subclassing
 
 The `ABPersonViewController` class does not support subclassing.
@@ -66,6 +64,7 @@ The `ABPersonViewController` class does not support subclassing.
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

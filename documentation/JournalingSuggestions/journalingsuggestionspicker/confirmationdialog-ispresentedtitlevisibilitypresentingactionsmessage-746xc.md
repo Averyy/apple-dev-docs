@@ -1,6 +1,6 @@
 # confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Presents a confirmation dialog with a message using data to produce the dialog’s content and a text view for the message.

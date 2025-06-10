@@ -25,8 +25,6 @@ Typically, you do not create [`MDLMeshBufferMap`](mdlmeshbuffermap.md) objects d
 
 > ❗ **Important**:  When you use a mesh buffer’s [`map()`](mdlmeshbuffer/map().md) method, the buffer remains mapped for as long as that [`MDLMeshBufferMap`](mdlmeshbuffermap.md) object exists. Mapping a buffer may impose restrictions on a system. For example, a buffer in shared GPU memory may be unavailable for rendering while mapped, causing draw calls that use the buffer to fail until the corresponding [`MDLMeshBufferMap`](mdlmeshbuffermap.md) object is deallocated.
 
- When you use a mesh buffer’s [`map()`](mdlmeshbuffer/map().md) method, the buffer remains mapped for as long as that [`MDLMeshBufferMap`](mdlmeshbuffermap.md) object exists. Mapping a buffer may impose restrictions on a system. For example, a buffer in shared GPU memory may be unavailable for rendering while mapped, causing draw calls that use the buffer to fail until the corresponding [`MDLMeshBufferMap`](mdlmeshbuffermap.md) object is deallocated.
-
 ## Topics
 
 ### Creating a Buffer Map

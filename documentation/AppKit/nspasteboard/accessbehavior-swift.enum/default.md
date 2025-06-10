@@ -14,15 +14,6 @@ The default behavior for the General pasteboard is to ask upon programmatic acce
 case `default`
 ```
 
-## See Also
-
-- [NSPasteboard.AccessBehavior.alwaysAllow](nspasteboard/accessbehavior-swift.enum/alwaysallow.md)
-  The system will automatically allow all pasteboard access, without notifying the user.  The app is listed in the corresponding System Settings pane.
-- [NSPasteboard.AccessBehavior.alwaysDeny](nspasteboard/accessbehavior-swift.enum/alwaysdeny.md)
-  The system will automatically deny all pasteboard access, without notifying the user. However, access that is both user originated and paste related will always be allowed, and will not result in a notification. The app is listed in the corresponding System Settings pane.
-- [NSPasteboard.AccessBehavior.ask](nspasteboard/accessbehavior-swift.enum/ask.md)
-  The system will notify the user and ask for permission before granting pasteboard access. However, access that is both user originated and paste related will always be allowed, and will not result in a notification. The app is listed in the corresponding System Settings pane.
-
 
 ---
 

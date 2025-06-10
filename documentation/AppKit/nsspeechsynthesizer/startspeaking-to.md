@@ -1,6 +1,6 @@
 # startSpeaking(_:to:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Begins synthesizing text into a sound (AIFF) file.

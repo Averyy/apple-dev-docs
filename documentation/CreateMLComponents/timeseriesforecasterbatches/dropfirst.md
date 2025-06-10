@@ -1,6 +1,6 @@
 # dropFirst(_:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns a sequence containing all but the given number of initial elements.

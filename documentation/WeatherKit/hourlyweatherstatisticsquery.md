@@ -1,6 +1,6 @@
 # HourlyWeatherStatisticsQuery
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure that encapsulates a generic hourly weather statistics dataset request.
@@ -17,7 +17,7 @@ A structure that encapsulates a generic hourly weather statistics dataset reques
 ## Declaration
 
 ```swift
-struct HourlyWeatherStatisticsQuery<T> where T : Decodable, T : Encodable, T : Equatable
+struct HourlyWeatherStatisticsQuery<T> where T : Decodable, T : Encodable, T : Equatable, T : Sendable
 ```
 
 #### Overview
@@ -35,6 +35,12 @@ let (hourlyTemperatureStatistics) = try await service.hourlyStatistics(for: newY
 ### Type Properties
 - [static var temperature: HourlyWeatherStatisticsQuery<HourTemperatureStatistics>](hourlyweatherstatisticsquery/temperature.md)
   The hourly temperature statistics query.
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

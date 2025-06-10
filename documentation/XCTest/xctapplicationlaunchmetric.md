@@ -1,6 +1,6 @@
 # XCTApplicationLaunchMetric
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 A metric to record the application launch duration for a performance test.

@@ -25,8 +25,11 @@ enum Style
   A button style with plain text styling.
 - [UIBarButtonItem.Style.bordered](uibarbuttonitem/style-swift.enum/bordered.md)
   A simple button style with a border.
-- [UIBarButtonItem.Style.done](uibarbuttonitem/style-swift.enum/done.md)
+- [static var done: UIBarButtonItem.Style](uibarbuttonitem/style-swift.enum/done.md)
   A button style for a done button.
+### Enumeration Cases
+- [UIBarButtonItem.Style.prominent](uibarbuttonitem/style-swift.enum/prominent.md)
+  A button item style for a prominent button.
 ### Initializers
 - [init?(rawValue: Int)](uibarbuttonitem/style-swift.enum/init(rawvalue:).md)
 
@@ -38,6 +41,7 @@ enum Style
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

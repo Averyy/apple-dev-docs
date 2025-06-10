@@ -1,6 +1,6 @@
 # toString
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Returns a string representation of the matrix.

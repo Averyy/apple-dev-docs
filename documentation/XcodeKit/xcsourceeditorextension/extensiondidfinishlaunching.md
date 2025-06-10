@@ -1,6 +1,6 @@
 # extensionDidFinishLaunching()
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: method
 
 Tells the extension that it successfully launched and may begin to receive editor commands.

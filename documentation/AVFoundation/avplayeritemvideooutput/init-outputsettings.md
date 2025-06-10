@@ -16,7 +16,7 @@ Creates a video output object initialized with the specified output settings.
 ## Declaration
 
 ```swift
-init(outputSettings: [String : Any]?)
+init(outputSettings: [String : any Sendable]?)
 ```
 
 #### Discussion
@@ -26,11 +26,6 @@ For uncompressed video output, start with `kCVPixelBuffer*` keys in `<CoreVideo/
 ## Parameters
 
 - `outputSettings`: The client requirements for output   objects, expressed using the constants in  .
-
-## See Also
-
-- [init(pixelBufferAttributes: [String : Any]?)](avplayeritemvideooutput/init(pixelbufferattributes:).md)
-  Creates a video output object using the specified pixel buffer attributes.
 
 
 ---

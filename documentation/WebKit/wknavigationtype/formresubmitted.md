@@ -1,6 +1,6 @@
 # WKNavigationType.formResubmitted
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A request to resubmit a form.

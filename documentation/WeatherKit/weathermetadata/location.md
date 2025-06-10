@@ -1,6 +1,6 @@
 # location
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The location of the request.

@@ -6,6 +6,7 @@
 A type that provides a sequence’s iteration interface and encapsulates its iteration state.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

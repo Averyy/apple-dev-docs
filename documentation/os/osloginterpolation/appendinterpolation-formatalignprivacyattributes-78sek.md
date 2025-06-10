@@ -24,8 +24,6 @@ mutating func appendInterpolation(_ number: @autoclosure @escaping () -> Float, 
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated float to a log message.
 
- You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated float to a log message.
-
 ## Parameters
 
 - `number`: The interpolated float. The system automatically wraps this value in a closure.

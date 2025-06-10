@@ -1,6 +1,6 @@
 # transferFile(_:metadata:)
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method
 
 Sends the specified file and optional dictionary to the counterpart.
@@ -31,8 +31,6 @@ If the file and its accompanying dictionary can’t be sent, the session object 
 This method can only be called while the session is active (the [`activationState`](wcsession/activationstate.md) property is set to [`WCSessionActivationState.activated`](wcsessionactivationstate/activated.md)). Calling this method for an inactive or deactivated session is a programmer error.
 
 > ⚠️ **Warning**:  Always test Watch Connectivity file transfers on paired devices. The Simulator app doesn’t support the [`transferFile(_:metadata:)`](wcsession/transferfile(_:metadata:).md) method.
-
- Always test Watch Connectivity file transfers on paired devices. The Simulator app doesn’t support the [`transferFile(_:metadata:)`](wcsession/transferfile(_:metadata:).md) method.
 
 ## Parameters
 

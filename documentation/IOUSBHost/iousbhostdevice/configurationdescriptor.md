@@ -1,6 +1,6 @@
 # configurationDescriptor
 
-**Framework**: Iousbhost  
+**Framework**: IOUSBHost  
 **Kind**: property
 
 The currently selected configuration descriptor.

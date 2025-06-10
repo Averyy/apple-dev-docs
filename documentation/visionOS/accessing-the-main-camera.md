@@ -1,6 +1,6 @@
 # Accessing the main camera
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Add camera-based features to enterprise apps.
 
@@ -125,4 +125,4 @@ extension CVPixelBuffer {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/accessing-the-main-camera)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/accessing-the-main-camera)*

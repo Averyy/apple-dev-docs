@@ -1,6 +1,6 @@
 # PERMISSION_DENIED
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

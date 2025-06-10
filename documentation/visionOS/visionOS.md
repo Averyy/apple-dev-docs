@@ -1,6 +1,6 @@
 # visionOS
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Create a new universe of apps and games for Apple Vision Pro.
 
@@ -46,13 +46,19 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
 - [Improving accessibility support in your visionOS app](improving-accessibility-support-in-your-app.md)
   Update your code to ensure everyone can access your app’s content in visionOS.
 ### SwiftUI
+- [Canyon Crosser: Building a volumetric hike-planning app](canyon-crosser-building-a-volumetric-hike-planning-app.md)
+  Create a hike planning app using SwiftUI and RealityKit.
 - [Hello World](world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
 - [Presenting windows and spaces](presenting-windows-and-spaces.md)
   Open and close the scenes that make up your app’s interface.
 - [Positioning and sizing windows](positioning-and-sizing-windows.md)
   Influence the initial geometry of windows that your app presents.
+- [Adopting best practices for persistent UI](adopting-best-practices-for-scene-restoration.md)
+  Create persistent and contextually relevant spatial experiences by managing scene restoration, customizing window behaviors, and surface snapping data.
 ### RealityKit and Reality Composer Pro
+- [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
+  Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)
@@ -101,6 +107,8 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
 ### Video playback
 - [Destination Video](destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
+- [Playing immersive media with RealityKit](playing-immersive-media-with-realitykit.md)
+  Create an immersive video playback experience with RealityKit.
 - [Creating a multiview video playback experience in visionOS](../AVKit/creating-a-multiview-video-playback-experience-in-visionos.md)
   Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
 - [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md)
@@ -114,8 +122,8 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
 - [Trimming and exporting media in visionOS](../AVKit/trimming-and-exporting-media-in-visionos.md)
   Display standard controls in your app to edit the timeline of the currently playing media.
 ### Xcode and Simulator
-- [Configuring your app icon](../Xcode/configuring-your-app-icon.md)
-  Add app icon variations to represent your app in places such as Settings, search results, and the App Store.
+- [Configuring your app icon using an asset catalog](../Xcode/configuring-your-app-icon.md)
+  Add app icon variations to an asset catalog that represents your app in places such as the App Store, the Home Screen, Settings, and search results.
 - [Diagnosing and resolving bugs in your running app](../Xcode/diagnosing-and-resolving-bugs-in-your-running-app.md)
   Inspect your app to isolate bugs, locate crashes, identify excess system-resource usage, visualize memory bugs, and investigate problems in its appearance.
 - [Diagnosing issues in the appearance of a running app](../Xcode/diagnosing-issues-in-the-appearance-of-your-running-app.md)

@@ -1,6 +1,6 @@
 # lineCap
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A string specifying the type of end cap to put on lines to be drawn using `lineTo()`.

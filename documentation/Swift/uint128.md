@@ -64,6 +64,7 @@ struct UInt128
 - [LosslessStringConvertible](losslessstringconvertible.md)
 - [Numeric](numeric.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Strideable](strideable.md)
 - [UnsignedInteger](unsignedinteger.md)
 

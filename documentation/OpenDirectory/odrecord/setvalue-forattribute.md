@@ -1,6 +1,6 @@
 # setValue(_:forAttribute:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Sets the values of an attribute of the record.

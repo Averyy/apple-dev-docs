@@ -8,10 +8,10 @@ An interface to express that a custom type has a predefined, static set of valid
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -23,8 +23,8 @@ protocol AppEnum : AppValue, StaticDisplayRepresentable, RawRepresentable where 
 ## Mentions
 
 - [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
-- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
 - [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
+- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
 - [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
 
 #### Overview
@@ -50,6 +50,7 @@ Because this type conforms to the [`StaticDisplayRepresentable`](staticdisplayre
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StaticDisplayRepresentable](staticdisplayrepresentable.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 ### Inherited By

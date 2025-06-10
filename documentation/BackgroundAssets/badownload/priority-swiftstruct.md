@@ -46,6 +46,7 @@ Use [`BADownload.Priority`](badownload/priority-swift.struct.md) to assign an ap
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

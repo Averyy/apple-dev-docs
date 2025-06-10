@@ -11,6 +11,7 @@ A constant that provides the URL string you use to deep link to your app’s not
 - Mac Catalyst 15.4+
 - tvOS 15.4+
 - visionOS 1.0+
+- watchOS 8.5+
 
 ## Declaration
 

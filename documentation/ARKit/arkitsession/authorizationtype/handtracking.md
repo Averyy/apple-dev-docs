@@ -6,6 +6,7 @@
 The authorization for access to detailed hand-tracking data.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

@@ -25,8 +25,6 @@ class CAMetalDisplayLink
 
 > 💡 **Tip**:  When working with less visually intensive apps or apps which don’t use Metal, use [`CADisplayLink`](cadisplaylink.md) to handle variable refresh rates.
 
- When working with less visually intensive apps or apps which don’t use Metal, use [`CADisplayLink`](cadisplaylink.md) to handle variable refresh rates.
-
 Your app initializes a new Metal display link by providing a target [`CAMetalLayer`](cametallayer.md). Set this instance’s [`delegate`](cametaldisplaylink/delegate.md) property to an implementation that encodes the rendering work for Metal to perform. With a set delegate, synchronize the display with a run loop to perform rendering on by calling the [`add(to:forMode:)`](cametaldisplaylink/add(to:formode:).md) method.
 
 Once you associate the display link with a run loop, the system calls the delegate’s [`metalDisplayLink(_:needsUpdate:)`](cametaldisplaylinkdelegate/metaldisplaylink(_:needsupdate:).md) method to request new frames. This method receives update requests based on the [`preferredFrameRateRange`](cametaldisplaylink/preferredframeraterange.md) and [`preferredFrameLatency`](cametaldisplaylink/preferredframelatency.md) of the display link. The system makes a best effort to make callbacks at appropriate times. Your app should complete any commits to the Metal device’s [`MTLCommandQueue`](https://developer.apple.com/documentation/Metal/MTLCommandQueue) for rendering the display layer before calling [`present()`](https://developer.apple.com/documentation/Metal/MTLDrawable/present()) on a drawable element.

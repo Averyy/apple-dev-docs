@@ -1,6 +1,6 @@
 # ONE_MINUS_CONSTANT_ALPHA
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

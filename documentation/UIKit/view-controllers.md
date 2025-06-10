@@ -51,6 +51,7 @@ UIKit provides several standard view controllers for navigation and managing spe
   An object that describes an item in a tab bar.
 - [class UITab](uitab.md)
   An object that manages a tab in a tab bar.
+- [class UITabAccessory](uitabaccessory.md)
 - [class UISearchTab](uisearchtab.md)
   A tab subclass that represents the system’s search tab.
 - [class UITabGroup](uitabgroup.md)
@@ -132,6 +133,8 @@ UIKit provides several standard view controllers for navigation and managing spe
 ### Word lookup
 - [class UIReferenceLibraryViewController](uireferencelibraryviewcontroller.md)
   A view controller that displays a standard interface for looking up the definition of a word or term.
+### Text formatting
+- [class UITextFormattingViewController](uitextformattingviewcontroller.md)
 ### Printer picker
 - [class UIPrinterPickerController](uiprinterpickercontroller.md)
   A view controller that displays the standard interface for selecting a printer.
@@ -161,7 +164,7 @@ UIKit provides several standard view controllers for navigation and managing spe
 - [View layout](view-layout.md)
   Use stack views to lay out the views of your interface automatically. Use Auto Layout when you require precise placement of your views.
 - [Appearance customization](appearance-customization.md)
-  Add Dark Mode support to your app, customize the appearance of bars, and use appearance proxies to modify your UI.
+  Apply Liquid Glass to views, support Dark Mode in your app, customize the appearance of bars, and use appearance proxies to modify your UI.
 - [Animation and haptics](animation-and-haptics.md)
   Provide feedback to users using view-based animations and haptics.
 - [Windows and screens](windows-and-screens.md)

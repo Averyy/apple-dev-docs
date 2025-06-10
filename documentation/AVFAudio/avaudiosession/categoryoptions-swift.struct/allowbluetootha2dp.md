@@ -1,6 +1,6 @@
 # allowBluetoothA2DP
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: property
 
 An option that determines whether you can stream audio from this session to Bluetooth devices that support the Advanced Audio Distribution Profile (A2DP).

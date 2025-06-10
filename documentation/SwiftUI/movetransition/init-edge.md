@@ -17,8 +17,7 @@ Creates a transition that moves the view away, towards the specified edge of the
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init(edge: Edge)
+init(edge: Edge)
 ```
 
 ## See Also

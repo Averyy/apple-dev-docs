@@ -43,9 +43,12 @@ struct Angle
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Comparable](../Swift/Comparable.md)
 - [Copyable](../Swift/Copyable.md)
+- [Decodable](../Swift/Decodable.md)
+- [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -57,6 +60,11 @@ struct Angle
   A normalized 3D point in a view’s coordinate space.
 - [struct Anchor](anchor.md)
   An opaque value derived from an anchor source and a particular view.
+- [protocol DepthAlignmentID](depthalignmentid.md)
+- [struct Alignment3D](alignment3d.md)
+  An alignment in all three axes.
+- [struct GeometryProxyCoordinateSpace3D](geometryproxycoordinatespace3d.md)
+  A representation of a `GeometryProxy3D` which can be used for `CoordinateSpace3D` based conversions.
 
 
 ---

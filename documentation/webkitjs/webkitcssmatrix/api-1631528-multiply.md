@@ -1,6 +1,6 @@
 # multiply
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Returns the result of multiplying this matrix by a given matrix that is on the right.

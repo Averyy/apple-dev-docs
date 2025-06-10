@@ -23,6 +23,7 @@ For more information about reviews, see [`Ratings, Reviews, and Responses`](http
   Get the response to a specific customer review.
 - [Read Customer Review Response Information](get-v1-customerreviewresponses-_id_.md)
   Get information about a specific response you wrote to a customer review, including the response content and its state.
+- [GET /v1/customerReviews/{id}/relationships/response](get-v1-customerreviews-_id_-relationships-response.md)
 ### Creating, Updating, and Deleting Review Responses
 - [Create or Update a Response to a Customer Review](post-v1-customerreviewresponses.md)
   Create a response or replace an existing response you wrote to a customer review.
@@ -37,6 +38,8 @@ For more information about reviews, see [`Ratings, Reviews, and Responses`](http
   The request body to use to create a response to a customer review.
 - [object CustomerReview](customerreview.md)
   The data structure that represents a Customer Reviews resource.
+- [object AppCustomerReviewsLinkagesResponse](appcustomerreviewslinkagesresponse.md)
+- [object CustomerReviewResponseLinkageResponse](customerreviewresponselinkageresponse.md)
 
 ## See Also
 

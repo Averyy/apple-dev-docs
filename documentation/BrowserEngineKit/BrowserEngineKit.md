@@ -97,7 +97,7 @@ For information on installing alternative app marketplaces from their company we
 ### Just-in-time code compilation
 - [Protecting code compiled just in time](protecting-code-compiled-just-in-time.md)
   Toggle memory between being writable and executable.
-- [Improving control flow integrity with pointer authentication](improving-control-flow-integrity-with-pointer-authentication.md)
+- [Improving control flow integrity with pointer authentication](../Apple-Silicon/improving-control-flow-integrity-with-pointer-authentication.md)
   Increase confidence that your code uses pointers correctly.
 - [var BE_JIT_WRITE_PROTECT_TAG: Int { get }](../BrowserEngineCore/BE_JIT_WRITE_PROTECT_TAG.md)
   A discriminator value the system uses to generate pointer authentication codes for just-in-time compilation.
@@ -109,6 +109,8 @@ For information on installing alternative app marketplaces from their company we
 ### Classes
 - [class BEMediaEnvironment](bemediaenvironment-15xci.md)
 - [class BEProcessCapability](beprocesscapability-76ijx.md)
+### Protocols
+- [protocol BEExtensionProcess](beextensionprocess.md)
 ### Structures
 - [struct BEAccessibility](beaccessibility.md)
 

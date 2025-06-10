@@ -8,6 +8,7 @@ Creates an instance of a translation response.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.0+
 
 ## Declaration

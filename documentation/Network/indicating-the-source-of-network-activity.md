@@ -37,7 +37,7 @@ To reclassify an access as user-initiated, use API at the same layer of the prot
 
 ##### Attribute Url Loading System Connections
 
-To mark a connection as user-initiated when using the [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system), create an explicit [`URLRequest`](https://developer.apple.com/documentation/Foundation/URLRequest) and set its [`attribution`](https://developer.apple.com/documentation/foundation/urlrequest/3767318-attribution) property to [`NSURLRequest.Attribution.user`](https://developer.apple.com/documentation/foundation/nsurlrequest/attribution/user) before calling one of the [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) methods that takes a request, like [`data(for:delegate:)`](https://developer.apple.com/documentation/foundation/urlsession/3767352-data):
+To mark a connection as user-initiated when using the [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system), create an explicit [`URLRequest`](https://developer.apple.com/documentation/Foundation/URLRequest) and set its [`attribution`](https://developer.apple.com/documentation/Foundation/URLRequest/attribution-swift.property) property to [`NSURLRequest.Attribution.user`](https://developer.apple.com/documentation/Foundation/NSURLRequest/Attribution-swift.enum/user) before calling one of the [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) methods that takes a request, like [`data(for:delegate:)`](https://developer.apple.com/documentation/Foundation/URLSession/data(for:delegate:)):
 
 ```swift
 import Foundation

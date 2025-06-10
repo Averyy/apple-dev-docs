@@ -1,6 +1,6 @@
 # vmnet_return_t.VMNET_BUFFER_EXHAUSTED
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: case
 
 **Availability**:

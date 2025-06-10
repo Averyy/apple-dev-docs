@@ -10,6 +10,7 @@ A component that defines the reverberation of spatial audio sources.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -64,23 +65,12 @@ When your app is in a Shared Space [`WindowGroup`](https://developer.apple.com/d
 
 ## Topics
 
-### Operators
-- [static func == (ReverbComponent, ReverbComponent) -> Bool](reverbcomponent/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(reverb: Reverb)](reverbcomponent/init(reverb:).md)
   Creates a component from a reverberation setting.
 ### Instance Properties
-- [var hashValue: Int](reverbcomponent/hashvalue.md)
-  The hash value.
 - [var reverb: Reverb](reverbcomponent/reverb.md)
   A reverberation setting the component applies to spatial audio.
-### Instance Methods
-- [func hash(into: inout Hasher)](reverbcomponent/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Component Implementations](reverbcomponent/component-implementations.md)
-- [Equatable Implementations](reverbcomponent/equatable-implementations.md)
 
 ## Relationships
 
@@ -89,6 +79,7 @@ When your app is in a Shared Space [`WindowGroup`](https://developer.apple.com/d
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

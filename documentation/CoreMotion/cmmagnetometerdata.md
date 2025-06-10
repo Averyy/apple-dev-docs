@@ -1,6 +1,6 @@
 # CMMagnetometerData
 
-**Framework**: Coremotion  
+**Framework**: Core Motion  
 **Kind**: class
 
 Measurements of the Earth’s magnetic field relative to the device.
@@ -50,4 +50,4 @@ Your application can obtain samples of magnetometer measurements, as represented
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreMotion/cmmagnetometerdata)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coremotion/cmmagnetometerdata)*

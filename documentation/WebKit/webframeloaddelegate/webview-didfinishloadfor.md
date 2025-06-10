@@ -1,6 +1,6 @@
 # webView(_:didFinishLoadFor:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when a page load completes.

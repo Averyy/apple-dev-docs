@@ -68,6 +68,7 @@ After the request detects a trajectory, it produces a collection of [`Trajectory
 - [Hashable](../Swift/Hashable.md)
 - [ImageProcessingRequest](imageprocessingrequest.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StatefulRequest](statefulrequest.md)
 - [VisionRequest](visionrequest.md)
 

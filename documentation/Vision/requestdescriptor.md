@@ -24,6 +24,8 @@ enum RequestDescriptor
 ### Getting the still-image descriptor
 - [case classifyImageRequest(ClassifyImageRequest.Revision)](requestdescriptor/classifyimagerequest(_:).md)
   A descriptor that describes a classify image request.
+- [case detectLensSmudgeRequest(DetectLensSmudgeRequest.Revision)](requestdescriptor/detectlenssmudgerequest(_:).md)
+  A descriptor that describes a detect lens smudge request.
 ### Getting the image sequence descriptor
 - [case detectDocumentSegmentationRequest(DetectDocumentSegmentationRequest.Revision)](requestdescriptor/detectdocumentsegmentationrequest(_:).md)
   A descriptor that describes a detect document segmentation request.
@@ -96,6 +98,8 @@ enum RequestDescriptor
 ### Getting the machine learning image-analysis descriptor
 - [case coreMLRequest(CoreMLRequest.Revision)](requestdescriptor/coremlrequest(_:).md)
   A descriptor that describes a Core ML request.
+### Enumeration Cases
+- [case recognizeDocumentsRequest(RecognizeDocumentsRequest.Revision)](requestdescriptor/recognizedocumentsrequest(_:).md)
 
 ## Relationships
 
@@ -106,6 +110,7 @@ enum RequestDescriptor
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

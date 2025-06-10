@@ -14,7 +14,6 @@ A string of plain text.
 ## Declaration
 
 ```swift
-@MainActor
 var text: String? { get set }
 ```
 

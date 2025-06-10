@@ -1,6 +1,6 @@
 # XCUIScreenshotProviding
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: protocol
 
 A type that can provide a screenshot of its current UI state.

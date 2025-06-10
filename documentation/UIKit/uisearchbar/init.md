@@ -9,6 +9,7 @@ Initializes the search bar to its default state.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
+- tvOS ?+
 - visionOS 1.0+
 
 ## Declaration

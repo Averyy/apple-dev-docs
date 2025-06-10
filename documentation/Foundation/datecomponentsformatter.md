@@ -30,8 +30,6 @@ The methods of this class may be called safely from any thread of your app. It i
 
 > 💡 **Tip**:  In Swift, you can use [`Date.RelativeFormatStyle`](date/relativeformatstyle.md) rather than [`DateComponentsFormatter`](datecomponentsformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
 
- In Swift, you can use [`Date.RelativeFormatStyle`](date/relativeformatstyle.md) rather than [`DateComponentsFormatter`](datecomponentsformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
-
 ## Topics
 
 ### Formatting Values
@@ -89,6 +87,7 @@ The methods of this class may be called safely from any thread of your app. It i
 - [NSCopying](nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -24,8 +24,6 @@ Set the value to `nil` or the empty string to indicate that there’s no initial
 
 > ❗ **Important**:  The system doesn’t send a change event for an initial coupon code. You must apply the code to the initial payment summary items.
 
- The system doesn’t send a change event for an initial coupon code. You must apply the code to the initial payment summary items.
-
 ## See Also
 
 - [var supportsCouponCode: Bool](pkpaymentrequest/supportscouponcode.md)

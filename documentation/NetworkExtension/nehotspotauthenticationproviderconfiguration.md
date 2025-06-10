@@ -1,0 +1,53 @@
+# NEHotspotAuthenticationProviderConfiguration
+
+**Framework**: Network Extension  
+**Kind**: class
+
+A class that defines configuration options for use in NetworkExtension authentication providers.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+@MainActor
+@preconcurrency class NEHotspotAuthenticationProviderConfiguration
+```
+
+## Topics
+
+### Initializers
+- [init(appex: any NEHotspotAuthenticationProvider)](nehotspotauthenticationproviderconfiguration/init(appex:).md)
+  Creates a configuration for a given app extension.
+
+## Relationships
+
+### Inherits From
+- [NEAppExtensionConfiguration](neappextensionconfiguration.md)
+### Conforms To
+- [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
+- [NEAppExtensionConfigurationProtocol](neappextensionconfigurationprotocol.md)
+- [NEAppExtensionXPCProtocol](neappextensionxpcprotocol.md)
+- [NEHotspotAuthenticationProviderXPCProtocol](nehotspotauthenticationproviderxpcprotocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [class NEHotspotManager](nehotspotmanager.md)
+  A class that you use to enable or disable the hotspot evaluation and authentication provider extensions.
+- [protocol NEHotspotEvaluationProvider](nehotspotevaluationprovider.md)
+  A protocol that defines methods and properties your extension implements to handle evaluate and filter scan list commands.
+- [protocol NEHotspotAuthenticationProvider](nehotspotauthenticationprovider.md)
+  A protocol that defines methods that your extension adopts to start and stop the extension, and to handle commands to authenticate with the hotspot network.
+- [class NEHotspotEvaluationProviderConfiguration](nehotspotevaluationproviderconfiguration.md)
+  A class that defines configuration options for use in NetworkExtension evaluation providers.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/nehotspotauthenticationproviderconfiguration)*

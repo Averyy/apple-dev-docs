@@ -8,8 +8,6 @@ Locate performance issues using the Performance timeline.
 
 > ❗ **Important**: The Performance timeline feature is only applicable to Apple GPUs. For other GPU architectures, see [`Analyzing non-Apple GPU performance using counter statistics`](analyzing-non-apple-gpu-performance-using-counter-statistics.md).
 
-The Performance timeline feature is only applicable to Apple GPUs. For other GPU architectures, see [`Analyzing non-Apple GPU performance using counter statistics`](analyzing-non-apple-gpu-performance-using-counter-statistics.md).
-
 Apple GPUs run vertex, fragment, and compute tasks in parallel whenever possible. To explore the parallel nature of Apple GPUs, the Performance timeline helps you visualize the various passes and stages running simultaneously.
 
 ![A screenshot of the Performance timeline, showing the Vertex, Fragment, Compute, and Counters tracks. A render pass is selected and the sidebar displays its detailed information.](https://docs-assets.developer.apple.com/published/0c68d41eacfe7d23f49a088caad5268f/gputools-metal-debugger-gt-overview%402x.png)

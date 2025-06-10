@@ -1,6 +1,6 @@
 # hidVirtualDevice(_:receivedSetReportRequestOfType:id:data:)
 
-**Framework**: Corehid  
+**Framework**: Core HID  
 **Kind**: method  
 **Required**: Yes
 

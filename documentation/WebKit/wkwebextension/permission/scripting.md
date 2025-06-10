@@ -1,6 +1,6 @@
 # scripting
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A request for access to the `browser.scripting` APIs.

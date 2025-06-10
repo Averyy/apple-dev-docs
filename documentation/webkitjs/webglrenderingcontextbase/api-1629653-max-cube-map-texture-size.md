@@ -1,6 +1,6 @@
 # MAX_CUBE_MAP_TEXTURE_SIZE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

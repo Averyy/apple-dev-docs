@@ -1,744 +1,1033 @@
 {
   "metadata": {
-    "last_updated": "2025-06-07T15:44:06.626152",
+    "last_updated": "2025-06-10T21:56:20.726796",
     "total_pages": 128,
-    "etags_collected": "2025-06-07T15:44:06.626161"
+    "session_id": "2025-06-10T21:56:11.759386"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth.json": {
-      "hash": "7c51e001569f183f6387480ffd67953baa68f7eb870cc7f55e435b5a2fcff88b",
-      "last_checked": "2025-06-06T05:51:09.097232",
-      "status": "unchanged",
-      "etag": "W/\"f2843f5b7bf1013dab05e0b1974e418e\""
+      "hash": "2da49a21e2102c0e39f44263e06b3806669de699995b90b5907ab834cd1feaa9",
+      "last_checked": "2025-06-10T21:56:12.225124",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"dd1f385c5f28c91dc8ba531590c1ba0a\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetooth.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth": {
-      "hash": "7c51e001569f183f6387480ffd67953baa68f7eb870cc7f55e435b5a2fcff88b",
-      "last_checked": "2025-06-06T05:51:09.097232",
-      "status": "unchanged",
-      "etag": "2fb69706dd7833bc51285259c8869059"
+      "hash": "2da49a21e2102c0e39f44263e06b3806669de699995b90b5907ab834cd1feaa9",
+      "last_checked": "2025-06-10T21:56:12.029763",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"dd1f385c5f28c91dc8ba531590c1ba0a\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetooth.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/connecting_to_bluetooth_peripherals_in_swift_playgrounds.json": {
-      "hash": "63a9f803cc4ef490cf999e01a378772e5714ae95b4f8f1fd25f8da5dae77434f",
-      "last_checked": "2025-06-06T05:51:09.968619",
-      "status": "unchanged",
-      "etag": "W/\"3f80cab2df0651d8ae374e3f99bbb01e\""
+      "hash": "2abe2c49f709c60a4b1f9e20ecb5b3d016bb3ff608721f4f431792e413ebcded",
+      "last_checked": "2025-06-10T21:56:12.700780",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"31446647a79e40ddb72d50ff552dbe75\"",
+      "file_path": "documentation/playgroundbluetooth/connecting-to-bluetooth-peripherals-in-swift-playgrounds.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/connecting_to_bluetooth_peripherals_in_swift_playgrounds": {
-      "hash": "63a9f803cc4ef490cf999e01a378772e5714ae95b4f8f1fd25f8da5dae77434f",
-      "last_checked": "2025-06-06T05:51:09.968619",
-      "status": "unchanged",
-      "etag": "ccfa59376a87f1d05996d2de9b5d1233"
+      "hash": "2abe2c49f709c60a4b1f9e20ecb5b3d016bb3ff608721f4f431792e413ebcded",
+      "last_checked": "2025-06-10T21:56:12.700823",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"31446647a79e40ddb72d50ff552dbe75\"",
+      "file_path": "documentation/playgroundbluetooth/connecting-to-bluetooth-peripherals-in-swift-playgrounds.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager.json": {
-      "hash": "76421b92d2a444e34993b5e53dae73ff732d3d329c0553ae1884a286a39377b5",
-      "last_checked": "2025-06-06T05:51:10.352677",
-      "status": "unchanged",
-      "etag": "W/\"1153ff00b6f2ac23b18f31719f2ac927\""
+      "hash": "2f0a1d01704844eb63d021bab9af8f58c340065b0fece5aecdbc244038036b49",
+      "last_checked": "2025-06-10T21:56:12.837122",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"6a26e981d583e0d2914886024891b150\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager": {
-      "hash": "76421b92d2a444e34993b5e53dae73ff732d3d329c0553ae1884a286a39377b5",
-      "last_checked": "2025-06-06T05:51:10.352677",
-      "status": "unchanged",
-      "etag": "84c825129962e3a5d31023c43780ffba"
+      "hash": "2f0a1d01704844eb63d021bab9af8f58c340065b0fece5aecdbc244038036b49",
+      "last_checked": "2025-06-10T21:56:12.837159",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"6a26e981d583e0d2914886024891b150\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate.json": {
-      "hash": "4dff2811ff699a1eb8607c8b92f2dface2fe2897a0bc09cd941850f65e3c3432",
-      "last_checked": "2025-06-06T05:51:10.730791",
-      "status": "unchanged",
-      "etag": "W/\"271a0246fc3ac2c9bc22350b593d9af8\""
+      "hash": "f1d494a5eadd727d8a8edf03a41683294642b6684cb8bf186d17ab77e585583d",
+      "last_checked": "2025-06-10T21:56:12.975275",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"08efbfa21dbc56ab4aaa4889f3a584dd\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate": {
-      "hash": "4dff2811ff699a1eb8607c8b92f2dface2fe2897a0bc09cd941850f65e3c3432",
-      "last_checked": "2025-06-06T05:51:10.730791",
-      "status": "unchanged",
-      "etag": "164aa6c8228e5faf985fa6a3263a0353"
+      "hash": "f1d494a5eadd727d8a8edf03a41683294642b6684cb8bf186d17ab77e585583d",
+      "last_checked": "2025-06-10T21:56:12.975315",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"08efbfa21dbc56ab4aaa4889f3a584dd\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview.json": {
-      "hash": "f328e9a63d4e20d0543de7a62935881bbea1f179ca31da9ab94e66f742e6fb2d",
-      "last_checked": "2025-06-06T05:51:11.144030",
-      "status": "unchanged",
-      "etag": "W/\"ee3028870f79a2d92eaf60fdfa248c3a\""
+      "hash": "ee249a024bee1b10adbbd11d20b726c6d88d0ac8e8cac4d62bb6b5b6eb8803f3",
+      "last_checked": "2025-06-10T21:56:13.106985",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"1eb5422b32006fc091bb0490e1dd773f\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview": {
-      "hash": "f328e9a63d4e20d0543de7a62935881bbea1f179ca31da9ab94e66f742e6fb2d",
-      "last_checked": "2025-06-06T05:51:11.144030",
-      "status": "unchanged",
-      "etag": "b92a0d001889a11dd9159297f535e9d8"
+      "hash": "ee249a024bee1b10adbbd11d20b726c6d88d0ac8e8cac4d62bb6b5b6eb8803f3",
+      "last_checked": "2025-06-10T21:56:13.107028",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"1eb5422b32006fc091bb0490e1dd773f\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate.json": {
-      "hash": "0ac9766507992adc2424c564eff1e1cb8c3fa1b7af7d48e0cf940e6948cb9fdc",
-      "last_checked": "2025-06-06T05:51:11.501848",
-      "status": "unchanged",
-      "etag": "W/\"184cba1009a2f20303724e2174f38816\""
+      "hash": "6c717c4dae630b256a55b5ed30399612162c6488cc6cbff5f167eedeae9ecc15",
+      "last_checked": "2025-06-10T21:56:13.201905",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"5fb6a6b7c39d6ea7e90cfa614536df9b\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate": {
-      "hash": "0ac9766507992adc2424c564eff1e1cb8c3fa1b7af7d48e0cf940e6948cb9fdc",
-      "last_checked": "2025-06-06T05:51:11.501848",
-      "status": "unchanged",
-      "etag": "65d5fd74baebb5a11720d571c296481d"
+      "hash": "6c717c4dae630b256a55b5ed30399612162c6488cc6cbff5f167eedeae9ecc15",
+      "last_checked": "2025-06-10T21:56:13.201951",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"5fb6a6b7c39d6ea7e90cfa614536df9b\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdatasource.json": {
-      "hash": "cde5a8393b38011663efc17e803bc7a0c2865694ff303e94711bafb3e5bf69fb",
-      "last_checked": "2025-06-06T05:51:11.902332",
-      "status": "unchanged",
-      "etag": "W/\"b0cc7bdb591c0707669cd9fe44a1cfb3\""
+      "hash": "aa7de2db26372b7dc5e7f39824bfbe6d85c9ffecea3b7cefb5ff8a5ee8d90b57",
+      "last_checked": "2025-06-10T21:56:13.312588",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"225019d96d4f011f6e7721f35cf6aad9\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdatasource.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdatasource": {
-      "hash": "cde5a8393b38011663efc17e803bc7a0c2865694ff303e94711bafb3e5bf69fb",
-      "last_checked": "2025-06-06T05:51:11.902332",
-      "status": "unchanged",
-      "etag": "559fc16145eecc9849ade02582069991"
+      "hash": "aa7de2db26372b7dc5e7f39824bfbe6d85c9ffecea3b7cefb5ff8a5ee8d90b57",
+      "last_checked": "2025-06-10T21:56:13.312639",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"225019d96d4f011f6e7721f35cf6aad9\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdatasource.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029470-init.json": {
-      "hash": "0e28a982882d7c61e16ee2aa6b4b415c5d82d38fe29d8e9deebd90f0c8e1c4a8",
-      "last_checked": "2025-06-06T05:51:12.304212",
-      "status": "unchanged",
-      "etag": "W/\"d68bfde46710940d169bd8a296153fa9\""
+      "hash": "46ef9b19c19c01ed7fb1eb74457045f86ff368ec209b8b0a43cc52fa5598fd10",
+      "last_checked": "2025-06-10T21:56:13.437671",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"5fd72182da5293d39378b5f9aeed9324\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029470-init.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029470-init": {
-      "hash": "0e28a982882d7c61e16ee2aa6b4b415c5d82d38fe29d8e9deebd90f0c8e1c4a8",
-      "last_checked": "2025-06-06T05:51:12.304212",
-      "status": "unchanged",
-      "etag": "2b653074549a771db3d1bb63f78ba9da"
+      "hash": "46ef9b19c19c01ed7fb1eb74457045f86ff368ec209b8b0a43cc52fa5598fd10",
+      "last_checked": "2025-06-10T21:56:13.437746",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"5fd72182da5293d39378b5f9aeed9324\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029470-init.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029468-delegate.json": {
-      "hash": "1c4f1c9d8007dd35afd98d1c0e1b564a2969d8901722db939c4c7a5b5b239623",
-      "last_checked": "2025-06-06T05:51:12.707677",
-      "status": "unchanged",
-      "etag": "W/\"2059ec7cf59fd469c5c9e25fb5ee0579\""
+      "hash": "a6e2ed535bd6c344bcb882f8006b989d79d40a36ae8de826bd9f7dc96ca7aa47",
+      "last_checked": "2025-06-10T21:56:13.573860",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"358b3de083d6b98971147c38f9e05e71\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029468-delegate.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029468-delegate": {
-      "hash": "1c4f1c9d8007dd35afd98d1c0e1b564a2969d8901722db939c4c7a5b5b239623",
-      "last_checked": "2025-06-06T05:51:12.707677",
-      "status": "unchanged",
-      "etag": "2c3b29902c16e311f053049bb1741214"
+      "hash": "a6e2ed535bd6c344bcb882f8006b989d79d40a36ae8de826bd9f7dc96ca7aa47",
+      "last_checked": "2025-06-10T21:56:13.573906",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"358b3de083d6b98971147c38f9e05e71\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029468-delegate.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029471-scanning.json": {
-      "hash": "2fc326420c0187a7a4987e99a4f14dc708633e1b7286cc7ba82e10c95e43333b",
-      "last_checked": "2025-06-06T05:51:13.109882",
-      "status": "unchanged",
-      "etag": "W/\"c1c25302f42045078c5a25d635b99b0f\""
+      "hash": "0ab6cbe9f8d792380e1d69b30dec726c8e35149b9c7048af985303f49482a192",
+      "last_checked": "2025-06-10T21:56:13.704436",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"3fc938c2f049f40c4dd971b364fbcc40\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029471-scanning.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029471-scanning": {
-      "hash": "2fc326420c0187a7a4987e99a4f14dc708633e1b7286cc7ba82e10c95e43333b",
-      "last_checked": "2025-06-06T05:51:13.109882",
-      "status": "unchanged",
-      "etag": "b8e5dc4e8dbe92905ad6acb0ed394c3a"
+      "hash": "0ab6cbe9f8d792380e1d69b30dec726c8e35149b9c7048af985303f49482a192",
+      "last_checked": "2025-06-10T21:56:13.704475",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"3fc938c2f049f40c4dd971b364fbcc40\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029471-scanning.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029464-connect.json": {
-      "hash": "80cea74d664d94f6f65aaaacdac027de4582e3038731326af5383c5f80ab4681",
-      "last_checked": "2025-06-06T05:51:13.497066",
-      "status": "unchanged",
-      "etag": "W/\"f11cf214b518e2e2679386145269d55e\""
+      "hash": "2390c6eee87c7ba7c4647271ea4080483e72f6c9e8e371d527bbb8a93f5c690a",
+      "last_checked": "2025-06-10T21:56:13.824601",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"168cff8d081a858370ffc43bb4e6d9d3\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029464-connect.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029464-connect": {
-      "hash": "80cea74d664d94f6f65aaaacdac027de4582e3038731326af5383c5f80ab4681",
-      "last_checked": "2025-06-06T05:51:13.497066",
-      "status": "unchanged",
-      "etag": "a2646bf9e66c778fdfe245b45393e3a5"
+      "hash": "2390c6eee87c7ba7c4647271ea4080483e72f6c9e8e371d527bbb8a93f5c690a",
+      "last_checked": "2025-06-10T21:56:13.824638",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"168cff8d081a858370ffc43bb4e6d9d3\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029464-connect.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029465-connect.json": {
-      "hash": "87311b24dc4700e2188df1293b0c0a83d6d7f7c224ae62fff2eefa11d3e97b83",
-      "last_checked": "2025-06-06T05:51:13.896265",
-      "status": "unchanged",
-      "etag": "W/\"2792417bd837bb30402ab03dd4945ed4\""
+      "hash": "30d1726abfffbddfacf692667950e4fa1c5c8125fe9fcb70fa9c3125ed0fc87c",
+      "last_checked": "2025-06-10T21:56:13.946388",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"23e0ed3e97f3272b6c4b93999226f298\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029465-connect.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029465-connect": {
-      "hash": "87311b24dc4700e2188df1293b0c0a83d6d7f7c224ae62fff2eefa11d3e97b83",
-      "last_checked": "2025-06-06T05:51:13.896265",
-      "status": "unchanged",
-      "etag": "03e54e276dd9218d120f32202088f163"
+      "hash": "30d1726abfffbddfacf692667950e4fa1c5c8125fe9fcb70fa9c3125ed0fc87c",
+      "last_checked": "2025-06-10T21:56:13.946423",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"23e0ed3e97f3272b6c4b93999226f298\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029465-connect.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029466-connecttolastconnectedperipheral.json": {
-      "hash": "c8679debfa7ef27e33533ddc3f6102fb232f8ca626ece80df8703a4864d3a4ab",
-      "last_checked": "2025-06-06T05:51:14.312414",
-      "status": "unchanged",
-      "etag": "W/\"d7eac443b53c77b920d1f1d59e9878cd\""
+      "hash": "f475f65310f1b9704f9e97e8b1dcf09ae6a5b293ee894daa07ed40d5b2395323",
+      "last_checked": "2025-06-10T21:56:14.038859",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"460abe895e0e7e5489f2d0b2099e0b4f\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029466-connecttolastconnectedperipheral.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029466-connecttolastconnectedperipheral": {
-      "hash": "c8679debfa7ef27e33533ddc3f6102fb232f8ca626ece80df8703a4864d3a4ab",
-      "last_checked": "2025-06-06T05:51:14.312414",
-      "status": "unchanged",
-      "etag": "1e43ff3998037a541d9d43d766b78d18"
+      "hash": "f475f65310f1b9704f9e97e8b1dcf09ae6a5b293ee894daa07ed40d5b2395323",
+      "last_checked": "2025-06-10T21:56:14.038899",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"460abe895e0e7e5489f2d0b2099e0b4f\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029466-connecttolastconnectedperipheral.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror.json": {
-      "hash": "91b5c865ce3dc18c4fed66d735708b78cb01701454c2a184b625e74336a79f50",
-      "last_checked": "2025-06-06T05:51:14.709127",
-      "status": "unchanged",
-      "etag": "W/\"00f4a450a5ea6ff2ce9053344fd455bb\""
+      "hash": "2a70aacada9d0939dcbc6f0497d61d8dc0bd7a82902adca0d0b36d4835681279",
+      "last_checked": "2025-06-10T21:56:14.203779",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"5872ff961c98842f9facb963c92f2a40\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror": {
-      "hash": "91b5c865ce3dc18c4fed66d735708b78cb01701454c2a184b625e74336a79f50",
-      "last_checked": "2025-06-06T05:51:14.709127",
-      "status": "unchanged",
-      "etag": "25b81f607693abc3c70bd3b29555ab50"
+      "hash": "2a70aacada9d0939dcbc6f0497d61d8dc0bd7a82902adca0d0b36d4835681279",
+      "last_checked": "2025-06-10T21:56:14.203825",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"5872ff961c98842f9facb963c92f2a40\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029469-disconnect.json": {
-      "hash": "7cb93bfefc1553700b18b92c74ab36555d5587cb690fe708163709e851bc37cd",
-      "last_checked": "2025-06-06T05:51:15.090067",
-      "status": "unchanged",
-      "etag": "W/\"8d9da7994984f0c1f9006da6a99982fe\""
+      "hash": "042cf43569a6fbac04386b78f82402883b6ad2a44f04efca681d657a5c8b0ff7",
+      "last_checked": "2025-06-10T21:56:14.292986",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"68bd89956ca85331827cf9a35ece8965\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029469-disconnect.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029469-disconnect": {
-      "hash": "7cb93bfefc1553700b18b92c74ab36555d5587cb690fe708163709e851bc37cd",
-      "last_checked": "2025-06-06T05:51:15.090067",
-      "status": "unchanged",
-      "etag": "cfd0c07253d612ed8992a86a0b493836"
+      "hash": "042cf43569a6fbac04386b78f82402883b6ad2a44f04efca681d657a5c8b0ff7",
+      "last_checked": "2025-06-10T21:56:14.293024",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"68bd89956ca85331827cf9a35ece8965\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029469-disconnect.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029467-connectedperipherals.json": {
-      "hash": "cad6da98977014563d39a4f48f609bd84507eee315dcff02d17ed8ca551f6490",
-      "last_checked": "2025-06-06T05:51:15.499988",
-      "status": "unchanged",
-      "etag": "W/\"28631b6100960554490a4353677561c5\""
+      "hash": "1e97ec0c2eb88a5829a127e5c409047645d380b1a26d93e9108db83f6dfbe211",
+      "last_checked": "2025-06-10T21:56:14.473008",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"e38697d261fe39d11560998c37b748a3\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029467-connectedperipherals.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029467-connectedperipherals": {
-      "hash": "cad6da98977014563d39a4f48f609bd84507eee315dcff02d17ed8ca551f6490",
-      "last_checked": "2025-06-06T05:51:15.499988",
-      "status": "unchanged",
-      "etag": "bc6bedd4ad6e48ca18c13e66fcb6bbde"
+      "hash": "1e97ec0c2eb88a5829a127e5c409047645d380b1a26d93e9108db83f6dfbe211",
+      "last_checked": "2025-06-10T21:56:14.473040",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"e38697d261fe39d11560998c37b748a3\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029467-connectedperipherals.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029472-state.json": {
-      "hash": "c690d3d858e261f8fb0f4074f115a2cfda32e510eac956436ffec1034a4b4bbe",
-      "last_checked": "2025-06-06T05:51:15.869114",
-      "status": "unchanged",
-      "etag": "W/\"4dac6c00cf0f3ad6c387fc19b2fa0806\""
+      "hash": "8d5f48f3773a257f6df3e56ac6bac740ca166aff92bf3c6dc3923fa16a40eb15",
+      "last_checked": "2025-06-10T21:56:14.600659",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"8cbd555b333372f4801c458f3dcedfae\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029472-state.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/3029472-state": {
-      "hash": "c690d3d858e261f8fb0f4074f115a2cfda32e510eac956436ffec1034a4b4bbe",
-      "last_checked": "2025-06-06T05:51:15.869114",
-      "status": "unchanged",
-      "etag": "b59982e1cae35d7ba8099e93f9826cfa"
+      "hash": "8d5f48f3773a257f6df3e56ac6bac740ca166aff92bf3c6dc3923fa16a40eb15",
+      "last_checked": "2025-06-10T21:56:14.600712",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"8cbd555b333372f4801c458f3dcedfae\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/api-3029472-state.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/3029478-centralmanager.json": {
-      "hash": "75ce235a3329826a9480d4f427ce860038b10aade441d128b6b9c5fca1d51339",
-      "last_checked": "2025-06-06T05:51:16.255636",
-      "status": "unchanged",
-      "etag": "W/\"2b9b954a2b8b604784c11318ff1a32b9\""
+      "hash": "47af3e2e902ce65b0a23b14fcf06c9e1b6bdf3ebb0859cb2b5f9c22db29410ad",
+      "last_checked": "2025-06-10T21:56:14.711168",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"c7ea554490351cf873bf3204b1773cbf\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/api-3029478-centralmanager.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/3029478-centralmanager": {
-      "hash": "75ce235a3329826a9480d4f427ce860038b10aade441d128b6b9c5fca1d51339",
-      "last_checked": "2025-06-06T05:51:16.255636",
-      "status": "unchanged",
-      "etag": "1ed19e5567cf9fe345e1111908854676"
+      "hash": "47af3e2e902ce65b0a23b14fcf06c9e1b6bdf3ebb0859cb2b5f9c22db29410ad",
+      "last_checked": "2025-06-10T21:56:14.711212",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"c7ea554490351cf873bf3204b1773cbf\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/api-3029478-centralmanager.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/3029482-centralmanager.json": {
-      "hash": "1400bf2329ca5c02aa60066928d5f0e949485725ac7531c15ebfd7f67bcb0e09",
-      "last_checked": "2025-06-06T05:51:16.650233",
-      "status": "unchanged",
-      "etag": "W/\"d071f1dcd6ade7b1390668fe5b79273d\""
+      "hash": "969917fb58ecafdb7a47d21e9f64da06fab65df2b980eefd5d0f615a10cd6cba",
+      "last_checked": "2025-06-10T21:56:14.845184",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"9007eccd87b116eb8b6630b5ab4ba341\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/api-3029482-centralmanager.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/3029482-centralmanager": {
-      "hash": "1400bf2329ca5c02aa60066928d5f0e949485725ac7531c15ebfd7f67bcb0e09",
-      "last_checked": "2025-06-06T05:51:16.650233",
-      "status": "unchanged",
-      "etag": "978d2fcc958fb57830d7400dc45b410c"
+      "hash": "969917fb58ecafdb7a47d21e9f64da06fab65df2b980eefd5d0f615a10cd6cba",
+      "last_checked": "2025-06-10T21:56:14.845224",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"9007eccd87b116eb8b6630b5ab4ba341\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/api-3029482-centralmanager.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/3029474-centralmanager.json": {
-      "hash": "33c4f8368ccf63bf7097f5e7cffae290c561deba7aff88eaed4339209fcd2a92",
-      "last_checked": "2025-06-06T05:51:17.040832",
-      "status": "unchanged",
-      "etag": "W/\"f78bd6cf0e520be2d8bb93b47c2b5027\""
+      "hash": "7f03fb7796d0f10010864ef53fff40e98d947c6722fa099fd560b4b8dfe1a7c1",
+      "last_checked": "2025-06-10T21:56:14.938076",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"31022fb839c0be15eb1f8e0f332b9dfb\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/api-3029474-centralmanager.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/3029474-centralmanager": {
-      "hash": "33c4f8368ccf63bf7097f5e7cffae290c561deba7aff88eaed4339209fcd2a92",
-      "last_checked": "2025-06-06T05:51:17.040832",
-      "status": "unchanged",
-      "etag": "678345dd290aff88f209f45fe00ba146"
+      "hash": "7f03fb7796d0f10010864ef53fff40e98d947c6722fa099fd560b4b8dfe1a7c1",
+      "last_checked": "2025-06-10T21:56:14.938123",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"31022fb839c0be15eb1f8e0f332b9dfb\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/api-3029474-centralmanager.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/3029484-centralmanagerstatedidchange.json": {
-      "hash": "b38d0c2b36a992699b2a39f07629903f1a3a959ca501fe499ef689a306f30475",
-      "last_checked": "2025-06-06T05:51:17.399925",
-      "status": "unchanged",
-      "etag": "W/\"304a44b5ca5422917a9e2f6a9be850d2\""
+      "hash": "90a949f7ba311d6d3938da556aee02fd24c42ff5f3da14e4bc1524e76c2a10d8",
+      "last_checked": "2025-06-10T21:56:15.092794",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"50ca2953ffa9f58c134bfc96a91bf297\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/api-3029484-centralmanagerstatedidchange.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/3029484-centralmanagerstatedidchange": {
-      "hash": "b38d0c2b36a992699b2a39f07629903f1a3a959ca501fe499ef689a306f30475",
-      "last_checked": "2025-06-06T05:51:17.399925",
-      "status": "unchanged",
-      "etag": "f1d51f64e06bb5269ff064e8497de3e0"
+      "hash": "90a949f7ba311d6d3938da556aee02fd24c42ff5f3da14e4bc1524e76c2a10d8",
+      "last_checked": "2025-06-10T21:56:15.092829",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"50ca2953ffa9f58c134bfc96a91bf297\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/api-3029484-centralmanagerstatedidchange.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/3029476-centralmanager.json": {
-      "hash": "f4ffe067c7faf7ba38633e21991d6900a035421bdb1d72635f9fa92591978594",
-      "last_checked": "2025-06-06T05:51:17.821235",
-      "status": "unchanged",
-      "etag": "W/\"35e1b3dbb99cf0a70af349c56936f125\""
+      "hash": "3a70cc08af48a80d0992ed43515f6e5b2e238ac00cc4d6fe0e1666ca3acbc2bd",
+      "last_checked": "2025-06-10T21:56:15.223336",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"03de4b5a6070fcbcc01fc6f82c14c975\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/api-3029476-centralmanager.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/3029476-centralmanager": {
-      "hash": "f4ffe067c7faf7ba38633e21991d6900a035421bdb1d72635f9fa92591978594",
-      "last_checked": "2025-06-06T05:51:17.821235",
-      "status": "unchanged",
-      "etag": "9a8d3704d8afc409c7c0bacabd5ec90e"
+      "hash": "3a70cc08af48a80d0992ed43515f6e5b2e238ac00cc4d6fe0e1666ca3acbc2bd",
+      "last_checked": "2025-06-10T21:56:15.223375",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"03de4b5a6070fcbcc01fc6f82c14c975\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/api-3029476-centralmanager.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/3029480-centralmanager.json": {
-      "hash": "564ca8b6563be3e617e83a7758e62f44234a120a653ffe9e816cf0d8de80b740",
-      "last_checked": "2025-06-06T05:51:18.183104",
-      "status": "unchanged",
-      "etag": "W/\"e58dd2b8892211c0d045c038b54a6901\""
+      "hash": "b351c4056953b815db415d69eecbbb96e8880fd88589c40e596f47b83ebe106f",
+      "last_checked": "2025-06-10T21:56:15.376259",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"eca28c4a7c3b91947d0205d41ecd6c92\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/api-3029480-centralmanager.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/3029480-centralmanager": {
-      "hash": "564ca8b6563be3e617e83a7758e62f44234a120a653ffe9e816cf0d8de80b740",
-      "last_checked": "2025-06-06T05:51:18.183104",
-      "status": "unchanged",
-      "etag": "6a36dbe1ec9ae029b172bf4577e61946"
+      "hash": "b351c4056953b815db415d69eecbbb96e8880fd88589c40e596f47b83ebe106f",
+      "last_checked": "2025-06-10T21:56:15.376305",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"eca28c4a7c3b91947d0205d41ecd6c92\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanagerdelegate/api-3029480-centralmanager.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029511-init.json": {
-      "hash": "3e59dbb2feaf5e375273c1015ee317de965163b156c55264fd15c9043d519422",
-      "last_checked": "2025-06-06T05:51:18.539785",
-      "status": "unchanged",
-      "etag": "W/\"02df67f97ef8dc2de6782e7d585e29b9\""
+      "hash": "6f0619f3afe063087b8d4c6acaec6934b4e6ceec1dbde9839f4396767ad4b204",
+      "last_checked": "2025-06-10T21:56:15.576059",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"6c17f460b6639f52a0aabcd0082ee72a\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029511-init.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029511-init": {
-      "hash": "3e59dbb2feaf5e375273c1015ee317de965163b156c55264fd15c9043d519422",
-      "last_checked": "2025-06-06T05:51:18.539785",
-      "status": "unchanged",
-      "etag": "7956a5219913d0bfd100f3a37ca9cefb"
+      "hash": "6f0619f3afe063087b8d4c6acaec6934b4e6ceec1dbde9839f4396767ad4b204",
+      "last_checked": "2025-06-10T21:56:15.576100",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"6c17f460b6639f52a0aabcd0082ee72a\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029511-init.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029512-init.json": {
-      "hash": "366583b8722bcbad01b815dd1b98b4d2dd466203c979d06a8b9e89e410966d51",
-      "last_checked": "2025-06-06T05:51:18.935007",
-      "status": "unchanged",
-      "etag": "W/\"7a416953123c8d02a94c5887000c6268\""
+      "hash": "38a14f62b0f9d9e982a1635308af6a6dc22370911626c4a0db3e7ce8a126fd40",
+      "last_checked": "2025-06-10T21:56:15.682894",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"6559a479f7bd1657dbfcb6c2088e2308\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029512-init.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029512-init": {
-      "hash": "366583b8722bcbad01b815dd1b98b4d2dd466203c979d06a8b9e89e410966d51",
-      "last_checked": "2025-06-06T05:51:18.935007",
-      "status": "unchanged",
-      "etag": "cecabe06dc62acfb09f9d329140e56fd"
+      "hash": "38a14f62b0f9d9e982a1635308af6a6dc22370911626c4a0db3e7ce8a126fd40",
+      "last_checked": "2025-06-10T21:56:15.682957",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"6559a479f7bd1657dbfcb6c2088e2308\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029512-init.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029509-datasource.json": {
-      "hash": "aabcbe5452158eff6bf2816fab1d3b94c187ca5fa2e220a8cbe4873f918df56a",
-      "last_checked": "2025-06-06T05:51:19.342745",
-      "status": "unchanged",
-      "etag": "W/\"18f937df8edd5348b835452e6d26c61b\""
+      "hash": "98812ed3292f24279b0003ac2b9e431a07d4b3c4aea2d61b46f49ad677068962",
+      "last_checked": "2025-06-10T21:56:15.795775",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"89917d4ee1a61e36c693a10b37e1195f\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029509-datasource.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029509-datasource": {
-      "hash": "aabcbe5452158eff6bf2816fab1d3b94c187ca5fa2e220a8cbe4873f918df56a",
-      "last_checked": "2025-06-06T05:51:19.342745",
-      "status": "unchanged",
-      "etag": "9d7fe73afcdba2bfea6181a656ff9fd6"
+      "hash": "98812ed3292f24279b0003ac2b9e431a07d4b3c4aea2d61b46f49ad677068962",
+      "last_checked": "2025-06-10T21:56:15.795825",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"89917d4ee1a61e36c693a10b37e1195f\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029509-datasource.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029517-setitem.json": {
-      "hash": "70d43afc62e90c0e00d860942307c666646c1da957505a90372eb451d0ade479",
-      "last_checked": "2025-06-06T05:51:19.734479",
-      "status": "unchanged",
-      "etag": "W/\"693e2d395911079bdabe6578b04270ed\""
+      "hash": "99c4fd04004ed154a61faeb120ea17588e73055c87162f3fb242a302c1245020",
+      "last_checked": "2025-06-10T21:56:15.918300",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"5febec6ea5ee11445e271a792312441f\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029517-setitem.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029517-setitem": {
-      "hash": "70d43afc62e90c0e00d860942307c666646c1da957505a90372eb451d0ade479",
-      "last_checked": "2025-06-06T05:51:19.734479",
-      "status": "unchanged",
-      "etag": "79fcdb826a5c37c0c0c36021ff8df7ff"
+      "hash": "99c4fd04004ed154a61faeb120ea17588e73055c87162f3fb242a302c1245020",
+      "last_checked": "2025-06-10T21:56:15.918334",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"5febec6ea5ee11445e271a792312441f\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029517-setitem.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item.json": {
-      "hash": "b906c4f3f378b6f5798ea65b3de75efb477f17b4462354cdc9a76bcf547f4c9f",
-      "last_checked": "2025-06-06T05:51:20.105205",
-      "status": "unchanged",
-      "etag": "W/\"eb9abf621de9fd45fd8ee0a2acd2bc44\""
+      "hash": "1eab0b3d13ec958b11b61e504d235e2721dbdcaa50d2951d23a144ed76e7c4cf",
+      "last_checked": "2025-06-10T21:56:16.089387",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"0982dfd65bc887b9e0fd61ae3fcf89d3\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item": {
-      "hash": "b906c4f3f378b6f5798ea65b3de75efb477f17b4462354cdc9a76bcf547f4c9f",
-      "last_checked": "2025-06-06T05:51:20.105205",
-      "status": "unchanged"
+      "hash": "1eab0b3d13ec958b11b61e504d235e2721dbdcaa50d2951d23a144ed76e7c4cf",
+      "last_checked": "2025-06-10T21:56:16.089431",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"0982dfd65bc887b9e0fd61ae3fcf89d3\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029510-delegate.json": {
-      "hash": "e709a489b5b1aa3a9e04515d8d254adf9a4ead9dc8717204757c74f86401baac",
-      "last_checked": "2025-06-06T05:51:20.478490",
-      "status": "unchanged",
-      "etag": "W/\"713df712459980517f5d0d1b4aef723f\""
+      "hash": "b1fd0eac2cfc3d283f7787fe57db3632636a3aac4d3e2c6e7b98d24ba4f2c639",
+      "last_checked": "2025-06-10T21:56:16.177505",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"435aeb93358f224730028dac422858b7\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029510-delegate.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029510-delegate": {
-      "hash": "e709a489b5b1aa3a9e04515d8d254adf9a4ead9dc8717204757c74f86401baac",
-      "last_checked": "2025-06-06T05:51:20.478490",
-      "status": "unchanged",
-      "etag": "f088a6a39a11503a84b08cde5dd2f911"
+      "hash": "b1fd0eac2cfc3d283f7787fe57db3632636a3aac4d3e2c6e7b98d24ba4f2c639",
+      "last_checked": "2025-06-10T21:56:16.177540",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"435aeb93358f224730028dac422858b7\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029510-delegate.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state.json": {
-      "hash": "ac576f4048d0a4e009cdec44be674528a75e66efa16a98aacca78a5d4f775563",
-      "last_checked": "2025-06-06T05:51:20.839315",
-      "status": "unchanged",
-      "etag": "W/\"4fa8662a11d298e4537c60b562035e37\""
+      "hash": "8a0a68b492f2f579aad8f947a97955675e351529547dbcd4831916ee26a9783b",
+      "last_checked": "2025-06-10T21:56:16.316928",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"0e6a20a4f109f2f41e64b188dabb9a78\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state": {
-      "hash": "ac576f4048d0a4e009cdec44be674528a75e66efa16a98aacca78a5d4f775563",
-      "last_checked": "2025-06-06T05:51:20.839315",
-      "status": "unchanged"
+      "hash": "8a0a68b492f2f579aad8f947a97955675e351529547dbcd4831916ee26a9783b",
+      "last_checked": "2025-06-10T21:56:16.316969",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"0e6a20a4f109f2f41e64b188dabb9a78\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029513-setbatterylevel.json": {
-      "hash": "902d7f1955108c1592bb8a825d2ea77f7c1c1d5b645cf7405c2e57c29794149b",
-      "last_checked": "2025-06-06T05:51:21.247319",
-      "status": "unchanged",
-      "etag": "W/\"bd186108c78eef780d3fc9d2f50504fa\""
+      "hash": "7b1ebdee2f4cb417e7fc10a0c32afa4b4c920ce9f46b2738d34e3f7d4f9bc9a2",
+      "last_checked": "2025-06-10T21:56:16.417223",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"c8834dfaa5d904501282cf23a7f1150b\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029513-setbatterylevel.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029513-setbatterylevel": {
-      "hash": "902d7f1955108c1592bb8a825d2ea77f7c1c1d5b645cf7405c2e57c29794149b",
-      "last_checked": "2025-06-06T05:51:21.247319",
-      "status": "unchanged",
-      "etag": "df3a033b369ce00bb5593b71c4a3e2e3"
+      "hash": "7b1ebdee2f4cb417e7fc10a0c32afa4b4c920ce9f46b2738d34e3f7d4f9bc9a2",
+      "last_checked": "2025-06-10T21:56:16.417262",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"c8834dfaa5d904501282cf23a7f1150b\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029513-setbatterylevel.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029514-setfirmwarestatus.json": {
-      "hash": "09262c89e13561994793fbfd651f1501aa25a8e2431f4a1e627fed4345db41f0",
-      "last_checked": "2025-06-06T05:51:21.654208",
-      "status": "unchanged",
-      "etag": "W/\"716dee09d13fb23dc9da1bbdcda84834\""
+      "hash": "d6bed81e4923f534f6814a23e957ac2f09c19d3d0c08538ec10cb76edad26e0c",
+      "last_checked": "2025-06-10T21:56:16.568144",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"9aa004f0a13a4cc3f8bb2f6c23d22cf2\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029514-setfirmwarestatus.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029514-setfirmwarestatus": {
-      "hash": "09262c89e13561994793fbfd651f1501aa25a8e2431f4a1e627fed4345db41f0",
-      "last_checked": "2025-06-06T05:51:21.654208",
-      "status": "unchanged"
+      "hash": "d6bed81e4923f534f6814a23e957ac2f09c19d3d0c08538ec10cb76edad26e0c",
+      "last_checked": "2025-06-10T21:56:16.568197",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"9aa004f0a13a4cc3f8bb2f6c23d22cf2\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029514-setfirmwarestatus.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029515-seticon.json": {
-      "hash": "0d8f468252134d31245418f9d4f4113b5064c9712c79b8f24bfd34ebb8d12efa",
-      "last_checked": "2025-06-06T05:51:22.050718",
-      "status": "unchanged",
-      "etag": "W/\"2c33770ccfbb0692f8c955c31be33554\""
+      "hash": "f50f57d5dbeb28507291371b5bf7362ec3027a0388809462bed2c8d489ef79d3",
+      "last_checked": "2025-06-10T21:56:16.689121",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"dcf0d68a588a857883ccf18a3ae0f348\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029515-seticon.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029515-seticon": {
-      "hash": "0d8f468252134d31245418f9d4f4113b5064c9712c79b8f24bfd34ebb8d12efa",
-      "last_checked": "2025-06-06T05:51:22.050718",
-      "status": "unchanged",
-      "etag": "747a10234ec384a199e136825e2c51b2"
+      "hash": "f50f57d5dbeb28507291371b5bf7362ec3027a0388809462bed2c8d489ef79d3",
+      "last_checked": "2025-06-10T21:56:16.689186",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"dcf0d68a588a857883ccf18a3ae0f348\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029515-seticon.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029516-setissueicon.json": {
-      "hash": "2fd6dd8f7719bf5b243d5aecfa745d4370cb8c064841667ee21440a6e8af5a40",
-      "last_checked": "2025-06-06T05:51:22.446446",
-      "status": "unchanged",
-      "etag": "W/\"b08c1307f18362b1f5f345ffbdd22dbc\""
+      "hash": "25327148d84c1af0002fcd4a4c13cb21dd1ef8cb8b2fce03bf1b093d4bb1dc32",
+      "last_checked": "2025-06-10T21:56:16.840445",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"cf0c9ef848af1eed5a61955aa4b316eb\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029516-setissueicon.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029516-setissueicon": {
-      "hash": "2fd6dd8f7719bf5b243d5aecfa745d4370cb8c064841667ee21440a6e8af5a40",
-      "last_checked": "2025-06-06T05:51:22.446446",
-      "status": "unchanged"
+      "hash": "25327148d84c1af0002fcd4a4c13cb21dd1ef8cb8b2fce03bf1b093d4bb1dc32",
+      "last_checked": "2025-06-10T21:56:16.840670",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"cf0c9ef848af1eed5a61955aa4b316eb\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029516-setissueicon.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029518-setname.json": {
-      "hash": "396e786146fa8a430c3efb6f07ef86561c7006a25f68fdde5aaaff323065b952",
-      "last_checked": "2025-06-06T05:51:22.847237",
-      "status": "unchanged",
-      "etag": "W/\"68ae19e96ca0b2e04edd4636cd051df1\""
+      "hash": "bb4f6e051288c350d9fd9ac9abf21e2308944061a05cdf9eeb9ac490acd9c050",
+      "last_checked": "2025-06-10T21:56:16.960855",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"471b5f936c7daa56bdb3bae45f586fd9\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029518-setname.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/3029518-setname": {
-      "hash": "396e786146fa8a430c3efb6f07ef86561c7006a25f68fdde5aaaff323065b952",
-      "last_checked": "2025-06-06T05:51:22.847237",
-      "status": "unchanged"
+      "hash": "bb4f6e051288c350d9fd9ac9abf21e2308944061a05cdf9eeb9ac490acd9c050",
+      "last_checked": "2025-06-10T21:56:16.960948",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"471b5f936c7daa56bdb3bae45f586fd9\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/api-3029518-setname.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/3029523-connectionview.json": {
-      "hash": "349df4322e2f04e99738d39fb9373b47c3a56687a01d229e30bca53b09ba6296",
-      "last_checked": "2025-06-06T05:51:24.000810",
-      "status": "unchanged",
-      "etag": "W/\"c776362672b1fa0662634d69a78e8315\""
+      "hash": "8dc4e811e4dbfe830b2b07dbf44129cddab34191c618f55c478701ab340334a1",
+      "last_checked": "2025-06-10T21:56:17.093113",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"4af6d1388cc473b06a6d6972032ccb54\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/api-3029523-connectionview.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/3029523-connectionview": {
-      "hash": "349df4322e2f04e99738d39fb9373b47c3a56687a01d229e30bca53b09ba6296",
-      "last_checked": "2025-06-06T05:51:24.000810",
-      "status": "unchanged",
-      "etag": "df12c0badbf7ef488105667ac227424f"
+      "hash": "8dc4e811e4dbfe830b2b07dbf44129cddab34191c618f55c478701ab340334a1",
+      "last_checked": "2025-06-10T21:56:17.093161",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"4af6d1388cc473b06a6d6972032ccb54\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/api-3029523-connectionview.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/3029525-connectionview.json": {
-      "hash": "924ef1ee95c02f780b200ab03c9edfb1736ac84014e6bee3cd47be8ff373b907",
-      "last_checked": "2025-06-06T05:51:24.352084",
-      "status": "unchanged",
-      "etag": "W/\"f1d78be089242ff70d45b852b0243e2e\""
+      "hash": "d7e4ec404ce1b156a0548164ba9896e07d6426a282c0fb1075c3727811e062a3",
+      "last_checked": "2025-06-10T21:56:17.225749",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"94c1569730ef25fcc1d21ec3a85849eb\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/api-3029525-connectionview.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/3029525-connectionview": {
-      "hash": "924ef1ee95c02f780b200ab03c9edfb1736ac84014e6bee3cd47be8ff373b907",
-      "last_checked": "2025-06-06T05:51:24.352084",
-      "status": "unchanged"
+      "hash": "d7e4ec404ce1b156a0548164ba9896e07d6426a282c0fb1075c3727811e062a3",
+      "last_checked": "2025-06-10T21:56:17.225797",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"94c1569730ef25fcc1d21ec3a85849eb\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/api-3029525-connectionview.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/3029527-connectionview.json": {
-      "hash": "191314a4dbbd436b6ca436e9dd3869579cd0f3d5972506af923e1120bbb11b3b",
-      "last_checked": "2025-06-06T05:51:24.752088",
-      "status": "unchanged",
-      "etag": "W/\"c84998653fa719b9d5f4134cf6110600\""
+      "hash": "45159a10b499f1e205337a099975dae052bc24295aaf0a9bbce7ff63a6ad5979",
+      "last_checked": "2025-06-10T21:56:17.331533",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"0195962490f69f4f253895f6913c371c\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/api-3029527-connectionview.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/3029527-connectionview": {
-      "hash": "191314a4dbbd436b6ca436e9dd3869579cd0f3d5972506af923e1120bbb11b3b",
-      "last_checked": "2025-06-06T05:51:24.752088",
-      "status": "unchanged"
+      "hash": "45159a10b499f1e205337a099975dae052bc24295aaf0a9bbce7ff63a6ad5979",
+      "last_checked": "2025-06-10T21:56:17.331580",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"0195962490f69f4f253895f6913c371c\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/api-3029527-connectionview.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/3029522-connectionview.json": {
-      "hash": "dd17d60485d08dfd869ca199e49038c2b330e2d38ea9fcfca16b2f50374f9656",
-      "last_checked": "2025-06-06T05:51:25.153258",
-      "status": "unchanged",
-      "etag": "W/\"10f98d46028fb76e31841c10b6bd3b77\""
+      "hash": "4c6eb1916eb311d39db9897fd1ee095d267be41d001edc42b08e5c84e116ed80",
+      "last_checked": "2025-06-10T21:56:17.459045",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"d4ea7c1a2f7e9c6f378b27471b1d5c6c\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/api-3029522-connectionview.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/3029522-connectionview": {
-      "hash": "dd17d60485d08dfd869ca199e49038c2b330e2d38ea9fcfca16b2f50374f9656",
-      "last_checked": "2025-06-06T05:51:25.153258",
-      "status": "unchanged"
+      "hash": "4c6eb1916eb311d39db9897fd1ee095d267be41d001edc42b08e5c84e116ed80",
+      "last_checked": "2025-06-10T21:56:17.459087",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"d4ea7c1a2f7e9c6f378b27471b1d5c6c\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/api-3029522-connectionview.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/3029528-connectionview.json": {
-      "hash": "17b600624660b610952dbb7e3802a94c7374f494ef5593dd7b4342f6bb9e88eb",
-      "last_checked": "2025-06-06T05:51:25.536556",
-      "status": "unchanged",
-      "etag": "W/\"2c851612ddab6d35712a1264b591d209\""
+      "hash": "20133d93f06a3b2a0ece0d961dd33b468882a7e680967dfab47d9439bf481a9e",
+      "last_checked": "2025-06-10T21:56:17.592274",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"244f5b63b33a09d2a8584fb7d8ed749a\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/api-3029528-connectionview.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/3029528-connectionview": {
-      "hash": "17b600624660b610952dbb7e3802a94c7374f494ef5593dd7b4342f6bb9e88eb",
-      "last_checked": "2025-06-06T05:51:25.536556",
-      "status": "unchanged"
+      "hash": "20133d93f06a3b2a0ece0d961dd33b468882a7e680967dfab47d9439bf481a9e",
+      "last_checked": "2025-06-10T21:56:17.592317",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"244f5b63b33a09d2a8584fb7d8ed749a\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdelegate/api-3029528-connectionview.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdatasource/3029520-connectionview.json": {
-      "hash": "b787a6fff56a096b30d94f2a6f06d1304ce8ca14006929038f0e33fd920f3445",
-      "last_checked": "2025-06-06T05:51:25.942463",
-      "status": "unchanged",
-      "etag": "W/\"71a8fe3724fb77f5e49b153f96d31bcc\""
+      "hash": "c17aba3a064dcb987ca9e4106d71ef583e5e6cc595b0688b91c2f6aabc731906",
+      "last_checked": "2025-06-10T21:56:17.701184",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"9c4414cfba698efa588a7a8fb8ba47ed\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdatasource/api-3029520-connectionview.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdatasource/3029520-connectionview": {
-      "hash": "b787a6fff56a096b30d94f2a6f06d1304ce8ca14006929038f0e33fd920f3445",
-      "last_checked": "2025-06-06T05:51:25.942463",
-      "status": "unchanged"
+      "hash": "c17aba3a064dcb987ca9e4106d71ef583e5e6cc595b0688b91c2f6aabc731906",
+      "last_checked": "2025-06-10T21:56:17.701224",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"9c4414cfba698efa588a7a8fb8ba47ed\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionviewdatasource/api-3029520-connectionview.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/connectionfailed.json": {
-      "hash": "c1b7d8bb23da32bbbfc95a54c704616a64ebadb9cc8a34ec225dbc5d032c6865",
-      "last_checked": "2025-06-06T05:51:26.323510",
-      "status": "unchanged",
-      "etag": "W/\"cb74f7770f6cc26ad8e1a79ac980180d\""
+      "hash": "c9edf319a6073348106245407ddc41be02805646416d07d45831bf4623da521f",
+      "last_checked": "2025-06-10T21:56:17.811682",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"3798bc0278e09b8ccf212d468839a628\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/connectionfailed.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/connectionfailed": {
-      "hash": "c1b7d8bb23da32bbbfc95a54c704616a64ebadb9cc8a34ec225dbc5d032c6865",
-      "last_checked": "2025-06-06T05:51:26.323510",
-      "status": "unchanged"
+      "hash": "c9edf319a6073348106245407ddc41be02805646416d07d45831bf4623da521f",
+      "last_checked": "2025-06-10T21:56:17.811808",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"3798bc0278e09b8ccf212d468839a628\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/connectionfailed.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/connectionlost.json": {
-      "hash": "8e323753c82c043aba27d6f02c839e02803ecd5846ae6f8008ab3bb69eec60d9",
-      "last_checked": "2025-06-06T05:51:26.725973",
-      "status": "unchanged",
-      "etag": "W/\"cfe72708d2dc0adce2d31967c71fd0a7\""
+      "hash": "13c29cd257172c6e7e2a46fe9076419833fe60800ad382d5095678ccf82f5548",
+      "last_checked": "2025-06-10T21:56:17.943351",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"018e7ac9c7f7a783132cbd8b672e5a08\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/connectionlost.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/connectionlost": {
-      "hash": "8e323753c82c043aba27d6f02c839e02803ecd5846ae6f8008ab3bb69eec60d9",
-      "last_checked": "2025-06-06T05:51:26.725973",
-      "status": "unchanged"
+      "hash": "13c29cd257172c6e7e2a46fe9076419833fe60800ad382d5095678ccf82f5548",
+      "last_checked": "2025-06-10T21:56:17.943448",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"018e7ac9c7f7a783132cbd8b672e5a08\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/connectionlost.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/excessiveconnections.json": {
-      "hash": "081c0eb641d1215a2ea16f0867ca6b60d9356c957e6d3ed33b232e196b8beb83",
-      "last_checked": "2025-06-06T05:51:27.118733",
-      "status": "unchanged",
-      "etag": "W/\"829585abc94aabd32888c3233b6bd6ab\""
+      "hash": "73416de0f00693e30770c4db5311428dd90ef9aa068eddac63a93d4c42ed421d",
+      "last_checked": "2025-06-10T21:56:18.086147",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"be1ce112ff138cdb0d9fe6ed47c2b4c1\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/excessiveconnections.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/excessiveconnections": {
-      "hash": "081c0eb641d1215a2ea16f0867ca6b60d9356c957e6d3ed33b232e196b8beb83",
-      "last_checked": "2025-06-06T05:51:27.118733",
-      "status": "unchanged"
+      "hash": "73416de0f00693e30770c4db5311428dd90ef9aa068eddac63a93d4c42ed421d",
+      "last_checked": "2025-06-10T21:56:18.086204",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"be1ce112ff138cdb0d9fe6ed47c2b4c1\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/excessiveconnections.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/invalidstate.json": {
-      "hash": "a25d9fc61a05ae17af0138af7341aa367dded01e683e8415829ee9bc19167f2f",
-      "last_checked": "2025-06-06T05:51:27.471722",
-      "status": "unchanged",
-      "etag": "W/\"2552ea8f97375dbc95485b311fa8b9d7\""
+      "hash": "ff4c394b1d4f6bd6a4c76dd1b13f236184fb91dde1aaf337cf11dc2fdc79105f",
+      "last_checked": "2025-06-10T21:56:18.235185",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"95ab49b03a980e6dbe9fa99c4616beec\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/invalidstate.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/invalidstate": {
-      "hash": "a25d9fc61a05ae17af0138af7341aa367dded01e683e8415829ee9bc19167f2f",
-      "last_checked": "2025-06-06T05:51:27.471722",
-      "status": "unchanged"
+      "hash": "ff4c394b1d4f6bd6a4c76dd1b13f236184fb91dde1aaf337cf11dc2fdc79105f",
+      "last_checked": "2025-06-10T21:56:18.235232",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"95ab49b03a980e6dbe9fa99c4616beec\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/invalidstate.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/timeoutexpired.json": {
-      "hash": "eb119cbd314893610344bfa6102ea47a3bcde47c2c9999870e58cc699693c632",
-      "last_checked": "2025-06-06T05:51:27.858885",
-      "status": "unchanged",
-      "etag": "W/\"0db04617dc3cec91e25be2976a85674a\""
+      "hash": "68e3a52e1ff9c064e0e49e3cebf189f010f823a06daef54a9bb26224b40ed4a6",
+      "last_checked": "2025-06-10T21:56:18.372065",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"729da048595e108ae1255abfc0926f31\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/timeoutexpired.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/timeoutexpired": {
-      "hash": "eb119cbd314893610344bfa6102ea47a3bcde47c2c9999870e58cc699693c632",
-      "last_checked": "2025-06-06T05:51:27.858885",
-      "status": "unchanged"
+      "hash": "68e3a52e1ff9c064e0e49e3cebf189f010f823a06daef54a9bb26224b40ed4a6",
+      "last_checked": "2025-06-10T21:56:18.372101",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"729da048595e108ae1255abfc0926f31\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/timeoutexpired.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/3029462-localizeddescription.json": {
-      "hash": "bb42a793b7ffa6078b5cc0a043cf8eb12cb5a384c84696306f02f31bbbe608e8",
-      "last_checked": "2025-06-06T05:51:28.227249",
-      "status": "unchanged",
-      "etag": "W/\"83c0853d773886813ba32c43efd520c7\""
+      "hash": "a4abfdc442ae620a9110084bbc44de23a8f8e17812e2a3be7599a78d15667e8e",
+      "last_checked": "2025-06-10T21:56:18.487217",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"f2baa54eeee55609f1c943a453018fa0\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/api-3029462-localizeddescription.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/3029462-localizeddescription": {
-      "hash": "bb42a793b7ffa6078b5cc0a043cf8eb12cb5a384c84696306f02f31bbbe608e8",
-      "last_checked": "2025-06-06T05:51:28.227249",
-      "status": "unchanged"
+      "hash": "a4abfdc442ae620a9110084bbc44de23a8f8e17812e2a3be7599a78d15667e8e",
+      "last_checked": "2025-06-10T21:56:18.487250",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"f2baa54eeee55609f1c943a453018fa0\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/api-3029462-localizeddescription.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/3029457.json": {
-      "hash": "f8f7b56a5147c4efd7b4fec5c9bc70329464352cf25ce6ac70ab78717721261b",
-      "last_checked": "2025-06-06T05:51:28.578345",
-      "status": "unchanged",
-      "etag": "W/\"5615ea66aa1fe2923f41f8807eef6164\""
+      "hash": "40e7a66f807fa5e58d5d9746697fb315c8fd645f0886910d2f49e9a7bd2c2af4",
+      "last_checked": "2025-06-10T21:56:18.585585",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"a03db5b9a04391e246d2ceeec52b0b7f\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/api-3029457.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/3029457": {
-      "hash": "f8f7b56a5147c4efd7b4fec5c9bc70329464352cf25ce6ac70ab78717721261b",
-      "last_checked": "2025-06-06T05:51:28.578345",
-      "status": "unchanged"
+      "hash": "40e7a66f807fa5e58d5d9746697fb315c8fd645f0886910d2f49e9a7bd2c2af4",
+      "last_checked": "2025-06-10T21:56:18.585673",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"a03db5b9a04391e246d2ceeec52b0b7f\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothcentralmanager/connectionerror/api-3029457.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/3029497-init.json": {
-      "hash": "f6053abe9b27b9cd77aba09aa303889d1ab7844ee38c22403a77eb872acb112b",
-      "last_checked": "2025-06-06T05:51:28.984087",
-      "status": "unchanged",
-      "etag": "W/\"3bd6a7ea3dd5c4e963a9e3762e94e94d\""
+      "hash": "4547ba29b187cb309131b187612e6e9e15a3e7051b97a3b73f46bc6b810ce1d5",
+      "last_checked": "2025-06-10T21:56:18.744506",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"146dc8d31afffea2daa4b45f80616b0f\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/api-3029497-init.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/3029497-init": {
-      "hash": "f6053abe9b27b9cd77aba09aa303889d1ab7844ee38c22403a77eb872acb112b",
-      "last_checked": "2025-06-06T05:51:28.984087",
-      "status": "unchanged"
+      "hash": "4547ba29b187cb309131b187612e6e9e15a3e7051b97a3b73f46bc6b810ce1d5",
+      "last_checked": "2025-06-10T21:56:18.744548",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"146dc8d31afffea2daa4b45f80616b0f\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/api-3029497-init.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/3029499-name.json": {
-      "hash": "8cf68caa972961332e2f7d65fc23243f82fae0be19780fd4afb38698ce6d1851",
-      "last_checked": "2025-06-06T05:51:29.424044",
-      "status": "unchanged",
-      "etag": "W/\"c43d576fb15074f9f9a9b649ca017958\""
+      "hash": "51e8239702a125bf180d0db0fb6bda3148a50466501d27d4d599812cc2fae366",
+      "last_checked": "2025-06-10T21:56:18.909418",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"d1412e3a6114e6a4d8b4d518cd8b3a81\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/api-3029499-name.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/3029499-name": {
-      "hash": "8cf68caa972961332e2f7d65fc23243f82fae0be19780fd4afb38698ce6d1851",
-      "last_checked": "2025-06-06T05:51:29.424044",
-      "status": "unchanged"
+      "hash": "51e8239702a125bf180d0db0fb6bda3148a50466501d27d4d599812cc2fae366",
+      "last_checked": "2025-06-10T21:56:18.909474",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"d1412e3a6114e6a4d8b4d518cd8b3a81\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/api-3029499-name.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/3029496-icon.json": {
-      "hash": "36301a005a9c6ecf1cfc12dfe775a181217a16b9b97fcfaaf061d44d810b7f0c",
-      "last_checked": "2025-06-06T05:51:29.835573",
-      "status": "unchanged",
-      "etag": "W/\"8f647db22cc57bcaaf0bd91f01be2e7e\""
+      "hash": "663722301a8ac06764a364557e4566134062fb2e9642b3f461e24c047ae5aac9",
+      "last_checked": "2025-06-10T21:56:19.009082",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"85b1088ae31720ea7f019b8893280296\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/api-3029496-icon.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/3029496-icon": {
-      "hash": "36301a005a9c6ecf1cfc12dfe775a181217a16b9b97fcfaaf061d44d810b7f0c",
-      "last_checked": "2025-06-06T05:51:29.835573",
-      "status": "unchanged"
+      "hash": "663722301a8ac06764a364557e4566134062fb2e9642b3f461e24c047ae5aac9",
+      "last_checked": "2025-06-10T21:56:19.009136",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"85b1088ae31720ea7f019b8893280296\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/api-3029496-icon.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/3029498-issueicon.json": {
-      "hash": "1c34fb479e6fa892be8fc3da7a7181b785e0a1d7b3017658d3f458cacc96bf7e",
-      "last_checked": "2025-06-06T05:51:30.243923",
-      "status": "unchanged",
-      "etag": "W/\"6dc5ce9b2add46f62254d00e670ef0ff\""
+      "hash": "5dea7a88b2fd0962a8fdab6ac6cb1b12e3b16c93edfa8b166788e833b95706a2",
+      "last_checked": "2025-06-10T21:56:19.137932",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"46aec222b7e7a220e43ce47b44b9f13b\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/api-3029498-issueicon.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/3029498-issueicon": {
-      "hash": "1c34fb479e6fa892be8fc3da7a7181b785e0a1d7b3017658d3f458cacc96bf7e",
-      "last_checked": "2025-06-06T05:51:30.243923",
-      "status": "unchanged"
+      "hash": "5dea7a88b2fd0962a8fdab6ac6cb1b12e3b16c93edfa8b166788e833b95706a2",
+      "last_checked": "2025-06-10T21:56:19.137968",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"46aec222b7e7a220e43ce47b44b9f13b\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/api-3029498-issueicon.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/3029494-batterylevel.json": {
-      "hash": "9c5722fa4f49e2761847e2688a0514980bca0d10fad6815cdc1b7a231a4e22ab",
-      "last_checked": "2025-06-06T05:51:30.630699",
-      "status": "unchanged",
-      "etag": "W/\"1deda52b1b1eb73e1a4ec758049c7025\""
+      "hash": "9fce7f41b8854fdccffabb441921df1ce5e242e648f61260ecb0fe3974f75166",
+      "last_checked": "2025-06-10T21:56:19.244563",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"61f80e023110d784baa2859bf5569024\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/api-3029494-batterylevel.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/3029494-batterylevel": {
-      "hash": "9c5722fa4f49e2761847e2688a0514980bca0d10fad6815cdc1b7a231a4e22ab",
-      "last_checked": "2025-06-06T05:51:30.630699",
-      "status": "unchanged"
+      "hash": "9fce7f41b8854fdccffabb441921df1ce5e242e648f61260ecb0fe3974f75166",
+      "last_checked": "2025-06-10T21:56:19.244596",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"61f80e023110d784baa2859bf5569024\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/api-3029494-batterylevel.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/3029495-firmwarestatus.json": {
-      "hash": "0d137165d2798e24af7e3ba76335e0b173650fdcd4ccd8eab53f3b1e96b0e275",
-      "last_checked": "2025-06-06T05:51:31.008535",
-      "status": "unchanged",
-      "etag": "W/\"2c0444a00615df63a3b4673c04d9ef5b\""
+      "hash": "c7bc2b6305a370c36946180af698d3111b0db78a5dbe288d3cf4345594abc409",
+      "last_checked": "2025-06-10T21:56:19.369184",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"c3775de6712a70e41ae47410f3654408\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/api-3029495-firmwarestatus.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/3029495-firmwarestatus": {
-      "hash": "0d137165d2798e24af7e3ba76335e0b173650fdcd4ccd8eab53f3b1e96b0e275",
-      "last_checked": "2025-06-06T05:51:31.008535",
-      "status": "unchanged"
+      "hash": "c7bc2b6305a370c36946180af698d3111b0db78a5dbe288d3cf4345594abc409",
+      "last_checked": "2025-06-10T21:56:19.369220",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"c3775de6712a70e41ae47410f3654408\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/api-3029495-firmwarestatus.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus.json": {
-      "hash": "975dbd0ad1d5d7ef3dc51c4a97c832413911de4633ee25c61aba2014fac33c39",
-      "last_checked": "2025-06-06T05:51:31.390535",
-      "status": "unchanged",
-      "etag": "W/\"73bb354806550db6b8436d79cd766809\""
+      "hash": "8dc448fb3204d26602297787a505695966d6429bcee8d83db6227dfee9f7841b",
+      "last_checked": "2025-06-10T21:56:19.493849",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"82c642143477cf817aebdb3ef085e8e8\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus": {
-      "hash": "975dbd0ad1d5d7ef3dc51c4a97c832413911de4633ee25c61aba2014fac33c39",
-      "last_checked": "2025-06-06T05:51:31.390535",
-      "status": "unchanged"
+      "hash": "8dc448fb3204d26602297787a505695966d6429bcee8d83db6227dfee9f7841b",
+      "last_checked": "2025-06-10T21:56:19.493884",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"82c642143477cf817aebdb3ef085e8e8\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/connecting.json": {
-      "hash": "0344d78da2a80407798a6b1c1a83e1876da7d011e69cebfe5a2936216954289d",
-      "last_checked": "2025-06-06T05:51:31.773515",
-      "status": "unchanged",
-      "etag": "W/\"fea78c977a557afebe233527e81b9362\""
+      "hash": "110814c84f3e4d8c814a51b586430918642b412053f48ce5a2cdaaa1a32dbf59",
+      "last_checked": "2025-06-10T21:56:19.629314",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"89a703615aa13428588feb611e1bd674\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/connecting.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/connecting": {
-      "hash": "0344d78da2a80407798a6b1c1a83e1876da7d011e69cebfe5a2936216954289d",
-      "last_checked": "2025-06-06T05:51:31.773515",
-      "status": "unchanged"
+      "hash": "110814c84f3e4d8c814a51b586430918642b412053f48ce5a2cdaaa1a32dbf59",
+      "last_checked": "2025-06-10T21:56:19.629353",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"89a703615aa13428588feb611e1bd674\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/connecting.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/noconnection.json": {
-      "hash": "01b08f922e6119a6716568c971ad0a505742e714e0718d0567e2cd5671880d6a",
-      "last_checked": "2025-06-06T05:51:32.122928",
-      "status": "unchanged",
-      "etag": "W/\"eca0e1fdf95705071d0f65d8adf519c2\""
+      "hash": "04cb537064b363171231522e2f3e829eb38291d09d0fe2161c8a045c7ea6b926",
+      "last_checked": "2025-06-10T21:56:19.794004",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"ad6f162ca3ae57ec3979d2c32dde0dd7\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/noconnection.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/noconnection": {
-      "hash": "01b08f922e6119a6716568c971ad0a505742e714e0718d0567e2cd5671880d6a",
-      "last_checked": "2025-06-06T05:51:32.122928",
-      "status": "unchanged"
+      "hash": "04cb537064b363171231522e2f3e829eb38291d09d0fe2161c8a045c7ea6b926",
+      "last_checked": "2025-06-10T21:56:19.794041",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"ad6f162ca3ae57ec3979d2c32dde0dd7\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/noconnection.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/searchingforperipherals.json": {
-      "hash": "16816f6f199162893c4b5966e32b790ae315fcdd96dc8e538747a94345963c20",
-      "last_checked": "2025-06-06T05:51:32.454022",
-      "status": "unchanged",
-      "etag": "W/\"e4c2884957ca2fd628f0c66d7acedf2b\""
+      "hash": "c4547d7a3b29120ffb8e0ca2f5dd6084b8c29d383595c3303556b2d93f61e49d",
+      "last_checked": "2025-06-10T21:56:19.897275",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"a8c09fd32052d0bc23418477661a5f3f\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/searchingforperipherals.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/searchingforperipherals": {
-      "hash": "16816f6f199162893c4b5966e32b790ae315fcdd96dc8e538747a94345963c20",
-      "last_checked": "2025-06-06T05:51:32.454022",
-      "status": "unchanged"
+      "hash": "c4547d7a3b29120ffb8e0ca2f5dd6084b8c29d383595c3303556b2d93f61e49d",
+      "last_checked": "2025-06-10T21:56:19.897334",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"a8c09fd32052d0bc23418477661a5f3f\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/searchingforperipherals.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/selectingperipherals.json": {
-      "hash": "6702509a5b69ae8af490f4c96b0b4c2b1286ff84888a9c4e8abea35575dfdbd4",
-      "last_checked": "2025-06-06T05:51:32.817328",
-      "status": "unchanged",
-      "etag": "W/\"6382837ec692b8a2f1fe6ad58a2a6701\""
+      "hash": "b744a8a9bc5e82afae1e2cfc4704e4f2f6276aa0f6c5f4d8cc3d9006b2624a5b",
+      "last_checked": "2025-06-10T21:56:20.075370",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"d5f991d690bd08febb048a3153f4fce2\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/selectingperipherals.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/selectingperipherals": {
-      "hash": "6702509a5b69ae8af490f4c96b0b4c2b1286ff84888a9c4e8abea35575dfdbd4",
-      "last_checked": "2025-06-06T05:51:32.817328",
-      "status": "unchanged"
+      "hash": "b744a8a9bc5e82afae1e2cfc4704e4f2f6276aa0f6c5f4d8cc3d9006b2624a5b",
+      "last_checked": "2025-06-10T21:56:20.075411",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"d5f991d690bd08febb048a3153f4fce2\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/selectingperipherals.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/connectedperipheralfirmwareoutofdate.json": {
-      "hash": "43f4949b2c6037699e01b8dd1d81f9618c21fdef5feffbaa9763034845702821",
-      "last_checked": "2025-06-06T05:51:33.274153",
-      "status": "unchanged",
-      "etag": "W/\"0e3a25d36bdde5382ee9db757e0ef91a\""
+      "hash": "3c0d7b9a994fc199e59951fc48b0af7c2183663e137ed6c274b9987085b7aae5",
+      "last_checked": "2025-06-10T21:56:20.207082",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"9d75725f6bb74e93a0d2a169aeaf70f8\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/connectedperipheralfirmwareoutofdate.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/connectedperipheralfirmwareoutofdate": {
-      "hash": "43f4949b2c6037699e01b8dd1d81f9618c21fdef5feffbaa9763034845702821",
-      "last_checked": "2025-06-06T05:51:33.274153",
-      "status": "unchanged"
+      "hash": "3c0d7b9a994fc199e59951fc48b0af7c2183663e137ed6c274b9987085b7aae5",
+      "last_checked": "2025-06-10T21:56:20.207118",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"9d75725f6bb74e93a0d2a169aeaf70f8\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/connectedperipheralfirmwareoutofdate.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/3029501.json": {
-      "hash": "b3cfb30972db49633a08e922d7af6e200959cf4de7e4929450f56df56485e38b",
-      "last_checked": "2025-06-06T05:51:33.646744",
-      "status": "unchanged",
-      "etag": "W/\"7a52fd74ea39cac9c85c0b092c76d9c7\""
+      "hash": "6e379d0a7b013a775bbf12652cc9fc0395051bb9def909dfe1d331bd0f3f5c90",
+      "last_checked": "2025-06-10T21:56:20.313893",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"077c896074d7ecd93f5063e4db535ed3\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/api-3029501.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/3029501": {
-      "hash": "b3cfb30972db49633a08e922d7af6e200959cf4de7e4929450f56df56485e38b",
-      "last_checked": "2025-06-06T05:51:33.646744",
-      "status": "unchanged"
+      "hash": "6e379d0a7b013a775bbf12652cc9fc0395051bb9def909dfe1d331bd0f3f5c90",
+      "last_checked": "2025-06-10T21:56:20.313940",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"077c896074d7ecd93f5063e4db535ed3\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/state/api-3029501.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus/outofdate.json": {
-      "hash": "de0790c27d12b4aabe38f7c88d654e6602196a19ec274035f1a8b791b0e048af",
-      "last_checked": "2025-06-06T05:51:34.030225",
-      "status": "unchanged",
-      "etag": "W/\"ce6f65ef95c17a9c9bbf74dcd1dc9d5a\""
+      "hash": "6d4ab170870643427ade6490524b2985201557bb03aa004b91e1f33c3ea2ab7e",
+      "last_checked": "2025-06-10T21:56:20.444005",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"f3a2cf85ab13c4d71dd33d0b7620d711\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus/outofdate.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus/outofdate": {
-      "hash": "de0790c27d12b4aabe38f7c88d654e6602196a19ec274035f1a8b791b0e048af",
-      "last_checked": "2025-06-06T05:51:34.030225",
-      "status": "unchanged"
+      "hash": "6d4ab170870643427ade6490524b2985201557bb03aa004b91e1f33c3ea2ab7e",
+      "last_checked": "2025-06-10T21:56:20.444050",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"f3a2cf85ab13c4d71dd33d0b7620d711\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus/outofdate.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus/uptodate.json": {
-      "hash": "ad1e78254c84996dc5af085f8ab94de100d0f513c7c00dac251bc3cb2f6f3b0f",
-      "last_checked": "2025-06-06T05:51:34.447621",
-      "status": "unchanged",
-      "etag": "W/\"c460ca6c92ce75683a4375888c8b0065\""
+      "hash": "0ed4d9c5b945b650e453b963c785ae5845f157fbb679320854058f6c5986d961",
+      "last_checked": "2025-06-10T21:56:20.616067",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"4c63aa395e92c31e7ae95df8299c69b5\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus/uptodate.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus/uptodate": {
-      "hash": "ad1e78254c84996dc5af085f8ab94de100d0f513c7c00dac251bc3cb2f6f3b0f",
-      "last_checked": "2025-06-06T05:51:34.447621",
-      "status": "unchanged"
+      "hash": "0ed4d9c5b945b650e453b963c785ae5845f157fbb679320854058f6c5986d961",
+      "last_checked": "2025-06-10T21:56:20.616102",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"4c63aa395e92c31e7ae95df8299c69b5\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus/uptodate.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus/3029491.json": {
-      "hash": "41230696f0671b3e11e22b14931cd137696ce9789db1a03ceefadd1375aca738",
-      "last_checked": "2025-06-06T05:51:34.836990",
-      "status": "unchanged",
-      "etag": "W/\"6e284965b13dfad8822ab4f742b2f4d2\""
+      "hash": "d2a5b559beadc2092c394d0ed79ab956aefcef288f0b05df78c509e9e1a3f182",
+      "last_checked": "2025-06-10T21:56:20.725182",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"901fa79dd2c04060d8aff20b01f38795\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus/api-3029491.md"
     },
     "https://developer.apple.com/documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus/3029491": {
-      "hash": "41230696f0671b3e11e22b14931cd137696ce9789db1a03ceefadd1375aca738",
-      "last_checked": "2025-06-06T05:51:34.836990",
-      "status": "unchanged"
+      "hash": "d2a5b559beadc2092c394d0ed79ab956aefcef288f0b05df78c509e9e1a3f182",
+      "last_checked": "2025-06-10T21:56:20.725289",
+      "status": "new",
+      "session_id": "2025-06-10T21:56:11.759386",
+      "etag": "W/\"901fa79dd2c04060d8aff20b01f38795\"",
+      "file_path": "documentation/playgroundbluetooth/playgroundbluetoothconnectionview/item/firmwarestatus/api-3029491.md"
     }
   }
 }

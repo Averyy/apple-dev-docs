@@ -1,6 +1,6 @@
 # SensorKit
 
-**Framework**: Sensorkit  
+**Framework**: SensorKit  
 **Kind**: module
 
 Retrieve data and derived metrics from sensors on an iPhone, or paired Apple Watch.
@@ -82,6 +82,9 @@ See [`SRSensor`](srsensor.md) for the complete list.
 ### Recording photoplethysmogram data
 - [class SRPhotoplethysmogramSample](srphotoplethysmogramsample.md)
   The sample photoplethysmogram (PPG) sensor data.
+### Classes
+- [class SRAcousticSettings](sracousticsettings.md)
+- [class SRSleepSession](srsleepsession.md)
 
 
 ---

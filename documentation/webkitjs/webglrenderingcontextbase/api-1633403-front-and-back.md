@@ -1,6 +1,6 @@
 # FRONT_AND_BACK
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

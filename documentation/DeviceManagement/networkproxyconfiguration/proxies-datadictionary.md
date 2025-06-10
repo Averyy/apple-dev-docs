@@ -7,18 +7,12 @@ The payload for configuring network proxies.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object NetworkProxyConfiguration.Proxies
 ```
-
-#### Discussion
-
-Specify `com.apple.SystemConfiguration` as the payload type.
 
 
 ---

@@ -1,6 +1,6 @@
 # civilDusk
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The time of civil sunset, when the sun’s center is 6° below the horizon.

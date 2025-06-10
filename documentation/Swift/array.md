@@ -544,6 +544,14 @@ When the destination array’s element type is a nonclass type that bridges to a
   Creates a new array of single-precision values from a `DSPSplitComplex` structure.
 - [init(fromSplitComplex: DSPDoubleSplitComplex, scale: Double, count: Int)](array/init(fromsplitcomplex:scale:count:)-5kgr3.md)
   Creates a new array of single-precision values from a `DSPDoubleSplitComplex` structure.
+### Instance Properties
+- [var mutableSpan: MutableSpan<Element>](array/mutablespan.md)
+- [var span: Span<Element>](array/span.md)
+### Instance Methods
+- [func withUnsafeTaggedBuffers<R>(([CMTaggedBuffer]) throws -> sending R) rethrows -> sending R](array/withunsafetaggedbuffers(_:)-2jc9o.md)
+  Access the underlying CMTaggedBuffers.
+- [func withUnsafeTaggedBuffers<R>(([CMTaggedBuffer]) throws -> sending R) rethrows -> sending R](array/withunsafetaggedbuffers(_:)-2nycx.md)
+  Access the underlying CMTaggedBuffers.
 ### Type Aliases
 - [typealias Specification](array/specification.md)
 - [typealias UnderlyingSequence](array/underlyingsequence.md)
@@ -557,8 +565,11 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [static func stereoscopicForVideoOutput() -> [CMTag]](array/stereoscopicforvideooutput.md)
   Creates a collection of CMTags with the required tags to describe basic stereoscopic video, where both left and right stereo eyes are present, e.g. kCMTagStereoLeftAndRight.
 ### Default Implementations
+- [Attachable Implementations](array/attachable-implementations.md)
 - [BidirectionalCollection Implementations](array/bidirectionalcollection-implementations.md)
 - [Collection Implementations](array/collection-implementations.md)
+- [ConvertibleFromGeneratedContent Implementations](array/convertiblefromgeneratedcontent-implementations.md)
+- [ConvertibleToGeneratedContent Implementations](array/convertibletogeneratedcontent-implementations.md)
 - [CustomDebugStringConvertible Implementations](array/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](array/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](array/customstringconvertible-implementations.md)
@@ -566,9 +577,13 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [Encodable Implementations](array/encodable-implementations.md)
 - [Equatable Implementations](array/equatable-implementations.md)
 - [ExpressibleByArrayLiteral Implementations](array/expressiblebyarrayliteral-implementations.md)
+- [Generable Implementations](array/generable-implementations.md)
 - [Hashable Implementations](array/hashable-implementations.md)
+- [InstructionsRepresentable Implementations](array/instructionsrepresentable-implementations.md)
 - [MLDataValueConvertible Implementations](array/mldatavalueconvertible-implementations.md)
 - [MutableCollection Implementations](array/mutablecollection-implementations.md)
+- [OperationParameter Implementations](array/operationparameter-implementations.md)
+- [PromptRepresentable Implementations](array/promptrepresentable-implementations.md)
 - [RandomAccessCollection Implementations](array/randomaccesscollection-implementations.md)
 - [RangeReplaceableCollection Implementations](array/rangereplaceablecollection-implementations.md)
 - [RelationshipCollection Implementations](array/relationshipcollection-implementations.md)
@@ -581,11 +596,17 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [AccelerateBuffer](../Accelerate/AccelerateBuffer.md)
 - [AccelerateMutableBuffer](../Accelerate/AccelerateMutableBuffer.md)
 - [AppExtensionScene](../ExtensionKit/AppExtensionScene.md)
+- [Attachable](../Testing/Attachable.md)
+- [BNNSGraph.Builder.OperationParameter](../Accelerate/BNNSGraph/Builder/OperationParameter.md)
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
+- [CMSampleBuffer.Content](../CoreMedia/CMSampleBuffer/Content.md)
+- [CMSampleBuffer.ContentWithFormatDescription](../CoreMedia/CMSampleBuffer/ContentWithFormatDescription.md)
 - [CVarArg](cvararg.md)
 - [Collection](collection.md)
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [ConvertibleFromGeneratedContent](../FoundationModels/ConvertibleFromGeneratedContent.md)
+- [ConvertibleToGeneratedContent](../FoundationModels/ConvertibleToGeneratedContent.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)
@@ -597,11 +618,14 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [EncodableWithConfiguration](../Foundation/EncodableWithConfiguration.md)
 - [Equatable](equatable.md)
 - [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
+- [Generable](../FoundationModels/Generable.md)
 - [Hashable](hashable.md)
+- [InstructionsRepresentable](../FoundationModels/InstructionsRepresentable.md)
 - [MLDataValueConvertible](../CreateML/MLDataValueConvertible.md)
 - [MutableCollection](mutablecollection.md)
 - [MutableDataProtocol](../Foundation/MutableDataProtocol.md)
 - [PositionScaleRange](../Charts/PositionScaleRange.md)
+- [PromptRepresentable](../FoundationModels/PromptRepresentable.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [RangeReplaceableCollection](rangereplaceablecollection.md)
 - [RelationshipCollection](../SwiftData/RelationshipCollection.md)
@@ -609,6 +633,7 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [ScaleDomain](../Charts/ScaleDomain.md)
 - [ScaleRange](../Charts/ScaleRange.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also
@@ -627,4 +652,4 @@ When the destination array’s element type is a nonclass type that bridges to a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/array)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/array)*

@@ -1,6 +1,6 @@
 # MTRegisterProfessionalVideoWorkflowFormatReaders()
 
-**Framework**: Mediatoolbox  
+**Framework**: Media Toolbox  
 **Kind**: func
 
 Enables the use of media format readers that support professional video workflows.

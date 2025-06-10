@@ -15,6 +15,18 @@
 bool IOLockTryLock(struct IOLock * lock);
 ```
 
+#### Return Value
+
+True if the mutex was unlocked and is now locked by the caller, otherwise false.
+
+#### Discussion
+
+Lock the mutex if it is currently unlocked, and return true. If the lock is held by any thread, return false.
+
+## Parameters
+
+- `lock`: Pointer to the allocated lock.
+
 ## See Also
 
 - [dequeue_head](dequeue_head.md)

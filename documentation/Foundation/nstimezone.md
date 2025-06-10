@@ -120,8 +120,9 @@ You typically work with system time zones rather than creating time zones by ide
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nstimezone)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nstimezone)*

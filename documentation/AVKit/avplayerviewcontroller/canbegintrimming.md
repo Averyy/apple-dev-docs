@@ -21,7 +21,7 @@ var canBeginTrimming: Bool { get }
 
 #### Discussion
 
-Not all media supports trimming. For example, this property returns [`false`](https://developer.apple.com/documentation/swift/false) for HTTP Live Streaming media or protected content.
+Not all media supports trimming. For example, this property returns `false` for HTTP Live Streaming media or protected content.
 
 Observe this property to determine when to change the enabled state of your app UI that initiates trimming.
 

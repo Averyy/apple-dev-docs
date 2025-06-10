@@ -8,7 +8,7 @@
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 14.0+
 
 ## Declaration
 
@@ -19,10 +19,6 @@ class ALAssetsFilter
 #### Overview
 
 > ❗ **Important**:  The Assets Library framework is deprecated as of iOS 9.0. Instead, use the Photos framework instead, which in iOS 8.0 and later provides more features and better performance for working with a user’s photo library. For more information, see `Photos`. In the Photos framework, the [`PHFetchOptions`](https://developer.apple.com/documentation/Photos/PHFetchOptions) class provides functionality for filtering requests for assets or collections.
-
- The Assets Library framework is deprecated as of iOS 9.0. Instead, use the Photos framework instead, which in iOS 8.0 and later provides more features and better performance for working with a user’s photo library. For more information, see `Photos`.
-
-In the Photos framework, the [`PHFetchOptions`](https://developer.apple.com/documentation/Photos/PHFetchOptions) class provides functionality for filtering requests for assets or collections.
 
 You use filters with the [`setAssetsFilter(_:)`](alassetsgroup/setassetsfilter(_:).md) method in [`ALAssetsGroup`](alassetsgroup.md).
 

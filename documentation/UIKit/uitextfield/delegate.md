@@ -1,6 +1,6 @@
 # delegate
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The text field’s delegate.

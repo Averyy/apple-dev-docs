@@ -91,6 +91,7 @@ An [`HTTPCookie`](httpcookie.md) object is immutable, initialized from a diction
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

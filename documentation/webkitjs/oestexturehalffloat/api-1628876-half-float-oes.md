@@ -1,6 +1,6 @@
 # HALF_FLOAT_OES
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

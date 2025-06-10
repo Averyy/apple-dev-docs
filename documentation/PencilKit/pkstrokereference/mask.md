@@ -15,7 +15,7 @@ The pretransform mask used to clip the rendering of the stroke.
 ## Declaration
 
 ```swift
-var mask: UIBezierPath? { get }
+var mask: NSBezierPath? { get }
 ```
 
 ## See Also

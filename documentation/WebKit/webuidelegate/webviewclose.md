@@ -1,6 +1,6 @@
 # webViewClose(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Closes a web view in a window.

@@ -87,13 +87,11 @@ let waiter = Task {
 - [PhotogrammetrySession.Output.automaticDownsampling](photogrammetrysession/output/automaticdownsampling.md)
   The session reduced the image size because of memory constraints.
 - [PhotogrammetrySession.Output.skippedSample(id:)](photogrammetrysession/output/skippedsample(id:).md)
-  The type of element used for Object Capture updates. The [`PhotogrammetrySample`](photogrammetrysample.md) with the [`id`](photogrammetrysample/id-swift.property.md) indicated was not able to be used for reconstruction.
+  The type of element used for Object Capture updates. The [`PhotogrammetrySample`](photogrammetrysample.md) with the [`id`](photogrammetrysample/id.md) indicated was not able to be used for reconstruction.
 ### Describing updates
 - [var localizedDescription: String](photogrammetrysession/output/localizeddescription.md)
   Localized string containing any extra information about the message, such as the reason why a sample is invalid.
 ### Iterating outputs
-- [PhotogrammetrySession.Outputs.AsyncIterator](photogrammetrysession/outputs-swift.struct/asynciterator.md)
-  The type of asynchronous iterator that produces elements of this asynchronous sequence.
 - [PhotogrammetrySession.Outputs.Element](photogrammetrysession/outputs-swift.struct/element.md)
   The type of element used for Photogrammetry Session updates.
 - [PhotogrammetrySession.Outputs](photogrammetrysession/outputs-swift.struct.md)
@@ -108,6 +106,12 @@ let waiter = Task {
 ### Enumerations
 - [PhotogrammetrySession.Output.ProcessingStage](photogrammetrysession/output/processingstage.md)
   Processing stages during reconstruction.
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

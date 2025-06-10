@@ -16,8 +16,12 @@ Get a list of localized beta test information for a specific app.
 
 - [Read the Beta App Review Details Resource of an App](get-v1-apps-_id_-betaappreviewdetail.md)
   Get the beta app review details for a specific app.
+- [GET /v1/apps/{id}/relationships/betaAppReviewDetail](get-v1-apps-_id_-relationships-betaappreviewdetail.md)
+- [GET /v1/apps/{id}/relationships/betaAppReviewDetail](get-v1-apps-_id_-relationships-betaappreviewdetail.md)
 - [Read the Beta License Agreement of an App](get-v1-apps-_id_-betalicenseagreement.md)
   Get the beta license agreement for a specific app.
+- [GET /v1/apps/{id}/relationships/betaLicenseAgreement](get-v1-apps-_id_-relationships-betalicenseagreement.md)
+- [GET /v1/apps/{id}/relationships/betaAppLocalizations](get-v1-apps-_id_-relationships-betaapplocalizations.md)
 
 
 ---

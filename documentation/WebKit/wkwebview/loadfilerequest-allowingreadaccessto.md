@@ -1,6 +1,6 @@
 # loadFileRequest(_:allowingReadAccessTo:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Loads the web content from the file the URL request object specifies and navigates to that content.
@@ -25,7 +25,7 @@ A new navigation object you use to track the loading progress of the request.
 
 #### Discussion
 
-Provide the source of this load request for app activity data by setting the [`attribution`](https://developer.apple.com/documentation/foundation/urlrequest/3767318-attribution) parameter on your request.
+Provide the source of this load request for app activity data by setting the [`attribution`](https://developer.apple.com/documentation/Foundation/URLRequest/attribution-swift.property) parameter on your request.
 
 ## Parameters
 

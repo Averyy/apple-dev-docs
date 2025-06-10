@@ -1,6 +1,6 @@
 # WKContentRuleList
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 A compiled list of rules to apply to web content.

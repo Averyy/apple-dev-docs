@@ -1,6 +1,6 @@
 # LivePhotosKit JS
 
-**Framework**: Livephotoskitjs  
+**Framework**: LivePhotosKit JS  
 **Kind**: module
 
 Play Live Photos on the web.

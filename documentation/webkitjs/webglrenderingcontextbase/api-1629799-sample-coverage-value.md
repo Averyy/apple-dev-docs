@@ -1,6 +1,6 @@
 # SAMPLE_COVERAGE_VALUE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

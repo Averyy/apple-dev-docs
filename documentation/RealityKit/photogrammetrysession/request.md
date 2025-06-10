@@ -43,15 +43,6 @@ For more information on using [`PhotogrammetrySession`](photogrammetrysession.md
   An object-creation request that returns a box the same size as the created model.
 - [PhotogrammetrySession.Request.Detail](photogrammetrysession/request/detail.md)
   Supported levels of detail for a request.
-### Comparing values
-- [var hashValue: Int](photogrammetrysession/request/hashvalue.md)
-  The hash value.
-- [func hash(into: inout Hasher)](photogrammetrysession/request/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [static func != (Self, Self) -> Bool](photogrammetrysession/request/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [static func == (PhotogrammetrySession.Request, PhotogrammetrySession.Request) -> Bool](photogrammetrysession/request/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Transforming the created model
 - [PhotogrammetrySession.Request.Geometry](photogrammetrysession/request/geometry.md)
   An object that holds a bounding box and transformation data for a request.
@@ -60,14 +51,14 @@ For more information on using [`PhotogrammetrySession`](photogrammetrysession.md
   The raw detected points from the pictures with no polygons connecting them.
 - [PhotogrammetrySession.Request.poses](photogrammetrysession/request/poses.md)
   Requests the estimated pose of the camera in each shot (relative to the common estimated coordinate system shared with the `.bounds` request).
-### Default Implementations
-- [Equatable Implementations](photogrammetrysession/request/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

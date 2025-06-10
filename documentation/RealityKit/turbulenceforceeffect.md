@@ -10,6 +10,7 @@ A force effect that applies random forces with magnitudes proportional to each b
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -21,8 +22,6 @@ struct TurbulenceForceEffect
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](turbulenceforceeffect/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(strength: Double, smoothness: Double, speed: Double)](turbulenceforceeffect/init(strength:smoothness:speed:).md)
   Creates a turbulence force effect.
 ### Instance Properties
@@ -37,12 +36,8 @@ struct TurbulenceForceEffect
 - [let strength: Float](turbulenceforceeffect/strength.md)
   The magnitude of the force.
 ### Instance Methods
-- [func encode(to: any Encoder) throws](turbulenceforceeffect/encode(to:).md)
-  Encodes this value into the given encoder.
 - [func update(parameters: inout ForceEffectParameters)](turbulenceforceeffect/update(parameters:).md)
   Calculates the turbulence forces for rigid bodies from the force effect.
-### Default Implementations
-- [ForceEffectProtocol Implementations](turbulenceforceeffect/forceeffectprotocol-implementations.md)
 
 ## Relationships
 

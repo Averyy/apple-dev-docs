@@ -51,12 +51,22 @@ Use this view to create marker instances in the closure you provide to the `cont
 ### Displaying place information
 - [func mapItemDetailSelectionAccessory(MapItemDetailSelectionAccessoryStyle?) -> some MapContent](mapcontent/mapitemdetailselectionaccessory(_:).md)
   Specifies the selection accessory to display for the selected map item content.
+### Initializers
+- [init(LocalizedStringResource, coordinate: CLLocationCoordinate2D)](marker/init(_:coordinate:)-3bjj6.md)
+  Creates a marker at the given location.
+- [init(LocalizedStringResource, image: String, coordinate: CLLocationCoordinate2D)](marker/init(_:image:coordinate:)-1q3pz.md)
+  Creates a marker at the given location with an image displayed as the balloon’s icon.
+- [init(LocalizedStringResource, monogram: Text, coordinate: CLLocationCoordinate2D)](marker/init(_:monogram:coordinate:)-77k4r.md)
+  Creates a marker at the given location with a monogram displayed as the balloon’s icon.
+- [init(LocalizedStringResource, systemImage: String, coordinate: CLLocationCoordinate2D)](marker/init(_:systemimage:coordinate:)-18xnl.md)
+  Creates a marker at the given location with a system image displayed as the balloon’s icon.
 
 ## Relationships
 
 ### Conforms To
 - [MapContent](mapcontent.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

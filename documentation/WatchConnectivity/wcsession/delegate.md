@@ -1,6 +1,6 @@
 # delegate
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 The delegate for the session object

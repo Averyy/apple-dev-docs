@@ -36,8 +36,6 @@ In many applications, there is no need to subsequently assign a newly-created ma
 
 > ❗ **Important**:  This method is the designated initializer for `NSManagedObject`. You must not initialize a managed object simply by sending it `init`.
 
- This method is the designated initializer for `NSManagedObject`. You must not initialize a managed object simply by sending it `init`.
-
 ##### Special Considerations
 
 If you override [`init(entity:insertInto:)`](nsmanagedobject/init(entity:insertinto:).md), you  ensure that you set `self` to the return value from invocation of `super`’s implementation, as shown in the following example:

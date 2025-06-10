@@ -1,6 +1,6 @@
 # velocity(value:time:context:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method  
 **Required**: Yes
 

@@ -22,7 +22,7 @@ case requestRateLimited
 
 #### Discussion
 
-Check for a [`CKErrorRetryAfterKey`](ckerrorretryafterkey.md) key in the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary of any CloudKit error that you receive. It’s especially important to check for it if you receive any of these errors. Use the value of the [`CKErrorRetryAfterKey`](ckerrorretryafterkey.md) key as the number of seconds to wait before retrying this operation.
+Check for a [`CKErrorRetryAfterKey`](ckerrorretryafterkey.md) key in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary of any CloudKit error that you receive. It’s especially important to check for it if you receive any of these errors. Use the value of the [`CKErrorRetryAfterKey`](ckerrorretryafterkey.md) key as the number of seconds to wait before retrying this operation.
 
 ## See Also
 

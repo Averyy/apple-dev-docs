@@ -20,8 +20,6 @@ var weightedDurationSum: TimeInterval { get }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.7 and later.
 
- This property is available in iOS 12.5, and in iOS 13.7 and later.
-
 This value is stored as seconds, rounded up to the next minute. Divide by 60 to convert to minutes when displaying to the user.
 
 [`weightedDurationSum`](enexposuresummaryitem/weighteddurationsum.md) ignores [`infectiousness`](enexposurewindow/infectiousness.md) and [`diagnosisReportType`](enexposurewindow/diagnosisreporttype.md); therefore, it can be nonzero for encounters that have a infectiousness weight or diagnosis report type weight of `0`.

@@ -1,6 +1,6 @@
 # Atoms
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 The basic data unit in a QuickTime file is the atom.
 

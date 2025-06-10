@@ -1,6 +1,6 @@
 # WKWebView
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that displays interactive web content, such as for an in-app browser.
@@ -29,7 +29,7 @@ A [`WKWebView`](wkwebview.md) object is a platform-native view that you use to i
 
 A web view offers control over the navigation and user experience through delegate objects. Use the navigation delegate to react when the user clicks links in your web content, or interacts with the content in a way that affects navigation. For example, you might prevent the user from navigating to new content unless specific conditions are met. Use the UI delegate to present native UI elements, such as alerts or contextual menus, in response to interactions with your web content.
 
-> **Note**:  [`WKWebView`](wkwebview.md) replaces the [`UIWebView`](https://developer.apple.com/documentation/UIKit/UIWebView) class in iOS 8 and later, and it replaces the [`WebView`](webview.md) class in macOS 10.10 and later.
+> **Note**:  [`WKWebView`](wkwebview.md) replaces the [`UIWebView`](https://developer.apple.com/documentation/UIKit/UIWebView) class in iOS 8 and later, and it replaces the [`WebView`](webview-swift.class.md) class in macOS 10.10 and later.
 
 Embed a [`WKWebView`](wkwebview.md) object programmatically into your view hierarchy, or add it using Interface Builder. Interface Builder supports many customizations, such as configuring data detectors, media playback, and interaction behaviors. For more extensive customizations, create your web view programmatically using a [`WKWebViewConfiguration`](wkwebviewconfiguration.md) object. For example, use a web view configuration object to specify handlers for custom URL schemes, manage cookies, and customize preferences for your web content.
 
@@ -256,11 +256,17 @@ If your app has the [`com.apple.developer.web-browser`](https://developer.apple.
 - [func setMinimumViewportInset(UIEdgeInsets, maximumViewportInset: UIEdgeInsets)](wkwebview/setminimumviewportinset(_:maximumviewportinset:).md)
 - [var minimumViewportInset: UIEdgeInsets](wkwebview/minimumviewportinset.md)
 - [var maximumViewportInset: UIEdgeInsets](wkwebview/maximumviewportinset.md)
+### Examining data types
+- [struct WKWebViewDataType](wkwebviewdatatype.md)
 ### Deprecated
 - [Deprecated symbols](wkwebview-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Instance Properties
+- [var isBlockedByScreenTime: Bool](wkwebview/isblockedbyscreentime.md)
 - [var isWritingToolsActive: Bool](wkwebview/iswritingtoolsactive.md)
+### Instance Methods
+- [func fetchData(of: WKWebViewDataType, completionHandler: (Data?, (any Error)?) -> Void)](wkwebview/fetchdata(of:completionhandler:).md)
+- [func restoreData(Data, completionHandler: ((any Error)?) -> Void)](wkwebview/restoredata(_:completionhandler:).md)
 
 ## Relationships
 
@@ -317,4 +323,4 @@ If your app has the [`com.apple.developer.web-browser`](https://developer.apple.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/wkwebview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/wkwebview)*

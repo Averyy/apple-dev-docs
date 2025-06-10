@@ -99,6 +99,8 @@ In particular, note that `j`, the index of the second day with absences, was fou
 ### Instance Properties
 - [var capacity: Int](arrayslice/capacity.md)
   The total number of elements that the array can contain without allocating new storage.
+- [var mutableSpan: MutableSpan<Element>](arrayslice/mutablespan.md)
+- [var span: Span<Element>](arrayslice/span.md)
 ### Instance Methods
 - [func insert(Element, at: Int)](arrayslice/insert(_:at:).md)
   Inserts a new element at the specified position.
@@ -115,6 +117,7 @@ In particular, note that `j`, the index of the second day with absences, was fou
 - [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer) throws -> R) rethrows -> R](arrayslice/withunsafemutablebytes(_:).md)
   Calls the given closure with a pointer to the underlying bytes of the array’s mutable contiguous storage.
 ### Default Implementations
+- [Attachable Implementations](arrayslice/attachable-implementations.md)
 - [BidirectionalCollection Implementations](arrayslice/bidirectionalcollection-implementations.md)
 - [Collection Implementations](arrayslice/collection-implementations.md)
 - [CustomDebugStringConvertible Implementations](arrayslice/customdebugstringconvertible-implementations.md)
@@ -124,6 +127,7 @@ In particular, note that `j`, the index of the second day with absences, was fou
 - [ExpressibleByArrayLiteral Implementations](arrayslice/expressiblebyarrayliteral-implementations.md)
 - [Hashable Implementations](arrayslice/hashable-implementations.md)
 - [MutableCollection Implementations](arrayslice/mutablecollection-implementations.md)
+- [OperationParameter Implementations](arrayslice/operationparameter-implementations.md)
 - [RandomAccessCollection Implementations](arrayslice/randomaccesscollection-implementations.md)
 - [RangeReplaceableCollection Implementations](arrayslice/rangereplaceablecollection-implementations.md)
 - [Sequence Implementations](arrayslice/sequence-implementations.md)
@@ -133,6 +137,8 @@ In particular, note that `j`, the index of the second day with absences, was fou
 ### Conforms To
 - [AccelerateBuffer](../Accelerate/AccelerateBuffer.md)
 - [AccelerateMutableBuffer](../Accelerate/AccelerateMutableBuffer.md)
+- [Attachable](../Testing/Attachable.md)
+- [BNNSGraph.Builder.OperationParameter](../Accelerate/BNNSGraph/Builder/OperationParameter.md)
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
@@ -151,6 +157,7 @@ In particular, note that `j`, the index of the second day with absences, was fou
 - [ScaleDomain](../Charts/ScaleDomain.md)
 - [ScaleRange](../Charts/ScaleRange.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also
@@ -161,4 +168,4 @@ In particular, note that `j`, the index of the second day with absences, was fou
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/arrayslice)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/arrayslice)*

@@ -50,6 +50,10 @@ struct AVOutputSettingsPreset
 ### Initializers
 - [init(rawValue: String)](avoutputsettingspreset/init(rawvalue:).md)
   Creates a preset with a string value.
+### Type Properties
+- [static let hevc4320x2160: AVOutputSettingsPreset](avoutputsettingspreset/hevc4320x2160.md)
+- [static let mvhevc4320x4320: AVOutputSettingsPreset](avoutputsettingspreset/mvhevc4320x4320.md)
+- [static let mvhevc7680x7680: AVOutputSettingsPreset](avoutputsettingspreset/mvhevc7680x7680.md)
 
 ## Relationships
 
@@ -58,6 +62,7 @@ struct AVOutputSettingsPreset
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # preferences
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The object that manages the preference-related settings for the web view.

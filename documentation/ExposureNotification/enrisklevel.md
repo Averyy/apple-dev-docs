@@ -20,8 +20,6 @@ typealias ENRiskLevel = UInt8
 
 > ❗ **Important**:  This type is available in iOS 12.5, and in iOS 13.5 and later.
 
- This type is available in iOS 12.5, and in iOS 13.5 and later.
-
 ## See Also
 
 - [class ENExposureInfo](enexposureinfo.md)

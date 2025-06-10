@@ -40,8 +40,6 @@ In a custom implementation of [`load()`](nsobject-swift.class/load().md) you can
 
 > ❗ **Important**:  Custom implementations of the `load` method for Swift classes bridged to Objective-C are not called automatically.
 
- Custom implementations of the `load` method for Swift classes bridged to Objective-C are not called automatically.
-
 ## See Also
 
 - [class func initialize()](nsobject-swift.class/initialize.md)

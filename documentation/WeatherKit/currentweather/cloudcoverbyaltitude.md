@@ -1,6 +1,6 @@
 # cloudCoverByAltitude
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The percentage of the sky covered with low-altitude, middle altitude and high-altitude clouds during the period.

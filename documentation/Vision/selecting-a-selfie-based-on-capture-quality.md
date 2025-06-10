@@ -94,4 +94,4 @@ Connect the iPhone to the Mac over USB. The first time you run this sample app, 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/selecting-a-selfie-based-on-capture-quality)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/selecting-a-selfie-based-on-capture-quality)*

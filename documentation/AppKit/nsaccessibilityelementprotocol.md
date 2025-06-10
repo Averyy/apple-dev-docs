@@ -1,6 +1,6 @@
 # NSAccessibilityElementProtocol
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: protocol
 
 A role-based protocol that declares the minimum interface necessary to interact with an assistive app.
@@ -58,6 +58,7 @@ This protocol provides the base behavior for more specific, role-based accessibi
 ### Conforming Types
 - [NSActionCell](nsactioncell.md)
 - [NSApplication](nsapplication.md)
+- [NSBackgroundExtensionView](nsbackgroundextensionview.md)
 - [NSBox](nsbox.md)
 - [NSBrowser](nsbrowser.md)
 - [NSBrowserCell](nsbrowsercell.md)
@@ -78,6 +79,8 @@ This protocol provides the base behavior for more specific, role-based accessibi
 - [NSFontPanel](nsfontpanel.md)
 - [NSForm](nsform.md)
 - [NSFormCell](nsformcell.md)
+- [NSGlassEffectContainerView](nsglasseffectcontainerview.md)
+- [NSGlassEffectView](nsglasseffectview.md)
 - [NSGridView](nsgridview.md)
 - [NSImageCell](nsimagecell.md)
 - [NSImageView](nsimageview.md)
@@ -146,4 +149,4 @@ This protocol provides the base behavior for more specific, role-based accessibi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsaccessibilityelementprotocol)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsaccessibilityelementprotocol)*

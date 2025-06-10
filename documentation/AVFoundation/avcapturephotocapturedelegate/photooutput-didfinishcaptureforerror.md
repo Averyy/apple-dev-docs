@@ -20,8 +20,8 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, didFinishCaptureFor re
 
 ## Mentions
 
-- [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
 - [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
+- [Capturing Photos in RAW and Apple ProRAW Formats](capturing-photos-in-raw-and-apple-proraw-formats.md)
 
 #### Discussion
 

@@ -1,6 +1,6 @@
 # setMode(_:)
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: method
 
 Sets the audio session’s mode.

@@ -25,7 +25,7 @@ The decoding of an App Clip Code URL fails under these circumstances:
 - The AASA file hosted at the App Clip Code URL’s domain lacks the App Clip’s fully-qualified application identifier.
 - The App Clip Code is not associated to the App Clip in an App Clip experience in App Store Connect.
 
-For more information, see [`Configuring the launch experience of your App Clip`](https://developer.apple.com/documentation/AppClip/configuring-the-launch-experience-of-your-app-clip).
+For more information, see [`Configuring App Clip experiences`](https://developer.apple.com/documentation/AppClip/configuring-the-launch-experience-of-your-app-clip).
 
 ## See Also
 

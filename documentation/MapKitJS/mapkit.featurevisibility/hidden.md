@@ -22,7 +22,7 @@ The following example shows how to always hide the compass, the map type, and th
 
 ```javascript
 // Create a map.
-var map = new mapkit.Map("my-map-element-id");
+const map = new mapkit.Map("my-map-element-id");
 
 // Always hide the compass. 
 map.showsCompass = mapkit.FeatureVisibility.Hidden;

@@ -26,8 +26,6 @@ This method is relevant for applications that present directories. This might oc
 
 > ❗ **Important**:  If you implement this method, you must execute the block in the `completionHandler` parameter at the end of your implementation. The system waits for you to execute that block before allowing the other object to delete the item at the specified URL. Therefore, failure to execute the block could stall threads in your application or in other processes.
 
- If you implement this method, you must execute the block in the `completionHandler` parameter at the end of your implementation. The system waits for you to execute that block before allowing the other object to delete the item at the specified URL. Therefore, failure to execute the block could stall threads in your application or in other processes.
-
 ## Parameters
 
 - `url`: The URL of the item being deleted from the presented directory. The item need not be at the top level of the presented directory but may itself be inside a nested subdirectory.

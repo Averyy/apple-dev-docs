@@ -125,4 +125,4 @@ When you edit In-App Purchase information in App Store Connect, it can take up t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox)*

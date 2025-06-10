@@ -28,6 +28,7 @@ The run loop doesn’t support any scheduler options.
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

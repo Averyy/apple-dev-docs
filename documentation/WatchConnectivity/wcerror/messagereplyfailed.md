@@ -1,6 +1,6 @@
 # messageReplyFailed
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An error that occurs when the system can’t return the reply.

@@ -45,6 +45,17 @@ struct NSSuggestionItemResponse<SuggestionItemType>
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 
+## See Also
+
+- [var isAutomaticTextCompletionEnabled: Bool](nstextfield/isautomatictextcompletionenabled.md)
+  A Boolean value that indicates whether the text field automatically completes text as the user types.
+- [protocol NSTextSuggestionsDelegate](nstextsuggestionsdelegate.md)
+  A protocol for suggestion delegates of text fields to conform to in order to provide text suggestions in response to the user typing.
+- [struct NSSuggestionItem](nssuggestionitem.md)
+  The items that appear in suggestion menus.
+- [struct NSSuggestionItemSection](nssuggestionitemsection.md)
+  Describes a section of suggestions items in a suggestions menu
+
 
 ---
 

@@ -1,6 +1,6 @@
 # UIToolTipInteraction
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An interaction object that makes it possible to show a tooltip when hovering a pointer over a view or control.
@@ -85,4 +85,4 @@ Setting the [`toolTip`](uicontrol/tooltip.md) property creates a tooltip interac
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uitooltipinteraction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uitooltipinteraction)*

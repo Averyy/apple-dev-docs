@@ -31,8 +31,6 @@ This option uses fewer sensors to determine the device attitude, and is more pow
 
 > 💡 **Tip**:  Save the first reported attitude value, and compare it to new values to determine changes since the start of the service.
 
- Save the first reported attitude value, and compare it to new values to determine changes since the start of the service.
-
 ## See Also
 
 - [static var xArbitraryCorrectedZVertical: CMAttitudeReferenceFrame](cmattitudereferenceframe/xarbitrarycorrectedzvertical.md)

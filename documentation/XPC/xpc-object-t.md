@@ -1,6 +1,6 @@
 # xpc_object_t
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: typealias
 
 A type that can describe all XPC objects, including dictionaries, arrays, strings, and numbers.

@@ -1,0 +1,18 @@
+# unlockStreamForIO
+
+**Framework**: Kernel  
+**Kind**: clm
+
+**Availability**:
+- macOS 10.4+ - Deprecated in 10.10
+
+## Declaration
+
+```swift
+static void unlockStreamForIO(IOAudioStream *stream);
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/ioaudioengine/1561572-unlockstreamforio)*

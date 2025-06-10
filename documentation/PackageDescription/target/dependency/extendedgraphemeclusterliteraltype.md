@@ -15,13 +15,6 @@ typealias ExtendedGraphemeClusterLiteralType = String
 
 Valid types for `ExtendedGraphemeClusterLiteralType` are `Character`, `String`, and `StaticString`.
 
-## See Also
-
-- [Target.Dependency.StringLiteralType](target/dependency/stringliteraltype.md)
-  A type that represents a string literal.
-- [Target.Dependency.UnicodeScalarLiteralType](target/dependency/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
-
 
 ---
 

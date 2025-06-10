@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: case
 
-Indicates that the user included digits after a hard pause in their dial string. A hard pause is indicated by a semicolon (;) and waits for further user interaction before dialing the additional digits.
+A person entered a hard pause.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,17 @@ Indicates that the user included digits after a hard pause in their dial string.
 ```swift
 case hardPause
 ```
+
+#### Discussion
+
+A semicolon (;) indicates a hard pause. When a person enters a hard pause, the system waits for further user interaction before it dials additional digits.
+
+## See Also
+
+- [PlayToneAction.Tone.single](playtoneaction/tone-swift.enum/single.md)
+  A person entered a digit.
+- [PlayToneAction.Tone.softPause](playtoneaction/tone-swift.enum/softpause.md)
+  A person entered a soft pause.
 
 
 ---

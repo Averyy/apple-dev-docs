@@ -1,6 +1,6 @@
 # loading
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the loading state changed.

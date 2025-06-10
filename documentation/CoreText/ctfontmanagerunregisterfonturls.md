@@ -1,6 +1,6 @@
 # CTFontManagerUnregisterFontURLs(_:_:_:)
 
-**Framework**: Coretext  
+**Framework**: Core Text  
 **Kind**: func
 
 Unregisters fonts from the specified font URLs with the font manager.

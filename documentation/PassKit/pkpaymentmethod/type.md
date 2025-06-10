@@ -1,6 +1,6 @@
 # type
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property
 
 A value that represents the card’s type.

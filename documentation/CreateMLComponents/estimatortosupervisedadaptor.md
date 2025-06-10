@@ -47,6 +47,7 @@ struct EstimatorToSupervisedAdaptor<Estimator, Annotation> where Estimator : Est
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SupervisedEstimator](supervisedestimator.md)
 
 ## See Also

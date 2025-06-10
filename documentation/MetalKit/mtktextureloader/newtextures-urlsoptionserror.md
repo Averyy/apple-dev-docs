@@ -33,9 +33,9 @@ An array of Metal textures, each corresponding to a URL listed in the `URLs` par
 
 - [func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]?) throws -> any MTLTexture](mtktextureloader/newtexture(url:options:).md)
   Synchronously loads image data and creates a new Metal texture from a given URL.
-- [func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]?, completionHandler: MTKTextureLoader.Callback)](mtktextureloader/newtexture(url:options:completionhandler:).md)
+- [func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]?, completionHandler: ((any MTLTexture)?, (any Error)?) -> Void)](mtktextureloader/newtexture(url:options:completionhandler:).md)
   Asynchronously loads image data and creates a new Metal texture from a given URL.
-- [func newTextures(URLs: [URL], options: [MTKTextureLoader.Option : Any]?, completionHandler: MTKTextureLoader.ArrayCallback)](mtktextureloader/newtextures(urls:options:completionhandler:).md)
+- [func newTextures(URLs: [URL], options: [MTKTextureLoader.Option : Any]?, completionHandler: ([any MTLTexture], (any Error)?) -> Void)](mtktextureloader/newtextures(urls:options:completionhandler:).md)
   Asynchronously loads image data and creates new Metal textures from the specified list of URLs.
 
 

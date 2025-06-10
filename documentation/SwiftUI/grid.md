@@ -1,6 +1,6 @@
 # Grid
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A container view that arranges other views in a two dimensional layout.
@@ -158,4 +158,4 @@ Lazy grids render their cells when SwiftUI needs to display them, rather than al
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/grid)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/grid)*

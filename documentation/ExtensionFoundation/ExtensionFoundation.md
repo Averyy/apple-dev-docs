@@ -38,6 +38,15 @@ Use ExtensionFoundation by itself to create extensions and extension points that
 ### Host Apps
 - [struct AppExtensionProcess](appextensionprocess.md)
   An object that represents a running app extension process.
+### Protocols
+- [protocol ExtensionPointDefining](extensionpointdefining.md)
+### Structures
+- [struct AppExtensionPoint](appextensionpoint.md)
+  A type representing an extension point
+- [struct ConnectionHandler](connectionhandler.md)
+  ConnectionHandler handles incoming XPC connections.
+### Type Aliases
+- [typealias MainFunction](mainfunction.md)
 
 
 ---

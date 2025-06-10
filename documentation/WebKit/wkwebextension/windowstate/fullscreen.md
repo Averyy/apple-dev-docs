@@ -1,6 +1,6 @@
 # WKWebExtension.WindowState.fullscreen
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates a window is in full-screen mode.

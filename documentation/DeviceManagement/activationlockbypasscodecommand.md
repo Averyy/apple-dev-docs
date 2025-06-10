@@ -10,8 +10,6 @@ The command to get the code to bypass Activation Lock on a device.
 - iPadOS 7.1+
 - macOS 10.15+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,14 +23,14 @@ object ActivationLockBypassCodeCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object ActivationLockBypassCodeCommand.Command](activationlockbypasscodecommand/command-data.dictionary.md)
-  The request dictionary to get the code to bypass Activation Lock on a device.
+  The command to get the code to bypass Activation Lock on a device.
 
 ## See Also
 
 - [object ActivationLockBypassCodeResponse](activationlockbypasscoderesponse.md)
-  A response from the device after it processes the command to get the Activation Lock bypass code.
+  A response from the device after it processes the command to get the code to bypass Activation Lock on a device.
 
 
 ---

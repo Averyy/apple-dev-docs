@@ -29,8 +29,6 @@ For example, you can create a classifier that predicts whether a sports team is 
 
 > ❗ **Important**: When working with image or natural language data, don’t use [`MLClassifier`](mlclassifier.md). Instead, use the `MLImageClassifierBuilder` or one of the Natural Language models ([`MLTextClassifier`](mltextclassifier.md) or [`MLWordTagger`](mlwordtagger.md)).
 
-When working with image or natural language data, don’t use [`MLClassifier`](mlclassifier.md). Instead, use the `MLImageClassifierBuilder` or one of the Natural Language models ([`MLTextClassifier`](mltextclassifier.md) or [`MLWordTagger`](mlwordtagger.md)).
-
 When you create an [`MLClassifier`](mlclassifier.md), Create ML inspects your data and automatically chooses a specific classifier (see ).
 
 ## Topics
@@ -107,6 +105,7 @@ When you create an [`MLClassifier`](mlclassifier.md), Create ML inspects your da
 - [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

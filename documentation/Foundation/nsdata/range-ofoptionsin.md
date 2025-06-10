@@ -22,7 +22,7 @@ func range(of dataToFind: Data, options mask: NSData.SearchOptions = [], in sear
 
 #### Return Value
 
-An [`NSRange`](nsrange.md) structure giving the location and length of `dataToFind` within `searchRange`, modulo the options in `mask`. The range returned is relative to the start of the searched data, not the passed-in search range. Returns `{``NSNotFound``, 0}` if `dataToFind` is not found or is empty.
+An [`NSRange`](nsrange-c.struct.md) structure giving the location and length of `dataToFind` within `searchRange`, modulo the options in `mask`. The range returned is relative to the start of the searched data, not the passed-in search range. Returns `{``NSNotFound``, 0}` if `dataToFind` is not found or is empty.
 
 ## Parameters
 

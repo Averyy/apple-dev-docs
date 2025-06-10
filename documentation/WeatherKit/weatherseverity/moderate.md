@@ -1,6 +1,6 @@
 # WeatherSeverity.moderate
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Possible threat.

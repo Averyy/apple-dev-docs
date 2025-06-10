@@ -1,6 +1,6 @@
 # Running your iOS apps in macOS
 
-**Framework**: Apple Silicon
+**Framework**: Apple silicon
 
 Modernize the iOS apps you choose to run on a Mac with Apple silicon, or opt out of running on a Mac altogether.
 
@@ -60,7 +60,7 @@ When your iOS app runs in macOS, the system automatically maps iOS features to t
 - PushKit notifications launch your app in the background. In macOS, these notifications launch your app in the foreground instead. Use a notification-service extension to run your code in the background.
 - The presence (or absence) of a symbol conveys special meaning. For example, don’t assume your app runs on a specific device or platform because of the presence or absence of a symbol.
 
-When you check for specific features, fall back to reasonable default behaviors when those features aren’t available. Ensure that the absence of a feature doesn’t cause unexpected results, or prevent the user from doing something meaningful with your app. The [`isiOSAppOnMac`](https://developer.apple.com/documentation/foundation/processinfo/3608556-isiosapponmac) property of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) tells you whether your iOS app is running in macOS or iOS, but checking that property should always be your last choice. It’s better to run the same code on both platforms.
+When you check for specific features, fall back to reasonable default behaviors when those features aren’t available. Ensure that the absence of a feature doesn’t cause unexpected results, or prevent the user from doing something meaningful with your app. The [`isiOSAppOnMac`](https://developer.apple.com/documentation/Foundation/ProcessInfo/isiOSAppOnMac) property of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) tells you whether your iOS app is running in macOS or iOS, but checking that property should always be your last choice. It’s better to run the same code on both platforms.
 
 For more information about how to handle environment differences, see [`Adapting iOS code to run in the macOS environment`](adapting-ios-code-to-run-in-the-macos-environment.md).
 

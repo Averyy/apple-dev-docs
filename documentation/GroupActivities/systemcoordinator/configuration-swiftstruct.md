@@ -38,6 +38,7 @@ To specify your app’s preferences, create a new [`SystemCoordinator.Configurat
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

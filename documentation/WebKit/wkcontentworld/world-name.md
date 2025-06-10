@@ -1,6 +1,6 @@
 # world(name:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the custom content world with the specified name.

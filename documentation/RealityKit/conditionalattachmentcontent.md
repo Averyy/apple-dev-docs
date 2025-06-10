@@ -13,11 +13,6 @@
 struct ConditionalAttachmentContent<TrueContent, FalseContent>
 ```
 
-## Topics
-
-### Default Implementations
-- [AttachmentContent Implementations](conditionalattachmentcontent/attachmentcontent-implementations.md)
-
 ## Relationships
 
 ### Conforms To
@@ -30,6 +25,7 @@ struct ConditionalAttachmentContent<TrueContent, FalseContent>
   A result builder that creates attachment content from closures.
 - [protocol AttachmentContent](attachmentcontent.md)
   A type that provides content for an attachment content builder.
+- [struct TuplePackAttachmentContent](tuplepackattachmentcontent.md)
 - [struct EmptyAttachmentContent](emptyattachmentcontent.md)
   A attachment content that doesn’t contain any content.
 - [struct TupleAttachmentContent](tupleattachmentcontent.md)

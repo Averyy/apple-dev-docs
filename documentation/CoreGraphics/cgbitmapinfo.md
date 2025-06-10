@@ -46,16 +46,44 @@ Applications that store pixel data in memory using ARGB format must take care in
 - [static var floatInfoMask: CGBitmapInfo](cgbitmapinfo/floatinfomask.md)
 ### Initializers
 - [init(rawValue: UInt32)](cgbitmapinfo/init(rawvalue:).md)
+- [init(some Sequence<CGBitmapInfo>)](cgbitmapinfo/init(_:).md)
+- [init(alpha: CGImageAlphaInfo, component: CGImageComponentInfo, byteOrder: CGImageByteOrderInfo)](cgbitmapinfo/init(alpha:component:byteorder:).md)
+- [init(alpha: CGImageAlphaInfo, component: CGImageComponentInfo, byteOrder: CGImageByteOrderInfo, pixelFormat: CGImagePixelFormatInfo)](cgbitmapinfo/init(alpha:component:byteorder:pixelformat:).md)
+- [init(arrayLiteral: CGBitmapInfo...)](cgbitmapinfo/init(arrayliteral:).md)
+### Instance Properties
+- [var alpha: CGImageAlphaInfo](cgbitmapinfo/alpha.md)
+- [var byteOrder: CGImageByteOrderInfo](cgbitmapinfo/byteorder.md)
+- [var component: CGImageComponentInfo](cgbitmapinfo/component.md)
+- [var isEmpty: Bool](cgbitmapinfo/isempty.md)
+- [var pixelFormat: CGImagePixelFormatInfo](cgbitmapinfo/pixelformat.md)
+### Instance Methods
+- [func formIntersection(CGBitmapInfo)](cgbitmapinfo/formintersection(_:).md)
+- [func formSymmetricDifference(CGBitmapInfo)](cgbitmapinfo/formsymmetricdifference(_:).md)
+- [func formUnion(CGBitmapInfo)](cgbitmapinfo/formunion(_:).md)
+- [func insert(CGBitmapInfo) -> (inserted: Bool, memberAfterInsert: CGBitmapInfo)](cgbitmapinfo/insert(_:).md)
+- [func intersection(CGBitmapInfo) -> CGBitmapInfo](cgbitmapinfo/intersection(_:).md)
+- [func isDisjoint(with: CGBitmapInfo) -> Bool](cgbitmapinfo/isdisjoint(with:).md)
+- [func isSubset(of: CGBitmapInfo) -> Bool](cgbitmapinfo/issubset(of:).md)
+- [func isSuperset(of: CGBitmapInfo) -> Bool](cgbitmapinfo/issuperset(of:).md)
+- [func remove(CGBitmapInfo) -> CGBitmapInfo?](cgbitmapinfo/remove(_:).md)
+- [func subtract(CGBitmapInfo)](cgbitmapinfo/subtract(_:).md)
+- [func subtracting(CGBitmapInfo) -> CGBitmapInfo](cgbitmapinfo/subtracting(_:).md)
+- [func symmetricDifference(CGBitmapInfo) -> CGBitmapInfo](cgbitmapinfo/symmetricdifference(_:).md)
+- [func update(with: CGBitmapInfo) -> CGBitmapInfo?](cgbitmapinfo/update(with:).md)
 
 ## Relationships
 
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Copyable](../Swift/Copyable.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomReflectable](../Swift/CustomReflectable.md)
 - [Equatable](../Swift/Equatable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

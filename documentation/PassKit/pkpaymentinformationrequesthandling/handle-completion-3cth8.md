@@ -20,7 +20,7 @@ func handle(_ configurationRequest: PKBarcodeEventConfigurationRequest) async
 
 ## See Also
 
-- [func handleInformationRequest(PKBarcodeEventMetadataRequest, completion: PKInformationRequestCompletionBlock)](pkpaymentinformationrequesthandling/handleinformationrequest(_:completion:).md)
+- [func handleInformationRequest(PKBarcodeEventMetadataRequest, completion: (PKBarcodeEventMetadataResponse) -> Void)](pkpaymentinformationrequesthandling/handleinformationrequest(_:completion:).md)
 - [class PKBarcodeEventConfigurationRequest](pkbarcodeeventconfigurationrequest.md)
 - [class PKBarcodeEventMetadataRequest](pkbarcodeeventmetadatarequest.md)
 - [class PKBarcodeEventMetadataResponse](pkbarcodeeventmetadataresponse.md)

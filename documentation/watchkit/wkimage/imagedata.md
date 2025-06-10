@@ -1,6 +1,6 @@
 # imageData
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The data object containing the raw image data.

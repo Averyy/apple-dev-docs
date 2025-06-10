@@ -1,6 +1,6 @@
 # locationManagerShouldDisplayHeadingCalibration(_:)
 
-**Framework**: Corelocation  
+**Framework**: Core Location  
 **Kind**: method
 
 Asks the delegate whether the heading calibration alert should be displayed.

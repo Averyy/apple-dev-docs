@@ -1,6 +1,6 @@
 # XCUIKeyboardKey
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: struct
 
 Constants to represent keys that have no typewritten equivalent.
@@ -139,6 +139,7 @@ These constants represent the set of modifier, navigation, function, and other k
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -20,6 +20,8 @@ The example request below retrieves information about an Xcode Cloud workflow’
   Get information about a specific Xcode Cloud workflow.
 - [List All Xcode Cloud Builds for a Workflow](get-v1-ciworkflows-_id_-buildruns.md)
   List all builds Xcode Cloud performed for a specific workflow.
+- [GET /v1/ciWorkflows/{id}/relationships/buildRuns](get-v1-ciworkflows-_id_-relationships-buildruns.md)
+- [GET /v1/ciWorkflows/{id}/relationships/repository](get-v1-ciworkflows-_id_-relationships-repository.md)
 
 
 ---

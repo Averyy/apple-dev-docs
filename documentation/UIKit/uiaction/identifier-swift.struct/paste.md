@@ -26,6 +26,7 @@ static let paste: UIAction.Identifier
   Identifies the action that pastes the current contents of the pasteboard into your app’s interface using the text style of the target.
 - [static let pasteAndSearch: UIAction.Identifier](uiaction/identifier-swift.struct/pasteandsearch.md)
   Identifies the action that pastes the current contents of the pasteboard into your app’s interface and performs a search.
+- [static let newFromPasteboard: UIAction.Identifier](uiaction/identifier-swift.struct/newfrompasteboard.md)
 
 
 ---

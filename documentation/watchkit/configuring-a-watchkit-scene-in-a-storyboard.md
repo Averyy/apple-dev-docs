@@ -1,6 +1,6 @@
 # Configuring a WatchKit Scene in a Storyboard
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Xcode lets you configure information about your SpriteKit Scene in your storyboard file. The following table lists the attributes you can configure in your storyboard and their meaning.
 

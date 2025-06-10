@@ -14,6 +14,8 @@ List all builds Xcode Cloud performed for a specific workflow.
   Get information about a specific Xcode Cloud workflow.
 - [Read the Repository Information for an Xcode Cloud Workflow](get-v1-ciworkflows-_id_-repository.md)
   Get information about the Git repository of a specific Xcode Cloud workflow.
+- [GET /v1/ciWorkflows/{id}/relationships/buildRuns](get-v1-ciworkflows-_id_-relationships-buildruns.md)
+- [GET /v1/ciWorkflows/{id}/relationships/repository](get-v1-ciworkflows-_id_-relationships-repository.md)
 
 
 ---

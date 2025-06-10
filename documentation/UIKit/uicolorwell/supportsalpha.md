@@ -26,6 +26,10 @@ If this property is [`false`](https://developer.apple.com/documentation/swift/fa
 
 - [var title: String?](uicolorwell/title.md)
   The title for the color picker.
+- [var maximumLinearExposure: CGFloat](uicolorwell/maximumlinearexposure.md)
+  The maximum exposure to apply to a color when returned by the color well.
+- [var supportsEyedropper: Bool](uicolorwell/supportseyedropper.md)
+  If set to `NO` the eyedropper functionality is not supported for this color well.
 - [var selectedColor: UIColor?](uicolorwell/selectedcolor.md)
   The selected color in the color picker.
 

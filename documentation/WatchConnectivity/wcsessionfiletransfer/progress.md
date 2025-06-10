@@ -1,6 +1,6 @@
 # progress
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An object that tracks the progress of the file transfer.

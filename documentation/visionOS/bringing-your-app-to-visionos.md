@@ -1,6 +1,6 @@
 # Bringing your existing apps to visionOS
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Build a version of your iPadOS or iOS app using the visionOS SDK, and update your code for platform differences.
 
@@ -119,4 +119,4 @@ For more information about designing images for your app, see [`Images`](https:/
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/bringing-your-app-to-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/bringing-your-app-to-visionos)*

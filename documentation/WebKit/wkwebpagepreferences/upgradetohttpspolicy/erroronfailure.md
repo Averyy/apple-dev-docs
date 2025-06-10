@@ -1,6 +1,6 @@
 # WKWebpagePreferences.UpgradeToHTTPSPolicy.errorOnFailure
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 **Availability**:

@@ -46,6 +46,7 @@ Pass these values to the [`reportCall(with:endedAt:reason:)`](cxprovider/reportc
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

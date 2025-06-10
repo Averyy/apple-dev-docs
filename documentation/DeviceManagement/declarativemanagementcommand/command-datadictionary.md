@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to enable the declarative management engine on a device.
+The command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 
 **Availability**:
 - iOS 15.0+
@@ -12,18 +12,12 @@ The command to enable the declarative management engine on a device.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object DeclarativeManagementCommand.Command
 ```
-
-#### Discussion
-
-The server uses this command to turn on the declarative management engine on the device the first time the server sends it. Subsequent commands trigger a declarative management synchronization operation.
 
 
 ---

@@ -1,6 +1,6 @@
 # WKInterfaceScrollPosition
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Onscreen scroll positions.
@@ -34,6 +34,7 @@ enum WKInterfaceScrollPosition
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

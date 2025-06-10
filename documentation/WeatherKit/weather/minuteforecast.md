@@ -1,6 +1,6 @@
 # minuteForecast
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The minute-by-minute forecast.

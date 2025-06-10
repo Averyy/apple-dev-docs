@@ -1,6 +1,6 @@
 # XPC activities
 
-**Framework**: Xpc
+**Framework**: XPC
 
 Schedule background activities for the system to execute.
 

@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_GRACE_PERIOD
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 An integer property that indicates the number of seconds to allow as a grace period before the scheduling of the activity becomes more aggressive.

@@ -1,6 +1,6 @@
 # init(source:injectionTime:forMainFrameOnly:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Creates a user script object that contains the specified source code and attributes.

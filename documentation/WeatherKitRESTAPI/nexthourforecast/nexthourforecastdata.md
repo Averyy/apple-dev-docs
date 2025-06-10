@@ -1,6 +1,6 @@
 # NextHourForecast.NextHourForecastData
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 The next hour forecast information.

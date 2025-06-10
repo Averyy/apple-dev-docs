@@ -1,6 +1,6 @@
 # Understanding the visionOS render pipeline
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Compare how visionOS handles events and manages its rendering loop differently from other Apple platforms.
 

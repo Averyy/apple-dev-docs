@@ -1,6 +1,6 @@
 # DOM_NO_MODIFICATION_ALLOWED_ERR
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

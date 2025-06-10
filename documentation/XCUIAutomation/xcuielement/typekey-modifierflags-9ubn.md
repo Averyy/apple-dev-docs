@@ -1,6 +1,6 @@
 # typeKey(_:modifierFlags:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Types a single key that a string represents with the flags you specify.

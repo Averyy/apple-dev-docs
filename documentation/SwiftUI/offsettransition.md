@@ -17,8 +17,7 @@ Returns a transition that offset the view by the specified amount.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct OffsetTransition
+struct OffsetTransition
 ```
 
 ## Topics

@@ -27,15 +27,13 @@ Body temperature naturally fluctuates from night to night, and external factors,
 
 Cycle tracking uses a person’s sleeping wrist temperature data to provide a retrospective estimate of when they likely ovulated. It also combines this data with heart rate and logged cycle data to provide improved predictions about their cycle.
 
-To enable sleeping wrist temperature measurements, ensure Sleep Focus is on and that someone is wearing Apple Watch while sleeping.
+To enable sleeping wrist temperature measurements, ensure Sleep Focus is on and that somone is wearing Apple Watch while sleeping.
 
 Apple Watch records the absolute wrist temperature value; however, Health displays this data as a relative value, based on a person’s baseline. Health needs to calculate this baseline, so it won’t display the wrist temperature until it has gathered about five nights of data. However, Apple Watch records [`appleSleepingWristTemperature`](hkquantitytypeidentifier/applesleepingwristtemperature.md) samples starting with the first night, and you can read them immediately from the HealthKit store.
 
 Sleeping wrist temperature samples use temperature units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
 
 > ❗ **Important**:  These samples are read-only. You can request permission to read the samples using this identifier, but you can’t request authorization to share them. This means you can’t save new sleeping wrist temperature samples to the HealthKit store.
-
- These samples are read-only. You can request permission to read the samples using this identifier, but you can’t request authorization to share them. This means you can’t save new sleeping wrist temperature samples to the HealthKit store.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # confirmationDialog(_:isPresented:titleVisibility:actions:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Presents a confirmation dialog when a given condition is true, using a string variable as a title.

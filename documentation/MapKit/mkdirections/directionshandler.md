@@ -12,6 +12,7 @@ The block to use for processing the requested route information.
 - macOS ?+
 - tvOS ?+
 - visionOS ?+
+- watchOS ?+
 
 ## Declaration
 
@@ -30,7 +31,7 @@ The implementation of your block needs to check for a value in the `error` param
 
 ## See Also
 
-- [func calculate(completionHandler: MKDirections.DirectionsHandler)](mkdirections/calculate(completionhandler:).md)
+- [func calculate(completionHandler: (MKDirections.Response?, (any Error)?) -> Void)](mkdirections/calculate(completionhandler:).md)
   Begins calculating the requested route information asynchronously.
 - [MKDirections.Response](mkdirections/response.md)
   The route information that Apple servers return in response to your request for directions.

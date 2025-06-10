@@ -1,6 +1,6 @@
 # Communicating with human interface devices
 
-**Framework**: Corehid
+**Framework**: Core HID
 
 Interact with and obtain data from devices such as keyboards and mice.
 
@@ -205,4 +205,4 @@ guard leftShiftStateBefore == leftShiftStateAfter else {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreHID/communicatingwithhiddevices)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corehid/communicatingwithhiddevices)*

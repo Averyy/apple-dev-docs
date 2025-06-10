@@ -54,11 +54,33 @@ For more information about all you can do with Game Center, see the [`Game Cente
 - [Game Center leaderboard set localizations](game-center-leaderboard-set-localizations.md)
   Manage localizations for your Game Center leaderboard sets.
 - [Game Center leaderboard set images](game-center-leaderboard-set-images.md)
-  Mangage image assets for your Game Center leaderboard sets.
+  Manage image assets for your Game Center leaderboard sets.
 - [Game Center leaderboard set releases](game-center-leaderboard-set-releases.md)
   Manage a leaderboard set releases.
 - [Game Center leaderboard set member localizations](game-center-leaderboard-set-member-localizations.md)
-  Mangage Game Center leaderboard set member localizations.
+  Manage Game Center leaderboard set member localizations.
+### Challenges
+- [Game Center challenges](game-center-challenges.md)
+  Manage Game Center challenges for your apps.
+- [Game Center challenge versions](game-center-challenges-versions.md)
+  Manage compatible Game Center challenge versions.
+- [Game Center challenge version releases](game-center-challenges-version-releases.md)
+  Manage compatible Game Center challenge version releases.
+- [Game Center challenges localizations](game-center-challenges-localizations.md)
+  Manage compatible Game Center-enabled versions.
+- [Game Center challenge images](game-center-challenge-images.md)
+  Manage image assets for your Game Center challenges.
+### Activities
+- [Game Center activities](game-center-activities.md)
+  Manage Game Center activities for your apps.
+- [Game Center activity versions](game-center-activity-versions.md)
+  Manage versions for your Game Center activities.
+- [Game Center activity version releases](game-center-activity-version-releases.md)
+  Manage version releases for your Game Center activities.
+- [Game Center activity localizations](game-center-activity-localizations.md)
+  Manage localizations for your Game Center activities.
+- [Game Center activity images](game-center-activity-images.md)
+  Manage images for your Game Center activities.
 ### App versions
 - [Game Center app versions](game-center-app-versions.md)
   Manage app versions for your apps.

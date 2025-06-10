@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_RealTime
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A Boolean value indicating whether it’s recommended that the video encoder perform compression in real time.

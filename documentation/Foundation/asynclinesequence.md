@@ -25,6 +25,7 @@ struct AsyncLineSequence<Base> where Base : AsyncSequence, Base.Element == UInt8
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

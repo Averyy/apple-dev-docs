@@ -1,6 +1,6 @@
 # WKWebExtension.WindowState.normal
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates a window is in its normal state.

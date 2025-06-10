@@ -24,14 +24,12 @@ protocol NSCoding
 
 The `NSCoding` protocol declares the two methods that a class must implement so that instances of that class can be encoded and decoded. This capability provides the basis for archiving (where objects and other structures are stored on disk) and distribution (where objects are copied to different address spaces).
 
-In keeping with object-oriented design principles, an object being encoded or decoded is responsible for encoding and decoding its instance variables. A coder instructs the object to do so by invoking [`encode(with:)`](nscoding/encode(with:).md) or [`init(coder:)`](https://developer.apple.com/documentation/OSLog/OSLogEntry/init(coder:)). [`encode(with:)`](nscoding/encode(with:).md) instructs the object to encode its instance variables to the coder provided; an object can receive this method any number of times. [`init(coder:)`](https://developer.apple.com/documentation/OSLog/OSLogEntry/init(coder:)) instructs the object to initialize itself from data in the coder provided; as such, it replaces any other initialization method and is sent only once per object. Any object class that should be codeable must adopt the `NSCoding` protocol and implement its methods.
+In keeping with object-oriented design principles, an object being encoded or decoded is responsible for encoding and decoding its instance variables. A coder instructs the object to do so by invoking [`encode(with:)`](nscoding/encode(with:).md) or doc://com.apple.documentation/documentation/oslog/oslogentry/init(coder:). [`encode(with:)`](nscoding/encode(with:).md) instructs the object to encode its instance variables to the coder provided; an object can receive this method any number of times. doc://com.apple.documentation/documentation/oslog/oslogentry/init(coder:) instructs the object to initialize itself from data in the coder provided; as such, it replaces any other initialization method and is sent only once per object. Any object class that should be codeable must adopt the `NSCoding` protocol and implement its methods.
 
 It is important to consider the possible types of archiving that a coder supports. In macOS 10.2 and later, keyed archiving is preferred. You may, however, need to support classic archiving. For details, see [`Archives and Serializations Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i).
 
 ## Topics
 
-### Initializing with a coder
-- [init?(coder: NSCoder)](../OSLog/OSLogEntry/init(coder:).md)
 ### Encoding with a coder
 - [func encode(with: NSCoder)](nscoding/encode(with:).md)
   Encodes the receiver using a given archiver.
@@ -167,6 +165,7 @@ It is important to consider the possible types of archiving that a coder support
 - [UnitElectricPotentialDifference](unitelectricpotentialdifference.md)
 - [UnitElectricResistance](unitelectricresistance.md)
 - [UnitEnergy](unitenergy.md)
+- [UnitEnergy.EnergyKit](unitenergy/energykit.md)
 - [UnitFrequency](unitfrequency.md)
 - [UnitFuelEfficiency](unitfuelefficiency.md)
 - [UnitIlluminance](unitilluminance.md)

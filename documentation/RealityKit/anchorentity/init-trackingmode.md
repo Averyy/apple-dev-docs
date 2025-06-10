@@ -24,7 +24,7 @@
 - [convenience init(any Anchor)](anchorentity/init(_:)-8k2z3.md)
 - [init(AnchoringComponent.Target)](anchorentity/init(_:)-9rdwu.md)
   Creates an anchor entity targeting a particular kind of anchor.
-- [convenience init(AnchoringComponent.Target, trackingMode: AnchoringComponent.TrackingMode, physicsSimulation: AnchoringComponent.PhysicsSimulation)](anchorentity/init(_:trackingmode:physicssimulation:).md)
+- [convenience(_:trackingMode:physicsSimulation:)](anchorentity/init(_:trackingmode:physicssimulation:).md)
 - [convenience init(anchor: ARAnchor)](anchorentity/init(anchor:).md)
   Creates an anchor entity that uses an existing AR anchor.
 - [convenience init(plane: AnchoringComponent.Target.Alignment, classification: AnchoringComponent.Target.Classification, minimumBounds: SIMD2<Float>)](anchorentity/init(plane:classification:minimumbounds:).md)

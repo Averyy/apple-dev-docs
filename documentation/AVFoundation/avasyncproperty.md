@@ -41,6 +41,7 @@ This class subclasses [`AVPartialAsyncProperty`](avpartialasyncproperty.md) to p
 ### Conforms To
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

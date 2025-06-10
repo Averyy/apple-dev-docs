@@ -28,6 +28,12 @@ Use Logic nodes to facilitate decision trees and other logic-based choices withi
   Returns true if only one of the inputs is true.
 - [Not (RealityKit)](logic/not-(realitykit).md)
   Returns !input.
+- [Select (RealityKit)](logic/select-(realitykit).md)
+  Selects B if conditional is true, A if false.
+- [Multiply Add 24 (RealityKit)](realitykit/multiply-add-24-(realitykit).md)
+  Multiplies two 24-bit integer values X and Y and returns the 32-bit integer result with 32-bit Z value added.
+- [Multiply 24 (RealityKit)](realitykit/multiply-24-(realitykit).md)
+  Multiplies two 24-bit integer values X and Y and returns the 32-bit integer result.
 
 ## See Also
 

@@ -21,8 +21,6 @@ Use the [`ITLibrary`](itlibrary.md) properties and methods to retrieve media ite
 
 > ❗ **Important**: A person needs to grant your app permission before it can access their iTunes library. Add the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppleMusicUsageDescription) key to your app’s `Info.plist` file, and include a description of how you intend to use their library. If this key isn’t present, the system terminates your app when it tries to access the library.
 
-A person needs to grant your app permission before it can access their iTunes library. Add the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppleMusicUsageDescription) key to your app’s `Info.plist` file, and include a description of how you intend to use their library. If this key isn’t present, the system terminates your app when it tries to access the library.
-
 ## Topics
 
 ### Essentials

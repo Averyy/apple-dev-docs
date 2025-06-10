@@ -8,6 +8,7 @@ Reloads the Cinematic script with optional changes applied, removing any previou
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
 

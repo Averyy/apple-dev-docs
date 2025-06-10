@@ -14,7 +14,6 @@ Draws the footer of a page.
 ## Declaration
 
 ```swift
-@MainActor
 func drawFooterForPage(at pageIndex: Int, in footerRect: CGRect)
 ```
 

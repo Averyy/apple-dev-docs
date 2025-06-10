@@ -1,6 +1,6 @@
 # xpc_finalizer_t
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: typealias
 
 A function to invoke when tearing down a connection and freeing its context.

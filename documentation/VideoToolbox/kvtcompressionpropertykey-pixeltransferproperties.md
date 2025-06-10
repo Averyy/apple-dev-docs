@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_PixelTransferProperties
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Properties for configuring a pixel transfer session.

@@ -1,6 +1,6 @@
 # actionSheet(isPresented:content:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Presents an action sheet when a given condition is true.
@@ -8,7 +8,7 @@ Presents an action sheet when a given condition is true.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
+- Mac Catalyst ?+
 - tvOS 13.0+
 - visionOS 1.0+
 - watchOS 6.0+

@@ -6,6 +6,7 @@
 A type that stores the texture formats, layout information, and other details you use to configure your rendering loop code.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -44,6 +45,19 @@ You don’t create this type directly. When implementing the [`makeConfiguration
   A value that indicates if the layer is using variable rasterization rates.
 - [var generateFlippedRasterizationRateMaps: Bool](layerrenderer/configuration-swift.struct/generateflippedrasterizationratemaps.md)
   A Boolean value that indicates whether the layer renderer provides rasterization rate maps flipped around the y-axis.
+### Instance Properties
+- [var drawableRenderContextRasterSampleCount: Int](layerrenderer/configuration-swift.struct/drawablerendercontextrastersamplecount.md)
+  Raster sample count for the drawable’s render context.
+- [var drawableRenderContextStencilFormat: MTLPixelFormat](layerrenderer/configuration-swift.struct/drawablerendercontextstencilformat.md)
+  The pixel format to use for the stencil texture in drawable’s render context.
+- [var maxRenderQuality: LayerRenderer.RenderQuality](layerrenderer/configuration-swift.struct/maxrenderquality.md)
+  The max render quality the layer can use when drawing to the drawables.
+- [var supportsMTL4: Bool](layerrenderer/configuration-swift.struct/supportsmtl4.md)
+  Whether the layer supports drawing using Metal4, if false assumed to be using Metal3.
+- [var trackingAreasFormat: MTLPixelFormat](layerrenderer/configuration-swift.struct/trackingareasformat.md)
+  The pixel format used when creating the tracking areas textures for the layer.
+- [var trackingAreasUsage: MTLTextureUsage](layerrenderer/configuration-swift.struct/trackingareasusage.md)
+  The texture usage value used when creating the tracking areas textures for the layer.
 
 ## Relationships
 

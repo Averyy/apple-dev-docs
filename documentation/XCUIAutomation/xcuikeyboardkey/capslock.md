@@ -1,6 +1,6 @@
 # capsLock
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A constant that represents the Caps Lock key.

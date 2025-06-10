@@ -1,6 +1,6 @@
 # Grouping Tests into Substeps with Activities
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Simplify test reports by creating activities that organize substeps within complex test methods.
 

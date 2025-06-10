@@ -1,6 +1,6 @@
 # DOM_DELTA_PAGE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

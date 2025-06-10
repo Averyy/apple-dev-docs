@@ -1,6 +1,6 @@
 # createDocument(_:qualifiedName:doctype:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

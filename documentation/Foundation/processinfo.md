@@ -178,6 +178,9 @@ print (long)[[NSClassFromString(@"NSProcessInfo") processInfo] _suddenTerminatio
   Posts when the thermal state of the system changes.
 - [static let NSProcessInfoPowerStateDidChange: NSNotification.Name](nsnotification/name-swift.struct/nsprocessinfopowerstatedidchange.md)
   Posts when the power state of a device changes.
+### Structures
+- [ProcessInfo.PowerStateDidChangeMessage](processinfo/powerstatedidchangemessage.md)
+- [ProcessInfo.ThermalStateDidChangeMessage](processinfo/thermalstatedidchangemessage.md)
 
 ## Relationships
 
@@ -191,8 +194,9 @@ print (long)[[NSClassFromString(@"NSProcessInfo") processInfo] _suddenTerminatio
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/processinfo)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/processinfo)*

@@ -64,6 +64,7 @@ A captured room ([`CapturedRoom`](capturedroom.md)) contains an arrays of surfac
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Classifying Live Audio Input with a Built-in Sound Classifier
 
-**Framework**: Soundanalysis
+**Framework**: Sound Analysis
 
 Detect and identify hundreds of sounds by using a trained classifier.
 
@@ -24,4 +24,4 @@ Detect and identify hundreds of sounds by using a trained classifier.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SoundAnalysis/classifying-live-audio-input-with-a-built-in-sound-classifier)*
+*[View on Apple Developer](https://developer.apple.com/documentation/soundanalysis/classifying-live-audio-input-with-a-built-in-sound-classifier)*

@@ -16,7 +16,7 @@ Marks the start of a task with a custom name that should continue if the app ent
 
 ```swift
 nonisolated
-func beginBackgroundTask(withName taskName: String?, expirationHandler handler: (@MainActor () -> Void)? = nil) -> UIBackgroundTaskIdentifier
+func beginBackgroundTask(withName taskName: String?, expirationHandler handler: (() -> Void)? = nil) -> UIBackgroundTaskIdentifier
 ```
 
 ## Mentions
@@ -37,7 +37,7 @@ Each call to this method must be balanced by a matching call to the [`endBackgro
 
 You can call this method at any point in your app’s execution. You may also call this method multiple times to mark the beginning of several background tasks that run in parallel. However, each task must be ended separately. You identify a given task using the value returned by this method.
 
-This method can be safely called on a non-main thread. To extend the execution time of an app extension, use the [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/foundation/processinfo/1617030-performexpiringactivity) method of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) instead.
+This method can be safely called on a non-main thread. To extend the execution time of an app extension, use the [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/Foundation/ProcessInfo/performExpiringActivity(withReason:using:)) method of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) instead.
 
 ## Parameters
 
@@ -47,7 +47,7 @@ This method can be safely called on a non-main thread. To extend the execution t
 ## See Also
 
 - [Background Tasks](../BackgroundTasks/BackgroundTasks.md)
-  Request the system to launch your app in the background to run tasks.
+  Support background processing in your app by wrapping your app’s most critical work in framework-provided tasks.
 - [var backgroundRefreshStatus: UIBackgroundRefreshStatus](uiapplication/backgroundrefreshstatus.md)
   Indicates whether the app can refresh content when running in the background.
 - [enum UIBackgroundRefreshStatus](uibackgroundrefreshstatus.md)

@@ -21,7 +21,7 @@ var vertexBuffer: (any MTLBuffer)? { get set }
 
 #### Discussion
 
-You must set a vertex buffer before creating the acceleration structure. Each vertex must have at least 12 bytes of position data, stored as a [`MTLPackedFloat3`](mtlpackedfloat3.md) containing the X, Y, and Z position.
+You must set a vertex buffer before creating the acceleration structure. Each vertex must have at least 12 bytes of position data, stored as a [`MTLPackedFloat3`](mtlpackedfloat3-swift.typealias.md) containing the X, Y, and Z position.
 
 ## See Also
 

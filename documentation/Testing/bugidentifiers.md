@@ -1,6 +1,6 @@
 # Interpreting bug identifiers
 
-**Framework**: Testing
+**Framework**: Swift Testing
 
 Examine how the testing library interprets bug identifiers provided by developers.
 
@@ -50,4 +50,4 @@ To create an instance of [`Bug`](bug.md) with a bug’s unique identifier, use t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Testing/bugidentifiers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/testing/bugidentifiers)*

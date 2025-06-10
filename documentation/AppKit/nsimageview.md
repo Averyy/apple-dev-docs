@@ -1,6 +1,6 @@
 # NSImageView
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 A display of image data in a frame.
@@ -96,6 +96,7 @@ Image views can be static or editable. A static image view only displays the ima
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -133,4 +134,4 @@ Image views can be static or editable. A static image view only displays the ima
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsimageview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsimageview)*

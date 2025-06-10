@@ -10,7 +10,7 @@ Returns a new view that applies `shader` to `self` as a filter on the raster lay
 - iPadOS 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -47,8 +47,6 @@ namespace SwiftUI {
 The function should return the color mapping to the destination pixel, typically by sampling one or more pixels from `layer` at location(s) derived from `position` and them applying some kind of transformation to produce a new color.
 
 > ❗ **Important**: Views backed by AppKit or UIKit views may not render into the filtered layer. Instead, they log a warning and display a placeholder image to highlight the error.
-
-Views backed by AppKit or UIKit views may not render into the filtered layer. Instead, they log a warning and display a placeholder image to highlight the error.
 
 ## Parameters
 

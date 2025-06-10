@@ -1,6 +1,6 @@
 # declarativeNetRequestFeedback
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A request for access to the `browser.declarativeNetRequest` APIs with extra information on matched rules.

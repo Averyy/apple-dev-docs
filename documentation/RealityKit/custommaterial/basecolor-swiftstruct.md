@@ -10,6 +10,7 @@ An object that defines an entity’s base color.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -39,6 +40,9 @@ For more information on using base color values in a custom material, see [`base
   The base color as a UV-mapped image.
 - [var tint: UIColor](custommaterial/basecolor-swift.struct/tint-4xg2a.md)
 - [var tint: NSColor](custommaterial/basecolor-swift.struct/tint-99g.md)
+### Initializers
+- [init(tint:texture:)](custommaterial/basecolor-swift.struct/init(tint:texture:).md)
+  Creates a base color object from a color or texture on macOS.
 
 ## See Also
 

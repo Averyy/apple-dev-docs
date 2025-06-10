@@ -1,6 +1,6 @@
 # fetchStoredPaymentCardReadResultCount()
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 Returns the number of reads the framework performed using a Store and Forward session.

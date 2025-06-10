@@ -1,6 +1,6 @@
 # WKAudioFileQueuePlayer
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An object that controls playback of one or more audio items.

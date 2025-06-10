@@ -280,8 +280,6 @@ In macOS, you can set a dictionary of thumbnails using the [`setResourceValue(_:
 ### Deprecated
 - [convenience init?(scheme: String, host: String?, path: String)](nsurl/init(scheme:host:path:).md)
   Initializes a newly created NSURL with a specified scheme, host, and path.
-### Initializers
-- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsurl/init(pasteboardpropertylist:oftype:).md)
 
 ## Relationships
 
@@ -304,8 +302,9 @@ In macOS, you can set a dictionary of thumbnails using the [`setResourceValue(_:
 - [NSSecureCoding](nssecurecoding.md)
 - [QLPreviewItem](../QuickLookUI/QLPreviewItem.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsurl)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsurl)*

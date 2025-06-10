@@ -1,6 +1,6 @@
 # countryName
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The name of a country or region.

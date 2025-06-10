@@ -1,6 +1,6 @@
 # writeSafely(to:ofType:for:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Writes the contents of the document to a file or file package located by a URL.

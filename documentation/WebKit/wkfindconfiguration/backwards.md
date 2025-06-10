@@ -1,6 +1,6 @@
 # backwards
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates the search direction, relative to the current selection.

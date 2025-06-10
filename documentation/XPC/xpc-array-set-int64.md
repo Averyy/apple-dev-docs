@@ -1,6 +1,6 @@
 # xpc_array_set_int64(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Inserts a 64-bit integer primitive value into an array.

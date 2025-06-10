@@ -1,6 +1,6 @@
 # cancel()
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method
 
 Cancels the data transfer.

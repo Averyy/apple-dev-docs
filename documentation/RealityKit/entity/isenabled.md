@@ -10,6 +10,7 @@ A Boolean that you set to enable or disable the entity and its descendants.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

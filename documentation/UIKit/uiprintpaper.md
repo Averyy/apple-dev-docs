@@ -14,7 +14,6 @@ The size of paper for a print job and the rectangular area that the content prin
 ## Declaration
 
 ```swift
-@MainActor
 class UIPrintPaper
 ```
 
@@ -53,7 +52,6 @@ If you are using a [`UIPrintPageRenderer`](uiprintpagerenderer.md) object to dra
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

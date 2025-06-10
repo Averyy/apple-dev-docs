@@ -1,6 +1,6 @@
 # WebMenuItemTagNoGuessesFound
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Indicate whether any suggested spellings for the misspelled word could be found.

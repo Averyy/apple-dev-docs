@@ -38,8 +38,6 @@ If any identifiers are invalid or the App Store can’t find them, the App Store
 
 > 💡 **Tip**: Use a single request to fetch a large volume of products.
 
-Use a single request to fetch a large volume of products.
-
 ## Parameters
 
 - `identifiers`: A collection of unique in-app purchase product identifiers that you previously configured in App Store Connect. StoreKit ignores any duplicate identifiers in the collection.

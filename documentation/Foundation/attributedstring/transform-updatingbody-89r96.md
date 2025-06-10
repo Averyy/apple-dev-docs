@@ -1,0 +1,30 @@
+# transform(updating:body:)
+
+**Framework**: Foundation  
+**Kind**: method
+
+Tracks the location of the provided ranges throughout the mutation closure, returning a new, updated range that represents the same effective locations after the mutation
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+- watchOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+mutating func transform<E>(updating ranges: [Range<AttributedString.Index>], body: (inout AttributedString) throws(E) -> Void) throws(E) -> [Range<AttributedString.Index>]? where E : Error
+```
+
+#### Return Value
+
+The updated `Range`s that is valid after the mutation has been performed, or `nil` if the mutation performed does not allow for tracking to succeed (such as replacing the provided inout variable with an entirely different AttributedString). When the return value is non-nil, the returned array is guaranteed to be the same size as the provided array with updated ranges at the same Array indices as their respective original ranges in the input array.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/attributedstring/transform(updating:body:)-89r96)*

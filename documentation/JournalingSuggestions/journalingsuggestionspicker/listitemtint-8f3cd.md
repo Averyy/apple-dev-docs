@@ -1,6 +1,6 @@
 # listItemTint(_:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Sets a fixed tint color for content in a list.

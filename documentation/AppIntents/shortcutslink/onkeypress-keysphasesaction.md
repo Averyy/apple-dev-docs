@@ -8,10 +8,10 @@ Performs an action if the user presses one or more keys on a hardware keyboard w
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

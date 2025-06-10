@@ -11,12 +11,14 @@ Read and modify territory availability for an auto-renewable subscription.
   Get information about the territory availability for a subscription.
 - [List the territory availability of a subscription](get-v1-subscriptionavailabilities-_id_-availableterritories.md)
   List the territory availability and currency of a specific subscription.
+- [GET /v1/subscriptionAvailabilities/{id}/relationships/availableTerritories](get-v1-subscriptionavailabilities-_id_-relationships-availableterritories.md)
 - [Modify the territory availability of a subscription](post-v1-subscriptionavailabilities.md)
   Update the territory availability of a specific subscription.
 ### Objects
 - [object SubscriptionAvailability](subscriptionavailability.md)
 - [object SubscriptionAvailabilityCreateRequest](subscriptionavailabilitycreaterequest.md)
 - [object SubscriptionAvailabilityResponse](subscriptionavailabilityresponse.md)
+- [object SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse](subscriptionavailabilityavailableterritorieslinkagesresponse.md)
 
 ## See Also
 

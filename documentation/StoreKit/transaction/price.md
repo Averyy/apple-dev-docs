@@ -30,8 +30,6 @@ This value represents the price of the in-app purchase, in units of the [`curren
 
 > ❗ **Important**:  For financial and accounting purposes, use the App Store Connect reporting tools. For more information, see [`Download financial reports`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports) and [`Overview of reporting tools`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
 
- For financial and accounting purposes, use the App Store Connect reporting tools. For more information, see [`Download financial reports`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports) and [`Overview of reporting tools`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
-
 The decoded payloads of [`jwsRepresentation`](verificationresult/jwsrepresentation-21vgo.md) and the [`JWSTransaction`](https://developer.apple.com/documentation/AppStoreServerAPI/JWSTransaction) strings from the App Store server APIs contain [`price`](https://developer.apple.com/documentation/AppStoreServerAPI/price) fields specified in  of the currency. StoreKit represents the [`price`](transaction/price.md) value in  of the currency. Take care not to confuse these two representations when working with both APIs.
 
 You configure prices in App Store Connect. For more information, see [`Set a price for an in-app purchase`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-in-app-purchases/set-a-price-for-an-in-app-purchase).

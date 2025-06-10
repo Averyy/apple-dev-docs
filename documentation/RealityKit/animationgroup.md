@@ -10,6 +10,7 @@ A collection of animations that play simultaneously.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -45,8 +46,6 @@ You can play the same animation at different times by grouping multiple [`Animat
 
 > ❗ **Important**: The framework processes animations with a lower [`blendLayer`](animationgroup/blendlayer.md) first, and if the [`blendLayer`](animationgroup/blendlayer.md) matches, in the order in which they appear in the groups array. If two animations on the same property overlap durations at runtime, the one that the framework processes second overwrites the first.
 
-The framework processes animations with a lower [`blendLayer`](animationgroup/blendlayer.md) first, and if the [`blendLayer`](animationgroup/blendlayer.md) matches, in the order in which they appear in the groups array. If two animations on the same property overlap durations at runtime, the one that the framework processes second overwrites the first.
-
 ## Topics
 
 ### Creating an animation group
@@ -80,21 +79,11 @@ The framework processes animations with a lower [`blendLayer`](animationgroup/bl
   The time, in seconds, at which the animations play.
 - [var trimEnd: TimeInterval?](animationgroup/trimend.md)
   The time, in seconds, at which the animations stop.
-- [func trimmed(start: TimeInterval?, end: TimeInterval?, duration: TimeInterval?) -> Self](animationgroup/trimmed(start:end:duration:).md)
-  Edits the animation duration according to the specified time.
 ### Repeating group playback
 - [var repeatMode: AnimationRepeatMode](animationgroup/repeatmode.md)
   An option that determines how the animations repeat.
 - [var fillMode: AnimationFillMode](animationgroup/fillmode.md)
   An option that determines which data displays outside of the normal duration.
-- [func repeated(count: TimeInterval) -> Self](animationgroup/repeated(count:)-80x0g.md)
-  Repeats an animation the number of times specified by an irrational number.
-- [func repeated(count: Int) -> Self](animationgroup/repeated(count:)-3445q.md)
-  Repeats an animation the number of times specified by a whole number.
-- [func repeatingForever() -> Self](animationgroup/repeatingforever.md)
-  Repeats the animation infinitely.
-### Default Implementations
-- [AnimationDefinition Implementations](animationgroup/animationdefinition-implementations.md)
 
 ## Relationships
 

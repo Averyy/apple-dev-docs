@@ -8,12 +8,12 @@ An activation function that returns beta if its input is less than a specified t
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
-- Mac Catalyst ?+
+- visionOS ?+
 
 ## Declaration
 

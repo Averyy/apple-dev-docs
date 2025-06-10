@@ -1,6 +1,6 @@
 # gradientData(forParameter:layer:)
 
-**Framework**: Mlcompute  
+**Framework**: ML Compute  
 **Kind**: method
 
 Gets the gradient data for the trainable parameter and associated layer you specify.

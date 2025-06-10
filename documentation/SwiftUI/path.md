@@ -123,6 +123,7 @@ struct Path
 - [Equatable](../Swift/Equatable.md)
 - [LosslessStringConvertible](../Swift/LosslessStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Shape](shape.md)
 - [View](view.md)
 

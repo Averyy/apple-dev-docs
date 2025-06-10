@@ -8,6 +8,8 @@ Codes that identify errors in Managed App Distribution.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
 - visionOS 2.4+
 
 ## Declaration
@@ -85,6 +87,7 @@ enum ManagedAppDistributionError
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [RecoverableError](../Foundation/RecoverableError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

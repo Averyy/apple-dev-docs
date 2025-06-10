@@ -1,6 +1,6 @@
 # VSSubscriptionRegistrationCenter
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: class
 
 An object that stores subscription information that the system provides to the Apple TV app.
@@ -45,8 +45,8 @@ Use the methods in this class to retrieve the default registration center object
 
 ## See Also
 
-- [class VSSubscription](vssubscription.md)
-  An object that describes a subscriber’s access to content.
+- [struct VSAppleSubscription](vsapplesubscription-swift.struct.md)
+  An Apple streaming service customer and their subscriptions.
 - [class VSAccountApplicationProvider](vsaccountapplicationprovider.md)
   An object to display app-specific providers in your app.
 

@@ -47,8 +47,6 @@ A gesture recognizer that handles pan and dragging gestures on an entity.
   The translation of the gesture in the space of the specified entity.
 - [func velocity(in: Entity?) -> SIMD3<Float>](entitytranslationgesturerecognizer/velocity(in:).md)
   The velocity of the translation gesture in the space of the specified entity.
-### Default Implementations
-- [EntityGestureRecognizer Implementations](entitytranslationgesturerecognizer/entitygesturerecognizer-implementations.md)
 
 ## Relationships
 

@@ -39,13 +39,18 @@ enum MTLVisibilityResultMode
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [func setVisibilityResultMode(MTLVisibilityResultMode, offset: Int)](mtlrendercommandencoder/setvisibilityresultmode(_:offset:).md)
   Configures which visibility test the GPU runs and the destination for any results it generates.
+- [protocol MTL4RenderCommandEncoder](mtl4rendercommandencoder.md)
+  Encodes a render pass into a command buffer, including all its draw calls and configuration.
 - [protocol MTLRenderCommandEncoder](mtlrendercommandencoder.md)
   An interface that encodes a render pass into a command buffer, including all its draw calls and configuration.
+- [struct MTL4RenderEncoderOptions](mtl4renderencoderoptions.md)
+  Custom render pass options you specify at encoder creation time.
 - [enum MTLTriangleFillMode](mtltrianglefillmode.md)
   Specifies how to rasterize triangle and triangle strip primitives.
 - [enum MTLWinding](mtlwinding.md)
@@ -58,6 +63,8 @@ enum MTLVisibilityResultMode
   The index type for an index buffer that references vertices of geometric primitives.
 - [enum MTLDepthClipMode](mtldepthclipmode.md)
   The mode that determines how to deal with fragments outside of the near or far planes.
+- [enum MTLVisibilityResultType](mtlvisibilityresulttype.md)
+  This enumeration controls if Metal accumulates visibility results between render encoders or resets them.
 
 
 ---

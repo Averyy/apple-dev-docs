@@ -17,9 +17,9 @@ class NSTextField
 
 ## Mentions
 
+- [Customizing Writing Tools behavior for AppKit views](customizing-writing-tools-behavior-for-system-views.md)
 - [Adopting the system text cursor in custom text views](adopting-the-system-text-cursor-in-custom-text-views.md)
 - [Adding Writing Tools support to a custom AppKit view](adding-writing-tools-support-to-a-custom-nsview.md)
-- [Customizing Writing Tools behavior for AppKit views](customizing-writing-tools-behavior-for-system-views.md)
 
 #### Overview
 
@@ -91,9 +91,17 @@ In macOS 12 and later, if you explicitly call the `layoutManager` property on yo
 ### Using Keyboard Interface Control
 - [var allowsCharacterPickerTouchBarItem: Bool](nstextfield/allowscharacterpickertouchbaritem.md)
   A Boolean value that controls whether the Touch Bar displays the character picker item for rich text fields.
-### Supporting Text Completion
+### Supporting Text Completion and Suggestions
 - [var isAutomaticTextCompletionEnabled: Bool](nstextfield/isautomatictextcompletionenabled.md)
   A Boolean value that indicates whether the text field automatically completes text as the user types.
+- [protocol NSTextSuggestionsDelegate](nstextsuggestionsdelegate.md)
+  A protocol for suggestion delegates of text fields to conform to in order to provide text suggestions in response to the user typing.
+- [struct NSSuggestionItem](nssuggestionitem.md)
+  The items that appear in suggestion menus.
+- [struct NSSuggestionItemResponse](nssuggestionitemresponse.md)
+  Describes the result of a batch of suggestion items from a search
+- [struct NSSuggestionItemSection](nssuggestionitemsection.md)
+  Describes a section of suggestions items in a suggestions menu
 ### Setting the Delegate
 - [var delegate: (any NSTextFieldDelegate)?](nstextfield/delegate.md)
   The text field’s delegate.
@@ -113,6 +121,8 @@ In macOS 12 and later, if you explicitly call the `layoutManager` property on yo
   A Boolean value that controls whether the Touch Bar displays the character picker item for rich text fields.
 - [var allowsWritingTools: Bool](nstextfield/allowswritingtools.md)
 - [var allowsWritingToolsAffordance: Bool](nstextfield/allowswritingtoolsaffordance.md)
+- [var placeholderAttributedStrings: [NSAttributedString]](nstextfield/placeholderattributedstrings.md)
+- [var placeholderStrings: [String]](nstextfield/placeholderstrings.md)
 - [var suggestionsDelegate: (any NSTextSuggestionsDelegate)?](nstextfield/suggestionsdelegate.md)
   The delegate that provides text suggestions for the receiving text field and responds to the user highlighting and selecting items.
 
@@ -147,6 +157,7 @@ In macOS 12 and later, if you explicitly call the `layoutManager` property on yo
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

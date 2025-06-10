@@ -47,4 +47,4 @@ Create a new [`MTLTextureDescriptor`](mtltexturedescriptor.md) and set its stora
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/setting-resource-storage-modes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/setting-resource-storage-modes)*

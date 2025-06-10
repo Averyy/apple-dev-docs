@@ -1,6 +1,6 @@
 # AVExperienceController.Experience.expanded
 
-**Framework**: Avkit  
+**Framework**: AVKit  
 **Kind**: case
 
 An experience where the system places the video outside of its original container.
@@ -32,4 +32,4 @@ It’s valid to transition to this experience even when the original container i
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/avexperiencecontroller/experience-swift.enum/expanded)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/avexperiencecontroller/experience-swift.enum/expanded)*

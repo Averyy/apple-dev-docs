@@ -313,6 +313,7 @@ The performance of some collection operations depends on the type of index that 
 - [Dictionary.Values](dictionary/values-swift.struct.md)
 - [DiscontiguousSlice](discontiguousslice.md)
 - [EmptyCollection](emptycollection.md)
+- [EnumeratedSequence](enumeratedsequence.md)
 - [FlattenSequence](flattensequence.md)
 - [Int.Words](int/words-swift.struct.md)
 - [Int16.Words](int16/words-swift.struct.md)

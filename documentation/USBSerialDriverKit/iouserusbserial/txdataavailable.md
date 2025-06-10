@@ -1,6 +1,6 @@
 # TxDataAvailable
 
-**Framework**: Usbserialdriverkit  
+**Framework**: USBSerialDriverKit  
 **Kind**: method
 
 Notifies your driver that the system has data for you to transmit to the device.

@@ -12,7 +12,6 @@ Returns the text marker for the text at a given index in the element’s text.
 - macOS ?+
 - tvOS 18.2+
 - visionOS 2.2+
-- watchOS 11.2+
 
 ## Declaration
 

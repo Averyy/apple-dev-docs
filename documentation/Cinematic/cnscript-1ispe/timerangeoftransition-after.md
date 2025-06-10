@@ -8,6 +8,7 @@ The time range during which the focus transitioned away from the given decision.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
 

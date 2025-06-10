@@ -1,6 +1,6 @@
 # accessibilityDropPoint(_:description:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 The point an assistive technology should use to end a drag interaction.

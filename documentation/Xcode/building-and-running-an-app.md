@@ -36,8 +36,6 @@ Choose a destination that gives you the capabilities you need. For Mac products,
 
 > ❗ **Important**: Before you ship any code, test and gather metrics on real devices. Simulators offer quick turnaround times during development, but they don’t simulate the actual performance of target devices.
 
-Before you ship any code, test and gather metrics on real devices. Simulators offer quick turnaround times during development, but they don’t simulate the actual performance of target devices.
-
 ##### Build Run and Debug Your App
 
 To build and run your code, choose Product > Run, or click the Run button in your project’s toolbar.

@@ -20,6 +20,11 @@ object CustomerReviewsResponse
   A response that contains a single Customer Review resource.
 - [object CustomerReview](customerreview.md)
   The data structure that represents a Customer Reviews resource.
+- [object AppCustomerReviewsLinkagesResponse](appcustomerreviewslinkagesresponse.md)
+- [object CustomerReviewSummarization](customerreviewsummarization.md)
+  The data structure that represents a customer review summarization resource.
+- [object CustomerReviewSummarizationsResponse](customerreviewsummarizationsresponse.md)
+  The data structure that represents a customer review summarizations response resource.
 
 
 ---

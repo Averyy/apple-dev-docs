@@ -1,6 +1,6 @@
 # trackingNumber
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Detect tracking numbers in text and turn them into links.

@@ -11,9 +11,9 @@ An activation function that returns the hard swish function of its input.
 - Mac Catalyst ?+
 - macOS 12.0+
 - tvOS 15.0+
+- visionOS ?+
 - watchOS 8.0+
 - Unknown ?+ - Deprecated
-- visionOS ?+
 
 ## Declaration
 

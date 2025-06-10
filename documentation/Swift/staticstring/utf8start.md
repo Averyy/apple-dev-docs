@@ -24,8 +24,6 @@ var utf8Start: UnsafePointer<UInt8> { get }
 
 > ❗ **Important**: Accessing this property when `hasPointerRepresentation` is `false` triggers a runtime error.
 
-Accessing this property when `hasPointerRepresentation` is `false` triggers a runtime error.
-
 
 ---
 

@@ -1,6 +1,6 @@
 # SMS and MMS Message Filtering
 
-**Framework**: Identitylookup
+**Framework**: SMS and Call Reporting
 
 Create an app extension that identifies and filters unwanted SMS and MMS messages while preserving user privacy.
 
@@ -53,4 +53,4 @@ If your app extension can’t make this determination by itself, it tells Messag
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/IdentityLookup/sms-and-mms-message-filtering)*
+*[View on Apple Developer](https://developer.apple.com/documentation/identitylookup/sms-and-mms-message-filtering)*

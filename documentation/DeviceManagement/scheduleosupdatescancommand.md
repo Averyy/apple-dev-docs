@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to schedule an operating-system update scan.
+The command to schedule a background scan for operating-system updates on a device.
 
 **Availability**:
 - macOS 10.11+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,14 +16,14 @@ object ScheduleOSUpdateScanCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object ScheduleOSUpdateScanCommand.Command](scheduleosupdatescancommand/command-data.dictionary.md)
-  The request dictionary to schedule an operating-system update scan.
+  The command to schedule a background scan for operating-system updates on a device.
 
 ## See Also
 
 - [object ScheduleOSUpdateScanResponse](scheduleosupdatescanresponse.md)
-  A response from the device after it processes the command to schedule an operating-system update scan.
+  A response from the device after it processes the command to schedule a background scan for operating-system updates on a device.
 
 
 ---

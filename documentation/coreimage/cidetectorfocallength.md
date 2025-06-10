@@ -1,7 +1,7 @@
 # CIDetectorFocalLength
 
 **Framework**: Core Image  
-**Kind**: data
+**Kind**: var
 
 An option identifying the focal length in pixels used in capturing images to be processed by the detector.
 
@@ -10,7 +10,7 @@ An option identifying the focal length in pixels used in capturing images to be 
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS 9.0+
+- tvOS ?+
 - visionOS 1.0+
 
 ## Declaration
@@ -21,7 +21,7 @@ let CIDetectorFocalLength: String
 
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object whose value is a floating-point number. Use this option with the [`CIDetectorTypeRectangle`](cidetectortyperectangle.md) detector type to control the effect of the [`CIDetectorAspectRatio`](cidetectoraspectratio.md) option on feature detection.
+The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object whose value is a floating-point number. Use this option with the [`CIDetectorTypeRectangle`](cidetectortyperectangle.md) detector type to control the effect of the [`CIDetectorAspectRatio`](cidetectoraspectratio.md) option on feature detection.
 
 This option’s value can be `0.0`, `-1.0`, or any positive value:
 
@@ -38,6 +38,19 @@ In this formula, `image_diagonal_pixels` is the length (in pixels) of the image 
 To measure diagonal field of view, put the camera on a tripod so that it is perpendicular to a surface and the center of the image is oriented on a mark on the surface. Measure the distance from the mark to one of the corner points of the image (`Y`). Measure the distance from the camera to the surface (`Z`).  The field of view is then `2*arctan(Y/Z)`.
 
 You must specify this value in terms of the maximum sensor resolution. If the supplied [`CIImage`](ciimage.md) has been scaled relative relative to the maximum sensor resolution, the supplied focal length must also be similarly scaled.
+
+## See Also
+
+- [let CIDetectorImageOrientation: String](cidetectorimageorientation.md)
+  An option for the display orientation of the image whose features you want to detect.
+- [let CIDetectorEyeBlink: String](cidetectoreyeblink.md)
+  An option for whether Core Image will perform additional processing to recognize closed eyes in detected faces.
+- [let CIDetectorSmile: String](cidetectorsmile.md)
+  An option for whether Core Image will perform additional processing to recognize smiles in detected faces.
+- [let CIDetectorAspectRatio: String](cidetectoraspectratio.md)
+  An option specifying the aspect ratio (width divided by height) of rectangles to search for.
+- [let CIDetectorReturnSubFeatures: String](cidetectorreturnsubfeatures.md)
+  An option specifying whether to return feature information for components of detected features.
 
 
 ---

@@ -1,4 +1,4 @@
-# Tips.IgnoresDisplayFrequency
+# IgnoresDisplayFrequency
 
 **Framework**: TipKit  
 **Kind**: struct
@@ -42,17 +42,16 @@ struct FavoriteBackyardTip: Tip {
 ## Relationships
 
 ### Conforms To
+- [Option](tipoption.md)
 - [Sendable](../Swift/Sendable.md)
-- [TipOption](tipoption.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [struct MaxDisplayCount](tips/maxdisplaycount.md)
   Specifies the maximum number of times a tip displays before the system automatically invalidates it.
-- [struct ConfigurationOption](tips/configurationoption.md)
-  A type that marks an object as a tip configuration.
-- [struct ParameterOption](tips/parameteroption.md)
-  A type that represents the various customizations that you can make to a tip parameter.
+- [struct MaxDisplayDuration](tips/maxdisplayduration.md)
+  Specifies the maximum amount of time a tip is displayed before it is invalidated.
 
 
 ---

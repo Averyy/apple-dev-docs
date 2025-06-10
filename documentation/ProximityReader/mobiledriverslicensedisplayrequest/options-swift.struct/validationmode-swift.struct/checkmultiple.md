@@ -9,6 +9,7 @@ A button that enables the user to perform multiple document requests in one sess
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
+- visionOS 1.0+
 
 ## Declaration
 

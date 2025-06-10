@@ -1,6 +1,6 @@
 # setInputMuteStateChangeHandler(_:)
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: method
 
 Sets a callback to handle changes to application-level audio muting states.

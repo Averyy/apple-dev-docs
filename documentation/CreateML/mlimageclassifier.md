@@ -20,8 +20,8 @@ struct MLImageClassifier
 
 ## Mentions
 
-- [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
 - [Creating an Image Classifier Model](creating-an-image-classifier-model.md)
+- [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
 
 #### Overview
 
@@ -112,6 +112,7 @@ When your model does perform well enough, you save it as a Core ML model file wi
 - [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

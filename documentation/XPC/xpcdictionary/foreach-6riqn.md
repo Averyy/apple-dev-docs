@@ -1,6 +1,6 @@
 # forEach(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Calls the given closure with each key and value in the dictionary in the same order as a for-in loop.

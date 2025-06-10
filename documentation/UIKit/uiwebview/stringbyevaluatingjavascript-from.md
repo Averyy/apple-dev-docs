@@ -26,8 +26,6 @@ New apps should instead use the [`evaluateJavaScript(_:completionHandler:)`](htt
 
 > ❗ **Important**:  The [`stringByEvaluatingJavaScript(from:)`](uiwebview/stringbyevaluatingjavascript(from:).md) method waits synchronously for JavaScript evaluation to complete. If you load web content whose JavaScript code you have not vetted, invoking this method could hang your app. Best practice is to adopt the [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) class and use its [`evaluateJavaScript(_:completionHandler:)`](https://developer.apple.com/documentation/WebKit/WKWebView/evaluateJavaScript(_:completionHandler:)) method instead.
 
- The [`stringByEvaluatingJavaScript(from:)`](uiwebview/stringbyevaluatingjavascript(from:).md) method waits synchronously for JavaScript evaluation to complete. If you load web content whose JavaScript code you have not vetted, invoking this method could hang your app. Best practice is to adopt the [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) class and use its [`evaluateJavaScript(_:completionHandler:)`](https://developer.apple.com/documentation/WebKit/WKWebView/evaluateJavaScript(_:completionHandler:)) method instead.
-
 ## Parameters
 
 - `script`: The JavaScript script to run.

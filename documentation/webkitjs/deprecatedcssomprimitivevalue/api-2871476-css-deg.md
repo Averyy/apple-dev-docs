@@ -1,6 +1,6 @@
 # CSS_DEG
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # init(from:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: init
 
 **Availability**:

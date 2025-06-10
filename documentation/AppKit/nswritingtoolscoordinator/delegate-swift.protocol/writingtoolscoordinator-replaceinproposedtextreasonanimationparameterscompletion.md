@@ -25,8 +25,6 @@ Use this method to update your view’s text storage with the proposed changes. 
 
 > ❗ **Important**: When integrating changes, remember to update `range.location` as needed to get the correct location in your view’s text storage.
 
-When integrating changes, remember to update `range.location` as needed to get the correct location in your view’s text storage.
-
 Remove the text in the appropriate range of your text storage, and replace it with the contents of `replacementText`. When you finish, call the completion handler and pass in the replacement text you inserted. If you change the string in `replacementText` before incorporating it into your text storage, return your modified string instead. Returning the string lets Writing Tools track any alterations you made to it. You can also pass `nil` to the completion handler if you don’t incorporate the replacement text.
 
 For interactive changes, Writing Tools works with your delegate to animate the removal of the old text and the insertion of any replacement text. If you need to modify other parts of your interface to reflect the changes, use the provided [`NSWritingToolsCoordinator.AnimationParameters`](nswritingtoolscoordinator/animationparameters.md) object to create additional animations to run at the same time as the system-provided animations.

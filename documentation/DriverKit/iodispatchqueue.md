@@ -23,8 +23,6 @@ An [`IODispatchQueue`](iodispatchqueue.md) object is a FIFO queue that you use t
 
 > ❗ **Important**:  Always use an [`IODispatchQueue`](iodispatchqueue.md) instead of a [`dispatch_queue_t`](https://developer.apple.com/documentation/Dispatch/dispatch_queue_t) structure to schedule tasks for your driver.
 
- Always use an [`IODispatchQueue`](iodispatchqueue.md) instead of a [`dispatch_queue_t`](https://developer.apple.com/documentation/Dispatch/dispatch_queue_t) structure to schedule tasks for your driver.
-
 ## Topics
 
 ### Creating a Dispatch Queue

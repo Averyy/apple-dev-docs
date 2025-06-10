@@ -1,6 +1,6 @@
 # CurrentWeather
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure that describes the current conditions observed at a location.
@@ -79,6 +79,8 @@ The current conditions may not be a literal observation, but rather the result o
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

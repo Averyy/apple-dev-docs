@@ -10,6 +10,7 @@ An indication that two peers running incompatible versions of RealityKit can’t
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

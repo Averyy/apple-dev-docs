@@ -22,8 +22,6 @@ Implement this method to conform to the `Hashable` protocol. The components used
 
 > ❗ **Important**: In your implementation of `hash(into:)`, don’t call `finalize()` on the `hasher` instance provided, or replace it with a different instance. Doing so may become a compile-time error in the future.
 
-In your implementation of `hash(into:)`, don’t call `finalize()` on the `hasher` instance provided, or replace it with a different instance. Doing so may become a compile-time error in the future.
-
 ## Parameters
 
 - `hasher`: The hasher to use when combining the components   of this instance.

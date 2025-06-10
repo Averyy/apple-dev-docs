@@ -51,6 +51,7 @@ struct TemporalTransformerToUpdatableEstimatorAdaptor<Transformer> where Transfo
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TemporalEstimator](temporalestimator.md)
 - [UpdatableTemporalEstimator](updatabletemporalestimator.md)
 

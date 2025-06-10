@@ -1,6 +1,6 @@
 # performAccessibilityAudit(for:_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 **Availability**:

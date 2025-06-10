@@ -26,7 +26,7 @@ static var numberValue: AVAsyncProperty<Root, NSNumber?> { get }
 
 #### Discussion
 
-Use the [`load(_:)`](avasynchronouskeyvalueloading/load(_:).md) method to retrieve the property value.
+Use the `AVAsynchronousKeyValueLoading/load(_:)` method to retrieve the property value.
 
 This value is `nil` if the system can’t represent the value as a number.
 

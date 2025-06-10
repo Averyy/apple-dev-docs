@@ -1,6 +1,6 @@
 # urls
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 An array of URL objects in all pasteboard items.

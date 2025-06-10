@@ -42,6 +42,7 @@ enum ContentMode
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -54,7 +55,7 @@ enum ContentMode
 - [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](view/scaleeffect(x:y:anchor:).md)
   Scales this view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](view/scaleeffect(x:y:z:anchor:).md)
-  Scales this view by the specified horizontal, vertical, and depth factors.
+  Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
 - [func aspectRatio(_:contentMode:)](view/aspectratio(_:contentmode:).md)
   Constrains this view’s dimensions to the specified aspect ratio.
 - [func rotationEffect(Angle, anchor: UnitPoint) -> some View](view/rotationeffect(_:anchor:).md)
@@ -70,7 +71,7 @@ enum ContentMode
 - [func transformEffect(CGAffineTransform) -> some View](view/transformeffect(_:).md)
   Applies an affine transformation to this view’s rendered output.
 - [func transform3DEffect(AffineTransform3D) -> some View](view/transform3deffect(_:).md)
-  Applies a 3D transformation to the receiver.
+  Applies a 3D transformation to this view’s rendered output.
 - [func projectionEffect(ProjectionTransform) -> some View](view/projectioneffect(_:).md)
   Applies a projection transformation to this view’s rendered output.
 - [struct ProjectionTransform](projectiontransform.md)

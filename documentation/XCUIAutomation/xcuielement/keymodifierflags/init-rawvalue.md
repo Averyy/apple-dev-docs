@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: init
 
 Creates a flag that represents a key in a combination keystroke with the specified raw value.

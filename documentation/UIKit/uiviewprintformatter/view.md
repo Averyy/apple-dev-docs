@@ -14,7 +14,6 @@ The view from which the view print formatter was derived.
 ## Declaration
 
 ```swift
-@MainActor
 var view: UIView { get }
 ```
 

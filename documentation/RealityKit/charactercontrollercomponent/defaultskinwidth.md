@@ -10,6 +10,7 @@ The skin width value RealityKit applies when you use the default initializer.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

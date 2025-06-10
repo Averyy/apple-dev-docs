@@ -33,11 +33,12 @@ struct Movie: Transferable {
     let url: URL
     static var transferRepresentation: some TransferRepresentation {
         FileRepresentation(contentType: .mpeg4Movie) { movie in
-            SentTransferredFile($0.url)
-            } importing: { received in
-                let copy: URL = URL(fileURLWithPath: "<#...#>")
-                try FileManager.default.copyItem(at: received.file, to: copy)
-                return Self.init(url: copy) }
+            SentTransferredFile(movie.url)
+        } importing: { received in
+            let copy = URL(fileURLWithPath: "<#...#>")
+            try FileManager.default.copyItem(at: received.file, to: copy)
+            return Self(url: copy)
+        }
     }
 }
 ```
@@ -63,6 +64,7 @@ It’s efficient to pass such data around as a file and the receiver loads it in
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TransferRepresentation](transferrepresentation.md)
 
 ## See Also

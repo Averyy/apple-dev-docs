@@ -10,6 +10,7 @@ The intended use of the object’s texture property.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -24,8 +25,6 @@ static let textureSemantic: TextureResource.Semantic
   The clearcoat intensity specified using a UV-mapped image.
 - [var scale: Float](physicallybasedmaterial/clearcoat-swift.struct/scale.md)
   The clearcoat intensity specified as a single value.
-- [PhysicallyBasedMaterial.Clearcoat.FloatLiteralType](physicallybasedmaterial/clearcoat-swift.struct/floatliteraltype.md)
-  A type that represents a floating-point literal.
 
 
 ---

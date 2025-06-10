@@ -1,6 +1,6 @@
 # Requesting the OpenGL Renderer
 
-**Framework**: Spritekit
+**Framework**: SpriteKit
 
 Switch to the legacy renderer temporarily for debugging purposes.
 
@@ -38,4 +38,4 @@ defaults.set( dict, forKey: "SKDefaults" )
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/requesting-the-opengl-renderer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/requesting-the-opengl-renderer)*

@@ -26,8 +26,6 @@ For more information, see [`Creating a collaborative session`](creating-a-collab
 
 > ❗ **Important**:  Collaborative sessions work best with up to four participants.
 
- Collaborative sessions work best with up to four participants.
-
 ##### Sharing Collaboration Data Over the Network
 
 You are responsible for sending collaboration data over the network, including choosing the network framework and implementing the code. See [`Creating a multiuser AR experience`](creating-a-multiuser-ar-experience.md) for an example app that shares a world map among users via [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity). Although [`Creating a multiuser AR experience`](creating-a-multiuser-ar-experience.md) demonstrates sharing world data among peer users, it does so using a host-guest model. The primary advantage of collaboration data is that it enables you to share world data peer-to-peer.

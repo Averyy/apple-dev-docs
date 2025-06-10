@@ -90,6 +90,7 @@ class NSForm
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
 - [NSViewToolTipOwner](nsviewtooltipowner.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

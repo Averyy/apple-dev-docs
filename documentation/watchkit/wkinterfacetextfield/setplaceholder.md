@@ -1,6 +1,6 @@
 # setPlaceholder(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the text field’s placeholder.

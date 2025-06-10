@@ -10,6 +10,7 @@ Defines a 3D mesh’s structure and data.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -40,23 +41,16 @@ descriptor.primitives = .triangles([0, 1, 2])
 - [init(name: String)](meshdescriptor/init(name:).md)
   Creates an empty mesh descriptor.
 ### Instance Properties
-- [var buffers: [MeshBuffers.Identifier : AnyMeshBuffer]](meshdescriptor/buffers.md)
-  Descriptors for the buffers.
 - [var materials: MeshDescriptor.Materials](meshdescriptor/materials-swift.property.md)
   Material assignments.
 - [var name: String](meshdescriptor/name.md)
   The name of the mesh.
 - [var primitives: MeshDescriptor.Primitives?](meshdescriptor/primitives-swift.property.md)
   The primitives that make up the mesh.
-### Subscripts
-- [subscript<S>(S) -> MeshBuffer<S.Element>?](meshdescriptor/subscript(_:).md)
-  The buffer for a given semantic. There can only be one buffer for any given ID.
 ### Enumerations
 - [MeshDescriptor.Materials](meshdescriptor/materials-swift.enum.md)
 - [MeshDescriptor.Primitives](meshdescriptor/primitives-swift.enum.md)
   Indicates which primitive shape type a mesh applies to its vertex indices.
-### Default Implementations
-- [MeshBufferContainer Implementations](meshdescriptor/meshbuffercontainer-implementations.md)
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 # accessibilityHint(_:isEnabled:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Communicates to the user what happens after performing the view’s action.

@@ -11,7 +11,10 @@ Adjusts the map’s visible region to bring the specified overlays and annotatio
 ## Declaration
 
 ```swift
-(mapkit.Annotation|mapkit.Overlay|ItemCollection)[] showItems();
+(mapkit.Annotation|mapkit.Overlay|ItemCollection)[] showItems(
+	mapkit.Annotation|mapkit.Overlay|ItemCollection)[] items,
+	optional MapShowItemsOptions options
+);
 ```
 
 ## Mentions
@@ -38,7 +41,7 @@ This method throws an `Error` if the arguments to the method are invalid.
 The following example demonstrates how to use `showItems:`
 
 ```javascript
-var park = new mapkit.MarkerAnnotation(new mapkit.Coordinate(37.749581, -119.524212), { title: "Yosemite" }),
+const park = new mapkit.MarkerAnnotation(new mapkit.Coordinate(37.749581, -119.524212), { title: "Yosemite" }),
     surf = new mapkit.MarkerAnnotation(new mapkit.Coordinate(37.49557, -122.496687), { title: "Mavericks" });
 map.showItems([park, surf],
               { animate: true,

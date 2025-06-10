@@ -27,8 +27,6 @@ Setting this value to [`true`](https://developer.apple.com/documentation/swift/t
 
 > ⚠️ **Warning**:  If you’re synchronizing presentation with a Core Animation transaction, don’t use the [`present(_:)`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer/present(_:)) method on the command buffer to schedule the drawable for presentation. This convenience method (and any variant of it on [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer)) doesn’t wait for a transaction to be available.
 
- If you’re synchronizing presentation with a Core Animation transaction, don’t use the [`present(_:)`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer/present(_:)) method on the command buffer to schedule the drawable for presentation. This convenience method (and any variant of it on [`MTLCommandBuffer`](https://developer.apple.com/documentation/Metal/MTLCommandBuffer)) doesn’t wait for a transaction to be available.
-
 ## See Also
 
 - [var displaySyncEnabled: Bool](cametallayer/displaysyncenabled.md)

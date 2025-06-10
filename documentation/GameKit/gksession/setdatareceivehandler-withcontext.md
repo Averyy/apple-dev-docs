@@ -28,8 +28,6 @@ where  contains the bytes received from a remote peer,  is a string that identif
 
 > ❗ **Important**:  Data received from other peers should be treated as  data. Be sure to validate the data you receive from the session and write your code carefully to avoid security vulnerabilities. See the [`Secure Coding Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415) for more information.
 
- Data received from other peers should be treated as  data. Be sure to validate the data you receive from the session and write your code carefully to avoid security vulnerabilities. See the [`Secure Coding Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/SecureCodingGuide/Introduction.html#//apple_ref/doc/uid/TP40002415) for more information.
-
 ## Parameters
 
 - `handler`: The object you want the session to call when it receives data from other peers.

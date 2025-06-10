@@ -8,7 +8,8 @@ Programmatically presents the find and replace interface for text editor views.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- visionOS 1.0+
+- macOS 26.0+ (Beta)
+- visionOS ?+
 
 ## Declaration
 

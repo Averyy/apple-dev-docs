@@ -16,6 +16,13 @@
 func createCredentialRegistrationRequest(challenge: Data, name: String, userID: Data, requestStyle: ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest.RequestStyle) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest
 ```
 
+## Parameters
+
+- `challenge`: The challenge to sign.
+- `name`: The user name for the new credential.
+- `userID`: An identifier to be stored alongside the credential, which will be returned with the credential when it is used to authenticate.
+- `requestStyle`: The style for this request.
+
 
 ---
 

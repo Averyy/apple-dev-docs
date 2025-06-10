@@ -22,8 +22,6 @@ func hv_gic_create(_ gic_config: hv_gic_config_t) -> hv_return_t
 
 > ❗ **Important**:  Only call this method after a virtual machine (VM) has started, but before you create vCPUs so that the framework can allocate GIC CPU system resources. If either of these conditions aren’t met, the framework returns an error.
 
- Only call this method after a virtual machine (VM) has started, but before you create vCPUs so that the framework can allocate GIC CPU system resources. If either of these conditions aren’t met, the framework returns an error.
-
 Use this method to create an [`ARM Generic Interrupt Controller (GIC) v3`](https://developer.apple.comhttps://developer.arm.com/documentation/ihi0069/latest/) device. The framework supports a maximum of one instance of this device per VM. The device supports a distributor, redistributors, MSIs, and GIC CPU system registers.
 
 When EL2 is enabled, the device supports GIC hypervisor control registers which the guest hypervisor uses to inject interrupts to its guest. The framework doesn’t support the Hypervisor’s vCPU get or set interrupt functions for injecting interrupts to a nested guest.

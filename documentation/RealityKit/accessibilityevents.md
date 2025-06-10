@@ -8,6 +8,7 @@
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -29,6 +30,11 @@ enum AccessibilityEvents
   An accessibility event for incrementing an accessibility element.
 - [AccessibilityEvents.RotorNavigation](accessibilityevents/rotornavigation.md)
   An accessibility event associated with a rotor navigation.
+
+## See Also
+
+- [enum ManipulationEvents](manipulationevents.md)
+  Events that occur while a person manipulates an entity.
 
 
 ---

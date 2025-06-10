@@ -25,7 +25,7 @@ class let routeChangeNotification: NSNotification.Name
 
 #### Discussion
 
-The [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/1409222-userinfo) dictionary of this notification contains the [`AVAudioSessionRouteChangeReasonKey`](avaudiosessionroutechangereasonkey.md) and [`AVAudioSessionRouteChangePreviousRouteKey`](avaudiosessionroutechangepreviousroutekey.md) keys, which provide information about the route change.
+The [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) dictionary of this notification contains the [`AVAudioSessionRouteChangeReasonKey`](avaudiosessionroutechangereasonkey.md) and [`AVAudioSessionRouteChangePreviousRouteKey`](avaudiosessionroutechangepreviousroutekey.md) keys, which provide information about the route change.
 
 See [`Responding to audio route changes`](responding-to-audio-route-changes.md) for more information on using this notification.
 

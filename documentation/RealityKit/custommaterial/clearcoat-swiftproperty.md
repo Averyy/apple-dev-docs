@@ -10,6 +10,7 @@ The transparent highlights that simulate a clear, shiny coating on an entity.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

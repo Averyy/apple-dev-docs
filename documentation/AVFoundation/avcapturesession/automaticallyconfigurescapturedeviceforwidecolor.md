@@ -1,6 +1,6 @@
 # automaticallyConfiguresCaptureDeviceForWideColor
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that specifies whether the session should automatically use wide-gamut color where available.

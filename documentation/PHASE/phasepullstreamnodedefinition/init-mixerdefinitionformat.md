@@ -17,19 +17,14 @@
 init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat)
 ```
 
-#### Discussion
+#### Return Value
 
-```None
-@method initWithMixerDefinition:format
-@abstract Create a pull stream node definition
-@param mixerDefinition
-    The mixer definition this stream will be assigned to
-@param format
-    The AVAudioFormat object that will define the attributes of the audio this node will accept.
-    Only Core Audio's standard deinterleaved 32-bit floating-point formats are supported.
-@return
-    A new PHASEPullStreamNodeDefinition object
-```
+A new PHASEPullStreamNodeDefinition object
+
+## Parameters
+
+- `mixerDefinition`: The mixer definition this stream will be assigned to
+- `format`: The AVAudioFormat object that will define the attributes of the audio this node will accept.   Only Core Audio’s standard deinterleaved 32-bit floating-point formats are supported.
 
 
 ---

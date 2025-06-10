@@ -1,6 +1,6 @@
 # applicationContext
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 The most recent contextual data sent to the paired and active device.

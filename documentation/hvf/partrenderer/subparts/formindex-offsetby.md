@@ -1,6 +1,6 @@
 # formIndex(_:offsetBy:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Offsets the given index by the specified distance.

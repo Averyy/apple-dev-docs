@@ -123,6 +123,7 @@ After you create a task, you start it by calling its [`resume()`](urlsessiontask
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [ProgressReporting](progressreporting.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -136,4 +137,4 @@ After you create a task, you start it by calling its [`resume()`](urlsessiontask
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessiontask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessiontask)*

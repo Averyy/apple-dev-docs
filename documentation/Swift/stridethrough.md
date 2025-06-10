@@ -37,6 +37,7 @@ Use the `stride(from:through:by:)` function to create `StrideThrough` instances.
 - [Copyable](copyable.md)
 - [CustomReflectable](customreflectable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

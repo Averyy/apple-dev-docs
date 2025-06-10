@@ -1,6 +1,6 @@
 # pressureTrend
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The direction of change of the sea level air pressure.

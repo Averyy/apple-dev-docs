@@ -1,6 +1,6 @@
 # init(image:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: init
 
 Creates and returns an image object using the specified UIKit image.

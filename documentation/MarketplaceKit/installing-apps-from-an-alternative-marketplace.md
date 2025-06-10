@@ -123,8 +123,6 @@ Compare the `platform` and `osVersion` fields to those contained within the app�
 
 > ❗ **Important**: Host the file using `https://` with a valid certificate. Don’t use redirects. For more information, see [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
 
-Host the file using `https://` with a valid certificate. Don’t use redirects. For more information, see [`Supporting associated domains`](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
-
 If downloading your app requires authorization and the system communicates with your endpoint without a valid access token, respond to the call with a status that requests reauthentication. An invalid access token can result from token expiration, or the restoration of a device from a backup. For more information, see [`Reauthenticating a person to manage apps`](reauthenticating-a-person-to-manage-apps.md).
 
 Otherwise, send your app in response by supplying a URL in the `restores` element to the alternative distribution package for the requested app version:

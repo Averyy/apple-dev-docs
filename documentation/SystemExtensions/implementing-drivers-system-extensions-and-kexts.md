@@ -22,8 +22,6 @@ The System Extensions framework supports a class of kernel-level features that p
 
 > ❗ **Important**:  In macOS 11 and later, the kernel doesn’t load a kext if an equivalent System Extension solution exists. You may continue to use kexts in macOS 10.15 and earlier.
 
- In macOS 11 and later, the kernel doesn’t load a kext if an equivalent System Extension solution exists. You may continue to use kexts in macOS 10.15 and earlier.
-
 For more information about the types of system extensions you can create, and how to install them, see [`System Extensions`](SystemExtensions.md).
 
 ##### Communicate with Custom Hardware Using a Driverkit Extension
@@ -35,8 +33,6 @@ When the user attaches a new hardware device to the computer, the kernel searche
 Apple provides drivers for all standards-based hardware protocols that Mac computers support. Create custom drivers only for the protocols and features unique to your hardware. You can also use a codeless dext to map your hardware to one of Apple’s built-in drivers.
 
 > ❗ **Important**:  In macOS 11 and later, the kernel doesn’t load a kext if an equivalent DriverKit solution exists. You may continue to use kexts in macOS 10.15 and earlier.
-
- In macOS 11 and later, the kernel doesn’t load a kext if an equivalent DriverKit solution exists. You may continue to use kexts in macOS 10.15 and earlier.
 
 For information about how to create and install custom drivers, see [`Creating a Driver Using the DriverKit SDK`](https://developer.apple.com/documentation/DriverKit/creating-a-driver-using-the-driverkit-sdk).
 

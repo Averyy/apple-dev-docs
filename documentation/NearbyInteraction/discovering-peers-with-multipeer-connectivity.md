@@ -32,8 +32,6 @@ After the other device receives the invitation, [`MCNearbyServiceAdvertiser`](ht
 
 > ❗ **Important**:  This process invites any nearby device to interact, but depending on the level of security an app requires, the app can more precisely control broadcasting, invitation, and acceptance behavior. For more information, see [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity).
 
- This process invites any nearby device to interact, but depending on the level of security an app requires, the app can more precisely control broadcasting, invitation, and acceptance behavior. For more information, see [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity).
-
 ##### Exchange Discovery Tokens
 
 To respond to the invitation, the app sends its NI session’s [`discoveryToken`](ninearbyobject/discoverytoken.md) to the peer. Because Multipeer Connectivity requires serialization of the data it transmits, the app archives it first.

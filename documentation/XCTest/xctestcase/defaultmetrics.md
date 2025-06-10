@@ -1,6 +1,6 @@
 # defaultMetrics
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An array of default metrics the test uses to record performance.

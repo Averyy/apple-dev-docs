@@ -9,7 +9,7 @@ Adds custom swipe actions to a row in a list.
 - iOS 15.0+
 - iPadOS 15.0+
 - macOS 12.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 8.0+
 
 ## Declaration

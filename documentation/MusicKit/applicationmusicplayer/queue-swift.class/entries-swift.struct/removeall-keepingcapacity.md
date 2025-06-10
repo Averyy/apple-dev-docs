@@ -1,6 +1,6 @@
 # removeAll(keepingCapacity:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Removes all elements from the collection.

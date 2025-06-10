@@ -17,7 +17,7 @@ var selectionIndexPaths: Set<IndexPath> { get set }
 
 #### Discussion
 
-This property reflects the index paths of the currently selected items, where each index path contains a [`section`](https://developer.apple.com/documentation/foundation/nsindexpath/1528298-section) number and an index number for the [`item`](https://developer.apple.com/documentation/foundation/nsindexpath/1528293-item) in that section. This property is updated automatically when the user selects items interactively. You can also change the selection programmatically by assigning a new value to this property. To animate changes to the selection, call this method on the collection view’s [`animator()`](nsanimatablepropertycontainer/animator().md) proxy object instead.
+This property reflects the index paths of the currently selected items, where each index path contains a [`section`](https://developer.apple.com/documentation/Foundation/NSIndexPath/section) number and an index number for the [`item`](https://developer.apple.com/documentation/Foundation/NSIndexPath/item) in that section. This property is updated automatically when the user selects items interactively. You can also change the selection programmatically by assigning a new value to this property. To animate changes to the selection, call this method on the collection view’s [`animator()`](nsanimatablepropertycontainer/animator().md) proxy object instead.
 
 It is a programmer error to specify an index path that does not refer to a valid item in the data source. If you specify an invalid index path, this method raises an exception.
 

@@ -1,6 +1,6 @@
 # XCTSkip
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: struct
 
 An error that causes the current test to cease executing and the test runner to mark the test as skipped when the test throws the error.
@@ -26,6 +26,7 @@ struct XCTSkip
 - [CustomNSError](../Foundation/CustomNSError.md)
 - [Error](../Swift/Error.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

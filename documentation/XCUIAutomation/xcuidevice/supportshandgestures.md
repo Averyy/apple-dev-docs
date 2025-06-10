@@ -1,6 +1,6 @@
 # supportsHandGestures
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A Boolean value that indicates if the device supports hand gestures.

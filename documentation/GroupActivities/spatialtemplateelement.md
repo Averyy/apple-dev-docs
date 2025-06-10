@@ -37,6 +37,7 @@ A type that adopts the [`SpatialTemplateElement`](spatialtemplateelement.md) pro
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [SpatialTemplateSeatElement](spatialtemplateseatelement.md)
 
@@ -46,6 +47,8 @@ A type that adopts the [`SpatialTemplateElement`](spatialtemplateelement.md) pro
   Create a team-based guessing game for visionOS using Group Activities.
 - [protocol SpatialTemplate](spatialtemplate.md)
   An interface you use to create custom arrangements of spatial Personas in a scene.
+- [struct SpatialTemplatePreference](spatialtemplatepreference.md)
+  A structure that specifies the preferred arrangement of participant spatial Personas in a shared simulation space.
 - [struct SpatialTemplateSeatElement](spatialtemplateseatelement.md)
   A spatial template element that represents a seat for a participant in the activity.
 - [struct SpatialTemplateElementPosition](spatialtemplateelementposition.md)

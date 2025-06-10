@@ -1,6 +1,6 @@
 # error
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The last error that occurred for this element. (read-only)

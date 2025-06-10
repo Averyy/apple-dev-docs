@@ -62,4 +62,4 @@ After making changes to the order, choose File > Save to store those changes and
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-keychain-sharing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-keychain-sharing)*

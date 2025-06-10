@@ -128,6 +128,24 @@ To ensure that results are deterministic, set `VECLIB_MAXIMUM_THREADS=1` to spec
   A structure that contains a dense vector of double-precision, floating-point values.
 - [struct DenseVector_Float](densevector_float.md)
   A structure that contains a dense vector of single-precision, floating-point values.
+### Creating sparse complex matrices
+- [struct SparseMatrix_Complex_Double](sparsematrix_complex_double.md)
+  A type representing a sparse complex matrix.
+- [struct SparseMatrix_Complex_Float](sparsematrix_complex_float.md)
+  A type representing a sparse complex matrix.
+- [struct SparseAttributesComplex_t](sparseattributescomplex_t.md)
+  A type representing the attributes of a matrix.
+- [struct SparseMatrixStructureComplex](sparsematrixstructurecomplex.md)
+  A type representing the sparsity structure of a sparse complex matrix.
+### Creating dense complex matrices and dense complex vectors
+- [struct DenseMatrix_Complex_Double](densematrix_complex_double.md)
+  Contains a dense `rowCount` x `columnCount` matrix of complex double values stored in column-major order.
+- [struct DenseMatrix_Complex_Float](densematrix_complex_float.md)
+  Contains a dense `rowCount` x `columnCount` matrix of complex float values stored in column-major order.
+- [struct DenseVector_Complex_Double](densevector_complex_double.md)
+  Contains a dense vector of double complex values.
+- [struct DenseVector_Complex_Float](densevector_complex_float.md)
+  Contains a dense vector of float complex values.
 ### Solving systems with direct sparse methods
 - [Solving systems using direct methods](solving-systems-using-direct-methods.md)
   Use direct methods to solve systems of equations where the coefficient matrix is sparse.
@@ -135,6 +153,10 @@ To ensure that results are deterministic, set `VECLIB_MAXIMUM_THREADS=1` to spec
   A structure that represents the factorization of a matrix of double-precision, floating-point values.
 - [struct SparseOpaqueFactorization_Float](sparseopaquefactorization_float.md)
   A structure that represents the factorization of a matrix of single-precision, floating-point values.
+- [struct SparseOpaqueFactorization_Complex_Double](sparseopaquefactorization_complex_double.md)
+  A semi-opaque type representing a matrix factorization in complex double.
+- [struct SparseOpaqueFactorization_Complex_Float](sparseopaquefactorization_complex_float.md)
+  A semi-opaque type representing a matrix factorization in complex float.
 - [Sparse Matrix Factor Functions](sparse-matrix-factor-functions.md)
   Compute the factorization of a matrix.
 - [Sparse Direct Solving Functions (Matrix RHS)](sparse-direct-solving-functions-matrix-rhs.md)

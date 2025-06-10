@@ -1,0 +1,18 @@
+# NX_LeftButton
+
+**Framework**: Kernel  
+**Kind**: econst
+
+**Availability**:
+- macOS 10.0+
+
+## Declaration
+
+```swift
+NX_LeftButton
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/nxmousebutton/nx_leftbutton)*

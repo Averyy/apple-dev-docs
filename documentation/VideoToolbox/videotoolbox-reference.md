@@ -1,6 +1,6 @@
 # VideoToolbox Reference
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 
 ---

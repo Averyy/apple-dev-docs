@@ -1,6 +1,6 @@
 # commit()
 
-**Framework**: Browserenginekit  
+**Framework**: BrowserEngineKit  
 **Kind**: method
 
 `commit` must be called on  instance and it must be the last call to each instance. note that it does not commit `CATransaction`s but rather commits the coordination of transactions in the render server. note that coordinators should have as constrained a lifespan as possible and will timeout if held open too long.

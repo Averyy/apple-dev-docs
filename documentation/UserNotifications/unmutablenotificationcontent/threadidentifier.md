@@ -1,6 +1,6 @@
 # threadIdentifier
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The identifier that groups related notifications.

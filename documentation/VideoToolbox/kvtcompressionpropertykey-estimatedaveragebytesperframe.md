@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_EstimatedAverageBytesPerFrame
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 An estimate of the expected size in bytes of a single encoded frame based on the current configuration.

@@ -23,9 +23,9 @@ func replace(region: MTLRegion, mipmapLevel level: Int, withBytes pixelBytes: Un
 ## Mentions
 
 - [Optimizing Texture Data](optimizing-texture-data.md)
-- [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
-- [Copying Data into or out of Mipmaps](copying-data-into-or-out-of-mipmaps.md)
 - [Copying Data to a Private Resource](copying-data-to-a-private-resource.md)
+- [Copying Data into or out of Mipmaps](copying-data-into-or-out-of-mipmaps.md)
+- [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
 
 #### Discussion
 

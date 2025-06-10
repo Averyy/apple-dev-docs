@@ -17,7 +17,7 @@ Returns the standard color for purple pins.
 
 ```swift
 @MainActor
-class func purplePinColor() -> NSColor
+class func purplePinColor() -> UIColor
 ```
 
 #### Return Value

@@ -1,6 +1,6 @@
 # title
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The title of the scanned document.

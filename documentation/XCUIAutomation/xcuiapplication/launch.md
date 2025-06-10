@@ -1,6 +1,6 @@
 # launch()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Launches the application.

@@ -17,7 +17,7 @@ var showsTimecodes: Bool { get set }
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is `false`.
 
 ## See Also
 

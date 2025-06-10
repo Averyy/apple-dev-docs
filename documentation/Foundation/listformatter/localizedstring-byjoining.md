@@ -28,8 +28,6 @@ A formatted string that joins together a list of strings using a locale-specific
 
 > 💡 **Tip**:  Use this method to join strings that are ready to be displayed in a bullet-point list. Sentences, phrases with punctuations, and appositions may not work well when joined together.
 
- Use this method to join strings that are ready to be displayed in a bullet-point list. Sentences, phrases with punctuations, and appositions may not work well when joined together.
-
 ## Parameters
 
 - `strings`: An array of strings to join together in a list.

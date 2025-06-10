@@ -73,6 +73,56 @@ AVFoundation combines several major technology areas that together encompass a w
   A structure that defines the errors that framework operations can generate.
 ### Macros
 - [Macros](avfoundation-macros.md)
+### Classes
+- [class AVCaptureSpatialAudioMetadataSampleGenerator](avcapturespatialaudiometadatasamplegenerator.md)
+- [class AVCustomMediaSelectionScheme](avcustommediaselectionscheme.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVCustomMediaSelectionScheme provides a collection of custom settings for controlling the presentation of the media.
+- [class AVMediaPresentationSelector](avmediapresentationselector.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSelector represents a collection of mutually exclusive settings.
+- [class AVMediaPresentationSetting](avmediapresentationsetting.md)
+  For content that has been authored with the express intent of offering an alternative selection interface for AVMediaSelectionOptions, AVMediaPresentationSetting represents a selectable setting for controlling the presentation of the media.
+- [class AVMetadataCatHeadObject](avmetadatacatheadobject.md)
+- [class AVMetadataDogHeadObject](avmetadatadogheadobject.md)
+- [class AVMetricDownloadSummaryEvent](avmetricdownloadsummaryevent.md)
+  Represents a summary metric event with aggregated metrics for the entire download task.
+- [class AVPlaybackCoordinationMedium](avplaybackcoordinationmedium.md)
+### Structures
+- [struct AVCIImageFilteringParameters](avciimagefilteringparameters.md)
+- [struct AVCIImageFilteringResult](avciimagefilteringresult.md)
+  An output video frame processed with Core Image filtering.
+- [struct AVCaptureSceneMonitoringStatus](avcapturescenemonitoringstatus.md)
+### Variables
+- [let AVAssetExportPresetHEVC4320x2160: String](avassetexportpresethevc4320x2160.md)
+- [let AVAssetExportPresetMVHEVC4320x4320: String](avassetexportpresetmvhevc4320x4320.md)
+- [let AVAssetExportPresetMVHEVC7680x7680: String](avassetexportpresetmvhevc7680x7680.md)
+- [let AVContentKeyRequestRandomDeviceIdentifierSeedKey: String](avcontentkeyrequestrandomdeviceidentifierseedkey.md)
+  Value is an NSData containing a 16-byte seed to randomize the user’s deviceID contained in the SPC blob during FairPlay key exchange
+- [let AVContentKeyRequestShouldRandomizeDeviceIdentifierKey: String](avcontentkeyrequestshouldrandomizedeviceidentifierkey.md)
+  Value is an Boolean indicating whether the user’s deviceID contained in the SPC blob during FairPlay key exchange should be randomized using a system generated seed
+- [let AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeEventKey: String](avplayerinterstitialeventmonitorcurrenteventskippablestatedidchangeeventkey.md)
+  The dictionary key for the AVPlayerInterstitial event that had its skippable event state changed in the payload of the AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeNotification.
+- [let AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeSkipControlLabelKey: String](avplayerinterstitialeventmonitorcurrenteventskippablestatedidchangeskipcontrollabelkey.md)
+  The dictionary key for the skip label of the event in the payload of the AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeNotification.
+- [let AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeStateKey: String](avplayerinterstitialeventmonitorcurrenteventskippablestatedidchangestatekey.md)
+  The dictionary key for the skippable event state in the payload of the AVPlayerInterstitialEventMonitorCurrentEventSkippableStateDidChangeNotification.
+- [let AVPlayerInterstitialEventMonitorCurrentEventSkippedEventKey: String](avplayerinterstitialeventmonitorcurrenteventskippedeventkey.md)
+  The dictionary key for the AVPlayerInterstitialEvent that was skipped in the payload of the AVPlayerInterstitialEventMonitorCurrentEventSkippedNotification.
+- [let AVPlayerInterstitialEventMonitorInterstitialEventDidFinishDidPlayEntireEventKey: String](avplayerinterstitialeventmonitorinterstitialeventdidfinishdidplayentireeventkey.md)
+  The dictionary key to indicate whether the event that finished playing was fully played out in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventDidFinishNotification.
+- [let AVPlayerInterstitialEventMonitorInterstitialEventDidFinishEventKey: String](avplayerinterstitialeventmonitorinterstitialeventdidfinisheventkey.md)
+  The dictionary key for the AVPlayerInterstitialEvent that finished playing in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventDidFinishNotification.
+- [let AVPlayerInterstitialEventMonitorInterstitialEventDidFinishPlayoutTimeKey: String](avplayerinterstitialeventmonitorinterstitialeventdidfinishplayouttimekey.md)
+  The dictionary key for the playout time of the event that finished playing in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventDidFinishNotification.
+- [let AVPlayerInterstitialEventMonitorInterstitialEventWasUnscheduledErrorKey: String](avplayerinterstitialeventmonitorinterstitialeventwasunschedulederrorkey.md)
+  The dictionary key to indicate whether the event that was unscheduled was due to an error.
+- [let AVPlayerInterstitialEventMonitorInterstitialEventWasUnscheduledEventKey: String](avplayerinterstitialeventmonitorinterstitialeventwasunscheduledeventkey.md)
+  The dictionary key for the AVPlayerInterstitialEvent that was unscheduled in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventWasUnscheduledNotification.
+- [let AVURLAssetShouldParseExternalSphericalTagsKey: String](avurlassetshouldparseexternalsphericaltagskey.md)
+  Indicates whether additional projected media signaling in the asset should be parsed and resolved as format description extensions.
+### Type Aliases
+- [typealias AVURLAssetTrack](avurlassettrack-4rdw0.md)
+### Enumerations
+- [enum AVCaptureCameraLensSmudgeDetectionStatus](avcapturecameralenssmudgedetectionstatus.md)
 
 
 ---

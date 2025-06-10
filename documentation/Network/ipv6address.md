@@ -76,6 +76,7 @@ struct IPv6Address
 - [Hashable](../Swift/Hashable.md)
 - [IPAddress](ipaddress.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

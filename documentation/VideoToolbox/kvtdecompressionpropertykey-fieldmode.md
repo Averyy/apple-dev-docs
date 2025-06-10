@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_FieldMode
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Modes for special handling of interlaced content (optional).

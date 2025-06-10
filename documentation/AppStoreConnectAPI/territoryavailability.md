@@ -29,6 +29,7 @@ object TerritoryAvailability
   The request body you use to create an app availability.
 - [object AppAvailabilityV2Response](appavailabilityv2response.md)
   A response that contains a single app availability resource.
+- [object AppAppAvailabilityV2LinkageResponse](appappavailabilityv2linkageresponse.md)
 - [object TerritoryAvailabilitiesResponse](territoryavailabilitiesresponse.md)
   A response that contains a list of territory availability resources.
 - [object TerritoryAvailabilityInlineCreate](territoryavailabilityinlinecreate.md)

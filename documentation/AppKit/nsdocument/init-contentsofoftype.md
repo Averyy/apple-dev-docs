@@ -1,6 +1,6 @@
 # init(contentsOf:ofType:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: init
 
 Initializes a document located by a URL of a specified type.

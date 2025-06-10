@@ -7,16 +7,12 @@ The weekday allowance dictionary.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object ParentalControlsTimeLimits.Time-limits.Weekday-allowance
 ```
-
-#### Overview
 
 ## See Also
 

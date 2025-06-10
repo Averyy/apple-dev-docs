@@ -42,6 +42,7 @@ Use the `NSWritingToolsCoordinatorTextAnimation` constants to determine the type
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

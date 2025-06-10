@@ -35,6 +35,7 @@ struct NSDiffableDataSourceTransaction<SectionIdentifierType, ItemIdentifierType
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

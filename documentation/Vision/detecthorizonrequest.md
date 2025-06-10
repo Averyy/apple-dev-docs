@@ -59,6 +59,7 @@ This request generates a [`HorizonObservation`](horizonobservation.md) object th
 - [Hashable](../Swift/Hashable.md)
 - [ImageProcessingRequest](imageprocessingrequest.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionRequest](visionrequest.md)
 
 ## See Also

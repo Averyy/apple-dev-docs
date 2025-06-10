@@ -44,8 +44,6 @@ for (NSNumber *section in sections) {
 
 > ❗ **Important**: If you’re working in a Swift codebase, always use [`NSDiffableDataSourceSectionSnapshot`](nsdiffabledatasourcesectionsnapshot-swift.struct.md) instead.
 
-If you’re working in a Swift codebase, always use [`NSDiffableDataSourceSectionSnapshot`](nsdiffabledatasourcesectionsnapshot-swift.struct.md) instead.
-
 Avoid using this type in Swift code. Only use this type to bridge from Objective-C code to Swift code by typecasting from a section snapshot reference to a section snapshot:
 
 ```swift

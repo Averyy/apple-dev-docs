@@ -97,6 +97,19 @@ MapKit JS lets you customize the look of your map. You can choose style details 
   A tree structure containing annotations, overlays, and nested item collection objects.
 - [Displaying Indoor Maps with MapKit JS](displaying-indoor-maps-with-mapkit-js.md)
   Use the Indoor Mapping Data Format (IMDF) to show an indoor map with custom overlays and points of interest in your browser.
+### Exploring at street level
+- [mapkit.LookAround](mapkit.lookaround.md)
+  A view that allows someone to see a street level view of a place.
+- [LookAroundOptions](lookaroundoptions.md)
+  Options for initializing a LookAround view.
+- [mapkit.LookAroundPreview](mapkit.lookaroundpreview.md)
+  A class that renders a preview of a LookAround view.
+- [LookAroundPreviewOptions](lookaroundpreviewoptions.md)
+  Options for initializing a LookAroundPreview object.
+- [mapkit.LookAroundScene](mapkit.lookaroundscene.md)
+  Object that represents the current location of the view.
+- [CommonLookAroundOptions](commonlookaroundoptions.md)
+  Options that control the behavior of Look Around views.
 ### Places
 - [Place](place.md)
   A place object that returns from a geocoder lookup, a reverse lookup, or a fetch request for points of interest.

@@ -29,8 +29,6 @@ The system scans and loads voices for audio unit extensions of this type, and th
 
 > ❗ **Important**:  Network access isn’t allowed in speech synthesizers.
 
- Network access isn’t allowed in speech synthesizers.
-
 ## Topics
 
 ### Rendering speech

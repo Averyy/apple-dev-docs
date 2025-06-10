@@ -9,6 +9,7 @@ Delivers new metrics reports to the object registered with the metrics manager.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
+- macOS 10.15+
 - visionOS 1.0+
 
 ## Declaration
@@ -20,6 +21,8 @@ optional func didReceive(_ payloads: [MXMetricPayload])
 #### Discussion
 
 The system calls this method at most once per day. It’s safe to process the payload on a separate thread.
+
+> **Note**:  MetricKit delivers daily metric reports from iOS 13 or later, and macOS 26 or later.
 
 ## Parameters
 

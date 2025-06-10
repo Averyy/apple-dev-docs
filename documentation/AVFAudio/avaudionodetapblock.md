@@ -24,8 +24,6 @@ typealias AVAudioNodeTapBlock = (AVAudioPCMBuffer, AVAudioTime) -> Void
 
 > ❗ **Important**:  The framework may invoke this callback on a thread other than the main thread.
 
- The framework may invoke this callback on a thread other than the main thread.
-
 ## Parameters
 
 - `buffer`: A buffer of audio the system captures from the output of an audio node

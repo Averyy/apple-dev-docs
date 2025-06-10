@@ -20,8 +20,6 @@ var metadata: [AnyHashable : Any]? { get set }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 
- This property is available in iOS 12.5, and in iOS 13.5 and later.
-
 Not used.
 
 ## See Also

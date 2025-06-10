@@ -1,6 +1,6 @@
 # SFAuthenticationSession
 
-**Framework**: Safariservices  
+**Framework**: Safari Services  
 **Kind**: class
 
 A class that manages sharing a one-time login between Safari and an app, which can also provide automatic login for associated apps.
@@ -67,12 +67,11 @@ The dismiss button in `SFAuthenticationSession` always says Cancel. Applications
   Messages that describe a content blocker error.
 - [struct SFAuthenticationError](sfauthenticationerror-swift.struct.md)
   An authentication error.
-- [SFAuthenticationError.Code](sfauthenticationerror-swift.struct/code.md)
-  Messages that describe an authentication error.
+- [SFAuthenticationError.Code](sfauthenticationerror-swift.enum.md)
 - [let SFAuthenticationErrorDomain: String](sfauthenticationerrordomain.md)
   The domain for authentication errors.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/sfauthenticationsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/sfauthenticationsession)*

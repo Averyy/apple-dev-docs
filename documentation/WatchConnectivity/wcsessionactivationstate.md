@@ -1,6 +1,6 @@
 # WCSessionActivationState
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: enum
 
 Constants indicating the activation state of a session.
@@ -38,6 +38,7 @@ enum WCSessionActivationState
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

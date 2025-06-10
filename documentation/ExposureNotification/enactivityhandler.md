@@ -22,13 +22,13 @@ typealias ENActivityHandler = (ENActivityFlags) -> Void
 
 ## See Also
 
-- [func activate(completionHandler: ENErrorHandler)](enmanager/activate(completionhandler:).md)
+- [func activate(completionHandler: ((any Error)?) -> Void)](enmanager/activate(completionhandler:).md)
   Prepares the manager for use.
 - [var activityHandler: ENActivityHandler?](enmanager/activityhandler.md)
   The handler that the framework invokes when the app activates a notification manager.
 - [struct ENActivityFlags](enactivityflags.md)
   Activities that occur while the app isn’t running.
-- [func setExposureNotificationEnabled(Bool, completionHandler: ENErrorHandler)](enmanager/setexposurenotificationenabled(_:completionhandler:).md)
+- [func setExposureNotificationEnabled(Bool, completionHandler: ((any Error)?) -> Void)](enmanager/setexposurenotificationenabled(_:completionhandler:).md)
   Enables or disables exposure notification.
 
 

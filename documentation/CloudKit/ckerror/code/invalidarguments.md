@@ -22,7 +22,7 @@ case invalidArguments
 
 #### Discussion
 
-Consult the error’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary for more information about the issue.
+Consult the error’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary for more information about the issue.
 
 ## See Also
 

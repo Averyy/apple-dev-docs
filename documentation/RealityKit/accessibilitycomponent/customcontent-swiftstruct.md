@@ -10,6 +10,7 @@ A CustomContent struct contains the accessibility strings for the labels you app
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -20,9 +21,6 @@ struct CustomContent
 
 ## Topics
 
-### Operators
-- [static func == (AccessibilityComponent.CustomContent, AccessibilityComponent.CustomContent) -> Bool](accessibilitycomponent/customcontent-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(label: LocalizedStringResource, value: LocalizedStringResource, importance: AXCustomContent.Importance)](accessibilitycomponent/customcontent-swift.struct/init(label:value:importance:).md)
   Creates a new CustomContent with the given label, value, and importance.
@@ -33,8 +31,6 @@ struct CustomContent
   A localized string key that identifies the label for this content.
 - [var value: LocalizedStringResource](accessibilitycomponent/customcontent-swift.struct/value.md)
   A localized string key that provides a value for the label.
-### Default Implementations
-- [Equatable Implementations](accessibilitycomponent/customcontent-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

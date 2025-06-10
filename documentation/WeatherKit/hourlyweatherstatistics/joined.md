@@ -1,6 +1,6 @@
 # joined()
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns the elements of this sequence of sequences, concatenated.

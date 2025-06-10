@@ -1,6 +1,6 @@
 # max()
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Returns the maximum element in the sequence.

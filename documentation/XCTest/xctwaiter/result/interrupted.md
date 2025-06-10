@@ -1,6 +1,6 @@
 # XCTWaiter.Result.interrupted
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 The waiter was interrupted prior to its expectations being fulfilled or timing out.

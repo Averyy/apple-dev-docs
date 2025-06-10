@@ -1,6 +1,6 @@
 # SVG_FECOMPONENTTRANSFER_TYPE_GAMMA
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

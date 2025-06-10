@@ -1,6 +1,6 @@
 # debugDescription
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A textual description of the location suitable for debugging.
@@ -24,7 +24,7 @@ var debugDescription: String { get }
 
 #### Discussion
 
-Use this property to access debugging information about this object and the underlying [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) this object wraps.
+Use this property to access debugging information about this object and the underlying doc://com.apple.documentation/documentation/corelocation/cllocation this object wraps.
 
 ## See Also
 

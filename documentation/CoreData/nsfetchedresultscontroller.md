@@ -1,6 +1,6 @@
 # NSFetchedResultsController
 
-**Framework**: Coredata  
+**Framework**: Core Data  
 **Kind**: class
 
 A controller that you use to manage the results of a Core Data fetch request and to display data to the user.
@@ -285,4 +285,4 @@ You create a subclass of this class if you want to customize the creation of sec
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/nsfetchedresultscontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nsfetchedresultscontroller)*

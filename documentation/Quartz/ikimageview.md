@@ -24,7 +24,7 @@ You can provide an images for the view in any of these formats:
 - File reference ([`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL), [`CFURL`](https://developer.apple.com/documentation/CoreFoundation/CFURL), or a path)
 - [`CGImageSource`](https://developer.apple.com/documentation/ImageIO/CGImageSource)
 - Data ([`NSData`](https://developer.apple.com/documentation/Foundation/NSData) or [`CFData`](https://developer.apple.com/documentation/CoreFoundation/CFData))
-- Image ([`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) or [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage))
+- Image ([`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage) or [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage))
 
 Providing a file reference is the preferred way to set the the image for a view because in addition to the actual image data, `IKImageView` also handles the image metadata embedded in the file. The image view automatically fetches the metadata from a file reference, whereas for the other sources (except for a [`CGImageSource`](https://developer.apple.com/documentation/ImageIO/CGImageSource) source), it cannot. For images set from other sources, you need to set the metadata separately.
 
@@ -142,6 +142,7 @@ Providing a file reference is the preferred way to set the the image for a view 
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

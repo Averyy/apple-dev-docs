@@ -29,8 +29,6 @@ let exposureSettings = exposureValues.map(makeAutoExposureSettings)
 
 > 💡 **Tip**:  In Swift, you can easily convert an array of exposure values to an array of bracket settings by passing the appropriate initializer to the `map(_:)` function, as shown above.
 
- In Swift, you can easily convert an array of exposure values to an array of bracket settings by passing the appropriate initializer to the `map(_:)` function, as shown above.
-
 ##### Create Photo Settings and Shoot
 
 Instead of the [`AVCapturePhotoSettings`](avcapturephotosettings.md) object you create when shooting a single photo, to shoot a bracketed capture you’ll need an [`AVCapturePhotoBracketSettings`](avcapturephotobracketsettings.md) object. This object combines the general settings that apply to all photos in the bracket with your bracket settings that specify how each photo differs from the rest of the bracket.
@@ -53,8 +51,6 @@ self.photoOutput.capturePhoto(with: photoSettings, delegate: captureProcessor)
 ```
 
 > 💡 **Tip**:  Turning on [`isLensStabilizationEnabled`](avcapturephotobracketsettings/islensstabilizationenabled.md) (if supported) causes the camera to apply optical image stabilization (OIS) across the entire bracket, so that photos resulting from the bracket still line up with each other even if the device moves during capture.
-
- Turning on [`isLensStabilizationEnabled`](avcapturephotobracketsettings/islensstabilizationenabled.md) (if supported) causes the camera to apply optical image stabilization (OIS) across the entire bracket, so that photos resulting from the bracket still line up with each other even if the device moves during capture.
 
 ##### Handle Bracketed Capture Results
 

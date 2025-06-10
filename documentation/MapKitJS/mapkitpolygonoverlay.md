@@ -27,13 +27,13 @@ The longitude of all points in a polygon overlay needs to be within a 360-degree
 All [`style`](stylesoverlayoptions/style.md) properties apply to polygon overlays except `lineCap`, which MapKit JS ignores. [`mapkit.PolygonOverlay`](mapkit.polygonoverlay/mapkit.polygonoverlay.md) doesn’t implement methods of its own. For more information, see the base object, [`mapkit.Overlay`](mapkit.overlay.md). The following example uses a rectangle overlay to show the boundary lines for the state of Colorado:
 
 ```javascript
-var points = [ [41, -109.05], [41, -102.05], [37, -102.05], [37, -109.05] ];
+const points = [ [41, -109.05], [41, -102.05], [37, -102.05], [37, -109.05] ];
 
 // Map the raw coordinate points to MapKit JS Coordinate objects:
 points = points.map(function(point) {
     return new mapkit.Coordinate(point[0], point[1]);
 });
-var style = new mapkit.Style({
+const style = new mapkit.Style({
     strokeColor: "#F00",
     strokeOpacity: .2,
     lineWidth: 2,
@@ -41,7 +41,7 @@ var style = new mapkit.Style({
     lineDash: [2, 2, 6, 2, 6, 2]
 });
 
-var rectangle = new mapkit.PolygonOverlay(points, { style: style });
+const rectangle = new mapkit.PolygonOverlay(points, { style: style });
 map.addOverlay(rectangle);
 ```
 

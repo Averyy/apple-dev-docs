@@ -1,6 +1,6 @@
 # supportedTextRecognitionLanguages
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The identifiers for the languages that the data scanner recognizes.

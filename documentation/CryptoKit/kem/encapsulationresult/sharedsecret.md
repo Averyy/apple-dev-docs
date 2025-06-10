@@ -3,7 +3,7 @@
 **Framework**: Apple CryptoKit  
 **Kind**: property
 
-The shared secret
+The shared secret.
 
 **Availability**:
 - iOS 17.0+

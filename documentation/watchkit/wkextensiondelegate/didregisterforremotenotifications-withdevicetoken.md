@@ -1,6 +1,6 @@
 # didRegisterForRemoteNotifications(withDeviceToken:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Tells the delegate that the app successfully registered with Apple Push Notification service (APNs).

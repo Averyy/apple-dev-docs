@@ -30,8 +30,6 @@ This method executes synchronously and may block the calling thread for a long t
 
 > ❗ **Important**:  Keep your app’s user interface responsive by calling this method from a thread other than the main thread.
 
- Keep your app’s user interface responsive by calling this method from a thread other than the main thread.
-
 The audio file analyzer sends errors to each request’s results observer.
 
 ## See Also

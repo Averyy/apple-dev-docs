@@ -81,6 +81,7 @@ if let imageURL = Bundle.main.url(forResource: "ClassificationImage",
 - [Hashable](../Swift/Hashable.md)
 - [ImageProcessingRequest](imageprocessingrequest.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionRequest](visionrequest.md)
 
 ## See Also
@@ -95,6 +96,10 @@ if let imageURL = Bundle.main.url(forResource: "ClassificationImage",
   A type for image-analysis requests.
 - [protocol VisionObservation](visionobservation.md)
   A type for objects produced by image-analysis requests.
+- [struct DetectLensSmudgeRequest](detectlenssmudgerequest.md)
+  A request that detects a smudge on a lens from an image or video frame capture.
+- [struct SmudgeObservation](smudgeobservation.md)
+  An observation that provides an overall score of the presence of a smudge in an image or video frame capture.
 
 
 ---

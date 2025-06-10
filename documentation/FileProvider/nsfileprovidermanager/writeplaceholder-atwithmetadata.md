@@ -1,6 +1,6 @@
 # writePlaceholder(at:withMetadata:)
 
-**Framework**: Fileprovider  
+**Framework**: File Provider  
 **Kind**: method
 
 Writes a document placeholder with the provided metadata.

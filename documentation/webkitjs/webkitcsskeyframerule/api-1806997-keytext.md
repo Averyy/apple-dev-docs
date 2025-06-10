@@ -1,6 +1,6 @@
 # keyText
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A keyframe selector.

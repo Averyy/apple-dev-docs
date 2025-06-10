@@ -49,6 +49,8 @@ For information about creating a geographic coverage file, see “Specifying the
   Manage versions of your app that are available in App Store.
 - [App Store Version Localizations](app-store-version-localizations.md)
   Create and maintain version-specific App Store metadata that’s localized.
+- [Accessibility declarations](accessibility-declarations.md)
+  Manage accessibility metadata for your apps per device family.
 
 
 ---

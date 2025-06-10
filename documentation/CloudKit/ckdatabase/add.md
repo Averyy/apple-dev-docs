@@ -22,7 +22,7 @@ func add(_ operation: CKDatabaseOperation)
 
 #### Discussion
 
-Configure the operation fully before you call this method. Prior to the operation executing, CloudKit sets its [`database`](ckdatabaseoperation/database.md) property to the current database. The operation executes at the priority and quality of service (QoS) that you specify using the [`queuePriority`](https://developer.apple.com/documentation/foundation/operation/1411204-queuepriority) and [`qualityOfService`](https://developer.apple.com/documentation/foundation/operation/1413553-qualityofservice) properties.
+Configure the operation fully before you call this method. Prior to the operation executing, CloudKit sets its [`database`](ckdatabaseoperation/database.md) property to the current database. The operation executes at the priority and quality of service (QoS) that you specify using the [`queuePriority`](https://developer.apple.com/documentation/Foundation/Operation/queuePriority-swift.property) and [`qualityOfService`](https://developer.apple.com/documentation/Foundation/Operation/qualityOfService) properties.
 
 ## Parameters
 

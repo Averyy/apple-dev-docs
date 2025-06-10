@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_FieldDetail
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Field ordering for encoded interlaced frames.

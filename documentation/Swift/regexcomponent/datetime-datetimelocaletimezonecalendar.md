@@ -28,7 +28,7 @@ A `RegexComponent` that matches date substrings as Foundation [`Date`](https://d
 
 This method matches date substrings in accordance with the formatting of Foundation’s [`Date.FormatStyle`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle). If your source contains only a date or a time, use the `.omitted` value for the `date` or `time` style parameter to ignore the missing part.
 
-The following example creates a [`Regex`](regex.md) that matches a date and time formatted with the [`numeric`](https://developer.apple.com/documentation/foundation/date/formatstyle/datestyle/3766159-numeric) style in the `en_US` locale. It then matches this regex against a source string containing a date with this format, some whitespace, a substring, more whitespace, and a currency value.
+The following example creates a [`Regex`](regex.md) that matches a date and time formatted with the [`numeric`](https://developer.apple.com/documentation/Foundation/Date/FormatStyle/DateStyle/numeric) style in the `en_US` locale. It then matches this regex against a source string containing a date with this format, some whitespace, a substring, more whitespace, and a currency value.
 
 ```swift
 let enUSLocale = Locale(languageCode: .english, languageRegion: .unitedStates)

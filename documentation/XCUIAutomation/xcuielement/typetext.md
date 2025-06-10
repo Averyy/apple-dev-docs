@@ -1,6 +1,6 @@
 # typeText(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Types a string into the element.

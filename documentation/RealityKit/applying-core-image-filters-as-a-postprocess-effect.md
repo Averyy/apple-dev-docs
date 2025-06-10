@@ -1,6 +1,6 @@
 # Applying core image filters as a postprocess effect
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Create special rendering effects for your RealityKit scenes using Core Image.
 
@@ -8,19 +8,19 @@ Create special rendering effects for your RealityKit scenes using Core Image.
 
 In iOS 15 and later, and macOS 12 and later, you can apply postprocess effects to a RealityKit scene after RealityKit renders it, but before RealityKit displays it. If you register a postprocess callback function, RealityKit passes that function the complete, rendered frame so you can modify it before the viewer sees it. You can use any image processing or drawing APIs on the rendered frame but, as a practical matter, only APIs that execute on the GPU are fast enough to use every frame and maintain a good framerate.
 
-One option for implementing postprocess effects is to apply [`Core Image`](https://developer.apple.com/documentation/coreimage) filters to the rendered frame. Core Image provides a wide variety of filters that implement different image effects and execute on the GPU, making them a good choice for postprocessing effects.
+One option for implementing postprocess effects is to apply [`Core Image`](https://developer.apple.com/documentation/CoreImage) filters to the rendered frame. Core Image provides a wide variety of filters that implement different image effects and execute on the GPU, making them a good choice for postprocessing effects.
 
-You may also wish to look at the Metal Performance Shaders framework as an alternative. The Metal Performance Shaders framework offers a smaller set of image filters than Core Image, but they operate directly on Metal textures and can use an existing [`MTLComputeCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder). That means they take less code to implement and are more efficient than Core Image filters because you don’t have to convert the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) containing the rendered frame into a [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) before applying the filter.
+You may also wish to look at the Metal Performance Shaders framework as an alternative. The Metal Performance Shaders framework offers a smaller set of image filters than Core Image, but they operate directly on Metal textures and can use an existing [`MTLComputeCommandEncoder`](https://developer.apple.com/documentation/Metal/MTLComputeCommandEncoder). That means they take less code to implement and are more efficient than Core Image filters because you don’t have to convert the [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture) containing the rendered frame into a [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) before applying the filter.
 
 For information on using Image Filters from the Metal Performance Shaders framework, see [`Using Metal performance shaders to create custom postprocess effects`](using-metal-performance-shaders-to-create-custom-postprocess-effects.md). If neither Core Image nor the Metal Performance Shaders framework provide the effect you need, you can also write custom compute functions to implement postprocess effects. For more information about postprocessing with compute functions, see [`Implementing postprocess effects using Metal compute functions`](implementing-postprocess-effects-using-metal-compute-functions.md).
 
 ##### Set Up the Core Image Context
 
-In order to apply a [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter), you need to create a [`CIContext`](https://developer.apple.com/documentation/coreimage/cicontext) during app launch and store it in a property so it’s available to your postprocess callback. You can use a single Core Image context regardless of the number or types of filters you use. The [`prepareWithDevice`](arview/rendercallbacks-swift.struct/preparewithdevice.md) render callback is a good place to create your context and do other setup work. RealityKit calls the [`prepareWithDevice`](arview/rendercallbacks-swift.struct/preparewithdevice.md) function once, after does its own setup, but before it renders the next frame.
+In order to apply a [`CIFilter`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class), you need to create a [`CIContext`](https://developer.apple.com/documentation/CoreImage/CIContext) during app launch and store it in a property so it’s available to your postprocess callback. You can use a single Core Image context regardless of the number or types of filters you use. The [`prepareWithDevice`](arview/rendercallbacks-swift.struct/preparewithdevice.md) render callback is a good place to create your context and do other setup work. RealityKit calls the [`prepareWithDevice`](arview/rendercallbacks-swift.struct/preparewithdevice.md) function once, after does its own setup, but before it renders the next frame.
 
 If you set the callback at launch, RealityKit calls it before it draws the first frame. This is a good place to do setup tasks, especially processor-intensive or time-consuming tasks, such as loading images, or tasks that require access to the [`MTLDevice`](https://developer.apple.com/documentation/Metal/MTLDevice), which RealityKit passes to the callback function.
 
-To create a [`prepareWithDevice`](arview/rendercallbacks-swift.struct/preparewithdevice.md) callback, write a function that takes a single [`MTLDevice`](https://developer.apple.com/documentation/Metal/MTLDevice) parameter and has no return value. In that function, create and store a [`CIContext`](https://developer.apple.com/documentation/coreimage/cicontext) and do any other necessary setup tasks, such as loading textures needed by the filter.
+To create a [`prepareWithDevice`](arview/rendercallbacks-swift.struct/preparewithdevice.md) callback, write a function that takes a single [`MTLDevice`](https://developer.apple.com/documentation/Metal/MTLDevice) parameter and has no return value. In that function, create and store a [`CIContext`](https://developer.apple.com/documentation/CoreImage/CIContext) and do any other necessary setup tasks, such as loading textures needed by the filter.
 
 ```swift
 func setupCoreImage(device: MTLDevice) {
@@ -45,7 +45,7 @@ Some device GPUs require that the output texture be in a specific pixel format. 
 
 ##### Create a Postprocess Callback Function
 
-Next, create the render callback function. Once you register it, RealityKit calls it every frame before displaying the rendered scene. In the callback, configure your [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter), convert the source color texture — which contains the frame buffer — into a [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage), and set it as the filter’s image input. Then, create a [`CIRenderDestination`](https://developer.apple.com/documentation/coreimage/cirenderdestination), and render the filter to it.
+Next, create the render callback function. Once you register it, RealityKit calls it every frame before displaying the rendered scene. In the callback, configure your [`CIFilter`](https://developer.apple.com/documentation/CoreImage/CIFilter-swift.class), convert the source color texture — which contains the frame buffer — into a [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage), and set it as the filter’s image input. Then, create a [`CIRenderDestination`](https://developer.apple.com/documentation/CoreImage/CIRenderDestination), and render the filter to it.
 
 ```swift
 func postProcessWithCoreImage(context: ARView.PostProcessContext) {
@@ -90,4 +90,4 @@ arView.renderCallbacks.postProcess = postProcessWithCoreImage
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/applying-core-image-filters-as-a-postprocess-effect)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/applying-core-image-filters-as-a-postprocess-effect)*

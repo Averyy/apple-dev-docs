@@ -1,6 +1,6 @@
 # Adding hardware keyboard support to your app
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Enhance interactions with your app by handling raw keyboard events, writing custom keyboard shortcuts, and working with gesture recognizers.
 
@@ -28,4 +28,4 @@ Enhance interactions with your app by handling raw keyboard events, writing cust
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/adding-hardware-keyboard-support-to-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/adding-hardware-keyboard-support-to-your-app)*

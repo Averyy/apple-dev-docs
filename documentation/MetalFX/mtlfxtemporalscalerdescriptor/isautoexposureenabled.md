@@ -1,6 +1,6 @@
 # isAutoExposureEnabled
 
-**Framework**: Metalfx  
+**Framework**: MetalFX  
 **Kind**: property
 
 A Boolean value that indicates whether MetalFX calculates the exposure for each frame.
@@ -22,7 +22,7 @@ var isAutoExposureEnabled: Bool { get set }
 
 Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to create a temporal scaler that automatically calculates the exposure level for each image it scales.
 
-> **Note**: Temporal scaler instances that use auto exposure ignore its [`exposureTexture`](mtlfxtemporalscaler/exposuretexture.md) property.
+> **Note**: Temporal scaler instances that use auto exposure ignore its `MTLFXTemporalScaler/exposureTexture` property.
 
 ## See Also
 
@@ -52,4 +52,4 @@ Set this property to [`true`](https://developer.apple.com/documentation/swift/tr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MetalFX/mtlfxtemporalscalerdescriptor/isautoexposureenabled)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metalfx/mtlfxtemporalscalerdescriptor/isautoexposureenabled)*

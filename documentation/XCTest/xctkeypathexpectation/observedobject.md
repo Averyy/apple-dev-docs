@@ -1,6 +1,6 @@
 # observedObject
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The object the system observes the key path on.

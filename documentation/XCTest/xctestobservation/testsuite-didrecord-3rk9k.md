@@ -1,6 +1,6 @@
 # testSuite(_:didRecord:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Notifies the observer when a test suite reports an issue.
@@ -8,7 +8,7 @@ Notifies the observer when a test suite reports an issue.
 ## Declaration
 
 ```swift
-optional func testSuite(_ testSuite: XCTestSuite, didRecord issue: XCTIssue)
+optional func testSuite(_ testSuite: XCTestSuite, didRecord issue: XCTIssueReference)
 ```
 
 ## Parameters

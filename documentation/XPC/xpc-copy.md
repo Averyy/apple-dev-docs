@@ -1,6 +1,6 @@
 # xpc_copy(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Creates a copy of the object.

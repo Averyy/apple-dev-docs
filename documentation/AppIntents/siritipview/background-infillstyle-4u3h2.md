@@ -10,7 +10,7 @@ Sets the view’s background to an insettable shape filled with a style.
 - iPadOS 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 8.0+
 
 ## Declaration

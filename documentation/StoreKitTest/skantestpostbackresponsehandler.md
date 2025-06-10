@@ -29,7 +29,7 @@ The system calls the response handler and provides one of two values:
   Add test postbacks to the test session.
 - [var postbacks: [SKAdTestPostback]](skadtestsession/postbacks.md)
   An array of test postbacks you set in the testing environment.
-- [func flushPostbacks(responses: SKANTestPostbackResponseHandler)](skadtestsession/flushpostbacks(responses:).md)
+- [func flushPostbacks(responses: ([String : SKAdTestPostbackResponse]?, (any Error)?) -> Void)](skadtestsession/flushpostbacks(responses:).md)
   Sends the test postbacks and handles the responses.
 
 

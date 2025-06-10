@@ -1,6 +1,6 @@
 # label
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A succinct label that succinctly identifies the purpose of the image region.

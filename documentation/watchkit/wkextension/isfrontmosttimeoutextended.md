@@ -1,6 +1,6 @@
 # isFrontmostTimeoutExtended
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A Boolean value that determines whether the app extends its time as the frontmost app.

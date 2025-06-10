@@ -1,6 +1,6 @@
 # SetFocusFilterIntent
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: protocol
 
 An interface for providing an app intent that you use to adapt your app’s behavior when Focus changes.
@@ -8,10 +8,10 @@ An interface for providing an app intent that you use to adapt your app’s beha
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -43,6 +43,7 @@ protocol SetFocusFilterIntent : AppIntent, InstanceDisplayRepresentable
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -56,4 +57,4 @@ protocol SetFocusFilterIntent : AppIntent, InstanceDisplayRepresentable
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/setfocusfilterintent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/setfocusfilterintent)*

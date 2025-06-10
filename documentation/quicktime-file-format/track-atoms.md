@@ -1,6 +1,6 @@
 # Track atoms
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Atoms that define a single track of a movie.
 

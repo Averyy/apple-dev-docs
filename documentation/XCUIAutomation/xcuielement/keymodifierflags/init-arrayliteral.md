@@ -1,6 +1,6 @@
 # init(arrayLiteral:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: init
 
 Creates a set containing the elements of the given array literal.

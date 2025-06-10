@@ -1,6 +1,6 @@
 # PATHSEG_MOVETO_ABS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

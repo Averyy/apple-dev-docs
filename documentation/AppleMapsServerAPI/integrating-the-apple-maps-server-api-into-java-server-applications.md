@@ -1,6 +1,6 @@
 # Integrating the Apple Maps Server API into Java server applications
 
-**Framework**: Applemapsserverapi
+**Framework**: Apple Maps Server API
 
 Streamline your app’s API by moving georelated searches from inside your app to your server.
 
@@ -27,7 +27,7 @@ To build this sample, you need the following tools and other information:
 - [`Java 17`](https://developer.apple.comhttps://www.oracle.com/java/technologies/downloads/) — This sample code can run on older versions of Java with some minor modifications, depending upon your Java installation.
 - [`Gradle`](https://developer.apple.comhttps://gradle.org) — The project includes a Gradle command wrapper that uses Gradle version 7.5.1; you may a different version if you need to use a different Java installation.
 - Your Apple Developer team ID — This is a 10-character team ID you obtain from the membership tab in your Apple Developer portal account.
-- A Maps key ID and private key — This is a 10-character key identifier that provides the ID of the private key and the private key that you obtain from your Apple Developer portal account. To create a Maps ID and private key, follow the steps in [`Creating a Maps identifier and a private key`](creating-a-maps-identifier-and-a-private-key.md).
+- A Maps key ID and private key — This is a 10-character key identifier that provides the ID of the private key and the private key that you obtain from your Apple Developer portal account. To create a Maps ID and private key, follow the steps in Creating a Maps identifier and a private key.
 
 In the `MapsApiClientDemo.java` file, edit the `createJwt()` method to set the `teamId`, `keyId`, and `key` variables to the values you obtained from your Apple Developer portal account.
 
@@ -56,4 +56,4 @@ To run the sample, enter the following commands in Terminal while in the `server
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleMapsServerAPI/integrating-the-apple-maps-server-api-into-java-server-applications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applemapsserverapi/integrating-the-apple-maps-server-api-into-java-server-applications)*

@@ -1,6 +1,6 @@
 # STRING
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: tdef
 
 **Availability**:

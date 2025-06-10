@@ -21,7 +21,7 @@ class NSTextAttachment
 
 #### Overview
 
-The [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) class uses text attachment objects as the values for attachment attributes (stored in the attributed string under the [`attachment`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/1534036-attachment) key in Swift or the [`NSAttachmentAttributeName`](nsattachmentattributename.md) key in Objective-C).
+The [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) class uses text attachment objects as the values for attachment attributes (stored in the attributed string under the [`attachment`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key/attachment) key in Swift or the [`NSAttachmentAttributeName`](nsattachmentattributename.md) key in Objective-C).
 
 A text attachment object contains either an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object or an [`FileWrapper`](https://developer.apple.com/documentation/Foundation/FileWrapper) object, which in turn holds the contents of the attached file. The properties of this class configure the appearance of the text attachment in your interface. In macOS, the text attachment also uses a cell object that conforms to the [`NSTextAttachmentCellProtocol`](https://developer.apple.com/documentation/AppKit/NSTextAttachmentCellProtocol) protocol to draw the image that represents the text and handles mouse events. For more information about text attachments, see the [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) and [`NSTextView`](https://developer.apple.com/documentation/AppKit/NSTextView).
 

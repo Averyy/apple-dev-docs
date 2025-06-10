@@ -1,6 +1,6 @@
 # allowsBackForwardNavigationGestures
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether horizontal swipe gestures trigger backward and forward page navigation.

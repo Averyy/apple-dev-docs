@@ -18,8 +18,6 @@ You have several options for deploying configuration profiles:
 
 > ❗ **Important**:  Configuration profiles are for enterprise use only. With the exceptions of the APN, VPN, and WiFi profiles, don’t use configuration profiles with consumer apps.
 
- Configuration profiles are for enterprise use only. With the exceptions of the APN, VPN, and WiFi profiles, don’t use configuration profiles with consumer apps.
-
 ##### Define a Profile
 
 Configuration profiles are in a property list format, which any XML tool can read and write.

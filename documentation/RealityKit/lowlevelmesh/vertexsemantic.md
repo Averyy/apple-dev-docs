@@ -10,6 +10,7 @@ Designates the intended usage of a vertex attribute.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -53,15 +54,6 @@ RealityKit consults the vertex semantic when interpreting the data in your [`Low
   The semantic for the seventh UV channel, also known as UV6.
 - [LowLevelMesh.VertexSemantic.uv7](lowlevelmesh/vertexsemantic/uv7.md)
   The semantic for the eighth UV channel, also known as UV7.
-### Comparing enumeration values
-- [var hashValue: Int](lowlevelmesh/vertexsemantic/hashvalue.md)
-  The hash value.
-- [func hash(into: inout Hasher)](lowlevelmesh/vertexsemantic/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [static func == (LowLevelMesh.VertexSemantic, LowLevelMesh.VertexSemantic) -> Bool](lowlevelmesh/vertexsemantic/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Default Implementations
-- [Equatable Implementations](lowlevelmesh/vertexsemantic/equatable-implementations.md)
 
 ## Relationships
 
@@ -69,6 +61,8 @@ RealityKit consults the vertex semantic when interpreting the data in your [`Low
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -88,6 +82,8 @@ RealityKit consults the vertex semantic when interpreting the data in your [`Low
   An object that determines how to store vertex attribute data in memory and map it to RealityKit shader attributes.
 - [LowLevelMesh.PartsCollection](lowlevelmesh/partscollection.md)
   An object that holds a mutable collection low-level mesh parts.
+- [class LowLevelBuffer](lowlevelbuffer.md)
+- [class LowLevelInstanceData](lowlevelinstancedata.md)
 
 
 ---

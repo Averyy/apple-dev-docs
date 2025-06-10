@@ -31,8 +31,6 @@ When writing to a VMCS field, the caller is allowed to set bits that are 0 in it
 
 > ❗ **Important**:  This function must be called by the owning thread.
 
- This function must be called by the owning thread.
-
 ## Parameters
 
 - `vcpu`: The vCPU ID.

@@ -19,8 +19,6 @@ By default, the system chooses an appropriate background color for the App Short
 
 > ❗ **Important**:  Use `array` for the value’s type, even when specifying a single custom color for a solid background.
 
- Use `array` for the value’s type, even when specifying a single custom color for a solid background.
-
 ```swift
 <dict>
      <key>CFBundlePrimaryIcon</key>

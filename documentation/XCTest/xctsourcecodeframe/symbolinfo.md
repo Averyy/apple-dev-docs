@@ -1,6 +1,6 @@
 # symbolInfo()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Attempts to get symbol information for the address.

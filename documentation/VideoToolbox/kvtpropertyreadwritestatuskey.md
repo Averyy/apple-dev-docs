@@ -1,6 +1,6 @@
 # kVTPropertyReadWriteStatusKey
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Dictionary key to access the read/write status of a property.

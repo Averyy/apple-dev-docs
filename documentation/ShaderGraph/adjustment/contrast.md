@@ -5,21 +5,29 @@
 
 Increases or decreases contrast of values using a linear slope multiplier.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Parameter Descriptions
 
 #### Discussion
 
-Below is an example of a simple node graph that uses the the Contrast node to make a black and white arrow texture more gray and closer in color.
+Below is an example of a node graph that uses the `Contrast` node to make a black and white arrow texture more gray and closer in color.
 
 ![None](https://docs-assets.developer.apple.com/published/b875b7e718e1101dcab31f42da00ba66/ContrastGraph.png)
 
-Below, the resulting texture applies to a cube.
+Below, the resulting texture applies to a cube:
 
 ![None](https://docs-assets.developer.apple.com/published/b5031fa1f42bfc35c8ab51be05d66b6d/ContrastMaterial.png)
 
-In this contrast node, the value of the `Pivot` input is `0.2`, which represents a dark gray. The value of the `Amount` input is also `0.2`, indicating that the contrast of the input decreases and the color value of our texture gets closer to the `Pivot` input. As a result, the output texture of the node becomes a gray version of the original black and white arrow texture.
+In the image above, the value of `Pivot` is `0.2`, which represents a dark gray. Because the value of `Amount` is also `0.2`, the contrast of the input decreases while the color value of the texture moves closer to the `Pivot` input. As a result, the output texture of the node becomes a gray version of the original black and white arrow texture.
 
 ## See Also
 

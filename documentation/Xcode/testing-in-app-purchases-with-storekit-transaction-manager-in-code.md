@@ -87,4 +87,4 @@ Once the customer confirms the purchase on their device, the purchase completes.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/testing-in-app-purchases-with-storekit-transaction-manager-in-code)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/testing-in-app-purchases-with-storekit-transaction-manager-in-code)*

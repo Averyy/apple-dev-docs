@@ -1,6 +1,6 @@
 # init(start:end:)
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: init
 
 Creates a new source text range defined by its starting and ending positions.

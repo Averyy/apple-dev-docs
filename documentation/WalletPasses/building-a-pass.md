@@ -1,6 +1,6 @@
 # Building a Pass
 
-**Framework**: Walletpasses
+**Framework**: Wallet Passes
 
 Build a distributable pass.
 
@@ -117,4 +117,4 @@ If your pass doesn’t build correctly, check whether the following are all true
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WalletPasses/building-a-pass)*
+*[View on Apple Developer](https://developer.apple.com/documentation/walletpasses/building-a-pass)*

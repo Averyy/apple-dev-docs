@@ -1,6 +1,6 @@
 # XCTPerformanceMeasurement.Polarity.prefersSmaller
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 A performance measurement where a smaller value, relative to a set baseline, indicates better performance.

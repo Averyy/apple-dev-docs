@@ -1,6 +1,6 @@
 # Movie Rating Icons (United States)
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Icons that pertain to United States movie ratings.
 
@@ -74,4 +74,4 @@ The resource name for the not rated icon for the United States is `nr`. Place a 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/movie-rating-icons-united-states)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/movie-rating-icons-united-states)*

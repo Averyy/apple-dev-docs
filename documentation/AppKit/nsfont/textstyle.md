@@ -54,6 +54,7 @@ Pass these constants to [`preferredFont(forTextStyle:options:)`](nsfont/preferre
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

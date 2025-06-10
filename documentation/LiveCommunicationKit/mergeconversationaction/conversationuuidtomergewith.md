@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-The unique identifier of the second `Conversation` that will be merged.
+The unique identifier of the second conversation that will merge with the first conversation.
 
 **Availability**:
 - iOS 17.4+

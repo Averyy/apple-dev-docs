@@ -1,6 +1,6 @@
 # Bringing new apps and users into your team
 
-**Framework**: Signinwithapple
+**Framework**: Sign in with Apple
 
 Receive Sign in with Apple users and associated apps from another team.
 
@@ -115,4 +115,4 @@ Upon receiving [`ASAuthorizationAppleIDProvider.CredentialState.transferred`](ht
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SigninwithApple/bringing-new-apps-and-users-into-your-team)*
+*[View on Apple Developer](https://developer.apple.com/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team)*

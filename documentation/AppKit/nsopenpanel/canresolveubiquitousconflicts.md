@@ -21,7 +21,7 @@ When the value of this property is [`true`](https://developer.apple.com/document
 
 The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), except for applications linked against the OS X v10.9 SDK or earlier that have adopted iCloud by specifying a ubiquitous container identifier entitlement.
 
-For a better user experience, set this property to [`false`](https://developer.apple.com/documentation/swift/false) and check the [`ubiquitousItemHasUnresolvedConflictsKey`](https://developer.apple.com/documentation/foundation/urlresourcekey/1417573-ubiquitousitemhasunresolvedconfl) key of each item. When a conflict exists, retrieve a [`NSFileVersion`](https://developer.apple.com/documentation/Foundation/NSFileVersion) object for each version and present your own UI to resolve that conflict.
+For a better user experience, set this property to [`false`](https://developer.apple.com/documentation/swift/false) and check the [`ubiquitousItemHasUnresolvedConflictsKey`](https://developer.apple.com/documentation/Foundation/URLResourceKey/ubiquitousItemHasUnresolvedConflictsKey) key of each item. When a conflict exists, retrieve a [`NSFileVersion`](https://developer.apple.com/documentation/Foundation/NSFileVersion) object for each version and present your own UI to resolve that conflict.
 
 ## See Also
 

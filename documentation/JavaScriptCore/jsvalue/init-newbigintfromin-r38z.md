@@ -17,6 +17,19 @@
 init?(newBigIntFrom value: Double, in context: JSContext)
 ```
 
+#### Return Value
+
+The JSValue representing a JavaScript value with type BigInt.
+
+#### Discussion
+
+If the value is not an integer, an exception is thrown.
+
+## Parameters
+
+- `value`: The value of the BigInt JavaScript value being created.
+- `context`: The JSContext to which the resulting JSValue belongs.
+
 
 ---
 

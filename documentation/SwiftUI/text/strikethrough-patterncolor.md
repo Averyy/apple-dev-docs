@@ -36,7 +36,7 @@ Text with a line through its center.
 - [func foregroundStyle<S>(S) -> Text](text/foregroundstyle(_:).md)
   Sets the style of the text displayed by this view.
 - [func bold() -> Text](text/bold.md)
-  Applies a bold font weight to the text.
+  Applies a bold or emphasized treatment to the fonts of the text.
 - [func bold(Bool) -> Text](text/bold(_:).md)
   Applies a bold font weight to the text.
 - [func italic() -> Text](text/italic.md)

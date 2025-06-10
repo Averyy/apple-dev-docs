@@ -1,6 +1,6 @@
 # WEBKIT_KEYFRAMES_RULE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 Keyframes rule type. Read [`WebKitCSSKeyframesRule`](webkitcsskeyframesrule.md) for details.

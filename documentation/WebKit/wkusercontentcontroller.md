@@ -1,6 +1,6 @@
 # WKUserContentController
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object for managing interactions between JavaScript code and your web view, and for filtering content in your web view.

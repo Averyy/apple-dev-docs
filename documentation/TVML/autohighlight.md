@@ -1,6 +1,6 @@
 # autoHighlight
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Specifies that the element should initially be in focus.
 
@@ -40,4 +40,4 @@ Use the `autoHighlight` attribute to denote the element that is initially in foc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/autohighlight)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/autohighlight)*

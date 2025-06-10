@@ -12,6 +12,7 @@ Returns a Boolean value that indicates whether the specified URL contains a dire
 - macOS 10.9+
 - tvOS ?+
 - visionOS 1.0+
+- watchOS 2.0+
 
 ## Declaration
 

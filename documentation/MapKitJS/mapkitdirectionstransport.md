@@ -14,8 +14,13 @@ The modes of transportation.
 interface mapkit.Directions.Transport {
 	const string Automobile;
 	const string Walking;
+	const string Cycling;
 };
 ```
+
+## Mentions
+
+- [MapKit JS 5](mapkit-js-5.md)
 
 #### Overview
 
@@ -28,6 +33,8 @@ Constants that describe the mode of transportation in [`DirectionsRequest`](dire
   A constant identifying the mode of transportation as walking.
 - [Automobile](mapkit.directions.transport/automobile.md)
   A constant identifying the mode of transportation as driving.
+- [Cycling](mapkit.directions.transport/cycling.md)
+  A constant identifying the mode of transportation as cycling.
 
 ## See Also
 

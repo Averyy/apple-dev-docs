@@ -20,8 +20,9 @@ Get detailed information about a specified App Encryption Declaration document.
   Get information about a specific app encryption declaration.
 - [Read the App Information of an App Encryption Declaration](get-v1-appencryptiondeclarations-_id_-app.md)
   Get the app information from a specific app encryption declaration.
-- [Read the Declaration Document for an App Encryption Declaration](get-v1-appencryptiondeclarations-_id_-appencryptiondeclarationdocument.md)
+- [GET /v1/appEncryptionDeclarations/{id}/appEncryptionDeclarationDocument](get-v1-appencryptiondeclarations-_id_-appencryptiondeclarationdocument.md)
   Read the associate document for a specific App Encryption Declaration.
+- [GET /v1/appEncryptionDeclarations/{id}/relationships/appEncryptionDeclarationDocument](get-v1-appencryptiondeclarations-_id_-relationships-appencryptiondeclarationdocument.md)
 
 
 ---

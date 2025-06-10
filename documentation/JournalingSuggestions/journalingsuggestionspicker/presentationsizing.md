@@ -1,6 +1,6 @@
 # presentationSizing(_:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Sets the sizing of the containing presentation.

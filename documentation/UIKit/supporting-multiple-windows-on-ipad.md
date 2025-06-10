@@ -1,6 +1,6 @@
 # Supporting multiple windows on iPad
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Support side-by-side instances of your app’s interface and create new windows.
 
@@ -101,7 +101,7 @@ func collectionView(_ collectionView: UICollectionView, itemsForBeginning sessio
 }
 ```
 
-The `NSUserActivity` [`activityType`](https://developer.apple.com/documentation/foundation/nsuseractivity/1409611-activitytype) must be included in the app’s `Info.plist` under the [`NSUserActivityTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserActivityTypes) array. Without it, a separate window isn’t created as the photo is dragged to the edge of the device.
+The `NSUserActivity` [`activityType`](https://developer.apple.com/documentation/Foundation/NSUserActivity/activityType) must be included in the app’s `Info.plist` under the [`NSUserActivityTypes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserActivityTypes) array. Without it, a separate window isn’t created as the photo is dragged to the edge of the device.
 
 ```swift
     <key>NSUserActivityTypes</key>
@@ -146,7 +146,7 @@ class func openInspectorSceneSessionForPhoto(_ photo: Photo, requestingScene: UI
 }
 ```
 
-Through the use of a unique `NSUserActivity` [`activityType`](https://developer.apple.com/documentation/foundation/nsuseractivity/1409611-activitytype), the app can distinguish which new scene to create in [`application(_:configurationForConnecting:options:)`](uiapplicationdelegate/application(_:configurationforconnecting:options:).md):
+Through the use of a unique `NSUserActivity` [`activityType`](https://developer.apple.com/documentation/Foundation/NSUserActivity/activityType), the app can distinguish which new scene to create in [`application(_:configurationForConnecting:options:)`](uiapplicationdelegate/application(_:configurationforconnecting:options:).md):
 
 ```swift
 func application(_ application: UIApplication,
@@ -174,4 +174,4 @@ func application(_ application: UIApplication,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/supporting-multiple-windows-on-ipad)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/supporting-multiple-windows-on-ipad)*

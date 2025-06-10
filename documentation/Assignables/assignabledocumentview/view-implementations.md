@@ -39,6 +39,8 @@
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityAction(named: Text, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityaction(named:_:)-4f0ex.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
+- [func accessibilityAction(named: LocalizedStringResource, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityaction(named:_:)-9a8um.md)
+  Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityAction(named: LocalizedStringKey, () -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityaction(named:_:)-eylu.md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityActions<Content>(() -> Content) -> some View](assignabledocumentview/accessibilityactions(_:).md)
@@ -63,7 +65,13 @@
   Replaces the existing accessibility element’s children with one or more new synthetic accessibility elements.
 - [func accessibilityCustomContent(LocalizedStringKey, LocalizedStringKey, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitycustomcontent(_:_:importance:)-1esid.md)
   Add additional accessibility information to the view.
+- [func accessibilityCustomContent(LocalizedStringResource, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitycustomcontent(_:_:importance:)-20ipv.md)
+  Add additional accessibility information to the view.
+- [func accessibilityCustomContent(AccessibilityCustomContentKey, LocalizedStringResource, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitycustomcontent(_:_:importance:)-5gqto.md)
+  Add additional accessibility information to the view.
 - [func accessibilityCustomContent<V>(LocalizedStringKey, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitycustomcontent(_:_:importance:)-65u67.md)
+  Add additional accessibility information to the view.
+- [func accessibilityCustomContent<V>(LocalizedStringResource, V, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitycustomcontent(_:_:importance:)-6ke8y.md)
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent(Text, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitycustomcontent(_:_:importance:)-6lvqe.md)
   Add additional accessibility information to the view.
@@ -77,6 +85,10 @@
   Add additional accessibility information to the view.
 - [func accessibilityCustomContent(LocalizedStringKey, Text, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitycustomcontent(_:_:importance:)-h16.md)
   Add additional accessibility information to the view.
+- [func accessibilityCustomContent(LocalizedStringResource, LocalizedStringResource, importance: AXCustomContent.Importance) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitycustomcontent(_:_:importance:)-x8cl.md)
+  Add additional accessibility information to the view.
+- [func accessibilityDefaultFocus<Value>(AccessibilityFocusState<Value>.Binding, Value) -> some View](assignabledocumentview/accessibilitydefaultfocus(_:_:).md)
+  Defines a region in which default accessibility focus is evaluated by assigning a value to a given accessibility focus state binding.
 - [func accessibilityDirectTouch(Bool, options: AccessibilityDirectTouchOptions) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitydirecttouch(_:options:).md)
   Explicitly set whether this accessibility element is a direct touch area. Direct touch areas passthrough touch events to the app rather than being handled through an assistive technology, such as VoiceOver. The modifier accepts an optional `AccessibilityDirectTouchOptions` option set to customize the functionality of the direct touch area.
 - [func accessibilityDragPoint(UnitPoint, description: LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitydragpoint(_:description:)-134aa.md)
@@ -85,7 +97,11 @@
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint(UnitPoint, description: Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitydragpoint(_:description:)-8o7g8.md)
   The point an assistive technology should use to begin a drag interaction.
+- [func accessibilityDragPoint(UnitPoint, description: LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitydragpoint(_:description:)-9xz2e.md)
+  The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint(UnitPoint, description: LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitydragpoint(_:description:isenabled:)-1srnq.md)
+  The point an assistive technology should use to begin a drag interaction.
+- [func accessibilityDragPoint(UnitPoint, description: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitydragpoint(_:description:isenabled:)-6nvou.md)
   The point an assistive technology should use to begin a drag interaction.
 - [func accessibilityDragPoint<S>(UnitPoint, description: S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitydragpoint(_:description:isenabled:)-rjs2.md)
   The point an assistive technology should use to begin a drag interaction.
@@ -97,7 +113,11 @@
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitydroppoint(_:description:)-8m6uj.md)
   The point an assistive technology should use to end a drag interaction.
+- [func accessibilityDropPoint(UnitPoint, description: LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitydroppoint(_:description:)-9lr1n.md)
+  The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint(UnitPoint, description: Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitydroppoint(_:description:isenabled:)-2blry.md)
+  The point an assistive technology should use to end a drag interaction.
+- [func accessibilityDropPoint(UnitPoint, description: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitydroppoint(_:description:isenabled:)-8qgzu.md)
   The point an assistive technology should use to end a drag interaction.
 - [func accessibilityDropPoint<S>(UnitPoint, description: S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitydroppoint(_:description:isenabled:)-9fc1r.md)
   The point an assistive technology should use to end a drag interaction.
@@ -117,6 +137,8 @@
   Specifies whether to hide this view from system accessibility features.
 - [func accessibilityHint(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityhint(_:)-3e46s.md)
   Communicates to the user what happens after performing the view’s action.
+- [func accessibilityHint(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityhint(_:)-44hqv.md)
+  Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityhint(_:)-71mx6.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityhint(_:)-7c0vs.md)
@@ -126,6 +148,8 @@
 - [func accessibilityHint(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityhint(_:isenabled:)-50yeq.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityHint<S>(S, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityhint(_:isenabled:)-8yov3.md)
+  Communicates to the user what happens after performing the view’s action.
+- [func accessibilityHint(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityhint(_:isenabled:)-etor.md)
   Communicates to the user what happens after performing the view’s action.
 - [func accessibilityIdentifier(String) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityidentifier(_:).md)
   Uses the string you specify to identify the view.
@@ -150,6 +174,10 @@
 - [func accessibilityLabel(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitylabel(_:)-94syi.md)
   Adds a label to the view that describes its contents.
 - [func accessibilityLabel<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitylabel(_:)-985xt.md)
+  Adds a label to the view that describes its contents.
+- [func accessibilityLabel(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitylabel(_:)-9fug0.md)
+  Adds a label to the view that describes its contents.
+- [func accessibilityLabel(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitylabel(_:isenabled:)-1daa7.md)
   Adds a label to the view that describes its contents.
 - [func accessibilityLabel(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitylabel(_:isenabled:)-2s20f.md)
   Adds a label to the view that describes its contents.
@@ -177,15 +205,21 @@
   Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
 - [func accessibilityRotor<Content>(Text, entries: () -> Content) -> some View](assignabledocumentview/accessibilityrotor(_:entries:)-8l8wp.md)
   Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
+- [func accessibilityRotor<Content>(LocalizedStringResource, entries: () -> Content) -> some View](assignabledocumentview/accessibilityrotor(_:entries:)-8z5q6.md)
+  Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
 - [func accessibilityRotor<L, Content>(L, entries: () -> Content) -> some View](assignabledocumentview/accessibilityrotor(_:entries:)-9xfln.md)
   Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
 - [func accessibilityRotor<EntryModel, ID>(LocalizedStringKey, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](assignabledocumentview/accessibilityrotor(_:entries:entryid:entrylabel:)-13vm3.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<L, EntryModel, ID>(L, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](assignabledocumentview/accessibilityrotor(_:entries:entryid:entrylabel:)-34ce7.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
+- [func accessibilityRotor<EntryModel, ID>(LocalizedStringResource, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](assignabledocumentview/accessibilityrotor(_:entries:entryid:entrylabel:)-4n3is.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel, ID>(AccessibilitySystemRotor, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](assignabledocumentview/accessibilityrotor(_:entries:entryid:entrylabel:)-4z0jg.md)
   Create an Accessibility Rotor replacing the specified system-provided Rotor.
 - [func accessibilityRotor<EntryModel, ID>(Text, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View](assignabledocumentview/accessibilityrotor(_:entries:entryid:entrylabel:)-8fjzv.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries.
+- [func accessibilityRotor<EntryModel>(LocalizedStringResource, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](assignabledocumentview/accessibilityrotor(_:entries:entrylabel:)-2f8a9.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel>(LocalizedStringKey, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](assignabledocumentview/accessibilityrotor(_:entries:entrylabel:)-55k2n.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
@@ -195,6 +229,8 @@
   Create an Accessibility Rotor with the specified user-visible label and entries.
 - [func accessibilityRotor<EntryModel>(Text, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View](assignabledocumentview/accessibilityrotor(_:entries:entrylabel:)-8bltf.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
+- [func accessibilityRotor(LocalizedStringResource, textRanges: [Range<String.Index>]) -> some View](assignabledocumentview/accessibilityrotor(_:textranges:)-3fdxx.md)
+  Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 - [func accessibilityRotor(LocalizedStringKey, textRanges: [Range<String.Index>]) -> some View](assignabledocumentview/accessibilityrotor(_:textranges:)-5sw84.md)
   Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 - [func accessibilityRotor(Text, textRanges: [Range<String.Index>]) -> some View](assignabledocumentview/accessibilityrotor(_:textranges:)-66pfo.md)
@@ -207,6 +243,14 @@
   Defines an explicit identifier tying an Accessibility element for this view to an entry in an Accessibility Rotor.
 - [func accessibilityScrollAction((Edge) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityscrollaction(_:).md)
   Adds an accessibility scroll action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
+- [func accessibilityScrollStatus(LocalizedStringKey, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityscrollstatus(_:isenabled:)-2ai98.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityscrollstatus(_:isenabled:)-43ai3.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityscrollstatus(_:isenabled:)-6erfr.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
+- [func accessibilityScrollStatus(some StringProtocol, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityscrollstatus(_:isenabled:)-6xic6.md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
 - [func accessibilityShowsLargeContentViewer() -> some View](assignabledocumentview/accessibilityshowslargecontentviewer.md)
   Adds a default large content view to be shown by the large content viewer.
 - [func accessibilityShowsLargeContentViewer<V>(() -> V) -> some View](assignabledocumentview/accessibilityshowslargecontentviewer(_:).md)
@@ -215,11 +259,15 @@
   Sets the sort priority order for this view’s accessibility element, relative to other elements at the same level.
 - [func accessibilityTextContentType(AccessibilityTextContentType) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilitytextcontenttype(_:).md)
   Sets an accessibility text content type.
+- [func accessibilityValue(LocalizedStringResource) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityvalue(_:)-66ntc.md)
+  Adds a textual description of the value that the view contains.
 - [func accessibilityValue(Text) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityvalue(_:)-6pr4i.md)
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue(LocalizedStringKey) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityvalue(_:)-8tnya.md)
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue<S>(S) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityvalue(_:)-pv72.md)
+  Adds a textual description of the value that the view contains.
+- [func accessibilityValue(LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityvalue(_:isenabled:)-3yf9g.md)
   Adds a textual description of the value that the view contains.
 - [func accessibilityValue(Text, isEnabled: Bool) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](assignabledocumentview/accessibilityvalue(_:isenabled:)-5dwoz.md)
   Adds a textual description of the value that the view contains.
@@ -235,10 +283,14 @@
   Presents an action sheet using the given item as a data source for the sheet’s content.
 - [func alert<A>(Text, isPresented: Binding<Bool>, actions: () -> A) -> some View](assignabledocumentview/alert(_:ispresented:actions:)-1g47l.md)
   Presents an alert when a given condition is true, using a text view for the title.
+- [func alert<A>(LocalizedStringResource, isPresented: Binding<Bool>, actions: () -> A) -> some View](assignabledocumentview/alert(_:ispresented:actions:)-3ufce.md)
+  Presents an alert when a given condition is true, using a localized string resource for the title.
 - [func alert<S, A>(S, isPresented: Binding<Bool>, actions: () -> A) -> some View](assignabledocumentview/alert(_:ispresented:actions:)-5o2o1.md)
   Presents an alert when a given condition is true, using a string variable as a title.
 - [func alert<A>(LocalizedStringKey, isPresented: Binding<Bool>, actions: () -> A) -> some View](assignabledocumentview/alert(_:ispresented:actions:)-7a66l.md)
   Presents an alert when a given condition is true, using a localized string key for the title.
+- [func alert<A, M>(LocalizedStringResource, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](assignabledocumentview/alert(_:ispresented:actions:message:)-30f7.md)
+  Presents an alert with a message when a given condition is true, using a localized string resource for a title.
 - [func alert<S, A, M>(S, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](assignabledocumentview/alert(_:ispresented:actions:message:)-43631.md)
   Presents an alert with a message when a given condition is true using a string variable as a title.
 - [func alert<A, M>(LocalizedStringKey, isPresented: Binding<Bool>, actions: () -> A, message: () -> M) -> some View](assignabledocumentview/alert(_:ispresented:actions:message:)-5dg8l.md)
@@ -249,12 +301,16 @@
   Presents an alert using the given data to produce the alert’s content and a string variable as a title.
 - [func alert<A, T>(Text, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](assignabledocumentview/alert(_:ispresented:presenting:actions:)-3igoh.md)
   Presents an alert using the given data to produce the alert’s content and a text view as a title.
+- [func alert<A, T>(LocalizedStringResource, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](assignabledocumentview/alert(_:ispresented:presenting:actions:)-8a2lh.md)
+  Presents an alert using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert<A, T>(LocalizedStringKey, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A) -> some View](assignabledocumentview/alert(_:ispresented:presenting:actions:)-fryk.md)
   Presents an alert using the given data to produce the alert’s content and a localized string key for a title.
 - [func alert<A, M, T>(Text, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](assignabledocumentview/alert(_:ispresented:presenting:actions:message:)-2ses6.md)
   Presents an alert with a message using the given data to produce the alert’s content and a text view for a title.
 - [func alert<A, M, T>(LocalizedStringKey, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](assignabledocumentview/alert(_:ispresented:presenting:actions:message:)-5rrdo.md)
   Presents an alert with a message using the given data to produce the alert’s content and a localized string key for a title.
+- [func alert<A, M, T>(LocalizedStringResource, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](assignabledocumentview/alert(_:ispresented:presenting:actions:message:)-7q7lo.md)
+  Presents an alert with a message using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert<S, A, M, T>(S, isPresented: Binding<Bool>, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](assignabledocumentview/alert(_:ispresented:presenting:actions:message:)-9hxjx.md)
   Presents an alert with a message using the given data to produce the alert’s content and a string variable as a title.
 - [func alert(isPresented: Binding<Bool>, content: () -> Alert) -> some View](assignabledocumentview/alert(ispresented:content:).md)
@@ -267,6 +323,8 @@
   Presents an alert to the user.
 - [func alignmentGuide(HorizontalAlignment, computeValue: (ViewDimensions) -> CGFloat) -> some View](assignabledocumentview/alignmentguide(_:computevalue:)-2kdcs.md)
   Sets the view’s horizontal alignment.
+- [func alignmentGuide(DepthAlignment, computeValue: (ViewDimensions3D) -> CGFloat) -> some View](assignabledocumentview/alignmentguide(_:computevalue:)-68ne3.md)
+  Returns a view modified so that its value for the given `guide` is the result of passing the `ViewDimensions` of the underlying element to `computeValue`.
 - [func alignmentGuide(VerticalAlignment, computeValue: (ViewDimensions) -> CGFloat) -> some View](assignabledocumentview/alignmentguide(_:computevalue:)-7leqr.md)
   Sets the view’s vertical alignment.
 - [func allowedDynamicRange(Image.DynamicRange?) -> some View](assignabledocumentview/alloweddynamicrange(_:).md)
@@ -275,6 +333,8 @@
   Configures whether this view participates in hit test operations.
 - [func allowsTightening(Bool) -> some View](assignabledocumentview/allowstightening(_:).md)
   Sets whether text in this view can compress the space between characters when necessary to fit text in a line.
+- [func allowsWindowActivationEvents() -> some View](assignabledocumentview/allowswindowactivationevents.md)
+  Configures gestures in this view hierarchy to handle events that activate the containing window.
 - [func allowsWindowActivationEvents(Bool?) -> some View](assignabledocumentview/allowswindowactivationevents(_:).md)
   Configures whether gestures in this view hierarchy can handle events that activate the containing window.
 - [func anchorPreference<A, K>(key: K.Type, value: Anchor<A>.Source, transform: (Anchor<A>) -> K.Value) -> some View](assignabledocumentview/anchorpreference(key:value:transform:).md)
@@ -289,6 +349,18 @@
   Constrains this view’s dimensions to the aspect ratio of the given size.
 - [func aspectRatio(CGFloat?, contentMode: ContentMode) -> some View](assignabledocumentview/aspectratio(_:contentmode:)-7ymf5.md)
   Constrains this view’s dimensions to the specified aspect ratio.
+- [func aspectRatio3D(Size3D?, contentMode: ContentMode) -> some View](assignabledocumentview/aspectratio3d(_:contentmode:).md)
+  Constrains this view’s dimensions to the specified 3D aspect ratio.
+- [func assistiveAccessNavigationIcon(Image) -> some View](assignabledocumentview/assistiveaccessnavigationicon(_:).md)
+  Configures the view’s icon for purposes of navigation.
+- [func assistiveAccessNavigationIcon(systemImage: String) -> some View](assignabledocumentview/assistiveaccessnavigationicon(systemimage:).md)
+  Configures the view’s icon for purposes of navigation.
+- [func attributedTextFormattingDefinition<S>(KeyPath<AttributeScopes, S.Type>) -> some View](assignabledocumentview/attributedtextformattingdefinition(_:)-20muz.md)
+  Apply an attribute-only text formatting definition to all nested editor views.
+- [func attributedTextFormattingDefinition<D>(D) -> some View](assignabledocumentview/attributedtextformattingdefinition(_:)-2u4l8.md)
+  Apply a text formatting definition to all nested editor views.
+- [func attributedTextFormattingDefinition<S>(S.Type) -> some View](assignabledocumentview/attributedtextformattingdefinition(_:)-30k7k.md)
+  Apply an attribute-only text formatting definition to all nested editor views.
 - [func autocapitalization(UITextAutocapitalizationType) -> some View](assignabledocumentview/autocapitalization(_:).md)
   Sets whether to apply auto-capitalization to this view.
 - [func autocorrectionDisabled(Bool) -> some View](assignabledocumentview/autocorrectiondisabled(_:).md)
@@ -309,6 +381,8 @@
   Sets the view’s background to a shape filled with the default background style.
 - [func background<S>(in: S, fillStyle: FillStyle) -> some View](assignabledocumentview/background(in:fillstyle:)-9iavb.md)
   Sets the view’s background to an insettable shape filled with the default background style.
+- [func backgroundExtensionEffect() -> some View](assignabledocumentview/backgroundextensioneffect.md)
+  Adds the background extension effect to the view. The view will be duplicated into mirrored copies which will be placed around the view on any edge with available safe area. Additionally, a blur effect will be applied on top to blur out the copies.
 - [func backgroundPreferenceValue<Key, T>(Key.Type, (Key.Value) -> T) -> some View](assignabledocumentview/backgroundpreferencevalue(_:_:).md)
   Reads the specified preference value from the view, using it to produce a second view that is applied as the background of the original view.
 - [func backgroundPreferenceValue<K, V>(K.Type, alignment: Alignment, (K.Value) -> V) -> some View](assignabledocumentview/backgroundpreferencevalue(_:alignment:_:).md)
@@ -323,6 +397,8 @@
   Generates a badge for the view from an integer value.
 - [func badge<S>(S?) -> some View](assignabledocumentview/badge(_:)-4p6fq.md)
   Generates a badge for the view from a string.
+- [func badge(LocalizedStringResource?) -> some View](assignabledocumentview/badge(_:)-8r4ro.md)
+  Generates a badge for the view from a localized string resource.
 - [func badgeProminence(BadgeProminence) -> some View](assignabledocumentview/badgeprominence(_:).md)
   Specifies the prominence of badges created by this view.
 - [func baselineOffset(CGFloat) -> some View](assignabledocumentview/baselineoffset(_:).md)
@@ -335,12 +411,15 @@
   Applies a bold font weight to the text in this view.
 - [func border<S>(S, width: CGFloat) -> some View](assignabledocumentview/border(_:width:).md)
   Adds a border to this view with the specified style and width.
+- [func breakthroughEffect(BreakthroughEffect) -> some View](assignabledocumentview/breakthrougheffect(_:).md)
+  Ensures that the view is always visible to the user, even when other content is occluding it, like 3D models.
 - [func brightness(Double) -> some View](assignabledocumentview/brightness(_:).md)
   Brightens this view by the specified amount.
 - [func buttonBorderShape(ButtonBorderShape) -> some View](assignabledocumentview/buttonbordershape(_:).md)
   Sets the border shape for buttons in this view.
 - [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](assignabledocumentview/buttonrepeatbehavior(_:).md)
   Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
+- [func buttonSizing(ButtonSizing) -> some View](assignabledocumentview/buttonsizing(_:).md)
 - [func buttonStyle<S>(S) -> some View](assignabledocumentview/buttonstyle(_:)-4skqx.md)
   Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
 - [func buttonStyle<S>(S) -> some View](assignabledocumentview/buttonstyle(_:)-85fny.md)
@@ -363,10 +442,14 @@
   Presents a confirmation dialog when a given condition is true, using a localized string key for the title.
 - [func confirmationDialog<A>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](assignabledocumentview/confirmationdialog(_:ispresented:titlevisibility:actions:)-2uqw4.md)
   Presents a confirmation dialog when a given condition is true, using a text view for the title.
+- [func confirmationDialog<A>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](assignabledocumentview/confirmationdialog(_:ispresented:titlevisibility:actions:)-697rs.md)
+  Presents a confirmation dialog when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog<S, A>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A) -> some View](assignabledocumentview/confirmationdialog(_:ispresented:titlevisibility:actions:)-6z4th.md)
   Presents a confirmation dialog when a given condition is true, using a string variable as a title.
 - [func confirmationDialog<A, M>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](assignabledocumentview/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-4yljs.md)
   Presents a confirmation dialog with a message when a given condition is true, using a localized string key for the title.
+- [func confirmationDialog<A, M>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](assignabledocumentview/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-5x86y.md)
+  Presents a confirmation dialog with a message when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog<A, M>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](assignabledocumentview/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-9g1jb.md)
   Presents a confirmation dialog with a message when a given condition is true, using a text view for the title.
 - [func confirmationDialog<S, A, M>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, actions: () -> A, message: () -> M) -> some View](assignabledocumentview/confirmationdialog(_:ispresented:titlevisibility:actions:message:)-mn7t.md)
@@ -375,12 +458,16 @@
   Presents a confirmation dialog using data to produce the dialog’s content and a localized string key for the title.
 - [func confirmationDialog<A, T>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](assignabledocumentview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-6hn5o.md)
   Presents a confirmation dialog using data to produce the dialog’s content and a text view for the title.
+- [func confirmationDialog<A, T>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](assignabledocumentview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-9a0my.md)
+  Presents a confirmation dialog using data to produce the dialog’s content and a localized string resource for the title.
 - [func confirmationDialog<S, A, T>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A) -> some View](assignabledocumentview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:)-9zkvr.md)
   Presents a confirmation dialog using data to produce the dialog’s content and a string variable for the title.
 - [func confirmationDialog<A, M, T>(Text, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](assignabledocumentview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-2xf36.md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a text view for the message.
 - [func confirmationDialog<A, M, T>(LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](assignabledocumentview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-3d5sp.md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string key for the title.
+- [func confirmationDialog<A, M, T>(LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](assignabledocumentview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-4pxaz.md)
+  Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string resource for the title.
 - [func confirmationDialog<S, A, M, T>(S, isPresented: Binding<Bool>, titleVisibility: Visibility, presenting: T?, actions: (T) -> A, message: (T) -> M) -> some View](assignabledocumentview/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:)-p5bq.md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a string variable for the title.
 - [func containerBackground<S>(S, for: ContainerBackgroundPlacement) -> some View](assignabledocumentview/containerbackground(_:for:).md)
@@ -397,6 +484,7 @@
   Sets the container shape to use for any container relative shape within this view.
 - [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](assignabledocumentview/containervalue(_:_:).md)
   Sets a particular container value of a view.
+- [func contentCaptureProtected(Bool) -> some View](assignabledocumentview/contentcaptureprotected(_:).md)
 - [func contentMargins(Edge.Set, CGFloat?, for: ContentMarginPlacement) -> some View](assignabledocumentview/contentmargins(_:_:for:)-1j5ux.md)
   Configures the content margin for a provided placement.
 - [func contentMargins(Edge.Set, EdgeInsets, for: ContentMarginPlacement) -> some View](assignabledocumentview/contentmargins(_:_:for:)-9v3h3.md)
@@ -425,7 +513,9 @@
   Sets the contrast and separation between similar colors in this view.
 - [func controlGroupStyle<S>(S) -> some View](assignabledocumentview/controlgroupstyle(_:).md)
   Sets the style for control groups within this view.
-- [func controlSize(ControlSize) -> some View](assignabledocumentview/controlsize(_:).md)
+- [func controlSize<T>(T) -> some View](assignabledocumentview/controlsize(_:)-609vh.md)
+  Limits the control size within the view to the given range.
+- [func controlSize(ControlSize) -> some View](assignabledocumentview/controlsize(_:)-6rbfo.md)
   Sets the size for controls within this view.
 - [func coordinateSpace(NamedCoordinateSpace) -> some View](assignabledocumentview/coordinatespace(_:).md)
   Assigns a name to the view’s coordinate space, so other code can operate on dimensions like points and sizes relative to the named space.
@@ -461,6 +551,8 @@
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
 - [func dialogSuppressionToggle(Text, isSuppressed: Binding<Bool>) -> some View](assignabledocumentview/dialogsuppressiontoggle(_:issuppressed:)-8mvbb.md)
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
+- [func dialogSuppressionToggle(LocalizedStringResource, isSuppressed: Binding<Bool>) -> some View](assignabledocumentview/dialogsuppressiontoggle(_:issuppressed:)-pk4c.md)
+  Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
 - [func dialogSuppressionToggle(isSuppressed: Binding<Bool>) -> some View](assignabledocumentview/dialogsuppressiontoggle(issuppressed:).md)
   Enables user suppression of dialogs and alerts presented within `self`, with a default suppression message on macOS. Unused on other platforms.
 - [func disableAutocorrection(Bool?) -> some View](assignabledocumentview/disableautocorrection(_:).md)
@@ -473,14 +565,34 @@
   Returns a new view that applies `shader` to `self` as a geometric distortion effect on the location of each pixel.
 - [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](assignabledocumentview/documentbrowsercontextmenu(_:).md)
   Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
+- [func dragConfiguration(DragConfiguration) -> some View](assignabledocumentview/dragconfiguration(_:).md)
+  Configures a drag session.
+- [func dragContainer<ItemID, Item, Data>(for: Item.Type, id: (Item) -> ItemID, in: Namespace.ID?, (ItemID) -> Data) -> some View](assignabledocumentview/dragcontainer(for:id:in:_:).md)
+  A container with draggable views. The drag payload is based on the current selection.
+- [func dragContainer<ItemID, Item, Data>(for: Item.Type, id: (consuming Item) -> ItemID, in: Namespace.ID?, selection: @autoclosure () -> Array<ItemID>, (Array<ItemID>) -> Data) -> some View](assignabledocumentview/dragcontainer(for:id:in:selection:_:)-212so.md)
+  A container with multiple selection and draggable views. The drag payload is based on the current selection and provided identifiers.
+- [func dragContainer<Item, ItemID>(for: Item.Type, id: (Item) -> ItemID, in: Namespace.ID?, selection: @autoclosure () -> ItemID?, (ItemID) -> Item?) -> some View](assignabledocumentview/dragcontainer(for:id:in:selection:_:)-3vvfb.md)
+  A container with single item selection and draggable views. The drag payload is based on the current selection and provided identifiers.
+- [func dragContainer<Item, Data>(for: Item.Type, in: Namespace.ID?, (Item.ID) -> Data) -> some View](assignabledocumentview/dragcontainer(for:in:_:).md)
+  A container with draggable views. The drag payload is identifiable. To form the payload, use the identifier of the dragged view inside the container.
+- [func dragContainer<Item, Data>(for: Item.Type, in: Namespace.ID?, selection: @autoclosure () -> Array<Item.ID>, (Array<Item.ID>) -> Data) -> some View](assignabledocumentview/dragcontainer(for:in:selection:_:)-28mm2.md)
+  A container with multiple selection and draggable views. The drag payload is identifiable and is based on the current selection.
+- [func dragContainer<Item>(for: Item.Type, in: Namespace.ID?, selection: @autoclosure () -> Item.ID?, (Item.ID) -> Item?) -> some View](assignabledocumentview/dragcontainer(for:in:selection:_:)-4upk6.md)
+  A container with single item selection and draggable views. The drag payload is identifiable and is based on the current selection.
 - [func draggable<T>(@autoclosure () -> T) -> some View](assignabledocumentview/draggable(_:).md)
   Activates this view as the source of a drag and drop operation.
 - [func draggable<V, T>(@autoclosure () -> T, preview: () -> V) -> some View](assignabledocumentview/draggable(_:preview:).md)
   Activates this view as the source of a drag and drop operation.
+- [func draggable<T, ID>(for: T.Type, id: ID, (ID) -> T?) -> some View](assignabledocumentview/draggable(for:id:_:).md)
+  Activates this view as the source of a drag-and-drop operation.
 - [func drawingGroup(opaque: Bool, colorMode: ColorRenderingMode) -> some View](assignabledocumentview/drawinggroup(opaque:colormode:).md)
   Composites this view’s contents into an offscreen image before final display.
+- [func dropConfiguration((DropSession) -> DropConfiguration) -> some View](assignabledocumentview/dropconfiguration(_:).md)
+  Configures a drop session.
 - [func dropDestination<T>(for: T.Type, action: ([T], CGPoint) -> Bool, isTargeted: (Bool) -> Void) -> some View](assignabledocumentview/dropdestination(for:action:istargeted:).md)
   Defines the destination of a drag and drop operation that handles the dropped content with a closure that you specify.
+- [func dropDestination<T>(for: T.Type, isEnabled: Bool, action: ([T], DropSession) -> Void) -> some View](assignabledocumentview/dropdestination(for:isenabled:action:).md)
+  Defines the destination of a drag and drop operation that provides a drop operation proposal and handles the dropped content with a closure that you specify.
 - [func dynamicTypeSize(DynamicTypeSize) -> some View](assignabledocumentview/dynamictypesize(_:)-5jzjl.md)
   Sets the Dynamic Type size within the view to the given value.
 - [func dynamicTypeSize<T>(T) -> some View](assignabledocumentview/dynamictypesize(_:)-6nqjw.md)
@@ -496,6 +608,8 @@
 - [func fileDialogBrowserOptions(FileDialogBrowserOptions) -> some View](assignabledocumentview/filedialogbrowseroptions(_:).md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to provide a refined URL search experience: include or exclude hidden files, allow searching by tag, etc.
 - [func fileDialogConfirmationLabel(LocalizedStringKey) -> some View](assignabledocumentview/filedialogconfirmationlabel(_:)-313v8.md)
+  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
+- [func fileDialogConfirmationLabel(LocalizedStringResource) -> some View](assignabledocumentview/filedialogconfirmationlabel(_:)-3eptq.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
 - [func fileDialogConfirmationLabel(Text?) -> some View](assignabledocumentview/filedialogconfirmationlabel(_:)-7x004.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with custom text as a confirmation button label.
@@ -513,6 +627,8 @@
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [func fileDialogMessage(Text?) -> some View](assignabledocumentview/filedialogmessage(_:)-7cd9z.md)
   On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
+- [func fileDialogMessage(LocalizedStringResource) -> some View](assignabledocumentview/filedialogmessage(_:)-98od0.md)
+  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [func fileDialogURLEnabled(Predicate<URL>) -> some View](assignabledocumentview/filedialogurlenabled(_:).md)
   On macOS, configures the the `fileImporter` or `fileMover` to conditionally disable presented URLs.
 - [func fileExporter<D>(isPresented: Binding<Bool>, document: D?, contentType: UTType, defaultFilename: String?, onCompletion: (Result<URL, any Error>) -> Void) -> some View](assignabledocumentview/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:)-1wg9y.md)
@@ -538,6 +654,8 @@
 - [func fileExporterFilenameLabel(Text?) -> some View](assignabledocumentview/fileexporterfilenamelabel(_:)-2juun.md)
   On macOS, configures the `fileExporter` with a text to use as a label for the file name field.
 - [func fileExporterFilenameLabel<S>(S) -> some View](assignabledocumentview/fileexporterfilenamelabel(_:)-34tej.md)
+  On macOS, configures the `fileExporter` with a label for the file name field.
+- [func fileExporterFilenameLabel(LocalizedStringResource) -> some View](assignabledocumentview/fileexporterfilenamelabel(_:)-4gpy4.md)
   On macOS, configures the `fileExporter` with a label for the file name field.
 - [func fileExporterFilenameLabel(LocalizedStringKey) -> some View](assignabledocumentview/fileexporterfilenamelabel(_:)-6bxn7.md)
   On macOS, configures the `fileExporter` with a label for the file name field.
@@ -647,6 +765,14 @@
   Fills the view’s background with an automatic glass background effect and container-relative rounded rectangle shape.
 - [func glassBackgroundEffect<S>(in: S, displayMode: GlassBackgroundDisplayMode) -> some View](assignabledocumentview/glassbackgroundeffect(in:displaymode:).md)
   Fills the view’s background with an automatic glass background effect and a shape that you specify.
+- [func glassEffect(Glass, in: some Shape, isEnabled: Bool) -> some View](assignabledocumentview/glasseffect(_:in:isenabled:).md)
+  Applies a glass effect to this view.
+- [func glassEffectID((some Hashable & Sendable)?, in: Namespace.ID) -> some View](assignabledocumentview/glasseffectid(_:in:).md)
+  Associates an identity value to glass effects defined within this view.
+- [func glassEffectTransition(GlassEffectTransition, isEnabled: Bool) -> some View](assignabledocumentview/glasseffecttransition(_:isenabled:).md)
+  Associates a glass effect transition with any glass effects defined within this view.
+- [func glassEffectUnion(id: (some Hashable & Sendable)?, namespace: Namespace.ID) -> some View](assignabledocumentview/glasseffectunion(id:namespace:).md)
+  Associates any glass effects defined within this view to a union with the provided id.
 - [func grayscale(Double) -> some View](assignabledocumentview/grayscale(_:).md)
   Adds a grayscale effect to this view.
 - [func gridCellAnchor(UnitPoint) -> some View](assignabledocumentview/gridcellanchor(_:).md)
@@ -669,6 +795,8 @@
   Sets the header prominence for this view.
 - [func help<S>(S) -> some View](assignabledocumentview/help(_:)-1ervr.md)
   Adds help text to a view using a string that you provide.
+- [func help(LocalizedStringResource) -> some View](assignabledocumentview/help(_:)-32bcr.md)
+  Adds help text to a view using a localized string resource that you provide.
 - [func help(Text) -> some View](assignabledocumentview/help(_:)-3j3b9.md)
   Adds help text to a view using a text view that you provide.
 - [func help(LocalizedStringKey) -> some View](assignabledocumentview/help(_:)-3q989.md)
@@ -741,6 +869,10 @@
   Loops the given keyframes continuously, updating the view using the modifiers you apply in `body`.
 - [func keyframeAnimator<Value>(initialValue: Value, trigger: some Equatable, content: (PlaceholderContentView<Self>, Value) -> some View, keyframes: (Value) -> some Keyframes) -> some View](assignabledocumentview/keyframeanimator(initialvalue:trigger:content:keyframes:).md)
   Plays the given keyframes when the given trigger value changes, updating the view using the modifiers you apply in `body`.
+- [func labelIconToTitleSpacing(CGFloat) -> some View](assignabledocumentview/labelicontotitlespacing(_:).md)
+  Set the spacing between the icon and title in labels.
+- [func labelReservedIconWidth(CGFloat) -> some View](assignabledocumentview/labelreservediconwidth(_:).md)
+  Set the width reserved for icons in labels.
 - [func labelStyle<S>(S) -> some View](assignabledocumentview/labelstyle(_:).md)
   Sets the style for labels within this view.
 - [func labeledContentStyle<S>(S) -> some View](assignabledocumentview/labeledcontentstyle(_:).md)
@@ -757,6 +889,8 @@
   Sets the priority by which a parent layout should apportion space to this child.
 - [func layoutValue<K>(key: K.Type, value: K.Value) -> some View](assignabledocumentview/layoutvalue(key:value:).md)
   Associates a value with a custom layout property.
+- [func lineHeight(AttributedString.LineHeight?) -> some View](assignabledocumentview/lineheight(_:).md)
+  A modifier for the default line height in the view hierarchy.
 - [func lineLimit(PartialRangeThrough<Int>) -> some View](assignabledocumentview/linelimit(_:)-3e7rs.md)
   Sets to a partial range the number of lines that text can occupy in this view.
 - [func lineLimit(ClosedRange<Int>) -> some View](assignabledocumentview/linelimit(_:)-87nyr.md)
@@ -781,12 +915,18 @@
   Requests that the containing list row have its hover effect disabled.
 - [func listRowInsets(EdgeInsets?) -> some View](assignabledocumentview/listrowinsets(_:).md)
   Applies an inset to the rows in a list.
+- [func listRowInsets(Edge.Set, CGFloat?) -> some View](assignabledocumentview/listrowinsets(_:_:).md)
+  Sets the insets of rows in a list on the specified edges.
 - [func listRowSeparator(Visibility, edges: VerticalEdge.Set) -> some View](assignabledocumentview/listrowseparator(_:edges:).md)
   Sets the display mode for the separator associated with this specific row.
 - [func listRowSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](assignabledocumentview/listrowseparatortint(_:edges:).md)
   Sets the tint color associated with a row.
 - [func listRowSpacing(CGFloat?) -> some View](assignabledocumentview/listrowspacing(_:).md)
   Sets the vertical spacing between two adjacent rows in a List.
+- [func listSectionIndexVisibility(Visibility) -> some View](assignabledocumentview/listsectionindexvisibility(_:).md)
+  Changes the visibility of the list section index.
+- [func listSectionMargins(Edge.Set, CGFloat?) -> some View](assignabledocumentview/listsectionmargins(_:_:).md)
+  Set the section margins for the specific edges.
 - [func listSectionSeparator(Visibility, edges: VerticalEdge.Set) -> some View](assignabledocumentview/listsectionseparator(_:edges:).md)
   Sets whether to hide the separator associated with a list section.
 - [func listSectionSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](assignabledocumentview/listsectionseparatortint(_:edges:).md)
@@ -799,6 +939,14 @@
   Sets the style for lists within this view.
 - [func luminanceToAlpha() -> some View](assignabledocumentview/luminancetoalpha.md)
   Adds a luminance to alpha effect to this view.
+- [func manipulable(coordinateSpace: some CoordinateSpaceProtocol, operations: Manipulable.Operation.Set, inertia: Manipulable.Inertia, isEnabled: Bool, onChanged: ((Manipulable.Event) -> Void)?) -> some View](assignabledocumentview/manipulable(coordinatespace:operations:inertia:isenabled:onchanged:).md)
+  Allows this view to be manipulated using common hand gestures.
+- [func manipulable(transform: Binding<AffineTransform3D>, coordinateSpace: some CoordinateSpaceProtocol, operations: Manipulable.Operation.Set, inertia: Manipulable.Inertia, isEnabled: Bool, onChanged: ((Manipulable.Event) -> Void)?) -> some View](assignabledocumentview/manipulable(transform:coordinatespace:operations:inertia:isenabled:onchanged:).md)
+  Applies the given 3D affine transform to the view and allows it to be manipulated using common hand gestures.
+- [func manipulable(using: Manipulable.GestureState) -> some View](assignabledocumentview/manipulable(using:).md)
+  Allows the view to be manipulated using a manipulation gesture attached to a different view.
+- [func manipulationGesture(updating: Binding<Manipulable.GestureState>, coordinateSpace: some CoordinateSpaceProtocol, operations: Manipulable.Operation.Set, inertia: Manipulable.Inertia, isEnabled: Bool, onChanged: ((Manipulable.Event) -> Void)?) -> some View](assignabledocumentview/manipulationgesture(updating:coordinatespace:operations:inertia:isenabled:onchanged:).md)
+  Adds a manipulation gesture to this view without allowing this view to be manipulable itself.
 - [func mask<Mask>(Mask) -> some View](assignabledocumentview/mask(_:).md)
   Masks this view using the alpha channel of the given view.
 - [func mask<Mask>(alignment: Alignment, () -> Mask) -> some View](assignabledocumentview/mask(alignment:_:).md)
@@ -831,6 +979,8 @@
   Adds a condition for whether the view’s view hierarchy is movable.
 - [func multilineTextAlignment(TextAlignment) -> some View](assignabledocumentview/multilinetextalignment(_:).md)
   Sets the alignment of a text view that contains multiple lines of text.
+- [func multilineTextAlignment(strategy: Text.AlignmentStrategy) -> some View](assignabledocumentview/multilinetextalignment(strategy:).md)
+  A modifier for the default text alignment strategy in the view hierarchy.
 - [func navigationBarBackButtonHidden(Bool) -> some View](assignabledocumentview/navigationbarbackbuttonhidden(_:).md)
   Hides the navigation bar back button for the view.
 - [func navigationBarHidden(Bool) -> some View](assignabledocumentview/navigationbarhidden(_:).md)
@@ -870,6 +1020,8 @@
   Configures the view’s document for purposes of navigation.
 - [func navigationDocument<D>(D, preview: SharePreview<Never, Never>) -> some View](assignabledocumentview/navigationdocument(_:preview:)-8i70z.md)
   Configures the view’s document for purposes of navigation.
+- [func navigationLinkIndicatorVisibility(Visibility) -> some View](assignabledocumentview/navigationlinkindicatorvisibility(_:).md)
+  Configures whether navigation links show a disclosure indicator.
 - [func navigationSplitViewColumnWidth(CGFloat) -> some View](assignabledocumentview/navigationsplitviewcolumnwidth(_:).md)
   Sets a fixed, preferred width for the column containing this view.
 - [func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](assignabledocumentview/navigationsplitviewcolumnwidth(min:ideal:max:).md)
@@ -882,6 +1034,8 @@
   Configures the view’s subtitle for purposes of navigation, using a localized string.
 - [func navigationSubtitle<S>(S) -> some View](assignabledocumentview/navigationsubtitle(_:)-82yqb.md)
   Configures the view’s subtitle for purposes of navigation, using a string.
+- [func navigationSubtitle(LocalizedStringResource) -> some View](assignabledocumentview/navigationsubtitle(_:)-9kze3.md)
+  Configures the view’s subtitle for purposes of navigation, using a localized string resource.
 - [func navigationTitle(Text) -> some View](assignabledocumentview/navigationtitle(_:)-1tz9r.md)
   Configures the view’s title for purposes of navigation.
 - [func navigationTitle<S>(S) -> some View](assignabledocumentview/navigationtitle(_:)-26b3k.md)
@@ -890,6 +1044,8 @@
   Configures the view’s title for purposes of navigation, using a custom view.
 - [func navigationTitle(Binding<String>) -> some View](assignabledocumentview/navigationtitle(_:)-4s374.md)
   Configures the view’s title for purposes of navigation, using a string binding.
+- [func navigationTitle(LocalizedStringResource) -> some View](assignabledocumentview/navigationtitle(_:)-89vm1.md)
+  Configures the view’s title for purposes of navigation, using a localized string resource.
 - [func navigationTitle(LocalizedStringKey) -> some View](assignabledocumentview/navigationtitle(_:)-qg2x.md)
   Configures the view’s title for purposes of navigation, using a localized string.
 - [func navigationTransition(some NavigationTransition) -> some View](assignabledocumentview/navigationtransition(_:).md)
@@ -920,6 +1076,8 @@
   Activates this view as the source of a drag and drop operation.
 - [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](assignabledocumentview/ondrag(_:preview:).md)
   Activates this view as the source of a drag and drop operation.
+- [func onDragSessionUpdated((DragSession) -> Void) -> some View](assignabledocumentview/ondragsessionupdated(_:).md)
+  Specifies an action to perform on each update of an ongoing dragging operation activated by `draggable(_:)` or other drag modifiers.
 - [func onDrop(of: [String], delegate: any DropDelegate) -> some View](assignabledocumentview/ondrop(of:delegate:)-1abfa.md)
   Defines the destination for a drag and drop operation with the same size and position as this view, with behavior controlled by the given delegate.
 - [func onDrop(of: [UTType], delegate: any DropDelegate) -> some View](assignabledocumentview/ondrop(of:delegate:)-811l4.md)
@@ -932,6 +1090,8 @@
   Defines the destination for a drag and drop operation with the same size and position as this view, handling dropped content and the drop location with the given closure.
 - [func onDrop(of: [UTType], isTargeted: Binding<Bool>?, perform: ([NSItemProvider]) -> Bool) -> some View](assignabledocumentview/ondrop(of:istargeted:perform:)-8pa0g.md)
   Defines the destination of a drag-and-drop operation that handles the dropped content with a closure that you specify.
+- [func onDropSessionUpdated((DropSession) -> Void) -> some View](assignabledocumentview/ondropsessionupdated(_:).md)
+  Specifies an action to perform on each update of an ongoing drop operation activated by `dropDestination(_:)` or other drop modifiers.
 - [func onGeometryChange<T>(for: T.Type, of: (GeometryProxy) -> T, action: (T, T) -> Void) -> some View](assignabledocumentview/ongeometrychange(for:of:action:)-53vnw.md)
   Adds an action to be performed when a value, created from a geometry proxy, changes.
 - [func onGeometryChange<T>(for: T.Type, of: (GeometryProxy) -> T, action: (T) -> Void) -> some View](assignabledocumentview/ongeometrychange(for:of:action:)-75i6t.md)
@@ -964,6 +1124,8 @@
   Adds an action to perform when this view recognizes a long press gesture.
 - [func onOpenURL(perform: (URL) -> ()) -> some View](assignabledocumentview/onopenurl(perform:).md)
   Registers a handler to invoke in response to a URL that your app receives.
+- [func onOpenURL(prefersInApp: Bool) -> some View](assignabledocumentview/onopenurl(prefersinapp:).md)
+  Sets an `OpenURLAction` that prefers opening URL with an in-app browser. It’s equivalent to calling `.onOpenURL(_:)`
 - [func onPencilDoubleTap(perform: (PencilDoubleTapGestureValue) -> Void) -> some View](assignabledocumentview/onpencildoubletap(perform:).md)
   Adds an action to perform after the user double-taps their Apple Pencil.
 - [func onPencilSqueeze(perform: (PencilSqueezeGesturePhase) -> Void) -> some View](assignabledocumentview/onpencilsqueeze(perform:).md)
@@ -990,9 +1152,15 @@
   Adds an action to perform when this view recognizes a tap gesture.
 - [func onVolumeViewpointChange(updateStrategy: VolumeViewpointUpdateStrategy, initial: Bool, (Viewpoint3D, Viewpoint3D) -> Void) -> some View](assignabledocumentview/onvolumeviewpointchange(updatestrategy:initial:_:).md)
   Adds an action to perform when the viewpoint of the volume changes.
+- [func onWorldRecenter(action: (WorldRecenterPhase) -> Void) -> some View](assignabledocumentview/onworldrecenter(action:)-666a7.md)
+  Adds an action to perform when recentering the view with the digital crown.
+- [func onWorldRecenter(action: () -> Void) -> some View](assignabledocumentview/onworldrecenter(action:)-7zll0.md)
+  Adds an action to perform when recentering the view with the digital crown.
 - [func opacity(Double) -> some View](assignabledocumentview/opacity(_:).md)
   Sets the transparency of this view.
-- [func ornament<Content>(visibility: Visibility, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment, ornament: () -> Content) -> some View](assignabledocumentview/ornament(visibility:attachmentanchor:contentalignment:ornament:).md)
+- [func ornament<Content>(visibility: Visibility, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D, ornament: () -> Content) -> some View](assignabledocumentview/ornament(visibility:attachmentanchor:contentalignment:ornament:)-7faw7.md)
+  Presents an ornament.
+- [func ornament<Content>(visibility: Visibility, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment, ornament: () -> Content) -> some View](assignabledocumentview/ornament(visibility:attachmentanchor:contentalignment:ornament:)-9kemr.md)
   Presents an ornament.
 - [func overlay<Overlay>(Overlay, alignment: Alignment) -> some View](assignabledocumentview/overlay(_:alignment:).md)
   Layers a secondary view in front of this view.
@@ -1046,12 +1214,18 @@
   Sets the preferred color scheme for this presentation.
 - [func preferredSurroundingsEffect(SurroundingsEffect?) -> some View](assignabledocumentview/preferredsurroundingseffect(_:).md)
   Applies an effect to passthrough video.
+- [func preferredWindowClippingMargins(Edge3D.Set, EdgeInsets3D) -> some View](assignabledocumentview/preferredwindowclippingmargins(_:_:)-31gs4.md)
+  Requests additional margins for drawing beyond the bounds of the window.
+- [func preferredWindowClippingMargins(Edge3D.Set, CGFloat?) -> some View](assignabledocumentview/preferredwindowclippingmargins(_:_:)-4ae6v.md)
+  Requests additional margins for drawing beyond the bounds of the window.
 - [func presentationBackground<S>(S) -> some View](assignabledocumentview/presentationbackground(_:).md)
   Sets the presentation background of the enclosing sheet using a shape style.
 - [func presentationBackground<V>(alignment: Alignment, content: () -> V) -> some View](assignabledocumentview/presentationbackground(alignment:content:).md)
   Sets the presentation background of the enclosing sheet to a custom view.
 - [func presentationBackgroundInteraction(PresentationBackgroundInteraction) -> some View](assignabledocumentview/presentationbackgroundinteraction(_:).md)
   Controls whether people can interact with the view behind a presentation.
+- [func presentationBreakthroughEffect(BreakthroughEffect) -> some View](assignabledocumentview/presentationbreakthrougheffect(_:).md)
+  Changes the way the enclosing presentation breaks through content occluding it.
 - [func presentationCompactAdaptation(PresentationAdaptation) -> some View](assignabledocumentview/presentationcompactadaptation(_:).md)
   Specifies how to adapt a presentation to compact size classes.
 - [func presentationCompactAdaptation(horizontal: PresentationAdaptation, vertical: PresentationAdaptation) -> some View](assignabledocumentview/presentationcompactadaptation(horizontal:vertical:).md)
@@ -1104,8 +1278,18 @@
   Rotates the view’s content by an angle about an axis that you specify as a tuple of elements.
 - [func rotation3DEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint, anchorZ: CGFloat, perspective: CGFloat) -> some View](assignabledocumentview/rotation3deffect(_:axis:anchor:anchorz:perspective:).md)
   Renders a view’s content as if it’s rotated in three dimensions around the specified axis.
+- [func rotation3DLayout(Rotation3D) -> some View](assignabledocumentview/rotation3dlayout(_:).md)
+  Rotates a view with impacts to its frame in a containing layout
+- [func rotation3DLayout(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat)) -> some View](assignabledocumentview/rotation3dlayout(_:axis:)-5qmak.md)
+  Rotates a view with impacts to its frame in a containing layout
+- [func rotation3DLayout(Angle, axis: RotationAxis3D) -> some View](assignabledocumentview/rotation3dlayout(_:axis:)-7oosr.md)
+  Rotates a view with impacts to its frame in a containing layout
 - [func rotationEffect(Angle, anchor: UnitPoint) -> some View](assignabledocumentview/rotationeffect(_:anchor:).md)
   Rotates a view’s rendered output in two dimensions around the specified point.
+- [func safeAreaBar(edge: HorizontalEdge, alignment: VerticalAlignment, spacing: CGFloat?, content: () -> some View) -> some View](assignabledocumentview/safeareabar(edge:alignment:spacing:content:)-52l8s.md)
+  Renders the provided content appropriately to be displayed as a custom bar.
+- [func safeAreaBar(edge: VerticalEdge, alignment: HorizontalAlignment, spacing: CGFloat?, content: () -> some View) -> some View](assignabledocumentview/safeareabar(edge:alignment:spacing:content:)-5oroe.md)
+  Renders the provided content appropriate to be displayed as a custom bar.
 - [func safeAreaInset<V>(edge: VerticalEdge, alignment: HorizontalAlignment, spacing: CGFloat?, content: () -> V) -> some View](assignabledocumentview/safeareainset(edge:alignment:spacing:content:)-5kde.md)
   Shows the specified content above or below the modified view.
 - [func safeAreaInset<V>(edge: HorizontalEdge, alignment: VerticalAlignment, spacing: CGFloat?, content: () -> V) -> some View](assignabledocumentview/safeareainset(edge:alignment:spacing:content:)-8m3pq.md)
@@ -1119,11 +1303,11 @@
 - [func saturation(Double) -> some View](assignabledocumentview/saturation(_:).md)
   Adjusts the color saturation of this view.
 - [func scaleEffect(CGFloat, anchor: UnitPoint3D) -> some View](assignabledocumentview/scaleeffect(_:anchor:)-10tn6.md)
-  Scales this view uniformly by the specified factor.
+  Scales this view uniformly by the specified factor, relative to an anchor point.
 - [func scaleEffect(CGFloat, anchor: UnitPoint) -> ModifiedContent<Self, _UniformScaleEffect>](assignabledocumentview/scaleeffect(_:anchor:)-3367a.md)
   Scales this view’s rendered output by the given amount in both the horizontal and vertical directions, relative to an anchor point.
 - [func scaleEffect(Size3D, anchor: UnitPoint3D) -> some View](assignabledocumentview/scaleeffect(_:anchor:)-3yp46.md)
-  Scales this view uniformly by the specified size in each dimension.
+  Scales this view uniformly by the specified size in each dimension, relative to an anchor point.
 - [func scaleEffect(CGSize, anchor: UnitPoint) -> some View](assignabledocumentview/scaleeffect(_:anchor:)-4cazh.md)
   Scales this view’s rendered output by the given vertical and horizontal size amounts, relative to an anchor point.
 - [func scaleEffect(CGFloat, anchor: UnitPoint) -> some View](assignabledocumentview/scaleeffect(_:anchor:)-70sw3.md)
@@ -1131,10 +1315,14 @@
 - [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](assignabledocumentview/scaleeffect(x:y:anchor:).md)
   Scales this view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](assignabledocumentview/scaleeffect(x:y:z:anchor:).md)
-  Scales this view by the specified horizontal, vertical, and depth factors.
+  Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
 - [func scaledToFill() -> some View](assignabledocumentview/scaledtofill.md)
   Scales this view to fill its parent.
+- [func scaledToFill3D() -> some View](assignabledocumentview/scaledtofill3d.md)
+  Scales this view to fill its parent.
 - [func scaledToFit() -> some View](assignabledocumentview/scaledtofit.md)
+  Scales this view to fit its parent.
+- [func scaledToFit3D() -> some View](assignabledocumentview/scaledtofit3d.md)
   Scales this view to fit its parent.
 - [func scenePadding(Edge.Set) -> some View](assignabledocumentview/scenepadding(_:).md)
   Adds padding to the specified edges of this view using an amount that’s appropriate for the current scene.
@@ -1150,6 +1338,10 @@
   Disables or enables scrolling in scrollable views.
 - [func scrollDismissesKeyboard(ScrollDismissesKeyboardMode) -> some View](assignabledocumentview/scrolldismisseskeyboard(_:).md)
   Configures the behavior in which scrollable content interacts with the software keyboard.
+- [func scrollEdgeEffectDisabled(Bool, for: Edge.Set) -> some View](assignabledocumentview/scrolledgeeffectdisabled(_:for:).md)
+  Disables any scroll edge effects for scroll views within this hierarchy.
+- [func scrollEdgeEffectStyle(ScrollEdgeEffectStyle?, for: Edge.Set) -> some View](assignabledocumentview/scrolledgeeffectstyle(_:for:).md)
+  Configures the scroll edge effect style for scroll views within this hierarchy.
 - [func scrollIndicators(ScrollIndicatorVisibility, axes: Axis.Set) -> some View](assignabledocumentview/scrollindicators(_:axes:).md)
   Sets the visibility of scroll indicators within this view.
 - [func scrollIndicatorsFlash(onAppear: Bool) -> some View](assignabledocumentview/scrollindicatorsflash(onappear:).md)
@@ -1167,9 +1359,9 @@
 - [func scrollTargetLayout(isEnabled: Bool) -> some View](assignabledocumentview/scrolltargetlayout(isenabled:).md)
   Configures the outermost layout as a scroll target layout.
 - [func scrollTransition(ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](assignabledocumentview/scrolltransition(_:axis:transition:).md)
-  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 - [func scrollTransition(topLeading: ScrollTransitionConfiguration, bottomTrailing: ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](assignabledocumentview/scrolltransition(topleading:bottomtrailing:axis:transition:).md)
-  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view, or other container specified using the `coordinateSpace` parameter.
+  Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 - [func searchCompletion<T>(T) -> some View](assignabledocumentview/searchcompletion(_:)-7kypn.md)
   Associates a search token with the value of this view when used as a search suggestion.
 - [func searchCompletion(String) -> some View](assignabledocumentview/searchcompletion(_:)-sgom.md)
@@ -1190,11 +1382,17 @@
   Configures the search suggestions for this view.
 - [func searchSuggestions(Visibility, for: SearchSuggestionsPlacement.Set) -> some View](assignabledocumentview/searchsuggestions(_:for:).md)
   Configures how to display search suggestions within this view.
+- [func searchToolbarBehavior(SearchToolbarBehavior) -> some View](assignabledocumentview/searchtoolbarbehavior(_:).md)
+  Configures the behavior for search in the toolbar.
+- [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (Binding<C.Element>) -> some View) -> some View](assignabledocumentview/searchable(text:editabletokens:ispresented:placement:prompt:token:)-27p6.md)
+  Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (Binding<C.Element>) -> some View) -> some View](assignabledocumentview/searchable(text:editabletokens:ispresented:placement:prompt:token:)-2iq2l.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?, token: (Binding<C.Element>) -> some View) -> some View](assignabledocumentview/searchable(text:editabletokens:ispresented:placement:prompt:token:)-5awwo.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: some StringProtocol, token: (Binding<C.Element>) -> some View) -> some View](assignabledocumentview/searchable(text:editabletokens:ispresented:placement:prompt:token:)-5ond0.md)
+  Marks this view as searchable, which configures the display of a search field.
+- [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (Binding<C.Element>) -> some View) -> some View](assignabledocumentview/searchable(text:editabletokens:placement:prompt:token:)-3ju7q.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (Binding<C.Element>) -> some View) -> some View](assignabledocumentview/searchable(text:editabletokens:placement:prompt:token:)-4ryox.md)
   Marks this view as searchable, which configures the display of a search field.
@@ -1206,9 +1404,13 @@
   Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey) -> some View](assignabledocumentview/searchable(text:ispresented:placement:prompt:)-1k98v.md)
   Marks this view as searchable with programmatic presentation of the search field.
+- [func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource) -> some View](assignabledocumentview/searchable(text:ispresented:placement:prompt:)-4an76.md)
+  Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable<S>(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: S) -> some View](assignabledocumentview/searchable(text:ispresented:placement:prompt:)-8bdwi.md)
   Marks this view as searchable with programmatic presentation of the search field.
 - [func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: LocalizedStringKey) -> some View](assignabledocumentview/searchable(text:placement:prompt:)-659pr.md)
+  Marks this view as searchable, which configures the display of a search field.
+- [func searchable(text: Binding<String>, placement: SearchFieldPlacement, prompt: LocalizedStringResource) -> some View](assignabledocumentview/searchable(text:placement:prompt:)-7c3j7.md)
   Marks this view as searchable, which configures the display of a search field.
 - [func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement, prompt: S) -> some View](assignabledocumentview/searchable(text:placement:prompt:)-7k9od.md)
   Marks this view as searchable, which configures the display of a search field.
@@ -1224,11 +1426,15 @@
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](assignabledocumentview/searchable(text:tokens:ispresented:placement:prompt:token:)-4544o.md)
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](assignabledocumentview/searchable(text:tokens:ispresented:placement:prompt:token:)-4o4jw.md)
+  Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](assignabledocumentview/searchable(text:tokens:ispresented:placement:prompt:token:)-7e09y.md)
   Marks this view as searchable with text and tokens, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](assignabledocumentview/searchable(text:tokens:placement:prompt:token:)-2vr1h.md)
   Marks this view as searchable with text and tokens.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](assignabledocumentview/searchable(text:tokens:placement:prompt:token:)-3uexy.md)
+  Marks this view as searchable with text and tokens.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](assignabledocumentview/searchable(text:tokens:placement:prompt:token:)-4q7d.md)
   Marks this view as searchable with text and tokens.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](assignabledocumentview/searchable(text:tokens:placement:prompt:token:)-98ft4.md)
   Marks this view as searchable with text and tokens.
@@ -1236,9 +1442,13 @@
   Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: Text?, token: (C.Element) -> T) -> some View](assignabledocumentview/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-2f6ap.md)
   Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](assignabledocumentview/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-93h92.md)
+  Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, isPresented: Binding<Bool>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](assignabledocumentview/searchable(text:tokens:suggestedtokens:ispresented:placement:prompt:token:)-9q515.md)
   Marks this view as searchable with text, tokens, and suggestions, as well as programmatic presentation.
 - [func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: S, token: (C.Element) -> T) -> some View](assignabledocumentview/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-5zpfa.md)
+  Marks this view as searchable with text, tokens, and suggestions.
+- [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringResource, token: (C.Element) -> T) -> some View](assignabledocumentview/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-7c72r.md)
   Marks this view as searchable with text, tokens, and suggestions.
 - [func searchable<C, T>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement, prompt: LocalizedStringKey, token: (C.Element) -> T) -> some View](assignabledocumentview/searchable(text:tokens:suggestedtokens:placement:prompt:token:)-95nvq.md)
   Marks this view as searchable with text, tokens, and suggestions.
@@ -1246,13 +1456,19 @@
   Marks this view as searchable with text, tokens, and suggestions.
 - [func sectionActions<Content>(content: () -> Content) -> some View](assignabledocumentview/sectionactions(content:).md)
   Adds custom actions to a section.
+- [func sectionIndexLabel(Text?) -> some View](assignabledocumentview/sectionindexlabel(_:)-53zby.md)
+  Sets the label that is used in a section index to point to this section, typically only a single character long.
+- [func sectionIndexLabel<S>(S?) -> some View](assignabledocumentview/sectionindexlabel(_:)-6n3qg.md)
+  Sets the title that is used for the section index label pointing to this section, typically only a single character long.
 - [func selectionDisabled(Bool) -> some View](assignabledocumentview/selectiondisabled(_:).md)
   Adds a condition that controls whether users can select this view.
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T) -> some View](assignabledocumentview/sensoryfeedback(_:trigger:).md)
   Plays the specified `feedback` when the provided `trigger` value changes.
 - [func sensoryFeedback<T>(SensoryFeedback, trigger: T, condition: (T, T) -> Bool) -> some View](assignabledocumentview/sensoryfeedback(_:trigger:condition:).md)
   Plays the specified `feedback` when the provided `trigger` value changes and the `condition` closure returns `true`.
-- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](assignabledocumentview/sensoryfeedback(trigger:_:).md)
+- [func sensoryFeedback<T>(trigger: T, () -> SensoryFeedback?) -> some View](assignabledocumentview/sensoryfeedback(trigger:_:)-54gd1.md)
+  Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
+- [func sensoryFeedback<T>(trigger: T, (T, T) -> SensoryFeedback?) -> some View](assignabledocumentview/sensoryfeedback(trigger:_:)-a7vh.md)
   Plays feedback when returned from the `feedback` closure after the provided `trigger` value changes.
 - [func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some View](assignabledocumentview/shadow(color:radius:x:y:).md)
   Adds a shadow to this view.
@@ -1266,6 +1482,10 @@
   Attaches a gesture to the view to process simultaneously with gestures defined by the view.
 - [func simultaneousGesture<T>(T, name: String, isEnabled: Bool) -> some View](assignabledocumentview/simultaneousgesture(_:name:isenabled:).md)
   Attaches a gesture to the view to process simultaneously with gestures defined by the view.
+- [func spatialOverlay<V>(alignment: Alignment3D, content: () -> V) -> some View](assignabledocumentview/spatialoverlay(alignment:content:).md)
+  Adds secondary views within the 3D bounds of this view.
+- [func spatialOverlayPreferenceValue<K, V>(K.Type, alignment: Alignment3D, (K.Value) -> V) -> some View](assignabledocumentview/spatialoverlaypreferencevalue(_:alignment:_:).md)
+  Uses the specified preference value from the view to produce another view occupying the same 3D space of the first view.
 - [func speechAdjustedPitch(Double) -> some View](assignabledocumentview/speechadjustedpitch(_:).md)
   Raises or lowers the pitch of spoken text.
 - [func speechAlwaysIncludesPunctuation(Bool) -> some View](assignabledocumentview/speechalwaysincludespunctuation(_:).md)
@@ -1290,6 +1510,8 @@
   Specifies which viewpoints are supported for the window bar and ornaments in a volume.
 - [func swipeActions<T>(edge: HorizontalEdge, allowsFullSwipe: Bool, content: () -> T) -> some View](assignabledocumentview/swipeactions(edge:allowsfullswipe:content:).md)
   Adds custom swipe actions to a row in a list.
+- [func symbolColorRenderingMode(SymbolColorRenderingMode?) -> some View](assignabledocumentview/symbolcolorrenderingmode(_:).md)
+  Sets the color rendering mode for symbol images.
 - [func symbolEffect<T>(T, options: SymbolEffectOptions, isActive: Bool) -> some View](assignabledocumentview/symboleffect(_:options:isactive:).md)
   Returns a new view with a symbol effect added to it.
 - [func symbolEffect<T, U>(T, options: SymbolEffectOptions, value: U) -> some View](assignabledocumentview/symboleffect(_:options:value:).md)
@@ -1298,10 +1520,15 @@
   Returns a new view with its inherited symbol image effects either removed or left unchanged.
 - [func symbolRenderingMode(SymbolRenderingMode?) -> some View](assignabledocumentview/symbolrenderingmode(_:).md)
   Sets the rendering mode for symbol images within this view.
+- [func symbolVariableValueMode(SymbolVariableValueMode?) -> some View](assignabledocumentview/symbolvariablevaluemode(_:).md)
+  Sets the variable value mode mode for symbol images within this view.
 - [func symbolVariant(SymbolVariants) -> some View](assignabledocumentview/symbolvariant(_:).md)
   Makes symbols within the view show a particular variant.
+- [func tabBarMinimizeBehavior(TabBarMinimizeBehavior) -> some View](assignabledocumentview/tabbarminimizebehavior(_:).md)
+  Sets the behavior for tab bar minimization.
 - [func tabItem<V>(() -> V) -> some View](assignabledocumentview/tabitem(_:).md)
   Sets the tab bar item associated with this view.
+- [func tabViewBottomAccessory<Content>(content: () -> Content) -> some View](assignabledocumentview/tabviewbottomaccessory(content:).md)
 - [func tabViewCustomization(Binding<TabViewCustomization>?) -> some View](assignabledocumentview/tabviewcustomization(_:).md)
   Specifies the customizations to apply to the sidebar representation of the tab view.
 - [func tabViewSidebarBottomBar<Content>(content: () -> Content) -> some View](assignabledocumentview/tabviewsidebarbottombar(content:).md)
@@ -1332,6 +1559,8 @@
   Sets the style for text fields within this view.
 - [func textInputAutocapitalization(TextInputAutocapitalization?) -> some View](assignabledocumentview/textinputautocapitalization(_:).md)
   Sets how often the shift key in the keyboard is automatically enabled.
+- [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](assignabledocumentview/textinputformattingcontrolvisibility(_:for:).md)
+  Define which system text formatting controls are available.
 - [func textRenderer<T>(T) -> some View](assignabledocumentview/textrenderer(_:).md)
   Returns a new view such that any text views within it will use `renderer` to draw themselves.
 - [func textScale(Text.Scale, isEnabled: Bool) -> some View](assignabledocumentview/textscale(_:isenabled:).md)
@@ -1381,7 +1610,7 @@
 - [func transaction(value: some Equatable, (inout Transaction) -> Void) -> some View](assignabledocumentview/transaction(value:_:).md)
   Applies the given transaction mutation function to all animations used within the view.
 - [func transform3DEffect(AffineTransform3D) -> some View](assignabledocumentview/transform3deffect(_:).md)
-  Applies a 3D transformation to the receiver.
+  Applies a 3D transformation to this view’s rendered output.
 - [func transformAnchorPreference<A, K>(key: K.Type, value: Anchor<A>.Source, transform: (inout K.Value, Anchor<A>) -> Void) -> some View](assignabledocumentview/transformanchorpreference(key:value:transform:).md)
   Sets a value for the specified preference key, the value is a function of the key’s current value and a geometry value tied to the current coordinate space, allowing readers of the value to convert the geometry to their local coordinates.
 - [func transformEffect(CGAffineTransform) -> some View](assignabledocumentview/transformeffect(_:).md)
@@ -1399,6 +1628,8 @@
 - [func typeSelectEquivalent(Text?) -> some View](assignabledocumentview/typeselectequivalent(_:)-1juze.md)
   Sets an explicit type select equivalent text in a collection, such as a list or table.
 - [func typeSelectEquivalent(LocalizedStringKey) -> some View](assignabledocumentview/typeselectequivalent(_:)-1l60d.md)
+  Sets an explicit type select equivalent text in a collection, such as a list or table.
+- [func typeSelectEquivalent(LocalizedStringResource) -> some View](assignabledocumentview/typeselectequivalent(_:)-33yuv.md)
   Sets an explicit type select equivalent text in a collection, such as a list or table.
 - [func typeSelectEquivalent<S>(S) -> some View](assignabledocumentview/typeselectequivalent(_:)-8ghrf.md)
   Sets an explicit type select equivalent text in a collection, such as a list or table.
@@ -1424,6 +1655,8 @@
   Sets the visibility of the baseplate of a volume, which appears when a user looks towards the ‘floor’ of a volume and during resize. Both `automatic` and `visible` will show the baseplate. `hidden` will never show it.
 - [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](assignabledocumentview/windowtoolbarfullscreenvisibility(_:).md)
   Configures the visibility of the window toolbar when the window enters full screen mode.
+- [func writingDirection(strategy: Text.WritingDirectionStrategy) -> some View](assignabledocumentview/writingdirection(strategy:).md)
+  A modifier for the default text writing direction strategy in the view hierarchy.
 - [func writingToolsAffordanceVisibility(Visibility) -> some View](assignabledocumentview/writingtoolsaffordancevisibility(_:).md)
   Specifies whether the system should show the Writing Tools affordance for text input views affected by the environment.
 - [func writingToolsBehavior(WritingToolsBehavior) -> some View](assignabledocumentview/writingtoolsbehavior(_:).md)

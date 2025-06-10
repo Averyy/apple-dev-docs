@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 ## Declaration

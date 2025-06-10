@@ -1,6 +1,6 @@
 # Distributing and updating a pass
 
-**Framework**: Walletpasses
+**Framework**: Wallet Passes
 
 Distribute a pass to your users or update an existing pass.
 
@@ -43,4 +43,4 @@ You can distribute a bundle of passes the same way you distribute a single pass.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WalletPasses/distributing-and-updating-a-pass)*
+*[View on Apple Developer](https://developer.apple.com/documentation/walletpasses/distributing-and-updating-a-pass)*

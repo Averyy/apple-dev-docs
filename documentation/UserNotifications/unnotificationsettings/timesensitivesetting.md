@@ -1,6 +1,6 @@
 # timeSensitiveSetting
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The setting that indicates the system treats the notification as time-sensitive.

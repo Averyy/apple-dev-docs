@@ -1,6 +1,6 @@
 # fileURL
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A file URL that represents the file-system location of the source code file.

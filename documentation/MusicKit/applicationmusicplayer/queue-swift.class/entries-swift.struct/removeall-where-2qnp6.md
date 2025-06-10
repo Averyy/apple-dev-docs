@@ -1,6 +1,6 @@
 # removeAll(where:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Removes all the elements that satisfy the given predicate.

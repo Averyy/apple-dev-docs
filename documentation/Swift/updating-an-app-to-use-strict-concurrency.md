@@ -55,10 +55,12 @@ Compare the original project to the updated project to see how it resolves the c
 
 ## See Also
 
+- [Code-along: Elevating an app with Swift concurrency](code-along-elevating-an-app-with-swift-concurrency.md)
+  Code along with the WWDC presenter to elevate a SwiftUI app with Swift concurrency.
 - [Updating an App to Use Swift Concurrency](updating_an_app_to_use_swift_concurrency.md)
   Improve your app’s performance by refactoring your code to take advantage of asynchronous functions in Swift.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/updating-an-app-to-use-strict-concurrency)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/updating-an-app-to-use-strict-concurrency)*

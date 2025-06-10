@@ -1,6 +1,6 @@
 # About WebDriver for Safari
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Enhance testing of your web content using Safari’s enhancements to WebDriver.
 

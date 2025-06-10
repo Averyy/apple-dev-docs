@@ -1,7 +1,8 @@
 # broadcastController(_:didFinishWithError:)
 
 **Framework**: ReplayKit  
-**Kind**: method
+**Kind**: method  
+**Required**: Yes
 
 Tells the delegate that a broadcast ended due to an error.
 

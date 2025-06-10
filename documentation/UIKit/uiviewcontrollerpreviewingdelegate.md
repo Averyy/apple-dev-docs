@@ -1,6 +1,6 @@
 # UIViewControllerPreviewingDelegate
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: protocol
 
 A set of methods used by the delegate to respond, with a preview view controller and a commit view controller, to the user pressing a view object on the screen of a device that supports 3D Touch.
@@ -56,4 +56,4 @@ To learn about 3D Touch, read [`Adopting 3D Touch on iPhone`](https://developer.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiviewcontrollerpreviewingdelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiviewcontrollerpreviewingdelegate)*

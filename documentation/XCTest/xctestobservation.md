@@ -1,6 +1,6 @@
 # XCTestObservation
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: protocol
 
 A protocol that defines methods the test runner calls in response to significant events during test runs.

@@ -1,6 +1,6 @@
 # Taking Advantage of Frontmost App State
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Understand the frontmost app state, and the features it provides to your app.
 
@@ -53,4 +53,4 @@ Workout, location, background audio, and audio-recording apps appear to behave s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/taking-advantage-of-frontmost-app-state)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/taking-advantage-of-frontmost-app-state)*

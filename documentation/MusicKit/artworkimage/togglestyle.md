@@ -1,6 +1,6 @@
 # toggleStyle(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Sets the style for toggles in a view hierarchy.

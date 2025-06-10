@@ -39,8 +39,6 @@ This method formats the value of the least granular unit in the [`NSDateComponen
 
 > ❗ **Important**:  This method only supports year, month, week of month, day, hour, minute, and second components. The formatter ignores all other date components.
 
- This method only supports year, month, week of month, day, hour, minute, and second components. The formatter ignores all other date components.
-
 ## Parameters
 
 - `dateComponents`: The date components to format.

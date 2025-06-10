@@ -1,6 +1,6 @@
 # uniqueIdentifier
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Unique identifier for the web extension context to which this data record belongs.

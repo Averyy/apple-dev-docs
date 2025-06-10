@@ -17,7 +17,6 @@ The number of columns in the tile map
 ## Declaration
 
 ```swift
-@MainActor
 var numberOfColumns: Int { get set }
 ```
 

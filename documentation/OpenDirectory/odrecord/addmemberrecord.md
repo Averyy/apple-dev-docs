@@ -1,6 +1,6 @@
 # addMemberRecord(_:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Adds a member record to this group record.

@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-Functionality that the conversation supports once the `Update` is applied.
+Functionality that the conversation supports after the system applies the update.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,15 @@ Functionality that the conversation supports once the `Update` is applied.
 ```swift
 var capabilities: Conversation.Capabilities?
 ```
+
+## See Also
+
+- [var activeRemoteMembers: Set<Handle>?](conversation/update/activeremotemembers.md)
+  All active remote participants.
+- [var localMember: Handle?](conversation/update/localmember.md)
+  The local participant in the conversation.
+- [var members: Set<Handle>?](conversation/update/members.md)
+  All participants of the conversation, including invited, but inactive remote participants.
 
 
 ---

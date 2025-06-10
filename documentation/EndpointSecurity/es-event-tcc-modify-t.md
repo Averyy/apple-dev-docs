@@ -1,6 +1,6 @@
 # es_event_tcc_modify_t
 
-**Framework**: Endpointsecurity  
+**Framework**: Endpoint Security  
 **Kind**: struct
 
 **Availability**:

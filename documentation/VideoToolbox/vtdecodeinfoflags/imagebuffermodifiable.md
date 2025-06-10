@@ -1,6 +1,6 @@
 # imageBufferModifiable
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 A flag that indicates the image buffer is safe to modify.

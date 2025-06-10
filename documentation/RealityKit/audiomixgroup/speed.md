@@ -1,6 +1,6 @@
 # speed
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: property
 
 The rate of playback for an audio mix group.
@@ -10,6 +10,7 @@ The rate of playback for an audio mix group.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

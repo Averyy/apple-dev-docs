@@ -1,6 +1,6 @@
 # environmentObject(_:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Supplies an observable object to a view’s hierarchy.

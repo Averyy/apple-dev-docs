@@ -18,8 +18,6 @@ When sending a sandbox-generated attestation object to your server, the verifica
 
 > ❗ **Important**: You can’t use a key or receipt from the sandbox environment in the production environment, or vice versa.
 
-You can’t use a key or receipt from the sandbox environment in the production environment, or vice versa.
-
 ##### Onboard Users Gradually
 
 If you have a large user base, consider enabling App Attest in stages. When your app calls [`attestKey(_:clientDataHash:completionHandler:)`](dcappattestservice/attestkey(_:clientdatahash:completionhandler:).md) — which you typically do once per user per device — the DeviceCheck framework makes a call to an Apple server to perform the attestation. Apple servers might throttle attestation traffic from a particular app to avoid becoming overwhelmed if too many instances of your app make this call simultaneously. That could happen if you have a lot of users that simultaneously receive an app update enabling App Attest.
@@ -27,8 +25,6 @@ If you have a large user base, consider enabling App Attest in stages. When your
 Instead, activate the feature for smaller groups of users over a period of time. As a rule of thumb, we suggest gradually and uniformly ramping up no more than 10 million users per day per app. After the initial rollout, your app makes requests only for new users, new devices, and reinstallations. This kind of traffic shouldn’t result in any throttling.
 
 > ❗ **Important**: To avoid encountering [`attestKey(_:clientDataHash:completionHandler:)`](dcappattestservice/attestkey(_:clientdatahash:completionhandler:).md) rate limits, we generally recommend that your apps call this method fewer than 100 request per second across all installations of your apps. The rate limit threshold may fluctuate dynamically to protect Apple’s certificate signing infrastructure. Be prepared to handle these errors and to have a mechanism to pull back on requests from your apps if this occurs.
-
-To avoid encountering [`attestKey(_:clientDataHash:completionHandler:)`](dcappattestservice/attestkey(_:clientdatahash:completionhandler:).md) rate limits, we generally recommend that your apps call this method fewer than 100 request per second across all installations of your apps. The rate limit threshold may fluctuate dynamically to protect Apple’s certificate signing infrastructure. Be prepared to handle these errors and to have a mechanism to pull back on requests from your apps if this occurs.
 
 ## See Also
 

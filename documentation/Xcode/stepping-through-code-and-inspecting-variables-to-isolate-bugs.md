@@ -114,8 +114,6 @@ Yummy Fruit: 9 items starting with Banana
 
 > 💡 **Tip**: Customize what the debugger shows for your objects by adding a debug description. In Swift, implement the `CustomDebugStringProtocol` for your object. For Objective-C objects that extend `NSObject`, override `debugDescription`.
 
-Customize what the debugger shows for your objects by adding a debug description. In Swift, implement the `CustomDebugStringProtocol` for your object. For Objective-C objects that extend `NSObject`, override `debugDescription`.
-
 Change the value of a variable in memory while you are debugging with either `p` or `po.`
 
 ```other

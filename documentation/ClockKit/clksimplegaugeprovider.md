@@ -1,6 +1,6 @@
 # CLKSimpleGaugeProvider
 
-**Framework**: Clockkit  
+**Framework**: ClockKit  
 **Kind**: class
 
 A gauge that shows a fractional value.
@@ -64,4 +64,4 @@ For time intervals, use the [`CLKTimeIntervalGaugeProvider`](clktimeintervalgaug
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/clksimplegaugeprovider)*
+*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/clksimplegaugeprovider)*

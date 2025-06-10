@@ -1,6 +1,6 @@
 # doubleTap()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a double-tap event at the coordinate.

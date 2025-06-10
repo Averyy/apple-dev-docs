@@ -20,8 +20,6 @@ enum Code
 
 > ❗ **Important**:  This enumeration is available in iOS 12.5, and in iOS 13.5 and later.
 
- This enumeration is available in iOS 12.5, and in iOS 13.5 and later.
-
 ## Topics
 
 ### Error Codes
@@ -70,6 +68,7 @@ enum Code
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # load(fromContents:ofType:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Loads the document data into the app’s data model.

@@ -1,6 +1,6 @@
 # NSCoreDataCoreSpotlightDelegate
 
-**Framework**: Coredata  
+**Framework**: Core Data  
 **Kind**: class
 
 A set of methods that enable integration with Core Spotlight.
@@ -77,4 +77,4 @@ class NSCoreDataCoreSpotlightDelegate
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/nscoredatacorespotlightdelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coredata/nscoredatacorespotlightdelegate)*

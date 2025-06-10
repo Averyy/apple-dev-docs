@@ -20,6 +20,7 @@ object AppAvailabilityV2Response
   The data structure that represents an app availability resource.
 - [object AppAvailabilityV2CreateRequest](appavailabilityv2createrequest.md)
   The request body you use to create an app availability.
+- [object AppAppAvailabilityV2LinkageResponse](appappavailabilityv2linkageresponse.md)
 - [object TerritoryAvailability](territoryavailability.md)
   The data structure that represents a territory availability resource.
 - [object TerritoryAvailabilitiesResponse](territoryavailabilitiesresponse.md)

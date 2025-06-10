@@ -37,10 +37,11 @@ struct EABluetoothAccessoryPickerError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [func showBluetoothAccessoryPicker(withNameFilter: NSPredicate?, completion: EABluetoothAccessoryPickerCompletion?)](eaaccessorymanager/showbluetoothaccessorypicker(withnamefilter:completion:).md)
+- [func showBluetoothAccessoryPicker(withNameFilter: NSPredicate?, completion: (((any Error)?) -> Void)?)](eaaccessorymanager/showbluetoothaccessorypicker(withnamefilter:completion:).md)
   Displays an alert that allows the user to pair the device with a Bluetooth accessory.
 - [typealias EABluetoothAccessoryPickerCompletion](eabluetoothaccessorypickercompletion.md)
   The completion block for the Bluetooth picker.

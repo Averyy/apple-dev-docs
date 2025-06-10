@@ -1,6 +1,6 @@
 # XCUIElement.SizeClass.unspecified
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents an element for the unspecified size class.

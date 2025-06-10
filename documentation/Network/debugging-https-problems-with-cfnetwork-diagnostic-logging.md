@@ -70,4 +70,4 @@ How you view the resulting log entries depends on your specific situation:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Network/debugging-https-problems-with-cfnetwork-diagnostic-logging)*
+*[View on Apple Developer](https://developer.apple.com/documentation/network/debugging-https-problems-with-cfnetwork-diagnostic-logging)*

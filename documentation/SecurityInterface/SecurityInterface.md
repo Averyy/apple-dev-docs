@@ -1,6 +1,6 @@
 # Security Interface
 
-**Framework**: Securityinterface  
+**Framework**: Security Interface  
 **Kind**: module
 
 Provide user interface elements for security features such as authorization, access to digital certificates, and access to items in keychains.

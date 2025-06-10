@@ -51,6 +51,7 @@ The `reversed()` method is always lazy when applied to a collection with bidirec
 - [LazySequenceProtocol](lazysequenceprotocol.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also
@@ -84,4 +85,4 @@ The `reversed()` method is always lazy when applied to a collection with bidirec
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/reversedcollection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/reversedcollection)*

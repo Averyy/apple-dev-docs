@@ -21,7 +21,7 @@ To configure the sample code project, perform the following steps in Xcode:
 
 1. Choose Xcode > Settings > Accounts, click the Add button (+), and add your Apple ID account.
 2. Select the project in the Project navigator, click the Signing & Capabilities pane, select the target, and assign your team to it. Optionally, enter a unique identifier in the Bundle Identifier text field. Otherwise, use the existing bundle ID that ends in your team ID.
-3. If necessary, add the Game Center capability (see [`Enabling and configuring Game Center`](enabling-and-configuring-game-center.md)).
+3. If necessary, add the Game Center capability (see [`Initializing and configuring Game Center`](initializing-and-configuring-game-center.md)).
 4. In App Store Connect, create an app record that matches the bundle ID (see [`Add a new app`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app) in App Store Connect Help).
 5. Add a classic leaderboard with `123` as the leaderboard ID, Integer as the score format type, Best Score as the score submission type, High to Low as the sort order, and `0` to `100` as the score range. Add one localization with an integer format. See [`Configure leaderboards`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-game-center/configure-leaderboards).
 6. Add an achievement with `1234` as the achievement ID, `100` as the point value, and No for the hidden option (see [`Configure achievements`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-game-center/configure-achievements)). Add one localization with an image.
@@ -30,9 +30,9 @@ To configure the sample code project, perform the following steps in Xcode:
 9. Build and run the sample on the two iOS devices.
 10. If the Welcome to Game Center sheet appears, sign in using a different Apple ID on each device.
 
-##### Authenticate the Player and Register for Real Time Events
+##### Initialize the Player and Register for Real Time Events
 
-Before using any GameKit APIs, the game needs to authenticate the local player by presenting an interface for them to sign in to Game Center on their device. The `RealTimeGame.authenticatePlayer()` method handles the authentication flow and, when complete, registers for real-time game events.
+Before using any GameKit APIs, the game needs to initialize the local player by presenting an interface for them to sign in to Game Center on their device. The `RealTimeGame.authenticatePlayer()` method handles the initialization flow and, when complete, registers for real-time game events.
 
 ```swift
 // Register for real-time invitations from other players.

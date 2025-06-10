@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: subscript
 
 Accesses the element at the specified position.

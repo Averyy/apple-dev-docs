@@ -1,6 +1,6 @@
 # BOT-anist
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 
@@ -269,7 +269,7 @@ entity.components.set(blendComponent)
 
 To make the robot customizable, the app combines three separate entities to build it. Each of the three bodies (walking, rolling, floating) is a skeletal mesh with its own unique set of animations. When the app enters the greenhouse mode, it combines the selected head and backpack, which are static meshes, with the animated entity for the selected body.
 
-When the player selects the Start Planting button, the app combines the three selected entities using the `RobotCharacter` class. That class’s initializer retrieves the transforms for the head and backpack joints using the [`pins`](https://developer.apple.com/documentation/RealityKit/Entity/pins) property on [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity). This property provides access to the entity’s [`GeometricPinsComponent`](https://developer.apple.com/documentation/RealityKit/GeometricPinsComponent), which stores a collection of transforms, each of which identifies a different location, orientation, and scale relative to the entity, but without the overhead of a separate child entity for each one. People can create pins, but RealityKit also automatically creates a collection of pins to represent the joints in a rigged model.
+When the player selects the Start Planting button, the app combines the three selected entities using the `RobotCharacter` class. That class’s initializer retrieves the transforms for the head and backpack joints using the doc://com.apple.documentation/documentation/realitykit/entity/pins property on [`Entity`](https://developer.apple.com/documentation/RealityKit/Entity). This property provides access to the entity’s [`GeometricPinsComponent`](https://developer.apple.com/documentation/RealityKit/GeometricPinsComponent), which stores a collection of transforms, each of which identifies a different location, orientation, and scale relative to the entity, but without the overhead of a separate child entity for each one. People can create pins, but RealityKit also automatically creates a collection of pins to represent the joints in a rigged model.
 
 After the player taps or clicks the button, the app retrieves the two geometric pins that represent the head and backpack joints in the body’s skeleton. Because skeleton joints are arranged in a hierarchy, with each joint inheriting its parent’s transform, the app retrieves the entire joint chain from the root joint to the backpack or head joint using a private function called `getJointHierarchy(_:for:)`.
 
@@ -354,4 +354,4 @@ component.headEntity.setScale(previousHeadScale, relativeTo: skeleton)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/bot-anist)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/bot-anist)*

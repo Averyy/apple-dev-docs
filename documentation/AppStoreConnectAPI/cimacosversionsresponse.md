@@ -20,6 +20,7 @@ object CiMacOsVersionsResponse
   The data structure that represents a macOS Versions resource.
 - [object CiMacOsVersionResponse](cimacosversionresponse.md)
   A response that contains a single macOS Versions resource.
+- [object CiMacOsVersionXcodeVersionsLinkagesResponse](cimacosversionxcodeversionslinkagesresponse.md)
 
 
 ---

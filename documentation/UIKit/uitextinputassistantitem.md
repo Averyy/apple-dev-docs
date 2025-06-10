@@ -1,6 +1,6 @@
 # UITextInputAssistantItem
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An object that manages custom bar button items that you add to the shortcuts bar above the keyboard on iPad.
@@ -78,4 +78,4 @@ To hide shortcuts altogether, set the [`leadingBarButtonGroups`](uitextinputassi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uitextinputassistantitem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uitextinputassistantitem)*

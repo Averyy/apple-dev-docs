@@ -20,14 +20,6 @@ Delete the alternative distribution search domain for an app.
   Read information for a specific alternative distribution domain.
 - [List alternative distribution domains](get-v1-alternativedistributiondomains.md)
   List all the alternative distribution domains for your account.
-- [Add a marketplace domain](post-v1-marketplacedomains.md)
-  Add an alternative marketplace domain to your account.
-- [Read marketplace domain information](get-v1-marketplacedomains-_id_.md)
-  Read information for a specific alternative marketplace domain.
-- [List marketplace domains](get-v1-marketplacedomains.md)
-  List all the alternative marketplace domains for your account.
-- [Delete a marketplace domain](delete-v1-marketplacedomains-_id_.md)
-  Delete the alternative marketplace search domain for an app.
 
 
 ---

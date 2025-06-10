@@ -1,6 +1,6 @@
 # nickname
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A nickname.

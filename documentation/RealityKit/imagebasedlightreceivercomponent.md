@@ -8,6 +8,7 @@
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -18,16 +19,10 @@ struct ImageBasedLightReceiverComponent
 
 ## Topics
 
-### Operators
-- [static func == (ImageBasedLightReceiverComponent, ImageBasedLightReceiverComponent) -> Bool](imagebasedlightreceivercomponent/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(imageBasedLight: Entity)](imagebasedlightreceivercomponent/init(imagebasedlight:).md)
 ### Instance Properties
 - [var imageBasedLight: Entity](imagebasedlightreceivercomponent/imagebasedlight.md)
-### Default Implementations
-- [Component Implementations](imagebasedlightreceivercomponent/component-implementations.md)
-- [Equatable Implementations](imagebasedlightreceivercomponent/equatable-implementations.md)
 
 ## Relationships
 

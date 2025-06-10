@@ -39,6 +39,7 @@ struct MinMaxScaler<Element> where Element : BinaryFloatingPoint, Element : Deco
 ### Conforms To
 - [Estimator](estimator.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

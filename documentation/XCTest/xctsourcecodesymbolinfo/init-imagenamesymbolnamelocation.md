@@ -1,6 +1,6 @@
 # init(imageName:symbolName:location:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Initializes an instance with a binary image name, source code location, and symbol name.

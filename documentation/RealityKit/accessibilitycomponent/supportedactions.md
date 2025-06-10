@@ -10,6 +10,7 @@ A custom action that can be invoked on an entity in response to specific user cu
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -20,19 +21,6 @@ struct SupportedActions
 
 ## Topics
 
-### Initializers
-- [init(rawValue: Int)](accessibilitycomponent/supportedactions/init(rawvalue:).md)
-  Creates a new option set from the given raw value.
-### Instance Properties
-- [let rawValue: Int](accessibilitycomponent/supportedactions/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-### Type Aliases
-- [AccessibilityComponent.SupportedActions.ArrayLiteralElement](accessibilitycomponent/supportedactions/arrayliteralelement.md)
-  The type of the elements of an array literal.
-- [AccessibilityComponent.SupportedActions.Element](accessibilitycomponent/supportedactions/element.md)
-  The element type of the option set.
-- [AccessibilityComponent.SupportedActions.RawValue](accessibilitycomponent/supportedactions/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
 ### Type Properties
 - [static let activate: AccessibilityComponent.SupportedActions](accessibilitycomponent/supportedactions/activate.md)
   Tells the entity to activate itself.
@@ -40,10 +28,6 @@ struct SupportedActions
   Tells the entity to decrement the value of its content.
 - [static let increment: AccessibilityComponent.SupportedActions](accessibilitycomponent/supportedactions/increment.md)
   Tells the entity to increment the value of its content.
-### Default Implementations
-- [Equatable Implementations](accessibilitycomponent/supportedactions/equatable-implementations.md)
-- [OptionSet Implementations](accessibilitycomponent/supportedactions/optionset-implementations.md)
-- [SetAlgebra Implementations](accessibilitycomponent/supportedactions/setalgebra-implementations.md)
 
 ## Relationships
 

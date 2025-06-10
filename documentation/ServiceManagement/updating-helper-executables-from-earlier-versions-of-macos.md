@@ -33,8 +33,6 @@ In apps that target macOS 13 and later, your app needs to only use the property 
 
 > ❗ **Important**:  Tell users the purpose of the helper executables your app includes. If your app can’t run or operate correctly without helper executables, check the authorization status at launch. If helper executables don’t have authorization, alert the user, and call [`openSystemSettingsLoginItems()`](smappservice/opensystemsettingsloginitems().md) to suggest that they update the System Settings.
 
- Tell users the purpose of the helper executables your app includes. If your app can’t run or operate correctly without helper executables, check the authorization status at launch. If helper executables don’t have authorization, alert the user, and call [`openSystemSettingsLoginItems()`](smappservice/opensystemsettingsloginitems().md) to suggest that they update the System Settings.
-
 ##### Connect Services to App Names in System Settings
 
 Every app that supports a `LoginItem`, `LaunchAgent`, or `LaunchDaemon` has a corresponding switch in the Login Items panel in System Settings. The user can use this switch to allow the corresponding executables to run when they log in, or in the case of a `LaunchDaemon`, when the system starts up.
@@ -44,8 +42,6 @@ Every app that supports a `LoginItem`, `LaunchAgent`, or `LaunchDaemon` has a co
 `LaunchAgents` and `LaunchDaemons` that aren’t using the app bundle can adopt the new `AssociatedBundleIdentifiers` key in their `launchd` property list. This optional key indicates which bundles the Login Items panel associates with the helper executable. If an app installs a legacy property list, the property list needs to include the `AssociatedBundleIdentifiers` key with a value of the app’s bundle identifier.
 
 > ❗ **Important**:  The Team Identifier of the `Program` or `ProgramArguments` executable in the legacy property list must match that of the app bundle for the `AssociatedBundleIdentifiers` key. Launch Services needs to know about the apps that the `AssociatedBundleIdentifiers` key targets. If necessary, register the app using [`LSRegisterURL(_:_:)`](https://developer.apple.com/documentation/coreservices/1446350-lsregisterurl).
-
- The Team Identifier of the `Program` or `ProgramArguments` executable in the legacy property list must match that of the app bundle for the `AssociatedBundleIdentifiers` key. Launch Services needs to know about the apps that the `AssociatedBundleIdentifiers` key targets. If necessary, register the app using [`LSRegisterURL(_:_:)`](https://developer.apple.com/documentation/coreservices/1446350-lsregisterurl).
 
 If a legacy `LaunchAgent` or `LaunchDaemon` doesn’t have the `AssociatedBundleIdentifiers` key in its property list, instead of the app name, System Settings displays the organization name in the app’s signing certificate.
 

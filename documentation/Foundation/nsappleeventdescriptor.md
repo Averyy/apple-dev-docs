@@ -23,8 +23,6 @@ A  is a data structure that stores data and an accompanying four-character code.
 
 > ❗ **Important**:  An instance of `NSAppleEventDescriptor` can represent any kind of descriptor, from a simple value descriptor, to a descriptor list, to a full-fledged Apple event.
 
- An instance of `NSAppleEventDescriptor` can represent any kind of descriptor, from a simple value descriptor, to a descriptor list, to a full-fledged Apple event.
-
 Descriptors can be used to build arbitrarily complex containers, so that one Apple event can represent a script statement such as `tell application "TextEdit" to get word 3 of paragraph 6 of document 3`.
 
 In working with Apple event descriptors, it can be useful to understand some of the underlying data types. You’ll find terms such as descriptor, descriptor list, Apple event record, and Apple event defined in Building an Apple Event in Apple Events Programming Guide. You’ll also find information on the four-character codes used to identify information within a descriptor. Apple event data types are defined in [`Apple Event Manager`](https://developer.apple.com/documentation/applicationservices/apple_event_manager). The values of many four-character codes used by Apple (and in some cases reused by developers) can be found in [`AppleScript Terminology and Apple Event Codes`](https://developer.apple.comhttp://developer.apple.com/releasenotes/AppleScript/ASTerminology_AppleEventCodes/TermsAndCodes.html).

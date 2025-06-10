@@ -63,18 +63,23 @@ For information about the language-level concurrency model that `DiscardingTaskG
   A Boolean value that indicates whether the group has any remaining tasks.
 ### Instance Methods
 - [func addTask(executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Void)](discardingtaskgroup/addtask(executorpreference:priority:operation:).md)
-  Adds a child task to the group and enqueue it on the specified executor.
-- [func addTask(operation: sending () async -> Void)](discardingtaskgroup/addtask(operation:).md)
+  Adds a child task to the group.
+- [func addTask(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Void)](discardingtaskgroup/addtask(name:executorpreference:priority:operation:).md)
+  Adds a child task to the group.
 - [func addTask(priority: TaskPriority?, operation: sending () async -> Void)](discardingtaskgroup/addtask(priority:operation:).md)
   Adds a child task to the group.
 - [func addTaskUnlessCancelled(executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Void) -> Bool](discardingtaskgroup/addtaskunlesscancelled(executorpreference:priority:operation:).md)
-  Adds a child task to the group and set it up with the passed in task executor preference, unless the group has been canceled.
-- [func addTaskUnlessCancelled(operation: sending () async -> Void) -> Bool](discardingtaskgroup/addtaskunlesscancelled(operation:).md)
-  Adds a child task to the group, unless the group has been canceled.
+  Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
+- [func addTaskUnlessCancelled(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Void) -> Bool](discardingtaskgroup/addtaskunlesscancelled(name:executorpreference:priority:operation:).md)
+  Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
 - [func addTaskUnlessCancelled(priority: TaskPriority?, operation: sending () async -> Void) -> Bool](discardingtaskgroup/addtaskunlesscancelled(priority:operation:).md)
-  Adds a child task to the group, unless the group has been canceled.
+  Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
 - [func cancelAll()](discardingtaskgroup/cancelall.md)
   Cancel all of the remaining tasks in the group.
+- [func startTaskSynchronously(name: String?, priority: TaskPriority?, operation: sending () async -> Void)](discardingtaskgroup/starttasksynchronously(name:priority:operation:).md)
+  Create and immediately start running a new child task in the context of the calling thread/task.
+- [func startTaskSynchronouslyUnlessCancelled(name: String?, priority: TaskPriority?, operation: sending () async -> Void)](discardingtaskgroup/starttasksynchronouslyunlesscancelled(name:priority:operation:).md)
+  Create and immediately start running a new child task in the context of the calling thread/task.
 
 ## Relationships
 
@@ -90,6 +95,10 @@ For information about the language-level concurrency model that `DiscardingTaskG
   A group that contains dynamically created child tasks.
 - [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](withtaskgroup(of:returning:isolation:body:).md)
   Starts a new scope that can contain a dynamic number of child tasks.
+- [macro Task(name: String?, priority: TaskPriority?)](task(name:priority:).md)
+  Wrap the function body in a new top-level task on behalf of the current actor.
+- [macro Task(on: any GlobalActor, name: String?, priority: TaskPriority?)](task(on:name:priority:).md)
+  Wrap the function body in a new top-level task on behalf of the given actor.
 - [struct ThrowingTaskGroup](throwingtaskgroup.md)
   A group that contains throwing, dynamically created child tasks.
 - [func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingTaskGroup<ChildTaskResult, any Error>) async throws -> GroupResult) async rethrows -> GroupResult](withthrowingtaskgroup(of:returning:isolation:body:).md)
@@ -108,4 +117,4 @@ For information about the language-level concurrency model that `DiscardingTaskG
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/discardingtaskgroup)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/discardingtaskgroup)*

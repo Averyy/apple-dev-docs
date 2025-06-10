@@ -113,4 +113,4 @@ If the credential is refused, the system calls your delegate method again. When 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/handling-an-authentication-challenge)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/handling-an-authentication-challenge)*

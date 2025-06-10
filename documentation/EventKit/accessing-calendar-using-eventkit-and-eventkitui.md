@@ -1,6 +1,6 @@
 # Accessing Calendar using EventKit and EventKitUI
 
-**Framework**: Eventkit
+**Framework**: EventKit
 
 Choose and implement the appropriate Calendar access level in your app.
 
@@ -241,4 +241,4 @@ EKEventStore.authorizationStatus(for: .event) == .authorized
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/EventKit/accessing-calendar-using-eventkit-and-eventkitui)*
+*[View on Apple Developer](https://developer.apple.com/documentation/eventkit/accessing-calendar-using-eventkit-and-eventkitui)*

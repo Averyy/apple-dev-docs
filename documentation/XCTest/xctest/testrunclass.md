@@ -1,6 +1,6 @@
 # testRunClass
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The test run subclass to instantiate when the test runs, which records the test’s results.

@@ -24,8 +24,6 @@ When you enable this setting, a dual-camera device automatically combines sample
 
 > 💡 **Tip**:  Image processing, including dual camera fusion, increases capture time. To capture photos at the highest possible speed (like in the built-in Camera app’s burst mode), set the [`isAutoDualCameraFusionEnabled`](avcapturephotosettings/isautodualcamerafusionenabled.md) and [`isAutoStillImageStabilizationEnabled`](avcapturephotosettings/isautostillimagestabilizationenabled.md) properties to [`false`](https://developer.apple.com/documentation/swift/false) and the [`flashMode`](avcapturephotosettings/flashmode.md) property to [`AVCaptureDevice.FlashMode.off`](avcapturedevice/flashmode-swift.enum/off.md).
 
- Image processing, including dual camera fusion, increases capture time. To capture photos at the highest possible speed (like in the built-in Camera app’s burst mode), set the [`isAutoDualCameraFusionEnabled`](avcapturephotosettings/isautodualcamerafusionenabled.md) and [`isAutoStillImageStabilizationEnabled`](avcapturephotosettings/isautostillimagestabilizationenabled.md) properties to [`false`](https://developer.apple.com/documentation/swift/false) and the [`flashMode`](avcapturephotosettings/flashmode.md) property to [`AVCaptureDevice.FlashMode.off`](avcapturedevice/flashmode-swift.enum/off.md).
-
 ## See Also
 
 - [var flashMode: AVCaptureDevice.FlashMode](avcapturephotosettings/flashmode.md)

@@ -12,10 +12,6 @@ Use a document browser view controller as the root of your app’s view hierarch
 
 > ❗ **Important**:  Always assign the document browser as your app’s root view controller. Don’t place the document browser in a navigation controller, tab bar, or split view, and don’t present the document browser modally. If you want to present a document browser from another location in your view hierarchy, use a [`UIDocumentPickerViewController`](uidocumentpickerviewcontroller.md) instead.
 
- Always assign the document browser as your app’s root view controller. Don’t place the document browser in a navigation controller, tab bar, or split view, and don’t present the document browser modally.
-
-If you want to present a document browser from another location in your view hierarchy, use a [`UIDocumentPickerViewController`](uidocumentpickerviewcontroller.md) instead.
-
 The browser automatically gives users the option to share documents using the Share button or a drag-and-drop action. It also provides a standard interface for browsing and managing documents.
 
 You set the type of documents that the user can select when the browser is first created. You can also set the browser’s appearance, modify its behaviors, and add custom actions.

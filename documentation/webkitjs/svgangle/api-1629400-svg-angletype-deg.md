@@ -1,6 +1,6 @@
 # SVG_ANGLETYPE_DEG
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

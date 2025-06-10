@@ -1,6 +1,6 @@
 # Keeping your watchOS content up to date
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Ensure that your app’s content is relevant and up to date.
 

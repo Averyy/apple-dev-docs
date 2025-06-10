@@ -1,6 +1,6 @@
 # Create an Introductory Offer
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 Create an introductory offer for an auto-renewable subscription.
@@ -22,4 +22,4 @@ Create an introductory offer for an auto-renewable subscription.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v1-subscriptionintroductoryoffers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-subscriptionintroductoryoffers)*

@@ -29,8 +29,6 @@ This method queries the App Store server to refresh the app transaction informat
 
 > ❗ **Important**:  Calling [`refresh()`](apptransaction/refresh().md) displays a system prompt that asks users to authenticate with their App Store credentials. Call this function only in response to an explicit user action, like tapping or clicking a button.
 
- Calling [`refresh()`](apptransaction/refresh().md) displays a system prompt that asks users to authenticate with their App Store credentials. Call this function only in response to an explicit user action, like tapping or clicking a button.
-
 Use this method to get an [`AppTransaction`](apptransaction.md) in the following cases:
 
 - The [`shared`](apptransaction/shared.md) property throws an error.

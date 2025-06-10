@@ -26,8 +26,6 @@ You use this method to provide an appropriate response when another object wants
 
 > ❗ **Important**:  If you implement this method, you must execute the block in the `reader` parameter as part of your implementation. The system waits for you to execute that block before allowing the `reader` to operate on the file. Therefore, failure to execute the block could stall threads in your application or other processes until the user takes corrective actions.
 
- If you implement this method, you must execute the block in the `reader` parameter as part of your implementation. The system waits for you to execute that block before allowing the `reader` to operate on the file. Therefore, failure to execute the block could stall threads in your application or other processes until the user takes corrective actions.
-
 The following listing shows a simple implementation of this method that sets a Boolean flag that the file being monitored is not writable at the moment. After setting the flag, it executes the reader block and passes in yet another block for the reader to execute when it is done.
 
 ```objc

@@ -25,8 +25,6 @@ This method modifies the visible drawing area of the current graphics context. A
 
 > ❗ **Important**:  If you need to remove the clipping region to perform subsequent drawing operations, you must save the current graphics state (using the [`saveGState()`](https://developer.apple.com/documentation/CoreGraphics/CGContext/saveGState()) function) before calling this method. When you no longer need the clipping region, you can then restore the previous drawing properties and clipping region using the [`restoreGState()`](https://developer.apple.com/documentation/CoreGraphics/CGContext/restoreGState()) function.
 
- If you need to remove the clipping region to perform subsequent drawing operations, you must save the current graphics state (using the [`saveGState()`](https://developer.apple.com/documentation/CoreGraphics/CGContext/saveGState()) function) before calling this method. When you no longer need the clipping region, you can then restore the previous drawing properties and clipping region using the [`restoreGState()`](https://developer.apple.com/documentation/CoreGraphics/CGContext/restoreGState()) function.
-
 The [`usesEvenOddFillRule`](uibezierpath/usesevenoddfillrule.md) property is used to determine whether the even-odd or non-zero rule is used to determine the area enclosed by the path.
 
 

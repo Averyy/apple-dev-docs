@@ -29,10 +29,10 @@ class MTRClusterLowPower
 - [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterlowpower/readattributeclusterrevision(with:).md)
 - [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterlowpower/readattributefeaturemap(with:).md)
 - [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterlowpower/readattributegeneratedcommandlist(with:).md)
-- [func sleep(with: MTRLowPowerClusterSleepParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterlowpower/sleep(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func sleep(with: MTRLowPowerClusterSleepParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: MTRStatusCompletion)](mtrclusterlowpower/sleep(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func sleep(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclusterlowpower/sleep(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func sleep(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: MTRStatusCompletion)](mtrclusterlowpower/sleep(withexpectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func sleep(with: MTRLowPowerClusterSleepParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterlowpower/sleep(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func sleep(with: MTRLowPowerClusterSleepParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterlowpower/sleep(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func sleep(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterlowpower/sleep(withexpectedvalues:expectedvalueinterval:completion:).md)
+- [func sleep(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclusterlowpower/sleep(withexpectedvalues:expectedvalueinterval:completionhandler:).md)
 
 ## Relationships
 

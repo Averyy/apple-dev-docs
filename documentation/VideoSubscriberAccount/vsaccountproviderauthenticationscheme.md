@@ -1,6 +1,6 @@
 # VSAccountProviderAuthenticationScheme
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: struct
 
 Authentication schemes for account provider requests and responses.
@@ -59,6 +59,7 @@ The following table shows the raw strings for the [`VSAccountProviderAuthenticat
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

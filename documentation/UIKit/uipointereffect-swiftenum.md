@@ -46,6 +46,7 @@ enum UIPointerEffect
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIHoverEffect](uihovereffect-40091.md)
 
 ## See Also

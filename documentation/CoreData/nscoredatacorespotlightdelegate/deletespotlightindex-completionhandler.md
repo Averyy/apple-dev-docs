@@ -1,6 +1,6 @@
 # deleteSpotlightIndex(completionHandler:)
 
-**Framework**: Coredata  
+**Framework**: Core Data  
 **Kind**: method
 
 Deletes all searchable items from the configured index.

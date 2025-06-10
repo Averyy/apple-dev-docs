@@ -1,6 +1,6 @@
 # DOM_IMPORT_RULE
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

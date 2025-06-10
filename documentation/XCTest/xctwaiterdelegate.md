@@ -1,6 +1,6 @@
 # XCTWaiterDelegate
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: protocol
 
 Defines methods that are called when [`XCTWaiter`](xctwaiter.md) expectations are fulfilled correctly or incorrectly.

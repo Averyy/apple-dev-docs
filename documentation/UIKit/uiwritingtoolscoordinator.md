@@ -1,6 +1,6 @@
 # UIWritingToolsCoordinator
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An object that manages interactions between Writing Tools and your custom text view.
@@ -80,6 +80,8 @@ When defining the delegate, choose an object from your app that has access to yo
   Options that indicate whether Writing Tools is animating changes to your view’s text.
 - [UIWritingToolsCoordinator.TextAnimation](uiwritingtoolscoordinator/textanimation.md)
   The types of animations that Writing Tools performs during an interactive update of your view.
+### Instance Properties
+- [var includesTextListMarkers: Bool](uiwritingtoolscoordinator/includestextlistmarkers.md)
 
 ## Relationships
 
@@ -109,4 +111,4 @@ When defining the delegate, choose an object from your app that has access to yo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiwritingtoolscoordinator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiwritingtoolscoordinator)*

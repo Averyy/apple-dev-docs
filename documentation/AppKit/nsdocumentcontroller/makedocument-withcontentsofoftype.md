@@ -1,6 +1,6 @@
 # makeDocument(withContentsOf:ofType:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Instantiates a document located by a URL, of a specified type, and returns it if successful.

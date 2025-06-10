@@ -1,6 +1,6 @@
 # Testing Exposure Notifications Apps in iOS 13.7 and Later
 
-**Framework**: Exposurenotification
+**Framework**: Exposure Notification
 
 Perform end-to-end validation of Exposure Notifications apps on a device by manually loading configuration files.
 
@@ -135,4 +135,4 @@ Navigate back to the top level of the Settings app and tap Exposure Notification
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/testing-exposure-notifications-apps-in-ios-13-7-and-later)*
+*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/testing-exposure-notifications-apps-in-ios-13-7-and-later)*

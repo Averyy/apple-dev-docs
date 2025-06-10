@@ -27,6 +27,9 @@ You can use the delegate object to track changes to the items in the tab bar and
 
 - [protocol UITabBarControllerDelegate](uitabbarcontrollerdelegate.md)
   A set of methods you implement to customize the behavior of a tab bar.
+- [var tabBarMinimizeBehavior: UITabBarController.MinimizeBehavior](uitabbarcontroller/tabbarminimizebehavior.md)
+  Defines the minimize behavior for the tab bar, if it is supported.
+- [UITabBarController.MinimizeBehavior](uitabbarcontroller/minimizebehavior.md)
 
 
 ---

@@ -59,6 +59,7 @@ The result of this transformer is equivalent to invoking `outer(inner(x))` on an
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TabularTransformer](tabulartransformer.md)
 - [Transformer](transformer.md)
 

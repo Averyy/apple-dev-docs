@@ -25,9 +25,7 @@ When you change this value to [`true`](https://developer.apple.com/documentation
 
 By default, this property resets to [`false`](https://developer.apple.com/documentation/swift/false) when the [`AVCaptureSession`](avcapturesession.md) stops. You can prevent this behavior by setting [`preservesLivePhotoCaptureSuspendedOnSessionStop`](avcapturephotooutput/preserveslivephotocapturesuspendedonsessionstop.md) to [`true`](https://developer.apple.com/documentation/swift/true) before stopping the session.
 
-> ❗ **Important**:  Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) if the [`isLivePhotoCaptureEnabled`](avcapturephotooutput/islivephotocaptureenabled.md) property’s value is [`false`](https://developer.apple.com/documentation/swift/false).
-
- Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) if the [`isLivePhotoCaptureEnabled`](avcapturephotooutput/islivephotocaptureenabled.md) property’s value is [`false`](https://developer.apple.com/documentation/swift/false).
+> ❗ **Important**:  Setting this property to [`true`](https://developer.apple.com/documentation/swift/true) throws an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) if the [`isLivePhotoCaptureEnabled`](avcapturephotooutput/islivephotocaptureenabled.md) property’s value is [`false`](https://developer.apple.com/documentation/swift/false).
 
 ## See Also
 

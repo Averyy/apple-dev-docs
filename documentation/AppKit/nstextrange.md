@@ -16,7 +16,7 @@ class NSTextRange
 
 #### Overview
 
-An `NSTextRange` consists of the starting and terminating locations. There the two basic properties: `location` and `endLocation`, respectively. The terminating `location`, `endLocation`, is directly following the last location in the range. For example, a location contains a range if `(range.location <= location) && (location < range.endLocation)` is `true`.
+An `NSTextRange` consists of the starting and terminating locations. There the two basic properties: [`location`](nstextrange/location.md) and [`endLocation`](nstextrange/endlocation.md), respectively. The terminating [`location`](nstextrange/location.md), [`endLocation`](nstextrange/endlocation.md), is directly following the last location in the range. For example, a location contains a range if `(range.location <= location) && (location < range.endLocation)` is `true`.
 
 ## Topics
 
@@ -27,9 +27,9 @@ An `NSTextRange` consists of the starting and terminating locations. There the t
   Creates a new text range with the starting and ending locations you specify.
 ### Characteristics of the text range
 - [var location: any NSTextLocation](nstextrange/location.md)
-  Returns the starting location of the text range.
+  The starting location of the text range.
 - [var endLocation: any NSTextLocation](nstextrange/endlocation.md)
-  Returns the ending location of the text range.
+  The ending location of the text range.
 - [var isEmpty: Bool](nstextrange/isempty.md)
   Returns whether the text range is empty.
 ### Comparing text ranges

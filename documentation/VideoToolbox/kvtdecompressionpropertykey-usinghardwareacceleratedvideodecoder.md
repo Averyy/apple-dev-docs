@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_UsingHardwareAcceleratedVideoDecoder
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Indicates if a hardware-accelerated video decoder is being used.

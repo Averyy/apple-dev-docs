@@ -26,7 +26,7 @@ class func isPictureInPictureSupported() -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the current device supports Picture in Picture playback, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+`true` if the current device supports Picture in Picture playback, otherwise `false`.
 
 #### Discussion
 

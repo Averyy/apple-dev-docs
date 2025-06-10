@@ -31,6 +31,8 @@ enum ParticipantRole
   The participant has the public role.
 - [CKShare.ParticipantRole.unknown](ckshare/participantrole/unknown.md)
   The participant’s role is unknown.
+### Enumeration Cases
+- [CKShare.ParticipantRole.administrator](ckshare/participantrole/administrator.md)
 ### Initializers
 - [init?(rawValue: Int)](ckshare/participantrole/init(rawvalue:).md)
 
@@ -42,6 +44,7 @@ enum ParticipantRole
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

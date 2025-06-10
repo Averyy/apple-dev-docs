@@ -1,6 +1,6 @@
 # Synchronizing data during a SharePlay activity
 
-**Framework**: Groupactivities
+**Framework**: Group Activities
 
 Send custom messages and data between devices to synchronize content for your activity, and incorporate messages your app receives from other participants.
 
@@ -119,4 +119,4 @@ For more information about storing files and data attachments, see [`GroupSessio
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GroupActivities/synchronizing-data-during-a-shareplay-activity)*
+*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/synchronizing-data-during-a-shareplay-activity)*

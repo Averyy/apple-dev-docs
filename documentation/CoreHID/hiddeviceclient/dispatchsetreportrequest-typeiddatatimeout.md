@@ -1,6 +1,6 @@
 # dispatchSetReportRequest(type:id:data:timeout:)
 
-**Framework**: Corehid  
+**Framework**: Core HID  
 **Kind**: method
 
 Send a set report request to the device over the transport.

@@ -1,6 +1,6 @@
 # NIAlgorithmConvergenceStatus
 
-**Framework**: Nearbyinteraction  
+**Framework**: Nearby Interaction  
 **Kind**: enum
 
 The possible states of Camera Assistance.
@@ -65,4 +65,4 @@ The framework may require user action before Camera Assistance is fully operatio
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/NearbyInteraction/nialgorithmconvergencestatus-2fnve)*
+*[View on Apple Developer](https://developer.apple.com/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fnve)*

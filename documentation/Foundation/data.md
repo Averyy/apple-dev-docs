@@ -242,6 +242,7 @@ The [`Data`](data.md) value type allows simple byte buffers to take on the behav
 ### Subscripts
 - [subscript<R>(R) -> Data](data/subscript(_:)-59z5z.md)
 ### Default Implementations
+- [Attachable Implementations](data/attachable-implementations.md)
 - [BidirectionalCollection Implementations](data/bidirectionalcollection-implementations.md)
 - [Collection Implementations](data/collection-implementations.md)
 - [CustomDebugStringConvertible Implementations](data/customdebugstringconvertible-implementations.md)
@@ -258,6 +259,7 @@ The [`Data`](data.md) value type allows simple byte buffers to take on the behav
 ## Relationships
 
 ### Conforms To
+- [Attachable](../Testing/Attachable.md)
 - [BidirectionalCollection](../Swift/BidirectionalCollection.md)
 - [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
 - [Collection](../Swift/Collection.md)
@@ -277,6 +279,7 @@ The [`Data`](data.md) value type allows simple byte buffers to take on the behav
 - [RangeReplaceableCollection](../Swift/RangeReplaceableCollection.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 - [Transferable](../CoreTransferable/Transferable.md)
 

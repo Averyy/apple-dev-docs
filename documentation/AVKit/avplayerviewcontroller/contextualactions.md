@@ -1,6 +1,6 @@
 # contextualActions
 
-**Framework**: Avkit  
+**Framework**: AVKit  
 **Kind**: property
 
 An array of action controls to present contextually during playback.
@@ -53,4 +53,4 @@ For details about observing player timing, see `Observing the Playback Time`.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/avplayerviewcontroller/contextualactions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/avplayerviewcontroller/contextualactions)*

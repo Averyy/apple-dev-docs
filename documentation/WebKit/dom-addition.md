@@ -1,6 +1,6 @@
 # DOM_ADDITION
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

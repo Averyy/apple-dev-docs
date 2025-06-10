@@ -1,6 +1,6 @@
 # XCUIRemoteButton.up
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents the up button on a remote.

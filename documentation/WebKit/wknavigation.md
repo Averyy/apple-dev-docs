@@ -1,6 +1,6 @@
 # WKNavigation
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that tracks the loading progress of a webpage.

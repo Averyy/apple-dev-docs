@@ -16,7 +16,7 @@ An interface that represents a GPU pipeline configuration for running kernels in
 ## Declaration
 
 ```swift
-protocol MTLComputePipelineState : NSObjectProtocol
+protocol MTLComputePipelineState : MTLAllocation, Sendable
 ```
 
 ## Mentions
@@ -56,7 +56,7 @@ To create a pipeline state, call the appropriate [`MTLDevice`](mtldevice.md) met
 - [var shaderValidation: MTLShaderValidation](mtlcomputepipelinestate/shadervalidation.md)
   The current state of shader validation for the pipeline.
 ### Creating Function Handles
-- [func functionHandle(function: any MTLFunction) -> (any MTLFunctionHandle)?](mtlcomputepipelinestate/functionhandle(function:).md)
+- [func functionHandle(function: any MTLFunction) -> (any MTLFunctionHandle)?](mtlcomputepipelinestate/functionhandle(function:)-7d523.md)
   Creates a function handle for a visible function.
 ### Adding Visible Functions
 - [func makeComputePipelineStateWithAdditionalBinaryFunctions(functions: [any MTLFunction]) throws -> any MTLComputePipelineState](mtlcomputepipelinestate/makecomputepipelinestatewithadditionalbinaryfunctions(functions:).md)
@@ -66,14 +66,30 @@ To create a pipeline state, call the appropriate [`MTLDevice`](mtldevice.md) met
   Creates a new visible function table.
 - [func makeIntersectionFunctionTable(descriptor: MTLIntersectionFunctionTableDescriptor) -> (any MTLIntersectionFunctionTable)?](mtlcomputepipelinestate/makeintersectionfunctiontable(descriptor:).md)
   Creates a new intersection function table.
+### Instance Properties
+- [var reflection: MTLComputePipelineReflection?](mtlcomputepipelinestate/reflection.md)
+  Provides access to this compute pipeline’s reflection.
+- [var requiredThreadsPerThreadgroup: MTLSize](mtlcomputepipelinestate/requiredthreadsperthreadgroup.md)
+### Instance Methods
+- [func functionHandle(function: any MTL4BinaryFunction) -> (any MTLFunctionHandle)?](mtlcomputepipelinestate/functionhandle(function:)-8spaa.md)
+  Gets the function handle for a function this pipeline links at the binary level.
+- [func functionHandle(withName: String) -> (any MTLFunctionHandle)?](mtlcomputepipelinestate/functionhandle(withname:).md)
+  Gets the function handle for a function this pipeline links at the Metal IR level by name.
+- [func makeComputePipelineState(additionalBinaryFunctions: [any MTL4BinaryFunction]) throws -> any MTLComputePipelineState](mtlcomputepipelinestate/makecomputepipelinestate(additionalbinaryfunctions:).md)
+  Allocates a new compute pipeline state by adding binary functions to this pipeline state.
 
 ## Relationships
 
 ### Inherits From
+- [MTLAllocation](mtlallocation.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [class MTL4ComputePipelineDescriptor](mtl4computepipelinedescriptor.md)
+  Descriptor defining how a compute pipeline state would be created.
 - [class MTLComputePipelineDescriptor](mtlcomputepipelinedescriptor.md)
   An instance describing the desired GPU state for a kernel call in a compute pass.
 - [class MTLStageInputOutputDescriptor](mtlstageinputoutputdescriptor.md)

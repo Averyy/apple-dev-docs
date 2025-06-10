@@ -105,4 +105,4 @@ Carthage is an open source dependency manager for Apple platforms. However, the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/making-dependencies-available-to-xcode-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/making-dependencies-available-to-xcode-cloud)*

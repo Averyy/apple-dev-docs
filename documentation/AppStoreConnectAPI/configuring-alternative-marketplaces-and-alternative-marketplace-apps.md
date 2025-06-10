@@ -1,6 +1,6 @@
 # Configuring alternative marketplaces and alternative marketplace apps
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Establish a connection between a marketplace and a marketplace app and configure marketplace settings.
 
@@ -48,4 +48,4 @@ Next, you need to obtain the alternative distribution package ID; follow these s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/configuring-alternative-marketplaces-and-alternative-marketplace-apps)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/configuring-alternative-marketplaces-and-alternative-marketplace-apps)*

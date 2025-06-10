@@ -1,6 +1,6 @@
 # STENCIL_PASS_DEPTH_PASS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

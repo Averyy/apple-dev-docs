@@ -31,8 +31,6 @@ This method will consult the [`offset`](mpsunaryimagekernel/1618884-offset.md) a
 
 > ❗ **Important**: This function operates using global image coordinates, but the [`encode(commandBuffer:sourceTexture:destinationTexture:)`](mpsunaryimagekernel/1618741-encode.md) method uses coordinates local to the source and destination image textures. Consequently, the [`offset`](mpsunaryimagekernel/1618884-offset.md) and [`clipRect`](mpsunaryimagekernel/1618859-cliprect.md) properties attached to this object will need to be updated using a global-to-local coordinate transform before the [`encode(commandBuffer:sourceTexture:destinationTexture:)`](mpsunaryimagekernel/1618741-encode.md) method is called.
 
-This function operates using global image coordinates, but the [`encode(commandBuffer:sourceTexture:destinationTexture:)`](mpsunaryimagekernel/1618741-encode.md) method uses coordinates local to the source and destination image textures. Consequently, the [`offset`](mpsunaryimagekernel/1618884-offset.md) and [`clipRect`](mpsunaryimagekernel/1618859-cliprect.md) properties attached to this object will need to be updated using a global-to-local coordinate transform before the [`encode(commandBuffer:sourceTexture:destinationTexture:)`](mpsunaryimagekernel/1618741-encode.md) method is called.
-
 ## Parameters
 
 - `destinationSize`: The size of the full virtual destination image.

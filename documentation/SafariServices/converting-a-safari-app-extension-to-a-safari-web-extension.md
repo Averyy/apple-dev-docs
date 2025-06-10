@@ -1,6 +1,6 @@
 # Converting a Safari app extension to a Safari web extension
 
-**Framework**: Safariservices
+**Framework**: Safari Services
 
 Unify your web extensions and simplify development by sharing code with a Safari web extension.
 
@@ -28,8 +28,10 @@ When your app installs, the Safari web extension installs with it, and Safari re
 
 - [Converting a web extension for Safari](converting-a-web-extension-for-safari.md)
   Convert your existing extension to a Safari web extension using Xcode’s command-line tool.
+- [Packaging and distributing Safari Web Extensions with App Store Connect](packaging-and-distributing-safari-web-extensions-with-app-store-connect.md)
+  Upload and distribute Safari Web Extensions without using a Mac or Xcode.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/converting-a-safari-app-extension-to-a-safari-web-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/converting-a-safari-app-extension-to-a-safari-web-extension)*

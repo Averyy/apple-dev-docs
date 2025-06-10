@@ -1,6 +1,6 @@
 # StatusAppManagedList
 
-**Framework**: Devicemanagement  
+**Framework**: Device Management  
 **Kind**: dictionary
 
 The device’s declarative managed apps.
@@ -8,9 +8,8 @@ The device’s declarative managed apps.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
+- macOS 26.0+ (Beta)
 - visionOS 2.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,9 +17,39 @@ The device’s declarative managed apps.
 object StatusAppManagedList
 ```
 
+## Mentions
+
+- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
+
 #### Discussion
 
-> **Note**:  This documentation contains preliminary information about an API or technology in development. This information is subject to change. Learn more about using [`Apple’s beta software`](https://developer.apple.comhttps://developer.apple.com/support/beta-software/).
+##### Status Item Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in device enrollment | iOS, Shared iPad, visionOS |
+| Allowed in user enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in local enrollment | NA |
+| Allowed in system scope | iOS, macOS, Shared iPad, visionOS |
+| Allowed in user scope | macOS |
+
+##### Reason Codes
+
+- `Error.AppStoreDisabled`: The App Store is disabled.
+- `Error.DownloadFailed`: The app download failed. - `Timestamp`: (string) The RFC 3339 timestamp of the last download failure.
+- `Error.DuplicateConfiguredApp`: The app is already being managed.
+- `Error.InstallFailed`: The app install failed. - `Timestamp`: (string) The RFC 3339 timestamp of the last install failure.
+- `Error.InvalidAppID`: The app id could not be found.
+- `Error.InvalidCodeSignature`: The code signature of the app does not match the composed identifier, and the app cannot be managed.
+- `Error.IsSystemApp`: The app is a system app that cannot be managed.
+- `Error.LicenseNotFound`: A license for the app was not available.
+- `Error.NotAnApp`: The downloaded data is not a valid app.
+- `Error.NotSupported`: The app is not supported on this device.
+- `Error.UnmanagedAppAlreadyInstalled`: An unmanaged app is already installed and cannot be managed.
+- `Error.UserRejected`: The user rejected management of the app.
+- `Info.UpdateAvailable`: An update is available for the app.
+- `Error.UpdateFailed`: The app update failed. - `Timestamp`: (string) The RFC 3339 timestamp of the last update failure.
 
 ## Topics
 
@@ -31,7 +60,6 @@ object StatusAppManagedList
 ## See Also
 
 - [object StatusReport](statusreport.md)
-  A status report of the device’s current state.
 - [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)
   The device’s battery health.
 - [object StatusDeviceModelFamily](statusdevicemodelfamily.md)
@@ -64,4 +92,4 @@ object StatusAppManagedList
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/statusappmanagedlist)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/statusappmanagedlist)*

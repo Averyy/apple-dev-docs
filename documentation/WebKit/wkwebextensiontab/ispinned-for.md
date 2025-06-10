@@ -1,6 +1,6 @@
 # isPinned(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the pinned state of the tab is needed.

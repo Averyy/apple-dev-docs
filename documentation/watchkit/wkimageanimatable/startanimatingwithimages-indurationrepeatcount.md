@@ -1,6 +1,6 @@
 # startAnimatingWithImages(in:duration:repeatCount:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method  
 **Required**: Yes
 

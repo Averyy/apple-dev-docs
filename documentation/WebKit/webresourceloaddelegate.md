@@ -1,6 +1,6 @@
 # WebResourceLoadDelegate
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 Web view resource load delegates implement this protocol to be notified on the progress of loading individual resources. Note that there can be hundreds of resources, such as images and other media, per page. So, if you just want to get page loading status see the WebFrameLoadDelegate protocol.

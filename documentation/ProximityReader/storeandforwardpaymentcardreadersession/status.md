@@ -1,6 +1,6 @@
 # status()
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 Allows the merchant to check the status of the Store and Forward session.

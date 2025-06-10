@@ -1,6 +1,6 @@
 # scanForNetworks(withName:)
 
-**Framework**: Corewlan  
+**Framework**: Core WLAN  
 **Kind**: method
 
 Scans for networks.

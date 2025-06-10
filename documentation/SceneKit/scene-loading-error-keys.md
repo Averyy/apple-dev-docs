@@ -4,7 +4,7 @@
 
 #### Discussion
 
-Keys identifying errors returned when creating scene sources or loading the scenes they contain, used in the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) objects.
+Keys identifying errors returned when creating scene sources or loading the scenes they contain, used in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) objects.
 
 ## Topics
 

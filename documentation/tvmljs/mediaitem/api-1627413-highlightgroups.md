@@ -1,6 +1,6 @@
 # highlightGroups
 
-**Framework**: Tvmljs  
+**Framework**: TVMLKit JS  
 **Kind**: instp
 
 An array of highlight groups, with each group containing a list of highlights.

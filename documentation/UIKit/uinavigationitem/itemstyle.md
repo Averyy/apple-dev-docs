@@ -1,6 +1,6 @@
 # UINavigationItem.ItemStyle
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: enum
 
 Constants that determine how the content of the navigation item lays out in the navigation bar.
@@ -47,6 +47,7 @@ Navigation styles allow you to customize the behavior and content density of you
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

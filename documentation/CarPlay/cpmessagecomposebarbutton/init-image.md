@@ -1,6 +1,6 @@
 # init(image:)
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: init
 
 Creates a message compose button that displays a custom image.

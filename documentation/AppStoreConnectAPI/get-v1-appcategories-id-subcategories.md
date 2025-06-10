@@ -12,6 +12,7 @@ List all App Store subcategories that belong to a specific category.
 
 - [List App Categories](get-v1-appcategories.md)
   List all categories on the App Store, including the category and subcategory hierarchy.
+- [GET /v1/appCategories/{id}/relationships/subcategories](get-v1-appcategories-_id_-relationships-subcategories.md)
 
 
 ---

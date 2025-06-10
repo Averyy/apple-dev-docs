@@ -1,6 +1,6 @@
 # SCNetworkConnectionStart(_:_:_:)
 
-**Framework**: Systemconfiguration  
+**Framework**: System Configuration  
 **Kind**: func
 
 Starts the connection process for the specified network connection.

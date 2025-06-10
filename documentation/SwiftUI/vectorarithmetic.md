@@ -45,12 +45,14 @@ protocol VectorArithmetic : AdditiveArithmetic
 - [Equatable](../Swift/Equatable.md)
 ### Conforming Types
 - [AnimatablePair](animatablepair.md)
+- [AnimatableValues](animatablevalues.md)
 - [EmptyAnimatableData](emptyanimatabledata.md)
 
 ## See Also
 
 - [protocol Animatable](animatable.md)
   A type that describes how to animate a property of a view.
+- [struct AnimatableValues](animatablevalues.md)
 - [struct AnimatablePair](animatablepair.md)
   A pair of animatable values, which is itself animatable.
 - [struct EmptyAnimatableData](emptyanimatabledata.md)

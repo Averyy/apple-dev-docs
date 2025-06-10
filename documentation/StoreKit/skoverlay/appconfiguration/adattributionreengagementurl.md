@@ -13,6 +13,10 @@
 var adAttributionReengagementURL: URL? { get set }
 ```
 
+## See Also
+
+- [var appImpression: AppImpression?](skoverlay/appconfiguration/appimpression.md)
+
 
 ---
 

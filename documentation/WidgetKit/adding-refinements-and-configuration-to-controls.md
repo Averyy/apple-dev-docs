@@ -1,6 +1,6 @@
 # Adding refinements and configuration to controls
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Customize the way controls display across the system and offer people the ability to configure them.
 
@@ -254,12 +254,12 @@ struct TimerToggle: ControlWidget {
   Perform your app’s actions from Control Center, the Lock Screen, and the Action button.
 - [struct ControlWidgetToggle](controlwidgettoggle.md)
   A control template representing a toggle.
-- [struct ControlWidgetButton](controlwidgetbutton.md)
-  A control template representing a button.
 - [class ControlCenter](controlcenter.md)
   An object that contains a list of user-configured controls and is used for reloading controls.
+- [struct ControlWidgetButton](controlwidgetbutton.md)
+  A control template representing a button.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/adding-refinements-and-configuration-to-controls)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/adding-refinements-and-configuration-to-controls)*

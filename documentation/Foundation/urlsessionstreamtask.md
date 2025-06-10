@@ -73,6 +73,7 @@ When working with APIs that accept [`Stream`](stream.md) objects, you can create
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [ProgressReporting](progressreporting.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -86,4 +87,4 @@ When working with APIs that accept [`Stream`](stream.md) objects, you can create
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessionstreamtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessionstreamtask)*

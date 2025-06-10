@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to erase.
+A response from the device after it processes the command to remotely and immediately erase a device.
 
 **Availability**:
 - iOS 4.0+
@@ -12,8 +12,6 @@ A response from the device after it processes the command to erase.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,14 +21,14 @@ object EraseDeviceResponse
 
 ## Topics
 
-### Errors
+### Objects
 - [object EraseDeviceResponse.ErrorChainItem](erasedeviceresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 
 ## See Also
 
 - [object EraseDeviceCommand](erasedevicecommand.md)
-  The command to erase a device.
+  The command to remotely and immediately erase a device.
 
 
 ---

@@ -1,6 +1,6 @@
 # stopDate
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The date and time when the test run stopped, or no value if the test hasn’t run.

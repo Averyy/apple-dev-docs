@@ -24,8 +24,6 @@ You can set Now Playing information keys for automatic publishing on [`nowPlayin
 
 > ❗ **Important**:  If you set `automaticallyPublishesNowPlayingInfo` to `true`, don’t use [`nowPlayingInfoCenter`](mpnowplayingsession/nowplayinginfocenter.md).
 
- If you set `automaticallyPublishesNowPlayingInfo` to `true`, don’t use [`nowPlayingInfoCenter`](mpnowplayingsession/nowplayinginfocenter.md).
-
 ## See Also
 
 - [var nowPlayingInfoCenter: MPNowPlayingInfoCenter](mpnowplayingsession/nowplayinginfocenter.md)

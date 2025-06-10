@@ -1,6 +1,6 @@
 # writeContents(_:andAttributes:safelyTo:for:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Ensures that document data is written safely to a specified location in the application sandbox.

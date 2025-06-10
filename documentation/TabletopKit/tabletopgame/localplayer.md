@@ -11,7 +11,7 @@ The player who runs this tabletop game instance on their device.
 ## Declaration
 
 ```swift
-var localPlayer: Player { get }
+final var localPlayer: Player { get }
 ```
 
 

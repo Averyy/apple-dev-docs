@@ -1,6 +1,6 @@
 # accessibilityInputLabels(_:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Sets alternate input labels with which users identify a view.
@@ -8,10 +8,10 @@ Sets alternate input labels with which users identify a view.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 7.0+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # selectableItemsHighlighted
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A Boolean value that indicates whether the overlay view highlights actionable text or data that the analyzer detects in text.

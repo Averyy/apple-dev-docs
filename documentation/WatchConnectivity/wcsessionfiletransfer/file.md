@@ -1,6 +1,6 @@
 # file
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 The file being transferred.

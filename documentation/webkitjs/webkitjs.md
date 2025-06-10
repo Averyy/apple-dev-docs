@@ -1,6 +1,6 @@
 # WebKit JS
 
-**Framework**: Webkitjs
+**Framework**: WebKit JS
 
 Access and modify DOM elements within a webpage, including touch events and visual effects.
 

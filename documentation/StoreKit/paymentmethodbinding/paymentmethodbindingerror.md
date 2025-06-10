@@ -39,6 +39,7 @@ The methods of [`PaymentMethodBinding`](paymentmethodbinding.md) may return thes
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

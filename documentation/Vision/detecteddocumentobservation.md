@@ -48,6 +48,7 @@ The observation includes the four corner points of a document’s quadrilateral 
 - [Hashable](../Swift/Hashable.md)
 - [QuadrilateralProviding](quadrilateralproviding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionObservation](visionobservation.md)
 
 ## See Also

@@ -1,6 +1,6 @@
 # QuickTime audio codec type
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 #### Overview
 

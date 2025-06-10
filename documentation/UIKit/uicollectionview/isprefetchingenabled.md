@@ -1,6 +1,6 @@
 # isPrefetchingEnabled
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A Boolean value that indicates whether cell and data prefetching are enabled.

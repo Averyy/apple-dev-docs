@@ -1,6 +1,6 @@
 # WKAudioRecorderPreset.narrowBandSpeech
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Audio quality suitable for basic speech recording. This preset records audio with an 8 kHz sampling rate using either the LPCM 128 kbps or AAC 24 kbps format.

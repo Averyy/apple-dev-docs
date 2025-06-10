@@ -17,6 +17,7 @@ The modes governing the types of input to handle during a cycle of the run loop.
 ## Declaration
 
 ```swift
+@MainActor
 var runLoopModes: [RunLoop.Mode] { get set }
 ```
 

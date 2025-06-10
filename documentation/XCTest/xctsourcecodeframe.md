@@ -1,6 +1,6 @@
 # XCTSourceCodeFrame
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An object that represents a single frame in a call stack that supports retrieval of symbol information for the address.

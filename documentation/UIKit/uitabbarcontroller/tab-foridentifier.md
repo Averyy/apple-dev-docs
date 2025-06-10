@@ -17,6 +17,11 @@
 func tab(forIdentifier identifier: String) -> UITab?
 ```
 
+## See Also
+
+- [var tabBar: UITabBar](uitabbarcontroller/tabbar.md)
+  The tab bar view associated with this controller.
+
 
 ---
 

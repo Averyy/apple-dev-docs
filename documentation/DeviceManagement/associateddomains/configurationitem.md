@@ -7,8 +7,6 @@ A dictionary that maps apps to their associated domains.
 
 **Availability**:
 - macOS 10.15+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

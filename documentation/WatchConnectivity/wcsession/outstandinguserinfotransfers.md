@@ -1,6 +1,6 @@
 # outstandingUserInfoTransfers
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An array of in-progress data transfers.

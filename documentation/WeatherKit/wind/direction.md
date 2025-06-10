@@ -1,6 +1,6 @@
 # direction
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The direction the wind is coming from in degrees.

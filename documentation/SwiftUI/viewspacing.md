@@ -49,6 +49,7 @@ Your [`Layout`](layout.md) type doesn’t have to take preferred spacing into ac
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

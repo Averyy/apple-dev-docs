@@ -43,6 +43,8 @@ An `AVCaptureMetadataOutput` object intercepts metadata objects emitted by its a
 ### Creating Metadata Output
 - [init()](avcapturemetadataoutput/init.md)
   Creates a new capture metadata output.
+### Instance Properties
+- [var requiredMetadataObjectTypesForCinematicVideoCapture: [AVMetadataObject.ObjectType]](avcapturemetadataoutput/requiredmetadataobjecttypesforcinematicvideocapture.md)
 
 ## Relationships
 

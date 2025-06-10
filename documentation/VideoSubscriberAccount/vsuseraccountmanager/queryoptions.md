@@ -1,6 +1,6 @@
 # VSUserAccountManager.QueryOptions
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: struct
 
 Constants that represent options you use to fetch a list of user accounts.
@@ -36,6 +36,7 @@ struct QueryOptions
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

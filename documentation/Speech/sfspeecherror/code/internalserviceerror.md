@@ -3,6 +3,8 @@
 **Framework**: Speech  
 **Kind**: case
 
+There was an internal error.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -18,10 +20,14 @@ case internalServiceError
 
 ## See Also
 
+- [SFSpeechError.Code.audioReadFailed](sfspeecherror/code/audioreadfailed.md)
+  The audio file could not be read.
 - [SFSpeechError.Code.malformedSupplementalModel](sfspeecherror/code/malformedsupplementalmodel.md)
+  The custom language model file was malformed.
+- [SFSpeechError.Code.timeout](sfspeecherror/code/timeout.md)
+  The operation timed out.
 - [SFSpeechError.Code.undefinedTemplateClassName](sfspeecherror/code/undefinedtemplateclassname.md)
-- [SFSpeechError.Code.malformedSupplementalModel](sfspeecherror/code/malformedsupplementalmodel.md)
-- [SFSpeechError.Code.undefinedTemplateClassName](sfspeecherror/code/undefinedtemplateclassname.md)
+  The custom language model templates were malformed.
 
 
 ---

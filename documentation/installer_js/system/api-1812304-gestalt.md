@@ -27,8 +27,6 @@ See [`Gestalt Manager`](https://developer.apple.com/documentation/coreservices/c
 
 > ⚠️ **Warning**: The underlying Gestalt Manager API is deprecated; use [`version`](system/1812284-version.md) and [`sysctl`](system/1812308-sysctl.md) instead of this function.
 
-The underlying Gestalt Manager API is deprecated; use [`version`](system/1812284-version.md) and [`sysctl`](system/1812308-sysctl.md) instead of this function.
-
 ## Parameters
 
 - `selector`: String specifying the selector for the data to retrieve.

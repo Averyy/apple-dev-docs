@@ -6,6 +6,9 @@
 The current workout activity.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS ?+
 - watchOS 9.0+
 

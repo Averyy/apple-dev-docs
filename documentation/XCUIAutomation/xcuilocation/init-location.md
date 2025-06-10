@@ -1,6 +1,6 @@
 # init(location:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: init
 
 Initializes a proxy that simulates latitude, longitude, and course information based on the location object you provide.
@@ -24,7 +24,7 @@ init(location: CLLocation)
 
 ## Parameters
 
-- `location`: The   object that contains the latitude, longitude, and course information for this proxy.
+- `location`: The  doc://com.apple.documentation/documentation/corelocation/cllocation  object that contains the latitude, longitude, and course information for this proxy.
 
 
 ---

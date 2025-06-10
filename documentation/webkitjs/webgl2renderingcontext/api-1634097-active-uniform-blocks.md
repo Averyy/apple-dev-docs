@@ -1,6 +1,6 @@
 # ACTIVE_UNIFORM_BLOCKS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

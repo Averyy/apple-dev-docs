@@ -1,6 +1,6 @@
 # initGestureEvent
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Initializes a newly created `GestureEvent` object.

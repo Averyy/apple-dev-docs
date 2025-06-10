@@ -1,6 +1,6 @@
 # waitForChanges(below:completionHandler:)
 
-**Framework**: Fileprovider  
+**Framework**: File Provider  
 **Kind**: method
 
 Requests a notification after the system completes all the specified changes.

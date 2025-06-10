@@ -12,7 +12,7 @@ Requests that the file system probe the specified resource.
 ## Declaration
 
 ```swift
-func probeResource(resource: FSResource, replyHandler: @escaping (FSProbeResult?, (any Error)?) -> Void)
+func probeResource(resource: FSResource) async throws -> FSProbeResult
 ```
 
 #### Discussion
@@ -22,7 +22,7 @@ Implement this method to indicate whether the resource is recognizable and usabl
 ## Parameters
 
 - `resource`: The   to probe.
-- `replyHandler`: A block or closure that your implementation invokes when it finishes the probe or encounters an error. Pass an instance of   with probe results as the first parameter if your probe operation succeeds. If probing fails, pass an error as the second parameter.
+- `reply`: A block or closure that your implementation invokes when it finishes the probe or encounters an error. Pass an instance of   with probe results as the first parameter if your probe operation succeeds. If probing fails, pass an error as the second parameter.
 
 ## See Also
 

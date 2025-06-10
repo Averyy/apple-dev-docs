@@ -1,6 +1,6 @@
 # webExtensionController(_:openNewWindowUsing:for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when an extension context requests a new window to be opened.

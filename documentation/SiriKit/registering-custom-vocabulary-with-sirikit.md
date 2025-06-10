@@ -33,8 +33,6 @@ You may specify custom vocabulary terms for  and . You must always associate cus
 
 > ❗ **Important**:  During development, Xcode forwards your global vocabulary to Siri but limits the availability of that vocabulary to your development device. Ingestion of your vocabulary data isn’t instantaneous, so you may need to wait a few minutes before testing any custom vocabulary.
 
- During development, Xcode forwards your global vocabulary to Siri but limits the availability of that vocabulary to your development device. Ingestion of your vocabulary data isn’t instantaneous, so you may need to wait a few minutes before testing any custom vocabulary.
-
 For information about how to fully specify example phrases and custom terms, see [`Global Vocabulary Reference`](global-vocabulary-reference.md).
 
 ##### Register User Specific Vocabulary

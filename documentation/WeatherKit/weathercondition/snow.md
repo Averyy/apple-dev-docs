@@ -1,6 +1,6 @@
 # WeatherCondition.snow
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Snow.

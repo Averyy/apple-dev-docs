@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: method
 
-Indicates that the action has been successfully executed.
+Indicates that conversation was successfully ended for the local member.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,10 @@ Indicates that the action has been successfully executed.
 ```swift
 final func fulfill(dateEnded: Date)
 ```
+
+## Parameters
+
+- `dateEnded`: The date when the conversation ended.
 
 
 ---

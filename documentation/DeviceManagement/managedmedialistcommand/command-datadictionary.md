@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to get a list of managed books.
+The command to get a list of the managed books on a device.
 
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

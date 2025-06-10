@@ -1,6 +1,6 @@
 # stringRepresentation()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns a string representation of the receiver.

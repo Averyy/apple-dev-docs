@@ -38,8 +38,6 @@ Use the `contentsMode` attribute to specify how the image is scaled within its b
 
 > ❗ **Important**: When using the `aspectFit` value, you must also include the [`aspectRatio`](aspectratio.md) attribute for the content to scale appropriately.
 
-When using the `aspectFit` value, you must also include the [`aspectRatio`](aspectratio.md) attribute for the content to scale appropriately.
-
 ##### Values
 
 ##### Elements That Use Contentsmode

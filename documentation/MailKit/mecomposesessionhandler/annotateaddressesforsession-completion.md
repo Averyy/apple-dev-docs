@@ -21,14 +21,6 @@ optional func annotateAddressesForSession(_ session: MEComposeSession) async -> 
 optional func annotateAddressesForSession(_ session: MEComposeSession) async -> [MEEmailAddress : MEAddressAnnotation]
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-optional func annotateAddressesForSession(_ session: MEComposeSession) async -> [MEEmailAddress : MEAddressAnnotation]
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 As the user enters recipients for a mail message, MailKit invokes this method to allow your extension to provide feedback about the validity of recipient email addresses. The status you provide indicates one of the following:
 
 - The address is valid and correct.
@@ -40,8 +32,6 @@ Mail displays the status in the address field using a status icon and color. In 
 To provide status, iterate through the addresses available in the [`mailMessage`](mecomposesession/mailmessage.md) property of the `session` parameter. For addresses that are meaningful to your extension, determine the current status and add a [`MEAddressAnnotation`](meaddressannotation.md) to the dictionary you pass to the completion block.
 
 > ❗ **Important**:  If an address isn’t meaningful to your extension and you can’t provide accurate status, ignore the address. Don’t indicate an address is valid unless you can confirm its validity.
-
- If an address isn’t meaningful to your extension and you can’t provide accurate status, ignore the address. Don’t indicate an address is valid unless you can confirm its validity.
 
 The following code shows how to mark recipients with email addresses using `@example.com` as invalid.
 

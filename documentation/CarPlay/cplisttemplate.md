@@ -1,6 +1,6 @@
 # CPListTemplate
 
-**Framework**: Carplay  
+**Framework**: CarPlay  
 **Kind**: class
 
 A template that displays and manages a list of items.
@@ -13,6 +13,7 @@ A template that displays and manages a list of items.
 ## Declaration
 
 ```swift
+@MainActor
 class CPListTemplate
 ```
 
@@ -36,8 +37,8 @@ For audio and communication apps, CarPlay provides an  to let users interact wit
 
 To enable the assistant cell, your app must support specific Siri intents:
 
-- To play audio, audio apps must support doc://com.apple.documentation/documentation/sirikit/inplaymediaintent.
-- To make phone calls, communication apps must support doc://com.apple.documentation/documentation/sirikit/instartcallintent.
+- To play audio, audio apps must support [`INPlayMediaIntent`](https://developer.apple.com/documentation/Intents/INPlayMediaIntent).
+- To make phone calls, communication apps must support [`INStartCallIntent`](https://developer.apple.com/documentation/Intents/INStartCallIntent).
 
 To enable the assistant cell in your list template, use [`init(title:sections:assistantCellConfiguration:)`](cplisttemplate/init(title:sections:assistantcellconfiguration:).md) and provide the required configuration. For more information, see [`CPAssistantCellConfiguration`](cpassistantcellconfiguration.md). CarPlay automatically updates your app’s interface if you change the template’s [`assistantCellConfiguration`](cplisttemplate/assistantcellconfiguration.md) property.
 
@@ -83,9 +84,19 @@ To enable the assistant cell in your list template, use [`init(title:sections:as
   The object that serves as the delegate to the list template.
 - [protocol CPListTemplateDelegate](cplisttemplatedelegate.md)
   The interface an object implements to serve as the delegate for a list template.
+### Initializers
+- [init(title: String?, sections: [CPListSection], assistantCellConfiguration: CPAssistantCellConfiguration?, headerGridButtons: [CPGridButton]?)](cplisttemplate/init(title:sections:assistantcellconfiguration:headergridbuttons:).md)
+  Initialize a list template with one or more grid buttons to displayed in a list header.
 ### Instance Properties
+- [var headerGridButtons: [CPGridButton]?](cplisttemplate/headergridbuttons.md)
+  Assigning to this property will dynamically update the List Template and show the new header.
 - [var showsSpinnerWhileEmpty: Bool](cplisttemplate/showsspinnerwhileempty.md)
   If YES, a spinning activity indicator will be displayed while the list template contains no items. The activity indicator will be displayed in addition to any @c emptyViewTitleVariants or
+### Type Properties
+- [class var maximumGridButtonImageSize: CGSize](cplisttemplate/maximumgridbuttonimagesize.md)
+  The expected image size for your @c CPGridButton.
+- [class var maximumHeaderGridButtonCount: Int](cplisttemplate/maximumheadergridbuttoncount.md)
+  The maximum number of grid buttons that may appear in a @c CPListTemplate.
 
 ## Relationships
 
@@ -101,6 +112,8 @@ To enable the assistant cell in your list template, use [`init(title:sections:as
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -116,4 +129,4 @@ To enable the assistant cell in your list template, use [`init(title:sections:as
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/cplisttemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/carplay/cplisttemplate)*

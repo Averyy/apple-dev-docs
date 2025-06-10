@@ -1,6 +1,6 @@
 # unregisterForRemoteNotifications()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Unregister for all remote notifications received from Apple Push Notification service (APNs).

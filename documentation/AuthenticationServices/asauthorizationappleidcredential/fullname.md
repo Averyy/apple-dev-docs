@@ -26,8 +26,6 @@ Apple doesn’t receive the user’s full name shared with the system UI. The ra
 
 > 💡 **Tip**:  To help prevent cross-site scripting attacks, validate and sanitize the user-submitted first and last name values before storing on your app servers.
 
- To help prevent cross-site scripting attacks, validate and sanitize the user-submitted first and last name values before storing on your app servers.
-
 ## See Also
 
 - [var authorizedScopes: [ASAuthorization.Scope]](asauthorizationappleidcredential/authorizedscopes.md)

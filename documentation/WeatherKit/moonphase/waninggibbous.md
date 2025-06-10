@@ -1,6 +1,6 @@
 # MoonPhase.waningGibbous
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 The disk is half lit as the moon is waning.

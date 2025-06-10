@@ -37,6 +37,9 @@ object BetaGroupResponse
 - [object BetaPublicLinkUsagesV1MetricResponse](betapubliclinkusagesv1metricresponse.md)
 - [object BetaGroupsResponse](betagroupsresponse.md)
   A response that contains a list of Beta Group resources.
+- [object BetaGroupAppLinkageResponse](betagroupapplinkageresponse.md)
+- [object BetaGroupBetaRecruitmentCriteriaLinkageResponse](betagroupbetarecruitmentcriterialinkageresponse.md)
+- [object BetaGroupBetaRecruitmentCriterionCompatibleBuildCheckLinkageResponse](betagroupbetarecruitmentcriterioncompatiblebuildchecklinkageresponse.md)
 
 
 ---

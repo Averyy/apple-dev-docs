@@ -1,6 +1,6 @@
 # scopeBarActivation
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A mode that determines when the search controller shows and hides the scope bar.

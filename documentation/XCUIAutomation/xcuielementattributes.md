@@ -1,6 +1,6 @@
 # XCUIElementAttributes
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: protocol
 
 Attributes exposed by UI elements.
@@ -85,4 +85,4 @@ The [`XCUIElementAttributes`](xcuielementattributes.md) protocol adds attribute-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/XCUIAutomation/xcuielementattributes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcuiautomation/xcuielementattributes)*

@@ -37,6 +37,7 @@ class DispatchWorkloop
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Scheduler](../Combine/Scheduler.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SerialExecutor](../Swift/SerialExecutor.md)
 - [TaskExecutor](../Swift/TaskExecutor.md)
 

@@ -1,6 +1,6 @@
 # setAllMediaPlaybackSuspended(_:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Changes whether the webpage is suspending playback of all media in the page.

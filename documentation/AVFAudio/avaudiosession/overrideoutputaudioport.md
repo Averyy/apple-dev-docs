@@ -1,6 +1,6 @@
 # overrideOutputAudioPort(_:)
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: method
 
 Temporarily changes the current audio route.

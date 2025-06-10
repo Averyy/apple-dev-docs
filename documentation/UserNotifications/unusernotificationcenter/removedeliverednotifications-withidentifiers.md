@@ -1,6 +1,6 @@
 # removeDeliveredNotifications(withIdentifiers:)
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: method
 
 Removes your app’s notifications from Notification Center that match the specified identifiers.

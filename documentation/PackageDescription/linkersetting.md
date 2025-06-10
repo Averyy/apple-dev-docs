@@ -25,6 +25,7 @@ struct LinkerSetting
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -50,6 +51,8 @@ struct LinkerSetting
   A Swift language build setting.
 - [Target.PluginUsage](target/pluginusage.md)
   A plug-in used in a target.
+- [let packageAccess: Bool](target/packageaccess.md)
+  If true, access to package declarations from other targets in the package is allowed.
 
 
 ---

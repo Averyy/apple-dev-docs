@@ -1,6 +1,6 @@
 # DOM_CSS_PRIMITIVE_VALUE
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

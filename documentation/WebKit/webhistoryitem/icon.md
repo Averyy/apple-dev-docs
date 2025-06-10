@@ -1,6 +1,6 @@
 # icon
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The icon for the receiver’s page, or `nil` if none exists.

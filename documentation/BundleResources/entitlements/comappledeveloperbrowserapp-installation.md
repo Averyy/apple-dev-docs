@@ -1,6 +1,6 @@
 # com.apple.developer.browser.app-installation
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 The entitlement that enables a browser to install alternative-distribution apps from a website.

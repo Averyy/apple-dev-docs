@@ -3,6 +3,8 @@
 **Framework**: Network Extension  
 **Kind**: enum
 
+An enumeration of hotspot command types.
+
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
@@ -43,6 +45,7 @@ enum NEHotspotHelperCommandType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

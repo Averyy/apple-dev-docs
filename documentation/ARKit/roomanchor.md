@@ -40,6 +40,9 @@ A `RoomAnchor` structure describes an approximate representation of the room’s
   Returns the disjoint mesh geometries of a given classification.
 - [var description: String](roomanchor/description.md)
   A textual representation of this anchor.
+### Instance Methods
+- [func geometries(classifiedAs: SurfaceClassification) -> [MeshAnchor.Geometry]](roomanchor/geometries(classifiedas:).md)
+  Get disjoint mesh geometries of a given surface classification.
 
 ## Relationships
 
@@ -49,6 +52,7 @@ A `RoomAnchor` structure describes an approximate representation of the room’s
 - [Equatable](../Swift/Equatable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

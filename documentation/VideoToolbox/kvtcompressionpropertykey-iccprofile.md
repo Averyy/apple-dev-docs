@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_ICCProfile
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The ICC profile for compressed content.

@@ -1,6 +1,6 @@
 # Testing with WebDriver in Safari
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Enable WebDriver and run a test.
 
@@ -121,4 +121,4 @@ python test_webkit.py
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/testing-with-webdriver-in-safari)*
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/testing-with-webdriver-in-safari)*

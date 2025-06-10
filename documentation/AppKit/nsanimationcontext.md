@@ -65,8 +65,6 @@ Multiple [`NSAnimationContext`](nsanimationcontext.md) instances can be nested, 
 - [class func runAnimationGroup((NSAnimationContext) -> Void)](nsanimationcontext/runanimationgroup(_:).md)
 - [static func animate(Animation, changes: () -> Void, completion: (() -> Void)?)](nsanimationcontext/animate(_:changes:completion:).md)
   Animate changes to one or more views using the specified SwiftUI animation.
-- [static func animate(with: Animation, changes: () -> Void, completion: (() -> Void)?)](nsanimationcontext/animate(with:changes:completion:).md)
-  Animates changes to one or more views using the specified SwiftUI animation.
 
 ## Relationships
 

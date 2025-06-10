@@ -1,6 +1,6 @@
 # webView(_:didReceiveServerRedirectForProvisionalNavigation:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the delegate that the web view received a server redirect for a request.

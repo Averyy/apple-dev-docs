@@ -25,8 +25,6 @@ struct Rect3D
 ### Creating a 3D rectangle structure
 - [init()](rect3d/init.md)
   Creates a rectangle structure.
-- [init(BoundingBox)](rect3d/init(_:).md)
-  Creates a rectangle structure from a bounding box.
 - [init(center: Point3D, size: Size3D)](rect3d/init(center:size:)-133fy.md)
   Creates a rectangle with the specified center and the specified size from Spatial structures.
 - [init(center: simd_double3, size: simd_double3)](rect3d/init(center:size:)-77l0z.md)
@@ -125,16 +123,21 @@ struct Rect3D
 - [var minX: Double](rect3d/minx.md)
 - [var minY: Double](rect3d/miny.md)
 - [var minZ: Double](rect3d/minz.md)
+### Initializers
+- [init(Rect3DFloat)](rect3d/init(_:)-3wm4y.md)
+  Returns a double-precision rectangle from a single-precision rectangle.
+- [init(BoundingBox)](rect3d/init(_:)-b16k.md)
 ### Default Implementations
 - [CustomReflectable Implementations](rect3d/customreflectable-implementations.md)
 - [Decodable Implementations](rect3d/decodable-implementations.md)
 - [Encodable Implementations](rect3d/encodable-implementations.md)
 - [Equatable Implementations](rect3d/equatable-implementations.md)
 - [Hashable Implementations](rect3d/hashable-implementations.md)
-- [Primitive3D Implementations](rect3d/primitive3d-implementations.md)
-- [Scalable3D Implementations](rect3d/scalable3d-implementations.md)
+- [Primitive3DProtocol Implementations](rect3d/primitive3dprotocol-implementations.md)
+- [Scalable3DProtocol Implementations](rect3d/scalable3dprotocol-implementations.md)
 - [Shearable3D Implementations](rect3d/shearable3d-implementations.md)
 - [Volumetric Implementations](rect3d/volumetric-implementations.md)
+- [VolumetricProtocol Implementations](rect3d/volumetricprotocol-implementations.md)
 
 ## Relationships
 
@@ -148,31 +151,53 @@ struct Rect3D
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Primitive3D](primitive3d.md)
+- [Primitive3DProtocol](primitive3dprotocol.md)
+- [ProjectiveTransformable3D](projectivetransformable3d.md)
 - [Rotatable3D](rotatable3d.md)
+- [Rotatable3DProtocol](rotatable3dprotocol.md)
 - [Scalable3D](scalable3d.md)
+- [Scalable3DProtocol](scalable3dprotocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Shearable3D](shearable3d.md)
+- [SpatialTypeProtocol](spatialtypeprotocol.md)
 - [Translatable3D](translatable3d.md)
+- [Translatable3DProtocol](translatable3dprotocol.md)
 - [Volumetric](volumetric.md)
+- [VolumetricProtocol](volumetricprotocol.md)
 
 ## See Also
 
 - [struct Point3D](point3d.md)
   A point in a 3D coordinate system.
+- [struct Point3DFloat](point3dfloat.md)
+  A single-precision structure that contains a point in a three-dimensional coordinate system.
 - [struct Size3D](size3d.md)
   A size that describes width, height, and depth in a 3D coordinate system.
+- [struct Size3DFloat](size3dfloat.md)
+  A single-precision structure that contains width, height, and depth values.
+- [struct Rect3DFloat](rect3dfloat.md)
+  A single-precision structure that contains the location and dimensions of a 3D rectangle.
 - [struct Rotation3D](rotation3d.md)
   A rotation in three dimensions.
+- [struct Rotation3DFloat](rotation3dfloat.md)
+  A single-precision structure that represents a rotation in three dimensions.
 - [struct RotationAxis3D](rotationaxis3d.md)
   A 3D rotation axis.
+- [struct RotationAxis3DFloat](rotationaxis3dfloat.md)
+  A 3D axis.
 - [struct Pose3D](pose3d.md)
   A structure that contains a 3D position and a 3D rotation.
+- [struct Pose3DFloat](pose3dfloat.md)
+  A single-precision structure that contains a position and rotation.
 - [struct ScaledPose3D](scaledpose3d.md)
+  A structure that contains a position, rotation, and scale.
+- [struct ScaledPose3DFloat](scaledpose3dfloat.md)
   A structure that contains a position, rotation, and scale.
 - [struct SphericalCoordinates3D](sphericalcoordinates3d.md)
   A structure that defines spherical coordinates in radial, inclination, azimuthal order.
-- [struct Ray3D](ray3d.md)
-  A ray in a 3D coordinate system.
+- [struct SphericalCoordinates3DFloat](sphericalcoordinates3dfloat.md)
+  A single-precision structure that defines spherical coordinates in radial, inclination, azimuthal order.
 
 
 ---

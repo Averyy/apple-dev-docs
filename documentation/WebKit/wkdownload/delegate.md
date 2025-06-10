@@ -1,6 +1,6 @@
 # delegate
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An object you use to track download progress and handle redirects, authentication challenges, and failures.

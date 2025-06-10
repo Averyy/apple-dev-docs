@@ -1,6 +1,6 @@
 # XCUIProtectedResource.appleEvents
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The protected resource case for the use of Apple Events.

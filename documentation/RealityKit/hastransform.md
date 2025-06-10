@@ -10,6 +10,7 @@ An interface that enables manipulating the scale, rotation, and translation of a
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -63,7 +64,7 @@ All entities automatically adopt this protocol because the [`Entity`](entity.md)
   Moves an entity instantly to a new location given by a 4x4 matrix.
 - [func look(at: SIMD3<Float>, from: SIMD3<Float>, upVector: SIMD3<Float>, relativeTo: Entity?)](hastransform/look(at:from:upvector:relativeto:).md)
   Positions and orients the entity to look at a target from a given position.
-- [func look(at: SIMD3<Float>, from: SIMD3<Float>, upVector: SIMD3<Float>, relativeTo: Entity?, forward: Entity.ForwardDirection)](hastransform/look(at:from:upvector:relativeto:forward:).md)
+- [func look(at:from:upVector:relativeTo:forward:)](hastransform/look(at:from:upvector:relativeto:forward:).md)
   Positions and orients the entity such that it looks at certain target from a give position.
 - [func align(GeometricPin, to: GeometricPin) -> float4x4?](hastransform/align(_:to:).md)
   Moves and rotates the entity by a transformation from the origin pin to the target pin.
@@ -92,6 +93,11 @@ All entities automatically adopt this protocol because the [`Entity`](entity.md)
 ### Getting a bounding box
 - [func visualBounds(recursive: Bool, relativeTo: Entity?, excludeInactive: Bool) -> BoundingBox](hastransform/visualbounds(recursive:relativeto:excludeinactive:).md)
   Computes a bounding box for the entity in the specified space, optionally including child entities.
+### Instance Methods
+- [func move(to:relativeTo:)](hastransform/move(to:relativeto:).md)
+  Moves an entity instantly to a new location given by a transform.
+- [func move(to:relativeTo:duration:timingFunction:)](hastransform/move(to:relativeto:duration:timingfunction:).md)
+  Moves an entity over a period of time to a new location given by a transform.
 
 ## Relationships
 
@@ -127,8 +133,6 @@ All entities automatically adopt this protocol because the [`Entity`](entity.md)
   Returns the 4 x 4 transform matrix of an entity relative to the given coordinate space.
 - [Entity.CoordinateSpaceReference](entity/coordinatespacereference.md)
   Defines the coordinate space reference for transform conversion.
-- [Entity.ForwardDirection](entity/forwarddirection.md)
-  Defines the forward direction for an entity.
 
 
 ---

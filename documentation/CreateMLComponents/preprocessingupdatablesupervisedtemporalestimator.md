@@ -73,6 +73,7 @@ struct PreprocessingUpdatableSupervisedTemporalEstimator<Preprocessor, Estimator
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SupervisedTemporalEstimator](supervisedtemporalestimator.md)
 - [UpdatableSupervisedTemporalEstimator](updatablesupervisedtemporalestimator.md)
 

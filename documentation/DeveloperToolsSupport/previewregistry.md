@@ -26,8 +26,6 @@ Preview macros make use of this protocol on your behalf. Don’t use it directly
 
 > ❗ **Important**: If you define a preview registry directly, the behavior is undefined.
 
-If you define a preview registry directly, the behavior is undefined.
-
 ## Topics
 
 ### Type Properties

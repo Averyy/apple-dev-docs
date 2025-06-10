@@ -32,8 +32,6 @@ This function leaves the stream open after reading the content. When reading a p
 
 > ⚠️ **Warning**:  This function is obsolete and will be deprecated soon. Use [`CFPropertyListWrite(_:_:_:_:_:)`](cfpropertylistwrite(_:_:_:_:_:).md) instead.
 
- This function is obsolete and will be deprecated soon. Use [`CFPropertyListWrite(_:_:_:_:_:)`](cfpropertylistwrite(_:_:_:_:_:).md) instead.
-
 ## Parameters
 
 - `propertyList`: The property list to write out.

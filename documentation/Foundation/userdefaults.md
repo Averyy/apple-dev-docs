@@ -28,13 +28,9 @@ At runtime, you use [`UserDefaults`](userdefaults.md) objects to read the defaul
 
 > ❗ **Important**:  Don’t try to access the preferences subsystem directly. Modifying preference property list files may result in loss of changes, delay of reflecting changes, and app crashes. To configure preferences, use the `defaults` command-line utility in macOS instead.
 
- Don’t try to access the preferences subsystem directly. Modifying preference property list files may result in loss of changes, delay of reflecting changes, and app crashes. To configure preferences, use the `defaults` command-line utility in macOS instead.
-
 With the exception of managed devices in educational institutions, a user’s defaults are stored locally on a single device, and persisted for backup and restore. To synchronize preferences and other data across a user’s connected devices, use [`NSUbiquitousKeyValueStore`](nsubiquitouskeyvaluestore.md) instead.
 
 > ❗ **Important**:  This API has the potential of being misused to access device signals to try to identify the device or user, also known as fingerprinting. Regardless of whether a user gives your app permission to track, fingerprinting is not allowed. When you use this API in your app or third-party SDK (an SDK not provided by Apple), declare your usage and the reason for using the API in your app or third-party SDK’s `PrivacyInfo.xcprivacy` file. For more information, including the list of valid reasons for using the API, see [`Describing use of required reason API`](https://developer.apple.com/documentation/BundleResources/describing-use-of-required-reason-api).
-
- This API has the potential of being misused to access device signals to try to identify the device or user, also known as fingerprinting. Regardless of whether a user gives your app permission to track, fingerprinting is not allowed. When you use this API in your app or third-party SDK (an SDK not provided by Apple), declare your usage and the reason for using the API in your app or third-party SDK’s `PrivacyInfo.xcprivacy` file. For more information, including the list of valid reasons for using the API, see [`Describing use of required reason API`](https://developer.apple.com/documentation/BundleResources/describing-use-of-required-reason-api).
 
 ##### Storing Default Objects
 
@@ -188,6 +184,9 @@ The [`UserDefaults`](https://developer.apple.comhttps://developer.apple.com/libr
   This method has no effect and shouldn’t be used.
 - [Language-Dependent Information Constants](language-dependent-information-constants.md)
   These constants are deprecated and shouldn’t be used.
+### Structures
+- [UserDefaults.DidChangeMessage](userdefaults/didchangemessage.md)
+- [UserDefaults.SizeLimitExceededMessage](userdefaults/sizelimitexceededmessage.md)
 
 ## Relationships
 

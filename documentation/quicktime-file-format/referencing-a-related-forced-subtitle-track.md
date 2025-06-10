@@ -1,6 +1,6 @@
 # Referencing a related forced subtitle track
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Prevent overlapping a timed subtitle track with a forced subtitle track.
 

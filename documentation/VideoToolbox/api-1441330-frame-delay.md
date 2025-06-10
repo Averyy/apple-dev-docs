@@ -1,6 +1,6 @@
 # Frame Delay
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 Indicates that no limit should be placed on the compression window.
 

@@ -1,6 +1,6 @@
 # pointOfInterestCategory
 
-**Framework**: Mapkitjs  
+**Framework**: MapKit JS  
 **Kind**: property
 
 The point-of-interest category of the feature.
@@ -36,4 +36,4 @@ attribute mapkit.PointOfInterestCategory pointOfInterestCategory;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkit.mapfeatureannotation/pointofinterestcategory)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit.mapfeatureannotation/pointofinterestcategory)*

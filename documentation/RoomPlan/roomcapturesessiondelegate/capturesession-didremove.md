@@ -4,13 +4,13 @@
 **Kind**: method  
 **Required**: Yes
 
-session has recently removed surfaces and objects
+Notifies the delegate when the session removes surfaces and objects.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -18,10 +18,15 @@ session has recently removed surfaces and objects
 func captureSession(_ session: RoomCaptureSession, didRemove room: CapturedRoom)
 ```
 
+## Parameters
+
+- `session`: An object that manages the room-scanning process.
+- `room`: A structure that contains surfaces and objects that the framework removes from the scan.
+
 ## See Also
 
 - [func captureSession(RoomCaptureSession, didAdd: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didadd:).md)
-  session has newly added surfaces and objects
+  Notifies the delegate of newly added surfaces and objects.
 - [func captureSession(RoomCaptureSession, didChange: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didchange:).md)
   Notifies the delegate when the session changes the dimensions and the transform properties of surfaces and objects.
 - [func captureSession(RoomCaptureSession, didUpdate: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didupdate:).md)

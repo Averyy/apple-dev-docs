@@ -9,6 +9,7 @@ A histogram of the different amounts of time associated with prewarmed app launc
 - iOS 15.2+
 - iPadOS 15.2+
 - Mac Catalyst 15.2+
+- macOS 12.2+
 - visionOS 1.0+
 
 ## Declaration

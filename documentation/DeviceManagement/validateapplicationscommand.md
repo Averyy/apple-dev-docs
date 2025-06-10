@@ -3,15 +3,13 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to force validation of developer and universal provisioning profiles for enterprise apps on a device.
+The command to force validation of developer and universal provisioning profiles for enterprise apps.
 
 **Availability**:
 - iOS 9.2+
 - iPadOS 9.2+
 - tvOS 10.2+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,14 +19,14 @@ object ValidateApplicationsCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object ValidateApplicationsCommand.Command](validateapplicationscommand/command-data.dictionary.md)
-  The request dictionary to validate provisioning profiles for enterprise apps.
+  The command to force validation of developer and universal provisioning profiles for enterprise apps.
 
 ## See Also
 
 - [object ValidateApplicationsResponse](validateapplicationsresponse.md)
-  A response from the device after it processes the command to validate provisioning profiles for enterprise apps.
+  A response from the device after it processes the command to force validation of developer and universal provisioning profiles for enterprise apps.
 
 
 ---

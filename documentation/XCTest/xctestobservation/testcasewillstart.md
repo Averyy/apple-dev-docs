@@ -1,6 +1,6 @@
 # testCaseWillStart(_:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Notifies the observer immediately before a test case begins executing.

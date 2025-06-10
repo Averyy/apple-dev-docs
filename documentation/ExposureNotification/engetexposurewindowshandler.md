@@ -20,8 +20,6 @@ typealias ENGetExposureWindowsHandler = ([ENExposureWindow]?, (any Error)?) -> V
 
 > ❗ **Important**:  This type is available in iOS 12.5, and in iOS 13.5 and later.
 
- This type is available in iOS 12.5, and in iOS 13.5 and later.
-
 ## Parameters
 
 - `exposureWindows`: An array of available exposure windows. The contents of this array are in no particular order.
@@ -35,7 +33,7 @@ typealias ENGetExposureWindowsHandler = ([ENExposureWindow]?, (any Error)?) -> V
   Detects exposures using the specified configuration to control the scoring algorithm.
 - [func getExposureWindows(summary: ENExposureDetectionSummary, completionHandler: ENGetExposureWindowsHandler) -> Progress](enmanager/getexposurewindows(summary:completionhandler:).md)
   Obtains information from the provided summary about the user’s exposure within a window of time.
-- [func getUserTraveled(completionHandler: ENGetUserTraveledHandler)](enmanager/getusertraveled(completionhandler:).md)
+- [func getUserTraveled(completionHandler: (Bool, (any Error)?) -> Void)](enmanager/getusertraveled(completionhandler:).md)
   Obtains information about the user’s travel within an exposure period.
 - [typealias ENGetUserTraveledHandler](engetusertraveledhandler.md)
   The handler the system invokes when acquistiion of the user’s travel status completes.

@@ -1,7 +1,9 @@
 # customerID
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
+
+The identifier of the customer as previously reported to Apple.
 
 **Availability**:
 - iOS 17.4+
@@ -15,6 +17,11 @@
 ```swift
 var customerID: String { get set }
 ```
+
+## See Also
+
+- [var productCodes: [String]](vsapplesubscription-swift.struct/productcodes.md)
+  A list of product codes for Apple services the customer subscribes to.
 
 
 ---

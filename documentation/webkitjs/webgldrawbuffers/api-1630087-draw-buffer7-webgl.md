@@ -1,6 +1,6 @@
 # DRAW_BUFFER7_WEBGL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

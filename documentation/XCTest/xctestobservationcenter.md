@@ -1,6 +1,6 @@
 # XCTestObservationCenter
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 Provides information about the progress of test runs to registered observers.
@@ -18,8 +18,6 @@ Observers can be any object that conforms to the [`XCTestObservation`](xctestobs
 If an [`NSPrincipalClass`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSPrincipalClass) key is declared in the test bundle’s Info.plist file, XCTest automatically creates a single instance of that class when the test bundle is loaded. You can use this instance as a place to register observers or do other pretesting global setup before testing for that bundle begins.
 
 > ❗ **Important**:  Observers must be registered manually. The NSPrincipalClass instance is not automatically registered as an observer even if the class conforms to [`XCTestObservation`](xctestobservation.md).
-
- Observers must be registered manually. The NSPrincipalClass instance is not automatically registered as an observer even if the class conforms to [`XCTestObservation`](xctestobservation.md).
 
 ## Topics
 

@@ -13,6 +13,7 @@ Initialize a team logo with an image representation of this team. Provide an ima
 ## Declaration
 
 ```swift
+@MainActor
 init(teamLogo: UIImage)
 ```
 

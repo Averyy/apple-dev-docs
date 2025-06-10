@@ -8,10 +8,10 @@ Open the associated item.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +19,10 @@ Open the associated item.
 ```swift
 protocol OpenIntent : SystemIntent
 ```
+
+## Mentions
+
+- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
 
 #### Overview
 
@@ -37,6 +41,7 @@ Use this intent to open both dynamic items such as [`AppEntity`](appentity.md) a
 - [AppIntent](appintent.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SystemIntent](systemintent.md)
 
 ## See Also

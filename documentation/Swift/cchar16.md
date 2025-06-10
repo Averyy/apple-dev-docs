@@ -26,6 +26,8 @@ typealias CChar16 = UInt16
   The C ‘_Bool’ and C++ ‘bool’ type.
 - [typealias CChar](cchar.md)
   The C ‘char’ type.
+- [typealias CChar8](cchar8.md)
+  The C++20 ‘char8_t’ type, which has UTF-8 encoding.
 - [typealias CChar32](cchar32.md)
   The C++11 ‘char32_t’ type, which has UTF-32 encoding.
 - [typealias CDouble](cdouble.md)
@@ -46,7 +48,6 @@ typealias CChar16 = UInt16
 - [typealias CUnsignedChar](cunsignedchar.md)
   The C ‘unsigned char’ type.
 - [typealias CUnsignedInt](cunsignedint.md)
-- [typealias CUnsignedLong](cunsignedlong.md)
 
 
 ---

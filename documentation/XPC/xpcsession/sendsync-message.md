@@ -1,6 +1,6 @@
 # sendSync(message:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Sends a dictionary message over the session to the destination service, blocking the caller until receiving a reply.
@@ -31,13 +31,9 @@ Be judicious about your use of this API. It can block indefinitely. Calling this
 
 > 💡 **Tip**:  If you provide an API that uses this method, consider allowing callers to specify a queue and callback handler to let you provide results asynchronously.
 
- If you provide an API that uses this method, consider allowing callers to specify a queue and callback handler to let you provide results asynchronously.
-
 Sessions send messages serially in a first-in, first-out (FIFO) order. This method is safe to call from multiple dispatch queues. The session can’t indicate whether the message  is successful or not. While the session may successfully enqueue the message at the remote end of the connection, there’s no guarantee about when the destination dequeues the message and invokes the receiving session’s handler.
 
 > ❗ **Important**:  If you create an inactive session, you must activate it before sending messages. Calling this method with an inactive session crashes.
-
- If you create an inactive session, you must activate it before sending messages. Calling this method with an inactive session crashes.
 
 ## Parameters
 

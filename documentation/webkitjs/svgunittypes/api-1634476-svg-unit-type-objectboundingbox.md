@@ -1,6 +1,6 @@
 # SVG_UNIT_TYPE_OBJECTBOUNDINGBOX
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

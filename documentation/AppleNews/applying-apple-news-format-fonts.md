@@ -14,8 +14,6 @@ The following table lists font families for Apple News Format that are supported
 
 > ❗ **Important**:  Some font families may not support all unicode values.
 
- Some font families may not support all unicode values.
-
 |  |  |
 | --- | --- |
 | Academy Engraved LET | fontWeight: regular (AcademyEngravedLetPlain) |

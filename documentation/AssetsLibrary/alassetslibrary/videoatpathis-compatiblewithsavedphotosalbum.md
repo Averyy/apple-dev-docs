@@ -6,9 +6,9 @@
 Returns a Boolean value that indicates whether a video identified by a given URL is compatible with the Saved Photos album.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 14.0+
 
 ## Declaration
 
@@ -30,13 +30,13 @@ This method returns the same value as [`UIVideoAtPathIsCompatibleWithSavedPhotos
 
 ## See Also
 
-- [func writeVideoAtPath(toSavedPhotosAlbum: URL!, completionBlock: ALAssetsLibraryWriteVideoCompletionBlock!)](alassetslibrary/writevideoatpath(tosavedphotosalbum:completionblock:).md)
+- [func writeVideoAtPath(toSavedPhotosAlbum: URL!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alassetslibrary/writevideoatpath(tosavedphotosalbum:completionblock:).md)
   Saves a video identified by a given URL to the Saved Photos album.
-- [func writeImage(toSavedPhotosAlbum: CGImage!, orientation: ALAssetOrientation, completionBlock: ALAssetsLibraryWriteImageCompletionBlock!)](alassetslibrary/writeimage(tosavedphotosalbum:orientation:completionblock:).md)
+- [func writeImage(toSavedPhotosAlbum: CGImage!, orientation: ALAssetOrientation, completionBlock: ((URL?, (any Error)?) -> Void)!)](alassetslibrary/writeimage(tosavedphotosalbum:orientation:completionblock:).md)
   Saves a given image to the Saved Photos album.
-- [func writeImageData(toSavedPhotosAlbum: Data!, metadata: [AnyHashable : Any]!, completionBlock: ALAssetsLibraryWriteImageCompletionBlock!)](alassetslibrary/writeimagedata(tosavedphotosalbum:metadata:completionblock:).md)
+- [func writeImageData(toSavedPhotosAlbum: Data!, metadata: [AnyHashable : Any]!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alassetslibrary/writeimagedata(tosavedphotosalbum:metadata:completionblock:).md)
   Writes given image data and metadata to the Photos Album.
-- [func writeImage(toSavedPhotosAlbum: CGImage!, metadata: [AnyHashable : Any]!, completionBlock: ALAssetsLibraryWriteImageCompletionBlock!)](alassetslibrary/writeimage(tosavedphotosalbum:metadata:completionblock:).md)
+- [func writeImage(toSavedPhotosAlbum: CGImage!, metadata: [AnyHashable : Any]!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alassetslibrary/writeimage(tosavedphotosalbum:metadata:completionblock:).md)
   Writes a given image and metadata to the Photos Album.
 
 

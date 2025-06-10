@@ -142,6 +142,17 @@ SwiftUI only resolves a color to a concrete value just before using it in a give
   Multiplies the opacity of the color by the given amount.
 - [var gradient: AnyGradient](color/gradient.md)
   Returns the standard gradient for the color `self`.
+- [func mix(with: Color, by: Double, in: Gradient.ColorSpace) -> Color](color/mix(with:by:in:).md)
+  Returns a version of self mixed with `rhs` by the amount specified by `fraction`.
+- [func exposureAdjust(Double) -> Color](color/exposureadjust(_:).md)
+  Returns a new color with an exposure adjustment applied.
+- [func headroom(Double?) -> Color](color/headroom(_:).md)
+  Creates a new color with specified HDR content headroom.
+### Working with high dynamic range (HDR) colors
+- [func resolveHDR(in: EnvironmentValues) -> Color.ResolvedHDR](color/resolvehdr(in:).md)
+  Evaluates this color to a resolved color with content headroom, given a set of environment values. /
+- [struct ResolvedHDR](color/resolvedhdr.md)
+  A concrete color value, including HDR headroom information.
 ### Describing a color
 - [var description: String](color/description.md)
   A textual representation of the color.
@@ -153,9 +164,6 @@ SwiftUI only resolves a color to a concrete value just before using it in a give
 ### Deprecated symbols
 - [var cgColor: CGColor?](color/cgcolor.md)
   A Core Graphics representation of the color, if available.
-### Instance Methods
-- [func mix(with: Color, by: Double, in: Gradient.ColorSpace) -> Color](color/mix(with:by:in:).md)
-  Returns a version of self mixed with `rhs` by the amount specified by `fraction`.
 ### Default Implementations
 - [ShapeStyle Implementations](color/shapestyle-implementations.md)
 - [Transferable Implementations](color/transferable-implementations.md)
@@ -168,6 +176,7 @@ SwiftUI only resolves a color to a concrete value just before using it in a give
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 - [Transferable](../CoreTransferable/Transferable.md)
 - [View](view.md)

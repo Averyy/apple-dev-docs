@@ -1,6 +1,6 @@
 # isPlayableOffline
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that indicates whether the asset is playable without an internet connection.

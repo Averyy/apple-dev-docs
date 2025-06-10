@@ -1,6 +1,6 @@
 # refreshCarrierToken()
 
-**Framework**: Coretelephony  
+**Framework**: Core Telephony  
 **Kind**: method
 
 Attempts to refresh the carrier token.

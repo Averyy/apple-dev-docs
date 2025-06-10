@@ -1,6 +1,6 @@
 # days
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 An ordered collection of day weather summaries of type `T`, for each requested day.

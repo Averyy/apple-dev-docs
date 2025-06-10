@@ -1,6 +1,6 @@
 # WKWebExtension.MatchPattern.Error.Code.unknown
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates that an unknown error occurred.

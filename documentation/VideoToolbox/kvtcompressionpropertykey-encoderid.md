@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_EncoderID
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Specifies a particular video encoder by its ID string.

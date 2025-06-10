@@ -31,6 +31,12 @@ The first set of results reflects the current state of the statistics collection
 - [let updatedStatistics: [HKStatistics]?](hkstatisticscollectionquerydescriptor/result/updatedstatistics.md)
   A collection of statistics that have changed.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [HKStatisticsCollectionQueryDescriptor.Results.Iterator](hkstatisticscollectionquerydescriptor/results/iterator.md)

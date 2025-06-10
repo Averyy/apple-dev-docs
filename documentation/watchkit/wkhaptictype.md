@@ -1,6 +1,6 @@
 # WKHapticType
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Constant indicating the style of feedback to deliver using haptics.
@@ -55,6 +55,7 @@ enum WKHapticType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

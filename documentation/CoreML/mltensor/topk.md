@@ -1,6 +1,6 @@
 # topK(_:)
 
-**Framework**: Coreml  
+**Framework**: Core ML  
 **Kind**: method
 
 Returns the  largest values along the last axis of the tensor.

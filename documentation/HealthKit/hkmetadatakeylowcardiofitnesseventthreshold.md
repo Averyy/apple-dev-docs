@@ -25,7 +25,7 @@ The system sets this key on [`lowCardioFitnessEvent`](hkcategorytypeidentifier/l
 
 A low-cardio fitness event indicates a period of time when the user’s VO2 max measurements consistently fall below the defined value. The system triggers this event approximately once every four months.
 
-The value of this key is an [`HKQuantity`](hkquantity.md) object with a unit of `ml/kg/min`. For more information on working with complex units, see [`unitMultiplied(by:)`](hkunit/unitmultiplied(by:).md), [`unitDivided(by:)`](hkunit/unitdivided(by:).md), and [`init(from:)`](hkunit/init(from:)-9qont.md).
+The value of this key is an [`HKQuantity`](hkquantity.md) object with a unit of `ml/(kg*min)`. For more information on working with complex units, see [`unitMultiplied(by:)`](hkunit/unitmultiplied(by:).md), [`unitDivided(by:)`](hkunit/unitdivided(by:).md), and [`init(from:)`](hkunit/init(from:)-9qont.md).
 
 ## See Also
 

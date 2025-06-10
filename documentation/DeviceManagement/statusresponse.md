@@ -3,8 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The response that contains the event status.
-
 **Availability**:
 - Device Assignment Services ?+
 - VPP License Management ?+
@@ -20,14 +18,6 @@ object StatusResponse
 - [Managing Assets](managing-assets.md)
 - [Managing Users](managing-users.md)
 - [Handling Error Responses](handling-error-responses.md)
-
-## Topics
-
-### Objects and Data Types
-- [object ErrorResponse](errorresponse.md)
-  The response that contains the error that occurs.
-- [object MdmInfo](mdminfo.md)
-  Information about the MDM client.
 
 ## See Also
 

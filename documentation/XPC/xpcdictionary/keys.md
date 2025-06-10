@@ -1,6 +1,6 @@
 # keys
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: property
 
 A collection containing just the keys of the dictionary.
@@ -61,4 +61,4 @@ When iterated over, keys appear in this collection in the same order as they occ
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/XPC/xpcdictionary/keys)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xpc/xpcdictionary/keys)*

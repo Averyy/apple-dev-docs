@@ -45,6 +45,7 @@ struct AnnotatedBatch<Scalar> where Scalar : MLShapedArrayScalar
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

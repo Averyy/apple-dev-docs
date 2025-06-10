@@ -1,6 +1,6 @@
 # Drawing sharp layer-based content in visionOS
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Deliver text and vector images at multiple resolutions from custom Core Animation layers in visionOS.
 

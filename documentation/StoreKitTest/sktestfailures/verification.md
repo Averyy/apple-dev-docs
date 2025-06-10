@@ -29,6 +29,7 @@ enum Verification
 - [Equatable](../Swift/Equatable.md)
 - [SKTestFailure](sktestfailure.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

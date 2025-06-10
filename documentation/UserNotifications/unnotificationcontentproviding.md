@@ -1,6 +1,6 @@
 # UNNotificationContentProviding
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: protocol
 
 A protocol the system uses to provide context relevant to user notifications.

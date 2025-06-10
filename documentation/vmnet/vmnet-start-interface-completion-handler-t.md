@@ -1,6 +1,6 @@
 # vmnet_start_interface_completion_handler_t
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: typealias
 
 **Availability**:

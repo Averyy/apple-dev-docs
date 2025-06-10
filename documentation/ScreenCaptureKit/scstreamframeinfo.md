@@ -59,6 +59,7 @@ let scaleFactor = attachments[.scaleFactor] as? Double ?? 0.0
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

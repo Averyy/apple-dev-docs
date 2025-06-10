@@ -1,6 +1,6 @@
 # GET /attribution/{language}
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: httpRequest
 
 Receive attribution information.

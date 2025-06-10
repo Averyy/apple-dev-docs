@@ -23,8 +23,6 @@ The output renders the pixel buffers according to the width and height of displa
 
 > ❗ **Important**:  Attempting to set a video display size of [`zero`](https://developer.apple.com/documentation/CoreFoundation/CGSize/zero) results in the system throwing an exception.
 
- Attempting to set a video display size of [`zero`](https://developer.apple.com/documentation/CoreFoundation/CGSize/zero) results in the system throwing an exception.
-
 ## See Also
 
 - [var advanceIntervalForDelegateInvocation: TimeInterval](avplayeritemrenderedlegibleoutput/advanceintervalfordelegateinvocation.md)

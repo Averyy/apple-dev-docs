@@ -1,6 +1,6 @@
 # XCTIssueReference.IssueType.system
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 A test failure due to an internal failure in the testing framework.

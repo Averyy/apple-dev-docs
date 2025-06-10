@@ -1,6 +1,6 @@
 # WKMenuItemIcon
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Template images that you can use for menus.
@@ -64,6 +64,7 @@ Use these constants with the [`addMenuItem(with:title:action:)`](wkinterfacecont
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

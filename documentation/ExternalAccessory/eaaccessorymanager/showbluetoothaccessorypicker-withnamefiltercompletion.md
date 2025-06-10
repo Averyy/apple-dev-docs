@@ -1,6 +1,6 @@
 # showBluetoothAccessoryPicker(withNameFilter:completion:)
 
-**Framework**: Externalaccessory  
+**Framework**: External Accessory  
 **Kind**: method
 
 Displays an alert that allows the user to pair the device with a Bluetooth accessory.

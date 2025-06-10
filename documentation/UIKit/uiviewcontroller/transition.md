@@ -36,6 +36,8 @@ class Transition
   A transition where the current view flips horizontally to reveal the new view.
 - [static var partialCurl: Self](uiviewcontroller/transition/partialcurl.md)
   A transition where one corner of the current view curls up, revealing the new view underneath.
+### Type Methods
+- [static func zoom(options: UIViewController.Transition.ZoomOptions?, sourceBarButtonItemProvider: (UIViewController.Transition.ZoomSourceViewProviderContext) -> UIBarButtonItem?) -> Self](uiviewcontroller/transition/zoom(options:sourcebarbuttonitemprovider:).md)
 
 ## Relationships
 

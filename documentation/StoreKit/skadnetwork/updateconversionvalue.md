@@ -26,8 +26,6 @@ Apps that ad networks advertise call [`updateConversionValue(_:)`](skadnetwork/u
 
 > ❗ **Important**:  Provide a valid conversion value within the range of `>=0` and `<=63` when calling [`updateConversionValue(_:)`](skadnetwork/updateconversionvalue(_:).md) to register the attribution. Invalid conversion values cause the method to fail, and the conversion to fail to register.
 
- Provide a valid conversion value within the range of `>=0` and `<=63` when calling [`updateConversionValue(_:)`](skadnetwork/updateconversionvalue(_:).md) to register the attribution. Invalid conversion values cause the method to fail, and the conversion to fail to register.
-
 Apps may call [`updateConversionValue(_:)`](skadnetwork/updateconversionvalue(_:).md) again within a rolling 24-hour period to update the conversion value. Calling this method serves two purposes:
 
 - It registers the attribution by generating an install notification — the cryptographically signed data that confirms that a user installed and launched this app as a result of an ad.

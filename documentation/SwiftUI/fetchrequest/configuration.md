@@ -95,6 +95,7 @@ When the user types into the text field, the predicate updates, the request fetc
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

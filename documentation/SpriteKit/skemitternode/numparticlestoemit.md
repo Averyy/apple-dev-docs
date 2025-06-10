@@ -17,6 +17,7 @@ The number of particles the emitter should emit before stopping.
 ## Declaration
 
 ```swift
+@MainActor
 var numParticlesToEmit: Int { get set }
 ```
 

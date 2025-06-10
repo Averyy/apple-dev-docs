@@ -1,6 +1,6 @@
 # recordChangeTag
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: property
 
 The server change token for the record.

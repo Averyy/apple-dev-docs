@@ -8,7 +8,7 @@ A simplified query type conforming to `UniqueAppEntityQuery`.  Use this as the v
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -46,6 +46,7 @@ struct UniqueAppEntityProvider<Entity> where Entity : UniqueAppEntity
 - [EnumerableEntityQuery](enumerableentityquery.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UniqueAppEntityQuery](uniqueappentityquery.md)
 
 ## See Also

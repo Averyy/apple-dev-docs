@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_MaxKeyFrameInterval
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The maximum interval between key frames, also known as the key frame rate.

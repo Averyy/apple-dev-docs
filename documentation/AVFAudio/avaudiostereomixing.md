@@ -24,8 +24,6 @@ protocol AVAudioStereoMixing : NSObjectProtocol
 
 > ❗ **Important**:  The [`AVAudioMixing`](avaudiomixing.md) protocol adopts this protocol. As a result, many classes also inherit this protocol by adopting `AVAudioMixing`.
 
- The [`AVAudioMixing`](avaudiomixing.md) protocol adopts this protocol. As a result, many classes also inherit this protocol by adopting `AVAudioMixing`.
-
 ## Topics
 
 ### Getting and Setting the Stereo Panning

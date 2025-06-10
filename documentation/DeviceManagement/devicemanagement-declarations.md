@@ -23,6 +23,8 @@ The available declarations for device management.
   The declaration to configure a Calendar subscription.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AudioAccessorySettings](audioaccessorysettings.md)
+  The declaration to configure audio accessory settings.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
@@ -35,12 +37,22 @@ The available declarations for device management.
   The declaration to test the MDM system.
 - [object MathSettings](mathsettings.md)
   The declaration to configure the math and calculator apps.
+- [object Package](package.md)
+  The declaration to install a package.
 - [object PasscodeSettings](passcodesettings.md)
   The declaration to configure passcode policy settings.
+- [object SafariBookmarks](safaribookmarks.md)
+  The declaration to configure managed bookmarks in Safari.
 - [object SafariExtensionSettings](safariextensionsettings.md)
   The declaration to configure Safari Extensions.
+- [object SafariSettings](safarisettings.md)
+  The declaration to configure Safari settings.
 - [object ScreenSharingConnection](screensharingconnection.md)
   The declaration to configure a connection to a screen-sharing host.
+- [object ScreenSharingConnectionGroup](screensharingconnectiongroup.md)
+  The declaration to configure a group of screen-sharing connections.
+- [object ScreenSharingHostSettings](screensharinghostsettings.md)
+  The declaration to configure screen-sharing host settings and restrictions.
 - [object SecurityCertificate](securitycertificate.md)
   The declaration to add a certificate to the device.
 - [object SecurityIdentity](securityidentity.md)
@@ -93,7 +105,7 @@ The available declarations for device management.
   The declaration to configure the server’s feature set.
 ### Base Declaration
 - [object DeclarationBase](declarationbase.md)
-  The common properties of every declaration.
+  Keys common to all declarations used with the Remote Management protocol.
 
 ## See Also
 

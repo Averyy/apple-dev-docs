@@ -1,0 +1,18 @@
+# st_mtimespec
+
+**Framework**: Kernel  
+**Kind**: structp
+
+**Availability**:
+- macOS 10.6+
+
+## Declaration
+
+```swift
+struct timespec st_mtimespec;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/stat64/1493572-st_mtimespec)*

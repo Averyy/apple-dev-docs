@@ -96,4 +96,4 @@ Drag the slice slider in the control bar to visually compare different mipmap le
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/inspecting-textures)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/inspecting-textures)*

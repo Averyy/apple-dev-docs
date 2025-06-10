@@ -23,16 +23,15 @@ struct HeadTrackedSpatialExperience
 ## Relationships
 
 ### Conforms To
-- [AVAudioSessionSpatialExperience](../AVFoundation/AVAudioSessionSpatialExperience.md)
+- [AVAudioSessionSpatialExperience](avaudiosessionspatialexperience-swift.protocol.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [func setIntendedSpatialExperience(any AVAudioSessionSpatialExperience) throws](avaudiosession/setintendedspatialexperience(_:).md)
   Sets the spatial audio experience your app intends to provide the user.
-- [var intendedSpatialExperience: any AVAudioSessionSpatialExperience](avaudiosession/intendedspatialexperience-1qwbe.md)
-  The spatial audio experience your app intends to provide the user.
 - [protocol AVAudioSessionSpatialExperience](../AVFoundation/AVAudioSessionSpatialExperience.md)
   A protocol that defines types of spatial audio experiences that the system supports.
 - [AVAudioSession.FixedSpatialExperience](avaudiosession/fixedspatialexperience.md)

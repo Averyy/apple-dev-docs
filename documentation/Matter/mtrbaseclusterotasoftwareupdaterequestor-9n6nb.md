@@ -23,7 +23,7 @@ class MTRBaseClusterOTASoftwareUpdateRequestor
 ### Initializers
 - [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclusterotasoftwareupdaterequestor-9n6nb/init(device:endpointid:queue:).md)
 ### Instance Methods
-- [func announceOTAProvider(with: MTROTASoftwareUpdateRequestorClusterAnnounceOTAProviderParams, completion: MTRStatusCompletion)](mtrbaseclusterotasoftwareupdaterequestor-9n6nb/announceotaprovider(with:completion:).md)
+- [func announceOTAProvider(with: MTROTASoftwareUpdateRequestorClusterAnnounceOTAProviderParams, completion: ((any Error)?) -> Void)](mtrbaseclusterotasoftwareupdaterequestor-9n6nb/announceotaprovider(with:completion:).md)
 - [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdaterequestor-9n6nb/readattributeacceptedcommandlist(completion:).md)
 - [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdaterequestor-9n6nb/readattributeattributelist(completion:).md)
 - [func readAttributeClusterRevision(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdaterequestor-9n6nb/readattributeclusterrevision(completion:).md)
@@ -42,8 +42,8 @@ class MTRBaseClusterOTASoftwareUpdateRequestor
 - [func subscribeAttributeUpdatePossible(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdaterequestor-9n6nb/subscribeattributeupdatepossible(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeUpdateState(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdaterequestor-9n6nb/subscribeattributeupdatestate(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeUpdateStateProgress(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdaterequestor-9n6nb/subscribeattributeupdatestateprogress(with:subscriptionestablished:reporthandler:).md)
-- [func writeAttributeDefaultOTAProviders(withValue: [Any], completion: MTRStatusCompletion)](mtrbaseclusterotasoftwareupdaterequestor-9n6nb/writeattributedefaultotaproviders(withvalue:completion:).md)
-- [func writeAttributeDefaultOTAProviders(withValue: [Any], params: MTRWriteParams?, completion: MTRStatusCompletion)](mtrbaseclusterotasoftwareupdaterequestor-9n6nb/writeattributedefaultotaproviders(withvalue:params:completion:).md)
+- [func writeAttributeDefaultOTAProviders(withValue: [Any], completion: ((any Error)?) -> Void)](mtrbaseclusterotasoftwareupdaterequestor-9n6nb/writeattributedefaultotaproviders(withvalue:completion:).md)
+- [func writeAttributeDefaultOTAProviders(withValue: [Any], params: MTRWriteParams?, completion: ((any Error)?) -> Void)](mtrbaseclusterotasoftwareupdaterequestor-9n6nb/writeattributedefaultotaproviders(withvalue:params:completion:).md)
 ### Type Methods
 - [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdaterequestor-9n6nb/readattributeacceptedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
 - [class func readAttributeAttributeList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdaterequestor-9n6nb/readattributeattributelist(withclusterstatecache:endpoint:queue:completion:).md)

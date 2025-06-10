@@ -30,6 +30,7 @@ struct AVMetrics<MetricEvent> where MetricEvent : AVMetricEvent
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

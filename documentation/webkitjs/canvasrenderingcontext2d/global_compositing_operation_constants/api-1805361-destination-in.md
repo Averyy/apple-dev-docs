@@ -1,6 +1,6 @@
 # destination-in
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 #### Overview

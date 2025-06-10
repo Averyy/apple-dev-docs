@@ -28,8 +28,6 @@ To allow outstanding tasks to run until completion, call [`finishTasksAndInvalid
 
 > ❗ **Important**:  Calling this method on the session returned by the [`shared`](urlsession/shared.md) method has no effect.
 
- Calling this method on the session returned by the [`shared`](urlsession/shared.md) method has no effect.
-
 ## See Also
 
 - [func finishTasksAndInvalidate()](urlsession/finishtasksandinvalidate.md)

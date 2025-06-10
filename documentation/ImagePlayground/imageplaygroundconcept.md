@@ -35,9 +35,6 @@ Use this type to wrap pieces of text describing the image you want to create. Yo
   Creates a concept structure from the specified image object.
 - [static func image(URL) -> ImagePlaygroundConcept?](imageplaygroundconcept/image(_:)-2s44c.md)
   Creates a concept structure from the image at the specified URL.
-### Type Methods
-- [static func extracted(from: String) -> ImagePlaygroundConcept](imageplaygroundconcept/extracted(from:).md)
-  Builds a playground concept by extracting multiple concepts from a long text that describes the contents of the image.
 
 ## See Also
 

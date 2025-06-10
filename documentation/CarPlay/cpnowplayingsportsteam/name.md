@@ -13,6 +13,7 @@ A localized, user-visible name for this sports team.
 ## Declaration
 
 ```swift
+@MainActor
 var name: String { get }
 ```
 

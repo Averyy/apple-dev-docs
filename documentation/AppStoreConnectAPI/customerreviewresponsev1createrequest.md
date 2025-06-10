@@ -28,6 +28,8 @@ object CustomerReviewResponseV1CreateRequest
   The data structure that represents the Customer Review Responses resource.
 - [object CustomerReview](customerreview.md)
   The data structure that represents a Customer Reviews resource.
+- [object AppCustomerReviewsLinkagesResponse](appcustomerreviewslinkagesresponse.md)
+- [object CustomerReviewResponseLinkageResponse](customerreviewresponselinkageresponse.md)
 
 
 ---

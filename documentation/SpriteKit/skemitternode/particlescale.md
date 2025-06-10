@@ -17,7 +17,6 @@ The average initial scale factor of a particle.
 ## Declaration
 
 ```swift
-@MainActor
 var particleScale: CGFloat { get set }
 ```
 

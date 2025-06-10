@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to install an app.
+The command to install a third-party app on a device.
 
 **Availability**:
 - iOS 5.0+
@@ -12,8 +12,6 @@ The request dictionary to install an app.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,12 +21,11 @@ object InstallApplicationCommand.Command
 
 ## Topics
 
-### Commands
+### Objects
 - [object InstallApplicationCommand.Command.Attributes](installapplicationcommand/command-data.dictionary/attributes-data.dictionary.md)
   A dictionary that contains the initial attributes of the app.
 - [object InstallApplicationCommand.Command.Configuration](installapplicationcommand/command-data.dictionary/configuration-data.dictionary.md)
   A dictionary that contains the configuration to install an enterprise app.
-- [object ManifestURL.ItemsItem](manifesturl/itemsitem.md)
 - [object InstallApplicationCommand.Command.Options](installapplicationcommand/command-data.dictionary/options-data.dictionary.md)
   A dictionary that contains the app installation options.
 

@@ -37,17 +37,6 @@ For a sample app that uses body tracking, see [`Capturing Body Motion in 3D`](ht
   The body-tracking setting.
 - [BodyTrackingComponent.Target](bodytrackingcomponent/target-swift.enum.md)
   Body-tracking settings for selecting a person to track.
-### Registering a component type
-- [static func registerComponent()](bodytrackingcomponent/registercomponent.md)
-  Registers a new component type.
-### Comparing body tracking components
-- [static func == (BodyTrackingComponent, BodyTrackingComponent) -> Bool](bodytrackingcomponent/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](bodytrackingcomponent/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Component Implementations](bodytrackingcomponent/component-implementations.md)
-- [Equatable Implementations](bodytrackingcomponent/equatable-implementations.md)
 
 ## Relationships
 

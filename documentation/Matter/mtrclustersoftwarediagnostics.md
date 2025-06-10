@@ -33,10 +33,10 @@ class MTRClusterSoftwareDiagnostics
 - [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclustersoftwarediagnostics/readattributefeaturemap(with:).md)
 - [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclustersoftwarediagnostics/readattributegeneratedcommandlist(with:).md)
 - [func readAttributeThreadMetrics(with: MTRReadParams?) -> [String : Any]?](mtrclustersoftwarediagnostics/readattributethreadmetrics(with:).md)
-- [func resetWatermarks(with: MTRSoftwareDiagnosticsClusterResetWatermarksParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustersoftwarediagnostics/resetwatermarks(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func resetWatermarks(with: MTRSoftwareDiagnosticsClusterResetWatermarksParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: MTRStatusCompletion)](mtrclustersoftwarediagnostics/resetwatermarks(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func resetWatermarks(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustersoftwarediagnostics/resetwatermarks(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func resetWatermarks(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: MTRStatusCompletion)](mtrclustersoftwarediagnostics/resetwatermarks(withexpectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func resetWatermarks(with: MTRSoftwareDiagnosticsClusterResetWatermarksParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustersoftwarediagnostics/resetwatermarks(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func resetWatermarks(with: MTRSoftwareDiagnosticsClusterResetWatermarksParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclustersoftwarediagnostics/resetwatermarks(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func resetWatermarks(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustersoftwarediagnostics/resetwatermarks(withexpectedvalues:expectedvalueinterval:completion:).md)
+- [func resetWatermarks(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclustersoftwarediagnostics/resetwatermarks(withexpectedvalues:expectedvalueinterval:completionhandler:).md)
 
 ## Relationships
 

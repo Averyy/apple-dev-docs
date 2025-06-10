@@ -1,6 +1,6 @@
 # setOptionalShared(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sets the web history object to share.

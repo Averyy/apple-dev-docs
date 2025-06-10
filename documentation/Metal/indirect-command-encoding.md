@@ -63,6 +63,8 @@ You can encode an indirect command buffer to run on either the CPU or the GPU. H
   Encode a render pass to draw graphics into an image.
 - [Compute Passes](compute-passes.md)
   Encode a compute pass that runs computations in parallel on a thread grid, processing and manipulating Metal resource data on multiple cores of a GPU.
+- [Machine-Learning Passes](machine-learning-passes.md)
+  Add machine-learning model inference to your Metal app’s GPU workflow.
 - [Blit Passes](blit-passes.md)
   Encode a block information transfer pass to adjust and copy data to and from GPU resources, such as buffers and textures.
 - [Ray Tracing with Acceleration Structures](ray-tracing-with-acceleration-structures.md)

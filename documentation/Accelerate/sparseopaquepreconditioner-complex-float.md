@@ -37,6 +37,13 @@ struct SparseOpaquePreconditioner_Complex_Float
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 
+## See Also
+
+- [struct SparsePreconditioner_t](sparsepreconditioner_t.md)
+  Constants that define the preconditioner type.
+- [struct SparseOpaquePreconditioner_Complex_Double](sparseopaquepreconditioner_complex_double.md)
+  Represents a preconditioner for matrices of complex double values .
+
 
 ---
 

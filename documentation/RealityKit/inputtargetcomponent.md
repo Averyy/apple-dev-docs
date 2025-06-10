@@ -10,6 +10,7 @@ A component that gives an entity the ability to receive system input.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -43,9 +44,6 @@ myEntity.components.set(collision)
 ### Structures
 - [InputTargetComponent.InputType](inputtargetcomponent/inputtype.md)
   A type of input that the `InputTargetComponent`’s entity can receive.
-### Operators
-- [static func == (InputTargetComponent, InputTargetComponent) -> Bool](inputtargetcomponent/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(allowedInputTypes: InputTargetComponent.InputType)](inputtargetcomponent/init(allowedinputtypes:).md)
   Creates a new instance of an `InputTargetComponent` with a set of `allowedInputTypes` that define what kinds of input the component’s entity can receive.
@@ -54,9 +52,6 @@ myEntity.components.set(collision)
   The set of input types this component’s entity can receive.
 - [var isEnabled: Bool](inputtargetcomponent/isenabled.md)
   Whether the component’s entity is enabled for input.
-### Default Implementations
-- [Component Implementations](inputtargetcomponent/component-implementations.md)
-- [Equatable Implementations](inputtargetcomponent/equatable-implementations.md)
 
 ## Relationships
 
@@ -68,6 +63,9 @@ myEntity.components.set(collision)
 
 - [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
+- [struct ManipulationComponent](manipulationcomponent.md)
+  A component that adds fluid and immersive interactive behaviors and effects.
+- [struct GestureComponent](gesturecomponent.md)
 - [struct EntityTargetValue](entitytargetvalue.md)
   A value containing an original gesture value along with a targeted entity.
 

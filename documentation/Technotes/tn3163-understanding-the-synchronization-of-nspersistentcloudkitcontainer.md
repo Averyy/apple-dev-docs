@@ -93,7 +93,7 @@ This section shows the filters for tracing the phases, and provides the represen
 
 ##### Observe If the Core Data Store Is Changed
 
-When observing the app saving a managed object context ([`NSManagedObjectContext`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext)) or a remote change notification ([`NSPersistentStoreRemoteChange`](https://developer.apple.com/documentation/foundation/nsnotification/name/3180044-nspersistentstoreremotechange)) that indicates the store being changed remotely, `NSPersistentCloudKitContainer` logs the event and starts to schedule an export. Use the `process` (”<the app name>”), `subsystem` (“com.apple.coredata”), and `message` (“Observed”) filters to find the relevant logs, as shown in the following example:
+When observing the app saving a managed object context ([`NSManagedObjectContext`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext)) or a remote change notification ([`NSPersistentStoreRemoteChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSPersistentStoreRemoteChange)) that indicates the store being changed remotely, `NSPersistentCloudKitContainer` logs the event and starts to schedule an export. Use the `process` (”<the app name>”), `subsystem` (“com.apple.coredata”), and `message` (“Observed”) filters to find the relevant logs, as shown in the following example:
 
 ```None
 info  … 14:14:15.227567 …  YourCoolApp  debug: CoreData+CloudKit: 
@@ -480,4 +480,4 @@ For more information about filing a great feedback report, see WWDC22 session 10
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer)*

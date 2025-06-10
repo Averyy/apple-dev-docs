@@ -1,6 +1,6 @@
 # webkitSupportsFullscreen
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A Boolean value indicating whether the video can be played in fullscreen mode.

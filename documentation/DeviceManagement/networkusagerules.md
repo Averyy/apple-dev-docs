@@ -8,8 +8,6 @@ The payload you use to configure network-usage rules.
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,17 +25,17 @@ Network usage rules allow enterprises to specify how devices use networks, such 
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, Shared iPad |
-| User Channel | - |
-| Allow Manual Install | - |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, Shared iPad |
+| User channel | NA |
+| Allow manual install | NA |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

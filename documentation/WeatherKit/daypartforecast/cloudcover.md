@@ -1,6 +1,6 @@
 # cloudCover
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The percentage of the sky covered with clouds.

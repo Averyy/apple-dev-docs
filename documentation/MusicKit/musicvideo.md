@@ -124,6 +124,7 @@ struct MusicVideo
 - [MusicPropertyContainer](musicpropertycontainer.md)
 - [MusicRecentlyPlayedRequestable](musicrecentlyplayedrequestable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

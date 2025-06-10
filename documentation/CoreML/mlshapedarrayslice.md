@@ -84,6 +84,7 @@ struct MLShapedArraySlice<Scalar> where Scalar : MLShapedArrayScalar
 - [MutableCollection](../Swift/MutableCollection.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

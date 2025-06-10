@@ -1,0 +1,18 @@
+# withNoBuffer
+
+**Framework**: Kernel  
+**Kind**: clm
+
+**Availability**:
+- macOS 10.11.4+
+
+## Declaration
+
+```swift
+static IONetworkData * withNoBuffer(const char *name, UInt32 bufferSize, UInt32 accessTypes, void *target, Action action, void *param);
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/ionetworkdata/1423538-withnobuffer)*

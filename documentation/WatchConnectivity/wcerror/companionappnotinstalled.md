@@ -1,6 +1,6 @@
 # companionAppNotInstalled
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An error indicating that the companion hasn’t installed the app.

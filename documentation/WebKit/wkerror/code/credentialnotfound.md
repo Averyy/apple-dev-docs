@@ -1,6 +1,6 @@
 # WKError.Code.credentialNotFound
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 An error that indicates the system could not find a passkey during an export.

@@ -1,6 +1,6 @@
 # IOSurfaceLookupFromMachPort(_:)
 
-**Framework**: Iosurface  
+**Framework**: IOSurface  
 **Kind**: func
 
 Recreates an IOSurfaceRef from a mach port.

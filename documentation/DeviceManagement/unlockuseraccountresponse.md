@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to unlock a user account.
+A response from the device after it processes the command to unlock a user account that the system locked because of too many failed password attempts.
 
 **Availability**:
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,14 +16,14 @@ object UnlockUserAccountResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object UnlockUserAccountResponse.ErrorChainItem](unlockuseraccountresponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 
 ## See Also
 
 - [object UnlockUserAccountCommand](unlockuseraccountcommand.md)
-  The command to unlock a local user account on a device.
+  The command to unlock a user account that the system locked because of too many failed password attempts.
 
 
 ---

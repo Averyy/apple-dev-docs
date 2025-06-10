@@ -24,8 +24,6 @@ func nw_group_descriptor_create_multicast(_ multicast_group: nw_endpoint_t) -> n
 
 > ❗ **Important**:  In order to use multicast on iOS, your app will need to have the `com.apple.developer.networking.multicast` entitlement.
 
- In order to use multicast on iOS, your app will need to have the `com.apple.developer.networking.multicast` entitlement.
-
 ## Topics
 
 ### Customizing Multicast Behavior

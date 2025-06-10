@@ -32,8 +32,6 @@ The string constant in macOS 10.3 and earlier is `@"CharacterEncoding"`.
   The author of the document.
 - [static let category: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/category.md)
   The document’s category.
-- [static let cocoaVersionDocumentAttribute: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/cocoaversiondocumentattribute.md)
-  The version of Cocoa that created the file.
 - [static let comment: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/comment.md)
   The document comments.
 - [static let company: NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey/company.md)

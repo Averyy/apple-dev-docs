@@ -23,7 +23,7 @@ mutating func waitForAll(isolation: isolated (any Actor)? = #isolation) async
 ## See Also
 
 - [func next(isolation: isolated (any Actor)?) async -> ChildTaskResult?](taskgroup/next(isolation:).md)
-  Wait for the next child task to complete, and return the value it returned.
+  Waits for the next child task to complete, and returns the value it returned.
 - [var isEmpty: Bool](taskgroup/isempty.md)
   A Boolean value that indicates whether the group has any remaining tasks.
 

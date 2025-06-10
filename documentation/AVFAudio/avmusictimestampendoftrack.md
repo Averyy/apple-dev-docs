@@ -22,7 +22,7 @@ var AVMusicTimeStampEndOfTrack: Double { get }
 
 #### Discussion
 
-Pass this value as the length of an [`AVBeatRange`](avbeatrange.md) to indicate an end time beyond the last event in the track. This makes it possible to specify a beat range that includes all events starting at a particular time, up to and including the last event.
+Pass this value as the length of an `AVBeatRange` to indicate an end time beyond the last event in the track. This makes it possible to specify a beat range that includes all events starting at a particular time, up to and including the last event.
 
 ## See Also
 
@@ -30,8 +30,6 @@ Pass this value as the length of an [`AVBeatRange`](avbeatrange.md) to indicate 
   Gets the beat the system plays at the specified host time.
 - [func beats(forSeconds: TimeInterval) -> AVMusicTimeStamp](avaudiosequencer/beats(forseconds:).md)
   Gets the beat position (timestamp) for the specified time in the track.
-- [typealias AVBeatRange](avbeatrange.md)
-  A specific time range within a music track.
 
 
 ---

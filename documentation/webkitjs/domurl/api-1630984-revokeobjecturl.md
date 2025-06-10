@@ -1,6 +1,6 @@
 # revokeObjectURL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clm
 
 **Availability**:

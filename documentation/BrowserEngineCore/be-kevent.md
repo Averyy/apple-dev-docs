@@ -23,8 +23,6 @@ The number of events or errors that the function places in `eventlist`, up to `n
 
 > ❗ **Important**: To use 64-bit data types, call `be_kevent64`.
 
-To use 64-bit data types, call `be_kevent64`.
-
 Call `kqueue()` to create a kernel queue file descriptor that you pass to this function in the `kq` parameter. `kqueue()` returns a file descriptor on success; otherwise, it returns `-1` and sets `errno` to indicate the error.
 
 Use the `EV_SET` macro to fill out `struct kevent` structures with information about the events you want to receive, and store these structures in the `changelist` array.

@@ -1,6 +1,6 @@
 # sorted(by:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns the elements of the sequence, sorted using the given predicate as the comparison between elements.

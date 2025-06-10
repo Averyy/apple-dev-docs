@@ -46,6 +46,8 @@ struct BNNSGraphArgumentType
 
 ## See Also
 
+- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](bnnsgraphcontextsetstreamingadvancecount(_:_:).md)
+  Sets the streaming advancement amount for cases with dynamically shaped inputs.
 - [func BNNSGraphContextSetArgumentType(bnns_graph_context_t, BNNSGraphArgumentType) -> Int32](bnnsgraphcontextsetargumenttype(_:_:).md)
   Specifies the argument type for a graph context.
 - [func BNNSGraphContextSetDynamicShapes(bnns_graph_context_t, UnsafePointer<CChar>?, Int, UnsafeMutablePointer<bnns_graph_shape_t>) -> Int32](bnnsgraphcontextsetdynamicshapes(_:_:_:_:).md)
@@ -58,6 +60,8 @@ struct BNNSGraphArgumentType
   Specifies that the context checks intermediate tensors for NaNs and infinities.
 - [func BNNSGraphContextGetWorkspaceSize(bnns_graph_context_t, UnsafePointer<CChar>?) -> Int](bnnsgraphcontextgetworkspacesize(_:_:).md)
   Returns the minimum size, in bytes, of the workspace that graph context execution requires.
+- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](bnnsgraphcontextsetstreamingadvancecount(_:_:).md)
+  Sets the streaming advancement amount for cases with dynamically shaped inputs.
 
 
 ---

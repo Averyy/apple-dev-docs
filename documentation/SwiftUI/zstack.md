@@ -1,6 +1,6 @@
 # ZStack
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A view that overlays its subviews, aligning them in both axes.
@@ -26,10 +26,10 @@ struct ZStack<Content> where Content : View
 - [Building layouts with stack views](building-layouts-with-stack-views.md)
 - [Laying out a simple view](laying-out-a-simple-view.md)
 - [Adding a background to your view](adding-a-background-to-your-view.md)
-- [Making fine adjustments to a view’s position](making-fine-adjustments-to-a-view-s-position.md)
 - [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
-- [Picking container views for your content](picking-container-views-for-your-content.md)
+- [Making fine adjustments to a view’s position](making-fine-adjustments-to-a-view-s-position.md)
 - [Aligning views within a stack](aligning-views-within-a-stack.md)
+- [Picking container views for your content](picking-container-views-for-your-content.md)
 
 #### Overview
 
@@ -127,4 +127,4 @@ var body: some View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/zstack)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/zstack)*

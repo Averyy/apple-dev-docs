@@ -1,6 +1,6 @@
 # VTSession
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: typealias
 
 A reference to a VideoToolbox compression session,  decompression session or pixel transfer session.

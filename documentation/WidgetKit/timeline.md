@@ -1,6 +1,6 @@
 # Timeline
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 An object that specifies a date for WidgetKit to update a widget’s view.
@@ -8,8 +8,9 @@ An object that specifies a date for WidgetKit to update a widget’s view.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -53,6 +54,8 @@ For more information about generating timelines, see [`TimelineProvider`](timeli
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
 - [protocol TimelineProvider](timelineprovider.md)
   A type that advises WidgetKit when to update a widget’s display.
+- [protocol AppIntentTimelineProvider](appintenttimelineprovider.md)
+  A type that advises WidgetKit when to update a user-configurable widget’s display.
 - [protocol IntentTimelineProvider](intenttimelineprovider.md)
   A type that advises WidgetKit when to update a user-configurable widget’s display.
 - [struct TimelineProviderContext](timelineprovidercontext.md)
@@ -61,10 +64,8 @@ For more information about generating timelines, see [`TimelineProvider`](timeli
   A type that specifies the date to display a widget, and, optionally, indicates the current relevance of the widget’s content.
 - [class WidgetCenter](widgetcenter.md)
   An object that contains a list of user-configured widgets and is used for reloading widget timelines.
-- [protocol AppIntentTimelineProvider](appintenttimelineprovider.md)
-  A type that advises WidgetKit when to update a user-configurable widget’s display.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/timeline)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/timeline)*

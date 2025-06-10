@@ -1,6 +1,6 @@
 # MonthlyWeatherStatistics.Indices
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: typealias
 
 A type that represents the indices that are valid for subscripting the collection, in ascending order.

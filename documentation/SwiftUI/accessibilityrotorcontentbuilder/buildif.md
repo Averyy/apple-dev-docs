@@ -20,16 +20,7 @@ static func buildIf<Content>(_ content: Content?) -> some AccessibilityRotorCont
 
 ## See Also
 
-- [static func buildBlock<Content>(Content) -> some AccessibilityRotorContent](accessibilityrotorcontentbuilder/buildblock(_:).md)
-- [static func buildBlock<C0, C1>(C0, C1) -> some AccessibilityRotorContent](accessibilityrotorcontentbuilder/buildblock(_:_:).md)
-- [static func buildBlock<C0, C1, C2>(C0, C1, C2) -> some AccessibilityRotorContent](accessibilityrotorcontentbuilder/buildblock(_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3>(C0, C1, C2, C3) -> some AccessibilityRotorContent](accessibilityrotorcontentbuilder/buildblock(_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4>(C0, C1, C2, C3, C4) -> some AccessibilityRotorContent](accessibilityrotorcontentbuilder/buildblock(_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, C5>(C0, C1, C2, C3, C4, C5) -> some AccessibilityRotorContent](accessibilityrotorcontentbuilder/buildblock(_:_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6>(C0, C1, C2, C3, C4, C5, C6) -> some AccessibilityRotorContent](accessibilityrotorcontentbuilder/buildblock(_:_:_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7>(C0, C1, C2, C3, C4, C5, C6, C7) -> some AccessibilityRotorContent](accessibilityrotorcontentbuilder/buildblock(_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8>(C0, C1, C2, C3, C4, C5, C6, C7, C8) -> some AccessibilityRotorContent](accessibilityrotorcontentbuilder/buildblock(_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<C0, C1, C2, C3, C4, C5, C6, C7, C8, C9>(C0, C1, C2, C3, C4, C5, C6, C7, C8, C9) -> some AccessibilityRotorContent](accessibilityrotorcontentbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:).md)
+- [static buildBlock(_:)](accessibilityrotorcontentbuilder/buildblock(_:).md)
 - [static func buildExpression<Content>(Content) -> Content](accessibilityrotorcontentbuilder/buildexpression(_:).md)
   Builds an expression within the builder.
 

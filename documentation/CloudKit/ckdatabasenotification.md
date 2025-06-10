@@ -1,6 +1,6 @@
 # CKDatabaseNotification
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: class
 
 A notification that triggers when the contents of a database change.
@@ -52,6 +52,7 @@ You don’t instantiate this class. Instead, implement [`application(_:didReceiv
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -63,4 +64,4 @@ You don’t instantiate this class. Instead, implement [`application(_:didReceiv
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckdatabasenotification)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckdatabasenotification)*

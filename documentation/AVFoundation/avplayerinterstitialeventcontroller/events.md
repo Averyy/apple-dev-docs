@@ -1,6 +1,6 @@
 # events
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The current schedule of interstitial events.

@@ -1,6 +1,6 @@
 # Type
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: property
 
 A 32-bit integer that identifies the atom type.

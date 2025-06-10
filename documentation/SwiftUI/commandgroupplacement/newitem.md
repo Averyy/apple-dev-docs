@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-Placement for commands that create and open different kinds of documents.
+Placement for commands that create different kinds of documents.
 
 **Availability**:
 - iOS 14.0+
@@ -23,8 +23,6 @@ static let newItem: CommandGroupPlacement
 By default, this group includes the following commands in macOS:
 
 - New
-- Open
-- Open Recent submenu (managed automatically)
 
 ## See Also
 

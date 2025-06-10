@@ -54,8 +54,6 @@ If you’re using a [`UITableViewController`](uitableviewcontroller.md), assign 
 
 > ❗ **Important**:  [`UIRefreshControl`](uirefreshcontrol.md) isn’t available when the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md). However, you can update your app to provide similar functionality in the Mac idiom. For example, replace the control with a Refresh menu item by creating a [`UIKeyCommand`](uikeycommand.md) object with the title “Refresh” and the keyboard shortcut Command-R. Then add the command to your app’s menu system. For more information, see [`Adding menus and shortcuts to the menu bar and user interface`](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md).
 
- [`UIRefreshControl`](uirefreshcontrol.md) isn’t available when the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md). However, you can update your app to provide similar functionality in the Mac idiom. For example, replace the control with a Refresh menu item by creating a [`UIKeyCommand`](uikeycommand.md) object with the title “Refresh” and the keyboard shortcut Command-R. Then add the command to your app’s menu system. For more information, see [`Adding menus and shortcuts to the menu bar and user interface`](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md).
-
 ## Topics
 
 ### Initializing a refresh control
@@ -89,6 +87,7 @@ If you’re using a [`UITableViewController`](uitableviewcontroller.md), assign 
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

@@ -12,8 +12,6 @@ A reference to an ACME identity.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,9 +19,13 @@ A reference to an ACME identity.
 object AssetCredentialACME
 ```
 
+#### Discussion
+
+Specify `com.apple.asset.credential.acme` as the declaration type.
+
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object AssetCredentialACMEAuthenticationObject](assetcredentialacmeauthenticationobject.md)
   The server authentication details for an ACME asset credential.
 - [object AssetCredentialACMEReferenceObject](assetcredentialacmereferenceobject.md)

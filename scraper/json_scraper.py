@@ -2,6 +2,7 @@
 
 import json
 import time
+from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set
 from urllib.parse import urljoin, urlparse
@@ -291,6 +292,18 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                     logger.debug("content_unchanged_skip_scrape", json_url=json_url, doc_url=doc_url)
                     self.stats['pages_skipped'] += 1
                     
+                    # Update hash with file path for orphan detection even though content unchanged
+                    # We can calculate file path from URL alone since it's deterministic
+                    file_path = self._get_organized_file_path(doc_url, {})
+                    # Note: We don't have response_text for 304, but we can still update session info
+                    if json_url in self.hash_manager.hashes:
+                        # Get existing hash data and update with new session/file path
+                        existing_data = self.hash_manager.hashes[json_url]
+                        existing_data['session_id'] = self.hash_manager.session_id
+                        existing_data['file_path'] = str(file_path)
+                        existing_data['last_checked'] = datetime.utcnow().isoformat()
+                        self.hash_manager._modified = True
+                    
                     # IMPORTANT: Still need to discover child pages!
                     # The main page might be unchanged but children could be new/updated
                     
@@ -334,11 +347,14 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                     # Extract and save page data
                     page_data = self._extract_from_json(data, doc_url)
                     if page_data:
-                        # Update hashes before saving
-                        self.hash_manager.update_hash(json_url, response_text, etag)
-                        self.hash_manager.update_hash(doc_url, response_text, etag)
+                        # Calculate file path for hash updates
+                        file_path = self._get_organized_file_path(doc_url, page_data)
                         
-                        await self.save_page_data(doc_url, page_data)
+                        # Update hashes before saving with file path
+                        self.hash_manager.update_hash(json_url, response_text, etag, file_path)
+                        self.hash_manager.update_hash(doc_url, response_text, etag, file_path)
+                        
+                        await self.save_page_data(doc_url, page_data, file_path)
                         self.stats['pages_scraped'] += 1
                         
                         # Update progress
@@ -357,6 +373,14 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
                     # Content hasn't changed according to hash
                     logger.debug("content_unchanged_via_hash", url=doc_url)
                     self.stats['pages_skipped'] += 1
+                    
+                    # Still need to update hash with file path for orphan detection
+                    page_data = self._extract_from_json(data, doc_url)
+                    if page_data:
+                        file_path = self._get_organized_file_path(doc_url, page_data)
+                        # Update hash with current session info even though content unchanged
+                        self.hash_manager.update_hash(json_url, response_text, etag, file_path)
+                        self.hash_manager.update_hash(doc_url, response_text, etag, file_path)
                 
                 # Extract new URLs for discovery (regardless of whether we saved)
                 new_urls = self._extract_urls_from_json_data(data)
@@ -575,13 +599,29 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         result = await self.fetch_page_with_etag(json_url, use_etag=False)
         if not result:
             return
-        response_text = result[0]
+        response_text, etag = result
         
         try:
             data = json.loads(response_text)
             
             # This JSON file is valid documentation
             self.discovered_urls.add(json_url)
+            
+            # Update session tracking for this discovered URL
+            # Convert JSON URL to doc URL for file path calculation
+            doc_url = json_url.replace(self.JSON_BASE_URL + '/', self.DOCUMENTATION_BASE_URL + '/')
+            doc_url = doc_url.rstrip('.json')
+            file_path = self._get_organized_file_path(doc_url, {})
+            
+            # Track this URL in the current session
+            if json_url not in self.hash_manager.hashes:
+                self.hash_manager.hashes[json_url] = {}
+            self.hash_manager.hashes[json_url]['session_id'] = self.hash_manager.session_id
+            self.hash_manager.hashes[json_url]['file_path'] = str(file_path)
+            self.hash_manager.hashes[json_url]['last_checked'] = datetime.utcnow().isoformat()
+            if etag:
+                self.hash_manager.hashes[json_url]['etag'] = etag
+            self.hash_manager._modified = True
             
             # Extract related documentation from various sections
             sections_to_check = [
@@ -660,8 +700,40 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         if not result:
             # Either failed or 304 Not Modified (content unchanged)
             if result is None and stored_etag:
-                # 304 response - content unchanged
+                # 304 response - content unchanged - update session tracking
                 logger.debug("content_unchanged_via_etag", url=url, json_url=json_url)
+                
+                # Update session info for orphan detection even though content unchanged
+                # We need to ensure the file path is calculated and session is tracked
+                file_path = self._get_organized_file_path(url, {})
+                
+                # ALWAYS update or create hash entries for both URLs with current session info
+                # This ensures orphan detection works correctly
+                if json_url not in self.hash_manager.hashes:
+                    self.hash_manager.hashes[json_url] = {}
+                    
+                existing_data = self.hash_manager.hashes[json_url]
+                existing_data['session_id'] = self.hash_manager.session_id
+                existing_data['file_path'] = str(file_path)
+                existing_data['last_checked'] = datetime.utcnow().isoformat()
+                existing_data['status'] = 'unchanged'
+                if stored_etag:
+                    existing_data['etag'] = stored_etag
+                self.hash_manager._modified = True
+                
+                # Also update the doc URL entry
+                if url not in self.hash_manager.hashes:
+                    self.hash_manager.hashes[url] = {}
+                    
+                doc_data = self.hash_manager.hashes[url]
+                doc_data['session_id'] = self.hash_manager.session_id
+                doc_data['file_path'] = str(file_path)
+                doc_data['last_checked'] = datetime.utcnow().isoformat()
+                doc_data['status'] = 'unchanged'
+                if stored_etag:
+                    doc_data['etag'] = stored_etag
+                self.hash_manager._modified = True
+                
                 self.stats["pages_skipped"] += 1
             return None
         
@@ -670,6 +742,19 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         # Check hash to avoid re-processing unchanged content
         if not self.hash_manager.has_changed(json_url, response_text, etag) and not self.hash_manager.has_changed(url, response_text, etag):
             logger.debug("content_unchanged", url=url)
+            
+            # Content unchanged but still need to update session tracking for orphan detection
+            try:
+                json_data = json.loads(response_text)
+                page_data = self._extract_from_json(json_data, url)
+                if page_data:
+                    file_path = self._get_organized_file_path(url, page_data)
+                    # Update hash with current session info
+                    self.hash_manager.update_hash(json_url, response_text, etag, file_path)
+                    self.hash_manager.update_hash(url, response_text, etag, file_path)
+            except Exception as e:
+                logger.warning("failed_to_update_session_tracking", url=url, error=str(e))
+            
             self.stats["pages_skipped"] += 1
             return None
         
@@ -685,9 +770,12 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             data = self._extract_from_json(json_data, url)
             
             if data:
+                # Calculate file path for hash updates
+                file_path = self._get_organized_file_path(url, data)
+                
                 # Update hash for both URLs with ETag for successful extraction
-                self.hash_manager.update_hash(json_url, response_text, etag)
-                self.hash_manager.update_hash(url, response_text, etag)
+                self.hash_manager.update_hash(json_url, response_text, etag, file_path)
+                self.hash_manager.update_hash(url, response_text, etag, file_path)
                 self.stats["pages_scraped"] += 1
                 return data
             else:
@@ -1073,12 +1161,13 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         
         return data
     
-    async def save_page_data(self, url: str, data: Dict[str, Any]) -> None:
+    async def save_page_data(self, url: str, data: Dict[str, Any], file_path: Optional[Path] = None) -> None:
         """Save extracted data as markdown with organized folder structure.
         
         Args:
             url: Source URL
             data: Extracted data
+            file_path: Optional pre-calculated file path
         """
         # Ensure topic hierarchy is extracted for the main framework page
         if url == f'https://developer.apple.com/documentation/{self.framework_id}' and not self.topic_hierarchy:
@@ -1088,8 +1177,9 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         # Convert to markdown
         markdown_content = self.markdown_converter.convert_page(data)
         
-        # Determine organized file path
-        file_path = self._get_organized_file_path(url, data)
+        # Determine organized file path if not provided
+        if file_path is None:
+            file_path = self._get_organized_file_path(url, data)
         file_path.parent.mkdir(parents=True, exist_ok=True)
         
         # Save markdown file
@@ -1148,7 +1238,7 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             return self.output_dir / f"{safe_url}.md"
         
         if not url_path:
-            # Main framework page: watchkit.md
+            # Main framework page: use framework_id to match URL structure
             return self.output_dir / f"{self.framework_id}.md"
         
         # Split path into segments

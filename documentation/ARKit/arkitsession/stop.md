@@ -6,6 +6,7 @@
 Stops all data providers running in this session.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

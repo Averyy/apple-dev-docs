@@ -26,8 +26,6 @@ The additional bytes are all set to `0`.
 
 > ❗ **Important**:  Changing the length of a mutable data object invalidates any existing data pointers returned by the [`bytes`](nsdata/bytes.md) or [`mutableBytes`](nsmutabledata/mutablebytes.md) properties.
 
- Changing the length of a mutable data object invalidates any existing data pointers returned by the [`bytes`](nsdata/bytes.md) or [`mutableBytes`](nsmutabledata/mutablebytes.md) properties.
-
 ## Parameters
 
 - `extraLength`: The number of bytes by which to increase the receiver’s length.

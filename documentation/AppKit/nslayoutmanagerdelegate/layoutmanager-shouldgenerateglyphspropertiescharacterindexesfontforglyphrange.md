@@ -1,6 +1,6 @@
 # layoutManager(_:shouldGenerateGlyphs:properties:characterIndexes:font:forGlyphRange:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Enables customization of the initial glyph generation process.

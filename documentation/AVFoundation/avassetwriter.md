@@ -25,8 +25,6 @@ You use an asset writer to write media to file formats such as the QuickTime mov
 
 > ❗ **Important**:  An asset writer is a single-use object that writes one output file. Create multiple asset writer instances if your app requires writing multiple output files.
 
- An asset writer is a single-use object that writes one output file. Create multiple asset writer instances if your app requires writing multiple output files.
-
 ## Topics
 
 ### Creating an Asset Writer
@@ -112,6 +110,29 @@ You use an asset writer to write media to file formats such as the QuickTime mov
   The location of the container file that the writer outputs.
 - [var outputFileType: AVFileType](avassetwriter/outputfiletype.md)
   The type of container file that the writer outputs.
+### Instance Methods
+- [func inputCaptionReceiver(for: AVAssetWriterInput) -> sending AVAssetWriterInput.CaptionReceiver](avassetwriter/inputcaptionreceiver(for:).md)
+  Attaches the input to the writer and returns an input receiver for writing caption data.
+- [func inputCaptionReceiverRequestingMultiPass(for: AVAssetWriterInput) -> sending (AVAssetWriterInput.CaptionReceiver, AVAssetWriterInput.MultiPassController)](avassetwriter/inputcaptionreceiverrequestingmultipass(for:).md)
+  Attaches the input to the writer and returns a tuple with an input receiver for writing caption data, and an associated multi pass controller.
+- [func inputMetadataReceiver(for: AVAssetWriterInput) -> sending AVAssetWriterInput.MetadataReceiver](avassetwriter/inputmetadatareceiver(for:).md)
+  Attaches the input to the writer and returns an input receiver for writing timed metadata group.
+- [func inputMetadataReceiverRequestingMultiPass(for: AVAssetWriterInput) -> sending (AVAssetWriterInput.MetadataReceiver, AVAssetWriterInput.MultiPassController)](avassetwriter/inputmetadatareceiverrequestingmultipass(for:).md)
+  Attaches the input to the writer and returns a tuple with an input receiver for writing timed metadata group, and an associated multi pass controller.
+- [func inputPixelBufferReceiver(for: AVAssetWriterInput, pixelBufferAttributes: CVPixelBufferCreationAttributes?) -> sending AVAssetWriterInput.PixelBufferReceiver](avassetwriter/inputpixelbufferreceiver(for:pixelbufferattributes:).md)
+  Attaches the input to the writer and returns an input receiver for writing pixel buffers.
+- [func inputPixelBufferReceiverRequestingMultiPass(for: AVAssetWriterInput, pixelBufferAttributes: CVPixelBufferCreationAttributes?) -> sending (AVAssetWriterInput.PixelBufferReceiver, AVAssetWriterInput.MultiPassController)](avassetwriter/inputpixelbufferreceiverrequestingmultipass(for:pixelbufferattributes:).md)
+  Attaches the input to the writer and returns a tuple with an input receiver for writing pixel buffers, and an associated multi pass controller.
+- [func inputReceiver(for: AVAssetWriterInput) -> sending AVAssetWriterInput.SampleBufferReceiver](avassetwriter/inputreceiver(for:).md)
+  Attaches the input to the writer and returns an input receiver for writing sample buffers.
+- [func inputReceiverRequestingMultiPass(for: AVAssetWriterInput) -> sending (AVAssetWriterInput.SampleBufferReceiver, AVAssetWriterInput.MultiPassController)](avassetwriter/inputreceiverrequestingmultipass(for:).md)
+  Attaches the input to the writer and returns a tuple with an input receiver for writing sample buffers, and an associated multi pass controller.
+- [func inputTaggedPixelBufferGroupReceiver(for: AVAssetWriterInput, pixelBufferAttributes: CVPixelBufferCreationAttributes?) -> sending AVAssetWriterInput.TaggedPixelBufferGroupReceiver](avassetwriter/inputtaggedpixelbuffergroupreceiver(for:pixelbufferattributes:).md)
+  Attaches the input to the writer and returns an input receiver for writing tagged pixel buffers.
+- [func inputTaggedPixelBufferGroupReceiverRequestingMultiPass(for: AVAssetWriterInput, pixelBufferAttributes: CVPixelBufferCreationAttributes?) -> sending (AVAssetWriterInput.TaggedPixelBufferGroupReceiver, AVAssetWriterInput.MultiPassController)](avassetwriter/inputtaggedpixelbuffergroupreceiverrequestingmultipass(for:pixelbufferattributes:).md)
+  Attaches the input to the writer and returns a tuple with an input receiver for writing tagged pixel buffers, and an associated multi pass controller.
+- [func start() throws](avassetwriter/start.md)
+  Prepares the writer to write media data to its output file.
 
 ## Relationships
 
@@ -127,10 +148,12 @@ You use an asset writer to write media to file formats such as the QuickTime mov
 
 ## See Also
 
-- [Writing Fragmented MPEG-4 Files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
-  Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
+- [Converting projected video to Apple Projected Media Profile](converting-projected-video-to-apple-projected-media-profile.md)
+  Convert content with equirectangular or half-equirectangular projection to APMP.
 - [Converting side-by-side 3D video to multiview HEVC and spatial video](converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
   Create video content for visionOS by converting an existing 3D HEVC file to a multiview HEVC format, optionally adding spatial metadata to create a spatial video.
+- [Writing Fragmented MPEG-4 Files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
+  Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
 - [Creating spatial photos and videos with spatial metadata](../ImageIO/Creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
 - [Tagging Media with Video Color Information](tagging-media-with-video-color-information.md)

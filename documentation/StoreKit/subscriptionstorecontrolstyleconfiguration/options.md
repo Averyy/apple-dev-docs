@@ -1,6 +1,6 @@
 # options
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: property
 
 An array of subscription options for the subscription store view to merchandise.

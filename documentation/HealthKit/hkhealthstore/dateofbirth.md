@@ -1,6 +1,6 @@
 # dateOfBirth()
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: method
 
 Reads the user’s date of birth from the HealthKit store as a date value.

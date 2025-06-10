@@ -19,7 +19,7 @@ case networkRequestFailed
 
 #### Discussion
 
-The network request failed (the `NSUnderlyingErrorKey` in the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary of the [`ILMessageFilterError`](ilmessagefiltererror-swift.struct.md) may have additional details).
+The network request failed (the `NSUnderlyingErrorKey` in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary of the [`ILMessageFilterError`](ilmessagefiltererror-swift.struct.md) may have additional details).
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # total
 
-**Framework**: Applepayontheweb  
+**Framework**: Apple Pay on the Web  
 **Kind**: property
 
 A line item that represents the total for the payment.
@@ -49,4 +49,4 @@ Provide a business name in the [`label`](applepaylineitem/label.md) field. Use t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaypaymentrequest/total)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaypaymentrequest/total)*

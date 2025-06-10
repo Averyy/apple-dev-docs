@@ -1,6 +1,6 @@
 # activityID
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 A unique identifier for the Live Activity.

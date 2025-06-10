@@ -22,7 +22,7 @@ optional func controllerDidChangeContent(_ controller: NSFetchedResultsControlle
 
 #### Discussion
 
-This method is invoked after all invocations of [`controller(_:didChange:at:for:newIndexPath:)`](nsfetchedresultscontrollerdelegate/controller(_:didchange:at:for:newindexpath:).md) and [`controller(_:didChange:atSectionIndex:for:)`](nsfetchedresultscontrollerdelegate/controller(_:didchange:atsectionindex:for:).md) have been sent for a given change event (such as the controller receiving a [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/foundation/nsnotification/name/1506380-nsmanagedobjectcontextdidsave) notification).
+This method is invoked after all invocations of [`controller(_:didChange:at:for:newIndexPath:)`](nsfetchedresultscontrollerdelegate/controller(_:didchange:at:for:newindexpath:).md) and [`controller(_:didChange:atSectionIndex:for:)`](nsfetchedresultscontrollerdelegate/controller(_:didchange:atsectionindex:for:).md) have been sent for a given change event (such as the controller receiving a [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextDidSave) notification).
 
 ## Parameters
 

@@ -1,6 +1,6 @@
 # XCTWaiter.Result.timedOut
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 The waiter timed out before all of its expectations were fulfilled.

@@ -26,13 +26,9 @@ When the system detects a conflict involving versions of a file, it sets this pr
 
 > ❗ **Important**:  If you do not explicitly remove versions of a file that are no longer useful, iCloud continues to sync them to all a user’s devices and those versions continue to consume user iCloud quota.
 
- If you do not explicitly remove versions of a file that are no longer useful, iCloud continues to sync them to all a user’s devices and those versions continue to consume user iCloud quota.
-
 To remove an unused version of a file, call the [`remove()`](nsfileversion/remove().md) method. To remove all unused versions of a file, call the [`removeOtherVersionsOfItem(at:)`](nsfileversion/removeotherversionsofitem(at:).md) method.
 
 > ❗ **Important**:  Never set the value of this property to [`false`](https://developer.apple.com/documentation/swift/false). If you do, the system raises an exception.
-
- Never set the value of this property to [`false`](https://developer.apple.com/documentation/swift/false). If you do, the system raises an exception.
 
 Resolving a conflict causes the file version object to be removed from any reports about conflicting versions, such as those returned by the [`unresolvedConflictVersionsOfItem(at:)`](nsfileversion/unresolvedconflictversionsofitem(at:).md) method.
 

@@ -58,6 +58,7 @@ Create a printable version of your view’s content and handle pagination and pr
   Specify the size and position your view relative to other nearby views using rules that update your view hierarchy automatically.
 - [Drawing](nsview-drawing.md)
   Draw the content of custom views and update that content when the view’s size or appearance changes.
+- [protocol NSViewContentSelectionInfo](nsviewcontentselectioninfo.md)
 
 
 ---

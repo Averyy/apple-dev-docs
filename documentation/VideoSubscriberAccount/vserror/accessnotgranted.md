@@ -1,6 +1,6 @@
 # accessNotGranted
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The user hasn’t granted access to their subscription information.

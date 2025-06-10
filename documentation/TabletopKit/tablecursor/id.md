@@ -3,7 +3,7 @@
 **Framework**: TabletopKit  
 **Kind**: property
 
-The interaction identifier for the cursor.
+The identifier of the cursor.
 
 **Availability**:
 - visionOS 2.0+

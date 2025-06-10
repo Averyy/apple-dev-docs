@@ -36,6 +36,7 @@ struct BreatheSymbolEffect
 - [Hashable](../Swift/Hashable.md)
 - [IndefiniteSymbolEffect](indefinitesymboleffect.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SymbolEffect](symboleffect.md)
 
 ## See Also

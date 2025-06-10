@@ -1,6 +1,6 @@
 # reload(fromOrigin:for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to reload the current page in the tab.

@@ -1,6 +1,6 @@
 # setException(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Raises a scripting environment exception in the context of the current object.

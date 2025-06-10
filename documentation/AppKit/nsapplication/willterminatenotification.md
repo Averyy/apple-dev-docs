@@ -1,6 +1,6 @@
 # willTerminateNotification
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 Sends a notification to termintate the app.
@@ -56,4 +56,4 @@ Posted by the [`terminate(_:)`](nsapplication/terminate(_:).md) method, the noti
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsapplication/willterminatenotification)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsapplication/willterminatenotification)*

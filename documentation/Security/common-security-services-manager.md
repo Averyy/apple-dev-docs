@@ -1693,9 +1693,7 @@ A set of open source modules underpinning the legacy implementation of the Secur
 - [var kSecCSFastExecutableValidation: UInt32](kseccsfastexecutablevalidation.md)
 ### Certificate Extensions
 - [typealias CE_CrlNumber](ce_crlnumber.md)
-- [typealias CE_DataType](ce_datatype.md)
 - [typealias CE_DeltaCrl](ce_deltacrl.md)
-- [typealias CE_GeneralNameType](ce_generalnametype.md)
 - [var CE_CD_AffiliationChanged: Int32](ce_cd_affiliationchanged.md)
 - [var CE_CD_CACompromise: Int32](ce_cd_cacompromise.md)
 - [var CE_CD_CertificateHold: Int32](ce_cd_certificatehold.md)
@@ -1737,7 +1735,6 @@ A set of open source modules underpinning the legacy implementation of the Secur
 - [var SecCEKU_KeyEncipherment: Int32](secceku_keyencipherment.md)
 - [var CE_KU_NonRepudiation: Int32](ce_ku_nonrepudiation.md)
 - [var SecCEKU_NonRepudiation: Int32](secceku_nonrepudiation.md)
-- [typealias CE_ExtendedKeyUsage](ce_extendedkeyusage.md)
 - [var CE_CDNT_FullName: __CE_CrlDistributionPointNameType](ce_cdnt_fullname.md)
 - [var CE_CDNT_NameRelativeToCrlIssuer: __CE_CrlDistributionPointNameType](ce_cdnt_namerelativetocrlissuer.md)
 - [var DT_AuthorityInfoAccess: __CE_DataType](dt_authorityinfoaccess.md)

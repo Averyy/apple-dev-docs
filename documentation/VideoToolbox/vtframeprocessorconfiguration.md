@@ -1,12 +1,17 @@
 # VTFrameProcessorConfiguration
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: protocol
 
 A protocol that describes the configuration of a processor to use during a video processing session.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -20,37 +25,42 @@ The VTFrameProcessorConfiguration protocol conformance starts a frame processing
 
 ## Topics
 
-### Determining processor availability
-- [static var processorSupported: Bool](vtframeprocessorconfiguration/processorsupported.md)
-  A Boolean value that indicates whether the current configuration supports the processor.
 ### Inspecting the required configuration
-- [var frameSupportedPixelFormats: [NSNumber]](vtframeprocessorconfiguration/framesupportedpixelformats.md)
-  A list of supported pixel formats for the current configuration.
-- [var sourcePixelBufferAttributes: [AnyHashable : Any]](vtframeprocessorconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](vtframeprocessorconfiguration/sourcepixelbufferattributes.md)
   A dictionary of pixel buffer attributes that define what the source and reference frames passed to the processor must conform to.
-- [var destinationPixelBufferAttributes: [AnyHashable : Any]](vtframeprocessorconfiguration/destinationpixelbufferattributes.md)
+- [var destinationPixelBufferAttributes: [String : any Sendable]](vtframeprocessorconfiguration/destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes that define which output frames passed to the processor must conform to.
-- [var nextFrameCount: Int](vtframeprocessorconfiguration/nextframecount.md)
-  The number of next frames that the processor requires for processing.
-- [var previousFrameCount: Int](vtframeprocessorconfiguration/previousframecount.md)
-  The number of previous frames that the processor requires for processing.
-- [static var maximumDimensions: CMVideoDimensions](vtframeprocessorconfiguration/maximumdimensions.md)
-  The maximum dimensions of a source frame for the processor.
-- [static var minimumDimensions: CMVideoDimensions](vtframeprocessorconfiguration/minimumdimensions.md)
-  The minimum dimensions of a source frame for the processor.
+### Instance Properties
+- [var nextFrameCount: Int?](vtframeprocessorconfiguration/nextframecount-18e47.md)
+  The number of “next” frames that this processor requires for processing.
+- [var previousFrameCount: Int?](vtframeprocessorconfiguration/previousframecount-1crhc.md)
+  The number of “previous” frames that this processor requires for processing.
+### Type Properties
+- [static var isSupported: Bool](vtframeprocessorconfiguration/issupported.md)
+- [static var maximumDimensions: CMVideoDimensions?](vtframeprocessorconfiguration/maximumdimensions-4vmra.md)
+  Maximum dimensions for a `sourceFrame` for the processor
+- [static var minimumDimensions: CMVideoDimensions?](vtframeprocessorconfiguration/minimumdimensions-42b0h.md)
+  Minimum dimensions for a `sourceFrame` for the processor
 
 ## Relationships
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [VTFrameRateConversionConfiguration](vtframerateconversionconfiguration.md)
+- [VTLowLatencyFrameInterpolationConfiguration](vtlowlatencyframeinterpolationconfiguration.md)
+- [VTLowLatencySuperResolutionScalerConfiguration](vtlowlatencysuperresolutionscalerconfiguration.md)
 - [VTMotionBlurConfiguration](vtmotionblurconfiguration.md)
 - [VTOpticalFlowConfiguration](vtopticalflowconfiguration.md)
+- [VTSuperResolutionScalerConfiguration](vtsuperresolutionscalerconfiguration.md)
+- [VTTemporalNoiseFilterConfiguration](vttemporalnoisefilterconfiguration.md)
 
 ## See Also
 
+- [Enhancing your app with machine learning-based video effects](enhancing-your-app-with-machine-learning-based-video-effects.md)
+  Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
 - [class VTFrameProcessor](vtframeprocessor.md)
   A class that creates a new frame processor for the configured video effect.
 - [class VTFrameProcessorFrame](vtframeprocessorframe.md)

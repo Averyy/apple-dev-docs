@@ -1,6 +1,6 @@
 # close()
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: method
 
 Closes the audio file.

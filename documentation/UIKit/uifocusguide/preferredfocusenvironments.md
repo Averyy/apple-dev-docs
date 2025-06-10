@@ -21,8 +21,8 @@ var preferredFocusEnvironments: [any UIFocusEnvironment]! { get set }
 
 ## Mentions
 
-- [About focus interactions for Apple TV](about-focus-interactions-for-apple-tv.md)
 - [Creating custom navigation interactions](creating-custom-navigation-interactions.md)
+- [About focus interactions for Apple TV](about-focus-interactions-for-apple-tv.md)
 
 #### Discussion
 

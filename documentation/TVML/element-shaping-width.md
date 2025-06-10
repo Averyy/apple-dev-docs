@@ -1,6 +1,6 @@
 # width
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Specifies how wide an element is.
 
@@ -48,4 +48,4 @@ Use the `width` style to change the width of an element. Here’s an example tha
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/element-shaping-width)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/element-shaping-width)*

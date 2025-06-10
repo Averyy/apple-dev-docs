@@ -1,6 +1,6 @@
 # WKError.Code.javaScriptExceptionOccurred
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 An error that indicates a JavaScript exception occurred.

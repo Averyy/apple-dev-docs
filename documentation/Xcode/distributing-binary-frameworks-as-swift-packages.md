@@ -89,4 +89,4 @@ let package = Package(
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/distributing-binary-frameworks-as-swift-packages)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/distributing-binary-frameworks-as-swift-packages)*

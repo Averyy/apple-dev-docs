@@ -17,8 +17,8 @@ var audience: String { get set }
 ## Mentions
 
 - [Supporting key requests and key exchange requests](supporting-key-requests-and-key-exchange-requests.md)
-- [Creating an encrypted embedded assertion](creating-an-encrypted-embedded-assertion.md)
 - [Creating an embedded assertion](creating-an-embedded-assertion.md)
+- [Creating an encrypted embedded assertion](creating-an-encrypted-embedded-assertion.md)
 
 ## See Also
 

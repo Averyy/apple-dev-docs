@@ -10,6 +10,7 @@ An entity that produces an omnidirectional light for virtual objects.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -32,17 +33,14 @@ A RealityKit scene can contain up to eight dynamic lights, which are entities th
 ### Creating a point light
 - [init()](pointlight/init.md)
   Creates a new entity.
-### Configuring the point light
-- [var light: PointLightComponent](pointlight/light.md)
-  A point light component for the entity.
-### Default Implementations
-- [HasPointLight Implementations](pointlight/haspointlight-implementations.md)
 
 ## Relationships
 
 ### Inherits From
 - [Entity](entity.md)
 ### Conforms To
+- [CoordinateSpace3D](../Spatial/CoordinateSpace3D.md)
+- [CoordinateSpace3DFloat](../Spatial/CoordinateSpace3DFloat.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [EventSource](eventsource.md)
@@ -52,8 +50,10 @@ A RealityKit scene can contain up to eight dynamic lights, which are entities th
 - [HasTransform](hastransform.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
+- [Observable](../Observation/Observable.md)
 - [RealityCoordinateSpace](realitycoordinatespace.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

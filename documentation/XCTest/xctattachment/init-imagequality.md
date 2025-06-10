@@ -1,6 +1,6 @@
 # init(image:quality:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an attachment containing a representation of the provided image at the requested image quality.

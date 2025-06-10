@@ -6,6 +6,7 @@
 Returns the next element in a sequence.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

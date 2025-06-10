@@ -13,6 +13,7 @@ Creates a list item that displays a row of images.
 ## Declaration
 
 ```swift
+@MainActor
 init(text: String, images: [UIImage])
 ```
 

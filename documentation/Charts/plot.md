@@ -32,6 +32,7 @@ A mechanism for grouping chart contents into a single entity.
 - [ChartContent](chartcontent.md)
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

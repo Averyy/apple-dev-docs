@@ -1,23 +1,29 @@
 # COREIMAGE_SUPPORTS_IOSURFACE
 
 **Framework**: Core Image  
-**Kind**: data
+**Kind**: var
 
 Support for IOSurface enabled.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
 var COREIMAGE_SUPPORTS_IOSURFACE: Int32 { get }
 ```
+
+## See Also
+
+- [var COREIMAGE_SUPPORTS_OPENGLES: Int32](coreimage_supports_opengles.md)
+  Support for OpenGL ES enabled.
+- [var UNIFIED_CORE_IMAGE: Int32](unified_core_image.md)
 
 
 ---

@@ -31,6 +31,7 @@ Use this object to create a new alternative distribution key association in App 
   A response that contains a single alternative distribution key resource.
 - [object AlternativeDistributionKeysResponse](alternativedistributionkeysresponse.md)
   A response that contains a list of alternative distribution keys.
+- [object AppAlternativeDistributionKeyLinkageResponse](appalternativedistributionkeylinkageresponse.md)
 
 
 ---

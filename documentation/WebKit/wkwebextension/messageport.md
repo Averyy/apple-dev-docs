@@ -1,6 +1,6 @@
 # WKWebExtension.MessagePort
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that manages message-based communication with a web extension.

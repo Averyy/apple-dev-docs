@@ -1,6 +1,6 @@
 # Displaying Components Side By Side
 
-**Framework**: Applenews
+**Framework**: Apple News
 
 Configure a side-by-side, horizontal arrangement of components for your article.
 
@@ -46,4 +46,4 @@ In Apple News Format, you can display child components of [`Container`](https://
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/displaying-components-side-by-side)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applenews/displaying-components-side-by-side)*

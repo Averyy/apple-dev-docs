@@ -1,6 +1,6 @@
 # xpc_activity_state_t
 
-**Framework**: Xpc
+**Framework**: XPC
 
 A type that represents the state of an activity.
 

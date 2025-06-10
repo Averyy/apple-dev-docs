@@ -1,6 +1,6 @@
 # QUERY_RESULT_AVAILABLE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

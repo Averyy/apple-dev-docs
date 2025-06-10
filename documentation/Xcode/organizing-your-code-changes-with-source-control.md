@@ -20,8 +20,6 @@ Make, test, and commit your changes. When your new feature or bug fix is complet
 
 > 💡 **Tip**: Create a new branch from the current branch with uncommitted changes, and your changes become part of the new branch. You can’t switch to another branch if you have uncommitted changes, so commit your changes or stash them before switching to another branch.
 
-Create a new branch from the current branch with uncommitted changes, and your changes become part of the new branch. You can’t switch to another branch if you have uncommitted changes, so commit your changes or stash them before switching to another branch.
-
 ##### Set Aside Work in Progress to Make Other Changes
 
 When you have work in progress that you aren’t ready to commit and you need to switch to another branch, stash your changes to save them without committing them to the repository. Choose Source Control > Stash Changes, and optionally enter a description of your changes.

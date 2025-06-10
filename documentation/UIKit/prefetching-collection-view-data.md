@@ -1,6 +1,6 @@
 # Prefetching collection view data
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Load data for collection view cells before they display.
 
@@ -136,4 +136,4 @@ func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItem
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/prefetching-collection-view-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/prefetching-collection-view-data)*

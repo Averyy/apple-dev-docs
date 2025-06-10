@@ -10,6 +10,7 @@ Defines update order relative to other systems. An object that specifies the upd
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -32,15 +33,13 @@ Add instances of `SystemDependency` to your system’s [`dependencies`](system/d
 ### Comparisons
 - [static func == (SystemDependency, SystemDependency) -> Bool](systemdependency/==(_:_:).md)
   Returns a Boolean value that indicates whether two dependencies are equal.
-- [static func != (Self, Self) -> Bool](systemdependency/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Equatable Implementations](systemdependency/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

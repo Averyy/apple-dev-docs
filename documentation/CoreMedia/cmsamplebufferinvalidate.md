@@ -30,8 +30,6 @@ An invalid sample buffer can’t be used — all accessors will return [`kCMSamp
 
 > ❗ **Important**:  You shouldn’t invalidate a sample buffer that another module may be accessing concurrently.
 
- You shouldn’t invalidate a sample buffer that another module may be accessing concurrently.
-
 ## Parameters
 
 - `sbuf`: The sample buffer to invalidate.

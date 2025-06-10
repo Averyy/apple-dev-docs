@@ -33,27 +33,11 @@ You can customize the architecture of the persistence stack by overriding the [`
 > ❗ **Important**:  [`NSPersistentDocument`](nspersistentdocument.md) does not support some document behaviors: - File wrappers.
 - [`NSDocument.SaveOperationType.saveToOperation`](nsdocument/saveoperationtype/savetooperation.md) operation type. Core Data does not support saving changes to a new document while maintaining the unsaved state in the current document. - Asynchronous saving. [`NSPersistentDocument`](nspersistentdocument.md) does not support the asynchronous saving API of [`NSDocument`](nsdocument.md) because that API requires accessing the document’s state on multiple threads and that violates the requirements of the [`NSManagedObjectContext`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext) class. Do not override [`canAsynchronouslyWrite(to:ofType:for:)`](nsdocument/canasynchronouslywrite(to:oftype:for:).md).
 
- [`NSPersistentDocument`](nspersistentdocument.md) does not support some document behaviors:
-
-- File wrappers.
-- [`NSDocument.SaveOperationType.saveToOperation`](nsdocument/saveoperationtype/savetooperation.md) operation type.
-
-Core Data does not support saving changes to a new document while maintaining the unsaved state in the current document.
-
-- Asynchronous saving.
-
-[`NSPersistentDocument`](nspersistentdocument.md) does not support the asynchronous saving API of [`NSDocument`](nsdocument.md) because that API requires accessing the document’s state on multiple threads and that violates the requirements of the [`NSManagedObjectContext`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext) class. Do not override [`canAsynchronouslyWrite(to:ofType:for:)`](nsdocument/canasynchronouslywrite(to:oftype:for:).md).
-
 ##### Undo Support
 
 The persistent document uses the managed object context’s undo manager.
 
 > ❗ **Important**: Do not override the following properties, their getters, or their setters: - [`hasUndoManager`](nsdocument/hasundomanager.md)
-- [`undoManager`](nsdocument/undomanager.md)
-
-Do not override the following properties, their getters, or their setters:
-
-- [`hasUndoManager`](nsdocument/hasundomanager.md)
 - [`undoManager`](nsdocument/undomanager.md)
 
 The [`isDocumentEdited`](nsdocument/isdocumentedited.md) method returns [`true`](https://developer.apple.com/documentation/swift/true) if the persistent document’s managed object context, or editors registered with the context, have uncommitted changes, otherwise it returns [`false`](https://developer.apple.com/documentation/swift/false).
@@ -94,6 +78,7 @@ The [`isDocumentEdited`](nsdocument/isdocumentedited.md) method returns [`true`]
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

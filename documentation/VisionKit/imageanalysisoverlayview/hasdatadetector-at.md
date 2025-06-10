@@ -1,6 +1,6 @@
 # hasDataDetector(at:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Returns a Boolean value that indicates whether the analysis detects data at the specified point.

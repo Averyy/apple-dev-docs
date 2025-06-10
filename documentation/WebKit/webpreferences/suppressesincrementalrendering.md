@@ -1,6 +1,6 @@
 # suppressesIncrementalRendering
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean that indicates whether incremental rendering should be suppressed.

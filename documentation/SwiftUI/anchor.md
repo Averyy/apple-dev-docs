@@ -34,10 +34,12 @@ You can convert the anchor to a `Value` in the coordinate space of a target view
 ## Relationships
 
 ### Conforms To
+- [CoordinateSpaceValue3D](../Spatial/CoordinateSpaceValue3D.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -49,6 +51,11 @@ You can convert the anchor to a `Value` in the coordinate space of a target view
   A normalized 2D point in a view’s coordinate space.
 - [struct UnitPoint3D](unitpoint3d.md)
   A normalized 3D point in a view’s coordinate space.
+- [protocol DepthAlignmentID](depthalignmentid.md)
+- [struct Alignment3D](alignment3d.md)
+  An alignment in all three axes.
+- [struct GeometryProxyCoordinateSpace3D](geometryproxycoordinatespace3d.md)
+  A representation of a `GeometryProxy3D` which can be used for `CoordinateSpace3D` based conversions.
 
 
 ---

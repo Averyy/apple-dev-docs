@@ -28,8 +28,6 @@ This function can also be called with the launch argument `-com.apple.TipKit.Res
 
 > ❗ **Important**: This function removes the existing tip, event, and parameter records from your app’s TipKit datastore and will cause previously dismissed tips to become re-eligible for display. It is primarily designed for testing your app’s first launch experience.
 
-This function removes the existing tip, event, and parameter records from your app’s TipKit datastore and will cause previously dismissed tips to become re-eligible for display. It is primarily designed for testing your app’s first launch experience.
-
 ```swift
 import SwiftUI
 import TipKit

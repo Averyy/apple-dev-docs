@@ -14,8 +14,6 @@ The iOS & iPadOS 14 SDK provides support to develop apps for iPhone, iPad, and i
 
 > ❗ **Important**: Updating to iOS & iPadOS 14 from previous versions of iOS & iPadOS might take significantly longer than expected. Data loss could occur if the update is interrupted. (59101197)
 
-Updating to iOS & iPadOS 14 from previous versions of iOS & iPadOS might take significantly longer than expected. Data loss could occur if the update is interrupted. (59101197)
-
 - macOS Big Sur 11 beta 6 or Xcode 12 might be required to sync or update devices running iOS & iPadOS 14 or later.
 - macOS Big Sur 11 beta 6 is required to use the restore images for iOS & iPadOS 14 or later.
 
@@ -80,7 +78,7 @@ Updating to iOS & iPadOS 14 from previous versions of iOS & iPadOS might take si
 
 ###### New Features
 
-- Key-Value Observation removal facilities now employ deterministic bookkeeping methods. Cases that would have produced hard-to-diagnose crashes, especially those where KVO signals problems accessing deallocated observer pointers or observers associated with incorrect objects, now produce an exception that pinpoints which observed object needs a missed [`removeObserver(_:)`](https://developer.apple.com/documentation/foundation/notificationcenter/1413994-removeobserver) call, and by which observers. This exception was previously thrown as ‘best effort’ when KVO could detect the problem; the new deterministic bookkeeping allows it to be thrown for all cases where `removeObserver(_:)` is needed. The improved determinism also allows improved Swift API handling. Instances of [`NSKeyValueObservation`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservation), produced by the Swift `NSObject.observe(_:changeHandler:)` method, take advantage of integration with this bookkeeping so they now invalidate automatically when the observed object is released, regardless of how the object implements its KVO behavior. This applies to all usage of this API in macOS 11 Big Sur beta, including on processes built with previous versions of the SDK, and eliminates certain classes of crashes that sometimes required using the legacy API instead. (65051563)
+- Key-Value Observation removal facilities now employ deterministic bookkeeping methods. Cases that would have produced hard-to-diagnose crashes, especially those where KVO signals problems accessing deallocated observer pointers or observers associated with incorrect objects, now produce an exception that pinpoints which observed object needs a missed doc://com.apple.documentation/documentation/foundation/notificationcenter/1413994-removeobserver call, and by which observers. This exception was previously thrown as ‘best effort’ when KVO could detect the problem; the new deterministic bookkeeping allows it to be thrown for all cases where `removeObserver(_:)` is needed. The improved determinism also allows improved Swift API handling. Instances of [`NSKeyValueObservation`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservation), produced by the Swift `NSObject.observe(_:changeHandler:)` method, take advantage of integration with this bookkeeping so they now invalidate automatically when the observed object is released, regardless of how the object implements its KVO behavior. This applies to all usage of this API in macOS 11 Big Sur beta, including on processes built with previous versions of the SDK, and eliminates certain classes of crashes that sometimes required using the legacy API instead. (65051563)
 
 ##### Localization
 
@@ -117,13 +115,13 @@ Updating to iOS & iPadOS 14 from previous versions of iOS & iPadOS might take si
 
 ###### New Features
 
-- To properly render an augmented reality [`scene`](https://developer.apple.com/documentation/RealityKit/scene) with the post-processing effects available in [`RealityKit`](https://developer.apple.com/documentation/RealityKit), the pipeline now writes depth information when rendering translucent materials. This makes the order that meshes are drawn more impactful for the final image. To properly author content for this pipeline, break up big meshes into smaller parts, especially when the meshes are intertwined. (66535399)
+- To properly render an augmented reality [`Scene`](https://developer.apple.com/documentation/RealityKit/Scene) with the post-processing effects available in [`RealityKit`](https://developer.apple.com/documentation/RealityKit), the pipeline now writes depth information when rendering translucent materials. This makes the order that meshes are drawn more impactful for the final image. To properly author content for this pipeline, break up big meshes into smaller parts, especially when the meshes are intertwined. (66535399)
 
 ##### Siri
 
 ###### New Features
 
-You can use doc://com.apple.documentation/documentation/sirikit/inmediausercontext, [`Core Spotlight`](https://developer.apple.com/documentation/CoreSpotlight), and Intents to improve media interactions and App Selection. For more information, see [`Improving Siri Media Interactions and App Selection`](https://developer.apple.com/documentation/SiriKit/improving-siri-media-interactions-and-app-selection). (67026608)
+You can use [`INMediaUserContext`](https://developer.apple.com/documentation/Intents/INMediaUserContext), [`Core Spotlight`](https://developer.apple.com/documentation/CoreSpotlight), and Intents to improve media interactions and App Selection. For more information, see [`Improving Siri Media Interactions and App Selection`](https://developer.apple.com/documentation/SiriKit/improving-siri-media-interactions-and-app-selection). (67026608)
 
 ##### Safari and Webkit
 
@@ -259,9 +257,9 @@ struct QuickNoteDocument : FileDocument {
 
 ###### Known Issues
 
-- Apps using JSONKit might quit unexpectedly on launch. Some forks of JSONKit hardcode private, pointer-representation details, which are subject to change. (60290929)  Use [`NSJSONSerialization`](https://developer.apple.com/documentation/foundation/nsjsonserialization) instead.
+- Apps using JSONKit might quit unexpectedly on launch. Some forks of JSONKit hardcode private, pointer-representation details, which are subject to change. (60290929)  Use [`JSONSerialization`](https://developer.apple.com/documentation/Foundation/JSONSerialization) instead.
 - `fstab` has been removed. You can no longer use Filesystem contents outside of an app’s sandbox for validation. (61098152)
-- Apps using the NativeScript framework might quit unexpectedly on launch. NativeScript performs an unsafe operation to determine if an arbitrary pointer is an Objective-C object pointer. You can temporarily resolve this issue by using doc://com.apple.documentation/documentation/objectivec/1418629-object_getclass instead of reading the `isa` directly; however, update this code to avoid checking whether arbitrary pointers are Objective-C object pointers. (62913064)
+- Apps using the NativeScript framework might quit unexpectedly on launch. NativeScript performs an unsafe operation to determine if an arbitrary pointer is an Objective-C object pointer. You can temporarily resolve this issue by using [`object_getClass(_:)`](https://developer.apple.com/documentation/ObjectiveC/object_getClass(_:)) instead of reading the `isa` directly; however, update this code to avoid checking whether arbitrary pointers are Objective-C object pointers. (62913064)
 
 ##### Vision
 

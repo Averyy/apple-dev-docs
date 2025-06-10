@@ -8,7 +8,6 @@ All edges of the rectangle.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst 13.1+
 - tvOS ?+
 - visionOS 1.0+
 - watchOS 2.0+

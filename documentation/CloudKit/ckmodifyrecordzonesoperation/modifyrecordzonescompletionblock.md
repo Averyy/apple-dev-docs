@@ -30,7 +30,7 @@ This property is a closure that returns no value and has the following parameter
 
 The closure executes once, and represents your only opportunity to process the results.
 
-The closure reports an error of type [`CKError.Code.partialFailure`](ckerror/code/partialfailure.md) when it modifies only some of the record zones successfully. The [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary of the error contains a [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) key that has a dictionary as its value. The keys of the dictionary are the IDs of the record zones that the operation can’t modify, and the corresponding values are errors that contain information about the failures.
+The closure reports an error of type [`CKError.Code.partialFailure`](ckerror/code/partialfailure.md) when it modifies only some of the record zones successfully. The [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary of the error contains a [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) key that has a dictionary as its value. The keys of the dictionary are the IDs of the record zones that the operation can’t modify, and the corresponding values are errors that contain information about the failures.
 
 If you intend to use this closure to process the results, set it before you execute the operation or submit the operation to a queue.
 

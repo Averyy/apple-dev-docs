@@ -1,6 +1,6 @@
 # Using AVFoundation to play and persist HTTP Live Streams
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Play HTTP Live Streams and persist streams on disk for offline playback using AVFoundation.
 
@@ -155,7 +155,7 @@ func downloadStream(for asset: Asset) async throws {
 
 ##### Cancel an Http Live Stream
 
-Tap the button in the corresponding stream’s table view cell to reveal the accessory view, then tap Cancel to stop downloading the stream. The following function in `AssetPersistenceManager` cancels the download by calling the `URLSessionTask` [`cancel()`](https://developer.apple.com/documentation/foundation/urlsessiontask/1411591-cancel) method.
+Tap the button in the corresponding stream’s table view cell to reveal the accessory view, then tap Cancel to stop downloading the stream. The following function in `AssetPersistenceManager` cancels the download by calling the `URLSessionTask` [`cancel()`](https://developer.apple.com/documentation/Foundation/URLSessionTask/cancel()) method.
 
 ```swift
 func cancelDownload(for asset: Asset) {
@@ -172,7 +172,7 @@ func cancelDownload(for asset: Asset) {
 
 ##### Remove an Http Live Stream From Disk
 
-Tap the button in the corresponding stream’s table view cell to reveal the accessory view, then tap Delete to delete the downloaded stream file. The following function in `AssetPersistenceManager` removes a downloaded stream on the device. First the asset URL corresponding to the file on the device is identified, then the `FileManager` [`removeItem(at:)`](https://developer.apple.com/documentation/foundation/filemanager/1413590-removeitem) method is called to remove the downloaded stream at the specified URL.
+Tap the button in the corresponding stream’s table view cell to reveal the accessory view, then tap Delete to delete the downloaded stream file. The following function in `AssetPersistenceManager` removes a downloaded stream on the device. First the asset URL corresponding to the file on the device is identified, then the `FileManager` [`removeItem(at:)`](https://developer.apple.com/documentation/Foundation/FileManager/removeItem(at:)) method is called to remove the downloaded stream at the specified URL.
 
 ```swift
 func deleteAsset(_ asset: Asset) {
@@ -228,4 +228,4 @@ var totalDurationWatched: Double {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/using-avfoundation-to-play-and-persist-http-live-streams)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/using-avfoundation-to-play-and-persist-http-live-streams)*

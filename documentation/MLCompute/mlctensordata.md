@@ -22,8 +22,6 @@ class MLCTensorData
 
 > ❗ **Important**:  A tensor data instance doesn’t take ownership of the `bytes` pointer and therefore won’t free it upon deallocation.
 
- A tensor data instance doesn’t take ownership of the `bytes` pointer and therefore won’t free it upon deallocation.
-
 ## Topics
 
 ### Creating Tensor Data

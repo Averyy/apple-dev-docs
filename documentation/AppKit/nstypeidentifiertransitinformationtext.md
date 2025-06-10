@@ -17,7 +17,7 @@ let NSTypeIdentifierTransitInformationText: String
 
 #### Discussion
 
-UTI subtype for doc://com.apple.documentation/documentation/foundation/nstextcheckingtype/nstextcheckingtypetransitinformation, `com.apple.structured-text.transit-information`.
+UTI subtype for [`transitInformation`](https://developer.apple.com/documentation/Foundation/NSTextCheckingResult/CheckingType/transitInformation), `com.apple.structured-text.transit-information`.
 
 ## See Also
 

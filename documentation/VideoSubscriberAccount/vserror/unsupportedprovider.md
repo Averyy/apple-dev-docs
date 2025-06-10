@@ -1,6 +1,6 @@
 # unsupportedProvider
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The system doesn’t support the user’s subscription provider.

@@ -6,12 +6,12 @@
 The slope at the location toward the direction of travel, measured in degrees.
 
 **Availability**:
-- iOS 15.4+
-- iPadOS 15.4+
-- Mac Catalyst 15.4+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 10.15+
 - visionOS 1.0+
-- watchOS 8.4+
+- watchOS 10.0+
 
 ## Declaration
 

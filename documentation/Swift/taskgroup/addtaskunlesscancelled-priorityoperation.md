@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Adds a child task to the group, unless the group has been canceled.
+Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
 
 **Availability**:
 - iOS 13.0+
@@ -26,7 +26,7 @@ mutating func addTaskUnlessCancelled(priority: TaskPriority? = nil, operation: s
 
 ## Parameters
 
-- `priority`: The priority of the operation task.   Omit this parameter or pass    to set the child task’s priority to the priority of the group.
+- `priority`: The priority of the operation task.   Omit this parameter or pass   to inherit the task group’s base priority.   Omit this parameter or pass    to set the child task’s priority to the priority of the group.
 - `operation`: The operation to execute as part of the task group.
 
 

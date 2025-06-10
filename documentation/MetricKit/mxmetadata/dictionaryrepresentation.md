@@ -9,6 +9,7 @@ Returns the contents of the metadata as a dictionary.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
+- macOS 12.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -19,7 +20,7 @@ func dictionaryRepresentation() -> [AnyHashable : Any]
 
 #### Return Value
 
-A [`Dictionary`](https://developer.apple.com/documentation/Swift/Dictionary) (Swift) or [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) (Objective-C) object containing a key-value representation of the contents of the metadata.
+A [`Dictionary`](https://developer.apple.com/documentation/Swift/Dictionary) (Swift) or [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) (Objective-C) object containing a key-value representation of the metrics in the payload.
 
 ## See Also
 

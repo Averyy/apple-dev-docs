@@ -43,8 +43,6 @@ Add log messages for your app to the operating system’s log with the [`Logging
 
 > ❗ **Important**: Don’t include privacy-sensitive information in your logs.
 
-Don’t include privacy-sensitive information in your logs.
-
 ## Topics
 
 ### Essentials

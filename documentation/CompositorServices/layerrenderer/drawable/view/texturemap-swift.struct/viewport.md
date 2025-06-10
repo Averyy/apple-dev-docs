@@ -6,6 +6,7 @@
 The portion of the texture that the view uses to draw its content.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

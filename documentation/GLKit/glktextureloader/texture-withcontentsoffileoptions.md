@@ -1,6 +1,6 @@
 # texture(withContentsOfFile:options:)
 
-**Framework**: Glkit  
+**Framework**: GLKit  
 **Kind**: method
 
 Loads a 2D texture image from a file and creates a new texture from the data.
@@ -34,7 +34,7 @@ This class method loads the texture into the sharegroup attached to the current 
 
 ## See Also
 
-- [func texture(withContentsOfFile: String, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: GLKTextureLoaderCallback)](glktextureloader/texture(withcontentsoffile:options:queue:completionhandler:).md)
+- [func texture(withContentsOfFile: String, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: (GLKTextureInfo?, (any Error)?) -> Void)](glktextureloader/texture(withcontentsoffile:options:queue:completionhandler:).md)
   Asynchronously loads a 2D texture image from a file and creates a new texture from the data.
 
 

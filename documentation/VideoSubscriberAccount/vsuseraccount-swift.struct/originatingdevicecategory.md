@@ -1,6 +1,6 @@
 # VSUserAccount.OriginatingDeviceCategory
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: enum
 
 Constants that represent whether the device from which the user originally registered is mobile.
@@ -34,6 +34,7 @@ enum OriginatingDeviceCategory
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

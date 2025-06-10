@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to verify the password for Recovery Lock.
+The command to verify the device’s Recovery Lock password.
 
 **Availability**:
 - macOS 11.5+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,14 +16,14 @@ object VerifyRecoveryLockCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object VerifyRecoveryLockCommand.Command](verifyrecoverylockcommand/command-data.dictionary.md)
-  The request dictionary to verify the Recovery Lock password.
+  The command to verify the device’s Recovery Lock password.
 
 ## See Also
 
 - [object VerifyRecoveryLockResponse](verifyrecoverylockresponse.md)
-  A response from the device after it verifies the password for Recovery Lock.
+  A response from the device after it processes the command to verify the device’s Recovery Lock password.
 
 
 ---

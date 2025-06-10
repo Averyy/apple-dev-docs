@@ -30,7 +30,7 @@ struct StrokeSample {
 }
 ```
 
-The following code shows the partial definition of a `TouchCaptureGesture` class used to capture touch information. This class stores touch data in the `samples` property, which is an array of `StrokeSample` structs. The class also stores the [`UITouch`](uitouch.md) object associated with the first finger so that it can ignore any other touches. The implementation of the [`init(coder:)`](https://developer.apple.com/documentation/OSLog/OSLogEntry/init(coder:)) method ensures that the `samples` property is initialized properly when loading the gesture recognizer from an Interface Builder file.
+The following code shows the partial definition of a `TouchCaptureGesture` class used to capture touch information. This class stores touch data in the `samples` property, which is an array of `StrokeSample` structs. The class also stores the [`UITouch`](uitouch.md) object associated with the first finger so that it can ignore any other touches. The implementation of the doc://com.apple.documentation/documentation/oslog/oslogentry/init(coder:) method ensures that the `samples` property is initialized properly when loading the gesture recognizer from an Interface Builder file.
 
 ```swift
 class TouchCaptureGesture: UIGestureRecognizer, NSCoding {

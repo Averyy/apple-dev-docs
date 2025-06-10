@@ -1,6 +1,6 @@
 # focusable(_:interactions:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Specifies if the view is focusable, and if so, what focus-driven interactions it supports.
@@ -8,10 +8,10 @@ Specifies if the view is focusable, and if so, what focus-driven interactions it
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

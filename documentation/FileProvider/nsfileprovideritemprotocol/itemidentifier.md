@@ -20,8 +20,8 @@ var itemIdentifier: NSFileProviderItemIdentifier { get }
 
 ## Mentions
 
-- [Synchronizing the File Provider Extension](synchronizing-the-file-provider-extension.md)
 - [Using push notifications to signal changes](using-push-notifications-to-signal-changes.md)
+- [Synchronizing the File Provider Extension](synchronizing-the-file-provider-extension.md)
 
 ## See Also
 

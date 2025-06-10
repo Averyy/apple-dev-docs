@@ -1,6 +1,6 @@
 # VTPixelRotationSessionCreate(_:_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Creates a session to rotate images between pixel buffers.

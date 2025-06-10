@@ -1,6 +1,6 @@
 # webExtensionController(_:openNewTabUsing:for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when an extension context requests a new tab to be opened.

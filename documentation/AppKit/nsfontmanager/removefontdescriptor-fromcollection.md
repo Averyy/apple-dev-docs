@@ -1,0 +1,40 @@
+# removeFontDescriptor(_:fromCollection:)
+
+**Framework**: AppKit  
+**Kind**: method
+
+Removes the specified font descriptor from the specified collection.
+
+**Availability**:
+- macOS 10.0+
+
+## Declaration
+
+```swift
+func removeFontDescriptor(_ descriptor: NSFontDescriptor, fromCollection collection: String)
+```
+
+## Parameters
+
+- `descriptor`: The font descriptor to remove.
+- `collection`: The font collection from which to remove the descriptor.
+
+## See Also
+
+- [func availableFontNames(matching: NSFontDescriptor) -> [Any]?](nsfontmanager/availablefontnames(matching:).md)
+  Returns the names of the fonts that match the attributes in the given font descriptor.
+- [func fontDescriptors(inCollection: String) -> [Any]?](nsfontmanager/fontdescriptors(incollection:).md)
+  Returns an array of the font descriptors in the specified collection.
+- [func addCollection(String, options: NSFontCollectionOptions) -> Bool](nsfontmanager/addcollection(_:options:).md)
+  Adds a specified font collection to the font manager with a given set of options.
+- [func removeCollection(String) -> Bool](nsfontmanager/removecollection(_:).md)
+  Removes the specified font collection.
+- [func addFontDescriptors([Any], toCollection: String)](nsfontmanager/addfontdescriptors(_:tocollection:).md)
+  Adds an array of font descriptors to the specified font collection.
+- [func fontManager(_ sender: Any, willIncludeFont fontName: String) -> Bool](../ObjectiveC/NSObject-swift.class/fontManager(_:willIncludeFont:).md)
+  Requests permission from the Font panel delegate to display the given font name in the Font panel.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsfontmanager/removefontdescriptor(_:fromcollection:))*

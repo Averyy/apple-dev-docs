@@ -17,8 +17,7 @@ Returns a transition that scales the view.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct ScaleTransition
+struct ScaleTransition
 ```
 
 ## Topics

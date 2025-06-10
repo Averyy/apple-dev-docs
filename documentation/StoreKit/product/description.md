@@ -1,6 +1,6 @@
 # description
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: property
 
 The localized description of the product.

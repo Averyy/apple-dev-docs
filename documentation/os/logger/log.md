@@ -24,8 +24,6 @@ func log(_ message: OSLogMessage)
 
 > ❗ **Important**:  Don’t create an instance of [`OSLogMessage`](oslogmessage.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
 
- Don’t create an instance of [`OSLogMessage`](oslogmessage.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
-
 Use this method to write messages using the [`default`](oslogtype/default.md) log level to both the in-memory and on-disk log stores. This method is functionally equivalent to the [`notice(_:)`](logger/notice(_:).md) method.
 
 ## Parameters

@@ -1,6 +1,6 @@
 # fileWrapper(ofType:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Creates and returns a file wrapper that contains the contents of the document, formatted to the specified type.

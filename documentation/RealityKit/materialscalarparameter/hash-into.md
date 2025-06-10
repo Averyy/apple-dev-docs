@@ -10,6 +10,7 @@ Hashes the essential components of the scalar parameter by feeding them into the
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -26,10 +27,6 @@ func hash(into hasher: inout Hasher)
 
 - [static func == (MaterialScalarParameter, MaterialScalarParameter) -> Bool](materialscalarparameter/==(_:_:).md)
   Indicates whether two scalar parameters are equal.
-- [static func != (Self, Self) -> Bool](materialscalarparameter/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [var hashValue: Int](materialscalarparameter/hashvalue.md)
-  The hash value.
 
 
 ---

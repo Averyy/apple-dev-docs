@@ -1,6 +1,6 @@
 # capturePhoto()
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Captures a high-resolution photo of the camera’s live video.

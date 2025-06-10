@@ -1,6 +1,6 @@
 # WKMediaPlaybackState
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 An enumeration that describes whether an audio or video presentation is playing, paused, or suspended.
@@ -40,6 +40,7 @@ enum WKMediaPlaybackState
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Invoked when a `Conversation` is changed.
+Tells the delegate that a conversation changed.
 
 **Availability**:
 - iOS 17.4+
@@ -21,8 +21,15 @@ func conversationManager(_ manager: ConversationManager, conversationChanged con
 
 ## Parameters
 
-- `manager`: The   that issued the change.
-- `conversation`: The   that changed.
+- `manager`: A conversation manager informing the delegate that a conversation changed.
+- `conversation`: The conversation that changed.
+
+## See Also
+
+- [func conversationManager(ConversationManager, didActivate: AVAudioSession)](conversationmanagerdelegate/conversationmanager(_:didactivate:).md)
+  Tells the delegate that the app activated the conversation’s audio session.
+- [func conversationManager(ConversationManager, didDeactivate: AVAudioSession)](conversationmanagerdelegate/conversationmanager(_:diddeactivate:).md)
+  Tells the delegate that the app deactivated a conversation’s audio session..
 
 
 ---

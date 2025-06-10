@@ -25,8 +25,6 @@ Compiles the receiver before executing it if it is not already compiled.
 
 > ❗ **Important**:  You cannot use this method to send Apple events to other applications.
 
- You cannot use this method to send Apple events to other applications.
-
 ## Parameters
 
 - `event`: The Apple event to execute.

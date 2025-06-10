@@ -1,6 +1,6 @@
 # allowsWindowActivationEvents(_:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Configures whether gestures in this view hierarchy can handle events that activate the containing window.
@@ -8,7 +8,7 @@ Configures whether gestures in this view hierarchy can handle events that activa
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
 - visionOS 2.0+
 
@@ -16,7 +16,7 @@ Configures whether gestures in this view hierarchy can handle events that activa
 
 ```swift
 nonisolated
-func allowsWindowActivationEvents(_ value: Bool? = true) -> some View
+func allowsWindowActivationEvents(_ value: Bool?) -> some View
 ```
 
 #### Discussion
@@ -27,12 +27,14 @@ Views higher in the hierarchy can override the value you set on this view. In th
 HStack {
     Rectangle()
         .onTapGesture { ... }
-        .allowsWindowActivationEvents(true)
+        .allowsWindowActivationEvents()
 }
 .allowsWindowActivationEvents(false)
 ```
 
 > **Note**: It’s only possible to disallow handling events that activate the containing window for views that allow it by default or that inherit this behavior from their ancestors. Views that explicitly already disallow this functionality can’t have it turned on.
+
+> **Note**: Prefer using `View/allowsWindowActivationEvents()` if the parameter is is always `true` and it never changes.
 
 ## Parameters
 

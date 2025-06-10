@@ -1,6 +1,6 @@
 # WKMenuItemIcon.pause
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The icon indicating an action to pause playback.

@@ -1,6 +1,6 @@
 # Designing your browser architecture
 
-**Framework**: Browserenginekit
+**Framework**: BrowserEngineKit
 
 Isolate privileged access to operating system resources and private data from untrusted code.
 
@@ -20,7 +20,7 @@ If your browser engine uses custom text rendering and layout routines to display
 
 #### Create a Networking Extension
 
-Your browser can create one instance of a networking extension, which uses [`NSURLSession`](https://developer.apple.com/documentation/foundation/nsurlsession) or socket APIs to retrieve remote resources and submit HTTP POST data. When web content extensions need to fetch additional resources, for example, images referenced in HTML documents, they communicate with the network extension to make the request and retrieve the data.
+Your browser can create one instance of a networking extension, which uses [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) or socket APIs to retrieve remote resources and submit HTTP POST data. When web content extensions need to fetch additional resources, for example, images referenced in HTML documents, they communicate with the network extension to make the request and retrieve the data.
 
 #### Create Content Extensions
 
@@ -46,4 +46,4 @@ The operating system maintains a low level for the maximum memory that the rende
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/designing-your-browser-architecture)*
+*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/designing-your-browser-architecture)*

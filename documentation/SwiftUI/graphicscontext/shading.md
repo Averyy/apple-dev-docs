@@ -71,6 +71,7 @@ Use a shading instance to describe the color or pattern of a path that you outli
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # textBaseline Constants
 
-**Framework**: Webkitjs
+**Framework**: WebKit JS
 
 Constants used to set the `textBaseline` property that specify the vertical alignment of the bounding box relative to its y-coordinate. 
 

@@ -1,6 +1,6 @@
 # kVTRotation_0
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A constant that indicates a rotation of 0 degrees.

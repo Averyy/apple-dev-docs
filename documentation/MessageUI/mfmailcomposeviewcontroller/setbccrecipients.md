@@ -25,8 +25,6 @@ Only call this method before you display the mail composition interface. Don’t
 
 > ❗ **Important**:  [`MFMailComposeViewController`](mfmailcomposeviewcontroller.md) ignores calls to this method in Mac apps built with Mac Catalyst.
 
- [`MFMailComposeViewController`](mfmailcomposeviewcontroller.md) ignores calls to this method in Mac apps built with Mac Catalyst.
-
 ## Parameters
 
 - `bccRecipients`: An array of   objects, each containing the email address of a single recipient.

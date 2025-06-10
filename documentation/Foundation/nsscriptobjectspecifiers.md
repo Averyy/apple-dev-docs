@@ -10,14 +10,6 @@ These methods allow scriptable objects to provide a fully specified object speci
 
 For a comprehensive treatment of object specifiers, including sample code, see [`Object Specifiers`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_object_specifiers/SAppsObjectSpecifiers.html#//apple_ref/doc/uid/TP40002164-CH3) in [`Cocoa Scripting Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164).
 
-## Topics
-
-### Working with object specifiers
-- [var objectSpecifier: NSScriptObjectSpecifier? { get }](../ObjectiveC/NSObject-swift.class/objectSpecifier.md)
-  Returns an object specifier for the receiver.
-- [func indicesOfObjects(byEvaluatingObjectSpecifier specifier: NSScriptObjectSpecifier) -> [NSNumber]?](../ObjectiveC/NSObject-swift.class/indicesOfObjects(byEvaluatingObjectSpecifier:).md)
-  Returns the indices of the specified container objects.
-
 ## See Also
 
 - [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)

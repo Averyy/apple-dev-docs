@@ -23,9 +23,15 @@ class Geometry
 ### Accessing scene geometry
 - [var systemFrame: CGRect](uiwindowscene/geometry/systemframe.md)
   The current frame of the scene, in system coordinates.
+- [var coordinateSpace: any UICoordinateSpace](uiwindowscene/geometry/coordinatespace.md)
+  The coordinate space of the scene
 - [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/geometry/interfaceorientation.md)
   The current interface orientation for the scene.
+- [var isInterfaceOrientationLocked: Bool](uiwindowscene/geometry/isinterfaceorientationlocked.md)
+  If the scene’s interface orientation is locked and preventing changes. To express a preference for this value, override  `UIViewController`’s `prefersInterfaceOrientationLocked`.
 ### Instance Properties
+- [var isInteractivelyResizing: Bool](uiwindowscene/geometry/isinteractivelyresizing.md)
+  Returns true when the scene is being resized interactively, otherwise false.
 - [var maximumSize: CGSize](uiwindowscene/geometry/maximumsize.md)
 - [var minimumSize: CGSize](uiwindowscene/geometry/minimumsize.md)
 - [var resizingRestrictions: UIWindowSceneResizingRestrictions](uiwindowscene/geometry/resizingrestrictions.md)

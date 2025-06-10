@@ -27,8 +27,6 @@ The system may or may not allow the request, and the method call returns normall
 
 > ❗ **Important**: Only use this call in collaboration with Apple when working to resolve possible system bugs in sync behavior. The system throttles calls to this method to prevent inconveniencing people using your app.
 
-Only use this call in collaboration with Apple when working to resolve possible system bugs in sync behavior. The system throttles calls to this method to prevent inconveniencing people using your app.
-
 ## Parameters
 
 - `itemIdentifier`: The item that failed to sync.

@@ -49,6 +49,7 @@ struct LocalTestingActorID
 - [Equatable](../swift/equatable.md)
 - [Hashable](../swift/hashable.md)
 - [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 ## See Also
 

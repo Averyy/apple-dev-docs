@@ -10,7 +10,7 @@ Configures the search scopes for this view with the specified activation strateg
 - iPadOS 16.4+
 - macOS 13.3+
 - tvOS 16.4+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

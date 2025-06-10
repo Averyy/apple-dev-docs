@@ -1,6 +1,6 @@
 # WEBKIT_FORCE_AT_FORCE_MOUSE_DOWN
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # isLockdownModeEnabled
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether to use Lockdown Mode in the web view.

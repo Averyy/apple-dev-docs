@@ -1,6 +1,6 @@
 # cancelCurrentEvent(withResumptionOffset:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Cancels the playback of all currently playing and scheduled interstitial events, and resumes playback of primary content.

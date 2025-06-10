@@ -1,6 +1,6 @@
 # init(test:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates a new test run for the provided test.

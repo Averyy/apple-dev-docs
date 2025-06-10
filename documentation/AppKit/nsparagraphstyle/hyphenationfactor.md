@@ -16,7 +16,7 @@ var hyphenationFactor: Float { get }
 
 #### Discussion
 
-The system attempts hyphenation when the ratio of the text width (as broken without hyphenation) to the width of the line fragment is less than the hyphenation factor. When the paragraph’s hyphenation factor is `0.0`, the system uses the layout manager’s hyphenation factor instead. The system disables hyphenation when both are `0.0`. This property detects the user-selected language by examining the first item in [`preferredLanguages`](https://developer.apple.com/documentation/foundation/nslocale/1415614-preferredlanguages).
+The system attempts hyphenation when the ratio of the text width (as broken without hyphenation) to the width of the line fragment is less than the hyphenation factor. When the paragraph’s hyphenation factor is `0.0`, the system uses the layout manager’s hyphenation factor instead. The system disables hyphenation when both are `0.0`. This property detects the user-selected language by examining the first item in [`preferredLanguages`](https://developer.apple.com/documentation/Foundation/NSLocale/preferredLanguages).
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Add Tracks to a Library Playlist
 
-**Framework**: Applemusicapi  
+**Framework**: Apple Music API  
 **Kind**: httpRequest
 
 Add new tracks to the end of a library playlist.
@@ -42,4 +42,4 @@ The `POST` request containing the `identifier` and `type` for the tracks to be a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleMusicAPI/add-tracks-to-a-library-playlist)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applemusicapi/add-tracks-to-a-library-playlist)*

@@ -1,6 +1,6 @@
 # Generating a URL and Signature to Create a Maps Web Snapshot
 
-**Framework**: Snapshots
+**Framework**: Maps Web Snapshots
 
 Create a Snapshot URL and generate a signature to validate the request. 
 

@@ -29,7 +29,7 @@ This property is key-value observable.
 
 ## See Also
 
-- [var sourcePixelBufferAttributes: [String : Any]?](avassetwriterinputpixelbufferadaptor/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]?](avassetwriterinputpixelbufferadaptor/sourcepixelbufferattributes.md)
   The attributes of the pixel buffers that the pool contains.
 
 

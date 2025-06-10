@@ -23,7 +23,7 @@ func isMousePoint(_ point: NSPoint, in rect: NSRect) -> Bool
 
 Point-in-rectangle functions generally assume that the bottom edge of a rectangle is outside of the rectangle boundaries, while the upper edge is inside the boundaries. This method views `aRect` from the point of view of the user—that is, this method always treats the bottom edge of the rectangle as the one closest to the bottom edge of the user’s screen. By making this adjustment, this function ensures consistent mouse-detection behavior from the user’s perspective.
 
-Never use the Foundation’s [`NSPointInRect(_:_:)`](https://developer.apple.com/documentation/foundation/1391317-nspointinrect) function as a substitute for this method. It doesn’t account for flipped coordinate systems.
+Never use the Foundation’s [`NSPointInRect(_:_:)`](https://developer.apple.com/documentation/Foundation/NSPointInRect(_:_:)) function as a substitute for this method. It doesn’t account for flipped coordinate systems.
 
 ## Parameters
 
@@ -34,7 +34,7 @@ Never use the Foundation’s [`NSPointInRect(_:_:)`](https://developer.apple.com
 
 - [func convert(NSPoint, from: NSView?) -> NSPoint](nsview/convert(_:from:)-1dq9l.md)
   Converts a point from the coordinate system of a given view to that of the view.
-- [func NSMouseInRect(NSPoint, NSRect, Bool) -> Bool](../foundation/1391283-nsmouseinrect.md)
+- [func NSMouseInRect(_ aPoint: NSPoint, _ aRect: NSRect, _ flipped: Bool) -> Bool](../Foundation/NSMouseInRect(_:_:_:).md)
   Returns a Boolean value that indicates whether the point is in the specified rectangle.
 - [var isFlipped: Bool](nsview/isflipped.md)
   A Boolean value indicating whether the view uses a flipped coordinate system.

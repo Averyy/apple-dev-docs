@@ -1,6 +1,6 @@
 # WKInterfaceDeviceWristLocation.right
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The user’s right wrist.

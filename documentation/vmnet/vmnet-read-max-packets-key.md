@@ -1,6 +1,6 @@
 # vmnet_read_max_packets_key
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: var
 
 **Availability**:
@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-var vmnet_read_max_packets_key: UnsafePointer<CChar>
+let vmnet_read_max_packets_key: UnsafePointer<CChar>
 ```
 
 #### Discussion

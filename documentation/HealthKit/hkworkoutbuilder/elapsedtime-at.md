@@ -1,6 +1,6 @@
 # elapsedTime(at:)
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: method
 
 Calculates the duration of the workout at the specified time.

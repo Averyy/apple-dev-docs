@@ -63,6 +63,7 @@ The properties of this class correspond to fields of the pass. For details about
   The name of the organization that creates the pass.
 - [var relevantDate: Date?](pkpass/relevantdate.md)
   The date when the pass is most likely to be useful or necessary.
+- [class PKPassRelevantDate](pkpassrelevantdate.md)
 ### Getting the Wallet URL
 - [var passURL: URL?](pkpass/passurl.md)
   The URL that opens the pass in the Wallet app.

@@ -1,6 +1,6 @@
 # XCUIProtectedResource.localNetwork
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The protected resource case for finding and communicating with devices on the local network.

@@ -10,6 +10,7 @@ A playable audio resource
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -25,12 +26,14 @@ A playable audio resource
 - [var inputMode: AudioResource.InputMode](audioresource/inputmode-swift.property.md)
 - [AudioResource.InputMode](audioresource/inputmode-swift.enum.md)
 ### Structures
-- [AudioResource.Calibration](audioresource/calibration.md)
+- [AudioResource.Calibration](audioresource/calibration-5a1sg.md)
   A container for different calibration modes that can be applied for playback.
-- [AudioResource.Normalization](audioresource/normalization.md)
+- [AudioResource.Calibration](audioresource/calibration-89r8s.md)
+  A container for different calibration modes that can be applied for playback.
+- [AudioResource.Normalization](audioresource/normalization-3mh5o.md)
   Normalization adjusts the level of an audio file or buffer to be at a defined target.
-### Default Implementations
-- [Equatable Implementations](audioresource/equatable-implementations.md)
+- [AudioResource.Normalization](audioresource/normalization-5mic7.md)
+  Normalization adjusts the level of an audio file or buffer to be at a defined target.
 
 ## Relationships
 
@@ -43,6 +46,7 @@ A playable audio resource
 - [Equatable](../Swift/Equatable.md)
 - [Resource](resource.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -54,10 +58,6 @@ A playable audio resource
   An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/AVFAudio/AVAudioBuffer).
 - [struct AudioLibraryComponent](audiolibrarycomponent.md)
   A container for audio resources that you can look up by user-defined names.
-- [AudioResource.Calibration](audioresource/calibration.md)
-  A container for different calibration modes that can be applied for playback.
-- [AudioResource.Normalization](audioresource/normalization.md)
-  Normalization adjusts the level of an audio file or buffer to be at a defined target.
 
 
 ---

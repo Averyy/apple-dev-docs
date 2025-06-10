@@ -108,6 +108,8 @@ Add, Insert, and Remove operations on controllers that use lazy fetching behave 
 - [NSEditor](nseditor.md)
 - [NSEditorRegistration](nseditorregistration.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

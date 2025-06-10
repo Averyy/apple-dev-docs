@@ -1,6 +1,6 @@
 # contentRuleListStoreLookUpFailed
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An error that indicates a content rule list data store didn’t find a rule list with the specified identifier.

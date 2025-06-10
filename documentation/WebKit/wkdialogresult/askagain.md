@@ -1,6 +1,6 @@
 # WKDialogResult.askAgain
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A result that indicates the delegate didn’t display a message, so other web views should check again.

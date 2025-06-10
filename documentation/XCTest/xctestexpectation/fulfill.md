@@ -1,6 +1,6 @@
 # fulfill()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Marks the expectation as having been met.

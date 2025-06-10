@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to erase a device.
+The command to remotely and immediately erase a device.
 
 **Availability**:
 - iOS 4.0+
@@ -12,8 +12,6 @@ The command to erase a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,14 +25,14 @@ object EraseDeviceCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object EraseDeviceCommand.Command](erasedevicecommand/command-data.dictionary.md)
-  The request dictionary to erase a device.
+  The command to remotely and immediately erase a device.
 
 ## See Also
 
 - [object EraseDeviceResponse](erasedeviceresponse.md)
-  A response from the device after it processes the command to erase.
+  A response from the device after it processes the command to remotely and immediately erase a device.
 
 
 ---

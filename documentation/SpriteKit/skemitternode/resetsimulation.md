@@ -17,6 +17,7 @@ Removes all existing particles and restarts the simulation.
 ## Declaration
 
 ```swift
+@MainActor
 func resetSimulation()
 ```
 

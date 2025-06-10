@@ -1,6 +1,6 @@
 # compactMap(_:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns an array containing the non-`nil` results of calling the given transformation with each element of this sequence.

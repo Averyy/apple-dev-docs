@@ -1,6 +1,6 @@
 # Offering Actions in the Shortcuts App
 
-**Framework**: Sirikit
+**Framework**: SiriKit
 
 Suggest shortcuts users may want to add to Siri or combine with other actions in their own shortcuts.
 
@@ -79,4 +79,4 @@ Changes to the list of shortcut suggestions don’t affect shortcuts the user ad
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/offering-actions-in-the-shortcuts-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/offering-actions-in-the-shortcuts-app)*

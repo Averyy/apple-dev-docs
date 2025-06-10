@@ -16,6 +16,7 @@ Get a list of all experiments for an App Store version of an app across all plat
 
 - [List All Experiments for an App Store Version](get-v1-appstoreversions-_id_-appstoreversionexperimentsv2.md)
   Get a list of all experiments for an App Store version of an app across all platforms.
+- [GET /v1/appStoreVersions/{id}/relationships/appStoreVersionExperimentsV2](get-v1-appstoreversions-_id_-relationships-appstoreversionexperimentsv2.md)
 
 
 ---

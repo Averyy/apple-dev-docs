@@ -110,7 +110,7 @@ When the game starts, query for the GPU family support with the [`supportsFamily
 
 ##### Adapt the Game for Battery Life or Low Power Mode
 
-When designing games that run on a portable device, consider detecting when the app goes into low-power mode. See the [`isLowPowerModeEnabled`](https://developer.apple.com/documentation/foundation/processinfo/1617047-islowpowermodeenabled) API for more information on getting a notification when the system goes into low-power mode. This technique allows a game to adapt its graphics settings so that it uses less energy. For example, the game can:
+When designing games that run on a portable device, consider detecting when the app goes into low-power mode. See the [`isLowPowerModeEnabled`](https://developer.apple.com/documentation/Foundation/ProcessInfo/isLowPowerModeEnabled) API for more information on getting a notification when the system goes into low-power mode. This technique allows a game to adapt its graphics settings so that it uses less energy. For example, the game can:
 
 - Lower the rendering resolution
 - Limit the frame rate
@@ -118,20 +118,18 @@ When designing games that run on a portable device, consider detecting when the 
 
 ## See Also
 
-- [Metal developer workflows](../Xcode/Metal-developer-workflows.md)
-  Locate and fix issues related to your app’s use of the Metal API and GPU functions.
-- [Metal debugger](../Xcode/Metal-debugger.md)
-  Debug and profile your Metal workload with a GPU trace.
-- [Capturing Metal Commands Programmatically](capturing-metal-commands-programmatically.md)
-  Invoke Metal’s frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
 - [Supporting Simulator in a Metal app](supporting-simulator-in-a-metal-app.md)
   Configure alternative render paths in your Metal app to enable running your app in Simulator.
-- [Analyzing the memory usage of your Metal app](../Xcode/Analyzing-the-memory-usage-of-your-Metal-app.md)
-  Keep your app alive in the background by managing its memory footprint.
-- [Analyzing the performance of your Metal app](../Xcode/Analyzing-the-performance-of-your-Metal-app.md)
-  Ensure consistent, smooth rendering by profiling your app’s frame time.
+- [Capturing Metal Commands Programmatically](capturing-metal-commands-programmatically.md)
+  Invoke Metal’s frame capture from your app, then save the resulting GPU trace to a file or view it in Xcode.
+- [Logging shader debug messages](logging-shader-debug-messages.md)
+  Print debugging messages that a shader generates using shader logging.
 - [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
   Prototype and test your Metal apps in Simulator.
+- [Metal debugger](../Xcode/Metal-debugger.md)
+  Debug and profile your Metal workload with a GPU trace.
+- [Metal developer workflows](../Xcode/Metal-developer-workflows.md)
+  Locate and fix issues related to your app’s use of the Metal API and GPU functions.
 - [GPU Counters and Counter Sample Buffers](gpu-counters-and-counter-sample-buffers.md)
   Retrieve runtime data from a GPU device by sampling one or more of its counters.
 - [Metal Debugging Types](metal-debugging-types.md)
@@ -140,4 +138,4 @@ When designing games that run on a portable device, consider detecting when the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/improving-your-games-graphics-performance-and-settings)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/improving-your-games-graphics-performance-and-settings)*

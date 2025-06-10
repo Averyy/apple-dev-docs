@@ -1,6 +1,6 @@
 # CLKTimeIntervalGaugeProvider
 
-**Framework**: Clockkit  
+**Framework**: ClockKit  
 **Kind**: class
 
 A gauge that tracks time intervals.
@@ -68,4 +68,4 @@ Use this gauge provider to visually show the amount of time that has elapsed wit
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/clktimeintervalgaugeprovider)*
+*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/clktimeintervalgaugeprovider)*

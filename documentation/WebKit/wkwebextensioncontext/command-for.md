@@ -1,6 +1,6 @@
 # command(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Retrieves the command associated with the given event without performing it.

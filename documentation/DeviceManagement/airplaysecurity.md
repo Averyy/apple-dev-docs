@@ -7,8 +7,6 @@ The payload you use to configure Apple TV for a particular style of AirPlay secu
 
 **Availability**:
 - tvOS 11.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,17 +22,17 @@ Specify `com.apple.airplay.security` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | tvOS |
-| User Channel | - |
-| Allow Manual Install | tvOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | tvOS |
+| User channel | NA |
+| Allow manual install | tvOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

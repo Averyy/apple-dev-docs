@@ -24,14 +24,6 @@ func deleteSearchableItems(withDomainIdentifiers domainIdentifiers: [String]) as
 func deleteSearchableItems(withDomainIdentifiers domainIdentifiers: [String]) async throws
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func deleteSearchableItems(withDomainIdentifiers domainIdentifiers: [String]) async throws
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 Use this method to delete groups of items. Note that the delete operation is recursive. For example, if domain identifiers are of the form `<account-id>.<mailbox-id>`, calling this method and specifying `<account-id>` deletes items with the specified account and any mailbox.
 
 ## Parameters

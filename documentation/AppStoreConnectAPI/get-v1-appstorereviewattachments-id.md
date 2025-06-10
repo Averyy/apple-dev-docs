@@ -12,6 +12,7 @@ Get information about an App Store review attachment and its upload and processi
 
 - [List All Review Attachments for an App Store Review Detail](get-v1-appstorereviewdetails-_id_-appstorereviewattachments.md)
   List all the App Store review attachments you include with a version when you submit it for App Review.
+- [GET /v1/appStoreReviewDetails/{id}/relationships/appStoreReviewAttachments](get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
 
 
 ---

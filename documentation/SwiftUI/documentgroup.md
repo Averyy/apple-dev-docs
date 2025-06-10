@@ -18,6 +18,10 @@ A scene that enables support for opening, creating, and saving documents.
 struct DocumentGroup<Document, Content> where Content : View
 ```
 
+## Mentions
+
+- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+
 #### Overview
 
 Use a `DocumentGroup` scene to tell SwiftUI what kinds of documents your app can open when you declare your app using the [`App`](app.md) protocol.

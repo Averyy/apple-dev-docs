@@ -8,7 +8,7 @@ An object that contains the partial or final results of a speech recognition req
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 10.0+
 - macOS 10.15+
 - visionOS 1.0+
 
@@ -28,14 +28,14 @@ If you requested partial results from the speech recognizer, the transcriptions 
 
 ## Topics
 
-### Getting the Transcriptions
+### Getting transcriptions
 - [var bestTranscription: SFTranscription](sfspeechrecognitionresult/besttranscription.md)
   The transcription with the highest confidence level.
 - [var transcriptions: [SFTranscription]](sfspeechrecognitionresult/transcriptions.md)
   An array of potential transcriptions, sorted in descending order of confidence.
 - [var speechRecognitionMetadata: SFSpeechRecognitionMetadata?](sfspeechrecognitionresult/speechrecognitionmetadata.md)
   An object that contains the metadata results for a speech recognition request.
-### Determining Whether the Transcriptions Are Final
+### Determining whether transcriptions are final
 - [var isFinal: Bool](sfspeechrecognitionresult/isfinal.md)
   A Boolean value that indicates whether speech recognition is complete and whether the transcriptions are final.
 

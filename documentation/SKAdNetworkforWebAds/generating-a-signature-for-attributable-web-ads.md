@@ -16,8 +16,6 @@ Create the UTF-8 string using the required [`signature`](signature.md) object pa
 
 > ❗ **Important**:  Lowercase the string representation of the nonce from the [`signature`](signature.md) object. Failing to do so results in an invalid signature. Only ads with valid signatures can get ad attributions.
 
- Lowercase the string representation of the nonce from the [`signature`](signature.md) object. Failing to do so results in an invalid signature. Only ads with valid signatures can get ad attributions.
-
 Combine the values into a UTF-8 string with an invisible separator (`‘\u2063’`) between them, in the exact order the code below shows:
 
 ```c
@@ -41,7 +39,7 @@ Encode the binary signature you generate into a Base64 string. The result is you
 MEQCIEQlmZRNfYzKBSE8QnhLTIHZZZWCFgZpRqRxHss65KoFAiAJgJKjdrWdkLUOCCjuEx2RmFS7daRzSVZRVZ8RyMyUXg==
 ```
 
-For more information about Base64 encoding, see [`base64EncodedString(options:)`](https://developer.apple.com/documentation/foundation/data/2142853-base64encodedstring).
+For more information about Base64 encoding, see [`base64EncodedString(options:)`](https://developer.apple.com/documentation/Foundation/Data/base64EncodedString(options:)).
 
 ##### Use the Generated Signature String
 

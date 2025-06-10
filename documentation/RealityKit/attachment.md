@@ -25,8 +25,6 @@ An attachment content you can use to gather an identifier and view.
   The view associated with this attachment.
 - [var id: AnyHashable](attachment/id.md)
   The identifier of this attachment.
-### Type Aliases
-- [Attachment.Body](attachment/body.md)
 
 ## Relationships
 
@@ -34,6 +32,7 @@ An attachment content you can use to gather an identifier and view.
 - [AttachmentContent](attachmentcontent.md)
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -45,6 +44,8 @@ An attachment content you can use to gather an identifier and view.
   An entity that has a view attachment.
 - [struct ViewAttachmentComponent](viewattachmentcomponent.md)
   A component containing additional information about a view attachment entity provided  via the [`entity(for:)`](realityviewattachments/entity(for:).md) function.
+- [struct PresentationComponent](presentationcomponent.md)
+  A component that presents a SwiftUI modal presentation from a RealityKit entity.
 - [struct TextComponent](textcomponent.md)
   A component that draws 2D text at an entity’s location.
 

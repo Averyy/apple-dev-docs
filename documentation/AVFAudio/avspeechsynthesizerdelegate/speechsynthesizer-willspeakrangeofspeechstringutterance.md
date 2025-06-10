@@ -26,8 +26,6 @@ The system calls this method once for each unit of speech in the utterance’s t
 
 > 💡 **Tip**:  Implement this method if you want to provide a user interface to visually highlight each word as the synthesizer speaks it.
 
- Implement this method if you want to provide a user interface to visually highlight each word as the synthesizer speaks it.
-
 ## Parameters
 
 - `synthesizer`: The speech synthesizer that’s about to speak an utterance.

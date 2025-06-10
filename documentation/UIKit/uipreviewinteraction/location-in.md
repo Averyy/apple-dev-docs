@@ -1,6 +1,6 @@
 # location(in:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Returns the location of the touch that started the interaction.

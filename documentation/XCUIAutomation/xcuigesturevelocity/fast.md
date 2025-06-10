@@ -1,6 +1,6 @@
 # fast
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A value representing a fast gesture velocity.

@@ -16,7 +16,7 @@ The stroke color to use for the path.
 ## Declaration
 
 ```swift
-var strokeColor: UIColor? { get set }
+var strokeColor: NSColor? { get set }
 ```
 
 ## See Also

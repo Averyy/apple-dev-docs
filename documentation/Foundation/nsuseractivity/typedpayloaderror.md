@@ -40,6 +40,7 @@ Use this enumeration to manage errors from [`typedPayload(_:)`](nsuseractivity/t
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

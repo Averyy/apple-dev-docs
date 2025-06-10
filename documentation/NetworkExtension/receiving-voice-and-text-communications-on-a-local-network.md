@@ -5,10 +5,10 @@
 Provide voice and text communication on a local network isolated from Apple Push Notification service by adopting Local Push Connectivity.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
 - macOS 11.0+
-- Xcode 13.0+
+- Xcode 17.0+
 
 #### Overview
 
@@ -45,12 +45,11 @@ Select the `SimplePushServer` build scheme and your Mac as the run destination, 
 With the server running, select the `SimplePush` iOS build scheme and run the project on your iOS device. When `SimplePush` starts, update the app’s settings to connect to the server. Tap the Settings button and enter the following information:
 
 1. Enter the Server Address, which is the IP address or hostname of the Mac where `SimplePushServer` is running.
-2. Enter one or more of the following network configurations: - Wi-Fi—Enter the SSID of your local Wi-Fi network. The `NEAppPushProvider` runs when your device joins the Wi-Fi network with the SSID you’ve specified.
-- Cellular—Enter the Mobile Country Code and Mobile Network Code of your cellular provider (tapping Use Current Carrier autofills this information). If the device is connected to a Band 48 CBRS cellular network, manually enter the Tracking Area Code for the network.
+2. Enter one or more of the following network configurations: - Wi-Fi — Enter the SSID of your local Wi-Fi network. The `NEAppPushProvider` runs when your device joins the Wi-Fi network with the SSID you’ve specified.
+- Cellular—Enter the Mobile Country Code and Mobile Network Code of your cellular provider. If the device is connected to a Band 48 CBRS cellular network, enter the Tracking Area Code for the network.
+- Ethernet — The `NEAppPushProvider` runs when your device is connected to an Ethernet network and the ethernet network is the primary route on the device.
 
 > ❗ **Important**: All cellular networks other than Band 48 CBRS require the device to be supervised for `NEAppPushProvider` to run. For more information, see [`Supervision of Apple devices`](https://developer.apple.comhttps://support.apple.com/guide/deployment-reference-ios/enabling-device-supervision-ior7ba06c270/web).
-
-All cellular networks other than Band 48 CBRS require the device to be supervised for `NEAppPushProvider` to run. For more information, see [`Supervision of Apple devices`](https://developer.apple.comhttps://support.apple.com/guide/deployment-reference-ios/enabling-device-supervision-ior7ba06c270/web).
 
 After configuring the settings above, the Local Push Connectivity - Active setting displays “Yes” when `NEAppPushProvider` is running. You must perform the steps above on at least two iOS devices so you can test and observe message exchanges between clients.
 

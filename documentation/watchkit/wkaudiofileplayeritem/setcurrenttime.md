@@ -1,6 +1,6 @@
 # setCurrentTime(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the playback point, measured in seconds, from the beginning of the audio file.

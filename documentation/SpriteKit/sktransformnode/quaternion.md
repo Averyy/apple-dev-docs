@@ -15,6 +15,7 @@
 ## Declaration
 
 ```swift
+@MainActor
 func quaternion() -> simd_quatf
 ```
 

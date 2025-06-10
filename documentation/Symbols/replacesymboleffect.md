@@ -58,6 +58,7 @@ A replace transition animates the change from one symbol image to another. You c
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SymbolEffect](symboleffect.md)
 
 ## See Also

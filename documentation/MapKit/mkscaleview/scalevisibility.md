@@ -30,7 +30,7 @@ You can configure a scale view to be visible all the time or only when the scale
 - [var legendAlignment: MKScaleView.Alignment](mkscaleview/legendalignment.md)
   The alignment of the distance information in the scale view.
 - [MKScaleView.Alignment](mkscaleview/alignment.md)
-  Constants indicating whether measurements begin at the leading or trailing edge of the view.
+  Constants that indicate how the framework should align measurements.
 
 
 ---

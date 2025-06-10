@@ -17,6 +17,14 @@
 func compare(_ other: Double) -> JSRelationCondition
 ```
 
+#### Return Value
+
+A value of JSRelationCondition, a kJSRelationConditionUndefined is returned if an exception is thrown.
+
+#### Discussion
+
+The JSValue is converted to a double according to the rules specified by the JavaScript language then compared with other.
+
 
 ---
 

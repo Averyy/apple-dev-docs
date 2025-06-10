@@ -6,7 +6,7 @@ Choose a button color and size to suit your webpage.
 
 #### Overview
 
-You can experiment with styling and display of an Apple Pay button using the [`Apple Pay on the Web Demo`](https://developer.apple.comhttps://applepaydemo.apple.com). To support devices running iOS 10 and macOS 10.12, use the CSS template sample code in [`Displaying Apple Pay Buttons Using CSS`](https://developer.apple.com/documentation/apple_pay_on_the_web/displaying_apple_pay_buttons_using_css) to draw the appropriate button.
+You can experiment with styling and display of an Apple Pay button using the [`Apple Pay on the Web Demo`](https://developer.apple.comhttps://applepaydemo.apple.com). To support devices running iOS 10 and macOS 10.12, use the CSS template sample code in [`Displaying Apple Pay Buttons Using CSS`](displaying-apple-pay-buttons-using-css.md) to draw the appropriate button.
 
 To display an Apple Pay button set the `-webkit-appearance` CSS property of the element to `-apple-pay-button`.
 

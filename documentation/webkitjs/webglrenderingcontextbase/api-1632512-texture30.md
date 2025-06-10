@@ -1,6 +1,6 @@
 # TEXTURE30
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

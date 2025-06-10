@@ -27,6 +27,11 @@ A sequence containing all transactions for the given product.
 
 - `productID`: Identifies the product to filter the transaction cache against.
 
+## See Also
+
+- [static func currentEntitlements(for: String) -> Transaction.Transactions](transaction/currententitlements(for:).md)
+  Gets the transactions that entitle the user to items purchased under a product ID.
+
 
 ---
 

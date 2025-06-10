@@ -25,6 +25,8 @@ static func when(platforms: [Platform], configuration: BuildConfiguration) -> Bu
   Creates a build setting condition.
 - [static func when(configuration: BuildConfiguration) -> BuildSettingCondition](buildsettingcondition/when(configuration:).md)
   Creates a build setting condition.
+- [static func when(platforms: [Platform]?, configuration: BuildConfiguration?, traits: Set<String>?) -> BuildSettingCondition](buildsettingcondition/when(platforms:configuration:traits:).md)
+  Creates a build setting condition.
 - [static func when(platforms: [Platform]?, configuration: BuildConfiguration?) -> BuildSettingCondition](buildsettingcondition/when(platforms:configuration:)-2991l.md)
   Creates a build setting condition.
 

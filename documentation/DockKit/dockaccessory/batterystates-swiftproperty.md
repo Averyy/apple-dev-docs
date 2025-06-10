@@ -1,6 +1,6 @@
 # batteryStates
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: property
 
 Battery states from the accessory that indicate changes in battery charge or readiness

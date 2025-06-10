@@ -87,8 +87,6 @@ func insertItem(_ newItem: PlaylistItem, at index: Int) {
 
 > ❗ **Important**: All methods of  `SampleBufferPlayer` that modify the `Playlist` must do so in a thread-safe manner. In this example implementation, a `DispatchSemaphore` guarantees that only one method modifies the state at a time. Such methods issue a semaphore `wait` on entry, then use a `defer` statement to guarantee a matching semaphore `signal` on exit.
 
-All methods of  `SampleBufferPlayer` that modify the `Playlist` must do so in a thread-safe manner. In this example implementation, a `DispatchSemaphore` guarantees that only one method modifies the state at a time. Such methods issue a semaphore `wait` on entry, then use a `defer` statement to guarantee a matching semaphore `signal` on exit.
-
 In general, all of the public methods of  `SampleBufferPlayer` end up invoking one of these helper methods: `restartWithItems(fromIndex:atOffset:)` or `continueWithCurrentItems()`.
 
 The `restartWithItems(fromIndex:atOffset:)` method forces playback of the currently playing item (if any) to stop before playback restarts with a new list of items:
@@ -130,8 +128,6 @@ Both methods begin by checking that the player state isn’t “stopped.” They
 Once the `SampleBufferSerializer` object receives a queue of items to play, it proceeds with the dual tasks of translating the items into a sequence of sample buffers containing audio data and enqueuing the buffers for rendering. The `SampleBufferSerializer` causes an `AVSampleBufferRenderSynchronizer` object to play audio at the correct time, and an `AVSampleBufferAudioRenderer` object to render enqueued audio sample buffers in time for playback.
 
 > ❗ **Important**: `SampleBufferSerializer` invokes all of its internal methods via a serial `DispatchQueue`. This ensures that changes to instance properties during each method invocation are thread-safe.
-
-`SampleBufferSerializer` invokes all of its internal methods via a serial `DispatchQueue`. This ensures that changes to instance properties during each method invocation are thread-safe.
 
 The most important `SampleBufferSerializer` methods are the two methods it uses to accept control from the `SampleBufferPlayer` object: `restartPlayback(with:atOffset:)` and `continuePlayback(with:)`. Both methods take, as their first parameter, a queue of items to play in order. The methods differ in the way they handle the item that was previously playing, if any.
 

@@ -14,6 +14,7 @@ List all leaderboard set releases for a Game Center detail.
   Get all leaderboard sets and related information for a Game Center detail.
 - [List leaderboard sets](get-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboardsets.md)
   List all leaderboards for a Game Center detail.
+- [GET /v1/gameCenterDetails/{id}/relationships/leaderboardSetReleases](get-v1-gamecenterdetails-_id_-relationships-leaderboardsetreleases.md)
 
 
 ---

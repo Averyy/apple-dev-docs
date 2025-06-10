@@ -1,6 +1,6 @@
 # formIndex(_:offsetBy:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Offsets the given index by the specified distance.

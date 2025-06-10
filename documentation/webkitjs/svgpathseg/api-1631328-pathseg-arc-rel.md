@@ -1,6 +1,6 @@
 # PATHSEG_ARC_REL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

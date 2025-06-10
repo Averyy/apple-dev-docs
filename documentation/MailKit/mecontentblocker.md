@@ -1,6 +1,6 @@
 # MEContentBlocker
 
-**Framework**: Mailkit  
+**Framework**: MailKit  
 **Kind**: protocol
 
 An object that provides a set of rules to block content when displaying a message.
@@ -48,4 +48,4 @@ To indicate that your extension contains a content blocker, add `MEContentBlocke
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MailKit/mecontentblocker)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mailkit/mecontentblocker)*

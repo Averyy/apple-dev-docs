@@ -10,7 +10,7 @@ Performs an action when a specified value changes.
 - iPadOS 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 7.0+
 
 ## Declaration
@@ -69,8 +69,6 @@ The system may call the action closure on the main actor, so avoid long-running 
 Important: This modifier is deprecated and has been replaced with new versions that include either zero or two parameters within the closure, unlike this version that includes one parameter. This deprecated version and the new versions behave differently with respect to how they execute the action closure, specifically when the closure captures other values. Using the deprecated API, the closure is run with captured values that represent the “old” state. With the replacement API, the closure is run with captured values that represent the “new” state, which makes it easier to correctly perform updates that rely on supplementary values (that may or may not have changed) in addition to the changed value that triggered the action.
 
 > ❗ **Important**: This modifier is deprecated and has been replaced with new versions that include either zero or two parameters within the closure, unlike this version that includes one parameter. This deprecated version and the new versions behave differently with respect to how they execute the action closure, specifically when the closure captures other values. Using the deprecated API, the closure is run with captured values that represent the “old” state. With the replacement API, the closure is run with captured values that represent the “new” state, which makes it easier to correctly perform updates that rely on supplementary values (that may or may not have changed) in addition to the changed value that triggered the action.
-
-This modifier is deprecated and has been replaced with new versions that include either zero or two parameters within the closure, unlike this version that includes one parameter. This deprecated version and the new versions behave differently with respect to how they execute the action closure, specifically when the closure captures other values. Using the deprecated API, the closure is run with captured values that represent the “old” state. With the replacement API, the closure is run with captured values that represent the “new” state, which makes it easier to correctly perform updates that rely on supplementary values (that may or may not have changed) in addition to the changed value that triggered the action.
 
 ## Parameters
 

@@ -8,10 +8,10 @@ An interface for exposing a custom type or app-specific concept to system experi
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -26,6 +26,7 @@ protocol AppEntity : AppValue, DisplayRepresentable, Identifiable where Self == 
 - [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
 - [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
 - [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
+- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
 
 #### Overview
 
@@ -69,6 +70,7 @@ It is up to you whether you want to conform to the `AppEntity` protocol directly
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
 - [PersistentlyIdentifiable](persistentlyidentifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 ### Inherited By
 - [AssistantEntity](assistantentity.md)

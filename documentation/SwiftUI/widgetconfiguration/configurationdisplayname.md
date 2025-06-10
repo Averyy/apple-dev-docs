@@ -3,29 +3,30 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Sets the name shown for a widget when a user adds or edits it using the contents of a text view.
+Sets the localized name shown for a widget when a user adds or edits the widget.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
 
 ```swift
 @MainActor
-@preconcurrency func configurationDisplayName(_ displayName: Text) -> some WidgetConfiguration
+@preconcurrency func configurationDisplayName(_ displayName: LocalizedStringResource) -> some WidgetConfiguration
 ```
 
 #### Return Value
 
-A widget configuration with a descriptive name for the widget.
+A widget configuration that includes a descriptive name for the widget.
 
 ## Parameters
 
-- `displayName`: A text view containing a localized string to   display.
+- `displayName`: Text resource for the localized name to display.
 
 
 ---

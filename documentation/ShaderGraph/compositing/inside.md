@@ -5,13 +5,21 @@
 
 Multiplies a mask to all channels of the input.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
 #### Parameter Types
 
 #### Parameter Descriptions
 
 #### Discussion
 
-Below is an example of a simple node graph that uses the Inside node to apply a mask to a brick texture.
+Below is an example of a simple node graph that uses the Inside node to apply a mask to a brick texture:
 
 ![None](https://docs-assets.developer.apple.com/published/ddd60aabdacdc1bd721a5ddb67b271c7/InsideGraph.png)
 

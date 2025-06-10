@@ -1,6 +1,6 @@
 # EKRecurrenceRule
 
-**Framework**: Eventkit  
+**Framework**: EventKit  
 **Kind**: class
 
 A class that describes the pattern for a recurring event.
@@ -94,4 +94,4 @@ Recurrence rules can have an end, represented by an [`EKRecurrenceEnd`](ekrecurr
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/EventKit/ekrecurrencerule)*
+*[View on Apple Developer](https://developer.apple.com/documentation/eventkit/ekrecurrencerule)*

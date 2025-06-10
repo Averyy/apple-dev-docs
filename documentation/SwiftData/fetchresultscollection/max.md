@@ -1,6 +1,6 @@
 # max()
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns the maximum element in the sequence.

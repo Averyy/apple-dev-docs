@@ -12,6 +12,7 @@ A collection of multipolyline shapes, each consisting of one or more connected l
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 

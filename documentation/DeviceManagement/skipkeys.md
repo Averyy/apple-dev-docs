@@ -10,8 +10,7 @@ The list of setup panes.
 - iPadOS 7.0+
 - macOS 10.9+
 - tvOS 10.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 

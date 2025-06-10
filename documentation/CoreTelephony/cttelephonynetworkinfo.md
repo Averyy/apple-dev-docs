@@ -46,7 +46,7 @@ This class also gives you access to the [`CTCarrier`](ctcarrier.md) object, whic
   A dictionary that contains carrier information about each service.
 - [var serviceSubscriberCellularProvidersDidUpdateNotifier: ((String) -> Void)?](cttelephonynetworkinfo/servicesubscribercellularprovidersdidupdatenotifier.md)
   A block dispatched when there are updates to the user’s cellular provider information for any service.
-- [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](../foundation/nsnotification/name/1616908-ctradioaccesstechnologydidchange.md)
+- [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/CTRadioAccessTechnologyDidChange.md)
   The name of the notification indicating that the radio access technology changed for one of the services.
 
 ## Relationships
@@ -60,11 +60,6 @@ This class also gives you access to the [`CTCarrier`](ctcarrier.md) object, whic
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-
-## See Also
-
-- [class CTCarrier](ctcarrier.md)
-  Information about the user’s cellular service provider, such as its unique identifier and whether it allows VoIP calls on its network.
 
 
 ---

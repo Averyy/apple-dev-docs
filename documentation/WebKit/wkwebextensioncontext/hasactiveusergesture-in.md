@@ -1,6 +1,6 @@
 # hasActiveUserGesture(in:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Indicates if a user gesture is currently active in the specified tab.

@@ -11,7 +11,7 @@ Review unsupported symbols and their replacements.
   The player identifiers for the local player’s friends.
 ### Deprecated methods
 - [func authenticate(completionHandler: (((any Error)?) -> Void)?)](gklocalplayer/authenticate(completionhandler:).md)
-  Authenticates the local player on the device.
+  Initializes the local player on the device.
 - [func generateIdentityVerificationSignature(completionHandler: ((URL?, Data?, Data?, UInt64, (any Error)?) -> Void)?)](gklocalplayer/generateidentityverificationsignature(completionhandler:).md)
   Generates a signature so that a third-party server can authenticate the local player.
 - [func loadDefaultLeaderboardCategoryID(completionHandler: ((String?, (any Error)?) -> Void)?)](gklocalplayer/loaddefaultleaderboardcategoryid(completionhandler:).md)

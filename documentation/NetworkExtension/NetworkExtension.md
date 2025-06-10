@@ -69,6 +69,9 @@ iOS supports Always-on VPN to ensure all IP traffic is tunneled back to the orga
   Create an on-device network content filter.
 - [Filtering Network Traffic](filtering-network-traffic.md)
   Use the Network Extension framework to allow or deny network connections.
+### URL filters
+- [URL filters](url-filters.md)
+  Create a filter that analyzes full URLs, while preserving privacy.
 ### DNS configurations
 - [DNS settings](dns-settings.md)
   Create and manage a system-wide DNS configuration that uses built-in encrypted DNS protocols.
@@ -77,10 +80,21 @@ iOS supports Always-on VPN to ensure all IP traffic is tunneled back to the orga
 ### Local networking
 - [Local push connectivity](local-push-connectivity.md)
   Provide functionality similar to Apple Push Notification Service when access to the wider internet is unavailable.
+### App extensions
+- [protocol NEAppExtension](neappextension.md)
+  A protocol that defines common functionality for other extension protocols in the NetworkExtension framework.
+- [protocol NEAppExtensionConfigurationProtocol](neappextensionconfigurationprotocol.md)
+  A protocol to provide configuration options to NetworkExtension app extensions.
+- [class NEAppExtensionConfiguration](neappextensionconfiguration.md)
+  A class that defines configuration options for use in NetworkExtension app extensions.
 ### Classes
 - [class NEVPNIKEv2PPKConfiguration](nevpnikev2ppkconfiguration.md)
 ### Protocols
+- [protocol NEAppExtensionXPCProtocol](neappextensionxpcprotocol.md)
 - [protocol NEAppProxyUDPFlowHandling](neappproxyudpflowhandling.md)
+- [protocol NEHotspotAuthenticationProviderXPCProtocol](nehotspotauthenticationproviderxpcprotocol.md)
+- [protocol NEHotspotEvaluationProviderXPCProtocol](nehotspotevaluationproviderxpcprotocol.md)
+- [protocol NEURLFilterControlProviderXPCProtocol](neurlfiltercontrolproviderxpcprotocol.md)
 ### Structures
 - [struct NETunnelProviderError](netunnelprovidererror-swift.struct.md)
   An error that the tunnel provider encounters.
@@ -90,6 +104,7 @@ iOS supports Always-on VPN to ensure all IP traffic is tunneled back to the orga
 - [let NERelayClientErrorDomain: String](nerelayclienterrordomain.md)
 ### Enumerations
 - [enum NERelayManagerClientError](nerelaymanagerclienterror.md)
+- [enum NEVPNIKEv2PostQuantumKeyExchangeMethod](nevpnikev2postquantumkeyexchangemethod.md)
 
 
 ---

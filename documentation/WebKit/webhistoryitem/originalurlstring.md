@@ -1,6 +1,6 @@
 # originalURLString
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The string representation of the original URL for the receiver’s page.

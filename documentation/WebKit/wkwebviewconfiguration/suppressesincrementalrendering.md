@@ -1,6 +1,6 @@
 # suppressesIncrementalRendering
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether the web view suppresses content rendering until the content is fully loaded into memory.

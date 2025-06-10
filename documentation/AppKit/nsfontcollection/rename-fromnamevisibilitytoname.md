@@ -1,6 +1,6 @@
 # rename(fromName:visibility:toName:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Renames the font collection with the specified name and visibility to the second name specified.

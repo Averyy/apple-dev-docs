@@ -8,9 +8,9 @@ Defines the destination of a drag and drop operation that handles the dropped co
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -26,6 +26,8 @@ A view that provides a drop destination for a drag operation of the specified ty
 #### Discussion
 
 The drop destination is the same size and position as this view.
+
+Make sure to start loading the contents of `NSItemProvider` instances within the scope of the `action` closure. Do not perform loading asynchronously on a different actor. Loading the contents may finish later, but it must start here. For security reasons, the drop receiver can access the dropped payload only before this closure returns.
 
 ## Parameters
 

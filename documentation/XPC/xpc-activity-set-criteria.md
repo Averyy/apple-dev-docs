@@ -1,6 +1,6 @@
 # xpc_activity_set_criteria(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Modifies the execution criteria of an activity.

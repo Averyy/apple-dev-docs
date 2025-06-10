@@ -1,6 +1,6 @@
 # Declaring your actionable notification types
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Differentiate your notifications and add action buttons to the notification interface.
 
@@ -134,7 +134,7 @@ func userNotificationCenter(_ center: UNUserNotificationCenter,
 }
 ```
 
-> ❗ **Important**:  If your response to an action involves accessing files on disk, consider a different approach. Users can respond to actions while the device is locked, which would make files encrypted with the [`complete`](https://developer.apple.com/documentation/foundation/fileprotectiontype/1616200-complete) option unavailable to your app. If that happens, you may need to save changes temporarily and integrate them into your app’s data structures later.
+> ❗ **Important**:  If your response to an action involves accessing files on disk, consider a different approach. Users can respond to actions while the device is locked, which would make files encrypted with the [`complete`](https://developer.apple.com/documentation/Foundation/FileProtectionType/complete) option unavailable to your app. If that happens, you may need to save changes temporarily and integrate them into your app’s data structures later.
 
 ## See Also
 
@@ -148,4 +148,4 @@ func userNotificationCenter(_ center: UNUserNotificationCenter,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/declaring-your-actionable-notification-types)*
+*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/declaring-your-actionable-notification-types)*

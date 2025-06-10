@@ -66,6 +66,9 @@ class AudioHardwareDevice
 - [AudioHardwareClock](audiohardwareclock.md)
 ### Inherited By
 - [AudioHardwareAggregateDevice](audiohardwareaggregatedevice.md)
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

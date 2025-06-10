@@ -1,6 +1,6 @@
 # Weather
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 The collection of all requested weather data.

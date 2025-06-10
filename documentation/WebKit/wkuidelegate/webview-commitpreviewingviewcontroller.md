@@ -1,6 +1,6 @@
 # webView(_:commitPreviewingViewController:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the user performs a pop action on the preview.

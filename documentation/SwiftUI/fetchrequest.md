@@ -81,6 +81,7 @@ When you need to dynamically change the predicate or sort descriptors, access th
 - [Copyable](../Swift/Copyable.md)
 - [DynamicProperty](dynamicproperty.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

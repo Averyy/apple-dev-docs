@@ -1,6 +1,6 @@
 # hasPersistentBackgroundContent
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating whether the extension has background content that stays in memory as long as the extension is loaded.

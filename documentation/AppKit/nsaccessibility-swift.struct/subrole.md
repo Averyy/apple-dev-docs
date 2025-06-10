@@ -55,6 +55,7 @@ struct Subrole
   A sort button subrole for a table or outline view.
 - [static let standardWindow: NSAccessibility.Subrole](nsaccessibility-swift.struct/subrole/standardwindow.md)
   A standard window subrole.
+- [static let suggestionSubrole: NSAccessibility.Subrole](nsaccessibility-swift.struct/subrole/suggestionsubrole.md)
 - [static let `switch`: NSAccessibility.Subrole](nsaccessibility-swift.struct/subrole/switch.md)
   A switch subrole.
 - [static let systemDialog: NSAccessibility.Subrole](nsaccessibility-swift.struct/subrole/systemdialog.md)
@@ -88,6 +89,7 @@ struct Subrole
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

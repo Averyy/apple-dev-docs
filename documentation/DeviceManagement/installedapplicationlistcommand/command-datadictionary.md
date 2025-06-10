@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to get a list of installed apps.
+The command to get a list of the installed apps on a device.
 
 **Availability**:
 - iOS 5.0+
@@ -12,8 +12,6 @@ The request dictionary to get a list of installed apps.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

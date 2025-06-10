@@ -54,6 +54,7 @@ struct UpdatableEstimatorToTemporalAdaptor<Base> where Base : UpdatableEstimator
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TemporalEstimator](temporalestimator.md)
 - [UpdatableTemporalEstimator](updatabletemporalestimator.md)
 

@@ -1,6 +1,6 @@
 # saturation(_:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Adjusts the color saturation of this view.

@@ -8,8 +8,6 @@ Global variables associated with print errors.
 
 > ❗ **Important**: Use [`UIPrintError`](uiprinterror.md) instead.
 
-Use [`UIPrintError`](uiprinterror.md) instead.
-
 ## Topics
 
 ### Global variables

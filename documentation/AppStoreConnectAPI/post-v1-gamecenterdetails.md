@@ -8,6 +8,10 @@ Create a Game Center detail for an app.
 **Availability**:
 - App Store Connect API 3.0+
 
+## Mentions
+
+- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
+
 #### Discussion
 
 ##### Example Request and Response
@@ -20,6 +24,8 @@ Create a Game Center detail for an app.
   Edit the associated leaderboard sets for a Game Center detail.
 - [Modify the associated leaderboards for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboards.md)
   Edit the associated leaderboards for a Game Center detail.
+- [Modify the challenges minimum platform version for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-challengesminimumplatformversions.md)
+  Update the relationship between a challenges minimum platform version and a specific Game Center detail.
 
 
 ---

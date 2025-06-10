@@ -1,6 +1,6 @@
 # Apple Search Ads Campaign Management API 3
 
-**Framework**: Apple_Search_Ads
+**Framework**: Apple Search Ads
 
 Apple no longer supports this API.
 

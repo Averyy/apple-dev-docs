@@ -29,8 +29,6 @@ func beats(forSeconds seconds: TimeInterval) -> AVMusicTimeStamp
   Gets the beat the system plays at the specified host time.
 - [var AVMusicTimeStampEndOfTrack: Double](avmusictimestampendoftrack.md)
   A timestamp you use to access all events in a music track through a beat range.
-- [typealias AVBeatRange](avbeatrange.md)
-  A specific time range within a music track.
 
 
 ---

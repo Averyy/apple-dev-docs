@@ -14,6 +14,8 @@ Foundation supports two approaches for data formatting:
 ## Topics
 
 ### Data formatting in Swift
+- [Language Introspector](language-introspector.md)
+  Converts data into human-readable text using formatters and locales.
 - [protocol FormatStyle](formatstyle.md)
   A type that converts a given data type into a representation in another type, such as a string.
 - [struct IntegerFormatStyle](integerformatstyle.md)

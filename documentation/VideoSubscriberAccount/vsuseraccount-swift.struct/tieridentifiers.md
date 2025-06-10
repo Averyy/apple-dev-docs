@@ -1,6 +1,6 @@
 # tierIdentifiers
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 An array of strings that identify a subset of content from your catalog that the subscriber can play.

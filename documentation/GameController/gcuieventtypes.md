@@ -31,7 +31,13 @@ struct GCUIEventTypes
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
+
+## See Also
+
+- [var handledEventTypes: GCUIEventTypes](gceventinteraction/handledeventtypes.md)
+  The types of game controller events that should be delivered through the Game Controller framework.
 
 
 ---

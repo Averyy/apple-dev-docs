@@ -3,6 +3,8 @@
 **Framework**: Apple CryptoKit  
 **Kind**: init
 
+Initializes a key encapsulation result.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

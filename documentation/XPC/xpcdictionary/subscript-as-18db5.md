@@ -1,6 +1,6 @@
 # subscript(_:as:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: subscript
 
 Reads and writes the value associated with the given key as a Boolean value.
@@ -21,7 +21,7 @@ subscript(key: String, as type: Bool.Type = Bool.self) -> Bool? { get }
 
 #### Return Value
 
-The value associated with key in the dictionary; otherwise, [`Nil`](https://developer.apple.com/documentation/objectivec/nil).
+The value associated with key in the dictionary; otherwise, [`nil`](https://developer.apple.com/documentation/objectivec/nil).
 
 ## Parameters
 

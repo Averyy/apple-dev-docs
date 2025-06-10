@@ -1,6 +1,6 @@
 # webView(_:runJavaScriptAlertPanelWithMessage:initiatedBy:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Displays a JavaScript alert panel containing the specified message.

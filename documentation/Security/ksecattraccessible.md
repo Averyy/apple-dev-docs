@@ -35,4 +35,4 @@ The corresponding value, one of those found in [`Accessibility Values`](item-att
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/ksecattraccessible)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/ksecattraccessible)*

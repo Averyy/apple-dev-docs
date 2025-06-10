@@ -1,6 +1,6 @@
 # Adding a Now Playing View
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Provide a view that controls the currently playing audio from your app.
 
@@ -42,4 +42,4 @@ The Now Playing view uses your app’s tint color, but otherwise has no attribut
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/adding-a-now-playing-view)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/adding-a-now-playing-view)*

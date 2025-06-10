@@ -1,6 +1,6 @@
 # kVTProfileLevel_H264_ConstrainedHigh_AutoLevel
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

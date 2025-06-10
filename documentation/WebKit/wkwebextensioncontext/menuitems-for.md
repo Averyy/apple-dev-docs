@@ -1,6 +1,6 @@
 # menuItems(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Retrieves the menu items for a given tab.
@@ -16,7 +16,7 @@ Retrieves the menu items for a given tab.
 
 ```swift
 @MainActor
-func menuItems(for tab: any WKWebExtensionTab) -> [NSMenuItem]
+func menuItems(for tab: any WKWebExtensionTab) -> [UIMenuElement]
 ```
 
 #### Discussion

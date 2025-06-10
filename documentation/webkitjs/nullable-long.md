@@ -1,6 +1,6 @@
 # NULLABLE_LONG
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: tdef
 
 **Availability**:

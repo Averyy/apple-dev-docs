@@ -17,7 +17,7 @@ var description: String { get }
 ## See Also
 
 - [var id: UUID](referenceobject/id-swift.property.md)
-  The unique identifier of this anchor.
+  The unique identifier of this reference object.
 - [ReferenceObject.ID](referenceobject/id-swift.typealias.md)
   A type representing the stable identity of the entity associated with an instance.
 - [var inputFile: URL?](referenceobject/inputfile.md)

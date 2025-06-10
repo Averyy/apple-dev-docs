@@ -1,6 +1,6 @@
 # TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

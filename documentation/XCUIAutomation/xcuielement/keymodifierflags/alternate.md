@@ -1,6 +1,6 @@
 # alternate
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The Option key in a combination keystroke.
@@ -24,8 +24,6 @@ static var alternate: XCUIElement.KeyModifierFlags { get }
 #### Discussion
 
 > ❗ **Important**:  Use [`option`](xcuielement/keymodifierflags/option.md) instead.
-
- Use [`option`](xcuielement/keymodifierflags/option.md) instead.
 
 ## See Also
 

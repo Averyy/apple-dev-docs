@@ -1,6 +1,6 @@
 # webView(_:willPerformClientRedirectTo:delay:fire:for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when a frame receives a client redirect and before it is fired.

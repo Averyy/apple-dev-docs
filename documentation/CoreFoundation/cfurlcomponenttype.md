@@ -62,6 +62,7 @@ These constants are used by the [`CFURLGetByteRangeForComponent(_:_:_:)`](cfurlg
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

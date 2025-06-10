@@ -5,6 +5,13 @@
 
 A Boolean value that indicates whether the set has no elements.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift

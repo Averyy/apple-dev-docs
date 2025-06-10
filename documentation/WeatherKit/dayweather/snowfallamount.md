@@ -1,6 +1,6 @@
 # snowfallAmount
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The amount of snowfall for the day.

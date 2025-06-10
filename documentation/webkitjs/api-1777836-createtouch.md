@@ -1,6 +1,6 @@
 # createTouch
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: func
 
 **Availability**:

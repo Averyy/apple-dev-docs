@@ -15,8 +15,6 @@ Manage the distribution of apps within an organization.
 
 > ❗ **Important**: The [`Managed App Installation UI`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.managed-app-distribution.install-ui) entitlement is required to use this framework.
 
-The [`Managed App Installation UI`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.managed-app-distribution.install-ui) entitlement is required to use this framework.
-
 ![An image of an iPhone showing an app with a banner image along the top of the screen. The middle of the screen contains two app banners, one top of the other. Each app banner contains a title, subtitle, and an install button.](https://docs-assets.developer.apple.com/published/91ddd5fbdd2f090d2187eef996ca9aef/managed-app-distribution%402x.png)
 
 The Managed App Distribution framework works with declarative management to provide a list of managed apps that are assigned to a device. Your app can sort or filter the list of managed apps, and request a view from the Managed App Distribution framework to display. See [`Integrating Declarative Management`](https://developer.apple.com/documentation/DeviceManagement/integrating-declarative-management) for more information.

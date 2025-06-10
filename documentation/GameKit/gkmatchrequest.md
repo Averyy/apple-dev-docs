@@ -22,12 +22,12 @@ class GKMatchRequest
 
 ## Mentions
 
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
 - [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
+- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
 - [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
 - [Assigning players to teams using rules](assigning-players-to-teams-using-rules.md)
-- [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
 - [Troubleshooting matchmaking rules using metrics](troubleshooting-matchmaking-rules-using-metrics.md)
+- [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
 
 #### Overview
 
@@ -50,8 +50,6 @@ If you don’t use matchmaking rules, you can restrict finding players to a subs
 For more information, see [`Finding players using matchmaking rules`](finding-players-using-matchmaking-rules.md).
 
 > ❗ **Important**:  Matchmaking rules are only available for peer-to-peer ([`GKMatchType.turnBased`](gkmatchtype/turnbased.md)) and hosted ([`GKMatchType.hosted`](gkmatchtype/hosted.md)) match requests.
-
- Matchmaking rules are only available for peer-to-peer ([`GKMatchType.turnBased`](gkmatchtype/turnbased.md)) and hosted ([`GKMatchType.hosted`](gkmatchtype/hosted.md)) match requests.
 
 ## Topics
 

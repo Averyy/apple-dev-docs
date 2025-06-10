@@ -1,6 +1,6 @@
 # WKWebExtension.WindowType.normal
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates a normal window.

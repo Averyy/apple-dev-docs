@@ -1,0 +1,34 @@
+# unsqueeze(axis:)
+
+**Framework**: Accelerate  
+**Kind**: method
+
+Adds an unsqueeze operation in the graph.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+func unsqueeze(axis: Int) -> BNNSGraph.Builder.Tensor<T>
+```
+
+#### Discussion
+
+This operation creates a dimension of size 1 at the given index, i.e. the output tensor will have the new dimension of size 1 at the given index.
+
+## Parameters
+
+- `axis`: The axis at which the operation inserts the dimension.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/accelerate/bnnsgraph/builder/tensor/unsqueeze(axis:))*

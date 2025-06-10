@@ -10,12 +10,8 @@ Get Game Center detail information for an app.
 
 ## See Also
 
-- [Read Game Center details](get-v1-gamecenterdetails-_id_.md)
-  Read a specific Game Center detail and related information.
-- [Read app versions for a Game Center detail](get-v1-gamecenterdetails-_id_-gamecenterappversions.md)
-  Get a list of app versions for a Game Center detail.
-- [Read the groups in a Game Center detail](get-v1-gamecenterdetails-_id_-gamecentergroup.md)
-  Get a list of groups in a Game Center detail.
+- [GET /v1/apps/{id}/relationships/gameCenterDetail](get-v1-apps-_id_-relationships-gamecenterdetail.md)
+- [GET /v1/apps/{id}/relationships/gameCenterEnabledVersions](get-v1-apps-_id_-relationships-gamecenterenabledversions.md)
 
 
 ---

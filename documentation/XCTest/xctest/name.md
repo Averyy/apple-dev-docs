@@ -1,6 +1,6 @@
 # name
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The name of the test.

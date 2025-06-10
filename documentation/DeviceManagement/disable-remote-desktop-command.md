@@ -7,8 +7,6 @@ Disable Remote Desktop on a device.
 
 **Availability**:
 - macOS 10.14.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -20,31 +18,31 @@ Refer to the following sections to determine supported channels and requirements
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | - |
-| Requires Supervision | macOS |
-| Allowed in User Enrollment | - |
-| Required Access Right | - |
+| Device channel | macOS |
+| User channel | NA |
+| Requires supervision | macOS |
+| Allowed in user enrollment | NA |
+| Required access right |  |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object DisableRemoteDesktopCommand](disableremotedesktopcommand.md)
   The command to disable Remote Desktop on a device.
 - [object DisableRemoteDesktopResponse](disableremotedesktopresponse.md)
-  A response from the device after it processes the command to disable Remote Desktop.
+  A response from the device after it processes the command to disable Remote Desktop on a device.
 
 ## Request Body
 
-The command to disable Remote Desktop on a device.
+The request object the server returns for the Disable Remote Desktop Command.
 
 ## See Also
 
 - [Enable Remote Desktop](enable-remote-desktop-command.md)
   Enable Remote Desktop on a device.
-- [Configure Settings](settings-command.md)
+- [Settings](settings-command.md)
   Configure settings on a device.
 
 

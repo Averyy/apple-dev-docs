@@ -31,7 +31,6 @@ To learn more about package resources, see doc:bundling-resources-with-a-swift-p
   Defines the explicit type of localization for resources.
 - [static func copy(String) -> Resource](resource/copy(_:).md)
   Applies the copy rule to a resource at the given path.
-### Type Methods
 - [static func embedInCode(String) -> Resource](resource/embedincode(_:).md)
   Applies the embed rule to a resource at the given path.
 
@@ -39,6 +38,7 @@ To learn more about package resources, see doc:bundling-resources-with-a-swift-p
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

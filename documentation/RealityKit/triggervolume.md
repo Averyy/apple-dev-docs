@@ -10,6 +10,7 @@ An invisible 3D shape that detects when objects enter or exit a given region of 
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -36,17 +37,14 @@ The trigger volume itself is very simple. It lacks any physical appearance, and 
   Creates a trigger volume with the given shape and collision filter.
 - [init(shapes: [ShapeResource], filter: CollisionFilter)](triggervolume/init(shapes:filter:).md)
   Creates a trigger volume with the given composite shape and collision filter.
-### Detecting collisions
-- [var collision: CollisionComponent?](triggervolume/collision.md)
-  The collision component that gives the entity the ability to participate in collision simulations.
-### Default Implementations
-- [HasCollision Implementations](triggervolume/hascollision-implementations.md)
 
 ## Relationships
 
 ### Inherits From
 - [Entity](entity.md)
 ### Conforms To
+- [CoordinateSpace3D](../Spatial/CoordinateSpace3D.md)
+- [CoordinateSpace3DFloat](../Spatial/CoordinateSpace3DFloat.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [EventSource](eventsource.md)
@@ -56,8 +54,10 @@ The trigger volume itself is very simple. It lacks any physical appearance, and 
 - [HasTransform](hastransform.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
+- [Observable](../Observation/Observable.md)
 - [RealityCoordinateSpace](realitycoordinatespace.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

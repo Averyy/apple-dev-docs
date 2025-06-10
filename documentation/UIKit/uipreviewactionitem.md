@@ -23,8 +23,6 @@ protocol UIPreviewActionItem : NSObjectProtocol
 
 > ❗ **Important**:  Don’t adopt this protocol in custom classes.
 
- Don’t adopt this protocol in custom classes.
-
 The [`UIPreviewActionItem`](uipreviewactionitem.md) protocol is adopted by the [`UIPreviewAction`](uipreviewaction.md) and [`UIPreviewActionGroup`](uipreviewactiongroup.md) classes.
 
 ## Topics

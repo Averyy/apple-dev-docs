@@ -1,6 +1,6 @@
 # xpc_activity_should_defer(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Tests whether to defer an activity.

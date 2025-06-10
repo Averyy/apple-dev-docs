@@ -12,6 +12,7 @@ A string-based piece of location-specific data that you apply to a specific poin
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 1.0+
 
 ## Declaration
 
@@ -28,6 +29,10 @@ You use this class, rather than define a custom annotation object, in situations
 ### Creating a Point Annotation
 - [init()](mkpointannotation/init.md)
   Creates a map annotation that shows a title string at a point on a map.
+- [convenience init(coordinate: CLLocationCoordinate2D)](mkpointannotation/init(coordinate:).md)
+  Creates a point annotation at the specified coordinate on the map.
+- [convenience init(coordinate: CLLocationCoordinate2D, title: String?, subtitle: String?)](mkpointannotation/init(coordinate:title:subtitle:).md)
+  Creates a point annotation displaying a title and subtitle string at the specified coordinate on the map.
 ### Accessing the Annotation’s Location
 - [var coordinate: CLLocationCoordinate2D](mkpointannotation/coordinate.md)
   The coordinate point of the annotation.

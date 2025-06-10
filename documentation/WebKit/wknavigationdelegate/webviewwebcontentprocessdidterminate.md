@@ -1,6 +1,6 @@
 # webViewWebContentProcessDidTerminate(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the delegate that the web view’s content process was terminated.

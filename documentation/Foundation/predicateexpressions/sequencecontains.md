@@ -35,6 +35,7 @@ struct SequenceContains<LHS, RHS> where LHS : PredicateExpression, RHS : Predica
 - [Encodable](../Swift/Encodable.md)
 - [PredicateExpression](predicateexpression.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StandardPredicateExpression](standardpredicateexpression.md)
 
 

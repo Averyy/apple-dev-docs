@@ -1,6 +1,6 @@
 # Urgency
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: typealias
 
 An indication of urgency of action from the reporting agency.

@@ -72,6 +72,7 @@ The [`string(from:to:)`](dateintervalformatter/string(from:to:).md) method may b
 - [NSCopying](nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -87,4 +88,4 @@ The [`string(from:to:)`](dateintervalformatter/string(from:to:).md) method may b
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/dateintervalformatter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/dateintervalformatter)*

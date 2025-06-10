@@ -1,6 +1,6 @@
 # prefix(_:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns a sequence, up to the specified maximum length, containing the initial elements of the sequence.

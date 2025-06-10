@@ -26,6 +26,11 @@ This initializer throws an error if reading from the decoder fails, or if the da
 
 - `decoder`: The decoder to read data from.
 
+## See Also
+
+- [init(type: Handle.Kind, value: String, displayName: String?)](handle/init(type:value:displayname:).md)
+  Creates a new handle that identifies a participant in a conversation.
+
 
 ---
 

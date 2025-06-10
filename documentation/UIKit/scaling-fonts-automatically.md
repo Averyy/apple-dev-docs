@@ -1,6 +1,6 @@
 # Scaling Fonts Automatically
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Scale text in your interface automatically using Dynamic Type.
 
@@ -63,4 +63,4 @@ Fonts created through [`UIFontMetrics`](uifontmetrics.md) behave the same as the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/scaling-fonts-automatically)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/scaling-fonts-automatically)*

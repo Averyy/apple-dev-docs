@@ -1,6 +1,6 @@
 # TYPE_BACK_FORWARD
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

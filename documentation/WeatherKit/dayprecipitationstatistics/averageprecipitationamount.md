@@ -1,6 +1,6 @@
 # averagePrecipitationAmount
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The average amount of liquid precipitation for the day.

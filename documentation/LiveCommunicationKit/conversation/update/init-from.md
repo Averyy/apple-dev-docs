@@ -26,6 +26,11 @@ This initializer throws an error if reading from the decoder fails, or if the da
 
 - `decoder`: The decoder to read data from.
 
+## See Also
+
+- [init(localMember: Handle?, members: Set<Handle>?, activeRemoteMembers: Set<Handle>?, capabilities: Conversation.Capabilities?)](conversation/update/init(localmember:members:activeremotemembers:capabilities:).md)
+  Creates an object with updated conversation attributes and capabilities.
+
 
 ---
 

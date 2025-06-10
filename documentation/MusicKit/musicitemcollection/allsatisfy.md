@@ -1,6 +1,6 @@
 # allSatisfy(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Returns a Boolean value indicating whether every element of a sequence satisfies a given predicate.

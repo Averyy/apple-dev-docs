@@ -57,11 +57,6 @@ builder.replaceChildren(ofMenu: .standardEdit) { (oldChildren) -> [UIMenuElement
 - `parentIdentifier`: The identifier of the menu containing the children to replace.
 - `childrenBlock`: A handler that returns the menu elements that replace the children in the menu associated with  . This handler has the following parameter:
 
-## See Also
-
-- [func replace(menu: UIMenu.Identifier, with: UIMenu)](uimenubuilder/replace(menu:with:).md)
-  Replaces the specified menu with a new menu.
-
 
 ---
 

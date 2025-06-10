@@ -21,7 +21,7 @@ The appearance attributes for Done buttons.
 
 #### Discussion
 
-Use this property to configure the appearance of bar button items that use the [`UIBarButtonItem.Style.done`](uibarbuttonitem/style-swift.enum/done.md) style, when appropriate. If the toolbar doesn’t have a done button, setting the value of this property has no effect.
+Use this property to configure the appearance of bar button items that use the [`done`](uibarbuttonitem/style-swift.enum/done.md) style, when appropriate. If the toolbar doesn’t have a done button, setting the value of this property has no effect.
 
 
 ---

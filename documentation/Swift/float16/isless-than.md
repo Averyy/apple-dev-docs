@@ -30,7 +30,19 @@ This method serves as the basis for the less-than operator (`<`) for floating-po
 
 - Because NaN compares not less than nor greater than any value, this method returns `false` when called on NaN or when NaN is passed as `other`.
 - `-infinity` compares less than all values except for itself and NaN.
-- Every value except for NaN and `+infinity` compares less than `+infinity`. let x = 15.0 x.isLess(than: 20.0) // true x.isLess(than: .nan) // false Double.nan.isLess(than: x) // false
+- Every value except for NaN and `+infinity` compares less than `+infinity`.
+
+The following example shows the behavior of the `isLess(than:)` method with different kinds of values:
+
+```swift
+let x = 15.0
+x.isLess(than: 20.0)
+// true
+x.isLess(than: .nan)
+// false
+Double.nan.isLess(than: x)
+// false
+```
 
 The `isLess(than:)` method implements the less-than predicate defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 

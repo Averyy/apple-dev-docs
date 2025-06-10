@@ -67,6 +67,7 @@ Decimal also has an [`init(_:strategy:)`](decimal/init(_:strategy:).md) initiali
 - [Hashable](../Swift/Hashable.md)
 - [ParseStrategy](parsestrategy.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

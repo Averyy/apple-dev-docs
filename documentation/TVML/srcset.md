@@ -1,6 +1,6 @@
 # srcset
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Specifies multiple URLs for an image.
 
@@ -38,4 +38,4 @@ Use the `srcset` attribute to specify different URLs for an image depending on t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/srcset)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/srcset)*

@@ -1,6 +1,6 @@
 # subframeArchives
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Archives representing the receiver’s subresources or `nil` if there are none.

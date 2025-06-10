@@ -35,8 +35,6 @@ The ISO 8601 specification allows for dates to be expressed in a variety of ways
 
 > ❗ **Important**:  Resetting this property can incur a significant performance cost, as it may cause internal state to be regenerated.
 
- Resetting this property can incur a significant performance cost, as it may cause internal state to be regenerated.
-
 ## See Also
 
 - [var timeZone: TimeZone!](iso8601dateformatter/timezone.md)

@@ -20,22 +20,13 @@ This applies only to immersive media types.
 
 ## Topics
 
-### Operators
-- [static func == (VideoPlayerComponent.ImmersiveViewingMode, VideoPlayerComponent.ImmersiveViewingMode) -> Bool](videoplayercomponent/immersiveviewingmode-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
 - [VideoPlayerComponent.ImmersiveViewingMode.full](videoplayercomponent/immersiveviewingmode-swift.enum/full.md)
   A viewing mode that renders immersive video covering the viewer’s entire field of view.
 - [VideoPlayerComponent.ImmersiveViewingMode.portal](videoplayercomponent/immersiveviewingmode-swift.enum/portal.md)
   A viewing mode that renders immersive video as a portal window matching the containing entity’s transform.
-### Instance Properties
-- [var hashValue: Int](videoplayercomponent/immersiveviewingmode-swift.enum/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](videoplayercomponent/immersiveviewingmode-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](videoplayercomponent/immersiveviewingmode-swift.enum/equatable-implementations.md)
+- [VideoPlayerComponent.ImmersiveViewingMode.progressive](videoplayercomponent/immersiveviewingmode-swift.enum/progressive.md)
+  A viewing mode that renders immersive video covering the viewer’s field of view(partial to full) and the percentage coverage can be controller by crown button. This is not available for Spatial Video and will be not be acknowledged if the content is Spatial
 
 ## Relationships
 
@@ -43,6 +34,8 @@ This applies only to immersive media types.
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -52,8 +45,6 @@ This applies only to immersive media types.
   A material that supports animated textures.
 - [class VideoPlaybackController](videoplaybackcontroller.md)
   An object that controls the playback of video for a video material.
-- [VideoPlaybackController.ViewingMode](videoplaybackcontroller/viewingmode.md)
-  Options for viewing video playback.
 
 
 ---

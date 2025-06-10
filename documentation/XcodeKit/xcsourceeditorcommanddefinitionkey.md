@@ -1,6 +1,6 @@
 # XCSourceEditorCommandDefinitionKey
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: struct
 
 A key in the dictionary that defines a source editor command.
@@ -42,6 +42,7 @@ Source editor commands are defined via an array of dictionaries under the `XCSou
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

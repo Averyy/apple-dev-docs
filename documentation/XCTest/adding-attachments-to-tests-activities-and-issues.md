@@ -1,6 +1,6 @@
 # Adding Attachments to Tests, Activities, and Issues
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Use attachments to store a test’s output data for later analysis.
 

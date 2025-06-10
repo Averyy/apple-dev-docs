@@ -1,6 +1,6 @@
 # AVContinuityDevicePickerViewController
 
-**Framework**: Avkit  
+**Framework**: AVKit  
 **Kind**: class
 
 A view controller that provides an interface to a person so they can select and connect a continuity device to the system.
@@ -23,7 +23,7 @@ The view controller presents an interface on an Apple TV that lets a person choo
 
 To respond to the various outcome events from the picker, your app needs to implement the [`AVContinuityDevicePickerViewControllerDelegate`](avcontinuitydevicepickerviewcontrollerdelegate.md) and assign it to the picker’s [`delegate`](avcontinuitydevicepickerviewcontroller/delegate.md) property.
 
-> **Note**:  SwiftUI apps can present the same interface with the `VideoPlayer/continuityDevicePicker(isPresented:onDidConnect:)` view modifier.
+> **Note**:  SwiftUI apps can present the same interface with the [`continuityDevicePicker(isPresented:onDidConnect:)`](https://developer.apple.com/documentation/SwiftUI/View/continuityDevicePicker(isPresented:onDidConnect:)) view modifier.
 
 ## Topics
 
@@ -48,6 +48,8 @@ To respond to the various outcome events from the picker, your app needs to impl
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
@@ -89,4 +91,4 @@ To respond to the various outcome events from the picker, your app needs to impl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/avcontinuitydevicepickerviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/avcontinuitydevicepickerviewcontroller)*

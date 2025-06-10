@@ -29,11 +29,7 @@ This method should be called once when the application starts up. Invoking it ag
 
 > ⚠️ **Warning**:  The application’s `Info.plist` must include a `UIBackgroundModes` array containing `network-authentication`.
 
- The application’s `Info.plist` must include a `UIBackgroundModes` array containing `network-authentication`.
-
 > ⚠️ **Warning**:  The application must set `com.apple.developer.networking.HotspotHelper` as one of its entitlements. The value of the entitlement is a boolean set to `true`.
-
- The application must set `com.apple.developer.networking.HotspotHelper` as one of its entitlements. The value of the entitlement is a boolean set to `true`.
 
 ## Parameters
 

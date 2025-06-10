@@ -1,6 +1,6 @@
 # xpc_dictionary_get_value(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the value for the specified key.

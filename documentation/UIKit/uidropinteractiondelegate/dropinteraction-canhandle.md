@@ -1,6 +1,6 @@
 # dropInteraction(_:canHandle:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Asks the delegate whether it can handle the session’s drag items.

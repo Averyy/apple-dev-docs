@@ -1,6 +1,6 @@
 # BUFFER_USAGE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

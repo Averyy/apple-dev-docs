@@ -35,6 +35,7 @@ You do not adopt this protocol in your objects. Instead, use the [`makeMachRecei
 - [DispatchSourceProtocol](dispatchsourceprotocol.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [DispatchSource](dispatchsource.md)
 

@@ -1,6 +1,6 @@
 # SKTestSession
 
-**Framework**: Storekittest  
+**Framework**: StoreKit Test  
 **Kind**: class
 
 The controls and environment configuration you use to test StoreKit transactions in Xcode.
@@ -131,6 +131,7 @@ Before automating a test session with `SKTestSession`, you must create a StoreKi
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -142,4 +143,4 @@ Before automating a test session with `SKTestSession`, you must create a StoreKi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKitTest/sktestsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekittest/sktestsession)*

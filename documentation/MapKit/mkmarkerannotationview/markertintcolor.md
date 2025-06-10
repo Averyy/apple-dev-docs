@@ -17,7 +17,7 @@ The background color of the marker balloon.
 
 ```swift
 @NSCopying
-@MainActor var markerTintColor: NSColor? { get set }
+@MainActor var markerTintColor: UIColor? { get set }
 ```
 
 #### Discussion

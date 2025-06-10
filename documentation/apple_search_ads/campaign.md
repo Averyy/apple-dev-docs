@@ -17,8 +17,8 @@ object Campaign
 ## Mentions
 
 - [Apple Search Ads Campaign Management API 4](apple-search-ads-campaign-management-api-4.md)
-- [Apple Search Ads Campaign Management API 2](apple-search-ads-campaign-management-api-2.md)
 - [Apple Search Ads Campaign Management API 5](apple-search-ads-campaign-management-api-5.md)
+- [Apple Search Ads Campaign Management API 2](apple-search-ads-campaign-management-api-2.md)
 
 ## Topics
 

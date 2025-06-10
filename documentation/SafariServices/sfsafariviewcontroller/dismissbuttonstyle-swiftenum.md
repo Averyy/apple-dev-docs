@@ -31,12 +31,14 @@ enum DismissButtonStyle
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [var configuration: SFSafariViewController.Configuration](sfsafariviewcontroller/configuration-swift.property.md)
   A copy of the Safari view controller’s initialized configuration.
 - [var dismissButtonStyle: SFSafariViewController.DismissButtonStyle](sfsafariviewcontroller/dismissbuttonstyle-swift.property.md)
+  The style of dismiss button to use in the navigation bar to close the Safari view controller.
 - [var preferredBarTintColor: UIColor?](sfsafariviewcontroller/preferredbartintcolor.md)
   The color to tint the background of the navigation bar and the toolbar.
 - [var preferredControlTintColor: UIColor?](sfsafariviewcontroller/preferredcontroltintcolor.md)

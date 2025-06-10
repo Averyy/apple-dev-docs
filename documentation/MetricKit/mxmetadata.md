@@ -38,10 +38,12 @@ class MXMetaData
 - [var pid: pid_t](mxmetadata/pid.md)
   The process ID (PID) of the process.
 ### Generating a report
-- [func jsonRepresentation() -> Data](mxmetadata/jsonrepresentation.md)
-  Returns the contents of the metadata in JSON format.
 - [func dictionaryRepresentation() -> [AnyHashable : Any]](mxmetadata/dictionaryrepresentation.md)
   Returns the contents of the metadata as a dictionary.
+- [func jsonRepresentation() -> Data](mxmetadata/jsonrepresentation.md)
+  Returns the contents of the metadata in JSON format.
+### Instance Properties
+- [var bundleIdentifier: String](mxmetadata/bundleidentifier.md)
 
 ## Relationships
 

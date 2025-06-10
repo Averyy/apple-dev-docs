@@ -1,6 +1,6 @@
 # XCUIAccessibilityAuditIssue
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: class
 
 **Availability**:

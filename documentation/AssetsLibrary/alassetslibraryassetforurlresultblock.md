@@ -8,7 +8,7 @@ Signature for the block executed if the user has granted access to the caller to
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

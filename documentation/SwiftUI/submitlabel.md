@@ -50,6 +50,7 @@ A submit label is a description of a submission action provided to a view hierar
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

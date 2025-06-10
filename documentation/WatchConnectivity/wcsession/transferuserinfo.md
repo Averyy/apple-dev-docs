@@ -1,6 +1,6 @@
 # transferUserInfo(_:)
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: method
 
 Sends the specified data dictionary to the counterpart.
@@ -29,8 +29,6 @@ Call this method when you want to send a dictionary of data to the counterpart a
 This method can only be called while the session is active (the [`activationState`](wcsession/activationstate.md) property is set to [`WCSessionActivationState.activated`](wcsessionactivationstate/activated.md)). Calling this method for an inactive or deactivated session is a programmer error.
 
 > ⚠️ **Warning**:  Always test Watch Connectivity data transfers on paired devices. The Simulator app doesn’t support the  [`transferUserInfo(_:)`](wcsession/transferuserinfo(_:).md) method.
-
- Always test Watch Connectivity data transfers on paired devices. The Simulator app doesn’t support the  [`transferUserInfo(_:)`](wcsession/transferuserinfo(_:).md) method.
 
 ## Parameters
 

@@ -48,6 +48,7 @@ Use an `AccessibilityTextContentType` value when setting the accessibility text 
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

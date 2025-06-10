@@ -10,6 +10,7 @@ Creates a model sort group component.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -21,8 +22,6 @@ init(group: ModelSortGroup, order: Int32)
 #### Discussion
 
 > ⚠️ **Warning**: Don’t pass `Int32.max` or `Int32.min` to the `order` parameter because the framework reserves these as sentinel values, and using them may trigger erratic behavior.
-
-Don’t pass `Int32.max` or `Int32.min` to the `order` parameter because the framework reserves these as sentinel values, and using them may trigger erratic behavior.
 
 ## Parameters
 

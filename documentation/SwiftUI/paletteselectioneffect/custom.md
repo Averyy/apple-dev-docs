@@ -1,6 +1,6 @@
 # custom
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 Does not apply any system effect when selected.
@@ -32,4 +32,4 @@ static let custom: PaletteSelectionEffect
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/paletteselectioneffect/custom)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/paletteselectioneffect/custom)*

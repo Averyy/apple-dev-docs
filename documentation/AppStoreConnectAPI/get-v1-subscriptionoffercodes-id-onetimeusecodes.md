@@ -18,6 +18,7 @@ Get details about a one-time use code for a specific subscription offer for an a
   Deactivate a batch of one-time use offer codes for an auto-renewable subscription.
 - [List One-Time Use Offer Code Values](get-v1-subscriptionoffercodeonetimeusecodes-_id_-values.md)
   Get a list of one-time use offer codes for an auto-renewable subscription in CSV format.
+- [GET /v1/subscriptionOfferCodes/{id}/relationships/oneTimeUseCodes](get-v1-subscriptionoffercodes-_id_-relationships-onetimeusecodes.md)
 
 
 ---

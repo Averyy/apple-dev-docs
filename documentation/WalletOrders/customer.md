@@ -1,6 +1,6 @@
 # Customer
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 The details of the order’s customer.

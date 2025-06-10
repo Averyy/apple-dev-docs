@@ -24,11 +24,12 @@ enum DHKEM
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [struct Ciphersuite](hpke/ciphersuite.md)
-  Cipher suites to use in hybrid public key encryption.
+  Cipher suites to use in hybrid public key encryption (HPKE).
 - [HPKE.AEAD](hpke/aead.md)
   The authenticated encryption with associated data (AEAD) algorithms to use in HPKE.
 - [HPKE.KDF](hpke/kdf.md)

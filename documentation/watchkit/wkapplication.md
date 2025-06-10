@@ -1,6 +1,6 @@
 # WKApplication
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 The centralized point of control and coordination for apps with a single watchOS app target.

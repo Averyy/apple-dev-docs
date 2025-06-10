@@ -1,6 +1,6 @@
 # WKApplicationMain(_:_:_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: func
 
 Creates the application object and the application delegate, and sets up the app’s event cycle.

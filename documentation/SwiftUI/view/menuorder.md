@@ -21,6 +21,10 @@ nonisolated
 func menuOrder(_ order: MenuOrder) -> some View
 ```
 
+## Mentions
+
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+
 #### Return Value
 
 A view that uses the specified menu ordering strategy.

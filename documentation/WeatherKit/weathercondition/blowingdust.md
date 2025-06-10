@@ -1,6 +1,6 @@
 # WeatherCondition.blowingDust
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Blowing dust or sandstorm.

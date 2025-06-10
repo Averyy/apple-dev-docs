@@ -30,6 +30,8 @@ func gaugeStyle<S>(_ style: S) -> some View where S : GaugeStyle
   Sets the style for progress views in this view.
 - [struct DefaultDateProgressLabel](defaultdateprogresslabel.md)
   The default type of the current value label when used by a date-relative progress view.
+- [struct DefaultButtonLabel](defaultbuttonlabel.md)
+  The default label to use for a button.
 
 
 ---

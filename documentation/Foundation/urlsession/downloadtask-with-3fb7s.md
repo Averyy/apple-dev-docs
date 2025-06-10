@@ -22,8 +22,8 @@ func downloadTask(with request: URLRequest) -> URLSessionDownloadTask
 
 ## Mentions
 
-- [Downloading files in the background](downloading-files-in-the-background.md)
 - [Downloading files from websites](downloading-files-from-websites.md)
+- [Downloading files in the background](downloading-files-in-the-background.md)
 
 #### Return Value
 

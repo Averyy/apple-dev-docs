@@ -1,6 +1,6 @@
 # HTTP Live Streaming (HLS) Authoring Specification for Apple devices appendixes
 
-**Framework**: Http Live Streaming
+**Framework**: HTTP Live Streaming
 
 Learn additional information related to the HLS Authoring Specification for Apple Devices.
 
@@ -66,6 +66,8 @@ See [`https://support.apple.com/specs/`](https://developer.apple.comhttps://supp
 
 Dolby Digital Plus with Dolby Atmos† requires tvOS 12.0 or later.
 
+APAC support depends on the capability of the actual device and OS version. See [APAC] (https://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf) specification for support information.
+
 ##### On Bit Rates for Variants
 
 A number of factors affect the bit rate needed to encode video:
@@ -106,7 +108,7 @@ The recommendations for image sequences are as folows:
 
 In building up a multivariant playlist, the first step is to choose your video resolutions and codecs. These are your basic variants. Each one will have a video media playlist. The playlist URI may be repeated in multiple `EXT-X-STREAM-INF` tags so that the same video can be associated with different audio content.
 
-You will have some some set of audio languages and codecs. A particular codec may be in stereo, in 5.1 sound, or both. Create one audio group for each pair of codec and channel count. Each group needs to have every language in it.
+You will have some set of audio languages and codecs. A particular codec may be in stereo, in 5.1 sound, or both. Create one audio group for each pair of codec and channel count. Each group needs to have every language in it.
 
 When you’re making audio groups, there are some things to remember. First, ensure you have a stereo AAC group. This is good fallback because it’s something all devices can play. If you have multichannel in a lossless audio codec, it’s a good practice to have a multichannel AAC codec as well. Lossless requires a high bit rate. You want something available that has a lower bit rate. During playback you don’t want to switch the number of channels. If playback is in multichannel, you want to stay in multichannel.
 
@@ -126,6 +128,7 @@ Valid format identifiers are those in the ISO Base Media File Format Name Space 
 | --- | --- | --- |
 | `ac-3` | AC-3 audio |  |
 | `alac` | Apple Lossless |  |
+| `apac` | Apple Positional Audio Codec |  |
 | `avc1` | H.264 (Advanced Video Coding) |  |
 | `avc3` | H.264 (Advanced Video Coding) | Use not recommended |
 | `dvh1` | Dolby Vision (based on `hvc1`) |  |
@@ -141,12 +144,13 @@ Valid format identifiers are those in the ISO Base Media File Format Name Space 
 
 > **Note**: HLS recognizes `'avc3'`, `'dvhe'`, and `'hev1'`, but Apple doesn’t recommend using them.
 
-The MP4 registration authority ([`mp4ra.org`](https://developer.apple.comhttp://mp4ra.org)) lists a value of `ec+3` for Enhanced AC-3 audio with JOC (Dolby Atmos). That value is not used by HLS. Instead, it uses `ec-3` and marks the presence of the additional JOC content with `JOC` in the `CHANNELS` attribute of the audio rendition. The `JOC` must be capitalized. For example, `CHANNELS="16/JOC"`. The numeric value should match the value of the `complexity_index_type_a` field in the `EC3SpecificBox` of the Dolby Digital Plus audio track.
+The MP4 registration authority ([`mp4ra.org`](https://developer.apple.comhttp://mp4ra.org)) lists a value of `ec+3` for Enhanced AC-3 audio with JOC (Dolby Atmos) but it has been deprecated now. HLS uses `ec-3` and marks the presence of the additional JOC content with `JOC` in the `CHANNELS` attribute of the audio rendition. The `JOC` must be capitalized. For example, `CHANNELS="16/JOC"`. The numeric value should match the value of the `complexity_index_type_a` field in the `EC3SpecificBox` of the Dolby Digital Plus audio track.
 
 | Sample type | Description |
 | --- | --- |
 | `ac-3` | AC-3 audio |
 | `alac` | Apple Lossless audio |
+| `apac.31.00` | Apple Positional Audio Codec, profile 31, level 0 |
 | `avc1.42001f` | H.264 Baseline Profile, Level 3.1 video |
 | `avc1.4d0028` | H.264 Main Profile, Level 4.0 video |
 | `avc1.640029` | H.264 High Profile, Level 4.1 video |
@@ -214,21 +218,141 @@ The [`AVPlayerItemMetadataCollector`](https://developer.apple.com/documentation/
 
 If you use the [`AVKit`](https://developer.apple.com/documentation/AVKit) framework the metadata is fetched for you and the timeline is marked with a reddish color. If you display your own timeline you should do something similar.
 
-##### Additional Stereo Video Specifications
+##### Additional Spatial Video Specifications
 
-Video Extended Usage atom (`'vexu'`) is a sample description extension that conveys extensible information about stereo views. For more information, see [`ISO Base Media File Format and Apple HEVC Stereo Video`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf).
+Video Extended Usage atom (`'vexu'`) is a sample description extension that conveys extensible information about spatial views. For more information, see [`ISO Base Media File Format and Apple HEVC Stereo Video`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf).
 
-You can provide parallax metadata for subtitles or captions as timed metadata tracks within ISOBMFF (ISO Base Media File Format) or QuickTime files. An `'mebx'` atom or box describes the samples in a timed metadata track. The international standard ISO/IEC 14496-12:2022 (“Information technology — Coding of audio-visual objects — Part 12: ISO base media file format”) refers to this box as a `BoxedMetadataSampleEntry` (for more information, see section 12.9  of that document). The [`QuickTime File Format Specification`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/QuickTime/QTFF/QTFFPreface/qtffPreface.html) refers to the `'mebx'` atom as a  (see [`Timed Metadata Media`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/QuickTime/QTFF/QTFFChap3/qtff3.html#//apple_ref/doc/uid/TP40000939-CH205-SW130)). The `'mebx'` atom and its contents are a generic structure.
+Spatial video can benefit from frame based metadata. This can be provided using timed metadata tracks within ISOBMFF (ISO Base Media File Format) or QuickTime files.
 
-To learn more on the specific use of `'mebx'` for caption parallax information, see [`ISO Base Media File Format and Apple HEVC Stereo Video`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf) and [`Video Contour Map Payload Metadata within the QuickTime Movie File Format`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Video-Contour-Map-Metadata.pdf).
+> **Note**: An `'mebx'` atom or box describes the samples in a timed metadata track. The international standard ISO/IEC 14496-12:2022 (“Information technology — Coding of audio-visual objects — Part 12: ISO base media file format”) refers to this box as a `BoxedMetadataSampleEntry` (for more information, see section 12.9  of that document). The [`QuickTime File Format Specification`](https://developer.apple.comhttps://developer.apple.com/documentation/quicktime-file-format) refers to the `'mebx'` atom as a  (see [`Timed Metadata Media`](https://developer.apple.comhttps://developer.apple.com/documentation/quicktime-file-format/timed_metadata_sample_descriptions)). The `'mebx'` atom and its contents are a generic structure.
+
+You can provide parallax metadata for subtitles or captions using a timed metadata track. This allows control over the depth at which the text is displayed relative to the image. For details, see [`ISO Base Media File Format and Apple HEVC Stereo Video`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf) and [`Video Contour Map Payload Metadata within the QuickTime Movie File Format`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Video-Contour-Map-Metadata.pdf).
+
+You can provide per frame rectangular mask metadata (PFRM, aka dynamic mask metadata) using a timed metadata track. This is used to indicate a fixed or changing rectangular area extracted from otherwise constant sized decoded video, for example letterboxing, or more complex spatial video adjustments to the displayed area. For details, see [`Rectangular Mask Payload Metadata within the QuickTime Movie File Format`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Rectangular-Dynamic-Mask-Metadata.pdf)
+
+Immersive video MUST point to an Apple Immersive Media Embedded (AIME) file via EXT-X-SESSION-DATA tag. This file provides information necessary to present the video correctly. To learn more about AIME, see [`Apple Immersive Media Embedded`](https://developer.apple.comhttps://support.apple.com/guide/immersive-video-utility/requirements-dev4579429f0/1.0/web/1.0). See [Apple Immersive Video Utility User Guide] (https://support.apple.com/guide/immersive-video-utility/welcome/web) for more information.
+
+Immersive video SHOULD use Apple Positional Audio Codec (APAC) for audio codec. APAC provides rich spatial audio experience. To learn more about APAC, see [`Apple Positional Audio Codec`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf).
 
 For more information on encoding MV-HEVC video, see [`Apple HEVC Stereo Video`](https://developer.apple.comhttps://developer.apple.com/av-foundation/HEVC-Stereo-Video-Profile.pdf).
 
 You can find also find these resources listed at [`AVFoundation Overview`](https://developer.apple.comhttps://developer.apple.com/av-foundation/).
 
-##### Example Playlist
+##### Requirements for Downloading and Persisting Hls Streams
 
-The following is an example of a playlist with SDR, Dolby Vision, HDR10, and HLG content at resolutions from 720p to 4K. The SUPPLEMENTAL-CODECS attribute is used to indicate that the HDR10 content is compatible with Dolby Vison 8.1 and the HLG content is compatible with Dolby Vision 8.4.
+###### Multivariant Playlist and Its Resources Expiry Requirements
+
+Content providers MUST assure that the original Multivariant Playlist URL and its resources do not expire on the CDN, as long as the downloaded asset will be needed by the application. There are 3 reasons.
+
+- (Online playback) While online the player may attempt to load additional resources from the MVP (for assuring compatibility when the device configuration changes, e.g., an external display adapter is connected), which could cause playback to fail or misbehave if the MVP (or its resources) is no longer available from the network.
+- (Supplementary downloads) If the app explicitly initiates supplementary download of variants and renditions to an existing movpkg location, the download operation will fail if the Multivariant Playlist URL or its resources have expired on the CDN.
+- (AirPlay) When AirPlay-ing a downloaded HLS content, the AirPlay receiver will attempt to load the original Multivariant Playlist URL, which should remain available for as long as the download can be persisted on the sender device.
+
+###### Content Steering Requirements
+
+- If the content supports [`Content Steering`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/draft-pantos-content-steering), Media Playlists MUST include STABLE-RENDITION-ID & STABLE-VARIANT-ID attributes; this decouples the variant identity from its CDN location.
+- If one Media Playlist includes a STABLE-RENDITION-ID or STABLE-VARIANT-ID, all other Media Playlists MUST also specify a stable ID.
+- The Content Steering manifest MUST remain available for the same timespan as the Multivariant Playlist URL above for the same reasons.
+
+###### Interstitials Requirements
+
+- Your ads and other non-primary media MAY be inserted in the Media Playlists or as Interstitials.
+- To allow predictable tier selection at the time of download, interstitial assets SHOULD follow the content structure of the main content (e.g., Codecs, subtitle/audio languages, etc.,).
+
+###### Download Performance Requirements
+
+- Download speed will be improved by authoring content in a way that reduces the total number of HTTP requests, and specifically the requests that have a short payload. HLS content intended for download SHOULD be encapsulated as fMP4 or elementary audio stream, and consecutive segments in Media Playlists use EXT-X-BYTERANGE attributes with contiguous ranges; this allows the number of HTTP requests to be reduced via coalescing. Content SHOULD also avoid usage of small files, where possible. For instance, subtitles can be authored as a single segment for all cues across the entire asset duration.
+- Extra-long-form content, such as audiobooks, SHOULD be split in multiple assets (e.g., per chapter). This is particularly important for playback of downloaded audio assets on watchOS, to enable performant playback start-up and reduce battery usage.
+
+##### Example Playlists
+
+> **Note**: Please see [Streaming Examples] (https://developer.apple.com/streaming/examples/) for sample HLS streams.
+
+###### Example Playlist with Stereo Video
+
+```swift
+#EXTM3U
+#EXT-X-VERSION:12
+#EXT-X-INDEPENDENT-SEGMENTS
+
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="ac3-48-384",NAME="English",LANGUAGE="en-US",AUTOSELECT=YES,DEFAULT=YES,CHANNELS="6",URI="audio/prog_index.m3u8"
+
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=726521,BANDWIDTH=910558,VIDEO-RANGE=PQ,CODECS="dvh1.20.01,ac-3",RESOLUTION=640x360,FRAME-RATE=24.000,CLOSED-CAPTIONS=NONE,AUDIO="ac3-48-384",REQ-VIDEO-LAYOUT="CH-STEREO"
+360p/prog_index.m3u8
+
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=7224756,BANDWIDTH=10079102,VIDEO-RANGE=PQ,CODECS="dvh1.20.01,ec-3",RESOLUTION=1280x720,FRAME-RATE=24.000,CLOSED-CAPTIONS=NONE,AUDIO="atmos-48-448",REQ-VIDEO-LAYOUT="CH-STEREO"
+720p/prog_index.m3u8
+
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=12327020,BANDWIDTH=17120478,VIDEO-RANGE=PQ,CODECS="dvh1.20.03,ec-3",RESOLUTION=1920x1080,FRAME-RATE=24.000,CLOSED-CAPTIONS=NONE,AUDIO="atmos-48-448",REQ-VIDEO-LAYOUT="CH-STEREO"
+1080p/prog_index.m3u8
+
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=16683700,BANDWIDTH=23228969,VIDEO-RANGE=PQ,CODECS="dvh1.20.05,ac-3",RESOLUTION=2560x1440,FRAME-RATE=24.000,CLOSED-CAPTIONS=NONE,AUDIO="ac3-48-384",REQ-VIDEO-LAYOUT="CH-STEREO"
+1440p/prog_index.m3u8
+
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=34515644,BANDWIDTH=47959720,VIDEO-RANGE=PQ,CODECS="dvh1.20.06,ac-3",RESOLUTION=3840x2160,FRAME-RATE=24.000,CLOSED-CAPTIONS=NONE,AUDIO="ac3-48-384",REQ-VIDEO-LAYOUT="CH-STEREO"
+2160p/prog_index.m3u8
+```
+
+###### Example Playlist with Apmp Video
+
+```swift
+#EXTM3U
+#EXT-X-VERSION:12
+#EXT-X-INDEPENDENT-SEGMENTS
+
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=25403063,BANDWIDTH=34135166,VIDEO-RANGE=SDR,CODECS="hvc1.2.20000000.H150.B0",RESOLUTION=3840x1920,FRAME-RATE=29.970,CLOSED-CAPTIONS=NONE,REQ-VIDEO-LAYOUT="CH-STEREO/PROJ-EQUI"
+small/prog_index.m3u8
+
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=50285525,BANDWIDTH=65273029,VIDEO-RANGE=SDR,CODECS="hvc1.2.20000000.H180.B0",RESOLUTION=5440x2720,FRAME-RATE=29.970,CLOSED-CAPTIONS=NONE,REQ-VIDEO-LAYOUT="CH-STEREO/PROJ-EQUI"
+med/prog_index.m3u8
+
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=102904567,BANDWIDTH=117277565,VIDEO-RANGE=SDR,CODECS="hvc1.2.20000000.H180.B0",RESOLUTION=7680x3840,FRAME-RATE=29.970,CLOSED-CAPTIONS=NONE,REQ-VIDEO-LAYOUT="CH-STEREO/PROJ-EQUI"
+large/prog_index.m3u8
+
+#EXT-X-I-FRAME-STREAM-INF:AVERAGE-BANDWIDTH=1787583,BANDWIDTH=2559008,VIDEO-RANGE=SDR,CODECS="hvc1.2.20000000.H150.B0",RESOLUTION=3840x1920,REQ-VIDEO-LAYOUT="CH-MONO/PROJ-RECT",URI="small/iframe_var.m3u8"
+
+#EXT-X-I-FRAME-STREAM-INF:AVERAGE-BANDWIDTH=3121560,BANDWIDTH=4464969,VIDEO-RANGE=SDR,CODECS="hvc1.2.20000000.H180.B0",RESOLUTION=5440x2720,REQ-VIDEO-LAYOUT="CH-MONO/PROJ-RECT",URI="med/iframe_var.m3u8"
+
+#EXT-X-I-FRAME-STREAM-INF:AVERAGE-BANDWIDTH=5070173,BANDWIDTH=6906054,VIDEO-RANGE=SDR,CODECS="hvc1.2.20000000.H180.B0",RESOLUTION=7680x3840,REQ-VIDEO-LAYOUT="CH-MONO/PROJ-RECT",URI="large/iframe_var.m3u8"
+```
+
+###### Example Playlist with Aiv Video
+
+```swift
+#EXTM3U
+#EXT-X-VERSION:12
+#EXT-X-INDEPENDENT-SEGMENTS
+
+#EXT-X-SESSION-DATA:DATA-ID="com.apple.hls.venue-description",URI="sample.aime"
+
+#== AUDIO
+#EXT-X-MEDIA:TYPE=AUDIO,LANGUAGE="en",GROUP-ID="apac",NAME="English",DEFAULT=YES,CHANNELS="20/3OA/BED-4",CHARACTERISTICS="public.original-content",URI="Audio/audio_index.m3u8"
+
+#-- subtitles --
+#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",LANGUAGE="en",NAME="English",AUTOSELECT=NO,FORCED=NO,URI="Subtitles/en/en_index.m3u8"
+
+#== VIDEO - Stereo MV-HEVC
+#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="stereo-16",NAME="Director's Cut",DEFAULT=YES,CHARACTERISTICS="com.apple.position.dirs-cut",URI="Video/16Mb/prog_index.m3u8"
+#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="stereo-20",NAME="Director's Cut",DEFAULT=YES,CHARACTERISTICS="com.apple.position.dirs-cut",URI="Video/20Mb/prog_index.m3u8"
+#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="stereo-40",NAME="Director's Cut",DEFAULT=YES,CHARACTERISTICS="com.apple.position.dirs-cut",URI="Video/40Mb/prog_index.m3u8"
+#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="stereo-50",NAME="Director's Cut",DEFAULT=YES,CHARACTERISTICS="com.apple.position.dirs-cut",URI="Video/50Mb/prog_index.m3u8"
+#EXT-X-MEDIA:TYPE=VIDEO,GROUP-ID="stereo-100",NAME="Director's Cut",DEFAULT=YES,CHARACTERISTICS="com.apple.position.dirs-cut",URI="Video/100Mb/prog_index.m3u8"
+
+
+#== Variants
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=18077520,BANDWIDTH=30636545,AUDIO="apac",SUBTITLES="subs",VIDEO="stereo-16",VIDEO-RANGE=PQ,CODECS="hvc1.2.20000000.H183.B0,apac.31.00",RESOLUTION=3600x3600,FRAME-RATE=90.000,CLOSED-CAPTIONS=NONE,REQ-VIDEO-LAYOUT="CH-STEREO/PROJ-AIV"
+Video/16Mb/prog_index.m3u8
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=21960196,BANDWIDTH=36415190,AUDIO="apac",SUBTITLES="subs",VIDEO="stereo-20",VIDEO-RANGE=PQ,CODECS="hvc1.2.20000000.H183.B0,apac.31.00",RESOLUTION=3600x3600,FRAME-RATE=90.000,CLOSED-CAPTIONS=NONE,REQ-VIDEO-LAYOUT="CH-STEREO/PROJ-AIV"
+Video/20Mb/prog_index.m3u8
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=41505403,BANDWIDTH=71521624,AUDIO="apac",SUBTITLES="subs",VIDEO="stereo-40",VIDEO-RANGE=PQ,CODECS="hvc1.2.20000000.H183.B0,apac.31.00",RESOLUTION=4320x4320,FRAME-RATE=90.000,CLOSED-CAPTIONS=NONE,REQ-VIDEO-LAYOUT="CH-STEREO/PROJ-AIV"
+Video/40Mb/prog_index.m3u8
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=98690153,BANDWIDTH=177339446,AUDIO="apac",SUBTITLES="subs",VIDEO="stereo-100",VIDEO-RANGE=PQ,CODECS="hvc1.2.20000000.H183.B0,apac.31.00",RESOLUTION=4320x4320,FRAME-RATE=90.000,CLOSED-CAPTIONS=NONE,REQ-VIDEO-LAYOUT="CH-STEREO/PROJ-AIV"
+Video/100Mb/prog_index.m3u8
+```
+
+###### Example Playlist with Sdr Dolby Vision Hdr10 and Hlg Content at Resolutions From 720p to 4k
+
+The SUPPLEMENTAL-CODECS attribute is used to indicate that the HDR10 content is compatible with Dolby Vison 8.1 and the HLG content is compatible with Dolby Vision 8.4.
 
 ```swift
 #EXTM3U
@@ -287,4 +411,4 @@ Information about Dolby Video codec values can be obtained from Dolby. A short d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HTTP-Live-Streaming/hls-authoring-specification-for-apple-devices-appendixes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/http-live-streaming/hls-authoring-specification-for-apple-devices-appendixes)*

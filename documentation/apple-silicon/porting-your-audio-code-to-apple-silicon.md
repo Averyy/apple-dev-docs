@@ -1,6 +1,6 @@
 # Porting your audio code to Apple silicon
 
-**Framework**: Apple Silicon
+**Framework**: Apple silicon
 
 Eliminate issues in your audio-specific code when running on Apple silicon Mac computers.
 

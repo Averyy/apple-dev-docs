@@ -10,7 +10,7 @@ Plays the given keyframes when the given trigger value changes, updating the vie
 - iPadOS 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

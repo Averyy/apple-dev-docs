@@ -19,14 +19,16 @@ struct SFSpeechError
 ## Topics
 
 ### Type Properties
+- [static var errorDomain: String](sfspeecherror/errordomain.md)
 - [static var internalServiceError: SFSpeechError.Code](sfspeecherror/internalserviceerror.md)
 - [static var malformedSupplementalModel: SFSpeechError.Code](sfspeecherror/malformedsupplementalmodel.md)
 - [static var undefinedTemplateClassName: SFSpeechError.Code](sfspeecherror/undefinedtemplateclassname.md)
 - [static var audioReadFailed: SFSpeechError.Code](sfspeecherror/audioreadfailed.md)
-- [static var errorDomain: String](sfspeecherror/errordomain.md)
 - [static var timeout: SFSpeechError.Code](sfspeecherror/timeout.md)
+- [static var missingParameter: SFSpeechError.Code](sfspeecherror/missingparameter.md)
 ### Enumerations
 - [SFSpeechError.Code](sfspeecherror/code.md)
+  Error codes that can be thrown under the Speech framework’s error domain.
 
 ## Relationships
 
@@ -36,6 +38,13 @@ struct SFSpeechError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [let SFSpeechErrorDomain: String](sfspeecherrordomain.md)
+- [SFSpeechError.Code](sfspeecherror/code.md)
+  Error codes that can be thrown under the Speech framework’s error domain.
 
 
 ---

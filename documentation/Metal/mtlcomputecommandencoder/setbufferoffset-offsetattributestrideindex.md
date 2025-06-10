@@ -24,8 +24,6 @@ func setBufferOffset(offset: Int, attributeStride stride: Int, index: Int)
 
 > ❗ **Important**:  Only call this method when the buffer is part of [`stageInputDescriptor`](mtlcomputepipelinedescriptor/stageinputdescriptor.md) and has its stride set to [`MTLBufferLayoutStrideDynamic`](mtlbufferlayoutstridedynamic.md).
 
- Only call this method when the buffer is part of [`stageInputDescriptor`](mtlcomputepipelinedescriptor/stageinputdescriptor.md) and has its stride set to [`MTLBufferLayoutStrideDynamic`](mtlbufferlayoutstridedynamic.md).
-
 _ _Prefer calling this method to unbinding and then rebinding data.
 
 For buffers binding to an argument using the `device` address space, align the offset to the data type’s size. The maximum size for an offset is `16` bytes.

@@ -1,6 +1,6 @@
 # init(contact:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: init
 
 Creates a Home Screen quick action icon from the picture for a contact or a monogram of the contact name if the picture is unavailable.

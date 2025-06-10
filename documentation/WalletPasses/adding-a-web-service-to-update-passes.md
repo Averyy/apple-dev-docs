@@ -1,6 +1,6 @@
 # Adding a Web Service to Update Passes
 
-**Framework**: Walletpasses
+**Framework**: Wallet Passes
 
 Implement a web server to register, update, and unregister a pass on a device.
 
@@ -121,4 +121,4 @@ The device then sends a request to your server for each updated pass.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WalletPasses/adding-a-web-service-to-update-passes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/walletpasses/adding-a-web-service-to-update-passes)*

@@ -26,10 +26,12 @@ struct Configuration
 - [SpatialTrackingSession.Configuration.AnchorCapability](spatialtrackingsession/configuration/anchorcapability.md)
   A type that defines various anchor tracking capabilities.
 - [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](spatialtrackingsession/configuration/sceneunderstandingcapability.md)
-  Defines how system behaviors can use scene unerstanding data for.
+  Defines how system behaviors use scene understanding.
 ### Initializers
 - [init(tracking: Set<SpatialTrackingSession.Configuration.AnchorCapability>)](spatialtrackingsession/configuration/init(tracking:).md)
   Creates a configuration with a set of anchor capabilities.
+- [init(tracking: Set<SpatialTrackingSession.Configuration.AnchorCapability>, sceneUnderstanding: Set<SpatialTrackingSession.Configuration.SceneUnderstandingCapability>)](spatialtrackingsession/configuration/init(tracking:sceneunderstanding:).md)
+  Creates a configuration with a set of anchor capabilities and scene understanding capabilities.
 - [init(tracking: Set<SpatialTrackingSession.Configuration.AnchorCapability>, sceneUnderstanding: Set<SpatialTrackingSession.Configuration.SceneUnderstandingCapability>, camera: SpatialTrackingSession.Configuration.Camera)](spatialtrackingsession/configuration/init(tracking:sceneunderstanding:camera:).md)
   Creates a configuration with anchor capabilities, scene-understanding capabilities, and camera feeds.
 ### Instance Properties
@@ -41,8 +43,6 @@ struct Configuration
 ### Enumerations
 - [SpatialTrackingSession.Configuration.Camera](spatialtrackingsession/configuration/camera.md)
   Defines the camera feed the RealityView renders.
-### Default Implementations
-- [CustomStringConvertible Implementations](spatialtrackingsession/configuration/customstringconvertible-implementations.md)
 
 ## Relationships
 
@@ -57,7 +57,7 @@ struct Configuration
 - [SpatialTrackingSession.Configuration.AnchorCapability](spatialtrackingsession/configuration/anchorcapability.md)
   A type that defines various anchor tracking capabilities.
 - [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](spatialtrackingsession/configuration/sceneunderstandingcapability.md)
-  Defines how system behaviors can use scene unerstanding data for.
+  Defines how system behaviors use scene understanding.
 - [SpatialTrackingSession.Configuration.Camera](spatialtrackingsession/configuration/camera.md)
   Defines the camera feed the RealityView renders.
 - [SpatialTrackingSession.UnavailableCapabilities](spatialtrackingsession/unavailablecapabilities.md)

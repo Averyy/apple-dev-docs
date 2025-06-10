@@ -1,6 +1,6 @@
 # VTDecodeInfoFlags
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: struct
 
 Flags that provide information about the status of a decode operation.
@@ -33,6 +33,8 @@ struct VTDecodeInfoFlags
 ### Initializers
 - [init(rawValue: UInt32)](vtdecodeinfoflags/init(rawvalue:).md)
   Creates a flag from a raw unsigned-integer value.
+### Type Properties
+- [static var frameInterrupted: VTDecodeInfoFlags](vtdecodeinfoflags/frameinterrupted.md)
 
 ## Relationships
 
@@ -43,6 +45,7 @@ struct VTDecodeInfoFlags
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

@@ -1,6 +1,6 @@
 # DOMDocument Additions
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Additions to the `DOMDocument` class facilitate communication between the DOM API and WebKit and help convert DOM URL element attributes into web-friendly URLs.
 

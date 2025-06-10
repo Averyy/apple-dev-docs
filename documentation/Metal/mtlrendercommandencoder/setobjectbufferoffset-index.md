@@ -34,8 +34,6 @@ The command can also adjust the offset for an entry that you previously set with
 
 > 💡 **Tip**:  If you’re only updating an offset, this method is typically more efficient than rebinding a buffer or byte block with the methods above.
 
- If you’re only updating an offset, this method is typically more efficient than rebinding a buffer or byte block with the methods above.
-
 ## Parameters
 
 - `offset`: See the   to check for offset alignment requirements for buffers in   and   address space.

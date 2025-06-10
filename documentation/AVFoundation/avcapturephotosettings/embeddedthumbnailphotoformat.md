@@ -1,6 +1,6 @@
 # embeddedThumbnailPhotoFormat
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A dictionary describing the format for delivery of thumbnail images embedded in photo file output.

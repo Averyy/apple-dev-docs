@@ -15,7 +15,8 @@
 ## Declaration
 
 ```swift
-var image: Image? { get }
+@MainActor
+@preconcurrency var image: Image? { get }
 ```
 
 

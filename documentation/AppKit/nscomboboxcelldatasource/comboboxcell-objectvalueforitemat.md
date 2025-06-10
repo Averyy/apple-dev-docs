@@ -24,8 +24,6 @@ An `NSComboBoxCell` object uses this method to populate the items displayed in i
 
 > ❗ **Important**:  While this method is marked as `@optional` in the protocol, .
 
- While this method is marked as `@optional` in the protocol, .
-
 ## Parameters
 
 - `comboBoxCell`: The combo box cell for which to return the item.

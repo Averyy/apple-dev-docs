@@ -12,6 +12,7 @@ List all the App Store review attachments you include with a version when you su
 
 - [Read App Store Review Attachment Information](get-v1-appstorereviewattachments-_id_.md)
   Get information about an App Store review attachment and its upload and processing status.
+- [GET /v1/appStoreReviewDetails/{id}/relationships/appStoreReviewAttachments](get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
 
 
 ---

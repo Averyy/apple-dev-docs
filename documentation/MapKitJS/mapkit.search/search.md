@@ -42,15 +42,15 @@ The arguments are:
 The following example searches for  in and around the visible map area, and adds the results as annotations:
 
 ```javascript
-var search = new mapkit.Search({ region: map.region });
+const search = new mapkit.Search({ region: map.region });
 
 search.search("coffee shop", function(error, data) {
     if (error) {
         // Handle the search error.
         return;
     }
-    var annotations = data.places.map(function(place) {
-        var annotation = new mapkit.MarkerAnnotation(place.coordinate);
+    const annotations = data.places.map(function(place) {
+        const annotation = new mapkit.MarkerAnnotation(place.coordinate);
         annotation.title = place.name;
         annotation.subtitle = place.formattedAddress;
         annotation.color = "#9B6134";

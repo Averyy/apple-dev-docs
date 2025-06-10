@@ -1,6 +1,6 @@
 # supportsManifestVersion(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Checks if a manifest version is supported by the extension.

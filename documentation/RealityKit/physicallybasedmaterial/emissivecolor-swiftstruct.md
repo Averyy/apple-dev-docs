@@ -10,6 +10,7 @@ An object that defines the color of the light an entity emits.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -36,6 +37,9 @@ With physically based rendering (PBR), you can give entities in RealityKit the a
   An optional image texture that defines the color of light emission.
 - [static let textureSemantic: TextureResource.Semantic](physicallybasedmaterial/emissivecolor-swift.struct/texturesemantic.md)
   The intended use of the object’s texture property.
+### Initializers
+- [init(color:texture:)](physicallybasedmaterial/emissivecolor-swift.struct/init(color:texture:).md)
+  Creates a color of emitted light in iOS.
 ### Instance Properties
 - [var color: UIColor](physicallybasedmaterial/emissivecolor-swift.struct/color-6l8ly.md)
 - [var color: NSColor](physicallybasedmaterial/emissivecolor-swift.struct/color-9ktf.md)

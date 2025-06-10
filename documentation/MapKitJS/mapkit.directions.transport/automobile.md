@@ -22,6 +22,8 @@ Use for directions that are suitable while driving.
 
 - [Walking](mapkit.directions.transport/walking.md)
   A constant identifying the mode of transportation as walking.
+- [Cycling](mapkit.directions.transport/cycling.md)
+  A constant identifying the mode of transportation as cycling.
 
 
 ---

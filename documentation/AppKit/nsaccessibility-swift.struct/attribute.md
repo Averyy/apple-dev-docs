@@ -21,10 +21,13 @@ struct Attribute
 - [static let allowedValues: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/allowedvalues.md)
   The allowed values in the slider (`NSArray`).
 - [static let alternateUIVisible: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/alternateuivisible.md)
+- [static let autoInteractableAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/autointeractableattribute.md)
+- [static let blockQuoteLevelAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/blockquotelevelattribute.md)
 - [static let cancelButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/cancelbutton.md)
   The element that represents the cancel button (`id`).
 - [static let children: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/children.md)
   The element’s child elements in the accessibility hierarchy (`NSArray`).
+- [static let childrenInNavigationOrderAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/childreninnavigationorderattribute.md)
 - [static let clearButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/clearbutton.md)
   The element that represents the clear button in a search field (`id`).
 - [static let closeButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/closebutton.md)
@@ -45,6 +48,7 @@ struct Attribute
   Elements that represent the contents in the current element, such as the document view of a scroll view (`NSArray`).
 - [static let criticalValue: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/criticalvalue.md)
   The critical value in a level indicator (typically, `NSNumber`).
+- [static let dateTimeComponentsAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/datetimecomponentsattribute.md)
 - [static let decrementButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/decrementbutton.md)
   The element that represents a stepper’s decrement button (`id`).
 - [static let defaultButton: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/defaultbutton.md)
@@ -63,6 +67,7 @@ struct Attribute
   The URL for the file represented by the element (`NSString`).
 - [static let edited: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/edited.md)
   A flag that indicates whether the element has been modified (`NSNumber`).
+- [static let embeddedImageDescriptionAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/embeddedimagedescriptionattribute.md)
 - [static let enabled: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/enabled.md)
   A flag that indicates the enabled state of the element (`NSNumber`).
 - [static let expanded: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/expanded.md)
@@ -87,6 +92,7 @@ struct Attribute
   The drag handles of the item (`NSArray`).
 - [static let header: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/header.md)
   The element that represents a table view’s header (`id`).
+- [static let headingLevelAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/headinglevelattribute.md)
 - [static let help: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/help.md)
   The help text for the element (`NSString`).
 - [static let hidden: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/hidden.md)
@@ -109,6 +115,7 @@ struct Attribute
   The elements that represent the slider’s labels (`NSArray`).
 - [static let labelValue: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/labelvalue.md)
   The value of the label represented by this element (`NSNumber`).
+- [static let languageAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/languageattribute.md)
 - [static let linkedUIElements: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/linkeduielements.md)
   The elements with which this element is related (`NSArray`).
 - [static let main: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/main.md)
@@ -153,6 +160,7 @@ struct Attribute
   The element that represents a toolbar’s overflow button (`id`).
 - [static let parent: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/parent.md)
   The element’s parent element in the accessibility hierarchy (`id`).
+- [static let pathAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/pathattribute.md)
 - [static let placeholderValue: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/placeholdervalue.md)
   The placeholder value for a control, such as a text field (`NSString`).
 - [static let position: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/position.md)
@@ -213,6 +221,7 @@ struct Attribute
   The element’s subrole, such as `NSAccessibilityTableRowSubrole` (`NSString`). See Subroles for a list of available subroles.
 - [static let tabs: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/tabs.md)
   The tab elements in a tab view (`NSArray`).
+- [static let textInputMarkedRangeAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/textinputmarkedrangeattribute.md)
 - [static let title: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/title.md)
   The title of the element, such as a button’s visible text (`NSString`).
 - [static let titleUIElement: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/titleuielement.md)
@@ -247,6 +256,7 @@ struct Attribute
   The table’s visible columns (`NSArray`).
 - [static let visibleRows: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/visiblerows.md)
   The table’s visible rows (`NSArray`).
+- [static let visitedAttribute: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/visitedattribute.md)
 - [static let warningValue: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/warningvalue.md)
   The warning value in a level indicator (typically, `NSNumber`).
 - [static let window: NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute/window.md)
@@ -265,6 +275,7 @@ struct Attribute
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # attributeNames
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The SAML attributes that your app sends to the account provider.

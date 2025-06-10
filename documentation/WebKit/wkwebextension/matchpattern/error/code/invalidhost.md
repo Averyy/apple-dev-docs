@@ -1,6 +1,6 @@
 # WKWebExtension.MatchPattern.Error.Code.invalidHost
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates that the host component was invalid.

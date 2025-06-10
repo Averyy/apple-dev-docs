@@ -1,6 +1,6 @@
 # openInMaps(launchOptions:)
 
-**Framework**: Mapkit  
+**Framework**: MapKit  
 **Kind**: method
 
 Opens the Maps app and displays the map item.

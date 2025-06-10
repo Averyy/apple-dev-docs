@@ -1,6 +1,6 @@
 # Cancel a Subscription
 
-**Framework**: Advancedcommerceapi  
+**Framework**: Advanced Commerce API  
 **Kind**: httpRequest
 
 Turn off automatic renewal to cancel a customer’s auto-renewable subscription.
@@ -39,4 +39,4 @@ The request body that includes information about the subscription to cancel.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AdvancedCommerceAPI/cancel-a-subscription)*
+*[View on Apple Developer](https://developer.apple.com/documentation/advancedcommerceapi/cancel-a-subscription)*

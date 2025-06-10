@@ -36,8 +36,6 @@ In this example scenario, the app uses three drawables, each of which presents t
 
 > ⚠️ **Warning**:  Don’t call this method from within the completion handler you pass to [`addCompletedHandler(_:)`](mtlcommandbuffer/addcompletedhandler(_:).md) because it can trigger a deadlock when you capture a GPU frame.
 
- Don’t call this method from within the completion handler you pass to [`addCompletedHandler(_:)`](mtlcommandbuffer/addcompletedhandler(_:).md) because it can trigger a deadlock when you capture a GPU frame.
-
 
 ---
 

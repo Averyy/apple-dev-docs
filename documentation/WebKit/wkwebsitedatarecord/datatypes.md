@@ -1,6 +1,6 @@
 # dataTypes
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The types of data associated with the record.

@@ -19,8 +19,6 @@ case mediaPlaybackAndCapture(environment: MediaEnvironment)
 
 > ❗ **Important**:  You need to call [`activate()`](mediaenvironment/activate().md) on the media environment before you grant this capability to an extension.
 
- You need to call [`activate()`](mediaenvironment/activate().md) on the media environment before you grant this capability to an extension.
-
 ## See Also
 
 - [ProcessCapability.background](processcapability/background.md)

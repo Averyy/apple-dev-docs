@@ -1,6 +1,6 @@
 # ImageAnalysisInteractionDelegate
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: protocol
 
 A delegate that handles image-analysis and user-interaction callbacks for an interaction object.

@@ -1,6 +1,6 @@
 # UIImage.Orientation
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: enum
 
 Constants that specify the intended display orientation for an image.
@@ -61,6 +61,7 @@ For example, an iOS device camera always encodes pixel data in the camera sensor
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

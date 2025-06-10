@@ -78,6 +78,7 @@ Some initializers of `AccessibilityFocusState` also allow specifying accessibili
 ### Conforms To
 - [DynamicProperty](dynamicproperty.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

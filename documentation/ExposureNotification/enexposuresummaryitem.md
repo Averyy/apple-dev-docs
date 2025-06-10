@@ -20,8 +20,6 @@ class ENExposureSummaryItem
 
 > ❗ **Important**:  This class is available in iOS 12.5, iOS 13.7, and later.
 
- This class is available in iOS 12.5, iOS 13.7, and later.
-
 The exposure summary item provides a summary of exposures for a particular day. The framework computes this summary by compiling values for a [`weightedDurationSum`](enexposuresummaryitem/weighteddurationsum.md), a [`maximumScore`](enexposuresummaryitem/maximumscore.md) (the maximum of the exposure risk values), and a [`scoreSum`](enexposuresummaryitem/scoresum.md). This summary of exposures can be for a specific report type ([`confirmedTestSummary`](enexposuredaysummary/confirmedtestsummary.md)) or a combination across all report types ([`daySummary`](enexposuredaysummary/daysummary.md)). An instance of [`ENExposureDaySummary`](enexposuredaysummary.md) contains the exposure summary item.
 
 To illustrate how the framework computes this value, assume Alice encounters Bob, Carol, and Dave on a particular day; each person has weights set by their respective Public Health Authority.

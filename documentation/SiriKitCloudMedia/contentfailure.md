@@ -1,6 +1,6 @@
 # ContentFailure
 
-**Framework**: Sirikitcloudmedia  
+**Framework**: SiriKit Cloud Media  
 **Kind**: dictionary
 
 An object that describes why the client can’t play a specific piece of content.
@@ -45,4 +45,4 @@ If you receive a [`ContentFailure`](contentfailure.md) with an `errorCode` of `1
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SiriKitCloudMedia/contentfailure)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sirikitcloudmedia/contentfailure)*

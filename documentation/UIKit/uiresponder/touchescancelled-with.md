@@ -22,10 +22,10 @@ func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?)
 ## Mentions
 
 - [Implementing a Multi-Touch app](implementing-a-multi-touch-app.md)
-- [About the Gesture Recognizer State Machine](about-the-gesture-recognizer-state-machine.md)
 - [Implementing coalesced touch support in an app](implementing-coalesced-touch-support-in-an-app.md)
-- [Implementing a Continuous Gesture Recognizer](implementing-a-continuous-gesture-recognizer.md)
+- [About the Gesture Recognizer State Machine](about-the-gesture-recognizer-state-machine.md)
 - [Implementing a Discrete Gesture Recognizer](implementing-a-discrete-gesture-recognizer.md)
+- [Implementing a Continuous Gesture Recognizer](implementing-a-continuous-gesture-recognizer.md)
 
 #### Discussion
 

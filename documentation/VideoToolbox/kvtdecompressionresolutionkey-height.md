@@ -1,6 +1,6 @@
 # kVTDecompressionResolutionKey_Height
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A key to specify the resolution height.

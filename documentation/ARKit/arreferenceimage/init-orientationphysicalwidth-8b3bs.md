@@ -22,8 +22,6 @@ To accurately recognize the position and orientation of an image in the AR envir
 
 > ❗ **Important**: ARKit preprocesses reference images before using them for image detection. To provide reference images bundled with your app, create AR Reference Image assets in your Xcode asset catalog, and use the `referenceImageSetNamed(_:in:)` method to load them.
 
-ARKit preprocesses reference images before using them for image detection. To provide reference images bundled with your app, create AR Reference Image assets in your Xcode asset catalog, and use the `referenceImageSetNamed(_:in:)` method to load them.
-
 ## Parameters
 
 - `image`: A Core Graphics image object.

@@ -18,7 +18,7 @@ func relativeMove(to point: NSPoint)
 
 This method implicitly closes the current subpath (if any) and updates the location of the current point. For example, if the current point is (1, 1) and `aPoint` contains the value (1, 2), the previous subpath would be closed and the current point would become (2, 3). When closing the previous subpath, this method does not cause a line to be created from the first and last points in the subpath.
 
-You must set the path’s current point (using the [`move(to:)`](nsbezierpath/move(to:).md) method or through the creation of a preceding line or curve segment) before you invoke this method. If the path is empty, this method raises an [`genericException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1412113-genericexception) exception.
+You must set the path’s current point (using the [`move(to:)`](nsbezierpath/move(to:).md) method or through the creation of a preceding line or curve segment) before you invoke this method. If the path is empty, this method raises an [`genericException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/genericException) exception.
 
 ## Parameters
 

@@ -14,7 +14,7 @@ An array of strings containing developer-specified task identifiers in reverse U
 ## See Also
 
 - [class BGTaskScheduler](../BackgroundTasks/BGTaskScheduler.md)
-  A class for scheduling task requests that launch your app in the background.
+  A class for scheduling tasks that add background support to your app’s most critical work.
 - [UIBackgroundModes](information-property-list/uibackgroundmodes.md)
   Services provided by an app that require it to run in the background.
 - [WKBackgroundModes](information-property-list/wkbackgroundmodes.md)

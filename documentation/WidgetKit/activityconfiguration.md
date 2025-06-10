@@ -1,6 +1,6 @@
 # ActivityConfiguration
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 An object that describes the content of a Live Activity.
@@ -15,6 +15,10 @@ An object that describes the content of a Live Activity.
 @MainActor
 @preconcurrency struct ActivityConfiguration<Attributes> where Attributes : ActivityAttributes
 ```
+
+## Mentions
+
+- [Creating a widget extension](creating-a-widget-extension.md)
 
 #### Overview
 
@@ -32,6 +36,7 @@ To learn more about offering Live Activities for your app, see [`ActivityKit`](h
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [WidgetConfiguration](../SwiftUI/WidgetConfiguration.md)
 
 ## See Also

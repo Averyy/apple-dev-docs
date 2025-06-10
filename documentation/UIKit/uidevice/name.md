@@ -1,6 +1,6 @@
 # name
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The name of the device.

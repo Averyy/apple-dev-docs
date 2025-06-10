@@ -10,6 +10,7 @@ The mesh part id of the entity that was selected by the hit.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

@@ -29,14 +29,6 @@ func start() async -> PHASESoundEvent.StartHandlerReason
 func start() async -> PHASESoundEvent.StartHandlerReason
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-func start() async -> PHASESoundEvent.StartHandlerReason
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 This function returns immediately after instructing the engine to invoke the sound event. If a problem occurs, the function provides an error.
 
 The sound event’s audio plays immediately if the app prepares the sound event in advance. Otherwise, the sound event begins preparing and then plays after preparation completes.
@@ -44,8 +36,6 @@ The sound event’s audio plays immediately if the app prepares the sound event 
 When the sound event plays or errors out, the framework invokes `completionHandler`, passing in a [`PHASESoundEvent.StartHandlerReason`](phasesoundevent/starthandlerreason.md) that explains the reason for the invocation.
 
 > ❗ **Important**:  To play the same sound asset again, create another sound event object. After the first [`start(completion:)`](phasesoundevent/start(completion:).md) call on a particular `PHASESoundEvent` instance, subsequent calls have no effect.
-
- To play the same sound asset again, create another sound event object. After the first [`start(completion:)`](phasesoundevent/start(completion:).md) call on a particular `PHASESoundEvent` instance, subsequent calls have no effect.
 
 ## See Also
 

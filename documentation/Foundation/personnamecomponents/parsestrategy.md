@@ -32,6 +32,7 @@ struct ParseStrategy
 - [Hashable](../Swift/Hashable.md)
 - [ParseStrategy](parsestrategy.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

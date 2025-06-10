@@ -10,6 +10,7 @@ Creates a new audio library from a dictionary.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -21,11 +22,6 @@ init(resources: [String : AudioResource] = [:])
 ## Parameters
 
 - `resources`: A dictionary of audio resources that you key by name.
-
-## See Also
-
-- [init(dictionaryLiteral: (String, AudioResource)...)](audiolibrarycomponent/init(dictionaryliteral:).md)
-  Creates an instance initialized with the given key-value pairs.
 
 
 ---

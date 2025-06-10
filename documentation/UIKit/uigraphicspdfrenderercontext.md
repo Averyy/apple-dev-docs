@@ -1,6 +1,6 @@
 # UIGraphicsPDFRendererContext
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 The drawing environment for a PDF renderer.
@@ -55,6 +55,8 @@ To learn how to use a [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercont
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -78,4 +80,4 @@ To learn how to use a [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercont
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uigraphicspdfrenderercontext)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uigraphicspdfrenderercontext)*

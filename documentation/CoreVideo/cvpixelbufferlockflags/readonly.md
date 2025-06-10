@@ -26,8 +26,6 @@ Set this flag if you don’t plan to modify buffer data while holding the lock. 
 
 > ❗ **Important**:  If you pass this flag to the [`CVPixelBufferLockBaseAddress(_:_:)`](cvpixelbufferlockbaseaddress(_:_:).md) function, you must also pass it to the [`CVPixelBufferUnlockBaseAddress(_:_:)`](cvpixelbufferunlockbaseaddress(_:_:).md) function.
 
- If you pass this flag to the [`CVPixelBufferLockBaseAddress(_:_:)`](cvpixelbufferlockbaseaddress(_:_:).md) function, you must also pass it to the [`CVPixelBufferUnlockBaseAddress(_:_:)`](cvpixelbufferunlockbaseaddress(_:_:).md) function.
-
 
 ---
 

@@ -1,6 +1,6 @@
 # webView(_:resource:didFailLoadingWithError:from:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Invoked when a resource failed to load.

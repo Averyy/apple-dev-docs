@@ -21,7 +21,7 @@ let MTLCommandBufferEncoderInfoErrorKey: String
 
 #### Discussion
 
-You can retrieve an [`MTLCommandBufferEncoderInfo`](mtlcommandbufferencoderinfo.md) instance from the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary of a command buffer’s [`error`](mtlcommandbuffer/error.md) property.
+You can retrieve an [`MTLCommandBufferEncoderInfo`](mtlcommandbufferencoderinfo.md) instance from the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary of a command buffer’s [`error`](mtlcommandbuffer/error.md) property.
 
 ## See Also
 

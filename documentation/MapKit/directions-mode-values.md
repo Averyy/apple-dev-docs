@@ -17,6 +17,8 @@ For a list of possible values, see the [`MKLaunchOptionsDirectionsModeKey`](mkla
   Walking directions between the specified start and end points.
 - [let MKLaunchOptionsDirectionsModeTransit: String](mklaunchoptionsdirectionsmodetransit.md)
   Public transit directions between the specified start and end points.
+- [let MKLaunchOptionsDirectionsModeCycling: String](mklaunchoptionsdirectionsmodecycling.md)
+  Cycling directions between the specified start and end points.
 - [let MKLaunchOptionsDirectionsModeDefault: String](mklaunchoptionsdirectionsmodedefault.md)
   Directions that match the user’s preferred transportation type.
 

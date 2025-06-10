@@ -30,9 +30,9 @@ This cluster provides an interface for passing messages to be presented by a dev
 - [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclustermessages/init(device:endpointid:queue:).md)
   For all instance methods (reads, writes, commands) that take a completion, the completion will be called on the provided queue.
 ### Instance Methods
-- [func cancelRequest(with: MTRMessagesClusterCancelMessagesRequestParams, completion: MTRStatusCompletion)](mtrbaseclustermessages/cancelrequest(with:completion:).md)
+- [func cancelRequest(with: MTRMessagesClusterCancelMessagesRequestParams, completion: ((any Error)?) -> Void)](mtrbaseclustermessages/cancelrequest(with:completion:).md)
   Command CancelMessagesRequest
-- [func presentRequest(with: MTRMessagesClusterPresentMessagesRequestParams, completion: MTRStatusCompletion)](mtrbaseclustermessages/presentrequest(with:completion:).md)
+- [func presentRequest(with: MTRMessagesClusterPresentMessagesRequestParams, completion: ((any Error)?) -> Void)](mtrbaseclustermessages/presentrequest(with:completion:).md)
   Command PresentMessagesRequest
 - [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustermessages/readattributeacceptedcommandlist(completion:).md)
 - [func readAttributeActiveMessageIDs(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustermessages/readattributeactivemessageids(completion:).md)

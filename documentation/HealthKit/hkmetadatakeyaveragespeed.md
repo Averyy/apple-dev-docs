@@ -1,6 +1,6 @@
 # HKMetadataKeyAverageSpeed
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: var
 
 A key that indicates the average speed during a workout.
@@ -39,4 +39,4 @@ HealthKit assigns this metadata key to the segments it automatically creates for
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkmetadatakeyaveragespeed)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkmetadatakeyaveragespeed)*

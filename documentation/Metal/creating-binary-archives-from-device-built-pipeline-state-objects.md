@@ -114,4 +114,4 @@ For Metal to take advantage of precompiled binaries, load them with [`makeBinary
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/creating-binary-archives-from-device-built-pipeline-state-objects)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/creating-binary-archives-from-device-built-pipeline-state-objects)*

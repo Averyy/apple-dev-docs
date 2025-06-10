@@ -218,6 +218,7 @@ Note that the `>` operator provided by the standard library is used in this exam
 - [DiscontiguousSlice.Index](discontiguousslice/index.md)
 - [Double](double.md)
 - [Duration](duration.md)
+- [EnumeratedSequence.Index](enumeratedsequence/index.md)
 - [FlattenSequence.Index](flattensequence/index.md)
 - [Float](float.md)
 - [Float16](float16.md)
@@ -263,4 +264,4 @@ Note that the `>` operator provided by the standard library is used in this exam
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/comparable)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/comparable)*

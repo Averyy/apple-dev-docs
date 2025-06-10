@@ -1,18 +1,23 @@
 # XPCPeerHandler
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: protocol
 
 A type that handles incoming messages from a client and session cancellation.
 
 **Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 17.0+
+- watchOS 10.0+
 
 ## Declaration
 
 ```swift
-protocol XPCPeerHandler
+@preconcurrency
+protocol XPCPeerHandler : Sendable
 ```
 
 ## Topics
@@ -27,6 +32,12 @@ protocol XPCPeerHandler
 ### Responding to session cancellation
 - [func handleCancellation(error: XPCRichError)](xpcpeerhandler/handlecancellation(error:).md)
   A closure the system invokes when it cancels a session with a client.
+
+## Relationships
+
+### Inherits From
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

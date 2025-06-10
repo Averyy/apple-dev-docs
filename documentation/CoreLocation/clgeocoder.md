@@ -49,24 +49,24 @@ You can use geocoder objects either in conjunction with, or independent of, the 
 ## Topics
 
 ### Reverse geocoding a location
-- [func reverseGeocodeLocation(CLLocation, preferredLocale: Locale?, completionHandler: CLGeocodeCompletionHandler)](clgeocoder/reversegeocodelocation(_:preferredlocale:completionhandler:).md)
+- [func reverseGeocodeLocation(CLLocation, preferredLocale: Locale?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/reversegeocodelocation(_:preferredlocale:completionhandler:).md)
   Submits a reverse-geocoding request for the specified location and locale.
-- [func reverseGeocodeLocation(CLLocation, completionHandler: CLGeocodeCompletionHandler)](clgeocoder/reversegeocodelocation(_:completionhandler:).md)
+- [func reverseGeocodeLocation(CLLocation, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/reversegeocodelocation(_:completionhandler:).md)
   Submits a reverse-geocoding request for the specified location.
 - [typealias CLGeocodeCompletionHandler](clgeocodecompletionhandler.md)
   A block to be called when a geocoding request is complete.
 ### Geocoding an address
-- [func geocodeAddressString(String, in: CLRegion?, preferredLocale: Locale?, completionHandler: CLGeocodeCompletionHandler)](clgeocoder/geocodeaddressstring(_:in:preferredlocale:completionhandler:).md)
+- [func geocodeAddressString(String, in: CLRegion?, preferredLocale: Locale?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/geocodeaddressstring(_:in:preferredlocale:completionhandler:).md)
   Submits a forward-geocoding requesting using the specified address string and locale information.
-- [func geocodeAddressString(String, completionHandler: CLGeocodeCompletionHandler)](clgeocoder/geocodeaddressstring(_:completionhandler:).md)
+- [func geocodeAddressString(String, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/geocodeaddressstring(_:completionhandler:).md)
   Submits a forward-geocoding request using the specified string.
-- [func geocodeAddressString(String, in: CLRegion?, completionHandler: CLGeocodeCompletionHandler)](clgeocoder/geocodeaddressstring(_:in:completionhandler:).md)
+- [func geocodeAddressString(String, in: CLRegion?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/geocodeaddressstring(_:in:completionhandler:).md)
   Submits a forward-geocoding request using the specified string and region information.
-- [func geocodePostalAddress(CNPostalAddress, completionHandler: CLGeocodeCompletionHandler)](clgeocoder/geocodepostaladdress(_:completionhandler:).md)
+- [func geocodePostalAddress(CNPostalAddress, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/geocodepostaladdress(_:completionhandler:).md)
   Submits a forward-geocoding requesting using the specified Contacts framework information.
-- [func geocodePostalAddress(CNPostalAddress, preferredLocale: Locale?, completionHandler: CLGeocodeCompletionHandler)](clgeocoder/geocodepostaladdress(_:preferredlocale:completionhandler:).md)
+- [func geocodePostalAddress(CNPostalAddress, preferredLocale: Locale?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/geocodepostaladdress(_:preferredlocale:completionhandler:).md)
   Submits a forward-geocoding requesting using the specified locale and Contacts framework information.
-- [func geocodeAddressDictionary([AnyHashable : Any], completionHandler: CLGeocodeCompletionHandler)](clgeocoder/geocodeaddressdictionary(_:completionhandler:).md)
+- [func geocodeAddressDictionary([AnyHashable : Any], completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/geocodeaddressdictionary(_:completionhandler:).md)
   Submits a forward-geocoding request using the specified address dictionary.
 ### Managing geocoding requests
 - [func cancelGeocode()](clgeocoder/cancelgeocode.md)
@@ -74,7 +74,7 @@ You can use geocoder objects either in conjunction with, or independent of, the 
 - [var isGeocoding: Bool](clgeocoder/isgeocoding.md)
   A Boolean value indicating whether the receiver is in the middle of geocoding its value.
 ### Instance Methods
-- [func geocodeAddressString(String, inRegionCenteredAt: CLLocationCoordinate2D, inRegionRadius: CLLocationDistance, preferredLocale: Locale?, completionHandler: CLGeocodeCompletionHandler)](clgeocoder/geocodeaddressstring(_:inregioncenteredat:inregionradius:preferredlocale:completionhandler:).md)
+- [func geocodeAddressString(String, inRegionCenteredAt: CLLocationCoordinate2D, inRegionRadius: CLLocationDistance, preferredLocale: Locale?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/geocodeaddressstring(_:inregioncenteredat:inregionradius:preferredlocale:completionhandler:).md)
 
 ## Relationships
 

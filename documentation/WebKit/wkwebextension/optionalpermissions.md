@@ -1,6 +1,6 @@
 # optionalPermissions
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The set of permissions that the extension may need for optional functionality.

@@ -3,15 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The attribute mapping to use when creating new users or for authorization.
+The attribute mapping to use when creating users, or for authorization.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- macOS 10.15+
-- visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- macOS 14.0+
 
 ## Declaration
 

@@ -8,7 +8,7 @@ An `ALAssetRepresentation` object encapsulates one of the representations of a g
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 14.0+
 
 ## Declaration
 
@@ -19,10 +19,6 @@ class ALAssetRepresentation
 #### Overview
 
 > ❗ **Important**:  The Assets Library framework is deprecated as of iOS 9.0. Instead, use the Photos framework instead, which in iOS 8.0 and later provides more features and better performance for working with a user’s photo library. For more information, see `Photos`. In the Photos framework, the [`PHAsset`](https://developer.apple.com/documentation/Photos/PHAsset) and [`PHImageManager`](https://developer.apple.com/documentation/Photos/PHImageManager) classes provide functionality for fetching an asset’s image or video data.
-
- The Assets Library framework is deprecated as of iOS 9.0. Instead, use the Photos framework instead, which in iOS 8.0 and later provides more features and better performance for working with a user’s photo library. For more information, see `Photos`.
-
-In the Photos framework, the [`PHAsset`](https://developer.apple.com/documentation/Photos/PHAsset) and [`PHImageManager`](https://developer.apple.com/documentation/Photos/PHImageManager) classes provide functionality for fetching an asset’s image or video data.
 
 A given asset in the library may have more than one representation. For example, if a camera provides RAW and JPEG versions of an image, the resulting asset will have two representations—one for the RAW file and one for the JPEG file.
 

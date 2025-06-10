@@ -1,6 +1,6 @@
 # MAX_COLOR_ATTACHMENTS_WEBGL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

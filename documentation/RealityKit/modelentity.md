@@ -10,6 +10,7 @@ A representation of a physical object that RealityKit renders and optionally sim
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -46,50 +47,14 @@ Models can also collide with one another, and with other entities that conform t
   Creates a model entity with a particular mesh, set of materials, collision shape, and mass.
 - [init(mesh: MeshResource, materials: [any Material], collisionShapes: [ShapeResource], mass: Float)](modelentity/init(mesh:materials:collisionshapes:mass:).md)
   Creates a model entity with a particular mesh, set of materials, a composite collision shape, and mass.
-### Configuring the model
-- [var model: ModelComponent?](modelentity/model.md)
-  The model component for the entity.
-- [var jointNames: [String]](modelentity/jointnames.md)
-  The names of all the joints in the model entity.
-- [var jointTransforms: [Transform]](modelentity/jointtransforms.md)
-  The relative joint transforms of the model entity.
-### Detecting collisions
-- [var collision: CollisionComponent?](modelentity/collision.md)
-  The collision component that gives the entity the ability to participate in collision simulations.
-### Simulating forces, impulses, and motion
-- [var physicsBody: PhysicsBodyComponent?](modelentity/physicsbody.md)
-  A component that is used for physics simulations of the model entity in accordance with the laws of Newtonian mechanics.
-- [var physicsMotion: PhysicsMotionComponent?](modelentity/physicsmotion.md)
-  The physics motion component used by physics simulations of the model entity.
-- [func addForce(SIMD3<Float>, relativeTo: Entity?)](modelentity/addforce(_:relativeto:).md)
-  Applies a force to the physics body at its center of mass.
-- [func addForce(SIMD3<Float>, at: SIMD3<Float>, relativeTo: Entity?)](modelentity/addforce(_:at:relativeto:).md)
-  Applies a force to the physics body at the specified position.
-- [func addTorque(SIMD3<Float>, relativeTo: Entity?)](modelentity/addtorque(_:relativeto:).md)
-  Applies a torque to the physics body at its center of mass.
-- [func clearForcesAndTorques()](modelentity/clearforcesandtorques.md)
-  Clears all forces previously added to the physics body.
-- [func applyLinearImpulse(SIMD3<Float>, relativeTo: Entity?)](modelentity/applylinearimpulse(_:relativeto:).md)
-  Applies an impulse to the physics body at its center of mass.
-- [func applyAngularImpulse(SIMD3<Float>, relativeTo: Entity?)](modelentity/applyangularimpulse(_:relativeto:).md)
-  Applies an angular (torque) impulse to the physics body at its center of mass.
-- [func applyImpulse(SIMD3<Float>, at: SIMD3<Float>, relativeTo: Entity?)](modelentity/applyimpulse(_:at:relativeto:).md)
-  Applies an impulse to the physics body at the specified position.
-- [func resetPhysicsTransform(recursive: Bool)](modelentity/resetphysicstransform(recursive:).md)
-  Resets the position, orientation, and velocities of the simulated physics body.
-- [func resetPhysicsTransform(Transform, recursive: Bool)](modelentity/resetphysicstransform(_:recursive:).md)
-  Resets the position and velocities of the simulated physics body.
-### Default Implementations
-- [HasCollision Implementations](modelentity/hascollision-implementations.md)
-- [HasModel Implementations](modelentity/hasmodel-implementations.md)
-- [HasPhysicsBody Implementations](modelentity/hasphysicsbody-implementations.md)
-- [HasPhysicsMotion Implementations](modelentity/hasphysicsmotion-implementations.md)
 
 ## Relationships
 
 ### Inherits From
 - [Entity](entity.md)
 ### Conforms To
+- [CoordinateSpace3D](../Spatial/CoordinateSpace3D.md)
+- [CoordinateSpace3DFloat](../Spatial/CoordinateSpace3DFloat.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [EventSource](eventsource.md)
@@ -103,8 +68,10 @@ Models can also collide with one another, and with other entities that conform t
 - [HasTransform](hastransform.md)
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
+- [Observable](../Observation/Observable.md)
 - [RealityCoordinateSpace](realitycoordinatespace.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

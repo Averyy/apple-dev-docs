@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_INTERVAL_1_DAY
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A constant that represents a one-day time interval.

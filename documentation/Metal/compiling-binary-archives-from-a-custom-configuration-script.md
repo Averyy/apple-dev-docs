@@ -213,4 +213,4 @@ In your code, load binary archives by calling [`makeBinaryArchive(descriptor:)`]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/compiling-binary-archives-from-a-custom-configuration-script)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/compiling-binary-archives-from-a-custom-configuration-script)*

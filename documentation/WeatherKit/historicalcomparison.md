@@ -1,6 +1,6 @@
 # HistoricalComparison
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: enum
 
 An enum that represents a recognized comparison in the statistical analysis of a location’s historical weather data.
@@ -49,6 +49,8 @@ enum HistoricalComparison
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

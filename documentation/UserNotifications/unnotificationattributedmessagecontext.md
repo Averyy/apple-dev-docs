@@ -1,6 +1,6 @@
 # UNNotificationAttributedMessageContext
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 **Availability**:

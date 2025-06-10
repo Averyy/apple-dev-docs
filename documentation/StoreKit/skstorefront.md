@@ -1,6 +1,6 @@
 # SKStorefront
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: class
 
 An object containing the location and unique identifier of an Apple App Store storefront.
@@ -135,8 +135,9 @@ When you change the App Store Country or Region in App Store Connect for a Sandb
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/skstorefront)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/skstorefront)*

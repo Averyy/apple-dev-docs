@@ -27,6 +27,11 @@ Use the `BrowserEngineCore` framework to support low-level functions for your al
 ### JIT compilation
 - [var BE_JIT_WRITE_PROTECT_TAG: Int](be_jit_write_protect_tag.md)
   A discriminator value the system uses to generate pointer authentication codes for just-in-time compilation.
+### Classes
+- [class BEAudioSession](beaudiosession-6b7ig.md)
+  An object that represents an audio session
+- [class BEAudioSession](beaudiosession-7bb2q.md)
+  An object that represents an audio session.
 
 
 ---

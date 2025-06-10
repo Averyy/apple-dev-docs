@@ -11,6 +11,7 @@ Indicates a drawn path has completed and/or recognized.
 - Mac Catalyst 17.5+
 - macOS 14.5+
 - tvOS 17.5+
+- visionOS 26.0+ (Beta)
 - watchOS 10.5+
 
 ## Declaration

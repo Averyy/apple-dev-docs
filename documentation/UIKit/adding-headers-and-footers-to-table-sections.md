@@ -1,6 +1,6 @@
 # Adding headers and footers to table sections
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Differentiate groups of rows visually by adding header and footer views to your table view’s sections.
 
@@ -133,4 +133,4 @@ If your header or footer heights aren’t all the same, or can change dynamicall
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/adding-headers-and-footers-to-table-sections)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/adding-headers-and-footers-to-table-sections)*

@@ -1,6 +1,6 @@
 # Monitoring location changes with Core Location
 
-**Framework**: Corelocation
+**Framework**: Core Location
 
 Define boundaries and act on user location updates.
 
@@ -35,4 +35,4 @@ Before you run the sample code project in Xcode, ensure that you’re using Xcod
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocation/monitoring-location-changes-with-core-location)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corelocation/monitoring-location-changes-with-core-location)*

@@ -44,6 +44,7 @@ struct UnevenRoundedRectangle
 - [Copyable](../Swift/Copyable.md)
 - [InsettableShape](insettableshape.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Shape](shape.md)
 - [View](view.md)
 

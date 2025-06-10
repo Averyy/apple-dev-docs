@@ -1,6 +1,6 @@
 # save(_:span:)
 
-**Framework**: Eventkit  
+**Framework**: EventKit  
 **Kind**: method
 
 Saves changes to an event permanently.

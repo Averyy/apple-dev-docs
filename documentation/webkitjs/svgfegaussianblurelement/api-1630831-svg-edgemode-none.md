@@ -1,6 +1,6 @@
 # SVG_EDGEMODE_NONE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

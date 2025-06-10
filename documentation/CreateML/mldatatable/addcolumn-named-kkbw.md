@@ -25,8 +25,6 @@ Use this method to add a data column to a data table.
 
 > ❗ **Important**: The number of elements in the column must equal the number of rows in the data table. Otherwise, the data table will be invalidated.
 
-The number of elements in the column must equal the number of rows in the data table. Otherwise, the data table will be invalidated.
-
 As an example, start with a data table variable.
 
 ```swift

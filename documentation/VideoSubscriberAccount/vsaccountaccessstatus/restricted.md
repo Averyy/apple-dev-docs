@@ -1,6 +1,6 @@
 # VSAccountAccessStatus.restricted
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 The app isn’t allowed to access subscription information.

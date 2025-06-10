@@ -1,6 +1,6 @@
 # WKWebExtension.MatchPattern
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that represents a way to specify groups of URLs.

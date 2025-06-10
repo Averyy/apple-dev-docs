@@ -29,6 +29,8 @@ class MTLSharedEventListener
 ### Getting the Dispatch Queue
 - [var dispatchQueue: dispatch_queue_t](mtlsharedeventlistener/dispatchqueue.md)
   The dispatch queue used to dispatch any notifications.
+### Type Methods
+- [class func shared() -> MTLSharedEventListener](mtlsharedeventlistener/shared.md)
 
 ## Relationships
 
@@ -41,6 +43,8 @@ class MTLSharedEventListener
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

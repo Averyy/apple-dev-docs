@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with custom text as a confirmation button label.
+On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
 
 **Availability**:
 - iOS 17.0+
@@ -16,12 +16,12 @@ On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with
 
 ```swift
 nonisolated
-func fileDialogConfirmationLabel(_ label: Text?) -> some View
+func fileDialogConfirmationLabel(_ label: LocalizedStringResource) -> some View
 ```
 
 ## Parameters
 
-- `label`: The optional text to use as the label for the confirmation button.
+- `label`: The localized string resource to display.
 
 ## See Also
 

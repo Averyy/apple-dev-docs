@@ -9,8 +9,7 @@ A dictionary that contains additional data about the software update required er
 - iOS 17.0+
 - iPadOS 17.0+
 - macOS 14.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 

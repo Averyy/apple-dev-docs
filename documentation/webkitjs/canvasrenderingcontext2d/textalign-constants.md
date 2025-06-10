@@ -1,6 +1,6 @@
 # textAlign Constants
 
-**Framework**: Webkitjs
+**Framework**: WebKit JS
 
 Constants used with the `textAlign` property that specify the horizontal alignment of the bounding box relative to its x-coordinate. 
 

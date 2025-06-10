@@ -43,6 +43,7 @@ Use this type with the [`URL.ParseStrategy`](url/parsestrategy.md) initializer a
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

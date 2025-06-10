@@ -25,6 +25,7 @@ struct HierarchicalShapeStyleModifier<Base> where Base : ShapeStyle
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 
 ## See Also

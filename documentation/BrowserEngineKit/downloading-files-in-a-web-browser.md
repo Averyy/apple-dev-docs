@@ -40,7 +40,7 @@ downloadMonitor.useDownloadsFolder() { finalLocation in
 }
 ```
 
-The bookmark you get in the completion handler isn’t suitable for storing to resolve later, if you need to do this then create your own bookmark with security scope. For more information, see [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/foundation/nsurl/1417795-bookmarkdata).
+The bookmark you get in the completion handler isn’t suitable for storing to resolve later, if you need to do this then create your own bookmark with security scope. For more information, see [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/Foundation/NSURL/bookmarkData(options:includingResourceValuesForKeys:relativeTo:)).
 
 ##### Download the File and Report Progress to the System
 

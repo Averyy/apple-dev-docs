@@ -37,6 +37,7 @@ A transition can have properties that specify high level information about it. T
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

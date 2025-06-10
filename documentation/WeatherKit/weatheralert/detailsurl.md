@@ -1,6 +1,6 @@
 # detailsURL
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The site for more details about the weather alert.

@@ -10,6 +10,7 @@ A representation of a geometry or a behavior that you apply to an entity.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -30,8 +31,6 @@ You can also define custom component types. When you do, register that type with
 
 > 💡 **Tip**: You can subscribe to [`ComponentEvents`](componentevents.md) for events that the system triggers when you interact with components.
 
-You can subscribe to [`ComponentEvents`](componentevents.md) for events that the system triggers when you interact with components.
-
 ## Topics
 
 ### Registering a component type
@@ -43,11 +42,13 @@ You can subscribe to [`ComponentEvents`](componentevents.md) for events that the
 ### Inherited By
 - [TransientComponent](transientcomponent.md)
 ### Conforming Types
+- [ARKitAnchorComponent](arkitanchorcomponent.md)
 - [AccessibilityComponent](accessibilitycomponent.md)
 - [AdaptiveResolutionComponent](adaptiveresolutioncomponent.md)
 - [AmbientAudioComponent](ambientaudiocomponent.md)
 - [AnchoringComponent](anchoringcomponent.md)
 - [AnimationLibraryComponent](animationlibrarycomponent.md)
+- [AttachedTransformComponent](attachedtransformcomponent.md)
 - [AudioLibraryComponent](audiolibrarycomponent.md)
 - [AudioMixGroupsComponent](audiomixgroupscomponent.md)
 - [BillboardComponent](billboardcomponent.md)
@@ -61,15 +62,21 @@ You can subscribe to [`ComponentEvents`](componentevents.md) for events that the
 - [DirectionalLightComponent.Shadow](directionallightcomponent/shadow.md)
 - [DockingRegionComponent](dockingregioncomponent.md)
 - [DynamicLightShadowComponent](dynamiclightshadowcomponent.md)
+- [EnvironmentBlendingComponent](environmentblendingcomponent.md)
 - [EnvironmentLightingConfigurationComponent](environmentlightingconfigurationcomponent.md)
 - [ForceEffectComponent](forceeffectcomponent.md)
 - [GeometricPinsComponent](geometricpinscomponent.md)
+- [GestureComponent](gesturecomponent.md)
 - [GroundingShadowComponent](groundingshadowcomponent.md)
 - [HoverEffectComponent](hovereffectcomponent.md)
 - [IKComponent](ikcomponent.md)
 - [ImageBasedLightComponent](imagebasedlightcomponent.md)
 - [ImageBasedLightReceiverComponent](imagebasedlightreceivercomponent.md)
+- [ImagePresentationComponent](imagepresentationcomponent.md)
 - [InputTargetComponent](inputtargetcomponent.md)
+- [ManipulationComponent](manipulationcomponent.md)
+- [ManipulationComponent.HitTargetComponent](manipulationcomponent/hittargetcomponent.md)
+- [MeshInstancesComponent](meshinstancescomponent.md)
 - [ModelComponent](modelcomponent.md)
 - [ModelDebugOptionsComponent](modeldebugoptionscomponent.md)
 - [ModelSortGroupComponent](modelsortgroupcomponent.md)
@@ -84,6 +91,7 @@ You can subscribe to [`ComponentEvents`](componentevents.md) for events that the
 - [PointLightComponent](pointlightcomponent.md)
 - [PortalComponent](portalcomponent.md)
 - [PortalCrossingComponent](portalcrossingcomponent.md)
+- [PresentationComponent](presentationcomponent.md)
 - [ProjectiveTransformCameraComponent](projectivetransformcameracomponent.md)
 - [ReferenceComponent](referencecomponent.md)
 - [ReverbComponent](reverbcomponent.md)

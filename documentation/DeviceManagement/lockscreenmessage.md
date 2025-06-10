@@ -8,8 +8,6 @@ The payload you use to configure a Lock screen message.
 **Availability**:
 - iOS 9.3+
 - iPadOS 9.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,17 +25,17 @@ This payload allows administrators to specify optional text displayed in the log
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, Shared iPad |
-| User Channel | - |
-| Allow Manual Install | iOS |
-| Requires Supervision | iOS |
-| Requires User-Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, Shared iPad |
+| User channel | NA |
+| Allow manual install | iOS |
+| Requires supervision | iOS |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

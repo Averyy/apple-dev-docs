@@ -8,6 +8,13 @@ Learn about important changes to Game Controller.
 
 Browse notable changes in [`Game Controller`](https://developer.apple.com/documentation/GameController).
 
+#### June 2025
+
+- Add support for spatial game controllers. To determine if a controller is a spatial game controller, check whether the product category is  [`GCProductCategorySpatialController`](https://developer.apple.com/documentation/GameController/GCProductCategorySpatialController).
+- Add support for a physical stylus with a [`GCStylus`](https://developer.apple.com/documentation/GameController/GCStylus) object.
+- Add [`NSAccessoryTrackingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAccessoryTrackingUsageDescription) to your information property list if your app requires access to accessory-tracking data for a spatial game controller or stylus.
+- Add [`GCSupportedGameControllers`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/GCSupportedGameControllers) to your information property list — with a value of `SpatialGamepad` — if your app supports spatial game controllers.
+
 #### June 2024
 
 ##### Visionos
@@ -30,12 +37,16 @@ Browse notable changes in [`Game Controller`](https://developer.apple.com/docume
   Learn about important changes in ActivityKit.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [App Intents updates](appintents.md)
   Learn about important changes in App Intents.
 - [AppKit updates](appkit.md)
   Learn about important changes to AppKit.
 - [Apple Intelligence updates](apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -48,10 +59,6 @@ Browse notable changes in [`Game Controller`](https://developer.apple.com/docume
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
 
 
 ---

@@ -1,6 +1,6 @@
 # init(identifier:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Returns a new configuration that is persistent and unique for the specified identifier.

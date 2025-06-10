@@ -1,6 +1,6 @@
 # randomElement()
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns a random element of the collection.

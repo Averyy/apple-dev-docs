@@ -35,6 +35,9 @@ struct MTLColorWriteMask
   The alpha color channel is enabled.
 - [static var all: MTLColorWriteMask](mtlcolorwritemask/all.md)
   All color channels are enabled.
+### Type Properties
+- [static var unspecialized: MTLColorWriteMask](mtlcolorwritemask/unspecialized.md)
+  Defers assigning the color write mask.
 
 ## Relationships
 
@@ -45,6 +48,7 @@ struct MTLColorWriteMask
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

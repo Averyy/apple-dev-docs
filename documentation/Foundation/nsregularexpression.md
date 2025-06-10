@@ -248,6 +248,7 @@ All trademarks and registered trademarks mentioned herein are the property of th
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -263,4 +264,4 @@ All trademarks and registered trademarks mentioned herein are the property of th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsregularexpression)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsregularexpression)*

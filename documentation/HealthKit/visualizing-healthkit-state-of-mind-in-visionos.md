@@ -1,6 +1,6 @@
 # Visualizing HealthKit State of Mind in visionOS
 
-**Framework**: Healthkit
+**Framework**: HealthKit
 
 Incorporate HealthKit State of Mind into your app and visualize the data in visionOS.
 
@@ -37,8 +37,10 @@ Before you run the sample code project:
   Create and save health and fitness samples.
 - [Queries](queries.md)
   Query health and fitness data.
+- [Logging symptoms associated with a medication](logging-symptoms-associated-with-a-medication.md)
+  Fetch medications and dose events from the HealthKit store, and create symptom samples to associate with them.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/visualizing-healthkit-state-of-mind-in-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/visualizing-healthkit-state-of-mind-in-visionos)*

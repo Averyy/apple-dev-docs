@@ -1,6 +1,6 @@
 # DOMWindow Additions
 
-**Framework**: Webkitjs
+**Framework**: WebKit JS
 
 `DOMWindow` additions allow conversion of points between page- and node-coordinate systems for transitions, support for CSS media queries, and device orientation and motion events.
 

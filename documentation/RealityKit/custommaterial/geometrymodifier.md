@@ -10,6 +10,7 @@ The custom material’s optional shader function that can manipulate an entity�
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -50,10 +51,6 @@ For more information on creating custom materials and writing shader functions, 
 ### Initializers
 - [init(named: String, in: any MTLLibrary, constantValues: MTLFunctionConstantValues)](custommaterial/geometrymodifier/init(named:in:constantvalues:).md)
   Creates a geometry modifier with the specified function constant values.
-### Default Implementations
-- [Equatable Implementations](custommaterial/geometrymodifier/equatable-implementations.md)
-- [Hashable Implementations](custommaterial/geometrymodifier/hashable-implementations.md)
-- [MaterialFunction Implementations](custommaterial/geometrymodifier/materialfunction-implementations.md)
 
 ## Relationships
 
@@ -63,10 +60,12 @@ For more information on creating custom materials and writing shader functions, 
 - [Hashable](../Swift/Hashable.md)
 - [MaterialFunction](materialfunction.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [struct ShaderGraphMaterial](shadergraphmaterial.md)
+  Create dynamic materials without Metal.
 - [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
 - [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)

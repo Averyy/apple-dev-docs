@@ -23,12 +23,14 @@ struct DataStoreBatchDeleteRequest<T> where T : PersistentModel
 
 ### Instance Properties
 - [let editingState: EditingState](datastorebatchdeleterequest/editingstate.md)
+- [let includeSubclasses: Bool](datastorebatchdeleterequest/includesubclasses.md)
 - [let predicate: Predicate<T>?](datastorebatchdeleterequest/predicate.md)
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

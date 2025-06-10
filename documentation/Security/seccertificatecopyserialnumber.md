@@ -16,7 +16,7 @@ Returns a copy of a certificate’s serial number.
 ## Declaration
 
 ```swift
-func SecCertificateCopySerialNumber(_ certificate: SecCertificate, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> CFData?
+func SecCertificateCopySerialNumber(_ certificate: SecCertificate) -> CFData?
 ```
 
 #### Return Value

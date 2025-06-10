@@ -1,6 +1,6 @@
 # dismissAudioRecorderController()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Dismisses the audio recording interface controller.

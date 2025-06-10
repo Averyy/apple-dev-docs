@@ -1,6 +1,6 @@
 # isInterruptionAllowed
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A Boolean value that indicates whether your app can prompt the user to authenticate to complete the request.

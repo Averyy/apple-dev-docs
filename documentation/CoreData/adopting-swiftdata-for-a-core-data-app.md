@@ -4,13 +4,6 @@
 
 Persist data in your app intuitively with the Swift native persistence framework.
 
-**Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- macOS 15.0+
-- tvOS 18.0+
-- Xcode 16.0+
-
 #### Overview
 
 This sample project is designed to help you understand how to adopt SwiftData in an existing Core Data app. The SampleTrips app fetches and displays all upcoming trips from the store, and allows people to create or remove trips, and to add, update, or remove information from the itinerary for each trip. There are three versions of this app:
@@ -24,7 +17,7 @@ This sample project is designed to help you understand how to adopt SwiftData in
 Open the sample code project in Xcode. Before building it, do the following:
 
 1. Set the developer team for all targets to your team so Xcode automatically manages the provisioning profile. For more information, see [`Assign a project to a team`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev23aab79b4).
-2. Replace the App Group container identifier — `group.com.example.apple-samplecode.SampleTrips` — with one specific to your team for the entire project. The identifier points to an App Group container that the app and widget use to share data. You can search for `group.com.example.apple-samplecode.SampleTrips` using the Find navigator in Xcode, and then change all of the occurrences (except those in this `README` file). For more information, see [`Configuring app groups`](https://developer.apple.com/documentation/Xcode/configuring-app-groups).
+2. Replace the App Group container identifier — `group.com.example.apple-samplecode.SampleTrips` — with one specific to your team for the entire project. The identifier points to an App Group container that the app and widget use to share data. You can search for `group.com.example.apple-samplecode.SampleTrips` using the Find navigator in Xcode, and then change all of the occurrences. For more information, see [`Configuring app groups`](https://developer.apple.com/documentation/Xcode/configuring-app-groups).
 
 ##### Adopt Swiftdata
 
@@ -52,6 +45,7 @@ Each model file in this sample uses the [`Model()`](https://developer.apple.com/
     
     @Relationship(deleteRule: .cascade, inverse: \LivingAccommodation.trip)
     var livingAccommodation: LivingAccommodation?
+    ...
 ```
 
 Additionally, the app sets up the container using [`ModelContainer`](https://developer.apple.com/documentation/SwiftData/ModelContainer) to ensure that all views access the same `ModelContainer`.
@@ -60,7 +54,7 @@ Additionally, the app sets up the container using [`ModelContainer`](https://dev
 .modelContainer(modelContainer)
 ```
 
-Setting up the `ModelContainer` also creates and set a default [`ModelContext`](https://developer.apple.com/documentation/SwiftData/ModelContext) in the environment. The app can access the `ModelContext` from any scene or view using an environment property.
+Setting up the `ModelContainer` also creates and sets a default [`ModelContext`](https://developer.apple.com/documentation/SwiftData/ModelContext) in the environment. The app can access the `ModelContext` from any scene or view using an environment property.
 
 ```swift
 @Environment(\.modelContext) private var modelContext
@@ -71,7 +65,13 @@ Setting up the `ModelContainer` also creates and set a default [`ModelContext`](
 This app creates a new instance of a trip and inserts it into the [`ModelContext`](https://developer.apple.com/documentation/SwiftData/ModelContext) for persistence:
 
 ```swift
-let newTrip = Trip(name: name, destination: destination, startDate: startDate, endDate: endDate)
+if newTripSegment == .personal {
+    newTrip = PersonalTrip(name: name, destination: destination, startDate: startDate, endDate: endDate, reason: reason)
+} else if newTripSegment == .business {
+    newTrip = BusinessTrip(name: name, destination: destination, startDate: startDate, endDate: endDate, perdiem: perdiem)
+} else {
+    newTrip = Trip(name: name, destination: destination, startDate: startDate, endDate: endDate)
+}
 modelContext.insert(newTrip)
 ```
 
@@ -87,14 +87,14 @@ modelContext.delete(trip)
 
 ##### Fetch Persisted Data
 
-This sample app fetches the complete list of upcoming trips by wrapping an array of trips in [`Query`](https://developer.apple.com/documentation/SwiftData/Query), which fetches `Trip` objects from the container.
+This sample app fetches the complete list of upcoming trips by wrapping an array of trips in a [`Query`](https://developer.apple.com/documentation/SwiftData/Query) macro, which fetches `Trip` objects from the container.
 
 ```swift
 @Query(sort: \Trip.startDate, order: .forward)
 var trips: [Trip]
 ```
 
-This sample also fetches data by calling [`fetch(_:)`](https://developer.apple.com/documentation/SwiftData/ModelContext/fetch(_:)) on the [`ModelContext`](https://developer.apple.com/documentation/SwiftData/ModelContext) and passing in a [`FetchDescriptor`](https://developer.apple.com/documentation/SwiftData/FetchDescriptor) that specifies both the entity to retrieve data from as well as a corresponding [`Predicate`](https://developer.apple.com/documentation/Foundation/Predicate) specifying the conditions for the object to fetch.
+This sample also fetches data by calling [`fetch(_:)`](https://developer.apple.com/documentation/SwiftData/ModelContext/fetch(_:)) on the [`ModelContext`](https://developer.apple.com/documentation/SwiftData/ModelContext) and passing in a [`FetchDescriptor`](https://developer.apple.com/documentation/SwiftData/FetchDescriptor) that specifies both the entity to retrieve data from as well as a corresponding [`Predicate`](https://developer.apple.com/documentation/Foundation/Predicate) that specifies the conditions for the object to fetch.
 
 ```swift
 var descriptor = FetchDescriptor<BucketListItem>()
@@ -105,16 +105,33 @@ descriptor.predicate = #Predicate { item in
 let filteredList = try? modelContext.fetch(descriptor)
 ```
 
+##### Inheritance
+
+The SwiftData-Inheritance version of the app extends the `Trip` class into two distinct kinds of Trips, `PersonalTrip` and `BusinessTrip`, building on the basic `Trip` model to include more specialized properties for different kinds of Trips.
+
+```swift
+class PersonalTrip: Trip {...}
+```
+
+Both `PersonalTrip` and `BusinessTrip` inherit basic properties from their superclass, `Trip`, while defining their own specialized properties, as shown in the following code. For instance, `PersonalTrip`, has an additional property that describes the reason for the trip.
+
+```swift
+init(name: String, destination: String, startDate: Date = .now, endDate: Date = .distantFuture, reason: Reason) {
+    self.reason = reason
+    super.init(name: name, destination: destination, startDate: startDate, endDate: endDate)
+}
+```
+
 ##### Coexistence Between Core Data and Swiftdata
 
 The coexistence version of the app has two persistence stacks: a Core Data persistence stack for the host app, and a SwiftData persistence stack for the widget extension. Both stacks write to the same store file.
 
 ##### Namespace Models
 
-The namespaces in the coexistence sample use the pre-existing [`NSManagedObject`](NSManagedObject.md)-based entity subclasses such that they don’t collide with the SwiftData classes. Note that this consideration refers to the class name, not the entity name.
+The namespaces in the coexistence sample use the pre-existing [`NSManagedObject`](NSManagedObject.md)-based entity subclasses so that they don’t conflict with the SwiftData classes. Note that this refers to the class name, not the entity name.
 
 ```swift
-class CDTrip: NSManagedObject {
+class CDTrip: NSManagedObject {...}
 ```
 
 The sample then refers to the entity as `CDTrip` when accessing it in the Core Data host app. For instance, when adding a new `Trip`:
@@ -130,6 +147,8 @@ This sample ensures that both the Core Data and SwiftData persistent stacks writ
 ```swift
 if let description = container.persistentStoreDescriptions.first {
     description.url = url
+    ...
+}
 ```
 
 Additionally, the coexistence sample must set the [`NSPersistentHistoryTrackingKey`](NSPersistentHistoryTrackingKey.md). Although SwiftData enables persistent history tracking automatically, Core Data does not, so the app enables persistent history manually.
@@ -151,7 +170,7 @@ In the SwiftData version, people can confirm the living accommodation for the cu
 
 There are multiple options for the main app to detect the changes from the widget:
 
-1. Adding a key value pair to the shared `UserDefaults` ([`init(suiteName:)`](https://developer.apple.com/documentation/foundation/userdefaults/1409957-init) for the widget and the main app to share the changes.
+1. Adding a key value pair to the shared `UserDefaults` ([`init(suiteName:)`](https://developer.apple.com/documentation/Foundation/UserDefaults/init(suiteName:)) for the widget and the main app to share the changes.
 2. Adding a new attribute in `Trip` so the widget can mark the trip as “unread” when changing the living accommodation status.
 3. Consuming the history of the store, which SwiftData generates by default, and picking up the relevant changes from there.
 
@@ -160,13 +179,13 @@ The first option introduces a new storage, and hence needs to maintain the consi
 This sample chooses to detect the changes with the third option. To do so, it sets up a `HistoryDescriptor<DefaultHistoryTransaction>` with a history token (`DefaultHistoryToken`) and calls `fetchHistory(_:)` to retrieve the history transactions (`DefaultHistoryTransaction`) after the token, as shown in the following code:
 
 ```swift
-private func findTransactions(after historyToken: DefaultHistoryToken?, author: String) -> [DefaultHistoryTransaction] {
+private func findTransactions(after historyToken: DefaultHistoryToken?, author: String) -> [DefaultHistoryTransaction] {...}
 ```
 
 After getting the transactions, it uses the following code to find the trips that have living accommodation changes:
 
 ```swift
-private func findTrips(in transactions: [DefaultHistoryTransaction]) -> (Set<Trip>, DefaultHistoryToken?) {
+private func findTrips(in transactions: [DefaultHistoryTransaction]) -> (Set<Trip>, DefaultHistoryToken?) {...}
 ```
 
 

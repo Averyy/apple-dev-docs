@@ -1,6 +1,6 @@
 # Adopting menus and UIActions in your user interface
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Add menus to your user interface, with built-in button support and bar-button items, and create custom menu experiences.
 
@@ -27,6 +27,7 @@ Add menus to your user interface, with built-in button support and bar-button it
   An object that specifies a key press perform on a hardware keyboard and the resulting action.
 - [class UIDeferredMenuElement](uideferredmenuelement.md)
   A placeholder menu element that the system replaces with the result of the block’s completion handler.
+- [UIDeferredMenuElement.Provider](uideferredmenuelement/provider.md)
 - [UIMenuElement.Attributes](uimenuelement/attributes.md)
   Attributes that determine the style of the menu element.
 - [UIMenuElement.State](uimenuelement/state.md)
@@ -37,4 +38,4 @@ Add menus to your user interface, with built-in button support and bar-button it
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/adopting-menus-and-uiactions-in-your-user-interface)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/adopting-menus-and-uiactions-in-your-user-interface)*

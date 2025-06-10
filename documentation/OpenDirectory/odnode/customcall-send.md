@@ -1,6 +1,6 @@
 # customCall(_:send:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Returns the result of a custom call to the node.

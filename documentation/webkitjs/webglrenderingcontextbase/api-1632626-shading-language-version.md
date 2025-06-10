@@ -1,6 +1,6 @@
 # SHADING_LANGUAGE_VERSION
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -1,6 +1,6 @@
 # WKWebsiteDataTypeSearchFieldRecentSearches
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

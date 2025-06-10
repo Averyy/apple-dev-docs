@@ -1,40 +1,30 @@
-# !=(_:_:)
+# ==(_:_:)
 
 **Framework**: RealityKit  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Returns a Boolean value that indicates whether two environment-lighting configuration components are equal.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- tvOS 26.0+ (Beta)
+- visionOS 2.0+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func == (lhs: EnvironmentLightingConfigurationComponent, rhs: EnvironmentLightingConfigurationComponent) -> Bool
 ```
-
-#### Discussion
-
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
 
 ## Parameters
 
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
-
-## See Also
-
-- [static func == (EnvironmentLightingConfigurationComponent, EnvironmentLightingConfigurationComponent) -> Bool](environmentlightingconfigurationcomponent/==(_:_:).md)
-  Returns a Boolean value that indicates whether two environment-lighting configuration components are equal.
+- `lhs`: An environment-lighting configuration component.
+- `rhs`: Another environment-lighting configuration component.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/environmentlightingconfigurationcomponent/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/environmentlightingconfigurationcomponent/==(_:_:))*

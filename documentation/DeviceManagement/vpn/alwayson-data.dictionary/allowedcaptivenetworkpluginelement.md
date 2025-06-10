@@ -6,13 +6,9 @@
 The dictionary for captive network configurations.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- macOS 10.7+
-- tvOS 17.0+
+- iOS 8.0+
+- iPadOS 8.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

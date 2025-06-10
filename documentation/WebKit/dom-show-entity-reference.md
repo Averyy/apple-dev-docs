@@ -1,6 +1,6 @@
 # DOM_SHOW_ENTITY_REFERENCE
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

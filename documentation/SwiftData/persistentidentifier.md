@@ -1,6 +1,6 @@
 # PersistentIdentifier
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: struct
 
 A type that describes the aggregate identity of a SwiftData model.
@@ -67,6 +67,7 @@ struct PersistentIdentifier
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -76,4 +77,4 @@ struct PersistentIdentifier
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftData/persistentidentifier)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftdata/persistentidentifier)*

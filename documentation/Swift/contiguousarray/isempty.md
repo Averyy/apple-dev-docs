@@ -39,4 +39,4 @@ if horseName.isEmpty {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/contiguousarray/isempty)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/contiguousarray/isempty)*

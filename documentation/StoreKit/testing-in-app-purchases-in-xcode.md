@@ -20,8 +20,6 @@ Validating receipts is an integral part of handling and testing in-app purchases
 
 > ❗ **Important**:  You can’t validate receipts from the test environment with [`verifyReceipt`](https://developer.apple.com/documentation/appstorereceipts/verifyreceipt) because the App Store doesn’t sign these receipts, and the verification fails.
 
- You can’t validate receipts from the test environment with [`verifyReceipt`](https://developer.apple.com/documentation/appstorereceipts/verifyreceipt) because the App Store doesn’t sign these receipts, and the verification fails.
-
 The test environment’s certificate is a root certificate. There’s no certificate chain to validate when you verify the receipt signature. The following code example retrieves the local receipt:
 
 ```swift

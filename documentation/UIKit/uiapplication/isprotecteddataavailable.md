@@ -23,7 +23,7 @@ var isProtectedDataAvailable: Bool { get }
 
 The value of this property is [`false`](https://developer.apple.com/documentation/swift/false) if data protection is enabled and the device is currently locked. The value of this property is set to [`true`](https://developer.apple.com/documentation/swift/true) if the device is unlocked or if content protection is not enabled.
 
-When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), files that were assigned the [`complete`](https://developer.apple.com/documentation/foundation/fileprotectiontype/1616200-complete) or [`completeUnlessOpen`](https://developer.apple.com/documentation/foundation/fileprotectiontype/1617188-completeunlessopen) protection key cannot be read or written by your app. The user must unlock the device before your app can access them.
+When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), files that were assigned the [`complete`](https://developer.apple.com/documentation/Foundation/FileProtectionType/complete) or [`completeUnlessOpen`](https://developer.apple.com/documentation/Foundation/FileProtectionType/completeUnlessOpen) protection key cannot be read or written by your app. The user must unlock the device before your app can access them.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # classNameKey
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The class of the source editor command, in its attributes.

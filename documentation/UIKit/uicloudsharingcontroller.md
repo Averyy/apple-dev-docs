@@ -1,6 +1,6 @@
 # UICloudSharingController
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A view controller that presents standard screens for adding and removing people from a CloudKit share record.
@@ -119,6 +119,7 @@ You can also show or hide the permission and access options presented to the use
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)
@@ -133,4 +134,4 @@ You can also show or hide the permission and access options presented to the use
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uicloudsharingcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uicloudsharingcontroller)*

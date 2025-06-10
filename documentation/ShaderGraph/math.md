@@ -7,7 +7,7 @@ Perform a wide variety of mathematical and transformative operations on data val
 
 #### Overview
 
-Include math nodes in your graph when you want to perform typical mathematical operations on data values. A wide range of nodes are available, supporting basic arithmetic, trigonometry, logs, exponents, dot and cross products, and more. Some nodes operate on specific data types of values but most operate on a wide range of data types, including numbers, colors, and vectors.
+Include `Math` nodes in your graph to perform typical mathematical operations on data values. A wide range of nodes are available, supporting basic arithmetic, trigonometry, logs, exponents, dot and cross products, and more. Some nodes operate on specific data types of values, but most operate on a wide range of data types, including numbers, colors, and vectors.
 
 ## Topics
 
@@ -93,9 +93,62 @@ Include math nodes in your graph when you want to perform typical mathematical o
 - [Fractional (RealityKit)](math/fractional-(realitykit).md)
   Returns the fractional part of a floating point number.
 - [One Minus (RealityKit)](math/one-minus-(realitykit).md)
-  Outputs one minus the input
+  Outputs one minus the input.
 - [Normal Map Decode](math/normal-map-decode.md)
   Remaps a normal’s value from [0,1] to [-1,1] by applying 2x-1.
+- [Max3 (RealityKit)](math/max3-(realitykit).md)
+  Outputs the maximum of three incoming values.
+- [Min3 (RealityKit)](math/min3-(realitykit).md)
+  Outputs the minimum of three incoming values.
+- [Fractional (RealityKit)](math/fractional-(realitykit).md)
+  Returns the fractional part of a floating point number.
+- [Inverse Hyperbolic Cos](math/inverse-hyperbolic-cos.md)
+  The inverse hyperbolic cosine of the incoming value in radians.
+- [Inverse Hyperbolic Sin](math/inverse-hyperbolic-sin.md)
+  The inverse hyperbolic sine of the incoming value in radians.
+- [Atan](math/atan.md)
+  The arctangent of the incoming value in radians.
+- [Inverse Hyperbolic Tan](math/inverse-hyperbolic-tan.md)
+  The hyperbolic arc tangent of the incoming value in radians.
+- [Copy Sign (RealityKit)](math/copy-sign-(realitykit).md)
+  Return x with its sign changed to match the sign of y.
+- [Hyperbolic Cos](math/hyperbolic-cos.md)
+  The hyperbolic cosine of the incoming value in radians.
+- [Cos Pi (RealityKit)](math/cos-pi-(realitykit).md)
+  Compute cos(πX).
+- [Exponential 2 (RealityKit)](math/exponential-2-(realitykit).md)
+  Exponential Base 2 of X.
+- [Exponential 10 (RealityKit)](math/exponential-10-(realitykit).md)
+  Exponential Base 10 of X.
+### Subscripts
+- [Distance (RealityKit)](math/distance-(realitykit).md)
+  Returns the distance between X and Y.
+- [Distance Square (RealityKit)](math/distance-square-(realitykit).md)
+  Returns the square of the distance between X and Y.
+- [Fused Multiply-Add (RealityKit)](math/fused-multiply-add-(realitykit).md)
+  Returns (A * B) + C.
+- [Hyperbolic Sin](math/hyperbolic-sin.md)
+  The hyperbolic sine of the incoming value in radians.
+- [Hyperbolic Tan](math/hyperbolic-tan.md)
+  The hyperbolic tangent of the incoming value in radians.
+- [Log 10](math/log-10.md)
+  The log base 10 of the input.
+- [Log 2](math/log-2.md)
+  The log base 2 of the input.
+- [Magnitude Square (RealityKit)](math/magnitude-square-(realitykit).md)
+  Outputs the float magnitude of a vector, squared.
+- [Median3 (RealityKit)](math/median3-(realitykit).md)
+  Returns the middle value of three incoming values.
+- [Modulo (RealityKit)](math/modulo-(realitykit).md)
+  Outputs the remaining fraction after dividing the input by a value and subtracting the integer portion.
+- [Reciprocal Square Root (RealityKit)](math/reciprocal-square-root-(realitykit).md)
+  Computes inverse square root of X.
+- [Sin Pi (RealityKit)](math/sin-pi-(realitykit).md)
+  Compute sin(πX).
+- [Tan Pi (RealityKit)](math/tan-pi-(realitykit).md)
+  Compute tan(πX).
+- [Truncate (RealityKit)](math/truncate-(realitykit).md)
+  Rounds X to integral value using the round-toward-zero rounding mode.
 
 ## See Also
 

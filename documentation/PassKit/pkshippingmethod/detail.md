@@ -1,6 +1,6 @@
 # detail
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property
 
 A user-readable description of the shipping method.

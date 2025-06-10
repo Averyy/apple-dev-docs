@@ -1,6 +1,6 @@
 # init(request:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 initializes a data source with a URL request.

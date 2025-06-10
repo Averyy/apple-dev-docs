@@ -56,9 +56,6 @@ If you configure an [`NSToolbarItem`](nstoolbaritem.md) in Interface Builder wit
   The Customize item, which shows the customization palette.
 - [static let separator: NSToolbarItem.Identifier](nstoolbaritem/identifier/separator.md)
   The Separator item.
-### Type Properties
-- [static let writingToolsItemIdentifier: NSToolbarItem.Identifier](nstoolbaritem/identifier/writingtoolsitemidentifier.md)
-  A standard item that is configured to send -showWritingTools: to the firstResponder when invoked.
 
 ## Relationships
 
@@ -67,6 +64,7 @@ If you configure an [`NSToolbarItem`](nstoolbaritem.md) in Interface Builder wit
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

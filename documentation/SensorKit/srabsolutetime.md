@@ -44,6 +44,7 @@ Although a fetch can query a [`device`](srfetchrequest/device.md) other than a p
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

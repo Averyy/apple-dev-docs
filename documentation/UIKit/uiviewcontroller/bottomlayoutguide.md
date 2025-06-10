@@ -49,8 +49,6 @@ NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings (button, bottomGu
 
 > ❗ **Important**:  If you define Auto Layout constraints in a storyboard file as well as programmatically, it is your responsibility to ensure the constraints do not conflict. If they do conflict, the system may throw a runtime exception.
 
- If you define Auto Layout constraints in a storyboard file as well as programmatically, it is your responsibility to ensure the constraints do not conflict. If they do conflict, the system may throw a runtime exception.
-
 To use a bottom layout guide without using constraints, obtain the guide’s position relative to the bottom bound of the containing view. In the case of using a view controller subclass, obtain the numbers you need as follows:
 
 ```objc

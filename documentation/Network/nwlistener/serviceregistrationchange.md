@@ -28,6 +28,12 @@ enum ServiceRegistrationChange
 - [NWListener.ServiceRegistrationChange.remove(_:)](nwlistener/serviceregistrationchange/remove(_:).md)
   The service is no longer advertising a specific endpoint.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [NSBonjourServices](../BundleResources/Information-Property-List/NSBonjourServices.md)

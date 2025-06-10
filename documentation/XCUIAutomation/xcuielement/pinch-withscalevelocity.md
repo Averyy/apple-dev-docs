@@ -1,6 +1,6 @@
 # pinch(withScale:velocity:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a pinching gesture with two touches.

@@ -31,6 +31,7 @@ protocol UIPopoverPresentationControllerSourceItem : NSObjectProtocol
 - [UIActionSheet](uiactionsheet.md)
 - [UIActivityIndicatorView](uiactivityindicatorview.md)
 - [UIAlertView](uialertview.md)
+- [UIBackgroundExtensionView](uibackgroundextensionview.md)
 - [UIBarButtonItem](uibarbuttonitem.md)
 - [UIButton](uibutton.md)
 - [UICalendarView](uicalendarview.md)

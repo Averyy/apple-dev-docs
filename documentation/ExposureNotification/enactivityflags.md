@@ -20,8 +20,6 @@ struct ENActivityFlags
 
 > ❗ **Important**:  This symbol is available in iOS 12.5, and in iOS 13.6 and later.
 
- This symbol is available in iOS 12.5, and in iOS 13.6 and later.
-
 ## Topics
 
 ### Initializers
@@ -46,17 +44,18 @@ struct ENActivityFlags
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also
 
-- [func activate(completionHandler: ENErrorHandler)](enmanager/activate(completionhandler:).md)
+- [func activate(completionHandler: ((any Error)?) -> Void)](enmanager/activate(completionhandler:).md)
   Prepares the manager for use.
 - [var activityHandler: ENActivityHandler?](enmanager/activityhandler.md)
   The handler that the framework invokes when the app activates a notification manager.
 - [typealias ENActivityHandler](enactivityhandler.md)
   The handler the system invokes to report activities that occurred while the app wasn’t running.
-- [func setExposureNotificationEnabled(Bool, completionHandler: ENErrorHandler)](enmanager/setexposurenotificationenabled(_:completionhandler:).md)
+- [func setExposureNotificationEnabled(Bool, completionHandler: ((any Error)?) -> Void)](enmanager/setexposurenotificationenabled(_:completionhandler:).md)
   Enables or disables exposure notification.
 
 

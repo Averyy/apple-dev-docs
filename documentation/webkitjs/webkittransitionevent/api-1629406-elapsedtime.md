@@ -1,6 +1,6 @@
 # elapsedTime
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The duration of the transition, in seconds, since this event was sent. This value is not affected by the value of the CSS `transition-delay` property.

@@ -1,6 +1,6 @@
 # resultsAllowingPartial(_:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Returns results from a query synchronously.

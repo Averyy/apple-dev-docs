@@ -1,6 +1,6 @@
 # Creating a Source Editor Extension
 
-**Framework**: Xcodekit
+**Framework**: XcodeKit
 
 Add and configure a source editor extension in your Xcode project.
 

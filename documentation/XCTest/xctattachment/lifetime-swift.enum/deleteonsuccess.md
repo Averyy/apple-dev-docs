@@ -1,6 +1,6 @@
 # XCTAttachment.Lifetime.deleteOnSuccess
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 Indicates that the attachment should be deleted if the test passes.

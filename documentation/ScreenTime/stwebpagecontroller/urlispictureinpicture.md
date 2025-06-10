@@ -24,8 +24,6 @@ The default value is [`NO`](https://developer.apple.com/documentation/ObjectiveC
 
 > ❗ **Important**: Set this value to [`NO`](https://developer.apple.com/documentation/ObjectiveC/NO) prior to changing [`url`](stwebpagecontroller/url.md) if the new webpage at that URL ends all currently displayed Picture in Picture windows, and won’t immediately display a new one.
 
-Set this value to [`NO`](https://developer.apple.com/documentation/ObjectiveC/NO) prior to changing [`url`](stwebpagecontroller/url.md) if the new webpage at that URL ends all currently displayed Picture in Picture windows, and won’t immediately display a new one.
-
 ## See Also
 
 - [var suppressUsageRecording: Bool](stwebpagecontroller/suppressusagerecording.md)

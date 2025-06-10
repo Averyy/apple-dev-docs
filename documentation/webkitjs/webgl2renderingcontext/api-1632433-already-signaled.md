@@ -1,6 +1,6 @@
 # ALREADY_SIGNALED
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

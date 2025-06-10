@@ -44,6 +44,7 @@ For example, if an IndexSet is composed of: `[1..<5]` and `[7..<10]` and `[13]` 
 - [Collection](../Swift/Collection.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

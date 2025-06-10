@@ -1,6 +1,6 @@
 # Message
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: struct
 
 An instance for receiving and displaying App Store messages in your app.
@@ -19,8 +19,8 @@ struct Message
 
 ## Mentions
 
-- [Testing win-back offers in the sandbox environment](testing-win-back-offers-in-the-sandbox-environment.md)
 - [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
+- [Testing win-back offers in the sandbox environment](testing-win-back-offers-in-the-sandbox-environment.md)
 - [Choosing a StoreKit API for In-App Purchases](choosing-a-storekit-api-for-in-app-purchases.md)
 - [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
 
@@ -77,6 +77,7 @@ For a code example that uses SwiftUI, see [`DisplayMessageAction`](displaymessag
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -88,4 +89,4 @@ For a code example that uses SwiftUI, see [`DisplayMessageAction`](displaymessag
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/message)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/message)*

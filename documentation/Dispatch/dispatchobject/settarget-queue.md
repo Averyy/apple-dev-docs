@@ -32,8 +32,6 @@ The target queue determines the queue on which the object’s finalizer is invok
 
 > ❗ **Important**:  When setting up target queues, it is a programmer error to create cycles in the dispatch queue hierarchy. In other words, don’t set the target of queue A to queue B and the target of queue B to queue A.
 
- When setting up target queues, it is a programmer error to create cycles in the dispatch queue hierarchy. In other words, don’t set the target of queue A to queue B and the target of queue B to queue A.
-
 ## Parameters
 
 - `queue`: The new target queue for the object. The new queue is retained, and the previous target queue (if any) is released. Specify   if you want the system to provide a queue that is appropriate for the current object.

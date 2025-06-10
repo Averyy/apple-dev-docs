@@ -33,6 +33,11 @@
   The mouse product category.
 - [let GCProductCategoryKeyboard: String](gcproductcategorykeyboard.md)
   The keyboard product category.
+### Spatial categoriess
+- [let GCProductCategorySpatialStylus: String](gcproductcategoryspatialstylus.md)
+  The category for stylus products that support 6DoF tracking on visionOS.
+- [let GCProductCategorySpatialController: String](gcproductcategoryspatialcontroller.md)
+  The category for game controller products that support 6DoF tracking on visionOS.
 
 ## See Also
 

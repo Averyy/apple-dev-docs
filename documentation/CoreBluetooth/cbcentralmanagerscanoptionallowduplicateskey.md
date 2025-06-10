@@ -26,8 +26,6 @@ The value for this key is an [`NSNumber`](https://developer.apple.com/documentat
 
 > ❗ **Important**:  Disabling this filtering can have an adverse effect on battery life; use it only if necessary.
 
- Disabling this filtering can have an adverse effect on battery life; use it only if necessary.
-
 ## See Also
 
 - [let CBCentralManagerScanOptionSolicitedServiceUUIDsKey: String](cbcentralmanagerscanoptionsolicitedserviceuuidskey.md)

@@ -12,6 +12,10 @@ Get a list of review submissions associated with a specific app.
 
 ##### Example Request and Response
 
+## See Also
+
+- [GET /v1/apps/{id}/relationships/reviewSubmissions](get-v1-apps-_id_-relationships-reviewsubmissions.md)
+
 
 ---
 

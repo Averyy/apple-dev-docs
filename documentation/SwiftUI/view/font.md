@@ -24,8 +24,8 @@ func font(_ font: Font?) -> some View
 ## Mentions
 
 - [Configuring views](configuring-views.md)
-- [Aligning views within a stack](aligning-views-within-a-stack.md)
 - [Declaring a custom view](declaring-a-custom-view.md)
+- [Aligning views within a stack](aligning-views-within-a-stack.md)
 
 #### Return Value
 

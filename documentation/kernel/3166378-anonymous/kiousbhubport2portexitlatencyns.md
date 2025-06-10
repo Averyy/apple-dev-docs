@@ -1,0 +1,18 @@
+# kIOUSBHubPort2PortExitLatencyNs
+
+**Framework**: Kernel  
+**Kind**: econst
+
+**Availability**:
+- macOS 10.15+
+
+## Declaration
+
+```swift
+kIOUSBHubPort2PortExitLatencyNs = 1000
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/3166378-anonymous/kiousbhubport2portexitlatencyns)*

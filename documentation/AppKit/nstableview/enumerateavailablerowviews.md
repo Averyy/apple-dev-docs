@@ -1,6 +1,6 @@
 # enumerateAvailableRowViews(_:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Allows the enumeration of all the table rows that are known to the table view.

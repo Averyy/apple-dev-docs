@@ -1,6 +1,6 @@
 # Creating the source for an order
 
-**Framework**: Walletorders
+**Framework**: Wallet Orders
 
 Define an order by creating the directory structure, and adding source files and images.
 
@@ -96,4 +96,4 @@ The system localizes fields that contain dates and times that use standard forma
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WalletOrders/creating-the-source-for-an-order)*
+*[View on Apple Developer](https://developer.apple.com/documentation/walletorders/creating-the-source-for-an-order)*

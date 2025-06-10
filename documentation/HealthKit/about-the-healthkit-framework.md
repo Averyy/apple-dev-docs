@@ -1,6 +1,6 @@
 # About the HealthKit framework
 
-**Framework**: Healthkit
+**Framework**: HealthKit
 
 Learn about the architecture and design of the HealthKit framework.
 
@@ -54,4 +54,4 @@ While the HealthKit framework is available on iPadOS 16 and earlier and on MacOS
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/about-the-healthkit-framework)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/about-the-healthkit-framework)*

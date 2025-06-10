@@ -1,6 +1,6 @@
 # VTCompressionSession
 
-**Framework**: Videotoolbox
+**Framework**: Video Toolbox
 
 An object that compresses video data.
 

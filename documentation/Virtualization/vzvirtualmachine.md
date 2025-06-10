@@ -16,8 +16,8 @@ class VZVirtualMachine
 
 ## Mentions
 
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
 - [Creating and Running a Linux Virtual Machine](creating-and-running-a-linux-virtual-machine.md)
+- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
 
 #### Overview
 
@@ -26,8 +26,6 @@ A [`VZVirtualMachine`](vzvirtualmachine.md) object emulates a complete hardware 
 Create and configure a [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) object with details about how you want to configure your VM, and use that object to create the [`VZVirtualMachine`](vzvirtualmachine.md) object. After creating the VM, call the [`start(completionHandler:)`](vzvirtualmachine/start(completionhandler:).md) method (Swift)  or the [`start()`](vzvirtualmachine/start().md) method (Objective-C) to start the VM and boot the guest operating system.
 
 > ❗ **Important**:  The creation of a virtual machine requires your app to have the [`com.apple.security.virtualization`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.virtualization) entitlement.
-
- The creation of a virtual machine requires your app to have the [`com.apple.security.virtualization`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.virtualization) entitlement.
 
 ## Topics
 
@@ -94,6 +92,8 @@ Create and configure a [`VZVirtualMachineConfiguration`](vzvirtualmachineconfigu
   A Boolean value that indicates whether you can stop the VM.
 - [var canRequestStop: Bool](vzvirtualmachine/canrequeststop.md)
   A Boolean value that indicates whether you can ask the guest operating system to stop running.
+- [var queue: dispatch_queue_t](vzvirtualmachine/queue.md)
+  The queue associated with this virtual machine.
 ### Saving and restoring the VM state
 - [func saveMachineStateTo(url: URL, completionHandler: ((any Error)?) -> Void)](vzvirtualmachine/savemachinestateto(url:completionhandler:).md)
   Saves the state of a VM.

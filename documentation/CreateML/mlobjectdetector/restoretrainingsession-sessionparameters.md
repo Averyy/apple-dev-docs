@@ -22,7 +22,9 @@ An [`MLTrainingSession`](mltrainingsession.md) that represents the object-detect
 
 Use [`resume(_:)`](mlobjectdetector/resume(_:).md) to start the [`MLTrainingSession`](mltrainingsession.md) instance you get from this method.
 
-- sessionParameters: The [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you used to create the training session with [`makeTrainingSession(trainingData:annotationType:parameters:sessionParameters:)`](mlobjectdetector/maketrainingsession(trainingdata:annotationtype:parameters:sessionparameters:).md).
+## Parameters
+
+- `sessionParameters`: The   instance you used to create the training session   with  .
 
 ## See Also
 

@@ -36,6 +36,7 @@ struct LockedCameraCaptureUIScene<Content> where Content : View
 - [AppExtensionScene](../ExtensionKit/AppExtensionScene.md)
 - [LockedCameraCaptureExtensionScene](lockedcameracaptureextensionscene.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

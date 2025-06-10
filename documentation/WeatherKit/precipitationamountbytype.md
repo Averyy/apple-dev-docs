@@ -1,6 +1,6 @@
 # PrecipitationAmountByType
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure that provides a breakdown of amounts of all forms of precipitation that is expected to occur over a period of time.
@@ -53,6 +53,8 @@ struct PrecipitationAmountByType
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

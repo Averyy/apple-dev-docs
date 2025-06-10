@@ -1,6 +1,6 @@
 # handler
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An optional handler that performs custom evaluation when `predicate` evaluates as `true`.

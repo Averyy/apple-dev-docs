@@ -22,7 +22,7 @@ var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm? { get set }
 
 #### Discussion
 
-The supported constants are defined in Time Pitch Algorithm Settings. An [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) is raised if this property is set to a value other than the defined constants.
+The supported constants are defined in Time Pitch Algorithm Settings. An [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) is raised if this property is set to a value other than the defined constants.
 
 ## See Also
 

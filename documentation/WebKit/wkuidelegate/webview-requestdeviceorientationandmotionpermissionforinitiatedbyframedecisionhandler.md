@@ -1,6 +1,6 @@
 # webView(_:requestDeviceOrientationAndMotionPermissionFor:initiatedByFrame:decisionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Determines whether a web resource, which the security origin object describes, can access the device’s orientation and motion.

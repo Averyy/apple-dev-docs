@@ -32,8 +32,6 @@ You can assign only one record to the asset that this method returns. If you wan
 
 > ❗ **Important**:  CloudKit saves only the contents of the file and doesn’t save the filename or any file-related metadata. To preserve the filename or any file-related metadata, save that data separately in the record.
 
- CloudKit saves only the contents of the file and doesn’t save the filename or any file-related metadata. To preserve the filename or any file-related metadata, save that data separately in the record.
-
 ## Parameters
 
 - `fileURL`: The URL of the file that you want to store in CloudKit. The URL must be a file URL, and must not be  .

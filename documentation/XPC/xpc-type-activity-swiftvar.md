@@ -1,6 +1,6 @@
 # XPC_TYPE_ACTIVITY
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A type that represents the XPC activity object.

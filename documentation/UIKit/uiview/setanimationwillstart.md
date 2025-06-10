@@ -1,6 +1,6 @@
 # setAnimationWillStart(_:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Sets the message to send to the animation delegate when the animation starts.

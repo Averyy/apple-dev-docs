@@ -54,6 +54,20 @@ If cancellation occurs while the operation is running, the cancellation handler 
 
 Cancellation handlers which acquire locks must take care to avoid deadlock. The cancellation handler may be invoked while holding internal locks associated with the task or other tasks.  Other operations on the task, such as resuming a continuation, may acquire these same internal locks. Therefore, if a cancellation handler must acquire a lock, other code should not cancel tasks or resume continuations while holding that lock.
 
+## See Also
+
+- [struct CancellationError](cancellationerror.md)
+  An error that indicates a task was canceled.
+- [func cancel()](task/cancel.md)
+  Cancels this task.
+- [var isCancelled: Bool](task/iscancelled-swift.property.md)
+  A Boolean value that indicates whether the task should stop executing.
+- [static var isCancelled: Bool](task/iscancelled-swift.type.property.md)
+  A Boolean value that indicates whether the task should stop executing.
+- [static func checkCancellation() throws](task/checkcancellation.md)
+  Throws an error if the task was canceled.
+- [func withTaskCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](withtaskcancellationhandler(handler:operation:).md)
+
 
 ---
 

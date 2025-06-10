@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to issue declarations to a device.
+The command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 
 **Availability**:
 - iOS 15.0+
@@ -12,8 +12,6 @@ The command to issue declarations to a device.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,14 +25,14 @@ object DeclarativeManagementCommand
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object DeclarativeManagementCommand.Command](declarativemanagementcommand/command-data.dictionary.md)
-  The command to enable the declarative management engine on a device.
+  The command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 
 ## See Also
 
 - [object DeclarativeManagementResponse](declarativemanagementresponse.md)
-  A response from the device after it processes the command to issue declarations to a device.
+  A response from the device after it processes the command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 
 
 ---

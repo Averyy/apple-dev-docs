@@ -1,6 +1,6 @@
 # importGeoJSON
 
-**Framework**: Mapkitjs  
+**Framework**: MapKit JS  
 **Kind**: method
 
 Converts imported GeoJSON data to MapKit JS items.
@@ -55,4 +55,4 @@ MapKit JS invokes this callback with two arguments, `error` on failure and `resu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkit/importgeojson)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit/importgeojson)*

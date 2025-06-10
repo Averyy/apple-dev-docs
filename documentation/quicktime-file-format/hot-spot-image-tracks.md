@@ -8,8 +8,6 @@ Identify hot spots in a panorama with a hot spot image track.
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
-VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
-
 When a panorama contains hot spots, the movie file contains a hot spot image track, a video track that contains a parallel panorama, with the hot spots designated by regions filled with color. Each diced frame of the hot spot panoramic image must be compressed with a lossless compressor (such as QuickTime’s graphics compressor). The dimensions of the hot spot panoramic image are usually the same as those of the image track’s panoramic image, but this is not required. The dimensions must, however, have the same aspect ratio as the image track’s panoramic image. A hot spot image track should be 8 bits deep.
 
 ## Topics

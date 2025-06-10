@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionInvalidationReason
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 The reasons why a session can become invalid.
@@ -44,6 +44,7 @@ Sessions become invalid when they encounter an error, or when they stop running.
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

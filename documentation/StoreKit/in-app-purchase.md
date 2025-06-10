@@ -1,6 +1,6 @@
 # In-App Purchase
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Offer content and services in your app across Apple platforms using a Swift-based interface.
 
@@ -153,7 +153,14 @@ To support a store in your app, implement the following functionality:
 - [Original API for In-App Purchase](original-api-for-in-app-purchase.md)
   Offer additional content and services in your app using the Original In-App Purchase API.
 
+## See Also
+
+- [Understanding StoreKit workflows](understanding-storekit-workflows.md)
+  Implement an in-app store with several product types, using StoreKit views.
+- [Getting started with In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
+  Set up an in-app store using SwiftUI and StoreKit views.
+
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/in-app-purchase)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/in-app-purchase)*

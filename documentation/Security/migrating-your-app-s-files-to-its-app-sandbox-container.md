@@ -37,8 +37,6 @@ If your app needs symbolic links to files or folders outside the container, add 
 
 > ❗ **Important**:  Without the appropriate permissions, your app can’t access files and folders outside of its container, even if there’s a symbolic link inside the container. You may need to apply a temporary entitlement to your app to gain the correct access.
 
- Without the appropriate permissions, your app can’t access files and folders outside of its container, even if there’s a symbolic link inside the container. You may need to apply a temporary entitlement to your app to gain the correct access.
-
 ##### Revert the Container Migration for Testing
 
 To test that your app’s container migration works correctly, delete the following files and folders:

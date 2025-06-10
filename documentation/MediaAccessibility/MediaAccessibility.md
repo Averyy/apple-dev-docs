@@ -27,7 +27,12 @@ People can specify a variety of preferences about media content such as videos, 
 - [Music Haptics](music-haptics.md)
   Play haptic tracks along with known music tracks.
 ### Functions
+- [func MACaptionAppearanceCopyActiveProfileID() -> CFString](macaptionappearancecopyactiveprofileid().md)
+- [func MACaptionAppearanceCopyProfileIDs() -> CFArray](macaptionappearancecopyprofileids().md)
+- [func MACaptionAppearanceCopyProfileName(CFString) -> CFString](macaptionappearancecopyprofilename(_:).md)
+- [func MACaptionAppearanceExecuteBlockForProfileID(CFString, () -> Void)](macaptionappearanceexecuteblockforprofileid(_:_:).md)
 - [func MACaptionAppearanceIsCustomized(MACaptionAppearanceDomain) -> Bool](macaptionappearanceiscustomized(_:).md)
+- [func MACaptionAppearanceSetActiveProfileID(CFString)](macaptionappearancesetactiveprofileid(_:).md)
 
 
 ---

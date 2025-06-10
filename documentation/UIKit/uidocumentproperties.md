@@ -1,6 +1,6 @@
 # UIDocumentProperties
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 Information that UIKit uses to generate a document header for a navigation item’s title menu.

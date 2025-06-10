@@ -23,7 +23,7 @@ var canStartPictureInPictureAutomaticallyFromInline: Bool { get set }
 
 #### Discussion
 
-Only set this value to [`true`](https://developer.apple.com/documentation/swift/true) for content that you intend to be the user’s primary focus.
+Only set this value to `true` for content that you intend to be the user’s primary focus.
 
 ## See Also
 

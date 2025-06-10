@@ -10,8 +10,8 @@ Get the alternative distribution keys for a specific app.
 
 ## Mentions
 
-- [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
 - [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
+- [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
 - [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
 
 #### Discussion
@@ -20,8 +20,19 @@ Get the alternative distribution keys for a specific app.
 
 ## See Also
 
-- [Read the marketplace search detail URL](get-v1-apps-_id_-marketplacesearchdetail.md)
-  Get search detail URL for the alternative marketplace.
+- [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
+  Manage keys you use to sign JSON web tokens and connect marketplaces with apps.
+- [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
+  Manage keys you use to sign JSON web tokens (JWTs).
+- [Add an alternative distribution key](post-v1-alternativedistributionkeys.md)
+  Add an alternative distribution key for your alternative marketplace app or web distribution.
+- [List alternative distribution keys](get-v1-alternativedistributionkeys.md)
+  List the alternative distribution key for your account.
+- [Read alternative distribution key information](get-v1-alternativedistributionkeys-_id_.md)
+  Read the public key information for a specific alternative distribution key.
+- [GET /v1/apps/{id}/relationships/alternativeDistributionKey](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
+- [Remove an alternative distribution key](delete-v1-alternativedistributionkeys-_id_.md)
+  Remove an alternative distribution key from your account.
 
 
 ---

@@ -56,6 +56,9 @@ attrStr.link = URL(string: "http://example.com")
   Attribute scopes that AppKit defines.
 ### Structures
 - [AttributeScopes.AccessibilityAttributes](attributescopes/accessibilityattributes.md)
+- [AttributeScopes.CoreTextAttributes](attributescopes/coretextattributes.md)
+  A namespace for attributes defined by CoreText.
+- [AttributeScopes.SpeechAttributes](attributescopes/speechattributes.md)
 ### Instance Properties
 - [var accessibility: AttributeScopes.AccessibilityAttributes.Type](attributescopes/accessibility.md)
 

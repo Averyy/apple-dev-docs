@@ -1,6 +1,6 @@
 # XCTAssertFalse(_:_:file:line:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: func
 
 Asserts that an expression is false.

@@ -1,6 +1,6 @@
 # Confirming the Effective TV and Movie Ratings
 
-**Framework**: Managedsettings
+**Framework**: ManagedSettings
 
 Read the media rating on a device and determine what media to display on your app.
 
@@ -76,4 +76,4 @@ self.movieRatingCancellable = store.$effectiveMaximumMovieRating.sink { effectiv
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ManagedSettings/readingmedia)*
+*[View on Apple Developer](https://developer.apple.com/documentation/managedsettings/readingmedia)*

@@ -26,7 +26,7 @@ When your app doesn’t show the changes the other peer exported to the CloudKit
 
 > **Note**: `NSPersistentCloudKitContainer` may import data while an app is launching. If relaunching your app causes synchronization, it may be that the system intentionally deferred the imports in the previous launch session. See [`Understand the import`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer#Understand-the-import.md) for more information.
 
-`NSPersistentCloudKitContainer` synchronizes data when appropriate. To know the state of the synchronization, observe [`eventChangedNotification`](https://developer.apple.com/documentation/CoreData/NSPersistentCloudKitContainer/eventChangedNotification). To get notified that `NSPersistentCloudKitContainer` imported data to the store, observe [`NSPersistentStoreRemoteChange`](https://developer.apple.com/documentation/foundation/nsnotification/name/3180044-nspersistentstoreremotechange).
+`NSPersistentCloudKitContainer` synchronizes data when appropriate. To know the state of the synchronization, observe [`eventChangedNotification`](https://developer.apple.com/documentation/CoreData/NSPersistentCloudKitContainer/eventChangedNotification). To get notified that `NSPersistentCloudKitContainer` imported data to the store, observe [`NSPersistentStoreRemoteChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSPersistentStoreRemoteChange).
 
 To keep your app’s UI up to date, consume the store’s persistent history when you get an `NSPersistentStoreRemoteChange` notification, merge the relevant changes to your [`viewContext`](https://developer.apple.com/documentation/CoreData/NSPersistentContainer/viewContext), and then refresh your app’s UI. Alternatively, [`reset()`](https://developer.apple.com/documentation/CoreData/NSManagedObjectContext/reset()) your `viewContext` to clear the context cache, fetch the data, and then refresh your app’s UI.
 
@@ -35,7 +35,7 @@ For a sample that demonstrates how to observe the notifications and process the 
 When working with a CloudKit public database, `NSPersistentCloudKitContainer` doesn’t automatically synchronize object deletions because the database doesn’t support deletion tracking. To avoid presenting objects deleted by the other peer, consider the following strategy:
 
 1. Add a new attribute to your Core Data entities to store the date when an object is removed.
-2. When deleting an object, set its removal date to [`now`](https://developer.apple.com/documentation/foundation/date/3766590-now), rather than really removing the object from the store. This converts the `delete` to an `update`, which can be synchronized across devices.
+2. When deleting an object, set its removal date to [`now`](https://developer.apple.com/documentation/Foundation/Date/now), rather than really removing the object from the store. This converts the `delete` to an `update`, which can be synchronized across devices.
 3. In your app’s UI, only present the objects whose removal date is `nil`.
 4. If necessary, remove the objects whose removal date is sometime after the last successful export. The  needs to be long enough for the objects to be synchronized, which can be several months for apps that users use on a regular basis.
 
@@ -219,4 +219,4 @@ If your issue isn’t covered in the technote, consider figuring out what happen
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3164-debugging-the-synchronization-of-nspersistentcloudkitcontainer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3164-debugging-the-synchronization-of-nspersistentcloudkitcontainer)*

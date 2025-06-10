@@ -5,6 +5,13 @@
 
 Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `Int`.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift

@@ -35,6 +35,11 @@ class ASAccessory
   The current authorization state of the accessory.
 - [ASAccessory.AccessoryState](asaccessory/accessorystate.md)
   An enumeration of possible authorization states of an accessory.
+### Working with Wi-Fi Aware
+- [var wifiAwarePairedDeviceID: ASAccessory.WiFiAwarePairedDeviceID](asaccessory/wifiawarepaireddeviceid-swift.property.md)
+  The accessory’s Wi-Fi Aware Pairing Identifier.
+- [ASAccessory.WiFiAwarePairedDeviceID](asaccessory/wifiawarepaireddeviceid-swift.typealias.md)
+  The type used for an accessory’s Wi-Fi Aware Pairing Identifier.
 
 ## Relationships
 
@@ -48,6 +53,7 @@ class ASAccessory
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -18,7 +18,7 @@ The color used to stroke the shape.
 
 ```swift
 @MainActor
-var strokeColor: UIColor { get set }
+var strokeColor: NSColor { get set }
 ```
 
 ## Mentions

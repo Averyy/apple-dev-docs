@@ -1,6 +1,6 @@
 # XCTExpectFailure(_:options:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: func
 
 Instructs the test to expect a failure in an upcoming assertion, with options to customize expected failure checking and handling.

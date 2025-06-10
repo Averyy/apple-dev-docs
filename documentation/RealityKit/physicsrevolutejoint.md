@@ -10,6 +10,7 @@ A joint that allows one degree of rotational freedom between two entity pins, si
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -24,30 +25,14 @@ struct PhysicsRevoluteJoint
 
 > 💡 **Tip**: Pass an orientation when creating the [`GeometricPin`](geometricpin.md) instances to change the axis of rotation.
 
-Pass an orientation when creating the [`GeometricPin`](geometricpin.md) instances to change the axis of rotation.
-
 ## Topics
 
-### Operators
-- [static func == (PhysicsRevoluteJoint, PhysicsRevoluteJoint) -> Bool](physicsrevolutejoint/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(pin0: GeometricPin, pin1: GeometricPin, angularLimit: ClosedRange<Float>?, checksForInternalCollisions: Bool)](physicsrevolutejoint/init(pin0:pin1:angularlimit:checksforinternalcollisions:).md)
   Creates a new revolute joint.
 ### Instance Properties
 - [var angularLimit: ClosedRange<Float>?](physicsrevolutejoint/angularlimit.md)
   A limit of the rotational freedom between the pins around the x-axis.
-- [var checksForInternalCollisions: Bool](physicsrevolutejoint/checksforinternalcollisions.md)
-  A Boolean that indicates whether the joint checks and reports collisions between the two entity instances.
-- [var isActive: Bool](physicsrevolutejoint/isactive.md)
-  A Boolean that indicates whether the joint is active.
-- [var pin0: GeometricPin](physicsrevolutejoint/pin0.md)
-  The pin that defines a local position and orientation on the first entity.
-- [var pin1: GeometricPin](physicsrevolutejoint/pin1.md)
-  The pin that defines a local position and orientation on the second entity.
-### Default Implementations
-- [Equatable Implementations](physicsrevolutejoint/equatable-implementations.md)
-- [PhysicsJoint Implementations](physicsrevolutejoint/physicsjoint-implementations.md)
 
 ## Relationships
 

@@ -5,6 +5,13 @@
 
 Creates a set containing the elements of the given array literal.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift
@@ -17,7 +24,7 @@ Do not call this initializer directly. It is used by the compiler when you use a
 
 Here, a set of strings is created from an array literal holding only strings:
 
-```swift
+```None
 let ingredients: Set = ["cocoa beans", "sugar", "cocoa butter", "salt"]
 if ingredients.isSuperset(of: ["sugar", "salt"]) {
     print("Whatever it is, it's bound to be delicious!")

@@ -31,6 +31,8 @@ Each [`JournalingSuggestion.Workout`](journalingsuggestion/workout.md) contains 
   The range of time in which the workout takes place.
 - [var distance: HKQuantity?](journalingsuggestion/workout/details-swift.struct/distance.md)
   The distance that the workout spans.
+- [var localizedName: String?](journalingsuggestion/workout/details-swift.struct/localizedname.md)
+  Localized name of workout, like “Indoor Pickleball”.
 ### Type Aliases
 - [JournalingSuggestion.Workout.Details.JournalingSuggestionContent](journalingsuggestion/workout/details-swift.struct/journalingsuggestioncontent.md)
   Represents a generic content type for journaling suggestions.

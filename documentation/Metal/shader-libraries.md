@@ -25,6 +25,74 @@ Binary archives are precompiled static libraries for specific GPU architectures 
   Create a single Metal library containing reusable code to reduce library size and avoid repeated shader compilation at runtime.
 - [Metal Binary Archives](metal-binary-archives.md)
   Distribute precompiled GPU-specific binaries as part of your app to avoid runtime compilation of Metal shaders.
+- [protocol MTL4Compiler](mtl4compiler.md)
+  A abstraction for a pipeline state and shader function compiler.
+- [class MTL4CompilerDescriptor](mtl4compilerdescriptor.md)
+  Groups together properties for creating a compiler context.
+- [class MTL4CompilerTaskOptions](mtl4compilertaskoptions.md)
+- [enum MTL4CompilerTaskStatus](mtl4compilertaskstatus.md)
+  Represents the status of a compiler task.
+- [protocol MTL4Archive](mtl4archive.md)
+  A read-only container that stores pipeline states from a shader compiler.
+- [protocol MTL4BinaryFunction](mtl4binaryfunction.md)
+  Represents a binary function.
+- [class MTL4BinaryFunctionDescriptor](mtl4binaryfunctiondescriptor.md)
+  Base interface for other function-derived interfaces.
+- [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
+  Options for configuring the creation of binary functions.
+- [struct MTL4BinaryFunctionOptions](mtl4binaryfunctionoptions.md)
+  Options for configuring the creation of binary functions.
+- [class MTL4BinaryFunctionReflection](mtl4binaryfunctionreflection.md)
+  Represents reflection information for a binary function.
+- [class MTL4PipelineStageDynamicLinkingDescriptor](mtl4pipelinestagedynamiclinkingdescriptor.md)
+  Groups together properties to drive the dynamic linking process of a pipeline stage.
+### Pipeline Compilation
+- [enum MTL4BlendState](mtl4blendstate.md)
+  Enumeration for controlling the blend state of a pipeline state object.
+- [class MTL4FunctionDescriptor](mtl4functiondescriptor.md)
+  Base interface for describing a Metal 4 shader function.
+- [enum MTL4IndirectCommandBufferSupportState](mtl4indirectcommandbuffersupportstate.md)
+  Enumeration for controlling support for [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md).
+- [class MTL4LibraryDescriptor](mtl4librarydescriptor.md)
+  Serves as the base descriptor for creating a Metal library.
+- [class MTL4LibraryFunctionDescriptor](mtl4libraryfunctiondescriptor.md)
+  Describes a shader function from a Metal library.
+- [class MTL4LinkedFunctions](mtl4linkedfunctions.md)
+  Groups together functions to link.
+- [enum MTL4LogicalToPhysicalColorAttachmentMappingState](mtl4logicaltophysicalcolorattachmentmappingstate.md)
+  Enumerates possible behaviors of how a pipeline maps its logical outputs to its color attachments.
+- [typealias MTL4NewBinaryFunctionCompletionHandler](mtl4newbinaryfunctioncompletionhandler.md)
+  Provides a signature for a callback block that Metal calls when the compiler finishes a build task for a binary function.
+- [typealias MTL4NewMachineLearningPipelineStateCompletionHandler](mtl4newmachinelearningpipelinestatecompletionhandler.md)
+  Provides a signature for a callback block that Metal calls when the compiler finishes a build task for a machine learning pipeline state.
+- [struct MTL4ShaderReflection](mtl4shaderreflection.md)
+  Option mask for requesting reflection information at pipeline build time.
+- [class MTL4SpecializedFunctionDescriptor](mtl4specializedfunctiondescriptor.md)
+  Groups together properties to configure and create a specialized function by passing it to a factory method.
+- [enum MTL4AlphaToCoverageState](mtl4alphatocoveragestate.md)
+  Enumeration for controlling alpha-to-coverage state of a pipeline state object.
+- [enum MTL4AlphaToOneState](mtl4alphatoonestate.md)
+  Enumeration for controlling alpha-to-one state of a pipeline state object.
+- [class MTL4StaticLinkingDescriptor](mtl4staticlinkingdescriptor.md)
+  Groups together properties to drive a static linking process.
+- [class MTL4StitchedFunctionDescriptor](mtl4stitchedfunctiondescriptor.md)
+  Groups together properties that describe a shader function suitable for stitching.
+- [class MTLFunctionReflection](mtlfunctionreflection.md)
+  Represents a reflection object containing information about a function in a Metal library.
+- [typealias MTLNewDynamicLibraryCompletionHandler](mtlnewdynamiclibrarycompletionhandler.md)
+### Pipeline Harvesting
+- [protocol MTL4PipelineDataSetSerializer](mtl4pipelinedatasetserializer.md)
+  A fast-addition container for collecting data during pipeline state creation.
+- [struct MTL4PipelineDataSetSerializerConfiguration](mtl4pipelinedatasetserializerconfiguration.md)
+  Configuration options for pipeline dataset serializer objects.
+- [struct MTL4PipelineDataSetSerializerConfiguration](mtl4pipelinedatasetserializerconfiguration.md)
+  Configuration options for pipeline dataset serializer objects.
+- [class MTL4PipelineDataSetSerializerDescriptor](mtl4pipelinedatasetserializerdescriptor.md)
+  Groups together properties to create a pipeline data set serializer.
+- [class MTL4PipelineDescriptor](mtl4pipelinedescriptor.md)
+  Base type for descriptors you use for building pipeline state objects.
+- [class MTL4PipelineOptions](mtl4pipelineoptions.md)
+  Provides options controlling how to compile a pipeline state.
 ### Shader Library Management
 - [protocol MTLLibrary](mtllibrary.md)
   A collection of Metal shader functions.
@@ -139,12 +207,8 @@ Binary archives are precompiled static libraries for specific GPU architectures 
 
 ## See Also
 
-- [Stepping through code and inspecting variables to isolate bugs](../Xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs.md)
-  Find the cause of your bugs by watching variables change as you step through your source code in the debugger.
-- [Optimizing GPU performance](../Xcode/Optimizing-GPU-performance.md)
-  Find and address performance bottlenecks using the Metal debugger.
-- [Logging shader debug messages](logging-shader-debug-messages.md)
-  Print debugging messages that a shader generates using shader logging.
+- [Using the Metal 4 compilation API](using-the-metal-4-compilation-api.md)
+  Control when and how you compile an app’s shaders.
 - [Using Function Specialization to Build Pipeline Variants](using-function-specialization-to-build-pipeline-variants.md)
   Create pipelines for different levels of detail from a common shader source.
 

@@ -1,6 +1,6 @@
 # AVCaptureEventInteraction
 
-**Framework**: Avkit  
+**Framework**: AVKit  
 **Kind**: class
 
 An object that registers handlers to respond to capture events from system hardware buttons.
@@ -57,7 +57,7 @@ class CameraViewController: UIViewController {
 
 The event handler queries the capture event to determine its phase, and when the interaction ends, captures a photo.
 
-> ❗ **Important**:  You can only use this API for capture use cases. The system sends capture events only to apps that actively use the camera. Backgrounded capture apps, and apps not performing capture, don’t receive events. Adopting this API overrides default hardware button behavior, so apps must always respond appropriately to any events received. Failing to handle events results in a nonfunctional button that provides a poor user experience. If your app is temporarily unable to handle events, disable the interaction by setting its [`isEnabled`](avcaptureeventinteraction/isenabled.md) property to [`false`](https://developer.apple.com/documentation/swift/false), which restores the system button behavior.
+> ❗ **Important**:  You can only use this API for capture use cases. The system sends capture events only to apps that actively use the camera. Backgrounded capture apps, and apps not performing capture, don’t receive events. Adopting this API overrides default hardware button behavior, so apps must always respond appropriately to any events received. Failing to handle events results in a nonfunctional button that provides a poor user experience. If your app is temporarily unable to handle events, disable the interaction by setting its [`isEnabled`](avcaptureeventinteraction/isenabled.md) property to `false`, which restores the system button behavior.
 
 ## Topics
 
@@ -69,6 +69,9 @@ The event handler queries the capture event to determine its phase, and when the
 ### Inspecting the interaction
 - [var isEnabled: Bool](avcaptureeventinteraction/isenabled.md)
   A Boolean value that indicates whether this capture event interaction is in an enabled state.
+### Type Properties
+- [class var defaultCaptureSoundDisabled: Bool](avcaptureeventinteraction/defaultcapturesounddisabled.md)
+  A boolean value indicating whether or not the default sound is disabled.
 
 ## Relationships
 
@@ -94,8 +97,12 @@ The event handler queries the capture event to determine its phase, and when the
   A protocol that defines the methods to implement to respond to player view controller events.
 - [class AVCaptureEvent](avcaptureevent.md)
   An object that describes a user interaction with a system hardware button.
+- [class AVCaptureEventSound](avcaptureeventsound.md)
+  A sound object for a capture event.
+- [class AVInputPickerInteraction](avinputpickerinteraction.md)
+  Use `AVInputPickerInteraction` to present an input picker.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVKit/avcaptureeventinteraction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avkit/avcaptureeventinteraction)*

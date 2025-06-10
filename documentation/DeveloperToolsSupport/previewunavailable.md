@@ -36,6 +36,7 @@ This type supports the expansion of preview macros. You don’t use it directly.
 ### Conforms To
 - [Error](../Swift/Error.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

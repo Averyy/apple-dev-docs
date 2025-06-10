@@ -1,6 +1,6 @@
 # radius
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: property
 
 The agent’s radius.

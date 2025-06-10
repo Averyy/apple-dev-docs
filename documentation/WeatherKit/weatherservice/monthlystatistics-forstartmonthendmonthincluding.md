@@ -1,6 +1,6 @@
 # monthlyStatistics(for:startMonth:endMonth:including:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns monthly weather statistics for the requested location, for each month from the start month to the end month, inclusively.

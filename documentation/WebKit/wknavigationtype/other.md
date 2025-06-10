@@ -1,6 +1,6 @@
 # WKNavigationType.other
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A navigation request that originates for some other reason.

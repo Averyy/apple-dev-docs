@@ -77,6 +77,8 @@ To maximize security, your app never gains access to any of the underlying authe
 - [var kLAAccessControlOperationUseKeyKeyExchange: Int32](klaaccesscontroloperationusekeykeyexchange.md)
 - [var kLAAccessControlOperationUseKeySign: Int32](klaaccesscontroloperationusekeysign.md)
 - [var kLACompanionTypeMac: Int32](klacompaniontypemac.md)
+- [var kLACompanionTypeNone: Int32](klacompaniontypenone.md)
+- [var kLACompanionTypeVision: Int32](klacompaniontypevision.md)
 - [var kLACompanionTypeWatch: Int32](klacompaniontypewatch.md)
 - [var kLAErrorCompanionNotAvailable: Int32](klaerrorcompanionnotavailable.md)
 - [var kLAPolicyDeviceOwnerAuthenticationWithBiometricsOrCompanion: Int32](klapolicydeviceownerauthenticationwithbiometricsorcompanion.md)

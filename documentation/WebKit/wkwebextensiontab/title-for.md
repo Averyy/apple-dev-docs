@@ -1,6 +1,6 @@
 # title(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the title of the tab is needed.

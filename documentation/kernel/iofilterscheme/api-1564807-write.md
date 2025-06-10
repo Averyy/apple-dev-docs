@@ -1,0 +1,18 @@
+# write
+
+**Framework**: Kernel  
+**Kind**: instm
+
+**Availability**:
+- macOS 10.11.4+
+
+## Declaration
+
+```swift
+virtual void write(IOService *client, UInt64 byteStart, IOMemoryDescriptor *buffer, IOStorageAttributes *attributes, IOStorageCompletion *completion);
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/iofilterscheme/1564807-write)*

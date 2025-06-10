@@ -8,14 +8,27 @@ A button style that applies a light background with dark text along with a dark 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
-- visionOS 1.0+
+- Mac Catalyst ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
 static let lightOutline: ShortcutsLinkStyle
 ```
+
+## See Also
+
+- [static let automatic: ShortcutsLinkStyle](shortcutslinkstyle/automatic.md)
+  The default button style, based on the current color scheme.
+- [static let automaticOutline: ShortcutsLinkStyle](shortcutslinkstyle/automaticoutline.md)
+  The default button style with an outline, based on the current color scheme.
+- [static let dark: ShortcutsLinkStyle](shortcutslinkstyle/dark.md)
+  A button style that applies a dark background with light text.
+- [static let darkOutline: ShortcutsLinkStyle](shortcutslinkstyle/darkoutline.md)
+  A button style that applies a dark background with light text along with a light outline.
+- [static let light: ShortcutsLinkStyle](shortcutslinkstyle/light.md)
+  A button style that applies a light background with dark text.
 
 
 ---

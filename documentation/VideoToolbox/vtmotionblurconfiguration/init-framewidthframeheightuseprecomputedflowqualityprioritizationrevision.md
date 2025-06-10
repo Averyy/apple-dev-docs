@@ -1,11 +1,14 @@
 # init(frameWidth:frameHeight:usePrecomputedFlow:qualityPrioritization:revision:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: init
 
 Creates a new motion blur configuration with specified flow width and height.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
 
 ## Declaration

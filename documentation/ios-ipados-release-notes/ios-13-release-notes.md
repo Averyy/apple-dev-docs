@@ -10,8 +10,6 @@ The iOS 13 SDK provides support for developing apps for iPhone devices running i
 
 > ⚠️ **Warning**: If your watch is running watchOS 6 beta, you must update it to watchOS 6 beta 2 or later before updating to iOS 13 beta 7 or later, otherwise your watch will no longer be able to connect to your phone. (52854192)
 
-If your watch is running watchOS 6 beta, you must update it to watchOS 6 beta 2 or later before updating to iOS 13 beta 7 or later, otherwise your watch will no longer be able to connect to your phone. (52854192)
-
 ##### General
 
 ###### Known Issues
@@ -75,10 +73,10 @@ If your watch is running watchOS 6 beta, you must update it to watchOS 6 beta 2 
 
 - The [`init(imageURL:options:)`](https://developer.apple.com/documentation/coreimage/cifilter/1438096-init) and [`init(imageData:options:)`](https://developer.apple.com/documentation/coreimage/cifilter/1437879-init) initializers no longer support RAW version 5 and earlier. Version 6 and later remain supported. (50911303)
 - Added new APIs for instantiating and modifying the built-in Core Image filters.
-- The [`CICoreMLModel`](https://developer.apple.com/documentation/coreimage/cicoremlmodel) filter is enhanced to support models with an input or output of type [`MLFeatureType.multiArray`](https://developer.apple.com/documentation/CoreML/MLFeatureType/multiArray).
-- Metal [`CIKernel`](https://developer.apple.com/documentation/coreimage/cikernel) instances support arguments with arbitrarily structured data.
-- Metal [`CIKernel`](https://developer.apple.com/documentation/coreimage/cikernel) instances support returning a group of 2 × 2 pixels.
-- The integer values of [`CIFormat`](https://developer.apple.com/documentation/coreimage/ciformat) symbols, such as [`ARGB8`](https://developer.apple.com/documentation/coreimage/ciformat/1437883-argb8), have changed to a new set of values that are consistent across platforms. The former values remain supported for backward compatibility; however, you should avoid dependancies on specific numerical values.
+- The [`CICoreMLModel`](https://developer.apple.com/documentation/CoreImage/CICoreMLModel) filter is enhanced to support models with an input or output of type [`MLFeatureType.multiArray`](https://developer.apple.com/documentation/CoreML/MLFeatureType/multiArray).
+- Metal [`CIKernel`](https://developer.apple.com/documentation/CoreImage/CIKernel) instances support arguments with arbitrarily structured data.
+- Metal [`CIKernel`](https://developer.apple.com/documentation/CoreImage/CIKernel) instances support returning a group of 2 × 2 pixels.
+- The integer values of [`CIFormat`](https://developer.apple.com/documentation/CoreImage/CIFormat) symbols, such as [`ARGB8`](https://developer.apple.com/documentation/coreimage/ciformat/1437883-argb8), have changed to a new set of values that are consistent across platforms. The former values remain supported for backward compatibility; however, you should avoid dependancies on specific numerical values.
 
 ##### Find My
 
@@ -129,18 +127,18 @@ If your watch is running watchOS 6 beta, you must update it to watchOS 6 beta 2 
 ###### New Features
 
 - To enhance security, [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) no longer sniffs the MIME type when the server sends `Content-Type: application/octet-stream`. (7820658)
-- [`NSURLRequest.CachePolicy.reloadRevalidatingCacheData`](https://developer.apple.com/documentation/foundation/nsurlrequest/cachepolicy/reloadrevalidatingcachedata) and [`NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData`](https://developer.apple.com/documentation/foundation/nsurlrequest/cachepolicy/reloadignoringlocalandremotecachedata) APIs are now available. (49660334)
-- Starting with iOS 13 beta 4, the copy attribute of the [`httpBodyStream`](https://developer.apple.com/documentation/foundation/nsmutableurlrequest/1409529-httpbodystream) property of [`NSMutableURLRequest`](https://developer.apple.com/documentation/Foundation/NSMutableURLRequest) is enforced. If the body data is mutated after the property setter has been called, data sent in the HTTP request won’t include that mutation. Invoking the property getter no longer returns a [`NSMutableData`](https://developer.apple.com/documentation/Foundation/NSMutableData) reference, even when the setter was invoked with data of that type. As of iOS 13 beta 5, apps built using the iOS 12 SDK or previous SDKs use the legacy behavior. (53427882)
+- [`NSURLRequest.CachePolicy.reloadRevalidatingCacheData`](https://developer.apple.com/documentation/Foundation/NSURLRequest/CachePolicy-swift.enum/reloadRevalidatingCacheData) and [`NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData`](https://developer.apple.com/documentation/Foundation/NSURLRequest/CachePolicy-swift.enum/reloadIgnoringLocalAndRemoteCacheData) APIs are now available. (49660334)
+- Starting with iOS 13 beta 4, the copy attribute of the [`httpBodyStream`](https://developer.apple.com/documentation/Foundation/NSMutableURLRequest/httpBodyStream) property of [`NSMutableURLRequest`](https://developer.apple.com/documentation/Foundation/NSMutableURLRequest) is enforced. If the body data is mutated after the property setter has been called, data sent in the HTTP request won’t include that mutation. Invoking the property getter no longer returns a [`NSMutableData`](https://developer.apple.com/documentation/Foundation/NSMutableData) reference, even when the setter was invoked with data of that type. As of iOS 13 beta 5, apps built using the iOS 12 SDK or previous SDKs use the legacy behavior. (53427882)
 - The [`CNCopyCurrentNetworkInfo`](https://developer.apple.com/documentation/systemconfiguration/1614126-cncopycurrentnetworkinfo) API has changed to address privacy. Please refer to the updated API documentation and headers for more details. (52707167)
-- All [`URLSessionTask`](https://developer.apple.com/documentation/Foundation/URLSessionTask) instances with a `GET` HTTP method that contain a body now produce the error [`NSURLErrorDataLengthExceedsMaximum`](https://developer.apple.com/documentation/foundation/nsurlerrordatalengthexceedsmaximum). (46025234)
+- All [`URLSessionTask`](https://developer.apple.com/documentation/Foundation/URLSessionTask) instances with a `GET` HTTP method that contain a body now produce the error [`NSURLErrorDataLengthExceedsMaximum`](https://developer.apple.com/documentation/Foundation/NSURLErrorDataLengthExceedsMaximum-swift.var). (46025234)
 
 ###### Known Issues
 
-- The [`urlSession(_:taskIsWaitingForConnectivity:)`](https://developer.apple.com/documentation/foundation/urlsessiontaskdelegate/2908819-urlsession) delegate callback might not function as expected. (54309264)
+- The [`urlSession(_:taskIsWaitingForConnectivity:)`](https://developer.apple.com/documentation/Foundation/URLSessionTaskDelegate/urlSession(_:taskIsWaitingForConnectivity:)) delegate callback might not function as expected. (54309264)
 
 ###### Deprecations
 
-- Removed support for FTP and File URL schemes for Proxy Automatic Configuration (PAC). HTTP and HTTPS are the only supported URL schemes for PAC. This affects all PAC configurations including, but not limited to, configurations set using Settings, System Preferences, Profiles, and [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) APIs such as [`connectionProxyDictionary`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/1411499-connectionproxydictionary) and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](https://developer.apple.com/documentation/CFNetwork/CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)). (28578280)
+- Removed support for FTP and File URL schemes for Proxy Automatic Configuration (PAC). HTTP and HTTPS are the only supported URL schemes for PAC. This affects all PAC configurations including, but not limited to, configurations set using Settings, System Preferences, Profiles, and [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) APIs such as [`connectionProxyDictionary`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/connectionProxyDictionary) and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](https://developer.apple.com/documentation/CFNetwork/CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)). (28578280)
 - The [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) and [`NSURLConnection`](https://developer.apple.com/documentation/Foundation/NSURLConnection) APIs no longer support SPDY. Servers should use HTTP 2 or HTTP 1.1. (43391641)
 
 ##### Notes
@@ -176,7 +174,7 @@ If your watch is running watchOS 6 beta, you must update it to watchOS 6 beta 2 
 - Shortcuts automations are temporarily unavailable. (53182885)
 - The [`supportsOnDeviceRecognition`](https://developer.apple.com/documentation/Speech/SFSpeechRecognizer/supportsOnDeviceRecognition) property always returns `false` the first time it’s accessed. After a few seconds, accessing it again returns the correct value. (47822242)
 - Shortcuts opened on iOS 13 are automatically upgraded and can no longer be opened on iOS 12. If a device with iOS 12 and a device with iOS 13 share an iCloud account, shortcuts might become unusable on the device running iOS 12. (50873839)  Disable iCloud Sync between devices running iOS 13 and devices running iOS 12.
-- Currently, the only supported response for doc://com.apple.documentation/documentation/SiriKit/INSearchForMediaIntent is doc://com.apple.documentation/documentation/SiriKit/INSearchForMediaIntentResponseCode/continueInApp. (51010311)
+- Currently, the only supported response for [`INSearchForMediaIntent`](https://developer.apple.com/documentation/Intents/INSearchForMediaIntent) is [`INSearchForMediaIntentResponseCode.continueInApp`](https://developer.apple.com/documentation/Intents/INSearchForMediaIntentResponseCode/continueInApp). (51010311)
 
 ##### Swiftui
 

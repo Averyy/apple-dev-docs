@@ -153,13 +153,14 @@ struct UInt64
 - [FixedWidthInteger](fixedwidthinteger.md)
 - [Hashable](hashable.md)
 - [LosslessStringConvertible](losslessstringconvertible.md)
+- [NetworkFixedWidthInteger](../Network/NetworkFixedWidthInteger.md)
 - [Numeric](numeric.md)
 - [Plottable](../Charts/Plottable.md)
 - [PrimitivePlottableProtocol](../Charts/PrimitivePlottableProtocol.md)
 - [SIMDScalar](simdscalar.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Strideable](strideable.md)
-- [SynchronizationPeerID](../RealityKit/SynchronizationPeerID.md)
 - [UnsignedInteger](unsignedinteger.md)
 
 ## See Also

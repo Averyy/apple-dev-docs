@@ -1,6 +1,6 @@
 # Managing merchant IDs and Payment Processing certificates
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Create and update certificates so your app uses Apple Pay and Wallet.
 
@@ -75,6 +75,7 @@ Use one of three options to replace a payment-processing certificate nearing its
   Get information for a merchant ID.
 - [List certificates for a merchant ID](get-v1-merchantids-_id_-certificates.md)
   Get a list of all certificates for a specific merchant ID.
+- [GET /v1/merchantIds/{id}/relationships/certificates](get-v1-merchantids-_id_-relationships-certificates.md)
 - [Modify merchant IDs](patch-v1-merchantids-_id_.md)
   Update a specific merchant ID.
 - [Create a merchant ID](post-v1-merchantids.md)
@@ -85,4 +86,4 @@ Use one of three options to replace a payment-processing certificate nearing its
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/managing-payment-processing-certificates)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/managing-payment-processing-certificates)*

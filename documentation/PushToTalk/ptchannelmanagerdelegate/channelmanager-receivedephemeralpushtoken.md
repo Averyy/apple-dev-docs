@@ -27,8 +27,6 @@ The framework provides a token to this method after you initialize [`PTChannelMa
 
 > ❗ **Important**:  Don’t cache device tokens in local storage. The Apple Push Notification service issues a new token when a person restores a device from a backup, installs your app on a new device, or reinstalls the operating system.
 
- Don’t cache device tokens in local storage. The Apple Push Notification service issues a new token when a person restores a device from a backup, installs your app on a new device, or reinstalls the operating system.
-
 When you send push notifications, the `apns-topic` header field needs to contain your app’s bundle identifier wit`h` the `.voip-ptt` suffix.
 
 ## Parameters

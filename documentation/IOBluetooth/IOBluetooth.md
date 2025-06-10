@@ -88,6 +88,8 @@ The Bluetooth framework supports user-space access to Bluetooth devices, includi
 - [IOBluetooth Constants](iobluetooth-constants.md)
 - [IOBluetooth Functions](iobluetooth-functions.md)
 - [IOBluetooth Data Types](iobluetooth-data-types.md)
+### Variables
+- [var kBluetoothConnectionHandleSerialDeviceReserved: Int](kbluetoothconnectionhandleserialdevicereserved.md)
 
 ## See Also
 

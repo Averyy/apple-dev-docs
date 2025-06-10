@@ -21,6 +21,7 @@ struct CommandMenu<Content> where Content : View
 ## Mentions
 
 - [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
+- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
 
 #### Overview
 
@@ -30,7 +31,7 @@ Command menus are realized as menu bar menus on macOS, inserted between the buil
 
 ### Creating a command menu
 - [init(_:content:)](commandmenu/init(_:content:).md)
-  Creates a new menu for a collection of app-specific commands, inserted in the standard location for app menus (after the View menu, in order with other menus declared without an explicit location).
+  Creates a new menu with a localized name for a collection of app- specific commands, inserted in the standard location for app menus (after the View menu, in order with other menus declared without an explicit location).
 
 ## Relationships
 

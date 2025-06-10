@@ -17,7 +17,6 @@ Initializes a textured sprite using an image file, optionally adding a normal ma
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(imageNamed name: String, normalMapped generateNormalMap: Bool)
 ```
 

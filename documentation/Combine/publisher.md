@@ -22,9 +22,9 @@ protocol Publisher<Output, Failure>
 
 ## Mentions
 
-- [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
 - [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
 - [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
+- [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
 
 #### Overview
 
@@ -41,8 +41,6 @@ Every `Publisher` must adhere to this contract for downstream subscribers to fun
 Extensions on `Publisher` define a wide variety of  that you compose to create sophisticated event-processing chains. Each operator returns a type that implements the [`Publisher`](publisher.md) protocol Most of these types exist as extensions on the [`Publishers`](publishers.md) enumeration. For example, the [`map(_:)`](publisher/map(_:)-99evh.md) operator returns an instance of [`Publishers.Map`](publishers/map.md).
 
 > 💡 **Tip**: A Combine publisher fills a role similar to, but distinct from, the [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) in the Swift standard library. A `Publisher` and an `AsyncSequence` both produce elements over time. However, the pull model in Combine uses a [`Subscriber`](subscriber.md) to request elements from a publisher, while Swift concurrency uses the `for`-`await`-`in` syntax to iterate over elements published by an `AsyncSequence`. Both APIs offer methods to modify the sequence by mapping or filtering elements, while only Combine provides time-based operations like [`debounce(for:scheduler:options:)`](publisher/debounce(for:scheduler:options:).md) and [`throttle(for:scheduler:latest:)`](publisher/throttle(for:scheduler:latest:).md), and combining operations like [`merge(with:)`](publisher/merge(with:)-7fk3a.md) and [`combineLatest(_:_:)`](publisher/combinelatest(_:_:)-1n30g.md). To bridge the two approaches, the property [`values`](publisher/values-1dm9r.md) exposes a publisher’s elements as an `AsyncSequence`, allowing you to iterate over them with `for`-`await`-`in` rather than attaching a [`Subscriber`](subscriber.md).
-
-A Combine publisher fills a role similar to, but distinct from, the [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) in the Swift standard library. A `Publisher` and an `AsyncSequence` both produce elements over time. However, the pull model in Combine uses a [`Subscriber`](subscriber.md) to request elements from a publisher, while Swift concurrency uses the `for`-`await`-`in` syntax to iterate over elements published by an `AsyncSequence`. Both APIs offer methods to modify the sequence by mapping or filtering elements, while only Combine provides time-based operations like [`debounce(for:scheduler:options:)`](publisher/debounce(for:scheduler:options:).md) and [`throttle(for:scheduler:latest:)`](publisher/throttle(for:scheduler:latest:).md), and combining operations like [`merge(with:)`](publisher/merge(with:)-7fk3a.md) and [`combineLatest(_:_:)`](publisher/combinelatest(_:_:)-1n30g.md). To bridge the two approaches, the property [`values`](publisher/values-1dm9r.md) exposes a publisher’s elements as an `AsyncSequence`, allowing you to iterate over them with `for`-`await`-`in` rather than attaching a [`Subscriber`](subscriber.md).
 
 ### Creating Your Own Publishers
 

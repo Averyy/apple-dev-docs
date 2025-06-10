@@ -23,6 +23,7 @@ API users can get the `betaAppReviewSubmissions` to see if the build has been ac
 ### Getting Build Information
 - [Read the Build Information of a Beta App Review Submission](get-v1-betaappreviewsubmissions-_id_-build.md)
   Get the build information for a specific beta app review submission.
+- [GET /v1/betaAppReviewSubmissions/{id}/relationships/build](get-v1-betaappreviewsubmissions-_id_-relationships-build.md)
 ### Objects and Data Types
 - [object BetaAppReviewSubmission](betaappreviewsubmission.md)
   The data structure that represents a Beta App Review Submissions resource.
@@ -35,6 +36,7 @@ API users can get the `betaAppReviewSubmissions` to see if the build has been ac
   A response that contains a list of Beta App Review Submission resources.
 - [type BetaReviewState](betareviewstate.md)
   String that indicates the review state of a beta app.
+- [object BetaAppReviewSubmissionBuildLinkageResponse](betaappreviewsubmissionbuildlinkageresponse.md)
 
 ## See Also
 

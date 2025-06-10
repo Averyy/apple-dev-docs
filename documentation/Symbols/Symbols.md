@@ -97,6 +97,11 @@ Now consider an AppKit or UIKit version of the app. You can apply the same effec
   An effect that animates between symbols or different configurations of the same symbol.
 - [protocol TransitionSymbolEffect](transitionsymboleffect.md)
   An effect that animates a symbol in or out.
+### Structures
+- [struct DrawOffSymbolEffect](drawoffsymboleffect.md)
+  A symbol effect that applies the DrawOff animation to symbol images.
+- [struct DrawOnSymbolEffect](drawonsymboleffect.md)
+  A symbol effect that applies the DrawOn animation to symbol images.
 
 
 ---

@@ -1,6 +1,6 @@
 # About the UI restoration process
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Learn how to customize the UIKit state restoration process.
 
@@ -50,4 +50,4 @@ func viewController(withRestorationIdentifierPath
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/about-the-ui-restoration-process)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/about-the-ui-restoration-process)*

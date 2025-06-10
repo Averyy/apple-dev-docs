@@ -17,8 +17,6 @@ To learn more about workflows, see [`Xcode Cloud workflow reference`](https://de
 
 > ❗ **Important**:  Deleting a workflow also deletes associated build information and artifacts. Instead of deleting a workflow, consider deactivating it in Xcode or App Store Connect. To learn more about deactivating a workflow, see [`Developing a workflow strategy for Xcode Cloud`](https://developer.apple.com/documentation/Xcode/Developing-a-Workflow-Strategy-for-Xcode-Cloud).
 
- Deleting a workflow also deletes associated build information and artifacts. Instead of deleting a workflow, consider deactivating it in Xcode or App Store Connect. To learn more about deactivating a workflow, see [`Developing a workflow strategy for Xcode Cloud`](https://developer.apple.com/documentation/Xcode/Developing-a-Workflow-Strategy-for-Xcode-Cloud).
-
 This resource supports JSON web tokens with a lifetime of up to six months. For more information, see [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md).
 
 ## Topics
@@ -30,6 +28,8 @@ This resource supports JSON web tokens with a lifetime of up to six months. For 
   List all builds Xcode Cloud performed for a specific workflow.
 - [Read the Repository Information for an Xcode Cloud Workflow](get-v1-ciworkflows-_id_-repository.md)
   Get information about the Git repository of a specific Xcode Cloud workflow.
+- [GET /v1/ciWorkflows/{id}/relationships/buildRuns](get-v1-ciworkflows-_id_-relationships-buildruns.md)
+- [GET /v1/ciWorkflows/{id}/relationships/repository](get-v1-ciworkflows-_id_-relationships-repository.md)
 ### Managing Xcode Cloud Workflows
 - [Create a Workflow](post-v1-ciworkflows.md)
   Create a new Xcode Cloud workflow for an Xcode Cloud product.
@@ -55,6 +55,8 @@ This resource supports JSON web tokens with a lifetime of up to six months. For 
 - [object CiManualBranchStartCondition](cimanualbranchstartcondition.md)
 - [object CiManualPullRequestStartCondition](cimanualpullrequeststartcondition.md)
 - [object CiManualTagStartCondition](cimanualtagstartcondition.md)
+- [object CiWorkflowBuildRunsLinkagesResponse](ciworkflowbuildrunslinkagesresponse.md)
+- [object CiWorkflowRepositoryLinkageResponse](ciworkflowrepositorylinkageresponse.md)
 
 ## See Also
 

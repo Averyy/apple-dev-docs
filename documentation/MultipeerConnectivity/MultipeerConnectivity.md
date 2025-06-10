@@ -19,8 +19,6 @@ The Multipeer Connectivity framework supports the discovery of services provided
 
 > ❗ **Important**:  Apps that use the local network must provide a usage string in their `Info.plist` with the key [`NSLocalNetworkUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocalNetworkUsageDescription). Apps that use Bonjour must also declare the services they browse, using the [`NSBonjourServices`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSBonjourServices) key.
 
- Apps that use the local network must provide a usage string in their `Info.plist` with the key [`NSLocalNetworkUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocalNetworkUsageDescription). Apps that use Bonjour must also declare the services they browse, using the [`NSBonjourServices`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSBonjourServices) key.
-
 ##### Architecture
 
 When working with the Multipeer Connectivity framework, your app must interact with several types of objects:

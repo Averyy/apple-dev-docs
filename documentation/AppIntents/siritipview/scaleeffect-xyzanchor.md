@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: method
 
-Scales this view by the specified horizontal, vertical, and depth factors.
+Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
 
 **Availability**:
 - visionOS 1.0+

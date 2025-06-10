@@ -1,6 +1,6 @@
 # BLUE_BITS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -29,8 +29,6 @@ Use this property to provide fallback behavior for users who don’t have your a
 
 > ❗ **Important**: Make sure that the URL in this property eventually leads to a webpage with the same content as the activity. Safari automatically synchronizes media playback for listen-together and watch-together experiences.
 
-Make sure that the URL in this property eventually leads to a webpage with the same content as the activity. Safari automatically synchronizes media playback for listen-together and watch-together experiences.
-
 ## See Also
 
 - [var title: String?](groupactivitymetadata/title.md)

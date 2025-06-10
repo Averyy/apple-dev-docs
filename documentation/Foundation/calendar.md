@@ -169,6 +169,7 @@ struct Calendar
 - [class NSCalendar](nscalendar.md)
   A definition of the relationships between calendar units and absolute points in time, providing features for calculation and comparison of dates.
 ### Structures
+- [Calendar.CalendarDayChangedMessage](calendar/calendardaychangedmessage.md)
 - [Calendar.RecurrenceRule](calendar/recurrencerule.md)
 ### Initializers
 - [init(identifier: Calendar.Identifier)](calendar/init(identifier:).md)
@@ -193,6 +194,7 @@ struct Calendar
 - [Hashable](../Swift/Hashable.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # Attestation Object Validation Guide
 
-**Framework**: Devicecheck
+**Framework**: DeviceCheck
 
 Use this guide to validate your implementation of verifying the attestation object verification process.
 
@@ -121,4 +121,4 @@ Expected `credentialId`:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceCheck/attestation-object-validation-guide)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicecheck/attestation-object-validation-guide)*

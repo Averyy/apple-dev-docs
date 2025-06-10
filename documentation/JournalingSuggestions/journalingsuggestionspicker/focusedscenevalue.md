@@ -22,8 +22,6 @@ func focusedSceneValue<T>(_ object: T?) -> some View where T : AnyObject, T : Ob
 
 > ❗ **Important**: This initializer only accepts objects conforming to the `Observable` protocol. For reading environment objects that conform to `ObservableObject`, use `focusedObject(_:)`, instead.
 
-This initializer only accepts objects conforming to the `Observable` protocol. For reading environment objects that conform to `ObservableObject`, use `focusedObject(_:)`, instead.
-
 To read this value, use the `FocusedValue` property wrapper.
 
 

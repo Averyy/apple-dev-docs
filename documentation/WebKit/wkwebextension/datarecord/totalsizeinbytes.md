@@ -1,6 +1,6 @@
 # totalSizeInBytes
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The total size in bytes of all data types contained in this data record.

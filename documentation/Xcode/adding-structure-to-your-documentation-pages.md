@@ -128,4 +128,4 @@ After you arrange nested symbols in an extension file, choose Product > Build Do
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/adding-structure-to-your-documentation-pages)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/adding-structure-to-your-documentation-pages)*

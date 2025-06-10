@@ -10,6 +10,7 @@ An array of joint transforms in which each element represents a discrete state o
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

@@ -28,9 +28,9 @@ struct ImageAestheticsScoresObservation
 - [enum RequestDescriptor](requestdescriptor.md)
   A type that describes the request and revision combination.
 - [let isUtility: Bool](imageaestheticsscoresobservation/isutility.md)
-  A Boolean value that represents images that aren’t necessarily of poor image quality but may not have memorable or exciting content.
+  A Boolean value that represents images that are not necessarily of poor image quality, but may not have memorable or exciting content.
 - [let overallScore: Float](imageaestheticsscoresobservation/overallscore.md)
-  A score which incorporates aesthetic score, failure score and utility labels.
+  A score which incorporates aesthetic score, failure score, and utility labels.
 
 ## Relationships
 
@@ -42,6 +42,7 @@ struct ImageAestheticsScoresObservation
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionObservation](visionobservation.md)
 
 ## See Also

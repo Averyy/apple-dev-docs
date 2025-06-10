@@ -1,6 +1,6 @@
 # subscriptionBillingCycleEndDate
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A date that indicates when the billing cycle ends for a paid account.

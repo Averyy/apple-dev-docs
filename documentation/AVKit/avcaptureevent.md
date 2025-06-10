@@ -27,6 +27,12 @@ Inspect a capture event’s [`phase`](avcaptureevent/phase.md) to determine whet
   The current phase of a capture event.
 - [enum AVCaptureEventPhase](avcaptureeventphase.md)
   Constants that indicate the phase of a system capture event.
+### Instance Properties
+- [var shouldPlaySound: Bool](avcaptureevent/shouldplaysound.md)
+  Indicates whether a sound must be played manually using the `playSound` method.
+### Instance Methods
+- [func play(AVCaptureEventSound) -> Bool](avcaptureevent/play(_:).md)
+  Plays the given capture sound through AirPods.
 
 ## Relationships
 
@@ -50,6 +56,10 @@ Inspect a capture event’s [`phase`](avcaptureevent/phase.md) to determine whet
   A protocol that defines the methods to implement to respond to player view controller events.
 - [class AVCaptureEventInteraction](avcaptureeventinteraction.md)
   An object that registers handlers to respond to capture events from system hardware buttons.
+- [class AVCaptureEventSound](avcaptureeventsound.md)
+  A sound object for a capture event.
+- [class AVInputPickerInteraction](avinputpickerinteraction.md)
+  Use `AVInputPickerInteraction` to present an input picker.
 
 
 ---

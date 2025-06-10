@@ -35,6 +35,7 @@ protocol HistoryDelete<Model> : Sendable
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [DefaultHistoryDelete](defaulthistorydelete.md)
 

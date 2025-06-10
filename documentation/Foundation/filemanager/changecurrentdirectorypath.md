@@ -30,8 +30,6 @@ All relative pathnames refer implicitly to the current working directory.
 
 > ⚠️ **Warning**:  This method changes the current working directory for the current process, not just the receiver.
 
- This method changes the current working directory for the current process, not just the receiver.
-
 ## Parameters
 
 - `path`: The path of the directory to which to change.

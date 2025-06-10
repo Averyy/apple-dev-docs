@@ -1,6 +1,6 @@
 # extendedLayoutIncludesOpaqueBars
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A Boolean value indicating whether or not the extended layout includes opaque bars.

@@ -1,6 +1,6 @@
 # Implementing communication notifications
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Configure and display your app’s communication notifications by using intents.
 

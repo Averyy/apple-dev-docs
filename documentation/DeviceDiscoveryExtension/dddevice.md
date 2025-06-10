@@ -75,6 +75,16 @@ The extension reports the status of discovered devices to the system using the [
 - [var deviceSupports: DDDeviceSupports](dddevice/devicesupports.md)
 - [var displayImageName: String?](dddevice/displayimagename.md)
 - [var ssid: String?](dddevice/ssid.md)
+- [var wifiAwareModelName: String?](dddevice/wifiawaremodelname.md)
+  Device’s Wi-Fi Aware model name.
+- [var wifiAwareServiceName: String?](dddevice/wifiawareservicename.md)
+  Device’s Wi-Fi Aware’s service name.
+- [var wifiAwareServiceRole: DDDevice.WiFiAwareServiceRole](dddevice/wifiawareservicerole-swift.property.md)
+  Device’s Wi-Fi Aware’s service. Default is `DDDeviceWiFiAwareServiceRoleSubscriber`
+- [var wifiAwareVendorName: String?](dddevice/wifiawarevendorname.md)
+  Device’s Wi-Fi Aware vendor name.
+### Enumerations
+- [DDDevice.WiFiAwareServiceRole](dddevice/wifiawareservicerole-swift.enum.md)
 
 ## Relationships
 

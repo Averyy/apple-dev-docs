@@ -1,24 +1,47 @@
-# !=(_:_:)
+# -(_:)
 
 **Framework**: Swift  
 **Kind**: op
 
+Returns the additive inverse of the specified value.
+
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- Mac Catalyst 18.0+
-- macOS 15.0+
-- tvOS 18.0+
-- visionOS 2.0+
-- watchOS 11.0+
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.0+
+- macOS 10.10+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Int128, rhs: Int128) -> Bool
+static func - (operand: Self) -> Self
+```
+
+#### Return Value
+
+The additive inverse of this value.
+
+#### Discussion
+
+The negation operator (prefix `-`) returns the additive inverse of its argument.
+
+```swift
+let x = 21
+let y = -x
+// y == -21
+```
+
+The resulting value must be representable in the same type as the argument. In particular, negating a signed, fixed-width integer type’s minimum results in a value that cannot be represented.
+
+```swift
+let z = -Int8.min
+// Overflow error
 ```
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/int128/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/int128/-(_:))*

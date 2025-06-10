@@ -39,15 +39,6 @@ To learn more about the IETF worldwide standard for language tags, see [`RFC5646
 ### Operator Functions
 - [static func != (Self, Self) -> Bool](languagetag/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
-### Identifying Related Types
-- [LanguageTag.ExtendedGraphemeClusterLiteralType](languagetag/extendedgraphemeclusterliteraltype.md)
-  A type that represents an extended grapheme cluster literal.
-- [LanguageTag.RawValue](languagetag/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-- [LanguageTag.StringLiteralType](languagetag/stringliteraltype.md)
-  A type that represents a string literal.
-- [LanguageTag.UnicodeScalarLiteralType](languagetag/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
 ### Default Implementations
 - [CustomStringConvertible Implementations](languagetag/customstringconvertible-implementations.md)
 - [Equatable Implementations](languagetag/equatable-implementations.md)

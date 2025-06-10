@@ -1,6 +1,6 @@
 # setExposureNotificationEnabled(_:completionHandler:)
 
-**Framework**: Exposurenotification  
+**Framework**: Exposure Notification  
 **Kind**: method
 
 Enables or disables exposure notification.
@@ -35,7 +35,7 @@ If the user hasn’t authorized exposure notification, this method displays a us
 
 ## See Also
 
-- [func activate(completionHandler: ENErrorHandler)](enmanager/activate(completionhandler:).md)
+- [func activate(completionHandler: ((any Error)?) -> Void)](enmanager/activate(completionhandler:).md)
   Prepares the manager for use.
 - [var activityHandler: ENActivityHandler?](enmanager/activityhandler.md)
   The handler that the framework invokes when the app activates a notification manager.

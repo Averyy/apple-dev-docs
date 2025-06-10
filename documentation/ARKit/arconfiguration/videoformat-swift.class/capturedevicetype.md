@@ -35,8 +35,6 @@ session.run(config)
 
 > ❗ **Important**:  AR frames only contain depth data ([`capturedDepthData`](arframe/captureddepthdata.md)) in face-tracking sessions that use the TrueDepth camera.
 
- AR frames only contain depth data ([`capturedDepthData`](arframe/captureddepthdata.md)) in face-tracking sessions that use the TrueDepth camera.
-
 ## See Also
 
 - [var captureDevicePosition: AVCaptureDevice.Position](arconfiguration/videoformat-swift.class/capturedeviceposition.md)

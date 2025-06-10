@@ -46,6 +46,7 @@ Use the [`storeButton(_:for:)`](https://developer.apple.com/documentation/SwiftU
 - [nonisolated func subscriptionStoreSignInAction(_ action: (() -> ())?) -> some View
 ](../SwiftUI/View/subscriptionStoreSignInAction(_:).md)
   Adds an action to perform when a person uses the sign-in button on a subscription store view within a view.
+- [struct SubscriptionOfferViewButtonKind](subscriptionofferviewbuttonkind.md)
 
 
 ---

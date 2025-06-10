@@ -8,9 +8,9 @@ Sets the keyboard type for this view.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
+- Mac Catalyst ?+
 - tvOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

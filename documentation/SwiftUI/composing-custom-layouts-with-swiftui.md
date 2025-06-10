@@ -1,6 +1,6 @@
 # Composing custom layouts with SwiftUI
 
-**Framework**: Swiftui
+**Framework**: SwiftUI
 
 Arrange views in your app’s interface using layout tools that SwiftUI provides.
 

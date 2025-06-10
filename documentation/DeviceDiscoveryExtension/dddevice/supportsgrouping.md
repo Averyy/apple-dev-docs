@@ -1,6 +1,6 @@
 # supportsGrouping
 
-**Framework**: Devicediscoveryextension  
+**Framework**: DeviceDiscoveryExtension  
 **Kind**: property
 
 A Boolean value that indicates whether to group the device with others in the AirPlay UI.

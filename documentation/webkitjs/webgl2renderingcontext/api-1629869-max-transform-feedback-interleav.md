@@ -1,6 +1,6 @@
 # MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

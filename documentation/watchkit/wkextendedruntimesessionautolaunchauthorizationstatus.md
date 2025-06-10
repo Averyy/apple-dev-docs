@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 **Availability**:
@@ -29,6 +29,7 @@ enum WKExtendedRuntimeSessionAutoLaunchAuthorizationStatus
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

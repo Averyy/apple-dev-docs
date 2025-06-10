@@ -6,7 +6,13 @@
 An object that uniquely identifies an app extension.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 13.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.1+
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -42,7 +48,9 @@ struct AppExtensionIdentity
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # UIAccessibilityCustomRotor
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A context-sensitive function that helps VoiceOver users find the next instance of a related element.
@@ -75,4 +75,4 @@ You might use an instance of this class to find the next link in an article, or 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uiaccessibilitycustomrotor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiaccessibilitycustomrotor)*

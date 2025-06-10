@@ -1,6 +1,6 @@
 # preferredSurroundingsEffect(_:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Applies an effect to passthrough video.

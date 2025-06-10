@@ -10,6 +10,7 @@ An array of floating-point triplets in which each element represents a discrete 
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -20,7 +21,7 @@ var frames: [SIMD3<Float>] { get set }
 
 #### Discussion
 
-This array contains sequential values for the animated property when [`bindTarget`](animationdefinition/bindtarget.md) is an array of [`simd`](https://developer.apple.com/documentation/accelerate/simd) floating-point triplets.
+This array contains sequential values for the animated property when [`bindTarget`](animationdefinition/bindtarget.md) is an array of [`simd`](https://developer.apple.com/documentation/Accelerate/simd-library) floating-point triplets.
 
 ## See Also
 

@@ -114,6 +114,7 @@ This structure parses and constructs URLs according to [`RFC 3986`](https://deve
 - [Hashable](../Swift/Hashable.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -43,8 +43,6 @@ If you receive [`App Store Server Notifications`](https://developer.apple.com/do
 
 > ❗ **Important**:  Always check the receipt to determine the users’s correct level of access for the product. A user may lose access through Family Sharing, but may have purchased the product directly.
 
- Always check the receipt to determine the users’s correct level of access for the product. A user may lose access through Family Sharing, but may have purchased the product directly.
-
 StoreKit also calls this method in the purchaser’s app when the purchaser receives a refund for a non-consumable or an auto-renewable subscription, regardless if the product is shared with the family. If you receive [`App Store Server Notifications`](https://developer.apple.com/documentation/AppStoreServerNotifications), your server receives a [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType) `REFUND` for the purchaser.
 
 If you use server-side receipt validation with the App Store, call your server to reprocess the receipt and update your purchase records.

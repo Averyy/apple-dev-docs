@@ -38,6 +38,7 @@ This constant is used with the [`accessibilitySortDirection`](nsaccessibility-c.
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

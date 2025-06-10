@@ -16,7 +16,7 @@ optional func playerViewShouldAutomaticallyDismissAtPicture(inPictureStart playe
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the player view should automatically be miniaturized; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+`true` if the player view should automatically be miniaturized; otherwise `false`.
 
 ## Parameters
 

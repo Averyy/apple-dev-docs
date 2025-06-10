@@ -14,7 +14,6 @@ Adds a print formatter to the page renderer starting at the specified page.
 ## Declaration
 
 ```swift
-@MainActor
 func addPrintFormatter(_ formatter: UIPrintFormatter, startingAtPageAt pageIndex: Int)
 ```
 

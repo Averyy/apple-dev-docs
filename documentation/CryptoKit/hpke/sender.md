@@ -27,7 +27,9 @@ To create encrypted messages, initialize a `Sender` specifying the appropriate c
 ## Topics
 
 ### Initializers
-- [init<PK>(recipientKey: PK, ciphersuite: HPKE.Ciphersuite, info: Data) throws](hpke/sender/init(recipientkey:ciphersuite:info:).md)
+- [init<PK>(recipientKey: PK, ciphersuite: HPKE.Ciphersuite, info: Data) throws](hpke/sender/init(recipientkey:ciphersuite:info:)-56p88.md)
+  Creates a sender in base mode.
+- [init<PK>(recipientKey: PK, ciphersuite: HPKE.Ciphersuite, info: Data) throws](hpke/sender/init(recipientkey:ciphersuite:info:)-swk5.md)
   Creates a sender in base mode.
 - [init<SK>(recipientKey: SK.PublicKey, ciphersuite: HPKE.Ciphersuite, info: Data, authenticatedBy: SK) throws](hpke/sender/init(recipientkey:ciphersuite:info:authenticatedby:).md)
   Creates a sender in authentication mode.
@@ -50,6 +52,7 @@ To create encrypted messages, initialize a `Sender` specifying the appropriate c
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

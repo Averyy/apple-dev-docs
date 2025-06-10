@@ -1,6 +1,6 @@
 # removeAllScriptMessageHandlers(from:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Uninstalls all custom message handlers from the specified content world in your JavaScript code.

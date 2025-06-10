@@ -1,6 +1,6 @@
 # XCTDarwinNotificationExpectation
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An expectation that is fulfilled when an expected Darwin notification is received.
@@ -41,6 +41,7 @@ If a custom [`handler`](xctdarwinnotificationexpectation/handler-swift.property.
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

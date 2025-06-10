@@ -1,6 +1,6 @@
 # Enhancing your iPad app with pointer interactions
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Provide a great user experience with pointing devices, by incorporating pointer content effects and shape customizations.
 
@@ -29,4 +29,4 @@ To run the sample in Xcode, you need an iPad with iPadOS 14.0 or later and a Tra
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/enhancing-your-ipad-app-with-pointer-interactions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/enhancing-your-ipad-app-with-pointer-interactions)*

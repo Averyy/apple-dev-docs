@@ -1,6 +1,6 @@
 # init(archivableObject:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an attachment from an object that conforms to `NSSecureCoding`.

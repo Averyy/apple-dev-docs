@@ -16,8 +16,10 @@ List associated group leaderboards for a specific leaderboard.
   Read the group leadboard to which a leaderboard belongs.
 - [List all localizations for a leaderboard](get-v1-gamecenterleaderboards-_id_-localizations.md)
   Get a list of localized metadata for a leaderboard.
+- [GET /v1/gameCenterLeaderboards/{id}/relationships/localizations](get-v1-gamecenterleaderboards-_id_-relationships-localizations.md)
 - [List releases for a leaderboard](get-v1-gamecenterleaderboards-_id_-releases.md)
   Read the state of releases for a leaderboard and related information.
+- [GET /v1/gameCenterLeaderboards/{id}/relationships/releases](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
 
 
 ---

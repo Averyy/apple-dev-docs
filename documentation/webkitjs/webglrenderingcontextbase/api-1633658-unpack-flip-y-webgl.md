@@ -1,6 +1,6 @@
 # UNPACK_FLIP_Y_WEBGL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

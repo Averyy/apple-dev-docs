@@ -17,6 +17,11 @@
 class func repairArcadeApp()
 ```
 
+## See Also
+
+- [class func arcadeSubscriptionStatus(withNonce: UInt64, resultHandler: (Data?, UInt32, Data?, UInt32, (any Error)?) -> Void)](skarcadeservice/arcadesubscriptionstatus(withnonce:resulthandler:).md)
+- [class func registerArcadeAppWithRandom(fromLib: Data, randomFromLibLength: UInt32, resultHandler: (Data?, UInt32, Data?, UInt32, (any Error)?) -> Void)](skarcadeservice/registerarcadeappwithrandom(fromlib:randomfromliblength:resulthandler:).md)
+
 
 ---
 

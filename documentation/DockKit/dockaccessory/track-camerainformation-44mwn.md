@@ -1,6 +1,6 @@
 # track(_:cameraInformation:)
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: method
 
 Automatically generate and send tracking vectors to the device.

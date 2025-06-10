@@ -22,6 +22,7 @@ Update the name and visibility status of an app custom product page.
   Get information about a specific app custom product page.
 - [List custom product page versions](get-v1-appcustomproductpages-_id_-appcustomproductpageversions.md)
   List the versions for a custom product page version.
+- [GET /v1/appCustomProductPages/{id}/relationships/appCustomProductPageVersions](get-v1-appcustomproductpages-_id_-relationships-appcustomproductpageversions.md)
 - [Delete an app custom product page](delete-v1-appcustomproductpages-_id_.md)
   Delete metadata that you configured for a custom product page.
 

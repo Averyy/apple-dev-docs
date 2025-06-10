@@ -12,6 +12,7 @@ Retrieves one or more points associated with the shape and converts them to coor
 - macOS 10.9+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 1.0+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # Creating Your First Article
 
-**Framework**: Applenews
+**Framework**: Apple News
 
 Create an article with text components and component text styles.
 
@@ -379,4 +379,4 @@ The drop cap in your article now uses the new height that you chose. If you chos
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/creating-your-first-article)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applenews/creating-your-first-article)*

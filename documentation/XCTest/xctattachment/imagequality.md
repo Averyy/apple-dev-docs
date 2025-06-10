@@ -1,6 +1,6 @@
 # XCTAttachment.ImageQuality
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: enum
 
 Compression quality options for image-based attachments.
@@ -31,6 +31,7 @@ enum ImageQuality
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

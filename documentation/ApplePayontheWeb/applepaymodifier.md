@@ -1,6 +1,6 @@
 # ApplePayModifier
 
-**Framework**: Applepayontheweb  
+**Framework**: Apple Pay on the Web  
 **Kind**: struct
 
 A dictionary that defines the Apple Pay modifiers for a payment type in the W3C Payment Request API.
@@ -32,7 +32,7 @@ dictionary ApplePayModifier {
 
 #### Overview
 
-This dictionary contains the supported Apple Pay properties for the `PaymentDetailsModifier` `data` object in the [`Payment Request API`](https://developer.apple.com/documentation/apple_pay_on_the_web/payment_request_api). For more information about `PaymentDetailsModifier`, see the [`W3C Payment Request API specification`](https://developer.apple.comhttps://www.w3.org/TR/payment-request/#paymentdetailsmodifier-dictionary).
+This dictionary contains the supported Apple Pay properties for the `PaymentDetailsModifier` `data` object in the [`Payment Request API`](payment-request-api.md). For more information about `PaymentDetailsModifier`, see the [`W3C Payment Request API specification`](https://developer.apple.comhttps://www.w3.org/TR/payment-request/#paymentdetailsmodifier-dictionary).
 
 In the Payment Request API, modifiers contain transaction details that apply only under certain conditions. For example, you can create a modifier that adds a surcharge for paying with a credit card. Each transaction contains the modifier details, but the payment sheet only displays the surcharge if the user chooses to pay with a credit card.
 
@@ -91,7 +91,7 @@ Applying the modifier overwrites the total in the payment request when the modif
 
 > ❗ **Important**:  The payment sheet displays data only. You’re responsible for supplying all values, including calculating new totals that result from using a modifier.
 
-For more information about using the Apple Pay modifier, see [`Setting up the payment request API to accept Apple Pay`](https://developer.apple.com/documentation/apple_pay_on_the_web/payment_request_api/setting_up_the_payment_request_api_to_accept_apple_pay).
+For more information about using the Apple Pay modifier, see [`Setting up the payment request API to accept Apple Pay`](setting-up-the-payment-request-api-to-accept-apple-pay.md).
 
 ##### Providing Multiple Modifiers
 
@@ -170,4 +170,4 @@ Use the [`multiTokenContexts`](applepaymodifier/multitokencontexts.md) property 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaymodifier)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaymodifier)*

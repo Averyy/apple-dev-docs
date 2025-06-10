@@ -1,6 +1,6 @@
 # XPC_TYPE_SHMEM
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A type that represents a region of shared memory.

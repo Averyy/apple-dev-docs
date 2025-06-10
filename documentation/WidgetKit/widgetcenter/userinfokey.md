@@ -1,6 +1,6 @@
 # WidgetCenter.UserInfoKey
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 An object that defines keys for accessing information in a user info dictionary.
@@ -8,8 +8,9 @@ An object that defines keys for accessing information in a user info dictionary.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration

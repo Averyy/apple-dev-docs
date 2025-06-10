@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a SquareAzimuth case with an orientation that has a horizontal angle closest to the provided azimuth.
+Creates a [`SquareAzimuth`](squareazimuth.md) case with an orientation that has a horizontal angle closest to the provided azimuth.
 
 **Availability**:
 - visionOS 2.0+

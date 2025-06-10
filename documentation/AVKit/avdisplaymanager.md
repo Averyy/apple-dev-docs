@@ -21,8 +21,6 @@ If you set the display manager’s [`preferredDisplayCriteria`](avdisplaymanager
 
 > ❗ **Important**:  Don’t directly instantiate a display manager object. Instead, access the current instance from the key window’s [`avDisplayManager`](https://developer.apple.com/documentation/UIKit/UIWindow/avDisplayManager) property.
 
- Don’t directly instantiate a display manager object. Instead, access the current instance from the key window’s [`avDisplayManager`](https://developer.apple.com/documentation/UIKit/UIWindow/avDisplayManager) property.
-
 ## Topics
 
 ### Matching a Video’s Native Display Mode

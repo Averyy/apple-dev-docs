@@ -1,6 +1,6 @@
 # Implementing postprocess effects using Metal compute functions
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Create custom shaders to implement postprocess effects.
 
@@ -10,7 +10,7 @@ In iOS 15 and later, and macOS 12 and later, you can apply postprocess effects t
 
 One way to implement postprocess effects is to write custom Metal compute functions to process the rendered scene. Writing your own custom compute function gives you tremendous flexibility and allows you to create virtually any postprocessing effect. Because compute functions run on the GPU, they’re a good choice for implementing custom postprocessing effects.
 
-You can also implement many common postprocessing effects without writing your own compute functions by using image filters from the [`Metal Performance Shaders`](https://developer.apple.com/documentation/metalperformanceshaders) framework or [`Core Image`](https://developer.apple.com/documentation/coreimage), which also run on the GPU. For information on using the Metal Performance Shaders framework for postprocess effects, see [`Using Metal performance shaders to create custom postprocess effects`](using-metal-performance-shaders-to-create-custom-postprocess-effects.md). For information on using Core Image for postprocess effects, see [`Applying core image filters as a postprocess effect`](applying-core-image-filters-as-a-postprocess-effect.md).
+You can also implement many common postprocessing effects without writing your own compute functions by using image filters from the [`Metal Performance Shaders`](https://developer.apple.com/documentation/metalperformanceshaders) framework or [`Core Image`](https://developer.apple.com/documentation/CoreImage), which also run on the GPU. For information on using the Metal Performance Shaders framework for postprocess effects, see [`Using Metal performance shaders to create custom postprocess effects`](using-metal-performance-shaders-to-create-custom-postprocess-effects.md). For information on using Core Image for postprocess effects, see [`Applying core image filters as a postprocess effect`](applying-core-image-filters-as-a-postprocess-effect.md).
 
 ##### Check the Output Texture Pixel Format
 
@@ -41,7 +41,7 @@ void postProcessInvert(uint2 gid [[thread_position_in_grid]],
 }
 ```
 
-> **Note**: For more information on writing postprocess compute functions, see [`Processing a Texture in a Compute Function`](https://developer.apple.com/documentation/Metal/processing-a-texture-in-a-compute-function).
+> **Note**: For more information on writing postprocess compute functions, see [`Processing a texture in a compute function`](https://developer.apple.com/documentation/Metal/processing-a-texture-in-a-compute-function).
 
 ##### Load the Compute Function
 
@@ -128,4 +128,4 @@ arView.renderCallbacks.postProcess = postProcess
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/implementing-postprocess-effects-using-metal-compute-functions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/implementing-postprocess-effects-using-metal-compute-functions)*

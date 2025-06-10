@@ -1,6 +1,6 @@
 # xpc_dictionary_set_value(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Sets the value for the specified key to the specified object.

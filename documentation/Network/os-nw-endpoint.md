@@ -23,6 +23,7 @@ protocol OS_nw_endpoint : NSObjectProtocol, Sendable
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

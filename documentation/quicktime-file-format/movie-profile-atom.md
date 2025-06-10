@@ -1,6 +1,6 @@
 # Movie profile atom ('prfl')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 An atom that summarizes the features and complexity of a movie.

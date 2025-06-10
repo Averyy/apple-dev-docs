@@ -21,8 +21,6 @@ class MPMoviePlayerViewController
 
 > ❗ **Important**:  The [`MPMoviePlayerViewController`](mpmovieplayerviewcontroller.md) class is formally deprecated in iOS 9. (The [`MPMoviePlayerController`](mpmovieplayercontroller.md) class is also formally deprecated.) To play video content in iOS 9 and later, instead use the [`AVPictureInPictureController`](https://developer.apple.com/documentation/AVKit/AVPictureInPictureController) or [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) class from the AVKit framework, or the [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) class from WebKit.
 
- The [`MPMoviePlayerViewController`](mpmovieplayerviewcontroller.md) class is formally deprecated in iOS 9. (The [`MPMoviePlayerController`](mpmovieplayercontroller.md) class is also formally deprecated.) To play video content in iOS 9 and later, instead use the [`AVPictureInPictureController`](https://developer.apple.com/documentation/AVKit/AVPictureInPictureController) or [`AVPlayerViewController`](https://developer.apple.com/documentation/AVKit/AVPlayerViewController) class from the AVKit framework, or the [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) class from WebKit.
-
 Unlike using an [`MPMoviePlayerController`](mpmovieplayercontroller.md) object on its own to present a movie immediately, you can incorporate a movie player view controller wherever you would normally use a view controller. For example, you can present it using a tab bar or navigation bar-based interface, taking advantage of the transitions offered by those interfaces.
 
 To present a movie player view controller modally, you typically use the [`presentMoviePlayerViewControllerAnimated(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/presentMoviePlayerViewControllerAnimated(_:)) method. This method is part of a category on the [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) class and is implemented by the Media Player framework. The [`presentMoviePlayerViewControllerAnimated(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/presentMoviePlayerViewControllerAnimated(_:)) method presents a movie player view controller using the standard transition animations for presenting video content. To dismiss a modally presented movie player view controller, call the [`dismissMoviePlayerViewControllerAnimated()`](https://developer.apple.com/documentation/UIKit/UIViewController/dismissMoviePlayerViewControllerAnimated()) method.
@@ -50,6 +48,7 @@ To present a movie player view controller modally, you typically use the [`prese
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

@@ -36,6 +36,7 @@ Family Controls uses this type as a generic constraint for the `Title` of the [`
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

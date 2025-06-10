@@ -16,8 +16,8 @@ object externalPurchaseToken
 
 ## Mentions
 
-- [App Store Server Notifications changelog](app-store-server-notifications-changelog.md)
 - [Receiving App Store Server Notifications](receiving-app-store-server-notifications.md)
+- [App Store Server Notifications changelog](app-store-server-notifications-changelog.md)
 
 #### Discussion
 

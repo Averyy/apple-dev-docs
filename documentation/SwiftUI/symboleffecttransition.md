@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
-Creates a transition that applies the Appear or Disappear symbol animation to symbol images within the inserted or removed view hierarchy.
+Creates a transition that applies the Appear, Disappear, DrawOn or DrawOff symbol animation to symbol images within the inserted or removed view hierarchy.
 
 **Availability**:
 - iOS 17.0+

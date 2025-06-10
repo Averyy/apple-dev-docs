@@ -1,6 +1,6 @@
 # Setting up a remote notification server
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Generate notifications and push them to user devices.
 
@@ -23,8 +23,6 @@ You’re responsible for setting up a provider server (or servers) and for confi
 
 > 💡 **Tip**:  If you’re setting up a provider server to send push notifications to users in Safari and other browsers, see [`Sending web push notifications in web apps and browsers`](sending-web-push-notifications-in-web-apps-and-browsers.md).
 
- If you’re setting up a provider server to send push notifications to users in Safari and other browsers, see [`Sending web push notifications in web apps and browsers`](sending-web-push-notifications-in-web-apps-and-browsers.md).
-
 ##### Build Custom Infrastructure for Notifications
 
 Setting up a remote notification server consists of a few key tasks. How you implement these tasks depends on your infrastructure. Use the technologies that are appropriate for your company:
@@ -42,8 +40,6 @@ Communication between your provider server and APNs must take place over a secur
 If your provider server runs macOS Sequoia or later, both AAA and UserTrust Certificate Services root certificate are in the keychain by default. On other systems, you might need to install this certificate yourself. You can download the “AAACertificateServices 5/12/2020” certificate from the [`Sectigo KnowledgeBase`](https://developer.apple.comhttps://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL) website and “SHA-2 Root : USERTrust RSA Certification Authority” certificate from the [`SHA-2 Root : USERTrust RSA Certification Authority certificate`](https://developer.apple.comhttps://www.sectigo.com/knowledge-base/detail/Sectigo-Intermediate-Certificates/kA01N000000rfBO) website.
 
 > 💡 **Tip**:  APNs is migrating from AAA to UserTrust Certificate Services root certificate. For migration dates, consult [`Developer News`](https://developer.apple.comhttps://developer.apple.com/news/?id=09za8wzy).
-
- APNs is migrating from AAA to UserTrust Certificate Services root certificate. For migration dates, consult [`Developer News`](https://developer.apple.comhttps://developer.apple.com/news/?id=09za8wzy).
 
 To send notifications, your provider server must establish either token-based or certificate-based trust with APNs using HTTP/2 and TLS. Both techniques have advantages and disadvantages, so decide which technique is best for your company.
 

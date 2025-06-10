@@ -1,6 +1,6 @@
 # DOM_HIERARCHY_REQUEST_ERR
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

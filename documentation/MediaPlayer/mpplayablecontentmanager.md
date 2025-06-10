@@ -21,8 +21,6 @@ class MPPlayableContentManager
 
 > ❗ **Important**:  Some features of this class are specific to CarPlay, which requires a special entitlement issued by Apple. Apps without the correct entitlement won’t appear on the CarPlay home screen. See [`http://www.apple.com/ios/carplay/`](https://developer.apple.comhttp://www.apple.com/ios/carplay/) for more information.
 
- Some features of this class are specific to CarPlay, which requires a special entitlement issued by Apple. Apps without the correct entitlement won’t appear on the CarPlay home screen. See [`http://www.apple.com/ios/carplay/`](https://developer.apple.comhttp://www.apple.com/ios/carplay/) for more information.
-
 The app provides data to the content manager so that the media player can browse the content provided. A delegate provides the media player the ability to perform actions that manage the app’s playback queue.
 
 You don’t create a new content manager directly, instead you grab the shared content manager using the [`shared()`](mpplayablecontentmanager/shared().md) method. After getting the shared content manager, your next step depends on the features your app supports:

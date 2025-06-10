@@ -1,6 +1,6 @@
 # Developing a Document-Based App
 
-**Framework**: Appkit
+**Framework**: AppKit
 
 Write an app that creates, manages, edits, and saves text documents.
 
@@ -136,4 +136,4 @@ override func data(ofType typeName: String) throws -> Data {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/developing-a-document-based-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/developing-a-document-based-app)*

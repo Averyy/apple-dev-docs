@@ -1,6 +1,6 @@
 # allowsDirectories
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether the file upload control supports the selection of directories.
@@ -10,6 +10,7 @@ A Boolean value that indicates whether the file upload control supports the sele
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
 - macOS 10.13.4+
+- visionOS 2.4+
 
 ## Declaration
 

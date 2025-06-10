@@ -9,7 +9,7 @@ An entity component that detects and reacts to features of the physical environm
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS 1.0+
 
 ## Declaration
 

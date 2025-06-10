@@ -19,8 +19,6 @@ The system now requires this behavior in all cases, making the key irrelevant.
 
 > ⚠️ **Warning**:  Don’t use this key. The current system enforces this behavior, and new certificates can’t meet the requirement on older systems.
 
- Don’t use this key. The current system enforces this behavior, and new certificates can’t meet the requirement on older systems.
-
 ## See Also
 
 - [NSExceptionAllowsInsecureHTTPLoads](information-property-list/nsexceptionallowsinsecurehttploads.md)

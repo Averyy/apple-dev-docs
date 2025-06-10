@@ -1,6 +1,6 @@
 # init(name:webFrameView:webView:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: init
 
 Initializes the receiver with a frame name, web frame view, and controlling web view.

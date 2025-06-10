@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: init
 
 Creates a new authentication scheme with the specified raw value.

@@ -30,10 +30,10 @@ This cluster is used to allow clients to control the operation of a hot water he
 - [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclusterwaterheatermanagement/init(device:endpointid:queue:).md)
   For all instance methods (reads, writes, commands) that take a completion, the completion will be called on the provided queue.
 ### Instance Methods
-- [func boost(with: MTRWaterHeaterManagementClusterBoostParams, completion: MTRStatusCompletion)](mtrbaseclusterwaterheatermanagement/boost(with:completion:).md)
+- [func boost(with: MTRWaterHeaterManagementClusterBoostParams, completion: ((any Error)?) -> Void)](mtrbaseclusterwaterheatermanagement/boost(with:completion:).md)
   Command Boost
-- [func cancelBoost(completion: MTRStatusCompletion)](mtrbaseclusterwaterheatermanagement/cancelboost(completion:).md)
-- [func cancelBoost(with: MTRWaterHeaterManagementClusterCancelBoostParams?, completion: MTRStatusCompletion)](mtrbaseclusterwaterheatermanagement/cancelboost(with:completion:).md)
+- [func cancelBoost(completion: ((any Error)?) -> Void)](mtrbaseclusterwaterheatermanagement/cancelboost(completion:).md)
+- [func cancelBoost(with: MTRWaterHeaterManagementClusterCancelBoostParams?, completion: ((any Error)?) -> Void)](mtrbaseclusterwaterheatermanagement/cancelboost(with:completion:).md)
   Command CancelBoost
 - [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterwaterheatermanagement/readattributeacceptedcommandlist(completion:).md)
 - [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterwaterheatermanagement/readattributeattributelist(completion:).md)

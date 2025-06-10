@@ -1,6 +1,6 @@
 # WebPlugInContainerKey
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 An object that conforms to the `WebPlugInContainer` informal protocol. This object is used for callbacks from the plug-in to the enclosing application. If `WebPlugInContainerKey` is `nil`, no callbacks will occur.
@@ -19,7 +19,7 @@ let WebPlugInContainerKey: String
 - [let WebActionButtonKey: String](webactionbuttonkey.md)
   An NSNumber object where `0` indicates the left button, `1` indicates the middle button, and `2` indicates the right button.
 - [let WebActionElementKey: String](webactionelementkey.md)
-  A dictionary containing element information. See [`WebView`](webview.md) for a description of the key-value pairs in this dictionary.
+  A dictionary containing element information. See `WebView` for a description of the key-value pairs in this dictionary.
 - [let WebActionModifierFlagsKey: String](webactionmodifierflagskey.md)
   An unsigned number that indicates the modifier flag.
 - [let WebActionNavigationTypeKey: String](webactionnavigationtypekey.md)

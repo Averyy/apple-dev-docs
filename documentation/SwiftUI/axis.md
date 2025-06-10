@@ -43,6 +43,7 @@ enum Axis
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -54,6 +55,11 @@ enum Axis
   A normalized 3D point in a view’s coordinate space.
 - [struct Anchor](anchor.md)
   An opaque value derived from an anchor source and a particular view.
+- [protocol DepthAlignmentID](depthalignmentid.md)
+- [struct Alignment3D](alignment3d.md)
+  An alignment in all three axes.
+- [struct GeometryProxyCoordinateSpace3D](geometryproxycoordinatespace3d.md)
+  A representation of a `GeometryProxy3D` which can be used for `CoordinateSpace3D` based conversions.
 
 
 ---

@@ -33,6 +33,7 @@ protocol URLSessionWebSocketDelegate : URLSessionTaskDelegate
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [URLSessionDelegate](urlsessiondelegate.md)
 - [URLSessionTaskDelegate](urlsessiontaskdelegate.md)
 

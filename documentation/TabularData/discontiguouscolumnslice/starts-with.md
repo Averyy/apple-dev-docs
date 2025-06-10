@@ -1,6 +1,6 @@
 # starts(with:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns a Boolean value indicating whether the initial elements of the sequence are the same as the elements in another sequence.

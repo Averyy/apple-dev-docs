@@ -13,6 +13,7 @@ Asks the delegate whether the system should display the maneuver with updated tr
 ## Declaration
 
 ```swift
+@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, shouldUpdateNotificationFor maneuver: CPManeuver, with travelEstimates: CPTravelEstimates) -> Bool
 ```
 

@@ -19,6 +19,9 @@ object GameCenterGroup.Relationships
 - [object GameCenterGroup.Relationships.GameCenterDetails](gamecentergroup/relationships-data.dictionary/gamecenterdetails-data.dictionary.md)
 - [object GameCenterGroup.Relationships.GameCenterLeaderboardSets](gamecentergroup/relationships-data.dictionary/gamecenterleaderboardsets-data.dictionary.md)
 - [object GameCenterGroup.Relationships.GameCenterLeaderboards](gamecentergroup/relationships-data.dictionary/gamecenterleaderboards-data.dictionary.md)
+### Dictionaries
+- [object GameCenterGroup.Relationships.GameCenterActivities](gamecentergroup/relationships-data.dictionary/gamecenteractivities-data.dictionary.md)
+- [object GameCenterGroup.Relationships.GameCenterChallenges](gamecentergroup/relationships-data.dictionary/gamecenterchallenges-data.dictionary.md)
 
 ## See Also
 

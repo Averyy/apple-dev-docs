@@ -1,6 +1,6 @@
 # MEDIA_KEYERR_DOMAIN
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

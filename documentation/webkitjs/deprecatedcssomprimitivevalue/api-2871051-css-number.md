@@ -1,6 +1,6 @@
 # CSS_NUMBER
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

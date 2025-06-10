@@ -28,8 +28,6 @@ uploadTask.cancel { resumeData in
 
 > ❗ **Important**:  You can’t resume all uploads. The server must support the [`latest resumable upload protocol draft`](https://developer.apple.comhttps://www.ietf.org/archive/id/draft-ietf-httpbis-resumable-upload-01.txt) from the HTTP Working Group at the IETF. Also, uploads that use a background configuration handle resumption automatically, so manual resuming is only needed for non-background uploads.
 
- You can’t resume all uploads. The server must support the [`latest resumable upload protocol draft`](https://developer.apple.comhttps://www.ietf.org/archive/id/draft-ietf-httpbis-resumable-upload-01.txt) from the HTTP Working Group at the IETF. Also, uploads that use a background configuration handle resumption automatically, so manual resuming is only needed for non-background uploads.
-
 ##### Recover a Failed Upload
 
 If there’s only a momentary network interruption, but the server is still reachable, [`URLSession`](urlsession.md) automatically tries to resume the upload for you. No extra code is needed.

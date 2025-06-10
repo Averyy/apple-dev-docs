@@ -1,6 +1,6 @@
 # WKWebView.FullscreenState.enteringFullscreen
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 **Availability**:

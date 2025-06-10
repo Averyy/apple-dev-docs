@@ -1,6 +1,6 @@
 # WKWebpagePreferences.ContentMode.mobile
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 The content mode that represents a mobile experience.

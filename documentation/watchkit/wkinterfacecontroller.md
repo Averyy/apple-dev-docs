@@ -1,6 +1,6 @@
 # WKInterfaceController
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A class that provides the infrastructure for managing the interface in a watchOS app.
@@ -34,8 +34,6 @@ The [`willActivate()`](wkinterfacecontroller/willactivate().md) method lets you 
 The [`willActivate()`](wkinterfacecontroller/willactivate().md) method may be called at times when your interface isn’t yet onscreen. For example, WatchKit may call the method in advance so that you have time to update your content. WatchKit calls the [`didAppear()`](wkinterfacecontroller/didappear().md) method to let you know when your interface becomes visible. Similarly, WatchKit calls the [`willDisappear()`](wkinterfacecontroller/willdisappear().md) and [`didDeactivate()`](wkinterfacecontroller/diddeactivate().md) methods when your interface moves offscreen again.
 
 > ❗ **Important**:  An interface controller can make changes to its interface only in the [`awake(withContext:)`](wkinterfacecontroller/awake(withcontext:).md) method, in the [`willActivate()`](wkinterfacecontroller/willactivate().md) method, and while the interface is active. Once the system calls the [`didDeactivate()`](wkinterfacecontroller/diddeactivate().md) method, it ignores any attempts to change the value of the controller’s interface objects until the system calls the interface controller’s [`willActivate()`](wkinterfacecontroller/willactivate().md) method again.
-
- An interface controller can make changes to its interface only in the [`awake(withContext:)`](wkinterfacecontroller/awake(withcontext:).md) method, in the [`willActivate()`](wkinterfacecontroller/willactivate().md) method, and while the interface is active. Once the system calls the [`didDeactivate()`](wkinterfacecontroller/diddeactivate().md) method, it ignores any attempts to change the value of the controller’s interface objects until the system calls the interface controller’s [`willActivate()`](wkinterfacecontroller/willactivate().md) method again.
 
 In iOS Simulator, WatchKit calls the [`didDeactivate()`](wkinterfacecontroller/diddeactivate().md) method for the current interface controller when you lock the simulator by selecting Hardware > Lock. When you subsequently unlock the simulator, WatchKit calls that interface controller’s [`willActivate()`](wkinterfacecontroller/willactivate().md) method again. You can use this capability to debug your activation and deactivation code.
 

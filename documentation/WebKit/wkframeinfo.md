@@ -1,6 +1,6 @@
 # WKFrameInfo
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that contains information about a frame on a webpage.

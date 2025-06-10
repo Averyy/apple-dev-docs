@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: enum
 
-Constants that specify the text string that displays in the Return key of a keyboard.
+Constants that specify the type of Return key the keyboard displays.
 
 **Availability**:
 - iOS ?+
@@ -26,29 +26,29 @@ Use these constants with the [`returnKeyType`](uitextinputtraits/returnkeytype.m
 
 ### Constants
 - [UIReturnKeyType.default](uireturnkeytype/default.md)
-  Specifies that the visible title of the Return key is .
+  Specifies that the Return key displays an indication to accept the user’s input.
 - [UIReturnKeyType.go](uireturnkeytype/go.md)
-  Specifies that the visible title of the Return key is .
+  Specifies that the Return key displays an indication to proceed.
 - [UIReturnKeyType.google](uireturnkeytype/google.md)
-  Specifies that the visible title of the Return key is .
+  Specifies that the Return key displays an indication to search using Google.
 - [UIReturnKeyType.join](uireturnkeytype/join.md)
-  Specifies that the visible title of the Return key is .
+  Specifies that the Return key displays an indication to join something, such as a meeting.
 - [UIReturnKeyType.next](uireturnkeytype/next.md)
-  Specifies that the visible title of the Return key is .
+  Specifies that the Return key displays an indication to proceed forward.
 - [UIReturnKeyType.route](uireturnkeytype/route.md)
-  Specifies that the visible title of the Return key is .
+  Specifies that the Return key displays an indication to plan a route to a location.
 - [UIReturnKeyType.search](uireturnkeytype/search.md)
-  Specifies that the visible title of the Return key is .
+  Specifies that the Return key displays an indication to perform a search.
 - [UIReturnKeyType.send](uireturnkeytype/send.md)
-  Specifies that the visible title of the Return key is .
+  Specifies that the Return key displays an indication to send something, such as an email.
 - [UIReturnKeyType.yahoo](uireturnkeytype/yahoo.md)
-  Specifies that the visible title of the Return key is .
+  Specifies that the Return key displays an indication to search using Yahoo.
 - [UIReturnKeyType.done](uireturnkeytype/done.md)
-  Specifies that the visible title of the Return key is .
+  Specifies that the Return key displays an indication to accept the user’s input.
 - [UIReturnKeyType.emergencyCall](uireturnkeytype/emergencycall.md)
-  Specifies that the visible title of the Return key is .
+  Specifies that the Return key displays an indication to place an emergency phone call.
 - [UIReturnKeyType.continue](uireturnkeytype/continue.md)
-  Specifies that the visible title of the Return key is .
+  Specifies that the Return key displays an indication to continue what the user is doing.
 ### Initializers
 - [init?(rawValue: Int)](uireturnkeytype/init(rawvalue:).md)
 
@@ -60,6 +60,7 @@ Use these constants with the [`returnKeyType`](uitextinputtraits/returnkeytype.m
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -72,7 +73,7 @@ Use these constants with the [`returnKeyType`](uitextinputtraits/returnkeytype.m
 - [enum UIKeyboardAppearance](uikeyboardappearance.md)
   Constants that specify the appearance of the keyboard for a text-based view.
 - [var returnKeyType: UIReturnKeyType](uitextinputtraits/returnkeytype.md)
-  The visible title of the Return key.
+  The visible indication of what the Return key does.
 - [var textContentType: UITextContentType!](uitextinputtraits/textcontenttype.md)
   The semantic meaning for a text input area.
 - [struct UITextContentType](uitextcontenttype.md)

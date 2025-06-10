@@ -1,6 +1,6 @@
 # WeatherCondition.tropicalStorm
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Tropical storm.

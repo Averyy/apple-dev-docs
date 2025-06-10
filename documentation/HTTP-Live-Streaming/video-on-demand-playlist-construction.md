@@ -45,8 +45,6 @@ These are the tags used in the Video on Demand playlist example:
 
 > ❗ **Important**: Always use floating-point `EXTINF` durations (supported in protocol version 3). This allows the client to minimize round-off errors when seeking within the stream.
 
-Always use floating-point `EXTINF` durations (supported in protocol version 3). This allows the client to minimize round-off errors when seeking within the stream.
-
  Indicates that no more media files will be added to the playlist file.
 
 The VOD playlist example above uses full pathnames for the media file playlist entries. While this is allowed, using relative pathnames is preferable. Relative pathnames are more portable than absolute pathnames and are relative to the URL of the playlist file. Using full pathnames for the individual playlist entries often results in more text than using relative pathnames. Here’s the same playlist with relative pathnames:

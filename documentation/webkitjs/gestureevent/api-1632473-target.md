@@ -1,6 +1,6 @@
 # target
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The target of this gesture.

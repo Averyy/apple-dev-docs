@@ -6,7 +6,7 @@ Constants that represent conflicting records in a save operation.
 
 #### Overview
 
-If the version of a record on the server is newer than the version you try to save, the server returns a [`CKError.Code.serverRecordChanged`](ckerror/code/serverrecordchanged.md) error. The error’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary contains the different versions of the conflicting records. Use these keys to retrieve the records, and to perform any resolution logic necessary to resolve the conflict.
+If the version of a record on the server is newer than the version you try to save, the server returns a [`CKError.Code.serverRecordChanged`](ckerror/code/serverrecordchanged.md) error. The error’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary contains the different versions of the conflicting records. Use these keys to retrieve the records, and to perform any resolution logic necessary to resolve the conflict.
 
 ## Topics
 

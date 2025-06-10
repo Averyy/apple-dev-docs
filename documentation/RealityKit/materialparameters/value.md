@@ -8,6 +8,7 @@
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -35,10 +36,7 @@ enum Value
 - [var colorValue: NSColor?](materialparameters/value/colorvalue-12h12.md)
 - [var colorValue: UIColor?](materialparameters/value/colorvalue-1j7y0.md)
 ### Type Methods
-- [static func color(NSColor) -> MaterialParameters.Value](materialparameters/value/color(_:)-2oudw.md)
-- [static func color(UIColor) -> MaterialParameters.Value](materialparameters/value/color(_:)-69i8z.md)
-### Default Implementations
-- [Equatable Implementations](materialparameters/value/equatable-implementations.md)
+- [static color(_:)](materialparameters/value/color(_:)-6bk3t.md)
 
 ## Relationships
 

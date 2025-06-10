@@ -1,6 +1,6 @@
 # request
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The URL request object associated with the navigation action.

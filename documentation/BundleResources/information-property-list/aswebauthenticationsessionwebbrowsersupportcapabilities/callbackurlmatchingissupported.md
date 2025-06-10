@@ -14,8 +14,6 @@ Set the corresponding value to `YES` to indicate that your browser app supports 
 
 > ❗ **Important**: If the system doesn’t find this key in the default browser app’s `Info.plist`, it sends the request to Safari instead.
 
-If the system doesn’t find this key in the default browser app’s `Info.plist`, it sends the request to Safari instead.
-
 ## See Also
 
 - [IsSupported](information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities/issupported.md)

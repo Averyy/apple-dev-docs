@@ -1,6 +1,6 @@
 # PrecipitationType
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: typealias
 
 The type of precipitation forecasted to occur during the day.

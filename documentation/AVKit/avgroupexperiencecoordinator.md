@@ -39,6 +39,8 @@ Access an experience coordinator by querying a player view controller for its [`
 
 ## See Also
 
+- [Playing immersive media with AVKit](playing-immersive-media-with-avkit.md)
+  Adopt the system playback interface to provide an immersive video watching experience.
 - [Creating a multiview video playback experience in visionOS](creating-a-multiview-video-playback-experience-in-visionos.md)
   Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
 - [Adopting the system player interface in visionOS](adopting-the-system-player-interface-in-visionos.md)

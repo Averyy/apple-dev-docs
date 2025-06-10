@@ -1,6 +1,6 @@
 # view
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The view that uses this interaction.

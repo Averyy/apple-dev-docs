@@ -1,6 +1,6 @@
 # estimatedSampleLocation()
 
-**Framework**: Mediaextension  
+**Framework**: MediaExtension  
 **Kind**: method
 
 Returns an estimate of the sample location indicated by the cursor.

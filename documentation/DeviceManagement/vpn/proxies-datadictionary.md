@@ -11,18 +11,13 @@ The dictionary that contains the Proxies settings.
 - macOS 10.7+
 - tvOS 17.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- watchOS 10.0+
 
 ## Declaration
 
 ```swift
 object VPN.Proxies
 ```
-
-#### Discussion
-
-The system uses this dictionary when the `VPNType` is `Proxies`.
 
 ## See Also
 
@@ -38,10 +33,10 @@ The system uses this dictionary when the `VPNType` is `Proxies`.
   The dictionary that contains IPV4 settings.
 - [object VPN.PPP](vpn/ppp-data.dictionary.md)
   The dictionary that contains PPP settings.
-- [object VPN.VPN](vpn/vpn-data.dictionary.md)
-  The dictionary that contains VPN, IPSec, and IKEv2 settings.
 - [object VPN.TransparentProxy](vpn/transparentproxy-data.dictionary.md)
   The dictionary to use for a transparent proxy VPN type.
+- [object VPN.VPN](vpn/vpn-data.dictionary.md)
+  The dictionary that contains VPN, IPSec, and IKEv2 settings.
 - [object VPN.VendorConfig](vpn/vendorconfig-data.dictionary.md)
   The vendor-specific configuration dictionary.
 

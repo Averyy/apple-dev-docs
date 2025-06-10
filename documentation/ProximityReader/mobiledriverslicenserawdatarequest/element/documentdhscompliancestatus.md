@@ -9,6 +9,7 @@ The document’s DHS (U.S. Department of Homeland Security) compliance status.
 - iOS 17.2+
 - iPadOS 17.2+
 - Mac Catalyst 17.2+
+- visionOS 1.0+
 
 ## Declaration
 

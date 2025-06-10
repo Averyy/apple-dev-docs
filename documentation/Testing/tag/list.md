@@ -46,6 +46,7 @@ To add this trait to a test, use the [`tags(_:)`](trait/tags(_:).md) function.
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SuiteTrait](suitetrait.md)
 - [TestTrait](testtrait.md)
 - [Trait](trait.md)

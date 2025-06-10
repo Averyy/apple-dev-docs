@@ -1,6 +1,6 @@
 # download(_:didReceivePlaceholderURL:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

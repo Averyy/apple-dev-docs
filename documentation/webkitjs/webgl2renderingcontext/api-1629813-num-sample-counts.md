@@ -1,6 +1,6 @@
 # NUM_SAMPLE_COUNTS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

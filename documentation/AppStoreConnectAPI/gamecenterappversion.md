@@ -3,10 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a Game Center app version resource.
-
 **Availability**:
-- App Store Connect API 3.0+
+- App Store Connect API 3.6+
 
 ## Declaration
 
@@ -16,7 +14,7 @@ object GameCenterAppVersion
 
 ## Topics
 
-### Objects
+### Dictionaries
 - [object GameCenterAppVersion.Attributes](gamecenterappversion/attributes-data.dictionary.md)
 - [object GameCenterAppVersion.Relationships](gamecenterappversion/relationships-data.dictionary.md)
 
@@ -34,6 +32,7 @@ object GameCenterAppVersion
   The request body you use to update an app version.
 - [object GameCenterAppVersionsResponse](gamecenterappversionsresponse.md)
   A response that contains a list of app version resources.
+- [object GameCenterAppVersionAppStoreVersionLinkageResponse](gamecenterappversionappstoreversionlinkageresponse.md)
 
 
 ---

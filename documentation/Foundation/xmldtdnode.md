@@ -62,6 +62,8 @@ Setting the object value or string value of an [`XMLDTDNode`](xmldtdnode.md) obj
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

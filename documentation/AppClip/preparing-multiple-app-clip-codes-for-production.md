@@ -37,6 +37,8 @@ AppClipCode2.svg, https://appclip.example.com/
 
 - [Creating App Clip Codes](creating-app-clip-codes.md)
   Help users discover your App Clip by using an NFC-integrated or scan-only App Clip Code.
+- [Encoding a URL in an App Clip Code](encoding-a-url-in-an-app-clip-code.md)
+  Choose an invocation URL for your App Clip Code that you can encode efficiently.
 - [Interacting with App Clip Codes in AR](interacting-with-app-clip-codes-in-ar.md)
   Display content and provide services in an AR experience with App Clip Codes.
 

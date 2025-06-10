@@ -1,6 +1,6 @@
 # WeatherCondition
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: enum
 
 A description of the current weather condition.
@@ -131,6 +131,8 @@ enum WeatherCondition
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # xpc_array_get_array(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the array at the specified index in the array.

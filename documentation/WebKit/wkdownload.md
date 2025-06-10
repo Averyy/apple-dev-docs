@@ -1,6 +1,6 @@
 # WKDownload
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that represents the download of a web resource.

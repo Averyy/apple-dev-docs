@@ -1,6 +1,6 @@
 # Improving accessibility support in your visionOS app
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Update your code to ensure everyone can access your app’s content in visionOS.
 

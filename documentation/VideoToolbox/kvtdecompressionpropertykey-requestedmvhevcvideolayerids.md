@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_RequestedMVHEVCVideoLayerIDs
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 Requests multi-image decoding of specific MV-HEVC video layers.

@@ -21,7 +21,7 @@ typealias sec_protocol_key_update_complete_t = () -> Void
 #### Discussion
 
 ```None
-  Block to be invoked when a key update event is handled.
+ Block to be invoked when a key update event is handled.
 ```
 
 

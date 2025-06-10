@@ -1,6 +1,6 @@
 # Requesting access to protected resources
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Provide a purpose string that explains to a person why you need access to protected resources on their device.
 
@@ -90,4 +90,4 @@ This command resets authorization access for all apps using the protected resour
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/requesting-access-to-protected-resources)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/requesting-access-to-protected-resources)*

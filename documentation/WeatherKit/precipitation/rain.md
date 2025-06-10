@@ -1,6 +1,6 @@
 # Precipitation.rain
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Rain.

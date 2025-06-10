@@ -33,7 +33,7 @@ In Apple Pay JS API version 1 and 2, [`completeShippingMethodSelection`](applepa
 
 `status`
 
-The status of the shipping method update. For valid values, see [`Apple Pay Status Codes`](https://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/apple_pay_status_codes). If status is not [`STATUS_SUCCESS`](applepaysession/status_success.md), pass null for the other parameters.
+The status of the shipping method update. For valid values, see [`Apple Pay Status Codes`](apple-pay-status-codes.md). If status is not [`STATUS_SUCCESS`](applepaysession/status_success.md), pass null for the other parameters.
 
 `newTotal`
 

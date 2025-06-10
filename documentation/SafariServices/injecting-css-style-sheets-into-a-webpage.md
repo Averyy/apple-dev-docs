@@ -1,6 +1,6 @@
 # Injecting CSS style sheets into a webpage
 
-**Framework**: Safariservices
+**Framework**: Safari Services
 
 Add to or override styles by injecting CSS style sheets into webpages.
 
@@ -48,4 +48,4 @@ Your style sheet can reference resources in your app extension’s bundle. All r
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/injecting-css-style-sheets-into-a-webpage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/injecting-css-style-sheets-into-a-webpage)*

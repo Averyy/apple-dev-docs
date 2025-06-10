@@ -23,6 +23,9 @@
 ### Inherits From
 - [AppExtensionConfiguration](../ExtensionFoundation/AppExtensionConfiguration.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+### Inherited By
+- [ManagedDownloaderExtensionConfiguration](manageddownloaderextensionconfiguration.md)
 
 ## See Also
 

@@ -29,6 +29,9 @@ Add keys to your app’s [`Information Property List`](information-property-list
   A key that defines a URL that AdAttributionKit uses to deliver copies of ad attribution postbacks.
 - [EligibleForAdAttributionKitReengagementPostbackCopies](information-property-list/eligibleforadattributionkitreengagementpostbackcopies.md)
   A Boolean value that indicates whether the developer receives copies of AdAttributionKit reengagement postbacks.
+### AlarmKit
+- [NSAlarmKitUsageDescription](information-property-list/nsalarmkitusagedescription.md)
+  A message that tells people why the app is requesting access to schedule alarms.
 ### Always On display
 - [WKSupportsAlwaysOnDisplay](information-property-list/wksupportsalwaysondisplay.md)
   A Boolean value that determines whether the system displays the app in the Always On state.
@@ -65,6 +68,10 @@ Add keys to your app’s [`Information Property List`](information-property-list
   The platforms for which your app requires or you recommend a game controller.
 - [GCSupportsMultipleMicroGamepads](information-property-list/gcsupportsmultiplemicrogamepads.md)
   A Boolean value indicating whether the physical Apple TV Remote and the Apple TV Remote app operate as separate game controllers.
+- [LSSupportsGameMode](information-property-list/lssupportsgamemode.md)
+  A Boolean value indicating whether the app supports Game Mode.
+- [GCSupportsGameMode](information-property-list/gcsupportsgamemode.md)
+  A Boolean value indicating whether the app supports game mode.
 ### Intents
 - [INIntentsSupported](information-property-list/inintentssupported.md)
   The names of the intent classes your app handles directly.
@@ -129,6 +136,9 @@ Add keys to your app’s [`Information Property List`](information-property-list
 ### User activities
 - [NSUserActivityTypes](information-property-list/nsuseractivitytypes.md)
   The user activity types that the app supports.
+### Wi-Fi Aware
+- [WiFiAwareServices](information-property-list/wifiawareservices.md)
+  Dictionaries of Wi-Fi Aware services that the app can publish or subscribe to.
 
 ## See Also
 

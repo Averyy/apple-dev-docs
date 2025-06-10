@@ -17,14 +17,13 @@ The node’s children.
 ## Declaration
 
 ```swift
-@MainActor
 var children: [SKNode] { get }
 ```
 
 ## Mentions
 
-- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
 - [Accessing and Modifying the Node Tree](accessing-and-modifying-the-node-tree.md)
+- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
 
 #### Discussion
 

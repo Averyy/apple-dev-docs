@@ -21,8 +21,6 @@ The conversion service supports files that meet the following criteria:
 
 > ❗ **Important**: As part of your uploading workflow, inform people that the service temporarily stores iWork documents on Apple servers for the purpose of conversion. Provide the option to enable and disable the iWork preview feature, and display a privacy notice such as “When using iWork online previews, your files will be temporarily stored on Apple servers.”
 
-As part of your uploading workflow, inform people that the service temporarily stores iWork documents on Apple servers for the purpose of conversion. Provide the option to enable and disable the iWork preview feature, and display a privacy notice such as “When using iWork online previews, your files will be temporarily stored on Apple servers.”
-
 To convert iWork documents to PDF files using the iWork document-exporting service, sign up by generating the keys and service identifier the service requires. This process consists of several steps that you need to perform in the order described below.
 
 ##### Log in to the Developer Portal

@@ -28,7 +28,7 @@ It is an error to use an `AVSampleBufferRequest` object with mode set to `AVSamp
 
 ## See Also
 
-- [func makeSampleBuffer(for: AVSampleBufferRequest) throws -> CMSampleBuffer](avsamplebuffergenerator/makesamplebuffer(for:).md)
+- [func makeSampleBuffer(for: AVSampleBufferRequest) throws -> sending CMSampleBuffer](avsamplebuffergenerator/makesamplebuffer(for:).md)
   Creates a sample buffer, and attempts to load its data asynchronously if requested.
 - [func makeBatch() -> AVSampleBufferGeneratorBatch](avsamplebuffergenerator/makebatch.md)
   Creates a batch object to handle generating multiple sample buffers.

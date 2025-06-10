@@ -1,6 +1,6 @@
 # count
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: property
 
 The number of key-value pairs in the dictionary.

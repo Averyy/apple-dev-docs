@@ -1,6 +1,6 @@
 # systemRecommendedVideoZoomRange
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The system’s recommended zoom range for this device format.

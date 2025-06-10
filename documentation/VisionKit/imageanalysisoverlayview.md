@@ -1,6 +1,6 @@
 # ImageAnalysisOverlayView
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: class
 
 A view that enables people to interact with recognized text, barcodes, and other objects in an image.

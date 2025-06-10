@@ -1,6 +1,6 @@
 # contentsRect
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A rectangle, in unit coordinate space, that describes the content area of the interaction.

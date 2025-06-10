@@ -17,21 +17,20 @@ The sequence used to specify the color components of a particle over its lifetim
 ## Declaration
 
 ```swift
+@MainActor
 var particleColorSequence: SKKeyframeSequence? { get set }
 ```
 
 ## Mentions
 
-- [Using Keyframe Sequence to effect Custom Interpolation](using-keyframe-sequence-to-effect-custom-interpolation.md)
 - [Animating Particle Properties Across Disparate Values](animating-particle-properties-across-disparate-values.md)
+- [Using Keyframe Sequence to effect Custom Interpolation](using-keyframe-sequence-to-effect-custom-interpolation.md)
 
 #### Discussion
 
 The default value is `nil`. If a non-`nil` value is specified, then the [`particleColor`](skemitternode/particlecolor.md), [`particleColorAlphaRange`](skemitternode/particlecoloralpharange.md), [`particleColorRedRange`](skemitternode/particlecolorredrange.md), [`particleColorGreenRange`](skemitternode/particlecolorgreenrange.md), [`particleColorBlueRange`](skemitternode/particlecolorbluerange.md), [`particleColorAlphaSpeed`](skemitternode/particlecoloralphaspeed.md), [`particleColorRedSpeed`](skemitternode/particlecolorredspeed.md), [`particleColorGreenSpeed`](skemitternode/particlecolorgreenspeed.md), and [`particleColorBlueSpeed`](skemitternode/particlecolorbluespeed.md) properties are ignored. Instead, the sequence is used to specify the particle color.
 
 > ❗ **Important**:  If you create an [`SKEmitterNode`](skemitternode.md) object using Xcode’s particle editor, it uses a color sequence to implement the color change.
-
- If you create an [`SKEmitterNode`](skemitternode.md) object using Xcode’s particle editor, it uses a color sequence to implement the color change.
 
 ## See Also
 

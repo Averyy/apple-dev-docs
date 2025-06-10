@@ -14,8 +14,6 @@ Learn what’s new in the Apple Search Ads iAd Attribution API.
 
 > ❗ **Important**:  The Apple Search Ads iAd Attribution API is deprecated. Use the [`AdServices`](https://developer.apple.com/documentation/AdServices) framework for current attribution integration with the [`Apple Search Ads`](https://developer.apple.com/documentation/apple_search_ads) Campaign Management API for devices using iOS 14.3 and later. Attribution isn’t available for downloads and redownloads from devices using iOS 14.2 or earlier.
 
- The Apple Search Ads iAd Attribution API is deprecated. Use the [`AdServices`](https://developer.apple.com/documentation/AdServices) framework for current attribution integration with the [`Apple Search Ads`](https://developer.apple.com/documentation/apple_search_ads) Campaign Management API for devices using iOS 14.3 and later. Attribution isn’t available for downloads and redownloads from devices using iOS 14.2 or earlier.
-
 ## See Also
 
 - [Setting Up Apple Search Ads Attribution](setting-up-apple-search-ads-attribution.md)

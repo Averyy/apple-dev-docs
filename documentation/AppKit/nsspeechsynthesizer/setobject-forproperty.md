@@ -1,6 +1,6 @@
 # setObject(_:forProperty:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Specifies the value of a receiver’s property.

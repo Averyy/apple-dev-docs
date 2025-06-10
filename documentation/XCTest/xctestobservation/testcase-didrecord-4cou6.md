@@ -1,6 +1,6 @@
 # testCase(_:didRecord:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Notifies the observer when a test case reports an issue.
@@ -8,7 +8,7 @@ Notifies the observer when a test case reports an issue.
 ## Declaration
 
 ```swift
-optional func testCase(_ testCase: XCTestCase, didRecord issue: XCTIssueReference)
+optional func testCase(_ testCase: XCTestCase, didRecord issue: XCTIssue)
 ```
 
 ## Parameters

@@ -23,6 +23,7 @@ struct Divider
 ## Mentions
 
 - [Building layouts with stack views](building-layouts-with-stack-views.md)
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Overview
 

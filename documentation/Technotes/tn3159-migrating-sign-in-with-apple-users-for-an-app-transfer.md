@@ -189,4 +189,4 @@ Within your app or web service, you can confirm the user migration was successfu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3159-migrating-sign-in-with-apple-users-for-an-app-transfer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3159-migrating-sign-in-with-apple-users-for-an-app-transfer)*

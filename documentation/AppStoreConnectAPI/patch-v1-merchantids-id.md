@@ -18,6 +18,7 @@ Update a specific merchant ID.
   Get information for a merchant ID.
 - [List certificates for a merchant ID](get-v1-merchantids-_id_-certificates.md)
   Get a list of all certificates for a specific merchant ID.
+- [GET /v1/merchantIds/{id}/relationships/certificates](get-v1-merchantids-_id_-relationships-certificates.md)
 - [Create a merchant ID](post-v1-merchantids.md)
   Add a new merchant ID to your team.
 - [Delete a merchant ID](delete-v1-merchantids-_id_.md)

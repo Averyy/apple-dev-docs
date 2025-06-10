@@ -1,6 +1,6 @@
 # bounds
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The location of the recognized item in the view.

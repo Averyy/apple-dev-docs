@@ -24,8 +24,6 @@ The system only calls the specified action when the exposure bias slider changes
 
 > ❗ **Important**:  Don’t change the capture device’s exposure target bias when the system calls the action.
 
- Don’t change the capture device’s exposure target bias when the system calls the action.
-
 ## Parameters
 
 - `device`: The capture device to control.

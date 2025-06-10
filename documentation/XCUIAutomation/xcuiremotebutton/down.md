@@ -1,6 +1,6 @@
 # XCUIRemoteButton.down
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents the down button on a remote.

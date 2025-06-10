@@ -1,6 +1,6 @@
 # tableView(_:objectValueFor:row:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Called by the table view to return the data object associated with the specified row and column.

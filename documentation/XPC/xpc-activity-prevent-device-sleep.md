@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_PREVENT_DEVICE_SLEEP
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A Boolean that indicates whether the activity prevents the system from sleeping while on battery power.

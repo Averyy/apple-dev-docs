@@ -1,6 +1,6 @@
 # changes
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The weather changes query.

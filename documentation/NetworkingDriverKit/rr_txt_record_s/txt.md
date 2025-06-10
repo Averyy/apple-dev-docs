@@ -9,7 +9,7 @@
 ## Declaration
 
 ```swift
-uint8_t txt[];
+uint8_t txt[0];
 ```
 
 

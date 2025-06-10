@@ -6,12 +6,12 @@
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
+- Mac Catalyst 13.0+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS 1.0+
 - watchOS 2.0+
 - Unknown ?+ - Deprecated
-- Mac Catalyst 13.0+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -31,6 +31,8 @@ typealias UnsafeConcurrentValue = UnsafeSendable
   A singleton actor whose executor is equivalent to the main dispatch queue.
 - [protocol GlobalActor](globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
+- [protocol SendableMetatype](sendablemetatype.md)
+  A type `T` whose metatype `T.Type` is `Sendable`.
 - [typealias ConcurrentValue](concurrentvalue.md)
 - [protocol UnsafeSendable](unsafesendable.md)
   A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.

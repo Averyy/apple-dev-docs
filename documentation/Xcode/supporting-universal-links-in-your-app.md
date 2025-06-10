@@ -11,13 +11,13 @@ When a user activates a universal link, the system launches your app and sends i
 To support universal links in your app:
 
 1. Create a two-way association between your app and your website and specify the URLs that your app handles. See [`Supporting associated domains`](supporting-associated-domains.md).
-2. Update your app delegate to respond when it receives an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object with the [`activityType`](https://developer.apple.com/documentation/foundation/nsuseractivity/1409611-activitytype) set to [`NSUserActivityTypeBrowsingWeb`](https://developer.apple.com/documentation/Foundation/NSUserActivityTypeBrowsingWeb).
+2. Update your app delegate to respond when it receives an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object with the [`activityType`](https://developer.apple.com/documentation/Foundation/NSUserActivity/activityType) set to [`NSUserActivityTypeBrowsingWeb`](https://developer.apple.com/documentation/Foundation/NSUserActivityTypeBrowsingWeb).
 
 > ⚠️ **Warning**: Universal links offer a potential attack vector into your app, so make sure to validate all URL parameters and discard any malformed URLs. In addition, limit the available actions to those that don’t risk the user’s data. For example, don’t allow universal links to directly delete content or access sensitive information about the user. When testing your URL-handling code, make sure your test cases include improperly formatted URLs.
 
 ##### Update Your App Delegate to Respond to a Universal Link
 
-When the system opens your app as the result of a universal link, your app receives an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object with an [`activityType`](https://developer.apple.com/documentation/foundation/nsuseractivity/1409611-activitytype) value of [`NSUserActivityTypeBrowsingWeb`](https://developer.apple.com/documentation/Foundation/NSUserActivityTypeBrowsingWeb). The activity object’s [`webpageURL`](https://developer.apple.com/documentation/foundation/nsuseractivity/1418086-webpageurl) property contains the HTTP or HTTPS URL that the user accesses. Use [`NSURLComponents`](https://developer.apple.com/documentation/Foundation/NSURLComponents) APIs to extract the components of the URL. See the examples that follow.
+When the system opens your app as the result of a universal link, your app receives an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object with an [`activityType`](https://developer.apple.com/documentation/Foundation/NSUserActivity/activityType) value of [`NSUserActivityTypeBrowsingWeb`](https://developer.apple.com/documentation/Foundation/NSUserActivityTypeBrowsingWeb). The activity object’s [`webpageURL`](https://developer.apple.com/documentation/Foundation/NSUserActivity/webpageURL) property contains the HTTP or HTTPS URL that the user accesses. Use [`NSURLComponents`](https://developer.apple.com/documentation/Foundation/NSURLComponents) APIs to extract the components of the URL. See the examples that follow.
 
 This example code shows how to handle a universal link in macOS:
 
@@ -151,4 +151,4 @@ func handle(_ userActivity: NSUserActivity)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/supporting-universal-links-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/supporting-universal-links-in-your-app)*

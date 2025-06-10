@@ -23,6 +23,8 @@ protocol MTLSharedEvent : MTLEvent
 
 - [About Synchronization Events](about-synchronization-events.md)
 - [Synchronizing Events Across Multiple Devices or Processes](synchronizing-events-across-multiple-devices-or-processes.md)
+- [Synchronizing resource accesses between multiple passes with a fence](synchronizing-resource-accesses-between-multiple-passes-with-a-fence.md)
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 
 #### Overview
 
@@ -45,6 +47,7 @@ For more information, see [`Synchronizing Events Across Multiple Devices or Proc
 - [func makeSharedEventHandle() -> MTLSharedEventHandle](mtlsharedevent/makesharedeventhandle.md)
   Creates a new shareable event handle.
 ### Instance Methods
+- [func valueSignaled(UInt64) async](mtlsharedevent/valuesignaled(_:).md)
 - [func wait(untilSignaledValue: UInt64, timeoutMS: UInt64) -> Bool](mtlsharedevent/wait(untilsignaledvalue:timeoutms:).md)
 
 ## Relationships
@@ -52,6 +55,8 @@ For more information, see [`Synchronizing Events Across Multiple Devices or Proc
 ### Inherits From
 - [MTLEvent](mtlevent.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

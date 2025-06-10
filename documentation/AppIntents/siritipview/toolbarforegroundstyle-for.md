@@ -6,7 +6,7 @@
 Specifies the preferred foreground style of bars managed by SwiftUI.
 
 **Availability**:
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration

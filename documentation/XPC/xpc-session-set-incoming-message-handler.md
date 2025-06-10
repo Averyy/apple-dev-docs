@@ -1,6 +1,6 @@
 # xpc_session_set_incoming_message_handler(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Sets a handler to receive incoming messages for a session.

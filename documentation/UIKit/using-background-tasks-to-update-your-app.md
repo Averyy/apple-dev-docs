@@ -1,6 +1,6 @@
 # Using background tasks to update your app
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Configure your app to perform tasks in the background to make efficient use of processing time and power.
 
@@ -109,4 +109,4 @@ func handleAppRefresh(task: BGAppRefreshTask) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/using-background-tasks-to-update-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/using-background-tasks-to-update-your-app)*

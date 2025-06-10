@@ -1,6 +1,6 @@
 # Retrieving a Large Record Set
 
-**Framework**: Devicemanagement
+**Framework**: Device Management
 
 Efficiently work with large record sets.
 
@@ -53,4 +53,4 @@ For performance reasons, you shouldn’t submit more than five requests simultan
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/retrieving-a-large-record-set)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/retrieving-a-large-record-set)*

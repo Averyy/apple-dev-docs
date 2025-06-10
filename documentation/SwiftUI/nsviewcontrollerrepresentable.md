@@ -25,8 +25,6 @@ The system doesn’t automatically communicate changes occurring within your vie
 
 > ⚠️ **Warning**: SwiftUI fully controls the layout of the AppKit view controller’s view using the view’s [`frame`](https://developer.apple.com/documentation/AppKit/NSView/frame) and [`bounds`](https://developer.apple.com/documentation/AppKit/NSView/bounds) properties. Don’t directly set these layout-related properties on the view managed by an `NSViewControllerRepresentable` instance from your own code because that conflicts with SwiftUI and results in undefined behavior.
 
-SwiftUI fully controls the layout of the AppKit view controller’s view using the view’s [`frame`](https://developer.apple.com/documentation/AppKit/NSView/frame) and [`bounds`](https://developer.apple.com/documentation/AppKit/NSView/bounds) properties. Don’t directly set these layout-related properties on the view managed by an `NSViewControllerRepresentable` instance from your own code because that conflicts with SwiftUI and results in undefined behavior.
-
 ## Topics
 
 ### Creating and updating the view controller

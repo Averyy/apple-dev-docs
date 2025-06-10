@@ -25,8 +25,6 @@ You can only create an adaptor with a track output that vends metadata, and that
 
 > ❗ **Important**:  Don’t call the [`copyNextSampleBuffer()`](avassetreaderoutput/copynextsamplebuffer().md) method on the track output after you use it to initialize a timed metadata adaptor. Calling the track output’s [`copyNextSampleBuffer()`](avassetreaderoutput/copynextsamplebuffer().md) method after this occurs results in the system throwing an exception.
 
- Don’t call the [`copyNextSampleBuffer()`](avassetreaderoutput/copynextsamplebuffer().md) method on the track output after you use it to initialize a timed metadata adaptor. Calling the track output’s [`copyNextSampleBuffer()`](avassetreaderoutput/copynextsamplebuffer().md) method after this occurs results in the system throwing an exception.
-
 ## Parameters
 
 - `trackOutput`: A track output that vends sample buffers that contain metadata.

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A query dictionary to get information about a device.
+An array of query dictionaries to get information about a device.
 
 **Availability**:
 - iOS 4.0+
@@ -12,8 +12,6 @@ A query dictionary to get information about a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

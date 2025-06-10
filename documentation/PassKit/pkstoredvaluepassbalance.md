@@ -23,8 +23,6 @@ class PKStoredValuePassBalance
 
 > ❗ **Important**:  A stored balance of type of [`cash`](pkstoredvaluepassbalance/balancetype-swift.struct/cash.md) requires a valid currency code.
 
- A stored balance of type of [`cash`](pkstoredvaluepassbalance/balancetype-swift.struct/cash.md) requires a valid currency code.
-
 ## Topics
 
 ### Getting the pass status

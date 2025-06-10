@@ -33,6 +33,7 @@ struct UTF16View
 - [Collection](collection.md)
 - [Copyable](copyable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 

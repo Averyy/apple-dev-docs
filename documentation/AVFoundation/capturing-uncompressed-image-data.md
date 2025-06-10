@@ -1,6 +1,6 @@
 # Capturing Uncompressed Image Data
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Get processed image data without compression to use for filtering or lossless output.
 
@@ -74,4 +74,4 @@ Alternatively, to get an uncompressed photo ready for writing to a file, use the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/capturing-uncompressed-image-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/capturing-uncompressed-image-data)*

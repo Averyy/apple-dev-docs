@@ -29,8 +29,6 @@ Use a series query to access the individual [`HKQuantity`](hkquantity.md) object
 
 > ❗ **Important**:  For many common calculations, consider using a statistical query instead. Statistical queries correctly handle quantity data, whether the samples represent a single quantity or a series.
 
- For many common calculations, consider using a statistical query instead. Statistical queries correctly handle quantity data, whether the samples represent a single quantity or a series.
-
 ## Topics
 
 ### Creating a Series Query
@@ -56,6 +54,7 @@ Use a series query to access the individual [`HKQuantity`](hkquantity.md) object
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

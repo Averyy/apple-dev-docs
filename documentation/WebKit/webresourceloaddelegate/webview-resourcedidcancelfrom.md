@@ -1,6 +1,6 @@
 # webView(_:resource:didCancel:from:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Invoked when an authentication challenge for a resource was canceled.

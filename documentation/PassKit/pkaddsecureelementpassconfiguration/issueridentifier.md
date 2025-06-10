@@ -22,8 +22,6 @@ var issuerIdentifier: String? { get set }
 
 > ❗ **Important**:  This property’s value is unique for each issuer. This property is available only to developers who work with Apple to enable this functionality.
 
- This property’s value is unique for each issuer. This property is available only to developers who work with Apple to enable this functionality.
-
 ## See Also
 
 - [var localizedDescription: String?](pkaddsecureelementpassconfiguration/localizeddescription.md)

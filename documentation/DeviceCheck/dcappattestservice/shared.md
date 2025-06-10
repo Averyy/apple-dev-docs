@@ -22,8 +22,8 @@ class var shared: DCAppAttestService { get }
 
 ## Mentions
 
-- [Establishing your app’s integrity](establishing-your-app-s-integrity.md)
 - [Validating apps that connect to your server](validating-apps-that-connect-to-your-server.md)
+- [Establishing your app’s integrity](establishing-your-app-s-integrity.md)
 
 #### Discussion
 

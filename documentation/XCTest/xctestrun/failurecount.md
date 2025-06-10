@@ -1,6 +1,6 @@
 # failureCount
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The number of test failures during the run.

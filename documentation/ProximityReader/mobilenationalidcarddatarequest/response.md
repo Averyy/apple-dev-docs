@@ -30,6 +30,8 @@ struct Response
   The document elements from a successful mobile national ID card data request.
 - [var hashValue: Int](mobilenationalidcarddatarequest/response/hashvalue.md)
   The hash value.
+- [let region: Locale.Region](mobilenationalidcarddatarequest/response/region.md)
+  The region of the requested document.
 ### Instance Methods
 - [func hash(into: inout Hasher)](mobilenationalidcarddatarequest/response/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.
@@ -39,9 +41,12 @@ struct Response
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [MobileDocumentDataResponse](mobiledocumentdataresponse.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -12,8 +12,6 @@ A reference to a PKCS #12 password-protected identity.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,9 +19,13 @@ A reference to a PKCS #12 password-protected identity.
 object AssetCredentialIdentity
 ```
 
+#### Discussion
+
+Specify `com.apple.asset.credential.identity` as the declaration type.
+
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object AssetCredentialIdentityAuthenticationObject](assetcredentialidentityauthenticationobject.md)
   The server authentication details for an asset-credential identity.
 - [object AssetCredentialIdentityReferenceObject](assetcredentialidentityreferenceobject.md)

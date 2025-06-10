@@ -1,6 +1,6 @@
 # webView(_:navigationResponse:didBecome:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the delegate that a navigation response became a download.

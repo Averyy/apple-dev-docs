@@ -5,6 +5,13 @@
 
 Removes the elements of the given set from this set.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift
@@ -15,7 +22,7 @@ mutating func subtract(_ other: Self)
 
 In the following example, the elements of the `employees` set that are also members of the `neighbors` set are removed. In particular, the names `"Bethany"` and `"Eric"` are removed from `employees`.
 
-```swift
+```None
 var employees: Set = ["Alicia", "Bethany", "Chris", "Diana", "Eric"]
 let neighbors: Set = ["Bethany", "Eric", "Forlani", "Greta"]
 employees.subtract(neighbors)

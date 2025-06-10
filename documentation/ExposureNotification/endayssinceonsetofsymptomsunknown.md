@@ -20,8 +20,6 @@ let ENDaysSinceOnsetOfSymptomsUnknown: Int
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 14.0 and later.
 
- This property is available in iOS 12.5, and in iOS 14.0 and later.
-
 ## See Also
 
 - [var infectiousnessForDaysSinceOnsetOfSymptoms: [NSNumber : NSNumber]?](enexposureconfiguration/infectiousnessfordayssinceonsetofsymptoms.md)

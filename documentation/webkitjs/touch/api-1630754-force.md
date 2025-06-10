@@ -1,6 +1,6 @@
 # force
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The force of the touch, using a positive linear scale where a value of `0.0` indicates the absence of force.

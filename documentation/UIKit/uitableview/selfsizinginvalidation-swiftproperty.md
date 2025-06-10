@@ -1,6 +1,6 @@
 # selfSizingInvalidation
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The mode that the table view uses for invalidating the size of self-sizing cells.

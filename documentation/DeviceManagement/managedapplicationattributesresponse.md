@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to query attributes in managed apps.
+A response from the device after it processes the command to query attributes in managed apps on a device.
 
 **Availability**:
 - iOS 7.0+
@@ -11,8 +11,6 @@ A response from the device after it processes the command to query attributes in
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,7 +20,7 @@ object ManagedApplicationAttributesResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object ManagedApplicationAttributesResponse.ApplicationAttributesItem](managedapplicationattributesresponse/applicationattributesitem.md)
   A dictionary that contains a managed app attributes item.
 - [object ManagedApplicationAttributesResponse.ErrorChainItem](managedapplicationattributesresponse/errorchainitem.md)
@@ -31,7 +29,7 @@ object ManagedApplicationAttributesResponse
 ## See Also
 
 - [object ManagedApplicationAttributesCommand](managedapplicationattributescommand.md)
-  The command to query managed app attributes on a device.
+  The command to query attributes in managed apps on a device.
 
 
 ---

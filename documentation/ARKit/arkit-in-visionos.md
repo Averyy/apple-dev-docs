@@ -112,6 +112,11 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
   Find and track real-world objects in visionOS using reference objects trained with Create ML.
 - [Implementing object tracking in your visionOS app](../visionOS/implementing-object-tracking-in-your-visionOS-app.md)
   Create engaging interactions by training models to recognize and track real-world objects in your app.
+### Accessory tracking
+- [Tracking accessories in volumetric windows](tracking-accessories-in-volumetric-windows.md)
+  Translate the position and velocity of tracked handheld accessories to throw virtual balls at a stack of cans.
+- [Tracking a handheld accessory as a virtual sculpting tool](tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
+  Use a tracked accessory with Apple Vision Pro to create a virtual sculpture.
 ### Room tracking
 - [class RoomTrackingProvider](roomtrackingprovider.md)
   A source of real-time information about the room that a person is currently in.

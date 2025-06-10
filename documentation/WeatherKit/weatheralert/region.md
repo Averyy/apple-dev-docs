@@ -1,6 +1,6 @@
 # region
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The name of the affected area.

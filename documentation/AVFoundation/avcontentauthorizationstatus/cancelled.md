@@ -6,7 +6,7 @@
 The last call to request content authorization was cancelled by the user.
 
 **Availability**:
-- macOS ?+
+- macOS 10.7+
 
 ## Declaration
 

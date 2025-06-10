@@ -26,8 +26,6 @@ If the system can’t create an instance, the initializer may throw in Swift, or
 
 > ❗ **Important**:  As this method runs synchronously and blocks the calling thread until it finishes, don’t invoke it from the main thread. Use file coordination or one of the nonblocking file-related APIs instead. For more information, see [`Improving performance and stability when accessing the file system`](improving-performance-and-stability-when-accessing-the-file-system.md).
 
- As this method runs synchronously and blocks the calling thread until it finishes, don’t invoke it from the main thread. Use file coordination or one of the nonblocking file-related APIs instead. For more information, see [`Improving performance and stability when accessing the file system`](improving-performance-and-stability-when-accessing-the-file-system.md).
-
 ## Parameters
 
 - `url`: The location on disk of the data to read.

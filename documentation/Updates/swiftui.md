@@ -8,6 +8,52 @@ Learn about important changes to SwiftUI.
 
 Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI).
 
+#### June 2025
+
+##### General
+
+- Apply Liquid Glass effects to views using [`glassEffect(_:in:isEnabled:)`](https://developer.apple.com/documentation/SwiftUI/View/glassEffect(_:in:isEnabled:)).
+- Use [`glass`](https://developer.apple.com/documentation/SwiftUI/PrimitiveButtonStyle/glass) with the [`buttonStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/buttonStyle(_:)-66fbx) modifier to apply Liquid Glass to instances of `Button`.
+- [`ToolbarSpacer`](https://developer.apple.com/documentation/SwiftUI/ToolbarSpacer) creates a visual break between items in toolbars containing Liquid Glass.
+- Use [`scrollEdgeEffectStyle(_:for:)`](https://developer.apple.com/documentation/SwiftUI/View/scrollEdgeEffectStyle(_:for:)) to configure the scroll edge effect style for scroll views.
+- [`backgroundExtensionEffect()`](https://developer.apple.com/documentation/SwiftUI/View/backgroundExtensionEffect()) duplicates, mirrors, and blurs views placed around edges with available safe areas.
+- Set behavior for tab bar minimization with [`tabBarMinimizeBehavior(_:)`](https://developer.apple.com/documentation/SwiftUI/View/tabBarMinimizeBehavior(_:)).
+- Set the [`search`](https://developer.apple.com/documentation/SwiftUI/TabRole/search) role on a tab to take someone to a search tab and have a search field take the place of the tab bar.
+- Adjust the content of accessory views based on the placement in a tab view with [`TabViewBottomAccessoryPlacement`](https://developer.apple.com/documentation/SwiftUI/TabViewBottomAccessoryPlacement).
+- Connect a [`WebView`](https://developer.apple.com/documentation/WebKit/WebView-swift.struct) with a [`WebPage`](https://developer.apple.com/documentation/WebKit/WebPage) to fully control the browsing experience in your app.
+- Drag multiple items using the [`draggable(_:_:)`](https://developer.apple.com/documentation/SwiftUI/View/draggable(_:_:)) modifier. Make a view a container for draggable views using the [`dragContainer(for:id:in:selection:_:)`](https://developer.apple.com/documentation/SwiftUI/View/dragContainer(for:id:in:selection:_:)) modifier.
+- Use the [`Animatable()`](https://developer.apple.com/documentation/SwiftUI/Animatable()) macro to have SwiftUI synthesize custom animatable data properties.
+- [`Slider`](https://developer.apple.com/documentation/SwiftUI/Slider) now supports tick marks. Tick marks appear automatically when initializing a `Slider` with the `step` parameter.
+- Use [`windowResizeAnchor(_:)`](https://developer.apple.com/documentation/SwiftUI/View/windowResizeAnchor(_:)) to set the window anchor point when a window must resize.
+
+##### Text
+
+- [`TextEditor`](https://developer.apple.com/documentation/SwiftUI/TextEditor) now supports [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString).
+- Handle text selection with attributed text using [`AttributedTextSelection`](https://developer.apple.com/documentation/SwiftUI/AttributedTextSelection).
+- [`AttributedTextFormattingDefinition`](https://developer.apple.com/documentation/SwiftUI/AttributedTextFormattingDefinition) defines how text can be styled in specific contexts.
+- Use [`FindContext`](https://developer.apple.com/documentation/SwiftUI/FindContext) to create a find navigator in views that support text editing.
+
+##### Accessibility
+
+- Support Assistive Access in iOS and iPadOS scenes with [`AssistiveAccess`](https://developer.apple.com/documentation/SwiftUI/AssistiveAccess).
+
+##### Hdr
+
+- [`Color.ResolvedHDR`](https://developer.apple.com/documentation/SwiftUI/Color/ResolvedHDR) is a set of RGBA values that represent a color that can be shown, including HDR headroom information.
+
+##### Uikit and Appkit Integration
+
+- Host and present SwiftUI scenes in UIKit with [`UIHostingSceneDelegate`](https://developer.apple.com/documentation/SwiftUI/UIHostingSceneDelegate) and in AppKit with [`NSHostingSceneRepresentation`](https://developer.apple.com/documentation/SwiftUI/NSHostingSceneRepresentation).
+- Incorporate gesture recognizers in SwiftUI views from AppKit with [`NSGestureRecognizerRepresentable`](https://developer.apple.com/documentation/SwiftUI/NSGestureRecognizerRepresentable).
+
+##### Immersive Spaces
+
+- Manipulate views using common hand gestures with [`manipulable(coordinateSpace:operations:inertia:isEnabled:onChanged:)`](https://developer.apple.com/documentation/SwiftUI/View/manipulable(coordinateSpace:operations:inertia:isEnabled:onChanged:)).
+- Snap volumes to horizontal surfaces and windows to vertical surfaces using [`SurfaceSnappingInfo`](https://developer.apple.com/documentation/SwiftUI/SurfaceSnappingInfo).
+- Use [`RemoteImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/RemoteImmersiveSpace) to render stereo content from your Mac app on Apple Vision Pro.
+- Use [`SpatialContainer`](https://developer.apple.com/documentation/SwiftUI/SpatialContainer) to create a layout container that aligns overlapping content in 3D space.
+- Depth-based variants of modifiers allow easier volumetric layouts in SwiftUI. For example, [`aspectRatio3D(_:contentMode:)`](https://developer.apple.com/documentation/SwiftUI/View/aspectRatio3D(_:contentMode:)), [`rotation3DLayout(_:)`](https://developer.apple.com/documentation/SwiftUI/View/rotation3DLayout(_:)), and [`depthAlignment(_:)`](https://developer.apple.com/documentation/SwiftUI/Layout/depthAlignment(_:)).
+
 #### June 2024
 
 ##### Volumes
@@ -29,7 +75,6 @@ Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/
 ##### Immersive Spaces
 
 - Add an action to perform when the state of the immersion changes using the [`onImmersionChange(_:)`](https://developer.apple.com/documentation/SwiftUI/View/onImmersionChange(_:)) modifier.
-- Define the minimum, maximum, and initial amount of immersion using new initializers by applying doc://com.apple.documentation/documentation/SwiftUI/ImmersionStyle/progressive(_:initialAmount:)-7gp0e as the immersion style of an immersive space.
 - Apply a custom color or dim a passthrough video in an immersive space using the [`colorMultiply(_:)`](https://developer.apple.com/documentation/SwiftUI/SurroundingsEffect/colorMultiply(_:)) and [`dim(intensity:)`](https://developer.apple.com/documentation/SwiftUI/SurroundingsEffect/dim(intensity:)) initializers.
 
 ##### Documents
@@ -41,7 +86,6 @@ Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/
 - Specify the appearance and interaction of [`TabView`](https://developer.apple.com/documentation/SwiftUI/TabView) with the [`tabViewStyle(_:)`](https://developer.apple.com/documentation/SwiftUI/View/tabViewStyle(_:))  modifier using values like [`sidebarAdaptable`](https://developer.apple.com/documentation/SwiftUI/TabViewStyle/sidebarAdaptable), [`tabBarOnly`](https://developer.apple.com/documentation/SwiftUI/TabViewStyle/tabBarOnly), and [`grouped`](https://developer.apple.com/documentation/SwiftUI/TabViewStyle/grouped).
 - Build hierarchy by nesting tabs as a tab item within [`TabSection`](https://developer.apple.com/documentation/SwiftUI/TabSection).
 - Enable people to customize a [`TabView`](https://developer.apple.com/documentation/SwiftUI/TabView) using the [`tabViewCustomization(_:)`](https://developer.apple.com/documentation/SwiftUI/View/tabViewCustomization(_:)) modifier and persist customization state in [`AppStorage`](https://developer.apple.com/documentation/SwiftUI/AppStorage) with [`TabViewCustomization`](https://developer.apple.com/documentation/SwiftUI/TabViewCustomization).
-- Improve the search experience in a tab view by using new [`Tab`](https://developer.apple.com/documentation/SwiftUI/Tab) initializers like doc://com.apple.documentation/documentation/SwiftUI/Tab/init(_:systemImage:role:content:)-3hjer that rely on the new [`TabRole`](https://developer.apple.com/documentation/SwiftUI/TabRole).
 
 ##### Modal Presentations
 
@@ -110,16 +154,11 @@ Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/
 
 ##### Accessibility
 
-- Add accessibility custom actions to interactive widgets or custom controls using new accessibility action modifiers such as doc://com.apple.documentation/documentation/swiftui/view/accessibilityaction(named:intent:)-26k7g.
-- Improve the drag-and-drop experience for accessibility clients such as VoiceOver. Define the location of a drag or drop point and a textual description of the kind of drag or drop available using doc://com.apple.documentation/documentation/SwiftUI/View/accessibilityDragPoint(_:description:)-81e6u and doc://com.apple.documentation/documentation/SwiftUI/View/accessibilityDropPoint(_:description:)-65k1c.
 - Specify that your accessibility element behaves as a tab bar using the [`isTabBar`](https://developer.apple.com/documentation/SwiftUI/AccessibilityTraits/isTabBar) accessibility trait with the [`accessibilityAddTraits(_:)`](https://developer.apple.com/documentation/SwiftUI/View/accessibilityAddTraits(_:)) modifier. In UIKit, use [`tabBar`](https://developer.apple.com/documentation/UIKit/UIAccessibilityTraits/tabBar).
-- Enhance how you structure accessibility labels by appending custom content using [`accessibilityLabel(content:)`](https://developer.apple.com/documentation/SwiftUI/View/accessibilityLabel(content:)).
 - Generate a localized description of a color in a string interpolation by adding `accessibilityName:`, such as `"\(accessibilityName: myColor)"`. Pass that string to any accessibility modifier.
-- Provide accessibility information conditionally with new modifiers such as doc://com.apple.documentation/documentation/swiftui/view/accessibilitylabel(_:isenabled:)-83vyj.
 
 ##### Framework Interoperability
 
-- Use SwiftUI animations from AppKit and UIKit to create a consistent animation experience across apps that use multiple UI frameworks. In UIKit, use [`animate(with:changes:completion:)`](https://developer.apple.com/documentation/UIKit/UIView/animate(with:changes:completion:)). In AppKit, use [`animate(with:changes:completion:)`](https://developer.apple.com/documentation/AppKit/NSAnimationContext/animate(with:changes:completion:)).
 - Reuse existing UIKit gesture recognizer code in SwiftUI. In SwiftUI, create UIKit gesture recognizers using [`UIGestureRecognizerRepresentable`](https://developer.apple.com/documentation/SwiftUI/UIGestureRecognizerRepresentable). In UIKit, refer to SwiftUI gestures by name using [`name`](https://developer.apple.com/documentation/UIKit/UIGestureRecognizer/name).
 - Share menu content definitions between SwiftUI and AppKit by using the [`NSHostingMenu`](https://developer.apple.com/documentation/SwiftUI/NSHostingMenu) in your AppKit view hierarchy.
 
@@ -217,7 +256,6 @@ Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/
 - Apply Boolean operations to both shapes and paths, like [`intersection(_:eoFill:)`](https://developer.apple.com/documentation/SwiftUI/Shape/intersection(_:eoFill:)) and [`union(_:eoFill:)`](https://developer.apple.com/documentation/SwiftUI/Shape/union(_:eoFill:)).
 - Use predefined shape styles, like [`rect`](https://developer.apple.com/documentation/SwiftUI/Shape/rect), to simplify your code.
 - Create rounded rectangles with uneven corners using [`rect(topLeadingRadius:bottomLeadingRadius:bottomTrailingRadius:topTrailingRadius:style:)`](https://developer.apple.com/documentation/SwiftUI/Shape/rect(topLeadingRadius:bottomLeadingRadius:bottomTrailingRadius:topTrailingRadius:style:)).
-- Create dynamic colors and rendering styles by defining the doc://com.apple.documentation/documentation/SwiftUI/ShapeStyle/resolve(in:)-mq46 method for custom shape styles.
 
 ##### Drawing and Graphics
 
@@ -284,12 +322,16 @@ Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/
   Learn about important changes in ActivityKit.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [App Intents updates](appintents.md)
   Learn about important changes in App Intents.
 - [AppKit updates](appkit.md)
   Learn about important changes to AppKit.
 - [Apple Intelligence updates](apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -302,10 +344,6 @@ Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
 
 
 ---

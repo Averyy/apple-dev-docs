@@ -1,6 +1,6 @@
 # webView(_:didStartProvisionalLoadFor:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when a page load is in progress in a given frame.

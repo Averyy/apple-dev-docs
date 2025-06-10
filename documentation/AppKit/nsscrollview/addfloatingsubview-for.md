@@ -1,6 +1,6 @@
 # addFloatingSubview(_:for:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Adds a floating subview to the document view.

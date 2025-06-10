@@ -1,6 +1,6 @@
 # loadFileURL(_:allowingReadAccessTo:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Loads the web content from the specified file and navigates to it.
@@ -25,7 +25,7 @@ A new navigation object you use to track the loading progress of the request.
 
 #### Discussion
 
-This method sets the source of this load request for app activity data to [`NSURLRequest.Attribution.developer`](https://developer.apple.com/documentation/foundation/nsurlrequest/attribution/developer). To specify the source of this load, use [`loadFileRequest(_:allowingReadAccessTo:)`](wkwebview/loadfilerequest(_:allowingreadaccessto:).md) instead.
+This method sets the source of this load request for app activity data to [`NSURLRequest.Attribution.developer`](https://developer.apple.com/documentation/Foundation/NSURLRequest/Attribution-swift.enum/developer). To specify the source of this load, use [`loadFileRequest(_:allowingReadAccessTo:)`](wkwebview/loadfilerequest(_:allowingreadaccessto:).md) instead.
 
 ## Parameters
 

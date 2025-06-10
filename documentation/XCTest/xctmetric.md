@@ -1,6 +1,6 @@
 # XCTMetric
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: protocol
 
 A protocol that defines the methods that objects must provide when gathering metrics during performance tests.
@@ -35,6 +35,7 @@ Objects that gather metrics during performance tests must conform to `XCTMetric`
 - [XCTApplicationLaunchMetric](xctapplicationlaunchmetric.md)
 - [XCTCPUMetric](xctcpumetric.md)
 - [XCTClockMetric](xctclockmetric.md)
+- [XCTHitchMetric](xcthitchmetric.md)
 - [XCTMemoryMetric](xctmemorymetric.md)
 - [XCTOSSignpostMetric](xctossignpostmetric.md)
 - [XCTStorageMetric](xctstoragemetric.md)

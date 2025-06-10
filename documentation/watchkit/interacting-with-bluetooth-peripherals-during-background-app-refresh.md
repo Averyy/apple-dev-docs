@@ -1,6 +1,6 @@
 # Interacting with Bluetooth peripherals during background app refresh
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Keep your complications up-to-date by reading values from a Bluetooth peripheral while your app is running in the background.
 
@@ -49,4 +49,4 @@ The watch app reads a characteristic value from the phone and updates the compli
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/interacting-with-bluetooth-peripherals-during-background-app-refresh)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/interacting-with-bluetooth-peripherals-during-background-app-refresh)*

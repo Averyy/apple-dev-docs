@@ -1,6 +1,6 @@
 # chartOverlay(alignment:content:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Adds an overlay to a view that contains a chart.

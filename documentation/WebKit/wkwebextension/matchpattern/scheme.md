@@ -1,6 +1,6 @@
 # scheme
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The scheme part of the pattern string, unless [`matchesAllURLs`](wkwebextension/matchpattern/matchesallurls.md) is `YES`.

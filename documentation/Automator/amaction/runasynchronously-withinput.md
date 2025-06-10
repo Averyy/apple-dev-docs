@@ -21,8 +21,6 @@ Override this method in actions that need to make asynchronous calls. After [`ru
 
 > ⚠️ **Warning**:  Failure to invoke [`finishRunningWithError(_:)`](amaction/finishrunningwitherror(_:).md) can cause a workflow to stall indefinitely.
 
- Failure to invoke [`finishRunningWithError(_:)`](amaction/finishrunningwitherror(_:).md) can cause a workflow to stall indefinitely.
-
 For actions that don’t need to make asynchronous calls, use [`runWithInput:fromAction:error:`](amaction/runwithinput:fromaction:error:.md) instead.
 
 ## Parameters

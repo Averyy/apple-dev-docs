@@ -1,6 +1,6 @@
 # WKMenuItemIcon.maybe
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The icon indicating an answer of maybe for an action.

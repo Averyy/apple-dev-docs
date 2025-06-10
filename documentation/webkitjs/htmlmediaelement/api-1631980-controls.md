@@ -1,6 +1,6 @@
 # controls
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A Boolean value that determines whether the playback controls appear.

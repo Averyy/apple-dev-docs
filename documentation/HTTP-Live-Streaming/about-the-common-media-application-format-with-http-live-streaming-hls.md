@@ -1,6 +1,6 @@
 # About the Common Media Application Format with HTTP Live Streaming (HLS)
 
-**Framework**: Http Live Streaming
+**Framework**: HTTP Live Streaming
 
 Learn the Common Media Application Format as it applies to HLS.
 
@@ -164,16 +164,16 @@ We could also supply HEVC versions of `video.m3u8` and `video-hq.m3u8`, and perh
 #EXT-X-MEDIA:NAME="English",TYPE=AUDIO,GROUP-ID="audio-stereo-128",LANGUAGE="en",DEFAULT=YES,AUTOSELECT=YES,URI="english-hi.m3u8"
 #EXT-X-MEDIA:NAME="Français",TYPE=AUDIO,GROUP-ID="audio-stereo-128",LANGUAGE="fr",DEFAULT=NO,AUTOSELECT=YES,URI="french-hi.m3u8"
 
-#EXT-X-STREAM-INF:BANDWIDTH=1123000,CODECS="avc1.64001f,mp4a.40.2", AUDIO="audio-stereo-64",RESOLUTION=620x334
+#EXT-X-STREAM-INF:BANDWIDTH=1123000,CODECS="avc1.64001f,mp4a.40.2",AUDIO="audio-stereo-64",RESOLUTION=620x334
 video.m3u8
 
-#EXT-X-STREAM-INF:BANDWIDTH=8187000,CODECS="avc1.640028,mp4a.40.2", AUDIO="audio-stereo-128",RESOLUTION=1916x1032
+#EXT-X-STREAM-INF:BANDWIDTH=8187000,CODECS="avc1.640028,mp4a.40.2",AUDIO="audio-stereo-128",RESOLUTION=1916x1032
 video-hq.m3u8
 
-#EXT-X-STREAM-INF:BANDWIDTH=623000, CODECS="hvc1.1.6.L120.B0,mp4a.40.2",AUDIO="audio-stereo-64", RESOLUTION=620x334
+#EXT-X-STREAM-INF:BANDWIDTH=623000, CODECS="hvc1.1.6.L120.B0,mp4a.40.2",AUDIO="audio-stereo-64",RESOLUTION=620x334
 hevc-video.m3u8
 
-#EXT-X-STREAM-INF:BANDWIDTH=4187000, CODECS="hvc1.1.6.L120.B0,mp4a.40.2",AUDIO="audio-stereo-128", RESOLUTION=1916x1032
+#EXT-X-STREAM-INF:BANDWIDTH=4187000, CODECS="hvc1.1.6.L120.B0,mp4a.40.2",AUDIO="audio-stereo-128",RESOLUTION=1916x1032
 hevc-video-hq.m3u8
 ```
 
@@ -201,4 +201,4 @@ This example illustrates how CMAF Selection Sets can appear as separate Renditio
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HTTP-Live-Streaming/about-the-common-media-application-format-with-http-live-streaming-hls)*
+*[View on Apple Developer](https://developer.apple.com/documentation/http-live-streaming/about-the-common-media-application-format-with-http-live-streaming-hls)*

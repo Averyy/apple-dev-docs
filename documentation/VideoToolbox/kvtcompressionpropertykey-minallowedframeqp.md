@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_MinAllowedFrameQP
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The minimum allowed encoded frame QP (Quantization Parameter).

@@ -1,6 +1,6 @@
 # acceptConnection(fromPeer:)
 
-**Framework**: Gamekit  
+**Framework**: GameKit  
 **Kind**: method
 
 Called by the delegate to accept a connection request received from a remote peer.

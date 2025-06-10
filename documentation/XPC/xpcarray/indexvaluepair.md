@@ -1,6 +1,6 @@
 # XPCArray.IndexValuePair
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: typealias
 
 A type that contains an index and the object at that index.

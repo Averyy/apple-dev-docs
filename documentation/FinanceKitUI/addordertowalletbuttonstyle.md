@@ -24,6 +24,12 @@ struct AddOrderToWalletButtonStyle
 - [static let blackOutline: AddOrderToWalletButtonStyle](addordertowalletbuttonstyle/blackoutline.md)
   A black button with a light outline.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [struct AddOrderToWalletButton](addordertowalletbutton.md)

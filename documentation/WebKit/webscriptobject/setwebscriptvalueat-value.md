@@ -1,6 +1,6 @@
 # setWebScriptValueAt(_:value:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sets the value of a property at the specified index.

@@ -1,6 +1,6 @@
 # HourlyWeatherStatistics.SubSequence
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: typealias
 
 A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.

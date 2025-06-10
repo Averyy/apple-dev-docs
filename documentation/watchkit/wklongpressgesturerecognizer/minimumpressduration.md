@@ -1,6 +1,6 @@
 # minimumPressDuration
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The minimum amount of time (in seconds) that the user’s fingers must be touching the interface object.

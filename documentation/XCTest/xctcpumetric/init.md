@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates a CPU metric that records data for the current process.

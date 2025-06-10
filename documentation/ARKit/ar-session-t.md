@@ -5,6 +5,10 @@
 
 The main entry point for receiving data from ARKit.
 
+**Availability**:
+- macOS 26.0+ (Beta)
+- visionOS 1.0+
+
 ## Declaration
 
 ```swift

@@ -1,6 +1,6 @@
 # Describing use of required reason API
 
-**Framework**: Bundleresources
+**Framework**: Bundle Resources
 
 Ensure your use of covered API is consistent with policy.
 
@@ -36,4 +36,4 @@ For more information on creating a privacy manifest file, see [`Create a privacy
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/BundleResources/describing-use-of-required-reason-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/describing-use-of-required-reason-api)*

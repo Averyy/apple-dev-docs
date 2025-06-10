@@ -102,6 +102,7 @@ The system will only provide your extension with device activity data if the use
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 

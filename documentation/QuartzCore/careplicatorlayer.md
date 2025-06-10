@@ -1,6 +1,6 @@
 # CAReplicatorLayer
 
-**Framework**: Quartzcore  
+**Framework**: Core Animation  
 **Kind**: class
 
 A layer that creates a specified number of sublayer copies with varying geometric, temporal, and color transformations.
@@ -104,6 +104,8 @@ The result of adding this code is to create a grid with the value of the red cha
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -117,4 +119,4 @@ The result of adding this code is to create a grid with the value of the red cha
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/careplicatorlayer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/careplicatorlayer)*

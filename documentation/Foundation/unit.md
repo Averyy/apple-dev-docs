@@ -45,6 +45,7 @@ The [`Dimension`](dimension.md) subclass is an abstract class that represents a 
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Inherited By
 - [Dimension](dimension.md)
+- [UnitEnergy.EnergyKit](unitenergy/energykit.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -56,6 +57,7 @@ The [`Dimension`](dimension.md) subclass is an abstract class that represents a 
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

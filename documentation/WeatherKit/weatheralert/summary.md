@@ -1,6 +1,6 @@
 # summary
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The summary of the event type.

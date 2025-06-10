@@ -8,8 +8,6 @@ Summarize profile information about a QuickTime movie so readers can easily dete
 
 > ❗ **Important**: Profile atoms are deprecated in the QuickTime file format. The information that follows documents existing content containing profile atoms and should not be used for new development.
 
-Profile atoms are deprecated in the QuickTime file format. The information that follows documents existing content containing profile atoms and should not be used for new development.
-
 This section introduces and defines some of the ways that profile information about a QuickTime movie file can be summarized in a profile atom near the beginning of the file, so that software reading the file can easily determine some aspects of its features and complexity.
 
 The information in this section should not be seen as a replacement for, or even a functional overlap with, the definition of the file-type atom. The file-type atom expresses which specifications a file is compatible with: reading software should not attempt to play files unless they are compatible with one or more specifications the reader implements, and should not refuse to play a file if it is marked as so compatible. However, reading software may use profiling information to issue warnings, request user decisions, and so on.

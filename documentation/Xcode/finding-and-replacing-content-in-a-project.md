@@ -26,8 +26,6 @@ Xcode displays the results of the search. When you select a result, Xcode displa
 
 > 💡 **Tip**: To quickly populate the search field, select some text in the editor and choose Find > Find in Project. Xcode copies the selected text to the search field.
 
-To quickly populate the search field, select some text in the editor and choose Find > Find in Project. Xcode copies the selected text to the search field.
-
 ##### Find Symbol References and Definitions
 
 Xcode offers two ways to search for symbols:

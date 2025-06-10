@@ -1,6 +1,6 @@
 # minimumVisibility
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The minimum visibility for the day part.

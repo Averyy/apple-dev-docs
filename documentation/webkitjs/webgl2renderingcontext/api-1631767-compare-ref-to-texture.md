@@ -1,6 +1,6 @@
 # COMPARE_REF_TO_TEXTURE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

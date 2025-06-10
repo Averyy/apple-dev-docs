@@ -72,6 +72,7 @@ Don’t create this structure directly. Instead, use the [`sessions()`](groupact
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

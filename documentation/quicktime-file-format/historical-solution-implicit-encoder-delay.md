@@ -1,6 +1,6 @@
 # Historical solution for implicit encoder delay
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Implicit encoder delay uses the most common delay of 2112 audio samples.
 

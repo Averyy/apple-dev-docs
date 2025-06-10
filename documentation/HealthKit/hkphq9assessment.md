@@ -44,6 +44,7 @@ Represents the result of a PHQ-9 assessment. Learn more about Pfizer’s PHQ-9 a
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # isLensStabilizationDuringBracketedCaptureSupported
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value indicating whether the capture output currently supports lens stabilization during bracketed image capture.

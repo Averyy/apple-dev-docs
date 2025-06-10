@@ -1,6 +1,6 @@
 # WeatherChange.Direction
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: enum
 
 An enum that specifies the direction in which a measurable aspect of the weather is expected to change.
@@ -51,6 +51,7 @@ enum Direction
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

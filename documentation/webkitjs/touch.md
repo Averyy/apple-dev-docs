@@ -1,6 +1,6 @@
 # Touch
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: cl
 
 A [`Touch`](touch.md) object represents a single user touch on the screen of the device. A touch is the presence or movement of a finger and is part of a unique multi-touch sequence. Use the [`changedTouches`](touchevent/1629351-changedtouches.md) method to get all the touch objects that changed in a [`TouchEvent`](touchevent.md) object.

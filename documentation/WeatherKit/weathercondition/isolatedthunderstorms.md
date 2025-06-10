@@ -1,6 +1,6 @@
 # WeatherCondition.isolatedThunderstorms
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Thunderstorms covering less than 1/8 of the forecast area.

@@ -78,13 +78,13 @@ Use slices only for transient computation. A slice may hold a reference to the e
 - [var base: Base](slice/base.md)
   The underlying collection of the slice.
 ### Instance Methods
-- [func assumingMemoryBound<T>(to: T.Type) -> UnsafeMutableBufferPointer<T>](slice/assumingmemorybound(to:)-3f579.md)
+- [func assumingMemoryBound<T>(to: T.Type) -> UnsafeMutableBufferPointer<T>](slice/assumingmemorybound(to:)-5fkwu.md)
   Returns a typed buffer to the memory referenced by this buffer slice, assuming that the memory is already bound to the specified type.
-- [func assumingMemoryBound<T>(to: T.Type) -> UnsafeBufferPointer<T>](slice/assumingmemorybound(to:)-48vo9.md)
+- [func assumingMemoryBound<T>(to: T.Type) -> UnsafeBufferPointer<T>](slice/assumingmemorybound(to:)-7a4sa.md)
   Returns a typed buffer to the memory referenced by this buffer slice, assuming that the memory is already bound to the specified type.
-- [func bindMemory<T>(to: T.Type) -> UnsafeMutableBufferPointer<T>](slice/bindmemory(to:)-2brpa.md)
+- [func bindMemory<T>(to: T.Type) -> UnsafeBufferPointer<T>](slice/bindmemory(to:)-4ombl.md)
   Binds this buffer slice’s memory to the specified type and returns a typed buffer of the bound memory.
-- [func bindMemory<T>(to: T.Type) -> UnsafeBufferPointer<T>](slice/bindmemory(to:)-jmit.md)
+- [func bindMemory<T>(to: T.Type) -> UnsafeMutableBufferPointer<T>](slice/bindmemory(to:)-92fs7.md)
   Binds this buffer slice’s memory to the specified type and returns a typed buffer of the bound memory.
 - [func copyBytes<C>(from: C)](slice/copybytes(from:).md)
   Copies from a collection of `UInt8` into this buffer slice’s memory.
@@ -124,10 +124,10 @@ Use slices only for transient computation. A slice may hold a reference to the e
   Moves every element of an initialized source buffer into the uninitialized memory referenced by this buffer slice, leaving the source memory uninitialized and this buffer slice’s memory initialized.
 - [func moveInitialize<Element>(fromContentsOf: Slice<UnsafeMutableBufferPointer<Element>>) -> Slice<Base>.Index](slice/moveinitialize(fromcontentsof:)-iasq.md)
   Moves every element of an initialized source buffer slice into the uninitialized memory referenced by this buffer slice, leaving the source memory uninitialized and this buffer slice’s memory initialized.
+- [func moveInitializeMemory<T>(as: T.Type, fromContentsOf: UnsafeMutableBufferPointer<T>) -> UnsafeMutableBufferPointer<T>](slice/moveinitializememory(as:fromcontentsof:)-1jll.md)
+  Moves every element of an initialized source buffer into the uninitialized memory referenced by this buffer slice, leaving the source memory uninitialized and this slice’s memory initialized.
 - [func moveInitializeMemory<T>(as: T.Type, fromContentsOf: Slice<UnsafeMutableBufferPointer<T>>) -> UnsafeMutableBufferPointer<T>](slice/moveinitializememory(as:fromcontentsof:)-1uz4a.md)
   Moves every element from an initialized source buffer slice into the uninitialized memory referenced by this buffer slice, leaving the source memory uninitialized and this slice’s memory initialized.
-- [func moveInitializeMemory<T>(as: T.Type, fromContentsOf: UnsafeMutableBufferPointer<T>) -> UnsafeMutableBufferPointer<T>](slice/moveinitializememory(as:fromcontentsof:)-4gqrz.md)
-  Moves every element of an initialized source buffer into the uninitialized memory referenced by this buffer slice, leaving the source memory uninitialized and this slice’s memory initialized.
 - [func moveUpdate<Element>(fromContentsOf: UnsafeMutableBufferPointer<Element>) -> Slice<Base>.Index](slice/moveupdate(fromcontentsof:)-5i98g.md)
   Updates this buffer slice’s initialized memory initialized memory by moving every element from the source buffer, leaving the source memory uninitialized.
 - [func moveUpdate<Element>(fromContentsOf: Slice<UnsafeMutableBufferPointer<Element>>) -> Slice<Base>.Index](slice/moveupdate(fromcontentsof:)-ou4d.md)
@@ -144,13 +144,13 @@ Use slices only for transient computation. A slice may hold a reference to the e
 - [func update<Element>(repeating: Element)](slice/update(repeating:).md)
   Updates every element of this buffer slice’s initialized memory.
 - [func withContiguousMutableStorageIfAvailable<R, Element>((inout UnsafeMutableBufferPointer<Element>) throws -> R) rethrows -> R?](slice/withcontiguousmutablestorageifavailable(_:)-2ader.md)
-- [func withMemoryRebound<T, Result, Element>(to: T.Type, (UnsafeMutableBufferPointer<T>) throws -> Result) rethrows -> Result](slice/withmemoryrebound(to:_:)-2hfy7.md)
+- [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](slice/withmemoryrebound(to:_:)-1nqta.md)
+  Executes the given closure while temporarily binding the buffer slice to instances of type `T`.
+- [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeMutableBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](slice/withmemoryrebound(to:_:)-3oirt.md)
+  Executes the given closure while temporarily binding the buffer slice to instances of type `T`.
+- [func withMemoryRebound<T, E, Result, Element>(to: T.Type, (UnsafeMutableBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](slice/withmemoryrebound(to:_:)-6kxii.md)
   Executes the given closure while temporarily binding the memory referenced by this buffer slice to the given type.
-- [func withMemoryRebound<T, Result, E>(to: T.Type, (UnsafeBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](slice/withmemoryrebound(to:_:)-31406.md)
-  Executes the given closure while temporarily binding the buffer slice to instances of type `T`.
-- [func withMemoryRebound<T, Result, E>(to: T.Type, (UnsafeMutableBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](slice/withmemoryrebound(to:_:)-3jeob.md)
-  Executes the given closure while temporarily binding the buffer slice to instances of type `T`.
-- [func withMemoryRebound<T, Result, Element>(to: T.Type, (UnsafeBufferPointer<T>) throws -> Result) rethrows -> Result](slice/withmemoryrebound(to:_:)-6nviy.md)
+- [func withMemoryRebound<T, E, Result, Element>(to: T.Type, (UnsafeBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](slice/withmemoryrebound(to:_:)-ibp7.md)
   Executes the given closure while temporarily binding the memory referenced by this buffer slice to the given type.
 ### Default Implementations
 - [BidirectionalCollection Implementations](slice/bidirectionalcollection-implementations.md)
@@ -175,9 +175,10 @@ Use slices only for transient computation. A slice may hold a reference to the e
 - [RandomAccessCollection](randomaccesscollection.md)
 - [RangeReplaceableCollection](rangereplaceablecollection.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/slice)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/slice)*

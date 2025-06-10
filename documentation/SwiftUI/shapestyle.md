@@ -266,6 +266,7 @@ VStack(alignment: .leading) {
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [AngularGradient](angulargradient.md)
 - [AnyGradient](anygradient.md)
@@ -273,6 +274,7 @@ VStack(alignment: .leading) {
 - [BackgroundStyle](backgroundstyle.md)
 - [Color](color.md)
 - [Color.Resolved](color/resolved.md)
+- [Color.ResolvedHDR](color/resolvedhdr.md)
 - [EllipticalGradient](ellipticalgradient.md)
 - [FillShapeStyle](fillshapestyle.md)
 - [ForegroundStyle](foregroundstyle.md)
@@ -316,6 +318,8 @@ VStack(alignment: .leading) {
   A color gradient.
 - [struct ShadowStyle](shadowstyle.md)
   A style to use when rendering shadows.
+- [struct Glass](glass.md)
+  A structure that defines the configuration of the Liquid Glass material.
 
 
 ---

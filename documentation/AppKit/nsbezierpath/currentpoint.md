@@ -16,7 +16,7 @@ var currentPoint: NSPoint { get }
 
 #### Discussion
 
-This property contains the point from which the next drawn line or curve segment begins. If the path is empty, accessing this property raises [`genericException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1412113-genericexception).
+This property contains the point from which the next drawn line or curve segment begins. If the path is empty, accessing this property raises [`genericException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/genericException).
 
 ## See Also
 

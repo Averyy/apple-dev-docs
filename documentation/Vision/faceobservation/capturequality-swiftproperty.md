@@ -16,7 +16,7 @@ The quality of the face capture.
 ## Declaration
 
 ```swift
-let captureQuality: FaceObservation.CaptureQuality?
+var captureQuality: FaceObservation.CaptureQuality? { get }
 ```
 
 #### Discussion

@@ -1,6 +1,6 @@
 # Modify a Sandbox Tester
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 Change the subscription renewal time rate, set interrupted purchases or change territory of Sandbox Apple Account.

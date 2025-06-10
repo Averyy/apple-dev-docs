@@ -1,6 +1,6 @@
 # VSSubscriptionAccessLevel.paid
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 The user has access to content that requires a paid subscription.

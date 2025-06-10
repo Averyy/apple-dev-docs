@@ -1,6 +1,6 @@
 # PresentationSizing
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: protocol
 
 A type that defines the size of the presentation content and how the presentation size adjusts to its content’s size changing.
@@ -99,4 +99,4 @@ Then, at the callsite, you can modify `.square` just like system sizings, for ex
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/presentationsizing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/presentationsizing)*

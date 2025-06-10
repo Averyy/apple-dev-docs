@@ -1,6 +1,6 @@
 # Tracking and visualizing faces
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Detect faces in a front-camera AR experience, overlay virtual content, and animate facial expressions in real-time.
 
@@ -207,4 +207,4 @@ There are more than 50 unique [`ARFaceAnchor.BlendShapeLocation`](arfaceanchor/b
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/tracking-and-visualizing-faces)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/tracking-and-visualizing-faces)*

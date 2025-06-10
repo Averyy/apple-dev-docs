@@ -1,0 +1,18 @@
+# kIOAudioInputPortSubTypeExternalMicrophone
+
+**Framework**: Kernel  
+**Kind**: econst
+
+**Availability**:
+- macOS 10.12+
+
+## Declaration
+
+```swift
+kIOAudioInputPortSubTypeExternalMicrophone = 'emic'
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/1646418-anonymous/kioaudioinputportsubtypeexternalmicrophone)*

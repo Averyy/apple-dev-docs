@@ -47,6 +47,7 @@ This sequence allows iterating through the microphone audio frames.
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TemporalSequence](temporalsequence.md)
 
 ## See Also

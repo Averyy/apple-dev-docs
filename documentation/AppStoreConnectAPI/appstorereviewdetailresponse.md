@@ -22,6 +22,7 @@ object AppStoreReviewDetailResponse
   The request body you use to create an App Store Review Detail.
 - [object AppStoreReviewDetailUpdateRequest](appstorereviewdetailupdaterequest.md)
   The request body you use to update an App Store Review Detail.
+- [object AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse](appstorereviewdetailappstorereviewattachmentslinkagesresponse.md)
 
 
 ---

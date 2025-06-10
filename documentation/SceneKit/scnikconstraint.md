@@ -1,18 +1,18 @@
 # SCNIKConstraint
 
-**Framework**: Scenekit  
+**Framework**: SceneKit  
 **Kind**: class
 
 A constraint that applies inverse kinematics to make a chain of nodes “reach” toward a target point.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 8.0+
+- iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 
@@ -71,4 +71,4 @@ class SCNIKConstraint
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SceneKit/scnikconstraint)*
+*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnikconstraint)*

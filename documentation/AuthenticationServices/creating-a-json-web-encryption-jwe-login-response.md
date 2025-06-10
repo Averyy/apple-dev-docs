@@ -1,6 +1,6 @@
 # Creating a JSON Web Encryption (JWE) login response
 
-**Framework**: Authenticationservices
+**Framework**: Authentication Services
 
 Create an encrypted login response and configure the concatenation key derivation function (Concat KDF).
 
@@ -251,4 +251,4 @@ If the Kerberos ticket is from a read-only domain controller (RODC) per MS-KILE 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/creating-a-json-web-encryption-jwe-login-response)*
+*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/creating-a-json-web-encryption-jwe-login-response)*

@@ -1,6 +1,6 @@
 # linkAccount(using:)
 
-**Framework**: Proximityreader  
+**Framework**: ProximityReader  
 **Kind**: method
 
 Presents a sheet for the merchant to accept Tap to Pay on iPhone’s Terms and Conditions on a device.

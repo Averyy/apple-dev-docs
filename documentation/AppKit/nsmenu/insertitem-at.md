@@ -16,7 +16,7 @@ func insertItem(_ newItem: NSMenuItem, at index: Int)
 
 #### Discussion
 
-This method posts an [`didAddItemNotification`](nsmenu/didadditemnotification.md), allowing interested observers to update as appropriate. This method is a primitive method. All item-addition methods end up calling this method, so this is where you should implement custom behavior on adding new items to a menu in a custom subclass. If the menu item already exists in another menu, it is not inserted and the method raises an exception of type [`internalInconsistencyException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1416220-internalinconsistencyexception).
+This method posts an [`didAddItemNotification`](nsmenu/didadditemnotification.md), allowing interested observers to update as appropriate. This method is a primitive method. All item-addition methods end up calling this method, so this is where you should implement custom behavior on adding new items to a menu in a custom subclass. If the menu item already exists in another menu, it is not inserted and the method raises an exception of type [`internalInconsistencyException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/internalInconsistencyException).
 
 ## Parameters
 

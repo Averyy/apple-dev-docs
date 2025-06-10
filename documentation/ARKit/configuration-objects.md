@@ -18,15 +18,11 @@ Use [`supportsFrameSemantics(_:)`](arconfiguration/supportsframesemantics(_:).md
 
 > ❗ **Important**:  To maximize device responsiveness, refrain from turning on people occlusion for single-user experiences when you don’t expect people in the scene.
 
- To maximize device responsiveness, refrain from turning on people occlusion for single-user experiences when you don’t expect people in the scene.
-
 ##### Switch Configurations at Runtime
 
 To toggle features like plane detection, frame semantics, and environment texturing, you switch your configuration at runtime by calling [`runWithConfiguration:`](arsession/runwithconfiguration:.md) on your existing session. Where possible, ARKit maintains all the information collected during the session under the prior configuration, such as information about the physical environment and anchors.
 
 > 💡 **Tip**:  You can gracefully downgrade the AR experience in the event of low-power or thermal events. For example, you could temporarily switch from a world-tracking configuration to a position-tracking configuration ([`ARPositionalTrackingConfiguration`](arpositionaltrackingconfiguration.md)) if your app can function at a basic level in that limited capacity until the device cools down.
-
- You can gracefully downgrade the AR experience in the event of low-power or thermal events. For example, you could temporarily switch from a world-tracking configuration to a position-tracking configuration ([`ARPositionalTrackingConfiguration`](arpositionaltrackingconfiguration.md)) if your app can function at a basic level in that limited capacity until the device cools down.
 
 If your session switches between face- and world-tracking configurations, the session doesn’t maintain state.
 

@@ -23,8 +23,6 @@ let kCFStreamPropertySocketExtendedBackgroundIdleMode: CFString
 
 > ❗ **Important**:  Set this property before opening the stream.
 
- Set this property before opening the stream.
-
 ## See Also
 
 - [func CFReadStreamCreateForHTTPRequest(CFAllocator?, CFHTTPMessage) -> Unmanaged<CFReadStream>](cfreadstreamcreateforhttprequest(_:_:).md)

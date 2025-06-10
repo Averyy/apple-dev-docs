@@ -23,7 +23,7 @@ Displays a standard system interface to generate images from the provided input.
 
 Present an [`ImagePlaygroundViewController`](imageplaygroundviewcontroller.md) to display a standard system interface to generate images from a description you provide. People use the view controller interface to generate images and experiment with the contents before returning an image to your app. You can then incorporate that image into your app’s content.
 
-Create a [`ImagePlaygroundViewController`](imageplaygroundviewcontroller.md) and configure it with an initial description of the image you want before you present it. Specify a text-based description of the image using the [`concepts`](imageplaygroundviewcontroller/concepts.md) property. If you have a starting image that you want to use to create the new image, specify your image in the [`sourceImage`](imageplaygroundviewcontroller/sourceimage.md) property.
+Create an [`ImagePlaygroundViewController`](imageplaygroundviewcontroller.md) and configure it with an initial description of the image you want before you present it. Specify a text-based description of the image using the [`concepts`](imageplaygroundviewcontroller/concepts.md) property. If you have a starting image that you want to use to create the new image, specify your image in the [`sourceImage`](imageplaygroundviewcontroller/sourceimage.md) property.
 
 Present this view controller from your interface and wait for it to deliver results to your custom [`delegate`](imageplaygroundviewcontroller/delegate-swift.property.md) object. If the person approves the image, the view controller sends that image to your app via this delegate object. The view controller also notifies your delegate if the person cancels the operation.
 
@@ -88,6 +88,7 @@ Present this view controller from your interface and wait for it to deliver resu
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

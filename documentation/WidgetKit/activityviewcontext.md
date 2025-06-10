@@ -1,6 +1,6 @@
 # ActivityViewContext
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 A structure that describes the view context for creating the views of a Live Activity.

@@ -1,6 +1,6 @@
 # update()
 
-**Framework**: Phase  
+**Framework**: PHASE  
 **Kind**: method
 
 Processes app commands and increments framework processing.

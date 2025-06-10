@@ -11,7 +11,9 @@ Removes a collection of annotations, overlays, or other item collections from th
 ## Declaration
 
 ```swift
-(mapkit.Annotation|mapkit.Overlay|ItemCollection)[]|ItemCollection removeItems();
+(mapkit.Annotation|mapkit.Overlay|ItemCollection)[]|ItemCollection removeItems(
+	mapkit.Annotation|mapkit.Overlay|ItemCollection)[]|ItemCollection items
+);
 ```
 
 #### Return Value

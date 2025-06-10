@@ -88,6 +88,9 @@ extension MyCustomType: Transition {
   A button style for buttons that emulate links.
 - [struct PlainButtonStyle](plainbuttonstyle.md)
   A button style that doesn’t style or decorate its content while idle, but may apply a visual effect to indicate the pressed, focused, or enabled state of the button.
+### Type Properties
+- [static var glass: GlassButtonStyle](primitivebuttonstyle/glass.md)
+  A button style that applies Liquid Glass based on the button’s context.
 
 ## Relationships
 
@@ -99,6 +102,7 @@ extension MyCustomType: Transition {
 - [BorderlessButtonStyle](borderlessbuttonstyle.md)
 - [CardButtonStyle](cardbuttonstyle.md)
 - [DefaultButtonStyle](defaultbuttonstyle.md)
+- [GlassButtonStyle](glassbuttonstyle.md)
 - [LinkButtonStyle](linkbuttonstyle.md)
 - [PlainButtonStyle](plainbuttonstyle.md)
 

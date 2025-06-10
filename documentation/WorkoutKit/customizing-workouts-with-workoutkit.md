@@ -1,6 +1,6 @@
 # Customizing workouts with WorkoutKit
 
-**Framework**: Workoutkit
+**Framework**: WorkoutKit
 
 Create, preview, and sync workouts for use in the Workout app on Apple Watch.
 
@@ -38,4 +38,4 @@ To run the sample code project in Xcode:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WorkoutKit/customizing-workouts-with-workoutkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/workoutkit/customizing-workouts-with-workoutkit)*

@@ -14,7 +14,6 @@ Returns a markup-text print formatter initialized with an HTML string.
 ## Declaration
 
 ```swift
-@MainActor
 init(markupText: String)
 ```
 

@@ -16,13 +16,13 @@ An interface that represents a graphics pipeline configuration for a render pass
 ## Declaration
 
 ```swift
-protocol MTLRenderPipelineState : NSObjectProtocol
+protocol MTLRenderPipelineState : MTLAllocation, Sendable
 ```
 
 ## Mentions
 
-- [Improving Rendering Performance with Vertex Amplification](improving-rendering-performance-with-vertex-amplification.md)
 - [Improving CPU Performance by Using Argument Buffers](improving-cpu-performance-by-using-argument-buffers.md)
+- [Improving Rendering Performance with Vertex Amplification](improving-rendering-performance-with-vertex-amplification.md)
 
 #### Overview
 
@@ -67,43 +67,70 @@ To create a pipeline state, call the appropriate [`MTLDevice`](mtldevice.md) met
 - [var shaderValidation: MTLShaderValidation](mtlrenderpipelinestate/shadervalidation.md)
   The current state of shader validation for the pipeline.
 ### Creating Function Handles and Tables
-- [func functionHandle(function: any MTLFunction, stage: MTLRenderStages) -> (any MTLFunctionHandle)?](mtlrenderpipelinestate/functionhandle(function:stage:).md)
+- [func functionHandle(function: any MTLFunction, stage: MTLRenderStages) -> (any MTLFunctionHandle)?](mtlrenderpipelinestate/functionhandle(function:stage:)-7uvul.md)
   Creates a function handle for a shader.
 - [func makeVisibleFunctionTable(descriptor: MTLVisibleFunctionTableDescriptor, stage: MTLRenderStages) -> (any MTLVisibleFunctionTable)?](mtlrenderpipelinestate/makevisiblefunctiontable(descriptor:stage:).md)
   Creates a new visible function table.
 - [func makeIntersectionFunctionTable(descriptor: MTLIntersectionFunctionTableDescriptor, stage: MTLRenderStages) -> (any MTLIntersectionFunctionTable)?](mtlrenderpipelinestate/makeintersectionfunctiontable(descriptor:stage:).md)
   Creates a new intersection function table.
 ### Creating Modified Clones of the Render Pipeline
-- [func makeRenderPipelineState(additionalBinaryFunctions: MTLRenderPipelineFunctionsDescriptor) throws -> any MTLRenderPipelineState](mtlrenderpipelinestate/makerenderpipelinestate(additionalbinaryfunctions:).md)
+- [func makeRenderPipelineState(additionalBinaryFunctions: MTLRenderPipelineFunctionsDescriptor) throws -> any MTLRenderPipelineState](mtlrenderpipelinestate/makerenderpipelinestate(additionalbinaryfunctions:)-84te1.md)
   Creates a new pipeline state that’s a copy of the current pipeline state with additional shaders.
+### Instance Properties
+- [var reflection: MTLRenderPipelineReflection?](mtlrenderpipelinestate/reflection.md)
+  Obtains a reflection object for this render pipeline.
+- [var requiredThreadsPerMeshThreadgroup: MTLSize](mtlrenderpipelinestate/requiredthreadspermeshthreadgroup.md)
+- [var requiredThreadsPerObjectThreadgroup: MTLSize](mtlrenderpipelinestate/requiredthreadsperobjectthreadgroup.md)
+- [var requiredThreadsPerTileThreadgroup: MTLSize](mtlrenderpipelinestate/requiredthreadspertilethreadgroup.md)
+### Instance Methods
+- [func functionHandle(function: any MTL4BinaryFunction, stage: MTLRenderStages) -> (any MTLFunctionHandle)?](mtlrenderpipelinestate/functionhandle(function:stage:)-1pgxo.md)
+  Obtains the function handle for a specific function this pipeline state links at the binary level.
+- [func functionHandle(withName: String, stage: MTLRenderStages) -> (any MTLFunctionHandle)?](mtlrenderpipelinestate/functionhandle(withname:stage:).md)
+  Obtains a function handle for the a specific function this pipeline links at the Metal IR level.
+- [func makeRenderPipelineDescriptorForSpecialization() -> MTL4PipelineDescriptor](mtlrenderpipelinestate/makerenderpipelinedescriptorforspecialization.md)
+  Creates a render pipeline descriptor from this pipeline that you can use for pipeline specialization.
+- [func makeRenderPipelineState(additionalBinaryFunctions: MTL4RenderPipelineBinaryFunctionsDescriptor) throws -> any MTLRenderPipelineState](mtlrenderpipelinestate/makerenderpipelinestate(additionalbinaryfunctions:)-49r1w.md)
+  Creates a new render pipeline state by adding binary functions to each stage of this pipeline state.
 
 ## Relationships
 
 ### Inherits From
+- [MTLAllocation](mtlallocation.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [class MTL4RenderPipelineDescriptor](mtl4renderpipelinedescriptor.md)
+  Groups together properties to create a render pipeline state object.
 - [class MTLRenderPipelineDescriptor](mtlrenderpipelinedescriptor.md)
   An argument of options you pass to a GPU device to get a render pipeline state.
 - [class MTLRenderPipelineFunctionsDescriptor](mtlrenderpipelinefunctionsdescriptor.md)
   A collection of functions for updating a render pipeline.
+- [class MTL4MeshRenderPipelineDescriptor](mtl4meshrenderpipelinedescriptor.md)
+  Groups together properties you use to create a mesh render pipeline state object.
 - [class MTLMeshRenderPipelineDescriptor](mtlmeshrenderpipelinedescriptor.md)
   An object that configures new render pipeline state objects for mesh shading.
 - [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
   The mutability options for a buffer that a render or compute pipeline uses.
 - [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
+- [class MTL4RenderPipelineColorAttachmentDescriptor](mtl4renderpipelinecolorattachmentdescriptor.md)
 - [class MTLRenderPipelineColorAttachmentDescriptor](mtlrenderpipelinecolorattachmentdescriptor.md)
   A color render target that specifies the color configuration and color operations for a render pipeline.
 - [class MTLRenderPipelineColorAttachmentDescriptorArray](mtlrenderpipelinecolorattachmentdescriptorarray.md)
   An array of render pipeline color attachment descriptor objects.
+- [class MTL4TileRenderPipelineDescriptor](mtl4tilerenderpipelinedescriptor.md)
+  Groups together properties you use to create a tile render pipeline state object.
 - [class MTLTileRenderPipelineDescriptor](mtltilerenderpipelinedescriptor.md)
   An object that configures new render pipeline state objects for tile shading.
 - [class MTLTileRenderPipelineColorAttachmentDescriptor](mtltilerenderpipelinecolorattachmentdescriptor.md)
   A description of a tile-shading render pipeline’s color render target.
 - [struct MTLPipelineOption](mtlpipelineoption.md)
   Options that determine how Metal prepares the pipeline.
+- [class MTL4RenderPipelineBinaryFunctionsDescriptor](mtl4renderpipelinebinaryfunctionsdescriptor.md)
+  Allows you to specify additional binary functions to link to each stage of a render pipeline.
 
 
 ---

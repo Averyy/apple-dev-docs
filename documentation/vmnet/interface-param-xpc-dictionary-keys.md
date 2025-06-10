@@ -1,15 +1,15 @@
 # interface_param XPC Dictionary Keys
 
-**Framework**: Vmnet
+**Framework**: vmnet
 
 XPC dictionary keys used by the `interface_param` argument returned by the completion handler of the `vmnet` function that describes the parameters that should be used to configure the network interface.
 
 ## Topics
 
 ### Constants
-- [var vmnet_mac_address_key: UnsafePointer<CChar>](vmnet_mac_address_key.md)
-- [var vmnet_mtu_key: UnsafePointer<CChar>](vmnet_mtu_key.md)
-- [var vmnet_max_packet_size_key: UnsafePointer<CChar>](vmnet_max_packet_size_key.md)
+- [let vmnet_mac_address_key: UnsafePointer<CChar>](vmnet_mac_address_key.md)
+- [let vmnet_mtu_key: UnsafePointer<CChar>](vmnet_mtu_key.md)
+- [let vmnet_max_packet_size_key: UnsafePointer<CChar>](vmnet_max_packet_size_key.md)
 
 ## See Also
 

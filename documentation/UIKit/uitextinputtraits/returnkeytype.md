@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: property
 
-The visible title of the Return key.
+The visible indication of what the Return key does.
 
 **Availability**:
 - iOS ?+
@@ -21,7 +21,7 @@ optional var returnKeyType: UIReturnKeyType { get set }
 
 #### Discussion
 
-Setting this property to a different key type changes the visible title of the Return key and typically results in the keyboard being dismissed when it is pressed. The default value for this property is [`UIReturnKeyType.default`](uireturnkeytype/default.md).
+Setting this property to a different key type changes the visible title of the Return key and typically results in the system dismissing the keyboard when it is pressed. The default value for this property is [`UIReturnKeyType.default`](uireturnkeytype/default.md).
 
 ## See Also
 
@@ -34,7 +34,7 @@ Setting this property to a different key type changes the visible title of the R
 - [enum UIKeyboardAppearance](uikeyboardappearance.md)
   Constants that specify the appearance of the keyboard for a text-based view.
 - [enum UIReturnKeyType](uireturnkeytype.md)
-  Constants that specify the text string that displays in the Return key of a keyboard.
+  Constants that specify the type of Return key the keyboard displays.
 - [var textContentType: UITextContentType!](uitextinputtraits/textcontenttype.md)
   The semantic meaning for a text input area.
 - [struct UITextContentType](uitextcontenttype.md)

@@ -1,6 +1,6 @@
 # WKPreferences.InactiveSchedulingPolicy
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: enum
 
 An enumeration that lists policies for how a web view that’s not in a window handles tasks.
@@ -38,6 +38,7 @@ enum InactiveSchedulingPolicy
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

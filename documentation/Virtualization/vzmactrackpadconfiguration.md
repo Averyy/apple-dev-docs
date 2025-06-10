@@ -49,4 +49,4 @@ The [`VZVirtualMachineView`](vzvirtualmachineview.md) uses this device to send p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Virtualization/vzmactrackpadconfiguration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/virtualization/vzmactrackpadconfiguration)*

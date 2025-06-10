@@ -24,8 +24,6 @@ func setStageInRegionWithIndirectBuffer(_ indirectBuffer: any MTLBuffer, indirec
 
 > ❗ **Important**:  Lay out the data in the buffer as described in the [`MTLStageInRegionIndirectArguments`](mtlstageinregionindirectarguments.md) structure.
 
- Lay out the data in the buffer as described in the [`MTLStageInRegionIndirectArguments`](mtlstageinregionindirectarguments.md) structure.
-
 The region’s origin point, starting from `(0,0,0)` in the upper left of the bound data, determines the final index of `[[stage_in]]` data. Note that the total number of threads Metal launches may be larger than your stage-in data.
 
 To determine the index used to fetch `[[stage_in]]` data for a given thread, the GPU adds the values specified by the region’s origin to the thread position in the grid. Threads in the grid outside of the maximum stage-in data size have undefined behavior when accessing the stage-in memory region.

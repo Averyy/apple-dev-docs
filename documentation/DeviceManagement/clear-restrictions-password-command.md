@@ -1,4 +1,4 @@
-# Clear the Restrictions Password
+# Clear Restrictions Password
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -8,8 +8,6 @@ Clear the restrictions password and the restrictions on a device.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -23,37 +21,37 @@ Refer to the following sections to determine supported channels and requirements
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS |
-| User Channel | - |
-| Requires Supervision | iOS |
-| Allowed in User Enrollment | - |
-| Required Access Right | - |
+| Device channel | iOS |
+| User channel | NA |
+| Requires supervision | iOS |
+| Allowed in user enrollment | NA |
+| Required access right | NA |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object ClearRestrictionsPasswordCommand](clearrestrictionspasswordcommand.md)
-  The command to clear the restrictions passcode on a device to disable or edit parental controls.
+  The command to clear the restrictions password and the restrictions on a device.
 - [object ClearRestrictionsPasswordResponse](clearrestrictionspasswordresponse.md)
   A response from the device after it processes the command to clear the restrictions password and the restrictions on a device.
 
 ## Request Body
 
-The command to clear the restrictions passcode on a device to disable or edit parental controls.
+The request object the server returns for the Clear Restrictions Password Command.
 
 ## See Also
 
-- [Clear the Passcode](clear-passcode-command.md)
+- [Clear Passcode](clear-passcode-command.md)
   Remove the passcode from a device.
-- [Unlock a User Account](unlock-user-account-command.md)
+- [Unlock User Account](unlock-user-account-command.md)
   Unlock a user account that the system locked because of too many failed password attempts.
-- [Set the Local Administrator Password](set-auto-admin-password-command.md)
+- [Set Auto Admin Password](set-auto-admin-password-command.md)
   Update the local administrator account password.
-- [Set the Firmware Password](set-firmware-password-command.md)
+- [Set Firmware Password](set-firmware-password-command.md)
   Change or clear the firmware password on a device.
-- [Verify the Firmware Password](verify-firmware-password-command.md)
+- [Verify Firmware Password](verify-firmware-password-command.md)
   Verify the firmware password on a device.
 
 

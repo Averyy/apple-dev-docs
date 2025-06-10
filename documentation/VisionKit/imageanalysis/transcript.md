@@ -1,6 +1,6 @@
 # transcript
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The string that the text items in the image represent.

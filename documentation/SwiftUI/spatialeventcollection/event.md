@@ -59,6 +59,8 @@ You receive a collection of these events in the form of a [`SpatialEventCollecti
 ### Instance Properties
 - [var chirality: Chirality?](spatialeventcollection/event/chirality.md)
   The hand chirality (left or right) of this event, for relevant event kinds.
+- [var trackingAreaIdentifier: LayerRenderer.Drawable.TrackingArea.Identifier](spatialeventcollection/event/trackingareaidentifier.md)
+  The tracking area identifier of the event, if the gesture is attached to a `CompositorLayer`, or `nil` if the event didn’t hit a tracking area or the gesture isn’t attached to a `CompositorLayer`.
 
 ## Relationships
 

@@ -13,6 +13,7 @@ A short title that describes the content of the tab.
 ## Declaration
 
 ```swift
+@MainActor
 var tabTitle: String? { get set }
 ```
 

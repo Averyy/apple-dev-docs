@@ -57,4 +57,4 @@ To learn more about app thinning, see [`Distribution Options`](https://developer
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/doing-advanced-optimization-to-further-reduce-your-app-s-size)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/doing-advanced-optimization-to-further-reduce-your-app-s-size)*

@@ -1,6 +1,6 @@
 # WebMenuItemTagLearnSpelling
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Add the misspelled word to the user’s list of acceptable words.

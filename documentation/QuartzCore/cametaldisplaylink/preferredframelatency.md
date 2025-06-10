@@ -25,8 +25,6 @@ The final latency may be bigger if the system needs more time, such as for windo
 
 > ❗ **Important**:  The only acceptable values are `1.0` and `2.0`.
 
- The only acceptable values are `1.0` and `2.0`.
-
 ## See Also
 
 - [var preferredFrameRateRange: CAFrameRateRange](cametaldisplaylink/preferredframeraterange.md)

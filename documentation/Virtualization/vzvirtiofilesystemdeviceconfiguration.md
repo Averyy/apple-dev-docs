@@ -26,8 +26,6 @@ A `VZVirtioFileSystemDeviceConfiguration` can also share multiple directories. T
 
 > ❗ **Important**:  The commands required to mount shared directories in a guest VM aren’t commands that your app can execute or that you can script from inside your application to a VM; the user must perform them either interactively or as part of a script while logged in to the guest. You must communicate these requirements to the user of your app.
 
- The commands required to mount shared directories in a guest VM aren’t commands that your app can execute or that you can script from inside your application to a VM; the user must perform them either interactively or as part of a script while logged in to the guest. You must communicate these requirements to the user of your app.
-
 Mounting a shared directory requires the user to execute a command in a terminal window, the specific mount command depends on the guest VM’s operating system:
 
 - In macOS guests, use `mount_virtiofs tag directory`.

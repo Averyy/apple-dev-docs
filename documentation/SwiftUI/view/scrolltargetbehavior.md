@@ -77,6 +77,10 @@ You configure which views should be used for settling using the [`scrollTargetLa
   The scroll behavior that aligns scroll targets to view-based geometry.
 - [struct AnyScrollTargetBehavior](anyscrolltargetbehavior.md)
   A type-erased scroll target behavior.
+- [struct ScrollTargetBehaviorProperties](scrolltargetbehaviorproperties.md)
+  Properties influencing the scroll view a scroll target behavior applies to.
+- [struct ScrollTargetBehaviorPropertiesContext](scrolltargetbehaviorpropertiescontext.md)
+  The context in which a scroll target behavior can decide its properties.
 
 
 ---

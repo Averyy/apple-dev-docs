@@ -22,10 +22,10 @@ class URLSessionConfiguration
 
 ## Mentions
 
-- [Accessing cached data](accessing-cached-data.md)
 - [Downloading files in the background](downloading-files-in-the-background.md)
-- [Improving network reliability using Multipath TCP](improving-network-reliability-using-multipath-tcp.md)
+- [Accessing cached data](accessing-cached-data.md)
 - [Fetching website data into memory](fetching-website-data-into-memory.md)
+- [Improving network reliability using Multipath TCP](improving-network-reliability-using-multipath-tcp.md)
 - [Uploading streams of data](uploading-streams-of-data.md)
 
 #### Overview
@@ -162,6 +162,7 @@ Background sessions let you perform uploads and downloads of content in the back
 - [NSCopying](nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -175,4 +176,4 @@ Background sessions let you perform uploads and downloads of content in the back
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/urlsessionconfiguration)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/urlsessionconfiguration)*

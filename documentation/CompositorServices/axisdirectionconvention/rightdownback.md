@@ -6,6 +6,7 @@
 The convention that uses a counterclockwise winding order and positions the leading pixel at the bottom-left corner of the view.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

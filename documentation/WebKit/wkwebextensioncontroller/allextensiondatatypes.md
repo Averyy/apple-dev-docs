@@ -1,6 +1,6 @@
 # allExtensionDataTypes
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Returns a set of all available extension data types.

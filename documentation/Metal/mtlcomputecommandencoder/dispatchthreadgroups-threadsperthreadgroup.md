@@ -28,8 +28,6 @@ func dispatchThreadgroups(_ threadgroupsPerGrid: MTLSize, threadsPerThreadgroup:
 
 > 💡 **Tip**:  Prefer using dispatchThreads for your kernel calls on `Apple4` and later Apple GPUs. See [`Metal Feature Set Tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for information on hardware support.
 
- Prefer using dispatchThreads for your kernel calls on `Apple4` and later Apple GPUs. See [`Metal Feature Set Tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for information on hardware support.
-
 Metal calculates the number of threads in a grid by multiplying `threadsPerThreadgroup` by `threadgroupsPerGrid`.
 
 If the size of your data doesn’t match the size of the grid, perform boundary checks in your compute function to avoid accessing data out of bounds. See [`Calculating Threadgroup and Grid Sizes`](calculating-threadgroup-and-grid-sizes.md) for an example.

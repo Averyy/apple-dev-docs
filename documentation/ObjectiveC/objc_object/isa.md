@@ -8,12 +8,12 @@ A pointer to the class definition of which this object is an instance.
 **Availability**:
 - iOS ?+
 - iPadOS ?+
+- Mac Catalyst ?+
 - macOS ?+
 - tvOS ?+
-- visionOS ?+
 - watchOS ?+
 - Unknown ?+ - Deprecated
-- Mac Catalyst ?+
+- visionOS ?+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # XCTMeasureOptions.InvocationOptions
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: struct
 
 Test measurement options that control how measurement starts and stops.
@@ -31,6 +31,7 @@ struct InvocationOptions
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

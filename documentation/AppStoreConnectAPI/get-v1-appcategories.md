@@ -22,6 +22,7 @@ The first example retrieves the full category and subcategory hierarchy in one r
 
 - [List All Subcategories for an App Category](get-v1-appcategories-_id_-subcategories.md)
   List all App Store subcategories that belong to a specific category.
+- [GET /v1/appCategories/{id}/relationships/subcategories](get-v1-appcategories-_id_-relationships-subcategories.md)
 
 
 ---

@@ -1,14 +1,14 @@
 # Return a Personalized Pass
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: httpRequest
 
 Create and sign a personalized pass, and send it to a device.
 
 **Availability**:
 - iOS 10.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 10.0+
+- watchOS 3.0+
 
 ## Request Body
 

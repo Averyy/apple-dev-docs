@@ -73,8 +73,6 @@ Xcode builds the `SMAppServiceSamplePackage` installer package, and the process 
 
 > ❗ **Important**: When building your own projects, follow the packaging steps in the `generatePackage.zsh` script to generate a correctly configured installer package.
 
-When building your own projects, follow the packaging steps in the `generatePackage.zsh` script to generate a correctly configured installer package.
-
 ##### Install the Login Item and Launch Agent
 
 1. In Terminal, navigate to the `build/Release` directory using the command `cd build/Release`.

@@ -27,6 +27,9 @@ When using web distribution, you need to create an alternative distribution key,
   List the alternative distribution key for your account.
 - [Read alternative distribution key information](get-v1-alternativedistributionkeys-_id_.md)
   Read the public key information for a specific alternative distribution key.
+- [GET /v1/apps/{id}/relationships/alternativeDistributionKey](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
+- [Read an app’s alternative distribution key](get-v1-apps-_id_-alternativedistributionkey.md)
+  Get the alternative distribution keys for a specific app.
 - [Remove an alternative distribution key](delete-v1-alternativedistributionkeys-_id_.md)
   Remove an alternative distribution key from your account.
 ### Objects
@@ -38,6 +41,7 @@ When using web distribution, you need to create an alternative distribution key,
   A response that contains a list of alternative distribution keys.
 - [object AlternativeDistributionKeyCreateRequest](alternativedistributionkeycreaterequest.md)
   The request body you use to create an alternative distribution key.
+- [object AppAlternativeDistributionKeyLinkageResponse](appalternativedistributionkeylinkageresponse.md)
 
 ## See Also
 

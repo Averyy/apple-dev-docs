@@ -20,8 +20,6 @@ var daysSinceLastExposureLevelValues: [NSNumber] { get set }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 
- This property is available in iOS 12.5, and in iOS 13.5 and later.
-
 This property contains eight levels, one for each range of days since last exposure:
 
 - `daysSinceLastExposureScores[0]` when days >= 14.

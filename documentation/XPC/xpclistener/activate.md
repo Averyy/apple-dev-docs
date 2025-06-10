@@ -1,6 +1,6 @@
 # activate()
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Activates an inactive listener.

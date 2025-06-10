@@ -29,8 +29,6 @@ Use this method to create and return an object that implements the methods of th
 
 > ❗ **Important**:  If you implement this method, you must also implement the [`animationController(forDismissed:)`](uiviewcontrollertransitioningdelegate/animationcontroller(fordismissed:).md) method and use it to return a custom transition animator object. If the [`animationController(forDismissed:)`](uiviewcontrollertransitioningdelegate/animationcontroller(fordismissed:).md) method returns `nil`, UIKit does not call this method.
 
- If you implement this method, you must also implement the [`animationController(forDismissed:)`](uiviewcontrollertransitioningdelegate/animationcontroller(fordismissed:).md) method and use it to return a custom transition animator object. If the [`animationController(forDismissed:)`](uiviewcontrollertransitioningdelegate/animationcontroller(fordismissed:).md) method returns `nil`, UIKit does not call this method.
-
 For more information on implementing an interactive animator object, see [`UIViewControllerInteractiveTransitioning`](uiviewcontrollerinteractivetransitioning.md).
 
 ## Parameters

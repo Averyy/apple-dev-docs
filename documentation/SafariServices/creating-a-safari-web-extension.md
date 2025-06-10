@@ -1,6 +1,6 @@
 # Creating a Safari web extension
 
-**Framework**: Safariservices
+**Framework**: Safari Services
 
 Build a Safari web extension in Xcode.
 
@@ -65,4 +65,4 @@ Before you distribute your Safari web extension, create icons for the iOS and ma
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/creating-a-safari-web-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/creating-a-safari-web-extension)*

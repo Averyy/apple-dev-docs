@@ -6,6 +6,7 @@
 The rasterization rate maps that are flipped around the y-axis.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

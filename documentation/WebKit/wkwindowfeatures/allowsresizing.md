@@ -1,6 +1,6 @@
 # allowsResizing
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether to make the containing window window resizable.

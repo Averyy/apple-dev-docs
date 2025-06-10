@@ -21,6 +21,15 @@ For design guidance, see [`Drag and drop`](https://developer.apple.com/design/Hu
   Enable drag-and-drop interactions in lists, tables and custom views.
 - [Making a view into a drag source](making-a-view-into-a-drag-source.md)
   Adopt draggable API to provide items for drag-and-drop operations.
+### Configuring drag and drop behavior
+- [struct DragConfiguration](dragconfiguration.md)
+  The behavior of the drag, proposed by the dragging source.
+- [struct DropConfiguration](dropconfiguration.md)
+  Describes the behavior of the drop.
+### Moving items
+- [struct DragSession](dragsession.md)
+  Describes the ongoing dragging session.
+- [struct DropSession](dropsession.md)
 ### Moving transferable items
 - [func draggable<T>(@autoclosure () -> T) -> some View](view/draggable(_:).md)
   Activates this view as the source of a drag and drop operation.
@@ -47,6 +56,9 @@ For design guidance, see [`Drag and drop`](https://developer.apple.com/design/Hu
   Operation types that determine how a drag and drop session resolves when the user drops a drag item.
 - [struct DropInfo](dropinfo.md)
   The current state of a drop.
+### Describing preview formations
+- [struct DragDropPreviewsFormation](dragdroppreviewsformation.md)
+  On macOS, describes the way the dragged previews are visually composed. Both drag sources and drop destination can specify their desired preview formation.
 ### Configuring spring loading
 - [func springLoadingBehavior(SpringLoadingBehavior) -> some View](view/springloadingbehavior(_:).md)
   Sets the spring loading behavior this view.

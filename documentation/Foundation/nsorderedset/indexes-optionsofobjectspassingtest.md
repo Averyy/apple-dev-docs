@@ -30,8 +30,6 @@ By default, the enumeration starts with the first object and continues serially 
 
 > ❗ **Important**:  If the block parameter or `s` is `nil`, this method raises an exception.
 
- If the block parameter or `s` is `nil`, this method raises an exception.
-
 ## Parameters
 
 - `opts`: A bitmask that specifies the options for the enumeration (whether it should be performed concurrently and whether it should be performed in reverse order).
@@ -53,6 +51,8 @@ By default, the enumeration starts with the first object and continues serially 
   The last object in the ordered set.
 - [func object(at: Int) -> Any](nsorderedset/object(at:).md)
   Returns the object at the specified index of the set.
+- [subscript(Int) -> Any](nsorderedset/subscript(_:).md)
+  Returns the object at the specified index of the set.
 - [func objects(at: IndexSet) -> [Any]](nsorderedset/objects(at:).md)
   Returns the objects in the ordered set at the specified indexes.
 - [func index(of: Any) -> Int](nsorderedset/index(of:).md)
@@ -67,8 +67,6 @@ By default, the enumeration starts with the first object and continues serially 
   Returns the index of an object in the ordered set that passes a test in a given block for a given set of enumeration options.
 - [func indexes(ofObjectsAt: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](nsorderedset/indexes(ofobjectsat:options:passingtest:).md)
   Returns the index, from a given set of indexes, of the object in the ordered set that passes a test in a given block for a given set of enumeration options.
-- [func indexes(ofObjectsPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](nsorderedset/indexes(ofobjectspassingtest:).md)
-  Returns the index of the object in the ordered set that passes a test in a given block.
 
 
 ---

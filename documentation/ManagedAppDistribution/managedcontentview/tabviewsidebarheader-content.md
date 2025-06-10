@@ -1,6 +1,6 @@
 # tabViewSidebarHeader(content:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Adds a custom header to the sidebar of a tab view.

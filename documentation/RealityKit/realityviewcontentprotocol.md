@@ -10,6 +10,7 @@ A protocol representing the content of a reality view.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -59,6 +60,8 @@ Do not interface with this protocol directly. Instead, use [`RealityViewContent`
   A view that represents the default placeholder for a RealityView.
 - [struct RealityViewEntityCollection](realityviewentitycollection.md)
   A collection of entities in a RealityView.
+- [struct RealityViewLayoutOption](realityviewlayoutoption.md)
+  Specifies the frame sizing and content alignment option for`RealityView`.
 - [protocol EntityCollection](entitycollection.md)
   An ordered, mutable collection of entities.
 

@@ -1,6 +1,6 @@
 # allWebsiteDataTypes()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the set of all the available data types.

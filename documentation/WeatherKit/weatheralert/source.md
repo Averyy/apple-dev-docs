@@ -1,6 +1,6 @@
 # source
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The name of the source issuing the weather alert.

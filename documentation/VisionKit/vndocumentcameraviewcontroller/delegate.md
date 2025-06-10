@@ -1,6 +1,6 @@
 # delegate
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The delegate to be notified when the user saves or cancels the document scanner.

@@ -49,4 +49,4 @@ To wait for an event to be signaled, call [`encodeWaitForEvent(_:value:)`](mtlco
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/about-synchronization-events)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/about-synchronization-events)*

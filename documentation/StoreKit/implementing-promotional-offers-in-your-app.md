@@ -1,6 +1,6 @@
 # Implementing promotional offers in your app
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Offer discounted pricing for auto-renewable subscription products to eligible subscribers.
 
@@ -148,4 +148,4 @@ A user can redeem and have active only one promotional offer at a time. If the u
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/implementing-promotional-offers-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/implementing-promotional-offers-in-your-app)*

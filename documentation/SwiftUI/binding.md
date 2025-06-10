@@ -1,6 +1,6 @@
 # Binding
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A property wrapper type that can read and write a value owned by a source of truth.
@@ -25,9 +25,9 @@ A property wrapper type that can read and write a value owned by a source of tru
 
 - [Performing a search operation](performing-a-search-operation.md)
 - [Understanding the navigation stack](understanding-the-composition-of-navigation-stack.md)
-- [Managing user interface state](managing-user-interface-state.md)
 - [Adding a search interface to your app](adding-a-search-interface-to-your-app.md)
 - [Managing search interface activation](managing-search-interface-activation.md)
+- [Managing user interface state](managing-user-interface-state.md)
 
 #### Overview
 
@@ -97,6 +97,8 @@ A binding conforms to `Sendable` only if its wrapped value type also conforms to
   Specifies a transaction for the binding.
 - [var transaction: Transaction](binding/transaction.md)
   The binding’s transaction.
+### Subscripts
+- [subscript(_:)](binding/subscript(_:).md)
 ### Default Implementations
 - [Identifiable Implementations](binding/identifiable-implementations.md)
 
@@ -110,6 +112,7 @@ A binding conforms to `Sendable` only if its wrapped value type also conforms to
 - [Identifiable](../Swift/Identifiable.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also
@@ -124,4 +127,4 @@ A binding conforms to `Sendable` only if its wrapped value type also conforms to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/binding)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/binding)*

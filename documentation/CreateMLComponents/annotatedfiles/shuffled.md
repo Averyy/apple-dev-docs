@@ -1,6 +1,6 @@
 # shuffled()
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns the elements of the sequence, shuffled.

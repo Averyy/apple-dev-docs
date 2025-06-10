@@ -1,6 +1,6 @@
 # addWatchFace(at:completionHandler:)
 
-**Framework**: Clockkit  
+**Framework**: ClockKit  
 **Kind**: method
 
 Adds a watch face from the app’s bundle.

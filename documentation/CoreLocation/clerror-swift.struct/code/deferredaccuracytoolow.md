@@ -22,7 +22,7 @@ case deferredAccuracyTooLow
 
 #### Discussion
 
-The accuracy must be set to [`kCLLocationAccuracyBest`](kcllocationaccuracybest.md) or [`kCLLocationAccuracyBestForNavigation`](kcllocationaccuracybestfornavigation.md).
+The accuracy must be set to `kCLLocationAccuracyBest` or `kCLLocationAccuracyBestForNavigation`.
 
 ## See Also
 

@@ -19,7 +19,7 @@ class var resetCursorRectsRunLoopOrdering: Int { get }
 - [class var displayWindowRunLoopOrdering: Int](nsapplication/displaywindowrunloopordering.md)
   The priority at which windows are displayed.
 - [NSUpdateWindowsRunLoopOrdering](nsupdatewindowsrunloopordering.md)
-  This constant is used by the `NSRunLoop` method [`perform(_:target:argument:order:modes:)`](https://developer.apple.com/documentation/foundation/runloop/1409310-perform).
+  This constant is used by the `NSRunLoop` method [`perform(_:target:argument:order:modes:)`](https://developer.apple.com/documentation/Foundation/RunLoop/perform(_:target:argument:order:modes:)).
 
 
 ---

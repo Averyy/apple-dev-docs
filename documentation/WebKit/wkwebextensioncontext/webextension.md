@@ -1,6 +1,6 @@
 # webExtension
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The extension this context represents.

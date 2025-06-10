@@ -17,8 +17,6 @@ In your app, you can check the current value of this setting and make any necess
 
 > ❗ **Important**: This sample code project includes a sample video that contains sequences of flashing effects.
 
-This sample code project includes a sample video that contains sequences of flashing effects.
-
 ##### Configure the Sample Code Project
 
 This sample code project relies on changes to a system setting. To observe a change in the sample app’s UI, change the value of the Dim Flashing Lights setting at any time, and return to the app to observe how the UI responds.

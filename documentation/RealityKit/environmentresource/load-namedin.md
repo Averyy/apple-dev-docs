@@ -10,6 +10,7 @@ Synchronously loads an environment resource from a bundle.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -33,8 +34,6 @@ To add an environment resource to your Xcode project, see [`EnvironmentResource`
 
 > ❗ **Important**: This function blocks the calling thread while RealityKit loads the requested resource.
 
-This function blocks the calling thread while RealityKit loads the requested resource.
-
 ## Parameters
 
 - `name`: The image name without the file extension.
@@ -42,7 +41,7 @@ This function blocks the calling thread while RealityKit loads the requested res
 
 ## See Also
 
-- [convenience init(named: String, in: Bundle?) async throws](environmentresource/init(named:in:).md)
+- [convenience(named:in:)](environmentresource/init(named:in:).md)
   Asynchronously loads an environment resource from a bundle.
 - [convenience init(equirectangular: CGImage, withName: String?) throws](environmentresource/init(equirectangular:withname:)-9g602.md)
   Synchronously creates an environment resource from an equirectangular image.

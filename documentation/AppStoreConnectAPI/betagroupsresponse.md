@@ -37,6 +37,9 @@ object BetaGroupsResponse
 - [object BetaGroupBuildsLinkagesResponse](betagroupbuildslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 - [object BetaPublicLinkUsagesV1MetricResponse](betapubliclinkusagesv1metricresponse.md)
+- [object BetaGroupAppLinkageResponse](betagroupapplinkageresponse.md)
+- [object BetaGroupBetaRecruitmentCriteriaLinkageResponse](betagroupbetarecruitmentcriterialinkageresponse.md)
+- [object BetaGroupBetaRecruitmentCriterionCompatibleBuildCheckLinkageResponse](betagroupbetarecruitmentcriterioncompatiblebuildchecklinkageresponse.md)
 
 
 ---

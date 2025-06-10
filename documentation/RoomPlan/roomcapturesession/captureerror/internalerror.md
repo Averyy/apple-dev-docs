@@ -9,7 +9,7 @@ An error that indicates when the framework encounters an unexpected error case.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

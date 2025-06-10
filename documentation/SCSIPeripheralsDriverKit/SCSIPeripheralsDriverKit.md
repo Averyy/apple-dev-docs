@@ -1,6 +1,6 @@
 # SCSIPeripheralsDriverKit
 
-**Framework**: Scsiperipheralsdriverkit  
+**Framework**: SCSIPeripheralsDriverKit  
 **Kind**: module
 
 Develop drivers for peripherals that use SCSI Block Command and Multimedia Command protocols.

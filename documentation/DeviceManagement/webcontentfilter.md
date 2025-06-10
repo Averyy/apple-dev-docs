@@ -10,8 +10,6 @@ The payload you use to configure web content filters.
 - iPadOS 7.0+
 - macOS 10.15+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -35,17 +33,17 @@ All filtering options are active simultaneously. The system only permits URLs an
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, Shared iPad, macOS |
-| User Channel | - |
-| Allow Manual Install | iOS, macOS |
-| Requires Supervision | iOS |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, macOS, Shared iPad, visionOS |
+| User channel | NA |
+| Allow manual install | iOS, macOS, visionOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, visionOS |
+| Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -98,6 +96,8 @@ All filtering options are active simultaneously. The system only permits URLs an
 ### Objects
 - [object WebContentFilter.AllowListBookmarksItem](webcontentfilter/allowlistbookmarksitem.md)
   The bookmark in the allow list of the web content filter.
+- [object WebContentFilter.URLFilterParameters](webcontentfilter/urlfilterparameters-data.dictionary.md)
+  A dictionary containing URL filter parameters.
 - [object WebContentFilter.VendorConfig](webcontentfilter/vendorconfig-data.dictionary.md)
   A custom dictionary for the filtering service plug-in.
 - [object WebContentFilter.WhitelistedBookmarksItem](webcontentfilter/whitelistedbookmarksitem.md)

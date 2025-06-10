@@ -1,6 +1,6 @@
 # WKUserInterfaceDirectionPolicy.content
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 The directionality follows the CSS/HTML/XHTML specifications.

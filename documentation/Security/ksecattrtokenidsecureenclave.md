@@ -30,8 +30,6 @@ The only keychain items supported by the Secure Enclave are 256-bit elliptic cur
 
 > ❗ **Important**:  It is not possible to import pre-existing keys into the Secure Enclave.
 
- It is not possible to import pre-existing keys into the Secure Enclave.
-
 
 ---
 

@@ -1,6 +1,6 @@
 # WKError
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: struct
 
 Possible error values that WebKit APIs can return.
@@ -66,6 +66,7 @@ struct WKError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

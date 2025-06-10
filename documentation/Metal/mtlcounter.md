@@ -16,7 +16,7 @@ An individual counter a GPU device lists within one of its counter sets.
 ## Declaration
 
 ```swift
-protocol MTLCounter : NSObjectProtocol
+protocol MTLCounter : NSObjectProtocol, Sendable
 ```
 
 #### Overview
@@ -33,6 +33,8 @@ You can determine which counters a GPU supports within a counter set (see [`MTLC
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

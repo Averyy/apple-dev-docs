@@ -17,12 +17,10 @@ A package version consists of three integers separated by periods, for exam
 
 ## Topics
 
-### Initializers
+### Creating a new version
 - [init(Int, Int, Int, prereleaseIdentifiers: [String], buildMetadataIdentifiers: [String])](version/init(_:_:_:prereleaseidentifiers:buildmetadataidentifiers:).md)
   Initializes a version struct with the provided components of a semantic version.
-### Instance Properties
-- [let buildMetadataIdentifiers: [String]](version/buildmetadataidentifiers.md)
-  The build metadata of this version according to the semantic versioning standard, such as a commit hash.
+### Inspecting a version
 - [let major: Int](version/major.md)
   The major version according to the semantic versioning standard.
 - [let minor: Int](version/minor.md)
@@ -31,6 +29,8 @@ A package version consists of three integers separated by periods, for exam
   The patch version according to the semantic versioning standard.
 - [let prereleaseIdentifiers: [String]](version/prereleaseidentifiers.md)
   The pre-release identifier according to the semantic versioning standard, such as `-beta.1`.
+- [let buildMetadataIdentifiers: [String]](version/buildmetadataidentifiers.md)
+  The build metadata of this version according to the semantic versioning standard, such as a commit hash.
 ### Default Implementations
 - [Comparable Implementations](version/comparable-implementations.md)
 - [CustomStringConvertible Implementations](version/customstringconvertible-implementations.md)
@@ -52,11 +52,18 @@ A package version consists of three integers separated by periods, for exam
 - [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
 - [LosslessStringConvertible](../Swift/LosslessStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [let kind: Package.Dependency.Kind](package/dependency/kind-swift.property.md)
   A description of the package dependency.
+- [Package.Dependency.Kind](package/dependency/kind-swift.enum.md)
+  The type of dependency.
+- [var name: String?](package/dependency/name.md)
+  The name of the dependency.
+- [var url: String?](package/dependency/url.md)
+  The Git URL of the package dependency.
 
 
 ---

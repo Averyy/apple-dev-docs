@@ -1,6 +1,6 @@
 # DOM_CSS_VALUE_LIST
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

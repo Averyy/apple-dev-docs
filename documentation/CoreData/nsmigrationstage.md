@@ -24,8 +24,6 @@ class NSMigrationStage
 
 > ❗ **Important**:  Don’t create instances of [`NSMigrationStage`](nsmigrationstage.md). Instead, use a concrete subclass, such as [`NSLightweightMigrationStage`](nslightweightmigrationstage.md) or [`NSCustomMigrationStage`](nscustommigrationstage.md).
 
- Don’t create instances of [`NSMigrationStage`](nsmigrationstage.md). Instead, use a concrete subclass, such as [`NSLightweightMigrationStage`](nslightweightmigrationstage.md) or [`NSCustomMigrationStage`](nscustommigrationstage.md).
-
 ## Topics
 
 ### Describing the purpose

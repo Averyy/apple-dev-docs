@@ -26,6 +26,7 @@ These constants specify the scaling filters used by [`magnificationFilter`](cala
   Defines the identity transform matrix used by Core Animation.
 - [struct CATransform3D](catransform3d.md)
   The standard transform matrix used throughout Core Animation.
+- [CALayer.DynamicRange](calayer/dynamicrange.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # init(x:y:t:domain:function:)
 
-**Framework**: Charts  
+**Framework**: Swift Charts  
 **Kind**: init
 
 Creates a mark that graphs a parametric function (x, y) = f(t).

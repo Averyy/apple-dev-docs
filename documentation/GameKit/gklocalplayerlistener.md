@@ -17,14 +17,14 @@ A protocol that handles events for Game Center players.
 ## Declaration
 
 ```swift
-protocol GKLocalPlayerListener : GKChallengeListener, GKInviteEventListener, GKSavedGameListener, GKTurnBasedEventListener
+protocol GKLocalPlayerListener : GKChallengeListener, GKInviteEventListener, GKTurnBasedEventListener
 ```
 
 ## Mentions
 
-- [Saving the player’s game data to an iCloud account](saving-the-player-s-game-data-to-an-icloud-account.md)
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
 - [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Saving the player’s game data to an iCloud account](saving-the-player-s-game-data-to-an-icloud-account.md)
 
 #### Overview
 
@@ -34,6 +34,7 @@ Adopt the [`GKLocalPlayerListener`](gklocalplayerlistener.md) protocol to listen
 
 ### Inherits From
 - [GKChallengeListener](gkchallengelistener.md)
+- [GKGameActivityListener](gkgameactivitylistener.md)
 - [GKInviteEventListener](gkinviteeventlistener.md)
 - [GKSavedGameListener](gksavedgamelistener.md)
 - [GKTurnBasedEventListener](gkturnbasedeventlistener.md)
@@ -53,9 +54,9 @@ Adopt the [`GKLocalPlayerListener`](gklocalplayerlistener.md) protocol to listen
   A remote player who the local player running your game can invite and communicate with through Game Center.
 - [class GKBasePlayer](gkbaseplayer.md)
   A class that provides common data and methods for the different player objects.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name/1515396-gkplayerauthenticationdidchangen.md)
-  A notification that posts after GameKit authenticates the local player. 
-- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name/1520710-gkplayerdidchangenotificationnam.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+  A notification that posts after GameKit authenticates the local player.
+- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerDidChangeNotificationName.md)
   A notification that posts when a player object’s data changes.
 
 

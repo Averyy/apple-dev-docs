@@ -67,6 +67,7 @@ Use this type of request to track the bounding boxes of rectangles throughout a 
 - [Hashable](../Swift/Hashable.md)
 - [ImageProcessingRequest](imageprocessingrequest.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [StatefulRequest](statefulrequest.md)
 - [VisionRequest](visionrequest.md)
 

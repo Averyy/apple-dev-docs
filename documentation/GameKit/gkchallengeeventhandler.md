@@ -17,11 +17,9 @@ class GKChallengeEventHandler
 
 #### Overview
 
-> ❗ **Important**:  Your game must authenticate a local player before you can use any Game Center classes. If there is no authenticated player, your game receives a [`GKError.Code.notAuthenticated`](gkerror/code/notauthenticated.md) error. For more information, see [`Authenticating a player`](authenticating-a-player.md).
+> ❗ **Important**:  Your game must initialize a local player before you can use any Game Center classes. If there is no initialized player, your game receives a [`GKError.Code.notAuthenticated`](gkerror/code/notauthenticated.md) error. For more information, see [`Authenticating a player`](authenticating-a-player.md).
 
- Your game must authenticate a local player before you can use any Game Center classes. If there is no authenticated player, your game receives a [`GKError.Code.notAuthenticated`](gkerror/code/notauthenticated.md) error. For more information, see [`Authenticating a player`](authenticating-a-player.md).
-
-To use it, call the [`challengeEventHandler`](gkchallengeeventhandler/challengeeventhandler.md) class method to get the [`Singleton`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Singleton.html#//apple_ref/doc/uid/TP40008195-CH49) instance and assign an object that implements the [`GKChallengeEventHandlerDelegate`](gkchallengeeventhandlerdelegate.md) protocol to its [`delegate`](gkchallengeeventhandler/delegate.md) property. You should assign a challenge event handler immediately after the local player has been authenticated, because your game may have been launched in response to a challenge notification being received by the player.
+To use it, call the [`challengeEventHandler`](gkchallengeeventhandler/challengeeventhandler.md) class method to get the [`Singleton`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Singleton.html#//apple_ref/doc/uid/TP40008195-CH49) instance and assign an object that implements the [`GKChallengeEventHandlerDelegate`](gkchallengeeventhandlerdelegate.md) protocol to its [`delegate`](gkchallengeeventhandler/delegate.md) property. You should assign a challenge event handler immediately after initializing the local player, because your game may have launched in response to a challenge notification being received by the player.
 
 ## Topics
 
@@ -46,8 +44,16 @@ To use it, call the [`challengeEventHandler`](gkchallengeeventhandler/challengee
 - [class GKAchievementViewController](gkachievementviewcontroller.md)
   An `GKAchievementViewController` object provides a standard user interface to display achievement progress for the local player. If the [`GKGameCenterViewController`](gkgamecenterviewcontroller.md) class is available, you should use it instead.
 - [class GKChallengesViewController](gkchallengesviewcontroller.md)
+- [class GKChallenge](gkchallenge.md)
+  A challenge issued by the local player to another player.
+- [class GKScoreChallenge](gkscorechallenge.md)
+  A type of challenge where a player must beat the leaderboard score of another player.
+- [class GKAchievementChallenge](gkachievementchallenge.md)
+  A type of challenge where a player must earn another player’s achievement.
 - [class GKCloudPlayer](gkcloudplayer.md)
   The object representing the currently signed-in iCloud user.
+- [class GKGameCenterViewController](gkgamecenterviewcontroller.md)
+  The dashboard that allows players to access their Game Center data in your game.
 - [class GKGameSession](gkgamesession.md)
   A game session you can use to save game data, invite other players, and create turn-based and real-time game apps.
 - [class GKGameSessionSharingViewController](gkgamesessionsharingviewcontroller.md)
@@ -64,10 +70,6 @@ To use it, call the [`challengeEventHandler`](gkchallengeeventhandler/challengee
   A [`GKSession`](gksession.md) object provides the ability to discover and connect to nearby iOS devices using Bluetooth or Wi-fi.
 - [class GKTurnBasedEventHandler](gkturnbasedeventhandler.md)
   The [`GKTurnBasedEventHandler`](gkturnbasedeventhandler.md) class is used to respond to important messages related to turn-based matches. To use it, call the [`shared()`](gkturnbasedeventhandler/shared().md) class method to get the singleton instance and assign an object that implements the [`GKTurnBasedEventHandlerDelegate`](gkturnbasedeventhandlerdelegate.md) protocol to its [`delegate`](gkturnbasedeventhandler/delegate.md) property. All methods are called on the main thread.
-- [class GKVoiceChat](gkvoicechat.md)
-  A voice channel that allows players to speak with each other in a multiplayer game.
-- [class GKVoiceChatService](gkvoicechatservice.md)
-  The [`GKVoiceChatService`](gkvoicechatservice.md) class allows your application to connect two iOS devices into a voice chat.
 
 
 ---

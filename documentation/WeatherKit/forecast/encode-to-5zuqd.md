@@ -1,6 +1,6 @@
 # encode(to:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 **Availability**:

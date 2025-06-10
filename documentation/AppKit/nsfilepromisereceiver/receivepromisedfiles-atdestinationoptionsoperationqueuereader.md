@@ -1,6 +1,6 @@
 # receivePromisedFiles(atDestination:options:operationQueue:reader:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Fulfills the promises at the specified destination.

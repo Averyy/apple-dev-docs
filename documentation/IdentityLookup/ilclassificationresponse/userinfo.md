@@ -19,7 +19,7 @@ var userInfo: [String : Any]? { get set }
 
 #### Discussion
 
-Use this property if you set the `ILClassificationExtensionNetworkReportDestination` key in the extension’s `Info.plist` file. The property stores any additional data that you want to pass to your servers as part of the response. Both the keys and values must be JSON-serializable. For more information, see [`NSJSONSerialization`](https://developer.apple.com/documentation/foundation/nsjsonserialization).
+Use this property if you set the `ILClassificationExtensionNetworkReportDestination` key in the extension’s `Info.plist` file. The property stores any additional data that you want to pass to your servers as part of the response. Both the keys and values must be JSON-serializable. For more information, see [`JSONSerialization`](https://developer.apple.com/documentation/Foundation/JSONSerialization).
 
 ## See Also
 

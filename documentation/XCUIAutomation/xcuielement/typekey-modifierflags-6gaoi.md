@@ -1,6 +1,6 @@
 # typeKey(_:modifierFlags:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Types a single key from the XCUIKeyboardKey enumeration with the specified modifier flags.

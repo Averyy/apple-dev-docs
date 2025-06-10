@@ -26,4 +26,4 @@ You must import this API explicitly:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/authorization-plug-ins)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/authorization-plug-ins)*

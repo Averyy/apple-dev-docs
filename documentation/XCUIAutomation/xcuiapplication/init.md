@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: init
 
 Creates a proxy for the application that’s configured as the Target Application in Xcode’s target settings.

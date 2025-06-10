@@ -105,7 +105,7 @@ someObject.someNonmutatingProperty = temp
 - Playgrounds in Xcode no longer log messages about fields whose types fail to demangle at runtime. (44642942)
 - Compilation now consistently reports the errors responsible for any failures. For example, previously, a message like “Command CompileSwiftSources failed with a nonzero exit code” could occur without an accompanying failure reason. (43033749, 44362180)
 - Long file paths containing white space no longer cause build failures. (44142091)
-- The [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class’s [`init(for:)`](https://developer.apple.com/documentation/foundation/bundle/1417717-init) initializer now works consistently with Swift classes, including when not running on the latest operating system versions. (44489216)
+- The [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class’s [`init(for:)`](https://developer.apple.com/documentation/Foundation/Bundle/init(for:)) initializer now works consistently with Swift classes, including when not running on the latest operating system versions. (44489216)
 - A `let` property of a generic class that has function type as an argument can now be passed successfully to another function or method. (41056468) ```swift
 class A<B> {
     let function: (B) -> B

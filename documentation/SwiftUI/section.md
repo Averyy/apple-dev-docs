@@ -1,6 +1,6 @@
 # Section
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A container view that you can use to add hierarchy within certain views.
@@ -24,6 +24,7 @@ struct Section<Parent, Content, Footer>
 
 - [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
 - [Suggesting search terms](suggesting-search-terms.md)
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
 - [Displaying data in lists](displaying-data-in-lists.md)
 
 #### Overview
@@ -82,4 +83,4 @@ Create sections that expand and collapse by using an initializer that accepts an
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/section)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/section)*

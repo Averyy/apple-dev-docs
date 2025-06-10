@@ -1,6 +1,6 @@
 # didStopMeasuring()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 A method that XCTest calls when it has finished running the measured code.

@@ -30,8 +30,6 @@ Don’t recycle toolbar items; always provide a new instance, even if the toolba
 
 > ❗ **Important**:  Even though this is an optional method, you must implement it if you create the toolbar programatically.
 
- Even though this is an optional method, you must implement it if you create the toolbar programatically.
-
 ## Parameters
 
 - `toolbar`: The toolbar for which the item is being requested.

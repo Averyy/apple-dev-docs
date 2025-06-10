@@ -40,6 +40,7 @@ Use this type in conjunction with the [`customizationBehavior(_:)`](customizable
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -49,6 +50,8 @@ Use this type in conjunction with the [`customizationBehavior(_:)`](customizable
   Conforming types represent items that can be placed in various locations in a customizable toolbar.
 - [struct ToolbarCustomizationOptions](toolbarcustomizationoptions.md)
   Options that influence the default customization behavior of customizable toolbar content.
+- [struct SearchToolbarBehavior](searchtoolbarbehavior.md)
+  The behavior of a search field in a toolbar.
 
 
 ---

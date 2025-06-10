@@ -50,6 +50,8 @@ To learn more about power and performance metrics, see [`About Metrics organizer
   Categories of metric reports for apps that you distribute through the App Store.
 - [object PerfPowerMetric](perfpowermetric.md)
   Unused.
+- [object AppPerfPowerMetricsLinkagesResponse](appperfpowermetricslinkagesresponse.md)
+- [object DiagnosticSignatureLogsLinkagesResponse](diagnosticsignaturelogslinkagesresponse.md)
 
 ## See Also
 

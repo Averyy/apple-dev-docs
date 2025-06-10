@@ -17,12 +17,13 @@ A transition from transparent to opaque on insertion, and from opaque to transpa
 ## Declaration
 
 ```swift
-static let opacity: AnyTransition
+nonisolated
+(unsafe) static let opacity: AnyTransition
 ```
 
 ## See Also
 
-- [static let identity: AnyTransition](anytransition/identity.md)
+- [static var identity: AnyTransition](anytransition/identity.md)
   A transition that returns the input view, unmodified, as the output view.
 - [static func move(edge: Edge) -> AnyTransition](anytransition/move(edge:).md)
   Returns a transition that moves the view away, towards the specified edge of the view.

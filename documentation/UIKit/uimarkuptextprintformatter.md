@@ -14,7 +14,6 @@ An object that lays out HTML text for a multipage print job.
 ## Declaration
 
 ```swift
-@MainActor
 class UIMarkupTextPrintFormatter
 ```
 

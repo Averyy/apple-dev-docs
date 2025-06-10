@@ -1,6 +1,6 @@
 # AVAudioSession
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: class
 
 An object that communicates to the system how you intend to use audio in your app.
@@ -77,8 +77,6 @@ The audio session uses this configuration when you activate the session using th
 ### Configuring the spatial experience in visionOS
 - [func setIntendedSpatialExperience(any AVAudioSessionSpatialExperience) throws](avaudiosession/setintendedspatialexperience(_:).md)
   Sets the spatial audio experience your app intends to provide the user.
-- [var intendedSpatialExperience: any AVAudioSessionSpatialExperience](avaudiosession/intendedspatialexperience-1qwbe.md)
-  The spatial audio experience your app intends to provide the user.
 - [protocol AVAudioSessionSpatialExperience](../AVFoundation/AVAudioSessionSpatialExperience.md)
   A protocol that defines types of spatial audio experiences that the system supports.
 - [AVAudioSession.HeadTrackedSpatialExperience](avaudiosession/headtrackedspatialexperience.md)
@@ -222,6 +220,22 @@ The audio session uses this configuration when you activate the session using th
 ### Deprecated
 - [Deprecated Symbols](deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Instance Properties
+- [var intendedSpatialExperience: any AVAudioSessionSpatialExperience](avaudiosession/intendedspatialexperience-1bpnq.md)
+  the developer’s intended spatial experience for this audio session
+- [var isOutputMuted: Bool](avaudiosession/isoutputmuted.md)
+  A Boolean value that indicates whether audio output is in a muted state.
+### Instance Methods
+- [func setOutputMuted(Bool) throws](avaudiosession/setoutputmuted(_:).md)
+  Sets a Boolean value to inform the system to mute the session’s output audio. The default value is false (unmuted).
+### Type Properties
+- [class let availableInputsChangeNotification: NSNotification.Name](avaudiosession/availableinputschangenotification.md)
+- [class let muteStateKey: String](avaudiosession/mutestatekey.md)
+  Keys for [`outputMuteStateChangeNotification`](avaudiosession/outputmutestatechangenotification.md) Value is `NSNumber` type with boolean value 0 for unmuted or value 1 for muted (samples zeroed out)
+- [class let outputMuteStateChangeNotification: NSNotification.Name](avaudiosession/outputmutestatechangenotification.md)
+  Notification sent to registered listeners when session’s output mute state changes.
+- [class let userIntentToUnmuteOutputNotification: NSNotification.Name](avaudiosession/userintenttounmuteoutputnotification.md)
+  Notification sent to registered listeners when the application’s output is muted and user hints to unmute.
 
 ## Relationships
 
@@ -235,6 +249,7 @@ The audio session uses this configuration when you activate the session using th
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -254,4 +269,4 @@ The audio session uses this configuration when you activate the session using th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/avaudiosession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/avaudiosession)*

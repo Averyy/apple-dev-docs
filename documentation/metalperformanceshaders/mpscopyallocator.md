@@ -1,6 +1,6 @@
 # MPSCopyAllocator
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: tdef
 
 A block to make a copy of a source texture for filters that can only execute out of place.

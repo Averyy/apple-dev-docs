@@ -29,7 +29,7 @@ Returns [`ComparisonResult.orderedAscending`](https://developer.apple.com/docume
 
 #### Discussion
 
-You can pass the selector for this method to the NSArray method [`sortedArray(using:)`](https://developer.apple.com/documentation/foundation/nsarray/1410025-sortedarray) to create an array of events sorted by start date.
+You can pass the selector for this method to the NSArray method [`sortedArray(using:)`](https://developer.apple.com/documentation/Foundation/NSArray/sortedArray(using:)-9nhh9) to create an array of events sorted by start date.
 
 ## Parameters
 

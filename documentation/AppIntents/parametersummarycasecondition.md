@@ -8,10 +8,10 @@ A type that represents an individual case of a switch statement in a parameter s
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +22,7 @@ struct ParameterSummaryCaseCondition<Intent, Value, Summary> where Intent : AppI
 
 ## Topics
 
-### Initializers
+### Creating the case condition
 - [init(Value, () -> Summary)](parametersummarycasecondition/init(_:_:)-3680j.md)
 - [init([Value], () -> Summary)](parametersummarycasecondition/init(_:_:)-4029f.md)
 

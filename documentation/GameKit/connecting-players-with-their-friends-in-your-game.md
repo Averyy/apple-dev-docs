@@ -16,8 +16,6 @@ For example, if a player grants access, then only the friends who also grant you
 
 > ❗ **Important**:  The code listings in this article use GameKit asynchronous methods that you invoke within a [`Task`](https://developer.apple.com/documentation/Swift/Task) structure in SwiftUI. For details on asynchronous flows, see [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency).
 
- The code listings in this article use GameKit asynchronous methods that you invoke within a [`Task`](https://developer.apple.com/documentation/Swift/Task) structure in SwiftUI. For details on asynchronous flows, see [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency).
-
 ##### Sending Friend Requests
 
 Game Center provides an interface for sending and receiving friend requests including an inbox that shows requests that a player may have missed. Players can also send friend requests within your game. For example, use this feature to encourage players to add more friends in your multiplayer game.
@@ -108,9 +106,9 @@ For example, you can display details on their friends leaderboard scores to a pl
   A class that provides common data and methods for the different player objects.
 - [protocol GKLocalPlayerListener](gklocalplayerlistener.md)
   A protocol that handles events for Game Center players.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name/1515396-gkplayerauthenticationdidchangen.md)
-  A notification that posts after GameKit authenticates the local player. 
-- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name/1520710-gkplayerdidchangenotificationnam.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+  A notification that posts after GameKit authenticates the local player.
+- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerDidChangeNotificationName.md)
   A notification that posts when a player object’s data changes.
 
 

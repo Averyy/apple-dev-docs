@@ -25,11 +25,17 @@ struct PayWithApplePayButtonStyle
 - [static let white: PayWithApplePayButtonStyle](paywithapplepaybuttonstyle/white.md)
 - [static let whiteOutline: PayWithApplePayButtonStyle](paywithapplepaybuttonstyle/whiteoutline.md)
 
+## Relationships
+
+### Conforms To
+- [Equatable](../Swift/Equatable.md)
+
 ## See Also
 
 - [class PKPaymentButton](pkpaymentbutton.md)
   An object that displays a button either to trigger payments through Apple Pay or to prompt the user to set up a card.
 - [struct PayWithApplePayButton](paywithapplepaybutton.md)
+- [struct PayWithApplePayButtonLabel](paywithapplepaybuttonlabel.md)
 - [struct PayWithApplePayButtonLabel](paywithapplepaybuttonlabel.md)
 
 

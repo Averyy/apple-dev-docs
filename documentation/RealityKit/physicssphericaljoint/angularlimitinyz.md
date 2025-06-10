@@ -10,6 +10,7 @@ A cone-shaped limit of rotational freedom.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ var angularLimitInYZ: (Float, Float)?
 
 The maximum value of rotation in radians from the y and z axes, or `nil` for unlimited.
 
-This pair defines an elliptical cone limit around the x-axis of the pose on the first entity, [`pin0`](physicssphericaljoint/pin0.md). If defined, the x-axis of the pose on the second entity ([`pin1`](physicssphericaljoint/pin1.md)) is limited to stay within this cone.
+This pair defines an elliptical cone limit around the x-axis of the pose on the first entity, `pin0`. If defined, the x-axis of the pose on the second entity (`pin1`) is limited to stay within this cone.
 
 
 ---

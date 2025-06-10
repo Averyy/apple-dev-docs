@@ -485,4 +485,4 @@ If the behavior you want to add supplements that of the existing class, you coul
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsstring)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsstring)*

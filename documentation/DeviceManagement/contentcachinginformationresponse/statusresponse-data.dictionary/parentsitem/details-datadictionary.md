@@ -7,8 +7,6 @@ A dictionary that contains additional details about the parent content cache.
 
 **Availability**:
 - macOS 10.15.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,7 +16,7 @@ object ContentCachingInformationResponse.StatusResponse.ParentsItem.Details
 
 ## Topics
 
-### Commands
+### Objects
 - [object ContentCachingInformationResponse.StatusResponse.ParentsItem.Details.Capabilities](contentcachinginformationresponse/statusresponse-data.dictionary/parentsitem/details-data.dictionary/capabilities-data.dictionary.md)
   A dictionary that describes the capabilities of the parent content cache.
 - [object ContentCachingInformationResponse.StatusResponse.ParentsItem.Details.Local-network](contentcachinginformationresponse/statusresponse-data.dictionary/parentsitem/details-data.dictionary/local-network-data.dictionary.md)

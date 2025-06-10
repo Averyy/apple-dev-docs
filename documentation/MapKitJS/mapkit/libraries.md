@@ -1,6 +1,6 @@
 # Libraries
 
-**Framework**: Mapkitjs  
+**Framework**: MapKit JS  
 **Kind**: property
 
 The list of available libraries.
@@ -38,4 +38,4 @@ readonly attribute string[] Libraries;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkit/libraries)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit/libraries)*

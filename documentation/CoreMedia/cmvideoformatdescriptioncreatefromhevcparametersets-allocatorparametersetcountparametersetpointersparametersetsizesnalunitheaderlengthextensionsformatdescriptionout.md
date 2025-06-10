@@ -33,8 +33,6 @@ The supported NAL unit types to include in the format description are:
 
 > ❗ **Important**:  You need to provide at least one sequence parameter set and one picture parameter set.
 
- You need to provide at least one sequence parameter set and one picture parameter set.
-
 ## Parameters
 
 - `allocator`: The   for creating the format description, or pass   to use the default allocator.

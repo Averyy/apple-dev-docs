@@ -23,12 +23,8 @@ struct PrivateKey
 ## Topics
 
 ### Creating a private key
-- [init(dataRepresentation: Data) throws](secureenclave/p256/keyagreement/privatekey/init(datarepresentation:).md)
-  Creates a P-256 private key for key agreement from the specified data representation.
 - [init(dataRepresentation: Data, authenticationContext: LAContext?) throws](secureenclave/p256/keyagreement/privatekey/init(datarepresentation:authenticationcontext:).md)
   Creates a P-256 private key for key agreement from a data representation of the key with the given authentication context.
-- [init(compactRepresentable: Bool, accessControl: SecAccessControl) throws](secureenclave/p256/keyagreement/privatekey/init(compactrepresentable:accesscontrol:).md)
-  Creates a P-256 private key for key agreement with the specified access control.
 - [init(compactRepresentable: Bool, accessControl: SecAccessControl, authenticationContext: LAContext?) throws](secureenclave/p256/keyagreement/privatekey/init(compactrepresentable:accesscontrol:authenticationcontext:).md)
   Creates a P-256 private key for key agreement with the specified access control.
 ### Representing the key
@@ -42,6 +38,11 @@ struct PrivateKey
   Computes a shared secret with the provided public key from another party.
 - [struct SharedSecret](sharedsecret.md)
   A key agreement result from which you can derive a symmetric cryptographic key.
+### Initializers
+- [init(compactRepresentable: Bool, accessControl: SecAccessControl) throws](secureenclave/p256/keyagreement/privatekey/init(compactrepresentable:accesscontrol:).md)
+  Creates a P-256 private key for key agreement with the specified access control.
+- [init(dataRepresentation: Data) throws](secureenclave/p256/keyagreement/privatekey/init(datarepresentation:).md)
+  Creates a P-256 private key for key agreement from the specified data representation.
 ### Default Implementations
 - [DiffieHellmanKeyAgreement Implementations](secureenclave/p256/keyagreement/privatekey/diffiehellmankeyagreement-implementations.md)
 
@@ -52,6 +53,7 @@ struct PrivateKey
 - [DiffieHellmanKeyAgreement](diffiehellmankeyagreement.md)
 - [HPKEDiffieHellmanPrivateKey](hpkediffiehellmanprivatekey.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

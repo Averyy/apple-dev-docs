@@ -7,8 +7,6 @@ A dictionary listing apps and the privacy policy to apply to them.
 
 **Availability**:
 - macOS 10.14+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

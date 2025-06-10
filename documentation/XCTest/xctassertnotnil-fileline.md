@@ -1,6 +1,6 @@
 # XCTAssertNotNil(_:_:file:line:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: func
 
 Asserts that an expression is not `nil`.

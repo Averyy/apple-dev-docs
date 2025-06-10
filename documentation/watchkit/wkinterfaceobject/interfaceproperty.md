@@ -1,6 +1,6 @@
 # interfaceProperty
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The name of the outlet in your interface controller to which the object is bound.

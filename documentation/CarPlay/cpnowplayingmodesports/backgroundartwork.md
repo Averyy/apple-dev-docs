@@ -14,7 +14,7 @@ A large colorful image for the background of the now playing screen. A gradient 
 
 ```swift
 @NSCopying
-var backgroundArtwork: UIImage? { get }
+@MainActor var backgroundArtwork: UIImage? { get }
 ```
 
 

@@ -1,6 +1,6 @@
 # VTFrameSiloGetProgressOfCurrentPass(_:progressOut:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Gets the progress of the current pass.

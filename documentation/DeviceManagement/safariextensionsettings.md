@@ -9,8 +9,7 @@ The declaration to configure Safari Extensions.
 - iOS 18.0+
 - iPadOS 18.0+
 - macOS 15.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -18,11 +17,24 @@ The declaration to configure Safari Extensions.
 object SafariExtensionSettings
 ```
 
+#### Discussion
+
+Specify `com.apple.configuration.safari.extensions.settings` as the declaration type.
+
+##### Configuration Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in device enrollment | NA |
+| Allowed in user enrollment | NA |
+| Allowed in local enrollment | NA |
+| Allowed in system scope | iOS, visionOS |
+| Allowed in user scope | macOS, Shared iPad |
+
 ## Topics
 
-### Supporting Objects
-- [object SafariExtensionSettingsExtensionDictionaryObject](safariextensionsettingsextensiondictionaryobject.md)
-  The dictionary that defines the settings for the managed extension.
+### Objects
 - [object SafariExtensionSettingsManagedExtensionsObject](safariextensionsettingsmanagedextensionsobject.md)
   The dictionary that defines the managed extension.
 
@@ -44,6 +56,8 @@ object SafariExtensionSettings
   The declaration to configure a Calendar subscription.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AudioAccessorySettings](audioaccessorysettings.md)
+  The declaration to configure audio accessory settings.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
@@ -56,8 +70,6 @@ object SafariExtensionSettings
   The declaration to test the MDM system.
 - [object MathSettings](mathsettings.md)
   The declaration to configure the math and calculator apps.
-- [object PasscodeSettings](passcodesettings.md)
-  The declaration to configure passcode policy settings.
 
 
 ---

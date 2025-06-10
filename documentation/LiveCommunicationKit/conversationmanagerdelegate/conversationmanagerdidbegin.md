@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Called when the provider begins.
+Tells the delegate that your app has started a conversation manager.
 
 **Availability**:
 - iOS 17.4+
@@ -21,7 +21,12 @@ func conversationManagerDidBegin(_ manager: ConversationManager)
 
 ## Parameters
 
-- `manager`: The   that has begun.
+- `manager`: The conversation manager that your app started.
+
+## See Also
+
+- [func conversationManagerDidReset(ConversationManager)](conversationmanagerdelegate/conversationmanagerdidreset(_:).md)
+  Tells the delegate that the app has reset the conversation manager.
 
 
 ---

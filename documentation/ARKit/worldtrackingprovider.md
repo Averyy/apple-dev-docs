@@ -6,6 +6,7 @@
 A source of live data about the device pose and anchors in a person’s surroundings.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -44,6 +45,15 @@ final class WorldTrackingProvider
   The current status of data coming from a provider.
 - [var description: String](worldtrackingprovider/description.md)
   A textual description of a world-tracking provider.
+### Instance Properties
+- [var worldAnchorSharingAvailability: some AsyncSequence<WorldTrackingProvider.WorldAnchorSharingAvailability, Never>](worldtrackingprovider/worldanchorsharingavailability-swift.property.md)
+  A sequence of world anchor sharing availability changes.
+### Instance Methods
+- [func removeAllAnchors() async throws](worldtrackingprovider/removeallanchors.md)
+  Removes all known world anchors from world tracking.
+### Enumerations
+- [WorldTrackingProvider.WorldAnchorSharingAvailability](worldtrackingprovider/worldanchorsharingavailability-swift.enum.md)
+  Enumeration indicating the availability of world anchor sharing.
 
 ## Relationships
 
@@ -51,6 +61,7 @@ final class WorldTrackingProvider
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [DataProvider](dataprovider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

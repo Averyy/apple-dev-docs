@@ -41,6 +41,7 @@ This parameter is used in methods declared by the [`UITextInputTokenizer`](uitex
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

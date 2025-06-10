@@ -1,6 +1,6 @@
 # XCTClockMetric
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 A metric to record the time that elapses during a performance test.

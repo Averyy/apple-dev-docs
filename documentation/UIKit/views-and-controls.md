@@ -8,8 +8,6 @@ Present your content onscreen and define the interactions allowed with that cont
 
 Views and controls are the visual building blocks of your app’s user interface. Use them to draw and organize your app’s content onscreen.
 
-![The screen for creating a new event in the Calendar app includes labels, switches, date pickers, and many other kinds of views.](https://docs-assets.developer.apple.com/published/a696336d3d8468c587a0d8291adc0862/media-2939323%402x.png)
-
 Views can host other views. Embedding one view inside another creates a containment relationship between the host view (known as the ) and the embedded view (known as the ). View hierarchies make it easier to manage views.
 
 You can also use views to do any of the following:
@@ -166,7 +164,7 @@ For additional information about how to use views and controls, see [`Human Inte
 - [View layout](view-layout.md)
   Use stack views to lay out the views of your interface automatically. Use Auto Layout when you require precise placement of your views.
 - [Appearance customization](appearance-customization.md)
-  Add Dark Mode support to your app, customize the appearance of bars, and use appearance proxies to modify your UI.
+  Apply Liquid Glass to views, support Dark Mode in your app, customize the appearance of bars, and use appearance proxies to modify your UI.
 - [Animation and haptics](animation-and-haptics.md)
   Provide feedback to users using view-based animations and haptics.
 - [Windows and screens](windows-and-screens.md)

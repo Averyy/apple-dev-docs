@@ -6,6 +6,7 @@
 Errors that can occur during layer configuration.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -43,6 +44,15 @@ enum LayerRendererConfigurationError
   An error that indicates the system doesn’t support the specified depth usage choice.
 ### Getting the error details
 - [var description: String](layerrendererconfigurationerror/description.md)
+### Enumeration Cases
+- [LayerRendererConfigurationError.unsupportedDrawableRenderContextStencilFormat](layerrendererconfigurationerror/unsupporteddrawablerendercontextstencilformat.md)
+  An error that indicates the layer doesn’t support the current pixel format for stencil texture.
+- [LayerRendererConfigurationError.unsupportedRenderQuality](layerrendererconfigurationerror/unsupportedrenderquality.md)
+  An error that indicates the configuration’s render quality is unsupported. This could be because foveation is disabled or the quality is outside of the valid range of [0, 1], the error `userInfo` will contain additional information.
+- [LayerRendererConfigurationError.unsupportedTrackingAreasFormat](layerrendererconfigurationerror/unsupportedtrackingareasformat.md)
+  An error that indicates the layer doesn’t support the current pixel format for tracking areas textures.
+- [LayerRendererConfigurationError.unsupportedTrackingAreasUsage](layerrendererconfigurationerror/unsupportedtrackingareasusage.md)
+  An error that indicates the layer doesn’t support the current texture usage for tracking areas textures.
 
 ## Relationships
 
@@ -54,6 +64,7 @@ enum LayerRendererConfigurationError
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # add(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Inserts an item into the back-forward list, immediately after the current item.

@@ -1,6 +1,6 @@
 # App License Delivery SDK
 
-**Framework**: Applicensedeliverysdk  
+**Framework**: App License Delivery SDK  
 **Kind**: module
 
 Secure the installation of alternative distribution apps on iOS or iPadOS devices by vending licenses from your web server.

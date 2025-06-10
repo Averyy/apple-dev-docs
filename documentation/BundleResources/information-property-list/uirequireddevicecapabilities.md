@@ -24,8 +24,6 @@ Specify only the features that your app absolutely requires. If your app can acc
 
 > ❗ **Important**:  Your app must include the [`UIRequiredDeviceCapabilities`](information-property-list/uirequireddevicecapabilities.md) key in the [`Information Property List`](information-property-list.md) file that you submit with your binary. For app updates, you can only maintain or relax capability requirements. Submitting an update with added requirements would prevent some customers who previously downloaded your app from running the update.
 
- Your app must include the [`UIRequiredDeviceCapabilities`](information-property-list/uirequireddevicecapabilities.md) key in the [`Information Property List`](information-property-list.md) file that you submit with your binary. For app updates, you can only maintain or relax capability requirements. Submitting an update with added requirements would prevent some customers who previously downloaded your app from running the update.
-
 ## See Also
 
 - [LSMultipleInstancesProhibited](information-property-list/lsmultipleinstancesprohibited.md)

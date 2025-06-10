@@ -1,6 +1,6 @@
 # billingContact
 
-**Framework**: Applepayontheweb  
+**Framework**: Apple Pay on the Web  
 **Kind**: property
 
 Billing contact information for the user.
@@ -31,4 +31,4 @@ If you have an up-to-date billing address on file, you can set it here. This bil
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepaypaymentrequest/billingcontact)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepaypaymentrequest/billingcontact)*

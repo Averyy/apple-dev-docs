@@ -27,8 +27,6 @@ This modifier allows you to perform a transition that animates a change within a
 
 > 💡 **Tip**: The `contentTransition(_:)` modifier only has an effect within the context of an [`Animation`](animation.md).
 
-The `contentTransition(_:)` modifier only has an effect within the context of an [`Animation`](animation.md).
-
 In the following example, a [`Button`](button.md) changes the color and font size of a [`Text`](text.md) view. Since both of these properties apply to the paths of the text, the [`interpolate`](contenttransition/interpolate.md) transition can animate a gradual change to these properties through the entire transition. By contrast, the [`opacity`](contenttransition/opacity.md) transition would simply fade between the start and end states.
 
 ```swift

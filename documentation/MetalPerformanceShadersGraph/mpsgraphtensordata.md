@@ -32,6 +32,8 @@ Pass data to a graph using a tensor data, a reference will be taken to your data
   Initializes an MPSGraphTensorData with an MPS ndarray.
 - [init([MPSImage])](mpsgraphtensordata/init(_:)-511a.md)
   Initializes a tensor data with an MPS image batch.
+- [init(any MTLTensor)](mpsgraphtensordata/init(_:)-60j6x.md)
+  Initializes an MPSGraphTensorData with an MTLTensor.
 - [init(MPSVector)](mpsgraphtensordata/init(_:)-9kgoe.md)
   Initializes a tensor data with an MPS vector.
 - [init(MPSVector, rank: Int)](mpsgraphtensordata/init(_:rank:)-1e4ks.md)

@@ -22,8 +22,6 @@ For other localization tips, tools, and resources, see [`Expanding Your App to N
 
 > ❗ **Important**: In Xcode 15 and later, string catalogs are the recommended way to localize strings. In earlier versions of Xcode, use strings and `stringsdict` files. For more information about string catalogs, see [`Localizing and varying text with a string catalog`](localizing-and-varying-text-with-a-string-catalog.md).
 
-In Xcode 15 and later, string catalogs are the recommended way to localize strings. In earlier versions of Xcode, use strings and `stringsdict` files. For more information about string catalogs, see [`Localizing and varying text with a string catalog`](localizing-and-varying-text-with-a-string-catalog.md).
-
 ## Topics
 
 ### Essentials
@@ -31,6 +29,8 @@ In Xcode 15 and later, string catalogs are the recommended way to localize strin
   Internationalize your app’s strings, images, and other resource types to prepare for the translation process.
 - [Localizing and varying text with a string catalog](localizing-and-varying-text-with-a-string-catalog.md)
   Use a string catalog to translate text, handle plurals, and vary the text your app displays on specific devices.
+- [Localizing Landmarks](localizing-landmarks.md)
+  Add localizations to the Landmarks sample code project.
 ### Strings and text
 - [Preparing your interface for localization](preparing-your-interface-for-localization.md)
   Find text in your app that needs translation and verify that your interface adapts to translated text.
@@ -80,7 +80,7 @@ In Xcode 15 and later, string catalogs are the recommended way to localize strin
 ## See Also
 
 - [Asset management](asset-management.md)
-  Add images, strings, data files, and other resources to your projects, and manage how you load them at runtime.
+  Add app icons, images, strings, data files, machine learning models, and other resources to your projects, and manage how you load them at runtime.
 - [Accessibility Inspector](../Accessibility/accessibility-inspector.md)
   Reveal how your app represents itself to people using accessibility features.
 

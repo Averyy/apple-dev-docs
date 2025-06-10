@@ -21,9 +21,9 @@ static func showManageSubscriptions(in scene: UIWindowScene) async throws
 ## Mentions
 
 - [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
-- [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
 - [Testing win-back offers in Xcode](testing-win-back-offers-in-xcode.md)
 - [Testing at all stages of development with Xcode and the sandbox](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md)
+- [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
 
 #### Discussion
 
@@ -36,7 +36,7 @@ If you’re using SwiftUI, call the [`manageSubscriptionsSheet(isPresented:)`](h
 Avoid showing the user interface for this feature in Mac apps built with Mac Catalyst and on iOS apps running on Mac computers with Apple silicon because this sheet isn’t supported in macOS.
 
 - In Mac apps built with Mac Catalyst, enclose the code in a compilation conditional block that uses the `targetEnvironment():` platform condition. For more information on Mac Catalyst, see [`Creating a Mac version of your iPad app`](https://developer.apple.com/documentation/UIKit/creating-a-mac-version-of-your-ipad-app).
-- For iOS apps running on Apple silicon, if [`isiOSAppOnMac`](https://developer.apple.com/documentation/foundation/processinfo/3608556-isiosapponmac) is `true,` avoid showing the user interface for this feature.
+- For iOS apps running on Apple silicon, if [`isiOSAppOnMac`](https://developer.apple.com/documentation/Foundation/ProcessInfo/isiOSAppOnMac) is `true,` avoid showing the user interface for this feature.
 
 ##### Test Managing Subscriptions
 

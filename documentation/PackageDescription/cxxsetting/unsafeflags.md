@@ -1,6 +1,6 @@
 # unsafeFlags(_:_:)
 
-**Framework**: Packagedescription  
+**Framework**: PackageDescription  
 **Kind**: method
 
 Sets unsafe flags to pass arbitrary command-line flags to the corresponding build tool.

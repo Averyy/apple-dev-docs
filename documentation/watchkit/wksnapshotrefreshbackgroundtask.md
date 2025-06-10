@@ -1,6 +1,6 @@
 # WKSnapshotRefreshBackgroundTask
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A background task used to update your app’s user interface in preparation for a snapshot.
@@ -63,6 +63,7 @@ These requests don’t cancel or replace any of your scheduled requests.
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -88,4 +89,4 @@ These requests don’t cancel or replace any of your scheduled requests.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wksnapshotrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wksnapshotrefreshbackgroundtask)*

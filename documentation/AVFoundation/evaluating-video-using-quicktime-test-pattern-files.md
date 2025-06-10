@@ -14,8 +14,6 @@ The video industry commonly evaluates color using known, standard test patterns.
 
 > ❗ **Important**:  As with any content, you must tag the color bars themselves to ensure their correct interpretation. [`Tagging Media with Video Color Information`](tagging-media-with-video-color-information.md) discusses video tagging.
 
- As with any content, you must tag the color bars themselves to ensure their correct interpretation. [`Tagging Media with Video Color Information`](tagging-media-with-video-color-information.md) discusses video tagging.
-
 To begin evaluating video with the test pattern technique, download the QuickTime Test Pattern movie files from the [`AVFoundation Developer page`](https://developer.apple.comhttps://developer.apple.com/av-foundation/) (see “Color Test Patterns”). These files produce known results on Mac computers.
 
 Open the files using the QuickTime Player app (version 10.5 or later) or another app or workflow that supports the [`QuickTime File Format`](https://developer.apple.com/documentation/quicktime-file-format). Use the test pattern files to evaluate the color characteristics of your AVFoundation-based app or workflow.

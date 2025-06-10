@@ -18,6 +18,15 @@ The current state of the conversation.
 final var state: Conversation.State { get }
 ```
 
+## See Also
+
+- [var localMember: Handle?](conversation/localmember.md)
+  The handle that identifies the local participant to remote participants.
+- [Conversation.State](conversation/state-swift.enum.md)
+  Values that describe the current state of a conversation.
+- [var uuid: UUID](conversation/uuid.md)
+  The unique identifier for a conversation.
+
 
 ---
 

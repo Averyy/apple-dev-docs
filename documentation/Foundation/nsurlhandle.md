@@ -19,8 +19,6 @@ class NSURLHandle
 
 > ❗ **Important**:  [`NSURLHandle`](nsurlhandle.md) is deprecated in macOS 10.4 and later. Use [`URLSession`](urlsession.md) instead.
 
- [`NSURLHandle`](nsurlhandle.md) is deprecated in macOS 10.4 and later. Use [`URLSession`](urlsession.md) instead.
-
 A single [`NSURLHandle`](nsurlhandle.md) can service multiple equivalent [`NSURL`](nsurl.md) objects, but only if these URLs map to the same resource.
 
 ##### Overview

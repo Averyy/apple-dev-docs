@@ -749,6 +749,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [String.StandardComparator](string/standardcomparator.md)
   Compares `String`s using one of a fixed set of standard comparison algorithms.
 ### Initializers
+- [init(URL.Template.VariableName)](string/init(_:)-1oup7.md)
 - [init(Slice<AttributedString.CharacterView>)](string/init(_:)-5ruqx.md)
 - [init(cString: inout CChar)](string/init(cstring:)-1gatt.md)
 - [init(cString: inout UInt8)](string/init(cstring:)-295hy.md)
@@ -759,6 +760,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [init(cString: String)](string/init(cstring:)-cgw2.md)
 - [init?(cString: inout CChar, encoding: String.Encoding)](string/init(cstring:encoding:)-358mb.md)
 - [init?(cString: String, encoding: String.Encoding)](string/init(cstring:encoding:)-4ydt6.md)
+- [init(copying: UTF8Span)](string/init(copying:).md)
 - [init(decoding: FilePath.Root)](string/init(decoding:)-364r2.md)
   On Unix, creates the string `"/"`
 - [init(decoding: FilePath.Component)](string/init(decoding:)-9xh58.md)
@@ -796,8 +798,12 @@ For more information about the Unicode terms used in this discussion, see the [`
 ### Instance Properties
 - [var characters: String](string/characters.md)
   A view of the string’s contents as a collection of characters.
+- [var utf8Span: UTF8Span](string/utf8span.md)
 ### Instance Methods
 - [func data(using: String.Encoding, allowLossyConversion: Bool) -> Data?](string/data(using:allowlossyconversion:).md)
+- [func hexData() -> Data?](string/hexdata.md)
+- [func normalizeHexstring()](string/normalizehexstring.md)
+- [func normalizedHexstring() -> String](string/normalizedhexstring.md)
 - [func withMutableCharacters<R>((inout String) -> R) -> R](string/withmutablecharacters(_:).md)
   Applies the given closure to a mutable view of the string’s characters.
 - [func withPlatformString<Result>((UnsafePointer<CInterop.PlatformChar>) throws -> Result) rethrows -> Result](string/withplatformstring(_:).md)
@@ -823,10 +829,13 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [static func decodeCString<Encoding>([Encoding.CodeUnit], as: Encoding.Type, repairingInvalidCodeUnits: Bool) -> (result: String, repairsMade: Bool)?](string/decodecstring(_:as:repairinginvalidcodeunits:)-3mvvy.md)
 - [static func decodeCString<Encoding>(String, as: Encoding.Type, repairingInvalidCodeUnits: Bool) -> (result: String, repairsMade: Bool)?](string/decodecstring(_:as:repairinginvalidcodeunits:)-9pdmv.md)
 ### Default Implementations
+- [Attachable Implementations](string/attachable-implementations.md)
 - [BidirectionalCollection Implementations](string/bidirectionalcollection-implementations.md)
 - [CodingKeyRepresentable Implementations](string/codingkeyrepresentable-implementations.md)
 - [Collection Implementations](string/collection-implementations.md)
 - [Comparable Implementations](string/comparable-implementations.md)
+- [ConvertibleFromGeneratedContent Implementations](string/convertiblefromgeneratedcontent-implementations.md)
+- [ConvertibleToGeneratedContent Implementations](string/convertibletogeneratedcontent-implementations.md)
 - [CustomDebugStringConvertible Implementations](string/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](string/customreflectable-implementations.md)
 - [CustomStringConvertible Implementations](string/customstringconvertible-implementations.md)
@@ -840,10 +849,13 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [ExpressibleByStringInterpolation Implementations](string/expressiblebystringinterpolation-implementations.md)
 - [ExpressibleByStringLiteral Implementations](string/expressiblebystringliteral-implementations.md)
 - [ExpressibleByUnicodeScalarLiteral Implementations](string/expressiblebyunicodescalarliteral-implementations.md)
+- [Generable Implementations](string/generable-implementations.md)
 - [Hashable Implementations](string/hashable-implementations.md)
+- [InstructionsRepresentable Implementations](string/instructionsrepresentable-implementations.md)
 - [LosslessStringConvertible Implementations](string/losslessstringconvertible-implementations.md)
 - [MLDataValueConvertible Implementations](string/mldatavalueconvertible-implementations.md)
 - [MLIdentifier Implementations](string/mlidentifier-implementations.md)
+- [PromptRepresentable Implementations](string/promptrepresentable-implementations.md)
 - [RangeReplaceableCollection Implementations](string/rangereplaceablecollection-implementations.md)
 - [RegexComponent Implementations](string/regexcomponent-implementations.md)
 - [Sequence Implementations](string/sequence-implementations.md)
@@ -855,6 +867,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 ## Relationships
 
 ### Conforms To
+- [Attachable](../Testing/Attachable.md)
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [BindableData](../RealityKit/BindableData.md)
 - [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
@@ -862,6 +875,8 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [CodingKeyRepresentable](codingkeyrepresentable.md)
 - [Collection](collection.md)
 - [Comparable](comparable.md)
+- [ConvertibleFromGeneratedContent](../FoundationModels/ConvertibleFromGeneratedContent.md)
+- [ConvertibleToGeneratedContent](../FoundationModels/ConvertibleToGeneratedContent.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)
@@ -876,17 +891,22 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [ExpressibleByStringInterpolation](expressiblebystringinterpolation.md)
 - [ExpressibleByStringLiteral](expressiblebystringliteral.md)
 - [ExpressibleByUnicodeScalarLiteral](expressiblebyunicodescalarliteral.md)
+- [Generable](../FoundationModels/Generable.md)
 - [Hashable](hashable.md)
+- [InstructionsRepresentable](../FoundationModels/InstructionsRepresentable.md)
 - [LosslessStringConvertible](losslessstringconvertible.md)
 - [MLDataValueConvertible](../CreateML/MLDataValueConvertible.md)
 - [MLIdentifier](../CreateML/MLIdentifier.md)
 - [MirrorPath](mirrorpath.md)
 - [MusicLibraryRequestFilterValueEquatable](../MusicKit/MusicLibraryRequestFilterValueEquatable.md)
+- [PDFObjectType](../CoreGraphics/PDFObjectType.md)
 - [Plottable](../Charts/Plottable.md)
 - [PrimitivePlottableProtocol](../Charts/PrimitivePlottableProtocol.md)
+- [PromptRepresentable](../FoundationModels/PromptRepresentable.md)
 - [RangeReplaceableCollection](rangereplaceablecollection.md)
 - [RegexComponent](regexcomponent.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 - [StringProtocol](stringprotocol.md)
 - [TextOutputStream](textoutputstream.md)

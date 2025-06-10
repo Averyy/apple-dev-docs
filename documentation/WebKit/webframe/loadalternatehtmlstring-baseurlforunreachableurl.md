@@ -1,6 +1,6 @@
 # loadAlternateHTMLString(_:baseURL:forUnreachableURL:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Loads alternate content for a frame whose URL is unreachable.

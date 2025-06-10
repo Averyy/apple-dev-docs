@@ -21,8 +21,6 @@ By default, whenever possible, the GPU associated with the display presenting th
 
 > ❗ **Important**:  You must specify an external GPU (or a slotted GPU in Mac Pro) with this property. You can’t switch decoding between the integrated graphics and the built-in discrete graphics.
 
- You must specify an external GPU (or a slotted GPU in Mac Pro) with this property. You can’t switch decoding between the integrated graphics and the built-in discrete graphics.
-
 ## See Also
 
 - [var audioOutputDeviceUniqueID: String?](avplayer/audiooutputdeviceuniqueid.md)

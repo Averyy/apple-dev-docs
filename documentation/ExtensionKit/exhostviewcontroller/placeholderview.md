@@ -6,13 +6,16 @@
 A view that’s used when the view controller has no content to display.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 13.0+
 
 ## Declaration
 
 ```swift
 @MainActor
-var placeholderView: NSView { get set }
+var placeholderView: UIView { get set }
 ```
 
 ## See Also

@@ -1,6 +1,6 @@
 # NSPageControllerDelegate
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: protocol
 
 The `NSPageControllerDelegate` protocol allows you to customize the behavior of instances of the NSPageController class.

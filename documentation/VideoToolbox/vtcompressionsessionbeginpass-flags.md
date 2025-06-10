@@ -1,6 +1,6 @@
 # VTCompressionSessionBeginPass(_:flags:_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Marks the start of a specific compression pass.

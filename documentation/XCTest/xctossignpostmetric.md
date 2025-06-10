@@ -1,6 +1,6 @@
 # XCTOSSignpostMetric
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 A metric to record the time that a performance test spends executing a signposted region of code.

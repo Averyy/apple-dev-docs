@@ -3,8 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A dictionary of devices with the status of their profile removal request.
-
 **Availability**:
 - Device Assignment Services ?+
 - VPP License Management ?+
@@ -20,7 +18,6 @@ object ClearProfileResponse.Devices
 - [object ClearProfileRequest](clearprofilerequest.md)
   The request used to remove a profile from devices.
 - [object ClearProfileResponse](clearprofileresponse.md)
-  The response after removing a profile from devices.
 
 
 ---

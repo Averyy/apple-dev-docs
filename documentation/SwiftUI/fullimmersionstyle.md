@@ -6,6 +6,7 @@
 An immersion style that displays unbounded content that completely replaces passthrough video.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -16,7 +17,7 @@ struct FullImmersionStyle
 
 #### Overview
 
-When this immersion style is selected, the immersion amount reported by the closure of `View/onImmersionChange(_:)` is `1.0`.
+When this immersion style is selected, the immersion amount reported by the closure of [`onImmersionChange(initial:_:)`](view/onimmersionchange(initial:_:).md) is `1.0`.
 
 Use [`full`](immersionstyle/full.md) with the [`immersionStyle(selection:in:)`](scene/immersionstyle(selection:in:).md)modifier to specify this style.
 

@@ -1,6 +1,6 @@
 # request
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The notification request containing the payload and trigger condition for the notification.

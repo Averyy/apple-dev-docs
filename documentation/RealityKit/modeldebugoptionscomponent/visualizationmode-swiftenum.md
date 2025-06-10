@@ -10,6 +10,7 @@ A mode that specifies the portion of the rendering process to isolate and displa
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -55,24 +56,9 @@ enum VisualizationMode
   A mode that displays the intensity of indirect light hitting the entity as its surface color.
 - [ModelDebugOptionsComponent.VisualizationMode.lightingSpecular](modeldebugoptionscomponent/visualizationmode-swift.enum/lightingspecular.md)
   A mode that displays the intensity of direct light hitting the entity as its surface color.
-### Raw values
-- [init?(rawValue: String)](modeldebugoptionscomponent/visualizationmode-swift.enum/init(rawvalue:).md)
-  Creates a new instance with the specified raw value.
-- [var rawValue: String](modeldebugoptionscomponent/visualizationmode-swift.enum/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-- [ModelDebugOptionsComponent.VisualizationMode.RawValue](modeldebugoptionscomponent/visualizationmode-swift.enum/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-### Comparators
-- [var hashValue: Int](modeldebugoptionscomponent/visualizationmode-swift.enum/hashvalue.md)
-- [func hash(into: inout Hasher)](modeldebugoptionscomponent/visualizationmode-swift.enum/hash(into:).md)
-- [static func != (Self, Self) -> Bool](modeldebugoptionscomponent/visualizationmode-swift.enum/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Enumeration Cases
 - [ModelDebugOptionsComponent.VisualizationMode.clearcoatNormal](modeldebugoptionscomponent/visualizationmode-swift.enum/clearcoatnormal.md)
   A mode that displays the clearcoat normal of a material as the surface color.
-### Default Implementations
-- [Equatable Implementations](modeldebugoptionscomponent/visualizationmode-swift.enum/equatable-implementations.md)
-- [RawRepresentable Implementations](modeldebugoptionscomponent/visualizationmode-swift.enum/rawrepresentable-implementations.md)
 
 ## Relationships
 

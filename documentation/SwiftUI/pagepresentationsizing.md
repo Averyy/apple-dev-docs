@@ -1,6 +1,6 @@
 # PagePresentationSizing
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 The size is roughly the size of a page of paper, appropriate for informational or compositional content.
@@ -31,6 +31,7 @@ On iOS, `.page` sizing enforces a platform-defined floor for the vertical and ho
 ### Conforms To
 - [PresentationSizing](presentationsizing.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -44,4 +45,4 @@ On iOS, `.page` sizing enforces a platform-defined floor for the vertical and ho
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/pagepresentationsizing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/pagepresentationsizing)*

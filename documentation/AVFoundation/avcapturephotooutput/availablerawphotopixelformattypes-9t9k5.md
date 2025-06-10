@@ -1,6 +1,6 @@
 # availableRawPhotoPixelFormatTypes
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The pixel formats the capture output supports for RAW photo capture.

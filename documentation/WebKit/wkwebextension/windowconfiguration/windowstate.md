@@ -1,6 +1,6 @@
 # windowState
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the window state for the window.

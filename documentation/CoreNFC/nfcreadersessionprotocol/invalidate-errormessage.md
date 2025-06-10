@@ -1,6 +1,6 @@
 # invalidate(errorMessage:)
 
-**Framework**: Corenfc  
+**Framework**: Core NFC  
 **Kind**: method  
 **Required**: Yes
 

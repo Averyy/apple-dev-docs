@@ -6,6 +6,7 @@
 A localized message that describes why the error occurred.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

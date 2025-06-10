@@ -1,6 +1,6 @@
 # VSError.Code.invalidVerificationToken
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 The user’s subscription provider rejected the verification token that the app sent with the request.

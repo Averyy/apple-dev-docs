@@ -24,8 +24,6 @@ func copyBytes(to pointer: UnsafeMutablePointer<UInt8>, from range: Range<Data.I
 
 > ⚠️ **Warning**:  This method does not verify that the contents at pointer have enough space to hold the required number of bytes.
 
- This method does not verify that the contents at pointer have enough space to hold the required number of bytes.
-
 ## Parameters
 
 - `pointer`: A pointer to the buffer you wish to copy the bytes into.

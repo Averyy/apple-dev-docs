@@ -23,10 +23,10 @@ class AVAsset
 ## Mentions
 
 - [Loading media data asynchronously](loading-media-data-asynchronously.md)
+- [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
+- [Retrieving media metadata](retrieving-media-metadata.md)
 - [Exporting video to alternative formats](exporting-video-to-alternative-formats.md)
 - [Implementing simple enhanced buffering for your content](implementing-simple-enhanced-buffering-for-your-content.md)
-- [Retrieving media metadata](retrieving-media-metadata.md)
-- [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
 
 #### Overview
 

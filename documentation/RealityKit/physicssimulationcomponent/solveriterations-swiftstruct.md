@@ -10,6 +10,7 @@ The parameters that control the accuracy of solving physics simulations.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -20,9 +21,6 @@ struct SolverIterations
 
 ## Topics
 
-### Operators
-- [static func == (PhysicsSimulationComponent.SolverIterations, PhysicsSimulationComponent.SolverIterations) -> Bool](physicssimulationcomponent/solveriterations-swift.struct/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(positionIterations: Int, velocityIterations: Int)](physicssimulationcomponent/solveriterations-swift.struct/init(positioniterations:velocityiterations:).md)
   Creates a solver iterations configuration.
@@ -31,8 +29,6 @@ struct SolverIterations
   The number of position iterations the solver performs.
 - [var velocityIterations: Int](physicssimulationcomponent/solveriterations-swift.struct/velocityiterations.md)
   The number of velocity iterations the solver performs.
-### Default Implementations
-- [Equatable Implementations](physicssimulationcomponent/solveriterations-swift.struct/equatable-implementations.md)
 
 ## Relationships
 

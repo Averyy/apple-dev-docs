@@ -172,4 +172,4 @@ if selectedSegments.contains(0) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/segmenting-and-colorizing-individuals-from-a-surrounding-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/segmenting-and-colorizing-individuals-from-a-surrounding-scene)*

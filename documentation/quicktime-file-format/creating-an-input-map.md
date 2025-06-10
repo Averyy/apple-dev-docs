@@ -20,8 +20,6 @@ The name of the source is a unique identifier that you create, which is used in 
 
 > ❗ **Important**: Apple recommends you adopt the standard naming convention `'srcX'`, where X is a letter of the alphabet. Thus, your first source would be named `'srcA'`, the second ’`srcB'`, and so forth.
 
-Apple recommends you adopt the standard naming convention `'srcX'`, where X is a letter of the alphabet. Thus, your first source would be named `'srcA'`, the second ’`srcB'`, and so forth.
-
 The child atom of type `kTrackModifierType` indicates the type of the track being referenced. For a video track the type is `VideoMediaType`, for a sprite track it is `SpriteMediaType`, and so forth. Video tracks are the most common track type used as sources for effects. Only tracks that have a visible output, such as video and sprite tracks, can be used as sources for an effect. This means, for example, that sound tracks cannot be sources for an effect.
 
 You refer to a `kTrackModifierInput` atom by its index number, which is returned by the `AddTrackReference` function when you create the atom.

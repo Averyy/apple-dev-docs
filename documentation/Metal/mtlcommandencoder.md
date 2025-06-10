@@ -22,6 +22,7 @@ protocol MTLCommandEncoder : NSObjectProtocol
 ## Mentions
 
 - [Setting Up a Command Structure](setting-up-a-command-structure.md)
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
 
 #### Overview
 
@@ -57,6 +58,9 @@ You can call the [`insertDebugSignpost(_:)`](mtlcommandencoder/insertdebugsignpo
   The Metal device from which the command encoder was created.
 - [var label: String?](mtlcommandencoder/label.md)
   A string that labels the command encoder.
+### Instance Methods
+- [func barrier(afterQueueStages: MTLStages, beforeStages: MTLStages)](mtlcommandencoder/barrier(afterqueuestages:beforestages:).md)
+  Encodes a consumer barrier on work you commit to the same command queue.
 
 ## Relationships
 

@@ -32,7 +32,7 @@ The specific behaviour is determined by the dimensionality of the inputs, as des
 - If the first is 2-dimensional and other 1-dimensional, the matrix-vector product is returned.
 - If both have a rank of 2, the matrix-matrix product is returned and when the rank is greater than 2, the batched matrix multiply is returned
 
-For exmaple:
+For example:
 
 ```swift
 let v1 = MLTensor([1.0, 2.0, 3.0, 4.0])

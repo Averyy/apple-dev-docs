@@ -28,10 +28,14 @@ This is an optimized type used internally by the core scheduling operations.  It
 ## Topics
 
 ### Initializers
-- [init(Builtin.Executor)](unownedserialexecutor/init(_:).md)
+- [init(Builtin.Executor)](unownedserialexecutor/init(_:)-8mpaa.md)
+- [init<E>(E)](unownedserialexecutor/init(_:)-9jcxo.md)
+  Automatically opt-in to complex equality semantics if the Executor implements `Equatable`.
 - [init<E>(complexEquality: E)](unownedserialexecutor/init(complexequality:).md)
   Opts the executor into complex “same exclusive execution context” equality checks.
 - [init<E>(ordinary: E)](unownedserialexecutor/init(ordinary:).md)
+### Instance Methods
+- [func asSerialExecutor() -> (any SerialExecutor)?](unownedserialexecutor/asserialexecutor.md)
 
 ## Relationships
 
@@ -39,6 +43,7 @@ This is an optimized type used internally by the core scheduling operations.  It
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Copyable](copyable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

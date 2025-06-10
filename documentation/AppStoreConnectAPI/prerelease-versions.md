@@ -17,9 +17,11 @@ A `preReleaseVersions` resource represents a version of your app intended for Te
   Get information about a specific prerelease version.
 - [Read the App Information of a Prerelease Version](get-v1-prereleaseversions-_id_-app.md)
   Get the app information for a specific prerelease version.
+- [GET /v1/preReleaseVersions/{id}/relationships/app](get-v1-prereleaseversions-_id_-relationships-app.md)
 ### Getting Build Information
 - [List All Builds of a Prerelease Version](get-v1-prereleaseversions-_id_-builds.md)
   Get a list of builds of a specific prerelease version.
+- [GET /v1/preReleaseVersions/{id}/relationships/builds](get-v1-prereleaseversions-_id_-relationships-builds.md)
 ### Objects
 - [object PrereleaseVersion](prereleaseversion.md)
   The data structure that represents a Prerelease Versions  resource.
@@ -29,6 +31,9 @@ A `preReleaseVersions` resource represents a version of your app intended for Te
   A response that contains a list of Pre-Release Version resources.
 - [object PrereleaseVersionWithoutIncludesResponse](prereleaseversionwithoutincludesresponse.md)
 - [object PreReleaseVersionsWithoutIncludesResponse](prereleaseversionswithoutincludesresponse.md)
+- [object AppPreReleaseVersionsLinkagesResponse](appprereleaseversionslinkagesresponse.md)
+- [object PrereleaseVersionAppLinkageResponse](prereleaseversionapplinkageresponse.md)
+- [object PrereleaseVersionBuildsLinkagesResponse](prereleaseversionbuildslinkagesresponse.md)
 
 ## See Also
 

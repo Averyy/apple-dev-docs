@@ -1,6 +1,6 @@
 # Incorporating Audio Effects and Instruments
 
-**Framework**: Audiotoolbox
+**Framework**: Audio Toolbox
 
 Add custom audio processing and MIDI instruments to your app by hosting Audio Unit (AU) plug-ins.
 
@@ -223,4 +223,4 @@ public var currentPreset: Preset? {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AudioToolbox/incorporating-audio-effects-and-instruments)*
+*[View on Apple Developer](https://developer.apple.com/documentation/audiotoolbox/incorporating-audio-effects-and-instruments)*

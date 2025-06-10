@@ -27,7 +27,6 @@ mcp-server/                    # Created as subdirectory to avoid scraper interf
 │   └── validate_docs.py      # Documentation validation utility
 ├── tests/
 │   ├── __init__.py
-│   ├── test_embeddings.py    # TEI server tests
 │   └── test_chromadb.py      # Vector database tests
 ├── vectorstore/              # ChromaDB storage location
 ├── .env                      # Environment configuration
@@ -111,7 +110,6 @@ print("✓ All imports working!")
    - Sets embedding parameters (BGE-M3, 1024 dims)
 
 2. **Test Suite**:
-   - `test_embeddings.py`: Validates TEI server (14.4 docs/sec performance)
    - `test_chromadb.py`: Tests vector database operations
    - `test_setup.py`: Verifies complete environment setup
 

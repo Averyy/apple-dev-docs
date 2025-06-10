@@ -22,9 +22,12 @@ An [`MLTrainingSession`](mltrainingsession.md) that represents the object-detect
 
 Use [`resume(_:)`](mlobjectdetector/resume(_:).md) to start the [`MLTrainingSession`](mltrainingsession.md) instance you get from this method.
 
-- trainingData: The annotated images the task uses to train the object detector.
-- annotationType: The format type of the image annotations in the data source.
-- sessionParameters: An [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you use to configure the training session.
+## Parameters
+
+- `trainingData`: The annotated images the task uses to train the object detector.
+- `annotationType`: The format type of the image annotations in the data source.
+- `parameters`: An   instance you use to set the model   configuration settings for the training session.
+- `sessionParameters`: An   instance you use to configure the training session.
 
 ## See Also
 

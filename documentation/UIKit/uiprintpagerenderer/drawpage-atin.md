@@ -14,7 +14,6 @@ Draws a page of content for the printer.
 ## Declaration
 
 ```swift
-@MainActor
 func drawPage(at pageIndex: Int, in printableRect: CGRect)
 ```
 

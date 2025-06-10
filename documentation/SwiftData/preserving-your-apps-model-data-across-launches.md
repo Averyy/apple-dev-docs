@@ -93,8 +93,6 @@ let container = try ModelContainer([
 
 > 💡 **Tip**: If a model type contains a relationship, you may omit the destination model type from the array. SwiftData automatically traverses a model’s relationships and includes any destination model types for you.
 
-If a model type contains a relationship, you may omit the destination model type from the array. SwiftData automatically traverses a model’s relationships and includes any destination model types for you.
-
 Alternatively, use [`ModelConfiguration`](modelconfiguration.md) to create custom storage. The type provides a number of options to configure including whether:
 
 - the storage exists only in memory.
@@ -111,8 +109,6 @@ let container = try ModelContainer(
 ```
 
 > ❗ **Important**: Automatic iCloud sync relies on the presence of the CloudKit entitlement, and SwiftData uses the first container it finds in that entitlement. If your app needs a particular container, use an instance of `ModelConfiguration` to specify that container.
-
-Automatic iCloud sync relies on the presence of the CloudKit entitlement, and SwiftData uses the first container it finds in that entitlement. If your app needs a particular container, use an instance of `ModelConfiguration` to specify that container.
 
 ##### Save Models for Later Use
 
@@ -196,8 +192,6 @@ For more information about predicates, see [`Predicate`](https://developer.apple
   Add the required capabilities and define a compatible schema to enable SwiftData to automatically sync your app’s model data using iCloud.
 - [Building a document-based app using SwiftData](../SwiftUI/Building-a-document-based-app-using-SwiftData.md)
   Code along with the WWDC presenter to transform an app with SwiftData.
-- [Adopting SwiftData for a Core Data app](../CoreData/adopting-swiftdata-for-a-core-data-app.md)
-  Persist data in your app intuitively with the Swift native persistence framework.
 
 
 ---

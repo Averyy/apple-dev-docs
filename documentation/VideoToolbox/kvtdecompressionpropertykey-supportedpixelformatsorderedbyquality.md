@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_SupportedPixelFormatsOrderedByQuality
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 An array indicating quality levels among pixel formats.

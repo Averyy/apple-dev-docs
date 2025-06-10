@@ -1,6 +1,6 @@
 # centerStageRectOfInterest
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The effective region within the output pixel buffer to perform Center Stage framing.

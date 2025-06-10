@@ -1,6 +1,6 @@
 # NSCollectionViewItem
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 The visual representation for a single data element in a collection view.
@@ -103,6 +103,7 @@ For apps built before OS X 10.11, you created a template item and assigned it to
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -112,4 +113,4 @@ For apps built before OS X 10.11, you created a template item and assigned it to
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nscollectionviewitem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nscollectionviewitem)*

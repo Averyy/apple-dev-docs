@@ -28,8 +28,6 @@ The `requestIdentifier` field identifies the report. Generate a UUID for each re
 
 > 💡 **Tip**: Store the [`requestIdentifier`](requestidentifier.md) value in your records with the external purchase token to identify your reports.
 
-Store the [`requestIdentifier`](requestidentifier.md) value in your records with the external purchase token to identify your reports.
-
 The [`externalPurchaseId`](externalpurchaseid.md) field is the token’s identifier. To get that value, decode the external purchase token you receive in your app or on your website. For more information, see: [`Receiving and decoding external purchase tokens`](https://developer.apple.com/documentation/StoreKit/receiving-and-decoding-external-purchase-tokens).
 
 The [`status`](status.md) field represents the token’s status, which determines the report’s contents and whether it includes a `lineItems` array. The [`status`](status.md) value determines the three types of reports:

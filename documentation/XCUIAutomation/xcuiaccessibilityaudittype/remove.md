@@ -1,6 +1,6 @@
 # remove(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Removes the given element and all elements subsumed by it.

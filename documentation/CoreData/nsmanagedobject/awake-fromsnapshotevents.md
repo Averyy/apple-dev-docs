@@ -28,8 +28,6 @@ If you want to set attribute values and need to avoid emitting key-value observa
 
 > ❗ **Important**:  Subclasses must invoke super’s implementation before performing their own initialization.
 
- Subclasses must invoke super’s implementation before performing their own initialization.
-
 ## Parameters
 
 - `flags`: For possible values, see  .

@@ -21,8 +21,6 @@ This function resets and attempts to re-enumerate the USB device, and terminates
 
 > ❗ **Important**:  To use the re-enumerated device, you must create a new framework client using [`initWithIOService:options:queue:error:interestHandler:`](iousbhostobject/initwithioservice:options:queue:error:interesthandler:.md).
 
- To use the re-enumerated device, you must create a new framework client using [`initWithIOService:options:queue:error:interestHandler:`](iousbhostobject/initwithioservice:options:queue:error:interesthandler:.md).
-
 
 ---
 

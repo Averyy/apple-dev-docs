@@ -38,6 +38,7 @@ enum State
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -55,6 +56,7 @@ enum State
   An object that specifies a key press perform on a hardware keyboard and the resulting action.
 - [class UIDeferredMenuElement](uideferredmenuelement.md)
   A placeholder menu element that the system replaces with the result of the block’s completion handler.
+- [UIDeferredMenuElement.Provider](uideferredmenuelement/provider.md)
 - [UIMenuElement.Attributes](uimenuelement/attributes.md)
   Attributes that determine the style of the menu element.
 - [protocol UIMenuLeaf](uimenuleaf.md)

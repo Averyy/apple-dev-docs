@@ -1,6 +1,6 @@
 # addMenuItem(with:title:action:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Adds an action to the context menu using a system-provided icon.

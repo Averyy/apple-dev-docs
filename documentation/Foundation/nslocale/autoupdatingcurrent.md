@@ -22,16 +22,20 @@ class var autoupdatingCurrent: Locale { get }
 
 #### Discussion
 
-The locale is formed from the settings for the current user’s chosen system locale overlaid with any custom settings the user has specified.
+This value represents the locale currently used by the app, based on the following:
 
-Use this property when you want a locale that always reflects the latest configuration settings. When the user changes settings, a locale instance obtained from this property alters its behavior to match. If you need to rely on a locale that does not change, use the locale given by the [`current`](nslocale/current.md) property instead.
+- The current system locale.
+- Any app-specific locale choice made in the Settings app.
+- The availability of the preferred locale in the app. For example, if the person using an app has set their device to use a Spanish-language locale, but the app only supports English, this value returns an English locale.
+
+Use this property when you want a locale that always reflects the latest configuration settings. When the person using the app changes settings, reading properties from a locale instance obtained from this property provides the latest values. If you need to rely on a locale that does not change, use the locale given by the [`current`](nslocale/current.md) property instead.
 
 Although the locale obtained here automatically follows the latest region settings, it provides no indication when the settings change. To receive notification of locale changes, add your object as an observer of [`currentLocaleDidChangeNotification`](nslocale/currentlocaledidchangenotification.md).
 
 ## See Also
 
 - [class var current: Locale](nslocale/current.md)
-  A locale representing the user’s region settings at the time the property is read.
+  A locale that represents the user’s region settings at the time the property is read.
 - [class let currentLocaleDidChangeNotification: NSNotification.Name](nslocale/currentlocaledidchangenotification.md)
   A notification that indicates that the user’s locale changed.
 - [class var system: Locale](nslocale/system.md)

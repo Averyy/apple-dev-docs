@@ -1,6 +1,6 @@
 # lineJoin
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A string specifying the manner in which line joins are drawn.

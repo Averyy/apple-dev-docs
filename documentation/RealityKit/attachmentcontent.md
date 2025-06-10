@@ -30,11 +30,13 @@ A type that provides content for an attachment content builder.
 - [ConditionalAttachmentContent](conditionalattachmentcontent.md)
 - [EmptyAttachmentContent](emptyattachmentcontent.md)
 - [TupleAttachmentContent](tupleattachmentcontent.md)
+- [TuplePackAttachmentContent](tuplepackattachmentcontent.md)
 
 ## See Also
 
 - [struct AttachmentContentBuilder](attachmentcontentbuilder.md)
   A result builder that creates attachment content from closures.
+- [struct TuplePackAttachmentContent](tuplepackattachmentcontent.md)
 - [struct ConditionalAttachmentContent](conditionalattachmentcontent.md)
 - [struct EmptyAttachmentContent](emptyattachmentcontent.md)
   A attachment content that doesn’t contain any content.

@@ -36,6 +36,7 @@ You can also use [`tint`](shapestyle/tint.md) to construct this style.
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 
 ## See Also

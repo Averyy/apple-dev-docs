@@ -26,7 +26,10 @@ This value is present only for subscriptions that include an offer.
 
 > ❗ **Important**:  In rare cases, the property might return a sentinel `nil` value. One possible reason is using StoreKit Testing in Xcode; try testing on a device with a newer OS. Another reason might be a critical server error.
 
- In rare cases, the property might return a sentinel `nil` value. One possible reason is using StoreKit Testing in Xcode; try testing on a device with a newer OS. Another reason might be a critical server error.
+## See Also
+
+- [let advancedCommerceInfo: Transaction.AdvancedCommerceInfo?](transaction/advancedcommerceinfo-swift.property.md)
+  Metadata for transactions that use the Advanced Commerce API.
 
 
 ---

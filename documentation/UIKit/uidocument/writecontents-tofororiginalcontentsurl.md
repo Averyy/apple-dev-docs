@@ -1,6 +1,6 @@
 # writeContents(_:to:for:originalContentsURL:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Writes the document data to disk at the sandbox location indicated by a file URL.

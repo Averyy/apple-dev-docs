@@ -19,6 +19,12 @@ The manifest file contains information that your extension needs to schedule ass
 
 ## See Also
 
+- [BAUsesAppleHosting](information-property-list/bausesapplehosting.md)
+  A Boolean value that indicates whether you use Apple’s service to host your asset packs.
+- [BAHasManagedAssetPacks](information-property-list/bahasmanagedassetpacks.md)
+  A Boolean value that indicates whether you let the system automatically manage your asset packs.
+- [BAAppGroupID](information-property-list/baappgroupid.md)
+  The app group identifier that you share between your app and the extension that uses asset packs.
 - [BAInitialDownloadRestrictions](information-property-list/bainitialdownloadrestrictions.md)
   The restrictions that apply to the set of assets that download immediately after app installation.
 - [BAMaxInstallSize](information-property-list/bamaxinstallsize.md)

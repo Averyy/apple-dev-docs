@@ -1,6 +1,6 @@
 # init(absoluteTime:date:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Intitializes a timestamp that represents the provided time.

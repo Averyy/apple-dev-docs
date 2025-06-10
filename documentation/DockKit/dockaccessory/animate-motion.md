@@ -1,6 +1,6 @@
 # animate(motion:)
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: method
 
 Starts an animation sequence.

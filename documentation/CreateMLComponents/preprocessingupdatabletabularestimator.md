@@ -68,6 +68,7 @@ struct PreprocessingUpdatableTabularEstimator<Preprocessor, Estimator> where Pre
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TabularEstimator](tabularestimator.md)
 - [UpdatableTabularEstimator](updatabletabularestimator.md)
 

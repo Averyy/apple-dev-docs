@@ -12,6 +12,7 @@ Returns a new camera object using the specified distance, pitch, and heading inf
 - macOS 10.11+
 - tvOS 9.0+
 - visionOS 1.0+
+- watchOS 2.0+
 
 ## Declaration
 

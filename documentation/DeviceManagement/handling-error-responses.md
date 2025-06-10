@@ -14,8 +14,6 @@ When a service request results in a synchronous failure, the response is itself 
 
 > ❗ **Important**:  Synchronous failures result in no asynchronous processing.
 
- Synchronous failures result in no asynchronous processing.
-
 In addition to the response body, the HTTP status code provides information about the nature of the failure.
 
 ```javascript
@@ -150,8 +148,6 @@ The server may return these error codes in either [`StatusResponse`](statusrespo
 | 9716 | A registered user already exists with the specified `clientUserId`. |
 
 > ❗ **Important**:  The server may add additional error codes in the future.
-
- The server may add additional error codes in the future.
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # INVALID_STATE_ERR
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

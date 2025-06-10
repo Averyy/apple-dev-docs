@@ -1,6 +1,6 @@
 # Apple Pencil interactions
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Handle user interactions like double tap and squeeze on Apple Pencil.
 
@@ -74,4 +74,4 @@ Apple Pencil interactions let a person perform certain actions in your app by do
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/apple-pencil-interactions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/apple-pencil-interactions)*

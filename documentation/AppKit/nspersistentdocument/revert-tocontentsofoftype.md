@@ -1,6 +1,6 @@
 # revert(toContentsOf:ofType:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Overridden to clean up the managed object context and controllers during a revert.

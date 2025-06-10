@@ -24,10 +24,10 @@ The method you use to delete a donation made with [`NSUserActivity`](https://dev
 
 ###### Persisted Activities
 
-If user activity’s [`isEligibleForPrediction`](https://developer.apple.com/documentation/foundation/nsuseractivity/2980674-iseligibleforprediction) property is set to [`true`](https://developer.apple.com/documentation/swift/true) and the [`persistentIdentifier`](https://developer.apple.com/documentation/foundation/nsuseractivity/2980675-persistentidentifier) property is set to a unique string identifying the activity, then:
+If user activity’s [`isEligibleForPrediction`](https://developer.apple.com/documentation/Foundation/NSUserActivity/isEligibleForPrediction) property is set to [`true`](https://developer.apple.com/documentation/swift/true) and the [`persistentIdentifier`](https://developer.apple.com/documentation/Foundation/NSUserActivity/persistentIdentifier) property is set to a unique string identifying the activity, then:
 
-- Use [`deleteSavedUserActivities(withPersistentIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/foundation/nsuseractivity/2980673-deletesaveduseractivities), passing in the list of persistent identifiers, to delete individual activities. This method also deletes user activities stored by Core Spotlight that have a matching persistent identifier.
-- Use [`deleteAllSavedUserActivities(completionHandler:)`](https://developer.apple.com/documentation/foundation/nsuseractivity/2980672-deleteallsaveduseractivities) to delete all activities saved by your app; for example, after the user signs out of your app. This method also deletes all user activities created by your app and stored by Core Spotlight.
+- Use [`deleteSavedUserActivities(withPersistentIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/Foundation/NSUserActivity/deleteSavedUserActivities(withPersistentIdentifiers:completionHandler:)), passing in the list of persistent identifiers, to delete individual activities. This method also deletes user activities stored by Core Spotlight that have a matching persistent identifier.
+- Use [`deleteAllSavedUserActivities(completionHandler:)`](https://developer.apple.com/documentation/Foundation/NSUserActivity/deleteAllSavedUserActivities(completionHandler:)) to delete all activities saved by your app; for example, after the user signs out of your app. This method also deletes all user activities created by your app and stored by Core Spotlight.
 
 ###### Spotlight Indexed Activities
 

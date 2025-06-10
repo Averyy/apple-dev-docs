@@ -1,6 +1,6 @@
 # containsStereoMultiviewVideo
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A media characteristic that indicates that a track contains stereoscopic video captured in a multiview compression format.

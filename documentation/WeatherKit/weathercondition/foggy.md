@@ -1,6 +1,6 @@
 # WeatherCondition.foggy
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Fog.

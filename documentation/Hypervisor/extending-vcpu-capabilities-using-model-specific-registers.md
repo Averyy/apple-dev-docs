@@ -140,4 +140,4 @@ The framework’s [`hv_vmx_get_msr_info(_:_:)`](hv_vmx_get_msr_info(_:_:).md) fu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Hypervisor/extending-vcpu-capabilities-using-model-specific-registers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/hypervisor/extending-vcpu-capabilities-using-model-specific-registers)*

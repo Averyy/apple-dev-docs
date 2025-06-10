@@ -1,6 +1,6 @@
 # click(forDuration:thenDragTo:withVelocity:thenHoldForDuration:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Clicks and holds for a duration, drags at a velocity, and holds over the other coordinate for a duration, all of which you specify.

@@ -1,6 +1,6 @@
 # Promoting In-App Purchases
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Show promoted In-App Purchases on your product page and handle purchases that customers initiate on the App Store.
 
@@ -175,4 +175,4 @@ storePromotionController.fetchStorePromotionOrder(completionHandler: {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/promoting-in-app-purchases)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/promoting-in-app-purchases)*

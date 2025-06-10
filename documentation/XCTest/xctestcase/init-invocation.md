@@ -1,6 +1,6 @@
 # init(invocation:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Initializes a test case with an invocation.

@@ -22,8 +22,6 @@ This functionality is available only to eligible apps with server entitlements. 
 
 > ❗ **Important**:  The [`init(id:)`](paymentmethodbinding/init(id:).md) and [`bind()`](paymentmethodbinding/bind().md) methods may display a system prompt that asks users to authenticate with their Apple ID. Call these methods only after an explicit user action, like tapping or clicking a button.
 
- The [`init(id:)`](paymentmethodbinding/init(id:).md) and [`bind()`](paymentmethodbinding/bind().md) methods may display a system prompt that asks users to authenticate with their Apple ID. Call these methods only after an explicit user action, like tapping or clicking a button.
-
 Initialize this structure using the in-app binding identifier that your server receives from the Apple server when your server initiates payment method binding. Call the [`bind()`](paymentmethodbinding/bind().md) method to prompt users to confirm adding the payment method and making it their primary payment method.
 
 ## Topics
@@ -48,6 +46,7 @@ Initialize this structure using the in-app binding identifier that your server r
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

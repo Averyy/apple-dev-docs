@@ -26,8 +26,6 @@ Use the `for`-`await`-`in` syntax to iterate over the bytes in this sequence. Fo
 
 > 💡 **Tip**:  Rather than creating a [`FileHandle`](filehandle.md) to read a file asynchronously, you can instead use a `file://` URL in combination with the [`resourceBytes`](url/resourcebytes.md) property in [`URL`](url.md).
 
- Rather than creating a [`FileHandle`](filehandle.md) to read a file asynchronously, you can instead use a `file://` URL in combination with the [`resourceBytes`](url/resourcebytes.md) property in [`URL`](url.md).
-
 ## See Also
 
 - [FileHandle.AsyncBytes](filehandle/asyncbytes.md)

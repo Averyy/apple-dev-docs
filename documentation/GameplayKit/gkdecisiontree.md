@@ -63,8 +63,6 @@ After you’ve created a tree, use the [`findAction(forAnswers:)`](gkdecisiontre
 
 > 💡 **Tip**:  When defining an attribute with a small set of possible values, define your own enum type to name the possible values. Then use the underlying numeric value of that enum when building trees with the [`GKDecisionNode`](gkdecisionnode.md) [`createBranch(value:attribute:)`](gkdecisionnode/createbranch(value:attribute:).md) method or the [`init(examples:actions:attributes:)`](gkdecisiontree/init(examples:actions:attributes:).md) initializer, and when passing a set of attribute values to the [`findAction(forAnswers:)`](gkdecisiontree/findaction(foranswers:).md) method.
 
- When defining an attribute with a small set of possible values, define your own enum type to name the possible values. Then use the underlying numeric value of that enum when building trees with the [`GKDecisionNode`](gkdecisionnode.md) [`createBranch(value:attribute:)`](gkdecisionnode/createbranch(value:attribute:).md) method or the [`init(examples:actions:attributes:)`](gkdecisiontree/init(examples:actions:attributes:).md) initializer, and when passing a set of attribute values to the [`findAction(forAnswers:)`](gkdecisiontree/findaction(foranswers:).md) method.
-
 For example, the following code evaluates a tree similar to the examples in [`Figure 1`](gkdecisiontree#1965709.md) and the table above:
 
 ## Topics

@@ -1,6 +1,6 @@
 # MEDIA_KEYERR_OUTPUT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

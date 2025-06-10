@@ -1,6 +1,6 @@
 # wait(for:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Waits on a group of expectations.

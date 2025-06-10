@@ -111,6 +111,8 @@ enum Code
   The NFC wireless radio on the device is disabled.
 - [NFCReaderError.Code.readerErrorSecurityViolation](nfcreadererror-swift.struct/code/readererrorsecurityviolation.md)
   A security violation associated with the reader session has occurred.
+### Enumeration Cases
+- [NFCReaderError.Code.readerErrorIneligible](nfcreadererror-swift.struct/code/readererrorineligible.md)
 ### Initializers
 - [init?(rawValue: Int)](nfcreadererror-swift.struct/code/init(rawvalue:).md)
 
@@ -122,6 +124,7 @@ enum Code
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

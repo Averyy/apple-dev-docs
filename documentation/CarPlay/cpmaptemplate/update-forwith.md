@@ -13,6 +13,7 @@ Updates travel estimates, such as arrival time and the remaining time and distan
 ## Declaration
 
 ```swift
+@MainActor
 func update(_ estimates: CPTravelEstimates, for trip: CPTrip, with timeRemainingColor: CPTimeRemainingColor)
 ```
 

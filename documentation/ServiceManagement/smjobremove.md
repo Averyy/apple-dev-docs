@@ -14,7 +14,7 @@ Removes the job with the specified label from the specified domain.
 ## Declaration
 
 ```swift
-func SMJobRemove(_ domain: CFString!, _ jobLabel: CFString, _ auth: UnsafeMutableRawPointer!, _ wait: Bool, _ outError: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
+func SMJobRemove(_ domain: CFString!, _ jobLabel: CFString, _ auth: AuthorizationRef!, _ wait: Bool, _ outError: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
 ```
 
 #### Return Value

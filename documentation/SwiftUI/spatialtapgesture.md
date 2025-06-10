@@ -59,6 +59,8 @@ struct TapGestureView: View {
 - [init(count: Int, coordinateSpace: CoordinateSpace)](spatialtapgesture/init(count:coordinatespace:)-1b85g.md)
   Creates a tap gesture with the number of required taps and the coordinate space of the gesture’s location.
 ### Initializers
+- [init(count: Int, coordinateSpace3D: some CoordinateSpace3D)](spatialtapgesture/init(count:coordinatespace3d:).md)
+  Creates a tap gesture with the number of required taps and the coordinate space of the gesture’s location.
 - [init(count:coordinateSpace:)](spatialtapgesture/init(count:coordinatespace:).md)
   Creates a tap gesture with the number of required taps and the coordinate space of the gesture’s location.
 

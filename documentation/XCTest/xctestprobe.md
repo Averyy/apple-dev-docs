@@ -1,6 +1,6 @@
 # XCTestProbe
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An object that observes test activity status.

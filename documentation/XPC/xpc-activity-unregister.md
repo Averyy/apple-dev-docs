@@ -1,6 +1,6 @@
 # xpc_activity_unregister(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Unregisters an activity with the specified identifier.

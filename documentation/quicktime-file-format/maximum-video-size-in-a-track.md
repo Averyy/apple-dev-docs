@@ -43,8 +43,6 @@ For the case where there is a single video track with an identity track and matr
 
 > ⚠️ **Warning**: Use of the “clean aperture” sample description extension does not affect the value of the track visual size, as the picture buffer is needed immediately after decoding, prior to any clean aperture clipping.
 
-Use of the “clean aperture” sample description extension does not affect the value of the track visual size, as the picture buffer is needed immediately after decoding, prior to any clean aperture clipping.
-
 ## See Also
 
 - [Table of features](table_of_features.md)

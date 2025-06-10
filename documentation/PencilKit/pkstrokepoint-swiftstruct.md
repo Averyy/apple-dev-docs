@@ -45,6 +45,12 @@ struct PKStrokePoint
 ### Using reference types
 - [class PKStrokePointReference](pkstrokepointreference.md)
   A class that represents the properties of a specific point along a stroke’s path.
+### Initializers
+- [init(location: CGPoint, timeOffset: TimeInterval, size: CGSize, opacity: CGFloat, force: CGFloat, azimuth: CGFloat, altitude: CGFloat, secondaryScale: CGFloat, threshold: CGFloat)](pkstrokepoint-swift.struct/init(location:timeoffset:size:opacity:force:azimuth:altitude:secondaryscale:threshold:).md)
+  Create a new point with the provided properties.
+### Instance Properties
+- [var threshold: CGFloat](pkstrokepoint-swift.struct/threshold.md)
+  The threshold for clipping the stroke rendering.
 
 ## Relationships
 

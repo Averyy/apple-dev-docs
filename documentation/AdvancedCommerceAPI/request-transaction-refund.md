@@ -1,6 +1,6 @@
 # Request Transaction Refund
 
-**Framework**: Advancedcommerceapi  
+**Framework**: Advanced Commerce API  
 **Kind**: httpRequest
 
 Request a refund for a one-time charge or subscription transaction.
@@ -36,4 +36,4 @@ The request body.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AdvancedCommerceAPI/request-transaction-refund)*
+*[View on Apple Developer](https://developer.apple.com/documentation/advancedcommerceapi/request-transaction-refund)*

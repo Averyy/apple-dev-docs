@@ -1,6 +1,6 @@
 # WKDownload.PlaceholderPolicy.disable
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 **Availability**:

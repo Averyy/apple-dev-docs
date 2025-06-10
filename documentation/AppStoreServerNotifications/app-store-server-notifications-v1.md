@@ -1,6 +1,6 @@
 # App Store Server Notifications V1
 
-**Framework**: Appstoreservernotifications  
+**Framework**: App Store Server Notifications  
 **Kind**: httpRequest
 
 Specify your secure server’s URL in App Store Connect to receive version 1 notifications.
@@ -31,4 +31,4 @@ Upon receiving a server notification, respond to the App Store with an HTTP stat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerNotifications/app-store-server-notifications-v1)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v1)*

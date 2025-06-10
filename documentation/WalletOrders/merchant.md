@@ -1,6 +1,6 @@
 # Merchant
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 The merchant associated with the order.

@@ -1,6 +1,6 @@
 # end
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The end position of the range.

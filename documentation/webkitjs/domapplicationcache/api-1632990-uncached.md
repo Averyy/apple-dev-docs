@@ -1,6 +1,6 @@
 # UNCACHED
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 The object isn’t associated with an application cache. This can occur if the update process fails and there is no previous cache to revert to, or if there is no manifest file.

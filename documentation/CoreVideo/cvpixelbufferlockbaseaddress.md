@@ -30,8 +30,6 @@ You must call the [`CVPixelBufferLockBaseAddress(_:_:)`](cvpixelbufferlockbasead
 
 > ❗ **Important**:  When accessing pixel data with the GPU, locking is not necessary and can impair performance.
 
- When accessing pixel data with the GPU, locking is not necessary and can impair performance.
-
 ## Parameters
 
 - `pixelBuffer`: The pixel buffer whose base address you want to lock.

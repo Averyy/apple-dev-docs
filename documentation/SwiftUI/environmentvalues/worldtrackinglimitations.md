@@ -6,6 +6,7 @@
 The current limitations of the device tracking the user’s surroundings.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -54,6 +55,8 @@ When the device’s world tracking capabilities are limited, don’t prevent the
   Indicates whether returned metrics will take dynamic scaling into account.
 - [struct WorldTrackingLimitation](worldtrackinglimitation.md)
   A structure to represent limitations of tracking the user’s surroundings.
+- [struct SurfaceSnappingInfo](surfacesnappinginfo.md)
+  A type representing information about the window scenes snap state.
 
 
 ---

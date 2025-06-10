@@ -239,6 +239,8 @@ For information about the bundle structure of iOS and macOS apps, see [`Bundle P
   The executable failed due to linking issues.
 - [var NSExecutableErrorMaximum: Int](nsexecutableerrormaximum-swift.var.md)
   The end of the range of error codes reserved for errors related to executable files.
+### Structures
+- [Bundle.DidLoadMessage](bundle/didloadmessage.md)
 ### Instance Methods
 - [func loadAppleScriptObjectiveCScripts()](bundle/loadapplescriptobjectivecscripts.md)
 - [func localizedString(forKey: String, value: String?, table: String?, localizations: [Locale.Language]) -> String](bundle/localizedstring(forkey:value:table:localizations:).md)
@@ -256,8 +258,9 @@ For information about the bundle structure of iOS and macOS apps, see [`Bundle P
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/bundle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/bundle)*

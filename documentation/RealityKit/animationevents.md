@@ -10,6 +10,7 @@ Notable milestones that the framework signals during animation playback.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -47,16 +48,20 @@ entitySubscription = view.scene.publisher(for:
 ## Topics
 
 ### Recognizing animation events
-- [AnimationEvents.PlaybackStarted](animationevents/playbackstarted.md)
-  The event raised when an animation has been started.
 - [AnimationEvents.PlaybackCompleted](animationevents/playbackcompleted.md)
   The event raised when an animation reaches the end of its duration.
 - [AnimationEvents.PlaybackLooped](animationevents/playbacklooped.md)
   The event raised when an animation loops.
 - [AnimationEvents.PlaybackTerminated](animationevents/playbackterminated.md)
   The event raised when an animation has been terminated, regardless of whether it ran to completion.
-### Recognizing skeletal events
-- [AnimationEvents.SkeletalPoseUpdateComplete](animationevents/skeletalposeupdatecomplete.md)
+### Structures
+- [AnimationEvents.PlaybackStarted](animationevents/playbackstarted-6pxcp.md)
+  The event raised when an animation has been started.
+- [AnimationEvents.PlaybackStarted](animationevents/playbackstarted-876gy.md)
+  The event raised when an animation has been started.
+- [AnimationEvents.SkeletalPoseUpdateComplete](animationevents/skeletalposeupdatecomplete-88hp5.md)
+  Raised immediately after the SkeletalPoseSystem has been updated.
+- [AnimationEvents.SkeletalPoseUpdateComplete](animationevents/skeletalposeupdatecomplete-o560.md)
   Raised immediately after the SkeletalPoseSystem has been updated.
 
 ## See Also

@@ -25,8 +25,6 @@ If [`false`](https://developer.apple.com/documentation/swift/false), the viewer 
 
 > 💡 **Tip**:  For best results when scaling, use a PDF asset with the Preserve Vector Data checked in the asset catalog.
 
- For best results when scaling, use a PDF asset with the Preserve Vector Data checked in the asset catalog.
-
 ## See Also
 
 - [var largeContentTitle: String?](uilargecontentvieweritem/largecontenttitle.md)

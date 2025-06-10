@@ -1,6 +1,6 @@
 # WeatherAvailability.AvailabilityKind.available
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 The data is available.

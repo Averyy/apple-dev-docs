@@ -15,8 +15,6 @@ A message that tells the user why the app is requesting access to the user’s H
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the user’s HomeKit configuration data.
 
- This key is required if your app uses APIs that access the user’s HomeKit configuration data.
-
 For more information about using HomeKit in your app, see [`Enabling HomeKit in your app`](https://developer.apple.com/documentation/HomeKit/enabling-homekit-in-your-app).
 
 ## See Also

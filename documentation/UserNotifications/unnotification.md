@@ -1,6 +1,6 @@
 # UNNotification
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 The data for a local or remote notification the system delivers to your app.

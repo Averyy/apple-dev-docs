@@ -16,7 +16,7 @@ A placeholder image that you can display when the player completes the achieveme
 ## Declaration
 
 ```swift
-class func placeholderCompletedAchievementImage() -> UIImage
+class func placeholderCompletedAchievementImage() -> NSImage
 ```
 
 #### Return Value

@@ -1,6 +1,6 @@
 # BlockStorageDeviceDriverKit
 
-**Framework**: Blockstoragedevicedriverkit  
+**Framework**: BlockStorageDeviceDriverKit  
 **Kind**: module
 
 Develop drivers for custom storage devices that communicate with the driver using custom protocols.

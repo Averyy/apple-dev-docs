@@ -7,8 +7,6 @@ The custom behavior dictionary.
 
 **Availability**:
 - macOS 10.12.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,12 +16,7 @@ object SystemMigration.CustomBehaviorItem
 
 ## Topics
 
-### Profiles
-- [object SystemMigration.CustomBehaviorItem.PathsItem](systemmigration/custombehavioritem/pathsitem.md)
-  The custom behavior path dictionary.
-
-## See Also
-
+### Objects
 - [object SystemMigration.CustomBehaviorItem.PathsItem](systemmigration/custombehavioritem/pathsitem.md)
   The custom behavior path dictionary.
 

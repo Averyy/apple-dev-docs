@@ -16,13 +16,6 @@
 var cardTemplateIdentifier: String { get }
 ```
 
-## See Also
-
-- [var cardConfigurationIdentifier: String](pkidentitydocumentmetadata/cardconfigurationidentifier.md)
-- [var credentialIdentifier: String](pkidentitydocumentmetadata/credentialidentifier.md)
-- [var serverEnvironmentIdentifier: String](pkidentitydocumentmetadata/serverenvironmentidentifier.md)
-- [var sharingInstanceIdentifier: String](pkidentitydocumentmetadata/sharinginstanceidentifier.md)
-
 
 ---
 

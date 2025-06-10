@@ -1,6 +1,6 @@
 # fulfillment(of:timeout:enforceOrder:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Creates a waiter that waits on group of expectations for up to the specified timeout, optionally enforcing their order of fulfillment.

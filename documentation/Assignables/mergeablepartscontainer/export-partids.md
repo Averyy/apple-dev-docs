@@ -10,8 +10,8 @@ Given a set of part identifiers, return a dictionary of part ID to URL to the pa
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- Unknown ?+ - Deprecated
 - visionOS ?+
+- Unknown ?+ - Deprecated
 
 ## Declaration
 

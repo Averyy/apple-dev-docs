@@ -1,6 +1,6 @@
 # Enabling and disabling tests
 
-**Framework**: Testing
+**Framework**: Swift Testing
 
 Conditionally enable or disable individual tests before they run.
 
@@ -117,4 +117,4 @@ func makeSundae() async throws { ... }
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Testing/enablinganddisabling)*
+*[View on Apple Developer](https://developer.apple.com/documentation/testing/enablinganddisabling)*

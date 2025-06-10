@@ -18,7 +18,7 @@ func fetchThumbnails(for itemIdentifiers: [NSFileProviderItemIdentifier], reques
 
 #### Return Value
 
-An object that reports the progress of this request. If the thumbnails are no longer needed, the system can cancel this request by calling the progress object’s [`cancel()`](https://developer.apple.com/documentation/foundation/progress/1413832-cancel) method.
+An object that reports the progress of this request. If the thumbnails are no longer needed, the system can cancel this request by calling the progress object’s [`cancel()`](https://developer.apple.com/documentation/Foundation/Progress/cancel()) method.
 
 #### Discussion
 

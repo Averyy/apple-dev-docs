@@ -1,6 +1,6 @@
 # draggingImageComponents(withFrame:in:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Generates dragging image components with the specified frame in the view.

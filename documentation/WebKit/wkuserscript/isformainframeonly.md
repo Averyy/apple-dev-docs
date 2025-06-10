@@ -1,6 +1,6 @@
 # isForMainFrameOnly
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether to inject the script into the main frame or all frames.

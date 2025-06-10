@@ -10,6 +10,7 @@ A component that stores physics joints which RealityKit simulates.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -26,18 +27,12 @@ Add a joint to the correct `PhysicsJointsComponent` instance by calling its `Phy
 
 ## Topics
 
-### Operators
-- [static func == (PhysicsJointsComponent, PhysicsJointsComponent) -> Bool](physicsjointscomponent/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init()](physicsjointscomponent/init.md)
   Creates a new physics joints component.
 ### Instance Properties
 - [var joints: PhysicsJoints](physicsjointscomponent/joints.md)
   The set of joints the physics joints component stores.
-### Default Implementations
-- [Component Implementations](physicsjointscomponent/component-implementations.md)
-- [Equatable Implementations](physicsjointscomponent/equatable-implementations.md)
 
 ## Relationships
 
@@ -57,6 +52,8 @@ Add a joint to the correct `PhysicsJointsComponent` instance by calling its `Phy
   A type that describes physics joints.
 - [struct EntityGeometricPins](entitygeometricpins.md)
   A structure that wraps all geometric pins an entity owns.
+- [struct AttachedTransformComponent](attachedtransformcomponent.md)
+  A component that stores an optional source pin owned by this entity and a target pin which this entity is attached to
 
 
 ---

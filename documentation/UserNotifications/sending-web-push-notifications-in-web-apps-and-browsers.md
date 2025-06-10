@@ -1,6 +1,6 @@
 # Sending web push notifications in web apps and browsers
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Update your web server and website to send push notifications that work in Safari, other browsers, and web apps, following cross-browser standards.
 

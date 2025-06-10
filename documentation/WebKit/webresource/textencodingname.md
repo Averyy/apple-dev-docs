@@ -1,6 +1,6 @@
 # textEncodingName
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The receiver’s text encoding name.

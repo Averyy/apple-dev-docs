@@ -13,6 +13,7 @@ A Boolean value that indicates whether the button is in an enabled state.
 ## Declaration
 
 ```swift
+@MainActor
 var isEnabled: Bool { get set }
 ```
 

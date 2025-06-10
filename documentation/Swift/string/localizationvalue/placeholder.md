@@ -52,6 +52,7 @@ You only use this type directly when specifying one of its enumeration cases in 
 - [Equatable](equatable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 
 ---

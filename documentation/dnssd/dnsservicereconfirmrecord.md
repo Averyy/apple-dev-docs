@@ -26,8 +26,6 @@ Causes the record to be flushed from the daemon’s cache (as well as all other 
 
 > ❗ **Important**:  Use this routine conservatively. Reconfirming a record necessarily consumes network bandwidth, so this should not be done indiscriminately.
 
- Use this routine conservatively. Reconfirming a record necessarily consumes network bandwidth, so this should not be done indiscriminately.
-
 ## Parameters
 
 - `flags`: Not currently used.

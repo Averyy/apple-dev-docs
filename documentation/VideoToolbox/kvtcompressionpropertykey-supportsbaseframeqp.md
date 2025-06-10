@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_SupportsBaseFrameQP
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A value that indicates whether the encoder supports base frame QP requests.

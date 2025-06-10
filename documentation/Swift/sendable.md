@@ -17,7 +17,7 @@ A thread-safe type whose values can be shared across arbitrary concurrent contex
 ## Declaration
 
 ```swift
-protocol Sendable
+protocol Sendable : SendableMetatype
 ```
 
 #### Overview
@@ -92,6 +92,8 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 
 ## Relationships
 
+### Inherits From
+- [SendableMetatype](sendablemetatype.md)
 ### Inherited By
 - [Actor](actor.md)
 - [Clock](clock.md)
@@ -103,6 +105,9 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [Error](error.md)
 - [Executor](executor.md)
 - [InstantProtocol](instantprotocol.md)
+- [MainExecutor](mainexecutor.md)
+- [RunLoopExecutor](runloopexecutor.md)
+- [SchedulableExecutor](schedulableexecutor.md)
 - [SerialExecutor](serialexecutor.md)
 - [TaskExecutor](taskexecutor.md)
 - [UnsafeSendable](unsafesendable.md)
@@ -153,6 +158,8 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [AtomicStoreOrdering](../synchronization/atomicstoreordering.md)
 - [AtomicUpdateOrdering](../synchronization/atomicupdateordering.md)
 - [Bool](bool.md)
+- [CFMainExecutor](cfmainexecutor.md)
+- [CFTaskExecutor](cftaskexecutor.md)
 - [CancellationError](cancellationerror.md)
 - [Character](character.md)
 - [CheckedContinuation](checkedcontinuation.md)
@@ -181,6 +188,8 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [Dictionary.Values.Iterator](dictionary/values-swift.struct/iterator.md)
 - [DiscontiguousSlice](discontiguousslice.md)
 - [DiscontiguousSlice.Index](discontiguousslice/index.md)
+- [DispatchGlobalTaskExecutor](dispatchglobaltaskexecutor.md)
+- [DispatchMainExecutor](dispatchmainexecutor.md)
 - [DistributedActorCodingError](../distributed/distributedactorcodingerror.md)
 - [Double](double.md)
 - [Double.SIMD16Storage](double/simd16storage.md)
@@ -192,6 +201,8 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [DropFirstSequence](dropfirstsequence.md)
 - [DropWhileSequence](dropwhilesequence.md)
 - [DropWhileSequence.Iterator](dropwhilesequence/iterator.md)
+- [DummyMainExecutor](dummymainexecutor.md)
+- [DummyTaskExecutor](dummytaskexecutor.md)
 - [Duration](duration.md)
 - [Duration.TimeFormatStyle](duration/timeformatstyle.md)
 - [Duration.TimeFormatStyle.Attributed](duration/timeformatstyle/attributed-swift.struct.md)
@@ -210,6 +221,7 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [EnumeratedSequence.Iterator](enumeratedsequence/iterator.md)
 - [ExecuteDistributedTargetError](../distributed/executedistributedtargeterror.md)
 - [ExecutorJob](executorjob.md)
+- [ExecutorJob.Kind](executorjob/kind-swift.struct.md)
 - [FlattenSequence](flattensequence.md)
 - [FlattenSequence.Index](flattensequence/index.md)
 - [FlattenSequence.Iterator](flattensequence/iterator.md)
@@ -233,6 +245,7 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [FloatingPointSign](floatingpointsign.md)
 - [Hasher](hasher.md)
 - [IndexingIterator](indexingiterator.md)
+- [InlineArray](inlinearray.md)
 - [Int](int.md)
 - [Int.SIMD16Storage](int/simd16storage.md)
 - [Int.SIMD2Storage](int/simd2storage.md)
@@ -288,6 +301,8 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [MainActor](mainactor.md)
 - [MemoryLayout](memorylayout.md)
 - [Mirror.DisplayStyle](mirror/displaystyle-swift.enum.md)
+- [MutableRawSpan](mutablerawspan.md)
+- [MutableSpan](mutablespan.md)
 - [Mutex](../synchronization/mutex.md)
 - [Never](never.md)
 - [ObjectIdentifier](objectidentifier.md)
@@ -302,6 +317,7 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [Range](range.md)
 - [RangeSet](rangeset.md)
 - [RangeSet.Ranges](rangeset/ranges-swift.struct.md)
+- [RawSpan](rawspan.md)
 - [Repeated](repeated.md)
 - [Result](result.md)
 - [ReversedCollection](reversedcollection.md)
@@ -319,6 +335,7 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [Set.Index](set/index.md)
 - [Set.Iterator](set/iterator.md)
 - [Slice](slice.md)
+- [Span](span.md)
 - [StaticBigInt](staticbigint.md)
 - [StaticString](staticstring.md)
 - [StrideThrough](stridethrough.md)
@@ -411,6 +428,8 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [Unicode.UTF8](unicode/utf8.md)
 - [Unicode.UTF8.ForwardParser](unicode/utf8/forwardparser.md)
 - [Unicode.UTF8.ReverseParser](unicode/utf8/reverseparser.md)
+- [Unicode.UTF8.ValidationError](unicode/utf8/validationerror.md)
+- [Unicode.UTF8.ValidationError.Kind](unicode/utf8/validationerror/kind-swift.struct.md)
 - [UnicodeDecodingResult](unicodedecodingresult.md)
 - [Unmanaged](unmanaged.md)
 - [UnownedJob](unownedjob.md)
@@ -431,6 +450,8 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
   A singleton actor whose executor is equivalent to the main dispatch queue.
 - [protocol GlobalActor](globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
+- [protocol SendableMetatype](sendablemetatype.md)
+  A type `T` whose metatype `T.Type` is `Sendable`.
 - [typealias ConcurrentValue](concurrentvalue.md)
 - [protocol UnsafeSendable](unsafesendable.md)
   A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.

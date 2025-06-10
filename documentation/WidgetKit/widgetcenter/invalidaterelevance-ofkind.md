@@ -1,6 +1,6 @@
 # invalidateRelevance(ofKind:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: method
 
 Mark the relevance for a kind as invalid.
@@ -8,8 +8,9 @@ Mark the relevance for a kind as invalid.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
+- visionOS 26.0+ (Beta)
 - watchOS 11.0+
 
 ## Declaration

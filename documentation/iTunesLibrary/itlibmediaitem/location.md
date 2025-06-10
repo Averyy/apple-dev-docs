@@ -21,7 +21,7 @@ If the location of the media item isn’t available, this property returns [`ITL
 
 This method returns URLs that are outside of the default sandbox. To use the iTunesLibrary framework, a sandboxed app must have the [`com.apple.security.assets.music.read-write`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.assets.music.read-write) or [`com.apple.security.assets.music.read-only`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.assets.music.read-only) entitlement.
 
-To access the media item file in a sandboxed app, call [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/1417051-startaccessingsecurityscopedreso).
+To access the media item file in a sandboxed app, call [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/NSURL/startAccessingSecurityScopedResource()).
 
 Listing 1.
 

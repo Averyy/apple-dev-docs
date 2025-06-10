@@ -15,8 +15,6 @@ To upload screenshots, begin by creating an [`App Screenshot Sets`](app-screensh
 
 > ❗ **Important**:  Some screenshot sizes are required in order to submit your app for review. You’ll get an error at submission time if you don’t provide all of the required assets. For information about screenshot requirements, see [`Screenshot specifications`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/screenshot-specifications).
 
- Some screenshot sizes are required in order to submit your app for review. You’ll get an error at submission time if you don’t provide all of the required assets. For information about screenshot requirements, see [`Screenshot specifications`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/screenshot-specifications).
-
 ## Topics
 
 ### Getting Screenshots and Reading Information

@@ -20,8 +20,6 @@ To customize your name and email address for source control for all projects, ch
 
 > 💡 **Tip**: If the Git tab doesn’t appear, make sure you select the Enable Source Control option in the General tab.
 
-If the Git tab doesn’t appear, make sure you select the Enable Source Control option in the General tab.
-
 ##### Create a Local Repository with Your New Project
 
 When you create a new Xcode project, one of the final steps is to specify where you want to save your project files. At this point, you can quickly create a local Git source control repository for your project by selecting the “Create Git repository on my Mac” option and then clicking the Create button.

@@ -7,8 +7,6 @@ The payload you use to configure FileVault.
 
 **Availability**:
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -28,17 +26,17 @@ As of macOS 10.15, FileVault settings require supervision or user approval when 
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | - |
-| Allow Manual Install | macOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | macOS |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | - |
+| Device channel | macOS |
+| User channel | NA |
+| Allow manual install | macOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | macOS |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | NA |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

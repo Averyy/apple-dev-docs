@@ -20,8 +20,6 @@ Provides access to various WLAN interface parameters, and operations such as sca
 
 > ❗ **Important**:  Do not instantiate interface objects directly. Instead, use interface objects vended by a [`CWWiFiClient`](cwwificlient.md) instance via the [`interface()`](cwwificlient/interface().md) method or one of its relatives. This enables your app to adopt App Sandbox even when it uses CoreWLAN without the need for any special exceptions. Directly instantiating interface objects causes low level access to system sockets, which by default is not allowed in a sandboxed environment.
 
- Do not instantiate interface objects directly. Instead, use interface objects vended by a [`CWWiFiClient`](cwwificlient.md) instance via the [`interface()`](cwwificlient/interface().md) method or one of its relatives. This enables your app to adopt App Sandbox even when it uses CoreWLAN without the need for any special exceptions. Directly instantiating interface objects causes low level access to system sockets, which by default is not allowed in a sandboxed environment.
-
 ## Topics
 
 ### Setting interface parameters

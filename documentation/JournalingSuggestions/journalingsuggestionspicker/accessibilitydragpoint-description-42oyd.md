@@ -1,6 +1,6 @@
 # accessibilityDragPoint(_:description:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 The point an assistive technology should use to begin a drag interaction.

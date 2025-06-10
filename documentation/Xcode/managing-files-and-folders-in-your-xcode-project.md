@@ -93,4 +93,4 @@ To convert the files Xcode displays in Show Details, make the file and directory
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/managing-files-and-folders-in-your-xcode-project)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/managing-files-and-folders-in-your-xcode-project)*

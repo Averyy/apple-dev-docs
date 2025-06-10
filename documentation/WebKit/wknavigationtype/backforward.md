@@ -1,6 +1,6 @@
 # WKNavigationType.backForward
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A request for the frame’s next or previous item.

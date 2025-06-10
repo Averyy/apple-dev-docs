@@ -28,8 +28,6 @@ var matrix: simd_double4x4
   The scale component of the projective transform.
 - [var translation: Vector3D](projectivetransform3d/translation.md)
   The translation component of the projective transform.
-- [static let identity: ProjectiveTransform3D](projectivetransform3d/identity.md)
-  The identity transform.
 
 
 ---

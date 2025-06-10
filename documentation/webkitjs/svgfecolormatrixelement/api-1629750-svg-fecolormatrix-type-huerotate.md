@@ -1,6 +1,6 @@
 # SVG_FECOLORMATRIX_TYPE_HUEROTATE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

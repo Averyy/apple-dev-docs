@@ -1,6 +1,6 @@
 # Using XPC to communicate with browser extensions
 
-**Framework**: Browserenginekit
+**Framework**: BrowserEngineKit
 
 Build interprocess communication between your host app and extensions.
 
@@ -158,4 +158,4 @@ xpc_connection_set_peer_entitlement_matches_value_requirement(connection,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/BrowserEngineKit/using-xpc-to-communicate-with-browser-extensions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/browserenginekit/using-xpc-to-communicate-with-browser-extensions)*

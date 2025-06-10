@@ -16,7 +16,7 @@ A compiled read-only object that determines how to apply variable rasterization 
 ## Declaration
 
 ```swift
-protocol MTLRasterizationRateMap : NSObjectProtocol
+protocol MTLRasterizationRateMap : NSObjectProtocol, Sendable
 ```
 
 ## Mentions
@@ -70,6 +70,8 @@ You can query the physical size requirements for each layer in the render pass b
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

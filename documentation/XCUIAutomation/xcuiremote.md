@@ -1,6 +1,6 @@
 # XCUIRemote
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: class
 
 A class that simulates interaction with a physical remote control.

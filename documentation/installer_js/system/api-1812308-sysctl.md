@@ -21,8 +21,6 @@ Use `man sysctl` in the macOS Terminal application to see a list of hardware sel
 
 > 💡 **Tip**: If you are using this function to screen for hardware features at install-time, consider using the “Pre-install Requirements Property List” setting of `productbuild` instead. Use `man productbuild` in the macOS Terminal application to see a list of supported requirement keys.
 
-If you are using this function to screen for hardware features at install-time, consider using the “Pre-install Requirements Property List” setting of `productbuild` instead. Use `man productbuild` in the macOS Terminal application to see a list of supported requirement keys.
-
 ## Parameters
 
 - `selector`: String with the hardware selector for the desired data.

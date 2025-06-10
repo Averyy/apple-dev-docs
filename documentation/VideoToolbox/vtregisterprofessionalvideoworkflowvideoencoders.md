@@ -1,6 +1,6 @@
 # VTRegisterProfessionalVideoWorkflowVideoEncoders()
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Loads encoders appropriate for the client’s professional video workflows.

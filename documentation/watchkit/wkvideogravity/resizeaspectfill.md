@@ -1,6 +1,6 @@
 # WKVideoGravity.resizeAspectFill
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Content is resized to fill the bounds rectangle completely while preserving the original aspect ratio of the content. This option results in cropping of the edges of the video in the axis it exceeds.

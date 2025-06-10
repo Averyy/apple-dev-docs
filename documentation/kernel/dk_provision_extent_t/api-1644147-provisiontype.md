@@ -1,0 +1,18 @@
+# provisionType
+
+**Framework**: Kernel  
+**Kind**: structp
+
+**Availability**:
+- macOS 10.12+
+
+## Declaration
+
+```swift
+uint8_t provisionType;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/dk_provision_extent_t/1644147-provisiontype)*

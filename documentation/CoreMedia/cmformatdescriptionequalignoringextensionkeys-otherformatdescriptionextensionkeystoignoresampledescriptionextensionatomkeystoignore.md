@@ -1,6 +1,6 @@
 # CMFormatDescriptionEqualIgnoringExtensionKeys(_:otherFormatDescription:extensionKeysToIgnore:sampleDescriptionExtensionAtomKeysToIgnore:)
 
-**Framework**: Coremedia  
+**Framework**: Core Media  
 **Kind**: func
 
 Returns a Boolean value that indicates whether two format descriptions are equal, ignoring differences in the extension keys you specify.

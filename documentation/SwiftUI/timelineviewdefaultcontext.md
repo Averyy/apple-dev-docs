@@ -1,6 +1,6 @@
 # TimelineViewDefaultContext
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: typealias
 
 Information passed to a timeline view’s content callback.
@@ -38,4 +38,4 @@ The context includes both the date from the schedule that triggered the callback
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/timelineviewdefaultcontext)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/timelineviewdefaultcontext)*

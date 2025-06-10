@@ -117,6 +117,7 @@ You can also add a variety of controls to allow a person to interact with the ma
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

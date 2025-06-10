@@ -10,7 +10,7 @@ Strings used when handling [`NSError`](https://developer.apple.com/documentation
 - [static let domain: MTKModelError](mtkmodelerror/domain.md)
   The error domain used by MetalKit when returning mesh initialization errors.
 - [static let key: MTKModelError](mtkmodelerror/key.md)
-  The key used to retrieve an error string from an error object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary.
+  The key used to retrieve an error string from an error object’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary.
 
 
 ---

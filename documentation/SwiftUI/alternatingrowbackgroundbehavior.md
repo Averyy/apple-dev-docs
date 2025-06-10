@@ -34,6 +34,7 @@ Use values of this type with the [`alternatingRowBackgrounds(_:)`](view/alternat
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

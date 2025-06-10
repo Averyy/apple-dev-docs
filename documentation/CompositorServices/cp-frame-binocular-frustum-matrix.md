@@ -4,6 +4,7 @@
 **Kind**: func
 
 **Availability**:
+- macOS ?+
 - visionOS 2.0+
 
 ## Declaration

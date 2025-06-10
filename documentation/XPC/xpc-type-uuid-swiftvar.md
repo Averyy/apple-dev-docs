@@ -1,6 +1,6 @@
 # XPC_TYPE_UUID
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A type that represents a universally unique identifier.

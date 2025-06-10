@@ -1,6 +1,6 @@
 # removeAllUserScripts()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Removes all user scripts from the web view.

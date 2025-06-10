@@ -16,7 +16,7 @@ A command queue that schedules input/output commands for reading files in the fi
 ## Declaration
 
 ```swift
-protocol MTLIOCommandQueue : NSObjectProtocol
+protocol MTLIOCommandQueue : NSObjectProtocol, Sendable
 ```
 
 #### Overview
@@ -43,6 +43,8 @@ You make input/output command queues by creating and configuring an [`MTLIOComma
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

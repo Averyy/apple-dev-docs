@@ -10,7 +10,7 @@ Adds padding to the specified edges of this view using an amount that’s approp
 - iPadOS 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 8.0+
 
 ## Declaration
@@ -50,8 +50,6 @@ The text with scene padding automatically aligns with the title, unlike the text
 Scene padding in watchOS also ensures that your content avoids the curved edges of a device like Apple Watch Series 7. In other platforms, scene padding produces the same default padding that you get from the `View/padding(_:_:)` modifier.
 
 > ❗ **Important**: Scene padding doesn’t pad the top and bottom edges of a view in watchOS, even if you specify those edges as part of the input. For example, if you specify `Edge/Set/vertical` instead of `Edge/Set/horizontal` in the example above, the modifier would have no effect in watchOS. It does, however, apply to all the edges that you specify in other platforms.
-
-Scene padding doesn’t pad the top and bottom edges of a view in watchOS, even if you specify those edges as part of the input. For example, if you specify `Edge/Set/vertical` instead of `Edge/Set/horizontal` in the example above, the modifier would have no effect in watchOS. It does, however, apply to all the edges that you specify in other platforms.
 
 ## Parameters
 

@@ -43,6 +43,7 @@ protocol UserIdentity : Decodable, Encodable, Hashable, Sendable
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [AnonymousUserIdentity](anonymoususeridentity.md)
 - [AnyUserIdentity](anyuseridentity.md)

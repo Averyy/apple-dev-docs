@@ -1,6 +1,6 @@
 # Creating an intuitive and effective UI in watchOS 10
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Provide an even more streamlined, consistent, and glanceable user experience with new design features.
 
@@ -132,8 +132,6 @@ var body: some View {
 ```
 
 > ❗ **Important**: While the code for the `List` and the `TabView` look very similar, there is a significant difference. The `List` expects an [`Optional`](https://developer.apple.com/documentation/Swift/Optional) for the `selected` value. If `selected` is `nil`, that means nothing is selected. If it’s not `nil`, the system unwraps its value and compares the value to the `id` for each item in the list. On the other hand, the `TabView` doesn’t unwrap the `selected` value. It just compares `selected` to the tab item’s [`tag(_:includeOptional:)`](https://developer.apple.com/documentation/SwiftUI/View/tag(_:includeOptional:)). As a result, you either need to unwrap `selected` before passing it to the tab view, or you need to wrap the tag values in an `Optional` before passing them to the `tag(_:)` modifier.
-
-While the code for the `List` and the `TabView` look very similar, there is a significant difference. The `List` expects an [`Optional`](https://developer.apple.com/documentation/Swift/Optional) for the `selected` value. If `selected` is `nil`, that means nothing is selected. If it’s not `nil`, the system unwraps its value and compares the value to the `id` for each item in the list. On the other hand, the `TabView` doesn’t unwrap the `selected` value. It just compares `selected` to the tab item’s [`tag(_:includeOptional:)`](https://developer.apple.com/documentation/SwiftUI/View/tag(_:includeOptional:)). As a result, you either need to unwrap `selected` before passing it to the tab view, or you need to wrap the tag values in an `Optional` before passing them to the `tag(_:)` modifier.
 
 When using a split view in watchOS, consider the following best practices:
 

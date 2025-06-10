@@ -1,6 +1,6 @@
 # JSExport
 
-**Framework**: Javascriptcore  
+**Framework**: JavaScriptCore  
 **Kind**: protocol
 
 The protocol for exporting Objective-C objects to JavaScript.
@@ -102,4 +102,4 @@ JSExportAs(doX,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/JavaScriptCore/jsexport)*
+*[View on Apple Developer](https://developer.apple.com/documentation/javascriptcore/jsexport)*

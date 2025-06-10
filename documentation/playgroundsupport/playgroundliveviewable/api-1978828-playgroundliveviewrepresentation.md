@@ -23,8 +23,6 @@ A view or view controller able to render and manage the live view. View controll
 
 > ❗ **Important**: The view or view controller returned by this method must be the root of the hierarchy. Views can't have superviews or associated view controllers, and view controllers can't have parent view controllers.
 
-The view or view controller returned by this method must be the root of the hierarchy. Views can't have superviews or associated view controllers, and view controllers can't have parent view controllers.
-
 #### Discussion
 
 The value returned by [`playgroundLiveViewRepresentation`](playgroundliveviewable/1978828-playgroundliveviewrepresentation.md) can be different each time the property is accessed.

@@ -28,15 +28,15 @@ In macOS, this class also defines properties for getting and setting scriptable 
 
 ##### Subclassing Notes
 
-The [`NSTextStorage`](nstextstorage.md) class implements change management through the [`beginEditing()`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/1411853-beginediting) and [`endEditing()`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/1416707-endediting) methods, as well as verification of attributes, delegate handling, and layout management notification. The one aspect it doesn’t implement is managing the actual attributed string storage, which subclasses manage by overriding the two [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) primitives:
+The [`NSTextStorage`](nstextstorage.md) class implements change management through the [`beginEditing()`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString/beginEditing()) and [`endEditing()`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString/endEditing()) methods, as well as verification of attributes, delegate handling, and layout management notification. The one aspect it doesn’t implement is managing the actual attributed string storage, which subclasses manage by overriding the two [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) primitives:
 
-- [`string`](https://developer.apple.com/documentation/foundation/nsattributedstring/1412616-string)
-- [`attributes(at:effectiveRange:)`](https://developer.apple.com/documentation/foundation/nsattributedstring/1415682-attributes)
+- [`string`](https://developer.apple.com/documentation/Foundation/NSAttributedString/string)
+- [`attributes(at:effectiveRange:)`](https://developer.apple.com/documentation/Foundation/NSAttributedString/attributes(at:effectiveRange:))
 
 Subclasses must also override two [`NSMutableAttributedString`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString) primitives:
 
-- [`replaceCharacters(in:with:)`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/1418451-replacecharacters)
-- [`setAttributes(_:range:)`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/1412179-setattributes)
+- [`replaceCharacters(in:with:)`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString/replaceCharacters(in:with:)-6oq9r)
+- [`setAttributes(_:range:)`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString/setAttributes(_:range:))
 
 These primitives should perform the change, then call [`edited(_:range:changeInLength:)`](nstextstorage/edited(_:range:changeinlength:).md) to let the parent class know there are changes.
 
@@ -117,6 +117,8 @@ These primitives should perform the change, then call [`edited(_:range:changeInL
 - [NSMutableCopying](../Foundation/NSMutableCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

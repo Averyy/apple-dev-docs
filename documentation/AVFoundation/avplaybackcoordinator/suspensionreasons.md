@@ -1,6 +1,6 @@
 # suspensionReasons
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The reasons a coordinator is currently unable to participate in a group playback activity.

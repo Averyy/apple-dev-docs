@@ -10,6 +10,7 @@ A key-value pair from the collection consisting of the name of an animation and 
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

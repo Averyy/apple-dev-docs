@@ -11,9 +11,9 @@ Creates a projective transform from the specified 4 x 4 single-precision matrix.
 - Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
 - watchOS 9.0+
 - Unknown ?+ - Deprecated
+- visionOS ?+
 
 ## Declaration
 
@@ -37,7 +37,7 @@ init(matrix: simd_float4x4)
   Creates a projective transform from the specified scale, rotate, and translate transforms.
 - [init(fovyRadians: Double, aspectRatio: Double, nearZ: Double, farZ: Double, reverseZ: Bool)](projectivetransform3d/init(fovyradians:aspectratio:nearz:farz:reversez:).md)
   Returns a projective transform with right-hand-side perspective and optional reverse-z.
-- [init(translation: Size3D)](projectivetransform3d/init(translation:)-4oiao.md)
+- [init(translation: Size3D)](projectivetransform3d/init(translation:).md)
 - [init(fovyRadians: Double, aspectRatio: Double, nearZ: Double, farZ: Double)](projectivetransform3d/init(fovyradians:aspectratio:nearz:farz:).md)
 
 

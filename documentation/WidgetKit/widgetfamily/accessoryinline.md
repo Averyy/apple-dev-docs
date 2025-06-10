@@ -1,6 +1,6 @@
 # WidgetFamily.accessoryInline
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: case
 
 A flat widget that contains a single row of text and an optional image.
@@ -8,7 +8,7 @@ A flat widget that contains a single row of text and an optional image.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -19,9 +19,9 @@ case accessoryInline
 
 ## Mentions
 
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
 - [Creating views for widgets, Live Activities, and watch complications](creating-views-for-widgets-live-activities-and-watch-complications.md)
 - [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
+- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
 
 #### Discussion
 

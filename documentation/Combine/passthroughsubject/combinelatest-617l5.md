@@ -30,8 +30,6 @@ Use `combineLatest<P,T>(_:)` to combine the current and one additional publisher
 
 > 💡 **Tip**: The combined publisher doesn’t produce elements until each of its upstream publishers publishes at least one element.
 
-The combined publisher doesn’t produce elements until each of its upstream publishers publishes at least one element.
-
 The combined publisher passes through any requests to  upstream publishers. However, it still obeys the demand-fulfilling rule of only sending the request amount downstream. If the demand isn’t `.unlimited`, it drops values from upstream publishers. It implements this by using a buffer size of 1 for each upstream, and holds the most-recent value in each buffer.
 
 In the example below, `combineLatest()` receives the most-recent values published by the two publishers, it multiplies them together, and republishes the result:

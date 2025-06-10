@@ -1,6 +1,6 @@
 # environmentObject(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Supplies an observable object to a view’s hierarchy.

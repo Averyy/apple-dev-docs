@@ -41,6 +41,8 @@ let response = try await handler.hasSensitiveContent()
 
 This class successfully detects nudity only when [`analysisPolicy`](scsensitivityanalyzer/analysispolicy.md) is a value other than [`SCSensitivityAnalysisPolicy.disabled`](scsensitivityanalysispolicy/disabled.md).
 
+> **Note**:  To analyze a video stream rather than static files, see [`SCVideoStreamAnalyzer`](scvideostreamanalyzer.md).
+
 ## Topics
 
 ### Creating a sensitivity analyzer
@@ -72,6 +74,7 @@ This class successfully detects nudity only when [`analysisPolicy`](scsensitivit
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

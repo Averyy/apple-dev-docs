@@ -1,6 +1,6 @@
 # Creating App Clip Codes with App Store Connect
 
-**Framework**: Appclip
+**Framework**: App Clips
 
 Select one or more advanced App Clip experiences in App Store Connect and create App Clip Codes for users to scan to launch your App Clip.
 
@@ -19,7 +19,7 @@ By placing an App Clip Code at a physical location or using it in printed or dig
 
 [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) offers functionality to create an App Clip Code for one or more advanced App Clip experiences. First, select your app’s latest version; then, under Advanced App Clip Experiences, click Edit Advanced Experiences. Next, click Get App Clip Codes. Select one or more advanced App Clip experiences. (Note that you can only select App Clip experiences with invocation URLs that fit in an App Clip Code.) Finally, click Get Started.
 
-For more information, see [`Configuring the launch experience of your App Clip`](configuring-the-launch-experience-of-your-app-clip.md), [`Encoding a URL in an App Clip Code`](encoding-a-url-in-an-app-clip-code.md), and [`App Store Connect Help`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev43c15c696).
+For more information, refer to [`Configuring App Clip experiences`](configuring-the-launch-experience-of-your-app-clip.md), [`Encoding a URL in an App Clip Code`](encoding-a-url-in-an-app-clip-code.md), and [`App Store Connect Help`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev43c15c696).
 
 ##### Create One or More App Clip Codes
 
@@ -30,7 +30,7 @@ If you select a single advanced App Clip experience and click Get Started, you c
 - Create just one App Clip Code that encodes the experience’s registered invocation URL.
 - Create multiple App Clip Codes for the experience where each encodes a different invocation URL.
 
-The second option is especially useful if you only register one advanced App Clip experience and take advantage of URL prefix matching, and you use URL parameters to update your App Clip’s UI upon launch.
+The second option is especially useful if you only register one advanced App Clip experience and take advantage of URL prefix matching, and you use URL parameters to update the interface of your App Clip upon launch.
 
 If you want to create a single App Clip Code or you selected several App Clip experiences, click Next. Otherwise, to create multiple App Clip Codes for the selected experience, click Yes for that option. On your Mac, choose the URLs you want App Store Connect to use, and store them in a file that uses the comma-separated values (CSV) file format. Each of the file’s rows represents one generated App Clip Code, and each value in a row represents one URL. Upload the CSV file to App Store Connect by clicking Upload URLs and choosing the file on your Mac.
 
@@ -48,7 +48,7 @@ https://appclip.example.com/buy?id=789
 
 Note that each URL in the CSV file must match the selected App Clip experience.
 
-> **Note**:  If adding parameters results in a URL that doesn’t fit into an App Clip Code, the website displays an error and doesn’t create a code. For more information about choosing the right URL to encode, see [`Encoding a URL in an App Clip Code`](encoding-a-url-in-an-app-clip-code.md).
+> **Note**:  If adding parameters results in a URL that doesn’t fit into an App Clip Code, the website displays an error and doesn’t create a code. For more information about choosing the right URL to encode, refer to [`Encoding a URL in an App Clip Code`](encoding-a-url-in-an-app-clip-code.md).
 
 ##### Configure Your App Clip Code Appearance
 
@@ -62,9 +62,14 @@ Next, select whether you want to create an NFC-integrated or scan-only App Clip 
 
 ![Screenshot that shows App Store Connect’s UI for choosing a color pair.](https://docs-assets.developer.apple.com/published/218660d0decd583fd757fd04071c6b7b/media-3706516%402x.png)
 
-After creating your App Clip Code, download the created SVG file and print it yourself, or work with a professional printing service — for example, [`RR Donnelley`](https://developer.apple.comhttps://touchless.acc.rrd.com/). For printing guidance, see [`Preparing multiple App Clip Codes for production`](preparing-multiple-app-clip-codes-for-production.md) and [`Human Interface Guidelines > App Clips > Printing Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/printing-guidelines/).
+After creating your App Clip Code, download the created SVG file and print it yourself, or work with a professional printing service — for example, [`RR Donnelley`](https://developer.apple.comhttps://touchless.acc.rrd.com/). For printing guidance, refer to [`Preparing multiple App Clip Codes for production`](preparing-multiple-app-clip-codes-for-production.md) and [`Human Interface Guidelines > App Clips > Printing Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-clips/overview/printing-guidelines/).
+
+## See Also
+
+- [Creating App Clip Codes with the App Clip Code Generator](creating-app-clip-codes-with-the-app-clip-code-generator.md)
+  Use the App Clip Code Generator command-line tool to verify your code’s colors, get color suggestions, and create App Clip Codes.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/creating-app-clip-codes-with-app-store-connect)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appclip/creating-app-clip-codes-with-app-store-connect)*

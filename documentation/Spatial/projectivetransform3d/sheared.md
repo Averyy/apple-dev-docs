@@ -34,8 +34,6 @@ The projective transform that results from shearing over an axis by shear factor
   Constants that describe the axis of a shear transform.
 - [struct Axis3D](axis3d.md)
   Constants that describe an axis.
-- [func concatenating(ProjectiveTransform3D) -> ProjectiveTransform3D](projectivetransform3d/concatenating(_:).md)
-  Returns a projective transformation matrix that results from concatenating two existing projective transforms.
 - [func flip(along: Axis3D)](projectivetransform3d/flip(along:).md)
   Flips a projective transform along the specified axis.
 - [func flipped(along: Axis3D) -> ProjectiveTransform3D](projectivetransform3d/flipped(along:).md)

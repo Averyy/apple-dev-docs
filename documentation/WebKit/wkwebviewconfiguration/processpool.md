@@ -1,6 +1,6 @@
 # processPool
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The object that coordinates the processes the web view uses to render its web content and execute scripts.

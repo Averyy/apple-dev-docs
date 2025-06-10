@@ -1,6 +1,6 @@
 # xpc_data_get_bytes_ptr(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns a pointer to the internal storage of a data object.

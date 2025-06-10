@@ -1,9 +1,9 @@
-# playgroundLiveViewRepresentation
+# playgroundLiveViewRepresentation()
 
-**Framework**: Appkit  
-**Kind**: property
+**Framework**: AppKit  
+**Kind**: method
 
-A custom `PlaygroundLiveViewRepresentation` for this instance.
+Returns the `XCPlaygroundLiveViewRepresentation` for the receiver.
 
 **Availability**:
 - macOS ?+
@@ -12,16 +12,16 @@ A custom `PlaygroundLiveViewRepresentation` for this instance.
 
 ```swift
 @MainActor
-@preconcurrency var playgroundLiveViewRepresentation: PlaygroundLiveViewRepresentation { get }
+@preconcurrency func playgroundLiveViewRepresentation() -> XCPlaygroundLiveViewRepresentation
 ```
 
 #### Discussion
 
-The value of this property can but does not need to be the same every time; PlaygroundLiveViewables may choose to create a new view or view controller every time.
+The value returned from this method can but does not need to be the same every time; XCPlaygroundLiveViewables may choose to create a new view or view controller every time.
 
-> **Note**: `PlaygroundLiveViewRepresentation`
+> **Note**: `XCPlaygroundLiveViewRepresentation`
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsview/playgroundliveviewrepresentation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsview/playgroundliveviewrepresentation())*

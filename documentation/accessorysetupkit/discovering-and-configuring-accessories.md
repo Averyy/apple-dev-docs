@@ -1,6 +1,6 @@
 # Discovering and configuring accessories
 
-**Framework**: Accessorysetupkit
+**Framework**: AccessorySetupKit
 
 Detect nearby accessories and facilitate their setup.
 

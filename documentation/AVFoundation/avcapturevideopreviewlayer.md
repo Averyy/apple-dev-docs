@@ -78,6 +78,11 @@ class PreviewView: UIView {
 ### Deprecated
 - [Deprecated Symbols](avcapturevideopreviewlayer-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Instance Properties
+- [var isDeferredStartEnabled: Bool](avcapturevideopreviewlayer/isdeferredstartenabled.md)
+  A Boolean value that indicates whether to defer starting this preview layer.
+- [var isDeferredStartSupported: Bool](avcapturevideopreviewlayer/isdeferredstartsupported.md)
+  A Boolean value that indicates whether the preview layer supports deferred start.
 
 ## Relationships
 
@@ -93,6 +98,8 @@ class PreviewView: UIView {
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # endIndex
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The end index for the monthly weather statistics.

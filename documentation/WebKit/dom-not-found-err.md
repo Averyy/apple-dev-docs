@@ -1,6 +1,6 @@
 # DOM_NOT_FOUND_ERR
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

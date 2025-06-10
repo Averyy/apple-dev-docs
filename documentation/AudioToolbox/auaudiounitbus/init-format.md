@@ -1,6 +1,6 @@
 # init(format:)
 
-**Framework**: Audiotoolbox  
+**Framework**: Audio Toolbox  
 **Kind**: init
 
 Initializes a bus object with a specific format.

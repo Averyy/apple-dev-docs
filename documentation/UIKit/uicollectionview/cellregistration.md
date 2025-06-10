@@ -52,8 +52,6 @@ You don’t need to call [`register(_:forCellWithReuseIdentifier:)`](uicollectio
 
 > ❗ **Important**:  Don’t create your cell registration inside a [`UICollectionViewDiffableDataSource.CellProvider`](uicollectionviewdiffabledatasource-9tqpa/cellprovider.md) closure; doing so prevents cell reuse, and generates an exception in iOS 15 and higher.
 
- Don’t create your cell registration inside a [`UICollectionViewDiffableDataSource.CellProvider`](uicollectionviewdiffabledatasource-9tqpa/cellprovider.md) closure; doing so prevents cell reuse, and generates an exception in iOS 15 and higher.
-
 ## Topics
 
 ### Creating a cell registration

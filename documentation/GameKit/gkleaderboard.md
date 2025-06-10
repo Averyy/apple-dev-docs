@@ -83,6 +83,17 @@ You must create leaderboard objects using one of the load methods above. If the 
 ### Deprecated
 - [Deprecated symbols](gkleaderboard-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Instance Properties
+- [var activityIdentifier: String](gkleaderboard/activityidentifier.md)
+  The identifier of the game activity associated with this leaderboard, as configured by the developer in App Store Connect.
+- [var activityProperties: [String : String]](gkleaderboard/activityproperties.md)
+  The properties when associating this leaderboard with a game activity, as configured by the developer in App Store Connect.
+- [var isHidden: Bool](gkleaderboard/ishidden.md)
+  A Boolean value that indicates whether the current leaderboard isn’t visible in Game Center views.
+- [var leaderboardDescription: String](gkleaderboard/leaderboarddescription.md)
+  The description of this Leaderboard as configured by the developer in App Store Connect.
+- [var releaseState: GKReleaseState](gkleaderboard/releasestate.md)
+  The release state of the leaderboard in App Store Connect.
 
 ## Relationships
 

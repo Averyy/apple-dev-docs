@@ -12,7 +12,7 @@ The bookmark your browser app sends is valid for the lifetime of the receiving e
 
 ##### Create a File Bookmark
 
-In your browser app, call [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/foundation/url/2143023-bookmarkdata) on a URL for the file to which you want to share access. Use the [`minimalBookmark`](https://developer.apple.com/documentation/foundation/nsurl/bookmarkcreationoptions/1409050-minimalbookmark) option to get a minimal bookmark that uses fewer resources when you send it to your extension.
+In your browser app, call [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/Foundation/URL/bookmarkData(options:includingResourceValuesForKeys:relativeTo:)) on a URL for the file to which you want to share access. Use the [`minimalBookmark`](https://developer.apple.com/documentation/Foundation/NSURL/BookmarkCreationOptions/minimalBookmark) option to get a minimal bookmark that uses fewer resources when you send it to your extension.
 
 ```swift
 let url = URL(fileURLWithFileSystemRepresentation: thePath,
@@ -29,7 +29,7 @@ Use your browser’s interprocess communication (IPC) protocol to send the bookm
 
 ##### Resolve the Bookmark
 
-In your extension, create a URL for the file by resolving the bookmark data you receive from the browser app. Resolving the bookmark causes the operating system to automatically start your extension’s access to the resource, which extends your extension process’s sandbox to include the bookmarked file. When you finish accessing the file, you must call [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/url/1780153-stopaccessingsecurityscopedresou) to avoid leaking kernel resources.
+In your extension, create a URL for the file by resolving the bookmark data you receive from the browser app. Resolving the bookmark causes the operating system to automatically start your extension’s access to the resource, which extends your extension process’s sandbox to include the bookmarked file. When you finish accessing the file, you must call [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/Foundation/URL/stopAccessingSecurityScopedResource()) to avoid leaking kernel resources.
 
 ```swift
 let url = try URL(resolvingBookmarkData: bookmark,

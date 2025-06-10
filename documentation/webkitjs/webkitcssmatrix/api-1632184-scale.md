@@ -1,6 +1,6 @@
 # scale
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Returns the result of scaling this matrix by a given vector.

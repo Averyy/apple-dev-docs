@@ -10,6 +10,7 @@ The time, in seconds, at which the animations play.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -38,8 +39,6 @@ If you set a negative value for this property, the duration increases and the ad
   An optional duration that overrides the calculated duration.
 - [var trimEnd: TimeInterval?](animationgroup/trimend.md)
   The time, in seconds, at which the animations stop.
-- [func trimmed(start: TimeInterval?, end: TimeInterval?, duration: TimeInterval?) -> Self](animationgroup/trimmed(start:end:duration:).md)
-  Edits the animation duration according to the specified time.
 
 
 ---

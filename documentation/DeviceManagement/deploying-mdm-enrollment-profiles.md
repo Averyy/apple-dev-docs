@@ -26,7 +26,7 @@ In macOS, installing an MDM profile on a device in a single-user environment cre
 
 Devices become managed devices when network users bound to Open Directory servers log in to them and the MDM server recognizes those devices.
 
-See [`Install a Profile`](install-profile-command.md) for additional information.
+See [`Install Profile`](install-profile-command.md) for additional information.
 
 ##### Assign Media to Users Before Enrollment
 

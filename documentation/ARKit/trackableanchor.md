@@ -6,6 +6,7 @@
 An anchor that can gain and lose its tracking state over the course of a session.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -27,7 +28,9 @@ protocol TrackableAnchor : Anchor
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
+- [AccessoryAnchor](accessoryanchor.md)
 - [DeviceAnchor](deviceanchor.md)
 - [HandAnchor](handanchor.md)
 - [ImageAnchor](imageanchor.md)

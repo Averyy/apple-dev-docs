@@ -1,8 +1,7 @@
 # loadMetadata(completionHandler:)
 
 **Framework**: MediaExtension  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Loads the array of metadata items from the media asset track.
 
@@ -12,7 +11,7 @@ Loads the array of metadata items from the media asset track.
 ## Declaration
 
 ```swift
-var metadata: [AVMetadataItem] { get async throws }
+optional func metadata() async throws -> [AVMetadataItem]
 ```
 
 ## Parameters

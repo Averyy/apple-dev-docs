@@ -17,6 +17,7 @@ Closes the top-level undo group if necessary, and then performs undo operations 
 ## Declaration
 
 ```swift
+@MainActor
 func undo()
 ```
 

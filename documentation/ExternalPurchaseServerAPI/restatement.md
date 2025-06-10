@@ -24,8 +24,6 @@ Set this value to `true` to indicate the line item is restating a previously sub
 
 > ❗ **Important**: Restated line items overwrite the previous submission with the same [`lineItemId`](lineitemid.md). Be sure to include all the data in the line item, even those fields that are unchanged from the original.
 
-Restated line items overwrite the previous submission with the same [`lineItemId`](lineitemid.md). Be sure to include all the data in the line item, even those fields that are unchanged from the original.
-
 To report erroneously submitted line items, set both the `restatement` and [`erroneouslySubmitted`](erroneouslysubmitted.md) fields to `true`.
 
 For more information on correcting previously submitted line items, see [`Reporting corrections`](reportcorrections.md).

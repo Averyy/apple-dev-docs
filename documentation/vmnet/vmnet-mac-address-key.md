@@ -1,6 +1,6 @@
 # vmnet_mac_address_key
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: var
 
 **Availability**:
@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-var vmnet_mac_address_key: UnsafePointer<CChar>
+let vmnet_mac_address_key: UnsafePointer<CChar>
 ```
 
 #### Discussion
@@ -21,8 +21,8 @@ The value for this key is of type doc://com.apple.documentation/documentation/xp
 
 ## See Also
 
-- [var vmnet_mtu_key: UnsafePointer<CChar>](vmnet_mtu_key.md)
-- [var vmnet_max_packet_size_key: UnsafePointer<CChar>](vmnet_max_packet_size_key.md)
+- [let vmnet_mtu_key: UnsafePointer<CChar>](vmnet_mtu_key.md)
+- [let vmnet_max_packet_size_key: UnsafePointer<CChar>](vmnet_max_packet_size_key.md)
 
 
 ---

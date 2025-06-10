@@ -16,7 +16,7 @@ case watchNotAvailable
 
 #### Discussion
 
-You receive this error when the system fails to locate a nearby, paired Apple Watch running watchOS 6 or later while trying to authenticate using one of the watch authentication policies like [`LAPolicy.deviceOwnerAuthenticationWithWatch`](lapolicy/deviceownerauthenticationwithwatch.md).
+You receive this error when the system fails to locate a nearby, paired Apple Watch running watchOS 6 or later while trying to authenticate using one of the watch authentication policies like [`deviceOwnerAuthenticationWithWatch`](lapolicy/deviceownerauthenticationwithwatch.md).
 
 ## See Also
 

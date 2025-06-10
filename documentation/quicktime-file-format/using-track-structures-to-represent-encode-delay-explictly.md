@@ -1,6 +1,6 @@
 # Using track structures to represent encoder delay explicitly
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Represent encoder delay explicitly with an edit list atom and sample group structures.
 

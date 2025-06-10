@@ -26,8 +26,6 @@ Use this method to update the map in response to intermediate changes to the reg
 
 > ❗ **Important**:  Because the map may call this method many times during the scrolling of the map, your implementation needs to be lightweight. Use this method to record the new region values or to make fast updates to your app’s interface. Don’t start any long-running synchronous tasks in this method.
 
- Because the map may call this method many times during the scrolling of the map, your implementation needs to be lightweight. Use this method to record the new region values or to make fast updates to your app’s interface. Don’t start any long-running synchronous tasks in this method.
-
 ## Parameters
 
 - `mapView`: The map view with the visible region that changes.

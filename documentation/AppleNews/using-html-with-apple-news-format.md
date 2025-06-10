@@ -1,6 +1,6 @@
 # Using HTML with Apple News Format
 
-**Framework**: Applenews
+**Framework**: Apple News
 
 Use HTML formatting for text components.
 
@@ -245,4 +245,4 @@ The following is a list of unsupported HTML tags. Apple News Format rejects arti
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/using-html-with-apple-news-format)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applenews/using-html-with-apple-news-format)*

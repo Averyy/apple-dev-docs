@@ -24,8 +24,6 @@ func BNNSDirectApplyTopK(_ K: Int, _ axis: Int, _ batch_size: Int, _ input: Unsa
 
 > ❗ **Important**:  In Swift, the input data type and best values data type must be `float`, and the best indices data type must be `int32`.
 
- In Swift, the input data type and best values data type must be `float`, and the best indices data type must be `int32`.
-
 Use this function to find the maximum values and corresponding indices of a tensor along a specified axis.
 
 For example, given the following 4 x 4 row-major matrix:

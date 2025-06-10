@@ -20,9 +20,9 @@ An [`MLObjectDetectorMetrics`](mlobjectdetectormetrics.md) instance that represe
 
 ## Parameters
 
-- `annotatedImages`: An   instance that contains a set of   images with object annotations.
-- `imageColumn`: The name of the column in the data table that contains   the image file URLs.
-- `annotationColumn`: The name of the column in the data table that   contains the object annotations.
+- `annotatedImages`: An   instance that contains a set of images with object annotations.
+- `imageColumn`: The name of the column in the data table that contains the image file URLs.
+- `annotationColumn`: The name of the column in the data table that contains the object annotations.
 
 ## See Also
 

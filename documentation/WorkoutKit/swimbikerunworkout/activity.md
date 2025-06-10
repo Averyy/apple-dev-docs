@@ -1,6 +1,6 @@
 # SwimBikeRunWorkout.Activity
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: enum
 
 An activity in a multisport workout.
@@ -10,6 +10,7 @@ An activity in a multisport workout.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -45,6 +46,7 @@ enum Activity
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

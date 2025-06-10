@@ -40,4 +40,4 @@ This TicTacToe sample code project creates a networked game that you can play be
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Network/building-a-custom-peer-to-peer-protocol)*
+*[View on Apple Developer](https://developer.apple.com/documentation/network/building-a-custom-peer-to-peer-protocol)*

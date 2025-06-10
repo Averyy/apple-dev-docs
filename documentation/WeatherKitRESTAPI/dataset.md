@@ -1,6 +1,6 @@
 # DataSet
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: typealias
 
 The collection of weather information for a location.

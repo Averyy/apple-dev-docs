@@ -1,6 +1,6 @@
 # layout()
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Specifies that the alert must do immediate layout instead of lazily just before display.

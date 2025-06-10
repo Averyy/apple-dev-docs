@@ -1,6 +1,6 @@
 # XCSourceEditorCommandInvocation
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: class
 
 An object that identifies the command issued to your extension and provides the contents of the active source editor.

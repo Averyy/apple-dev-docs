@@ -18,6 +18,14 @@
 func sparse_vector_norm_float_complex(_ nz: sparse_dimension, _ x: OpaquePointer!, _ indx: UnsafePointer<sparse_index>!, _ norm: sparse_norm) -> Float
 ```
 
+## See Also
+
+- [func sparse_pack_vector_double_complex(sparse_dimension, sparse_dimension, OpaquePointer!, sparse_stride, OpaquePointer!, UnsafeMutablePointer<sparse_index>!) -> Int](sparse_pack_vector_double_complex(_:_:_:_:_:_:).md)
+- [func sparse_pack_vector_float_complex(sparse_dimension, sparse_dimension, OpaquePointer!, sparse_stride, OpaquePointer!, UnsafeMutablePointer<sparse_index>!) -> Int](sparse_pack_vector_float_complex(_:_:_:_:_:_:).md)
+- [func sparse_unpack_vector_double_complex(sparse_dimension, sparse_dimension, Bool, OpaquePointer!, UnsafePointer<sparse_index>!, OpaquePointer!, sparse_stride)](sparse_unpack_vector_double_complex(_:_:_:_:_:_:_:).md)
+- [func sparse_unpack_vector_float_complex(sparse_dimension, sparse_dimension, Bool, OpaquePointer!, UnsafePointer<sparse_index>!, OpaquePointer!, sparse_stride)](sparse_unpack_vector_float_complex(_:_:_:_:_:_:_:).md)
+- [func sparse_vector_norm_double_complex(sparse_dimension, OpaquePointer!, UnsafePointer<sparse_index>!, sparse_norm) -> Double](sparse_vector_norm_double_complex(_:_:_:_:).md)
+
 
 ---
 

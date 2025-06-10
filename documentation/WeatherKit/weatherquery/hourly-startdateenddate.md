@@ -1,6 +1,6 @@
 # hourly(startDate:endDate:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 The hourly forecast query that takes a start date and end date for the request, with the following caveats:

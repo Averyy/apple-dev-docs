@@ -22,7 +22,8 @@ class IOSurface
 ## Topics
 
 ### Initializers
-- [init?(properties: [IOSurfacePropertyKey : Any])](iosurface/init(properties:).md)
+- [init?(properties: [IOSurfacePropertyKey : any Sendable])](iosurface/init(properties:).md)
+- [init(IOSurfaceRef)](iosurface/init(_:).md)
 ### Instance Properties
 - [var allocationSize: Int](iosurface/allocationsize.md)
 - [var allowsPixelSizeCasting: Bool](iosurface/allowspixelsizecasting.md)
@@ -40,8 +41,8 @@ class IOSurface
 - [var width: Int](iosurface/width.md)
 - [var surfaceID: UInt32](iosurface/surfaceid.md)
 ### Instance Methods
-- [func allAttachments() -> [String : Any]?](iosurface/allattachments.md)
-- [func attachment(forKey: String) -> Any?](iosurface/attachment(forkey:).md)
+- [func allAttachments() -> [String : any Sendable]?](iosurface/allattachments.md)
+- [func attachment(forKey: String) -> (any Sendable)?](iosurface/attachment(forkey:).md)
 - [func baseAddressOfPlane(at: Int) -> UnsafeMutableRawPointer](iosurface/baseaddressofplane(at:).md)
 - [func bytesPerElementOfPlane(at: Int) -> Int](iosurface/bytesperelementofplane(at:).md)
 - [func bytesPerRowOfPlane(at: Int) -> Int](iosurface/bytesperrowofplane(at:).md)
@@ -53,8 +54,8 @@ class IOSurface
 - [func lock(options: IOSurfaceLockOptions, seed: UnsafeMutablePointer<UInt32>?) -> kern_return_t](iosurface/lock(options:seed:).md)
 - [func removeAllAttachments()](iosurface/removeallattachments.md)
 - [func removeAttachment(forKey: String)](iosurface/removeattachment(forkey:).md)
-- [func setAllAttachments([String : Any])](iosurface/setallattachments(_:).md)
-- [func setAttachment(Any, forKey: String)](iosurface/setattachment(_:forkey:).md)
+- [func setAllAttachments([String : any Sendable])](iosurface/setallattachments(_:).md)
+- [func setAttachment(any Sendable, forKey: String)](iosurface/setattachment(_:forkey:).md)
 - [func setPurgeable(IOSurfacePurgeabilityState, oldState: UnsafeMutablePointer<IOSurfacePurgeabilityState>?) -> kern_return_t](iosurface/setpurgeable(_:oldstate:).md)
 - [func unlock(options: IOSurfaceLockOptions, seed: UnsafeMutablePointer<UInt32>?) -> kern_return_t](iosurface/unlock(options:seed:).md)
 - [func widthOfPlane(at: Int) -> Int](iosurface/widthofplane(at:).md)
@@ -72,6 +73,8 @@ class IOSurface
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

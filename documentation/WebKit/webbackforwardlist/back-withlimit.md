@@ -1,6 +1,6 @@
 # back(withLimit:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the items that precede the current item in the back-forward list, up to the specified number of items.

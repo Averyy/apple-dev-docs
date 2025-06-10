@@ -1,6 +1,6 @@
 # kLSQuarantineOriginURLKey
 
-**Framework**: Coreservices  
+**Framework**: Core Services  
 **Kind**: data
 
 The URL of the resource originally hosting the quarantined item.

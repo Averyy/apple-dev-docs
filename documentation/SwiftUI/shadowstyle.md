@@ -33,6 +33,7 @@ struct ShadowStyle
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -58,6 +59,8 @@ struct ShadowStyle
   A two-dimensional gradient defined by a 2D grid of positioned colors.
 - [struct AnyGradient](anygradient.md)
   A color gradient.
+- [struct Glass](glass.md)
+  A structure that defines the configuration of the Liquid Glass material.
 
 
 ---

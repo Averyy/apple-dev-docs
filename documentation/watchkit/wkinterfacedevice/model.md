@@ -1,6 +1,6 @@
 # model
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The model information for the device.

@@ -1,6 +1,6 @@
 # Precipitation.sleet
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 A form of precipitation consisting of ice pellets.

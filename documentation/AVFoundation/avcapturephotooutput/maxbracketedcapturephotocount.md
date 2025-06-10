@@ -1,6 +1,6 @@
 # maxBracketedCapturePhotoCount
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The maximum number of images that the photo capture output can support in a single bracketed capture.

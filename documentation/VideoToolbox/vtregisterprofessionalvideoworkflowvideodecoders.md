@@ -1,6 +1,6 @@
 # VTRegisterProfessionalVideoWorkflowVideoDecoders()
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Loads decoders appropriate for the client’s professional video workflows.

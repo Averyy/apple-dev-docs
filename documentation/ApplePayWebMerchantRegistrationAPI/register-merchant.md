@@ -1,6 +1,6 @@
 # Register Merchant
 
-**Framework**: Applepaywebmerchantregistrationapi  
+**Framework**: Apple Pay Web Merchant Registration API  
 **Kind**: httpRequest
 
 Register a merchant and its corresponding set of fully qualified domains.
@@ -36,4 +36,4 @@ The request body you use to register merchants.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayWebMerchantRegistrationAPI/register-merchant)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepaywebmerchantregistrationapi/register-merchant)*

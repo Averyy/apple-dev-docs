@@ -8,7 +8,7 @@ A Boolean value that indicates whether the speech recognizer is currently availa
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 10.0+
 - macOS 10.15+
 - visionOS 1.0+
 
@@ -20,7 +20,7 @@ var isAvailable: Bool { get }
 
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), you may create new speech recognition tasks. When value of this property is [`false`](https://developer.apple.com/documentation/swift/false), speech recognition services are not available.
+When the value of this property is `true`, you may create new speech recognition tasks. When value of this property is `false`, speech recognition services are not available.
 
 ## See Also
 

@@ -1,0 +1,36 @@
+# configureEntity(_:hoverEffect:allowedInputTypes:collisionShapes:)
+
+**Framework**: RealityKit  
+**Kind**: method
+
+Apply a default configuration to the entity to enable to it for use with `ManipulationComponent`. This function applies an `InputTargetComponent`, `CollisionComponent`, and `HoverEffectComponent` all configured. Before calling this function the entity should have a loaded mesh asset. If `collisionShapes` is not set, the system will generate a collision mesh based on the entity’s bounding box. This function will not replace any pre-existing components of these types.
+
+**Availability**:
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+static func configureEntity(_ entity: Entity, hoverEffect: HoverEffectComponent.HoverEffect? = nil, allowedInputTypes: InputTargetComponent.InputType? = nil, collisionShapes: [ShapeResource]? = nil)
+```
+
+## Parameters
+
+- `entity`: The entity to configure.
+- `hoverEffect`: A replacement for the default   configured by the interaction.
+- `allowedInputTypes`: A replacement for the allowed input types configured by the interaction.
+- `collisionShapes`: A replacement for the generated collision shape based on the entity’s bounding box.
+
+## See Also
+
+- [var audioConfiguration: ManipulationComponent.AudioConfiguration](manipulationcomponent/audioconfiguration-swift.property.md)
+  The audio configuration to apply to the object over the course of the interaction. By default, the system applies standard audio for key moments of the interaction, such as when the interaction begins, a handoff occurs, or the object is released. To apply custom sounds, set the configuration to `none` and apply audio as needed using the various `ManipulationEvents` delivered to the scene.
+- [var dynamics: ManipulationComponent.Dynamics](manipulationcomponent/dynamics-swift.property.md)
+  The dynamics controlling the object’s movement and behaviors during the interaction.
+- [var releaseBehavior: ManipulationComponent.ReleaseBehavior](manipulationcomponent/releasebehavior-swift.property.md)
+  The behavior to apply to the object’s transform when it’s released. By default, the `releaseBehavior` is `.reset`, which will animate the object to its initial pose relative to its parent.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/manipulationcomponent/configureentity(_:hovereffect:allowedinputtypes:collisionshapes:))*

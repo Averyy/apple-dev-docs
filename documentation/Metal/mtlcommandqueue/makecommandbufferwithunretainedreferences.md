@@ -20,6 +20,10 @@ Returns a command buffer from the command queue that doesn’t maintain strong r
 func makeCommandBufferWithUnretainedReferences() -> (any MTLCommandBuffer)?
 ```
 
+## Mentions
+
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+
 #### Discussion
 
 Use this method to create a command buffer that doesn’t retain or release any of the resources it needs to run its commands.
@@ -29,8 +33,6 @@ Apps typically create command buffers that don’t maintain references to resour
 It’s your app’s responsibility to maintain strong references to all the resources the command buffer uses until it finishes running on the GPU.
 
 > ❗ **Important**:  Releasing a resource before a command buffer’s commands complete may trigger a runtime error or erratic behavior.
-
- Releasing a resource before a command buffer’s commands complete may trigger a runtime error or erratic behavior.
 
 This method sets the [`retainedReferences`](mtlcommandbuffer/retainedreferences.md) property to [`false`](https://developer.apple.com/documentation/swift/false) for the command buffer it creates.
 

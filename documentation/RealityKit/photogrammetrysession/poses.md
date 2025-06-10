@@ -25,6 +25,12 @@ struct Poses
 - [var urlsBySample: [Int : URL]](photogrammetrysession/poses/urlsbysample.md)
   Mapping from the sample ID to the image URL in the input folder corresponding to that sample ID. This simplifies the visualization of which image in the input folder corresponds to a given computed pose.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [PhotogrammetrySession.Result](photogrammetrysession/result.md)

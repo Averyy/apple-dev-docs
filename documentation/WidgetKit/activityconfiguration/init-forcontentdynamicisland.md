@@ -1,6 +1,6 @@
 # init(for:content:dynamicIsland:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: init
 
 Creates a configuration object for a Live Activity.

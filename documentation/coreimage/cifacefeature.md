@@ -1,7 +1,7 @@
 # CIFaceFeature
 
-**Framework**: Coreimage  
-**Kind**: cl
+**Framework**: Core Image  
+**Kind**: class
 
 Information about a face detected in a still or video image.
 
@@ -10,63 +10,70 @@ Information about a face detected in a still or video image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS 9.0+
+- tvOS ?+
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
-class CIFaceFeature : CIFeature
+class CIFaceFeature
 ```
 
 #### Overview
 
-> **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNDetectFaceRectanglesRequest`](https://developer.apple.com/documentation/vision/vndetectfacerectanglesrequest).
+> **Note**:  In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/Vision) framework replaces these classes for identifying and analyzing image features. See [`VNDetectFaceRectanglesRequest`](https://developer.apple.com/documentation/Vision/VNDetectFaceRectanglesRequest).
 
-The properties of a [`CIFaceFeature`](cifacefeature.md) object provide information about the face’s eyes and mouth. A face object in a video can also have properties that track its location over time, tracking ID and frame count.
+The properties of a `CIFaceFeature` object provide information about the face’s eyes and mouth. A face object in a video can also have properties that track its location over time, tracking ID and frame count.
 
 ## Topics
 
 ### Locating Faces
-- [var bounds: CGRect](cifacefeature/1438068-bounds.md)
+- [var bounds: CGRect](cifacefeature/bounds-swift.property.md)
   A rectangle indicating the position and dimensions of the face in image coordinates.
-- [var hasFaceAngle: Bool](cifacefeature/1438165-hasfaceangle.md)
+- [var hasFaceAngle: Bool](cifacefeature/hasfaceangle-swift.property.md)
   A Boolean value that indicates whether information about face rotation is available.
-- [var faceAngle: Float](cifacefeature/1437689-faceangle.md)
+- [var faceAngle: Float](cifacefeature/faceangle-swift.property.md)
   The rotation of the face.
 ### Identifying Facial Features
-- [var hasLeftEyePosition: Bool](cifacefeature/1437900-haslefteyeposition.md)
+- [var hasLeftEyePosition: Bool](cifacefeature/haslefteyeposition-swift.property.md)
   A Boolean value that indicates whether the detector found the face’s left eye.
-- [var hasRightEyePosition: Bool](cifacefeature/1438076-hasrighteyeposition.md)
+- [var hasRightEyePosition: Bool](cifacefeature/hasrighteyeposition-swift.property.md)
   A Boolean value that indicates whether the detector found the face’s right eye.
-- [var hasMouthPosition: Bool](cifacefeature/1437976-hasmouthposition.md)
+- [var hasMouthPosition: Bool](cifacefeature/hasmouthposition-swift.property.md)
   A Boolean value that indicates whether the detector found the face’s mouth.
-- [var leftEyePosition: CGPoint](cifacefeature/1437923-lefteyeposition.md)
+- [var leftEyePosition: CGPoint](cifacefeature/lefteyeposition-swift.property.md)
   The coordinates of the left eye, in image coordinates.
-- [var rightEyePosition: CGPoint](cifacefeature/1438213-righteyeposition.md)
+- [var rightEyePosition: CGPoint](cifacefeature/righteyeposition-swift.property.md)
   The coordinates of the right eye, in image coordinates
-- [var mouthPosition: CGPoint](cifacefeature/1438020-mouthposition.md)
+- [var mouthPosition: CGPoint](cifacefeature/mouthposition-swift.property.md)
   The coordinates of the mouth, in image coordinates
-- [var hasSmile: Bool](cifacefeature/1437882-hassmile.md)
+- [var hasSmile: Bool](cifacefeature/hassmile-swift.property.md)
   A Boolean value that indicates whether a smile is detected in the face.
-- [var leftEyeClosed: Bool](cifacefeature/1437630-lefteyeclosed.md)
+- [var leftEyeClosed: Bool](cifacefeature/lefteyeclosed-swift.property.md)
   A Boolean value that indicates whether a closed left eye is detected in the face.
-- [var rightEyeClosed: Bool](cifacefeature/1437615-righteyeclosed.md)
+- [var rightEyeClosed: Bool](cifacefeature/righteyeclosed-swift.property.md)
   A Boolean value that indicates whether a closed right eye is detected in the face.
 ### Tracking Distinct Faces in Video
-- [var hasTrackingID: Bool](cifacefeature/1437683-hastrackingid.md)
+- [var hasTrackingID: Bool](cifacefeature/hastrackingid-swift.property.md)
   A Boolean value that indicates whether the face object has a tracking ID.
-- [var trackingID: Int32](cifacefeature/1437709-trackingid.md)
+- [var trackingID: Int32](cifacefeature/trackingid-swift.property.md)
   The tracking identifier of the face object.
-- [var hasTrackingFrameCount: Bool](cifacefeature/1437731-hastrackingframecount.md)
+- [var hasTrackingFrameCount: Bool](cifacefeature/hastrackingframecount-swift.property.md)
   A Boolean value that indicates the face object has a tracking frame count.
-- [var trackingFrameCount: Int32](cifacefeature/1437953-trackingframecount.md)
+- [var trackingFrameCount: Int32](cifacefeature/trackingframecount-swift.property.md)
   The tracking frame count of the face.
 
 ## Relationships
 
 ### Inherits From
 - [CIFeature](cifeature.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

@@ -26,8 +26,6 @@ If the file is extended (if `offset` is beyond the current end of file), the add
 
 > ❗ **Important**:  This method raises [`fileHandleOperationException`](nsexceptionname/filehandleoperationexception.md) if called on a file handle representing a pipe or socket, if the file descriptor is closed, or if the operation failed.
 
- This method raises [`fileHandleOperationException`](nsexceptionname/filehandleoperationexception.md) if called on a file handle representing a pipe or socket, if the file descriptor is closed, or if the operation failed.
-
 ## Parameters
 
 - `offset`: The offset within the file that marks the new end of the file.

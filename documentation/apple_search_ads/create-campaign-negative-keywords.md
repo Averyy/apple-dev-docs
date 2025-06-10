@@ -1,6 +1,6 @@
 # Create Campaign Negative Keywords
 
-**Framework**: Apple_Search_Ads  
+**Framework**: Apple Search Ads  
 **Kind**: httpRequest
 
 Creates negative keywords for a campaign.

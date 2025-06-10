@@ -1,6 +1,6 @@
 # Timed metadata sample description
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 An atom that defines how to interpret timed metadata media samples.
 

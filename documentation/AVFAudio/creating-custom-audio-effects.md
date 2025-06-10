@@ -1,6 +1,6 @@
 # Creating custom audio effects
 
-**Framework**: Avfaudio
+**Framework**: AVFAudio
 
 Add custom audio-effect processing to apps like Logic Pro X and GarageBand by creating Audio Unit (AU) plug-ins.
 
@@ -315,4 +315,4 @@ Finally, in the extension’s `Info.plist` file, set the Audio Unit’s factory 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFAudio/creating-custom-audio-effects)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfaudio/creating-custom-audio-effects)*

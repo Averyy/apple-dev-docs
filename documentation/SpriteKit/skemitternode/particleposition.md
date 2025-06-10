@@ -17,6 +17,7 @@ The average starting position for a particle.
 ## Declaration
 
 ```swift
+@MainActor
 var particlePosition: CGPoint { get set }
 ```
 

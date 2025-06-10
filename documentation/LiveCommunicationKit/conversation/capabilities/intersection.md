@@ -5,6 +5,13 @@
 
 Returns a new option set with only the elements contained in both this set and the given set.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift
@@ -19,7 +26,7 @@ A new option set with only the elements contained in both this set and `other`.
 
 This example uses the `intersection(_:)` method to limit the available shipping options to what can be used with a PO Box destination.
 
-```swift
+```None
 // Can only ship standard or priority to PO Boxes
 let poboxShipping: ShippingOptions = [.standard, .priority]
 let memberShipping: ShippingOptions =

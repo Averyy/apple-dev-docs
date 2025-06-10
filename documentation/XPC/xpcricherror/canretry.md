@@ -1,6 +1,6 @@
 # canRetry
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: property
 
 A Boolean that indicates whether you can retry the operation that caused the error.

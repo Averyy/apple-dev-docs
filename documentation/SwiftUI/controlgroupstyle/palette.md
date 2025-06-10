@@ -1,6 +1,6 @@
 # palette
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 A control group style that presents its content as a palette.
@@ -69,4 +69,4 @@ To apply this style to a control group, or to a view that contains control group
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/controlgroupstyle/palette)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/controlgroupstyle/palette)*

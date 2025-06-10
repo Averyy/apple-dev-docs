@@ -1,6 +1,6 @@
 # MPSImageHistogramEqualization
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: cl
 
 A filter that equalizes the histogram of an image.

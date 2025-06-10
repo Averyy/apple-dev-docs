@@ -1,6 +1,6 @@
 # webExtensionController
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The extension controller this context is loaded in, otherwise `nil` if it isn’t loaded.

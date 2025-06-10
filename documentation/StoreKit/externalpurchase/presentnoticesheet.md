@@ -45,8 +45,6 @@ try await ExternalPurchase.presentNoticeSheet()
 
 > ❗ **Important**:  Record and use the token from the result to report to Apple the customer’s external purchases. For more information on reporting, see [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
 
- Record and use the token from the result to report to Apple the customer’s external purchases. For more information on reporting, see [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
-
 This method throws a [`StoreKitError`](storekiterror.md) in any of the following conditions:
 
 - Your app doesn’t have the [`com.apple.developer.storekit.external-purchase`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase) entitlement.

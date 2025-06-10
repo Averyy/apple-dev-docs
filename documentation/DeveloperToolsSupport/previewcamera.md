@@ -42,6 +42,7 @@ For example, you can create custom cameras from the top, leading, and front view
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

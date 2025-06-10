@@ -8,10 +8,10 @@ A type describing a value returned from a dynamic options provider, plus informa
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -32,6 +32,12 @@ struct IntentItem<Value> where Value : _IntentValue
 - [var value: Value](intentitem/value.md)
 ### Enumerations
 - [IntentItem.Builder](intentitem/builder.md)
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -18,7 +18,7 @@ class let willResizeSubviewsNotification: NSNotification.Name
 
 The notification object consists of the [`NSSplitView`](nssplitview.md) object about to resize its subviews.
 
-The [`userInfo`](https://developer.apple.com/documentation/foundation/notification/1779652-userinfo) dictionary includes the `NSSplitViewDividerIndex` key that contains the index of the divider that the split view or the user moves. If the system sends the notification because the user drags a divider, the dictionary also includes the `NSSplitViewUserResizeKey` key with a value of `1`.
+The [`userInfo`](https://developer.apple.com/documentation/Foundation/Notification/userInfo) dictionary includes the `NSSplitViewDividerIndex` key that contains the index of the divider that the split view or the user moves. If the system sends the notification because the user drags a divider, the dictionary also includes the `NSSplitViewUserResizeKey` key with a value of `1`.
 
 ## See Also
 

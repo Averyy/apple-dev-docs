@@ -15,6 +15,7 @@ Create and manage subscription offers for auto-renewable subscriptions, includin
   Deactivate a subscription offer that has offer codes for an auto-renewable subscription.
 - [List All Subscription Offer Code Prices](get-v1-subscriptionoffercodes-_id_-prices.md)
   Get a list of price tiers for a subscription offer code.
+- [GET /v1/subscriptionOfferCodes/{id}/relationships/prices](get-v1-subscriptionoffercodes-_id_-relationships-prices.md)
 ### Managing One-Time Use Offer Codes
 - [Create One-Time Use Offer Codes](post-v1-subscriptionoffercodeonetimeusecodes.md)
   Create one-time use codes for an auto-renewable subscription offer.
@@ -26,11 +27,13 @@ Create and manage subscription offers for auto-renewable subscriptions, includin
   Get details about a one-time use code for a specific subscription offer for an auto-renewable subscription.
 - [List One-Time Use Offer Code Values](get-v1-subscriptionoffercodeonetimeusecodes-_id_-values.md)
   Get a list of one-time use offer codes for an auto-renewable subscription in CSV format.
+- [GET /v1/subscriptionOfferCodes/{id}/relationships/oneTimeUseCodes](get-v1-subscriptionoffercodes-_id_-relationships-onetimeusecodes.md)
 ### Managing Custom Offer Codes
 - [Create Custom Offer Codes](post-v1-subscriptionoffercodecustomcodes.md)
   Create custom offer codes for an auto-renewable subscription offer.
 - [List All Custom Offer Codes for an Auto-Renewable Subscription](get-v1-subscriptionoffercodes-_id_-customcodes.md)
   Get details about a custom code for a specific subscription offer for an auto-renewable subscription.
+- [GET /v1/subscriptionOfferCodes/{id}/relationships/customCodes](get-v1-subscriptionoffercodes-_id_-relationships-customcodes.md)
 - [Read Custom Offer Code Information](get-v1-subscriptionoffercodecustomcodes-_id_.md)
   Get details about a specific offer code for an auto-renewable subscription.
 - [Deactivate Custom Offer Codes](patch-v1-subscriptionoffercodecustomcodes-_id_.md)
@@ -55,6 +58,10 @@ Create and manage subscription offers for auto-renewable subscriptions, includin
 - [object SubscriptionOfferCodeOneTimeUseCodeUpdateRequest](subscriptionoffercodeonetimeusecodeupdaterequest.md)
 - [object SubscriptionOfferCodePriceInlineCreate](subscriptionoffercodepriceinlinecreate.md)
 - [object SubscriptionOfferCodeUpdateRequest](subscriptionoffercodeupdaterequest.md)
+- [object SubscriptionOfferCodeCustomCodesLinkagesResponse](subscriptionoffercodecustomcodeslinkagesresponse.md)
+- [object SubscriptionOfferCodeOneTimeUseCodeValuesLinkageResponse](subscriptionoffercodeonetimeusecodevalueslinkageresponse.md)
+- [object SubscriptionOfferCodeOneTimeUseCodesLinkagesResponse](subscriptionoffercodeonetimeusecodeslinkagesresponse.md)
+- [object SubscriptionOfferCodePricesLinkagesResponse](subscriptionoffercodepriceslinkagesresponse.md)
 
 ## See Also
 

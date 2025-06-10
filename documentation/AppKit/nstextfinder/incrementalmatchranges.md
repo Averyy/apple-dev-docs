@@ -20,7 +20,7 @@ This array is updated periodically on the main queue as the incremental search o
 
 If no incremental search is active, or there are no matches found, this array will be empty. If an incremental search is currently in progress, but not yet complete, this will return all the ranges found so far.
 
-This array is key-value observing compliant and can be observed to know when to update your highlights. When [`new`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/1417881-new) and [`old`](https://developer.apple.com/documentation/foundation/nskeyvalueobservingoptions/1414041-old) options are used, the key-value observing change dictionary provides the ranges (and their indexes) that are added or removed. This allows the invalidation of the minimal region necessary to sync highlights with the receiver’s results.
+This array is key-value observing compliant and can be observed to know when to update your highlights. When [`new`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/new) and [`old`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/old) options are used, the key-value observing change dictionary provides the ranges (and their indexes) that are added or removed. This allows the invalidation of the minimal region necessary to sync highlights with the receiver’s results.
 
 ## See Also
 

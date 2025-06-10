@@ -3,6 +3,13 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: method
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift

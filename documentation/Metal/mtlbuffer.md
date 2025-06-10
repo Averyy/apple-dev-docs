@@ -26,10 +26,10 @@ protocol MTLBuffer : MTLResource
 - [Setting Resource Storage Modes](setting-resource-storage-modes.md)
 - [Synchronizing a Managed Resource in macOS](synchronizing-a-managed-resource-in-macos.md)
 - [Converting a GPU’s Counter Data into a Readable Format](converting-a-gpus-counter-data-into-a-readable-format.md)
-- [Improving Ray-Tracing Data Access Using Per-Primitive Data](improving-ray-tracing-data-access-using-per-primitive-data.md)
-- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
-- [Indexing Argument Buffers](indexing-argument-buffers.md)
 - [Specifying Drawing and Dispatch Arguments Indirectly](specifying-drawing-and-dispatch-arguments-indirectly.md)
+- [Indexing Argument Buffers](indexing-argument-buffers.md)
+- [Simplifying GPU Resource Management with Residency Sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Improving Ray-Tracing Data Access Using Per-Primitive Data](improving-ray-tracing-data-access-using-per-primitive-data.md)
 
 #### Overview
 
@@ -69,6 +69,10 @@ If you create a buffer with a managed resource storage mode ([`MTLStorageMode.ma
   The buffer on another GPU that the buffer was created from, if any.
 ### Instance Properties
 - [var gpuAddress: UInt64](mtlbuffer/gpuaddress.md)
+- [var sparseBufferTier: MTLBufferSparseTier](mtlbuffer/sparsebuffertier.md)
+### Instance Methods
+- [func makeTensor(descriptor: MTLTensorDescriptor, offset: Int) throws -> any MTLTensor](mtlbuffer/maketensor(descriptor:offset:).md)
+  Creates a tensor that shares storage with this buffer.
 
 ## Relationships
 

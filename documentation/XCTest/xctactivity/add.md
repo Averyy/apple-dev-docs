@@ -1,6 +1,6 @@
 # add(_:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method  
 **Required**: Yes
 

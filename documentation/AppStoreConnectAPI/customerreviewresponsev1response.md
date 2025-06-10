@@ -22,6 +22,8 @@ object CustomerReviewResponseV1Response
   The request body to use to create a response to a customer review.
 - [object CustomerReview](customerreview.md)
   The data structure that represents a Customer Reviews resource.
+- [object AppCustomerReviewsLinkagesResponse](appcustomerreviewslinkagesresponse.md)
+- [object CustomerReviewResponseLinkageResponse](customerreviewresponselinkageresponse.md)
 
 
 ---

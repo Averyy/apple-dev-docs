@@ -1,6 +1,6 @@
 # WKWebExtensionContext.PermissionStatus.grantedImplicitly
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates that the permission was implicitly granted because of another explicitly granted permission.

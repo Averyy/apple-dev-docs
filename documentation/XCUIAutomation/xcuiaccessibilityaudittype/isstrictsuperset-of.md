@@ -1,6 +1,6 @@
 # isStrictSuperset(of:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Returns a Boolean value that indicates whether this set is a strict superset of the given set.

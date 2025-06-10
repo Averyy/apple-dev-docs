@@ -17,6 +17,7 @@ Removes all of the node’s children.
 ## Declaration
 
 ```swift
+@MainActor
 func removeAllChildren()
 ```
 

@@ -1,6 +1,6 @@
 # Customizing a document-based app’s launch experience
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Add unique elements to your app’s document launch scene.
 
@@ -163,4 +163,4 @@ override func viewDidLoad() {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/customizing-a-document-based-app-s-launch-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/customizing-a-document-based-app-s-launch-experience)*

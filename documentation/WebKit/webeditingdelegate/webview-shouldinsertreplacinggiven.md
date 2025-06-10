@@ -1,6 +1,6 @@
 # webView(_:shouldInsert:replacing:given:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns whether the user should be allowed to insert a node in place of a range of content.

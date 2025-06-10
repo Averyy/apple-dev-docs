@@ -1,6 +1,6 @@
 # DOM_DOM_DELTA_PAGE
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

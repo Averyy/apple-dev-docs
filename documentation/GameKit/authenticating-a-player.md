@@ -12,30 +12,32 @@ In the GameKit framework, you use player objects to post scores, award achieveme
 
 Before you access any Game Center data, you must verify that the local player signed in to Game Center on the device. Check if the player has any account restrictions and adjust your game accordingly. On Apple TV, your game can also support the ability to switch between user accounts.
 
-##### Authenticate the Local Player
+##### Initialize the Local Player
 
-In your game, you need to authenticate the local player before you can use any GameKit APIs and Game Center services. Game Center verifies the credentials of the player and ensures their account is ready for use. Game Center also checks whether you configured your game for Game Center.
+In your game, you need to initialize the local player before you can use any GameKit APIs and Game Center services. Game Center verifies the credentials of the player and ensures their account is ready for use. Game Center also checks whether you configured your game for Game Center.
 
-To authenticate the user, set the authentication handler ([`authenticateHandler`](gklocalplayer/authenticatehandler.md)) on the shared instance of [`GKLocalPlayer`](gklocalplayer.md) that represents the player of your game as in:
+To initialize the user, set the handler ([`authenticateHandler`](gklocalplayer/authenticatehandler.md)) on the shared instance of [`GKLocalPlayer`](gklocalplayer.md) that represents the player of your game as in:
 
 ```swift
 GKLocalPlayer.local.authenticateHandler = { viewController, error in
-   // Handle the authorization callbacks.
+   // Handle the initialization callbacks.
 }
 ```
 
-GameKit calls the authentication handler, possibly several times, for the following cases:
+> **Note**: You use the handler to initialize Game Center. If you need to authenticate a person with your own server, continue the flow with `GKLocalPlayer/fetchitems(foridentityverificationsignature:)`.
 
-- If the local player needs to perform some action, GameKit passes a view controller that you must present to the player to complete the authentication.
+GameKit calls the handler, possibly several times, for the following cases:
+
+- If the local player needs to perform some action, GameKit passes a view controller that you must present to the player to complete initialization.
 - If the player successfully signs in, GameKit sets the local player’s [`isAuthenticated`](gklocalplayer/isauthenticated.md) property to [`true`](https://developer.apple.com/documentation/swift/true) and calls the handler again, this time passing `nil` for both the view controller and error parameters. You can then start the game.
-- If the player decides not to sign in or create a Game Center account, GameKit sets the local player’s [`isAuthenticated`](gklocalplayer/isauthenticated.md) property to [`false`](https://developer.apple.com/documentation/swift/false) and calls the handler again by passing an error that indicates the reason the player isn’t authenticated. In this case, disable Game Center in your game.
-- If the local player previously signed in on the device when you set the authentication handler, GameKit sets the local player’s [`isAuthenticated`](gklocalplayer/isauthenticated.md) property to [`true`](https://developer.apple.com/documentation/swift/true) and passes `nil` for both the view controller and error parameters, and you can start the game.
+- If the player decides not to sign in or create a Game Center account, GameKit sets the local player’s [`isAuthenticated`](gklocalplayer/isauthenticated.md) property to [`false`](https://developer.apple.com/documentation/swift/false) and calls the handler again by passing an error that indicates the reason the player isn’t available. In this case, disable Game Center in your game.
+- If the local player previously signed in on the device when you set the handler, GameKit sets the local player’s [`isAuthenticated`](gklocalplayer/isauthenticated.md) property to [`true`](https://developer.apple.com/documentation/swift/true) and passes `nil` for both the view controller and error parameters, and you can start the game.
 
 ##### Check for Restrictions
 
 Before starting a game, check the local player’s account for restrictions and disable or hide features and content accordingly.
 
-Check if there are any restrictions in the authentication handler when the player signs in to Game Center. In addition to checking whether the player is underage ([`isUnderage`](gklocalplayer/isunderage.md)) or not allowed to play multiplayer games ([`isMultiplayerGamingRestricted`](gklocalplayer/ismultiplayergamingrestricted.md)), check for any communication restrictions ([`isPersonalizedCommunicationRestricted`](gklocalplayer/ispersonalizedcommunicationrestricted.md)).
+Check if there are any restrictions in the handler when the player signs in to Game Center. In addition to checking whether the player is underage ([`isUnderage`](gklocalplayer/isunderage.md)) or not allowed to play multiplayer games ([`isMultiplayerGamingRestricted`](gklocalplayer/ismultiplayergamingrestricted.md)), check for any communication restrictions ([`isPersonalizedCommunicationRestricted`](gklocalplayer/ispersonalizedcommunicationrestricted.md)).
 
 ```swift
 GKLocalPlayer.local.authenticateHandler = { viewController, error in
@@ -44,12 +46,12 @@ GKLocalPlayer.local.authenticateHandler = { viewController, error in
         return
     }
     if error != nil {
-        // Player could not be authenticated.
+        // Player is not available
         // Disable Game Center in the game.
         return        
     }
     
-    // Player was successfully authenticated.
+    // Player is available.
     // Check if there are any player restrictions before starting the game.
             
     if GKLocalPlayer.local.isUnderage {
@@ -80,11 +82,11 @@ To support user switching, add the User Management capability to your app in Xco
 
 When the user switches on Apple TV, the system relaunches your game. To save game data if the users switch while your game is in the foreground, implement the [`applicationWillTerminate(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationWillTerminate(_:)) method. To save data when the user switches to another app, implement the [`applicationWillResignActive(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationWillResignActive(_:)) method.
 
-When the system relaunches your game, GameKit passes the new user to the authentication handler. For more information on user switching, see [`Personalizing Your App for Each User on Apple TV`](https://developer.apple.com/documentation/TVServices/personalizing-your-app-for-each-user-on-apple-tv).
+When the system relaunches your game, GameKit passes the new user to the handler you use to initialize Game Center. For more information on user switching, see [`Personalizing Your App for Each User on Apple TV`](https://developer.apple.com/documentation/TVServices/personalizing-your-app-for-each-user-on-apple-tv).
 
 ## See Also
 
-- [Enabling and configuring Game Center](enabling-and-configuring-game-center.md)
+- [Initializing and configuring Game Center](initializing-and-configuring-game-center.md)
   Enable Game Center in your Xcode project and configure features in App Store Connect.
 - [Improving the player experience for games with large downloads](improving-the-player-experience-for-games-with-large-downloads.md)
   Provide ample content in your base installation and then use on-demand resources and the Background Assets API to handle additional content.

@@ -1,6 +1,6 @@
 # vmnet Functions
 
-**Framework**: Vmnet
+**Framework**: vmnet
 
 ## Topics
 

@@ -1,6 +1,6 @@
 # Adopting the system text cursor in custom text views
 
-**Framework**: Appkit
+**Framework**: AppKit
 
 Incorporate the system text cursor into your custom text UI in AppKit.
 
@@ -122,4 +122,4 @@ If you implement custom text UI in a UIKit app, see [`Adopting system selection 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/adopting-the-system-text-cursor-in-custom-text-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/adopting-the-system-text-cursor-in-custom-text-views)*

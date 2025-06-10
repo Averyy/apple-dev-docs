@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-protocol MTLBinding : NSObjectProtocol
+protocol MTLBinding : NSObjectProtocol, Sendable
 ```
 
 ## Topics
@@ -31,9 +31,12 @@ protocol MTLBinding : NSObjectProtocol
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Inherited By
 - [MTLBufferBinding](mtlbufferbinding.md)
 - [MTLObjectPayloadBinding](mtlobjectpayloadbinding.md)
+- [MTLTensorBinding](mtltensorbinding.md)
 - [MTLTextureBinding](mtltexturebinding.md)
 - [MTLThreadgroupBinding](mtlthreadgroupbinding.md)
 

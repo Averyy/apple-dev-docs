@@ -1,6 +1,6 @@
 # WeatherCondition.cloudy
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Cloudy, overcast conditions.

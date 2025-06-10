@@ -28,8 +28,6 @@ If [`false`](https://developer.apple.com/documentation/swift/false), your app is
 
 > ❗ **Important**:  Releasing a resource before a command buffer’s commands complete may cause a runtime error or erratic behavior.
 
- Releasing a resource before a command buffer’s commands complete may cause a runtime error or erratic behavior.
-
 
 ---
 

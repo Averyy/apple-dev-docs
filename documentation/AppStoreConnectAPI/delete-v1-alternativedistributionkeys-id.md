@@ -24,6 +24,9 @@ Remove an alternative distribution key from your account.
   List the alternative distribution key for your account.
 - [Read alternative distribution key information](get-v1-alternativedistributionkeys-_id_.md)
   Read the public key information for a specific alternative distribution key.
+- [GET /v1/apps/{id}/relationships/alternativeDistributionKey](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
+- [Read an app’s alternative distribution key](get-v1-apps-_id_-alternativedistributionkey.md)
+  Get the alternative distribution keys for a specific app.
 
 
 ---

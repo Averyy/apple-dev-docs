@@ -28,6 +28,8 @@ enum Code
   The session encountered an unknown error.
 - [AEAssessmentError.Code.unsupportedPlatform](aeassessmenterror/code/unsupportedplatform.md)
   The feature isn’t supported on this platform.
+### Enumeration Cases
+- [AEAssessmentError.Code.requiredParticipantsNotAvailable](aeassessmenterror/code/requiredparticipantsnotavailable.md)
 ### Initializers
 - [init?(rawValue: Int)](aeassessmenterror/code/init(rawvalue:).md)
 
@@ -39,6 +41,7 @@ enum Code
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

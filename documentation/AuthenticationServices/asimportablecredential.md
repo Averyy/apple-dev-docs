@@ -6,11 +6,11 @@
 A credential for use in import and export.
 
 **Availability**:
-- iOS 18.2+
-- iPadOS 18.2+
-- Mac Catalyst 18.2+
-- macOS 15.2+
-- visionOS 2.2+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -28,7 +28,7 @@ A credential represents a piece of secure information associated with an item. `
 - Note
 - Credit card
 
-This type is a representation of `Credential` as defined in the Credential Exchange Format (CXF) specification. You can supply a JSON representation of a CXF `Credential` to initialize an instance of this struct by using a [`JSONDecoder`](https://developer.apple.com/documentation/Foundation/JSONDecoder) and calling [`decode(_:from:)`](https://developer.apple.com/documentation/foundation/jsondecoder/2895189-decode).
+This type is a representation of `Credential` as defined in the Credential Exchange Format (CXF) specification. You can supply a JSON representation of a CXF `Credential` to initialize an instance of this struct by using a [`JSONDecoder`](https://developer.apple.com/documentation/Foundation/JSONDecoder) and calling [`decode(_:from:)`](https://developer.apple.com/documentation/Foundation/JSONDecoder/decode(_:from:)).
 
 ## Topics
 
@@ -55,6 +55,35 @@ This type is a representation of `Credential` as defined in the Credential Excha
   A credit card credential.
 - [ASImportableCredential.CreditCard](asimportablecredential/creditcard.md)
   A type to represent credit card information.
+### Structures
+- [ASImportableCredential.APIKey](asimportablecredential/apikey.md)
+  A representation of APIKey as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-wd-20240522.html)
+- [ASImportableCredential.Address](asimportablecredential/address.md)
+  A representation of Address as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-wd-20240522.html) This represents a physical address.
+- [ASImportableCredential.DriversLicense](asimportablecredential/driverslicense.md)
+  A representation of DriversLicense as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-wd-20240522.html)
+- [ASImportableCredential.GeneratedPassword](asimportablecredential/generatedpassword.md)
+  A representation of GeneratedPassword as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-wd-20240522.html) This represents a machine-generated password.
+- [ASImportableCredential.IdentityDocument](asimportablecredential/identitydocument.md)
+  A representation of IdentityDocument as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-wd-20240522.html) This represents any kind of document that can be used for identification.
+- [ASImportableCredential.Passport](asimportablecredential/passport.md)
+  A representation of Passport as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-wd-20240522.html) This represents a passport document.
+- [ASImportableCredential.PersonName](asimportablecredential/personname.md)
+  A representation of PersonName as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-wd-20240522.html) This represents a person’s name.
+- [ASImportableCredential.SSHKey](asimportablecredential/sshkey.md)
+  A representation of SSHKey as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-wd-20240522.html)
+- [ASImportableCredential.WiFi](asimportablecredential/wifi.md)
+  A representation of Wi-Fi Passphrase as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-wd-20240522.html) This represents a credential for a WiFi network..
+### Enumeration Cases
+- [case address(ASImportableCredential.Address)](asimportablecredential/address(_:).md)
+- [case apiKey(ASImportableCredential.APIKey)](asimportablecredential/apikey(_:).md)
+- [case driversLicense(ASImportableCredential.DriversLicense)](asimportablecredential/driverslicense(_:).md)
+- [case generatedPassword(ASImportableCredential.GeneratedPassword)](asimportablecredential/generatedpassword(_:).md)
+- [case identityDocument(ASImportableCredential.IdentityDocument)](asimportablecredential/identitydocument(_:).md)
+- [case passport(ASImportableCredential.Passport)](asimportablecredential/passport(_:).md)
+- [case personName(ASImportableCredential.PersonName)](asimportablecredential/personname(_:).md)
+- [case sshKey(ASImportableCredential.SSHKey)](asimportablecredential/sshkey(_:).md)
+- [case wifi(ASImportableCredential.WiFi)](asimportablecredential/wifi(_:).md)
 
 ## Relationships
 
@@ -64,19 +93,16 @@ This type is a representation of `Credential` as defined in the Credential Excha
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [var id: Data](asimportableitem/id.md)
   A unique identifier for the item.
-- [var created: Date](asimportableitem/created.md)
+- [var created: Date?](asimportableitem/created.md)
   The item’s creation date and time.
-- [var lastModified: Date](asimportableitem/lastmodified.md)
+- [var lastModified: Date?](asimportableitem/lastmodified.md)
   The item’s last modified date and time.
-- [var type: ASImportableItem.ItemType](asimportableitem/type.md)
-  The type of the item.
-- [ASImportableItem.ItemType](asimportableitem/itemtype.md)
-  The type of an importable item.
 - [var subtitle: String?](asimportableitem/subtitle.md)
   A subtitle or description of this item, if any.
 - [var credentials: [ASImportableCredential]](asimportableitem/credentials.md)

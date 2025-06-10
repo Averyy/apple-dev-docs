@@ -20,9 +20,7 @@ static let workoutEffortScore: HKQuantityTypeIdentifier
 ## See Also
 
 - [static let bleedingAfterPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingafterpregnancy.md)
-  A category type that records bleeding after pregnancy as a symptom.
 - [static let bleedingDuringPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingduringpregnancy.md)
-  A category type that records bleeding during pregnancy as a symptom.
 - [static let sleepApneaEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/sleepapneaevent.md)
 - [let HKDevicePropertyKeyFirmwareVersion: String](hkdevicepropertykeyfirmwareversion.md)
   The device’s firmware version.

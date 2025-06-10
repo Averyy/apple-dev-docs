@@ -23,8 +23,6 @@ Use the DriverKit SDK to create custom drivers and services for the following ty
 
 > ❗ **Important**:  DriverKit doesn’t support USB devices that manipulate audio or that communicate wirelessly over Bluetooth or Wi-Fi. For those types of devices, create a kernel extension using [`sys_iokit`](sys_iokit.md).
 
- DriverKit doesn’t support USB devices that manipulate audio or that communicate wirelessly over Bluetooth or Wi-Fi. For those types of devices, create a kernel extension using [`sys_iokit`](sys_iokit.md).
-
 ##### Add a Driverkit Extension Target to Your App
 
 The delivery of a DriverKit extension requires a macOS app. You use the app to deliver the driver to your users. The app also registers the driver with the system.
@@ -40,8 +38,6 @@ Xcode provides a template for DriverKit extensions. To add one to your existing 
 Xcode adds the driver to your project and configures the build settings to install that driver inside the `Contents/Library/SystemExtensions` folder of your app’s bundle.
 
 > ❗ **Important**:  The system requires all DriverKit drivers to be in the `Contents/Library/SystemExtensions` folder of your app’s bundle, and fails to load drivers that aren’t there. If you create your driver separately from your app, be sure to configure your build scripts to place the driver in that specific location.
-
- The system requires all DriverKit drivers to be in the `Contents/Library/SystemExtensions` folder of your app’s bundle, and fails to load drivers that aren’t there. If you create your driver separately from your app, be sure to configure your build scripts to place the driver in that specific location.
 
 The default DriverKit template contains a C++ source file and an IOKit interface generator (`.iig`) header file to use as the starting point for your service. The template also contains a default entitlements file for you to populate with the entitlements your driver requires. For information on how to configure your driver’s entitlements, see [`Requesting Entitlements for DriverKit Development`](requesting-entitlements-for-driverkit-development.md).
 

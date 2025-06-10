@@ -1,6 +1,6 @@
 # setNodeCredentialsWithRecordType(_:authenticationType:authenticationItems:continueItems:context:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Sets the credentials for interaction with the record’s node using other types of authentication available to Open Directory.

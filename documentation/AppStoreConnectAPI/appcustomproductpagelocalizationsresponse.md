@@ -26,6 +26,8 @@ object AppCustomProductPageLocalizationsResponse
   A response that contains a single app custom product page resource.
 - [object AppCustomProductPageLocalizationUpdateRequest](appcustomproductpagelocalizationupdaterequest.md)
   The request body you use to update an app custom product page localization.
+- [object AppCustomProductPageLocalizationAppPreviewSetsLinkagesResponse](appcustomproductpagelocalizationapppreviewsetslinkagesresponse.md)
+- [object AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponse](appcustomproductpagelocalizationappscreenshotsetslinkagesresponse.md)
 
 
 ---

@@ -120,4 +120,4 @@ When submitting your app to the App Store, provide sufficient information for th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/preventing-insecure-network-connections)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/preventing-insecure-network-connections)*

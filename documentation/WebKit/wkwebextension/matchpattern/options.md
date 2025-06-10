@@ -1,6 +1,6 @@
 # WKWebExtension.MatchPattern.Options
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: struct
 
 Constants used by [`WKWebExtension.MatchPattern`](wkwebextension/matchpattern.md) to indicate matching options.
@@ -39,6 +39,7 @@ struct Options
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 

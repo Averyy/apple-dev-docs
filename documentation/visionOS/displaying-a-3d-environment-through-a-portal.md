@@ -1,6 +1,6 @@
 # Displaying a 3D environment through a portal
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Implement a portal window that displays a 3D environment and simulates entering a portal by using RealityKit.
 

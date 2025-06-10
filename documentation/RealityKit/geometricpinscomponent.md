@@ -10,6 +10,7 @@ A component that stores a sequence of geometric pins.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -20,7 +21,7 @@ struct GeometricPinsComponent
 
 #### Overview
 
-Add, inspect, and remove geometric pins that belong to the entity that owns an instance of `GeometricPinsComponent` by accessing its [`pins`](entity/pins.md) property.
+Add, inspect, and remove geometric pins that belong to the entity that owns an instance of `GeometricPinsComponent` by accessing its `Entity/pins` property.
 
 ## Topics
 
@@ -38,8 +39,6 @@ Add, inspect, and remove geometric pins that belong to the entity that owns an i
 ### Subscripts
 - [subscript(String) -> GeometricPin?](geometricpinscomponent/subscript(_:).md)
   Retrieves the pin by its name.
-### Default Implementations
-- [Component Implementations](geometricpinscomponent/component-implementations.md)
 
 ## Relationships
 
@@ -58,6 +57,8 @@ Add, inspect, and remove geometric pins that belong to the entity that owns an i
   A component that stores physics joints which RealityKit simulates.
 - [struct EntityGeometricPins](entitygeometricpins.md)
   A structure that wraps all geometric pins an entity owns.
+- [struct AttachedTransformComponent](attachedtransformcomponent.md)
+  A component that stores an optional source pin owned by this entity and a target pin which this entity is attached to
 
 
 ---

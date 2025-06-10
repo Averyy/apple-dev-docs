@@ -1,6 +1,6 @@
 # XCTestSuiteRun
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An object that collects information about a specific execution of a test suite.

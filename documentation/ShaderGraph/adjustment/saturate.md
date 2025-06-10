@@ -1,9 +1,17 @@
 # Saturate
 
-**Framework**: Shadergraph  
+**Framework**: ShaderGraph  
 **Kind**: subscript
 
 Adjusts the saturation of a color.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
 
 #### Parameter Types
 
@@ -11,15 +19,15 @@ Adjusts the saturation of a color.
 
 #### Discussion
 
-The Saturate node performs a linear interpolation between the incoming color value and the luminance of the incoming color value. Setting the value of the `Amount` parameter to `0` adjusts the output to a grayscale of the input equal to the value that the [`Luminance`](adjustment/luminance.md) would output.
+The `Saturate` node performs a linear interpolation between the incoming color value and the luminance of the incoming color value. Setting the value of the `Amount` parameter to `0` adjusts the output to a grayscale of the input equal to the value that the [`Luminance`](adjustment/luminance.md) outputs.
 
-> **Note**: The effect of this node isn’t equivalent to adjusting saturation with the [`HSV Adjust`](adjustment/hsv-adjust.md) node. The Saturate node takes into account a colorspace when processing its modifications.
+> **Note**: The effect of this node isn’t equivalent to adjusting saturation with the [`HSV Adjust`](adjustment/hsv-adjust.md) node. The `Saturate` node takes into account a colorspace when processing its modifications.
 
-Below is an example of a simple node graph that uses the Saturate node to modify the saturation of an image.
+Below is an example of a simple node graph that uses the Saturate node to modify the saturation of an image:
 
 ![None](https://docs-assets.developer.apple.com/published/53fe35cf80e429ddc0ea359e9d067a7c/SaturateGraph.png)
 
-Below, the resulting texture applies to a cube.
+Below, the resulting texture applies to a cube:
 
 ## See Also
 

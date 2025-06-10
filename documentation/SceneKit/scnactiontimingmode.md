@@ -9,10 +9,10 @@ Constants affecting the animation curve of an action, used by the [`timingMode`]
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS ?+
+- macOS 10.8+
+- tvOS 9.0+
 - visionOS 1.0+
-- watchOS 2.0+
+- watchOS 3.0+
 
 ## Declaration
 
@@ -42,6 +42,7 @@ enum SCNActionTimingMode
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

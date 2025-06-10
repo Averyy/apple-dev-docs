@@ -8,7 +8,7 @@ A textual representation of the specified speech in its entirety, as recognized 
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 13.1+
+- Mac Catalyst 10.0+
 - macOS 10.15+
 - visionOS 1.0+
 
@@ -32,10 +32,10 @@ An `SFTranscription` represents only a potential version of the speech. It might
 
 ## Topics
 
-### Transcribing the Utterances
+### Transcribing utterances
 - [var formattedString: String](sftranscription/formattedstring.md)
   The entire transcription of utterances, formatted into a single, user-displayable string.
-### Getting Individual Utterances
+### Getting individual utterances
 - [var segments: [SFTranscriptionSegment]](sftranscription/segments.md)
   An array of transcription segments that represent the parts of the transcription, as identified by the speech recognizer.
 ### Deprecated

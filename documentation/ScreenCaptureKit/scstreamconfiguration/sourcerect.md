@@ -1,6 +1,6 @@
 # sourceRect
 
-**Framework**: Screencapturekit  
+**Framework**: ScreenCaptureKit  
 **Kind**: property
 
 A rectangle that specifies the source area to capture.

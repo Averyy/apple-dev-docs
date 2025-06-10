@@ -6,12 +6,9 @@
 The communication service handler rules for this account.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- macOS 10.7+
+- iOS 10.0+
+- iPadOS 10.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,7 +18,7 @@ object CardDAV.CommunicationServiceRules
 
 ## Topics
 
-### Profiles
+### Objects
 - [object CardDAV.CommunicationServiceRules.DefaultServiceHandlers](carddav/communicationservicerules-data.dictionary/defaultservicehandlers-data.dictionary.md)
   A dictionary defining the default service handlers for this account.
 

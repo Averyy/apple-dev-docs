@@ -14,8 +14,6 @@ To prevent interruptions in your website’s Apple Pay service, your domain veri
 
 > ❗ **Important**:  As the expiration dates for certificates and domain verifications approach, Apple sends an email reminder to the Admin and the Account Holder of the Apple Developer Account. Ensure that your organization continually monitors the inbox of these users so you can renew certificates before they expire to avoid interruptions to your Apple Pay service.
 
- As the expiration dates for certificates and domain verifications approach, Apple sends an email reminder to the Admin and the Account Holder of the Apple Developer Account. Ensure that your organization continually monitors the inbox of these users so you can renew certificates before they expire to avoid interruptions to your Apple Pay service.
-
 ##### View Expiration Dates and Update Certificates
 
 You can view expiration dates and update your certificates on the Apple developer website by following these steps:
@@ -34,7 +32,7 @@ Domain verification expires on the same date that your domain’s SSL certificat
 - If you update the SSL certificate before it expires, Apple detects the renewed certificate and the domain remains verified. No further action is required on your part.
 - If the SSL certificate expires and is not replaced before expiring, you must redo domain verification in your Apple Developer Account. See [`Verify a Merchant Domain`](https://developer.apple.comhttps://help.apple.com/developer-account/#/dev1731126fb) for additional information.
 
-Make sure that the Apple servers — listed in [`Setting Up Your Server`](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server) — can access the URL you used to validate the merchant domain. If the URL is behind a proxy or redirect the Apple servers won’t be able to access it. The URL may be similar to `https://yourdomain.com/.well-known/apple-developer-merchantid-domain-association`.
+Make sure that the Apple servers — listed in [`Setting Up Your Server`](setting-up-your-server.md) — can access the URL you used to validate the merchant domain. If the URL is behind a proxy or redirect the Apple servers won’t be able to access it. The URL may be similar to `https://yourdomain.com/.well-known/apple-developer-merchantid-domain-association`.
 
 ## See Also
 

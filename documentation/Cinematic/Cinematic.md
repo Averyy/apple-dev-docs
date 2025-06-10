@@ -30,6 +30,8 @@ The Cinematic framework enables you to add professional-level editing and playba
 - [class CNRenderingSession](cnrenderingsession-1hzh8.md)
   An object representing the context in which rendering occurs.
 ### Editing
+- [Editing Spatial Audio with an audio mix](editing-spatial-audio-with-an-audio-mix.md)
+  Add Spatial Audio editing capabilities with the Audio Mix API in the Cinematic framework.
 - [struct CNDetection](cndetection-swift.struct.md)
   A structure that represents a detected subject, face, torso or pet at a particular time.
 - [struct CNDecision](cndecision-swift.struct.md)
@@ -53,6 +55,11 @@ The Cinematic framework enables you to add professional-level editing and playba
 - [Cinematic Enumerations](cinematic-enumerations.md)
 - [Cinematic Constants](cinematic-constants.md)
 - [Cinematic Data Types](cinematic-data-types.md)
+### Classes
+- [class CNAssetSpatialAudioInfo](cnassetspatialaudioinfo-7hdev.md)
+### Enumerations
+- [enum CNSpatialAudioContentType](cnspatialaudiocontenttype.md)
+- [enum CNSpatialAudioRenderingStyle](cnspatialaudiorenderingstyle.md)
 
 
 ---

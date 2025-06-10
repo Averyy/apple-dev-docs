@@ -1,6 +1,6 @@
 # shadowColor
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A string that contains the RGBa color value of shadows. 

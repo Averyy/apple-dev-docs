@@ -48,4 +48,4 @@ For information about how to migrate, including techniques for interoperating wi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/adoptingswift6)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/adoptingswift6)*

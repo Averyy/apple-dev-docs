@@ -48,7 +48,7 @@ Work with primitive values and other fundamental types used throughout Cocoa.
 - [struct NSEdgeInsets](nsedgeinsets.md)
   A description of the distance between the edges of two rectangles.
 ### Ranges
-- [typealias NSRange](nsrange.md)
+- [typealias NSRange](nsrange-swift.typealias.md)
   A structure used to describe a portion of a series, such as characters in a string or objects in an array.
 
 ## See Also

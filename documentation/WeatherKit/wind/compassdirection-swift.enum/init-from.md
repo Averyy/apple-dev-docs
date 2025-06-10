@@ -1,6 +1,6 @@
 # init(from:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: init
 
 Creates a new instance by decoding from the given decoder, when the type’s `RawValue` is `String`.

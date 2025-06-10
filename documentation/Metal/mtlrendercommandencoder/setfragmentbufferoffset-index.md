@@ -34,8 +34,6 @@ The command can also adjust the offset for an entry that you previously set with
 
 > 💡 **Tip**:  If you’re only updating an offset, this method is typically more efficient than rebinding a buffer or byte block with the methods above.
 
- If you’re only updating an offset, this method is typically more efficient than rebinding a buffer or byte block with the methods above.
-
 By default, the buffer at each index is `nil`.
 
 ## Parameters

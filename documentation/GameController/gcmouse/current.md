@@ -21,9 +21,9 @@ class var current: GCMouse? { get }
 
 ## See Also
 
-- [static let GCMouseDidBecomeCurrent: NSNotification.Name](../foundation/nsnotification/name/3626184-gcmousedidbecomecurrent.md)
+- [static let GCMouseDidBecomeCurrent: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCMouseDidBecomeCurrent.md)
   A notification that posts when a mouse becomes the most recent mouse that the user connects.
-- [static let GCMouseDidStopBeingCurrent: NSNotification.Name](../foundation/nsnotification/name/3626187-gcmousedidstopbeingcurrent.md)
+- [static let GCMouseDidStopBeingCurrent: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCMouseDidStopBeingCurrent.md)
   A notification that posts when a mouse stops being the most recent mouse that the user connects.
 
 

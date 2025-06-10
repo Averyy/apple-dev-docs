@@ -1,6 +1,6 @@
 # seeking
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A Boolean value that indicates whether the element is seeking. (read-only)

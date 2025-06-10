@@ -1,6 +1,6 @@
 # init(coder:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: init
 
 Creates an overlay view from data in a coder object.

@@ -23,9 +23,9 @@ class SKProduct
 ## Mentions
 
 - [Implementing promotional offers in your app](implementing-promotional-offers-in-your-app.md)
-- [Supporting Family Sharing in your app](supporting-family-sharing-in-your-app.md)
 - [Fetching product information from the App Store](fetching-product-information-from-the-app-store.md)
 - [Requesting a payment from the App Store](requesting-a-payment-from-the-app-store.md)
+- [Supporting Family Sharing in your app](supporting-family-sharing-in-your-app.md)
 
 #### Overview
 
@@ -89,6 +89,7 @@ class SKProduct
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

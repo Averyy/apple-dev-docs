@@ -1,6 +1,6 @@
 # AVCaptureVideoStabilizationMode.cinematicExtendedEnhanced
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: case
 
 A mode that stabilizes video using the enhanced extended cinematic stabilization algorithm.

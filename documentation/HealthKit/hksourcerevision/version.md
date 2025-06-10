@@ -1,6 +1,6 @@
 # version
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: property
 
 A string that identifies a particular version of the source.

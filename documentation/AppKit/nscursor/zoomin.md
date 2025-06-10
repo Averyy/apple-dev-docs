@@ -1,6 +1,6 @@
 # zoomIn
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 Returns the zoom-in cursor.
@@ -24,4 +24,4 @@ class var zoomIn: NSCursor { get }
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nscursor/zoomin)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nscursor/zoomin)*

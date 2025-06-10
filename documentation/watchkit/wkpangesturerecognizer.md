@@ -1,6 +1,6 @@
 # WKPanGestureRecognizer
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A gesture recognizer that interprets a touch event that moves around the screen.

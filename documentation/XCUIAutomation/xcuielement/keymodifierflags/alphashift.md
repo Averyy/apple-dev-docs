@@ -1,6 +1,6 @@
 # alphaShift
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The Caps Lock key in a combination keystroke.
@@ -24,8 +24,6 @@ static var alphaShift: XCUIElement.KeyModifierFlags { get }
 #### Discussion
 
 > ❗ **Important**:  Use [`capsLock`](xcuielement/keymodifierflags/capslock.md) instead.
-
- Use [`capsLock`](xcuielement/keymodifierflags/capslock.md) instead.
 
 ## See Also
 

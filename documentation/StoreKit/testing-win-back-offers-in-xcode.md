@@ -1,6 +1,6 @@
 # Testing win-back offers in Xcode
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Validate your app’s handling of win-back offers that you configure for the testing environment.
 
@@ -53,4 +53,4 @@ You can rerun the test without resetting any state values. Win-back offers that 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/testing-win-back-offers-in-xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/testing-win-back-offers-in-xcode)*

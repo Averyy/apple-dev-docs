@@ -10,6 +10,7 @@ A component that stores accessibility information for an entity.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -58,8 +59,6 @@ See [`Improving the Accessibility of RealityKit Apps`](improving-the-accessibili
 ### Enumerations
 - [AccessibilityComponent.RotorType](accessibilitycomponent/rotortype.md)
   A context-sensitive event that helps VoiceOver users find the next instance of a related element.
-### Default Implementations
-- [Component Implementations](accessibilitycomponent/component-implementations.md)
 
 ## Relationships
 

@@ -22,6 +22,9 @@ typedef enum { ... } ar_authorization_type_t;
   The authorization for camera access.
 - [ar_authorization_type_none](ar_authorization_type_t/ar_authorization_type_none.md)
   There isn’t an authorization type.
+### Enumeration Cases
+- [ar_authorization_type_accessory_tracking](ar_authorization_type_t/ar_authorization_type_accessory_tracking.md)
+  Authorization type used when requesting:
 
 ## See Also
 

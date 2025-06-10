@@ -144,6 +144,10 @@ BarMark(
 - [struct AnyChartContent](anychartcontent.md)
   A type-erased chart content.
 ### Instance Methods
+- [func accessibilityLabel(LocalizedStringResource) -> some ChartContent](chartcontent/accessibilitylabel(_:)-9tbjv.md)
+  Adds a label to the chart content that describes its contents.
+- [func accessibilityValue(LocalizedStringResource) -> some ChartContent](chartcontent/accessibilityvalue(_:)-4f8vo.md)
+  Adds a description of the value that the chart content contains.
 - [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, overflowResolution: AnnotationOverflowResolution, content: () -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:overflowresolution:content:)-1kiow.md)
   Annotates this mark or collection of marks with a view positioned relative to its bounds.
 - [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, overflowResolution: AnnotationOverflowResolution, content: (AnnotationContext) -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:overflowresolution:content:)-6w4p3.md)

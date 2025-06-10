@@ -131,4 +131,4 @@ To achieve the most accurate results from Vision’s human body pose-detection c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/detecting-human-body-poses-in-images)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/detecting-human-body-poses-in-images)*

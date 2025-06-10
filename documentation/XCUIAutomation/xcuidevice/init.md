@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: init
 
 Creates an instance that represents the current device.
@@ -9,12 +9,12 @@ Creates an instance that represents the current device.
 - iOS ?+
 - iPadOS ?+
 - Mac Catalyst ?+
-- macOS ?+
 - tvOS ?+
+- visionOS ?+
 - watchOS ?+
 - Xcode 16.3+
 - Unknown ?+ - Deprecated
-- visionOS ?+
+- macOS ?+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # SEQUENCE_OF_STRINGS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: tdef
 
 **Availability**:

@@ -10,6 +10,7 @@ Retrieves a Metal vertex buffer you can use to replace the contents of the speci
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

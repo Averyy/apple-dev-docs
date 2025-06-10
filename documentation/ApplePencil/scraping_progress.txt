@@ -1,4 +1,4 @@
 Completed scraping Apple Pencil!
-Total pages scraped: 1
+Total pages scraped: 4
 Pages skipped (unchanged): 1
 Pages failed: 0

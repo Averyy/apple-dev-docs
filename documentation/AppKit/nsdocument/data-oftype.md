@@ -1,6 +1,6 @@
 # data(ofType:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Creates and returns a data object that contains the contents of the document, formatted to a specified type.

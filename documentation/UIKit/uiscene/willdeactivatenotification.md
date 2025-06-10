@@ -21,7 +21,7 @@ class let willDeactivateNotification: NSNotification.Name
 
 #### Discussion
 
-UIKit posts this notification for temporary interruptions, such as when displaying system alerts. It also posts this notification before transitioning your app to the background state. UIKit places the scene object in the [`object`](https://developer.apple.com/documentation/foundation/nsnotification/1414469-object) property of the notification.
+UIKit posts this notification for temporary interruptions, such as when displaying system alerts. It also posts this notification before transitioning your app to the background state. UIKit places the scene object in the [`object`](https://developer.apple.com/documentation/Foundation/NSNotification/object) property of the notification.
 
 Use this notification to quiet your interface and prepare it to stop interacting with the user. Specifically, pause ongoing tasks, disable timers, and decrease frame rates or stop updating your interface altogether. Games should use this notification to pause the game. By the time your handler method returns, your app should be doing minimal work while it waits to transition to the background or to the foreground again.
 

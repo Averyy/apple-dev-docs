@@ -29,8 +29,6 @@ downloadTask.cancel { resumeDataOrNil in
 
 > ❗ **Important**:  Not all downloads can be resumed. See the discussion in [`cancel(byProducingResumeData:)`](urlsessiondownloadtask/cancel(byproducingresumedata:).md) for a list of conditions that must be met for a download to be resumable. Also, downloads that use a background configuration will handle resumption automatically, so manual resuming is only needed for non-background downloads.
 
- Not all downloads can be resumed. See the discussion in [`cancel(byProducingResumeData:)`](urlsessiondownloadtask/cancel(byproducingresumedata:).md) for a list of conditions that must be met for a download to be resumable. Also, downloads that use a background configuration will handle resumption automatically, so manual resuming is only needed for non-background downloads.
-
 ##### Store the Resume Data Object When a Download Fails
 
 You can also resume a download that has failed due to a temporary loss of connectivity, as when the user walks out of WiFi range.

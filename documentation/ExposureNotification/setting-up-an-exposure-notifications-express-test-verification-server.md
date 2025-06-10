@@ -1,6 +1,6 @@
 # Setting Up an Exposure Notifications Express Test Verification Server
 
-**Framework**: Exposurenotification
+**Framework**: Exposure Notification
 
 Validate positive diagnoses for app-less exposure notifications.
 
@@ -56,4 +56,4 @@ The test validation server responds to requests by returning JSON in the body of
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ExposureNotification/setting-up-an-exposure-notifications-express-test-verification-server)*
+*[View on Apple Developer](https://developer.apple.com/documentation/exposurenotification/setting-up-an-exposure-notifications-express-test-verification-server)*

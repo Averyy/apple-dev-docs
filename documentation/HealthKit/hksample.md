@@ -66,6 +66,7 @@ If the sample represents data over a duration, the start time must be earlier th
 - [HKCorrelation](hkcorrelation.md)
 - [HKDocumentSample](hkdocumentsample.md)
 - [HKElectrocardiogram](hkelectrocardiogram.md)
+- [HKMedicationDoseEvent](hkmedicationdoseevent.md)
 - [HKQuantitySample](hkquantitysample.md)
 - [HKScoredAssessment](hkscoredassessment.md)
 - [HKSeriesSample](hkseriessample.md)
@@ -83,6 +84,7 @@ If the sample represents data over a duration, the start time must be earlier th
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -34,6 +34,7 @@ The values correspond to the `ICAP_PLANARCHUNKY` formats as defined in the `TWAI
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

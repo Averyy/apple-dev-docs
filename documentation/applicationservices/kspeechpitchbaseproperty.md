@@ -1,6 +1,6 @@
 # kSpeechPitchBaseProperty
 
-**Framework**: Applicationservices  
+**Framework**: Application Services  
 **Kind**: data
 
 Get or set the speech channel’s baseline speech pitch.

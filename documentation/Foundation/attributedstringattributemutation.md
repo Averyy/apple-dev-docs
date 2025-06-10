@@ -37,6 +37,7 @@ protocol AttributedStringAttributeMutation
 ### Conforming Types
 - [AttributedString](attributedstring.md)
 - [AttributedSubstring](attributedsubstring.md)
+- [DiscontiguousAttributedSubstring](discontiguousattributedsubstring.md)
 
 ## See Also
 

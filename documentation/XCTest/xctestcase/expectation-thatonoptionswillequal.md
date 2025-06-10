@@ -1,6 +1,6 @@
 # expectation(that:on:options:willEqual:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Creates an expectation using key-value observing the test fulfills when the value of an observed property changes to an expected value.

@@ -10,8 +10,6 @@ If you notice any visual artifacts while running your app, such as missing geome
 
 > ❗ **Important**: Include source code when you capture a Metal workload because the shader debugger needs it to function correctly. For more information, see [`Building your project with embedded shader sources`](building-your-project-with-embedded-shader-sources.md).
 
-Include source code when you capture a Metal workload because the shader debugger needs it to function correctly. For more information, see [`Building your project with embedded shader sources`](building-your-project-with-embedded-shader-sources.md).
-
 ##### Debug Your Shader
 
 To begin debugging a shader, select the draw command or compute dispatch of interest in the Debug navigator. Then, click the Shader Debugger button in the debug bar to begin debugging any of the associated shaders for the currently bound pipeline state.
@@ -108,8 +106,6 @@ In addition to the selected pixel or thread, the shader debugger also shows the 
 
 > 💡 **Tip**: The region of interest appears in the Attachments viewer as a fluorescent orange square (see [`Inspecting the attachments of a draw command`](inspecting-the-attachments-of-a-draw-command.md)), and in the Geometry viewer as an orange vertex (see [`Inspecting the geometry of a draw command`](inspecting-the-geometry-of-a-draw-command.md)).
 
-The region of interest appears in the Attachments viewer as a fluorescent orange square (see [`Inspecting the attachments of a draw command`](inspecting-the-attachments-of-a-draw-command.md)), and in the Geometry viewer as an orange vertex (see [`Inspecting the geometry of a draw command`](inspecting-the-geometry-of-a-draw-command.md)).
-
 Use this rendering to visually check that the variable is the value you expect. For graphical data, the visualization can be easier to verify than numerical data alone. Move the pointer over a pixel or thread to see the variable value for it. Then, you can click the pixel or thread to select it. The Shader editor automatically changes the variables in the variables sidebar to reflect their values during the execution of the shader when using the newly selected pixel or thread.
 
 ![A screenshot of the value inspector when the pointer is hovering over a pixel.](https://docs-assets.developer.apple.com/published/3c1e9c009717c340f9119d284ba518fc/gputools-metal-debugger-sdp-value-inspect%402x.png)
@@ -131,8 +127,6 @@ After updating the captured frame, the shader debugger does the following:
 - Maintains your place in the captured frame, which provides an interactive environment to enhance your shader development and debugging.
 
 > ❗ **Important**: Changes to your shader source only exist within the shader debugger. Your original source code doesn’t change. If your shader results look correct after reloading the shader, make sure that you copy your changes to your original shader source code.
-
-Changes to your shader source only exist within the shader debugger. Your original source code doesn’t change. If your shader results look correct after reloading the shader, make sure that you copy your changes to your original shader source code.
 
 If your shader is producing correct results, but taking a long time to run, consider profiling your Metal workload and inspecting the shader source in the Shader editor. For more information, see [`Inspecting shaders`](inspecting-shaders.md).
 

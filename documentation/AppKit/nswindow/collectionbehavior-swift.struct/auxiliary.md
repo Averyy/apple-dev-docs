@@ -1,6 +1,6 @@
 # auxiliary
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The behavior marking this window as auxiliary for both Stage Manager and full screen.
@@ -34,4 +34,4 @@ Use this collection behavior for About or Settings windows as well as utility pa
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nswindow/collectionbehavior-swift.struct/auxiliary)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nswindow/collectionbehavior-swift.struct/auxiliary)*

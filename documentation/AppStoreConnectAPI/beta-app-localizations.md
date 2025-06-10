@@ -17,6 +17,7 @@ A `betaAppLocalization` resource represents one localized set of information abo
   Get localized beta app information for a specific app and locale.
 - [Read the App Information of a Beta App Localization](get-v1-betaapplocalizations-_id_-app.md)
   Get the app information associated with a specific beta app localization.
+- [GET /v1/betaAppLocalizations/{id}/relationships/app](get-v1-betaapplocalizations-_id_-relationships-app.md)
 ### Creating, Modifying, and Deleting Localizations
 - [Create a Beta App Localization](post-v1-betaapplocalizations.md)
   Create localized descriptive information for an app.
@@ -36,6 +37,7 @@ A `betaAppLocalization` resource represents one localized set of information abo
   The request body you use to update a Beta App Localization.
 - [object BetaAppLocalizationsResponse](betaapplocalizationsresponse.md)
   A response that contains a list of Beta App Localization resources.
+- [object BetaAppLocalizationAppLinkageResponse](betaapplocalizationapplinkageresponse.md)
 
 ## See Also
 

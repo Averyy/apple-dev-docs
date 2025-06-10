@@ -1,6 +1,6 @@
 # identifier
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An identifier that uniquely identifies a data store.

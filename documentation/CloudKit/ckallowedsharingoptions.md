@@ -39,6 +39,11 @@ Register an instance of this class with an [`NSItemProvider`](https://developer.
   An object that controls participant access options.
 - [struct CKSharingParticipantPermissionOption](cksharingparticipantpermissionoption.md)
   An object that controls participant permission options.
+### Instance Properties
+- [var allowsAccessRequests: Bool](ckallowedsharingoptions/allowsaccessrequests.md)
+  Default value is `NO`. If set, the system sharing UI will allow the user to configure whether access requests are enabled on the share.
+- [var allowsParticipantsToInviteOthers: Bool](ckallowedsharingoptions/allowsparticipantstoinviteothers.md)
+  Defaults to `NO`. If set, the system sharing UI will allow the user to choose whether added participants can invite others to the share. Shares with `.administrator` participants will be returned as read-only to devices running OS versions prior to the `.administrator` role being introduced. The `.administrator` participants on these read-only shares will be returned as `.privateUser`.
 
 ## Relationships
 
@@ -55,6 +60,7 @@ Register an instance of this class with an [`NSItemProvider`](https://developer.
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

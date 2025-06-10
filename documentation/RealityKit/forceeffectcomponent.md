@@ -1,6 +1,6 @@
 # ForceEffectComponent
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 A component that defines the forces that affect an entity, including custom forces that you define.
@@ -10,6 +10,7 @@ A component that defines the forces that affect an entity, including custom forc
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -78,8 +79,6 @@ entity.components.set(forceEffectComponent)
 ### Enumerations
 - [ForceEffectComponent.SimulationState](forceeffectcomponent/simulationstate-swift.enum.md)
   The simulation runtime states.
-### Default Implementations
-- [Component Implementations](forceeffectcomponent/component-implementations.md)
 
 ## Relationships
 
@@ -94,4 +93,4 @@ entity.components.set(forceEffectComponent)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/forceeffectcomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/forceeffectcomponent)*

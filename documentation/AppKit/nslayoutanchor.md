@@ -1,6 +1,6 @@
 # NSLayoutAnchor
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 A factory class for creating layout constraint objects using a fluent API.
@@ -84,4 +84,4 @@ For more information on the anchor properties, see [`bottomAnchor`](nsview/botto
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nslayoutanchor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nslayoutanchor)*

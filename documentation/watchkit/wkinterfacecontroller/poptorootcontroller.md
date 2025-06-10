@@ -1,6 +1,6 @@
 # popToRootController()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Pops all interface controllers except the app’s initial interface controller.

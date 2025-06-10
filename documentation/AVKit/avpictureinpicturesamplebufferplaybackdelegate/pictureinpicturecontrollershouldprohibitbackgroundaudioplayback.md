@@ -21,7 +21,7 @@ optional func pictureInPictureControllerShouldProhibitBackgroundAudioPlayback(_ 
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the delegate prohibits background audio playback; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+`true` if the delegate prohibits background audio playback; otherwise, `false`.
 
 #### Discussion
 

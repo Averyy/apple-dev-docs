@@ -25,7 +25,7 @@ Returns true if the PSKs were accessible, false otherwise.
 #### Discussion
 
 ```None
-  Get the PSKs supported by the local instance.
+ Get the PSKs supported by the local instance.
 ```
 
 ## Parameters

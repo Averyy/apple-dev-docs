@@ -82,6 +82,7 @@ For more information on how to use conditions, see Using POSIX Thread Locks in [
 - [NSLocking](nslocking.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

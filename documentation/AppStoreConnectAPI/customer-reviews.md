@@ -18,14 +18,18 @@ To manage your responses to the customers reviews, use the endpoints in [`Custom
 
 ## Topics
 
-### Getting Customer Reviews for an App or App Version
+### Getting customer reviews for an app or app version
 - [List All Customer Reviews for an App](get-v1-apps-_id_-customerreviews.md)
   Get a list of customer reviews for a specific app.
+- [GET /v1/apps/{id}/relationships/customerReviews](get-v1-apps-_id_-relationships-customerreviews.md)
 - [List All Customer Reviews for an App Store Version](get-v1-appstoreversions-_id_-customerreviews.md)
   Get a list of customer reviews for a specific version of your app.
-### Reading Customer Reviews
+### Reading customer reviews
 - [Read Customer Review Information](get-v1-customerreviews-_id_.md)
   Get information about a specific customer review, including the review content.
+### Reading review summariztions
+- [Read customer review summarizations](get-v1-apps-_id_-customerreviewsummarizations.md)
+  Get the customer review summarization for a specific app.
 ### Objects
 - [object CustomerReviewsResponse](customerreviewsresponse.md)
   A response that contains a list of Customer Reviews resources.
@@ -33,6 +37,11 @@ To manage your responses to the customers reviews, use the endpoints in [`Custom
   A response that contains a single Customer Review resource.
 - [object CustomerReview](customerreview.md)
   The data structure that represents a Customer Reviews resource.
+- [object AppCustomerReviewsLinkagesResponse](appcustomerreviewslinkagesresponse.md)
+- [object CustomerReviewSummarization](customerreviewsummarization.md)
+  The data structure that represents a customer review summarization resource.
+- [object CustomerReviewSummarizationsResponse](customerreviewsummarizationsresponse.md)
+  The data structure that represents a customer review summarizations response resource.
 
 ## See Also
 

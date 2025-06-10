@@ -1,6 +1,6 @@
 # pause()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Pauses the movie.

@@ -1,0 +1,25 @@
+# response
+
+**Framework**: WebKit  
+**Kind**: property
+
+The frame’s response.
+
+**Availability**:
+- iOS 18.4+
+- iPadOS 18.4+
+- Mac Catalyst ?+
+- macOS 15.4+
+- visionOS 2.4+
+
+## Declaration
+
+```swift
+@MainActor
+var response: URLResponse { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/webpage/navigationresponse/response)*

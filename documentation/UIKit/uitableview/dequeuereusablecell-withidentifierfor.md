@@ -34,8 +34,6 @@ Call this method only from the [`tableView(_:cellForRowAt:)`](uitableviewdatasou
 
 > ❗ **Important**:  You must specify a cell with a matching identifier in your storyboard file. You may also register a class or nib file using the [`register(_:forCellReuseIdentifier:)`](uitableview/register(_:forcellreuseidentifier:)-5q6bo.md) or [`register(_:forCellReuseIdentifier:)`](uitableview/register(_:forcellreuseidentifier:)-3l3ct.md) method, but must do so before calling this method.
 
- You must specify a cell with a matching identifier in your storyboard file. You may also register a class or nib file using the [`register(_:forCellReuseIdentifier:)`](uitableview/register(_:forcellreuseidentifier:)-5q6bo.md) or [`register(_:forCellReuseIdentifier:)`](uitableview/register(_:forcellreuseidentifier:)-3l3ct.md) method, but must do so before calling this method.
-
 When creating new cells from your storyboard or nib file, this method loads the cell object and initializes it using its [`init(coder:)`](uitableview/init(coder:).md) method. When creating cells from a registered class, this method creates the cell and initializes it by calling its [`init(style:reuseIdentifier:)`](uitableviewcell/init(style:reuseidentifier:).md) method. For nib-based cells, this method loads the cell object from the provided nib file. If an existing cell was available for reuse, this method calls the cell’s [`prepareForReuse()`](uitableviewcell/prepareforreuse().md) method instead.
 
 ## Parameters

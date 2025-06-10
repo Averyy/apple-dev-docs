@@ -1,6 +1,6 @@
 # webView(_:didReceiveTitle:for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the page title of a frame loads or changes.

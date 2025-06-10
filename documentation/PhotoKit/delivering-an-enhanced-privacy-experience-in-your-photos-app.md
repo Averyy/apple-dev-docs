@@ -1,6 +1,6 @@
 # Delivering an Enhanced Privacy Experience in Your Photos App
 
-**Framework**: Photokit
+**Framework**: PhotoKit
 
 Adopt the latest privacy enhancements to deliver advanced user-privacy controls.
 
@@ -122,4 +122,4 @@ To monitor changes to the user’s limited-library selection, use the standard c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PhotoKit/delivering-an-enhanced-privacy-experience-in-your-photos-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/photokit/delivering-an-enhanced-privacy-experience-in-your-photos-app)*

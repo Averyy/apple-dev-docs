@@ -1,6 +1,6 @@
 # isHighFrameRateTrackingEnabled
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A Boolean value that determines the frequency at which the scanner updates the geometry of recognized items.

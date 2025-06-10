@@ -13,16 +13,7 @@ typealias ExtendedGraphemeClusterLiteralType = String
 
 #### Discussion
 
-Valid types for ExtendedGraphemeClusterLiteralType are Character, String, and StaticString.
-
-## See Also
-
-- [LanguageTag.RawValue](languagetag/rawvalue-swift.typealias.md)
-  The raw type that can be used to represent all values of the conforming type.
-- [LanguageTag.StringLiteralType](languagetag/stringliteraltype.md)
-  A type that represents a string literal.
-- [LanguageTag.UnicodeScalarLiteralType](languagetag/unicodescalarliteraltype.md)
-  A type that represents a Unicode scalar literal.
+Valid types for `ExtendedGraphemeClusterLiteralType` are `Character`, `String`, and `StaticString`.
 
 
 ---

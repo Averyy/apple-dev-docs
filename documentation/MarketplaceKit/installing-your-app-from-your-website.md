@@ -1,6 +1,6 @@
 # Installing your app from your website
 
-**Framework**: Marketplacekit
+**Framework**: MarketplaceKit
 
 Manage the installation of an app that you develop and distribute through your website.
 
@@ -192,4 +192,4 @@ The `"restores"` array in the response contains an object with the following fie
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/installing-your-app-from-your-website)*
+*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/installing-your-app-from-your-website)*

@@ -41,6 +41,7 @@ A [`UIViewRepresentableContext`](uiviewrepresentablecontext.md) structure contai
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

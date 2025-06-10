@@ -199,4 +199,4 @@ Termination Description: DYLD, dependent dylib '@rpath/MyFramework.framework/MyF
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/identifying-the-cause-of-common-crashes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/identifying-the-cause-of-common-crashes)*

@@ -1,6 +1,6 @@
 # setCoordinatedAnimations(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the interface objects that should coordinate their own animations with the picker.

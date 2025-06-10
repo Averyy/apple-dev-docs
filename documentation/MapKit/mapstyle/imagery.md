@@ -1,6 +1,6 @@
 # imagery
 
-**Framework**: Mapkit  
+**Framework**: MapKit  
 **Kind**: property
 
 A map style that represents a satellite image of the area the map displays.

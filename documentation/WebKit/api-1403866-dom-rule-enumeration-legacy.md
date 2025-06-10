@@ -1,6 +1,6 @@
 # DOM Rule Enumeration (Legacy)
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 ## Topics
 

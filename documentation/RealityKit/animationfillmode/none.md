@@ -10,6 +10,7 @@ An option that indicates an animation doesn’t display frame data outside of it
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -30,8 +31,6 @@ For example, if you rewind an animation of a hand waving for one second by setti
   An option that shows the first animation frame while playback progresses to the beginning position.
 - [static let both: AnimationFillMode](animationfillmode/both.md)
   An option that displays the animation’s initial frame or final frame when playback occurs outside of the normal duration.
-- [let rawValue: Int8](animationfillmode/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
 
 
 ---

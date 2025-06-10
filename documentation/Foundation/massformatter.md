@@ -71,4 +71,4 @@ class MassFormatter
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/massformatter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/massformatter)*

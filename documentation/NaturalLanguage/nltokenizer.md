@@ -32,8 +32,6 @@ For more information, see [`Tokenizing natural language text`](tokenizing-natura
 
 > ❗ **Important**:  Use an [`NLTokenizer`](nltokenizer.md) instance on one thread or one dispatch queue at a time. You do this by either serializing method calls to the tokenizer, or by creating a separate tokenizer instance for each thread and dispatch queue.
 
- Use an [`NLTokenizer`](nltokenizer.md) instance on one thread or one dispatch queue at a time. You do this by either serializing method calls to the tokenizer, or by creating a separate tokenizer instance for each thread and dispatch queue.
-
 ## Topics
 
 ### Creating a tokenizer

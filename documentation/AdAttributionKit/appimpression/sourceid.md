@@ -1,6 +1,6 @@
 # sourceID
 
-**Framework**: Adattributionkit  
+**Framework**: AdAttributionKit  
 **Kind**: property
 
 A four-digit integer that ad networks define to represent the ad campaign.

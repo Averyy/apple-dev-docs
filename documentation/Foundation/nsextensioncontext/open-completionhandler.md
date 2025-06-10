@@ -26,8 +26,6 @@ Each extension point determines whether to support this method, or under which c
 
 > ❗ **Important**:  You can use this method in a Today widget to open the widget’s containing app. If you use this method to open other apps from your Today widget, your App Store submission may require additional review. To learn more, see [`App Store Review Guidelines`](https://developer.apple.comhttp://developer.apple.com/appstore/resources/approval/guidelines.html) and [`iOS Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/ios/human-interface-guidelines/).
 
- You can use this method in a Today widget to open the widget’s containing app. If you use this method to open other apps from your Today widget, your App Store submission may require additional review. To learn more, see [`App Store Review Guidelines`](https://developer.apple.comhttp://developer.apple.com/appstore/resources/approval/guidelines.html) and [`iOS Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/ios/human-interface-guidelines/).
-
 ## Parameters
 
 - `URL`: The URL to open.

@@ -26,8 +26,8 @@ class MTRClusterMessages
 - [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclustermessages/init(device:endpointid:queue:).md)
   For all instance methods that take a completion (i.e. command invocations), the completion will be called on the provided queue.
 ### Instance Methods
-- [func cancelRequest(with: MTRMessagesClusterCancelMessagesRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustermessages/cancelrequest(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func presentRequest(with: MTRMessagesClusterPresentMessagesRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: MTRStatusCompletion)](mtrclustermessages/presentrequest(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func cancelRequest(with: MTRMessagesClusterCancelMessagesRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustermessages/cancelrequest(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func presentRequest(with: MTRMessagesClusterPresentMessagesRequestParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustermessages/presentrequest(with:expectedvalues:expectedvalueinterval:completion:).md)
 - [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclustermessages/readattributeacceptedcommandlist(with:).md)
 - [func readAttributeActiveMessageIDs(with: MTRReadParams?) -> [String : Any]?](mtrclustermessages/readattributeactivemessageids(with:).md)
 - [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclustermessages/readattributeattributelist(with:).md)

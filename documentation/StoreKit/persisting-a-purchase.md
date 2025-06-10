@@ -1,6 +1,6 @@
 # Persisting a purchase
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Keep a persistent record of a purchase to continue making the product available as needed.
 
@@ -44,4 +44,4 @@ Send a copy of the receipt to your server, along with credentials or an identifi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/persisting-a-purchase)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/persisting-a-purchase)*

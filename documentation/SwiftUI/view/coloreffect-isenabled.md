@@ -36,8 +36,6 @@ where `position` is the user-space coordinates of the pixel applied to the shade
 
 > ❗ **Important**: Views backed by AppKit or UIKit views may not render into the filtered layer. Instead, they log a warning and display a placeholder image to highlight the error.
 
-Views backed by AppKit or UIKit views may not render into the filtered layer. Instead, they log a warning and display a placeholder image to highlight the error.
-
 ## Parameters
 
 - `shader`: The shader to apply to   as a color filter.

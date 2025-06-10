@@ -177,4 +177,4 @@ For complete details about argument-passing and return result behaviors, see the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/writing-armv6-code-for-ios)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/writing-armv6-code-for-ios)*

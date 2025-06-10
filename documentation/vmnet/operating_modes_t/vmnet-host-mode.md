@@ -1,6 +1,6 @@
 # operating_modes_t.VMNET_HOST_MODE
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: case
 
 **Availability**:

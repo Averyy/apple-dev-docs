@@ -1,6 +1,6 @@
 # WKExtendedRuntimeSessionInvalidationReason.sessionInProgress
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 This app already has a running session.

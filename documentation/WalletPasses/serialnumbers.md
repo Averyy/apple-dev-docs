@@ -1,6 +1,6 @@
 # SerialNumbers
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that contains serial numbers for the updatable passes on a device.

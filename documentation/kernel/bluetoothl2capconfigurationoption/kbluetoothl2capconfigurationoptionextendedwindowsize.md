@@ -1,0 +1,18 @@
+# kBluetoothL2CAPConfigurationOptionExtendedWindowSize
+
+**Framework**: Kernel  
+**Kind**: econst
+
+**Availability**:
+- macOS 10.8+
+
+## Declaration
+
+```swift
+kBluetoothL2CAPConfigurationOptionExtendedWindowSize = 0x07
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/bluetoothl2capconfigurationoption/kbluetoothl2capconfigurationoptionextendedwindowsize)*

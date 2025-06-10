@@ -9,7 +9,7 @@ Sets the tint color associated with a row.
 - iOS 15.0+
 - iPadOS 15.0+
 - macOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

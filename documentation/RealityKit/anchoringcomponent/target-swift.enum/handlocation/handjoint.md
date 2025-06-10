@@ -20,15 +20,6 @@ For more information about the joints, refer doc://com.developer.apple/documenta
 
 ## Topics
 
-### Operators
-- [static func == (AnchoringComponent.Target.HandLocation.HandJoint, AnchoringComponent.Target.HandLocation.HandJoint) -> Bool](anchoringcomponent/target-swift.enum/handlocation/handjoint/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-### Instance Properties
-- [var hashValue: Int](anchoringcomponent/target-swift.enum/handlocation/handjoint/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](anchoringcomponent/target-swift.enum/handlocation/handjoint/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
 ### Type Properties
 - [static let forearmArm: AnchoringComponent.Target.HandLocation.HandJoint](anchoringcomponent/target-swift.enum/handlocation/handjoint/forearmarm.md)
   An anchor location at the elbow end of forearm on the back of hand.
@@ -84,8 +75,6 @@ For more information about the joints, refer doc://com.developer.apple/documenta
   An anchor location at the tip of the thumb.
 - [static let wrist: AnchoringComponent.Target.HandLocation.HandJoint](anchoringcomponent/target-swift.enum/handlocation/handjoint/wrist.md)
   An anchor location at the center of the wrist on the back of the hand.
-### Default Implementations
-- [Equatable Implementations](anchoringcomponent/target-swift.enum/handlocation/handjoint/equatable-implementations.md)
 
 ## Relationships
 

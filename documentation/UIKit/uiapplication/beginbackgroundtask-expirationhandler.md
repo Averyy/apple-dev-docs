@@ -1,6 +1,6 @@
 # beginBackgroundTask(expirationHandler:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Marks the start of a task that should continue if the app enters the background.
@@ -16,7 +16,7 @@ Marks the start of a task that should continue if the app enters the background.
 
 ```swift
 nonisolated
-func beginBackgroundTask(expirationHandler handler: (() -> Void)? = nil) -> UIBackgroundTaskIdentifier
+func beginBackgroundTask(expirationHandler handler: (@MainActor () -> Void)? = nil) -> UIBackgroundTaskIdentifier
 ```
 
 #### Return Value
@@ -35,7 +35,7 @@ You can call this method at any point in your app’s execution. You may also ca
 
 To assist with debugging, this method generates a name for the task, based on the name of the calling method or function. If you want to specify a custom name, use the [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method instead.
 
-This method can be safely called on a non-main thread. To extend the execution time of an app extension, use the [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/foundation/processinfo/1617030-performexpiringactivity) method of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) instead.
+This method can be safely called on a non-main thread. To extend the execution time of an app extension, use the [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/Foundation/ProcessInfo/performExpiringActivity(withReason:using:)) method of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo) instead.
 
 > **Note**:  If you’re having trouble debugging your background task code, you might try using the [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method instead of this one. That method provides the same behavior but lets you specify a debugger-visible name for your task.
 
@@ -46,7 +46,7 @@ This method can be safely called on a non-main thread. To extend the execution t
 ## See Also
 
 - [Background Tasks](../BackgroundTasks/BackgroundTasks.md)
-  Request the system to launch your app in the background to run tasks.
+  Support background processing in your app by wrapping your app’s most critical work in framework-provided tasks.
 - [var backgroundRefreshStatus: UIBackgroundRefreshStatus](uiapplication/backgroundrefreshstatus.md)
   Indicates whether the app can refresh content when running in the background.
 - [enum UIBackgroundRefreshStatus](uibackgroundrefreshstatus.md)

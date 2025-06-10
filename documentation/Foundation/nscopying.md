@@ -150,6 +150,7 @@ If a subclass inherits [`NSCopying`](nscopying.md) from its superclass and decla
 - [UnitElectricPotentialDifference](unitelectricpotentialdifference.md)
 - [UnitElectricResistance](unitelectricresistance.md)
 - [UnitEnergy](unitenergy.md)
+- [UnitEnergy.EnergyKit](unitenergy/energykit.md)
 - [UnitFrequency](unitfrequency.md)
 - [UnitFuelEfficiency](unitfuelefficiency.md)
 - [UnitIlluminance](unitilluminance.md)

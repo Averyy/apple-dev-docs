@@ -1,6 +1,6 @@
 # Nil and Non-Nil Assertions
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Check whether a test condition has, or doesn’t have, a value.
 

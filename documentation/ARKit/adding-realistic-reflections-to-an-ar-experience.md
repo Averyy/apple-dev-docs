@@ -1,6 +1,6 @@
 # Adding realistic reflections to an AR experience
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Use ARKit to generate environment probe textures from camera imagery and render reflective virtual objects.
 
@@ -118,4 +118,4 @@ Alternatively, your app may include a static environment-map texture for use as 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/adding-realistic-reflections-to-an-ar-experience)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/adding-realistic-reflections-to-an-ar-experience)*

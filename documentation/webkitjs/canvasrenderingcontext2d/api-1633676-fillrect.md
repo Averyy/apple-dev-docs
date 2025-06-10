@@ -1,6 +1,6 @@
 # fillRect
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Fills a specified rectangle in the current fill color, gradient, or pattern.

@@ -1,6 +1,6 @@
 # Pull Requests
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Read pull request information such as source and destination branches.
 
@@ -39,4 +39,4 @@ The `scmPullRequests` resource represents pull requests (PRs) for repositories X
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/pull-requests)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/pull-requests)*

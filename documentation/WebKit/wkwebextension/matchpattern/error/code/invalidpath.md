@@ -1,6 +1,6 @@
 # WKWebExtension.MatchPattern.Error.Code.invalidPath
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates that the path component was invalid.

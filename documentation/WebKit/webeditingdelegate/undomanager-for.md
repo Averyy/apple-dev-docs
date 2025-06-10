@@ -1,6 +1,6 @@
 # undoManager(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the undo manager to be used by a web view.

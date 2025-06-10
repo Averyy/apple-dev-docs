@@ -8,6 +8,29 @@ Learn about important changes to UIKit.
 
 Browse notable changes in [`UIKit`](https://developer.apple.com/documentation/UIKit).
 
+#### June 2025
+
+##### General
+
+- Provide seamless immersive visuals by using [`UIBackgroundExtensionView`](https://developer.apple.com/documentation/UIKit/UIBackgroundExtensionView) to extend a view’s content under sidebars and inspectors.
+- Apply Liquid Glass effects to views using [`UIGlassEffect`](https://developer.apple.com/documentation/UIKit/UIGlassEffect).
+- Organize views together for morph animations in [`UIGlassContainerEffect`](https://developer.apple.com/documentation/UIKit/UIGlassContainerEffect).
+- Add or adjust effects at the edge of a scroll view with [`UIScrollEdgeEffect`](https://developer.apple.com/documentation/UIKit/UIScrollEdgeEffect).
+- Apply Liquid Glass effects to buttons with [`glass()`](https://developer.apple.com/documentation/UIKit/UIButton/Configuration-swift.struct/glass()) and [`prominentGlass()`](https://developer.apple.com/documentation/UIKit/UIButton/Configuration-swift.struct/prominentGlass()).
+- UIKit now supports Swift Observable objects. Use observable objects in [`layoutSubviews()`](https://developer.apple.com/documentation/UIKit/UIView/layoutSubviews()); then UIKit automatically invalidates and updates the UI when those objects change.
+- Add a badge to a [`UIBarButtonItem`](https://developer.apple.com/documentation/UIKit/UIBarButtonItem) with [`badge`](https://developer.apple.com/documentation/UIKit/UIBarButtonItem/badge-4sz3f).
+- Notification payloads are now strongly typed: [`NotificationCenter.MessageIdentifier`](https://developer.apple.com/documentation/Foundation/NotificationCenter/MessageIdentifier).
+
+##### Menu Bar in Ipados
+
+- Swipe from the top to reveal an iPad app’s full menu. Menus on iPad support images, submenus, inline sections, checkmarks, and more.
+- Configure main menus with [`UIMainMenuSystem`](https://developer.apple.com/documentation/UIKit/UIMainMenuSystem).
+
+##### High Dynamic Range Hdr
+
+- [`UIColorPickerViewController`](https://developer.apple.com/documentation/UIKit/UIColorPickerViewController) supports picking HDR colors, with a maximum supported exposure value.
+- Observe [`UITraitHDRHeadroomUsageLimit`](https://developer.apple.com/documentation/UIKit/UITraitHDRHeadroomUsageLimit-swift.struct) to automatically adjust HDR usage when a view with HDR content is not in focus.
+
 #### June 2024
 
 ##### General
@@ -27,7 +50,6 @@ Browse notable changes in [`UIKit`](https://developer.apple.com/documentation/UI
 
 ##### Framework Interoperability
 
-- Use SwiftUI animations from AppKit and UIKit to create a consistent animation experience across apps that use multiple UI frameworks. In UIKit, use [`animate(with:changes:completion:)`](https://developer.apple.com/documentation/UIKit/UIView/animate(with:changes:completion:)). In AppKit, use [`animate(with:changes:completion:)`](https://developer.apple.com/documentation/AppKit/NSAnimationContext/animate(with:changes:completion:)).
 - Reuse existing UIKit gesture recognizer code in SwiftUI. In SwiftUI, create UIKit gesture recognizers using [`UIGestureRecognizerRepresentable`](https://developer.apple.com/documentation/SwiftUI/UIGestureRecognizerRepresentable). In UIKit, refer to SwiftUI gestures by name using [`name`](https://developer.apple.com/documentation/UIKit/UIGestureRecognizer/name).
 
 ##### Visionos
@@ -68,7 +90,7 @@ Browse notable changes in [`UIKit`](https://developer.apple.com/documentation/UI
 ##### Views and Controls
 
 - Animate symbol images with new symbol effects, including bounce, pulse, variable color, scale, appear, disappear, and replace.
-- Build even more performant apps with flexible layouts using collection views. Apply diffable data source snapshots and perform batch updates with even better performance. Use the doc://com.apple.documentation/documentation/uikit/nscollectionlayoutdimension/4173072-uniformacrosssiblings dimension for compositional layouts to specify uniform size across sibling items, with smaller items increasing in size to match their largest sibling.
+- Build even more performant apps with flexible layouts using collection views. Apply diffable data source snapshots and perform batch updates with even better performance. Use the [`uniformAcrossSiblings(estimate:)`](https://developer.apple.com/documentation/UIKit/NSCollectionLayoutDimension/uniformAcrossSiblings(estimate:)) dimension for compositional layouts to specify uniform size across sibling items, with smaller items increasing in size to match their largest sibling.
 - Simplify spring animations by providing duration and bounce parameters for the new view animation method, [`animate(springDuration:bounce:initialSpringVelocity:delay:options:animations:completion:)`](https://developer.apple.com/documentation/UIKit/UIView/animate(springDuration:bounce:initialSpringVelocity:delay:options:animations:completion:)).
 - Represent fractional progress through a page of content with page controls.
 - Display and manipulate high dynamic range (HDR) images.
@@ -85,12 +107,16 @@ Browse notable changes in [`UIKit`](https://developer.apple.com/documentation/UI
   Learn about important changes in ActivityKit.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [App Intents updates](appintents.md)
   Learn about important changes in App Intents.
 - [AppKit updates](appkit.md)
   Learn about important changes to AppKit.
 - [Apple Intelligence updates](apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -103,10 +129,6 @@ Browse notable changes in [`UIKit`](https://developer.apple.com/documentation/UI
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
 
 
 ---

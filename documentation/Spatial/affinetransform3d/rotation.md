@@ -22,8 +22,6 @@ var rotation: Rotation3D? { get }
 
 ## See Also
 
-- [static let identity: AffineTransform3D](affinetransform3d/identity.md)
-  The identity transform.
 - [var scale: Size3D](affinetransform3d/scale.md)
   The affine transform’s scale.
 - [var translation: Vector3D](affinetransform3d/translation.md)

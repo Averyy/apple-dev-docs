@@ -1,6 +1,6 @@
 # locationInObject()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Returns the point computed as the current position of the touch event.

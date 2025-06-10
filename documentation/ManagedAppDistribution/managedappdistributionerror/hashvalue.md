@@ -8,6 +8,8 @@ The hash value.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
 - visionOS 2.4+
 
 ## Declaration
@@ -21,8 +23,6 @@ var hashValue: Int { get }
 Hash values are not guaranteed to be equal across different executions of your program. Do not save hash values to use during a future execution.
 
 > ❗ **Important**: `hashValue` is deprecated as a `Hashable` requirement. To conform to `Hashable`, implement the `hash(into:)` requirement instead. The compiler provides an implementation for `hashValue` for you.
-
-`hashValue` is deprecated as a `Hashable` requirement. To conform to `Hashable`, implement the `hash(into:)` requirement instead. The compiler provides an implementation for `hashValue` for you.
 
 
 ---

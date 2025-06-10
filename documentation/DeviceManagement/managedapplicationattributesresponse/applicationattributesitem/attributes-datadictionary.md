@@ -11,8 +11,6 @@ A dictionary that contains a managed app’s attributes.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

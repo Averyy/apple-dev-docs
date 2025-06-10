@@ -10,8 +10,6 @@ A response from the device after it processes the command to remove the passcode
 - iPadOS 4.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,14 +19,14 @@ object ClearPasscodeResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object ClearPasscodeResponse.ErrorChainItem](clearpasscoderesponse/errorchainitem.md)
   A dictionary that describes an error chain item.
 
 ## See Also
 
 - [object ClearPasscodeCommand](clearpasscodecommand.md)
-  The command to clear the passcode on a device.
+  The command to remove the passcode from a device.
 
 
 ---

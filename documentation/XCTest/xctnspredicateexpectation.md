@@ -1,6 +1,6 @@
 # XCTNSPredicateExpectation
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 An expectation that’s fulfilled when an `NSPredicate` is satisfied.
@@ -43,6 +43,7 @@ When you use an instance of this class from Swift and await using [`fulfillment(
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # Color parameter atom ('colr')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 A required extension for uncompressed Y´CbCr data formats.

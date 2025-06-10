@@ -1,6 +1,6 @@
 # Presenting the suggestions picker and processing a selection
 
-**Framework**: Journalingsuggestions
+**Framework**: Journaling Suggestions
 
 Display the journaling suggestions picker and process a suggestion that someone chooses.
 
@@ -111,10 +111,12 @@ When your app parses a selected suggestion’s details, it organizes that inform
 
 ## See Also
 
+- [Journaling Suggestions updates](../Updates/JournalingSuggestions.md)
+  Learn about important changes in Journaling Suggestions.
 - [com.apple.developer.journal.allow](../BundleResources/Entitlements/com.apple.developer.journal.allow.md)
   The entitlement that enables an app to present the journaling suggestions picker.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/JournalingSuggestions/presenting-the-suggestions-picker-and-processing-a-selection)*
+*[View on Apple Developer](https://developer.apple.com/documentation/journalingsuggestions/presenting-the-suggestions-picker-and-processing-a-selection)*

@@ -1,6 +1,6 @@
 # HKPrescriptionType
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: class
 
 A type that identifies samples that store a prescription.
@@ -57,6 +57,7 @@ store.requestAuthorization(toShare: [visionPrescriptionType],
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -78,4 +79,4 @@ store.requestAuthorization(toShare: [visionPrescriptionType],
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/hkprescriptiontype)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/hkprescriptiontype)*

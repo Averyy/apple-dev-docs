@@ -1,6 +1,6 @@
 # webExtensionController(_:focusedWindowFor:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when an extension context requests the currently focused window.

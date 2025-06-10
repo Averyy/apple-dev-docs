@@ -20,7 +20,7 @@ The resolved attachment entity, or `nil` if [`RealityView`](realityview.md) can�
 
 #### Discussion
 
-Attachment entities are not automatically added to your [`RealityView`](realityview.md)’s content. To display an attachment, add it to your [`RealityView`](realityview.md)’s content using a function like [`add(_:)`](realityviewcontent/add(_:).md).
+Attachment entities are not automatically added to your [`RealityView`](realityview.md)’s content. To display an attachment, add it to your [`RealityView`](realityview.md)’s content using a function like `RealityViewContent/add(_:)`.
 
 ## Parameters
 

@@ -3,7 +3,7 @@
 **Framework**: AccessorySetupKit  
 **Kind**: struct
 
-The identifier of a Bluetooth accessory provider.
+The type used to identify a Bluetooth accessory provider.
 
 **Availability**:
 - iOS 18.0+
@@ -32,6 +32,7 @@ struct ASBluetoothCompanyIdentifier
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -47,6 +48,8 @@ struct ASBluetoothCompanyIdentifier
   The accessory’s Bluetooth service data mask.
 - [var bluetoothNameSubstring: String?](asdiscoverydescriptor/bluetoothnamesubstring.md)
   The accessory’s over-the-air Bluetooth name substring.
+- [var bluetoothNameSubstringCompareOptions: NSString.CompareOptions](asdiscoverydescriptor/bluetoothnamesubstringcompareoptions.md)
+  The accessory’s over-the-air Bluetooth name substring compare options.
 - [var bluetoothServiceUUID: CBUUID?](asdiscoverydescriptor/bluetoothserviceuuid.md)
   The accessory’s Bluetooth service UUID.
 - [var bluetoothRange: ASDiscoveryDescriptor.Range](asdiscoverydescriptor/bluetoothrange.md)

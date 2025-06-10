@@ -17,9 +17,9 @@ var showsFrameSteppingButtons: Bool { get set }
 
 #### Discussion
 
-Setting this property value to [`true`](https://developer.apple.com/documentation/swift/true) results in the player view replacing its fast-forward and rewind controls with frame stepping buttons. This property is currently supported only with a [`controlsStyle`](avplayerview/controlsstyle.md) of [`AVPlayerViewControlsStyle.floating`](avplayerviewcontrolsstyle/floating.md).
+Setting this property value to `true` results in the player view replacing its fast-forward and rewind controls with frame stepping buttons. This property is currently supported only with a [`controlsStyle`](avplayerview/controlsstyle.md) of [`AVPlayerViewControlsStyle.floating`](avplayerviewcontrolsstyle/floating.md).
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is `false`.
 
 ## See Also
 

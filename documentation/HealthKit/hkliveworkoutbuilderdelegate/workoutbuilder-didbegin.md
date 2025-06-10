@@ -6,6 +6,9 @@
 Tells the delegate that a new workout activity has started.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 13.0+
 - watchOS 9.0+
 

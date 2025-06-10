@@ -1,6 +1,6 @@
 # gamma
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The rotation, in degrees, of the device frame around its y-axis.

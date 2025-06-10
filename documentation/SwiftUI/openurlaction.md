@@ -77,11 +77,14 @@ SwiftUI translates the value that your custom action’s handler returns into an
   Opens a URL, following system conventions.
 - [func callAsFunction(URL, completion: (Bool) -> Void)](openurlaction/callasfunction(_:completion:).md)
   Asynchronously opens a URL, following system conventions.
+### Instance Methods
+- [func callAsFunction(URL, prefersInApp: Bool)](openurlaction/callasfunction(_:prefersinapp:).md)
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

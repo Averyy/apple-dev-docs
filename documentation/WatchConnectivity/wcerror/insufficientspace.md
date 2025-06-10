@@ -1,6 +1,6 @@
 # insufficientSpace
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An error indicating that there isn’t enough space on the receiving side to store the data.

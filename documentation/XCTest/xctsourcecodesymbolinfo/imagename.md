@@ -1,6 +1,6 @@
 # imageName
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The name of the binary image that contains the symbolicated code.

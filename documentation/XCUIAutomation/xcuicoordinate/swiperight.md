@@ -1,6 +1,6 @@
 # swipeRight()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a swipe-right gesture.

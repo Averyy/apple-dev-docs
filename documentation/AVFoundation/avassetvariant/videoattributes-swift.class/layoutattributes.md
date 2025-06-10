@@ -25,6 +25,9 @@ class LayoutAttributes
 ### Accessing attributes
 - [var stereoViewComponents: CMStereoViewComponents](avassetvariant/videoattributes-swift.class/layoutattributes/stereoviewcomponents.md)
   Attributes that describe the video’s stereo components.
+### Instance Properties
+- [var projectionType: CMProjectionType](avassetvariant/videoattributes-swift.class/layoutattributes/projectiontype.md)
+  Describes the video projection.
 
 ## Relationships
 
@@ -38,6 +41,7 @@ class LayoutAttributes
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

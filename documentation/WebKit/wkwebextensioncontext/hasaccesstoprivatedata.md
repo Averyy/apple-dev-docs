@@ -1,6 +1,6 @@
 # hasAccessToPrivateData
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value indicating if the extension has access to private data.

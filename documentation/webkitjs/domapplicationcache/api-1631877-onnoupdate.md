@@ -1,6 +1,6 @@
 # onnoupdate
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 Sent when the update process finishes but the manifest file does not change.

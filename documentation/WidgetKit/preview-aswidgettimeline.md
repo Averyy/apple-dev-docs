@@ -1,6 +1,6 @@
 # Preview(_:as:widget:timeline:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: macro
 
 Preview a timeline-style widget.
@@ -8,8 +8,9 @@ Preview a timeline-style widget.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
+- visionOS 26.0+ (Beta)
 - watchOS 10.0+
 
 ## Declaration
@@ -44,6 +45,12 @@ The preview will allow you to step through your timeline and test out the transi
   Preview a widget with an app intent configuration, using the specified timeline provider.
 - [macro Preview<Widget, Provider>(String?, as: WidgetFamily, using: Provider.Intent, widget: () -> Widget, timelineProvider: () -> Provider)](preview(_:as:using:widget:timelineprovider:)-3df1l.md)
   Preview a widget with an intent configuration, using the specified timeline provider.
+- [macro Preview<Widget, Entry>(String?, widget: () -> Widget, relevanceEntries: () async -> [Entry])](preview(_:widget:relevanceentries:).md)
+  Preview a relevance configuration widget.
+- [macro Preview<Widget, Provider>(String?, widget: () -> Widget, relevanceProvider: () -> Provider)](preview(_:widget:relevanceprovider:).md)
+  Preview a widget with a relevance configuration, using the specified relevance provider.
+- [macro Preview<Widget, Provider>(String?, widget: () -> Widget, relevanceProvider: () -> Provider, relevance: () async -> WidgetRelevance<Provider.Configuration>)](preview(_:widget:relevanceprovider:relevance:).md)
+  Preview a widget with a relevance configuration, using the specified relevances.
 
 
 ---

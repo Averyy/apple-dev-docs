@@ -1,6 +1,6 @@
 # The MPSKernel Class
 
-**Framework**: Metalperformanceshaders
+**Framework**: Metal Performance Shaders
 
 #### Overview
 

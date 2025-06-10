@@ -33,9 +33,9 @@ An effect that scales the view’s rendered output.
 ## See Also
 
 - [func scaleEffect(_:anchor:)](visualeffect/scaleeffect(_:anchor:).md)
-  Scales this view uniformly by the specified factor.
+  Scales this view uniformly by the specified factor, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some VisualEffect](visualeffect/scaleeffect(x:y:z:anchor:).md)
-  Scales this view by the specified horizontal, vertical, and depth factors.
+  Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
 
 
 ---

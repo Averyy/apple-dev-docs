@@ -1,6 +1,6 @@
 # Activities and Attachments
 
-**Framework**: Xctest
+**Framework**: XCTest
 
 Split long tests into substeps with activities, and attach output data like files and screenshots.
 

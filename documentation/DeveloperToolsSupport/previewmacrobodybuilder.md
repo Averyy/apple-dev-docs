@@ -25,8 +25,6 @@ struct PreviewMacroBodyBuilder<Content>
 
 > ⚠️ **Warning**: Using this builder outside of a `#Preview` macro will produce a fatal error.
 
-Using this builder outside of a `#Preview` macro will produce a fatal error.
-
 ## Topics
 
 ### Type Methods

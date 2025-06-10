@@ -1,6 +1,6 @@
 # MPSCNNSpatialNormalization
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: cl
 
 A spatial normalization kernel.

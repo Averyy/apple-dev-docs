@@ -1,6 +1,6 @@
 # Scanning data with the camera
 
-**Framework**: Visionkit
+**Framework**: VisionKit
 
 Enable Live Text data scanning of text and codes that appear in the camera’s viewfinder.
 
@@ -13,8 +13,6 @@ You create a [`DataScannerViewController`](datascannerviewcontroller.md) object 
 ![A mockup of an iPhone screen showing the data scanner view controller view with a QR code highlighted in the camera’s live video.](https://docs-assets.developer.apple.com/published/e5caaaf0e057ee741c6e3ebda42dd26a/scanning_data_with_the_camera-1%402x.png)
 
 > ❗ **Important**: The code listings in this article use asynchronous methods that you invoke from an `async` method or within a [`Task`](https://developer.apple.com/documentation/Swift/Task) structure. For details on asynchronous flows, see [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency).
-
-The code listings in this article use asynchronous methods that you invoke from an `async` method or within a [`Task`](https://developer.apple.com/documentation/Swift/Task) structure. For details on asynchronous flows, see [`Concurrency`](https://developer.apple.com/documentation/Swift/concurrency).
 
 ##### Provide a Reason for Using the Camera
 

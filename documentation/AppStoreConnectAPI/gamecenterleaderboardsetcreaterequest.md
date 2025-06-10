@@ -37,6 +37,8 @@ object GameCenterLeaderboardSetCreateRequest
   The request body you use to update a leaderboard set.
 - [object GameCenterLeaderboardSetsResponse](gamecenterleaderboardsetsresponse.md)
   A response that contains multiple leaderboard set resources.
+- [object GameCenterLeaderboardSetLocalizationGameCenterLeaderboardSetImageLinkageResponse](gamecenterleaderboardsetlocalizationgamecenterleaderboardsetimagelinkageresponse.md)
+- [object GameCenterLeaderboardSetLocalizationsLinkagesResponse](gamecenterleaderboardsetlocalizationslinkagesresponse.md)
 
 
 ---

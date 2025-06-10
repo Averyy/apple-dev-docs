@@ -8,10 +8,10 @@ An interface for converting between an entity’s identifier and its string repr
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -44,16 +44,14 @@ extension MusicItemID: EntityIdentifierConvertible {
 
 > ❗ **Important**: Keep your [`entityIdentifierString`](entityidentifierconvertible/entityidentifierstring.md) to 4096 characters or fewer. Otherwise, the framework truncates the value, and you might not be able to convert the truncated value back to its originating type.
 
-Keep your [`entityIdentifierString`](entityidentifierconvertible/entityidentifierstring.md) to 4096 characters or fewer. Otherwise, the framework truncates the value, and you might not be able to convert the truncated value back to its originating type.
-
 ## Topics
 
+### Creating an identifier string
+- [static func entityIdentifier(for: String) -> Self?](entityidentifierconvertible/entityidentifier(for:).md)
+  Identifiers should be able to initialize via a `String` format.
 ### Getting the identifier string
 - [var entityIdentifierString: String](entityidentifierconvertible/entityidentifierstring.md)
   The `AppEntity`’s identifier value as a `String`.
-### Type Methods
-- [static func entityIdentifier(for: String) -> Self?](entityidentifierconvertible/entityidentifier(for:).md)
-  Identifiers should be able to initialize via a `String` format.
 
 ## Relationships
 

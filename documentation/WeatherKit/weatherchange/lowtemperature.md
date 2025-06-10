@@ -1,6 +1,6 @@
 # lowTemperature
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 How the low temperature for this day compares to that of before.

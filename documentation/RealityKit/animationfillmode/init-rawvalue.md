@@ -10,6 +10,7 @@ Creates a fill mode from its backing data type.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -30,15 +31,6 @@ let fillMode = AnimationFillMode(rawValue: rawValue)
 ## Parameters
 
 - `rawValue`: The backing data value for the fill mode.
-
-## See Also
-
-- [init()](animationfillmode/init.md)
-  Creates an empty option set.
-- [init<S>(S)](animationfillmode/init(_:).md)
-  Creates a new set from a finite sequence of items.
-- [init(arrayLiteral: Self.Element...)](animationfillmode/init(arrayliteral:).md)
-  Creates a set containing the elements of the given array literal.
 
 
 ---

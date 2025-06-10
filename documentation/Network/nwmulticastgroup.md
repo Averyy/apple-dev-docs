@@ -24,8 +24,6 @@ class NWMulticastGroup
 
 > ❗ **Important**:  In order to use multicast on iOS, your app will need to have the `com.apple.developer.networking.multicast` entitlement.
 
- In order to use multicast on iOS, your app will need to have the `com.apple.developer.networking.multicast` entitlement.
-
 ## Topics
 
 ### Essentials
@@ -47,6 +45,7 @@ class NWMulticastGroup
 ### Conforms To
 - [NWGroupDescriptor](nwgroupdescriptor.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

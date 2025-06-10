@@ -1,6 +1,6 @@
 # Uniform Type Identifiers
 
-**Framework**: Uniformtypeidentifiers  
+**Framework**: Uniform Type Identifiers  
 **Kind**: module
 
 Provide uniform type identifiers that describe file types for storage or transfer.

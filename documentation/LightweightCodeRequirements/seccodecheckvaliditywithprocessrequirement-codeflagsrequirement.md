@@ -21,7 +21,7 @@ Returns a validation result which indicates whether the code signature is valid,
 
 ## See Also
 
-- [var launchRequirement: LaunchCodeRequirement?](../foundation/process/4322522-launchrequirement.md)
+- [var launchRequirement: LaunchCodeRequirement? { get set }](../Foundation/Process/launchRequirement.md)
 - [struct LaunchCodeRequirement](launchcoderequirement.md)
   A lightweight code requirement that you use to evaluate the executable for a launching process.
 - [func allOf(requirement: () -> [any LaunchConstraint]) -> any LaunchConstraint](allof(requirement:)-4gf5f.md)

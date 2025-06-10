@@ -1,6 +1,6 @@
 # Responding to App Store Server Notifications
 
-**Framework**: Appstoreservernotifications
+**Framework**: App Store Server Notifications
 
 Send HTTP status codes to indicate the success of a notification post.
 
@@ -38,4 +38,4 @@ If you use version 2 notifications ([`App Store Server Notifications V2`](app-st
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerNotifications/responding-to-app-store-server-notifications)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreservernotifications/responding-to-app-store-server-notifications)*

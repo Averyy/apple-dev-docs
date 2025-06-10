@@ -1,6 +1,6 @@
 # Generating developer tokens
 
-**Framework**: Applemusicfeed
+**Framework**: Apple Music Feed
 
 Create a JSON Web Token to authorize your requests to Apple Media Feed API.
 
@@ -60,4 +60,4 @@ curl -v -H 'Authorization: Bearer [developer token]' "https://api.ent.apple.com/
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleMusicFeed/generating-developer-tokens)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applemusicfeed/generating-developer-tokens)*

@@ -1,6 +1,6 @@
 # init(label:amount:type:)
 
-**Framework**: Passkit  
+**Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: init
 
 Initializes and returns a summary item with the given label, amount, and type.
@@ -25,7 +25,7 @@ A summary item with the given label, amount, and type.
 
 #### Discussion
 
-When creating summary items for estimates or charges whose final value isn’t yet known, use a [`PKPaymentSummaryItemType.pending`](pkpaymentsummaryitemtype/pending.md) type. Use [`zero`](https://developer.apple.com/documentation/foundation/nsdecimalnumber/1413127-zero) for the amount of pending items. The payment sheet doesn’t show the value of pending items.
+When creating summary items for estimates or charges whose final value isn’t yet known, use a [`PKPaymentSummaryItemType.pending`](pkpaymentsummaryitemtype/pending.md) type. Use [`zero`](https://developer.apple.com/documentation/Foundation/NSDecimalNumber/zero) for the amount of pending items. The payment sheet doesn’t show the value of pending items.
 
 > **Note**:  The payment request’s total must include a final value, even if the payment request includes one or more pending summary items. This total represents the total of all the known costs; don’t include the value of any pending items.
 

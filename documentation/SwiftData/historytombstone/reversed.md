@@ -1,6 +1,6 @@
 # reversed()
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns an array containing the elements of this sequence in reverse order.

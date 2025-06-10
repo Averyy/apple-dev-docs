@@ -37,6 +37,7 @@ Relay servers are secure HTTP proxies that allow proxying TCP traffic using the 
 ### Conforms To
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

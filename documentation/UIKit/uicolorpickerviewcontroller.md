@@ -52,10 +52,14 @@ You can also react to the color-selection change or the dismissal of the color p
   The delegate that receives updates about the color selection.
 - [protocol UIColorPickerViewControllerDelegate](uicolorpickerviewcontrollerdelegate.md)
   The delegate protocol to inform about changes in color selection.
+- [var maximumLinearExposure: CGFloat](uicolorpickerviewcontroller/maximumlinearexposure.md)
+  The maximum exposure to apply to a color when returned by the color picker.
 - [var selectedColor: UIColor](uicolorpickerviewcontroller/selectedcolor.md)
   The color selected by the user.
 - [var supportsAlpha: Bool](uicolorpickerviewcontroller/supportsalpha.md)
   A Boolean value that enables alpha value control.
+- [var supportsEyedropper: Bool](uicolorpickerviewcontroller/supportseyedropper.md)
+  If set to `NO` the eyedropper functionality is not supported for this color picker.
 
 ## Relationships
 
@@ -72,6 +76,7 @@ You can also react to the color-selection change or the dismissal of the color p
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearanceContainer](uiappearancecontainer.md)
 - [UIContentContainer](uicontentcontainer.md)

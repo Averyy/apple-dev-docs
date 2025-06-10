@@ -1,6 +1,6 @@
 # goal
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: property
 
 The goal for the workout.
@@ -10,6 +10,7 @@ The goal for the workout.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

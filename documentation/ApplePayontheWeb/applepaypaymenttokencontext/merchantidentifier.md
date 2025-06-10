@@ -19,7 +19,7 @@ required DOMString merchantIdentifier;
 
 The merchant identifier you provide when you make an Apple Pay payment request. If you request a payment token for another merchant, use their merchant identifier, if available. Otherwise, use your own merchant identifier.
 
-For more information about merchant identifiers, see [`Configuring Your Environment`](https://developer.apple.com/documentation/apple_pay_on_the_web/configuring_your_environment).
+For more information about merchant identifiers, see [`Configuring Your Environment`](configuring-your-environment.md).
 
 ## See Also
 

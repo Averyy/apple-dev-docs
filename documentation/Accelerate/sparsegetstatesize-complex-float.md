@@ -32,6 +32,15 @@ Size of state space required in bytes.
 - `n`: (Input) Number of variables to solve for (columns in matrix  ).
 - `nrhs`: (Input) Number of right-hand sides to be solved for.
 
+## See Also
+
+- [func SparseGetStateSize_Double(SparseIterativeMethod, Bool, Int32, Int32, Int32) -> Int](sparsegetstatesize_double(_:_:_:_:_:).md)
+  Returns the size in bytes necessary for a call to the double-precision sparse iterate method.
+- [func SparseGetStateSize_Float(SparseIterativeMethod, Bool, Int32, Int32, Int32) -> Int](sparsegetstatesize_float(_:_:_:_:_:).md)
+  Returns the size in bytes necessary for a call to the single-precision sparse iterate method.
+- [func SparseGetStateSize_Complex_Double(SparseIterativeMethod, Bool, Int32, Int32, Int32) -> Int](sparsegetstatesize_complex_double(_:_:_:_:_:).md)
+  Returns size in bytes of state space required for call to `SparseIterate()` for complex double values.
+
 
 ---
 

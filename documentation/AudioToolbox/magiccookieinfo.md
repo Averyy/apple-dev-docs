@@ -8,11 +8,11 @@ A structure holding magic cookie information.
 **Availability**:
 - iOS ?+
 - iPadOS ?+
-- Mac Catalyst ?+
+- macOS ?+
 - tvOS ?+
 - visionOS ?+
 - Unknown ?+ - Deprecated
-- macOS ?+
+- Mac Catalyst ?+
 
 ## Declaration
 

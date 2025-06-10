@@ -29,6 +29,9 @@ enum Feature
 - [init?(rawValue: Int)](accessibilitysettings/feature/init(rawvalue:).md)
 ### Enumeration Cases
 - [AccessibilitySettings.Feature.allowAppsToAddAudioToCalls](accessibilitysettings/feature/allowappstoaddaudiotocalls.md)
+- [AccessibilitySettings.Feature.assistiveTouch](accessibilitysettings/feature/assistivetouch.md)
+- [AccessibilitySettings.Feature.assistiveTouchDevices](accessibilitysettings/feature/assistivetouchdevices.md)
+- [AccessibilitySettings.Feature.dwellControl](accessibilitysettings/feature/dwellcontrol.md)
 
 ## Relationships
 
@@ -38,6 +41,7 @@ enum Feature
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

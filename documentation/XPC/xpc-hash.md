@@ -1,6 +1,6 @@
 # xpc_hash(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Calculates a hash value for the specified object.

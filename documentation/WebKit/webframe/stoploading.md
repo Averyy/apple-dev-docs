@@ -1,6 +1,6 @@
 # stopLoading()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Stops any pending loads on the receiver’s data source, and those of its children.

@@ -1,6 +1,6 @@
 # SVG_EDGEMODE_DUPLICATE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

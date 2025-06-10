@@ -20,6 +20,10 @@ A `PickerStyle` where each option is displayed inline with other views in the cu
 static var inline: InlinePickerStyle { get }
 ```
 
+## Mentions
+
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+
 ## See Also
 
 - [static var automatic: DefaultPickerStyle](pickerstyle/automatic.md)

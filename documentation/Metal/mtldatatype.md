@@ -226,6 +226,9 @@ enum MTLDataType
 ### Invalid Data Types
 - [MTLDataType.none](mtldatatype/none.md)
   A placeholder that represents a GPU function parameter that doesn’t have a valid data type.
+### Enumeration Cases
+- [MTLDataType.tensor](mtldatatype/tensor.md)
+  Represents a data type corresponding to a machine learning tensor.
 ### Initializers
 - [init?(rawValue: UInt)](mtldatatype/init(rawvalue:).md)
 
@@ -237,6 +240,7 @@ enum MTLDataType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

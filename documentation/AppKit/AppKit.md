@@ -1,6 +1,6 @@
 # AppKit
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: module
 
 Construct and manage a graphical, event-driven user interface for your macOS app.
@@ -13,7 +13,7 @@ Construct and manage a graphical, event-driven user interface for your macOS app
 
 AppKit contains the objects you need to build the user interface for a macOS app. In addition to drawing windows, buttons, panels, and text fields, it handles all the event management and interaction between your app, people, and macOS.
 
-![An image of a MacBook Pro showing Calendar, Maps, and the Dock on the screen.](https://docs-assets.developer.apple.com/published/5dd2fc2d7bcc09ecaf739c3d145f92cd/media-4209947%402x.png)
+![An image of the Landmarks sample app on Mac showing the Mount Fuji landmark.](https://docs-assets.developer.apple.com/published/2ba3100f3acde10ba4fbbbdb32b4cbda/landmarks-app-article-hero%402x.png)
 
 Aside from drawing and managing interactions, AppKit handles printing, animating, as well as creating documents with large amounts of data efficiently. The framework also contains built-in support for localization and accessibility to ensure that your app reaches as many people as possible.
 
@@ -24,6 +24,8 @@ AppKit also works with [`SwiftUI`](https://developer.apple.com/documentation/Swi
 ## Topics
 
 ### Essentials
+- [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md)
+  Find out how to bring the new material to your app.
 - [AppKit updates](../Updates/AppKit.md)
   Learn about important changes to AppKit.
 - [Protecting the User’s Privacy](../UIKit/protecting-the-user-s-privacy.md)
@@ -101,29 +103,6 @@ AppKit also works with [`SwiftUI`](https://developer.apple.com/documentation/Swi
   Data types for use with multiple classes.
 - [Macros](macros.md)
   Macros for use with multiple classes.
-### Protocols
-- [protocol NSTextSuggestionsDelegate](nstextsuggestionsdelegate.md)
-  A protocol for suggestion delegates of text fields to conform to in order to provide text suggestions in response to the user typing.
-- [protocol NSViewContentSelectionInfo](nsviewcontentselectioninfo.md)
-### Structures
-- [struct NSSuggestionItem](nssuggestionitem.md)
-  The items that appear in suggestion menus.
-- [struct NSSuggestionItemResponse](nssuggestionitemresponse.md)
-  Describes the result of a batch of suggestion items from a search
-- [struct NSSuggestionItemSection](nssuggestionitemsection.md)
-  Describes a section of suggestions items in a suggestions menu
-### Variables
-- [var NSPasteboardCommunicationError: Int](nspasteboardcommunicationerror.md)
-- [var NSPasteboardContentsNotAvailableError: Int](nspasteboardcontentsnotavailableerror.md)
-- [var NSPasteboardErrorMaximum: Int](nspasteboarderrormaximum.md)
-- [var NSPasteboardErrorMinimum: Int](nspasteboarderrorminimum.md)
-- [var NSPasteboardInvalidArgumentError: Int](nspasteboardinvalidargumenterror.md)
-- [var NSPasteboardMiscellaneousError: Int](nspasteboardmiscellaneouserror.md)
-### Macros
-- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> NSViewController)](preview(_:traits:body:)-55ljx.md)
-  Preview an NSViewController.
-- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> NSView)](preview(_:traits:body:)-7pfjp.md)
-  Preview an NSView.
 
 
 ---

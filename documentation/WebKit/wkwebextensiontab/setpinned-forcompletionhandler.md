@@ -1,6 +1,6 @@
 # setPinned(_:for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to set the pinned state of the tab.

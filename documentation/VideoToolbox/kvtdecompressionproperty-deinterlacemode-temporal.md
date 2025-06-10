@@ -1,6 +1,6 @@
 # kVTDecompressionProperty_DeinterlaceMode_Temporal
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A temporal deinterlace mode.

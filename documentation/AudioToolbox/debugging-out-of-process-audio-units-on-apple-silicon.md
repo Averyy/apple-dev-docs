@@ -24,8 +24,6 @@ The process name to use depends on the host, as well as the architectures of the
 
 > ⚠️ **Warning**:  Leaving system integrity protection in a disabled state makes your computer vulnerable to malicious code, so enable it when you finish debugging your audio units.
 
- Leaving system integrity protection in a disabled state makes your computer vulnerable to malicious code, so enable it when you finish debugging your audio units.
-
 ##### Troubleshoot Common Issues for Audio Units
 
 Debugging is generally a seamless process, but if you encounter issues, consider the following:

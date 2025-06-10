@@ -1,6 +1,6 @@
 # XCTPerformanceMeasurement
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: class
 
 A measurement from a single iteration of a performance test.

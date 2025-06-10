@@ -21,7 +21,7 @@ func globalProgress(for kind: Progress.FileOperationKind) -> Progress
 
 The returned progress instance tracks ongoing operations. This method supports two kinds of operations:
 
-The progress instance has its [`fileOperationKind`](https://developer.apple.com/documentation/foundation/progress/2865625-fileoperationkind) property set. It also provides the number of items to upload or download, the number of bytes already transferred, and the total number of bytes to transfer. The grand total is reset to `0` when there are no operations left.
+The progress instance has its [`fileOperationKind`](https://developer.apple.com/documentation/Foundation/Progress/fileOperationKind-swift.property) property set. It also provides the number of items to upload or download, the number of bytes already transferred, and the total number of bytes to transfer. The grand total is reset to `0` when there are no operations left.
 
 If new matching operations begin while the progress instance is running, it adds the new operations to the existing data. By default, when there are no matching operations, the progress has its values set to `1` and its state set to finished.
 

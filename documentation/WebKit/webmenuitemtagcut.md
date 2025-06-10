@@ -1,6 +1,6 @@
 # WebMenuItemTagCut
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Cut the currently selected content.

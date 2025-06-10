@@ -1,6 +1,6 @@
 # WebMenuItemTagLookUpInDictionary
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Look up the current selection in the Dictionary.

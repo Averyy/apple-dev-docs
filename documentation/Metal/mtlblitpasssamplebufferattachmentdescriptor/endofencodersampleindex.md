@@ -31,8 +31,6 @@ You can tell the GPU to skip sampling at the end of the blit pass by assigning [
 
 > ❗ **Important**:  For [`MTLDevice`](mtldevice.md) instances that don’t support [`MTLCounterSamplingPoint.atStageBoundary`](mtlcountersamplingpoint/atstageboundary.md) (see [`supportsCounterSampling(_:)`](mtldevice/supportscountersampling(_:).md)), set this property to [`MTLCounterDontSample`](mtlcounterdontsample.md).
 
- For [`MTLDevice`](mtldevice.md) instances that don’t support [`MTLCounterSamplingPoint.atStageBoundary`](mtlcountersamplingpoint/atstageboundary.md) (see [`supportsCounterSampling(_:)`](mtldevice/supportscountersampling(_:).md)), set this property to [`MTLCounterDontSample`](mtlcounterdontsample.md).
-
 ## See Also
 
 - [var sampleBuffer: (any MTLCounterSampleBuffer)?](mtlblitpasssamplebufferattachmentdescriptor/samplebuffer.md)

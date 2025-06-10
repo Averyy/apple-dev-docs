@@ -1,6 +1,6 @@
 # DataScannerViewController.TextContentType.emailAddress
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: case
 
 The content type for an email address that appears in text.

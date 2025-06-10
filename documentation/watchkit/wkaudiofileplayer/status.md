@@ -1,6 +1,6 @@
 # status
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The status of the player.

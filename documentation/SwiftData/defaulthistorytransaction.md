@@ -56,6 +56,7 @@ struct DefaultHistoryTransaction
 - [HistoryTransaction](historytransaction.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

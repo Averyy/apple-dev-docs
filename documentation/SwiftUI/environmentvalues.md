@@ -151,8 +151,6 @@ Clients of your value then access the value in the usual way, reading it with th
 ### Controls and input
 - [var buttonRepeatBehavior: ButtonRepeatBehavior](environmentvalues/buttonrepeatbehavior.md)
   Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
-- [var controlSize: ControlSize](environmentvalues/controlsize.md)
-  The size to apply to controls within a view.
 - [var defaultWheelPickerItemHeight: CGFloat](environmentvalues/defaultwheelpickeritemheight.md)
   The default height of an item in a wheel-style picker, such as a date picker.
 - [var keyboardShortcut: KeyboardShortcut?](environmentvalues/keyboardshortcut.md)
@@ -296,7 +294,7 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)
   The default minimum height of a header in a list.
 - [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
-  The default minimum height of a row in a `List`. The default minimum height of a row in a list.
+  The default minimum height of a row in a list.
 - [var headerProminence: Prominence](environmentvalues/headerprominence.md)
   The prominence to apply to section headers within a view.
 - [var physicalMetrics: PhysicalMetricsConverter](environmentvalues/physicalmetrics.md)
@@ -341,12 +339,20 @@ Clients of your value then access the value in the usual way, reading it with th
 ### Instance Properties
 - [var activityFamily: ActivityFamily](environmentvalues/activityfamily.md)
   The size family of the current Live Activity.
+- [var buttonSizing: ButtonSizing](environmentvalues/buttonsizing.md)
+- [var controlSize: ControlSize](environmentvalues/controlsize-3sgmh.md)
+  The size to apply to controls within a view.
+- [var controlSize: ControlSize](environmentvalues/controlsize-9ixbk.md)
+  The size to apply to controls within a view.
 - [var credentialExportManager: ASCredentialExportManager](environmentvalues/credentialexportmanager.md)
   This environment variable is for SwiftUI clients of the credential exchange API. An example usage might look like:
 - [var credentialImportManager: ASCredentialImportManager](environmentvalues/credentialimportmanager.md)
   This environment variable is for SwiftUI clients of the credential exchange API. An example usage might look like:
 - [var devicePickerSupports: DevicePickerSupportedAction](environmentvalues/devicepickersupports.md)
   Checks for support to present a DevicePicker.
+- [var findContext: FindContext?](environmentvalues/findcontext.md)
+- [var fontResolutionContext: Font.Context](environmentvalues/fontresolutioncontext.md)
+  Information used to resolve a font.
 - [var imagePlaygroundAllowedGenerationStyles: [ImagePlaygroundStyle]](environmentvalues/imageplaygroundallowedgenerationstyles.md)
 - [var imagePlaygroundPersonalizationPolicy: ImagePlaygroundPersonalizationPolicy](environmentvalues/imageplaygroundpersonalizationpolicy.md)
 - [var imagePlaygroundSelectedGenerationStyle: ImagePlaygroundStyle](environmentvalues/imageplaygroundselectedgenerationstyle.md)
@@ -354,12 +360,39 @@ Clients of your value then access the value in the usual way, reading it with th
   A Boolean value that indicates whether the Live Activity update synchronization rate is reduced.
 - [var isUserAuthenticationEnabled: Bool](environmentvalues/isuserauthenticationenabled.md)
   The current system user authentication enablement status.
+- [var labelIconToTitleSpacing: CGFloat?](environmentvalues/labelicontotitlespacing.md)
+  The spacing between the icon and title of a label.
+- [var labelReservedIconWidth: CGFloat?](environmentvalues/labelreservediconwidth.md)
+  The width reserved for icons in labels.
+- [var levelOfDetail: LevelOfDetail](environmentvalues/levelofdetail.md)
+  The level of detail the view is recommended to have.
+- [var lineHeight: AttributedString.LineHeight?](environmentvalues/lineheight.md)
+  The default line height for text influenced by this environment.
+- [var navigationLinkIndicatorVisibility: Visibility](environmentvalues/navigationlinkindicatorvisibility.md)
+  A value that says whether a built-in navigation link would show a disclosure indicator in the current context.
+- [var remoteDeviceIdentifier: RemoteDeviceIdentifier?](environmentvalues/remotedeviceidentifier.md)
+  An opaque object that identifies the device on which the scene (from which this value is accessed from) is being presented on.
+- [var requestAgeRange: DeclaredAgeRangeAction](environmentvalues/requestagerange.md)
+  The property in the environment for adoption of the age range API.
 - [var supportedActivityFamilies: Set<ActivityFamily>](environmentvalues/supportedactivityfamilies.md)
   An environment value that that indicates potential rendered family for a Live Activity.
 - [var supportsImagePlayground: Bool](environmentvalues/supportsimageplayground.md)
   A Boolean value that indicates whether image generation is available on the current device.
+- [var supportsRemoteScenes: Bool](environmentvalues/supportsremotescenes.md)
+  Indicates if the current device supports presenting a [`RemoteImmersiveSpace`](remoteimmersivespace.md) on a remote device.
+- [var surfaceSnappingInfo: SurfaceSnappingInfo](environmentvalues/surfacesnappinginfo.md)
+  Provides information about the current snap state of the scene.
+- [var symbolColorRenderingMode: SymbolColorRenderingMode?](environmentvalues/symbolcolorrenderingmode.md)
+  The property specifying how symbol images fill their layers, or nil to use the default fill style.
+- [var symbolVariableValueMode: SymbolVariableValueMode?](environmentvalues/symbolvariablevaluemode.md)
+  The current symbol variable value mode, or `nil` denoting that the mode is picked automatically.
 - [var tabBarPlacement: TabBarPlacement?](environmentvalues/tabbarplacement.md)
   The current placement of the tab bar.
+- [var tabViewBottomAccessoryPlacement: TabViewBottomAccessoryPlacement?](environmentvalues/tabviewbottomaccessoryplacement.md)
+  The current placement of the tab view bottom accessory.
+- [var windowClippingMargins: EdgeInsets3D](environmentvalues/windowclippingmargins.md)
+- [var writingToolsBehavior: WritingToolsBehavior?](environmentvalues/writingtoolsbehavior.md)
+  The current Writing Tools behavior for text and text input.
 
 ## Relationships
 

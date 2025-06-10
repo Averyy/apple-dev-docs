@@ -3,7 +3,7 @@
 **Framework**: Apple CryptoKit  
 **Kind**: struct
 
-The result of an encapsulation operation
+The result of a key encapsulation operation.
 
 **Availability**:
 - iOS 17.0+
@@ -24,16 +24,18 @@ struct EncapsulationResult
 
 ### Initializers
 - [init(sharedSecret: SymmetricKey, encapsulated: Data)](kem/encapsulationresult/init(sharedsecret:encapsulated:).md)
+  Initializes a key encapsulation result.
 ### Instance Properties
 - [let encapsulated: Data](kem/encapsulationresult/encapsulated.md)
-  The encapsulated secret
+  The encapsulated representation of the shared secret.
 - [let sharedSecret: SymmetricKey](kem/encapsulationresult/sharedsecret.md)
-  The shared secret
+  The shared secret.
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

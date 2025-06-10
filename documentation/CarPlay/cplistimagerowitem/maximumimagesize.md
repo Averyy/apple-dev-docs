@@ -13,6 +13,7 @@ The maximum size of an image that an image row can display.
 ## Declaration
 
 ```swift
+@MainActor
 class var maximumImageSize: CGSize { get }
 ```
 

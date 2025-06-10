@@ -10,6 +10,7 @@ Creates a custom material from a lighting model, surface shader, and geometry mo
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

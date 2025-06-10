@@ -14,6 +14,11 @@
 var hashValue: Int { get }
 ```
 
+## See Also
+
+- [let rawValue: String](storeandforwardbatchdeletiontoken/rawvalue-swift.property.md)
+  The raw token string your payment service provider supplies.
+
 
 ---
 

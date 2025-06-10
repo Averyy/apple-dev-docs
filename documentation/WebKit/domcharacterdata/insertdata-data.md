@@ -1,6 +1,6 @@
 # insertData(_:data:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

@@ -1,6 +1,6 @@
 # systemRecommendedExposureBiasRange
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 The system’s recommended exposure bias range for this device format.

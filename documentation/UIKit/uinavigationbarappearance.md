@@ -32,6 +32,11 @@ After creating a [`UINavigationBarAppearance`](uinavigationbarappearance.md) obj
   String attributes to apply to the text of a large-size title.
 - [var titlePositionAdjustment: UIOffset](uinavigationbarappearance/titlepositionadjustment.md)
   The distance, in points, by which to offset the title horizontally and vertically.
+### Configuring the subtitle
+- [var subtitleTextAttributes: [NSAttributedString.Key : Any]](uinavigationbarappearance/subtitletextattributes.md)
+  The default text attributes to apply to the subtitle rendered in the navigation bar.
+- [var largeSubtitleTextAttributes: [NSAttributedString.Key : Any]](uinavigationbarappearance/largesubtitletextattributes.md)
+  The default text attributes to apply to the subtitle when it’s rendered under the large title.
 ### Configuring bar button items
 - [var buttonAppearance: UIBarButtonItemAppearance](uinavigationbarappearance/buttonappearance.md)
   The appearance attributes for plain bar button items in the navigation bar.
@@ -47,6 +52,9 @@ After creating a [`UINavigationBarAppearance`](uinavigationbarappearance.md) obj
 ### Configuring the Done button
 - [var doneButtonAppearance: UIBarButtonItemAppearance](uinavigationbarappearance/donebuttonappearance.md)
   The appearance attributes for Done buttons.
+### Instance Properties
+- [var prominentButtonAppearance: UIBarButtonItemAppearance](uinavigationbarappearance/prominentbuttonappearance.md)
+  The appearance attributes for Prominent buttons.
 
 ## Relationships
 
@@ -63,6 +71,7 @@ After creating a [`UINavigationBarAppearance`](uinavigationbarappearance.md) obj
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

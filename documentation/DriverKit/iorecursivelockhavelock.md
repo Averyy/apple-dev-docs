@@ -15,6 +15,18 @@
 bool IORecursiveLockHaveLock(struct IORecursiveLock * lock);
 ```
 
+#### Return Value
+
+True if the calling thread holds the lock otherwise false.
+
+#### Discussion
+
+If the lock is held by the calling thread, return true, otherwise the lock is unlocked, or held by another thread and false is returned.
+
+## Parameters
+
+- `lock`: Pointer to the allocated lock.
+
 ## See Also
 
 - [dequeue_head](dequeue_head.md)

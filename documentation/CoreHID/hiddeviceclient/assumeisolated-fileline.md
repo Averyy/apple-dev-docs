@@ -1,6 +1,6 @@
 # assumeIsolated(_:file:line:)
 
-**Framework**: Corehid  
+**Framework**: Core HID  
 **Kind**: method
 
 Assume that the current task is executing on this actor’s serial executor, or stop program execution otherwise.

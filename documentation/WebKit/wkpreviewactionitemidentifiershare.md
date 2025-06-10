@@ -1,6 +1,6 @@
 # WKPreviewActionItemIdentifierShare
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Displays the Share panel options available for the item.

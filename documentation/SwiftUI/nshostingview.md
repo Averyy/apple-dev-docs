@@ -117,7 +117,9 @@ A hosting view acts as a bridge between your SwiftUI views and your AppKit inter
 - [var clipsToBounds: Bool](nshostingview/clipstobounds.md)
 ### Instance Methods
 - [func acceptsFirstMouse(for: NSEvent?) -> Bool](nshostingview/acceptsfirstmouse(for:).md)
+- [func beginDocument()](nshostingview/begindocument.md)
 - [func didAddSubview(NSView)](nshostingview/didaddsubview(_:).md)
+- [func endDocument()](nshostingview/enddocument.md)
 - [func observeValue(forKeyPath: String?, of: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?)](nshostingview/observevalue(forkeypath:of:change:context:).md)
 - [func shouldDelayWindowOrdering(for: NSEvent) -> Bool](nshostingview/shoulddelaywindowordering(for:).md)
 - [func showContextMenuForSelection(Any?)](nshostingview/showcontextmenuforselection(_:).md)
@@ -158,6 +160,8 @@ A hosting view acts as a bridge between your SwiftUI views and your AppKit inter
   An AppKit menu with menu items that are defined by a SwiftUI View.
 - [struct NSHostingSizingOptions](nshostingsizingoptions.md)
   Options for how hosting views and controllers reflect their content’s size into Auto Layout constraints.
+- [class NSHostingSceneRepresentation](nshostingscenerepresentation.md)
+  An AppKit type that hosts and can present SwiftUI scenes
 - [struct NSHostingSceneBridgingOptions](nshostingscenebridgingoptions.md)
   Options for how hosting views and controllers manage aspects of the associated window.
 

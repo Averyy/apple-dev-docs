@@ -1,6 +1,6 @@
 # distance(from:to:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns the distance between two indices.

@@ -1,6 +1,6 @@
 # Accessing and using secure element credentials
 
-**Framework**: Secureelementcredential
+**Framework**: SecureElementCredential
 
 Manage and use payment cards and other credentials.
 
@@ -384,4 +384,4 @@ struct TransactionView: View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SecureElementCredential/accessing-and-using-secure-element-credentials)*
+*[View on Apple Developer](https://developer.apple.com/documentation/secureelementcredential/accessing-and-using-secure-element-credentials)*

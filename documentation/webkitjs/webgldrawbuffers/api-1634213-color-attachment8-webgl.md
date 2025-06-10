@@ -1,6 +1,6 @@
 # COLOR_ATTACHMENT8_WEBGL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

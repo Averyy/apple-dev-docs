@@ -1,6 +1,6 @@
 # shuffled(using:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns the elements of the sequence, shuffled using the given generator as a source for randomness.

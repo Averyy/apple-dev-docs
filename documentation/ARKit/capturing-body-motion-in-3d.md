@@ -1,6 +1,6 @@
 # Capturing Body Motion in 3D
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Track a person in the physical environment and visualize their motion by applying the same body movements to a virtual character.
 
@@ -27,4 +27,4 @@ To run the sample, use an iOS device with an A12 chip or later.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/capturing-body-motion-in-3d)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/capturing-body-motion-in-3d)*

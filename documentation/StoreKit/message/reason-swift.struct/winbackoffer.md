@@ -20,8 +20,8 @@ static let winBackOffer: Message.Reason
 ## Mentions
 
 - [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
-- [Testing win-back offers in the sandbox environment](testing-win-back-offers-in-the-sandbox-environment.md)
 - [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
+- [Testing win-back offers in the sandbox environment](testing-win-back-offers-in-the-sandbox-environment.md)
 
 #### Discussion
 

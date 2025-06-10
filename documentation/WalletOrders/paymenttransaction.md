@@ -1,6 +1,6 @@
 # PaymentTransaction
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: dictionary
 
 The details about a payment transaction.

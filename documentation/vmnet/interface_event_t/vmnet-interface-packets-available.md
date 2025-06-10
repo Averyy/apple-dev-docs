@@ -1,6 +1,6 @@
 # VMNET_INTERFACE_PACKETS_AVAILABLE
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: property
 
 **Availability**:

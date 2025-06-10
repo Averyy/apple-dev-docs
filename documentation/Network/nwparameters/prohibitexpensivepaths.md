@@ -26,8 +26,6 @@ To test the behavior of this property, you can override the device’s current v
 
 > 💡 **Tip**:  Prefer basing your app’s policy logic around the [`prohibitConstrainedPaths`](nwparameters/prohibitconstrainedpaths.md) property rather than this one. People using your app can use the “Low Data Mode” setting to set the constrained status, and thereby choose to use a potentially expensive network.
 
- Prefer basing your app’s policy logic around the [`prohibitConstrainedPaths`](nwparameters/prohibitconstrainedpaths.md) property rather than this one. People using your app can use the “Low Data Mode” setting to set the constrained status, and thereby choose to use a potentially expensive network.
-
 ## See Also
 
 - [var requiredInterfaceType: NWInterface.InterfaceType](nwparameters/requiredinterfacetype.md)

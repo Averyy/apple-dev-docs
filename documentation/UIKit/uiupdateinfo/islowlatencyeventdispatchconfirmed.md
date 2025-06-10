@@ -26,8 +26,6 @@ This value can change from `false` to `true` during the UI update, but not from 
 
 > ❗ **Important**:  Checking the value of this property can cause the system to commit to low-latency event dispatch unnecessarily. Check this property only when you have an intention to act on its value.
 
- Checking the value of this property can cause the system to commit to low-latency event dispatch unnecessarily. Check this property only when you have an intention to act on its value.
-
 ## See Also
 
 - [var isImmediatePresentationExpected: Bool](uiupdateinfo/isimmediatepresentationexpected.md)

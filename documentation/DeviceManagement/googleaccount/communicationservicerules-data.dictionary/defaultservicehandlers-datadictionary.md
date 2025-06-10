@@ -6,11 +6,9 @@
 A dictionary of default service handlers.
 
 **Availability**:
-- iOS 9.3+
-- iPadOS 9.3+
+- iOS 10.0+
+- iPadOS 10.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

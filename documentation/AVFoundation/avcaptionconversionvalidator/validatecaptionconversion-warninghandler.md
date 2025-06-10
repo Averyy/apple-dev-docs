@@ -25,8 +25,6 @@ Stop an in-progress validation operation by calling [`stopValidating()`](avcapti
 
 > ❗ **Important**:  It’s only valid to call this method when the validator’s state is [`AVCaptionConversionValidator.Status.unknown`](avcaptionconversionvalidator/status-swift.enum/unknown.md).
 
- It’s only valid to call this method when the validator’s state is [`AVCaptionConversionValidator.Status.unknown`](avcaptionconversionvalidator/status-swift.enum/unknown.md).
-
 ## Parameters
 
 - `handler`: The callback the system invokes when it finishes validation.

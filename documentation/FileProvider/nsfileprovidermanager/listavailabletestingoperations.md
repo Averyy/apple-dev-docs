@@ -21,8 +21,6 @@ func listAvailableTestingOperations() throws -> [any NSFileProviderTestingOperat
 
 > ❗ **Important**:  Before calling this method, you must set the domain’s [`testingModes`](nsfileproviderdomain/testingmodes-swift.property.md) property to include the [`interactive`](nsfileproviderdomain/testingmodes-swift.struct/interactive.md) value.
 
- Before calling this method, you must set the domain’s [`testingModes`](nsfileproviderdomain/testingmodes-swift.property.md) property to include the [`interactive`](nsfileproviderdomain/testingmodes-swift.struct/interactive.md) value.
-
 The system waits for all the pending disk and working set updates before returning the list of available operations. The operations that it returns may become invalid if the system receives new events, or when you schedule and execute operations using the [`run(_:)`](nsfileprovidermanager/run(_:).md) method.
 
 ## See Also

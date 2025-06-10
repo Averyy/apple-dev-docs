@@ -40,6 +40,7 @@ Pass instances of this structure to [`presentContent(_:from:)`](proximityreaderd
 ### Conforms To
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

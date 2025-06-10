@@ -13,6 +13,7 @@ A template that displays and manages a grid of items.
 ## Declaration
 
 ```swift
+@MainActor
 class CPGridTemplate
 ```
 
@@ -38,6 +39,9 @@ When there are more than eight buttons in the array, the template displays only 
 ### Instance Methods
 - [func updateGridButtons([CPGridButton])](cpgridtemplate/updategridbuttons(_:).md)
 - [func updateTitle(String)](cpgridtemplate/updatetitle(_:).md)
+### Type Properties
+- [class var maximumGridButtonImageSize: CGSize](cpgridtemplate/maximumgridbuttonimagesize.md)
+  The expected image size for your @c CPGridButton.
 
 ## Relationships
 
@@ -53,6 +57,8 @@ When there are more than eight buttons in the array, the template displays only 
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

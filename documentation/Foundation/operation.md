@@ -186,6 +186,7 @@ In addition to simply exiting when an operation is cancelled, it is also importa
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -197,4 +198,4 @@ In addition to simply exiting when an operation is cancelled, it is also importa
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/operation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/operation)*

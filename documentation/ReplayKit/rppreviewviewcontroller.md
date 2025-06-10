@@ -16,7 +16,6 @@ An object that displays a user interface where users preview and edit a screen r
 ## Declaration
 
 ```swift
-@MainActor
 class RPPreviewViewController
 ```
 
@@ -57,6 +56,7 @@ Upon completion of a successful recording, the preview view controller is passed
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

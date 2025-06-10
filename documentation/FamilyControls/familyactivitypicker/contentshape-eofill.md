@@ -1,6 +1,6 @@
 # contentShape(_:_:eoFill:)
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Sets the content shape for this view.

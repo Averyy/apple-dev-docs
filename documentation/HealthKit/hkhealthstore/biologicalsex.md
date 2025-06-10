@@ -1,6 +1,6 @@
 # biologicalSex()
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: method
 
 Reads someone’s biological sex from the HealthKit store.

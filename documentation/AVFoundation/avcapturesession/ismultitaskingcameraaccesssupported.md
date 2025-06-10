@@ -1,6 +1,6 @@
 # isMultitaskingCameraAccessSupported
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that indicates whether the capture session supports using the camera while multitasking.

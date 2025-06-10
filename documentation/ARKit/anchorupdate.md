@@ -33,6 +33,7 @@ struct AnchorUpdate<AnchorType> where AnchorType : Anchor
 ### Conforms To
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

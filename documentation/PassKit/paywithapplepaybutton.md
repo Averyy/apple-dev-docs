@@ -32,6 +32,7 @@
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also
@@ -40,6 +41,7 @@
   An object that displays a button either to trigger payments through Apple Pay or to prompt the user to set up a card.
 - [struct PayWithApplePayButtonLabel](paywithapplepaybuttonlabel.md)
 - [struct PayWithApplePayButtonStyle](paywithapplepaybuttonstyle.md)
+- [struct PayWithApplePayButtonLabel](paywithapplepaybuttonlabel.md)
 
 
 ---

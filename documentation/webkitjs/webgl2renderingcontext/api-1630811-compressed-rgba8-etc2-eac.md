@@ -1,6 +1,6 @@
 # COMPRESSED_RGBA8_ETC2_EAC
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

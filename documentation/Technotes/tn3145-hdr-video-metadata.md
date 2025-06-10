@@ -112,4 +112,4 @@ Refer to [`Incorporating HDR video with Dolby Vision into your apps`](https://de
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3145-hdr-video-metadata)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3145-hdr-video-metadata)*

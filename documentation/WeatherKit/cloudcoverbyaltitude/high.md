@@ -1,6 +1,6 @@
 # high
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The percentage of the sky covered with high-altitude clouds. High-level Cloud Cover (HCC)corresponds to levels higher than 6300m above the model’s earth surface.

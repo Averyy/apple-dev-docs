@@ -5,6 +5,13 @@
 
 Encodes this value into the given encoder, when the type’s `RawValue` is `Int`.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift

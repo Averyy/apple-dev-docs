@@ -1,6 +1,6 @@
 # batchSize
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: property
 
 The number of examples to use per mini-batch.
@@ -46,4 +46,4 @@ A larger batch size will speed up computation when training, as long as the batc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/fullyconnectednetworkconfiguration/batchsize)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/fullyconnectednetworkconfiguration/batchsize)*

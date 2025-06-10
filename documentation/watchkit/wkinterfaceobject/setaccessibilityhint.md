@@ -1,6 +1,6 @@
 # setAccessibilityHint(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Sets the description of what happens when performing an action on the accessibility element.

@@ -55,8 +55,7 @@
 - [static func += (inout Self, Self.Scalar)](simd4/+=(_:_:)-33gh7.md)
 - [static func += (inout Self, Self.Scalar)](simd4/+=(_:_:)-3itnf.md)
 - [static func += (inout Self, Self)](simd4/+=(_:_:)-4kfxk.md)
-- [static func - (Self) -> Self](simd4/-(_:)-2l2xr.md)
-- [static func - (Self) -> Self](simd4/-(_:)-9eadc.md)
+- [static func - (Self) -> Self](simd4/-(_:).md)
 - [static func - (Self, Self.Scalar) -> Self](simd4/-(_:_:)-1epj7.md)
 - [static func - (Self.Scalar, Self) -> Self](simd4/-(_:_:)-59rjl.md)
 - [static func - (Self, Self) -> Self](simd4/-(_:_:)-5hvnn.md)
@@ -134,7 +133,6 @@
 ### Initializers
 - [init<S>(S)](simd4/init(_:)-3eyf0.md)
   Creates a vector from the given sequence.
-- [init(Self.Scalar)](simd4/init(_:)-3vgkf.md)
 - [init(arrayLiteral: Self.Scalar...)](simd4/init(arrayliteral:).md)
   Creates a vector from the specified elements.
 - [init(from: any Decoder) throws](simd4/init(from:).md)

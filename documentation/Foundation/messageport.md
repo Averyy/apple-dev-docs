@@ -43,6 +43,8 @@ class MessagePort
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -61,4 +63,4 @@ class MessagePort
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/messageport)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/messageport)*

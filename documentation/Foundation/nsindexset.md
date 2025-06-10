@@ -20,10 +20,6 @@ An immutable collection of unique integer values that represent indexes in anoth
 class NSIndexSet
 ```
 
-## Mentions
-
-- [init](1807255-init.md)
-
 #### Overview
 
 In Swift, this type bridges to [`IndexSet`](indexset.md); use [`NSIndexSet`](nsindexset.md) when you need reference semantics or other Foundation-specific behavior.
@@ -41,8 +37,6 @@ You must not subclass the `NSIndexSet` class.
 The mutable subclass of `NSIndexSet` is [`NSMutableIndexSet`](nsmutableindexset.md).
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`IndexSet`](indexset.md) structure, which bridges to the [`NSIndexSet`](nsindexset.md) class and its mutable subclass, [`NSMutableIndexSet`](nsmutableindexset.md). For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
-
- The Swift overlay to the Foundation framework provides the [`IndexSet`](indexset.md) structure, which bridges to the [`NSIndexSet`](nsindexset.md) class and its mutable subclass, [`NSMutableIndexSet`](nsmutableindexset.md). For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
 
 ## Topics
 

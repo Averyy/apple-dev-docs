@@ -1,6 +1,6 @@
 # accentColor
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 A color that reflects the accent color of the system or app.
@@ -43,4 +43,4 @@ Text("Accent Color")
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/color/accentcolor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/color/accentcolor)*

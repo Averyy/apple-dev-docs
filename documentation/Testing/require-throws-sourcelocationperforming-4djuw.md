@@ -1,6 +1,6 @@
 # require(throws:_:sourceLocation:performing:)
 
-**Framework**: Testing  
+**Framework**: Swift Testing  
 **Kind**: macro
 
 **Availability**:

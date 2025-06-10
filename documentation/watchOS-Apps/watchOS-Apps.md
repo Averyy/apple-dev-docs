@@ -1,6 +1,6 @@
 # watchOS apps
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Build watchOS apps that combine complications, notifications, and Siri to create a personal experience on Apple Watch.
 
@@ -88,7 +88,7 @@ Use SiriKit and App intents to expand the ways people can interact with your app
 - [Keeping a widget up to date](../WidgetKit/Keeping-a-Widget-Up-To-Date.md)
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
 - [Increasing the visibility of widgets in Smart Stacks](../WidgetKit/Widget-Suggestions-In-Smart-Stacks.md)
-  Donate intents and indicate relevance to automatically show your widget in Smart Stacks when it has useful information to display.
+  Provide contextual information and donate intents to the system to make sure your widget appears prominently in Smart Stacks.
 ### Notifications
 - [Notifications](notifications.md)
   Communicate with users even when your app isn’t running.

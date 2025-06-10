@@ -40,7 +40,7 @@ The array of test postbacks in the test session need to follow the same rules th
 
 - [var postbacks: [SKAdTestPostback]](skadtestsession/postbacks.md)
   An array of test postbacks you set in the testing environment.
-- [func flushPostbacks(responses: SKANTestPostbackResponseHandler)](skadtestsession/flushpostbacks(responses:).md)
+- [func flushPostbacks(responses: ([String : SKAdTestPostbackResponse]?, (any Error)?) -> Void)](skadtestsession/flushpostbacks(responses:).md)
   Sends the test postbacks and handles the responses.
 - [typealias SKANTestPostbackResponseHandler](skantestpostbackresponsehandler.md)
   A type that represents the test postback response handler.

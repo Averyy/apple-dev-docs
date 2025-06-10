@@ -1,6 +1,6 @@
 # Integrating CloudKit access into your JavaScript automation scripts
 
-**Framework**: Cktooljs
+**Framework**: CKTool JS
 
 Configure your JavaScript project to use CKTool JS.
 
@@ -113,4 +113,4 @@ In TypeScript, the compiler catches attempts to pass values of the wrong type. I
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CKToolJS/integrating-cloudkit-access-into-your-javascript-automation-scripts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cktooljs/integrating-cloudkit-access-into-your-javascript-automation-scripts)*

@@ -1,6 +1,6 @@
 # Pass Type IDs Entitlement
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 A list of identifiers that specify pass types that your app can access in Wallet.

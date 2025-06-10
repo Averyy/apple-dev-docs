@@ -1,6 +1,6 @@
 # MapKit for SwiftUI
 
-**Framework**: Mapkit
+**Framework**: MapKit
 
 MapKit for SwiftUI allows you to build map-centric views and apps across Apple platforms. You can design expressive and highly interactive Maps with minimal code by composing views, using ViewBuilders and view modifiers.
 
@@ -12,6 +12,8 @@ Like MapKit for AppKit and UIKit, MapKit for SwiftUI allows you to take advantag
 
 ## Topics
 
+- [Searching, displaying, and navigating to places](searching-displaying-and-navigating-to-places.md)
+  Convert place information between coordinates and user-friendly place names, get cycling directions, and conveniently display formatted addresses.
 ### Essentials
 - [struct Map](map.md)
   A view that displays an embedded map interface.
@@ -72,6 +74,20 @@ Like MapKit for AppKit and UIKit, MapKit for SwiftUI allows you to take advantag
   Specifies the selection accessory to display for the selected map item content.
 - [static func callout(MapItemDetailSelectionAccessoryStyle.CalloutStyle) -> MapItemDetailSelectionAccessoryStyle](mapitemdetailselectionaccessorystyle/callout(_:).md)
   Presents the accessory as an annotation callout on the map.
+### Geocoding
+- [class MKGeocodingRequest](mkgeocodingrequest.md)
+  A class that looks up a geographic coordinate using the provided string.
+- [class MKReverseGeocodingRequest](mkreversegeocodingrequest.md)
+  A class that looks up address strings for the provided geographic coordinates.
+### Representing places and addresses
+- [class MKMapItem](mkmapitem.md)
+  A point of interest on the map.
+- [class MKAddress](mkaddress.md)
+  A class that contains a full address, and, optionally, a short address.
+- [class MKAddressRepresentations](mkaddressrepresentations.md)
+  A class that provides formatted address strings.
+- [GeoToolbox](../GeoToolbox/GeoToolbox.md)
+  Determine place descriptor information for map coordinates.
 ### Points of interest
 - [struct PointOfInterestCategories](pointofinterestcategories.md)
   A structure you use to define points of interest to include or exclude on a map.
@@ -87,8 +103,6 @@ Like MapKit for AppKit and UIKit, MapKit for SwiftUI allows you to take advantag
 ### Structures
 - [struct DefaultUserAnnotationContent](defaultuserannotationcontent.md)
   A structure that represents the view to show at the user’s location on the map.
-- [struct AnyMapContent](anymapcontent.md)
-  A structure you use to change the type of content MapKit uses in a map view.
 - [struct EmptyMapContent](emptymapcontent.md)
   A map content element that doesn’t contain any content.
 - [struct MapProxy](mapproxy.md)
@@ -108,4 +122,4 @@ Like MapKit for AppKit and UIKit, MapKit for SwiftUI allows you to take advantag
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MapKit/mapkit-for-swiftui)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkit/mapkit-for-swiftui)*

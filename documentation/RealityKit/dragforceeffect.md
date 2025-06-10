@@ -10,6 +10,7 @@ A force effect that slows bodies within its area of effect with a force proporti
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -21,8 +22,6 @@ struct DragForceEffect
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](dragforceeffect/init(from:).md)
-  Creates a new instance by decoding from the given decoder.
 - [init(strength: Double)](dragforceeffect/init(strength:).md)
   Creates a drag force effect.
 ### Instance Properties
@@ -33,12 +32,8 @@ struct DragForceEffect
 - [let strength: Float](dragforceeffect/strength.md)
   The magnitude of the force.
 ### Instance Methods
-- [func encode(to: any Encoder) throws](dragforceeffect/encode(to:).md)
-  Encodes this value into the given encoder.
 - [func update(parameters: inout ForceEffectParameters)](dragforceeffect/update(parameters:).md)
   Calculates the drag forces for rigid bodies from the force effect.
-### Default Implementations
-- [ForceEffectProtocol Implementations](dragforceeffect/forceeffectprotocol-implementations.md)
 
 ## Relationships
 

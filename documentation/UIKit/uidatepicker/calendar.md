@@ -20,7 +20,7 @@ var calendar: Calendar! { get set }
 
 #### Discussion
 
-The default value of this property corresponds to the user’s current calendar as configured in Settings. This is equivalent to the value returned by calling the [`NSCalendar`](https://developer.apple.com/documentation/Foundation/NSCalendar) class method [`current`](https://developer.apple.com/documentation/foundation/nscalendar/1408501-current). Setting this property to `nil` is equivalent to setting it to its default value.
+The default value of this property corresponds to the user’s current calendar as configured in Settings. This is equivalent to the value returned by calling the [`NSCalendar`](https://developer.apple.com/documentation/Foundation/NSCalendar) class method [`current`](https://developer.apple.com/documentation/Foundation/NSCalendar/current). Setting this property to `nil` is equivalent to setting it to its default value.
 
 Calendars specify the details of cultural systems used for reckoning time; they identify the beginning, length, and divisions of a year.
 

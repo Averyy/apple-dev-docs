@@ -29,6 +29,7 @@ Use an `AccountQuery` to find and filter a person’s accounts.
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

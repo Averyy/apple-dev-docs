@@ -16,8 +16,6 @@ To use `NEHotspotHelper` you must first be granted a special entitlement (`com.a
 
 > ❗ **Important**: `NEHotspotHelper` is  useful for hotspot integration. There are both technical and business restrictions that prevent it from being used for other tasks, such as accessory integration or Wi-Fi based location.
 
-`NEHotspotHelper` is  useful for hotspot integration. There are both technical and business restrictions that prevent it from being used for other tasks, such as accessory integration or Wi-Fi based location.
-
 #### Add an Accessory to the Users Network
 
 If you’re creating a hardware accessory and you want to make it easy for the user to add it to their local network, your best option is to build your accessory with that in mind.  Use one of these approaches:
@@ -26,8 +24,6 @@ If you’re creating a hardware accessory and you want to make it easy for the u
 - HomeKit — Call `HMHome` APIs like [`performAccessorySetup(using:completionHandler:)`](https://developer.apple.com/documentation/HomeKit/HMAccessorySetupManager/performAccessorySetup(using:completionHandler:)) to ask the system to scan for, pair, and configure any unpaired HomeKit accessories .
 
 > ❗ **Important**: To add WAC or HomeKit support to your accessory, join the [`MFi Program`](https://developer.apple.comhttps://mfi.apple.com/).
-
-To add WAC or HomeKit support to your accessory, join the [`MFi Program`](https://developer.apple.comhttps://mfi.apple.com/).
 
 If your accessory does not support WAC or HomeKit, you can build an accessory configuration experience on top of `NEHotspotConfigurationManager`, although this will not be as seamless as the WAC and HomeKit accessory experience.  For an example of how you might approach this, see [`Configuring a Wi-Fi accessory to join a network`](https://developer.apple.com/documentation/NetworkExtension/configuring-a-wi-fi-accessory-to-join-a-network).
 
@@ -51,8 +47,6 @@ If your goal is to communicate with other nearby devices, look at:
 Both of these support networking over peer-to-peer Wi-Fi.  In Network framework you must opt in to this via the [`includePeerToPeer`](https://developer.apple.com/documentation/Network/NWParameters/includePeerToPeer) property.  For more information about peer-to-peer networking, see [`TN3151: Choosing the right networking API`](tn3151-choosing-the-right-networking-api.md).
 
 > ❗ **Important**: The on-the-wire protocol used by these peer-to-peer networking APIs is not documented for third-party use, so this technique only works between Apple devices.
-
-The on-the-wire protocol used by these peer-to-peer networking APIs is not documented for third-party use, so this technique only works between Apple devices.
 
 #### Location Tracking
 

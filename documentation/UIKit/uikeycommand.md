@@ -107,6 +107,7 @@ iPad apps that run in macOS can use [`UIKeyCommand`](uikeycommand.md) to create 
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIMenuLeaf](uimenuleaf.md)
 
@@ -124,6 +125,7 @@ iPad apps that run in macOS can use [`UIKeyCommand`](uikeycommand.md) to create 
   A menu element that performs its action in a selector.
 - [class UIDeferredMenuElement](uideferredmenuelement.md)
   A placeholder menu element that the system replaces with the result of the block’s completion handler.
+- [UIDeferredMenuElement.Provider](uideferredmenuelement/provider.md)
 - [UIMenuElement.Attributes](uimenuelement/attributes.md)
   Attributes that determine the style of the menu element.
 - [UIMenuElement.State](uimenuelement/state.md)

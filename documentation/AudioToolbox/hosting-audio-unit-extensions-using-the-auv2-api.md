@@ -1,6 +1,6 @@
 # Hosting Audio Unit Extensions Using the AUv2 API
 
-**Framework**: Audiotoolbox
+**Framework**: Audio Toolbox
 
 Update your existing Audio Unit v2 host app to load and use Audio Unit extensions.
 
@@ -90,4 +90,4 @@ if (isAUv3) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AudioToolbox/hosting-audio-unit-extensions-using-the-auv2-api)*
+*[View on Apple Developer](https://developer.apple.com/documentation/audiotoolbox/hosting-audio-unit-extensions-using-the-auv2-api)*

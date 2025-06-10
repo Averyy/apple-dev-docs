@@ -29,8 +29,6 @@ func save() throws
 
 > ❗ **Important**: Use the [`hasChanges`](modelcontext/haschanges.md) property to determine whether the context has uncommitted changes before invoking this method. Otherwise, SwiftData may perform unnecessary work.
 
-Use the [`hasChanges`](modelcontext/haschanges.md) property to determine whether the context has uncommitted changes before invoking this method. Otherwise, SwiftData may perform unnecessary work.
-
 ## See Also
 
 - [var autosaveEnabled: Bool](modelcontext/autosaveenabled.md)

@@ -1,6 +1,6 @@
 # Pushing background updates to your App
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Deliver notifications that wake your app and update it in the background.
 
@@ -9,8 +9,6 @@ Deliver notifications that wake your app and update it in the background.
 If your app’s server-based content changes infrequently or at irregular intervals, you can use  to notify your app when new content becomes available. A background notification is a remote notification that doesn’t display an alert, play a sound, or badge your app’s icon. It wakes your app in the background and gives it time to initiate downloads from your server and update its content.
 
 > ❗ **Important**:  The system treats background notifications as low priority: you can use them to refresh your app’s content, but the system doesn’t guarantee their delivery. In addition, the system may throttle the delivery of background notifications if the total number becomes excessive. The number of background notifications allowed by the system depends on current conditions, but don’t try to send more than two or three per hour.
-
- The system treats background notifications as low priority: you can use them to refresh your app’s content, but the system doesn’t guarantee their delivery. In addition, the system may throttle the delivery of background notifications if the total number becomes excessive. The number of background notifications allowed by the system depends on current conditions, but don’t try to send more than two or three per hour.
 
 ##### Enable the Remote Notifications Capability
 

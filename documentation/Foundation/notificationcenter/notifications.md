@@ -26,8 +26,6 @@ Use the [`notifications(named:object:)`](notificationcenter/notifications(named:
 
 > 💡 **Tip**:  The [`Notification`](notification.md) type doesn’t conform to [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable), so iterating over this asynchronous sequence produces a compiler warning. You can use a [`map(_:)`](https://developer.apple.com/documentation/Swift/AsyncSequence/map(_:)-1q1k3) or [`compactMap(_:)`](https://developer.apple.com/documentation/Swift/AsyncSequence/compactMap(_:)-gfdq) operator on the sequence to extract sendable properties of the notification and iterate over those instead. See [`notifications(named:object:)`](notificationcenter/notifications(named:object:).md) for an example of this approach.
 
- The [`Notification`](notification.md) type doesn’t conform to [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable), so iterating over this asynchronous sequence produces a compiler warning. You can use a [`map(_:)`](https://developer.apple.com/documentation/Swift/AsyncSequence/map(_:)-1q1k3) or [`compactMap(_:)`](https://developer.apple.com/documentation/Swift/AsyncSequence/compactMap(_:)-gfdq) operator on the sequence to extract sendable properties of the notification and iterate over those instead. See [`notifications(named:object:)`](notificationcenter/notifications(named:object:).md) for an example of this approach.
-
 ## Topics
 
 ### Creating an Iterator
@@ -39,6 +37,7 @@ Use the [`notifications(named:object:)`](notificationcenter/notifications(named:
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

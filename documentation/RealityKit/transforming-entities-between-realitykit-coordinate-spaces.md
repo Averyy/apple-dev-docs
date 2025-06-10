@@ -1,6 +1,6 @@
 # Transforming entities between RealityKit coordinate spaces
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Move an entity between a volumetric window and an immersive space using coordinate space transformations.
 
@@ -109,7 +109,7 @@ Get the transform matrix of the entity relative to the open immersive space call
 
 > **Note**: When using the the [`Entity.CoordinateSpaceReference.immersiveSpace`](entity/coordinatespacereference/immersivespace.md) as the value for the argument in the [`transformMatrix(relativeTo:)`](entity/transformmatrix(relativeto:).md) method, you will need to ensure that an immersive space is open and the immersive view has a [`RealityView`](realityview.md) in it. Otherwise the method will return nil.
 
-Make the cube a subentity of the `immersiveSpaceRootEntity`, which is an entity at the root of the immersive space. Set the transform matrix of the entity relative to it’s container entity calling the [`setTransformMatrix(_:relativeTo:)`](entity/settransformmatrix(_:relativeto:).md) method.
+Make the cube a subentity of the `immersiveSpaceRootEntity`, which is an entity at the root of the immersive space. Set the transform matrix of the entity relative to it’s container entity calling the `Entity/setTransformMatrix(_:relativeTo:)` method.
 
 ```swift
 private func moveCubeFromVolumetricWindowToImmersiveSpace() {
@@ -149,7 +149,7 @@ The method records the cube’s transform for use when the cube moves from the i
 
 To move the entity back to the volumetric window, set the transform of the cube to the previously recorded value before it moved to the immersive space.
 
-The sample code uses the [`move(to:relativeTo:duration:timingFunction:)`](entity/move(to:relativeto:duration:timingfunction:)-905k.md) method to smoothly animate the transformation to the previously recorded transform of the cube relative to the immersive space:
+The sample code uses the `Entity/move(to:relativeTo:duration:timingFunction:)-905k` method to smoothly animate the transformation to the previously recorded transform of the cube relative to the immersive space:
 
 ```swift
 func moveCubeFromImmersiveSpaceToVolumetricWindow() {
@@ -174,7 +174,7 @@ func moveCubeFromImmersiveSpaceToVolumetricWindow() {
 }
 ```
 
-The above code uses the [`transformMatrix(relativeTo:)`](entity/transformmatrix(relativeto:).md) method to get the transformation matrix of the previously recorded value relative to the immersive space. The transformation matrix creates a [`Transform`](transform.md) for specifying the target transform in the [`move(to:relativeTo:duration:timingFunction:)`](entity/move(to:relativeto:duration:timingfunction:)-905k.md) method.
+The above code uses the [`transformMatrix(relativeTo:)`](entity/transformmatrix(relativeto:).md) method to get the transformation matrix of the previously recorded value relative to the immersive space. The transformation matrix creates a [`Transform`](transform.md) for specifying the target transform in the `Entity/move(to:relativeTo:duration:timingFunction:)-905k` method.
 
 #### Make the Cube a Subentity of the Volumetric Windows Root
 
@@ -221,4 +221,4 @@ The color of the cube changes from red back to blue, indicating that it’s in t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/transforming-entities-between-realitykit-coordinate-spaces)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/transforming-entities-between-realitykit-coordinate-spaces)*

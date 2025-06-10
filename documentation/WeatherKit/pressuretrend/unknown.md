@@ -1,6 +1,6 @@
 # !=(_:_:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: op
 
 Returns a Boolean value indicating whether two values are not equal.

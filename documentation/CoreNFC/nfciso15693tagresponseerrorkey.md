@@ -18,7 +18,7 @@ let NFCISO15693TagResponseErrorKey: String
 
 #### Discussion
 
-Check for the presence of this key in the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary of an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object to determine whether a tag responded with a command error. When a command error occurs, the [`code`](https://developer.apple.com/documentation/foundation/nserror/1409165-code) property contains an error code defined in the ISO15693-3 specification.
+Check for the presence of this key in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary of an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object to determine whether a tag responded with a command error. When a command error occurs, the [`code`](https://developer.apple.com/documentation/Foundation/NSError/code) property contains an error code defined in the ISO15693-3 specification.
 
 
 ---

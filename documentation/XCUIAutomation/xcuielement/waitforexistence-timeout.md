@@ -1,6 +1,6 @@
 # waitForExistence(timeout:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Waits the specified amount of time for an element to exist.

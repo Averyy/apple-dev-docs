@@ -1,6 +1,6 @@
 # messageInvalid
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates that the message is invalid.

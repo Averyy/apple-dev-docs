@@ -6,9 +6,7 @@
 A dictionary that contains the configuration to install an enterprise app.
 
 **Availability**:
-- macOS 10.13.6+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- macOS 11.0+
 
 ## Declaration
 
@@ -20,9 +18,6 @@ object InstallEnterpriseApplicationCommand.Command.Configuration
 
 - [object InstallEnterpriseApplicationCommand.Command.Manifest](installenterpriseapplicationcommand/command-data.dictionary/manifest-data.dictionary.md)
   A dictionary that contains a manifest.
-- [object ManifestURL](manifesturl.md)
-  The URL to the app manifest.
-- [object ManifestURL.ItemsItem.Metadata](manifesturl/itemsitem/metadata-data.dictionary.md)
 
 
 ---

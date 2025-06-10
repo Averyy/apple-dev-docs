@@ -1,6 +1,6 @@
 # audio
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Media types that contain audio require a user gesture to begin playing.

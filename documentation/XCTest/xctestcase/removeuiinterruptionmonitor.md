@@ -1,6 +1,6 @@
 # removeUIInterruptionMonitor(_:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Removes a handler using the token from when you added the handler.

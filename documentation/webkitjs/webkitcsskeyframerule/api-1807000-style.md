@@ -1,6 +1,6 @@
 # style
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: uid
 
 The style associated with this keyframe.

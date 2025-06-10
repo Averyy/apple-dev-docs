@@ -1,6 +1,6 @@
 # FONT_FACE_RULE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

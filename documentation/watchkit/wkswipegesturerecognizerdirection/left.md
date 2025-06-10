@@ -1,6 +1,6 @@
 # left
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The touch moves from right to left.

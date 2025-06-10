@@ -1,6 +1,6 @@
 # swipeRight(velocity:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a swipe-right gesture with a velocity you specify.

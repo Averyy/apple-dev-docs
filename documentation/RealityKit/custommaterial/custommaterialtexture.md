@@ -10,6 +10,7 @@ A texture object that you use to create custom materials.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -28,6 +29,8 @@ struct CustomMaterialTexture
 - [var resource: TextureResource](custommaterial/custommaterialtexture/resource.md)
   The texture resource you use to create a custom texture.
 ### Initializers
+- [init(_:)](custommaterial/custommaterialtexture/init(_:).md)
+  Creates a custom texture from a texture resource.
 - [init(TextureResource, MTLTextureSwizzleChannels)](custommaterial/custommaterialtexture/init(_:_:).md)
   Creates a custom texture from a texture resource.
 ### Instance Properties

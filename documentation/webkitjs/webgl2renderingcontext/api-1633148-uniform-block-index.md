@@ -1,6 +1,6 @@
 # UNIFORM_BLOCK_INDEX
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

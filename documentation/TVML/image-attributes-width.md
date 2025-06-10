@@ -1,6 +1,6 @@
 # width
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Specifies the maximum width for an image element.
 
@@ -33,4 +33,4 @@ The image is shrunk to fit the bounding box if the image is bigger than the size
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/image-attributes-width)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/image-attributes-width)*

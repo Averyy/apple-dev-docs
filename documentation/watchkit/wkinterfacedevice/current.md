@@ -1,6 +1,6 @@
 # current()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Returns the shared device object.

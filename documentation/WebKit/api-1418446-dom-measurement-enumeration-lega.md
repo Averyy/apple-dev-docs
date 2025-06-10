@@ -1,6 +1,6 @@
 # DOM Measurement Enumeration (Legacy)
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 ## Topics
 

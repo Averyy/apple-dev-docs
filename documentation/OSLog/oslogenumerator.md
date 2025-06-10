@@ -38,6 +38,8 @@ class OSLogEnumerator
 - [Hashable](../Swift/Hashable.md)
 - [NSFastEnumeration](../Foundation/NSFastEnumeration.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

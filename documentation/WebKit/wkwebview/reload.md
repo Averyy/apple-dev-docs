@@ -1,6 +1,6 @@
 # reload(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Reloads the current webpage.

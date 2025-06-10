@@ -1,6 +1,6 @@
 # WKDownloadDelegate
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: protocol
 
 A protocol you implement to track download progress and handle redirects, authentication challenges, and failures.

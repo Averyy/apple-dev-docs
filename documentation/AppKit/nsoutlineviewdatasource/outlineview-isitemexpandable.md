@@ -25,10 +25,6 @@ This method may be called quite often, so it must be efficient.
 
 > ❗ **Important**:  While this method is marked as `@optional` in the protocol,  Do not call [`reloadData()`](nstableview/reloaddata().md) from this method.
 
- While this method is marked as `@optional` in the protocol, 
-
-Do not call [`reloadData()`](nstableview/reloaddata().md) from this method.
-
 ## Parameters
 
 - `outlineView`: The outline view that sent the message.

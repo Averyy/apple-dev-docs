@@ -80,9 +80,55 @@ The Core Media framework defines the media pipeline used by AVFoundation and oth
 - [Core Media Constants](core-media-constants.md)
 - [Core Media Functions](core-media-functions.md)
 - [Core Media Type Aliases](core-media-type-aliases.md)
+### Structures
+- [struct CMMutableDataBlockBuffer](cmmutabledatablockbuffer.md)
+  A block buffer that provides read-write access to a range of bytes.
+- [struct CMReadOnlyDataBlockBuffer](cmreadonlydatablockbuffer.md)
+  A block buffer that provides read-only access to the a range of bytes.
+- [struct CMReadySampleBuffer](cmreadysamplebuffer.md)
+  Buffer carrying readily available samples of media data.
+- [struct CMSampleDataReference](cmsampledatareference.md)
+  References sample data in at a URL.
+- [struct CMTaggedDynamicBuffer](cmtaggeddynamicbuffer.md)
+  Contains a collection of tags associated with a read-only media buffer.
 ### Variables
+- [var COREMEDIA_EXPORTS_USE_EXPLICIT_VISIBILITY: Int32](coremedia_exports_use_explicit_visibility.md)
+- [let kCMFormatDescriptionCameraCalibrationExtrinsicOriginSource_StereoCameraSystemBaseline: CFString](kcmformatdescriptioncameracalibrationextrinsicoriginsource_stereocamerasystembaseline.md)
+- [let kCMFormatDescriptionCameraCalibrationLensAlgorithmKind_ParametricLens: CFString](kcmformatdescriptioncameracalibrationlensalgorithmkind_parametriclens.md)
+- [let kCMFormatDescriptionCameraCalibrationLensDomain_Color: CFString](kcmformatdescriptioncameracalibrationlensdomain_color.md)
+- [let kCMFormatDescriptionCameraCalibrationLensRole_Left: CFString](kcmformatdescriptioncameracalibrationlensrole_left.md)
+- [let kCMFormatDescriptionCameraCalibrationLensRole_Mono: CFString](kcmformatdescriptioncameracalibrationlensrole_mono.md)
+- [let kCMFormatDescriptionCameraCalibrationLensRole_Right: CFString](kcmformatdescriptioncameracalibrationlensrole_right.md)
+- [let kCMFormatDescriptionCameraCalibration_ExtrinsicOrientationQuaternion: CFString](kcmformatdescriptioncameracalibration_extrinsicorientationquaternion.md)
+- [let kCMFormatDescriptionCameraCalibration_ExtrinsicOriginSource: CFString](kcmformatdescriptioncameracalibration_extrinsicoriginsource.md)
+- [let kCMFormatDescriptionCameraCalibration_IntrinsicMatrix: CFString](kcmformatdescriptioncameracalibration_intrinsicmatrix.md)
+- [let kCMFormatDescriptionCameraCalibration_IntrinsicMatrixProjectionOffset: CFString](kcmformatdescriptioncameracalibration_intrinsicmatrixprojectionoffset.md)
+- [let kCMFormatDescriptionCameraCalibration_IntrinsicMatrixReferenceDimensions: CFString](kcmformatdescriptioncameracalibration_intrinsicmatrixreferencedimensions.md)
+- [let kCMFormatDescriptionCameraCalibration_LensAlgorithmKind: CFString](kcmformatdescriptioncameracalibration_lensalgorithmkind.md)
+  The following keys are required in each kCMFormatDescriptionExtension_CameraCalibrationDataLensCollection dictionary.
+- [let kCMFormatDescriptionCameraCalibration_LensDistortions: CFString](kcmformatdescriptioncameracalibration_lensdistortions.md)
+- [let kCMFormatDescriptionCameraCalibration_LensDomain: CFString](kcmformatdescriptioncameracalibration_lensdomain.md)
+- [let kCMFormatDescriptionCameraCalibration_LensFrameAdjustmentsPolynomialX: CFString](kcmformatdescriptioncameracalibration_lensframeadjustmentspolynomialx.md)
+- [let kCMFormatDescriptionCameraCalibration_LensFrameAdjustmentsPolynomialY: CFString](kcmformatdescriptioncameracalibration_lensframeadjustmentspolynomialy.md)
+- [let kCMFormatDescriptionCameraCalibration_LensIdentifier: CFString](kcmformatdescriptioncameracalibration_lensidentifier.md)
+- [let kCMFormatDescriptionCameraCalibration_LensRole: CFString](kcmformatdescriptioncameracalibration_lensrole.md)
+- [let kCMFormatDescriptionCameraCalibration_RadialAngleLimit: CFString](kcmformatdescriptioncameracalibration_radialanglelimit.md)
+- [let kCMFormatDescriptionExtension_CameraCalibrationDataLensCollection: CFString](kcmformatdescriptionextension_cameracalibrationdatalenscollection.md)
+- [let kCMFormatDescriptionExtension_ConvertedFromExternalSphericalTags: CFString](kcmformatdescriptionextension_convertedfromexternalsphericaltags.md)
+- [let kCMFormatDescriptionProjectionKind_AppleImmersiveVideo: CFString](kcmformatdescriptionprojectionkind_appleimmersivevideo.md)
 - [let kCMFormatDescriptionProjectionKind_Equirectangular: CFString](kcmformatdescriptionprojectionkind_equirectangular.md)
 - [let kCMFormatDescriptionProjectionKind_HalfEquirectangular: CFString](kcmformatdescriptionprojectionkind_halfequirectangular.md)
+- [let kCMFormatDescriptionProjectionKind_ParametricImmersive: CFString](kcmformatdescriptionprojectionkind_parametricimmersive.md)
+- [let kCMMetadataBaseDataType_ExtendedRasterRectangleValue: CFString](kcmmetadatabasedatatype_extendedrasterrectanglevalue.md)
+- [let kCMMetadataBaseDataType_RasterRectangleValue: CFString](kcmmetadatabasedatatype_rasterrectanglevalue.md)
+- [let kCMMetadataIdentifier_QuickTimeMetadataDisplayMaskRectangleMono: CFString](kcmmetadataidentifier_quicktimemetadatadisplaymaskrectanglemono.md)
+- [let kCMMetadataIdentifier_QuickTimeMetadataDisplayMaskRectangleStereoLeft: CFString](kcmmetadataidentifier_quicktimemetadatadisplaymaskrectanglestereoleft.md)
+- [let kCMMetadataIdentifier_QuickTimeMetadataDisplayMaskRectangleStereoRight: CFString](kcmmetadataidentifier_quicktimemetadatadisplaymaskrectanglestereoright.md)
+- [let kCMMetadataIdentifier_QuickTimeMetadataPresentationImmersiveMedia: CFString](kcmmetadataidentifier_quicktimemetadatapresentationimmersivemedia.md)
+- [let kCMMetadataIdentifier_QuickTimeMetadataSpatialAudioMix: CFString](kcmmetadataidentifier_quicktimemetadataspatialaudiomix.md)
+### Enumerations
+- [enum CMTagged](cmtagged.md)
+  Namespace for tagged CoreMedia objects.
 
 
 ---

@@ -54,6 +54,7 @@ On Apple platforms, the default clock is based on the Mach absolute time unit.
 - [Comparable](../Swift/Comparable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

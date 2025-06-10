@@ -40,8 +40,6 @@ When called, the bytes are immediately copied and then the buffer is freed.
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Data`](data.md) structure, which bridges to the [`NSMutableData`](nsmutabledata.md) class and its immutable superclass [`NSData`](nsdata.md). For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
 
- The Swift overlay to the Foundation framework provides the [`Data`](data.md) structure, which bridges to the [`NSMutableData`](nsmutabledata.md) class and its immutable superclass [`NSData`](nsdata.md). For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
-
 ## Topics
 
 ### Creating Mutable Data
@@ -108,6 +106,8 @@ When called, the bytes are immediately copied and then the buffer is freed.
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 

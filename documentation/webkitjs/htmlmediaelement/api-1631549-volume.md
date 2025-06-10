@@ -1,6 +1,6 @@
 # volume
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The volume of the audio portion of the media element.

@@ -1,4 +1,4 @@
 Completed scraping ARKit!
-Total pages scraped: 1
+Total pages scraped: 2057
 Pages skipped (unchanged): 1
 Pages failed: 0

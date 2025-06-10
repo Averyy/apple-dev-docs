@@ -1,6 +1,6 @@
 # Implementing proximity-based interactions between a phone and watch
 
-**Framework**: Nearbyinteraction
+**Framework**: Nearby Interaction
 
 Interact with a nearby Apple Watch by measuring its distance to a paired iPhone.
 
@@ -28,4 +28,4 @@ To run on paired devices:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/NearbyInteraction/implementing-proximity-based-interactions-between-a-phone-and-watch)*
+*[View on Apple Developer](https://developer.apple.com/documentation/nearbyinteraction/implementing-proximity-based-interactions-between-a-phone-and-watch)*

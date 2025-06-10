@@ -47,6 +47,7 @@ For QuickTime movie and ISO files, it indicates the presence of an `mvex` box, w
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

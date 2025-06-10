@@ -9,7 +9,7 @@ An error that indicates when the scene size grows past the framework’s limitat
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

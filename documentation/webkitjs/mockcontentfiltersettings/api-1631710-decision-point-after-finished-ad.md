@@ -1,6 +1,6 @@
 # DECISION_POINT_AFTER_FINISHED_ADDING_DATA
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

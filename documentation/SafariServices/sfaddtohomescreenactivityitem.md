@@ -27,8 +27,6 @@ If your browser app includes an alternative browser engine, pass detailed inform
 
 > ❗ **Important**:  [`SFAddToHomeScreenActivityItem`](sfaddtohomescreenactivityitem.md) is only available to web browsers. For more information on creating a web browser, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/Xcode/preparing-your-app-to-be-the-default-browser).
 
- [`SFAddToHomeScreenActivityItem`](sfaddtohomescreenactivityitem.md) is only available to web browsers. For more information on creating a web browser, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/Xcode/preparing-your-app-to-be-the-default-browser).
-
 ## Topics
 
 ### Describing a bookmark or web app

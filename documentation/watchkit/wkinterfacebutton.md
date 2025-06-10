@@ -1,6 +1,6 @@
 # WKInterfaceButton
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A button in the user interface of your watchOS app.

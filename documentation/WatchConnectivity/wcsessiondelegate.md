@@ -1,6 +1,6 @@
 # WCSessionDelegate
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: protocol
 
 A delegate protocol that defines methods for receiving messages sent by a [`WCSession`](wcsession.md) object.
@@ -92,4 +92,4 @@ For more information about the flow of messages when a user switches from one Ap
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchConnectivity/wcsessiondelegate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchconnectivity/wcsessiondelegate)*

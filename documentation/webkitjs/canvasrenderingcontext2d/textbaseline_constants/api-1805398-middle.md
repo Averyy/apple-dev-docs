@@ -1,6 +1,6 @@
 # middle
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: uid
 
 Aligns the y-coordinate of the bounding box with the middle of text glyphs.

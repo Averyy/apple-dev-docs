@@ -59,6 +59,7 @@ To set up your marketplace extension in Xcode, use a generic extension template 
 ### Inherits From
 - [AppExtension](../ExtensionFoundation/AppExtension.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -10,6 +10,16 @@ Build apps and extensions that people can configure as the default app for many 
 
 - Use [`openSettingsURLString`](https://developer.apple.com/documentation/UIKit/UIApplication/openSettingsURLString) to link directly to your app’s settings, including the Default App option, where applicable. The new [`openDefaultApplicationsSettingsURLString`](https://developer.apple.com/documentation/UIKit/UIApplication/openDefaultApplicationsSettingsURLString) option in `UIKit` opens the global Default Apps settings panel.
 
+#### June 2025
+
+##### Dialing Apps
+
+- New API in [`LiveCommunicationKit`](https://developer.apple.com/documentation/LiveCommunicationKit) lets users choose your app as the default for initiating cellular carrier conversations. Read [`Preparing your app to be the default dialer app`](https://developer.apple.com/documentation/LiveCommunicationKit/preparing-your-app-to-be-the-default-dialer-app) to see how to set this up using the [`Default Dialer App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.dialing-app) entitlement. Your app has access to conversation history that happened since it became the default, and no longer requires user confirmation to initiate a connection.
+
+##### Sms Rcs and Mms Messaging Apps
+
+- The new [`TelephonyMessagingKit`](https://developer.apple.com/documentation/TelephonyMessagingKit) framework enables your app send SMS, RCS, and MMS messages over the cellular carrier network. Use the [`Default Carrier Messaging App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.carrier-messaging-app) entitlement to declare your app as the default handler for these carrier messages.
+
 #### 2025
 
 ##### Navigation Apps
@@ -102,12 +112,16 @@ Users can select an app to be their default web browser. To make your app availa
   Learn about important changes in ActivityKit.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [App Intents updates](appintents.md)
   Learn about important changes in App Intents.
 - [AppKit updates](appkit.md)
   Learn about important changes to AppKit.
 - [Apple Intelligence updates](apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -120,10 +134,6 @@ Users can select an app to be their default web browser. To make your app availa
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
 
 
 ---

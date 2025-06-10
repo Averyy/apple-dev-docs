@@ -10,6 +10,7 @@ Mesh buffer containing elements of any type.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -92,15 +93,9 @@ struct MeshBuffer<Element>
   The number of elements in the buffer.
 - [var elements: [Element]](meshbuffer/elements.md)
   Access the buffer as an array. This may create a copy if the data are not already an array.
-- [MeshBuffer.Element](meshbuffer/element.md)
-  A type representing the sequence’s elements.
 - [var rate: MeshBuffers.Rate](meshbuffer/rate.md)
   Rate of the buffer.
 ### Iterating the elements of a buffer
-- [func makeIterator() -> MeshBuffer<Element>.Iterator](meshbuffer/makeiterator.md)
-  Returns an iterator over the elements of this sequence.
-- [MeshBuffer.Iterator](meshbuffer/iterator.md)
-  A type that provides the sequence’s iteration interface and encapsulates its iteration state.
 - [func forEach((Element, Element) throws -> Void) rethrows](meshbuffer/foreach(_:)-53vhs.md)
   Iterate over pairs of elements.
 - [func forEach((Element, Element, Element) throws -> Void) rethrows](meshbuffer/foreach(_:)-7o3tb.md)
@@ -110,14 +105,13 @@ struct MeshBuffer<Element>
 - [func usingRate(MeshBuffers.Rate) -> MeshBuffer<Element>](meshbuffer/usingrate(_:).md)
   New object with updated rate.
 ### Initializers
-- [init([Element])](meshbuffer/init(_:)-3v7qg.md)
+- [init(_:)](meshbuffer/init(_:).md)
   Create buffer from an array of elements.
-- [init<S>(S)](meshbuffer/init(_:)-ig4m.md)
-  Create a buffer from any sequence of elements.
-- [init(elements: [Element], indices: [UInt32])](meshbuffer/init(elements:indices:)-2au73.md)
+- [init(elements:indices:)](meshbuffer/init(elements:indices:).md)
   Create buffer from an array of element values and an array of indices into that value array.
-### Default Implementations
-- [Sequence Implementations](meshbuffer/sequence-implementations.md)
+### Instance Methods
+- [func forEach(_:)](meshbuffer/foreach(_:).md)
+  Iterate over pairs of elements.
 
 ## Relationships
 

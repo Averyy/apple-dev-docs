@@ -10,6 +10,7 @@ A reference counted immutable resource which contains one or more inverse kinema
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -36,6 +37,7 @@ Use this resource with an [`IKComponent`](ikcomponent.md).
 ### Conforms To
 - [Resource](resource.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -55,8 +57,6 @@ Use this resource with an [`IKComponent`](ikcomponent.md).
   Ordered dictionary like container with fixed size.
 - [struct IKSolverDefinition](iksolverdefinition.md)
   A container describing a solver instance.
-- [IKSolverDefinition.ID](iksolverdefinition/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 
 ---

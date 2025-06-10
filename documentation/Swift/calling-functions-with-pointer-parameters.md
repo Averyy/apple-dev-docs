@@ -126,4 +126,4 @@ In this example, the `CFArrayCallBacks` initializer uses `nil` values as argumen
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/calling-functions-with-pointer-parameters)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/calling-functions-with-pointer-parameters)*

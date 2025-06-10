@@ -16,7 +16,7 @@ An image to use as source input for generating the new image.
 
 ```swift
 @MainActor
-@objc @preconcurrency var sourceImage: NSImage? { get set }
+@objc @preconcurrency var sourceImage: UIImage? { get set }
 ```
 
 #### Discussion

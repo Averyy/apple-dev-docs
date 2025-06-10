@@ -1,6 +1,6 @@
 # WKAccessibilityImageRegion
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An object that defines a portion of an image that you want to call out separately to an assistive app.

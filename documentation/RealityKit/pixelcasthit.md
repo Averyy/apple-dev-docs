@@ -8,6 +8,7 @@
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -17,9 +18,6 @@ struct PixelCastHit
 
 ## Topics
 
-### Operators
-- [static func == (PixelCastHit, PixelCastHit) -> Bool](pixelcasthit/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
 - [var barycentric: SIMD3<Float>?](pixelcasthit/barycentric.md)
   The barycentric coordinate of the primitive. See the discussion of [[barycentric_coord]] in Section “5.2.3.4 Fragment Function Input Attributes” of Metal Shading Language Specification
@@ -35,14 +33,13 @@ struct PixelCastHit
   The surface position at the point of intersection, in scene space.
 - [var primitive: UInt32](pixelcasthit/primitive.md)
   The per-primitive identifier used with barycentric coordinates.
-### Default Implementations
-- [Equatable Implementations](pixelcasthit/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

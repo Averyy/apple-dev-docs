@@ -7,8 +7,6 @@ The command to get information from a device to set up lights-out management (LO
 
 **Availability**:
 - macOS 11.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,14 +16,14 @@ object LOMSetupRequestCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object LOMSetupRequestCommand.Command](lomsetuprequestcommand/command-data.dictionary.md)
-  The request dictionary to get information from a device to set up lights-out management (LOM).
+  The command to get information from a device to set up lights-out management (LOM).
 
 ## See Also
 
 - [object LOMSetupRequestResponse](lomsetuprequestresponse.md)
-  A response from the device after it processes the command to get setup information for lights-out management (LOM).
+  A response from the device after it processes the command to get information from a device to set up lights-out management (LOM).
 
 
 ---

@@ -17,7 +17,6 @@ Compares the parameter node to the receiving node.
 ## Declaration
 
 ```swift
-@MainActor
 func isEqual(to node: SKNode) -> Bool
 ```
 

@@ -12,7 +12,9 @@ Embed interactive Apple Maps on your website, annotate points of interest, and p
 
 Use this JavaScript API to embed interactive maps directly into your webpages or apps across different platforms and operating systems, including iOS and Android. Like [`MapKit`](https://developer.apple.com/documentation/MapKit) for native apps, you can also add annotations and overlays to the map to call out points of interest or user destinations.
 
-![An image of a web browser window displaying a map of the San Francisco area.](https://docs-assets.developer.apple.com/published/f27633a120ab109165daca407150a8f4/media-3037045%402x.png)
+![An image of a web browser window displaying a map of the San Francisco area.](https://docs-assets.developer.apple.com/published/27b2f7733680864db2dbf377a384d0c1/MapKitJS-01%402x.png)
+
+MapKit JS also provides interactive views for place details, and Look Around imagery.
 
 MapKit JS requires authorization through a Maps token for initialization and some API calls. To create a Maps token, see [`Creating a Maps token`](creating-a-maps-token.md).
 
@@ -39,11 +41,6 @@ MapKit JS supports the following browser versions:
 ### Version notes
 - [MapKit JS Release Notes](mapkit-js-release-notes.md)
   Learn about updates, bug fixes, and API changes for MapKit JS.
-### Structures
-- [CameraBoundaryDescription](cameraboundarydescription.md)
-  An object literal containing at least one property defining an area on the map.
-- [CameraZoomRangeLiteral](camerazoomrangeliteral.md)
-  An object literal containing minimum and maximum camera distance in meters.
 
 ## See Also
 

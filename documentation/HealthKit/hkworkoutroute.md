@@ -21,14 +21,14 @@ class HKWorkoutRoute
 
 ## Mentions
 
-- [Reading route data](reading-route-data.md)
 - [Creating a workout route](creating-a-workout-route.md)
+- [Reading route data](reading-route-data.md)
 
 #### Overview
 
 When creating a workout route, you do not instantiate the [`HKWorkoutRoute`](hkworkoutroute.md) objects directly. Instead, create a [`HKWorkoutRouteBuilder`](hkworkoutroutebuilder.md) object, and provide it with location data throughout the workout. After the workout ends, call the route builder’s  [`finishRoute(with:metadata:completion:)`](hkworkoutroutebuilder/finishroute(with:metadata:completion:).md) method to create the route. For detailed instructions, see [`Creating a workout route`](creating-a-workout-route.md).
 
-The route’s location data is stored as an array of [`CLLocation`](https://developer.apple.com/documentation/CoreLocation/CLLocation) objects. Because the route may contain a large number of location objects, use a [`HKWorkoutRouteQuery`](hkworkoutroutequery.md) object to asynchronously read the location data from the HealthKit store in batches. For more information, see [`Reading route data`](reading-route-data.md).
+The route’s location data is stored as an array of doc://com.apple.documentation/documentation/corelocation/cllocation objects. Because the route may contain a large number of location objects, use a [`HKWorkoutRouteQuery`](hkworkoutroutequery.md) object to asynchronously read the location data from the HealthKit store in batches. For more information, see [`Reading route data`](reading-route-data.md).
 
 ##### Using Workout Routes
 
@@ -48,6 +48,7 @@ Like many HealthKit classes, the [`HKWorkoutRoute`](hkworkoutroute.md) class sho
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

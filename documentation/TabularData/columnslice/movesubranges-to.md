@@ -1,6 +1,6 @@
 # moveSubranges(_:to:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Moves the elements in the given subranges to just before the element at the specified index.
@@ -31,7 +31,7 @@ This example finds all the uppercase letters in the array and then moves them to
 
 ```None
 var letters = Array("ABCdeFGhijkLMNOp")
-let uppercaseRanges = letters.subranges(where: { $0.isUppercase })
+let uppercaseRanges = letters.indices(where: { $0.isUppercase })
 let rangeOfUppercase = letters.moveSubranges(uppercaseRanges, to: 10)
 // String(letters) == "dehiABCFGLMNOjkp"
 // rangeOfUppercase == 4..<13

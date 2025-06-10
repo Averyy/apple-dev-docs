@@ -1,6 +1,6 @@
 # tearDown(completion:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Provides an opportunity to perform cleanup asynchronously and handle errors after each test method in a test case ends.
@@ -16,14 +16,6 @@ func tearDown() async throws
 > **Note**:  In Swift, `XCTest` does not support overriding this method with a completion handler. Override this method for asynchronous test tear down with the following declaration: ```swift
 func tearDown() async throws
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
- In Swift, `XCTest` does not support overriding this method with a completion handler. Override this method for asynchronous test tear down with the following declaration:
-
-```swift
-func tearDown() async throws
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
 In Swift, override `tearDown() async throws` for asynchronous state cleanup with error handling after each test. Do not override `tearDown(completion:)` for synchronous state cleanup.
 

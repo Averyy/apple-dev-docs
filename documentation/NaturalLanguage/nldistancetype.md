@@ -40,6 +40,7 @@ The meaning of an [`NLDistance`](nldistance.md) is directly related to the [`NLD
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

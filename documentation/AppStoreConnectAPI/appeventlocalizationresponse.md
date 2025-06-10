@@ -18,6 +18,9 @@ object AppEventLocalizationResponse
 - [object AppEventLocalizationCreateRequest](appeventlocalizationcreaterequest.md)
 - [object AppEventLocalizationUpdateRequest](appeventlocalizationupdaterequest.md)
 - [object AppEventLocalizationsResponse](appeventlocalizationsresponse.md)
+- [object AppEventLocalizationAppEventScreenshotsLinkagesResponse](appeventlocalizationappeventscreenshotslinkagesresponse.md)
+- [object AppEventLocalizationAppEventVideoClipsLinkagesResponse](appeventlocalizationappeventvideoclipslinkagesresponse.md)
+- [object AppEventLocalizationsLinkagesResponse](appeventlocalizationslinkagesresponse.md)
 
 
 ---

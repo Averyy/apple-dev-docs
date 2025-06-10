@@ -1,6 +1,6 @@
 # firstIndex(of:)
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns the first index where the specified value appears in the collection.

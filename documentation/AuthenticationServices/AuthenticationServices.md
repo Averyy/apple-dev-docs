@@ -61,6 +61,8 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
   Register and authenticate users with passkeys and security keys, without using passwords.
 - [Passkey use in web browsers](passkey-use-in-web-browsers.md)
   Register and authenticate website users by using passkeys.
+- [Performing fast account creation with passkeys](performing-fast-account-creation-with-passkeys.md)
+  Allow people to quickly create an account with passkeys and associated domains.
 - [Connecting to a service with passkeys](connecting-to-a-service-with-passkeys.md)
   Allow users to sign in to a service without typing a password.
 ### Web authentication sessions
@@ -84,7 +86,7 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
 - [AutoFill Credential Provider Entitlement](../BundleResources/Entitlements/com.apple.developer.authentication-services.autofill-credential-provider.md)
   A Boolean value that indicates whether the app may, with user permission, provide user names and passwords for AutoFill in Safari and other apps.
 - [class ASCredentialProviderViewController](ascredentialproviderviewcontroller.md)
-  A view controller that a password manager app uses to extend AutoFill.
+  A view controller that a credential manager app uses to extend AutoFill.
 ### Credential migration
 - [class ASCredentialExportManager](ascredentialexportmanager.md)
   A class to manage exporting credentials.
@@ -110,10 +112,16 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
   A view controller that can upgrade user passwords to strong passwords, or convert accounts to use Sign in with Apple.
 - [class ASAccountAuthenticationModificationExtensionContext](asaccountauthenticationmodificationextensioncontext.md)
   An object that you interact with to change an account’s password or to upgrade to Sign in with Apple.
+### Updating credential managers
+- [class ASCredentialUpdater](ascredentialupdater.md)
+  A class to pass credential update events to credential managers enabled on the system.
 ### Reference
 - [AuthenticationServices Enumerations](authenticationservices-enumerations.md)
 - [AuthenticationServices Data Types](authenticationservices-data-types.md)
 ### Classes
+- [class ASAuthorizationAccountCreationPlatformPublicKeyCredential](asauthorizationaccountcreationplatformpublickeycredential.md)
+- [class ASAuthorizationAccountCreationPlatformPublicKeyCredentialRequest](asauthorizationaccountcreationplatformpublickeycredentialrequest.md)
+- [class ASAuthorizationAccountCreationProvider](asauthorizationaccountcreationprovider.md)
 - [class ASAuthorizationProviderExtensionUserLoginConfiguration](asauthorizationproviderextensionuserloginconfiguration.md)
 - [class ASOneTimeCodeCredentialIdentity](asonetimecodecredentialidentity.md)
 ### Protocols
@@ -134,12 +142,16 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
   The outputs of the WebAuthentication PRF extension, when requested during an assertion. This object represents one or two SymmetricKeys which are available anywhere the passkey can be used. These are general purpose keys which can be used for application-specific needs, such as encryption of user data. These keys should not be stored or exported. They should only ever be derived as the result of an assertion operation, and then discarded when finished.
 - [struct ASAuthorizationPublicKeyCredentialPRFRegistrationInput](asauthorizationpublickeycredentialprfregistrationinput-swift.struct.md)
 - [struct ASAuthorizationPublicKeyCredentialPRFRegistrationOutput](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct.md)
+- [struct ASEmailIdentifier](asemailidentifier.md)
+- [struct ASImportableCredentialScope](asimportablecredentialscope.md)
+  The scope for where a credential should be usable.
 - [struct ASImportableEditableField](asimportableeditablefield.md)
   A field that someone can edit within a credential.
 - [struct ASPasskeyAssertionCredentialExtensionInput](aspasskeyassertioncredentialextensioninput-swift.struct.md)
 - [struct ASPasskeyAssertionCredentialExtensionOutput](aspasskeyassertioncredentialextensionoutput-swift.struct.md)
 - [struct ASPasskeyRegistrationCredentialExtensionInput](aspasskeyregistrationcredentialextensioninput-swift.struct.md)
 - [struct ASPasskeyRegistrationCredentialExtensionOutput](aspasskeyregistrationcredentialextensionoutput-swift.struct.md)
+- [struct ASPhoneNumberIdentifier](asphonenumberidentifier.md)
 - [struct ASPublicKeyCredentialClientData](aspublickeycredentialclientdata-swift.struct.md)
 ### Variables
 - [let ASCredentialExchangeActivity: String](ascredentialexchangeactivity.md)
@@ -147,6 +159,8 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
 - [let ASCredentialImportToken: String](ascredentialimporttoken.md)
   The key for the token in the user info dictionary of the user activity sent to importing apps.
 ### Enumerations
+- [enum ASContactIdentifier](ascontactidentifier.md)
+- [enum ASContactIdentifierRequest](ascontactidentifierrequest.md)
 - [enum ASPasskeyCredentialExtensionInput](aspasskeycredentialextensioninput.md)
 
 

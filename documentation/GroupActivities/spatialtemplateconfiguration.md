@@ -43,6 +43,7 @@ Create a [`SpatialTemplateConfiguration`](spatialtemplateconfiguration.md) struc
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

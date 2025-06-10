@@ -1,6 +1,6 @@
 # startRecording(to:recordingDelegate:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Starts recording media to the specified output URL.

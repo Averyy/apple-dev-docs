@@ -1,6 +1,6 @@
 # commit()
 
-**Framework**: Eventkit  
+**Framework**: EventKit  
 **Kind**: method
 
 Commits all unsaved changes to the event store.

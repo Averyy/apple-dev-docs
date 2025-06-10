@@ -175,4 +175,4 @@ In this sample, you learned how to encode resources into argument buffers with a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/encoding-argument-buffers-on-the-gpu)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/encoding-argument-buffers-on-the-gpu)*

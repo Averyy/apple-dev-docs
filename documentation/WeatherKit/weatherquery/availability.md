@@ -1,6 +1,6 @@
 # availability
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The availability query.

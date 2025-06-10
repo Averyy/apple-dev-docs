@@ -1,6 +1,6 @@
 # items
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The array of queued items.

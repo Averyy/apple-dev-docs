@@ -68,6 +68,8 @@ Cocoa does not provide any API to change the time zone of the computer, or of ot
 ### Using Reference Types
 - [class NSTimeZone](nstimezone.md)
   Information about standard time conventions associated with a specific geopolitical region.
+### Structures
+- [TimeZone.SystemTimeZoneDidChangeMessage](timezone/systemtimezonedidchangemessage.md)
 ### Initializers
 - [init?(abbreviation: String)](timezone/init(abbreviation:).md)
 - [init?(identifier: String)](timezone/init(identifier:).md)
@@ -89,6 +91,7 @@ Cocoa does not provide any API to change the time zone of the computer, or of ot
 - [Hashable](../Swift/Hashable.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

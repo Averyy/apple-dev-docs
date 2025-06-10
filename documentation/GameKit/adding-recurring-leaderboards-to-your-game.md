@@ -1,6 +1,6 @@
 # Adding Recurring Leaderboards to Your Game
 
-**Framework**: Gamekit
+**Framework**: GameKit
 
 Encourage competition in your games by adding leaderboards that have a duration and repeat.
 
@@ -29,4 +29,4 @@ Encourage competition in your games by adding leaderboards that have a duration 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GameKit/adding-recurring-leaderboards-to-your-game)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gamekit/adding-recurring-leaderboards-to-your-game)*

@@ -1,6 +1,6 @@
 # MERAWProcessor
 
-**Framework**: Mediaextension  
+**Framework**: MediaExtension  
 **Kind**: protocol
 
 A protocol that defines the requirements for a RAW processor.
@@ -61,6 +61,8 @@ If the processor’s internal processing queue is full, and it cannot process mo
   Include a property list dictionary to describe a RAW processor.
 - [RAW processor entitlement](raw-processor-entitlement.md)
   Include an entitlement to indicate your extension is a MediaExtension RAW processor.
+### Instance Properties
+- [var metadataForSidecarFile: Data](merawprocessor/metadataforsidecarfile.md)
 
 ## Relationships
 

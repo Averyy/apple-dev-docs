@@ -1,6 +1,6 @@
 # compassDirection
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The general indicator of wind direction.

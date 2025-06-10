@@ -1,6 +1,6 @@
 # descendants(matching:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Returns a query for all descendants of the element matching the type you specify.

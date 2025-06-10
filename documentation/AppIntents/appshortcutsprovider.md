@@ -1,6 +1,6 @@
 # AppShortcutsProvider
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: protocol
 
 A type alias for the type that provides an app’s preconfigured shortcuts.
@@ -8,16 +8,16 @@ A type alias for the type that provides an app’s preconfigured shortcuts.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
 
 ```swift
-protocol AppShortcutsProvider
+protocol AppShortcutsProvider : Sendable
 ```
 
 ## Mentions
@@ -51,7 +51,13 @@ protocol AppShortcutsProvider
 ### Type Properties
 - [static var negativePhrases: NegativeAppShortcutPhrases](appshortcutsprovider/negativephrases.md)
 
+## Relationships
+
+### Inherits From
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents/appshortcutsprovider)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/appshortcutsprovider)*

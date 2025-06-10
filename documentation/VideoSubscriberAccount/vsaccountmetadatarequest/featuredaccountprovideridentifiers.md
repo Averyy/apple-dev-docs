@@ -1,6 +1,6 @@
 # featuredAccountProviderIdentifiers
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The providers your app lists prominently during authentication.

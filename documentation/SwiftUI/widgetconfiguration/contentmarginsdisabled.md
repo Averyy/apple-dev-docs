@@ -10,6 +10,7 @@ Disable default content margins.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration

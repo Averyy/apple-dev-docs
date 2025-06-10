@@ -1,6 +1,6 @@
 # VSAccountManager
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: class
 
 The object that coordinates your app’s authentication requests with a TV provider’s authentication service.
@@ -24,19 +24,19 @@ The `VSAccountManager` object allows your app to request access from the user to
 
 ## Topics
 
-### Responding to Account Manager Requests
+### Responding to account manager requests
 - [var delegate: (any VSAccountManagerDelegate)?](vsaccountmanager/delegate.md)
   The delegate of the account manager object.
 - [protocol VSAccountManagerDelegate](vsaccountmanagerdelegate.md)
   The methods you use to respond to authentication view controller requests.
-### Checking Access Status
+### Checking access status
 - [func checkAccessStatus(options: [VSCheckAccessOption : Any], completionHandler: (VSAccountAccessStatus, (any Error)?) -> Void)](vsaccountmanager/checkaccessstatus(options:completionhandler:).md)
   Checks your app’s access to user subscription information, and requests access if needed.
 - [struct VSCheckAccessOption](vscheckaccessoption.md)
   The options your app uses when checking access status.
 - [enum VSAccountAccessStatus](vsaccountaccessstatus.md)
   Constants that represent your app’s access status to the user’s subscription information.
-### Enqueuing Requests
+### Enqueuing requests
 - [func enqueue(VSAccountMetadataRequest, completionHandler: (VSAccountMetadata?, (any Error)?) -> Void) -> VSAccountManagerResult](vsaccountmanager/enqueue(_:completionhandler:).md)
   Submits a request for subscriber account information.
 - [class VSAccountMetadataRequest](vsaccountmetadatarequest.md)
@@ -49,7 +49,7 @@ The `VSAccountManager` object allows your app to request access from the user to
   An object that contains the response from the account provider.
 - [struct VSAccountProviderAuthenticationScheme](vsaccountproviderauthenticationscheme.md)
   Authentication schemes for account provider requests and responses.
-### Deep Linking to TV Provider Settings
+### Deep linking to TV provider settings
 - [let VSOpenTVProviderSettingsURLString: String](vsopentvprovidersettingsurlstring.md)
   A URL string you use to deep link to the system’s TV Provider settings.
 

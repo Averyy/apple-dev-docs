@@ -22,8 +22,6 @@ func hv_vcpu_get_pending_interrupt(_ vcpu: hv_vcpu_t, _ type: hv_interrupt_type_
 
 > ❗ **Important**:  This function must be called by the owning thread.
 
- This function must be called by the owning thread.
-
 ## Parameters
 
 - `vcpu`: The instance of the vCPU.

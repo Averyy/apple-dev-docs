@@ -1,17 +1,18 @@
 # SCNProgram
 
-**Framework**: Scenekit  
+**Framework**: SceneKit  
 **Kind**: class
 
 A complete Metal or OpenGL shader program that replaces SceneKit’s rendering of a geometry or material.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.1+
+- macOS 10.8+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 
@@ -143,9 +144,9 @@ fragment half4 myFragmentShader(default_io in [[stage_in]],
 
 There are two options for providing data for your custom variables: manually and at render time.
 
-- To make a single change to your custom variable data, use [`Key-value coding`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25): Call the [`setValue(_:forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKey:)) method on the geometry or material to be rendered with your shader, passing an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing your data structure as the value and the name of the corresponding shader function parameter as the key. Be aware of layout and alignment when encoding an entire structure as an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object—for best results, use data types from the SIMD library (such as `vector_float4` and `matrix_float4x4`), because those types match the layout and alignment of the GPU data types used in a Metal shader.
+- To make a single change to your custom variable data, use [`Key-value coding`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25): Call the doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue method on the geometry or material to be rendered with your shader, passing an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object containing your data structure as the value and the name of the corresponding shader function parameter as the key. Be aware of layout and alignment when encoding an entire structure as an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) object—for best results, use data types from the SIMD library (such as `vector_float4` and `matrix_float4x4`), because those types match the layout and alignment of the GPU data types used in a Metal shader.
 
-You can also animate such a change by calling the [`setValue(_:forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKey:)) method within an [`SCNTransaction`](scntransaction.md) animation or by creating a [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CAAnimation) object whose key is the shader function parameter name.
+You can also animate such a change by calling the doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue method within an [`SCNTransaction`](scntransaction.md) animation or by creating a [`CAAnimation`](https://developer.apple.com/documentation/QuartzCore/CAAnimation) object whose key is the shader function parameter name.
 
 In either case, you can alternatively provide a value for a specific member of a structure by wrapping that value in an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object and using the fully qualified name of that member as the key. For example, use `colors.primaryColor` as the key in the example above.
 
@@ -159,7 +160,7 @@ Coordinate transformations. To use the coordinate transformations defined by the
 
 Custom uniform variables. To provide values for your own custom uniform variables declared in the shader, choose when and how you want to update these values.
 
-- To update a value once, use [`Key-value coding`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25): Call the [`setValue(_:forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKey:)) method, providing the uniform name from shader source code as the key and an appropriate type of data as the value.  To smoothly transition a one-time value change, call the [`setValue(_:forKey:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/setValue(_:forKey:)) method inside an [`SCNTransaction`](scntransaction.md) animation or create an animation object with the [`init(keyPath:)`](https://developer.apple.com/documentation/QuartzCore/CAPropertyAnimation/init(keyPath:)) method, passing the uniform name as the key.
+- To update a value once, use [`Key-value coding`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25): Call the doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue method, providing the uniform name from shader source code as the key and an appropriate type of data as the value.  To smoothly transition a one-time value change, call the doc://com.apple.documentation/documentation/objectivec/nsobject/1415969-setvalue method inside an [`SCNTransaction`](scntransaction.md) animation or create an animation object with the [`init(keyPath:)`](https://developer.apple.com/documentation/QuartzCore/CAPropertyAnimation/init(keyPath:)) method, passing the uniform name as the key.
 - To update a value every time SceneKit renders an object with your shader program, assign binding blocks using the [`handleBinding(ofSymbol:handler:)`](scnshadable/handlebinding(ofsymbol:handler:).md) method of the geometry or material to be rendered with your custom program. Within a binding block you can execute OpenGL commands to bind shader uniforms or set any other state necessary for rendering.
 
 ## Topics
@@ -250,4 +251,4 @@ Custom uniform variables. To provide values for your own custom uniform variable
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SceneKit/scnprogram)*
+*[View on Apple Developer](https://developer.apple.com/documentation/scenekit/scnprogram)*

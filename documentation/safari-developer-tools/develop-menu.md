@@ -1,6 +1,6 @@
 # Develop menu
 
-**Framework**: Safari Developer Tools
+**Framework**: Safari Developer Features
 
 Access tools for debugging webpages in Safari, as well as tools for debugging web content in other apps and on other devices.
 

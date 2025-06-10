@@ -7,16 +7,12 @@ The weekend curfew dictionary.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object ParentalControlsTimeLimits.Time-limits.Weekend-curfew
 ```
-
-#### Overview
 
 ## See Also
 

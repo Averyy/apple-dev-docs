@@ -1,6 +1,6 @@
 # maximumVisibility
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The maximum distance, in meters, at which terrain is visible for the day.

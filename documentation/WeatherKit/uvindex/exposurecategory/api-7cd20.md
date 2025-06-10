@@ -1,6 +1,6 @@
 # >(_:_:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: op
 
 Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.

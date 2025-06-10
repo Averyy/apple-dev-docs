@@ -29,8 +29,6 @@ The completion handler will be called with the result of the user’s decision f
 
 > ❗ **Important**: To use [`requestTrackingAuthorization(completionHandler:)`](attrackingmanager/requesttrackingauthorization(completionhandler:).md), the [`NSUserTrackingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserTrackingUsageDescription) key must be in the [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List).
 
-To use [`requestTrackingAuthorization(completionHandler:)`](attrackingmanager/requesttrackingauthorization(completionhandler:).md), the [`NSUserTrackingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserTrackingUsageDescription) key must be in the [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List).
-
 
 ---
 

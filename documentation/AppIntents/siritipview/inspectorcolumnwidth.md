@@ -1,6 +1,6 @@
 # inspectorColumnWidth(_:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Sets a fixed, preferred width for the inspector containing this view when presented as a trailing column.

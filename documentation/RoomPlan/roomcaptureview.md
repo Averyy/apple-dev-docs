@@ -9,7 +9,7 @@ A view that enables the user to scan their room with the device’s camera.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -34,7 +34,7 @@ When the app determines that the current scan is complete, the view displays a s
 
 Alternatively, your app can display custom graphics during the scanning process by creating and using a scan session object ([`RoomCaptureSession`](roomcapturesession.md)) directly.
 
-See [`Create a 3D model of an interior room by guiding the user through an AR experience`](https://developer.apple.comhttps://developer.apple.com/documentation/roomplan/create_a_3d_model_of_an_interior_room_by_guiding_the_user_through_an_ar_experience) for a sample code project that demonstrates `RoomCaptureView`.
+See [`Create a 3D model of an interior room by guiding the user through an AR experience`](create-a-3d-model-of-an-interior-room-by-guiding-the-user-through-an-ar-experience.md) for a sample code project that demonstrates `RoomCaptureView`.
 
 ## Topics
 

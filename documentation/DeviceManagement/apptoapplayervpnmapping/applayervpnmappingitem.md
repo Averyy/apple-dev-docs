@@ -7,8 +7,6 @@ A dictionary defining a per-app VPN relationship.
 
 **Availability**:
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,7 +16,7 @@ object AppToAppLayerVPNMapping.AppLayerVPNMappingItem
 
 ## Topics
 
-### Profiles
+### Objects
 - [object AppToAppLayerVPNMapping.AppLayerVPNMappingItem.MatchToolsItem](apptoapplayervpnmapping/applayervpnmappingitem/matchtoolsitem.md)
   Specifies a per-app VPN rule to match network traffic that the app’s spawned command-line tool generates.
 

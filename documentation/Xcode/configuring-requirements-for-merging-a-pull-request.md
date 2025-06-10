@@ -35,4 +35,4 @@ For example, configure an Xcode Cloud workflow that starts a build for each chan
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-requirements-for-merging-a-pull-request)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-requirements-for-merging-a-pull-request)*

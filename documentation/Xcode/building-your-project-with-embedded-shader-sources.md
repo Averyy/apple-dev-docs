@@ -14,8 +14,6 @@ Alternatively, you can debug the shaders that you compile for release by generat
 
 > ❗ **Important**: To ensure you don’t include debugging information in apps you ship to customers, be sure to reset the Produce Debugging Information for Release option to No when you finish debugging.
 
-To ensure you don’t include debugging information in apps you ship to customers, be sure to reset the Produce Debugging Information for Release option to No when you finish debugging.
-
 ## See Also
 
 - [Naming resources and commands](naming-resources-and-commands.md)

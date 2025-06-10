@@ -1,6 +1,6 @@
 # isSubset(of:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Returns a Boolean value that indicates whether the set is a subset of another set.

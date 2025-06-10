@@ -1,6 +1,6 @@
 # kVTPixelTransferPropertyKey_DestinationTransferFunction
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The color transfer function to be used for destination image buffers.

@@ -12,10 +12,6 @@
 object GameCenterAppVersion.Attributes
 ```
 
-## See Also
-
-- [object GameCenterAppVersion.Relationships](gamecenterappversion/relationships-data.dictionary.md)
-
 
 ---
 

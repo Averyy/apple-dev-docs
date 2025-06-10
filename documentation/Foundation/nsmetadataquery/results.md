@@ -30,8 +30,6 @@ By default, this array contains [`NSMetadataItem`](nsmetadataitem.md) objects, e
 
 > ❗ **Important**:  Accessing this property implicitly disables updates, and enables updates again once the resulting array is deallocated.
 
- Accessing this property implicitly disables updates, and enables updates again once the resulting array is deallocated.
-
 ## See Also
 
 - [var resultCount: Int](nsmetadataquery/resultcount.md)

@@ -50,6 +50,9 @@ This class defines the [`AVAsyncProperty`](avasyncproperty.md) constants for var
 ### Describing a Property
 - [var description: String](avpartialasyncproperty/description.md)
   A description of the object.
+### Type Properties
+- [static var sidecarURL: AVAsyncProperty<Root, URL?>](avpartialasyncproperty/sidecarurl.md)
+  The sidecar URL used by the MediaExtension. The sidecar URL is returned only if the MediaExtension format reader supports sidecar files, and implements this property [MEFileInfo setSidecarFilename:]. Will return nil otherwise.
 
 ## Relationships
 
@@ -60,6 +63,7 @@ This class defines the [`AVAsyncProperty`](avasyncproperty.md) constants for var
 ### Conforms To
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

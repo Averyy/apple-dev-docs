@@ -29,8 +29,6 @@ func argumentPosition(forFunction function: String? = nil, argument: String) -> 
 
 - [func BNNSGraphGetArgumentPosition(bnns_graph_t, UnsafePointer<CChar>?, UnsafePointer<CChar>) -> Int](bnnsgraphgetargumentposition(_:_:_:).md)
   Returns the index into the arguments array for the given function argument.
-- [func setBatchSize(Int, forFunction: String?) async](bnnsgraph/context/setbatchsize(_:forfunction:).md)
-  Sets the batch size for a graph.
 - [func setDynamicShapes([BNNSGraph.Shape], forFunction: String?) async throws -> [BNNSGraph.Shape]](bnnsgraph/context/setdynamicshapes(_:forfunction:).md)
   Specifies the dynamic shapes for a graph and, if possible, infers the output shapes.
 - [BNNSGraph.Shape](bnnsgraph/shape.md)

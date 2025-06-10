@@ -1,6 +1,6 @@
 # END_TO_END
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

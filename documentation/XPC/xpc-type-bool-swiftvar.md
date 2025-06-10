@@ -1,6 +1,6 @@
 # XPC_TYPE_BOOL
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A type that represents a Boolean value.

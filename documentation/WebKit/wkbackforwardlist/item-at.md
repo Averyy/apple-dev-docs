@@ -1,6 +1,6 @@
 # item(at:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the item at the relative offset from the current item.

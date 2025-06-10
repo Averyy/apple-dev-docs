@@ -13,6 +13,7 @@ Tells the delegate that the system dismissed the navigation alert.
 ## Declaration
 
 ```swift
+@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didDismiss navigationAlert: CPNavigationAlert, dismissalContext: CPNavigationAlert.DismissalContext)
 ```
 

@@ -1,6 +1,6 @@
 # hasHardwareButton(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Determines whether the device supports the button type you provide.

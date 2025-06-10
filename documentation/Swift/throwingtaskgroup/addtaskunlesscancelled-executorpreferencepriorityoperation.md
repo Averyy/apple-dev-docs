@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Adds a child task to the group and enqueue it on the specified executor, unless the group has been canceled.
+Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
 
 **Availability**:
 - iOS 18.0+
@@ -17,17 +17,21 @@ Adds a child task to the group and enqueue it on the specified executor, unless 
 ## Declaration
 
 ```swift
-mutating func addTaskUnlessCancelled(executorPreference taskExecutor: (any TaskExecutor)?, priority: TaskPriority? = nil, operation: sending @escaping @isolated(any) () async throws -> ChildTaskResult) -> Bool
+mutating func addTaskUnlessCancelled(executorPreference taskExecutor: (any TaskExecutor)? = nil, priority: TaskPriority? = nil, operation: sending @escaping @isolated(any) () async throws -> ChildTaskResult) -> Bool
 ```
 
 #### Return Value
 
 `true` if the child task was added to the group; otherwise `false`.
 
+#### Discussion
+
+This method doesn’t throw an error, even if the child task does. Instead, the corresponding call to `ThrowingTaskGroup.next()` rethrows that error.
+
 ## Parameters
 
-- `taskExecutor`: The task executor that the child task should be started on and keep using.
-- `priority`: The priority of the operation task.   Omit this parameter or pass    to set the child task’s priority to the priority of the group.
+- `taskExecutor`: 
+- `priority`: The priority of the operation task.   Omit this parameter or pass   to inherit the task group’s base priority.   Omit this parameter or pass    to set the child task’s priority to the priority of the group.
 - `operation`: The operation to execute as part of the task group.
 
 

@@ -1,6 +1,6 @@
 # tableView(_:willDisplayCell:for:row:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Tells the delegate that the table view will display the specified cell at the specified row and column.

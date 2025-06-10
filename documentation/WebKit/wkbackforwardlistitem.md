@@ -1,6 +1,6 @@
 # WKBackForwardListItem
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 A representation of a webpage that the web view previously visited.

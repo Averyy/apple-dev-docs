@@ -25,6 +25,7 @@ struct CALayerContentsFormat
 - [static let RGBA16Float: CALayerContentsFormat](calayercontentsformat/rgba16float.md)
 - [static let RGBA8Uint: CALayerContentsFormat](calayercontentsformat/rgba8uint.md)
 - [static let gray8Uint: CALayerContentsFormat](calayercontentsformat/gray8uint.md)
+- [static let automatic: CALayerContentsFormat](calayercontentsformat/automatic.md)
 
 ## Relationships
 
@@ -33,6 +34,7 @@ struct CALayerContentsFormat
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

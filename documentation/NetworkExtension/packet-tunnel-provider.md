@@ -1,6 +1,6 @@
 # Packet tunnel provider
 
-**Framework**: Networkextension
+**Framework**: Network Extension
 
 Implement a VPN client for a packet-oriented, custom VPN protocol.
 
@@ -78,4 +78,4 @@ For detailed information about packet tunnel provider deployment options, see [`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/NetworkExtension/packet-tunnel-provider)*
+*[View on Apple Developer](https://developer.apple.com/documentation/networkextension/packet-tunnel-provider)*

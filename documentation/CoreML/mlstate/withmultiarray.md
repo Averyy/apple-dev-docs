@@ -9,9 +9,9 @@
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
+- visionOS 1.0+
 - watchOS 11.0+
 - Unknown ?+ - Deprecated
-- visionOS 1.0+
 
 ## Declaration
 

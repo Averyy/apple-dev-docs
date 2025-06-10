@@ -10,6 +10,7 @@ Stops playback of the audio resource and discards the location in the audio stre
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

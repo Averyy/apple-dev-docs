@@ -1,6 +1,6 @@
 # step
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: property
 
 The workout step to perform.
@@ -10,6 +10,7 @@ The workout step to perform.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

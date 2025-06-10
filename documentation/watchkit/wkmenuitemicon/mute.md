@@ -1,6 +1,6 @@
 # WKMenuItemIcon.mute
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The icon indicating an action to mute the sound.

@@ -39,8 +39,6 @@ To ensure that your app can always catch incoming mirrored workout sessions, ass
 
 > ❗ **Important**:  Your app may receive multiple calls to [`workoutSessionMirroringStartHandler`](hkhealthstore/workoutsessionmirroringstarthandler.md). If iPhone and Apple Watch lose their connection in the middle of a workout session, Apple Watch automatically tries to reconnect. Each call has its own [`HKWorkoutSession`](hkworkoutsession.md) instance.
 
- Your app may receive multiple calls to [`workoutSessionMirroringStartHandler`](hkhealthstore/workoutsessionmirroringstarthandler.md). If iPhone and Apple Watch lose their connection in the middle of a workout session, Apple Watch automatically tries to reconnect. Each call has its own [`HKWorkoutSession`](hkworkoutsession.md) instance.
-
 The system calls this block from an arbitrary background queue.
 
 ## See Also

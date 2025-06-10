@@ -21,8 +21,6 @@ By default, the system sets the queue depth to its minimum value of three frames
 
 > ❗ **Important**:  Don’t exceed a queue depth of eight frames.
 
- Don’t exceed a queue depth of eight frames.
-
 ## See Also
 
 - [var minimumFrameInterval: CMTime](scstreamconfiguration/minimumframeinterval.md)

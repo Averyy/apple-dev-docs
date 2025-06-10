@@ -10,8 +10,6 @@ You can reduce the time window for receiving ad attribution postbacks by install
 
 > ❗ **Important**:  To download the latest profile, see the [`AdAttributionKit`](https://developer.apple.com/documentation/AdAttributionKit) article on [`Testing ad attributions with a downloaded profile`](https://developer.apple.com/documentation/AdAttributionKit/testing-ad-attributions-with-a-downloaded-profile). This profile is compatible with both AdAttributionKit and SKAdNetwork.
 
- To download the latest profile, see the [`AdAttributionKit`](https://developer.apple.com/documentation/AdAttributionKit) article on [`Testing ad attributions with a downloaded profile`](https://developer.apple.com/documentation/AdAttributionKit/testing-ad-attributions-with-a-downloaded-profile). This profile is compatible with both AdAttributionKit and SKAdNetwork.
-
 For information about installing profiles, see [`Install a configuration profile on your iPhone or iPad`](https://developer.apple.comhttps://support.apple.com/en-us/HT209435). You can install this profile on devices running iOS or iPadOS 14 or later.
 
 With this profile, the installed app has five minutes to update the conversion value after initially registering. The device sends the postback within another five minutes after the rolling five-minute timer for conversion updates expires. Using this profile reduces the conversion value update and postback window from 24–48 hours to 5–10 minutes.

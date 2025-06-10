@@ -1,6 +1,6 @@
 # Designing your app for the Always On state
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Customize your watchOS app’s user interface for continuous display.
 
@@ -180,4 +180,4 @@ You can view any changes to your user interface related to privacy, reduced lumi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/designing-your-app-for-the-always-on-state)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/designing-your-app-for-the-always-on-state)*

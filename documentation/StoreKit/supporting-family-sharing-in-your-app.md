@@ -1,6 +1,6 @@
 # Supporting Family Sharing in your app
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Provide service to share subscriptions and non-consumable products to family members.
 
@@ -70,4 +70,4 @@ When your app displays in-app purchases, indicate in your UI whether users can s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/supporting-family-sharing-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/supporting-family-sharing-in-your-app)*

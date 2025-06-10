@@ -17,7 +17,7 @@ For information on dispatching commands to encode, see the [`MTLComputeCommandEn
 The following two samples demonstrate basic compute passes:
 
 - See [`Performing Calculations on a GPU`](performing-calculations-on-a-gpu.md) for an example of configuring and running a compute pass that performs basic parallel math.
-- See [`Processing a Texture in a Compute Function`](processing-a-texture-in-a-compute-function.md) for an example of using a compute pass to modify data for a render pass.
+- See [`Processing a texture in a compute function`](processing-a-texture-in-a-compute-function.md) for an example of using a compute pass to modify data for a render pass.
 
 ##### Kernel Arguments and Argument Tables
 
@@ -67,16 +67,20 @@ For device support and other tile memory limitations, see [`Metal feature set ta
 ### Essentials
 - [Performing Calculations on a GPU](performing-calculations-on-a-gpu.md)
   Use Metal to find GPUs and perform calculations on them.
-- [Processing a Texture in a Compute Function](processing-a-texture-in-a-compute-function.md)
-  Perform parallel calculations on structured data by placing the data in textures.
+- [Processing a texture in a compute function](processing-a-texture-in-a-compute-function.md)
+  Create textures by running copy and dispatch commands in a compute pass on a GPU.
 ### Encoding a Compute Pass
 - [Creating Threads and Threadgroups](creating-threads-and-threadgroups.md)
   Learn how Metal organizes compute-processing workloads.
 - [Calculating Threadgroup and Grid Sizes](calculating-threadgroup-and-grid-sizes.md)
   Calculate the optimum sizes for threadgroups and grids when dispatching compute-processing workloads.
+- [protocol MTL4ComputeCommandEncoder](mtl4computecommandencoder.md)
+  Encodes a compute pass and other memory operations into a command buffer.
 - [protocol MTLComputeCommandEncoder](mtlcomputecommandencoder.md)
   An interface for dispatching commands to encode in a compute pass.
 ### Configuring a Compute Pipeline State
+- [class MTL4ComputePipelineDescriptor](mtl4computepipelinedescriptor.md)
+  Descriptor defining how a compute pipeline state would be created.
 - [class MTLComputePipelineDescriptor](mtlcomputepipelinedescriptor.md)
   An instance describing the desired GPU state for a kernel call in a compute pass.
 - [protocol MTLComputePipelineState](mtlcomputepipelinestate.md)
@@ -105,6 +109,8 @@ For device support and other tile memory limitations, see [`Metal feature set ta
 
 - [Render Passes](render-passes.md)
   Encode a render pass to draw graphics into an image.
+- [Machine-Learning Passes](machine-learning-passes.md)
+  Add machine-learning model inference to your Metal app’s GPU workflow.
 - [Blit Passes](blit-passes.md)
   Encode a block information transfer pass to adjust and copy data to and from GPU resources, such as buffers and textures.
 - [Indirect Command Encoding](indirect-command-encoding.md)
@@ -115,4 +121,4 @@ For device support and other tile memory limitations, see [`Metal feature set ta
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/compute-passes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/compute-passes)*

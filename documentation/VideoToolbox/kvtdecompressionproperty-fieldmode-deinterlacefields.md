@@ -1,6 +1,6 @@
 # kVTDecompressionProperty_FieldMode_DeinterlaceFields
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

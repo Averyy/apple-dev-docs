@@ -1,6 +1,6 @@
 # encode(_:using:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Encodes each element of the column.

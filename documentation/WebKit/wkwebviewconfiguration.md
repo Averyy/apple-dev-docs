@@ -1,6 +1,6 @@
 # WKWebViewConfiguration
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 A collection of properties that you use to initialize a web view.
@@ -97,6 +97,7 @@ You create a [`WKWebViewConfiguration`](wkwebviewconfiguration.md) object in you
   Deprecated property.
 ### Instance Properties
 - [var allowsInlinePredictions: Bool](wkwebviewconfiguration/allowsinlinepredictions.md)
+- [var showsSystemScreenTimeBlockingView: Bool](wkwebviewconfiguration/showssystemscreentimeblockingview.md)
 - [var supportsAdaptiveImageGlyph: Bool](wkwebviewconfiguration/supportsadaptiveimageglyph.md)
 - [var webExtensionController: WKWebExtensionController?](wkwebviewconfiguration/webextensioncontroller.md)
 - [var writingToolsBehavior: UIWritingToolsBehavior](wkwebviewconfiguration/writingtoolsbehavior.md)

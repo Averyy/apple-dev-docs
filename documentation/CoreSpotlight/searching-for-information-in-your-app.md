@@ -146,8 +146,6 @@ If you prefer not to process the results using an [`AsyncSequence`](https://deve
 
 > ❗ **Important**: Process results using either the [`results`](cssearchquery/results-swift.property.md) property or handler blocks, but not both.
 
-Process results using either the [`results`](cssearchquery/results-swift.property.md) property or handler blocks, but not both.
-
 The following code shows a version of the previous method that uses handler blocks to process the results.
 
 ```swift

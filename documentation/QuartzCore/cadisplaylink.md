@@ -1,6 +1,6 @@
 # CADisplayLink
 
-**Framework**: Quartzcore  
+**Framework**: Core Animation  
 **Kind**: class
 
 A timer object that allows your app to synchronize its drawing to the refresh rate of the display.
@@ -111,4 +111,4 @@ The code listing below shows how to calculate the actual frame rate by dividing 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/QuartzCore/cadisplaylink)*
+*[View on Apple Developer](https://developer.apple.com/documentation/quartzcore/cadisplaylink)*

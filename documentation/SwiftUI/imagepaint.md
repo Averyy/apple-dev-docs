@@ -42,6 +42,7 @@ You can also use [`image(_:sourceRect:scale:)`](shapestyle/image(_:sourcerect:sc
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [ShapeStyle](shapestyle.md)
 
 ## See Also

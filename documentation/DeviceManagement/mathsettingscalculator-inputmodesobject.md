@@ -9,8 +9,6 @@ The declaration to configure the input modes in the calculator app.
 - iOS 18.0+
 - iPadOS 18.0+
 - macOS 15.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,8 +18,6 @@ object MathSettingsCalculator_InputModesObject
 
 ## See Also
 
-- [object MathSettingsCalculatorObject](mathsettingscalculatorobject.md)
-  The declaration to configure the calculator app.
 - [object MathSettingsCalculator_BasicModeObject](mathsettingscalculator_basicmodeobject.md)
   The declaration to configure basic mode in the calculator app.
 - [object MathSettingsCalculator_MathNotesModeObject](mathsettingscalculator_mathnotesmodeobject.md)
@@ -30,8 +26,6 @@ object MathSettingsCalculator_InputModesObject
   The declaration to configure programmer mode in the calculator app.
 - [object MathSettingsCalculator_ScientificModeObject](mathsettingscalculator_scientificmodeobject.md)
   The declaration to configure scientific mode in the calculator app.
-- [object MathSettingsSystemBehaviorObject](mathsettingssystembehaviorobject.md)
-  The declaration to configure math behavior at the system level.
 
 
 ---

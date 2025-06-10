@@ -1,6 +1,6 @@
 # waiter(_:didTimeoutWithUnfulfilledExpectations:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Invoked when not all waited on expectations are fulfilled during the timeout period.

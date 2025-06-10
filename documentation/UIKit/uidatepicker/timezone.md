@@ -20,7 +20,7 @@ var timeZone: TimeZone? { get set }
 
 #### Discussion
 
-The default value is `nil`, which tells the date picker to use the current time zone as returned by [`local`](https://developer.apple.com/documentation/foundation/nstimezone/1387209-local) ([`NSTimeZone`](https://developer.apple.com/documentation/Foundation/NSTimeZone)) or the time zone used by the date picker’s calendar.
+The default value is `nil`, which tells the date picker to use the current time zone as returned by [`local`](https://developer.apple.com/documentation/Foundation/NSTimeZone/local) ([`NSTimeZone`](https://developer.apple.com/documentation/Foundation/NSTimeZone)) or the time zone used by the date picker’s calendar.
 
 ## See Also
 

@@ -28,8 +28,6 @@ The toolbar calls this method when user settings don’t contain any custom conf
 
 > ❗ **Important**:  Even though this is an optional method, you must implement it if you create the toolbar programatically. If you configure your toolbar in Interface Builder, the configuration there provides the default items.
 
- Even though this is an optional method, you must implement it if you create the toolbar programatically. If you configure your toolbar in Interface Builder, the configuration there provides the default items.
-
 ## Parameters
 
 - `toolbar`: The toolbar whose default item identifiers are to be returned.

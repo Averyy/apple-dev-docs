@@ -6,6 +6,7 @@
 The authorization types you can request from ARKit.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -23,6 +24,9 @@ enum AuthorizationType
   The authorization for access to plane detection, scene reconstruction, and image tracking.
 - [ARKitSession.AuthorizationType.cameraAccess](arkitsession/authorizationtype/cameraaccess.md)
   The authorization for camera access.
+### Enumeration Cases
+- [ARKitSession.AuthorizationType.accessoryTracking](arkitsession/authorizationtype/accessorytracking.md)
+  Accessory Tracking
 ### Instance Properties
 - [var description: String](arkitsession/authorizationtype/description.md)
   A textual representation of AuthorizationType
@@ -35,6 +39,7 @@ enum AuthorizationType
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

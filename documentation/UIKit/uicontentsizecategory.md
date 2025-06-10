@@ -62,6 +62,8 @@ struct UIContentSizeCategory
   Creates a content size category from the specified SwiftUI content size category.
 - [init(DynamicTypeSize?)](uicontentsizecategory/init(_:)-abz4.md)
   Creates a content size category from the specified SwiftUI Dynamic Type size.
+### Structures
+- [UIContentSizeCategory.DidChangeMessage](uicontentsizecategory/didchangemessage.md)
 
 ## Relationships
 
@@ -72,6 +74,7 @@ struct UIContentSizeCategory
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

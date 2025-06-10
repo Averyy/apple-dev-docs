@@ -1,6 +1,6 @@
 # authorizationStatus
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The app’s ability to schedule and receive local and remote notifications.

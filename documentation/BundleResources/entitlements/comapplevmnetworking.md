@@ -1,6 +1,6 @@
 # com.apple.vm.networking
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 A Boolean that indicates whether the app manages virtual network interfaces without escalating privileges to the root user.

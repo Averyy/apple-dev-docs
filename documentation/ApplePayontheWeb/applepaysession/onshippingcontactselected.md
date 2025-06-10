@@ -1,6 +1,6 @@
 # onshippingcontactselected
 
-**Framework**: Applepayontheweb  
+**Framework**: Apple Pay on the Web  
 **Kind**: property
 
 An event handler to call when the user selects a shipping contact in the payment sheet.

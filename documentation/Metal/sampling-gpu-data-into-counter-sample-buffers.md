@@ -98,4 +98,4 @@ The `barrier` parameter for these methods controls whether the pass waits for th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/sampling-gpu-data-into-counter-sample-buffers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/sampling-gpu-data-into-counter-sample-buffers)*

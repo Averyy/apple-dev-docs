@@ -1,9 +1,9 @@
 # ActivityFamily.medium
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: case
 
-A size family of a Live Activity on iOS.
+A size family of a Live Activity on iOS and macOS.
 
 **Availability**:
 - iOS 18.0+

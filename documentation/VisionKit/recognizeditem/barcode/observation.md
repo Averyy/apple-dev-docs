@@ -1,6 +1,6 @@
 # observation
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A representation of the barcode information.

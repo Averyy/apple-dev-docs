@@ -295,12 +295,14 @@ After the command buffer completes, the GPU’s calculations are stored in the o
 
 ## See Also
 
+- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+  Discover the features and functionality in the Metal 4 foundational APIs.
+- [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
+  Render a colorful, 2D triangle by running a draw command on the GPU.
 - [Using Metal to Draw a View’s Contents](using-metal-to-draw-a-view's-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
-- [Using a Render Pipeline to Render Primitives](using-a-render-pipeline-to-render-primitives.md)
-  Render a simple 2D triangle.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/performing-calculations-on-a-gpu)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/performing-calculations-on-a-gpu)*

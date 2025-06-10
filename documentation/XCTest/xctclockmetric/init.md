@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Initializes a metric that records elapsed time in a performance test.

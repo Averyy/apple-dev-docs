@@ -6,23 +6,23 @@
 Create an `AccessibilityCustomContentKey` with the specified label.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
-- watchOS 8.0+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
-init(_ labelKey: LocalizedStringKey)
+init(_ label: LocalizedStringResource)
 ```
 
 ## Parameters
 
-- `labelKey`: Localized text describing to the user what   is contained in this additional information entry. For example:   “orientation”. This will also be used as the identifier.
+- `label`: Localized text describing to the user what   is contained in this additional information entry. For example:   “orientation”. This will also be used as the identifier.
 
 ## See Also
 

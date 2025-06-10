@@ -1,6 +1,6 @@
 # allocateMipmaps
 
-**Framework**: Metalkit  
+**Framework**: MetalKit  
 **Kind**: property
 
 A key used to specify whether the texture loader should allocate memory for mipmaps in the texture.
@@ -35,4 +35,4 @@ This option applies only if the texture being loaded does not contain mipmap dat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MetalKit/mtktextureloader/option/allocatemipmaps)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metalkit/mtktextureloader/option/allocatemipmaps)*

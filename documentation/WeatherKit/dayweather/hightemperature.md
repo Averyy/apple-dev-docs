@@ -1,6 +1,6 @@
 # highTemperature
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The daytime high temperature.

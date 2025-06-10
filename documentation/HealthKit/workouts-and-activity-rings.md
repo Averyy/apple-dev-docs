@@ -46,6 +46,8 @@ Finally, workout routes record the user’s path during an outdoor activity (for
   Create your own workout app, quickly and easily, with HealthKit and SwiftUI.
 - [Building a multidevice workout app](building-a-multidevice-workout-app.md)
   Mirror a workout from a watchOS app to its companion iOS app, and perform bidirectional communication between them.
+- [Building a workout app for iPhone and iPad](building-a-workout-app-for-iphone-and-ipad.md)
+  Start a workout in iOS, control it from the Lock Screen with App Intents, and present the workout status with Live Activities.
 - [class HKWorkoutSession](hkworkoutsession.md)
   A session that tracks the user’s workout on Apple Watch.
 - [class HKWorkoutConfiguration](hkworkoutconfiguration.md)

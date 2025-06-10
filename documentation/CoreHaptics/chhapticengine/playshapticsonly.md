@@ -25,8 +25,6 @@ Setting this property to [`true`](https://developer.apple.com/documentation/swif
 
 > ❗ **Important**:  Changing the value of this property on a running engine has no effect until you stop and restart the engine.
 
- Changing the value of this property on a running engine has no effect until you stop and restart the engine.
-
 ## See Also
 
 - [var playsAudioOnly: Bool](chhapticengine/playsaudioonly.md)

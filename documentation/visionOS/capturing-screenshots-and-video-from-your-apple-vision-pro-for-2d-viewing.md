@@ -1,6 +1,6 @@
 # Capturing screenshots and video from Apple Vision Pro for 2D viewing
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Create screenshots and record high-quality video of your visionOS app and its surroundings for app previews.
 
@@ -64,6 +64,8 @@ Use additional video-editing tools to trim, edit, and apply post-processing, suc
 
 ## See Also
 
+- [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
+  Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)
@@ -90,4 +92,4 @@ Use additional video-editing tools to trim, edit, and apply post-processing, suc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing)*

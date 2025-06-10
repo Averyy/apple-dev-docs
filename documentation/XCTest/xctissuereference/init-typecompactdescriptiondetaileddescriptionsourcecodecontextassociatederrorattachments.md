@@ -1,6 +1,6 @@
 # init(type:compactDescription:detailedDescription:sourceCodeContext:associatedError:attachments:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates an issue for a test failure, with descriptions, source code location, error, and attachments.

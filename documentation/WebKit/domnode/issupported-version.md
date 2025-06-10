@@ -1,6 +1,6 @@
 # isSupported(_:version:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

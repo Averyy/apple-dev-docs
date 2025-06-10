@@ -1,6 +1,6 @@
 # XPC_TYPE_CONNECTION
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A type that represents a connection to a named service.

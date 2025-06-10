@@ -23,6 +23,8 @@ var peripheralIdentifier: UUID? { get set }
 
 - [var hotspotSSID: String?](asmigrationdisplayitem/hotspotssid.md)
   The Wi-Fi hotspot SSID of the accessory to migrate.
+- [var wifiAwarePairedDeviceID: ASAccessory.WiFiAwarePairedDeviceID](asmigrationdisplayitem/wifiawarepaireddeviceid.md)
+  The Wi-Fi Aware paired device identififer of the accessory to migrate.
 
 
 ---

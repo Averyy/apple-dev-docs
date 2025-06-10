@@ -1,6 +1,6 @@
 # texture(with:options:)
 
-**Framework**: Glkit  
+**Framework**: GLKit  
 **Kind**: method
 
 Loads a 2D texture image from a Quartz image and creates a new texture from the data.
@@ -44,7 +44,7 @@ If the image was created using the CGBitmapImageContextCreate function, it must 
 
 ## See Also
 
-- [func texture(with: CGImage, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: GLKTextureLoaderCallback)](glktextureloader/texture(with:options:queue:completionhandler:).md)
+- [func texture(with: CGImage, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: (GLKTextureInfo?, (any Error)?) -> Void)](glktextureloader/texture(with:options:queue:completionhandler:).md)
   Asynchronously loads a 2D texture image from a Quartz image and creates a new texture from the data.
 
 

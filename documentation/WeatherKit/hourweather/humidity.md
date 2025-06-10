@@ -1,6 +1,6 @@
 # humidity
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The humidity for the hour.

@@ -1,6 +1,6 @@
 # TKTokenDriver
 
-**Framework**: Cryptotokenkit  
+**Framework**: CryptoTokenKit  
 **Kind**: class
 
 A base class for building token drivers.
@@ -66,4 +66,4 @@ An implementation can also access its associated token configuration using the [
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CryptoTokenKit/tktokendriver)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cryptotokenkit/tktokendriver)*

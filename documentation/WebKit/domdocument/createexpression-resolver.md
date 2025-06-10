@@ -1,6 +1,6 @@
 # createExpression(_:resolver:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

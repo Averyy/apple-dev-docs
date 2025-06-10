@@ -18,7 +18,7 @@ func translation(in coordinateSpace: some CoordinateSpaceProtocol) -> CGPoint?
 
 #### Discussion
 
-If the gesture recognizer does not implement a `velocityInView:` method, returns nil.
+If the gesture recognizer does not implement a `translationInView:` method, returns nil.
 
 ## Parameters
 

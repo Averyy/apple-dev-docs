@@ -24,8 +24,6 @@ A power managed driver must override [`setPowerState`](ioservice/1532866-setpowe
 
 > ⚠️ **Warning**: Local storage drivers receive their calls to [`setPowerState`](ioservice/1532866-setpowerstate.md) in a non-deterministic order from any other drivers. As a result, disk I/O and pageable memory may be unavailable in your implementation of [`setPowerState`](ioservice/1532866-setpowerstate.md). Any attempt to access pageable memory, which may require I/O, can result in a stall, and eventually panic.
 
-Local storage drivers receive their calls to [`setPowerState`](ioservice/1532866-setpowerstate.md) in a non-deterministic order from any other drivers. As a result, disk I/O and pageable memory may be unavailable in your implementation of [`setPowerState`](ioservice/1532866-setpowerstate.md). Any attempt to access pageable memory, which may require I/O, can result in a stall, and eventually panic.
-
 ## Parameters
 
 - `powerStateOrdinal`: The number in the power state array of the state the driver is being instructed to switch to.

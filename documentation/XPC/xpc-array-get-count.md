@@ -1,6 +1,6 @@
 # xpc_array_get_count(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the count of values in the array.

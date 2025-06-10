@@ -1,6 +1,6 @@
 # menuItem
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A menu item representation of the web extension command for use in menus.
@@ -16,7 +16,7 @@ A menu item representation of the web extension command for use in menus.
 
 ```swift
 @NSCopying
-@MainActor var menuItem: NSMenuItem { get }
+@MainActor var menuItem: UIMenuElement { get }
 ```
 
 #### Discussion

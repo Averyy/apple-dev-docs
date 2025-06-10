@@ -1,6 +1,6 @@
 # Choosing a user interface idiom for your Mac app
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Select the iPad or the Mac user interface idiom in your Mac app built with Mac Catalyst.
 
@@ -121,4 +121,4 @@ present(alert, animated: true, completion: nil)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/choosing-a-user-interface-idiom-for-your-mac-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/choosing-a-user-interface-idiom-for-your-mac-app)*

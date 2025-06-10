@@ -1,6 +1,6 @@
 # link
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Allows the user to drag a link in the source object.

@@ -1,6 +1,6 @@
 # managementURL
 
-**Framework**: Applepayontheweb  
+**Framework**: Apple Pay on the Web  
 **Kind**: property
 
 A URL to a web page where the user can update or delete the payment method for the automatic reload payment.
@@ -24,4 +24,4 @@ When users remove a payment method, the system deletes the associated Apple Pay 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepayautomaticreloadpaymentrequest/managementurl)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepayautomaticreloadpaymentrequest/managementurl)*

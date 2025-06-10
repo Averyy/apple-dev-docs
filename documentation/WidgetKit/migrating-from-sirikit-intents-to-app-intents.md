@@ -1,6 +1,6 @@
 # Migrating widgets from SiriKit Intents to App Intents
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Configure your widgets for backward compatibility.
 
@@ -69,15 +69,11 @@ After you create app intent types, and switch to using `AppIntentConfiguration`,
 
 > ❗ **Important**: If the name or type of the parameters don’t match, the system omits the parameter from the app intent, and the user’s configuration is lost. For example, if the `INIntent` parameter is an `INPerson`, use `IntentPerson` for the app intent type. If the parameter’s type is an enum or custom object, the new type must conform to `AppEnum` or `TransientAppEntity`, respectively.
 
-If the name or type of the parameters don’t match, the system omits the parameter from the app intent, and the user’s configuration is lost. For example, if the `INIntent` parameter is an `INPerson`, use `IntentPerson` for the app intent type. If the parameter’s type is an enum or custom object, the new type must conform to `AppEnum` or `TransientAppEntity`, respectively.
-
 ##### Implement an App Intent Timeline Provider
 
 To generate timeline entries that use app intents, create a timeline provider that conforms to [`AppIntentTimelineProvider`](appintenttimelineprovider.md). The functionality of an `AppIntentTimelineProvider` is the same as an `IntentTimelineProvider`; the difference is the associated `Intent` type. For an `AppIntentTimelineProvider`, the `Intent` type is `WidgetConfigurationIntent`; for an `IntentTimelineProvider`, it’s an `INIntent`.
 
 > 💡 **Tip**: If your app supports older operating system versions, minimize code duplication by factoring common code out into a separate type used by both providers.
-
-If your app supports older operating system versions, minimize code duplication by factoring common code out into a separate type used by both providers.
 
 When designing the timeline entries that the timeline providers generate, consider these two approaches:
 

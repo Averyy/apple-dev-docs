@@ -69,6 +69,7 @@ In most cases, an inputer must handle missing values.
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TabularEstimator](tabularestimator.md)
 - [UpdatableTabularEstimator](updatabletabularestimator.md)
 

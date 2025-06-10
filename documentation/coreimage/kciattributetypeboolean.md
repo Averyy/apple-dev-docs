@@ -1,23 +1,38 @@
 # kCIAttributeTypeBoolean
 
 **Framework**: Core Image  
-**Kind**: data
+**Kind**: var
 
 A Boolean value.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.0+
-- macOS 10.4+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
 let kCIAttributeTypeBoolean: String
 ```
+
+## See Also
+
+- [let kCIAttributeTypeTime: String](kciattributetypetime.md)
+  A parametric time for transitions, specified as a floating-point value in the range of `0.0` to `1.0`.
+- [let kCIAttributeTypeScalar: String](kciattributetypescalar.md)
+  A scalar value.
+- [let kCIAttributeTypeDistance: String](kciattributetypedistance.md)
+  A distance.
+- [let kCIAttributeTypeAngle: String](kciattributetypeangle.md)
+  An angle.
+- [let kCIAttributeTypeInteger: String](kciattributetypeinteger.md)
+  An integer value.
+- [let kCIAttributeTypeCount: String](kciattributetypecount.md)
+  A positive integer value.
 
 
 ---

@@ -14,6 +14,10 @@ String that represents a device family.
 string DeviceFamily
 ```
 
+## Mentions
+
+- [Configuring accessibility declarations for your app](configuring-accessibility-declarations.md)
+
 ## See Also
 
 - [object BetaRecruitmentCriterionCompatibleBuildCheck](betarecruitmentcriterioncompatiblebuildcheck.md)

@@ -1,6 +1,6 @@
 # tabs
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the existing tabs that should be moved to the window.

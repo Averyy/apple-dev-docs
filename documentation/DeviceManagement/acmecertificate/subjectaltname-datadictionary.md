@@ -12,8 +12,6 @@ The subject’s alternative name details.
 - tvOS 16.0+
 - visionOS 1.0+
 - watchOS 9.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

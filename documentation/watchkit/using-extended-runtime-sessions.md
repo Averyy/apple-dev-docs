@@ -1,6 +1,6 @@
 # Using extended runtime sessions
 
-**Framework**: Watchkit
+**Framework**: WatchKit
 
 Create an extended runtime session that continues running your app after the user stops interacting with it.
 
@@ -13,8 +13,6 @@ With background sessions, your app continues to run in the background, but the s
 Select a session type based on the app’s intended use—not based on the features that the session provides. Extended runtime sessions let the app continue to communicate with a Bluetooth device, process data, or play sounds or haptics, even after the watch’s screen turns off.
 
 > ❗ **Important**:  To maintain high performance on Apple Watch, limit the amount of work performed during an extended runtime session. If your app sustains high CPU usage over a period of time, the system may cancel the session (see [`WKExtendedRuntimeSessionErrorCode.exceededResourceLimits`](wkextendedruntimesessionerrorcode/exceededresourcelimits.md)). Use Xcode’s CPU report tool or the time profiler in Instruments to test and minimize your app’s CPU usage.
-
- To maintain high performance on Apple Watch, limit the amount of work performed during an extended runtime session. If your app sustains high CPU usage over a period of time, the system may cancel the session (see [`WKExtendedRuntimeSessionErrorCode.exceededResourceLimits`](wkextendedruntimesessionerrorcode/exceededresourcelimits.md)). Use Xcode’s CPU report tool or the time profiler in Instruments to test and minimize your app’s CPU usage.
 
 ##### Set Up the Session
 

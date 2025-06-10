@@ -3,7 +3,7 @@
 **Framework**: RoomPlan  
 **Kind**: method
 
-Encodes this value into the given encoder.
+Serializes captured room data to the specified encoder.
 
 **Availability**:
 - iOS 16.0+
@@ -18,13 +18,11 @@ func encode(to encoder: any Encoder) throws
 
 #### Discussion
 
-If the value fails to encode anything, `encoder` will encode an empty keyed container in its place.
-
-This function throws an error if any values are invalid for the given encoder’s format.
+An app might serialize a [`CapturedRoomData`](capturedroomdata.md) object to defer processing to a later date or to defer processing to another device.
 
 ## Parameters
 
-- `encoder`: The encoder to write data to.
+- `encoder`: An object that the captured room data serializes to.
 
 
 ---

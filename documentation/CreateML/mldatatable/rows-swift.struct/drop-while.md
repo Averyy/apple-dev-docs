@@ -1,6 +1,6 @@
 # drop(while:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.

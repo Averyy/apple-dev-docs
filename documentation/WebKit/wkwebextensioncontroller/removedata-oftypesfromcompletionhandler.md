@@ -1,6 +1,6 @@
 # removeData(ofTypes:from:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Removes extension data of the given types for the given data records.

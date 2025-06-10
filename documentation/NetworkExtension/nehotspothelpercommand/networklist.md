@@ -26,6 +26,7 @@ This property will be nil unless `commandType` is `kNEHotspotHelperCommandTypeFi
 - [var commandType: NEHotspotHelperCommandType](nehotspothelpercommand/commandtype.md)
   The type of the command
 - [enum NEHotspotHelperCommandType](nehotspothelpercommandtype.md)
+  An enumeration of hotspot command types.
 - [var network: NEHotspotNetwork?](nehotspothelpercommand/network.md)
   The network associated with the command.
 

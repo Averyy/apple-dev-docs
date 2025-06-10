@@ -61,6 +61,7 @@ Element values can be received by a [`HIDDeviceClient`](hiddeviceclient.md) usin
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -21,8 +21,8 @@ class EKEvent
 
 ## Mentions
 
-- [Retrieving events and reminders](retrieving-events-and-reminders.md)
 - [Creating events and reminders](creating-events-and-reminders.md)
+- [Retrieving events and reminders](retrieving-events-and-reminders.md)
 
 #### Overview
 
@@ -92,8 +92,8 @@ Use the [`init(eventStore:)`](ekevent/init(eventstore:).md) method to create a n
   Fetch events and reminders from the Calendar database.
 - [Updating with notifications](updating-with-notifications.md)
   Register for notifications about changes and keep your app up to date.
-- [Managing Location-Based Reminders](managing-location-based-reminders.md)
-  Add, fetch, complete, remove, and sort location-based reminders in your app.
+- [Managing location-based reminders](managing-location-based-reminders.md)
+  Access reminders set up with geofence-enabled alarms on a person’s calendars.
 - [class EKReminder](ekreminder.md)
   A class that represents a reminder in a calendar.
 

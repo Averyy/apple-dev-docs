@@ -52,7 +52,7 @@ struct ContentView: View {
 
 ## Topics
 
-### Creating a Video Player
+### Creating a video player
 - [init(player: AVPlayer?)](videoplayer/init(player:).md)
   Creates a video-player user interface for the player object.
 - [init(player: AVPlayer?, videoOverlay: () -> VideoOverlay)](videoplayer/init(player:videooverlay:).md)
@@ -62,6 +62,7 @@ struct ContentView: View {
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 

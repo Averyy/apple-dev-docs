@@ -15,14 +15,14 @@ Construct and manage a graphical, event-driven user interface for your iOS, iPad
 
 ## Mentions
 
-- [About focus interactions for Apple TV](about-focus-interactions-for-apple-tv.md)
 - [Supporting VoiceOver in your app](supporting-voiceover-in-your-app.md)
+- [About focus interactions for Apple TV](about-focus-interactions-for-apple-tv.md)
 
 #### Overview
 
 UIKit provides a variety of features for building apps, including components you can use to construct the core infrastructure of your iOS, iPadOS, or tvOS apps. The framework provides the window and view architecture for implementing your UI, the event-handling infrastructure for delivering Multi-Touch and other types of input to your app, and the main run loop for managing interactions between the user, the system, and your app.
 
-![Image of an iPhone and iPad running apps that showcase UIKit user interface elements. The iPhone is running a sample app that shows a color picker and a navigation bar. The iPad is running a sample app that shows a split-view interface with an outline view, a list of recipes, and a detail view with information about a specific recipe.](https://docs-assets.developer.apple.com/published/31e8bdfc42bedb19440cda0f0c4c513f/media-4087315%402x.png)
+![An image of the Landmarks sample app on iPad and iPhone showing the Mount Fuji landmark.](https://docs-assets.developer.apple.com/published/6452b204ef978b327ecf448e232eee4e/Landmarks-Building-an-app-with-Liquid-Glass-1%402x.png)
 
 UIKit also includes support for animations, documents, drawing and printing, text management and display, search, app extensions, resource management, and getting information about the current device. You can also customize accessibility support, and localize your app’s interface for different languages, countries, or cultural regions.
 
@@ -32,11 +32,11 @@ To build a macOS app, you can use [`SwiftUI`](https://developer.apple.com/docume
 
 > ❗ **Important**:  Use UIKit classes only from your app’s main thread or main dispatch queue, unless otherwise indicated in the documentation for those classes. This restriction particularly applies to classes that derive from [`UIResponder`](uiresponder.md) or that involve manipulating your app’s user interface in any way.
 
- Use UIKit classes only from your app’s main thread or main dispatch queue, unless otherwise indicated in the documentation for those classes. This restriction particularly applies to classes that derive from [`UIResponder`](uiresponder.md) or that involve manipulating your app’s user interface in any way.
-
 ## Topics
 
 ### Essentials
+- [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md)
+  Find out how to bring the new material to your app.
 - [UIKit updates](../Updates/UIKit.md)
   Learn about important changes to UIKit.
 - [About App Development with UIKit](about-app-development-with-uikit.md)
@@ -64,7 +64,7 @@ To build a macOS app, you can use [`SwiftUI`](https://developer.apple.com/docume
 - [View layout](view-layout.md)
   Use stack views to lay out the views of your interface automatically. Use Auto Layout when you require precise placement of your views.
 - [Appearance customization](appearance-customization.md)
-  Add Dark Mode support to your app, customize the appearance of bars, and use appearance proxies to modify your UI.
+  Apply Liquid Glass to views, support Dark Mode in your app, customize the appearance of bars, and use appearance proxies to modify your UI.
 - [Animation and haptics](animation-and-haptics.md)
   Provide feedback to users using view-based animations and haptics.
 - [Windows and screens](windows-and-screens.md)
@@ -105,12 +105,6 @@ To build a macOS app, you can use [`SwiftUI`](https://developer.apple.com/docume
 ### Deprecated
 - [Deprecated symbols](deprecated-symbols.md)
   Review unsupported symbols and their replacements.
-### Structures
-- [struct UIShadowProperties](uishadowproperties-swift.struct.md)
-- [struct UIConfigurationTextAttributesTransformer](uiconfigurationtextattributestransformer-swift.struct.md)
-  Defines a text transformation that can affect the visual appearance of a string.
-### Classes
-- [class UITextFormattingViewController](uitextformattingviewcontroller.md)
 ### Reference
 - [UIKit Enumerations](uikit-enumerations.md)
 - [UIKit Constants](uikit-constants.md)
@@ -119,6 +113,9 @@ To build a macOS app, you can use [`SwiftUI`](https://developer.apple.com/docume
   The UIKit framework defines data types that are used in multiple places throughout the framework.
 - [UIKit Functions](uikit-functions.md)
   The UIKit framework defines a number of functions, many of them used in graphics and drawing operations.
+### Structures
+- [struct UIConfigurationTextAttributesTransformer](uiconfigurationtextattributestransformer-swift.struct.md)
+  Defines a text transformation that can affect the visual appearance of a string.
 
 
 ---

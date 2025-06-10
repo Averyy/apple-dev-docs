@@ -10,10 +10,10 @@ A Boolean value that determines whether to rescore confidence according to predi
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
-- tvOS 14.0+
+- visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
-- visionOS ?+
+- tvOS 14.0+
 
 ## Declaration
 

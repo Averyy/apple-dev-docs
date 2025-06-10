@@ -9,8 +9,6 @@ The command to prompt the user to share their screen using AirPlay Mirroring.
 - iOS 7.0+
 - iPadOS 7.0+
 - macOS 10.10+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,9 +18,9 @@ object RequestMirroringCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object RequestMirroringCommand.Command](requestmirroringcommand/command-data.dictionary.md)
-  The request dictionary to prompt the user to share their screen using AirPlay Mirroring.
+  The command to prompt the user to share their screen using AirPlay Mirroring.
 
 ## See Also
 

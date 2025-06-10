@@ -1,6 +1,6 @@
 # test
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The test instance for the test run.

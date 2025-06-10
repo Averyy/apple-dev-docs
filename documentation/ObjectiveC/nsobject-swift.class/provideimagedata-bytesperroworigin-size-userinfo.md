@@ -16,7 +16,7 @@ Supplies data to a `CIImage` object.
 ## Declaration
 
 ```swift
-func provideImageData(_ data: UnsafeMutableRawPointer, bytesPerRow rowbytes: Int, origin x: Int, _ y: Int, size width: Int, _ height: Int, userInfo info: Any?)
+func provideImageData(_ data: UnsafeMutableRawPointer, bytesPerRow rowbytes: Int, origin originx: Int, _ originy: Int, size width: Int, _ height: Int, userInfo info: Any?)
 ```
 
 #### Discussion
@@ -34,8 +34,6 @@ That this callback always requests the full image data regardless of what is act
 
 - `data`: A pointer to image data. Note that   refers to the first byte of the requested subimage, not the larger image buffer.
 - `rowbytes`: The number of bytes per row.
-- `x`: The x origin of the image data.
-- `y`: The y origin of the image data.
 - `width`: The width of the image data.
 - `height`: The height of the image data.
 - `info`: User supplied data, which is optional.

@@ -6,6 +6,7 @@
 The immersive space didn’t open because the user cancelled the operation.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

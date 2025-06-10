@@ -1,6 +1,6 @@
 # WKPreviewActionItemIdentifierAddToReadingList
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Adds the item to the Reading List.

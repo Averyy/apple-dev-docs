@@ -1,6 +1,6 @@
 # measure(metrics:block:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Records the selected metrics for a block of code.

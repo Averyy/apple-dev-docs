@@ -8,14 +8,11 @@ Create a promotional offer for an auto-renewable subscription.
 **Availability**:
 - App Store Connect API 2.0+
 
-#### Overview
-
-<<<<<<< HEAD
-
 ## See Also
 
 - [List All Promotional Offer Prices for a Subscription](get-v1-subscriptionpromotionaloffers-_id_-prices.md)
   Get a list of prices of a promotional offer for an auto-renewable subscription, for a specified territory.
+- [GET /v1/subscriptionPromotionalOffers/{id}/relationships/prices](get-v1-subscriptionpromotionaloffers-_id_-relationships-prices.md)
 - [Read Promotional Offer Information](get-v1-subscriptionpromotionaloffers-_id_.md)
   Get details about a specific promotional offer for an auto-renewable subscription.
 - [Modify a Promotional Offer](patch-v1-subscriptionpromotionaloffers-_id_.md)

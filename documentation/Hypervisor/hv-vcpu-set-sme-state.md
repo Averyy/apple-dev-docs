@@ -22,8 +22,6 @@ func hv_vcpu_set_sme_state(_ vcpu: hv_vcpu_t, _ sme_state: UnsafePointer<hv_vcpu
 
 > ❗ **Important**:  You need to call this on the owning thread
 
- You need to call this on the owning thread
-
 For any entry or exit from streaming SVE mode, all Z vector and P predicate registers are set to zero, and all FPSR flags are set; you need to save this state if you need to retain it across streaming SVE mode transitions.
 
 In streaming SVE mode, the system aliases the SIMD Q registers to the bottom `128` bits of the corresponding Z register, and any modification reflects on the Z register state.

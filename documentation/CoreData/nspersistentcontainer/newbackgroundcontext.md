@@ -30,7 +30,7 @@ A newly created private managed object context.
 
 #### Discussion
 
-Invoking this method causes the persistent container to create and return a new [`NSManagedObjectContext`](nsmanagedobjectcontext.md) with the [`concurrencyType`](nsmanagedobjectcontext/concurrencytype-swift.property.md) set to [`NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType`](nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md). This new context will be associated with the [`NSPersistentStoreCoordinator`](nspersistentstorecoordinator.md) directly and is set to consume [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/foundation/nsnotification/name/1506380-nsmanagedobjectcontextdidsave) broadcasts automatically.
+Invoking this method causes the persistent container to create and return a new [`NSManagedObjectContext`](nsmanagedobjectcontext.md) with the [`concurrencyType`](nsmanagedobjectcontext/concurrencytype-swift.property.md) set to [`NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType`](nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md). This new context will be associated with the [`NSPersistentStoreCoordinator`](nspersistentstorecoordinator.md) directly and is set to consume [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSManagedObjectContextDidSave) broadcasts automatically.
 
 ## See Also
 

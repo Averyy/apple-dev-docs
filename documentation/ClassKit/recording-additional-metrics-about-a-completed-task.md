@@ -1,6 +1,6 @@
 # Recording additional metrics about a completed task
 
-**Framework**: Classkit
+**Framework**: ClassKit
 
 Add an activity item to an activity to record additional information about a student’s attempt to complete a task.
 
@@ -66,4 +66,4 @@ On the other hand, don’t collect data just for the sake of collecting data. Re
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/recording-additional-metrics-about-a-completed-task)*
+*[View on Apple Developer](https://developer.apple.com/documentation/classkit/recording-additional-metrics-about-a-completed-task)*

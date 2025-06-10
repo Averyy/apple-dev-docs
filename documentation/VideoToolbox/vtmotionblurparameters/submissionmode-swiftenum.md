@@ -1,11 +1,14 @@
 # VTMotionBlurParameters.SubmissionMode
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: enum
 
 A value describing the processing request in a parameters submission object.
 
 **Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.4+
 
 ## Declaration
@@ -36,13 +39,12 @@ Set to VTMotionBlurParametersSubmissionModeSequential to indicate that the curre
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [var sourceFrame: VTFrameProcessorFrame](vtmotionblurparameters/sourceframe.md)
   The current source frame.
-- [var destinationFrame: VTFrameProcessorFrame](vtmotionblurparameters/destinationframe.md)
-  A user-allocated pixel buffer that receives the results.
 - [var nextFrame: VTFrameProcessorFrame?](vtmotionblurparameters/nextframe.md)
   The next source frame in presentation time order.
 - [var previousFrame: VTFrameProcessorFrame?](vtmotionblurparameters/previousframe.md)

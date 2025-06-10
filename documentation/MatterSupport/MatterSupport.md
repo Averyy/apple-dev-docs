@@ -18,8 +18,6 @@ Matter is a smart home connectivity standard that gives your app the ability to 
 
 > ❗ **Important**: Calls to this framework return errors to Mac apps built with Mac Catalyst.
 
-Calls to this framework return errors to Mac apps built with Mac Catalyst.
-
 ## Topics
 
 ### Adding a device

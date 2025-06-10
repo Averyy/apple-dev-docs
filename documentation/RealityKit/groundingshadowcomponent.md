@@ -1,6 +1,6 @@
 # GroundingShadowComponent
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 A component that controls an entity’s grounding shadow.
@@ -10,6 +10,7 @@ A component that controls an entity’s grounding shadow.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -80,8 +81,6 @@ RealityKit generates grounding shadows from the perspective of another entity th
 ### Enumerations
 - [GroundingShadowComponent.FadeBehaviorNearPhysicalObjects](groundingshadowcomponent/fadebehaviornearphysicalobjects-swift.enum.md)
   Describes the behavior of an entity’s grounding shadow when it’s near physical objects.
-### Default Implementations
-- [Component Implementations](groundingshadowcomponent/component-implementations.md)
 
 ## Relationships
 
@@ -96,4 +95,4 @@ RealityKit generates grounding shadows from the perspective of another entity th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/groundingshadowcomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/groundingshadowcomponent)*

@@ -1,6 +1,6 @@
 # Showing and hiding view controllers
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Display view controllers using different techniques, and pass data between them during transitions.
 
@@ -110,4 +110,4 @@ To dismiss a modally presented view controller, call the view controller’s [`d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/showing-and-hiding-view-controllers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/showing-and-hiding-view-controllers)*

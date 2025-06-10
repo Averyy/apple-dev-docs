@@ -21,7 +21,7 @@ var birthday: DateComponents? { get }
 
 #### Discussion
 
-Birthdays are represented by this property, whose values are the relevant properties of an [`NSDateComponents`](https://developer.apple.com/documentation/Foundation/NSDateComponents) object. Day and month components are required for this property, and year is optional. The calendar component can be `nil` or [`gregorian`](https://developer.apple.com/documentation/foundation/nscalendar/identifier/1410488-gregorian). All other date components are invalid and including them results in an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object that includes the key paths of the invalid components and the error code [`CNError.Code.validationConfigurationError`](cnerror/code/validationconfigurationerror.md).
+Birthdays are represented by this property, whose values are the relevant properties of an [`NSDateComponents`](https://developer.apple.com/documentation/Foundation/NSDateComponents) object. Day and month components are required for this property, and year is optional. The calendar component can be `nil` or [`gregorian`](https://developer.apple.com/documentation/Foundation/NSCalendar/Identifier/gregorian). All other date components are invalid and including them results in an [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) object that includes the key paths of the invalid components and the error code [`CNError.Code.validationConfigurationError`](cnerror/code/validationconfigurationerror.md).
 
 ## See Also
 

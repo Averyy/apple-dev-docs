@@ -1,0 +1,36 @@
+# allocate(locale:)
+
+**Framework**: Speech  
+**Kind**: method
+
+Adds the locale to `allocatedLocales`. Throws if the number of locales would exceed `maximumAllocatedLocales`. Returns false if the locale is already in the set.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+@discardableResult
+static func allocate(locale: Locale) async throws -> Bool
+```
+
+## See Also
+
+- [static func assetInstallationRequest(supporting: [any SpeechModule]) async throws -> AssetInstallationRequest?](assetinventory/assetinstallationrequest(supporting:).md)
+  Returns an `AssetsInstallationRequest` object, which is used to initiate the asset download and monitor the progress.
+- [static func deallocate(locale: Locale) async -> Bool](assetinventory/deallocate(locale:).md)
+  Removes the locale from `allocatedLocales`. Returns false if the locale is not in the set.
+- [static func status(forModules: [any SpeechModule]) async -> AssetInventory.Status](assetinventory/status(formodules:).md)
+  Returns the status for the list of modules. If the status differs between modules, it returns the lowest status.
+- [static func uninstallAssets(exceptFor: [any SpeechModule]) async](assetinventory/uninstallassets(exceptfor:).md)
+  Removes the assets, except for the ones required by the specified modules. It will also deallocate unused locales. Does not remove assets still in use by other apps.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/speech/assetinventory/allocate(locale:))*

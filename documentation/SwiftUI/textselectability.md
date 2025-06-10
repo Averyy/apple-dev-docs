@@ -56,6 +56,8 @@ To configure whether people can select text in your app, use the [`textSelection
   A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
 - [enum TextSelectionAffinity](textselectionaffinity.md)
   A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
+- [struct AttributedTextSelection](attributedtextselection.md)
+  Represents a selection of attributed text.
 
 
 ---

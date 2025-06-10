@@ -1,6 +1,6 @@
 # XPC_API_VERSION
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 The version of the XPC API.

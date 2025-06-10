@@ -1,6 +1,6 @@
 # Viewing Desktop or Mobile Web Content Using a Web View
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 Implement a simple iPad web browser that can view either the desktop or mobile version of a website.
 
@@ -26,4 +26,4 @@ Implement a simple iPad web browser that can view either the desktop or mobile v
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WebKit/viewing-desktop-or-mobile-web-content-using-a-web-view)*
+*[View on Apple Developer](https://developer.apple.com/documentation/webkit/viewing-desktop-or-mobile-web-content-using-a-web-view)*

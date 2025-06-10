@@ -1,6 +1,6 @@
 # append(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Adds an element to the end of the collection.

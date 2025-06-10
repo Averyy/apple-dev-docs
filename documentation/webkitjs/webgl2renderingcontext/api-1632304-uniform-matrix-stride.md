@@ -1,6 +1,6 @@
 # UNIFORM_MATRIX_STRIDE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

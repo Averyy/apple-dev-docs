@@ -31,6 +31,9 @@ After creating a [`UIToolbarAppearance`](uitoolbarappearance.md) object, use the
 ### Configuring the Done button
 - [var doneButtonAppearance: UIBarButtonItemAppearance](uitoolbarappearance/donebuttonappearance.md)
   The appearance attributes for Done buttons.
+### Instance Properties
+- [var prominentButtonAppearance: UIBarButtonItemAppearance](uitoolbarappearance/prominentbuttonappearance.md)
+  The appearance attributes for Prominent buttons.
 
 ## Relationships
 
@@ -47,6 +50,7 @@ After creating a [`UIToolbarAppearance`](uitoolbarappearance.md) object, use the
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

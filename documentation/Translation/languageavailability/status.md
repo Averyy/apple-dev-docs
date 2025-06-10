@@ -8,6 +8,7 @@ The availability status for a language or language pairing.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 26.0+ (Beta)
 - macOS 15.0+
 
 ## Declaration
@@ -48,6 +49,7 @@ A language must download and install before you can use it in a translation.
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

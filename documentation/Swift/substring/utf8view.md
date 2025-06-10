@@ -21,6 +21,9 @@ struct UTF8View
 
 ## Topics
 
+### Instance Properties
+- [var span: Span<UTF8.CodeUnit>](substring/utf8view/span.md)
+  A span over the UTF8 code units that make up this substring.
 ### Default Implementations
 - [BidirectionalCollection Implementations](substring/utf8view/bidirectionalcollection-implementations.md)
 - [Collection Implementations](substring/utf8view/collection-implementations.md)
@@ -33,6 +36,7 @@ struct UTF8View
 - [Collection](collection.md)
 - [Copyable](copyable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 

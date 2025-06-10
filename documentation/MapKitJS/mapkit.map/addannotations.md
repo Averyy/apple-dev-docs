@@ -1,6 +1,6 @@
 # addAnnotations
 
-**Framework**: Mapkitjs  
+**Framework**: MapKit JS  
 **Kind**: method
 
 Adds an array of annotations to the map.
@@ -50,4 +50,4 @@ The map shows annotations that have their [`animates`](mapkit.annotation/animate
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/mapkit.map/addannotations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/mapkit.map/addannotations)*

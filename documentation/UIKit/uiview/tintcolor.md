@@ -31,8 +31,6 @@ Colors that are pattern colors (as described in [`UIColor`](uicolor.md)) are not
 
 > ❗ **Important**:  If you attempt to use a pattern color as a tint color, the system raises an exception.
 
- If you attempt to use a pattern color as a tint color, the system raises an exception.
-
 ## See Also
 
 - [func tintColorDidChange()](uiview/tintcolordidchange.md)

@@ -1,6 +1,6 @@
 # unsupported
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 The provider doesn’t support the feature the user requested in the device’s current region.

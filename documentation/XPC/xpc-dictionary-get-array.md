@@ -1,6 +1,6 @@
 # xpc_dictionary_get_array(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the array value for the specified key.

@@ -8,12 +8,12 @@ An activation function that returns zero when the absolute input is less than al
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
 - tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
-- Mac Catalyst ?+
 
 ## Declaration
 

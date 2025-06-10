@@ -9,7 +9,7 @@ Indicates that the app receives and displays post-processed scan results when th
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

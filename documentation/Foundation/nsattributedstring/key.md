@@ -187,7 +187,10 @@ The [`NSAttributedString.Key`](nsattributedstring/key.md) type defines the attri
 - [init(rawValue: String)](nsattributedstring/key/init(rawvalue:).md)
   Creates an attributed string key with the specified raw value.
 ### Type Properties
-- [static let writingToolsExclusionAttributeName: NSAttributedString.Key](nsattributedstring/key/writingtoolsexclusionattributename.md)
+- [static let accessibilityFontBoldAttribute: NSAttributedString.Key](nsattributedstring/key/accessibilityfontboldattribute.md)
+- [static let accessibilityFontItalicAttribute: NSAttributedString.Key](nsattributedstring/key/accessibilityfontitalicattribute.md)
+- [static let listItemDelimiter: NSAttributedString.Key](nsattributedstring/key/listitemdelimiter.md)
+- [static let writingToolsExclusionAttributeName: NSAttributedString.Key](nsattributedstring/key/writingtoolsexclusion.md)
 
 ## Relationships
 
@@ -196,6 +199,7 @@ The [`NSAttributedString.Key`](nsattributedstring/key.md) type defines the attri
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

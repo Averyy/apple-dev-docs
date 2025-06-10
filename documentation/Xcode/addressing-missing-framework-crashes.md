@@ -58,4 +58,4 @@ If you can’t reproduce the crash, archive the app, export it for Development d
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/addressing-missing-framework-crashes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/addressing-missing-framework-crashes)*

@@ -1,0 +1,32 @@
+# init(position:rotation:scale:)
+
+**Framework**: Spatial  
+**Kind**: init
+
+Creates a pose from single-precision simd primitives that describe the position, rotation, and scale.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+init(position: simd_float3 = .zero, rotation: simd_quatf, scale: Float = 1)
+```
+
+## Parameters
+
+- `position`: The position of the scaled pose.
+- `rotation`: The rotation of the scaled pose.
+- `scale`: The uniform scale of the scaled pose.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/scaledpose3dfloat/init(position:rotation:scale:)-3l2fe)*

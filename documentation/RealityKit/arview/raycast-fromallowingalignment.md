@@ -10,6 +10,7 @@ Performs a ray cast, where a ray is cast into the scene from the center of the c
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

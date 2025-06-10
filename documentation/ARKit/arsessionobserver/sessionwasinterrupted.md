@@ -22,8 +22,6 @@ A session is interrupted when it fails to receive camera or motion sensing data.
 
 > ❗ **Important**:  An interruption is equivalent to manually pausing the session. Do not call [`pause()`](arsession/pause().md) in response to this callback, as that prevents your app from being notified when the interruption ends.
 
- An interruption is equivalent to manually pausing the session. Do not call [`pause()`](arsession/pause().md) in response to this callback, as that prevents your app from being notified when the interruption ends.
-
 ## Parameters
 
 - `session`: The session providing information.

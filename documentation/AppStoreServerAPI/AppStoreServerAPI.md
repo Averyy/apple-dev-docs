@@ -96,6 +96,11 @@ If you don’t have environment information, follow these steps:
   Get the statuses for all of a customer’s auto-renewable subscriptions in your app.
 - [object StatusResponse](statusresponse.md)
   A response that contains status information for all of a customer’s auto-renewable subscriptions in your app.
+### App Account Token
+- [Set App Account Token](set-app-account-token.md)
+  Sets the app account token value for a purchase the customer makes outside of your app, or updates its value in an existing transaction.
+- [object UpdateAppAccountTokenRequest](updateappaccounttokenrequest.md)
+  The request body that contains an app account token value.
 ### Consumption information
 - [Send Consumption Information](send-consumption-information.md)
   Send consumption information about a consumable in-app purchase or auto-renewable subscription to the App Store after your server receives a consumption request notification.

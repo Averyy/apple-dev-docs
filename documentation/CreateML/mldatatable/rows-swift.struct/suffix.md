@@ -1,6 +1,6 @@
 # suffix(_:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns a subsequence, up to the given maximum length, containing the final elements of the collection.

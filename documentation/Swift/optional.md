@@ -18,7 +18,7 @@ A type that represents either a wrapped value or the absence of a value.
 
 ```swift
 @frozen
-enum Optional<Wrapped> where Wrapped : ~Copyable
+enum Optional<Wrapped> where Wrapped : ~Copyable, Wrapped : ~Escapable
 ```
 
 #### Overview
@@ -121,8 +121,6 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
 ### Creating an Optional Value
 - [case some(Wrapped)](optional/some(_:).md)
   The presence of a value, stored as `Wrapped`.
-- [init(consuming Wrapped)](optional/init(_:).md)
-  Creates an instance that stores the given value.
 ### Creating a Nil Value
 - [Optional.none](optional/none.md)
   The absence of a value.
@@ -139,14 +137,6 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
 - [func ?? <T>(consuming T?, @autoclosure () throws -> T?) rethrows -> T?](__(_:_:)-1fjjj.md)
   Performs a nil-coalescing operation, returning the wrapped value of an `Optional` instance or a default `Optional` value.
 ### Comparing Optional Values
-- [static func == (borrowing Wrapped?, _OptionalNilComparisonType) -> Bool](optional/==(_:_:)-5uee5.md)
-  Returns a Boolean value indicating whether the left-hand-side argument is `nil`.
-- [static func == (_OptionalNilComparisonType, borrowing Wrapped?) -> Bool](optional/==(_:_:)-6ztpi.md)
-  Returns a Boolean value indicating whether the right-hand-side argument is `nil`.
-- [static func != (borrowing Wrapped?, _OptionalNilComparisonType) -> Bool](optional/!=(_:_:)-38b38.md)
-  Returns a Boolean value indicating whether the left-hand-side argument is not `nil`.
-- [static func != (_OptionalNilComparisonType, borrowing Wrapped?) -> Bool](optional/!=(_:_:)-6xpzw.md)
-  Returns a Boolean value indicating whether the right-hand-side argument is not `nil`.
 - [static func ~= (_OptionalNilComparisonType, borrowing Wrapped?) -> Bool](optional/~=(_:_:).md)
   Returns a Boolean value indicating whether an argument matches `nil`.
 ### Encoding and Decoding
@@ -171,11 +161,26 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
 ### Deprecated
 - [var hashValue: Int](optional/hashvalue.md)
   The hash value.
+### Operators
+- [static func != (_OptionalNilComparisonType, borrowing Wrapped?) -> Bool](optional/!=(_:_:)-6y4t6.md)
+  Returns a Boolean value indicating whether the right-hand-side argument is not `nil`.
+- [static func != (borrowing Wrapped?, _OptionalNilComparisonType) -> Bool](optional/!=(_:_:)-9e46a.md)
+  Returns a Boolean value indicating whether the left-hand-side argument is not `nil`.
+- [static func == (_OptionalNilComparisonType, borrowing Wrapped?) -> Bool](optional/==(_:_:)-1j2c8.md)
+  Returns a Boolean value indicating whether the right-hand-side argument is `nil`.
+- [static func == (borrowing Wrapped?, _OptionalNilComparisonType) -> Bool](optional/==(_:_:)-2tyup.md)
+  Returns a Boolean value indicating whether the left-hand-side argument is `nil`.
+### Initializers
+- [init(consuming Wrapped)](optional/init(_:)-1j774.md)
+  Creates an instance that stores the given value.
+- [init(consuming Wrapped)](optional/init(_:)-46x3s.md)
+  Creates an instance that stores the given value.
 ### Instance Methods
 - [func take() -> Optional<Wrapped>](optional/take.md)
   Takes the wrapped value being stored in this instance and returns it while also setting the instance to `nil`. If there is no value being stored in this instance, this returns `nil` instead.
 ### Type Aliases
-- [typealias Body](optional/body-4zi6s.md)
+- [typealias Body](optional/body.md)
+- [typealias PartiallyGenerated](optional/partiallygenerated.md)
 - [typealias Specification](optional/specification.md)
 - [typealias TableRowBody](optional/tablerowbody.md)
 - [typealias UnwrappedType](optional/unwrappedtype.md)
@@ -184,7 +189,7 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
 - [static var defaultResolverSpecification: Wrapped.UnwrappedType.Specification](optional/defaultresolverspecification.md)
 ### Default Implementations
 - [AtomicRepresentable Implementations](optional/atomicrepresentable-implementations.md)
-- [AttachmentContent Implementations](optional/attachmentcontent-implementations.md)
+- [ConvertibleToGeneratedContent Implementations](optional/convertibletogeneratedcontent-implementations.md)
 - [CustomDebugStringConvertible Implementations](optional/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](optional/customreflectable-implementations.md)
 - [CustomTestStringConvertible Implementations](optional/customteststringconvertible-implementations.md)
@@ -193,6 +198,8 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
 - [Equatable Implementations](optional/equatable-implementations.md)
 - [ExpressibleByNilLiteral Implementations](optional/expressiblebynilliteral-implementations.md)
 - [Hashable Implementations](optional/hashable-implementations.md)
+- [InstructionsRepresentable Implementations](optional/instructionsrepresentable-implementations.md)
+- [PromptRepresentable Implementations](optional/promptrepresentable-implementations.md)
 - [RelationshipCollection Implementations](optional/relationshipcollection-implementations.md)
 
 ## Relationships
@@ -200,11 +207,14 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
 ### Conforms To
 - [AtomicRepresentable](../synchronization/atomicrepresentable.md)
 - [AttachmentContent](../RealityKit/AttachmentContent.md)
+- [AttributedTextFormattingDefinition](../SwiftUI/AttributedTextFormattingDefinition.md)
 - [AxisContent](../Charts/AxisContent.md)
 - [AxisMark](../Charts/AxisMark.md)
 - [BitwiseCopyable](bitwisecopyable.md)
+- [Chart3DContent](../Charts/Chart3DContent.md)
 - [ChartContent](../Charts/ChartContent.md)
 - [Commands](../SwiftUI/Commands.md)
+- [ConvertibleToGeneratedContent](../FoundationModels/ConvertibleToGeneratedContent.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)
@@ -218,9 +228,12 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
 - [ExpressibleByNilLiteral](expressiblebynilliteral.md)
 - [Gesture](../SwiftUI/Gesture.md)
 - [Hashable](hashable.md)
+- [InstructionsRepresentable](../FoundationModels/InstructionsRepresentable.md)
 - [MapContent](../MapKit/MapContent.md)
+- [PromptRepresentable](../FoundationModels/PromptRepresentable.md)
 - [RelationshipCollection](../SwiftData/RelationshipCollection.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [StoreContent](../StoreKit/StoreContent.md)
 - [TabContent](../SwiftUI/TabContent.md)
 - [TableColumnContent](../SwiftUI/TableColumnContent.md)

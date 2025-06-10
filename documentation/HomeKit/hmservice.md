@@ -83,6 +83,7 @@ You inspect or change a service’s [`HMCharacteristic`](hmcharacteristic.md) in
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

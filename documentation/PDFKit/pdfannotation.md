@@ -196,6 +196,7 @@ In addition to its primary textual content, a PDF file can contain annotations t
   Review unsupported symbols and their replacements.
 ### Instance Properties
 - [var isActivatableTextField: Bool](pdfannotation/isactivatabletextfield.md)
+- [var signatureAnnotationForRendering: Any?](pdfannotation/signatureannotationforrendering.md)
 
 ## Relationships
 

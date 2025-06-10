@@ -1,6 +1,6 @@
 # Protecting user privacy
 
-**Framework**: Healthkit
+**Framework**: HealthKit
 
 Respect and safeguard your user’s privacy.
 

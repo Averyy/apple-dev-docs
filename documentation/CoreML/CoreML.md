@@ -106,10 +106,6 @@ The framework is the foundation for domain-specific frameworks and functionality
   A type that represents the tensor scalar types supported by the framework. Don’t use this type directly.
 - [protocol MLTensorRangeExpression](mltensorrangeexpression.md)
   A type that can be used to slice a dimension of a tensor. Don’t use this type directly.
-- [func pointwiseMin(MLTensor, MLTensor) -> MLTensor](pointwisemin(_:_:).md)
-  Computes the element-wise minimum of two tensors.
-- [func pointwiseMax(MLTensor, MLTensor) -> MLTensor](pointwisemax(_:_:).md)
-  Computes the element-wise maximum of two tensors.
 ### Model structure
 - [enum MLModelStructure](mlmodelstructure-swift.enum.md)
   An enum representing the structure of a model.
@@ -125,6 +121,19 @@ The framework is the foundation for domain-specific frameworks and functionality
   A set of Core ML models from a model deployment.
 ### Reference
 - [CoreML Enumerations](coreml-enumerations.md)
+### Functions
+- [func pointwiseMax(some MLTensorScalar & Numeric, MLTensor) -> MLTensor](pointwisemax(_:_:)-6dj1o.md)
+  Computes the element-wise maximum of two values.
+- [func pointwiseMax(MLTensor, MLTensor) -> MLTensor](pointwisemax(_:_:)-8zmn3.md)
+  Computes the element-wise minimum between two tensors.
+- [func pointwiseMax(MLTensor, some MLTensorScalar & Numeric) -> MLTensor](pointwisemax(_:_:)-ez2t.md)
+  Computes the element-wise maximum of two values.
+- [func pointwiseMin(MLTensor, MLTensor) -> MLTensor](pointwisemin(_:_:)-1tz0k.md)
+  Computes the element-wise minimum of two tensors.
+- [func pointwiseMin(MLTensor, some MLTensorScalar & Numeric) -> MLTensor](pointwisemin(_:_:)-3wuzz.md)
+  Computes the element-wise minimum of two values.
+- [func pointwiseMin(some MLTensorScalar & Numeric, MLTensor) -> MLTensor](pointwisemin(_:_:)-44bbv.md)
+  Computes the element-wise minimum between two values.
 ### Enumerations
 - [enum MLShapedArrayBufferLayout](mlshapedarraybufferlayout.md)
   Buffer layout enum

@@ -1,9 +1,9 @@
-# !=(_:_:)
+# <(_:_:)
 
 **Framework**: Swift  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
 
 **Availability**:
 - iOS 8.0+
@@ -17,26 +17,19 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func < (lhs: Character, rhs: Character) -> Bool
 ```
 
 #### Discussion
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+This function is the only requirement of the `Comparable` protocol. The remainder of the relational operator functions are implemented by the standard library for any type that conforms to `Comparable`.
 
 ## Parameters
 
 - `lhs`: A value to compare.
 - `rhs`: Another value to compare.
 
-## See Also
-
-- [static func == (Character, Character) -> Bool](character/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/character/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/character/_(_:_:))*

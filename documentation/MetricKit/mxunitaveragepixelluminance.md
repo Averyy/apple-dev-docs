@@ -9,6 +9,7 @@ A unit of measure of pixel luminosity on an OLED display.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
+- macOS 10.15+
 - visionOS 1.0+
 
 ## Declaration
@@ -44,6 +45,7 @@ Luminosity represents the brightness of each red, green, and blue component pixe
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

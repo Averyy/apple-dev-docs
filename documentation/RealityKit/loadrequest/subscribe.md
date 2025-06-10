@@ -10,6 +10,7 @@ Attaches the specified subscriber to this publisher.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -25,15 +26,6 @@ Always call this function instead of `Publisher/receive(subscriber:)`. Adopters 
 ## Parameters
 
 - `subscriber`: The subscriber to attach to this publisher. After attaching, the subscriber can start to receive values.
-
-## See Also
-
-- [func receive<S>(subscriber: S)](loadrequest/receive(subscriber:).md)
-  Attaches the specified subscriber to this publisher.
-- [func subscribe<S>(S)](loadrequest/subscribe(_:)-zoee.md)
-  Attaches the specified subscriber to this publisher.
-- [func subscribe<S>(S) -> AnyCancellable](loadrequest/subscribe(_:)-86taw.md)
-  Attaches the specified subject to this publisher.
 
 
 ---

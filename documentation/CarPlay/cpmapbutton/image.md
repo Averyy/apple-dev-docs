@@ -13,6 +13,7 @@ The image to display on the button.
 ## Declaration
 
 ```swift
+@MainActor
 var image: UIImage? { get set }
 ```
 

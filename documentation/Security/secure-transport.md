@@ -12,8 +12,6 @@ This API imposes no transport layer dependencies. You can use it with BSD Socket
 
 > ❗ **Important**:  This API is considered legacy. Use the [`Network`](https://developer.apple.com/documentation/Network) framework instead.
 
- This API is considered legacy. Use the [`Network`](https://developer.apple.com/documentation/Network) framework instead.
-
 ## Topics
 
 ### First Steps

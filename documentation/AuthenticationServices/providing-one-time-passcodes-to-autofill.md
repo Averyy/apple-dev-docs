@@ -29,7 +29,7 @@ When someone uses a text field to complete an OTP using AutoFill, they can tap a
 - [AutoFill Credential Provider Entitlement](../BundleResources/Entitlements/com.apple.developer.authentication-services.autofill-credential-provider.md)
   A Boolean value that indicates whether the app may, with user permission, provide user names and passwords for AutoFill in Safari and other apps.
 - [class ASCredentialProviderViewController](ascredentialproviderviewcontroller.md)
-  A view controller that a password manager app uses to extend AutoFill.
+  A view controller that a credential manager app uses to extend AutoFill.
 
 
 ---

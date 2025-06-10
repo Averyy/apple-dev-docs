@@ -14,10 +14,6 @@ union rr_record_s;
 
 ## Topics
 
-### Structures
-- [struct (unnamed)](rr_record_s/struct_(unnamed)-4u050.md)
-- [struct (unnamed)](rr_record_s/struct_(unnamed)-4x6it.md)
-- [struct (unnamed)](rr_record_s/struct_(unnamed)-5f5d0.md)
 ### Instance Properties
 - [label](rr_record_s/label.md)
 - [ptr](rr_record_s/ptr.md)

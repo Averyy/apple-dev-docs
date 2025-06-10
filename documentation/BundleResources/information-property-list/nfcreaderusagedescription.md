@@ -13,8 +13,6 @@ A message that tells the user why the app is requesting access to the device’s
 
 > ❗ **Important**:  You’re required to provide this key if your app uses APIs that access the NFC hardware.
 
- You’re required to provide this key if your app uses APIs that access the NFC hardware.
-
 
 ---
 

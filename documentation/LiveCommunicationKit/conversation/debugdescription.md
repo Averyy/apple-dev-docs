@@ -22,7 +22,7 @@ final var debugDescription: String { get }
 
 Calling this property directly is discouraged. Instead, convert an instance of any type to a string by using the `String(reflecting:)` initializer. This initializer works with any type, and uses the custom `debugDescription` property for types that conform to `CustomDebugStringConvertible`:
 
-```swift
+```None
 struct Point: CustomDebugStringConvertible {
     let x: Int, y: Int
 

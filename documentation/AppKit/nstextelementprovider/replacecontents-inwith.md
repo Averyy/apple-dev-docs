@@ -1,6 +1,6 @@
 # replaceContents(in:with:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method  
 **Required**: Yes
 

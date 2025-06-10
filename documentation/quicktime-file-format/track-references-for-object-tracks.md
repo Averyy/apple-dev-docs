@@ -1,6 +1,6 @@
 # Track references for object tracks
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Specify track references for object tracks.
 

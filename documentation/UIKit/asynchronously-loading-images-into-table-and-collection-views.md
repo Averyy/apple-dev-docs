@@ -1,6 +1,6 @@
 # Asynchronously loading images into table and collection views
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Store and fetch images asynchronously to make your app more responsive.
 
@@ -107,4 +107,4 @@ cell.contentConfiguration = content
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/asynchronously-loading-images-into-table-and-collection-views)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/asynchronously-loading-images-into-table-and-collection-views)*

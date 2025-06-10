@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_PRIORITY_MAINTENANCE
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A string that indicates an activity is maintenance priority.

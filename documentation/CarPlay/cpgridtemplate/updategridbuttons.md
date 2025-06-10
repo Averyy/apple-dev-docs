@@ -11,6 +11,7 @@
 ## Declaration
 
 ```swift
+@MainActor
 func updateGridButtons(_ gridButtons: [CPGridButton])
 ```
 

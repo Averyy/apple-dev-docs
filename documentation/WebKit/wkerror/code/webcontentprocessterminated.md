@@ -1,6 +1,6 @@
 # WKError.Code.webContentProcessTerminated
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 An error that indicates the web process that contains the content is no longer running.

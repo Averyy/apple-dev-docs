@@ -1,6 +1,6 @@
 # averageSnowfallAmount
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The average amount of snowfall as depth of snow crystals for the day.

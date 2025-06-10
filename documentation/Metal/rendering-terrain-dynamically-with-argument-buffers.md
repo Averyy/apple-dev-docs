@@ -261,4 +261,4 @@ data.texture = terrainParams.habitats [habitatIndex].diffSpecTextureArray;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/rendering-terrain-dynamically-with-argument-buffers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/rendering-terrain-dynamically-with-argument-buffers)*

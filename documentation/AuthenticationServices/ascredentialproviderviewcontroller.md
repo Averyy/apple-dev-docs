@@ -1,9 +1,9 @@
 # ASCredentialProviderViewController
 
-**Framework**: Authenticationservices  
+**Framework**: Authentication Services  
 **Kind**: class
 
-A view controller that a password manager app uses to extend AutoFill.
+A view controller that a credential manager app uses to extend AutoFill.
 
 **Availability**:
 - iOS 12.0+
@@ -27,6 +27,12 @@ To integrate a password, passkey, or one-time passcode manager app with AutoFill
 2. Override the view controller’s [`prepareCredentialList(for:)`](ascredentialproviderviewcontroller/preparecredentiallist(for:).md) method to prepare a view with a list of credentials that the person can choose from after opening your extension from the AutoFill suggestions list.
 3. Optionally add [`ASPasswordCredentialIdentity`](aspasswordcredentialidentity.md) and [`ASPasskeyCredentialIdentity`](aspasskeycredentialidentity.md) instances to the shared [`ASCredentialIdentityStore`](ascredentialidentitystore.md) to make identities available directly in the AutoFill suggestions list. Then override the [`provideCredentialWithoutUserInteraction(for:)`](ascredentialproviderviewcontroller/providecredentialwithoutuserinteraction(for:)-3mo23.md) method to provide the associated credentials when the person taps a suggestion.
 4. Optionally, override the [`prepareInterfaceForExtensionConfiguration()`](ascredentialproviderviewcontroller/prepareinterfaceforextensionconfiguration().md) method to specify a configuration interface that you can show when people first enable your credentials manager in Settings.
+
+##### Receiving Credential Updates
+
+Apps and websites that allow sign-ins can signal updates to the operating system with the [`ASCredentialUpdater`](ascredentialupdater.md) class. The various “report” methods of [`ASCredentialUpdater`](ascredentialupdater.md) work like the “signal” methods of `PublicKeyCredential` when using WebAuthn on the web. For example, a website or app can notify credential manager apps that it updated a user name or email for a given account, allowing the manager to stay consistent with the website.
+
+Your credential manager manager receives these updates in the “report” methods of `ASCredentialProviderViewController`. Use these calls to update your manager’s stored credential data or behavior. For example, a call to [`reportUnusedPasswordCredential(forDomain:userName:)`](ascredentialproviderviewcontroller/reportunusedpasswordcredential(fordomain:username:).md) can indicate that someone using a passkey will no longer use a password to sign in to a given domain, or that they deleted their account. In this case, the manager should stop showing the user name and password for that domain.
 
 > **Note**:  This class ignores calls from Mac apps built with Mac Catalyst.
 
@@ -83,6 +89,15 @@ To integrate a password, passkey, or one-time passcode manager app with AutoFill
 ### Accessing settings
 - [class ASSettingsHelper](assettingshelper.md)
   A class that opens Settings and navigates to the settings for configuring credential providers.
+### Receiving credential updates
+- [func reportAllAcceptedPublicKeyCredentials(forRelyingParty: String, userHandle: Data, acceptedCredentialIDs: [Data])](ascredentialproviderviewcontroller/reportallacceptedpublickeycredentials(forrelyingparty:userhandle:acceptedcredentialids:).md)
+  Receives a report from the system that a relying party sent a snapshot of all accepted credentials for an account.
+- [func reportPublicKeyCredentialUpdate(forRelyingParty: String, userHandle: Data, newName: String)](ascredentialproviderviewcontroller/reportpublickeycredentialupdate(forrelyingparty:userhandle:newname:).md)
+  Receives a report from the system that a relying party indicated that a passkey’s user name updated.
+- [func reportUnknownPublicKeyCredential(forRelyingParty: String, credentialID: Data)](ascredentialproviderviewcontroller/reportunknownpublickeycredential(forrelyingparty:credentialid:).md)
+  Receives a report from the system that a relying party indicated a passkey credential is invalid.
+- [func reportUnusedPasswordCredential(forDomain: String, userName: String)](ascredentialproviderviewcontroller/reportunusedpasswordcredential(fordomain:username:).md)
+  Receives a report from the system that a relying party indicatd that a password credential isn’t needed anymore for a given user name.
 ### Deprecated methods
 - [func provideCredentialWithoutUserInteraction(for: ASPasswordCredentialIdentity)](ascredentialproviderviewcontroller/providecredentialwithoutuserinteraction(for:)-7jlg0.md)
   Attempts to provide the user-requested credential with no further user interaction.
@@ -110,6 +125,7 @@ To integrate a password, passkey, or one-time passcode manager app with AutoFill
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)
@@ -131,4 +147,4 @@ To integrate a password, passkey, or one-time passcode manager app with AutoFill
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AuthenticationServices/ascredentialproviderviewcontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/authenticationservices/ascredentialproviderviewcontroller)*

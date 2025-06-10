@@ -17,6 +17,7 @@ For more information see [`Set availability for your app`](https://developer.app
   List all territories where the App Store operates.
 - [List All Territories for an End User License Agreement](get-v1-enduserlicenseagreements-_id_-territories.md)
   List all the App Store territories to which a specific custom app license agreement applies.
+- [GET /v1/endUserLicenseAgreements/{id}/relationships/territories](get-v1-enduserlicenseagreements-_id_-relationships-territories.md)
 ### Objects
 - [object Territory](territory.md)
   The data structure that represents a Territories resource.

@@ -1,6 +1,6 @@
 # XCTPerformanceMeasurement.Polarity
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: enum
 
 Constants that state whether larger or smaller measurements, relative to a set baseline, indicate better performance.
@@ -31,6 +31,7 @@ enum Polarity
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

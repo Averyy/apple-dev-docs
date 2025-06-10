@@ -50,12 +50,16 @@ Get or set this property with a [`mapkit.CameraZoomRange`](mapkit.camerazoomrang
   A constraint of the location of the center of the map.
 - [setCameraBoundaryAnimated](mapkit.map/setcameraboundaryanimated.md)
   Changes the map’s camera boundary with an animated transition.
+- [CameraBoundaryDescription](cameraboundarydescription.md)
+  An object literal containing at least one property defining an area on the map.
 - [cameraDistance](mapkit.map/cameradistance.md)
   The altitude of the camera relative to the elevation of the center of the map.
 - [setCameraDistanceAnimated](mapkit.map/setcameradistanceanimated.md)
   Changes the map’s camera distance with an animated transition.
 - [setCameraZoomRangeAnimated](mapkit.map/setcamerazoomrangeanimated.md)
   Changes the map’s camera zoom range with an animated transition.
+- [CameraZoomRangeLiteral](camerazoomrangeliteral.md)
+  An object literal containing minimum and maximum camera distance in meters.
 
 
 ---

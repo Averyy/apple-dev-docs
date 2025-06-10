@@ -1,6 +1,6 @@
 # Making a configurable widget
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Give people the option to customize their widgets by adding a custom app intent to your project.
 
@@ -36,7 +36,6 @@ struct SelectCharacterIntent: WidgetConfigurationIntent {
 
     init() {
     }
-
 }
 ```
 
@@ -157,17 +156,22 @@ When you include the customized values in the timeline entry, your widget’s vi
 
 ##### Access Customized Values in Your App
 
-When a person taps on a widget to open your app, WidgetKit passes the customized intent to your app in an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity). In your app’s code that handles the user activity, such as [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onContinueUserActivity(_:perform:)) for a SwiftUI app or [`scene(_:continue:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:continue:)) for a UIKit app, use the [`widgetConfigurationIntent(of:)`](https://developer.apple.com/documentation/foundation/nsuseractivity/4226429-widgetconfigurationintent) method to access the widget’s intent.
+When a person taps on a widget to open your app, WidgetKit passes the customized intent to your app in an [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity). In your app’s code that handles the user activity, such as [`onContinueUserActivity(_:perform:)`](https://developer.apple.com/documentation/SwiftUI/View/onContinueUserActivity(_:perform:)) for a SwiftUI app or [`scene(_:continue:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:continue:)) for a UIKit app, use the [`widgetConfigurationIntent(of:)`](https://developer.apple.com/documentation/Foundation/NSUserActivity/widgetConfigurationIntent(of:)) method to access the widget’s intent.
 
 To access the intent of any widget that the user has installed, use [`getCurrentConfigurations(_:)`](widgetcenter/getcurrentconfigurations(_:).md) to fetch the [`WidgetInfo`](widgetinfo.md) objects. Iterate over the `WidgetInfo` objects and call [`widgetConfigurationIntent(of:)`](widgetinfo/widgetconfigurationintent(of:).md).
 
-##### Offer Preconfigured Complications on Apple Watch
+##### Offer Configurable Widgets and Complications on Apple Watch
 
-Starting in watchOS 9, iOS 16, and iPadOS 17, you can use WidgetKit to implement accessory-family widgets that appear as complications on Apple Watch. Like widgets in iOS and macOS, watch complications use custom intents to display user-configurable data, and implementing configurable widgets in watchOS works the same as in iOS or macOS. However, watchOS doesn’t offer a dedicated user interface for configuring complications. To display data that’s most relevant to the user in your watch complication, you can create preconfigured complications and recommend them to your users in the list of available complications.
+Like widgets in iOS and macOS, watch complications use app intents to display user-configurable data, and implementing configurable complications and widgets in watchOS works the same as in iOS or macOS. However, you have a choice whether you want to offer a preconfigured complication or widget or allow people to configure it themselves.
 
-In your [`AppIntentTimelineProvider`](appintenttimelineprovider.md) code, implement [`recommendations()`](appintenttimelineprovider/recommendations().md) and return the [`AppIntentRecommendation`](appintentrecommendation.md) objects you create using your custom intents.
+In your [`AppIntentTimelineProvider`](appintenttimelineprovider.md) code, implement the  [`recommendations()`](appintenttimelineprovider/recommendations().md) and return:
 
-When your app receives new data that’s relevant to your recommended widget configurations, invalidate the now outdated recommendations by calling [`invalidateConfigurationRecommendations()`](widgetcenter/invalidateconfigurationrecommendations().md). This tells WidgetKit to get new recommendations for your preconfigured complications. When you invalidate the recommendations for preconfigured complications, make sure you return updated `AppIntentRecommendation` objects in the `recommendations()` callback.
+- An array of [`AppIntentRecommendation`](appintentrecommendation.md) objects you create using your custom app intents to offer a preconfigured complication or widget
+- An empty array (`return []`) to let people configure the complication or widget
+
+> **Note**: watchOS 11 and older don’t have an interface for configuring widgets or complications. If you support older watchOS versions, offer preconfigured complications and widgets.
+
+If you offer a preconfigured complication or widget, and your app receives new data that’s relevant to your recommended widget configurations, invalidate the now outdated recommendations by calling [`invalidateConfigurationRecommendations()`](widgetcenter/invalidateconfigurationrecommendations().md). This invalidation tells WidgetKit to get new recommendations for your preconfigured complications and widgets. When you invalidate the recommendations for preconfigured complications, make sure you return updated `AppIntentRecommendation` objects in the `recommendations()` callback.
 
 ## See Also
 
@@ -187,4 +191,4 @@ When your app receives new data that’s relevant to your recommended widget con
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/making-a-configurable-widget)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/making-a-configurable-widget)*

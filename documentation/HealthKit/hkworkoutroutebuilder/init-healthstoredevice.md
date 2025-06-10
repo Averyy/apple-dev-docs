@@ -23,19 +23,10 @@ init(healthStore: HKHealthStore, device: HKDevice?)
 
 A newly initialized workout route builder.
 
-##### Discussion
-
-Use of this initializer is discouraged. Use [`seriesBuilder(for:)`](hkworkoutbuilder/seriesbuilder(for:).md) instead.
-
 ## Parameters
 
 - `healthStore`: The HealthKit store.
 - `device`: An object representing the device that provided the location data. Pass   if the app is generating its own location data (for example, using  ).
-
-## See Also
-
-- [func seriesBuilder(for: HKSeriesType) -> HKSeriesBuilder?](hkworkoutbuilder/seriesbuilder(for:).md)
-  Returns the series builder for the specified type, creating a new builder, if necessary.
 
 
 ---

@@ -1,6 +1,6 @@
 # loadSimulatedRequest(_:response:responseData:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Loads the web content from the data you provide as if the data were the response to the request.

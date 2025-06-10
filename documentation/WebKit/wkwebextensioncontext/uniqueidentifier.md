@@ -1,6 +1,6 @@
 # uniqueIdentifier
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A unique identifier used to distinguish the extension from other extensions and target it for messages.

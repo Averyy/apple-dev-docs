@@ -1,6 +1,6 @@
 # last
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: property
 
 The last element of the collection.

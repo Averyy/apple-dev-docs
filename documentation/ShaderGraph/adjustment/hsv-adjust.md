@@ -1,9 +1,17 @@
 # HSV Adjust
 
-**Framework**: Shadergraph  
+**Framework**: ShaderGraph  
 **Kind**: subscript
 
 Adjusts the hue, saturation and value of an RGB color by a vector .
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
 
 #### Parameter Types
 

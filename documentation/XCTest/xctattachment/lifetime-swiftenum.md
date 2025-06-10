@@ -1,6 +1,6 @@
 # XCTAttachment.Lifetime
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: enum
 
 The possible lifetime values for a test attachment.
@@ -29,6 +29,7 @@ enum Lifetime
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

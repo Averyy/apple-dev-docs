@@ -1,6 +1,6 @@
 # nativeMessaging
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A request for access to send messages to the app extension bundle.

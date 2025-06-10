@@ -25,22 +25,15 @@ This view renders a 3D visualization of the current session’s point cloud. It 
 ### Initializers
 - [init(session: ObjectCaptureSession)](objectcapturepointcloudview/init(session:).md)
   Creates an object capture view from an existing session using the current segment’s point cloud.
-### Instance Properties
-- [var body: some View](objectcapturepointcloudview/body-swift.property.md)
-  The content and behavior of the view.
 ### Instance Methods
 - [func showShotLocations(Bool) -> ObjectCapturePointCloudView](objectcapturepointcloudview/showshotlocations(_:).md)
   Shows the locations where shots have been taken. Example: ObjectCapturePointCloudView(session: mySession) .showShotLocations()
-### Type Aliases
-- [ObjectCapturePointCloudView.Body](objectcapturepointcloudview/body-swift.typealias.md)
-  The type of view representing the body of this view.
-### Default Implementations
-- [View Implementations](objectcapturepointcloudview/view-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

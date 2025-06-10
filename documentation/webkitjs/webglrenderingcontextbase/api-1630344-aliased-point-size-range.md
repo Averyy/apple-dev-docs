@@ -1,6 +1,6 @@
 # ALIASED_POINT_SIZE_RANGE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

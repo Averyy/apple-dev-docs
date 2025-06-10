@@ -22,8 +22,6 @@ A tuple that contains optional left and right anchors for the given time. Anchor
 
 > ❗ **Important**:  This function isn’t safe to call on multiple threads at the same time. You need to provide your own synchronization.
 
- This function isn’t safe to call on multiple threads at the same time. You need to provide your own synchronization.
-
 ## Parameters
 
 - `timestamp`: The target timestamp, mach absolute time, in seconds.

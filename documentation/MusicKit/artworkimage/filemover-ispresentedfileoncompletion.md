@@ -1,6 +1,6 @@
 # fileMover(isPresented:file:onCompletion:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Presents a system interface for allowing the user to move an existing file to a new location.

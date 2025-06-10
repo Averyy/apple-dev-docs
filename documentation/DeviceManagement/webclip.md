@@ -9,8 +9,6 @@ The profile you use to configure web clips on the device.
 - iOS 4.0+
 - iPadOS 4.0+
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -34,17 +32,17 @@ For Shared iPad devices, the system supports this payload on the user channel on
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS |
-| User Channel | macOS, Shared iPad |
-| Allow Manual Install | iOS, macOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS, macOS, Shared iPad |
-| Allow Multiple Payloads | iOS, macOS, Shared iPad |
+| Device channel | iOS |
+| User channel | macOS, Shared iPad |
+| Allow manual install | iOS, macOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, macOS |
+| Allow multiple payloads | iOS, macOS, Shared iPad |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

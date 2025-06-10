@@ -1,6 +1,6 @@
 # XCUIDevice.Button.volumeUp
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 The device’s volume up button.
@@ -19,10 +19,6 @@ The device’s volume up button.
 ```swift
 case volumeUp
 ```
-
-#### Discussion
-
-This device button isn’t available for UI testing in Simulator.
 
 ## See Also
 

@@ -10,6 +10,7 @@ An object that defines the color of an entity’s sheen.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -34,6 +35,9 @@ Use `sheen` to add specular highlights that simulate subtle reflections, like th
   An optional image texture for defining the property.
 - [static let textureSemantic: TextureResource.Semantic](physicallybasedmaterial/sheencolor/texturesemantic.md)
   The intended use of the object’s texture property.
+### Initializers
+- [init(tint:texture:)](physicallybasedmaterial/sheencolor/init(tint:texture:).md)
+  Creates a sheen color in macOS.
 ### Instance Properties
 - [var tint: UIColor](physicallybasedmaterial/sheencolor/tint-20njd.md)
 - [var tint: NSColor](physicallybasedmaterial/sheencolor/tint-8az9f.md)

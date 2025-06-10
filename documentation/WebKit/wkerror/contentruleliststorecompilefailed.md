@@ -1,6 +1,6 @@
 # contentRuleListStoreCompileFailed
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An error that indicates the compilation of a rule list failed.
@@ -20,7 +20,7 @@ static var contentRuleListStoreCompileFailed: WKError.Code { get }
 
 #### Discussion
 
-Check the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary of the error object for an explanation of the compilation error that occurred.
+Check the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary of the error object for an explanation of the compilation error that occurred.
 
 ## See Also
 

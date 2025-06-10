@@ -15,6 +15,14 @@
 void IORWLockFree(struct IORWLock * lock);
 ```
 
+#### Discussion
+
+Frees a lock allocated with IORWLockAlloc. Lock should be unlocked with no waiters.
+
+## Parameters
+
+- `lock`: Pointer to the allocated lock.
+
 ## See Also
 
 - [dequeue_head](dequeue_head.md)

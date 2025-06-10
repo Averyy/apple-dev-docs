@@ -1,6 +1,6 @@
 # hash(into:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 **Availability**:

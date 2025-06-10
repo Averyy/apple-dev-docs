@@ -6,13 +6,7 @@
 The regex defining the passcode policy.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- macOS 10.7+
-- visionOS 2.0+
-- watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- macOS 14.0+
 
 ## Declaration
 
@@ -22,7 +16,7 @@ object Passcode.CustomRegex
 
 ## Topics
 
-### Profiles
+### Objects
 - [object Passcode.CustomRegex.PasswordContentDescription](passcode/customregex-data.dictionary/passwordcontentdescription-data.dictionary.md)
   Descriptions of the policy, localized to supported locales.
 

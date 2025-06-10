@@ -1,6 +1,6 @@
 # xpc_int64_get_value(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the underlying signed 64-bit integer value from an object.

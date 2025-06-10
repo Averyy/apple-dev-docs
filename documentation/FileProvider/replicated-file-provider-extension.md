@@ -1,6 +1,6 @@
 # Replicated File Provider extension
 
-**Framework**: Fileprovider
+**Framework**: File Provider
 
 Build a File Provider extension that syncs the local copies of your files with your remote storage.
 
@@ -105,4 +105,4 @@ Your File Provider extension can add custom actions to the file browser’s cont
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/FileProvider/replicated-file-provider-extension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/fileprovider/replicated-file-provider-extension)*

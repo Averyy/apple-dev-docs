@@ -1,6 +1,6 @@
 # DOM_DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

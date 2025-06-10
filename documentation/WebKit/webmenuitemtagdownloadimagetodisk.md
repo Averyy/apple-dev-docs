@@ -1,6 +1,6 @@
 # WebMenuItemTagDownloadImageToDisk
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Download the image to disk.

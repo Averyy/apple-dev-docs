@@ -45,7 +45,7 @@ You can optionally include a coordinator object to forward delegate messages fro
 
 #### Coordinate Space Conversions
 
-The gesture recognizer you create may not be attached to a UIView in the hierarchy, or it may return a view with different geometry than your SwiftUI view.
+The gesture recognizer you create may not be attached to a `UIView` in the hierarchy, or it may return a view with different geometry than your SwiftUI view.
 
 To handle this, use the converter on the context to perform coordinate space conversions from the global coordinate space. You can pass the gesture recognizer and a SwiftUI coordinate space to the converter to retrieve a final converted point. Passing the [`local`](coordinatespaceprotocol/local.md) coordinate space (the default) will provide the point in the SwiftUI view the gesture recognizer is attached to.
 

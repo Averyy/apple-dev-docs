@@ -22,11 +22,11 @@ class AVCapturePhoto
 
 - [Configuring Camera Capture to Collect a Portrait Effects Matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
 - [Saving Captured Photos](saving-captured-photos.md)
-- [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
 - [Capturing Thumbnail and Preview Images](capturing-thumbnail-and-preview-images.md)
-- [Capturing Photos with Depth](capturing-photos-with-depth.md)
+- [Capturing and Saving Live Photos](capturing-and-saving-live-photos.md)
 - [Capturing Uncompressed Image Data](capturing-uncompressed-image-data.md)
 - [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing Photos with Depth](capturing-photos-with-depth.md)
 - [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
 
 #### Overview

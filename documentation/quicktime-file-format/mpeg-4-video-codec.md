@@ -1,6 +1,6 @@
 # MPEG-4 video codec
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 #### Overview
 

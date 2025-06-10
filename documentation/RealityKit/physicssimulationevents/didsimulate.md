@@ -10,6 +10,7 @@ The event raised after the simulation advances to the current frame.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -25,12 +26,15 @@ struct DidSimulate
   The time between last fixed update event and this one.
 - [let simulationEntity: Entity](physicssimulationevents/didsimulate/simulationentity.md)
   The root simulation entity associated with the simulation that raised the event.
+- [let simulationRootEntity: Entity?](physicssimulationevents/didsimulate/simulationrootentity.md)
+  The root simulation entity associated with the simulation that raised the event.
 
 ## Relationships
 
 ### Conforms To
 - [Event](event.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

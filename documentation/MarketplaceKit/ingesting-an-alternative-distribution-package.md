@@ -1,6 +1,6 @@
 # Ingesting an alternative distribution package
 
-**Framework**: Marketplacekit
+**Framework**: MarketplaceKit
 
 Process an available app version from App Store Connect and store it for download from your server.
 
@@ -291,4 +291,4 @@ The tool’s return value indicates success or failure, so you can branch condit
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MarketplaceKit/ingesting-an-alternative-distribution-package)*
+*[View on Apple Developer](https://developer.apple.com/documentation/marketplacekit/ingesting-an-alternative-distribution-package)*

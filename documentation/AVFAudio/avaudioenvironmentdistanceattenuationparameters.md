@@ -24,8 +24,6 @@ class AVAudioEnvironmentDistanceAttenuationParameters
 
 > ❗ **Important**:  A source object (for example, [`AVAudioEnvironmentNode`](avaudioenvironmentnode.md)) provides an instance to this object. You can’t create standalone instances.
 
- A source object (for example, [`AVAudioEnvironmentNode`](avaudioenvironmentnode.md)) provides an instance to this object. You can’t create standalone instances.
-
 ## Topics
 
 ### Getting and Setting the Attenuation Model

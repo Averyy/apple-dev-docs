@@ -1,6 +1,6 @@
 # lineWidth
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A floating-point number that controls the width of lines and strokes, in pixels.

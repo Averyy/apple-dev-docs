@@ -7,8 +7,6 @@ The enabled status of the File Vault.
 
 **Availability**:
 - macOS 14.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -16,10 +14,22 @@ The enabled status of the File Vault.
 object StatusDiskManagementFileVaultEnabled
 ```
 
+#### Discussion
+
+##### Status Item Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | macOS |
+| Allowed in device enrollment | NA |
+| Allowed in user enrollment | NA |
+| Allowed in local enrollment | macOS |
+| Allowed in system scope | macOS |
+| Allowed in user scope | NA |
+
 ## See Also
 
 - [object StatusReport](statusreport.md)
-  A status report of the device’s current state.
 - [object StatusAppManagedList](statusappmanagedlist.md)
   The device’s declarative managed apps.
 - [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)

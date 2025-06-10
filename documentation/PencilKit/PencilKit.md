@@ -59,6 +59,12 @@ For information about handling user interactions on Apple Pencil in your UIKit a
   Leverage the latest PencilKit features while providing a good user experience in earlier versions of the OS that don’t support those features.
 - [enum PKContentVersion](pkcontentversion.md)
   Constants that represent versions of PencilKit for backward compatibility.
+### Classes
+- [class PKResponderState](pkresponderstate.md)
+  The state of PencilKit behavior related to a `UIResponder`.
+### Enumerations
+- [enum PKToolPickerVisibility](pktoolpickervisibility.md)
+  The visibility state of a tool picker.
 
 
 ---

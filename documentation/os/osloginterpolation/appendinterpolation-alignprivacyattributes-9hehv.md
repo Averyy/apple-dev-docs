@@ -24,8 +24,6 @@ mutating func appendInterpolation(_ value: @autoclosure @escaping () -> any Any.
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated type description to a log message.
 
- You don’t call this method directly. Instead, the framework calls it automatically when you append an interpolated type description to a log message.
-
 ## Parameters
 
 - `value`: The interpolated type, which the system automatically wraps in a closure. The type itself doesn’t appear in the log message. Instead, the system incorporates the type’s description.

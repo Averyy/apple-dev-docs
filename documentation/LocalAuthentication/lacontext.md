@@ -25,8 +25,6 @@ You use an authentication context to evaluate the user’s identity, either with
 
 > ❗ **Important**:  Include the [`NSFaceIDUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) key in your app’s `Info.plist` file if your app allows biometric authentication. Otherwise, authorization requests may fail.
 
- Include the [`NSFaceIDUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) key in your app’s `Info.plist` file if your app allows biometric authentication. Otherwise, authorization requests may fail.
-
 ## Topics
 
 ### Checking availability

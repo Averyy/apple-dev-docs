@@ -12,6 +12,7 @@ Creates a circle overlay from an existing map circle object.
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS ?+
+- watchOS 10.0+
 
 ## Declaration
 

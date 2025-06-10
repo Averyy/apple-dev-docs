@@ -1,6 +1,6 @@
 # Building and improving your app with Mac Catalyst
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Improve your iPadOS app with Mac Catalyst by supporting native controls, multiple windows, sharing, printing, menus and keyboard shortcuts.
 
@@ -30,4 +30,4 @@ Improve your iPadOS app with Mac Catalyst by supporting native controls, multipl
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/building-and-improving-your-app-with-mac-catalyst)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/building-and-improving-your-app-with-mac-catalyst)*

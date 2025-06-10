@@ -1,6 +1,6 @@
 # onerror
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 Sent when an error occurs.

@@ -1,6 +1,6 @@
 # Using Markdown with Apple News Format
 
-**Framework**: Applenews
+**Framework**: Apple News
 
 Use Markdown formatting for text components.
 
@@ -326,4 +326,4 @@ This is an underscore: _
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/using-markdown-with-apple-news-format)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applenews/using-markdown-with-apple-news-format)*

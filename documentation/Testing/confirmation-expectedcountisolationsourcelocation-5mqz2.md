@@ -1,6 +1,6 @@
 # confirmation(_:expectedCount:isolation:sourceLocation:_:)
 
-**Framework**: Testing  
+**Framework**: Swift Testing  
 **Kind**: func
 
 Confirm that some event occurs during the invocation of a function.

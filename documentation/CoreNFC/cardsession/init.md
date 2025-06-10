@@ -24,8 +24,6 @@ Creating a card session depends on the following conditions:
 
 > 💡 **Tip**:  Query the [`isSupported`](cardsession/issupported.md) and [`isEligible`](cardsession/iseligible.md) properties before calling this initializer to avoid showing a system card session UI on ineligible devices.
 
- Query the [`isSupported`](cardsession/issupported.md) and [`isEligible`](cardsession/iseligible.md) properties before calling this initializer to avoid showing a system card session UI on ineligible devices.
-
 This initializer throws an error of type [`CardSession.Error`](cardsession/error.md) if it can’t create a card session. Possible error conditions are:
 
 - [`CardSession.Error.accessNotAccepted`](cardsession/error/accessnotaccepted.md)

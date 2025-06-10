@@ -17,15 +17,15 @@ Sets the corner radius for an inline tip view.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func tipCornerRadius(_ cornerRadius: CGFloat, antialiased: Bool = true) -> some View
+nonisolated
+func tipCornerRadius(_ cornerRadius: CGFloat, antialiased: Bool = true) -> some View
 ```
 
 ## See Also
 
 - [func popoverTip((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View](view/popovertip(_:arrowedge:action:).md)
   Presents a popover tip on the modified view.
-- [func tipBackground(some ShapeStyle) -> some View](view/tipbackground(_:).md)
+- [func tipBackground<S>(S) -> some View](view/tipbackground(_:).md)
   Sets the tip’s view background to a style. Currently this only applies to inline tips, not popover tips.
 - [func tipImageSize(CGSize) -> some View](view/tipimagesize(_:).md)
   Sets the size for a tip’s image.

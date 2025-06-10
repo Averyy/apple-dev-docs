@@ -46,8 +46,6 @@ Text("Rotation by passing an angle in degrees")
 
 > ❗ **Important**: In visionOS, create this effect with [`perspectiveRotationEffect(_:axis:anchor:perspective:)`](visualeffect/perspectiverotationeffect(_:axis:anchor:perspective:).md) instead. To truly rotate a view in three dimensions, use a 3D rotation effect without a perspective input like [`rotation3DEffect(_:axis:anchor:)`](visualeffect/rotation3deffect(_:axis:anchor:).md).
 
-In visionOS, create this effect with [`perspectiveRotationEffect(_:axis:anchor:perspective:)`](visualeffect/perspectiverotationeffect(_:axis:anchor:perspective:).md) instead. To truly rotate a view in three dimensions, use a 3D rotation effect without a perspective input like [`rotation3DEffect(_:axis:anchor:)`](visualeffect/rotation3deffect(_:axis:anchor:).md).
-
 ## Parameters
 
 - `angle`: The angle by which to rotate the content.

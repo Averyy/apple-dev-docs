@@ -1,6 +1,6 @@
 # activeTab(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the active tab is needed for the window.

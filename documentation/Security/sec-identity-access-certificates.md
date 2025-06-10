@@ -25,7 +25,7 @@ Returns true if the peer certificates were accessible, false otherwise.
 #### Discussion
 
 ```None
-  Access the certificates associated with the `sec_identity_t` instance.
+ Access the certificates associated with the `sec_identity_t` instance.
 ```
 
 ## Parameters

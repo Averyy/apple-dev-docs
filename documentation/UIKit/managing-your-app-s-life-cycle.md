@@ -1,6 +1,6 @@
 # Managing your app’s life cycle
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Respond to system notifications when your app is in the foreground or background, and handle other significant system-related events.
 
@@ -82,4 +82,4 @@ In addition to handling life-cycle events, apps must also be prepared to handle 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/managing-your-app-s-life-cycle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/managing-your-app-s-life-cycle)*

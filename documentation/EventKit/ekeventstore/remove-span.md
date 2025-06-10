@@ -1,6 +1,6 @@
 # remove(_:span:)
 
-**Framework**: Eventkit  
+**Framework**: EventKit  
 **Kind**: method
 
 Removes an event from the event store.

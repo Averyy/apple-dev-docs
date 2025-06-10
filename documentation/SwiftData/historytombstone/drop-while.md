@@ -1,6 +1,6 @@
 # drop(while:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns a sequence by skipping the initial, consecutive elements that satisfy the given predicate.

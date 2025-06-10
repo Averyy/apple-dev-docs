@@ -32,8 +32,6 @@ In the third scenario, first-party Emergency SOS is turned on and there’s no t
 
 > ❗ **Important**:  Crash Detection requires the [`com.apple.developer.severe-vehicular-crash-event`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.severe-vehicular-crash-event) entitlement. To apply for this entitlement, see [`Request Access to the Vehicular Crash Event Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/vehicular-crash-events/).
 
- Crash Detection requires the [`com.apple.developer.severe-vehicular-crash-event`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.severe-vehicular-crash-event) entitlement. To apply for this entitlement, see [`Request Access to the Vehicular Crash Event Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/vehicular-crash-events/).
-
 To support Crash Detection, use [`SACrashDetectionManager`](sacrashdetectionmanager.md) to determine whether it’s available and if so, ask permission to allow your app to receive crash events. Then set [`delegate`](sacrashdetectionmanager/delegate.md) to the object that receives the events. Only one app on the device can receive Crash Detection events.
 
 If your app receives a Crash Detection event, use [`SAEmergencyResponseManager`](saemergencyresponsemanager.md) to provide assistance.

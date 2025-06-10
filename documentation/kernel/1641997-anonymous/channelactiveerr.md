@@ -1,0 +1,18 @@
+# channelActiveErr
+
+**Framework**: Kernel  
+**Kind**: econst
+
+**Availability**:
+- macOS 10.12+
+
+## Declaration
+
+```swift
+channelActiveErr = -4181
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/1641997-anonymous/channelactiveerr)*

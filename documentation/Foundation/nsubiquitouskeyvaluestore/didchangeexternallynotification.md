@@ -33,8 +33,6 @@ The notification object is the [`NSUbiquitousKeyValueStore`](nsubiquitouskeyvalu
 
 > ❗ **Important**: Early in your app’s launch sequence, register for the [`didChangeExternallyNotification`](nsubiquitouskeyvaluestore/didchangeexternallynotification.md) notification using the [`NotificationCenter`](notificationcenter.md) class. Specify the default key-value store object (obtained using the [`default`](nsubiquitouskeyvaluestore/default.md) class method) as the object whose notifications you want to receive.
 
-Early in your app’s launch sequence, register for the [`didChangeExternallyNotification`](nsubiquitouskeyvaluestore/didchangeexternallynotification.md) notification using the [`NotificationCenter`](notificationcenter.md) class. Specify the default key-value store object (obtained using the [`default`](nsubiquitouskeyvaluestore/default.md) class method) as the object whose notifications you want to receive.
-
 
 ---
 

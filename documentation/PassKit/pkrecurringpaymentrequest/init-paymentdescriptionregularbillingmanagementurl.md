@@ -22,8 +22,6 @@ init(paymentDescription: String, regularBilling: PKRecurringPaymentSummaryItem, 
 
 > ❗ **Important**:  You must set the [`recurringPaymentRequest`](pkpaymentrequest/recurringpaymentrequest.md) property on a [`PKPaymentRequest`](pkpaymentrequest.md) object to use this class to request a recurring payment.
 
- You must set the [`recurringPaymentRequest`](pkpaymentrequest/recurringpaymentrequest.md) property on a [`PKPaymentRequest`](pkpaymentrequest.md) object to use this class to request a recurring payment.
-
 ## Parameters
 
 - `paymentDescription`: The description you provide of the recurring payment and that Apple Pay displays to the user in the payment sheet.

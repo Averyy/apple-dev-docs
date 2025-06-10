@@ -1,6 +1,6 @@
 # xpc_equal(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Compares two objects for equality.

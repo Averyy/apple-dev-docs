@@ -20,8 +20,6 @@ class ENExposureWindow
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.7 and later.
 
- This property is available in iOS 12.5, and in iOS 13.7 and later.
-
 An exposure window contains information about a potential exposure in a 30–minute interval. The system returns an array of exposure windows through the completion handler when the app invokes [`getExposureWindows(summary:completionHandler:)`](enmanager/getexposurewindows(summary:completionhandler:).md). Exposure windows are only available when an app specified an `ENAPIVersion` of `2` in the app’s `Info.plist` file.
 
 ## Topics

@@ -1,6 +1,6 @@
 # viewDidLoad()
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Performs some action after the system loads the view into memory.

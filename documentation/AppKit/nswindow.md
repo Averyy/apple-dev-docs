@@ -1,6 +1,6 @@
 # NSWindow
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 A window that an app displays on the screen.
@@ -22,7 +22,7 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
 - To place views in a provided area
 - To accept and distribute mouse and keyboard events the user generates to the appropriate views
 
-> **Note**:  Although the [`NSWindow`](nswindow.md) class inherits the [`NSCoding`](https://developer.apple.com/documentation/Foundation/NSCoding) protocol from [`NSResponder`](nsresponder.md), the class doesn’t support coding. Legacy support for archivers exists, but its use is deprecated and may not work. Any attempt to archive or unarchive a window object using a keyed coding object raises an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) exception. For details about window restoration, see [`restorationClass`](nswindow/restorationclass.md).
+> **Note**:  Although the [`NSWindow`](nswindow.md) class inherits the [`NSCoding`](https://developer.apple.com/documentation/Foundation/NSCoding) protocol from [`NSResponder`](nsresponder.md), the class doesn’t support coding. Legacy support for archivers exists, but its use is deprecated and may not work. Any attempt to archive or unarchive a window object using a keyed coding object raises an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception. For details about window restoration, see [`restorationClass`](nswindow/restorationclass.md).
 
 ## Topics
 
@@ -131,8 +131,6 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
   Starts a document-modal session and presents—or queues for presentation—a sheet.
 - [func beginCriticalSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](nswindow/begincriticalsheet(_:completionhandler:).md)
   Starts a document-modal session and presents the specified critical sheet.
-- [func endSheet(NSWindow)](nswindow/endsheet(_:).md)
-  Ends a document-modal session and dismisses the specified sheet.
 - [func endSheet(NSWindow, returnCode: NSApplication.ModalResponse)](nswindow/endsheet(_:returncode:).md)
   Ends a document-modal session and dismisses the specified sheet.
 - [var sheetParent: NSWindow?](nswindow/sheetparent.md)
@@ -629,7 +627,7 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
 - [Application Kit Version for Custom Sheet Position](application-kit-version-for-custom-sheet-position.md)
   The version of the AppKit.framework containing a specific bug fix or capability.
 - [NSWindowDidChangeBackingPropertiesNotification User Info Properties](nswindowdidchangebackingpropertiesnotification-user-info-properties.md)
-  These constants are values that are returned in the [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/1409222-userinfo) dictionary of the [`didChangeBackingPropertiesNotification`](nswindow/didchangebackingpropertiesnotification.md).
+  These constants are values that are returned in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) dictionary of the [`didChangeBackingPropertiesNotification`](nswindow/didchangebackingpropertiesnotification.md).
 ### Notifications
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)
   A notification that the window object became the key window.
@@ -692,10 +690,18 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
 ### Deprecated
 - [Deprecated Symbols](nswindow-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Classes
+- [NSWindow.HostingSheetRepresentation](nswindow/hostingsheetrepresentation.md)
+  A class representing a SwiftUI view hosted in an AppKit sheet.
 ### Instance Properties
 - [var cascadingReferenceFrame: NSRect](nswindow/cascadingreferenceframe.md)
 ### Instance Methods
 - [func beginDraggingSession(items: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession](nswindow/begindraggingsession(items:event:source:).md)
+- [func beginSheet<V>(content: () -> V, completionHandler: (() -> Void)?) -> NSWindow.HostingSheetRepresentation<V>](nswindow/beginsheet(content:completionhandler:).md)
+  Presents a SwiftUI View as a sheet on the receiving NSWindow.
+- [func endSheet(NSWindow)](nswindow/endsheet(_:)-4dmmq.md)
+- [func endSheet<V>(NSWindow.HostingSheetRepresentation<V>)](nswindow/endsheet(_:)-6af2u.md)
+  Ends a SwiftUI hosted sheet presentation.
 - [func javaAdd(toOrderingGroup: NSWindow!)](nswindow/javaadd(toorderinggroup:).md)
 - [func javaRemove(fromOrderingGroup: NSWindow!)](nswindow/javaremove(fromorderinggroup:).md)
 - [func requestSharingOfWindow(NSWindow, completionHandler: ((any Error)?) -> Void)](nswindow/requestsharingofwindow(_:completionhandler:).md)
@@ -726,6 +732,7 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [NSUserInterfaceValidations](nsuserinterfacevalidations.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -741,4 +748,4 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nswindow)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nswindow)*

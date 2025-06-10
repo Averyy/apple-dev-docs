@@ -44,7 +44,7 @@ MapKit JS removes the annotation as soon as a person deselects the map feature.
 ## Relationships
 
 ### Inherited By
-- [mapkit.PlaceAnnotation](mapkit.placeannotation/mapkit.placeannotation.md)
+- [mapkit.PlaceAnnotation](mapkit.placeannotation.md)
 
 ## See Also
 

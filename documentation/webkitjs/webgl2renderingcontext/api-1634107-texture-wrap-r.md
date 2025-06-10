@@ -1,6 +1,6 @@
 # TEXTURE_WRAP_R
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

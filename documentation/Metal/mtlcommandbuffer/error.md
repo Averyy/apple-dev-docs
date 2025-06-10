@@ -28,7 +28,7 @@ var error: (any Error)? { get }
 
 You typically check this property during development to get more information about a runtime issue. The property remains `nil` unless the GPU can’t successfully run the command buffer.
 
-An error’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary property contains additional information if the command buffer’s [`errorOptions`](mtlcommandbuffer/erroroptions.md) property includes [`encoderExecutionStatus`](mtlcommandbuffererroroption/encoderexecutionstatus.md). You can retrieve an [`MTLCommandBufferEncoderInfo`](mtlcommandbufferencoderinfo.md) instance from the dictionary by accessing it with [`MTLCommandBufferEncoderInfoErrorKey`](mtlcommandbufferencoderinfoerrorkey.md).
+An error’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary property contains additional information if the command buffer’s [`errorOptions`](mtlcommandbuffer/erroroptions.md) property includes [`encoderExecutionStatus`](mtlcommandbuffererroroption/encoderexecutionstatus.md). You can retrieve an [`MTLCommandBufferEncoderInfo`](mtlcommandbufferencoderinfo.md) instance from the dictionary by accessing it with [`MTLCommandBufferEncoderInfoErrorKey`](mtlcommandbufferencoderinfoerrorkey.md).
 
 ## See Also
 

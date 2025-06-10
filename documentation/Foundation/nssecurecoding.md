@@ -28,8 +28,8 @@ This technique is potentially unsafe because by the time you can verify the clas
 
 In order to conform to [`NSSecureCoding`](nssecurecoding.md):
 
-- An object that does not override [`init(coder:)`](https://developer.apple.com/documentation/OSLog/OSLogEntry/init(coder:)) can conform to `NSSecureCoding` without any changes (assuming that it is a subclass of another class that conforms).
-- An object that does override [`init(coder:)`](https://developer.apple.com/documentation/OSLog/OSLogEntry/init(coder:)) must decode any enclosed objects using the [`decodeObjectOfClass:forKey:`](nscoder/decodeobjectofclass:forkey:.md) method. For example:
+- An object that does not override doc://com.apple.documentation/documentation/oslog/oslogentry/init(coder:) can conform to `NSSecureCoding` without any changes (assuming that it is a subclass of another class that conforms).
+- An object that does override doc://com.apple.documentation/documentation/oslog/oslogentry/init(coder:) must decode any enclosed objects using the [`decodeObjectOfClass:forKey:`](nscoder/decodeobjectofclass:forkey:.md) method. For example:
 
 In addition, the class must override the getter for its [`supportsSecureCoding`](nssecurecoding/supportssecurecoding.md) property to return [`true`](https://developer.apple.com/documentation/swift/true).
 
@@ -127,6 +127,7 @@ For more information about how this relates to the NSXPC API, see [`Creating XPC
 - [UnitElectricPotentialDifference](unitelectricpotentialdifference.md)
 - [UnitElectricResistance](unitelectricresistance.md)
 - [UnitEnergy](unitenergy.md)
+- [UnitEnergy.EnergyKit](unitenergy/energykit.md)
 - [UnitFrequency](unitfrequency.md)
 - [UnitFuelEfficiency](unitfuelefficiency.md)
 - [UnitIlluminance](unitilluminance.md)

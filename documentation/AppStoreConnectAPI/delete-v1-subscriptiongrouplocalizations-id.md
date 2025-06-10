@@ -1,6 +1,6 @@
 # Delete a Subscription Group Localization
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 Delete localized metadata that you configured for a subscription group.

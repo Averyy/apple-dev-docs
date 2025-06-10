@@ -1,6 +1,6 @@
 # registerForRemoteNotifications(matching:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Register to receive notifications of the specified types from a provider through the Apple Push Notification service.

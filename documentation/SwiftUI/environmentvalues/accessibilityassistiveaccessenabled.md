@@ -20,6 +20,11 @@ A Boolean value that indicates whether Assistive Access is in use.
 var accessibilityAssistiveAccessEnabled: Bool { get }
 ```
 
+## See Also
+
+- [struct AssistiveAccess](assistiveaccess.md)
+  A scene that presents an interface appropriate for Assistive Access on iOS and iPadOS. On other platforms, this scene is unused.
+
 
 ---
 

@@ -1,6 +1,6 @@
 # XCTestError.Code
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: enum
 
 Error codes for errors that can occur while the test is waiting to fulfill expectations.
@@ -29,6 +29,7 @@ enum Code
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

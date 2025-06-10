@@ -1,6 +1,6 @@
 # object(forProperty:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Provides the value of a receiver’s property.

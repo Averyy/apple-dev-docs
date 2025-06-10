@@ -1,6 +1,6 @@
 # accented
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 Specifies that the `Image` should be included as part of the accented widget group.
@@ -8,8 +8,9 @@ Specifies that the `Image` should be included as part of the accented widget gro
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
+- visionOS 26.0+ (Beta)
 - watchOS 11.0+
 
 ## Declaration
@@ -17,6 +18,10 @@ Specifies that the `Image` should be included as part of the accented widget gro
 ```swift
 static let accented: WidgetAccentedRenderingMode
 ```
+
+## Mentions
+
+- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
 
 #### Discussion
 

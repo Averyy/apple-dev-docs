@@ -89,6 +89,10 @@ Although it’s not mandatory, wrapping a related group of toolbar items togethe
   Conforming types represent items that can be placed in various locations in a toolbar.
 - [struct ToolbarContentBuilder](toolbarcontentbuilder.md)
   Constructs a toolbar item set from multi-expression closures.
+- [struct ToolbarSpacer](toolbarspacer.md)
+  A standard space item in toolbars.
+- [struct DefaultToolbarItem](defaulttoolbaritem.md)
+  A toolbar item that represents a system component.
 
 
 ---

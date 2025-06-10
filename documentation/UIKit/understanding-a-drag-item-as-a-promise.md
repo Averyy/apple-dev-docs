@@ -10,7 +10,7 @@ Use drag items to convey data representation promises between a source app and a
 
 #### Overview
 
-When a user drags an onscreen visual representation of an item in your app, such as a photo, a Maps location, a Calendar event, or a text selection, your app associates the underlying data with a . The drag item, in turn, uses an . Your app populates the item provider’s [`registeredTypeIdentifiers`](https://developer.apple.com/documentation/foundation/nsitemprovider/1403923-registeredtypeidentifiers) array with [`uniform type identifiers (UTIs)`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/UniformTypeIdentifier.html).
+When a user drags an onscreen visual representation of an item in your app, such as a photo, a Maps location, a Calendar event, or a text selection, your app associates the underlying data with a . The drag item, in turn, uses an . Your app populates the item provider’s [`registeredTypeIdentifiers`](https://developer.apple.com/documentation/Foundation/NSItemProvider/registeredTypeIdentifiers) array with [`uniform type identifiers (UTIs)`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/UniformTypeIdentifier.html).
 
 ![A drag item with its contained item provider and array of uniform type identifiers](https://docs-assets.developer.apple.com/published/f3295ba2321f55ef49342ac6d5c16a6e/media-2903721%402x.png)
 

@@ -1,6 +1,6 @@
 # applicationDidFinishLaunchingNotification
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 A message indicating that the launch process finished and the extension is ready to run.

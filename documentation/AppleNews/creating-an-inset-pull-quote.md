@@ -19,8 +19,6 @@ Before you can position the pull quote in the leftmost three columns of the arti
 
 > 💡 **Tip**:  Two of the `ComponentLayout` objects in this example only have a `margin` property. Because the `columnStart` and `columnSpan` properties are not specified, these `ComponentLayout` objects will always extend to the left and right margins of the available space (either the parent container, or the whole article if there is no parent container). You can reuse margin-only `ComponentLayout` objects like these to adjust vertical positioning within containers, and then use the containers’ `ComponentLayout` objects to adjust other aspects of the layout.
 
- Two of the `ComponentLayout` objects in this example only have a `margin` property. Because the `columnStart` and `columnSpan` properties are not specified, these `ComponentLayout` objects will always extend to the left and right margins of the available space (either the parent container, or the whole article if there is no parent container). You can reuse margin-only `ComponentLayout` objects like these to adjust vertical positioning within containers, and then use the containers’ `ComponentLayout` objects to adjust other aspects of the layout.
-
 1. Copy the example code [`Inset Pull Quote Layout: Copy This Code`](creating-an-inset-pull-quote#Inset-Pull-Quote-Layout-Copy-This-Code.md).
 2. Paste the code between the closing brace (`}`) of the last `ComponentLayout` object and the closing brace for the whole `componentLayouts` property.
 

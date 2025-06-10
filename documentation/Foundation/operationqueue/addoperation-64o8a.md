@@ -26,8 +26,6 @@ Once added, the specified operation remains in the queue until it finishes execu
 
 > ❗ **Important**:  An operation object can be in at most one operation queue at a time and this method throws an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md) exception if the operation is already in another queue. Similarly, this method throws an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md) exception if the operation is currently executing or has already finished executing.
 
- An operation object can be in at most one operation queue at a time and this method throws an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md) exception if the operation is already in another queue. Similarly, this method throws an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md) exception if the operation is currently executing or has already finished executing.
-
 ## Parameters
 
 - `op`: The operation to be added to the queue.

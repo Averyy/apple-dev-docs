@@ -20,8 +20,6 @@ var exposureNotificationStatus: ENStatus { get }
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.5 and later.
 
- This property is available in iOS 12.5, and in iOS 13.5 and later.
-
 You can use key value observing to monitor for changes. The value of this property will be [`ENStatus.unknown`](enstatus/unknown.md) until [`activate(completionHandler:)`](enmanager/activate(completionhandler:).md) completes successfully.
 
 This status can be affected by the user disabling exposure notifications, disabling bluetooth, or restricting the feature through parental controls.

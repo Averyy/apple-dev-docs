@@ -17,8 +17,6 @@ The [`Scene`](scene.md) instance has helpful methods to perform ray casts to hel
   A container that holds the collection of entities that an AR view renders.
 - [struct AnchorCollection](scene/anchorcollection.md)
   A collection of anchor entities.
-- [typealias ID](scene/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 ### Entity searches
 - [struct QueryPredicate](querypredicate.md)
   An object that defines the criteria for an entity query.

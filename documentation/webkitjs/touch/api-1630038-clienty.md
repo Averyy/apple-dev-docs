@@ -1,6 +1,6 @@
 # clientY
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The y-coordinate of the touch’s location relative to the window’s viewport.

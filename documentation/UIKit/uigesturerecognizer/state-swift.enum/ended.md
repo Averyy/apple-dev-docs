@@ -24,8 +24,8 @@ case ended
 - [Implementing a Continuous Gesture Recognizer](implementing-a-continuous-gesture-recognizer.md)
 - [Handling long-press gestures](handling-long-press-gestures.md)
 - [Handling rotation gestures](handling-rotation-gestures.md)
-- [Handling pinch gestures](handling-pinch-gestures.md)
 - [Handling pan gestures](handling-pan-gestures.md)
+- [Handling pinch gestures](handling-pinch-gestures.md)
 
 #### Discussion
 

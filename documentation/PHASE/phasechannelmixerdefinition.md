@@ -1,6 +1,6 @@
 # PHASEChannelMixerDefinition
 
-**Framework**: Phase  
+**Framework**: PHASE  
 **Kind**: class
 
 An audio-layering object that routes sound directly to the device’s output.
@@ -68,4 +68,4 @@ This class minimizes  and  — that is, source audio channel conversion to a hig
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PHASE/phasechannelmixerdefinition)*
+*[View on Apple Developer](https://developer.apple.com/documentation/phase/phasechannelmixerdefinition)*

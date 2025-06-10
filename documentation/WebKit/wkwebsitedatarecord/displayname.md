@@ -1,6 +1,6 @@
 # displayName
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The display name for the data record.

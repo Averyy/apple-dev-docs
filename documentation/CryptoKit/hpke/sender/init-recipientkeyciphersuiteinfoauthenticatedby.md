@@ -1,6 +1,6 @@
 # init(recipientKey:ciphersuite:info:authenticatedBy:)
 
-**Framework**: Cryptokit  
+**Framework**: Apple CryptoKit  
 **Kind**: init
 
 Creates a sender in authentication mode.

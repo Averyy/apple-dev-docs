@@ -31,8 +31,6 @@ This method will consult the [`primaryOffset`](mpsbinaryimagekernel/1618880-prim
 
 > ❗ **Important**: This function operates using global image coordinates, but the [`encode(commandBuffer:primaryTexture:secondaryTexture:destinationTexture:)`](mpsbinaryimagekernel/1618871-encode.md) method uses coordinates local to the source and destination image textures. Consequently, the [`primaryOffset`](mpsbinaryimagekernel/1618880-primaryoffset.md) and [`clipRect`](mpsbinaryimagekernel/1618879-cliprect.md) properties attached to this object will need to be updated using a global-to-local coordinate transform before the [`encode(commandBuffer:primaryTexture:secondaryTexture:destinationTexture:)`](mpsbinaryimagekernel/1618871-encode.md) method is called.
 
-This function operates using global image coordinates, but the [`encode(commandBuffer:primaryTexture:secondaryTexture:destinationTexture:)`](mpsbinaryimagekernel/1618871-encode.md) method uses coordinates local to the source and destination image textures. Consequently, the [`primaryOffset`](mpsbinaryimagekernel/1618880-primaryoffset.md) and [`clipRect`](mpsbinaryimagekernel/1618879-cliprect.md) properties attached to this object will need to be updated using a global-to-local coordinate transform before the [`encode(commandBuffer:primaryTexture:secondaryTexture:destinationTexture:)`](mpsbinaryimagekernel/1618871-encode.md) method is called.
-
 ## Parameters
 
 - `destinationSize`: The size of the full virtual destination image.

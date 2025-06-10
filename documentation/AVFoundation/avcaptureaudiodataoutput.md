@@ -37,6 +37,8 @@ class AVCaptureAudioDataOutput
   The queue on which delegate callbacks are invoked
 - [protocol AVCaptureAudioDataOutputSampleBufferDelegate](avcaptureaudiodataoutputsamplebufferdelegate.md)
   Methods for receiving audio sample data from an audio capture.
+### Instance Properties
+- [var spatialAudioChannelLayoutTag: AudioChannelLayoutTag](avcaptureaudiodataoutput/spatialaudiochannellayouttag.md)
 
 ## Relationships
 
@@ -52,6 +54,8 @@ class AVCaptureAudioDataOutput
 
 ## See Also
 
+- [Capturing Spatial Audio in your iOS app](capturing-spatial-audio-in-your-ios-app.md)
+  Enhance your app’s audio recording capabilities by supporting Spatial Audio capture.
 - [class AVCaptureVideoDataOutput](avcapturevideodataoutput.md)
   A capture output that records video and provides access to video frames for processing.
 

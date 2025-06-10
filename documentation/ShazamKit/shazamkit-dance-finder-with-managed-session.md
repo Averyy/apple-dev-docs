@@ -1,6 +1,6 @@
 # ShazamKit Dance Finder with Managed Session
 
-**Framework**: Shazamkit
+**Framework**: ShazamKit
 
 Find a video of dance moves for a specific song by matching the audio to a custom catalog, and show a history of recognized songs.
 
@@ -25,4 +25,4 @@ Find a video of dance moves for a specific song by matching the audio to a custo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ShazamKit/shazamkit-dance-finder-with-managed-session)*
+*[View on Apple Developer](https://developer.apple.com/documentation/shazamkit/shazamkit-dance-finder-with-managed-session)*

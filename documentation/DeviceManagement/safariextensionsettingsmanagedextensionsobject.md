@@ -9,8 +9,7 @@ The dictionary that defines the managed extension.
 - iOS 18.0+
 - iPadOS 18.0+
 - macOS 15.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -18,10 +17,11 @@ The dictionary that defines the managed extension.
 object SafariExtensionSettingsManagedExtensionsObject
 ```
 
-## See Also
+## Topics
 
+### Objects
 - [object SafariExtensionSettingsExtensionDictionaryObject](safariextensionsettingsextensiondictionaryobject.md)
-  The dictionary that defines the settings for the managed extension.
+  The dictionary that defines the managed extension.
 
 
 ---

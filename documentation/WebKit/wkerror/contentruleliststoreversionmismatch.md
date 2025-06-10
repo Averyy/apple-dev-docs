@@ -1,6 +1,6 @@
 # contentRuleListStoreVersionMismatch
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An error that indicates the rule list version is outdated and cannot be read.

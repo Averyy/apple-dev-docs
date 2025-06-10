@@ -29,8 +29,6 @@ Observer queries set up a long-running task on a background queue. This task wat
 
 > ❗ **Important**:  Background server queries aren’t supported on the Simulator. Be sure to test your background queries on a device.
 
- Background server queries aren’t supported on the Simulator. Be sure to test your background queries on a device.
-
 Observer queries are immutable: You set their properties when you first create them, and you can’t change them.
 
 ## Topics
@@ -57,6 +55,7 @@ Observer queries are immutable: You set their properties when you first create t
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

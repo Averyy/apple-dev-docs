@@ -3,13 +3,13 @@
 **Framework**: RoomPlan  
 **Kind**: method
 
-session ends with either CapturedRoom or error
+Provides a default, blank implementation for when the capture session provides raw scan results.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -20,6 +20,16 @@ func captureSession(_ session: RoomCaptureSession, didEndWith data: CapturedRoom
 ## Mentions
 
 - [Scanning the rooms of a single structure](scanning-the-rooms-of-a-single-structure.md)
+
+#### Discussion
+
+The system calls this implementation if your app doesn’t implement [`captureSession(_:didEndWith:error:)`](roomcapturesessiondelegate/capturesession(_:didendwith:error:).md).
+
+## Parameters
+
+- `session`: An object that manages the room-scanning process.
+- `data`: A data object that contains the raw scan results.
+- `error`: An object that describes the problem when an error occurs; otherwise,  .
 
 ## See Also
 
@@ -32,7 +42,7 @@ func captureSession(_ session: RoomCaptureSession, didEndWith data: CapturedRoom
 - [func captureSession(RoomCaptureSession, didChange: CapturedRoom)](roomcapturesessiondelegate/capturesession(_:didchange:)-gv3t.md)
   Provides a default, blank implementation for when the capture session updates the dimensions and the transform properties during a scan.
 - [func captureSession(RoomCaptureSession, didProvide: RoomCaptureSession.Instruction)](roomcapturesessiondelegate/capturesession(_:didprovide:)-5hvhl.md)
-  session has user guidance instructions
+  Provides a default, blank implementation for when the capture session provides a user instruction.
 
 
 ---

@@ -1,6 +1,6 @@
 # associatedTab
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The tab that this action is associated with, or `nil` if it’s the default action.

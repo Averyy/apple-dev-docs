@@ -1,6 +1,6 @@
 # SVG_MEETORSLICE_MEET
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

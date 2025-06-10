@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-The value that should be displayed to the user at the UI layer.
+The name for a participant in a conversation that appears in the conversation UI.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,11 @@ The value that should be displayed to the user at the UI layer.
 ```swift
 var displayName: String
 ```
+
+## See Also
+
+- [var value: String](handle/value.md)
+  The raw value of the handle.
 
 
 ---

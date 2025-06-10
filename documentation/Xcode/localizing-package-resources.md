@@ -35,8 +35,6 @@ When you declare a value for `defaultLocalization` in the package manifest, Xcod
 
 > ❗ **Important**: When declaring a supported language, or naming directories that contain localized resources, use two-letter ISO 639-1 or three-letter ISO 639-2 language codes with optional region or script designators. See [`CFBundleDevelopmentRegion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDevelopmentRegion) for more information.
 
-When declaring a supported language, or naming directories that contain localized resources, use two-letter ISO 639-1 or three-letter ISO 639-2 language codes with optional region or script designators. See [`CFBundleDevelopmentRegion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDevelopmentRegion) for more information.
-
 ##### Add Resources to Language Specific Directories
 
 To use Xcode’s default localization mechanism, place localized resources in language-specific directories. A language-specific directory has a name that uses an ISO 639 language code and optional designators, followed by the `.lproj` suffix, and doesn’t contain subdirectories. For example, resources in the English language as it’s used in the United Kingdom reside in a directory named `en-GB.lproj`. By placing package resources in directories that end in `.lproj` and using ISO 639 language codes, Xcode can infer the language automatically.

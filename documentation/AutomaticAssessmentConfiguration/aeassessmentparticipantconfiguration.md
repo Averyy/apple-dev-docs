@@ -33,6 +33,7 @@ Use an instance of this class to configure the properties of an app that you all
   A Boolean that indicates whether an app can access network resources during an assessment.
 ### Instance Properties
 - [var configurationInfo: [String : Any]](aeassessmentparticipantconfiguration/configurationinfo.md)
+- [var isRequired: Bool](aeassessmentparticipantconfiguration/isrequired.md)
 
 ## Relationships
 

@@ -10,6 +10,7 @@ A 3D coordinate space that exists within a RealityKit hierarchy.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS ?+
 - visionOS 1.0+
 
 ## Declaration

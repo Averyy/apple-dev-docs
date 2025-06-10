@@ -19,7 +19,7 @@ var selectedSegment: Int { get set }
 
 This property contains the zero-based index of the segment. If the control allows multiple selections, the value of this property is the index of the most recently selected segment.
 
-If you specify an index that is out of bounds, an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1413262-rangeexception)) is raised.
+If you specify an index that is out of bounds, an exception ([`rangeException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/rangeException)) is raised.
 
 ## See Also
 

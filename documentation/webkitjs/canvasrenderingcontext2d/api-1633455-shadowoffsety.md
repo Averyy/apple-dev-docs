@@ -1,6 +1,6 @@
 # shadowOffsetY
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A floating-point number that controls the vertical offset of shadows from the elements casting the shadows.

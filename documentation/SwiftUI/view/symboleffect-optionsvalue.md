@@ -49,7 +49,7 @@ VStack {
 - [func symbolEffectsRemoved(Bool) -> some View](view/symboleffectsremoved(_:).md)
   Returns a new view with its inherited symbol image effects either removed or left unchanged.
 - [struct SymbolEffectTransition](symboleffecttransition.md)
-  Creates a transition that applies the Appear or Disappear symbol animation to symbol images within the inserted or removed view hierarchy.
+  Creates a transition that applies the Appear, Disappear, DrawOn or DrawOff symbol animation to symbol images within the inserted or removed view hierarchy.
 
 
 ---

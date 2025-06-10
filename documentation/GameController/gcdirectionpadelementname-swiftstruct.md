@@ -28,6 +28,8 @@ struct GCDirectionPadElementName
   The name of the left thumbstick on a directional pad element.
 - [static let rightThumbstick: GCDirectionPadElementName](gcdirectionpadelementname-swift.struct/rightthumbstick.md)
   The name of the right thumbstick on a directional pad element.
+### Type Properties
+- [static let thumbstick: GCDirectionPadElementName](gcdirectionpadelementname-swift.struct/thumbstick.md)
 
 ## Relationships
 
@@ -38,6 +40,7 @@ struct GCDirectionPadElementName
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

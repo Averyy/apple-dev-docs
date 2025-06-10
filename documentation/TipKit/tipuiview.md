@@ -91,6 +91,8 @@ override func viewWillDisappear(_ animated: Bool) {
 ### Instance Properties
 - [var backgroundColor: UIColor?](tipuiview/backgroundcolor.md)
   The background color to use for the tip view.
+- [var backgroundStyle: any ShapeStyle](tipuiview/backgroundstyle.md)
+  The background style to use for the tip view.
 - [var cornerRadius: CGFloat](tipuiview/cornerradius.md)
   Corner radius for the tip view.
 - [var imageSize: CGSize](tipuiview/imagesize.md)

@@ -25,8 +25,6 @@ convenience init?(interpolationMethod: BNNS.InterpolationMethod, input: BNNSNDAr
 
 > ❗ **Important**:  The number of input dimensions must be equal to number of output dimensions. The resize must be in same direction for all dimensions.
 
- The number of input dimensions must be equal to number of output dimensions. The resize must be in same direction for all dimensions.
-
 ## Parameters
 
 - `interpolationMethod`: The interpolation method for resizing.

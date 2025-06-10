@@ -10,6 +10,7 @@ Reverb characteristics of an environment.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -29,9 +30,6 @@ enum Reverb
   The default reverb preset.
 - [ARView.Environment.Reverb.Preset](arview/environment-swift.struct/reverb-swift.enum/preset.md)
   Available reverb preset values.
-### Default Implementations
-- [Equatable Implementations](arview/environment-swift.struct/reverb-swift.enum/equatable-implementations.md)
-- [Hashable Implementations](arview/environment-swift.struct/reverb-swift.enum/hashable-implementations.md)
 
 ## Relationships
 

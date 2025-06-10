@@ -22,7 +22,7 @@ struct NSKeyValueChangeKey
 
 #### Discussion
 
-These constants are used as keys in the change dictionary passed to [`observeValue(forKeyPath:of:change:context:)`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/observeValue(forKeyPath:of:change:context:)).
+These constants are used as keys in the change dictionary passed to doc://com.apple.documentation/documentation/objectivec/nsobject/1416553-observevalue.
 
 ## Topics
 
@@ -47,6 +47,7 @@ These constants are used as keys in the change dictionary passed to [`observeVal
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

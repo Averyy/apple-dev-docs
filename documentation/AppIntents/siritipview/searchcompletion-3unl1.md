@@ -9,7 +9,7 @@ Associates a search token with the value of this view when used as a search sugg
 - iOS 16.0+
 - iPadOS 16.0+
 - macOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

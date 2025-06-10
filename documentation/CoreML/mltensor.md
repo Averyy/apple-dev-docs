@@ -367,6 +367,7 @@ struct MLTensor
 - [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
 - [ExpressibleByIntegerLiteral](../Swift/ExpressibleByIntegerLiteral.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -374,10 +375,6 @@ struct MLTensor
   A type that represents the tensor scalar types supported by the framework. Don’t use this type directly.
 - [protocol MLTensorRangeExpression](mltensorrangeexpression.md)
   A type that can be used to slice a dimension of a tensor. Don’t use this type directly.
-- [func pointwiseMin(MLTensor, MLTensor) -> MLTensor](pointwisemin(_:_:).md)
-  Computes the element-wise minimum of two tensors.
-- [func pointwiseMax(MLTensor, MLTensor) -> MLTensor](pointwisemax(_:_:).md)
-  Computes the element-wise maximum of two tensors.
 
 
 ---

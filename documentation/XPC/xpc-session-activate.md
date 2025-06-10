@@ -1,6 +1,6 @@
 # xpc_session_activate(_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 **Availability**:

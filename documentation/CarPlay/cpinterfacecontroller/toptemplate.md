@@ -13,6 +13,7 @@ The top-most template in the navigation hierarchy.
 ## Declaration
 
 ```swift
+@MainActor
 var topTemplate: CPTemplate? { get }
 ```
 

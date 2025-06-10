@@ -1,6 +1,6 @@
 # XPCSession
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: class
 
 A type that sends messages to a server process.
@@ -76,12 +76,35 @@ XPC sessions are stateful connections you use to send structured messages to a s
   Sends an encodable message over the session to the destination service, blocking the caller until receiving an encodable reply message.
 - [func sendSync(message: XPCDictionary) throws -> XPCDictionary](xpcsession/sendsync(message:).md)
   Sends a dictionary message over the session to the destination service, blocking the caller until receiving a reply.
+### Initializers
+- [convenience init(endpoint: XPCListener.Endpoint, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(endpoint:targetqueue:options:cancellationhandler:).md)
+  Creates a new session object representing a connection to the xpc endpoint.
+- [convenience init(endpoint: XPCListener.Endpoint, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, incomingMessageHandler: ((XPCReceivedMessage) -> (any Encodable)?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(endpoint:targetqueue:options:incomingmessagehandler:cancellationhandler:)-1g0cc.md)
+  Creates a new session object representing a connection to the xpc endpoint.
+- [convenience init<Message>(endpoint: XPCListener.Endpoint, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, incomingMessageHandler: ((Message) -> (any Encodable)?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(endpoint:targetqueue:options:incomingmessagehandler:cancellationhandler:)-5coj9.md)
+  Creates a new session object representing a connection to the xpc endpoint.
+- [convenience init(endpoint: XPCListener.Endpoint, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, incomingMessageHandler: ((XPCDictionary) -> XPCDictionary?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(endpoint:targetqueue:options:incomingmessagehandler:cancellationhandler:)-63e2q.md)
+  Creates a new session object representing a connection to the xpc endpoint.
+- [convenience init(machService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, requirement: XPCPeerRequirement, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(machservice:targetqueue:options:requirement:cancellationhandler:).md)
+- [convenience init(machService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, requirement: XPCPeerRequirement, incomingMessageHandler: ((XPCDictionary) -> XPCDictionary?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(machservice:targetqueue:options:requirement:incomingmessagehandler:cancellationhandler:)-5pk9g.md)
+- [convenience init<Message>(machService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, requirement: XPCPeerRequirement, incomingMessageHandler: ((Message) -> (any Encodable)?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(machservice:targetqueue:options:requirement:incomingmessagehandler:cancellationhandler:)-7o5oq.md)
+- [convenience init(machService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, requirement: XPCPeerRequirement, incomingMessageHandler: ((XPCReceivedMessage) -> (any Encodable)?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(machservice:targetqueue:options:requirement:incomingmessagehandler:cancellationhandler:)-84ll1.md)
+- [convenience init(xpcService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, requirement: XPCPeerRequirement, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(xpcservice:targetqueue:options:requirement:cancellationhandler:).md)
+  Creates a new session object representing a connection to the named service, and requires that the session peer has the specified requirement.
+- [convenience init(xpcService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, requirement: XPCPeerRequirement, incomingMessageHandler: ((XPCDictionary) -> XPCDictionary?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(xpcservice:targetqueue:options:requirement:incomingmessagehandler:cancellationhandler:)-3p0jf.md)
+- [convenience init(xpcService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, requirement: XPCPeerRequirement, incomingMessageHandler: ((XPCReceivedMessage) -> (any Encodable)?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(xpcservice:targetqueue:options:requirement:incomingmessagehandler:cancellationhandler:)-6jxdc.md)
+- [convenience init<Message>(xpcService: String, targetQueue: DispatchQueue?, options: XPCSession.InitializationOptions, requirement: XPCPeerRequirement, incomingMessageHandler: ((Message) -> (any Encodable)?)?, cancellationHandler: ((XPCRichError) -> Void)?) throws](xpcsession/init(xpcservice:targetqueue:options:requirement:incomingmessagehandler:cancellationhandler:)-osu4.md)
+### Instance Methods
+- [func setPeerRequirement(XPCPeerRequirement)](xpcsession/setpeerrequirement(_:).md)
+  Requires that the session peer has the specified requirement
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -169,4 +169,4 @@ kernel void exampleKernel(device ArgumentBufferSampler *source,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/improving-cpu-performance-by-using-argument-buffers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/improving-cpu-performance-by-using-argument-buffers)*

@@ -1,6 +1,6 @@
 # MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

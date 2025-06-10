@@ -16,8 +16,7 @@ A dragging motion that invokes an action as the drag-event sequence changes.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct DragGesture
+struct DragGesture
 ```
 
 ## Mentions
@@ -65,6 +64,8 @@ struct DragGestureView: View {
 - [DragGesture.Value](draggesture/value.md)
   The attributes of a drag gesture.
 ### Initializers
+- [init(minimumDistance: CGFloat, coordinateSpace3D: some CoordinateSpace3D)](draggesture/init(minimumdistance:coordinatespace3d:).md)
+  Creates a dragging gesture with the minimum dragging distance before the gesture succeeds and the coordinate space of the gesture’s location.
 - [init(minimumDistance:coordinateSpace:)](draggesture/init(minimumdistance:coordinatespace:).md)
   Creates a dragging gesture with the minimum dragging distance before the gesture succeeds and the coordinate space of the gesture’s location.
 
@@ -75,8 +76,8 @@ struct DragGestureView: View {
 
 ## See Also
 
-- [func gesture(some UIGestureRecognizerRepresentable) -> some View](view/gesture(_:).md)
-  Attaches a [`UIGestureRecognizerRepresentable`](uigesturerecognizerrepresentable.md) to the view.
+- [func gesture(_:)](view/gesture(_:).md)
+  Attaches an [`NSGestureRecognizerRepresentable`](nsgesturerecognizerrepresentable.md) to the view.
 - [func gesture<T>(T, isEnabled: Bool) -> some View](view/gesture(_:isenabled:).md)
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
 - [func gesture<T>(T, name: String, isEnabled: Bool) -> some View](view/gesture(_:name:isenabled:).md)

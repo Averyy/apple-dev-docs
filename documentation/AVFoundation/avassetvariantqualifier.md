@@ -45,10 +45,15 @@ class AVAssetVariantQualifier
   Creates a predicate for audio sample rate.
 ### Type Methods
 - [class func predicate(forAudioSampleRate: Double, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](avassetvariantqualifier/predicate(foraudiosamplerate:operatortype:).md)
+  Creates a NSPredicate for audio sample rate which can be used with other NSPredicates to express variant preferences.
 - [class func predicate(forBinauralAudio: Bool) -> NSPredicate](avassetvariantqualifier/predicate(forbinauralaudio:).md)
+  Creates a NSPredicate for binaural which can be used with other NSPredicates to express variant preferences.
 - [class func predicate(forChannelCount: Int, operatorType: NSComparisonPredicate.Operator) -> NSPredicate](avassetvariantqualifier/predicate(forchannelcount:operatortype:).md)
+  Creates a NSPredicate for audio channel count which can be used with other NSPredicates to express variant preferences.
 - [class func predicate(forDownmixAudio: Bool) -> NSPredicate](avassetvariantqualifier/predicate(fordownmixaudio:).md)
+  Creates a NSPredicate for immersive audio which can be used with other NSPredicates to express variant preferences.
 - [class func predicate(forImmersiveAudio: Bool) -> NSPredicate](avassetvariantqualifier/predicate(forimmersiveaudio:).md)
+  Creates a NSPredicate for immersive audio which can be used with other NSPredicates to express variant preferences.
 
 ## Relationships
 
@@ -63,6 +68,7 @@ class AVAssetVariantQualifier
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

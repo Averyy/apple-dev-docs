@@ -12,8 +12,6 @@ The payload you use to configure a root certificate.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,17 +27,17 @@ Specify `com.apple.security.root` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS, watchOS |
-| User Channel | macOS |
-| Allow Manual Install | iOS, macOS, Shared iPad, tvOS, watchOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Allow Multiple Payloads | iOS, macOS, Shared iPad, tvOS, watchOS |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| User channel | macOS |
+| Allow manual install | iOS, macOS, tvOS, visionOS, watchOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">

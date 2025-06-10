@@ -53,6 +53,7 @@ To implement accelerated graphics inside your virtualization solution, you need 
 - [ParavirtualizedGraphics Functions](paravirtualizedgraphics-functions.md)
 - [ParavirtualizedGraphics Data Types](paravirtualizedgraphics-data-types.md)
 ### Variables
+- [var HAS_NS_BITMAP_HEADER: Int32](has_ns_bitmap_header.md)
 - [var PG_SUPPORT_CREATE_DEVICE: Int32](pg_support_create_device.md)
 ### Functions
 - [func PGCreateDeviceWithDescriptor(PGDeviceDescriptor) -> (any PGDevice)?](pgcreatedevicewithdescriptor(_:).md)

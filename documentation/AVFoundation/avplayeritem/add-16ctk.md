@@ -17,7 +17,7 @@ Adds the specified player item output object to the receiver.
 ## Declaration
 
 ```swift
-@MainActor
+nonisolated
 func add(_ output: AVPlayerItemOutput)
 ```
 

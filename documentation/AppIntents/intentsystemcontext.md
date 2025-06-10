@@ -8,10 +8,10 @@ Information that the system makes available to an app intent while it performs i
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -27,6 +27,8 @@ Access information the system provides to your app intent while it performs its 
 ## Topics
 
 ### Instance Properties
+- [var currentMode: IntentModes.Current](intentsystemcontext/currentmode.md)
+  A value that indicates the foreground and background behavior for app intent’s action.
 - [var preciseTimestamp: Date?](intentsystemcontext/precisetimestamp.md)
   A precise timestamp for the performed action.
 

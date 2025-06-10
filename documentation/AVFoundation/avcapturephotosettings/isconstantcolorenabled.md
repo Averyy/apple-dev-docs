@@ -24,8 +24,6 @@ The default value is [`false`](https://developer.apple.com/documentation/swift/f
 
 > ❗ **Important**:  Attempting to enable constant color capture when a photo output’s [`isConstantColorEnabled`](avcapturephotooutput/isconstantcolorenabled.md) is [`false`](https://developer.apple.com/documentation/swift/false), results in the system throwing an exception.
 
- Attempting to enable constant color capture when a photo output’s [`isConstantColorEnabled`](avcapturephotooutput/isconstantcolorenabled.md) is [`false`](https://developer.apple.com/documentation/swift/false), results in the system throwing an exception.
-
 ## See Also
 
 - [var isConstantColorFallbackPhotoDeliveryEnabled: Bool](avcapturephotosettings/isconstantcolorfallbackphotodeliveryenabled.md)

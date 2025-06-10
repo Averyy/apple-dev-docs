@@ -21,9 +21,9 @@ static let ciContext: VNImageOption
 
 #### Discussion
 
-If this key isn’t specified, Vision will create its own [`CIContext`](https://developer.apple.com/documentation/coreimage/cicontext).
+If this key isn’t specified, Vision will create its own [`CIContext`](https://developer.apple.com/documentation/CoreImage/CIContext).
 
-Specify a [`CIContext`](https://developer.apple.com/documentation/coreimage/cicontext) when you’ve used one in processing an input [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) or executing a [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter) chain, so you can save the cost of creating a new context.
+Specify a [`CIContext`](https://developer.apple.com/documentation/CoreImage/CIContext) when you’ve used one in processing an input [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage) or executing a [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter) chain, so you can save the cost of creating a new context.
 
 ## See Also
 

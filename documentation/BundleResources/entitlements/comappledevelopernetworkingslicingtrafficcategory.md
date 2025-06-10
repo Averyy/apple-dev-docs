@@ -1,6 +1,6 @@
 # 5G Network Slicing Traffic Category
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 The key that defines the traffic category entitlement to enable Cellular Network Slicing.
@@ -20,8 +20,8 @@ Use this array to define the different slice types your app’s entitled to. For
 Also set one of the following properties, depending on your app’s networking implementation:
 
 - Set [`serviceClass`](https://developer.apple.com/documentation/Network/NWParameters/serviceClass-swift.property) when using the Networking framework.
-- Set [`networkServiceType`](https://developer.apple.com/documentation/foundation/urlsessionconfiguration/1411606-networkservicetype) when using [`URLSessionConfiguration`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration).
-- Set [`networkServiceType`](https://developer.apple.com/documentation/foundation/urlrequest/2011409-networkservicetype) when using [`URLRequest`](https://developer.apple.com/documentation/Foundation/URLRequest).
+- Set [`networkServiceType`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration/networkServiceType) when using [`URLSessionConfiguration`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration).
+- Set [`networkServiceType`](https://developer.apple.com/documentation/Foundation/URLRequest/networkServiceType-swift.property) when using [`URLRequest`](https://developer.apple.com/documentation/Foundation/URLRequest).
 
 If your app uses sockets, set this entitlement to `defaultslice-1`. With sockets, all your app traffic uses a slice defined by the carrier to accept all traffic categories. You should still set the [`5G Network Slicing App Category`](entitlements/com.apple.developer.networking.slicing.appcategory.md) entitlement.
 
@@ -44,6 +44,10 @@ If your app uses sockets, set this entitlement to `defaultslice-1`. With sockets
 - [5G Network Slicing App Category](entitlements/com.apple.developer.networking.slicing.appcategory.md)
   The key that defines the app category entitlement to enable Cellular Network Slicing.
 - [com.apple.developer.networking.vmnet](entitlements/com.apple.developer.networking.vmnet.md)
+- [com.apple.developer.networking.carrier-constrained.appcategory](entitlements/com.apple.developer.networking.carrier-constrained.appcategory.md)
+  The key that defines an app’s category for accessing a carrier-provided satellite network.
+- [com.apple.developer.networking.carrier-constrained.app-optimized](entitlements/com.apple.developer.networking.carrier-constrained.app-optimized.md)
+  A Boolean value that indicates whether your app is optimized for a carrier-provided satellite network.
 
 
 ---

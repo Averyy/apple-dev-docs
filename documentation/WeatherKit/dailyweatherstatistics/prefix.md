@@ -1,6 +1,6 @@
 # prefix(_:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns a subsequence, up to the specified maximum length, containing the initial elements of the collection.

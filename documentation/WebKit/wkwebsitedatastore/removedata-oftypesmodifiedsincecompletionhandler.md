@@ -1,6 +1,6 @@
 # removeData(ofTypes:modifiedSince:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Removes website data that changed after the specified date.

@@ -1,6 +1,6 @@
 # Designing RealityKit content with Reality Composer Pro
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Design RealityKit scenes for your visionOS app.
 
@@ -150,6 +150,8 @@ When RealityKit finishes loading the scene, the `scene` variable contains the ro
 
 ## See Also
 
+- [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
+  Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)
@@ -176,4 +178,4 @@ When RealityKit finishes loading the scene, the `scene` variable contains the ro
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/designing-realitykit-content-with-reality-composer-pro)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/designing-realitykit-content-with-reality-composer-pro)*

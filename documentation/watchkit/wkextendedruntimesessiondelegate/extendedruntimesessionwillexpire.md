@@ -1,6 +1,6 @@
 # extendedRuntimeSessionWillExpire(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method  
 **Required**: Yes
 

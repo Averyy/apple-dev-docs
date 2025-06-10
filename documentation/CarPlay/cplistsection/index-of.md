@@ -18,7 +18,7 @@ func index(of item: any CPListTemplateItem) -> Int
 
 #### Return Value
 
-The item’s index in the section, or [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound) if the section doesn’t contain the item.
+The item’s index in the section, or [`NSNotFound`](https://developer.apple.com/documentation/Foundation/NSNotFound-4qp9h) if the section doesn’t contain the item.
 
 ## Parameters
 

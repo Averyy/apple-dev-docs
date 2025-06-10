@@ -55,7 +55,7 @@ A [`UIWindow`](uiwindow.md) object provides no visible content of its own. All o
 - [View layout](view-layout.md)
   Use stack views to lay out the views of your interface automatically. Use Auto Layout when you require precise placement of your views.
 - [Appearance customization](appearance-customization.md)
-  Add Dark Mode support to your app, customize the appearance of bars, and use appearance proxies to modify your UI.
+  Apply Liquid Glass to views, support Dark Mode in your app, customize the appearance of bars, and use appearance proxies to modify your UI.
 - [Animation and haptics](animation-and-haptics.md)
   Provide feedback to users using view-based animations and haptics.
 

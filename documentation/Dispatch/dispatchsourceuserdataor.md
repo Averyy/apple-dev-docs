@@ -37,6 +37,7 @@ To add custom data to the dispatch source, call the [`or(data:)`](dispatchsource
 - [DispatchSourceProtocol](dispatchsourceprotocol.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [DispatchSource](dispatchsource.md)
 

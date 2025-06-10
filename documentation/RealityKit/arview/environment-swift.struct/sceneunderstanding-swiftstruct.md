@@ -10,6 +10,7 @@ An object that holds scene-understanding options for the view.
 - iPadOS 13.4+
 - Mac Catalyst 14.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

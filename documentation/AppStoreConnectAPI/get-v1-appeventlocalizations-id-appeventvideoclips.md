@@ -9,7 +9,9 @@
 ## See Also
 
 - [GET /v1/appEventLocalizations/{id}](get-v1-appeventlocalizations-_id_.md)
+- [GET /v1/appEventLocalizations/{id}/relationships/appEventVideoClips](get-v1-appeventlocalizations-_id_-relationships-appeventvideoclips.md)
 - [GET /v1/appEventLocalizations/{id}/appEventScreenshots](get-v1-appeventlocalizations-_id_-appeventscreenshots.md)
+- [GET /v1/appEventLocalizations/{id}/relationships/appEventScreenshots](get-v1-appeventlocalizations-_id_-relationships-appeventscreenshots.md)
 - [PATCH /v1/appEventLocalizations/{id}](patch-v1-appeventlocalizations-_id_.md)
 - [POST /v1/appEventLocalizations](post-v1-appeventlocalizations.md)
 - [Delete an App Event Localization](delete-v1-appeventlocalizations-_id_.md)

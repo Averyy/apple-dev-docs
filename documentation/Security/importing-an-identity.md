@@ -39,4 +39,4 @@ See [`Evaluating a Trust and Parsing the Result`](evaluating-a-trust-and-parsing
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/importing-an-identity)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/importing-an-identity)*

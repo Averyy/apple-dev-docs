@@ -20,8 +20,6 @@ When the associated device is completely stopped, the clock continues to advance
 
 > ❗ **Important**:  In Objective-C, you’re responsible for calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to release the returned `clockOut`.
 
- In Objective-C, you’re responsible for calling [`CFRelease`](https://developer.apple.com/documentation/corefoundation/1521153-cfrelease) to release the returned `clockOut`.
-
 ## Parameters
 
 - `allocator`: Allocator for the new clock; pass   or   to use the default allocator.

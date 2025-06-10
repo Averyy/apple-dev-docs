@@ -1,6 +1,6 @@
 # WKWebExtension.WindowState.minimized
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Indicates a window is minimized.

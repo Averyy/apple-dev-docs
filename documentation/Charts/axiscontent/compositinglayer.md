@@ -3,7 +3,7 @@
 **Framework**: Swift Charts  
 **Kind**: method
 
-Creates a compositing layer for the chart content.
+Creates a compositing layer for the axis content.
 
 **Availability**:
 - iOS 17.0+

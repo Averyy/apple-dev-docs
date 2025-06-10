@@ -1,6 +1,6 @@
 # saveSubscriptions
 
-**Framework**: Cloudkitjs  
+**Framework**: CloudKit JS  
 **Kind**: method
 
 Saves one or more subscriptions to record changes.

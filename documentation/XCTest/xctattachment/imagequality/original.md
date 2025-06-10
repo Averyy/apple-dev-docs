@@ -1,6 +1,6 @@
 # XCTAttachment.ImageQuality.original
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 Original image quality, represented as a lossless PNG image.

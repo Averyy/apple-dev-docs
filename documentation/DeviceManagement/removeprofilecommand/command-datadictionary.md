@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to remove a profile.
+The command to remove a previously installed profile from the device.
 
 **Availability**:
 - iOS 4.0+
@@ -12,8 +12,6 @@ The request dictionary to remove a profile.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

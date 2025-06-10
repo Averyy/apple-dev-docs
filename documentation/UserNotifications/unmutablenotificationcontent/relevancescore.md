@@ -1,6 +1,6 @@
 # relevanceScore
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: property
 
 The score the system uses to determine if the notification is the summary’s featured notification.

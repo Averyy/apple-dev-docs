@@ -27,8 +27,6 @@ If no audio alternate track group is present, the value of this property has no 
 
 > ❗ **Important**:  You can’t specify alternate track output handling while also setting a value for the export session’s [`audioMix`](avassetexportsession/audiomix.md) property. The system throws an exception if you specify both.
 
- You can’t specify alternate track output handling while also setting a value for the export session’s [`audioMix`](avassetexportsession/audiomix.md) property. The system throws an exception if you specify both.
-
 ## See Also
 
 - [struct AVAssetTrackGroupOutputHandling](avassettrackgroupoutputhandling.md)

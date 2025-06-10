@@ -52,8 +52,6 @@ print(invalidColumn.isValid) // Prints "false"
 
 > ❗ **Important**: A mismatch between the underlying types of two columns, or between the underlying type of a column and the type of a value, will result in an invalid column.
 
-A mismatch between the underlying types of two columns, or between the underlying type of a column and the type of a value, will result in an invalid column.
-
 Once a column becomes invalid, you can’t use it for any subsequent operation because it will only produce further invalid columns or invalid tables.
 
 Each comparison operator of [`MLUntypedColumn`](mluntypedcolumn.md) returns a column of Booleans. However, [`MLUntypedColumn`](mluntypedcolumn.md) uses integers as its underlying type for columns of Booleans, because [`MLDataValue`](mldatavalue.md) does not have a case for [`Bool`](https://developer.apple.com/documentation/Swift/Bool).

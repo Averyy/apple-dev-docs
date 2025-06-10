@@ -10,6 +10,7 @@ Creates a surface shader object from a named function in a Metal library.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -57,8 +58,6 @@ let surfaceShader = CustomMaterial.SurfaceShader(
 ```
 
 > ❗ **Important**: RealityKit loads surface shader functions by name, so name your surface shader uniquely and to exactly match the `named` parameter.
-
-RealityKit loads surface shader functions by name, so name your surface shader uniquely and to exactly match the `named` parameter.
 
 For more information on creating custom materials and writing shader functions, see [`Modifying RealityKit rendering using custom materials`](modifying-realitykit-rendering-using-custom-materials.md).
 

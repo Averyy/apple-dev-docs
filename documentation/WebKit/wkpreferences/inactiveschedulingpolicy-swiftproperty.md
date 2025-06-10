@@ -1,6 +1,6 @@
 # inactiveSchedulingPolicy
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A policy you set to specify how a web view that’s not in a window handles tasks.

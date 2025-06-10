@@ -36,6 +36,7 @@ Use a `TransactionQuery` to find and filter transactions in a person’s account
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

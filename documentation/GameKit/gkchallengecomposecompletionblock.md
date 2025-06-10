@@ -16,7 +16,7 @@ A completion block that provides information about the player who issues a chall
 ## Declaration
 
 ```swift
-typealias GKChallengeComposeCompletionBlock = (UIViewController, Bool, [String]?) -> Void
+typealias GKChallengeComposeCompletionBlock = (NSViewController, Bool, [String]?) -> Void
 ```
 
 ## Parameters

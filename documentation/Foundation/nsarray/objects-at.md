@@ -42,6 +42,8 @@ Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any location 
   The last object in the array.
 - [func object(at: Int) -> Any](nsarray/object(at:).md)
   Returns the object located at the specified index.
+- [subscript(Int) -> Any](nsarray/subscript(_:).md)
+  Returns the object at the specified index.
 - [func objectEnumerator() -> NSEnumerator](nsarray/objectenumerator.md)
   Returns an enumerator object that lets you access each object in the array.
 - [func reverseObjectEnumerator() -> NSEnumerator](nsarray/reverseobjectenumerator.md)

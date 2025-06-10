@@ -35,6 +35,8 @@ struct DefaultDateProgressLabel
   A view that shows the progress toward completion of a task.
 - [func progressViewStyle<S>(S) -> some View](view/progressviewstyle(_:).md)
   Sets the style for progress views in this view.
+- [struct DefaultButtonLabel](defaultbuttonlabel.md)
+  The default label to use for a button.
 
 
 ---

@@ -5,9 +5,6 @@
 
 The identity, location, and orientation of an object in world space.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift
@@ -19,7 +16,9 @@ protocol OS_ar_anchor : NSObjectProtocol
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 ### Inherited By
+- [OS_ar_accessory_anchor](os_ar_accessory_anchor.md)
 - [OS_ar_barcode_anchor](os_ar_barcode_anchor.md)
+- [OS_ar_camera_region_anchor](os_ar_camera_region_anchor.md)
 - [OS_ar_device_anchor](os_ar_device_anchor.md)
 - [OS_ar_environment_probe_anchor](os_ar_environment_probe_anchor.md)
 - [OS_ar_hand_anchor](os_ar_hand_anchor.md)

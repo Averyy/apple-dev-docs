@@ -24,10 +24,12 @@ A package provider.
 
 ## See Also
 
-- [static func brew([String]) -> SystemPackageProvider](systempackageprovider/brew(_:).md)
-  Creates a system package provider with a list of installable packages for people who use the HomeBrew package manager on macOS.
 - [static func apt([String]) -> SystemPackageProvider](systempackageprovider/apt(_:).md)
   Creates a system package provider with a list of installable packages for users of the apt-get package manager on Ubuntu Linux.
+- [static func brew([String]) -> SystemPackageProvider](systempackageprovider/brew(_:).md)
+  Creates a system package provider with a list of installable packages for people who use the HomeBrew package manager on macOS.
+- [static func nuget([String]) -> SystemPackageProvider](systempackageprovider/nuget(_:).md)
+  Creates a system package provider with a list of installable packages for users of the NuGet package manager on Linux or Windows.
 
 
 ---

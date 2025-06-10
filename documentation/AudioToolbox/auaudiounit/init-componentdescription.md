@@ -1,6 +1,6 @@
 # init(componentDescription:)
 
-**Framework**: Audiotoolbox  
+**Framework**: Audio Toolbox  
 **Kind**: init
 
 Synchronously initializes a new audio unit object.

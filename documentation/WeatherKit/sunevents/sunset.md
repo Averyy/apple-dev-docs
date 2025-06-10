@@ -1,6 +1,6 @@
 # sunset
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The sunset time immediately after the solar transit closest to calendar noon.

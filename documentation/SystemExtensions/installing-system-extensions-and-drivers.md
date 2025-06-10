@@ -1,6 +1,6 @@
 # Installing System Extensions and Drivers
 
-**Framework**: Systemextensions
+**Framework**: System Extensions
 
 Activate system extensions and drivers to make them available to the system, and update or deactivate them as needed.
 
@@ -69,4 +69,4 @@ For more information about how to use the `systemextensionsctl` tool, see the ma
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SystemExtensions/installing-system-extensions-and-drivers)*
+*[View on Apple Developer](https://developer.apple.com/documentation/systemextensions/installing-system-extensions-and-drivers)*

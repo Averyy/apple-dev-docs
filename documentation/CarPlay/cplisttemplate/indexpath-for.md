@@ -13,6 +13,7 @@ Returns the index path for the specified item.
 ## Declaration
 
 ```swift
+@MainActor
 func indexPath(for item: any CPListTemplateItem) -> IndexPath?
 ```
 

@@ -1,6 +1,6 @@
 # IKComponent
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 A component that allows you to procedurally animate a skeletal model using a full body inverse kinematics solver.
@@ -10,6 +10,7 @@ A component that allows you to procedurally animate a skeletal model using a ful
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -123,8 +124,6 @@ armEntity.components[IKComponent.self]!.solvers[0].constraints["end_constraint"]
   Reference to the resource describing the desired inverse kinematics setup.
 - [var solvers: IKComponent.SolverCollection](ikcomponent/solvers.md)
   The currently active solvers.
-### Default Implementations
-- [Component Implementations](ikcomponent/component-implementations.md)
 
 ## Relationships
 
@@ -149,10 +148,8 @@ armEntity.components[IKComponent.self]!.solvers[0].constraints["end_constraint"]
   A reference counted immutable resource which contains one or more inverse kinematics solver rigs.
 - [struct IKSolverDefinition](iksolverdefinition.md)
   A container describing a solver instance.
-- [IKSolverDefinition.ID](iksolverdefinition/id-swift.typealias.md)
-  A type representing the stable identity of the entity associated with an instance.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/ikcomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/ikcomponent)*

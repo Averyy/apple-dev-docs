@@ -33,6 +33,7 @@ Use one of the [`NavigationBarItem.TitleDisplayMode`](navigationbaritem/titledis
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

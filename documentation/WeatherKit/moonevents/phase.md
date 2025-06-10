@@ -1,6 +1,6 @@
 # phase
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The moon phase.

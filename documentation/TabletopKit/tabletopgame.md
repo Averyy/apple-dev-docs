@@ -66,7 +66,7 @@ If needed, you can draw a debug representation of selected items in the game usi
 game.debugDraw(options: [.drawTable, .drawSeats, .drawEquipment])
 ```
 
-Then, add actions to the equipment that controls gameplay using the [`addAction(_:)`](tabletopgame/addaction(_:).md) and [`addActions(_:)`](tabletopgame/addactions(_:).md) methods.
+Then, add actions to the equipment that controls gameplay using the `addAction(_:)` and [`addActions(_:)`](tabletopgame/addactions(_:).md) methods.
 
 Finally, pass an object to the [`addObserver(_:)`](tabletopgame/addobserver(_:).md) method that conforms to the [`TabletopGame.Observer`](tabletopgame/observer.md) protocol. Implement the `Observer` protocol methods to progress gameplay when players interact with the equipment.
 
@@ -90,7 +90,7 @@ Finally, pass an object to the [`addObserver(_:)`](tabletopgame/addobserver(_:).
 - [func equipment<E>(of: E.Type, matching: EquipmentIdentifier) -> E?](tabletopgame/equipment(of:matching:).md)
 ### Managing seats
 - [func claimAnySeat()](tabletopgame/claimanyseat.md)
-  Claims any free seat. If there are no free seats, it has no effect
+  Claims any free seat. Has no effect if the player is already seated or if there are no free seats.
 - [func claimSeat(some TableSeat)](tabletopgame/claimseat(_:).md)
   Claims the given seat. If provided Seat is not part of the table, it has no effect
 - [func claimSeat(matching: TableSeatIdentifier)](tabletopgame/claimseat(matching:).md)
@@ -101,7 +101,6 @@ Finally, pass an object to the [`addObserver(_:)`](tabletopgame/addobserver(_:).
 - [var localPlayer: Player](tabletopgame/localplayer.md)
   The player who runs this tabletop game instance on their device.
 ### Adding actions
-- [func addAction(some TabletopAction)](tabletopgame/addaction(_:).md)
 - [func addActions(some Sequence<any TabletopAction>)](tabletopgame/addactions(_:).md)
 ### Observing actions
 - [TabletopGame.Observer](tabletopgame/observer.md)
@@ -137,11 +136,20 @@ Finally, pass an object to the [`addObserver(_:)`](tabletopgame/addobserver(_:).
 ### Drawing debug representations
 - [func debugDraw(options: DebugDrawOptions)](tabletopgame/debugdraw(options:).md)
   Enable or disable debug visualizations
+### Instance Methods
+- [func addAction(some TabletopAction)](tabletopgame/addaction(_:)-10j8v.md)
+- [func addAction(some CustomAction)](tabletopgame/addaction(_:)-9zgsy.md)
+- [func cancelAllInteractions()](tabletopgame/cancelallinteractions.md)
+  Cancels all local and remote interactions. This releases control of all the equipment and rolls back all the actions added to the canceled interaction.
+- [func cancelInteraction(matching: TabletopInteraction.Identifier)](tabletopgame/cancelinteraction(matching:).md)
+  Cancel the local or remote interaction matching the given identifier. This causes any actions added to it to be rolled back, and releases the controlled equipment and any tossed equipment.
 
 ## See Also
 
 - [Creating tabletop games](tabletopkitsample.md)
   Develop a spatial board game where multiple players interact with pieces on a table.
+- [Synchronizing group gameplay with TabletopKit](synchronizing-group-gameplay-with-tabletopkit.md)
+  Maintain game state across multiple players in a race to capture all the coins.
 - [struct TableSetup](tablesetup.md)
   An object that represents the arrangement of seats, equipment, and counters around the game table.
 - [protocol Tabletop](tabletop.md)

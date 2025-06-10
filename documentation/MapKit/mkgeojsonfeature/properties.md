@@ -12,6 +12,7 @@ Optional serialized JSON data that corresponds to the properties key.
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 

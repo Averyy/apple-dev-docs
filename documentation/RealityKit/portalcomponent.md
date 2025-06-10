@@ -10,6 +10,7 @@ A component that turns mesh surfaces into portals to a different world.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -135,8 +136,6 @@ Different lighting environments light the portal crossing entities based on whic
   Specifies the mode of clipping for a portal.
 - [PortalComponent.CrossingMode](portalcomponent/crossingmode-swift.enum.md)
   Specifies the mode of crossing for a portal.
-### Default Implementations
-- [Component Implementations](portalcomponent/component-implementations.md)
 
 ## Relationships
 

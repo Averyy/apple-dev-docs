@@ -18,8 +18,6 @@ protocol IKSlideshowDataSource
 
 > ❗ **Important**:  Slide show data source methods may be called on secondary threads. When you implement these methods, you must ensure that they are safe to run on threads other than the main thread.
 
- Slide show data source methods may be called on secondary threads. When you implement these methods, you must ensure that they are safe to run on threads other than the main thread.
-
 ## Topics
 
 ### Providing Slideshow Information

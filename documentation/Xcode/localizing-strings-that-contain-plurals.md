@@ -8,8 +8,6 @@ Use a strings dictionary file to ensure correct localization of strings that con
 
 > ❗ **Important**: In Xcode 15 and later, string catalogs are the recommended way to localize strings that contain plurals. In earlier versions of Xcode, use strings and `stringsdict` files. For more information about string catalogs, see [`Localizing and varying text with a string catalog`](localizing-and-varying-text-with-a-string-catalog.md).
 
-In Xcode 15 and later, string catalogs are the recommended way to localize strings that contain plurals. In earlier versions of Xcode, use strings and `stringsdict` files. For more information about string catalogs, see [`Localizing and varying text with a string catalog`](localizing-and-varying-text-with-a-string-catalog.md).
-
 Languages have different grammatical rules for handling plurals of nouns and units. So if you localize formatted strings that contain variable amounts, use a `.stringsdict` file to provide a different translation for each plural form in the language.
 
 For example, if you pass the `%d home(s) found` formatted string to the [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) macro or similar API, such as the [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) structure, you can use the a `.stringsdict` file to return different versions of the string. In English, you can return `one home found` or `1 home found` when `d` is `1`, and `%d homes found` when `d` is greater than `1`. For other languages, the `.stringsdict` file can have more or fewer plural variants of a formatted string.

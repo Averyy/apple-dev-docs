@@ -1,6 +1,6 @@
 # Creating drivers for iPadOS
 
-**Framework**: Driverkit
+**Framework**: DriverKit
 
 Bring your drivers to iPadOS by using the platform’s DriverKit support.
 
@@ -63,4 +63,4 @@ To allow user clients to connect to your driver, you need specific entitlements,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DriverKit/creating-drivers-for-ipados)*
+*[View on Apple Developer](https://developer.apple.com/documentation/driverkit/creating-drivers-for-ipados)*

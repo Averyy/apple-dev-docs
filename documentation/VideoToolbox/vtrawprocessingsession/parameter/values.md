@@ -1,6 +1,6 @@
 # VTRAWProcessingSession.Parameter.Values
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: struct
 
 **Availability**:
@@ -27,6 +27,7 @@ struct Values<Value> where Value : Equatable, Value : Sendable
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

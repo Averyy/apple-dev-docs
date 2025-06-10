@@ -1,6 +1,6 @@
 # RecognizedItem.Bounds
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: struct
 
 An object that represents the four corners of a recognized item.
@@ -32,6 +32,7 @@ struct Bounds
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

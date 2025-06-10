@@ -1,6 +1,6 @@
 # WKVideoGravity.resize
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Content is resized to fit the entire bounds rectangle. This option does not preserve the original aspect ratio of the content.

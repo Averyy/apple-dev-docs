@@ -1,6 +1,6 @@
 # referencedElement
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The element that the coordinate is based on, either directly or through the coordinate from which it was derived.

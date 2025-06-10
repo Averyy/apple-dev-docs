@@ -1,6 +1,6 @@
 # PassFields.BackFields
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that represents the fields that display information on the back of a pass.
@@ -8,7 +8,7 @@ An object that represents the fields that display information on the back of a p
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
-- watchOS 2.0+
+- watchOS 1.0+
 
 ## Declaration
 

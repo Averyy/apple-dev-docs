@@ -1,6 +1,6 @@
 # tableView(_:isGroupRow:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Returns whether the specified row is a group row.

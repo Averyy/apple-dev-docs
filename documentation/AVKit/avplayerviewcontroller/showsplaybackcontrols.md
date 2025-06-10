@@ -21,13 +21,11 @@ var showsPlaybackControls: Bool { get set }
 
 #### Discussion
 
-Set this property to [`false`](https://developer.apple.com/documentation/swift/false) if you don’t want the system-provided playback controls visible over your content. Hiding the playback controls can be useful in situations where you need a non-interactive video presentation, such as a video splash screen.
+Set this property to `false` if you don’t want the system-provided playback controls visible over your content. Hiding the playback controls can be useful in situations where you need a non-interactive video presentation, such as a video splash screen.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is `true`.
 
 > ❗ **Important**:  Don’t use this property to change the visibility of the playback controls while the player view controller is onscreen. Doing so creates or destroys user interface elements.
-
- Don’t use this property to change the visibility of the playback controls while the player view controller is onscreen. Doing so creates or destroys user interface elements.
 
 ## See Also
 

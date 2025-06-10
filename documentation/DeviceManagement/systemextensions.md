@@ -7,8 +7,6 @@ The payload you use to configure system extensions.
 
 **Availability**:
 - macOS 10.15+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,17 +29,17 @@ Beginning in macOS 11.3, installing or removing this payload can change the stat
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | - |
-| Allow Manual Install | - |
-| Requires Supervision | - |
-| Requires User Approved MDM | macOS |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | macOS |
+| Device channel | macOS |
+| User channel | NA |
+| Allow manual install | NA |
+| Requires supervision | NA |
+| Requires user-approved MDM | macOS |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | macOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -79,7 +77,7 @@ Beginning in macOS 11.3, installing or removing this payload can change the stat
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object SystemExtensions.AllowedSystemExtensionTypes](systemextensions/allowedsystemextensiontypes-data.dictionary.md)
   A dictionary that maps team identifiers to system extensions.
 - [object SystemExtensions.AllowedSystemExtensions](systemextensions/allowedsystemextensions-data.dictionary.md)

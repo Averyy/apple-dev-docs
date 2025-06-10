@@ -1,6 +1,6 @@
 # command
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 The Command key in a combination keystroke.

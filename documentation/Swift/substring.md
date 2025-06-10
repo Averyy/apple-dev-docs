@@ -80,8 +80,6 @@ You can call this generic function with an instance of either `String` or `Subst
 
 > ❗ **Important**: Don’t store substrings longer than you need them to perform a specific operation. A substring holds a reference to the entire storage of the string it comes from, not just to the portion it presents, even when there is no other reference to the original string. Storing substrings may, therefore, prolong the lifetime of string data that is no longer otherwise accessible, which can appear to be memory leakage.
 
-Don’t store substrings longer than you need them to perform a specific operation. A substring holds a reference to the entire storage of the string it comes from, not just to the portion it presents, even when there is no other reference to the original string. Storing substrings may, therefore, prolong the lifetime of string data that is no longer otherwise accessible, which can appear to be memory leakage.
-
 ## Topics
 
 ### Operators
@@ -104,6 +102,7 @@ Don’t store substrings longer than you need them to perform a specific operati
   A custom playground Quick Look for this instance.
 - [var isContiguousUTF8: Bool](substring/iscontiguousutf8.md)
   Returns whether this string is capable of providing access to validly-encoded UTF-8 contents in contiguous memory in O(1) time.
+- [var utf8Span: UTF8Span](substring/utf8span.md)
 ### Instance Methods
 - [func filter((Substring.Element) throws -> Bool) rethrows -> String](substring/filter(_:).md)
 - [func makeContiguousUTF8()](substring/makecontiguousutf8.md)
@@ -118,6 +117,7 @@ Don’t store substrings longer than you need them to perform a specific operati
   A view of a string’s contents as a collection of characters.
 - [Substring.Output](substring/output.md)
 ### Default Implementations
+- [Attachable Implementations](substring/attachable-implementations.md)
 - [BidirectionalCollection Implementations](substring/bidirectionalcollection-implementations.md)
 - [Collection Implementations](substring/collection-implementations.md)
 - [Comparable Implementations](substring/comparable-implementations.md)
@@ -142,6 +142,7 @@ Don’t store substrings longer than you need them to perform a specific operati
 ## Relationships
 
 ### Conforms To
+- [Attachable](../Testing/Attachable.md)
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
 - [Comparable](comparable.md)
@@ -160,6 +161,7 @@ Don’t store substrings longer than you need them to perform a specific operati
 - [RangeReplaceableCollection](rangereplaceablecollection.md)
 - [RegexComponent](regexcomponent.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 - [StringProtocol](stringprotocol.md)
 - [TextOutputStream](textoutputstream.md)

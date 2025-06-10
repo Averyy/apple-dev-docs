@@ -1,6 +1,6 @@
 # AVC decoder configuration atom ('avcC')
 
-**Framework**: Quicktime File Format  
+**Framework**: QuickTime File Format  
 **Kind**: class
 
 A required extension to the video sample description for H.264 video.

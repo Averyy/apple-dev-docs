@@ -22,8 +22,6 @@ func hv_vmx_vcpu_set_shadow_access(_ vcpu: hv_vcpuid_t, _ field: UInt32, _ flags
 
 > ❗ **Important**:  This function must be called by the owning thread.
 
- This function must be called by the owning thread.
-
 ## Parameters
 
 - `vcpu`: The vCPU ID.

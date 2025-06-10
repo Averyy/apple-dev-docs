@@ -1,6 +1,6 @@
 # init(quantityType:quantitySamplePredicate:options:anchorDate:intervalComponents:)
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: init
 
 Initializes a statistics collection query to perform the specified calculations over a set of time intervals.

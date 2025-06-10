@@ -1,6 +1,6 @@
 # PassFields
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that represents the groups of fields that display information on the front and back of a pass.
@@ -8,7 +8,7 @@ An object that represents the groups of fields that display information on the f
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
-- watchOS 2.0+
+- watchOS 1.0+
 
 ## Declaration
 
@@ -32,7 +32,7 @@ object PassFields
   An object that represents the fields that display information on the back of a pass.
 ### Adding content to the Additional Info section
 - [object PassFields.AdditionalInfoFields](passfields/additionalinfofields-data.dictionary.md)
-  An object that represents fields that display in the Additional Info section below a pass
+  An object that represents fields that display in the Additional Info section below a pass.
 
 ## Relationships
 

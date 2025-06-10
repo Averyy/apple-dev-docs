@@ -8,7 +8,7 @@ Sets the spacing between adjacent sections in a `List`.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

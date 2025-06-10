@@ -22,17 +22,12 @@ Browse notable changes in [`RealityKit`](https://developer.apple.com/documentati
 - Manage the meshes on your blend shapes with [`BlendShapeWeightsComponent`](https://developer.apple.com/documentation/RealityKit/BlendShapeWeightsComponent).
 - Create more engaging sound effects by configuring rolloff and reverb with the [`SpatialAudioComponent`](https://developer.apple.com/documentation/RealityKit/SpatialAudioComponent).
 - Customize hover effects when using [`HoverEffectComponent`](https://developer.apple.com/documentation/RealityKit/HoverEffectComponent), such as spotlight styles, highlight styles, or shader-backed hover effects for additional control over hover behaviors.
-- Create an environment resource from a cube texture that has quality and compression options with doc://com.apple.documentation/documentation/realitykit/environmentresource/init(cube:options:)-5v70i, and access environment resources with [`skybox`](https://developer.apple.com/documentation/RealityKit/EnvironmentResource/skybox).
 
 ##### Models and Materials
 
 - Optimize material initialization with a [`CustomMaterial.Program`](https://developer.apple.com/documentation/RealityKit/CustomMaterial/Program-swift.class) to compile backing shaders.
-- Bring your two-dimensional vector content into 3D with doc://com.apple.documentation/documentation/realitykit/meshresource/init(extruding:extrusionoptions:)-3h21u.
-- Control the compression of loaded textures with [`compression`](https://developer.apple.com/documentation/RealityKit/TextureResource/CreateOptions/compression).
-- Create texture resources from doc://com.apple.documentation/documentation/realitykit/textureresource/cubemap(slices:named:options:)-7k9y6, [`texture2DArray(slices:named:options:)`](https://developer.apple.com/documentation/RealityKit/TextureResource/texture2DArray(slices:named:options:)-50g10) or [`texture3D(slices:named:options:)`](https://developer.apple.com/documentation/RealityKit/TextureResource/texture3D(slices:named:options:)-6pude).
 - Use [`init(from:)`](https://developer.apple.com/documentation/RealityKit/TextureResource/init(from:)-42r55) to efficiently update custom texture data in RealityKit, including custom pixel formats, texture types, swizzle, and texture usage.
 - Create cube texture resources with [`init(cubeFromEquirectangular:named:quality:faceSize:options:)`](https://developer.apple.com/documentation/RealityKit/TextureResource/init(cubeFromEquirectangular:named:quality:faceSize:options:)-bqd7) or [`init(cubeFromImage:named:options:)`](https://developer.apple.com/documentation/RealityKit/TextureResource/init(cubeFromImage:named:options:)-9dcus).
-- Create cube, 2D array, and 3D texture resources from data with doc://com.apple.documentation/documentation/realitykit/textureresource/init(dimensions:format:contents:)-28vgd, [`init(dimensions:format:contents:)`](https://developer.apple.com/documentation/RealityKit/TextureResource/init(dimensions:format:contents:)-324ls), or [`init(dimensions:format:contents:)`](https://developer.apple.com/documentation/RealityKit/TextureResource/init(dimensions:format:contents:)-64sua).
 - Access additional texture resource properties: [`arrayLength`](https://developer.apple.com/documentation/RealityKit/TextureResource/arrayLength), [`depth`](https://developer.apple.com/documentation/RealityKit/TextureResource/depth), [`pixelFormat`](https://developer.apple.com/documentation/RealityKit/TextureResource/pixelFormat), and [`textureType`](https://developer.apple.com/documentation/RealityKit/TextureResource/textureType).
 - Add a clearcoat to your custom materials with [`clearcoatNormal`](https://developer.apple.com/documentation/RealityKit/CustomMaterial/clearcoatNormal-swift.property).
 
@@ -57,12 +52,16 @@ Browse notable changes in [`RealityKit`](https://developer.apple.com/documentati
   Learn about important changes in ActivityKit.
 - [AdAttributionKit Updates](adattributionkit.md)
   Learn about important changes to AdAttributionKit.
+- [App Clips updates](appclips.md)
+  Learn about important changes in App Clips.
 - [App Intents updates](appintents.md)
   Learn about important changes in App Intents.
 - [AppKit updates](appkit.md)
   Learn about important changes to AppKit.
 - [Apple Intelligence updates](apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
+- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+  Learn about important changes to AppleMapsServerAPI.
 - [Apple Pencil updates](applepencil.md)
   Learn about important changes to Apple Pencil.
 - [ARKit updates](arkit.md)
@@ -75,10 +74,6 @@ Browse notable changes in [`RealityKit`](https://developer.apple.com/documentati
   Learn about important changes to AVFAudio.
 - [AVFoundation updates](avfoundation.md)
   Learn about important changes to AVFoundation.
-- [Bundle Resources updates](bundleresources.md)
-  Learn about important changes to Bundle Resources.
-- [ContactsUI updates](contactsui.md)
-  Learn about important changes to ContactsUI.
 
 
 ---

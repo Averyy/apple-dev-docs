@@ -1,6 +1,6 @@
 # Get Transaction History
 
-**Framework**: Appstoreserverapi  
+**Framework**: App Store Server API  
 **Kind**: httpRequest
 
 Get a customer’s in-app purchase transaction history for your app.
@@ -53,4 +53,4 @@ GET https://api.storekit.itunes.apple.com/inApps/v2/history/{transactionId}?revi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreServerAPI/get-transaction-history)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreserverapi/get-transaction-history)*

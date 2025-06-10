@@ -17,7 +17,8 @@ A type that applies custom appearance to all tips within a view hierarchy.
 ## Declaration
 
 ```swift
-protocol TipViewStyle
+@MainActor
+@preconcurrency protocol TipViewStyle
 ```
 
 #### Overview
@@ -110,7 +111,7 @@ addSubview(addWorkoutTipView)
 
 ## See Also
 
-- [@MainActor @preconcurrency func tipViewStyle(_ style: some TipViewStyle) -> some View
+- [nonisolated func tipViewStyle(_ style: some TipViewStyle) -> some View
 ](../SwiftUI/View/tipViewStyle(_:).md)
   Sets the given style for TipView within the view hierarchy.
 - [struct TipViewStyleConfiguration](tipviewstyleconfiguration.md)

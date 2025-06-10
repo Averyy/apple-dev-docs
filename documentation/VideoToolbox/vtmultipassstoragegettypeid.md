@@ -1,6 +1,6 @@
 # VTMultiPassStorageGetTypeID()
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Retrieves the Core Foundation type identifier for the multipass storage object.

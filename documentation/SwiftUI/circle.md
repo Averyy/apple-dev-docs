@@ -24,6 +24,7 @@ struct Circle
 ## Mentions
 
 - [Laying out a simple view](laying-out-a-simple-view.md)
+- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
 
 #### Overview
 
@@ -44,6 +45,7 @@ The circle’s radius equals half the length of the frame rectangle’s smallest
 - [Copyable](../Swift/Copyable.md)
 - [InsettableShape](insettableshape.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Shape](shape.md)
 - [View](view.md)
 

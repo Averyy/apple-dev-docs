@@ -34,8 +34,6 @@ override init() {
 
 > ❗ **Important**:  You must register all elements before initializing the [`TVApplicationController`](tvapplicationcontroller.md) object.
 
- You must register all elements before initializing the [`TVApplicationController`](tvapplicationcontroller.md) object.
-
 ##### Customize Your New Element
 
 After registering the new element name, you need to customize the element. Implement the [`makeView(element:existingView:)`](tvinterfacecreating/makeview(element:existingview:).md) function in your custom class. The system automatically calls the [`makeView(element:existingView:)`](tvinterfacecreating/makeview(element:existingview:).md) function for every element in your TVML document. Check for the new element’s name and add the customization code. If the current element is not your new element, you must return `nil`.

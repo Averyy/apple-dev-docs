@@ -1,6 +1,6 @@
 # compactMap(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Returns an array containing the non-`nil` results of calling the given transformation with each element of this sequence.

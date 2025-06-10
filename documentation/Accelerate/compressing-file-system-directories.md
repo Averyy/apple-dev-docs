@@ -87,7 +87,7 @@ do {
 }
 ```
 
-On return, `directory.aar` exists in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/foundation/1409211-nstemporarydirectory) and contains the compressed contents of `src/`.
+On return, `directory.aar` exists in [`NSTemporaryDirectory()`](https://developer.apple.com/documentation/Foundation/NSTemporaryDirectory()) and contains the compressed contents of `src/`.
 
 ## See Also
 

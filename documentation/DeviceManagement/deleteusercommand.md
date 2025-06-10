@@ -9,8 +9,6 @@ The command to delete a user’s account from a device.
 - iOS 9.3+
 - iPadOS 9.3+
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,14 +22,14 @@ object DeleteUserCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object DeleteUserCommand.Command](deleteusercommand/command-data.dictionary.md)
-  The request dictionary to delete a user’s account from a device.
+  The command to delete a user’s account from a device.
 
 ## See Also
 
 - [object DeleteUserResponse](deleteuserresponse.md)
-  A response from the device after it processes the command to delete a user’s account.
+  A response from the device after it processes the command to delete a user’s account from a device.
 
 
 ---

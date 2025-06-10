@@ -1,6 +1,6 @@
 # isEmpty
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: property
 
 A Boolean value indicating whether the collection is empty.

@@ -17,6 +17,7 @@ The font used for the text in the label.
 ## Declaration
 
 ```swift
+@MainActor
 var fontName: String? { get set }
 ```
 

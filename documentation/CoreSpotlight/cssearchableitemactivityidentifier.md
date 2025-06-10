@@ -20,7 +20,7 @@ let CSSearchableItemActivityIdentifier: String
 
 #### Discussion
 
-Use this key to access the unique identifier for the searchable item from the [`userInfo`](https://developer.apple.com/documentation/foundation/nsuseractivity/1411706-userinfo) dictionary of a [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object.
+Use this key to access the unique identifier for the searchable item from the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSUserActivity/userInfo) dictionary of a [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object.
 
 ## See Also
 

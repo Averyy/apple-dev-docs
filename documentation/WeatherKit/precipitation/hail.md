@@ -1,6 +1,6 @@
 # Precipitation.hail
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 A form of precipitation consisting of solid ice.

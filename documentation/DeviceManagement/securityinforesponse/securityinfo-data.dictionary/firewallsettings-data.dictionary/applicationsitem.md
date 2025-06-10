@@ -6,24 +6,13 @@
 A dictionary that describes the allowed apps.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.1+
-- watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- macOS 10.12+
 
 ## Declaration
 
 ```swift
 object SecurityInfoResponse.SecurityInfo.FirewallSettings.ApplicationsItem
 ```
-
-#### Discussion
-
-This dictionary is available in macOS 10.12 and later.
 
 
 ---

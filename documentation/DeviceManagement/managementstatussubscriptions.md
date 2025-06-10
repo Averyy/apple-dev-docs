@@ -12,8 +12,6 @@ The declaration to configure status subscriptions.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,6 +21,7 @@ object ManagementStatusSubscriptions
 
 ## Mentions
 
+- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
 - [Leveraging the declarative management data model to scale devices](leveraging-the-declarative-management-data-model-to-scale-devices.md)
 
 #### Discussion
@@ -31,16 +30,18 @@ Specify `com.apple.configuration.management.status-subscriptions` as the declara
 
 ##### Configuration Availability
 
-| Allowed in Device Enrollment | iOS, macOS, tvOS, watchOS |
+|  |  |
 | --- | --- |
-| Allowed in User Enrollment | iOS, macOS |
-| Allowed in Local Enrollment | iOS, macOS, tvOS, watchOS |
-| Allowed in System Scope | iOS, macOS, Shared iPad, tvOS, watchOS |
-| Allowed in User Scope | macOS, Shared iPad |
+| Allowed in supervised enrollment | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| Allowed in device enrollment | iOS, Shared iPad, tvOS, visionOS |
+| Allowed in user enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in local enrollment | NA |
+| Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| Allowed in user scope | macOS, Shared iPad |
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object ManagementStatusSubscriptionsStatusItemObject](managementstatussubscriptionsstatusitemobject.md)
   The declaration for configuring a specific status subscription.
 
@@ -62,6 +63,8 @@ Specify `com.apple.configuration.management.status-subscriptions` as the declara
   The declaration to configure a Calendar subscription.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AudioAccessorySettings](audioaccessorysettings.md)
+  The declaration to configure audio accessory settings.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
@@ -72,10 +75,8 @@ Specify `com.apple.configuration.management.status-subscriptions` as the declara
   The declaration to test the MDM system.
 - [object MathSettings](mathsettings.md)
   The declaration to configure the math and calculator apps.
-- [object PasscodeSettings](passcodesettings.md)
-  The declaration to configure passcode policy settings.
-- [object SafariExtensionSettings](safariextensionsettings.md)
-  The declaration to configure Safari Extensions.
+- [object Package](package.md)
+  The declaration to install a package.
 
 
 ---

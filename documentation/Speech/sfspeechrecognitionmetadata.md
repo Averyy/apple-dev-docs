@@ -20,7 +20,7 @@ class SFSpeechRecognitionMetadata
 
 ## Topics
 
-### Getting the Audio Timing Information
+### Getting audio timing information
 - [var averagePauseDuration: TimeInterval](sfspeechrecognitionmetadata/averagepauseduration.md)
   The average pause duration between words, measured in seconds.
 - [var speakingRate: Double](sfspeechrecognitionmetadata/speakingrate.md)
@@ -29,7 +29,7 @@ class SFSpeechRecognitionMetadata
   The duration in seconds of speech in the audio.
 - [var speechStartTimestamp: TimeInterval](sfspeechrecognitionmetadata/speechstarttimestamp.md)
   The start timestamp of speech in the audio.
-### Analyzing Voice
+### Analyzing voice
 - [var voiceAnalytics: SFVoiceAnalytics?](sfspeechrecognitionmetadata/voiceanalytics.md)
   An analysis of the transcription segment’s vocal properties.
 

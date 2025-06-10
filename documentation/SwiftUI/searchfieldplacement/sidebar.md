@@ -15,7 +15,7 @@ The search field appears in the sidebar of a navigation view.
 ## Declaration
 
 ```swift
-static let sidebar: SearchFieldPlacement
+static var sidebar: SearchFieldPlacement { get }
 ```
 
 ## Mentions
@@ -27,9 +27,11 @@ static let sidebar: SearchFieldPlacement
 The precise placement depends on the platform:
 
 - In iOS and iPadOS the search field appears in the section of the navigation bar associated with the sidebar.
-- In macOS, the search field appears inline with the sidebar’s content.
+- In macOS the search field appears as a sticky header in the sidebar, attached to the toolbar.
 
 If a sidebar isn’t available, like when you apply the searchable modifier to a view other than a navigation split view, SwiftUI uses automatic placement instead.
+
+> **Note**: The search field appears inline with the sidebar’s content when building with the Xcode 16 SDKs or earlier.
 
 ## See Also
 

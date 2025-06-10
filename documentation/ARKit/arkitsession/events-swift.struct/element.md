@@ -6,6 +6,7 @@
 A type representing a sequence’s elements.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

@@ -347,6 +347,7 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
 - [Hashable](hashable.md)
 - [MLDataValueConvertible](../CreateML/MLDataValueConvertible.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 
 ## See Also

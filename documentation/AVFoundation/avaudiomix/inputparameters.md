@@ -1,6 +1,6 @@
 # inputParameters
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 An array of input parameters for the mix.

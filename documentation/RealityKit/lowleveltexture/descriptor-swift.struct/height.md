@@ -10,6 +10,7 @@ The height of the texture image for the base level mipmap, in pixels.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

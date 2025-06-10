@@ -20,7 +20,7 @@ var endTime: CMTime { get }
 
 #### Discussion
 
-The value is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid) while the effect is in progress, but changes to a valid time when the reaction effect completes and the system removes it from the list of [`reactionEffectsInProgress`](avcapturedevice/reactioneffectsinprogress.md).
+The value is [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid) while the effect is in progress, but changes to a valid time when the reaction effect completes and the system removes it from the list of [`reactionEffectsInProgress`](avcapturedevice/reactioneffectsinprogress.md).
 
 ## See Also
 

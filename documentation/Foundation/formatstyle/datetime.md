@@ -50,8 +50,6 @@ let formatted = meetingDate.formatted(.dateTime) // "7/31/2023, 5:15 PM"
 
 - [struct FormatStyle](date/formatstyle.md)
   A structure that creates a locale-appropriate string representation of a date instance and converts strings of dates and times into date instances.
-- [static var iso8601: Date.ISO8601FormatStyle](formatstyle/iso8601.md)
-  A style for formatting a date in accordance with the ISO-8601 standard.
 - [struct ISO8601FormatStyle](date/iso8601formatstyle.md)
   A type that converts between dates and their ISO-8601 string representations.
 - [static func verbatim(Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar) -> Date.VerbatimFormatStyle](formatstyle/verbatim(_:locale:timezone:calendar:).md)

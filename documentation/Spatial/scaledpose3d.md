@@ -90,6 +90,9 @@ struct ScaledPose3D
   Returns the concatenation of a pose and a scaled pose.
 - [static func *= (inout ScaledPose3D, ScaledPose3D)](scaledpose3d/*=(_:_:).md)
   Concatenates two scaled poses and stores the result in the left-hand-side variable.
+### Initializers
+- [init(ScaledPose3DFloat)](scaledpose3d/init(_:)-3fa9n.md)
+  Returns a double-precision scaled pose from a single-precision scaled pose.
 ### Default Implementations
 - [CustomReflectable Implementations](scaledpose3d/customreflectable-implementations.md)
 - [Decodable Implementations](scaledpose3d/decodable-implementations.md)
@@ -109,27 +112,45 @@ struct ScaledPose3D
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Rotatable3D](rotatable3d.md)
+- [Rotatable3DProtocol](rotatable3dprotocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+- [SpatialTypeProtocol](spatialtypeprotocol.md)
 - [Translatable3D](translatable3d.md)
+- [Translatable3DProtocol](translatable3dprotocol.md)
 
 ## See Also
 
 - [struct Point3D](point3d.md)
   A point in a 3D coordinate system.
+- [struct Point3DFloat](point3dfloat.md)
+  A single-precision structure that contains a point in a three-dimensional coordinate system.
 - [struct Size3D](size3d.md)
   A size that describes width, height, and depth in a 3D coordinate system.
+- [struct Size3DFloat](size3dfloat.md)
+  A single-precision structure that contains width, height, and depth values.
 - [struct Rect3D](rect3d.md)
   A rectangle in a 3D coordinate system.
+- [struct Rect3DFloat](rect3dfloat.md)
+  A single-precision structure that contains the location and dimensions of a 3D rectangle.
 - [struct Rotation3D](rotation3d.md)
   A rotation in three dimensions.
+- [struct Rotation3DFloat](rotation3dfloat.md)
+  A single-precision structure that represents a rotation in three dimensions.
 - [struct RotationAxis3D](rotationaxis3d.md)
   A 3D rotation axis.
+- [struct RotationAxis3DFloat](rotationaxis3dfloat.md)
+  A 3D axis.
 - [struct Pose3D](pose3d.md)
   A structure that contains a 3D position and a 3D rotation.
+- [struct Pose3DFloat](pose3dfloat.md)
+  A single-precision structure that contains a position and rotation.
+- [struct ScaledPose3DFloat](scaledpose3dfloat.md)
+  A structure that contains a position, rotation, and scale.
 - [struct SphericalCoordinates3D](sphericalcoordinates3d.md)
   A structure that defines spherical coordinates in radial, inclination, azimuthal order.
-- [struct Ray3D](ray3d.md)
-  A ray in a 3D coordinate system.
+- [struct SphericalCoordinates3DFloat](sphericalcoordinates3dfloat.md)
+  A single-precision structure that defines spherical coordinates in radial, inclination, azimuthal order.
 
 
 ---

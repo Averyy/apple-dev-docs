@@ -103,6 +103,9 @@ Each result contains the original [`VisionRequest`](visionrequest.md), along wit
 ### Getting the error result
 - [case error(any VisionRequest, any Error)](visionresult/error(_:_:).md)
   A result from encountering a framework error.
+### Enumeration Cases
+- [case detectLensSmudge(DetectLensSmudgeRequest, SmudgeObservation)](visionresult/detectlenssmudge(_:_:).md)
+- [case recognizeDocuments(RecognizeDocumentsRequest, [DocumentObservation])](visionresult/recognizedocuments(_:_:).md)
 
 ## Relationships
 
@@ -111,6 +114,7 @@ Each result contains the original [`VisionRequest`](visionrequest.md), along wit
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

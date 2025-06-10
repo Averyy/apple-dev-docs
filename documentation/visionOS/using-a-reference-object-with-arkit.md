@@ -1,6 +1,6 @@
 # Using a reference object with ARKit
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Import a reference object file and track a real-world object in your visionOS app.
 
@@ -135,4 +135,4 @@ do {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/using-a-reference-object-with-arkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/using-a-reference-object-with-arkit)*

@@ -1,6 +1,6 @@
 # DOM_NAMESPACE_ERR
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

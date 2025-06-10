@@ -1,6 +1,6 @@
 # matchBidirectionally
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates that two patterns should be checked in either direction while matching.

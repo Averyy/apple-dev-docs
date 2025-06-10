@@ -1,6 +1,6 @@
 # visualLookUp
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 An option that presents a button for more information on any subjects the framework recognizes in the image.

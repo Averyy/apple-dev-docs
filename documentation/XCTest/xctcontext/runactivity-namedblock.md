@@ -1,6 +1,6 @@
 # runActivity(named:block:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Creates and runs an activity with the provided block of code.

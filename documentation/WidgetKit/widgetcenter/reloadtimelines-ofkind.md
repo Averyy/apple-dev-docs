@@ -1,6 +1,6 @@
 # reloadTimelines(ofKind:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: method
 
 Reloads the timelines for all widgets of a particular kind.
@@ -8,8 +8,9 @@ Reloads the timelines for all widgets of a particular kind.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration

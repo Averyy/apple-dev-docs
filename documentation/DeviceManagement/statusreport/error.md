@@ -3,8 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report’s error that contains the status item and the reasons for the error.
-
 **Availability**:
 - Device Assignment Services ?+
 - VPP License Management ?+
@@ -14,11 +12,6 @@ A status report’s error that contains the status item and the reasons for the 
 ```swift
 object StatusReport.Error
 ```
-
-## See Also
-
-- [object StatusReport.StatusItems](statusreport/statusitems-data.dictionary.md)
-  The status items for a report.
 
 
 ---

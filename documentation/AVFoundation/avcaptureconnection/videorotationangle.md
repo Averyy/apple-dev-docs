@@ -1,6 +1,6 @@
 # videoRotationAngle
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A rotation angle the connection applies to a video flowing through it.

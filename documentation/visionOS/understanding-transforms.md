@@ -1,6 +1,6 @@
 # Using transforms to move, scale, and rotate entities
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Learn how to use Transforms to move, scale, and rotate entities in RealityKit.
 
@@ -238,6 +238,8 @@ The order of these transforms is `translation` followed by `rotation` then `scal
 
 ## See Also
 
+- [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
+  Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)
@@ -264,4 +266,4 @@ The order of these transforms is `translation` followed by `rotation` then `scal
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/understanding-transforms)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/understanding-transforms)*

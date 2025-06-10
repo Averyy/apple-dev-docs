@@ -26,8 +26,6 @@ Fences maintain order to prevent GPU data hazards as the GPU runs various passes
 
 > ❗ **Important**:  For a blit pass that updates and waits for the same fence, you can only call [`waitForFence(_:)`](mtlblitcommandencoder/waitforfence(_:).md) before you call [`updateFence(_:)`](mtlblitcommandencoder/updatefence(_:).md). Updating a fence before waiting on it within the same encoder can cause GPU deadlock.
 
- For a blit pass that updates and waits for the same fence, you can only call [`waitForFence(_:)`](mtlblitcommandencoder/waitforfence(_:).md) before you call [`updateFence(_:)`](mtlblitcommandencoder/updatefence(_:).md). Updating a fence before waiting on it within the same encoder can cause GPU deadlock.
-
 The GPU driver evaluates the pass’s fences and the commands that depend on them when your app commits the enclosing [`MTLCommandBuffer`](mtlcommandbuffer.md).
 
 ## Parameters

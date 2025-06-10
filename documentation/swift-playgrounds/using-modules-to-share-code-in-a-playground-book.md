@@ -25,8 +25,6 @@ Module names must be valid Swift identifiers, so the `.playgroundmodule` directo
 
 > ❗ **Important**: If you’re writing a book that targets a version of the Swift Playgrounds book format earlier than 6.0, modules are unavailable. Instead, add code in a directory named Sources that’s adjacent to the PublicResources or PrivateResources directory in a book, chapter, or page.
 
-If you’re writing a book that targets a version of the Swift Playgrounds book format earlier than 6.0, modules are unavailable. Instead, add code in a directory named Sources that’s adjacent to the PublicResources or PrivateResources directory in a book, chapter, or page.
-
 ## See Also
 
 - [Adding a Chapter to a Playground Book](adding-a-chapter-to-a-playground-book.md)

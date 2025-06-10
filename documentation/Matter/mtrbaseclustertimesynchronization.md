@@ -48,15 +48,15 @@ Accurate time is required for a number of reasons, including scheduling, display
 - [func readAttributeTimeZoneListMaxSize(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustertimesynchronization/readattributetimezonelistmaxsize(completion:).md)
 - [func readAttributeTrustedTimeSource(completion: (MTRTimeSynchronizationClusterTrustedTimeSourceStruct?, (any Error)?) -> Void)](mtrbaseclustertimesynchronization/readattributetrustedtimesource(completion:).md)
 - [func readAttributeUTCTime(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustertimesynchronization/readattributeutctime(completion:).md)
-- [func setDSTOffsetWith(MTRTimeSynchronizationClusterSetDSTOffsetParams, completion: MTRStatusCompletion)](mtrbaseclustertimesynchronization/setdstoffsetwith(_:completion:).md)
+- [func setDSTOffsetWith(MTRTimeSynchronizationClusterSetDSTOffsetParams, completion: ((any Error)?) -> Void)](mtrbaseclustertimesynchronization/setdstoffsetwith(_:completion:).md)
   Command SetDSTOffset
-- [func setDefaultNTPWith(MTRTimeSynchronizationClusterSetDefaultNTPParams, completion: MTRStatusCompletion)](mtrbaseclustertimesynchronization/setdefaultntpwith(_:completion:).md)
+- [func setDefaultNTPWith(MTRTimeSynchronizationClusterSetDefaultNTPParams, completion: ((any Error)?) -> Void)](mtrbaseclustertimesynchronization/setdefaultntpwith(_:completion:).md)
   Command SetDefaultNTP
 - [func setTimeZoneWith(MTRTimeSynchronizationClusterSetTimeZoneParams, completion: (MTRTimeSynchronizationClusterSetTimeZoneResponseParams?, (any Error)?) -> Void)](mtrbaseclustertimesynchronization/settimezonewith(_:completion:).md)
   Command SetTimeZone
-- [func setTrustedTimeSourceWith(MTRTimeSynchronizationClusterSetTrustedTimeSourceParams, completion: MTRStatusCompletion)](mtrbaseclustertimesynchronization/settrustedtimesourcewith(_:completion:).md)
+- [func setTrustedTimeSourceWith(MTRTimeSynchronizationClusterSetTrustedTimeSourceParams, completion: ((any Error)?) -> Void)](mtrbaseclustertimesynchronization/settrustedtimesourcewith(_:completion:).md)
   Command SetTrustedTimeSource
-- [func setUTCTimeWith(MTRTimeSynchronizationClusterSetUTCTimeParams, completion: MTRStatusCompletion)](mtrbaseclustertimesynchronization/setutctimewith(_:completion:).md)
+- [func setUTCTimeWith(MTRTimeSynchronizationClusterSetUTCTimeParams, completion: ((any Error)?) -> Void)](mtrbaseclustertimesynchronization/setutctimewith(_:completion:).md)
   Command SetUTCTime
 - [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustertimesynchronization/subscribeattributeacceptedcommandlist(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustertimesynchronization/subscribeattributeattributelist(with:subscriptionestablished:reporthandler:).md)

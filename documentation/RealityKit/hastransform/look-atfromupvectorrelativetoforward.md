@@ -1,6 +1,6 @@
 # look(at:from:upVector:relativeTo:forward:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: method
 
 Positions and orients the entity such that it looks at certain target from a give position.
@@ -10,6 +10,7 @@ Positions and orients the entity such that it looks at certain target from a giv
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

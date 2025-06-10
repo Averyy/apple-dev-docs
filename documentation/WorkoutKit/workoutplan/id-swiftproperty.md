@@ -1,6 +1,6 @@
 # id
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: property
 
 A unique identity for the workout plan.

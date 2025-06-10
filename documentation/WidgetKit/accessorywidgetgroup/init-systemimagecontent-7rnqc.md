@@ -1,6 +1,6 @@
 # init(_:systemImage:content:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: init
 
 Creates an `AccessoryWidgetGroup` that generates its label from a string and system image name.

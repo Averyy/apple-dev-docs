@@ -1,6 +1,6 @@
 # firstIndex(of:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns the first index where the specified value appears in the collection.

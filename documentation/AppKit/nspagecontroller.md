@@ -1,6 +1,6 @@
 # NSPageController
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: class
 
 An object that controls swipe navigation and animations between views or view content.
@@ -146,8 +146,9 @@ During page controller initiated animations, [`pageControllerWillStartLiveTransi
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nspagecontroller)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nspagecontroller)*

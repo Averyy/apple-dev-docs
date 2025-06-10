@@ -1,6 +1,6 @@
 # WKAccessibilityIsVoiceOverRunning()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: func
 
 Returns a Boolean value indicating whether VoiceOver is running.

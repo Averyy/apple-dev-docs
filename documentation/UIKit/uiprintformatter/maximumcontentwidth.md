@@ -14,7 +14,6 @@ The maximum width of the content area.
 ## Declaration
 
 ```swift
-@MainActor
 var maximumContentWidth: CGFloat { get set }
 ```
 

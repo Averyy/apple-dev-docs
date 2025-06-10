@@ -8,8 +8,8 @@ The name of the app that manages this credential, or “iCloud Keychain” if it
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 16.4+
-- macOS 13.3+
+- Mac Catalyst 17.0+
+- macOS 14.0+
 
 ## Declaration
 

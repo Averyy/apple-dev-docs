@@ -1,6 +1,6 @@
 # path
 
-**Framework**: Modelio  
+**Framework**: Model I/O  
 **Kind**: property
 
 A path that identifies the object in an asset’s object hierarchy using object names.
@@ -43,4 +43,4 @@ For example, a mesh in an asset modeling a dining room scene might have the path
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ModelIO/mdlobject/path)*
+*[View on Apple Developer](https://developer.apple.com/documentation/modelio/mdlobject/path)*

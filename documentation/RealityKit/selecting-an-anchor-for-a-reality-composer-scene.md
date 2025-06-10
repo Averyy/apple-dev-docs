@@ -1,6 +1,6 @@
 # Selecting an anchor for a Reality Composer scene
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Decide which anchor is right for your scenes.
 
@@ -71,4 +71,4 @@ When you select a new anchor, none of your scene’s content changes, but the gu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/selecting-an-anchor-for-a-reality-composer-scene)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/selecting-an-anchor-for-a-reality-composer-scene)*

@@ -1,0 +1,18 @@
+# kIOPMUndefinedValue
+
+**Framework**: Kernel  
+**Kind**: econst
+
+**Availability**:
+- macOS 10.12+
+
+## Declaration
+
+```swift
+kIOPMUndefinedValue = 0
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/1645013-anonymous/kiopmundefinedvalue)*

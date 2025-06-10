@@ -1,6 +1,6 @@
 # image
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 An image of the subjects with the background removed.

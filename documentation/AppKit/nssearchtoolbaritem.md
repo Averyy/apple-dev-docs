@@ -49,6 +49,7 @@ class NSSearchToolbarItem
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSValidatedUserInterfaceItem](nsvalidateduserinterfaceitem.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

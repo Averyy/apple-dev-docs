@@ -1,6 +1,6 @@
 # DOM_DELTA_LINE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

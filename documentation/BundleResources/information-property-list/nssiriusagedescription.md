@@ -14,8 +14,6 @@ A message that tells the user why the app is requesting to send user data to Sir
 
 > ❗ **Important**:  This key is required if your app uses APIs that send user data to Siri.
 
- This key is required if your app uses APIs that send user data to Siri.
-
 ## See Also
 
 - [Requesting Authorization to Use Siri](../SiriKit/requesting-authorization-to-use-siri.md)

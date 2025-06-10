@@ -28,8 +28,6 @@ If you want to set attribute values in an implementation of this method, you sho
 
 > ❗ **Important**:  Subclasses must invoke super’s implementation before performing their own initialization.
 
- Subclasses must invoke super’s implementation before performing their own initialization.
-
 ##### Special Considerations
 
 If you create a managed object then perform undo operations to bring the managed object context to a state prior to the object’s creation, then perform redo operations to bring the managed object context back to a state after the object’s creation, [`awakeFromInsert()`](nsmanagedobject/awakefrominsert().md) is  invoked a second time.

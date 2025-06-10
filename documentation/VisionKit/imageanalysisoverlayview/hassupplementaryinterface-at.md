@@ -1,6 +1,6 @@
 # hasSupplementaryInterface(at:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Returns a Boolean value that indicates whether supplementary interface objects exist at the specified point.

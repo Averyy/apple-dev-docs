@@ -1,6 +1,6 @@
 # UITextField
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An object that displays an editable text area in your interface.
@@ -23,8 +23,8 @@ class UITextField
 
 - [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
 - [Adding user-focusable elements to a tvOS app](adding-user-focusable-elements-to-a-tvos-app.md)
-- [Customizing Writing Tools behavior for UIKit views](customizing-writing-tools-behavior-for-system-views.md)
 - [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
+- [Customizing Writing Tools behavior for UIKit views](customizing-writing-tools-behavior-for-system-views.md)
 
 #### Overview
 
@@ -76,7 +76,7 @@ Because the system manages the showing and hiding of the keyboard in response to
 - [`keyboardWillChangeFrameNotification`](uiresponder/keyboardwillchangeframenotification.md)
 - [`keyboardDidChangeFrameNotification`](uiresponder/keyboarddidchangeframenotification.md)
 
-Each notification contains a [`userInfo`](https://developer.apple.com/documentation/foundation/nsnotification/1409222-userinfo) dictionary that includes the size of the keyboard. Because the keyboard can hide portions of your interface, you should use the size information to reposition your content on the screen. For content embedded in a scroll view, you can scroll the text field into view, as illustrated in the following image. In other cases, you can resize your main content view so that it isn’t covered by the keyboard.
+Each notification contains a [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) dictionary that includes the size of the keyboard. Because the keyboard can hide portions of your interface, you should use the size information to reposition your content on the screen. For content embedded in a scroll view, you can scroll the text field into view, as illustrated in the following image. In other cases, you can resize your main content view so that it isn’t covered by the keyboard.
 
 ![A screenshot that demonstrates adjusting the position of a text field when the keyboard appears.](https://docs-assets.developer.apple.com/published/e17a65caa37c61e4c058c2cb6c175039/media-1965762%402x.png)
 
@@ -255,6 +255,10 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   The custom accessory view to display when the text field becomes the first responder.
 ### Supporting state restoration
 - [var interactionState: Any](uitextfield/interactionstate.md)
+### Structures
+- [UITextField.TextDidBeginEditingMessage](uitextfield/textdidbegineditingmessage.md)
+- [UITextField.TextDidChangeMessage](uitextfield/textdidchangemessage.md)
+- [UITextField.TextDidEndEditingMessage](uitextfield/textdidendeditingmessage.md)
 
 ## Relationships
 
@@ -274,6 +278,7 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)
@@ -312,4 +317,4 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uitextfield)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uitextfield)*

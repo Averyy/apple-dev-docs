@@ -12,15 +12,11 @@ Most projects that contain or depend on Swift packages don’t require additiona
 
 > ❗ **Important**: While you can build a standalone Swift package locally with Xcode, Xcode Cloud requires the package to be part of a project or workspace. To learn about building Swift packages with Xcode Cloud, see [`Building Swift packages and Swift Playgrounds app projects with Xcode Cloud`](building-swift-packages-or-swift-playground-app-projects-with-xcode-cloud.md).
 
-While you can build a standalone Swift package locally with Xcode, Xcode Cloud requires the package to be part of a project or workspace. To learn about building Swift packages with Xcode Cloud, see [`Building Swift packages and Swift Playgrounds app projects with Xcode Cloud`](building-swift-packages-or-swift-playground-app-projects-with-xcode-cloud.md).
-
 ##### Use the Expected Version of a Package Dependency
 
 To ensure the CI workflow’s reliability, make sure it uses the appropriate version of package dependencies. Xcode stores the exact version of each package dependency in a file called `Package.resolved`. The file automatically updates when package requirements in your Xcode project or in the `Package.swift` manifest file change. Commit this file to your Git repository to ensure it’s always up-to-date on the CI environment to prevent the CI from building your project with unexpected versions of package dependencies.
 
 > 💡 **Tip**: You can find the `Package.resolved` file inside your `.xcodeproj` directory at `.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved`.
-
-You can find the `Package.resolved` file inside your `.xcodeproj` directory at `.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved`.
 
 If your CI pipeline uses the `xcodebuild` command directly, also pass the `-disableAutomaticPackageResolution` flag. This flag ensures that the CI pipeline always uses the package dependencies as defined in the `Package.resolved` file.
 

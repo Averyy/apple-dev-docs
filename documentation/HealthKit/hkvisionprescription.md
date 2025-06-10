@@ -25,8 +25,6 @@ Use this class to create an image-only prescription. Here, you attach the prescr
 
 > ❗ **Important**:  Some regions may require an image of the original prescription to validate the prescription record.
 
- Some regions may require an image of the original prescription to validate the prescription record.
-
 To create an image-only prescription, start by creating an [`HKVisionPrescription`](hkvisionprescription.md) sample object.
 
 ```swift
@@ -103,6 +101,7 @@ For more information about adding images or pdfs as attachments, see [`HKAttachm
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # groupLevel
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: property
 
 The rank of the subscription relative to other subscriptions in the same subscription group.

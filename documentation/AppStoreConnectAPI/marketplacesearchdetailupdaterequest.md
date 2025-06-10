@@ -27,6 +27,7 @@ object MarketplaceSearchDetailUpdateRequest
   The request body you use to create an alternative marketplace search detail.
 - [object MarketplaceSearchDetailResponse](marketplacesearchdetailresponse.md)
   A response that contains a single alternative marketplace search detail resource.
+- [object AppMarketplaceSearchDetailLinkageResponse](appmarketplacesearchdetaillinkageresponse.md)
 
 
 ---

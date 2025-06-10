@@ -20,8 +20,6 @@ The [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) class adds methods t
 
 > ❗ **Important**:  Don’t mutate a paragraph style object after adding it to an attributed string. Doing so can cause your app to crash.
 
- Don’t mutate a paragraph style object after adding it to an attributed string. Doing so can cause your app to crash.
-
 ## Topics
 
 ### Setting style information
@@ -94,6 +92,8 @@ The [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) class adds methods t
 - [NSMutableCopying](../Foundation/NSMutableCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

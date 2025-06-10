@@ -1,6 +1,6 @@
 # VSSubscriptionAccessLevel.freeWithAccount
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 The user has access to free content with a valid account.

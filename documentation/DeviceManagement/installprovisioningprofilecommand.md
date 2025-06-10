@@ -12,8 +12,6 @@ The command to install a provisioning profile on a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,14 +21,14 @@ object InstallProvisioningProfileCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object InstallProvisioningProfileCommand.Command](installprovisioningprofilecommand/command-data.dictionary.md)
-  The request dictionary to install a provisioning profile.
+  The command to install a provisioning profile on a device.
 
 ## See Also
 
 - [object InstallProvisioningProfileResponse](installprovisioningprofileresponse.md)
-  A response from the device after it processes the command to install a provisioning profile.
+  A response from the device after it processes the command to install a provisioning profile on a device.
 
 
 ---

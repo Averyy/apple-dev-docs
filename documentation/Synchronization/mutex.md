@@ -54,6 +54,7 @@ class Manager {
 
 ### Conforms To
 - [Sendable](../swift/sendable.md)
+- [SendableMetatype](../swift/sendablemetatype.md)
 
 
 ---

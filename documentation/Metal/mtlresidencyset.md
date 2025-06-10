@@ -36,8 +36,6 @@ Metal doesn’t synchronize the state of the residency set between the CPU and t
 
 > ❗ **Important**:  If there’s a resource in a residency set that the GPU no longer needs access to, you can remove that resource from the residency set, even while the GPU is actively accessing other resources from the same residency set.
 
- If there’s a resource in a residency set that the GPU no longer needs access to, you can remove that resource from the residency set, even while the GPU is actively accessing other resources from the same residency set.
-
 Metal makes the union of all residency sets’ allocations resident. This means each resource allocation, such as a buffer, can have an entry in multiple residency sets at the same time. Removing an allocation from one residency set doesn’t affect its residency if it also has an entry in another residency set. So you can remove an entire residency set from a command queue and only remove the allocations from residency that are unique to that set. All other resource allocations remain in residency because at least one other residency set has an entry for each.
 
 Alternatively, render and compute command encoders have the following methods that make resource allocations resident:
@@ -66,8 +64,6 @@ Metal attaches all of a command queue’s residency sets to a command buffer fro
 
 > ❗ **Important**:  Residency sets don’t support sparse heaps or sparse textures, and their methods aren’t thread-safe.
 
- Residency sets don’t support sparse heaps or sparse textures, and their methods aren’t thread-safe.
-
 See [`Simplifying GPU Resource Management with Residency Sets`](simplifying-gpu-resource-management-with-residency-sets.md) for information about associating a residency set to command buffers and command queues.
 
 ##### Create a Residency Set
@@ -81,8 +77,6 @@ Add individual resource allocations to a residency set by calling [`addAllocatio
 The residency set can handle redundant entries for the same allocation because it ignores duplicates that already have an entry in the set.
 
 > ❗ **Important**:  Adding a resource, such as a buffer or texture, that originates from a heap to a residency set makes its entire heap resident.
-
- Adding a resource, such as a buffer or texture, that originates from a heap to a residency set makes its entire heap resident.
 
 ##### Remove Allocations From a Residency Set
 

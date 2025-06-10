@@ -21,12 +21,11 @@ struct AudioFormatListItem
 #### Overview
 
 ```None
-@struct     AudioFormatListItem
-@abstract   this struct is used as output from the kAudioFormatProperty_FormatList property
-@var        mASBD
-                an AudioStreamBasicDescription
-@var        mChannelLayoutTag
-                an AudioChannelLayoutTag
+            an AudioStreamBasicDescription
+```
+
+```None
+            an AudioChannelLayoutTag
 ```
 
 ## Topics

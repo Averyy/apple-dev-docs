@@ -39,6 +39,7 @@ struct HistoryTombstone<Model> where Model : PersistentModel
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 

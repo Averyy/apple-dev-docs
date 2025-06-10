@@ -15,6 +15,9 @@ RealityKit provides controls that enable interactions specific to each platform 
   Build a RealityKit component to support standard visionOS gestures on any entity.
 - [struct InputTargetComponent](inputtargetcomponent.md)
   A component that gives an entity the ability to receive system input.
+- [struct ManipulationComponent](manipulationcomponent.md)
+  A component that adds fluid and immersive interactive behaviors and effects.
+- [struct GestureComponent](gesturecomponent.md)
 - [struct EntityTargetValue](entitytargetvalue.md)
   A value containing an original gesture value along with a targeted entity.
 ### Accessibility
@@ -34,6 +37,12 @@ RealityKit provides controls that enable interactions specific to each platform 
   A component that applies a visual effect to a hierarchy of entities when a person looks at or selects an entity.
 - [struct BillboardComponent](billboardcomponent.md)
   A component that orients an entity instance so that it continuously points toward the active camera.
+- [struct EnvironmentBlendingComponent](environmentblendingcomponent.md)
+  A component which controls how an entity will blend visually with objects in the user’s local environment
+- [struct LensDistortionData](lensdistortiondata.md)
+  A description of estimated lens distortion that can be used to rectify images.
+- [struct ImagePresentationComponent](imagepresentationcomponent.md)
+  A component that supports general image presentation.
 ### UIKit and AppKit gestures
 - [ARView.EntityGestures](arview/entitygestures.md)
   The set of possible entity gesture recognizers.

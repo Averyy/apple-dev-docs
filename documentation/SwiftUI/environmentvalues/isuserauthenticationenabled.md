@@ -17,7 +17,7 @@ The current system user authentication enablement status.
 ## Declaration
 
 ```swift
-var isUserAuthenticationEnabled: Bool { get set }
+var isUserAuthenticationEnabled: Bool { get }
 ```
 
 #### Discussion

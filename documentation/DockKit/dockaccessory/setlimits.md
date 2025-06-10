@@ -1,6 +1,6 @@
 # setLimits(_:)
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: method
 
 Sets limits for the axes of rotation.

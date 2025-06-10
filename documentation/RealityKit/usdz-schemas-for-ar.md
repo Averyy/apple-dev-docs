@@ -1,6 +1,6 @@
 # USDZ schemas for AR
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Add augmented reality functionality to your 3D content using USDZ schemas.
 
@@ -65,4 +65,4 @@ The following illustration depicts a virtual castle rendered by a , the app or s
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/usdz-schemas-for-ar)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/usdz-schemas-for-ar)*

@@ -11,6 +11,7 @@ Plays the specified `feedback` when the provided `trigger` value changes and the
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
+- visionOS 26.0+ (Beta)
 - watchOS 10.0+
 
 ## Declaration
@@ -43,6 +44,8 @@ struct MyView: View {
     }
 }
 ```
+
+When the value changes, the new version of the closure will be called, so any captured values will have their values from the time that the observed value has its new value.
 
 ## Parameters
 

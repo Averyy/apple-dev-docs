@@ -1,6 +1,6 @@
 # DataScannerViewController.TextContentType.dateTimeDuration
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: case
 
 The content type for dates, times, and durations that appear in text.

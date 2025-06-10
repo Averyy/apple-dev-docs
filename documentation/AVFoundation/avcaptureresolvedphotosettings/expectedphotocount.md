@@ -20,8 +20,8 @@ var expectedPhotoCount: Int { get }
 
 ## Mentions
 
-- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
 - [Tracking Photo Capture Progress](tracking-photo-capture-progress.md)
+- [Capturing a Bracketed Photo Sequence](capturing-a-bracketed-photo-sequence.md)
 
 #### Discussion
 

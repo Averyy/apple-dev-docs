@@ -1,6 +1,6 @@
 # init(selector:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Initializes a test case with a selector.

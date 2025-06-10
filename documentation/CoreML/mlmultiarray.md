@@ -1,6 +1,6 @@
 # MLMultiArray
 
-**Framework**: Coreml  
+**Framework**: Core ML  
 **Kind**: class
 
 A machine learning collection type that stores numeric values in an array with multiple dimensions.
@@ -122,4 +122,4 @@ The [`shape`](mlmultiarray/shape.md) property is an integer array that has an el
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreML/mlmultiarray)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coreml/mlmultiarray)*

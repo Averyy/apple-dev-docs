@@ -24,8 +24,6 @@ mutating func appendInterpolation(_ pointer: @autoclosure @escaping () -> Unsafe
 
 > ❗ **Important**:  You don’t call this method directly. Instead, the framework calls it automatically when you append interpolated pointer data to a log message.
 
- You don’t call this method directly. Instead, the framework calls it automatically when you append interpolated pointer data to a log message.
-
 ## Parameters
 
 - `pointer`: The interpolated pointer data. The system automatically wraps this value in a closure.

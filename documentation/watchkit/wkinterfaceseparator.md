@@ -1,6 +1,6 @@
 # WKInterfaceSeparator
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface object that displays a visual separator within a group.

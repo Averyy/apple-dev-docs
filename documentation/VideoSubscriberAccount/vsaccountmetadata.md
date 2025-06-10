@@ -1,6 +1,6 @@
 # VSAccountMetadata
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: class
 
 A collection of information for a subscriber’s account.

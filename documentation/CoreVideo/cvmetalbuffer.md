@@ -19,12 +19,7 @@ typealias CVMetalBuffer = CVBuffer
 
 #### Discussion
 
-```None
-@typedef    CVMetalBufferRef
-@abstract   Metal buffer based CVPixelBuffer wrapped buffer
-@discussion IMPORTANT NOTE: Clients should retain CVMetalBuffer objects until they are done using the contents in them.
-            Retaining a CVMetalBuffer is your way to indicate that you're still using the image in the buffer, and that it should not be recycled yet.
-```
+IMPORTANT NOTE: Clients should retain CVMetalBuffer objects until they are done using the contents in them. Retaining a CVMetalBuffer is your way to indicate that you’re still using the image in the buffer, and that it should not be recycled yet.
 
 
 ---

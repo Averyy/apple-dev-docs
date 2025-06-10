@@ -1,6 +1,6 @@
 # Managing Apps and Books Through Web Services
 
-**Framework**: Devicemanagement
+**Framework**: Device Management
 
 Associate volume purchases with users or devices using endpoints for Mobile Device Management (MDM), provided by the Volume Purchase Program (VPP).
 
@@ -140,4 +140,4 @@ In the latter example, the delay is 2 minutes.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/DeviceManagement/managing-apps-and-books-through-web-services-legacy)*
+*[View on Apple Developer](https://developer.apple.com/documentation/devicemanagement/managing-apps-and-books-through-web-services-legacy)*

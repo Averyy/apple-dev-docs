@@ -63,6 +63,7 @@ enum Error
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -34,8 +34,6 @@ This method returns [`SKANError.Code.invalidConversionValue`](skanerror-swift.st
 
 > ❗ **Important**:  The system ignores calls to this method if the `fineValue` is outside of the valid range. Valid conversion updates your app sends before or after an invalid conversion remain available.
 
- The system ignores calls to this method if the `fineValue` is outside of the valid range. Valid conversion updates your app sends before or after an invalid conversion remain available.
-
 ##### Update Conversion Values for Ads Signed with Skadnetwork 4 or Later
 
 For ads that ad networks sign using version 4 or later, calling this method behaves as follows:

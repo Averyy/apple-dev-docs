@@ -10,6 +10,7 @@ Hashes the essential components of the color parameter by feeding them into the 
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -26,10 +27,6 @@ func hash(into hasher: inout Hasher)
 
 - [static func == (MaterialColorParameter, MaterialColorParameter) -> Bool](materialcolorparameter/==(_:_:).md)
   Indicates whether two color parameters are equal.
-- [static func != (Self, Self) -> Bool](materialcolorparameter/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [var hashValue: Int](materialcolorparameter/hashvalue.md)
-  The hash value.
 
 
 ---

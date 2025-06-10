@@ -1,6 +1,6 @@
 # startObserving()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Starts observing a test.

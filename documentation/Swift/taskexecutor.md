@@ -41,6 +41,11 @@ Unstructured tasks do not inherit the task executor.
 ### Inherits From
 - [Executor](executor.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
+### Conforming Types
+- [CFTaskExecutor](cftaskexecutor.md)
+- [DispatchGlobalTaskExecutor](dispatchglobaltaskexecutor.md)
+- [DummyTaskExecutor](dummytaskexecutor.md)
 
 ## See Also
 

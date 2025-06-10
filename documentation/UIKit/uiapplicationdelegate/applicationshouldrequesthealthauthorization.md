@@ -21,7 +21,7 @@ optional func applicationShouldRequestHealthAuthorization(_ application: UIAppli
 
 #### Discussion
 
-In your implementation of this method, call the [`handleAuthorizationForExtension(completion:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/1614153-handleauthorizationforextension) method of the [`HKHealthStore`](https://developer.apple.com/documentation/HealthKit/HKHealthStore) object.
+In your implementation of this method, call the [`handleAuthorizationForExtension(completion:)`](https://developer.apple.com/documentation/HealthKit/HKHealthStore/handleAuthorizationForExtension(completion:)) method of the [`HKHealthStore`](https://developer.apple.com/documentation/HealthKit/HKHealthStore) object.
 
 ## Parameters
 

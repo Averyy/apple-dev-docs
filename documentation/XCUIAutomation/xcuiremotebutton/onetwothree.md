@@ -1,6 +1,6 @@
 # XCUIRemoteButton.oneTwoThree
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents the channel-tuning button on a remote.

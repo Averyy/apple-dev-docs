@@ -187,4 +187,4 @@ self.historyToken = fetchResult.currentHistoryToken;
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3149-fetching-change-history-events)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3149-fetching-change-history-events)*

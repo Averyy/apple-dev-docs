@@ -52,11 +52,10 @@ struct FullyQualifiedOrderIdentifier
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
-- [FinanceStore.HistoryToken](financestore/historytoken.md)
-  A structure that describes the starting point to use for financial data queries.
 - [func saveOrder(signedArchive: Data) async throws -> FinanceStore.SaveOrderResult](financestore/saveorder(signedarchive:).md)
   Adds an order to the store or updates an existing order.
 

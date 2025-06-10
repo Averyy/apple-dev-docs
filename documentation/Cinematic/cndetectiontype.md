@@ -8,6 +8,7 @@ The type of object detected, such as face, torso, cat, dog and so on.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 
@@ -43,9 +44,12 @@ enum CNDetectionType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [Editing Spatial Audio with an audio mix](editing-spatial-audio-with-an-audio-mix.md)
+  Add Spatial Audio editing capabilities with the Audio Mix API in the Cinematic framework.
 - [struct CNDetection](cndetection-swift.struct.md)
   A structure that represents a detected subject, face, torso or pet at a particular time.
 - [struct CNDecision](cndecision-swift.struct.md)

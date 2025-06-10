@@ -1,6 +1,6 @@
 # propertyName
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The name of the CSS property associated with the transition.

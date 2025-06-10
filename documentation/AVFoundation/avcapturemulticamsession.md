@@ -1,6 +1,6 @@
 # AVCaptureMultiCamSession
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: class
 
 A capture session that supports simultaneous capture from multiple inputs of the same media type.
@@ -57,6 +57,8 @@ You can dynamically enable and disable this session’s individual camera inputs
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
 - [AVCam: Building a camera app](avcam-building-a-camera-app.md)
   Capture photos and record video using the front and rear iPhone and iPad cameras.
+- [Capturing cinematic video](capturing-cinematic-video.md)
+  Capture video with an adjustable depth of field and focus points.
 - [AVMultiCamPiP: Capturing from Multiple Cameras](avmulticampip-capturing-from-multiple-cameras.md)
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
 - [AVCamBarcode: Detecting Barcodes and Faces](avcambarcode-detecting-barcodes-and-faces.md)
@@ -73,4 +75,4 @@ You can dynamically enable and disable this session’s individual camera inputs
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/avcapturemulticamsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/avcapturemulticamsession)*

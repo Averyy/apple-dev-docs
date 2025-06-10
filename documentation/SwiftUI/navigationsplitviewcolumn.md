@@ -37,6 +37,7 @@ A [`NavigationSplitView`](navigationsplitview.md) collapses into a single stack 
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

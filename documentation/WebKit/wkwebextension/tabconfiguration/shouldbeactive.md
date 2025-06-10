@@ -1,6 +1,6 @@
 # shouldBeActive
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates whether the tab should be the active tab.

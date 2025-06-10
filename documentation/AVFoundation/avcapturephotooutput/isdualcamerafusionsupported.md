@@ -1,6 +1,6 @@
 # isDualCameraFusionSupported
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value indicating whether the capture output currently supports automatically combining image data on a dual camera device.

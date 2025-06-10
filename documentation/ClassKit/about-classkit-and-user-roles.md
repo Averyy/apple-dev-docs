@@ -1,6 +1,6 @@
 # About ClassKit and user roles
 
-**Framework**: Classkit
+**Framework**: ClassKit
 
 Understand how ClassKit interacts with different kinds of users.
 
@@ -33,4 +33,4 @@ Other users—teachers and those without managed accounts—don’t receive this
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/about-classkit-and-user-roles)*
+*[View on Apple Developer](https://developer.apple.com/documentation/classkit/about-classkit-and-user-roles)*

@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-int (*)(void *, struct NumVersion, unsigned int, unsigned int) InitializeTerminate;
+int (*)(void *, struct NumVersion, unsigned int, int) InitializeTerminate;
 ```
 
 ## See Also

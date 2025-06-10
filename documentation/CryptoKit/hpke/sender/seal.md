@@ -1,6 +1,6 @@
 # seal(_:)
 
-**Framework**: Cryptokit  
+**Framework**: Apple CryptoKit  
 **Kind**: method
 
 Encrypts the given cleartext message.

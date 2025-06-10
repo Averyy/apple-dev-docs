@@ -1,6 +1,6 @@
 # destination-over
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 #### Overview

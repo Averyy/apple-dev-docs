@@ -1,6 +1,6 @@
 # newSubdividedMesh(_:submeshIndex:subdivisionLevels:)
 
-**Framework**: Modelio  
+**Framework**: Model I/O  
 **Kind**: method
 
 Creates a new mesh by subdividing the specified mesh.

@@ -1,6 +1,6 @@
 # changedTouches
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A collection of [`Touch`](touch.md) objects representing all touches that changed in this event.

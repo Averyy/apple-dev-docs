@@ -10,6 +10,7 @@ Changes the entity’s anchoring, preserving either the world transform or the l
 - iPadOS 13.0+
 - Mac Catalyst 14.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+ - Deprecated
 
 ## Declaration

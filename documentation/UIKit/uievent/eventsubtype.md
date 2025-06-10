@@ -60,6 +60,7 @@ You can obtain the subtype of an event from the [`subtype`](uievent/subtype.md) 
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

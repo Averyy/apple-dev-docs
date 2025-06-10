@@ -62,11 +62,16 @@ Use these static functions and variables to perform tasks like showing the manag
 ### Restoring purchases
 - [static func sync() async throws](appstore/sync.md)
   Synchronizes your app’s transaction information and subscription status with information from the App Store.
+### Presenting App Store offers
+- [static func presentOffer(AppStoreOfferKind, from: UIViewController) async throws -> AppStoreOfferKind.PresentationResult](appstore/presentoffer(_:from:).md)
+- [static func presentOffer(AppStoreOfferKind, from: UIViewController) async throws -> AppStoreOfferKind.PresentationResult](appstore/presentoffer(_:from:).md)
+- [struct AppStoreOfferKind](appstoreofferkind.md)
 
 ## Relationships
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

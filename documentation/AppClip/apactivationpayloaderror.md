@@ -18,9 +18,9 @@ struct APActivationPayloadError
 
 ## Topics
 
-### Getting Information About the Error
+### Getting information about the error
 - [static var errorDomain: String](apactivationpayloaderror/errordomain.md)
-### Error Codes
+### Interpreting errors
 - [static var doesNotMatch: APActivationPayloadError.Code](apactivationpayloaderror/doesnotmatch.md)
   The provided URL doesn’t match the invocation URL you registered for the App Clip.
 - [static var disallowed: APActivationPayloadError.Code](apactivationpayloaderror/disallowed.md)
@@ -36,6 +36,7 @@ struct APActivationPayloadError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

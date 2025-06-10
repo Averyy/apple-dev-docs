@@ -9,7 +9,18 @@
   The minimum non-zero resolution between any two calls to `now`.
 - [var now: ContinuousClock.Instant](continuousclock/now-swift.property.md)
   The current continuous instant.
+- [var traits: ClockTraits](continuousclock/traits.md)
+  The continuous clock is continuous and monotonic
+- [var traits: ClockTraits](continuousclock/traits-51dx6.md)
+  The traits associated with this clock instance.
 ### Instance Methods
+- [func convert(from: Self.Duration) -> Duration?](continuousclock/convert(from:)-1jlhb.md)
+  Convert a Clock-specific Duration to a Swift Duration
+- [func convert(from: Duration) -> Self.Duration?](continuousclock/convert(from:)-3lfde.md)
+  Convert a Swift Duration to a Clock-specific Duration
+- [func convert(from: Self.Duration) -> Self.Duration?](continuousclock/convert(from:)-6tuwg.md)
+- [func convert<OtherClock>(instant: OtherClock.Instant, from: OtherClock) -> Self.Instant?](continuousclock/convert(instant:from:).md)
+  Convert an `Instant` from some other clock’s `Instant`
 - [func measure(() throws -> Void) rethrows -> Self.Instant.Duration](continuousclock/measure(_:).md)
   Measure the elapsed time to execute a closure.
 - [func measure(isolation: isolated (any Actor)?, () async throws -> Void) async rethrows -> Self.Instant.Duration](continuousclock/measure(isolation:_:).md)

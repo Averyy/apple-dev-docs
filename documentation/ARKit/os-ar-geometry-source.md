@@ -5,9 +5,6 @@
 
 A container for geometrical vector data.
 
-**Availability**:
-- visionOS 1.0+
-
 ## Declaration
 
 ```swift

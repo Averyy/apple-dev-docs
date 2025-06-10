@@ -1,6 +1,6 @@
 # Unlocking purchased content
 
-**Framework**: Storekit
+**Framework**: StoreKit
 
 Deliver content to the customer after validating the purchase.
 
@@ -92,4 +92,4 @@ In macOS, the system manages the downloaded files; your app can’t move or dele
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/unlocking-purchased-content)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/unlocking-purchased-content)*

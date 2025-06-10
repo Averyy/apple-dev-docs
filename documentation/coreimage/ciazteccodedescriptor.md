@@ -1,9 +1,9 @@
 # CIAztecCodeDescriptor
 
 **Framework**: Core Image  
-**Kind**: cl
+**Kind**: class
 
-A concrete subclass of [`CIBarcodeDescriptor`](cibarcodedescriptor.md) that represents an Aztec code symbol.
+An Aztec code symbol.
 
 **Availability**:
 - iOS 11.0+
@@ -16,43 +16,55 @@ A concrete subclass of [`CIBarcodeDescriptor`](cibarcodedescriptor.md) that repr
 ## Declaration
 
 ```swift
-class CIAztecCodeDescriptor : CIBarcodeDescriptor
+class CIAztecCodeDescriptor
 ```
 
 #### Overview
+
+A concrete subclass of [`CIBarcodeDescriptor`](cibarcodedescriptor.md) that represents an Aztec code symbol.
 
 Aztec code is a format of 2D barcode published as ISO/IEC 24778:2008 standard.  It encodes data in concentric square rings around a central bullseye pattern.
 
 ## Topics
 
 ### Creating a Descriptor
-- [init?(payload: Data, isCompact: Bool, layerCount: Int, dataCodewordCount: Int)](ciazteccodedescriptor/2875188-init.md)
+- [init?(payload: Data, isCompact: Bool, layerCount: Int, dataCodewordCount: Int)](ciazteccodedescriptor/init(payload:iscompact:layercount:datacodewordcount:).md)
   Initializes a descriptor that can be used as input to the `CIBarcodeGenerator` filter.
 ### Examining a Descriptor
-- [var errorCorrectedPayload: Data](ciazteccodedescriptor/2875187-errorcorrectedpayload.md)
+- [var errorCorrectedPayload: Data](ciazteccodedescriptor/errorcorrectedpayload-swift.property.md)
   The error-corrected payload containing the data encoded in the Aztec code.
-- [var isCompact: Bool](ciazteccodedescriptor/2875203-iscompact.md)
+- [var isCompact: Bool](ciazteccodedescriptor/iscompact-swift.property.md)
   A Boolean value telling if the Aztec code is compact.
-- [var layerCount: Int](ciazteccodedescriptor/2875174-layercount.md)
+- [var layerCount: Int](ciazteccodedescriptor/layercount-swift.property.md)
   The number of layers embedded in the Aztec code.
-- [var dataCodewordCount: Int](ciazteccodedescriptor/2875166-datacodewordcount.md)
+- [var dataCodewordCount: Int](ciazteccodedescriptor/datacodewordcount-swift.property.md)
   The number of data codewords in the Aztec code.
 
 ## Relationships
 
 ### Inherits From
 - [CIBarcodeDescriptor](cibarcodedescriptor.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
+- [NSCopying](../Foundation/NSCopying.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 ## See Also
 
 - [class CIBarcodeDescriptor](cibarcodedescriptor.md)
-  An abstract base class that represents a machine-readable code's attributes.
+  An abstract base class that represents a machine-readable code’s attributes.
 - [class CIQRCodeDescriptor](ciqrcodedescriptor.md)
-  A concrete subclass of [`CIBarcodeDescriptor`](cibarcodedescriptor.md) that represents a square QR code symbol.
+  A square QR code symbol.
 - [class CIPDF417CodeDescriptor](cipdf417codedescriptor.md)
-  A concrete subclass of [`CIBarcodeDescriptor`](cibarcodedescriptor.md) that represents a PDF417 symbol.
+  A PDF417 symbol.
 - [class CIDataMatrixCodeDescriptor](cidatamatrixcodedescriptor.md)
-  A concrete subclass of [`CIBarcodeDescriptor`](cibarcodedescriptor.md) that represents a Data Matrix code symbol.
+  A Data Matrix code symbol.
 
 
 ---

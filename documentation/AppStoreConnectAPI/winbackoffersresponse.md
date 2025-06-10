@@ -32,6 +32,8 @@ object WinBackOffersResponse
   The request body you use to update a win-back offer.
 - [object IntegerRange](integerrange.md)
   Describe the upper and lower integer bound of the attribute.
+- [object WinBackOfferPricesLinkagesResponse](winbackofferpriceslinkagesresponse.md)
+- [object SubscriptionWinBackOffersLinkagesResponse](subscriptionwinbackofferslinkagesresponse.md)
 
 
 ---

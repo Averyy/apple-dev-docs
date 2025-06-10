@@ -3,15 +3,13 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-Check-in protocol get-token response data.
+The get token response details.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - macOS 14.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,7 +20,7 @@ object GetTokenResponse
 ## See Also
 
 - [object GetTokenRequest](gettokenrequest.md)
-  Check-in protocol get-token request data.
+  The get token request details.
 
 
 ---

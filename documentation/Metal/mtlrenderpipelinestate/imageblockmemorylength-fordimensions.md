@@ -32,8 +32,6 @@ The GPU partitions tile memory between imageblocks and threadgroup memory,
 
 > ❗ **Important**:  The total memory allocations for imageblocks and threadgroup memory can’t exceed the tile memory limit for the GPU device.
 
- The total memory allocations for imageblocks and threadgroup memory can’t exceed the tile memory limit for the GPU device.
-
 For information about identifying tile memory limits for GPU devices, see either of the following:
 
 - [`Metal Feature Set Tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf)

@@ -52,11 +52,6 @@ let meetingDate = Date()
 meetingDate.formatted(.dateTime)) // 10/28/2020, 12:13 AM
 ```
 
-## See Also
-
-- [static var iso8601: Date.ISO8601FormatStyle](parsestrategy/iso8601.md)
-  A style for formatting a date in accordance with the ISO-8601 standard.
-
 
 ---
 

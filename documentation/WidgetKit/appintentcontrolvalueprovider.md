@@ -1,6 +1,6 @@
 # AppIntentControlValueProvider
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: protocol
 
 A type that uses a custom intent to provide a value to a control template.
@@ -8,7 +8,9 @@ A type that uses a custom intent to provide a value to a control template.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
 
 ## Declaration
 

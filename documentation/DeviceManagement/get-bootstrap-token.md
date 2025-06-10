@@ -3,47 +3,58 @@
 **Framework**: Device Management  
 **Kind**: httpRequest
 
-Gets the bootstrap token.
+Gets the bootstrap token from the server.
 
 **Availability**:
 - macOS 10.15+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
-This command returns the bootstrap token data if it was previously set and the feature is enabled by the server.
+A server that supports this request needs to include a `com.apple.mdm.bootstraptoken` value in the `ServerCapabilities` key of the MDM profile payload to enroll the device.
 
-If no bootstrap token is available, the server should return empty or no data and no error.
+This request returns the device’s bootstrap token data that the server stores.
 
-It requires a Device Enrollment Program enrolled client, or on macOS 11 and later, a supervised device.
+If a bootstrap token isn’t available, the server returns a success response with either a zero-length value for the `BootstrapToken` key or omits the key.
+
+It requires a device using Automated Device Enrollment, or a supervised device in macOS 11 and later.
+
+##### Check in Availability
+
+|  |  |
+| --- | --- |
+| Device channel | macOS |
+| User channel | NA |
+| Requires supervision | macOS |
+| Allowed in user enrollment | NA |
 
 ## Topics
 
-### Request and Response
+### Requests and responses
 - [object GetBootstrapTokenRequest](getbootstraptokenrequest.md)
-  The request object used to get the bootstrap token.
+  The get bootstrap token request details.
 - [object GetBootstrapTokenResponse](getbootstraptokenresponse.md)
-  The response that contains the bootstrap token.
+  The get bootstrap token response details.
 
 ## Request Body
 
-The request object the app uses to get the bootstrap token.
+The request object the system sends for the `GetBootstrapToken` request.
 
 ## See Also
 
 - [Authenticate](authenticate.md)
   Authenticates a user during MDM payload installation.
-- [UserAuthenticate](userauthenticate.md)
+- [User Authenticate](user-authenticate.md)
   Authenticates a user with a two-step authentication protocol.
 - [Check Out](check-out.md)
   Responds to the removal of the MDM enrollment profile from a device.
 - [Get Token](get-token.md)
-  Check-in protocol get-token data.
+  Gets a token from the server.
 - [Token Update](token-update.md)
   Updates the token for a device on the server.
 - [Set Bootstrap Token](set-bootstrap-token.md)
-  Sets the bootstrap token.
+  Sends the bootstrap token to the server.
+- [Return To Service](return-to-service.md)
+  Gets the return-to-service configuration from the server.
 
 
 ---

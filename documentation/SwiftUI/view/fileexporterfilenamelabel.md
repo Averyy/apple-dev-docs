@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-On macOS, configures the `fileExporter` with a text to use as a label for the file name field.
+On macOS, configures the `fileExporter` with a label for the file name field.
 
 **Availability**:
 - iOS 17.0+
@@ -16,12 +16,12 @@ On macOS, configures the `fileExporter` with a text to use as a label for the fi
 
 ```swift
 nonisolated
-func fileExporterFilenameLabel(_ label: Text?) -> some View
+func fileExporterFilenameLabel(_ label: LocalizedStringResource) -> some View
 ```
 
 ## Parameters
 
-- `label`: The optional text to use as the label for the file name field.
+- `label`: The localized string resource to display.
 
 ## See Also
 

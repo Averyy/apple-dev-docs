@@ -153,6 +153,11 @@ When using a file handle object to communicate asynchronously with a socket, you
   Truncates or extends the file represented by the file handle to a specified offset within the file and puts the file pointer at that position.
 - [let NSFileHandleNotificationMonitorModes: String](nsfilehandlenotificationmonitormodes.md)
   Currently unused.
+### Structures
+- [FileHandle.ConnectionAcceptedMessage](filehandle/connectionacceptedmessage.md)
+- [FileHandle.DataAvailableMessage](filehandle/dataavailablemessage.md)
+- [FileHandle.ReadCompletionMessage](filehandle/readcompletionmessage.md)
+- [FileHandle.ReadToEndOfFileCompletionMessage](filehandle/readtoendoffilecompletionmessage.md)
 
 ## Relationships
 
@@ -168,6 +173,7 @@ When using a file handle object to communicate asynchronously with a socket, you
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

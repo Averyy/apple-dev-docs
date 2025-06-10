@@ -47,6 +47,7 @@ To derive a key with more fine-grained control, use [`extract(inputKeyMaterial:s
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

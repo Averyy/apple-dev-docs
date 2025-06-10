@@ -1,6 +1,6 @@
 # WKInterfaceTextField
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface element that displays an editable text area.

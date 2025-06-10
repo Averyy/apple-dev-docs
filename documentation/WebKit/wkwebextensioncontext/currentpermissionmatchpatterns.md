@@ -1,6 +1,6 @@
 # currentPermissionMatchPatterns
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The currently granted permission match patterns that have not expired.

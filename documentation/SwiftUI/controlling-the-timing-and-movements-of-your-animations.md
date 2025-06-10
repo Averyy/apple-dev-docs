@@ -1,6 +1,6 @@
 # Controlling the timing and movements of your animations
 
-**Framework**: Swiftui
+**Framework**: SwiftUI
 
 Build sophisticated animations that you control using phase and keyframe animators.
 
@@ -440,4 +440,4 @@ The combination of these keyframe tracks creates an animation that squishes and 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/controlling-the-timing-and-movements-of-your-animations)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/controlling-the-timing-and-movements-of-your-animations)*

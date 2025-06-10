@@ -1,6 +1,6 @@
 # Account Data Transfer
 
-**Framework**: Accountdatatransfer  
+**Framework**: Account Data Transfer  
 **Kind**: module
 
 Download App Store information and app-install activity on behalf of your app’s users.

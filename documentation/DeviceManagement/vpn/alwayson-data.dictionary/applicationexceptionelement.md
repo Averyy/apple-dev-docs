@@ -6,13 +6,9 @@
 The dictionary that defines which applications can have traffic outside the VPN tunnel.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- macOS 10.7+
-- tvOS 17.0+
+- iOS 13.6+
+- iPadOS 13.6+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

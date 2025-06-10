@@ -1,6 +1,6 @@
 # isGlobalToneMappingEnabled
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that indicates whether the device should use global tone mapping.

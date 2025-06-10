@@ -1,6 +1,6 @@
 # XCTAssertNotEqual(_:_:accuracy:_:file:line:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: func
 
 Asserts that two numeric values aren’t equal within a specified accuracy.

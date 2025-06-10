@@ -1,6 +1,6 @@
 # Resizing a Sprite in Nine Parts
 
-**Framework**: Spritekit
+**Framework**: SpriteKit
 
 Scale a sprite using nine-part algorithm.
 
@@ -46,4 +46,4 @@ The following figure shows that the corners remain the same, even when the butto
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SpriteKit/resizing-a-sprite-in-nine-parts)*
+*[View on Apple Developer](https://developer.apple.com/documentation/spritekit/resizing-a-sprite-in-nine-parts)*

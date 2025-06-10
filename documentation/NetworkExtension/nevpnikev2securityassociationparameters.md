@@ -35,6 +35,9 @@ class NEVPNIKEv2SecurityAssociationParameters
   An enumeration of Diffie-Hellman group values.
 - [var lifetimeMinutes: Int32](nevpnikev2securityassociationparameters/lifetimeminutes.md)
   The duration of the lifetime of the Security Association, in minutes.
+### Instance Properties
+- [var postQuantumKeyExchangeMethods: [NEVPNIKEv2PostQuantumKeyExchangeMethod]](nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-3173s.md)
+  The post-quantum key exchange method(s) used by the Security Association, if any.
 
 ## Relationships
 

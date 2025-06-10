@@ -1,6 +1,6 @@
 # solarMidnight
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 Represents solar midnight, the time when the sun reaches its lowest point in the sky.

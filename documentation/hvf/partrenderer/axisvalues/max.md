@@ -1,6 +1,6 @@
 # max()
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns the maximum element in the sequence.

@@ -1,6 +1,6 @@
 # scrollHitchTimeRatio
 
-**Framework**: Metrickit  
+**Framework**: MetricKit  
 **Kind**: property
 
 The ratio of the time spent hitching while scrolling.
@@ -9,6 +9,7 @@ The ratio of the time spent hitching while scrolling.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
+- macOS 11.0+
 - visionOS 1.0+
 
 ## Declaration

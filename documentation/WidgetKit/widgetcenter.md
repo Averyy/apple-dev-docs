@@ -1,6 +1,6 @@
 # WidgetCenter
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: class
 
 An object that contains a list of user-configured widgets and is used for reloading widget timelines.
@@ -8,8 +8,9 @@ An object that contains a list of user-configured widgets and is used for reload
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration
@@ -20,6 +21,7 @@ class WidgetCenter
 
 ## Mentions
 
+- [Keeping a widget up to date](keeping-a-widget-up-to-date.md)
 - [Making network requests in a widget extension](making-network-requests-in-a-widget-extension.md)
 
 #### Overview
@@ -73,6 +75,9 @@ WidgetCenter.shared.reloadAllTimelines()
 ### Reloading Recommended Preconfigured Widgets
 - [func invalidateConfigurationRecommendations()](widgetcenter/invalidateconfigurationrecommendations.md)
   Invalidates and refreshes the preconfigured intent configurations for user-customizable widgets.
+### Instance Properties
+- [var currentPushInfo: WidgetPushInfo?](widgetcenter/currentpushinfo.md)
+  Provides the current push information for widget reloads and relevance refreshes.
 ### Instance Methods
 - [func currentConfigurations() async throws -> [WidgetInfo]](widgetcenter/currentconfigurations.md)
   Retrieves information about user-configured widgets.
@@ -85,6 +90,8 @@ WidgetCenter.shared.reloadAllTimelines()
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
 - [protocol TimelineProvider](timelineprovider.md)
   A type that advises WidgetKit when to update a widget’s display.
+- [protocol AppIntentTimelineProvider](appintenttimelineprovider.md)
+  A type that advises WidgetKit when to update a user-configurable widget’s display.
 - [protocol IntentTimelineProvider](intenttimelineprovider.md)
   A type that advises WidgetKit when to update a user-configurable widget’s display.
 - [struct TimelineProviderContext](timelineprovidercontext.md)
@@ -93,8 +100,6 @@ WidgetCenter.shared.reloadAllTimelines()
   A type that specifies the date to display a widget, and, optionally, indicates the current relevance of the widget’s content.
 - [struct Timeline](timeline.md)
   An object that specifies a date for WidgetKit to update a widget’s view.
-- [protocol AppIntentTimelineProvider](appintenttimelineprovider.md)
-  A type that advises WidgetKit when to update a user-configurable widget’s display.
 
 
 ---

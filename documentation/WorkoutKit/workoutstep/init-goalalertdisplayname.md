@@ -1,6 +1,6 @@
 # init(goal:alert:displayName:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: init
 
 **Availability**:
@@ -8,6 +8,7 @@
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 11.0+
 
 ## Declaration

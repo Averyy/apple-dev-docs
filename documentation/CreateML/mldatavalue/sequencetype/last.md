@@ -1,6 +1,6 @@
 # last
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: property
 
 The last element of the collection.

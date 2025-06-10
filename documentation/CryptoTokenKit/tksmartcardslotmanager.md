@@ -26,8 +26,6 @@ Get a list of all known smart card reader slots in the system using the [`slotNa
 
 > ❗ **Important**:  The [`com.apple.security.smartcard`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.smartcard) entitlement is required in order to use `TKSmartCardSlotManager`.
 
- The [`com.apple.security.smartcard`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.smartcard) entitlement is required in order to use `TKSmartCardSlotManager`.
-
 ## Topics
 
 ### Creating a Card Slot Manager
@@ -40,6 +38,11 @@ Get a list of all known smart card reader slots in the system using the [`slotNa
   Asynchronously calls a block with a Smart Card reader slot for a specified name.
 - [func slotNamed(String) -> TKSmartCardSlot?](tksmartcardslotmanager/slotnamed(_:).md)
   Returns the Smart Card slot with a given name.
+### Instance Methods
+- [func createNFCSlot(message: String?, completion: (TKSmartCardSlotNFCSession?, (any Error)?) -> Void)](tksmartcardslotmanager/createnfcslot(message:completion:).md)
+  Creates an NFC smart card slot using the device’s hardware and presents a system UI.
+- [func isNFCSupported() -> Bool](tksmartcardslotmanager/isnfcsupported.md)
+  Determines whether NFC (Near Field Communication) is supported on this device.
 
 ## Relationships
 

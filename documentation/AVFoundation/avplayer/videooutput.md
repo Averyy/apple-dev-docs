@@ -17,7 +17,7 @@ The video output for this player.
 ## Declaration
 
 ```swift
-@MainActor
+nonisolated
 var videoOutput: AVPlayerVideoOutput? { get set }
 ```
 

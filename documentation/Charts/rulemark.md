@@ -98,6 +98,7 @@ var body: some View {
 ## Topics
 
 ### Initializers
+- [init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)](rulemark/init(x:y:z:).md)
 - [init<X, Y>(x: PlottableValue<X>, yStart: PlottableValue<Y>, yEnd: PlottableValue<Y>)](rulemark/init(x:ystart:yend:)-5gy50.md)
   Creates a vertical rule mark with an x encoding and y interval encoding.
 - [init<X>(x: PlottableValue<X>, yStart: CGFloat?, yEnd: CGFloat?)](rulemark/init(x:ystart:yend:)-6zemd.md)
@@ -114,9 +115,11 @@ var body: some View {
 ## Relationships
 
 ### Conforms To
+- [Chart3DContent](chart3dcontent.md)
 - [ChartContent](chartcontent.md)
 - [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

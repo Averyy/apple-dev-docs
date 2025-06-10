@@ -40,6 +40,8 @@ If the value is `nil`, the configuration uses [`strokeColor`](uibackgroundconfig
   Generates the resolved background color for the specified tint color, using the background color and color transformer.
 - [var visualEffect: UIVisualEffect?](uibackgroundconfiguration-swift.struct/visualeffect.md)
   The visual effect that the configuration applies to the background.
+- [var shadowProperties: UIShadowProperties](uibackgroundconfiguration-swift.struct/shadowproperties.md)
+- [struct UIShadowProperties](uishadowproperties-swift.struct.md)
 - [var strokeColor: UIColor?](uibackgroundconfiguration-swift.struct/strokecolor.md)
   The color of the stroke.
 - [func resolvedStrokeColor(for: UIColor) -> UIColor](uibackgroundconfiguration-swift.struct/resolvedstrokecolor(for:).md)
@@ -50,8 +52,6 @@ If the value is `nil`, the configuration uses [`strokeColor`](uibackgroundconfig
   The outset (or inset, if negative) for the stroke.
 - [var image: UIImage?](uibackgroundconfiguration-swift.struct/image.md)
   The image displayed in the view’s background.
-- [var imageContentMode: UIView.ContentMode](uibackgroundconfiguration-swift.struct/imagecontentmode.md)
-  A property that determines the layout of a background image in a view when its bounds change.
 
 
 ---

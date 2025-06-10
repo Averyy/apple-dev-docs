@@ -29,6 +29,13 @@ enum DropOperation
   The drop activity is not allowed at this time or location.
 - [DropOperation.move](dropoperation/move.md)
   Move the data represented by the drag items instead of copying it.
+### Structures
+- [DropOperation.Set](dropoperation/set.md)
+  A set of drop operations, corresponding to matching cases in `DropOperation`.
+### Enumeration Cases
+- [DropOperation.alias](dropoperation/alias.md)
+- [DropOperation.delete](dropoperation/delete.md)
+  Delete the data. The item was dragged to Trash or to another destination that semantically represents deletion.
 
 ## Relationships
 
@@ -37,6 +44,7 @@ enum DropOperation
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

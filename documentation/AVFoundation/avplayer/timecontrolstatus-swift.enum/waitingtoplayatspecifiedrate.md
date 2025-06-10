@@ -32,8 +32,6 @@ In this state, the value of the [`rate`](avplayer/rate.md) property doesn’t in
 
 > 💡 **Tip**:  While waiting for buffering, you can attempt to start playback of any available media data by calling [`playImmediately(atRate:)`](avplayer/playimmediately(atrate:).md).
 
- While waiting for buffering, you can attempt to start playback of any available media data by calling [`playImmediately(atRate:)`](avplayer/playimmediately(atrate:).md).
-
 ## See Also
 
 - [AVPlayer.TimeControlStatus.paused](avplayer/timecontrolstatus-swift.enum/paused.md)

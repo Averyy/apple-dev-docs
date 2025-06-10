@@ -32,8 +32,6 @@ class OSLogEntry
   The current log entry’s storage tag.
 - [OSLogEntry.StoreCategory](oslogentry/storecategory-swift.enum.md)
   A classification of how the entry was to be stored and rotated at the point when it was created.
-### Initializers
-- [init?(coder: NSCoder)](oslogentry/init(coder:).md)
 
 ## Relationships
 

@@ -39,7 +39,7 @@ init(scale: Size3D = Size3D(width: 1.0, height: 1, depth: 1), rotation: Rotation
   Creates a projective transform from the specified 4 x 4 single-precision matrix.
 - [init(fovyRadians: Double, aspectRatio: Double, nearZ: Double, farZ: Double, reverseZ: Bool)](projectivetransform3d/init(fovyradians:aspectratio:nearz:farz:reversez:).md)
   Returns a projective transform with right-hand-side perspective and optional reverse-z.
-- [init(translation: Size3D)](projectivetransform3d/init(translation:)-4oiao.md)
+- [init(translation: Size3D)](projectivetransform3d/init(translation:).md)
 - [init(fovyRadians: Double, aspectRatio: Double, nearZ: Double, farZ: Double)](projectivetransform3d/init(fovyradians:aspectratio:nearz:farz:).md)
 
 

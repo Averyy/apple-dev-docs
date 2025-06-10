@@ -31,7 +31,7 @@ Register for this notification if your app displays content (dates, times, numbe
 - [class var autoupdatingCurrent: Locale](nslocale/autoupdatingcurrent.md)
   A locale which tracks the user’s current preferences.
 - [class var current: Locale](nslocale/current.md)
-  A locale representing the user’s region settings at the time the property is read.
+  A locale that represents the user’s region settings at the time the property is read.
 - [class var system: Locale](nslocale/system.md)
   A locale representing the generic root values with little localization.
 

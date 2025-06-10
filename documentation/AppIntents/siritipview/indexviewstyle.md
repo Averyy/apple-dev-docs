@@ -9,7 +9,7 @@ Sets the style for the index view within the current environment.
 - iOS 14.0+
 - iPadOS 14.0+
 - tvOS 14.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 8.0+
 
 ## Declaration

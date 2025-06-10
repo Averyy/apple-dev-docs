@@ -13,6 +13,7 @@ An alert that displays map- or navigation-related information to the user.
 ## Declaration
 
 ```swift
+@MainActor
 class CPNavigationAlert
 ```
 
@@ -68,6 +69,7 @@ The system displays the primary and secondary actions as buttons on the alert. A
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

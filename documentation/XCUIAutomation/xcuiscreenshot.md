@@ -1,6 +1,6 @@
 # XCUIScreenshot
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: class
 
 A captured image of a screen, app, or UI element state.

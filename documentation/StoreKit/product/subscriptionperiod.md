@@ -58,6 +58,7 @@ Use the [`value`](product/subscriptionperiod/value.md) and the [`unit`](product/
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -13,6 +13,7 @@ The title of the action sheet.
 ## Declaration
 
 ```swift
+@MainActor
 var title: String? { get }
 ```
 

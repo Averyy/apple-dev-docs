@@ -1,6 +1,6 @@
 # displayVersion
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The localized extension display version.

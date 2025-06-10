@@ -1,6 +1,6 @@
 # WCError.Code.payloadUnsupportedTypes
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: case
 
 An error indicating that a dictionary contains nonproperty list types.

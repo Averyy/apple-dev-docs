@@ -1,6 +1,6 @@
 # SVG_ANGLETYPE_RAD
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

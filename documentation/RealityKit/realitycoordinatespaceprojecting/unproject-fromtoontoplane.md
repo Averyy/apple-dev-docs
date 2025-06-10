@@ -1,6 +1,6 @@
 # unproject(_:from:to:ontoPlane:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: method  
 **Required**: Yes
 
@@ -11,6 +11,7 @@ Unprojects a point from the view onto a plane in 3D world coordinates.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

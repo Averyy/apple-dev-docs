@@ -1,6 +1,6 @@
 # com.apple.developer.spatial-audio.profile-access
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 An entitlement that enables your app to use the personalized spatial audio profile.

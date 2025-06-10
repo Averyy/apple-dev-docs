@@ -22,13 +22,13 @@ When the app launches, it creates an [`ENManager`](enmanager.md) instance, sets 
 
 ## See Also
 
-- [func activate(completionHandler: ENErrorHandler)](enmanager/activate(completionhandler:).md)
+- [func activate(completionHandler: ((any Error)?) -> Void)](enmanager/activate(completionhandler:).md)
   Prepares the manager for use.
 - [typealias ENActivityHandler](enactivityhandler.md)
   The handler the system invokes to report activities that occurred while the app wasn’t running.
 - [struct ENActivityFlags](enactivityflags.md)
   Activities that occur while the app isn’t running.
-- [func setExposureNotificationEnabled(Bool, completionHandler: ENErrorHandler)](enmanager/setexposurenotificationenabled(_:completionhandler:).md)
+- [func setExposureNotificationEnabled(Bool, completionHandler: ((any Error)?) -> Void)](enmanager/setexposurenotificationenabled(_:completionhandler:).md)
   Enables or disables exposure notification.
 
 

@@ -1,6 +1,6 @@
 # source
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The script’s source code.

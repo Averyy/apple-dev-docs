@@ -1,6 +1,6 @@
 # value
 
-**Framework**: Corehaptics  
+**Framework**: Core Haptics  
 **Kind**: property
 
 The parameter value of the point.
@@ -33,4 +33,4 @@ Think of the value as the control point’s y-coordinate.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/chhapticparametercurve/controlpoint/value)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/chhapticparametercurve/controlpoint/value)*

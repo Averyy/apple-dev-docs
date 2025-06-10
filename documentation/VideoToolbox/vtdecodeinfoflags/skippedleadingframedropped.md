@@ -1,6 +1,6 @@
 # skippedLeadingFrameDropped
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 A flag that indicates whether the decode process skips leading frames after dropping a synchronization frame.

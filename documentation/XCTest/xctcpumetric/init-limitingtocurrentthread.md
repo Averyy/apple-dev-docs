@@ -1,6 +1,6 @@
 # init(limitingToCurrentThread:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Creates a CPU metric that optionally records data only for the current thread.

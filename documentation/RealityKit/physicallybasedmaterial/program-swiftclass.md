@@ -10,6 +10,7 @@ An object that represents the backing shader compilation required for physically
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -43,20 +44,10 @@ let material = PhysicallyBasedMaterial(program: program)
 ### Structures
 - [PhysicallyBasedMaterial.Program.Descriptor](physicallybasedmaterial/program-swift.class/descriptor-swift.struct.md)
   Specifies all parameters necessary to initialize `PhysicallyBasedMaterial` programs
-### Operators
-- [static func == (PhysicallyBasedMaterial.Program, PhysicallyBasedMaterial.Program) -> Bool](physicallybasedmaterial/program-swift.class/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Initializers
 - [init(descriptor: PhysicallyBasedMaterial.Program.Descriptor) async](physicallybasedmaterial/program-swift.class/init(descriptor:).md)
 ### Instance Properties
 - [let descriptor: PhysicallyBasedMaterial.Program.Descriptor](physicallybasedmaterial/program-swift.class/descriptor-swift.property.md)
-- [var hashValue: Int](physicallybasedmaterial/program-swift.class/hashvalue.md)
-  The hash value.
-### Instance Methods
-- [func hash(into: inout Hasher)](physicallybasedmaterial/program-swift.class/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-### Default Implementations
-- [Equatable Implementations](physicallybasedmaterial/program-swift.class/equatable-implementations.md)
 
 ## Relationships
 
@@ -64,6 +55,7 @@ let material = PhysicallyBasedMaterial(program: program)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

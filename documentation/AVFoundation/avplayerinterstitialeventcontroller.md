@@ -26,8 +26,6 @@ This class is a subclass of [`AVPlayerInterstitialEventMonitor`](avplayerinterst
 
 > ❗ **Important**:  Creating an event controller and setting a schedule causes playback to ignore interstitial events present in the source media.
 
- Creating an event controller and setting a schedule causes playback to ignore interstitial events present in the source media.
-
 ## Topics
 
 ### Creating an Event Controller
@@ -38,6 +36,14 @@ This class is a subclass of [`AVPlayerInterstitialEventMonitor`](avplayerinterst
   The current schedule of interstitial events.
 - [func cancelCurrentEvent(withResumptionOffset: CMTime)](avplayerinterstitialeventcontroller/cancelcurrentevent(withresumptionoffset:).md)
   Cancels the playback of all currently playing and scheduled interstitial events, and resumes playback of primary content.
+### Instance Properties
+- [var localizedStringsBundle: Bundle?](avplayerinterstitialeventcontroller/localizedstringsbundle.md)
+  The bundle that contains the localized strings to be used by the AVPlayerInterstitialEventController.
+- [var localizedStringsTableName: String?](avplayerinterstitialeventcontroller/localizedstringstablename.md)
+  The name of the table in the bundle that contains the localized strings to be used by the AVPlayerInterstitialEventController.
+### Instance Methods
+- [func skipCurrentEvent()](avplayerinterstitialeventcontroller/skipcurrentevent.md)
+  Causes the playback of the currently playing interstital event to be abandoned.
 
 ## Relationships
 
@@ -51,6 +57,7 @@ This class is a subclass of [`AVPlayerInterstitialEventMonitor`](avplayerinterst
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

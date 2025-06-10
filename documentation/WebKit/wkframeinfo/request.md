@@ -1,6 +1,6 @@
 # request
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The frame’s current request.

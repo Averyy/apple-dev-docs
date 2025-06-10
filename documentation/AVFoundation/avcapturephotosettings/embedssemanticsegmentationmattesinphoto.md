@@ -25,8 +25,6 @@ The property’s default value is [`true`](https://developer.apple.com/documenta
 
 > ❗ **Important**:  Enabling semantic segmentation matte delivery requires a lengthy reconfiguration of the capture render pipeline. If you intend to capture semantic segmentation mattes, set this property to [`true`](https://developer.apple.com/documentation/swift/true) before calling the capture session’s [`startRunning()`](avcapturesession/startrunning().md) method.
 
- Enabling semantic segmentation matte delivery requires a lengthy reconfiguration of the capture render pipeline. If you intend to capture semantic segmentation mattes, set this property to [`true`](https://developer.apple.com/documentation/swift/true) before calling the capture session’s [`startRunning()`](avcapturesession/startrunning().md) method.
-
 ## See Also
 
 - [var enabledSemanticSegmentationMatteTypes: [AVSemanticSegmentationMatte.MatteType]](avcapturephotosettings/enabledsemanticsegmentationmattetypes.md)

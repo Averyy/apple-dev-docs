@@ -31,7 +31,7 @@ The UDP session is started automatically. Use KVO to observe the session’s sta
 
 ## See Also
 
-- [func bind(to: NEHotspotHelperCommand)](../foundation/nsmutableurlrequest/1619006-bind.md)
+- [func bind(to command: NEHotspotHelperCommand)](../Foundation/NSMutableURLRequest/bind(to:).md)
   Binds a URL request to the network interface associated with the hotspot helper command instance.
 - [func createTCPConnection(NWEndpoint) -> NWTCPConnection](nehotspothelpercommand/createtcpconnection(_:).md)
   Create a new TCP connection over the network associated with the command.

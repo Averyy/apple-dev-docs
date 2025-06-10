@@ -1,6 +1,6 @@
 # label
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The localized display label for the action.

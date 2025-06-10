@@ -9,6 +9,7 @@ Tells the view that one or more new touches occurred.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

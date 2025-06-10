@@ -1,6 +1,6 @@
 # ended
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A Boolean value that indicates whether the media played to the end. (read-only)

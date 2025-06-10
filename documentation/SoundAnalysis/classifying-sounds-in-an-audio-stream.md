@@ -45,8 +45,6 @@ When you create an audio engine instance, its default [`inputNode`](https://deve
 
 > ❗ **Important**:  To access the device’s microphone in iOS or watchOS, add a description for the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMicrophoneUsageDescription) key in your project’s `Info.plist` file.
 
- To access the device’s microphone in iOS or watchOS, add a description for the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSMicrophoneUsageDescription) key in your project’s `Info.plist` file.
-
 ##### Create a Stream Analyzer
 
 Analyze the microphone audio by configuring an [`SNAudioStreamAnalyzer`](snaudiostreamanalyzer.md) to the input device’s native PCM (pulse code modulation) audio format.
@@ -59,8 +57,6 @@ streamAnalyzer = SNAudioStreamAnalyzer(format: inputFormat)
 Audio stream analyzers only work with audio data in the PCM format, unlike [`SNAudioFileAnalyzer`](snaudiofileanalyzer.md) instances.
 
 > ❗ **Important**:  If the input device’s audio format changes, you must discard the current `SNAudioStreamAnalyzer` and create a new one that matches the input’s updated audio format.
-
- If the input device’s audio format changes, you must discard the current `SNAudioStreamAnalyzer` and create a new one that matches the input’s updated audio format.
 
 Create a sound classification request and a results observer (see [`Classifying Sounds in an Audio File`](classifying-sounds-in-an-audio-file.md)) and add them to the stream analyzer by calling [`add(_:withObserver:)`](snaudiostreamanalyzer/add(_:withobserver:).md).
 

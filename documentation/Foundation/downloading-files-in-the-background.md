@@ -129,4 +129,4 @@ Keep in mind, though, that each task has its own overhead. If you find you need 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/downloading-files-in-the-background)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/downloading-files-in-the-background)*

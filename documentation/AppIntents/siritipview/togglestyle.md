@@ -1,6 +1,6 @@
 # toggleStyle(_:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Sets the style for toggles in a view hierarchy.
@@ -10,7 +10,7 @@ Sets the style for toggles in a view hierarchy.
 - iPadOS 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 6.0+
 
 ## Declaration

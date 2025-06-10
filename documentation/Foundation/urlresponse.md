@@ -65,6 +65,7 @@ The related [`HTTPURLResponse`](httpurlresponse.md) class is a commonly used sub
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](nssecurecoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -22,8 +22,6 @@ The file format of the output is Universal Scene Description (USD).
 
 > 💡 **Tip**: Before iOS 17.4, the first letter of the USD file name needs to be a character other than a number.
 
-Before iOS 17.4, the first letter of the USD file name needs to be a character other than a number.
-
 ## Parameters
 
 - `url`: A location that the captured structure exports to.

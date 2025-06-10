@@ -1,6 +1,6 @@
 # sceneWillResignActive(_:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Tells the delegate that the scene is about to resign the active state and stop responding to user events.

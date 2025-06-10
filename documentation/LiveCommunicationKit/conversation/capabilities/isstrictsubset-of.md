@@ -5,6 +5,13 @@
 
 Returns a Boolean value that indicates whether this set is a strict subset of the given set.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift
@@ -19,7 +26,7 @@ func isStrictSubset(of other: Self) -> Bool
 
 Set  is a strict subset of another set  if every member of  is also a member of  and  contains at least one element that is not a member of .
 
-```swift
+```None
 let employees: Set = ["Alicia", "Bethany", "Chris", "Diana", "Eric"]
 let attendees: Set = ["Alicia", "Bethany", "Diana"]
 print(attendees.isStrictSubset(of: employees))

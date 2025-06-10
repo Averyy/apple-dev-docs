@@ -1,6 +1,6 @@
 # MLRegressorMetrics
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: struct
 
 Metrics you use to evaluate a regressor’s performance.
@@ -64,6 +64,7 @@ To understand what performance you can expect from the regressor, you start by l
 - [CustomPlaygroundDisplayConvertible](../Swift/CustomPlaygroundDisplayConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -81,4 +82,4 @@ To understand what performance you can expect from the regressor, you start by l
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateML/mlregressormetrics)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createml/mlregressormetrics)*

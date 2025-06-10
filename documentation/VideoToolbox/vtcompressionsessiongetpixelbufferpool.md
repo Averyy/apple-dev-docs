@@ -1,6 +1,6 @@
 # VTCompressionSessionGetPixelBufferPool(_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Returns a pool that provides ideal source pixel buffers for a compression session.

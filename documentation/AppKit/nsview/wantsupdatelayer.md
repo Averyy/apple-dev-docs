@@ -1,6 +1,6 @@
 # wantsUpdateLayer
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 A Boolean value indicating which drawing path the view takes when updating its contents.
@@ -53,4 +53,4 @@ If the [`canDrawSubviewsIntoLayer`](nsview/candrawsubviewsintolayer.md) property
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsview/wantsupdatelayer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsview/wantsupdatelayer)*

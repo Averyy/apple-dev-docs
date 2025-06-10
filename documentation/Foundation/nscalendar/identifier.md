@@ -62,6 +62,17 @@ Use these identifiers to specify the kind of calendar. The Gregorian calendar is
   Identifier for the Persian calendar.
 - [static let republicOfChina: NSCalendar.Identifier](nscalendar/identifier/republicofchina.md)
   Identifier for the Republic of China calendar.
+- [static let bangla: NSCalendar.Identifier](nscalendar/identifier/bangla.md)
+- [static let dangi: NSCalendar.Identifier](nscalendar/identifier/dangi.md)
+- [static let gujarati: NSCalendar.Identifier](nscalendar/identifier/gujarati.md)
+- [static let kannada: NSCalendar.Identifier](nscalendar/identifier/kannada.md)
+- [static let malayalam: NSCalendar.Identifier](nscalendar/identifier/malayalam.md)
+- [static let marathi: NSCalendar.Identifier](nscalendar/identifier/marathi.md)
+- [static let odia: NSCalendar.Identifier](nscalendar/identifier/odia.md)
+- [static let tamil: NSCalendar.Identifier](nscalendar/identifier/tamil.md)
+- [static let telugu: NSCalendar.Identifier](nscalendar/identifier/telugu.md)
+- [static let vietnamese: NSCalendar.Identifier](nscalendar/identifier/vietnamese.md)
+- [static let vikram: NSCalendar.Identifier](nscalendar/identifier/vikram.md)
 
 ## Relationships
 
@@ -70,6 +81,7 @@ Use these identifiers to specify the kind of calendar. The Gregorian calendar is
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

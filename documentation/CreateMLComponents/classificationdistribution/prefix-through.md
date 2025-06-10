@@ -1,6 +1,6 @@
 # prefix(through:)
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: method
 
 Returns a subsequence from the start of the collection through the specified position.

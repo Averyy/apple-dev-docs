@@ -1,6 +1,6 @@
 # GKGaussianDistribution
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: class
 
 A generator for random numbers that follow a  (also known as a ) across multiple samplings.
@@ -81,4 +81,4 @@ For more information on choosing and using randomizers in GameplayKit, read [`Ra
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GameplayKit/gkgaussiandistribution)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gameplaykit/gkgaussiandistribution)*

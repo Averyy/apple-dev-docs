@@ -1,6 +1,6 @@
 # MPSMatrix
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: cl
 
 A 2D array of data that stores the data's values.

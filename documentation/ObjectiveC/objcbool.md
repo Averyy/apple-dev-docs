@@ -39,6 +39,7 @@ struct ObjCBool
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [ExpressibleByBooleanLiteral](../Swift/ExpressibleByBooleanLiteral.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

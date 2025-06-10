@@ -1,6 +1,6 @@
 # Interacting with virtual content blended with passthrough
 
-**Framework**: Compositorservices
+**Framework**: Compositor Services
 
 Present a mixed immersion style space to draw content in a person’s surroundings, and choose how upper limbs appear with respect to rendered content.
 
@@ -16,6 +16,8 @@ Present a mixed immersion style space to draw content in a person’s surroundin
 
 - [Drawing fully immersive content using Metal](drawing-fully-immersive-content-using-metal.md)
   Create a fully immersive experience in visionOS using a custom Metal-based rendering engine.
+- [Rendering hover effects in Metal immersive apps](rendering_hover_effects_in_metal_immersive_apps.md)
+  Change the appearance of a rendered onscreen element when a player gazes at it.
 - [struct CompositorLayer](compositorlayer.md)
   A type that you use with an immersive space to display fully immersive content using Metal.
 - [protocol CompositorLayerConfiguration](compositorlayerconfiguration.md)
@@ -26,4 +28,4 @@ Present a mixed immersion style space to draw content in a person’s surroundin
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CompositorServices/interacting-with-virtual-content-blended-with-passthrough)*
+*[View on Apple Developer](https://developer.apple.com/documentation/compositorservices/interacting-with-virtual-content-blended-with-passthrough)*

@@ -19,7 +19,7 @@ var supportedRegions: [Locale.Region]? { get set }
 
 #### Discussion
 
-If you provide this array, the system filters the selectable payment passes to those the payment service providers (PSP) issued in the supported regions. Indicate the supported countries or regions by using [`Locale.Region`](https://developer.apple.com/documentation/foundation/locale/region) structures that represent the [`ISO 3166`](https://developer.apple.comhttps://www.iso.org/iso-3166-country-codes.html) country codes to filter.
+If you provide this array, the system filters the selectable payment passes to those the payment service providers (PSP) issued in the supported regions. Indicate the supported countries or regions by using [`Locale.Region`](https://developer.apple.com/documentation/Foundation/Locale/Region-swift.struct) structures that represent the [`ISO 3166`](https://developer.apple.comhttps://www.iso.org/iso-3166-country-codes.html) country codes to filter.
 
 The ordering of the elements you provide doesn’t affect the filtering of the cards. For example, debit cards may expect transactions only in the country or region of issuance for the card.
 

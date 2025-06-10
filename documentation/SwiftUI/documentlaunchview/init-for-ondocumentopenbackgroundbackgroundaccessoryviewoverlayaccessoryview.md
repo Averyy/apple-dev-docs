@@ -1,6 +1,6 @@
 # init(_:for:_:onDocumentOpen:background:backgroundAccessoryView:overlayAccessoryView:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: init
 
 Creates a view to present when launching document-related user experiences using a localized title, custom actions, a background view, and accessory views.

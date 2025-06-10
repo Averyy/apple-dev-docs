@@ -1,6 +1,6 @@
 # HistoricalComparisons.Iterator
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: typealias
 
 A type that provides the collection’s iteration interface and encapsulates its iteration state.

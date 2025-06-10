@@ -1,6 +1,6 @@
 # searchTemplate
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Searches for a media item based on user input.
 
@@ -120,4 +120,4 @@ The following listing shows the output for the above example:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/searchtemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/searchtemplate)*

@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_STATE_RUN
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 The activity is eligible to run according to its criteria.

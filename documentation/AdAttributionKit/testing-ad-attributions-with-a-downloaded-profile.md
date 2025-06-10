@@ -1,6 +1,6 @@
 # Testing ad attributions with a downloaded profile
 
-**Framework**: Adattributionkit
+**Framework**: AdAttributionKit
 
 Reduce the time-window for ad attributions and inspect postbacks using a proxy during testing.
 
@@ -41,4 +41,4 @@ With the installed profile, the AdAttributionKit postbacks that the device sends
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AdAttributionKit/testing-ad-attributions-with-a-downloaded-profile)*
+*[View on Apple Developer](https://developer.apple.com/documentation/adattributionkit/testing-ad-attributions-with-a-downloaded-profile)*

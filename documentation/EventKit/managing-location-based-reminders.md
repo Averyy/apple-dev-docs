@@ -1,174 +1,199 @@
-# Managing Location-Based Reminders
+# Managing location-based reminders
 
 **Framework**: EventKit
 
-Add, fetch, complete, remove, and sort location-based reminders in your app.
-
-**Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Xcode 12.0+
+Access reminders set up with geofence-enabled alarms on a person’s calendars.
 
 #### Overview
 
-With the Reminders app, users can create reminders with attachments, and alarms based on time and location. When Location Services is turned on, users receive location-based reminders when entering or leaving a specified geographic area or geofence. This sample demonstrates how to add, fetch, complete, remove, and sort location-based reminders.
+With the Reminders app, people can create reminders with alarms based on time and location. When Location Services is turned on, people receive location-based reminders when entering or leaving a specified geographic area or geofence. This sample code demonstrates how to add, fetch, complete, remove, filter, and sort location-based reminders. You app must first request full access to reminders from the person using the app before it can access their reminder data. An app with full access can create, edit, save, delete, and fetch all reminders on all of the person’s calendars. For more information, see [`Accessing the event store`](accessing-the-event-store.md). Next, register your app for [`EKEventStoreChangedNotification`](EKEventStoreChangedNotification.md) notifications at launch to listen for any changes to the person’s Calendar database. When your app receives this notification, consider your current reminder data are stale or invalid and refetch all your reminders. For more information, see [`Updating with notifications`](updating-with-notifications.md).
 
-##### Provide a Purpose String
+##### Configure the Sample Code Project
 
-The sample first requests and receives authorization from the user before the app attempts to access their reminder data. It provides a purpose string or usage description that describes how the app intends to use the user’s reminder data. It then adds the [`NSRemindersUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsremindersusagedescription) key to the app’s `Info.plist`. The sample sets its value to a string that explains why the app needs access to reminder data. The system displays the string when prompting the user for authorization.
+Before running the sample code project in Xcode, select the sample target, then configure it to use your team for signing. For more information, see Assign the project to a team in [`Preparing your app for distribution`](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution).
 
-> ❗ **Important**: This `NSRemindersUsageDescription` key is required for apps that access the user’s reminder data. Apps crash when the key is absent.
+##### Provide a Map Annotation
 
-This `NSRemindersUsageDescription` key is required for apps that access the user’s reminder data. Apps crash when the key is absent.
+The sample app presents a map with custom annotations that someone can use to create location-based reminders within the app. It uses location-specific data saved in the `MapData.json` file to create annotations for the map. The sample defines a `MapAnnotation` data type to represent each annotation. `MapData.json` contains three `MapAnnotation` entries. To test reminders around other locations, duplicate and update a `MapAnnotation` entry in `MapData.json` with other data as needed.
 
-##### Request Authorization
+The sample displays a settings button that allows the person to grant or deny the app access to location services. If the person grants permission, the app uses the person’s current location to add a user annotation to the map. If the person denies access, the app does nothing.
 
-Set up your app to instantiate and use a single instance of [`EKEventStore`](ekeventstore.md) that manages all reminder-related tasks. An `EKEventStore` object requires a significant amount of time to initialize and release. The user might add, remove, or update reminders while your app is running. Register for an [`EKEventStoreChanged`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/nsnotification/name/ekeventstorechanged) notification to be notified about changes to the Calendar database. When you receive this notification, refresh all your reminder data. It’s possible that your current data is stale or invalid. For more information on change notification, see [`Updating with Notifications`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/updating_with_notifications) for details.
+> ❗ **Important**: The app includes the [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSLocationWhenInUseUsageDescription) key in its `Info.plist`. This key is required for apps that access the person’s location services. For more information on using location services, see [`Configuring your app to use location services`](https://developer.apple.com/documentation/CoreLocation/configuring-your-app-to-use-location-services).
 
-The user grants or denies permission when apps request access to their reminder data. Because the user can change the app’s authorization status later in the Settings app ( Settings > Privacy > Reminders) on their device, the sample calls `EKEventStore`’s [`authorizationStatus(for:)`](ekeventstore/authorizationstatus(for:).md) with a [`EKEntityType.reminder`](ekentitytype/reminder.md) entity type before attempting to access their reminder data.
+##### Provide a Full Access Usage Description for Reminders
+
+The sample includes the [`NSRemindersFullAccessUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSRemindersFullAccessUsageDescription) key in its `Info.plist` file. The value of the key is a string that explains why the app needs access to a person’s reminders. The system displays the string when prompting the person for authorization.
+
+> ❗ **Important**: The `NSRemindersFullAccessUsageDescription` key is required for apps that access a person’s reminders. On iOS 17 or later, if your app doesn’t include `NSRemindersFullAccessUsageDescription` or the older [`NSRemindersUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSRemindersUsageDescription) key, iOS automatically denies any access request without a prompt. For more information, see [`Accessing the event store`](accessing-the-event-store.md).
+
+##### Check Your App Authorization Status
+
+The sample app verifies its authorization status upon launching. The authorization status of the app is [`EKAuthorizationStatus.notDetermined`](EKAuthorizationStatus/notDetermined.md) until the person authorizes or denies access. The person can grant or deny the app access to their reminder data, then change the authorization status later in the Settings app. To determine its status, the app calls the [`authorizationStatus(for:)`](EKEventStore/authorizationStatus(for:).md) class method of [`EKEventStore`](EKEventStore.md) with an entity type [`EKEntityType.reminder`](EKEntityType/reminder.md):
 
 ```swift
-guard EKEventStore.authorizationStatus(for: .reminder) == .notDetermined else {
-    // The user may have already granted, denied, or restricted access to Reminders.
-    verifyAuthorizationStatus()
-    return
+authorizationStatus = EKEventStore.authorizationStatus(for: .reminder)
+```
+
+##### Request Full Access
+
+If the authorization status is [`EKAuthorizationStatus.notDetermined`](EKAuthorizationStatus/notDetermined.md), the sample app initializes a single instance of [`EKEventStore`](EKEventStore.md), `eventStore`, then calls its [`requestFullAccessToReminders(completion:)`](EKEventStore/requestFullAccessToReminders(completion:).md) method to prompt the person for full access:
+
+```swift
+return try await withCheckedThrowingContinuation { continuation in
+    eventStore.requestFullAccessToReminders { granted, error in
+        if let error {
+            continuation.resume(throwing: error)
+        }
+        continuation.resume(returning: granted)
+    }
 }
 ```
 
-If the authorization status is [`.notDetermined`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekauthorizationstatus/notDetermined), create an instance of `EKEventStore`, then store a strong reference to it.
+If the person approves the request, the app receives a [`EKAuthorizationStatus.fullAccess`](EKAuthorizationStatus/fullAccess.md) authorization status. It fetches location reminders in all of the person’s calendars, then displays them organized by priority. If the person denies the request, the app gets no access and displays a message prompting the person to grant the app full access in Settings on their device.
+
+> ❗ **Important**: Set up your app to instantiate and use a single instance of [`EKEventStore`](EKEventStore.md) that manages all reminder-related tasks. An `EKEventStore` object requires a significant amount of time to initialize and release.
+
+##### Check for a Default List
+
+Creating a reminder requires a list, which is a calendar for these items. The app calls [`defaultCalendarForNewReminders()`](EKEventStore/defaultCalendarForNewReminders().md) on `eventStore` to check whether the person has specified a default list for reminders.
 
 ```swift
-private var store = EKEventStore()
+eventStore.defaultCalendarForNewReminders() != nil
 ```
 
-Next, call its [`requestAccess(to:completion:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/requestaccess) method to prompt the user for access.
-
-```swift
-store.requestAccess(to: .reminder, completion: {(granted, error) in
-    if granted { self.accessGranted() }
-})
-```
-
-The system remembers the user’s answer, so that subsequent calls to `requestAccess(to:completion:)` don’t again prompt the user. For more information on user’s reminder data access, see [`Accessing the Event Store`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/accessing_the_event_store).
-
-##### Map Annotations
-
-The sample app uses the current user location and location-specific data saved in the `MapData.plist` file to create annotations for the map. It defines a `MapData` data type to represent each point of interest. `MapData.plist` contains three `MapData` entries. To test reminders around other locations, duplicate and update a `MapData` entry in `MapData.plist` with other data as needed.
-
-> ❗ **Important**: Creating location-based reminders doesn’t require location services. The sample app uses location services to display the user’s current location on the map. As such, it includes and configures the [`NSLocationWhenInUseUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription) key in its `Info.plist`. This key is required for apps that access the user’s location services. For more information on user’s location services access, see [`Requesting Authorization for Location Services`](https://developer.apple.comhttps://developer.apple.com/documentation/corelocation/requesting_authorization_for_location_services).
-
-Creating location-based reminders doesn’t require location services. The sample app uses location services to display the user’s current location on the map. As such, it includes and configures the [`NSLocationWhenInUseUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nslocationwheninuseusagedescription) key in its `Info.plist`. This key is required for apps that access the user’s location services. For more information on user’s location services access, see [`Requesting Authorization for Location Services`](https://developer.apple.comhttps://developer.apple.com/documentation/corelocation/requesting_authorization_for_location_services).
-
-##### Check for the Existence of a Default List
-
-Creating a reminder requires a list, which is a calendar for these items. Use `EKEventStore`’s [`defaultCalendarForNewReminders()`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/defaultcalendarfornewreminders) to check whether the user has specified a default list for reminders. If `defaultCalendarForNewReminders()` returns no value, prompt the user to create a list in the Reminders app or provide a mechanism that lets them create it from within the app. The app provides an `Add List` button that allows users to create a new list.
+The app fetches and displays location reminders in all of the person’s calendars if `defaultCalendarForNewReminders()` returns a value, and shows a message prompting the person to create a list, otherwise.
 
 ##### Create Location Based Reminders
 
-A location-based reminder is a reminder created with a geofence-enabled alarm. A geofence-enabled alarm has a structured location and proximity configured. The structured location consists of a location object and radius. The [`radius`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekstructuredlocation/radius) is defined in meters and uses the system’s default radius when its value is 0. When the user provides a value for `radius` in a unit other than meters such as miles, convert this value before using it. The sample uses the following steps to create a location-based reminder.
+A location-based reminder is a reminder created with a geofence-enabled alarm. A geofence-enabled alarm has a structured location and proximity configured. The structured location consists of a location object and radius. To use the default radius, set its value to 0. The sample uses the following steps to create a location-based reminder:
 
-First, it creates an [`EKReminder`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekreminder) object using [`init(eventStore:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekreminder/init), then it sets its [`title`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekcalendaritem/title) and [`calendar`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekcalendaritem/calendar) properties:
+1. Create a reminder object.
+2. Configure the reminder’s calendar and title properties.
+3. Add a structured location.
+4. Add an alarm.
+5. Save the reminder.
+
+First, the sample app creates an [`EKReminder`](EKReminder.md) object using [`init(eventStore:)`](EKReminder/init(eventStore:).md), then it sets the [`title`](EKCalendarItem/title.md) and [`calendar`](EKCalendarItem/calendar.md) properties, and other properties, such as priority and time zone:
 
 ```swift
-guard let calendar = store.defaultCalendarForNewReminders() else { throw LocationBasedRemindersError.missingDefaultRemindersList }
-let reminder = EKReminder(eventStore: store)
+let reminder = EKReminder(eventStore: eventStore)
 reminder.calendar = calendar
-reminder.title = title
+reminder.title = entry.title
+reminder.priority = entry.priority
+
+/*
+    The app creates reminders with a specific date and time. To create an
+    all-day reminder, set `dueDateComponents` to a date component without
+    hour, minute, and second components.
+*/
+reminder.dueDateComponents = Date.next7DaysComponents
+
+/*
+    A floating reminder is one that isn't associated with a specific time
+    zone. Set `timeZone` to `nil` if you wish to have a floating reminder.
+*/
+reminder.timeZone = TimeZone.current
 ```
 
-> ❗ **Important**: The `title` and `calendar` properties are required and must be set before saving the reminder.
+> ❗ **Important**: The `calendar` and `title` properties are required and must be set before saving the reminder.
 
-The `title` and `calendar` properties are required and must be set before saving the reminder.
-
-Next, it creates a structured location by using either [`EKStructuredLocation`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekstructuredlocation)’s [`init(title:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekstructuredlocation/init) or [`init(title:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekstructuredlocation/init). When the location object has latitude and longitude coordinates, it uses `init(title:)` to create the structured location. The sample initializes an [`CLLocation`](https://developer.apple.comhttps://developer.apple.com/documentation/corelocation/cllocation) object with the specified latitude and longitude, then assigns it to the created structured location’s [`geoLocation`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekstructuredlocation/geolocation) property:
+Next, the sample creates a structured location by using either [`EKStructuredLocation`](EKStructuredLocation.md)’s [`init(title:)`](EKStructuredLocation/init(title:).md) or [`init(mapItem:)`](EKStructuredLocation/init(mapItem:).md) methods. When the location object has latitude and longitude coordinates, the app uses `init(title:)` to create the structured location. The sample initializes an [`CLLocation`](https://developer.apple.comhttps://developer.apple.com/documentation/corelocation/cllocation) object with the specified latitude and longitude, then assigns it to the created structured location’s [`geoLocation`](EKStructuredLocation/geoLocation.md) property:
 
 ```swift
-let structuredLocation = EKStructuredLocation(title: geofence.title)
-structuredLocation.geoLocation = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
+let structuredLocation = EKStructuredLocation(title: annotation.name)
+structuredLocation.geoLocation = CLLocation(latitude: annotation.coordinates.latitude, longitude: annotation.coordinates.longitude)
 ```
 
-When the location object is an [`MKMapItem`](https://developer.apple.comhttps://developer.apple.com/documentation/mapkit/mkmapitem) object, the sample uses `init(mapItem:)` to create the structured
+When the location object is an [`MKMapItem`](https://developer.apple.com/documentation/MapKit/MKMapItem) object, the sample uses `init(mapItem:)` to create the structured location:
 
 ```swift
 let structuredLocation = EKStructuredLocation(mapItem: mapItem)
 ```
 
-Then, it sets the structured location’s `radius` property to a value in meters:
+EventKit defines the structured location’s [`radius`](EKStructuredLocation/radius.md) property in meters. When someone enters a value for the radius, the app checks the person’s preferences for unit of length measurement. If the person’s preferred unit of length is a unit other than meters, the sample converts the radius value to meters, then assigns the converted value to the structured location’s `radius` property:
 
 ```swift
-// The app displays the radius's value in miles. Let's convert it from miles to meters before assigning it to the radius property.
-structuredLocation.radius = 1609.344 * geofence.radius
+// Get the person's preferred unit of length measurement.
+let preferredUnit = UnitLength(forLocale: .current, usage: .asProvided)
+structuredLocation.radius = (preferredUnit == .meters) ? entry.radius : entry.radius.convert(from: preferredUnit, to: .meters)
 ```
 
-After that, it creates an [`EKAlarm`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekalarm) object, then sets its [`structuredLocation`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekalarm/structuredlocation) property to the created structured location object. The sample then sets the [`proximity`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekalarm/proximity) property to a value to finish configuring the alarm’s geofence:
+Next, the sample creates an [`EKAlarm`](EKAlarm.md) object, then sets its [`EKStructuredLocation`](EKStructuredLocation.md) property to the created structured location object. The sample then sets the [`proximity`](EKAlarm/proximity.md) property to a value to finish configuring the alarm’s geofence:
 
 ```swift
-let alarm = EKAlarm()
+let alarm = EKAlarm(relativeOffset: 0)
 alarm.structuredLocation = structuredLocation
-alarm.proximity = geofence.proximity
+alarm.proximity = entry.proximity
 ```
 
-The sample adds the created alarm to the reminder. For more information on adding alarms, see [`Setting an Alarm`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/setting_an_alarm).
+The app adds the created alarm to the reminder. For more information on adding alarms, see [`Setting an alarm`](setting-an-alarm.md).
 
 ```swift
 reminder.addAlarm(alarm)
 ```
 
-Finally, it saves the reminder to the user’s Calendar database:
+Finally, it saves the reminder to the person’s Calendar database:
 
 ```swift
-do {
-    try store.save(reminder, commit: true)
-} catch {
-    handleError(error, with: reminder.title)
-}
+try eventStore.save(reminder, commit: true)
 ```
 
 ##### Fetch Location Based Reminders
 
-The [`fetchReminders(matching:completion:)`](https://developer.apple.comhttps://developer.apple.com/documentation/eventkit/ekeventstore/fetchreminders) method asynchronously fetches all reminders matching a given predicate. When successful, `fetchReminders(matching:completion:)` returns an array that contains both time-based and location-based reminders.
+The [`fetchReminders(matching:completion:)`](EKEventStore/fetchReminders(matching:completion:).md) method asynchronously fetches all reminders matching a given predicate. The app calls this method with [`predicateForReminders(in:)`](EKEventStore/predicateForReminders(in:).md) to fetch complete and incomplete reminders. The predicate takes `nil` or an array of [`calendar`](EKCalendarItem/calendar.md) objects in its `calendars` parameters. Pass `nil` to fetch from all of the person’s calendars, and an array to fetch reminders from a subset of the person’s calendars. The app passes `nil` to `predicateForReminders(in:)`:
 
 ```swift
-// Predicate that fetches all reminders in all of the user's calendars.
-let predicate = store.predicateForReminders(in: nil)
-var result = [EKReminder]()
-store.fetchReminders(matching: predicate, completion: {(reminders: [Any]?) in
-    if let reminders = reminders as? [EKReminder] {
-        // Filter reminders for the location ones.
-        result = reminders.filter({ (item: EKReminder) in item.isLocation })
-    }
-    
-    DispatchQueue.main.async {
-        completion(result)
-    }
-})
+let predicate = eventStore.predicateForReminders(in: nil)
 ```
 
-To retrieve location-based reminders, the sample parses this array for reminders defined with an existing alarm that has a `structuredlocation` and `proximity` value.
+Then, the app executes the fetch request. If the request succeeds, `fetchReminders(matching:completion:)` returns an array that contains both time-based and location-based reminders:
 
 ```swift
-/// Indicates whether a reminder is a location-based one.
+return await withCheckedContinuation { continuation in
+    eventStore.fetchReminders(matching: predicate) { reminders in
+        var result: [LocationReminder] = []
+        
+        if let reminders {
+            result = reminders
+                .filter(\.isLocation)
+                .map { LocationReminder(reminder: $0) }
+        }
+        continuation.resume(returning: result)
+    }
+}
+```
+
+To retrieve location-based reminders, the app parses the returned array for reminders defined with an existing alarm that has a `structuredlocation` and `proximity` value:
+
+```swift
+/// Specifies whether the reminder is location-based.
 var isLocation: Bool {
-    guard let alarms = self.alarms else { return false }
+    guard let alarms else { return false }
     
-    return !alarms.filter({(alarm: EKAlarm) in
-        return (alarm.structuredLocation != nil) && ((alarm.proximity == .enter) || (alarm.proximity == .leave))
-    }).isEmpty
+    let proximityAlarms = alarms.filter {
+        $0.structuredLocation != nil && ($0.proximity == .enter || $0.proximity == .leave)
+    }
+    
+    return !proximityAlarms.isEmpty
 }
 ```
 
-##### Sort Reminders
+##### Filter and Sort Reminders
 
-Retrieving reminders from the Calendar database returns reminders sorted by creation date. To sort an array of `EKReminder` objects by title, or any other property, the sample implements [`sorted(by:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/array/sorted) on the array with a predicate that uses the property.
+After fetching the location-based reminders, the app displays a segmented control that organizes the fetched reminders by priority: None, Low, Medium, and High. Fetching reminders from the Calendar database returns reminders sorted by creation date. The app offers a menu that lets people choose how to sort the reminders by creation date, due date, or title in ascending order. When someone selects a priority in the control, the sample inspects the fetch result. If the result contains location reminders with the priority the person selected, the app uses the person’s sorting preferences to sort the reminders, then it displays them. The sample uses key paths to sort the fetched location-based reminders.
 
 ```swift
- /// - Returns: An array of reminders sorted by title in an ascending order.
-func sortedByTitle() -> [EKReminder] {
-    return self.sorted(by: { (first: EKReminder, second: EKReminder) in
-        first.title.localizedCaseInsensitiveCompare(second.title) == .orderedAscending
-    })
+/// Sorts reminders by creation date, due date, or title in ascending order.
+func reminders(sortedBy sort: ReminderSortValue) -> [LocationReminder] {
+    switch sort {
+    case .creationDate: return self.sorted(by: \.creationDate)
+    case .dueDate: return self.sorted(by: \.dueDate)
+    case .title: return self.sorted(by: \.title)
+    }
 }
 ```
+
+If the fetch result contains no value, the app prompts the person to add some location reminders with the selected priority.
 
 ## See Also
 

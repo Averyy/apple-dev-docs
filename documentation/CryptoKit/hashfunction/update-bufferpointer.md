@@ -1,6 +1,6 @@
 # update(bufferPointer:)
 
-**Framework**: Cryptokit  
+**Framework**: Apple CryptoKit  
 **Kind**: method  
 **Required**: Yes
 

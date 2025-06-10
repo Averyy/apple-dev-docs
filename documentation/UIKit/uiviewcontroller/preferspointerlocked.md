@@ -1,6 +1,6 @@
 # prefersPointerLocked
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 A Boolean value that indicates whether the view controller prefers to lock the pointer to a specific scene.

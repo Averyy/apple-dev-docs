@@ -26,8 +26,6 @@ This property is optional. Set this property by assigning it to an instance of [
 
 > ❗ **Important**:  You can’t use this property with [`multiTokenContexts`](pkpaymentrequest/multitokencontexts.md) or [`automaticReloadPaymentRequest`](pkpaymentrequest/automaticreloadpaymentrequest.md) properties. Simultaneous use of these properties results in a runtime error and cancels the payment request. Simultaneous use of these properties results in a runtime error and cancels the payment request.
 
- You can’t use this property with [`multiTokenContexts`](pkpaymentrequest/multitokencontexts.md) or [`automaticReloadPaymentRequest`](pkpaymentrequest/automaticreloadpaymentrequest.md) properties. Simultaneous use of these properties results in a runtime error and cancels the payment request. Simultaneous use of these properties results in a runtime error and cancels the payment request.
-
 ## See Also
 
 - [class PKRecurringPaymentRequest](pkrecurringpaymentrequest.md)

@@ -1,6 +1,6 @@
 # open(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Launches the application by URL.

@@ -49,14 +49,19 @@ For more information, see [`Presenting the suggestions picker and processing a s
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also
 
 - [struct JournalingSuggestion](journalingsuggestion.md)
   High-level information about a suggestion that a person chooses in the journaling suggestions picker.
+- [class JournalingSuggestionsConfiguration](journalingsuggestionsconfiguration.md)
+  The scheduled configuration settings for your app.
 - [protocol JournalingSuggestionAsset](journalingsuggestionasset.md)
   An interface for the content that the suggestions picker presents.
+- [struct JournalingSuggestionPresentationToken](journalingsuggestionpresentationtoken.md)
+  A token you use to modify the content of the presentation.
 
 
 ---

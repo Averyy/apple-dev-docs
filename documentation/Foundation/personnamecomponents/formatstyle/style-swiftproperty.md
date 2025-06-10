@@ -123,8 +123,6 @@ The table below shows the formatted string output for each Short Name configurat
 
 > ❗ **Important**:  `PersonNameComponents.FormatStyle` doesn’t account for prepositional particles. Representations using the Short style that specify a family name initial naively use the first letter unit of the particle as the initial.
 
- `PersonNameComponents.FormatStyle` doesn’t account for prepositional particles. Representations using the Short style that specify a family name initial naively use the first letter unit of the particle as the initial.
-
 ###### Abbreviated
 
 The Abbreviated style offers the most compact representation of names, similar to a monogram.
@@ -152,8 +150,6 @@ If the Abbreviated style is unavailable, the Short style is used instead—unles
 | Thai (th-TH) | ส |
 
 > ❗ **Important**:  `PersonNameComponents.FormatStyle` doesn’t account for prepositional particles or compound names. Representations using the Abbreviated style uses the first letter unit of each name component, regardless.
-
- `PersonNameComponents.FormatStyle` doesn’t account for prepositional particles or compound names. Representations using the Abbreviated style uses the first letter unit of each name component, regardless.
 
 ## See Also
 

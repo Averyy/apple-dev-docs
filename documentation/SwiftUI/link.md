@@ -17,7 +17,8 @@ A control for navigating to a URL.
 ## Declaration
 
 ```swift
-struct Link<Label> where Label : View
+@MainActor
+@preconcurrency struct Link<Label> where Label : View
 ```
 
 #### Overview

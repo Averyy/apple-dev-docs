@@ -1,6 +1,6 @@
 # xpc_array_set_fd(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Inserts a file descriptor into an array.

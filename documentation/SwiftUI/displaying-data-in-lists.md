@@ -1,6 +1,6 @@
 # Displaying data in lists
 
-**Framework**: Swiftui
+**Framework**: SwiftUI
 
 Visualize collections of data with platform-appropriate appearance.
 
@@ -213,4 +213,4 @@ You can use the [`navigationViewStyle(_:)`](view/navigationviewstyle(_:).md) vie
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/displaying-data-in-lists)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/displaying-data-in-lists)*

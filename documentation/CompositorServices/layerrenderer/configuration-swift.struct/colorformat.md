@@ -1,11 +1,12 @@
 # colorFormat
 
-**Framework**: Compositorservices  
+**Framework**: Compositor Services  
 **Kind**: property
 
 The pixel format to use for color textures.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -28,4 +29,4 @@ Use this value to determine the pixel format for color textures in a frame. At c
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CompositorServices/layerrenderer/configuration-swift.struct/colorformat)*
+*[View on Apple Developer](https://developer.apple.com/documentation/compositorservices/layerrenderer/configuration-swift.struct/colorformat)*

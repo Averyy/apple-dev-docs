@@ -14,8 +14,6 @@ In general, each GPU in the system has its advantages and tradeoffs, depending o
 
 > 💡 **Tip**:  As an alternative to implementing a policy that selects a GPU and a display for a task, your app can suggest configurations to a person and let them decide.
 
- As an alternative to implementing a policy that selects a GPU and a display for a task, your app can suggest configurations to a person and let them decide.
-
 ##### Consider Various Gpu and Display Configurations
 
 For a Mac with one built-in GPU — either integrated or discrete — that GPU always drives the built-in display.

@@ -1,6 +1,6 @@
 # beginPath
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Denotes the beginning of new path.

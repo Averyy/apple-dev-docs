@@ -1,6 +1,6 @@
 # addValue(_:toAttribute:)
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Adds a value to an attribute of the record.

@@ -6,6 +6,7 @@
 A Boolean value that indicates whether the current runtime environment supports world-tracking providers.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

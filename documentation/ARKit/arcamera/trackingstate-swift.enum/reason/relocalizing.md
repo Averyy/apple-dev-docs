@@ -31,8 +31,6 @@ For relocalization to succeed, the device must be returned to a position and ori
 
 > ❗ **Important**:  When in the [`ARCamera.TrackingState.Reason.relocalizing`](arcamera/trackingstate-swift.enum/reason/relocalizing.md) state, offer the user a way out in case relocalization never succeeds. For example, offer a button for resetting the session, which appears after the relocalizing state has remained for a fixed amount of time.
 
- When in the [`ARCamera.TrackingState.Reason.relocalizing`](arcamera/trackingstate-swift.enum/reason/relocalizing.md) state, offer the user a way out in case relocalization never succeeds. For example, offer a button for resetting the session, which appears after the relocalizing state has remained for a fixed amount of time.
-
 ## See Also
 
 - [ARCamera.TrackingState.Reason.initializing](arcamera/trackingstate-swift.enum/reason/initializing.md)

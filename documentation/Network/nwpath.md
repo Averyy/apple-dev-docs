@@ -51,8 +51,16 @@ struct NWPath
 - [let remoteEndpoint: NWEndpoint?](nwpath/remoteendpoint.md)
   The remote endpoint in use by a connection’s network path.
 ### Instance Properties
+- [var isUltraConstrained: Bool](nwpath/isultraconstrained.md)
+  Checks if the path uses an NWInterface that is considered to be constrained by user preference
+- [var linkQuality: NWPath.LinkQuality](nwpath/linkquality-swift.property.md)
+  Represents the link quality measurement of the link layer network attachment Use this value to tune initial values for algorithms that can scale with the capabilities of the network. Do not use this value to gate connection attempts or to override adjustments that would be made based on actual network performance.
 - [var unsatisfiedReason: NWPath.UnsatisfiedReason](nwpath/unsatisfiedreason-swift.property.md)
+- [var wifiAware: WAPath?](nwpath/wifiaware.md)
+  Current status and performance information for Wi-Fi Aware, or `nil` if this path is not over Wi-Fi Aware.
 ### Enumerations
+- [NWPath.LinkQuality](nwpath/linkquality-swift.enum.md)
+  Represents the link quality measurement of the link layer network attachment
 - [NWPath.UnsatisfiedReason](nwpath/unsatisfiedreason-swift.enum.md)
 
 ## Relationships
@@ -61,6 +69,7 @@ struct NWPath
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

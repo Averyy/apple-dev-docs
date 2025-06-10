@@ -30,17 +30,17 @@ This cluster allows a client to manage the power draw of a device. An example of
 - [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclusterdeviceenergymanagement/init(device:endpointid:queue:).md)
   For all instance methods (reads, writes, commands) that take a completion, the completion will be called on the provided queue.
 ### Instance Methods
-- [func cancelPowerAdjustRequest(completion: MTRStatusCompletion)](mtrbaseclusterdeviceenergymanagement/cancelpoweradjustrequest(completion:).md)
-- [func cancelPowerAdjustRequest(with: MTRDeviceEnergyManagementClusterCancelPowerAdjustRequestParams?, completion: MTRStatusCompletion)](mtrbaseclusterdeviceenergymanagement/cancelpoweradjustrequest(with:completion:).md)
+- [func cancelPowerAdjustRequest(completion: ((any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/cancelpoweradjustrequest(completion:).md)
+- [func cancelPowerAdjustRequest(with: MTRDeviceEnergyManagementClusterCancelPowerAdjustRequestParams?, completion: ((any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/cancelpoweradjustrequest(with:completion:).md)
   Command CancelPowerAdjustRequest
-- [func cancelRequest(completion: MTRStatusCompletion)](mtrbaseclusterdeviceenergymanagement/cancelrequest(completion:).md)
-- [func cancelRequest(with: MTRDeviceEnergyManagementClusterCancelRequestParams?, completion: MTRStatusCompletion)](mtrbaseclusterdeviceenergymanagement/cancelrequest(with:completion:).md)
+- [func cancelRequest(completion: ((any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/cancelrequest(completion:).md)
+- [func cancelRequest(with: MTRDeviceEnergyManagementClusterCancelRequestParams?, completion: ((any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/cancelrequest(with:completion:).md)
   Command CancelRequest
-- [func modifyForecastRequest(with: MTRDeviceEnergyManagementClusterModifyForecastRequestParams, completion: MTRStatusCompletion)](mtrbaseclusterdeviceenergymanagement/modifyforecastrequest(with:completion:).md)
+- [func modifyForecastRequest(with: MTRDeviceEnergyManagementClusterModifyForecastRequestParams, completion: ((any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/modifyforecastrequest(with:completion:).md)
   Command ModifyForecastRequest
-- [func pauseRequest(with: MTRDeviceEnergyManagementClusterPauseRequestParams, completion: MTRStatusCompletion)](mtrbaseclusterdeviceenergymanagement/pauserequest(with:completion:).md)
+- [func pauseRequest(with: MTRDeviceEnergyManagementClusterPauseRequestParams, completion: ((any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/pauserequest(with:completion:).md)
   Command PauseRequest
-- [func powerAdjustRequest(with: MTRDeviceEnergyManagementClusterPowerAdjustRequestParams, completion: MTRStatusCompletion)](mtrbaseclusterdeviceenergymanagement/poweradjustrequest(with:completion:).md)
+- [func powerAdjustRequest(with: MTRDeviceEnergyManagementClusterPowerAdjustRequestParams, completion: ((any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/poweradjustrequest(with:completion:).md)
   Command PowerAdjustRequest
 - [func readAttributeAbsMaxPower(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/readattributeabsmaxpower(completion:).md)
 - [func readAttributeAbsMinPower(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/readattributeabsminpower(completion:).md)
@@ -55,12 +55,12 @@ This cluster allows a client to manage the power draw of a device. An example of
 - [func readAttributeGeneratedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/readattributegeneratedcommandlist(completion:).md)
 - [func readAttributeOptOutState(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/readattributeoptoutstate(completion:).md)
 - [func readAttributePowerAdjustmentCapability(completion: (MTRDeviceEnergyManagementClusterPowerAdjustCapabilityStruct?, (any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/readattributepoweradjustmentcapability(completion:).md)
-- [func requestConstraintBasedForecast(with: MTRDeviceEnergyManagementClusterRequestConstraintBasedForecastParams, completion: MTRStatusCompletion)](mtrbaseclusterdeviceenergymanagement/requestconstraintbasedforecast(with:completion:).md)
+- [func requestConstraintBasedForecast(with: MTRDeviceEnergyManagementClusterRequestConstraintBasedForecastParams, completion: ((any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/requestconstraintbasedforecast(with:completion:).md)
   Command RequestConstraintBasedForecast
-- [func resumeRequest(completion: MTRStatusCompletion)](mtrbaseclusterdeviceenergymanagement/resumerequest(completion:).md)
-- [func resumeRequest(with: MTRDeviceEnergyManagementClusterResumeRequestParams?, completion: MTRStatusCompletion)](mtrbaseclusterdeviceenergymanagement/resumerequest(with:completion:).md)
+- [func resumeRequest(completion: ((any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/resumerequest(completion:).md)
+- [func resumeRequest(with: MTRDeviceEnergyManagementClusterResumeRequestParams?, completion: ((any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/resumerequest(with:completion:).md)
   Command ResumeRequest
-- [func startTimeAdjustRequest(with: MTRDeviceEnergyManagementClusterStartTimeAdjustRequestParams, completion: MTRStatusCompletion)](mtrbaseclusterdeviceenergymanagement/starttimeadjustrequest(with:completion:).md)
+- [func startTimeAdjustRequest(with: MTRDeviceEnergyManagementClusterStartTimeAdjustRequestParams, completion: ((any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/starttimeadjustrequest(with:completion:).md)
   Command StartTimeAdjustRequest
 - [func subscribeAttributeAbsMaxPower(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/subscribeattributeabsmaxpower(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeAbsMinPower(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterdeviceenergymanagement/subscribeattributeabsminpower(with:subscriptionestablished:reporthandler:).md)

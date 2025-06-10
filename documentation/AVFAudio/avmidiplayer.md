@@ -25,8 +25,6 @@ For more information about preparing your app to play audio, see [`Configuring y
 
 > ❗ **Important**:  For more advanced MIDI playback capabilities, like playing MIDI data through an external synthesizer or sampler, use [`AVAudioEngine`](avaudioengine.md) instead.
 
- For more advanced MIDI playback capabilities, like playing MIDI data through an external synthesizer or sampler, use [`AVAudioEngine`](avaudioengine.md) instead.
-
 ## Topics
 
 ### Creating a MIDI player
@@ -37,7 +35,7 @@ For more information about preparing your app to play audio, see [`Configuring y
 ### Controlling playback
 - [func prepareToPlay()](avmidiplayer/preparetoplay.md)
   Prepares the player to play the sequence by prerolling all events.
-- [func play(AVMIDIPlayerCompletionHandler?)](avmidiplayer/play(_:).md)
+- [func play((() -> Void)?)](avmidiplayer/play(_:).md)
   Plays the MIDI sequence.
 - [func stop()](avmidiplayer/stop.md)
   Stops playing the sequence.

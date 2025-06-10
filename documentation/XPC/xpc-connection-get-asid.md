@@ -1,6 +1,6 @@
 # xpc_connection_get_asid(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns the audit session identifier of the remote peer.

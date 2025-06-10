@@ -6,11 +6,11 @@
 A class to manage exporting credentials.
 
 **Availability**:
-- iOS 18.2+
-- iPadOS 18.2+
-- Mac Catalyst 18.2+
-- macOS 15.2+
-- visionOS 2.2+
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -74,9 +74,14 @@ For a corresponding import code example, see [`ASCredentialImportManager`](ascre
   Begins the credential export process.
 - [struct ASExportedCredentialData](asexportedcredentialdata.md)
   A container for credential data that your app provides to an exporter or receives from an importer.
+### Structures
+- [ASCredentialExportManager.ExportOptions](ascredentialexportmanager/exportoptions.md)
 ### Initializers
 - [convenience init(presentationAnchor: ASPresentationAnchor)](ascredentialexportmanager/init(presentationanchor:)-56ki6.md)
 - [convenience init(presentationAnchor: ASPresentationAnchor)](ascredentialexportmanager/init(presentationanchor:)-904gt.md)
+### Instance Methods
+- [func requestExport(for: String?) async throws -> ASCredentialExportManager.ExportOptions](ascredentialexportmanager/requestexport(for:).md)
+  Call this method to begin the export process. This will bring up the out of process system UI that will guide the user through the rest of the export flow. Once the necessary options have been determined, they will be returned here. After receiving the export options, call `exportCredentials(_:)` with the exported credentials in the specified format.
 
 ## See Also
 

@@ -9,8 +9,6 @@ Constants describing the current playback state of the movie player.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
 
 ## Declaration
 
@@ -38,6 +36,7 @@ enum MPMoviePlaybackState
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

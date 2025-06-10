@@ -1,6 +1,6 @@
 # rate
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: property
 
 The audio player’s playback rate.

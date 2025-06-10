@@ -30,13 +30,13 @@ Electric Vehicle Supply Equipment (EVSE) is equipment used to charge an Electric
 - [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclusterenergyevse/init(device:endpointid:queue:).md)
   For all instance methods (reads, writes, commands) that take a completion, the completion will be called on the provided queue.
 ### Instance Methods
-- [func clearTargets(completion: MTRStatusCompletion)](mtrbaseclusterenergyevse/cleartargets(completion:).md)
-- [func clearTargets(with: MTREnergyEVSEClusterClearTargetsParams?, completion: MTRStatusCompletion)](mtrbaseclusterenergyevse/cleartargets(with:completion:).md)
+- [func clearTargets(completion: ((any Error)?) -> Void)](mtrbaseclusterenergyevse/cleartargets(completion:).md)
+- [func clearTargets(with: MTREnergyEVSEClusterClearTargetsParams?, completion: ((any Error)?) -> Void)](mtrbaseclusterenergyevse/cleartargets(with:completion:).md)
   Command ClearTargets
-- [func disable(completion: MTRStatusCompletion)](mtrbaseclusterenergyevse/disable(completion:).md)
-- [func disable(with: MTREnergyEVSEClusterDisableParams?, completion: MTRStatusCompletion)](mtrbaseclusterenergyevse/disable(with:completion:).md)
+- [func disable(completion: ((any Error)?) -> Void)](mtrbaseclusterenergyevse/disable(completion:).md)
+- [func disable(with: MTREnergyEVSEClusterDisableParams?, completion: ((any Error)?) -> Void)](mtrbaseclusterenergyevse/disable(with:completion:).md)
   Command Disable
-- [func enableCharging(with: MTREnergyEVSEClusterEnableChargingParams, completion: MTRStatusCompletion)](mtrbaseclusterenergyevse/enablecharging(with:completion:).md)
+- [func enableCharging(with: MTREnergyEVSEClusterEnableChargingParams, completion: ((any Error)?) -> Void)](mtrbaseclusterenergyevse/enablecharging(with:completion:).md)
   Command EnableCharging
 - [func getTargetsWith(MTREnergyEVSEClusterGetTargetsParams?, completion: (MTREnergyEVSEClusterGetTargetsResponseParams?, (any Error)?) -> Void)](mtrbaseclusterenergyevse/gettargetswith(_:completion:).md)
   Command GetTargets
@@ -63,10 +63,10 @@ Electric Vehicle Supply Equipment (EVSE) is equipment used to charge an Electric
 - [func readAttributeState(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterenergyevse/readattributestate(completion:).md)
 - [func readAttributeSupplyState(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterenergyevse/readattributesupplystate(completion:).md)
 - [func readAttributeUserMaximumChargeCurrent(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterenergyevse/readattributeusermaximumchargecurrent(completion:).md)
-- [func setTargetsWith(MTREnergyEVSEClusterSetTargetsParams, completion: MTRStatusCompletion)](mtrbaseclusterenergyevse/settargetswith(_:completion:).md)
+- [func setTargetsWith(MTREnergyEVSEClusterSetTargetsParams, completion: ((any Error)?) -> Void)](mtrbaseclusterenergyevse/settargetswith(_:completion:).md)
   Command SetTargets
-- [func startDiagnostics(completion: MTRStatusCompletion)](mtrbaseclusterenergyevse/startdiagnostics(completion:).md)
-- [func startDiagnostics(with: MTREnergyEVSEClusterStartDiagnosticsParams?, completion: MTRStatusCompletion)](mtrbaseclusterenergyevse/startdiagnostics(with:completion:).md)
+- [func startDiagnostics(completion: ((any Error)?) -> Void)](mtrbaseclusterenergyevse/startdiagnostics(completion:).md)
+- [func startDiagnostics(with: MTREnergyEVSEClusterStartDiagnosticsParams?, completion: ((any Error)?) -> Void)](mtrbaseclusterenergyevse/startdiagnostics(with:completion:).md)
   Command StartDiagnostics
 - [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterenergyevse/subscribeattributeacceptedcommandlist(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeApproximateEVEfficiency(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterenergyevse/subscribeattributeapproximateevefficiency(with:subscriptionestablished:reporthandler:).md)
@@ -90,12 +90,12 @@ Electric Vehicle Supply Equipment (EVSE) is equipment used to charge an Electric
 - [func subscribeAttributeState(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterenergyevse/subscribeattributestate(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeSupplyState(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterenergyevse/subscribeattributesupplystate(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeUserMaximumChargeCurrent(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterenergyevse/subscribeattributeusermaximumchargecurrent(with:subscriptionestablished:reporthandler:).md)
-- [func writeAttributeApproximateEVEfficiency(withValue: NSNumber?, completion: MTRStatusCompletion)](mtrbaseclusterenergyevse/writeattributeapproximateevefficiency(withvalue:completion:).md)
-- [func writeAttributeApproximateEVEfficiency(withValue: NSNumber?, params: MTRWriteParams?, completion: MTRStatusCompletion)](mtrbaseclusterenergyevse/writeattributeapproximateevefficiency(withvalue:params:completion:).md)
-- [func writeAttributeRandomizationDelayWindow(withValue: NSNumber, completion: MTRStatusCompletion)](mtrbaseclusterenergyevse/writeattributerandomizationdelaywindow(withvalue:completion:).md)
-- [func writeAttributeRandomizationDelayWindow(withValue: NSNumber, params: MTRWriteParams?, completion: MTRStatusCompletion)](mtrbaseclusterenergyevse/writeattributerandomizationdelaywindow(withvalue:params:completion:).md)
-- [func writeAttributeUserMaximumChargeCurrent(withValue: NSNumber, completion: MTRStatusCompletion)](mtrbaseclusterenergyevse/writeattributeusermaximumchargecurrent(withvalue:completion:).md)
-- [func writeAttributeUserMaximumChargeCurrent(withValue: NSNumber, params: MTRWriteParams?, completion: MTRStatusCompletion)](mtrbaseclusterenergyevse/writeattributeusermaximumchargecurrent(withvalue:params:completion:).md)
+- [func writeAttributeApproximateEVEfficiency(withValue: NSNumber?, completion: ((any Error)?) -> Void)](mtrbaseclusterenergyevse/writeattributeapproximateevefficiency(withvalue:completion:).md)
+- [func writeAttributeApproximateEVEfficiency(withValue: NSNumber?, params: MTRWriteParams?, completion: ((any Error)?) -> Void)](mtrbaseclusterenergyevse/writeattributeapproximateevefficiency(withvalue:params:completion:).md)
+- [func writeAttributeRandomizationDelayWindow(withValue: NSNumber, completion: ((any Error)?) -> Void)](mtrbaseclusterenergyevse/writeattributerandomizationdelaywindow(withvalue:completion:).md)
+- [func writeAttributeRandomizationDelayWindow(withValue: NSNumber, params: MTRWriteParams?, completion: ((any Error)?) -> Void)](mtrbaseclusterenergyevse/writeattributerandomizationdelaywindow(withvalue:params:completion:).md)
+- [func writeAttributeUserMaximumChargeCurrent(withValue: NSNumber, completion: ((any Error)?) -> Void)](mtrbaseclusterenergyevse/writeattributeusermaximumchargecurrent(withvalue:completion:).md)
+- [func writeAttributeUserMaximumChargeCurrent(withValue: NSNumber, params: MTRWriteParams?, completion: ((any Error)?) -> Void)](mtrbaseclusterenergyevse/writeattributeusermaximumchargecurrent(withvalue:params:completion:).md)
 ### Type Methods
 - [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterenergyevse/readattributeacceptedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
 - [class func readAttributeApproximateEVEfficiency(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterenergyevse/readattributeapproximateevefficiency(withclusterstatecache:endpoint:queue:completion:).md)

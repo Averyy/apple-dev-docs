@@ -1,6 +1,6 @@
 # SVG_SPREADMETHOD_PAD
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

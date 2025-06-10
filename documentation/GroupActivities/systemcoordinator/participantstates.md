@@ -33,9 +33,11 @@ struct ParticipantStates
 ### Conforms To
 - [AsyncSequence](../Swift/AsyncSequence.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [var remoteParticipantStates: [Participant : SystemCoordinator.ParticipantState]](systemcoordinator/remoteparticipantstates.md)
 - [var localParticipantState: SystemCoordinator.ParticipantState](systemcoordinator/localparticipantstate.md)
   The current participant’s level of support for an activity that takes place in a shared simulation space.
 - [var localParticipantStates: SystemCoordinator.ParticipantStates](systemcoordinator/localparticipantstates.md)

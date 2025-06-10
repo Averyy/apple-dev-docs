@@ -6,6 +6,7 @@
 A source of live data from ARKit.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -34,9 +35,12 @@ Most providers supply an asynchronous sequence of updated anchors for the provid
 ### Inherits From
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
+- [AccessoryTrackingProvider](accessorytrackingprovider.md)
 - [BarcodeDetectionProvider](barcodedetectionprovider.md)
 - [CameraFrameProvider](cameraframeprovider.md)
+- [CameraRegionProvider](cameraregionprovider.md)
 - [EnvironmentLightEstimationProvider](environmentlightestimationprovider.md)
 - [HandTrackingProvider](handtrackingprovider.md)
 - [ImageTrackingProvider](imagetrackingprovider.md)
@@ -44,6 +48,7 @@ Most providers supply an asynchronous sequence of updated anchors for the provid
 - [PlaneDetectionProvider](planedetectionprovider.md)
 - [RoomTrackingProvider](roomtrackingprovider.md)
 - [SceneReconstructionProvider](scenereconstructionprovider.md)
+- [SharedCoordinateSpaceProvider](sharedcoordinatespaceprovider.md)
 - [StereoPropertiesProvider](stereopropertiesprovider.md)
 - [WorldTrackingProvider](worldtrackingprovider.md)
 

@@ -1,6 +1,6 @@
 # xpc_set_event_stream_handler(_:_:_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Sets the event handler to invoke when receiving streamed events.
@@ -11,7 +11,7 @@ Sets the event handler to invoke when receiving streamed events.
 ## Declaration
 
 ```swift
-func xpc_set_event_stream_handler(_ stream: UnsafePointer<CChar>, _ targetq: dispatch_queue_t?, _ handler: @escaping xpc_handler_t)
+func xpc_set_event_stream_handler(_ stream: UnsafePointer<CChar>, _ targetq: dispatch_queue_t?, _ handler: @escaping (xpc_object_t) -> Void)
 ```
 
 #### Discussion

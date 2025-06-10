@@ -30,8 +30,6 @@ Customize the messages displayed on the permissions sheet by setting the followi
 
 > ⚠️ **Warning**: You must set the usage key, or your app crashes when you request authorization.
 
-You must set the usage key, or your app crashes when you request authorization.
-
 Set the key in the Target Properties list on the app’s Info tab.
 
 After users set the permissions for your app, they can always change them using either the Settings or the Health app. Your app appears in the Health app’s Sources tab, even if the user didn’t allow permission to read data.

@@ -1,6 +1,6 @@
 # Implementing adjustable material
 
-**Framework**: Visionos
+**Framework**: visionOS
 
 Update the adjustable parameters of a 3D model in visionOS.
 
@@ -183,4 +183,4 @@ var body: some View {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionOS/implementing-adjustable-material-in-visionos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/implementing-adjustable-material-in-visionos)*

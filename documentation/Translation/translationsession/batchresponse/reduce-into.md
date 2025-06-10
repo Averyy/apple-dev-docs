@@ -8,6 +8,7 @@ Returns the result of combining the elements of the asynchronous sequence using 
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst ?+
 - macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+

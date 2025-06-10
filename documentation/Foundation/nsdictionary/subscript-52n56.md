@@ -17,7 +17,7 @@ Returns the value associated with a given key.
 ## Declaration
 
 ```swift
-subscript(key: any NSCopying) -> Any? { get }
+subscript(key: any NSCopying) -> Any? { get set }
 ```
 
 #### Return Value

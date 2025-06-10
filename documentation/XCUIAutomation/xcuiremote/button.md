@@ -1,6 +1,6 @@
 # XCUIRemoteButton
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: enum
 
 A button on a physical remote control.
@@ -18,7 +18,7 @@ A button on a physical remote control.
 ## Declaration
 
 ```swift
-enum Button
+enum XCUIRemoteButton
 ```
 
 ## Topics
@@ -66,6 +66,7 @@ enum Button
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

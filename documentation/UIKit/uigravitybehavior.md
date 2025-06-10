@@ -1,6 +1,6 @@
 # UIGravityBehavior
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An object that applies a gravity-like force to all of its associated dynamic items.
@@ -72,6 +72,7 @@ The gravity behavior derives its coordinate system from the reference view of it
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -91,4 +92,4 @@ The gravity behavior derives its coordinate system from the reference view of it
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uigravitybehavior)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uigravitybehavior)*

@@ -1,6 +1,6 @@
 # isPrivate(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the private state of the window is needed.

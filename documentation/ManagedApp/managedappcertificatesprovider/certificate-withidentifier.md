@@ -1,6 +1,6 @@
 # certificate(withIdentifier:)
 
-**Framework**: Managedapp  
+**Framework**: ManagedApp  
 **Kind**: method
 
 Provides a certificate by its identifier.

@@ -6,6 +6,7 @@
 The color formats, depth formats, and features that you can use to configure your rendering engine.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -36,6 +37,19 @@ A [`LayerRenderer.Capabilities`](layerrenderer/capabilities.md) type provides in
 ### Getting the minimum near plane distance
 - [var supportedMinimumNearPlaneDistance: Float](layerrenderer/capabilities/supportedminimumnearplanedistance.md)
   The minimum distance in meters to the layer’s near projection plane.
+### Structures
+- [LayerRenderer.Capabilities.SupportedColorFormatsOptions](layerrenderer/capabilities/supportedcolorformatsoptions.md)
+  The options to provide when calling `LayerRenderer.Capabilities.supportedColorFormats`
+### Instance Properties
+- [var defaultRenderQuality: LayerRenderer.RenderQuality](layerrenderer/capabilities/defaultrenderquality.md)
+  Returns default render quality allowed for drawing on this platform.
+- [var drawableRenderContextSupportedStencilFormats: [MTLPixelFormat]](layerrenderer/capabilities/drawablerendercontextsupportedstencilformats.md)
+  Returns the color format at the specified index in the layer capabilities.
+- [var supportedTrackingAreasFormats: [MTLPixelFormat]](layerrenderer/capabilities/supportedtrackingareasformats.md)
+  The list of tracking areas formats that the layer renderer supports
+### Instance Methods
+- [func supportedColorFormats(options: LayerRenderer.Capabilities.SupportedColorFormatsOptions) -> [MTLPixelFormat]](layerrenderer/capabilities/supportedcolorformats(options:).md)
+  The list of color formats that the layer renderer supports
 
 ## Relationships
 

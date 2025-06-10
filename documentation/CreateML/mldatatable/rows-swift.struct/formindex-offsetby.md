@@ -1,6 +1,6 @@
 # formIndex(_:offsetBy:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Offsets the given index by the specified distance.

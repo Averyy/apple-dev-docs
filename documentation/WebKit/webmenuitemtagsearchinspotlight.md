@@ -1,6 +1,6 @@
 # WebMenuItemTagSearchInSpotlight
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Search SpotLight for the current selection.

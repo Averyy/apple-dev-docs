@@ -1,6 +1,6 @@
 # dismissTextInputController()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Dismisses the text input controller without returning any text.

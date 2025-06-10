@@ -28,8 +28,6 @@ A new date value calculated by adding a time interval to this date.
 
 > ⚠️ **Warning**:  This only adjusts an absolute value. If you wish to add calendrical concepts like hours, days, months then you must use a `Calendar`. That will take into account complexities like daylight saving time, months with different numbers of days, and more.
 
- This only adjusts an absolute value. If you wish to add calendrical concepts like hours, days, months then you must use a `Calendar`. That will take into account complexities like daylight saving time, months with different numbers of days, and more.
-
 ## Parameters
 
 - `timeInterval`: The value to add, in seconds.

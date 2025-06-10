@@ -1,6 +1,6 @@
 # WKAudioFilePlayerItemStatus
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: enum
 
 Constants that represent the status of a player item.
@@ -34,6 +34,7 @@ enum WKAudioFilePlayerItemStatus
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

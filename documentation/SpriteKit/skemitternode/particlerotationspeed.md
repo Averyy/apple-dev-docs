@@ -17,7 +17,6 @@ The speed at which a particle rotates, expressed in radians per second.
 ## Declaration
 
 ```swift
-@MainActor
 var particleRotationSpeed: CGFloat { get set }
 ```
 

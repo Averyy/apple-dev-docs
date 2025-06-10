@@ -1,6 +1,6 @@
 # User data atoms
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Atoms you use to define and store data associated with a QuickTime object.
 

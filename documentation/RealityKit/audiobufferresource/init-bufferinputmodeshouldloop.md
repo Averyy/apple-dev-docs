@@ -1,6 +1,6 @@
 # init(buffer:inputMode:shouldLoop:)
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: init
 
 Init an AudioBufferResource from an `AVAudioBuffer` instead of a file location. This is intended for use with `AVSpeechSynthesisVoice`.
@@ -10,6 +10,7 @@ Init an AudioBufferResource from an `AVAudioBuffer` instead of a file location. 
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

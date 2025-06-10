@@ -14,7 +14,7 @@ SwiftUI, UIKit, and AppKit use different underlying implementations for animatio
 
 ##### Create a Swiftui Animation
 
-To create a SwiftUI animation in UIKit or AppKit, import SwiftUI and create a SwiftUI [`Animation`](animation.md). Then, pass that animation as a parameter into the [`animate(with:changes:completion:)`](https://developer.apple.com/documentation/UIKit/UIView/animate(with:changes:completion:)) class method on `UIView`, or the [`animate(with:changes:completion:)`](https://developer.apple.com/documentation/AppKit/NSAnimationContext/animate(with:changes:completion:)) class method on `NSAnimationContext`. The following examples compare how you can create a basic spring animation using a SwiftUI [`Animation`](animation.md) type across SwiftUI, UIKit, and AppKit.
+To create a SwiftUI animation in UIKit or AppKit, import SwiftUI and create a SwiftUI [`Animation`](animation.md). Then, pass that animation as a parameter into the doc://com.apple.documentation/documentation/uikit/uiview/4429628-animate class method on `UIView`, or the doc://com.apple.documentation/documentation/appkit/nsanimationcontext/4433144-animate class method on `NSAnimationContext`. The following examples compare how you can create a basic spring animation using a SwiftUI [`Animation`](animation.md) type across SwiftUI, UIKit, and AppKit.
 
 ##### Use Completion Handlers with Swiftui Animations
 
@@ -22,7 +22,7 @@ You can provide an optional completion handler to these animation methods, which
 
 ##### Retarget a Swiftui Animation
 
-Similar to animations in SwiftUI views, you can smoothly retarget the animations you perform using the [`animate(with:changes:completion:)`](https://developer.apple.com/documentation/UIKit/UIView/animate(with:changes:completion:)) class method on `UIView` or the [`animate(with:changes:completion:)`](https://developer.apple.com/documentation/AppKit/NSAnimationContext/animate(with:changes:completion:)) class method on `NSAnimationContext`. Retargeting a SwiftUI animation uses the velocity from the previous animations to carry the animation forward with continuous velocity, creating a fluid animation experience. The following examples show retargeting an in-progress animation.
+Similar to animations in SwiftUI views, you can smoothly retarget the animations you perform using the doc://com.apple.documentation/documentation/uikit/uiview/4429628-animate class method on `UIView` or the doc://com.apple.documentation/documentation/appkit/nsanimationcontext/4433144-animate class method on `NSAnimationContext`. Retargeting a SwiftUI animation uses the velocity from the previous animations to carry the animation forward with continuous velocity, creating a fluid animation experience. The following examples show retargeting an in-progress animation.
 
 ##### Troubleshoot Animations
 
@@ -40,10 +40,6 @@ For more information about providing a great animation experience in your app, s
   The way a view changes over time to create a smooth visual transition from one state to another.
 - [func withAnimation<Result>(Animation?, () throws -> Result) rethrows -> Result](withanimation(_:_:).md)
   Returns the result of recomputing the view’s body with the provided animation.
-- [@MainActor @preconcurrency static func animate(with animation: Animation = Animation.default, changes: () -> Void, completion: (() -> Void)? = nil)](../UIKit/UIView/animate(with:changes:completion:).md)
-  Animates changes to one or more views using the specified SwiftUI animation.
-- [static func animate(with animation: Animation, changes: () -> Void, completion: (() -> Void)? = nil)](../AppKit/NSAnimationContext/animate(with:changes:completion:).md)
-  Animates changes to one or more views using the specified SwiftUI animation.
 - [class NSHostingController](nshostingcontroller.md)
   An AppKit view controller that hosts SwiftUI view hierarchy.
 - [class NSHostingView](nshostingview.md)
@@ -52,6 +48,8 @@ For more information about providing a great animation experience in your app, s
   An AppKit menu with menu items that are defined by a SwiftUI View.
 - [struct NSHostingSizingOptions](nshostingsizingoptions.md)
   Options for how hosting views and controllers reflect their content’s size into Auto Layout constraints.
+- [class NSHostingSceneRepresentation](nshostingscenerepresentation.md)
+  An AppKit type that hosts and can present SwiftUI scenes
 - [struct NSHostingSceneBridgingOptions](nshostingscenebridgingoptions.md)
   Options for how hosting views and controllers manage aspects of the associated window.
 

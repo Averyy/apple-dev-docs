@@ -15,7 +15,8 @@
 ## Declaration
 
 ```swift
-var message: Text? { get }
+@MainActor
+@preconcurrency var message: Text? { get }
 ```
 
 

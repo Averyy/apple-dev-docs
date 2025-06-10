@@ -17,7 +17,7 @@ Removes the specified player item output object from the receiver.
 ## Declaration
 
 ```swift
-@MainActor
+nonisolated
 func remove(_ output: AVPlayerItemOutput)
 ```
 

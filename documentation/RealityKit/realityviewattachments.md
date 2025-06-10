@@ -34,6 +34,8 @@ Use this type to access entities associated with the attachments you provide to 
   An entity that has a view attachment.
 - [struct ViewAttachmentComponent](viewattachmentcomponent.md)
   A component containing additional information about a view attachment entity provided  via the [`entity(for:)`](realityviewattachments/entity(for:).md) function.
+- [struct PresentationComponent](presentationcomponent.md)
+  A component that presents a SwiftUI modal presentation from a RealityKit entity.
 - [struct TextComponent](textcomponent.md)
   A component that draws 2D text at an entity’s location.
 

@@ -1,6 +1,6 @@
 # minimumVisibility
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The minimum distance, in meters, at which terrain is visible for the day.

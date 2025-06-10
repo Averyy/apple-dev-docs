@@ -16,7 +16,7 @@ Returns the character index value for the specified point in page space.
 ## Declaration
 
 ```swift
-func characterIndex(at point: CGPoint) -> Int
+func characterIndex(at point: NSPoint) -> Int
 ```
 
 #### Discussion

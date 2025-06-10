@@ -1,6 +1,6 @@
 # supportsCameraAssistance
 
-**Framework**: Nearbyinteraction  
+**Framework**: Nearby Interaction  
 **Kind**: property  
 **Required**: Yes
 

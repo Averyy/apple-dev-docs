@@ -1,6 +1,6 @@
 # attributedStringContentLoadTimedOut
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An error that indicates a timeout occurred while trying to load web content from an attributed string.

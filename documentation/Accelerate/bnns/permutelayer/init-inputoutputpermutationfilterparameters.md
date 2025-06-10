@@ -25,8 +25,6 @@ convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, p
 
 > ❗ **Important**:  The number of input dimensions must be equal to number of output dimensions.
 
- The number of input dimensions must be equal to number of output dimensions.
-
 ## Parameters
 
 - `input`: The descriptor of the input.

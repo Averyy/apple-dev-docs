@@ -32,6 +32,7 @@ A SwiftUI view into which a video stream or an image snapshot is rendered.
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

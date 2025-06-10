@@ -6,10 +6,7 @@
 A sequence containing the same elements as this sequence, but on which some operations, such as `map` and `filter`, are implemented lazily.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
 - Mac Catalyst 13.0+
-- macOS 10.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+

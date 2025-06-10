@@ -1,6 +1,6 @@
 # DayPartForecast
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure that represents the weather forecast for part of the day.
@@ -51,6 +51,12 @@ struct DayPartForecast
   The probability of precipitation for the day part.
 - [var wind: Wind](daypartforecast/wind.md)
   Wind data describing the wind speed, direction, and gust.
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

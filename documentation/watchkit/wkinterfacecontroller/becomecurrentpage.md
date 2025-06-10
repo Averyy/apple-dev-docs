@@ -1,6 +1,6 @@
 # becomeCurrentPage()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Displays the interface controller in the page-based interface.

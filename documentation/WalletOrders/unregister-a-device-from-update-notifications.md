@@ -1,6 +1,6 @@
 # Unregister a device from update notifications
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: httpRequest
 
 Unregisters a device from receiving update notifications for an order.

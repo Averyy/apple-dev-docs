@@ -8,7 +8,7 @@ Creates an app intent parameter for an array with a specified size per widget fa
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
 - visionOS 2.0+
 - watchOS 11.0+

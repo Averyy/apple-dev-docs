@@ -25,8 +25,6 @@ var attributedTitle: NSAttributedString? { get set }
 
 > ❗ **Important**:  Alternatively, you can set attributed content in the [`userInfo`](nsextensionitem/userinfo.md) dictionary using the [`NSExtensionItemAttributedTitleKey`](nsextensionitemattributedtitlekey.md) key. However, setting the [`userInfo`](nsextensionitem/userinfo.md) dictionary after setting [`attributedTitle`](nsextensionitem/attributedtitle.md) overrides this property.
 
- Alternatively, you can set attributed content in the [`userInfo`](nsextensionitem/userinfo.md) dictionary using the [`NSExtensionItemAttributedTitleKey`](nsextensionitemattributedtitlekey.md) key. However, setting the [`userInfo`](nsextensionitem/userinfo.md) dictionary after setting [`attributedTitle`](nsextensionitem/attributedtitle.md) overrides this property.
-
 ## See Also
 
 - [App Extension Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214)

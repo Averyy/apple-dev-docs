@@ -1,6 +1,6 @@
 # SVG_CHANNEL_G
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

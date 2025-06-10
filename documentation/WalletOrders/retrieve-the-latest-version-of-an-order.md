@@ -1,6 +1,6 @@
 # Retrieve the latest version of an order
 
-**Framework**: Walletorders  
+**Framework**: Wallet Orders  
 **Kind**: httpRequest
 
 Retrieves the latest signed and compressed version of an order.

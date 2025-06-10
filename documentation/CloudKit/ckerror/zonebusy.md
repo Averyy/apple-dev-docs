@@ -24,7 +24,7 @@ static var zoneBusy: CKError.Code { get }
 
 Try the operation again in a few seconds. If you encounter this error again, increase the delay time exponentially for each subsequent retry to minimize server contention for the zone.
 
-Check for a [`CKErrorRetryAfterKey`](ckerrorretryafterkey.md) key in the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary of any CloudKit error that you receive. Use the value of this key as the number of seconds to wait before retrying the operation.
+Check for a [`CKErrorRetryAfterKey`](ckerrorretryafterkey.md) key in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary of any CloudKit error that you receive. Use the value of this key as the number of seconds to wait before retrying the operation.
 
 ## See Also
 

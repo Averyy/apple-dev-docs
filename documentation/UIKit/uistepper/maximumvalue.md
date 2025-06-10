@@ -20,7 +20,7 @@ var maximumValue: Double { get set }
 
 #### Discussion
 
-Must be numerically greater than [`minimumValue`](uistepper/minimumvalue.md). If you attempt to set a value equal to or lower than [`minimumValue`](uistepper/minimumvalue.md), the system raises an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) exception.
+Must be numerically greater than [`minimumValue`](uistepper/minimumvalue.md). If you attempt to set a value equal to or lower than [`minimumValue`](uistepper/minimumvalue.md), the system raises an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception.
 
 The default value of this property is `100`.
 

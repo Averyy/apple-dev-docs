@@ -17,7 +17,7 @@ let NSTypeIdentifierAddressText: String
 
 #### Discussion
 
-UTI subtype for doc://com.apple.documentation/documentation/foundation/nstextcheckingresult/checkingtype/1408236-address, `com.apple.structured-text.address`.
+UTI subtype for [`address`](https://developer.apple.com/documentation/Foundation/NSTextCheckingResult/CheckingType/address), `com.apple.structured-text.address`.
 
 ## See Also
 

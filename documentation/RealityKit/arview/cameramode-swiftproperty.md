@@ -6,9 +6,9 @@
 A setting that chooses between the AR session’s camera and a virtual one.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

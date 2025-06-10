@@ -1,0 +1,18 @@
+# kHIDUsage_Snsr_Orientation_Inclinometer1D
+
+**Framework**: Kernel  
+**Kind**: econst
+
+**Availability**:
+- macOS 10.12+
+
+## Declaration
+
+```swift
+kHIDUsage_Snsr_Orientation_Inclinometer1D = 0x84
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/1641608-anonymous/khidusage_snsr_orientation_inclinometer1d)*

@@ -29,7 +29,7 @@ class AVAssetTrack
 
 An asset contains one or more tracks of media that the framework models using the [`AVAssetTrack`](avassettrack.md) class. A track object holds the uniformly typed media that an asset provides such as audio, video, or closed captions.
 
-A track, like its containing [`AVAsset`](avasset.md), doesn’t load all of its media upon creation. Instead, it defers loading its data until you perform an operation that requires it. Because loading the data can take time, an asset track adopts the [`AVAsynchronousKeyValueLoading`](avasynchronouskeyvalueloading.md) protocol so you can load its property values asynchronously by calling the [`load(_:)`](avasynchronouskeyvalueloading/load(_:).md) method.
+A track, like its containing [`AVAsset`](avasset.md), doesn’t load all of its media upon creation. Instead, it defers loading its data until you perform an operation that requires it. Because loading the data can take time, an asset track adopts the [`AVAsynchronousKeyValueLoading`](avasynchronouskeyvalueloading.md) protocol so you can load its property values asynchronously by calling the `AVAsynchronousKeyValueLoading/load(_:)` method.
 
 ## Topics
 

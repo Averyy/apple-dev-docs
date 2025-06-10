@@ -66,6 +66,7 @@ let parsedUSDollars = try? Double(formattedUSDollars, format: .currency(code: "U
 - [Hashable](../Swift/Hashable.md)
 - [ParseStrategy](parsestrategy.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

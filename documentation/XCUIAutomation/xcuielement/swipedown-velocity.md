@@ -1,6 +1,6 @@
 # swipeDown(velocity:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a swipe-down gesture with a velocity you specify.

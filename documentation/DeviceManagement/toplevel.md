@@ -12,8 +12,6 @@ The top-level payload properties you use to configure all profiles.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,21 +29,19 @@ object TopLevel
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS, Shared iPad, tvOS, watchOS |
-| User Channel | macOS |
-| Allow Manual Install | iOS, macOS, tvOS, watchOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | iOS, macOS |
-| Allow Multiple Payloads | - |
+| Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| User channel | macOS, Shared iPad |
+| Allow manual install | iOS, macOS, tvOS, visionOS, watchOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Allow multiple payloads | NA |
 
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object TopLevel.ConsentText](toplevel/consenttext-data.dictionary.md)
   The dictionary of consent agreements per language.
-- [object TopLevel.ConsentText.ConsentTextItem](toplevel/consenttext-data.dictionary/consenttextitem-data.dictionary.md)
-  A specific pairing of language code and consent text.
 - [object TopLevel.PayloadContentItem](toplevel/payloadcontentitem.md)
   The payload-specific content for this profile.
 

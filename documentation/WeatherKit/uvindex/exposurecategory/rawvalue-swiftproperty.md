@@ -1,6 +1,6 @@
 # rawValue
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The corresponding value of the raw type.

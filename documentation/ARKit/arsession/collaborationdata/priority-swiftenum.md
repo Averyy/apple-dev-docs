@@ -38,6 +38,7 @@ When you send [`ARSession.CollaborationData`](arsession/collaborationdata.md) ov
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

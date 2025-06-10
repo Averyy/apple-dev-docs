@@ -1,6 +1,6 @@
 # daily(startDate:endDate:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns weather for an arbitrary range of days, with the following caveats:

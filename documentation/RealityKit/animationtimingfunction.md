@@ -10,6 +10,7 @@ The pacing of an animation transition.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -20,7 +21,7 @@ struct AnimationTimingFunction
 
 #### Overview
 
-Use an animation timing function to control the pace of an animation transition when you call one of an entity’s animated move methods, like [`move(to:relativeTo:duration:timingFunction:)`](entity/move(to:relativeto:duration:timingfunction:)-905k.md). If you omit a timing function from the call, the method uses the [`default`](animationtimingfunction/default.md) timing function.
+Use an animation timing function to control the pace of an animation transition when you call one of an entity’s animated move methods, like `Entity/move(to:relativeTo:duration:timingFunction:)-905k`. If you omit a timing function from the call, the method uses the [`default`](animationtimingfunction/default.md) timing function.
 
 ## Topics
 
@@ -37,19 +38,6 @@ Use an animation timing function to control the pace of an animation transition 
   A timing function that produces a linear transition.
 - [static func cubicBezier(controlPoint1: SIMD2<Float>, controlPoint2: SIMD2<Float>) -> AnimationTimingFunction](animationtimingfunction/cubicbezier(controlpoint1:controlpoint2:).md)
   Creates a timing function that accelerates and then decelerates towards the target value with the cubic bezier shape specified by two control points.
-### Comparing timing functions
-- [static func == (AnimationTimingFunction, AnimationTimingFunction) -> Bool](animationtimingfunction/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](animationtimingfunction/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](animationtimingfunction/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](animationtimingfunction/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Decodable Implementations](animationtimingfunction/decodable-implementations.md)
-- [Encodable Implementations](animationtimingfunction/encodable-implementations.md)
-- [Equatable Implementations](animationtimingfunction/equatable-implementations.md)
 
 ## Relationships
 

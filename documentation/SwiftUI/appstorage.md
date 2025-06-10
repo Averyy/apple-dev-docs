@@ -37,6 +37,7 @@ A property wrapper type that reflects a value from `UserDefaults` and invalidate
 ### Conforms To
 - [DynamicProperty](dynamicproperty.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

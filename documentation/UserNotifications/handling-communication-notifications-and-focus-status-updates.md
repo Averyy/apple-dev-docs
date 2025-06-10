@@ -1,6 +1,6 @@
 # Handling Communication Notifications and Focus Status Updates
 
-**Framework**: Usernotifications
+**Framework**: User Notifications
 
 Create a richer calling and messaging experience in your app by implementing communication notifications and Focus status updates.
 
@@ -173,4 +173,4 @@ The Intents app extension in the sample handles incoming [`INShareFocusStatusInt
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/handling-communication-notifications-and-focus-status-updates)*
+*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/handling-communication-notifications-and-focus-status-updates)*

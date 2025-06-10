@@ -54,6 +54,7 @@ Use these constants to identify the type of metadata in a [`CGImageMetadataTag`]
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

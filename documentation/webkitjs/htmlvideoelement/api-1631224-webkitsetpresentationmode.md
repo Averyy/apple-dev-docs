@@ -1,6 +1,6 @@
 # webkitSetPresentationMode
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Sets the presentation mode for video playback. 

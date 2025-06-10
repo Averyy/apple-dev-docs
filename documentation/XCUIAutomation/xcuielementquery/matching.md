@@ -1,6 +1,6 @@
 # matching(_:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Returns a new query that matches elements that meet the logical conditions of the provided predicate.

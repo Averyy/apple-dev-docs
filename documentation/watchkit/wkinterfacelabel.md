@@ -1,6 +1,6 @@
 # WKInterfaceLabel
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 An interface element that displays static text.

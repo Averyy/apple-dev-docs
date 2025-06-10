@@ -1,6 +1,6 @@
 # delete(_:withCompletion:)
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: method
 
 Deletes the specified objects from the HealthKit store.

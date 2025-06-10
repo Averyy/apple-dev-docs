@@ -33,7 +33,7 @@ Placement of the search field depends on the platform:
   The search field appears in the navigation bar.
 - [static func navigationBarDrawer(displayMode: SearchFieldPlacement.NavigationBarDrawerDisplayMode) -> SearchFieldPlacement](searchfieldplacement/navigationbardrawer(displaymode:).md)
   The search field appears in the navigation bar using the specified display mode.
-- [static let sidebar: SearchFieldPlacement](searchfieldplacement/sidebar.md)
+- [static var sidebar: SearchFieldPlacement](searchfieldplacement/sidebar.md)
   The search field appears in the sidebar of a navigation view.
 - [static let toolbar: SearchFieldPlacement](searchfieldplacement/toolbar.md)
   The search field appears in the toolbar.

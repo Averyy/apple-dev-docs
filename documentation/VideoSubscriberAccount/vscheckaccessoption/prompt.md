@@ -1,6 +1,6 @@
 # prompt
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A Boolean that indicates whether your app can prompt the user to grant access.

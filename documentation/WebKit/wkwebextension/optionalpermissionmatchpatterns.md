@@ -1,6 +1,6 @@
 # optionalPermissionMatchPatterns
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The set of websites that the extension may need access to for optional functionality.

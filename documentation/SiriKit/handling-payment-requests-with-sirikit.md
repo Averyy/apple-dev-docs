@@ -1,6 +1,6 @@
 # Handling Payment Requests with SiriKit
 
-**Framework**: Sirikit
+**Framework**: SiriKit
 
 Add an Intent Extension to your app to handle money transfer requests with Siri.
 
@@ -220,4 +220,4 @@ func handle(intent: INSendPaymentIntent, completion: @escaping (INSendPaymentInt
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/handling-payment-requests-with-sirikit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/handling-payment-requests-with-sirikit)*

@@ -1,6 +1,6 @@
 # split(separator:maxSplits:omittingEmptySubsequences:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns the longest possible subsequences of the sequence, in order, around elements equal to the given element.

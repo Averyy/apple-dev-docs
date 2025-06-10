@@ -1,6 +1,6 @@
 # element(fromPoint:y:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

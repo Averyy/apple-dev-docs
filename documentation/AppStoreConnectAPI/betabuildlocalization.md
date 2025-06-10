@@ -33,6 +33,7 @@ object BetaBuildLocalization
   The request body you use to update a Beta Build Localization.
 - [object BetaBuildLocalizationsResponse](betabuildlocalizationsresponse.md)
   A response that contains a list of Beta Build Localization resources.
+- [object BetaBuildLocalizationBuildLinkageResponse](betabuildlocalizationbuildlinkageresponse.md)
 
 
 ---

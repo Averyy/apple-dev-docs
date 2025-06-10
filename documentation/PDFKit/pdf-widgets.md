@@ -1,6 +1,6 @@
 # PDF Widgets
 
-**Framework**: Pdfkit
+**Framework**: PDFKit
 
 Demonstrates adding widgets—interactive form elements—to a PDF document.
 
@@ -97,4 +97,4 @@ The `textFieldMultiline` text widget annotation sets one extra property: `isMult
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PDFKit/pdf-widgets)*
+*[View on Apple Developer](https://developer.apple.com/documentation/pdfkit/pdf-widgets)*

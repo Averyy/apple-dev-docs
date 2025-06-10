@@ -1,6 +1,6 @@
 # DayPartForecast
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 A summary forecast for a daytime or overnight period.

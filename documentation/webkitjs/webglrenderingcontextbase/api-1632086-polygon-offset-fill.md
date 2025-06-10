@@ -1,6 +1,6 @@
 # POLYGON_OFFSET_FILL
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

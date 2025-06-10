@@ -1,6 +1,6 @@
 # XCTActivity
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: protocol
 
 A named substep of a test method.

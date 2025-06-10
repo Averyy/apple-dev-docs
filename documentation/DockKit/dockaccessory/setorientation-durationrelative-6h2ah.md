@@ -1,6 +1,6 @@
 # setOrientation(_:duration:relative:)
 
-**Framework**: Dockkit  
+**Framework**: DockKit  
 **Kind**: method
 
 Sets the position of each axis of orientation to radians for pitch, yaw, and roll.

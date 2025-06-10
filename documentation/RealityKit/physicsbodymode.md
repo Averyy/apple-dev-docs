@@ -10,6 +10,7 @@ The ways that a physics body can move in response to physical forces.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -27,17 +28,6 @@ enum PhysicsBodyMode
   The user controls body movement.
 - [PhysicsBodyMode.dynamic](physicsbodymode/dynamic.md)
   Forces and collisions control body movement.
-### Comparing modes
-- [static func == (PhysicsBodyMode, PhysicsBodyMode) -> Bool](physicsbodymode/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](physicsbodymode/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](physicsbodymode/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](physicsbodymode/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](physicsbodymode/equatable-implementations.md)
 
 ## Relationships
 

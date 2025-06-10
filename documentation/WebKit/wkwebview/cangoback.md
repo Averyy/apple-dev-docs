@@ -1,6 +1,6 @@
 # canGoBack
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether there is a valid back item in the back-forward list.

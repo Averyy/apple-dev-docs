@@ -1,6 +1,6 @@
 # backButtonTitle
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: property
 
 The custom title of the Back button.

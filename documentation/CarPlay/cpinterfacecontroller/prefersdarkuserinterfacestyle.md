@@ -13,6 +13,7 @@ A Boolean value that determines whether the system draws the user interface in D
 ## Declaration
 
 ```swift
+@MainActor
 var prefersDarkUserInterfaceStyle: Bool { get set }
 ```
 

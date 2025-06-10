@@ -92,8 +92,6 @@ Because `zPosition` is additive across parent-child node relationships, you can 
 
 > ❗ **Important**:  The [`SKCropNode`](skcropnode.md) and [`SKEffectNode`](skeffectnode.md) node classes alter the scene rendering behavior. The children of these nodes are rendered independently as a separate node tree, and the results are rendered into the tree that contains the crop or effect node. For more information, see Working with Other Node Types.
 
- The [`SKCropNode`](skcropnode.md) and [`SKEffectNode`](skeffectnode.md) node classes alter the scene rendering behavior. The children of these nodes are rendered independently as a separate node tree, and the results are rendered into the tree that contains the crop or effect node. For more information, see Working with Other Node Types.
-
 ## See Also
 
 - [var zPosition: CGFloat](sknode/zposition.md)

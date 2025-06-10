@@ -25,10 +25,6 @@ Children of a given parent `item` are accessed sequentially. In order for the co
 
 > ❗ **Important**:  While this method is marked as `@optional` in the protocol,  Do not call [`reloadData()`](nstableview/reloaddata().md) from this method.
 
- While this method is marked as `@optional` in the protocol, 
-
-Do not call [`reloadData()`](nstableview/reloaddata().md) from this method.
-
 ##### Special Considerations
 
 The [`outlineView(_:child:ofItem:)`](nsoutlineviewdatasource/outlineview(_:child:ofitem:).md) method is called very frequently, so it must be efficient.

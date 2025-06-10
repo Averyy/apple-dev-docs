@@ -1,6 +1,6 @@
 # Toggle
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 A control that toggles between on and off states.
@@ -22,7 +22,9 @@ struct Toggle<Label> where Label : View
 
 ## Mentions
 
+- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
 - [Laying out a simple view](laying-out-a-simple-view.md)
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
 - [Declaring a custom view](declaring-a-custom-view.md)
 
 #### Overview
@@ -140,4 +142,4 @@ You can also define custom styles by creating a type that conforms to the [`Togg
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/toggle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/toggle)*

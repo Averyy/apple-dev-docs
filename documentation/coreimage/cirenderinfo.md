@@ -1,9 +1,9 @@
 # CIRenderInfo
 
 **Framework**: Core Image  
-**Kind**: cl
+**Kind**: class
 
-An encapsulation of a render task's timing, passes, and pixels processed.
+An encapsulation of a render task’s timing, passes, and pixels processed.
 
 **Availability**:
 - iOS 11.0+
@@ -16,37 +16,44 @@ An encapsulation of a render task's timing, passes, and pixels processed.
 ## Declaration
 
 ```swift
-class CIRenderInfo : NSObject
+class CIRenderInfo
 ```
 
 #### Overview
 
-A [`CIRenderInfo`](cirenderinfo.md) object allows Xcode Quick Look to visualize the render graph with detailed timing information.
+A `CIRenderInfo` object allows Xcode Quick Look to visualize the render graph with detailed timing information.
 
 ## Topics
 
 ### Instance Properties
-- [var kernelExecutionTime: TimeInterval](cirenderinfo/2875453-kernelexecutiontime.md)
+- [var kernelExecutionTime: TimeInterval](cirenderinfo/kernelexecutiontime.md)
   The amount of time a render spent executing kernels.
-- [var passCount: Int](cirenderinfo/2875446-passcount.md)
+- [var passCount: Int](cirenderinfo/passcount.md)
   The number of passes the render took.
-- [var pixelsProcessed: Int](cirenderinfo/2919725-pixelsprocessed.md)
+- [var pixelsProcessed: Int](cirenderinfo/pixelsprocessed.md)
   The number of pixels the render produced executing kernels.
-- [var kernelCompileTime: TimeInterval](cirenderinfo/4155584-kernelcompiletime.md)
+- [var kernelCompileTime: TimeInterval](cirenderinfo/kernelcompiletime.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/NSObject-swift.class.md)
+### Conforms To
+- [CVarArg](../Swift/CVarArg.md)
+- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
-- [Generating an animation with a Core Image Render Destination](generating_an_animation_with_a_core_image_render_destination.md)
+- [Generating an animation with a Core Image Render Destination](generating-an-animation-with-a-core-image-render-destination.md)
   Animate a filtered image to a Metal view in a SwiftUI app using a Core Image Render Destination.
 - [class CIRenderDestination](cirenderdestination.md)
-  A specification for configuring all attributes of a render task's destination and issuing asynchronous render tasks.
+  A specification for configuring all attributes of a render task’s destination and issuing asynchronous render tasks.
 - [class CIRenderTask](cirendertask.md)
-  A single render task issued in conjunction with [`CIRenderDestination`](cirenderdestination.md).
+  A single render task.
 - [enum CIRenderDestinationAlphaMode](cirenderdestinationalphamode.md)
   Different ways of representing alpha.
 

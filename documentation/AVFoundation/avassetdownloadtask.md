@@ -49,6 +49,7 @@ This class is a subclass of [`URLSessionTask`](https://developer.apple.com/docum
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [ProgressReporting](../Foundation/ProgressReporting.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

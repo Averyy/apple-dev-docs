@@ -1,6 +1,6 @@
 # accessibility(inputLabels:)
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Sets alternate input labels with which users identify a view.

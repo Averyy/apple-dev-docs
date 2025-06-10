@@ -10,6 +10,7 @@ The result of an ownership transfer request.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -25,17 +26,6 @@ enum OwnershipTransferCompletionResult
   The request is accepted and ownership is transferred.
 - [SynchronizationComponent.OwnershipTransferCompletionResult.timedOut](synchronizationcomponent/ownershiptransfercompletionresult/timedout.md)
   The ownership transfer request timed out.
-### Comparing completion results
-- [static func == (SynchronizationComponent.OwnershipTransferCompletionResult, SynchronizationComponent.OwnershipTransferCompletionResult) -> Bool](synchronizationcomponent/ownershiptransfercompletionresult/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](synchronizationcomponent/ownershiptransfercompletionresult/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](synchronizationcomponent/ownershiptransfercompletionresult/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](synchronizationcomponent/ownershiptransfercompletionresult/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](synchronizationcomponent/ownershiptransfercompletionresult/equatable-implementations.md)
 
 ## Relationships
 

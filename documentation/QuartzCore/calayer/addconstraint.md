@@ -6,7 +6,7 @@
 Adds the specified constraint to the layer.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst 13.1+
 - macOS ?+
 
 ## Declaration

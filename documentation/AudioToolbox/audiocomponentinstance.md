@@ -16,7 +16,7 @@ A component instance, or object, is an audio unit or audio codec.
 ## Declaration
 
 ```swift
-typealias AudioComponentInstance = UnsafeMutablePointer<ComponentInstanceRecord>
+typealias AudioComponentInstance = OpaquePointer
 ```
 
 ## See Also

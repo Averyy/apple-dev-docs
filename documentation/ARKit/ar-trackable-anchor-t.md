@@ -5,6 +5,10 @@
 
 An anchor that can gain and lose its tracking state over the course of a session.
 
+**Availability**:
+- macOS 26.0+ (Beta)
+- visionOS 1.0+
+
 ## Declaration
 
 ```swift

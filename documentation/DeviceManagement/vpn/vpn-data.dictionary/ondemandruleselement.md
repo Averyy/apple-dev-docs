@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The dictionary that contains settings for On Demand connections.
+An On Demand rule
 
 **Availability**:
 - iOS 4.0+
@@ -11,8 +11,6 @@ The dictionary that contains settings for On Demand connections.
 - macOS 10.7+
 - tvOS 17.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,8 +20,9 @@ object VPN.VPN.OnDemandRulesElement
 
 ## Topics
 
-### Profiles
+### Objects
 - [object VPN.VPN.OnDemandRulesElement.ActionParameter](vpn/vpn-data.dictionary/ondemandruleselement/actionparameter.md)
+  Dictionary containing parameters for action settings
 
 
 ---

@@ -8,8 +8,6 @@ Store 3D image data in a base media in QuickTime movies.
 
 > ❗ **Important**: 3D Media is deprecated in the QuickTime file format. The information that follows documents existing content containing 3D media and should not be used for new development.
 
-3D Media is deprecated in the QuickTime file format. The information that follows documents existing content containing 3D media and should not be used for new development.
-
 QuickTime movies store 3D image data in a base media. This media has a media type of `'qd3d'`.
 
 #### 3d Sample Description

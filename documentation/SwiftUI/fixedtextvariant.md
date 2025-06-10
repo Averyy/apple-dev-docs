@@ -24,6 +24,7 @@ struct FixedTextVariant
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [TextVariantPreference](textvariantpreference.md)
 
 ## See Also

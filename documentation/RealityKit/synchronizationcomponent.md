@@ -10,6 +10,7 @@ A component that synchronizes an entity between processes and networked applicat
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -35,22 +36,14 @@ An entity acquires a [`SynchronizationComponent`](synchronizationcomponent.md) i
   A Boolean that indicates whether the calling process owns the entity.
 - [var ownershipTransferMode: SynchronizationComponent.OwnershipTransferMode](synchronizationcomponent/ownershiptransfermode-swift.property.md)
   The entity’s transfer ownership mode.
-### Registering a component type
-- [static func registerComponent()](synchronizationcomponent/registercomponent.md)
-  Registers a new component type.
 ### Comparing synchronization components
 - [static func == (SynchronizationComponent, SynchronizationComponent) -> Bool](synchronizationcomponent/==(_:_:).md)
   Indicates whether two synchronization components are equal.
-- [static func != (Self, Self) -> Bool](synchronizationcomponent/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Enumerations
 - [SynchronizationComponent.OwnershipTransferCompletionResult](synchronizationcomponent/ownershiptransfercompletionresult.md)
   The result of an ownership transfer request.
 - [SynchronizationComponent.OwnershipTransferMode](synchronizationcomponent/ownershiptransfermode-swift.enum.md)
   Modes of ownership transfer.
-### Default Implementations
-- [Component Implementations](synchronizationcomponent/component-implementations.md)
-- [Equatable Implementations](synchronizationcomponent/equatable-implementations.md)
 
 ## Relationships
 

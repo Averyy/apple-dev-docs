@@ -25,6 +25,8 @@ protocol QLPreviewItem : NSObjectProtocol
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+### Conforming Types
+- [ARQuickLookPreviewItem](arquicklookpreviewitem.md)
 
 ## See Also
 

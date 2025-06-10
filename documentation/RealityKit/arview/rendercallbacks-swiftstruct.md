@@ -10,6 +10,7 @@ A container that holds the view’s render callbacks.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -38,6 +39,8 @@ Render callbacks are closures RealityKit calls at predefined times. You can use 
   Create special rendering effects for your RealityKit scenes.
 - [ARView.PostProcessContext](arview/postprocesscontext.md)
   An object the framework uses to pass data to a postprocess callback.
+- [protocol PostProcessEffect](postprocesseffect.md)
+  A protocol that defines hooks for custom post processing effects.
 
 
 ---

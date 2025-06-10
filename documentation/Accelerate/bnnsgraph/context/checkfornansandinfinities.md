@@ -24,8 +24,6 @@ var checkForNaNsAndInfinities: Bool { get set }
 
 - [func BNNSGraphContextEnableNanAndInfChecks(bnns_graph_context_t, Bool)](bnnsgraphcontextenablenanandinfchecks(_:_:).md)
   Specifies that the context checks intermediate tensors for NaNs and infinities.
-- [func setBatchSize(Int, forFunction: String?) async](bnnsgraph/context/setbatchsize(_:forfunction:).md)
-  Sets the batch size for a graph.
 - [func setDynamicShapes([BNNSGraph.Shape], forFunction: String?) async throws -> [BNNSGraph.Shape]](bnnsgraph/context/setdynamicshapes(_:forfunction:).md)
   Specifies the dynamic shapes for a graph and, if possible, infers the output shapes.
 - [BNNSGraph.Shape](bnnsgraph/shape.md)

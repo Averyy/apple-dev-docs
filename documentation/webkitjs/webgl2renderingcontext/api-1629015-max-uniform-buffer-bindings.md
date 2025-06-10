@@ -1,6 +1,6 @@
 # MAX_UNIFORM_BUFFER_BINDINGS
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

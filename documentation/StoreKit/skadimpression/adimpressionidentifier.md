@@ -26,8 +26,6 @@ Ad networks set the value of this property to a random value (nonce) at the time
 
 > ❗ **Important**:  When you generate [`signature`](skadimpression/signature.md), which is the signature value, you must sign the [`adImpressionIdentifier`](skadimpression/adimpressionidentifier.md) as an all-lowercase UUID string representation.
 
- When you generate [`signature`](skadimpression/signature.md), which is the signature value, you must sign the [`adImpressionIdentifier`](skadimpression/adimpressionidentifier.md) as an all-lowercase UUID string representation.
-
 ## See Also
 
 - [init(sourceAppStoreItemIdentifier: NSNumber, advertisedAppStoreItemIdentifier: NSNumber, adNetworkIdentifier: String, adCampaignIdentifier: NSNumber, adImpressionIdentifier: String, timestamp: NSNumber, signature: String, version: String)](skadimpression/init(sourceappstoreitemidentifier:advertisedappstoreitemidentifier:adnetworkidentifier:adcampaignidentifier:adimpressionidentifier:timestamp:signature:version:).md)

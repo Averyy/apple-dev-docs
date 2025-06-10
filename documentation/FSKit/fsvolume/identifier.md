@@ -22,8 +22,6 @@ Network file systems may access the same underlying volume using different authe
 
 > ❗ **Important**: Don’t subclass this class.
 
-Don’t subclass this class.
-
 ## Relationships
 
 ### Inherits From
@@ -40,6 +38,7 @@ Don’t subclass this class.
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

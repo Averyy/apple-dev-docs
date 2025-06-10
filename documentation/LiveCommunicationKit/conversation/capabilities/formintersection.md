@@ -5,6 +5,13 @@
 
 Removes all elements of this option set that are not also present in the given set.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- visionOS ?+
+- watchOS ?+
+
 ## Declaration
 
 ```swift

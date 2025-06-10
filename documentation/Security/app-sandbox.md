@@ -10,8 +10,6 @@ App Sandbox provides protection to system resources and user data by limiting yo
 
 > ❗ **Important**:  To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability.
 
- To distribute a macOS app through the Mac App Store, you must enable the App Sandbox capability.
-
 ## Topics
 
 ### Essentials

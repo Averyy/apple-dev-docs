@@ -12,6 +12,7 @@ Get information about a leaderboard set image associated with a leaderboard set 
 
 - [Read leaderboard set localization information](get-v1-gamecenterleaderboardsetlocalizations-_id_.md)
   Get information about a leaderboard set localization.
+- [GET /v1/gameCenterLeaderboardSetLocalizations/{id}/relationships/gameCenterLeaderboardSetImage](get-v1-gamecenterleaderboardsetlocalizations-_id_-relationships-gamecenterleaderboardsetimage.md)
 - [Create a leaderboard set localization](post-v1-gamecenterleaderboardsetlocalizations.md)
   Add a new leaderboard set localization.
 - [Modify a leaderboard set localization](patch-v1-gamecenterleaderboardsetlocalizations-_id_.md)

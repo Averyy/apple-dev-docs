@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: init
 
 Creates a dictionary using the keys and values in the specified object parameter.

@@ -83,4 +83,4 @@ If you need to pass an optional pointer as a `CVarArg` argument, use the `Int(bi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/cvararg)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/cvararg)*

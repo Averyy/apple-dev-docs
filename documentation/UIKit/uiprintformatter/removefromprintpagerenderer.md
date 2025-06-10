@@ -14,7 +14,6 @@ Removes the print formatter from the page renderer.
 ## Declaration
 
 ```swift
-@MainActor
 func removeFromPrintPageRenderer()
 ```
 

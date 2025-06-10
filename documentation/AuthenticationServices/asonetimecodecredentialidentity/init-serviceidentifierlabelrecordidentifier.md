@@ -16,6 +16,12 @@
 init(serviceIdentifier: ASCredentialServiceIdentifier, label: String, recordIdentifier: String?)
 ```
 
+## Parameters
+
+- `serviceIdentifier`: The service identifier for which this credential identity is valid.
+- `label`: A user-provided label to identify the one time code.
+- `recordIdentifier`: An optional string to uniquely identify this record in your local database.
+
 
 ---
 

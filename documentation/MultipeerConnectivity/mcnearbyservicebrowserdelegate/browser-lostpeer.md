@@ -26,8 +26,6 @@ This callback informs your app that invitations can no longer be sent to a peer,
 
 > ❗ **Important**:  Because there is a delay between when a host leaves a network and when the underlying Bonjour layer detects that it has left, the fact that your app has not yet received a disappearance callback does not guarantee that it can communicate with the peer successfully.
 
- Because there is a delay between when a host leaves a network and when the underlying Bonjour layer detects that it has left, the fact that your app has not yet received a disappearance callback does not guarantee that it can communicate with the peer successfully.
-
 ## Parameters
 
 - `browser`: The browser object that lost the nearby peer.

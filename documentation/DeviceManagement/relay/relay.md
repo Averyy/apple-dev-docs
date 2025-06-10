@@ -11,8 +11,6 @@ A dictionary that describes a relay server.
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,7 +20,7 @@ object Relay.Relay
 
 ## Topics
 
-### Additional header fields
+### Objects
 - [object Relay.Relay.AdditionalHTTPHeaderFields](relay/relay/additionalhttpheaderfields-data.dictionary.md)
   A custom HTTP header key field name.
 

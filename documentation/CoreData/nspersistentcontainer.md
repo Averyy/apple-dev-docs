@@ -24,8 +24,8 @@ class NSPersistentContainer
 
 - [Setting Up Core Data with CloudKit](setting-up-core-data-with-cloudkit.md)
 - [Setting up a Core Data stack manually](setting-up-a-core-data-stack-manually.md)
-- [Setting up a Core Data stack](setting-up-a-core-data-stack.md)
 - [Using Core Data in the background](using-core-data-in-the-background.md)
+- [Setting up a Core Data stack](setting-up-a-core-data-stack.md)
 
 #### Overview
 
@@ -79,6 +79,7 @@ NSPersistentContainer simplifies the creation and management of the Core Data st
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

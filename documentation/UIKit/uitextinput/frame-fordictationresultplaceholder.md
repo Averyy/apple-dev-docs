@@ -29,8 +29,6 @@ While dictation results are being generated, UIKit displays the built-in dictati
 
 > ❗ **Important**:  This method is called only if the custom text view client leverages system selection by subclassing `UITextView`. Other clients can use [`dictationRecordingDidEnd()`](uitextinput/dictationrecordingdidend().md) and [`dictationRecognitionFailed()`](uitextinput/dictationrecognitionfailed().md) to implement a custom placeholder.
 
- This method is called only if the custom text view client leverages system selection by subclassing `UITextView`. Other clients can use [`dictationRecordingDidEnd()`](uitextinput/dictationrecordingdidend().md) and [`dictationRecognitionFailed()`](uitextinput/dictationrecognitionfailed().md) to implement a custom placeholder.
-
 ## Parameters
 
 - `placeholder`: A placeholder object provided by your app and used to identify the location of the dictation results.

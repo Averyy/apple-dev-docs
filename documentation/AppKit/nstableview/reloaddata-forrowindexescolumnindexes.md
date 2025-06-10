@@ -1,6 +1,6 @@
 # reloadData(forRowIndexes:columnIndexes:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Reloads the data for only the specified rows and columns.

@@ -8,6 +8,7 @@ A type that contains all unavailable scene-understanding capabilities.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 

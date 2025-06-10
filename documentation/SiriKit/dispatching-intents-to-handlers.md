@@ -18,8 +18,6 @@ If you support an intent directly in your app, the system asks your app delegate
 
 > ❗ **Important**:  On iOS (and Mac Catalyst), the system only invokes the delegate method in apps that support multiple scenes. For more information, see [`Specifying the scenes your app supports`](https://developer.apple.com/documentation/UIKit/specifying-the-scenes-your-app-supports).
 
- On iOS (and Mac Catalyst), the system only invokes the delegate method in apps that support multiple scenes. For more information, see [`Specifying the scenes your app supports`](https://developer.apple.com/documentation/UIKit/specifying-the-scenes-your-app-supports).
-
 ##### Determine Which Handler Type to Return
 
 You can define a separate type for handling each intent class to keep your code organized. When the system asks your app delegate or Intents app extension for an intent handler, check the type of the intent you receive to determine which type of handler to return. Return a valid new handler that conforms to the relevant protocol for all intents that your app or extension supports.

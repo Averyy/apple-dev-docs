@@ -117,4 +117,4 @@ If the user denies access, these methods don’t return any results, and any fur
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3153-adopting-api-changes-for-eventkit-in-ios-macos-and-watchos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3153-adopting-api-changes-for-eventkit-in-ios-macos-and-watchos)*

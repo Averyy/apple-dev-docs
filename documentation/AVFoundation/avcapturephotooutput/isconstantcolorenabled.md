@@ -1,6 +1,6 @@
 # isConstantColorEnabled
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that indicates whether the photo output configures the render pipeline to perform constant color capture.

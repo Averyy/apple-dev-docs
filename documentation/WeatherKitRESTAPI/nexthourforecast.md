@@ -1,6 +1,6 @@
 # NextHourForecast
 
-**Framework**: Weatherkitrestapi  
+**Framework**: WeatherKit REST API  
 **Kind**: dictionary
 
 A minute-by-minute forecast for the next hour.

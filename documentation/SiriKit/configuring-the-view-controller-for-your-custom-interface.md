@@ -1,6 +1,6 @@
 # Configuring the View Controller for Your Custom Interface
 
-**Framework**: Sirikit
+**Framework**: SiriKit
 
 Configure your view controller to replace or augment the default interface in Siri or Maps.
 
@@ -43,7 +43,7 @@ Here are some tips for implementing the view controller for your Intents UI exte
 -  Using your app’s color, imagery, and other design elements is a great way to add familiarity and convey the presence of your app within the Siri or Maps interfaces.
 -  Wait until your view controller’s [`viewDidAppear(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/viewDidAppear(_:)) method is called to start animations. Stop animations in your view controller’s [`viewWillDisappear(_:)`](https://developer.apple.com/documentation/UIKit/UIViewController/viewWillDisappear(_:)) method.
 -  Your view controller may not be onscreen for very long, so use local resources and the provided [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) object for the bulk of your configuration. If you need to fetch more information from a server, always do so asynchronously and update your interface later.
--  The provided [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) object contains the original intent and the response provided by your Intents extension, which runs in a separate process. Using only the provided interaction object ensures that your view controller’s interface accurately reflects the information provided by your Intents extension. To communicate more information to your Intents UI app extension, your Intents app extension can include a custom [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object with its response and put the additional information in that object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nsuseractivity/1411706-userinfo) dictionary.
+-  The provided [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) object contains the original intent and the response provided by your Intents extension, which runs in a separate process. Using only the provided interaction object ensures that your view controller’s interface accurately reflects the information provided by your Intents extension. To communicate more information to your Intents UI app extension, your Intents app extension can include a custom [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) object with its response and put the additional information in that object’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSUserActivity/userInfo) dictionary.
 -  You may include branding and information that is relevant to the user, but advertising is prohibited.
 -  When calling the handler block of your configuration method, specify [`CGRectZero`](https://developer.apple.com/documentation/CoreGraphics/CGRectZero) for the size when you do not want the view controller to be shown onscreen. You might hide the view controller when there is no additional information to display for the specified intent.
 -  When the context parameter is set to [`INUIHostedViewContext.mapsCard`](https://developer.apple.com/documentation/intentsui/inuihostedviewcontext/mapscard), do not include an [`MKMapView`](https://developer.apple.com/documentation/MapKit/MKMapView) in your view controller’s interface. Maps already displays a map, so having two maps showing similar information would be confusing to users.
@@ -91,4 +91,4 @@ For more information about hiding portions of the default interface, see [`INUIH
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SiriKit/configuring-the-view-controller-for-your-custom-interface)*
+*[View on Apple Developer](https://developer.apple.com/documentation/sirikit/configuring-the-view-controller-for-your-custom-interface)*

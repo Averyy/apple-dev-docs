@@ -1,6 +1,6 @@
 # MEDIA_ERR_SRC_NOT_SUPPORTED
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

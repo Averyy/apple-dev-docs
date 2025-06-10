@@ -1,6 +1,6 @@
 # registerCustomURLScheme(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Registers a custom URL scheme that can be used in match patterns.

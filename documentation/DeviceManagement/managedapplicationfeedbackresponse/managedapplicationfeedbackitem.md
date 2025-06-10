@@ -11,8 +11,6 @@ A dictionary that contains a managed app’s feedback item.
 - macOS 11.0+
 - tvOS 10.2+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,7 +20,7 @@ object ManagedApplicationFeedbackResponse.ManagedApplicationFeedbackItem
 
 ## Topics
 
-### Commands
+### Objects
 - [object ManagedApplicationFeedbackResponse.ManagedApplicationFeedbackItem.Feedback](managedapplicationfeedbackresponse/managedapplicationfeedbackitem/feedback-data.dictionary.md)
   A dictionary that contains a managed app’s feedback items.
 

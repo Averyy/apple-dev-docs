@@ -1,6 +1,6 @@
 # sendData(toAllPeers:with:)
 
-**Framework**: Gamekit  
+**Framework**: GameKit  
 **Kind**: method
 
 Transmits a collection of bytes to all connected peers.

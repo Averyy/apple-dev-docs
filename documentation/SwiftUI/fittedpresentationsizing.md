@@ -1,6 +1,6 @@
 # FittedPresentationSizing
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: struct
 
 The size of the presentation is dictated by the ideal size of the content.
@@ -31,6 +31,7 @@ The presentation is sized by proposing `nil` in the horizontal and vertical dime
 ### Conforms To
 - [PresentationSizing](presentationsizing.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -44,4 +45,4 @@ The presentation is sized by proposing `nil` in the horizontal and vertical dime
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/fittedpresentationsizing)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/fittedpresentationsizing)*

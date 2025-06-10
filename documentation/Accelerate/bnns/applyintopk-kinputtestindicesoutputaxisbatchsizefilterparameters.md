@@ -24,8 +24,6 @@ static func applyInTopK(k: Int, input: BNNSNDArrayDescriptor, testIndices: BNNSN
 
 > ❗ **Important**:  The input data type must be `float`, the test indices data type must be `int32`, and the output data type must be `BNNSDataTypeBoolean`.
 
- The input data type must be `float`, the test indices data type must be `int32`, and the output data type must be `BNNSDataTypeBoolean`.
-
 ## Parameters
 
 - `k`: The number of entries the operation finds.

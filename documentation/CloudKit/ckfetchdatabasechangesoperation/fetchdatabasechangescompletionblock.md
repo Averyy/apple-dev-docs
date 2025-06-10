@@ -1,6 +1,6 @@
 # fetchDatabaseChangesCompletionBlock
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: property
 
 The closure to execute when the operation finishes.

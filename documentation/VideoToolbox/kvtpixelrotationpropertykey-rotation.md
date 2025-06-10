@@ -1,6 +1,6 @@
 # kVTPixelRotationPropertyKey_Rotation
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A key that specifies the amount of rotation in degrees.

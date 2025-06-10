@@ -46,6 +46,10 @@ protocol SymbolEffect : Hashable, Sendable
 ### Type Properties
 - [static var automatic: AutomaticSymbolEffect](symboleffect/automatic.md)
   A transition that applies the default animation to a symbol-based image in a context-sensitive manner.
+- [static var drawOff: DrawOffSymbolEffect](symboleffect/drawoff.md)
+  A symbol effect that applies the DrawOff animation to symbol images.
+- [static var drawOn: DrawOnSymbolEffect](symboleffect/drawon.md)
+  A symbol effect that applies the DrawOn animation to symbol images.
 - [static var replace: ReplaceSymbolEffect](symboleffect/replace.md)
   An animation that replaces the layers of one symbol-based image with those of another.
 
@@ -55,12 +59,15 @@ protocol SymbolEffect : Hashable, Sendable
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [AppearSymbolEffect](appearsymboleffect.md)
 - [AutomaticSymbolEffect](automaticsymboleffect.md)
 - [BounceSymbolEffect](bouncesymboleffect.md)
 - [BreatheSymbolEffect](breathesymboleffect.md)
 - [DisappearSymbolEffect](disappearsymboleffect.md)
+- [DrawOffSymbolEffect](drawoffsymboleffect.md)
+- [DrawOnSymbolEffect](drawonsymboleffect.md)
 - [PulseSymbolEffect](pulsesymboleffect.md)
 - [ReplaceSymbolEffect](replacesymboleffect.md)
 - [ReplaceSymbolEffect.MagicReplace](replacesymboleffect/magicreplace.md)

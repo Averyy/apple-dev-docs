@@ -14,7 +14,6 @@ Returns a simple-text print formatter initialized with attributed text.
 ## Declaration
 
 ```swift
-@MainActor
 init(attributedText: NSAttributedString)
 ```
 

@@ -6,8 +6,9 @@
 A dictionary that specifies the type of license the app uses.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
+- iOS 17.2+
+- iPadOS 17.2+
+- macOS 26.0+ (Beta)
 - visionOS 2.4+
 
 ## Declaration

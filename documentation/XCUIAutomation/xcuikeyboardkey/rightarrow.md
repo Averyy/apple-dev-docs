@@ -1,6 +1,6 @@
 # rightArrow
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A constant that represents the Right Arrow key.

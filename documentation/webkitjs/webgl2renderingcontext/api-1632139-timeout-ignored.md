@@ -1,6 +1,6 @@
 # TIMEOUT_IGNORED
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

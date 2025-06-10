@@ -26,8 +26,6 @@ Use this property when you want an object that always reflects the current syste
 
 > ❗ **Important**:  In macOS High Sierra and later, iOS 11 and later, tvOS 11 and later, and watchOS 4 and later, the [`local`](nstimezone/local.md) class property reflects the current system time zone, whereas previously it reflected the [`default`](nstimezone/default.md) time zone.
 
- In macOS High Sierra and later, iOS 11 and later, tvOS 11 and later, and watchOS 4 and later, the [`local`](nstimezone/local.md) class property reflects the current system time zone, whereas previously it reflected the [`default`](nstimezone/default.md) time zone.
-
 Although the time zone obtained here automatically updates with the system, it provides no indication when system settings change. To receive notification of time zone changes, add an observer to the [`NSSystemTimeZoneDidChange`](nsnotification/name-swift.struct/nssystemtimezonedidchange.md) notification by using the [`addObserver(_:selector:name:object:)`](notificationcenter/addobserver(_:selector:name:object:).md).
 
 ## See Also

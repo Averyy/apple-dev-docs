@@ -45,6 +45,7 @@ You do not create objects of this type directly. You receive a queue of the appr
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Scheduler](../Combine/Scheduler.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SerialExecutor](../Swift/SerialExecutor.md)
 - [TaskExecutor](../Swift/TaskExecutor.md)
 

@@ -1,6 +1,6 @@
 # webArchive
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A web archive of the content in the range.

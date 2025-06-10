@@ -1,6 +1,6 @@
 # removeSubranges(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Removes the elements at the given indices.
@@ -27,7 +27,7 @@ For example, this code sample finds the indices of all the vowel characters in t
 ```swift
 var str = "The rain in Spain stays mainly in the plain."
 let vowels: Set<Character> = ["a", "e", "i", "o", "u"]
-let vowelIndices = str.subranges(where: { vowels.contains($0) })
+let vowelIndices = str.indices(where: { vowels.contains($0) })
 
 str.removeSubranges(vowelIndices)
 // str == "Th rn n Spn stys mnly n th pln."

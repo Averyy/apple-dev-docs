@@ -21,8 +21,6 @@ A message that tells the user why the app is requesting access to the device’s
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the device’s microphone.
 
- This key is required if your app uses APIs that access the device’s microphone.
-
 ## See Also
 
 - [Requesting authorization to capture and save media](../AVFoundation/requesting-authorization-to-capture-and-save-media.md)
@@ -31,6 +29,8 @@ A message that tells the user why the app is requesting access to the device’s
   Prompt the user to authorize access to the camera and microphone.
 - [NSCameraUsageDescription](information-property-list/nscamerausagedescription.md)
   A message that tells the user why the app is requesting access to the device’s camera.
+- [NSMainCameraUsageDescription](information-property-list/nsmaincamerausagedescription.md)
+  A message that tells the user why the app is requesting access to the device’s main camera.
 
 
 ---

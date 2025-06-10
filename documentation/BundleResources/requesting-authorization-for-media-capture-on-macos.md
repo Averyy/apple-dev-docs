@@ -1,6 +1,6 @@
 # Requesting Authorization for Media Capture on macOS
 
-**Framework**: Bundleresources
+**Framework**: Bundle Resources
 
 Prompt the user to authorize access to the camera and microphone.
 
@@ -61,10 +61,12 @@ This command resets the access authorization settings for all apps, so other app
   Prompt the user to authorize access to the camera, microphone, and photo library.
 - [NSCameraUsageDescription](information-property-list/nscamerausagedescription.md)
   A message that tells the user why the app is requesting access to the device’s camera.
+- [NSMainCameraUsageDescription](information-property-list/nsmaincamerausagedescription.md)
+  A message that tells the user why the app is requesting access to the device’s main camera.
 - [NSMicrophoneUsageDescription](information-property-list/nsmicrophoneusagedescription.md)
   A message that tells the user why the app is requesting access to the device’s microphone.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/BundleResources/requesting-authorization-for-media-capture-on-macos)*
+*[View on Apple Developer](https://developer.apple.com/documentation/bundleresources/requesting-authorization-for-media-capture-on-macos)*

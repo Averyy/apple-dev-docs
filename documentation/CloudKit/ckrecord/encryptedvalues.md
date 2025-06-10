@@ -1,6 +1,6 @@
 # encryptedValues
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: property
 
 An object that manages the record’s encrypted key-value pairs.

@@ -18,7 +18,7 @@ A value that represents either a success or a failure, including an associated v
 
 ```swift
 @frozen
-enum Result<Success, Failure> where Failure : Error, Success : ~Copyable
+enum Result<Success, Failure> where Failure : Error, Success : ~Copyable, Success : ~Escapable
 ```
 
 ## Mentions
@@ -73,6 +73,7 @@ enum Result<Success, Failure> where Failure : Error, Success : ~Copyable
 - [Equatable](equatable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 
 ## See Also
 

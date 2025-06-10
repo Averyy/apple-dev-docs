@@ -35,6 +35,7 @@ class MusicRelationshipProperty<Root, RelatedMusicItemType> where RelatedMusicIt
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

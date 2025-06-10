@@ -17,6 +17,7 @@ The speed at which the particle’s depth changes.
 ## Declaration
 
 ```swift
+@MainActor
 var particleZPositionSpeed: CGFloat { get set }
 ```
 

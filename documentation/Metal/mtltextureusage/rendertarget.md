@@ -21,16 +21,14 @@ static var renderTarget: MTLTextureUsage { get }
 
 ## Mentions
 
-- [Optimizing Texture Data](optimizing-texture-data.md)
 - [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
+- [Optimizing Texture Data](optimizing-texture-data.md)
 
 #### Discussion
 
 Set this option if you use the given texture as a color, depth, or stencil render target in any render pass. This option allows you to assign the texture to the [`texture`](mtlrenderpassattachmentdescriptor/texture.md) property of a [`MTLRenderPassAttachmentDescriptor`](mtlrenderpassattachmentdescriptor.md).
 
 > ❗ **Important**:  Rendering and writing to a texture are different operations, and you don’t need to combine their usage options. Set the [`renderTarget`](mtltextureusage/rendertarget.md) option if you render to a given texture, but don’t set the [`shaderWrite`](mtltextureusage/shaderwrite.md) option if you don’t write to the texture. The [`renderTarget`](mtltextureusage/rendertarget.md) and [`shaderWrite`](mtltextureusage/shaderwrite.md) options aren’t equivalent, and setting [`renderTarget`](mtltextureusage/rendertarget.md) doesn’t require you to also set [`shaderWrite`](mtltextureusage/shaderwrite.md).
-
- Rendering and writing to a texture are different operations, and you don’t need to combine their usage options. Set the [`renderTarget`](mtltextureusage/rendertarget.md) option if you render to a given texture, but don’t set the [`shaderWrite`](mtltextureusage/shaderwrite.md) option if you don’t write to the texture. The [`renderTarget`](mtltextureusage/rendertarget.md) and [`shaderWrite`](mtltextureusage/shaderwrite.md) options aren’t equivalent, and setting [`renderTarget`](mtltextureusage/rendertarget.md) doesn’t require you to also set [`shaderWrite`](mtltextureusage/shaderwrite.md).
 
 ## See Also
 

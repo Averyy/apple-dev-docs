@@ -14,6 +14,7 @@ Get the app information for a specific prerelease version.
   Get a list of prerelease versions for all apps.
 - [Read Prerelease Version Information](get-v1-prereleaseversions-_id_.md)
   Get information about a specific prerelease version.
+- [GET /v1/preReleaseVersions/{id}/relationships/app](get-v1-prereleaseversions-_id_-relationships-app.md)
 
 
 ---

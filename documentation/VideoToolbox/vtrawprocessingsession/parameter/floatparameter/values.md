@@ -1,6 +1,6 @@
 # values
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: property
 
 **Availability**:

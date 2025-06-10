@@ -25,6 +25,8 @@ Each joint consists of two pins, each of which belongs to a different entity. Ea
   A component that stores physics joints which RealityKit simulates.
 - [struct EntityGeometricPins](entitygeometricpins.md)
   A structure that wraps all geometric pins an entity owns.
+- [struct AttachedTransformComponent](attachedtransformcomponent.md)
+  A component that stores an optional source pin owned by this entity and a target pin which this entity is attached to
 ### Built-in joint types
 - [struct PhysicsRevoluteJoint](physicsrevolutejoint.md)
   A joint that allows one degree of rotational freedom between two entity pins, similar to a door swinging on its hinges.

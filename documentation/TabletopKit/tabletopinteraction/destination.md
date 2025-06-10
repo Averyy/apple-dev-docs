@@ -31,6 +31,7 @@ The position and orientation can be relative to either a piece of equipment or t
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

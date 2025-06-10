@@ -115,4 +115,4 @@ Each file coordinator object you create should be used on a single thread only. 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/nsfilecoordinator)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsfilecoordinator)*

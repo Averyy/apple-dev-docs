@@ -24,8 +24,6 @@ This function doesn’t allocate memory for the returned file descriptor descrip
 
 > ⚠️ **Warning**:  The returned pointer must not outlive the `event` parameter passed to the function, because the pointer will likely be invalid after the function returns.
 
- The returned pointer must not outlive the `event` parameter passed to the function, because the pointer will likely be invalid after the function returns.
-
 ## Parameters
 
 - `event`: The process execution event.

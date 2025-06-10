@@ -1,6 +1,6 @@
 # Previewing Metadata using Open Graph
 
-**Framework**: Safariservices
+**Framework**: Safari Services
 
 Build a Safari Extension that displays metadata using Open Graph.
 
@@ -24,4 +24,4 @@ Build a Safari Extension that displays metadata using Open Graph.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SafariServices/previewing-metadata-using-open-graph)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/previewing-metadata-using-open-graph)*

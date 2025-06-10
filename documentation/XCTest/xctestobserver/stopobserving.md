@@ -1,6 +1,6 @@
 # stopObserving()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Stops observing a test.

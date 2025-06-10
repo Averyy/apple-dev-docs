@@ -14,8 +14,6 @@ An app using Apple events to control another app might be able to gain access to
 
 > ❗ **Important**:  This key is required if your app uses APIs that send Apple events.
 
- This key is required if your app uses APIs that send Apple events.
-
 ## See Also
 
 - [NSUpdateSecurityPolicy](information-property-list/nsupdatesecuritypolicy.md)

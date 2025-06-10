@@ -1,6 +1,6 @@
 # startScanning()
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Starts scanning the camera’s live video for data.

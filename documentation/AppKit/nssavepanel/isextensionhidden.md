@@ -1,6 +1,6 @@
 # isExtensionHidden
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 A Boolean value that indicates whether to display filename extensions.
@@ -39,4 +39,4 @@ If a user adds or removes a filename extension in the panel’s name field, the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nssavepanel/isextensionhidden)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nssavepanel/isextensionhidden)*

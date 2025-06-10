@@ -12,6 +12,7 @@ Methods the delegate calls with search completion data.
 - macOS 10.11.4+
 - tvOS 9.2+
 - visionOS 1.0+
+- watchOS 3.0+
 
 ## Declaration
 

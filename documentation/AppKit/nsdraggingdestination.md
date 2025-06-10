@@ -49,6 +49,7 @@ In macOS 10.7 and later [`NSDraggingDestination`](nsdraggingdestination.md) is a
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 ### Conforming Types
+- [NSBackgroundExtensionView](nsbackgroundextensionview.md)
 - [NSBox](nsbox.md)
 - [NSBrowser](nsbrowser.md)
 - [NSButton](nsbutton.md)
@@ -60,6 +61,8 @@ In macOS 10.7 and later [`NSDraggingDestination`](nsdraggingdestination.md) is a
 - [NSControl](nscontrol.md)
 - [NSDatePicker](nsdatepicker.md)
 - [NSForm](nsform.md)
+- [NSGlassEffectContainerView](nsglasseffectcontainerview.md)
+- [NSGlassEffectView](nsglasseffectview.md)
 - [NSGridView](nsgridview.md)
 - [NSImageView](nsimageview.md)
 - [NSLevelIndicator](nslevelindicator.md)

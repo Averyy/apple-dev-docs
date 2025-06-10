@@ -8,13 +8,9 @@ A file format used to store a QuickTime VR movie on disk.
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
-VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
-
 A QuickTime VR movie is stored on disk in a format known as the QuickTime VR file format. Beginning in QuickTime VR 2.0, a QuickTime VR movie could contain one or more nodes. Each node is either a panorama or an object. In addition, a QuickTime VR movie could contain various types of hot spots, including links between any two types of nodes.
 
 > ❗ **Important**: This section describes the file format supported by version 2.1 of the QuickTime VR Manager.
-
-This section describes the file format supported by version 2.1 of the QuickTime VR Manager.
 
 All QuickTime VR movies contain a single QTVR track, a special type of QuickTime track that maintains a list of the nodes in the movie. Each individual sample in a QTVR track contains general information and hot spot information for a particular node.
 

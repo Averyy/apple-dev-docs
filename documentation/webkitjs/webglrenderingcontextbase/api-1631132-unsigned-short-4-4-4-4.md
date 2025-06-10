@@ -1,6 +1,6 @@
 # UNSIGNED_SHORT_4_4_4_4
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

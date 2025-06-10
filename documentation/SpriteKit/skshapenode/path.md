@@ -17,7 +17,6 @@ The path that defines the shape.
 ## Declaration
 
 ```swift
-@MainActor
 var path: CGPath? { get set }
 ```
 

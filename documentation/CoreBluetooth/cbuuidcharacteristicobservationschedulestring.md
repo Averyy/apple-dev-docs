@@ -18,6 +18,10 @@
 let CBUUIDCharacteristicObservationScheduleString: String
 ```
 
+#### Discussion
+
+Data representing the observation schedule for a characteristic.
+
 
 ---
 

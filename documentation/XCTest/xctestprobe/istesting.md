@@ -1,6 +1,6 @@
 # isTesting()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 A Boolean value that indicates whether a test is running.

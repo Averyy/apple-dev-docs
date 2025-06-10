@@ -1,6 +1,6 @@
 # tabFocusesLinks
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean value that indicates whether pressing the tab key changes the focus to links and form controls.

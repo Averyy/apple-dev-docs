@@ -10,7 +10,7 @@ Associates a fully formed string with the value of this view when used as a sear
 - iPadOS 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 8.0+
 
 ## Declaration

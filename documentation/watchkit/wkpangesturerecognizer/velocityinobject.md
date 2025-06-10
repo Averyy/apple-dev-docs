@@ -1,6 +1,6 @@
 # velocityInObject()
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 The velocity of the pan gesture in the current object.

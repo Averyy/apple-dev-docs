@@ -71,6 +71,9 @@ Manage all aspects of your app, App Clips, in-app purchases, and customer review
   Manage the settings that make your app available for pre-order.
 - [App availability](app-availability.md)
   Manage territory and date settings that make your app available for pre-order.
+### Apple hosted background assets
+- [Background assets](background-assets.md)
+  Assets for your app that you can upload and download separately from the Apple hosted app.
 ### Featuring Nominations
 - [Featuring nominations](featuring-nominations.md)
   Tell Apple about a noteworthy app or update to an existing one for consideration for featuring opportunities.

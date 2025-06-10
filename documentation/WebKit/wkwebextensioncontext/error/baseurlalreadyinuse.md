@@ -1,6 +1,6 @@
 # baseURLAlreadyInUse
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates that another context is already using the specified base URL.

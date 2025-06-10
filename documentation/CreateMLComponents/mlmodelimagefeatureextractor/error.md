@@ -42,6 +42,7 @@ enum Error
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

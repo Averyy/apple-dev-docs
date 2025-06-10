@@ -334,6 +334,8 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
 ### Invalid Pixel Format
 - [MTLPixelFormat.invalid](mtlpixelformat/invalid.md)
   The default value of the pixel format for the `MTLRenderPipelineState`. You cannot create a texture with this value.
+### Enumeration Cases
+- [MTLPixelFormat.unspecialized](mtlpixelformat/unspecialized.md)
 ### Initializers
 - [init?(rawValue: UInt)](mtlpixelformat/init(rawvalue:).md)
 
@@ -345,6 +347,7 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -365,4 +368,4 @@ See Table 7.7 in the [`Metal Shading Language Specification`](https://developer.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/mtlpixelformat)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlpixelformat)*

@@ -39,6 +39,7 @@ These keys are used with [`traits`](nsfontdescriptor/attributename/traits.md).
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

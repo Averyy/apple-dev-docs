@@ -1,6 +1,6 @@
 # DECISION_POINT_AFTER_REDIRECT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -74,4 +74,4 @@ Finally, encode and commit a [`copy(from:sourceSlice:sourceLevel:sourceOrigin:so
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/copying-data-to-a-private-resource)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/copying-data-to-a-private-resource)*

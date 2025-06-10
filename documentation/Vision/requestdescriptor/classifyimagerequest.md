@@ -19,6 +19,11 @@ A descriptor that describes a classify image request.
 case classifyImageRequest(ClassifyImageRequest.Revision)
 ```
 
+## See Also
+
+- [case detectLensSmudgeRequest(DetectLensSmudgeRequest.Revision)](requestdescriptor/detectlenssmudgerequest(_:).md)
+  A descriptor that describes a detect lens smudge request.
+
 
 ---
 

@@ -1,6 +1,6 @@
 # testInvocations
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An array of invocations that represents each test method in the test case.

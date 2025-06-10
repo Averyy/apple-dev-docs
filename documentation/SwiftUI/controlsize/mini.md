@@ -10,6 +10,7 @@ A control version that is minimally sized.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 10.15+
+- tvOS 15.0+
 - visionOS 1.0+
 - watchOS 9.0+
 

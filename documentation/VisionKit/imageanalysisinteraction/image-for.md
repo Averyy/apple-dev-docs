@@ -1,6 +1,6 @@
 # image(for:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Provides an image asynchronously that contains the given subjects with the background removed.

@@ -1,6 +1,6 @@
 # copyable(_:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Specifies a list of items to copy in response to the system’s Copy command.

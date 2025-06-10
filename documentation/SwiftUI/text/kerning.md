@@ -51,8 +51,6 @@ The  letter combination keeps a constant shape as the other letters move togethe
 
 > ❗ **Important**: If you add both the [`tracking(_:)`](text/tracking(_:).md) and [`kerning(_:)`](text/kerning(_:).md) modifiers to a view, the view applies the tracking and ignores the kerning.
 
-If you add both the [`tracking(_:)`](text/tracking(_:).md) and [`kerning(_:)`](text/kerning(_:).md) modifiers to a view, the view applies the tracking and ignores the kerning.
-
 ## Parameters
 
 - `kerning`: The spacing to use between individual characters in   this text. Value of   sets the kerning to the system default value.
@@ -62,7 +60,7 @@ If you add both the [`tracking(_:)`](text/tracking(_:).md) and [`kerning(_:)`](t
 - [func foregroundStyle<S>(S) -> Text](text/foregroundstyle(_:).md)
   Sets the style of the text displayed by this view.
 - [func bold() -> Text](text/bold.md)
-  Applies a bold font weight to the text.
+  Applies a bold or emphasized treatment to the fonts of the text.
 - [func bold(Bool) -> Text](text/bold(_:).md)
   Applies a bold font weight to the text.
 - [func italic() -> Text](text/italic.md)

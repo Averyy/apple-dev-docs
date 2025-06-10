@@ -1,6 +1,6 @@
 # contentSafeAreaInsets
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 Insets that define the area where it’s safe to display content on the screen.

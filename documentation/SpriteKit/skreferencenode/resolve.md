@@ -17,6 +17,7 @@ Loads the reference node’s content and adds it as a new child node.
 ## Declaration
 
 ```swift
+@MainActor
 func resolve()
 ```
 

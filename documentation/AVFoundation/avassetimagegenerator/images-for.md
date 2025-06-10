@@ -16,7 +16,7 @@ Generates images for times within the video timeline.
 ## Declaration
 
 ```swift
-func images(for times: [CMTime]) -> AVAssetImageGenerator.Images
+func images(for times: [CMTime]) -> sending AVAssetImageGenerator.Images
 ```
 
 ## Mentions

@@ -18,7 +18,7 @@ let NSPersistentStoreUbiquitousTransitionTypeKey: String
 
 #### Description
 
-In the [`NSPersistentStoreCoordinatorStoresWillChange`](https://developer.apple.com/documentation/foundation/nsnotification/name/1468800-nspersistentstorecoordinatorstor) and [`NSPersistentStoreCoordinatorStoresDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name/1468925-nspersistentstorecoordinatorstor) userInfo dictionaries, this identifies the type of event. The corresponding value is one of the [`NSPersistentStoreUbiquitousTransitionType`](nspersistentstoreubiquitoustransitiontype.md) enum values as an `NSNumber` object.
+In the [`NSPersistentStoreCoordinatorStoresWillChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSPersistentStoreCoordinatorStoresWillChange) and [`NSPersistentStoreCoordinatorStoresDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/NSPersistentStoreCoordinatorStoresDidChange) userInfo dictionaries, this identifies the type of event. The corresponding value is one of the [`NSPersistentStoreUbiquitousTransitionType`](nspersistentstoreubiquitoustransitiontype.md) enum values as an `NSNumber` object.
 
 ## See Also
 

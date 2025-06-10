@@ -1,6 +1,6 @@
 # startMonitoringEvent(with:)
 
-**Framework**: Corewlan  
+**Framework**: Core WLAN  
 **Kind**: method
 
 Register for specific Wi-Fi event notifications.

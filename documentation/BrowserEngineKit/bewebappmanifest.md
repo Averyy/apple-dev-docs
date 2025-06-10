@@ -11,7 +11,6 @@ An object that represents a web app manifest.
 - macOS ?+
 - tvOS 17.5+
 - visionOS 1.2+
-- watchOS 10.5+
 
 ## Declaration
 

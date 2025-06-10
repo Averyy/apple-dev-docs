@@ -1,6 +1,6 @@
 # Setting up HealthKit
 
-**Framework**: Healthkit
+**Framework**: HealthKit
 
 Set up and configure your HealthKit store.
 
@@ -86,4 +86,4 @@ You need only a single HealthKit store per app. These are long-lived objects; yo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit/setting-up-healthkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit/setting-up-healthkit)*

@@ -1,6 +1,6 @@
 # initWith
 
-**Framework**: Usbserialdriverkit  
+**Framework**: USBSerialDriverKit  
 **Kind**: method
 
 Initializes the private data structures associated with this class.

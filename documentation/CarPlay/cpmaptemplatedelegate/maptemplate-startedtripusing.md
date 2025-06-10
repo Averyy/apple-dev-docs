@@ -13,6 +13,7 @@ Tells the delegate that the user selected a trip and route choice to navigate.
 ## Declaration
 
 ```swift
+@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, startedTrip trip: CPTrip, using routeChoice: CPRouteChoice)
 ```
 

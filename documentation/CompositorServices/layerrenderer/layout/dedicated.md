@@ -6,6 +6,7 @@
 A layout that assigns a separate texture to each rendered view.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

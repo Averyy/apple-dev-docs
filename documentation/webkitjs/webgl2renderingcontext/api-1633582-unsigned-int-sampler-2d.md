@@ -1,6 +1,6 @@
 # UNSIGNED_INT_SAMPLER_2D
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

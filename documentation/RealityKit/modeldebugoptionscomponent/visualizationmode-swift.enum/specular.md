@@ -1,6 +1,6 @@
 # ModelDebugOptionsComponent.VisualizationMode.specular
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: case
 
 A mode that displays en entity’s shininess as its surface color.
@@ -10,6 +10,7 @@ A mode that displays en entity’s shininess as its surface color.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

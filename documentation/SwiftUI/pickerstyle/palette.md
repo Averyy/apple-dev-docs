@@ -1,6 +1,6 @@
 # palette
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: property
 
 A picker style that presents the options as a row of compact elements.
@@ -17,6 +17,10 @@ A picker style that presents the options as a row of compact elements.
 ```swift
 static var palette: PalettePickerStyle { get }
 ```
+
+## Mentions
+
+- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Discussion
 
@@ -113,4 +117,4 @@ To apply this style to a picker, or to a view that contains pickers, use the [`p
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/pickerstyle/palette)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/pickerstyle/palette)*

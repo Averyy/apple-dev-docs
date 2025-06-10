@@ -10,6 +10,7 @@ Initializes an audio resource from a Reality Composer Pro project.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -24,8 +25,6 @@ Initializes an audio resource from a Reality Composer Pro project.
 This method initializes a preconfigured [`AudioFileGroupResource`](audiofilegroupresource.md) from a scene in a Reality Composer Pro project.
 
 > ❗ **Important**: The name provided  be unique.
-
-The name provided  be unique.
 
 ## Parameters
 

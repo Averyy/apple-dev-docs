@@ -33,8 +33,6 @@ Core Location sets When in Use authorization implicitly when you process events 
 
 > ❗ **Important**:  For Always authorization, inform the user that location updates arrive in the background. This provides transparency and lets the user know what’s happening.
 
- For Always authorization, inform the user that location updates arrive in the background. This provides transparency and lets the user know what’s happening.
-
 ##### Process Location Updates After an App Launch
 
 The system can terminate apps at any time to free up memory or other system resources. If your app actively receives and processes location updates and terminates, it should restart those APIs upon launch in order to continue receiving updates. When you start those services, the system resumes the delivery of queued location updates. Don’t start these services at launch time if your app’s authorization status is undetermined.
@@ -45,16 +43,8 @@ The system can terminate apps at any time to free up memory or other system reso
   Start location services and provide information the system needs to optimize power usage for those services.
 - [Creating a location push service extension](creating-a-location-push-service-extension.md)
   Add and configure an extension to enable your location-sharing app to access a user’s location in response to a request from another user.
-- [class CLLocation](cllocation.md)
-  The latitude, longitude, and course information reported by the system.
-- [struct CLLocationCoordinate2D](cllocationcoordinate2d.md)
-  The latitude and longitude associated with a location, specified using the WGS 84 reference frame.
-- [class CLFloor](clfloor.md)
-  The floor of a building on which the user’s device is located.
 - [class CLVisit](clvisit.md)
   Information about the user’s location during a specific period of time.
-- [class CLLocationSourceInformation](cllocationsourceinformation.md)
-  Information about the source that provides a location.
 - [Monitoring location changes with Core Location](monitoring-location-changes-with-core-location.md)
   Define boundaries and act on user location updates.
 - [class CLServiceSession](clservicesession-pt7n.md)

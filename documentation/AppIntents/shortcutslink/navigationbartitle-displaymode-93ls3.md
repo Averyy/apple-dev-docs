@@ -8,7 +8,7 @@ Sets the title and display mode in the navigation bar for this view.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
+- Mac Catalyst ?+
 - visionOS 1.0+
 
 ## Declaration

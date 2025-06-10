@@ -1,6 +1,6 @@
 # calendars
 
-**Framework**: Eventkit  
+**Framework**: EventKit  
 **Kind**: property
 
 The calendars that belong to this source object.

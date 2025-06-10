@@ -1,6 +1,6 @@
 # ImageAnalysisInteraction.SubjectUnavailable.imageUnavailable
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: case
 
 An error that indicates the subject fails to produce an image.

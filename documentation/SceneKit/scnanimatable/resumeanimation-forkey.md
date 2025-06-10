@@ -10,7 +10,7 @@ Resumes a previously paused animation attached to the object with the specified 
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- macOS 10.9+
+- macOS 10.8+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+

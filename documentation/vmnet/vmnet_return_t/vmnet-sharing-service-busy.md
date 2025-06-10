@@ -1,6 +1,6 @@
 # vmnet_return_t.VMNET_SHARING_SERVICE_BUSY
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: case
 
 **Availability**:

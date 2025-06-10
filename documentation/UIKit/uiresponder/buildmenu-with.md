@@ -1,6 +1,6 @@
 # buildMenu(with:)
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Asks the receiving responder to add and remove items from a menu system.

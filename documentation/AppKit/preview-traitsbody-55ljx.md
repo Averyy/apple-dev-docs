@@ -21,6 +21,13 @@ Preview an NSViewController.
 - `traits`: Optional list of traits customizing the appearance of the preview.
 - `body`: A closure producing an NSViewController.
 
+## See Also
+
+- [var NSIMAGE_UNAVAILABLE_MACCATALYST: Int32](nsimage_unavailable_maccatalyst.md)
+- [var NS_USER_ACTIVITY_SUPPORTED: Int32](ns_user_activity_supported.md)
+- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> NSView)](preview(_:traits:body:)-7pfjp.md)
+  Preview an NSView.
+
 
 ---
 

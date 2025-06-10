@@ -25,7 +25,7 @@ A player object that represents the guest.
 
 #### Discussion
 
-You can treat a guest player the same as an authenticated player in regard to matchmaking services.
+You can treat a guest player the same as an initialized player in regard to matchmaking services.
 
 ## Parameters
 

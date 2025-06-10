@@ -10,10 +10,10 @@ A layer object that wraps a reduction filter and manages its deinitialization.
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
-- visionOS ?+
+- tvOS 14.0+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
-- tvOS 14.0+
+- visionOS ?+
 
 ## Declaration
 

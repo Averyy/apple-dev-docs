@@ -1,6 +1,6 @@
 # currentOrder
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: property
 
 Gets the customized order of the promotion info objects the represent promoted products.

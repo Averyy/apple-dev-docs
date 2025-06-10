@@ -107,6 +107,7 @@ Each index in an index path represents the index into an array of children from 
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

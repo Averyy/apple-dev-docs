@@ -9,8 +9,6 @@ The declaration to configure the math and calculator apps.
 - iOS 18.0+
 - iPadOS 18.0+
 - macOS 15.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,21 +16,26 @@ The declaration to configure the math and calculator apps.
 object MathSettings
 ```
 
+#### Discussion
+
+Specify `com.apple.configuration.math.settings` as the declaration type.
+
+##### Configuration Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | iOS, macOS, Shared iPad |
+| Allowed in device enrollment | NA |
+| Allowed in user enrollment | NA |
+| Allowed in local enrollment | NA |
+| Allowed in system scope | iOS |
+| Allowed in user scope | macOS, Shared iPad |
+
 ## Topics
 
-### Supporting Objects
+### Objects
 - [object MathSettingsCalculatorObject](mathsettingscalculatorobject.md)
   The declaration to configure the calculator app.
-- [object MathSettingsCalculator_BasicModeObject](mathsettingscalculator_basicmodeobject.md)
-  The declaration to configure basic mode in the calculator app.
-- [object MathSettingsCalculator_InputModesObject](mathsettingscalculator_inputmodesobject.md)
-  The declaration to configure the input modes in the calculator app.
-- [object MathSettingsCalculator_MathNotesModeObject](mathsettingscalculator_mathnotesmodeobject.md)
-  The declaration to configure Math Notes in the calculator app.
-- [object MathSettingsCalculator_ProgrammerModeObject](mathsettingscalculator_programmermodeobject.md)
-  The declaration to configure programmer mode in the calculator app.
-- [object MathSettingsCalculator_ScientificModeObject](mathsettingscalculator_scientificmodeobject.md)
-  The declaration to configure scientific mode in the calculator app.
 - [object MathSettingsSystemBehaviorObject](mathsettingssystembehaviorobject.md)
   The declaration to configure math behavior at the system level.
 
@@ -54,6 +57,8 @@ object MathSettings
   The declaration to configure a Calendar subscription.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AudioAccessorySettings](audioaccessorysettings.md)
+  The declaration to configure audio accessory settings.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
@@ -64,10 +69,8 @@ object MathSettings
   The declaration to configure status subscriptions.
 - [object ManagementTest](managementtest.md)
   The declaration to test the MDM system.
-- [object PasscodeSettings](passcodesettings.md)
-  The declaration to configure passcode policy settings.
-- [object SafariExtensionSettings](safariextensionsettings.md)
-  The declaration to configure Safari Extensions.
+- [object Package](package.md)
+  The declaration to install a package.
 
 
 ---

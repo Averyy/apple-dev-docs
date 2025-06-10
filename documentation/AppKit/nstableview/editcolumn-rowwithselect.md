@@ -1,6 +1,6 @@
 # editColumn(_:row:with:select:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Edits the cell at the specified column and row using the specified event and selection behavior.

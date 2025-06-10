@@ -1,0 +1,30 @@
+# touchpad(with:)
+
+**Framework**: Touch Controls  
+**Kind**: method
+
+Creates a new touchpad control with the provided descriptor.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+
+## Declaration
+
+```swift
+func touchpad(with descriptor: TCTouchpadDescriptor) -> TCTouchpad
+```
+
+#### Return Value
+
+A new `TCTouchpad` instance.
+
+## Parameters
+
+- `descriptor`: The   containing the configuration for the touchpad.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/touchcontrols/tctouchcontroller/touchpad(with:))*

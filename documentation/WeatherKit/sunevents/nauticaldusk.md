@@ -1,6 +1,6 @@
 # nauticalDusk
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The time of nautical sunset, when the sun’s center is 12° below the horizon.

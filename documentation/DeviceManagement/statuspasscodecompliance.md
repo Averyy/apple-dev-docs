@@ -10,8 +10,6 @@ A status report of passcode compliance.
 - iPadOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,10 +17,22 @@ A status report of passcode compliance.
 object StatusPasscodeCompliance
 ```
 
+#### Discussion
+
+##### Status Item Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | iOS, Shared iPad, visionOS, watchOS |
+| Allowed in device enrollment | iOS, Shared iPad, visionOS |
+| Allowed in user enrollment | iOS, Shared iPad, visionOS |
+| Allowed in local enrollment | iOS, Shared iPad, visionOS, watchOS |
+| Allowed in system scope | iOS, Shared iPad, visionOS, watchOS |
+| Allowed in user scope | Shared iPad |
+
 ## See Also
 
 - [object StatusReport](statusreport.md)
-  A status report of the device’s current state.
 - [object StatusAppManagedList](statusappmanagedlist.md)
   The device’s declarative managed apps.
 - [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)

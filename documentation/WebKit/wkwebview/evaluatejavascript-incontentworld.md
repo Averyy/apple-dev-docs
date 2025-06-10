@@ -1,6 +1,6 @@
 # evaluateJavaScript(_:in:contentWorld:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Evaluates a JavaScript string in the context of the specified frame and content world.

@@ -8,9 +8,9 @@ Generates a badge for the view from a string.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst ?+
 - macOS 12.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 
@@ -21,7 +21,7 @@ func badge<S>(_ label: S?) -> some View where S : StringProtocol
 
 #### Discussion
 
-Use a badge to convey optional, supplementary information about a view. Keep the contents of the badge as short as possible. Badges appear only in list rows, tab bars, and menus.
+Use a badge to convey optional, supplementary information about a view. Keep the contents of the badge as short as possible. Badges appear in list rows, tab bars, toolbar items, and menus.
 
 This modifier creates a `Text` view on your behalf, and treats the localized key similar to `Text/init(_:)-9d1g4`. The following example shows a list with a “Default” badge on one of its rows.
 

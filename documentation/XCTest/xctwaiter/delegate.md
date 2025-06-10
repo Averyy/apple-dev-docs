@@ -1,6 +1,6 @@
 # delegate
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The delegate to which expectation fulfillment events will be reported.

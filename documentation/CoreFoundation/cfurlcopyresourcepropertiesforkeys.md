@@ -1,6 +1,6 @@
 # CFURLCopyResourcePropertiesForKeys(_:_:_:)
 
-**Framework**: Corefoundation  
+**Framework**: Core Foundation  
 **Kind**: func
 
 Returns the resource values for the properties identified by specified array of keys.

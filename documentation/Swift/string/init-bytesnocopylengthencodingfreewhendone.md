@@ -24,8 +24,6 @@ init?(bytesNoCopy bytes: UnsafeMutableRawPointer, length: Int, encoding: String.
 
 > ⚠️ **Warning**: This initializer is not memory-safe!
 
-This initializer is not memory-safe!
-
 ## See Also
 
 - [init?<S>(bytes: S, encoding: String.Encoding)](string/init(bytes:encoding:).md)

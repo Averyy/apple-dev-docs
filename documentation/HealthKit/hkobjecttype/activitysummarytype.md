@@ -1,6 +1,6 @@
 # activitySummaryType()
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: method
 
 Returns the shared activity summary type.

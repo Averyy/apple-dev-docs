@@ -15,6 +15,10 @@
 typedef struct SCSICmd_INQUIRY_Page00_Header_SPC_16 { ... } SCSICmd_INQUIRY_Page00_Header_SPC_16;
 ```
 
+#### Overview
+
+INQUIRY Page 00h Header.
+
 ## Topics
 
 ### Instance Properties

@@ -10,6 +10,7 @@ The size and bit layout of all pixels in each drawable’s texture.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration

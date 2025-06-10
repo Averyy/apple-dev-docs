@@ -1,6 +1,6 @@
 # Tracking geographic locations in AR
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Track specific geographic areas of interest and render them in an AR experience.
 
@@ -233,4 +233,4 @@ mapView.setCamera(camera, animated: false)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/tracking-geographic-locations-in-ar)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/tracking-geographic-locations-in-ar)*

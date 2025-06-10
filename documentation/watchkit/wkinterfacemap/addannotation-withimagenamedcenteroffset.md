@@ -1,6 +1,6 @@
 # addAnnotation(_:withImageNamed:centerOffset:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Displays an image from the WatchKit app’s bundle on top of the map.

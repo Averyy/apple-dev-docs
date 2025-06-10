@@ -30,8 +30,6 @@ If `key` is not a property defined by the model, the method raises an exception.
 
 > ❗ **Important**:  You must not override this method.
 
- You must not override this method.
-
 ## Parameters
 
 - `key`: The name of one of the receiver’s properties.

@@ -1,6 +1,6 @@
 # Create an Auto-Renewable Subscription
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 Create an auto-renewable subscription for your app.
@@ -26,6 +26,7 @@ Create an auto-renewable subscription for your app.
   Delete a specific auto-renewable subscription that you configured for an app.
 - [List All Localizations for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-subscriptionlocalizations.md)
   Get a list of the subscription localizations for a specific auto-renewable subscription.
+- [GET /v1/subscriptions/{id}/relationships/subscriptionLocalizations](get-v1-subscriptions-_id_-relationships-subscriptionlocalizations.md)
 - [List All Introductory Offers for a Subscription](get-v1-subscriptions-_id_-introductoryoffers.md)
   Get a list of introductory offers for a specific auto-renewable subscription.
 - [List All Introductory Offer Resource IDs for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-relationships-introductoryoffers.md)
@@ -34,22 +35,17 @@ Create an auto-renewable subscription for your app.
   Delete a specific introductory offer for an auto-renewable subscription.
 - [Read Promoted Purchase Information for a Subscription](get-v1-subscriptions-_id_-promotedpurchase.md)
   Get details about the promoted purchase of an auto-renewable subscription.
+- [GET /v1/subscriptions/{id}/relationships/promotedPurchase](get-v1-subscriptions-_id_-relationships-promotedpurchase.md)
 - [List All Offer Codes for a Subscription](get-v1-subscriptions-_id_-offercodes.md)
   Get a list of subscription offer codes for a specific auto-renewable subscription.
+- [GET /v1/subscriptions/{id}/relationships/offerCodes](get-v1-subscriptions-_id_-relationships-offercodes.md)
 - [List All Promotional Offer Resource IDs for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-promotionaloffers.md)
   Get a list of promotional offers for a specific auto-renewable subscription.
+- [GET /v1/subscriptions/{id}/relationships/promotionalOffers](get-v1-subscriptions-_id_-relationships-promotionaloffers.md)
 - [List All Price Points for a Subscription](get-v1-subscriptions-_id_-pricepoints.md)
   Get a list of price points for an auto-renewable subscription by territory.
-- [List All Prices for a Subscription](get-v1-subscriptions-_id_-prices.md)
-  Get a list of prices for an auto-renewable subscription, by territory.
-- [List All Subscription Prices IDs for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-relationships-prices.md)
-  Get a list of resource IDs representing subscription prices for an auto-renewable subscription.
-- [Delete Prices from a Subscription](delete-v1-subscriptions-_id_-relationships-prices.md)
-  Delete a scheduled subscription price change for an auto-renewable subscription.
-- [Read Review Screenshot Information for a Subscription](get-v1-subscriptions-_id_-appstorereviewscreenshot.md)
-  Get information about review screenshot for a specific auto-renewable subscription.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v1-subscriptions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-subscriptions)*

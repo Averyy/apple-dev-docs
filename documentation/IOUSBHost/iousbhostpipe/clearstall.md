@@ -27,7 +27,7 @@ This method clears the halted condition for the endpoint. It also sends a `CLEAR
   The completion handler for asynchronous control, bulk, and interrupt transfers.
 - [let IOUSBHostDefaultControlCompletionTimeout: TimeInterval](iousbhostdefaultcontrolcompletiontimeout.md)
   The default completion timeout for input/output requests.
-- [func enqueueIORequest(with: NSMutableData?, completionTimeout: TimeInterval, completionHandler: IOUSBHostCompletionHandler?) throws](iousbhostpipe/enqueueiorequest(with:completiontimeout:completionhandler:).md)
+- [func enqueueIORequest(with: NSMutableData?, completionTimeout: TimeInterval, completionHandler: ((IOReturn, Int) -> Void)?) throws](iousbhostpipe/enqueueiorequest(with:completiontimeout:completionhandler:).md)
   Enqueues an input/output request on the pipe.
 
 

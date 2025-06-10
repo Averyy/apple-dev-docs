@@ -379,8 +379,8 @@ Once the resource state encoder maps the tiles, the blit encoder copies the text
 
 ## See Also
 
-- [Processing a Texture in a Compute Function](processing-a-texture-in-a-compute-function.md)
-  Perform parallel calculations on structured data by placing the data in textures.
+- [Processing a texture in a compute function](processing-a-texture-in-a-compute-function.md)
+  Create textures by running copy and dispatch commands in a compute pass on a GPU.
 - [Reading Pixel Data from a Drawable Texture](reading-pixel-data-from-a-drawable-texture.md)
   Access texture data from the CPU by copying it to a buffer.
 - [Creating and Sampling Textures](creating-and-sampling-textures.md)

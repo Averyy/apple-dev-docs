@@ -1,6 +1,6 @@
 # printOperation(with:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns the print operation object to use when printing the contents of the web view.

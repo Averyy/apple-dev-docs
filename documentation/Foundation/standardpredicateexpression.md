@@ -31,6 +31,7 @@ Don’t declare new types that conform to the `StandardPredicateExpression` prot
 - [Encodable](../Swift/Encodable.md)
 - [PredicateExpression](predicateexpression.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [PredicateExpressions.Arithmetic](predicateexpressions/arithmetic.md)
 - [PredicateExpressions.ClosedRange](predicateexpressions/closedrange.md)

@@ -1,6 +1,6 @@
 # DOM_SHOW_ENTITY
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

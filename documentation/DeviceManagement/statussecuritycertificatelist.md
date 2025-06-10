@@ -12,14 +12,25 @@ A status report of the client’s managed certificates.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object StatusSecurityCertificateList
 ```
+
+#### Discussion
+
+##### Status Item Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| Allowed in device enrollment | iOS, Shared iPad, tvOS, visionOS |
+| Allowed in user enrollment | iOS, macOS, Shared iPad, visionOS |
+| Allowed in local enrollment | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
+| Allowed in user scope | macOS, Shared iPad |
 
 ## Topics
 
@@ -30,7 +41,6 @@ object StatusSecurityCertificateList
 ## See Also
 
 - [object StatusReport](statusreport.md)
-  A status report of the device’s current state.
 - [object StatusAppManagedList](statusappmanagedlist.md)
   The device’s declarative managed apps.
 - [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)

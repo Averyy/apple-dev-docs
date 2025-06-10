@@ -24,16 +24,19 @@ A player identifier is unique across all instances of the same tabletop game.
 - [init(uuid: UUID)](playeridentifier/init(uuid:).md)
   Creates a player identifier.
 ### Getting identifier values
-- [let uuid: UUID](playeridentifier/uuid.md)
+- [var uuid: UUID](playeridentifier/uuid.md)
   A universally unique value to identify a player.
 
 ## Relationships
 
 ### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # init(decompressionOutputCallback:decompressionOutputRefCon:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: init
 
 **Availability**:

@@ -5,19 +5,34 @@
 
 A blend operation that multiplies dark areas and screens light areas.
 
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
+
+#### Overview
+
+2 * F * B if F < 0.5; 1 - (1 - F)(1 - B) if F >= 0.5
+
 #### Parameter Types
 
 #### Parameter Descriptions
 
 #### Discussion
 
-The Overlay node has one of two effects. If `F+B` is less than `0.5`, then the node outputs a value of `2*F*B`. If `F+B` is greater than or equal to `0.5`, then it outputs`1-(1-F)(1-B)`, which creates the same visual effect as the [`Screen`](compositing/screen.md) node. Visually the node makes dark areas of the blended texture even darker and light areas of the blended texture even lighter.
+The `Overlay` node has one of two effects:
 
-Below is an example of a simple node graph that uses the Overlay node to blend two images together into a single material.
+- If `F+B` is less than `0.5`, then the node outputs a value of `2*F*B`.
+- If `F+B` is greater than or equal to `0.5`, then it outputs`1-(1-F)(1-B)`, which creates the same visual effect as the [`Screen`](compositing/screen.md) node. Visually the node makes dark areas of the blended texture even darker and light areas of the blended texture even lighter.
+
+Below is an example of a simple node graph that uses the `Overlay` node to blend two images together into a single material:
 
 ![None](https://docs-assets.developer.apple.com/published/7ceec91d585b58948afa1611c167fc34/OverlayGraph.png)
 
-Below are two images and their resulting blended texture applied to a cube.
+Below are two images and their resulting blended texture applied to a cube:
 
 ![None](https://docs-assets.developer.apple.com/published/e2d08d8613e4333f8d28526d6c713847/OverlayMaterial2.png)
 

@@ -18,8 +18,6 @@ class SFAuthorization
 
 > ❗ **Important**: The authorization services API is not supported within an app sandbox because it allows privilege escalation.
 
-The authorization services API is not supported within an app sandbox because it allows privilege escalation.
-
 The [`SFAuthorization`](sfauthorization.md) class is an interface for some of the functions in the Authorization Services API. You can use the [`authorizationRef()`](sfauthorization/authorizationref().md) method to obtain an authorization reference, used in other calls to Authorization Services functions. The Authorization Services API is documented in [`Authorization Services`](https://developer.apple.com/documentation/Security/authorization-services).
 
 ## Topics

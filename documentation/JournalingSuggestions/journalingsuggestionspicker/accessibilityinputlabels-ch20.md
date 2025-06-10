@@ -1,6 +1,6 @@
 # accessibilityInputLabels(_:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Sets alternate input labels with which users identify a view.

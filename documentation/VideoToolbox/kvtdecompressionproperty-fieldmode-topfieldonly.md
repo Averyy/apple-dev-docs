@@ -1,6 +1,6 @@
 # kVTDecompressionProperty_FieldMode_TopFieldOnly
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

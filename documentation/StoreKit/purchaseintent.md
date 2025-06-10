@@ -1,6 +1,6 @@
 # PurchaseIntent
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: struct
 
 An instance that emits purchase intents, which indicate that the customer initiated a purchase outside of your app, for your app to complete.
@@ -78,13 +78,17 @@ In Mac apps built with Mac Catalyst, this instance doesn’t emit purchase inten
 ### Identifying the offer
 - [let offer: Product.SubscriptionOffer?](purchaseintent/offer.md)
   The subscription offer that the customer redeems outside of your app.
+### Default Implementations
+- [Identifiable Implementations](purchaseintent/identifiable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -98,4 +102,4 @@ In Mac apps built with Mac Catalyst, this instance doesn’t emit purchase inten
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/purchaseintent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/purchaseintent)*

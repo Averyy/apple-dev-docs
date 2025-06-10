@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: init
 
 **Availability**:

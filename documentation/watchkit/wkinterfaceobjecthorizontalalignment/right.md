@@ -1,6 +1,6 @@
 # WKInterfaceObjectHorizontalAlignment.right
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Right alignment. The object’s content aligns with the right edge of the container and extends to the left.

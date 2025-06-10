@@ -1,6 +1,6 @@
 # VSError.Code.unsupported
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: case
 
 The provider doesn’t support the feature the user requested in the device’s current region.

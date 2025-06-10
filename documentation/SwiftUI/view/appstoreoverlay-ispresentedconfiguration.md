@@ -1,6 +1,6 @@
 # appStoreOverlay(isPresented:configuration:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method
 
 Presents a StoreKit overlay when a given condition is true.

@@ -1,6 +1,6 @@
 # detectWebpageLocale(for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to detect the locale of the webpage currently loaded in the tab.

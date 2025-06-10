@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: property
 
-Once merged, a conversation can be unmerged and reconfigured to act as a separate conversation.
+The conversation is the result of merging two conversations and can be separated into the original conversations.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,17 @@ Once merged, a conversation can be unmerged and reconfigured to act as a separat
 ```swift
 static let unmerging: Conversation.Capabilities
 ```
+
+## See Also
+
+- [static let merging: Conversation.Capabilities](conversation/capabilities/merging.md)
+  The conversation can merge with another conversation to create a new conversation.
+- [static let pausing: Conversation.Capabilities](conversation/capabilities/pausing.md)
+  The conversation is active and can be temporarily paused.
+- [static let playingTones: Conversation.Capabilities](conversation/capabilities/playingtones.md)
+  The conversation supports playing tone sequences.
+- [static let video: Conversation.Capabilities](conversation/capabilities/video.md)
+  The conversation sends or displays video streams.
 
 
 ---

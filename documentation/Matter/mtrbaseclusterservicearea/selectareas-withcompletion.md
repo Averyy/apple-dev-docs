@@ -22,7 +22,7 @@ func selectAreas(with params: MTRServiceAreaClusterSelectAreasParams) async thro
 
 #### Discussion
 
-Command used to select a set of device areas, where the device is to operate.
+This command is used to select a set of device areas, where the device is to operate.
 
 
 ---

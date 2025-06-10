@@ -1,6 +1,6 @@
 # WKHapticType.click
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Indicates a simple click type of feedback.

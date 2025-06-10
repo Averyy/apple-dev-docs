@@ -34,13 +34,16 @@ protocol HPKEPublicKeySerialization : Sendable
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Inherited By
 - [HPKEDiffieHellmanPublicKey](hpkediffiehellmanpublickey.md)
+- [HPKEKEMPublicKey](hpkekempublickey.md)
 ### Conforming Types
 - [Curve25519.KeyAgreement.PublicKey](curve25519/keyagreement/publickey.md)
 - [P256.KeyAgreement.PublicKey](p256/keyagreement/publickey.md)
 - [P384.KeyAgreement.PublicKey](p384/keyagreement/publickey.md)
 - [P521.KeyAgreement.PublicKey](p521/keyagreement/publickey.md)
+- [XWingMLKEM768X25519.PublicKey](xwingmlkem768x25519/publickey.md)
 
 
 ---

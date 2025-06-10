@@ -1,6 +1,6 @@
 # init(_:content:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: init
 
 Creates an `AccessoryWidgetGroup` that generates its label from a string.

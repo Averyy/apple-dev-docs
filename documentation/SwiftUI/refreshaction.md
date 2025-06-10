@@ -68,6 +68,7 @@ If your code isn’t already in an asynchronous context, create a [`Task`](https
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

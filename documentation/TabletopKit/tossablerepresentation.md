@@ -31,11 +31,36 @@ struct TossableRepresentation
   Creates a sphere with the specified radius that the player tosses during gameplay.
 - [static func tetrahedron(height: Float, in: UnitLength, restitution: Float?) -> TossableRepresentation](tossablerepresentation/tetrahedron(height:in:restitution:).md)
   Creates a regular tetrahedron, a pyramid with four triangular faces, that the player tosses during gameplay.
+### Protocols
+- [TossableRepresentation.TossableFace](tossablerepresentation/tossableface.md)
+  A protocol that represents a face of a tossable shape.
+### Structures
+- [TossableRepresentation.SphereFace](tossablerepresentation/sphereface.md)
+  An object that represents an infinitely small area on the surface of a sphere (effectively a point).
+### Instance Methods
+- [func face(for: Rotation3D) -> any TossableRepresentation.TossableFace](tossablerepresentation/face(for:).md)
+  For the shape corresponding to this tossable representation, constructs the face in contact with the table when the equipment has the given resting orientation.
+### Enumerations
+- [TossableRepresentation.CubeFace](tossablerepresentation/cubeface.md)
+  One of the faces of a cube
+- [TossableRepresentation.DecahedronFace](tossablerepresentation/decahedronface.md)
+  One of the faces of an decahedron
+- [TossableRepresentation.DodecahedronFace](tossablerepresentation/dodecahedronface.md)
+  One of the faces of an dodecahedron
+- [TossableRepresentation.IcosahedronFace](tossablerepresentation/icosahedronface.md)
+  One of the faces of an icosahedron
+- [TossableRepresentation.OctahedronFace](tossablerepresentation/octahedronface.md)
+  One of the faces of an octahedron
+- [TossableRepresentation.TetrahedronFace](tossablerepresentation/tetrahedronface.md)
+  One of the faces of a tetrahedron
 
 ## Relationships
 
 ### Conforms To
+- [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [Copyable](../Swift/Copyable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -46,7 +71,7 @@ struct TossableRepresentation
 - [struct TableVisualState](tablevisualstate.md)
   A structure that represents the appearance of an object on the table.
 - [struct TableCursor](tablecursor.md)
-  A visual indicator that represents the destination of player interactions with equipment.
+  A cursor conveys information about one equipment that is currently being controlled by an interaction.
 - [struct TableCursorIdentifier](tablecursoridentifier.md)
   A unique identifier for cursors.
 

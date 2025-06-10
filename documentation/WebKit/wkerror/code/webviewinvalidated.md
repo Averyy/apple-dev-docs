@@ -1,6 +1,6 @@
 # WKError.Code.webViewInvalidated
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 An error that indicates the web view was invalidated.

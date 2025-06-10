@@ -24,6 +24,9 @@ object GameCenterAchievementLocalization
 - [object GameCenterAchievementLocalizationResponse](gamecenterachievementlocalizationresponse.md)
 - [object GameCenterAchievementLocalizationUpdateRequest](gamecenterachievementlocalizationupdaterequest.md)
 - [object GameCenterAchievementLocalizationsResponse](gamecenterachievementlocalizationsresponse.md)
+- [object GameCenterAchievementLocalizationGameCenterAchievementImageLinkageResponse](gamecenterachievementlocalizationgamecenterachievementimagelinkageresponse.md)
+- [object GameCenterAchievementLocalizationGameCenterAchievementLinkageResponse](gamecenterachievementlocalizationgamecenterachievementlinkageresponse.md)
+- [object GameCenterAchievementLocalizationsLinkagesResponse](gamecenterachievementlocalizationslinkagesresponse.md)
 
 
 ---

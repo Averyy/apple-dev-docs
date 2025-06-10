@@ -1,6 +1,6 @@
 # Representing haptic patterns in AHAP files
 
-**Framework**: Corehaptics
+**Framework**: Core Haptics
 
 Understand the Apple Haptic and Audio Pattern (AHAP) file format.
 
@@ -62,4 +62,4 @@ For more information about parameter curves, see [`CHHapticParameterCurve`](chha
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreHaptics/representing-haptic-patterns-in-ahap-files)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corehaptics/representing-haptic-patterns-in-ahap-files)*

@@ -1,6 +1,6 @@
 # MLDataTable
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: struct
 
 A table of data for training or evaluating a machine learning model.
@@ -163,4 +163,4 @@ Finally, when your data table is ready, use it to train and evaluate a model fro
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateML/mldatatable)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createml/mldatatable)*

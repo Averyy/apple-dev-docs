@@ -48,6 +48,7 @@ Use a horizontal edge for tasks like setting a swipe action with the [`swipeActi
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # xpc_rich_error_can_retry(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: func
 
 Returns a Boolean that indicates whether you can retry the operation that experienced an error.

@@ -1,6 +1,6 @@
 # close(for:completionHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called to close the window.

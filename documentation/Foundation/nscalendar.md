@@ -30,8 +30,6 @@ In Swift, this object bridges to [`Calendar`](calendar.md); use [`NSCalendar`](n
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Calendar`](calendar.md) structure, which bridges to the [`NSCalendar`](nscalendar.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
 
- The Swift overlay to the Foundation framework provides the [`Calendar`](calendar.md) structure, which bridges to the [`NSCalendar`](nscalendar.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
-
 ##### Locales and Calendars
 
 Most locales use the most widely used civil calendar, called the  ([`gregorian`](nscalendar/identifier/gregorian.md)), but there remain exceptions to this trend. For example:

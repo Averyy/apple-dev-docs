@@ -1,6 +1,6 @@
 # UILayoutGuide
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 A rectangular area that can interact with Auto Layout.

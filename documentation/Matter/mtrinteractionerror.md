@@ -48,7 +48,9 @@ struct MTRInteractionError
 - [static var unsupportedEvent: MTRInteractionError.Code](mtrinteractionerror/unsupportedevent.md)
 - [static var unsupportedRead: MTRInteractionError.Code](mtrinteractionerror/unsupportedread.md)
 - [static var unsupportedWrite: MTRInteractionError.Code](mtrinteractionerror/unsupportedwrite.md)
+- [static var accessRestricted: MTRInteractionError.Code](mtrinteractionerror/accessrestricted.md)
 - [static var errorDomain: String](mtrinteractionerror/errordomain.md)
+- [static var invalidTransportType: MTRInteractionError.Code](mtrinteractionerror/invalidtransporttype.md)
 ### Enumerations
 - [MTRInteractionError.Code](mtrinteractionerror/code.md)
 
@@ -60,6 +62,7 @@ struct MTRInteractionError
 - [Error](../Swift/Error.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

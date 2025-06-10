@@ -1,6 +1,6 @@
 # kAudioSessionProperty_InputGainAvailable
 
-**Framework**: Audiotoolbox  
+**Framework**: Audio Toolbox  
 **Kind**: var
 
 A read-only `UInt32` value that indicates whether or not audio input gain adjustment is available, where a nonzero value means adjustment is available.

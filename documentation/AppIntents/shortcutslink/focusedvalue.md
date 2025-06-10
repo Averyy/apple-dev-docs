@@ -8,10 +8,10 @@ Sets the focused value for the given object type.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration
@@ -24,8 +24,6 @@ func focusedValue<T>(_ object: T?) -> some View where T : AnyObject, T : Observa
 #### Discussion
 
 > ❗ **Important**: This initializer only accepts objects conforming to the `Observable` protocol. For reading environment objects that conform to `ObservableObject`, use `focusedObject(_:)`, instead.
-
-This initializer only accepts objects conforming to the `Observable` protocol. For reading environment objects that conform to `ObservableObject`, use `focusedObject(_:)`, instead.
 
 To read this value, use the `FocusedValue` property wrapper.
 

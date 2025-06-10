@@ -40,6 +40,7 @@ For more information, see [`configurations(_:)`](managedappconfigurationprovider
 - [Encodable](../Swift/Encodable.md)
 - [Error](../Swift/Error.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

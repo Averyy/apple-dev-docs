@@ -10,6 +10,7 @@ A name for the scene.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -18,13 +19,6 @@ A name for the scene.
 @MainActor
 @preconcurrency var name: String { get }
 ```
-
-## See Also
-
-- [var id: UInt64](scene/id-9ai5s.md)
-  The stable identity of the entity associated with this instance.
-- [var id: UInt64](scene/id-9ai5s.md)
-  The stable identity of the entity associated with this instance.
 
 
 ---

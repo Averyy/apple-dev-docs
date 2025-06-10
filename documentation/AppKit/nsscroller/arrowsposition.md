@@ -1,6 +1,6 @@
 # arrowsPosition
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: property
 
 The location of the scroll buttons within the scroller, as described in [`NSScroller.ArrowPosition`](nsscroller/arrowposition.md).
@@ -24,4 +24,4 @@ See [`NSScroller.ArrowPosition`](nsscroller/arrowposition.md) for a list of poss
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit/nsscroller/arrowsposition)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsscroller/arrowsposition)*

@@ -1,6 +1,6 @@
 # hasResults(for:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Returns a Boolean value that indicates whether the analysis finds the specified types in the image.

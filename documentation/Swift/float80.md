@@ -70,6 +70,7 @@ struct Float80
 - [LosslessStringConvertible](losslessstringconvertible.md)
 - [Numeric](numeric.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [SignedNumeric](signednumeric.md)
 - [Strideable](strideable.md)
 - [TextOutputStreamable](textoutputstreamable.md)

@@ -69,6 +69,8 @@ Finally, add your Local Push Provider extension target to your app’s Embed App
   Informs the manager about an incoming call.
 - [func reportPushToTalkMessage(userInfo: [AnyHashable : Any])](neapppushprovider/reportpushtotalkmessage(userinfo:).md)
   Informs the manager about a push-to-talk message on the connection.
+### Instance Methods
+- [func unmatchEthernet()](neapppushprovider/unmatchethernet.md)
 
 ## Relationships
 

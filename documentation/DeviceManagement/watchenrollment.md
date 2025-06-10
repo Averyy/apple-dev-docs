@@ -8,8 +8,6 @@ The declaration to configure a Mobile Device Management v1 profile for Apple Wat
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,18 +21,14 @@ Specify `com.apple.configuration.watch.enrollment` as the declaration type.
 
 ##### Configuration Availability
 
-| Allowed in Device Enrollment | iOS |
+|  |  |
 | --- | --- |
-| Allowed in User Enrollment | - |
-| Allowed in Local Enrollment | - |
-| Allowed in System Scope | iOS |
-| Allowed in User Scope | - |
-
-## Topics
-
-### Errors
-- [object ErrorCodePairingTokenMissing](errorcodepairingtokenmissing.md)
-  An error response that indicates a missing pairing token.
+| Allowed in supervised enrollment | iOS, Shared iPad |
+| Allowed in device enrollment | NA |
+| Allowed in user enrollment | NA |
+| Allowed in local enrollment | NA |
+| Allowed in system scope | iOS |
+| Allowed in user scope | NA |
 
 ## See Also
 
@@ -54,6 +48,8 @@ Specify `com.apple.configuration.watch.enrollment` as the declaration type.
   The declaration to configure a Calendar subscription.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AudioAccessorySettings](audioaccessorysettings.md)
+  The declaration to configure audio accessory settings.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
 - [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
@@ -66,8 +62,6 @@ Specify `com.apple.configuration.watch.enrollment` as the declaration type.
   The declaration to test the MDM system.
 - [object MathSettings](mathsettings.md)
   The declaration to configure the math and calculator apps.
-- [object PasscodeSettings](passcodesettings.md)
-  The declaration to configure passcode policy settings.
 
 
 ---

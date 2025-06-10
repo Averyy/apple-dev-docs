@@ -1,6 +1,6 @@
 # underPageBackgroundColor
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The color the web view displays behind the active page, visible when the user scrolls beyond the bounds of the page.
@@ -16,7 +16,7 @@ The color the web view displays behind the active page, visible when the user sc
 
 ```swift
 @NSCopying
-@MainActor var underPageBackgroundColor: UIColor! { get set }
+@MainActor var underPageBackgroundColor: NSColor! { get set }
 ```
 
 #### Discussion

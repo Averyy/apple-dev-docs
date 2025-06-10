@@ -1,6 +1,6 @@
 # column
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The horizontal component of a source text position.

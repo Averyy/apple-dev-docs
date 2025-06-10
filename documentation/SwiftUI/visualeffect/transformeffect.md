@@ -35,7 +35,7 @@ Use `transformEffect(_:)` to rotate, scale, translate, or skew the output of the
 ## See Also
 
 - [func transform3DEffect(AffineTransform3D) -> some VisualEffect](visualeffect/transform3deffect(_:).md)
-  Applies a 3D transformation to the receiver.
+  Applies a 3D transformation to this view’s rendered output.
 
 
 ---

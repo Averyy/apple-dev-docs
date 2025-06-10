@@ -1,4 +1,4 @@
-# Get the Bypass Code for Activation Lock
+# Activation Lock Bypass Code
 
 **Framework**: Device Management  
 **Kind**: httpRequest
@@ -10,8 +10,6 @@ Get the code to bypass Activation Lock on a device.
 - iPadOS 7.1+
 - macOS 10.15+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Mentions
 
@@ -19,9 +17,9 @@ Get the code to bypass Activation Lock on a device.
 
 #### Discussion
 
-iOS 7.1 adds support for bypassing Activation Lock. This allows organizations to remove the Activation Lock from supervised devices prior to device activation without knowing the userʼs personal Apple ID and password. Use this command to retrieve the device’s bypass code.
+This command allows organizations to remove the Activation Lock from supervised devices prior to device activation without knowing the user’s personal Apple Account and password. Use this command to retrieve the device’s bypass code.
 
-When an iOS device is a supervised device, it generates a device-specific Activation Lock bypass code. The activation server verifies this code to bypass Activation Lock on the device. For more information, see [`Creating and Using Bypass Codes`](creating-and-using-bypass-codes.md).
+Supervised devices generate a device-specific Activation Lock bypass code. The activation server verifies this code to bypass Activation Lock on the device. For more information, see [`Creating and Using Bypass Codes`](creating-and-using-bypass-codes.md).
 
 A device creates a new bypass code when:
 
@@ -29,39 +27,39 @@ A device creates a new bypass code when:
 - Erasing and not restoring the device from a backup.
 - Erasing and restoring the device from a backup from a different device.
 
-##### Query Availability
+##### Command Availability
 
 |  |  |
 | --- | --- |
-| Device Channel | iOS, macOS |
-| User Channel | - |
-| Requires Supervision | iOS, macOS |
-| Allowed in User Enrollment | - |
-| Required Access Right | - |
+| Device channel | iOS, macOS, visionOS |
+| User channel | NA |
+| Requires supervision | iOS, macOS, visionOS |
+| Allowed in user enrollment | NA |
+| Required access right | NA |
 
 ##### Example Request and Response
 
 ## Topics
 
-### Command and Response
+### Commands and responses
 - [object ActivationLockBypassCodeCommand](activationlockbypasscodecommand.md)
   The command to get the code to bypass Activation Lock on a device.
 - [object ActivationLockBypassCodeResponse](activationlockbypasscoderesponse.md)
-  A response from the device after it processes the command to get the Activation Lock bypass code.
+  A response from the device after it processes the command to get the code to bypass Activation Lock on a device.
 
 ## Request Body
 
-The command to get the code to bypass Activation Lock on a device.
+The request object the server returns for the Activation Lock Bypass Code Command.
 
 ## See Also
 
-- [Security Information](security-info-command.md)
+- [Security Info](security-info-command.md)
   Get security-related information about a device.
-- [List the Certificates](certificate-list-command.md)
+- [Certificate List](certificate-list-command.md)
   Get a list of installed certificates on a device.
-- [Clear the Bypass Code for Activation Lock](clear-activation-lock-bypass-code-command.md)
+- [Clear Activation Lock Bypass Code](clear-activation-lock-bypass-code-command.md)
   Clear the Activation Lock bypass code on a device.
-- [Rotate the FileVault Key](rotate-filevault-key-command.md)
+- [Rotate FileVault Key](rotate-filevault-key-command.md)
   Change the FileVault primary password on a device.
 
 

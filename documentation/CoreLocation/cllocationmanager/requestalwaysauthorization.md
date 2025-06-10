@@ -1,6 +1,6 @@
 # requestAlwaysAuthorization()
 
-**Framework**: Corelocation  
+**Framework**: Core Location  
 **Kind**: method
 
 Requests the user’s permission to use location services regardless of whether the app is in use.

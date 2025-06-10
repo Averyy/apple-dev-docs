@@ -1,6 +1,6 @@
 # WKMediaCaptureState.active
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 The media device is actively capturing audio or video.

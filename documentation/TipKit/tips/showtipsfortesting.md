@@ -24,6 +24,8 @@ static func showTipsForTesting(_ tips: [any Tip.Type])
 
 This function can also be called with the launch argument `-com.apple.TipKit.ShowTips FindTrailheadTip,SlopeProfileTip`.
 
+Tip statuses automatically revert back to `available` after invalidation when displayed using this override to enable repeat testing of presentation and dismissal.
+
 TipKit’s display override testing functions have the following precedence:
 
 | Priority | Testing function |

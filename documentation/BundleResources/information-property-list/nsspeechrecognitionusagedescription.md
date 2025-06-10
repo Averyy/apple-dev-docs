@@ -15,8 +15,6 @@ A message that tells the user why the app is requesting to send user data to App
 
 > ❗ **Important**:  This key is required if your app uses APIs that send user data to Apple’s speech recognition servers.
 
- This key is required if your app uses APIs that send user data to Apple’s speech recognition servers.
-
 ## See Also
 
 - [Asking Permission to Use Speech Recognition](../Speech/asking-permission-to-use-speech-recognition.md)

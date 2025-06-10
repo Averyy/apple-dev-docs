@@ -1,6 +1,6 @@
 # Loading Resources (Legacy)
 
-**Framework**: Webkit
+**Framework**: WebKit
 
 ## Topics
 

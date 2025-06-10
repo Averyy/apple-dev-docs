@@ -1,6 +1,6 @@
 # WKIntentDidRunRefreshBackgroundTask
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: class
 
 A background task used to update your app after a SiriKit intent runs.
@@ -38,6 +38,7 @@ Don’t subclass or create instances of this class. Instead, the system instanti
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -63,4 +64,4 @@ Don’t subclass or create instances of this class. Instead, the system instanti
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WatchKit/wkintentdidrunrefreshbackgroundtask)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchkit/wkintentdidrunrefreshbackgroundtask)*

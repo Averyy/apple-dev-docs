@@ -1,6 +1,6 @@
 # startSession(atSourceTime:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Starts an asset-writing session.

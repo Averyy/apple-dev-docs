@@ -1,6 +1,6 @@
 # webExtensionController(_:openWindowsFor:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when an extension context requests the list of ordered open windows.

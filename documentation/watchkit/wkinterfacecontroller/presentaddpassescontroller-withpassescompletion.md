@@ -1,6 +1,6 @@
 # presentAddPassesController(withPasses:completion:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Displays a modal interface for presenting passes to the user.

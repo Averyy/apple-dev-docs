@@ -31,6 +31,7 @@ A wrapper of the underlying environment object that can create bindings to its p
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

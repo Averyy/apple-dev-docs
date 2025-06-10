@@ -1,6 +1,6 @@
 # current()
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: method
 
 Returns your app’s notification center.

@@ -9,6 +9,7 @@ The task identifier to track launch measurements.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
+- macOS 13.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -32,6 +33,7 @@ struct MXLaunchTaskID
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

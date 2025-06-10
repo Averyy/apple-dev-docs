@@ -1,53 +1,73 @@
 {
   "metadata": {
-    "last_updated": "2025-06-07T13:47:55.668900",
+    "last_updated": "2025-06-10T21:52:20.283934",
     "total_pages": 8,
-    "etags_collected": "2025-06-07T13:47:55.668905"
+    "session_id": "2025-06-10T21:52:18.755751"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/kernelmanagement.json": {
-      "hash": "c0bfa32ea14b19265e5c5108558e1ed2dd92a718d1e109742747c09958a0b2be",
-      "last_checked": "2025-06-06T01:40:45.516251",
-      "status": "unchanged",
-      "etag": "W/\"0d1f56076bcf4dc1537b542e35182f97\""
+      "hash": "ef3c1706294dc011f148ad69e7b85826c2c7a62505c4b85d7fa43ae8d364f299",
+      "last_checked": "2025-06-10T21:52:19.253670",
+      "status": "new",
+      "session_id": "2025-06-10T21:52:18.755751",
+      "etag": "W/\"d1a05cadcfceeb069b60a0222ea9c885\"",
+      "file_path": "documentation/kernelmanagement/kernelmanagement.md"
     },
     "https://developer.apple.com/documentation/kernelmanagement": {
-      "hash": "c0bfa32ea14b19265e5c5108558e1ed2dd92a718d1e109742747c09958a0b2be",
-      "last_checked": "2025-06-06T01:40:45.516251",
-      "status": "unchanged"
+      "hash": "ef3c1706294dc011f148ad69e7b85826c2c7a62505c4b85d7fa43ae8d364f299",
+      "last_checked": "2025-06-10T21:52:19.073144",
+      "status": "new",
+      "session_id": "2025-06-10T21:52:18.755751",
+      "etag": "W/\"d1a05cadcfceeb069b60a0222ea9c885\"",
+      "file_path": "documentation/kernelmanagement/kernelmanagement.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernelmanagement/kernelmanagement_constants.json": {
-      "hash": "cd31dd603311c433196213922bb04af1a7ade60859e95f7a1627bd4959ced198",
-      "last_checked": "2025-06-06T01:40:46.415594",
-      "status": "unchanged",
-      "etag": "W/\"834e461ed56147ddd9e067aa8b6505cb\""
+      "hash": "adc10d19c6e08d7b57e419aedc4a6b8ca0599466b80ce402e69bd94b02cae369",
+      "last_checked": "2025-06-10T21:52:19.827655",
+      "status": "new",
+      "session_id": "2025-06-10T21:52:18.755751",
+      "etag": "W/\"a0266e82c5241c3135914c157e3c739c\"",
+      "file_path": "documentation/kernelmanagement/kernelmanagement-constants.md"
     },
     "https://developer.apple.com/documentation/kernelmanagement/kernelmanagement_constants": {
-      "hash": "cd31dd603311c433196213922bb04af1a7ade60859e95f7a1627bd4959ced198",
-      "last_checked": "2025-06-06T01:40:46.415594",
-      "status": "unchanged"
+      "hash": "adc10d19c6e08d7b57e419aedc4a6b8ca0599466b80ce402e69bd94b02cae369",
+      "last_checked": "2025-06-10T21:52:19.827701",
+      "status": "new",
+      "session_id": "2025-06-10T21:52:18.755751",
+      "etag": "W/\"a0266e82c5241c3135914c157e3c739c\"",
+      "file_path": "documentation/kernelmanagement/kernelmanagement-constants.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernelmanagement/kernelmanagementversionnumber.json": {
-      "hash": "36b153e0ac9b0e884087cbf141c7d39afeda6a93b81d91fb146dbbb26dfa5171",
-      "last_checked": "2025-06-06T01:40:46.786473",
-      "status": "unchanged",
-      "etag": "W/\"28419c05bb8ec1ba5faf6eb0347bde14\""
+      "hash": "0bf420a3aefcdeb3b3e70b30ce4e0905f29e78737a5875cfd2699a810424af7b",
+      "last_checked": "2025-06-10T21:52:20.059967",
+      "status": "new",
+      "session_id": "2025-06-10T21:52:18.755751",
+      "etag": "W/\"d7c82dbd2ac9d253ca924f594277ea1c\"",
+      "file_path": "documentation/kernelmanagement/kernelmanagementversionnumber.md"
     },
     "https://developer.apple.com/documentation/kernelmanagement/kernelmanagementversionnumber": {
-      "hash": "36b153e0ac9b0e884087cbf141c7d39afeda6a93b81d91fb146dbbb26dfa5171",
-      "last_checked": "2025-06-06T01:40:46.786473",
-      "status": "unchanged"
+      "hash": "0bf420a3aefcdeb3b3e70b30ce4e0905f29e78737a5875cfd2699a810424af7b",
+      "last_checked": "2025-06-10T21:52:20.060012",
+      "status": "new",
+      "session_id": "2025-06-10T21:52:18.755751",
+      "etag": "W/\"d7c82dbd2ac9d253ca924f594277ea1c\"",
+      "file_path": "documentation/kernelmanagement/kernelmanagementversionnumber.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/kernelmanagement/kernelmanagementversionstring.json": {
-      "hash": "4f28dab5dcdb793da4ae6bfcfcd016f4c9310a779a982793109fdefdd7b21ce7",
-      "last_checked": "2025-06-06T01:40:47.184134",
-      "status": "unchanged",
-      "etag": "W/\"d2127cd185e1abcb6987646d2135f7f4\""
+      "hash": "8ad62e0638da42cdb865069adecbc03e02dba8a51f1d10cc14f3f19b7108d8e7",
+      "last_checked": "2025-06-10T21:52:20.283295",
+      "status": "new",
+      "session_id": "2025-06-10T21:52:18.755751",
+      "etag": "W/\"789c6c0e6695462f66dbbd4063896aab\"",
+      "file_path": "documentation/kernelmanagement/kernelmanagementversionstring.md"
     },
     "https://developer.apple.com/documentation/kernelmanagement/kernelmanagementversionstring": {
-      "hash": "4f28dab5dcdb793da4ae6bfcfcd016f4c9310a779a982793109fdefdd7b21ce7",
-      "last_checked": "2025-06-06T01:40:47.184134",
-      "status": "unchanged"
+      "hash": "8ad62e0638da42cdb865069adecbc03e02dba8a51f1d10cc14f3f19b7108d8e7",
+      "last_checked": "2025-06-10T21:52:20.283327",
+      "status": "new",
+      "session_id": "2025-06-10T21:52:18.755751",
+      "etag": "W/\"789c6c0e6695462f66dbbd4063896aab\"",
+      "file_path": "documentation/kernelmanagement/kernelmanagementversionstring.md"
     }
   }
 }

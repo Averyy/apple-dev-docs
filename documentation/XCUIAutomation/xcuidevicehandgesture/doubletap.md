@@ -1,6 +1,6 @@
 # XCUIDeviceHandGesture.doubleTap
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A double-tap hand gesture.

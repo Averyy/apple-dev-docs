@@ -1,6 +1,6 @@
 # XPC_ERROR_PEER_CODE_SIGNING_REQUIREMENT
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 **Availability**:

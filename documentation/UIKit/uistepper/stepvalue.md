@@ -20,7 +20,7 @@ var stepValue: Double { get set }
 
 #### Discussion
 
-Must be numerically greater than `0`. If you attempt to set this property’s value to `0` or to a negative number, the system raises an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) exception.
+Must be numerically greater than `0`. If you attempt to set this property’s value to `0` or to a negative number, the system raises an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception.
 
 The default value for this property is `1`.
 

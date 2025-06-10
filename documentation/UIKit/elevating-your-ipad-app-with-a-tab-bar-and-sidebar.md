@@ -1,6 +1,6 @@
 # Elevating your iPad app with a tab bar and sidebar
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Provide a compact, ergonomic tab bar for quick access to key parts of your app, and a sidebar for in-depth navigation.
 
@@ -231,4 +231,4 @@ In visionOS, the system displays the platform’s regular tabs, but a [`UITabGro
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar)*

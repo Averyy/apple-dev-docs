@@ -17,8 +17,7 @@ The edge from which the view will be animated in.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency var edge: Edge
+var edge: Edge
 ```
 
 ## See Also

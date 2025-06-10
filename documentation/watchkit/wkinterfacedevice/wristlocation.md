@@ -1,6 +1,6 @@
 # wristLocation
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The wrist on which the user wears the Apple Watch.

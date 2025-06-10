@@ -41,8 +41,6 @@ The credential session state must be [`CredentialSession.State.wired(credential:
 
 > ❗ **Important**: Calling this method may generate a billable event to the credential provider.
 
-Calling this method may generate a billable event to the credential provider.
-
 ## Parameters
 
 - `scene`: The   the authentication sheet appears over.

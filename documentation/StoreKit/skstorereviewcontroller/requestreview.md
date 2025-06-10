@@ -1,6 +1,6 @@
 # requestReview()
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: method
 
 Tells StoreKit to ask the customer to rate or review your app, if appropriate.

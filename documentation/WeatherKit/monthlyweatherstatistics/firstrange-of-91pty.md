@@ -1,6 +1,6 @@
 # firstRange(of:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Finds and returns the range of the first occurrence of a given collection within this collection.

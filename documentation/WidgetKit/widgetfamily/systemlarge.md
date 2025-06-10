@@ -1,6 +1,6 @@
 # WidgetFamily.systemLarge
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: case
 
 A large widget.
@@ -8,7 +8,7 @@ A large widget.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
 
 ## Declaration
@@ -19,8 +19,8 @@ case systemLarge
 
 ## Mentions
 
-- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
 - [Adding interactivity to widgets and Live Activities](adding-interactivity-to-widgets-and-live-activities.md)
+- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
 
 #### Discussion
 

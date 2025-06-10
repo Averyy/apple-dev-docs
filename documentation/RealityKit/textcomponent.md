@@ -10,6 +10,7 @@ A component that draws 2D text at an entity’s location.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -26,7 +27,7 @@ Set the component’s [`size`](textcomponent/size.md) to define the area of the 
 
 Text components use the CoreGraphics coordinate space: The origin is at the upper left of the canvas and positive values extend down and to the right. You can’t specify an explicit backing-buffer size. RealityKit dynamically adjusts the backing size to a value that results in high-fidelity text at its current location.
 
-RealityKit lays out text using default `Foundation/AttributedString` behaviors and wraps text instead of truncating it. It keeps the text a constant font size: It doesn’t stretch or scale the text to fit tha canvas. Use Core Text to determine the required canvas size for a particular string or layout.
+RealityKit lays out text using default `Foundation/AttributedString` behaviors and wraps text instead of truncating it. It keeps the text a constant font size: It doesn’t stretch or scale the text to fit the canvas. Use Core Text to determine the required canvas size for a particular string or layout.
 
 ## Topics
 
@@ -46,8 +47,6 @@ RealityKit lays out text using default `Foundation/AttributedString` behaviors a
   The attributed string this component renders.
 ### Type Aliases
 - [TextComponent.EdgeInsets](textcomponent/edgeinsets-swift.typealias.md)
-### Default Implementations
-- [Component Implementations](textcomponent/component-implementations.md)
 
 ## Relationships
 
@@ -66,6 +65,8 @@ RealityKit lays out text using default `Foundation/AttributedString` behaviors a
   An entity that has a view attachment.
 - [struct ViewAttachmentComponent](viewattachmentcomponent.md)
   A component containing additional information about a view attachment entity provided  via the [`entity(for:)`](realityviewattachments/entity(for:).md) function.
+- [struct PresentationComponent](presentationcomponent.md)
+  A component that presents a SwiftUI modal presentation from a RealityKit entity.
 
 
 ---

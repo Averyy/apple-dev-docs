@@ -15,7 +15,8 @@
 ## Declaration
 
 ```swift
-let handler: () -> Void
+@preconcurrency
+let handler: @MainActor () -> Void
 ```
 
 

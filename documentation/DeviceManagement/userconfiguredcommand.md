@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The command to inform a Shared iPad that the system has configured the user and can allow the user to continue in Setup Assistant.
+The command to inform the device that it can continue past Setup Assistant and finish login.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,13 +17,14 @@ object UserConfiguredCommand
 
 ## Topics
 
-### Commands
+### Objects
 - [object UserConfiguredCommand.Command](userconfiguredcommand/command-data.dictionary.md)
+  The command to inform the device that it can continue past Setup Assistant and finish login.
 
 ## See Also
 
 - [object UserConfiguredResponse](userconfiguredresponse.md)
-  A response from the Shared iPad after it processes the command to configure the user and continue in Setup Assistant.
+  A response from the device after it processes the command to inform the device that it can continue past Setup Assistant and finish login.
 
 
 ---

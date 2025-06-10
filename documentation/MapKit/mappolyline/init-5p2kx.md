@@ -12,6 +12,7 @@ Creates a polyline that traces the route you provide.
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS ?+
+- watchOS 10.0+
 
 ## Declaration
 

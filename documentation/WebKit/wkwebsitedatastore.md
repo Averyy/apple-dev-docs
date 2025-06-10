@@ -1,6 +1,6 @@
 # WKWebsiteDataStore
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that manages cookies, disk and memory caches, and other types of data for a web view.
@@ -70,6 +70,9 @@ To implement profile browsing, create a persistent data store using the [`init(f
   Removes the data store that matches the identifier you provide.
 ### Instance Properties
 - [var proxyConfigurations: [ProxyConfiguration]](wkwebsitedatastore/proxyconfigurations-cdc1.md)
+### Instance Methods
+- [func fetchData(of: Set<String>, completionHandler: (Data?, (any Error)?) -> Void)](wkwebsitedatastore/fetchdata(of:completionhandler:).md)
+- [func restoreData(Data, completionHandler: ((any Error)?) -> Void)](wkwebsitedatastore/restoredata(_:completionhandler:).md)
 
 ## Relationships
 
@@ -96,7 +99,7 @@ To implement profile browsing, create a persistent data store using the [`init(f
   A protocol for loading resources with URL schemes that WebKit doesn’t handle.
 - [protocol WKURLSchemeTask](wkurlschemetask.md)
   An interface that WebKit uses to request custom resources from your app.
-- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../foundation/nsattributedstring/documentreadingoptionkey/3182829-readaccessurl.md)
+- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../Foundation/NSAttributedString/DocumentReadingOptionKey/readAccessURL.md)
   The local files WebKit can access when loading content.
 
 

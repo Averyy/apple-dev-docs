@@ -1,6 +1,6 @@
 # sessionInactive
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: property
 
 An error indicating that the session is inactive.

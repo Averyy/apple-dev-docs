@@ -40,8 +40,6 @@ Times with numerically larger epochs are greater than those with smaller epochs.
 
 > 💡 **Tip**:  You can also use the [`CMTIME_COMPARE_INLINE`](cmtime_compare_inline.md) macro to compare times. This macro results in a more readable expression because it puts the comparison operator between the operands.
 
- You can also use the [`CMTIME_COMPARE_INLINE`](cmtime_compare_inline.md) macro to compare times. This macro results in a more readable expression because it puts the comparison operator between the operands.
-
 ## Parameters
 
 - `time1`: A time to compare.

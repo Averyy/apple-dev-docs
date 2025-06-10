@@ -1,6 +1,6 @@
 # earlyStopIterationCount
 
-**Framework**: Createmlcomponents  
+**Framework**: Create ML Components  
 **Kind**: property
 
 The number of iterations to use when evaluating whether to stop early.
@@ -48,4 +48,4 @@ Defaults to 10.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CreateMLComponents/fullyconnectednetworkconfiguration/earlystopiterationcount)*
+*[View on Apple Developer](https://developer.apple.com/documentation/createmlcomponents/fullyconnectednetworkconfiguration/earlystopiterationcount)*

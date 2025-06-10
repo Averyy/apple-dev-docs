@@ -1,0 +1,4 @@
+Completed scraping WirelessInsights!
+Total pages scraped: 74
+Pages skipped (unchanged): 11
+Pages failed: 0

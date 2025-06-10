@@ -1,6 +1,6 @@
 # kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A Boolean value indicating whether to require hardware-accelerated decoding.

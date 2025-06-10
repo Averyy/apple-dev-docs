@@ -1,6 +1,6 @@
 # CKDatabaseSubscription
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: class
 
 A subscription that generates push notifications when CloudKit modifies records in a database.
@@ -111,6 +111,7 @@ if([[NSUserDefaults standardUserDefaults]
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -122,4 +123,4 @@ if([[NSUserDefaults standardUserDefaults]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/ckdatabasesubscription)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/ckdatabasesubscription)*

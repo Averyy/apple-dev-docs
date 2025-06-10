@@ -1,6 +1,6 @@
 # contextMenu(menuItems:preview:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Adds a context menu with a custom preview to a view.
@@ -8,10 +8,10 @@ Adds a context menu with a custom preview to a view.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

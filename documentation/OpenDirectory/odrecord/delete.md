@@ -1,6 +1,6 @@
 # delete()
 
-**Framework**: Opendirectory  
+**Framework**: Open Directory  
 **Kind**: method
 
 Deletes the record from its node and invalidates it.

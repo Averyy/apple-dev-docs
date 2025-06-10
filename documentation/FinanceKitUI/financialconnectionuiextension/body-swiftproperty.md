@@ -12,6 +12,7 @@
 ## Declaration
 
 ```swift
+@MainActor
 var body: Self.Body { get }
 ```
 

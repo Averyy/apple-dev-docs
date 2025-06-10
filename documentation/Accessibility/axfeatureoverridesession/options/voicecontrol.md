@@ -16,4 +16,4 @@ static var voiceControl: AXFeatureOverrideSession.Options { get }
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Accessibility/AXFeatureOverrideSession/Options/voiceControl)*
+*[View on Apple Developer](https://developer.apple.com/documentation/accessibility/axfeatureoverridesession/options/voicecontrol)*

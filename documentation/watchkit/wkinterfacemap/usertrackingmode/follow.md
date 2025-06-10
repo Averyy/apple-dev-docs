@@ -1,6 +1,6 @@
 # WKInterfaceMap.UserTrackingMode.follow
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The map scrolls to follow the user as they move.

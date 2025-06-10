@@ -1,6 +1,6 @@
 # documentCameraViewController(_:didFinishWith:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: method
 
 Tells the delegate that the user successfully saved a scanned document from the document camera.

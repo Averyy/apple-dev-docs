@@ -32,6 +32,7 @@ object AppCustomProductPageVersionInlineCreate
   A response that contains a single app custom product page resource.
 - [object AppCustomProductPageVersionsResponse](appcustomproductpageversionsresponse.md)
   A response that contains a list of app customer product page version resources.
+- [object AppCustomProductPageVersionAppCustomProductPageLocalizationsLinkagesResponse](appcustomproductpageversionappcustomproductpagelocalizationslinkagesresponse.md)
 
 
 ---

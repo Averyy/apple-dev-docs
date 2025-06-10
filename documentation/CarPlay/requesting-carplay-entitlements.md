@@ -1,6 +1,6 @@
 # Requesting CarPlay Entitlements
 
-**Framework**: Carplay
+**Framework**: CarPlay
 
 Configure your CarPlay-enabled app with the entitlements it requires.
 
@@ -90,4 +90,4 @@ In Xcode, use a simulator to build and run your project. After Simulator launche
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CarPlay/requesting-carplay-entitlements)*
+*[View on Apple Developer](https://developer.apple.com/documentation/carplay/requesting-carplay-entitlements)*

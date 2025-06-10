@@ -23,6 +23,8 @@ For more information, read [`Optimizing your app for Assistive Access`](https://
   A mode that tailors the iOS and iPadOS experience for people with cognitive disabilities.
 - [Optimizing your app for Assistive Access](../Accessibility/optimizing-your-app-for-assistive-access.md)
   Adjust your app’s UI to make sure it works well for people who use Assistive Access.
+- [UIDesignRequiresCompatibility](information-property-list/uidesignrequirescompatibility.md)
+  A Boolean value that indicates whether the system runs the app using a compatibility mode for UI.
 - [UIUserInterfaceStyle](information-property-list/uiuserinterfacestyle.md)
   The user interface style for the app.
 - [UIViewEdgeAntialiasing](information-property-list/uiviewedgeantialiasing.md)

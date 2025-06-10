@@ -165,4 +165,4 @@ For more information about creating and applying a Swift Package Build Tool Plug
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3133-packaging-a-renderer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3133-packaging-a-renderer)*

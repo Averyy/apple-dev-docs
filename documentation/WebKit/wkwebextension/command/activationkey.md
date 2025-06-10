@@ -1,6 +1,6 @@
 # activationKey
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The primary key used to trigger the command, distinct from any modifier flags.

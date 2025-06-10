@@ -25,12 +25,13 @@ After receiving the raw token data from your provider, create an instance of thi
 
 ## Topics
 
-### Initializers
+### Creating a token
 - [init(rawValue: String)](storeandforwardbatchdeletiontoken/init(rawvalue:).md)
   Creates a token with the string your payment service provider provides.
-### Instance Properties
+### Getting the token value
 - [let rawValue: String](storeandforwardbatchdeletiontoken/rawvalue-swift.property.md)
   The raw token string your payment service provider supplies.
+- [var hashValue: Int](storeandforwardbatchdeletiontoken/hashvalue.md)
 ### Type Aliases
 - [StoreAndForwardBatchDeletionToken.RawValue](storeandforwardbatchdeletiontoken/rawvalue-swift.typealias.md)
   The raw type that can be used to represent all values of the conforming type.
@@ -45,6 +46,18 @@ After receiving the raw token data from your provider, create an instance of thi
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [struct StoreAndForwardBatch](storeandforwardbatch.md)
+  A structure that stores the data to send to the payment service provider to process.
+- [class StoreAndForwardPaymentCardReaderSession](storeandforwardpaymentcardreadersession.md)
+  The object you use to start reading a contactless payment or loyalty card in Store and Forward mode.
+- [struct StoreAndForwardStatus](storeandforwardstatus.md)
+  A structure that describes the Store and Forward session status.
+- [struct PaymentCardReaderStore](paymentcardreaderstore.md)
+  A structure that manages the store that contains all the Store and Forward reads.
 
 
 ---

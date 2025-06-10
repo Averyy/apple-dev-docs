@@ -1,6 +1,6 @@
 # Storefront
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: struct
 
 The region and unique identifier of the App Store storefront for the device.
@@ -60,6 +60,7 @@ When you change the App Store Country or Region in App Store Connect for a Sandb
 ### Conforms To
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -71,4 +72,4 @@ When you change the App Store Country or Region in App Store Connect for a Sandb
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/StoreKit/storefront)*
+*[View on Apple Developer](https://developer.apple.com/documentation/storekit/storefront)*

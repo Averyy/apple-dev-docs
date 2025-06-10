@@ -1,6 +1,6 @@
 # sort(on:_:order:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Arranges the rows of a data frame according to two columns that you select by their column identifiers.

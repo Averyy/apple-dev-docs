@@ -1,6 +1,6 @@
 # expectedValue
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A value that the key path’s specified property must equal to fulfill the expectation.

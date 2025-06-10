@@ -96,8 +96,6 @@ for date in stride(from: startDate, to: endDate, by: 7) {
 
 > ❗ **Important**: The `Strideable` protocol provides default implementations for the equal-to (`==`) and less-than (`<`) operators that depend on the `Stride` type’s implementations. If a type conforming to `Strideable` is its own `Stride` type, it must provide concrete implementations of the two operators to avoid infinite recursion.
 
-The `Strideable` protocol provides default implementations for the equal-to (`==`) and less-than (`<`) operators that depend on the `Stride` type’s implementations. If a type conforming to `Strideable` is its own `Stride` type, it must provide concrete implementations of the two operators to avoid infinite recursion.
-
 ## Topics
 
 ### Getting an Offset Value

@@ -40,6 +40,8 @@ object PerfPowerMetric
   Results of an analysis of metric data for a single metric category for your app.
 - [type MetricCategory](metriccategory.md)
   Categories of metric reports for apps that you distribute through the App Store.
+- [object AppPerfPowerMetricsLinkagesResponse](appperfpowermetricslinkagesresponse.md)
+- [object DiagnosticSignatureLogsLinkagesResponse](diagnosticsignaturelogslinkagesresponse.md)
 
 
 ---

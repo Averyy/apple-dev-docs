@@ -1,6 +1,6 @@
 # DOMStyleSheetList
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 **Availability**:

@@ -1,6 +1,6 @@
 # Capturing photographs for RealityKit Object Capture
 
-**Framework**: Realitykit
+**Framework**: RealityKit
 
 Take high-quality images of objects to generate 3D models.
 
@@ -80,4 +80,4 @@ For information on using the RealityKit Object Capture APIs, see [`Creating 3D o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/capturing-photographs-for-realitykit-object-capture)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/capturing-photographs-for-realitykit-object-capture)*

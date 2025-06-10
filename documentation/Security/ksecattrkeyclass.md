@@ -29,4 +29,4 @@ The corresponding value is of type [`CFTypeRef`](https://developer.apple.com/doc
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/ksecattrkeyclass)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/ksecattrkeyclass)*

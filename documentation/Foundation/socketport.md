@@ -60,6 +60,8 @@ A [`SocketPort`](socketport.md) object can be used as an endpoint for distribute
 - [NSCoding](nscoding.md)
 - [NSCopying](nscopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -71,4 +73,4 @@ A [`SocketPort`](socketport.md) object can be used as an endpoint for distribute
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/socketport)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/socketport)*

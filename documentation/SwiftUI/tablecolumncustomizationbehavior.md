@@ -45,6 +45,7 @@ Setting any of these values as the `disabledCustomizationBehavior(_:)` doesn’t
 - [Equatable](../Swift/Equatable.md)
 - [ExpressibleByArrayLiteral](../Swift/ExpressibleByArrayLiteral.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

@@ -10,12 +10,17 @@ An anchor point attached to a human body in motion within the scene.
 - iPadOS 13.0+
 - Mac Catalyst 14.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
 case body
 ```
+
+#### Discussion
+
+> **Note**: macOS, visionOS and tvOS apps don’t track this type of anchor.
 
 ## See Also
 

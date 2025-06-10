@@ -34,6 +34,9 @@ When configuring a text view, specify what type of text input you want Writing T
   An option to allow tabular layout attributes in the returned text.
 ### Initializers
 - [init(rawValue: UInt)](uiwritingtoolsresultoptions/init(rawvalue:).md)
+### Type Properties
+- [static var presentationIntent: UIWritingToolsResultOptions](uiwritingtoolsresultoptions/presentationintent.md)
+  implies `RichText`, `List`, and `Table`, and Writing Tools may provide text with presentation intent attributes. Writing Tools will use `NSPresentationIntent` instead of `NSTextList` and `NSTextTable` to represent lists and tables.
 
 ## Relationships
 
@@ -44,6 +47,7 @@ When configuring a text view, specify what type of text input you want Writing T
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

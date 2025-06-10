@@ -1,6 +1,6 @@
 # WebNavigationType.formSubmitted
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A form was submitted.

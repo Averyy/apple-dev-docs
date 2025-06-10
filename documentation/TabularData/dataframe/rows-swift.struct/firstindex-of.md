@@ -1,6 +1,6 @@
 # firstIndex(of:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns the first index where the specified value appears in the collection.

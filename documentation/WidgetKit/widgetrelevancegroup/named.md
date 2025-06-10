@@ -1,15 +1,16 @@
 # named(_:)
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: method
 
-Creates a group with the provided name. Widgets in the same group will not be suggested by the system simultaneously in contexts where both are visible. Named groups are namespaced to the containing app, and won’t be impacted by other apps.
+Creates a group with the provided name.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
+- visionOS 26.0+ (Beta)
 - watchOS 11.0+
 
 ## Declaration
@@ -17,6 +18,10 @@ Creates a group with the provided name. Widgets in the same group will not be su
 ```swift
 static func named(_ name: String) -> WidgetRelevanceGroup
 ```
+
+#### Discussion
+
+The system won’t show more than one relevant widget if they are in the same. A widget group doesn’t affect widgets by other apps.
 
 
 ---

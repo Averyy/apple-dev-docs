@@ -17,9 +17,7 @@ This service defines a profile with Apple’s servers that can then be assigned 
 
 ### Request and Response
 - [object DefineProfileResponse](defineprofileresponse.md)
-  The response to defining a profile.
 - [object DefineProfileResponse.Devices](defineprofileresponse/devices-data.dictionary.md)
-  A dictionary containing device information.
 
 ## Request Body
 

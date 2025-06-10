@@ -1,6 +1,6 @@
 # DayPrecipitationSummary
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: struct
 
 A structure that describes the precipitation summary for a day.
@@ -48,6 +48,7 @@ struct DayPrecipitationSummary
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

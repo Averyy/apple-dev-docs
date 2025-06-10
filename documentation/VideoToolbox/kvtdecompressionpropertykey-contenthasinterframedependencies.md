@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_ContentHasInterframeDependencies
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 An optional Boolean property indicating if the content being decoded has interframe dependencies, if the decoder knows.

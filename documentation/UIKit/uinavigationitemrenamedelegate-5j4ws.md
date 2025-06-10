@@ -1,6 +1,6 @@
 # UINavigationItemRenameDelegate
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: protocol
 
 Methods an object implements to rename a navigation item.

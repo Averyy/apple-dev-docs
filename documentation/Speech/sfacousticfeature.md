@@ -43,14 +43,8 @@ class SFAcousticFeature
 
 ## See Also
 
-- [var voicing: SFAcousticFeature](sfvoiceanalytics/voicing.md)
-  The likelihood of a voice in each frame of a transcription segment.
-- [var pitch: SFAcousticFeature](sfvoiceanalytics/pitch.md)
-  The highness or lowness of the tone (fundamental frequency) in each frame of a transcription segment, expressed as a logarithm.
-- [var jitter: SFAcousticFeature](sfvoiceanalytics/jitter.md)
-  The variation in pitch in each frame of a transcription segment, expressed as a percentage of the frame’s fundamental frequency.
-- [var shimmer: SFAcousticFeature](sfvoiceanalytics/shimmer.md)
-  The variation in vocal volume stability (amplitude) in each frame of a transcription segment, expressed in decibels.
+- [class SFVoiceAnalytics](sfvoiceanalytics.md)
+  A collection of vocal analysis metrics.
 
 
 ---

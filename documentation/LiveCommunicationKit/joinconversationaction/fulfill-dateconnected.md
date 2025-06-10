@@ -3,7 +3,7 @@
 **Framework**: LiveCommunicationKit  
 **Kind**: method
 
-Indicates that the action has been successfully executed.
+Indicates that the local participant successfully joined an incoming conversation.
 
 **Availability**:
 - iOS 17.4+
@@ -20,7 +20,7 @@ final func fulfill(dateConnected: Date)
 
 ## Parameters
 
-- `dateConnected`: The     at which the   was joined.
+- `dateConnected`: The point in time when the local participant joined a conversation.
 
 
 ---

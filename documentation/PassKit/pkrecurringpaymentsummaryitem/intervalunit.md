@@ -21,7 +21,7 @@ var intervalUnit: NSCalendar.Unit { get set }
 
 #### Discussion
 
-The default value for the interval unit is [`month`](https://developer.apple.com/documentation/foundation/nscalendar/unit/1418371-month).
+The default value for the interval unit is [`month`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit/month).
 
 The supported [`NSCalendar.Unit`](https://developer.apple.com/documentation/Foundation/NSCalendar/Unit) interval units are:
 

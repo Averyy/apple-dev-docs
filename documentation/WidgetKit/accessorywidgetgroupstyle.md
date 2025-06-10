@@ -1,6 +1,6 @@
 # AccessoryWidgetGroupStyle
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: struct
 
 The style for an [`AccessoryWidgetGroup`](accessorywidgetgroup.md) view.
@@ -27,6 +27,13 @@ Use the `View/accessoryWidgetGroupStyle(_:)` modifier to set the desired style.
   Masks each content view with a circle.
 - [static let roundedSquare: AccessoryWidgetGroupStyle](accessorywidgetgroupstyle/roundedsquare.md)
   Masks each content view with a rounded square.
+
+## See Also
+
+- [struct AccessoryWidgetGroup](accessorywidgetgroup.md)
+  A view type that has a label at the top and three content views masked with a circle or rounded square.
+- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+  Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
 
 
 ---

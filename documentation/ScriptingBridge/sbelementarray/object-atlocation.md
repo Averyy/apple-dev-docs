@@ -21,7 +21,7 @@ A reference to the [`SBObject`](sbobject.md) object identified by `loc` or `nil`
 
 #### Discussion
 
-This method is a generalization of [`objectAtIndex:`](https://developer.apple.com/documentation/foundation/nsarray/1417555-objectatindex) for applications where the “index” is not simply an integer. For example, Finder can specify objects using a [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object as a location. In OSA this is known as “absolute position,” a generalization of the notion of “index” in Foundation—it could be an integer, but it doesn’t have to be. A single object may even have a number of different “absolute position” values depending on the container.
+This method is a generalization of [`object(at:)`](https://developer.apple.com/documentation/Foundation/NSArray/object(at:)) for applications where the “index” is not simply an integer. For example, Finder can specify objects using a [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object as a location. In OSA this is known as “absolute position,” a generalization of the notion of “index” in Foundation—it could be an integer, but it doesn’t have to be. A single object may even have a number of different “absolute position” values depending on the container.
 
 ## See Also
 

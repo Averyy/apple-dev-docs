@@ -1,6 +1,6 @@
 # updatePostbackConversionValue(_:completionHandler:)
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: method
 
 Verifies the first launch of an advertised app and, on subsequent calls, updates the conversion value or calls a completion handler if the update fails.

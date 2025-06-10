@@ -1,6 +1,6 @@
 # default
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: property
 
 A value representing a default gesture velocity.

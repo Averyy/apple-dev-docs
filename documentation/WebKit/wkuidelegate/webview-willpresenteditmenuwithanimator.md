@@ -1,6 +1,6 @@
 # webView(_:willPresentEditMenuWithAnimator:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Tells the delegate that the web view is about to present an edit menu.

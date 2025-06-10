@@ -1,6 +1,6 @@
 # lineNumber
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 An integer that represents a line of code in a source code file.

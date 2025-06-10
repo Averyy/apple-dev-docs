@@ -1,6 +1,6 @@
 # Placing objects and handling 3D interaction
 
-**Framework**: Arkit
+**Framework**: ARKit
 
 Place virtual content at tracked, real-world locations, and enable the user to interact with virtual content by using gestures.
 
@@ -298,4 +298,4 @@ func coachingOverlayViewDidRequestSessionReset(_ coachingOverlayView: ARCoaching
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/placing-objects-and-handling-3d-interaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/placing-objects-and-handling-3d-interaction)*

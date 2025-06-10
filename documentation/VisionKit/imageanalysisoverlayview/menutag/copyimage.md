@@ -1,6 +1,6 @@
 # copyImage
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 An index for the copy-image menu item.

@@ -32,8 +32,6 @@ This function simply reads bytes from `stream` starting at the current location 
 
 > ⚠️ **Warning**:  This function is obsolete and will be deprecated soon. Use [`CFPropertyListCreateWithStream(_:_:_:_:_:_:)`](cfpropertylistcreatewithstream(_:_:_:_:_:_:).md) instead.
 
- This function is obsolete and will be deprecated soon. Use [`CFPropertyListCreateWithStream(_:_:_:_:_:_:)`](cfpropertylistcreatewithstream(_:_:_:_:_:_:).md) instead.
-
 ## Parameters
 
 - `allocator`: The allocator to use to allocate memory for the new property list. Pass   or kCFAllocatorDefault to use the current default allocator.

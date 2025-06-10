@@ -112,6 +112,7 @@ If you want to perform custom operations while a composition is rendering such a
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
 - [QCCompositionRenderer](qccompositionrenderer.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

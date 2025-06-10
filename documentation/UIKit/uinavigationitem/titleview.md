@@ -37,6 +37,10 @@ The default value is `nil`.
   Item groups to display in the trailing section of the navigation bar.
 - [var pinnedTrailingGroup: UIBarButtonItemGroup?](uinavigationitem/pinnedtrailinggroup.md)
   The item group to display on the trailing edge of the navigation bar, on the trailing side of the overflow and search items.
+- [var subtitleView: UIView?](uinavigationitem/subtitleview.md)
+  A custom view to display below the title in the navigation bar.
+- [var largeSubtitleView: UIView?](uinavigationitem/largesubtitleview.md)
+  A custom view to display below the large title.
 - [var leftBarButtonItems: [UIBarButtonItem]?](uinavigationitem/leftbarbuttonitems.md)
   An array of custom bar button items to display on the left (or leading) side of the navigation bar when the navigation item is the top item.
 - [var leftBarButtonItem: UIBarButtonItem?](uinavigationitem/leftbarbuttonitem.md)

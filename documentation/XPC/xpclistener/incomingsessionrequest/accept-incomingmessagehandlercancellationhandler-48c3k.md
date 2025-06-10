@@ -1,17 +1,22 @@
 # accept(incomingMessageHandler:cancellationHandler:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Accepts an incoming session request from a client using a closure to handle dictionary messages, and returns the inactive session.
 
 **Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 17.0+
+- watchOS 10.0+
 
 ## Declaration
 
 ```swift
+@preconcurrency
 func accept(incomingMessageHandler: @escaping (XPCDictionary) -> XPCDictionary?, cancellationHandler: ((XPCRichError) -> Void)? = nil) -> (XPCListener.IncomingSessionRequest.Decision, XPCSession)
 ```
 

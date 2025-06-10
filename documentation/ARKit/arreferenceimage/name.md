@@ -1,6 +1,6 @@
 # name
 
-**Framework**: Arkit  
+**Framework**: ARKit  
 **Kind**: property
 
 A descriptive name for the image.
@@ -32,4 +32,4 @@ For reference images loaded from an Xcode asset catalog, this property is the na
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ARKit/arreferenceimage/name)*
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/arreferenceimage/name)*

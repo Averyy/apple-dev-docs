@@ -1,6 +1,6 @@
 # supportedXattrNames(for:)
 
-**Framework**: Fskit  
+**Framework**: FSKit  
 **Kind**: method
 
 Returns an array that specifies the extended attribute names the given item supports.

@@ -48,6 +48,7 @@ An `UnsafeBufferPointer` instance is a view into memory and does not own the mem
   A pointer to the first element of the buffer.
 - [let count: Int](unsafebufferpointer/count.md)
   The number of elements in the buffer.
+- [var span: Span<Element>](unsafebufferpointer/span.md)
 ### Instance Methods
 - [func deallocate()](unsafebufferpointer/deallocate.md)
   Deallocates the memory block previously allocated at this buffer pointer’s base address.
@@ -67,6 +68,7 @@ An `UnsafeBufferPointer` instance is a view into memory and does not own the mem
 - [BidirectionalCollection Implementations](unsafebufferpointer/bidirectionalcollection-implementations.md)
 - [Collection Implementations](unsafebufferpointer/collection-implementations.md)
 - [CustomDebugStringConvertible Implementations](unsafebufferpointer/customdebugstringconvertible-implementations.md)
+- [OperationParameter Implementations](unsafebufferpointer/operationparameter-implementations.md)
 - [Sequence Implementations](unsafebufferpointer/sequence-implementations.md)
 
 ## Relationships
@@ -74,6 +76,7 @@ An `UnsafeBufferPointer` instance is a view into memory and does not own the mem
 ### Conforms To
 - [AccelerateBuffer](../Accelerate/AccelerateBuffer.md)
 - [AtomicRepresentable](../synchronization/atomicrepresentable.md)
+- [BNNSGraph.Builder.OperationParameter](../Accelerate/BNNSGraph/Builder/OperationParameter.md)
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Collection](collection.md)

@@ -1,6 +1,6 @@
 # VTCompressionSessionPrepareToEncodeFrames(_:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Enables the encoder to perform any necessary resource allocation before the encoder begins encoding frames (optional).

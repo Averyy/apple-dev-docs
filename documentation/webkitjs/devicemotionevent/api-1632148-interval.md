@@ -1,6 +1,6 @@
 # interval
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The interval in milliseconds since the last device motion event.

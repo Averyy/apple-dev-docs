@@ -1,6 +1,6 @@
 # webView(_:mouseDidMoveOverElement:modifierFlags:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Updates information about the element the user is mousing over.

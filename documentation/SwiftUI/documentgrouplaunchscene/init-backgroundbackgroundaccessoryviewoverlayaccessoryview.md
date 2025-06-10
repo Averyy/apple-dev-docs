@@ -27,6 +27,8 @@ Use a `DocumentGroupLaunchScene` alongside any [`DocumentGroup`](documentgroup.m
 - `title`: A key to use for the view title.
 - `actions`: A view builder for returning the view’s actions.
 - `background`: The background of the scene.
+- `backgroundAccessoryView`: A view builder for returning the view’s background accessory view.
+- `overlayAccessoryView`: A view builder for returning the view’s overlay accessory view.
 
 
 ---

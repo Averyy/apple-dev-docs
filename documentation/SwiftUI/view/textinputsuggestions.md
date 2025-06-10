@@ -87,6 +87,8 @@ If the model’s `suggestedVenues` begins as an empty array, the interface doesn
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on macOS.
 - [func textContentType(UITextContentType?) -> some View](view/textcontenttype(_:)-ufdv.md)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on an iOS or tvOS device.
+- [struct TextInputFormattingControlPlacement](textinputformattingcontrolplacement.md)
+  A structure defining the system text formatting controls available on each platform.
 
 
 ---

@@ -1,6 +1,6 @@
 # makeUIGestureRecognizer(context:)
 
-**Framework**: Swiftui  
+**Framework**: SwiftUI  
 **Kind**: method  
 **Required**: Yes
 

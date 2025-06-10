@@ -21,8 +21,6 @@ Output QuickTime test patterns to a vectorscope to analyze the video signals. Vi
 
 > ❗ **Important**:  Don’t evaluate the display outputs (Display Port or DVI) using standard vectorscope targets. The system adjusts gamma for displays, but not for video devices. Use standard vectorscope targets for video outputs (HDMI, Composite, or Component video output).
 
- Don’t evaluate the display outputs (Display Port or DVI) using standard vectorscope targets. The system adjusts gamma for displays, but not for video devices. Use standard vectorscope targets for video outputs (HDMI, Composite, or Component video output).
-
 Typically, vectorscopes contain a set of six boxes (yellow, cyan, green, magenta, red, and blue) representing 75% color bars, and another set for 100% color bars. These boxes correspond to sections C and D of the test pattern file `QuickTime_Test_Pattern_HD.mov,` shown below:
 
 ![A QuickTime test pattern HD movie file with color and grayscale patterns. The top of the movie contains dark levels, the middle has multi-colored bars and the bottom has white light levels.](https://docs-assets.developer.apple.com/published/4a1c3e93f3eb149a84b1cab61fb6de7e/media-3712975%402x.png)

@@ -1,6 +1,6 @@
 # kVTCompressionPropertyKey_CalculateMeanSquaredError
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

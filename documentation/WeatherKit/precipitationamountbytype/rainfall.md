@@ -1,6 +1,6 @@
 # rainfall
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The amount of rainfall for the period.

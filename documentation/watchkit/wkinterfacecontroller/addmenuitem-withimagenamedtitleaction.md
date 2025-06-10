@@ -1,6 +1,6 @@
 # addMenuItem(withImageNamed:title:action:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Adds an action to the context menu using an existing image resource in your Watch app bundle.

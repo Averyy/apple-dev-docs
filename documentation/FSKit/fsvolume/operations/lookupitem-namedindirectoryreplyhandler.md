@@ -21,8 +21,6 @@ If no item matching `name` exists in the directory indicated by `directory`, com
 
 > 💡 **Tip**: The [`FSFileName`](fsfilename.md) sent back to the caller may differ from the `name` parameter. This flexibility allows your implementation to handle case-insensitive and case-sensitive file systems. It might also be the case that `name` uses a composed Unicode string, but the name maintained by the file system and provided to the caller is uncomposed Unicode.
 
-The [`FSFileName`](fsfilename.md) sent back to the caller may differ from the `name` parameter. This flexibility allows your implementation to handle case-insensitive and case-sensitive file systems. It might also be the case that `name` uses a composed Unicode string, but the name maintained by the file system and provided to the caller is uncomposed Unicode.
-
 ## Parameters
 
 - `name`: The name of the item to look up.

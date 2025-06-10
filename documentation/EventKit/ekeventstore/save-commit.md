@@ -1,6 +1,6 @@
 # save(_:commit:)
 
-**Framework**: Eventkit  
+**Framework**: EventKit  
 **Kind**: method
 
 Saves changes to a reminder by either committing or batching the changes.

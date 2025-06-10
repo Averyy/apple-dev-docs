@@ -1,6 +1,6 @@
 # Build Runs
 
-**Framework**: Appstoreconnectapi
+**Framework**: App Store Connect API
 
 Read detailed build information and start new builds.
 
@@ -27,6 +27,8 @@ Additionally, use the `ciBuildRuns` resource to tell Xcode Cloud to start a new 
   List all actions Xcode Cloud performed during a specific build.
 - [List All Builds Xcode Cloud Created in App Store Connect](get-v1-cibuildruns-_id_-builds.md)
   List All App Store Connect and TestFlight Builds when it performed a build.
+- [GET /v1/ciBuildRuns/{id}/relationships/actions](get-v1-cibuildruns-_id_-relationships-actions.md)
+- [GET /v1/ciBuildRuns/{id}/relationships/builds](get-v1-cibuildruns-_id_-relationships-builds.md)
 ### Starting a New Build
 - [Start a Build](post-v1-cibuildruns.md)
   Start a new Xcode Cloud build for a workflow.
@@ -39,6 +41,8 @@ Additionally, use the `ciBuildRuns` resource to tell Xcode Cloud to start a new 
   A response that contains a single Build Runs resource.
 - [object CiBuildActionsResponse](cibuildactionsresponse.md)
   A response that contains a list of Build Actions resources.
+- [object CiBuildRunActionsLinkagesResponse](cibuildrunactionslinkagesresponse.md)
+- [object CiBuildRunBuildsLinkagesResponse](cibuildrunbuildslinkagesresponse.md)
 
 ## See Also
 
@@ -54,4 +58,4 @@ Additionally, use the `ciBuildRuns` resource to tell Xcode Cloud to start a new 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/build-runs)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/build-runs)*

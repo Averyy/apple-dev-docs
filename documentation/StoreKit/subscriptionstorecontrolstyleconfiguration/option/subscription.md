@@ -36,9 +36,7 @@ struct DisplayNameButtonsControlStyle: SubscriptionStoreControlStyle {
 }
 ```
 
-> ❗ **Important**:  Use the [`subscribe()`](subscriptionstorecontrolstyleconfiguration/option/subscribe().md) method on the [`SubscriptionStoreControlStyleConfiguration.Option`](subscriptionstorecontrolstyleconfiguration/option.md) value when a customer initiates a purchase. Don’t use `Product/purchase(confirmIn:options:)` or related purchase methods on this property for initiating a purchase.
-
- Use the [`subscribe()`](subscriptionstorecontrolstyleconfiguration/option/subscribe().md) method on the [`SubscriptionStoreControlStyleConfiguration.Option`](subscriptionstorecontrolstyleconfiguration/option.md) value when a customer initiates a purchase. Don’t use `Product/purchase(confirmIn:options:)` or related purchase methods on this property for initiating a purchase.
+> ❗ **Important**:  Use the [`subscribe()`](subscriptionstorecontrolstyleconfiguration/option/subscribe().md) method on the [`SubscriptionStoreControlStyleConfiguration.Option`](subscriptionstorecontrolstyleconfiguration/option.md) value when a customer initiates a purchase. Don’t use [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-6dj6y.md) or related purchase methods on this property for initiating a purchase.
 
 ## See Also
 

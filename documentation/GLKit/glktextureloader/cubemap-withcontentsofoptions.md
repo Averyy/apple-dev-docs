@@ -1,6 +1,6 @@
 # cubeMap(withContentsOf:options:)
 
-**Framework**: Glkit  
+**Framework**: GLKit  
 **Kind**: method
 
 Loads a cube map texture image from a single URL and creates a new texture from the data.
@@ -38,7 +38,7 @@ This class method loads the texture into the sharegroup attached to the current 
 
 ## See Also
 
-- [func cubeMap(withContentsOf: URL, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: GLKTextureLoaderCallback)](glktextureloader/cubemap(withcontentsof:options:queue:completionhandler:).md)
+- [func cubeMap(withContentsOf: URL, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: (GLKTextureInfo?, (any Error)?) -> Void)](glktextureloader/cubemap(withcontentsof:options:queue:completionhandler:).md)
   Asynchronously loads a cube map texture image from a single URL and creates a new texture from the data.
 
 

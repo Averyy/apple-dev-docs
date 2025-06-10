@@ -1,6 +1,6 @@
 # setPermissionStatus(_:for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Sets the status of a permission with a distant future expiration date.

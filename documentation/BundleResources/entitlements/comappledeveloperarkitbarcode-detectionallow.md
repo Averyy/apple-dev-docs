@@ -1,6 +1,6 @@
 # Spatial barcode and QR code scanning
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 A Boolean value that indicates whether an app can use ARKit to detect, position, and decode barcode and QR codes.
@@ -14,8 +14,6 @@ A Boolean value that indicates whether an app can use ARKit to detect, position,
 
 ## See Also
 
-- [Apple Neural Engine access](entitlements/com.apple.developer.coreml.neural-engine-access.md)
-  A Boolean value that indicates whether an app can use the Apple Neural Engine to speed up CoreML.
 - [Increased performance headroom](entitlements/com.apple.developer.app-compute-category.md)
   An entitlement that allows an app to adjust thresholds that balance thermal dissipation and performance against fan noise and other factors.
 - [Passthrough in screen capture](entitlements/com.apple.developer.screen-capture.include-passthrough.md)
@@ -24,6 +22,16 @@ A Boolean value that indicates whether an app can use ARKit to detect, position,
   A Boolean value that indicates whether an app can use ARKit to access the main cameras on Apple Vision Pro.
 - [Object-tracking parameter adjustment](entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow.md)
   A Boolean value that allows an app to use ARKit to track more objects with a higher frequency.
+- [Camera Region access](entitlements/com.apple.developer.arkit.camera-region.allow.md)
+  A Boolean value indicating whether your app may access the camera region.
+- [Shared Coordinate Space access](entitlements/com.apple.developer.arkit.shared-coordinate-space.allow.md)
+  A Boolean value indicating whether your app may use a shared coordinate space.
+- [App-Protected Content](entitlements/com.apple.developer.protected-content.md)
+  A Boolean value indicating whether the system prohibits capturing your app’s content.
+- [Follow Mode for Windows](entitlements/com.apple.developer.window-body-follow.md)
+  A Boolean value indicating whether your app’s windows will follow the user.
+- [Apple Neural Engine access](entitlements/com.apple.developer.coreml.neural-engine-access.md)
+  A Boolean value that indicates whether an app can use the Apple Neural Engine to speed up CoreML.
 - [UVC Device Access on visionOS](entitlements/com.apple.developer.avfoundation.uvc-device-access.md)
   A Boolean value that indicates whether the app can stream USB UVC devices connected to the Developer strap.
 

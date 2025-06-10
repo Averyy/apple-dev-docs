@@ -1,6 +1,6 @@
 # SHMediaItem
 
-**Framework**: Shazamkit  
+**Framework**: ShazamKit  
 **Kind**: class
 
 An object that represents the metadata for a reference signature.
@@ -122,6 +122,7 @@ let mediaItem = SHMediaItem(properties: [.episode: 42,
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -139,4 +140,4 @@ let mediaItem = SHMediaItem(properties: [.episode: 42,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ShazamKit/shmediaitem)*
+*[View on Apple Developer](https://developer.apple.com/documentation/shazamkit/shmediaitem)*

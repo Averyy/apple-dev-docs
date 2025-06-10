@@ -1,6 +1,6 @@
 # vm_pkt_iovcnt
 
-**Framework**: Vmnet  
+**Framework**: vmnet  
 **Kind**: property
 
 The number of packet buffers in `vm_pkt_iov`.

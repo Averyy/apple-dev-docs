@@ -1,6 +1,6 @@
 # Core Telephony
 
-**Framework**: Coretelephony  
+**Framework**: Core Telephony  
 **Kind**: module
 
 Access information about a user’s cellular service provider, such as its unique identifier and whether the carrier allows VoIP.
@@ -22,8 +22,6 @@ A [`CTCarrier`](ctcarrier.md) object gives you information about the user’s ce
 ## Topics
 
 ### Service Information
-- [class CTCarrier](ctcarrier.md)
-  Information about the user’s cellular service provider, such as its unique identifier and whether it allows VoIP calls on its network.
 - [class CTTelephonyNetworkInfo](cttelephonynetworkinfo.md)
   An object that provides notifications of changes to the user’s cellular service provider.
 ### eSIM
@@ -31,6 +29,13 @@ A [`CTCarrier`](ctcarrier.md) object gives you information about the user’s ce
   An object you use to download and install a carrier eSIM.
 - [class CTCellularPlanProvisioningRequest](ctcellularplanprovisioningrequest.md)
   A request specifying an eSIM to download and install.
+- [class CTCellularPlanProperties](ctcellularplanproperties.md)
+  An object you use for an eSIM.
+- [enum CTCellularPlanCapability](ctcellularplancapability.md)
+  The type of cellular plan available for an eSIM.
+### SIM
+- [class CTCellularPlanStatus](ctcellularplanstatus.md)
+  An object used for retrieving and checking the validity of a token.
 ### Subscriber Information
 - [class CTSubscriber](ctsubscriber.md)
   A cellular network subscriber.
@@ -41,14 +46,16 @@ A [`CTCarrier`](ctcarrier.md) object gives you information about the user’s ce
 ### Cellular Data Access
 - [class CTCellularData](ctcellulardata.md)
   An object indicating whether the app can access cellular data.
-### Call Information
+### Errors
+- [struct CTError](cterror.md)
+  A type representing a Core Telephony error.
+### Deprecated
+- [class CTCarrier](ctcarrier.md)
+  Information about the user’s cellular service provider, such as its unique identifier and whether it allows VoIP calls on its network.
 - [class CTCall](ctcall.md)
   An object used to identify a cellular call and determine its state.
 - [class CTCallCenter](ctcallcenter.md)
   An object that provides a list of current cellular calls, and provides the ability to respond to state changes for calls.
-### Errors
-- [struct CTError](cterror.md)
-  A type representing a Core Telephony error.
 
 
 ---

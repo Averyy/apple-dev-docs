@@ -235,8 +235,8 @@ The process for encoding and submitting drawing commands is the same as that sho
 
 ## See Also
 
-- [Processing a Texture in a Compute Function](processing-a-texture-in-a-compute-function.md)
-  Perform parallel calculations on structured data by placing the data in textures.
+- [Processing a texture in a compute function](processing-a-texture-in-a-compute-function.md)
+  Create textures by running copy and dispatch commands in a compute pass on a GPU.
 - [Reading Pixel Data from a Drawable Texture](reading-pixel-data-from-a-drawable-texture.md)
   Access texture data from the CPU by copying it to a buffer.
 - [Streaming large images with Metal sparse textures](streaming-large-images-with-metal-sparse-textures.md)
@@ -245,4 +245,4 @@ The process for encoding and submitting drawing commands is the same as that sho
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/creating-and-sampling-textures)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/creating-and-sampling-textures)*

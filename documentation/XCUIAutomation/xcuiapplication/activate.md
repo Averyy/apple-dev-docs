@@ -1,6 +1,6 @@
 # activate()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Activates the application.

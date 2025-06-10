@@ -47,6 +47,7 @@ protocol MLTensorRangeExpression : Sendable
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -54,10 +55,6 @@ protocol MLTensorRangeExpression : Sendable
   A multi-dimensional array of numerical or Boolean scalars tailored to ML use cases, containing methods to perform transformations and mathematical operations efficiently using a ML compute device.
 - [protocol MLTensorScalar](mltensorscalar.md)
   A type that represents the tensor scalar types supported by the framework. Don’t use this type directly.
-- [func pointwiseMin(MLTensor, MLTensor) -> MLTensor](pointwisemin(_:_:).md)
-  Computes the element-wise minimum of two tensors.
-- [func pointwiseMax(MLTensor, MLTensor) -> MLTensor](pointwisemax(_:_:).md)
-  Computes the element-wise maximum of two tensors.
 
 
 ---

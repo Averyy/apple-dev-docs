@@ -1,6 +1,6 @@
 # Graphic
 
-**Framework**: Clockkit
+**Framework**: ClockKit
 
 Display visually rich content on watch faces.
 
@@ -79,4 +79,4 @@ For more information, see [`Exploring Tinted Graphic Complications`](https://dev
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/graphic)*
+*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/graphic)*

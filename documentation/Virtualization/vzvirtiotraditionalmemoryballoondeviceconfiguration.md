@@ -20,8 +20,6 @@ Create a `VZVirtioTraditionalMemoryBalloonDeviceConfiguration` object when you w
 
 > ❗ **Important**:  Create only one `VZVirtioTraditionalMemoryBalloonDeviceConfiguration` object for your virtual machine.
 
- Create only one `VZVirtioTraditionalMemoryBalloonDeviceConfiguration` object for your virtual machine.
-
 ## Topics
 
 ### Creating the Configuration Object

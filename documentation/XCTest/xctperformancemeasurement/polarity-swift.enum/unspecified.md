@@ -1,6 +1,6 @@
 # XCTPerformanceMeasurement.Polarity.unspecified
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 A performance measurement that doesn’t specify whether a larger or smaller value, relative to a set baseline, indicates better performance.

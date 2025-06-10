@@ -37,6 +37,7 @@ An [`NSViewRepresentableContext`](nsviewrepresentablecontext.md) structure conta
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

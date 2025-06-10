@@ -1,6 +1,6 @@
 # com.apple.developer.marketplace.app-installation
 
-**Framework**: Bundleresources  
+**Framework**: Bundle Resources  
 **Kind**: typealias
 
 The entitlement that enables an app to vend other apps as an alternative app marketplace.

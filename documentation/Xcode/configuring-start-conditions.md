@@ -117,4 +117,4 @@ Team members can manually start an Xcode Cloud build for workflows you configure
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-start-conditions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-start-conditions)*

@@ -26,14 +26,6 @@ class func signature(from asset: AVAsset) async throws -> SHSignature
 class func signature(from asset: AVAsset) async throws -> SHSignature
 ``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
 
- You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
-
-```swift
-class func signature(from asset: AVAsset) async throws -> SHSignature
-```
-
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/Swift/calling-objective-c-apis-asynchronously).
-
 The asset you specify can be any type of media that contains audio tracks. If the asset has multiple tracks, the system mixes them into one [`SHSignature`](shsignature.md).
 
 ## Parameters

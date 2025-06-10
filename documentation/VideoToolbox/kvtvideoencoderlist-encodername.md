@@ -1,6 +1,6 @@
 # kVTVideoEncoderList_EncoderName
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 A key for the encoder’s name.

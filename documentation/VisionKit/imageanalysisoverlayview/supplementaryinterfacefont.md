@@ -1,6 +1,6 @@
 # supplementaryInterfaceFont
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The font to use for the supplementary interface.

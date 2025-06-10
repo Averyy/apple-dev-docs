@@ -3,23 +3,16 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
+A dictionary that indicates a [`ServicesBackgroundTasks`](servicesbackgroundtasks.md) configuration created this background task. The dictionary contains properties that identify the configuration and the declaration asset that provided the launchd plist for the task.
+
 **Availability**:
-- macOS 14.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- macOS 15.0+
 
 ## Declaration
 
 ```swift
 object StatusServicesBackgroundTaskBackgroundTask_Launchd_DeviceManagementObject
 ```
-
-## See Also
-
-- [object StatusServicesBackgroundTaskBackgroundTaskObject](statusservicesbackgroundtaskbackgroundtaskobject.md)
-  A status report of a background task.
-- [object StatusServicesBackgroundTaskBackgroundTask_LaunchdObject](statusservicesbackgroundtaskbackgroundtask_launchdobject.md)
-  A status report of a background task that’s based on a launch daemon.
 
 
 ---

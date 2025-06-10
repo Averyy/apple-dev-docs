@@ -6,10 +6,10 @@
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -26,8 +26,6 @@ init(_ value: String)
   Creates an instance from a string interpolation.
 - [AppShortcutPhrase.StringInterpolation](appshortcutphrase/stringinterpolation.md)
   The type each segment of a string literal containing interpolations should be appended to.
-- [enum AppShortcutPhraseToken](appshortcutphrasetoken.md)
-  Dynamic values you can include in the spoken phrases that run your shortcut.
 
 
 ---

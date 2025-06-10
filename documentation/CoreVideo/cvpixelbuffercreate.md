@@ -32,8 +32,6 @@ Use [`CVPixelBufferRelease`](cvpixelbufferrelease.md) to release ownership of th
 
 > 💡 **Tip**:  If you need to create and release multiple pixel buffers, use `CVPixelBufferPool` to create a pixel buffer pool that efficiently reuses pixel buffer memory.
 
- If you need to create and release multiple pixel buffers, use `CVPixelBufferPool` to create a pixel buffer pool that efficiently reuses pixel buffer memory.
-
 ## Parameters
 
 - `allocator`: The allocator to use for creating the buffer pool. Pass   for the   parameter to use the default allocator. See   for additional values you can use.

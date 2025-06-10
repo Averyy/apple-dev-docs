@@ -62,7 +62,7 @@ Handling this event isn’t the only thing your app needs the main thread for. M
 
 In each of these situations, your app needs to make updates to the user interface, but doing so isn’t thread-safe, meaning the system can’t modify the UI from multiple threads at the same time. Instead, it needs to serialize and execute the updates to the UI one after the other. For this reason, there’s only one thread that can make UI updates: the main thread. In Swift, using the [`MainActor`](https://developer.apple.com/documentation/Swift/MainActor) ensures that your code executes on the main thread. It also helps the compiler prevent any code outside the main thread from making changes to the user interface.
 
-Because there’s only one thread that can make changes to the UI, you don’t want to block it waiting for someone to press the Send button. So, the system needs need a way to schedule work to execute on the main thread, and then check for that work and execute it whenever it comes in — whether it’s handling an event, processing the result of a network request, or reacting to a timer firing. This scheduling and sequential processing of various work items is the responsibility of the main thread’s [`NSRunLoop`](https://developer.apple.com/documentation/foundation/nsrunloop).
+Because there’s only one thread that can make changes to the UI, you don’t want to block it waiting for someone to press the Send button. So, the system needs need a way to schedule work to execute on the main thread, and then check for that work and execute it whenever it comes in — whether it’s handling an event, processing the result of a network request, or reacting to a timer firing. This scheduling and sequential processing of various work items is the responsibility of the main thread’s [`RunLoop`](https://developer.apple.com/documentation/Foundation/RunLoop).
 
 ##### Understand the Main Run Loop
 
@@ -92,7 +92,7 @@ Any work that the system needs to execute on the main thread, like updating the 
 
 - Incoming user events
 - A callback of a timer scheduled on the run loop (when a timer fires, it submits its callback to run on the run loop.)
-- Work on the main [`DispatchQueue`](https://developer.apple.com/documentation/Dispatch/DispatchQueue), the main [`NSOperationQueue`](https://developer.apple.com/documentation/foundation/nsoperationqueue), or the main actor
+- Work on the main [`DispatchQueue`](https://developer.apple.com/documentation/Dispatch/DispatchQueue), the main [`OperationQueue`](https://developer.apple.com/documentation/Foundation/OperationQueue), or the main actor
 
 Although the run loop performs work items that the system submits to it on the main thread, it isn’t the same as the main dispatch queue. The main dispatch queue, the main `NSOperationQueue`, the main actor, and the main run loop are all ways to submit work to run on the main thread, but for the main thread specifically, the run loop is the foundation of everything.
 
@@ -138,6 +138,8 @@ Hang reporting only measures the time on the main run loop. The time necessary f
   Create a user experience that feels responsive by removing hangs and hitches from your app.
 - [Understanding user interface responsiveness](understanding-user-interface-responsiveness.md)
   Make your app more responsive by examining the event-handling and rendering loop.
+- [Understanding and improving SwiftUI performance](understanding-and-improving-swiftui-performance.md)
+  Identify and address long-running view updates, and reduce the frequency of updates.
 - [Understanding hitches in your app](understanding-hitches-in-your-app.md)
   Determine the cause of interruptions in motion by examining the render loop.
 - [Diagnosing performance issues early](diagnosing-performance-issues-early.md)
@@ -152,4 +154,4 @@ Hang reporting only measures the time on the main run loop. The time necessary f
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/understanding-hangs-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/understanding-hangs-in-your-app)*

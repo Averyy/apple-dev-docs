@@ -12,7 +12,7 @@ Returns an array of all the Metal GPU devices in the system and registers a noti
 ## Declaration
 
 ```swift
-func MTLCopyAllDevicesWithObserver(handler: @escaping MTLDeviceNotificationHandler) -> (devices: [any MTLDevice], observer: NSObject)
+func MTLCopyAllDevicesWithObserver(handler: @escaping (any MTLDevice, MTLDeviceNotificationName) -> Void) -> (devices: [any MTLDevice], observer: NSObject)
 ```
 
 #### Return Value

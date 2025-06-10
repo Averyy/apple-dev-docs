@@ -1,6 +1,6 @@
 # Creating controls to perform actions across the system
 
-**Framework**: Widgetkit
+**Framework**: WidgetKit
 
 Perform your app’s actions from Control Center, the Lock Screen, and the Action button.
 
@@ -174,12 +174,12 @@ struct MyControlsAndWidgetsBundle: WidgetBundle {
   Customize the way controls display across the system and offer people the ability to configure them.
 - [struct ControlWidgetToggle](controlwidgettoggle.md)
   A control template representing a toggle.
-- [struct ControlWidgetButton](controlwidgetbutton.md)
-  A control template representing a button.
 - [class ControlCenter](controlcenter.md)
   An object that contains a list of user-configured controls and is used for reloading controls.
+- [struct ControlWidgetButton](controlwidgetbutton.md)
+  A control template representing a button.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/WidgetKit/creating-controls-to-perform-actions-across-the-system)*
+*[View on Apple Developer](https://developer.apple.com/documentation/widgetkit/creating-controls-to-perform-actions-across-the-system)*

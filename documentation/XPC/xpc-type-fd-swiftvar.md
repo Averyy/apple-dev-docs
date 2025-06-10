@@ -1,6 +1,6 @@
 # XPC_TYPE_FD
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A type that represents a POSIX file descriptor.

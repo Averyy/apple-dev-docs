@@ -1,6 +1,6 @@
 # pickerDidFocus(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Called to let you know that the specified picker is now receiving input from the Digital Crown.

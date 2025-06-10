@@ -1,6 +1,6 @@
 # es_event_get_task_t
 
-**Framework**: Endpointsecurity  
+**Framework**: Endpoint Security  
 **Kind**: struct
 
 A type for an event that indicates the retrieval of a task’s control port.

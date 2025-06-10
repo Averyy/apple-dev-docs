@@ -72,6 +72,10 @@ If you use middleware in your games, follow their guidelines on testing multiple
 
 - [Managing your game window for Metal in macOS](managing-your-game-window-for-metal-in-macos.md)
   Set up a window and view for optimally displaying your Metal content.
+- [Onscreen Presentation](onscreen-presentation.md)
+  Show the output from a GPU’s rendering pass to the user in your app.
+- [HDR Content](hdr-content.md)
+  Take advantage of high dynamic range to present more vibrant colors in your apps and games.
 
 
 ---

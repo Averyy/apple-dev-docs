@@ -1,14 +1,14 @@
 # SemanticTags
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that contains machine-readable metadata the system uses to offer a pass and suggest related actions.
 
 **Availability**:
 - iOS 12.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 12.0+
+- watchOS 5.0+
 
 ## Declaration
 
@@ -22,6 +22,10 @@ object SemanticTags
 
 ## See Also
 
+- [Supporting semantic tags in Wallet passes](supporting-semantic-tags-in-wallet-passes.md)
+  Enable the system to offer suggestions for actions related to passes by adding machine-readable metadata.
+- [object SemanticTagType](semantictagtype.md)
+  A compilation of data object types for semantic tags.
 - [Supporting semantic tags in Wallet passes](supporting-semantic-tags-in-wallet-passes.md)
   Enable the system to offer suggestions for actions related to passes by adding machine-readable metadata.
 - [object SemanticTagType](semantictagtype.md)

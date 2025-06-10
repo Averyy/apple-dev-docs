@@ -1,6 +1,6 @@
 # CLAMP_TO_EDGE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

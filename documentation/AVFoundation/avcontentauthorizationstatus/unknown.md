@@ -6,7 +6,7 @@
 The content authorization content request hasn’t completed.
 
 **Availability**:
-- macOS ?+
+- macOS 10.7+
 
 ## Declaration
 

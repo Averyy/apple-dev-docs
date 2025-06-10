@@ -1,6 +1,6 @@
 # forwardListCount
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The number of items that follow the current item in the back-forward list.

@@ -1,6 +1,6 @@
 # setSelectionRange(_:end:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 **Availability**:

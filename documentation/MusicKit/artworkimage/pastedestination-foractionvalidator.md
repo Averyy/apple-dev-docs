@@ -1,6 +1,6 @@
 # pasteDestination(for:action:validator:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Specifies an action that adds validated items to a view in response to the system’s Paste command.

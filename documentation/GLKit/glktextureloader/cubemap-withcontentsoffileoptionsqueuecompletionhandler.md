@@ -34,7 +34,7 @@ This method is identical to [`cubeMap(withContentsOfFile:options:)`](glktexturel
   Loads a cube map texture image from a single file and creates a new texture from the data.
 - [class func cubeMap(withContentsOfFiles: [Any], options: [String : NSNumber]?) throws -> GLKTextureInfo](glktextureloader/cubemap(withcontentsoffiles:options:).md)
   Loads a cube map texture image from a series of files and creates a new texture from the data.
-- [func cubeMap(withContentsOfFiles: [Any], options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: GLKTextureLoaderCallback)](glktextureloader/cubemap(withcontentsoffiles:options:queue:completionhandler:).md)
+- [func cubeMap(withContentsOfFiles: [Any], options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: (GLKTextureInfo?, (any Error)?) -> Void)](glktextureloader/cubemap(withcontentsoffiles:options:queue:completionhandler:).md)
   Asynchronously loads a cube map texture image from a series of files and creates a new texture from the data.
 
 

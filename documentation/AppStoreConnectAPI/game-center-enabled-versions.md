@@ -2,7 +2,7 @@
 
 **Framework**: App Store Connect API
 
-Manage compatible game center-enabled versions.
+Manage compatible Game Center-enabled versions.
 
 #### Overview
 
@@ -28,6 +28,7 @@ Use a `gameCenterEnabledVersions` resource to indicate which versions of your ap
   A response body that contains a list of related resource IDs.
 - [object GameCenterEnabledVersionsResponse](gamecenterenabledversionsresponse.md)
   A response that contains a list of Game Center Enabled Version resources.
+- [object AppGameCenterEnabledVersionsLinkagesResponse](appgamecenterenabledversionslinkagesresponse.md)
 
 
 ---

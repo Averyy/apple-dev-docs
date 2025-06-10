@@ -46,6 +46,7 @@ Use the [`buttonBorderShape(_:)`](view/buttonbordershape(_:).md) view modifier t
 - [Equatable](../Swift/Equatable.md)
 - [InsettableShape](insettableshape.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Shape](shape.md)
 - [View](view.md)
 
@@ -65,6 +66,7 @@ Use the [`buttonBorderShape(_:)`](view/buttonbordershape(_:).md) view modifier t
   A value that describes the purpose of a button.
 - [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
+- [struct ButtonSizing](buttonsizing.md)
 
 
 ---

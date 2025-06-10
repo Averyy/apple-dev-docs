@@ -22,8 +22,8 @@ let SKErrorDomain: String
 
 ## Mentions
 
-- [Processing a transaction](processing-a-transaction.md)
 - [Handling errors](handling-errors.md)
+- [Processing a transaction](processing-a-transaction.md)
 
 ## See Also
 

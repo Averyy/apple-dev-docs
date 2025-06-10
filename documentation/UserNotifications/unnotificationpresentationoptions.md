@@ -1,6 +1,6 @@
 # UNNotificationPresentationOptions
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: struct
 
 Constants indicating how to present a notification in a foreground app.
@@ -46,6 +46,7 @@ struct UNNotificationPresentationOptions
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Initializes a new instance with a call stack from the executing thread and no location.

@@ -1,6 +1,6 @@
 # clearUserGesture(in:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called by the app to clear a user gesture in a specific tab.

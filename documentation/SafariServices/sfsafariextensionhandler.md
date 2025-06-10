@@ -16,8 +16,8 @@ class SFSafariExtensionHandler
 
 ## Mentions
 
-- [Building a Safari app extension](building-a-safari-app-extension.md)
 - [Adjusting settings for contextual menu items](adjusting-settings-for-contextual-menu-items.md)
+- [Building a Safari app extension](building-a-safari-app-extension.md)
 
 ## Relationships
 

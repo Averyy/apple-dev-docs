@@ -9,7 +9,7 @@ The version of Apple Pay available in macOS 10.14.1 and iOS 12.1.
 New features include:
 
 - Added support for a zero [`total`](applepaypaymentrequest/total.md) in [`ApplePayPaymentRequest`](applepaypaymentrequest.md). In versions of Apple Pay JS prior to version 4, the amount of the total must be greater than zero. Check for version availability using [`supportsVersion`](applepaysession/supportsversion.md) before setting a zero amount.
-- Added support for new Apple Pay buttons including `book`, `subscribe`, and `check-out`. See [`Displaying Apple Pay Buttons Using CSS`](https://developer.apple.com/documentation/apple_pay_on_the_web/displaying_apple_pay_buttons_using_css) for more information.
+- Added support for new Apple Pay buttons including `book`, `subscribe`, and `check-out`. See [`Displaying Apple Pay Buttons Using CSS`](displaying-apple-pay-buttons-using-css.md) for more information.
 - Added the following supported networks: `cartesBancaires`, `eftpos`, `electron`, `maestro`, and `vPay`. See [`supportedNetworks`](applepayrequest/supportednetworks.md) for more information.
 
 ## See Also

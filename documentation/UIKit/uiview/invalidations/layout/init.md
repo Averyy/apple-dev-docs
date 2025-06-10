@@ -1,0 +1,25 @@
+# init()
+
+**Framework**: UIKit  
+**Kind**: init
+
+Creates a layout invalidation structure.
+
+**Availability**:
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst ?+
+- tvOS 15.0+
+- visionOS ?+
+- Swift 5.1+
+
+## Declaration
+
+```swift
+init()
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uiview/invalidations/layout/init())*

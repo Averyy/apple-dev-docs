@@ -10,8 +10,6 @@ When you activate a system extension from your app, the system requires your ext
 
 > ❗ **Important**:  Always remember to reenable all validation checks and perform additional testing before shipping your system extension to users. Disabling validation checks is only appropriate during the development process on your local system.
 
- Always remember to reenable all validation checks and perform additional testing before shipping your system extension to users. Disabling validation checks is only appropriate during the development process on your local system.
-
 ##### Enable Activation From Any Directory
 
 You must place all system extensions in the `Contents/Library/SystemExtensions` directory of your app bundle, and the app itself must be installed in one of the system’s `Applications` directories. To allow development of your app outside of these directories, use the `systemextensionsctl` command-line tool to enable developer mode. When in developer mode, the system doesn’t check the location of your system extension prior to loading it, so you can load it from anywhere in the file system. To enable developer mode, open a Terminal window and execute the following command:

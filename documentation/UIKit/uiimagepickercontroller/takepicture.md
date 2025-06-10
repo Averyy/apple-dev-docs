@@ -23,7 +23,7 @@ Use this method in conjunction with a custom overlay view to initiate the progra
 
 Calling this method while an image is being captured has no effect. You must wait until the associated delegate object receives an [`imagePickerController(_:didFinishPickingMediaWithInfo:)`](uiimagepickercontrollerdelegate/imagepickercontroller(_:didfinishpickingmediawithinfo:).md) message before you can capture another picture.
 
-Calling this method when the source type of the image picker is set to a value other than [`UIImagePickerController.SourceType.camera`](uiimagepickercontroller/sourcetype-swift.enum/camera.md) results in the throwing of an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/1415426-invalidargumentexception) exception.
+Calling this method when the source type of the image picker is set to a value other than [`UIImagePickerController.SourceType.camera`](uiimagepickercontroller/sourcetype-swift.enum/camera.md) results in the throwing of an [`invalidArgumentException`](https://developer.apple.com/documentation/Foundation/NSExceptionName/invalidArgumentException) exception.
 
 ## See Also
 

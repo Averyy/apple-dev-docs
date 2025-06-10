@@ -1,6 +1,6 @@
 # max()
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns the maximum element in the sequence.

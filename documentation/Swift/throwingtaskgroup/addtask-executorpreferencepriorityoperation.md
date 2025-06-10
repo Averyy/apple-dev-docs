@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Adds a child task to the group and enqueue it on the specified executor.
+Adds a child task to the group.
 
 **Availability**:
 - iOS 18.0+
@@ -17,13 +17,17 @@ Adds a child task to the group and enqueue it on the specified executor.
 ## Declaration
 
 ```swift
-mutating func addTask(executorPreference taskExecutor: (any TaskExecutor)?, priority: TaskPriority? = nil, operation: sending @escaping @isolated(any) () async throws -> ChildTaskResult)
+mutating func addTask(executorPreference taskExecutor: (any TaskExecutor)? = nil, priority: TaskPriority? = nil, operation: sending @escaping @isolated(any) () async throws -> ChildTaskResult)
 ```
+
+#### Discussion
+
+This method doesn’t throw an error, even if the child task does. Instead, the corresponding call to `ThrowingTaskGroup.next()` rethrows that error.
 
 ## Parameters
 
-- `taskExecutor`: The task executor that the child task should be started on and keep using.   If   is passed explicitly, that parent task’s executor preference (if any),   will be ignored. In order to inherit the parent task’s executor preference   invoke   without passing a value to the   parameter,   and it will be inherited automatically.
-- `priority`: The priority of the operation task.   Omit this parameter or pass    to set the child task’s priority to the priority of the group.
+- `taskExecutor`: 
+- `priority`: The priority of the operation task.   Omit this parameter or pass   to inherit the task group’s base priority.   Omit this parameter or pass    to set the child task’s priority to the priority of the group.
 - `operation`: The operation to execute as part of the task group.
 
 

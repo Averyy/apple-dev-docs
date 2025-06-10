@@ -1,6 +1,6 @@
 # rect
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The portion of your web view to capture, specified as a rectangle in the view’s coordinate system.

@@ -1,6 +1,6 @@
 # gust
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A sudden increase in wind speed due to friction, wind shear, or by heating.

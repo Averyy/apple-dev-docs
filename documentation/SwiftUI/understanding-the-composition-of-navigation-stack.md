@@ -1,6 +1,6 @@
 # Understanding the navigation stack
 
-**Framework**: Swiftui
+**Framework**: SwiftUI
 
 Learn about the navigation stack, links, and how to manage navigation types in your app’s structure.
 
@@ -521,4 +521,4 @@ To learn more about navigation stacks, links and paths, see [`Bringing robust na
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/understanding-the-composition-of-navigation-stack)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/understanding-the-composition-of-navigation-stack)*

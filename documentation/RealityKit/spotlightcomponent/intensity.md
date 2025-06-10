@@ -10,6 +10,7 @@ The intensity of the spotlight measured in lumen.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -32,8 +33,6 @@ For more information on how the `intensity` and [`attenuationRadius`](spotlightc
   The outer angle of the spotlight in degrees.
 - [var attenuationRadius: Float](spotlightcomponent/attenuationradius.md)
   The distance from the light source where its intensity reaches zero.
-- [var attenuationFalloffExponent: Float](spotlightcomponent/attenuationfalloffexponent.md)
-  The exponent value for the light’s intensity falloff-transition curve.
 
 
 ---

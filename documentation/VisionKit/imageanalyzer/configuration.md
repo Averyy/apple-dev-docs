@@ -1,6 +1,6 @@
 # ImageAnalyzer.Configuration
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: struct
 
 A configuration that specifies the types of items and locales that the image analyzer recognizes.

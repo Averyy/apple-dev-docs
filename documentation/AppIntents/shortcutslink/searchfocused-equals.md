@@ -8,7 +8,7 @@ Modifies this view by binding the focus state of the search field associated wit
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 - macOS 15.0+
 - visionOS 2.0+
 

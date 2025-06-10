@@ -16,8 +16,6 @@ Use this key in a macOS app that accesses the user’s location information. In 
 
 > ❗ **Important**:  This key is required if your macOS app uses APIs that access the user’s location information.
 
- This key is required if your macOS app uses APIs that access the user’s location information.
-
 ## See Also
 
 - [Choosing the  Location Services Authorization to Request](choosing-the-location-services-authorization-to-request.md)

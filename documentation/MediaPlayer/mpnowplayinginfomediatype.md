@@ -42,6 +42,7 @@ enum MPNowPlayingInfoMediaType
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -49,6 +50,8 @@ enum MPNowPlayingInfoMediaType
   Returns the singleton Now Playing info center.
 - [var nowPlayingInfo: [String : Any]?](mpnowplayinginfocenter/nowplayinginfo.md)
   The current Now Playing information for the default Now Playing info center.
+- [class var supportedAnimatedArtworkKeys: [String]](mpnowplayinginfocenter/supportedanimatedartworkkeys.md)
+  Keys related to animated artwork that are supported by the current platform.
 
 
 ---

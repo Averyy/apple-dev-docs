@@ -1068,7 +1068,7 @@ Xcode 16 includes SDKs for iOS 18, iPadOS 18, tvOS 18, watchOS 11, macOS Sequoia
 
 ## See Also
 
-- [Xcode 16.4 Release Notes](xcode-16_4-release-notes.md)
+- [Xcode 16.4 Beta Release Notes](xcode-16_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [Xcode 16.3 Release Notes](xcode-16_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

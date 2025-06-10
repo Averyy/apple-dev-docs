@@ -28,8 +28,6 @@ A signpost ID that you use to match an interval’s signposts.
 
 > ⚠️ **Warning**:  Don’t use this method to generate an identifier for a signposted interval that crosses process boundaries. Instead, use the [`makeSignpostID()`](ossignposter/makesignpostid().md) method.
 
- Don’t use this method to generate an identifier for a signposted interval that crosses process boundaries. Instead, use the [`makeSignpostID()`](ossignposter/makesignpostid().md) method.
-
 The signposter uses a signpost ID to pair the beginning and the end of a signposted interval, which is necessary because multiple intervals with the same configuration and scope can be in-flight simultaneously.
 
 Use this method instead of [`init(log:object:)`](ossignpostid/init(log:object:).md).

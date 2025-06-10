@@ -1,6 +1,6 @@
 # kCTFontDownloadedAttribute
 
-**Framework**: Coretext  
+**Framework**: Core Text  
 **Kind**: var
 
 The download state.
@@ -47,4 +47,4 @@ The value associated with this key is a doc://com.apple.documentation/documentat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreText/kctfontdownloadedattribute)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coretext/kctfontdownloadedattribute)*

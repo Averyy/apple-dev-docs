@@ -10,6 +10,7 @@ A material that makes the mesh part a portal to a different world.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -68,14 +69,13 @@ See [`PortalComponent`](portalcomponent.md) for example usage.
   An alias for the cull mode object that’s appropriate for this material class.
 - [PortalMaterial.TriangleFillMode](portalmaterial/trianglefillmode-swift.typealias.md)
   An alias for the triangle fill mode object that’s appropriate for this material class.
-### Default Implementations
-- [Material Implementations](portalmaterial/material-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Material](material.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -26,7 +26,7 @@ func fileDialogBrowserOptions(_ options: FileDialogBrowserOptions) -> some View
 ## See Also
 
 - [func fileDialogConfirmationLabel(_:)](view/filedialogconfirmationlabel(_:).md)
-  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with custom text as a confirmation button label.
+  On macOS, configures the the `fileExporter`, `fileImporter`, or `fileMover` with a custom confirmation button label.
 - [func fileDialogCustomizationID(String) -> some View](view/filedialogcustomizationid(_:).md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` to persist and restore the file dialog configuration.
 - [func fileDialogDefaultDirectory(URL?) -> some View](view/filedialogdefaultdirectory(_:).md)

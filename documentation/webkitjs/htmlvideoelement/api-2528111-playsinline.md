@@ -1,6 +1,6 @@
 # playsInline
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A Boolean value indicating whether the video plays inline.

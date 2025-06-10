@@ -1,6 +1,6 @@
 # userContentController(_:didReceive:replyHandler:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method  
 **Required**: Yes
 

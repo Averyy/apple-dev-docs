@@ -1,6 +1,6 @@
 # ignorePaths
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates that the host components should be ignored while matching.

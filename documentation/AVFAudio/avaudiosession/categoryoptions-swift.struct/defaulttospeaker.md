@@ -1,6 +1,6 @@
 # defaultToSpeaker
 
-**Framework**: Avfaudio  
+**Framework**: AVFAudio  
 **Kind**: property
 
 An option that determines whether audio from the session defaults to the built-in speaker instead of the receiver.

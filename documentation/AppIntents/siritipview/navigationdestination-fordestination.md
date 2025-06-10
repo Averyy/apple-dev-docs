@@ -10,7 +10,7 @@ Associates a destination view with a presented data type for use within a naviga
 - iPadOS 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration

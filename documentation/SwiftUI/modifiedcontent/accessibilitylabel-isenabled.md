@@ -18,7 +18,7 @@ Adds a label to the view that describes its contents.
 
 ```swift
 nonisolated
-func accessibilityLabel(_ label: Text, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
+func accessibilityLabel(_ label: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
 ```
 
 #### Discussion

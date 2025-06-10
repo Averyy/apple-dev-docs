@@ -1,6 +1,6 @@
 # Loading future timeline events
 
-**Framework**: Clockkit
+**Framework**: ClockKit
 
 Preserve battery life and improve performance on the watch by providing a timeline with expected data and updates.
 
@@ -22,7 +22,7 @@ func getTimelineEndDate(for complication: CLKComplication, withHandler handler: 
 
 If your app can’t provide future data, pass `nil` to the handler.
 
-> **Note**:  In watchOS 6 and earlier the system sets the end date to [`distantFuture`](https://developer.apple.com/documentation/foundation/nsdate/1415385-distantfuture) if you passed `nil` to [`getTimelineEndDate(for:withHandler:)`](clkcomplicationdatasource/gettimelineenddate(for:withhandler:).md). To indicate that your app can batch load future timeline entries, implement your data source’s [`getSupportedTimeTravelDirections(for:withHandler:)`](clkcomplicationdatasource/getsupportedtimetraveldirections(for:withhandler:).md) method, and pass [`forward`](clkcomplicationtimetraveldirections/forward.md) to the handler.
+> **Note**:  In watchOS 6 and earlier the system sets the end date to [`distantFuture`](https://developer.apple.com/documentation/Foundation/NSDate/distantFuture) if you passed `nil` to [`getTimelineEndDate(for:withHandler:)`](clkcomplicationdatasource/gettimelineenddate(for:withhandler:).md). To indicate that your app can batch load future timeline entries, implement your data source’s [`getSupportedTimeTravelDirections(for:withHandler:)`](clkcomplicationdatasource/getsupportedtimetraveldirections(for:withhandler:).md) method, and pass [`forward`](clkcomplicationtimetraveldirections/forward.md) to the handler.
 
 Next, implement your data source’s [`getTimelineEntries(for:after:limit:withHandler:)`](clkcomplicationdatasource/gettimelineentries(for:after:limit:withhandler:).md) method.
 
@@ -60,4 +60,4 @@ When constructing your timeline entries, choose dates that make sense based on w
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClockKit/loading-future-timeline-events)*
+*[View on Apple Developer](https://developer.apple.com/documentation/clockkit/loading-future-timeline-events)*

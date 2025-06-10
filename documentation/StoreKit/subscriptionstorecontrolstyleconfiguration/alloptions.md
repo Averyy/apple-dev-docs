@@ -1,6 +1,6 @@
 # allOptions
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: property
 
 All subscription options in the subscription group.

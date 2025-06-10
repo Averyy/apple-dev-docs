@@ -1,4 +1,4 @@
-# Read the Declaration Document for an App Encryption Declaration
+# GET /v1/appEncryptionDeclarations/{id}/appEncryptionDeclarationDocument
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -6,7 +6,7 @@
 Read the associate document for a specific App Encryption Declaration.
 
 **Availability**:
-- App Store Connect API 2.2+
+- App Store Connect API 3.6+
 
 #### Discussion
 
@@ -22,6 +22,7 @@ Read the associate document for a specific App Encryption Declaration.
   Get the app information from a specific app encryption declaration.
 - [Read a specific App Encryption Declaration Document](get-v1-appencryptiondeclarationdocuments-_id_.md)
   Get detailed information about a specified App Encryption Declaration document.
+- [GET /v1/appEncryptionDeclarations/{id}/relationships/appEncryptionDeclarationDocument](get-v1-appencryptiondeclarations-_id_-relationships-appencryptiondeclarationdocument.md)
 
 
 ---

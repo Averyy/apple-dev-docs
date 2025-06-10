@@ -133,4 +133,4 @@ file <PathToLibrary>/libMyLibrary.a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/creating-a-multi-platform-binary-framework-bundle)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle)*

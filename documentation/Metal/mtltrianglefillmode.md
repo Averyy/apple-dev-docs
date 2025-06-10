@@ -37,11 +37,16 @@ enum MTLTriangleFillMode
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [protocol MTL4RenderCommandEncoder](mtl4rendercommandencoder.md)
+  Encodes a render pass into a command buffer, including all its draw calls and configuration.
 - [protocol MTLRenderCommandEncoder](mtlrendercommandencoder.md)
   An interface that encodes a render pass into a command buffer, including all its draw calls and configuration.
+- [struct MTL4RenderEncoderOptions](mtl4renderencoderoptions.md)
+  Custom render pass options you specify at encoder creation time.
 - [enum MTLWinding](mtlwinding.md)
   The vertex winding rule that determines a front-facing primitive.
 - [enum MTLCullMode](mtlcullmode.md)
@@ -54,6 +59,8 @@ enum MTLTriangleFillMode
   The mode that determines how to deal with fragments outside of the near or far planes.
 - [enum MTLVisibilityResultMode](mtlvisibilityresultmode.md)
   The mode that determines what, if anything, the GPU writes to the results buffer, after the GPU executes the render pass.
+- [enum MTLVisibilityResultType](mtlvisibilityresulttype.md)
+  This enumeration controls if Metal accumulates visibility results between render encoders or resets them.
 
 
 ---

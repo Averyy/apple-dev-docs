@@ -8,7 +8,7 @@ Specifies the default placement for the tabs in a tab view using the adaptable s
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # content(forType:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Searches a suggestion’s items for information of the given type.

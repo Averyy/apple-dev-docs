@@ -33,6 +33,8 @@ object AppEncryptionDeclarationsResponse
 - [object AppEncryptionDeclarationWithoutIncludesResponse](appencryptiondeclarationwithoutincludesresponse.md)
 - [type AppEncryptionDeclarationState](appencryptiondeclarationstate.md)
   Strings that represent the review or acceptance status of an app encryption declaration submitted to Apple.
+- [object AppEncryptionDeclarationAppEncryptionDeclarationDocumentLinkageResponse](appencryptiondeclarationappencryptiondeclarationdocumentlinkageresponse.md)
+- [object AppEncryptionDeclarationAppLinkageResponse](appencryptiondeclarationapplinkageresponse.md)
 
 
 ---

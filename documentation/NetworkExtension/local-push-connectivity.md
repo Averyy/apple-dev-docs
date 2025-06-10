@@ -15,8 +15,6 @@ Local Push Connectivity has two components:
 
 > ❗ **Important**:  To use the Local Push Connectivity API, your app must have the [`Network Extensions Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.networkextension) with the `app-push-provider` value. Request this entitlement from the [`Entitlement Request Page`](https://developer.apple.comhttps://developer.apple.com/contact/request/local-push-connectivity). After you receive the entitlement, apply it to both your app target and your provider extension target.
 
- To use the Local Push Connectivity API, your app must have the [`Network Extensions Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.networkextension) with the `app-push-provider` value. Request this entitlement from the [`Entitlement Request Page`](https://developer.apple.comhttps://developer.apple.com/contact/request/local-push-connectivity). After you receive the entitlement, apply it to both your app target and your provider extension target.
-
 ##### Supporting Apns and Local Push Connectivity in One App
 
 An app can use both Local Push Connectivity and Apple Push Notification Service. Typically, you use Local Push Connectivity in a restricted network environment, and use APNs in an unrestricted network. Think of Local Push Connectivity as your private network replacement for APNs, and therefore limit your functionality within the push provider extension to delivering local notifications and CallKit alerts to users.

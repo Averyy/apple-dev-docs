@@ -1,6 +1,6 @@
 # currentISO
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A constant to indicate not to specify a new ISO value, and instead set it to its current value.

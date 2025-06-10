@@ -15,8 +15,6 @@ The body of the POST contains the data elements described in the [`responseBodyV
 
 > ❗ **Important**:  The [`App Store Server Notifications V1`](app-store-server-notifications-v1.md) endpoint and version 1 notifications, [`notification_type`](notification_type.md), are deprecated. Instead, implement the [`App Store Server Notifications V2`](app-store-server-notifications-v2.md) endpoint on your server to receive version 2 notifications.
 
- The [`App Store Server Notifications V1`](app-store-server-notifications-v1.md) endpoint and version 1 notifications, [`notification_type`](notification_type.md), are deprecated. Instead, implement the [`App Store Server Notifications V2`](app-store-server-notifications-v2.md) endpoint on your server to receive version 2 notifications.
-
 Use the notification type along with the transaction and subscription renewal information to update a user’s service or present promotional offers according to your business logic. For information on handling notifications that contain an external purchase token, see [`externalPurchaseToken`](externalpurchasetoken.md).
 
 ## See Also

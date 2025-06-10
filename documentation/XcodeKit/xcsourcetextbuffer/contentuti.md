@@ -1,6 +1,6 @@
 # contentUTI
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The Uniform Type Identifier (UTI) of the content in the buffer.

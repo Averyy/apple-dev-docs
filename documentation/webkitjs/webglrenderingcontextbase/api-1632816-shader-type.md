@@ -1,6 +1,6 @@
 # SHADER_TYPE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

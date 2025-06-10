@@ -1,6 +1,6 @@
 # confirmationDialog(_:isPresented:titleVisibility:actions:message:)
 
-**Framework**: Journalingsuggestions  
+**Framework**: Journaling Suggestions  
 **Kind**: method
 
 Presents a confirmation dialog with a message when a given condition is true, using a string variable for the title.

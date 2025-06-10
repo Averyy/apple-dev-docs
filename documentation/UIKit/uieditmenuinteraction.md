@@ -1,6 +1,6 @@
 # UIEditMenuInteraction
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: class
 
 An interaction that provides edit operations using a menu.
@@ -112,4 +112,4 @@ By default, an edit menu interaction generates a menu that includes commands for
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/uieditmenuinteraction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uieditmenuinteraction)*

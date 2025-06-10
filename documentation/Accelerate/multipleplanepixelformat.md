@@ -82,14 +82,14 @@ let outputImage = interleaved
 
 ## See Also
 
-- [protocol PixelFormat](pixelformat.md)
-  A pixel buffer pixel format.
-- [protocol StaticPixelFormat](staticpixelformat.md)
-  A pixel format that’s known at compile time.
 - [protocol InitializableFromCGImage](initializablefromcgimage.md)
   A pixel format that supports initialization from a Core Graphics image.
+- [protocol PixelFormat](pixelformat.md)
+  A pixel buffer pixel format.
 - [protocol SinglePlanePixelFormat](singleplanepixelformat.md)
   A pixel format that contains a single underlying vImage buffer.
+- [protocol StaticPixelFormat](staticpixelformat.md)
+  A pixel format that’s known at compile time.
 
 
 ---

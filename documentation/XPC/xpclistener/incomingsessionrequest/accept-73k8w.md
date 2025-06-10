@@ -1,13 +1,17 @@
 # accept(_:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: method
 
 Accepts an incoming session request from a client, delegating incoming encodable messages to a separate object.
 
 **Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
+- tvOS 17.0+
+- watchOS 10.0+
 
 ## Declaration
 

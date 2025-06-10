@@ -1,6 +1,6 @@
 # play()
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Begins playback of the current item.

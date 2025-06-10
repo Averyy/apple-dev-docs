@@ -1,6 +1,6 @@
 # activeInteractionTypes
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The types of interactions that a person actively performs.

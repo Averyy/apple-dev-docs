@@ -1,6 +1,6 @@
 # rightClick()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a Control-click event at the coordinate.

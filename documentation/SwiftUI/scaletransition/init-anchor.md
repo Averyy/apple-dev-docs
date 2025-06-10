@@ -17,8 +17,7 @@ Creates a transition that scales the view by the specified amount.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init(_ scale: Double, anchor: UnitPoint = .center)
+init(_ scale: Double, anchor: UnitPoint = .center)
 ```
 
 ## See Also

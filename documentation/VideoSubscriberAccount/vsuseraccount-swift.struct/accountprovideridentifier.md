@@ -1,6 +1,6 @@
 # accountProviderIdentifier
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: property
 
 A string that uniquely identifies a provider known to Apple that provides the user account.

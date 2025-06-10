@@ -1,6 +1,6 @@
 # Requesting an Apple Pay payment session
 
-**Framework**: Applepayontheweb
+**Framework**: Apple Pay on the Web
 
 Request a valid session from the Apple Pay server.
 
@@ -14,13 +14,13 @@ Your server posts a request using mutual TLS (mTLS) by calling the Apple Pay ser
 
 The endpoint returns an opaque Apple Pay session object for Apple Pay on the web, Apple Pay on macOS, and for Apple Pay in Apple Messages for Business.
 
-For Apple Pay on the web, you can also use the endpoint `POST https://<validation URL>/paymentSession` with a fully qualified validation URL that you receive in [`onvalidatemerchant`](applepaysession/onvalidatemerchant.md). Be sure to allow all of the domains listed in [`Setting Up Your Server`](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server).
+For Apple Pay on the web, you can also use the endpoint `POST https://<validation URL>/paymentSession` with a fully qualified validation URL that you receive in [`onvalidatemerchant`](applepaysession/onvalidatemerchant.md). Be sure to allow all of the domains listed in [`Setting Up Your Server`](setting-up-your-server.md).
 
-> ❗ **Important**:  Ensure that your server accesses only the validation URLs provided by Apple in [`Setting Up Your Server`](https://developer.apple.com/documentation/apple_pay_on_the_web/setting_up_your_server), and fails for other URLs. It’s a best practice to use a strict allow list for the validation URLs. You must send the payment session request from your server; never request the session from the client.
+> ❗ **Important**:  Ensure that your server accesses only the validation URLs provided by Apple in [`Setting Up Your Server`](setting-up-your-server.md), and fails for other URLs. It’s a best practice to use a strict allow list for the validation URLs. You must send the payment session request from your server; never request the session from the client.
 
 ##### Provide Request Parameters
 
-Use the merchant identity certificate associated with your merchant ID in the request. See [`Configuring Your Environment`](https://developer.apple.com/documentation/apple_pay_on_the_web/configuring_your_environment) for more information.
+Use the merchant identity certificate associated with your merchant ID in the request. See [`Configuring Your Environment`](configuring-your-environment.md) for more information.
 
 The values for `initiative` and `initiativeContext` depend on the kind of application you’re building:
 
@@ -81,4 +81,4 @@ The `displayName` you provide in the payload appears in the Touch Bar like this:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/requesting-an-apple-pay-payment-session)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/requesting-an-apple-pay-payment-session)*

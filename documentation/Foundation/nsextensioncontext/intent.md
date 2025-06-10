@@ -24,7 +24,7 @@ var intent: INIntent? { get }
 
 #### Discussion
 
-When the user selects an app from the list of suggested apps in iOS’s share sheet, this property contains metadata that you can use to populate your share extensions interface. The source for the metadata is the doc://com.apple.documentation/documentation/sirikit/insendmessageintent of your messaging app.
+When the user selects an app from the list of suggested apps in iOS’s share sheet, this property contains metadata that you can use to populate your share extensions interface. The source for the metadata is the [`INSendMessageIntent`](https://developer.apple.com/documentation/Intents/INSendMessageIntent) of your messaging app.
 
 This property is `nil` if your app’s share extension wasn’t launched from the list of suggested apps.
 

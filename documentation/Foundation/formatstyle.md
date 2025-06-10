@@ -164,8 +164,6 @@ You can use a [`ParseStrategy`](parsestrategy.md) one of two ways:
   A style for formatting a date and time.
 - [struct FormatStyle](date/formatstyle.md)
   A structure that creates a locale-appropriate string representation of a date instance and converts strings of dates and times into date instances.
-- [static var iso8601: Date.ISO8601FormatStyle](formatstyle/iso8601.md)
-  A style for formatting a date in accordance with the ISO-8601 standard.
 - [struct ISO8601FormatStyle](date/iso8601formatstyle.md)
   A type that converts between dates and their ISO-8601 string representations.
 - [static func verbatim(Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar) -> Date.VerbatimFormatStyle](formatstyle/verbatim(_:locale:timezone:calendar:).md)
@@ -234,6 +232,11 @@ You can use a [`ParseStrategy`](parsestrategy.md) one of two ways:
   The type this format style accepts as input.
 - [associatedtype FormatOutput](formatstyle/formatoutput.md)
   The type this format style produces as output.
+### Type Properties
+- [static var http: Date.HTTPFormatStyle](formatstyle/http-5jh9g.md)
+- [static var http: DateComponents.HTTPFormatStyle](formatstyle/http-9pwm2.md)
+- [static var iso8601: DateComponents.ISO8601FormatStyle](formatstyle/iso8601-4smgu.md)
+- [static var iso8601: Date.ISO8601FormatStyle](formatstyle/iso8601-773rn.md)
 ### Type Methods
 - [static func offset(to: Date, allowedFields: Set<Date.ComponentsFormatStyle.Field>, maxFieldCount: Int, sign: NumberFormatStyleConfiguration.SignDisplayStrategy) -> SystemFormatStyle.DateOffset](formatstyle/offset(to:allowedfields:maxfieldcount:sign:).md)
 - [static func reference(to: Date, allowedFields: Set<Date.RelativeFormatStyle.Field>, maxFieldCount: Int, thresholdField: Date.RelativeFormatStyle.Field) -> SystemFormatStyle.DateReference](formatstyle/reference(to:allowedfields:maxfieldcount:thresholdfield:).md)
@@ -259,11 +262,14 @@ You can use a [`ParseStrategy`](parsestrategy.md) one of two ways:
 - [Date.ComponentsFormatStyle](date/componentsformatstyle.md)
 - [Date.FormatStyle](date/formatstyle.md)
 - [Date.FormatStyle.Attributed](date/formatstyle/attributed-swift.struct.md)
+- [Date.HTTPFormatStyle](date/httpformatstyle.md)
 - [Date.ISO8601FormatStyle](date/iso8601formatstyle.md)
 - [Date.IntervalFormatStyle](date/intervalformatstyle.md)
 - [Date.RelativeFormatStyle](date/relativeformatstyle.md)
 - [Date.VerbatimFormatStyle](date/verbatimformatstyle.md)
 - [Date.VerbatimFormatStyle.Attributed](date/verbatimformatstyle/attributed-swift.struct.md)
+- [DateComponents.HTTPFormatStyle](datecomponents/httpformatstyle.md)
+- [DateComponents.ISO8601FormatStyle](datecomponents/iso8601formatstyle.md)
 - [Decimal.FormatStyle](decimal/formatstyle.md)
 - [Decimal.FormatStyle.Attributed](decimal/formatstyle/attributed-swift.struct.md)
 - [Decimal.FormatStyle.Currency](decimal/formatstyle/currency.md)
@@ -288,6 +294,8 @@ You can use a [`ParseStrategy`](parsestrategy.md) one of two ways:
 
 ## See Also
 
+- [Language Introspector](language-introspector.md)
+  Converts data into human-readable text using formatters and locales.
 - [struct IntegerFormatStyle](integerformatstyle.md)
   A structure that converts between integer values and their textual representations.
 - [struct FloatingPointFormatStyle](floatingpointformatstyle.md)

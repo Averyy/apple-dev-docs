@@ -73,6 +73,9 @@ Use the properties in this structure to access the different sensors.
 ### Creating a sensor
 - [init(rawValue: String)](srsensor/init(rawvalue:).md)
   Creates a sensor from a raw value.
+### Type Properties
+- [static let acousticSettings: SRSensor](srsensor/acousticsettings.md)
+- [static let sleepSessions: SRSensor](srsensor/sleepsessions.md)
 
 ## Relationships
 
@@ -81,6 +84,7 @@ Use the properties in this structure to access the different sensors.
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

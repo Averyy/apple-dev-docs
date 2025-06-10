@@ -1,6 +1,6 @@
 # load(from:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Loads the contents of the specified web history file.

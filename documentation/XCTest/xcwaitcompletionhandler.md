@@ -1,6 +1,6 @@
 # XCWaitCompletionHandler
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: typealias
 
 A block the test runner calls when the test fulfills a waiter’s expectations, or when it times out.

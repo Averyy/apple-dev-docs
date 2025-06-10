@@ -22,7 +22,7 @@ static var deferredDistanceFiltered: CLError.Code { get }
 
 #### Discussion
 
-Set the distance filter to [`kCLDistanceFilterNone`](kcldistancefilternone.md).
+Set the distance filter to `kCLDistanceFilterNone`.
 
 ## See Also
 

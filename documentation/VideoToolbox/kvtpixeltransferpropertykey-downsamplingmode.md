@@ -1,6 +1,6 @@
 # kVTPixelTransferPropertyKey_DownsamplingMode
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 The specific chroma downsampling technique to be used.

@@ -1,6 +1,6 @@
 # power(_:unit:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: method
 
 Creates an alert for the specified power threshold.
@@ -10,6 +10,7 @@ Creates an alert for the specified power threshold.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

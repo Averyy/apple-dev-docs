@@ -1,6 +1,6 @@
 # Creating XPC services
 
-**Framework**: Xpc
+**Framework**: XPC
 
 Configure a listener, establish a client session, and exchange messages between processes.
 
@@ -25,8 +25,6 @@ The XPC Service template provides a starting point for you to build the listener
 7. Click Finish.
 
 > ❗ **Important**:  Take note of the bundle identifier value shown in the sheet when you enter the name and API level. Clients use this value to connect to the service.
-
- Take note of the bundle identifier value shown in the sheet when you enter the name and API level. Clients use this value to connect to the service.
 
 ![A screenshot showing Xcode’s new target sheet with the macOS XPC Service extension selected.](https://docs-assets.developer.apple.com/published/cd0a10a9d0b35ca12d27b2c913c1ecd3/media-4154694%402x.png)
 

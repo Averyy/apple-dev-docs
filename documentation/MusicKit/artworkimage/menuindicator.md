@@ -1,6 +1,6 @@
 # menuIndicator(_:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Sets the menu indicator visibility for controls within this view.

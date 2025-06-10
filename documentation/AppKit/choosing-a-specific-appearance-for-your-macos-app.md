@@ -47,8 +47,6 @@ The system automatically opts in any app linked against the macOS 10.14 or later
 
 > ❗ **Important**:  Supporting Dark Mode is strongly encouraged. Use the `NSRequiresAquaSystemAppearance` key to opt out temporarily only while you work on improvements to your app’s Dark Mode support. If you do not plan to support a dark appearance at all, apply a light appearance to your entire app, as described in [`Assign a Specific Appearance to Your App`](choosing-a-specific-appearance-for-your-macos-app#Assign-a-Specific-Appearance-to-Your-App.md).
 
- Supporting Dark Mode is strongly encouraged. Use the `NSRequiresAquaSystemAppearance` key to opt out temporarily only while you work on improvements to your app’s Dark Mode support. If you do not plan to support a dark appearance at all, apply a light appearance to your entire app, as described in [`Assign a Specific Appearance to Your App`](choosing-a-specific-appearance-for-your-macos-app#Assign-a-Specific-Appearance-to-Your-App.md).
-
 If you build your app against an earlier SDK but still want to support Dark Mode, include the `NSRequiresAquaSystemAppearance` key (with a value of [`false`](https://developer.apple.com/documentation/swift/false)) in your app’s `Info.plist` file. Do so only if your app’s appearance looks correct when running in macOS 10.14 and later with Dark Mode enabled.
 
 ## See Also

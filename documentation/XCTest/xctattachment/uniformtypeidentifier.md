@@ -1,6 +1,6 @@
 # uniformTypeIdentifier
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The Uniform Type Identifier (UTI) of the data represented by the attachment.

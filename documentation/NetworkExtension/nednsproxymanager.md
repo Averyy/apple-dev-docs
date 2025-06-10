@@ -28,8 +28,6 @@ Instances of the proxy manager are thread safe.
 
 > ❗ **Important**:  To use the [`NEDNSProxyManager`](nednsproxymanager.md) class, you must enable the Network Extensions capability in Xcode and select the DNS Proxy capability. See [`Configure network extensions`](https://developer.apple.comhttp://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
 
- To use the [`NEDNSProxyManager`](nednsproxymanager.md) class, you must enable the Network Extensions capability in Xcode and select the DNS Proxy capability. See [`Configure network extensions`](https://developer.apple.comhttp://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
-
 ## Topics
 
 ### Managing the DNS proxy configuration
@@ -49,7 +47,7 @@ Instances of the proxy manager are thread safe.
 - [var localizedDescription: String?](nednsproxymanager/localizeddescription.md)
   A description of the DNS proxy.
 ### Notifications
-- [static let NEDNSProxyConfigurationDidChange: NSNotification.Name](../foundation/nsnotification/name/2880182-nednsproxyconfigurationdidchange.md)
+- [static let NEDNSProxyConfigurationDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/NEDNSProxyConfigurationDidChange.md)
   A notification that is posted when the DNS proxy configuration changes.
 ### Errors
 - [let NEDNSProxyErrorDomain: String](nednsproxyerrordomain.md)

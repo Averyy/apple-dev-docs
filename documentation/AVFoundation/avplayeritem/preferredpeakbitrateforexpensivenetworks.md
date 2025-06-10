@@ -1,6 +1,6 @@
 # preferredPeakBitRateForExpensiveNetworks
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A limit of network bandwidth consumption by the item when connecting over expensive networks.

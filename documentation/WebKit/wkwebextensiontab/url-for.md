@@ -1,6 +1,6 @@
 # url(for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the URL of the tab is needed.

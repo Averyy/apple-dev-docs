@@ -391,4 +391,4 @@ For more information about code signing requirements, see [`TN3127: Inside Code 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Technotes/tn3126-inside-code-signing-hashes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/technotes/tn3126-inside-code-signing-hashes)*

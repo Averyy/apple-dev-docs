@@ -1,6 +1,6 @@
 # isEmpty
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: property
 
 A Boolean value indicating whether the collection is empty.

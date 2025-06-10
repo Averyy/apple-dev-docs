@@ -1,6 +1,6 @@
 # Synchronizing a local store to the cloud
 
-**Framework**: Coredata
+**Framework**: Core Data
 
 Share data between a user’s devices and other iCloud users.
 
@@ -55,4 +55,4 @@ To facilitate testing, the app supports the following configuration options the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreData/synchronizing-a-local-store-to-the-cloud)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coredata/synchronizing-a-local-store-to-the-cloud)*

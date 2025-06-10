@@ -1,6 +1,6 @@
 # resourceLoader(_:shouldWaitForRenewalOfRequestedResource:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: method
 
 Tells the delegate when assistance is required of the application to renew a resource.

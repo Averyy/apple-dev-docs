@@ -1,6 +1,6 @@
 # MLSoundClassifier.DataSource.filesByLabel(_:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: case
 
 Creates a data source from a dictionary.

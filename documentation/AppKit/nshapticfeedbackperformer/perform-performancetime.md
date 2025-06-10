@@ -21,8 +21,6 @@ In some cases, the system may override a call to this method. For example, a For
 
 > ❗ **Important**:  Call this method only in response to user-initiated actions. Ideally, visual feedback, such as a highlight or appearance of an alignment guide, should accompany the feedback.
 
- Call this method only in response to user-initiated actions. Ideally, visual feedback, such as a highlight or appearance of an alignment guide, should accompany the feedback.
-
 ## Parameters
 
 - `pattern`: A pattern of feedback to be provided to the user. For possible values, see  .

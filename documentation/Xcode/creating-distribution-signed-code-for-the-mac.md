@@ -312,4 +312,4 @@ Don’t pass the `--deep` option to `codesign` when you sign code.  This option 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/creating-distribution-signed-code-for-the-mac)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/creating-distribution-signed-code-for-the-mac)*

@@ -1,6 +1,6 @@
 # setCameraSource(_:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Set the HomeKit camera source displayed by this interface object.

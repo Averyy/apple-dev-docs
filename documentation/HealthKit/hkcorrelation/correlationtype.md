@@ -21,7 +21,7 @@ var correlationType: HKCorrelationType { get }
 
 #### Discussion
 
-For a complete list of correlation type identifiers, see [`HKCorrelationTypeIdentifier`](hkcorrelationtypeidentifier.md).
+For a complete list of correlation types, see Correlation Identifiers in [`HealthKit Constants`](healthkit-constants.md).
 
 ## See Also
 

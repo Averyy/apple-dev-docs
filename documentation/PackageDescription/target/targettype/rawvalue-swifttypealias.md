@@ -15,11 +15,6 @@ typealias RawValue = String
 
 Every distinct value of the conforming type has a corresponding unique value of the `RawValue` type, but there may be values of the `RawValue` type that don’t have a corresponding value of the conforming type.
 
-## See Also
-
-- [var rawValue: String](target/targettype/rawvalue-swift.property.md)
-  The corresponding value of the raw type.
-
 
 ---
 

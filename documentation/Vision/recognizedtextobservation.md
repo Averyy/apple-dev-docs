@@ -29,6 +29,21 @@ struct RecognizedTextObservation
   Requests the top candidates for a recognized text string.
 - [struct RecognizedText](recognizedtext.md)
   Text recognized in an image through a text recognition request.
+### Instance Properties
+- [var boundingRegion: NormalizedRegion](recognizedtextobservation/boundingregion.md)
+  The bounding region of the text.
+- [let isTitle: Bool](recognizedtextobservation/istitle.md)
+  Whether this text is the title of the document.
+- [let recognitionLanguages: [Locale.Language]](recognizedtextobservation/recognitionlanguages.md)
+  The languages in which the recognized text was written.
+- [let shouldWrapToNextLine: Bool?](recognizedtextobservation/shouldwraptonextline.md)
+  Whether the text continues on the next line.
+- [let textDirection: RecognizedTextObservation.Direction?](recognizedtextobservation/textdirection.md)
+- [var transcript: String](recognizedtextobservation/transcript.md)
+  The top text candidate as a string.
+### Enumerations
+- [RecognizedTextObservation.Direction](recognizedtextobservation/direction.md)
+  An enum representing which direction the text is read.
 
 ## Relationships
 
@@ -42,6 +57,7 @@ struct RecognizedTextObservation
 - [Hashable](../Swift/Hashable.md)
 - [QuadrilateralProviding](quadrilateralproviding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [VisionObservation](visionobservation.md)
 
 ## See Also

@@ -1,6 +1,6 @@
 # XPC_ACTIVITY_DELAY
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 An integer property that indicates the number of seconds to delay before beginning the activity.

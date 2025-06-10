@@ -1,6 +1,6 @@
 # load(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Loads the specified extension context.

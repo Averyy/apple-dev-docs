@@ -16,8 +16,7 @@ The coordinate space in which to receive location values.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency var coordinateSpace: CoordinateSpace
+var coordinateSpace: CoordinateSpace
 ```
 
 ## See Also

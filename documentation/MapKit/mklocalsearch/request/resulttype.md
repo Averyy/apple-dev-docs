@@ -12,6 +12,7 @@ Options that indicate types of search results.
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS ?+
+- watchOS 6.0+
 
 ## Declaration
 

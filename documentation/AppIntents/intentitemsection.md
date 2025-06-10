@@ -8,10 +8,10 @@ An object you use to divide dynamic options into sections.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 9.0+
 
 ## Declaration
@@ -38,6 +38,12 @@ The system returns an `IntentItemSection` within an [`IntentItemCollection`](int
 - [var items: [IntentItem<Result>]](intentitemsection/items.md)
 ### Enumerations
 - [IntentItemSection.Builder](intentitemsection/builder.md)
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

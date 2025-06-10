@@ -42,6 +42,7 @@ This layout container behaves like a [`ZStack`](zstack.md), but conforms to the 
 - [Copyable](../Swift/Copyable.md)
 - [Layout](layout.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

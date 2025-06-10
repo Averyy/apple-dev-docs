@@ -1,6 +1,6 @@
 # DataScannerViewController.TextContentType
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: enum
 
 Types of text that a data scanner recognizes.
@@ -60,6 +60,7 @@ let dataScanner = DataScannerViewController(recognizedDataTypes: recognizedDataT
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

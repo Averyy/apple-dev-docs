@@ -1,6 +1,6 @@
 # WKWebpagePreferences
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 An object that specifies the behaviors to use when loading and rendering page content.

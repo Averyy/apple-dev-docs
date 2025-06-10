@@ -72,6 +72,7 @@ For guidance on choosing an appropriate pointer style, refer to [`Pointing devic
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

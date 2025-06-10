@@ -1,6 +1,6 @@
 # MEVideoDecoder
 
-**Framework**: Mediaextension  
+**Framework**: MediaExtension  
 **Kind**: protocol
 
 A protocol that defines the requirements for a video decoder.

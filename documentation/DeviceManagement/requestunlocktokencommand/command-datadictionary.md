@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to request an unlock token from a device.
+The command to request an unlock token from a device.
 
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

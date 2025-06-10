@@ -61,6 +61,7 @@ These attribute names are used by [`setValues(_:for:)`](nsopenglcontext/setvalue
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

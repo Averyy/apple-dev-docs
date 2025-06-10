@@ -48,6 +48,7 @@ struct CategoricalImputer<Element> where Element : Decodable, Element : Encodabl
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Estimator](estimator.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

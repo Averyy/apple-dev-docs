@@ -21,8 +21,6 @@ Metal calculates this value from the raw data-clock rate, and the GPU may not be
 
 > ❗ **Important**:  The maximum transfer rate for built-in GPUs is `0`.
 
- The maximum transfer rate for built-in GPUs is `0`.
-
 ## See Also
 
 - [var currentAllocatedSize: Int](mtldevice/currentallocatedsize.md)

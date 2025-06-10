@@ -8,6 +8,8 @@ Iterate designs quickly and preview your apps’ displays across different Apple
 
 With Xcode previews, you can make changes to your app’s views in code, and see the result of those changes quickly in the preview canvas. Add previews to your SwiftUI, UIKit, and AppKit views using the preview macro. Then configure how you want your previews to display using Xcode’s preview canvas, or programmatically in code.
 
+> **Note**: To add playgrounds to your Swift code that you can view in the canvas, see [`Running code snippets using the playground macro`](running-code-snippets-using-the-playground-macro.md).
+
 ##### Add a Preview to Your View Using the Preview Macro
 
 When you create a view in Xcode, you can display it in the preview canvas. The preview canvas shows how your view appears on different devices in a variety of configurations.
@@ -224,4 +226,4 @@ Add items to the Development Assets of a project target as follows:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/previewing-your-apps-interface-in-xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/previewing-your-apps-interface-in-xcode)*

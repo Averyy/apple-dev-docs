@@ -30,8 +30,6 @@ By default, the enumeration starts with the first object and continues serially 
 
 > ❗ **Important**:  If the block parameter is `nil` this method will raise an exception.
 
- If the block parameter is `nil` this method will raise an exception.
-
 ## Parameters
 
 - `opts`: A bit mask that specifies the options for the enumeration (whether it should be performed concurrently and whether it should be performed in reverse order).

@@ -1,8 +1,7 @@
 # firstMipmapInTail
 
 **Framework**: Metal  
-**Kind**: property  
-**Required**: Yes
+**Kind**: property
 
 The index of the first mipmap in the tail.
 
@@ -17,7 +16,7 @@ The index of the first mipmap in the tail.
 ## Declaration
 
 ```swift
-var firstMipmapInTail: Int { get }
+optional var firstMipmapInTail: Int { get }
 ```
 
 #### Discussion

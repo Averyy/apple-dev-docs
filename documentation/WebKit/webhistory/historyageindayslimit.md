@@ -1,6 +1,6 @@
 # historyAgeInDaysLimit
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The maximum age of web history items that can be retrieved.

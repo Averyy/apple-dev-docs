@@ -1,6 +1,6 @@
 # allowsParallelizedExport
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 A Boolean value that indicates whether the session can parallelize its export operation.

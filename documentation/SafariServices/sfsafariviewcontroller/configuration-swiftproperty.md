@@ -25,6 +25,7 @@ See [`SFSafariViewController.Configuration`](sfsafariviewcontroller/configuratio
 ## See Also
 
 - [var dismissButtonStyle: SFSafariViewController.DismissButtonStyle](sfsafariviewcontroller/dismissbuttonstyle-swift.property.md)
+  The style of dismiss button to use in the navigation bar to close the Safari view controller.
 - [SFSafariViewController.DismissButtonStyle](sfsafariviewcontroller/dismissbuttonstyle-swift.enum.md)
 - [var preferredBarTintColor: UIColor?](sfsafariviewcontroller/preferredbartintcolor.md)
   The color to tint the background of the navigation bar and the toolbar.

@@ -37,7 +37,7 @@ For example, if the user maps a physical press of A button , B button, and X but
   A Boolean value that indicates whether the user remaps elements in this profile.
 - [func mappedElementAlias(forPhysicalInputName: String) -> String](gcphysicalinputprofile/mappedelementalias(forphysicalinputname:).md)
   Returns the name of the input element to which the user remaps the given physical element.
-- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../foundation/nsnotification/name/4066959-gccontrollerusercustomizationsdi.md)
+- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerUserCustomizationsDidChange.md)
   A notification that posts when the user customizes the button mappings or other settings of a controller.
 
 

@@ -1,6 +1,6 @@
 # certificateChain
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 An array of objects forming the certificate chain for the currently committed navigation.

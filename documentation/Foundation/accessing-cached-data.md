@@ -81,4 +81,4 @@ func urlSession(_ session: URLSession, dataTask: URLSessionDataTask,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/accessing-cached-data)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/accessing-cached-data)*

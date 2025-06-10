@@ -1,6 +1,6 @@
 # Handling swipe gestures
 
-**Framework**: Uikit
+**Framework**: UIKit
 
 Detect a horizontal or vertical swipe motion on the screen, and use it to trigger navigation through your content.
 
@@ -51,4 +51,4 @@ If the code for your swipe gesture recognizer isn’t called, check to see if th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit/handling-swipe-gestures)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/handling-swipe-gestures)*

@@ -1,6 +1,6 @@
 # dailyStatistics(for:including:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns daily weather statistics for the requested location, for each day between 30 days ago and 10 days from now.

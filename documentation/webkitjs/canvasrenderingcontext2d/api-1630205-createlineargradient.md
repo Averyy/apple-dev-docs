@@ -1,6 +1,6 @@
 # createLinearGradient
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instm
 
 Creates a linear gradient object with a specified start point and a specified end point.

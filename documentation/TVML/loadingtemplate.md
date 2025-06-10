@@ -1,6 +1,6 @@
 # loadingTemplate
 
-**Framework**: Tvml
+**Framework**: TVML
 
 Displays a spinner and description on the screen.
 
@@ -94,4 +94,4 @@ The following figure shows the output of the above example:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/TVML/loadingtemplate)*
+*[View on Apple Developer](https://developer.apple.com/documentation/tvml/loadingtemplate)*

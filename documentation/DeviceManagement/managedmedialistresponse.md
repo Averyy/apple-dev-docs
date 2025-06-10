@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A response from the device after it processes the command to get a list of managed books.
+A response from the device after it processes the command to get a list of the managed books on a device.
 
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -19,7 +17,7 @@ object ManagedMediaListResponse
 
 ## Topics
 
-### Commands
+### Objects
 - [object ManagedMediaListResponse.BooksItem](managedmedialistresponse/booksitem.md)
   A dictionary that describes a managed book.
 - [object ManagedMediaListResponse.ErrorChainItem](managedmedialistresponse/errorchainitem.md)

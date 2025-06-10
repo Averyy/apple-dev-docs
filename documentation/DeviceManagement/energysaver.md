@@ -7,8 +7,6 @@ The payload you use to configure energy-saver settings.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,17 +22,17 @@ Specify `com.apple.MCX` as the payload type.
 
 |  |  |
 | --- | --- |
-| Device Channel | macOS |
-| User Channel | - |
-| Allow Manual Install | macOS |
-| Requires Supervision | - |
-| Requires User Approved MDM | - |
-| Allowed in User Enrollment | - |
-| Allow Multiple Payloads | macOS |
+| Device channel | macOS |
+| User channel | NA |
+| Allow manual install | macOS |
+| Requires supervision | NA |
+| Requires user-approved MDM | NA |
+| Allowed in user enrollment | NA |
+| Allow multiple payloads | macOS |
 
 ##### Profile Example
 
-```None
+```plist
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -139,16 +137,12 @@ Specify `com.apple.MCX` as the payload type.
 ### Objects
 - [object EnergySaver.Com.apple.EnergySaver.desktop.ACPower](energysaver/com.apple.energysaver.desktop.acpower-data.dictionary.md)
   The desktop AC power energy-saver settings.
+- [object EnergySaver.Com.apple.EnergySaver.desktop.Schedule](energysaver/com.apple.energysaver.desktop.schedule-data.dictionary.md)
+  The schedule for turning the device on or off.
 - [object EnergySaver.Com.apple.EnergySaver.portable.ACPower](energysaver/com.apple.energysaver.portable.acpower-data.dictionary.md)
   The laptop AC power energy-saver settings.
 - [object EnergySaver.Com.apple.EnergySaver.portable.BatteryPower](energysaver/com.apple.energysaver.portable.batterypower-data.dictionary.md)
   The laptop battery power energy-saver settings.
-- [object EnergySaver.Com.apple.EnergySaver.desktop.Schedule](energysaver/com.apple.energysaver.desktop.schedule-data.dictionary.md)
-  The schedule for turning the device on or off.
-- [object EnergySaver.Com.apple.EnergySaver.desktop.Schedule.RepeatingPowerOff](energysaver/com.apple.energysaver.desktop.schedule-data.dictionary/repeatingpoweroff-data.dictionary.md)
-  The triggers for turning the device off.
-- [object EnergySaver.Com.apple.EnergySaver.desktop.Schedule.RepeatingPowerOn](energysaver/com.apple.energysaver.desktop.schedule-data.dictionary/repeatingpoweron-data.dictionary.md)
-  The triggers for turning the device on.
 
 ## See Also
 

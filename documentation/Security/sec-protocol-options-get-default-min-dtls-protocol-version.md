@@ -25,7 +25,7 @@ The default minimum DTLS version.
 #### Discussion
 
 ```None
-  Get the system default minimum DTLS protocol version.
+ Get the system default minimum DTLS protocol version.
 ```
 
 

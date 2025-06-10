@@ -1,0 +1,18 @@
+# t_rttvar
+
+**Framework**: Kernel  
+**Kind**: structp
+
+**Availability**:
+- macOS 12.0+
+
+## Declaration
+
+```swift
+int t_rttvar;
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/kernel/xtcpcb64/3755073-t_rttvar)*

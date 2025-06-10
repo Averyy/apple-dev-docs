@@ -1,6 +1,6 @@
 # calendarEvent
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Turn future dates and times into links to create calendar events.

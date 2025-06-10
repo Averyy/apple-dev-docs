@@ -33,9 +33,9 @@ The authentication dialog contains a cancel button with a default title that you
 
 - [LAPolicy.deviceOwnerAuthenticationWithBiometrics](lapolicy/deviceownerauthenticationwithbiometrics.md)
   User authentication with biometry.
-- [LAPolicy.deviceOwnerAuthenticationWithWatch](lapolicy/deviceownerauthenticationwithwatch.md)
+- [static var deviceOwnerAuthenticationWithWatch: LAPolicy](lapolicy/deviceownerauthenticationwithwatch.md)
   User authentication with Apple Watch.
-- [LAPolicy.deviceOwnerAuthenticationWithBiometricsOrWatch](lapolicy/deviceownerauthenticationwithbiometricsorwatch.md)
+- [static var deviceOwnerAuthenticationWithBiometricsOrWatch: LAPolicy](lapolicy/deviceownerauthenticationwithbiometricsorwatch.md)
   User authentication with either biometry or Apple Watch.
 - [LAPolicy.deviceOwnerAuthenticationWithWristDetection](lapolicy/deviceownerauthenticationwithwristdetection.md)
   User authentication with wrist detection on watchOS.

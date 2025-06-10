@@ -1,6 +1,6 @@
 # WeatherChange.Direction.steady
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 The value will remain similar to before.

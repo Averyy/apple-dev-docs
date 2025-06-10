@@ -1,6 +1,6 @@
 # DynamicLightShadowComponent
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 A component that controls an entity’s shadow from dynamic (virtual) lights.
@@ -10,6 +10,7 @@ A component that controls an entity’s shadow from dynamic (virtual) lights.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -41,8 +42,6 @@ You need to add the dynamic lights shadow component to each entity you want to a
 ### Instance Properties
 - [var castsShadow: Bool](dynamiclightshadowcomponent/castsshadow.md)
   A Boolean value that indicates whether an entity casts a shadow.
-### Default Implementations
-- [Component Implementations](dynamiclightshadowcomponent/component-implementations.md)
 
 ## Relationships
 
@@ -57,4 +56,4 @@ You need to add the dynamic lights shadow component to each entity you want to a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/dynamiclightshadowcomponent)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/dynamiclightshadowcomponent)*

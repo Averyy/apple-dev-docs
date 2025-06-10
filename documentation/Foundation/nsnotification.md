@@ -30,8 +30,6 @@ You don’t usually create your own notifications directly, but instead call the
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Notification`](notification.md) structure, which bridges to the [`NSNotification`](nsnotification.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
 
- The Swift overlay to the Foundation framework provides the [`Notification`](notification.md) structure, which bridges to the [`NSNotification`](nsnotification.md) class. For more information about value types, see [`Working with Cocoa Frameworks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/WorkingWithCocoaDataTypes.html#//apple_ref/doc/uid/TP40014216-CH6) in [`Using Swift with Cocoa and Objective-C (Swift 4.1)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216).
-
 ##### Object Comparison
 
 The objects of a notification are compared using pointer equality for local notifications. Distributed notifications use strings as their objects, and those strings are compared using [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)), because pointer equality doesn’t make sense across process boundaries.
@@ -70,6 +68,8 @@ You can subclass [`NSNotification`](nsnotification.md) to contain information in
 - [static let AVPlayableDidPause: NSNotification.Name](nsnotification/avplayabledidpause.md)
 - [static let AVPlayableDidPlay: NSNotification.Name](nsnotification/avplayabledidplay.md)
 - [static let AVPlayableDidShowInfoViewController: NSNotification.Name](nsnotification/avplayabledidshowinfoviewcontroller.md)
+- [static let AVPlayableDidSkipBack: NSNotification.Name](nsnotification/avplayabledidskipback.md)
+- [static let AVPlayableDidSkipForward: NSNotification.Name](nsnotification/avplayabledidskipforward.md)
 - [static let AVPlayableDidToggleInline: NSNotification.Name](nsnotification/avplayabledidtoggleinline.md)
 - [static let AVPlayableDidToggleMuted: NSNotification.Name](nsnotification/avplayabledidtogglemuted.md)
 - [static let AVPlayableVideoBoundsDidChange: NSNotification.Name](nsnotification/avplayablevideoboundsdidchange.md)

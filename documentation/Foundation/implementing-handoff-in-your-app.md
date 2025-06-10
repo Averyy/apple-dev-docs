@@ -128,4 +128,4 @@ For URLs transferred in the [`userInfo`](nsuseractivity/userinfo.md) dictionary,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation/implementing-handoff-in-your-app)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/implementing-handoff-in-your-app)*

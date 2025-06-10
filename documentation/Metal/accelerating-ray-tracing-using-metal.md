@@ -36,4 +36,4 @@ This sample requires the following system and software configuration:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/accelerating-ray-tracing-using-metal)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/accelerating-ray-tracing-using-metal)*

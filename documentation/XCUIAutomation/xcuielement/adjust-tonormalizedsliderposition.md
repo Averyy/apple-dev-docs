@@ -1,6 +1,6 @@
 # adjust(toNormalizedSliderPosition:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Manipulates the UI to change the value the slider displays to a new value, based on a normalized position.

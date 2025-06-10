@@ -1,6 +1,6 @@
 # hash(into:)
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: method
 
 **Availability**:

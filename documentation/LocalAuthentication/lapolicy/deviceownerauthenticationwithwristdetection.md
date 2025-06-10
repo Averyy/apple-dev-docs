@@ -44,9 +44,9 @@ do {
 
 - [LAPolicy.deviceOwnerAuthenticationWithBiometrics](lapolicy/deviceownerauthenticationwithbiometrics.md)
   User authentication with biometry.
-- [LAPolicy.deviceOwnerAuthenticationWithWatch](lapolicy/deviceownerauthenticationwithwatch.md)
+- [static var deviceOwnerAuthenticationWithWatch: LAPolicy](lapolicy/deviceownerauthenticationwithwatch.md)
   User authentication with Apple Watch.
-- [LAPolicy.deviceOwnerAuthenticationWithBiometricsOrWatch](lapolicy/deviceownerauthenticationwithbiometricsorwatch.md)
+- [static var deviceOwnerAuthenticationWithBiometricsOrWatch: LAPolicy](lapolicy/deviceownerauthenticationwithbiometricsorwatch.md)
   User authentication with either biometry or Apple Watch.
 - [LAPolicy.deviceOwnerAuthentication](lapolicy/deviceownerauthentication.md)
   User authentication with biometry, Apple Watch, or the device passcode.

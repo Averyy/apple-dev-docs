@@ -1,6 +1,6 @@
 # Wallet Passes
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: module
 
 Create, distribute, and update passes for the Wallet app.
@@ -35,6 +35,11 @@ For information on creating and building a pass, see [`Creating the Source for a
   Distribute a pass to your users or update an existing pass.
 - [object Pass](pass.md)
   An object that represents a pass.
+### Multievent Passes
+- [object UpcomingPassInformationEntry](upcomingpassinformationentry.md)
+  An object that represents the ordered list of all upcoming pass information entries.
+- [object UpcomingPassInformationEntryType](upcomingpassinformationentrytype.md)
+  An object that represents a upcoming pass information entry for an specific upcoming event.
 ### Pass Updates
 - [Adding a Web Service to Update Passes](adding-a-web-service-to-update-passes.md)
   Implement a web server to register, update, and unregister a pass on a device.

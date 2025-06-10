@@ -67,7 +67,6 @@ struct SubscriptionInfo
   The renewal states of auto-renewable subscriptions.
 ### Type Methods
 - [static func status(transactionID: UInt64) async throws -> SubscriptionStatus?](product/subscriptioninfo/status(transactionid:).md)
-  Gets the subscription status for a transaction ID.
 
 ## Relationships
 
@@ -75,6 +74,7 @@ struct SubscriptionInfo
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -23,11 +23,6 @@ func encode(commandBuffer: any MTLCommandBuffer)
 
 - `commandBuffer`: The destination command buffer for a render pass.
 
-## See Also
-
-- [var reset: Bool](mtlfxtemporalscaler/reset.md)
-  A Boolean that indicates whether the temporal scaler discards historical data from previous frames.
-
 
 ---
 

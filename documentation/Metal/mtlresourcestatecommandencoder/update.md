@@ -1,8 +1,7 @@
 # update(_:)
 
 **Framework**: Metal  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Encodes a command that instructs the GPU to update a fence, which signals passes waiting on the fence.
 
@@ -17,7 +16,7 @@ Encodes a command that instructs the GPU to update a fence, which signals passes
 ## Declaration
 
 ```swift
-optional func update(_ fence: any MTLFence)
+func update(_ fence: any MTLFence)
 ```
 
 #### Discussion

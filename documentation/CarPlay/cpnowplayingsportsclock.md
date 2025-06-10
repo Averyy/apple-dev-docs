@@ -13,6 +13,7 @@ A representation of the amount of time elapsed so far in this event, for events 
 ## Declaration
 
 ```swift
+@MainActor
 class CPNowPlayingSportsClock
 ```
 
@@ -48,6 +49,7 @@ Or, a representation of the amount of time remaining in the event, or a section 
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
 
 
 ---

@@ -1,6 +1,6 @@
 # WebMenuItemTagReload
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 Reload the current page.

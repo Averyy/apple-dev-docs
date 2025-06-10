@@ -34,6 +34,7 @@ The four-digit merchant category codes are in ISO 18245 format and range from 1 
 - [LosslessStringConvertible](../Swift/LosslessStringConvertible.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

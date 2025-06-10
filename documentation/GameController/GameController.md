@@ -53,6 +53,8 @@ To support racing wheel devices in your macOS app, see [`Racing wheel device sup
   Support a physical controller or add a virtual controller to enhance how people interact with your game through haptics, lighting, and motion sensing.
 - [Letting players use their second-generation Siri Remote as a game controller](letting-players-use-their-second-generation-siri-remote-as-a-game-controller.md)
   Support the second-generation Siri Remote as a game controller in your Apple TV game.
+- [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
+  Receive controller and stylus input to interact with content in your augmented reality app.
 - [protocol GCDevice](gcdevice.md)
   A protocol that defines a common interface for game input devices.
 - [class GCController](gccontroller.md)
@@ -63,6 +65,8 @@ To support racing wheel devices in your macOS app, see [`Racing wheel device sup
   An object that represents a physical keyboard connected to a device.
 - [class GCMouse](gcmouse.md)
   An object that represents a physical mouse connected to a device.
+- [class GCStylus](gcstylus.md)
+  An object that represents a physical stylus connected to the device.
 ### Game controller profiles
 - [Input](input.md)
   Receive controller input in the way that best integrates with the flow of your game or game engine.
@@ -105,13 +109,6 @@ To support racing wheel devices in your macOS app, see [`Racing wheel device sup
   An alias for a symbol name for backward compatibility with a previous SDK version.
 ### Deprecated symbols
 - [Deprecated symbols](deprecated-symbols.md)
-### Classes
-- [class GCEventInteraction](gceventinteraction.md)
-- [class GCGameControllerActivationContext](gcgamecontrolleractivationcontext.md)
-### Protocols
-- [protocol GCGameControllerSceneDelegate](gcgamecontrollerscenedelegate.md)
-### Structures
-- [struct GCUIEventTypes](gcuieventtypes.md)
 
 
 ---

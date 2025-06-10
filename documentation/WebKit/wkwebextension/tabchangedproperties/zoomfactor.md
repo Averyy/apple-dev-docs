@@ -1,6 +1,6 @@
 # zoomFactor
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Indicates the zoom factor changed.

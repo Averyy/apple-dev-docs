@@ -42,6 +42,7 @@ The device ([`DDDevice`](dddevice.md)) property [`mediaPlaybackState`](dddevice/
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

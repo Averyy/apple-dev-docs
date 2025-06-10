@@ -18,7 +18,7 @@ func setProviderProperties(_ providerProperties: CMIOExtensionProviderProperties
 
 #### Discussion
 
-If you implement this method in Swift and an error occurs, throw an error and pass more detailed information regarding the property or properties that failed in the error that you throw. If you implement this method in Objective-C and an error occurs, pass more detailed information regarding the property or properties that failed in the [`localizedDescription`](https://developer.apple.com/documentation/foundation/nserror/1414418-localizeddescription) property of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError).
+If you implement this method in Swift and an error occurs, throw an error and pass more detailed information regarding the property or properties that failed in the error that you throw. If you implement this method in Objective-C and an error occurs, pass more detailed information regarding the property or properties that failed in the [`localizedDescription`](https://developer.apple.com/documentation/Foundation/NSError/localizedDescription) property of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError).
 
 ## Parameters
 

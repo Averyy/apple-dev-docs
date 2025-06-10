@@ -31,8 +31,6 @@ If you call [`view(atColumn:row:makeIfNecessary:)`](nstableview/view(atcolumn:ro
 
 > ❗ **Important**:  To avoid the possibility of a hang due to unexpected recursion, don’t call geometry-calculating methods such as [`bounds`](nsview/bounds.md), [`rect(ofColumn:)`](nstableview/rect(ofcolumn:).md), or any `NSTableView` method that calls [`tile()`](nstableview/tile().md) within your implementation of this method.
 
- To avoid the possibility of a hang due to unexpected recursion, don’t call geometry-calculating methods such as [`bounds`](nsview/bounds.md), [`rect(ofColumn:)`](nstableview/rect(ofcolumn:).md), or any `NSTableView` method that calls [`tile()`](nstableview/tile().md) within your implementation of this method.
-
 ## Parameters
 
 - `outlineView`: The outline view that sent the message.

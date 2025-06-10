@@ -44,7 +44,7 @@ class AVSampleBufferDisplayLayer
 - [var preventsAutomaticBackgroundingDuringVideoPlayback: Bool](avsamplebufferdisplaylayer/preventsautomaticbackgroundingduringvideoplayback.md)
   A Boolean value that indicates whether video playback prevents the system from automatically backgrounding an app.
 ### Handling errors
-- [static let AVSampleBufferDisplayLayerFailedToDecode: NSNotification.Name](../foundation/nsnotification/name/1390290-avsamplebufferdisplaylayerfailed.md)
+- [static let AVSampleBufferDisplayLayerFailedToDecode: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/AVSampleBufferDisplayLayerFailedToDecode.md)
   A notification the system posts when a sample buffer display layer fails to decode.
 - [let AVSampleBufferDisplayLayerFailedToDecodeNotificationErrorKey: String](avsamplebufferdisplaylayerfailedtodecodenotificationerrorkey.md)
   The key for the corresponding error.
@@ -68,6 +68,8 @@ class AVSampleBufferDisplayLayer
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

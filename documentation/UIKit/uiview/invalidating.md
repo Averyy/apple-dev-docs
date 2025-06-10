@@ -1,6 +1,6 @@
 # UIView.Invalidating
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: struct
 
 A property wrapper that notifies the system that a property value change has invalidated an aspect of the containing view.

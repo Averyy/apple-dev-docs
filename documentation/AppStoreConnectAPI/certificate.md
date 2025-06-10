@@ -19,6 +19,8 @@ object Certificate
 ### Objects
 - [object Certificate.Attributes](certificate/attributes-data.dictionary.md)
   Attributes that describe a Certificates resource.
+### Dictionaries
+- [object Certificate.Relationships](certificate/relationships-data.dictionary.md)
 
 ## See Also
 
@@ -33,6 +35,8 @@ object Certificate
   The request body you use to update a certificate activation status.
 - [type CertificateType](certificatetype.md)
   Literal values that represent types of signing certificates.
+- [object CertificatePassTypeIdLinkageResponse](certificatepasstypeidlinkageresponse.md)
+  A response body that contains the ID of a single related resource.
 
 
 ---

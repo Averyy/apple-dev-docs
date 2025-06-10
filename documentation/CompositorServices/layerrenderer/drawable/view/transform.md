@@ -6,6 +6,7 @@
 The transformation matrix that converts between the device’s coordinate space to the position of the view in that space.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

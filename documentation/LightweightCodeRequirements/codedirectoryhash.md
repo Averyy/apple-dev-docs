@@ -56,6 +56,7 @@ In the context of [`OnDiskCodeRequirement`](ondiskcoderequirement.md) this const
 - [OnDiskConstraint](ondiskconstraint.md)
 - [ProcessConstraint](processconstraint.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

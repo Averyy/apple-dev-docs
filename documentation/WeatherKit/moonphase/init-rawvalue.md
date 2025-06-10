@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: init
 
 Creates a new instance with the specified raw value.

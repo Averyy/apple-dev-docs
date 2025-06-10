@@ -1,6 +1,6 @@
 # provideScope(for:testCase:performing:)
 
-**Framework**: Testing  
+**Framework**: Swift Testing  
 **Kind**: method  
 **Required**: Yes
 

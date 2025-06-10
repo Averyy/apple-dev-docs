@@ -1,6 +1,6 @@
 # locales
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The languages to use in text items that the image analyzer recognizes.

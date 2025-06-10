@@ -1,6 +1,6 @@
 # sorted()
 
-**Framework**: Hvf  
+**Framework**: hvf  
 **Kind**: method
 
 Returns the elements of the sequence, sorted.

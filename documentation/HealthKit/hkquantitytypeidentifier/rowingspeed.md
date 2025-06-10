@@ -3,8 +3,6 @@
 **Framework**: HealthKit  
 **Kind**: property
 
-A quantity sample type that measures how fast the rower is moving.
-
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -19,16 +17,10 @@ A quantity sample type that measures how fast the rower is moving.
 static let rowingSpeed: HKQuantityTypeIdentifier
 ```
 
-#### Discussion
-
-These samples use distance per time units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)). During rowing workouts, the system automatically records rowing speed samples on Apple Watch.
-
 ## See Also
 
 - [static let bleedingAfterPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingafterpregnancy.md)
-  A category type that records bleeding after pregnancy as a symptom.
 - [static let bleedingDuringPregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingduringpregnancy.md)
-  A category type that records bleeding during pregnancy as a symptom.
 - [static let sleepApneaEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/sleepapneaevent.md)
 - [let HKDevicePropertyKeyFirmwareVersion: String](hkdevicepropertykeyfirmwareversion.md)
   The device’s firmware version.

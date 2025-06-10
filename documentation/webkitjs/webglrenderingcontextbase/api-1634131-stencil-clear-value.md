@@ -1,6 +1,6 @@
 # STENCIL_CLEAR_VALUE
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

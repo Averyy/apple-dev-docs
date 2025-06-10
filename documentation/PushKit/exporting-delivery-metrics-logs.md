@@ -1,6 +1,6 @@
 # Exporting delivery metrics logs
 
-**Framework**: Pushkit
+**Framework**: PushKit
 
 Download and analyze push-notification metrics.
 
@@ -74,4 +74,4 @@ Apple’s servers retain the exported data for six months. To re-download the da
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PushKit/exporting-delivery-metrics-logs)*
+*[View on Apple Developer](https://developer.apple.com/documentation/pushkit/exporting-delivery-metrics-logs)*

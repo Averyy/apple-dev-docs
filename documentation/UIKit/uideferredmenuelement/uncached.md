@@ -31,6 +31,7 @@ When you use this initializer, the system calls each deferred element’s comple
 
 - [convenience init((([UIMenuElement]) -> Void) -> Void)](uideferredmenuelement/init(_:).md)
   A convenience initializer that creates a placeholder menu element that the system replaces with the result of the provider’s completion handler.
+- [class func usingFocus(identifier: UIDeferredMenuElement.Identifier, shouldCacheItems: Bool) -> Self](uideferredmenuelement/usingfocus(identifier:shouldcacheitems:).md)
 
 
 ---

@@ -1,6 +1,6 @@
 # XCUIElement.ElementType.pageIndicator
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: case
 
 A constant that represents an element type for page-indicator controls.

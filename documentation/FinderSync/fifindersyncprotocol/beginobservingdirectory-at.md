@@ -1,6 +1,6 @@
 # beginObservingDirectory(at:)
 
-**Framework**: Findersync  
+**Framework**: Finder Sync  
 **Kind**: method
 
 Tells the extension that the user is looking at a monitored directory or at one of its subdirectories.

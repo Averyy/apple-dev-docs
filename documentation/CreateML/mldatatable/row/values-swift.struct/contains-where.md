@@ -1,6 +1,6 @@
 # contains(where:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: method
 
 Returns a Boolean value indicating whether the sequence contains an element that satisfies the given predicate.

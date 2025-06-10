@@ -1,40 +1,34 @@
-# !=(_:_:)
+# ==(_:_:)
 
 **Framework**: RealityKit  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Indicates whether two physics mass properties are equal.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
+- macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func == (lhs: PhysicsMassProperties, rhs: PhysicsMassProperties) -> Bool
 ```
 
-#### Discussion
+#### Return Value
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+A Boolean value set to `true` if the two physics mass properties are equal.
 
 ## Parameters
 
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
-
-## See Also
-
-- [static func == (PhysicsMassProperties, PhysicsMassProperties) -> Bool](physicsmassproperties/==(_:_:).md)
-  Indicates whether two physics mass properties are equal.
+- `lhs`: The first set of physics mass properties to compare.
+- `rhs`: The second set of physics mass properties to compare.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/physicsmassproperties/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/physicsmassproperties/==(_:_:))*

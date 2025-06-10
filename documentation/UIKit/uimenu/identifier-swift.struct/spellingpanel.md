@@ -26,6 +26,8 @@ static let spellingPanel: UIMenu.Identifier
   The standard Edit menu.
 - [static let find: UIMenu.Identifier](uimenu/identifier-swift.struct/find.md)
   The Find menu.
+- [static let findPanel: UIMenu.Identifier](uimenu/identifier-swift.struct/findpanel.md)
+  Find panel menu (Find, Find and Replace, Find Next, Find Previous)
 - [static let replace: UIMenu.Identifier](uimenu/identifier-swift.struct/replace.md)
   The Replace menu.
 - [static let share: UIMenu.Identifier](uimenu/identifier-swift.struct/share.md)
@@ -48,8 +50,6 @@ static let spellingPanel: UIMenu.Identifier
   The Speech menu.
 - [static let lookup: UIMenu.Identifier](uimenu/identifier-swift.struct/lookup.md)
   The Lookup menu.
-- [static let learn: UIMenu.Identifier](uimenu/identifier-swift.struct/learn.md)
-  The Learn menu.
 
 
 ---

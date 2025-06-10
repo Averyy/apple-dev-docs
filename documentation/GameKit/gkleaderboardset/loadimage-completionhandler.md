@@ -15,7 +15,7 @@ Loads the localized image that you associate with the leaderboard set.
 ## Declaration
 
 ```swift
-func loadImage() async throws -> UIImage
+func loadImage() async throws -> NSImage
 ```
 
 ## Parameters

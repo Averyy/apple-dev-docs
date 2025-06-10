@@ -21,8 +21,9 @@ class GCController
 
 ## Mentions
 
-- [Handling input events](handling-input-events.md)
 - [Adding touch controls to games that support game controllers in iOS](adding-touch-controls-to-games-that-support-game-controllers-in-ios.md)
+- [Handling input events](handling-input-events.md)
+- [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
 
 #### Overview
 
@@ -47,16 +48,16 @@ Alternatively, you can create a snapshot of a real or virtual controller using t
   Starts searching for nearby wireless controllers.
 - [class func stopWirelessControllerDiscovery()](gccontroller/stopwirelesscontrollerdiscovery.md)
   Stops searching for nearby wireless controllers.
-- [static let GCControllerDidConnect: NSNotification.Name](../foundation/nsnotification/name/1458856-gccontrollerdidconnect.md)
+- [static let GCControllerDidConnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerDidConnect.md)
   A notification that posts after a controller connects to the device.
-- [static let GCControllerDidDisconnect: NSNotification.Name](../foundation/nsnotification/name/1458875-gccontrollerdiddisconnect.md)
+- [static let GCControllerDidDisconnect: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerDidDisconnect.md)
   A notification that posts after a controller disconnects from the device.
 ### Handling multiple controllers
 - [class var current: GCController?](gccontroller/current.md)
   The most recently used game controller.
-- [static let GCControllerDidBecomeCurrent: NSNotification.Name](../foundation/nsnotification/name/3547191-gccontrollerdidbecomecurrent.md)
+- [static let GCControllerDidBecomeCurrent: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerDidBecomeCurrent.md)
   A notification that posts when a controller becomes the current controller.
-- [static let GCControllerDidStopBeingCurrent: NSNotification.Name](../foundation/nsnotification/name/3547192-gccontrollerdidstopbeingcurrent.md)
+- [static let GCControllerDidStopBeingCurrent: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GCControllerDidStopBeingCurrent.md)
   A notification that posts when a controller stops being the current controller.
 ### Inspecting a controller
 - [var isAttachedToDevice: Bool](gccontroller/isattachedtodevice.md)
@@ -137,9 +138,14 @@ Alternatively, you can create a snapshot of a real or virtual controller using t
   Returns a snapshot of the controller with its current element values.
 - [var isSnapshot: Bool](gccontroller/issnapshot.md)
   A Boolean value that indicates whether the controller is a snapshot of a controller.
-### Responding to a paused controller
+### Responding to a paused controller or controller event
 - [var controllerPausedHandler: ((GCController) -> Void)?](gccontroller/controllerpausedhandler.md)
   The block that the framework calls when the user presses the pause button on the controller.
+- [protocol GCGameControllerSceneDelegate](gcgamecontrollerscenedelegate.md)
+- [class GCEventInteraction](gceventinteraction.md)
+  An interaction that indicates the view’s intent to receive game controller events through the Game Controller framework.
+### Identifying the activation context
+- [class GCGameControllerActivationContext](gcgamecontrolleractivationcontext.md)
 
 ## Relationships
 
@@ -160,6 +166,8 @@ Alternatively, you can create a snapshot of a real or virtual controller using t
   Support a physical controller or add a virtual controller to enhance how people interact with your game through haptics, lighting, and motion sensing.
 - [Letting players use their second-generation Siri Remote as a game controller](letting-players-use-their-second-generation-siri-remote-as-a-game-controller.md)
   Support the second-generation Siri Remote as a game controller in your Apple TV game.
+- [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
+  Receive controller and stylus input to interact with content in your augmented reality app.
 - [protocol GCDevice](gcdevice.md)
   A protocol that defines a common interface for game input devices.
 - [class GCRacingWheel](gcracingwheel.md)
@@ -168,6 +176,8 @@ Alternatively, you can create a snapshot of a real or virtual controller using t
   An object that represents a physical keyboard connected to a device.
 - [class GCMouse](gcmouse.md)
   An object that represents a physical mouse connected to a device.
+- [class GCStylus](gcstylus.md)
+  An object that represents a physical stylus connected to the device.
 
 
 ---

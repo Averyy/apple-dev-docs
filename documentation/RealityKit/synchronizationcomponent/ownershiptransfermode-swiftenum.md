@@ -10,6 +10,7 @@ Modes of ownership transfer.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -25,17 +26,6 @@ enum OwnershipTransferMode
   Grant ownership requests automatically.
 - [SynchronizationComponent.OwnershipTransferMode.manual](synchronizationcomponent/ownershiptransfermode-swift.enum/manual.md)
   Require explicit ownership request confirmation.
-### Comparing ownership transfer modes
-- [static func == (SynchronizationComponent.OwnershipTransferMode, SynchronizationComponent.OwnershipTransferMode) -> Bool](synchronizationcomponent/ownershiptransfermode-swift.enum/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](synchronizationcomponent/ownershiptransfermode-swift.enum/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [func hash(into: inout Hasher)](synchronizationcomponent/ownershiptransfermode-swift.enum/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [var hashValue: Int](synchronizationcomponent/ownershiptransfermode-swift.enum/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](synchronizationcomponent/ownershiptransfermode-swift.enum/equatable-implementations.md)
 
 ## Relationships
 

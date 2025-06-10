@@ -1,6 +1,6 @@
 # lines
 
-**Framework**: Xcodekit  
+**Framework**: XcodeKit  
 **Kind**: property
 
 The lines of text in the buffer, including line endings.

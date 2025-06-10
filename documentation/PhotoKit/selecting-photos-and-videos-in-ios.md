@@ -1,6 +1,6 @@
 # Selecting Photos and Videos in iOS
 
-**Framework**: Photokit
+**Framework**: PhotoKit
 
 Improve the user experience of finding and selecting assets by using the Photos picker.
 
@@ -153,4 +153,4 @@ if itemProvider.hasItemConformingToTypeIdentifier(UTType.image.identifier) {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/PhotoKit/selecting-photos-and-videos-in-ios)*
+*[View on Apple Developer](https://developer.apple.com/documentation/photokit/selecting-photos-and-videos-in-ios)*

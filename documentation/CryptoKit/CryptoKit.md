@@ -31,8 +31,10 @@ Prefer CryptoKit over lower-level interfaces. CryptoKit frees your app from mana
   Declare the use of encryption in your app to streamline the app submission process.
 - [Performing Common Cryptographic Operations](performing_common_cryptographic_operations.md)
   Use CryptoKit to carry out operations like hashing, key generation, and encryption.
-- [Storing CryptoKit Keys in the Keychain](storing_cryptokit_keys_in_the_keychain.md)
+- [Storing CryptoKit Keys in the Keychain](storing-cryptokit-keys-in-the-keychain.md)
   Convert between strongly typed cryptographic keys and native keychain types.
+- [Using the quantum-secure APIs](using-the-quantum-secure-apis.md)
+  Enhance your app’s privacy and security by using quantum-secure workflows.
 ### Cryptographically secure hashes
 - [protocol HashFunction](hashfunction.md)
   A type that performs cryptographically secure hashing.
@@ -72,6 +74,20 @@ Prefer CryptoKit over lower-level interfaces. CryptoKit frees your app from mana
 ### Key derivation functions
 - [struct HKDF](hkdf.md)
   A standards-based implementation of an HMAC-based Key Derivation Function (HKDF).
+### Key encapsulation mechanisms (KEM)
+- [enum KEM](kem.md)
+  A key encapsulation mechanism.
+- [enum MLKEM768](mlkem768.md)
+  The Module-Lattice key encapsulation mechanism (KEM).
+- [enum MLKEM1024](mlkem1024.md)
+  The Module-Lattice key encapsulation mechanism (KEM).
+- [enum XWingMLKEM768X25519](xwingmlkem768x25519.md)
+  The X-Wing (ML-KEM768 with X25519) Key Encapsulation Mechanism, defined in https://datatracker.ietf.org/doc/html/draft-connolly-cfrg-xwing-kem-06
+### KEM keys
+- [protocol KEMPrivateKey](kemprivatekey.md)
+  The private key for a key encapsulation mechanism.
+- [protocol KEMPublicKey](kempublickey.md)
+  The public key for a key encapsulation mechanism.
 ### Errors
 - [enum CryptoKitError](cryptokiterror.md)
   General cryptography errors used by CryptoKit.
@@ -89,16 +105,41 @@ Prefer CryptoKit over lower-level interfaces. CryptoKit frees your app from mana
   A type that represents the generation of private keys in a Diffie-Hellman key exchange.
 - [protocol HPKEDiffieHellmanPublicKey](hpkediffiehellmanpublickey.md)
   A type that represents the public key in a Diffie-Hellman key exchange.
+- [protocol HPKEKEMPrivateKey](hpkekemprivatekey.md)
+  A type that represents the private key in HPKE.
+- [protocol HPKEKEMPrivateKeyGeneration](hpkekemprivatekeygeneration.md)
+  A type that represents the generation of private keys in HPKE
+- [protocol HPKEKEMPublicKey](hpkekempublickey.md)
+  A type that represents the public key in HPKE
 - [protocol HPKEPublicKeySerialization](hpkepublickeyserialization.md)
   A type that [`HPKE`](hpke.md) uses to encode the public key.
-- [protocol KEMPrivateKey](kemprivatekey.md)
-- [protocol KEMPublicKey](kempublickey.md)
 ### Structures
 - [struct CorecryptoCurveType](corecryptocurvetype.md)
+- [struct SHA3_256](sha3_256.md)
+  An implementation of Secure Hashing Algorithm 3 (SHA-3) hashing with a 256-bit digest.
+- [struct SHA3_256Digest](sha3_256digest.md)
+  The output of a Secure Hashing Algorithm 3 (SHA-2) hash with a 256-bit digest.
+- [struct SHA3_384](sha3_384.md)
+  An implementation of Secure Hashing Algorithm 3 (SHA-3) hashing with a 384-bit digest.
+- [struct SHA3_384Digest](sha3_384digest.md)
+  The output of a Secure Hashing Algorithm 3 (SHA-2) hash with a 384-bit digest.
+- [struct SHA3_512](sha3_512.md)
+  An implementation of Secure Hashing Algorithm 3 (SHA-3) hashing with a 512-bit digest.
+- [struct SHA3_512Digest](sha3_512digest.md)
+  The output of a Secure Hashing Algorithm 3 (SHA-2) hash with a 512-bit digest.
 ### Type Aliases
 - [typealias CryptoKitMetaError](cryptokitmetaerror.md)
+- [typealias SHA2_256](sha2_256.md)
+  An implementation of Secure Hashing Algorithm 2 (SHA-2) hashing with a 256-bit digest.
+- [typealias SHA2_384](sha2_384.md)
+  An implementation of Secure Hashing Algorithm 2 (SHA-2) hashing with a 384-bit digest.
+- [typealias SHA2_512](sha2_512.md)
+  An implementation of Secure Hashing Algorithm 2 (SHA-2) hashing with a 512-bit digest.
 ### Enumerations
-- [enum KEM](kem.md)
+- [enum MLDSA65](mldsa65.md)
+  The MLDSA65 Digital Signature Algorithm
+- [enum MLDSA87](mldsa87.md)
+  The MLDSA87 Digital Signature Algorithm
 
 
 ---

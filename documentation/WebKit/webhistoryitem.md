@@ -1,6 +1,6 @@
 # WebHistoryItem
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: class
 
 WebHistoryItem objects encapsulate information about visiting a page so that users can return to that page. WebHistory and WebBackForwardList objects manage lists of WebHistoryItem objects. WebHistoryItem objects are created and added to these lists automatically when loading pages, so you do not need to create WebHistoryItem objects directly.

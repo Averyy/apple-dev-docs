@@ -1,6 +1,6 @@
 # videoRotationAngleForHorizonLevelCapture
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: property
 
 An angle the coordinator provides your app to apply to photos or videos it captures with the device so that they’re level relative to gravity.

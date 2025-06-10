@@ -1,6 +1,6 @@
 # init(fileID:filePath:line:column:)
 
-**Framework**: Testing  
+**Framework**: Swift Testing  
 **Kind**: init
 
 Initialize an instance of this type with the specified location details.

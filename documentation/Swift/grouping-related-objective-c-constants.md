@@ -178,4 +178,4 @@ extension FavoriteColor {
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/grouping-related-objective-c-constants)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/grouping-related-objective-c-constants)*

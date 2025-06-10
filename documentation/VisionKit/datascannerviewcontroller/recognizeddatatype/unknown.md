@@ -1,6 +1,6 @@
 # ==(_:_:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: op
 
 Returns a Boolean value indicating whether two sets have equal elements.

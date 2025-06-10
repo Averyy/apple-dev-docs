@@ -1,6 +1,6 @@
 # WCSessionUserInfoTransfer
 
-**Framework**: Watchconnectivity  
+**Framework**: Watch Connectivity  
 **Kind**: class
 
 Information about in-progress data transfers.

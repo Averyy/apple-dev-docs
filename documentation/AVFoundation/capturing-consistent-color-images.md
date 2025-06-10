@@ -1,6 +1,6 @@
 # Capturing consistent color images
 
-**Framework**: Avfoundation
+**Framework**: AVFoundation
 
 Add the power of a photography studio and lighting rig to your app with the new Constant Color API.
 
@@ -48,4 +48,4 @@ Run this sample code on a device that provides the required flash module, such a
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation/capturing-consistent-color-images)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation/capturing-consistent-color-images)*

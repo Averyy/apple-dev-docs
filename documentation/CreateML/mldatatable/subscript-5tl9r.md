@@ -1,6 +1,6 @@
 # subscript(_:)
 
-**Framework**: Createml  
+**Framework**: Create ML  
 **Kind**: subscript
 
 Retrieves or adds a typed column with the specified name.

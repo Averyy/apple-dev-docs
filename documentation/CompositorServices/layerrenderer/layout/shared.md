@@ -6,6 +6,7 @@
 A layout that uses a single texture to store the content for all rendered views.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

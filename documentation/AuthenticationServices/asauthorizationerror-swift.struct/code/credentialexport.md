@@ -20,7 +20,7 @@ case credentialExport
 
 #### Discussion
 
-Details are available in the error’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo).
+Details are available in the error’s [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo).
 
 ## See Also
 

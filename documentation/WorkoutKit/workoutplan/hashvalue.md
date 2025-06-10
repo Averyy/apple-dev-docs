@@ -1,6 +1,6 @@
 # hashValue
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: property
 
 **Availability**:

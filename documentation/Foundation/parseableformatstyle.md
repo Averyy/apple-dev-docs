@@ -27,7 +27,10 @@ protocol ParseableFormatStyle : FormatStyle
 - [associatedtype Strategy : ParseStrategy](parseableformatstyle/strategy.md)
 ### Type Properties
 - [static var dateTime: Date.FormatStyle](parseableformatstyle/datetime.md)
-- [static var iso8601: Date.ISO8601FormatStyle](parseableformatstyle/iso8601.md)
+- [static var http: Date.HTTPFormatStyle](parseableformatstyle/http-6qda5.md)
+- [static var http: DateComponents.HTTPFormatStyle](parseableformatstyle/http-yfpc.md)
+- [static var iso8601: Date.ISO8601FormatStyle](parseableformatstyle/iso8601-41vzo.md)
+- [static var iso8601: DateComponents.ISO8601FormatStyle](parseableformatstyle/iso8601-55wjm.md)
 - [static var number: Decimal.FormatStyle](parseableformatstyle/number.md)
 - [static var percent: Decimal.FormatStyle.Percent](parseableformatstyle/percent.md)
 - [static var url: URL.FormatStyle](parseableformatstyle/url.md)
@@ -45,8 +48,11 @@ protocol ParseableFormatStyle : FormatStyle
 - [Hashable](../Swift/Hashable.md)
 ### Conforming Types
 - [Date.FormatStyle](date/formatstyle.md)
+- [Date.HTTPFormatStyle](date/httpformatstyle.md)
 - [Date.ISO8601FormatStyle](date/iso8601formatstyle.md)
 - [Date.VerbatimFormatStyle](date/verbatimformatstyle.md)
+- [DateComponents.HTTPFormatStyle](datecomponents/httpformatstyle.md)
+- [DateComponents.ISO8601FormatStyle](datecomponents/iso8601formatstyle.md)
 - [Decimal.FormatStyle](decimal/formatstyle.md)
 - [Decimal.FormatStyle.Currency](decimal/formatstyle/currency.md)
 - [Decimal.FormatStyle.Percent](decimal/formatstyle/percent.md)

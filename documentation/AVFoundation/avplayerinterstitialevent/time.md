@@ -22,7 +22,7 @@ var time: CMTime { get set }
 
 #### Discussion
 
-This property value is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/1400807-invalid) if you initialized the event with a date instead of a time.
+This property value is [`invalid`](https://developer.apple.com/documentation/CoreMedia/CMTime/invalid) if you initialized the event with a date instead of a time.
 
 ## See Also
 

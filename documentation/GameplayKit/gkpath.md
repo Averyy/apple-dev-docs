@@ -1,6 +1,6 @@
 # GKPath
 
-**Framework**: Gameplaykit  
+**Framework**: GameplayKit  
 **Kind**: class
 
 A polygonal path that can be followed by an agent.
@@ -84,4 +84,4 @@ To learn more about using goals and agents, see [`Agents, Goals, and Behaviors`]
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/GameplayKit/gkpath)*
+*[View on Apple Developer](https://developer.apple.com/documentation/gameplaykit/gkpath)*

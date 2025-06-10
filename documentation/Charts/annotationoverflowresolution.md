@@ -3,8 +3,6 @@
 **Framework**: Swift Charts  
 **Kind**: struct
 
-The behavior for resolving an annotation that extends past a boundary of the chart.
-
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

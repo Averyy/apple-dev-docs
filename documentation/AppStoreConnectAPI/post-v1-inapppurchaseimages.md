@@ -1,6 +1,6 @@
 # Create an image for an in-app purchase
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 Reserve an image asset to appear in the App Store, representing an in-app purchase.
@@ -26,4 +26,4 @@ Reserve an image asset to appear in the App Store, representing an in-app purcha
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI/post-v1-inapppurchaseimages)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-inapppurchaseimages)*

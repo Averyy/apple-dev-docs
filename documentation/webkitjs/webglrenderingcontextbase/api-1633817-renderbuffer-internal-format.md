@@ -1,6 +1,6 @@
 # RENDERBUFFER_INTERNAL_FORMAT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -10,6 +10,7 @@ A component that orients an entity instance so that it continuously points towar
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -36,8 +37,6 @@ The entity immediately reorients itself so that it faces the scene’s active ca
 
 > ❗ **Important**: An entity with `BillboardComponent` doesn’t provide access to its end orientation. Requesting the entity’s orientation through its transform returns only the unaltered orientation.
 
-An entity with `BillboardComponent` doesn’t provide access to its end orientation. Requesting the entity’s orientation through its transform returns only the unaltered orientation.
-
 For an example of how to animate [`blendFactor`](billboardcomponent/blendfactor.md), see [`BillboardAction`](billboardaction.md).
 
 ## Topics
@@ -48,8 +47,6 @@ For an example of how to animate [`blendFactor`](billboardcomponent/blendfactor.
 ### Instance Properties
 - [var blendFactor: Float](billboardcomponent/blendfactor.md)
   The degree at which the entity rotates toward the camera.
-### Default Implementations
-- [Component Implementations](billboardcomponent/component-implementations.md)
 
 ## Relationships
 
@@ -60,6 +57,12 @@ For an example of how to animate [`blendFactor`](billboardcomponent/blendfactor.
 
 - [struct HoverEffectComponent](hovereffectcomponent.md)
   A component that applies a visual effect to a hierarchy of entities when a person looks at or selects an entity.
+- [struct EnvironmentBlendingComponent](environmentblendingcomponent.md)
+  A component which controls how an entity will blend visually with objects in the user’s local environment
+- [struct LensDistortionData](lensdistortiondata.md)
+  A description of estimated lens distortion that can be used to rectify images.
+- [struct ImagePresentationComponent](imagepresentationcomponent.md)
+  A component that supports general image presentation.
 
 
 ---

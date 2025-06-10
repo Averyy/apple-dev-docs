@@ -1,6 +1,6 @@
 # WKHapticType.success
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Indicates the successful completion of a task or the answering of a question.

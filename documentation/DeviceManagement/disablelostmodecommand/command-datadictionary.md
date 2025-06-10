@@ -3,13 +3,11 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The request dictionary to disable Lost Mode.
+The command to take the device out of Lost Mode.
 
 **Availability**:
 - iOS 9.3+
 - iPadOS 9.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

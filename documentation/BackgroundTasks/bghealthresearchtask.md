@@ -9,8 +9,9 @@ A time-consuming, necessary processing task that runs while the app is in the ba
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- tvOS 13.0+
+- tvOS ?+
 - visionOS 1.0+
+- watchOS 10.0+
 
 ## Declaration
 
@@ -36,12 +37,16 @@ class BGHealthResearchTask
 
 ## See Also
 
+- [Using background tasks to update your app](../UIKit/using-background-tasks-to-update-your-app.md)
+  Configure your app to perform tasks in the background to make efficient use of processing time and power.
+- [Refreshing and Maintaining Your App Using Background Tasks](refreshing-and-maintaining-your-app-using-background-tasks.md)
+  Use scheduled background tasks for refreshing your app content and for performing maintenance.
+- [Choosing Background Strategies for Your App](choosing-background-strategies-for-your-app.md)
+  Select the best method of scheduling background runtime for your app.
 - [class BGProcessingTask](bgprocessingtask.md)
   A time-consuming processing task that runs while the app is in the background.
 - [class BGAppRefreshTask](bgapprefreshtask.md)
   An object representing a short task typically used to refresh content that’s run while the app is in the background.
-- [class BGTask](bgtask.md)
-  An abstract class representing a task that’s run while the app is in the background.
 
 
 ---

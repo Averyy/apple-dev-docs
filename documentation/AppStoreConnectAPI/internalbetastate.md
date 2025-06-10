@@ -28,6 +28,11 @@ string InternalBetaState
   A response that contains a list of Build Beta Detail resources.
 - [type ExternalBetaState](externalbetastate.md)
   String that represents a build’s availability for external testing.
+- [object BuildBuildBetaDetailLinkageResponse](buildbuildbetadetaillinkageresponse.md)
+- [object BuildBundleAppClipDomainCacheStatusLinkageResponse](buildbundleappclipdomaincachestatuslinkageresponse.md)
+- [object BuildBundleAppClipDomainDebugStatusLinkageResponse](buildbundleappclipdomaindebugstatuslinkageresponse.md)
+- [object BuildBundleBetaAppClipInvocationsLinkagesResponse](buildbundlebetaappclipinvocationslinkagesresponse.md)
+- [object BuildBundleBuildBundleFileSizesLinkagesResponse](buildbundlebuildbundlefilesizeslinkagesresponse.md)
 
 
 ---

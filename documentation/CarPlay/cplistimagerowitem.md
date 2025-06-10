@@ -13,6 +13,7 @@ A list template row that displays a series of images.
 ## Declaration
 
 ```swift
+@MainActor
 class CPListImageRowItem
 ```
 
@@ -53,9 +54,24 @@ CarPlay doesn’t support custom list item types. Instead, use the `userInfo` pr
 ### Enabling Items
 - [var isEnabled: Bool](cplistimagerowitem/isenabled.md)
   A Boolean value that indicates if the item is enabled.
+### Initializers
+- [init(text: String?, cardElements: [CPListImageRowItemCardElement], allowsMultipleLines: Bool)](cplistimagerowitem/init(text:cardelements:allowsmultiplelines:).md)
+  Initialize a list image row item with a text string, an array of @c CPListImageRowItemCardElement and a boolean to allow multiple lines in this row.
+- [init(text: String?, condensedElements: [CPListImageRowItemCondensedElement], allowsMultipleLines: Bool)](cplistimagerowitem/init(text:condensedelements:allowsmultiplelines:).md)
+  Initialize a list image row item with a text string, an array of @c CPListImageRowItemCondensedElement and a boolean to allow multiple lines in this row.
+- [init(text: String?, elements: [CPListImageRowItemRowElement], allowsMultipleLines: Bool)](cplistimagerowitem/init(text:elements:allowsmultiplelines:).md)
+  Initialize a list image row item with a text string, an array of @c CPListImageRowItemRowElement and a boolean to allow multiple lines in this row.
+- [init(text: String?, gridElements: [CPListImageRowItemGridElement], allowsMultipleLines: Bool)](cplistimagerowitem/init(text:gridelements:allowsmultiplelines:).md)
+  Initialize a list image row item with a text string, an array of @c CPListImageRowItemGridElement and a boolean to allow multiple lines in this row.
+- [init(text: String?, imageGridElements: [CPListImageRowItemImageGridElement], allowsMultipleLines: Bool)](cplistimagerowitem/init(text:imagegridelements:allowsmultiplelines:).md)
+  Initialize a list image row item with a text string, an array of @c CPListImageRowItemImageGridElement and a boolean to allow multiple lines in this row.
 ### Instance Properties
+- [var allowsMultipleLines: Bool](cplistimagerowitem/allowsmultiplelines.md)
+  A Boolean value indicating whether the elements should be visible in more than a single line.
+- [var elements: [CPListImageRowItemElement]](cplistimagerowitem/elements.md)
+  The array of elements used to draw visible elements.
 - [var imageTitles: [String]](cplistimagerowitem/imagetitles.md)
-  Update the titles displayed each image in this image row item. If this image row item is already displayed in a list template, then it will be automatically reloaded.
+  The titles displayed for each image in this image row item.
 
 ## Relationships
 
@@ -70,6 +86,7 @@ CarPlay doesn’t support custom list item types. Instead, use the `userInfo` pr
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
 
 ## See Also
 

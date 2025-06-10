@@ -44,6 +44,9 @@ Opaque pointers are used to represent C pointers to types that cannot be represe
   Creates a new `OpaquePointer` from the given address, specified as a bit pattern.
 - [init?(bitPattern: UInt)](opaquepointer/init(bitpattern:)-7f8tm.md)
   Creates a new `OpaquePointer` from the given address, specified as a bit pattern.
+### Instance Properties
+- [var intendedSpatialExperience: any SpatialAudioExperience](opaquepointer/intendedspatialexperience.md)
+  The AudioQueue’s intended spatial audio experience.
 ### Default Implementations
 - [AtomicOptionalRepresentable Implementations](opaquepointer/atomicoptionalrepresentable-implementations.md)
 - [AtomicRepresentable Implementations](opaquepointer/atomicrepresentable-implementations.md)

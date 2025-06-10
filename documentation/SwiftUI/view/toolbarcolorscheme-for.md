@@ -83,6 +83,8 @@ Depending on the specified bars, the requested color scheme may not be able to b
   The label style to apply to controls within a toolbar.
 - [struct ToolbarLabelStyle](toolbarlabelstyle.md)
   The label style of a toolbar.
+- [struct SpacerSizing](spacersizing.md)
+  A type which defines how spacers should size themselves.
 
 
 ---

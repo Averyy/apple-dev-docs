@@ -17,6 +17,14 @@
 func MACaptionAppearanceIsCustomized(_ domain: MACaptionAppearanceDomain) -> Bool
 ```
 
+#### Return Value
+
+A boolean indicating if the currently-active style has been customized by the user
+
+## Parameters
+
+- `domain`: Preference domain, see  @link MACaptionAppearanceDomain @/link.
+
 
 ---
 

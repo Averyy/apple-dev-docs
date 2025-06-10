@@ -26,8 +26,6 @@ After you request a photo capture with the [`capturePhoto(with:delegate:)`](avca
 
 > ❗ **Important**:  The `rawSampleBuffer` parameter must reference a sample buffer from a RAW capture. See the [`rawPhotoPixelFormatType`](avcapturephotosettings/rawphotopixelformattype.md) property for photo capture settings.
 
- The `rawSampleBuffer` parameter must reference a sample buffer from a RAW capture. See the [`rawPhotoPixelFormatType`](avcapturephotosettings/rawphotopixelformattype.md) property for photo capture settings.
-
 ## Parameters
 
 - `rawSampleBuffer`: A sample buffer containing the RAW photo capture result to be formatted for output.

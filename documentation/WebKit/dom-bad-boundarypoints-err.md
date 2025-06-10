@@ -1,6 +1,6 @@
 # DOM_BAD_BOUNDARYPOINTS_ERR
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: var
 
 **Availability**:

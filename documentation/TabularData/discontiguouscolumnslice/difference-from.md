@@ -1,6 +1,6 @@
 # difference(from:)
 
-**Framework**: Tabulardata  
+**Framework**: TabularData  
 **Kind**: method
 
 Returns the difference needed to produce this collection’s ordered elements from the given collection.

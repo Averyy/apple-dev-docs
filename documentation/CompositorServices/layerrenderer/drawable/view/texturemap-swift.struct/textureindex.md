@@ -1,11 +1,12 @@
 # textureIndex
 
-**Framework**: Compositorservices  
+**Framework**: Compositor Services  
 **Kind**: property
 
 The index of the view’s textures in the drawable.
 
 **Availability**:
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -34,4 +35,4 @@ Compositor Services places the color and depth textures for this view at same in
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CompositorServices/layerrenderer/drawable/view/texturemap-swift.struct/textureindex)*
+*[View on Apple Developer](https://developer.apple.com/documentation/compositorservices/layerrenderer/drawable/view/texturemap-swift.struct/textureindex)*

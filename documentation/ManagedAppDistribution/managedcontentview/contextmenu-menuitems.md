@@ -1,6 +1,6 @@
 # contextMenu(menuItems:)
 
-**Framework**: Managedappdistribution  
+**Framework**: ManagedAppDistribution  
 **Kind**: method
 
 Adds a context menu to a view.

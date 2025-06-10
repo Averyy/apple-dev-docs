@@ -1,6 +1,6 @@
 # The QTVR flattener
 
-**Framework**: Quicktime File Format
+**Framework**: QuickTime File Format
 
 Optimize a movie for delivery over the web.
 

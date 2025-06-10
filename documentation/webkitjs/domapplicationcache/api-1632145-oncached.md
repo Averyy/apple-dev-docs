@@ -1,6 +1,6 @@
 # oncached
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 Sent when the update process finishes for the first time—that is, the first time an application cache is saved.

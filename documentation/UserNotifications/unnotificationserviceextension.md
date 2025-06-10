@@ -1,6 +1,6 @@
 # UNNotificationServiceExtension
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: class
 
 An object that modifies the content of a remote notification before it’s delivered to the user.
@@ -72,4 +72,4 @@ The Xcode templates provide a subclass of [`UNNotificationServiceExtension`](unn
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UserNotifications/unnotificationserviceextension)*
+*[View on Apple Developer](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension)*

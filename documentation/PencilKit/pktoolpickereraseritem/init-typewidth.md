@@ -9,6 +9,7 @@ Creates a new eraser item with the specified width.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
+- macOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration

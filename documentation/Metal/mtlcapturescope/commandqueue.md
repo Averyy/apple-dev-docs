@@ -22,7 +22,7 @@ var commandQueue: (any MTLCommandQueue)? { get }
 
 #### Discussion
 
-This value is only available if you created the capture scope by calling the [`makeCaptureScope(commandQueue:)`](mtlcapturemanager/makecapturescope(commandqueue:).md) method. Otherwise, the value is `nil`.
+This value is only available if you created the capture scope by calling the [`makeCaptureScope(commandQueue:)`](mtlcapturemanager/makecapturescope(commandqueue:)-1rozd.md) method. Otherwise, the value is `nil`.
 
 ## See Also
 

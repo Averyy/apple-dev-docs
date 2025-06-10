@@ -20,6 +20,12 @@ Get detail information about a specific alternative distribution package version
   List deltas for a specific alternative distribution package version.
 - [List variants information](get-v1-alternativedistributionpackageversions-_id_-variants.md)
   List variants for specific alternative distribution package version.
+- [List delta Ids](get-v1-alternativedistributionpackageversions-_id_-relationships-deltas.md)
+  List all delta Ids for a specific alternative distribution package version.
+- [List variant Ids information](get-v1-alternativedistributionpackageversions-_id_-relationships-variants.md)
+  List variant Ids for specific alternative distribution package version.
+- [Read version Ids for an alternative distribution package](get-v1-alternativedistributionpackages-_id_-relationships-versions.md)
+  Get version IDs about a specific alternative distribution package.
 
 
 ---

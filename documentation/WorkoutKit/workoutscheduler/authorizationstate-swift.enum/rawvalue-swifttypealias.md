@@ -1,6 +1,6 @@
 # WorkoutScheduler.AuthorizationState.RawValue
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: typealias
 
 The data type for the authorization status’s raw value.

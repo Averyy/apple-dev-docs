@@ -1,6 +1,6 @@
 # init(url:title:albumTitle:artist:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: init
 
 Returns an audio file asset and sets the metadata for that item.

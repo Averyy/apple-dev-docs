@@ -128,4 +128,4 @@ When Xcode Cloud performs the archive action, it accesses your code and runs the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/configuring-your-xcode-cloud-workflow-s-actions)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/configuring-your-xcode-cloud-workflow-s-actions)*

@@ -1,6 +1,6 @@
 # ActivityPreviewViewKind.DynamicIslandPreviewViewState.compact
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: case
 
 The presentation of a Live Activity in the Dynamic Island that shows both the [`compactLeading`](dynamicislandmode/compactleading.md) and [`compactTrailing`](dynamicislandmode/compacttrailing.md) views combined.
@@ -8,7 +8,6 @@ The presentation of a Live Activity in the Dynamic Island that shows both the [`
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
-- Mac Catalyst 16.2+
 
 ## Declaration
 

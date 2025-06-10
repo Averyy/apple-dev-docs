@@ -1,6 +1,6 @@
 # Adding an HTML Table
 
-**Framework**: Applenews
+**Framework**: Apple News
 
 Add a table formatted in HTML to your article.
 
@@ -64,4 +64,4 @@ This code results in a table with two columns and two rows — one row is for th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppleNews/adding-an-html-table)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applenews/adding-an-html-table)*

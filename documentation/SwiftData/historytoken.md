@@ -36,6 +36,7 @@ protocol HistoryToken : Comparable, Decodable, Encodable, Hashable, Identifiable
 - [Hashable](../Swift/Hashable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [DefaultHistoryToken](defaulthistorytoken.md)
 

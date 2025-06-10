@@ -1,6 +1,6 @@
 # XCTAttachment.ImageQuality.low
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: case
 
 Low image quality, represented as a highly compressed lossy JPEG image.

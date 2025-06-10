@@ -6,9 +6,9 @@
 Value is a set of [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) objects identifying the assets that were updated.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

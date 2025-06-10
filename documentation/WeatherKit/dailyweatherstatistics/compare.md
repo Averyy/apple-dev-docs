@@ -1,6 +1,6 @@
 # compare(_:_:)
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 If `lhs` is ordered before `rhs` in the ordering described by the given sequence of `SortComparator`s

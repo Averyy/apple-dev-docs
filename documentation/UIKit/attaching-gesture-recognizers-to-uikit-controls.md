@@ -16,8 +16,6 @@ To handle any of the preceding gestures before the control calls its action meth
 
 > ❗ **Important**:  Always consult the platform-specific human interface guidelines before changing the default behavior of standard controls. For more information, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/platforms/overview).
 
- Always consult the platform-specific human interface guidelines before changing the default behavior of standard controls. For more information, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/platforms/overview).
-
 ## See Also
 
 - [Preferring one gesture over another](preferring-one-gesture-over-another.md)

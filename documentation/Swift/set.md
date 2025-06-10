@@ -338,6 +338,7 @@ Bridging from `NSSet` to `Set` first calls the `copy(with:)` method (`- copyWith
 - [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
+- [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)
 - [SetAlgebra](setalgebra.md)
 

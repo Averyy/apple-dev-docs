@@ -73,7 +73,7 @@ The figure below illustrates a command encoder inserting commands into a command
 
 You encode actual commands with concrete subclasses of [`MTLCommandEncoder`](mtlcommandencoder.md), depending on your task. For example, use [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) to issue render commands, and [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) to issue parallel computation commands. For a complete list of subclasses, see [`MTLCommandEncoder`](mtlcommandencoder.md).
 
-For a complete rendering example, see [`Using a Render Pipeline to Render Primitives`](using-a-render-pipeline-to-render-primitives.md). For a complete parallel processing example, see [`Processing a Texture in a Compute Function`](processing-a-texture-in-a-compute-function.md).
+For a complete rendering example, see [`Using a Render Pipeline to Render Primitives`](using-a-render-pipeline-to-render-primitives.md). For a complete parallel processing example, see [`Processing a texture in a compute function`](processing-a-texture-in-a-compute-function.md).
 
 ###### Commit a Command Buffer
 

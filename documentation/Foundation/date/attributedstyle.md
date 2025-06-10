@@ -82,6 +82,7 @@ If you create a SwiftUI [`Text`](https://developer.apple.com/documentation/Swift
 - [FormatStyle](formatstyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # description
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 A localized string describing the form of precipitation.

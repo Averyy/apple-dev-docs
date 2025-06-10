@@ -1,40 +1,34 @@
-# !=(_:_:)
+# ==(_:_:)
 
 **Framework**: RealityKit  
 **Kind**: op
 
-Returns a Boolean value indicating whether two values are not equal.
+Returns a Boolean value that indicates whether two bind targets are equal.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func == (lhs: BindTarget, rhs: BindTarget) -> Bool
 ```
 
-#### Discussion
+#### Return Value
 
-Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
-
-This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+Returns `true` if the bind targets are equal. Otherwise, returns `false`.
 
 ## Parameters
 
-- `lhs`: A value to compare.
-- `rhs`: Another value to compare.
-
-## See Also
-
-- [static func == (BindTarget, BindTarget) -> Bool](bindtarget/==(_:_:).md)
-  Returns a Boolean value that indicates whether two bind targets are equal.
+- `lhs`: The bind target on the left side of the operator.
+- `rhs`: The bind target on the right side of the operator.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/bindtarget/!=(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/bindtarget/==(_:_:))*

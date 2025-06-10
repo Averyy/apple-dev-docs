@@ -10,6 +10,7 @@ An enumeration for specifying how to allocate and generate mipmaps for a texture
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -28,16 +29,8 @@ enum MipmapsMode
 - [TextureResource.MipmapsMode.allocateAndGenerateAll](textureresource/mipmapsmode/allocateandgenerateall.md)
   Allocate and generate all mipmaps for the texture resource.
 ### Comparing enumeration values
-- [var hashValue: Int](textureresource/mipmapsmode/hashvalue.md)
-  The hash value.
-- [func hash(into: inout Hasher)](textureresource/mipmapsmode/hash(into:).md)
-  Hashes the essential components of this value by feeding them into the given hasher.
-- [static func == (TextureResource.MipmapsMode, TextureResource.MipmapsMode) -> Bool](textureresource/mipmapsmode/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](textureresource/mipmapsmode/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
-### Default Implementations
-- [Equatable Implementations](textureresource/mipmapsmode/equatable-implementations.md)
+- [static ==(_:_:)](textureresource/==(_:_:).md)
+  Indicates whether two texture resources are equal.
 
 ## Relationships
 
@@ -46,6 +39,7 @@ enum MipmapsMode
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -53,8 +47,6 @@ enum MipmapsMode
   A representation of a texture.
 - [TextureResource.CreateOptions](textureresource/createoptions.md)
   An object that holds texture resource creation options.
-- [TextureResource.SamplingQuality](textureresource/samplingquality.md)
-  An object for controlling the texture-sampling quality.
 - [TextureResource.Semantic](textureresource/semantic-swift.enum.md)
   An object for specifying the intended use of a texture.
 

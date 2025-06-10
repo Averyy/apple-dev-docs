@@ -10,7 +10,7 @@ Links multiple accessibility elements so that the user can quickly navigate from
 - iPadOS 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS 1.0+
+- visionOS ?+
 - watchOS 7.0+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # WKInterfaceObjectHorizontalAlignment.center
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 Center alignment. The object’s content is centered horizontally in the container and extends equally to the left and right.

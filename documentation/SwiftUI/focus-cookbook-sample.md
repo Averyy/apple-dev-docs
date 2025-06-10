@@ -1,6 +1,6 @@
 # Focus Cookbook: Supporting and enhancing focus-driven interactions in your SwiftUI app
 
-**Framework**: Swiftui
+**Framework**: SwiftUI
 
 Create custom focusable views with key-press handlers that accelerate keyboard input and support movement, and control focus programmatically.
 
@@ -17,4 +17,4 @@ Create custom focusable views with key-press handlers that accelerate keyboard i
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI/focus-cookbook-sample)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/focus-cookbook-sample)*

@@ -3,7 +3,7 @@
 **Framework**: FinanceKit  
 **Kind**: method
 
-Persists a the  history token data using  the provided encoder.
+Encodes the history token into the provided encoder.
 
 **Availability**:
 - iOS 17.4+

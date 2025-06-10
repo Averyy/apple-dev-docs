@@ -210,4 +210,4 @@ Xcode creates a scheme for each product in the package manifest. Select a scheme
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/creating-a-standalone-swift-package-with-xcode)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/creating-a-standalone-swift-package-with-xcode)*

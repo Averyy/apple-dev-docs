@@ -66,4 +66,4 @@ Once you know which regions of an image are interesting, you can use the output 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Vision/cropping-images-using-saliency)*
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/cropping-images-using-saliency)*

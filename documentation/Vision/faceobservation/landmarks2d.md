@@ -53,12 +53,13 @@ This represents the set of all detectable 2D face landmarks and regions, exposed
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [enum RequestDescriptor](requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let landmarks: FaceObservation.Landmarks2D?](faceobservation/landmarks.md)
+- [var landmarks: FaceObservation.Landmarks2D?](faceobservation/landmarks.md)
   The facial features of the detected face.
 - [let pitch: Measurement<UnitAngle>](faceobservation/pitch.md)
   The pitch angle of a face.

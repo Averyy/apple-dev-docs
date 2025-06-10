@@ -1,6 +1,6 @@
 # MPSImageMedian
 
-**Framework**: Metalperformanceshaders  
+**Framework**: Metal Performance Shaders  
 **Kind**: cl
 
 A filter that applies a median filter in a square region centered around each pixel in the source image.

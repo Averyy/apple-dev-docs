@@ -20,8 +20,6 @@ Use the Media Player framework, which is part of [`MusicKit`](https://developer.
 
 > ❗ **Important**:  To protect user privacy, users need to grant permission for your app to access their media library. Add the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppleMusicUsageDescription) key to your app’s `Info.plist` file, and include a description of how you intend to use the user’s library. If this key isn’t present, the system terminates your app when it tries to access the user’s library.
 
- To protect user privacy, users need to grant permission for your app to access their media library. Add the [`NSAppleMusicUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppleMusicUsageDescription) key to your app’s `Info.plist` file, and include a description of how you intend to use the user’s library. If this key isn’t present, the system terminates your app when it tries to access the user’s library.
-
 To play content from the user’s library using the Media Player framework, use one of the built-in [`MPMusicPlayerController`](mpmusicplayercontroller.md) objects:
 
 - An  plays music locally within your app. Use this player when you want greater control over the audio you play for the user. This player doesn’t change the state of the built-in Music app.
@@ -32,8 +30,6 @@ Use media queries to retrieve the items you want to play and to populate the que
 You can’t play video media items directly using the Media Player framework. To play videos containing [`MPMediaItem`](mpmediaitem.md) objects, use an [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) object from [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation). The system player also provides a way to play video items using the system apps.
 
 > ❗ **Important**:  Only use this framework to facilitate playback of the user’s audio content within your app. Don’t gather information about the user’s audio content for any other purpose. For more information about accessing Apple Music content, see the [`App Store review guidelines`](https://developer.apple.comhttps://developer.apple.com/app-store/review/guidelines/#apple-sites-and-services).
-
- Only use this framework to facilitate playback of the user’s audio content within your app. Don’t gather information about the user’s audio content for any other purpose. For more information about accessing Apple Music content, see the [`App Store review guidelines`](https://developer.apple.comhttps://developer.apple.com/app-store/review/guidelines/#apple-sites-and-services).
 
 ## Topics
 
@@ -83,6 +79,8 @@ You can’t play video media items directly using the Media Player framework. To
   A collection of properties that represents a single item in the media library.
 - [class MPMediaItemArtwork](mpmediaitemartwork.md)
   A graphical image, such as music album cover art, associated with a media item.
+- [class MPMediaItemAnimatedArtwork](mpmediaitemanimatedartwork.md)
+  An animated image, such as an animated music album cover art, for a media item.
 - [class MPMediaItemCollection](mpmediaitemcollection.md)
   A sorted set of media items from the media library.
 - [class MPMediaPlaylist](mpmediaplaylist.md)

@@ -17,13 +17,14 @@ Returns the deepest visible descendant that intersects a point.
 ## Declaration
 
 ```swift
+@MainActor
 func atPoint(_ p: CGPoint) -> SKNode
 ```
 
 ## Mentions
 
-- [Understanding Hit-Testing](understanding-hit-testing.md)
 - [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
+- [Understanding Hit-Testing](understanding-hit-testing.md)
 
 #### Return Value
 

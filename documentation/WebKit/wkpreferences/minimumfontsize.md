@@ -1,6 +1,6 @@
 # minimumFontSize
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The minimum font size, in points.

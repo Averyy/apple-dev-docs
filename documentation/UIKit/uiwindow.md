@@ -137,6 +137,14 @@ If you need to know which window is key, observe the [`didBecomeKeyNotification`
   A layout guide for placing content of a particular aspect ratio.
 - [protocol UILayoutGuideAspectFitting](uilayoutguideaspectfitting.md)
   The interface for a layout guide that supports a particular aspect ratio.
+### Structures
+- [UIWindow.DidBecomeHiddenMessage](uiwindow/didbecomehiddenmessage.md)
+- [UIWindow.DidBecomeKeyMessage](uiwindow/didbecomekeymessage.md)
+- [UIWindow.DidBecomeVisibleMessage](uiwindow/didbecomevisiblemessage.md)
+- [UIWindow.DidResignKeyMessage](uiwindow/didresignkeymessage.md)
+### Initializers
+- [convenience init()](uiwindow/init.md)
+- [init(frame: CGRect)](uiwindow/init(frame:).md)
 
 ## Relationships
 
@@ -153,6 +161,7 @@ If you need to know which window is key, observe the [`didBecomeKeyNotification`
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
 - [UIAppearance](uiappearance.md)

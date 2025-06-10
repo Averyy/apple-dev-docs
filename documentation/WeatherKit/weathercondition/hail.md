@@ -1,6 +1,6 @@
 # WeatherCondition.hail
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: case
 
 Hail.

@@ -1,6 +1,6 @@
 # jsonRepresentation
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: property
 
 The JSON representation of the subscription renewal information.

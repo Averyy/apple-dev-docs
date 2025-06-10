@@ -17,7 +17,7 @@ Tells the delegate a new collection of metadata items is available.
 ## Declaration
 
 ```swift
-optional func metadataOutput(_ output: AVPlayerItemMetadataOutput, didOutputTimedMetadataGroups groups: [AVTimedMetadataGroup], from track: AVPlayerItemTrack?)
+optional func metadataOutput(_ output: AVPlayerItemMetadataOutput, didOutputTimedMetadataGroups groups: sending [AVTimedMetadataGroup], from track: AVPlayerItemTrack?)
 ```
 
 #### Discussion

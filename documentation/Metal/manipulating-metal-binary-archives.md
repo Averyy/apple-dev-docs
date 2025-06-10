@@ -71,4 +71,4 @@ The `metal-lipo` command-line tool also has a `-create` flag that performs the o
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/manipulating-metal-binary-archives)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/manipulating-metal-binary-archives)*

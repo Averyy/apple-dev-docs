@@ -1,6 +1,6 @@
 # resetAuthorizationStatus(for:)
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Resets the authorization status for a protected resource.

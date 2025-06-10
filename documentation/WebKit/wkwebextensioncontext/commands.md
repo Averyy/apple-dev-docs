@@ -1,6 +1,6 @@
 # commands
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The commands associated with the extension.

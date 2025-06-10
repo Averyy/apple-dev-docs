@@ -36,6 +36,9 @@ class AVAssetVariant
   The average bit rate for the variant.
 - [var peakBitRate: Double?](avassetvariant/peakbitrate-9hzpi.md)
   The peak bit rate for the variant.
+### Instance Properties
+- [var url: URL](avassetvariant/url.md)
+  Provides URL to media playlist corresponding to variant
 
 ## Relationships
 
@@ -49,6 +52,7 @@ class AVAssetVariant
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # init(delegate:queue:invalidateAfterFirstRead:)
 
-**Framework**: Corenfc  
+**Framework**: Core NFC  
 **Kind**: init
 
 Creates and initializes a new NFC NDEF reader session.

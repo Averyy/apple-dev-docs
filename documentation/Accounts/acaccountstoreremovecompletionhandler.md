@@ -23,7 +23,7 @@ The completion handler parameters are:
 
 ## See Also
 
-- [func removeAccount(ACAccount!, withCompletionHandler: ACAccountStoreRemoveCompletionHandler!)](acaccountstore/removeaccount(_:withcompletionhandler:).md)
+- [func removeAccount(ACAccount!, withCompletionHandler: ((Bool, (any Error)?) -> Void)!)](acaccountstore/removeaccount(_:withcompletionhandler:).md)
   Removes an account from the account store.
 
 

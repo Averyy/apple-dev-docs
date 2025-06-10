@@ -19,7 +19,7 @@ static var inConflict: UIDocument.State { get }
 
 #### Discussion
 
-You can access these conflicting document versions by calling the [`otherVersionsOfItem(at:)`](https://developer.apple.com/documentation/foundation/nsfileversion/1418163-otherversionsofitem) class method of the [`NSFileVersion`](https://developer.apple.com/documentation/Foundation/NSFileVersion) class. This method returns an array of [`NSFileVersion`](https://developer.apple.com/documentation/Foundation/NSFileVersion) objects. You can then resolve the conflicting versions — for example, programmatically attempt to merge the versions or present the document versions to a person and request them to pick one.
+You can access these conflicting document versions by calling the [`otherVersionsOfItem(at:)`](https://developer.apple.com/documentation/Foundation/NSFileVersion/otherVersionsOfItem(at:)) class method of the [`NSFileVersion`](https://developer.apple.com/documentation/Foundation/NSFileVersion) class. This method returns an array of [`NSFileVersion`](https://developer.apple.com/documentation/Foundation/NSFileVersion) objects. You can then resolve the conflicting versions — for example, programmatically attempt to merge the versions or present the document versions to a person and request them to pick one.
 
 ## See Also
 

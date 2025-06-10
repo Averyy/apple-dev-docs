@@ -9,7 +9,7 @@ An option that instructs the captured room to enhance its look.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

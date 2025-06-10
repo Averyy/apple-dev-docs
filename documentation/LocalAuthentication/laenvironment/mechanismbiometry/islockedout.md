@@ -19,10 +19,7 @@ var isLockedOut: Bool { get }
 
 #### Discussion
 
-```None
-        locked out after 5 failed match attempts in row. To recover from bio lockout, users need to enter their passcode
-        (e.g. during device ulock).
-```
+The system might lock the user out of biometry for various reasons. For example, with Face ID, the user is locked out after 5 failed match attempts in row. To recover from bio lockout, users need to enter their passcode (e.g. during device ulock).
 
 
 ---

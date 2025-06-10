@@ -32,4 +32,4 @@ The `Security.SecSharedCredentials` API provides functions for storing and reque
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/shared-web-credentials)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/shared-web-credentials)*

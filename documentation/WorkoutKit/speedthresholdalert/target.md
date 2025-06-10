@@ -1,6 +1,6 @@
 # target
 
-**Framework**: Workoutkit  
+**Framework**: WorkoutKit  
 **Kind**: property
 
 A speed measurement that represents the target threshold.
@@ -10,6 +10,7 @@ A speed measurement that represents the target threshold.
 - iPadOS 17.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- visionOS ?+
 - watchOS 10.0+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # Setting up a watchOS project
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Create a new watchOS project or add a watch target to an existing iOS project.
 

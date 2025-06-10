@@ -20,7 +20,7 @@ case partialFailure
 
 #### Discussion
 
-When you receive an error of this type, the [`underlyingErrorsKey`](clserroruserinfokey/underlyingerrorskey.md) key in the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary provides an array of the individual errors contributing to this one.
+When you receive an error of this type, the [`underlyingErrorsKey`](clserroruserinfokey/underlyingerrorskey.md) key in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary provides an array of the individual errors contributing to this one.
 
 ## See Also
 

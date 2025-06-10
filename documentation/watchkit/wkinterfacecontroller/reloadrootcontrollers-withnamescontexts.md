@@ -1,6 +1,6 @@
 # reloadRootControllers(withNames:contexts:)
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: method
 
 Loads the specified interface controllers and rebuilds the app’s page-based interface.

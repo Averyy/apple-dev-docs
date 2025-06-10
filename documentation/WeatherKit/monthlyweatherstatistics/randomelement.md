@@ -1,6 +1,6 @@
 # randomElement()
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: method
 
 Returns a random element of the collection.

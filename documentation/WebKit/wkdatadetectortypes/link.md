@@ -1,6 +1,6 @@
 # link
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 Detect URLs in text and turn them into links.

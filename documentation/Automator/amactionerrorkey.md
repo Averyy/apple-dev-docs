@@ -17,7 +17,7 @@ var AMActionErrorKey: String { get }
 
 #### Discussion
 
-Use this key to obtain, from the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/1411580-userinfo) dictionary of an instance of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError), a reference to the action ([`AMAction`](amaction.md)) that caused the error.
+Use this key to obtain, from the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSError/userInfo) dictionary of an instance of [`NSError`](https://developer.apple.com/documentation/Foundation/NSError), a reference to the action ([`AMAction`](amaction.md)) that caused the error.
 
 ## See Also
 

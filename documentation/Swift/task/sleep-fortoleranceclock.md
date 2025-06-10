@@ -17,7 +17,7 @@ Suspends the current task for the given duration.
 ## Declaration
 
 ```swift
-static func sleep<C>(for duration: C.Instant.Duration, tolerance: C.Instant.Duration? = nil, clock: C = ContinuousClock()) async throws where C : Clock
+static func sleep<C>(for duration: C.Instant.Duration, tolerance: C.Instant.Duration? = nil, clock: C = .continuous) async throws where C : Clock
 ```
 
 #### Discussion

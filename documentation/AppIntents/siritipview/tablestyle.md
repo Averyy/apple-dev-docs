@@ -9,7 +9,7 @@ Sets the style for tables within this view.
 - iOS 16.0+
 - iPadOS 16.0+
 - macOS 12.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # seekable
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The ranges that can be played in a nonlinear fashion. (read-only)

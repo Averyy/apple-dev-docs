@@ -1,6 +1,6 @@
 # UNSIGNED_INT_24_8
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

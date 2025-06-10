@@ -25,8 +25,6 @@ This method displays a system sheet in the view, where customers can enter and r
 
 > ❗ **Important**:  Set up subscription offer codes in App Store Connect before calling this API. Customers can only redeem these offers in your app through the redemption sheet; don’t use a custom UI.
 
- Set up subscription offer codes in App Store Connect before calling this API. Customers can only redeem these offers in your app through the redemption sheet; don’t use a custom UI.
-
 For more information on offer codes, see [`Supporting subscription offer codes in your app`](supporting-subscription-offer-codes-in-your-app.md).
 
 When customers redeem an offer code, StoreKit emits the resulting transaction in [`updates`](transaction/updates.md). Set up a transaction listener as soon as your app launches to receive new transactions while the app is running.

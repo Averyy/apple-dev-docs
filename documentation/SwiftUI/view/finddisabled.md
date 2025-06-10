@@ -9,6 +9,7 @@ Prevents find and replace operations in a text editor.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
+- macOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -62,6 +63,8 @@ VStack {
   Programmatically presents the find and replace interface for text editor views.
 - [func replaceDisabled(Bool) -> some View](view/replacedisabled(_:).md)
   Prevents replace operations in a text editor.
+- [struct FindContext](findcontext.md)
+  The status of the find navigator for views which support text editing.
 
 
 ---

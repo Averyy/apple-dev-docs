@@ -24,7 +24,7 @@ class MTRBaseClusterOtaSoftwareUpdateProvider
 - [init?(device: MTRBaseDevice, endpoint: UInt16, queue: dispatch_queue_t)](mtrbaseclusterotasoftwareupdateprovider-2vync/init(device:endpoint:queue:).md)
 ### Instance Methods
 - [func applyUpdateRequest(with: MTROtaSoftwareUpdateProviderClusterApplyUpdateRequestParams, completionHandler: (MTROtaSoftwareUpdateProviderClusterApplyUpdateResponseParams?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdateprovider-2vync/applyupdaterequest(with:completionhandler:).md)
-- [func notifyUpdateApplied(with: MTROtaSoftwareUpdateProviderClusterNotifyUpdateAppliedParams, completionHandler: MTRStatusCompletion)](mtrbaseclusterotasoftwareupdateprovider-2vync/notifyupdateapplied(with:completionhandler:).md)
+- [func notifyUpdateApplied(with: MTROtaSoftwareUpdateProviderClusterNotifyUpdateAppliedParams, completionHandler: ((any Error)?) -> Void)](mtrbaseclusterotasoftwareupdateprovider-2vync/notifyupdateapplied(with:completionhandler:).md)
 - [func queryImage(with: MTROtaSoftwareUpdateProviderClusterQueryImageParams, completionHandler: (MTROtaSoftwareUpdateProviderClusterQueryImageResponseParams?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdateprovider-2vync/queryimage(with:completionhandler:).md)
 - [func readAttributeAcceptedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdateprovider-2vync/readattributeacceptedcommandlist(completionhandler:).md)
 - [func readAttributeAttributeList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterotasoftwareupdateprovider-2vync/readattributeattributelist(completionhandler:).md)

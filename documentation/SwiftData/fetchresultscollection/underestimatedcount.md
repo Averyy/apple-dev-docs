@@ -1,6 +1,6 @@
 # underestimatedCount
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: property
 
 A value less than or equal to the number of elements in the collection.

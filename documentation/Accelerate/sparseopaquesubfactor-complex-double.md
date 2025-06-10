@@ -37,6 +37,15 @@ struct SparseOpaqueSubfactor_Complex_Double
 - [var workspaceRequiredPerRHS: Int](sparseopaquesubfactor_complex_double/workspacerequiredperrhs.md)
 - [var workspaceRequiredStatic: Int](sparseopaquesubfactor_complex_double/workspacerequiredstatic.md)
 
+## See Also
+
+- [struct SparseOpaqueSubfactor_Double](sparseopaquesubfactor_double.md)
+  Represents a sub-factor of the factorization (for example,  `L` from `LDL^T`).
+- [struct SparseOpaqueSubfactor_Float](sparseopaquesubfactor_float.md)
+  Represents a sub-factor of the factorization (for example,  `L` from `LDL^T`).
+- [struct SparseOpaqueSubfactor_Complex_Float](sparseopaquesubfactor_complex_float.md)
+  Represents a sub-factor of the factorization (for example,  `L` from `LDL^T`).
+
 
 ---
 

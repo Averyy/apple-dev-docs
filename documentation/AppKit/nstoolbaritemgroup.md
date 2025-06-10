@@ -96,6 +96,7 @@ If instead you set a view on the parent item, you get two labels with one shared
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSValidatedUserInterfaceItem](nsvalidateduserinterfaceitem.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

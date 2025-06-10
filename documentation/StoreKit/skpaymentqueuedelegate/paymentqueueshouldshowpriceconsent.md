@@ -1,6 +1,6 @@
 # paymentQueueShouldShowPriceConsent(_:)
 
-**Framework**: Storekit  
+**Framework**: StoreKit  
 **Kind**: method
 
 Asks the delegate whether to immediately display a price consent sheet.

@@ -17,8 +17,6 @@ When your app receives a low-memory warning, free up as much memory as possible,
 
 > ❗ **Important**:  Failure to reduce your app’s memory usage may result in your app’s termination. Therefore, consider writing any unsaved data to disk as part of your cleanup efforts.
 
- Failure to reduce your app’s memory usage may result in your app’s termination. Therefore, consider writing any unsaved data to disk as part of your cleanup efforts.
-
 To test your app’s response to a low-memory warning, use the Simulate Memory Warning command in iOS Simulator.
 
 

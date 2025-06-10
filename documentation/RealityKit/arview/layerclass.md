@@ -9,6 +9,7 @@ The class used to create the layer for view instances.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # RENDERBUFFER_WIDTH
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

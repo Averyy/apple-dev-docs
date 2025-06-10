@@ -14,6 +14,10 @@ An interface you use to create custom arrangements of spatial Personas in a scen
 protocol SpatialTemplate : Sendable
 ```
 
+## Mentions
+
+- [Configure your visionOS app for sharing with people nearby](configure-your-app-for-sharing-with-people-nearby.md)
+
 #### Overview
 
 Use the [`SpatialTemplate`](spatialtemplate.md) protocol to specify an arrangement of participants for one of your app’s group activities in visionOS. A custom template can have any number of seats, with each seat occupying a precise location in the shared coordinate space. You can also assign roles to seats and use those roles to give participants a particular responsibility. For example, a game might divide participants into opposing teams using roles.
@@ -72,11 +76,14 @@ struct SimplePresentation: SpatialTemplate {
 
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [Building a guessing game for visionOS](building-a-guessing-game-for-visionos.md)
   Create a team-based guessing game for visionOS using Group Activities.
+- [struct SpatialTemplatePreference](spatialtemplatepreference.md)
+  A structure that specifies the preferred arrangement of participant spatial Personas in a shared simulation space.
 - [struct SpatialTemplateSeatElement](spatialtemplateseatelement.md)
   A spatial template element that represents a seat for a participant in the activity.
 - [protocol SpatialTemplateElement](spatialtemplateelement.md)

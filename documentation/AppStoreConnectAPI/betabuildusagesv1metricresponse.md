@@ -43,6 +43,9 @@ object BetaBuildUsagesV1MetricResponse
   A request body you use to add or remove beta groups from a build.
 - [object ImageAsset](imageasset.md)
   An image asset, including its height, width, and template URL.
+- [object BuildAppLinkageResponse](buildapplinkageresponse.md)
+- [object BuildAppStoreVersionLinkageResponse](buildappstoreversionlinkageresponse.md)
+- [object BuildBetaAppReviewSubmissionLinkageResponse](buildbetaappreviewsubmissionlinkageresponse.md)
 
 
 ---

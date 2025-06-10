@@ -1,6 +1,6 @@
 # webView(_:didClearWindowObject:for:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Called when the JavaScript window object in a frame is ready for loading.

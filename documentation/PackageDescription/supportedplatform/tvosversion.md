@@ -32,6 +32,8 @@ struct TVOSVersion
   The value that represents tvOS 17.0.
 - [static let v18: SupportedPlatform.TVOSVersion](supportedplatform/tvosversion/v18.md)
   The value that represents tvOS 18.0.
+- [static let v26: SupportedPlatform.TVOSVersion](supportedplatform/tvosversion/v26.md)
+  The value that represents tvOS 26.0.
 - [static let v9: SupportedPlatform.TVOSVersion](supportedplatform/tvosversion/v9.md)
   The value that represents tvOS 9.0.
 
@@ -39,6 +41,7 @@ struct TVOSVersion
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

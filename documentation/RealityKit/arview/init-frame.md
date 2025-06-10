@@ -10,12 +10,13 @@ Creates an AR view with the specified dimensions.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 
 ## Declaration
 
 ```swift
 @MainActor
-@preconcurrency override required dynamic init(frame frameRect: CGRect)
+@preconcurrency override required dynamic init(frame frameRect: NSRect)
 ```
 
 ## Parameters

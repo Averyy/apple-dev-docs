@@ -1,6 +1,6 @@
 # testCaseDidStop(_:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: method
 
 Notifies the observer when a test case stops.

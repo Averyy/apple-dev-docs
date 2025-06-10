@@ -1,6 +1,6 @@
 # WKMediaPlaybackState.none
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 There is no media to play back.

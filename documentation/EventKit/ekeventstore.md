@@ -22,8 +22,8 @@ class EKEventStore
 ## Mentions
 
 - [Retrieving events and reminders](retrieving-events-and-reminders.md)
-- [Accessing the event store](accessing-the-event-store.md)
 - [Creating events and reminders](creating-events-and-reminders.md)
+- [Accessing the event store](accessing-the-event-store.md)
 
 #### Overview
 
@@ -32,8 +32,6 @@ The `EKEventStore` class is an app’s point of contact for accessing calendar a
 After initializing the event store, you must request access to events or reminders before attempting to fetch or create data. To request access to reminders, call [`requestFullAccessToReminders(completion:)`](ekeventstore/requestfullaccesstoreminders(completion:).md). To request access to events, call [`requestWriteOnlyAccessToEvents(completion:)`](ekeventstore/requestwriteonlyaccesstoevents(completion:).md) or [`requestFullAccessToEvents(completion:)`](ekeventstore/requestfullaccesstoevents(completion:).md).
 
 > ❗ **Important**:  To request access to events and reminders, your app needs to include permission strings in its `Info.plist` file that explain to someone why the app needs access. For more information, see [`Accessing the event store`](accessing-the-event-store.md).
-
- To request access to events and reminders, your app needs to include permission strings in its `Info.plist` file that explain to someone why the app needs access. For more information, see [`Accessing the event store`](accessing-the-event-store.md).
 
 A typical workflow for using an event store is:
 
@@ -55,11 +53,11 @@ After receiving an object from an event store, don’t use that object with a di
 - [var eventStoreIdentifier: String](ekeventstore/eventstoreidentifier.md)
   The unique identifier for the event store.
 ### Requesting access to events and reminders
-- [func requestWriteOnlyAccessToEvents(completion: EKEventStoreRequestAccessCompletionHandler)](ekeventstore/requestwriteonlyaccesstoevents(completion:).md)
+- [func requestWriteOnlyAccessToEvents(completion: (Bool, (any Error)?) -> Void)](ekeventstore/requestwriteonlyaccesstoevents(completion:).md)
   Prompts the person using your app to grant or deny write access to event data.
-- [func requestFullAccessToEvents(completion: EKEventStoreRequestAccessCompletionHandler)](ekeventstore/requestfullaccesstoevents(completion:).md)
+- [func requestFullAccessToEvents(completion: (Bool, (any Error)?) -> Void)](ekeventstore/requestfullaccesstoevents(completion:).md)
   Prompts people to grant or deny read and write access to event data.
-- [func requestFullAccessToReminders(completion: EKEventStoreRequestAccessCompletionHandler)](ekeventstore/requestfullaccesstoreminders(completion:).md)
+- [func requestFullAccessToReminders(completion: (Bool, (any Error)?) -> Void)](ekeventstore/requestfullaccesstoreminders(completion:).md)
   Prompts people to grant or deny read and write access to reminders.
 - [class func authorizationStatus(for: EKEntityType) -> EKAuthorizationStatus](ekeventstore/authorizationstatus(for:).md)
   Determines the authorization status for the given entity type.
@@ -141,7 +139,7 @@ After receiving an object from an event store, don’t use that object with a di
 - [typealias EKEventSearchCallback](ekeventsearchcallback.md)
   The signature for a closure that operates on events when enumerating them.
 ### Deprecated methods
-- [func requestAccess(to: EKEntityType, completion: EKEventStoreRequestAccessCompletionHandler)](ekeventstore/requestaccess(to:completion:).md)
+- [func requestAccess(to: EKEntityType, completion: (Bool, (any Error)?) -> Void)](ekeventstore/requestaccess(to:completion:).md)
   Prompts the person using your app to grant or deny access to event or reminder data.
 
 ## Relationships

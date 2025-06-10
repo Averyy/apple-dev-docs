@@ -22,7 +22,7 @@ class GKBasePlayer
 
 #### Overview
 
-[`GKBasePlayer`](gkbaseplayer.md) is the abstract superclass for the classes that represent the local player running your app and remote players who may join their games. Use the [`GKLocalPlayer`](gklocalplayer.md) subclass to authenticate the local player who runs your app on their device. Then you can access the local player’s nickname, avatar, leaderboards, and achievements. You can also invite other players ([`GKPlayer`](gkplayer.md) objects), and send information between players.
+[`GKBasePlayer`](gkbaseplayer.md) is the abstract superclass for the classes that represent the local player running your app and remote players who may join their games. Use the [`GKLocalPlayer`](gklocalplayer.md) subclass to initialize the local player who runs your app on their device. Then you can access the local player’s nickname, avatar, leaderboards, and achievements. You can also invite other players ([`GKPlayer`](gkplayer.md) objects), and send information between players.
 
 ## Topics
 
@@ -61,9 +61,9 @@ class GKBasePlayer
   A remote player who the local player running your game can invite and communicate with through Game Center.
 - [protocol GKLocalPlayerListener](gklocalplayerlistener.md)
   A protocol that handles events for Game Center players.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name/1515396-gkplayerauthenticationdidchangen.md)
-  A notification that posts after GameKit authenticates the local player. 
-- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name/1520710-gkplayerdidchangenotificationnam.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerAuthenticationDidChangeNotificationName.md)
+  A notification that posts after GameKit authenticates the local player.
+- [static let GKPlayerDidChangeNotificationName: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/GKPlayerDidChangeNotificationName.md)
   A notification that posts when a player object’s data changes.
 
 

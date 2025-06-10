@@ -1,6 +1,6 @@
 # ApplePayError
 
-**Framework**: Applepayontheweb  
+**Framework**: Apple Pay on the Web  
 **Kind**: class
 
 A customizable error type that you create to indicate problems with the address or contact information on an Apple Pay sheet.
@@ -17,9 +17,9 @@ interface ApplePayError
 
 ## Mentions
 
-- [Apple Pay on the Web Version 3 Release Notes](apple-pay-on-the-web-version-3-release-notes.md)
 - [Choosing an API for Implementing Apple Pay on Your Website](choosing-an-api-for-implementing-apple-pay-on-your-website.md)
 - [Setting up the payment request API to accept Apple Pay](setting-up-the-payment-request-api-to-accept-apple-pay.md)
+- [Apple Pay on the Web Version 3 Release Notes](apple-pay-on-the-web-version-3-release-notes.md)
 
 #### Overview
 
@@ -41,7 +41,7 @@ new ApplePayError("shippingContactInvalid", "postalCode", "ZIP Code is invalid")
 
 Apple Pay highlights the postal code field and displays the message text on the payment sheet.
 
-> **Note**:  [`ApplePayError`](applepayerror.md) requires Apple Pay API version 3 and later, and is only supported in Apple Pay JS API; it’s not available in the [`Payment Request API`](https://developer.apple.com/documentation/apple_pay_on_the_web/payment_request_api).
+> **Note**:  [`ApplePayError`](applepayerror.md) requires Apple Pay API version 3 and later, and is only supported in Apple Pay JS API; it’s not available in the [`Payment Request API`](payment-request-api.md).
 
 ## Topics
 
@@ -68,4 +68,4 @@ Apple Pay highlights the postal code field and displays the message text on the 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ApplePayontheWeb/applepayerror)*
+*[View on Apple Developer](https://developer.apple.com/documentation/applepayontheweb/applepayerror)*

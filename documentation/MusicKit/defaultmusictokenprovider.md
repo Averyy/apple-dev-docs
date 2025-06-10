@@ -36,6 +36,7 @@ class DefaultMusicTokenProvider
 ### Conforms To
 - [MusicDeveloperTokenProvider](musicdevelopertokenprovider.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

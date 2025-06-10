@@ -82,20 +82,18 @@ Swift Package Manager emits an error if a dependency isn’t compatible with the
   The DriverKit platform
 - [SupportedPlatform.DriverKitVersion](supportedplatform/driverkitversion.md)
   The supported DriverKit version.
-### Supporting Linux
-- [static let linux: Platform](platform/linux.md)
-  The Linux platform.
-### Type methods
+### Supporting Custom Platforms
 - [static func custom(String, versionString: String) -> SupportedPlatform](supportedplatform/custom(_:versionstring:).md)
   Configures the minimum deployment target version for custom platforms.
 ### Operator Functions
 - [static func != (Self, Self) -> Bool](supportedplatform/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func == (SupportedPlatform, SupportedPlatform) -> Bool](supportedplatform/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
 ### Structures
 - [SupportedPlatform.CustomPlatformVersion](supportedplatform/customplatformversion.md)
   A supported custom platform version.
+### Operators
+- [static func == (SupportedPlatform, SupportedPlatform) -> Bool](supportedplatform/==(_:_:).md)
+  Returns a Boolean value indicating whether two values are equal.
 ### Default Implementations
 - [Equatable Implementations](supportedplatform/equatable-implementations.md)
 
@@ -104,6 +102,7 @@ Swift Package Manager emits an error if a dependency isn’t compatible with the
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -24,7 +24,7 @@ class NEHotspotHelperResponse
   Set the network that conveys the confidence level.
 - [func setNetworkList([NEHotspotNetwork])](nehotspothelperresponse/setnetworklist(_:).md)
   Set the list of handled networks.
-### Response celivery
+### Response delivery
 - [func deliver()](nehotspothelperresponse/deliver.md)
   Deliver the response to the system.
 

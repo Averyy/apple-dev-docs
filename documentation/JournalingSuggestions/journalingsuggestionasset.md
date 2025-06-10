@@ -32,6 +32,7 @@ When a person makes a selection in a [`JournalingSuggestionsPicker`](journalings
 
 ### Conforming Types
 - [JournalingSuggestion.Contact](journalingsuggestion/contact.md)
+- [JournalingSuggestion.EventPoster](journalingsuggestion/eventposter.md)
 - [JournalingSuggestion.GenericMedia](journalingsuggestion/genericmedia.md)
 - [JournalingSuggestion.LivePhoto](journalingsuggestion/livephoto.md)
 - [JournalingSuggestion.Location](journalingsuggestion/location.md)
@@ -53,6 +54,10 @@ When a person makes a selection in a [`JournalingSuggestionsPicker`](journalings
   A view that lists different types of recent events in a person’s life.
 - [struct JournalingSuggestion](journalingsuggestion.md)
   High-level information about a suggestion that a person chooses in the journaling suggestions picker.
+- [class JournalingSuggestionsConfiguration](journalingsuggestionsconfiguration.md)
+  The scheduled configuration settings for your app.
+- [struct JournalingSuggestionPresentationToken](journalingsuggestionpresentationtoken.md)
+  A token you use to modify the content of the presentation.
 
 
 ---

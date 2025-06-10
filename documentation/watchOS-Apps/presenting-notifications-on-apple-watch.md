@@ -1,6 +1,6 @@
 # Presenting notifications on Apple Watch
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Understand how the system displays incoming notifications.
 

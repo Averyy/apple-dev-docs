@@ -10,8 +10,6 @@ A dictionary that defines a configuration for an encrypted DNS server.
 - iPadOS 14.0+
 - macOS 11.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

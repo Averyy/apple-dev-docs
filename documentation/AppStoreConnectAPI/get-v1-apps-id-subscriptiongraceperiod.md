@@ -14,10 +14,10 @@ Get the Boolean value that represents the grace period opt-in state for your app
 
 ## See Also
 
-- [Read the Billing Grace Period Value](get-v1-subscriptiongraceperiods-_id_.md)
-  Get the Boolean value that represents the billing grace period opt-in state and the duration of the billing grace period.
-- [Modify the Billing Grace Period Opt-in Status and Duration](patch-v1-subscriptiongraceperiods-_id_.md)
-  Change the Boolean value representing the billing grace period opt-in status.
+- [List All Subscription Groups for an App](get-v1-apps-_id_-subscriptiongroups.md)
+  Get a list of subscription groups for a specific app.
+- [GET /v1/apps/{id}/relationships/subscriptionGracePeriod](get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
+- [GET /v1/apps/{id}/relationships/subscriptionGroups](get-v1-apps-_id_-relationships-subscriptiongroups.md)
 
 
 ---

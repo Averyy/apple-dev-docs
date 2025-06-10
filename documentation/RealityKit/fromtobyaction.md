@@ -1,6 +1,6 @@
 # FromToByAction
 
-**Framework**: Realitykit  
+**Framework**: RealityKit  
 **Kind**: struct
 
 An action that starts, stops, or increments by a specific value.
@@ -10,6 +10,7 @@ An action that starts, stops, or increments by a specific value.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
@@ -131,9 +132,6 @@ entity.playAnimation(transformAnimation)
   A timing function that controls the progress of the animation.
 - [let to: Value?](fromtobyaction/to.md)
   The state of the animated property after the animation ends.
-### Type Aliases
-- [FromToByAction.EventParameterType](fromtobyaction/eventparametertype.md)
-  The associated event parameter type.
 ### Enumerations
 - [FromToByAction.DecodingErrors](fromtobyaction/decodingerrors.md)
 - [FromToByAction.TransformMode](fromtobyaction/transformmode.md)
@@ -141,7 +139,6 @@ entity.playAnimation(transformAnimation)
 ### Default Implementations
 - [Decodable Implementations](fromtobyaction/decodable-implementations.md)
 - [Encodable Implementations](fromtobyaction/encodable-implementations.md)
-- [EntityAction Implementations](fromtobyaction/entityaction-implementations.md)
 
 ## Relationships
 
@@ -172,4 +169,4 @@ entity.playAnimation(transformAnimation)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit/fromtobyaction)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/fromtobyaction)*

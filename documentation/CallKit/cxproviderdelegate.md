@@ -20,7 +20,7 @@ protocol CXProviderDelegate : NSObjectProtocol
 
 #### Overview
 
-The [`CXProviderDelegate`](cxproviderdelegate.md) protocol defines a set of methods that are called by an object that represents a telephony provider when the provider begins or resets, a transaction is requested, an action is performed, or an audio session changes its activation state.
+The [`CXProviderDelegate`](cxproviderdelegate.md) protocol defines a set of methods that are called by an object that represents a telephony provider it begins or resets, requests a transaction, performs an action, or an audio session changes its activation state.
 
 ## Topics
 
@@ -47,6 +47,8 @@ The [`CXProviderDelegate`](cxproviderdelegate.md) protocol defines a set of meth
   Called when the provider performs the specified set group call action.
 - [func provider(CXProvider, perform: CXPlayDTMFCallAction)](cxproviderdelegate/provider(_:perform:)-4htxt.md)
   Called when the provider performs the specified play DTMF (dual tone multifrequency) call action.
+- [func provider(CXProvider, perform: CXSetTranslatingCallAction)](cxproviderdelegate/provider(_:perform:)-43atg.md)
+  Called when the provider performs the specified set translation action.
 - [func provider(CXProvider, timedOutPerforming: CXAction)](cxproviderdelegate/provider(_:timedoutperforming:).md)
   Called when the provider performs the specified action times out.
 ### Handling Changes to Audio Session Activation State
@@ -72,6 +74,8 @@ The [`CXProviderDelegate`](cxproviderdelegate.md) protocol defines a set of meth
   Use the CallKit framework to integrate native VoIP calling.
 - [Preparing your app to be the default calling app](preparing-your-app-to-be-the-default-calling-app.md)
   Configure your CallKit or LiveCommunicationKit app so people can set it as the default calling app on their device.
+- [CallKit updates](../Updates/CallKit.md)
+  Learn about important changes to CallKit.
 
 
 ---

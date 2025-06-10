@@ -57,8 +57,6 @@ This enables you to use the dollar sign (`$`) prefix to get a binding to publish
 
 > ❗ **Important**: Manage an app’s life cycle events without using an app delegate whenever possible. For example, prefer to handle changes in [`ScenePhase`](scenephase.md) instead of relying on delegate callbacks, like [`applicationDidFinishLaunching(_:)`](https://developer.apple.com/documentation/AppKit/NSApplicationDelegate/applicationDidFinishLaunching(_:)).
 
-Manage an app’s life cycle events without using an app delegate whenever possible. For example, prefer to handle changes in [`ScenePhase`](scenephase.md) instead of relying on delegate callbacks, like [`applicationDidFinishLaunching(_:)`](https://developer.apple.com/documentation/AppKit/NSApplicationDelegate/applicationDidFinishLaunching(_:)).
-
 ## Topics
 
 ### Creating a delegate adaptor
@@ -75,6 +73,7 @@ Manage an app’s life cycle events without using an app delegate whenever possi
 ### Conforms To
 - [DynamicProperty](dynamicproperty.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

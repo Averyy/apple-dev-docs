@@ -1,6 +1,6 @@
 # bounds
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A rectangle that identifies the extremities of a subject within an image.

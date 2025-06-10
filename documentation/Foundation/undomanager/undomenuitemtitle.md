@@ -17,6 +17,7 @@ The title of the Undo menu command, such as Undo Paste.
 ## Declaration
 
 ```swift
+@MainActor
 var undoMenuItemTitle: String { get }
 ```
 

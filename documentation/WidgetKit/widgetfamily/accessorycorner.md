@@ -1,6 +1,6 @@
 # WidgetFamily.accessoryCorner
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: case
 
 A widget-based complication in the corner of a watch face in watchOS.

@@ -10,8 +10,7 @@ A status report of the software update install state.
 - iPadOS 17.0+
 - macOS 14.0+
 - tvOS 18.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
+- visionOS 26.0+ (Beta)
 
 ## Declaration
 
@@ -19,12 +18,22 @@ A status report of the software update install state.
 object StatusSoftwareUpdateInstallState
 ```
 
-#### Overview
+#### Discussion
+
+##### Status Item Availability
+
+|  |  |
+| --- | --- |
+| Allowed in supervised enrollment | iOS, macOS, Shared iPad, tvOS, visionOS |
+| Allowed in device enrollment | iOS, Shared iPad, tvOS, visionOS |
+| Allowed in user enrollment | NA |
+| Allowed in local enrollment | NA |
+| Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS |
+| Allowed in user scope | NA |
 
 ## See Also
 
 - [object StatusReport](statusreport.md)
-  A status report of the device’s current state.
 - [object StatusAppManagedList](statusappmanagedlist.md)
   The device’s declarative managed apps.
 - [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)

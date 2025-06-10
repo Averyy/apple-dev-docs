@@ -1,6 +1,6 @@
 # WKMenuItemIcon.repeat
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The icon indicating that played content should repeat in a loop.

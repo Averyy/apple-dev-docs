@@ -1,6 +1,6 @@
 # WebCacheModel.documentBrowser
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 Caches a reasonable number of resources and previously viewed documents in memory and on disk. This model is appropriate for displaying and navigating between multiple documents.

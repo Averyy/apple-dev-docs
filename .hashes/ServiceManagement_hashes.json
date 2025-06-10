@@ -1,576 +1,825 @@
 {
   "metadata": {
-    "last_updated": "2025-06-07T14:03:22.193000",
-    "total_pages": 103,
-    "etags_collected": "2025-06-07T14:03:22.193010"
+    "last_updated": "2025-06-10T21:57:48.799998",
+    "total_pages": 102,
+    "session_id": "2025-06-10T21:57:41.737244"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ServiceManagement.json": {
-      "hash": "7ad7a9f6c314beb2a905e587c262ea0e18e912f7019af621643f180202c8f319",
-      "last_checked": "2025-06-06T08:11:59.949632",
+      "hash": "578755139b48930e2c5d679ee2c75e284da487b99fd979c605cc18e1a6bccf3f",
+      "last_checked": "2025-06-10T21:57:42.243932",
       "status": "new",
-      "etag": "W/\"4c40ea941c5dd8a9bb71a66296865989\""
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"38e3c1c761af8e129b2545809427ba6f\"",
+      "file_path": "documentation/ServiceManagement/ServiceManagement.md"
     },
     "https://developer.apple.com/documentation/ServiceManagement": {
-      "hash": "3ed05ae37a38f779edcc47e63b71dba62cf125cc7a1f46f5892c1f421b9b7b34",
-      "last_checked": "2025-06-06T08:11:59.949852",
-      "status": "unchanged"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/servicemanagement.json": {
-      "hash": "3ed05ae37a38f779edcc47e63b71dba62cf125cc7a1f46f5892c1f421b9b7b34",
-      "last_checked": "2025-06-06T08:11:59.949852",
-      "status": "unchanged",
-      "etag": "W/\"4c40ea941c5dd8a9bb71a66296865989\""
+      "hash": "578755139b48930e2c5d679ee2c75e284da487b99fd979c605cc18e1a6bccf3f",
+      "last_checked": "2025-06-10T21:57:42.042292",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"38e3c1c761af8e129b2545809427ba6f\"",
+      "file_path": "documentation/ServiceManagement/ServiceManagement.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/updating-helper-executables-from-earlier-versions-of-macos.json": {
-      "hash": "8717f96ec74ea09063839f2714661fb7d592ff502453f446602b14d0ee53054e",
-      "last_checked": "2025-06-06T08:12:01.057570",
-      "status": "unchanged",
-      "etag": "W/\"4c9972c1ce397986df3cd0ce41155b30\""
+      "hash": "07e6abc5c6de9a413a7775a93342de935227d73dbbbbe3bd98d4024866c358df",
+      "last_checked": "2025-06-10T21:57:42.700881",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"37ce31cffd7bd9f64dd314acbbfa9594\"",
+      "file_path": "documentation/ServiceManagement/updating-helper-executables-from-earlier-versions-of-macos.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/updating-helper-executables-from-earlier-versions-of-macos": {
-      "hash": "8717f96ec74ea09063839f2714661fb7d592ff502453f446602b14d0ee53054e",
-      "last_checked": "2025-06-06T08:12:01.057570",
-      "status": "unchanged"
+      "hash": "07e6abc5c6de9a413a7775a93342de935227d73dbbbbe3bd98d4024866c358df",
+      "last_checked": "2025-06-10T21:57:42.700943",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"37ce31cffd7bd9f64dd314acbbfa9594\"",
+      "file_path": "documentation/ServiceManagement/updating-helper-executables-from-earlier-versions-of-macos.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/updating-your-app-package-installer-to-use-the-new-service-management-api.json": {
-      "hash": "87cdf28737ea2bffc94a0c80c04596427f409fac28bd26d49e99d45da42a9119",
-      "last_checked": "2025-06-06T08:12:01.700114",
-      "status": "unchanged",
-      "etag": "W/\"08707d7b12042d71d6daaa00e6540961\""
+      "hash": "78325c43217b1d4234853d26234e980e10fe248c5e159a16985e3608b2e43e32",
+      "last_checked": "2025-06-10T21:57:42.842888",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"2c14bfd3e2b7b19bfd0db2834a2455d6\"",
+      "file_path": "documentation/ServiceManagement/updating-your-app-package-installer-to-use-the-new-service-management-api.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/updating-your-app-package-installer-to-use-the-new-service-management-api": {
-      "hash": "87cdf28737ea2bffc94a0c80c04596427f409fac28bd26d49e99d45da42a9119",
-      "last_checked": "2025-06-06T08:12:01.700114",
-      "status": "unchanged"
+      "hash": "78325c43217b1d4234853d26234e980e10fe248c5e159a16985e3608b2e43e32",
+      "last_checked": "2025-06-10T21:57:42.842949",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"2c14bfd3e2b7b19bfd0db2834a2455d6\"",
+      "file_path": "documentation/ServiceManagement/updating-your-app-package-installer-to-use-the-new-service-management-api.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice.json": {
-      "hash": "ecb2be0ed14954342bb00cac4827aab1a5105d9fb22a1571828467efd0779352",
-      "last_checked": "2025-06-06T08:12:02.132530",
-      "status": "unchanged",
-      "etag": "W/\"83a401c8109a01a46ecf731c4a320f82\""
+      "hash": "70ffb575eb27d165337f79bb8c1ecbe1badfa26c0bffd5bf619f39211bcdc8d6",
+      "last_checked": "2025-06-10T21:57:42.998906",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"27bc7be44d2bf42927aa2ef907f18469\"",
+      "file_path": "documentation/ServiceManagement/smappservice.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice": {
-      "hash": "ecb2be0ed14954342bb00cac4827aab1a5105d9fb22a1571828467efd0779352",
-      "last_checked": "2025-06-06T08:12:02.132530",
-      "status": "unchanged"
+      "hash": "70ffb575eb27d165337f79bb8c1ecbe1badfa26c0bffd5bf619f39211bcdc8d6",
+      "last_checked": "2025-06-10T21:57:42.998984",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"27bc7be44d2bf42927aa2ef907f18469\"",
+      "file_path": "documentation/ServiceManagement/smappservice.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smjobbless(_:_:_:_:).json": {
-      "hash": "b7b3fb465267cd660b959861aae2d8ee4c3b061cf8299d843520915060a789ff",
-      "last_checked": "2025-06-06T08:12:02.657380",
-      "status": "unchanged",
-      "etag": "W/\"584c9a7b89897d899b0acaed1a96fa05\""
+      "hash": "8a3e94100e741ab61aaf4fba68478eae09c77e41df09ac9ab6fd44daa9b13196",
+      "last_checked": "2025-06-10T21:57:43.149519",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"1579eda1a33309bf56ee9719948a8441\"",
+      "file_path": "documentation/ServiceManagement/smjobbless.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smjobbless(_:_:_:_:)": {
-      "hash": "b7b3fb465267cd660b959861aae2d8ee4c3b061cf8299d843520915060a789ff",
-      "last_checked": "2025-06-06T08:12:02.657380",
-      "status": "unchanged"
+      "hash": "8a3e94100e741ab61aaf4fba68478eae09c77e41df09ac9ab6fd44daa9b13196",
+      "last_checked": "2025-06-10T21:57:43.149575",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"1579eda1a33309bf56ee9719948a8441\"",
+      "file_path": "documentation/ServiceManagement/smjobbless.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/authorization-constants.json": {
-      "hash": "6b1a4595f44fa14cd5ef28386a89f21f5dec2398d058648e39ba733ac1af4178",
-      "last_checked": "2025-06-06T08:12:03.072395",
-      "status": "unchanged",
-      "etag": "W/\"ec05afb6021b6de053ad7ea0ce276bfd\""
+      "hash": "0d30e43888f418654f93e23c2fc5801b86e3320103ea11c798f547a3b6a9e2ef",
+      "last_checked": "2025-06-10T21:57:43.272075",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"59b606bdec99c25295c5e59b5d118b6f\"",
+      "file_path": "documentation/ServiceManagement/authorization-constants.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/authorization-constants": {
-      "hash": "6b1a4595f44fa14cd5ef28386a89f21f5dec2398d058648e39ba733ac1af4178",
-      "last_checked": "2025-06-06T08:12:03.072395",
-      "status": "unchanged"
+      "hash": "0d30e43888f418654f93e23c2fc5801b86e3320103ea11c798f547a3b6a9e2ef",
+      "last_checked": "2025-06-10T21:57:43.272114",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"59b606bdec99c25295c5e59b5d118b6f\"",
+      "file_path": "documentation/ServiceManagement/authorization-constants.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/property-list-keys.json": {
-      "hash": "1388422df90b1920fe962b8d2cd1e8e65b5b749d84f6c369645ef728f5f58210",
-      "last_checked": "2025-06-06T08:12:03.484668",
-      "status": "unchanged",
-      "etag": "W/\"9458d6ed4adae4122dfff257cdf37bad\""
+      "hash": "b2869de2288985e3c58ec534f5b640f0df6ba4e3c32bd2ff8f8fb349728f4aa3",
+      "last_checked": "2025-06-10T21:57:43.377402",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"4633c9d6a37babb51e5f7d74b13714a9\"",
+      "file_path": "documentation/ServiceManagement/property-list-keys.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/property-list-keys": {
-      "hash": "1388422df90b1920fe962b8d2cd1e8e65b5b749d84f6c369645ef728f5f58210",
-      "last_checked": "2025-06-06T08:12:03.484668",
-      "status": "unchanged"
+      "hash": "b2869de2288985e3c58ec534f5b640f0df6ba4e3c32bd2ff8f8fb349728f4aa3",
+      "last_checked": "2025-06-10T21:57:43.377440",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"4633c9d6a37babb51e5f7d74b13714a9\"",
+      "file_path": "documentation/ServiceManagement/property-list-keys.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smloginitemsetenabled(_:_:).json": {
-      "hash": "3a2d07356f0e673b3db6be18ad8f9e404554e16e7640f15f653db7e17a4a21e3",
-      "last_checked": "2025-06-06T08:12:03.906002",
-      "status": "unchanged",
-      "etag": "W/\"e17b8f5613493a805479ab417cb9e06c\""
+      "hash": "475eb46b55c554ad0754fc7c255762813b7c6760b90def67b841e772d54e9e54",
+      "last_checked": "2025-06-10T21:57:43.510578",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"d97c496f2d2948c74a2fa4dd5b2ffb64\"",
+      "file_path": "documentation/ServiceManagement/smloginitemsetenabled.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smloginitemsetenabled(_:_:)": {
-      "hash": "3a2d07356f0e673b3db6be18ad8f9e404554e16e7640f15f653db7e17a4a21e3",
-      "last_checked": "2025-06-06T08:12:03.906002",
-      "status": "unchanged"
+      "hash": "475eb46b55c554ad0754fc7c255762813b7c6760b90def67b841e772d54e9e54",
+      "last_checked": "2025-06-10T21:57:43.510619",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"d97c496f2d2948c74a2fa4dd5b2ffb64\"",
+      "file_path": "documentation/ServiceManagement/smloginitemsetenabled.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/status-swift.enum.json": {
-      "hash": "37c23decfad5ab0189a17508e9d65e062bbdab0d922d5aed3fa9d5a75d0342ca",
-      "last_checked": "2025-06-06T08:12:04.401421",
-      "status": "unchanged",
-      "etag": "W/\"5ee567038b7a4b4d76e6fdd7ffdb0274\""
+      "hash": "bae3d496256ed2fbb47d92e30a10a6336182ef1578d32c9ac946f9d078101e2e",
+      "last_checked": "2025-06-10T21:57:43.615509",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"2098f6abad519c87eb7f220ebba9f168\"",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swiftenum.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/status-swift.enum": {
-      "hash": "37c23decfad5ab0189a17508e9d65e062bbdab0d922d5aed3fa9d5a75d0342ca",
-      "last_checked": "2025-06-06T08:12:04.401421",
-      "status": "unchanged"
+      "hash": "bae3d496256ed2fbb47d92e30a10a6336182ef1578d32c9ac946f9d078101e2e",
+      "last_checked": "2025-06-10T21:57:43.615554",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"2098f6abad519c87eb7f220ebba9f168\"",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swiftenum.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/service-management-errors.json": {
-      "hash": "75189f17e74f046337136abfded945f05140ca577bc725fccd2fecb52b675d74",
-      "last_checked": "2025-06-06T08:12:04.827676",
-      "status": "unchanged",
-      "etag": "W/\"cba151f566e61f147d88d9986b6453e4\""
+      "hash": "0663e89da6276c601057a06a0f5fafe329698a0aae62c27ab574e92b070ae302",
+      "last_checked": "2025-06-10T21:57:43.734574",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"9dfd7ba014c1294ce673fcead6d62399\"",
+      "file_path": "documentation/ServiceManagement/service-management-errors.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/service-management-errors": {
-      "hash": "75189f17e74f046337136abfded945f05140ca577bc725fccd2fecb52b675d74",
-      "last_checked": "2025-06-06T08:12:04.827676",
-      "status": "unchanged"
+      "hash": "0663e89da6276c601057a06a0f5fafe329698a0aae62c27ab574e92b070ae302",
+      "last_checked": "2025-06-10T21:57:43.734615",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"9dfd7ba014c1294ce673fcead6d62399\"",
+      "file_path": "documentation/ServiceManagement/service-management-errors.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/deprecated-symbols.json": {
-      "hash": "30d583c5a8e922f4f1336a4d05621351c6a29edce2350cdb6932a43b0df9b1af",
-      "last_checked": "2025-06-06T08:12:05.234467",
-      "status": "unchanged",
-      "etag": "W/\"c56c47276aa173109c3ab9f17b1d9665\""
+      "hash": "063d867b02d47b6b15d0700060ce0b1aab3eae2088023590d2213728d7d91700",
+      "last_checked": "2025-06-10T21:57:43.874659",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"27b72fd95c19e282b6997445bd81460c\"",
+      "file_path": "documentation/ServiceManagement/deprecated-symbols.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/deprecated-symbols": {
-      "hash": "30d583c5a8e922f4f1336a4d05621351c6a29edce2350cdb6932a43b0df9b1af",
-      "last_checked": "2025-06-06T08:12:05.234467",
-      "status": "unchanged"
+      "hash": "063d867b02d47b6b15d0700060ce0b1aab3eae2088023590d2213728d7d91700",
+      "last_checked": "2025-06-10T21:57:43.874728",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"27b72fd95c19e282b6997445bd81460c\"",
+      "file_path": "documentation/ServiceManagement/deprecated-symbols.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappserviceerrordomain.json": {
-      "hash": "df602befe2b946ffc224ed9691002b9b55f0c0196b933df4ed3f025441be7151",
-      "last_checked": "2025-06-06T08:12:05.658678",
-      "status": "unchanged",
-      "etag": "W/\"226fcb80af970c068eb868d31db08641\""
+      "hash": "edf475d5c6442d934b43d6be3f5d3c28d7141d2f8b73e679194e8a59d6efa198",
+      "last_checked": "2025-06-10T21:57:43.966252",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"876bcb34f9081634e59889e8ae75099c\"",
+      "file_path": "documentation/ServiceManagement/smappserviceerrordomain.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappserviceerrordomain": {
-      "hash": "df602befe2b946ffc224ed9691002b9b55f0c0196b933df4ed3f025441be7151",
-      "last_checked": "2025-06-06T08:12:05.658678",
-      "status": "unchanged"
+      "hash": "edf475d5c6442d934b43d6be3f5d3c28d7141d2f8b73e679194e8a59d6efa198",
+      "last_checked": "2025-06-10T21:57:43.966379",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"876bcb34f9081634e59889e8ae75099c\"",
+      "file_path": "documentation/ServiceManagement/smappserviceerrordomain.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/register().json": {
-      "hash": "062cfb53cd5b1900f683c495d7dcbcee790bceef999969dd01746523c10c6754",
-      "last_checked": "2025-06-06T08:12:06.070454",
-      "status": "unchanged",
-      "etag": "W/\"d1aafb975f350ccdb7c3e14b043b787e\""
+      "hash": "7fdf10e74a60285ca7f21277525fd03a6ceaad8876a864541872867a942cf65c",
+      "last_checked": "2025-06-10T21:57:44.078815",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"2689cd0627968e88f06c9b10a331958a\"",
+      "file_path": "documentation/ServiceManagement/smappservice/register.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/register()": {
-      "hash": "062cfb53cd5b1900f683c495d7dcbcee790bceef999969dd01746523c10c6754",
-      "last_checked": "2025-06-06T08:12:06.070454",
-      "status": "unchanged"
+      "hash": "7fdf10e74a60285ca7f21277525fd03a6ceaad8876a864541872867a942cf65c",
+      "last_checked": "2025-06-10T21:57:44.078872",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"2689cd0627968e88f06c9b10a331958a\"",
+      "file_path": "documentation/ServiceManagement/smappservice/register.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/unregister().json": {
-      "hash": "1356c9acc11a20bbef13d59e1ece14f2c6ee2e768086d3e63cd8c6f35a7b957e",
-      "last_checked": "2025-06-06T08:12:06.457904",
-      "status": "unchanged",
-      "etag": "W/\"ba45654d2b75835287937fc79c025d1d\""
+      "hash": "c4a0803fc13c87cf6fdd88d40079751031299e8c30e39970cb90c775254b04cc",
+      "last_checked": "2025-06-10T21:57:44.192180",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"a741ea6d2965208e9fb90a53786614f5\"",
+      "file_path": "documentation/ServiceManagement/smappservice/unregister.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/unregister()": {
-      "hash": "1356c9acc11a20bbef13d59e1ece14f2c6ee2e768086d3e63cd8c6f35a7b957e",
-      "last_checked": "2025-06-06T08:12:06.457904",
-      "status": "unchanged"
+      "hash": "c4a0803fc13c87cf6fdd88d40079751031299e8c30e39970cb90c775254b04cc",
+      "last_checked": "2025-06-10T21:57:44.192236",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"a741ea6d2965208e9fb90a53786614f5\"",
+      "file_path": "documentation/ServiceManagement/smappservice/unregister.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/unregister(completionhandler:).json": {
-      "hash": "9a972f787b8d8f6eaa5c2db6e4d5a76c7a44c2f5ca1b3af7e6d9a389f5c613eb",
-      "last_checked": "2025-06-06T08:12:06.853378",
-      "status": "unchanged",
-      "etag": "W/\"80c610a514ab641dbaf04acbebf79d88\""
+      "hash": "366f05292937f5bbaba5b64c322fb47b89f9e1a9a991c7e2aad1568aa36df911",
+      "last_checked": "2025-06-10T21:57:44.334657",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"99f54a23ed4f207033f9d6c92887b17d\"",
+      "file_path": "documentation/ServiceManagement/smappservice/unregister-completionhandler.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/unregister(completionhandler:)": {
-      "hash": "9a972f787b8d8f6eaa5c2db6e4d5a76c7a44c2f5ca1b3af7e6d9a389f5c613eb",
-      "last_checked": "2025-06-06T08:12:06.853378",
-      "status": "unchanged"
+      "hash": "366f05292937f5bbaba5b64c322fb47b89f9e1a9a991c7e2aad1568aa36df911",
+      "last_checked": "2025-06-10T21:57:44.334702",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"99f54a23ed4f207033f9d6c92887b17d\"",
+      "file_path": "documentation/ServiceManagement/smappservice/unregister-completionhandler.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/mainapp.json": {
-      "hash": "fea5d65aaae20273db3c8f4acfda7ef57f6adc9e062c5053c4daf01de529ccb1",
-      "last_checked": "2025-06-06T08:12:07.307788",
-      "status": "unchanged",
-      "etag": "W/\"18c32cc377ca0d2bbb2b6fc12afd8130\""
+      "hash": "442b1c97d123fc751ce1c58b8b5d089cbfe7742989862ac0a30f2f4720e91a03",
+      "last_checked": "2025-06-10T21:57:44.443646",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"a8254e1cf62fb74ae26ab7c25b71605f\"",
+      "file_path": "documentation/ServiceManagement/smappservice/mainapp.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/mainapp": {
-      "hash": "fea5d65aaae20273db3c8f4acfda7ef57f6adc9e062c5053c4daf01de529ccb1",
-      "last_checked": "2025-06-06T08:12:07.307788",
-      "status": "unchanged"
+      "hash": "442b1c97d123fc751ce1c58b8b5d089cbfe7742989862ac0a30f2f4720e91a03",
+      "last_checked": "2025-06-10T21:57:44.443698",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"a8254e1cf62fb74ae26ab7c25b71605f\"",
+      "file_path": "documentation/ServiceManagement/smappservice/mainapp.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/agent(plistname:).json": {
-      "hash": "e575338777c748539777434c0598cc22a6a3aaa9858fa97da97ba4e6b303aed2",
-      "last_checked": "2025-06-06T08:12:07.746576",
-      "status": "unchanged",
-      "etag": "W/\"b7b28f44f4589273c1a4ff47351176b1\""
+      "hash": "5679dc5345fb575a5b3bfa7a8538ec83e97fbdcda5745444b3568728ddbcad47",
+      "last_checked": "2025-06-10T21:57:44.532999",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"3e83965932fd8e079ca093dac6bb9de8\"",
+      "file_path": "documentation/ServiceManagement/smappservice/agent-plistname.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/agent(plistname:)": {
-      "hash": "e575338777c748539777434c0598cc22a6a3aaa9858fa97da97ba4e6b303aed2",
-      "last_checked": "2025-06-06T08:12:07.746576",
-      "status": "unchanged"
+      "hash": "5679dc5345fb575a5b3bfa7a8538ec83e97fbdcda5745444b3568728ddbcad47",
+      "last_checked": "2025-06-10T21:57:44.533041",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"3e83965932fd8e079ca093dac6bb9de8\"",
+      "file_path": "documentation/ServiceManagement/smappservice/agent-plistname.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/daemon(plistname:).json": {
-      "hash": "454cc9e8b3aec97741eb9aad4cf19b4540020e68bfe196e97836b5a02c69d9d5",
-      "last_checked": "2025-06-06T08:12:08.179115",
-      "status": "unchanged",
-      "etag": "W/\"cca0839a206803c1f7820a48d60a7721\""
+      "hash": "1012d603dc49800f6750384e6a5095987ec65c5b42b5278ba7ca7d287c7a0be0",
+      "last_checked": "2025-06-10T21:57:44.697614",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"945573da0e8cd6feac9f0fac9f9a1cef\"",
+      "file_path": "documentation/ServiceManagement/smappservice/daemon-plistname.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/daemon(plistname:)": {
-      "hash": "454cc9e8b3aec97741eb9aad4cf19b4540020e68bfe196e97836b5a02c69d9d5",
-      "last_checked": "2025-06-06T08:12:08.179115",
-      "status": "unchanged"
+      "hash": "1012d603dc49800f6750384e6a5095987ec65c5b42b5278ba7ca7d287c7a0be0",
+      "last_checked": "2025-06-10T21:57:44.697659",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"945573da0e8cd6feac9f0fac9f9a1cef\"",
+      "file_path": "documentation/ServiceManagement/smappservice/daemon-plistname.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/loginitem(identifier:).json": {
-      "hash": "15c2bba7ae54b3b481d64675e671b9cf3cbf1a9bcf1ef3b1c1242f051470f60c",
-      "last_checked": "2025-06-06T08:12:08.580008",
-      "status": "unchanged",
-      "etag": "W/\"748cdfd3cb7ab47cf621d6d3b9400c9d\""
+      "hash": "4b8872e32bc0e6773a2e3f284275a62301af10a7ca3a6e732ed7c50184298e71",
+      "last_checked": "2025-06-10T21:57:44.830158",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"4c5ef29aa7412d12f69c5c65bd2d5cb6\"",
+      "file_path": "documentation/ServiceManagement/smappservice/loginitem-identifier.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/loginitem(identifier:)": {
-      "hash": "15c2bba7ae54b3b481d64675e671b9cf3cbf1a9bcf1ef3b1c1242f051470f60c",
-      "last_checked": "2025-06-06T08:12:08.580008",
-      "status": "unchanged"
+      "hash": "4b8872e32bc0e6773a2e3f284275a62301af10a7ca3a6e732ed7c50184298e71",
+      "last_checked": "2025-06-10T21:57:44.830214",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"4c5ef29aa7412d12f69c5c65bd2d5cb6\"",
+      "file_path": "documentation/ServiceManagement/smappservice/loginitem-identifier.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/opensystemsettingsloginitems().json": {
-      "hash": "43721bd7d77650f3426db141b1fac77dbec54080a73626f13246ba46acfd1bf2",
-      "last_checked": "2025-06-06T08:12:08.984472",
-      "status": "unchanged",
-      "etag": "W/\"6dbb6aa6093cc81d0b1cabcee0a94569\""
+      "hash": "f52cbb161788c74d61f294ea2e8a7e5276411b2dba4ffd30204b1bbf3c747697",
+      "last_checked": "2025-06-10T21:57:44.990301",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"30c43ad366208c31f13cb0dbff269965\"",
+      "file_path": "documentation/ServiceManagement/smappservice/opensystemsettingsloginitems.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/opensystemsettingsloginitems()": {
-      "hash": "43721bd7d77650f3426db141b1fac77dbec54080a73626f13246ba46acfd1bf2",
-      "last_checked": "2025-06-06T08:12:08.984472",
-      "status": "unchanged"
+      "hash": "f52cbb161788c74d61f294ea2e8a7e5276411b2dba4ffd30204b1bbf3c747697",
+      "last_checked": "2025-06-10T21:57:44.990422",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"30c43ad366208c31f13cb0dbff269965\"",
+      "file_path": "documentation/ServiceManagement/smappservice/opensystemsettingsloginitems.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/status-swift.property.json": {
-      "hash": "e1008e9b522577b6663792ef177167108ccbd8b5f2e62298a3292434641aa2f0",
-      "last_checked": "2025-06-06T08:12:09.386421",
-      "status": "unchanged",
-      "etag": "W/\"359921187f890c234bdfe6dcc489a790\""
+      "hash": "3cce3e4a59e4b276015fe489caab98fbf620e51a1fc13046068107f974ae3f86",
+      "last_checked": "2025-06-10T21:57:45.074847",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"75e878bc49555d2030e93795f706171a\"",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swiftproperty.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/status-swift.property": {
-      "hash": "e1008e9b522577b6663792ef177167108ccbd8b5f2e62298a3292434641aa2f0",
-      "last_checked": "2025-06-06T08:12:09.386421",
-      "status": "unchanged"
+      "hash": "3cce3e4a59e4b276015fe489caab98fbf620e51a1fc13046068107f974ae3f86",
+      "last_checked": "2025-06-10T21:57:45.074889",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"75e878bc49555d2030e93795f706171a\"",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swiftproperty.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/statusforlegacyplist(at:).json": {
-      "hash": "f5ae070b69b11bffd7c255ff2a407e951f4faaa5cd6293c89e459ae6988f1386",
-      "last_checked": "2025-06-06T08:12:09.814760",
-      "status": "unchanged",
-      "etag": "W/\"aac3dbb98905a4ed01dadc184c8d75ee\""
+      "hash": "123bdf3689dd3d0a80e2c4ca4274886190e058e185125348c698ac5f66711bd6",
+      "last_checked": "2025-06-10T21:57:45.218165",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"4a1fd629080799728add19adb71d285a\"",
+      "file_path": "documentation/ServiceManagement/smappservice/statusforlegacyplist-at.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/statusforlegacyplist(at:)": {
-      "hash": "f5ae070b69b11bffd7c255ff2a407e951f4faaa5cd6293c89e459ae6988f1386",
-      "last_checked": "2025-06-06T08:12:09.814760",
-      "status": "unchanged"
+      "hash": "123bdf3689dd3d0a80e2c4ca4274886190e058e185125348c698ac5f66711bd6",
+      "last_checked": "2025-06-10T21:57:45.218214",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"4a1fd629080799728add19adb71d285a\"",
+      "file_path": "documentation/ServiceManagement/smappservice/statusforlegacyplist-at.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmrightblessprivilegedhelper.json": {
-      "hash": "ef83788ee96919625d2e091a1f59d2533326200f0db64ac788bb341d4fa02112",
-      "last_checked": "2025-06-06T08:12:10.273748",
-      "status": "unchanged",
-      "etag": "W/\"8992e4467189567734a01056891ff56b\""
+      "hash": "b7da439ff9113c32556790164e70ed705803b482b63b79855e6a5e663225c745",
+      "last_checked": "2025-06-10T21:57:45.348444",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"bcc4974ef4b6daff27f5b787c5f83703\"",
+      "file_path": "documentation/ServiceManagement/ksmrightblessprivilegedhelper.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmrightblessprivilegedhelper": {
-      "hash": "ef83788ee96919625d2e091a1f59d2533326200f0db64ac788bb341d4fa02112",
-      "last_checked": "2025-06-06T08:12:10.273748",
-      "status": "unchanged"
+      "hash": "b7da439ff9113c32556790164e70ed705803b482b63b79855e6a5e663225c745",
+      "last_checked": "2025-06-10T21:57:45.348492",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"bcc4974ef4b6daff27f5b787c5f83703\"",
+      "file_path": "documentation/ServiceManagement/ksmrightblessprivilegedhelper.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmrightmodifysystemdaemons.json": {
-      "hash": "950e8bc375967c79dfbcb66a66e17af6d3c0e6d08892f9f34cd7217b9c1ea19a",
-      "last_checked": "2025-06-06T08:12:10.699766",
-      "status": "unchanged",
-      "etag": "W/\"107cf455032ec3c3467b5af4815bcdd3\""
+      "hash": "636584f6f6d2b740f98968d44f99cebd7e6ef7cc5a6ab49268a2158326134ccb",
+      "last_checked": "2025-06-10T21:57:45.467015",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"3f7c2f21c7464c713e7925891f7c934c\"",
+      "file_path": "documentation/ServiceManagement/ksmrightmodifysystemdaemons.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmrightmodifysystemdaemons": {
-      "hash": "950e8bc375967c79dfbcb66a66e17af6d3c0e6d08892f9f34cd7217b9c1ea19a",
-      "last_checked": "2025-06-06T08:12:10.699766",
-      "status": "unchanged"
+      "hash": "636584f6f6d2b740f98968d44f99cebd7e6ef7cc5a6ab49268a2158326134ccb",
+      "last_checked": "2025-06-10T21:57:45.467052",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"3f7c2f21c7464c713e7925891f7c934c\"",
+      "file_path": "documentation/ServiceManagement/ksmrightmodifysystemdaemons.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmdomainsystemlaunchd.json": {
-      "hash": "4150bf46e34c2bc620444fe655116eaa61b1ecd91fb29e7fa69a3632f3dc7f07",
-      "last_checked": "2025-06-06T08:12:11.105817",
-      "status": "unchanged",
-      "etag": "W/\"c7023ba5f381aa76bec9febb85d55386\""
+      "hash": "b258ddaae177de9828ebffcab54c7cd019ee63d167924a745da6c7522aae0f8f",
+      "last_checked": "2025-06-10T21:57:45.559564",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"298d3851f83053b4c26d7598606f5cd2\"",
+      "file_path": "documentation/ServiceManagement/ksmdomainsystemlaunchd.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmdomainsystemlaunchd": {
-      "hash": "4150bf46e34c2bc620444fe655116eaa61b1ecd91fb29e7fa69a3632f3dc7f07",
-      "last_checked": "2025-06-06T08:12:11.105817",
-      "status": "unchanged"
+      "hash": "b258ddaae177de9828ebffcab54c7cd019ee63d167924a745da6c7522aae0f8f",
+      "last_checked": "2025-06-10T21:57:45.559607",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"298d3851f83053b4c26d7598606f5cd2\"",
+      "file_path": "documentation/ServiceManagement/ksmdomainsystemlaunchd.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmdomainuserlaunchd.json": {
-      "hash": "1f23fb5db2d4e11aa361f039b8af7881341ff52cc33dfca34bd8cbbaa803a754",
-      "last_checked": "2025-06-06T08:12:11.593995",
-      "status": "unchanged",
-      "etag": "W/\"7e8641771cab9aeb8b68cc81c0796484\""
+      "hash": "5bcb41c696127b6636a4b1392d4e8f91c48c0dd4e419baab7f9645caf1690c97",
+      "last_checked": "2025-06-10T21:57:45.673853",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"a76568e8bd798b8534f8c56bbd1ac812\"",
+      "file_path": "documentation/ServiceManagement/ksmdomainuserlaunchd.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmdomainuserlaunchd": {
-      "hash": "1f23fb5db2d4e11aa361f039b8af7881341ff52cc33dfca34bd8cbbaa803a754",
-      "last_checked": "2025-06-06T08:12:11.593995",
-      "status": "unchanged"
+      "hash": "5bcb41c696127b6636a4b1392d4e8f91c48c0dd4e419baab7f9645caf1690c97",
+      "last_checked": "2025-06-10T21:57:45.673894",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"a76568e8bd798b8534f8c56bbd1ac812\"",
+      "file_path": "documentation/ServiceManagement/ksmdomainuserlaunchd.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/status-swift.enum/notregistered.json": {
-      "hash": "85716771982adaad7813612f6e3a48a3ae2666c8d4c876c3c2ca695dff9df1e4",
-      "last_checked": "2025-06-06T08:12:12.009587",
-      "status": "unchanged",
-      "etag": "W/\"04409e1d4e07e17d78a2494031443cb5\""
+      "hash": "abef64cb488a1d93c2c552b88946b8b215a31519c5d907c98ba1c39ad8937f03",
+      "last_checked": "2025-06-10T21:57:45.814474",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"061e6864a7b8bf77147b665565ebf111\"",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum/notregistered.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/status-swift.enum/notregistered": {
-      "hash": "85716771982adaad7813612f6e3a48a3ae2666c8d4c876c3c2ca695dff9df1e4",
-      "last_checked": "2025-06-06T08:12:12.009587",
-      "status": "unchanged"
+      "hash": "abef64cb488a1d93c2c552b88946b8b215a31519c5d907c98ba1c39ad8937f03",
+      "last_checked": "2025-06-10T21:57:45.814515",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"061e6864a7b8bf77147b665565ebf111\"",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum/notregistered.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/status-swift.enum/enabled.json": {
-      "hash": "9c91b76393b4819579441fb89fab7fa21e5bcae55e2dd52c3ebf20543bed378e",
-      "last_checked": "2025-06-06T08:12:12.456853",
-      "status": "unchanged",
-      "etag": "W/\"3d5bc4b7efd853d10e3ec23bd04792a4\""
+      "hash": "a067647c44cd82d24d964ea4b3313054a23734318e7eebbdf7e233815927ae38",
+      "last_checked": "2025-06-10T21:57:45.959015",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"6cc7d6633666ab7c35f635446c09a377\"",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum/enabled.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/status-swift.enum/enabled": {
-      "hash": "9c91b76393b4819579441fb89fab7fa21e5bcae55e2dd52c3ebf20543bed378e",
-      "last_checked": "2025-06-06T08:12:12.456853",
-      "status": "unchanged"
+      "hash": "a067647c44cd82d24d964ea4b3313054a23734318e7eebbdf7e233815927ae38",
+      "last_checked": "2025-06-10T21:57:45.959056",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"6cc7d6633666ab7c35f635446c09a377\"",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum/enabled.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/status-swift.enum/requiresapproval.json": {
-      "hash": "0079675028796e1874088d418d62f3f3f09bbd41c2ecbe5052065ff13301f929",
-      "last_checked": "2025-06-06T08:12:12.852319",
-      "status": "unchanged",
-      "etag": "W/\"406d5d0785d044a1e52d4cd6d864ccbd\""
+      "hash": "75d8d0d33ab5fd9f511248bb5cf97ebb22730b5b5ce9c37dcca8457819522808",
+      "last_checked": "2025-06-10T21:57:46.057864",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"12c7b42a253440ace17509e071c12537\"",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum/requiresapproval.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/status-swift.enum/requiresapproval": {
-      "hash": "0079675028796e1874088d418d62f3f3f09bbd41c2ecbe5052065ff13301f929",
-      "last_checked": "2025-06-06T08:12:12.852319",
-      "status": "unchanged"
+      "hash": "75d8d0d33ab5fd9f511248bb5cf97ebb22730b5b5ce9c37dcca8457819522808",
+      "last_checked": "2025-06-10T21:57:46.057905",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"12c7b42a253440ace17509e071c12537\"",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum/requiresapproval.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/status-swift.enum/notfound.json": {
-      "hash": "687bf58bce29ffede2cb5cff04db3e04b6e7fd3d6b6ab2bc9a971702990607b9",
-      "last_checked": "2025-06-06T08:12:13.276763",
-      "status": "unchanged",
-      "etag": "W/\"ec4d591de7f986261a840f1906c4bc9d\""
+      "hash": "d55b45890af4ea38ab3c76f918c748d55f3fd02a253c0ecf2a8d839556b4cb94",
+      "last_checked": "2025-06-10T21:57:46.182796",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"6dfd9dbb82e7a5c6fed089a119d147e7\"",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum/notfound.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/status-swift.enum/notfound": {
-      "hash": "687bf58bce29ffede2cb5cff04db3e04b6e7fd3d6b6ab2bc9a971702990607b9",
-      "last_checked": "2025-06-06T08:12:13.276763",
-      "status": "unchanged"
+      "hash": "d55b45890af4ea38ab3c76f918c748d55f3fd02a253c0ecf2a8d839556b4cb94",
+      "last_checked": "2025-06-10T21:57:46.182840",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"6dfd9dbb82e7a5c6fed089a119d147e7\"",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum/notfound.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smappservice/status-swift.enum/init(rawvalue:).json": {
-      "hash": "cdc00e8d7010acbfc7e3028fa5ee80fa86971114162ab23f72936aec98ae0f97",
-      "last_checked": "2025-06-06T08:12:13.697499",
-      "status": "unchanged",
-      "etag": "W/\"7dc051186672fc42cc7ada2568fb806a\""
+      "hash": "69d5bfbecdf8b49c3f8c3c13be3963674e0a5808210c0f722dd4ade4624e5997",
+      "last_checked": "2025-06-10T21:57:46.310026",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"5ffc974390010860002c76d59903e135\"",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum/init-rawvalue.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smappservice/status-swift.enum/init(rawvalue:)": {
-      "hash": "cdc00e8d7010acbfc7e3028fa5ee80fa86971114162ab23f72936aec98ae0f97",
-      "last_checked": "2025-06-06T08:12:13.697499",
-      "status": "unchanged"
+      "hash": "69d5bfbecdf8b49c3f8c3c13be3963674e0a5808210c0f722dd4ade4624e5997",
+      "last_checked": "2025-06-10T21:57:46.310103",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"5ffc974390010860002c76d59903e135\"",
+      "file_path": "documentation/ServiceManagement/smappservice/status-swift.enum/init-rawvalue.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmerroralreadyregistered.json": {
-      "hash": "3f0d2afb82a7126f77c8ddc6eaadd062c02b23b074c34d8e2d8e0f12e7eff958",
-      "last_checked": "2025-06-06T08:12:14.095569",
-      "status": "unchanged",
-      "etag": "W/\"a3dc6f9e75e16d2c03d1583d900a53df\""
+      "hash": "5eb96b62102e88288716d11a757121e873c2690586f4cc134654f3e4f4a5af2e",
+      "last_checked": "2025-06-10T21:57:46.420117",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"99def80db2636a56f45c068fb11d3294\"",
+      "file_path": "documentation/ServiceManagement/ksmerroralreadyregistered.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmerroralreadyregistered": {
-      "hash": "3f0d2afb82a7126f77c8ddc6eaadd062c02b23b074c34d8e2d8e0f12e7eff958",
-      "last_checked": "2025-06-06T08:12:14.095569",
-      "status": "unchanged"
+      "hash": "5eb96b62102e88288716d11a757121e873c2690586f4cc134654f3e4f4a5af2e",
+      "last_checked": "2025-06-10T21:57:46.420210",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"99def80db2636a56f45c068fb11d3294\"",
+      "file_path": "documentation/ServiceManagement/ksmerroralreadyregistered.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmerrorauthorizationfailure.json": {
-      "hash": "ad3e9b63e4ecb451ccbada834ba0275b7ba24d3f08cf6383206a6ed68f11b9f6",
-      "last_checked": "2025-06-06T08:12:14.513996",
-      "status": "unchanged",
-      "etag": "W/\"94e7d491693e6ca0762d22d5f1f2e8aa\""
+      "hash": "3eea0d8e715acf3a1af93f4e09a81e8b9bfe55ead6fc3ccd36aac0681ae8a232",
+      "last_checked": "2025-06-10T21:57:46.545421",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"13e69183f359ff1a30d25c7dfce4b2fe\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorauthorizationfailure.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmerrorauthorizationfailure": {
-      "hash": "ad3e9b63e4ecb451ccbada834ba0275b7ba24d3f08cf6383206a6ed68f11b9f6",
-      "last_checked": "2025-06-06T08:12:14.513996",
-      "status": "unchanged"
+      "hash": "3eea0d8e715acf3a1af93f4e09a81e8b9bfe55ead6fc3ccd36aac0681ae8a232",
+      "last_checked": "2025-06-10T21:57:46.545646",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"13e69183f359ff1a30d25c7dfce4b2fe\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorauthorizationfailure.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmerrorinternalfailure.json": {
-      "hash": "f098df2d9d7145f1a9066a619fc302d7b4c74cc4038af8937e5f8411f81e8a21",
-      "last_checked": "2025-06-06T08:12:14.940050",
-      "status": "unchanged",
-      "etag": "W/\"216b280c75eb3a73c3773ec73d7f5c9c\""
+      "hash": "589591105fa802ef53697b4435dbc381a35974ce43849b35cf5b0527e35a5b45",
+      "last_checked": "2025-06-10T21:57:46.678722",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"2ceb954464ba4dab8a82742b6ffd9284\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorinternalfailure.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmerrorinternalfailure": {
-      "hash": "f098df2d9d7145f1a9066a619fc302d7b4c74cc4038af8937e5f8411f81e8a21",
-      "last_checked": "2025-06-06T08:12:14.940050",
-      "status": "unchanged"
+      "hash": "589591105fa802ef53697b4435dbc381a35974ce43849b35cf5b0527e35a5b45",
+      "last_checked": "2025-06-10T21:57:46.678783",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"2ceb954464ba4dab8a82742b6ffd9284\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorinternalfailure.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmerrorinvalidplist.json": {
-      "hash": "7308f5ca45678c1807d20a2f40493341770fb747dca9d3e4bb8644b117daa0dc",
-      "last_checked": "2025-06-06T08:12:15.425578",
-      "status": "unchanged",
-      "etag": "W/\"ec96a27cf9a7816b66a9dfb75eddba32\""
+      "hash": "efdbddac6a13398e980cb1166ea1b87f3bc9df7cd900876fcbd337f4c7a7a8ba",
+      "last_checked": "2025-06-10T21:57:46.779278",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"e9b1bd613b8eff76c1a60496b22e8fe3\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorinvalidplist.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmerrorinvalidplist": {
-      "hash": "7308f5ca45678c1807d20a2f40493341770fb747dca9d3e4bb8644b117daa0dc",
-      "last_checked": "2025-06-06T08:12:15.425578",
-      "status": "unchanged"
+      "hash": "efdbddac6a13398e980cb1166ea1b87f3bc9df7cd900876fcbd337f4c7a7a8ba",
+      "last_checked": "2025-06-10T21:57:46.779326",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"e9b1bd613b8eff76c1a60496b22e8fe3\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorinvalidplist.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmerrorinvalidsignature.json": {
-      "hash": "c526be26fb78da9499a0c34d22350c83dad2a4e281e8bedbd483d81289ead46e",
-      "last_checked": "2025-06-06T08:12:15.809616",
-      "status": "unchanged",
-      "etag": "W/\"1f09beca41e2356b4870ad4a4be9eefd\""
+      "hash": "7b95238afd9b1aafbafd993cd7dc1c46f8ae1a65401f8e70b855b7413402036e",
+      "last_checked": "2025-06-10T21:57:46.920712",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"38b640331c411db99b5984e58e12c54b\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorinvalidsignature.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmerrorinvalidsignature": {
-      "hash": "c526be26fb78da9499a0c34d22350c83dad2a4e281e8bedbd483d81289ead46e",
-      "last_checked": "2025-06-06T08:12:15.809616",
-      "status": "unchanged"
+      "hash": "7b95238afd9b1aafbafd993cd7dc1c46f8ae1a65401f8e70b855b7413402036e",
+      "last_checked": "2025-06-10T21:57:46.920762",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"38b640331c411db99b5984e58e12c54b\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorinvalidsignature.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmerrorjobmustbeenabled.json": {
-      "hash": "2946a2e9b3a06eea24e2da1c42756365fd76dd0eee3104b0eae44bcca728a487",
-      "last_checked": "2025-06-06T08:12:16.278286",
-      "status": "unchanged",
-      "etag": "W/\"8975bbcab087223c78e9380933b8926a\""
+      "hash": "c8bd26faa3ac1e5233cc2ef0ff777d67df0320e6a966fbb68fb58042dc13bd26",
+      "last_checked": "2025-06-10T21:57:47.009366",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"490c807e7c419b52fd2c0540acee2e5e\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorjobmustbeenabled.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmerrorjobmustbeenabled": {
-      "hash": "2946a2e9b3a06eea24e2da1c42756365fd76dd0eee3104b0eae44bcca728a487",
-      "last_checked": "2025-06-06T08:12:16.278286",
-      "status": "unchanged"
+      "hash": "c8bd26faa3ac1e5233cc2ef0ff777d67df0320e6a966fbb68fb58042dc13bd26",
+      "last_checked": "2025-06-10T21:57:47.009417",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"490c807e7c419b52fd2c0540acee2e5e\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorjobmustbeenabled.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmerrorjobnotfound.json": {
-      "hash": "c9221897f3960bc2c6ffc924dc68c0ee5c958c651f1dddf44555bb447e0e79a3",
-      "last_checked": "2025-06-06T08:12:16.727177",
-      "status": "unchanged",
-      "etag": "W/\"19f9e5093e241b0127f279fa6f948d3b\""
+      "hash": "5b63d13f2a118ae1b6ef2e8429d02b267530e6961bdc70aeca4c4ba033f1df5f",
+      "last_checked": "2025-06-10T21:57:47.147716",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"808e158a17447039f24a9071ec2aa8ab\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorjobnotfound.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmerrorjobnotfound": {
-      "hash": "c9221897f3960bc2c6ffc924dc68c0ee5c958c651f1dddf44555bb447e0e79a3",
-      "last_checked": "2025-06-06T08:12:16.727177",
-      "status": "unchanged"
+      "hash": "5b63d13f2a118ae1b6ef2e8429d02b267530e6961bdc70aeca4c4ba033f1df5f",
+      "last_checked": "2025-06-10T21:57:47.147761",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"808e158a17447039f24a9071ec2aa8ab\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorjobnotfound.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmerrorjobplistnotfound.json": {
-      "hash": "164d5c7aac1e65b41963feb7c6c49a28281e4d10fb2394949f867b9c5ff5fc6e",
-      "last_checked": "2025-06-06T08:12:17.126599",
-      "status": "unchanged",
-      "etag": "W/\"4b8fef80a57350c997d3a4cc94530df5\""
+      "hash": "918b644df301290fb7330df70fb491a0c1f2dbd2ad9395adb70dd0841b6fafa9",
+      "last_checked": "2025-06-10T21:57:47.282496",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"7f6cdacb354db42d5f3b6b391c175186\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorjobplistnotfound.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmerrorjobplistnotfound": {
-      "hash": "164d5c7aac1e65b41963feb7c6c49a28281e4d10fb2394949f867b9c5ff5fc6e",
-      "last_checked": "2025-06-06T08:12:17.126599",
-      "status": "unchanged"
+      "hash": "918b644df301290fb7330df70fb491a0c1f2dbd2ad9395adb70dd0841b6fafa9",
+      "last_checked": "2025-06-10T21:57:47.282538",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"7f6cdacb354db42d5f3b6b391c175186\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorjobplistnotfound.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmerrorlaunchdeniedbyuser.json": {
-      "hash": "0a299d9e5614fd9a1e9e71726cff476bf1d6cd03cae793e6beb21721405d7e55",
-      "last_checked": "2025-06-06T08:12:17.527538",
-      "status": "unchanged",
-      "etag": "W/\"27a24524fb0178a066ee0fc7dc4e5cd5\""
+      "hash": "b1021373c4886d67c3d4390e3a55b6a2fcdc4b5b4741880d71f5a4b4eb2b7eb8",
+      "last_checked": "2025-06-10T21:57:47.431217",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"94eca48660805d458d88453e4da77d4c\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorlaunchdeniedbyuser.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmerrorlaunchdeniedbyuser": {
-      "hash": "0a299d9e5614fd9a1e9e71726cff476bf1d6cd03cae793e6beb21721405d7e55",
-      "last_checked": "2025-06-06T08:12:17.527538",
-      "status": "unchanged"
+      "hash": "b1021373c4886d67c3d4390e3a55b6a2fcdc4b5b4741880d71f5a4b4eb2b7eb8",
+      "last_checked": "2025-06-10T21:57:47.431280",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"94eca48660805d458d88453e4da77d4c\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorlaunchdeniedbyuser.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmerrorserviceunavailable.json": {
-      "hash": "a1ce72762639de36ebf34123757b1bfcf3019df33173c748344539a9e4469f66",
-      "last_checked": "2025-06-06T08:12:17.971813",
-      "status": "unchanged",
-      "etag": "W/\"dcf564144bc3bcfd2f9801d318a66f62\""
+      "hash": "234d57d74c64e96d8f7664268a2bb9b9f6154fbe59338cf1a24254b56cd7f443",
+      "last_checked": "2025-06-10T21:57:47.588121",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"7da97cfc7f099d6cc6088f16fe641868\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorserviceunavailable.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmerrorserviceunavailable": {
-      "hash": "a1ce72762639de36ebf34123757b1bfcf3019df33173c748344539a9e4469f66",
-      "last_checked": "2025-06-06T08:12:17.971813",
-      "status": "unchanged"
+      "hash": "234d57d74c64e96d8f7664268a2bb9b9f6154fbe59338cf1a24254b56cd7f443",
+      "last_checked": "2025-06-10T21:57:47.588261",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"7da97cfc7f099d6cc6088f16fe641868\"",
+      "file_path": "documentation/ServiceManagement/ksmerrorserviceunavailable.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmerrortoolnotvalid.json": {
-      "hash": "b76418051672124cf5d0069fe604cfb12f282ec02d19ef21feefa2720c6df46d",
-      "last_checked": "2025-06-06T08:12:18.393495",
-      "status": "unchanged",
-      "etag": "W/\"0a9d7472a21c101a628628f412f8fd1c\""
+      "hash": "635bce38f10c079f1442d80b99e96910d431c39cc0b0acd7dae89fff9a0a25cd",
+      "last_checked": "2025-06-10T21:57:47.691972",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"eb8b3b5e0aba5891160bc9d0b26e4f7b\"",
+      "file_path": "documentation/ServiceManagement/ksmerrortoolnotvalid.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmerrortoolnotvalid": {
-      "hash": "b76418051672124cf5d0069fe604cfb12f282ec02d19ef21feefa2720c6df46d",
-      "last_checked": "2025-06-06T08:12:18.393495",
-      "status": "unchanged"
+      "hash": "635bce38f10c079f1442d80b99e96910d431c39cc0b0acd7dae89fff9a0a25cd",
+      "last_checked": "2025-06-10T21:57:47.692015",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"eb8b3b5e0aba5891160bc9d0b26e4f7b\"",
+      "file_path": "documentation/ServiceManagement/ksmerrortoolnotvalid.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmerrordomainframework.json": {
-      "hash": "b604fce1800629c0abeda94b1d11c3844dc25beb91b5bb00f27b13c6f9432873",
-      "last_checked": "2025-06-06T08:12:18.810728",
-      "status": "unchanged",
-      "etag": "W/\"8cd8bcb8cc79d585c518ab10c4b70469\""
+      "hash": "0d56e48f94e475caac686ac4d668d021db9098cf509898864d71b612224ba0c5",
+      "last_checked": "2025-06-10T21:57:47.799987",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"8ef6ab31a7e9af45b904dbd0e82c5c52\"",
+      "file_path": "documentation/ServiceManagement/ksmerrordomainframework.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmerrordomainframework": {
-      "hash": "b604fce1800629c0abeda94b1d11c3844dc25beb91b5bb00f27b13c6f9432873",
-      "last_checked": "2025-06-06T08:12:18.810728",
-      "status": "unchanged"
+      "hash": "0d56e48f94e475caac686ac4d668d021db9098cf509898864d71b612224ba0c5",
+      "last_checked": "2025-06-10T21:57:47.800031",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"8ef6ab31a7e9af45b904dbd0e82c5c52\"",
+      "file_path": "documentation/ServiceManagement/ksmerrordomainframework.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmerrordomainipc.json": {
-      "hash": "84d93145bb386b6499916c5314b1afad30d3c922fdc2e5d64fac9f685c2a81d1",
-      "last_checked": "2025-06-06T08:12:19.286142",
-      "status": "unchanged",
-      "etag": "W/\"f5da276ccb71474d4be4be36e41a31e4\""
+      "hash": "a66b88dffccffa3cd093266f677e7e9c34a139ed08ebbcac89fea182bc4aa24f",
+      "last_checked": "2025-06-10T21:57:47.933677",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"c11cb21fff61454adfcd26ecf6103708\"",
+      "file_path": "documentation/ServiceManagement/ksmerrordomainipc.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmerrordomainipc": {
-      "hash": "84d93145bb386b6499916c5314b1afad30d3c922fdc2e5d64fac9f685c2a81d1",
-      "last_checked": "2025-06-06T08:12:19.286142",
-      "status": "unchanged"
+      "hash": "a66b88dffccffa3cd093266f677e7e9c34a139ed08ebbcac89fea182bc4aa24f",
+      "last_checked": "2025-06-10T21:57:47.933712",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"c11cb21fff61454adfcd26ecf6103708\"",
+      "file_path": "documentation/ServiceManagement/ksmerrordomainipc.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksmerrordomainlaunchd.json": {
-      "hash": "6b836646e660e91ad06e5a35164dc4adcf80c8f833d7e17704319ea1eebdfa52",
-      "last_checked": "2025-06-06T08:12:19.699847",
-      "status": "unchanged",
-      "etag": "W/\"c109666025dc8f5e825e5a8c354a6885\""
+      "hash": "50f45a5711f6be01d4adeebd79f03b681f685ca90dd3abb5ebedf3e2137f9dfa",
+      "last_checked": "2025-06-10T21:57:48.055112",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"c839cf6e0a588fff4f3abe8132717174\"",
+      "file_path": "documentation/ServiceManagement/ksmerrordomainlaunchd.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksmerrordomainlaunchd": {
-      "hash": "6b836646e660e91ad06e5a35164dc4adcf80c8f833d7e17704319ea1eebdfa52",
-      "last_checked": "2025-06-06T08:12:19.699847",
-      "status": "unchanged"
+      "hash": "50f45a5711f6be01d4adeebd79f03b681f685ca90dd3abb5ebedf3e2137f9dfa",
+      "last_checked": "2025-06-10T21:57:48.055151",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"c839cf6e0a588fff4f3abe8132717174\"",
+      "file_path": "documentation/ServiceManagement/ksmerrordomainlaunchd.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smcopyalljobdictionaries(_:).json": {
-      "hash": "572f35bf5f202c1cc74b06527aa230f4c8eb1ea7f8f5d425569865412a044ab5",
-      "last_checked": "2025-06-06T08:12:20.096704",
-      "status": "unchanged",
-      "etag": "W/\"b98d83284522ccd5a5e7287cb0beaf8e\""
+      "hash": "ca4b3b1242dbc0ea9ecc623f226863605a878cfd25e0d8134a009bcbb81731d8",
+      "last_checked": "2025-06-10T21:57:48.192175",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"45f7af041253ab7a0150d7bb87c159c2\"",
+      "file_path": "documentation/ServiceManagement/smcopyalljobdictionaries.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smcopyalljobdictionaries(_:)": {
-      "hash": "572f35bf5f202c1cc74b06527aa230f4c8eb1ea7f8f5d425569865412a044ab5",
-      "last_checked": "2025-06-06T08:12:20.096704",
-      "status": "unchanged"
+      "hash": "ca4b3b1242dbc0ea9ecc623f226863605a878cfd25e0d8134a009bcbb81731d8",
+      "last_checked": "2025-06-10T21:57:48.192220",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"45f7af041253ab7a0150d7bb87c159c2\"",
+      "file_path": "documentation/ServiceManagement/smcopyalljobdictionaries.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smjobcopydictionary(_:_:).json": {
-      "hash": "4ec50a7a334abeaedd681c5b9b43b1233c9ebee6a31247819ddf6d8ca2889908",
-      "last_checked": "2025-06-06T08:12:20.725478",
-      "status": "unchanged",
-      "etag": "W/\"7bf1b403b9d9dbdd5d3eeab8e5bd12b1\""
+      "hash": "08c8c4651425a8136e564c4e9c8853976f1746224f0440729cfd32403a59e169",
+      "last_checked": "2025-06-10T21:57:48.344426",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"2714778bb3f4a96fc438feab16f2c6af\"",
+      "file_path": "documentation/ServiceManagement/smjobcopydictionary.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smjobcopydictionary(_:_:)": {
-      "hash": "4ec50a7a334abeaedd681c5b9b43b1233c9ebee6a31247819ddf6d8ca2889908",
-      "last_checked": "2025-06-06T08:12:20.725478",
-      "status": "unchanged"
+      "hash": "08c8c4651425a8136e564c4e9c8853976f1746224f0440729cfd32403a59e169",
+      "last_checked": "2025-06-10T21:57:48.344470",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"2714778bb3f4a96fc438feab16f2c6af\"",
+      "file_path": "documentation/ServiceManagement/smjobcopydictionary.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smjobremove(_:_:_:_:_:).json": {
-      "hash": "ef6043c439d4da62710c4023f1c653fc92fb275530287bbfd1313462b401041d",
-      "last_checked": "2025-06-06T08:12:21.093908",
-      "status": "unchanged",
-      "etag": "W/\"a7c58431a9c06136835a15ac2b6956be\""
+      "hash": "4eb86c37a2ef6d5d106bbf80a7b3ba80d548f8a428c24180574a8d694c19a410",
+      "last_checked": "2025-06-10T21:57:48.439154",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"54221ac09297d5bad3b9ba4628552f8a\"",
+      "file_path": "documentation/ServiceManagement/smjobremove.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smjobremove(_:_:_:_:_:)": {
-      "hash": "ef6043c439d4da62710c4023f1c653fc92fb275530287bbfd1313462b401041d",
-      "last_checked": "2025-06-06T08:12:21.093908",
-      "status": "unchanged"
+      "hash": "4eb86c37a2ef6d5d106bbf80a7b3ba80d548f8a428c24180574a8d694c19a410",
+      "last_checked": "2025-06-10T21:57:48.439207",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"54221ac09297d5bad3b9ba4628552f8a\"",
+      "file_path": "documentation/ServiceManagement/smjobremove.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/smjobsubmit(_:_:_:_:).json": {
-      "hash": "720b292db5f80a8b4d8f6f612f40296481664bed2aa1d07cbe4f86699064eb43",
-      "last_checked": "2025-06-06T08:12:21.462826",
-      "status": "unchanged",
-      "etag": "W/\"27ddb1aacfff564a67bfd8f2bb6480bf\""
+      "hash": "21bb06ac376d2410c536f524c150f861e7f26be532ac1bc5110963225b2cd286",
+      "last_checked": "2025-06-10T21:57:48.555790",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"136d389330dc5343cdd5b564c160628d\"",
+      "file_path": "documentation/ServiceManagement/smjobsubmit.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/smjobsubmit(_:_:_:_:)": {
-      "hash": "720b292db5f80a8b4d8f6f612f40296481664bed2aa1d07cbe4f86699064eb43",
-      "last_checked": "2025-06-06T08:12:21.462826",
-      "status": "unchanged"
+      "hash": "21bb06ac376d2410c536f524c150f861e7f26be532ac1bc5110963225b2cd286",
+      "last_checked": "2025-06-10T21:57:48.555888",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"136d389330dc5343cdd5b564c160628d\"",
+      "file_path": "documentation/ServiceManagement/smjobsubmit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksminfokeyauthorizedclients.json": {
-      "hash": "4dba4211c1fb79580c3d9b008c2252dd464c3396f191eff3ac3880824aad915f",
-      "last_checked": "2025-06-06T08:12:21.832323",
-      "status": "unchanged",
-      "etag": "W/\"e246a9c850cbe3221470200d9a6af302\""
+      "hash": "c428aedb47949592316af873d699183e865a2071a5432bbee8456f5d0346241a",
+      "last_checked": "2025-06-10T21:57:48.698923",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"a0b2c97a2afa9aa2bf7eb23672a6eb8b\"",
+      "file_path": "documentation/ServiceManagement/ksminfokeyauthorizedclients.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksminfokeyauthorizedclients": {
-      "hash": "4dba4211c1fb79580c3d9b008c2252dd464c3396f191eff3ac3880824aad915f",
-      "last_checked": "2025-06-06T08:12:21.832323",
-      "status": "unchanged"
+      "hash": "c428aedb47949592316af873d699183e865a2071a5432bbee8456f5d0346241a",
+      "last_checked": "2025-06-10T21:57:48.698960",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"a0b2c97a2afa9aa2bf7eb23672a6eb8b\"",
+      "file_path": "documentation/ServiceManagement/ksminfokeyauthorizedclients.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/servicemanagement/ksminfokeyprivilegedexecutables.json": {
-      "hash": "c87d0ab4014690ce77899a21a7faabcc19a27a74123840b811f5ad299782f002",
-      "last_checked": "2025-06-06T08:12:22.203107",
-      "status": "unchanged",
-      "etag": "W/\"7c9eaf7b0067b42dced98b6806a24e8b\""
+      "hash": "497ef004fb4f0eb5070318a7849b4e7b6ac7f7df591d1f589855dffc3105d388",
+      "last_checked": "2025-06-10T21:57:48.799227",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"101618e5d424a730c3c4388981471ad4\"",
+      "file_path": "documentation/ServiceManagement/ksminfokeyprivilegedexecutables.md"
     },
     "https://developer.apple.com/documentation/servicemanagement/ksminfokeyprivilegedexecutables": {
-      "hash": "c87d0ab4014690ce77899a21a7faabcc19a27a74123840b811f5ad299782f002",
-      "last_checked": "2025-06-06T08:12:22.203107",
-      "status": "unchanged"
+      "hash": "497ef004fb4f0eb5070318a7849b4e7b6ac7f7df591d1f589855dffc3105d388",
+      "last_checked": "2025-06-10T21:57:48.799268",
+      "status": "new",
+      "session_id": "2025-06-10T21:57:41.737244",
+      "etag": "W/\"101618e5d424a730c3c4388981471ad4\"",
+      "file_path": "documentation/ServiceManagement/ksminfokeyprivilegedexecutables.md"
     }
   }
 }

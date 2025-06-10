@@ -1,6 +1,6 @@
 # onTapGesture(count:coordinateSpace:perform:)
 
-**Framework**: Deviceactivity  
+**Framework**: DeviceActivity  
 **Kind**: method
 
 Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.

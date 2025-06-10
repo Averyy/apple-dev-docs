@@ -1,6 +1,6 @@
 # Generate and validate tokens
 
-**Framework**: Accountorganizationaldatasharing  
+**Framework**: Account & Organizational Data Sharing  
 **Kind**: httpRequest
 
 Validate an authorization grant code delivered to your app to obtain tokens, or validate an existing refresh token.
@@ -99,4 +99,4 @@ The list of input parameters required for the server to validate the authorizati
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AccountOrganizationalDataSharing/generate-and-validate-tokens)*
+*[View on Apple Developer](https://developer.apple.com/documentation/accountorganizationaldatasharing/generate-and-validate-tokens)*

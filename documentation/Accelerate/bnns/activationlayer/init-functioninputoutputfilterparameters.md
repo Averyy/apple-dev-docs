@@ -10,10 +10,10 @@ Returns a new activation layer.
 - iPadOS 14.0+
 - Mac Catalyst ?+
 - macOS 11.0+
+- tvOS 14.0+
 - visionOS ?+
 - watchOS 7.0+
 - Unknown ?+ - Deprecated
-- tvOS 14.0+
 
 ## Declaration
 
@@ -24,8 +24,6 @@ convenience init?(function activationFunction: BNNS.ActivationFunction, input: B
 #### Discussion
 
 > ❗ **Important**:  The input dimensions must be equal to the output dimensions. For activation types other than identity, the input and output must be `float`.
-
- The input dimensions must be equal to the output dimensions. For activation types other than identity, the input and output must be `float`.
 
 ## Parameters
 

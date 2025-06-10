@@ -26,8 +26,6 @@ POST https://sandbox.itunes.apple.com/verifyReceipt
 
 > ❗ **Important**: As a best practice, always call the production URL `https://buy.itunes.apple.com/verifyReceipt` first and proceed to verify with the sandbox URL if you receive a `21007` [`status`](status.md) code. Following this approach ensures that you don’t have to switch between URLs while your app is in testing, in review by App Review, or live in the App Store.
 
-As a best practice, always call the production URL `https://buy.itunes.apple.com/verifyReceipt` first and proceed to verify with the sandbox URL if you receive a `21007` [`status`](status.md) code. Following this approach ensures that you don’t have to switch between URLs while your app is in testing, in review by App Review, or live in the App Store.
-
 ##### 4209023
 
 The `verifyReceipt` endpoint is deprecated. The HTTP header includes the deprecation date, according to [`RFC 8594`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc8594.html).

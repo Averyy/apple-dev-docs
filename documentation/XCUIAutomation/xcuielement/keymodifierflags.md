@@ -1,6 +1,6 @@
 # XCUIElement.KeyModifierFlags
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: struct
 
 Flags for simulating combination keystrokes with keys, such as Control, Option, Shift, and Command.
@@ -62,6 +62,7 @@ Use these flags with the [`typeKey(_:modifierFlags:)`](xcuielement/typekey(_:mod
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: init
 
 Creates an interaction for Live Text actions with the specified delegate.

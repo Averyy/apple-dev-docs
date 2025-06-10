@@ -10,7 +10,8 @@ Synchronously loads a model entity from a bundle.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- visionOS ?+
+- tvOS 26.0+ (Beta)
+- visionOS 1.0+
 
 ## Declaration
 
@@ -21,8 +22,8 @@ Synchronously loads a model entity from a bundle.
 
 ## Mentions
 
-- [Reducing CPU Utilization in Your RealityKit App](reducing-cpu-utilization-in-your-realitykit-app.md)
 - [Loading entities from a file](loading-entities-from-a-file.md)
+- [Reducing CPU Utilization in Your RealityKit App](reducing-cpu-utilization-in-your-realitykit-app.md)
 
 #### Return Value
 

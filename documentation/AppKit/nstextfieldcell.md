@@ -25,7 +25,7 @@ Placeholder strings, set using the [`placeholderString`](nstextfieldcell/placeho
 
 ##### Designated Initializers
 
-When subclassing `NSTextFieldCell` you must implement the designated initializers [`init(coder:)`](https://developer.apple.com/documentation/OSLog/OSLogEntry/init(coder:)) and [`init(textCell:)`](nscell/init(textcell:).md).
+When subclassing `NSTextFieldCell` you must implement the designated initializers [`init(coder:)`](nscell/init(coder:).md) and [`init(textCell:)`](nscell/init(textcell:).md).
 
 ## Topics
 
@@ -85,6 +85,7 @@ When subclassing `NSTextFieldCell` you must implement the designated initializer
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

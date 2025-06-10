@@ -1,6 +1,6 @@
 # imagery(elevation:)
 
-**Framework**: Mapkit  
+**Framework**: MapKit  
 **Kind**: method
 
 Creates a map style based on satellite imagery with the elevation characteristics you specify.

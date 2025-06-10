@@ -1,6 +1,6 @@
 # supplementaryInterfaceContentInsets
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 The distances the edges of content are inset from the supplementary interface.

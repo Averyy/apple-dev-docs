@@ -10,6 +10,7 @@ The scalar parameter applied to a material.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -30,21 +31,11 @@ enum MaterialScalarParameter
   Creates a scalar parameter from a floating-point literal.
 - [init(integerLiteral: Int)](materialscalarparameter/init(integerliteral:).md)
   Creates a scalar parameter from an integer literal.
-- [MaterialScalarParameter.FloatLiteralType](materialscalarparameter/floatliteraltype.md)
-  A type that represents a floating-point literal.
-- [MaterialScalarParameter.IntegerLiteralType](materialscalarparameter/integerliteraltype.md)
-  A type that represents an integer literal.
 ### Comparing material scalar parameters
 - [static func == (MaterialScalarParameter, MaterialScalarParameter) -> Bool](materialscalarparameter/==(_:_:).md)
   Indicates whether two scalar parameters are equal.
-- [static func != (Self, Self) -> Bool](materialscalarparameter/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [func hash(into: inout Hasher)](materialscalarparameter/hash(into:).md)
   Hashes the essential components of the scalar parameter by feeding them into the given hash function.
-- [var hashValue: Int](materialscalarparameter/hashvalue.md)
-  The hash value.
-### Default Implementations
-- [Equatable Implementations](materialscalarparameter/equatable-implementations.md)
 
 ## Relationships
 

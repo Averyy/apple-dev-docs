@@ -1,6 +1,6 @@
 # init(machService:targetQueue:options:incomingMessageHandler:cancellationHandler:)
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: init
 
 Establishes a connection to a launch agent or launch daemon with the name and received message handler you specify.
@@ -14,6 +14,7 @@ Establishes a connection to a launch agent or launch daemon with the name and re
 ## Declaration
 
 ```swift
+@preconcurrency
 convenience init(machService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, incomingMessageHandler: ((XPCReceivedMessage) -> (any Encodable)?)? = nil, cancellationHandler: ((XPCRichError) -> Void)? = nil) throws
 ```
 

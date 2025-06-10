@@ -1,6 +1,6 @@
 # Quick Look
 
-**Framework**: Quicklook  
+**Framework**: Quick Look  
 **Kind**: module
 
 Create previews of files to use inside your app, or perform simple edits on previews.
@@ -62,6 +62,7 @@ To provide a data-based preview extension, implement a subclass of [`QLPreviewPr
 - [class QLPreviewReplyAttachment](../QuickLookUI/QLPreviewReplyAttachment.md)
   An attachment for a Quick Look preview reply that provides additional content for the system to display a preview.
 ### Classes
+- [class ARQuickLookPreviewItem](arquicklookpreviewitem.md)
 - [class PreviewApplication](previewapplication.md)
   A class you use to configure and launch the platform Quick Look application.
 ### Structures

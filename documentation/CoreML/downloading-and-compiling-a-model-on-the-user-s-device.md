@@ -56,9 +56,7 @@ _ = try fileManager.replaceItemAt(permanentURL,
 
 ```
 
-> ❗ **Important**:  You should consider the user’s iCloud Backup size when saving large, compiled Core ML models. You can store models in the app’s container using /tmp and /Library/Caches directories, which contain purgeable data that isn’t backed up. When the models aren’t purgeable, you can exclude them from backup by setting the [`isExcludedFromBackup`](https://developer.apple.com/documentation/foundation/urlresourcevalues/1780002-isexcludedfrombackup) resource value to `true`. To learn more about excluding files from iCloud Backup, see [`Optimizing Your App’s Data for iCloud Backup`](https://developer.apple.com/documentation/Foundation/optimizing-your-app-s-data-for-icloud-backup).
-
- You should consider the user’s iCloud Backup size when saving large, compiled Core ML models. You can store models in the app’s container using /tmp and /Library/Caches directories, which contain purgeable data that isn’t backed up. When the models aren’t purgeable, you can exclude them from backup by setting the [`isExcludedFromBackup`](https://developer.apple.com/documentation/foundation/urlresourcevalues/1780002-isexcludedfrombackup) resource value to `true`. To learn more about excluding files from iCloud Backup, see [`Optimizing Your App’s Data for iCloud Backup`](https://developer.apple.com/documentation/Foundation/optimizing-your-app-s-data-for-icloud-backup).
+> ❗ **Important**:  You should consider the user’s iCloud Backup size when saving large, compiled Core ML models. You can store models in the app’s container using /tmp and /Library/Caches directories, which contain purgeable data that isn’t backed up. When the models aren’t purgeable, you can exclude them from backup by setting the [`isExcludedFromBackup`](https://developer.apple.com/documentation/Foundation/URLResourceValues/isExcludedFromBackup) resource value to `true`. To learn more about excluding files from iCloud Backup, see [`Optimizing Your App’s Data for iCloud Backup`](https://developer.apple.com/documentation/Foundation/optimizing-your-app-s-data-for-icloud-backup).
 
 ## See Also
 

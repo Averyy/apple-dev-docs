@@ -3,8 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A dictionary that contains further details about an error.
-
 **Availability**:
 - Device Assignment Services ?+
 - VPP License Management ?+

@@ -6,7 +6,7 @@
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS 1.0+
@@ -49,6 +49,7 @@ protocol Model
 - [AssistantSchemas.SpreadsheetEntity](assistantschemas/spreadsheetentity.md)
 - [AssistantSchemas.SpreadsheetIntent](assistantschemas/spreadsheetintent.md)
 - [AssistantSchemas.SystemIntent](assistantschemas/systemintent.md)
+- [AssistantSchemas.VisualIntelligenceIntent](assistantschemas/visualintelligenceintent.md)
 - [AssistantSchemas.WhiteboardEntity](assistantschemas/whiteboardentity.md)
 - [AssistantSchemas.WhiteboardEnum](assistantschemas/whiteboardenum.md)
 - [AssistantSchemas.WhiteboardIntent](assistantschemas/whiteboardintent.md)

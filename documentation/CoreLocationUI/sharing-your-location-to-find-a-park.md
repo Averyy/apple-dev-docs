@@ -1,6 +1,6 @@
 # Sharing Your Location to Find a Park
 
-**Framework**: Corelocationui
+**Framework**: CoreLocationUI
 
 Ask for location access using a customizable location button.
 
@@ -23,4 +23,4 @@ Ask for location access using a customizable location button.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreLocationUI/sharing-your-location-to-find-a-park)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corelocationui/sharing-your-location-to-find-a-park)*

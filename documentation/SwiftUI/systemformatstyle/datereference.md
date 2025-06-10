@@ -45,6 +45,7 @@ Use the style by initializing it with the date it should refer to and format it 
 - [FormatStyle](../Foundation/FormatStyle.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

@@ -34,8 +34,6 @@ If not ended sooner, card emulation expires after 60 seconds and the credential 
 
 > ❗ **Important**: Calling this method may generate a billable event to the credential provider.
 
-Calling this method may generate a billable event to the credential provider.
-
 ## Parameters
 
 - `credential`: The credential to activate and transition into card emulation state with.

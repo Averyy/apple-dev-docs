@@ -1,6 +1,6 @@
 # VTFrameSiloCreate(allocator:fileURL:timeRange:options:frameSiloOut:)
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: func
 
 Creates a frame silo object using a temporary file.

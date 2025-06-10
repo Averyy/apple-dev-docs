@@ -1,6 +1,6 @@
 # Interacting with App Clip Codes in AR
 
-**Framework**: Appclip
+**Framework**: App Clips
 
 Display content and provide services in an AR experience with App Clip Codes.
 
@@ -269,10 +269,12 @@ As the user views the virtual plant, the App Clip waits for the user to scan ano
 
 - [Creating App Clip Codes](creating-app-clip-codes.md)
   Help users discover your App Clip by using an NFC-integrated or scan-only App Clip Code.
+- [Encoding a URL in an App Clip Code](encoding-a-url-in-an-app-clip-code.md)
+  Choose an invocation URL for your App Clip Code that you can encode efficiently.
 - [Preparing multiple App Clip Codes for production](preparing-multiple-app-clip-codes-for-production.md)
   Prepare your App Clip Codes to send to a professional printing service.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppClip/interacting-with-app-clip-codes-in-ar)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appclip/interacting-with-app-clip-codes-in-ar)*

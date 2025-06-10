@@ -25,8 +25,6 @@ The player looper doesn’t use the player item you specify for playback, and in
 
 > ❗ **Important**:  Load the [`duration`](avpartialasyncproperty/duration.md) value of a player item’s asset before passing the item to the looper to prevent blocking the calling thread until the duration is known.
 
- Load the [`duration`](avpartialasyncproperty/duration.md) value of a player item’s asset before passing the item to the looper to prevent blocking the calling thread until the duration is known.
-
 ## Parameters
 
 - `player`: A queue player to control playback.

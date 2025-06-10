@@ -1,6 +1,6 @@
 # onPencilSqueeze(perform:)
 
-**Framework**: Appintents  
+**Framework**: App Intents  
 **Kind**: method
 
 Adds an action to perform when the user squeezes their Apple Pencil.
@@ -8,7 +8,7 @@ Adds an action to perform when the user squeezes their Apple Pencil.
 **Availability**:
 - iOS 17.5+
 - iPadOS 17.5+
-- Mac Catalyst 17.5+
+- Mac Catalyst ?+
 - macOS 14.5+
 
 ## Declaration

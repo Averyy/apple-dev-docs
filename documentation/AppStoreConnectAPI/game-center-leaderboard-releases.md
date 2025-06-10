@@ -9,6 +9,7 @@ Read, create, and delete Game Center leaderboards releases.
 ### Managing leaderboard releases
 - [List releases for a leaderboard](get-v1-gamecenterleaderboards-_id_-releases.md)
   Read the state of releases for a leaderboard and related information.
+- [GET /v1/gameCenterLeaderboards/{id}/relationships/releases](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
 - [Read leaderboard release information](get-v1-gamecenterleaderboardreleases-_id_.md)
   Read the state of a specific leaderboard release.
 - [Create a leaderboard release](post-v1-gamecenterleaderboardreleases.md)
@@ -24,6 +25,7 @@ Read, create, and delete Game Center leaderboards releases.
   A response that contains a single leaderboard release resource.
 - [object GameCenterLeaderboardReleasesResponse](gamecenterleaderboardreleasesresponse.md)
   A response that contains multiple leaderboard release resource.
+- [object GameCenterLeaderboardReleasesLinkagesResponse](gamecenterleaderboardreleaseslinkagesresponse.md)
 
 ## See Also
 

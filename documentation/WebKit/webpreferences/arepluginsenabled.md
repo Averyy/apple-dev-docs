@@ -1,6 +1,6 @@
 # arePlugInsEnabled
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 A Boolean that indicates whether or not the web view allows plug-ins.

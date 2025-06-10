@@ -17,7 +17,6 @@ Converts a point from the coordinate system of another node in the node tree to 
 ## Declaration
 
 ```swift
-@MainActor
 func convert(_ point: CGPoint, from node: SKNode) -> CGPoint
 ```
 

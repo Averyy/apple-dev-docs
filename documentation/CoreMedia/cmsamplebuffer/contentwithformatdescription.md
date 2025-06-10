@@ -1,0 +1,36 @@
+# CMSampleBuffer.ContentWithFormatDescription
+
+**Framework**: Core Media  
+**Kind**: protocol
+
+This is a marker protocol to indicate content that always has a format description.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst ?+
+- macOS 26.0+ (Beta)
+- tvOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+- watchOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+protocol ContentWithFormatDescription : CMSampleBuffer.Content
+```
+
+## Relationships
+
+### Inherits From
+- [CMSampleBuffer.Content](cmsamplebuffer/content.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+### Conforming Types
+- [CMReadOnlyDataBlockBuffer](cmreadonlydatablockbuffer.md)
+- [CMSampleDataReference](cmsampledatareference.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/coremedia/cmsamplebuffer/contentwithformatdescription)*

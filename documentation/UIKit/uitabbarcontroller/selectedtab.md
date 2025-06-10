@@ -17,6 +17,13 @@
 var selectedTab: UITab? { get set }
 ```
 
+## See Also
+
+- [var selectedViewController: UIViewController?](uitabbarcontroller/selectedviewcontroller.md)
+  The view controller associated with the currently selected tab item.
+- [var selectedIndex: Int](uitabbarcontroller/selectedindex.md)
+  The index of the view controller associated with the currently selected tab item.
+
 
 ---
 

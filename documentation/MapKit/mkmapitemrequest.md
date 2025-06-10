@@ -12,6 +12,7 @@ A utility class you use to request additional information about a map feature.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 1.0+
+- watchOS 11.0+
 
 ## Declaration
 
@@ -43,6 +44,8 @@ class MKMapItemRequest
   The map feature.
 - [var featureAnnotation: MKMapFeatureAnnotation](mkmapitemrequest/featureannotation.md)
   The feature annotation.
+- [var placeDescriptor: PlaceDescriptor?](mkmapitemrequest/placedescriptor.md)
+  The place descriptor that contains information that’s helpful in uniquely identifying this place.
 ### Starting and stopping requests
 - [func cancel()](mkmapitemrequest/cancel.md)
   Cancels an in-progress map item request.
@@ -53,6 +56,9 @@ class MKMapItemRequest
   A Boolean value that indicates if the cancellation of the request was successful.
 - [var isLoading: Bool](mkmapitemrequest/isloading.md)
   A Boolean value that indicates if the request is loading.
+### Initializers
+- [convenience init(placeDescriptor: PlaceDescriptor)](mkmapitemrequest/init(placedescriptor:).md)
+  Creates a new map item request with the specified place descriptor
 
 ## Relationships
 

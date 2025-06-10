@@ -1,6 +1,6 @@
 # image()
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Returns an image associated with the receiver.

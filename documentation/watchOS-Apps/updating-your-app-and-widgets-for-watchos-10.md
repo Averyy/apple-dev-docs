@@ -1,6 +1,6 @@
 # Updating your app and widgets for watchOS 10
 
-**Framework**: Watchos Apps
+**Framework**: watchOS apps
 
 Integrate SwiftUI elements and watch-specific features, and build widgets for the Smart Stack.
 
@@ -29,4 +29,4 @@ watchOS 10 introduces a redesigned user interface to surface timely information,
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/watchOS-Apps/updating-your-app-and-widgets-for-watchos-10)*
+*[View on Apple Developer](https://developer.apple.com/documentation/watchos-apps/updating-your-app-and-widgets-for-watchos-10)*

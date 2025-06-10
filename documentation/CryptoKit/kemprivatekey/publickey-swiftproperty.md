@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-Returns the associated public key
+The associated public key.
 
 **Availability**:
 - iOS 17.0+

@@ -37,8 +37,6 @@ The processed device-motion data gives the device’s attitude, rotation rate, c
 
 > ❗ **Important**:  Create only one [`CMMotionManager`](cmmotionmanager.md) object for your app. Multiple instances of this class can affect the rate at which the system receives data from the accelerometer and gyroscope.
 
- Create only one [`CMMotionManager`](cmmotionmanager.md) object for your app. Multiple instances of this class can affect the rate at which the system receives data from the accelerometer and gyroscope.
-
 You can receive live sensor data at a specified update interval, or you can let the sensors collect data and store it for retrieval later. With both of these approaches,  call the appropriate stop method ([`stopAccelerometerUpdates()`](cmmotionmanager/stopaccelerometerupdates().md), [`stopGyroUpdates()`](cmmotionmanager/stopgyroupdates().md), [`stopMagnetometerUpdates()`](cmmotionmanager/stopmagnetometerupdates().md), and [`stopDeviceMotionUpdates()`](cmmotionmanager/stopdevicemotionupdates().md)) when you no longer need the data.
 
 ##### Receive Regular Motion Updates

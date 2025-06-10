@@ -34,6 +34,7 @@ enum Code
 ### Enumeration Cases
 - [CXErrorCodeIncomingCallError.Code.filteredDuringRestrictedSharingMode](cxerrorcodeincomingcallerror-swift.struct/code/filteredduringrestrictedsharingmode.md)
 - [CXErrorCodeIncomingCallError.Code.callIsProtected](cxerrorcodeincomingcallerror-swift.struct/code/callisprotected.md)
+- [CXErrorCodeIncomingCallError.Code.filteredBySensitiveParticipants](cxerrorcodeincomingcallerror-swift.struct/code/filteredbysensitiveparticipants.md)
 ### Initializers
 - [init?(rawValue: Int)](cxerrorcodeincomingcallerror-swift.struct/code/init(rawvalue:).md)
 
@@ -45,6 +46,7 @@ enum Code
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

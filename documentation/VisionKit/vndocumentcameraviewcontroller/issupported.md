@@ -1,6 +1,6 @@
 # isSupported
 
-**Framework**: Visionkit  
+**Framework**: VisionKit  
 **Kind**: property
 
 A Boolean variable that indicates whether or not the current device supports document scanning.

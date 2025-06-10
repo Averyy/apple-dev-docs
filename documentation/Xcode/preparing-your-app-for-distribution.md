@@ -96,7 +96,7 @@ A project created from a template already contains the image set for app icons. 
 
 ![Screenshot showing the Asset Catalog with an app icon asset selected to reveal image wells for adding images to use for your app’s icon.](https://docs-assets.developer.apple.com/published/7717e14eb0514d6c583e92d1bfd83621/preparing-your-app-for-distribution-4%402x.png)
 
-For information on configuring your icons, see [`Configuring your app icon`](configuring-your-app-icon.md). For app icon guidance and metrics, read [`App icons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/foundations/app-icons) in Human Interface Guidelines.
+For information on configuring your icons, see [`Creating your app icon using Icon Composer`](creating-your-app-icon-using-icon-composer.md). For app icon design guidance, see [`Human Interface Guidelines > Foundations > App icons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-icons).
 
 ##### Provide a Launch Screen
 
@@ -135,4 +135,4 @@ To learn more, see [`Complying with Encryption Export Regulations`](https://deve
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/preparing-your-app-for-distribution)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution)*

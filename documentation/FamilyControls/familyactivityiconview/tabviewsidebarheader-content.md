@@ -1,6 +1,6 @@
 # tabViewSidebarHeader(content:)
 
-**Framework**: Familycontrols  
+**Framework**: FamilyControls  
 **Kind**: method
 
 Adds a custom header to the sidebar of a tab view.

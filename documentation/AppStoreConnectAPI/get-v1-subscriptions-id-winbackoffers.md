@@ -16,10 +16,12 @@ List all win-back offers for a specific subscription.
 
 - [Creating and configuring win-back offers](creating-and-configuring-win-back-offers.md)
   Configure win-back offers for your auto-renewable subscriptions with the App Store Connect API.
+- [GET /v1/subscriptions/{id}/relationships/winBackOffers](get-v1-subscriptions-_id_-relationships-winbackoffers.md)
 - [Read win-back offer information](get-v1-winbackoffers-_id_.md)
   Read details about a specific win-back offer.
 - [List win-back offer prices](get-v1-winbackoffers-_id_-prices.md)
   List all prices for specific win-back offers.
+- [GET /v1/winBackOffers/{id}/relationships/prices](get-v1-winbackoffers-_id_-relationships-prices.md)
 - [Create a win-back offer](post-v1-winbackoffers.md)
   Create a win-back offer for a specific subscription.
 - [Modify a win-back offer](patch-v1-winbackoffers-_id_.md)

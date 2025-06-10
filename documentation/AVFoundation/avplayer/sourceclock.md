@@ -27,8 +27,6 @@ The default value is `nil`. Setting an explicit source clock is useful to synchr
 
 > ❗ **Important**:  Specifying a source clock for a device other than the one playing audio may cause audio to drift out of sync.
 
- Specifying a source clock for a device other than the one playing audio may cause audio to drift out of sync.
-
 ## See Also
 
 - [func setRate(Float, time: CMTime, atHostTime: CMTime)](avplayer/setrate(_:time:athosttime:).md)

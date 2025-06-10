@@ -1,6 +1,6 @@
 # environmentVariants
 
-**Framework**: Widgetkit  
+**Framework**: WidgetKit  
 **Kind**: property
 
 All environment values that might be set when a widget appears.
@@ -8,8 +8,9 @@ All environment values that might be set when a widget appears.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst ?+
 - macOS 11.0+
+- visionOS 26.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration

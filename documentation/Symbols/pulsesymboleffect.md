@@ -26,8 +26,6 @@ A pulse animation applies an opacity ramp to the layers in a symbol. You can cho
 
 > ❗ **Important**:  Because SwiftUI is a state-driven framework, you pass a `value` parameter when adding discrete effects, like bounce. You trigger the animation by changing the `value` parameter. Because AppKit and UIKit are event-driven frameworks, discrete effects animate automatically when added to an image view.
 
- Because SwiftUI is a state-driven framework, you pass a `value` parameter when adding discrete effects, like bounce. You trigger the animation by changing the `value` parameter. Because AppKit and UIKit are event-driven frameworks, discrete effects animate automatically when added to an image view.
-
 ```swift
 // Add an effect in SwiftUI.
 @State private var value1 = 0
@@ -79,6 +77,7 @@ imageView2.addSymbolEffect(.pulse.wholeSymbol, options: .repeat(3))
 - [Hashable](../Swift/Hashable.md)
 - [IndefiniteSymbolEffect](indefinitesymboleffect.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SymbolEffect](symboleffect.md)
 
 ## See Also

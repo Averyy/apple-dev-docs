@@ -25,8 +25,6 @@ This flag tells the system that the original file deliberately has sparse ranges
 
 > ❗ **Important**:  Don’t use this flag unless the original file is a sparse file, and your file provider extension passed the entire file, including the sparse ranges, to the callback handler. Using this flag incorrectly may appear to work during testing, but may prevent the system from downloading complete files due to new performance improvements.
 
- Don’t use this flag unless the original file is a sparse file, and your file provider extension passed the entire file, including the sparse ranges, to the callback handler. Using this flag incorrectly may appear to work during testing, but may prevent the system from downloading complete files due to new performance improvements.
-
 The system ignores this flag unless the retrieved range passed to the [`fetchPartialContents(for:version:request:minimalRange:aligningTo:options:completionHandler:)`](nsfileproviderpartialcontentfetching/fetchpartialcontents(for:version:request:minimalrange:aligningto:options:completionhandler:).md) method’s callback handler covers the entire file (a range with a location of zero and a length equal to the file-size in bytes).
 
 

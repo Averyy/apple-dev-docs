@@ -1,0 +1,35 @@
+# CommunicationTopic.Action.call
+
+**Framework**: PermissionKit  
+**Kind**: case
+
+A request to call someone.
+
+**Availability**:
+- iOS 26.0+ (Beta)
+- iPadOS 26.0+ (Beta)
+- Mac Catalyst 26.0+ (Beta)
+- macOS 26.0+ (Beta)
+- visionOS 26.0+ (Beta)
+
+## Declaration
+
+```swift
+case call
+```
+
+## See Also
+
+- [CommunicationTopic.Action.follow](communicationtopic/action/follow.md)
+  A request to follow someone.
+- [CommunicationTopic.Action.friend](communicationtopic/action/friend.md)
+  A request to friend someone.
+- [CommunicationTopic.Action.message](communicationtopic/action/message.md)
+  A request to message someone.
+- [CommunicationTopic.Action.videoChat](communicationtopic/action/videochat.md)
+  A request to video chat with someone.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/permissionkit/communicationtopic/action/call)*

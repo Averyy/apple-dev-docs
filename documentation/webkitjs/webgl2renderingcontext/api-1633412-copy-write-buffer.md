@@ -1,6 +1,6 @@
 # COPY_WRITE_BUFFER
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

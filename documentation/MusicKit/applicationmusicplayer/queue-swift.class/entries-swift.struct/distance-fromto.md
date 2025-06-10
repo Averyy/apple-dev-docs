@@ -1,6 +1,6 @@
 # distance(from:to:)
 
-**Framework**: Musickit  
+**Framework**: MusicKit  
 **Kind**: method
 
 Returns the distance between two indices.

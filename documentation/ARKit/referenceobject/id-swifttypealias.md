@@ -17,7 +17,7 @@ typealias ID = UUID
 ## See Also
 
 - [var id: UUID](referenceobject/id-swift.property.md)
-  The unique identifier of this anchor.
+  The unique identifier of this reference object.
 - [var inputFile: URL?](referenceobject/inputfile.md)
   The input file the framework uses for loading a reference object.
 - [var usdzFile: URL?](referenceobject/usdzfile.md)

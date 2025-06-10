@@ -1,6 +1,6 @@
 # tableView(_:rowViewForRow:)
 
-**Framework**: Appkit  
+**Framework**: AppKit  
 **Kind**: method
 
 Asks the delegate for a view to display the specified row.

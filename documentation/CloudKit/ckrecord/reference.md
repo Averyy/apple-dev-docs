@@ -1,6 +1,6 @@
 # CKRecord.Reference
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: class
 
 A relationship between two records in a record zone.
@@ -95,6 +95,7 @@ The code sample below shows how to use a reference object to construct a query f
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -1,6 +1,6 @@
 # UIAccessibilityDragging
 
-**Framework**: Objectivec
+**Framework**: Objective-C Runtime
 
 A pair of properties to allow you to fine-tune how drags and drops are exposed to assistive technologies.
 
@@ -43,4 +43,4 @@ For each location descriptor, the associated view should be the `UIView` with th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ObjectiveC/uiaccessibilitydragging)*
+*[View on Apple Developer](https://developer.apple.com/documentation/objectivec/uiaccessibilitydragging)*

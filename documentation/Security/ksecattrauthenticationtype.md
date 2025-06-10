@@ -29,4 +29,4 @@ The corresponding value is of type [`CFString`](https://developer.apple.com/docu
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Security/ksecattrauthenticationtype)*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/ksecattrauthenticationtype)*

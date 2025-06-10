@@ -1,6 +1,6 @@
 # sendChanges(_:)
 
-**Framework**: Cloudkit  
+**Framework**: CloudKit  
 **Kind**: method
 
 Sends pending local changes to the server.

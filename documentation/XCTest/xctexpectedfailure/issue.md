@@ -1,6 +1,6 @@
 # issue
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 The issue that fulfills the expected failure.

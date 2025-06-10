@@ -10,6 +10,7 @@ An option that determines the animation’s pace over time.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
+- tvOS 26.0+ (Beta)
 - visionOS ?+
 
 ## Declaration
@@ -38,8 +39,6 @@ Depending on the option you pick, the animation’s progress moves at varying sp
   The time, in seconds, at which the animation plays.
 - [var trimEnd: TimeInterval?](fromtobyanimation/trimend.md)
   The time, in seconds, at which the animation stops.
-- [func trimmed(start: TimeInterval?, end: TimeInterval?, duration: TimeInterval?) -> Self](fromtobyanimation/trimmed(start:end:duration:).md)
-  Edits the animation duration according to the specified time.
 
 
 ---

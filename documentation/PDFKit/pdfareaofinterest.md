@@ -48,6 +48,8 @@ These constants are components of a bit field and may be combined arbitrarily.
 - [init(rawValue: Int)](pdfareaofinterest/init(rawvalue:).md)
 ### Type Properties
 - [static var anyArea: PDFAreaOfInterest](pdfareaofinterest/anyarea.md)
+- [static var tableArea: PDFAreaOfInterest](pdfareaofinterest/tablearea.md)
+- [static var tableResizeArea: PDFAreaOfInterest](pdfareaofinterest/tableresizearea.md)
 
 ## Relationships
 
@@ -58,6 +60,7 @@ These constants are components of a bit field and may be combined arbitrarily.
 - [OptionSet](../Swift/OptionSet.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
 ## See Also

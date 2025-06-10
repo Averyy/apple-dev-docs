@@ -31,8 +31,6 @@ This object may automatically suspend coordinated playback when a system state c
 
 > ❗ **Important**:  A playback coordinator doesn’t manage the playback queue of connected players. You need to implement custom logic to enqueue the same item across all connected players.
 
- A playback coordinator doesn’t manage the playback queue of connected players. You need to implement custom logic to enqueue the same item across all connected players.
-
 ## Topics
 
 ### Accessing the Player
@@ -43,6 +41,12 @@ This object may automatically suspend coordinated playback when a system state c
   A delegate object for the playback coordinator.
 - [protocol AVPlayerPlaybackCoordinatorDelegate](avplayerplaybackcoordinatordelegate.md)
   A protocol that defines the methods to implement to participate in playback coordination.
+### Instance Properties
+- [var playbackCoordinationMedium: AVPlaybackCoordinationMedium?](avplayerplaybackcoordinator/playbackcoordinationmedium.md)
+  The AVPlaybackCoordinationMedium this playback coordinator is connected to.
+### Instance Methods
+- [func coordinate(using: AVPlaybackCoordinationMedium?) throws](avplayerplaybackcoordinator/coordinate(using:).md)
+  Connects the playback coordinator to the coordination medium
 
 ## Relationships
 
@@ -56,6 +60,7 @@ This object may automatically suspend coordinated playback when a system state c
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

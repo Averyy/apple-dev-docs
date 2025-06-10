@@ -13,6 +13,7 @@ Tells the delegate that the user selected a trip and route choice to preview.
 ## Declaration
 
 ```swift
+@MainActor
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, selectedPreviewFor trip: CPTrip, using routeChoice: CPRouteChoice)
 ```
 

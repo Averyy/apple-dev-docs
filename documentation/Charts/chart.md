@@ -116,6 +116,7 @@ You indicate which series a line mark belongs to by specifying its `series` inpu
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
 ## See Also

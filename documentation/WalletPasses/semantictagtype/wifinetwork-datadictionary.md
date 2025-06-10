@@ -1,14 +1,14 @@
 # SemanticTagType.WifiNetwork
 
-**Framework**: Walletpasses  
+**Framework**: Wallet Passes  
 **Kind**: dictionary
 
 An object that contains information required to connect to a WiFi network.
 
 **Availability**:
 - iOS 12.0+
-- iPadOS 6.0+
-- watchOS 2.0+
+- iPadOS 12.0+
+- watchOS 5.0+
 
 ## Declaration
 

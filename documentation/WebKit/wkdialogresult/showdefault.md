@@ -1,6 +1,6 @@
 # WKDialogResult.showDefault
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: case
 
 A result that indicates the delegate didn’t display a message, so the web view should show the default Lockdown Mode message.

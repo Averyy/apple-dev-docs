@@ -1,6 +1,6 @@
 # TEXTURE_MIN_LOD
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

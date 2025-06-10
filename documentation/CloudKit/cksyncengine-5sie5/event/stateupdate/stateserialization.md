@@ -24,8 +24,6 @@ let stateSerialization: CKSyncEngine.State.Serialization
 
 > ❗ **Important**:  Always persist the most recent state to disk alongside your app data. The sync engine requires you to provide it with the most recent serialized state at initialization, and it’s your responsibility to make sure the state is available across app launches.
 
- Always persist the most recent state to disk alongside your app data. The sync engine requires you to provide it with the most recent serialized state at initialization, and it’s your responsibility to make sure the state is available across app launches.
-
 
 ---
 

@@ -36,6 +36,7 @@ struct SymbolRenderingMode
 
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -43,6 +44,10 @@ struct SymbolRenderingMode
   Sets the rendering mode for symbol images within this view.
 - [var symbolRenderingMode: SymbolRenderingMode?](environmentvalues/symbolrenderingmode.md)
   The current symbol rendering mode, or `nil` denoting that the mode is picked automatically using the current image and foreground style as parameters.
+- [struct SymbolColorRenderingMode](symbolcolorrenderingmode.md)
+  A method of filling a layer in a symbol image.
+- [struct SymbolVariableValueMode](symbolvariablevaluemode.md)
+  A method of rendering the variable value of a symbol image.
 
 
 ---

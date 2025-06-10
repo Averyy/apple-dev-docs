@@ -23,9 +23,9 @@ Text views that are set to accept dragged files are also set to allow rich text.
 
 ## See Also
 
-- [func insert(NSAttributedString, at: Int)](../foundation/nsmutableattributedstring/1414947-insert.md)
+- [func insert(_ attrString: NSAttributedString, at loc: Int)](../Foundation/NSMutableAttributedString/insert(_:at:).md)
   Inserts the characters and attributes of the given attributed string into the receiver at the given index.
-- [init(attachment: NSTextAttachment)](../foundation/nsattributedstring/1508376-init.md)
+- [init(attachment: NSTextAttachment)](../Foundation/NSAttributedString/init(attachment:).md)
   Creates an attributed string with an attachment.
 - [var textStorage: NSTextStorage?](nstextview/textstorage.md)
   The receiver’s text storage object.

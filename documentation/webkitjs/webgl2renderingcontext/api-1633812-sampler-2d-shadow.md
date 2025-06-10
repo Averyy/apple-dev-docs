@@ -1,6 +1,6 @@
 # SAMPLER_2D_SHADOW
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

@@ -35,6 +35,7 @@ Use these keys in the [`commandDelimiter`](nsspeechsynthesizer/speechpropertykey
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

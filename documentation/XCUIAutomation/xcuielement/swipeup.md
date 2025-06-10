@@ -1,6 +1,6 @@
 # swipeUp()
 
-**Framework**: Xcuiautomation  
+**Framework**: XCUIAutomation  
 **Kind**: method
 
 Sends a swipe-up gesture.

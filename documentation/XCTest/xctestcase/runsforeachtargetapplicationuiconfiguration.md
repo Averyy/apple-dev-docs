@@ -1,6 +1,6 @@
 # runsForEachTargetApplicationUIConfiguration
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: property
 
 A Boolean value that indicates whether your UI tests run once for each possible combination of orientation, localization, and other appearance settings your app supports.

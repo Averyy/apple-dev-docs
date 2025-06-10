@@ -12,6 +12,7 @@ Returns a new camera object using the specified map item, view size, and pitch.
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS 1.0+
+- watchOS 9.0+
 
 ## Declaration
 

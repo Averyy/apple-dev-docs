@@ -17,13 +17,6 @@
 var format: AVAudioFormat { get }
 ```
 
-#### Discussion
-
-```None
-@property format
-@abstract The readonly property that returns the AVAudioFormat that this stream was initialized with
-```
-
 
 ---
 

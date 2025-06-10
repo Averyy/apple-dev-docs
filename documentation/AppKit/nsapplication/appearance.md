@@ -35,6 +35,8 @@ Individual windows and views may still override the app’s appearance to custom
   The presentation options that should be in effect for the system when this app is active.
 - [NSApplication.PresentationOptions](nsapplication/presentationoptions-swift.struct.md)
   Constants that control the presentation of the app, typically for fullscreen apps such as games or kiosks.
+- [var applicationShouldSuppressHighDynamicRangeContent: Bool](nsapplication/applicationshouldsuppresshighdynamicrangecontent.md)
+  A boolean value indicating whether your application should suppress HDR content based on established policy. Built-in AppKit components such as NSImageView will automatically behave correctly with HDR content. You should use this value in conjunction with notifications (`NSApplicationShouldBeginSuppressingHighDynamicRangeContentNotification` and `NSApplicationShouldEndSuppressingHighDynamicRangeContentNotification`) to suppress HDR content in your application when signaled to do so.
 
 
 ---

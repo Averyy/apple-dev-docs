@@ -47,9 +47,9 @@ Manage the Thread network of Thread Border Router
 - [func readAttributeInterfaceEnabled(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterthreadborderroutermanagement/readattributeinterfaceenabled(completion:).md)
 - [func readAttributePendingDatasetTimestamp(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterthreadborderroutermanagement/readattributependingdatasettimestamp(completion:).md)
 - [func readAttributeThreadVersion(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterthreadborderroutermanagement/readattributethreadversion(completion:).md)
-- [func setActiveDatasetRequestWith(MTRThreadBorderRouterManagementClusterSetActiveDatasetRequestParams, completion: MTRStatusCompletion)](mtrbaseclusterthreadborderroutermanagement/setactivedatasetrequestwith(_:completion:).md)
+- [func setActiveDatasetRequestWith(MTRThreadBorderRouterManagementClusterSetActiveDatasetRequestParams, completion: ((any Error)?) -> Void)](mtrbaseclusterthreadborderroutermanagement/setactivedatasetrequestwith(_:completion:).md)
   Command SetActiveDatasetRequest
-- [func setPendingDatasetRequestWith(MTRThreadBorderRouterManagementClusterSetPendingDatasetRequestParams, completion: MTRStatusCompletion)](mtrbaseclusterthreadborderroutermanagement/setpendingdatasetrequestwith(_:completion:).md)
+- [func setPendingDatasetRequestWith(MTRThreadBorderRouterManagementClusterSetPendingDatasetRequestParams, completion: ((any Error)?) -> Void)](mtrbaseclusterthreadborderroutermanagement/setpendingdatasetrequestwith(_:completion:).md)
   Command SetPendingDatasetRequest
 - [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterthreadborderroutermanagement/subscribeattributeacceptedcommandlist(with:subscriptionestablished:reporthandler:).md)
 - [func subscribeAttributeActiveDatasetTimestamp(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterthreadborderroutermanagement/subscribeattributeactivedatasettimestamp(with:subscriptionestablished:reporthandler:).md)

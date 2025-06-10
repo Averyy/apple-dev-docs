@@ -1,6 +1,6 @@
 # XPC_TYPE_STRING
 
-**Framework**: Xpc  
+**Framework**: XPC  
 **Kind**: var
 
 A type that represents a null-terminated C-string.

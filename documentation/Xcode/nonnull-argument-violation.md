@@ -76,4 +76,4 @@ Correct logic errors, or remove the `_Nonnull` attribute and rework the called f
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Xcode/nonnull-argument-violation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcode/nonnull-argument-violation)*

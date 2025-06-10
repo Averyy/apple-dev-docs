@@ -1,6 +1,6 @@
 # init(propertiesOf:)
 
-**Framework**: Avfoundation  
+**Framework**: AVFoundation  
 **Kind**: init
 
 Creates a video composition object configured to present the video tracks of the specified asset.

@@ -3,7 +3,7 @@
 **Framework**: SensitiveContentAnalysis  
 **Kind**: class
 
-An object that determines if checked content contains nudity.
+An object that indicates whether sensitive content is present and includes intervention guidance.
 
 **Availability**:
 - iOS 17.0+
@@ -24,24 +24,23 @@ class SCSensitivityAnalysis
 
 #### Overview
 
-The completion handler for [`SCSensitivityAnalyzer`](scsensitivityanalyzer.md) methods, such as [`analyzeImage(_:completionHandler:)`](scsensitivityanalyzer/analyzeimage(_:completionhandler:).md), receive an instance of this type as a `results` parameter.
+The framework provides an instance of this class to convey the results of content sensitivity checks, for example:
 
-```swift
-// Check a loaded image for nudity.
-let response = try await analyzer.analyzeImage(image.cgImage)
-
-if response.isSensitive {
-    // Check the active `analysisPolicy` on how to proceed.
-}
-```
-
-For more information about checking the active [`analysisPolicy`](scsensitivityanalyzer/analysispolicy.md), see [`SCSensitivityAnalysisPolicy`](scsensitivityanalysispolicy.md).
+- The [`SCSensitivityAnalyzer`](scsensitivityanalyzer.md) completion handler [`analyzeImage(_:completionHandler:)`](scsensitivityanalyzer/analyzeimage(_:completionhandler:).md)
+- The [`SCVideoStreamAnalyzer`](scvideostreamanalyzer.md) callback [`SCVideoStreamAnalysisChangeHandler`](scvideostreamanalysischangehandler.md)
 
 ## Topics
 
-### Content-sensitivity check results
+### Confirming the presence of sensitive content
 - [var isSensitive: Bool](scsensitivityanalysis/issensitive.md)
   A Boolean value that indicates if checked content contains nudity.
+### Receiving intervention guidance
+- [var shouldIndicateSensitivity: Bool](scsensitivityanalysis/shouldindicatesensitivity.md)
+  Intervention guidance that suggests the app indicate the presence of sensitive content.
+- [var shouldInterruptVideo: Bool](scsensitivityanalysis/shouldinterruptvideo.md)
+  Intervention guidance that suggests the app interrupt the video stream.
+- [var shouldMuteAudio: Bool](scsensitivityanalysis/shouldmuteaudio.md)
+  Intervention guidance that suggests the app mute the audio of the current video stream.
 
 ## Relationships
 
@@ -55,6 +54,7 @@ For more information about checking the active [`analysisPolicy`](scsensitivitya
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

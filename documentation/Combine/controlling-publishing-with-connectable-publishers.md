@@ -48,8 +48,6 @@ DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
 
 > ❗ **Important**: [`connect()`](connectablepublisher/connect().md) returns a [`Cancellable`](cancellable.md) instance that you need to retain. You can use this instance to cancel publishing, either by explicitly calling [`cancel()`](cancellable/cancel().md) or allowing it to deinitialize.
 
-[`connect()`](connectablepublisher/connect().md) returns a [`Cancellable`](cancellable.md) instance that you need to retain. You can use this instance to cancel publishing, either by explicitly calling [`cancel()`](cancellable/cancel().md) or allowing it to deinitialize.
-
 ##### Use the Autoconnect Operator If You Dont Need to Explicitly Connect
 
 Some Combine publishers already implement [`ConnectablePublisher`](connectablepublisher.md), such as [`Publishers.Multicast`](publishers/multicast.md) and [`Timer.TimerPublisher`](https://developer.apple.com/documentation/Foundation/Timer/TimerPublisher). Using these publishers can cause the opposite problem: having to explicitly [`connect()`](connectablepublisher/connect().md) could be burdensome if you don’t need to configure the publisher or attach multiple subscribers.

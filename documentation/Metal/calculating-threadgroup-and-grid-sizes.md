@@ -62,10 +62,12 @@ Encode the command that executes your custom threadgroup size by calling the enc
 
 - [Creating Threads and Threadgroups](creating-threads-and-threadgroups.md)
   Learn how Metal organizes compute-processing workloads.
+- [protocol MTL4ComputeCommandEncoder](mtl4computecommandencoder.md)
+  Encodes a compute pass and other memory operations into a command buffer.
 - [protocol MTLComputeCommandEncoder](mtlcomputecommandencoder.md)
   An interface for dispatching commands to encode in a compute pass.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal/calculating-threadgroup-and-grid-sizes)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/calculating-threadgroup-and-grid-sizes)*

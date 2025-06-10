@@ -1,6 +1,6 @@
 # TEXTURE_MAX_ANISOTROPY_EXT
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

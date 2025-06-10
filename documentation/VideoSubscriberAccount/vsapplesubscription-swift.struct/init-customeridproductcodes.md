@@ -1,7 +1,9 @@
 # init(customerID:productCodes:)
 
-**Framework**: Videosubscriberaccount  
+**Framework**: Video Subscriber Account  
 **Kind**: init
+
+Initializes an Apple subscription object.
 
 **Availability**:
 - iOS 17.4+

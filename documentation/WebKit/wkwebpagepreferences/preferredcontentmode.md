@@ -1,6 +1,6 @@
 # preferredContentMode
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: property
 
 The content mode for the web view to use when it loads and renders a webpage.

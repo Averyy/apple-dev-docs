@@ -182,8 +182,9 @@ The class’s delegate object must conform to IKImageBrowserDelegate Protocol pr
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Quartz/ikimagebrowserview)*
+*[View on Apple Developer](https://developer.apple.com/documentation/quartz/ikimagebrowserview)*

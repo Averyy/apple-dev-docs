@@ -222,4 +222,4 @@ let numberPointer = UnsafeRawPointer(&number)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift/unsaferawpointer)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/unsaferawpointer)*

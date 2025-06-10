@@ -1,6 +1,6 @@
 # VTRAWProcessingSession.Parameter
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: enum
 
 A parameter expresses a control or a set of controls that influence frame processing.
@@ -41,6 +41,7 @@ Parameter arrays are created and returned by the VideoToolbox framework.
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

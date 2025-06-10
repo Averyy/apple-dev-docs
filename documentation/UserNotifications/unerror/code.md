@@ -1,6 +1,6 @@
 # UNError.Code
 
-**Framework**: Usernotifications  
+**Framework**: User Notifications  
 **Kind**: enum
 
 Constants that identify notification errors.
@@ -56,6 +56,7 @@ enum Code
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

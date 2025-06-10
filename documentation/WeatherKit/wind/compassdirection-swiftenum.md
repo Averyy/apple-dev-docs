@@ -1,6 +1,6 @@
 # Wind.CompassDirection
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: enum
 
 A compass composed of cardinal and intercardinal directions.
@@ -82,6 +82,7 @@ This enumeration represents true headings.
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

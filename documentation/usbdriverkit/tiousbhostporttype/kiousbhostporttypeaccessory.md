@@ -24,8 +24,6 @@ kIOUSBHostPortTypeAccessory
   A port that cannot be physically disconnected from the host machine.
 - [kIOUSBHostPortTypeExpressCard](tiousbhostporttype/kiousbhostporttypeexpresscard.md)
   A port containing an expansion card.
-- [kIOUSBHostPortTypeCount](tiousbhostporttype/kiousbhostporttypecount.md)
-  The number of port types.
 
 
 ---

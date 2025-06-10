@@ -33,7 +33,7 @@ For more information on the data set type in an asset catalog, see [`Data Set Ty
 
 You access the data file by using the [`data`](nsdataasset/data.md) property. Because the property is of type [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) it provides methods for accessing the raw data only as bytes and ranges of bytes.
 
-To access structured data, convert the bytes into the appropriate format. The system can convert some data types for you. One example is XML data using the [`init(data:)`](https://developer.apple.com/documentation/foundation/xmlparser/1418103-init) method of [`XMLParser`](https://developer.apple.com/documentation/Foundation/XMLParser). Other data types require code for parsing and converting the raw data. You may need to convert larger data files incrementally.
+To access structured data, convert the bytes into the appropriate format. The system can convert some data types for you. One example is XML data using the [`init(data:)`](https://developer.apple.com/documentation/Foundation/XMLParser/init(data:)) method of [`XMLParser`](https://developer.apple.com/documentation/Foundation/XMLParser). Other data types require code for parsing and converting the raw data. You may need to convert larger data files incrementally.
 
 ## Topics
 
@@ -66,6 +66,7 @@ To access structured data, convert the bytes into the appropriate format. The sy
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

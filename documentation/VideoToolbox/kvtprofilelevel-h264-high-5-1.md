@@ -1,6 +1,6 @@
 # kVTProfileLevel_H264_High_5_1
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 **Availability**:

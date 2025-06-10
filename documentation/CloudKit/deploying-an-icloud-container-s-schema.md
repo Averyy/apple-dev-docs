@@ -1,6 +1,6 @@
 # Deploying an iCloud Container’s Schema
 
-**Framework**: Cloudkit
+**Framework**: CloudKit
 
 Reset your container’s state during development and deploy your container’s schema to production.
 
@@ -54,4 +54,4 @@ To deploy the development schema to production:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CloudKit/deploying-an-icloud-container-s-schema)*
+*[View on Apple Developer](https://developer.apple.com/documentation/cloudkit/deploying-an-icloud-container-s-schema)*

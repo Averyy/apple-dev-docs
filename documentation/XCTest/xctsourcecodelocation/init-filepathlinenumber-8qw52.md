@@ -1,6 +1,6 @@
 # init(filePath:lineNumber:)
 
-**Framework**: Xctest  
+**Framework**: XCTest  
 **Kind**: init
 
 Initializes a new instance with a file path and a line number.

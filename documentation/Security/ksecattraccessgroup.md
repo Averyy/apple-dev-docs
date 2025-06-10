@@ -43,8 +43,6 @@ By default, the [`SecItemUpdate(_:_:)`](secitemupdate(_:_:).md), [`SecItemDelete
 
 > ❗ **Important**:  This attribute applies to macOS keychain items only if you also set a value of `true` for the [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) key, the [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) key, or both.
 
- This attribute applies to macOS keychain items only if you also set a value of `true` for the [`kSecUseDataProtectionKeychain`](ksecusedataprotectionkeychain.md) key, the [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) key, or both.
-
 ## See Also
 
 - [Sharing access to keychain items among a collection of apps](sharing-access-to-keychain-items-among-a-collection-of-apps.md)

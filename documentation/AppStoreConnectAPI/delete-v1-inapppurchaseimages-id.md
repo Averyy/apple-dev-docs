@@ -1,6 +1,6 @@
 # Delete an in-app purchase image
 
-**Framework**: Appstoreconnectapi  
+**Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 Delete the image asset that appears on the App Store listing that represents an in-app purchase.

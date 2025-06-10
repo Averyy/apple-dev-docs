@@ -1,6 +1,6 @@
 # WKAudioFilePlayerStatus.failed
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: case
 
 The player can no longer play the audio because of an error. Use the [`error`](wkaudiofileplayer/error.md) property to get information about the error that occurred.

@@ -54,6 +54,7 @@ This class describes possible values for [`wordCount(for:)`](srkeyboardmetrics/w
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

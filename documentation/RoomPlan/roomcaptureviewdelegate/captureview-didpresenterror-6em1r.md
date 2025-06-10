@@ -9,7 +9,7 @@ Provides a default, blank implementation for the processed scan-results callback
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 

@@ -17,7 +17,7 @@ func removeObserver(_ observer: Any, name aName: NSNotification.Name?, object an
 
 #### Discussion
 
-Be sure to invoke this method with `notificationName:nil notificationSender:nil` (or [`removeObserver(_:)`](notificationcenter/removeobserver(_:).md)) before deallocating the observer object.
+Be sure to invoke this method with `notificationName:nil notificationSender:nil` (or `NotificationCenter/removeObserver(_:)`) before deallocating the observer object.
 
 ## Parameters
 

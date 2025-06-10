@@ -1,6 +1,6 @@
 # notificationActions
 
-**Framework**: Watchkit  
+**Framework**: WatchKit  
 **Kind**: property
 
 The actions associated with the current notification.

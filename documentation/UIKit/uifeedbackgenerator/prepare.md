@@ -1,6 +1,6 @@
 # prepare()
 
-**Framework**: Uikit  
+**Framework**: UIKit  
 **Kind**: method
 
 Prepares the generator to trigger feedback.

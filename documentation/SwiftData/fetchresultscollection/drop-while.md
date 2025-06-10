@@ -1,6 +1,6 @@
 # drop(while:)
 
-**Framework**: Swiftdata  
+**Framework**: SwiftData  
 **Kind**: method
 
 Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.

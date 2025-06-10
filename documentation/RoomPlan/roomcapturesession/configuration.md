@@ -3,19 +3,23 @@
 **Framework**: RoomPlan  
 **Kind**: struct
 
-An object to configure the capture process
+Settings that configure the room-scanning process.
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS 16.0+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
 struct Configuration
 ```
+
+#### Overview
+
+The `configuration` argument of a room-capture session’s  [`run(configuration:)`](roomcapturesession/run(configuration:).md) function is of this type.
 
 ## Topics
 
@@ -31,8 +35,9 @@ struct Configuration
 - [func run(configuration: RoomCaptureSession.Configuration)](roomcapturesession/run(configuration:).md)
   Starts a room-capture session with the specified configuration.
 - [func stop()](roomcapturesession/stop.md)
-  Stop capture process
+  Stops the room-capture session.
 - [func stop(pauseARSession: Bool)](roomcapturesession/stop(pausearsession:).md)
+  Stops the room-capture session and indicates whether the app pauses the underlying AR session.
 
 
 ---

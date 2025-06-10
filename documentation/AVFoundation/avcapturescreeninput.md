@@ -18,8 +18,6 @@ class AVCaptureScreenInput
 
 > ❗ **Important**:  Starting in macOS 12.3, use the [`ScreenCaptureKit`](https://developer.apple.com/documentation/ScreenCaptureKit) framework for screen recording instead.
 
- Starting in macOS 12.3, use the [`ScreenCaptureKit`](https://developer.apple.com/documentation/ScreenCaptureKit) framework for screen recording instead.
-
 This class is a concrete capture input subclass that provides an interface to capture media from a screen or a portion of a screen.
 
 Use instances of this class as input sources for [`AVCaptureSession`](avcapturesession.md) objects that provide media data from one of the screens connected to the system, represented by [`CGDirectDisplayID`](https://developer.apple.com/documentation/CoreGraphics/CGDirectDisplayID).

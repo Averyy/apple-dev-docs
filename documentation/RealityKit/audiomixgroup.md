@@ -10,6 +10,7 @@ A group that manages the playback properties of multiple playing sounds.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 26.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ struct AudioMixGroup
 
 A mix group component manages the playback parameters for a collection of different [`AudioPlaybackController`](audioplaybackcontroller.md) and [`AudioGeneratorController`](audiogeneratorcontroller.md) instances. Properties such as [`gain`](audiomixgroup/gain.md), [`fade(to:duration:)`](audiomixgroup/fade(to:duration:).md), and [`speed`](audiomixgroup/speed.md) are multiplicative with the parameters you set on the controller.
 
-You  associate audio resources to a mix group by setting the `mixGroupName` parameter in the resource’s configuration. For an example, see [`mixGroupName`](audiofileresource/configuration-swift.struct/mixgroupname.md). Enable a mix group by adding it to an [`AudioMixGroupsComponent`](audiomixgroupscomponent.md) structure on an entity in the scene. The scene where the component belongs limits the scope of the mix group.
+You  associate audio resources to a mix group by setting the `mixGroupName` parameter in the resource’s configuration. For an example, see `AudioFileResource/Configuration-swift.struct/mixGroupName`. Enable a mix group by adding it to an [`AudioMixGroupsComponent`](audiomixgroupscomponent.md) structure on an entity in the scene. The scene where the component belongs limits the scope of the mix group.
 
 ```swift
 var mixGroup = AudioMixGroup(name: "myMixGroup")
@@ -46,9 +47,6 @@ entity.components.set(AudioMixGroupsComponent(mixGroups: [mixGroup]))
 ### Instance Methods
 - [func fade(to: Audio.Decibel, duration: TimeInterval)](audiomixgroup/fade(to:duration:).md)
   Transitions the gain to a value over a time interval using a linear curve.
-### Default Implementations
-- [Equatable Implementations](audiomixgroup/equatable-implementations.md)
-- [Hashable Implementations](audiomixgroup/hashable-implementations.md)
 
 ## Relationships
 

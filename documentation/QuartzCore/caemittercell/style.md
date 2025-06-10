@@ -31,8 +31,6 @@ The default value of this property is `nil`.
 
 > ⚠️ **Warning**:  If the style dictionary or any of its ancestors are modified, the values of the cell’s properties are undefined until the `style` property is reset.
 
- If the style dictionary or any of its ancestors are modified, the values of the cell’s properties are undefined until the `style` property is reset.
-
 ## See Also
 
 - [var isEnabled: Bool](caemittercell/isenabled.md)

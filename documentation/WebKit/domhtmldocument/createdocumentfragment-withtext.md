@@ -1,6 +1,6 @@
 # createDocumentFragment(withText:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Creates a document fragment containing the given text.

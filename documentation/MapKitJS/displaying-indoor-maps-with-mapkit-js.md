@@ -1,6 +1,6 @@
 # Displaying Indoor Maps with MapKit JS
 
-**Framework**: Mapkitjs
+**Framework**: MapKit JS
 
 Use the Indoor Mapping Data Format (IMDF) to show an indoor map with custom overlays and points of interest in your browser.
 
@@ -32,4 +32,4 @@ To run this sample code:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/MapKitJS/displaying-indoor-maps-with-mapkit-js)*
+*[View on Apple Developer](https://developer.apple.com/documentation/mapkitjs/displaying-indoor-maps-with-mapkit-js)*

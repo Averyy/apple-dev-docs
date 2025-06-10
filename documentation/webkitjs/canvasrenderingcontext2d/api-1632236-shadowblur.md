@@ -1,6 +1,6 @@
 # shadowBlur
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 A floating-point number that controls the degree of Gaussian blur applied to shadows.

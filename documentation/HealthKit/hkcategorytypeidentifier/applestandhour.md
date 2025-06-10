@@ -1,6 +1,6 @@
 # appleStandHour
 
-**Framework**: Healthkit  
+**Framework**: HealthKit  
 **Kind**: property
 
 A category sample type that counts the number of hours in the day during which the user has stood and moved for at least one minute per hour.

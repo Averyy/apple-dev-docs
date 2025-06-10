@@ -1,6 +1,6 @@
 # COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

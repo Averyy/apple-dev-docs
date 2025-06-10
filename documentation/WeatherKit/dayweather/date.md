@@ -1,6 +1,6 @@
 # date
 
-**Framework**: Weatherkit  
+**Framework**: WeatherKit  
 **Kind**: property
 
 The start time of the day weather.

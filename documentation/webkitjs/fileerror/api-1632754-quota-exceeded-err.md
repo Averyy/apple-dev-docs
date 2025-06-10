@@ -1,6 +1,6 @@
 # QUOTA_EXCEEDED_ERR
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: clconst
 
 **Availability**:

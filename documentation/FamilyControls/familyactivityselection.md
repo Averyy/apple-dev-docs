@@ -24,8 +24,6 @@ You can then pass these opaque values to instances and methods from the [`Manage
 
 > ❗ **Important**: If a user, parent, or guardian revokes authorization of your app, any tokens that [`FamilyActivitySelection`](familyactivityselection.md) provided while your app was authorized are voided.
 
-If a user, parent, or guardian revokes authorization of your app, any tokens that [`FamilyActivitySelection`](familyactivityselection.md) provided while your app was authorized are voided.
-
 For more information on prompting the user to select items, see [`FamilyActivityPicker`](familyactivitypicker.md).
 
 ## Topics

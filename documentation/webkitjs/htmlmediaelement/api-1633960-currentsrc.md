@@ -1,6 +1,6 @@
 # currentSrc
 
-**Framework**: Webkitjs  
+**Framework**: WebKit JS  
 **Kind**: instp
 
 The absolute URL of the media resource. (read-only)

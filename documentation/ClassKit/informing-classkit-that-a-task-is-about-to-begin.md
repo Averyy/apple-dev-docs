@@ -1,6 +1,6 @@
 # Informing ClassKit that a task is about to begin
 
-**Framework**: Classkit
+**Framework**: ClassKit
 
 Activate and deactivate contexts according to user interaction.
 
@@ -56,4 +56,4 @@ Only one context can be active at a time. If you activate a new context when one
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/ClassKit/informing-classkit-that-a-task-is-about-to-begin)*
+*[View on Apple Developer](https://developer.apple.com/documentation/classkit/informing-classkit-that-a-task-is-about-to-begin)*

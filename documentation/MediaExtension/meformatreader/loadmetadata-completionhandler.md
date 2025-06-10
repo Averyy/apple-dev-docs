@@ -12,7 +12,7 @@ Loads the array of metadata items from the media asset.
 ## Declaration
 
 ```swift
-var metadata: [AVMetadataItem] { get async throws }
+func metadata() async throws -> [AVMetadataItem]
 ```
 
 ## Parameters

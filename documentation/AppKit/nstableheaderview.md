@@ -60,6 +60,7 @@ class NSTableHeaderView
 - [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
 - [NSViewToolTipOwner](nsviewtooltipowner.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -32,6 +32,8 @@ The person using your browser chooses whether to let your app access their passk
 
 - [Public-Private Key Authentication](public-private-key-authentication.md)
   Register and authenticate users with passkeys and security keys, without using passwords.
+- [Performing fast account creation with passkeys](performing-fast-account-creation-with-passkeys.md)
+  Allow people to quickly create an account with passkeys and associated domains.
 - [Connecting to a service with passkeys](connecting-to-a-service-with-passkeys.md)
   Allow users to sign in to a service without typing a password.
 

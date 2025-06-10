@@ -31,7 +31,7 @@ var realityKitScene: Scene? { get }
 - [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)
   The default minimum height of a header in a list.
 - [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
-  The default minimum height of a row in a `List`. The default minimum height of a row in a list.
+  The default minimum height of a row in a list.
 - [var headerProminence: Prominence](environmentvalues/headerprominence.md)
   The prominence to apply to section headers within a view.
 - [var physicalMetrics: PhysicalMetricsConverter](environmentvalues/physicalmetrics.md)

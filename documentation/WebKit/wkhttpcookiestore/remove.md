@@ -1,6 +1,6 @@
 # remove(_:)
 
-**Framework**: Webkit  
+**Framework**: WebKit  
 **Kind**: method
 
 Removes an observer from the cookie store.

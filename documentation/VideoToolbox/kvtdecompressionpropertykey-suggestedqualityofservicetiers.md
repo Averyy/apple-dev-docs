@@ -1,6 +1,6 @@
 # kVTDecompressionPropertyKey_SuggestedQualityOfServiceTiers
 
-**Framework**: Videotoolbox  
+**Framework**: Video Toolbox  
 **Kind**: var
 
 An array of dictionaries that describe decreasing quality-of-service levels that clients can use to maintain realtime playback (optional).

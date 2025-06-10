@@ -22,8 +22,6 @@ func add(_ subscriber: any MXMetricManagerSubscriber)
 
 > ⚠️ **Warning**:  If you call this function from a method that deallocates the object, your app might crash.
 
- If you call this function from a method that deallocates the object, your app might crash.
-
 ## Parameters
 
 - `subscriber`: The object that receives the daily metrics reports. The object must conform to  .

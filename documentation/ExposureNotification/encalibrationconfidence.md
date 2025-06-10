@@ -20,8 +20,6 @@ enum ENCalibrationConfidence
 
 > ❗ **Important**:  This property is available in iOS 12.5, and in iOS 13.7 and later.
 
- This property is available in iOS 12.5, and in iOS 13.7 and later.
-
 ## Topics
 
 ### Enumeration Cases
@@ -44,6 +42,7 @@ enum ENCalibrationConfidence
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
