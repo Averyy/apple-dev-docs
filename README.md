@@ -39,6 +39,7 @@ The system now includes:
 - ✅ **Health monitoring** with comprehensive diagnostic tools
 - ✅ **100% test coverage** across all critical scenarios
 - ✅ **Cost protection** with multiple safety layers
+- ✅ **Smart document splitting** for large files (>30KB) to optimize search quality
 
 ### Quick Start - Embedding Generation
 
@@ -268,6 +269,18 @@ apple-developer-docs/
 - **Performance Monitoring**: Processing rates, memory usage, error tracking
 - **Comprehensive Logging**: Detailed error reporting and debugging
 - **Production Scripts**: Battle-tested scripts ready for automation
+
+## 📚 Documentation
+
+Comprehensive documentation is organized in the `docs/` folder:
+
+### Core Documentation
+- [`PROJECT_STATUS.md`](docs/PROJECT_STATUS.md) - Current system status, metrics, and deployment readiness
+- [`TECHNICAL_GUIDE.md`](docs/TECHNICAL_GUIDE.md) - Implementation details, ChromaDB configuration, best practices
+- [`OPERATIONS_GUIDE.md`](docs/OPERATIONS_GUIDE.md) - Health monitoring, backups, maintenance procedures
+- [`SECURITY_GUIDE.md`](docs/SECURITY_GUIDE.md) - API key management, cost controls, security checklist
+
+*Note: Legacy documentation has been archived in `docs/archive/` for reference.*
 
 ## Performance Metrics
 

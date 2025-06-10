@@ -81,3 +81,10 @@ profile_*
 # Temporary files from editors
 *.bak
 *.orig
+
+# ChromaDB vectorstore (large binary files, regenerated locally)
+vectorstore/
+!vectorstore/.gitkeep
+
+# Backup directories for vectorstore
+backups/vectorstore_*

@@ -203,10 +203,61 @@ class IncrementalEmbeddingBuilder:
         """Count tokens with error handling"""
         try:
             encoding = tiktoken.get_encoding("cl100k_base")
-            return len(encoding.encode(text[:MAX_TOKENS_PER_DOC]))
+            # Count all tokens, don't truncate for counting
+            return len(encoding.encode(text))
         except Exception as e:
             logger.warning(f"Token counting failed: {e}, estimating")
             return len(text) // 4
+    
+    def split_by_headers(self, content: str, max_tokens: int = 7000) -> List[str]:
+        """Split large markdown documents by ## headers to fit token limits
+        
+        Args:
+            content: Markdown content to split
+            max_tokens: Maximum tokens per chunk (default 7000)
+            
+        Returns:
+            List of content chunks, each with title context preserved
+        """
+        # If content is small enough, return as-is
+        if self.count_tokens_safe(content) <= max_tokens:
+            return [content]
+        
+        # Extract title and intro (everything before first ##)
+        parts = content.split('\n## ', 1)
+        if len(parts) == 1:
+            # No headers to split by, truncate if needed
+            logger.warning("Large document with no ## headers, truncating")
+            return [content[:max_tokens * 4]]  # Rough char estimate
+        
+        title_section = parts[0]
+        remaining = '## ' + parts[1]
+        
+        # Split by ## headers
+        sections = re.split(r'\n(?=## )', remaining)
+        
+        chunks = []
+        current_chunk = title_section
+        current_tokens = self.count_tokens_safe(current_chunk)
+        
+        for section in sections:
+            section_tokens = self.count_tokens_safe(section)
+            
+            # If adding section would exceed limit, save current chunk
+            if current_tokens + section_tokens > max_tokens and current_chunk != title_section:
+                chunks.append(current_chunk)
+                # Start new chunk with title for context
+                current_chunk = title_section + '\n' + section
+                current_tokens = self.count_tokens_safe(current_chunk)
+            else:
+                current_chunk += '\n' + section
+                current_tokens += section_tokens
+        
+        # Add final chunk
+        if current_chunk and current_chunk != title_section:
+            chunks.append(current_chunk)
+        
+        return chunks
     
     def scan_for_changes(self, framework_filter: Optional[str] = None) -> Dict[str, Any]:
         """Scan documents and identify which need embedding"""
@@ -284,8 +335,22 @@ class IncrementalEmbeddingBuilder:
         return stats, list(deleted_files)
     
     def estimate_cost(self, files_to_process: List[Dict[str, Any]]) -> float:
-        """Estimate embedding cost"""
-        total_tokens = sum(f["tokens"] for f in files_to_process)
+        """Estimate embedding cost accounting for document splitting"""
+        total_tokens = 0
+        
+        for f in files_to_process:
+            content_length = len(f["content"])
+            
+            # Account for splitting
+            if content_length > 30000:
+                # Estimate chunks (conservative: assume 3-4 chunks for large files)
+                estimated_chunks = max(2, content_length // 25000)
+                # Each chunk will have ~7000 tokens max
+                total_tokens += estimated_chunks * 7000
+            else:
+                # Use actual token count for normal files
+                total_tokens += f["tokens"]
+        
         return (total_tokens / 1_000_000) * 0.02
     
     def embed_batch_secure(self, client: openai.OpenAI, texts: List[str], 
@@ -375,22 +440,36 @@ class IncrementalEmbeddingBuilder:
         # Configure OpenAI
         client = self.configure_openai()
         
-        # Setup ChromaDB
+        # Setup ChromaDB with OpenAI embeddings
         if not collection_name:
             collection_name = f"apple_docs_{framework_filter}" if framework_filter else "apple_docs"
         
         collection_name = self.validate_collection_name(collection_name)
         chroma = chromadb.PersistentClient(path=str(self.vectorstore_path))
         
+        # Configure OpenAI embedding function
+        from chromadb.utils import embedding_functions
+        embedding_function = embedding_functions.OpenAIEmbeddingFunction(
+            api_key=os.getenv("OPENAI_API_KEY"),
+            model_name="text-embedding-3-small",
+            dimensions=1536
+        )
+        
         try:
-            collection = chroma.get_collection(collection_name)
+            collection = chroma.get_collection(
+                collection_name,
+                embedding_function=embedding_function
+            )
             logger.info(f"Using existing collection: {collection_name}")
             
             # Get existing IDs for deletion check
             existing_ids = self.get_existing_ids(collection)
             
         except:
-            collection = chroma.create_collection(collection_name)
+            collection = chroma.create_collection(
+                collection_name,
+                embedding_function=embedding_function
+            )
             logger.info(f"Created new collection: {collection_name}")
             existing_ids = set()
         
@@ -447,20 +526,44 @@ class IncrementalEmbeddingBuilder:
                     content = file_data["content"]
                     file_key = file_data["key"]
                     
-                    # Generate ID
-                    doc_id = self.generate_doc_id(md_file, content)
-                    
-                    # Extract metadata
-                    metadata = {
-                        "framework": md_file.parts[-2] if len(md_file.parts) > 1 else "unknown",
-                        "api_name": md_file.stem,
-                        "file_path": str(md_file),
-                        "file_size": md_file.stat().st_size
-                    }
-                    
-                    batch_texts.append(content)
-                    batch_metadata.append(metadata)
-                    batch_ids.append(doc_id)
+                    # Check if document needs splitting (>30k chars ~ 7.5k tokens)
+                    if len(content) > 30000:
+                        chunks = self.split_by_headers(content, max_tokens=7000)
+                        logger.info(f"Split large file {md_file.name} into {len(chunks)} chunks")
+                        
+                        for chunk_idx, chunk in enumerate(chunks):
+                            # Generate ID with chunk suffix
+                            chunk_hash = hashlib.md5(chunk.encode()).hexdigest()[:8]
+                            doc_id = self.generate_doc_id(md_file, content) + f"_part{chunk_idx}"
+                            
+                            # Extract metadata with chunk info
+                            metadata = {
+                                "framework": md_file.parts[-2] if len(md_file.parts) > 1 else "unknown",
+                                "api_name": md_file.stem,
+                                "file_path": str(md_file),
+                                "file_size": md_file.stat().st_size,
+                                "chunk_index": chunk_idx,
+                                "total_chunks": len(chunks),
+                                "chunk_hash": chunk_hash
+                            }
+                            
+                            batch_texts.append(chunk)
+                            batch_metadata.append(metadata)
+                            batch_ids.append(doc_id)
+                    else:
+                        # Normal processing for smaller files
+                        doc_id = self.generate_doc_id(md_file, content)
+                        
+                        metadata = {
+                            "framework": md_file.parts[-2] if len(md_file.parts) > 1 else "unknown",
+                            "api_name": md_file.stem,
+                            "file_path": str(md_file),
+                            "file_size": md_file.stat().st_size
+                        }
+                        
+                        batch_texts.append(content)
+                        batch_metadata.append(metadata)
+                        batch_ids.append(doc_id)
                 
                 # Calculate batch cost
                 batch_tokens = sum(self.count_tokens_safe(text) for text in batch_texts)
@@ -481,10 +584,15 @@ class IncrementalEmbeddingBuilder:
                 # Delete old versions if they exist
                 old_ids_to_delete = []
                 for file_data in batch_files:
-                    file_key = file_data["key"]
-                    # Find IDs that match this file but not the new ID
-                    pattern = file_key.replace("/", "_")
-                    old_ids = [id for id in existing_ids if pattern in id and id not in batch_ids]
+                    md_file = file_data["path"]
+                    # Create base pattern for this file (without content hash)
+                    path_hash = hashlib.md5(str(md_file).encode()).hexdigest()[:8]
+                    base_pattern = f"{md_file.stem}_{path_hash}_"
+                    
+                    # Find all IDs that start with this pattern (includes all chunks)
+                    # but exclude the ones we're about to add
+                    old_ids = [id for id in existing_ids 
+                              if id.startswith(base_pattern) and id not in batch_ids]
                     old_ids_to_delete.extend(old_ids)
                 
                 if old_ids_to_delete:
